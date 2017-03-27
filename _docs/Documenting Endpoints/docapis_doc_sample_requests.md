@@ -12,7 +12,7 @@ section: docendpoints
 
 Although you've already listed the endpoint and parameters, you should also include one or more sample requests that shows the endpoint integrated with parameters in an easy-to-understand way.
 
-{% if site.target = "web" %}
+{% if site.target == "web" %}
 * TOC
 {:toc}
 {% endif %}

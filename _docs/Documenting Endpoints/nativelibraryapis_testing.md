@@ -11,7 +11,7 @@ Walking through all the steps in documentation yourself, as a technical writer, 
 
 Especially with developer documentation, the tasks required to test out your documentation are not trivial. Still, they are essential to creating user-centered documentation. This is my biggest tip for having success as a technical writer creating API documentation: test everything.
 
-{% if site.target = "web" %}
+{% if site.target == "web" %}
 * TOC
 {:toc}
 {% endif %}

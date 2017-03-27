@@ -10,7 +10,7 @@ section: nativelibraryapis
 
 Javadoc is a document generator that looks through your Java source files for specific annotations. It parses out the annotations into the Javadoc output. Knowing the annotations is essential, since this is how the Javadoc gets created.
 
-{% if site.target = "web" %}
+{% if site.target == "web" %}
 * TOC
 {:toc}
 {% endif %}

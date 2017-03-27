@@ -24,7 +24,7 @@ My preferred term is "endpoint."
 
 Often there's no term used at all above the endpoint &mdash; you can just list it on the page, styled in a way that makes it obvious what it is.
 
-{% if site.target = "web" %}
+{% if site.target == "web" %}
 * TOC
 {:toc}
 {% endif %}

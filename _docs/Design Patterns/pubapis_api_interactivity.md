@@ -15,7 +15,7 @@ Here's a sample API explorer from Twitter:
 
 <a href="https://dev.twitter.com/rest/tools/console"><img src="images/twitterapiexplorer.png" alt="Twitter API Explorer" /></a>
 
-{% if site.target = "web" %}
+{% if site.target == "web" %}
 * TOC
 {:toc}
 {% endif %}

@@ -17,7 +17,7 @@ One of the most stark differences between regular GUI documentation and develope
 >
 >A great example of this is the Backbone.js documentation, which has everything at your fingertips.
 
-{% if site.target = "web" %}
+{% if site.target == "web" %}
 * TOC
 {:toc}
 {% endif %}

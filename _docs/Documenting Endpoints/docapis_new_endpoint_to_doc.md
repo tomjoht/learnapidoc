@@ -17,7 +17,7 @@ Now let's shift perspectives. Now you're a technical writer working with the Mas
 {: .note}
 For this exercise, you could equally document a new endpoint for the Aeris Weather API, but since that API is already quite robust, we'll keep it simple and work with the more minimalist Mashape weather API.
 
-{% if site.target = "web" %}
+{% if site.target == "web" %}
 * TOC
 {:toc}
 {% endif %}

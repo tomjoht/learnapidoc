@@ -13,7 +13,7 @@ You could just remember to add the exact same sections on each page, but this re
 
 <a href="https://flic.kr/p/oFD6MM"><img src="images/structure.png" alt="Structure, by Rafal Zych" /></a>
 
-{% if site.target = "web" %}
+{% if site.target == "web" %}
 * TOC
 {:toc}
 {% endif %}
