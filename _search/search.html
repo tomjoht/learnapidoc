@@ -25,7 +25,7 @@ permalink: search.html
 
 <script>
   window.store = {
-          {% for doc in collection.docs %}
+          {% for doc in site.docs %}
             {% unless doc.search == false %}
 
       "{{ doc.url | slugify }}": {
