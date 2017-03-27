@@ -1,2 +1,1 @@
-# learnapidoc
-Repo for API doc book
+Site for my book/course/ebook/pdf.

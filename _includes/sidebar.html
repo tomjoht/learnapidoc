@@ -1,0 +1,106 @@
+{% assign sidebar = site.data[page.sidebar] %}
+<div class="mydocsidebar">
+<div class="sidebar-inner">
+<!-- search bar - uses Lunr.js  -->
+
+<div class="sidebarSearchBar">
+<form action="search-{{page.sidebar}}.html" method="get">
+  <div class="input-group search">
+    <input type="text" id="search-box" name="query" class="form-control" placeholder="{{site.uistring.search_placeholder_product}}">
+    <div class="input-group-btn">
+      <button class="btn btn-default" type="submit" value="search">
+        <i class="glyphicon glyphicon-search"></i>
+      </button>
+    </div>
+  </div>
+</form>
+</div>
+
+<!-- end search bar -->
+
+{% unless page.sidebar == null %}
+<div class="productTitle">{{sidebar.sidebarTitle}}</div>
+<p class="external">
+    <a href="#" id="collapseAll">{{site.uistring.collapseall}}</a> | <a href="#" id="expandAll">{{site.uistring.expandall}}</a>
+</p>
+
+{% endunless %}
+
+    <ul id="docnavsidebar" class="docnav">
+    {% for folder in sidebar.folders %}
+    <li class="level1"><a href="#">{{ folder.title }}</a>
+        <ul>
+            {% for folderitem in folder.folderitems %}
+
+            {% if folderitem.title %}
+            {% if page.url == folderitem.jurl %}
+            <li class="level1items open"><a href="{{folderitem.jurl | remove: "/" }}">{{folderitem.title}}</a></li>
+            {% elsif folderitem.jurl contains "http://" or folderitem.jurl contains "https://" %}
+            <li class="level1items"><a  class="noCrossRef" href="{{folderitem.jurl }}">{{folderitem.title}}</a></li>
+            {% else %}
+            <li class="level1items"><a href="{{folderitem.jurl | remove: "/" }}">{{folderitem.title}}</a></li>
+            {% endif %}
+            {% endif %}
+
+            {% for subfolder in folderitem.subfolders %}
+
+            <li class="level2"><a class="subfoldersTitle" href="#">{{ subfolder.title }}</a>
+                <ul style="display:none;">
+                    {% for subfolderitem in subfolder.subfolderitems %}
+
+                    {% if subfolderitem.title %}
+                    {% if page.url == subfolderitem.jurl %}
+                    <li class="level2items open"><a href="{{subfolderitem.jurl | remove: "/" }}">{{subfolderitem.title}}</a></li>
+                    {% elsif folderitem.jurl contains "http://" or folderitem.jurl contains "https://" %}
+                    <li class="level2items"><a  class="noCrossRef" href="{{subfolderitem.jurl }}">{{subfolderitem.title}}</a></li>
+                    {% else %}
+                    <li class="level2items"><a href="{{subfolderitem.jurl | remove: "/" }}">{{subfolderitem.title}}</a></li>
+                    {% endif %}
+                    {% endif %}
+
+                    {% for subsubfolder in subfolderitem.subsubfolders %}
+                    <li class="level3"><a class="subfoldersTitle" href="#">{{ subsubfolder.title }}</a>
+                        <ul style="display:none;">
+                            {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
+
+                            {% if subsubfolderitem.title %}
+                            {% if page.url == subsubfolderitem.jurl %}
+                            <li class="level3items open"><a href="{{subsubfolderitem.jurl | remove: "/" }}">{{subsubfolderitem.title}}</a></li>
+                            {% elsif folderitem.jurl contains "http://" or folderitem.jurl contains "https://" %}
+                            <li class="level3items"><a href="{{subsubfolderitem.jurl }}">{{subsubfolderitem.title}}</a></li>
+                            {% else %}
+                            <li class="level3items"><a href="{{subsubfolderitem.jurl | remove: "/" }}">{{subsubfolderitem.title}}</a></li>
+                            {% endif %}
+                            {% endif %}
+
+                            {% endfor %}
+                        </ul>
+                    </li>
+
+                    {% endfor %}
+
+                    {% endfor %}
+                </ul>
+            </li>
+
+            {% endfor %}
+
+            {% endfor %}
+        </ul>
+
+        {% endfor %}
+
+    </li>
+</ul>
+
+<hr class="resourceSeparator"></hr>
+<div class="relatedResources">{{sidebar.related_resources_title}}</div>
+<ul id="entrypages">
+        {% for item in sidebar.related_resources_list %}
+        <li><a class="noCrossRef" href="{{item.jurl }}">{{item.title}}</a></li>
+        {% endfor %}
+    </li>
+</ul>
+</div>
+</div>
+<script>$("li.open").parents('li').toggleClass("open");</script>

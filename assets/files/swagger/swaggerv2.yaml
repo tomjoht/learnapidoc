@@ -1,0 +1,145 @@
+swagger: "2.0"
+externalDocs:
+  description: For more information on how to use the API, see the documentation.
+  url: https://example.com/
+info: 
+ version: "1.0.0"
+ title: "Weather API"
+ description: "A sample API that uses a Mashape weather API as an example to demonstrate features in the swagger-2.0 specification"
+ termsOfService: "http://helloreverb.com/terms/"
+ contact: 
+   name: "Tom Johnson"
+   email: "tomjohnson1492@gmail.com"
+   url: "http://swagger.io"
+ license: 
+   name: "MIT"
+   url: "http://opensource.org/licenses/MIT"
+host: "simple-weather.p.mashape.com"
+schemes: 
+ - "https"
+consumes: 
+ - "application/json"
+produces: 
+ - "application/text"
+paths: 
+ /aqi: 
+   get: 
+     tags: 
+       - "Air Quality"
+     description: "gets air quality index"
+     operationId: "getAqi"
+     produces: 
+       - "text"
+     parameters: 
+       - 
+         name: "lat"
+         in: "query"
+         description: "latitude"
+         required: false
+         type: "string"
+       - 
+         name: "lng"
+         in: "query"
+         description: "longitude"
+         required: false
+         type: "string"
+     responses: 
+       200: 
+         description: "aqi response"
+         schema:
+          $ref: "#/definitions/aqiresponse"
+       default: 
+         description: "unexpected error"
+
+ /weather: 
+   get: 
+     tags: 
+       - "Weather Forecast"
+     description: "gets weather forecast in short label"
+     operationId: "getWeather"
+     produces: 
+       - "text"
+     parameters: 
+       - 
+         name: "lat"
+         in: "query"
+         description: "latitude"
+         required: false
+         type: "string"
+       - 
+         name: "lng"
+         in: "query"
+         description: "longitude"
+         required: false
+         type: "string"
+     responses: 
+       200: 
+         description: "weather response"
+       default: 
+         description: "unexpected error"
+ /weatherdata: 
+   get: 
+     tags: 
+       - "Full Weather Data"
+     description: "Get weather forecast by Latitude and Longitude"
+     operationId: "getWeatherData"
+     produces: 
+       - "application/json"
+     parameters: 
+       - 
+         name: "lat"
+         in: "query"
+         description: "latitude"
+         required: false
+         type: "string"
+       - 
+         name: "lng"
+         in: "query"
+         description: "longitude"
+         required: false
+         type: "string"
+     responses: 
+       200: 
+         description: "Weatherdata response"
+         schema:
+          $ref: "#/definitions/weatherdataresponse"
+       default: 
+         description: "unexpected error"
+         
+securityDefinitions:
+  internalApiKey:
+    type: apiKey
+    in: header
+    name: X-Mashape-Key
+    
+    
+definitions:
+
+  aqiresponse:
+    type: object
+    required:
+    - identifiers
+    properties:
+      identifiers:
+        description: The list of identifiers that you want to use to look up other identifiers. To look up multiple values for the same identifier, use a comma-separated list in the value for values as shown in the example
+        type: string
+        example: "some example"
+      values:
+        type: "string"
+        description: Some description of the value
+        example: "some value"
+            
+
+  weatherdataresponse:
+    type: object
+    required:
+    - identifiers
+    properties:
+      identifiers:
+        description: The list of identifiers that you want to use to look up other identifiers. To look up multiple values for the same identifier, use a comma-separated list in the value for values as shown in the example
+        type: string
+        example: "some example"
+      values:
+        type: "string"
+        description: Some description of the value
+        example: "some value"

@@ -1,0 +1,116 @@
+ /* Style Definitions */
+
+p
+{
+	margin-top: 1em;
+	text-indent: 0em
+}
+
+li {
+  margin-bottom: .5em;
+}
+
+.pagebreak
+{
+	page-break-before: always;
+}
+
+.centered
+{
+	text-align: center;
+}
+
+.bottom
+{
+	vertical-align: text-bottom;
+}
+
+.tablehead
+{
+	text-align: center;
+	font-weight: bold
+}
+
+h1, h2, h3, h4 {margin-top: 1em }
+
+<style>
+.level1 { margin-left: 1em}
+.level1items { margin-left: 2em}
+</style>
+
+div#bookToc ul#docnavsidebar li.level1items a, li.level2items, li.level3items {
+    font-size: 1em;
+}
+
+inspector-stylesheet:1
+div#bookToc ul#docnavsidebar > li {
+    list-style-type: none;
+}
+
+div#bookToc li.level1 a, div#bookToc li.level2 a, div#bookToc li.level3 a {
+font-size: 1.2em;
+}
+
+blockquote {
+    background-color: #eef7fa;
+    font-family: arial;
+    font-size: .9em;
+    margin: 0px;
+    padding: 1em;
+}
+
+p.note {
+    background: #f1f1f1;
+    padding: 1em;
+    border-left: 1em solid orange;
+}
+
+p.tip {
+    background: #f1f1f1;
+    padding: 1em;
+    border-left: 1em solid deepskyblue;
+}
+
+p.warning {
+    background: #f1f1f1;
+    padding: 1em;
+    border-left: 1em solid red;
+}
+
+p.note::before {
+    content: "Note: ";
+    font-weight: bold;
+}
+
+p.tip::before {
+    content: "Tip: ";
+    font-weight: bold;
+}
+
+p.warning::before {
+    content: "Warning: ";
+    font-weight: bold;
+}
+
+ul#docnavsidebar li.level1items, ul#docnavsidebar  li.level2items {
+    list-style-type: square;
+    margin-left: 2em;
+}
+
+ul#docnavsidebar li.level1, ul#docnavsidebar li.level2 {
+    list-style: none;
+    font-size: 1.2em;
+    margin-left: 1em;
+}
+
+.docSample {
+    padding: 1em;
+    background-color: #e6f3f7;
+		margin: 1em 0em;
+}
+
+blockquote {
+	padding: 1em;
+	background-color: #e6f3f7;
+	margin: 1em 0em;
+}

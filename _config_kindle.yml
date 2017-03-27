@@ -1,0 +1,85 @@
+language: english
+target: jekyll
+
+# Link to home
+url: /
+
+destination: _site
+image_path: docs
+port: 5000
+highlighter: rouge
+github_editme_path: https://github.com/amzn/appstore-alexa-docs/
+
+target: pdf
+
+image_path: docs
+
+markdown: kramdown
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge
+
+collections:
+  docs:
+    output: true
+  frontmatter:
+    output: true
+  search:
+    output: true
+
+sass:
+    style: compressed
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: kindle
+      topnav: topnav
+  -
+    scope:
+      path: ""
+      type: docs
+    values:
+      layout: kindle
+      topnav: topnav
+  -
+    scope:
+      path: ""
+      type: search
+    values:
+      layout: default
+      topnav: topnav
+      type: search
+  -
+    scope:
+      path: images
+    values:
+      image: true
+
+
+########## UI text ###############
+
+
+uistring:
+    tableofcontents: Table of Contents
+    log_doc_issue: Log Doc Issue
+    breadcrumb:
+      home: Home
+      documentation: Documentation
+    expandall: Expand All
+    collapseall: Collapse All
+    title: Amazon Developer Portal # Displays as site title on top nav bar and on site metadata
+    description: Documentation for Amazon products, including Fire TV, Fire tablets, Alexa, Appstore, and more.  # Displays as site description meta
+    search_placeholder_global: Global Search ...
+    search_placeholder_product: Product Search ...
+    github_edit_button_text: Edit on GitHub
+    search_results_page_title: Search results
+    search_no_results_found: No results found.
+    products: Products
+    docindex_product: Product
+    docindex_startpage: Starting page

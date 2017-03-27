@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet"  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <title>Sample Query to get the wind</title>
+    <style>
+        #wind_direction, #wind_chill, #wind_speed, #temperature, #speed {color: red; font-weight: bold;}
+        body {margin:20px;}
+    </style>
+
+    <script>
+
+        function checkWind() {
+
+            var output = $.ajax({
+                url: 'https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&lng=-121.955236',
+                type: 'GET',
+                data: {},
+                dataType: 'json',
+                success: function(data) {
+                    //
+                    //Change data.source to data.something , where something is whichever part of the object you want returned.
+                    //To see the whole object you can output it to your browser console using:
+                    console.log(data);
+                    $("#wind_speed").append (data.query.results.channel.wind.speed);
+                    $("#wind_direction").append (data.query.results.channel.wind.direction);
+                    $("#wind_chill").append (data.query.results.channel.wind.chill);
+                    $("#temperature").append (data.query.results.channel.units.temperature);
+                    $("#speed").append (data.query.results.channel.units.speed);
+                },
+                error: function(err) { alert(err); },
+                beforeSend: function(xhr) {
+                    xhr.setRequestHeader("X-Mashape-Authorization", "WOyzMuE8c9mshcofZaBke3kw7lMtp1HjVGAjsndqIPbU9n2eET"); // Enter here your Mashape key
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+
+<button type="button" onclick="checkWind()" class="btn btn-danger weatherbutton">Check wind conditions</button>
+
+<h2>Wind conditions for Santa Clara</h2>
+
+<b>Wind chill: </b><span id="wind_chill"></span> <span id="temperature"></span></br>
+<b>Wind speed: </b><span id="wind_speed"></span> <span id="speed"></span></br>
+<b>Wind direction: </b><span id="wind_direction"></span>
+
+</body>
+</html>

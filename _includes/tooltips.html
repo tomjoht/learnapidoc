@@ -1,0 +1,1 @@
+{% for entry in site.data.tooltips %}{% if entry.term == {{include.term}} and {{include.capitalize}} == "true" %}<a data-toggle="tooltip" title="{{entry.def}}">{{entry.term | capitalize}}</a>{% elsif entry.term == {{include.term}} and {{include.capitalize}} != "true" %}<a data-toggle="tooltip" title="{{entry.def}}">{{entry.term}}</a>{% endif %}{% endfor %}

@@ -1,0 +1,137 @@
+table p {
+  max-width: 100%;
+}
+
+th {
+  text-align: left;
+}
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #dedede;
+  background-color: transparent;
+}
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td,
+table > tbody > tr > td ol > li,
+table > tbody > tr > td ol > li
+{
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+  font-size: 15px;
+}
+
+table > tbody > tr > td > p {
+  padding: 8px 0px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  font-size: 1.5rem;
+}
+table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+  text-transform: none;
+  background-color: #777;
+  color: white;
+  text-align: left;
+}
+table > caption + thead > tr:first-child > th,
+table > colgroup + thead > tr:first-child > th,
+table > thead:first-child > tr:first-child > th,
+table > caption + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > td,
+table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+table > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+table col[class*="col-"] {
+  position: static;
+  display: table-column;
+  float: none;
+}
+table td[class*="col-"],
+table th[class*="col-"] {
+  position: static;
+  display: table-cell;
+  float: none;
+}
+table td:first-child {
+  width: 150px;
+  /*font-weight:bold;*/
+}
+table.boldFirstColumn td:first-child {
+  font-weight: bold;
+}
+table tr td {
+  hyphens: auto;
+}
+table.dataTable thead {
+  background-color: #444;
+}
+table td {
+  hyphens: auto;
+}
+table code {
+  background-color: transparent;
+}
+
+table code {
+  background-color: transparent;
+}
+pre,
+table code {
+  white-space: pre-wrap;
+  /* css-3 */
+
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+}
+td.white {
+  background-color: white;
+}
+td.gray {
+  background-color: #f7f7f7;
+}
+
+table code {
+  white-space: pre-wrap;
+  /* css-3 */
+
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+}
+table, table p, table ol li, table ul li {
+  max-width: 100%;
+}
+table code {
+  word-wrap: break-word
+}
+table {
+  table-layout: auto;
+}

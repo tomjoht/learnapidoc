@@ -1,0 +1,17 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+layout: null
+---
+
+@import "navbar";
+@import "headings";
+@import "sidebar";
+@import "alerts";
+@import "syntax_highlighting";
+@import "table";
+@import "navtabs";
+@import "footer";
+@import "custom";
+
+

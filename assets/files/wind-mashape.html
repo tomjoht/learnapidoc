@@ -1,0 +1,54 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<link rel="stylesheet"  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+
+  <title>Mashape Integration</title>
+<style>
+   #wind_direction, #wind_chill, #wind_speed, #temperature, #speed {color: red; font-weight: bold;}
+   body {margin:20px;}
+</style>
+  </head>
+<body>
+
+
+<script>
+
+function checkWind() {
+
+  var settings = {
+    "async": true,
+    "crossDomain": true,
+    "dataType": "json",
+  "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&lng=-121.955236",
+    "method": "GET",
+  "headers": {
+    "accept": "application/json",
+    "x-mashape-key": "WOyzMuE8c9mshcofZaBke3kw7lMtp1HjVGAjsndqIPbU9n2eET"
+  }
+}
+
+  $.ajax(settings)
+
+  .done(function (response) {
+    console.log(response);
+
+    $("#wind_speed").append (response.query.results.channel.wind.speed);
+    $("#wind_direction").append (response.query.results.channel.wind.direction);
+    $("#wind_chill").append (response.query.results.channel.wind.chill);
+    $("#temperature").append (response.query.results.channel.units.temperature);
+    $("#speed").append (response.query.results.channel.units.speed);
+  });
+}
+</script>
+
+
+<button type="button" onclick="checkWind()" class="btn btn-danger weatherbutton">Check wind conditions</button>
+
+<h2>Wind conditions for Santa Clara</h2>
+
+<b>Wind chill: </b><span id="wind_chill"></span> <span id="temperature"></span></br>
+<b>Wind speed: </b><span id="wind_speed"></span> <span id="speed"></span></br>
+<b>Wind direction: </b><span id="wind_direction"></span>
+</body>
+</html>

@@ -1,0 +1,281 @@
+sidebarTitle: Documenting REST APIs
+
+folders:
+
+# - title: Table of Contents
+#   jurl: /toc.html
+
+- title: Frontmatter
+  jurl: /frontmatter.html
+  folderitems:
+  - title: Copyright
+    jurl: /copyright.html
+
+  - title: Foreward
+    jurl: /foreward.html
+
+- title: Introduction to REST APIs
+  jurl: /introtoapis.html
+  folderitems:
+  - title: Course overview
+    jurl: /docapis_course_overview.html
+
+  - title: The market for REST API documentation
+    jurl: /docapis_intro_to_rest_api_doc.html
+
+  - title: What is a REST API?
+    jurl: /docapis_what-is-a-rest-api.html
+
+- title: Using a REST API as a developer
+  jurl: /likeadeveloper.html
+  folderitems:
+
+  - title: Scenario for using a weather API
+    jurl: /docapis_scenario_for_using_weather_api.html
+
+  - title: Getting authorization keys
+    jurl: /docapis_get_auth_keys.html
+
+  - title: Submit calls through Postman
+    jurl: /docapis_postman.html
+
+  - title: Installing cURL
+    jurl: /docapis_install_curl.html
+
+  - title: Making a cURL call
+    jurl: /docapis_make_curl_call.html
+
+  - title: Understand cURL more
+    jurl: /docapis_understand_curl.html
+
+  - title: Using methods with cURL
+    jurl: /docapis_curl_with_petstore.html
+
+  - title: Analyze the JSON response
+    jurl: /docapis_analyze_json.html
+
+  - title: Log JSON to the console
+    jurl: /docapis_json_console.html
+
+  - title: Access and print a specific JSON value
+    jurl: /docapis_access_json_values.html
+
+  - title: Diving into dot notation
+    jurl: /docapis_diving_into_dot_notation.html
+
+- title: Documenting a new API endpoint
+  jurl: /docendpoints.html
+  folderitems:
+
+  - title: New API endpoint to document
+    jurl: /docapis_new_endpoint_to_doc.html
+
+  - title: Documenting resource descriptions
+    jurl: /docapis_resource_descriptions.html
+
+  - title: Documenting endpoint definitions and methods
+    jurl: /docapis_doc_endpoint_definitions.html
+
+  - title: Documenting parameters
+    jurl: /docapis_doc_parameters.html
+
+  - title: Documenting sample requests
+    jurl: /docapis_doc_sample_requests.html
+
+  - title: Documenting sample responses
+    jurl: /docapis_doc_sample_responses.html
+
+  - title: Documenting code samples
+    jurl: /docapis_doc_code_samples.html
+
+  - title: Putting it all together
+    jurl: /docapis_finished_doc_result.html
+
+  - title: "My biggest tip: Test everything"
+    jurl: /nativelibraryapis_testing.html
+
+- title: Documenting non-reference sections
+  jurl: /docnonref.html
+  folderitems:
+
+  - title: Creating user guide tasks
+    jurl: /docapis_create_user_guide.html
+
+  - title: Writing the API overview
+    jurl: /docapis_doc_overview.html
+
+  - title: Writing the Getting Started section
+    jurl: /docapis_doc_getting_started_section.html
+
+  - title: Documenting authentication and authorization
+    jurl: /docapis_more_about_authorization.html
+
+  - title: Documenting response and error codes
+    jurl: /docapis_doc_response_codes.html
+
+  - title: Documenting code samples and tutorials
+    jurl: /docapis_codesamples_bestpractices.html
+
+  - title: Creating the quick reference guide
+    jurl: /docapis_doc_quick_reference.html
+
+- title: Exploring other REST APIs
+  jurl: /otherapis.html
+  folderitems:
+
+  - title: Exploring more REST APIs
+    jurl: /docapis_more_rest_exercises.html
+
+  - title: EventBrite example
+    jurl: /docapis_eventbrite_example.html
+
+  - title: Flickr example
+    jurl: /docapis_flickr_example.html
+
+  - title: Klout example
+    jurl: /docapis_klout_example.html
+
+  - title: Aeris Weather example
+    jurl: /docapis_aerisweather_example.html
+
+  - title: Next phase of course
+    jurl: /docapis_completion.html
+
+- title: Publishing API docs
+  jurl: /publishingapis.html
+  folderitems:
+
+  - title: Overview
+    jurl: /pubapis_overview.html
+
+  - title: List of about 100 APIs
+    jurl: /pubapis_apilist.html
+
+  - title: Breaking down API doc
+    jurl: /pubapis_api_doc_types.html
+
+  - title: Tool decisions
+    jurl: /pubapis_tooldecisions.html
+
+  - title: Github wikis
+    jurl: /pubapis_github_wikis.html
+
+  - title: More about Markdown
+    jurl: /pubapis_markdown.html
+
+  - title: Using a version control system
+    jurl: /pubapis_version_control.html
+
+  - title: Pull request workflows through Github in browser
+    jurl: /pubapis_github_pull_requests.html
+
+  - title: REST API specification formats
+    jurl: /pubapis_rest_specification_formats.html
+
+  - title: Implementing Swagger with your API docs
+    jurl: /pubapis_swagger_intro.html
+
+  - title: Swagger tutorial
+    jurl: /pubapis_swagger.html
+
+  - title: More about YAML
+    jurl: /pubapis_yaml.html
+
+  - title: RAML
+    jurl: /pubapis_raml.html
+
+  - title: API Blueprint
+    jurl: /pubapis_api_blueprint.html
+
+  - title: Static site generators (Jekyll)
+    jurl: /pubapis_static_site_generators.html
+
+  - title: Readme.io
+    jurl: /pubapis_readmeio.html
+
+  - title: Miredot
+    jurl: /pubapis_miredot.html
+
+  - title: Custom UX solutions
+    jurl: /pubapis_custom_ux.html
+
+  - title: Help authoring tools
+    jurl: /pubapis_hats.html
+
+  - title: Tools versus Content
+    jurl: /pubapis_tools_vs_content.html
+
+#  - title: Conclusion
+#    permalink: /pubapis_conclusion.html
+
+- title: Design patterns
+  jurl: /designpatterns.html
+  folderitems:
+
+    - title: Design patterns
+      jurl: /pubapis_design_patterns.html
+
+    - title: Structure and templates
+      jurl: /pubapis_structure_and_templates.html
+
+    - title: Web platforms
+      jurl: /pubapis_web_platforms.html
+
+    - title: Abundant code samples
+      jurl: /pubapis_code_samples.html
+
+    - title: Long-ish pages
+      jurl: /pubapis_longish_pages.html
+
+    - title: API interactivity
+      jurl: /pubapis_api_interactivity.html
+
+    - title: Adding an Edit on Github button
+      jurl: /pubapis_edit_on_github.html
+
+    - title: Challenging factors
+      jurl: /pubapis_challenging_factors.html
+
+- title: Documenting native library APIs
+  jurl: /nativelibraryapis.html
+  folderitems:
+
+  - title: Overview of native library APIs
+    jurl: /nativelibraryapis_overview.html
+
+  - title: Getting the Java source
+    jurl: /nativelibraryapis_getting_the_source.html
+
+  - title: Java crash course
+    jurl: /nativelibraryapis_java_crash_course.html
+
+  - title: Generate a Javadoc
+    jurl: /nativelibraryapis_create_javadoc.html
+
+  - title: Javadoc tags
+    jurl: /nativelibraryapis_javadoc_tags.html
+
+  - title: Exploring the Javadoc output
+    jurl: /nativelibraryapis_exploring_javadoc_output.html
+
+  - title: Making edits to Javadoc tags
+    jurl: /nativelibraryapis_editing_javadoc.html
+
+  - title: Doxygen, another document generator
+    jurl: /nativelibraryapis_doxygen.html
+
+  - title: Documenting non-reference API docs
+    jurl: /nativelibraryapis_nonrefdocs.html
+
+  - title: Course summary
+    jurl: /nativelibraryapis_workshop_summary.html
+
+- title: Getting a Job in API Documentation
+  jurl: /jobapis.html
+  folderitems:
+
+  - title: The job market for API technical writers
+    jurl: /jobapis_overview.html
+
+  - title: How much code do you need to know to create developer documentation?
+    jurl: /jobapis_learning_code.html

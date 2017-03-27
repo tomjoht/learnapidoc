@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    {% if page.layout == "homepage" or page.type == "search" %}
+    <title>{{page.title}} | {{site.title}}</title>
+    {% else %}
+    <title>{{page.title}} | {{page.product}}</title>
+    {% endif %}
+    <base target="_self">
+    <meta name="description" content="{% if page.content %}{{ page.content | truncatewords: 30 | strip_html }} {% else %}{{site.uistring.description}}{% endif %}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" value="notranslate">
+    <link rel="icon"  type="image/x-icon" href="favicon.ico">
+
+    <!-- FontAwesome -->
+   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <!-- Navgoco -->
+    <script type="text/javascript" src="assets/js/jquery.navgoco.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Anchor JS -->
+    {% unless page.layout == "homepage" or page.type == "search" %}
+        <script src="assets/js/anchor.min.js"></script>
+        <script>
+        $( document ).ready(function() {
+            anchors.add('h2,h3,h4,h5');
+        });
+        </script>
+    {% endunless %}
+
+    <script>
+        $( document ).ready(function() {
+            $("#docnavsidebar").navgoco({
+                caretHtml: '',
+                accordion: false,
+                openClass: 'open', // open
+                save: true,
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 300,
+                    easing: 'swing'
+                }
+            });
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#docnavsidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#docnavsidebar").navgoco('toggle', true);
+            });
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle=offcanvas]').click(function() {
+                $('.row-offcanvas').toggleClass('active');
+            });
+        });
+    </script>
+
+
+    <!--Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        ul#markdown-toc::before  {
+        content: "{{site.uistring.tableofcontents}}"
+         }
+    </style>
+
+</head>
+<body class="{{page.layout}}">
+<div class="page-container">
+
+
+    <!-- Top Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container topnavlinks">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="fa fa-bars fa-2x"></span>
+                </button>
+                <button type="button" class="navbar-toggle toggle-sidebar-button"  data-toggle="offcanvas" data-target=".sidebar-nav">
+                    <span class="sidebarToggle fa fa-columns fa-2x"></span>
+                </button>
+
+                <a class="navbar-brand noCrossRef" href="https://developer.amazon.com/">
+                    <img class="navbar-logo" src="amazonlogowhite.png"/>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+
+                    <!-- single item nav items appear here -->
+
+                    {% assign topnav = site.data[page.topnav] %}
+                    {% for entry in topnav.navbar_singleitems %}
+                    {% for item in entry.items %}
+                    {% if item.url contains "http://" or item.url contains "https://" %}
+                    <li><a href="{{item.url}}" class="noCrossRef">{{item.title}}</a></li>
+                    {% elsif page.url contains item.url %}
+                    <li class="active"><a href="{{item.url | remove: "/"}}">{{item.title}}</a></li>
+                    {% else %}
+                    <li><a href="{{item.url | remove: "/"}}">{{item.title}}</a></li>
+                    {% endif %}
+                    {% if page.github == true %}
+                    <li><a href="https://github.com/amzn/appstore-alexa-docs/issues" class="noCrossRef">{{site.uistring.log_doc_issue}}</a></li>
+                    <li><a target="_blank" href="https://github.com/amzn/appstore-alexa-docs/blob/github-docs/{{page.path}}" class="editButton noCrossRef"><i class="fa fa-github fa-lg"></i> {{site.uistring.github_edit_button_text}}</a></li>{% endif %}
+                    {% unless page.type == "homepage" or page.type == "search" or page.type == "404" %}
+                    <li><a target="_blank" href="{{ site.data[page.sidebar].forum.forum_link }}" class="editButton noCrossRef">{{ site.data[page.sidebar].forum.forum_name }}</a></li>
+                    {% endunless %}
+                    {% endfor %}
+                    {% endfor %}
+
+                    <!-- drop-down nav items appear here -->
+
+                    {% for entry in topnav.navbar_dropdowns %}
+                    {% for folder in entry.folders %}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ folder.title }}<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            {% for folderitem in folder.folderitems %}
+                            {% if folderitem.url contains "http://" or folderitem.url contains "https://" %}
+                            <li><a href="{{folderitem.url}}" class="noCrossRef">{{folderitem.title}}</a></li>
+                            {% elsif page.url contains folderitem.url %}
+                            <li class="dropdownActive"><a href="{{folderitem.url |  remove: "/"}}">{{folderitem.title}}</a></li>
+                            {% else %}
+                            <li><a href="{{folderitem.url | remove: "/"}}">{{folderitem.title}}</a></li>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </li>
+
+                    {% endfor %}{% endfor %}
+
+
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <!--start search -->
+                        <!--
+                        <div id="search-demo-container">
+                            <form action="search.html" method="get">
+                                <input type="text" id="search-input" placeholder="{{site.uistring.search_placeholder_global}}" name="query">
+                            </form>
+                        </div>
+                        -->
+                        <!-- end search-->
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <!-- /.container -->
+    </nav>

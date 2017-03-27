@@ -1,0 +1,385 @@
+@font-face {
+  font-family: "AmazonEmber_Rg";
+  //src: url('../fonts/AmazonEmber_Rg.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "AmazonEmber_Bd";
+  //src: url('../fonts/AmazonEmber_Bd.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: "AmazonEmber_RgIt";
+  //src: url('../fonts/AmazonEmber_RgIt.ttf') format('truetype');
+}
+
+body {
+  padding-top: 51px;
+  //font-family: Arial;
+  //font-family: '../fonts/AmazonEmber_Rg.ttf' format('truetype');
+}
+
+
+p,
+ol,
+ul,
+li {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+}
+
+@media (min-width: 767px)
+{
+p, .alert, pre, ol li ul li, ol li ol li {
+  max-width: 90%;
+}
+
+}
+
+b, strong {
+  //font-family: 'AmazonEmber_Bd';
+  //font-weight: 100;
+}
+
+i {
+  //font-family: 'AmazonEmber_RgIt';
+}
+
+
+.text-center {
+  padding-top: 20px;
+}
+/* end heading styles */
+
+.col-xs-12.col-sm-7.main {
+  margin-bottom: 100px;
+}
+
+.col-xs-12 {
+  background-color: #fff;
+  padding-left: 40px;
+}
+
+/* search */
+
+div#search-results p {
+  margin-bottom: 25px;
+}
+
+.searchForm404 {
+  margin: 20px 0px;
+}
+
+.input-group.search {
+  max-width: 200px;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+.sidebarSearchBar {
+  margin-bottom: 30px;
+  padding-top:20px;
+}
+/* endsearch */
+
+
+/* this part adds an icon after external links, using FontAwesome*/
+
+a[href^="http://"]:after,
+a[href^="https://"]:after {
+  content: "\f08e";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 3px;
+}
+
+/* Strip the outbound icon when this class is present */
+
+a[href].noCrossRef::after,
+a.no_icon:after
+ {
+  content: "" !important;
+  padding-left: 0;
+}
+
+/* Github edit button */
+
+i.fa.fa-github.fa-lg:hover,
+a.githubButton.noCrossRef:hover {
+  color: black;
+  text-decoration: none;
+}
+a.editButton {
+  color: #000000;
+}
+a.editButton:hover {
+  text-decoration: none;
+  color: #777;
+}
+.githubButton {
+  color: black;
+  background-color: white;
+  border: 1px solid #dedede;
+  padding: 7px;
+  border-radius: 5px;
+  margin: 20px 0px 10px 0px;
+}
+.githubButton:hover {
+  background-color: #fefefe;
+  color: #444;
+  text-decoration: none;
+}
+/* end github button */
+
+/* feedback button */
+.feedbackButton {
+  background-color: orange;
+  border: none;
+  color: whitesmoke;
+  padding: 6px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: 0 5px 6px 0 rgba(0,0,0,0.15);
+}
+.feedbackButton a {
+  color: whitesmoke;
+}
+.feedbackButton:hover {
+  background-color: #F79B08;
+}
+/* end feedback button */
+
+/* syntax highlightig */
+
+.highlight .err {
+  color: #a61717;
+  background-color: transparent !important;
+}
+/* svg styling */
+
+.ie9 img[src$=".svg"] {
+    width: 100%;
+}
+/* 2 */
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    img[src$=".svg"] {
+        width: 100%;
+    }
+}
+/* end */
+/* image styles */
+
+figcaption {
+    padding-bottom: 12px;
+    padding-top: 6px;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: gray;
+}
+/* end */
+
+span.projectTitle {
+    font-family: Arial;
+    font-weight: bold;
+}
+ul#entrypages li {
+    font-size: 12px;
+}
+
+
+.productSubtitle, a.productSubtitle {
+    color: #777;
+}
+
+a.productSubtitle:hover {
+  text-decoration: none;
+  color: #999;
+  cursor: pointer;
+}
+
+
+.main img {
+    margin: 12px 0px 3px 0px;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+dt {
+  //font-family: "AmazonEmber_Bd";
+}
+dl dt p {
+    margin-left: 20px;
+}
+dl dd {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+dd p {
+    margin-top: 12px;
+}
+dd pre {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.main li {
+    margin: 10px 0px;
+}
+
+
+.highlight .err {
+    color: #a61717;
+    background-color: transparent !important;
+}
+video {
+    display: block;
+    margin: 30px 0px;
+    border: 1px solid #c0c0c0;
+}
+
+
+nav#toc ul li ul li {
+    margin-left: 10px;
+}
+nav#toc ul li ul li,
+div#toc2 ul li ul li {
+    margin: 2px 16px;
+}
+
+
+pre {
+    overflow: auto;
+    margin: 20px 0px;
+}
+
+.legend img {
+  margin: 5px;
+}
+
+img.docimage.border {
+    border: 1px solid #dedede;
+}
+span.red {
+    color: red;
+}
+/* footer */
+
+
+p.external {
+    font-size: 11px;
+}
+ol li ol li {
+    list-style-type: lower-alpha;
+}
+img.inline {
+    vertical-align: bottom;
+}
+figure {
+    margin: 10px 0px;
+}
+ol li ul li {
+    list-style: disc;
+}
+
+/* mini toc javascript styles start */
+
+nav#toc ul li,
+div#toc2 ul li {
+  margin: 8px 0px 8px 22px;
+  font-size: 90%;
+  list-style: square;
+}
+nav#toc >ul::before,
+div#toc2 >ul::before {
+  font-weight: 500;
+  color: #555;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+nav#toc ul,
+nav#toc2 ul {
+  background-color: #f7f7f7;
+  padding: 5px;
+  border-radius: 5px;
+  max-width: 300px;
+  color: gray;
+}
+nav#toc2 ul {
+  padding-left: 25px;
+}
+/* mini toc styles end */
+
+/* mini toc kramdown */
+ul#markdown-toc {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  max-width: 400px;
+  padding-top:20px;
+  margin-top: 30px;
+  color: gray;
+  padding-right: 7px;
+}
+
+ul#markdown-toc::before  {
+  font-size:18px;
+  padding-top:30px;
+  margin: 20px 0px 20px -30px;
+}
+/* end mini toc */
+
+
+.number_legend img.inline {
+  margin-bottom: 2px;
+}
+
+.endpointParam {
+  color: red;
+}
+
+/* homepage */
+
+h1.homepageTitle {
+  margin-top: 50px;
+}
+
+ul.homepageLinks {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+ul.homepageLinks li {
+  margin-bottom: 6px;
+}
+
+a code.highlighter-rouge {
+    color: #337ab7;
+  }
+/* end homepage */
+
+.docSample {
+    padding: 15px;
+    background-color: #e6f3f7;
+    margin: 1em 0em;
+}
+
+blockquote {
+	padding: 1em;
+	background-color: #e6f3f7;
+	margin: 1em 0em;
+  border-left: 0px;
+}

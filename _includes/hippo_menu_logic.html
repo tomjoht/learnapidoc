@@ -1,0 +1,76 @@
+<div class="hippoRight">
+    <div class="productTitle">{{sidebar.sidebarTitle}}</div>
+    <ul id="hipposidebar" class="hipponav">
+        {% for folder in sidebar.folders %}
+        <li class="level1"><a href="#">{{ folder.title }}</a>
+            <ul>
+                {% for folderitem in folder.folderitems %}
+                {% if folderitem.title %}
+                {% if folderitem.hurl contains "http://" or folderitem.hurl contains "https://" %}
+                <li class="level1items"><a href="{{folderitem.hurl }}">{{folderitem.title}}</a></li>
+                {% else %}
+                <li class="level1items"><a href="{{folderitem.hurl }}">{{folderitem.title}}</a></li>
+                {% endif %}
+                {% endif %}
+
+                {% for subfolder in folderitem.subfolders %}
+                <li class="level2"><a class="subfoldersTitle" href="#">{{ subfolder.title }}</a>
+                    <ul>
+
+                        {% for subfolderitem in subfolder.subfolderitems %}
+                        {% if subfolderitem.title %}
+                        {% if subfolderitem.hurl contains "http://" or subfolderitem.hurl contains "https://" %}
+                        <li class="level2items"><a href="{{subfolderitem.hurl }}">{{subfolderitem.title}}</a></li>
+                        {% else %}
+                        <li class="level2items"><a href="{{subfolderitem.hurl }}">{{subfolderitem.title}}</a></li>
+                        {% endif %}
+                        {% endif %}
+
+                        {% for subsubfolder in subfolderitem.subsubfolders %}
+                        <li class="level3"><a class="subfoldersTitle" href="#">{{ subsubfolder.title }}</a>
+                            <ul>
+                                {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
+                                {% if subsubfolderitem.title %}
+                                {% if subfolderitem.hurl contains "http://" or subfolderitem.hurl contains "https://" %}
+                                <li class="level3items"><a href="{{subsubfolderitem.hurl }}">{{subsubfolderitem.title}}</a></li>
+                                {% else %}
+                                <li class="level3items"><a href="{{subsubfolderitem.hurl }}">{{subsubfolderitem.title}}</a></li>
+                                {% endif %}
+                                {% endif %}
+
+                                {% endfor %}
+                            </ul>
+                        </li>
+
+                        {% endfor %}
+
+                        {% endfor %}
+                    </ul>
+                </li>
+
+                {% endfor %}
+
+                {% endfor %}
+            </ul>
+
+            {% endfor %}
+
+        </li>
+    </ul>
+
+    <hr class="resourceSeparator"></hr>
+
+    <div class="relatedResources">{{sidebar.related_resources_title}}</div>
+
+    <ul id="entrypages">
+        <ul>
+            {% for item in sidebar.related_resources_list %}
+            {% if item.hurl contains "http://" or item.hurl contains "https://" %}
+            <li><a href="{{item.hurl }}">{{item.title}}</a></li>
+            {% else %}
+            <li><a href="{{item.hurl }}">{{item.title}}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </ul>
+</div>

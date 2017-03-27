@@ -1,0 +1,20 @@
+---
+layout: null
+search: exclude
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <sitemap>
+        <loc>docs/sitemap_en.xml</loc>
+        <lastmod>{{site.time | date: '%Y-%B-%d' }}</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>ja/docs_ja/sitemap_ja.xml</loc>
+        <lastmod>{{site.time | date: '%Y-%B-%d' }}</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>ja/docs_de/sitemap_de.xml</loc>
+        <lastmod>{{site.time | date: '%Y-%B-%d' }}</lastmod>
+    </sitemap>
+</sitemapindex>

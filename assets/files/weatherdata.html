@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <meta charset="utf-8">
+    <title>Mashape Query</title>
+    <script>
+
+
+        function doIt() {
+
+
+
+            var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://simple-weather.p.mashape.com/weatherdata?lat=38.5617255&lng=-121.5830002",
+                "method": "GET",
+                "dataType": 'json',
+                "headers": {
+                    "accept": "text/plain",
+                    "x-mashape-key": "EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p",
+                    "cache-control": "no-cache",
+                    "postman-token": "b7749bad-64ce-cf58-438b-40c5c53bf32b"
+                }
+            }
+
+            $.ajax(settings).done(function (response) {
+                console.log(response);
+                document.getElementById("output").innerHTML = response.query.results.channel.wind.speed;
+            });
+
+        }
+    </script>
+</head>
+
+<body>
+
+<button onclick="doIt()">Run the request</button>
+<div style="font-size: 70px; color: red;">
+    <div id="output"></div>
+</div>
+
+
+<h2>Here's the code behind this page:</h2>
+
+<pre style='color:#000000;background:#ffffff;'><span style='color:#808030; '>&lt;</span><span style='color:#808030; '>!</span>DOCTYPE html<span style='color:#808030; '>></span>
+<span style='color:#808030; '>&lt;</span>html<span style='color:#808030; '>></span>
+<span style='color:#808030; '>&lt;</span>head<span style='color:#808030; '>></span>
+<span style='color:#808030; '>&lt;</span>script src<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>http://code.jquery.com/jquery-2.1.1.min.js</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span><span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span>script<span style='color:#808030; '>></span>
+  <span style='color:#808030; '>&lt;</span>meta charset<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>utf-8</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+  <span style='color:#808030; '>&lt;</span>title<span style='color:#808030; '>></span>Mashape Query<span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span>title<span style='color:#808030; '>></span>
+  <span style='color:#808030; '>&lt;</span>script<span style='color:#808030; '>></span>
+
+
+<span style='color:#800000; font-weight:bold; '>function</span> doIt<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
+
+
+
+<span style='color:#800000; font-weight:bold; '>var</span> settings <span style='color:#808030; '>=</span> <span style='color:#800080; '>{</span>
+  <span style='color:#800000; '>"</span><span style='color:#0000e6; '>async</span><span style='color:#800000; '>"</span><span style='color:#800080; '>:</span> <span style='color:#0f4d75; '>true</span><span style='color:#808030; '>,</span>
+  <span style='color:#800000; '>"</span><span style='color:#0000e6; '>crossDomain</span><span style='color:#800000; '>"</span><span style='color:#800080; '>:</span> <span style='color:#0f4d75; '>true</span><span style='color:#808030; '>,</span>
+  <span style='color:#800000; '>"</span><span style='color:#0000e6; '>url</span><span style='color:#800000; '>"</span><span style='color:#800080; '>:</span> <span style='color:#800000; '>"</span><span style='color:#0000e6; '>https://simple-weather.p.mashape.com/weatherdata?lat=38.5617255&amp;lng=-121.5830002</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span>
+  <span style='color:#800000; '>"</span><span style='color:#0000e6; '>method</span><span style='color:#800000; '>"</span><span style='color:#800080; '>:</span> <span style='color:#800000; '>"</span><span style='color:#0000e6; '>GET</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span>
+  <span style='color:#800000; '>"</span><span style='color:#0000e6; '>dataType</span><span style='color:#800000; '>"</span><span style='color:#800080; '>:</span> <span style='color:#800000; '>'</span><span style='color:#0000e6; '>json</span><span style='color:#800000; '>'</span><span style='color:#808030; '>,</span>
+  <span style='color:#800000; '>"</span><span style='color:#0000e6; '>headers</span><span style='color:#800000; '>"</span><span style='color:#800080; '>:</span> <span style='color:#800080; '>{</span>
+    <span style='color:#800000; '>"</span><span style='color:#0000e6; '>accept</span><span style='color:#800000; '>"</span><span style='color:#800080; '>:</span> <span style='color:#800000; '>"</span><span style='color:#0000e6; '>text/plain</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span>
+    <span style='color:#800000; '>"</span><span style='color:#0000e6; '>x-mashape-key</span><span style='color:#800000; '>"</span><span style='color:#800080; '>:</span> <span style='color:#800000; '>"</span><span style='color:#0000e6; '>EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span>
+    <span style='color:#800000; '>"</span><span style='color:#0000e6; '>cache-control</span><span style='color:#800000; '>"</span><span style='color:#800080; '>:</span> <span style='color:#800000; '>"</span><span style='color:#0000e6; '>no-cache</span><span style='color:#800000; '>"</span><span style='color:#808030; '>,</span>
+    <span style='color:#800000; '>"</span><span style='color:#0000e6; '>postman-token</span><span style='color:#800000; '>"</span><span style='color:#800080; '>:</span> <span style='color:#800000; '>"</span><span style='color:#0000e6; '>b7749bad-64ce-cf58-438b-40c5c53bf32b</span><span style='color:#800000; '>"</span>
+  <span style='color:#800080; '>}</span>
+<span style='color:#800080; '>}</span>
+
+$<span style='color:#808030; '>.</span>ajax<span style='color:#808030; '>(</span>settings<span style='color:#808030; '>)</span><span style='color:#808030; '>.</span>done<span style='color:#808030; '>(</span><span style='color:#800000; font-weight:bold; '>function</span> <span style='color:#808030; '>(</span>response<span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
+    console<span style='color:#808030; '>.</span><span style='color:#800000; font-weight:bold; '>log</span><span style='color:#808030; '>(</span>response<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+    document<span style='color:#808030; '>.</span>getElementById<span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>output</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#808030; '>.</span>innerHTML <span style='color:#808030; '>=</span> response<span style='color:#808030; '>.</span>query<span style='color:#808030; '>.</span>results<span style='color:#808030; '>.</span>channel<span style='color:#808030; '>.</span>wind<span style='color:#808030; '>.</span>speed<span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+
+<span style='color:#800080; '>}</span>
+<span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span>script<span style='color:#808030; '>></span>
+<span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span>head<span style='color:#808030; '>></span>
+
+<span style='color:#808030; '>&lt;</span>body<span style='color:#808030; '>></span>
+</pre>
+
+</body>
+</html>

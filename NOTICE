@@ -1,0 +1,22 @@
+
+**********************
+THIRD-PARTY COMPONENTS
+**********************
+
+This site includes third-party code subject to the following copyrights:
+
+* Original theme from a Bootstrap Bootswatch fork: http://www.codeply.com/go/rV7KhUjwCN (MIT license)
+* Bootstrap: http://themes.getbootstrap.com/pages/our-license (MIT license)
+* jQuery: https://github.com/jquery/jquery/edit/master/LICENSE.txt (MIT license)
+* Jekyll: https://github.com/jekyll/jekyll (MIT license)
+* Navgoco sidebar: https://github.com/tefra/navgoco (BSD license)
+* Anchor JS: https://github.com/bryanbraun/anchorjs/ (MIT license)
+* Lunr.js: https://github.com/olivernn/lunr.js
+* pygments-css (monokai.css) for code syntax highlighting: https://github.com/richleland/pygments-css (Unlicense)
+* Bootsnipp footer: http://bootsnipp.com/snippets/1KEEq (MIT license)
+* TOC generator: https://github.com/ghiculescu/jekyll-table-of-contents.
+* FontAwesome: http://fontawesome.io/license/ (GPL)
+* jQuery Cookie: https://github.com/carhartl/jquery-cookie (MIT license)
+* jQuery inc-plugin. Licensed under the MIT license.
+
+See the /assets/licenses folder for the license files required for these third-party components.

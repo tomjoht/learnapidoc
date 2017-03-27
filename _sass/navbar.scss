@@ -1,0 +1,176 @@
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.navbar-default .navbar-brand {
+  color: #111111;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ee7600;
+}
+.navbar-default .navbar-text {
+  color: #111111;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #111111;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ee7600;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #111111;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #ee7600;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #ee7600;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ee7600;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ee7600;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #111111;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #111111;
+}
+.navbar-default .navbar-link {
+  color: #111111;
+}
+.navbar-default .navbar-link:hover {
+  color: #ee7600;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #111111;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ee7600;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ee7600;
+    background-color: #ffffff;
+  }
+}
+
+//custom tom
+
+ul.navbar-nav a:hover {
+  text-decoration: underline;
+}
+
+img.navbar-logo {
+  max-width: 140px;
+  padding: 0px;
+  padding-bottom: 5px;
+}
+.navbar-brand {
+  margin-right: 30px;
+  padding-top: 10px;
+}
+.navbar {
+  border-bottom: 1px solid #dedede;
+  font-size: 16px;
+  min-height: 70px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li {
+    padding-top: 10px;
+  }
+}
+
+.navbar-default .navbar-nav>li>a {
+  font-size: 16px;
+  font-family: Arial;
+}
+
+.sidebarToggle.fa.fa-columns.fa-2x {
+}
+
+ul.nav.navbar-nav li a {
+  white-space: nowrap;
+  margin-right: 7px;
+}
+
+/* search area */
+
+#search-demo-container ul#results-container {
+  list-style: none;
+  font-size: 12px;
+  background-color: white;
+  position: absolute;
+  top: 40px;
+  /* if you change anything about the nav, you'll prob. need to reset the top and left values here.*/
+
+  left: 20px;
+  z-index: -1;
+  width: 223px;
+  border-left: 1px solid #dedede;
+  box-shadow: 2px 3px 2px #dedede;
+}
+ul#results-container a {
+  background-color: transparent;
+}
+ul#results-container a:hover {
+  color: black;
+}
+#search-demo-container a:hover {
+  color: black;
+}
+#search-input {
+  width: 20em;
+  font-size: 0.8em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: right;
+  margin-top:10px;
+}
+#search-results {
+  margin-top: 30px;
+}
+div.searchFormDisplay {
+  display: none;
+}
+
+.navbar-brand {
+  margin-right: 0px;
+}
+/* end search */

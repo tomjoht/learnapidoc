@@ -1,0 +1,45 @@
+---
+title: Search
+layout: default
+github_button: false
+sidebar: docapis
+type: search
+permalink: search.html
+---
+
+
+<div style="display:none">
+<form action="search.html" method="get">
+  <div class="input-group search">
+    <input type="text" id="search-box" name="query" class="form-control" placeholder="{{site.uistring.search_placeholder}}">
+    <div class="input-group-btn">
+      <button class="btn btn-default" type="submit" value="search">
+        <i class="glyphicon glyphicon-search"></i>
+      </button>
+    </div>
+  </div>
+</form>
+</div>
+
+<div id="search-results"></div>
+
+<script>
+  window.store = {
+          {% for doc in collection.docs %}
+            {% unless doc.search == false %}
+
+      "{{ doc.url | slugify }}": {
+        "title": "{{ doc.title | xml_escape }}",
+        "tags": "{{ doc.tags | xml_escape }}",
+        "content": {{ doc.content | strip_html | strip_newlines | jsonify }},
+        "url": "{{ doc.url | remove: '/' | xml_escape }}",
+        "product": "{{doc.product | xml_escape}}"
+      }
+      {% unless forloop.last %},{% endunless %}
+      {% endunless %}
+    {% endfor %}
+  };
+</script>
+
+<script src="assets/js/lunr.min.js"></script>
+<script src="assets/js/search.js"></script>

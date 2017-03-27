@@ -1,0 +1,40 @@
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet"  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <title>Aeris Example</title>
+    <style>
+        #wind_direction, #wind_chill, #wind_speed, #temperature, #speed {color: red; font-weight: bold;}
+        body {margin:20px;}
+    </style>
+
+    <script>
+        function checkWind() {
+
+            var output = $.ajax({
+                url: 'http://api.aerisapi.com/observations/Santa+Clara,CA?client_id=ByruDorHEne2JB64BhP1k&client_secret=XzIn1EBOCukNQQDGJWaOZRGKe7vY89D7uaU6V7Vr ',
+                type: 'GET',
+                data: {},
+                dataType: 'json',
+                success: function(data) {
+                    console.log(data)
+                    $("#wind_speed").append(data.response.ob.windMPH + " MPH");
+                    $("#wind_direction").append(data.response.ob.windDir);
+                    $("#wind_chill").append(data.response.ob.feelslikeF + " F");
+                },
+                error: function(err) { alert(err); }
+            });
+        }
+    </script>
+</head>
+<body>
+
+<button type="button" onclick="checkWind()" class="btn btn-danger">Check wind conditions</button>
+
+<h2>Wind conditions for Santa Clara</h2>
+
+<b>Wind chill: </b><span id="wind_chill"></span> <span id="temperature"></span><br>
+<b>Wind speed: </b><span id="wind_speed"></span> <span id="speed"></span><br>
+<b>Wind direction: </b><span id="wind_direction"></span>
+
+</body></html>
