@@ -70,6 +70,14 @@ Here are a few things you'll need in this course:
 * **[cURL](http://curl.haxx.se/)**. cURL is essential for making requests to endpoints from the command line. Mac computers already have cURL installed. Windows users should follow the instructions for installing cURL [here](http://www.confusedbycode.com/curl/#downloads).
 * **[Git](https://git-scm.com/)**. Git is a version control tool developers often use to collaborate on code. See [Set Up Git](https://help.github.com/articles/set-up-git/) for more details.
 
+{% if site.target == "web" %}
+## Short version of the course in video
+
+If you'd prefer a short version of the course in video form, see this workshop I gave to the STC Sacramento chapter:
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/GerbihyUpdo" frameborder="0" allowfullscreen></iframe>
+{% endif %}
+
 ## Stay updated
 
 If you're taking this course, you most likely want to learn more about APIs. I publish regular articles that talk about APIs and strategies for documenting them. You can stay updated about these posts by subscribing to my free newsletter at [https://tinyletter.com/tomjohnson1492](https://tinyletter.com/tomjohnson1492).
