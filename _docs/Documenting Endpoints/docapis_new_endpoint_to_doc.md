@@ -17,6 +17,11 @@ Now let's shift perspectives. Now you're a technical writer working with the Mas
 {: .note}
 For this exercise, you could equally document a new endpoint for the Aeris Weather API, but since that API is already quite robust, we'll keep it simple and work with the more minimalist Mashape weather API.
 
+{% if site.target = "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 ## You have a new endpoint to document
 
 The project manager calls you over and says they have a new API for you to document for the next release. (By "API," the manager really just means a new endpoint to the existing API. Some APIs like [Alchemy API](http://www.alchemyapi.com/api/) even refer to each endpoint as an API.)

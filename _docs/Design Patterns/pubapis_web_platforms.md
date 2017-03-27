@@ -11,6 +11,11 @@ Many API doc sites provide one integrated website to find all of the information
 
 <a href="https://www.yelp.com/developers/documentation"><img src="images/yelpapi.png" alt="Yelp API documentation" /></a>
 
+{% if site.target = "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 ## Documentation as product interface
 
 I hinted at this earlier, but with API documentation, there isn't an application interface that the documentation complements. In most cases, the API documentation itself is the product that users navigate to use your product. As such, users will expect more from it.

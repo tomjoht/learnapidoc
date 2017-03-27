@@ -11,6 +11,11 @@ To understand the different components of a Javadoc, you have to first understan
 
 I'll run you through a brief crash course in the basics. For more detail about learning Java, I recommend consulting [lynda.com](http://lynda.com) and [safaribooksonline](http://safaribooksonline.com). Below I'll focus on some basic concepts in Java that will be important in understanding the Javadoc tags and elements.
 
+{% if site.target = "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 ## About Java
 
 Java is one of the most common languages used because of its flexibility. Java isn't tied to a specific language platform because Java code compiles into byte code. The platform you deploy your code on contains a Java Virtual Machine (JVM) that interprets the byte code. Hence through JVMs, different platforms can interpret and run Java code. This gives Java more flexibility with different platforms.

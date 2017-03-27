@@ -9,6 +9,13 @@ section: nativelibraryapis
 
 Although this course has focused heavily on tools, I want to emphasize that content always trumps tooling. The content should be your primary focus, not the tools you use to publish the content.
 
+{% if site.target = "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## Tooling shouldn't be your main focus
+
 Once you get the tooling infrastructure in place, it should mostly take a back seat to the daily tasks of content development.
 
 <a href="https://flic.kr/p/QMVMw"><img src="images/toolscontent.png" alt="Dave's Bike Tools, Bri Pettis, Flickr" /></a>

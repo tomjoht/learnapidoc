@@ -12,6 +12,13 @@ section: docendpoints
 
 It's important to provide a sample response from the endpoint. This lets developers know if the endpoint contains the information they want, and how that information is labeled.
 
+{% if site.target = "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## Example
+
 Here's an example from Flattr's API. In this case, the response actually includes the response header as well as the response body:
 
 <a href="http://developers.flattr.net/api/resources/activities/"><img src="images/flattr.png" alt="Flattr example" /></a>

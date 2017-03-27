@@ -15,6 +15,11 @@ Here's a sample API explorer from Twitter:
 
 <a href="https://dev.twitter.com/rest/tools/console"><img src="images/twitterapiexplorer.png" alt="Twitter API Explorer" /></a>
 
+{% if site.target = "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 ## Novel or actually instructive?
 
 Are API explorers novel, or extremely instructive? If you're going to be making a lot of calls, there's no reason why you couldn't just use cURL to quickly make the request and see the response. The API Explorer provides more of a GUI, however, that makes the endpoints accessible to more people. You don't have to worry about entering exactly the right syntax in your cURL call -- you just have to fill in the blanks.

@@ -25,6 +25,11 @@ When it comes to the right terminology to describe these things (which I call "r
 
 You could probably choose the terms that you like best. My favorite is to use *resources* (along with *endpoint* for the URL. An API has various "resources" that you access through "endpoints." The endpoint gives you access to a resource. The endpoint is the URL path (in this example, `/surfreport`). The information the endpoint interacts with, though, is a resource.
 
+{% if site.target = "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 ## Some examples
 
 Take look at [Mailchimp's API for an example](http://developer.mailchimp.com/documentation/mailchimp/reference/overview/).

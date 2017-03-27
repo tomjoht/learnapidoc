@@ -1,12 +1,11 @@
 ---
-title: "Documenting REST APIs"
-permalink: /docapis_course_overview.html
-redirect: http://idratherbewriting.com/restapicourse.html
-course: "Documenting REST APIs"
-weight: 1.0
+title: "Documenting APIs: A guide for technical writers"
+permalink: index.html
+topnav: topnav
 sidebar: docapis
-section: introtoapis
+layout: default
 ---
+
 
 In this book on writing documentation for REST APIs, instead of just talking about abstract concepts, I contextualize REST APIs with a direct, hands-on approach.
 

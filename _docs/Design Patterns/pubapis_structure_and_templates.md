@@ -13,6 +13,11 @@ You could just remember to add the exact same sections on each page, but this re
 
 <a href="https://flic.kr/p/oFD6MM"><img src="images/structure.png" alt="Structure, by Rafal Zych" /></a>
 
+{% if site.target = "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 ## Pushing values into more stylized outputs
 
 You might want to insert various values (descriptions, methods, parameters, etc.) into a highly stylized output. Rather than work with all the style tags in your page directly, you can create values that exist as an object on a page. A custom script can loop through the objects and insert the values into your template.

@@ -7,7 +7,16 @@ weight: 7.0
 section: nativelibraryapis
 ---
 
-In previous parts of the course, we focused exclusively on REST APIs. Native library APIs (also called class-based APIs or just APIs) are notably different in the following ways:
+In previous parts of the course, we focused exclusively on REST APIs. Now let's explore native library APIs, which are more common when building native apps.
+
+{% if site.target = "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## Characteristics of native library APIs
+
+Native library APIs (also called class-based APIs or just APIs) are notably different in the following ways:
 
 * **Installed locally**. Native library APIs are installed locally, compiled into the programmer's code as an additional library. The programmer can then use the classes, methods, or other functions available in the library. (The API part refers to the *public* classes the users use to access the functions in the library. There are probably lots of helper and utility classes in the Java library that aren't public. The *public* functions that the developer audience uses form the API, since this is how people make use of the library.)
 * **No requests and responses**. The classes in the native library API don't use HTTP protocol, nor are there request and responses sent across the web. The native library API is simply a collection of functions that enhance the existing code with more capabilities. It's entirely on-premises.

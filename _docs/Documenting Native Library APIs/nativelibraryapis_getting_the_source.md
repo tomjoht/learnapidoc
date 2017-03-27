@@ -9,15 +9,18 @@ section: nativelibraryapis
 
 In order to understand documentation for Java APIs, it helps to have a context of some sort. As such, I created a simple little Java application to demonstrate how the various tags get rendered into the Javadoc.
 
-<a href="https://github.com/tomjohnson1492/acmeproject"><img src="images/acmeprojectgithub.png" alt="ACME project" /></a>
+{% if site.target = "web" %}
+* TOC
+{:toc}
+{% endif %}
 
 The sample Java project is a little application about different tools that a coyote will use to capture a roadrunner. There are two classes (ACMESmartphone and Dynamite) and another class file called App that references the classes.
+
+<a href="https://github.com/tomjohnson1492/acmeproject"><img src="images/acmeprojectgithub.png" alt="ACME project" /></a>
 
 This program doesn't really do anything except print little messages to the console, but it's hopefully simple enough to be instructive in its purpose &mdash; to demonstrate different doc tags, their placement, and how they get rendered in the Javadoc.
 
 ## Clone the source on Github
-
-
 
 One of your immediate challenges to editing Javadoc will be to get the source code into your IDE. The acmeproject is [here on Github](https://github.com/tomjohnson1492/acmeproject).
 

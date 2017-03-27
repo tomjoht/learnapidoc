@@ -11,11 +11,18 @@ Walking through all the steps in documentation yourself, as a technical writer, 
 
 Especially with developer documentation, the tasks required to test out your documentation are not trivial. Still, they are essential to creating user-centered documentation. This is my biggest tip for having success as a technical writer creating API documentation: test everything.
 
-<a href="https://flic.kr/p/6Grete"><img src="images/testingeverything.jpg" alt="Testing everything" /></a>
+{% if site.target = "web" %}
+* TOC
+{:toc}
+{% endif %}
 
 ## Step 1: Set up a test environment
 
-The first step to testing your instructions is to set up a test environment. Usually the QA team already has this environment in place, so sometimes all you need to do is ask how to access it. Get the appropriate URLs, login IDs, roles, etc. from your QA team. Ask them if there's anything you shouldn't alter or delete, since sometimes the same testing environment is shared among groups. Without this test environment, it will be really difficult to make any progress in testing your instructions.
+The first step to testing your instructions is to set up a test environment.
+
+<a href="https://flic.kr/p/6Grete"><img src="images/testingeverything.jpg" alt="Testing everything" /></a>
+
+Usually the QA team already has this environment in place, so sometimes all you need to do is ask how to access it. Get the appropriate URLs, login IDs, roles, etc. from your QA team. Ask them if there's anything you shouldn't alter or delete, since sometimes the same testing environment is shared among groups. Without this test environment, it will be really difficult to make any progress in testing your instructions.
 
 Although the test environment seems like a no-brainer, it really isn't. A lot of times, developers test systems on their local machines, so setting up a web instance requires someone to get a server, install the latest build, and give you access to it.
 
