@@ -12,7 +12,7 @@ section: introtoapis
 
 The API landscape is diverse. To get a taste of the various types of APIs out there, check out Sarah Maddox's post about [API types](https://ffeathers.wordpress.com/2014/02/16/api-types/). In addition to web service APIs (which include REST), there are web socket APIs, hardware APIs, and more.
 
-<a href="https://ffeathers.wordpress.com/2014/02/16/api-types/"><img src="images/apitypes.png" alt="API Types" /></a>
+<a class="noCrossRef" href="https://ffeathers.wordpress.com/2014/02/16/api-types/"><img class="medium" src="images/apitypes.png" alt="API Types" /></a>
 
 Despite the wide variety, there are mostly just two main types of APIs most technical writers interact with:
 
@@ -33,17 +33,17 @@ Before we get into the nuts and bolts of documenting REST APIs, let me provide s
 
 In a [2013 survey by Programmableweb.com](http://www.programmableweb.com/news/api-consumers-want-reliability-documentation-and-community/2013/01/07) (which is a site that tracks and lists web APIs), about 250 developers were asked to rank the most important factors in an API. "Complete and accurate documentation" ranked as #1.
 
-<a href="http://www.programmableweb.com/news/api-consumers-want-reliability-documentation-and-community/2013/01/07"><img src="images/progwebsurvey.png" alt="Programmableweb survey" /></a>
+<a class="noCrossRef" href="http://www.programmableweb.com/news/api-consumers-want-reliability-documentation-and-community/2013/01/07"><img class="medium" src="images/progwebsurvey.png" alt="Programmableweb survey" /></a>
 
 John Musser, one of the founders of Programmableweb.com, emphasizes the importance of documentation in his presentations. In "10 reasons why developers hate your API," he says the number one reason developers hate your API is because "Your documentation sucks."
 
-<a href="http://www.slideshare.net/jmusser/ten-reasons-developershateyourapi"><img src="images/yourdocsucks.png" alt="Your API documentation sucks" /></a>
+<a class="noCrossRef" href="http://www.slideshare.net/jmusser/ten-reasons-developershateyourapi"><img class="medium" src="images/yourdocsucks.png" alt="Your API documentation sucks" /></a>
 
 ## Since 2005, REST APIs are taking off in a huge way
 
 If REST APIs were an uncommon software product, it wouldn't be that big of a deal. But actually, REST APIs are taking off in a huge way. Through the PEW Research Center, Programmableweb.com has charted and tracked the prevalence of web APIs.
 
-<a href="http://www.slideshare.net/programmableweb/web-api-growthsince2005"><img src="images/growthinrestapis.png" alt="Growth in web APIs" /></a>
+<a class="noCrossRef" href="http://www.slideshare.net/programmableweb/web-api-growthsince2005"><img class="medium" src="images/growthinrestapis.png" alt="Growth in web APIs" /></a>
 
 eBay's API in 2005 was one of the first web APIs. Since then, there has been a tremendous growth in web APIs. Given the importance of clear and accurate API documentation, this presents a perfect market opportunity for technical writers. Technical writers can apply their communication skills to fill a gap in a market that is exploding.
 
@@ -65,7 +65,7 @@ Practically every service provides its information and tools through an API that
 
 CloudCannon has put together a [long list of services](http://cloudcannon.com/tips/2014/12/12/the-ultimate-list-of-services-for-static-websites.html) that you can integrate into your static site.
 
-<a href="http://jekyll.tips/services/"><img src="images/servicesforstaticsites.png" alt="services for static websites" /></a>
+<a class="noCrossRef" href="http://jekyll.tips/services/"><img class="medium" src="images/servicesforstaticsites.png" alt="services for static websites" /></a>
 
 This cafeteria style model is replacing the massive, swiss-army-site model that tries to do anything and everything. It's better to rely on specialized companies to create powerful, robust tools (such as search) and leverage their service rather than trying to build all of these services yourself.
 
@@ -75,7 +75,7 @@ The way each site leverages its service is usually through a REST API of some ki
 
 Many employers are looking to hire technical writers who can create not only complete and accurate documentation, but who can also create stylish outputs for their documentation. Here's a job posting from a recruiter looking for someone who can emulate Dropbox's documentation:
 
-<img src="images/indeed_com.png" alt="Indeed example" />
+<img class="medium" src="images/indeed_com.png" alt="Indeed example" />
 
 As you can see, the client wants to find "someone who'll emulate Dropbox's documentation."
 
@@ -83,7 +83,7 @@ Why does the look and feel of the documentation matter so much? With API documen
 
 Here's what the Dropbox API looks like:
 
-<a href="https://www.dropbox.com/developers"><img src="images/dropbox_clean.png" alt="Dropbox API" /></a>
+<a class="noCrossRef" href="https://www.dropbox.com/developers"><img class="medium" src="images/dropbox_clean.png" alt="Dropbox API" /></a>
 
 It's not a sophisticated design. But its simplicity and brevity is one of its strengths. When you consider that the API documentation is more or less the product interface, building a sharp, modern-looking doc site is paramount for credibility and traction in the market.
 
@@ -103,7 +103,10 @@ When you try to navigate the world of API documentation, the world probably look
 
 Realizing there was a need for more information, in 2014 I guest-edited a special issue of Intercom dedicated to API documentation.
 
-<a href="http://bit.ly/stcintercomapiissue"><img src="images/intercom.png" alt="STC Intercom issue focused on API documentation" /></a>
+<a class="noCrossRef" href="http://bit.ly/stcintercomapiissue"><img class="small" src="images/intercom.png" alt="STC Intercom issue focused on API documentation" /></a>
+
+{: .tip}
+You can read this issue for free at [http://bit.ly/stcintercomapiissue](http://bit.ly/stcintercomapiissue).
 
 This issue was a good start, but many technical writers have asked for more training. In our Silicon Valley STC chapter, we've held a couple of workshops dedicated to APIs. Both workshops sold out quickly (with 60 participants in the first, and 100 participants in the second). API documentation is particularly hot in the San Francisco Bay area, where many companies have REST APIs requiring documentation.
 

@@ -195,6 +195,14 @@ a.productSubtitle:hover {
     max-width: 100%;
     max-height: 100%;
 }
+.main img.medium {
+  max-width: 600px
+}
+
+.main img.small {
+  max-width: 300px;
+}
+
 dt {
   //font-family: "AmazonEmber_Bd";
 }

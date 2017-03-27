@@ -13,11 +13,11 @@ This course is all about learning by doing, but while <i>doing</i> various activ
 
 In general, an API (or Application Programming Interface) provides an interface between two systems. It's like a cog that allows two systems to interact with each other. In this case, the two systems are computers that interact programmatically through the API.
 
-<figure><a class="noCrossRef" href="http://bit.ly/1DexWM0"><img src="images/spinning_gears.jpg" alt="Spinning gears. By Brent 2.0. Flickr." /></a><figcaption>spinning gears by Brent 2.0</figcaption></figure>
+<figure><a class="noCrossRef" href="http://bit.ly/1DexWM0"><img class="medium" class="small" src="images/spinning_gears.jpg" alt="Spinning gears. By Brent 2.0. Flickr." /></a><figcaption>spinning gears by Brent 2.0</figcaption></figure>
 
 Jim Bisso, an experienced API technical writer in the Silicon Valley area, describes APIs by using the analogy of your computer's calculator. When you press buttons, functions underneath are interacting with other components to get information. Once the information is returned, the calculator presents the data back to the GUI.
 
-<img src="images/calculator.png" alt="calculator" />
+<img class="small" src="images/calculator.png" alt="calculator" />
 
 APIs often work in similar ways. When you push a button in an interface, functions underneath get triggered to go and retrieve information. But instead of retrieving information from within the same system, web APIs call remote services on the web to get their information.
 
@@ -63,7 +63,7 @@ A RESTful API might not follow all of the official characteristics of REST as ou
 
 Here's the general model of a REST API:
 
-<img src="images/restapi_restapi.png" alt="REST API" />
+<img class="medium" src="images/restapi_restapi.png" alt="REST API" />
 
 As you can see, there's a request and a response between a client to the API server. The client and server can be based in any language, but HTTP is the protocol used to transport the message. This request-and-response pattern is fundamentally how REST APIs work.
 
@@ -110,7 +110,7 @@ The terminology of "URIs" and "GET requests" and "message responses" transported
 
 If you open a browser and go to http://idratherbewriting.com, you're really using HTTP protocol (`http://`) to submit a GET request to the resource available on a web server. The response from the server sends the content at this resource back to you using HTTP. Your browser is just a client that makes the message response look pretty.
 
-<img src="images/restapi_www.png" alt="Web as REST API" />
+<img class="medium" src="images/restapi_www.png" alt="Web as REST API" />
 
 You can see this response in cURL if you open a Terminal prompt and type `curl http://idratherbewriting.com`. (This assumes you have cURL installed.)
 

@@ -1,10 +1,10 @@
 ---
-title: "Foreward"
+title: "Some background and context"
 permalink: /foreward.html
 course: "Documenting REST APIs"
 weight: 3.0
 sidebar: docapis
-section: frontmatter
+section: introtoapis
 ---
 
 I initially compiled this material to teach a series of workshops to a local tech writing firm in the San Francisco Bay area. They were convinced that they either needed to train their existing technical writers on how to document APIs, or they would have to let some of them go. I taught a series of three workshops delivered in the evenings, spread over several weeks.

@@ -18,11 +18,11 @@ folders:
   jurl: /introtoapis.html
   folderitems:
 
-  - title: Foreward
-    jurl: /foreward.html
-
   - title: Course overview
     jurl: /index.html
+
+  - title: Some background and context
+    jurl: /foreward.html
 
   - title: The market for REST API documentation
     jurl: /docapis_intro_to_rest_api_doc.html
