@@ -3,10 +3,12 @@
 
 navbar_singleitems:
 - items:
-    - title: Documentation Home
-      url: index.html
-#    - title: Contact Us
-#      external_url: https://developer.amazon.com/public/support/contact/contact-us
+  - title: Blog
+    external_url: http://idratherbewriting.com
+  - title: Github rep
+    external_url: https://github.com/tomjohnson1492/learnapidoc
+  - title: Contact
+    url: contact.html
 
 
 
@@ -16,5 +18,5 @@ navbar_singleitems:
  #
  #    - title: Github
  #      folderitems:
- #        - title: Appstore-Alexa Docs
- #          external_url: https://github.com/appstore-alexa-docs
+ #        - title: My repo
+ #          external_url: https://github.com/tomjohnson1492/learnapidoc
