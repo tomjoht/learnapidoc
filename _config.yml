@@ -62,6 +62,9 @@ defaults:
 
 ########## UI text ###############
 
+google_analytics:
+disqus_shortname: idratherbewriting
+google_analytics: UA-408430-5
 
 uistring:
     tableofcontents: Table of Contents
