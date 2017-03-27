@@ -5,20 +5,24 @@ folders:
 # - title: Table of Contents
 #   jurl: /toc.html
 
-- title: Frontmatter
-  jurl: /frontmatter.html
-  folderitems:
-  - title: Copyright
-    jurl: /copyright.html
-
-  - title: Foreward
-    jurl: /foreward.html
+# - title: Frontmatter
+#   jurl: /frontmatter.html
+#   folderitems:
+#   - title: Copyright
+#     jurl: /copyright.html
+#
+#   - title: Foreward
+#     jurl: /foreward.html
 
 - title: Introduction to REST APIs
   jurl: /introtoapis.html
   folderitems:
+
+  - title: Foreward
+    jurl: /foreward.html
+
   - title: Course overview
-    jurl: /docapis_course_overview.html
+    jurl: /index.html
 
   - title: The market for REST API documentation
     jurl: /docapis_intro_to_rest_api_doc.html

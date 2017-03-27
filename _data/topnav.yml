@@ -5,7 +5,7 @@ navbar_singleitems:
 - items:
   - title: Blog
     external_url: http://idratherbewriting.com
-  - title: Github rep
+  - title: Github
     external_url: https://github.com/tomjohnson1492/learnapidoc
   - title: Contact
     url: contact.html
