@@ -14,13 +14,13 @@
             <!-- main area -->
             <div class="col-xs-12 col-sm-9 main">
 
-                    <div class="subtitle">{% unless page.type == "search" %}<a href="index.html" class="noCrossRef productSubtitle"> {{ site.uistring.breadcrumb.home }}</a> > {{page.path | remove: "_docs/" | split: "/" | first }} > {% endunless %}</div>
+                    <div class="subtitle">{% unless page.type == "search" or page.type == "homepage" %}<a href="index.html" class="noCrossRef productSubtitle"> {{ site.uistring.breadcrumb.home }}</a> > {{page.path | remove: "_docs/" | split: "/" | first }} > {% endunless %}</div>
 
                     <h1>{{page.title}}</h1>
 
 
                     {{content}}
-                    {% include tinyletter.html %}
+                    <div style="max-width: 375px">{% include tinyletter.html %}</div>
                     {% include disqus.html %}
 
 

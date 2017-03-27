@@ -4,8 +4,8 @@ permalink: index.html
 topnav: topnav
 sidebar: docapis
 layout: default
+type: homepage
 ---
-
 
 In this book on writing documentation for REST APIs, instead of just talking about abstract concepts, I contextualize REST APIs with a direct, hands-on approach.
 
