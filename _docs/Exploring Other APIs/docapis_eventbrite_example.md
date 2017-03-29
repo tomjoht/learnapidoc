@@ -14,7 +14,7 @@ Use the EventBrite API to get the event title and description of [this event](ht
 EventBrite is an event management tool, and you can interact with it through an API to pull out the event information you want. In this example, you'll use the EventBrite API to print a description of an event to your page.
 
 ## 1. Get an anonymous OAuth token
-To make any kind of requests, you'll need a tokaen, which you can learn about in the [Authentication section](https://www.eventbrite.com/developer/v3/reference/authentication/). Although it's best to pass an Oauth token in the header, for simplicity purposes you can just get a token to make direct calls.
+To make any kind of requests, you'll need a token, which you can learn about in the [Authentication section](https://www.eventbrite.com/developer/v3/reference/authentication/). Although it's best to pass an Oauth token in the header, for simplicity purposes you can just get a token to make direct calls.
 
 If you want to sign up for your own token, register your app [here](https://www.eventbrite.com/myaccount/apps/). Then copy the "Anonymous access OAuth token."
 
@@ -26,7 +26,7 @@ To get event information, we'll use the [event](https://www.eventbrite.com/devel
 <a href="https://www.eventbrite.com/developer/v3/endpoints/events/"><img src="images/eventsendpointeventbrite.png" alt="EventBrite Event" /></a>
 
 {: .note}
-Instead of calling them \"resources,\" the EventBrite API uses the term \"objects.\"" %}
+Instead of calling them \"resources,\" the EventBrite API uses the term \"objects.\"
 
 The events object allows us to "retrieve a paginated response of public event objects from across Eventbrite's directory, regardless of which user owns the event."
 

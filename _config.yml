@@ -1,8 +1,8 @@
 language: english
-target: jekyll
+target: web
 
 # Link to home
-url: http://learnapidoc.com/
+url: http://idratherbewriting.com/learnapidoc/
 
 destination: _site
 image_path: docs

@@ -16,7 +16,11 @@ In the upcoming sections, you'll use two different APIs in the context of a spec
 
 Let's say that you're a web developer and you want to add a weather forecast feature to your site. Your site is for bicyclists. You want to allow users who come to your site to see what the wind conditions are for biking. You want something like this:
 
+{% if site.target == "print" %}
 <img class="small" src="images/restapi_windycall.png" alt="Wind meter conditions for website" />
+{% elsif site.target == "web" %}
+<img class="small" src="images/restapi_windycall.svg" alt="Wind meter conditions for website" />
+{% endif %}
 
 You don't have your own meteorological service, so you'll need to make some calls out to a weather service to get this information. Then you will present that information to users.
 

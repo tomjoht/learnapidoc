@@ -5,6 +5,7 @@ topnav: topnav
 sidebar: docapis
 layout: default
 type: homepage
+path: Introduction to REST APIs
 ---
 
 In this book on writing documentation for REST APIs, instead of just talking about abstract concepts, I contextualize REST APIs with a direct, hands-on approach.
@@ -14,6 +15,12 @@ You'll learn about API documentation in the context of using some simple weather
 As you use the API, you'll learn about endpoints, parameters, data types, authentication, cURL, JSON, the command line, Chrome's Developer Console, JavaScript, and other details associated with REST APIs.
 
 The idea is that rather than learning about these concepts independent of any context, you learn them by immersing yourself in a real scenario while using an API. This makes these tools more meaningful.
+
+<figure>
+{% if site.target == "print" %}<img class="large" src="images/restapi_www.png" alt="Web as REST API" />
+{% elsif site.target == "web" %}<img class="large" src="images/restapi_www.svg" alt="Web as REST API" />
+{% endif %}
+<figcaption>REST APIs involve requests and responses over HTTP protocol</figcaption></figure>
 
 After you use the API as a developer, you'll then shift perspectives and "become a technical writer" tasked with documenting a new endpoint that has been added to an API.
 

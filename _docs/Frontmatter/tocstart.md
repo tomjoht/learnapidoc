@@ -5,6 +5,7 @@ course: "Documenting REST APIs"
 weight: 2.0
 sidebar: docapis
 section: frontmatter
+search: false
 ---
 
 <ul id="docnavsidebar" class="docnav">

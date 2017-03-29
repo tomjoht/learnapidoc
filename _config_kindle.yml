@@ -1,5 +1,5 @@
 language: english
-target: jekyll
+target: print
 
 # Link to home
 url: /

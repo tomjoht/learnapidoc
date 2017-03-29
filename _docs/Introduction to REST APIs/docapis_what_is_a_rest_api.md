@@ -63,7 +63,11 @@ A RESTful API might not follow all of the official characteristics of REST as ou
 
 Here's the general model of a REST API:
 
-<img class="medium" src="images/restapi_restapi.png" alt="REST API" />
+{% if site.target == "print" %}
+<img class="large" src="images/restapi_restapi.png" alt="REST API" />
+{% elsif site.target == "web" %}
+<img class="large" src="images/restapi_restapi.png" alt="REST API" />
+{% endif %}
 
 As you can see, there's a request and a response between a client to the API server. The client and server can be based in any language, but HTTP is the protocol used to transport the message. This request-and-response pattern is fundamentally how REST APIs work.
 
@@ -110,7 +114,9 @@ The terminology of "URIs" and "GET requests" and "message responses" transported
 
 If you open a browser and go to http://idratherbewriting.com, you're really using HTTP protocol (`http://`) to submit a GET request to the resource available on a web server. The response from the server sends the content at this resource back to you using HTTP. Your browser is just a client that makes the message response look pretty.
 
-<img class="medium" src="images/restapi_www.png" alt="Web as REST API" />
+{% if site.target == "print" %}<img class="large" src="images/restapi_www.png" alt="Web as REST API" />
+{% elsif site.target == "web" %}<img class="large" src="images/restapi_www.svg" alt="Web as REST API" />
+{% endif %}
 
 You can see this response in cURL if you open a Terminal prompt and type `curl http://idratherbewriting.com`. (This assumes you have cURL installed.)
 

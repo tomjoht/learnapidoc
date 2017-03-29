@@ -89,7 +89,11 @@ If the string matches the signature in the request header, it accepts the reques
 
 Here's a diagram depicting this workflow:
 
-<img src="images/restapi_hmac.png" alt="HMAC workflow" />
+{% if site.target == "print" %}
+<img class="large" src="images/restapi_hmac.png" alt="HMAC workflow" />
+{% elsif site.target == "web" %}
+<img  class="large" src="images/restapi_hmac.svg" alt="HMAC workflow" />
+{% endif %}
 
 The important point is that the secret key (critical to reconstructing the hash) is known only to the sender and receiver. The secret key is not included in the request.
 
@@ -111,7 +115,12 @@ In contrast, three-legged OAuth is used when you need to protect sensitive data.
 
 Here's the basic workflow of OAuth 2.0:
 
-<img src="images/restapi_oauth.png" alt="OAuth workflow" />
+{% if site.target == "print" %}
+<img class="large" src="images/restapi_oauth.png" alt="OAuth workflow" />
+{% elsif site.target == "web" %}
+<img  class="large" src="images/restapi_oauth.svg" alt="OAuth workflow" />
+
+{% endif %}
 
 First the consumer application sends over an application key and secret to a login page at the authentication server. If authenticated, the authentication server responds to the user with an access token.
 
