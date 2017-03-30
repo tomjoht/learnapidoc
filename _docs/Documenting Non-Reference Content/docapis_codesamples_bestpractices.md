@@ -18,6 +18,11 @@ Here's a sample code sample page from Mashape:
 
 The following sections list some best practices around code samples.
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 ## Code samples are like candy for developers
 
 Code samples play an important role in helping developers use an API. No matter how much you try to explain and narrate *how*, it's only when you *show* something in action that developers truly get it.

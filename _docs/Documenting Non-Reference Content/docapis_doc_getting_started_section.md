@@ -10,6 +10,13 @@ section: docnonref
 
 Following the Overview section, you usually have a "Getting started" section that details the first steps users need to start using the API.
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## Common topics in getting started
+
 The "Getting started" section should explain the first steps users must take to start using the API. Some of these steps might involve the following:
 
 * Signing up for an account

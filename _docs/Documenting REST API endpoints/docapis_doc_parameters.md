@@ -10,7 +10,16 @@ sidebar: docapis
 section: docendpoints
 ---
 
-Parameters offer ways to configure the endpoint. The parameters you pass with an endpoint affect the response. Many times parameters are listed in a simple table like this:
+Parameters offer ways to configure the endpoint. The parameters you pass with an endpoint affect the response.
+
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## Listing parameters in a table
+
+Many times parameters are listed in a simple table like this:
 
 | Parameter | Required? | Data Type |
 |-----------|-----------|-----------|

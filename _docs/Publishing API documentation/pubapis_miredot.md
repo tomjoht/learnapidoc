@@ -9,6 +9,13 @@ section: publishingapis
 
 One of the tools you can use to generate API documentation from source -- as long as your source is Java-based -- is Miredot.
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## Miredot overview
+
 Miredot is a plugin for Maven, which is a build tool that you integrate into your Java IDE. Miredot can generate an offline website that looks like this:
 
 <a href="http://miredot.com/exampledocs/"><img src="images/miredotexample.png" alt="Miredot example" /></a>

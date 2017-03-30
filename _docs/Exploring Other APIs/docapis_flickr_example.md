@@ -11,6 +11,11 @@ section: otherapis
 
 Use the Flickr API to get photo images from [this Flickr gallery](https://www.flickr.com/photos/flickr/galleries/72157647277042064/).
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 ## Flickr Overview
 
 In this Flickr API example, you'll see that our goal requires us to call several endpoints. You'll see that just having an API reference that lists the endpoints and responses isn't enough. Often one endpoint requires other endpoint responses as inputs, and so on.

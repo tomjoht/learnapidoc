@@ -10,6 +10,15 @@ sidebar: docapis
 section: introtoapis
 ---
 
+Before we dive into the technical aspects of APIs, let's explore the market and general landscape and trends with API documentation.
+
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## Diversity of APIs
+
 The API landscape is diverse. To get a taste of the various types of APIs out there, check out Sarah Maddox's post about [API types](https://ffeathers.wordpress.com/2014/02/16/api-types/). In addition to web service APIs (which include REST), there are web socket APIs, hardware APIs, and more.
 
 <a class="noCrossRef" href="https://ffeathers.wordpress.com/2014/02/16/api-types/"><img class="medium" src="images/apitypes.png" alt="API Types" /></a>

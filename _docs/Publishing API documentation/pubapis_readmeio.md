@@ -12,6 +12,11 @@ You can publish documentation on hosted platforms specifically built for API and
 * [readme.io](http://readme.io)
 * [readthedocs.com](http://readthedocs.com)
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 ## No need to spend time developing your own site
 
 If you consider how much time it requires to build, maintain, troubleshoot, etc. your own website, then it really does make sense to consider an existing third-party platform where someone has already built all of this out for you.

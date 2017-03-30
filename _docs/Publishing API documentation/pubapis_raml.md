@@ -10,6 +10,13 @@ section: publishingapis
 
 RAML stands for REST API Modeling Language and is similar to Swagger and other API specifications. RAML is backed by [Mulesoft](https://www.mulesoft.com/), a commercial API company, and uses a more YAML-based syntax in the specification.
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## RAML overview
+
 Similar to Swagger, once you create a RAML file that describes your API, it can be consumed by different platforms to parse and display the information in attractive outputs. The RAML format, which uses YML syntax, tries to be human-readable, efficient, and simple.
 
 <figure><img src="images/ramlexample.png" alt="Sample RAML output in API Console" /></a><figcaption>This is a sample RAML output in something called API Console</figcaption></figure>

@@ -9,6 +9,11 @@ section: publishingapis
 
 Perhaps no other genre of technical documentation has such variety in the outputs as API documentation. Almost every API documentation site looks unique. REST APIs are as diverse as different sites on the web, each with their own branding, navigation, terminology, and style.
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 ## No common tooling
 
 Just as websites have a diversity of engines, platforms, and approaches, so too does API documentation. There is no common tooling like there is among GUI documentation. You can't usually determine what platform is driving the outputs, and often the branding fits in seamlessly with the other company content.

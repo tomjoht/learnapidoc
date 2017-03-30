@@ -10,6 +10,11 @@ section: docnonref
 
 The overview explains what you can do with the API (high-level business goals), and who the API is for. Too often with API documentation (perhaps because the content is often written by developers), the documentation gets quickly mired in technical details without ever explaining clearly what the API is used for. Don't lose sight of the overall purpose and business goals of your API by getting lost in the endpoints.
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 ## Sample overview
 The SendGrid API does a good job at providing an overview:
 <a href="https://sendgrid.com/docs/User_Guide/index.html"><img src="images/sendgridoverview.png" alt="Sendgrid overview" /></a>

@@ -12,6 +12,13 @@ section: docnonref
 
 Up until this point, we've been focusing on the endpoint (or reference) documentation aspect of user guides. The endpoint documentation is only one part (albeit a significant one) in API documentation. You also need to create a user guide and tutorials.
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## User guide overview
+
 Whereas the endpoint documentation explains how to use each of the endpoints, you also need to explain how to use the API overall. There are other sections common to API documentation that you must also include. (These other sections are absent from the Mashape Weather API because it's such a simple API.)
 
 In Mulesoft's API tooling, you can see some other sections common to API documentation:

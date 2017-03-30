@@ -9,6 +9,11 @@ section: publishingapis
 
 In earlier parts of this workshop, we used a simple [Weather API from Mashape](https://www.mashape.com/fyhao/weather-13) to demonstrate how to use a REST API. Now we'll explore various tools to publish information from the same Mashape Weather API.
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 ## Why focus on publishing API docs?
 The first question about a focus on publishing API documentation might be, *why?* What makes publishing API documentation so different from other kinds of documentation that it merits its own section? How and why does the approach here need to differ from the approach for publishing regular documentation?
 

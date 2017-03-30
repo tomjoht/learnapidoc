@@ -21,28 +21,31 @@ Keep in mind how users authorize calls with an API &mdash; this is something you
 
 In order to run the code samples in this course, you will need to use your own API keys, since these keys are usually treated like personal passwords and not given out or published openly on a web page.
 
+* TOC
+{:toc}
+
 ## Get the Mashape authorization keys
 
 To get the authorization keys to use the Mashape API, you must sign up for a Mashape account.
 
-1. On [market.mashape.com](https://market.mashape.com/), click **Sign Up** in the upper-right corner and create an account.
+1.  On [market.mashape.com](https://market.mashape.com/), click **Sign Up** in the upper-right corner and create an account.
 
-	 {: .tip}
-	 It's easiest if you first create an account on GitHub, and then just click **SIGNUP WITH GITHUB** in the Mashape login window.
+	  {: .tip}
+	  It's easiest if you first create an account on GitHub, and then just click **SIGNUP WITH GITHUB** in the Mashape login window.
 
-2. Click **Applications** on the top navigation bar, and then select **Default Application**.
-3. In the upper-right corner, click **Get the Keys**.
+2.  Click **Applications** on the top navigation bar, and then select **Default Application**.
+3.  In the upper-right corner, click **Get the Keys**.
 
-	<img src="images/mashape_get_keys.png" alt="Mashape -- getting the keys" />
+	  <img src="images/mashape_get_keys.png" alt="Mashape -- getting the keys" />
 
-	{: .note}
-	If you don't see the Get the Keys button, make sure you click <b>Applications > Default Application</b> on the top navigation bar first. You may have to horizontally scroll to the right (eek!) to see the Get the Keys button.
+	  {: .note}
+	  If you don't see the Get the Keys button, make sure you click <b>Applications > Default Application</b> on the top navigation bar first. You may have to horizontally scroll to the right (eek!) to see the Get the Keys button.
 
-3. When the Environment Keys dialog appears, click **Copy** to copy the keys. (Choose the Testing keys, since this type allows you to make unlimited requests.)
+3.  When the Environment Keys dialog appears, click **Copy** to copy the keys. (Choose the Testing keys, since this type allows you to make unlimited requests.)
 
     <img src="images/environmentkeys.png" alt="Mashape keys" />
 
-4. Open a text editor and paste the key so that you can easily access it later when you construct a call.
+4.  Open a text editor and paste the key so that you can easily access it later when you construct a call.
 
 ## Get the Aeris Weather API secret and ID
 
@@ -51,15 +54,15 @@ Now let's get the keys for the Aeris Weather API. The Aeris Weather API requires
 1.  Go to [http://www.aerisweather.com](http://www.aerisweather.com) and click **Sign Up** in the upper-right corner.
 2.  Under **Developer**, click **TRY FOR FREE**. (Note that the free version limits the number of requests per day and per minute you can make.)
 3.  Enter a username, email, and password, and then click **SIGN UP FOR FREE** to create an Aeris account. Then sign in.
-5.  After you sign up for an account, click **Account** in the upper-right corner.
+4.  After you sign up for an account, click **Account** in the upper-right corner.
 
-		<a class="noCrossRef" href="https://www.aerisweather.com/account/apps"><img src="images/aerisaccount.png" alt="Aeris account" /></a>
+    <a class="noCrossRef" href="https://www.aerisweather.com/account/apps"><img src="images/aerisaccount.png" alt="Aeris account" /></a>
 
-6.  Click **Apps** (on the second navigation row, to the right of "Usage"), and then click **New Application**.
-7.  In the dialog box, enter the following:
+5.  Click **Apps** (on the second navigation row, to the right of "Usage"), and then click **New Application**.
+6.  In the dialog box, enter the following:
     * **Application Name**: My biking app (or something)
     * **Application Namespace**: localhost
-8.  Click **Save App**.  
+7.  Click **Save App**.  
 
 Once your app registers, you should see an ID, secret, and namespace for the app. Copy this information into a text file, since you'll need it to make requests.
 

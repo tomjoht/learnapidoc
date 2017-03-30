@@ -11,6 +11,11 @@ One of the first considerations to make when you think about API doc tooling is 
 
 One the other hand, if technical writers will create all the documentation, generating doc content from the source code may only prove to be a complicated hassle with little benefit.
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 ## Integrating into engineering tools and workflows
 
 Riona Macnamara is a technical writer at Google. Riona says that several years ago, internal documentation at Google was scattered across wikis, Google Sites, Google Docs, and other places.

@@ -10,6 +10,15 @@ sidebar: docapis
 section: docnonref
 ---
 
+Response and error codes are essential for understanding errors in submitting or processing requests.
+
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## Sample status code in cURL header
+
 Remember when we submitted the cURL call back in <a href="docapis_make_curl_call.html">an earlier lesson</a>? We submitted a cURL call and specified that we wanted to see the response headers (`--include` or `-i`):
 
 ```bash
@@ -40,6 +49,7 @@ But suppose you're making a POST, PUT, or DELETE call, where you're changing dat
 HTTP response codes in the header of the response will indicate whether the operation was successful. The HTTP status codes are just abbreviations for longer messages.
 
 ## Common status codes follow standard protocols
+
 Most REST APIs follow a standard protocol for response headers. For example, `200` isn't just an arbitrary code decided upon by the Mashape Weather API developers. `200` is a universally accepted code for a successful HTTP request.
 
 You can see a list of common [REST API status codes here](http://www.restapitutorial.com/httpstatuscodes.html) and a [general list of HTTP status codes here](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes

@@ -10,6 +10,11 @@ section: otherapis
 
 Use the Aeris Weather API to get the wind speed (MPH) for a specific place (your choice).
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 ## The Aeris Weather API
 Since you've been working with the weather API on Mashape, it's probably a good idea to compare this simple weather API with a more robust one. Check out the [Aeris Weather API here](http://www.aerisweather.com/support/docs/api/). This is one of the most interesting, well-documented and powerful APIs I've encountered.
 

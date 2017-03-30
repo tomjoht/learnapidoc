@@ -9,6 +9,11 @@ section: designpatterns
 
 One common design pattern in API docs is a button or link that says "Edit on Github." This button takes users to the source file on Github, where they can edit the content. I'd seen this button on many API doc sites, so I decided to give it a try with my own docs.
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 Here's what my docs look like with the Edit on Github button:
 
 <a href="https://developer.amazon.com/public/solutions/devices/fire-tv/docs/getting-started-developing-apps-and-games-for-amazon-fire-tv"><img src="images/myeditongithubbutton.png"/></a>

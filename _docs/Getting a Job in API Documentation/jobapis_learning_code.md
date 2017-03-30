@@ -11,6 +11,11 @@ section: jobapis
 
 With developer documentation roles, some level of coding is required. But you don't need to know as much as developers, and acquiring that deep technical knowledge will usually cost you expertise in other areas.
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 ## Adequate versus Deep Technical Knowledge
 
 In [Enough to Be Dangerous: The Joy of Bad Python](http://hackwrite.com/posts/enough-to-be-dangerous/), Adam Wood argues that tech writers don't need to be expert coders, on par with developers. Learning to code badly is often enough to perform the tasks needed for documentation.

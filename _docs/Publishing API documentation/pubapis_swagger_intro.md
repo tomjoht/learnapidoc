@@ -10,11 +10,19 @@ sidebar: docapis
 section: publishingapis
 ---
 
+{: .tip }
 I recently gave a presentation that covers the same concepts in this article. You can watch it on YouTube here: [https://goo.gl/n4Hvtq](https://goo.gl/n4Hvtq).
+
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## Experiences that prompted me toward Swagger 
 
 On a recent project, after I created documentation for a new API (Application Programming Interface), the project manager wanted to demo the new functionality to some field engineers.
 
-To prepare for the demo, the project manager summarised, in a PowerPoint presentation, the new endpoints that had been added. The request and responses from each endpoint, along with their parameters, were included as attractively as possible in a number of PowerPoint slides.
+To prepare for the demo, the project manager summarized, in a PowerPoint presentation, the new endpoints that had been added. The request and responses from each endpoint, along with their parameters, were included as attractively as possible in a number of PowerPoint slides.
 
 During the demo, the project manager talked through each of the slides, explaining the new endpoints, the parameters the users can configure, and the responses from the server. How did the field engineers react to the new demo?
 
@@ -145,7 +153,7 @@ In fact, once you have a valid Swagger specification, using a tool called [API T
 
 ## Responses to Swagger documentation
 
-With my project, I used the Swagger UI to parse my Swagger specification. I customised Swagger UI's colors a bit, added a logo and a few other features. I spliced in a reference to Bootstrap so that I could have pop-up modals where users could generate their authorisation codes. I even added some collapse and expand features in the description element to provide necessary information to users about a sample project.
+With my project, I used the Swagger UI to parse my Swagger specification. I customized Swagger UI's colors a bit, added a logo and a few other features. I spliced in a reference to Bootstrap so that I could have pop-up modals where users could generate their authorization codes. I even added some collapse and expand features in the description element to provide necessary information to users about a sample project.
 
 Beyond these simple modifications, however, it takes a bit of web developer prowess to significantly alter the Swagger UI display.
 
@@ -155,7 +163,7 @@ Overall, delivering the Swagger output was a huge feather in my cap at the compa
 
 ## A slight trough of disillusionment
 
-Despite Swagger's interactive power to appeal to the “let me try” desires of users, I began to realise there were some downsides to Swagger.
+Despite Swagger's interactive power to appeal to the “let me try” desires of users, I began to realize there were some downsides to Swagger.
 
 Swagger's output is still just a reference document. It provides the basics about each endpoint, including a description, the parameters, a sample request, and a response. It doesn't provide space for a Hello World tutorial, information about how to get API keys, how to configure any API services, information about rate limits, or the thousand other details that go into a user guide.
 

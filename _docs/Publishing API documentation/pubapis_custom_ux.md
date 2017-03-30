@@ -9,24 +9,24 @@ section: publishingapis
 
 If you want to build a beautiful API doc website that rivals sites such as [Parse.com](http://parse.com) and others, you'll most likely need to involve a UX engineer to build it. Fortunately, this is a solution that many UX engineers and other web developers are usually excited to tackle.
 
-<img src="images/uxteam.png" alt="Getting help from your UX team" />
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
 
 ## When it makes sense to partner with UX
 
 If you want to integrate your API documentation into your main website, ask the person designing your main website for strategies on integrating the doc site into it. This integration might allow you to leverage authentication (if needed) and other interaction points (such as with forums or support tickets).
 
-## Web platform languages
+Many custom websites are built using a variety of JavaScript, HTML, and CSS tools. Most likely you'll be able to supply a batch of Markdown or HTML files to the web developer to integrate. Your UX developers will often be eager to design a custom solution to make your docs beautiful and seamlessly integrated with the rest of your content.
 
-Many custom websites are built using a variety of JavaScript, HTML, and CSS tools. Most likely you'll be able to supply a batch of Markdown or HTML files to the web developer to integrate.
+<img src="images/uxteam.png" alt="Getting help from your UX team" />
+
 ## Solution at Badgeville
 
 When I worked at Badgeville, our solution for publishing API documentation was to use custom scripts that pulled some information from source files and pushed them into templates.
 
-## Use scripts to generate JSON from source code
-
 The source files were stored on Github, and the writers could edit the descriptions of the parameters, fields, etc. Our developers created scripts that would look into the code of the source files and render content into JSON files in a specific structure.
-
-## Import the JSON into your web CMS
 
 Since we published all help content on a Drupal site, we hired a Drupal development agency that would take information from a JSON file and push the information into a custom-built template.
 

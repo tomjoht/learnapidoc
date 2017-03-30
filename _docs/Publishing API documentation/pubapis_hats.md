@@ -9,6 +9,13 @@ section: publishingapis
 
 Help authoring tools (HATs) refer to the common toolset often used by technical writers. Common HATs include MadCap Flare, Adobe Robohelp, Author-it, and more. Sure, you can use these tools to create API documentation.
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## Example
+
 Here's a sample help output from Flare for the Photobucket API:
 
 <a href="https://pic.photobucket.com/dev_help/WebHelpPublic/PhotobucketPublicHelp_Left.htm#CSHID=FAQ/FAQOverview.htm|StartTopic=Content/FAQ/FAQOverview.htm|SkinName=WebHelp"><img src="images/hatphotobucket.png" alt="Publishing API docs" /></a>

@@ -10,6 +10,11 @@ section: otherapis
 
 Use the EventBrite API to get the event title and description of [this event](https://www.eventbrite.com/myevent?eid=17920884849).
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 ## About EventBrite
 EventBrite is an event management tool, and you can interact with it through an API to pull out the event information you want. In this example, you'll use the EventBrite API to print a description of an event to your page.
 

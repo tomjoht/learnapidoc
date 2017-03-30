@@ -4,9 +4,9 @@
 navbar_singleitems:
 - items:
   - title: Blog
-    external_url: http://idratherbewriting.com
+    url: http://idratherbewriting.com
   - title: Github
-    external_url: https://github.com/tomjohnson1492/learnapidoc
+    url: https://github.com/tomjohnson1492/learnapidoc
   - title: Contact
     url: contact.html
 

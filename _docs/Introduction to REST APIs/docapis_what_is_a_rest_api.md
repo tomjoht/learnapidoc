@@ -8,8 +8,15 @@ sidebar: docapis
 section: introtoapis
 ---
 
-{: .note}
-This course is all about learning by doing, but while <i>doing</i> various activities, I'll periodically pause and dive into some more abstract concepts to fill in more detail. This is one of those deep dive moments.
+This course is all about learning by doing, but while *doing* various activities, I'll periodically pause and dive into some more abstract concepts to fill in more detail. This is one of those deep dive moments. Here we'll dive into what a REST API is, comparing it to other types of APIs like SOAP. REST APIs have common characteristics but no definitive standards or protocols like their predecessors did.
+
+
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## What is an API?
 
 In general, an API (or Application Programming Interface) provides an interface between two systems. It's like a cog that allows two systems to interact with each other. In this case, the two systems are computers that interact programmatically through the API.
 
@@ -64,9 +71,9 @@ A RESTful API might not follow all of the official characteristics of REST as ou
 Here's the general model of a REST API:
 
 {% if site.target == "print" %}
-<img class="large" src="images/restapi_restapi.png" alt="REST API" />
+<img class="medium" src="images/restapi_restapi.png" alt="REST API" />
 {% elsif site.target == "web" %}
-<img class="large" src="images/restapi_restapi.png" alt="REST API" />
+<img class="medium" src="images/restapi_restapi.png" alt="REST API" />
 {% endif %}
 
 As you can see, there's a request and a response between a client to the API server. The client and server can be based in any language, but HTTP is the protocol used to transport the message. This request-and-response pattern is fundamentally how REST APIs work.
@@ -114,8 +121,8 @@ The terminology of "URIs" and "GET requests" and "message responses" transported
 
 If you open a browser and go to http://idratherbewriting.com, you're really using HTTP protocol (`http://`) to submit a GET request to the resource available on a web server. The response from the server sends the content at this resource back to you using HTTP. Your browser is just a client that makes the message response look pretty.
 
-{% if site.target == "print" %}<img class="large" src="images/restapi_www.png" alt="Web as REST API" />
-{% elsif site.target == "web" %}<img class="large" src="images/restapi_www.svg" alt="Web as REST API" />
+{% if site.target == "print" %}<img class="medium" src="images/restapi_www.png" alt="Web as REST API" />
+{% elsif site.target == "web" %}<img class="medium" src="images/restapi_www.svg" alt="Web as REST API" />
 {% endif %}
 
 You can see this response in cURL if you open a Terminal prompt and type `curl http://idratherbewriting.com`. (This assumes you have cURL installed.)

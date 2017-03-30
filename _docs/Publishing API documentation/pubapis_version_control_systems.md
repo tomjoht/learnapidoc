@@ -12,6 +12,13 @@ section: publishingapis
 
 Pretty much every IT shop uses some form of version control with their software code. Version control is how developers collaborate and manage their work.
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## Plugging into version control
+
 If you're working in API documentation, you'll most likely need to plug into your developer's version control system to get code. Or you may be creating branches and adding or editing documentation there.
 
 Many developers are extremely familiar with version control, but typically these systems aren't used much by technical writers because technical writers have traditionally worked with binary file formats, such as Microsoft Word and Adobe Framemaker. Binary file formats are readable only by computers, and version control systems do a poor job in managing binary files because you can't easily see changes from one version to the next.

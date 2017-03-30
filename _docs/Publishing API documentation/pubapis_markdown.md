@@ -9,6 +9,13 @@ section: publishingapis
 
 Markdown is a shorthand syntax for HTML. Instead of using `ul` and `li` tags, for example, you just use asterisks (`*`). Instead of using `h2` tags, you use hashes (`##`). There's a Markdown tag for most of the common HTML elements.
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## Sample syntax
+
 Here's a sample to get a sense of the syntax:
 
 ```

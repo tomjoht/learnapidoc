@@ -11,6 +11,11 @@ section: otherapis
 
 Use the Klout API to get your Klout score and a list of your influencers and influencees.
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 ## About Klout
 [Klout](http://klout.com) is a service that gauges your online influence (your klout) by measuring tweets, retweets, likes, etc. from a variety of social networks using a sophisticated algorithm. In this tutorial, you'll use the Klout API to retrieve a Klout score for a particular Twitter handle, and then a list of your influencers.
 

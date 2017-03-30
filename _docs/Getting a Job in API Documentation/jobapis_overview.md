@@ -11,6 +11,11 @@ Technical writers who can write developer documentation are in high demand, espe
 
 In this section of my API documentation course, I'll dive into the job market for API documentation.
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 ## Ability to read programming languages
 
 In nearly every job description for technical writers in developer documentation, you'll see requirements like this:

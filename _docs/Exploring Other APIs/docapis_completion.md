@@ -9,6 +9,11 @@ section: otherapis
 
 Congratulations, you finished the documenting REST APIs section of the course. You've learned the core of documenting REST APIs. We haven't covered publishing tools or strategies. Instead, this part of the course has focused on the creating content, which should always be the first consideration.
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 ## Summary of what you learned
 
 During this part of the course, you learned the core tasks involved in documenting REST APIs. First, as a developer, you did the following:

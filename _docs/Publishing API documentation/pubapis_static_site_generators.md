@@ -9,6 +9,13 @@ section: publishingapis
 
 Static site generators are a breed of website compilers that package up a group of files (usually written in Markdown) and make them into a website. There are more than 350 different static site generators. You can browse them at [staticgen.com](http://www.staticgen.com/).
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## Jekyll
+
 Jekyll is one of the most popular static site generators. All of my help content is on Jekyll. You can publish a fully functional tech comm website that includes content re-use, conditional filtering, variables, PDF output, and everything else you might need as a technical writer.
 
 Here's the documentation theme that I developed for Jekyll:

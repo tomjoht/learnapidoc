@@ -12,6 +12,13 @@ section: docendpoints
 
 In the previous section, I noted the variation over terminology related to resources, with some doc sites calling the resources "endpoints." Although some might call the whole topic "endpoint documentation," the endpoint usually refers to a specific part in the API. The endpoint literally refers to the resource URL that you call, specifically, the last part of the resource URL (after the base path).
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## Varied terminology
+
 As you might expect, the terms used for the endpoint vary as well. In addition to "endpoint," you might see the following:
 
 * Requests
@@ -23,11 +30,6 @@ As you might expect, the terms used for the endpoint vary as well. In addition t
 My preferred term is "endpoint."
 
 Often there's no term used at all above the endpoint &mdash; you can just list it on the page, styled in a way that makes it obvious what it is.
-
-{% if site.target == "web" %}
-* TOC
-{:toc}
-{% endif %}
 
 ## The endpoint definition usually contains the end path only
 

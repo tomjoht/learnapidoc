@@ -9,6 +9,13 @@ section: publishingapis
 
 When you create a repository on Github, the repository comes with a wiki that you can add pages to. This wiki can be really convenient if your source code is stored on Github.
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## GitHub example
+
 Here's an example of the Basecamp API, which is housed on Github.
 
 <a href="https://github.com/basecamp/bcx-api"><img src="images/basecampapi.png" alt="Basecamp API" /></a>

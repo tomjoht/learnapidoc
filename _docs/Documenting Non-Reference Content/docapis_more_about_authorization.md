@@ -14,6 +14,11 @@ APIs vary in the way they authenticate users. Some APIs just require you to incl
 
 In this section, you'll learn more about authentication and what you should focus on in documentation.
 
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 ## Defining terms
 
 First, a brief definition of terms:
@@ -90,9 +95,9 @@ If the string matches the signature in the request header, it accepts the reques
 Here's a diagram depicting this workflow:
 
 {% if site.target == "print" %}
-<img class="large" src="images/restapi_hmac.png" alt="HMAC workflow" />
+<img class="medium" src="images/restapi_hmac.png" alt="HMAC workflow" />
 {% elsif site.target == "web" %}
-<img  class="large" src="images/restapi_hmac.svg" alt="HMAC workflow" />
+<img  class="medium" src="images/restapi_hmac.svg" alt="HMAC workflow" />
 {% endif %}
 
 The important point is that the secret key (critical to reconstructing the hash) is known only to the sender and receiver. The secret key is not included in the request.
@@ -116,9 +121,9 @@ In contrast, three-legged OAuth is used when you need to protect sensitive data.
 Here's the basic workflow of OAuth 2.0:
 
 {% if site.target == "print" %}
-<img class="large" src="images/restapi_oauth.png" alt="OAuth workflow" />
+<img class="medium" src="images/restapi_oauth.png" alt="OAuth workflow" />
 {% elsif site.target == "web" %}
-<img  class="large" src="images/restapi_oauth.svg" alt="OAuth workflow" />
+<img  class="medium" src="images/restapi_oauth.svg" alt="OAuth workflow" />
 
 {% endif %}
 
