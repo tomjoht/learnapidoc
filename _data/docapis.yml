@@ -95,8 +95,15 @@ folders:
   - title: Putting it all together
     jurl: /docapis_finished_doc_result.html
 
-  - title: "My biggest tip: Test everything"
-    jurl: /nativelibraryapis_testing.html
+- title: Testing your documentation
+  jurl: /testingdocs.html
+  folderitems:
+
+  - title: "Testing your docs"
+    jurl: /testingdocs_testing_docs.html
+
+  - title: "Testing documentation assumptions"
+    jurl: /testingdocs_testing_assumptions.html
 
 - title: Documenting non-reference sections
   jurl: /docnonref.html

@@ -1,72 +1,22 @@
 ---
-title: "My biggest tip: Test everything"
+title: "Testing documentation assumptions"
 course: "Documenting REST APIs"
-permalink: /nativelibraryapis_testing.html
-weight: 7.12
+permalink: /testingdocs_testing_assumptions.html
+weight: 2
 sidebar: docapis
-section: docendpoints
+section: testingdocs
 ---
 
-Walking through all the steps in documentation yourself, as a technical writer, is critical to producing good documentation. But the more complex setup you have, the more difficult it can be to walk through all of the steps.
-
-Especially with developer documentation, the tasks required to test out your documentation are not trivial. Still, they are essential to creating user-centered documentation. This is my biggest tip for having success as a technical writer creating API documentation: test everything.
+While testing your documentation, you must recognize that what may seem clear to you may be confusing to another, because all documentation builds on assumptions that may or may not be shared with your audience.
 
 {% if site.target == "web" %}
 * TOC
 {:toc}
 {% endif %}
 
-## Step 1: Set up a test environment
+## Assumptions in developer docs
 
-The first step to testing your instructions is to set up a test environment.
-
-<a href="https://flic.kr/p/6Grete"><img src="images/testingeverything.jpg" alt="Testing everything" /></a>
-
-Usually the QA team already has this environment in place, so sometimes all you need to do is ask how to access it. Get the appropriate URLs, login IDs, roles, etc. from your QA team. Ask them if there's anything you shouldn't alter or delete, since sometimes the same testing environment is shared among groups. Without this test environment, it will be really difficult to make any progress in testing your instructions.
-
-Although the test environment seems like a no-brainer, it really isn't. A lot of times, developers test systems on their local machines, so setting up a web instance requires someone to get a server, install the latest build, and give you access to it.
-
-Other times the platform requires extensive architecture to set up. For example, you might have to build a sample Java app to interact with the system. Setting up these resources on your own machine may prove challenging.
-
-If you're documenting a hardware product, you may not get a test instance of the product to play with. I once worked at a government facility documenting a million-dollar storage array. The only time I ever got to see it was by signing into a special data server room environment, accompanied by an engineer, who wouldn't dream of letting me actually touch the thing, much less swap out a storage disk, run commands in the terminal, replace a RAID, or do some other task for which I was supposedly writing instructions.
-
-Many times the QA and engineering teams work on local instances of the system, meaning they build the system on their local machines and run through test code there. You may need to submit a special request for an engineer to put the latest build on a server you can access.
-
-Sometimes you may also have to jump over security hurdles. For example, connections to Amazon Web Services from internal systems may require you to go through an intermediary server. So to connect to the AWS test instance, you would have to SSL to the intermediary server, and then connect from the intermediary to AWS.
-
-You may also need to construct certain YML files necessary to configure a server with the settings you want to test. Understanding exactly how to create the YML files, the directories to upload them to, the services to stop and restart, and so on can require a lot of asking around for help.
-
-When you're ready to submit a test call (assuming you have a REST API), you can probably use cURL, which makes it easy, but you'll no doubt need to include an authorization in the header of the call. The authorization often uses a hash of a combination of factors.
-
-Can you see how just getting the test system set up and ready can be challenging? Still, if you want to write good documentation, this is essential. Good developers know and recognize this need, and so they're usually somewhat accommodating in helping set up a test environment to get you started.
-
-For example, I asked an engineer to explain, step-by-step, how I was to connect to an intermediary jump host server required at my work. This server required a configuration that controlled the responses from the API. After explaining how to do it, he made sure that I could successfully connect from a terminal prompt on my own, and I didn't let the discussion go until I was successful.
-
-Never let a developer say "Oh, you just do a, b, and c." Then you go back to your station and nothing works, or it's much more complicated than he or she let on.
-
-After I could connect successfully to the intermediary, I documented it in great detail. I even included a list of error messages I encountered and added them to a troubleshooting section.
-
-In setting up the test system, I also learned that part of my documentation was unnecessary. I thought that field engineers would need to configure a database with a particular code themselves, when it turns out that IT operations really does this configuration. I didn't realize this until I started to ask how to configure the database, and an engineer (a different one from the engineer who said the database would need configuration) said that my audience wouldn't be able to do that configuration, so it shouldn't be in the documentation.
-
-It's little things like that, which you learn as you're going through the process yourself, that make accessing a test environment vital to good documentation.
-
-## Step 2: Test the instructions yourself
-
-After setting up the test environment, the next step is to test your instructions. Again, this isn't rocket science, but it's critical to producing good documentation.
-
-One benefit to testing your instructions is that you can start to answer your own questions. Rather than taking the engineer's word for it, you can run a call, see the response, and learn for yourself.
-
-In fact, a lot of times you can confront an engineer and tell him or her that something isn't working correctly, or you can start to make suggestions for improving things. You can't do this if you're just taking notes about what engineers say, or if you're just writing documentation from specs.
-
-When things don't work, you can identify and log bugs. This is helpful to the team overall and increases your own credibility with the engineers. It's also immensely fun to log a bug against an engineer's code, because it shows that you've discovered flaws and errors in the system.
-
-Other times the bugs are within your own documentation. For example, I had one of my parameters wrong. Instead of `verboseMode`, the parameter was simply `verbose`. This is one of those details you don't discover unless you test something, find it doesn't work, and then set about figuring out what's wrong.
-
-### Wrestling with assumptions
-
-While testing your documentation, you must recognize that what may seem clear to you may be confusing to another, because all documentation builds on assumptions that may or may not be shared with your audience.
-
-For example, you may assume that users already know how to SSH onto a server, create authorizations in REST headers, use cURL to submit calls, and so on.
+You may assume that users already know how to SSH onto a server, create authorizations in REST headers, use cURL to submit calls, and so on.
 
 Usually documentation doesn't hold a user's hand from beginning to end, but rather jumps into a specific task that depends on concepts and techniques that you assume the user already knows.
 
@@ -86,11 +36,11 @@ For example, does a user know how to *clear their cache*, or update *Flash*, or 
 
 This is why checking over your own instructions by walking through the steps yourself becomes problematic. The first rule of usability is to know the user, and also to recognize that you aren't the user.
 
-With developer documentation, usually the audience's skill level is far beyond my own, so adding little notes that clarify obvious instruction (such as saying that the `$` in code samples signals a command prompt and shouldn't be typed in the actual command) isn't essential. But adding these notes can't hurt, especially when some users of the documentation are product marketers rather than developers.
+With developer documentation, usually the audience's skill level is far beyond my own, so adding little notes that clarify obvious instruction (such as saying that the `$` in code samples signals a command prompt and shouldn't be typed in the actual command, or that ellipses `...` in code blocks indicates truncated code and shouldn't be copied and pasted) isn't essential. But adding these notes can't hurt, especially when some users of the documentation are product marketers rather than developers.
 
-The solution to addressing different audiences doesn't involve writing entirely different sets of documentation, as some have suggested. You can link potentially unfamiliar terms to a glossary or reference section where beginners can ramp up on the basics. You can likewise "sidebar out" into special advanced topics for those scenarios when you want to give some power-level instruction but don't want to hold a user's hand through the whole process. You don't have to offer just one path through the doc set.
+The solution to addressing different audiences doesn't involve writing entirely different sets of documentation. You can link potentially unfamiliar terms to a glossary or reference section where beginners can ramp up on the basics. You can likewise provide links to separate, advanced topics for those scenarios when you want to give some power-level instruction but don't want to hold a user's hand through the whole process. You don't have to offer just one path through the doc set.
 
-The problem, though, is learning to see the blind spots. If you're the only one testing your instructions, they might seem perfectly clear to you. I think most developers also feel this way after they write something. They usually take the approach of rendering the instruction in the most concise way possible, assuming their audience knows exactly what they do.
+The problem, though, is learning to see the blind spots. If you're the only one testing your instructions, they might seem perfectly clear to you. Most developers also feel this way after they write something. They usually take the approach of rendering the instruction in the most concise way possible, assuming their audience knows exactly what they do.
 
 But the audience *doesn't* know exactly what you know, and although you might feel like what you've written is crystal clear, because c'mon, everyone knows how to clear their cache, in reality you won't know until you *test your instructions against an audience*.
 
@@ -150,7 +100,7 @@ At some point in my career, someone talked me into the idea of "agile testing." 
 
 Agile testing methods are okay. You should definitely act on this feedback. But hopefully you can catch errors *before* they get to users. The whole point of any kind of quality assurance process is to ensure users get a quality product.
 
-Additionally, the later in the software cycle you catch an error, the more costly it is. For example, suppose you discover that a button or label or error message is really confusing. It's much harder to change it post-release than pre-release. I particularly hate it when the interface has typos or misspellings that I have to follow in documentation commands just to keep the two in sync. (For example, *Click the **Multi tenancy** button.*)
+Additionally, the later in the software cycle you catch an error, the more costly it is. For example, suppose you discover that a button or label or error message is really confusing. It's much harder to change it post-release than pre-release. I particularly hate it when the interface has typos or misspellings that I have to follow in documentation commands just to keep the two in sync. (For example, "Click the **Multi tenancy** button.")
 
 ## Enjoyment benefits from testing
 

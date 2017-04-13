@@ -27,4 +27,4 @@ Keep in mind that these specifications just describe the reference endpoints in 
 If you choose to automate your documentation using one of these specifications, it likely will be a separate site that showcases your endpoints and provides API interactivity. You'll still need to write a boatload of documentation about how to actually use your API.
 
 {: .tip}
-For an excellent overview and comparison of these three REST specification formats, see [Top Specification Formats for REST APIs](http://nordicapis.com/top-specification-formats-for-rest-apis.html/) by Kristopher Sandoval on the Nordic APIs blog.
+For an excellent overview and comparison of these three REST specification formats, see [Top Specification Formats for REST APIs](http://nordicapis.com/top-specification-formats-for-rest-apis/) by Kristopher Sandoval on the Nordic APIs blog.

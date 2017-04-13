@@ -93,7 +93,7 @@ The `{PhoneNumber}` value in `lookups.twilio.com/v1/PhoneNumbers/{PhoneNumber}` 
 Other important details about parameters are the maximum of minimum values allowed for the parameter, and whether the parameter is optional or required.
 
 {: .tip}
-When you test an API, try running an endpoint without the required parameters, or with the wrong parameters. See what kind of error response comes back. Include that response in your response codes section. I get deeper with the importance of testing in [My biggest tip: Test everything](nativelibraryapis_testing.html).
+When you test an API, try running an endpoint without the required parameters, or with the wrong parameters. See what kind of error response comes back. Include that response in your response codes section. I get deeper with the importance of testing in [Testing your docs](docapis_testing.html).
 
 ## Color coding parameter values
 
