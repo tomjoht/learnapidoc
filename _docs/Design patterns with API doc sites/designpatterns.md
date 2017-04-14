@@ -6,7 +6,9 @@ sidebar: docapis
 
 **In this section:**
 
+<ul>
 {% assign doclist = site.docs | where: "section", "designpatterns" | sort: "weight" %}
 {% for page in doclist %}
-* [{{page.title}}]({{page.permalink | remove: "/" }})
+<li class="level1"><a href="{{page.permalink | remove: "/" }}">{{page.title}}</a></li>
 {% endfor %}
+</ul>

@@ -78,7 +78,7 @@ Mashape [provides some sample code](http://docs.mashape.com/javascript) to parse
     <body>
     </body>
     </html>
-     ```
+    ```
 
 8.  Start Chrome and open the JavaScript Console by going to **View > Developer > JavaScript Console**.
 9.  Open the weatherdata.html file in Chrome (**File > Open File**).

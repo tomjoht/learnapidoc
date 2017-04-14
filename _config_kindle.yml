@@ -9,7 +9,8 @@ image_path: docs
 port: 5000
 highlighter: rouge
 github_editme_path: https://github.com/amzn/appstore-alexa-docs/
-
+exclude:
+  - mobi_files
 target: pdf
 
 image_path: docs

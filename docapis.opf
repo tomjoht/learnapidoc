@@ -129,7 +129,7 @@ layout: null
 	<item id="My_Table_of_Contents" media-type="application/x-dtbncx+xml" href="docapis.ncx"/>
 
   <!-- cover image [mandatory] -->
-  <item id="My_Cover" media-type="image/gif" href="images/restapi_apidoc.png"/>
+  <item id="My_Cover" media-type="image/gif" href="images/restapi_kindletitle.png"/>
 </manifest>
 
 <!--

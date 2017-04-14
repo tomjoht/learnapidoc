@@ -2,18 +2,6 @@ sidebarTitle: Documenting REST APIs
 
 folders:
 
-# - title: Table of Contents
-#   jurl: /toc.html
-
-# - title: Frontmatter
-#   jurl: /frontmatter.html
-#   folderitems:
-#   - title: Copyright
-#     jurl: /copyright.html
-#
-#   - title: Foreward
-#     jurl: /foreward.html
-
 - title: Introduction to REST APIs
   jurl: /introtoapis.html
   folderitems:
@@ -21,7 +9,7 @@ folders:
   - title: Course overview
     jurl: /index.html
 
-  - title: Some background and context
+  - title: Foreword
     jurl: /foreward.html
 
   - title: The market for REST API documentation
@@ -99,10 +87,13 @@ folders:
   jurl: /testingdocs.html
   folderitems:
 
-  - title: "Testing your docs"
-    jurl: /testingdocs_testing_docs.html
+  - title: "Set up a test environment"
+    jurl: /testingdocs_test_environment.html
 
-  - title: "Testing documentation assumptions"
+  - title: "Test all instructions yourself"
+    jurl: /testingdocs_test_your_instructions.html
+
+  - title: "Test your assumptions"
     jurl: /testingdocs_testing_assumptions.html
 
 - title: Documenting non-reference sections
@@ -290,3 +281,10 @@ folders:
 
   - title: How much code do you need to know to create developer documentation?
     jurl: /jobapis_learning_code.html
+
+- title: Resources
+  jurl: /resources.html
+  folderitems:
+
+  - title: Copyright
+    jurl: /copyright.html

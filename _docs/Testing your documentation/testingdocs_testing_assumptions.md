@@ -1,13 +1,13 @@
 ---
-title: "Testing documentation assumptions"
+title: "Test your assumptions"
 course: "Documenting REST APIs"
 permalink: /testingdocs_testing_assumptions.html
-weight: 2
+weight: 3
 sidebar: docapis
 section: testingdocs
 ---
 
-While testing your documentation, you must recognize that what may seem clear to you may be confusing to another, because all documentation builds on assumptions that may or may not be shared with your audience.
+While [testing your documentation](testingdocs_test_your_instructions.html), recognize that what may seem clear to you may be confusing to another, because all documentation builds on assumptions that may or may not be shared with your audience.
 
 {% if site.target == "web" %}
 * TOC

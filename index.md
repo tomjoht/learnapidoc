@@ -1,9 +1,7 @@
 ---
 title: "Documenting APIs: A guide for technical writers"
 permalink: index.html
-topnav: topnav
 sidebar: docapis
-layout: default
 type: homepage
 path: Introduction to REST APIs
 ---
@@ -47,6 +45,7 @@ Organizationally, this book is divided into the following sections:
 *  **Introduction to REST APIs**
 *  **Using a REST API like a developer**
 *  **Documenting endpoints**
+*  **Testing your documentation**
 *  **Documenting non-reference content**
 *  **Exploring other REST APIs**
 *  **Publishing API documentation**
