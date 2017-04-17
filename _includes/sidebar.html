@@ -28,7 +28,9 @@
 
     <ul id="docnavsidebar" class="docnav">
     {% for folder in sidebar.folders %}
+    {% unless folder.type == "frontmatter" %}
     <li class="level1"><a href="#">{{ folder.title }}</a>
+      {% endunless %}
         <ul>
             {% for folderitem in folder.folderitems %}
 

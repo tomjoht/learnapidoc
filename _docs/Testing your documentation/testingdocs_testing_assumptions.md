@@ -14,7 +14,7 @@ Almost all documentation builds on assumptions that may or may not be shared wit
 {:toc}
 {% endif %}
 
-## Assumptions in developer docs
+## Assumptions about terminology
 
 You may assume that users already know how to SSH onto a server, create authorizations in REST headers, use cURL to submit calls, and so on. Usually documentation doesn't hold a user's hand from beginning to end, but rather jumps into a specific task that depends on concepts and techniques that you assume the user already knows.
 
@@ -46,7 +46,7 @@ The problem, though, is learning to see the blind spots. If you're the only one 
 
 But the audience *doesn't* know exactly what you know, and although you might feel like what you've written is crystal clear, because c'mon, everyone knows how to clear their cache, in reality you won't know until you *test your instructions against an audience*.
 
-## Test the instructions against an audience
+## Testing your docs against an audience
 
 Almost no developer can push out their code without running it through QA, but for some reason technical writers usually don't follow the same QA processes as developers. There are some cases where tech docs are "tested" by QA, but whenever this happens I usually get strange feedback, as if a robot were testing my instructions.
 
@@ -70,7 +70,7 @@ The response, when you give instructions back to the writer, is usually the old 
 
 How do you test instructions without a dedicated editor, without a group of users, and without any formal structure in place? At the least, you can ask a colleague to try out the instructions.
 
-### Ask a colleague to try out your instructions
+## Using your colleagues as test subjects
 
 Other technical writers are usually both curious and helpful when you ask them to try out instructions. And when other technical writers start to walk through your steps, they recognize discrepancies in style that are worthy of discussion in themselves.
 
@@ -88,7 +88,7 @@ By giving other technical writers the opportunity to test your documentation, yo
 
 What might come out of a user test from a colleague is more than highlighting shortcomings about poor instruction. You might bring up matters of style, or you might foster great team discussions about innovative approaches to your help. Maybe you've integrated a glossary tooltip that is simply cool, or an embedded series button. When other writers test your instructions, they not only see your demo, they understand how helpful a feature is in a real context.
 
-### Should you watch when users test?
+## Observing users as they test your docs
 
 One question in testing users is whether you should watch them in test mode. Undeniably, when you watch users, you put some pressure on them. Users don't want to look stupid when they're following what should be clear instructions.
 
