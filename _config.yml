@@ -5,15 +5,13 @@ target: web
 url: http://idratherbewriting.com/learnapidoc/
 
 destination: _site
-image_path: docs
 port: 4000
 highlighter: rouge
 github_editme_path: https://github.com/amzn/appstore-alexa-docs/
 exclude:
-  - mobi_files
+  - mobi
+  - pdf
 target: web
-
-image_path: docs
 
 markdown: kramdown
 kramdown:

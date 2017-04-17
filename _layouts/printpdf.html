@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ site.title }}</title>
+
+
+<link rel="stylesheet" href="assets/css/pdf/syntax.css" />
+<link rel="stylesheet" href="assets/css/pdf/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/css/pdf/theme-green.css" />
+<link rel="stylesheet" href="assets/css/pdf/printstyles.css" />
+
+<script>
+    Prince.addScriptFunc("datestamp", function() {
+        return "PDF last generated: {{ site.time | date: '%B %d, %Y' }}";
+    });
+</script>
+
+<script>
+    Prince.addScriptFunc("guideName", function() {
+        return "{{site.print_title}}";
+    });
+</script>
+
+<div class="post-header">
+  {% unless page.type == "title" %}
+    <h1 class="post-title-main" id="{{page.permalink | replace: '/', '' }}">{{ page.title }}</h1>
+    {% endunless %}
+</div>
+
+<div class="post-content">
+    {{ content }}
+</div>

@@ -1,2 +1,2 @@
-mv _site/docapis.mobi mobi_files/docapis.mobi;
+mv _site/docapis.mobi mobi/docapis.mobi;
 echo "Done moving the file!"

@@ -2,6 +2,19 @@ sidebarTitle: Documenting REST APIs
 
 folders:
 
+- title: Frontmatter
+  jurl: /frontmatter.html
+  type: frontmatter
+  folderitems:
+
+  - title: Title page
+    jurl: /pdf_title_page.html
+    type: pdf
+
+  - title: TOC page
+    jurl: /pdf_toc_page.html
+    type: pdf
+
 - title: Introduction to REST APIs
   jurl: /introtoapis.html
   folderitems:

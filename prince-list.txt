@@ -1,0 +1,30 @@
+---
+layout: null
+---
+
+{% for folder in site.data.docapis.folders %}
+{% unless folder.type == "frontmatter" %}
+{{ folder.jurl | prepend: "/Users/tomjoht/projects/learnapidoc/_site" }}
+{% endunless %}
+{% for folderitem in folder.folderitems %}
+{% if folderitem.title %}
+{{ folderitem.jurl | prepend: "/Users/tomjoht/projects/learnapidoc/_site" }}
+{% endif %}
+{% for subfolder in folderitem.subfolders %}
+{{ subfolder.jurl | prepend: "/Users/tomjoht/projects/learnapidoc/_site" }}
+{% for subfolderitem in subfolder.subfolderitems %}
+{% if subfolderitem.title %}
+{{ subfolderitem.jurl | prepend: "/Users/tomjoht/projects/learnapidoc/_site" }}
+{% endif %}
+{% for subsubfolder in subfolderitem.subsubfolders %}
+{{ subsubfolder.jurl | prepend: "/Users/tomjoht/projects/learnapidoc/_site"}}
+{% for subsubfolderitem in subsubfolder.subsubfolderitems %}
+{% if subsubfolderitem.title %}
+{{ subsubfolderitem.jurl | prepend: "/Users/tomjoht/projects/learnapidoc/_site" }}
+{% endif %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
+{% endfor %}

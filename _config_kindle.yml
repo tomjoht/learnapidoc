@@ -1,19 +1,14 @@
 language: english
 target: print
 
-# Link to home
-url: /
-
 destination: _site
-image_path: docs
 port: 5000
 highlighter: rouge
 github_editme_path: https://github.com/amzn/appstore-alexa-docs/
 exclude:
-  - mobi_files
+  - mobi
+  - pdf
 target: pdf
-
-image_path: docs
 
 markdown: kramdown
 kramdown:
@@ -24,10 +19,6 @@ kramdown:
 
 collections:
   docs:
-    output: true
-  frontmatter:
-    output: true
-  search:
     output: true
 
 sass:
