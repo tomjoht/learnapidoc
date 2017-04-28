@@ -1,7 +1,7 @@
 ---
 layout: null
 ---
-
+{% assign sidebar = site.data[site.sidebar].folders %}
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   The unique identifier in <package unique-identifier="XYZ"> is a reference to
@@ -93,7 +93,7 @@ layout: null
 <!-- HTML content files [mandatory] -->
 <item id="item_tocstart" media-type="application/xhtml+xml" href="tocstart.html"></item>
 
-{% for folder in site.data.docapis.folders %}
+{% for folder in sidebar %}
     <item id="item_{{folder.jurl | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{folder.jurl | remove: "/" }}"></item>
 {% for folderitem in folder.folderitems %}
   {% if folderitem.title %}
@@ -152,7 +152,7 @@ layout: null
 
   <itemref idref="item_tocstart" />
 
-{% for folder in site.data.docapis.folders %}
+{% for folder in sidebar %}
   <itemref idref="item_{{folder.jurl | remove: "/" | remove: ".html" }}"/>
 {% for folderitem in folder.folderitems %}
   {% if folderitem.title %}

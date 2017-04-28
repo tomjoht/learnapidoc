@@ -1,5 +1,6 @@
 language: english
 target: web
+sidebar: docapis
 
 # Link to home
 url: http://idratherbewriting.com/learnapidoc/

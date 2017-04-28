@@ -22,7 +22,8 @@ layout: null
 
 {% assign increment = 1 %}
   <navMap>
-    {% for folder in site.data.docapis.folders %}
+  {% assign sidebar = site.data[site.sidebar].folders %}
+    {% for folder in sidebar %}
     <navPoint class="toc" id="item_{{ folder.jurl  | remove: "/" | remove: ".html" }}" playOrder="{% increment %}">
       <navLabel>
         <text>{{ folder.title }}</text>

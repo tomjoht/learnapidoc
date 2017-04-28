@@ -1,3 +1,7 @@
+title: Documenting REST APIs
+subtitle: A guide for technical writers
+sidebar: docapis
+
 language: english
 target: print
 
@@ -30,24 +34,9 @@ defaults:
       type: pages
     values:
       layout: printpdf
-      topnav: topnav
   -
     scope:
       path: ""
       type: docs
     values:
       layout: printpdf
-      topnav: topnav
-  -
-    scope:
-      path: images
-    values:
-      image: true
-
-
-########## UI text ###############
-
-
-uistring:
-    tableofcontents: Table of Contents
-    log_doc_issue: Log Doc Issue

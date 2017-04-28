@@ -1,5 +1,6 @@
 language: english
 target: print
+sidebar: docapis
 
 destination: _site
 port: 5000

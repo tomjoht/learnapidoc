@@ -7,7 +7,8 @@ permalink: pdf_toc_page.html
 
 <div id="navig">
 <ul id="docnavsidebar" class="docnav">
-{% for folder in site.data.docapis.folders %}
+  {% assign sidebar = site.data[site.sidebar].folders %}
+{% for folder in sidebar %}
 {% unless folder.type == "frontmatter" %}
 <li class="sectionHead"><a href="{{folder.jurl | remove: "/"}}">{{ folder.title }}</a>
     <ul>

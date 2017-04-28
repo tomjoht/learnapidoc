@@ -2,9 +2,9 @@
 title: Table of Contents
 permalink: /toc.html
 ---
-
+{% assign sidebar = site.data[site.sidebar].folders %}
  <ul id="docnavsidebar" class="docnav">
- {% for folder in site.data.docapis.folders %}
+ {% for folder in sidebar %}
  <li class="level1"><a href="{{folder.jurl | remove: "/"}}">{{ folder.title }}</a>
      <ul>
          {% for folderitem in folder.folderitems %}

@@ -9,7 +9,8 @@ search: false
 ---
 
 <ul id="docnavsidebar" class="docnav">
-{% for folder in site.data.docapis.folders %}
+{% assign sidebar = site.data[site.sidebar].folders %}
+{% for folder in sidebar %}
 <li class="level1"><a href="{{folder.jurl | remove: "/"}}">{{ folder.title }}</a></li>
    <ul>
        {% for folderitem in folder.folderitems %}

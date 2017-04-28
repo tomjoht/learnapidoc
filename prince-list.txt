@@ -1,8 +1,9 @@
 ---
 layout: null
 ---
+{% assign sidebar = site.data[site.sidebar].folders %}
 
-{% for folder in site.data.docapis.folders %}
+{% for folder in sidebar %}
 {% unless folder.type == "frontmatter" %}
 {{ folder.jurl | prepend: "/Users/tomjoht/projects/learnapidoc/_site" }}
 {% endunless %}
