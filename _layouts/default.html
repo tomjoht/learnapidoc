@@ -7,8 +7,8 @@
             <!-- sidebar -->
             <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
 
-                {% include sidebar.html %}
-                {% include sidebar_ads.html %}
+            {% include sidebar.html %}
+            {% include sidebar_ads.html %}
 
             </div>
 
@@ -31,9 +31,9 @@
 
                     {{content}}
 
-                    {% include next.html %}
+                  {% include single_post_ads.html %}
 
-                    {% include single_post_ads.html %}
+
 
                     <div style="max-width: 375px">{% include tinyletter.html %}</div>
                     {% include disqus.html %}

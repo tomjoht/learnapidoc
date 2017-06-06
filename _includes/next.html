@@ -1,4 +1,5 @@
 ## Next page code
+{% comment %}
 {% assign doclist = site.docs | where: "section", "publishingapis" | sort: "weight" %}
 {{doclist}}
 {% for pg in doclist %}
@@ -7,3 +8,5 @@
 {% endif %}
 {% break %}
 {% endfor %}
+
+{% endcomment %}
