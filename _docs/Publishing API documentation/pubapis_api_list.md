@@ -8,15 +8,15 @@ section: publishingapis
 
 The following are about 100 openly accessible REST APIs that you can browse as a way to look at patterns and examples. Most of these REST API links are available from [programmableweb.com](http://programmableweb.com). I initially started gathering a list of the APIs in Programmableweb's "Most Popular" category, but then I just started adding links as I ran across interesting APIs.
 
-1. [Google Places API](https://developers.google.com/places/webservice/intro)
-2. [Twitter API](https://dev.twitter.com/rest/public)
-3. [Flickr API](https://www.flickr.com/services/api/)
-4. [Facebook API](https://developers.facebook.com/docs/atlas-api/reference/gettingstarted)
-5. [Youtube API](https://developers.google.com/youtube/v3/)
-6. [eBay API](https://go.developer.ebay.com/api-documentation)
-7. [Amazon API](https://developer.amazon.com/appsandservices/apis)
-8. [Twilio API](https://www.twilio.com/docs/api)
-9. [Last.fm API](http://www.last.fm/api)
+1.  [Google Places API](https://developers.google.com/places/webservice/intro)
+2.  [Twitter API](https://dev.twitter.com/rest/public)
+3.  [Flickr API](https://www.flickr.com/services/api/)
+4.  [Facebook API](https://developers.facebook.com/docs/atlas-api/reference/gettingstarted)
+5.  [Youtube API](https://developers.google.com/youtube/v3/)
+6.  [eBay API](https://go.developer.ebay.com/api-documentation)
+7.  [Amazon API](https://developer.amazon.com/appsandservices/apis)
+8.  [Twilio API](https://www.twilio.com/docs/api)
+9.  [Last.fm API](http://www.last.fm/api)
 10. [Bing API](http://www.bing.com/dev/)
 11. [Delicious API](https://delicious.com/developers)
 12. [Google Cloud API](https://cloud.google.com/appengine/docs)
@@ -108,7 +108,7 @@ For a directory of API documentation sites on the open web, see the [Programmabl
 
 <a href="http://www.programmableweb.com/apis/directory"><img src="images/programmableweb.png" alt="Programmable web directory" /></a>
 
-Note that Programmableweb only lists web APIs, meaning APIs that you can access on the web. They don't list the countless internal, firewalled-off APIs that many companies provide at a cost to paying customers. There are many more thousands of firewalled, private APIs out there that most of us will never know about.
+Note that Programmableweb only lists web APIs, meaning APIs that you can access on the web. They don't list the countless internal, firewalled-off APIs that many companies provide at a cost to paying customers. There are many more thousands of private APIs out there that most of us will never know about.
 
 ## Look at 5 different APIs
 

@@ -22,23 +22,21 @@ Just as websites have a diversity of engines, platforms, and approaches, so too 
 
 Despite the wide variety of APIs, there is some commonality among them. The common ground is primarily in the endpoint documentation. But user guides have common themes as well.
 
-## Three kinds of API doc content
-
 In a [blog post by the writers at Parse](http://blog.parse.com/learn/engineering/designing-great-api-docs/), they break down API doc content into three main types:
 
 >Reference: This is the listing of all the functionality in excruciating detail. This includes all datatype and function specs. Your advanced developers will leave this open in a tab all day long.
 >
 >Guides: This is somewhere between the reference and tutorials. It should be like your reference with prose that explains how to use your API.
 >
->Tutorials: These teach your users specific things that they can do with your API, and are usually tightly focused on just a few pieces of functionality. Bonus points if you include working sample code.</blockquote>
+>Tutorials: These teach your users specific things that they can do with your API, and are usually tightly focused on just a few pieces of functionality. Bonus points if you include working sample code.
 
-I think this division of content represents the API documentation genre well and serves as a good guide as you develop strategies for publishing API documentation.
+This division of content represents the API documentation genre well and serves as a good guide as you develop strategies for publishing API documentation.
 
 In Mulesoft's API platform, you can see many of these sections in their standard template for API documentation:
 
 <a href="http://api-portal.anypoint.mulesoft.com/yahoo/api/yahoo-weather-api?ref=apihub"><img src="images/commonsections.png" alt="Common sections in API documentation" /></a>
 
- I won't get into too much detail about each of these sections. In previous sections of this course, I explored the content development aspect of API documentation in depth. Here I'll just list the salient points.
+I won't get into too much detail about each of these sections. In previous sections of this course, I explored the content development aspect of API documentation in depth. Here I'll just list the salient points.
 
 ### Guides
 

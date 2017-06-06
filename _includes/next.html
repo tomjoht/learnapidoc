@@ -1,0 +1,9 @@
+## Next page code
+{% assign doclist = site.docs | where: "section", "publishingapis" | sort: "weight" %}
+{{doclist}}
+{% for pg in doclist %}
+{% if pg.weight > page.weight %}
+<b>Next page</b>: <a href="{{pg.permalink | remove: "/" }}">{{pg.title}}</a>
+{% endif %}
+{% break %}
+{% endfor %}
