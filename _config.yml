@@ -3,12 +3,11 @@ target: web
 sidebar: docapis
 
 # Link to home
-url: http://idratherbewriting.com/learnapidoc/
+url: http://idratherbewriting.com/learnapidoc
 
 destination: _site
 port: 4000
 highlighter: rouge
-github_editme_path: https://github.com/amzn/appstore-alexa-docs/
 exclude:
   - mobi
   - pdf

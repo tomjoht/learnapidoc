@@ -39,4 +39,4 @@ One of my goals for the content is to keep this book a living, evolving document
 
 I wrote this book in kramdown Markdown, using Jekyll. I single sourced the content into several outputs: Web, Kindle (Mobi), EPUB, and PDF. When you buy the book, you can access any version at any time. However, to provide for discoverability online, I decided to leave the web version free.
 
-I welcome feedback. Feel free to drop me a note at tom@idratherbewriting.com. And follow my blog at http://idratherbewriting.com.
+I welcome feedback. Feel free to drop me a note at <a href="mailto=tom@idratherbewriting.com">tom@idratherbewriting.com</a>. And follow my blog at [http://idratherbewriting.com](http://idratherbewriting.com).

@@ -4,7 +4,7 @@
     {% assign pages = site.docs | sort:"weight"  %}
     {% for pg in pages %}
         {% if pg.weight > page.weight %}
-          <a href="{{pg.url | prepend: '..'}}"><button type="button" class="btn btn-warning">NEXT: {{pg.title}}</button></a>
+          <a class="noCrossRef" href="{{pg.url | prepend: site.url }}"><button type="button" class="btn btn-warning">NEXT: {{pg.title}}</button></a>
           {% break %}
       {% endif %}
     {% endfor %}
