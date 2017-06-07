@@ -2,7 +2,7 @@
 title: cURL intro and installation
 permalink: /docapis_install_curl.html
 course: "Documenting REST APIs"
-weight: 1.6
+weight: 2.3
 sidebar: docapis
 section: likeadeveloper
 ---

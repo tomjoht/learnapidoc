@@ -2,7 +2,7 @@
 title: "Foreward"
 permalink: /foreward.html
 course: "Documenting REST APIs"
-weight: 3.0
+weight: 1.1
 sidebar: docapis
 section: introtoapis
 ---

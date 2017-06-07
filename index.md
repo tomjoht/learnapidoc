@@ -4,7 +4,7 @@ permalink: index.html
 sidebar: docapis
 type: homepage
 path: Introduction to REST APIs
-weight: 0
+weight: 1.0
 ---
 
 In this book on writing documentation for REST APIs, instead of just talking about abstract concepts, I contextualize REST APIs with a direct, hands-on approach.
