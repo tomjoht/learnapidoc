@@ -8,10 +8,12 @@ Feel free to ask me any questions you like. You can contact me directly using on
 <ul>
   <li><strong>Email: </strong><a href="mailto:tomjohnson1492@gmail.com">tom@idratherbewriting.com</a></li>
   <li><strong>Twitter: </strong><a href="http://twitter.com/tomjohnson" target="\_blank">@tomjohnson</a></li>
-  <li><strong><a href="http://slack.writethedocs.org/" target="\_blank">WTD Slack: </strong> @tomjohnson</li>
+  <li><strong>Write the Docs Slack:</strong><a href="https://writethedocs.slack.com/team/tomjohnson" target="\_blank">@tomjohnson</a></li>
 </ul>
 
-For your convenience, you can also contact me through the form below:</p>
+<div style="margin-top:30px;"></div>
+
+For your convenience, you can also contact me through the form below:
 
 <div style="margin-bottom:15px; padding-bottom:10px;">
 <div id="wufoo-mlxbnfd14yabfn">
