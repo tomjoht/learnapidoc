@@ -3,7 +3,7 @@ title: "Miredot"
 permalink: /pubapis_miredot.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 6.0
+weight: 7.91
 section: publishingapis
 ---
 

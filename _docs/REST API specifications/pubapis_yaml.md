@@ -3,7 +3,7 @@ title: More about YAML
 permalink: /pubapis_yaml.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 5.5
+weight: 8.3
 section: restapispecifications
 ---
 

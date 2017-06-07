@@ -3,7 +3,7 @@ title: "Javadoc tags"
 permalink: /nativelibraryapis_javadoc_tags.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.4
+weight: 10.4
 section: nativelibraryapis
 ---
 

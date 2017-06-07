@@ -5,10 +5,12 @@ categories:
 - api-doc
 keywords:
 course: "Documenting REST APIs"
-weight: 5.4
+weight: 12.1
 sidebar: docapis
 section: publishingapis
 ---
+
+{% include note.html content="This page is under construction ..." %}
 
 API
 : Application Programming Interface. Enables different systems to interact with each other programmatically. Two types of APIs are web services and library-based APIs.

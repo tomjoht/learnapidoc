@@ -3,7 +3,7 @@ title: "Pull request workflows through Github in the browser"
 permalink: /pubapis_github_pull_requests.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 5.2
+weight: 7.7
 section: publishingapis
 ---
 

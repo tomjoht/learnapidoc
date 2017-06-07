@@ -4,7 +4,7 @@ permalink: /docapis_klout_example.html
 categories:
 - api-doc
 course: "Documenting REST APIs"
-weight: 4.2
+weight: 6.3
 sidebar: docapis
 section: otherapis
 ---

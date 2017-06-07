@@ -3,7 +3,7 @@ title: "Design pattern: Structure and templates"
 permalink: /pubapis_structure_and_templates.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 6.4
+weight: 9.1
 section: designpatterns
 ---
 

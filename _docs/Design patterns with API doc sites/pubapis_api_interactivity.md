@@ -3,7 +3,7 @@ title: "API Interactivity"
 permalink: /pubapis_api_interactivity.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 6.8
+weight: 9.5
 section: designpatterns
 ---
 

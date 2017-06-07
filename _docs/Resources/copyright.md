@@ -2,7 +2,6 @@
 title: "Copyright"
 permalink: /copyright.html
 course: "Documenting REST APIs"
-weight: 3.01
 sidebar: docapis
 section: introtoapis
 ---

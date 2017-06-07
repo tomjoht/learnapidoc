@@ -1,8 +1,8 @@
 ---
-title: Java in a nutshell
+title: Java crash course
 permalink: /nativelibraryapis_java_crash_course.html
 course: "Documenting REST APIs"
-weight: 7.2
+weight: 10.2
 sidebar: docapis
 section: nativelibraryapis
 ---

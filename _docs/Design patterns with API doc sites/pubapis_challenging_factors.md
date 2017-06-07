@@ -3,7 +3,7 @@ title: "Challenging factors"
 permalink: /pubapis_challenging_factors.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 6.9
+weight: 9.7
 section: designpatterns
 ---
 

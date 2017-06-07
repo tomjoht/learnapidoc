@@ -2,7 +2,7 @@
 title: Doxygen, another document generator
 permalink: /nativelibraryapis_doxygen.html
 course: "Documenting REST APIs"
-weight: 7.7
+weight: 10.7
 sidebar: docapis
 section: nativelibraryapis
 ---

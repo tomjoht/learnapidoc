@@ -3,7 +3,7 @@ title: "Getting the Java source"
 permalink: /nativelibraryapis_getting_the_source.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.1
+weight: 10.1
 section: nativelibraryapis
 ---
 

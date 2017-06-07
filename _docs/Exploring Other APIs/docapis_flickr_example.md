@@ -4,7 +4,7 @@ permalink: /docapis_flickr_example.html
 categories:
 - api-doc
 course: "Documenting REST APIs"
-weight: 4.1
+weight: 6.2
 sidebar: docapis
 section: otherapis
 ---

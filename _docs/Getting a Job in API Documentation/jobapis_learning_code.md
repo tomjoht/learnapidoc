@@ -4,7 +4,7 @@ permalink: /jobapis_learning_code.html
 categories:
 - api-doc
 course: "Documenting REST APIs"
-weight: 2.0
+weight: 11.1
 sidebar: docapis
 section: jobapis
 ---

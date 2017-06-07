@@ -2,7 +2,7 @@
 title: Create a Javadoc
 permalink: /nativelibraryapis_create_javadoc.html
 course: "Documenting REST APIs"
-weight: 7.3
+weight: 10.3
 sidebar: docapis
 section: nativelibraryapis
 ---

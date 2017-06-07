@@ -3,7 +3,7 @@ title: "Swagger tutorial"
 permalink: /pubapis_swagger.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 5.41
+weight: 8.2
 section: restapispecifications
 ---
 

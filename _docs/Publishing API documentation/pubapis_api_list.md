@@ -2,7 +2,7 @@
 title: List of about 100 APIs
 permalink: /pubapis_apilist.html
 sidebar: docapis
-weight: 4.6
+weight: 7.1
 section: publishingapis
 ---
 

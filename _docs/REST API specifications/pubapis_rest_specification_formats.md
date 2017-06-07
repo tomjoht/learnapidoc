@@ -3,7 +3,7 @@ title: "REST API specification formats"
 permalink: /pubapis_rest_specification_formats.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 5.3
+weight: 8.0
 section: restapispecifications
 ---
 

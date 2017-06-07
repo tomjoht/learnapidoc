@@ -3,7 +3,7 @@ title: "Long-ish pages"
 permalink: /pubapis_longish_pages.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 6.7
+weight: 9.4
 section: designpatterns
 ---
 

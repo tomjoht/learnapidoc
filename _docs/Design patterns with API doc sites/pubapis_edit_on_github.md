@@ -3,7 +3,7 @@ title: "Adding an Edit on Github button"
 permalink: /pubapis_edit_on_github.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 6.81
+weight: 9.6
 section: designpatterns
 ---
 

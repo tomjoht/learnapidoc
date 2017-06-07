@@ -3,7 +3,7 @@ title: "Abundant code samples"
 permalink: /pubapis_code_samples.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 6.6
+weight: 9.3
 section: designpatterns
 ---
 

@@ -3,7 +3,7 @@ title: 'Aeris Weather Example: Get wind speed and use as conditional value'
 permalink: /docapis_aerisweather_example.html
 keywords:
 course: "Documenting REST APIs"
-weight: 4.3
+weight: 6.4
 sidebar: docapis
 section: otherapis
 ---

@@ -3,7 +3,7 @@ title: "Custom UX solutions"
 permalink: /pubapis_custom_ux.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 6.1
+weight: 7.92
 section: publishingapis
 ---
 

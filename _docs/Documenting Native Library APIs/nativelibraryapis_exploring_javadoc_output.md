@@ -3,7 +3,7 @@ title: "Exploring the Javadoc output"
 permalink: /nativelibraryapis_exploring_javadoc_output.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.5
+weight: 10.5
 section: nativelibraryapis
 ---
 

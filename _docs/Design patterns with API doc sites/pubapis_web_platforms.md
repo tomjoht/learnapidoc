@@ -3,7 +3,7 @@ title: "Website platform"
 permalink: /pubapis_web_platforms.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 6.5
+weight: 9.2
 section: designpatterns
 ---
 

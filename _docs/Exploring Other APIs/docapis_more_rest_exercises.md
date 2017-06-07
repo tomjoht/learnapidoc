@@ -3,7 +3,7 @@ title: Exploring more REST APIs
 permalink: /docapis_more_rest_exercises.html
 keywords:
 course: "Documenting REST APIs"
-weight: 3.9
+weight: 6.0
 sidebar: docapis
 section: otherapis
 ---

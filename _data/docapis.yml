@@ -184,7 +184,7 @@ folders:
   - title: Pull request workflows through Github in browser
     jurl: /pubapis_github_pull_requests.html
 
-  - title: Static site generators 
+  - title: Static site generators
     jurl: /pubapis_static_site_generators.html
 
   - title: Readme.io
@@ -285,9 +285,6 @@ folders:
 
   - title: Documenting non-reference API docs
     jurl: /nativelibraryapis_nonrefdocs.html
-
-  - title: Course summary
-    jurl: /nativelibraryapis_workshop_summary.html
 
 - title: Getting a Job in API Documentation
   jurl: /jobapis.html

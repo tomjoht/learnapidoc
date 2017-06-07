@@ -3,7 +3,7 @@ title: Tool decisions
 permalink: /pubapis_tooldecisions.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 4.8
+weight: 7.3
 section: publishingapis
 ---
 

@@ -3,7 +3,7 @@ title: "Github wikis"
 permalink: /pubapis_github_wikis.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 4.9
+weight: 7.4
 section: publishingapis
 ---
 

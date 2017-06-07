@@ -3,7 +3,7 @@ title: "Breaking down API doc"
 permalink: /pubapis_api_doc_types.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 4.7
+weight: 7.2
 section: publishingapis
 ---
 

@@ -3,7 +3,7 @@ title: "Help authoring tools"
 permalink: /pubapis_hats.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 6.2
+weight: 7.93
 section: publishingapis
 ---
 

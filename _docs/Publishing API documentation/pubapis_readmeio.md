@@ -3,7 +3,7 @@ title: "Readme.io"
 permalink: /pubapis_readmeio.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 5.9
+weight: 7.9
 section: publishingapis
 ---
 
