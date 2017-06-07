@@ -1,12 +1,15 @@
-## Next page code
-{% comment %}
-{% assign doclist = site.docs | where: "section", "publishingapis" | sort: "weight" %}
-{{doclist}}
-{% for pg in doclist %}
-{% if pg.weight > page.weight %}
-<b>Next page</b>: <a href="{{pg.permalink | remove: "/" }}">{{pg.title}}</a>
-{% endif %}
-{% break %}
-{% endfor %}
+<div class="seriesContext">
+  <hr/>
+  <a>
+    {% assign pages = site.docs | sort:"weight"  %}
+    {% for pg in pages %}
+        {% if pg.weight > page.weight %}
+          <a href="{{pg.url | prepend: '..'}}"><button type="button" class="btn btn-warning">NEXT: {{pg.title}}</button></a>
+          {% break %}
+      {% endif %}
+    {% endfor %}
+  </a>
+  &nbsp;
+  <hr/>
 
-{% endcomment %}
+</div>
