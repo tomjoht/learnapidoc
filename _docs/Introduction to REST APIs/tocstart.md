@@ -2,7 +2,6 @@
 title: "Table of Contents"
 permalink: /tocstart.html
 course: "Documenting REST APIs"
-weight: 2.0
 sidebar: docapis
 section: frontmatter
 search: false

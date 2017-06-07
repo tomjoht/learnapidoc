@@ -3,7 +3,7 @@ title: Creating the quick reference guide
 permalink: /docapis_doc_quick_reference.html
 keywords:
 course: "Documenting REST APIs"
-weight: 3.8
+weight: 5.6
 sidebar: docapis
 section: docnonref
 ---

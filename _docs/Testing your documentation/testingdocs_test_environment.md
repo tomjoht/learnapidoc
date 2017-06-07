@@ -2,7 +2,7 @@
 title: "Set up a test environment"
 course: "Documenting REST APIs"
 permalink: /testingdocs_test_environment.html
-weight: 1
+weight: 4.0
 sidebar: docapis
 section: testingdocs
 ---

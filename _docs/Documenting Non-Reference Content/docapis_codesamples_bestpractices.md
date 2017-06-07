@@ -5,8 +5,8 @@ categories:
 - api-doc
 keywords:
 course: "Documenting REST APIs"
-weight: 3.7
-sidebar: fireappbuilder
+weight: 5.5
+sidebar: docapis
 section: docnonref
 ---
 

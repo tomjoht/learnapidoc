@@ -4,7 +4,7 @@ permalink: /pubapis_rest_specification_formats.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 5.3
-section: publishingapis
+section: restapispecifications
 ---
 
 When I introduced REST APIs, I mentioned that REST APIs follow an architectural style, not a specific standard. However, there are several REST specifications that have been formulated to try to provide some standards. These standards lead to better documentation, tooling, and structure with REST APIs. The three most popular REST API specifications are as follows:

@@ -7,7 +7,7 @@ keywords:
 course: "Documenting REST APIs"
 weight: 5.4
 sidebar: docapis
-section: publishingapis
+section: restapispecifications
 ---
 
 {: .tip }

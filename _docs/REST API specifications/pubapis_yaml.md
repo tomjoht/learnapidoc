@@ -4,7 +4,7 @@ permalink: /pubapis_yaml.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 5.5
-section: publishingapis
+section: restapispecifications
 ---
 
 When you created the Swagger file, you used a syntax called YML. YML stands for "YAML Ain't Markup Language." This means that the YAML syntax doesn't have markup tags such as `<` or `>`.

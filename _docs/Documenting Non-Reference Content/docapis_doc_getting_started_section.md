@@ -3,7 +3,7 @@ title: Writing the Getting Started section
 permalink: /docapis_doc_getting_started_section.html
 keywords:
 course: "Documenting REST APIs"
-weight: 3.4
+weight: 5.2
 sidebar: docapis
 section: docnonref
 ---

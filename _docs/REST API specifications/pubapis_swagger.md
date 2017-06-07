@@ -4,7 +4,7 @@ permalink: /pubapis_swagger.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 5.41
-section: publishingapis
+section: restapispecifications
 ---
 
 Swagger is one of the most popular specifications for REST APIs for a number of reasons:

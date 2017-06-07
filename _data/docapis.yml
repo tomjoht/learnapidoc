@@ -184,25 +184,7 @@ folders:
   - title: Pull request workflows through Github in browser
     jurl: /pubapis_github_pull_requests.html
 
-  - title: REST API specification formats
-    jurl: /pubapis_rest_specification_formats.html
-
-  - title: Implementing Swagger with your API docs
-    jurl: /pubapis_swagger_intro.html
-
-  - title: Swagger tutorial
-    jurl: /pubapis_swagger.html
-
-  - title: More about YAML
-    jurl: /pubapis_yaml.html
-
-  - title: RAML
-    jurl: /pubapis_raml.html
-
-  - title: API Blueprint
-    jurl: /pubapis_api_blueprint.html
-
-  - title: Static site generators (Jekyll)
+  - title: Static site generators 
     jurl: /pubapis_static_site_generators.html
 
   - title: Readme.io
@@ -222,6 +204,28 @@ folders:
 
 #  - title: Conclusion
 #    permalink: /pubapis_conclusion.html
+
+- title: REST API specification
+  jurl: /restapispecifications.html
+  folderitems:
+
+  - title: REST API specification formats
+    jurl: /pubapis_rest_specification_formats.html
+
+  - title: Implementing Swagger with your API docs
+    jurl: /pubapis_swagger_intro.html
+
+  - title: Swagger tutorial
+    jurl: /pubapis_swagger.html
+
+  - title: More about YAML
+    jurl: /pubapis_yaml.html
+
+  - title: RAML
+    jurl: /pubapis_raml.html
+
+  - title: API Blueprint
+    jurl: /pubapis_api_blueprint.html
 
 - title: Design patterns
   jurl: /designpatterns.html

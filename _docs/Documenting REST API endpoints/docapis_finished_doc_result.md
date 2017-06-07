@@ -5,7 +5,7 @@ categories:
 - api-doc
 keywords:
 course: "Documenting REST APIs"
-weight: 3.1
+weight: 3.7
 sidebar: docapis
 section: docendpoints
 ---

@@ -5,7 +5,7 @@ keywords: RAML
 course: "Publishing REST APIs"
 weight: 5.6
 sidebar: docapis
-section: publishingapis
+section: restapispecifications
 ---
 
 RAML stands for REST API Modeling Language and is similar to Swagger and other API specifications. RAML is backed by [Mulesoft](https://www.mulesoft.com/), a commercial API company, and uses a more YAML-based syntax in the specification.
@@ -19,7 +19,7 @@ RAML stands for REST API Modeling Language and is similar to Swagger and other A
 
 Similar to Swagger, once you create a RAML file that describes your API, it can be consumed by different platforms to parse and display the information in attractive outputs. The RAML format, which uses YML syntax, tries to be human-readable, efficient, and simple.
 
-<figure><img src="images/ramlexample.png" alt="Sample RAML output in API Console" /></a><figcaption>This is a sample RAML output in something called API Console</figcaption></figure>
+<figure><img src="images/ramlexample.png" alt="Sample RAML output in API Console" /><figcaption>This is a sample RAML output in something called API Console</figcaption></figure>
 
 ## Auto-generating client SDK code
 
