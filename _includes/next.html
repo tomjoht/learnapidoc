@@ -1,15 +1,24 @@
 <div class="seriesContext">
   <hr/>
-  <a>
+
+  {% assign newpages = site.docs | sort:"weight" | reverse %}
+      {% for pg in newpages %}
+          {% if pg.weight < page.weight %}
+            <div class="previousButton"><a class="noCrossRef" href="{{pg.url | reverse | prepend: site.url }}"><small>&laquo; Previous: {{pg.title}}</small></a></div>
+            {% break %}
+        {% endif %}
+      {% endfor %}
+
     {% assign pages = site.docs | sort:"weight"  %}
     {% for pg in pages %}
         {% if pg.weight > page.weight %}
-          <a class="noCrossRef" href="{{pg.url | prepend: site.url }}"><button type="button" class="btn btn-warning">NEXT: {{pg.title}}</button></a>
+          <div class="nextButton"><a class="noCrossRef" href="{{pg.url | prepend: site.url }}"><button type="button" class="btn btn-warning">NEXT &raquo; {{pg.title}}</button></a></div>
           {% break %}
       {% endif %}
     {% endfor %}
-  </a>
-  &nbsp;
+
+
+
   <hr/>
 
 </div>
