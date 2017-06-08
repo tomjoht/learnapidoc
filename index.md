@@ -35,6 +35,8 @@ As a technical writer, you'll tackle each element of a reference topic in REST A
 
 Diving into these sections will give you a solid understanding of how to document REST APIs.
 
+{% include random_ad.html %}
+
 Finally, you'll dive into different ways to publish REST API documentation, exploring tools and specifications such as API Blueprint, Swagger, RAML, readme.io, Jekyll, and more.
 
 You'll learn how to leverage templates, build interactive API consoles so users can try out requests and see responses, and learn different ways to host and publish your documentation.
