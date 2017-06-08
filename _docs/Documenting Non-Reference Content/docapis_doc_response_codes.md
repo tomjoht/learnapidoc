@@ -42,6 +42,8 @@ Connection: keep-alive
 
 The first line, `HTTP/1.1 200 OK`, tells us the status of the request. (If you change the method, you'll get back a different status code.)
 
+{% include random_ad.html %}
+
 With a GET request, it's pretty easy to tell if the request is successful or not because you get back something in the response.
 
 But suppose you're making a POST, PUT, or DELETE call, where you're changing data contained in the resource. How do you know if the request was successfully processed and received by the API?

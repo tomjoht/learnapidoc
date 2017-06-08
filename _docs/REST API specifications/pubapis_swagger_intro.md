@@ -28,6 +28,8 @@ During the demo, the project manager talked through each of the slides, explaini
 
 The field engineers wanted to try out the requests and see the responses for themselves. They wanted to "push the buttons," so to speak, and see how the API responded. I'm not sure if they were skeptical of the API's advertised behavior, or if they had questions the slides failed to answer. But they insisted on making actual calls themselves and seeing the responses, despite what the project manager had noted on each slide.
 
+{% include random_ad.html %}
+
 The field engineers' insistence on trying out every endpoint made me rethink my API documentation. All the engineers I've ever known have had similar inclinations to explore and experiment on their own.
 
 I have a mechanical engineering friend who once nearly entirely dismantled his car's engine to change a head gasket: he simply loved to take things apart and put them back together. It's the engineering mind. When you force engineers to passively watch a PowerPoint presentation, they quickly lose interest.

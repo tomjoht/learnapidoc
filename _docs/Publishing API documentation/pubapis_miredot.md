@@ -53,6 +53,8 @@ Miredot consumes this information and generates an output.
 
 <a href="http://www.miredot.com/exampledocs/#268738548"><img src="images/miredotupdatecategory.png" alt="Miredot update category" /></a>
 
+{% include random_ad.html %}
+
 If you browse the navigation of Miredot's output, it's an interesting-looking solution. This kind of documentation might fit a Java-based REST API well.
 
 But the authoring of the docs would really only work for Java developers. It wouldn't work well for technical writers unless you're plugged into the source control workflow.

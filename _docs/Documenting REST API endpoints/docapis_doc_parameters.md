@@ -62,6 +62,8 @@ There are more data types in programming, and if you have more specific data typ
 
 ## Parameters should list allowed values
 
+{% include random_ad.html %}
+
 One of the problems with the Mashape Weather API is that it doesn't tell you which values are allowed for the latitude and longitude. If you type in coordinates for Nepal, for example, `28.3790654` and `81.8856707`, the response is `Not Supported - NA - NA`. Which cities are supported, and where does one look to see a list? This information should be made explicit in the description of parameters.
 
 ## Parameter order doesn't matter

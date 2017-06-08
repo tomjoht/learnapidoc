@@ -31,6 +31,8 @@ Additionally, the interactive console can provide a way to test out your API bef
 
 To understand the proper syntax and format for RAML, you need to read the [RAML spec](http://raml.org/spec.html) and look at some examples. See also [this RAML tutorial](http://raml.org/docs.html#step-introduction) and this [video tutorial](https://www.youtube.com/embed/5o_nExedezw?autoplay=1).
 
+{% include random_ad.html %}
+
 Even so, the documentation for the RAML spec isn't always so clear. For example, when I was trying to get the right syntax for the security scheme, the information was lacking on how to create security schemes that were based on a custom key in the header.
 
 Here's the Mashape Weather API formatted in the RAML spec:

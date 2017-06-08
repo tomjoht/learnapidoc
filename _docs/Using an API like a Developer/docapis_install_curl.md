@@ -11,6 +11,8 @@ While Postman is convenient, it's hard to represent how to make calls with it in
 
 Instead of describing how to make REST calls using a GUI client like Postman, the most conventional method for documenting request syntax is to explain how to make the calls using cURL.
 
+{% include random_ad.html %}
+
 cURL is a command-line utility that lets you execute HTTP requests with different parameters and methods. In other words, instead of going to web resources in a browser's address bar, you can use the command line to get these same resources, retrieved as text.
 
 ## Installing cURL

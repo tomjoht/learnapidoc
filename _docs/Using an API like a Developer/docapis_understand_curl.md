@@ -145,6 +145,8 @@ Here's an example that combines some of these commands:
 curl -i -H "Accept: application/json" -X POST -d "{status:MIA}" http://personsreport.com/status/person123
 ```
 
+{% include random_ad.html %}
+
 We could also format this with line breaks to make it more readable:
 
 ```bash

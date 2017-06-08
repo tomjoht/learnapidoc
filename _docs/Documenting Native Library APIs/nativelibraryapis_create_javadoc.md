@@ -15,12 +15,15 @@ Javadoc is the standard output for Java APIs, and it's really easy to build a Ja
 {% endif %}
 
 ## Characteristics of Javadoc
+
 Here are some other characteristics of Javadoc:
 
 * Javadoc is supported by Oracle
 * Javadoc's output integrates directly into IDEs that developers use.
 * The Javadoc output is skinnable, but you can't add non-ref files to it.
 * The Javadoc comment style is highly similar to most other document generators.
+
+{% include random_ad.html %}
 
 ## Generate a Javadoc
 

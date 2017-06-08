@@ -31,6 +31,8 @@ After having put the API doc on my site for some months, the feedback was positi
 
 Other readers noted problems in obtaining API keys or getting the correct responses. As much as possible, I helped clarify and strengthen the content on those pages.
 
+{% include random_ad.html %}
+
 One question I faced in preparing the content is whether I should stick with text, or combine the text with video. While video can be helpful at times, it's too cumbersome to update. Given the fast-paced, rapidly evolving nature of the technical content, videos go out of date quickly.
 
 Additionally, videos force the user to go at the pace of the narrator. If your skill level matches the narrator, great. But in my experience, videos often go too slow or too fast. In contrast, text lets you more easily skim ahead when you already know the material, or slow down when you need more time to absorb the material.

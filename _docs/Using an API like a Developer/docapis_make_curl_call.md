@@ -73,6 +73,9 @@ In this section, you'll use cURL to make the same weather API requests you made 
 ## Make the request in cURL (Windows 7)
 
 1.  Copy the cURL call from your text editor.
+
+    {% include random_ad.html %}
+    
 2.  Go to **Start** and type **cmd** to open up the commandline. (If you're on Windows 8, see [these instructions for accessing the commandline](http://pcsupport.about.com/od/windows-8/a/command-prompt-windows-8.htm).)
 3.  Right-click and then select **Paste** to insert the call. My call for the Mashape API looks like this:
 

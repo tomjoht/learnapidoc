@@ -42,6 +42,8 @@ Since the content of these sections varies a lot based on your API, it's not pra
 
 [Sendgrid's documentation](https://sendgrid.com/docs) has a good example of these other user-guide sections essential to API documentation. It does a good job showing how API documentation is more than just a collection of endpoints.
 
+{% include random_ad.html %}
+
 ## Also include the usual user guide stuff
 
 Beyond the sections outlined above, you should include the usual stuff that you put in user guides. By the usual stuff, I mean you list out the common tasks you expect your users to do. What are their real business scenarios for which they'll use your API?

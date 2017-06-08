@@ -12,6 +12,8 @@ For those power users who just want to glance at the content to understand it, p
 
 The quick reference guide serves a different function from the getting started guide. The getting started guide helps beginners get oriented; the quick reference guide helps advanced users quickly find details about endpoints and other API details.
 
+{% include random_ad.html %}
+
 ## Sample quick reference guide
 Here's a quick reference guide from Eventful's API:
 

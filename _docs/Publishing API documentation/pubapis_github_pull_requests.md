@@ -57,6 +57,8 @@ To create a pull request:
 
 	When you compare the branch against the master, you can see a list of all the changes. You can view the changes through two viewing modes: Unified or Split. Unified shows the edits together in the same content area, whereas split shows the two files side by side.
 
+  {% include random_ad.html %}
+
 4. Click **Create pull request**.
 5. Describe the pull request, and then click **Create pull request**.
 

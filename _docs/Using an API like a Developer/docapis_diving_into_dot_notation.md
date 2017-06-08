@@ -198,3 +198,5 @@ var nikejson = john.shoes.brand;
 var goldenrodjson = john.favcolors[1];
 var jimmyjson = john.children[1].child2;
 ```
+
+{% include random_ad.html %}

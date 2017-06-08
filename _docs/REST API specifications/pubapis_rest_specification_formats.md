@@ -24,6 +24,8 @@ In a [survey on API documentation](http://idratherbewriting.com/2015/01/06/api-d
 
 Keep in mind that these specifications just describe the reference endpoints in an API, for the most part. While the reference topics are important, the bulk of the documentation doesn't consist of reference topics. The bulk of documentation often explains how to use the endpoints together to achieve a specific goal, how to configure the services that use the endpoints, how to deploy the services, what the various resources and rules are, and so forth.
 
+{% include random_ad.html %}
+
 If you choose to automate your documentation using one of these specifications, it likely will be a separate site that showcases your endpoints and provides API interactivity. You'll still need to write a boatload of documentation about how to actually use your API.
 
 {: .tip}

@@ -26,4 +26,6 @@ One of the challenges in using documentation generated from Swagger, Miredot, or
 
 If you can integrate the branding and search, users may not care. But if it feels like users are navigating several sites poorly cobbled together, the UX experience will be somewhat fragmented.
 
+{% include random_ad.html %}
+
 Think about other content that users will interact with, such as Marketing content, terms of service, support, and so on. How do you pull together all of this information into a single site experience without resorting to an overbloated CMS like Drupal or some other web framework?

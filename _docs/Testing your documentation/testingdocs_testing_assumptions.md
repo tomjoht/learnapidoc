@@ -52,6 +52,8 @@ QA people test to see whether the instructions are accurate. They don't test whe
 
 Before publishing, every tech writer should submit his or her instructions through a testing process, i.e., a "quality assurance" process. Strangely, few IT shops actually have a consistent quality assurance process for documentation. You wouldn't dream of setting up an IT shop without a quality assurance group for developers &mdash; why should docs be any different?
 
+{% include random_ad.html %}
+
 When there are editors for a team, the editors usually play a style-only role, checking to make sure the content conforms to a consistent voice, grammar, and diction in line with the company's official style guide.
 
 While conforming to the same style guide is important, it's not as important as having someone actually test the instructions. Users can overlook poor speech and grammar &mdash; blogs and YouTube are proof of that. But users can't overlook instructions that don't work, that don't accurately describe the real steps and challenges the user faces.

@@ -30,6 +30,8 @@ Despite the wide variety, there are mostly just two main types of APIs most tech
 
 With native library APIs, you deliver a library of classes or functions to users, and they incorporate this library into their projects. They can then call those classes or functions directly in their code, because the library has become part of their code.
 
+{% include random_ad.html %}
+
 With REST APIs, you don't deliver a library of files to users. Instead, the users make requests for the resources on a web server, and the server returns responses containing the information.
 
 REST APIs follow the same protocol as the web. When you open a browser and type a website URL (such as http://idratherbewriting.com), you're actually making a GET request for a resource on a server. The server responds with the content and the browser makes the content visible.

@@ -24,6 +24,8 @@ Here's a sample API explorer from Twitter:
 
 Are API explorers novel, or extremely instructive? If you're going to be making a lot of calls, there's no reason why you couldn't just use cURL to quickly make the request and see the response. The API Explorer provides more of a GUI, however, that makes the endpoints accessible to more people. You don't have to worry about entering exactly the right syntax in your cURL call -- you just have to fill in the blanks.
 
+{% include random_ad.html %}
+
 However, API Explorers tend to work better with simpler APIs. If your API requires you to retrieve data before you can use a certain endpoint, or if the data you submit is a JSON object in the body of the post, or you have some other complicated interdependency with the endpoints, the API Explorer might not be as helpful.
 
 Nevertheless, clearly it is a design pattern to provide this kind of interactivity in the documentation.

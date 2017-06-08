@@ -18,6 +18,8 @@ Perhaps no other genre of technical documentation has such variety in the output
 
 Just as websites have a diversity of engines, platforms, and approaches, so too does API documentation. There is no common tooling like there is among GUI documentation. You can't usually determine what platform is driving the outputs, and often the branding fits in seamlessly with the other company content.
 
+{% include random_ad.html %}
+
 ## Similar patterns and structures
 
 Despite the wide variety of APIs, there is some commonality among them. The common ground is primarily in the endpoint documentation. But user guides have common themes as well.

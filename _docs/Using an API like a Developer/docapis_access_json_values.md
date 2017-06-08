@@ -46,6 +46,8 @@ Refresh your Chrome browser and see the information that appears in the console:
 
 Let's say you wanted to print part of the JSON (the description element) to the page. This involves a little bit of JavaScript or jQuery (to make it easier).
 
+{% include random_ad.html %}
+
 1. Add a named element to the body of your page, like this:
 
    ```html

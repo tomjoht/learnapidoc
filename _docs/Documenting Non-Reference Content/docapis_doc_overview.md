@@ -22,6 +22,8 @@ The SendGrid API does a good job at providing an overview:
 ## Common business scenarios
 In the overview, list some common business scenarios in which the API might be useful. This will give people the context they need to evaluate whether the API is relevant to their needs.
 
+{% include random_ad.html %}
+
 Keep in mind that there are thousands of APIs. If people are browsing your API, their first and most pressing question is, what information does it return? Is this information relevant and useful to me?
 
 ## Where to put the overview

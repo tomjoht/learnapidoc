@@ -54,6 +54,8 @@ Here's a Getting Started tutorial from the HipChat API:
 
 <a href="https://www.hipchat.com/docs/apiv2"><img src="images/hipchatgettingstarted.png" alt="HipChat API Getting Started" /></a>
 
+{% include random_ad.html %}
+
 Here's a Getting Started section from the Aeris Weather API:
 
 <a href="http://www.aerisweather.com/support/docs/api/getting-started/"><img src="images/aerisgettingstarted.png" alt="Aeris weather Getting started" /></a>

@@ -18,6 +18,8 @@ Static site generators are a breed of website compilers that package up a group 
 
 Jekyll is one of the most popular static site generators. All of my help content is on Jekyll. You can publish a fully functional tech comm website that includes content re-use, conditional filtering, variables, PDF output, and everything else you might need as a technical writer.
 
+{% include random_ad.html %}
+
 Here's the documentation theme that I developed for Jekyll:
 
 <a href="http://idratherbewriting.com/documentation-theme-jekyll/"><img src="images/jekylldocumentationtheme.png" alt="My Jekyll Documentation theme" /></a>

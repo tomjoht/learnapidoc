@@ -56,6 +56,8 @@ Each level can contain either a single key-value pair (also referred to as a dic
 
 YAML files begin with `---`. The values for each key can optionally be enclosed in quotation marks or not. If your value has something like a colon or quotation mark in it, then you'll want to enclose it in quotation marks. And if there's a double quotation mark, then enclose the value in single quotation marks, or vice versa.
 
+{% include random_ad.html %}
+
 ## Comparing JSON to YAML
 
 Earlier in the course, we looked at various JSON structures involving objects and arrays. Here let's look at the equivalent YAML syntax for each of these same JSON objects.

@@ -68,6 +68,8 @@ Once your app registers, you should see an ID, secret, and namespace for the app
 
 ## Text editor tips
 
+{% include random_ad.html %}
+
 When you're working with code, you use a text editor (to work in plain text) instead of a rich text editor (which would provide a WYSIWYG interface). Many developers use different text editors. Here are a few choices:
 
 * [Sublime Text](http://www.sublimetext.com/) (Mac or PC)

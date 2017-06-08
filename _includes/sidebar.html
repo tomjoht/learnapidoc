@@ -1,8 +1,8 @@
 {% assign sidebar = site.data[page.sidebar] %}
 <div class="mydocsidebar">
 <div class="sidebar-inner">
-<!-- search bar - uses Lunr.js  -->
 
+<!-- search bar - uses Lunr.js  -->
 <div class="sidebarSearchBar">
 <form action="search.html" method="get">
   <div class="input-group search">
@@ -27,10 +27,11 @@
 {% endunless %}
 
     <ul id="docnavsidebar" class="docnav">
+
     {% for folder in sidebar.folders %}
     {% unless folder.type == "frontmatter" %}
     <li class="level1"><a href="#">{{ folder.title }}</a>
-      {% endunless %}
+
         <ul>
             {% for folderitem in folder.folderitems %}
 
@@ -89,7 +90,7 @@
 
             {% endfor %}
         </ul>
-
+{% endunless %}
         {% endfor %}
 
     </li>

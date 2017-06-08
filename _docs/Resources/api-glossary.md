@@ -95,6 +95,7 @@ Swagger Editor
 Swagger UI
 : A display framework. The most common way to parse a Swagger specification file and produce the interactive documentation as shown in the Petstore demo.
 
+{% include random_ad.html %}
 
 YAML
 : Recursive acronym for "YAML Ain't No Markup Language.” A human- readable, space-sensitive syntax used in the Swagger specification file.

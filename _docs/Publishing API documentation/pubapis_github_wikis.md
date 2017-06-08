@@ -33,6 +33,8 @@ You can also arrange the wiki pages into a sidebar.
 
 One of the neat things about using a Github repository is that you treat the doc as code, editing it in a text editor, committing it to a repository, and packaging it up into the same area as the rest of the source code. Because it's in its own repository, technical writers can work in the documentation right alongside project code without getting merge conflicts.
 
+{% include random_ad.html %}
+
 ## Working locally allows you to leverage other tools
 
 Because you can work with the wiki files locally, you can leverage other tools (such as static site generators, or even DITA) to generate the Markdown files. This means you can handle all the re-use, conditional filtering, and other logic outside of the Github wiki. You can then output your content as Markdown files and then commit them to your Github repository.

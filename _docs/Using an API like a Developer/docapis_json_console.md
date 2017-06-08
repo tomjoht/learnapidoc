@@ -89,6 +89,8 @@ Mashape [provides some sample code](http://docs.mashape.com/javascript) to parse
 
     Note that Chrome tells you whether each expandable section is an object or an array. Knowing this is critical to accessing the value through JavaScript dot notation.
 
+    {% include random_ad.html %}
+
     The following sections will explain this AJAX code a bit more.
 
 ## The AJAX method from jQuery

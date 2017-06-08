@@ -23,3 +23,5 @@ Here are a few questions to consider:
 * Does the documentation need be visible on the web, or does it need to be private?
 * To what extent do you want customers to have a one-stop-shopping experience -- reading docs, logging support tickets, posting to forums, viewing news?
 * Do you have UX resources to help build a custom solution?
+
+{% include random_ad.html %}

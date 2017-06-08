@@ -18,6 +18,8 @@ The sample Java project is a little application about different tools that a coy
 
 <a href="https://github.com/tomjohnson1492/acmeproject"><img src="images/acmeprojectgithub.png" alt="ACME project" /></a>
 
+{% include random_ad.html %}
+
 This program doesn't really do anything except print little messages to the console, but it's hopefully simple enough to be instructive in its purpose &mdash; to demonstrate different doc tags, their placement, and how they get rendered in the Javadoc.
 
 ## Clone the source on Github

@@ -31,13 +31,15 @@ However, there are 17 possible query string parameters you can use with this end
 
 These examples show several common combinations of the parameters. Adding multiple requests as samples  makes sense when the parameters wouldn't usually be used together. For example, there are few cases where you might actually include all 17 parameters in the same request, so any sample will be limited in what it can show.
 
-This example shows "Italian restaurants in Chicago using placement 'sec-5'"*:
+This example shows "Italian restaurants in Chicago using placement 'sec-5'":
 
 ```
 https://api.citygridmedia.com/content/places/v2/search/where?what=restaurant&where=chicago,IL&tag=11279&placement=sec-5&publisher=test
 ```
 
 If responses vary a lot, consider including multiple responses with the requests. How many different requests and responses should you show? There's probably no easy answer, but probably no more than a few. You decide what makes sense for your API.
+
+{% include random_ad.html %}
 
 In the CityGrid Places API, notice how the examples don't include the sample responses on the same page but rather link to live examples. When you click the URL link, you execute the request in your browser and can see the response. (Here's [an example](http://api.citygridmedia.com/content/places/v2/search/where?type=movietheater&where=90045&publisher=test)).
 

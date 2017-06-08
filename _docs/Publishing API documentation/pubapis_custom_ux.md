@@ -32,6 +32,8 @@ Since we published all help content on a Drupal site, we hired a Drupal developm
 
 After the scripts were integrated into the Drupal site, we would have developers periodically run the build scripts to generate a batch of JSON files.
 
+{% include random_ad.html %}
+
 The upload scripts checked to ensure the JSON files were valid, and then they were pushed into the templates and published. Each upload would overwrite any existing content with the same file names.
 
 ## Developing custom solutions

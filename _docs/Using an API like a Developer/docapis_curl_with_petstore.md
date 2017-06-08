@@ -44,6 +44,8 @@ A lot of APIs require you to post requests containing JSON messages in the body.
     }
     ```
 
+    {% include random_ad.html %}
+
 2.  Change the first `id` value to another integer (whole number) and the pet name of `fluffy`.
 
     {: .note}

@@ -27,6 +27,8 @@ We will focus this section on Java APIs, since they're probably one of the most 
 
 <img src="images/eclipseframe.png" alt="Eclipse" />
 
+{% include random_ad.html %}
+
 ## Do you have to be a programmer to document native library APIs?
 
 Because native library APIs are so dependent on a specific programming language, the documentation is usually written or driven by engineers rather than generalist technical writers. This is one area where it helps to be a former software engineer when doing documentation.

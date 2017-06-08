@@ -237,4 +237,6 @@ $.ajax(settings).done(function (response) {
 
 If you have a lot of endpoints to document, you'll probably want to create templates that follow a common structure.
 
+{% include random_ad.html %}
+
 Additionally, if you want to add a lot of styling to each of the elements, you may want to push each of these elements into your template by way of a script. I'll talk more about publishing in the upcoming sections, Publishing API Documentation.

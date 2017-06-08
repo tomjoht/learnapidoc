@@ -83,6 +83,8 @@ In short, they lacked the information, resources, and contacts to actually get t
 
 Besides contributing to the blog, some people also made edits to docs on the wiki. But the same problems existed. All contributions happened post-release, so their edits were applied to existing docs. The people who made edits to existing docs usually did so in awkward ways that required fixing or other edits.
 
+{% include random_ad.html %}
+
 To make an addition to docs, you can't just add a paragraph wherever you want. You have to understand the whole so you know what exists and where. You also have to understand doc style and conventions and voice so that your content can fit seamlessly in. It's not so easy, especially for someone who might not want to dedicate much time to this effort.
 
 Ultimately, I don't remember more than 10 small edits to tech docs overall.

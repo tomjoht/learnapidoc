@@ -17,6 +17,8 @@ In earlier parts of this course, we used a simple [Weather API from Mashape](htt
 ## Why focus on publishing API docs?
 The first question about a focus on publishing API documentation might be, *why?* What makes publishing API documentation so different from other kinds of documentation that it merits its own section? How and why does the approach here need to differ from the approach for publishing regular documentation?
 
+{% include random_ad.html %}
+
 This is a valid question that I want to answer by telling a story.
 
 ## My story: Turning from DITA to Jekyll

@@ -1,0 +1,41 @@
+<div class="singlePostAds">
+    <script>
+var contents=new Array()
+
+contents[0]='<div class="randomAd"><div class="bs-callout bs-callout-info bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i><a href="https://swaggerhub.com/">SwaggerHub</a> from <a href="https://smartbear.com/">Smartbear</a> is the fastest and easiest way to get started with Swagger. SwaggerHub gives you all the power of Swagger in one integrated platform.</div></div>'
+
+contents[1]='<div class="randomAd"><div class="bs-callout bs-callout-success bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div>Built by the creators of the Swagger open source tooling, <a href="https://swaggerhub.com/">SwaggerHub</a> offers advanced capabilities you need to design, mock, build, document, deploy, maintain.</div></div>'
+
+contents[2]='<div class="randomAd"><div class="bs-callout bs-callout-warning bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div>With <a href="https://swaggerhub.com/">SwaggerHub</a> from <a href="https://smartbear.com/">Smartbear</a>, you can design and build new or existing APIs in the cloud with on-the-fly validation to minimize errors.</div></div>'
+
+contents[3]='<div class="randomAd"><div class="bs-callout bs-callout-important bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div>With <a href="https://swaggerhub.com/">SwaggerHub</a> from <a href="https://smartbear.com/">Smartbear</a>, you can virtualize your API’s operations without writing any code to iterate on your API’s design.</div></div>'
+
+contents[4]='<div class="randomAd"><div class="bs-callout bs-callout-danger bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div>With <a href="https://swaggerhub.com/">SwaggerHub</a> from <a href="https://smartbear.com/">Smartbear</a>, you can quickly get started with the business value of your API with server stubs in over 20 different languages and keep them in sync with source control tooling like GitHub, BitBucket, and Gitlab.</div></div>'
+
+contents[5]='<div class="randomAd"><div class="bs-callout bs-callout-primary bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div>With <a href="https://swaggerhub.com/">SwaggerHub</a> from <a href="https://smartbear.com/">Smartbear</a>, you can deploy your API to management platforms like AWS and Microsoft Azure.</div></div>'
+
+contents[6]='<div class="randomAd"><div class="bs-callout bs-callout-default bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div>With <a href="https://swaggerhub.com/">SwaggerHub</a> from <a href="https://smartbear.com/">Smartbear</a>, you can manage multiple versions of your API to build incrementally and maintain a clean, stable version for consumption.</div></div>'
+
+contents[7]='<div class="randomAd"><div class="bs-callout bs-callout-info bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div>With <a href="https://swaggerhub.com/">SwaggerHub</a> from <a href="https://smartbear.com/">Smartbear</a>, you can efficiently manage teams and individuals across every API with the required access control. You can also discuss new ideas, find existing issues, and resolve them together directly on the API definition in real time.</div></div>'
+
+contents[8]='<div class="randomAd"><div class="bs-callout bs-callout-success bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div><a href="https://swaggerhub.com/">SwaggerHub</a> supports the entire API lifecycle and the tools that drive it: API management, source control management, virtualization and testing, webhooks.</div></div>'
+
+contents[9]='<div class="randomAd"><div class="bs-callout bs-callout-primary bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div><a href="https://swaggerhub.com/">SwaggerHub</a> is the easiest way to build, document, and deploy APIs. Built around Swagger, SwaggerHub is the most powerful and fastest growing API description format.</div></div>'
+
+var i=0
+//variable used to contain controlled random number
+var random
+//while all of array elements haven't been cycled thru
+while (i<contents.length){
+//generate random num between 0 and arraylength-1
+random=Math.floor(Math.random()*contents.length)
+//if element hasn't been marked as "selected"
+if (contents[random]!="selected"){
+document.write(contents[random])
+//mark element as selected
+contents[random]="selected"
+break;
+}
+}
+</script>
+</div>

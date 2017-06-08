@@ -64,6 +64,8 @@ Authorization: Basic bG9sOnNlY3VyZQ==
 
 APIs that use Basic Auth will also use HTTPS, which means the message content will be encrypted within the HTTP transport protocol. (Without HTTPS, it would be easy for people to decode the username and password.)
 
+{% include random_ad.html %}
+
 When the API server receives the message, it decrypts the message and examines the header. After decoding the string and analyzing the username and password, it then decides whether to accept or reject the request.
 
 In Postman, you can configure Basic Authorization like this:

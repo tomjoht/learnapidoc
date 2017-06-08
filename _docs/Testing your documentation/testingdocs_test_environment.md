@@ -25,6 +25,8 @@ Many times developers don't expect that a technical writer will be doing anythin
 
 If a developer or QA person can't give you access to any such test server or sample code, be suspicious. How can a development and QA team create and test their code without a sample system where they expect it to be implemented? And if there's a sample system, why can't you also have access so you can write good documentation on how to use it?
 
+{% include random_ad.html %}
+
 Most of the time, developers respect technical writers tenfold when the technical writers write doc from test systems, trying things out for themselves. Engineers also appreciate any feedback you may have as you run through the system. Technical writers are usually the first users.
 
 <figure><a href="https://flic.kr/p/6Grete"><img src="images/testingeverything.jpg" alt="Testing everything" /></a><figcaption>Photo from Flickr (https://flic.kr/p/6Grete). City water testing laboratory, 1948</figcaption></figure>

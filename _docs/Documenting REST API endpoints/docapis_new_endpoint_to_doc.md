@@ -132,6 +132,8 @@ In the next topics, you'll work on sorting this information out into eight commo
 
 Open up a new text file and create sections for each of these elements.
 
+{% include random_ad.html %}
+
 Each of your endpoints should follow this same pattern and structure. A common template helps increase consistency and familiarity/predictability with how users consume the information.
 
 {: .note}

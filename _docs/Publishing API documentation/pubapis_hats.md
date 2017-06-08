@@ -39,6 +39,8 @@ When you have to deal with versioning, translation, content re-use, conditional 
 ### + HATs reinforce the fact that API doc is more than endpoints
 HATs reinforce the fact that good API documentation is more than just a set of endpoints and parameters. Good API documentation includes guides and tutorial topics as well. Developers rarely write that kind of information, yet it's just as important as the reference documentation. HATs lend themselves more to these guide and tutorial topics.
 
+{% include random_ad.html %}
+
 ## Cons of using a help authoring tool
 
 Some disadvantages of using a HAT include the following:

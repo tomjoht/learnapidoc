@@ -38,6 +38,8 @@ This is a numbered list:
 
 Markdown is meant to be kept simple, so there isn't a comprehensive Markdown tag for each HTML tag. For example, if you need `figure` elements and `figcaption` elements, you'll need to use HTML. What's nice about Markdown is that if the Markdown syntax doesn't provide the tag you need, you can just use HTML.
 
+{% include random_ad.html %}
+
 If a system accepts Markdown, it converts the Markdown into HTML so the browser can read it.
 
 ## Development by popular demand versus by committee

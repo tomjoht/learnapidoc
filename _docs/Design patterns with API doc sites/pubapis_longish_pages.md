@@ -40,6 +40,8 @@ Why do API doc sites tend to have long-ish pages? Here are a few reasons:
 * **Everything is at your fingertips**: If the information is chunked up into little pieces here and there, requiring users to click around constantly to find anything, the experience can be like playing information pinball. As a general strategy, you want to include complete information on a page. If an API resource has several different methods, splitting them out into separate pages can create findability issues. Sometimes it makes sense to keep all related information in one place, or rather "everything at your fingertips."
 * **Today's navigation controls are sophisticated**: Today there are better navigation controls for moving around on long pages than in the past. For example, [Bootstrap's Scrollspy feature](http://getbootstrap.com/javascript/#scrollspy) dynamically highlights your place in the sidebar as you're scrolling down the page. Other solutions allow collapsing or expanding of sections to show content only if users need it.
 
+{% include random_ad.html %}
+
 ## Is it a best practice to make long pages?
 
 Usually the long pages on a site are the reference pages. Personally, I'm not a fan of listing every endpoint on the same page. Either way you approach it, developers probably won't care that much. They will care much more about the content on the page rather than the page length.

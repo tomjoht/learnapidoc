@@ -38,3 +38,5 @@ Here are some non-patterns. By this, I mean these are elements that aren't as co
 * Video tutorials
 
 By non-patterns, it's not to say these elements aren't a good idea. But generally they aren't emphasized in many of the API doc sites.
+
+{% include random_ad.html %}

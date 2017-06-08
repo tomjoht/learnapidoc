@@ -26,6 +26,8 @@ Jim Bisso, an experienced API technical writer in the Silicon Valley area, descr
 
 <img class="small" src="images/calculator.png" alt="calculator" />
 
+{% include random_ad.html %}
+
 APIs often work in similar ways. When you push a button in an interface, functions underneath get triggered to go and retrieve information. But instead of retrieving information from within the same system, web APIs call remote services on the web to get their information.
 
 Ultimately, developers use API calls behind the scenes to pull information into their apps. A button on a GUI may be internally wired to make calls to an external service. For example, the embedded Twitter or Facebook buttons that interact with social networks, or embedded Youtube videos that pull a video in from youtube.com, are powered by web APIs underneath.

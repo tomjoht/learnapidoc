@@ -21,4 +21,6 @@ With my Jekyll doc theme, I'm single sourcing one of my projects into about 9 di
 
 To handle PDF, I'm using a tool called Prince that converts a list of HTML pages into a PDF document, complete with running headers and footers, page numbering, and other print styling.
 
+{% include random_ad.html %}
+
 To handle authentication, I upload the content into a Salesforce site.com and use Salesforce as the authentication layer. It's my least favorite part of the solution, but a more integrated authentication will probably involve some engineering resources to help out.

@@ -42,6 +42,8 @@ The Mashape Marketplace is a directory where publishers can publish their APIs, 
 
 The APIs on Mashape tend to be rather simple compared to some other APIs, but this simplicity will work well to illustrate the various aspects of an API without getting too mired in other details.
 
+{% include random_ad.html %}
+
 <a class="noCrossRef" href="https://market.mashape.com/"><img class="medium" src="images/mashape_explore_apis.png" alt="Explore APIs at Mashape" /></a>
 
 You're a consumer of an API, but which one do you need to pull in weather forecasts?

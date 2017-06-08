@@ -26,6 +26,8 @@ Classes are templates or blueprints that drive pretty much everything in Java. I
 
 In Java, you start out by defining classes. Each class is its own file, and begins with a capital letter. The file name matches the class name, which means you have just one class per file.
 
+{% include random_ad.html %}
+
 Each class can contain a number of fields (variables for the class) and methods (subroutines the class can do).
 
 Before the class name, an access modifier indicates how the class can be accessed. Several options for access modifiers are:

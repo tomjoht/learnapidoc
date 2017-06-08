@@ -58,6 +58,8 @@ In [Peter Gruenbaum's API tech writing course on Udemy](https://www.udemy.com/ap
 
 Gruenbaum's use of tables is mostly to reduce the emphasis on tools and place it more on the content.
 
+{% include random_ad.html %}
+
 eBay's approach is a little more unique:
 
 <a href="http://developer.ebay.com/Devzone/shopping/docs/CallRef/FindPopularItems.html"><img src="images/ebayexampleresponse.png" alt="eBay example response" /></a>

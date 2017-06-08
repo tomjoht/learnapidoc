@@ -16,6 +16,7 @@ Use the Aeris Weather API to get the wind speed (MPH) for a specific place (your
 {% endif %}
 
 ## The Aeris Weather API
+
 Since you've been working with the weather API on Mashape, it's probably a good idea to compare this simple weather API with a more robust one. Check out the [Aeris Weather API here](http://www.aerisweather.com/support/docs/api/). This is one of the most interesting, well-documented and powerful APIs I've encountered.
 
 In this example, you'll get the wind in MPH and then set an answer to display on the page based on some conditional logic.
@@ -29,6 +30,8 @@ See the [Getting Started](http://www.aerisweather.com/support/docs/api/getting-s
 Browse through the [available endpoints](http://www.aerisweather.com/support/docs/api/reference/endpoints/) and look for one that would give you the wind speed. The [forecasts](http://www.aerisweather.com/support/docs/api/reference/endpoints/forecasts/) resource provides information about wind speed.
 
 <a href="http://www.aerisweather.com/support/docs/api/reference/endpoints/forecasts/"><img src="images/aerisforecasts.png" alt="Aeris Weather forecasts resource" /></a>
+
+{% include random_ad.html %}
 
 To get the forecast details for Santa Clara, California, add it after `/forecasts`, like this:
 

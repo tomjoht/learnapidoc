@@ -16,6 +16,8 @@ The Javadoc output hasn't changed much in the past 20 years, so in some sense it
 
 ## Class summary
 
+{% include random_ad.html %}
+
 The class summary page shows a short version of each of the classes. The description you write for each class (up to the period) appears here. It's kind of like a quick reference guide for the API.
 
 <img src="images/classsummary.png" alt="Class summary" />

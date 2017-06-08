@@ -17,6 +17,8 @@ When you make edits to Javadoc content, look for the following:
 * **Consistent style**. See if the existing tags follow Java's style conventions.
 * **Clarity**. Some descriptions are unintelligible due to the curse of knowledge, but it's hard to judge without a stronger grasp of Java.
 
+{% include random_ad.html %}
+
 In this exercise, you'll make some edits to the Javadoc tags and see how they get rendered in the output.
 
 ## Make some edits

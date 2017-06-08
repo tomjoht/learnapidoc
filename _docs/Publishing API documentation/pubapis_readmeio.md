@@ -40,7 +40,7 @@ In this workshop activity, you'll publish this [weatherdata endpoint documentati
 
 1. In the left sidebar, under Settings, click **API Settings**.
 
-	This is where you add the authentication information necessary for making calls to the API.
+	 This is where you add the authentication information necessary for making calls to the API.
 
 2. For the API Base URL, enter **`https://simple-weather.p.mashape.com`**.
 3. Leave the other settings not mentioned here at the defaults.
@@ -51,10 +51,12 @@ In this workshop activity, you'll publish this [weatherdata endpoint documentati
 	Accept application/json
    ```
 
-	<img src="images/readmioheaders.png" alt="Readme.io static headers" />
+	 <img src="images/readmioheaders.png" alt="Readme.io static headers" />
 
 5. Select the **API Explorer** check box (if it's not already selected).
 6. Click **Save**.
+
+{% include random_ad.html %}
 
 ### c. Add endpoint documentation
 

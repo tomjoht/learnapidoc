@@ -150,6 +150,8 @@ You should see the object logged to the console.
 
 <img src="images/consoleexamplefrompostman.png" alt="Object logged to the console" />
 
+{% include random_ad.html %}
+
 Let's say you wanted to pull out the `sunrise` time and append it to a tag on the page. You could do so like this:
 
 ```html

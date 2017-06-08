@@ -137,6 +137,8 @@ JSON stands for JavaScript Object Notation. It's the most common way REST APIs r
 
 Although some APIs return information in both JSON and XML, if you're trying to parse through the response and render it on a web page, JSON fits much better into the existing JavaScript + HTML toolset that powers most web pages.
 
+{% include random_ad.html %}
+
 JSON has two types of basic structures: objects and arrays.
 
 ## JSON objects are key-value pairs

@@ -84,7 +84,7 @@ There are three resources: pet, store, and user.
 
 	The pet response is returned in JSON format.
 
-{{important}} The emphasis in Swagger documentation is to learn by doing. You make real requests and see responses to better understand how the Petstore API really works. However, note also that now you have created a new pet in your actual Petstore database. This test data may be something you have to wipe clean when you transition from exploring and learning about the API to actually using the API for production use.
+{% include important.html content="The emphasis in Swagger documentation is to learn by doing. You make real requests and see responses to better understand how the Petstore API really works. However, note also that now you have created a new pet in your actual Petstore database. This test data may be something you have to wipe clean when you transition from exploring and learning about the API to actually using the API for production use." %}
 
 ## Sorting out the Swagger components
 
@@ -109,6 +109,8 @@ Before we get into this tutorial, check out a few Swagger implementations:
 * [Watson Developer Cloud](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/apis/)
 
 Most of them look pretty much the same, with minimal branding. You'll notice the documentation is short and sweet in a Swagger implementation. This is because the Swagger display is meant to be an interactive experience where you can try out calls and see responses &mdash; using your own API key to see your own data. It's the learn-by-doing-and-seeing-it approach.
+
+{% include random_ad.html %}
 
 Note a few limitations with the Swagger approach:
 

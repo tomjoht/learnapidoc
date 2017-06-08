@@ -29,6 +29,8 @@ As you might expect, the terms used for the endpoint vary as well. In addition t
 
 My preferred term is "endpoint."
 
+{% include random_ad.html %}
+
 Often there's no term used at all above the endpoint &mdash; you can just list it on the page, styled in a way that makes it obvious what it is.
 
 ## The endpoint definition usually contains the end path only
