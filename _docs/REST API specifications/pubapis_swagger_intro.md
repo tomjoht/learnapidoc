@@ -1,5 +1,5 @@
 ---
-title: Implementing Swagger (OpenAPI specification) with your REST API documentation
+title: Swagger (OpenAPI specification) Overview
 permalink: /pubapis_swagger_intro.html
 categories:
 - api-doc
@@ -10,6 +10,10 @@ sidebar: docapis
 section: restapispecifications
 ---
 
+Swagger is a specification for describing REST APIs. You can think of the specification for Swagger like the specification for DITA. With DITA, there are specific XML elements used to define help components, and a required order and hierarchy to those elements.
+
+With Swagger, instead of XML, you have set of JSON or YAML objects, with a specific schema about their naming, order, and contents. This JSON or YAML file (either format can be used) describes each part of your API. By describing your API in a standard format, publishing tools can ingest your API and display each component in a cool, interactive display.
+
 {: .tip }
 To see a presentation that covers the same concepts in this article, see [https://goo.gl/n4Hvtq](https://goo.gl/n4Hvtq).
 
@@ -18,7 +22,7 @@ To see a presentation that covers the same concepts in this article, see [https:
 {:toc}
 {% endif %}
 
-## Experiences that prompted me toward Swagger
+## Backstore: experiences that prompted me toward Swagger
 
 On one project some years ago, after I created documentation for a new API, the project manager wanted to demo the new functionality to some field engineers.
 

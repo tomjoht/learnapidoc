@@ -205,14 +205,14 @@ folders:
 #  - title: Conclusion
 #    permalink: /pubapis_conclusion.html
 
-- title: REST API specification
+- title: REST API specifications
   jurl: /restapispecifications.html
   folderitems:
 
   - title: REST API specification formats
     jurl: /pubapis_rest_specification_formats.html
 
-  - title: Implementing Swagger with your API docs
+  - title: Swagger introduction
     jurl: /pubapis_swagger_intro.html
 
   - title: Swagger tutorial
