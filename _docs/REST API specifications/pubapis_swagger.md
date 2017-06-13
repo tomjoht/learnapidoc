@@ -124,121 +124,129 @@ To create a Swagger spec file:
 
 1.  Go to the [Swagger online editor](http://editor.swagger.io/#/).
 
-    You could just customize this sample YML file with the weatherdata endpoint documentation. However, if you're new to Swagger it will take you some time to learn the spec. For the sake of convenience, just go to the following file, and then copy and paste its code into the Swagger editor: <a href="http://idratherbewriting.com/files/restapicourse/swagger/swagger.yaml">swagger.yaml</a>.
+    You could just customize this sample YML file with the weatherdata endpoint documentation. However, if you're new to Swagger it will take you some time to learn the spec. For the sake of convenience, just go to the following file, and then copy and paste its code into the Swagger editor: <a href="http://idratherbewriting.com/files/restapicourse/swagger/swagger_weather.yaml">swagger_weather.yaml</a>.
 
     Here's what the Swagger YAML file looks like:
 
     ```yaml
-    swagger: "2.0"
+    swagger: '2.0'
     info:
-     version: "1.0.0"
-     title: "Weather API"
-     description: "A sample API that uses a Mashape weather API as an example to demonstrate features in the swagger-2.0 specification"
-     termsOfService: "http://helloreverb.com/terms/"
-     contact:
-       name: "Tom Johnson"
-       email: "tomjohnson1492@gmail.com"
-       url: "http://swagger.io"
-     license:
-       name: "MIT"
-       url: "http://opensource.org/licenses/MIT"
-    host: "simple-weather.p.mashape.com"
+      description: 'A sample API that uses a Mashape weather API as an example to demonstrate
+        features in the swagger-3.0 specification.'
+      version: 1.0.0
+      title: Weather API from Mashape
+      termsOfService: http://swagger.io/terms/
+      contact:
+        email: tom@idratherbewriting.com
+      license:
+        name: Apache 2.0
+        url: http://www.apache.org/licenses/LICENSE-2.0.html
+    host: simple-weather.p.mashape.com
     schemes:
-     - "https"
-    consumes:
-     - "application/json"
-    produces:
-     - "application/text"
+    - https
     paths:
-     /aqi:
-       get:
-         tags:
-           - "Air Quality"
-         description: "gets air quality index"
-         operationId: "getAqi"
-         produces:
-           - "text"
-         parameters:
-           -
-             name: "lat"
-             in: "query"
-             description: "latitude"
-             required: false
-             type: "string"
-           -
-             name: "lng"
-             in: "query"
-             description: "longitude"
-             required: false
-             type: "string"
-         responses:
-           200:
-             description: "aqi response"
-           default:
-             description: "unexpected error"
+      "/aqi":
+        get:
+          tags:
+          - Air Quality
+          summary: Gets the air quality index
+          description: 'Air quality is a measure of air pollution. The higher the number, the worse the pollution.'
+          operationId: getAqi
+          consumes:
+          - application/json
+          - application/xml
+          produces:
+          - text
+          parameters:
+            - name: lat
+              in: query
+              description: latitude
+              required: false
+              type: string
+            - name: lng
+              in: query
+              description: longitude
+              required: false
+              type: string
+          responses:
+            '200':
+              description: aqi response
+          security:
+            - api_key: []
 
-     /weather:
-       get:
-         tags:
-           - "Weather Forecast"
-         description: "gets weather forecast in short label"
-         operationId: "getWeather"
-         produces:
-           - "text"
-         parameters:
-           -
-             name: "lat"
-             in: "query"
-             description: "latitude"
-             required: false
-             type: "string"
-           -
-             name: "lng"
-             in: "query"
-             description: "longitude"
-             required: false
-             type: "string"
-         responses:
-           200:
-             description: "weather response"
-           default:
-             description: "unexpected error"
-     /weatherdata:
-       get:
-         tags:
-           - "Full Weather Data"
-         description: "Get weather forecast by Latitude and Longitude"
-         operationId: "getWeatherData"
-         produces:
-           - "application/json"
-         parameters:
-           -
-             name: "lat"
-             in: "query"
-             description: "latitude"
-             required: false
-             type: "string"
-           -
-             name: "lng"
-             in: "query"
-             description: "longitude"
-             required: false
-             type: "string"
-         responses:
-           200:
-             description: "weatherdata response"
-           default:
-             description: "unexpected error"
+
+      "/weather":
+        get:
+          tags:
+          - Weather Forecast
+          summary: Gets the weather forecast in abbreviated form
+          description: 'retrieves the weather forecast, but without too much detail'
+          operationId: getWeather
+          consumes:
+          - application/json
+          - application/xml
+          produces:
+          - text
+          parameters:
+            - name: lat
+              in: query
+              description: latitude
+              required: false
+              type: string
+            - name: lng
+              in: query
+              description: longitude
+              required: false
+              type: string
+          responses:
+            '200':
+              description: weather response
+          security:
+            - api_key: []
+
+      "/weatherdata":
+        get:
+          tags:
+          - Weather Forecast
+          summary: Get weather forecast with lots of details
+          description: 'Includes full details of the weather forecast, in JSON format'
+          operationId: getWeatherData
+          consumes:
+          - application/json
+          - application/xml
+          produces:
+          - application/json
+          parameters:
+            - name: lat
+              in: query
+              description: latitude
+              required: false
+              type: string
+            - name: lng
+              in: query
+              description: longitude
+              required: false
+              type: string
+          responses:
+            '200':
+              description: weatherdata response
+          security:
+            - api_key: []
 
     securityDefinitions:
-      internalApiKey:
+      api_key:
         type: apiKey
-        in: header
         name: X-Mashape-Key
+        in: header
+
+    externalDocs:
+      description: Find out more about Swagger
+      url: http://swagger.io
+
     ```
 
     {: .note}
-    Notice that this is [YML](pubapis_yaml.html) instead of [JSON](docapis_analyze_json.html). YML syntax is a more human-readable form of JSON. With YML, spacing matters. New levels are set with two indented spaces. The colon indicates an object. Hyphens represent a sequence or list (like an array). If you [download this file](http://idratherbewriting.com/files/restapicourse/swagger/swagger.yaml) instead of copy-and-pasting it above, you're less likely to run into spacing errors.
+    Notice that this is [YAML](pubapis_yaml.html) instead of [JSON](docapis_analyze_json.html). YAML syntax is a more human-readable form of JSON. With YML, spacing matters. New levels are set with two indented spaces. The colon indicates an object. Hyphens represent a sequence or list (like an array). If you [download this file](http://idratherbewriting.com/files/restapicourse/swagger/swagger.yaml) instead of copy-and-pasting it above, you're less likely to run into spacing errors.
 
     The Swagger editor shows you how the file will look in the output. You'll also be able to see if there are any validity errors. Without this online editor, you would only know that the YML syntax is valid/invalid when you run the code (and potentially see errors indicating that the YAML file couldn't be parsed).
 
@@ -249,27 +257,23 @@ You can also choose JSON as the format, but YAML is more readable and works just
 
 ### b. Set Up the Swagger UI
 
-1. Go to the [Swagger UI **2.x** branch](https://github.com/swagger-api/swagger-ui/tree/2.x) Github project.
-
-   {: .note}
-   This tutorial is not yet compatible with the upcoming version 3.0 of Swagger. Currently, there's a bit of a disconnect because the walk-through of the Petstore site in the earlier section showcased 3.0, but the tutorial in this section covers 2.0. A new version of this tutorial is coming.
-
+1. Go to the [Swagger UI project](https://github.com/swagger-api/swagger-ui) Github project.
 2. Click **Clone or download**, and then click **Download ZIP** button. Download the files to a convenient location on your computer and extract the files. (Note that you can also do a git clone to get the code as well.)
 
-	The only folder you'll be working with here is the dist folder. Everything else is used only if you're regenerating the files, which is beyond the scope of this tutorial.
+	 The only folder you'll be working with here is the **dist** folder (short for distribution). Everything else is used only if you're regenerating the files, which is beyond the scope of this tutorial.
 
 3.  Drag the **dist** folder out of the swagger-ui-master folder so that it stands alone. Then delete the swagger-ui-master folder.
 4.  Inside your **dist** folder, open **index.html** in a text editor such as Atom or Sublime Text.
 5.  Look for the following code:
 
     ```js
-    url = "http://petstore.swagger.io/v2/swagger.json";
+    url: "http://petstore.swagger.io/v2/swagger.json",
     ```
 
 5.  Change the `url` value from `http://petstore.swagger.io/v2/swagger.json` to the following:
 
     ```js
-    url = "swagger.yaml";
+    url: "swagger_weather.yml",
     ```
 
     Save the file.
@@ -277,27 +281,32 @@ You can also choose JSON as the format, but YAML is more readable and works just
 6.  Drag the **swagger.yaml** file that you created earlier into the same directory as the index.html file you just edited. Your file structure should look as follows:
 
     ```
-    ├── css
-    ├── fonts
-    ├── images
-    ├── index.html
-    ├── lang
-    ├── lib
-    ├── o2c.html
-    ├── swagger-ui.js
-    ├── swagger-ui.min.js
-    └── swagger.yml
+    ├── swagger
+    │   ├── favicon-16x16.png
+    │   ├── favicon-32x32.png
+    │   ├── index.html
+    │   ├── oauth2-redirect.html
+    │   ├── swagger-ui-bundle.js
+    │   ├── swagger-ui-bundle.js.map
+    │   ├── swagger-ui-standalone-preset.js
+    │   ├── swagger-ui-standalone-preset.js.map
+    │   ├── swagger-ui.css
+    │   ├── swagger-ui.css.map
+    │   ├── swagger-ui.js
+    │   ├── swagger-ui.js.map
+    │   ├── swagger30.yml
+    │   └── swagger_weather.yml
     ```
 
 7.  Upload the folder to a web server and go to the folder path. For example, if you called your directory **dist** (leaving it unchanged), you would go to **http:/myserver.com/dist**.
 
     {: .note}
-    If you go to **http:/myserver.com/dist/index.html**, Swagger UI seems to get the path to the swagger.yml file wrong, writing it as **http:/myserver.com/dist/index.html/swagger.yml** instead. As a foolproof approach, code the absolute URL to swagger in the index file rather than the relative URL as you did with (`url = "swagger.yaml"`).
+    If you go to **http:/myserver.com/dist/index.html**, Swagger UI seems to get the path to the swagger_weather.yml file wrong, writing it as **http:/myserver.com/dist/index.html/swagger_weather.yml** instead. As a foolproof approach, you can code the absolute URL to the Swwagger file in the index file rather than the relative URL as you did with (`url: "swagger_weather.yaml"`).
 
 
 Here's [a sample Swagger UI folder uploaded](http://idratherbewriting.com/files/restapicourse/swagger/).
 
-Alternatively, you can download [XAMPP](https://www.apachefriends.org/index.html) to run a server locally on your own machine and move the files into XAMPP's **htdocs** folder, and then go to `localhost/<folder name>/index.html`. For detailed instructions, see the [next section](#xampptutorial)
+If you don't have easy access to a web server, you can download [XAMPP](https://www.apachefriends.org/index.html) to run a server locally on your own machine. For detailed instructions, see the [next section](#xampptutorial)
 
 ### c. View the Swagger UI Display Locally with XAMPP {#xampptutorial}
 
@@ -306,21 +315,20 @@ Alternatively, you can download [XAMPP](https://www.apachefriends.org/index.html
 2. Click the **Manage Servers** tab in the console manager.
 3. Select **Apache Web Server** and click **Start**.
 4. Click the **Welcome** tab. Then click **Open Application Folder**.
-5. Drag the dist folder into the **htdocs** folder. (Everything inside htdocs is accessible from the localhost path.)
+5. Drag the **dist** folder into the **htdocs** folder. (Everything inside htdocs is accessible from the localhost path when the XAMPP server is running.)
 6. In your browser, go to **localhost/dist**.
 
 The Swagger UI display should appear.
 
-{: .note}
-The Swagger UI display shows the 2.0 version of the theme, note the [3.0 version as on the Swagger Petstore UI](http://petstore.swagger.io/), which hasn't officially been released. The 3.0 version is forthcoming in this tutorial.
-
 ### Interact with the Swagger UI
 
 1.  Go to the URL where you uploaded your Swagger files. Alternatively, if you're using XAMPP locally, go to **localhost/dist**.
-2.  In the upper-right corner, click **Authorize** and enter your [Mashape API key](docapis_get_auth_keys.html) in the dialog box's **value** field. If you don't have a Mashape API key, you can use **EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p**.
-3.  Go to [Google Maps](https://maps.google.com) and search for an address.
-4.  Get the latitude and longitude from the URL, and plug it into your Swagger UI. (For example, **1.3319164** for lat, **103.7231246** for lng. This is Singapore.)
-5.  Click **Try it out**.
+2.  In the upper-right corner, click **Authorize** and enter your [Mashape API key](docapis_get_auth_keys.html) in the dialog box's **value** field. If you don't have a Mashape API key, you can use `EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p`.
+3.  Expand one of the endpoints.
+4.  Click **Try it out**. The parameters become editable.
+5.  In another tab, go to [Google Maps](https://maps.google.com) and search for an address.
+6.  Get the latitude and longitude from the URL, and plug it into your Swagger UI. For example, `1.3319164` for `lat`, `103.7231246` for `lng`. This is Singapore.
+
 
 	  If successful, you should see something in the response body like this:
 
@@ -328,7 +336,7 @@ The Swagger UI display shows the 2.0 version of the theme, note the [3.0 version
 	  9c, Mostly Cloudy at South West, Singapore
     ```
 
-    If you see a response that says "Not supported," try the lat and lng coordinates used here. Try working with each of your endpoints and see the data that gets returned.
+    If you see a response that says "Not supported," try the `lat` and `lng` coordinates used here. Try working with each of your endpoints and see the data that gets returned.
 
 	  Note that if you refresh the page, you'll need to re-enter your API key.
 
