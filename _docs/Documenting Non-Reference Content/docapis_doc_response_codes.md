@@ -31,13 +31,14 @@ The response, including the header, looked like this:
 ```
 HTTP/1.1 200 OK
 Content-Type: text/plain
-Date: Mon, 08 Jun 2015 14:09:34 GMT
+Date: Fri, 16 Jun 2017 21:48:55 GMT
 Server: Mashape/5.0.6
+Via: 1.1 vegur
 X-Powered-By: Express
-Content-Length: 3
+Content-Length: 41
 Connection: keep-alive
 
-16
+30 c, Sunny at Santa Clara, United States
 ```
 
 The first line, `HTTP/1.1 200 OK`, tells us the status of the request. (If you change the method, you'll get back a different status code.)
