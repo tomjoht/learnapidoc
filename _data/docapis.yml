@@ -218,6 +218,9 @@ folders:
   - title: Swagger tutorial
     jurl: /pubapis_swagger.html
 
+  - title: Swagger spec deep dive
+    jurl: /pubapis_swagger_spec_deep_dive.html
+
   - title: More about YAML
     jurl: /pubapis_yaml.html
 

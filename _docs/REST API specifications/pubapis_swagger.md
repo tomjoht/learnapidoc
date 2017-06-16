@@ -126,138 +126,20 @@ To create a Swagger spec file:
 
 2.  Create the Swagger spec here.
 
-    You could just customize this sample YML file shown in the Swagger editor with the weather details. However, if you're new to Swagger it will take you some time to learn the spec. For the sake of convenience, just go to the following file, and then copy and paste its code into the Swagger editor: <a href="http://idratherassets.com/restapicourse/swagger/swagger_weather.yml">swagger_weather.yaml</a>.
+    You could just customize this sample YML file shown in the Swagger editor with the weather details. However, if you're new to Swagger it will take you some time to learn the spec. For the sake of convenience, just go to this  file &mdash; <a href="http://idratherassets.com/restapicourse/swagger/swagger_weather.yml">swagger_weather.yaml</a> &mdash; and copy and paste its code into the Swagger editor. The next tutorial, [Swagger spec deep dive](pubapis_swagger_spec_deep_dive.html), will get into the nuts and bolts of the Swagger spec.
 
-    Here's what the Swagger YAML file looks like:
-
-    ```yaml
-    swagger: '2.0'
-    info:
-      description: 'This is a sample API that uses a Mashape Weather API as an example to demonstrate
-        features in the swagger-2.0 specification. The Weather API displays forecast data by latitude and longitude.
-        Get raw weather data or simple label description of weather forecast of some places.'
-      version: 2.0.0
-      title: Weather API from Mashape
-      termsOfService: http://swagger.io/terms/
-      contact:
-        email: tom@idratherbewriting.com
-      license:
-        name: Apache 2.0
-        url: http://www.apache.org/licenses/LICENSE-2.0.html
-    host: simple-weather.p.mashape.com
-    schemes:
-    - https
-    paths:
-      "/aqi":
-        get:
-          tags:
-          - Air Quality
-          summary: Gets the air quality index
-          description: 'Air quality is a measure of air pollution. The higher the number, the worse the pollution.'
-          operationId: getAqi
-          consumes:
-          - application/json
-          - application/xml
-          produces:
-          - text
-          parameters:
-            - name: lat
-              in: query
-              description: latitude
-              required: false
-              type: string
-            - name: lng
-              in: query
-              description: longitude
-              required: false
-              type: string
-          responses:
-            '200':
-              description: aqi response
-          security:
-            - api_key: []
-
-
-      "/weather":
-        get:
-          tags:
-          - Weather Forecast
-          summary: Gets the weather forecast in abbreviated form
-          description: 'retrieves the weather forecast, but without too much detail'
-          operationId: getWeather
-          consumes:
-          - application/json
-          - application/xml
-          produces:
-          - text
-          parameters:
-            - name: lat
-              in: query
-              description: latitude
-              required: false
-              type: string
-            - name: lng
-              in: query
-              description: longitude
-              required: false
-              type: string
-          responses:
-            '200':
-              description: weather response
-          security:
-            - api_key: []
-
-      "/weatherdata":
-        get:
-          tags:
-          - Weather Forecast
-          summary: Get weather forecast with lots of details
-          description: 'Includes full details of the weather forecast, in JSON format'
-          operationId: getWeatherData
-          consumes:
-          - application/json
-          - application/xml
-          produces:
-          - application/json
-          parameters:
-            - name: lat
-              in: query
-              description: latitude
-              required: false
-              type: string
-            - name: lng
-              in: query
-              description: longitude
-              required: false
-              type: string
-          responses:
-            '200':
-              description: weatherdata response
-          security:
-            - api_key: []
-
-    securityDefinitions:
-      api_key:
-        type: apiKey
-        name: X-Mashape-Key
-        in: header
-
-    externalDocs:
-      description: Find out more about this Weather API
-      url: https://market.mashape.com/fyhao/weather-13
-    ```
-
-    Notice that this is [YAML](pubapis_yaml.html) instead of [JSON](docapis_analyze_json.html). YAML syntax is a more human-readable form of JSON. With YML, spacing matters. New levels are set with two indented spaces. The colon indicates an object. Hyphens represent a sequence or list (like an array). If you [download this file](http://idratherassets.com/restapicourse/swagger/swagger_weather.yml) instead of copy-and-pasting it above, you're less likely to run into spacing errors.
+    Notice that this spec is written in [YAML](pubapis_yaml.html) instead of [JSON](docapis_analyze_json.html). YAML syntax is a more human-readable form of JSON. With YML, spacing matters. New levels are set with two indented spaces. The colon indicates an object. Hyphens represent a sequence or list (like an array). If you [download this file](http://idratherassets.com/restapicourse/swagger/swagger_weather.yml) instead of copy-and-pasting it above, you're less likely to run into spacing errors.
 
     The Swagger editor shows you how the file will look in the output. You'll also be able to see if there are any validity errors. Without this online editor, you would only know that the YML syntax is valid/invalid when you run the code (and potentially see errors indicating that the YAML file couldn't be parsed).
 
     {: .tip}
-    This spec follows Swagger 2.0. Swagger 3.0 is almost released. You can convert your 2.0 spec to 3.0 using [API Transformer](https://apimatic.io/transformer). In this quick tutorial, I won't delve deeper into how to create the [spec](https://github.com/OAI/OpenAPI-Specification), but I may add this in a later tutorial. For a more detailed tour through the various objects and properties in the spec, see this [tutorial from API Handyman](https://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-1-introduction/). Note that in the weather spec above, I haven't provided many details about the responses.
+    This spec follows Swagger 2.0. Swagger 3.0 is almost released. You can convert your 2.0 spec to 3.0 using [API Transformer](https://apimatic.io/transformer). In this initial Swagger tutorial, I won't delve deeper into how to create the [spec](https://github.com/OAI/OpenAPI-Specification), but in the next tutorial, [Swagger spec deep dive](pubapis_swagger_spec_deep_dive.html), I'll explain more about the available properties and approach. You can also see this [tutorial from API Handyman](https://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-1-introduction/).
 
-2.  Make sure the YAML file is valid in the Swagger editor. If there are any errors, fix them.
-4.  Go to **File > Download YAML** and save the file as "swagger.yaml" on your computer. (You could also just copy the code and insert it into a blank file and call it swagger.yaml. The Download doesn't change the content displayed in the Swagger Editor.)
+3.  Make sure the YAML file is valid in the Swagger editor. If there are any errors, fix them.
+4.  Go to **File > Download YAML** and save the file as "swagger_weather.yaml" on your computer. You can also choose JSON as the format, but YAML is more readable and works just as well.
 
-You can also choose JSON as the format, but YAML is more readable and works just as well.
+    {: .note}
+    You could also just copy or download the swagger_weather.yaml code and use it directly, without going through the [Swagger online editor](http://editor.swagger.io/#/). The Editor or Download process doesn't change the content displayed in the Swagger Editor. I just have you go through this exercise to become familiar with the Swagger Editor. Getting your spec valid is tedious and requires a lot of fine-tuning. In this effort, having the real-time validation analysis from Swagger Editor is invaluable.
 
 ### b. Set Up the Swagger UI
 
