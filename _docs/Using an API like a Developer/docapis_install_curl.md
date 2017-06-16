@@ -37,10 +37,14 @@ If you don't see this, you need to [download and install cURL](http://curl.haxx.
 To make a test API call, submit the following:
 
 ```
-curl --get -k --include "https://simple-weather.p.mashape.com/aqi?lat=1.3319164&lng=103.7231246" -H "X-Mashape-Key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p" -H "Accept: text/plain"
+curl --get -k --include "https://simple-weather.p.mashape.com/weather?lat=1.3319164&lng=103.7231246" -H "X-Mashape-Key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p" -H "Accept: text/plain"
 ```
 
-You should get back a two-digit number in the response, such as 63. (This is the "air quality index" for the weather.)
+You should get back a response like this:
+
+```
+29 c, Thunderstorms at Singapore, Singapore
+```
 
 ### Install cURL on Windows
 
@@ -64,13 +68,17 @@ Features: AsynchDNS GSS-Negotiate IPv6 Largefile NTLM NTLM_WB SSL libz
 To make a test API call, submit the following:
 
 ```
-curl --get -k --include "https://simple-weather.p.mashape.com/aqi?lat=1.3319164&lng=103.7231246" -H "X-Mashape-Key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p" -H "Accept: text/plain"
+curl --get -k --include "https://simple-weather.p.mashape.com/weather?lat=1.3319164&lng=103.7231246" -H "X-Mashape-Key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p" -H "Accept: text/plain"
 ```
 
 {: .note}
 In Windows, Ctrl+ V doesn't work; instead, you right-click and then select Paste.
 
-You should get back a two-digit number in the response. (This is the "air quality index" for the weather.)
+You should get back a response like this:
+
+```
+29 c, Thunderstorms at Singapore, Singapore
+```
 
 {: .tip}
 If you're on Windows 8.1 and you encounter an error that says, "The program can't start because MSVCR100.dll is missing from your computer," see <a href="http://www.faqforge.com/windows/fix-the-program-cant-start-because-msvcr100-dll-is-missing-from-your-computer-error-on-windows/">this article</a> and install the suggested package.

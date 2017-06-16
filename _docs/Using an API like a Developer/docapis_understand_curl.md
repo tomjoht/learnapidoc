@@ -95,7 +95,7 @@ When you type an address into a website, you see only the body of the response. 
 Let's look more closely at the request you submitted for the weather:
 
 ```bash
-  curl --get --include 'https://simple-weather.p.mashape.com/aqi?lat=37.354108&lng=-121.955236' \
+  curl --get --include 'https://simple-weather.p.mashape.com/weather?lat=37.354108&lng=-121.955236' \
   -H 'X-Mashape-Key: APIKEY' \
   -H 'Accept: text/plain'
 ```

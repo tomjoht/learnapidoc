@@ -22,7 +22,7 @@ Response and error codes are essential for understanding errors in submitting or
 Remember when we submitted the cURL call back in <a href="docapis_make_curl_call.html">an earlier lesson</a>? We submitted a cURL call and specified that we wanted to see the response headers (`--include` or `-i`):
 
 ```bash
-  curl --get -include 'https://simple-weather.p.mashape.com/aqi?lat=37.354108&lng=-121.955236' \-H 'X-Mashape-Key: APIKEY' \
+  curl --get -include 'https://simple-weather.p.mashape.com/weather?lat=37.354108&lng=-121.955236' \-H 'X-Mashape-Key: APIKEY' \
   -H 'Accept: text/plain'
 ```
 

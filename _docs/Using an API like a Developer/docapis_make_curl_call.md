@@ -17,10 +17,10 @@ In this section, you'll use cURL to make the same weather API requests you made 
 ## Prepare the weather request in cURL format
 
 1.  Go back into the [Weather API on Mashape](https://www.mashape.com/fyhao/weather-13).
-2.  Copy the cURL request example for the first endpoint (aqi) into your text editor:
+2.  Copy the cURL request example for the second endpoint (`weather`) into your text editor:
 
     ```sh
-	  curl --get --include 'https://simple-weather.p.mashape.com/aqi?lat=1.0&lng=1.0' \
+	  curl --get --include 'https://simple-weather.p.mashape.com/weather?lat=1.0&lng=1.0' \
       -H 'X-Mashape-Key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p' \
       -H 'Accept: text/plain'
     ```
@@ -33,13 +33,18 @@ In this section, you'll use cURL to make the same weather API requests you made 
     The request should now look like this:
 
     ```sh
-    curl --get -k --include "https://simple-weather.p.mashape.com/aqi?lat=1.0&lng=1.0" -H "X-Mashape-Key: APIKEY" -H "Accept: text/plain"
+    curl --get -k --include "https://simple-weather.p.mashape.com/weather?lat=1.0&lng=1.0" -H "X-Mashape-Key: APIKEY" -H "Accept: text/plain"
     ```
 
 4.  Swap in your own API key in place of `APIKEY`.
 
     {: .note}
     In the instruction in this course, <code>APIKEY</code> will always be used instead of an actual API key. You should replace that part with your own API key.
+
+5.  Customize the `lat` and `lng` values to the following:
+
+    * `lat=1.3319164`
+    * `lng=103.7231246`
 
 ## Make the request in cURL (Mac)
 
@@ -53,7 +58,7 @@ In this section, you'll use cURL to make the same weather API requests you made 
     My request for the Mashape Weather API looks like this:
 
     ```sh
-	  curl --get --include 'https://simple-weather.p.mashape.com/aqi?lat=1.3319164&lng=103.7231246' -H 'X-Mashape-Key: APIKEY' -H 'Accept: text/plain'
+	  curl --get --include 'https://simple-weather.p.mashape.com/weather?lat=1.3319164&lng=103.7231246' -H 'X-Mashape-Key: APIKEY' -H 'Accept: text/plain'
     ```
 
     For the Aeris Weather observations endpoint, it looks like this:
@@ -66,21 +71,22 @@ In this section, you'll use cURL to make the same weather API requests you made 
 
     You should see something like this as a response:
 
-    <img src="images/aqi_curl_response.png" alt="cURL call" />
+    The response should look something like this:
 
-    The response is just a single number: the air quality index for the location specified. (This response is just text, but most of the time responses from REST APIs are in JSON.)
+    ```
+    29 c, Thunderstorms at Singapore, Singapore
+    ```
+
+{% include random_ad.html %}
 
 ## Make the request in cURL (Windows 7)
 
 1.  Copy the cURL call from your text editor.
-
-    {% include random_ad.html %}
-    
 2.  Go to **Start** and type **cmd** to open up the commandline. (If you're on Windows 8, see [these instructions for accessing the commandline](http://pcsupport.about.com/od/windows-8/a/command-prompt-windows-8.htm).)
 3.  Right-click and then select **Paste** to insert the call. My call for the Mashape API looks like this:
 
     ```sh
-	  curl --get -k --include "https://simple-weather.p.mashape.com/aqi?lat=1.3319164&lng=103.7231246" -H "X-Mashape-Key: APIKEY" -H "Accept: text/plain"
+	  curl --get -k --include "https://simple-weather.p.mashape.com/weather?lat=1.3319164&lng=103.7231246" -H "X-Mashape-Key: APIKEY" -H "Accept: text/plain"
     ```
 
     For the Aeris endpoint, it looks like this:
@@ -89,9 +95,11 @@ In this section, you'll use cURL to make the same weather API requests you made 
     curl --get --include "http://api.aerisapi.com/observations/santa%20clara,ca?client_id=CLIENTID&client_secret=CLIENTSECRET" -H "Accept: application/json"
     ```
 
-    The response from Mashape looks like this:
+    The response should look something like this:
 
-    <img src="images/commandline.png" alt="Command line Windows" />
+    ```
+    29 c, Thunderstorms at Singapore, Singapore
+    ```
 
 
 ## Single and Double Quotes with Windows cURL requests

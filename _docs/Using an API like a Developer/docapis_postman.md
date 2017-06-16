@@ -39,18 +39,22 @@ A lot of times abstract concepts don't make sense until you can contextualize th
 
 1.  If you haven't already done so, download and install the Postman app at [http://www.getpostman.com](https://www.getpostman.com/). If you're on a Mac, choose the Mac app. If you're on Windows, choose the Windows app.
 2.  Start the Postman app.
-2.  You'll make a REST call for the first endpoint (`aqi`) in the Mashape Weather API. Select **GET** for the method.
-3.  Insert the endpoint into the main box (next to the method, which is GET by default): `https://simple-weather.p.mashape.com/aqi`
-4.  Click the **Params** button (to the right of the box where you inserted the endpoint) and insert `lat` and `lng` parameters with specific values (other than `1`).
+3.  You'll make a REST call for the second endpoint (`weather`) in the Mashape Weather API. Select **GET** for the method.
 
     {: .note}
-    Only some countries are supported in the <code>aqi</code> call &mdash; specifically the United States, Singapore, Malaysia, Europe, and Australia. If the country isn't supported, you'll see "Not supported" in the API response. The AQI for Santa Clara, California is <code>lat: 37.3710062</code> and <code>lng: -122.0375935</code>. For Singapore, it's <code>lat: 1.3321256</code> and <code>lng: 103.7373503</code>. You can find latitude and longitude values from the URL in Google Maps when you go to a specific location.
+    You can also call the first endpoint (`aqi`), but the response is pretty short (2 characters), and unfortunately sometimes the API doesn't always return a response. If this endpoint isn't working, you'll see "Not supported" response.
+
+4.  Insert the endpoint into the main box (next to the method, which is GET by default): `https://simple-weather.p.mashape.com/weather`
+5.  Click the **Params** button (to the right of the box where you inserted the endpoint) and insert `lat` and `lng` parameters with specific values (other than `1`).
+
+    {: .note}
+    Only some countries are supported in this weather API &mdash; specifically the United States, Singapore, Malaysia, Europe, and Australia. If the country isn't supported, you'll see "Not supported" in the API response. The latitude and longitude coordinates for Santa Clara, California are <code>lat: 37.3710062</code> and <code>lng: -122.0375935</code>. For Singapore, they're <code>lat: 1.3321256</code> and <code>lng: 103.7373503</code>. You can find latitude and longitude values from the URL in Google Maps when you go to a specific location. The latitude appears first.
 
     <figure><a class="noCrossRef" href="https://www.google.com/maps/place/Santa+Clara,+CA/@37.3708698,-122.037593,12z/data=!3m1!4b1!4m5!3m4!1s0x808fb7815c08c193:0xe475a47ca3c0bfc0!8m2!3d37.3541079!4d-121.9552356"><img src="images/googlemapslatlong.png" alt="Finding latitude and longitude on Google Maps" /><figcaption>Latitude is listed first, then longitude</figcaption></figure>
 
-	  When you add these `lat` and `lng` parameters, they will dynamically be added as a query string to the endpoint URI. The query string is the code followed by the `?` in the endpoint URL. For example, your endpoint should now look like this: `https://simple-weather.p.mashape.com/aqi?lat=37.3710062&lng=-122.0375935`. Query string parameters appear after the question mark `?` symbol and are separated ampersands `&`.
+	  When you add these `lat` and `lng` parameters, they will dynamically be added as a query string to the endpoint URI. The query string is the code followed by the `?` in the endpoint URL. For example, your endpoint should now look like this: `https://simple-weather.p.mashape.com/weather?lat=37.3710062&lng=-122.0375935`. Query string parameters appear after the question mark `?` symbol and are separated ampersands `&`.
 
-5.  Click the **Headers** tab (below the GET button) and insert the key value pairs: `Accept: text/plain` and `X-Mashape-Key: APIKEY`. (Swap in your own API key in place of `APIKEY`.)
+6.  Click the **Headers** tab (below the GET button) and insert the key value pairs: `Accept: text/plain` and `X-Mashape-Key: APIKEY`. (Swap in your own API key in place of `APIKEY`.)
 
     Your inputs should look like this:
 
@@ -67,16 +71,15 @@ A lot of times abstract concepts don't make sense until you can contextualize th
 
 1.  In Postman, click the **Save** button (next to Send).
 2.  In the Save Request dialog box, create a new collection (for example, weather) by typing the collection name in the **"Or create new collection"** box.
-3.  In the **Request Name** box at the top of the dialog box, type a friendly name for the request, such as "Mashape AQI endpoint."
+3.  In the **Request Name** box at the top of the dialog box, type a friendly name for the request, such as "Mashape Weather endpoint."
 4.  Click **Save.**
 
 Saved endpoints appear in the left side pane under Collections.
 
-## Make requests for the other endpoints
+## Make requests for the other endpoint
 
-Enter details into Postman for the other two endpoints for the Mashape Weather API:
+Enter details into Postman for the other endpoint for the Mashape Weather API:
 
-* weather
 * weatherdata
 
 {: .note}
