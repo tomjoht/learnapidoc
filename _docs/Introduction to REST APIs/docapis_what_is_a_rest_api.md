@@ -158,3 +158,8 @@ The Swagger or RAML output can take the place of the WSDL file that was more com
 But don't expect the Swagger UI or RAML API Console documentation outputs to include all the details users would need to work with your API. For example, these outputs won't include info about authorization keys, details about workflows and interdependencies between endpoints, and so on. The Swagger or RAML output usually contains reference documentation only, which typically only accounts for a third of the total needed documentation.
 
 Overall, REST APIs are more varied and flexible than SOAP, and you almost always need to read the documentation in order to understand how to interact with a REST API. As you explore REST APIs, you will find that they differ greatly from one to another (especially the format and display of their documentation sites), but they all share the common patterns outlined here. At the core of any REST API is a request and response transmitted over the web.
+
+## Additional reading
+
+* [REST: a FAQ](https://medium.com/@diogo.lucas/rest-a-faq-b3cd7ed62828), by Diogo Lucas
+* [Learn REST: A RESTful Tutorial](http://www.restapitutorial.com/), by Todd Fredrich

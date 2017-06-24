@@ -230,6 +230,9 @@ folders:
   - title: API Blueprint
     jurl: /pubapis_api_blueprint.html
 
+  - title: Combining Swagger's reference output with user guide docs
+    jurl: /pubapis_combine_swagger_and_guide.html
+
 - title: Design patterns
   jurl: /designpatterns.html
   folderitems:
@@ -326,7 +329,7 @@ folders:
 
   - title: Are API docs auto-rendered through build process?
     jurl: /survey_automating_api_docs.html
-    
+
   - title: How do you get the source files that contain code comments?
     jurl: /survey_access_to_code.html
 

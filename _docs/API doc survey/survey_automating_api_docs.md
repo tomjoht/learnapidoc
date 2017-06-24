@@ -12,11 +12,7 @@ section: survey
 
 From 38 responses, here are the results:
 
-<figure>![Are you automating your REST API documentation?](/images/automatingrestAPIs-550x386.png)
-
-<figcaption>Are you automating your REST API documentation?</figcaption>
-
-</figure>
+![Are you automating your REST API documentation?](/images/automatingrestAPIs-550x386.png)
 
 Several people weren't working on REST APIs, so they wrote N/A. For those who said yes, they're automating their REST API documentation, here's how they're doing it:
 
@@ -92,7 +88,7 @@ Swagger seems to be a popular tool among a wider developer audience for automati
 
 Swagger gets just 1 star (out of 5) for Time to Live and 3 stars for User Friendliness. In contrast, Mashape API Editor from Mashape.com gets 4 stars in every category. Commenting on the ease of use, the author says,
 
-> It's really straight forward, you can't go wrong with this editor as it really simplifies the adding of an API to the bone. There's not really anything that is required to be read. So you can forget the spec documentation, and dive in adding endpoints, models and go live in seconds.
+> It's really straightforward, you can't go wrong with this editor as it really simplifies the adding of an API to the bone. There's not really anything that is required to be read. So you can forget the spec documentation, and dive in adding endpoints, models and go live in seconds.
 
 However, I'm not sure if the author works for Mashape.com or not. It's unclear.
 

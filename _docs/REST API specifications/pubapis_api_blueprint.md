@@ -3,7 +3,7 @@ title: "API Blueprint tutorial"
 permalink: /pubapis_api_blueprint.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.5
+weight: 8.6
 section: restapispecifications
 ---
 
