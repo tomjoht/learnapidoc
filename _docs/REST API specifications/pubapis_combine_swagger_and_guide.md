@@ -7,4 +7,145 @@ weight: 8.6
 section: restapispecifications
 ---
 
-I'm writing info for this section... (June 24, 2017).
+Whenever discussions about Swagger and other REST API specifications take place, we technical writers invariably ask how we can include the Swagger UI display within our other documentation. Or, how can we include our my other documentation in within the Swagger UI output?
+
+When you start pushing your documentation into another source file &mdash; in this case, a YAML or JSON file that's included in a Swagger UI fileset, you end up splitting your single source of truth into multiple sources. You may have defined your endpoints and parameters in your regular documentation, and now the Swagger spec asked you to provide the same endpoints and descriptions in the spec. Do you copy and paste? Do you somehow generate the descriptions from the same source?
+
+This conundrum is usually crystal clear to technical writers while remaining hard for engineers or other non-writers to grasp. API doc consists of more than reference material about the APIs. You've got all kinds of other information about getting API keys, setup and configuration of services, or other details that don't fit into the spec. I covered much of this in [Documenting non-reference sections](docapis_create_user_guide.html) part of the guide. You have sections such as the following:
+
+* Overview
+* Getting Started
+* Hello World tutorial
+* authentication and authorization
+* response and error codes
+* code samples and tutorials
+* quick reference guide
+
+Other times you just have more detail that you need to communicate to the user that won't fit easily into the spec. For example, in the weatherdata endpoint in the [sample Mashape weather API](pubapis_swagger.html) we've been using in this course, there's a whole table about condition codes that is essential to interpreting the `item` property in the response. Here's a sample:
+
+```json
+"condition": {
+           "code": "33",
+           "date": "Wed, 14 Jun 2017 09:00 PM SGT",
+           "temp": "26",
+           "text": "Mostly Clear"
+         }
+```
+
+If you go to the [Yahoo Weather API docs](https://developer.yahoo.com/weather/documentation.html) (which is where the data for this Mashape weather API originates), you'll see a Condition Codes table that tells you that `33` means "fair (night)". That long table will be difficult to include in the parameter details in the Swagger spec.
+
+If you have a lot of extra information and notes like this in your reference docs, it can be difficult to fit them into the parameter descriptions allotted.
+
+Unfortunately, there's not an easy solution for creating a single source of truth. Here are some options.
+
+## Option 1: Put all info into your spec
+
+You can try to put all information into your spec. You may be surprised what you can actually include n it. Any `description` element allows you to use Markdown and HTML. For example, here's the `info` object in the Swagger spec where a description appears. Type a pipe `|` to break the content onto the next line, and then indent two spaces. You can add a lot of content here.
+
+```yaml
+info:
+  description: |
+    This is a sample spec that describes a Mashape Weather API as an example to demonstrate features in the Swagger-2.0 specification. This output is part of the <a href="http://idratherbewriting.com/learnapidoc">Documenting REST API course</a> on my site. The Weather API displays forecast data by latitude and longitude. It's a simple weather API, but the data comes from Yahoo Weather Service. The weatherdata endpoint delivers the most robust package of information of the endpoints here.
+
+    To explore the API, you'll need an API key. You can sign up for an API through Mashape, or you can just use this one\: `EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p`. For the latitude and longitude parameters, you can get this information from the URL of a location on Google Maps. For example, for Santa Clara, California, use the following\:
+    * **lat**: `37.3708698`
+    * **lng**: `-122.037593`
+```
+
+With one Swagger API project I worked on, I referenced Bootstrap CSS and JS in the header of the index.html of the Swagger UI project, and then incorporated Bootstrap alerts and expand/collapse buttons in this `description` element. Here's an example:
+
+```yaml
+info:
+  description: >
+    ACME offers a lot of configuration options...
+    <div class="alert alert-success" role="alert"><i class="fa fa-info-circle"></i> <b>Tip: </b>See the resources available in the portal for more detail.</div>
+    <div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>The  network includes a firewall that protects your access to the resources...</div>
+
+    <div class="container">
+    <div class="apiConfigDetails">
+    <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#demo">
+    <span class="glyphicon glyphicon-collapse-down"></span> See API Configuration Details
+    </button>
+    <div id="demo" class="collapse">
+
+    <h2>Identifiers Allowed</h2>
+
+    <p>Based on this configuration, ACME will accept any of the following identifiers in requests.</p>
+
+    <table class="table">
+    <thead>
+    <tr>
+    <th>Request Codes</th>
+    <th>Data Type</th>
+    <th>Comparison Method</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    ...
+```
+
+By incorporating expand/collapse sections from Bootstrap, you can add a ton of information in this description section. Reference the needed JavaScript in the header or footer of the same index.html file where you referenced your Swagger.yaml file.
+
+If you incorporate Bootstrap, you will likely need to restrict the namespace so that it doesn't affect other elements in the Swagger UI display. See [How to Isolate Bootstrap CSS to Avoid Conflicts](https://formden.com/blog/isolate-bootstrap) for details on how to do this. You can use Markdown and HTML in any `description` element in the spec.
+
+I recommend trying to put all your information in the spec first. If you have an extremely complex API or just an API that has a lot of extra information not relevant to the spec, then you can look for alternative approaches. But try to spec first. This keeps your information close to the source.
+
+Additionally, there are just too many benefits to using a spec that you miss out if you omit the format. When you store your information in a spec, many other tools can parse the spec and output the display.
+
+For example, [Spectacle](https://github.com/sourcey/spectacle) is a project that builds an output from a Swagger file. Here's a [demo output](https://cheesestore.github.io/). You can also see an [output that uses the Mashape weather API file](../files/spectacle/fulloutput/index.html). More and more tools are coming out that allow you to import your Swagger spec. For example, see [Lucybot](http://lucybot.com/), [Restlet Studio](https://studio.restlet.com), the [Swagger UI responsive theme](https://github.com/jensoleg/swagger-ui), [Material Swagger UI](https://github.com/legendecas/material-swagger-ui), [DynamicAPIs](https://www.dynamicapis.com), and more.
+
+In fact, importing or reading a Swagger spec file is almost becoming a standard. Putting your content in the Swagger spec format allows you to separate your content from the presentation layer, instantly taking advantage of any new API tooling or platform that can parse the spec.
+
+## Store content in YAML files (Jekyll solution)
+
+Another approach might be to store your descriptions and other info in data yaml files in your project, and then include them in your spec. I'm most familiar with Jekyll, so I'll describe the process using Jekyll (but similar techniques exist for other static site generators).
+
+In Jekyll, you can store content in YAML files in your \_data folder. For example, suppose you have  file called parameters.yml inside \_data with the following content:
+
+```
+acme_parameter: >
+  This is a description of my parameter...
+```
+
+You can then include that reference using tags like this:
+
+```
+{% raw %}{{site.data.parameters.acme_parameter}}{% endraw %}
+```
+
+In your Jekyll project, you would include this reference your spec like this:
+
+```
+info:
+  description: >
+    {% raw %}{{site.data.parameters.acme_parameter}}{% endraw %}
+```
+
+You would then take the output from Jekyll that contains the content pushed into each spec property. In this model, you're generating the Swagger spec from your Jekyll project.
+
+I've tried this approach. It's not a bad way to go, but it's hard to ensure that your Swagger spec remains valid as you write content. When you have references like this in your spec content (`{% raw %}{{site.data.parameters.acme_parameter}}{% endraw %}`), you can't benefit from the real-time spec validation that you get when using the [Swagger Editor](http://swagger.io/swagger-editor/).
+
+Most likely you'd need to include the entire Swagger UI project in your Jekyll site. At the top of your Swagger.yml file, add frontmatter dashes with `layout: null` to ensure Jekyll processes the file:
+
+```
+---
+layout: null
+---
+```
+
+In your `jekyll serve` command, configure the `destination` to build your output into an htdocs folder where you have [XAMPP server](https://www.apachefriends.org/index.html) running. With each build, check the display to see whether it's valid or not.
+
+By storing the values in data files, you can then include them elsewhere in your doc as well. For example, you might have a parameters section in your doc where you would also include the `{% raw %}{{site.data.parameters.acme_parameter}}{% endraw %}` description.
+
+Again, although I've tried this approach, I grew frustrated at not being able to immediately validate my spec. It was more challenging to track down the exact culprits behind my validation errors, and I eventually gave up. But it's a technique that could work.
+
+## Solution 3: Use a tool that imports Swagger and allows additional docs
+
+Another approach is to use a tool like [Readme.io](http://readme.io/) that allows you to both import your Swagger spec and also add your own separate documentation pages. Readme provides one of the most attractive outputs and is fully inclusive of almost every documentation feature you could want or need. I explore Readme with more depth [here](pubapis_readmeio.html). Readme.io requires third-party hosting, but there are some other doc tools that allow you to incorporate Swagger as well.
+
+Sites like [Apiary](https://apiary.io/) and [Mulesoft](https://www.mulesoft.com/) let you import your Swagger spec while also add your own custom doc pages. However, both of these solutions require third-party hosting, so it wouldn't make sense to use these sites unless you were using other API services from these platforms.
+
+## Conclusion
+
+Finally, what's so bad about having two different sites? One site for your reference information, and another for your tutorials and other information not part of the reference? Programmers might find the reference information convenient in the way it distills and simplifies the body of information. Rather than having a massive site to navigate, it provides the core reference information they need.

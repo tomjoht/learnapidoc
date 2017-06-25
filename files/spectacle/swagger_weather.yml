@@ -1,32 +1,12 @@
----
-title: "Swagger spec deep dive"
-permalink: /pubapis_swagger_spec_deep_dive.html
-course: "Documenting REST APIs"
-sidebar: docapis
-weight: 8.26
-section: restapispecifications
----
-
-{% include note.html content="This page is still under construction. I'm actively adding to it .... June 16, 2017." %}
-
-In the the [Swagger tutorial](pubapis_swagger.html), I referenced a Swagger spec that you simply plugged into a Swagger UI project. In this section, we'll dive more deeply into the Swagger spec (but not too deep, because one could write an entire book on the subject).
-
-{% if site.target == "web" %}
-* TOC
-{:toc}
-{% endif %}
-
-## Swagger spec
-
-Here's the Swagger spec that I created for the [sample Mashape Weather API](https://market.mashape.com/fyhao/weather-13). Note that this API builds off of a [Yahoo weather service API](https://developer.yahoo.com/weather/documentation.html), so the data returned in the `weather` and `weatherdata` endpoints is highly similar to the data returned by the Yahoo weather service API.
-
-After the spec, I'll go through and explain various parts of the spec and how to read the the spec documentation.
-
-```yaml
 swagger: "2.0"
 info:
-  description: "This is a sample API that uses a Mashape Weather API as an example to demonstrate features in the Swagger-2.0 specification. The Weather API displays forecast data by latitude and longitude. It's a simple weather API, but the data comes from Yahoo Weather Service. The weatherdata endpoint delivers the most robust and comprehensivepackage of weather information."
-  version: 2.0.0
+  description: |
+    This is a sample spec that describes a Mashape Weather API as an example to demonstrate features in the Swagger-2.0 specification. This output is part of the <a href="http://idratherbewriting.com/learnapidoc">Documenting REST API course</a> on my site. The Weather API displays forecast data by latitude and longitude. It's a simple weather API, but the data comes from Yahoo Weather Service. The weatherdata endpoint delivers the most robust package of information of the endpoints here.
+    
+    To explore the API, you'll need an API key. You can sign up for an API through Mashape, or you can just use this one\: `EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p`. For the latitude and longitude parameters, you can get this information from the URL of a location on Google Maps. For example, for Santa Clara, California, use the following\:
+    * **lat**: `37.3708698`
+    * **lng**: `-122.037593` 
+  version: "2.1"
   title: Weather API from Mashape
   termsOfService: http://swagger.io/terms/
   contact:
@@ -53,11 +33,13 @@ paths:
           description: latitude
           type: string
           required: true
+          example: 37.3708698
         - name: lng
           in: query
           description: longitude
           type: string
           required: true
+          example: -122.037593
       responses:
         '200':
           description: AQI response
@@ -65,6 +47,25 @@ paths:
             $ref: '#/definitions/aqiResponse'
           examples:
              application/text: 52
+          headers: 
+            Connection:
+              description: keep-alive
+              type: string
+            Content-Length: 
+              description: 23
+              type: integer
+            Content-Type:
+              description: text/plain
+              type: string
+            Date:
+              description: the date of the request -- Tue, 04 Nov 2014 15:22:12 GMT
+              type: string
+            Server:
+              description: the server where the response initiates. Mashape/5.0.5
+              type: string
+            X-Powered-By: 
+              description: Express
+              type: string 
       security:
         - api_key: []
 
@@ -84,11 +85,13 @@ paths:
           description: latitude coordinates
           required: true
           type: string
+          example: 37.3708698
         - name: lng
           in: query
           description: longitude coordinates
           required: true
           type: string
+          example: -122.037593
       responses:
         '200':
           description: weather response
@@ -96,7 +99,25 @@ paths:
             $ref: '#/definitions/weatherResponse'
           examples:
              application/text: "26 c, Mostly Clear at Singapore, Singapore"
-
+          headers: 
+            Connection:
+              description: keep-alive
+              type: string
+            Content-Length: 
+              description: 23
+              type: integer
+            Content-Type:
+              description: text/plain
+              type: string
+            Date:
+              description: the date of the request -- Tue, 04 Nov 2014 15:22:12 GMT
+              type: string
+            Server:
+              description: the server where the response initiates. Mashape/5.0.5
+              type: string
+            X-Powered-By: 
+              description: Express
+              type: string
       security:
         - api_key: []
 
@@ -115,16 +136,20 @@ paths:
           description: latitude
           type: string
           required: true
+          example: 37.3708698
         - name: lng
           in: query
           description: longitude
           type: string
           required: true
+          example: -122.037593
       responses:
         200:
           description: "Successful operation"
           schema:
-           "$ref": "#/definitions/weatherdata response"
+            "$ref": "#/definitions/weatherdata response"
+          examples:
+            application/json: {"query":{"count":1,"created":"2017-06-24T23:47:36Z","lang":"en-US","results":{"channel":{"units":{"distance":"km","pressure":"mb","speed":"km/h","temperature":"C"},"title":"Yahoo! Weather - Sunnyvale, CA, US","link":"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91990359/","description":"Yahoo! Weather for Sunnyvale, CA, US","language":"en-us","lastBuildDate":"Sat, 24 Jun 2017 04:47 PM PDT","ttl":"60","location":{"city":"Sunnyvale","country":"United States","region":" CA"},"wind":{"chill":"73","direction":"345","speed":"28.97"},"atmosphere":{"humidity":"64","pressure":"34033.22","rising":"0","visibility":"25.91"},"astronomy":{"sunrise":"5:48 am","sunset":"8:33 pm"},"image":{"title":"Yahoo! Weather","width":"142","height":"18","link":"http://weather.yahoo.com","url":"http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"},"item":{"title":"Conditions for Sunnyvale, CA, US at 04:00 PM PDT","lat":"37.377499","long":"-122.04686","link":"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91990359/","pubDate":"Sat, 24 Jun 2017 04:00 PM PDT","condition":{"code":"28","date":"Sat, 24 Jun 2017 04:00 PM PDT","temp":"22","text":"Mostly Cloudy"},"forecast":[{"code":"28","date":"24 Jun 2017","day":"Sat","high":"25","low":"16","text":"Mostly Cloudy"},{"code":"30","date":"25 Jun 2017","day":"Sun","high":"25","low":"15","text":"Partly Cloudy"},{"code":"30","date":"26 Jun 2017","day":"Mon","high":"22","low":"14","text":"Partly Cloudy"},{"code":"30","date":"27 Jun 2017","day":"Tue","high":"23","low":"15","text":"Partly Cloudy"},{"code":"34","date":"28 Jun 2017","day":"Wed","high":"25","low":"13","text":"Mostly Sunny"},{"code":"30","date":"29 Jun 2017","day":"Thu","high":"25","low":"13","text":"Partly Cloudy"},{"code":"34","date":"30 Jun 2017","day":"Fri","high":"25","low":"13","text":"Mostly Sunny"},{"code":"30","date":"01 Jul 2017","day":"Sat","high":"25","low":"14","text":"Partly Cloudy"},{"code":"30","date":"02 Jul 2017","day":"Sun","high":"25","low":"14","text":"Partly Cloudy"},{"code":"30","date":"03 Jul 2017","day":"Mon","high":"23","low":"15","text":"Partly Cloudy"}],"description":"<![CDATA[<img src=\"http://l.yimg.com/a/i/us/we/52/28.gif\"/>\n<BR />\n<b>Current Conditions:</b>\n<BR />Mostly Cloudy\n<BR />\n<BR />\n<b>Forecast:</b>\n<BR /> Sat - Mostly Cloudy. High: 25Low: 16\n<BR /> Sun - Partly Cloudy. High: 25Low: 15\n<BR /> Mon - Partly Cloudy. High: 22Low: 14\n<BR /> Tue - Partly Cloudy. High: 23Low: 15\n<BR /> Wed - Mostly Sunny. High: 25Low: 13\n<BR />\n<BR />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91990359/\">Full Forecast at Yahoo! Weather</a>\n<BR />\n<BR />\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)\n<BR />\n]]>","guid":{"isPermaLink":"false"}}}}}}
       security:
         - api_key: []
 
@@ -150,6 +175,7 @@ definitions:
     properties:
       query:
         "$ref": "#/definitions/query"
+    
   query:
     type: object
     properties:
@@ -186,7 +212,7 @@ definitions:
         type: string
         description:  "The URL for the Weather page of the forecast for this location"
         example: "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/"
-      description:
+      description: 
         type: string
         description: "The overall description of the feed including the location"
         example: "Yahoo! Weather for Singapore, South West, SG"
@@ -271,11 +297,11 @@ definitions:
 
   atmosphere:
     type: object
-    description: "Forecast information about current atmospheric pressure, humidity, and visibility"
+    description: "Forecast information about current atmospheric pressure, humidity, and visibility" 
     properties:
       humidity:
         type: integer
-        description: humidity, in percent
+        description: humidity, in percent 
         example: "87"
       pressure:
         type: integer
@@ -373,7 +399,7 @@ definitions:
         example: "33"
       date:
         type: string
-        description: The current date and time for which this forecast applies. The date is in [RFC822 Section 5 format](http://www.rfc-editor.org/rfc/rfc822.txt).
+        description: The current date and time for which this forecast applies. The date is in RFC822 Section 5 format.
         example: "Wed, 14 Jun 2017 09:00 PM SGT"
       temp:
         type: integer
@@ -386,7 +412,7 @@ definitions:
 
   forecast:
     type: array
-    items:
+    items: 
       "$ref": "#/definitions/forecast array"
 
   forecast array:
@@ -395,7 +421,8 @@ definitions:
     properties:
       code:
         type: integer
-        description: The condition code for this forecast. You could use this code to choose a text description or image for the forecast. The possible values for this element are described in the [Condition Codes](https://developer.yahoo.com/weather/documentation.html#codes).
+        description: |
+            The condition code for this forecast. You could use this code to choose a text description or image for the forecast. The possible values for this element are described in the [Condition Codes](https://developer.yahoo.com/weather/documentation.html#codes).
         example: "4"
       date:
         type: string
@@ -421,9 +448,8 @@ definitions:
   guid:
     type: object
     description: "Unique identifier for the forecast, made up of the location ID, the date, and the time."
-    properties:
-      isPermaLink:
+    properties: 
+      isPermaLink: 
         type: string
         description: "The attribute isPermaLink is false."
         example: "false"
-```

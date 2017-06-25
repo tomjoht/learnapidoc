@@ -1,0 +1,24 @@
+{{!--
+  This partial renders the documentation content
+  @api public
+--}}
+
+<article>
+  {{>swagger/introduction}}
+  {{>swagger/securityDefinitions}}
+
+  {{#if showTagSummary}}
+    {{>swagger/tags}}
+  {{else}}
+    {{>swagger/paths}}
+  {{/if}}
+
+  {{>swagger/definitions definitions=definitions}}
+
+  {{! Powered by link }}
+  <div class="doc-row no-margin">
+    <div class="doc-copy doc-separator">
+      <a class="powered-by" href="https://sourcey.com/spectacle">Documentation by <span>Spectacle</span></a>
+    </div>
+  </div>
+</article>
