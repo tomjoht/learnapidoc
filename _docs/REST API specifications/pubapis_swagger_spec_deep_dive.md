@@ -427,3 +427,5 @@ definitions:
         description: "The attribute isPermaLink is false."
         example: "false"
 ```
+
+{% include random_ad.html %}

@@ -9,13 +9,13 @@ section: restapispecifications
 
 Whenever discussions about Swagger and other REST API specifications take place, we technical writers invariably ask how we can include the Swagger UI display within our other documentation. Or, how can we include our my other documentation in within the Swagger UI output?
 
-When you start pushing your documentation into another source file &mdash; in this case, a YAML or JSON file that's included in a Swagger UI fileset, you end up splitting your single source of truth into multiple sources. You may have defined your endpoints and parameters in your regular documentation, and now the Swagger spec asked you to provide the same endpoints and descriptions in the spec. Do you copy and paste? Do you somehow generate the descriptions from the same source?
+When you start pushing your documentation into another source file &mdash; in this case, a YAML or JSON file that's included in a Swagger UI fileset, you end up splitting your single source of truth into multiple sources. You may have defined your endpoints and parameters in your regular documentation, and now the Swagger spec asks you to provide the same endpoints and descriptions in the spec. Do you copy and paste? Do you somehow generate the descriptions from the same source?
 
 This conundrum is usually crystal clear to technical writers while remaining hard for engineers or other non-writers to grasp. API doc consists of more than reference material about the APIs. You've got all kinds of other information about getting API keys, setup and configuration of services, or other details that don't fit into the spec. I covered much of this in [Documenting non-reference sections](docapis_create_user_guide.html) part of the guide. You have sections such as the following:
 
-* Overview
-* Getting Started
+* getting started
 * Hello World tutorial
+* demos
 * authentication and authorization
 * response and error codes
 * code samples and tutorials
@@ -32,15 +32,13 @@ Other times you just have more detail that you need to communicate to the user t
          }
 ```
 
-If you go to the [Yahoo Weather API docs](https://developer.yahoo.com/weather/documentation.html) (which is where the data for this Mashape weather API originates), you'll see a Condition Codes table that tells you that `33` means "fair (night)". That long table will be difficult to include in the parameter details in the Swagger spec.
+What does the code `33` mean? If you go to the [Yahoo Weather API docs](https://developer.yahoo.com/weather/documentation.html) (which is where the data for this Mashape weather API originates), you'll see a Condition Codes table that tells you that `33` means "fair (night)". That long table (which includes nearly 50 separate condition codes) will be difficult to include in the parameter details in the Swagger spec.
 
-If you have a lot of extra information and notes like this in your reference docs, it can be difficult to fit them into the parameter descriptions allotted.
+If you have a lot of extra information and notes like this in your reference docs, it can be difficult to fit them into the parameter descriptions allotted. Unfortunately, there's not an easy solution for creating a single source of truth. Here are some options.
 
-Unfortunately, there's not an easy solution for creating a single source of truth. Here are some options.
+## Option 1: Put all info into your spec through expand/collapse sections
 
-## Option 1: Put all info into your spec
-
-You can try to put all information into your spec. You may be surprised what you can actually include n it. Any `description` element allows you to use Markdown and HTML. For example, here's the `info` object in the Swagger spec where a description appears. Type a pipe `|` to break the content onto the next line, and then indent two spaces. You can add a lot of content here.
+You can try to put all information into your spec. You may be surprised what you can actually include in it. Any `description` element (not just the `description` property in the `info` object) allows you to use Markdown and HTML. For example, here's the `info` object in the Swagger spec where a description appears. Type a pipe `|` to break the content onto the next line, and then indent two spaces. You can add a lot of content here.
 
 ```yaml
 info:
@@ -85,15 +83,18 @@ info:
     ...
 ```
 
-By incorporating expand/collapse sections from Bootstrap, you can add a ton of information in this description section. Reference the needed JavaScript in the header or footer of the same index.html file where you referenced your Swagger.yaml file.
+The result was to compress much of the information into a single button that, which clicked, expanded with more details. By incorporating expand/collapse sections from Bootstrap, you can add a ton of information in this description section. Reference the needed JavaScript in the header or footer of the same index.html file where you referenced your Swagger.yaml file.
 
-If you incorporate Bootstrap, you will likely need to restrict the namespace so that it doesn't affect other elements in the Swagger UI display. See [How to Isolate Bootstrap CSS to Avoid Conflicts](https://formden.com/blog/isolate-bootstrap) for details on how to do this. You can use Markdown and HTML in any `description` element in the spec.
+Additionally, you can include modals that appear when clicked. Modals are dialog windows that dim the background outside the dialog window. Again, you can include all the JavaScript you want in the index.html file of the Swagger UI project.
 
-I recommend trying to put all your information in the spec first. If you have an extremely complex API or just an API that has a lot of extra information not relevant to the spec, then you can look for alternative approaches. But try to spec first. This keeps your information close to the source.
+{:. tip}
+If you incorporate Bootstrap, you will likely need to restrict the namespace so that it doesn't affect other elements in the Swagger UI display. See [How to Isolate Bootstrap CSS to Avoid Conflicts](https://formden.com/blog/isolate-bootstrap) for details on how to do this.
 
-Additionally, there are just too many benefits to using a spec that you miss out if you omit the format. When you store your information in a spec, many other tools can parse the spec and output the display.
+Overall, I recommend trying to put all your information in the spec first. If you have an extremely complex API or just an API that has a lot of extra information not relevant to the spec, then you can look for alternative approaches. But try to spec first. This keeps your information close to the source.
 
-For example, [Spectacle](https://github.com/sourcey/spectacle) is a project that builds an output from a Swagger file. Here's a [demo output](https://cheesestore.github.io/). You can also see an [output that uses the Mashape weather API file](../files/spectacle/fulloutput/index.html). More and more tools are coming out that allow you to import your Swagger spec. For example, see [Lucybot](http://lucybot.com/), [Restlet Studio](https://studio.restlet.com), the [Swagger UI responsive theme](https://github.com/jensoleg/swagger-ui), [Material Swagger UI](https://github.com/legendecas/material-swagger-ui), [DynamicAPIs](https://www.dynamicapis.com), and more.
+Additionally, there are just too many benefits to using a spec that you will miss out on if you choose another approach. When you store your information in a spec, many other tools can parse the spec and output the display.
+
+For example, [Spectacle](https://github.com/sourcey/spectacle) is a project that builds an output from a Swagger file. Here's a [demo output](https://cheesestore.github.io/). You can also see an [output that uses the Mashape weather API file](../files/spectacle/fulloutput/index.html). More and more tools are coming out that allow you to import your Swagger spec. For example, see [Lucybot](http://lucybot.com/), [Restlet Studio](https://studio.restlet.com), the [Swagger UI responsive theme](https://github.com/jensoleg/swagger-ui), [Material Swagger UI](https://github.com/legendecas/material-swagger-ui), [DynamicAPIs](https://www.dynamicapis.com), [Run in Postman](https://www.getpostman.com/docs/postman_for_publishers/run_button/creating_run_button), and more. They all read the Swagger spec.
 
 In fact, importing or reading a Swagger spec file is almost becoming a standard. Putting your content in the Swagger spec format allows you to separate your content from the presentation layer, instantly taking advantage of any new API tooling or platform that can parse the spec.
 
@@ -103,20 +104,20 @@ Another approach might be to store your descriptions and other info in data yaml
 
 In Jekyll, you can store content in YAML files in your \_data folder. For example, suppose you have  file called parameters.yml inside \_data with the following content:
 
-```
+```yaml
 acme_parameter: >
   This is a description of my parameter...
 ```
 
 You can then include that reference using tags like this:
 
-```
+```liquid
 {% raw %}{{site.data.parameters.acme_parameter}}{% endraw %}
 ```
 
 In your Jekyll project, you would include this reference your spec like this:
 
-```
+```yaml
 info:
   description: >
     {% raw %}{{site.data.parameters.acme_parameter}}{% endraw %}
@@ -136,6 +137,8 @@ layout: null
 
 In your `jekyll serve` command, configure the `destination` to build your output into an htdocs folder where you have [XAMPP server](https://www.apachefriends.org/index.html) running. With each build, check the display to see whether it's valid or not.
 
+{% include random_ad.html %}
+
 By storing the values in data files, you can then include them elsewhere in your doc as well. For example, you might have a parameters section in your doc where you would also include the `{% raw %}{{site.data.parameters.acme_parameter}}{% endraw %}` description.
 
 Again, although I've tried this approach, I grew frustrated at not being able to immediately validate my spec. It was more challenging to track down the exact culprits behind my validation errors, and I eventually gave up. But it's a technique that could work.
@@ -144,8 +147,10 @@ Again, although I've tried this approach, I grew frustrated at not being able to
 
 Another approach is to use a tool like [Readme.io](http://readme.io/) that allows you to both import your Swagger spec and also add your own separate documentation pages. Readme provides one of the most attractive outputs and is fully inclusive of almost every documentation feature you could want or need. I explore Readme with more depth [here](pubapis_readmeio.html). Readme.io requires third-party hosting, but there are some other doc tools that allow you to incorporate Swagger as well.
 
-Sites like [Apiary](https://apiary.io/) and [Mulesoft](https://www.mulesoft.com/) let you import your Swagger spec while also add your own custom doc pages. However, both of these solutions require third-party hosting, so it wouldn't make sense to use these sites unless you were using other API services from these platforms.
+Sites like [Apiary](https://apiary.io/) and [Mulesoft](https://www.mulesoft.com/) let you import your Swagger spec while also add your own custom doc pages. These sites offer full-service management for APIs, so if your engineers are already using one of these platforms, it could make sense to store your docs there too.
 
-## Conclusion
+## Two sites isn't so bad
 
-Finally, what's so bad about having two different sites? One site for your reference information, and another for your tutorials and other information not part of the reference? Programmers might find the reference information convenient in the way it distills and simplifies the body of information. Rather than having a massive site to navigate, it provides the core reference information they need.
+Finally, what's so bad about having two different sites? One site for your reference information, and another for your tutorials and other information that aren't part of the reference? Programmers might find the reference information convenient in the way it distills and simplifies the body of information. Rather than having a massive site to navigate, it provides the core reference information they need. When they want non-reference information, they can consult the accompanying guide.
+
+The truth is that programmers have been operating this way for years with Javadocs, Doxygen, and other document-generator tools that generate documentation from Java, C++, or C# files. Auto-generating the reference information from source code is extremely common and wouldn't be viewed as a fragmented information experience by programmers.

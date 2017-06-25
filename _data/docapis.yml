@@ -193,6 +193,9 @@ folders:
   - title: Miredot
     jurl: /pubapis_miredot.html
 
+  - title: Run in Postman Button
+    jurl: /pubapis_runinpostmanbutton.html
+
   - title: Custom UX solutions
     jurl: /pubapis_custom_ux.html
 
