@@ -37,8 +37,6 @@ One question I faced in preparing the content is whether I should stick with tex
 
 Additionally, videos force the user to go at the pace of the narrator. If your skill level matches the narrator, great. But in my experience, videos often go too slow or too fast. In contrast, text lets you more easily skim ahead when you already know the material, or slow down when you need more time to absorb the material.
 
-One of my goals for the content is to keep this book a living, evolving document. As a digital publication, I'll continue to add and edit and refine it as needed. I want this content to become a vital learning resource for all technical writers, both now and in the years to come as technologies evolve.
-
-I wrote this book in kramdown Markdown, using Jekyll. I single sourced the content into several outputs: Web, Kindle (Mobi), EPUB, and PDF. When you buy the book, you can access any version at any time. However, to provide for discoverability online, I decided to leave the web version free.
+One of my goals for the content is to keep this course a living, evolving document. As a digital publication, I'll continue to add and edit and refine it as needed. I want this content to become a vital learning resource for all technical writers, both now and in the years to come as technologies evolve.
 
 I welcome feedback. Feel free to drop me a note at <a href="mailto=tom@idratherbewriting.com">tom@idratherbewriting.com</a>. And follow my blog at [http://idratherbewriting.com](http://idratherbewriting.com).
