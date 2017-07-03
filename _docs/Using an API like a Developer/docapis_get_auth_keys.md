@@ -56,9 +56,10 @@ Now let's get the keys for the Aeris Weather API. The Aeris Weather API requires
 3.  Enter a username, email, and password, and then click **SIGN UP FOR FREE** to create an Aeris account. Then sign in.
 4.  After you sign up for an account, click **Account** in the upper-right corner.
 
+5.  Click **Apps** (on the second navigation row, to the right of "Usage"), and then click **New Application**.
+
     <a class="noCrossRef" href="https://www.aerisweather.com/account/apps"><img src="images/aerisaccount.png" alt="Aeris account" /></a>
 
-5.  Click **Apps** (on the second navigation row, to the right of "Usage"), and then click **New Application**.
 6.  In the dialog box, enter the following:
     * **Application Name**: My biking app (or something)
     * **Application Namespace**: localhost

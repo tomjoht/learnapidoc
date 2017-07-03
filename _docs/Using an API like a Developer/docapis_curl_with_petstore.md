@@ -44,8 +44,6 @@ A lot of APIs require you to post requests containing JSON messages in the body.
     }
     ```
 
-    {% include random_ad.html %}
-
 2.  Change the first `id` value to another integer (whole number) and the pet name of `fluffy`.
 
     {: .note}
@@ -74,6 +72,8 @@ A lot of APIs require you to post requests containing JSON messages in the body.
 
     {: .tip}
     Feel free to run this same request a few times more. REST APIs are \"idempotent,\" which means that running the same request more than once won't end up duplicating the results (you just create one pet here, not multiple pets). Todd Fredrich explains idempotency by [comparing it to a pregnant cow](http://www.restapitutorial.com/lessons/idempotency.html). Let's say you bring over a bull to get a cow pregnant. Even if the bull and cow mate multiple times, the result will be just one pregnancy, not a pregnancy for each mating session.
+
+{% include random_ad.html %}
 
 ### Update your pet
 

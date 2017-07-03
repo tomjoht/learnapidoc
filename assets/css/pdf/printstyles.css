@@ -13,8 +13,8 @@ table .table {max-width:650px;}
 
 #navig a[href]::after { content: leader(".") target-counter(attr(href), page); }
 
-a[href]::after {
-    content: " (page " target-counter(attr(href), page) ")"
+a[href^="http:"]::after, a[href^="https:"]::after {
+    content: "";
 }
 
 a[href^="http:"]::after, a[href^="https:"]::after {
