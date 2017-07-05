@@ -15,9 +15,11 @@ While that approach works, you'll run into several problems:
 *  How do you gather feedback from reviewers about specific parts of the spec?
 *  How do you provide the API in the myriad code frameworks your users might want it in?
 
-When you're working on REST API documentation, you need tools that are specifically designed for REST APIs &mdash; tools that allow you to create, share, collaborate, version, publish the documentation, in addition to generating the variety of code samples that users want.
+When you're working on REST API documentation, you need tools that are specifically designed for REST APIs &mdash; tools that allow you to create, share, collaborate, version, test, and publish the documentation.
 
-There's a point at which experimenting with the free Swagger UI tooling hits a wall and you'll need to take your tooling to the next level. This is where [SwaggerHub](swaggerhub.com) from [Smartbear](https://smartbear.com/) comes in. SwaggerHub is used by more than 15,000 software teams across the globe. Smartbear is the same company that maintains and develops tooling to support the Swagger or OpenAPI specification. They developed SwaggerHub as a tool to help teams collaborate around the Swagger spec.
+There's a point at which experimenting with the free Swagger UI tooling hits a wall and you'll need to take your toolkit to the next level. This is where [SwaggerHub](swaggerhub.com) from [Smartbear](https://smartbear.com/) comes in. SwaggerHub is used by more than 15,000 software teams across the globe.
+
+Smartbear &mdash; the same company that maintains and develops tooling to support the Swagger or OpenAPI specification &mdash; developed SwaggerHub as a way to help teams collaborate around the Swagger spec. Many of the client and server SDKs are available from SwaggerHub, and there are a host of additional features you can leverage as you design, test, and publish your API.
 
 ## The SwaggerHub Dashboard
 
