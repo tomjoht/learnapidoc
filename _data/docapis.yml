@@ -224,7 +224,7 @@ folders:
   - title: Swagger spec deep dive
     jurl: /pubapis_swagger_spec_deep_dive.html
 
-  - title: Swaggerhub tutorial
+  - title: Manage Swagger projects with SwaggerHub
     jurl: /pubapis_swaggerhub_smartbear.html
 
   - title: More about YAML
