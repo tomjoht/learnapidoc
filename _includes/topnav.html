@@ -3,9 +3,7 @@
 <head>
     <meta charset="utf-8">
     {% if page.layout == "homepage" or page.type == "search" %}
-    <title>{{page.title}} | {{site.title}}</title>
-    {% else %}
-    <title>{{page.title}} | {{page.product}}</title>
+    <title>{{page.title}} | {{page.course}} | {{site.title}}</title>
     {% endif %}
     <base>
     <meta name="description" content="{% if page.content %}{{ page.content | truncatewords: 30 | strip_html }} {% else %}{{site.uistring.description}}{% endif %}" />
