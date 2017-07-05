@@ -1,5 +1,5 @@
 ---
-title: "Swaggerhub tutorial"
+title: "Manage Swagger Projects with SwaggerHub"
 permalink: /pubapis_swaggerhub_smartbear.html
 course: "Documenting REST APIs"
 sidebar: docapis
