@@ -6,7 +6,9 @@
   <li>
     {% for pg in site.docs %}
     {% if pg.permalink == page.path1 %}
-    <a href="{{pg.url | remove: "/"}}" {% if page.url == pg.path1 %}class="active"{% endif %}>{{pg.title}}</a>
+    {% if page.url == pg.path1 %}{{pg.title}}{% else %}
+    <a href="{{pg.url | remove: "/"}}">{{pg.title}}</a>
+    {% endif %}
      {% endif %}
      {% endfor %}
   </li>
@@ -16,7 +18,9 @@
   <li>
     {% for pg in site.docs %}
     {% if pg.permalink == page.path2 %}
-    <a href="{{pg.url | remove: "/"}}" {% if page.url == pg.path1 %}class="active"{% endif %}>{{pg.title}}</a>
+    {% if page.url == pg.path2 %}{{pg.title}}{% else %}
+    <a href="{{pg.url | remove: "/"}}">{{pg.title}}</a>
+    {% endif %}
      {% endif %}
      {% endfor %}
   </li>
@@ -26,7 +30,9 @@
   <li>
     {% for pg in site.docs %}
     {% if pg.permalink == page.path3 %}
-    <a href="{{pg.url | remove: "/"}}" {% if page.url == pg.path1 %}class="active"{% endif %}>{{pg.title}}</a>
+    {% if page.url == pg.path3 %}{{pg.title}}{% else %}
+    <a href="{{pg.url | remove: "/"}}">{{pg.title}}</a>
+    {% endif %}
      {% endif %}
      {% endfor %}
   </li>
