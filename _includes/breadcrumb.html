@@ -1,12 +1,12 @@
 
 <ol class="breadcrumb">
   <li><a href="http://idratherbewriting.com">I'd Rather Be Writing</a></li>
-  <li><a href="http://idratherbewriting.com/learnapidoc">Learn API Doc</a></li>
+  <li><a href="http://idratherbewriting.com/learnapidoc"{% if page.url contains "learnapidoc/index.html" %}class="active"{% endif %}>Learn API Doc</a></li>
   {% if page.path1 %}
   <li>
     {% for pg in site.docs %}
     {% if pg.permalink == page.path1 %}
-    <a href="{{pg.url}}" {% if page.url == pg.path1 %}class="active"{% endif %}>{{pg.title}}</a>
+    <a href="{{pg.url | remove: "/"}}" {% if page.url == pg.path1 %}class="active"{% endif %}>{{pg.title}}</a>
      {% endif %}
      {% endfor %}
   </li>
@@ -16,7 +16,7 @@
   <li>
     {% for pg in site.docs %}
     {% if pg.permalink == page.path2 %}
-    <a href="{{pg.url}}" {% if page.url == pg.path1 %}class="active"{% endif %}>{{pg.title}}</a>
+    <a href="{{pg.url | remove: "/"}}" {% if page.url == pg.path1 %}class="active"{% endif %}>{{pg.title}}</a>
      {% endif %}
      {% endfor %}
   </li>
@@ -26,7 +26,7 @@
   <li>
     {% for pg in site.docs %}
     {% if pg.permalink == page.path3 %}
-    <a href="{{pg.url}}" {% if page.url == pg.path1 %}class="active"{% endif %}>{{pg.title}}</a>
+    <a href="{{pg.url | remove: "/"}}" {% if page.url == pg.path1 %}class="active"{% endif %}>{{pg.title}}</a>
      {% endif %}
      {% endfor %}
   </li>
