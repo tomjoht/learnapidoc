@@ -408,3 +408,81 @@ h3#id-rather-be-writing-newsletter {
     font-weight: bold;
     margin-bottom:5px;
 }
+
+.breadcrumb {
+  padding: 0px 10px;
+  margin-top: 5px;
+}
+
+/* minitoc on page (automatic jump menu)*/
+
+ul.onPageMinitoc {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  padding-top:20px;
+  margin-top: 30px;
+  color: gray;
+  padding-right: 20px;
+  max-width: 400px;
+}
+
+.docs ul.onPageMinitoc::before  {
+  font-size:18px;
+  padding-top:30px;
+  margin: 20px 0px 20px -30px;
+}
+
+ul.onPageMinitoc li {
+  list-style: none;
+  color: #0066c0;
+}
+ul.onPageMinitoc li::before {
+  content: '\f096';
+  font-family: 'FontAwesome';
+  color: #0066c0;
+  padding-right: 10px;
+  text-decoration: none;
+  font-size: 80%;
+}
+
+i.onPageMinitocItem {
+  padding-right: 10px;
+}
+
+ul.onPageMinitoc::before  {
+content: "Pages in This Section";
+}
+
+/* minitoc kramdown */
+ul#markdown-toc {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  max-width: 400px;
+  padding-top:20px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: gray;
+  padding-right: 7px;
+  background-color: #f7f7f7;
+}
+
+ul#markdown-toc::before  {
+  font-size:18px;
+  padding-top:30px;
+  margin: 20px 0px 20px -30px;
+  content: "Table of Contents";
+}
+
+ul#markdown-toc a {
+    text-decoration: none;
+}
+
+ul#markdown-toc li ul {
+    color: gray;
+}
+/* end mini toc */
+
+ul#markdown-toc::before  {
+content: "Table of Contents"
+}

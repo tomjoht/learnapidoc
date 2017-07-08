@@ -9,6 +9,9 @@
 .docnav ul {
   padding-left: 15px
 }
+
+
+
 .docnav li {
   list-style: none;
   font: normal 12px "Open Sans", "Lucida Grande", "Helvetica Neue", Arial;
@@ -67,6 +70,7 @@
 .docnav li {
   margin: 7px 0px;
 }
+
 li.level1.open > ul > li.level1items.open a,
 li.level2.open > ul > li.level2items.open a,
 li.level3.open > ul > li.level3items.open a {
@@ -78,6 +82,26 @@ li.level2.open > ul > li.level2items.open > a:before,
 li.level3.open > ul > li.level3items.open > a:before {
   color: black;
 }
+
+li.level1.open > ul > li.level1items a,
+li.level2.open > ul > li.level2items a,
+li.level3.open > ul > li.level3items a {
+  font-weight: normal;
+  color: #0066c0;
+}
+li.level1.open > ul > li.level1items > a:before,
+li.level2.open > ul > li.level2items > a:before,
+li.level3.open > ul > li.level3items > a:before {
+  font-weight: normal;
+  color: #0066c0;
+}
+
+
+li.folderTitle.current.open > a.subfoldersTitle {
+    font-weight: bold;
+    color: black;
+}
+
 .relatedResources {
   font-size: 13px;
   color: black;

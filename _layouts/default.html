@@ -13,17 +13,8 @@
 
             <!-- main area -->
             <div class="col-xs-12 col-sm-9 main">
-
-                    <div class="subtitle">
-                      {% unless page.type == "search" or page.type == "homepage" %}
-                        <a href="http://idratherbewriting.com" class="noCrossRef productSubtitle"> Home </a> > <a class="noCrossRef productSubtitle" href="{{site.url}}">Learn API Doc</a> > {{page.path | remove: "_docs/" | split: "/" | first }}
-                          {% endunless %}
-                      {% if page.type == "homepage" %}
-                      <a href="http://idratherbewriting.com" class="noCrossRef productSubtitle"> Home </a> > <a class="noCrossRef productSubtitle" href="{{site.url}}">Learn API Doc</a> > {{page.path}}
-
-                      {% endif %}
-
-                      </div>
+{% include breadcrumb.html %}
+                  
 
                     <h1>{{page.title}}</h1>
                     <div class="donateButton">

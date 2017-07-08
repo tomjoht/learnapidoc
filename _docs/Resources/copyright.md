@@ -3,7 +3,8 @@ title: "Copyright"
 permalink: /copyright.html
 course: "Documenting REST APIs"
 sidebar: docapis
-section: introtoapis
+section: resources
+path1: /resources.html
 ---
 
 Copyright © 2017 by Tom Johnson

@@ -7,7 +7,8 @@ keywords:
 course: "Documenting REST APIs"
 weight: 13.1
 sidebar: docapis
-section: publishingapis
+section: resources 
+path1: /resources.html
 ---
 
 {% include note.html content="This page is under construction ..." %}

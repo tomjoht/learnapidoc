@@ -1,0 +1,47 @@
+{% if site.format == "web" %}
+{% assign sidebar = site.data[page.sidebar] %}
+{% elsif site.format == "pdf" %}
+{% assign sidebar = site.data[site.sidebar] %}
+{% endif %}
+
+{% comment %}check for items at first level {% endcomment %}
+<ul class="onPageMinitoc">
+{% for folder in sidebar.folders %}
+  {% if folder.jurl == page.permalink %}
+    {% for folderitem in folder.folderitems %}
+      <li><a href="{{folderitem.jurl | remove: "/" }}">{{folderitem.title}}</a></li>
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+{% comment %}check for items at second level {% endcomment %}
+{% for folder in sidebar.folders %}
+  {% for folderitem in folder.folderitems %}
+    {% for subfolder in folderitem.subfolders %}
+      {% if subfolder.jurl == page.permalink %}
+        {% for subfolderitem in subfolder.subfolderitems %}
+          <li><a href="{{subfolderitem.jurl | remove: "/" }}">{{subfolderitem.title}}</a></li>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+{% endfor %}
+
+{% comment %}check for items at third level {% endcomment %}
+{% for folder in sidebar.folders %}
+  {% for folderitem in folder.folderitems %}
+    {% for subfolder in folderitem.subfolders %}
+      {% for subfolderitem in subfolder.subfolderitems %}
+        {% for subsubfolder in subfolderitem.subsubfolders %}
+          {% if subsubfolder.jurl == page.permalink %}
+            {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
+              <li><a href="{{subsubfolderitem.jurl }}">{{subsubfolderitem.title}}</a></li>
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    {% endfor %}
+  {% endfor %}
+{% endfor %}
+
+</ul>

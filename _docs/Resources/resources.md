@@ -4,9 +4,9 @@ permalink: /resources.html
 sidebar: docapis
 ---
 
-**In this section:**
+<ul class="onPageMinitoc">
 
 {% assign doclist = site.docs | where: "section", "resources" | sort: "weight" %}
 {% for page in doclist %}
-* [{{page.title}}]({{page.permalink | remove: "/" }})
+<li><a href="{{page.permalink | remove: "/" }}">{{page.title}}</a></li>
 {% endfor %}
