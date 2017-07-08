@@ -1,7 +1,7 @@
 
 <ol class="breadcrumb">
   <li><a href="http://idratherbewriting.com">I'd Rather Be Writing</a></li>
-  <li><a href="http://idratherbewriting.com/learnapidoc"{% if page.url contains "learnapidoc/index.html" %}class="active"{% endif %}>Learn API Doc</a></li>
+  <li><a href="http://idratherbewriting.com/learnapidoc"{% if page.url == "/index.html" %}class="active"{% endif %}>Learn API Doc</a></li>
   {% if page.path1 %}
   <li>
     {% for pg in site.docs %}
