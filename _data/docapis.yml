@@ -68,7 +68,7 @@ folders:
   - title: Diving into dot notation
     jurl: /docapis_diving_into_dot_notation.html
 
-- title: Documenting a new API endpoint
+- title: Documenting endpoints
   jurl: /docendpoints.html
   folderitems:
 
@@ -138,7 +138,7 @@ folders:
   jurl: /otherapis.html
   folderitems:
 
-  - title: Exploring more REST APIs
+  - title: Exploring other REST APIs overview
     jurl: /docapis_more_rest_exercises.html
 
   - title: EventBrite example
@@ -239,11 +239,11 @@ folders:
   - title: Combining Swagger's reference output with user guide docs
     jurl: /pubapis_combine_swagger_and_guide.html
 
-- title: Design patterns
+- title: Design patterns with API doc sites
   jurl: /designpatterns.html
   folderitems:
 
-    - title: Design patterns
+    - title: Design patterns overview
       jurl: /pubapis_design_patterns.html
 
     - title: Structure and templates

@@ -4,7 +4,7 @@ permalink: /foreward.html
 course: "Documenting REST APIs"
 weight: 1.1
 sidebar: docapis
-section: introtoapis 
+section: introtoapis
 path1: /introtoapis.html
 ---
 

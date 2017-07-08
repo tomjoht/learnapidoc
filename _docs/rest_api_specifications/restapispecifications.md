@@ -1,6 +1,6 @@
 ---
 title: REST API specifications
-permalink: restapispecifications.html
+permalink: /restapispecifications.html
 sidebar: docapis
 path1: /restapispecifications.html
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Design patterns"
+title: "Design patterns overview"
 permalink: /pubapis_design_patterns.html
 course: "Documenting REST APIs"
 sidebar: docapis

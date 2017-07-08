@@ -1,5 +1,5 @@
 ---
-title: Design Patterns with API documentation sites
+title: Design patterns with API doc sites
 permalink: /designpatterns.html
 sidebar: docapis
 path1: /designpatterns.html

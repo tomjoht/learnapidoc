@@ -4,7 +4,7 @@ course: "Documenting REST APIs"
 permalink: /jobapis_overview.html
 weight: 11.0
 sidebar: docapis
-section: jobapis 
+section: jobapis
 path1: /jobapis.html
 ---
 

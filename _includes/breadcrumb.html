@@ -1,25 +1,12 @@
 
-{% comment %}
-<div class="subtitle">
-  {% unless page.type == "search" or page.type == "homepage" %}
-    <a href="http://idratherbewriting.com" class="noCrossRef productSubtitle"> Home </a> > <a class="noCrossRef productSubtitle" href="{{site.url}}">Learn API Doc</a> > {{page.path | remove: "_docs/" | split: "/" | first }}
-      {% endunless %}
-  {% if page.type == "homepage" %}
-  <a href="http://idratherbewriting.com" class="noCrossRef productSubtitle"> Home </a> > <a class="noCrossRef productSubtitle" href="{{site.url}}">Learn API Doc</a> > {{page.path}}
-
-  {% endif %}
-
-  </div>
-{% endcomment %}
-
 <ol class="breadcrumb">
   <li><a href="http://idratherbewriting.com">I'd Rather Be Writing</a></li>
-  <li><a href="/learnapidoc">Learn API Doc</a></li>
+  <li><a href="http://idratherbewriting.com/learnapidoc">Learn API Doc</a></li>
   {% if page.path1 %}
   <li>
     {% for pg in site.docs %}
     {% if pg.permalink == page.path1 %}
-    <a href="{{pg.url}}">{{pg.title}}</a>
+    <a href="{{pg.url}}" {% if page.url == pg.path1 %}class="active"{% endif %}>{{pg.title}}</a>
      {% endif %}
      {% endfor %}
   </li>
@@ -29,7 +16,7 @@
   <li>
     {% for pg in site.docs %}
     {% if pg.permalink == page.path2 %}
-    <a href="{{pg.url}}">{{pg.title}}</a>
+    <a href="{{pg.url}}" {% if page.url == pg.path1 %}class="active"{% endif %}>{{pg.title}}</a>
      {% endif %}
      {% endfor %}
   </li>
@@ -39,7 +26,7 @@
   <li>
     {% for pg in site.docs %}
     {% if pg.permalink == page.path3 %}
-    <a href="{{pg.url}}">{{pg.title}}</a>
+    <a href="{{pg.url}}" {% if page.url == pg.path1 %}class="active"{% endif %}>{{pg.title}}</a>
      {% endif %}
      {% endfor %}
   </li>

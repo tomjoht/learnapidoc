@@ -1,5 +1,5 @@
 ---
-title: Getting a job in API Documentation
+title: Getting a job in API documentation
 permalink: /jobapis.html
 sidebar: docapis
 path1: /jobapis.html

@@ -414,6 +414,10 @@ h3#id-rather-be-writing-newsletter {
   margin-top: 5px;
 }
 
+.breadcrumb a.active {
+    color: #777;
+}
+
 /* minitoc on page (automatic jump menu)*/
 
 ul.onPageMinitoc {
@@ -432,25 +436,15 @@ ul.onPageMinitoc {
   margin: 20px 0px 20px -30px;
 }
 
-ul.onPageMinitoc li {
-  list-style: none;
-  color: #0066c0;
-}
-ul.onPageMinitoc li::before {
-  content: '\f096';
-  font-family: 'FontAwesome';
-  color: #0066c0;
-  padding-right: 10px;
-  text-decoration: none;
-  font-size: 80%;
-}
-
 i.onPageMinitocItem {
   padding-right: 10px;
 }
 
 ul.onPageMinitoc::before  {
 content: "Pages in This Section";
+font-size:18px;
+padding-top:30px;
+margin: 20px 0px 20px -30px;
 }
 
 /* minitoc kramdown */

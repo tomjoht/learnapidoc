@@ -1,11 +1,11 @@
 ---
-title: Exploring more REST APIs
+title: Exploring other REST APIs overview
 permalink: /docapis_more_rest_exercises.html
 keywords:
 course: "Documenting REST APIs"
 weight: 6.0
 sidebar: docapis
-section: otherapis 
+section: otherapis
 path1: /otherapis.html
 ---
 

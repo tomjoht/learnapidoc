@@ -4,11 +4,18 @@ permalink: /pubapis_combine_swagger_and_guide.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 8.6
-section: restapispecifications 
+section: restapispecifications
 path1: /restapispecifications.html
 ---
 
 Whenever discussions about Swagger and other REST API specifications take place, we technical writers invariably ask how we can include the Swagger UI display within our other documentation. Or, how can we include our my other documentation in within the Swagger UI output?
+
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## Single source of truth
 
 When you start pushing your documentation into another source file &mdash; in this case, a YAML or JSON file that's included in a Swagger UI fileset, you end up splitting your single source of truth into multiple sources. You may have defined your endpoints and parameters in your regular documentation, and now the Swagger spec asks you to provide the same endpoints and descriptions in the spec. Do you copy and paste? Do you somehow generate the descriptions from the same source?
 

@@ -1,6 +1,6 @@
 ---
 title: Publishing APIs
-permalink: publishingapis.html
+permalink: /publishingapis.html
 sidebar: docapis
 path1: /publishingapis.html
 ---

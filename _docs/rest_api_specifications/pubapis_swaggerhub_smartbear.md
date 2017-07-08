@@ -10,7 +10,14 @@ path1: /restapispecifications.html
 
 Previously in this course, I explored using [Swagger UI](https://github.com/swagger-api/swagger-ui) as a way to publish your Swagger documentation, and I wrote a [brief tutorial](pubapis_swagger.html) on how to download Swagger UI from GitHub, customize the index.html file from the distribution folder to reference your own Swagger spec file, and then deploy it on a web server.
 
-While that approach works, you'll run into several problems:
+{% if site.target == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## Challenges with the free Swagger UI approach
+
+While the free Swagger UI approach works, you'll run into several problems:
 
 *  It's challenging to collaborate with other project members on the spec
 *  It's difficult to gather feedback from reviewers about specific parts of the spec
