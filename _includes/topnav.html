@@ -25,6 +25,12 @@
         $( document ).ready(function() {
             anchors.add('h2,h3,h4,h5');
         });
+        function my_search_google()
+{
+    var query = document.getElementById("my-google-search").value;
+    window.open("http://google.com/search?q=" + query
+    + "%20site:" + "http://idratherbewriting.com/learnapidoc");
+}
         </script>
     {% endunless %}
 
