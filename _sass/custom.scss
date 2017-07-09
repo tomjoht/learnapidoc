@@ -51,12 +51,14 @@ div#search-results p {
 .input-group.search {
   max-width: 200px;
   margin-right: 10px;
-  margin-top: 30px;
 }
 .sidebarSearchBar {
   margin-bottom: 30px;
   padding-top:20px;
+  max-width: 80%;
+
 }
+
 /* endsearch */
 
 
@@ -267,6 +269,7 @@ span.red {
 
 p.external {
     font-size: 11px;
+    clear: both;
 }
 ol li ol li {
     list-style-type: lower-alpha;
