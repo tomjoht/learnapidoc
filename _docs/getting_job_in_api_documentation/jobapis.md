@@ -6,7 +6,7 @@ path1: /jobapis.html
 ---
 
 <ul class="onPageMinitoc">
-{% assign doclist = site.docs | where: "section", "otherapis" | sort: "weight" %}
+{% assign doclist = site.docs | where: "section", "jobapis" | sort: "weight" %}
 {% for page in doclist %}
 <li><a href="{{page.permalink | remove: "/" }}">{{page.title}}</a></li>
 {% endfor %}

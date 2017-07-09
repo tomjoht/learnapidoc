@@ -1,5 +1,5 @@
 ---
-title: Documenting code samples
+title: Document code samples
 permalink: /docapis_doc_code_samples.html
 categories:
 - api-doc

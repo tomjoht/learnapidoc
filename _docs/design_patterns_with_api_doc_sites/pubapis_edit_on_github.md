@@ -1,5 +1,5 @@
 ---
-title: "Adding an Edit on Github button"
+title: "Edit on Github buttons"
 permalink: /pubapis_edit_on_github.html
 course: "Documenting REST APIs"
 sidebar: docapis

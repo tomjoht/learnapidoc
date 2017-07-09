@@ -1,5 +1,5 @@
 ---
-title: Documenting parameters
+title: Document parameters
 permalink: /docapis_doc_parameters.html
 categories:
 - api-doc

@@ -1,5 +1,5 @@
 ---
-title: Documenting authentication and authorization
+title: Document authentication and authorization
 permalink: /docapis_more_about_authorization.html
 keywords:
 course: "Documenting REST APIs"

@@ -1,10 +1,10 @@
 ---
-title: "Getting the Java source"
+title: "Get the Java source"
 permalink: /nativelibraryapis_getting_the_source.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 10.1
-section: nativelibraryapis 
+section: nativelibraryapis
 path1: /nativelibraryapis.html
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Creating the user guide
+title: Create the user guide
 permalink: /docapis_create_user_guide.html
 categories:
 - api-doc
@@ -7,7 +7,7 @@ keywords:
 course: "Documenting REST APIs"
 weight: 5.0
 sidebar: docapis
-section: docnonref 
+section: docnonref
 path1: /docnonref.html
 ---
 

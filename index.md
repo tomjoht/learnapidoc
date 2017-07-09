@@ -1,10 +1,13 @@
 ---
 title: "Documenting APIs: A guide for technical writers"
-permalink: index.html
+permalink: /index.html
 sidebar: docapis
 type: homepage
 path: Introduction to REST APIs
+section: introtoapis
+path1: /introtoapis.html
 weight: 1.0
+class: first
 ---
 
 In this course on writing documentation for REST APIs, instead of just talking about abstract concepts, I contextualize REST APIs with a direct, hands-on approach.

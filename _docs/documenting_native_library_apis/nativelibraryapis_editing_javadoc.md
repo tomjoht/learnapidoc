@@ -1,10 +1,10 @@
 ---
-title: "Making edits to Javadoc tags"
+title: "Make edits to Javadoc tags"
 permalink: /nativelibraryapis_editing_javadoc.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 10.6
-section: nativelibraryapis 
+section: nativelibraryapis
 path1: /nativelibraryapis.html
 ---
 

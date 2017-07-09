@@ -1,5 +1,5 @@
 ---
-title: Using the JSON from the response payload
+title: Use the JSON from the response payload
 permalink: /docapis_json_console.html
 categories:
 - api-doc
@@ -7,7 +7,7 @@ keywords:
 course: "Documenting REST APIs"
 weight: 2.8
 sidebar: docapis
-section: likeadeveloper 
+section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 

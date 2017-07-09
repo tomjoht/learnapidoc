@@ -1,5 +1,5 @@
 ---
-title: Documenting the endpoints and methods
+title: Document the endpoints and methods
 permalink: /docapis_doc_endpoint_definitions.html
 categories:
 - api-doc

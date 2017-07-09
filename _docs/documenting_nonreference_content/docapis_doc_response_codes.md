@@ -1,5 +1,5 @@
 ---
-title: Documenting response and error codes
+title: Document response and error codes
 permalink: /docapis_doc_response_codes.html
 categories:
 - api-doc

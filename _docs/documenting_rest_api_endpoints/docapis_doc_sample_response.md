@@ -1,5 +1,5 @@
 ---
-title: Documenting sample responses
+title: Document sample responses
 permalink: /docapis_doc_sample_responses.html
 categories:
 - api-doc

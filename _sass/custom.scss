@@ -480,3 +480,7 @@ ul#markdown-toc li ul {
 ul#markdown-toc::before  {
 content: "Table of Contents"
 }
+
+.navbar-form {
+  margin-left: -15px;
+}

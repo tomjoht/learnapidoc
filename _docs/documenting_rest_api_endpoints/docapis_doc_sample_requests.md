@@ -1,5 +1,5 @@
 ---
-title: Documenting sample requests
+title: Document sample requests
 permalink: /docapis_doc_sample_requests.html
 categories:
 - api-doc

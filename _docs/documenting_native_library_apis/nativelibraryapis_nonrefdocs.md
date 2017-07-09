@@ -1,10 +1,10 @@
 ---
-title: "Creating non-ref docs with native library APIs"
+title: "Create non-ref docs with native library APIs"
 permalink: /nativelibraryapis_nonrefdocs.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 10.8
-section: nativelibraryapis 
+section: nativelibraryapis
 path1: /nativelibraryapis.html
 ---
 

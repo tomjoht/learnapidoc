@@ -1,5 +1,5 @@
 ---
-title: "Combining Swagger's reference output with user guide docs"
+title: "Combine Swagger's reference output with user guide docs"
 permalink: /pubapis_combine_swagger_and_guide.html
 course: "Documenting REST APIs"
 sidebar: docapis

@@ -1,5 +1,5 @@
 ---
-title: Getting authorization keys
+title: Get authorization keys
 permalink: /docapis_get_auth_keys.html
 categories:
 - api-doc
@@ -7,7 +7,7 @@ keywords:
 course: "Documenting REST APIs"
 weight: 2.1
 sidebar: docapis
-section: likeadeveloper 
+section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 

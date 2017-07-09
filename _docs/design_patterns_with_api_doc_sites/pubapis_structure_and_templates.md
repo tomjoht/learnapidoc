@@ -1,5 +1,5 @@
 ---
-title: "Design pattern: Structure and templates"
+title: "Structure and templates"
 permalink: /pubapis_structure_and_templates.html
 course: "Documenting REST APIs"
 sidebar: docapis

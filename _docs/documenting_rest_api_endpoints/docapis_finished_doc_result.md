@@ -1,5 +1,5 @@
 ---
-title: Putting it all together
+title: Put it all together
 permalink: /docapis_finished_doc_result.html
 categories:
 - api-doc
@@ -7,7 +7,7 @@ keywords:
 course: "Documenting REST APIs"
 weight: 3.7
 sidebar: docapis
-section: docendpoints 
+section: docendpoints
 path1: /docendpoints.html
 ---
 

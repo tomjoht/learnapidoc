@@ -1,5 +1,5 @@
 ---
-title: Documenting code samples and tutorials
+title: Document code samples and tutorials
 permalink: /docapis_codesamples_bestpractices.html
 categories:
 - api-doc

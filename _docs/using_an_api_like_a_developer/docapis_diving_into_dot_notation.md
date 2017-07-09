@@ -1,11 +1,11 @@
 ---
-title: Diving into dot notation
+title: Dive into dot notation
 permalink: /docapis_diving_into_dot_notation.html
 keywords:
 course: "Documenting REST APIs"
 weight: 2.91
 sidebar: docapis
-section: likeadeveloper 
+section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 

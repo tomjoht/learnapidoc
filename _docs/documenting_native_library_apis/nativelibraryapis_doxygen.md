@@ -1,10 +1,10 @@
 ---
-title: Doxygen, another document generator
+title: Doxygen, a document generator mainly for C++
 permalink: /nativelibraryapis_doxygen.html
 course: "Documenting REST APIs"
 weight: 10.7
 sidebar: docapis
-section: nativelibraryapis 
+section: nativelibraryapis
 path1: /nativelibraryapis.html
 ---
 

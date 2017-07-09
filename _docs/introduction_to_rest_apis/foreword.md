@@ -1,6 +1,6 @@
 ---
-title: "Foreward"
-permalink: /foreward.html
+title: "Foreword"
+permalink: /foreword.html
 course: "Documenting REST APIs"
 weight: 1.1
 sidebar: docapis

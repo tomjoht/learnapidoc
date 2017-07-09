@@ -1,5 +1,5 @@
 ---
-title: "Long-ish pages"
+title: "Long pages"
 permalink: /pubapis_longish_pages.html
 course: "Documenting REST APIs"
 sidebar: docapis

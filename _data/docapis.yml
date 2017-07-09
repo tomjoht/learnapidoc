@@ -1,4 +1,4 @@
-sidebarTitle: Documenting REST APIs
+sidebartitle: Document REST APIs
 
 folders:
 
@@ -31,114 +31,114 @@ folders:
   - title: What is a REST API?
     jurl: /docapis_what-is-a-rest-api.html
 
-- title: Using a REST API as a developer
+- title: Use a REST API as a developer
   jurl: /likeadeveloper.html
   folderitems:
 
   - title: Scenario for using a weather API
     jurl: /docapis_scenario_for_using_weather_api.html
 
-  - title: Getting authorization keys
+  - title: Get authorization keys
     jurl: /docapis_get_auth_keys.html
 
-  - title: Submit calls through Postman
+  - title: Submit requests through Postman
     jurl: /docapis_postman.html
 
-  - title: Installing cURL
+  - title: cURL intro and installation
     jurl: /docapis_install_curl.html
 
-  - title: Making a cURL call
+  - title: Make a cURL call
     jurl: /docapis_make_curl_call.html
 
   - title: Understand cURL more
     jurl: /docapis_understand_curl.html
 
-  - title: Using methods with cURL
+  - title: Use methods with cURL
     jurl: /docapis_curl_with_petstore.html
 
   - title: Analyze the JSON response
     jurl: /docapis_analyze_json.html
 
-  - title: Log JSON to the console
+  - title: Use the JSON from the response payload
     jurl: /docapis_json_console.html
 
   - title: Access and print a specific JSON value
     jurl: /docapis_access_json_values.html
 
-  - title: Diving into dot notation
+  - title: Dive into dot notation
     jurl: /docapis_diving_into_dot_notation.html
 
-- title: Documenting endpoints
+- title: Document endpoints
   jurl: /docendpoints.html
   folderitems:
 
   - title: New API endpoint to document
     jurl: /docapis_new_endpoint_to_doc.html
 
-  - title: Documenting resource descriptions
+  - title: Document resource descriptions
     jurl: /docapis_resource_descriptions.html
 
-  - title: Documenting endpoint definitions and methods
+  - title: Document endpoint definitions and methods
     jurl: /docapis_doc_endpoint_definitions.html
 
-  - title: Documenting parameters
+  - title: Document parameters
     jurl: /docapis_doc_parameters.html
 
-  - title: Documenting sample requests
+  - title: Document sample requests
     jurl: /docapis_doc_sample_requests.html
 
-  - title: Documenting sample responses
+  - title: Document sample responses
     jurl: /docapis_doc_sample_responses.html
 
-  - title: Documenting code samples
+  - title: Document code samples
     jurl: /docapis_doc_code_samples.html
 
-  - title: Putting it all together
+  - title: Put it all together
     jurl: /docapis_finished_doc_result.html
 
-- title: Testing your documentation
+- title: Test your documentation
   jurl: /testingdocs.html
   folderitems:
 
-  - title: "Set up a test environment"
+  - title: Set up a test environment
     jurl: /testingdocs_test_environment.html
 
-  - title: "Test all instructions yourself"
+  - title: Test all instructions yourself
     jurl: /testingdocs_test_your_instructions.html
 
-  - title: "Test your assumptions"
+  - title: Test your assumptions
     jurl: /testingdocs_testing_assumptions.html
 
-- title: Documenting non-reference sections
+- title: Document non-reference sections
   jurl: /docnonref.html
   folderitems:
 
-  - title: Creating user guide tasks
+  - title: Create user guide tasks
     jurl: /docapis_create_user_guide.html
 
-  - title: Writing the API overview
+  - title: Write the API overview
     jurl: /docapis_doc_overview.html
 
-  - title: Writing the Getting Started section
+  - title: Write the Getting Started section
     jurl: /docapis_doc_getting_started_section.html
 
-  - title: Documenting authentication and authorization
+  - title: Document authentication and authorization
     jurl: /docapis_more_about_authorization.html
 
-  - title: Documenting response and error codes
+  - title: Document response and error codes
     jurl: /docapis_doc_response_codes.html
 
-  - title: Documenting code samples and tutorials
+  - title: Document code samples and tutorials
     jurl: /docapis_codesamples_bestpractices.html
 
-  - title: Creating the quick reference guide
+  - title: Create the quick reference guide
     jurl: /docapis_doc_quick_reference.html
 
-- title: Exploring other REST APIs
+- title: Explore other REST APIs
   jurl: /otherapis.html
   folderitems:
 
-  - title: Exploring other REST APIs overview
+  - title: Explore other REST APIs overview
     jurl: /docapis_more_rest_exercises.html
 
   - title: EventBrite example
@@ -156,7 +156,7 @@ folders:
   - title: Next phase of course
     jurl: /docapis_completion.html
 
-- title: Publishing API docs
+- title: Publish API docs
   jurl: /publishingapis.html
   folderitems:
 
@@ -255,26 +255,26 @@ folders:
     - title: Abundant code samples
       jurl: /pubapis_code_samples.html
 
-    - title: Long-ish pages
+    - title: Long pages
       jurl: /pubapis_longish_pages.html
 
     - title: API interactivity
       jurl: /pubapis_api_interactivity.html
 
-    - title: Adding an Edit on Github button
+    - title: Edit on Github buttons
       jurl: /pubapis_edit_on_github.html
 
     - title: Challenging factors
       jurl: /pubapis_challenging_factors.html
 
-- title: Documenting native library APIs
+- title: Document native library APIs
   jurl: /nativelibraryapis.html
   folderitems:
 
   - title: Overview of native library APIs
     jurl: /nativelibraryapis_overview.html
 
-  - title: Getting the Java source
+  - title: Get the Java source
     jurl: /nativelibraryapis_getting_the_source.html
 
   - title: Java crash course
@@ -286,19 +286,19 @@ folders:
   - title: Javadoc tags
     jurl: /nativelibraryapis_javadoc_tags.html
 
-  - title: Exploring the Javadoc output
+  - title: Explore the Javadoc output
     jurl: /nativelibraryapis_exploring_javadoc_output.html
 
-  - title: Making edits to Javadoc tags
+  - title: Make edits to Javadoc tags
     jurl: /nativelibraryapis_editing_javadoc.html
 
-  - title: Doxygen, another document generator
+  - title: Doxygen, a document generator mainly for C++
     jurl: /nativelibraryapis_doxygen.html
 
-  - title: Documenting non-reference API docs
+  - title: Document non-reference API docs
     jurl: /nativelibraryapis_nonrefdocs.html
 
-- title: Getting a Job in API Documentation
+- title: Get a Job in API Documentation
   jurl: /jobapis.html
   folderitems:
 
@@ -354,6 +354,9 @@ folders:
 - title: Resources
   jurl: /resources.html
   folderitems:
+
+  - title: Glossary
+    jurl: /api-glossary.html
 
   - title: Copyright
     jurl: /copyright.html
