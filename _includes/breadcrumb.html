@@ -1,9 +1,7 @@
 
 <ol class="breadcrumb">
   <li><a href="http://idratherbewriting.com">I'd Rather Be Writing</a></li>
-  <li>{% if page.url == "/" or page.url == "/index.html" %}Learn API Doc{% else %}
-    <a href="http://idratherbewriting.com/learnapidoc">Learn API Doc</a></li>
-    {% endif %}
+    <li><a href="http://idratherbewriting.com/learnapidoc">Learn API Doc</a></li>
   {% if page.path1 %}
   <li>
     {% for pg in site.docs %}
