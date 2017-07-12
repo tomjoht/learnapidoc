@@ -60,7 +60,7 @@ When developers take the code and integrate it into a production environment, th
 
 ## Add both code comments and before-and-after explanations
 
-Your documentation regarding the code should mix code comments with some explanation either after or before the code sample. Brief code comments are set off with forward slashes `/` in the code; longer comments are set off between slashes with asterisks, like this: `/* .... */`.
+Your documentation regarding the code should mix code comments with some explanation either after or before the code sample. Brief code comments are set off with forward slashes `//` in the code; longer comments are set off between slashes with asterisks, like this: `/* .... */`.
 
 Comments within the code are usually short one-line notes that appear after every 5-10 lines of code. You can follow up this code with more robust explanations later.
 

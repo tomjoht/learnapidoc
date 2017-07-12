@@ -75,7 +75,7 @@ In general, if the placeholder name is ambiguous as to whether it's a placeholde
 
 It's common to list the method (GET, POST, PUT, DELETE) next to the endpoint. Since there's not much to say about the method itself, it makes sense to group the method with the endpoint. Here's an example from Box's API:
 
-<a href="https://box-content.readme.io/#comment-object"><img src="images/methodwithendpoint.png" alt="Box API" /></a>
+<a href="https://developer.box.com/reference/#add-a-comment-to-an-item"><img src="images/methodwithendpoint.png" alt="Box API" /></a>
 
 And here's an example from Linkedin's API:
 

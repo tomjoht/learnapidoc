@@ -55,7 +55,7 @@ Insert the gallery ID, select **Do not sign call** (we're just testing here, so 
 
 Here's the result:
 
-<img src="images/flickrresultfromcallmethod.png" alt="Flickr gallery response" /></a>
+<img src="images/flickrresultfromcallmethod.png" alt="Flickr gallery response" />
 
 The URL below the response shows the right syntax for using this method:
 
@@ -189,10 +189,10 @@ And the result looks like this:
 Note that this code uses JavaScript logic that is usually beyond the need to include in documentation. However, if it was a common scenario to embed a gallery of images on a web page, this kind of code and explanation would be helpful.
 
 * In this code, the [ajax method](http://api.jquery.com/jquery.ajax/) from jQuery gets the JSON payload. The payload is assigned to the `data` argument and then logged to the console.
-* The data object contains an object called `photos`, which contains an array called `photo`. The `title` field is a property in the photo object. The `title` is accessed through this dot notation: `data.photos.photo[0].title`.
+* The data object contains an object called `photos`, which contains an array called `photo`. The `title` field is a property in an object in the `photo` array. The `title` is accessed through this dot notation: `data.photos.photo[0].title`.
 * To get each item in the object, jQuery's [each method](http://api.jquery.com/jquery.each/) loops through an object's properties. Note that jQuery `each` method is commonly used for looping through results to get values. Here's how it works. For the first argument (`data.photos.photo`), you identify the object that you want to access.
-* For the `function( i, gp )` arguments, you list an index and value. You can use any names you want here. `gp` becomes a variable that refers to the `data.photos.photo` object you're looping through. `i` refers to the starting point through the object. (You don't actually need to refer to `i` beyond the mention here unless you want to begin the loop at a certain point.)
-* To access the properties in the JSON object, we use `gp.farm` instead of `data.photos.photo[0].farm`, because `gp` is an object reference to `data.photos.photo`.
+* For the `function( i, gp )` arguments, you list an index and value. You can use any names you want here. `gp` becomes a variable that refers to the `data.photos.photo` object you're looping through. `i` refers to the starting point through the object. (You don't actually need to refer to `i` beyond the mention here unless you want to begin or end the loop at a certain point.)
+* To access the properties in the JSON object, we use `gp.farm` instead of `data.photos.photo[0].farm`, because `gp` is an object reference to `data.photos.photo[i]`.
 * After the `each` function iterates through the response, I added some variables to make it easier to work with these components (using `serverId` instead of `gp.server`, etc.). And a `console.log` message checks to ensure we're getting values for each of the elements we need.
 * This comment shows where we need to plug in each of the variables:
 ```html

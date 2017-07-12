@@ -64,10 +64,10 @@ https://simple-weather.p.mashape.com/surfreport/123?&days=2&units=metrics&hour=1
 <p>surfreport: </p>
 
 <ul>
-<li>surfheight (time: feet)</li>
-<li>wind (time: kts)</li>
-<li>tide (time: feet)</li>
-<li>water temperature (time: F degrees)</li>
+<li>surfheight (units: feet)</li>
+<li>wind (units: kts)</li>
+<li>tide (units: feet)</li>
+<li>water temperature (units: F degrees)</li>
 <li>recommendation - string ("Go surfing!", "Surfing conditions okay, not great", "Not today -- try some other activity.")</li>
 </ul>
 

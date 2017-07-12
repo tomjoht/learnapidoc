@@ -32,11 +32,6 @@ Here's an example from Yelp's documentation:
 
 You can format the values in a variety of ways (aside from a table). If you're using a definition list or other non-table format, you should develop styles that make the values easily readable.
 
-{% if site.target == "web" %}
-* TOC
-{:toc}
-{% endif %}
-
 ## Four types of parameters
 
 REST APIs have four types of parameters:
@@ -93,7 +88,7 @@ Here's an example from Twilio:
 
 The `{PhoneNumber}` value in `lookups.twilio.com/v1/PhoneNumbers/{PhoneNumber}` is described in the endpoint description rather than in another section that lists the query parameters.
 
-Other important details about parameters are the maximum of minimum values allowed for the parameter, and whether the parameter is optional or required.
+Other important details about parameters are the maximum and minimum values allowed for the parameter, and whether the parameter is optional or required.
 
 {: .tip}
 When you test an API, try running an endpoint without the required parameters, or with the wrong parameters. See what kind of error response comes back. Include that response in your response codes section. I get deeper with the importance of testing in [Testing your docs](testingdocs.html).
@@ -153,7 +148,7 @@ The same parameter values might be used in other requests as well, so organizati
 
 ## Swagger UI's approach
 
-Is the display from the [Swagger UI](http://idratherbewriting.com/pubapis_swagger/) any better?  
+Is the display from the [Swagger UI](http://idratherbewriting.com/learnapidoc/pubapis_swagger) any better?  
 
 The [Swagger UI](https://github.com/swagger-api/swagger-ui) reads the Swagger spec file and displays it in the visual format that you see with examples such as the [Swagger Petstore](http://petstore.swagger.io/).
 

@@ -13,7 +13,7 @@ Our sample weather API from Mashape doesn't allow you to use anything but a GET 
 
 <a href="http://petstore.swagger.io/"><img src="images/petstore.png" alt="Swagger Petstore" /></a>
 
-In this example, you'll create a new pet, update the pet, get the pet's ID, delete the pet, and then try to get the deleted pet. D
+In this example, you'll create a new pet, update the pet, get the pet's ID, delete the pet, and then try to get the deleted pet.
 
 ### Create a new pet
 

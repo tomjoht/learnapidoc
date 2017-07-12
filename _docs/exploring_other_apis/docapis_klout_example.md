@@ -44,7 +44,7 @@ http://api.klout.com/v2/identity.json/twitter?screenName=tomjohnson&amp;key={you
 ```
 
 {: .note}
-In place of `{your api key}`, insert your own API key. (I initially displayed mine here only to find that bots grabbed it and made thousands of requests, which ended up disabling my API key.)" %}
+In place of `{your api key}`, insert your own API key. (I initially displayed mine here only to find that bots grabbed it and made thousands of requests, which ended up disabling my API key.)"
 
 My Klout ID is `1134760`.
 
@@ -315,7 +315,7 @@ The code uses the `ajax` method from jQuery to get a JSON payload for a specific
 
 The jQuery `each` method iterates through each property in the `data.myInfluencees` object. It renames this object `inf` (you can choose whatever names you want) and then gets the `entity.payload.nick` property (nickname) for each item in the object. It inserts this value into a link to the Twitter profile, and then appends the information to a specific tag on the page (`#kloutinfluencees`).
 
-Pretty much the same approach is used for the `data.myInfluencers` object, but the tag the data is appended to is (`kloutinfluencers`).
+Pretty much the same approach is used for the `data.myInfluencers` object, but the tag the data is appended to is (`#kloutinfluencers`).
 
 Note that in the `ajax` settings, a new attribute is included: `"dataType": "jsonp"`. If you omit this, you'll get an error message that says:
 

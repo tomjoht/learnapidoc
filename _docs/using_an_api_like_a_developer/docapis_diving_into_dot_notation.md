@@ -188,7 +188,7 @@ When you load the page and click the button, the following should appear:
 
 <hr />
 
-**Answers to "Exercise with dot notation activity**
+**Answers to "Exercise with dot notation activity"**
 
 Here's what your dot notation should look like:
 

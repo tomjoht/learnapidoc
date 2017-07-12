@@ -72,9 +72,9 @@ In Sendgrid's API, they include a warning message to users before testing out ca
 
 <a href="https://sendgrid.com/docs/API_Reference/Web_API/blocks.html"><img src="images/sendgridwarningmessage.png" alt="SendGrid API Explorer warning message" /></a>
 
-As far as integrating other API Explorer tooling, this is a task that should be relatively easy for developers. All the Explorer does it map values from a field to an API call and return the response to the same interface. In other words, the API plumbing is all there &mdash; you just need a little JavaScript and front-end skills to make it happen.
+As far as integrating other API Explorer tooling, this is a task that should be relatively easy for developers. All the Explorer does is map values from a field to an API call and return the response to the same interface. In other words, the API plumbing is all there &mdash; you just need a little JavaScript and front-end skills to make it happen.
 
-However, you don't have to build your own tooling. Existing tools such as [Swagger UI](http://swagger.io/swagger-ui/) (which parses a Swagger spec file) and [Readme.io](http://readme.io) (which allows you to enter the details manually) can integrate an API Explorer functionality directly into your documentation.
+However, you don't have to build your own tooling. Existing tools such as [Swagger UI](http://swagger.io/swagger-ui/) (which parses a Swagger spec file) and [Readme.io](http://readme.io) (which allows you to enter the details manually) can integrate API Explorer functionality directly into your documentation.
 
 ## Document the sample request with the surfreport/{beachId} endpoint
 

@@ -78,8 +78,8 @@ If you're documenting a hardware product, you'll want to secure a device that ha
 
 With some hardware products, it may be difficult to get a test instance of the product to play with. I once worked at a government facility documenting a million-dollar storage array. The only time I ever got to see the storage array was by signing into a special data server room environment, accompanied by an engineer, who wouldn't dream of letting me actually touch the thing, much less swap out a storage disk, run commands in the terminal, replace a RAID, or do some other task (for which I was supposedly writing instructions).
 
-(I learned early on to steer my career my jobs where I could actually get my hands on and play around with.) If you're documenting hardware, you need access to the hardware to provide reliable documentation on how to use it. You'll need to understand how to run apps on the device or otherwise interface with it.
+(I learned early on to steer my career towards jobs where I could actually get my hands on and play around with.) If you're documenting hardware, you need access to the hardware to provide reliable documentation on how to use it. You'll need to understand how to run apps on the device or otherwise interface with it.
 
 ## Next steps
 
-It might take one more days to get your test environment set up. Be persistent. After you get the test environment set up, it's time to [test your instructions](testingdocs_test_your_instructions.html).
+It might take one or more days to get your test environment set up. Be persistent. After you get the test environment set up, it's time to [test your instructions](testingdocs_test_your_instructions.html).

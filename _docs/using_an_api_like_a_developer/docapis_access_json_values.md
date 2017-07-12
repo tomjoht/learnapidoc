@@ -19,23 +19,23 @@ This section will use a tiny bit of JavaScript. You probably wouldn't use this c
 Let's say you wanted to pull out the `description` part of the JSON response. Here's the dot notation you would use:
 
 ```
-data.query.results.channel.item.description
+response.query.results.channel.item.description
 ```
 
-The dot (`.`) after `data` (the name of the JSON payload) is how you access the values you want from the JSON object. JSON wouldn't be very useful if you had to always print out the entire response. Instead, you select the exact element you want and pull that out through dot notation.
+The dot (`.`) after `response` (the name of the JSON payload) is how you access the values you want from the JSON object. JSON wouldn't be very useful if you had to always print out the entire response. Instead, you select the exact element you want and pull that out through dot notation.
 
 To pull out the description element from the JSON response and display it on the page, add this to your code sample, right below the `console.log(response)` line:
 
 ```js
-console.log(data.query.results.channel.item.description);
+console.log(response.query.results.channel.item.description);
 ```
 
 Your code should look like this:
 
 ```js
-  .done(function (data) {
-    console.log(data);
-    console.log (data.query.results.channel.item.description);
+  .done(function (response) {
+    console.log(response);
+    console.log (response.query.results.channel.item.description);
   });
 ```
 
@@ -58,7 +58,7 @@ Let's say you wanted to print part of the JSON (the description element) to the 
 2. Inside the tags of your `done` method, pull out the value you want into a variable, like this:
 
    ```js
-    var content = "data.query.results.channel.item.description";
+    var content = response.query.results.channel.item.description;
    ```
 
 3. Below this (same section) use the jQuery `append` method to append the variable to the element on your page:
