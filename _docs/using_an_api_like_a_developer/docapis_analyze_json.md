@@ -134,7 +134,7 @@ It's not very readable (by humans), so we can use a [JSON formatter tool](http:/
 
 ## JSON is how most REST APIs structure the response
 
-JSON stands for JavaScript Object Notation. It's the most common way REST APIs return information. Through Javascript, you can easily parse through the JSON and display it on a web page.
+JSON stands for JavaScript Object Notation. It's the most common way REST APIs return information. Through JavaScript, you can easily parse through the JSON and display it on a web page.
 
 Although some APIs return information in both JSON and XML, if you're trying to parse through the response and render it on a web page, JSON fits much better into the existing JavaScript + HTML toolset that powers most web pages.
 
@@ -148,8 +148,8 @@ An object is a collection of key-value pairs, surrounded by curly braces:
 
 ```json
 {
-"key1":"value1",
-"key2":"value2"
+  "key1": "value1",
+  "key2": "value2"
 }
 ```
 
@@ -213,7 +213,7 @@ And objects can contain arrays in the value part of the key-value pair:
 }
 ```
 
-Just remember, objects are set off with curly braces `{ }` and contain key-value pairs. Sometimes those values are arrays. Arrays are lists and are set off with square brackets `[ ]`.
+Just remember, objects are surrounded with curly braces `{ }` and contain key-value pairs. Sometimes those values are arrays. Arrays are lists and are surrounded with square brackets `[ ]`.
 
 {: .tip}
 It's important to understand the difference between objects and arrays because it determines how you access and display the information. Later exercises with dot notation will require you to understand this.

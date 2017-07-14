@@ -11,7 +11,7 @@ section: docendpoints
 path1: /docendpoints.html
 ---
 
-One aspect of REST APIs that facilitates widespread adoption is that they aren't tied to a specific programming language. Developers can code their applications in any language, from Java to Ruby to JavaScript, Python, C#, Ruby, Node JS, or something else. As long as they can make an HTTP web request in that language, they can use the API. The response from the web request will contain the data in either JSON or XML.
+One aspect of REST APIs that facilitates widespread adoption is that they aren't tied to a specific programming language. Developers can code their applications in any language, from Java to Ruby to JavaScript, Python, C#, Node JS, or something else. As long as they can make an HTTP web request in that language, they can use the API. The response from the web request will contain the data in either JSON or XML.
 
 {% if site.target == "web" %}
 * TOC
@@ -213,9 +213,9 @@ As a technical writer, add a code sample to the `surfreport/{beachId}` endpoint 
 
 Here's my approach:
 
-###Code example###
+### Code example
 
-The following code samples shows how to use the surfreport endpoint to get the surf conditions for a specific beach. In this case, the code shows the overall recommendation about whether to go surfing.
+The following code samples shows how to use the surfreport endpoint to get the surf height for a specific beach.
 
 ```
 <!DOCTYPE html>
@@ -226,7 +226,7 @@ var settings = {
   "async": true,
   "crossDomain": true,
   "dataType": "json",
-  "url": "https://simple-weather.p.mashape.com/surfreport/25",
+  "url": "https://simple-weather.p.mashape.com/surfreport/25&days=1",
   "method": "GET",
   "headers": {
     "accept": "application/json",
@@ -236,7 +236,7 @@ var settings = {
 
 $.ajax(settings).done(function (response) {
   console.log(response);
-  $("#surfheight").append(response.query.results.channel.surf.height);
+  $("#surfheight").append(response.query.results.channel.surfheight);
 });
 </script>
 </head>

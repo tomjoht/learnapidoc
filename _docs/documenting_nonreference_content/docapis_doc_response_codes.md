@@ -72,9 +72,9 @@ In contrast, with the Flickr API, each "method" (endpoint) lists error codes:
 Either location has merits, but my preference is a single centralized page for the entire API because listing them out on each endpoint page would add a lot of extra repeated words on each page.
 
 ## Where to get error codes
-Error code may not be readily apparent when you're documenting your API. You will need to ask developers for a list of all the status codes. In particular, if developers have created special status codes for the API, highlight these in the documentation.
+Error codes may not be readily apparent when you're documenting your API. You will need to ask developers for a list of all the status codes. In particular, if developers have created special status codes for the API, highlight these in the documentation.
 
-For example, if you exceed the rate limit for a specific all, the API might return a special status code. You would especially need to document this custom code. Listing out all the error codes is a reference section in the "Troubleshooting" topic of your API documentation.
+For example, if you exceed the rate limit for a specific call, the API might return a special status code. You would especially need to document this custom code. Listing out all the error codes is a reference section in the "Troubleshooting" topic of your API documentation.
 
 ## When endpoints have specific status codes
 
@@ -100,7 +100,7 @@ Your list of status codes can be done in a basic table, somewhat like this:
 | Status code | Meaning |
 |---------|-----------|
 | 200 | Successful request and response. |
-| 400 | Malformed parameters or other bad request |
+| 400 | Malformed parameters or other bad request. |
 
 ## Status codes aren't readily visible
 

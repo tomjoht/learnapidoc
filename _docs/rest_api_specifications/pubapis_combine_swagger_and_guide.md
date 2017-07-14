@@ -106,7 +106,7 @@ For example, [Spectacle](https://github.com/sourcey/spectacle) is a project that
 
 In fact, importing or reading a Swagger spec file is almost becoming a standard among API doc tools. Putting your content in the Swagger spec format allows you to separate your content from the presentation layer, instantly taking advantage of any new API tooling or platform that can parse the spec.
 
-## Store content in YAML files (Jekyll solution)
+## Option 2: Store content in YAML files (Jekyll solution)
 
 Another approach for integrating Swagger's output with your other docs might be to store your descriptions and other info in data yaml files in your project, and then include the data references in your spec. I'm most familiar with Jekyll, so I'll describe the process using Jekyll (but similar techniques exist for other static site generators).
 
@@ -151,7 +151,7 @@ By storing the values in data files, you can then include them elsewhere in your
 
 Again, although I've tried this approach, I grew frustrated at not being able to immediately validate my spec. It was more challenging to track down the exact culprits behind my validation errors, and I eventually gave up. But it's a technique that could work.
 
-## Solution 3: Use a tool that imports Swagger and allows additional docs
+## Option 3: Use a tool that imports Swagger and allows additional docs
 
 Another approach is to use a tool like [Readme.io](http://readme.io/) that allows you to both import your Swagger spec and also add your own separate documentation pages. Readme provides one of the most attractive outputs and is fully inclusive of almost every documentation feature you could want or need. I explore Readme with more depth [here](pubapis_readmeio.html). Readme.io requires third-party hosting, but there are some other doc tools that allow you to incorporate Swagger as well.
 
