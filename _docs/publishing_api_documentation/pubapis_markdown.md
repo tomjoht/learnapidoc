@@ -45,7 +45,7 @@ If a system accepts Markdown, it converts the Markdown into HTML so the browser 
 
 ## Development by popular demand versus by committee
 
-John Grubber, a blogger, first created Markdown (see his [Markdown documentation here](http://daringfireball.net/projects/markdown/)). Others adopted it, and many made modifications to include the syntax they needed. As a result, there are various "flavors" of Markdown, such as [Github-flavored Markdown](https://help.github.com/articles/github-flavored-markdown/), [Multimarkdown](http://fletcherpenney.net/multimarkdown/), and more.
+John Gruber, a blogger, first created Markdown (see his [Markdown documentation here](http://daringfireball.net/projects/markdown/)). Others adopted it, and many made modifications to include the syntax they needed. As a result, there are various "flavors" of Markdown, such as [Github-flavored Markdown](https://help.github.com/articles/github-flavored-markdown/), [Multimarkdown](http://fletcherpenney.net/multimarkdown/), and more.
 
 In contrast, DITA is a committee-based XML architecture derived from a committee. There aren't lots of different flavors and spinoffs of DITA based on how people customized the tags. There's an official DITA spec that is agreed-upon by the DITA OASIS committee. Markdown doesn't have that kind of committee, so it evolves on its own as people choose to implement it.
 
@@ -112,9 +112,9 @@ Finally, developers usually don't want to expend energy learning an XML document
 
 Markdown has a few drawbacks:
 
-* **Limited to HTML tags**: You're pretty much limited to HTML tags. XML advocates like to emhasize how XML offers semantic tagging (and avoids the div soup that HTML can become). However, by and large HTML5 offers many semantic tags, and even for those times in which there aren't any unique HTML elements, all XML structures that transform into HTML become bound by the limits of HTML anyway.
+* **Limited to HTML tags**: You're pretty much limited to HTML tags. XML advocates like to emphasize how XML offers semantic tagging (and avoids the div soup that HTML can become). However, by and large HTML5 offers many semantic tags, and even for those times in which there aren't any unique HTML elements, all XML structures that transform into HTML become bound by the limits of HTML anyway.
 
-* **Non-standard**: Because Markdown is non-standard, it can be a bit of guessing game as to what is supported by the Markdown processor you may be using. By and large, the Github flavor of Markdown is the most commonly used, as it allows you to add syntax classes to code samples and use tables.
+* **Non-standard**: Because Markdown is non-standard, it can be a bit of a guessing game as to what is supported by the Markdown processor you may be using. By and large, the Github flavor of Markdown is the most commonly used, as it allows you to add syntax classes to code samples and use tables.
 
 * **White space sensitivity**: Markdown is white space sensitive, which can be frustrating at times. If you have spaces where there shouldn't be, it can cause formatting issues. For example, if you don't indent blank spaces in a list, it will restart the list. As a result, with Markdown formatting, it's easy to make errors. Documents still render as valid even if the Markdown conversion to HTML is problematic. It can be difficult to catch all the errors.
 

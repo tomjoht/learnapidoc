@@ -27,7 +27,7 @@ One of the most stark differences between regular GUI documentation and develope
 
 Here's the Backbone.js documentation:
 
-<a href="http://documentcloud.github.io/backbone/"><img src="images/backbonejs.png" alt="Backbone JS" /></a>
+<a href="http://backbonejs.org/"><img src="images/backbonejs.png" alt="Backbone JS" /></a>
 
 For another example of a long page, see the Reddit API:
 <a href="https://www.reddit.com/dev/api"><img src="images/redditpage.png" alt="Backbone JS" /></a>

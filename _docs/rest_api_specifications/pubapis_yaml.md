@@ -27,7 +27,7 @@ Many computers ingest data in a YML or JSON format. It's a syntax commonly used 
 
 ## YAML is a superset of JSON
 
-YAML and JSON are practically different ways of structuring the same data. Dot notation accesses the values the same way. For example, the Swagger UI can read the swagger.json or swagger.yaml files equivalently. Pretty much any parser that reads JSON will also read YAML. However, some YAML parsers might not read JSON, because there are a few features YAML has that JSON lacks (more on that later).
+YAML and JSON are practically different ways of structuring the same data. Dot notation accesses the values the same way. For example, the Swagger UI can read the swagger.json or swagger.yaml files equivalently. Pretty much any parser that reads JSON will also read YAML. However, some JSON parsers might not read YAML, because there are a few features YAML has that JSON lacks (more on that later).
 
 ## YAML syntax
 
@@ -152,7 +152,7 @@ Hopefully by seeing the syntax side by side, it will begin to make more sense. I
 
 JavaScript uses the same dot notation techniques to access the values in YAML as it does in JSON. (They're pretty much interchangeable formats.) The benefit to using YAML, however, is that it's more readable than JSON.
 
-However, YAML is more tricky sometimes because it depends on getting the spacing just right. Sometimes that spacing is hard to see (especially with a complex structure), and that's where JSON (while maybe more cumbersome) maybe easier to troubleshoot.
+However, YAML is more tricky sometimes because it depends on getting the spacing just right. Sometimes that spacing is hard to see (especially with a complex structure), and that's where JSON (while maybe more cumbersome) is maybe easier to troubleshoot.
 
 ## Some features of YAML not present in JSON
 

@@ -153,11 +153,13 @@ If you decide to commit your changes, you'll see a message that says,
 
 From the command line, if you run `git status`, it will tell you which files have conflicts. If you open the file with the conflicts, you'll see markers showing you the conflicts. It will look something like this:
 
-<<<<<<<HEAD
+```
+<<<<<<< HEAD
 I love carrots.
 =====
 I love bananas.
->>>>>>>origin/master
+>>>>>>> origin/master
+```
 
 In this case, HEAD is your local change. Here you changed the line to "I love carrots." Origin/master shows the change someone else made and already committed to the master: "I love bananas."
 

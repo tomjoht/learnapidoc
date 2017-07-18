@@ -8,7 +8,7 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-In this tutorial, you'll learn how to use Swagger UI to parse through a sample Swagger spec file and display an output that look similar to the [Swagger Petstore example](http://petstore.swagger.io/). The sample API will be the same weather API from Mashape [used earlier in this course](docapis_scenario_for_using_weather_api.html). For a more detailed conceptual overview of Swagger, see [Swagger Overview](pubapis_swagger_intro.html).
+In this tutorial, you'll learn how to use Swagger UI to parse through a sample Swagger spec file and display an output that looks similar to the [Swagger Petstore example](http://petstore.swagger.io/). The sample API will be the same weather API from Mashape [used earlier in this course](docapis_scenario_for_using_weather_api.html). For a more detailed conceptual overview of Swagger, see [Swagger Overview](pubapis_swagger_intro.html).
 
 {% if site.target == "web" %}
 * TOC
@@ -127,7 +127,7 @@ To create a Swagger spec file:
 
 2.  Create the Swagger spec here.
 
-    You could just customize this sample YML file shown in the Swagger editor with the weather details. However, if you're new to Swagger it will take you some time to learn the spec. For the sake of convenience, just go to this  file &mdash; <a href="http://idratherassets.com/restapicourse/swagger/swagger_weather.yml">swagger_weather.yaml</a> &mdash; and copy and paste its code into the Swagger editor. The next tutorial, [Swagger spec deep dive](pubapis_swagger_spec_deep_dive.html), will get into the nuts and bolts of the Swagger spec.
+    You could just customize this sample YML file shown in the Swagger editor with the weather details. However, if you're new to Swagger it will take you some time to learn the spec. For the sake of convenience, just go to this  file &mdash; <a href="http://idratherassets.com/restapicourse/swagger/swagger_weather.yml">swagger_weather.yml</a> &mdash; and copy and paste its code into the Swagger editor. The next tutorial, [Swagger spec deep dive](pubapis_swagger_spec_deep_dive.html), will get into the nuts and bolts of the Swagger spec.
 
     Notice that this spec is written in [YAML](pubapis_yaml.html) instead of [JSON](docapis_analyze_json.html). YAML syntax is a more human-readable form of JSON. With YML, spacing matters. New levels are set with two indented spaces. The colon indicates an object. Hyphens represent a sequence or list (like an array). If you [download this file](http://idratherassets.com/restapicourse/swagger/swagger_weather.yml) instead of copy-and-pasting it above, you're less likely to run into spacing errors.
 
@@ -137,10 +137,10 @@ To create a Swagger spec file:
     This spec follows Swagger 2.0. Swagger 3.0 is almost released. You can convert your 2.0 spec to 3.0 using [API Transformer](https://apimatic.io/transformer). In this initial Swagger tutorial, I won't delve deeper into how to create the [spec](https://github.com/OAI/OpenAPI-Specification), but in the next tutorial, [Swagger spec deep dive](pubapis_swagger_spec_deep_dive.html), I'll explain more about the available properties and approach. You can also see this [tutorial from API Handyman](https://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-1-introduction/).
 
 3.  Make sure the YAML file is valid in the Swagger editor. If there are any errors, fix them.
-4.  Go to **File > Download YAML** and save the file as "swagger_weather.yaml" on your computer. You can also choose JSON as the format, but YAML is more readable and works just as well.
+4.  Go to **File > Download YAML** and save the file as "swagger_weather.yml" on your computer. You can also choose JSON as the format, but YAML is more readable and works just as well.
 
     {: .note}
-    You could also just copy or download the swagger_weather.yaml code and use it directly, without going through the [Swagger online editor](http://editor.swagger.io/#/). The Editor or Download process doesn't change the content displayed in the Swagger Editor. I just have you go through this exercise to become familiar with the Swagger Editor. Getting your spec valid is tedious and requires a lot of fine-tuning. In this effort, having the real-time validation analysis from Swagger Editor is invaluable.
+    You could also just copy or download the swagger_weather.yml code and use it directly, without going through the [Swagger online editor](http://editor.swagger.io/#/). The Editor or Download process doesn't change the content displayed in the Swagger Editor. I just have you go through this exercise to become familiar with the Swagger Editor. Getting your spec valid is tedious and requires a lot of fine-tuning. In this effort, having the real-time validation analysis from Swagger Editor is invaluable.
 
 ### b. Set Up the Swagger UI
 
@@ -160,12 +160,12 @@ To create a Swagger spec file:
 5.  Change the `url` value from `http://petstore.swagger.io/v2/swagger.json` to the following:
 
     ```js
-    url: "swagger_weather.yml",
+    url: "swagger_weather.yaml",
     ```
 
     Save the file.
 
-6.  Drag the **swagger.yaml** file that you created earlier into the same directory as the index.html file you just edited. Your file structure should look as follows:
+6.  Drag the **swagger_weather.yml** file that you created earlier into the same directory as the index.html file you just edited. Your file structure should look as follows:
 
     ```
     ├── swagger
@@ -185,10 +185,10 @@ To create a Swagger spec file:
     │   └── swagger_weather.yml
     ```
 
-7.  Upload the folder to a web server and go to the folder path. For example, if you called your directory **dist** (leaving it unchanged), you would go to **http:/myserver.com/dist**.
+7.  Upload the folder to a web server and go to the folder path. For example, if you called your directory **dist** (leaving it unchanged), you would go to **http://myserver.com/dist**.
 
 
-    Note that if you go to **http:/myserver.com/dist/index.html**, Swagger UI seems to get the path to the swagger_weather.yml file wrong, writing it as **http:/myserver.com/dist/index.html/swagger_weather.yml** instead. As a foolproof approach, you can code the absolute URL to the Swagger file (`url: "http://myserver.com/folder/swagger_weather.yaml"`) in the index file rather than the relative URL as you did with (`url: "swagger_weather.yaml"`).
+    Note that if you go to **http://myserver.com/dist/index.html**, Swagger UI seems to get the path to the swagger_weather.yml file wrong, writing it as **http://myserver.com/dist/index.html/swagger_weather.yml** instead. As a foolproof approach, you can code the absolute URL to the Swagger file (`url: "http://myserver.com/folder/swagger_weather.yml"`) in the index file rather than the relative URL as you did with (`url: "swagger_weather.yml"`).
 
 {: .tip}
 Here's [a sample Swagger UI folder uploaded](http://idratherassets.com/restapicourse/swagger/).

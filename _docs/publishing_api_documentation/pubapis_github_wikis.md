@@ -26,7 +26,7 @@ You write wiki pages in Markdown syntax. There's a special flavor of Markdown sy
 
 ## The wiki repository
 
-The wiki you create is its own repository that you can clone locally. (If you look at the "Clone this wiki locally link," you'll see that it's a separate repo from your main code repository.) You can work on files locally and then commit them to the wiki repository when you're ready to publish.
+The wiki you create is its own repository that you can clone locally. (If you look at the "Clone this wiki locally" link, you'll see that it's a separate repo from your main code repository.) You can work on files locally and then commit them to the wiki repository when you're ready to publish.
 
 You can also arrange the wiki pages into a sidebar.
 
@@ -118,8 +118,7 @@ It's easiest to install Git by <a href="https://desktop.github.com">installing G
 
 2. Configure Git with Github authorization. This will allow you to push changes without entering your username and password each time. See the following topics to set this up:
  * [Set up Git](https://help.github.com/articles/set-up-git/) (Note that when you configure your username, use your Github username, which will be something like tomjohnson1492 instead of "Tom Johnson".)
- * [Generating a new SSH key](https://help.github.com/articles/generating-a-new-ssh-key/)
- * [Adding a new SSH key to the ssh-agent](https://help.github.com/articles/adding-a-new-ssh-key-to-the-ssh-agent/)
+ * [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
  * [Adding a new SSH key to your GitHub account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
 
 After you make these configurations, close and re-open your terminal.

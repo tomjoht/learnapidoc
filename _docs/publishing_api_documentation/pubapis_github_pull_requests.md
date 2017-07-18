@@ -37,7 +37,7 @@ To make edits in a separate branch:
 
 	<img src="images/github_making_branch_edits.png" alt="Making an edit" />
 
-3. Make some changes to the content, and then scroll down and click **Commit Changes**. Explain the reason for the changes and commit the changes to your sme review branch, and then click **Commit Changes**.
+3. Make some changes to the content, and then scroll down and click **Commit Changes**. Explain the reason for the changes and commit the changes to your sme review branch by clicking **Commit Changes**.
 
 	Reviewers could continue making edits this way until they have finished reviewing all of the documentation. All of the changes are made on a branch, not the master.
 

@@ -23,7 +23,7 @@ To see a presentation that covers the same concepts in this article, see [https:
 {:toc}
 {% endif %}
 
-## Backstore: experiences that prompted me toward Swagger
+## Backstory: experiences that prompted me toward Swagger
 
 On one project some years ago, after I created documentation for a new API, the project manager wanted to demo the new functionality to some field engineers.
 
@@ -39,7 +39,7 @@ The field engineers' insistence on trying out every endpoint made me rethink my 
 
 I have a mechanical engineering friend who once nearly entirely dismantled his car's engine to change a head gasket: he simply loved to take things apart and put them back together. It's the engineering mind. When you force engineers to passively watch a PowerPoint presentation, they quickly lose interest.
 
-After the meeting, I wanted to make my documentation more interactive, with options for users to try out the calls themselves. I had heard of [Swagger](https://github.com/OAI/OpenAPI-Specification) (which is now called the OpenAPI specification but still commonly referred to as Swagger). I knew that Swagger was a way to make my API documentation interactive. Looking at the [Swagger demo](http://petstore.swagger.io), I knew I had to figure it out.
+After the meeting, I wanted to make my documentation more interactive, with options for users to try out the calls themselves. I had heard of [Swagger](https://swagger.io/) (which is now called the OpenAPI specification but still commonly referred to as Swagger). I knew that Swagger was a way to make my API documentation interactive. Looking at the [Swagger demo](http://petstore.swagger.io), I knew I had to figure it out.
 
 ## About Swagger
 
@@ -49,11 +49,11 @@ You can think of the Swagger specification like DITA but for APIs. With DITA, yo
 
 Many tools can parse valid DITA XML and transform the content into different outputs. The Swagger specification works similarly, only the specification is entirely different, since you're describing an API instead of a help topic.
 
-The official description of the Swagger specification is available in a [Github repository](https://github.com/OAI/OpenAPISpecification). Some of these elements are `path`, `parameters`, `responses`, and `security`. Each of these elements is actually an "object” (instead of an XML element) that holds a number of fields and arrays.
+The official description of the Swagger specification is available in a [Github repository](https://github.com/OAI/OpenAPI-Specification). Some of these elements are `path`, `parameters`, `responses`, and `security`. Each of these elements is actually an "object” (instead of an XML element) that holds a number of fields and arrays.
 
-In the Swagger specification, your endpoints are `paths`. If you had an endpoint called "pet", your Swagger specification for this endpoint might look as follows:
+In the Swagger specification, your endpoints are `paths`. If you had an endpoint called "pets", your Swagger specification for this endpoint might look as follows:
 
-```json
+```
 paths:
   /pets:
     get:
@@ -144,7 +144,7 @@ In this regard, tech writers have a key role to play in collaborating with the A
 
 After you have a valid Swagger specification file that describes your API, you can then feed this specification to different tools to parse it and generate the interactive documentation similar to the Petstore example I referenced earlier.
 
-Probably the most common tool used to parse the Swagger specification is [Swagger UI](https:// github.com/swagger-api/swagger-ui). (Note that "Swagger-UI" is different from "Swagger." Swagger UI is a display framework, whereas Swagger, or rather OpenAPI, is a specification that can be rendered in any number of frameworks.) After you download Swagger UI, you basically just open up the **index.html** file inside the **dist** folder (which contains the Swagger UI project build) and reference your own Swagger specification file in place of the default one.
+Probably the most common tool used to parse the Swagger specification is [Swagger UI](https://github.com/swagger-api/swagger-ui). (Note that "Swagger-UI" is different from "Swagger." Swagger UI is a display framework, whereas Swagger, or rather OpenAPI, is a specification that can be rendered in any number of frameworks.) After you download Swagger UI, you basically just open up the **index.html** file inside the **dist** folder (which contains the Swagger UI project build) and reference your own Swagger specification file in place of the default one.
 
 The Swagger UI code generates a display that looks like this:
 
@@ -164,7 +164,7 @@ After customizing the parameters, click **Try it out!** Swagger UI shows you the
 
 There are other tools besides Swagger UI that can parse your Swagger specification file. Some of these tools include [Restlet Studio](https://restlet.com/products/restlet-studio/), [Apiary](https://apiary.io/), [Apigee](http://apigee.com/about/), [Lucybot](https://lucybot.com/), [Gelato](https://gelato.io/)/[Mashape](https://www.mashape.com/), [Readme.io](http://readme.io/), [swagger2postman](https://github.com/josephpconley/swagger2postman), [swagger-ui responsive theme](https://github.com/jensoleg/swagger-ui), [Postman Run Buttons](https://www.getpostman.com/docs/run_button) and more.
 
-Some web designers have created integrations of Swagger with static site generators such as Jekyll (see [Carte](https:// github.com/Wiredcraft/carte)) and [Readme](https://readme.io). More tools roll out regularly for parsing and displaying content from a Swagger specification file.
+Some web designers have created integrations of Swagger with static site generators such as Jekyll (see [Carte](https://github.com/Wiredcraft/carte)) and [Readme](https://readme.io). More tools roll out regularly for parsing and displaying content from a Swagger specification file.
 
 In fact, once you have a valid Swagger specification, using a tool called [API Transformer](https://apitransformer.com), you can even transform it into other API specifications, such as [RAML](http://raml.org/) or [API Blueprint](https://apiblueprint.org/). This allows you to expand your tool horizons even wider. (RAML and API Blueprint are alternative specifications to Swagger: they're not as popular, but the logic of the specifications is similar. And if you're using a platform like Mulesoft or Apiary, you might want to use the specification that platform is optimized for.)
 

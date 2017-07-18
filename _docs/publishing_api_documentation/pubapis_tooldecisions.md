@@ -43,7 +43,7 @@ Having developers write or contribute to documentation provides several advantag
 
 ### Avoids documentation drift
 
-By keeping documentation tightly coupled with code, you can avoid documentation drift. The idea is that documentation that exists separate from the documentation has a tendency to get out of sync with the actual code. As developers add new parameters, functions, and other details, the technical writers may not be aware of all these details. But many in-source document generators will actually drive the output directly from the parameters and classes in the code.
+By keeping documentation tightly coupled with code, you can avoid documentation drift. The idea is that documentation that exists separate from the code has a tendency to get out of sync with the actual code. As developers add new parameters, functions, and other details, the technical writers may not be aware of all these details. But many in-source document generators will actually drive the output directly from the parameters and classes in the code.
 
 <a href="http://en.wikipedia.org/wiki/Continental_drift
 "><img src="images/continentaldrift.png" alt="Continental drift" /></a>
