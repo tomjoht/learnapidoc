@@ -25,7 +25,7 @@ Here's the documentation theme that I developed for Jekyll:
 
 <a href="http://idratherbewriting.com/documentation-theme-jekyll/"><img src="images/jekylldocumentationtheme.png" alt="My Jekyll Documentation theme" /></a>
 
-There isn't any kind of special API reference endpoint formatting here (yet), but the platform is so flexible, you can do anything with it as long as you know HTML, CSS, and JavaScript (the fundamental language of the web.
+There isn't any kind of special API reference endpoint formatting here (yet), but the platform is so flexible, you can do anything with it as long as you know HTML, CSS, and JavaScript (the fundamental language of the web).
 
 Whereas the Swagger, RAML, and API Blueprint REST specifications mainly just produce an interactive API console, with a static site generator, you have a tool for building a full-fledged website. With the website, you can include complex navigation, content re-use, translation, PDF generation, and more.
 
@@ -104,7 +104,7 @@ Jekyll is a good solution because it provides near infinite flexibility and fits
 
 CloudCannon provides an easy way to allow subject matter experts to author and edit content, since CloudCanonn allows you to create editable regions within your Jekyll theme. This would allow a tools team to  maintain the site while providing areas for less technical people to author content.
 
-However, CloudCannon wouldn't be a good solution if your docs require authentication in a highly secure environment. Additionally, Jekyll only provide static HTML files. If you want users to log in, and then personalize what they see when logged in, Jekyll won't provide this experience.
+However, CloudCannon wouldn't be a good solution if your docs require authentication in a highly secure environment. Additionally, Jekyll only provides static HTML files. If you want users to log in, and then personalize what they see when logged in, Jekyll won't provide this experience.
 
 ## Publish the surfreport in the Aviator Jekyll theme using CloudCannon's interface
 

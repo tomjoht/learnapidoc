@@ -10,7 +10,7 @@ path1: /restapispecifications.html
 
 {% include note.html content="This page is still under construction. I'm actively adding to it .... June 16, 2017." %}
 
-In the the [Swagger tutorial](pubapis_swagger.html), I referenced a Swagger spec that you simply plugged into a Swagger UI project. In this section, we'll dive more deeply into the Swagger spec (but not too deep, because one could write an entire book on the subject).
+In the [Swagger tutorial](pubapis_swagger.html), I referenced a Swagger spec that you simply plugged into a Swagger UI project. In this section, we'll dive more deeply into the Swagger spec (but not too deep, because one could write an entire book on the subject).
 
 {% if site.target == "web" %}
 * TOC
@@ -21,7 +21,7 @@ In the the [Swagger tutorial](pubapis_swagger.html), I referenced a Swagger spec
 
 Here's the Swagger spec that I created for the [sample Mashape Weather API](https://market.mashape.com/fyhao/weather-13). Note that this API builds off of a [Yahoo weather service API](https://developer.yahoo.com/weather/documentation.html), so the data returned in the `weather` and `weatherdata` endpoints is highly similar to the data returned by the Yahoo weather service API.
 
-After the spec, I'll go through and explain various parts of the spec and how to read the the spec documentation.
+After the spec, I'll go through and explain various parts of the spec and how to read the spec documentation.
 
 ```yaml
 swagger: "2.0"

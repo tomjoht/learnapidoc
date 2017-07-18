@@ -1,5 +1,5 @@
 ---
-title: "Overview to native library APIs"
+title: "Overview of native library APIs"
 permalink: /nativelibraryapis_overview.html
 course: "Documenting REST APIs"
 sidebar: docapis
