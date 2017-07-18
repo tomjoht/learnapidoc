@@ -27,7 +27,9 @@ There's a point at which experimenting with the free Swagger UI tooling hits a w
 
 ## The SwaggerHub Dashboard
 
-Smartbear &mdash; the same company that maintains and develops the Swagger (OpenAPI) specification &mdash; developed SwaggerHub as a way to help teams collaborate around the Swagger spec. Many of the client and server SDKs can be auto-generated from SwaggerHub, and there are a host of additional features you can leverage as you design, test, and publish your API.
+Smartbear &mdash; the same company that maintains and develops the open source Swagger tooling (Swagger Editor, Swagger UI, Swagger Codgen, and others), and that formed the OpenAPI Initiative which leads the evolution of the Swagger (OpenAPI) specification &mdash; developed SwaggerHub as a way to help teams collaborate around the Swagger spec.
+
+Many of the client and server SDKs can be auto-generated from SwaggerHub, and there are a host of additional features you can leverage as you design, test, and publish your API.
 
 To get started with SwaggerHub, go to [swaggerhub.com](https://swaggerhub.com/) and create an account or sign in with your GitHub credentials. After signing in, you see the SwaggerHub dashboard.
 
@@ -127,7 +129,7 @@ Tech writers are positioned to be power players in the spec-first philosophy wit
 
 Designing a fully-featured, highly functioning Swagger spec is at the heart of this endeavor. Few engineers are familiar with creating these specs, and technical writers who are skilled at both the spec and associating Swagger tooling can fill critical roles on API teams.
 
-Great tools aren't free. SwaggerHub does [cost money](https://swaggerhub.com/pricing/), but this is a good thing, since free tools are frequently abandoned, poorly maintained, and lack documentation and support. By using a paid tool from a robust API company (the very company that sponsors and maintains the Swagger/OpenAPI specification), you can plug into the tools you need to scale your API documentation efforts.
+Great tools aren’t free. SwaggerHub does [cost money](https://swaggerhub.com/pricing/), but this is a good thing, since free tools are frequently abandoned, poorly maintained, and lack documentation and support. By using a paid tool from a robust API company (the very company that maintains the Swagger tools, and sponsors the Swagger (OpenAPI) specification), you can plug into the tools you need to scale your API documentation efforts.
 
 *Note that SwaggerHub is one of the sponsors of this site.*
 
