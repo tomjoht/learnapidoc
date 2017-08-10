@@ -133,7 +133,7 @@ Using the domain minimizes duplicate content and enables you to be more consiste
 
  Additionally, within an organization, you can further group APIs into different projects. This way teams working in the same organization but on different projects can have visibility into other APIs but still have their APIs logically grouped.
 
- <img src="images/swaggerhub_organizations.png"/>
+ <img src="images/swaggerhub_organizations.png" style="border: 1px solid #dedede;"/>
 
  This aspect of organizations and projects may not seem essential if you have just 1 or 2 APIs, but when you consider how you'll scale and grow as you have dozens of APIs and multiple teams, organizations and projects become essential.
 
