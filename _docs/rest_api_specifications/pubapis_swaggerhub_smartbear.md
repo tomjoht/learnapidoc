@@ -29,7 +29,7 @@ SwaggerHub is used by more than 15,000 software teams across the globe. As the S
 
 ## SwaggerHub Intro and Dashboard
 
-Smartbear &mdash; the same company that maintains and develops the open source Swagger tooling (Swagger Editor, Swagger UI, Swagger Codgen, and others), and that formed the OpenAPI Initiative which leads the evolution of the Swagger (OpenAPI) specification &mdash; developed SwaggerHub as a way to help teams collaborate around the Swagger spec.
+[Smartbear](https://smartbear.com/) &mdash; the same company that maintains and develops the open source Swagger tooling ([Swagger Editor](https://swagger.io/swagger-editor/), [Swagger UI](https://swagger.io/swagger-ui/), [Swagger Codegen](https://swagger.io/swagger-codegen/), and others), and that formed the [OpenAPI Initiative](https://www.openapis.org/) which leads the evolution of the [Swagger (OpenAPI) specification](https://github.com/OAI/OpenAPI-Specification/) &mdash; developed SwaggerHub as a way to help teams collaborate around the Swagger spec.
 
 Many of the client and server SDKs can be auto-generated from SwaggerHub, and there are a host of additional features you can leverage as you design, test, and publish your API.
 
