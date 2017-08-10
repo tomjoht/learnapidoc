@@ -18,14 +18,16 @@ While the free Swagger UI approach works, you'll run into several problems:
 
 When you're working on REST API documentation, you need tools that are specifically designed for REST APIs &mdash; tools that allow you to create, share, collaborate, version, test, and publish the documentation in ways that don't require extensive customization or time.
 
-There's a point at which experimenting with the free Swagger UI tooling hits a wall and you'll need to find another way to take your toolkit to the next level. This is where [SwaggerHub](swaggerhub.com) from [Smartbear](https://smartbear.com/) comes in. SwaggerHub provides a complete solution for designing, managing, and publishing documentation for your API in ways that will simplify your life as an API technical writer. SwaggerHub is used by more than 15,000 software teams across the globe. As the Swagger spec becomes more of an industry standard for API documentation, SwaggerHub's swagger-specific tooling becomes more and more relevant.
+There's a point at which experimenting with the free Swagger UI tooling hits a wall and you'll need to find another way to move to the next level. This is where [SwaggerHub](swaggerhub.com) from [Smartbear](https://smartbear.com/) comes in. SwaggerHub provides a complete solution for designing, managing, and publishing documentation for your API in ways that will simplify your life as an API technical writer.
+
+SwaggerHub is used by more than 15,000 software teams across the globe. As the Swagger spec becomes more of an industry standard for API documentation, SwaggerHub's swagger-specific tooling becomes essential.
 
 {% if site.target == "web" %}
 * TOC
 {:toc}
 {% endif %}
 
-## The SwaggerHub Dashboard
+## SwaggerHub Intro and Dashboard
 
 Smartbear &mdash; the same company that maintains and develops the open source Swagger tooling (Swagger Editor, Swagger UI, Swagger Codgen, and others), and that formed the OpenAPI Initiative which leads the evolution of the Swagger (OpenAPI) specification &mdash; developed SwaggerHub as a way to help teams collaborate around the Swagger spec.
 
@@ -89,7 +91,7 @@ Some API documentation sites look impressive for showing implementations in vari
 
 The output includes more than a simple code sample showing how to call a REST endpoint in that language. The output includes a whole SDK that includes the various nuts and bolts of an implementation in that language.
 
-Providing this code not only speeds implementation for developers, it also helps you scale your language agnostic REST API to a greater variety of platforms and users, reducing the friction in adoption.
+Providing this code not only speeds implementation for developers, it also helps you scale your language-agnostic REST API to a greater variety of platforms and users, reducing the friction in adoption.
 
 ## Export to HTML
 
@@ -97,7 +99,7 @@ One of the options for export is an HTML option. You can export your Swagger spe
 
 You can see a demo export of the Weather API here: <a href="http://idratherassets/restapicourse/swaggerhub_htmloutput">HTML</a> or <a href="http://idratherassets/restapicourse/swaggerhub_htmloutput/swaggerhub_html2output">HTML2</a>. Both exports generate all the content into an index.html file.
 
-The HTML export is a more basic output than HTML2. You could potentially incorporate the HTML output into your other documentation. (You might have to strip away some of the code and provide styles for the various documentation elements, and there wouldn't be any interactivity for users to try it out, but it could be done.) In another part of the course I expand on ways to [combine Swagger's doc output with your other docs](pubapis_combine_swagger_and_guide.html).
+The HTML export is a more basic output than HTML2. You could potentially incorporate the HTML output into your other documentation, such as what [Cherryleaf did in importing Swagger into Flare](https://www.cherryleaf.com/blog/2017/07/example-project-api-documentation-portal-using-madcap-flare/). (You might have to strip away some of the code and provide styles for the various documentation elements, and there wouldn't be any interactivity for users to try it out, but it could be done.) In another part of the course I expand on ways to [combine Swagger's doc output with your other docs](pubapis_combine_swagger_and_guide.html).
 
 The HTML2 export is more intended to stand on its own, as it has a fixed left sidebar to navigate the endpoints and navtabs showing 6 different code samples:
 
@@ -111,7 +113,9 @@ Assuming you have example responses in your API spec, you can set your API to au
 
 Providing an auto-mock for your API solves the problem of potentially complicating user data by having users interact with their real API keys and data. In many cases, you don't want users junking up their data with tests and other experiments. At the same time, you also want to simulate the API response.
 
-Simulating the API can be especially useful for testing your API with beta users. One reason many people code their API with the spec before writing any lines of code (following a "spec-first philosophy") is to avoid coding an API with endpoints and responses that users don't actually want. Using the mock server approach, SwaggerHub can act not only as a documentation solution but also as a beta-testing tool to get the design of your API right before sinking thousands of hours of time into actual coding. You can enable auto-mocking for different versions of your API, creating variants and testing each of the variants.
+Simulating the API can be especially useful for testing your API with beta users. One reason many people code their API with the spec before writing any lines of code (following a [spec-first philosophy such as that described by Michael Stowe](http://idratherbewriting.com/2015/10/12/spec-driven-design-podcast-michael-stowe/)) is to avoid coding an API with endpoints and responses that users don't actually want.
+
+Using the mock server approach, SwaggerHub not provides documentation but also acts as a beta-testing tool to get the design of your API right before sinking thousands of hours of time into actual coding. You can enable auto-mocking for different versions of your API, creating variants and testing each of the variants.
 
 To set up a mocking server in SwaggerHub, click <img class="inline" src="images/swaggerhub_integration_button.png"/> and select to add a new integration. Select the **API Auto Mocking** service and complete the configuration details. Make sure you have `examples` for each of the endpoint responses in your spec.
 
@@ -122,6 +126,16 @@ Another feature exclusively available in SwaggerHub is the concept of domains. D
 When you create definitions for your requests and responses, you may find yourself re-using the same code over and over. Rather than duplicating this code, you can save it as a domain. When you want to re-use the code, you select this domain.
 
 Using the domain minimizes duplicate content and enables you to be more consistent and efficient. You can read more about domains [here](https://app.swaggerhub.com/help/domains/about-domains).
+
+## Organizations and projects
+
+ The collaborative aspect of SwaggerHub is the biggest reason people move from the open source tools to SwaggerHub. You might have a lot of different engineers working on a variety of APIs in SwaggerHub. To organize the work, you can group APIs into [organizations](https://app.swaggerhub.com/help/organizations/index), and then assign members to the appropriate organization. When that member logs in to SwaggerHub, he or she will see only the organizations he or she has access to.
+
+ Additionally, within an organization, you can further group APIs into different projects. This way teams working in the same organization but on different projects can have visibility into other APIs but still have their APIs logically grouped.
+
+ <img src="images/swaggerhub_organizations.png"/>
+
+ This aspect of organizations and projects may not seem essential if you have just 1 or 2 APIs, but when you consider how you'll scale and grow as you have dozens of APIs and multiple teams, organizations and projects become essential.
 
 ## Conclusion &mdash; expanding the tech writer's role with APIs
 
