@@ -115,7 +115,7 @@ Providing an auto-mock for your API solves the problem of potentially complicati
 
 Simulating the API can be especially useful for testing your API with beta users. One reason many people code their API with the spec before writing any lines of code (following a [spec-first philosophy such as that described by Michael Stowe](http://idratherbewriting.com/2015/10/12/spec-driven-design-podcast-michael-stowe/)) is to avoid coding an API with endpoints and responses that users don't actually want.
 
-Using the mock server approach, SwaggerHub not provides documentation but also acts as a beta-testing tool to get the design of your API right before sinking thousands of hours of time into actual coding. You can enable auto-mocking for different versions of your API, creating variants and testing each of the variants.
+Using the mock server approach, SwaggerHub not only provides documentation but also acts as a beta-testing tool to get the design of your API right before sinking thousands of hours of time into actual coding. You can enable auto-mocking for different versions of your API, creating variants and testing each of the variants.
 
 To set up a mocking server in SwaggerHub, click <img class="inline" src="images/swaggerhub_integration_button.png"/> and select to add a new integration. Select the **API Auto Mocking** service and complete the configuration details. Make sure you have `examples` for each of the endpoint responses in your spec.
 
