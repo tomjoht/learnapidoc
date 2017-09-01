@@ -4,7 +4,7 @@ permalink: /pubapis_static_site_generators.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 7.8
-section: publishingapis 
+section: publishingapis
 path1: /publishingapis.html
 ---
 
@@ -61,7 +61,7 @@ Let's do an example in publishing in CloudCannon using the Documentation Theme f
 
 ## Set up your doc theme on Github
 
-1.  Go to the [Github page for the Documentation theme for Jekyll](https://github.com/tomjohnson1492/documentation-theme-jekyll) and click **Fork** in the upper-right.
+1.  Go to the [Github page for the Documentation theme for Jekyll](https://github.com/tomjoht/documentation-theme-jekyll) and click **Fork** in the upper-right.
 
 	When you fork a project, a copy of the project (using the same name) gets added to your own Github repository. You'll see the project at `https://github.com/{your github username}/documentation-theme-jekyll`.
 

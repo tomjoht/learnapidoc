@@ -7,7 +7,7 @@ navbar_singleitems:
   - title: Blog
     url: http://idratherbewriting.com
   - title: Github
-    url: https://github.com/tomjohnson1492/learnapidoc
+    url: https://github.com/tomjoht/learnapidoc
   - title: Contact
     url: contact.html
 

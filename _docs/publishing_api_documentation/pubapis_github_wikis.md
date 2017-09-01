@@ -93,7 +93,7 @@ Note that the wiki is a separate clone URL than the project's repository. Make s
 4. Type the following, but replace the git URL with your own git URL that you copied earlier. The command should look like this:
 
    ```
-	git clone https://github.com/tomjohnson1492/weatherapi.wiki.git
+	git clone https://github.com/tomjoht/weatherapi.wiki.git
    ```
 
 	{: .note}
@@ -117,7 +117,7 @@ It's easiest to install Git by <a href="https://desktop.github.com">installing G
 	You can check to see if you have Git already installed by opening a terminal and typing `git --version`.
 
 2. Configure Git with Github authorization. This will allow you to push changes without entering your username and password each time. See the following topics to set this up:
- * [Set up Git](https://help.github.com/articles/set-up-git/) (Note that when you configure your username, use your Github username, which will be something like tomjohnson1492 instead of "Tom Johnson".)
+ * [Set up Git](https://help.github.com/articles/set-up-git/) (Note that when you configure your username, use your Github username, which will be something like tomjoht instead of "Tom Johnson".)
  * [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
  * [Adding a new SSH key to your GitHub account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
 

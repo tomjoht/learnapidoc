@@ -17,7 +17,7 @@ In order to understand documentation for Java APIs, it helps to have a context o
 
 The sample Java project is a little application about different tools that a coyote will use to capture a roadrunner. There are two classes (ACMESmartphone and Dynamite) and another class file called App that references the classes.
 
-<a href="https://github.com/tomjohnson1492/acmeproject"><img src="images/acmeprojectgithub.png" alt="ACME project" /></a>
+<a href="https://github.com/tomjoht/acmeproject"><img src="images/acmeprojectgithub.png" alt="ACME project" /></a>
 
 {% include random_ad.html %}
 
@@ -25,14 +25,14 @@ This program doesn't really do anything except print little messages to the cons
 
 ## Clone the source on Github
 
-One of your immediate challenges to editing Javadoc will be to get the source code into your IDE. The acmeproject is [here on Github](https://github.com/tomjohnson1492/acmeproject).
+One of your immediate challenges to editing Javadoc will be to get the source code into your IDE. The acmeproject is [here on Github](https://github.com/tomjoht/acmeproject).
 
 First clone the source using version control. We covered some version control basics <a href="pubapis_version_control.html">earlier in the course</a>.
 
 You can clone the source in a couple of ways:
 
 ```
-git clone https://github.com/tomjohnson1492/acmeproject
+git clone https://github.com/tomjoht/acmeproject
 ```
 
 Or click **Clone in Desktop** and navigate to the right path in Github Desktop.
