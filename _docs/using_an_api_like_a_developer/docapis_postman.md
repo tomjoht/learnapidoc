@@ -7,7 +7,7 @@ keywords:
 course: "Documenting REST APIs"
 weight: 2.2
 sidebar: docapis
-section: likeadeveloper 
+section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
@@ -40,10 +40,10 @@ A lot of times abstract concepts don't make sense until you can contextualize th
 
 1.  If you haven't already done so, download and install the Postman app at [http://www.getpostman.com](https://www.getpostman.com/). If you're on a Mac, choose the Mac app. If you're on Windows, choose the Windows app.
 2.  Start the Postman app.
-3.  You'll make a REST call for the second endpoint (`weather`) in the Mashape Weather API. Select **GET** for the method.
+3.  You'll make a REST call for the second endpoint (`https://simple-weather.p.mashape.com/weather`) in the Mashape Weather API. Select **GET** for the method.
 
     {: .note}
-    You can also call the first endpoint (`aqi`), but the response is pretty short (2 characters), and unfortunately sometimes the API doesn't always return a response. If this endpoint isn't working, you'll see "Not supported" response.
+    You can also call the first endpoint (`aqi`), but the response is pretty short (2 characters), and unfortunately sometimes the API doesn't always return a response for the location. If this endpoint isn't working, you'll see "Not supported" response.
 
 4.  Insert the endpoint into the main box (next to the method, which is GET by default): `https://simple-weather.p.mashape.com/weather`
 5.  Click the **Params** button (to the right of the box where you inserted the endpoint) and insert `lat` and `lng` parameters with specific values (other than `1`).
@@ -81,7 +81,7 @@ Saved endpoints appear in the left side pane under Collections.
 
 Enter details into Postman for the other endpoint for the Mashape Weather API:
 
-* weatherdata
+* https://simple-weather.p.mashape.com/weatherdata
 
 {: .note}
 The Accept header tells the browser what format you will accept the response in. Whereas the first two endpoints (aqi and weather) use <code>text/plain</code>, the Accept header for the <code>weatherdata</code> endpoint is <code>application/json</code>.
