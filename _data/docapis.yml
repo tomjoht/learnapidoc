@@ -221,8 +221,8 @@ folders:
   - title: Swagger tutorial
     jurl: /pubapis_swagger.html
 
-  - title: Swagger spec deep dive
-    jurl: /pubapis_swagger_spec_deep_dive.html
+  - title: Sample Swagger specification file
+    jurl: /pubapis_swagger_sample_specification_file.html
 
   - title: Manage Swagger projects with SwaggerHub
     jurl: /pubapis_swaggerhub_smartbear.html

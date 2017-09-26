@@ -28,8 +28,10 @@ This conundrum is usually crystal clear to technical writers while remaining har
 * response and error codes
 * code samples and tutorials
 * quick reference guide
+* troubleshooting
+* glossary
 
-Other times you just have more detail that you need to communicate to the user that won't fit easily into the spec. For example, in the weatherdata endpoint in the [sample Mashape weather API](pubapis_swagger.html) that we've been using in this course, there's a whole table about condition codes that is essential to interpreting the `item` property in the response. Here's a sample:
+Other times, you just have more detail that you need to communicate to the user that won't fit easily into the spec. For example, in the `weatherdata` endpoint in the [sample Mashape weather API](pubapis_swagger.html) that we've been using in this course, there's a whole table about condition codes that is essential to interpreting the `item` property in the response. Here's a sample:
 
 ```json
 "condition": {
@@ -100,17 +102,52 @@ If you incorporate Bootstrap, you will likely need to restrict the namespace so 
 
 Overall, I recommend trying to put all your information in the spec first. If you have a complex API or just an API that has a lot of extra information not relevant to the spec, then you can look for alternative approaches. But try to fit it into the spec first. This keeps your information close to the source.
 
-Overall, there are just too many benefits to using a spec that you will miss out on if you choose another approach. When you store your information in a spec, many other tools can parse the spec and output the display.
+There are just too many benefits to using a spec that you will miss out on if you choose another approach. When you store your information in a spec, many other tools can parse the spec and output the display.
 
 For example, [Spectacle](https://github.com/sourcey/spectacle) is a project that builds an output from a Swagger file with zero coding or other technical expertise. More and more tools are coming out that allow you to import your Swagger spec. For example, see [Lucybot](http://lucybot.com/), [Restlet Studio](https://studio.restlet.com), the [Swagger UI responsive theme](https://github.com/jensoleg/swagger-ui), [Material Swagger UI](https://github.com/legendecas/material-swagger-ui), [DynamicAPIs](https://www.dynamicapis.com), [Run in Postman](https://www.getpostman.com/docs/postman_for_publishers/run_button/creating_run_button), [SwaggerHub](pubapis_swaggerhub_smartbear.html), and more. They all read the Swagger spec.
 
 In fact, importing or reading a Swagger spec file is almost becoming a standard among API doc tools. Putting your content in the Swagger spec format allows you to separate your content from the presentation layer, instantly taking advantage of any new API tooling or platform that can parse the spec.
 
-## Option 2: Store content in YAML files (Jekyll solution)
+## Option 2: Read the Swagger specification file
 
-Another approach for integrating Swagger's output with your other docs might be to store your descriptions and other info in data yaml files in your project, and then include the data references in your spec. I'm most familiar with Jekyll, so I'll describe the process using Jekyll (but similar techniques exist for other static site generators).
+If you're using a tool such as Jekyll, which incorporates a scripting language called Liquid, you can read the Swagger specification file. It is, after all, just YAML syntax. For example, you could use a `for` loop to iterate through the Swagger spec values. Here's a code sample. In this example, the Swagger.yml file is stored inside Jekyll's \_data directory.
 
-In Jekyll, you can store content in YAML files in your \_data folder. For example, suppose you have  file called parameters.yml inside \_data with the following content:
+```liquid
+{% raw %}<table>
+    <thead>
+    <tr><th>Name</th><th>Type</th><th>Description</th><th>Required?</th></tr>
+    </thead>
+    {% for parameter in site.data.swagger.paths.get.parameters %}
+        {% if parameter.in == "query" %}
+        <tr>
+            <td><code>{{ parameter.name }}</code></td>
+            <td><code>{{ parameter.type }}</code></td>
+            <td>
+            {% assign found = false %}
+            {% for param in site.data.swagger.paths.get.parameters %}
+                {% if parameter.name == param.name %}
+                    {{ param.description }}
+                    {% assign found = true %}
+                {% endif %}
+            {% endfor %}
+            {% if found == false %}
+                ** New parameter **
+            {% endif %}
+            </td>
+            <td><code>{{ parameter.required }}</code></td>
+        </tr>
+        {% endif %}
+    {% endfor %}
+</table>{% endraw %}
+```
+
+Special thanks to Peter Henderson for sharing this technique and the code. With this approach, you may have to figure out the right Liquid syntax to iterate through your Swagger spec, and it may take a while. But this is probably the best way to single source the content.
+
+## Option 3: Store content in YAML files
+
+Another approach for integrating Swagger's output with your other docs might be to store your descriptions and other info in data yaml files in your project, and then include the data references in your specification file. I'm most familiar with Jekyll, so I'll describe the process using Jekyll (but similar techniques exist for other static site generators).
+
+In Jekyll, you can store content in YAML files in your \_data folder. For example, suppose you have a file called parameters.yml inside \_data with the following content:
 
 ```yaml
 acme_parameter: >
@@ -151,7 +188,7 @@ By storing the values in data files, you can then include them elsewhere in your
 
 Again, although I've tried this approach, I grew frustrated at not being able to immediately validate my spec. It was more challenging to track down the exact culprits behind my validation errors, and I eventually gave up. But it's a technique that could work.
 
-## Option 3: Use a tool that imports Swagger and allows additional docs
+## Option 4: Use a tool that imports Swagger and allows additional docs
 
 Another approach is to use a tool like [Readme.io](http://readme.io/) that allows you to both import your Swagger spec and also add your own separate documentation pages. Readme provides one of the most attractive outputs and is fully inclusive of almost every documentation feature you could want or need. I explore Readme with more depth [here](pubapis_readmeio.html). Readme.io requires third-party hosting, but there are some other doc tools that allow you to incorporate Swagger as well.
 
