@@ -431,11 +431,11 @@ definitions:
         example: "false"
 ```
 
-## Swagger spec file (version 3.0)
+## Swagger 3.0 specification file
 
-Smartbear recently announced [support for the 3.0 version of the OpenAPI (Swagger) spec in SwaggerHub](https://swaggerhub.com/blog/news/openapi-3-0-swaggerhub-support/). The 3.0 version of the OpenAPI spec provides a number of enhancements, such as for callbacks, linking between operations, enhanced examples, and easier re-use). You can read about the [3.0 features here](https://swagger.io/announcing-openapi-3-0/) in more detail.
+Smartbear recently announced [support for the 3.0 version of the OpenAPI (Swagger) spec in SwaggerHub](https://swaggerhub.com/blog/news/openapi-3-0-swaggerhub-support/). The 3.0 version of the OpenAPI spec provides a number of enhancements, such as support for callbacks, linking between operations, enhanced examples, and easier re-use). You can read about the [3.0 features here](https://swagger.io/announcing-openapi-3-0/) in more detail.
 
-{% include tip.html content="I used [APIMATIC](https://apimatic.io/transformer) to convert the 2.0 spec to the 3.0 spec automatically. You can also use APIMATIC to transform your spec file into a number of other outputs, such as RAML, Postman, or API Blueprint." %}
+{% include tip.html content="I used [APIMATIC](https://apimatic.io/transformer) to convert the 2.0 spec to the 3.0 spec automatically. You can also use APIMATIC to transform your spec file into a number of other outputs, such as RAML, Postman, or API Blueprint. To see the difference between the 2.0 and the 3.0 code, you can copy these code samples to separate files and then use an application like Diffmerge to highlight the differences." %}
 
 ```yaml
 openapi: 3.0.0
