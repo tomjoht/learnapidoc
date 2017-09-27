@@ -1,5 +1,5 @@
 ---
-title: Document sample responses
+title: Describe sample responses
 permalink: /docapis_doc_sample_responses.html
 categories:
 - api-doc
@@ -7,7 +7,7 @@ keywords:
 course: "Documenting REST APIs"
 weight: 3.5
 sidebar: docapis
-section: docendpoints 
+section: docendpoints
 path1: /docendpoints.html
 ---
 

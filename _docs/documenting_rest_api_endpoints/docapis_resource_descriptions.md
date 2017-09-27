@@ -1,5 +1,5 @@
 ---
-title: Document resource descriptions
+title: Describe resource descriptions
 permalink: /docapis_resource_descriptions.html
 categories:
 - api-doc
@@ -7,7 +7,7 @@ keywords:
 course: "Documenting REST APIs"
 weight: 3.1
 sidebar: docapis
-section: docendpoints 
+section: docendpoints
 path1: /docendpoints.html
 ---
 

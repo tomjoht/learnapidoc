@@ -1,5 +1,5 @@
 ---
-title: Document parameters
+title: Describe parameters
 permalink: /docapis_doc_parameters.html
 categories:
 - api-doc
@@ -7,7 +7,7 @@ keywords:
 course: "Documenting REST APIs"
 weight: 3.3
 sidebar: docapis
-section: docendpoints 
+section: docendpoints
 path1: /docendpoints.html
 ---
 

@@ -75,22 +75,22 @@ folders:
   - title: New API endpoint to document
     jurl: /docapis_new_endpoint_to_doc.html
 
-  - title: Document resource descriptions
+  - title: Describe resource descriptions
     jurl: /docapis_resource_descriptions.html
 
-  - title: Document endpoint definitions and methods
+  - title: Describe endpoint definitions and methods
     jurl: /docapis_doc_endpoint_definitions.html
 
-  - title: Document parameters
+  - title: Describe parameters
     jurl: /docapis_doc_parameters.html
 
-  - title: Document sample requests
+  - title: Describe sample requests
     jurl: /docapis_doc_sample_requests.html
 
-  - title: Document sample responses
+  - title: Describe sample responses
     jurl: /docapis_doc_sample_responses.html
 
-  - title: Document code samples
+  - title: Describe code samples
     jurl: /docapis_doc_code_samples.html
 
   - title: Put it all together
@@ -122,16 +122,16 @@ folders:
   - title: Write the Getting Started section
     jurl: /docapis_doc_getting_started_section.html
 
-  - title: Document authentication and authorization
+  - title: Describe authentication and authorization
     jurl: /docapis_more_about_authorization.html
 
-  - title: Document response and error codes
+  - title: Describe response and error codes
     jurl: /docapis_doc_response_codes.html
 
-  - title: Document code samples and tutorials
+  - title: Describe code samples and tutorials
     jurl: /docapis_codesamples_bestpractices.html
 
-  - title: Create the quick reference guide
+  - title: Creating the quick reference guide
     jurl: /docapis_doc_quick_reference.html
 
 - title: Explore other REST APIs

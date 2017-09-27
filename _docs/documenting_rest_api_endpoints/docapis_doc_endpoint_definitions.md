@@ -1,5 +1,5 @@
 ---
-title: Document the endpoints and methods
+title: Describe the endpoints and methods
 permalink: /docapis_doc_endpoint_definitions.html
 categories:
 - api-doc
@@ -7,7 +7,7 @@ keywords:
 course: "Documenting REST APIs"
 weight: 3.2
 sidebar: docapis
-section: docendpoints 
+section: docendpoints
 path1: /docendpoints.html
 ---
 

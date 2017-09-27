@@ -1,5 +1,5 @@
 ---
-title: Document endpoints
+title: Describe endpoints
 permalink: /docendpoints.html
 sidebar: docapis
 path1: /docendpoints.html
