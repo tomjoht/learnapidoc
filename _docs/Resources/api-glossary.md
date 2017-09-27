@@ -11,10 +11,8 @@ section: resources
 path1: /resources.html
 ---
 
-{% include note.html content="This page is under construction ..." %}
-
 API
-: Application Programming Interface. Enables different systems to interact with each other programmatically. Two types of APIs are web services and library-based APIs.
+: Application Programming Interface. Enables different systems to interact with each other programmatically. Two types of APIs are web services and library-based APIs. See [What is a REST API?](http://idratherbewriting.com/learnapidoc/docapis_what-is-a-rest-api.html).
 
 API Console
 : Renders an interactive display for the RAML spec. Similar to Swagger UI, but for [RAML](http://idratherbewriting.com/learnapidoc/pubapis_raml.html#sample-spec-for-mashape-weather-api). See [github.com/mulesoft/api-console](https://github.com/mulesoft/api-console).
@@ -33,7 +31,7 @@ API Blueprint
 The API Blueprint spec is an alternative to OpenAPI or RAML. API Blueprint is written in a Markdown-flavored syntax. See [API Blueprint](http://idratherbewriting.com/learnapidoc/pubapis_api_blueprint.html) in this course, or go to [API Blueprint's homepage](https://apiblueprint.org/) to learn more.
 
 Apigee
-: Similar to Apiary, Apigee provides services for you to manage the whole lifecycle of your API. Specifically, Apigee lets you "manage API complexity and risk in a multi- and hybrid-cloud world by ensuring security, visibility, and performance across the entire API landscape." See [apigee.com](https://apigee.com/api-management/). Supports the OpenAPI spec.
+: Similar to Apiary, Apigee provides services for you to manage the whole lifecycle of your API. Specifically, Apigee lets you "manage API complexity and risk in a multi- and hybrid-cloud world by ensuring security, visibility, and performance across the entire API landscape." Supports the OpenAPI spec. See [apigee.com](https://apigee.com/api-management/).
 
 Asciidoc
 : A lightweight text format that provides more semantic features than Markdown. Used in some static site generators, such as [Asciidoctor](http://asciidoctor.org/) or [Nanoc](https://nanoc.ws/). See [http://asciidoc.org/](http://asciidoc.org/).
@@ -117,7 +115,7 @@ repo
 : In Git, a repo (short for repository) stores your project's code. Usually you only store non-binary (human-readable) text files in a repo, because Git can run diffs on text files and show you what has changed (but not with binary files).
 
 REST API
-: Stands for Representational State Transfer. Uses web protocols (HTTP) to make requests and provide responses in a language agnostic way, meaning that users can choose whatever programming language they want to make the calls. See [What is a REST API?](http://idratherbewriting.com/learnapidoc/docapis_what-is-a-rest-api.html)
+: Stands for Representational State Transfer. Uses web protocols (HTTP) to make requests and provide responses in a language agnostic way, meaning that users can choose whatever programming language they want to make the calls. See [What is a REST API?](http://idratherbewriting.com/learnapidoc/docapis_what-is-a-rest-api.html).
 
 Smartbear
 : The company that maintains and develops the open source Swagger tooling (Swagger Editor, Swagger UI, Swagger Codegen, and others), and which that formed the OpenAPI Initiative which leads the evolution of the Swagger (OpenAPI) specification. Also developed SwaggerHub. See [Smarbear](https://smartbear.com/).
