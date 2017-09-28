@@ -48,39 +48,6 @@ Mashape [provides some sample code](http://docs.mashape.com/javascript) to parse
 
     You can put the script in the `head` section if you want &mdash; just make sure you add it after the jQuery reference.
 
-7.  The Postman code sample needs one more parameter: `dataType`. Add `"dataType": "json"` as parameter in `settings`.
-
-    {{warning}} Make sure you capitalize the <code>T</code> in <code>dataType</code>.
-
-    Your final code should look like this:
-
-    ```html
-    <html>
-    <head>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    </head>
-    <title>Sample Page</title>
-    <script>
-    var settings = {
-      "async": true,
-      "crossDomain": true,
-      "dataType": "json",
-      "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&lng=-121.955236",
-      "method": "GET",
-      "headers": {
-        "accept": "application/json",
-        "x-mashape-key": "APIKEY"
-      }
-    }
-    $.ajax(settings).done(function (response) {
-      console.log(response);
-    });
-    </script>
-    <body>
-    </body>
-    </html>
-    ```
-
 8.  Start Chrome and open the JavaScript Console by going to **View > Developer > JavaScript Console**.
 9.  Open the weatherdata.html file in Chrome (**File > Open File**).
 
