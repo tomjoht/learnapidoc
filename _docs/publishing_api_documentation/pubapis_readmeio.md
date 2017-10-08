@@ -4,14 +4,11 @@ permalink: /pubapis_readmeio.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 7.9
-section: publishingapis 
+section: publishingapis
 path1: /publishingapis.html
 ---
 
-You can publish documentation on hosted platforms specifically built for API and developer documentation. Two promising platforms are the following:
-
-* [readme.io](http://readme.io)
-* [readthedocs.com](http://readthedocs.com)
+You can publish documentation on hosted platforms specifically built for API and developer documentation. One of these more promising platforms is [readme.io](http://readme.io).
 
 {% if site.target == "web" %}
 * TOC
@@ -20,9 +17,7 @@ You can publish documentation on hosted platforms specifically built for API and
 
 ## No need to spend time developing your own site
 
-If you consider how much time it requires to build, maintain, troubleshoot, etc. your own website, then it really does make sense to consider an existing third-party platform where someone has already built all of this out for you.
-
-## Publish endpoint documentation on readme.io
+If you consider how much time it requires to build, maintain, troubleshoot, etc., your own website, then it really does make sense to consider an existing third-party platform where someone has already built all of this out for you.
 
 In this tutorial we'll explore how to publish content on readme.io in more depth.
 
@@ -32,52 +27,25 @@ In this workshop activity, you'll publish this [weatherdata endpoint documentati
 
 ### a. Set up a readme.io project
 
+1. Go to [readme.io](http://readme.io).
 1. Click the **Sign Up** button in the upper-right corner and sign up for an account.
-2. Add a Project Name (e.g., Weather API), Subdomain (e.g., weather-api), and Project Logo. Then click **Create Project**.
+2. If necessary, click **+Add Project**. Then add a Project Name (e.g., Weather API), Subdomain (e.g., weather-api), and Project Logo. Then click **Create**.
 
 	<img src="images/projectsettingsreadmeio.png" alt="Project Settings" />
 
 ### b. Configure API settings
 
-1. In the left sidebar, under Settings, click **API Settings**.
+In the left sidebar, click **Reference Docs**, and then click **API**. You can either import a Swagger file or input the API information manually. Readme.io provides a number of wizard-like screens to move you through the documentation process, prompting you with forms to complete.
 
-	 This is where you add the authentication information necessary for making calls to the API.
+<img src="images/readmeio_manual_api.png"
 
-2. For the API Base URL, enter **`https://simple-weather.p.mashape.com`**.
-3. Leave the other settings not mentioned here at the defaults.
-4. In the Static Headers section, click **Add Header** add these two headers as key-value pairs in the appropriate fields:
+Although you can add your API information manually, you can also import a  [Swagger](http://idratherbewriting.com/learnapidoc/pubapis_swagger_intro.html) file. You can experiment by choosing one from the [Swagger examples](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0/yaml), such as [this one](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/petstore-expanded.json).
 
-   ```
-	X-Mashape-Key APIKEY
-	Accept application/json
-   ```
+I won't provide detailed steps for configuring documentation in Readme.io. Their UI is constantly improving/changing, and you should see their documentation for full details. Just recognize that Readme.io provides a robust GUI for creating API documentation, in a way that is more extensive and well-designed than virtually any other platform available.
 
-	 <img src="images/readmioheaders.png" alt="Readme.io static headers" />
+The output provides an interactive, try-it-out experience with endpoints:
 
-5. Select the **API Explorer** check box (if it's not already selected).
-6. Click **Save**.
-
-{% include random_ad.html %}
-
-### c. Add endpoint documentation
-
-1. In the left sidebar, click **Documentation**.
-2. Click **+** to add a new page, and choose the **RESTful API** template.
-3. Select the **GET** method next to title.
-4. Add in the documentation from the [weatherdata endpoint documentation](https://www.mashape.com/fyhao/weather-13#weatherdata). For example, add the description, parameters, cURL call, and response.
-
-	<img src="images/weatherdatareadmio.png" alt="Inputting weatherdata into readme.io" />
-
- 5. Click **Save**.
- 6. At the top of the screen, click the project name to view the site.
-
-### d. Interact with the documentation
-
- 1. Click **Documentation** in the header to go to your site.
- 2. Click the **Weatherdata** endpoint in the sidebar.
- 3. In the Try It Out section, insert some values into the lat and lng fields, and then click **Try It**.
-
-	<img src="images/readmeiotryitout.png" alt="Try it on readme.io" />
+<img src="images/readmeiotryitout.png" alt="Try it on readme.io" />
 
 The experience is similar to Swagger in that the response appears directly in the documentation. This API Explorer gives you a sense of the data returned by the API.
 
@@ -88,3 +56,5 @@ Readme.io is a pretty sweet platform, and you don't have to worry about describi
 Additionally, if the cloud location for your docs isn't an option, that may also pose challenges. Finally, there isn't any content re-use functionality, so if you have multiple outputs for your documentation that you're single sourcing, Readme.io may not be for you.
 
 Even so, the output is sharp and the talent behind this site is top-notch. The platform is constantly growing with new features, so maybe all of this functionality will eventually be there.
+
+{% include random_ad.html %}
