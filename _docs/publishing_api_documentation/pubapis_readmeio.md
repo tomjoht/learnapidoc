@@ -28,26 +28,26 @@ In this workshop activity, you'll publish this [weatherdata endpoint documentati
 ### a. Set up a readme.io project
 
 1. Go to [readme.io](http://readme.io).
-1. Click the **Sign Up** button in the upper-right corner and sign up for an account.
-2. If necessary, click **+Add Project**. Then add a Project Name (e.g., Weather API), Subdomain (e.g., weather-api), and Project Logo. Then click **Create**.
+2. Click the **Sign Up** button in the upper-right corner and sign up for an account.
+3. If necessary, click **+Add Project**. Then add a Project Name (e.g., Weather API), Subdomain (e.g., weather-api), and Project Logo. Then click **Create**.
 
-	<img src="images/projectsettingsreadmeio.png" alt="Project Settings" />
+   <img src="images/projectsettingsreadmeio.png" alt="Project Settings" />
 
-### b. Configure API settings
+4. Now check out the API doc configuration section. In the left sidebar, click **Reference Docs**, and then click **API**.
 
-In the left sidebar, click **Reference Docs**, and then click **API**. You can either import a Swagger file or input the API information manually. Readme.io provides a number of wizard-like screens to move you through the documentation process, prompting you with forms to complete.
+  Although you can add your API information manually, you can also import a  [Swagger](http://idratherbewriting.com/learnapidoc/pubapis_swagger_intro.html) file. You can experiment by choosing one from the [Swagger examples](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0/yaml), such as [this one](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/petstore-expanded.json).
 
-<img src="images/readmeio_manual_api.png"
+  Readme.io provides a number of wizard-like screens to move you through the documentation process, prompting you with forms to complete.
 
-Although you can add your API information manually, you can also import a  [Swagger](http://idratherbewriting.com/learnapidoc/pubapis_swagger_intro.html) file. You can experiment by choosing one from the [Swagger examples](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0/yaml), such as [this one](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/petstore-expanded.json).
+  <img src="images/readmeio_manual_api.png" style="border: 1px solid #dedede; max-width: 600px;" />
 
-I won't provide detailed steps for configuring documentation in Readme.io. Their UI is constantly improving/changing, and you should see their documentation for full details. Just recognize that Readme.io provides a robust GUI for creating API documentation, in a way that is more extensive and well-designed than virtually any other platform available.
+  I won't provide detailed steps for configuring documentation in Readme.io. Their UI is constantly improving/changing, and you should see their documentation for full details ANYWAY. Just recognize that Readme.io provides a robust GUI for creating API documentation, in a way that is more extensive and well-designed than virtually any other platform available.
 
-The output provides an interactive, try-it-out experience with endpoints:
+  The Readme output provides an interactive, try-it-out experience with endpoints:
 
-<img src="images/readmeiotryitout.png" alt="Try it on readme.io" />
+  <img src="images/readmeiotryitout.png" style="border: 1px solid #dedede; max-width: 600px;" />
 
-The experience is similar to Swagger in that the response appears directly in the documentation. This API Explorer gives you a sense of the data returned by the API.
+  The experience is similar to Swagger in that the response appears directly in the documentation. This API Explorer gives you a sense of the data returned by the API.
 
 ## Limitations with Readme.io
 
