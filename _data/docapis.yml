@@ -23,7 +23,7 @@ folders:
     jurl: /index.html
 
   - title: Foreword
-    jurl: /foreward.html
+    jurl: /foreword.html
 
   - title: The market for REST API documentation
     jurl: /docapis_intro_to_rest_api_doc.html
