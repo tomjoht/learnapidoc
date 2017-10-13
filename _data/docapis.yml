@@ -169,6 +169,9 @@ folders:
   - title: Breaking down API doc
     jurl: /pubapis_api_doc_types.html
 
+  - title: Docs-as-code tools
+    jurl: /pubapis_api_docs_as_code.html
+
   - title: Tool decisions
     jurl: /pubapis_tooldecisions.html
 
@@ -204,6 +207,9 @@ folders:
 
   - title: Tools versus Content
     jurl: /pubapis_tools_vs_content.html
+
+  - title: "Case study: Switching tools to docs-as-code"
+    jurl: /pubapis_tools_switching_to_docs_as_code.html
 
 #  - title: Conclusion
 #    permalink: /pubapis_conclusion.html
