@@ -124,7 +124,7 @@ Sphinx
 : A static site generator developed for managing documentation for Python. Sphinx is the most documentation-oriented static site generator available and includes many robust features -- such as search, sidebar navigation, semantic markup, managed links -- that other static site generators lack. Based on Python. See [https://www.staticgen.com/sphinx](https://www.staticgen.com/sphinx).
 
 Static site generator
-: A breed of website compilers that package up a group of files (usually written in Markdown) and make them into a website. There are more than 350 different static site generators. See [Static site generators](http://idratherbewriting.com/learnapidoc/pubapis_static_site_generators.html) in this course or [Staticgen](https://www.staticgen.com/) for a list of all static site generators.
+: A breed of website compilers that package up a group of files (usually written in Markdown) and make them into a website. There are more than 350 different static site generators. See [Jekyll](http://idratherbewriting.com/learnapidoc/pubapis_jekyll.html) in this course for a deep-dive into the most popular static site generator, or [Staticgen](https://www.staticgen.com/) for a list of all static site generators.
 
 Swagger
 : An official specification for REST APIs. Provides objects used to describe your endpoints, parameters, responses, and security. Now called OpenAPI specification.

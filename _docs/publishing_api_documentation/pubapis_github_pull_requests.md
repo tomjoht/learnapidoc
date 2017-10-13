@@ -4,7 +4,7 @@ permalink: /pubapis_github_pull_requests.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 7.7
-section: publishingapis 
+section: publishingapis
 path1: /publishingapis.html
 ---
 

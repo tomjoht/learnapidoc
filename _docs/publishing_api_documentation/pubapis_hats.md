@@ -1,5 +1,5 @@
 ---
-title: "Help authoring tools"
+title: "Traditional help authoring tools (HATs)"
 permalink: /pubapis_hats.html
 course: "Documenting REST APIs"
 sidebar: docapis
