@@ -9,11 +9,11 @@ path1: /survey.html
 ---
 
 {: .survey}
-[Survey question](survey_introduction): Do engineers write the initial API documentation in the source code (e.g., Javadoc syntax)?
+[Survey question](survey_introduction.html): Do engineers write the initial API documentation in the source code (e.g., Javadoc syntax)?
 
 42 people responded. The results are as follows:
 
-![commentsincode2](/images/commentsincode2.png)
+![commentsincode2](images/commentsincode2.png)
 
 This question was a little problematic. Because a lot of tech writers are working on REST APIs, a lot of developers don't write reference documentation in the code (unless they're creating the Swagger files). However, they might put the reference documentation on an internal wiki in some other place, such as a readme.txt file. At any rate, I think the "No" is artificially inflated here by the many writers working on REST APIs instead of platform APIs. However, the responses are still useful.
 

@@ -13,7 +13,7 @@ path1: /introtoapis.html
 
 Before we dive into the technical aspects of APIs, let's explore the market and general landscape and trends with API documentation.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

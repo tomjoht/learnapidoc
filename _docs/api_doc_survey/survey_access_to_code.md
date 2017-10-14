@@ -9,11 +9,11 @@ path1: /survey.html
 ---
 
 {: .survey}
-[Survey question](survey_introduction): How do you get the source files containing code comments? (e.g., Git, Mercurial)?
+[Survey question](survey_introduction.html): How do you get the source files containing code comments? (e.g., Git, Mercurial)?
 
 Out of 42 responses, here are the results:
 
-![accesssource](/images/accesssource.png)
+![accesssource](images/accesssource.png)
 
 This question partly served as a check to an earlier question, [Do you create documentation by looking at the source code of API files?](http://idratherbewriting.com/2015/01/02/api-doc-survey-do-you-create-doc-by-looking-at-source-code/). For that question, 60% of the people said yes or sometimes, and 40% said no. With the question here, 24% of the people said they don't have access to the source code, so the answers harmonize. Most likely another 16% have access to the source code and might occasionally consult it, but they don't use it to create the documentation.
 

@@ -10,7 +10,7 @@ path1: /nativelibraryapis.html
 
 In previous parts of the course, we focused exclusively on REST APIs. Now let's explore native library APIs, which are more common when building native apps.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

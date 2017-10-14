@@ -10,7 +10,7 @@ path1: /restapispecifications.html
 
 When you created the Swagger file, you used a syntax called YML. YML stands for "YAML Ain't Markup Language." This means that the YAML syntax doesn't have markup tags such as `<` or `>`.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

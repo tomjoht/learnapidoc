@@ -11,7 +11,7 @@ path1: /otherapis.html
 
 Use the Aeris Weather API to get the wind speed (MPH) for a specific place (your choice).
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

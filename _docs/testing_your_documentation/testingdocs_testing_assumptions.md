@@ -10,7 +10,7 @@ path1: /testingdocs.html
 
 Almost all documentation builds on assumptions that may or may not be shared with your audience. While [testing your documentation](testingdocs_test_your_instructions.html), recognize that what may seem clear to you may be confusing to your users. Learn to identify these assumptions that can interfere with your user's ability to follow the instructions in your docs.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

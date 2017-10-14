@@ -43,7 +43,6 @@
 
 <ul id="docnavsidebar" class="docnav">
 {% for folder in sidebar.folders %}
-{% unless folder.type == "frontmatter" %}
 {% if page.url == folder.jurl %}
 <li class="level1 folderTitle current open"><a  class="subfoldersTitle" href="{{ folder.jurl | remove: "/" }}">{{ folder.title }}</a>
   {% else %}
@@ -114,7 +113,6 @@
 
         {% endfor %}
     </ul>
-{% endunless %}
     {% endfor %}
 
 </li>

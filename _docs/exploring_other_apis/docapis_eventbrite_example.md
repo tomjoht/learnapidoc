@@ -11,7 +11,7 @@ path1: /otherapis.html
 
 Use the EventBrite API to get the event title and description of [this event](https://www.eventbrite.com/myevent?eid=17920884849).
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

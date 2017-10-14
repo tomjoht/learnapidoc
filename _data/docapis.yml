@@ -2,21 +2,9 @@ sidebartitle: Document REST APIs
 
 folders:
 
-- title: Frontmatter
-  jurl: /frontmatter.html
-  type: frontmatter
-  folderitems:
-
-  - title: Title page
-    jurl: /pdf_title_page.html
-    type: pdf
-
-  - title: TOC page
-    jurl: /pdf_toc_page.html
-    type: pdf
-
 - title: Introduction to REST APIs
   jurl: /introtoapis.html
+  class: first
   folderitems:
 
   - title: Course overview
@@ -31,7 +19,7 @@ folders:
   - title: What is a REST API?
     jurl: /docapis_what-is-a-rest-api.html
 
-- title: Use a REST API as a developer
+- title: Using a REST API as a developer
   jurl: /likeadeveloper.html
   folderitems:
 
@@ -68,35 +56,35 @@ folders:
   - title: Dive into dot notation
     jurl: /docapis_diving_into_dot_notation.html
 
-- title: Document endpoints
+- title: Documenting endpoints
   jurl: /docendpoints.html
   folderitems:
 
-  - title: New API endpoint to document
+  - title: A new API endpoint to document
     jurl: /docapis_new_endpoint_to_doc.html
 
-  - title: Describe resource descriptions
+  - title: How to document resource descriptions
     jurl: /docapis_resource_descriptions.html
 
-  - title: Describe endpoint definitions and methods
+  - title: How to document endpoint definitions and methods
     jurl: /docapis_doc_endpoint_definitions.html
 
-  - title: Describe parameters
+  - title: How to document parameters
     jurl: /docapis_doc_parameters.html
 
-  - title: Describe sample requests
+  - title: How to document sample requests
     jurl: /docapis_doc_sample_requests.html
 
-  - title: Describe sample responses
+  - title: How to document sample responses
     jurl: /docapis_doc_sample_responses.html
 
-  - title: Describe code samples
+  - title: How to document code samples
     jurl: /docapis_doc_code_samples.html
 
   - title: Put it all together
     jurl: /docapis_finished_doc_result.html
 
-- title: Test your documentation
+- title: Testing your API documentation
   jurl: /testingdocs.html
   folderitems:
 
@@ -109,7 +97,7 @@ folders:
   - title: Test your assumptions
     jurl: /testingdocs_testing_assumptions.html
 
-- title: Document non-reference sections
+- title: Documenting non-reference sections
   jurl: /docnonref.html
   folderitems:
 
@@ -134,7 +122,7 @@ folders:
   - title: Creating the quick reference guide
     jurl: /docapis_doc_quick_reference.html
 
-- title: Explore other REST APIs
+- title: Exploring other REST APIs
   jurl: /otherapis.html
   folderitems:
 
@@ -156,7 +144,7 @@ folders:
   - title: Next phase of course
     jurl: /docapis_completion.html
 
-- title: Publish API docs
+- title: Publishing your API documentation
   jurl: /publishingapis.html
   folderitems:
 
@@ -208,7 +196,7 @@ folders:
 #  - title: Conclusion
 #    permalink: /pubapis_conclusion.html
 
-- title: REST API specifications
+- title: Using REST API specifications
   jurl: /restapispecifications.html
   folderitems:
 
@@ -267,7 +255,7 @@ folders:
     - title: Challenging factors
       jurl: /pubapis_challenging_factors.html
 
-- title: Document native library APIs
+- title: Documenting native library APIs
   jurl: /nativelibraryapis.html
   folderitems:
 
@@ -298,7 +286,7 @@ folders:
   - title: Document non-reference API docs
     jurl: /nativelibraryapis_nonrefdocs.html
 
-- title: Get a Job in API Documentation
+- title: Getting a Job in API Documentation
   jurl: /jobapis.html
   folderitems:
 
@@ -308,7 +296,7 @@ folders:
   - title: How much code do you need to know to create developer documentation?
     jurl: /jobapis_learning_code.html
 
-- title: API documentation survey
+- title: API documentation survey results
   jurl: /survey.html
   folderitems:
 

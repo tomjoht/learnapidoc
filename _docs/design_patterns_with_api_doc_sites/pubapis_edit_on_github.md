@@ -10,7 +10,7 @@ path1: /designpatterns.html
 
 One common design pattern in API docs is a button or link that says "Edit on Github." This button takes users to the source file on Github, where they can edit the content. I'd seen this button on many API doc sites, so I decided to give it a try with my own docs.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}
@@ -53,7 +53,7 @@ In [My Journey To and From Wikis: Why I Adopted Wikis, Why I Veered Away, and a 
 
 > When the community owns the content, community members can also keep content up to date when the original author flounders. Many times the original author isn't aware of all the places that content is out of date. As community members use the documentation, they often find places that need updating. Because the content is on a wiki, they can quickly and easily make these updates.
 
-![Shared ownership](images/shared-ownership600.png)
+![Shared ownership](images/shared-ownership.png)
 
 Additionally, I wanted to iterate continuously on the docs. Wikis removed the need to build, publish, and deploy content. It all happened magically in the browser when you hit save.
 

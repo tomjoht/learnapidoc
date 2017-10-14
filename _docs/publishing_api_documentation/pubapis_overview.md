@@ -10,7 +10,7 @@ path1: /publishingapis.html
 
 In earlier parts of this course, we used a simple [Weather API from Mashape](https://market.mashape.com/fyhao/weather-13) to demonstrate how to use a REST API. Now we'll explore various tools to publish information from the same Mashape Weather API.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

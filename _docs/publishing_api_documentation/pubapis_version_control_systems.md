@@ -13,7 +13,7 @@ path1: /publishingapis.html
 
 Pretty much every IT shop uses some form of version control with their software code. Version control is how developers collaborate and manage their work.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

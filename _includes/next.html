@@ -1,4 +1,4 @@
-<div class="seriesContext">
+{% if site.format == "web" %}<div class="seriesContext">
   <hr/>
 
   {% assign newpages = site.docs | sort:"weight" | reverse %}
@@ -16,9 +16,6 @@
           {% break %}
       {% endif %}
     {% endfor %}
-
-
-
   <hr/>
-
 </div>
+{% endif %}

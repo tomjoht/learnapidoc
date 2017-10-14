@@ -137,3 +137,22 @@ ul li.level1 a {
     color: #666666;
     text-decoration: none;
 }
+
+/* just for the TOC start page */
+
+.tocstart li.sectionHead {
+    list-style-type: none;
+     font-size: 1.2em;
+
+}
+
+.tocstart ul#docnavsidebar {
+    padding: 10px;
+}
+
+/* end*/
+
+dt {
+    font-weight: bold;
+    margin-top: 20px;
+}

@@ -9,11 +9,11 @@ path1: /survey.html
 ---
 
 {: .survey}
-[Survey question](survey_introduction): Do you provide documentation for a REST API, Java API, C++ API, .NET API, or other?
+[Survey question](survey_introduction.html): Do you provide documentation for a REST API, Java API, C++ API, .NET API, or other?
 
 Here's the result:
 
-<figure>![Common types of APIs that technical writers in my survey document](/images/typesofapis-600x398.png)
+<figure>![Common types of APIs that technical writers in my survey document](images/typesofapis-600x398.png)
 
 <figcaption>Common types of APIs that technical writers in my survey document</figcaption>
 

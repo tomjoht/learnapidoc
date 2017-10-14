@@ -14,7 +14,7 @@ The following is the Swagger specification file that I created for the [sample M
 
 After the specification file (which is provided in two versions of the spec -- 2.0 and 3.0), I'll go through and explain various parts of the spec and how to read the spec documentation.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

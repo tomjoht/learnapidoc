@@ -9,11 +9,11 @@ path1: /survey.html
 ---
 
 {: .survey}
-[Survey question](survey_introduction): What tool or authoring syntax do you use to create your programming guides? (DITA, Flare, Markdown?)
+[Survey question](survey_introduction.html): What tool or authoring syntax do you use to create your programming guides? (DITA, Flare, Markdown?)
 
 There were 38 responses, which I have represented as follows:
 
-![authoringtools](/images/authoringtools.png)
+![authoringtools](images/authoringtools.png)
 
 Once more, in hindsight, I realize how poorly worded my survey question was. I didn't define what I meant by “programming guides.” By “programming guides” I meant those tutorials outside of any auto-generated content. Presumably if you're generating API reference documentation from a platform-based API like Java, you would use Javadoc, for C++ you would Doxygen, and maybe for REST, you might use Swagger.
 

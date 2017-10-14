@@ -18,11 +18,11 @@ While the free Swagger UI approach works, you'll run into several problems:
 
 When you're working on REST API documentation, you need tools that are specifically designed for REST APIs &mdash; tools that allow you to create, share, collaborate, version, test, and publish the documentation in ways that don't require extensive customization or time.
 
-There's a point at which experimenting with the free Swagger UI tooling hits a wall and you'll need to find another way to move to the next level. This is where [SwaggerHub](swaggerhub.com) from [Smartbear](https://smartbear.com/) comes in. SwaggerHub provides a complete solution for designing, managing, and publishing documentation for your API in ways that will simplify your life as an API technical writer.
+There's a point at which experimenting with the free Swagger UI tooling hits a wall and you'll need to find another way to move to the next level. This is where [SwaggerHub](https://swaggerhub.com) from [Smartbear](https://smartbear.com/) comes in. SwaggerHub provides a complete solution for designing, managing, and publishing documentation for your API in ways that will simplify your life as an API technical writer.
 
 SwaggerHub is used by more than 15,000 software teams across the globe. As the Swagger spec becomes more of an industry standard for API documentation, SwaggerHub's swagger-specific tooling becomes essential.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}
@@ -117,7 +117,7 @@ Simulating the API can be especially useful for testing your API with beta users
 
 Using the mock server approach, SwaggerHub not only provides documentation but also acts as a beta-testing tool to get the design of your API right before sinking thousands of hours of time into actual coding. You can enable auto-mocking for different versions of your API, creating variants and testing each of the variants.
 
-To set up a mocking server in SwaggerHub, click <img class="inline" src="images/swaggerhub_integration_button.png"/> and select to add a new integration. Select the **API Auto Mocking** service and complete the configuration details. Make sure you have `examples` for each of the endpoint responses in your spec.
+To set up a mocking server in SwaggerHub, click <img class="inline" src="images/swaggerhub_integration_button.png" /> and select to add a new integration. Select the **API Auto Mocking** service and complete the configuration details. Make sure you have `examples` for each of the endpoint responses in your spec.
 
 ## Content Re-use (Domains)
 

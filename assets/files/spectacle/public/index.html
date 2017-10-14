@@ -1,0 +1,1901 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API from Mashape | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>API Reference</h5>
+          <a href="#introduction">Introduction</a>
+          <!-- <h5>Security</h5> -->
+          <a href="#authentication">Authentication</a>
+          <h5>Operations</h5>
+          <section>
+            <a href="#tag-Air-Quality">Air Quality</a>
+            <ul>
+              <li>
+                <a href="#operation--aqi-get"> Gets the air quality index </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <a href="#tag-Weather-Forecast">Weather Forecast</a>
+            <ul>
+              <li>
+                <a href="#operation--weather-get"> Gets the weather forecast in abbreviated form </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <a href="#tag-Weather-Data">Weather Data</a>
+            <ul>
+              <li>
+                <a href="#operation--weatherdata-get"> Get weather forecast with lots of details </a>
+              </li>
+            </ul>
+          </section>
+          <h5>Schema Definitions</h5>
+          <a href="#definition-aqiResponse"> aqiResponse </a>
+          <a href="#definition-weatherResponse"> weatherResponse </a>
+          <a href="#definition-weatherdata-response"> weatherdata response </a>
+          <a href="#definition-query"> query </a>
+          <a href="#definition-results"> results </a>
+          <a href="#definition-channel"> channel </a>
+          <a href="#definition-units"> units </a>
+          <a href="#definition-location"> location </a>
+          <a href="#definition-wind"> wind </a>
+          <a href="#definition-atmosphere"> atmosphere </a>
+          <a href="#definition-astronomy"> astronomy </a>
+          <a href="#definition-image"> image </a>
+          <a href="#definition-item"> item </a>
+          <a href="#definition-condition"> condition </a>
+          <a href="#definition-forecast"> forecast </a>
+          <a href="#definition-forecast-array"> forecast array </a>
+          <a href="#definition-guid"> guid </a>
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <div id="introduction" data-traverse-target="introduction">
+            <h1 class="doc-title">Weather API from Mashape
+              <span>API Reference</span>
+            </h1>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>This is a sample spec that describes a Mashape Weather API as an example to demonstrate features in the Swagger-2.0 specification. This output is part of the
+                  <a href="http://idratherbewriting.com/learnapidoc">Documenting REST API course</a> on my site. The Weather API displays forecast data by latitude and longitude. It&#39;s a simple weather API, but the data comes from Yahoo Weather Service. The weatherdata endpoint delivers the most robust package of information of the endpoints here.</p>
+                <p>To explore the API, you&#39;ll need an API key. You can sign up for an API through Mashape, or you can just use this one\: <code>EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p</code>. For the latitude and longitude parameters, you can get this information from the URL of a location on Google Maps. For example, for Santa Clara, California, use the following\:</p>
+                <ul>
+                  <li>
+                    <strong>lat</strong>: <code>37.3708698</code></li>
+                  <li>
+                    <strong>lng</strong>: <code>-122.037593</code> </li>
+                </ul>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <div class="hljs"> <pre><code>https://simple-weather.p.mashape.com</code></pre> </div>
+                  <h5>Terms of Service:
+                    <a href="http://swagger.io/terms/">http://swagger.io/terms/</a>
+                  </h5>
+                  <h5>Contact:
+                    <a href="mailto:tom@idratherbewriting.com">tom@idratherbewriting.com</a>
+                  </h5>
+                  <!--
+          
+                  -->
+                  <h5>Schemes:
+                    <span>https</span>
+                  </h5>
+                  <h5>Version:
+                    <span>2.1</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <!-- <h1 id="security" data-traverse-target="security">Security</h1> -->
+          <h1 id="authentication" data-traverse-target="authentication">Authentication</h1>
+          <div id="security-definition-api_key" class="panel">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <h3 class="security-definition-title">
+                  <span class="security-name">api_key</span>
+                  <span class="swagger-security-definition-apiKey"></span>
+                </h3>
+                <section class="swagger-security-definition-properties">
+                  <div class="prop-row security-definition-property">
+                    <div class="prop-name">
+                      <div class="prop-title security-definition-property-name">name</div>
+                    </div>
+                    <div class="prop-value security-definition-property-type"> X-Mashape-Key </div>
+                  </div>
+                  <div class="prop-row security-definition-property">
+                    <div class="prop-name">
+                      <div class="prop-title security-definition-property-name">in</div>
+                    </div>
+                    <div class="prop-value security-definition-property-type"> header </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1 id="tag-Air-Quality" class="swagger-summary-tag" data-traverse-target="tag-Air-Quality">Air Quality</h1>
+          <div id="operation--aqi-get" class="operation panel" data-traverse-target="operation--aqi-get">
+            <!-- <section class="operation-tags row"> -->
+            <!-- <div class="doc-copy"> -->
+            <div class="operation-tags">
+              <a class="label" href="#tag-Air-Quality">Air Quality</a>
+              <!---->
+            </div>
+            <!-- </div> -->
+            <!-- </section> -->
+            <h2 class="operation-title">
+              <span class="operation-summary">Gets the air quality index</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">/aqi</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Air quality is a measure of air pollution. The higher the number, the worse the pollution.</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">lat</div>
+                      <span class="json-property-required"></span>
+                    </div>
+                    <div class="prop-value">
+                      <p>latitude</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">type</div>
+                    <div class="prop-value">
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">in</div>
+                    <div class="prop-value">query</div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">lng</div>
+                      <span class="json-property-required"></span>
+                    </div>
+                    <div class="prop-value">
+                      <p>longitude</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">type</div>
+                    <div class="prop-value">
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">in</div>
+                    <div class="prop-value">query</div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/aqiResponse">aqiResponse</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>AQI response</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <div class="hljs"><pre><code class="lang-json"><span class="hljs-string">&quot;string&quot;</span>
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-security">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="swagger-request-security-schema"></th>
+                        <th class="swagger-request-security-scopes"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <a href="#security-definition-api_key">api_key</a>
+                        </td>
+                        <td> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1 id="tag-Weather-Forecast" class="swagger-summary-tag" data-traverse-target="tag-Weather-Forecast">Weather Forecast</h1>
+          <div id="operation--weather-get" class="operation panel" data-traverse-target="operation--weather-get">
+            <!-- <section class="operation-tags row"> -->
+            <!-- <div class="doc-copy"> -->
+            <div class="operation-tags">
+              <a class="label" href="#tag-Weather-Forecast">Weather Forecast</a>
+              <!---->
+            </div>
+            <!-- </div> -->
+            <!-- </section> -->
+            <h2 class="operation-title">
+              <span class="operation-summary">Gets the weather forecast in abbreviated form</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">/weather</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>retrieves the weather forecast, but without too much detail</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">lat</div>
+                      <span class="json-property-required"></span>
+                    </div>
+                    <div class="prop-value">
+                      <p>latitude coordinates</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">type</div>
+                    <div class="prop-value">
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">in</div>
+                    <div class="prop-value">query</div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">lng</div>
+                      <span class="json-property-required"></span>
+                    </div>
+                    <div class="prop-value">
+                      <p>longitude coordinates</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">type</div>
+                    <div class="prop-value">
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">in</div>
+                    <div class="prop-value">query</div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/weatherResponse">weatherResponse</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>weather response</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <div class="hljs"><pre><code class="lang-json"><span class="hljs-string">&quot;string&quot;</span>
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-security">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="swagger-request-security-schema"></th>
+                        <th class="swagger-request-security-scopes"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <a href="#security-definition-api_key">api_key</a>
+                        </td>
+                        <td> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1 id="tag-Weather-Data" class="swagger-summary-tag" data-traverse-target="tag-Weather-Data">Weather Data</h1>
+          <div id="operation--weatherdata-get" class="operation panel" data-traverse-target="operation--weatherdata-get">
+            <!-- <section class="operation-tags row"> -->
+            <!-- <div class="doc-copy"> -->
+            <div class="operation-tags">
+              <a class="label" href="#tag-Weather-Data">Weather Data</a>
+              <!---->
+            </div>
+            <!-- </div> -->
+            <!-- </section> -->
+            <h2 class="operation-title">
+              <span class="operation-summary">Get weather forecast with lots of details</span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-path">
+                  <span class="operation-method">GET</span>
+                  <span class="operation-path">/weatherdata</span>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>Includes full details of the weather forecast, in JSON format</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">lat</div>
+                      <span class="json-property-required"></span>
+                    </div>
+                    <div class="prop-value">
+                      <p>latitude</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">type</div>
+                    <div class="prop-value">
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">in</div>
+                    <div class="prop-value">query</div>
+                  </div>
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">lng</div>
+                      <span class="json-property-required"></span>
+                    </div>
+                    <div class="prop-value">
+                      <p>longitude</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">type</div>
+                    <div class="prop-value">
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name param-label">in</div>
+                    <div class="prop-value">query</div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/weatherdata response">weatherdata response</a>
+                        </span>
+                      </div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>Successful operation</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <div class="hljs"><pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;query&quot;</span>: {
+    <span class="hljs-attr">&quot;count&quot;</span>: <span class="hljs-number">1</span>,
+    <span class="hljs-attr">&quot;created&quot;</span>: <span class="hljs-string">&quot;2017-06-14T14:30:14Z&quot;</span>,
+    <span class="hljs-attr">&quot;lang&quot;</span>: <span class="hljs-string">&quot;en-US&quot;</span>,
+    <span class="hljs-attr">&quot;results&quot;</span>: {
+      <span class="hljs-attr">&quot;channel&quot;</span>: {
+        <span class="hljs-attr">&quot;units&quot;</span>: {
+          <span class="hljs-attr">&quot;distance&quot;</span>: <span class="hljs-string">&quot;km&quot;</span>,
+          <span class="hljs-attr">&quot;pressure&quot;</span>: <span class="hljs-string">&quot;mb&quot;</span>,
+          <span class="hljs-attr">&quot;speed&quot;</span>: <span class="hljs-string">&quot;km/h&quot;</span>,
+          <span class="hljs-attr">&quot;temperature&quot;</span>: <span class="hljs-string">&quot;C&quot;</span>
+        },
+        <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Yahoo! Weather - Singapore, South West, SG&quot;</span>,
+        <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/&quot;</span>,
+        <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;Yahoo! Weather for Singapore, South West, SG&quot;</span>,
+        <span class="hljs-attr">&quot;language&quot;</span>: <span class="hljs-string">&quot;en-us&quot;</span>,
+        <span class="hljs-attr">&quot;lastBuildDate&quot;</span>: <span class="hljs-string">&quot;Wed, 14 Jun 2017 10:30 PM SGT&quot;</span>,
+        <span class="hljs-attr">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;60&quot;</span>,
+        <span class="hljs-attr">&quot;location&quot;</span>: {
+          <span class="hljs-attr">&quot;city&quot;</span>: <span class="hljs-string">&quot;Singapore&quot;</span>,
+          <span class="hljs-attr">&quot;country&quot;</span>: <span class="hljs-string">&quot;Singapore&quot;</span>,
+          <span class="hljs-attr">&quot;region&quot;</span>: <span class="hljs-string">&quot;South West&quot;</span>
+        },
+        <span class="hljs-attr">&quot;wind&quot;</span>: {
+          <span class="hljs-attr">&quot;chill&quot;</span>: <span class="hljs-string">&quot;81&quot;</span>,
+          <span class="hljs-attr">&quot;direction&quot;</span>: <span class="hljs-string">&quot;158&quot;</span>,
+          <span class="hljs-attr">&quot;speed&quot;</span>: <span class="hljs-string">&quot;11.27&quot;</span>
+        },
+        <span class="hljs-attr">&quot;atmosphere&quot;</span>: {
+          <span class="hljs-attr">&quot;humidity&quot;</span>: <span class="hljs-string">&quot;87&quot;</span>,
+          <span class="hljs-attr">&quot;pressure&quot;</span>: <span class="hljs-string">&quot;34168.68&quot;</span>,
+          <span class="hljs-attr">&quot;rising&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
+          <span class="hljs-attr">&quot;visibility&quot;</span>: <span class="hljs-string">&quot;25.91&quot;</span>
+        },
+        <span class="hljs-attr">&quot;astronomy&quot;</span>: {
+          <span class="hljs-attr">&quot;sunrise&quot;</span>: <span class="hljs-string">&quot;6:59 am&quot;</span>,
+          <span class="hljs-attr">&quot;sunset&quot;</span>: <span class="hljs-string">&quot;7:11 pm&quot;</span>
+        },
+        <span class="hljs-attr">&quot;image&quot;</span>: {
+          <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Yahoo! Weather&quot;</span>,
+          <span class="hljs-attr">&quot;width&quot;</span>: <span class="hljs-string">&quot;142&quot;</span>,
+          <span class="hljs-attr">&quot;height&quot;</span>: <span class="hljs-string">&quot;18&quot;</span>,
+          <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;http://weather.yahoo.com&quot;</span>,
+          <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif&quot;</span>
+        },
+        <span class="hljs-attr">&quot;item&quot;</span>: {
+          <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Conditions for Singapore, South West, SG at 09:00 PM SGT&quot;</span>,
+          <span class="hljs-attr">&quot;lat&quot;</span>: <span class="hljs-string">&quot;1.33464&quot;</span>,
+          <span class="hljs-attr">&quot;long&quot;</span>: <span class="hljs-string">&quot;103.726471&quot;</span>,
+          <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/&quot;</span>,
+          <span class="hljs-attr">&quot;pubDate&quot;</span>: <span class="hljs-string">&quot;Wed, 14 Jun 2017 09:00 PM SGT&quot;</span>,
+          <span class="hljs-attr">&quot;condition&quot;</span>: {
+            <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;33&quot;</span>,
+            <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;Wed, 14 Jun 2017 09:00 PM SGT&quot;</span>,
+            <span class="hljs-attr">&quot;temp&quot;</span>: <span class="hljs-string">&quot;26&quot;</span>,
+            <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Mostly Clear&quot;</span>
+          },
+          <span class="hljs-attr">&quot;forecast&quot;</span>: [
+            {
+              <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;4&quot;</span>,
+              <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;14 Jun 2017&quot;</span>,
+              <span class="hljs-attr">&quot;day&quot;</span>: <span class="hljs-string">&quot;Wed&quot;</span>,
+              <span class="hljs-attr">&quot;high&quot;</span>: <span class="hljs-string">&quot;28&quot;</span>,
+              <span class="hljs-attr">&quot;low&quot;</span>: <span class="hljs-string">&quot;25&quot;</span>,
+              <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Thunderstorms&quot;</span>
+            }
+          ],
+          <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;&lt;![CDATA[&lt;img src=\&quot;http://l.yimg.com/a/i/us/we/52/4.gif\&quot;/&gt;\n&lt;BR /&gt;\n&lt;b&gt;Current Conditions:&lt;/b&gt;\n&lt;BR /&gt;Thunderstorms\n&lt;BR /&gt;\n&lt;BR /&gt;\n&lt;b&gt;Forecast:&lt;/b&gt;\n&lt;BR /&gt; Fri - Thunderstorms. High: 30Low: 25\n&lt;BR /&gt; Sat - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt; Sun - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt; Mon - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt; Tue - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt;\n&lt;BR /&gt;\n&lt;a href=\&quot;http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/\&quot;&gt;Full Forecast at Yahoo! Weather&lt;/a&gt;\n&lt;BR /&gt;\n&lt;BR /&gt;\n(provided by &lt;a href=\&quot;http://www.weather.com\&quot; &gt;The Weather Channel&lt;/a&gt;)\n&lt;BR /&gt;\n]]&gt;&quot;</span>,
+          <span class="hljs-attr">&quot;guid&quot;</span>: {
+            <span class="hljs-attr">&quot;isPermaLink&quot;</span>: <span class="hljs-string">&quot;false&quot;</span>
+          }
+        }
+      }
+    }
+  }
+}
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-security">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="swagger-request-security-schema"></th>
+                        <th class="swagger-request-security-scopes"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <a href="#security-definition-api_key">api_key</a>
+                        </td>
+                        <td> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Schema Definitions</h1>
+          <div id="definition-aqiResponse" class="definition panel" data-traverse-target="definition-aqiResponse">
+            <h2 class="panel-title">
+              <a name="/definitions/aqiResponse"></a>aqiResponse:
+              <span class="json-property-type">
+                <span class="json-property-type">string</span>
+                <span class="json-property-range" title="Value limits"></span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <div class="hljs"><pre><code class="lang-json"><span class="hljs-string">&quot;string&quot;</span>
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-weatherResponse" class="definition panel" data-traverse-target="definition-weatherResponse">
+            <h2 class="panel-title">
+              <a name="/definitions/weatherResponse"></a>weatherResponse:
+              <span class="json-property-type">
+                <span class="json-property-type">string</span>
+                <span class="json-property-range" title="Value limits"></span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy"> </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <div class="hljs"><pre><code class="lang-json"><span class="hljs-string">&quot;string&quot;</span>
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-weatherdata-response" class="definition panel" data-traverse-target="definition-weatherdata-response">
+            <h2 class="panel-title">
+              <a name="/definitions/weatherdata response"></a>weatherdata response:
+              <span class="json-property-type">
+                <span class="json-property-type">object</span>
+                <span class="json-property-range" title="Value limits"></span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="query">
+                      <span class="json-property-name">query:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/query">query</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <div class="hljs"><pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;query&quot;</span>: {
+    <span class="hljs-attr">&quot;count&quot;</span>: <span class="hljs-number">1</span>,
+    <span class="hljs-attr">&quot;created&quot;</span>: <span class="hljs-string">&quot;2017-06-14T14:30:14Z&quot;</span>,
+    <span class="hljs-attr">&quot;lang&quot;</span>: <span class="hljs-string">&quot;en-US&quot;</span>,
+    <span class="hljs-attr">&quot;results&quot;</span>: {
+      <span class="hljs-attr">&quot;channel&quot;</span>: {
+        <span class="hljs-attr">&quot;units&quot;</span>: {
+          <span class="hljs-attr">&quot;distance&quot;</span>: <span class="hljs-string">&quot;km&quot;</span>,
+          <span class="hljs-attr">&quot;pressure&quot;</span>: <span class="hljs-string">&quot;mb&quot;</span>,
+          <span class="hljs-attr">&quot;speed&quot;</span>: <span class="hljs-string">&quot;km/h&quot;</span>,
+          <span class="hljs-attr">&quot;temperature&quot;</span>: <span class="hljs-string">&quot;C&quot;</span>
+        },
+        <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Yahoo! Weather - Singapore, South West, SG&quot;</span>,
+        <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/&quot;</span>,
+        <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;Yahoo! Weather for Singapore, South West, SG&quot;</span>,
+        <span class="hljs-attr">&quot;language&quot;</span>: <span class="hljs-string">&quot;en-us&quot;</span>,
+        <span class="hljs-attr">&quot;lastBuildDate&quot;</span>: <span class="hljs-string">&quot;Wed, 14 Jun 2017 10:30 PM SGT&quot;</span>,
+        <span class="hljs-attr">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;60&quot;</span>,
+        <span class="hljs-attr">&quot;location&quot;</span>: {
+          <span class="hljs-attr">&quot;city&quot;</span>: <span class="hljs-string">&quot;Singapore&quot;</span>,
+          <span class="hljs-attr">&quot;country&quot;</span>: <span class="hljs-string">&quot;Singapore&quot;</span>,
+          <span class="hljs-attr">&quot;region&quot;</span>: <span class="hljs-string">&quot;South West&quot;</span>
+        },
+        <span class="hljs-attr">&quot;wind&quot;</span>: {
+          <span class="hljs-attr">&quot;chill&quot;</span>: <span class="hljs-string">&quot;81&quot;</span>,
+          <span class="hljs-attr">&quot;direction&quot;</span>: <span class="hljs-string">&quot;158&quot;</span>,
+          <span class="hljs-attr">&quot;speed&quot;</span>: <span class="hljs-string">&quot;11.27&quot;</span>
+        },
+        <span class="hljs-attr">&quot;atmosphere&quot;</span>: {
+          <span class="hljs-attr">&quot;humidity&quot;</span>: <span class="hljs-string">&quot;87&quot;</span>,
+          <span class="hljs-attr">&quot;pressure&quot;</span>: <span class="hljs-string">&quot;34168.68&quot;</span>,
+          <span class="hljs-attr">&quot;rising&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
+          <span class="hljs-attr">&quot;visibility&quot;</span>: <span class="hljs-string">&quot;25.91&quot;</span>
+        },
+        <span class="hljs-attr">&quot;astronomy&quot;</span>: {
+          <span class="hljs-attr">&quot;sunrise&quot;</span>: <span class="hljs-string">&quot;6:59 am&quot;</span>,
+          <span class="hljs-attr">&quot;sunset&quot;</span>: <span class="hljs-string">&quot;7:11 pm&quot;</span>
+        },
+        <span class="hljs-attr">&quot;image&quot;</span>: {
+          <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Yahoo! Weather&quot;</span>,
+          <span class="hljs-attr">&quot;width&quot;</span>: <span class="hljs-string">&quot;142&quot;</span>,
+          <span class="hljs-attr">&quot;height&quot;</span>: <span class="hljs-string">&quot;18&quot;</span>,
+          <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;http://weather.yahoo.com&quot;</span>,
+          <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif&quot;</span>
+        },
+        <span class="hljs-attr">&quot;item&quot;</span>: {
+          <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Conditions for Singapore, South West, SG at 09:00 PM SGT&quot;</span>,
+          <span class="hljs-attr">&quot;lat&quot;</span>: <span class="hljs-string">&quot;1.33464&quot;</span>,
+          <span class="hljs-attr">&quot;long&quot;</span>: <span class="hljs-string">&quot;103.726471&quot;</span>,
+          <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/&quot;</span>,
+          <span class="hljs-attr">&quot;pubDate&quot;</span>: <span class="hljs-string">&quot;Wed, 14 Jun 2017 09:00 PM SGT&quot;</span>,
+          <span class="hljs-attr">&quot;condition&quot;</span>: {
+            <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;33&quot;</span>,
+            <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;Wed, 14 Jun 2017 09:00 PM SGT&quot;</span>,
+            <span class="hljs-attr">&quot;temp&quot;</span>: <span class="hljs-string">&quot;26&quot;</span>,
+            <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Mostly Clear&quot;</span>
+          },
+          <span class="hljs-attr">&quot;forecast&quot;</span>: [
+            {
+              <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;4&quot;</span>,
+              <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;14 Jun 2017&quot;</span>,
+              <span class="hljs-attr">&quot;day&quot;</span>: <span class="hljs-string">&quot;Wed&quot;</span>,
+              <span class="hljs-attr">&quot;high&quot;</span>: <span class="hljs-string">&quot;28&quot;</span>,
+              <span class="hljs-attr">&quot;low&quot;</span>: <span class="hljs-string">&quot;25&quot;</span>,
+              <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Thunderstorms&quot;</span>
+            }
+          ],
+          <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;&lt;![CDATA[&lt;img src=\&quot;http://l.yimg.com/a/i/us/we/52/4.gif\&quot;/&gt;\n&lt;BR /&gt;\n&lt;b&gt;Current Conditions:&lt;/b&gt;\n&lt;BR /&gt;Thunderstorms\n&lt;BR /&gt;\n&lt;BR /&gt;\n&lt;b&gt;Forecast:&lt;/b&gt;\n&lt;BR /&gt; Fri - Thunderstorms. High: 30Low: 25\n&lt;BR /&gt; Sat - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt; Sun - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt; Mon - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt; Tue - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt;\n&lt;BR /&gt;\n&lt;a href=\&quot;http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/\&quot;&gt;Full Forecast at Yahoo! Weather&lt;/a&gt;\n&lt;BR /&gt;\n&lt;BR /&gt;\n(provided by &lt;a href=\&quot;http://www.weather.com\&quot; &gt;The Weather Channel&lt;/a&gt;)\n&lt;BR /&gt;\n]]&gt;&quot;</span>,
+          <span class="hljs-attr">&quot;guid&quot;</span>: {
+            <span class="hljs-attr">&quot;isPermaLink&quot;</span>: <span class="hljs-string">&quot;false&quot;</span>
+          }
+        }
+      }
+    }
+  }
+}
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-query" class="definition panel" data-traverse-target="definition-query">
+            <h2 class="panel-title">
+              <a name="/definitions/query"></a>query:
+              <span class="json-property-type">
+                <span class="json-property-type">object</span>
+                <span class="json-property-range" title="Value limits"></span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="count">
+                      <span class="json-property-name">count:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The number of items (rows) returned -- specifically, the number of sub-elements in the results property</p>
+                    </dd>
+                    <dt data-property-name="created">
+                      <span class="json-property-name">created:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The date and time the response was created</p>
+                    </dd>
+                    <dt data-property-name="lang">
+                      <span class="json-property-name">lang:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The locale for the response</p>
+                    </dd>
+                    <dt data-property-name="results">
+                      <span class="json-property-name">results:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/results">results</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <div class="hljs"><pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;count&quot;</span>: <span class="hljs-number">1</span>,
+  <span class="hljs-attr">&quot;created&quot;</span>: <span class="hljs-string">&quot;2017-06-14T14:30:14Z&quot;</span>,
+  <span class="hljs-attr">&quot;lang&quot;</span>: <span class="hljs-string">&quot;en-US&quot;</span>,
+  <span class="hljs-attr">&quot;results&quot;</span>: {
+    <span class="hljs-attr">&quot;channel&quot;</span>: {
+      <span class="hljs-attr">&quot;units&quot;</span>: {
+        <span class="hljs-attr">&quot;distance&quot;</span>: <span class="hljs-string">&quot;km&quot;</span>,
+        <span class="hljs-attr">&quot;pressure&quot;</span>: <span class="hljs-string">&quot;mb&quot;</span>,
+        <span class="hljs-attr">&quot;speed&quot;</span>: <span class="hljs-string">&quot;km/h&quot;</span>,
+        <span class="hljs-attr">&quot;temperature&quot;</span>: <span class="hljs-string">&quot;C&quot;</span>
+      },
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Yahoo! Weather - Singapore, South West, SG&quot;</span>,
+      <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/&quot;</span>,
+      <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;Yahoo! Weather for Singapore, South West, SG&quot;</span>,
+      <span class="hljs-attr">&quot;language&quot;</span>: <span class="hljs-string">&quot;en-us&quot;</span>,
+      <span class="hljs-attr">&quot;lastBuildDate&quot;</span>: <span class="hljs-string">&quot;Wed, 14 Jun 2017 10:30 PM SGT&quot;</span>,
+      <span class="hljs-attr">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;60&quot;</span>,
+      <span class="hljs-attr">&quot;location&quot;</span>: {
+        <span class="hljs-attr">&quot;city&quot;</span>: <span class="hljs-string">&quot;Singapore&quot;</span>,
+        <span class="hljs-attr">&quot;country&quot;</span>: <span class="hljs-string">&quot;Singapore&quot;</span>,
+        <span class="hljs-attr">&quot;region&quot;</span>: <span class="hljs-string">&quot;South West&quot;</span>
+      },
+      <span class="hljs-attr">&quot;wind&quot;</span>: {
+        <span class="hljs-attr">&quot;chill&quot;</span>: <span class="hljs-string">&quot;81&quot;</span>,
+        <span class="hljs-attr">&quot;direction&quot;</span>: <span class="hljs-string">&quot;158&quot;</span>,
+        <span class="hljs-attr">&quot;speed&quot;</span>: <span class="hljs-string">&quot;11.27&quot;</span>
+      },
+      <span class="hljs-attr">&quot;atmosphere&quot;</span>: {
+        <span class="hljs-attr">&quot;humidity&quot;</span>: <span class="hljs-string">&quot;87&quot;</span>,
+        <span class="hljs-attr">&quot;pressure&quot;</span>: <span class="hljs-string">&quot;34168.68&quot;</span>,
+        <span class="hljs-attr">&quot;rising&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
+        <span class="hljs-attr">&quot;visibility&quot;</span>: <span class="hljs-string">&quot;25.91&quot;</span>
+      },
+      <span class="hljs-attr">&quot;astronomy&quot;</span>: {
+        <span class="hljs-attr">&quot;sunrise&quot;</span>: <span class="hljs-string">&quot;6:59 am&quot;</span>,
+        <span class="hljs-attr">&quot;sunset&quot;</span>: <span class="hljs-string">&quot;7:11 pm&quot;</span>
+      },
+      <span class="hljs-attr">&quot;image&quot;</span>: {
+        <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Yahoo! Weather&quot;</span>,
+        <span class="hljs-attr">&quot;width&quot;</span>: <span class="hljs-string">&quot;142&quot;</span>,
+        <span class="hljs-attr">&quot;height&quot;</span>: <span class="hljs-string">&quot;18&quot;</span>,
+        <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;http://weather.yahoo.com&quot;</span>,
+        <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif&quot;</span>
+      },
+      <span class="hljs-attr">&quot;item&quot;</span>: {
+        <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Conditions for Singapore, South West, SG at 09:00 PM SGT&quot;</span>,
+        <span class="hljs-attr">&quot;lat&quot;</span>: <span class="hljs-string">&quot;1.33464&quot;</span>,
+        <span class="hljs-attr">&quot;long&quot;</span>: <span class="hljs-string">&quot;103.726471&quot;</span>,
+        <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/&quot;</span>,
+        <span class="hljs-attr">&quot;pubDate&quot;</span>: <span class="hljs-string">&quot;Wed, 14 Jun 2017 09:00 PM SGT&quot;</span>,
+        <span class="hljs-attr">&quot;condition&quot;</span>: {
+          <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;33&quot;</span>,
+          <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;Wed, 14 Jun 2017 09:00 PM SGT&quot;</span>,
+          <span class="hljs-attr">&quot;temp&quot;</span>: <span class="hljs-string">&quot;26&quot;</span>,
+          <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Mostly Clear&quot;</span>
+        },
+        <span class="hljs-attr">&quot;forecast&quot;</span>: [
+          {
+            <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;4&quot;</span>,
+            <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;14 Jun 2017&quot;</span>,
+            <span class="hljs-attr">&quot;day&quot;</span>: <span class="hljs-string">&quot;Wed&quot;</span>,
+            <span class="hljs-attr">&quot;high&quot;</span>: <span class="hljs-string">&quot;28&quot;</span>,
+            <span class="hljs-attr">&quot;low&quot;</span>: <span class="hljs-string">&quot;25&quot;</span>,
+            <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Thunderstorms&quot;</span>
+          }
+        ],
+        <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;&lt;![CDATA[&lt;img src=\&quot;http://l.yimg.com/a/i/us/we/52/4.gif\&quot;/&gt;\n&lt;BR /&gt;\n&lt;b&gt;Current Conditions:&lt;/b&gt;\n&lt;BR /&gt;Thunderstorms\n&lt;BR /&gt;\n&lt;BR /&gt;\n&lt;b&gt;Forecast:&lt;/b&gt;\n&lt;BR /&gt; Fri - Thunderstorms. High: 30Low: 25\n&lt;BR /&gt; Sat - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt; Sun - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt; Mon - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt; Tue - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt;\n&lt;BR /&gt;\n&lt;a href=\&quot;http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/\&quot;&gt;Full Forecast at Yahoo! Weather&lt;/a&gt;\n&lt;BR /&gt;\n&lt;BR /&gt;\n(provided by &lt;a href=\&quot;http://www.weather.com\&quot; &gt;The Weather Channel&lt;/a&gt;)\n&lt;BR /&gt;\n]]&gt;&quot;</span>,
+        <span class="hljs-attr">&quot;guid&quot;</span>: {
+          <span class="hljs-attr">&quot;isPermaLink&quot;</span>: <span class="hljs-string">&quot;false&quot;</span>
+        }
+      }
+    }
+  }
+}
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-results" class="definition panel" data-traverse-target="definition-results">
+            <h2 class="panel-title">
+              <a name="/definitions/results"></a>results:
+              <span class="json-property-type">
+                <span class="json-property-type">object</span>
+                <span class="json-property-range" title="Value limits"></span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="channel">
+                      <span class="json-property-name">channel:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/channel">channel</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <div class="hljs"><pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;channel&quot;</span>: {
+    <span class="hljs-attr">&quot;units&quot;</span>: {
+      <span class="hljs-attr">&quot;distance&quot;</span>: <span class="hljs-string">&quot;km&quot;</span>,
+      <span class="hljs-attr">&quot;pressure&quot;</span>: <span class="hljs-string">&quot;mb&quot;</span>,
+      <span class="hljs-attr">&quot;speed&quot;</span>: <span class="hljs-string">&quot;km/h&quot;</span>,
+      <span class="hljs-attr">&quot;temperature&quot;</span>: <span class="hljs-string">&quot;C&quot;</span>
+    },
+    <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Yahoo! Weather - Singapore, South West, SG&quot;</span>,
+    <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/&quot;</span>,
+    <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;Yahoo! Weather for Singapore, South West, SG&quot;</span>,
+    <span class="hljs-attr">&quot;language&quot;</span>: <span class="hljs-string">&quot;en-us&quot;</span>,
+    <span class="hljs-attr">&quot;lastBuildDate&quot;</span>: <span class="hljs-string">&quot;Wed, 14 Jun 2017 10:30 PM SGT&quot;</span>,
+    <span class="hljs-attr">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;60&quot;</span>,
+    <span class="hljs-attr">&quot;location&quot;</span>: {
+      <span class="hljs-attr">&quot;city&quot;</span>: <span class="hljs-string">&quot;Singapore&quot;</span>,
+      <span class="hljs-attr">&quot;country&quot;</span>: <span class="hljs-string">&quot;Singapore&quot;</span>,
+      <span class="hljs-attr">&quot;region&quot;</span>: <span class="hljs-string">&quot;South West&quot;</span>
+    },
+    <span class="hljs-attr">&quot;wind&quot;</span>: {
+      <span class="hljs-attr">&quot;chill&quot;</span>: <span class="hljs-string">&quot;81&quot;</span>,
+      <span class="hljs-attr">&quot;direction&quot;</span>: <span class="hljs-string">&quot;158&quot;</span>,
+      <span class="hljs-attr">&quot;speed&quot;</span>: <span class="hljs-string">&quot;11.27&quot;</span>
+    },
+    <span class="hljs-attr">&quot;atmosphere&quot;</span>: {
+      <span class="hljs-attr">&quot;humidity&quot;</span>: <span class="hljs-string">&quot;87&quot;</span>,
+      <span class="hljs-attr">&quot;pressure&quot;</span>: <span class="hljs-string">&quot;34168.68&quot;</span>,
+      <span class="hljs-attr">&quot;rising&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
+      <span class="hljs-attr">&quot;visibility&quot;</span>: <span class="hljs-string">&quot;25.91&quot;</span>
+    },
+    <span class="hljs-attr">&quot;astronomy&quot;</span>: {
+      <span class="hljs-attr">&quot;sunrise&quot;</span>: <span class="hljs-string">&quot;6:59 am&quot;</span>,
+      <span class="hljs-attr">&quot;sunset&quot;</span>: <span class="hljs-string">&quot;7:11 pm&quot;</span>
+    },
+    <span class="hljs-attr">&quot;image&quot;</span>: {
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Yahoo! Weather&quot;</span>,
+      <span class="hljs-attr">&quot;width&quot;</span>: <span class="hljs-string">&quot;142&quot;</span>,
+      <span class="hljs-attr">&quot;height&quot;</span>: <span class="hljs-string">&quot;18&quot;</span>,
+      <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;http://weather.yahoo.com&quot;</span>,
+      <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif&quot;</span>
+    },
+    <span class="hljs-attr">&quot;item&quot;</span>: {
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Conditions for Singapore, South West, SG at 09:00 PM SGT&quot;</span>,
+      <span class="hljs-attr">&quot;lat&quot;</span>: <span class="hljs-string">&quot;1.33464&quot;</span>,
+      <span class="hljs-attr">&quot;long&quot;</span>: <span class="hljs-string">&quot;103.726471&quot;</span>,
+      <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/&quot;</span>,
+      <span class="hljs-attr">&quot;pubDate&quot;</span>: <span class="hljs-string">&quot;Wed, 14 Jun 2017 09:00 PM SGT&quot;</span>,
+      <span class="hljs-attr">&quot;condition&quot;</span>: {
+        <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;33&quot;</span>,
+        <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;Wed, 14 Jun 2017 09:00 PM SGT&quot;</span>,
+        <span class="hljs-attr">&quot;temp&quot;</span>: <span class="hljs-string">&quot;26&quot;</span>,
+        <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Mostly Clear&quot;</span>
+      },
+      <span class="hljs-attr">&quot;forecast&quot;</span>: [
+        {
+          <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;4&quot;</span>,
+          <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;14 Jun 2017&quot;</span>,
+          <span class="hljs-attr">&quot;day&quot;</span>: <span class="hljs-string">&quot;Wed&quot;</span>,
+          <span class="hljs-attr">&quot;high&quot;</span>: <span class="hljs-string">&quot;28&quot;</span>,
+          <span class="hljs-attr">&quot;low&quot;</span>: <span class="hljs-string">&quot;25&quot;</span>,
+          <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Thunderstorms&quot;</span>
+        }
+      ],
+      <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;&lt;![CDATA[&lt;img src=\&quot;http://l.yimg.com/a/i/us/we/52/4.gif\&quot;/&gt;\n&lt;BR /&gt;\n&lt;b&gt;Current Conditions:&lt;/b&gt;\n&lt;BR /&gt;Thunderstorms\n&lt;BR /&gt;\n&lt;BR /&gt;\n&lt;b&gt;Forecast:&lt;/b&gt;\n&lt;BR /&gt; Fri - Thunderstorms. High: 30Low: 25\n&lt;BR /&gt; Sat - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt; Sun - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt; Mon - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt; Tue - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt;\n&lt;BR /&gt;\n&lt;a href=\&quot;http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/\&quot;&gt;Full Forecast at Yahoo! Weather&lt;/a&gt;\n&lt;BR /&gt;\n&lt;BR /&gt;\n(provided by &lt;a href=\&quot;http://www.weather.com\&quot; &gt;The Weather Channel&lt;/a&gt;)\n&lt;BR /&gt;\n]]&gt;&quot;</span>,
+      <span class="hljs-attr">&quot;guid&quot;</span>: {
+        <span class="hljs-attr">&quot;isPermaLink&quot;</span>: <span class="hljs-string">&quot;false&quot;</span>
+      }
+    }
+  }
+}
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-channel" class="definition panel" data-traverse-target="definition-channel">
+            <h2 class="panel-title">
+              <a name="/definitions/channel"></a>channel:
+              <span class="json-property-type">
+                <span class="json-property-type">object</span>
+                <span class="json-property-range" title="Value limits"></span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="units">
+                      <span class="json-property-name">units:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/units">units</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt data-property-name="title">
+                      <span class="json-property-name">title:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The title of the feed, which includes the location city</p>
+                    </dd>
+                    <dt data-property-name="link">
+                      <span class="json-property-name">link:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The URL for the Weather page of the forecast for this location</p>
+                    </dd>
+                    <dt data-property-name="description">
+                      <span class="json-property-name">description:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The overall description of the feed including the location</p>
+                    </dd>
+                    <dt data-property-name="language">
+                      <span class="json-property-name">language:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The language of the weather forecast</p>
+                    </dd>
+                    <dt data-property-name="lastBuildDate">
+                      <span class="json-property-name">lastBuildDate:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The last time the feed was updated. The format is in the date format defined by
+                        <a href="http://www.rfc-editor.org/rfc/rfc822.txt">RFC822 Section 5</a>.</p>
+                    </dd>
+                    <dt data-property-name="ttl">
+                      <span class="json-property-name">ttl:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Time to Live -- how long in minutes this feed should be cached.</p>
+                    </dd>
+                    <dt data-property-name="location">
+                      <span class="json-property-name">location:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/location">location</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt data-property-name="wind">
+                      <span class="json-property-name">wind:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/wind">wind</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt data-property-name="atmosphere">
+                      <span class="json-property-name">atmosphere:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/atmosphere">atmosphere</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt data-property-name="astronomy">
+                      <span class="json-property-name">astronomy:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/astronomy">astronomy</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt data-property-name="image">
+                      <span class="json-property-name">image:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/image">image</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt data-property-name="item">
+                      <span class="json-property-name">item:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/item">item</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <div class="hljs"><pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;units&quot;</span>: {
+    <span class="hljs-attr">&quot;distance&quot;</span>: <span class="hljs-string">&quot;km&quot;</span>,
+    <span class="hljs-attr">&quot;pressure&quot;</span>: <span class="hljs-string">&quot;mb&quot;</span>,
+    <span class="hljs-attr">&quot;speed&quot;</span>: <span class="hljs-string">&quot;km/h&quot;</span>,
+    <span class="hljs-attr">&quot;temperature&quot;</span>: <span class="hljs-string">&quot;C&quot;</span>
+  },
+  <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Yahoo! Weather - Singapore, South West, SG&quot;</span>,
+  <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/&quot;</span>,
+  <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;Yahoo! Weather for Singapore, South West, SG&quot;</span>,
+  <span class="hljs-attr">&quot;language&quot;</span>: <span class="hljs-string">&quot;en-us&quot;</span>,
+  <span class="hljs-attr">&quot;lastBuildDate&quot;</span>: <span class="hljs-string">&quot;Wed, 14 Jun 2017 10:30 PM SGT&quot;</span>,
+  <span class="hljs-attr">&quot;ttl&quot;</span>: <span class="hljs-string">&quot;60&quot;</span>,
+  <span class="hljs-attr">&quot;location&quot;</span>: {
+    <span class="hljs-attr">&quot;city&quot;</span>: <span class="hljs-string">&quot;Singapore&quot;</span>,
+    <span class="hljs-attr">&quot;country&quot;</span>: <span class="hljs-string">&quot;Singapore&quot;</span>,
+    <span class="hljs-attr">&quot;region&quot;</span>: <span class="hljs-string">&quot;South West&quot;</span>
+  },
+  <span class="hljs-attr">&quot;wind&quot;</span>: {
+    <span class="hljs-attr">&quot;chill&quot;</span>: <span class="hljs-string">&quot;81&quot;</span>,
+    <span class="hljs-attr">&quot;direction&quot;</span>: <span class="hljs-string">&quot;158&quot;</span>,
+    <span class="hljs-attr">&quot;speed&quot;</span>: <span class="hljs-string">&quot;11.27&quot;</span>
+  },
+  <span class="hljs-attr">&quot;atmosphere&quot;</span>: {
+    <span class="hljs-attr">&quot;humidity&quot;</span>: <span class="hljs-string">&quot;87&quot;</span>,
+    <span class="hljs-attr">&quot;pressure&quot;</span>: <span class="hljs-string">&quot;34168.68&quot;</span>,
+    <span class="hljs-attr">&quot;rising&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
+    <span class="hljs-attr">&quot;visibility&quot;</span>: <span class="hljs-string">&quot;25.91&quot;</span>
+  },
+  <span class="hljs-attr">&quot;astronomy&quot;</span>: {
+    <span class="hljs-attr">&quot;sunrise&quot;</span>: <span class="hljs-string">&quot;6:59 am&quot;</span>,
+    <span class="hljs-attr">&quot;sunset&quot;</span>: <span class="hljs-string">&quot;7:11 pm&quot;</span>
+  },
+  <span class="hljs-attr">&quot;image&quot;</span>: {
+    <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Yahoo! Weather&quot;</span>,
+    <span class="hljs-attr">&quot;width&quot;</span>: <span class="hljs-string">&quot;142&quot;</span>,
+    <span class="hljs-attr">&quot;height&quot;</span>: <span class="hljs-string">&quot;18&quot;</span>,
+    <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;http://weather.yahoo.com&quot;</span>,
+    <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif&quot;</span>
+  },
+  <span class="hljs-attr">&quot;item&quot;</span>: {
+    <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Conditions for Singapore, South West, SG at 09:00 PM SGT&quot;</span>,
+    <span class="hljs-attr">&quot;lat&quot;</span>: <span class="hljs-string">&quot;1.33464&quot;</span>,
+    <span class="hljs-attr">&quot;long&quot;</span>: <span class="hljs-string">&quot;103.726471&quot;</span>,
+    <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/&quot;</span>,
+    <span class="hljs-attr">&quot;pubDate&quot;</span>: <span class="hljs-string">&quot;Wed, 14 Jun 2017 09:00 PM SGT&quot;</span>,
+    <span class="hljs-attr">&quot;condition&quot;</span>: {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;33&quot;</span>,
+      <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;Wed, 14 Jun 2017 09:00 PM SGT&quot;</span>,
+      <span class="hljs-attr">&quot;temp&quot;</span>: <span class="hljs-string">&quot;26&quot;</span>,
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Mostly Clear&quot;</span>
+    },
+    <span class="hljs-attr">&quot;forecast&quot;</span>: [
+      {
+        <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;4&quot;</span>,
+        <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;14 Jun 2017&quot;</span>,
+        <span class="hljs-attr">&quot;day&quot;</span>: <span class="hljs-string">&quot;Wed&quot;</span>,
+        <span class="hljs-attr">&quot;high&quot;</span>: <span class="hljs-string">&quot;28&quot;</span>,
+        <span class="hljs-attr">&quot;low&quot;</span>: <span class="hljs-string">&quot;25&quot;</span>,
+        <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Thunderstorms&quot;</span>
+      }
+    ],
+    <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;&lt;![CDATA[&lt;img src=\&quot;http://l.yimg.com/a/i/us/we/52/4.gif\&quot;/&gt;\n&lt;BR /&gt;\n&lt;b&gt;Current Conditions:&lt;/b&gt;\n&lt;BR /&gt;Thunderstorms\n&lt;BR /&gt;\n&lt;BR /&gt;\n&lt;b&gt;Forecast:&lt;/b&gt;\n&lt;BR /&gt; Fri - Thunderstorms. High: 30Low: 25\n&lt;BR /&gt; Sat - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt; Sun - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt; Mon - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt; Tue - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt;\n&lt;BR /&gt;\n&lt;a href=\&quot;http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/\&quot;&gt;Full Forecast at Yahoo! Weather&lt;/a&gt;\n&lt;BR /&gt;\n&lt;BR /&gt;\n(provided by &lt;a href=\&quot;http://www.weather.com\&quot; &gt;The Weather Channel&lt;/a&gt;)\n&lt;BR /&gt;\n]]&gt;&quot;</span>,
+    <span class="hljs-attr">&quot;guid&quot;</span>: {
+      <span class="hljs-attr">&quot;isPermaLink&quot;</span>: <span class="hljs-string">&quot;false&quot;</span>
+    }
+  }
+}
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-units" class="definition panel" data-traverse-target="definition-units">
+            <h2 class="panel-title">
+              <a name="/definitions/units"></a>units:
+              <span class="json-property-type">
+                <span class="json-property-type">object</span>
+                <span class="json-property-range" title="Value limits"></span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Units for various aspects of the forecast. Note that the default is to use metric formats for the units (Celsius, kilometers, millibars, kilometers per hour).</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="distance">
+                      <span class="json-property-name">distance:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Units for distance, mi for miles or km for kilometers</p>
+                    </dd>
+                    <dt data-property-name="pressure">
+                      <span class="json-property-name">pressure:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Units of barometric pressure, &quot;in&quot; for pounds per square inch or &quot;mb&quot; for millibars.</p>
+                    </dd>
+                    <dt data-property-name="speed">
+                      <span class="json-property-name">speed:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Units of speed, &quot;mph&quot; for miles per hour or &quot;kph&quot; for kilometers per hour.</p>
+                    </dd>
+                    <dt data-property-name="temperature">
+                      <span class="json-property-name">temperature:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Degree units, &quot;f&quot; for Fahrenheit or &quot;c&quot; for Celsius.</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <div class="hljs"><pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;distance&quot;</span>: <span class="hljs-string">&quot;km&quot;</span>,
+  <span class="hljs-attr">&quot;pressure&quot;</span>: <span class="hljs-string">&quot;mb&quot;</span>,
+  <span class="hljs-attr">&quot;speed&quot;</span>: <span class="hljs-string">&quot;km/h&quot;</span>,
+  <span class="hljs-attr">&quot;temperature&quot;</span>: <span class="hljs-string">&quot;C&quot;</span>
+}
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-location" class="definition panel" data-traverse-target="definition-location">
+            <h2 class="panel-title">
+              <a name="/definitions/location"></a>location:
+              <span class="json-property-type">
+                <span class="json-property-type">object</span>
+                <span class="json-property-range" title="Value limits"></span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>The location of this forecast</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="city">
+                      <span class="json-property-name">city:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>City name</p>
+                    </dd>
+                    <dt data-property-name="country">
+                      <span class="json-property-name">country:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Two-character country code</p>
+                    </dd>
+                    <dt data-property-name="region">
+                      <span class="json-property-name">region:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>State, territory, or region, if given</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <div class="hljs"><pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;city&quot;</span>: <span class="hljs-string">&quot;Singapore&quot;</span>,
+  <span class="hljs-attr">&quot;country&quot;</span>: <span class="hljs-string">&quot;Singapore&quot;</span>,
+  <span class="hljs-attr">&quot;region&quot;</span>: <span class="hljs-string">&quot;South West&quot;</span>
+}
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-wind" class="definition panel" data-traverse-target="definition-wind">
+            <h2 class="panel-title">
+              <a name="/definitions/wind"></a>wind:
+              <span class="json-property-type">
+                <span class="json-property-type">object</span>
+                <span class="json-property-range" title="Value limits"></span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Forecast information about wind</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="chill">
+                      <span class="json-property-name">chill:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Wind chill in degrees</p>
+                    </dd>
+                    <dt data-property-name="direction">
+                      <span class="json-property-name">direction:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Wind direction, in degrees</p>
+                    </dd>
+                    <dt data-property-name="speed">
+                      <span class="json-property-name">speed:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Wind speed, in the units specified in the speed attribute of the units element (mph or kph)</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <div class="hljs"><pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;chill&quot;</span>: <span class="hljs-string">&quot;81&quot;</span>,
+  <span class="hljs-attr">&quot;direction&quot;</span>: <span class="hljs-string">&quot;158&quot;</span>,
+  <span class="hljs-attr">&quot;speed&quot;</span>: <span class="hljs-string">&quot;11.27&quot;</span>
+}
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-atmosphere" class="definition panel" data-traverse-target="definition-atmosphere">
+            <h2 class="panel-title">
+              <a name="/definitions/atmosphere"></a>atmosphere:
+              <span class="json-property-type">
+                <span class="json-property-type">object</span>
+                <span class="json-property-range" title="Value limits"></span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Forecast information about current atmospheric pressure, humidity, and visibility</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="humidity">
+                      <span class="json-property-name">humidity:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>humidity, in percent</p>
+                    </dd>
+                    <dt data-property-name="pressure">
+                      <span class="json-property-name">pressure:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Barometric pressure, in the units specified by the pressure attribute of the yweather:units element (&quot;in&quot; or &quot;mb&quot;).</p>
+                    </dd>
+                    <dt data-property-name="rising">
+                      <span class="json-property-name">rising:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>State of the barometric pressure: steady (0), rising (1), or falling (2).</p>
+                    </dd>
+                    <dt data-property-name="visibility">
+                      <span class="json-property-name">visibility:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Visibility, in the units specified by the distance attribute of the units element (&quot;mi&quot; or &quot;km&quot;). Note that the visibility is specified as the actual value * 100. For example, a visibility of 16.5 miles will be specified as 1650. A visibility of 14 kilometers will appear as 1400.</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <div class="hljs"><pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;humidity&quot;</span>: <span class="hljs-string">&quot;87&quot;</span>,
+  <span class="hljs-attr">&quot;pressure&quot;</span>: <span class="hljs-string">&quot;34168.68&quot;</span>,
+  <span class="hljs-attr">&quot;rising&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
+  <span class="hljs-attr">&quot;visibility&quot;</span>: <span class="hljs-string">&quot;25.91&quot;</span>
+}
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-astronomy" class="definition panel" data-traverse-target="definition-astronomy">
+            <h2 class="panel-title">
+              <a name="/definitions/astronomy"></a>astronomy:
+              <span class="json-property-type">
+                <span class="json-property-type">object</span>
+                <span class="json-property-range" title="Value limits"></span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Forecast information about current astronomical conditions</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="sunrise">
+                      <span class="json-property-name">sunrise:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Today&#39;s sunrise time. The time is a string in a local time format of &quot;h:mm am/pm&quot;</p>
+                    </dd>
+                    <dt data-property-name="sunset">
+                      <span class="json-property-name">sunset:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Today&#39;s sunset time. The time is a string in a local time format of &quot;h:mm am/pm&quot;</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <div class="hljs"><pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;sunrise&quot;</span>: <span class="hljs-string">&quot;6:59 am&quot;</span>,
+  <span class="hljs-attr">&quot;sunset&quot;</span>: <span class="hljs-string">&quot;7:11 pm&quot;</span>
+}
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-image" class="definition panel" data-traverse-target="definition-image">
+            <h2 class="panel-title">
+              <a name="/definitions/image"></a>image:
+              <span class="json-property-type">
+                <span class="json-property-type">object</span>
+                <span class="json-property-range" title="Value limits"></span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>The image used to identify this feed</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="title">
+                      <span class="json-property-name">title:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The title of the image.</p>
+                    </dd>
+                    <dt data-property-name="width">
+                      <span class="json-property-name">width:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The width of the image, in pixels</p>
+                    </dd>
+                    <dt data-property-name="height">
+                      <span class="json-property-name">height:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The height of the image, in pixels</p>
+                    </dd>
+                    <dt data-property-name="link">
+                      <span class="json-property-name">link:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Description of link</p>
+                    </dd>
+                    <dt data-property-name="url">
+                      <span class="json-property-name">url:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The URL of Yahoo! Weather</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <div class="hljs"><pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Yahoo! Weather&quot;</span>,
+  <span class="hljs-attr">&quot;width&quot;</span>: <span class="hljs-string">&quot;142&quot;</span>,
+  <span class="hljs-attr">&quot;height&quot;</span>: <span class="hljs-string">&quot;18&quot;</span>,
+  <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;http://weather.yahoo.com&quot;</span>,
+  <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif&quot;</span>
+}
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-item" class="definition panel" data-traverse-target="definition-item">
+            <h2 class="panel-title">
+              <a name="/definitions/item"></a>item:
+              <span class="json-property-type">
+                <span class="json-property-type">object</span>
+                <span class="json-property-range" title="Value limits"></span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>The item element contains current conditions and forecast for the given location. There are multiple weather forecast elements for today and tomorrow.</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="title">
+                      <span class="json-property-name">title:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The forecast title and time.</p>
+                    </dd>
+                    <dt data-property-name="lat">
+                      <span class="json-property-name">lat:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The latitude of the location.</p>
+                    </dd>
+                    <dt data-property-name="long">
+                      <span class="json-property-name">long:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The longitude of the location.</p>
+                    </dd>
+                    <dt data-property-name="link">
+                      <span class="json-property-name">link:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The Yahoo! Weather URL for this forecast.</p>
+                    </dd>
+                    <dt data-property-name="pubDate">
+                      <span class="json-property-name">pubDate:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The date and time this forecast was posted, in the date format defined by
+                        <a href="http://www.rfc-editor.org/rfc/rfc822.txt">RFC822 Section 5</a>.</p>
+                    </dd>
+                    <dt data-property-name="condition">
+                      <span class="json-property-name">condition:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/condition">condition</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt data-property-name="forecast">
+                      <span class="json-property-name">forecast:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/forecast">forecast</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dt data-property-name="description">
+                      <span class="json-property-name">description:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>A simple summary of the current conditions and tomorrow&#39;s forecast, in HTML format, including a link to Yahoo! Weather for the full forecast.</p>
+                    </dd>
+                    <dt data-property-name="guid">
+                      <span class="json-property-name">guid:</span>
+                      <span class="json-property-type">
+                        <span class="">
+                          <a class="json-schema-ref" href="#/definitions/guid">guid</a>
+                        </span>
+                      </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <div class="hljs"><pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Conditions for Singapore, South West, SG at 09:00 PM SGT&quot;</span>,
+  <span class="hljs-attr">&quot;lat&quot;</span>: <span class="hljs-string">&quot;1.33464&quot;</span>,
+  <span class="hljs-attr">&quot;long&quot;</span>: <span class="hljs-string">&quot;103.726471&quot;</span>,
+  <span class="hljs-attr">&quot;link&quot;</span>: <span class="hljs-string">&quot;http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/&quot;</span>,
+  <span class="hljs-attr">&quot;pubDate&quot;</span>: <span class="hljs-string">&quot;Wed, 14 Jun 2017 09:00 PM SGT&quot;</span>,
+  <span class="hljs-attr">&quot;condition&quot;</span>: {
+    <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;33&quot;</span>,
+    <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;Wed, 14 Jun 2017 09:00 PM SGT&quot;</span>,
+    <span class="hljs-attr">&quot;temp&quot;</span>: <span class="hljs-string">&quot;26&quot;</span>,
+    <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Mostly Clear&quot;</span>
+  },
+  <span class="hljs-attr">&quot;forecast&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;4&quot;</span>,
+      <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;14 Jun 2017&quot;</span>,
+      <span class="hljs-attr">&quot;day&quot;</span>: <span class="hljs-string">&quot;Wed&quot;</span>,
+      <span class="hljs-attr">&quot;high&quot;</span>: <span class="hljs-string">&quot;28&quot;</span>,
+      <span class="hljs-attr">&quot;low&quot;</span>: <span class="hljs-string">&quot;25&quot;</span>,
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Thunderstorms&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;&lt;![CDATA[&lt;img src=\&quot;http://l.yimg.com/a/i/us/we/52/4.gif\&quot;/&gt;\n&lt;BR /&gt;\n&lt;b&gt;Current Conditions:&lt;/b&gt;\n&lt;BR /&gt;Thunderstorms\n&lt;BR /&gt;\n&lt;BR /&gt;\n&lt;b&gt;Forecast:&lt;/b&gt;\n&lt;BR /&gt; Fri - Thunderstorms. High: 30Low: 25\n&lt;BR /&gt; Sat - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt; Sun - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt; Mon - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt; Tue - Thunderstorms. High: 28Low: 25\n&lt;BR /&gt;\n&lt;BR /&gt;\n&lt;a href=\&quot;http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/\&quot;&gt;Full Forecast at Yahoo! Weather&lt;/a&gt;\n&lt;BR /&gt;\n&lt;BR /&gt;\n(provided by &lt;a href=\&quot;http://www.weather.com\&quot; &gt;The Weather Channel&lt;/a&gt;)\n&lt;BR /&gt;\n]]&gt;&quot;</span>,
+  <span class="hljs-attr">&quot;guid&quot;</span>: {
+    <span class="hljs-attr">&quot;isPermaLink&quot;</span>: <span class="hljs-string">&quot;false&quot;</span>
+  }
+}
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-condition" class="definition panel" data-traverse-target="definition-condition">
+            <h2 class="panel-title">
+              <a name="/definitions/condition"></a>condition:
+              <span class="json-property-type">
+                <span class="json-property-type">object</span>
+                <span class="json-property-range" title="Value limits"></span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>The current weather conditions</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="code">
+                      <span class="json-property-name">code:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The condition code for this forecast. You could use this code to choose a text description or image for the forecast. The possible values for this element are described in the
+                        <a href="https://developer.yahoo.com/weather/">Condition Codes</a>.documentation.html.</p>
+                    </dd>
+                    <dt data-property-name="date">
+                      <span class="json-property-name">date:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The current date and time for which this forecast applies. The date is in RFC822 Section 5 format.</p>
+                    </dd>
+                    <dt data-property-name="temp">
+                      <span class="json-property-name">temp:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The current temperature, in the units specified by the units element.</p>
+                    </dd>
+                    <dt data-property-name="text">
+                      <span class="json-property-name">text:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>A textual description of conditions</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <div class="hljs"><pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;33&quot;</span>,
+  <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;Wed, 14 Jun 2017 09:00 PM SGT&quot;</span>,
+  <span class="hljs-attr">&quot;temp&quot;</span>: <span class="hljs-string">&quot;26&quot;</span>,
+  <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Mostly Clear&quot;</span>
+}
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-forecast" class="definition panel" data-traverse-target="definition-forecast">
+            <h2 class="panel-title">
+              <a name="/definitions/forecast"></a>forecast:
+              <span class="json-property-type">
+                <span class="json-property-type">object[]</span>
+                <span class="json-property-range" title="Value limits"></span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-array-items">
+                  <span class="json-property-type">
+                    <span class="">
+                      <a class="json-schema-ref" href="#/definitions/forecast array">forecast array</a>
+                    </span>
+                  </span>
+                  <span class="json-property-range" title="Value limits"></span>
+                  <div class="json-inner-schema"> </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <div class="hljs"><pre><code class="lang-json">[
+  {
+    <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;4&quot;</span>,
+    <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;14 Jun 2017&quot;</span>,
+    <span class="hljs-attr">&quot;day&quot;</span>: <span class="hljs-string">&quot;Wed&quot;</span>,
+    <span class="hljs-attr">&quot;high&quot;</span>: <span class="hljs-string">&quot;28&quot;</span>,
+    <span class="hljs-attr">&quot;low&quot;</span>: <span class="hljs-string">&quot;25&quot;</span>,
+    <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Thunderstorms&quot;</span>
+  }
+]
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-forecast-array" class="definition panel" data-traverse-target="definition-forecast-array">
+            <h2 class="panel-title">
+              <a name="/definitions/forecast array"></a>forecast array:
+              <span class="json-property-type">
+                <span class="json-property-type">object</span>
+                <span class="json-property-range" title="Value limits"></span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>The weather forecast for a specific day. The item element contains multiple forecast elements for today and tomorrow.</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="code">
+                      <span class="json-property-name">code:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The condition code for this forecast. You could use this code to choose a text description or image for the forecast. The possible values for this element are described in the
+                        <a href="https://developer.yahoo.com/weather/documentation.html#codes">Condition Codes</a>.</p>
+                    </dd>
+                    <dt data-property-name="date">
+                      <span class="json-property-name">date:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The date to which this forecast applies. The date is in &#39;dd Mmm yyyy&#39; format, for example &#39;30 Nov 2005&#39;</p>
+                    </dd>
+                    <dt data-property-name="day">
+                      <span class="json-property-name">day:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>Day of the week to which this forecast applies. Possible values are Mon Tue Wed Thu Fri Sat Sun.</p>
+                    </dd>
+                    <dt data-property-name="high">
+                      <span class="json-property-name">high:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The forecasted high temperature for this day, in the units specified by the units element.</p>
+                    </dd>
+                    <dt data-property-name="low">
+                      <span class="json-property-name">low:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The forecasted low temperature for this day, in the units specified by the units element.</p>
+                    </dd>
+                    <dt data-property-name="text">
+                      <span class="json-property-name">text:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>A textual description of conditions</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <div class="hljs"><pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;code&quot;</span>: <span class="hljs-string">&quot;4&quot;</span>,
+  <span class="hljs-attr">&quot;date&quot;</span>: <span class="hljs-string">&quot;14 Jun 2017&quot;</span>,
+  <span class="hljs-attr">&quot;day&quot;</span>: <span class="hljs-string">&quot;Wed&quot;</span>,
+  <span class="hljs-attr">&quot;high&quot;</span>: <span class="hljs-string">&quot;28&quot;</span>,
+  <span class="hljs-attr">&quot;low&quot;</span>: <span class="hljs-string">&quot;25&quot;</span>,
+  <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Thunderstorms&quot;</span>
+}
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="definition-guid" class="definition panel" data-traverse-target="definition-guid">
+            <h2 class="panel-title">
+              <a name="/definitions/guid"></a>guid:
+              <span class="json-property-type">
+                <span class="json-property-type">object</span>
+                <span class="json-property-range" title="Value limits"></span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="json-schema-description">
+                  <p>Unique identifier for the forecast, made up of the location ID, the date, and the time.</p>
+                </section>
+                <section class="json-schema-properties">
+                  <dl>
+                    <dt data-property-name="isPermaLink">
+                      <span class="json-property-name">isPermaLink:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>The attribute isPermaLink is false.</p>
+                    </dd>
+                  </dl>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>Example</h5>
+                  <div class="hljs"><pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;isPermaLink&quot;</span>: <span class="hljs-string">&quot;false&quot;</span>
+}
+</code></pre> </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="doc-row no-margin">
+            <div class="doc-copy doc-separator">
+              <a class="powered-by" href="https://sourcey.com/spectacle">Documentation by
+                <span>Spectacle</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

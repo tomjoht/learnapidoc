@@ -1,5 +1,5 @@
 ---
-title: Describe parameters
+title: How to document parameters
 permalink: /docapis_doc_parameters.html
 categories:
 - api-doc
@@ -13,7 +13,7 @@ path1: /docendpoints.html
 
 Parameters offer ways to configure the endpoint. The parameters you pass with an endpoint affect the response.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

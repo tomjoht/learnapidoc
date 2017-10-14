@@ -1,5 +1,4 @@
-<!-- the google_analytics_id gets auto inserted from the config file -->
-
+{% if site.format == "web" %}<!-- the google_analytics_id gets auto inserted from the config file -->
 {% if site.google_analytics %}
 
 <script>
@@ -11,5 +10,5 @@
   ga('create', 'UA-408430-5', 'auto');
   ga('send', 'pageview');
 </script>
-
+{% endif %}
 {% endif %}

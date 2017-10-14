@@ -9,13 +9,13 @@ path1: /survey.html
 ---
 
 {: .survey}
-[Survey question](survey_introduction): What aspect of API doc do you find most challenging (e.g., understanding code)?
+[Survey question](survey_introduction.html): What aspect of API doc do you find most challenging (e.g., understanding code)?
 
 This turned out to be a great question. Because the responses were open-ended, I didn't force respondents to select from a pre-existing list. Instead, they could write whatever they wanted. I grouped the answers into 5 main categories.
 
 From the 42 responses (many of which touch upon several challenges, not just one), here are the results:
 
-<figure>![The most difficult part of writing API documentation](/images/difficultpart_api_doc-550x380.png)
+<figure>![The most difficult part of writing API documentation](images/difficultpart_api_doc-550x380.png)
 
 <figcaption>The most difficult part of writing API documentation</figcaption>
 
@@ -85,7 +85,7 @@ Like any other technical writing scenario, understanding your audience is key to
 
 Some API doc sites, like Twilio, provide sample code in a variety of languages, while other APIs assume that developers will know how to make the calls in their own language.
 
-<figure>[![Does your audience need all of these samples?](/images/proglangsamples-550x326.png)](http://www.twilio.com/docs/api/rest/conference)
+<figure>[![Does your audience need all of these samples?](images/proglangsamples-550x326.png)](http://www.twilio.com/docs/api/rest/conference)
 
 <figcaption>Does your audience need all of these samples?</figcaption>
 

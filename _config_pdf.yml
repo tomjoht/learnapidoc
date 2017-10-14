@@ -3,7 +3,7 @@ subtitle: A guide for technical writers
 sidebar: docapis
 
 language: english
-target: print
+format: pdf
 
 destination: _site
 port: 4000
@@ -11,7 +11,6 @@ highlighter: rouge
 exclude:
   - mobi
   - pdf
-target: pdf
 
 markdown: kramdown
 kramdown:

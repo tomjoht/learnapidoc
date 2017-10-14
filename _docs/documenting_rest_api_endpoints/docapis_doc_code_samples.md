@@ -1,5 +1,5 @@
 ---
-title: Describe code samples
+title: How to document code samples
 permalink: /docapis_doc_code_samples.html
 categories:
 - api-doc
@@ -13,7 +13,7 @@ path1: /docendpoints.html
 
 One aspect of REST APIs that facilitates widespread adoption is that they aren't tied to a specific programming language. Developers can code their applications in any language, from Java to Ruby to JavaScript, Python, C#, Node JS, or something else. As long as they can make an HTTP web request in that language, they can use the API. The response from the web request will contain the data in either JSON or XML.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

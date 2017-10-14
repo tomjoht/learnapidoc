@@ -18,7 +18,7 @@ With Swagger, instead of XML, you have set of JSON or YAML objects, with a speci
 {: .tip }
 To see a presentation that covers the same concepts in this article, see [https://goo.gl/n4Hvtq](https://goo.gl/n4Hvtq).
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

@@ -2,51 +2,75 @@
 /*body.print .container {max-width: 650px;}*/
 
 body {
-    font-size:14px;
+    font-size:12px;
 }
-.nav ul li a {border-top:0px; background-color:transparent; color: #808080; }
+/*table .table {max-width:650px;}*/
+table, th, td  {border: 1px solid black}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+tr:nth-child(even) {background-color: #f2f2f2}
+th  {background-color: #595959}
+th  {color: white}
+
 #navig a[href] {color: #595959 !important;}
-table .table {max-width:650px;}
-
-#navig li.sectionHead {font-weight: bold; font-size: 18px; color: #595959 !important; list-style-type: none; }
+#navig li.sectionHead {font-weight: bold; font-size: 18px; color: #595959 !important; list-style-type: none; margin-top: 18px; }
 #navig li {font-weight: normal;  list-style-type: none; font-size: 14px; }
-
 #navig a[href]::after { content: leader(".") target-counter(attr(href), page); }
+
+#navig li.l1 {
+  font-size: 19px;
+}
+
+#navig li.l2 {
+  font-size: 16px;
+}
+
+#navig li.l3 {
+  font-size: 14px;
+}
+
+#navig ul.l1 {
+  margin-left:20px;
+}
+
+#navig ul.l2 {
+  margin-left:40px;
+}
+
+#navig ul.l3 {
+  margin-left:60px;
+}
+
+
+a[href]::after {
+    content: " (page " target-counter(attr(href), page) ")"
+}
 
 a[href^="http:"]::after, a[href^="https:"]::after {
     content: "";
 }
 
-a[href^="http:"]::after, a[href^="https:"]::after {
-    content: " (" attr(href) ")";
-}
-
 a[href] {
-    color: blue !important;
+    color: #337CD6 !important;
+    text-decoration: none;
 }
 a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::after {
     content: "";
 }
 
 
-@page {
-    margin: 60pt 90pt 60pt 90pt;
-    font-family: sans-serif;
-    font-style:none;
-    color: gray;
-
-}
-
 .printTitle {
     line-height:30pt;
-    font-size:27pt;
+    font-size:24pt;
     font-weight: bold;
     letter-spacing: -.5px;
     margin-bottom:25px;
 }
 
 .printSubtitle {
-    font-size: 19pt;
+    font-size: 18pt;
     color: #cccccc !important;
     font-family: "Grotesque MT Light";
     line-height: 22pt;
@@ -64,15 +88,6 @@ a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::a
     margin-bottom: 100px;
 }
 
-#navig {
-    /*page-break-before: always;*/
-}
-
-.copyrightBoilerplate {
-    page-break-before:always;
-    font-size:14px;
-}
-
 .lastGeneratedDate {
     font-style: italic;
     font-size:14px;
@@ -82,10 +97,16 @@ a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::a
 .alert a {
     text-decoration: none !important;
 }
+body.first {counter-reset: page 1}
 
+@page {
+    margin: 60pt 90pt 60pt 90pt;
+    font-family: sans-serif;
+    font-style:none;
+    color: gray;
+}
 
 body.title { page: title }
-
 @page title {
     @top-left {
         content: " ";
@@ -100,14 +121,12 @@ body.title { page: title }
         content: " ";
     }
 }
+body.copyright {counter-reset: page 1}
 
 body.frontmatter { page: frontmatter }
-body.frontmatter {counter-reset: page 1}
-
-
 @page frontmatter {
     @top-left {
-        content: prince-script(guideName);
+        content: " ";
     }
     @top-right {
         content: prince-script(datestamp);
@@ -116,14 +135,16 @@ body.frontmatter {counter-reset: page 1}
         content: counter(page, lower-roman);
     }
     @bottom-left {
-        content: "youremail@domain.com";   }
+        content: prince-script(guideName);
+        font-size: 11px;
+    }
 }
 
-body.first_page {counter-reset: page 1}
 
 h1 { string-set: doctitle content() }
 
 @page {
+
     @top-left {
         content: string(doctitle);
         font-size: 11px;
@@ -143,6 +164,7 @@ h1 { string-set: doctitle content() }
         font-size: 11px;
     }
 }
+
 .alert {
     background-color: #fafafa !important;
     border-color: #dedede !important;
@@ -151,4 +173,173 @@ h1 { string-set: doctitle content() }
 
 pre {
     background-color: #fafafa;
+}
+
+ul#markdown-toc {
+  display: none;
+}
+
+h1 {font-size: 32px;}
+h2 {font-size: 18px; color: #444444;}
+h3 {font-size: 14px; color: #DD7A01; font-weight: normal;}
+h4 {font-size: 12px; color: #808080; font-weight: normal;}
+
+
+
+a[data-toggle="tooltip"], a[data-toggle="popover"] {
+    color: black;
+    cursor: default;
+}
+
+.printTitle {
+    color: #444444 !important;
+}
+
+
+img.docimage {
+  margin-bottom: 20px;
+}
+
+dt {
+  font-weight: bold;
+
+}
+
+dl dd {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+dd pre {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+dd {
+  margin-left: 30px;
+}
+
+
+/* callout styles*/
+
+.docs .bs-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+.docs .calloutTitle {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.docs .bs-callout p:last-child {
+  margin-bottom: 0;
+}
+.docs .bs-callout code {
+  border-radius: 3px;
+}
+.docs .bs-callout+.bs-callout {
+  margin-top: -5px;
+}
+.docs .bs-callout-default {
+  border-left-color: #777;
+}
+.docs .bs-callout-default .calloutTitle {
+  color: #777;
+}
+.docs .bs-callout-primary {
+  border-left-color: #428bca;
+}
+.docs .bs-callout-primary .calloutTitle {
+  color: #428bca;
+}
+.docs .bs-callout-success {
+  border-left-color: #5cb85c;
+}
+.docs .bs-callout-success .calloutTitle {
+  color: #5cb85c;
+}
+.docs .bs-callout-danger {
+  border-left-color: #d9534f;
+}
+.docs .bs-callout-danger .calloutTitle {
+  color: #d9534f;
+}
+.docs .bs-callout-warning {
+  border-left-color: #f0ad4e;
+}
+.docs .bs-callout-warning .calloutTitle {
+  color: #f0ad4e;
+}
+.docs .bs-callout-info {
+  border-left-color: #5bc0de;
+}
+.docs .bs-callout-info .calloutTitle {
+  color: #5bc0de;
+}
+
+/* alerts */
+
+.docs .alert {
+  padding: 11.25px 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 1px solid #f7f7f7;
+  border-radius: 3px;
+}
+.docs .alert-success {
+  background-image: -webkit-linear-gradient(top, #dff0d8 0%, #c8e5bc 100%);
+  background-image:      -o-linear-gradient(top, #dff0d8 0%, #c8e5bc 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dff0d8), to(#c8e5bc));
+  background-image:         linear-gradient(to bottom, #dff0d8 0%, #c8e5bc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffc8e5bc', GradientType=0);
+  background-repeat: repeat-x;
+  border-color: #b2dba1;
+}
+.docs .alert-info {
+  background-image: -webkit-linear-gradient(top, #d9edf7 0%, #b9def0 100%);
+  background-image:      -o-linear-gradient(top, #d9edf7 0%, #b9def0 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d9edf7), to(#b9def0));
+  background-image:         linear-gradient(to bottom, #d9edf7 0%, #b9def0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffb9def0', GradientType=0);
+  background-repeat: repeat-x;
+  border-color: #9acfea;
+}
+.docs .alert-warning {
+  background-image: -webkit-linear-gradient(top, #fcf8e3 0%, #f8efc0 100%);
+  background-image:      -o-linear-gradient(top, #fcf8e3 0%, #f8efc0 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fcf8e3), to(#f8efc0));
+  background-image:         linear-gradient(to bottom, #fcf8e3 0%, #f8efc0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf8e3', endColorstr='#fff8efc0', GradientType=0);
+  background-repeat: repeat-x;
+  border-color: #f5e79e;
+}
+.docs .alert-danger {
+  background-image: -webkit-linear-gradient(top, #f2dede 0%, #e7c3c3 100%);
+  background-image:      -o-linear-gradient(top, #f2dede 0%, #e7c3c3 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2dede), to(#e7c3c3));
+  background-image:         linear-gradient(to bottom, #f2dede 0%, #e7c3c3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffe7c3c3', GradientType=0);
+  background-repeat: repeat-x;
+  border-color: #dca7a7;
+}
+
+/* overwrite random styles in message.scss for alerts*/
+.docs .alert.alert-warning {
+  padding-left: 15px !important;
+  border-color: #f5e79e !important;
+}
+
+.number_legend {
+  margin: 20px 0px;
+}
+
+.legend {
+  margin: 10px 0px;
+}
+
+pre, .highlight {
+  font-size: 12px;
 }

@@ -10,7 +10,7 @@ path1: /restapispecifications.html
 
 In this tutorial, you'll learn how to use Swagger UI to parse through a sample Swagger spec file and display an output that looks similar to the [Swagger Petstore example](http://petstore.swagger.io/). The sample API will be the same weather API from Mashape [used earlier in this course](docapis_scenario_for_using_weather_api.html). For a more detailed conceptual overview of Swagger, see [Swagger Overview](pubapis_swagger_intro.html).
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}
@@ -69,7 +69,7 @@ There are three resource groups: pet, store, and user.
 
 5. Click **Execute**.
 
-	Look and see the response. It shows the [curl submitted](docapis_make_curl_call.html) and the [response](docapis_doc_sample_responses) from the API.
+	Look and see the response. It shows the [curl submitted](docapis_make_curl_call.html) and the [response](docapis_doc_sample_responses.html) from the API.
 
   {% include important.html content="You've actually just created a pet with this API. You now need to take responsibility for your pet and begin feeding and caring for it! All joking aside, most users don't realize they're playing with real data when they execute responses in an API (using their own API key). This test data may be something you have to wipe clean when you transition from exploring and learning about the API to actually using the API for production use." %}
 

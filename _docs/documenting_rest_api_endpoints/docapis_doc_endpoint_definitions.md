@@ -1,5 +1,5 @@
 ---
-title: Describe the endpoints and methods
+title: How to document the endpoints and methods
 permalink: /docapis_doc_endpoint_definitions.html
 categories:
 - api-doc
@@ -13,7 +13,7 @@ path1: /docendpoints.html
 
 In the previous section, I noted the variation over terminology related to resources, with some doc sites calling the resources "endpoints." Although some might call the whole topic "endpoint documentation," the endpoint usually refers to a specific part in the API. The endpoint literally refers to the resource URL that you call, specifically, the last part of the resource URL (after the base path).
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

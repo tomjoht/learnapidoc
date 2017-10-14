@@ -9,11 +9,11 @@ path1: /survey.html
 ---
 
 {: .survey}
-[Survey question](survey_introduction): Do you test out the API calls used in your doc yourself or rely mostly on QA validation and trust that the code works?
+[Survey question](survey_introduction.html): Do you test out the API calls used in your doc yourself or rely mostly on QA validation and trust that the code works?
 
 From 43 responses, here are the results:
 
-![testingapi](/images/testingapi.png)
+![testingapi](images/testingapi.png)
 
 This question wasn't such a good one because it could be interpreted in different ways. Some people said that QA handles the validation, to which I say of course. If you work in a software shop that uses tech writers instead of QA to validate the code, then you're in trouble. I was mostly wondering if tech writers tested out -- in an informal, minimal way -- all the calls that are in the documentation.
 

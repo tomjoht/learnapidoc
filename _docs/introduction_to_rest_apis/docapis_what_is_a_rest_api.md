@@ -5,14 +5,14 @@ keywords:
 course: "Documenting REST APIs"
 weight: 1.3
 sidebar: docapis
-section: introtoapis 
+section: introtoapis
 path1: /introtoapis.html
 ---
 
 This course is all about learning by doing, but while *doing* various activities, I'll periodically pause and dive into some more abstract concepts to fill in more detail. This is one of those deep dive moments. Here we'll dive into what a REST API is, comparing it to other types of APIs like SOAP. REST APIs have common characteristics but no definitive standards or protocols like their predecessors did.
 
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}
@@ -73,9 +73,9 @@ A RESTful API might not follow all of the official characteristics of REST as ou
 
 Here's the general model of a REST API:
 
-{% if site.target == "print" %}
+{% if site.format == "pdf" %}
 <img class="medium" src="images/restapi_restapi.png" alt="REST API" />
-{% elsif site.target == "web" %}
+{% elsif site.format == "web" %}
 <img class="medium" src="images/restapi_restapi.png" alt="REST API" />
 {% endif %}
 
@@ -124,8 +124,8 @@ The terminology of "URIs" and "GET requests" and "message responses" transported
 
 If you open a browser and go to http://idratherbewriting.com, you're really using HTTP protocol (`http://`) to submit a GET request to the resource available on a web server. The response from the server sends the content at this resource back to you using HTTP. Your browser is just a client that makes the message response look pretty.
 
-{% if site.target == "print" %}<img class="medium" src="images/restapi_www.png" alt="Web as REST API" />
-{% elsif site.target == "web" %}<img class="medium" src="images/restapi_www.svg" alt="Web as REST API" />
+{% if site.format == "pdf" %}<img class="medium" src="images/restapi_www.png" alt="Web as REST API" />
+{% elsif site.format == "web" %}<img class="medium" src="images/restapi_www.svg" alt="Web as REST API" />
 {% endif %}
 
 You can see this response in cURL if you open a Terminal prompt and type `curl http://idratherbewriting.com`. (This assumes you have cURL installed.)

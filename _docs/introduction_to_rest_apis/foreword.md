@@ -40,4 +40,8 @@ Additionally, videos force the user to go at the pace of the narrator. If your s
 
 One of my goals for the content is to keep this course a living, evolving document. As a digital publication, I'll continue to add and edit and refine it as needed. I want this content to become a vital learning resource for all technical writers, both now and in the years to come as technologies evolve.
 
+{% if site.type == "kindle" %}
+I welcome feedback. Feel free to drop me a note at tom@idratherbewriting.com. And follow my blog at [http://idratherbewriting.com](http://idratherbewriting.com).
+{% else %}
 I welcome feedback. Feel free to drop me a note at <a href="mailto=tom@idratherbewriting.com">tom@idratherbewriting.com</a>. And follow my blog at [http://idratherbewriting.com](http://idratherbewriting.com).
+{% endif %}

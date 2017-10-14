@@ -13,7 +13,7 @@ path1: /docnonref.html
 
 Response and error codes are essential for understanding errors in submitting or processing requests.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

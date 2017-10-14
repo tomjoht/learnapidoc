@@ -9,11 +9,11 @@ path1: /survey.html
 ---
 
 {: .survey}
-[Survey question](survey_introduction): Is any aspect of your REST API documentation auto-generated (e.g., custom scripts)? If so, how?
+[Survey question](survey_introduction.html): Is any aspect of your REST API documentation auto-generated (e.g., custom scripts)? If so, how?
 
 From 38 responses, here are the results:
 
-![Are you automating your REST API documentation?](/images/automatingrestAPIs-550x386.png)
+![Are you automating your REST API documentation?](images/automatingrestAPIs-550x386.png)
 
 Several people weren't working on REST APIs, so they wrote N/A. For those who said yes, they're automating their REST API documentation, here's how they're doing it:
 
@@ -49,7 +49,7 @@ But for APIs that are more complex, such as APIs that include endpoints that are
 
 Swagger and other automated doc solutions for REST APIs pose other challenges as well. If you have a lot of notes, details, code samples, or other information about an endpoint, it can be difficult to include all of it in the automated doc display. Most of these displays have a simple list of parameters and their descriptions, a brief description of what the endpoint returns, and then a button to generate a response. For example, here's what an endpoint in Swagger's demo looks like:
 
-<figure>[![This demos an endpoint for updating a pet in the store. ](/images/swagger_demo-550x340.png)](http://petstore.swagger.wordnik.com/#!/pet/addPet)
+<figure>[![This demos an endpoint for updating a pet in the store. ](images/swagger_demo-550x340.png)](http://petstore.swagger.wordnik.com/#!/pet/addPet)
 
 <figcaption>This demos an endpoint for updating a pet in a store.</figcaption>
 

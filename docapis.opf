@@ -53,7 +53,7 @@ layout: null
 
   <!-- Publisher: An entity responsible for making the resource available -->
 
-	<dc:publisher>Amazon.com</dc:publisher>
+	<dc:publisher>idratherbewriting.com</dc:publisher>
 
   <!-- Subject: A topic of the content of the resource. Typically, Subject will be
 		   expressed as keywords, key phrases or classification codes that describe a topic
@@ -66,7 +66,7 @@ layout: null
   <!-- Date: Date of publication in YYYY-MM-DD format. (Days and month can be omitted).
        Standard to follow: http://www.w3.org/TR/NOTE-datetime
   -->
-	<dc:date>2017-03-17</dc:date>
+	<dc:date>2017-10-14</dc:date>
 
   <!-- Description: A short description of the publication's content. -->
   <dc:description>A guide for technical writers documenting REST APIs in software development companies.</dc:description>
@@ -121,7 +121,9 @@ layout: null
 <!-- IMAGES -->
 {% assign image_files = site.static_files | where: "image", true %}
 {% for myimage in image_files %}
+{% unless myimage.extname contains "svg" %}
   <item id="image{% increment imageCounter %}" media-type="image/{{myimage.extname | remove: "." }}" href="images{{ myimage.path | remove: "/images" }}"/>
+{% endunless %}
 {% endfor %}
 
 

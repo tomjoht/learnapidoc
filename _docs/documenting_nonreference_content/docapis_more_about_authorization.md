@@ -5,7 +5,7 @@ keywords:
 course: "Documenting REST APIs"
 weight: 5.3
 sidebar: docapis
-section: docnonref 
+section: docnonref
 path1: /docnonref.html
 ---
 
@@ -15,7 +15,7 @@ APIs vary in the way they authenticate users. Some APIs just require you to incl
 
 In this section, you'll learn more about authentication and what you should focus on in documentation.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}
@@ -97,9 +97,9 @@ If the string matches the signature in the request header, it accepts the reques
 
 Here's a diagram depicting this workflow:
 
-{% if site.target == "print" %}
+{% if site.format == "pdf" %}
 <img class="medium" src="images/restapi_hmac.png" alt="HMAC workflow" />
-{% elsif site.target == "web" %}
+{% elsif site.format == "web" %}
 <img  class="medium" src="images/restapi_hmac.svg" alt="HMAC workflow" />
 {% endif %}
 
@@ -123,9 +123,9 @@ In contrast, three-legged OAuth is used when you need to protect sensitive data.
 
 Here's the basic workflow of OAuth 2.0:
 
-{% if site.target == "print" %}
+{% if site.format == "pdf" %}
 <img class="medium" src="images/restapi_oauth.png" alt="OAuth workflow" />
-{% elsif site.target == "web" %}
+{% elsif site.format == "web" %}
 <img  class="medium" src="images/restapi_oauth.svg" alt="OAuth workflow" />
 
 {% endif %}

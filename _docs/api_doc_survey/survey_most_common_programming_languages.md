@@ -9,11 +9,11 @@ path1: /survey.html
 ---
 
 {: .survey}
-[Survey question](survey_introduction): What programming languages are you most familiar with (e.g., Java, JavaScript)?
+[Survey question](survey_introduction.html): What programming languages are you most familiar with (e.g., Java, JavaScript)?
 
 Here are the results:
 
-![Common programming languages tech writers know](/images/commonlanguages-550x396.png)
+![Common programming languages tech writers know](images/commonlanguages-550x396.png)
 
 By the way, I'm not a charting wizard. A couple of people pointed out that in my [previous post](http://idratherbewriting.com/2014/12/17/the-most-popular-type-of-apis-that-technical-writers-document/), I shouldn't have used a pie chart because the responses didn't add up to 100%. As a result, I updated that to a row of columns (like this one).
 
@@ -47,7 +47,7 @@ Why are these languages popular? Mainly, technical writers are merely following 
 
 In a survey done on Sitepoint, [The Best Programming Language to Learn in 2014: Mid-Year Update](http://www.sitepoint.com/best-programming-language-learn-2014-mid-year-update/), a more rigorous analysis was done analyzing job posts, social media, and other trackers to determine the most best languages to learn. Their conclusion?
 
-<figure>[![Sitepoint's survey of the best programming languages to learn](/images/lang_rank-550x606.png)](http://www.sitepoint.com/best-programming-language-learn-2014-mid-year-update/)
+<figure>[![Sitepoint's survey of the best programming languages to learn](images/lang_rank-550x606.png)](http://www.sitepoint.com/best-programming-language-learn-2014-mid-year-update/)
 
 <figcaption>Sitepoint's survey of the best programming languages to learn</figcaption>
 

@@ -9,11 +9,14 @@ path1: /survey.html
 ---
 
 {: .survey}
-[Survey question](survey_introduction): What IDE do you use?
+[Survey question](survey_introduction.html): What IDE do you use?
 
 From 39 responses, here are the results:
 
-![whatide2](/images/whatide2.png)
+![whatide2](images/whatide2.png)
+
+<figure>![Common types of APIs that technical writers in my survey document](images/typesofapis-600x398.png)
+
 
 The "Other" category included NetBeans, Android Studio, Java Studio, WebStorm, Visual C++, RStudio, PyDev, and PyCharm. Usually one or two participants indicated that they used these.
 

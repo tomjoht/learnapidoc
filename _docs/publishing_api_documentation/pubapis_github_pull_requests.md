@@ -13,7 +13,7 @@ In the previous step, you used Github Desktop to manage the workflow of committi
 {: .tip}
 When you ask developers to review content, ask the specific developer who created the feature you're documenting. Developer tasks are usually specific. One developer may not understand what another developer is really doing (beyond a superficial level).
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

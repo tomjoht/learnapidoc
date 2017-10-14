@@ -1,5 +1,5 @@
 ---
-title: New API endpoint to document
+title: A new API endpoint to document
 permalink: docapis_new_endpoint_to_doc.html
 categories:
 - api-doc
@@ -7,7 +7,7 @@ keywords:
 course: "Documenting REST APIs"
 weight: 3.0
 sidebar: docapis
-section: docendpoints 
+section: docendpoints
 path1: /docendpoints.html
 ---
 
@@ -18,7 +18,7 @@ Now let's shift perspectives. Now you're a technical writer working with the Mas
 {: .note}
 For this exercise, you could equally document a new endpoint for the Aeris Weather API, but since that API is already quite robust, we'll keep it simple and work with the more minimalist Mashape weather API.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

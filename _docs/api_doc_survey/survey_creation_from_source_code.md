@@ -11,11 +11,11 @@ path1: /survey.html
 ---
 
 {: .survey}
-[Survey question](survey_introduction): Do you create documentation by looking at the source code of API files?
+[Survey question](survey_introduction.html): Do you create documentation by looking at the source code of API files?
 
 From 43 responses, the results were as follows:
 
-![lookingatsource](/images/lookingatsource.png)
+![lookingatsource](images/lookingatsource.png)
 
 This question could have been worded a little better to provide a range of answers, such as _often, sometimes, rarely,_ and _never_. A lot of people look at the source code now and then to try to clarify details about parameters or other information, but most don't use the source code intimately to get the information they need. For example, one person wrote:
 

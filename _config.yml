@@ -1,6 +1,6 @@
 title: Document REST APIs
 language: english
-target: web
+format: web
 sidebar: docapis
 
 # Link to home
@@ -12,7 +12,7 @@ highlighter: rouge
 exclude:
   - mobi
   - pdf
-target: web
+format: web
 
 markdown: kramdown
 kramdown:

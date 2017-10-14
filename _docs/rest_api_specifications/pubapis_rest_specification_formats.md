@@ -12,7 +12,7 @@ When I [introduced REST APIs](docapis_what-is-a-rest-api.html), I mentioned that
 
 By far, the Swagger / Open API specification is the most popular, with the largest community, momentum, and history. Because of this, I spend the most time on Swagger here. Overall, these specifications for REST APIs lead to better documentation, tooling, and structure with REST APIs.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

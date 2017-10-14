@@ -1,13 +1,19 @@
 {% if site.format == "web" %}
 {% assign sidebar = site.data[page.sidebar] %}
-{% elsif site.format == "pdf" %}
+{% elsif site.format == "pdf" or site.format == "kindle" %}
 {% assign sidebar = site.data[site.sidebar] %}
 {% endif %}
 
 {% comment %}check for items at first level {% endcomment %}
-<ul class="onPageMinitoc">
+
+{% if site.format == "pdf" or site.format == "kindle" %}
+<div id="navig">
+<ul id="docnavsidebar" class="docnav">
+{% else %}
+<ul id="navig markdown-toc" class="onPageSectiontoc">
+  {% endif %}
 {% for folder in sidebar.folders %}
-  {% if folder.jurl == page.permalink %}
+  {% if folder.jurl contains page.permalink %}
     {% for folderitem in folder.folderitems %}
       <li><a href="{{folderitem.jurl | remove: "/" }}">{{folderitem.title}}</a></li>
     {% endfor %}
@@ -18,7 +24,7 @@
 {% for folder in sidebar.folders %}
   {% for folderitem in folder.folderitems %}
     {% for subfolder in folderitem.subfolders %}
-      {% if subfolder.jurl == page.permalink %}
+      {% if subfolder.jurl contains page.permalink %}
         {% for subfolderitem in subfolder.subfolderitems %}
           <li><a href="{{subfolderitem.jurl | remove: "/" }}">{{subfolderitem.title}}</a></li>
         {% endfor %}
@@ -33,9 +39,9 @@
     {% for subfolder in folderitem.subfolders %}
       {% for subfolderitem in subfolder.subfolderitems %}
         {% for subsubfolder in subfolderitem.subsubfolders %}
-          {% if subsubfolder.jurl == page.permalink %}
+          {% if subsubfolder.jurl contains page.permalink %}
             {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
-              <li><a href="{{subsubfolderitem.jurl }}">{{subsubfolderitem.title}}</a></li>
+              <li><a href="{{subsubfolderitem.jurl | remove: "/" }}">{{subsubfolderitem.title}}</a></li>
             {% endfor %}
           {% endif %}
         {% endfor %}
@@ -45,3 +51,6 @@
 {% endfor %}
 
 </ul>
+{% if site.format == "pdf" %}
+</div>
+{% endif %}

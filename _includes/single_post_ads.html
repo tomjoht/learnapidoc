@@ -1,4 +1,4 @@
-<div class="singlePostAds">
+{% if site.format == "web" %}<div class="singlePostAds">
     <script>
 var contents=new Array()
 contents[0]='<a class="noCrossRef" href="http://www.madcapsoftware.com/madcap-flare-2017/?utm_source=IdRatherBeWriting-Homepage&utm_medium=125Banner&utm_campaign=Flare2017r2"><img src="{{ "/images/ads/Madcap-Flare2017r2-728x90.png" | prepend: site.baseurl }}" alt="Madcap Flare" /></a>'
@@ -22,3 +22,4 @@ i++
 }
 </script>
 </div>
+{% endif %}

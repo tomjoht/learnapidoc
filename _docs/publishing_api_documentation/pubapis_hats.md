@@ -8,9 +8,9 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-In contrast to [docs-as-code tools](pubapis_docs_as_code), help authoring tools (HATs) refer to the common toolset often used by technical writers. Common HATs include MadCap Flare, Adobe Robohelp, Author-it, and more. You can use these tools to create API documentation. There are pros and cons with HATs.
+In contrast to [docs-as-code tools](pubapis_docs_as_code.html), help authoring tools (HATs) refer to the common toolset often used by technical writers. Common HATs include MadCap Flare, Adobe Robohelp, Author-it, and more. You can use these tools to create API documentation. There are pros and cons with HATs.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

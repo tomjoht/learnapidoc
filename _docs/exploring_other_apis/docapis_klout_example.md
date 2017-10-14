@@ -12,7 +12,7 @@ path1: /otherapis.html
 
 Use the Klout API to get your Klout score and a list of your influencers and influencees.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

@@ -10,7 +10,7 @@ path1: /publishingapis.html
 
 When you create a repository on GitHub, the repository comes with a wiki that you can add pages to. This wiki can be really convenient if your source code is stored on GitHub.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}
@@ -63,9 +63,9 @@ Before you start working with GitHub, you need to set up Git and install any nec
 
 	Note that when you use that GitHub Shell, you can also use more typical Unix commands, such as `pwd` for present working directory instead of `dir` (though both commands will work).
 
-  You can also install Git on Windows by following the instructions here: [Installing on Windows](hhttps://git-scm.com/book/en/v2/Getting-Started-Installing-Git#_installing_on_windows).
+  You can also install Git on Windows by following the instructions here: [Installing on Windows](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#_installing_on_windows).
 
-  To install Git on a Mac, see [Installing on Mac](hhttps://git-scm.com/book/en/v2/Getting-Started-Installing-Git#_installing_on_mac). On a Mac, however, you don't need a special Git Shell. Open the Terminal in the same way &mdash; go to **Applications > Utilities > Terminal**.
+  To install Git on a Mac, see [Installing on Mac](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#_installing_on_mac). On a Mac, however, you don't need a special Git Shell. Open the Terminal in the same way &mdash; go to **Applications > Utilities > Terminal**.
 
 2. Create a GitHub account by going to [GitHub.com](http://github.com).
 

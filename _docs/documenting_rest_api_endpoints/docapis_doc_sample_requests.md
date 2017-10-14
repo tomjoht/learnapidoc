@@ -1,5 +1,5 @@
 ---
-title: Describe sample requests
+title: How to document sample requests
 permalink: /docapis_doc_sample_requests.html
 categories:
 - api-doc
@@ -13,7 +13,7 @@ path1: /docendpoints.html
 
 Although you've already listed the endpoint and parameters, you should also include one or more sample requests that shows the endpoint integrated with parameters in an easy-to-understand way.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

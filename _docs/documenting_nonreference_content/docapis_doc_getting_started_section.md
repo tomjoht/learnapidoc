@@ -11,7 +11,7 @@ path1: /docnonref.html
 
 Following the Overview section, you usually have a "Getting started" section that details the first steps users need to start using the API.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

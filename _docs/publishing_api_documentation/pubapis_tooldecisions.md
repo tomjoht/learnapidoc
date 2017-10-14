@@ -12,7 +12,7 @@ One of the first considerations to make when you think about API doc tooling is 
 
 One the other hand, if technical writers will create all the documentation, generating doc content from the source code may only prove to be a complicated hassle with little benefit.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

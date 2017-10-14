@@ -1,5 +1,5 @@
 ---
-title: "Tool opions for developer docs"
+title: "Tool options for developer docs"
 permalink: /pubapis_developer_tool_options.html
 course: "Documenting REST APIs"
 sidebar: docapis
@@ -10,7 +10,7 @@ path1: /publishingapis.html
 
 Finding the right authoring tools for developer documentation, specifically documenting APIs, can be a real challenge. There are many different tools for creating documentation, and there’s no clear industry standard in this space. Different tools may better suit different environments, skill sets, and products. On this page, I've listed as many authoring tools as I can find that are related to the developer documentation space.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}
@@ -33,11 +33,11 @@ Although you can add your API information manually, you can also import a  [Swag
 
 Readme.io provides a number of wizard-like screens to move you through the documentation process, prompting you with forms to complete.
 
-<img src="images/readmeio_manual_api.png" style="border: 1px solid #dedede; max-width: 600px;" />
+<img src="images/readmeio_manual_api.png" style="border: 1px solid #dedede;" />
 
 Readme.io provides a robust GUI for creating API documentation, in a way that is more extensive and well-designed than virtually any other platform available. The Readme output provides an interactive, try-it-out experience with endpoints:
 
-<img src="images/readmeiotryitout.png" style="border: 1px solid #dedede; max-width: 600px;" />
+<img src="images/readmeiotryitout.png" style="border: 1px solid #dedede;" />
 
 The experience is similar to Swagger in that the response appears directly in the documentation. This API Explorer gives you a sense of the data returned by the API.
 
@@ -49,7 +49,7 @@ Even so, the output is sharp and the talent behind this site is top-notch. The p
 
 One of the tools you can use to generate API documentation from source -- as long as your source is Java-based -- is Miredot.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}
@@ -97,7 +97,7 @@ If you browse the navigation of Miredot's output, it's an interesting-looking so
 
 But the authoring of the docs would really only work for Java developers. It wouldn't work well for technical writers unless you're plugged into the source control workflow.
 
-## Run in Postman button
+## Run in Postman button {#postman}
 
 The [Run in Postman button](https://www.getpostman.com/integrations/run-button) provides a **Run in Postman** button that, when clicked, imports your API info into Postman (either the Chrome app or Mac app) so users can run calls using the Postman client.
 
@@ -105,6 +105,9 @@ To try out Run in Postman, first [import your Swagger spec into Postman](https:/
 
 You can see the many [demos here](https://www.getpostman.com/integrations/run-button).
 
+{% if site.format == "pdf" %}
+For a demo using the sample Mashape weather API, see the [Postman section](pubapis_developer_tool_options.html#postman) in "Tool options for developer docs."
+{% else %}
 Here's a demo using the sample Mashape weather API:
 
 <div class="postman-run-button"
@@ -119,6 +122,7 @@ data-postman-var-1="d1b7adeb50d95d9851e7"></div>
     ));
   }(window, document, "\_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
 </script>
+{% endif %}
 
 Postman provides a powerful REST API client that many developers are familiar with. It allows users to customize the API key and parameters and save those values. Although you don't have the in-browser experience to try out calls, in many ways the Postman client is more useful. This is what developers often use to save and store API calls as they test and explore the functionality.
 
@@ -132,7 +136,7 @@ The downside is that your parameter and endpoint descriptions don't get pulled i
 
 [Spectacle](https://github.com/sourcey/spectacle) is a Github project that builds an output from a Swagger file. The display provides a three-pane output similar to the Stripe or Slate docs. After you download the project files, you can build the display using Node simply by referencing your Swagger file.
 
-Here's a [demo output](https://cheesestore.github.io/). You can also see an [output that uses the Mashape weather API file](../files/spectacle/fulloutput/index.html).
+Here's a [demo output](https://cheesestore.github.io/). You can also see an [output that uses the Mashape weather API file](assets/files/spectacle/public/index.html).
 
 With almost no needed setup or configuration, you can have a world-class output and site for your API docs. As long as the Swagger spec that you integrate is fully detailed, the generated Spectacle site will be attractive and full-featured.
 

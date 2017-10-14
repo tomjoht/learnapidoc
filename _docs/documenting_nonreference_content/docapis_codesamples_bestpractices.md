@@ -19,7 +19,7 @@ Here's a sample code sample page from Mashape:
 
 The following sections list some best practices around code samples.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

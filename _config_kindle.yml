@@ -1,15 +1,15 @@
 language: english
-target: print
+format: kindle
+type: kindle
 sidebar: docapis
 
 destination: _site
 port: 5000
 highlighter: rouge
-github_editme_path: https://github.com/amzn/appstore-alexa-docs/
 exclude:
   - mobi
   - pdf
-target: pdf
+  - images/ads/
 
 markdown: kramdown
 kramdown:
@@ -53,6 +53,12 @@ defaults:
       path: images
     values:
       image: true
+  -
+    scope:
+      path: images/ads/
+    values:
+      image: false
+      published: false
 
 
 ########## UI text ###############

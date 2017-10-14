@@ -4,13 +4,13 @@ course: "Documenting REST APIs"
 permalink: /testingdocs_test_your_instructions.html
 weight: 4.1
 sidebar: docapis
-section: testingdocs 
+section: testingdocs
 path1: /testingdocs.html
 ---
 
 After setting up your [test environment](testingdocs_test_environment.html), the next step is to test your instructions. This will likely involve testing API endpoints with various parameters along with testing other configurations. Testing all your docs can be challenging, but it's where you'll get the most value in creating documentation.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}
@@ -25,7 +25,7 @@ When things don't work, you can identify and log bugs in issue tracking systems 
 
 Other times, the bugs are within your own documentation. For example, I had one of my parameters wrong. Instead of `verboseMode`, the parameter was simply `verbose`. This is one of those details you don't discover unless you test something, find it doesn't work, and then set about figuring out what's wrong.
 
-If you're testing a REST API, you can submit the test calls using [cURL](docapis_make_curl_call.html), [Postman](docapis_postman), or another REST client. Save the calls so that you can quickly run a variety of scenarios.
+If you're testing a REST API, you can submit the test calls using [cURL](docapis_make_curl_call.html), [Postman](docapis_postman.html), or another REST client. Save the calls so that you can quickly run a variety of scenarios.
 
 When you start to run your own tests and experiments, you'll begin to discover what does and does not work. For example, at one company, after setting up a test system and running some calls, I learned that part of my documentation was unnecessary. I thought that field engineers would need to configure a database with a particular code themselves, when it turns out that IT operations would actually be doing this configuration.
 

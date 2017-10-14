@@ -12,7 +12,7 @@ To understand the different components of a Javadoc, you have to first understan
 
 I'll run you through a brief crash course in the basics. For more detail about learning Java, I recommend consulting [lynda.com](http://lynda.com) and [safaribooksonline](http://safaribooksonline.com). Below I'll focus on some basic concepts in Java that will be important in understanding the Javadoc tags and elements.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

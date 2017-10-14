@@ -10,7 +10,7 @@ path1: /publishingapis.html
 
 Static site generators are a breed of website compilers that package up a group of files (usually written in Markdown) and make them into a website. There are more than 350 different static site generators. You can browse them at [staticgen.com](http://www.staticgen.com/). The most popular static site generator (based on number of downloads, usage, and community) is Jekyll, so I'll be focusing on Jekyll here.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

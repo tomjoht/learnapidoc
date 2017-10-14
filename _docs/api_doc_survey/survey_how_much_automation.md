@@ -11,7 +11,7 @@ path1: /survey.html
 ---
 
 {: .survey}
-[Survey question](survey_introduction): Do you generate Javadoc or Doxygen files manually, or are they auto-rendered as part of the build process?
+[Survey question](survey_introduction.html): Do you generate Javadoc or Doxygen files manually, or are they auto-rendered as part of the build process?
 
 *(This question in my API doc survey was so poorly worded that the answers are mostly confusing.)*
 

@@ -10,7 +10,7 @@ path1: /publishingapis.html
 
 What authoring tool works best for developer documentation, especially when documenting APIs? I've used a number of authoring tools (Flare, Robohelp, Confluence, Word, Drupal, Google Docs, and others), and while different tools fit different scenarios with varying strengths, if you're writing *developer docs*, nothing works quite so well as static site generators coupled with a docs-as-code publishing workflow.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

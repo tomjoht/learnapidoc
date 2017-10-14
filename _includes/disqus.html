@@ -1,4 +1,4 @@
-{% unless page.focus == "noform" %}
+{% if site.format == "web" %}{% unless page.focus == "noform" %}
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -12,4 +12,4 @@
         })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% endunless %}
+{% endunless %}{% endif %}

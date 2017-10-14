@@ -12,7 +12,7 @@ Technical writers who can write developer documentation are in high demand, espe
 
 In this section of my API documentation course, I'll dive into the job market for API documentation.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

@@ -10,7 +10,7 @@ path1: /nativelibraryapis.html
 
 The Javadoc output hasn't changed much in the past 20 years, so in some sense it's predictable and familiar. On the other hand, the output is dated and lacks some critical features, like search, or the ability to add more pages. Anyway, it is what it is.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

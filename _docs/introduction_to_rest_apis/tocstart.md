@@ -1,51 +1,33 @@
 ---
-title: "Table of Contents"
+title: "Book Chapters"
 permalink: /tocstart.html
 course: "Documenting REST APIs"
 sidebar: docapis
-section: frontmatter
 search: false
 ---
-
-<ul id="docnavsidebar" class="docnav">
+<div class="tocstart">
 {% assign sidebar = site.data[site.sidebar].folders %}
-{% for folder in sidebar %}
-<li class="level1"><a href="{{folder.jurl | remove: "/"}}">{{ folder.title }}</a></li>
-   <ul>
-       {% for folderitem in folder.folderitems %}
-       {% if folderitem.title %}
-       <li class="level1items"><a href="{{ folderitem.jurl | remove: "/" }}">{{folderitem.title}}</a></li>
-       {% endif %}
-       {% for subfolder in folderitem.subfolders %}
 
-       <li class="level2"><a href="{{subfolder.jurl | remove: "/"}}">{{ subfolder.title }}</a></li>
-           <ul>
-               {% for subfolderitem in subfolder.subfolderitems %}
+<div id="navig">
+  <ul id="docnavsidebar" class="docnav">
+    {% for folder in sidebar %}
+        <li class="sectionHead"><a href="{{folder.jurl | remove: "/"}}">{{ folder.title }}</a></li>
+          {% for folderitem in folder.folderitems %}
+              {% for subfolder in folderitem.subfolders %}
+                <li class="sectionHead"><a href="{{subfolder.jurl | remove: "/"}}">{{ subfolder.title }}</a></li>
+                    {% for subfolderitem in subfolder.subfolderitems %}
 
-               {% if subfolderitem.title %}
-               <li class="level2items"><a href="{{ subfolderitem.jurl | remove: "/" }}">{{subfolderitem.title}}</a></li>
-               {% endif %}
+                      {% for subsubfolder in subfolderitem.subsubfolders %}
+                        <li class="sectionHead"><a href="{{subsubfolder.jurl | remove: "/"}}">{{ subsubfolder.title }}</a></li>
 
-               {% for subsubfolder in subfolderitem.subsubfolders %}
-               <li class="level3"><a href="{{subsubfolder.jurl | remove: "/"}}">{{ subsubfolder.title }}</a></li>
-                   <ul>
-                       {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
-                       {% if subsubfolderitem.title %}
-                       <li class="level3items"><a href="{{subsubfolderitem.jurl | remove: "/" }}">{{subsubfolderitem.title}}</a></li>
-                       {% endif %}
-                       {% endfor %}
-                   </ul>
-
-               {% endfor %}
-               {% endfor %}
-           </ul>
+                  {% endfor %}
+                  {% endfor %}
 
 
-       {% endfor %}
 
-       {% endfor %}
-   </ul>
+          {% endfor %}
 
-   {% endfor %}
+          {% endfor %}
 
-</ul>
+      {% endfor %}
+</div>

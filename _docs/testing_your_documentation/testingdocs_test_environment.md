@@ -12,7 +12,7 @@ Walking through all the steps in documentation yourself is critical to producing
 
 The first step to testing your instructions is to set up a test environment. Without this test environment, it will be difficult to make any progress in testing your instructions.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

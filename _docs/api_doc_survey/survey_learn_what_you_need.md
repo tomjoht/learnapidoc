@@ -9,11 +9,11 @@ path1: /survey.html
 ---
 
 {: .survey}
-[Survey question](survey_introduction): How did you learn what you needed to know (e.g., Lynda.com, Safaribooksonline)?
+[Survey question](survey_introduction.html): How did you learn what you needed to know (e.g., Lynda.com, Safaribooksonline)?
 
 41 people responded. The results look like this:
 
-![howlearn2](/images/howlearn2.png)
+![howlearn2](images/howlearn2.png)
 
 Once again, all answers were freeform, so I grouped similar answers into like categories. For "self-taught," people wrote things like trial and error, play, self, experimenting with code, taught self, practice, self-taught, experience, finding patterns, failure, started coding on my own, developing as a hobby, and experimenting with code.
 

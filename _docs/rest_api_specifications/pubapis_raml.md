@@ -11,7 +11,7 @@ path1: /restapispecifications.html
 
 RAML stands for REST API Modeling Language and is similar to Swagger and other API specifications. RAML is backed by [Mulesoft](https://www.mulesoft.com/), a commercial API company, and uses a more YAML-based syntax in the specification.
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}

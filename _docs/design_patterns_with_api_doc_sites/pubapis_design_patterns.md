@@ -12,7 +12,7 @@ Design patterns are common themes in the way something is designed. In looking o
 
 <a href="https://flic.kr/p/ssQqiL"><img src="images/patterns.png" alt="Earth patterns, Venefice. Flickr" /></a>
 
-{% if site.target == "web" %}
+{% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}
