@@ -4,7 +4,7 @@ permalink: /pubapis_overview.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 7.0
-section: publishingapis 
+section: publishingapis
 path1: /publishingapis.html
 ---
 
@@ -16,6 +16,7 @@ In earlier parts of this course, we used a simple [Weather API from Mashape](htt
 {% endif %}
 
 ## Why focus on publishing API docs?
+
 The first question about a focus on publishing API documentation might be, *why?* What makes publishing API documentation so different from other kinds of documentation that it merits its own section? How and why does the approach here need to differ from the approach for publishing regular documentation?
 
 {% include random_ad.html %}
@@ -30,7 +31,7 @@ However, as I started looking more at API documentation sites, primarily [those 
 
 Despite many advances with single sourcing, content re-use, conditional filtering, and other features in help authoring tools and content management systems, almost no API documentation sites on Programmableweb.com use them. Why is that? Why has the development community outright rejected tech comm tools (and their many years of evolution)?
 
-Granted, there is the occasional HAT, as with [Photobucket's API](https://pic.photobucket.com/dev_help/WebHelpPublic/Content/PB%20API%20Introduction.htm), but they're rare. And I've not yet found an API doc site that structures all content in DITA.
+Granted, there is the occasional HAT, as with [Photobucket's API](https://pic.photobucket.com/dev_help/WebHelpPublic/PhotobucketPublicHelp_Left.htm#CSHID=PB%20API%20Introduction.htm|StartTopic=Content%2FPB%20API%20Introduction.htm|SkinName=WebHelp), but they're rare. And I've not yet found an API doc site that structures all content in DITA.
 
 I asked a recruiter (who specializes in API documentation jobs) whether it was more advantageous to become adept with DITA or to learn a tool such as a static site generator, which is more common in this space.
 

@@ -3,8 +3,8 @@ title: "Tools versus content"
 permalink: /pubapis_tools_vs_content.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.94
-section: publishingapis 
+weight: 7.93
+section: publishingapis
 path1: /publishingapis.html
 ---
 
@@ -19,3 +19,15 @@ I've changed my doc platforms numerous times, and rarely does anyone seem to car
 {% include random_ad.html %}
 
 For the most part, users and reviewers won't even notice all the effort behind the tools. Even when you've managed to single source content, loop through a custom collection, incorporate language switchers to jump from platform to platform -- the feedback you'll get is, "This sentence is incorrect." Or, "There's a typo here."
+
+At this point, think about your requirements, your audience, and try to pick the right tools for your situation. Here are a few questions to consider as you think about the right tool for you:
+
+* Will developers be writing or contributing to the content?
+* Does your security group restrict you from using third-party platforms to host documentation?
+* Do you have a budget to pay a third-party platform for hosting?
+* Do you want to manage the web platform details yourself or offload this onto another group/company?
+* How many endpoints do you have to document?
+* Should you push documentation from the source into your documentation?
+* Does the documentation need be visible on the web, or does it need to be private?
+* To what extent do you want customers to have a one-stop-shopping experience -- reading docs, logging support tickets, posting to forums, viewing news?
+* Do you have UX resources to help build a custom solution?

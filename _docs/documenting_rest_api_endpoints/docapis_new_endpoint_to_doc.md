@@ -27,7 +27,7 @@ For this exercise, you could equally document a new endpoint for the Aeris Weath
 
 The project manager calls you over and says they have a new API for you to document for the next release. (By "API," the manager really just means a new endpoint to the existing API. Some APIs like [Alchemy API](http://www.alchemyapi.com/api/) even refer to each endpoint as an API.)
 
-"Here's the wiki page that contains all the data," the manager says. The information is scattered and random on the wiki page. In reality, you probably wouldn't have all the information available that you need, but to facilitate the course scenario (you can't ask the "team" questions about this fictitious new endpoint), the page will help.
+"Here's the wiki page that contains all the data," the manager says. The information is scattered and random on the wiki page. In reality, you probably wouldn't have all the information available that you need, but to facilitate our scenario (you can't ask the "team" questions about this fictitious new endpoint), the page will help.
 
 It's now your task to sort through the information on this page and create documentation from it.
 

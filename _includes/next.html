@@ -4,7 +4,7 @@
   {% assign newpages = site.docs | sort:"weight" | reverse %}
       {% for pg in newpages %}
           {% if pg.weight < page.weight %}
-            <div class="previousButton"><a class="noCrossRef" href="{{pg.url | reverse | prepend: site.url }}"><small>&laquo; Previous: {{pg.title}}</small></a></div>
+          <div class="previousButton"><a class="noCrossRef" href="{{pg.url | prepend: site.url }}"><small>&laquo; Previous: {{pg.title}}</small></a></div>
             {% break %}
         {% endif %}
       {% endfor %}

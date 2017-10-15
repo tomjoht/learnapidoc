@@ -3,7 +3,7 @@ title: Write the overview section
 permalink: /docapis_doc_overview.html
 keywords:
 course: "Documenting REST APIs"
-weight: 5.1
+weight: 5.2
 sidebar: docapis
 section: docnonref
 path1: /docnonref.html

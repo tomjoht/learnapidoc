@@ -9,7 +9,7 @@ section: introtoapis
 path1: /introtoapis.html
 ---
 
-This course is all about learning by doing, but while *doing* various activities, I'll periodically pause and dive into some more abstract concepts to fill in more detail. This is one of those deep dive moments. Here we'll dive into what a REST API is, comparing it to other types of APIs like SOAP. REST APIs have common characteristics but no definitive standards or protocols like their predecessors did.
+This book is all about learning by doing, but while *doing* various activities, I'll periodically pause and dive into some more abstract concepts to fill in more detail. This is one of those deep dive moments. Here we'll dive into what a REST API is, comparing it to other types of APIs like SOAP. REST APIs have common characteristics but no definitive standards or protocols like their predecessors did.
 
 
 {% if site.format == "web" %}

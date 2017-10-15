@@ -1,13 +1,10 @@
 ---
 title: Version control systems
 permalink: /pubapis_version_control.html
-categories:
-- api-doc
-keywords:
 course: "Documenting REST APIs"
-weight: 7.6
+weight: 7.7
 sidebar: docapis
-section: publishingapis 
+section: publishingapis
 path1: /publishingapis.html
 ---
 

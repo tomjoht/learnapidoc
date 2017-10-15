@@ -4,11 +4,11 @@ permalink: /nativelibraryapis_overview.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 10.0
-section: nativelibraryapis 
+section: nativelibraryapis
 path1: /nativelibraryapis.html
 ---
 
-In previous parts of the course, we focused exclusively on REST APIs. Now let's explore native library APIs, which are more common when building native apps.
+In previous parts of the book, we focused exclusively on REST APIs. Now let's explore native library APIs, which are more common when building native apps.
 
 {% if site.format == "web" %}
 * TOC
@@ -40,12 +40,12 @@ You know what happens when engineers write &mdash; the content is cryptic and of
 
 ## My approach to teaching native library API doc
 
-There are many books and online resources you can consult to learn a specific programming language. This section of the course will not try to teach you Java. However, to understand a bit about Java API documentation (which uses a document generator called Javadoc), you will need some understanding of Java.
+There are many books and online resources you can consult to learn a specific programming language. This section of the book will not try to teach you Java. However, to understand a bit about Java API documentation (which uses a document generator called Javadoc), you will need some understanding of Java.
 
 To keep the focus on API documentation, we'll take a documentation-centric approach to understanding Java. You'll learn the various parts of Java by looking at a specific Javadoc file and sorting through the main components.
 
 ## What you need to install
-For this part of the course, you need to install the following:
+For this part of the book, you need to install the following:
 
 * **Java Development Kit (JDK)**. You can [download the JDK here](http://www.oracle.com/technetwork/java/javase/downloads/index.html). Click the Java button on the left (not Netbeans) and then select the appropriate download for your machine.
 * **Eclipse IDE for Java Developers**. Use the [Eclipse Installer to download Eclipse](https://eclipse.org/downloads/).

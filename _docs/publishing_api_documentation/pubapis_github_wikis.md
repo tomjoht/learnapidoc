@@ -3,10 +3,12 @@ title: "GitHub wikis"
 permalink: /pubapis_github_wikis.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.4
+weight: 7.5
 section: publishingapis
 path1: /publishingapis.html
 ---
+
+One of the easiest toolchains to implement with developer docs is a GitHub wiki. Learning GitHub will also allow you to become familiar with the version control workflows that are common with many docs-as-code tools. For this reason, I have a detailed tutorial for using GitHub in this book.
 
 When you create a repository on GitHub, the repository comes with a wiki that you can add pages to. This wiki can be really convenient if your source code is stored on GitHub.
 

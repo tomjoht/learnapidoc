@@ -3,7 +3,7 @@ title: Documenting authentication and authorization
 permalink: /docapis_more_about_authorization.html
 keywords:
 course: "Documenting REST APIs"
-weight: 5.3
+weight: 5.4
 sidebar: docapis
 section: docnonref
 path1: /docnonref.html

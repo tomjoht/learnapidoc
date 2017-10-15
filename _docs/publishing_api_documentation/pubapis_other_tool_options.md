@@ -1,14 +1,14 @@
 ---
-title: "Tool options for developer docs"
-permalink: /pubapis_developer_tool_options.html
+title: "Other tool options"
+permalink: /pubapis_other_tool_options.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.9
+weight: 7.91
 section: publishingapis
 path1: /publishingapis.html
 ---
 
-Finding the right authoring tools for developer documentation, specifically documenting APIs, can be a real challenge. There are many different tools for creating documentation, and there’s no clear industry standard in this space. Different tools may better suit different environments, skill sets, and products. On this page, I've listed as many authoring tools as I can find that are related to the developer documentation space.
+There are many different tools for creating documentation, and there’s no clear industry standard in this space. Different tools may better suit different environments, skill sets, and products. On this page, I've listed as many authoring tools as I can find that are related to the developer documentation space.
 
 {% if site.format == "web" %}
 * TOC
@@ -106,7 +106,7 @@ To try out Run in Postman, first [import your Swagger spec into Postman](https:/
 You can see the many [demos here](https://www.getpostman.com/integrations/run-button).
 
 {% if site.format == "pdf" %}
-For a demo using the sample Mashape weather API, see the [Postman section](pubapis_developer_tool_options.html#postman) in "Tool options for developer docs."
+For a demo using the sample Mashape weather API, see the [Postman section](pubapis_other_tool_options.html#postman) in "Tool options for developer docs."
 {% else %}
 Here's a demo using the sample Mashape weather API:
 
@@ -143,6 +143,32 @@ With almost no needed setup or configuration, you can have a world-class output 
 You can also build the Spectacle site without the frame so you can embed it into another site. However, in playing with this embed option, I found that I would have to create my own styles. If using the default styles in the full-site output, they most likely will overwrite or interfere with your host site's appearance.
 
 I'm also not sure if you can add your own doc pages to the Spectacle site.
+
+## Custom UX solutions
+
+If you want to build a beautiful API doc website that rivals sites such as [Parse.com](http://parse.com) and others, you'll most likely need to involve a UX engineer to build it. Fortunately, this is a solution that many UX engineers and other web developers are usually excited to tackle.
+
+If you want to integrate your API documentation into your main website, ask the person designing your main website for strategies on integrating the doc site into it. This integration might allow you to leverage authentication (if needed) and other interaction points (such as with forums or support tickets).
+
+Many custom websites are built using a variety of JavaScript, HTML, and CSS tools. Most likely you'll be able to supply a batch of Markdown or HTML files to the web developer to integrate. Your UX developers will often be eager to design a custom solution to make your docs beautiful and seamlessly integrated with the rest of your content.
+
+<img src="images/uxteam.png" alt="Getting help from your UX team" />
+
+When I worked at Badgeville, our solution for publishing API documentation was to use custom scripts that pulled some information from source files and pushed them into templates.
+
+The source files were stored on Github, and the writers could edit the descriptions of the parameters, fields, etc. Our developers created scripts that would look into the code of the source files and render content into JSON files in a specific structure.
+
+Since we published all help content on a Drupal site, we hired a Drupal development agency that would take information from a JSON file and push the information into a custom-built template.
+
+After the scripts were integrated into the Drupal site, we would have developers periodically run the build scripts to generate a batch of JSON files.
+
+{% include random_ad.html %}
+
+The upload scripts checked to ensure the JSON files were valid, and then they were pushed into the templates and published. Each upload would overwrite any existing content with the same file names.
+
+If your documentation is published on a web-based CMS, you can probably find a development agency to create a similar script (if you don't have in-house engineers to create them).
+
+A lot of companies have custom solutions for their API documentation. Sometimes this kind of solution just makes sense and allows you to right-size the workflow to fit your specific information.
 
 ## More tools
 

@@ -10,7 +10,7 @@ weight: 1.0
 class: first
 ---
 
-In this course on writing documentation for REST APIs, instead of just talking about abstract concepts, I contextualize REST APIs with a direct, hands-on approach.
+In this book on writing documentation for REST APIs, instead of just talking about abstract concepts, I contextualize REST APIs with a direct, hands-on approach.
 
 You'll learn about API documentation in the context of using some simple weather APIs to put a weather forecast on your site.
 
@@ -44,19 +44,22 @@ Finally, you'll dive into different ways to publish REST API documentation, expl
 
 You'll learn how to leverage templates, build interactive API consoles so users can try out requests and see responses, and learn different ways to host and publish your documentation.
 
-## Course organization
+## Book organization
 
 Organizationally, this course is divided into the following sections:
 
 *  **Introduction to REST APIs**
 *  **Using a REST API like a developer**
 *  **Documenting endpoints**
-*  **Testing your documentation**
-*  **Documenting non-reference content**
+*  **Testing your API documentation**
+*  **Documenting non-reference sections**
 *  **Exploring other REST APIs**
-*  **Publishing API documentation**
-*  **Design patterns**
+*  **Publishing your API documentation**
+*  **Using REST API specifications**
 *  **Documenting native library APIs**
+*  **Getting a job in API documentation**
+*  **API documentation survey results**
+*  **Resources**
 
 You don't have to read the chapters in order &mdash; skip around as you prefer. But some of the earlier sections on using a REST API like a developer and documenting endpoints follow a somewhat sequential order with the same weather API scenario.
 

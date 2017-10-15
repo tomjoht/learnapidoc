@@ -61,7 +61,7 @@ Git
 : Distributed version control system commonly used when interacting with code. GitHub uses Git, as does BitBucket and other version control platforms. Learning Git is essential for working with developer documentation, since this is the most common way developers share, review, collaborate, and distribute code. See [https://git-scm.com/](https://git-scm.com/).
 
 GitHub
-: A platform for managing Git repositories. Used for most open source projects. You can also publish documentation using GitHub, either by simply uploading your non-binary text files to the repo, or by auto-building your Jekyll site with GitHub Pages, or by using the built-in GitHub wiki. See [GitHub wikis](http://idratherbewriting.com/learnapidoc/pubapis_github_wikis.html) in this course as well as [Github.com](https://github.com/).
+: A platform for managing Git repositories. Used for most open source projects. You can also publish documentation using GitHub, either by simply uploading your non-binary text files to the repo, or by auto-building your Jekyll site with GitHub Pages, or by using the built-in GitHub wiki. See [GitHub wikis](http://idratherbewriting.com/learnapidoc/pubapis_github_wikis.html) in this book as well as [Github.com](https://github.com/).
 
 git repo
 : A tool for consolidating and managing many smaller repos with one system. See [git-repo](https://code.google.com/archive/p/git-repo/).

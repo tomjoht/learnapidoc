@@ -104,6 +104,9 @@ folders:
   - title: Create user guide tasks
     jurl: /docapis_create_user_guide.html
 
+  - title: Breaking down API doc
+    jurl: /pubapis_api_doc_types.html
+
   - title: Write the API overview
     jurl: /docapis_doc_overview.html
 
@@ -154,14 +157,14 @@ folders:
   - title: List of about 100 APIs
     jurl: /pubapis_apilist.html
 
-  - title: Breaking down API doc
-    jurl: /pubapis_api_doc_types.html
-
-  - title: Docs-as-code tools
-    jurl: /pubapis_docs_as_code.html
+  - title: Design patterns overview
+    jurl: /pubapis_design_patterns.html
 
   - title: Tool decisions
     jurl: /pubapis_tooldecisions.html
+
+  - title: Docs-as-code tools
+    jurl: /pubapis_docs_as_code.html
 
   - title: Github wikis
     jurl: /pubapis_github_wikis.html
@@ -175,26 +178,20 @@ folders:
   - title: Pull request workflows through Github in browser
     jurl: /pubapis_github_pull_requests.html
 
-  - title: Jekyll
+  - title: Jekyll -- my favorite tool
     jurl: /pubapis_jekyll.html
 
-  - title: Tool opions for developer docs
-    jurl: /pubapis_developer_tool_options.html
+  - title: Other tool options
+    jurl: /pubapis_other_tool_options.html
 
-  - title: Custom UX solutions
-    jurl: /pubapis_custom_ux.html
-
-  - title: Help authoring tools
+  - title: What about traditional help authoring tools (HATs)?
     jurl: /pubapis_hats.html
 
   - title: Tools versus Content
     jurl: /pubapis_tools_vs_content.html
 
-  # - title: "Case study: Switching tools to docs-as-code"
-  #   jurl: /pubapis_tools_switching_to_docs_as_code.html
-
-#  - title: Conclusion
-#    permalink: /pubapis_conclusion.html
+  - title: "Case study: Switching tools to docs-as-code"
+    jurl: /pubapis_tools_switching_to_docs_as_code.html
 
 - title: Using REST API specifications
   jurl: /restapispecifications.html
@@ -226,34 +223,6 @@ folders:
 
   - title: Combining Swagger's reference output with user guide docs
     jurl: /pubapis_combine_swagger_and_guide.html
-
-- title: Design patterns with API doc sites
-  jurl: /designpatterns.html
-  folderitems:
-
-    - title: Design patterns overview
-      jurl: /pubapis_design_patterns.html
-
-    - title: Structure and templates
-      jurl: /pubapis_structure_and_templates.html
-
-    - title: Web platforms
-      jurl: /pubapis_web_platforms.html
-
-    - title: Abundant code samples
-      jurl: /pubapis_code_samples.html
-
-    - title: Long pages
-      jurl: /pubapis_longish_pages.html
-
-    - title: API interactivity
-      jurl: /pubapis_api_interactivity.html
-
-    - title: Edit on Github buttons
-      jurl: /pubapis_edit_on_github.html
-
-    - title: Challenging factors
-      jurl: /pubapis_challenging_factors.html
 
 - title: Documenting native library APIs
   jurl: /nativelibraryapis.html

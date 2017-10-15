@@ -3,9 +3,9 @@ title: "Breaking down API doc"
 permalink: /pubapis_api_doc_types.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.2
-section: publishingapis
-path1: /publishingapis.html
+weight: 5.1
+section: docnonref
+path1: /docnonref.html
 ---
 
 Perhaps no other genre of technical documentation has such variety in the outputs as API documentation. Almost every API documentation site looks unique. REST APIs are as diverse as different sites on the web, each with their own branding, navigation, terminology, and style.
@@ -39,7 +39,7 @@ In Mulesoft's API platform, you can see many of these sections in their standard
 
 <a href="http://api-portal.anypoint.mulesoft.com/yahoo/api/yahoo-weather-api?ref=apihub"><img src="images/commonsections.png" alt="Common sections in API documentation" /></a>
 
-I won't get into too much detail about each of these sections. In previous sections of this course, I explored the content development aspect of API documentation in depth. Here I'll just list the salient points.
+I won't get into too much detail about each of these sections. In previous sections of this book, I explored the content development aspect of API documentation in depth. Here I'll just list the salient points.
 
 ### Guides
 

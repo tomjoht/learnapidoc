@@ -3,7 +3,7 @@ title: "Docs-as-Code Tools"
 permalink: /pubapis_docs_as_code.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.801
+weight: 7.4
 section: publishingapis
 path1: /publishingapis.html
 ---
@@ -31,7 +31,7 @@ In short, treating docs like code means to use the same systems, processes, and 
 
 <img src="images/limitstodocsascode.png"/>
 
-## Advantages to docs-as-code approaches for docs
+## Advantages to docs-as-code approaches for docs {#docsascode_advantages}
 
 Just because you *can* manage docs like code, should you? What exactly are the advantages of treating docs like code? Here are a few reasons to embrace docs-as-code tools for documentation.
 
@@ -58,7 +58,5 @@ Docs-as-code tools give you incredible flexibility to adapt or adjust to your pa
 
 The tools are as flexible and robust as your coding skills allow. At a base level, almost all use HTML, CSS, and JavaScript, so if you are a master at these, there's nothing you can't do. Further, many static site generators allow you to use scripting logic such as Liquid that simplifies JavaScript and makes it easier to perform complex operations (like iterating through files and inserting certain fields into templates).
 
-{% comment %}
 {: .tip}
 To read details about switching to docs as code tools, see [Case study: Switching tools to docs-as-code](pubapis_tools_switching_to_docs_as_code.html).
-{% endcomment %}

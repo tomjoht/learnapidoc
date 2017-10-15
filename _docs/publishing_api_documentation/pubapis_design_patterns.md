@@ -1,19 +1,167 @@
 ---
-title: "Edit on Github buttons"
-permalink: /pubapis_edit_on_github.html
+title: "Design patterns overview"
+permalink: /pubapis_design_patterns.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 9.6
-section: designpatterns
-path1: /designpatterns.html
+weight: 7.2
+section: publishingapis
+path1: /publishingapis.html
 ---
 
-One common design pattern in API docs is a button or link that says "Edit on Github." This button takes users to the source file on Github, where they can edit the content. I'd seen this button on many API doc sites, so I decided to give it a try with my own docs.
+Design patterns are common approaches or techniques in the way something is designed. In looking over the many API doc sites, I tried to find some common design patterns in the way the content was published. I already mentioned the division between guides, tutorials, and reference documentation. Here I want to explore more design-specific elements in API doc sites.
 
 {% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}
+
+## Several design patterns with API docs
+
+Here are several design patterns with API doc sites:
+
+* [Structure and templates](#structure_and_templates)
+* [Website platform](#website_platform)
+* [Abundant code examples](#abundant_code_examples)
+* [Longish pages](#longish_pages)
+* [Interactive API explorers](#interactive_api_explorers)
+* [Edit on Github buttons](#edit_on_github_buttons)
+
+I explore each of these elements in the following sections.
+
+## Pattern 1: Structure and templates {#structure_and_templates}
+
+If you have a lot of endpoints, you can construct a template that forces specific values in the same template. This is important because you want to establish a consistency with each endpoint. You're basically filling in the blanks.
+
+You could just remember to add the exact same sections on each page, but this requires more manual consistency.
+
+<a href="https://flic.kr/p/oFD6MM"><img src="images/structure.png" alt="Structure, by Rafal Zych" /></a>
+
+You might want to insert various values (descriptions, methods, parameters, etc.) into a highly stylized output. Rather than work with all the style tags in your page directly, you can create values that exist as an object on a page. A custom script can loop through the objects and insert the values into your template.
+
+Different authoring tools have different ways of processing templates. In Jekyll, a static site generator, this is how you do it.
+
+In the frontmatter of a page, you list out the key value pairs:
+
+```
+resource_name: surfreport
+resource_description: Gets the surf conditions for a specific beach.
+endpoint: /surfreport
+```
+
+And so on.
+
+You then use a for loop to cycle through each of the items and insert them into your template:
+
+{% raw %}
+```liquid
+{% for p in site.endpoints %}
+<div class="resName">{{p.resource_name}}</div>
+<div class="resDesc">{{p.resource_description}}</div>
+<div class="endpointDef">{{p.endpoint}}</div>
+```
+{% endraw %}
+
+This approach makes it easy to change your template without reformatting all of your pages. For example, if you decide to change the order of the elements on the page, or if you want to add new classes or something, you just alter the template. The values remain the same, since they can be processed in any order.
+
+Note that this kind of structure is really only necessary if you have a lot of different endpoints. If you only have a handful, there's no need to really automate the template process.
+
+## Pattern 2: A website platform {#website_platform}
+
+Many API doc sites provide one integrated website to find all of the information. You usually aren't opening help in a new window, separate from the other content. The website is branded with the same look and feel as the product. Here's an example from Yelp:
+
+<a href="https://www.yelp.com/developers/documentation"><img src="images/yelpapi.png" alt="Yelp API documentation" /></a>
+
+I hinted at this earlier, but with API documentation, there isn't an application interface that the documentation complements. In most cases, the API documentation itself is the product that users navigate to use your product. As such, users will expect more from it.
+
+One of the challenges in using documentation generated from Swagger, Miredot, or some other document generator is figuring out how to integrate it with the rest of the site. Ideally, you want users to have a seamless experience across the entire website. If your endpoints are rendered into their own separate view, how do you integrate the endpoint reference into the rest of the documentation?
+
+If you can integrate the branding and search, users may not care. But if it feels like users are navigating several sites poorly cobbled together, the UX experience will be somewhat fragmented.
+
+{% include random_ad.html %}
+
+Think about other content that users will interact with, such as Marketing content, terms of service, support, and so on. How do you pull together all of this information into a single site experience without resorting to an overbloated CMS like Drupal or some other web framework?
+
+## Pattern 3: Abundant code samples {#abundant_code_examples}
+
+More than anything else, developers love code examples. Usually the more code you can add to your documentation, the better.
+
+Here's an example from Evernote's API:
+
+<a href="https://dev.evernote.com/doc/articles/note-sharing.php"><img src="images/evernotecodesamples.png" alt="Evernote code examples" /></a>
+
+The writers at Parse [emphasize the importance of code samples](http://blog.parse.com/learn/engineering/designing-great-api-docs/):
+
+>Liberally sprinkle real world examples throughout your documentation. No developer will ever complain that there are too many examples. They dramatically reduce the time for developers to understand your product. In fact, we even have example code right on our homepage.
+
+For code samples, you want to incorporate syntax highlighting. There are numerous syntax highlighters that you can usually incorporate into your platform. For example, Jekyll uses either Pygments or Rouge. These highlighters have stylesheets prepared to highlight languages based on specific syntax.
+
+{% include random_ad.html %}
+
+When you include a code sample, you usually instruct the syntax highlighter what language to use. If you don't have access to a syntax highlighter for your platform, you can always [manually add the highlighting using syntax highlighter library](http://code.tutsplus.com/tutorials/quick-tip-how-to-add-syntax-highlighting-to-any-project--net-21099).
+
+Another important element in code samples is to use consistent white space. Although computers can read minified code, users usually can't or won't want to look at minified code. Use a tool to format the code with the appropriate spacing and line breaks.
+
+Sometimes development shops have an official style guide for formatting code samples. This might prescribe details such as the following:
+
+* spaces inside of parentheses
+* line breaks
+* inline code comment styles
+
+For example, here's a [JavaScript style guide](http://google.github.io/styleguide/javascriptguide.xml).
+
+If developers don't have an official style guide, ask them to recommend one online, and compare the code samples against the guidelines in it.
+
+## Pattern 4: Longish pages {#longish_pages}
+
+One of the most stark differences between regular GUI documentation and developer documentation is that developer doc pages tend to be longer. In a [post on designing great API docs](http://blog.parse.com/learn/engineering/designing-great-api-docs/), the writers at Parse explain
+
+>Minimize Clicking
+>
+>It's no secret that developers hate to click. Don't spread your documentation onto a million different pages. Keep related topics close to each other on the same page.
+>
+>We're big fans of long single page guides that let users see the big picture with the ability to easily zoom into the details with a persistent navigation bar. This has the great side effect that users can search all the content with an in-page browser search.
+>
+>A great example of this is the Backbone.js documentation, which has everything at your fingertips.
+
+Here's the Backbone.js documentation:
+
+<a href="http://backbonejs.org/"><img src="images/backbonejs.png" alt="Backbone JS" /></a>
+
+For another example of a long page, see the Reddit API:
+<a href="https://www.reddit.com/dev/api"><img src="images/redditpage.png" alt="Backbone JS" /></a>
+
+Why do API doc sites tend to have long-ish pages? Here are a few reasons:
+
+* **Provides the big picture**: As the Parse writers indicate, single-page docs allow users to zoom out or in depending on the information they need. A new developer might zoom out to get the big picture, learning the base REST path and how to submit calls. But a more advanced developer already familiar with the API might only need to check the parameters allowed for a specific endpoint. The single-page doc model allows developers to jump to the right page and use Ctrl+F to locate the information.
+* **Many platforms lack search**: A lot of the API doc sites don't have good search engines. In fact, many lack search altogether. This is partly because Google does such a better job at search, the in-site search feature of any website is going to be meager by comparison. Also, some of the other document generator and static site generator tools just don't have search (neither did Javadoc). Without search, you can find information by creating long pages and using Ctrl+F.
+* **Everything is at your fingertips**: If the information is chunked up into little pieces here and there, requiring users to click around constantly to find anything, the experience can be like playing information pinball. As a general strategy, you want to include complete information on a page. If an API resource has several different methods, splitting them out into separate pages can create findability issues. Sometimes it makes sense to keep all related information in one place, or rather "everything at your fingertips."
+* **Today's navigation controls are sophisticated**: Today there are better navigation controls for moving around on long pages than in the past. For example, [Bootstrap's Scrollspy feature](http://getbootstrap.com/javascript/#scrollspy) dynamically highlights your place in the sidebar as you're scrolling down the page. Other solutions allow collapsing or expanding of sections to show content only if users need it.
+
+Usually the long pages on a site are the reference pages. Personally, I'm not a fan of listing every endpoint on the same page. Either way you approach it, developers probably won't care that much. They will care much more about the content on the page rather than the page length.
+
+## Pattern 5: API Interactivity {#interactive_api_explorers}
+
+A recurring feature in many API doc publishing sites is interactivity. Swagger, readme.io, Apiary, and many other platforms allow you to try out calls and see responses.
+
+For APIs not on these platforms, wiring up an API Explorer is often done by engineers. Since you already have the API wiring to make calls and receive responses, creating an API Explorer is a feasible task for a UI developer.
+
+Here's a sample API explorer from Twitter:
+
+<a href="https://dev.twitter.com/rest/tools/console"><img src="images/twitterapiexplorer.png" alt="Twitter API Explorer" /></a>
+
+Are API explorers novel, or extremely instructive? If you're going to be making a lot of calls, there's no reason why you couldn't just use cURL to quickly make the request and see the response. The API Explorer provides more of a GUI, however, that makes the endpoints accessible to more people. You don't have to worry about entering exactly the right syntax in your cURL call -- you just have to fill in the blanks.
+
+However, API Explorers tend to work better with simpler APIs. If your API requires you to retrieve data before you can use a certain endpoint, or if the data you submit is a JSON object in the body of the post, or you have some other complicated interdependency with the endpoints, the API Explorer might not be as helpful.
+
+Nevertheless, clearly it is a design pattern to provide this kind of interactivity in the documentation.
+
+If your users log in, you can store their API keys and dynamically populate the calls with API keys. Not doing so seems a bit lazy with the user experience. The API key can most likely be a variable that stores the user's API key.
+
+However, if you store customer API keys on your site, this might create authentication and login requirements that make your site more complicated. If you have users logging in and dynamically populating the explorer with their API keys, you'll probably need a front-end designer and web developer to pull this off. [readme.io](http://readme.io) is one of the platforms that allows you to store API keys for users and dynamically populate your code samples with them.
+
+## Pattern 6: Edit on Github buttons {#edit_on_github_buttons}
+
+One common design pattern in API docs is a button or link that says "Edit on Github." This button takes users to the source file on Github, where they can edit the content. I'd seen this button on many API doc sites, so I decided to give it a try with my own docs.
 
 Here's what my docs look like with the Edit on Github button:
 
@@ -42,8 +190,6 @@ As I was browsing around on some tech comm blogs, I ran across this [slide deck]
 <figure><a href="http://www.scriptorium.com/2017/03/tcworld-india-2017-focus-future/"><img src="images/isitafad.png"/></a><figcaption>Slide 29</figcaption></figure>
 
 Although I don't have more details about this part of her presentation, the word "fad" got me thinking. Is docs as code a fad? How exactly is the docs-as-code trend different from the wiki trend, which peaked about eight years ago and then floundered?
-
-## Rewind -- what exactly happened to the wiki trend?
 
 Let's turn back the clock a bit. About 8 years ago, many people in tech comm were excited about wikis. Why? Wikis allowed anyone to contribute to a body of information, without knowledge of anything more than a simple wiki syntax.
 
@@ -118,15 +264,11 @@ I also found that you don't need a wiki to enable collaboration. In fact, volunt
 
 This is a significant observation that is worth expanding on. In my experience, most engineers don't want their content to make it directly into production, without an editorial workflow. This is their worst fear, actually. They want to do quick brain dumps on internal wiki pages (or in Word docs) and send them to tech writers to clean up, verify, and polish before publishing.
 
-## Now back to Docs as Code
-
 With that context, let's look at docs as code again. Suppose you're implementing docs as code for purposes of crowdsourcing docs among engineers. If writing docs isn't the engineers' main job, the result will likely be the same as crowdsourcing efforts with wikis -- *dismal*.
 
 Sure, there will be some shimmering lights here and there. Just like some wikis *were* (or *are*) successful. But in general, the majority of tech writers who try to crowdsource their docs will find a lack of significant contributions. The contributions they do get will demand editorial and management overhead.
 
 (Note that from a tech comm career perspective, this is good. This means companies can't crowdsource you out of a job. No new tech platform or workflow is going to make that magic river of free documentation start flowing.)
-
-## Where wikis took off and skyrocketed
 
 Wikis may have died out with docs as a way to crowdsource info, but they didn't die out as a corporate platform. Wikis, in fact, have become the **standard corporate platform** for employees to share and publish information. Wikis such as Confluence have largely replaced SharePoint.
 
@@ -151,8 +293,6 @@ Here are some of the revolutionary benefits that docs-as-code tools provide:
 
 In my GitHub repo, there are active contributions from a writer who is our localization manager. She's been editing the Japanese translations. When we started, she was only marginally familiar with basic HTML. But with docs-as-code tools, she regularly updates Markdown files, commits to the repo, pulls updates, and runs build scripts.
 
-## Simplicity has its tradeoffs
-
 Simplicity has its own tradeoffs, though. In exchange for simpler tools, you give up more robust functionality. In a recent comment on a previous post, a reader who was accustomed to using DITA and DocBook for over a decade lamented about the loss of switching to Markdown. [Kate writes][kate]:
 
 > I am desperately trying to embrace Markdown after 10 years of using DocBook and then DITA. But I am increasingly finding it difficult.
@@ -167,13 +307,40 @@ While some aspects of authoring are simplified, others -- such as developing you
 
 For example, is writing in a simple Markdown syntax worth it if it makes it more problematic to push your content through translation workflows? Is a system that allows for occasional edits from contributing engineers worth it if you have to develop a number of custom, complicated programming scripts to validate, build, and deploy your content?
 
-## Conclusion
-
 If you can cultivate a community where devs contribute their time and attention to docs, great. But if the crowdsourcing efforts fail, it doesn't mean docs as code or even wikis failed. You've still given people simple tools to write and publish documentation.
 
 Although I mentioned crickets as a response for crowdsourcing docs in my current role, it's not entirely fair. We do have several groups outside of our own that learned the doc-as-code tools and published their docs. They didn't edit my docs -- they created their own.
 
 Regardless of the participation, I'm planning to leave my docs on GitHub for a lot longer before evaluating the efforts. I suspect it's too early to evaluate much of anything. Most engineers probably don't realize they *can* edit docs, so I have some education efforts to make both internally and externally. Only after I get the collaboration engine moving along can I begin to evaluate whether the tradeoffs for simplicity were worth it.
+
+## Dealing with more challenging factors
+
+A lot of the solutions we've looked at tend to break down when you start applying more difficult requirements in your tech comm scenario. If you have to deal with some of these challenges, you may have to resort to more traditional tech comm tooling.
+
+* Translation
+* Content re-use
+* Versioning
+* Authentication
+* PDF
+
+You can handle all of this through a custom platform such as Jekyll, but it's not going to be a push-button experience. It will require a higher degree of technical skill and maneuvering.
+
+With my Jekyll doc theme, I'm single sourcing one of my projects into about 9 different outputs (for different product lines and programming languages). Jekyll provides a templating language called Liquid that allows you to do conditional filtering, content re-use, variables, and more.
+
+To handle PDF, I'm using a tool called Prince that converts a list of HTML pages into a PDF document, complete with running headers and footers, page numbering, and other print styling.
+
+To handle authentication, I upload the content into a Salesforce site.com and use Salesforce as the authentication layer. It's my least favorite part of the solution, but a more integrated authentication will probably involve some engineering resources to help out.
+
+## Some non-patterns
+
+Finally, I just want to mention some non-pattern. By this, I mean these are elements that aren't as common in API doc sites:
+
+* PDF output
+* Mobile display
+* Comments on pages
+* Video tutorials
+
+By non-patterns, it's not to say these elements aren't a good idea. But generally they aren't emphasized in many of the API doc sites.
 
 [1]: http://idratherbewriting.com/2012/06/11/essay-my-journey-to-and-from-wikis-why-i-adopted-wikis-why-i-veered-away-from-them-and-a-new-model-for-collaboration/
 

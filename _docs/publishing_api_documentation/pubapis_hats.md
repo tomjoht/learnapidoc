@@ -1,9 +1,9 @@
 ---
-title: "Traditional help authoring tools (HATs)"
+title: "What about traditional help authoring tools (HATs)?"
 permalink: /pubapis_hats.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.93
+weight: 7.92
 section: publishingapis
 path1: /publishingapis.html
 ---
