@@ -7,7 +7,7 @@ keywords:
 course: "Documenting REST APIs"
 weight: 2.4
 sidebar: docapis
-section: likeadeveloper 
+section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
@@ -78,8 +78,6 @@ In this section, you'll use cURL to make the same weather API requests you made 
     29 c, Thunderstorms at Singapore, Singapore
     ```
 
-{% include random_ad.html %}
-
 ## Make the request in cURL (Windows 7)
 
 1.  Copy the cURL call from your text editor.
@@ -102,6 +100,7 @@ In this section, you'll use cURL to make the same weather API requests you made 
     29 c, Thunderstorms at Singapore, Singapore
     ```
 
+    {% include random_ad.html %}
 
 ## Single and Double Quotes with Windows cURL requests
 

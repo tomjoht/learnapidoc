@@ -31,7 +31,14 @@ li {
 	font-weight: bold
 }
 
-h1, h2, h3, h4, h5, h6 {margin-top: 1em, text-align: left !important}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1em;
+  text-align: left !important;
+}
+
+h1.kindle {
+  text-align: left !important;
+}
 
 .level1 { margin-left: 1em}
 .level1items { margin-left: 2em}
@@ -187,7 +194,7 @@ dt {
   color: #777;
 }
 .bs-callout-primary {
-  border-left-color: #428bca;;
+  border-left-color: #428bca;
 }
 .bs-callout-primary .calloutTitle {
   color: #428bca;;
@@ -199,20 +206,40 @@ dt {
   color: #5cb85c;
 }
 .bs-callout-danger {
-  border-left-color: #d9534f;;
+  border-left-color: #d9534f;
 }
 .bs-callout-danger .calloutTitle {
-  color: #d9534f;;
+  color: #d9534f;
 }
 .bs-callout-warning {
-  border-left-color: #f0ad4e;;
+  border-left-color: #f0ad4e;
 }
 .bs-callout-warning .calloutTitle {
-  color: #f0ad4e;;
+  color: #f0ad4e;
 }
 .bs-callout-info {
-  border-left-color: #5bc0de;;
+  border-left-color: #5bc0de;
 }
 .bs-callout-info .calloutTitle {
-  color: #5bc0de;;
+  color: #5bc0de;
+}
+
+.activitySection img {
+    display: inline;
+    vertical-align: bottom;
+    margin-right: 5px;
+}
+
+.activitySection {
+   text-transform: uppercase;
+   font-size: 1.3em;
+   font-weight: bold;
+}
+
+dd {
+    margin-top: 8px;
+}
+
+dd ~dd {
+    margin-top: 8px;
 }

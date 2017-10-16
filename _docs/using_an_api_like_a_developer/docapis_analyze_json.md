@@ -7,7 +7,7 @@ keywords:
 course: "Documenting REST APIs"
 weight: 2.7
 sidebar: docapis
-section: likeadeveloper 
+section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
@@ -220,10 +220,9 @@ It's important to understand the difference between objects and arrays because i
 
 ## Identify the objects and arrays in the weatherdata API response
 
-Look at the response from the `weatherdata` endpoint of the weather API.
+{% include activity.html %}
 
-* Where are the objects?
-* Where are the arrays?
+Look at the response from the `weatherdata` endpoint of the weather API. Where are the objects? Where are the arrays?
 
 It's common for arrays to contain lists of objects, and for objects to contain arrays.
 

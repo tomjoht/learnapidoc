@@ -271,7 +271,17 @@ In this example, the `ajax` method from jQuery is used because it allows cross-o
 For simple demo purposes, the response is assigned to the `data` argument of the success method, and then written out to the `output` tag on the page. We're just getting the surfing recommendation, but there's a lot of other data you could choose to display.
 </pre>
 
-{% include callout.html title="Activity: Write some Markdown on a page" content="On your Github wiki page, edit the page and create the following:<br/><br/>&bull; a numbered list<br/><br/>&bull; a bulleted list<br/><br/>&bull; a bold word<br/><br/>&bull; a code sample with html highlighting<br/><br/>&bull;  a level 2 heading" type="primary" %}
+Look at about 5 different APIs (choose any of those listed on the page). Look for one thing that the APIs have in common.
+
+{% include activity.html %}
+
+On your Github wiki page, edit the page and create the following:
+
+* a numbered list
+* a bulleted list
+* a bold word
+* a code sample with html highlighting
+*  a level 2 heading
 
 ## Limitations in Markdown
 

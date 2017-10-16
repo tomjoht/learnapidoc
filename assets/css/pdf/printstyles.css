@@ -343,3 +343,23 @@ dd {
 pre, .highlight {
   font-size: 12px;
 }
+
+.activitySection img {
+    display: inline;
+    vertical-align: bottom;
+    margin-right: 5px;
+}
+
+.activitySection {
+   text-transform: uppercase;
+   font-size: 1.3em;
+   font-weight: bold;
+}
+
+dd {
+    margin-top: 8px;
+}
+
+dd ~dd {
+    margin-top: 8px;
+}

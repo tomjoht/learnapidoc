@@ -113,4 +113,6 @@ For a directory of API documentation sites on the open web, see the [Programmabl
 
 Note that Programmableweb only lists web APIs, meaning APIs that you can access on the web. They don't list the countless internal, firewalled-off APIs that many companies provide at a cost to paying customers. There are many more thousands of private APIs out there that most of us will never know about.
 
-{% include callout.html title="Activity" type="primary" content="Look at about 5 different APIs (choose any of those listed on the page). Look for one thing that the APIs have in common." %}
+{% include activity.html %}
+
+Look at about 5 different APIs (choose any of those listed on the page). Look for one thing that the APIs have in common.

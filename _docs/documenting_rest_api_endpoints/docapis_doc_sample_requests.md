@@ -78,7 +78,9 @@ However, you don't have to build your own tooling. Existing tools such as [Swagg
 
 ## Document the sample request with the surfreport/{beachId} endpoint
 
-{% include callout.html title="Activity" type="primary" type="Come back to the <code>surfreport/{beachId}</code> endpoint example. Create a sample request for it." %}
+{% include activity.html %}
+
+Come back to the <code>surfreport/{beachId}</code> endpoint example. Create a sample request for it.
 
 Here's mine:
 

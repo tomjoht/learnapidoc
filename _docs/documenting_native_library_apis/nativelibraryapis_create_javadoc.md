@@ -59,6 +59,8 @@ Here are some other characteristics of Javadoc:
 
 Javadoc also checks your tags against the actual code. If you have parameters, exceptions, or returns that don't match up with the parameters, exceptions, or returns in your actual code, then Javadoc will show some warnings.
 
-{% include callout.html title="Activity" type="primary" content="Try removing a parameter from a method and generate the Javadoc again. Make sure the console window is open." %}
-
 <img src="images/javadocerrorchecking.png" alt="Javadoc error checking" />
+
+{% include activity.html %}
+
+Try removing a parameter from a method and generate the Javadoc again. Make sure the console window is open.

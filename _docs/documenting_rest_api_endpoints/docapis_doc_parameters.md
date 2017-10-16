@@ -20,10 +20,14 @@ Parameters offer ways to configure the endpoint. The parameters you pass with an
 
 ## Listing parameters in a table
 
-Many times parameters are listed in a simple table like this:
+Many times parameters are listed in a simple table or definition list like this:
 
 {% if site.format == "kindle" %}
-<img src="images/kindle-parameters-table.png">
+
+Parameter
+:  Required? yes
+:  Data Type: string
+
 {% else %}
 <table>
    <colgroup>
@@ -46,6 +50,8 @@ Many times parameters are listed in a simple table like this:
       </tr>
    </tbody>
 </table>
+
+
 {% endif %}
 
 Here's an example from Yelp's documentation:
@@ -128,7 +134,13 @@ For example, suppose your endpoint definition is as follows:
 Follow through with this same color in your table describing the parameters:
 
 {% if site.format == "kindle" %}
-<img src="images/kindle_parameters_table.png" />
+
+<span class="red">user</span>
+:  Here's my description of the user parameter.
+
+<span class="red">bicycles</span>
+:  Here's my description of the bicycles parameter.
+
 {% else %}
 
 <table>
@@ -239,12 +251,40 @@ If you have relatively simple parameters, your choice won't matter that much. Bu
 
 ## Construct a table to list the surfreport parameters
 
-{% include callout.html title="Activity" type="primary" type="For our new surfreport endpoint, look through the parameters available and create a table similar to the one above." %}
+{% include activity.html %}
 
-Here's what my table looks like:
+For our new surfreport endpoint, look through the parameters available and create a table similar to the one above."
+
+List out the endpoint definition and method for the surfreport/{beachId} endpoint.
+
+Here's what my table or definition list looks like:
 
 {% if site.format == "kindle" %}
+
+{: .note}
+Tables don't display well on Kindle devices, so I've converted them into definition lists in this book. However, here I've also included an image of the table. Tables are more common and easier, but definition lists work better on mobile and tablet devices.
+
+Table:
+
 <img src="images/kindle-parameters-table-demo.png"/>
+
+Definition list:
+
+`days`
+:  The number of days to include in the response. Default is 3.
+:  Required: Optional
+:  Data type: integer
+
+`units`
+:  Options are either <code>imperial</code> or <code>metric</code>. Whether to return the values in imperial or metric measurements. Imperial will use feet, knots, and fahrenheit. Metric will use centimeters, kilometers per hour, and celsius. <code>metric</code> is the default.
+:  Required: Optional
+:  Data type: string
+
+`time`
+:  If you include the time, then only the current hour will be returned in the response.
+:  Required: Optional
+:  Data type: integer. Unix format (ms since 1970) in UTC.
+
 {% else %}
 
 <div class="docSample">
@@ -283,6 +323,7 @@ Here's what my table looks like:
 </tr>
 </tbody></table>
 </div>
+
 {% endif %}
 
 {: .tip}

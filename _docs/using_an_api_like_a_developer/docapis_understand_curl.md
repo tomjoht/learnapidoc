@@ -82,7 +82,18 @@ When you type an address into a website, you see only the body of the response. 
     When you go to a website, you submit the request using the GET HTTP method. There are other HTTP methods you can use when interacting with REST APIs. Here are the common methods used when working with REST endpoints:
 
     {% if site.format == "kindle" %}
-    <img src="images/kindle-table-curl.png" />
+
+    POST
+    :  Ceate a resource
+
+    GET
+    :  Read a resource
+
+    PUT
+    :  Update a resource
+
+    DELETE
+    :  Delete a resource
     {% else %}
 
     <table>
@@ -136,7 +147,15 @@ cURL has shorthand names for the various options that you include with your requ
 Here's what the commands mean:
 
 {% if site.format == "kindle" %}
-<img src="images/kindle-table-curl-parameters.png" />
+
+`--get`
+:  The HTTP method to use. (This is actually unnecessary. You can remove this and the request returns the same response, since GET is the method used by default.)
+
+`--include`
+:  Whether to show the headers in the response. Also represented by `-i`.
+
+`-H`
+:  Submits a custom header. Include an additional `-H` for each header key-value pair you're submitting.
 {% else %}
 
 <table>
@@ -185,7 +204,27 @@ After the query string, each parameter is concatenated with other parameters thr
 cURL has a lot of possible commands, but the following are the most common when working with REST APIs.
 
 {% if site.format == "kindle" %}
-<img src="images/kindle-table-curl-rest-commands.png" />
+
+`-i` or `--include`
+:  Include the response headers in the response.
+:  *Example:* `curl -i http://www.example.com`
+
+`-d` or `--data`
+:  Include data to post to the URL. The data needs to be [url encoded](http://www.w3schools.com/tags/ref_urlencode.asp). Data can also be passed in the request body.
+:  *Example:* `curl -d "data-to-post" http://www.example.com`
+
+`-H` or `--header`
+:  Submit the request header to the resource. This is very common with REST API requests because the authorization is usually included here.
+:  *Example:* `curl -H "key:12345" http://www.example.com`
+
+`-X POST`
+:  The HTTP method to use with the request (in this example, `POST`). If you use `-d` in the request, cURL automatically specifies a POST method. With GET requests, including the HTTP method is optional, because GET is the default method used.
+: *Example:* `curl -X POST -d "resource-to-update" http://www.example.com`
+
+`@filename`
+:  Load content from a file
+:  *Example:* `curl -X POST -d @mypet.json http://www.example.com`
+
 {% else %}
 <table>
    <colgroup>
@@ -208,7 +247,7 @@ cURL has a lot of possible commands, but the following are the most common when 
       </tr>
       <tr>
          <td markdown="span">`-d` or `--data`</td>
-         <td markdown="span">Include data to post to the URL. The data needs to be [url encoded](http://www.w3schools.com/tags/ref_urlencode.asp). Data can also be passed in the request body. </td>
+         <td markdown="span">Include data to post to the URL. The data needs to be [url encoded](http://www.w3schools.com/tags/ref_urlencode.asp). Data can also be passed in the request body.</td>
          <td markdown="span">`curl -d "data-to-post" http://www.example.com` </td>
       </tr>
       <tr>
@@ -223,7 +262,7 @@ cURL has a lot of possible commands, but the following are the most common when 
       </tr>
       <tr>
          <td markdown="span">`@filename`</td>
-         <td markdown="span">Load content from a file</td>
+         <td markdown="span">Load content from a file.</td>
          <td markdown="span">`curl -X POST -d @mypet.json http://www.example.com`</td>
       </tr>
    </tbody>
@@ -258,12 +297,14 @@ The `Accept` header instructs the server to process the post body as JSON.
 
 ## Summary
 
-As a summary, keep the following in mind:
+{% include activity.html %}
 
-* `-i` means to include the response header
-* `-H` means to pass a header into the request
-* `-X POST` means to use the `POST` method in the request
-* `-d` means to include data in the request
+What do the following parameters mean?
+
+* `-i`
+* `-H`
+* `-X POST`
+* `-d`
 
 {: .tip}
 When you use cURL, the terminal and iTerm on the Mac provide a much easier experience than using the command prompt in Windows. If you're going to get serious about API documentation but you're still on a PC, consider switching. There are a lot of utilities that you install through a terminal that *just work* on a Mac.

@@ -11,7 +11,9 @@ section: docendpoints
 path1: /docendpoints.html
 ---
 
-{% include callout.html title="Activity" type="primary" type="Now let's pull together the various parts you've worked on and bring them together to showcase the full example." %} 
+{% include activity.html %}
+
+Pull together the various parts you've worked on and bring them together to showcase the full example.
 
 I chose to format mine in Markdown syntax in a text editor. Here's my example.
 
@@ -32,7 +34,28 @@ I chose to format mine in Markdown syntax in a text editor. Here's my example.
 
 <h2 id="parameters">Parameters</h2>
 {% if site.format == "kindle" %}
+
+<p class="note">Tables don't display well on Kindle devices, so I've converted them into definition lists in this book. However, here I've also included an image of the table. Tables are more common and easier, but definition lists work better on mobile and tablet devices.</p>
+
 <img src="images/kindle-table-finished-result-parameters.png" />
+
+<dl>
+<dt>days</dt>
+<dd>The number of days to include in the response. Default is 3.</dd>
+<dd>Required: Optional</dd>
+<dd>Type: integer</dd>
+
+<dt>units</dt>
+<dd>Whether to return the values in imperial or metric measurements. Imperial will use feet, knots, and fahrenheit. Metric will use centimeters, kilometers per hour, and celsius.</dd>
+<dd>Required: Optional</dd>
+<dd>Type: string</dd>
+
+<dt>time</dt>
+<dd>If you include the time, then only the current hour will be returned in the response.</dd>
+<dd>Required: Optional</dd>
+<dd>Type: integer. Unix format (ms since 1970) in UTC.</dd>
+</dl>
+
 {% else %}
 
 <table><thead>
@@ -104,7 +127,37 @@ curl --get --include 'https://simple-weather.p.mashape.com/surfreport/123?units=
 <p>The following table describes each item in the response.</p>
 
 {% if site.format == "kindle" %}
+
+{: .note}
+Tables don't display well on Kindle devices, so I've converted them into definition lists in this book. However, here I've also included an image of the table. Tables are more common and easier, but definition lists work better on mobile and tablet devices.
+
 <img src="images/kindle-table-finished-result-sample-response.png"/>
+
+`beach`
+:  The beach you selected based on the beach ID in the request. The beach name is the official name as described in the National Park Service Geodatabase.
+
+`{day}`
+:  The day of the week selected. A maximum of 3 days get returned in the response.
+
+`{time}`
+:  The time for the conditions. This item is only included if you include a time parameter in the request.
+
+<span class="muted"><code>{day}/{time}</code></span>/tide
+:  The level of tide at the beach for a specific day and time. Tide is the distance inland that the water rises to, and can be a positive or negative number. When the tide is out, the number is negative. When the tide is in, the number is positive. The 0 point reflects the line when the tide is neither going in nor out but is in transition between the two states.
+
+<span class="muted"><code>{day}/{time}</code></span>/wind
+:  The wind speed at the beach, measured in knots (nautical miles per hour). Wind affects the surf height and general wave conditions. Wind speeds of more than 15 knots make surf conditions undesirable, since the wind creates white caps and choppy waters
+
+<span class="muted"><code>{day}/{time}</code></span>/watertemp
+:  The temperature of the water, returned in Farenheit or Celsius depending upon the units you specify. Water temperatures below 70 F usually require you to wear a wetsuit. With temperatures below 60, you will need at least a 3mm wetsuit and preferably booties to stay warm.
+{% else %}
+
+<span class="muted"><code>{day}/{time}</code></span>/surfheight
+:  The height of the waves, returned in either feet or centimeters depending on the units you specify. A surf height of 3 feet is the minimum size needed for surfing. If the surf height exceeds 10 feet, it is not safe to surf.
+
+<span class="muted"><code>{day}/{time}</code></span>/recommendation
+:  An overall recommendation based on a combination of the various factors (wind, watertemp, surfheight). Three responses are possible: (1) &quot;Go surfing!&quot;, (2) &quot;Surfing conditions are okay, not great&quot;, and (3) &quot;Not a good day for surfing.&quot; Each of the three factors is scored with a maximum of 33.33 points, depending on the ideal for each element. The three elements are combined to form a percentage. 0% to 59% yields response 3, 60% - 80% and below yields response 2, and 81% to 100% yields response 3.
+
 {% else %}
 <table><thead>
 <tr>
@@ -152,7 +205,12 @@ curl --get --include 'https://simple-weather.p.mashape.com/surfreport/123?units=
 <p>The following table lists the status and error codes related to this request.</p>
 
 {% if site.format == "kindle" %}
-<img src="images/kindle-table-finished-result-error-codes.png" />
+
+605 status code
+:  Invalid time parameters. All time parameters must be in Java epoch format.
+
+4112
+:  The beach ID was not found in the lookup.
 {% else %}
 
 <table><thead>
@@ -162,7 +220,7 @@ curl --get --include 'https://simple-weather.p.mashape.com/surfreport/123?units=
 </tr>
 </thead><tbody>
 <tr>
-<td>609</td>
+<td>605</td>
 <td>Invalid time parameters. All time parameters must be in Java epoch format.</td>
 </tr>
 <tr>

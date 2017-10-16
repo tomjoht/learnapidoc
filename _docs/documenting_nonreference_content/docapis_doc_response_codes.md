@@ -96,10 +96,15 @@ You can run some of the cURL calls you made earlier (this time adding <code>-i</
 
 ## How to list status codes
 
-Your list of status codes can be done in a basic table, somewhat like this:
+Your list of status codes can be done in a basic table or definition list, somewhat like this:
 
 {% if site.format == "kindle" %}
-<img src="images/kindle-table-status-codes.png" />
+200 status code
+:  Successful request and response.
+
+400 status code
+:  Malformed parameters or other bad request
+
 {% else %}
 <table>
    <colgroup>

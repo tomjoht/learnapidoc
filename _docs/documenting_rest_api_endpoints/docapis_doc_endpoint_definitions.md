@@ -95,7 +95,9 @@ In a later chapter on design patterns, I explore how [long pages](pubapis_longis
 
 ## Your turn to try: Write the endpoint definition for surfreport
 
-{% include callout.html title="Activity" type="primary" type="List out the endpoint definition and method for the surfreport/{beachId} endpoint." %}
+{% include activity.html %}
+
+List out the endpoint definition and method for the surfreport/{beachId} endpoint.
 
 Here's my approach:
 

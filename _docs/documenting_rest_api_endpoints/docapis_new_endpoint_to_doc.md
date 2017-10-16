@@ -29,7 +29,9 @@ The project manager calls you over and says they have a new API for you to docum
 
 "Here's the wiki page that contains all the data," the manager says. The information is scattered and random on the wiki page. In reality, you probably wouldn't have all the information available that you need, but to facilitate our scenario (you can't ask the "team" questions about this fictitious new endpoint), the page will help.
 
-{% include callout.html title="Activity" type="primary" type="It's now your task to sort through the information on this page and create documentation from it. Read through the wiki page to get a sense of the information. The upcoming topics will guide you through creating documentation for this new endpoint." %}
+{% include activity.html %}
+
+It's now your task to sort through the information on this page and create documentation from it. Read through the wiki page to get a sense of the information. The upcoming topics will guide you through creating documentation for this new endpoint.
 
 {: .tip}
 Most technical writers don't start from scratch with documentation projects. Engineers usually dump essential information onto an internal wiki page. However, the information on the wiki page will likely be incomplete, unnecessarily technical in places (like describing the database schema when users won't ever need this info), and have other issues. The info might include internal-only information (e.g., test logins, access protocols). Ultimately, the information will be written for other engineers on the same knowledge level. Your job as a technical writer will be to take this information and turn it into complete, accurate, usable information that meets your audience's goal.
