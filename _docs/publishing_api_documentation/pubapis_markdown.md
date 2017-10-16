@@ -271,13 +271,23 @@ In this example, the `ajax` method from jQuery is used because it allows cross-o
 For simple demo purposes, the response is assigned to the `data` argument of the success method, and then written out to the `output` tag on the page. We're just getting the surfing recommendation, but there's a lot of other data you could choose to display.
 </pre>
 
-## Write some Markdown on a page
+{% include callout.html title="Activity: Write some Markdown on a page" content="On your Github wiki page, edit the page and create the following:<br/><br/>&bull; a numbered list<br/><br/>&bull; a bulleted list<br/><br/>&bull; a bold word<br/><br/>&bull; a code sample with html highlighting<br/><br/>&bull;  a level 2 heading" type="primary" %}
 
-On your Github wiki page, edit the page and create the following:
+## Limitations in Markdown
 
-* a level 2 heading
-* a numbered list
-* a bulleted list
-* a bold word
-* a code sample with html highlighting
-* a table
+Markdown handles most of the syntax I normally use, but for tables, I recommend simply using HTML syntax. HTML syntax gives you more control over column widths, which can be important when customizing tables, especially if the tables have code tags.
+
+If you're using a static site generator, see the markdown processor used to convert the Markdown into HTML. With Jekyll, the default Markdown processor is [kramdown](https://kramdown.gettalong.org/). kramdown gives you more capabilities than the basic Markdown. For example, in kramdown, you can add a class to any element like this:
+
+```liquid
+{: .note}
+This is a note.
+```
+
+The HTML will be rendered like this:
+
+```html
+<p class="note">This is a note.</p>
+```
+
+Kramdown also lets you use Markdown inside of HTML elements (which is usually not allowed). If you add `markdown="span" or markdown="block"` attribute to an element, the content will be processed as either an inline span or a block div element. See [Syntax](https://kramdown.gettalong.org/syntax.html) in the kramdown documentation for more details.

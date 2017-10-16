@@ -11,9 +11,9 @@ section: docendpoints
 path1: /docendpoints.html
 ---
 
-In this example, let's pull together the various parts you've worked on to showcase the full example. I chose to format mine in Markdown syntax in a text editor.
+{% include callout.html title="Activity" type="primary" type="Now let's pull together the various parts you've worked on and bring them together to showcase the full example." %} 
 
-Here's my example.
+I chose to format mine in Markdown syntax in a text editor. Here's my example.
 
 <div class="docSample">
 <h1 id="surfreport/{beachid}">surfreport/{beachId}</h1>
@@ -31,6 +31,9 @@ Here's my example.
 <p><span class="label label-primary">GET</span> </p>
 
 <h2 id="parameters">Parameters</h2>
+{% if site.format == "kindle" %}
+<img src="images/kindle-table-finished-result-parameters.png" />
+{% else %}
 
 <table><thead>
 <tr>
@@ -55,6 +58,7 @@ Here's my example.
 <td>integer. Unix format (ms since 1970) in UTC.</td>
 </tr>
 </tbody></table>
+{% endif %}
 
 <h2 id="sample-request">Sample request</h2>
 
@@ -99,6 +103,9 @@ curl --get --include 'https://simple-weather.p.mashape.com/surfreport/123?units=
 
 <p>The following table describes each item in the response.</p>
 
+{% if site.format == "kindle" %}
+<img src="images/kindle-table-finished-result-sample-response.png"/>
+{% else %}
 <table><thead>
 <tr>
 <th>Response item</th>
@@ -138,10 +145,15 @@ curl --get --include 'https://simple-weather.p.mashape.com/surfreport/123?units=
 <td>An overall recommendation based on a combination of the various factors (wind, watertemp, surfheight). Three responses are possible: (1) &quot;Go surfing!&quot;, (2) &quot;Surfing conditions are okay, not great&quot;, and (3) &quot;Not a good day for surfing.&quot; Each of the three factors is scored with a maximum of 33.33 points, depending on the ideal for each element. The three elements are combined to form a percentage. 0% to 59% yields response 3, 60% - 80% and below yields response 2, and 81% to 100% yields response 3.</td>
 </tr>
 </tbody></table>
+{% endif %}
 
 <h2 id="error-and-status-codes">Error and status codes</h2>
 
 <p>The following table lists the status and error codes related to this request.</p>
+
+{% if site.format == "kindle" %}
+<img src="images/kindle-table-finished-result-error-codes.png" />
+{% else %}
 
 <table><thead>
 <tr>
@@ -158,6 +170,7 @@ curl --get --include 'https://simple-weather.p.mashape.com/surfreport/123?units=
 <td>The beach ID was not found in the lookup.</td>
 </tr>
 </tbody></table>
+{% endif %}
 
 <h2 id="code-example">Code example</h2>
 <p><b>Code example</b></p>

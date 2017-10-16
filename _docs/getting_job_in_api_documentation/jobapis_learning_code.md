@@ -1,5 +1,5 @@
 ---
-title: How much code do you need to know to create developer documentation?
+title: How much code do you need to know?
 permalink: /jobapis_learning_code.html
 categories:
 - api-doc

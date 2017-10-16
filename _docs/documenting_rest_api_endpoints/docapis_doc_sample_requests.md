@@ -1,5 +1,5 @@
 ---
-title: How to document sample requests
+title: Documenting sample requests
 permalink: /docapis_doc_sample_requests.html
 categories:
 - api-doc
@@ -78,7 +78,7 @@ However, you don't have to build your own tooling. Existing tools such as [Swagg
 
 ## Document the sample request with the surfreport/{beachId} endpoint
 
-Come back to the `surfreport/{beachId}` endpoint example. Create a sample request for it.
+{% include callout.html title="Activity" type="primary" type="Come back to the <code>surfreport/{beachId}</code> endpoint example. Create a sample request for it." %}
 
 Here's mine:
 

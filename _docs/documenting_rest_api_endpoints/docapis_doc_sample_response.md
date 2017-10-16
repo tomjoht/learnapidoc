@@ -1,5 +1,5 @@
 ---
-title: How to document sample responses
+title: Documenting sample responses
 permalink: /docapis_doc_sample_responses.html
 categories:
 - api-doc
@@ -214,9 +214,18 @@ The following is a sample response from the <code>surfreport/{beachId}</code> en
 }
 </pre>
 
-<p>The following table describes each item in the response.*</p>
+<p>The following table describes each item in the response.<sup>&ast;</sup></p>
 
-<table><thead>
+{% if site.format == "kindle" %}
+<img src="images/kindle-table-surfreport.png" />
+{% else %}
+
+<table>
+<colgroup>
+   <col width="40%" />
+   <col width="60%" />
+</colgroup>
+<thead>
 <tr>
 <th>Response item</th>
 <th>Description</th>
@@ -258,3 +267,4 @@ The following is a sample response from the <code>surfreport/{beachId}</code> en
 
 <small>*Because this is a fictitious endpoint, I'm making the descriptions up.</small>
 </div>
+{% endif %}

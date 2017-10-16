@@ -4,7 +4,7 @@ permalink: /nativelibraryapis_create_javadoc.html
 course: "Documenting REST APIs"
 weight: 10.3
 sidebar: docapis
-section: nativelibraryapis 
+section: nativelibraryapis
 path1: /nativelibraryapis.html
 ---
 
@@ -57,10 +57,8 @@ Here are some other characteristics of Javadoc:
 
 ## Javadoc and error checking
 
-
-
 Javadoc also checks your tags against the actual code. If you have parameters, exceptions, or returns that don't match up with the parameters, exceptions, or returns in your actual code, then Javadoc will show some warnings.
 
-Try removing a parameter from a method and generate the Javadoc again. Make sure the console window is open.
+{% include callout.html title="Activity" type="primary" content="Try removing a parameter from a method and generate the Javadoc again. Make sure the console window is open." %}
 
 <img src="images/javadocerrorchecking.png" alt="Javadoc error checking" />

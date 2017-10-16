@@ -12,7 +12,7 @@ path1: /resources.html
 ---
 
 API
-: Application Programming Interface. Enables different systems to interact with each other programmatically. Two types of APIs are web services and library-based APIs. See [What is a REST API?](http://idratherbewriting.com/learnapidoc/docapis_what-is-a-rest-api.html).
+: Application Programming Interface. Enables different systems to interact with each other programmatically. Two types of APIs are web services and library-based APIs. See [What is a REST API?](http://idratherbewriting.com/learnapidoc/docapis_what_is_a_rest_api.html).
 
 API Console
 : Renders an interactive display for the RAML spec. Similar to Swagger UI, but for [RAML](http://idratherbewriting.com/learnapidoc/pubapis_raml.html#sample-spec-for-mashape-weather-api). See [github.com/mulesoft/api-console](https://github.com/mulesoft/api-console).
@@ -115,7 +115,7 @@ repo
 : In Git, a repo (short for repository) stores your project's code. Usually you only store non-binary (human-readable) text files in a repo, because Git can run diffs on text files and show you what has changed (but not with binary files).
 
 REST API
-: Stands for Representational State Transfer. Uses web protocols (HTTP) to make requests and provide responses in a language agnostic way, meaning that users can choose whatever programming language they want to make the calls. See [What is a REST API?](http://idratherbewriting.com/learnapidoc/docapis_what-is-a-rest-api.html).
+: Stands for Representational State Transfer. Uses web protocols (HTTP) to make requests and provide responses in a language agnostic way, meaning that users can choose whatever programming language they want to make the calls. See [What is a REST API?](http://idratherbewriting.com/learnapidoc/docapis_what_is_a_rest_api.html).
 
 Smartbear
 : The company that maintains and develops the open source Swagger tooling (Swagger Editor, Swagger UI, Swagger Codegen, and others), and which that formed the OpenAPI Initiative which leads the evolution of the Swagger (OpenAPI) specification. Also developed SwaggerHub. See [Smarbear](https://smartbear.com/).

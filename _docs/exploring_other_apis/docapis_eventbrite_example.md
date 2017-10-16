@@ -1,11 +1,11 @@
 ---
-title: 'EventBrite example: Get Event information and display it on a page'
+title: 'EventBrite example: Get event information'
 permalink: /docapis_eventbrite_example.html
 sidebar: docapis
 course: "Documenting REST APIs"
 weight: 6.1
 keywords: Eventbrite API example, REST APIs
-section: otherapis 
+section: otherapis
 path1: /otherapis.html
 ---
 

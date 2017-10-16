@@ -1,5 +1,5 @@
 ---
-title: How to document code samples
+title: Documenting code samples
 permalink: /docapis_doc_code_samples.html
 categories:
 - api-doc
@@ -217,7 +217,7 @@ Here's my approach:
 
 The following code samples shows how to use the surfreport endpoint to get the surf height for a specific beach.
 
-```
+```html
 <!DOCTYPE html>
 <head>
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>

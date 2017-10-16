@@ -4,7 +4,7 @@ permalink: /nativelibraryapis_java_crash_course.html
 course: "Documenting REST APIs"
 weight: 10.2
 sidebar: docapis
-section: nativelibraryapis 
+section: nativelibraryapis
 path1: /nativelibraryapis.html
 ---
 
@@ -187,7 +187,7 @@ When you create your class, if it's in a package called `vehicles`, you list thi
 ```java
 package vehicles
 
-public class Bicycle{
+public class Bicycle {
 
 }
 ```
@@ -207,7 +207,7 @@ import vehicles
 When packages are contained inside other packages, you access the inner packages with a dot, like this:
 
 ```java
-import transportation.motorless.vehicles.
+import transportation.motorless.vehicles
 ```
 
 Here I would have a transportation package containing a package called motorless containing a package called vehicles. Package naming conventions are like URLs in reverse (com > yoursite > subdomain).

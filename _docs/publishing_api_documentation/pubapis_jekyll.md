@@ -1,5 +1,5 @@
 ---
-title: "Jekyll -- my favorite tool"
+title: "Jekyll &mdash; my favorite static site generator"
 permalink: /pubapis_jekyll.html
 course: "Documenting REST APIs"
 sidebar: docapis

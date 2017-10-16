@@ -1,9 +1,6 @@
 ---
 title: The market for REST API documentation
 permalink: /docapis_intro_to_rest_api_doc.html
-categories:
-- api-doc
-keywords:
 course: "Documenting REST APIs"
 weight: 1.2
 sidebar: docapis

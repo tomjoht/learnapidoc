@@ -1,6 +1,6 @@
 ---
 title: What is a REST API?
-permalink: /docapis_what-is-a-rest-api.html
+permalink: /docapis_what_is_a_rest_api.html
 keywords:
 course: "Documenting REST APIs"
 weight: 1.3

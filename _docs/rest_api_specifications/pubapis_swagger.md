@@ -1,5 +1,5 @@
 ---
-title: "Swagger tutorial"
+title: "OpenAPI (Swagger) tutorial"
 permalink: /pubapis_swagger.html
 course: "Documenting REST APIs"
 sidebar: docapis

@@ -72,6 +72,7 @@ In contrast, with the Flickr API, each "method" (endpoint) lists error codes:
 Either location has merits, but my preference is a single centralized page for the entire API because listing them out on each endpoint page would add a lot of extra repeated words on each page.
 
 ## Where to get error codes
+
 Error codes may not be readily apparent when you're documenting your API. You will need to ask developers for a list of all the status codes. In particular, if developers have created special status codes for the API, highlight these in the documentation.
 
 For example, if you exceed the rate limit for a specific call, the API might return a special status code. You would especially need to document this custom code. Listing out all the error codes is a reference section in the "Troubleshooting" topic of your API documentation.
@@ -97,10 +98,32 @@ You can run some of the cURL calls you made earlier (this time adding <code>-i</
 
 Your list of status codes can be done in a basic table, somewhat like this:
 
-| Status code | Meaning |
-|---------|-----------|
-| 200 | Successful request and response. |
-| 400 | Malformed parameters or other bad request. |
+{% if site.format == "kindle" %}
+<img src="images/kindle-table-status-codes.png" />
+{% else %}
+<table>
+   <colgroup>
+      <col width="30%" />
+      <col width="70%" />
+   </colgroup>
+   <thead>
+      <tr>
+         <th markdown="span">Status code</th>
+         <th markdown="span">Meaning</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td markdown="span">200</td>
+         <td markdown="span">Successful request and response.</td>
+      </tr>
+      <tr>
+         <td markdown="span">400</td>
+         <td markdown="span">Malformed parameters or other bad request.</td>
+      </tr>
+   </tbody>
+</table>
+{% endif %}
 
 ## Status codes aren't readily visible
 

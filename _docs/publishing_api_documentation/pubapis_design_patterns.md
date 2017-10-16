@@ -95,8 +95,6 @@ The writers at Parse [emphasize the importance of code samples](http://blog.pars
 
 For code samples, you want to incorporate syntax highlighting. There are numerous syntax highlighters that you can usually incorporate into your platform. For example, Jekyll uses either Pygments or Rouge. These highlighters have stylesheets prepared to highlight languages based on specific syntax.
 
-{% include random_ad.html %}
-
 When you include a code sample, you usually instruct the syntax highlighter what language to use. If you don't have access to a syntax highlighter for your platform, you can always [manually add the highlighting using syntax highlighter library](http://code.tutsplus.com/tutorials/quick-tip-how-to-add-syntax-highlighting-to-any-project--net-21099).
 
 Another important element in code samples is to use consistent white space. Although computers can read minified code, users usually can't or won't want to look at minified code. Use a tool to format the code with the appropriate spacing and line breaks.
@@ -229,8 +227,6 @@ In short, they lacked the information, resources, and contacts to actually get t
 ![Access to insider knowledge](images/knowledge-needed600.png)
 
 Besides contributing to the blog, some people also made edits to docs on the wiki. But the same problems existed. All contributions happened post-release, so their edits were applied to existing docs. The people who made edits to existing docs usually did so in awkward ways that required fixing or other edits.
-
-{% include random_ad.html %}
 
 To make an addition to docs, you can't just add a paragraph wherever you want. You have to understand the whole so you know what exists and where. You also have to understand doc style and conventions and voice so that your content can fit seamlessly in. It's not so easy, especially for someone who might not want to dedicate much time to this effort.
 

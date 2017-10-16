@@ -7,7 +7,7 @@ keywords:
 course: "Documenting REST APIs"
 weight: 2.5
 sidebar: docapis
-section: likeadeveloper 
+section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
@@ -81,12 +81,42 @@ When you type an address into a website, you see only the body of the response. 
 
     When you go to a website, you submit the request using the GET HTTP method. There are other HTTP methods you can use when interacting with REST APIs. Here are the common methods used when working with REST endpoints:
 
-    | HTTP Method | Description |
-    |-----|------|
-    | POST | Create a resource |
-    | GET | Read a resource |
-    | PUT | Update a resource |
-    | DELETE | Delete a resource |
+    {% if site.format == "kindle" %}
+    <img src="images/kindle-table-curl.png" />
+    {% else %}
+
+    <table>
+       <colgroup>
+          <col width="30%" />
+          <col width="70%" />
+       </colgroup>
+       <thead>
+          <tr>
+             <th markdown="span">HTTP Method</th>
+             <th markdown="span">Description</th>
+          </tr>
+       </thead>
+       <tbody>
+          <tr>
+             <td markdown="span">POST</td>
+             <td markdown="span">Create a resource </td>
+          </tr>
+          <tr>
+             <td markdown="span">GET</td>
+             <td markdown="span">Read a resource</td>
+          </tr>
+          <tr>
+             <td markdown="span">PUT</td>
+             <td markdown="span">Update a resource</td>
+          </tr>
+          <tr>
+             <td markdown="span">DELETE</td>
+             <td markdown="span">Delete a resource</td>
+          </tr>
+       </tbody>
+    </table>
+
+    {% endif %}
 
     {: .note}
     GET is used by default with cURL requests. If you use cURL to make HTTP requests other than GET, you need to specify the HTTP method.
@@ -105,11 +135,37 @@ cURL has shorthand names for the various options that you include with your requ
 
 Here's what the commands mean:
 
-| cURL command | Description |
-|---------|---------|
-| `--get` |  The HTTP method to use. (This is actually unnecessary. You can remove this and the request returns the same response, since GET is the method used by default.) |
-| `--include` | Whether to show the headers in the response. Also represented by `-i`. |
-| `-H`| Submits a custom header. Include an additional `-H` for each header key-value pair you're submitting. |
+{% if site.format == "kindle" %}
+<img src="images/kindle-table-curl-parameters.png" />
+{% else %}
+
+<table>
+   <colgroup>
+      <col width="30%" />
+      <col width="70%" />
+   </colgroup>
+   <thead>
+      <tr>
+         <th markdown="span">cURL command</th>
+         <th markdown="span">Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td markdown="span">`--get`</td>
+         <td markdown="span">The HTTP method to use. (This is actually unnecessary. You can remove this and the request returns the same response, since GET is the method used by default.)</td>
+      </tr>
+      <tr>
+         <td markdown="span">`--include`</td>
+         <td markdown="span">Whether to show the headers in the response. Also represented by `-i`.</td>
+      </tr>
+      <tr>
+         <td markdown="span">`-H`</td>
+         <td markdown="span">Submits a custom header. Include an additional `-H` for each header key-value pair you're submitting.</td>
+      </tr>
+   </tbody>
+</table>
+{% endif %}
 
 {: .note}
 Most cURL commands have a couple of different representations. `--get` can also be written as `-X GET`.
@@ -128,13 +184,51 @@ After the query string, each parameter is concatenated with other parameters thr
 
 cURL has a lot of possible commands, but the following are the most common when working with REST APIs.
 
-| cURL command | Description | Example |
-|---------|---------|--------|
-| `-i` or `--include` | Include the response headers in the response. | `curl -i http://www.example.com` |
-| `-d` or `--data`  | Include data to post to the URL. The data needs to be [url encoded](http://www.w3schools.com/tags/ref_urlencode.asp). Data can also be passed in the request body. | `curl -d "data-to-post" http://www.example.com`   |
-| `-H` or `--header` | Submit the request header to the resource. This is very common with REST API requests because the authorization is usually included here. | `curl -H "key:12345" http://www.example.com`   |
-| `-X POST` | The HTTP method to use with the request (in this example, `POST`). If you use `-d` in the request, cURL automatically specifies a POST method. With GET requests, including the HTTP method is optional, because GET is the default method used. | `curl -X POST -d "resource-to-update" http://www.example.com`    |
-| `@filename` | Load content from a file | `curl -X POST -d @mypet.json http://www.example.com` |
+{% if site.format == "kindle" %}
+<img src="images/kindle-table-curl-rest-commands.png" />
+{% else %}
+<table>
+   <colgroup>
+      <col width="20%" />
+      <col width="50%" />
+      <col width="30%" />
+   </colgroup>
+   <thead>
+      <tr>
+         <th markdown="span">cURL command</th>
+         <th markdown="span">Description</th>
+         <th markdown="span">Example</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td markdown="span">`-i` or `--include` </td>
+         <td markdown="span">Include the response headers in the response. </td>
+         <td markdown="span">`curl -i http://www.example.com`</td>
+      </tr>
+      <tr>
+         <td markdown="span">`-d` or `--data`</td>
+         <td markdown="span">Include data to post to the URL. The data needs to be [url encoded](http://www.w3schools.com/tags/ref_urlencode.asp). Data can also be passed in the request body. </td>
+         <td markdown="span">`curl -d "data-to-post" http://www.example.com` </td>
+      </tr>
+      <tr>
+         <td markdown="span">`-H` or `--header`</td>
+         <td markdown="span">Submit the request header to the resource. This is very common with REST API requests because the authorization is usually included here.</td>
+         <td markdown="span">`curl -H "key:12345" http://www.example.com` </td>
+      </tr>
+      <tr>
+         <td markdown="span">`-X POST`</td>
+         <td markdown="span">The HTTP method to use with the request (in this example, `POST`). If you use `-d` in the request, cURL automatically specifies a POST method. With GET requests, including the HTTP method is optional, because GET is the default method used.</td>
+         <td markdown="span">`curl -X POST -d "resource-to-update" http://www.example.com`</td>
+      </tr>
+      <tr>
+         <td markdown="span">`@filename`</td>
+         <td markdown="span">Load content from a file</td>
+         <td markdown="span">`curl -X POST -d @mypet.json http://www.example.com`</td>
+      </tr>
+   </tbody>
+</table>
+{% endif %}
 
 See the [cURL documentation](http://curl.haxx.se/docs/manpage.html) for a comprehensive list of cURL commands you can use.
 

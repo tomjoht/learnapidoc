@@ -1,5 +1,5 @@
 ---
-title: 'Aeris Weather Example: Get wind speed and use as conditional value'
+title: 'Aeris Weather Example: Get wind speed'
 permalink: /docapis_aerisweather_example.html
 keywords:
 course: "Documenting REST APIs"

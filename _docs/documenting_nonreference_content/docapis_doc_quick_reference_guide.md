@@ -1,5 +1,5 @@
 ---
-title: Create the quick reference guide
+title: How to create the quick reference guide
 permalink: /docapis_doc_quick_reference.html
 keywords:
 course: "Documenting REST APIs"
@@ -25,4 +25,5 @@ An online quick reference guide can serve as a great entry point into the docume
 <a href="http://cheat.markdunkley.com/"><img src="images/shopifyqrg.png" alt="Shopify quick reference guide" /></a>
 
 ## Visual quick reference guides
+
 You can also make a visual illustration showing the API endpoints and how they relate to one another. I once created a one page endpoint diagram at Badgeville, and I found it so useful I ended up taping it on my wall. Although I can't include it here for privacy reasons, the diagram depicted the various endpoints and methods available to each of the resources (remember that one resource can have many endpoints).

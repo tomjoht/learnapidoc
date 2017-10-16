@@ -9,7 +9,7 @@ table {
   width: 100%;
   margin-bottom: 20px;
   border: 1px solid #dedede;
-  background-color: transparent;
+  background-color: white;
 }
 table > thead > tr > th,
 table > tbody > tr > th,
@@ -62,10 +62,6 @@ table th[class*="col-"] {
   position: static;
   display: table-cell;
   float: none;
-}
-table td:first-child {
-  width: 150px;
-  /*font-weight:bold;*/
 }
 table.boldFirstColumn td:first-child {
   font-weight: bold;
@@ -133,5 +129,5 @@ table code {
   word-wrap: break-word
 }
 table {
-  table-layout: auto;
+  table-layout: fixed;
 }

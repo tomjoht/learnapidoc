@@ -8,7 +8,7 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-When I [introduced REST APIs](docapis_what-is-a-rest-api.html), I mentioned that REST APIs follow an architectural style, not a specific standard. However, there are several REST specifications that have been developed to try to provide some standards about how REST APIs are described. The three most popular REST API specifications are as follows: [Swagger (formally called Open API)](pubapis_swagger_intro.html), [RAML](pubapis_raml.html), and [API Blueprint](pubapis_api_blueprint.html).
+When I [introduced REST APIs](docapis_what_is_a_rest_api.html), I mentioned that REST APIs follow an architectural style, not a specific standard. However, there are several REST specifications that have been developed to try to provide some standards about how REST APIs are described. The three most popular REST API specifications are as follows: [Swagger (formally called Open API)](pubapis_swagger_intro.html), [RAML](pubapis_raml.html), and [API Blueprint](pubapis_api_blueprint.html).
 
 By far, the Swagger / Open API specification is the most popular, with the largest community, momentum, and history. Because of this, I spend the most time on Swagger here. Overall, these specifications for REST APIs lead to better documentation, tooling, and structure with REST APIs.
 

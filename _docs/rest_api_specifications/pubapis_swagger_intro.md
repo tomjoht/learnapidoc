@@ -1,5 +1,5 @@
 ---
-title: Swagger (OpenAPI specification) Overview
+title: Introduction to the OpenAPI (Swagger) spec
 permalink: /pubapis_swagger_intro.html
 categories:
 - api-doc
@@ -7,7 +7,7 @@ keywords:
 course: "Documenting REST APIs"
 weight: 8.1
 sidebar: docapis
-section: restapispecifications 
+section: restapispecifications
 path1: /restapispecifications.html
 ---
 

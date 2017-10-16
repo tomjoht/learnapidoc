@@ -20,8 +20,4 @@ When you make edits to Javadoc content, look for the following:
 
 {% include random_ad.html %}
 
-In this exercise, you'll make some edits to the Javadoc tags and see how they get rendered in the output.
-
-## Make some edits
-
-Make some edits to a class and method. Then regenerate the Javadoc and find your changes.
+{% include callout.html title="Activity" type="primary" content="Make some edits to a class and method. Then regenerate the Javadoc and find your changes. See how they get rendered in the output." %}

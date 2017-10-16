@@ -1,5 +1,5 @@
 ---
-title: "Combine Swagger's reference output with user guide docs"
+title: "Combining OpenAPI's (Swagger's) reference output with user guide docs"
 permalink: /pubapis_combine_swagger_and_guide.html
 course: "Documenting REST APIs"
 sidebar: docapis
@@ -112,7 +112,7 @@ In fact, importing or reading a Swagger spec file is almost becoming a standard 
 
 If you're using a tool such as Jekyll, which incorporates a scripting language called Liquid, you can read the Swagger specification file. It is, after all, just YAML syntax. For example, you could use a `for` loop to iterate through the Swagger spec values. Here's a code sample. In this example, the Swagger.yml file is stored inside Jekyll's \_data directory.
 
-```liquid
+```html
 {% raw %}<table>
     <thead>
     <tr><th>Name</th><th>Type</th><th>Description</th><th>Required?</th></tr>

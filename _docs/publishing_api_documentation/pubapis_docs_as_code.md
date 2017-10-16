@@ -1,5 +1,5 @@
 ---
-title: "Docs-as-Code Tools"
+title: "Docs-as-code tools"
 permalink: /pubapis_docs_as_code.html
 course: "Documenting REST APIs"
 sidebar: docapis

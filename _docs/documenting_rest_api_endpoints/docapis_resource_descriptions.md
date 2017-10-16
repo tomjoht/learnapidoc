@@ -1,5 +1,5 @@
 ---
-title: How to document resource descriptions
+title: Documenting resource descriptions
 permalink: /docapis_resource_descriptions.html
 categories:
 - api-doc

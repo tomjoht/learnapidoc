@@ -1,5 +1,5 @@
 ---
-title: "Manage Swagger Projects with SwaggerHub"
+title: "Manage OpenAPI (Swagger) projects with SwaggerHub"
 permalink: /pubapis_swaggerhub_smartbear.html
 course: "Documenting REST APIs"
 sidebar: docapis

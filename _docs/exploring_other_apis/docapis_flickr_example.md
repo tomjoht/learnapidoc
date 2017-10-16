@@ -1,12 +1,12 @@
 ---
-title: 'Flickr example: Retrieve a Flickr gallery and display it on a web page'
+title: 'Flickr example: Retrieve a Flickr gallery'
 permalink: /docapis_flickr_example.html
 categories:
 - api-doc
 course: "Documenting REST APIs"
 weight: 6.2
 sidebar: docapis
-section: otherapis 
+section: otherapis
 path1: /otherapis.html
 ---
 

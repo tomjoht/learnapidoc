@@ -1,5 +1,5 @@
 ---
-title: Exploring other REST APIs overview
+title: Overview for exploring other REST APIs
 permalink: /docapis_more_rest_exercises.html
 keywords:
 course: "Documenting REST APIs"

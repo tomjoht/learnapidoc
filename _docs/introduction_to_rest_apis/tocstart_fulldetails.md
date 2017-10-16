@@ -48,3 +48,6 @@ search: false
     {% endfor %}
 
 </ul>
+
+{: .note}
+Please consider leaving a review of the book on Amazon.com. You can also send questions and feedback to tom@idratherbewriting.com.

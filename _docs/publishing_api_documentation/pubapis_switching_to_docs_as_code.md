@@ -9,7 +9,7 @@ path1: /publishingapis.html
 ---
 
 {: .tip}
-For an overview of the docs as code approach, see [Docs-as-Code Tools](pubapis_docs_as_code.html)
+For an overview of the docs as code approach, see [Docs-as-code tools](pubapis_docs_as_code.html).
 
 Changing any documentation tooling at a company can be a huge undertaking. Depending on the amount of legacy content to convert, the number of writers to train, and the restrictions and processes you have to work against in your corporate environment, and more, it can require an immense amount of time and effort to switch tools from the status quo to a new approach, such as docs as code.
 
@@ -156,10 +156,13 @@ I outline the challenges here to reinforce that implementing docs-as-code is no 
 
 If you're implementing docs-as-code at a small company, you can simplify processes and use a system that meets your needs. For example, you could use the [S3_website plugin](https://github.com/laurilehmijoki/s3_website) to publish on AWS S3, or better yet, host your docs on GitHub and publish through GitHub Pages. I might have opted for either of these approaches if allowed and if we didn't have an engineering support team to implement the workflow I described.
 
-## Additional docs-as-code posts
+## Blog posts about docs-as-code tools
 
 To read some other docs-as-code posts on my blog, see the following:
 
 * [Discoveries and realizations while walking down the Docs-as-Code path](http://idratherbewriting.com/2017/08/23/content-architecture-and-repo-sizes/)
 * [Limits to the idea of treating docs as code](http://idratherbewriting.com/2017/06/02/when-docs-are-not-like-code/)
 * [Will the docs-as-code approach scale? Responding to comments on my Review of Modern Technical Writing](http://idratherbewriting.com/2016/08/01/responding-to-feedback-on-modern-tech-writing-review/)
+
+{: .tip}
+For more reading about docs as code, see Anne Gentle's book [Docs Like Code](https://www.amazon.com/Docs-Like-Code-Anne-Gentle/dp/1365816079/ref=sr_1_1?ie=UTF8&qid=1508090523&sr=8-1&keywords=docs+like+code).

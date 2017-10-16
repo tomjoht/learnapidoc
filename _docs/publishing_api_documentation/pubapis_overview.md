@@ -1,5 +1,5 @@
 ---
-title: 'Publishing API docs'
+title: 'Overview for publishing API docs'
 permalink: /pubapis_overview.html
 course: "Documenting REST APIs"
 sidebar: docapis

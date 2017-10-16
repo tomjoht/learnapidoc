@@ -1,5 +1,5 @@
 ---
-title: How to document the endpoints and methods
+title: Documenting endpoints and methods
 permalink: /docapis_doc_endpoint_definitions.html
 categories:
 - api-doc
@@ -95,7 +95,7 @@ In a later chapter on design patterns, I explore how [long pages](pubapis_longis
 
 ## Your turn to try: Write the endpoint definition for surfreport
 
-List out the endpoint definition and method for the surfreport/{beachId} endpoint.
+{% include callout.html title="Activity" type="primary" type="List out the endpoint definition and method for the surfreport/{beachId} endpoint." %}
 
 Here's my approach:
 

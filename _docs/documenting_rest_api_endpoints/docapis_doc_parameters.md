@@ -1,5 +1,5 @@
 ---
-title: How to document parameters
+title: Documenting parameters
 permalink: /docapis_doc_parameters.html
 categories:
 - api-doc
@@ -22,9 +22,31 @@ Parameters offer ways to configure the endpoint. The parameters you pass with an
 
 Many times parameters are listed in a simple table like this:
 
-| Parameter | Required? | Data Type |
-|-----------|-----------|-----------|
-| `format` | optional | string |
+{% if site.format == "kindle" %}
+<img src="images/kindle-parameters-table.png">
+{% else %}
+<table>
+   <colgroup>
+      <col width="40%" />
+      <col width="30%" />
+      <col width="30%" />
+   </colgroup>
+   <thead>
+      <tr>
+         <th markdown="span">Parameter</th>
+         <th markdown="span">Required?</th>
+         <th markdown="span">Data Type</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td markdown="span"><code>format</code></td>
+         <td markdown="span">Optional</td>
+         <td markdown="span">String</td>
+      </tr>
+   </tbody>
+</table>
+{% endif %}
 
 Here's an example from Yelp's documentation:
 
@@ -105,10 +127,33 @@ For example, suppose your endpoint definition is as follows:
 
 Follow through with this same color in your table describing the parameters:
 
-| URL Parameter | Description |
-|-------|------|
-| <span class="red">user</span> | Here's my description of the user parameter. |
-| <span class="red">bicycles</span> | Here's my description of the bicycles parameter. |
+{% if site.format == "kindle" %}
+<img src="images/kindle_parameters_table.png" />
+{% else %}
+
+<table>
+   <colgroup>
+      <col width="30%" />
+      <col width="70%" />
+   </colgroup>
+   <thead>
+      <tr>
+         <th>URL Parameter</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td><span class="red">user</span></td>
+         <td>Here's my description of the user parameter.</td>
+      </tr>
+      <tr>
+         <td><span class="red">bicycles</span></td>
+         <td>Here's my description of the bicycles parameter.</td>
+      </tr>
+   </tbody>
+</table>
+{% endif %}
 
 By color coding the parameters, it's easy to see the parameter in contrast with the other parts of the URL.
 
@@ -194,12 +239,15 @@ If you have relatively simple parameters, your choice won't matter that much. Bu
 
 ## Construct a table to list the surfreport parameters
 
-For our new surfreport endpoint, look through the parameters available and create a table similar to the one above.
+{% include callout.html title="Activity" type="primary" type="For our new surfreport endpoint, look through the parameters available and create a table similar to the one above." %}
 
 Here's what my table looks like:
 
-<div class="docSample">
+{% if site.format == "kindle" %}
+<img src="images/kindle-parameters-table-demo.png"/>
+{% else %}
 
+<div class="docSample">
 <table>
 <colgroup>
    <col width="20%" />
@@ -235,6 +283,7 @@ Here's what my table looks like:
 </tr>
 </tbody></table>
 </div>
+{% endif %}
 
 {: .tip}
 Even if you use Markdown for docs, you might consider using HTML syntax with tables. You usually want the control over column widths to make some columns wider or narrower. Markdown doesn't allow that. With HTML, you can use a `colgroup` property to specify the `col width` for each column.

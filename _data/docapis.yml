@@ -3,21 +3,24 @@ sidebartitle: Document REST APIs
 folders:
 
 - title: Introduction to REST APIs
-  jurl: /introtoapis.html
+  jurl: /docapis_introtoapis.html
   class: first
   folderitems:
 
-  - title: Course overview
+  - title: Book overview
     jurl: /index.html
 
   - title: Foreword
-    jurl: /foreword.html
+    jurl: /docapis_foreword.html
+
+  - title: About the author
+    jurl: /docapis_about_the_author.html
 
   - title: The market for REST API documentation
     jurl: /docapis_intro_to_rest_api_doc.html
 
   - title: What is a REST API?
-    jurl: /docapis_what-is-a-rest-api.html
+    jurl: /docapis_what_is_a_rest_api.html
 
 - title: Using a REST API as a developer
   jurl: /likeadeveloper.html
@@ -60,25 +63,25 @@ folders:
   jurl: /docendpoints.html
   folderitems:
 
-  - title: A new API endpoint to document
+  - title: A new endpoint to document
     jurl: /docapis_new_endpoint_to_doc.html
 
-  - title: How to document resource descriptions
+  - title: Documenting resource descriptions
     jurl: /docapis_resource_descriptions.html
 
-  - title: How to document endpoint definitions and methods
+  - title: Documenting endpoint definitions and methods
     jurl: /docapis_doc_endpoint_definitions.html
 
-  - title: How to document parameters
+  - title: Documenting parameters
     jurl: /docapis_doc_parameters.html
 
-  - title: How to document sample requests
+  - title: Documenting sample requests
     jurl: /docapis_doc_sample_requests.html
 
-  - title: How to document sample responses
+  - title: Documenting sample responses
     jurl: /docapis_doc_sample_responses.html
 
-  - title: How to document code samples
+  - title: Documenting code samples
     jurl: /docapis_doc_code_samples.html
 
   - title: Put it all together
@@ -101,47 +104,44 @@ folders:
   jurl: /docnonref.html
   folderitems:
 
-  - title: Create user guide tasks
+  - title: User guide tasks
     jurl: /docapis_create_user_guide.html
 
-  - title: Breaking down API doc
-    jurl: /pubapis_api_doc_types.html
-
-  - title: Write the API overview
+  - title: Documenting the API overview
     jurl: /docapis_doc_overview.html
 
-  - title: Write the Getting Started section
+  - title: Documenting the getting started section
     jurl: /docapis_doc_getting_started_section.html
 
-  - title: Describe authentication and authorization
+  - title: Documenting authentication and authorization requirements
     jurl: /docapis_more_about_authorization.html
 
-  - title: Describe response and error codes
+  - title: Documenting response and error codes
     jurl: /docapis_doc_response_codes.html
 
-  - title: Describe code samples and tutorials
+  - title: Documenting code samples and tutorials
     jurl: /docapis_codesamples_bestpractices.html
 
-  - title: Creating the quick reference guide
+  - title: How to create the quick reference guide
     jurl: /docapis_doc_quick_reference.html
 
 - title: Exploring other REST APIs
   jurl: /otherapis.html
   folderitems:
 
-  - title: Explore other REST APIs overview
+  - title: Overview for exploring other REST APIs
     jurl: /docapis_more_rest_exercises.html
 
-  - title: EventBrite example
+  - title: "EventBrite example: Get event information"
     jurl: /docapis_eventbrite_example.html
 
-  - title: Flickr example
+  - title: "Flickr example: Retrieve a Flickr gallery"
     jurl: /docapis_flickr_example.html
 
-  - title: Klout example
+  - title: "Klout example: Retrieve Klout influencers"
     jurl: /docapis_klout_example.html
 
-  - title: Aeris Weather example
+  - title: "Aeris Weather Example: Get wind speed"
     jurl: /docapis_aerisweather_example.html
 
   - title: Next phase of course
@@ -151,7 +151,7 @@ folders:
   jurl: /publishingapis.html
   folderitems:
 
-  - title: Overview
+  - title: Overview for publishing API docs
     jurl: /pubapis_overview.html
 
   - title: List of about 100 APIs
@@ -172,16 +172,16 @@ folders:
   - title: More about Markdown
     jurl: /pubapis_markdown.html
 
-  - title: Using a version control system
+  - title: Version control systems
     jurl: /pubapis_version_control.html
 
-  - title: Pull request workflows through Github in browser
+  - title: Pull request workflows through GitHub
     jurl: /pubapis_github_pull_requests.html
 
-  - title: Jekyll -- my favorite tool
+  - title: Jekyll &mdash; my favorite static site generator
     jurl: /pubapis_jekyll.html
 
-  - title: Other tool options
+  - title: Other tool options &mdash; a miscellaneous compilation
     jurl: /pubapis_other_tool_options.html
 
   - title: What about traditional help authoring tools (HATs)?
@@ -197,31 +197,31 @@ folders:
   jurl: /restapispecifications.html
   folderitems:
 
-  - title: REST API specification formats
+  - title: Overview of REST API specification formats
     jurl: /pubapis_rest_specification_formats.html
 
-  - title: Swagger introduction
+  - title: Introduction to the OpenAPI (Swagger) spec
     jurl: /pubapis_swagger_intro.html
 
-  - title: Swagger tutorial
+  - title: OpenAPI (Swagger) tutorial
     jurl: /pubapis_swagger.html
 
-  - title: Sample Swagger specification file
+  - title: Sample OpenAPI (Swagger) specification file
     jurl: /pubapis_swagger_sample_specification_file.html
 
-  - title: Manage Swagger projects with SwaggerHub
+  - title: Manage OpenAPI (Swagger) projects with SwaggerHub
     jurl: /pubapis_swaggerhub_smartbear.html
 
   - title: More about YAML
     jurl: /pubapis_yaml.html
 
-  - title: RAML
+  - title: RAML tutorial
     jurl: /pubapis_raml.html
 
-  - title: API Blueprint
+  - title: API Blueprint tutorial
     jurl: /pubapis_api_blueprint.html
 
-  - title: Combining Swagger's reference output with user guide docs
+  - title: Combining OpenAPI's (Swagger's) reference output with user guide docs
     jurl: /pubapis_combine_swagger_and_guide.html
 
 - title: Documenting native library APIs
@@ -252,7 +252,7 @@ folders:
   - title: Doxygen, a document generator mainly for C++
     jurl: /nativelibraryapis_doxygen.html
 
-  - title: Document non-reference API docs
+  - title: Create non-ref docs with native library APIs
     jurl: /nativelibraryapis_nonrefdocs.html
 
 - title: Getting a Job in API Documentation
@@ -262,7 +262,7 @@ folders:
   - title: The job market for API technical writers
     jurl: /jobapis_overview.html
 
-  - title: How much code do you need to know to create developer documentation?
+  - title: How much code do you need to know?
     jurl: /jobapis_learning_code.html
 
 - title: API documentation survey results
@@ -290,7 +290,7 @@ folders:
   - title: What IDE do you use?
     jurl: /survey_preferred_ides.html
 
-  - title: Are API docs auto-rendered through build process?
+  - title: Is your REST API doc auto-generated?
     jurl: /survey_automating_api_docs.html
 
   - title: How do you get the source files that contain code comments?

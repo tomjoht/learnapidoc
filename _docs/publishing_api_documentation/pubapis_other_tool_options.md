@@ -1,5 +1,5 @@
 ---
-title: "Other tool options"
+title: "Other tool options &mdash; a miscellaneous compilation"
 permalink: /pubapis_other_tool_options.html
 course: "Documenting REST APIs"
 sidebar: docapis

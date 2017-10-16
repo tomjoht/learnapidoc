@@ -1,5 +1,5 @@
 ---
-title: "Sample Swagger specification file"
+title: "Sample OpenAPI (Swagger) specification file"
 permalink: /pubapis_swagger_sample_specification_file.html
 course: "Documenting REST APIs"
 sidebar: docapis

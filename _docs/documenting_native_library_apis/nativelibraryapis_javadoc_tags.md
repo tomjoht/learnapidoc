@@ -4,10 +4,9 @@ permalink: /nativelibraryapis_javadoc_tags.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 10.4
-section: nativelibraryapis 
+section: nativelibraryapis
 path1: /nativelibraryapis.html
 ---
-
 
 Javadoc is a document generator that looks through your Java source files for specific annotations. It parses out the annotations into the Javadoc output. Knowing the annotations is essential, since this is how the Javadoc gets created.
 
