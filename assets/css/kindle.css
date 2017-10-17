@@ -66,19 +66,19 @@ blockquote {
 
 p.note {
     background: #f1f1f1;
-    padding: 1em;
+    margin: 1em;
     border-left: 1em solid orange;
 }
 
 p.tip {
     background: #f1f1f1;
-    padding: 1em;
+    margin: 1em;
     border-left: 1em solid deepskyblue;
 }
 
 p.warning {
     background: #f1f1f1;
-    padding: 1em;
+    margin: 1em;
     border-left: 1em solid red;
 }
 

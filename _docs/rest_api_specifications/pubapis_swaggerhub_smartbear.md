@@ -8,7 +8,7 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-Previously in this course, I explored using [Swagger UI](https://github.com/swagger-api/swagger-ui) as a way to publish your Swagger documentation, and I wrote a [brief tutorial](pubapis_swagger.html) on how to download Swagger UI from GitHub, customize the index.html file from the distribution folder to reference your own Swagger spec file, and then deploy it on a web server.
+Previously, I explored using [Swagger UI](https://github.com/swagger-api/swagger-ui) as a way to publish your Swagger documentation, and I wrote a [brief tutorial](pubapis_swagger.html) on how to download Swagger UI from GitHub, customize the index.html file from the distribution folder to reference your own Swagger spec file, and then deploy it on a web server.
 
 While the free Swagger UI approach works, you'll run into several problems:
 
@@ -37,7 +37,7 @@ To get started with SwaggerHub, go to [swaggerhub.com](https://swaggerhub.com/) 
 
 <a href="https://app.swaggerhub.com/home"><img src="images/swaggerhubhomepage.png" /></a>
 
-The dashboard shows a list of the APIs you've created. In this example, you see the [Weather API](docapis_scenario_for_using_weather_api.html) that I've been using throughout this course.
+The dashboard shows a list of the APIs you've created. In this example, you see the [Weather API](docapis_scenario_for_using_weather_api.html) that I've been using throughout this book.
 
 ## SwaggerHub Editor
 

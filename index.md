@@ -46,7 +46,7 @@ You'll learn how to leverage templates, build interactive API consoles so users 
 
 ## Book organization
 
-Organizationally, this course is divided into the following sections:
+Organizationally, this book is divided into the following sections:
 
 *  **Introduction to REST APIs**
 *  **Using a REST API like a developer**
@@ -69,15 +69,15 @@ Because the purpose of the course is to help you learn, there are many activitie
 
 As for the needed technical background for the course, you don't need any programming background or other prerequisites, but it will help to know some basic HTML, CSS, and JavaScript.
 
-If you do have some familiarity with programming concepts, you might speed through some of the sections and jump ahead to the topics you want to learn more about. This course assumes you're a beginner, though.
+If you do have some familiarity with programming concepts, you might speed through some of the sections and jump ahead to the topics you want to learn more about. This book assumes you're a beginner, though.
 
-Note that some of the code samples in this course use JavaScript. JavaScript may or may not be a language that you actually use when you document REST APIs, but most likely there will be some programming language or platform that becomes important to know.
+Note that some of the code samples in this book use JavaScript. JavaScript may or may not be a language that you actually use when you document REST APIs, but most likely there will be some programming language or platform that becomes important to know.
 
 JavaScript is one of the most useful and easy languages to become familiar with, so it works well in code samples for this introduction to REST API documentation. JavaScript allows you to test out code by merely opening it in your browser (rather than compiling it in an IDE).
 
 ## What you'll need
 
-Here are a few things you'll need in this course:
+Here are a few things you'll need to do the exercises in this book:
 
 * **Text editor**. ([Sublime Text](http://www.sublimetext.com/) is a good option (it works on both Mac and Windows), but any text editor will do. On Windows, [Notepad++](https://notepad-plus-plus.org/) and [Komodo Edit](http://komodoide.com/komodo-edit/) are also good.)
 * **[Chrome browser](http://www.google.com/chrome/)**. (Other browsers are fine too, but we'll be using Chrome's Developer Console.)
@@ -95,4 +95,4 @@ If you'd prefer a short version of the course in video form, see this workshop I
 
 ## Stay updated
 
-If you're taking this course, you most likely want to learn more about APIs. I publish regular articles that talk about APIs and strategies for documenting them. You can stay updated about these posts by subscribing to my free newsletter at [https://tinyletter.com/tomjoht](https://tinyletter.com/tomjoht).
+If you're reading this book, you most likely want to learn more about APIs. I publish regular articles that talk about APIs and strategies for documenting them. You can stay updated about these posts by subscribing to my free newsletter at [https://tinyletter.com/tomjoht](https://tinyletter.com/tomjoht).

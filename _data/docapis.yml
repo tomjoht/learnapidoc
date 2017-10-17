@@ -154,7 +154,7 @@ folders:
   - title: Overview for publishing API docs
     jurl: /pubapis_overview.html
 
-  - title: List of about 100 APIs
+  - title: List of 100 API doc sites
     jurl: /pubapis_apilist.html
 
   - title: Design patterns overview
@@ -191,7 +191,7 @@ folders:
     jurl: /pubapis_tools_vs_content.html
 
   - title: "Case study: Switching tools to docs-as-code"
-    jurl: /pubapis_tools_switching_to_docs_as_code.html
+    jurl: /pubapis_switching_to_docs_as_code.html
 
 - title: Using REST API specifications
   jurl: /restapispecifications.html

@@ -28,7 +28,7 @@ Apiary
 
 API Blueprint
 : An
-The API Blueprint spec is an alternative to OpenAPI or RAML. API Blueprint is written in a Markdown-flavored syntax. See [API Blueprint](http://idratherbewriting.com/learnapidoc/pubapis_api_blueprint.html) in this course, or go to [API Blueprint's homepage](https://apiblueprint.org/) to learn more.
+The API Blueprint spec is an alternative to OpenAPI or RAML. API Blueprint is written in a Markdown-flavored syntax. See [API Blueprint](http://idratherbewriting.com/learnapidoc/pubapis_api_blueprint.html) in this book, or go to [API Blueprint's homepage](https://apiblueprint.org/) to learn more.
 
 Apigee
 : Similar to Apiary, Apigee provides services for you to manage the whole lifecycle of your API. Specifically, Apigee lets you "manage API complexity and risk in a multi- and hybrid-cloud world by ensuring security, visibility, and performance across the entire API landscape." Supports the OpenAPI spec. See [apigee.com](https://apigee.com/api-management/).
@@ -66,6 +66,9 @@ GitHub
 git repo
 : A tool for consolidating and managing many smaller repos with one system. See [git-repo](https://code.google.com/archive/p/git-repo/).
 
+HAT
+: Help Authoring Tool. Refers to the traditional help authoring tools (RoboHelp, Flare, Author-it, etc.) used by technical writers for documentation. Tooling for API docs tend to use [Docs as code tools](pubapis_docs_as_code.html) more than [HATs](pubapis_hats.html).
+
 HATEOS
 : Stands for Hypermedia as the Engine of Application State. Hypermedia is one of the characteristics of REST that is often overlooked or missing from REST APIs. In API responses, responses that span multiple pages should provide links for users to page to the other items. See [HATEOS](https://en.wikipedia.org/wiki/HATEOAS).
 
@@ -73,7 +76,7 @@ Hugo
 : A static site generator that uses the Go programming language as its base. Along with Jekyll, Hugo is among the top 5 most popular static site generators. Hugo is probably the fastest site generator available. Speed matters as you scale the number of documents in your project beyond several hundred. See [https://gohugo.io/](https://gohugo.io/).
 
 JSON
-: JavaScript Object Notation. A lightweight syntax containing objects and arrays, usually used (instead of XML) to return information from a REST API. See [Analyze the JSON response](https://idratherbewriting.com/learnapidoc/docapis_analyze_json.html) in this course and [http://www.json.org/](http://www.json.org/)
+: JavaScript Object Notation. A lightweight syntax containing objects and arrays, usually used (instead of XML) to return information from a REST API. See [Analyze the JSON response](https://idratherbewriting.com/learnapidoc/docapis_analyze_json.html) in this book and [http://www.json.org/](http://www.json.org/)
 
 Mercurial
 : An distributed revision control system, similar to Git but not as popular. See [https://www.mercurial-scm.org/](https://www.mercurial-scm.org/).
@@ -106,7 +109,7 @@ push
 : In Git, when you want to update the origin with the latest updates from your local copy, you make `git push`. Your updates will bring origin back into sync with your local copy. See [https://git-scm.com/docs/git-push](https://git-scm.com/docs/git-push).
 
 RAML
-: Stands REST API Modeling Language and is similar to Swagger and other API specifications. RAML is backed by Mulesoft, a commercial API company, and uses a more YAML-based syntax in the specification.See [RAML tutorial](http://idratherbewriting.com/learnapidoc/pubapis_raml.html) in this course or [RAML](https://raml.org/).
+: Stands REST API Modeling Language and is similar to Swagger and other API specifications. RAML is backed by Mulesoft, a commercial API company, and uses a more YAML-based syntax in the specification.See [RAML tutorial](http://idratherbewriting.com/learnapidoc/pubapis_raml.html) in this book or [RAML](https://raml.org/).
 
 RAML Console
 : In Mulesoft, the RAML Console is where you design your RAML spec. Similar to the Swagger Editor for the OpenAPI spec.
@@ -124,7 +127,7 @@ Sphinx
 : A static site generator developed for managing documentation for Python. Sphinx is the most documentation-oriented static site generator available and includes many robust features -- such as search, sidebar navigation, semantic markup, managed links -- that other static site generators lack. Based on Python. See [https://www.staticgen.com/sphinx](https://www.staticgen.com/sphinx).
 
 Static site generator
-: A breed of website compilers that package up a group of files (usually written in Markdown) and make them into a website. There are more than 350 different static site generators. See [Jekyll](http://idratherbewriting.com/learnapidoc/pubapis_jekyll.html) in this course for a deep-dive into the most popular static site generator, or [Staticgen](https://www.staticgen.com/) for a list of all static site generators.
+: A breed of website compilers that package up a group of files (usually written in Markdown) and make them into a website. There are more than 350 different static site generators. See [Jekyll](http://idratherbewriting.com/learnapidoc/pubapis_jekyll.html) in this book for a deep-dive into the most popular static site generator, or [Staticgen](https://www.staticgen.com/) for a list of all static site generators.
 
 Swagger
 : An official specification for REST APIs. Provides objects used to describe your endpoints, parameters, responses, and security. Now called OpenAPI specification.
@@ -151,6 +154,6 @@ version control
 : A system for managing code that relies on snapshots that store content at specific states. Enables you to revert to previous states, branch the code into different versions, and more. See [About Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) for details.
 
 YAML
-: Recursive acronym for "YAML Ain't No Markup Language.” A human- readable, space-sensitive syntax used in the Swagger specification file. See [More About YAML](http://idratherbewriting.com/learnapidoc/pubapis_yaml.html) in this course.
+: Recursive acronym for "YAML Ain't No Markup Language.” A human- readable, space-sensitive syntax used in the Swagger specification file. See [More About YAML](http://idratherbewriting.com/learnapidoc/pubapis_yaml.html).
 
 {% include random_ad.html %}

@@ -20,7 +20,7 @@ Almost every API has a method in place to authenticate requests. You usually hav
 {: .tip}
 Keep in mind how users authorize calls with an API &mdash; this is something you usually cover in API documentation. Later in the course we will dive into authorization methods in more detail.
 
-In order to run the code samples in this course, you will need to use your own API keys, since these keys are usually treated like personal passwords and not given out or published openly on a web page.
+In order to run the code samples in this book, you will need to use your own API keys, since these keys are usually treated like personal passwords and not given out or published openly on a web page.
 
 * TOC
 {:toc}

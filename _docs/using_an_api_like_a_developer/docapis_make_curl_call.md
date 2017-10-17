@@ -40,7 +40,7 @@ In this section, you'll use cURL to make the same weather API requests you made 
 4.  Swap in your own API key in place of `APIKEY`.
 
     {: .note}
-    In the instruction in this course, <code>APIKEY</code> will always be used instead of an actual API key. You should replace that part with your own API key.
+    In the instruction in this book, <code>APIKEY</code> will always be used instead of an actual API key. You should replace that part with your own API key.
 
 5.  Customize the `lat` and `lng` values to the following:
 

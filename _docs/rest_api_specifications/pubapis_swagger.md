@@ -8,7 +8,7 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-In this tutorial, you'll learn how to use Swagger UI to parse through a sample Swagger spec file and display an output that looks similar to the [Swagger Petstore example](http://petstore.swagger.io/). The sample API will be the same weather API from Mashape [used earlier in this course](docapis_scenario_for_using_weather_api.html). For a more detailed conceptual overview of Swagger, see [Swagger Overview](pubapis_swagger_intro.html).
+In this tutorial, you'll learn how to use Swagger UI to parse through a sample Swagger spec file and display an output that looks similar to the [Swagger Petstore example](http://petstore.swagger.io/). The sample API will be the same weather API from Mashape [used earlier in this book](docapis_scenario_for_using_weather_api.html). For a more detailed conceptual overview of Swagger, see [Swagger Overview](pubapis_swagger_intro.html).
 
 {% if site.format == "web" %}
 * TOC

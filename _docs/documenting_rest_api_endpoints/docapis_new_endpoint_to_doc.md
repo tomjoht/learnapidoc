@@ -138,4 +138,4 @@ Open up a new text file and create sections for each of these elements.
 Each of your endpoints should follow this same pattern and structure. A common template helps increase consistency and familiarity/predictability with how users consume the information.
 
 {: .note}
-Although there are automated ways to publish API docs, we're focusing on content rather than tools in this course. For the sake of simplicity, try just using a text editor (such as [Sublime Text](https://www.sublimetext.com/)) and [Markdown syntax](https://help.github.com/articles/github-flavored-markdown).
+Although there are automated ways to publish API docs, we're focusing on content rather than tools in this book. For the sake of simplicity, try just using a text editor (such as [Sublime Text](https://www.sublimetext.com/)) and [Markdown syntax](https://help.github.com/articles/github-flavored-markdown).
