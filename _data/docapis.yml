@@ -160,6 +160,9 @@ folders:
   - title: Design patterns overview
     jurl: /pubapis_design_patterns.html
 
+  - title: Edit on Github buttons
+    jurl: /pubapis_edit_on_github_buttons.html
+    
   - title: Tool decisions
     jurl: /pubapis_tooldecisions.html
 

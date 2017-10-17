@@ -114,7 +114,7 @@ Here are 100 API doc sites. Peruse them to get a sense of the variety, but also 
 
 {% include tip.html content="I last checked these links in October 2017. Given how fast the technology landscape changes, some links may be out of date. However, if you simply type <i>{product} + api docs</i> into Google's search, you will likely find the company's developer doc site. Most commonly the API docs are at developer.{company}.com." %}
 
-I include both impressively designed docs in this list along with docs that look like a department intern just learning HTML created. The variety in the list demonstrates the wide variety of publishing tools and approaches (as well as terminology) in API docs.
+I include not only impressively designed docs in this list but also docs that look like they were created by a department intern just learning HTML. The variety in the list demonstrates the wide variety of publishing tools and approaches, as well as terminology, in API docs. It seems that almost everyone does them their own way, with their own site, branding, organization, and typography.
 
 ## Programmableweb.com: A directory of API doc sites on the open web
 
