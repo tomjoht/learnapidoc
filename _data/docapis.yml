@@ -160,7 +160,7 @@ folders:
   - title: Design patterns overview
     jurl: /pubapis_design_patterns.html
 
-  - title: Tool decisions: Who will write?
+  - title: "Tool decisions: Who will write?"
     jurl: /pubapis_tooldecisions.html
 
   - title: Docs-as-code tools
