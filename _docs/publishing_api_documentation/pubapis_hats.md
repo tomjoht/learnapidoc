@@ -70,3 +70,25 @@ Many of the API doc sites are single-website experiences. The API docs are usual
 ### - Removes authoring capability from developers
 
  If you're hoping for developers to contribute to the documentation, it's going to be hard to get buy-in if you're using a HAT. HATs are tools for writers, not developers. (Then again, if you don't expect developers to contribute, then this becomes a moot point.)
+
+## Dealing with more challenging factors
+
+A lot of the solutions we've looked at tend to break down when you start applying more difficult requirements in your tech comm scenario. You may have to resort to more traditional tech comm tooling if you have to deal with some of the following challenges:
+
+* Translation
+* Content re-use
+* Versioning
+* Authentication
+* PDF
+
+You can often find ways to handle these challenges with non-traditional tools, but it's not going to be a push-button experience. It will require a higher degree of technical skill and coding.
+
+At one company where I used Jekyll, we had requirements around both PDF output and versioning. We singled sourced the content into about 8 different outputs (for different product lines and programming languages). It was double that number if you included PDF output for the same content.
+
+Jekyll provides a templating language called Liquid that allows you to do conditional filtering, content re-use, variables, and more, so you can fill these more robust requirements. I used this advanced logic to single source the output without duplicating the content.
+
+To handle PDF, I integrated a tool called [Prince](http://www.princexml.com/), which converts a list of HTML pages into a PDF document, complete with running headers and footers, page numbering, and other print styling. Other writers might use [Pandoc](https://pandoc.org/) to fill simpler PDF requirements.
+
+To handle authentication, we uploaded the HTML output into a Salesforce site.com space and used Salesforce as the authentication layer. The custom uploading was my least favorite part of the solution, but a more integrated authentication solution (potentially using [One Login](https://www.onelogin.com/) or a custom authentication solution) would have required more engineering resources.
+
+My point is that you can handle these more challenging factors with non-traditional tools, but it requires more expertise.

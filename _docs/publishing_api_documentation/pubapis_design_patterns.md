@@ -10,7 +10,7 @@ path1: /publishingapis.html
 
 In the previous topic, we browsed up to [100 API doc sites](pubapis_apilist) and looked for similar patterns in their design. "Design patterns" are common approaches or techniques in the way something is designed. In looking over the many API doc sites, I tried to identify common approaches in the way the content was published.
 
-The following design patterns are common with API doc sites: structure and templates, website platforms, abundant code examples, long-ish pages, and interactive API explorers. I explore each of these elements in the following sections.
+The following design patterns are common with API doc sites: structure and templates, website platforms, abundant code examples, long-ish pages, interactive API explorers, and GitHub as a storage platform. I explore each of these elements in the following sections.
 
 {% if site.format == "web" %}
 * TOC
@@ -154,32 +154,37 @@ If your users log in, you can store their API keys and dynamically populate the 
 
 However, if you store customer API keys on your site, this might create authentication and login requirements that make your site more complex to create. If you have users logging in and dynamically populating the explorer with their API keys, you'll probably need a front-end designer and web developer to pull this off.
 
-## Dealing with more challenging factors
 
-A lot of the solutions we've looked at tend to break down when you start applying more difficult requirements in your tech comm scenario. You may have to resort to more traditional tech comm tooling if you have to deal with some of the following challenges:
+## Pattern 6: GitHub as a Storage Platform
 
-* Translation
-* Content re-use
-* Versioning
-* Authentication
-* PDF
+Another common pattern with API doc sites is that, given that developers are often heavily involved in the writing, managing, and publishing of the information, the documentation source is often stored in [GitHub](https://github.com/), which is an online platform for managing Git projects.
 
-You can handle all of this through a custom platform such as [Jekyll](pubapis_jekyll.html), but it's not going to be a push-button experience. It will require a higher degree of technical skill and coding.
+Git frequently acts as a storage source that other sites can pull from. For example, with many online platforms, such as [CloudCannon](https://cloudcannon.com/) and [Forestry.io](https://forestry.io/), you can set your content source as GitHub. These platforms will then pull in your content from GitHub, treating it as the source. This way you can do content management using GitHub but configure the front-end doc experience using one of these platforms.
 
-At one company where I used Jekyll, we had requirements around both PDF output and versioning. We singled sourced the content into about 8 different outputs (for different product lines and programming languages). Double that number if you include PDF output for the same content. Jekyll provides a templating language called Liquid that allows you to do conditional filtering, content re-use, variables, and more, so you can fill these more robust requirements.
+Many doc sites just use [GitHub Pages](https://pages.github.com/) directly as their doc site. If your site is a Jekyll site, GitHub Pages will build it automatically when you commit into your repo. Building from the server provides enormous benefits to publishing in a [docs-as-code model](pubapis_docs_as_code.html), and it's a topic I touch on in a [case study here](pubapis_switching_to_docs_as_code.html). GitHub's preference for building with Jekyll is one reason why I focus an [entire topic on Jekyll](pubapis_jekyll.html) later in the book.
 
-To handle PDF, I used a tool called [Prince](http://www.princexml.com/) that converts a list of HTML pages into a PDF document, complete with running headers and footers, page numbering, and other print styling. Other writers might use [Pandoc](https://pandoc.org/) to fill simpler PDF requirements.
+Many developer doc sites even promote their online GitHub source with a button that says "Edit on GitHub." See these sites for examples:
 
-To handle authentication, we uploaded the HTML output into a Salesforce site.com space and used Salesforce as the authentication layer. The custom uploading was my least favorite part of the solution, but a more integrated authentication solution (potentially using [One Login](https://www.onelogin.com/) or a custom authentication solution) would have required more engineering resources.
+* [Smartthings developer documentation](http://docs.smartthings.com/en/latest/getting-started/overview.html)
+* [Apache MyNewt documentation](https://mynewt.apache.org/latest/os/introduction/)
+* [Quill documentation](https://quilljs.com/docs/quickstart/)
+* [Jekyll documentation](https://jekyllrb.com/docs/home/)
 
-## Some non-patterns
+I won't discuss the challenges of building community and contributions using "Edit on GitHub" links like this. For the most part, my experience with external collaborators has been about the same as with wikis. For more on inviting collaboration from users, see these posts:
 
-Finally, I just want to mention some non-patterns in API documentation. In the [list of 100 API doc sites](pubapis_apilist.html), rarely do you see the ability to video tutorials, page commenting features (except through the [Edit on GitHub button](pubapis_edit_on_github_buttons.html)), PDF output, translation, responsive mobile displays, or help authoring tool outputs.
+* [Crowdsourcing docs with docs-as-code tools -- same result as with wikis?](http://idratherbewriting.com/2017/03/08/crowdsourcing-docs-with-github-docs-as-code-tools-same-as-wikis/)
+* [My Journey To and From Wikis: Why I Adopted Wikis, Why I Veered Away, and a New Model][http://idratherbewriting.com/2012/06/11/essay-my-journey-to-and-from-wikis-why-i-adopted-wikis-why-i-veered-away-from-them-and-a-new-model-for-collaboration/]
+* [1% rule](https://en.wikipedia.org/wiki/1%25_rule_(Internet_culture))
+
+For most part, if you have an online project where the contributors interact and publish online, these "Edit on GitHub" links can facilitate writing and editing within the group. It's not so much that these groups are hoping outsiders will jump in and make a bunch of edits (though that might be welcome). More common is that GitHub is the infrastructure for their open source project, and these links make it easier for existing contributors (already committed to the project) to edit and update pages.
+
+## Some non-patterns in API doc sites
+
+Finally, I'd like to mention some non-patterns in API documentation. In the [list of 100 API doc sites](pubapis_apilist.html), rarely do you see any of the following:
+
+* Video tutorials
+* PDFs
+* Page commenting features
+* Translated sites
 
 By non-patterns, it's not to say these elements aren't a good idea. But generally they aren't emphasized as primary requirements.
-
-[1]: http://idratherbewriting.com/2012/06/11/essay-my-journey-to-and-from-wikis-why-i-adopted-wikis-why-i-veered-away-from-them-and-a-new-model-for-collaboration/
-
-[2]: https://en.wikipedia.org/wiki/1%25_rule_(Internet_culture)
-[sarah]: http://www.scriptorium.com/2017/03/tcworld-india-2017-focus-future/
-[kate]: http://idratherbewriting.com/2016/10/28/markdown-or-restructuredtext-or-dita-choosing-format-tech-docs/#comment-3193454817

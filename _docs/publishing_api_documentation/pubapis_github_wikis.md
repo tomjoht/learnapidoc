@@ -24,13 +24,12 @@ Here's an example of the Basecamp API, which is housed on GitHub.
 <a href="https://github.com/basecamp/bcx-api"><img src="images/basecampapi.png" alt="Basecamp API" /></a>
 
 ## Markdown syntax
+
 You write wiki pages in Markdown syntax. There's a special flavor of Markdown syntax for GitHub wikis. The [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/) allows you to create tables, add classes to code blocks (for proper syntax highlighting), and more.
 
 ## The wiki repository
 
-The wiki you create is its own repository that you can clone locally. (If you look at the "Clone this wiki locally" link, you'll see that it's a separate repo from your main code repository.) You can work on files locally and then commit them to the wiki repository when you're ready to publish.
-
-You can also arrange the wiki pages into a sidebar.
+Unlike other wikis, the GitHub wiki you create is its own repository that you can clone and work on locally. (If you look at the "Clone this wiki locally" link, you'll see that it's a separate repo from your main code repository.) You can work on files locally and then commit them to the wiki repository when you're ready to publish. You can also arrange the wiki pages into a sidebar.
 
 ## Treating doc as code
 
@@ -48,7 +47,7 @@ There are some limitations with GitHub wikis:
 
 * **Limited branding**. All GitHub wikis look the same.
 * **Open access on the web**. If your docs need to be private, GitHub isn't the place to put them.
-* **No structure**. The GitHub wiki pages give you a blank page and basically allow you to add sections. You won't be able to do any advanced styling or sexy-looking interactive API doc.
+* **No structure**. The GitHub wiki pages give you a blank page and basically allow you to add sections. You won't be able to do any advanced styling or more attractive-looking interactive features.
 
 ## Set up Git and GitHub authentication {#set_up_git_and_github}
 
