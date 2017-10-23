@@ -1,0 +1,499 @@
+swagger: '2.0'
+info:
+  description: 'This is a sample API that uses a Mashape Weather API as an example to demonstrate
+    features in the swagger-2.0 specification. The Weather API displays forecast data by latitude and longitude.
+    Get raw weather data or simple label description of weather forecast of some places.'
+  version: 2.0.0
+  title: Weather API from Mashape
+  termsOfService: http://swagger.io/terms/
+  contact:
+    email: tom@idratherbewriting.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+host: "simple-weather.p.mashape.com"
+schemes:
+- https
+paths:
+  /aqi:
+    get:
+      tags:
+      - Air Quality
+      summary: Gets the air quality index
+      description: 'Air quality is a measure of air pollution. The higher the number, the worse the pollution.'
+      operationId: getAqi
+      consumes:
+      - application/json
+      - application/xml
+      produces:
+      - text
+      parameters:
+        - name: lat
+          in: query
+          description: latitude
+          required: false
+          type: string
+        - name: lng
+          in: query
+          description: longitude
+          required: false
+          type: string
+      responses:
+        '200':
+          description: AQI response
+          schema:
+            $ref: '#/definitions/aqiResponse'
+          examples:
+             application/text: |-
+                52
+      security:
+        - api_key: []
+
+
+  "/weather":
+    get:
+      tags:
+      - Weather Forecast
+      summary: Gets the weather forecast in abbreviated form
+      description: 'retrieves the weather forecast, but without too much detail'
+      operationId: getWeather
+      consumes:
+      - application/json
+      - application/xml
+      produces:
+      - text
+      parameters:
+        - name: lat
+          in: query
+          description: latitude coordinates
+          required: false
+          type: string
+        - name: lng
+          in: query
+          description: longitude coordinates
+          required: false
+          type: string
+      responses:
+        '200':
+          description: weather response
+          schema:
+            $ref: '#/definitions/weatherResponse'
+          examples:
+             application/text: |-
+                26 c, Mostly Clear at Singapore, Singapore
+
+      security:
+        - api_key: []
+
+  "/weatherdata":
+    get:
+      tags:
+      - Weather Data
+      summary: Get weather forecast with lots of details
+      description: 'Includes full details of the weather forecast, in JSON format'
+      operationId: getWeatherData
+      consumes:
+      - application/json
+      - application/xml
+      produces:
+      - application/json
+      parameters:
+        - name: lat
+          in: query
+          description: latitude
+          required: false
+          type: string
+        - name: lng
+          in: query
+          description: longitude
+          required: false
+          type: string
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+           "$ref": "#/definitions/weatherdataResponse"
+          examples:
+            application/json: |-
+                {
+                   "query":{
+                      "count":1,
+                      "created":"2017-06-14T14:30:14Z",
+                      "lang":"en-US",
+                      "results":{
+                         "channel":{
+                            "units":{
+                               "distance":"km",
+                               "pressure":"mb",
+                               "speed":"km/h",
+                               "temperature":"C"
+                            },
+                            "title":"Yahoo! Weather - Singapore, South West, SG",
+                            "link":"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/",
+                            "description":"Yahoo! Weather for Singapore, South West, SG",
+                            "language":"en-us",
+                            "lastBuildDate":"Wed, 14 Jun 2017 10:30 PM SGT",
+                            "ttl":"60",
+                            "location":{
+                               "city":"Singapore",
+                               "country":"Singapore",
+                               "region":" South West"
+                            },
+                            "wind":{
+                               "chill":"81",
+                               "direction":"158",
+                               "speed":"11.27"
+                            },
+                            "atmosphere":{
+                               "humidity":"87",
+                               "pressure":"34168.68",
+                               "rising":"0",
+                               "visibility":"25.91"
+                            },
+                            "astronomy":{
+                               "sunrise":"6:59 am",
+                               "sunset":"7:11 pm"
+                            },
+                            "image":{
+                               "title":"Yahoo! Weather",
+                               "width":"142",
+                               "height":"18",
+                               "link":"http://weather.yahoo.com",
+                               "url":"http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+                            },
+                            "item":{
+                               "title":"Conditions for Singapore, South West, SG at 09:00 PM SGT",
+                               "lat":"1.33464",
+                               "long":"103.726471",
+                               "link":"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/",
+                               "pubDate":"Wed, 14 Jun 2017 09:00 PM SGT",
+                               "condition":{
+                                  "code":"33",
+                                  "date":"Wed, 14 Jun 2017 09:00 PM SGT",
+                                  "temp":"26",
+                                  "text":"Mostly Clear"
+                               },
+                               "forecast":[
+                                  {
+                                     "code":"4",
+                                     "date":"14 Jun 2017",
+                                     "day":"Wed",
+                                     "high":"28",
+                                     "low":"25",
+                                     "text":"Thunderstorms"
+                                  },
+                                  {
+                                     "code":"4",
+                                     "date":"15 Jun 2017",
+                                     "day":"Thu",
+                                     "high":"28",
+                                     "low":"25",
+                                     "text":"Thunderstorms"
+                                  },
+                                  {
+                                     "code":"4",
+                                     "date":"16 Jun 2017",
+                                     "day":"Fri",
+                                     "high":"28",
+                                     "low":"24",
+                                     "text":"Thunderstorms"
+                                  },
+                                  {
+                                     "code":"4",
+                                     "date":"17 Jun 2017",
+                                     "day":"Sat",
+                                     "high":"28",
+                                     "low":"25",
+                                     "text":"Thunderstorms"
+                                  },
+                                  {
+                                     "code":"4",
+                                     "date":"18 Jun 2017",
+                                     "day":"Sun",
+                                     "high":"28",
+                                     "low":"25",
+                                     "text":"Thunderstorms"
+                                  },
+                                  {
+                                     "code":"4",
+                                     "date":"19 Jun 2017",
+                                     "day":"Mon",
+                                     "high":"28",
+                                     "low":"26",
+                                     "text":"Thunderstorms"
+                                  },
+                                  {
+                                     "code":"4",
+                                     "date":"20 Jun 2017",
+                                     "day":"Tue",
+                                     "high":"27",
+                                     "low":"26",
+                                     "text":"Thunderstorms"
+                                  },
+                                  {
+                                     "code":"4",
+                                     "date":"21 Jun 2017",
+                                     "day":"Wed",
+                                     "high":"28",
+                                     "low":"26",
+                                     "text":"Thunderstorms"
+                                  },
+                                  {
+                                     "code":"4",
+                                     "date":"22 Jun 2017",
+                                     "day":"Thu",
+                                     "high":"28",
+                                     "low":"26",
+                                     "text":"Thunderstorms"
+                                  },
+                                  {
+                                     "code":"4",
+                                     "date":"23 Jun 2017",
+                                     "day":"Fri",
+                                     "high":"28",
+                                     "low":"26",
+                                     "text":"Thunderstorms"
+                                  }
+                               ],
+                               "description":"<![CDATA[<img src=\"http://l.yimg.com/a/i/us/we/52/33.gif\"/>\n<BR />\n<b>Current Conditions:</b>\n<BR />Mostly Clear\n<BR />\n<BR />\n<b>Forecast:</b>\n<BR /> Wed - Thunderstorms. High: 28Low: 25\n<BR /> Thu - Thunderstorms. High: 28Low: 25\n<BR /> Fri - Thunderstorms. High: 28Low: 24\n<BR /> Sat - Thunderstorms. High: 28Low: 25\n<BR /> Sun - Thunderstorms. High: 28Low: 25\n<BR />\n<BR />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/\">Full Forecast at Yahoo! Weather</a>\n<BR />\n<BR />\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)\n<BR />\n]]>",
+                               "guid":{
+                                  "isPermaLink":"false"
+                               }
+                            }
+                         }
+                      }
+                   }
+                }
+      security:
+        - api_key: []
+
+securityDefinitions:
+  api_key:
+    type: apiKey
+    name: X-Mashape-Key
+    in: header
+
+externalDocs:
+  description: Find out more about this Weather API
+  url: https://market.mashape.com/fyhao/weather-13
+
+definitions:
+  aqiResponse:
+    type: string
+
+  weatherResponse:
+    type: string
+
+  weatherdataResponse:
+    type: object
+    properties:
+      query:
+        type: object
+        "$ref": "#/definitions/query"
+  query:
+    type: object
+    properties:
+      count:
+        type: integer
+        description: description of count
+      created:
+        type: string
+        description: description of created
+      lang:
+        type: string
+        description: description of lang
+      results:
+        "$ref": "#/definitions/results"
+  results:
+    type: object
+    properties:
+      channel:
+        "$ref": "#/definitions/channel"
+
+  channel:
+    type: object
+    properties:
+      units:
+        "$ref": "#/definitions/units"
+      title:
+        type: string
+        description: description of title
+      link:
+        type: string
+        description: description of link
+      description:
+        type: string
+        description: description of description ha ha
+      language:
+        type: string
+        description: description of language
+      lastBuildDate:
+        type: string
+        description: description of lastBuildDate
+      ttl:
+        type: string
+        description: description of ttl
+      location:
+        "$ref": "#/definitions/location"
+      wind:
+        "$ref": "#/definitions/wind"
+      atmosphere:
+        "$ref": "#/definitions/atmosphere"
+      astronomy:
+        "$ref": "#/definitions/astronomy"
+      image:
+        "$ref": "#/definitions/image"
+      item:
+        "$ref": "#/definitions/item"
+  units:
+    type: object
+    properties:
+      distance:
+        type: string
+        description: description of distance
+      pressure:
+        type: string
+        description: description of pressure
+      speed:
+        type: string
+        description: description of speed
+      temperature:
+        type: string
+        description: description of temperature
+
+  location:
+    type: object
+    properties:
+      city:
+        type: string
+        description: description of city
+      country:
+        type: string
+        description: description of country
+      region:
+        type: string
+        description: description of region
+
+  wind:
+    type: object
+    properties:
+      chill:
+        type: string
+        description: description of chill
+      direction:
+        type: string
+        description: description of direction
+      speed:
+        type: string
+        description: description of speed
+
+  atmosphere:
+    type: object
+    properties:
+      humidity:
+        type: string
+        description: description of humidity
+      pressure:
+        type: string
+        description: description of pressure
+      rising:
+        type: string
+        description: description of rising
+      visibility:
+        type: string
+        description: description of visibility
+
+  astronomy:
+    type: object
+    properties:
+      sunrise:
+        type: string
+        description: description of sunrise
+      sunset:
+        type: string
+        description: description of sunset
+
+  image:
+    type: object
+    properties:
+      title:
+        type: string
+        description: description of title
+      width:
+        type: string
+        description: description of width
+      height:
+        type: string
+        description: description of height
+      link:
+        type: string
+        description: description of link
+      url:
+        type: string
+        description: description of url
+
+  item:
+    type: object
+    properties:
+      title:
+        type: string
+        description: description of title
+      lat:
+        type: string
+        description: description of lat
+      long:
+        type: string
+        description: description of long
+      link:
+        type: string
+        description: description of link
+      pubDate:
+        type: string
+        description: description of pubDate
+        items:
+          "$ref": "#/definitions/condition"
+      forecast:
+        "$ref": "#/definitions/forecast"
+
+  condition:
+    type: object
+    properties:
+      code:
+        type: string
+        description: description of code
+      date:
+        type: string
+        description: description of date
+      temp:
+        type: string
+        description: description of temp
+      text:
+        type: string
+        description: description of text
+
+  forecast:
+    type: array
+    items: 
+      "$ref": "#/definitions/forecastArray"
+
+  forecastArray:
+    type: object
+    properties:
+      code:
+        type: string
+        description: description of code
+      date:
+        type: string
+        description: description of date
+      day:
+        type: string
+        description: description of day
+      high:
+        type: string
+        description: description of high
+      low:
+        type: string
+        description: description of low
+      text:
+        type: string
+        description: description of text

@@ -1,0 +1,392 @@
+openapi: 3.0.0
+info:
+  title: Weather API from Mashape
+  description: "This is a sample spec that describes a Mashape Weather API as an example to demonstrate features in the Swagger-2.0 specification. This output is part of the <a href=\"http://idratherbewriting.com/learnapidoc\">Documenting REST API course</a> on my site. The Weather API displays forecast data by latitude and longitude. It's a simple weather API, but the data comes from Yahoo Weather Service. The weatherdata endpoint delivers the most robust package of information of the endpoints here.\n\nTo explore the API, you'll need an API key. You can sign up for an API through Mashape, or you can just use this one\\: `EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p`. For the latitude and longitude parameters, you can get this information from the URL of a location on Google Maps. For example, for Santa Clara, California, use the following\\:\n* **lat**: `37.3708698`\n* **lng**: `-122.037593` \n"
+  version: 2.1
+servers:
+- url: https://simple-weather.p.mashape.com
+  variables: {}
+paths:
+  /aqi:
+    get:
+      tags:
+      - Air Quality
+      summary: getAqi
+      description: Gets the air quality index
+      operationId: GetAqi
+      parameters:
+      - name: lat
+        in: query
+        description: latitude
+        required: true
+        style: matrix
+        explode: false
+        schema:
+          type: string
+      - name: lng
+        in: query
+        description: longitude
+        required: true
+        style: matrix
+        explode: false
+        schema:
+          type: string
+      responses:
+        200:
+          description: AQI response
+          content:
+            text/plain:
+              schema:
+                type: string
+                description: AQI response
+      deprecated: false
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /weather:
+    get:
+      tags:
+      - Weather Forecast
+      summary: getWeather
+      description: Gets the weather forecast in abbreviated form
+      operationId: GetWeather
+      parameters:
+      - name: lat
+        in: query
+        description: latitude coordinates
+        required: true
+        style: matrix
+        explode: false
+        schema:
+          type: string
+      - name: lng
+        in: query
+        description: longitude coordinates
+        required: true
+        style: matrix
+        explode: false
+        schema:
+          type: string
+      responses:
+        200:
+          description: weather response
+          content:
+            text/plain:
+              schema:
+                type: string
+                description: weather response
+      deprecated: false
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /weatherdata:
+    get:
+      tags:
+      - Weather Data
+      summary: getWeatherData
+      description: Get weather forecast with lots of details
+      operationId: GetWeatherData
+      parameters:
+      - name: lat
+        in: query
+        description: latitude
+        required: true
+        style: matrix
+        explode: false
+        schema:
+          type: string
+      - name: lng
+        in: query
+        description: longitude
+        required: true
+        style: matrix
+        explode: false
+        schema:
+          type: string
+      responses:
+        200:
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                description: Successful operation
+                $ref: '#/components/schemas/WeatherdataResponse'
+      deprecated: false
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+components:
+  schemas:
+    WeatherdataResponse:
+      title: weatherdata response
+      type: object
+      properties:
+        query:
+          $ref: '#/components/schemas/Query'
+    Query:
+      title: query
+      type: object
+      properties:
+        count:
+          type: integer
+          description: The number of items (rows) returned -- specifically, the number of sub-elements in the results property
+          format: int32
+        created:
+          type: string
+          description: The date and time the response was created
+        lang:
+          type: string
+          description: The locale for the response
+        results:
+          $ref: '#/components/schemas/Results'
+    Results:
+      title: results
+      type: object
+      properties:
+        channel:
+          $ref: '#/components/schemas/Channel'
+    Channel:
+      title: channel
+      type: object
+      properties:
+        units:
+          description: Units for various aspects of the forecast. Note that the default is to use metric formats for the units (Celsius, kilometers, millibars, kilometers per hour).
+          $ref: '#/components/schemas/Units'
+        title:
+          type: string
+          description: The title of the feed, which includes the location city
+        link:
+          type: string
+          description: The URL for the Weather page of the forecast for this location
+        description:
+          type: string
+          description: The overall description of the feed including the location
+        language:
+          type: string
+          description: The language of the weather forecast
+        lastBuildDate:
+          type: string
+          description: The last time the feed was updated. The format is in the date format defined by [RFC822 Section 5](http://www.rfc-editor.org/rfc/rfc822.txt).
+        ttl:
+          type: string
+          description: Time to Live -- how long in minutes this feed should be cached.
+        location:
+          description: The location of this forecast
+          $ref: '#/components/schemas/Location'
+        wind:
+          description: Forecast information about wind
+          $ref: '#/components/schemas/Wind'
+        atmosphere:
+          description: Forecast information about current atmospheric pressure, humidity, and visibility
+          $ref: '#/components/schemas/Atmosphere'
+        astronomy:
+          description: Forecast information about current astronomical conditions
+          $ref: '#/components/schemas/Astronomy'
+        image:
+          description: The image used to identify this feed
+          $ref: '#/components/schemas/Image'
+        item:
+          description: The item element contains current conditions and forecast for the given location. There are multiple weather forecast elements for today and tomorrow.
+          $ref: '#/components/schemas/Item'
+    Units:
+      title: units
+      type: object
+      properties:
+        distance:
+          type: string
+          description: Units for distance, mi for miles or km for kilometers
+        pressure:
+          type: string
+          description: Units of barometric pressure, "in" for pounds per square inch or "mb" for millibars.
+        speed:
+          type: string
+          description: Units of speed, "mph" for miles per hour or "kph" for kilometers per hour.
+        temperature:
+          type: string
+          description: Degree units, "f" for Fahrenheit or "c" for Celsius.
+      description: Units for various aspects of the forecast. Note that the default is to use metric formats for the units (Celsius, kilometers, millibars, kilometers per hour).
+    Location:
+      title: location
+      type: object
+      properties:
+        city:
+          type: string
+          description: City name
+        country:
+          type: string
+          description: Two-character country code
+        region:
+          type: string
+          description: State, territory, or region, if given
+      description: The location of this forecast
+    Wind:
+      title: wind
+      type: object
+      properties:
+        chill:
+          type: integer
+          description: Wind chill in degrees
+          format: int32
+        direction:
+          type: integer
+          description: Wind direction, in degrees
+          format: int32
+        speed:
+          type: integer
+          description: Wind speed, in the units specified in the speed attribute of the units element (mph or kph)
+          format: int32
+      description: Forecast information about wind
+    Atmosphere:
+      title: atmosphere
+      type: object
+      properties:
+        humidity:
+          type: integer
+          description: humidity, in percent
+          format: int32
+        pressure:
+          type: integer
+          description: Barometric pressure, in the units specified by the pressure attribute of the yweather:units element ("in" or "mb").
+          format: int32
+        rising:
+          type: integer
+          description: 'State of the barometric pressure: steady (0), rising (1), or falling (2).'
+          format: int32
+        visibility:
+          type: integer
+          description: Visibility, in the units specified by the distance attribute of the units element ("mi" or "km"). Note that the visibility is specified as the actual value * 100. For example, a visibility of 16.5 miles will be specified as 1650. A visibility of 14 kilometers will appear as 1400.
+          format: int32
+      description: Forecast information about current atmospheric pressure, humidity, and visibility
+    Astronomy:
+      title: astronomy
+      type: object
+      properties:
+        sunrise:
+          type: string
+          description: Today's sunrise time. The time is a string in a local time format of "h:mm am/pm"
+        sunset:
+          type: string
+          description: Today's sunset time. The time is a string in a local time format of "h:mm am/pm"
+      description: Forecast information about current astronomical conditions
+    Image:
+      title: image
+      type: object
+      properties:
+        title:
+          type: string
+          description: The title of the image.
+        width:
+          type: string
+          description: The width of the image, in pixels
+        height:
+          type: string
+          description: The height of the image, in pixels
+        link:
+          type: string
+          description: Description of link
+        url:
+          type: string
+          description: The URL of Yahoo! Weather
+      description: The image used to identify this feed
+    Item:
+      title: item
+      type: object
+      properties:
+        title:
+          type: string
+          description: The forecast title and time.
+        lat:
+          type: string
+          description: The latitude of the location.
+        long:
+          type: string
+          description: The longitude of the location.
+        link:
+          type: string
+          description: The Yahoo! Weather URL for this forecast.
+        pubDate:
+          type: string
+          description: The date and time this forecast was posted, in the date format defined by [RFC822 Section 5](http://www.rfc-editor.org/rfc/rfc822.txt).
+        condition:
+          description: The current weather conditions
+          $ref: '#/components/schemas/Condition'
+        forecast:
+          type: array
+          items:
+            $ref: '#/components/schemas/ForecastArray'
+          description: ''
+        description:
+          type: string
+          description: A simple summary of the current conditions and tomorrow's forecast, in HTML format, including a link to Yahoo! Weather for the full forecast.
+        guid:
+          type: string
+          description: Unique identifier for the forecast, made up of the location ID, the date, and the time.
+          format: uuid
+      description: The item element contains current conditions and forecast for the given location. There are multiple weather forecast elements for today and tomorrow.
+    Condition:
+      title: condition
+      type: object
+      properties:
+        code:
+          type: integer
+          description: The condition code for this forecast. You could use this code to choose a text description or image for the forecast. The possible values for this element are described in the [Condition Codes](https://developer.yahoo.com/weather/).documentation.html.
+          format: int32
+        date:
+          type: string
+          description: The current date and time for which this forecast applies. The date is in RFC822 Section 5 format.
+        temp:
+          type: integer
+          description: The current temperature, in the units specified by the units element.
+          format: int32
+        text:
+          type: string
+          description: A textual description of conditions
+      description: The current weather conditions
+    ForecastArray:
+      title: forecast array
+      type: object
+      properties:
+        code:
+          type: integer
+          description: The condition code for this forecast. You could use this code to choose a text description or image for the forecast. The possible values for this element are described in the [Condition Codes](https://developer.yahoo.com/weather/documentation.html#codes).
+          format: int32
+        date:
+          type: string
+          description: The date to which this forecast applies. The date is in 'dd Mmm yyyy' format, for example '30 Nov 2005'
+        day:
+          type: string
+          description: Day of the week to which this forecast applies. Possible values are Mon Tue Wed Thu Fri Sat Sun.
+        high:
+          type: integer
+          description: The forecasted high temperature for this day, in the units specified by the units element.
+          format: int32
+        low:
+          type: integer
+          description: The forecasted low temperature for this day, in the units specified by the units element.
+          format: int32
+        text:
+          type: string
+          description: A textual description of conditions
+      description: The weather forecast for a specific day. The item element contains multiple forecast elements for today and tomorrow.
+    Guid:
+      title: guid
+      type: object
+      properties:
+        isPermaLink:
+          type: string
+          description: The attribute isPermaLink is false.
+      description: Unique identifier for the forecast, made up of the location ID, the date, and the time.
+  securitySchemes:
+    Mashape-Key:
+      type: apiKey
+      description: ''
+      name: X-Mashape-Key
+      in: header
+security:
+- Mashape-Key: []

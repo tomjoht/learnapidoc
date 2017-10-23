@@ -7,7 +7,7 @@ folders:
   class: first
   folderitems:
 
-  - title: Book overview
+  - title: Overview
     jurl: /index.html
 
   - title: Foreword
@@ -193,7 +193,7 @@ folders:
   - title: "Case study: Switching tools to docs-as-code"
     jurl: /pubapis_switching_to_docs_as_code.html
 
-- title: Using REST API specifications
+- title: OpenAPI (Swagger) REST API specifications
   jurl: /restapispecifications.html
   folderitems:
 
