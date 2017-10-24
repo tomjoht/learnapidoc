@@ -5,10 +5,10 @@
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  padding: 15px;
   padding-left: 10px;
   background: #202020;
   color: #C1C2C3;
+  border: 0px;
 }
 
 
