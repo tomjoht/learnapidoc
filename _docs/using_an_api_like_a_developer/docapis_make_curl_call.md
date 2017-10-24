@@ -27,6 +27,7 @@ In this section, you'll use cURL to make the same weather API requests you made 
     ```
 
 3.  If you're on Windows, do the following:
+
     * Change the single quotation marks to double quotation marks
     * Remove the backslashes (`\`)
     * Add `-k` after `--get`  as well to work around security certificate issues.
@@ -100,11 +101,11 @@ In this section, you'll use cURL to make the same weather API requests you made 
     29 c, Thunderstorms at Singapore, Singapore
     ```
 
-    {% include random_ad.html %}
-
 ## Single and Double Quotes with Windows cURL requests
 
 Note that if you're using Windows to submit a lot of cURL requests, you'll eventually run into issues with single versus double quotes. Some API endpoints (usually for POST methods) require you to submit content in the body of the message request. The body content is formatted in JSON. Since you can't use double quotes inside of other double quotes, you run into issues in submitting cURL requests.
+
+{% include random_ad.html %}
 
 Here's the workaround. If you have to submit body content in JSON, you can store the content in a JSON file. Then you reference the file with an `@` symbol, like this:
 
