@@ -5,7 +5,6 @@ info:
   version: "2.1"
 servers:
 - url: https://simple-weather.p.mashape.com
-- url: https://another.simple-weather.p.mashape.com
   variables: {}
 paths:
   /aqi:
@@ -98,8 +97,6 @@ paths:
     get:
       tags:
         - Full Weather Data
-      servers:
-      - url: https://another.simple-weather.p.mashape.com
       summary: getWeatherData
       description: Get weather forecast with lots of details
       operationId: GetWeatherData
