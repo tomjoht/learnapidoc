@@ -31,7 +31,7 @@ Some popular GUI clients include the following:
 
 Of the various GUI clients available, Postman is probably the best option, since it allows you to save both calls and responses, is free, works on both Mac and PC, and is easy to configure.
 
-{: note}
+{: .note}
 A lot of times abstract concepts don't make sense until you can contextualize them with some kind of action. In this book, I'm following more of an act-first-then-understand type of methodology. After you do an activity, we'll explore the concepts in more depth. So if it seems like I'm glossing over concepts things now, like what a GET method is or a resource URL, hang in there. When we deep dive into these points later, things will be a lot clearer.
 
 {% include random_ad.html %}

@@ -8,29 +8,21 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-In the [Swagger tutorial](pubapis_swagger.html), I referenced a Swagger contract that you simply plugged into a Swagger UI project. In this section, we'll dive more deeply into the Swagger specification file (but not too deep, because one could write an entire book on the subject).
+In the [Swagger tutorial](pubapis_swagger.html), I referenced an OpenAPI specification file that you simply plugged into a Swagger UI project. In this section, we'll dive more deeply into the Swagger specification file (but not too deep, because one could write an entire book on the subject).
 
-The following is the Swagger specification file (following the [3.0 version of the OpenAPI (Swagger) spec](https://swaggerhub.com/blog/news/openapi-3-0-swaggerhub-support/)) that I created for the [sample Mashape Weather API](https://market.mashape.com/fyhao/weather-13). Note that this API builds off of a [Yahoo weather service API](https://developer.yahoo.com/weather/documentation.html), so the data returned in the `weather` and `weatherdata` endpoints is highly similar to the data returned by the Yahoo weather service API.
+The following is an [OpenAPI specification file](/learnapidoc/docs/rest_api_specifications/openapi_weather.yml)(following the [3.0 version of the OpenAPI (Swagger) spec](https://swaggerhub.com/blog/news/openapi-3-0-swaggerhub-support/)) that I created for the [sample Mashape Weather API](https://market.mashape.com/fyhao/weather-13). Note that this API builds off of a [Yahoo weather service API](https://developer.yahoo.com/weather/documentation.html), so the data returned in the `weather` and `weatherdata` endpoints is highly similar to the data returned by the Yahoo weather service API.
 
-
-{% if site.format == "web" %}
-* TOC
-{:toc}
-{% endif %}
-
-
-## Swagger 3.0 specification file
-
-
+You can view the OpenAPI specification file [embedded in Swagger UI here](pubapis_swagger_embedded.html).
 
 ```yaml
-openapi: 3.0.0
+openapi: "3.0.0"
 info:
   title: Weather API from Mashape
   description: "This is a sample spec that describes a Mashape Weather API as an example to demonstrate features in the Swagger-2.0 specification. This output is part of the <a href=\"http://idratherbewriting.com/learnapidoc\">Documenting REST API course</a> on my site. The Weather API displays forecast data by latitude and longitude. It's a simple weather API, but the data comes from Yahoo Weather Service. The weatherdata endpoint delivers the most robust package of information of the endpoints here.\n\nTo explore the API, you'll need an API key. You can sign up for an API through Mashape, or you can just use this one\\: `EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p`. For the latitude and longitude parameters, you can get this information from the URL of a location on Google Maps. For example, for Santa Clara, California, use the following\\:\n* **lat**: `37.3708698`\n* **lng**: `-122.037593` \n"
-  version: 2.1
+  version: "2.1"
 servers:
 - url: https://simple-weather.p.mashape.com
+- url: https://another.simple-weather.p.mashape.com
   variables: {}
 paths:
   /aqi:
@@ -43,7 +35,7 @@ paths:
       parameters:
       - name: lat
         in: query
-        description: latitude
+        description: "Latitude coordinates. Sunnyvale: 37.3708698"
         required: true
         style: form
         explode: false
@@ -51,7 +43,7 @@ paths:
           type: string
       - name: lng
         in: query
-        description: longitude
+        description: "Longitude coordinates. Sunnyvale: -122.037593"
         required: true
         style: form
         explode: false
@@ -77,6 +69,8 @@ paths:
         IsMultiContentStreaming: false
   /weather:
     get:
+      servers:
+      - url: https://simple-weather.p.mashape.com
       tags:
       - Weather Forecast
       summary: getWeather
@@ -85,7 +79,7 @@ paths:
       parameters:
       - name: lat
         in: query
-        description: latitude coordinates
+        description: "Latitude coordinates. Sunnyvale: 37.3708698"
         required: true
         style: form
         explode: false
@@ -93,7 +87,7 @@ paths:
           type: string
       - name: lng
         in: query
-        description: longitude coordinates
+        description: "Longitude coordinates. Sunnyvale: -122.037593"
         required: true
         style: form
         explode: false
@@ -120,14 +114,16 @@ paths:
   /weatherdata:
     get:
       tags:
-      - Weather Data
+        - Full Weather Data
+      servers:
+      - url: https://another.simple-weather.p.mashape.com
       summary: getWeatherData
       description: Get weather forecast with lots of details
       operationId: GetWeatherData
       parameters:
       - name: lat
         in: query
-        description: latitude
+        description: "Latitude coordinates. Sunnyvale: 37.3708698"
         required: true
         style: form
         explode: false
@@ -135,7 +131,7 @@ paths:
           type: string
       - name: lng
         in: query
-        description: longitude
+        description: "Longitude coordinates. Sunnyvale: -122.037593"
         required: true
         style: form
         explode: false
@@ -465,13 +461,14 @@ components:
   securitySchemes:
     Mashape-Key:
       type: apiKey
-      description: ''
+      description: "Your Mashape key. If you don't have one, you can use `EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p`."
       name: X-Mashape-Key
       in: header
 security:
 - Mashape-Key: []
 ```
 
-{% include tip.html content="If you have a spec in 2.0 and want to convert it to 3.0, you can use [APIMATIC](https://apimatic.io/transformer) to convert it automatically. You can also use APIMATIC to transform your spec file into a number of other outputs, such as RAML, Postman, or API Blueprint. To see the difference between the 2.0 and the 3.0 code, you can copy these code samples to separate files and then use an application like Diffmerge to highlight the differences." %}
+{: .tip }
+If you have a spec in 2.0 and want to convert it to 3.0, you can use [APIMATIC](https://apimatic.io/transformer) to convert it automatically. You can also use APIMATIC to transform your spec file into a number of other outputs, such as RAML, Postman, or API Blueprint. To see the difference between the 2.0 and the 3.0 code, you can copy these code samples to separate files and then use an application like Diffmerge to highlight the differences.
 
 {% include random_ad.html %}

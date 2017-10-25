@@ -209,6 +209,9 @@ folders:
   - title: Sample OpenAPI (Swagger) specification file
     jurl: /pubapis_swagger_sample_specification_file.html
 
+  - title: Embedded Swagger UI Display in Jekyll
+    jurl: /pubapis_swagger_embedded.html
+
   - title: Manage OpenAPI (Swagger) projects with SwaggerHub
     jurl: /pubapis_swaggerhub_smartbear.html
 
