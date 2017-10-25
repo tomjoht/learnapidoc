@@ -61,20 +61,22 @@ paths:
       parameters:
       - name: lat
         in: query
-        description: "Latitude coordinates. Sunnyvale: 37.3708698"
+        description: "Latitude coordinates. "
         required: true
         style: form
         explode: false
         schema:
           type: string
+          example: 37.3708698
       - name: lng
         in: query
-        description: "Longitude coordinates. Sunnyvale: -122.037593"
+        description: "Longitude coordinates."
         required: true
         style: form
         explode: false
         schema:
           type: string
+          example: -122.037593
       responses:
         200:
           description: weather response
