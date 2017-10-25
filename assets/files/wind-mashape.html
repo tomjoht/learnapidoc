@@ -35,6 +35,7 @@ function checkWind() {
 
     $("#wind_speed").append (response.query.results.channel.wind.speed);
     $("#wind_direction").append (response.query.results.channel.wind.direction);
+    $("#wind_direction").append (" degrees");
     $("#wind_chill").append (response.query.results.channel.wind.chill);
     $("#temperature").append (response.query.results.channel.units.temperature);
     $("#speed").append (response.query.results.channel.units.speed);
