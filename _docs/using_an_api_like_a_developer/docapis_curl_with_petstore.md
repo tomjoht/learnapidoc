@@ -65,7 +65,7 @@ A lot of APIs require you to post requests containing JSON messages in the body.
     curl -X POST --header "Content-Type: application/json" --header "Accept: application/json" -d @mypet.json "http://petstore.swagger.io/v2/pet"
     ```
 
-    The response should look something like this:
+    The `Content-Type` indicates the type of content submitted in the request body. The `Accept` indicates the type of content we will accept in the response. The response should look something like this:
 
     ```json
     {"id":51231236,"category":{"id":4,"name":"testexecution"},"name":"fluffernutter","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}

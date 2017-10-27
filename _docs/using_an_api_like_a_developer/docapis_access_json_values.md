@@ -105,8 +105,4 @@ Let's say you wanted to print part of the JSON (the description element) to the 
     </html>
    ```
 
-    Here's the result:
-
-    <img src="images/weatherdatabrowserdisplay.png" alt="Printing JSON to the page" />
-
-    Now change the display to access the wind speed instead.
+    Here's <a href="/learnapidoc/assets/files/weatherdata-forecast.html">the result</a>.

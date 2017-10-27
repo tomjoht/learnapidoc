@@ -293,7 +293,7 @@ curl -i \
 
 (Line breaks are problematic on Windows, so I don't recommend formatting cURL requests like this.)
 
-The `Accept` header instructs the server to process the post body as JSON.
+The `Accept` header tells the server that the only format we will accept in the response is JSON.
 
 ## Summary
 

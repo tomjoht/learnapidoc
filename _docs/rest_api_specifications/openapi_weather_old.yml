@@ -1,20 +1,3 @@
----
-title: "Sample OpenAPI (Swagger) specification file"
-permalink: /pubapis_swagger_sample_specification_file.html
-course: "Documenting REST APIs"
-sidebar: docapis
-weight: 8.26
-section: restapispecifications
-path1: /restapispecifications.html
----
-
-In the [Swagger tutorial](pubapis_swagger.html), I referenced an OpenAPI specification file that you simply plugged into a Swagger UI project. In this section, we'll dive more deeply into the Swagger specification file (but not too deep, because one could write an entire book on the subject).
-
-The following is an [OpenAPI specification file](/learnapidoc/docs/rest_api_specifications/openapi_weather.yml)(following the [3.0 version of the OpenAPI (Swagger) spec](https://swaggerhub.com/blog/news/openapi-3-0-swaggerhub-support/)) that I created for the [sample Mashape Weather API](https://market.mashape.com/fyhao/weather-13). Note that this API builds off of a [Yahoo weather service API](https://developer.yahoo.com/weather/documentation.html), so the data returned in the `weather` and `weatherdata` endpoints is highly similar to the data returned by the Yahoo weather service API.
-
-You can view the OpenAPI specification file [embedded in Swagger UI here](pubapis_swagger_embedded.html).
-
-```yaml
 openapi: "3.0.0"
 info:
   title: Weather API from Mashape
@@ -22,7 +5,6 @@ info:
   version: "2.1"
 servers:
 - url: https://simple-weather.p.mashape.com
-- url: https://another.simple-weather.p.mashape.com
   variables: {}
 paths:
   /aqi:
@@ -79,20 +61,22 @@ paths:
       parameters:
       - name: lat
         in: query
-        description: "Latitude coordinates. Sunnyvale: 37.3708698"
+        description: "Latitude coordinates. "
         required: true
         style: form
         explode: false
         schema:
           type: string
+          example: 37.3708698
       - name: lng
         in: query
-        description: "Longitude coordinates. Sunnyvale: -122.037593"
+        description: "Longitude coordinates."
         required: true
         style: form
         explode: false
         schema:
           type: string
+          example: -122.037593
       responses:
         200:
           description: weather response
@@ -464,9 +448,3 @@ components:
       in: header
 security:
 - Mashape-Key: []
-```
-
-{: .tip }
-If you have a spec in 2.0 and want to convert it to 3.0, you can use [APIMATIC](https://apimatic.io/transformer) to convert it automatically. You can also use APIMATIC to transform your spec file into a number of other outputs, such as RAML, Postman, or API Blueprint. To see the difference between the 2.0 and the 3.0 code, you can copy these code samples to separate files and then use an application like Diffmerge to highlight the differences.
-
-{% include random_ad.html %}

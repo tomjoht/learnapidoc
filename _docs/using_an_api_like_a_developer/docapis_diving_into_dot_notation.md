@@ -9,7 +9,7 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-Let's dive into dot notation a little more.
+In the [previous topic](docapis_access_json_values.html), you accessed and printed a specific JSON value to the page. Let's dive into dot notation a little more.
 
 You use a dot after the object name to access its properties. For example, suppose you have an object called `data`:
 
@@ -158,6 +158,7 @@ function checkWind() {
 
     $("#wind_speed").append (response.query.results.channel.wind.speed);
     $("#wind_direction").append (response.query.results.channel.wind.direction);
+    $("#wind_direction").append (" degrees");
     $("#wind_chill").append (response.query.results.channel.wind.chill);
     $("#temperature").append (response.query.results.channel.units.temperature);
     $("#speed").append (response.query.results.channel.units.speed);
@@ -184,8 +185,9 @@ A few things are different here, but it's essentially the same code:
 
 When you load the page and click the button, the following should appear:
 
-<img src="images/windconditionsfinaloutput.png" alt="Final REST API" />
+<a href="/learnapidoc/assets/files/wind-mashape.html"><img src="images/windconditionsfinaloutput.png" alt="Final REST API" /></a>
 
+You can view the file <a href="/learnapidoc/assets/files/wind-mashape.html">here</a>.
 <hr />
 
 **Answers to "Exercise with dot notation activity"**

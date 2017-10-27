@@ -1,0 +1,11 @@
+{% unless site.format == "pdf" %}
+
+
+<script>
+$( document ).ready(function() {
+        $('.box{{include.step}}').addClass('active');
+        });
+</script>
+
+{% include {{include.map}} %}
+{% endunless %}

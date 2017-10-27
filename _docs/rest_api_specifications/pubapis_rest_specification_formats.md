@@ -4,11 +4,11 @@ permalink: /pubapis_rest_specification_formats.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 8.0
-section: restapispecifications 
+section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-When I [introduced REST APIs](docapis_what_is_a_rest_api.html), I mentioned that REST APIs follow an architectural style, not a specific standard. However, there are several REST specifications that have been developed to try to provide some standards about how REST APIs are described. The three most popular REST API specifications are as follows: [Swagger (formally called Open API)](pubapis_swagger_intro.html), [RAML](pubapis_raml.html), and [API Blueprint](pubapis_api_blueprint.html).
+When I [introduced REST APIs](docapis_what_is_a_rest_api.html), I mentioned that REST APIs follow an architectural style, not a specific standard. However, there are several REST specifications that have been developed to try to provide some standards about how REST APIs are described. The three most popular REST API specifications are as follows: [OpenAPi (formally called Swagger)](pubapis_swagger_intro.html), [RAML](pubapis_raml.html), and [API Blueprint](pubapis_api_blueprint.html).
 
 By far, the Swagger / Open API specification is the most popular, with the largest community, momentum, and history. Because of this, I spend the most time on Swagger here. Overall, these specifications for REST APIs lead to better documentation, tooling, and structure with REST APIs.
 
@@ -23,7 +23,7 @@ In a [survey on API documentation](survey_automating_api_docs.html), I asked peo
 
 In my opinion, these specifications should certainly be used, as they not only lead to predictable, industry-consistent experiences for users of your APIs, they also force you to standardize on API terminology and give users a way to learn by doing as they try out the endpoints with real parameters and data.
 
-Most of all, the specifications give you a kind of template to fill out with your API. This template makes it clear what information you need, how you organize and structure the information, and other details. This kind of template, standardized and highly valued within the API community, won't pit you against your engineers as you make decisions about the terms to use and what users really need.
+Most of all, the specifications give you a template to fill out with your API. This template makes it clear what information you need, how you organize and structure the information, and other details. This kind of template, standardized and highly valued within the API community, won't pit you against your engineers as you make decisions about the terms to use and what users really need.
 
 {% include random_ad.html %}
 
