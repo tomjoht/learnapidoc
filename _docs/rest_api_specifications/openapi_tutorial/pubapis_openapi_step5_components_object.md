@@ -10,6 +10,9 @@ path1: /restapispecifications.html
 
 {% include workflow_map.html step="5" map="content/openapi_tutorial_map.html"  %}
 
+{: .note}
+Content is under construction here...please be patient.
+
 The `schema` refers to the model of an object, such as the data type, the content, the hierarchy, and so on. Describing the schema of complex responses can be the most challenging part of the spec, and while our Mashape API is simple, the response from the `weatherdata` endpoint is on the complex side.
 
 Think of the `components` object like an appendix where the details are provided. You don't want to clutter up your spec with all the gory details of response and request schemas, so you bury this information in the `components` object. If multiple parts of your spec have the same schema, you can point the multiple references to the same object in your `components` object, and in so doing single source the content.

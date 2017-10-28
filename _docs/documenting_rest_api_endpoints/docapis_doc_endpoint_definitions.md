@@ -61,7 +61,7 @@ If you set off your code block with `pre` tags (instead of backticks as is commo
 
 Curly braces are a convention that users will understand. In the above example, almost no URL uses curly braces in the actual path syntax, so the `{campaign_id}` is an obvious placeholder.
 
-Another convention it to represent parameter values with a colon, like this:
+Another convention is to represent parameter values with a colon, like this:
 
 ```
 /campaigns/:campaign_id/actions/send

@@ -10,6 +10,8 @@ path1: /restapispecifications.html
 
 {% include workflow_map.html step="4" map="content/openapi_tutorial_map.html"  %}
 
+{: .note}
+Content is under construction here...please be patient.
 
 This is the meat of the spec, so let's break this up a bit between a path object, path item object, and operation object.
 

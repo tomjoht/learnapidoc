@@ -9,3 +9,6 @@ path1: /restapispecifications.html
 ---
 
 {% include workflow_map.html step="7" map="content/openapi_tutorial_map.html"  %}
+
+{: .note}
+Content is under construction here...please be patient.

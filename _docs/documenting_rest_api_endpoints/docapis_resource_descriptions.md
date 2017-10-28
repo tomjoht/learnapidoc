@@ -165,7 +165,7 @@ I start by making a list of what the resource contains.
 <div class="docSample">
 <p><b>Surfreport</b></p>
 
-<ul><li>shows surfing conditions about surf height, water temperature, wind, and tide.</li>
+<ul><li>shows surfing conditions about surf height, water temperature, wind, and tide</li>
 <li>must pass in a specific beach ID</li>
 <li>gives overall recommendation about whether to go surfing</li>
 <li>conditions are broken out by hour</li>

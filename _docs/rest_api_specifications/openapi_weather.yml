@@ -2,7 +2,15 @@ openapi: "3.0.0"
 info:
   title: Weather API from Mashape
   description: "This is a sample spec that describes a Mashape Weather API as an example to demonstrate features in the Swagger-2.0 specification. This output is part of the <a href=\"http://idratherbewriting.com/learnapidoc\">Documenting REST API course</a> on my site. The Weather API displays forecast data by latitude and longitude. It's a simple weather API, but the data comes from Yahoo Weather Service. The weatherdata endpoint delivers the most robust package of information of the endpoints here.\n\nTo explore the API, you'll need an API key. You can sign up for an API through Mashape, or you can just use this one\\: `EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p`. For the latitude and longitude parameters, you can get this information from the URL of a location on Google Maps. For example, for Santa Clara, California, use the following\\:\n* **lat**: `37.3708698`\n* **lng**: `-122.037593` \n"
-  version: "2.1"
+  version: "1.0"
+  termsOfService: https://konghq.com/terms/
+  contact:
+    name: fyhao
+    url: https://market.mashape.com/fyhao
+    email: some_email@gmail.com
+  license:
+    name: Limited license
+    url: https://konghq.com/terms/
 servers:
 - url: https://simple-weather.p.mashape.com
 paths:
@@ -162,26 +170,28 @@ components:
                   properties:
                     units:
                       description: Units for various aspects of the forecast. Note that the default is to use metric formats for the units (Celsius, kilometers, millibars, kilometers per hour).
-                      Units:
-                        description: Units for various aspects of the forecast. Note that the default is to use metric formats for the units (Celsius, kilometers, millibars, kilometers per hour).
-                        type: object
-                        properties:
-                          distance:
-                            type: string
-                            description: Units for distance, mi for miles or km for kilometers
-                            example: km
-                          pressure:
-                            type: string
-                            description: Units of barometric pressure, "in" for pounds per square inch or "mb" for millibars.
-                            example: mb
-                          speed:
-                            type: string
-                            description: Units of speed, "mph" for miles per hour or "kph" for kilometers per hour.
-                            example: km/h
-                          temperature:
-                            type: string
-                            description: Degree units, "f" for Fahrenheit or "c" for Celsius.
-                            example: C
+                      type: object
+                      properties:
+                        Units:
+                          description: Units for various aspects of the forecast. Note that the default is to use metric formats for the units (Celsius, kilometers, millibars, kilometers per hour).
+                          type: object
+                          properties:
+                            distance:
+                              type: string
+                              description: Units for distance, mi for miles or km for kilometers
+                              example: km
+                            pressure:
+                              type: string
+                              description: Units of barometric pressure, "in" for pounds per square inch or "mb" for millibars.
+                              example: mb
+                            speed:
+                              type: string
+                              description: Units of speed, "mph" for miles per hour or "kph" for kilometers per hour.
+                              example: km/h
+                            temperature:
+                              type: string
+                              description: Degree units, "f" for Fahrenheit or "c" for Celsius.
+                              example: C
 
                     title:
                       type: string

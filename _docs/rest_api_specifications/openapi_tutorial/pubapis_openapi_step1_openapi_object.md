@@ -14,7 +14,7 @@ path1: /restapispecifications.html
 
 ## The root-level objects in OpenAPI spec=
 
-There are 8 objects at the root level in the OpenAPI 3.0 spec. There are many nested objects within these root level objects, but at the root level, there are just these:
+There are 8 objects at the root level in the OpenAPI 3.0 spec. There are many nested objects within these root level objects, but at the root level, there are just these objects:
 
 * [openapi](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#oasObject)
 * [info](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#infoObject)
@@ -29,7 +29,7 @@ The whole document (the object that contains these 8 root level objects) is an o
 
 ## Swagger Editor
 
-As you work on your specification, feel free to use the [Swagger Editor](https://swagger.io/swagger-editor/). However, the Swagger Editor will validate your content in real-time, and it will probably take a while (the later steps probably) until all validation errors finally disappear.
+As you work on your specification, feel free to use the [Swagger Editor](https://swagger.io/swagger-editor/). However, the Swagger Editor will validate your content in real-time, and you will see validation errors until you finish coding the YAML file.
 
 ## Step 1: Add root-level objects
 
@@ -62,4 +62,10 @@ In the [openapi](https://github.com/OAI/OpenAPI-Specification/blob/master/versio
 openapi: "3.0.0"
 ```
 
-In the Swagger UI display, a 3.0.0 tag appears to the right of the API name.
+This specifies which schema is used to validate the spec.
+
+In the Swagger UI display, an "OAS3" tag appears to the right of the API name.
+
+<img src="/learnapidoc/images/openapitutorial_version.png"/>
+
+If you want to show a validator badge, you can add one manually with [this code](https://github.com/swagger-api/validator-badge).

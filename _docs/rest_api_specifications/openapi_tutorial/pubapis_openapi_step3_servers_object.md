@@ -10,6 +10,9 @@ path1: /restapispecifications.html
 
 {% include workflow_map.html step="3" map="content/openapi_tutorial_map.html"  %}
 
+{: .note}
+Content is under construction here...please be patient.
+
 ```yaml
 servers:
 - url: https://simple-weather.p.mashape.com
