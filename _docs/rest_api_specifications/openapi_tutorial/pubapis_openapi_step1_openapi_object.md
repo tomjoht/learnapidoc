@@ -1,5 +1,5 @@
 ---
-title: "OpenAPI tutorial: step 1"
+title: "OpenAPI tutorial step 1: The openapi object"
 permalink: /pubapis_openapi_step1_openapi_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
@@ -12,7 +12,7 @@ path1: /restapispecifications.html
 {% include workflow_map.html step="1" map="content/openapi_tutorial_map.html"  %}
 
 
-## The root-level objects in OpenAPI spec=
+## The root-level objects in OpenAPI spec
 
 There are 8 objects at the root level in the OpenAPI 3.0 spec. There are many nested objects within these root level objects, but at the root level, there are just these objects:
 

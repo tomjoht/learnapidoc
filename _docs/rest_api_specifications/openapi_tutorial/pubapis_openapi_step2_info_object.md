@@ -1,5 +1,5 @@
 ---
-title: "OpenAPI tutorial: step 2"
+title: "OpenAPI tutorial step 2: The info object"
 permalink: /pubapis_openapi_step2_info_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
@@ -37,7 +37,7 @@ Many of these fields are optional.
 
 In the Swagger UI display, this information appears at the top:
 
-<img src="/learnapidoc/images/openapitutorial_info_object.png"/>
+<img src="/learnapidoc/images/openapitutorial_info_object.png" style="border:1px solid #dedede;"/>
 
 {: .note}
 If your content has a colon in it, either escape the colon by putting a backslash before it, or enclose the whole property value in quotation marks. If you do enclose the entire value in quotation marks, you'll need to escape an internal quotation marks in the value.

@@ -11,8 +11,12 @@ info:
   license:
     name: Limited license
     url: https://konghq.com/terms/
+externalDocs:
+  description: Full documentation for the API
+  url: https://market.mashape.com/fyhao/weather-13
 servers:
-- url: https://simple-weather.p.mashape.com
+  - url: https://simple-weather.p.mashape.com
+    description: Production server
 paths:
   /aqi:
     get:
@@ -21,23 +25,28 @@ paths:
       summary: getAqi
       description: Gets the air quality index
       operationId: GetAqi
+      externalDocs:
+        description: More details
+        url: "https://market.mashape.com/fyhao/weather-13#aqi"
       parameters:
       - name: lat
         in: query
-        description: "Latitude coordinates. Sunnyvale: 37.3708698"
+        description: "Latitude coordinates."
         required: true
         style: form
         explode: false
         schema:
           type: string
+        example: 37.3708698
       - name: lng
         in: query
-        description: "Longitude coordinates. Sunnyvale: -122.037593"
+        description: "Longitude coordinates."
         required: true
         style: form
         explode: false
         schema:
           type: string
+        example: -122.037593
       responses:
         200:
           description: AQI response
@@ -51,11 +60,6 @@ paths:
       deprecated: false
       security:
       - Mashape-Key: []
-      x-operation-settings:
-        CollectParameters: false
-        AllowDynamicQueryParameters: false
-        AllowDynamicFormParameters: false
-        IsMultiContentStreaming: false
   /weather:
     get:
       servers:
@@ -65,23 +69,28 @@ paths:
       summary: getWeather
       description: Gets the weather forecast in abbreviated form
       operationId: GetWeather
+      externalDocs:
+        description: More details
+        url: "https://market.mashape.com/fyhao/weather-13#weather"
       parameters:
       - name: lat
         in: query
-        description: "Latitude coordinates. Sunnyvale: 37.3708698"
+        description: "Latitude coordinates."
         required: true
         style: form
         explode: false
         schema:
           type: string
+        example: 37.3708698
       - name: lng
         in: query
-        description: "Longitude coordinates. Sunnyvale: -122.037593"
+        description: "Longitude coordinates."
         required: true
         style: form
         explode: false
         schema:
           type: string
+        example: -122.037593
       responses:
         200:
           description: weather response
@@ -95,11 +104,7 @@ paths:
       deprecated: false
       security:
       - Mashape-Key: []
-      x-operation-settings:
-        CollectParameters: false
-        AllowDynamicQueryParameters: false
-        AllowDynamicFormParameters: false
-        IsMultiContentStreaming: false
+
   /weatherdata:
     get:
       tags:
@@ -107,23 +112,28 @@ paths:
       summary: getWeatherData
       description: Get weather forecast with lots of details
       operationId: GetWeatherData
+      externalDocs:
+        description: More details
+        url: "https://market.mashape.com/fyhao/weather-13#weatherdata"
       parameters:
       - name: lat
         in: query
-        description: "Latitude coordinates. Sunnyvale: 37.3708698"
+        description: "Latitude coordinates."
         required: true
         style: form
         explode: false
         schema:
           type: string
+        example: 37.3708698
       - name: lng
         in: query
-        description: "Longitude coordinates. Sunnyvale: -122.037593"
+        description: "Longitude coordinates."
         required: true
         style: form
         explode: false
         schema:
           type: string
+        example: -122.037593
       responses:
         200:
           description: Successful operation
@@ -135,11 +145,6 @@ paths:
       deprecated: false
       security:
       - Mashape-Key: []
-      x-operation-settings:
-        CollectParameters: false
-        AllowDynamicQueryParameters: false
-        AllowDynamicFormParameters: false
-        IsMultiContentStreaming: false
 components:
   schemas:
     WeatherdataResponse:

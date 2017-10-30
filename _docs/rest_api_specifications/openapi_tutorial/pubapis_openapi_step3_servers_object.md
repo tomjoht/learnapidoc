@@ -1,5 +1,5 @@
 ---
-title: "OpenAPI tutorial: step 3"
+title: "OpenAPI tutorial step 3: The servers object"
 permalink: /pubapis_openapi_step3_servers_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
@@ -10,10 +10,20 @@ path1: /restapispecifications.html
 
 {% include workflow_map.html step="3" map="content/openapi_tutorial_map.html"  %}
 
-{: .note}
-Content is under construction here...please be patient.
+In the [`servers` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#serverObject), you specify the basepath used in your API requests.
 
 ```yaml
 servers:
-- url: https://simple-weather.p.mashape.com
+  - url: https://simple-weather.p.mashape.com
+    description: Production server
 ```
+
+Each of your paths (or endpoints) will be appended to the server URL when users make "Try it out" requests. For example, if one of the paths is `/weatherdata`, when Swagger UI submits the request, it will submit it to `{server URL}{path}` or `https://simple-weather.p.mashape.com/weatherdata`.
+
+You have some flexibility and configuration options for your server URL. You can specify multiple server URLs that might relate to different environments (test, beta, production). If you have multiple server URLs, users can select the environment from a servers drop-down box. You can also incorporate variables into the server URL that can be populated at runtime by your server.
+
+Additionally, if different paths (endpoints) require different server URLs, you can add the `servers` object as a sub-property for the `path`. The locally declared servers URL will override the global servers URL. See ["Overriding Servers"](https://swagger.io/docs/specification/api-host-and-base-path/) in the "API Server and Base URL" page for more details.
+
+In Swagger UI, here's how the servers URL appears to users:
+
+<img src="/learnapidoc/images/openapi_serversurl.png"/>

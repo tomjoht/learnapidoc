@@ -1,5 +1,5 @@
 ---
-title: "OpenAPI tutorial: step 5"
+title: "OpenAPI tutorial step 5: The components object"
 permalink: /pubapis_openapi_step5_components_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
@@ -19,6 +19,13 @@ Think of the `components` object like an appendix where the details are provided
 
 Before we describe the response, let me display the `weatherdata` response again as a reminder. This response contains multiple nested objects at various levels of hierarchy.
 
+<style>
+pre.nowrappy {
+  white-space: pre;
+}
+</style>
+
+{: .nowrappy}
 ```json
 {
   "query": {
@@ -173,6 +180,13 @@ Before we describe the response, let me display the `weatherdata` response again
 
 There are a couple of ways to go about describing this. You could create one long description like this:
 
+<style>
+.nowrappy pre.highlight {
+  white-space: pre;
+}
+</style>
+
+{: .nowrappy}
 ```yaml
 components:
   schemas:
