@@ -22,8 +22,22 @@ Each of your paths (or endpoints) will be appended to the server URL when users 
 
 You have some flexibility and configuration options for your server URL. You can specify multiple server URLs that might relate to different environments (test, beta, production). If you have multiple server URLs, users can select the environment from a servers drop-down box. You can also incorporate variables into the server URL that can be populated at runtime by your server.
 
+For example, you can specify multiple server URLs like this:
+
+```yaml
+servers:
+  - url: https://simple-weather.p.mashape.com
+    description: Production server
+  - url: https://beta.simple-weather.p.mashape.com
+    description: Beta server
+  - url: https://some-other.simple-weather.p.mashape.com
+    description: Some other server
+```
+
 Additionally, if different paths (endpoints) require different server URLs, you can add the `servers` object as a sub-property for the `path`. The locally declared servers URL will override the global servers URL. See ["Overriding Servers"](https://swagger.io/docs/specification/api-host-and-base-path/) in the "API Server and Base URL" page for more details.
 
-In Swagger UI, here's how the servers URL appears to users:
+In Swagger UI, here's how the servers appear to users with multiple server URLs:
 
 <img src="/learnapidoc/images/openapi_serversurl.png"/>
+
+If you have just one URL, you see see a drop-down box, but with just one option.

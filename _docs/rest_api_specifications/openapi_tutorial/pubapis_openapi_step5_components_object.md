@@ -36,7 +36,7 @@ responses:
           $ref: '#/components/schemas/WeatherdataResponse'
 ```
 
-The `$ref` points to a reference stored in the `components` object. Before we describe the response in the `components` object, let's look at the `weatherdata` response in a bit more detail. This response contains multiple nested objects at various levels of hierarchy.
+The `$ref` points to a reference stored in the `components` object. Before we describe the response in the `components` object, let's look at the `weatherdata` response in a bit more detail. This response contains multiple nested objects at various levels of hierarchy. See [Using $ref](https://swagger.io/docs/specification/using-ref/) for more details on this property.
 
 <style>
 pre.nowrappy {

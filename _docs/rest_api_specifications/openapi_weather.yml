@@ -1,7 +1,7 @@
 openapi: "3.0.0"
 info:
   title: Weather API from Mashape
-  description: "This is a sample spec that describes a Mashape Weather API as an example to demonstrate features in the Swagger-2.0 specification. This output is part of the <a href=\"http://idratherbewriting.com/learnapidoc\">Documenting REST API course</a> on my site. The Weather API displays forecast data by latitude and longitude. It's a simple weather API, but the data comes from Yahoo Weather Service. The weatherdata endpoint delivers the most robust package of information of the endpoints here.\n\nTo explore the API, you'll need an API key. You can sign up for an API through Mashape, or you can just use this one\\: `EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p`. For the latitude and longitude parameters, you can get this information from the URL of a location on Google Maps. For example, for Santa Clara, California, use the following\\:\n* **lat**: `37.3708698`\n* **lng**: `-122.037593` \n"
+  description: "This is a sample spec that describes a Mashape Weather API as an example to demonstrate features in the Swagger-2.0 specification. This output is part of the <a href=\"http://idratherbewriting.com/learnapidoc\">Documenting REST API course</a> on my site. The Weather API displays forecast data by latitude and longitude. It's a simple weather API, but the data comes from Yahoo Weather Service. The weatherdata endpoint delivers the most robust package of information of the endpoints here.\n\n To explore the API, you'll need an API key. You can sign up for an API through Mashape, or you can just use this one: `EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p`. For the latitude and longitude parameters, you can get this information from the URL of a location on Google Maps. For example, for Santa Clara, California, use the following:\n* **lat**: `37.3708698`\n* **lng**: `-122.037593`"
   version: "1.0"
   termsOfService: https://konghq.com/terms/
   contact:
@@ -31,22 +31,22 @@ paths:
       parameters:
       - name: lat
         in: query
-        description: "Latitude coordinates."
+        description: "Latitude coordinates. Sunnyvale: 37.3708698"
         required: true
         style: form
         explode: false
         schema:
           type: string
-        example: 37.3708698
+        example: "37.3708698"
       - name: lng
         in: query
-        description: "Longitude coordinates."
+        description: "Longitude coordinates. Sunnyvale: -122.037593"
         required: true
         style: form
         explode: false
         schema:
           type: string
-        example: -122.037593
+        example: "-122.037593"
       responses:
         200:
           description: AQI response
@@ -75,22 +75,22 @@ paths:
       parameters:
       - name: lat
         in: query
-        description: "Latitude coordinates."
+        description: "Latitude coordinates. Sunnyvale: 37.3708698"
         required: true
         style: form
         explode: false
         schema:
           type: string
-        example: 37.3708698
+        example: "37.3708698"
       - name: lng
         in: query
-        description: "Longitude coordinates."
+        description: "Longitude coordinates. Sunnyvale: -122.037593"
         required: true
         style: form
         explode: false
         schema:
           type: string
-        example: -122.037593
+        example: "-122.037593"
       responses:
         200:
           description: weather response
@@ -118,22 +118,22 @@ paths:
       parameters:
       - name: lat
         in: query
-        description: "Latitude coordinates."
+        description: "Latitude coordinates. Sunnyvale: 37.3708698"
         required: true
         style: form
         explode: false
         schema:
           type: string
-        example: 37.3708698
+        example: "37.3708698"
       - name: lng
         in: query
-        description: "Longitude coordinates."
+        description: "Longitude coordinates. Sunnyvale: -122.037593 "
         required: true
         style: form
         explode: false
         schema:
           type: string
-        example: -122.037593
+        example: "-122.037593"
       responses:
         200:
           description: Successful operation

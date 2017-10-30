@@ -129,22 +129,22 @@ paths:
       parameters:
       - name: lat
         in: query
-        description: "Latitude coordinates."
+        description: "Latitude coordinates. Sunnyvale: 37.3708698"
         required: true
         style: form
         explode: false
         schema:
           type: string
-        example: 37.3708698
+        example: "37.3708698"
       - name: lng
         in: query
-        description: "Longitude coordinates."
+        description: "Longitude coordinates. Sunnyvale: -122.037593"
         required: true
         style: form
         explode: false
         schema:
           type: string
-        example: -122.037593
+        example: "-122.037593"
       responses:
         200:
           description: AQI response
@@ -173,22 +173,22 @@ paths:
       parameters:
       - name: lat
         in: query
-        description: "Latitude coordinates."
+        description: "Latitude coordinates. Sunnyvale: 37.3708698"
         required: true
         style: form
         explode: false
         schema:
           type: string
-        example: 37.3708698
+        example: "37.3708698"
       - name: lng
         in: query
-        description: "Longitude coordinates."
+        description: "Longitude coordinates. Sunnyvale: -122.037593"
         required: true
         style: form
         explode: false
         schema:
           type: string
-        example: -122.037593
+        example: "-122.037593"
       responses:
         200:
           description: weather response
@@ -216,22 +216,22 @@ paths:
       parameters:
       - name: lat
         in: query
-        description: "Latitude coordinates."
+        description: "Latitude coordinates. Sunnyvale: 37.3708698"
         required: true
         style: form
         explode: false
         schema:
           type: string
-        example: 37.3708698
+        example: "37.3708698"
       - name: lng
         in: query
-        description: "Longitude coordinates."
+        description: "Longitude coordinates. Sunnyvale: -122.037593 "
         required: true
         style: form
         explode: false
         schema:
           type: string
-        example: -122.037593
+        example: "-122.037593"
       responses:
         200:
           description: Successful operation
