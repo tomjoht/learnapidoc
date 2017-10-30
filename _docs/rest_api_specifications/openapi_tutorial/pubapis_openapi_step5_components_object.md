@@ -11,13 +11,32 @@ path1: /restapispecifications.html
 {% include workflow_map.html step="5" map="content/openapi_tutorial_map.html"  %}
 
 {: .note}
-Content is under construction here...please be patient.
 
-The `schema` refers to the model of an object, such as the data type, the content, the hierarchy, and so on. Describing the schema of complex responses can be the most challenging part of the spec, and while our Mashape API is simple, the response from the `weatherdata` endpoint is on the complex side.
+In the previous step ([OpenAPI tutorial step 4: The paths object](pubapis_openapi_step4_paths_object.html), when you described the [`requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#requestBodyObject) and [`responses` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#responsesObject) objects, you had the option of using a [`schema`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#schemaObject) object to describe the model for the request or response. The `schema` refers to the hierarchy and nesting of the various objects or elements and their properties, data types, and other details.
 
-Think of the `components` object like an appendix where the details are provided. You don't want to clutter up your spec with all the gory details of response and request schemas, so you bury this information in the `components` object. If multiple parts of your spec have the same schema, you can point the multiple references to the same object in your `components` object, and in so doing single source the content.
+Describing the schema of complex responses can be the most challenging part of the spec, and while our Mashape API is simple, the response from the `weatherdata` endpoint is on the complex side. While you can define the model directly in the requestBody or responses object, you don't want to clutter up your spec with all the gory details, so you typicall include this information in the `components` object instead. Think of the `components` object like an appendix where the details are provided.  
 
-Before we describe the response, let me display the `weatherdata` response again as a reminder. This response contains multiple nested objects at various levels of hierarchy.
+There's another advantage to using the `components` object for your schema descriptions: if multiple parts of your spec have the same schema, you can point the multiple references to the same object in your `components` object, and in so doing single source the content.
+
+* TOC
+{:toc}
+
+## The weatherdata response
+
+In the previous step, the `responses` object for the `weatherdata` endpoint looked like this:
+
+```yaml
+responses:
+  200:
+    description: Successful operation
+    content:
+      application/json:
+        schema:
+          description: Successful operation
+          $ref: '#/components/schemas/WeatherdataResponse'
+```
+
+The `$ref` points to a reference stored in the `components` object. Before we describe the response in the `components` object, let's look at the `weatherdata` response in a bit more detail. This response contains multiple nested objects at various levels of hierarchy.
 
 <style>
 pre.nowrappy {
