@@ -89,6 +89,6 @@ Here's mine:
 <h2>Sample request</h2>
 
 <pre>
-curl --get --include 'https://simple-weather.p.mashap .com/surfreport/123?units=imperial&days=1&time=1433772000' -H 'X-Mashape-Key: APIKEY' -H 'Accept: application/json'
+curl --get --include 'https://simple-weather.p.mashape.com/surfreport/123?units=imperial&days=1&time=1433772000' -H 'X-Mashape-Key: APIKEY' -H 'Accept: application/json'
 </pre>
 </div>
