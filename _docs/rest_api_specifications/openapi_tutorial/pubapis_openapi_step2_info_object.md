@@ -14,6 +14,13 @@ path1: /restapispecifications.html
 
 The [info object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#infoObject) contains basic information about your API, including the title, a description, version, license, terms of service, and contact information.
 
+{% if site.format == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## Sample info object
+
 Here's an example:
 
 ```yaml

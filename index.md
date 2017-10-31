@@ -10,7 +10,7 @@ weight: 1.0
 class: first
 ---
 
-In this book on writing documentation for REST APIs, instead of just talking about abstract concepts, I contextualize REST APIs with a direct, hands-on approach.
+In this course on writing documentation for REST APIs, instead of just talking about abstract concepts, I contextualize REST APIs with a direct, hands-on approach.
 
 You'll learn about API documentation in the context of using some simple weather APIs to put a weather forecast on your site.
 
@@ -44,9 +44,9 @@ Finally, you'll dive into different ways to publish REST API documentation, expl
 
 You'll learn how to leverage templates, build interactive API consoles so users can try out requests and see responses, and learn different ways to host and publish your documentation.
 
-## Book organization
+## Course organization
 
-Organizationally, this book is divided into the following sections:
+Organizationally, this course is divided into the following sections:
 
 *  **Introduction to REST APIs**
 *  **Using a REST API like a developer**
@@ -69,9 +69,9 @@ Because the purpose of the course is to help you learn, there are many activitie
 
 As for the needed technical background for the course, you don't need any programming background or other prerequisites, but it will help to know some basic HTML, CSS, and JavaScript.
 
-If you do have some familiarity with programming concepts, you might speed through some of the sections and jump ahead to the topics you want to learn more about. This book assumes you're a beginner, though.
+If you do have some familiarity with programming concepts, you might speed through some of the sections and jump ahead to the topics you want to learn more about. This course assumes you're a beginner, though.
 
-Note that some of the code samples in this book use JavaScript. JavaScript may or may not be a language that you actually use when you document REST APIs, but most likely there will be some programming language or platform that becomes important to know.
+Note that some of the code samples in this course use JavaScript. JavaScript may or may not be a language that you actually use when you document REST APIs, but most likely there will be some programming language or platform that becomes important to know.
 
 JavaScript is one of the most useful and easy languages to become familiar with, so it works well in code samples for this introduction to REST API documentation. JavaScript allows you to test out code by merely opening it in your browser (rather than compiling it in an IDE).
 

@@ -7,10 +7,10 @@ folders:
   class: first
   folderitems:
 
-  - title: Overview
+  - title: Course Overview
     jurl: /index.html
 
-  - title: Foreword
+  - title: Course Background
     jurl: /docapis_foreword.html
 
   - title: About the author

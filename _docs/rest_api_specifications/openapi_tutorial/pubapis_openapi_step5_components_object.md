@@ -10,20 +10,83 @@ path1: /restapispecifications.html
 
 {% include workflow_map.html step="5" map="content/openapi_tutorial_map.html"  %}
 
-{: .note}
+In the previous step ([OpenAPI tutorial step 4: The paths object](pubapis_openapi_step4_paths_object.html), when you described the [`requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#requestBodyObject) and [`responses` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#responsesObject) objects, you used a [`schema`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#schemaObject) object to describe the model for the request or response. The `schema` refers to the fields, values, and structure (for example, the hierarchy and nesting of the various objects) of a JSON or YAML object. (See [What is a schema?](https://spacetelescope.github.io/understanding-json-schema/about.html#what-is-a-schema) for more details.) It's common to use a reference pointer for the `schema` object that points to more details in the `components` object.
 
-In the previous step ([OpenAPI tutorial step 4: The paths object](pubapis_openapi_step4_paths_object.html), when you described the [`requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#requestBodyObject) and [`responses` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#responsesObject) objects, you had the option of using a [`schema`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#schemaObject) object to describe the model for the request or response. The `schema` refers to the hierarchy and nesting of the various objects or elements and their properties, data types, and other details.
-
-Describing the schema of complex responses can be the most challenging part of the spec, and while our Mashape API is simple, the response from the `weatherdata` endpoint is on the complex side. While you can define the model directly in the requestBody or responses object, you don't want to clutter up your spec with all the gory details, so you typicall include this information in the `components` object instead. Think of the `components` object like an appendix where the details are provided.  
-
-There's another advantage to using the `components` object for your schema descriptions: if multiple parts of your spec have the same schema, you can point the multiple references to the same object in your `components` object, and in so doing single source the content.
-
+{% if site.format == "web" %}
 * TOC
 {:toc}
+{% endif %}
+
+## Reasons to use the components object
+
+Describing the schema of complex responses can be one of the more challenging aspects of the OpenAPI spec. While our Mashape weather API is simple, the response from the `weatherdata` endpoint is complex. Although you can define the schema directly in the `requestBody` or `responses` object, you typically don't list it there for two reasons:
+
+* You might want to re-use parts of the schema in other requests or responses. It's common to have the same object, such as `units` or `days`, appear in multiple places in an API. OpenAPI allows you to re-use these same definitions in multiple places without manually copying and pasting the content.
+* You don't want to clutter up your `paths` object with too many request and response details, since the `paths` object is already somewhat complex with several levels of objects.
+
+Instead of listing the schema for your requests and responses in the `paths` object, for more complex schemas (or for schemas that are re-used in multiple operations or paths), you typically use a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#referenceObject), that is, a reference pointer (`$ref`), that refers to a specific definition in the [`components` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#componentsObject).
+
+Think of the `components` object like an appendix where the re-usable details are provided. If multiple parts of your spec have the same schema, you point each of these references to the same object in your `components` object, and in so doing you single source the content.
+
+## Objects in components
+
+You can store a lot of different re-usable objects in the `components` object. The [`components` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#componentsObject) can contain these objects:
+
+* `schemas`
+* `responses`
+* `parameters`
+* `examples`
+* `requestBodies`
+* `headers`
+* `securitySchemes`
+* `links`
+* `callbacks`
+
+## Storing re-used parameters in components {#reused_parameters}
+
+In the Mashape Weather API, the `lat` and `lng` parameters remain the same for each of the paths. Rather than duplicate this same description in each path, we can store the object in the `components`.
+
+In the `path` object, rather than listing the parameter details, we simply include a `$ref` pointer that refers to the location in `components` that contains these details:
+
+```yaml
+parameters:
+      - $ref: '#/components/parameters/latParam'
+      - $ref: '#/components/parameters/lngParam'
+```
+
+Notice that the `parameters` are stored under `components/parameters`. Now let's define the parameters one time:
+
+```yaml
+components:
+  parameters:
+    latParam:
+      in: query
+      description: "Latitude coordinates."
+      required: true
+      style: form
+      explode: false
+      schema:
+        type: string
+      example: "37.3708698"
+    lngParam:
+      in: query
+      description: "Longitude coordinates."
+      required: true
+      style: form
+      explode: false
+      schema:
+        type: string
+      example: "-122.037593"
+```
+
+{: .tip}
+See [Using $ref](https://swagger.io/docs/specification/using-ref/) for more details on this standard JSON reference property.
 
 ## The weatherdata response
 
-In the previous step, the `responses` object for the `weatherdata` endpoint looked like this:
+For the `weatherdata` response, although we're not re-using objects across multiple `response` objects in our API, the response is so lengthy and complex, it's going to be better organized under `components`.
+
+If you recall in the previous step ([OpenAPI tutorial step 4: The paths object](pubapis_openapi_step4_paths_object.html), the `responses` object for the `weatherdata` endpoint looked like this:
 
 ```yaml
 responses:
@@ -36,7 +99,7 @@ responses:
           $ref: '#/components/schemas/WeatherdataResponse'
 ```
 
-The `$ref` points to a reference stored in the `components` object. Before we describe the response in the `components` object, let's look at the `weatherdata` response in a bit more detail. This response contains multiple nested objects at various levels of hierarchy. See [Using $ref](https://swagger.io/docs/specification/using-ref/) for more details on this property.
+The `$ref` points to a definition stored in the `components` object. Before we describe the response in the `components` object, let's look at the `weatherdata` response in detail. This response contains multiple nested objects at various levels.
 
 <style>
 pre.nowrappy {
@@ -486,9 +549,9 @@ components:
                           format: uuid
 ```
 
-One challenge is that it's difficult to keep all the levels straight. With so many nested objects, it's dizzying and confusing. But it works.
+One challenge is that it's difficult to keep all the levels straight. With so many nested objects, it's dizzying and confusing. Additionally, it's easy to make mistakes. Worst of all, you can't re-use the individual objects. This undercuts one of the main reasons for storing this object in `components` in the first place.
 
-Another approach is to make each object its own entity in the `components`. Whenever an object contains an object, add a `$ref` value that points to the object. This way objects remain shallow and you won't get lost in a sea of confusing sublevels. However, this method is really tedious and somewhat cumbersome as well.
+Another approach is to make each object its own entity in the `components`. Whenever an object contains an object, add a `$ref` value that points to the new object. This way objects remain shallow and you won't get lost in a sea of confusing sublevels.
 
 ```yaml
 components:
@@ -798,8 +861,34 @@ components:
       description: Unique identifier for the forecast, made up of the location ID, the date, and the time.
 ```
 
-Although I said to think of the `components` section like an appendix that simply provides the schema details for your endpoints, Swagger UI displays each object in `components` in a section called `Models` at the end of your Swagger UI display.
+Swagger UI displays each object in `components` in a section called `Models` at the end of your Swagger UI display. If you decided to consolidate all schemas into a single object, without using the `$ref` property to point to new objects, then you will see just one object in Models. To see this display, go to the [Sample Swagger UI display](learnapidoc/assets/files/swagger/), and in the **Explore** field at the top, paste in this URL: `/learnapidoc/docs/rest_api_specifications/openapi_weather_single_component.yml`.
 
-I'm not really sure why the Models section appears. If you use the latter method of breaking each object into its own entity in `components`, then each of these entities stands alone in the Models section.
+Because I want to re-use objects, I'm going to use the latter method in `components`, where each object contains `$ref` pointers to any sub-object it contains. As a result, the Models section looks like this:
 
-What might be the purpose of describing your responses and requests with such great detail like this? Swagger UI will take the description and display it in the Model view in Swagger UI, along with your descriptions of each parameter. It's a neat way of mixing in the objects and properties in your response along with the description.
+<img src="/learnapidoc/images/swaggerui_models_broken_out.png" />
+
+## Reason for models in the first place
+
+I'm not really sure why the Models section appears at all in the Swagger UI display. Apparently, this section was added by popular request because the online Swagger Editor showed the display, and many users asked for it to be incorporated into Swagger UI.
+
+You don't need this Models section in Swagger UI because both the request and response sections of Swagger UI provide a "Model" link that lets the user toggle to this view. For example:
+
+<img src="/learnapidoc/images/models_options_in_responses.png" />
+
+## Hiding the Models section
+
+You might confuse users by including the Models section. Currently, there isn't a [Swagger UI parameter](https://github.com/swagger-api/swagger-ui#parameters) to hide the Models section. To hide Models, simply add this style to the Swagger UI page:
+
+```html
+<style>
+section.models {
+    display: none;
+}
+</style>
+```
+
+## Describing a schema
+
+For most of the sections in `components`, you follow the same object descriptions as detailed in the rest of the spec. However, when describing the `schema`, you use standard [JSON schema definition language](https://tools.ietf.org/html/draft-wright-json-schema-validation-00) for this. In other words, you aren't merely using the OpenAPI spec. Here the OpenAPI spec feeds into the larger JSON definitions and description language for describing models. See the [schema object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#schemaObject) for details.
+
+To describe a `schema` object, I recommend that you look at some example schemas. See [3.0 examples here](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v3.0). I typically find an object that resembles what I'm trying to represent and mimic the same properties and structure. The `schema` object in 3.0 differs slightly from the schema object in 2.0. See this [post on Nordic APIs](https://nordicapis.com/whats-new-in-openapi-3-0/#jsonandotherschema) for details on what changed in 3.0.

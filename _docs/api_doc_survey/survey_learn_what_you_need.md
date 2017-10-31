@@ -57,7 +57,7 @@ For me, learning on my own is critical. Coming back to the math scenario, if you
 
 ## My favorite online resources
 
-I personally have found tremendous benefit in the many online resources available, particularly Safari Books Online, Lynda.com, Cave of Programming, Udemy, and other sources. Of course I regularly search for specific questions and land on sites like StackOverflow, Wikipedia, or other online tutorials, but when I need to learn something from the ground up, I need a well-structured online course or book that walks me through the basics, building chapter by chapter or module by module.
+I personally have found tremendous benefit in the many online resources available, particularly Safari Books Online, Lynda.com, Cave of Programming, Udemy, and other sources. Of course I regularly search for specific questions and land on sites like StackOverflow, Wikipedia, or other online tutorials, but when I need to learn something from the ground up, I need a well-structured online course or guide that walks me through the basics, building chapter by chapter or module by module.
 
 ## College classes
 

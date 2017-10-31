@@ -50,4 +50,4 @@ search: false
 </ul>
 
 {: .note}
-Please consider leaving a review of the book on Amazon.com. You can also send questions and feedback to tom@idratherbewriting.com.
+Please consider leaving a review of the course on Amazon.com. You can also send questions and feedback to tom@idratherbewriting.com.

@@ -150,7 +150,7 @@ layout: null
 
 <spine toc="My_Table_of_Contents">
 
-  <!-- the spine defines the linear reading order of the book -->
+  <!-- the spine defines the linear reading order of the course -->
 
   <itemref idref="item_tocstart" />
 
@@ -190,7 +190,7 @@ layout: null
 
   The Kindle reading system support two special guide items which are both mandatory.
   type="toc"  [mandatory]: a link to the HTML table of contents
-  type="text" [mandatory]: a link to where the content of the book starts (typically after the front matter)
+  type="text" [mandatory]: a link to where the content of the course starts (typically after the front matter)
 
   Kindle reading platforms need both thede guid items to provide a consistent user enxperience to the user.
 

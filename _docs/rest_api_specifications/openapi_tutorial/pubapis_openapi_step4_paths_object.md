@@ -15,6 +15,12 @@ The [`paths` object](https://github.com/OAI/OpenAPI-Specification/blob/master/ve
 {: .note}
 My preferred term is "endpoint" rather than "path," but to be consistent with the terminology of the openAPI spec, I'll refer to them as "paths" here.
 
+{% if site.format == "web" %}
+* TOC
+{:toc}
+{% endif %}
+## Start by listing the paths
+
 Start by listing the paths (endpoints) and their allowed operations (methods). For the Mashape Weather API, there are just 3 paths, each with the `get` method:
 
 ```yaml
@@ -250,3 +256,95 @@ The Swagger UI display shows the `path` object like this:
 <img src="/learnapidoc/images/openapiparameters.png" />
 
 When you click **Try it out**, the `example` value populates the parameters field.
+
+## Reducing duplication
+
+In this API, the `lat` and `lng` parameters are duplicated in each path. Copying and pasting this information multiple times is inefficient and leads to error. The OpenAPI spec allows you to single source the parameter information from a common definition.
+
+I'll dive into more details in the [`components` step](pubapis_openapi_step5_components_object.html), but for now, note that we can use a `$ref` property to point to more details `components`:
+
+```yaml
+paths:
+  /aqi:
+    get:
+      tags:
+      - Air Quality
+      summary: getAqi
+      description: Gets the air quality index
+      operationId: GetAqi
+      externalDocs:
+        description: More details
+        url: "https://market.mashape.com/fyhao/weather-13#aqi"
+      parameters:
+      - $ref: '#/components/parameters/latParam'
+      - $ref: '#/components/parameters/lngParam'
+      responses:
+        200:
+          description: AQI response
+          content:
+            text/plain:
+              schema:
+                type: string
+                description: AQI response
+                example: 52
+              example: 52
+      deprecated: false
+      security:
+      - Mashape-Key: []
+  /weather:
+    get:
+      servers:
+      - url: https://simple-weather.p.mashape.com
+      tags:
+      - Weather Forecast
+      summary: getWeather
+      description: Gets the weather forecast in abbreviated form
+      operationId: GetWeather
+      externalDocs:
+        description: More details
+        url: "https://market.mashape.com/fyhao/weather-13#weather"
+      parameters:
+      - $ref: '#/components/parameters/latParam'
+      - $ref: '#/components/parameters/lngParam'
+
+      responses:
+        200:
+          description: weather response
+          content:
+            text/plain:
+              schema:
+                type: string
+                description: weather response
+                example: 26 c, Mostly Clear at Singapore, Singapore
+              example: 26 c, Mostly Clear at Singapore, Singapore
+      deprecated: false
+      security:
+      - Mashape-Key: []
+
+  /weatherdata:
+    get:
+      tags:
+        - Full Weather Data
+      summary: getWeatherData
+      description: Get weather forecast with lots of details
+      operationId: GetWeatherData
+      externalDocs:
+        description: More details
+        url: "https://market.mashape.com/fyhao/weather-13#weatherdata"
+      parameters:
+      - $ref: '#/components/parameters/latParam'
+      - $ref: '#/components/parameters/lngParam'
+      responses:
+        200:
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                description: Successful operation
+                $ref: '#/components/schemas/WeatherdataResponse'
+      deprecated: false
+      security:
+      - Mashape-Key: []
+```
+
+Now we're not repeating the information multiple times. Instead, in `components`, we can define these parameters. See [Storing re-used parameters in components](pubapis_openapi_step5_components_object.html#reused_parameters) for more details.

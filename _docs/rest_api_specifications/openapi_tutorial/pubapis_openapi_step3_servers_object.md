@@ -12,6 +12,15 @@ path1: /restapispecifications.html
 
 In the [`servers` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#serverObject), you specify the basepath used in your API requests.
 
+{% if site.format == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## Sample servers object
+
+The following is a sample `servers` object.
+
 ```yaml
 servers:
   - url: https://simple-weather.p.mashape.com
@@ -41,3 +50,5 @@ In Swagger UI, here's how the servers appear to users with multiple server URLs:
 <img src="/learnapidoc/images/openapi_serversurl.png"/>
 
 If you have just one URL, you see see a drop-down box, but with just one option.
+
+Note that the OpenAPI also provides a `server` object that does not list its contents as an array. However, the `server` object can only be used as a property of the `links` object. You always use an array (the dashes) when declaring your `servers` at the root level, even if you have just one `url`.

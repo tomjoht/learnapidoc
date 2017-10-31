@@ -40,7 +40,7 @@ You know what happens when engineers write &mdash; the content is cryptic and of
 
 ## My approach to teaching native library API doc
 
-There are many books and online resources you can consult to learn a specific programming language. This section of the book will not try to teach you Java. However, to understand a bit about Java API documentation (which uses a document generator called Javadoc), you will need some understanding of Java.
+There are many books and online resources you can consult to learn a specific programming language. This section of the course will not try to teach you Java. However, to understand a bit about Java API documentation (which uses a document generator called Javadoc), you will need some understanding of Java.
 
 To keep the focus on API documentation, we'll take a documentation-centric approach to understanding Java. You'll learn the various parts of Java by looking at a specific Javadoc file and sorting through the main components.
 

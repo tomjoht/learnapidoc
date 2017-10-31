@@ -8,7 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-Although this book has focused heavily on tools, I want to emphasize that content always trumps tooling. The content should be your primary focus, not the tools you use to publish the content.
+Although this course has focused heavily on tools, I want to emphasize that content always trumps tooling. The content should be your primary focus, not the tools you use to publish the content.
 
 Once you get the tooling infrastructure in place, it should mostly take a back seat to the daily tasks of content development.
 

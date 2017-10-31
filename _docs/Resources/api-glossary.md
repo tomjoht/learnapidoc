@@ -61,7 +61,7 @@ Git
 : Distributed version control system commonly used when interacting with code. GitHub uses Git, as does BitBucket and other version control platforms. Learning Git is essential for working with developer documentation, since this is the most common way developers share, review, collaborate, and distribute code. See [https://git-scm.com/](https://git-scm.com/).
 
 GitHub
-: A platform for managing Git repositories. Used for most open source projects. You can also publish documentation using GitHub, either by simply uploading your non-binary text files to the repo, or by auto-building your Jekyll site with GitHub Pages, or by using the built-in GitHub wiki. See [GitHub wikis](http://idratherbewriting.com/learnapidoc/pubapis_github_wikis.html) in this book as well as [Github.com](https://github.com/).
+: A platform for managing Git repositories. Used for most open source projects. You can also publish documentation using GitHub, either by simply uploading your non-binary text files to the repo, or by auto-building your Jekyll site with GitHub Pages, or by using the built-in GitHub wiki. See [GitHub wikis](http://idratherbewriting.com/learnapidoc/pubapis_github_wikis.html) in this course as well as on [pages.github.com/](https://pages.github.com/).
 
 git repo
 : A tool for consolidating and managing many smaller repos with one system. See [git-repo](https://code.google.com/archive/p/git-repo/).
@@ -76,7 +76,7 @@ Hugo
 : A static site generator that uses the Go programming language as its base. Along with Jekyll, Hugo is among the top 5 most popular static site generators. Hugo is probably the fastest site generator available. Speed matters as you scale the number of documents in your project beyond several hundred. See [https://gohugo.io/](https://gohugo.io/).
 
 JSON
-: JavaScript Object Notation. A lightweight syntax containing objects and arrays, usually used (instead of XML) to return information from a REST API. See [Analyze the JSON response](https://idratherbewriting.com/learnapidoc/docapis_analyze_json.html) in this book and [http://www.json.org/](http://www.json.org/)
+: JavaScript Object Notation. A lightweight syntax containing objects and arrays, usually used (instead of XML) to return information from a REST API. See [Analyze the JSON response](https://idratherbewriting.com/learnapidoc/docapis_analyze_json.html) in this course and [http://www.json.org/](http://www.json.org/)
 
 Mercurial
 : An distributed revision control system, similar to Git but not as popular. See [https://www.mercurial-scm.org/](https://www.mercurial-scm.org/).
@@ -109,7 +109,7 @@ push
 : In Git, when you want to update the origin with the latest updates from your local copy, you make `git push`. Your updates will bring origin back into sync with your local copy. See [https://git-scm.com/docs/git-push](https://git-scm.com/docs/git-push).
 
 RAML
-: Stands REST API Modeling Language and is similar to Swagger and other API specifications. RAML is backed by Mulesoft, a commercial API company, and uses a more YAML-based syntax in the specification.See [RAML tutorial](http://idratherbewriting.com/learnapidoc/pubapis_raml.html) in this book or [RAML](https://raml.org/).
+: Stands REST API Modeling Language and is similar to Swagger and other API specifications. RAML is backed by Mulesoft, a commercial API company, and uses a more YAML-based syntax in the specification.See [RAML tutorial](http://idratherbewriting.com/learnapidoc/pubapis_raml.html) in this course or [RAML](https://raml.org/).
 
 RAML Console
 : In Mulesoft, the RAML Console is where you design your RAML spec. Similar to the Swagger Editor for the OpenAPI spec.
@@ -127,7 +127,7 @@ Sphinx
 : A static site generator developed for managing documentation for Python. Sphinx is the most documentation-oriented static site generator available and includes many robust features -- such as search, sidebar navigation, semantic markup, managed links -- that other static site generators lack. Based on Python. See [https://www.staticgen.com/sphinx](https://www.staticgen.com/sphinx).
 
 Static site generator
-: A breed of website compilers that package up a group of files (usually written in Markdown) and make them into a website. There are more than 350 different static site generators. See [Jekyll](http://idratherbewriting.com/learnapidoc/pubapis_jekyll.html) in this book for a deep-dive into the most popular static site generator, or [Staticgen](https://www.staticgen.com/) for a list of all static site generators.
+: A breed of website compilers that package up a group of files (usually written in Markdown) and make them into a website. There are more than 350 different static site generators. See [Jekyll](http://idratherbewriting.com/learnapidoc/pubapis_jekyll.html) in this course for a deep-dive into the most popular static site generator, or [Staticgen](https://www.staticgen.com/) for a list of all static site generators.
 
 Swagger
 : An official specification for REST APIs. Provides objects used to describe your endpoints, parameters, responses, and security. Now called OpenAPI specification.

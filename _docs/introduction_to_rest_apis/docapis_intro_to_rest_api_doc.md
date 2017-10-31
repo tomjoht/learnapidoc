@@ -34,7 +34,7 @@ With REST APIs, you don't deliver a library of files to users. Instead, the user
 
 REST APIs follow the same protocol as the web. When you open a browser and type a website URL (such as http://idratherbewriting.com), you're actually making a GET request for a resource on a server. The server responds with the content and the browser makes the content visible.
 
-This book focuses mostly on REST APIs because REST APIs are more accessible to technical writers, as well as more popular and in demand. You don't need to know programming to document REST APIs. And REST is becoming the most common type of API anyway.
+This course focuses mostly on REST APIs because REST APIs are more accessible to technical writers, as well as more popular and in demand. You don't need to know programming to document REST APIs. And REST is becoming the most common type of API anyway.
 
 ## Programmableweb API survey rates doc #1 factor in APIs
 
@@ -121,4 +121,4 @@ This issue was a good start, but many technical writers have asked for more trai
 
 In 2014, the STC Summit in Columbus held its first ever API documentation track. Since then, API documentation tracks and themes have become a consistent pattern in technical writing conferences. Many technical writers choose to specialize in API documentation as a way of distinguishing themselves and their skillsets in the marketplace.
 
-Overall, technical writers are hungry to learn more about APIs. This book will help you build the foundation of what you need to know to get a job in API documentation and excel in this market.
+Overall, technical writers are hungry to learn more about APIs. This course will help you build the foundation of what you need to know to get a job in API documentation and excel in this market.
