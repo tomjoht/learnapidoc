@@ -17,6 +17,11 @@ externalDocs:
 servers:
   - url: https://simple-weather.p.mashape.com
     description: Production server
+tags:
+  - name: Air Quality
+    description: The pollution quality of the air.
+  - name: Weather Forecast
+    description: A full list of details about the current weather.
 paths:
   /aqi:
     get:
@@ -77,7 +82,7 @@ paths:
   /weatherdata:
     get:
       tags:
-        - Full Weather Data
+        - Weather Forecast
       summary: getWeatherData
       description: Get weather forecast with lots of details
       operationId: GetWeatherData

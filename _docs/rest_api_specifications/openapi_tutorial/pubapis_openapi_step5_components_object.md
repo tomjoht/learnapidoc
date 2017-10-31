@@ -101,13 +101,6 @@ responses:
 
 The `$ref` points to a definition stored in the `components` object. Before we describe the response in the `components` object, let's look at the `weatherdata` response in detail. This response contains multiple nested objects at various levels.
 
-<style>
-pre.nowrappy {
-  white-space: pre;
-}
-</style>
-
-{: .nowrappy}
 ```json
 {
   "query": {
@@ -262,13 +255,6 @@ pre.nowrappy {
 
 There are a couple of ways to go about describing this. You could create one long description like this:
 
-<style>
-.nowrappy pre.highlight {
-  white-space: pre;
-}
-</style>
-
-{: .nowrappy}
 ```yaml
 components:
   schemas:
@@ -889,6 +875,38 @@ section.models {
 
 ## Describing a schema
 
-For most of the sections in `components`, you follow the same object descriptions as detailed in the rest of the spec. However, when describing the `schema`, you use standard [JSON schema definition language](https://tools.ietf.org/html/draft-wright-json-schema-validation-00) for this. In other words, you aren't merely using the OpenAPI spec. Here the OpenAPI spec feeds into the larger JSON definitions and description language for describing models. See the [schema object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#schemaObject) for details.
+For most of the sections in `components`, you follow the same object descriptions as detailed in the rest of the spec. However, when describing the `schema`, you use standard keywords and terms from the [JSON Schema ](https://tools.ietf.org/html/draft-wright-json-schema-00). In other words, you aren't merely using the OpenAPI spec. Here the OpenAPI spec feeds into the larger JSON definitions and description language for describing JSON models.
 
-To describe a `schema` object, I recommend that you look at some example schemas. See [3.0 examples here](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v3.0). I typically find an object that resembles what I'm trying to represent and mimic the same properties and structure. The `schema` object in 3.0 differs slightly from the schema object in 2.0. See this [post on Nordic APIs](https://nordicapis.com/whats-new-in-openapi-3-0/#jsonandotherschema) for details on what changed in 3.0.
+See the [schema object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#schemaObject) for details. To describe your JSON objects, you might use the following keywords:
+
+* `title`
+* `multipleOf`
+* `maximum`
+* `exclusiveMaximum`
+* `minimum`
+* `exclusiveMinimum`
+* `maxLength`
+* `minLength`
+* `pattern`
+* `maxItems`
+* `minItems`
+* `uniqueItems`
+* `maxProperties`
+* `minProperties`
+* `required`
+* `enum`
+* `type`
+* `allOf`
+* `oneOf`
+* `anyOf`
+* `not`
+* `items`
+* `properties`
+* `additionalProperties`
+* `description`
+* `format`
+* `default`
+
+Besides looking in the [schema object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#schemaObject) in the OpenAPI spec for details, you can also read the [JSON Schema](https://tools.ietf.org/html/draft-wright-json-schema-00).
+
+Additionally, you can look at some example schemas. You can view [3.0 examples here](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v3.0). I typically find an object that resembles what I'm trying to represent and mimic the same properties and structure. The `schema` object in 3.0 differs slightly from the schema object in 2.0 &mdash; see this [post on Nordic APIs](https://nordicapis.com/whats-new-in-openapi-3-0/#jsonandotherschema) for details on what changed. However, example schemas from [2.0 specs](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0) (which are a lot more abundant) would probably also be helpful as long as you just look at the schema definitions, because a lot has changed from 2.0 to 3.0 in the spec.

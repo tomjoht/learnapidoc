@@ -1,14 +1,18 @@
-.highlight {
+/* this style removes the line wrap in code samples; don't add this in print styles */
+pre code {
     white-space: pre;
-    // word-wrap: normal;
-    /* horizontal scrolling */
+}
+
+
+pre.highlight {
+    word-wrap: normal;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
     background: #202020;
     color: #C1C2C3;
     border: 0px !important;
-    padding: 1px 10px;
+    padding: 25px;
     margin: 20px 0px;
 }
 .highlight .hll {

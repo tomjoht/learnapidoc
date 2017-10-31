@@ -431,14 +431,11 @@ article {
   pre {
     line-height: 1.25;
     padding: 1.5rem 2rem;
-
     border-radius: 5px;
     box-shadow: 0 0 200px rgba(0, 0, 0, 0.33) inset;
     margin: 0;
     border-top: 1px solid #000;
     border-bottom: 1px solid #404040;
-
-    white-space: pre-wrap;
     word-break: normal;
     word-spacing: normal;
   }
@@ -450,5 +447,6 @@ article {
     background-color: transparent;
     border: none;
     padding: 0;
+    white-space: pre;
   }
 }
