@@ -120,26 +120,23 @@ components:
       type: object
       properties:
         query:
-          $ref: '#/components/schemas/Query'
-    Query:
-      title: query
-      type: object
-      properties:
-        count:
-          type: integer
-          description: The number of items (rows) returned -- specifically, the number of sub-elements in the results property
-          format: int32
-          example: 1
-        created:
-          type: string
-          description: The date and time the response was created
-          example: 6/14/2017 2:30:14 PM
-        lang:
-          type: string
-          description: The locale for the response
-          example: en-US
-        results:
-          $ref: '#/components/schemas/Results'
+          type: object
+          properties:
+            count:
+              type: integer
+              description: The number of items (rows) returned -- specifically, the number of sub-elements in the results property
+              format: int32
+              example: 1
+            created:
+              type: string
+              description: The date and time the response was created
+              example: 6/14/2017 2:30:14 PM
+            lang:
+              type: string
+              description: The locale for the response
+              example: en-US
+            results:
+              $ref: '#/components/schemas/Results'
     Results:
       title: results
       type: object
