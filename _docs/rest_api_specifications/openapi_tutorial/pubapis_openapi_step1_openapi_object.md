@@ -85,4 +85,4 @@ This specifies which schema is used to validate the spec.
 
 In the Swagger UI display, an "OAS3" tag appears to the right of the API name.
 
-<img src="/learnapidoc/images/openapitutorial_version.png"/>
+<img src="/learnapidoc/images/openapitutorial_version.png" style="border: 1px solid #dedede;"/>

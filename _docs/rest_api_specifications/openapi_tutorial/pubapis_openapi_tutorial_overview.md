@@ -1,5 +1,5 @@
 ---
-title: "OpenAPI specification document deep dive"
+title: "OpenAPI tutorial overview"
 permalink: /pubapis_openapi_tutorial_overview.html
 course: "Documenting REST APIs"
 sidebar: docapis
