@@ -60,6 +60,8 @@ defaults:
     values:
       image: true
 
+plugins:
+  - jekyll-redirect-from
 
 ########## UI text ###############
 

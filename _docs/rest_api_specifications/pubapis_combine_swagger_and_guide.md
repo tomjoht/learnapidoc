@@ -106,11 +106,11 @@ There are just too many benefits to using a spec that you will miss out on if yo
 
 For example, [Spectacle](https://github.com/sourcey/spectacle) is a project that builds an output from a Swagger file with zero coding or other technical expertise. More and more tools are coming out that allow you to import your Swagger spec. For example, see [Lucybot](http://lucybot.com/), [Restlet Studio](https://studio.restlet.com), the [Swagger UI responsive theme](https://github.com/jensoleg/swagger-ui), [Material Swagger UI](https://github.com/legendecas/material-swagger-ui), [DynamicAPIs](https://www.dynamicapis.com), [Run in Postman](https://www.getpostman.com/docs/postman_for_publishers/run_button/creating_run_button), [SwaggerHub](pubapis_swaggerhub_smartbear.html), and more. They all read the Swagger spec.
 
-In fact, importing or reading a Swagger spec file is almost becoming a standard among API doc tools. Putting your content in the Swagger spec format allows you to separate your content from the presentation layer, instantly taking advantage of any new API tooling or platform that can parse the spec.
+In fact, importing or reading a Swagger specification document is almost becoming a standard among API doc tools. Putting your content in the Swagger spec format allows you to separate your content from the presentation layer, instantly taking advantage of any new API tooling or platform that can parse the spec.
 
-## Option 2: Read the Swagger specification file
+## Option 2: Read the Swagger specification document
 
-If you're using a tool such as Jekyll, which incorporates a scripting language called Liquid, you can read the Swagger specification file. It is, after all, just YAML syntax. For example, you could use a `for` loop to iterate through the Swagger spec values. Here's a code sample. In this example, the Swagger.yml file is stored inside Jekyll's \_data directory.
+If you're using a tool such as Jekyll, which incorporates a scripting language called Liquid, you can read the Swagger specification document. It is, after all, just YAML syntax. For example, you could use a `for` loop to iterate through the Swagger spec values. Here's a code sample. In this example, the Swagger.yml file is stored inside Jekyll's \_data directory.
 
 ```html
 {% raw %}<table>
@@ -145,7 +145,7 @@ Special thanks to Peter Henderson for sharing this technique and the code. With 
 
 ## Option 3: Store content in YAML files
 
-Another approach for integrating Swagger's output with your other docs might be to store your descriptions and other info in data yaml files in your project, and then include the data references in your specification file. I'm most familiar with Jekyll, so I'll describe the process using Jekyll (but similar techniques exist for other static site generators).
+Another approach for integrating Swagger's output with your other docs might be to store your descriptions and other info in data yaml files in your project, and then include the data references in your specification document. I'm most familiar with Jekyll, so I'll describe the process using Jekyll (but similar techniques exist for other static site generators).
 
 In Jekyll, you can store content in YAML files in your \_data folder. For example, suppose you have a file called parameters.yml inside \_data with the following content:
 

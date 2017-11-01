@@ -8,7 +8,7 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-Previously, I explored using [Swagger UI](https://github.com/swagger-api/swagger-ui) as a way to publish your Swagger documentation, and I wrote a [brief tutorial](pubapis_swagger.html) on how to download Swagger UI from GitHub, customize the index.html file from the distribution folder to reference your own Swagger spec file, and then deploy it on a web server.
+Previously, I explored using [Swagger UI](https://github.com/swagger-api/swagger-ui) as a way to publish your Swagger documentation, and I wrote a [brief tutorial](pubapis_swagger.html) on how to download Swagger UI from GitHub, customize the index.html file from the distribution folder to reference your own Swagger specification document, and then deploy it on a web server.
 
 While the free Swagger UI approach works, you'll run into several problems:
 
@@ -53,7 +53,7 @@ However, unlike the standalone Swagger Editor, with SwaggerHub's Swagger Editor,
 
 Most importantly, as you're working in the Editor, SwaggerHub allows you to *save your work*. (With the free Swagger Editor, your content is just kept in the browser cache, with no ability to save it. When you clear your cache, your content is gone. As a result, if you use the standalone Swagger Editor, you have to regularly copy the content from the Swagger Editor into a file on your own computer each time you finish.)
 
-You can save your spec file directly in SwaggerHub, or you can reference it in an external source such as GitHub.
+You can save your specification document directly in SwaggerHub, or you can reference it in an external source such as GitHub.
 
 ## Versions
 

@@ -19,6 +19,7 @@ My preferred term is "endpoint" rather than "path," but to be consistent with th
 * TOC
 {:toc}
 {% endif %}
+
 ## Start by listing the paths
 
 Start by listing the paths (endpoints) and their allowed operations (methods). For the Mashape Weather API, there are just 3 paths, each with the `get` method:
@@ -45,10 +46,10 @@ Each path item object contains an [operation object](https://github.com/OAI/Open
 * `operationId`: A unique identifier for the path.
 * [`parameters`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#parameter-object): Parameters accepted by the path. Usual values are query, header, or path. The `parameters` object can also include a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#referenceObject) that simply contains a pointer to the description in the `components` object.
 * [`requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#requestBodyObject): The request body parameter details for this path. The `requestBody` object can also include a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#referenceObject) that simply contains a pointer to the description in the `components` object.
-* [`responses`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#responsesObject): Responses provided from requests with this path. The `responses` object can also include a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#referenceObject) that simply contains a pointer to the description in the `components` object.
+* [`responses`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#responsesObject): Responses provided from requests with this path. The `responses` object can also include a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#referenceObject) that simply contains a pointer to the description in the `components` object. Responses use standard [status codes](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#http-status-codes).
 * [`callbacks`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#callbackObject): Callback details to be initiated by the server if desired. Callbacks are operations performed after a function finishes executing. The `callbacks` object can also include a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#referenceObject) that simply contains a pointer to the description in the `components` object.
 * `deprecated`: Whether the path is deprecated. Omit unless you want to indicate a deprecated field. Boolean.
-* [`security`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#securityRequirementObject): Security authorization method used with the response. Here you refer to the security method you're using; this name is defined by the `securitySchemes` object in the `components` object. More details about this are provided in the [security object](pubapis_openapi_step6_security_object.html).
+* [`security`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#securityRequirementObject): Security authorization method used with the operation. Only include this object at the path level if you want to overwrite the `security` object at the root level. The name is defined by the `securitySchemes` object in the `components` object. More details about this are provided in the [security object](pubapis_openapi_step6_security_object.html).
 * [`servers`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#serverObject): A servers object that might differ for this path than the [global `servers` object](pubapis_openapi_step3_servers_object.html).
 
 {: .note}
@@ -68,6 +69,9 @@ Let's add a skeleton of the operation object details to our existing code:
       responses:
       deprecated:
       security:
+      servers:
+      requestBody:
+      callbacks:
 
   /weather:
     get:
@@ -80,6 +84,9 @@ Let's add a skeleton of the operation object details to our existing code:
       responses:
       deprecated:
       security:
+      servers:
+      requestBody:
+      callbacks:
 
   /weatherdata:
     get:
@@ -91,15 +98,59 @@ Let's add a skeleton of the operation object details to our existing code:
       parameters:
       responses:
       deprecated:
-      security:        
+      security:  
+      servers:
+      requestBody:
+      callbacks:     
 ```
 
-I didn't include [`requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#requestBodyObject) here because none of the Mashape Weather API endpoints contain request body parameters. Additionally, I didn't include [`servers`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#serverObject) either because the paths just use the same servers URL that we defined earlier.
+Now we can remove a few unnecessary fields:
 
+* There's no need to include [`requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#requestBodyObject) here because none of the Mashape Weather API paths contain request body parameters.
+* There's no need to include [`servers`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#serverObject) because the paths just use the same global `servers` URL that we [defined earlier](pubapis_openapi_step3_servers_object.html).
+* There's no need to include [security](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#securityRequirementObject) because all the paths use the same `security` object, which is defined globally at the root.
+* There's no need to include `deprecated` because none of the paths are deprecated, and the default value is `true`.
+* There's no need to include `callbacks` because our paths don't use them.
+
+As a result, we can reduce the number of fields to concern ourselves with:
+
+```yaml
+  /aqi:
+    get:
+      tags:
+      summary:
+      description:
+      operationId:
+      externalDocs:
+      parameters:
+      responses:
+
+  /weather:
+    get:
+      tags:
+      summary:
+      description:
+      operationId:
+      externalDocs:
+      parameters:
+      responses:
+
+  /weatherdata:
+    get:
+      tags:
+      summary:
+      description:
+      operationId:
+      externalDocs:
+      parameters:
+      responses:      
+```
 {: .tip}
 You'll undoubtedly need to consult the [OpenAPI spec](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md) to see what details are required for each of the values and objects here. I can't replicate all the detail you need, nor would I want to. I'm just trying to introduce you to the OpenAPI properties at a surface level here.
 
 Most of the properties for the operation object either require simple strings or include relatively simple objects. The most detailed object here is the `parameters` object. The [`parameters` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#parameter-object) can have these properties:
+
+**parameters**:
 
 * `name`: Parameter name.
 * `in`: Where the parameter appears. Possible values: `header`, `path`, `query`, or `cookie`.
@@ -108,7 +159,7 @@ Most of the properties for the operation object either require simple strings or
 * `deprecated`: Whether the parameter is deprecated.
 * `allowEmptyValue`: Whether the parameter allows an empty value to be submitted.
 * `style`: How the parameter's data is serialized (converted to bytes during data transfer)
-* `explode`
+* `explode`: Advanced parameter related to arrays.
 * `allowReserved`: Whether reserved characters are allowed.
 * [`schema`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#schemaObject): The schema or model for the parameter. The schema defines the input or output format. Note that the `schema` can also contain an `example` object.
 * `example`: An example of the media type. If your `examples` object contains examples, those examples appear in Swagger UI rather than the content in the `example` object.
@@ -116,7 +167,7 @@ Most of the properties for the operation object either require simple strings or
 
 {% include callout.html type="primary" title="References to components" content="The details of the [`responses` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#responsesObject) is usually referenced in the `components` object rather than included in the `paths` object. In other words, rather than defining the details of the `response` with all the details in the `paths` object, we place a `$ref` (reference) pointer to a fuller definition in the `components` object. This approach also allows you to single source the referring object, because you can have many references pointing to the same definition in components. If a parameter has a detailed [`requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#requestBodyObject), a reference pointer is also commonly used.<br/><br/>
 
-With the Mashape Weather API, the first two paths (`/aqi` and `/weather`) have simple strings as their responses, so we won't refer to response objects defined in `components` for those paths. However, the `/weatherdata` path has a more robust response, so rather than try to list it directly under the `schema`, we will instead provide a reference to the schema in the `components` object." %}
+With the Mashape Weather API, the first two paths (`/aqi` and `/weather`) have simple strings as their responses, so we won't define the response objects defined in `components` for those paths. However, the `/weatherdata` path has a more robust response, so rather than try to list it directly under the `schema`, we will instead provide a reference to the schema in the `components` object." %}
 
 Here's the `operation` object defined for the Mashape Weather API:
 
@@ -133,24 +184,8 @@ paths:
         description: More details
         url: "https://market.mashape.com/fyhao/weather-13#aqi"
       parameters:
-      - name: lat
-        in: query
-        description: "Latitude coordinates. Sunnyvale: 37.3708698"
-        required: true
-        style: form
-        explode: false
-        schema:
-          type: string
-        example: "37.3708698"
-      - name: lng
-        in: query
-        description: "Longitude coordinates. Sunnyvale: -122.037593"
-        required: true
-        style: form
-        explode: false
-        schema:
-          type: string
-        example: "-122.037593"
+        - $ref: '#/components/parameters/latParam'
+        - $ref: '#/components/parameters/lngParam'
       responses:
         200:
           description: AQI response
@@ -160,10 +195,6 @@ paths:
                 type: string
                 description: AQI response
                 example: 52
-              example: 52
-      deprecated: false
-      security:
-      - Mashape-Key: []
   /weather:
     get:
       servers:
@@ -177,24 +208,9 @@ paths:
         description: More details
         url: "https://market.mashape.com/fyhao/weather-13#weather"
       parameters:
-      - name: lat
-        in: query
-        description: "Latitude coordinates. Sunnyvale: 37.3708698"
-        required: true
-        style: form
-        explode: false
-        schema:
-          type: string
-        example: "37.3708698"
-      - name: lng
-        in: query
-        description: "Longitude coordinates. Sunnyvale: -122.037593"
-        required: true
-        style: form
-        explode: false
-        schema:
-          type: string
-        example: "-122.037593"
+        - $ref: '#/components/parameters/latParam'
+        - $ref: '#/components/parameters/lngParam'
+
       responses:
         200:
           description: weather response
@@ -204,15 +220,11 @@ paths:
                 type: string
                 description: weather response
                 example: 26 c, Mostly Clear at Singapore, Singapore
-              example: 26 c, Mostly Clear at Singapore, Singapore
-      deprecated: false
-      security:
-      - Mashape-Key: []
 
   /weatherdata:
     get:
       tags:
-        - Full Weather Data
+        - Weather Forecast
       summary: getWeatherData
       description: Get weather forecast with lots of details
       operationId: GetWeatherData
@@ -220,24 +232,8 @@ paths:
         description: More details
         url: "https://market.mashape.com/fyhao/weather-13#weatherdata"
       parameters:
-      - name: lat
-        in: query
-        description: "Latitude coordinates. Sunnyvale: 37.3708698"
-        required: true
-        style: form
-        explode: false
-        schema:
-          type: string
-        example: "37.3708698"
-      - name: lng
-        in: query
-        description: "Longitude coordinates. Sunnyvale: -122.037593 "
-        required: true
-        style: form
-        explode: false
-        schema:
-          type: string
-        example: "-122.037593"
+        - $ref: '#/components/parameters/latParam'
+        - $ref: '#/components/parameters/lngParam'
       responses:
         200:
           description: Successful operation
@@ -246,9 +242,6 @@ paths:
               schema:
                 description: Successful operation
                 $ref: '#/components/schemas/WeatherdataResponse'
-      deprecated: false
-      security:
-      - Mashape-Key: []
 ```
 
 The Swagger UI display shows the `path` object like this:
@@ -259,9 +252,9 @@ When you click **Try it out**, the `example` value populates the parameters fiel
 
 ## Reducing duplication
 
-In this API, the `lat` and `lng` parameters are duplicated in each path. Copying and pasting this information multiple times is inefficient and leads to error. The OpenAPI spec allows you to single source the parameter information from a common definition.
+In this API, the `lat` and `lng` parameters are duplicated in each path. Copying and pasting this information multiple times is inefficient and can lead to inconsistency. The OpenAPI spec allows you to single source the parameter information from a common definition.
 
-I'll dive into more details in the [`components` step](pubapis_openapi_step5_components_object.html), but for now, note that we can use a `$ref` property to point to more details `components`:
+I'll dive into more details in the [`components` step](pubapis_openapi_step5_components_object.html), but for now, note that we can use a `$ref` property to refer to more details in the `components` object. See how `parameters` simply contains a [`reference` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#referenceObject):
 
 ```yaml
 paths:
@@ -276,8 +269,8 @@ paths:
         description: More details
         url: "https://market.mashape.com/fyhao/weather-13#aqi"
       parameters:
-      - $ref: '#/components/parameters/latParam'
-      - $ref: '#/components/parameters/lngParam'
+        - $ref: '#/components/parameters/latParam'
+        - $ref: '#/components/parameters/lngParam'
       responses:
         200:
           description: AQI response
@@ -287,10 +280,6 @@ paths:
                 type: string
                 description: AQI response
                 example: 52
-              example: 52
-      deprecated: false
-      security:
-      - Mashape-Key: []
   /weather:
     get:
       servers:
@@ -304,9 +293,8 @@ paths:
         description: More details
         url: "https://market.mashape.com/fyhao/weather-13#weather"
       parameters:
-      - $ref: '#/components/parameters/latParam'
-      - $ref: '#/components/parameters/lngParam'
-
+        - $ref: '#/components/parameters/latParam'
+        - $ref: '#/components/parameters/lngParam'
       responses:
         200:
           description: weather response
@@ -316,15 +304,11 @@ paths:
                 type: string
                 description: weather response
                 example: 26 c, Mostly Clear at Singapore, Singapore
-              example: 26 c, Mostly Clear at Singapore, Singapore
-      deprecated: false
-      security:
-      - Mashape-Key: []
 
   /weatherdata:
     get:
       tags:
-        - Full Weather Data
+        - Weather Forecast
       summary: getWeatherData
       description: Get weather forecast with lots of details
       operationId: GetWeatherData
@@ -332,8 +316,8 @@ paths:
         description: More details
         url: "https://market.mashape.com/fyhao/weather-13#weatherdata"
       parameters:
-      - $ref: '#/components/parameters/latParam'
-      - $ref: '#/components/parameters/lngParam'
+        - $ref: '#/components/parameters/latParam'
+        - $ref: '#/components/parameters/lngParam'
       responses:
         200:
           description: Successful operation
@@ -342,9 +326,34 @@ paths:
               schema:
                 description: Successful operation
                 $ref: '#/components/schemas/WeatherdataResponse'
-      deprecated: false
-      security:
-      - Mashape-Key: []
 ```
 
-Now we're not repeating the information multiple times. Instead, in `components`, we can define these parameters. See [Storing re-used parameters in components](pubapis_openapi_step5_components_object.html#reused_parameters) for more details.
+Now we're not repeating the parameter information multiple times. Instead, in `components`, we define these parameters:
+
+```yaml
+components:
+  parameters:
+    latParam:
+      name: lat
+      in: query
+      description: "Latitude coordinates."
+      required: true
+      style: form
+      explode: false
+      schema:
+        type: string
+      example: "37.3708698"
+    lngParam:
+      name: lng
+      in: query
+      description: "Longitude coordinates."
+      required: true
+      style: form
+      explode: false
+      schema:
+        type: string
+      example: "-122.037593"
+```
+
+
+See [Storing re-used parameters in components](pubapis_openapi_step5_components_object.html#reused_parameters) for more details. Also see [Describing Parameters](https://swagger.io/docs/specification/describing-parameters/) in Swagger's OpenAPI documentation.

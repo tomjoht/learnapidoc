@@ -88,7 +88,7 @@ function fetchReference(ref) {
  * Replace external references in a specification with the contents.  Mutates the given objects.
  * Mutually recursive with `replaceRefs`.
  * @param {string} cwd The path to the file containing a reference.
- * @param {object} top The top-level specification file.
+ * @param {object} top The top-level specification document.
  * @param {object} obj The object referencing an external file.
  * @param {string} context The current reference path, e.g. `"#/paths/%2F/"`
  * @todo test failure
@@ -141,7 +141,7 @@ function replaceReference(cwd, top, obj, context) {
  * contents.
  * Recursive, as well as being mutually recursive with `replaceReference`.
  * @param {string} cwd The path of the current file
- * @param {object} top The top-level specification file.
+ * @param {object} top The top-level specification document.
  * @param {object} obj The Swagger tree to evaluate.
  * @param {string} context The current reference path, e.g. `"#/paths/%2F/"`
  * @throws {TreeWalkError} if `obj` itself is a reference.

@@ -34,8 +34,8 @@ paths:
         description: More details
         url: "https://market.mashape.com/fyhao/weather-13#aqi"
       parameters:
-      - $ref: '#/components/parameters/latParam'
-      - $ref: '#/components/parameters/lngParam'
+        - $ref: '#/components/parameters/latParam'
+        - $ref: '#/components/parameters/lngParam'
       responses:
         200:
           description: AQI response
@@ -45,10 +45,6 @@ paths:
                 type: string
                 description: AQI response
                 example: 52
-              example: 52
-      deprecated: false
-      security:
-      - Mashape-Key: []
   /weather:
     get:
       servers:
@@ -62,9 +58,8 @@ paths:
         description: More details
         url: "https://market.mashape.com/fyhao/weather-13#weather"
       parameters:
-      - $ref: '#/components/parameters/latParam'
-      - $ref: '#/components/parameters/lngParam'
-
+        - $ref: '#/components/parameters/latParam'
+        - $ref: '#/components/parameters/lngParam'
       responses:
         200:
           description: weather response
@@ -74,10 +69,6 @@ paths:
                 type: string
                 description: weather response
                 example: 26 c, Mostly Clear at Singapore, Singapore
-              example: 26 c, Mostly Clear at Singapore, Singapore
-      deprecated: false
-      security:
-      - Mashape-Key: []
 
   /weatherdata:
     get:
@@ -90,8 +81,8 @@ paths:
         description: More details
         url: "https://market.mashape.com/fyhao/weather-13#weatherdata"
       parameters:
-      - $ref: '#/components/parameters/latParam'
-      - $ref: '#/components/parameters/lngParam'
+        - $ref: '#/components/parameters/latParam'
+        - $ref: '#/components/parameters/lngParam'
       responses:
         200:
           description: Successful operation
@@ -100,12 +91,10 @@ paths:
               schema:
                 description: Successful operation
                 $ref: '#/components/schemas/WeatherdataResponse'
-      deprecated: false
-      security:
-      - Mashape-Key: []
 components:
   parameters:
     latParam:
+      name: lat
       in: query
       description: "Latitude coordinates."
       required: true
@@ -115,6 +104,7 @@ components:
         type: string
       example: "37.3708698"
     lngParam:
+      name: lng
       in: query
       description: "Longitude coordinates."
       required: true
@@ -429,5 +419,11 @@ components:
           example: false
       description: Unique identifier for the forecast, made up of the location ID, the date, and the time.
 
+  securitySchemes:
+    Mashape-Key:
+      type: apiKey
+      description: "The API authorizes requests through an API key in your header. Enter your Mashape key here. If you don't have an API key, for testing purposes you can use `EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p`."
+      name: X-Mashape-Key
+      in: header
 security:
 - Mashape-Key: []

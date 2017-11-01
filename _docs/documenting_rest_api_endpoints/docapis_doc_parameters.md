@@ -207,7 +207,7 @@ The same parameter values might be used in other requests as well, so organizati
 
 Is the display from the [Swagger UI](http://idratherbewriting.com/learnapidoc/pubapis_swagger) any better?  
 
-The [Swagger UI](https://github.com/swagger-api/swagger-ui) reads the Swagger spec file and displays it in the visual format that you see with examples such as the [Swagger Petstore](http://petstore.swagger.io/).
+The [Swagger UI](https://github.com/swagger-api/swagger-ui) reads the Swagger specification document and displays it in the visual format that you see with examples such as the [Swagger Petstore](http://petstore.swagger.io/).
 
 The Swagger UI lets you toggle between an "Example Value" and a "Model" view for both responses and request body parameters.
 

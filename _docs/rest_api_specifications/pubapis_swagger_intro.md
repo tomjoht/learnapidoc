@@ -11,6 +11,9 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
+{: .tip}
+For step-by-step tutorial on creating an OpenAPI specification document, see the [OpenAPI tutorial here](pubapis_openapi_tutorial_overview.html).
+
 Swagger is a specification for describing REST APIs. You can think of the specification for Swagger like the specification for DITA. With DITA, there are specific XML elements used to define help components, and a required order and hierarchy to those elements.
 
 With Swagger, instead of XML, you have set of JSON or YAML objects, with a specific schema about their naming, order, and contents. This JSON or YAML file (either format can be used) describes each part of your API. By describing your API in a standard format, publishing tools can ingest your API and display each component in a cool, interactive display.
@@ -99,34 +102,34 @@ Here's what these objects mean:
 *  `200` is the HTTP status code.
 *  `$ref` is actually a reference to another part of your implementation where the response is defined. (Swagger has a lot of `$ref` references like this to keep your code clean and to facilitate re-use.)
 
-It can take quite a while to figure out the Swagger specification. Give yourself a couple of weeks and a lot of example specification files to look at, especially in the context of the actual API you're documenting. Remember that the Swagger specification is general enough to describe nearly every REST API, so some parts may be more applicable than others.
+It can take quite a while to figure out the Swagger specification. Give yourself a couple of weeks and a lot of example specification documents to look at, especially in the context of the actual API you're documenting. Remember that the Swagger specification is general enough to describe nearly every REST API, so some parts may be more applicable than others.
 
-When you're implementing the specification, instead of working in a text editor, you can write your code in the [Swagger editor](http://editor.swagger.io/). The Swagger Editor dynamically validates whether the specification file you're creating is valid.
+When you're implementing the specification, instead of working in a text editor, you can write your code in the [Swagger editor](http://editor.swagger.io/). The Swagger Editor dynamically validates whether the specification document you're creating is valid.
 
 <img src="images/swagger_editor_pic.png" alt="Swagger Editor" />
 
 While you're coding in the Swagger Editor, if you make an error, you can quickly fix it before continuing, rather than waiting until a later time to run a build and sort out errors.
 
-For your specification file's format, you have the choice of working in either JSON or YAML. The previous code sample is in [YAML](http://yaml.org/). YAML refers to "YAML Ain't Markup Language,” meaning YAML doesn't have any markup tags (`<>`), as is common with other markup
+For your specification document's format, you have the choice of working in either JSON or YAML. The previous code sample is in [YAML](http://yaml.org/). YAML refers to "YAML Ain't Markup Language,” meaning YAML doesn't have any markup tags (`<>`), as is common with other markup
 languages such as XML.
 
 YAML depends on spacing and colons to establish the object syntax. This makes the code more human-readable, but it's also trickier to get the spacing right.
 
 ## Manual or automated?
 
-So far I've been talking about creating the Swagger specification file as if it's the technical writer's task and requires manual coding in a text editor based on close study of the specification. That's how I approached it, but developers can also automate the specification file through annotations in the programming source code.
+So far I've been talking about creating the Swagger specification document as if it's the technical writer's task and requires manual coding in a text editor based on close study of the specification. That's how I approached it, but developers can also automate the specification document through annotations in the programming source code.
 
 This developer-centric may make sense if you have a large number of APIs and it's not practical for technical writers to create this documentation. If this is the case, make sure you get access to the source code to make edits to the annotations. Otherwise, your developers will be writing your docs (which can be good but usually is disastrous).
 
 Swagger offers a variety of libraries that you can add to your programming code. See [Comparison of Automatic API Code Generation Tools For Swagger](https://apievangelist.com/2015/06/06/comparison-of-automatic-api-code-generation-tools-for-swagger/) by API Evangelist. He mentions [Swagger Codegen](http://editor.swagger.io/), [REST United](http://restunited.com/), [Restlet Studio](http://studio.restlet.com/), and [APIMATIC](https://apimatic.io/).
 
-These libraries, specific to your programming language, will parse through your code's annotations and generate a specification file. Of course, someone has to know exactly what annotations to add and how to add them (the process isn't too unlike Javadoc's comments and annotations). Then someone has to write content for each of the annotation's values (describing the endpoint, the parameters, and so on).
+These libraries, specific to your programming language, will parse through your code's annotations and generate a specification document. Of course, someone has to know exactly what annotations to add and how to add them (the process isn't too unlike Javadoc's comments and annotations). Then someone has to write content for each of the annotation's values (describing the endpoint, the parameters, and so on).
 
 In short, there's nothing "automatic" about writing docs &mdash; the automated part is having the Codegen libraries generate the spec. Still, many developers get excited about this approach because it offers a way to generate documentation from code annotations, which is what developers have been doing for years with other programming languages such as Java (using [Javadoc](http://www.oracle.com/technetwork/articles/java/index-137868.html)) or C++ (using [Doxygen](http://www.stack.nl/~dimitri/doxygen/)). They usually feel that generating documentation from the code results in less documentation drift. Docs are likely to remain up to date if the doc is tightly coupled with the code.
 
-Although you can generate your specification file from code annotations, not everyone agrees that this is the best approach. In [Undisturbed REST: A Guide to Designing the Perfect API](https://www.mulesoft.com/lp/ebook/api/restbook), [Michael Stowe](https://twitter.com/mikegstowe) recommends that teams implement the specification by hand and then treat the specification file as a contract that developers use when doing the actual coding. This approach is often referred to as "spec-first development."
+Although you can generate your specification document from code annotations, not everyone agrees that this is the best approach. In [Undisturbed REST: A Guide to Designing the Perfect API](https://www.mulesoft.com/lp/ebook/api/restbook), [Michael Stowe](https://twitter.com/mikegstowe) recommends that teams implement the specification by hand and then treat the specification document as a contract that developers use when doing the actual coding. This approach is often referred to as "spec-first development."
 
-In other words, developers consult the specification file to see what the parameter names should be called, what the responses should be, and so on. After this contract has been established, Stowe says you can then put the annotations in your code to auto-generate the specification file.
+In other words, developers consult the specification document to see what the parameter names should be called, what the responses should be, and so on. After this contract has been established, Stowe says you can then put the annotations in your code to auto-generate the specification document.
 
 Too often, development teams quickly jump to coding the API endpoints, parameters, and responses without doing much user testing or research into whether the API aligns with what users want. Since versioning APIs is extremely difficult (you have to support each new version going forward with full backwards compatibility to previous versions), you want to avoid the "fail fast" approach that is so commonly embraced with agile. There's nothing worse than releasing a new version of your API that invalidates endpoints or parameters used in previous releases.
 
@@ -134,7 +137,7 @@ In my conversations with [Smartbear](https://smartbear.com/), which makes [Swagg
 
 Even before the API has been coded, your spec can generate a mock response by adding response definitions in your spec. The mock server generates a response that looks like it's coming from a real server, but it's really just a pre-defined response in your code and appears to be dynamic to the user.
 
-With my initial project, our developers weren't that familiar with Swagger, so I simply created the specification file by hand. Additionally, I didn't have free access to the programming source code, and our developers spoke English as a second or third language only. They weren't eager to be in the documentation business.
+With my initial project, our developers weren't that familiar with Swagger, so I simply created the specification document by hand. Additionally, I didn't have free access to the programming source code, and our developers spoke English as a second or third language only. They weren't eager to be in the documentation business.
 
 You will most likely find that engineers in your company aren't familiar with Swagger but are interested in using it as an API template. As such, you'll need to take the lead to guide engineers in the needed information, the approach, and other details that align with best practices toward creating the  spec.
 
@@ -142,9 +145,9 @@ In this regard, tech writers have a key role to play in collaborating with the A
 
 ## Parsing the Swagger specification
 
-After you have a valid Swagger specification file that describes your API, you can then feed this specification to different tools to parse it and generate the interactive documentation similar to the Petstore example I referenced earlier.
+After you have a valid Swagger specification document that describes your API, you can then feed this specification to different tools to parse it and generate the interactive documentation similar to the Petstore example I referenced earlier.
 
-Probably the most common tool used to parse the Swagger specification is [Swagger UI](https://github.com/swagger-api/swagger-ui). (Note that "Swagger-UI" is different from "Swagger." Swagger UI is a display framework, whereas Swagger, or rather OpenAPI, is a specification that can be rendered in any number of frameworks.) After you download Swagger UI, you basically just open up the **index.html** file inside the **dist** folder (which contains the Swagger UI project build) and reference your own Swagger specification file in place of the default one.
+Probably the most common tool used to parse the Swagger specification is [Swagger UI](https://github.com/swagger-api/swagger-ui). (Note that "Swagger-UI" is different from "Swagger." Swagger UI is a display framework, whereas Swagger, or rather OpenAPI, is a specification that can be rendered in any number of frameworks.) After you download Swagger UI, you basically just open up the **index.html** file inside the **dist** folder (which contains the Swagger UI project build) and reference your own Swagger specification document in place of the default one.
 
 The Swagger UI code generates a display that looks like this:
 
@@ -162,9 +165,9 @@ After customizing the parameters, click **Try it out!** Swagger UI shows you the
 
 <img src="images/swagger_response_pic.png" alt="Swagger's response" />
 
-There are other tools besides Swagger UI that can parse your Swagger specification file. Some of these tools include [Restlet Studio](https://restlet.com/products/restlet-studio/), [Apiary](https://apiary.io/), [Apigee](http://apigee.com/about/), [Lucybot](https://lucybot.com/), [Gelato](https://gelato.io/)/[Mashape](https://www.mashape.com/), [Readme.io](http://readme.io/), [swagger2postman](https://github.com/josephpconley/swagger2postman), [swagger-ui responsive theme](https://github.com/jensoleg/swagger-ui), [Postman Run Buttons](https://www.getpostman.com/docs/run_button) and more.
+There are other tools besides Swagger UI that can parse your Swagger specification document. Some of these tools include [Restlet Studio](https://restlet.com/products/restlet-studio/), [Apiary](https://apiary.io/), [Apigee](http://apigee.com/about/), [Lucybot](https://lucybot.com/), [Gelato](https://gelato.io/)/[Mashape](https://www.mashape.com/), [Readme.io](http://readme.io/), [swagger2postman](https://github.com/josephpconley/swagger2postman), [swagger-ui responsive theme](https://github.com/jensoleg/swagger-ui), [Postman Run Buttons](https://www.getpostman.com/docs/run_button) and more.
 
-Some web designers have created integrations of Swagger with static site generators such as Jekyll (see [Carte](https://github.com/Wiredcraft/carte)) and [Readme](https://readme.io). More tools roll out regularly for parsing and displaying content from a Swagger specification file.
+Some web designers have created integrations of Swagger with static site generators such as Jekyll (see [Carte](https://github.com/Wiredcraft/carte)) and [Readme](https://readme.io). More tools roll out regularly for parsing and displaying content from a Swagger specification document.
 
 In fact, once you have a valid Swagger specification, using a tool called [API Transformer](https://apitransformer.com), you can even transform it into other API specifications, such as [RAML](http://raml.org/) or [API Blueprint](https://apiblueprint.org/). This allows you to expand your tool horizons even wider. (RAML and API Blueprint are alternative specifications to Swagger: they're not as popular, but the logic of the specifications is similar. And if you're using a platform like Mulesoft or Apiary, you might want to use the specification that platform is optimized for.)
 

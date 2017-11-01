@@ -4,11 +4,11 @@ permalink: /pubapis_yaml.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 8.3
-section: restapispecifications 
+section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-When you created the Swagger file, you used a syntax called YML. YML stands for "YAML Ain't Markup Language." This means that the YAML syntax doesn't have markup tags such as `<` or `>`.
+When you created the [OpenAPI specification](pubapis_openapi_tutorial_overview.html), you usually use a syntax called YAML. The file extension can be either ".yaml" or ".yml." (You can also use [JSON](docapis_analyze_json.html), but the prevailing trend with the OpenAPI document format is YAML.) YAML stands for "YAML Ain't Markup Language." This means that the YAML syntax doesn't have markup tags such as `<` or `>`. Instead, it uses colons to denote an object's properties and hyphens to denote an array.
 
 {% if site.format == "web" %}
 * TOC
@@ -17,21 +17,21 @@ When you created the Swagger file, you used a syntax called YML. YML stands for 
 
 ## Working with YAML
 
-YML is easier to work with because it generally removes the brackets, curly braces, and commas that get in the way of reading content.
+YAML is easier to work with because it removes the brackets, curly braces, and commas that get in the way of reading content.
 
 <figure><a href="http://yaml.org/"><img src="images/yamlscreenshot.png" alt="YAML" /></a><figcaption>The YAML site itself is written using YAML, which you can immediately see is not intended for coding web pages.</figcaption></figure>
 
-YML is an attempt to create a more human readable data exchange format. It's similar to JSON (JSON is actually a subset of YAML) but uses spaces to indicate the structure.
+YAML is an attempt to create a more human readable data exchange format. It's similar to JSON (JSON is actually a subset of YAML) but uses spaces, colons, and hyphens to indicate the structure.
 
-Many computers ingest data in a YML or JSON format. It's a syntax commonly used in configuration files and an increasing number of platforms (like Jekyll), so it's a good idea to become familiar with it.
+Many computers ingest data in a YAML or JSON format. It's a syntax commonly used in configuration files and an increasing number of platforms (like Jekyll), so it's a good idea to become familiar with it.
 
 ## YAML is a superset of JSON
 
-YAML and JSON are practically different ways of structuring the same data. Dot notation accesses the values the same way. For example, the Swagger UI can read the swagger.json or swagger.yaml files equivalently. Pretty much any parser that reads JSON will also read YAML. However, some JSON parsers might not read YAML, because there are a few features YAML has that JSON lacks (more on that later).
+YAML and JSON are practically different ways of structuring the same data. Dot notation accesses the values the same way. For example, the Swagger UI can read the openapi.json or openapi.yaml files equivalently. Pretty much any parser that reads JSON will also read YAML. However, some JSON parsers might not read YAML, because there are a few features YAML has that JSON lacks (more on that later).
 
 ## YAML syntax
 
-With a YML file, spacing is significant. Each two-space indent represents a new level:
+With a YAML file, spacing is significant. Each two-space indent represents a new level:
 
 ```yaml
 level1:
@@ -39,8 +39,10 @@ level1:
     level3:
 ```
 
+Each new level is an object. In this example, the level1 object contains the level2 object, which contains the level3 object.
+
 {: .note}
-With YAML, you don't use tabs (since they're non-standard). Instead, you space twice.
+With YAML, you generally don't use tabs (since they're non-standard). Instead, you space twice.
 
 Each level can contain either a single key-value pair (also referred to as a dictionary) or a sequence (a list of hyphens):
 
@@ -55,7 +57,7 @@ Each level can contain either a single key-value pair (also referred to as a dic
       itembmeta: "four"
 ```
 
-YAML files begin with `---`. The values for each key can optionally be enclosed in quotation marks or not. If your value has something like a colon or quotation mark in it, then you'll want to enclose it in quotation marks. And if there's a double quotation mark, then enclose the value in single quotation marks, or vice versa.
+The values for each key can optionally be enclosed in quotation marks or not. If your value has something like a colon or quotation mark in it, you'll want to enclose it in quotation marks. And if there's a double quotation mark, enclose the value in single quotation marks, or vice versa.
 
 {% include random_ad.html %}
 
@@ -170,4 +172,4 @@ application_programming_interface: *apidef
 If you access the value (e.g., `yamlfile.api` or `yamlfile.application_programming_interface`), the same definition will be used for both. The `*apidef` acts as an anchor or pointer to the definition established at `&apidef`.
 
 For details on other differences, see [Learn YAML in Minutes](http://learnxinyminutes.com/docs/yaml/).
-To learn more about YML, see this [YML tutorial](http://rhnh.net/2011/01/31/yaml-tutorial).
+To learn more about YAML, see this [YAML tutorial](http://rhnh.net/2011/01/31/yaml-tutorial).

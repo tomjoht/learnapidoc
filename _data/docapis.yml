@@ -206,13 +206,20 @@ folders:
   - title: Swagger tutorial
     jurl: /pubapis_swagger.html
 
-  - title: "OpenAPI tutorial: Build the spec file in 8 steps"
-    jurl: /pubapis_openapi_swagger_spec_deep_dive.html
+  - title: Swagger UI with Mashape Weather API
+    jurl: /assets/files/swagger/
 
+  - title: Embedded Swagger with Mashape Weather API
+    jurl: /pubapis_swagger_embedded.html
+    
     subfolders:
     - title: Open API tutorial
 
       subfolderitems:
+
+      - title: "OpenAPI tutorial overview"
+        jurl: /pubapis_openapi_tutorial_overview.html
+
       - title: "Step 1: openapi object"
         jurl: /pubapis_openapi_step1_openapi_object.html
 
@@ -236,12 +243,6 @@ folders:
 
       - title: "Step 8: externaldocs object"
         jurl: /pubapis_openapi_step8_externaldocs_object.html
-
-  - title: Swagger UI with Mashape Weather API
-    jurl: /assets/files/swagger/
-
-  - title: Embedded Swagger with Mashape Weather API
-    jurl: /pubapis_swagger_embedded.html
 
   - title: Manage OpenAPI/Swagger projects with SwaggerHub
     jurl: /pubapis_swaggerhub_smartbear.html

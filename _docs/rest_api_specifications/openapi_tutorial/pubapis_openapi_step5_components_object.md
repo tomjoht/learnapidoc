@@ -24,9 +24,9 @@ Describing the schema of complex responses can be one of the more challenging as
 * You might want to re-use parts of the schema in other requests or responses. It's common to have the same object, such as `units` or `days`, appear in multiple places in an API. OpenAPI allows you to re-use these same definitions in multiple places without manually copying and pasting the content.
 * You don't want to clutter up your `paths` object with too many request and response details, since the `paths` object is already somewhat complex with several levels of objects.
 
-Instead of listing the schema for your requests and responses in the `paths` object, for more complex schemas (or for schemas that are re-used in multiple operations or paths), you typically use a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#referenceObject), that is, a reference pointer (`$ref`), that refers to a specific definition in the [`components` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#componentsObject).
+Instead of listing the schema for your requests and responses in the `paths` object, for more complex schemas (or for schemas that are re-used in multiple operations or paths), you typically use a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#referenceObject), referenced through `$ref`, that refers to a specific definition in the [`components` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#componentsObject).
 
-Think of the `components` object like an appendix where the re-usable details are provided. If multiple parts of your spec have the same schema, you point each of these references to the same object in your `components` object, and in so doing you single source the content.
+Think of the `components` object like an appendix where the re-usable details are provided. If multiple parts of your spec have the same schema, you point each of these references to the same object in your `components` object, and in so doing you single source the content. The `components` object can even be stored in a separate file if you have a large API and want to organize the information that way.
 
 ## Objects in components
 
@@ -60,6 +60,7 @@ Notice that the `parameters` are stored under `components/parameters`. Now let's
 components:
   parameters:
     latParam:
+      name: lat
       in: query
       description: "Latitude coordinates."
       required: true
@@ -69,6 +70,7 @@ components:
         type: string
       example: "37.3708698"
     lngParam:
+      name: lng
       in: query
       description: "Longitude coordinates."
       required: true
@@ -99,7 +101,7 @@ responses:
           $ref: '#/components/schemas/WeatherdataResponse'
 ```
 
-The `$ref` points to a definition stored in the `components` object. Before we describe the response in the `components` object, let's look at the `weatherdata` response in detail. This response contains multiple nested objects at various levels.
+The `$ref` points to a definition stored in the `components` object. Before we describe the response in the `components` object, let's look at the `weatherdata` response in detail. This response contains multiple nested objects at various levels. (Note that this Mashape Weather API builds off of a [Yahoo weather service API](https://developer.yahoo.com/weather/documentation.html), so the data returned in the `weather` and `weatherdata` endpoints is highly similar to the data returned by the Yahoo weather service API.)
 
 ```json
 {
@@ -875,9 +877,11 @@ section.models {
 
 ## Describing a schema
 
-For most of the sections in `components`, you follow the same object descriptions as detailed in the rest of the spec. However, when describing the `schema`, you use standard keywords and terms from the [JSON Schema ](https://tools.ietf.org/html/draft-wright-json-schema-00). In other words, you aren't merely using the OpenAPI spec. Here the OpenAPI spec feeds into the larger JSON definitions and description language for describing JSON models.
+For most of the sections in `components`, you follow the same object descriptions as detailed in the rest of the spec. However, when describing the `schema`, you use standard keywords and terms from the [JSON Schema ](http://json-schema.org/), specifically the [JSON Schema Specification Wright Draft 00](https://tools.ietf.org/html/draft-wright-json-schema-00).
 
-See the [schema object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#schemaObject) for details. To describe your JSON objects, you might use the following keywords:
+In other words, you aren't merely using terms defined by the OpenAPI spec to describe the models for your JSON. As you describe your schema objects, the terminology in the OpenAPI spec feeds into the larger JSON definitions and description language for modeling JSON. (Note that the OpenAPI's usage of the JSON Schema is just a subset of the full JSON Schema.)
+
+To describe your JSON objects, you might use the following keywords:
 
 * `title`
 * `multipleOf`
@@ -907,6 +911,24 @@ See the [schema object](https://github.com/OAI/OpenAPI-Specification/blob/master
 * `format`
 * `default`
 
-Besides looking in the [schema object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#schemaObject) in the OpenAPI spec for details, you can also read the [JSON Schema](https://tools.ietf.org/html/draft-wright-json-schema-00).
+A number of [data types](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#data-types) are also available:
 
-Additionally, you can look at some example schemas. You can view [3.0 examples here](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v3.0). I typically find an object that resembles what I'm trying to represent and mimic the same properties and structure. The `schema` object in 3.0 differs slightly from the schema object in 2.0 &mdash; see this [post on Nordic APIs](https://nordicapis.com/whats-new-in-openapi-3-0/#jsonandotherschema) for details on what changed. However, example schemas from [2.0 specs](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0) (which are a lot more abundant) would probably also be helpful as long as you just look at the schema definitions, because a lot has changed from 2.0 to 3.0 in the spec.
+* `integer`
+* `long`
+* `float`
+* `double`
+* `string`
+* `byte`
+* `binary`
+* `boolean`		
+* `date`
+* `dateTime`
+* `password`
+
+To describe your JSON objects, besides looking in the [schema object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#schemaObject) in the OpenAPI spec for details, you can also read the [JSON Schema](https://tools.ietf.org/html/draft-wright-json-schema-00).
+
+Additionally, you can look at some example schemas. You can view [3.0 examples here](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v3.0). I usually find a spec that resembles what I'm trying to represent and mimic the same properties and structure. The `schema` object in 3.0 differs slightly from the schema object in 2.0 &mdash; see this [post on Nordic APIs](https://nordicapis.com/whats-new-in-openapi-3-0/#jsonandotherschema) for some details on what's new. However, example schemas from [2.0 specs](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0) (which are a lot easier to find online) would probably also be helpful as long as you just look at the schema definitions (and not the rest of the spec). (A lot has changed from 2.0 to 3.0 in the spec.)
+
+## Security definitions
+
+The `components` object also contains a [`securitySchemes` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#securitySchemeObject) that defines the authorization method used with each `path`. However, rather than dive into the security configuration details here, I explore security in the [step 6](pubapis_openapi_step6_security_object.html).

@@ -21,7 +21,7 @@ APIMATIC
 : Supports most REST API description formats (OpenAPI, RAML, API Blueprint, etc.) and provides SDK code generation, conversions from one spec format to another, and many more services. APIMATIC "lets you define APIs and generate SDKs for more than 10 languages." For example, you can automatically convert Swagger 2.0 to 3.0 using the [API Transformer](https://apimatic.io/transformer) service on this site. See [https://apimatic.io/](https://apimatic.io/) and read the [documentation](https://docs.apimatic.io/).
 
 API Transformer
-: A cross-platform service provided by APIMATIC that will automatically convert your specification file from one format or version to another. See [apimatic.io/transformer](https://apimatic.io/transformer).
+: A cross-platform service provided by APIMATIC that will automatically convert your specification document from one format or version to another. See [apimatic.io/transformer](https://apimatic.io/transformer).
 
 Apiary
 : Platform that supports the full life-cycle of API design, development, and deployment. For interactive documentation, Apiary supports the API Blueprint specification, which similar to OpenAPI or RAML but includes more Markdown elements. See [apiary.io](https://apiary.io).
@@ -43,7 +43,7 @@ clone
 : In Git, a clone is a copy of the repository. The first step in working with any repository is to clone the repo locally. Git is a distributed version control system, so everyone working in it has a local copy (clone) on their machines. The central repository is referred to as the origin. Each user can pull updates from origin and push updates to origin. See [git-clone](https://git-scm.com/docs/git-clone).
 
 Codegen
-: Refers to the Swagger tooling integrated with code libraries to auto-generate the Swagger specification file from annotations in the code. "Swagger Codegen can simplify your build process by generating server stubs and client SDKs from your Swagger specification." See [Swagger Codegen](https://swagger.io/swagger-codegen/).
+: Refers to the Swagger tooling integrated with code libraries to auto-generate the Swagger specification document from annotations in the code. "Swagger Codegen can simplify your build process by generating server stubs and client SDKs from your Swagger specification." See [Swagger Codegen](https://swagger.io/swagger-codegen/).
 
 commit
 : In Git, a commit is when you take a snapshot of your changes to the repo. Git saves the commit as a snapshot in time that you can revert back to later if needed. You commit your changes before pulling from origin or before merging your branch within another branch. See [git-commit](https://git-scm.com/docs/git-commit).
@@ -85,7 +85,7 @@ Mulesoft
 : Similar to Apiary or Apigee, Mulesoft provides an end-to-end platform for designing, developing, and distributing your APIs. For documentation, Mulesoft supports [RAML](http://idratherbewriting.com/learnapidoc/pubapis_raml.html). See [https://www.mulesoft.com/](https://www.mulesoft.com/).
 
 OpenAPI
-: The official name for the Swagger specification. The OpenAPI specification provides a set of elements that can be used to describe your REST API. When valid, the specification file can be used to create interactive documentation, generate client SDKs, run unit tests, and more. See [https://github.com/OAI/OpenAPI-Specification](https://github.com/OAI/OpenAPI-Specification). Now under the Open API Initiative with the Linux Foundation, the OpenAPI specification aims to be vendor neutral.
+: The official name for the Swagger specification. The OpenAPI specification provides a set of elements that can be used to describe your REST API. When valid, the specification document can be used to create interactive documentation, generate client SDKs, run unit tests, and more. See [https://github.com/OAI/OpenAPI-Specification](https://github.com/OAI/OpenAPI-Specification). Now under the Open API Initiative with the Linux Foundation, the OpenAPI specification aims to be vendor neutral.
 
 OpenAPI Initiative
 : The governing body that directs the OpenAPI specification. Backed by the Linux Foundation. See [https://www.openapis.org/](https://www.openapis.org/).
@@ -133,16 +133,16 @@ Swagger
 : An official specification for REST APIs. Provides objects used to describe your endpoints, parameters, responses, and security. Now called OpenAPI specification.
 
 Swagger contract
-: The specification file, usually created manually, that defines the blueprints that developers should code the API to. The contract aligns with a "spec-first" or "spec-driven development" philosophy. The contract essentially acts like the API requirements for developers. See [this blog post/podcast](http://idratherbewriting.com/2015/10/12/spec-driven-design-podcast-michael-stowe/) for details.
+: The specification document, usually created manually, that defines the blueprints that developers should code the API to. The contract aligns with a "spec-first" or "spec-driven development" philosophy. The contract essentially acts like the API requirements for developers. See [this blog post/podcast](http://idratherbewriting.com/2015/10/12/spec-driven-design-podcast-michael-stowe/) for details.
 
 Swagger Editor
-: Swagger specification validator. An online editor that dynamically checks whether your Swagger specification file is valid.
+: Swagger specification validator. An online editor that dynamically checks whether your Swagger specification document is valid.
 
-Swagger specification file
+Swagger specification document
 : The file (either in YAML or JSON syntax) that describes your REST API. Follows the OpenAPI specification format.
 
 Swagger UI
-: A display framework. The most common way to parse a Swagger specification file and produce the interactive documentation as shown in the Petstore demo.
+: A display framework. The most common way to parse a Swagger specification document and produce the interactive documentation as shown in the Petstore demo.
 
 SwaggerHub
 : A site developed by Smartbear to help teams collaborate around the Swagger spec. In addition to generating interactive documentation from SwaggerHub, you can generate many client and server SDKs and other services. See [Manage Swagger Projects with SwaggerHub](http://idratherbewriting.com/learnapidoc/pubapis_swaggerhub_smartbear.html).
@@ -154,6 +154,6 @@ version control
 : A system for managing code that relies on snapshots that store content at specific states. Enables you to revert to previous states, branch the code into different versions, and more. See [About Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) for details.
 
 YAML
-: Recursive acronym for "YAML Ain't No Markup Language.” A human- readable, space-sensitive syntax used in the Swagger specification file. See [More About YAML](http://idratherbewriting.com/learnapidoc/pubapis_yaml.html).
+: Recursive acronym for "YAML Ain't No Markup Language.” A human- readable, space-sensitive syntax used in the Swagger specification document. See [More About YAML](http://idratherbewriting.com/learnapidoc/pubapis_yaml.html).
 
 {% include random_ad.html %}
