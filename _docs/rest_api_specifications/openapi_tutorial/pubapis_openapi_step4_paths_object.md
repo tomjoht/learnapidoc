@@ -106,11 +106,11 @@ Let's add a skeleton of the operation object details to our existing code:
 
 Now we can remove a few unnecessary fields:
 
-* There's no need to include [`requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#requestBodyObject) here because none of the Mashape Weather API paths contain request body parameters.
-* There's no need to include [`servers`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#serverObject) because the paths just use the same global `servers` URL that we [defined earlier](pubapis_openapi_step3_servers_object.html).
-* There's no need to include [security](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#securityRequirementObject) because all the paths use the same `security` object, which is defined globally at the root.
+* There's no need to include [`requestBody` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#requestBodyObject) here because none of the Mashape Weather API paths contain request body parameters.
+* There's no need to include the  [`servers` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#serverObject) because the paths just use the same global `servers` URL that we [defined earlier](pubapis_openapi_step3_servers_object.html) at the root level.
+* There's no need to include [security](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#securityRequirementObject) because all the paths use the same `security` object, which is defined globally at the root (see [step 6](pubapis_openapi_step6_security_object.html)).
 * There's no need to include `deprecated` because none of the paths are deprecated, and the default value is `true`.
-* There's no need to include `callbacks` because our paths don't use them.
+* There's no need to include `callbacks` because our paths don't use callbacks.
 
 As a result, we can reduce the number of fields to concern ourselves with:
 
