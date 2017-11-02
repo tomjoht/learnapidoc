@@ -34,17 +34,19 @@ paths:
   /weatherdata:
     get:
       tags:
-        - Full Weather Data
+        - Weather Forecast
       summary: getWeatherData
       description: Get weather forecast with lots of details
       operationId: GetWeatherData
 ```
 
-All paths that have this same tag will be grouped together in the Swagger UI display. A collapsible/expandable toggle groups the paths by tag name. The `/aqi` path has the `Air Quality` tag, while the `/weather` and `/weatherdata` paths have the `Weather Forecast` tag.
+All paths that have this same `Weather Forecast` tag will be grouped together under the title `Weather Forecast` in the Swagger UI display. Each group title is a collapsible/expandable toggle. The `/aqi` path has the `Air Quality` tag.
 
 <img src="/learnapidoc/images/openapitutorial_tags.png" />
 
-The order of the tags in the `tags` object at the root level determines their order in the Swagger UI display. Additionally, you can add `descriptions` for each tag. The descriptions will appear to the right of the tag name. Here's an example for the Mashape Weather API:
+The order of the tags in the `tags` object at the root level determines their order in the Swagger UI display. Additionally, you can add `descriptions` for each tag, documenting exactly what each tag used in the specification document means.
+
+The descriptions will appear to the right of the tag name. Here's an example of the tags object for our Mashape Weather API:
 
 ```yaml
 tags:

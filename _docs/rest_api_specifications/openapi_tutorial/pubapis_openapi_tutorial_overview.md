@@ -26,18 +26,18 @@ There are other Swagger/OpenAPI tutorials online, but make sure you follow tutor
 
 ## How my OpenAPI/Swagger tutorial is different
 
-Rather than try to reproduce the material in the guides or specification, in my OpenAPI/Swagger tutorial here, I give you a crash course in manually creating the specification document, using a real API for context, and also providing detail about how the specification fields get rendered in the Swagger UI display.
+Rather than try to reproduce the material in the guides or specification, in my OpenAPI/Swagger tutorial here, I give you a crash course in manually creating the specification document. I use a real API for context, and also provide detail about how the specification fields get rendered in Swagger UI.
 
-[Swagger UI](https://github.com/swagger-api/swagger-ui) is the official display framework for the OpenAPI specification. There are many display frameworks that can parse and display information in a Swagger specification document (just like many component content management systems can read and display information from DITA files). However, I think Swagger UI is probably the best tool to use when rendering your specification document. Swagger UI is sponsored by SmartBear, the same company that leads the OpenAPI initiative. Their tooling will almost always be in sync with the latest spec features. Swagger UI an actively developed and managed open source project.
+[Swagger UI](https://github.com/swagger-api/swagger-ui) is one of the most popular display frameworks for the OpenAPI specification. There are many display frameworks that can parse and display information in an OpenAPI specification document (just like many component content management systems can read and display information from DITA files). However, I think Swagger UI is probably the best tool to use when rendering your specification document. Swagger UI is sponsored by SmartBear, the same company that is heavily invested in the [OpenAPI initiative](https://www.openapis.org/). Their tooling will almost always be in sync with the latest spec features. Swagger UI an actively developed and managed open source project.
 
-By seeing how the fields in the spec appear in the Swagger UI display, the specification objects and properties will take on more relevance and meaning.
+By showing you how the fields in the spec appear in the Swagger UI display, I hope the specification objects and properties will take on more relevance and meaning.
 
 ## Terminology
 
 Before continuing, I want to clarify a few terms for those who may be unfamiliar with the OpenAPI/Swagger landscape:
 
-* ["Smartbear"](https://smartbear.com/) is the company that maintains and develops the open source Swagger tooling (Swagger Editor, Swagger UI, Swagger Codegen, and others). They do not own the ["OpenAPI specification"](https://github.com/OAI/OpenAPI-Specification/), as this is an open standard/initiative backed by the Linux Foundation, but they lead it.
 * "Swagger" was the original name of the spec, but it was changed to "OpenAPI" to reinforce the open, non-proprietary nature of the standard. People often refer to both names interchangeably, but "OpenAPI" is the standard, preferred term, and so I'll use it here.
+* ["Smartbear"](https://smartbear.com/) is the company that maintains and develops the open source Swagger tooling (Swagger Editor, Swagger UI, Swagger Codegen, and others). They do not own the ["OpenAPI specification"](https://github.com/OAI/OpenAPI-Specification/), as this [initiative](https://www.openapis.org/) is driven by the Linux Foundation. The OpenAPI spec's development is driven by [many companies and organizations](https://www.openapis.org/membership/members).
 * The Swagger YAML file that you create to describe your API is called the "OpenAPI specification document" or the "OpenAPI document."
 
 Now that I've cleared up those terms, let's continue. (For other terms, see the [glossary](api-glossary.html).)
@@ -52,7 +52,7 @@ The specification document in this tutorial is in YAML format, but it could also
 
 It would be a good idea to review the [YAML tutorial](pubapis_yaml.html) before proceeding in order to understand how objects, arrays, and other formats are formatted in YAML. So that we're on the same page with terms, let's briefly review.
 
- YAML is a superset of JSON, meaning the two are practically interchangeable formats. Each level in YAML is an object. In the following code, `california` is an object. `animal`, `flower`, and `bird` are properties of the `california` object.
+YAML is a superset of JSON, meaning the two are practically interchangeable formats. Each level in YAML is an object. In the following code, `california` is an object. `animal`, `flower`, and `bird` are properties of the `california` object.
 
 ```yaml
 california:
@@ -61,7 +61,7 @@ california:
   bird: Quail
 ```
 
-In this code, `countries` contains an object called `united_states`, which contains an object called `california`, which contains several properties:
+In the following code, `countries` contains an object called `united_states`, which contains an object called `california`, which contains several properties with string values:
 
 ```yaml
 countries:
@@ -96,7 +96,11 @@ The OpenAPI tutorial has 8 steps. Each step corresponds with one of the root-lev
 * [Step 7: tags object](pubapis_openapi_step7_openapi_tags_object.html)
 * [Step 8: externalDocs object](pubapis_openapi_step8_openapi_external_docs_object.html)
 
-The specification document itself just describes the API following a specific model. The spec alone does nothing. Other tools are required to read and display the spec document, or to generate client SDKs from it. My preferred tool for parsing and displaying information from the specification document is [Swagger UI](https://github.com/swagger-api/swagger-ui). You can see OpenAPI spec rendered with Swagger UI in the following links:
+Note that the spec alone does nothing with your content. Other tools are required to read and display the spec document, or to generate client SDKs from it.
+
+My preferred tool for parsing and displaying information from the specification document is [Swagger UI](https://github.com/swagger-api/swagger-ui), but many other tools can consume the OpenAPI document and display it in different ways. Consider the screenshots from Swagger UI as one example of how the fields from the spec might be rendered.
+
+You can see OpenAPI spec rendered with Swagger UI in the following links:
 
 * [Swagger UI with Mashape Weather API](/learnapidoc/assets/files/swagger/)
 * [Embedded Swagger with Mashape Weather API](/learnapidoc/pubapis_swagger_embedded.html)

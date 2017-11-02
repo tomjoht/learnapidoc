@@ -63,7 +63,9 @@ Not only does SwaggerHub allow you to save your Swagger spec, you can save diffe
 
 When you publish a version, the published version becomes Read Only. If you want to make changes to a published version (rather than creating a new version), you can unpublish the version and make edits on it.
 
-You can link to specific versions of your documentation, or you can use a more general link path that will automatically forward to the latest version. Here's a link to the Weather API published on SwaggerHub: [https://app.swaggerhub.com/apis/IdRatherBeWriting/MashapeWeatherAPI/](https://app.swaggerhub.com/apis/IdRatherBeWriting/MashapeWeatherAPI/). When you go to this URL, the browser forwards to the latest published version of the spec automatically.
+You can link to specific versions of your documentation, or you can use a more general link path that will automatically forward to the latest version. Here's a link to the Weather API published on SwaggerHub that uses version 2.0 of the spec: [https://app.swaggerhub.com/apis/IdRatherBeWriting/MashapeWeatherAPI/2.2](https://app.swaggerhub.com/apis/IdRatherBeWriting/MashapeWeatherAPI/2.2).
+
+You can also send users to the default version when they go they don't include the version at the end. For example, if you go to [https://app.swaggerhub.com/apis/IdRatherBeWriting/MashapeWeatherAPI](https://app.swaggerhub.com/apis/IdRatherBeWriting/MashapeWeatherAPI), you get forwarded to the latest published version of the spec automatically.
 
 Versioning is helpful when you're collaborating on the spec with other team members. For example, suppose you see the original version drafted by an engineer, and you want to make major edits. Rather than directly overwriting the content (or making a backup copy of an offline file), you can create a new version and then take more ownership to overhaul that version with your own wordsmithing, without fear that the engineer will react negatively about overwritten/lost content.
 

@@ -45,6 +45,8 @@ paths:
                 type: string
                 description: AQI response
                 example: 52
+        404:
+          $ref: '#/components/responses/404'
   /weather:
     get:
       servers:
@@ -69,7 +71,8 @@ paths:
                 type: string
                 description: weather response
                 example: 26 c, Mostly Clear at Singapore, Singapore
-
+        404:
+          $ref: '#/components/responses/404'
   /weatherdata:
     get:
       tags:
@@ -91,6 +94,8 @@ paths:
               schema:
                 description: Successful operation
                 $ref: '#/components/schemas/WeatherdataResponse'
+        404:
+          $ref: '#/components/responses/404'
 components:
   parameters:
     latParam:
@@ -113,6 +118,16 @@ components:
       schema:
         type: string
       example: "-122.037593"
+
+  responses:
+    404:
+      description: Not found
+      content:
+        text/plain:
+          schema:
+            type: string
+            description: Not found
+            example: Not found
 
   schemas:
     WeatherdataResponse:

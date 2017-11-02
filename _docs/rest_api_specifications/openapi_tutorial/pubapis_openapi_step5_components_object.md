@@ -42,7 +42,7 @@ You can store a lot of different re-usable objects in the `components` object. T
 * `links`
 * `callbacks`
 
-## Storing re-used parameters in components {#reused_parameters}
+## Re-using parameters in components {#reused_parameters}
 
 In the Mashape Weather API, the `lat` and `lng` parameters remain the same for each of the paths. Rather than duplicate this same description in each path, we can store the object in the `components`.
 
@@ -54,7 +54,7 @@ parameters:
       - $ref: '#/components/parameters/lngParam'
 ```
 
-Notice that the `parameters` are stored under `components/parameters`. Now let's define the parameters one time:
+Notice that the `parameters` are stored under `components/parameters`. Now let's define the parameters one time in `components`:
 
 ```yaml
 components:
@@ -84,11 +84,46 @@ components:
 {: .tip}
 See [Using $ref](https://swagger.io/docs/specification/using-ref/) for more details on this standard JSON reference property.
 
+## Re-using response objects
+
+Response objects are another common object to re-use across paths. In this API, we might have a `404` response for each path indicating a resource is not found. Here's how we can reference that in the response object:
+
+```yaml
+paths:
+  /aqi:
+    get:
+      ...
+      responses:
+        200:
+          description: AQI response
+          content:
+            text/plain:
+              schema:
+                type: string
+                description: AQI response
+                example: 52
+        404:
+          $ref: '#/components/responses/404'
+```
+
+Then in `components/responses`, we define it:
+
+```yaml
+components:
+  responses:
+    404:
+      description: Not found
+      content:
+        text/plain:
+          schema:
+            type: string
+            description: Not found
+            example: Not found
+```
+
 ## The weatherdata response
 
-For the `weatherdata` response, although we're not re-using objects across multiple `response` objects in our API, the response is so lengthy and complex, it's going to be better organized under `components`.
-
-If you recall in the previous step ([OpenAPI tutorial step 4: The paths object](pubapis_openapi_step4_paths_object.html), the `responses` object for the `weatherdata` endpoint looked like this:
+The `weatherdata` response is so lengthy and complex, it's going to be better organized under `components`. If you recall in the previous step ([OpenAPI tutorial step 4: The paths object](pubapis_openapi_step4_paths_object.html), the `responses` object for the `weatherdata` endpoint looked like this:
 
 ```yaml
 responses:
@@ -101,161 +136,9 @@ responses:
           $ref: '#/components/schemas/WeatherdataResponse'
 ```
 
-The `$ref` points to a definition stored in the `components` object. Before we describe the response in the `components` object, let's look at the `weatherdata` response in detail. This response contains multiple nested objects at various levels. (Note that this Mashape Weather API builds off of a [Yahoo weather service API](https://developer.yahoo.com/weather/documentation.html), so the data returned in the `weather` and `weatherdata` endpoints is highly similar to the data returned by the Yahoo weather service API.)
+The `$ref` points to a definition stored in the `components` object. Before we describe the response in the `components` object, it might be helpful to review what the [`weatherdata` response looks like](/learnapidoc/assets/files/swagger/#/Weather_Forecast/GetWeatherData). The response contains multiple nested objects at various levels. (Note that this Mashape Weather API builds off of a [Yahoo weather service API](https://developer.yahoo.com/weather/documentation.html), so the data returned in the `weather` and `weatherdata` endpoints is highly similar to the data returned by the Yahoo weather service API.)
 
-```json
-{
-  "query": {
-    "count": 1,
-    "created": "2017-10-26T02:04:45Z",
-    "lang": "en-US",
-    "results": {
-      "channel": {
-        "units": {
-          "distance": "km",
-          "pressure": "mb",
-          "speed": "km/h",
-          "temperature": "C"
-        },
-        "title": "Yahoo! Weather - Sunnyvale, CA, US",
-        "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91990359/",
-        "description": "Yahoo! Weather for Sunnyvale, CA, US",
-        "language": "en-us",
-        "lastBuildDate": "Wed, 25 Oct 2017 07:04 PM PDT",
-        "ttl": "60",
-        "location": {
-          "city": "Sunnyvale",
-          "country": "United States",
-          "region": " CA"
-        },
-        "wind": {
-          "chill": "82",
-          "direction": "305",
-          "speed": "17.70"
-        },
-        "atmosphere": {
-          "humidity": "33",
-          "pressure": "33999.36",
-          "rising": "0",
-          "visibility": "25.91"
-        },
-        "astronomy": {
-          "sunrise": "7:26 am",
-          "sunset": "6:18 pm"
-        },
-        "image": {
-          "title": "Yahoo! Weather",
-          "width": "142",
-          "height": "18",
-          "link": "http://weather.yahoo.com",
-          "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
-        },
-        "item": {
-          "title": "Conditions for Sunnyvale, CA, US at 06:00 PM PDT",
-          "lat": "37.377499",
-          "long": "-122.04686",
-          "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91990359/",
-          "pubDate": "Wed, 25 Oct 2017 06:00 PM PDT",
-          "condition": {
-            "code": "32",
-            "date": "Wed, 25 Oct 2017 06:00 PM PDT",
-            "temp": "28",
-            "text": "Sunny"
-          },
-          "forecast": [
-            {
-              "code": "32",
-              "date": "25 Oct 2017",
-              "day": "Wed",
-              "high": "31",
-              "low": "15",
-              "text": "Sunny"
-            },
-            {
-              "code": "32",
-              "date": "26 Oct 2017",
-              "day": "Thu",
-              "high": "30",
-              "low": "17",
-              "text": "Sunny"
-            },
-            {
-              "code": "32",
-              "date": "27 Oct 2017",
-              "day": "Fri",
-              "high": "30",
-              "low": "15",
-              "text": "Sunny"
-            },
-            {
-              "code": "34",
-              "date": "28 Oct 2017",
-              "day": "Sat",
-              "high": "25",
-              "low": "12",
-              "text": "Mostly Sunny"
-            },
-            {
-              "code": "30",
-              "date": "29 Oct 2017",
-              "day": "Sun",
-              "high": "21",
-              "low": "11",
-              "text": "Partly Cloudy"
-            },
-            {
-              "code": "28",
-              "date": "30 Oct 2017",
-              "day": "Mon",
-              "high": "20",
-              "low": "11",
-              "text": "Mostly Cloudy"
-            },
-            {
-              "code": "30",
-              "date": "31 Oct 2017",
-              "day": "Tue",
-              "high": "21",
-              "low": "10",
-              "text": "Partly Cloudy"
-            },
-            {
-              "code": "30",
-              "date": "01 Nov 2017",
-              "day": "Wed",
-              "high": "21",
-              "low": "10",
-              "text": "Partly Cloudy"
-            },
-            {
-              "code": "30",
-              "date": "02 Nov 2017",
-              "day": "Thu",
-              "high": "18",
-              "low": "10",
-              "text": "Partly Cloudy"
-            },
-            {
-              "code": "28",
-              "date": "03 Nov 2017",
-              "day": "Fri",
-              "high": "18",
-              "low": "10",
-              "text": "Mostly Cloudy"
-            }
-          ],
-          "description": "<![CDATA[<img src=\"http://l.yimg.com/a/i/us/we/52/32.gif\"/>\n<BR />\n<b>Current Conditions:</b>\n<BR />Sunny\n<BR />\n<BR />\n<b>Forecast:</b>\n<BR /> Wed - Sunny. High: 31Low: 15\n<BR /> Thu - Sunny. High: 30Low: 17\n<BR /> Fri - Sunny. High: 30Low: 15\n<BR /> Sat - Mostly Sunny. High: 25Low: 12\n<BR /> Sun - Partly Cloudy. High: 21Low: 11\n<BR />\n<BR />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91990359/\">Full Forecast at Yahoo! Weather</a>\n<BR />\n<BR />\n<BR />\n]]>",
-          "guid": {
-            "isPermaLink": "false"
-          }
-        }
-      }
-    }
-  }
-}
-```
-
-There are a couple of ways to go about describing this. You could create one long description like this:
+There are a couple of ways to go about describing this response. You could create one long description like this:
 
 ```yaml
 components:
@@ -880,6 +763,8 @@ section.models {
 For most of the sections in `components`, you follow the same object descriptions as detailed in the rest of the spec. However, when describing the `schema`, you use standard keywords and terms from the [JSON Schema ](http://json-schema.org/), specifically the [JSON Schema Specification Wright Draft 00](https://tools.ietf.org/html/draft-wright-json-schema-00).
 
 In other words, you aren't merely using terms defined by the OpenAPI spec to describe the models for your JSON. As you describe your schema objects, the terminology in the OpenAPI spec feeds into the larger JSON definitions and description language for modeling JSON. (Note that the OpenAPI's usage of the JSON Schema is just a subset of the full JSON Schema.)
+
+The OpenAPI specification doesn't attempt to document how to model JSON schemas. This would be duplicate work outside of the scope of the OpenAPI spec. Therefore you might need to consult [JSON Schema](http://json-schema.org) for more details. (One other helpful tutorial is [Advanced Data](http://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-4-advanced-data-modeling/) from API Handyman.)
 
 To describe your JSON objects, you might use the following keywords:
 

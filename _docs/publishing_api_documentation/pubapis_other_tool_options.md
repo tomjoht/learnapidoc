@@ -99,7 +99,7 @@ But the authoring of the docs would really only work for Java developers. It wou
 
 ## Run in Postman button {#postman}
 
-The [Run in Postman button](https://www.getpostman.com/integrations/run-button) provides a **Run in Postman** button that, when clicked, imports your API info into Postman (either the Chrome app or Mac app) so users can run calls using the Postman client.
+The [Run in Postman button](https://www.getpostman.com/integrations/run-button) provides a **Run in Postman** button that, when clicked, imports your API info into Postman so users can run calls using the Postman client.
 
 To try out Run in Postman, first [import your Swagger spec into Postman](https://www.getpostman.com/docs/postman/collections/data_formats#importing-postman-data) or enter your API information manually. Then see [Create the Run in Postman button](https://www.getpostman.com/docs/postman_for_publishers/run_button/creating_run_button).
 
