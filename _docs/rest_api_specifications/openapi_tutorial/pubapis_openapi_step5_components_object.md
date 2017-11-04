@@ -10,7 +10,7 @@ path1: /restapispecifications.html
 
 {% include workflow_map.html step="5" map="content/openapi_tutorial_map.html"  %}
 
-In the previous step ([OpenAPI tutorial step 4: The paths object](pubapis_openapi_step4_paths_object.html), when you described the [`requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#requestBodyObject) and [`responses` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#responsesObject) objects, you used a [`schema`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#schemaObject) object to describe the model for the request or response. The `schema` refers to the fields, values, and structure (for example, the hierarchy and nesting of the various objects) of a JSON or YAML object. (See [What is a schema?](https://spacetelescope.github.io/understanding-json-schema/about.html#what-is-a-schema) for more details.) It's common to use a reference pointer for the `schema` object that points to more details in the `components` object.
+In the previous step ([OpenAPI tutorial step 4: The paths object](pubapis_openapi_step4_paths_object.html)), when you described the [`requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#requestBodyObject) and [`responses` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#responsesObject) objects, you used a [`schema`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#schemaObject) object to describe the model for the request or response. The `schema` refers to the fields, values, and structure (for example, the hierarchy and nesting of the various objects) of a JSON or YAML object. (See [What is a schema?](https://spacetelescope.github.io/understanding-json-schema/about.html#what-is-a-schema) for more details.) It's common to use a reference pointer for the `schema` object that points to more details in the `components` object.
 
 {% if site.format == "web" %}
 * TOC
@@ -49,10 +49,18 @@ In the Mashape Weather API, the `lat` and `lng` parameters remain the same for e
 In the `path` object, rather than listing the parameter details, we simply include a `$ref` pointer that refers to the location in `components` that contains these details:
 
 ```yaml
-parameters:
-      - $ref: '#/components/parameters/latParam'
-      - $ref: '#/components/parameters/lngParam'
+paths:
+  /aqi:
+    get:
+      ...
+      parameters:
+            - $ref: '#/components/parameters/latParam'
+            - $ref: '#/components/parameters/lngParam'
+      ...
 ```
+
+{: .note}
+Ellipses (`...`) indicate truncated code.
 
 Notice that the `parameters` are stored under `components/parameters`. Now let's define the parameters one time in `components`:
 
@@ -123,7 +131,7 @@ components:
 
 ## The weatherdata response
 
-The `weatherdata` response is so lengthy and complex, it's going to be better organized under `components`. If you recall in the previous step ([OpenAPI tutorial step 4: The paths object](pubapis_openapi_step4_paths_object.html), the `responses` object for the `weatherdata` endpoint looked like this:
+Although we don't need to reuse the `weatherdata` response, it's so lengthy and complex, it'll be better to organize it under `components`. If you recall in the previous step ([OpenAPI tutorial step 4: The paths object](pubapis_openapi_step4_paths_object.html), the `responses` object for the `weatherdata` endpoint looked like this:
 
 ```yaml
 responses:

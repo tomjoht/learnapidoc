@@ -1,5 +1,5 @@
 ---
-title: "OpenAPI tutorial overview"
+title: "OpenAPI 3.0 tutorial overview"
 permalink: /pubapis_openapi_tutorial_overview.html
 course: "Documenting REST APIs"
 sidebar: docapis
@@ -8,7 +8,7 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-In the [Swagger tutorial](pubapis_swagger.html), I referenced an OpenAPI specification document without explaining much about it. You simply plugged the document into a Swagger UI project. In this section, we'll dive more deeply into the OpenAPI specification. Specifically, we'll use the same [Mashape Weather API](https://market.mashape.com/fyhao/weather-13) that we've been using throughout other parts of this course as the content for our OpenAPI document.
+In the [Swagger tutorial](pubapis_swagger.html), I referenced an [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification) document without explaining much about it. You simply plugged the document into a Swagger UI project. In this section, we'll dive more deeply into the OpenAPI specification. Specifically, we'll use the same [Mashape Weather API](https://market.mashape.com/fyhao/weather-13) that we've been using throughout other parts of this course as the content for our OpenAPI document.
 
 * TOC
 {:toc}
@@ -19,40 +19,48 @@ Learning the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specificatio
 
 * [Sample OpenAPI specification documents](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v3.0). These sample specification documents provide a good starting point as a basis for your specification document. They give you a big picture about the general shape of a specification document.
 * [Swagger user guide](https://swagger.io/docs/specification/about/). The Swagger user guide is more friendly, conceptual, and easy to follow. It doesn't have the detail and exactness of the specification documentation, but in many ways it's clearer and contains more examples.
-* [OpenAPI specification documentation](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md). The specification documentation is technical and takes a little getting used to, but you'll probably need to consult it frequently when describing your API.
+* [OpenAPI specification documentation](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md). The specification documentation is technical and takes a little getting used to, but you'll no doubt consult it frequently when describing your API. It's a long, single page document to facilitate findability through Ctrl+F.
 
 {: .note}
-There are other Swagger/OpenAPI tutorials online, but make sure you follow tutorials for the 3.0 version of the API rather than 2.0. Version 3.0 was [released in July 2017](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#appendix-a-revision-history). 3.0 is substantially different from 2.0.
+There are other Swagger/OpenAPI tutorials online, but make sure you follow tutorials for the [3.0 version of the API](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md) rather than [2.0](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md). Version 3.0 was [released in July 2017](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#appendix-a-revision-history). 3.0 is substantially different from 2.0.
 
 ## How my OpenAPI/Swagger tutorial is different
 
 Rather than try to reproduce the material in the guides or specification, in my OpenAPI/Swagger tutorial here, I give you a crash course in manually creating the specification document. I use a real API for context, and also provide detail about how the specification fields get rendered in Swagger UI.
 
-[Swagger UI](https://github.com/swagger-api/swagger-ui) is one of the most popular display frameworks for the OpenAPI specification. There are many display frameworks that can parse and display information in an OpenAPI specification document (just like many component content management systems can read and display information from DITA files). However, I think Swagger UI is probably the best tool to use when rendering your specification document. Swagger UI is sponsored by SmartBear, the same company that is heavily invested in the [OpenAPI initiative](https://www.openapis.org/). Their tooling will almost always be in sync with the latest spec features. Swagger UI an actively developed and managed open source project.
+[Swagger UI](https://github.com/swagger-api/swagger-ui) is one of the most popular display frameworks for the OpenAPI specification. (The spec alone does nothing &mdash; you need some tool that will read the spec's format and display the information.) There are many display frameworks that can parse and display information in an OpenAPI specification document (just like many component content management systems can read and display information from DITA files).
 
-By showing you how the fields in the spec appear in the Swagger UI display, I hope the specification objects and properties will take on more relevance and meaning.
+However, I think Swagger UI is probably the best tool to use when rendering your specification document. Swagger UI is sponsored by SmartBear, the same company that is heavily invested in the [OpenAPI initiative](https://www.openapis.org/) and which develops [Swaggerhub](pubapis_swaggerhub_smartbear.html). Their tooling will almost always be in sync with the latest spec features. Swagger UI an actively developed and managed open source project.
+
+By showing you how the fields in the spec appear in the Swagger UI display, I hope the specification objects and properties will take on more relevance and meaning. Just keep in mind that Swagger UI's display is *just one possibility* for how the spec information might be rendered.
 
 ## Terminology
 
 Before continuing, I want to clarify a few terms for those who may be unfamiliar with the OpenAPI/Swagger landscape:
 
-* "Swagger" was the original name of the spec, but it was changed to "OpenAPI" to reinforce the open, non-proprietary nature of the standard. People often refer to both names interchangeably, but "OpenAPI" is the standard, preferred term, and so I'll use it here.
-* ["Smartbear"](https://smartbear.com/) is the company that maintains and develops the open source Swagger tooling (Swagger Editor, Swagger UI, Swagger Codegen, and others). They do not own the ["OpenAPI specification"](https://github.com/OAI/OpenAPI-Specification/), as this [initiative](https://www.openapis.org/) is driven by the Linux Foundation. The OpenAPI spec's development is driven by [many companies and organizations](https://www.openapis.org/membership/members).
+* [Swagger](https://swagger.io/) was the original name of the spec, but the spec was later changed to [OpenAPI](https://github.com/OAI/OpenAPI-Specification/) to reinforce the open, non-proprietary nature of the standard. Now Swagger refers to API tooling, not the spec. People often refer to both names interchangeably, but "OpenAPI" is how the spec should be referred to.
+* [Smartbear](https://smartbear.com/) is the company that maintains and develops the open source Swagger tooling (Swagger Editor, Swagger UI, Swagger Codegen, and others). They do not own the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification/), as this [initiative](https://www.openapis.org/) is driven by the Linux Foundation. The OpenAPI spec's development is driven by [many companies and organizations](https://www.openapis.org/membership/members).
 * The Swagger YAML file that you create to describe your API is called the "OpenAPI specification document" or the "OpenAPI document."
 
 Now that I've cleared up those terms, let's continue. (For other terms, see the [glossary](api-glossary.html).)
 
 ## Start by looking at the big picture
 
-Let's start by getting a big picture look at a specification document. Take a look at [Petstore OpenAPI specification document here](https://github.com/OAI/OpenAPI-Specification/blob/master/examples/v3.0/petstore.yaml). It probably won't mean much at first, but get a sense of the whole before we dive into the details. Look at some of the other samples in the v.3.0 folder as well.
+If you would like to get a big picture of the specification document, take a look at the [3.0 examples here](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v3.0), specifically the [Petstore OpenAPI specification document here](https://github.com/OAI/OpenAPI-Specification/blob/master/examples/v3.0/petstore.yaml). It probably won't mean much at first, but get a sense of the whole before we dive into the details. Look at some of the other samples in the v.3.0 folder as well.
 
-## Review YAML
+## Terminology to Describe JSON/YAML
 
-The specification document in this tutorial is in YAML format, but it could also be expressed in JSON. The specification provides examples in both YAML and JSON. YAML is more readable and is the format I prefer, so I've used it exclusively here.
+The specification document in my OpenAPI tutorial uses YAML, but it could also be expressed in JSON. JSON is a subset of YAML, so the two are practically interchangeable formats (for the data structures we're using). Ultimately, though, the OpenAPI spec is a JSON object. The specification notes:
 
-It would be a good idea to review the [YAML tutorial](pubapis_yaml.html) before proceeding in order to understand how objects, arrays, and other formats are formatted in YAML. So that we're on the same page with terms, let's briefly review.
+>An OpenAPI document that conforms to the OpenAPI Specification is itself a JSON object, which may be represented either in JSON or YAML format. (See [Format](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#format))
 
-YAML is a superset of JSON, meaning the two are practically interchangeable formats. Each level in YAML is an object. In the following code, `california` is an object. `animal`, `flower`, and `bird` are properties of the `california` object.
+In other words, the OpenAPI document you create is a JSON object, but you have the option of expressing the JSON using either JSON or YAML syntax. YAML is more readable and is a more common format (see APIHandyman's take on [JSON vs YAML](https://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-1-introduction/#json-vs-yaml)), so I've used YAML exclusively here. You will see that the spec always shows both the JSON and YAML syntax when showing specification formats. (For a more detailed comparison of YAML versus JSON, see "Relation to JSON" in the [YAML spec](http://www.yaml.org/spec/1.2/spec.html).)
+
+Note that YAML refers to data structures with 3 main terms: "mappings (hashes/dictionaries), sequences (arrays/lists) and scalars (strings/numbers)" (see "Introduction" in [YAML 1.2](http://www.yaml.org/spec/1.2/spec.html)). However, because the OpenAPI spec is a JSON object, it uses JSON terminology &mdash; such as "objects," "arrays," "properties," "fields," and so forth. As such, I'll be showing YAML-formatted content but describing it using JSON terminology.
+
+So that we're on the same page with terms, let's briefly review.
+
+Each level in YAML (defined by a two-space indent) is an object. In the following code, `california` is an object. `animal`, `flower`, and `bird` are properties of the `california` object.
 
 ```yaml
 california:
@@ -60,6 +68,20 @@ california:
   flower: Poppy
   bird: Quail
 ```
+
+Here's what this looks like in JSON:
+
+```json
+{
+  "california": {
+    "animal": "Grizzly Bear",
+    "flower": "Poppy",
+    "bird": "Quail"
+  }
+}
+```
+
+The spec often uses the term "field" in the titles and table column names when listing the properties for a specific object. (Further, it identifies two types of fields &mdash; "fixed" fields are declared, unique names while "patterned" fields are regex expressions.) Fields and properties are synonyms. In the description for each field, the spec frequently refers to the field as a property, so I'm not sure why they chose to use "field" in subheadings and column titles.
 
 In the following code, `countries` contains an object called `united_states`, which contains an object called `california`, which contains several properties with string values:
 
@@ -81,7 +103,19 @@ demographics:
  - rivers
 ```
 
-Hopefully those brief examples will help align us with descriptions in the tutorial.
+Here's what that looks like in JSON:
+
+```json
+{
+  "demographics": [
+    "population",
+    "land",
+    "rivers"
+  ]
+}
+```
+
+Hopefully those brief examples will help align us with the terminology used in the tutorial.
 
 ## Follow the OpenAPI tutorial
 

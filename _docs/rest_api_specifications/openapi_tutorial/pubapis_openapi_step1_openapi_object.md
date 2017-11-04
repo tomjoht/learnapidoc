@@ -20,16 +20,16 @@ path1: /restapispecifications.html
 
 Before diving into the steps here, read the [OpenAPI tutorial overview](pubapis_openapi_tutorial_overview.html) to get a sense of the scope of this tutorial. In brief, this OpenAPI tutorial is unique in the following ways:
 
-* This OpenAPI tutorial uses a sample weather API introduced earlier in this course (see [Scenario for using a weather API](docapis_scenario_for_using_weather_api.html)).
-* The tutorial shows how the spec information gets populated in [Swagger UI](https://github.com/swagger-api/swagger-ui), which makes some of these spec fields more meaningful.
-* The tutorial is a consumable subset of the information in both the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification) and the [Swagger specification commentary](https://swagger.io/docs/specification/about/).
-* The tutorial covers the 3.0 version of the OpenAPI spec, which is the latest version. (Currently, most other OpenAPI tutorials focus on 2.0.)
+* This OpenAPI tutorial uses the context of a simple weather API [introduced earlier](docapis_scenario_for_using_weather_api.html) in this course.
+* The OpenAPI tutorial shows how the spec information gets populated in [Swagger UI](https://github.com/swagger-api/swagger-ui).
+* The OpenAPI tutorial is a subset of the information in both the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification) and the [Swagger specification commentary](https://swagger.io/docs/specification/about/).
+* The OpenAPI tutorial covers the 3.0 version of the OpenAPI spec, which is the latest version.
 
 ## The root-level objects in OpenAPI spec
 
 There are 8 objects at the root level in the OpenAPI 3.0 spec. There are many nested objects within these root level objects, but at the root level, there are just these objects:
 
-* [openapi](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#oasObject)
+* [openapi](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#oasObject  )
 * [info](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#infoObject)
 * [servers](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#serverObject)
 * [paths](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#pathsObject)
