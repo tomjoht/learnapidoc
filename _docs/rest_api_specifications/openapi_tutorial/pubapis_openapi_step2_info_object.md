@@ -10,9 +10,7 @@ path1: /restapispecifications.html
 
 {% include workflow_map.html step="2" map="content/openapi_tutorial_map.html"  %}
 
-## info object
-
-The [info object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#infoObject) contains basic information about your API, including the title, a description, version, license, terms of service, and contact information.
+The [info object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#infoObject) contains basic information about your API, including the title, a description, version, link to the license, link to the terms of service, and contact information. Many of the properties are optional.
 
 {% if site.format == "web" %}
 * TOC
@@ -39,13 +37,15 @@ info:
 ```
 
 {: .tip}
-In any `description` property, you can use [CommonMark Markdown](http://spec.commonmark.org/0.27/), which is much more precise, unambiguous, and robust than the original Markdown. For example, this markdown includes some [backslash escapes](http://spec.commonmark.org/0.27/#backslash-escapes), and it specifies exactly how many spaces you need in lists and other puncutation. You can also break to new lines with `\n` and escape problematic characters like quotation marks or colons with a backslash: `\`.
+In any `description` property, you can use [CommonMark Markdown](http://spec.commonmark.org/0.27/), which is much more precise, unambiguous, and robust than the original Markdown. For example, CommonMark markdown offers some [backslash escapes](http://spec.commonmark.org/0.27/#backslash-escapes), and it specifies exactly how many spaces you need in lists and other punctuation. You can also break to new lines with `\n` and escape problematic characters like quotation marks or colons with a backslash.
 
-In YAML, colons are problematic because they signify new levels, so either escape colons with a backslash or enclose the `description` value in quotation marks.
+As you write content in `description` properties, note that colons are problematic in YAML because they signify new levels. Either escape colons with a backslash or enclose the `description` value in quotation marks.
 
-Many of the fields in the `info` object are optional. In the Swagger UI display, this information in the `info` object appears at the top:
+## Appearance in Swagger UI
 
-<img src="/learnapidoc/images/openapitutorial_info_object.png" style="border:1px solid #dedede;"/>
+In the Swagger UI display, the `info` object's information appears at the top:
+
+<a href="/learnapidoc/assets/files/swagger/"><img src="/learnapidoc/images/openapitutorial_info_object.png" style="border:1px solid #dedede;"/></a>
 
 {: .tip}
 In the `description` property, you might want to provide some basic instructions to users on how to use Swagger UI. If there's a test account they should use, you can provide the information they need in this space.

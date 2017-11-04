@@ -20,7 +20,7 @@ externalDocs:
 
 In the Swagger UI, this link appears after the API description along with other info about the API.
 
-<img src="/learnapidoc/images/openapi_tutorial_externaldocs.png" alt="externalDocs object"/>
+<a href="/learnapidoc/assets/files/swagger/"><img src="/learnapidoc/images/openapi_tutorial_externaldocs.png" alt="externalDocs object"/></a>
 
 {: .tip}
 See the related topic, [Combining OpenAPI's (Swagger's) reference output with user guide docs](/pubapis_combine_swagger_and_guide.html) for tips on how to integrate your Swagger UI output into your regular documentation.

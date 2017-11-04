@@ -744,7 +744,7 @@ Swagger UI displays each object in `components` in a section called `Models` at 
 
 Because I want to re-use objects, I'm going to use the latter method in `components`, where each object contains `$ref` pointers to any sub-object it contains. As a result, the Models section looks like this:
 
-<img src="/learnapidoc/images/swaggerui_models_broken_out.png" />
+<a href="/learnapidoc/assets/files/swagger/"><img src="/learnapidoc/images/swaggerui_models_broken_out.png" /></a>
 
 ## Reason for models in the first place
 
@@ -752,7 +752,7 @@ I'm not really sure why the Models section appears at all in the Swagger UI disp
 
 You don't need this Models section in Swagger UI because both the request and response sections of Swagger UI provide a "Model" link that lets the user toggle to this view. For example:
 
-<img src="/learnapidoc/images/models_options_in_responses.png" />
+<a href="/learnapidoc/assets/files/swagger/"><img src="/learnapidoc/images/models_options_in_responses.png" /></a>
 
 ## Hiding the Models section
 

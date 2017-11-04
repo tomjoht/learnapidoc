@@ -19,11 +19,17 @@
 }
 
 .userMap {
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding: 20px;
-    min-width: 550px;
     margin-bottom: 30px;
+    display: table-row;
+}
+
+.userMap .content {
+  margin-bottom: 25px;
+}
+
+.userMap .arrow {
+  height: 100px;
+  margin-bottom: 25px;
 }
 
 div.box {

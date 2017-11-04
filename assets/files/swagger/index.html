@@ -94,6 +94,7 @@ window.onload = function() {
     url: "{{ "/docs/rest_api_specifications/openapi_weather.yml" | prepend: site.baseurl }}",
     dom_id: '#swagger-ui',
     deepLinking: true,
+    docExpansion:"list",
     validatorUrl: "https://online.swagger.io/validator",
     presets: [
       SwaggerUIBundle.presets.apis,

@@ -12,8 +12,10 @@ path1: /restapispecifications.html
 
 Remember that Swagger UI provides a "Try it out" feature that lets users submit actual requests. As such, the requests must contain the necessary authorization to return a successful response. The [`security` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#securityRequirementObject) specifies the security or authorization protocol used when submitting requests.
 
+{% if site.format == "web" %}
 * TOC
 {:toc}
+{% endif %}
 
 ## Which security scheme?
 
@@ -75,7 +77,7 @@ All paths will use this security method by default unless you override the value
 
 In the Swagger UI, you see the `description` and other security details in the Authorization modal (which appears when you click Authorization):
 
-<img src="/learnapidoc/openapitutorial_securityauth.png"/>
+<a href="/learnapidoc/assets/files/swagger/"><img src="/learnapidoc/openapitutorial_securityauth.png"/></a>
 
 After users enter an API key and click **Authorize**, the authorization method is set for as many requests as they want to make. Only when users refresh the page does the authorization session expire.
 

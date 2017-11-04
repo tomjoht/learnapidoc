@@ -42,7 +42,7 @@ paths:
 
 All paths that have this same `Weather Forecast` tag will be grouped together under the title `Weather Forecast` in the Swagger UI display. Each group title is a collapsible/expandable toggle. The `/aqi` path has the `Air Quality` tag.
 
-<img src="/learnapidoc/images/openapitutorial_tags.png" />
+<a href="/learnapidoc/assets/files/swagger/"><img src="/learnapidoc/images/openapitutorial_tags.png" /></a>
 
 The order of the tags in the `tags` object at the root level determines their order in the Swagger UI display. Additionally, you can add `descriptions` for each tag, documenting exactly what each tag used in the specification document means.
 
