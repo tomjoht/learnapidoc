@@ -39,7 +39,7 @@ There are 8 objects at the root level in the OpenAPI 3.0 spec. There are many ne
 * [externalDocs](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#externalDocumentationObject)
 
 {: .note}
-By "root level," I mean the first level in the OpenAPI document. This level is also referred to as the global level, because some object properties declared here (namely `servers` and `security`) are applied to each of the operation objects unless overridden at a lwoer level.
+By "root level," I mean the first level in the OpenAPI document. This level is also referred to as the global level, because some object properties declared here (namely `servers` and `security`) are applied to each of the operation objects unless overridden at a lower level.
 
 The whole document (the object that contains these 8 root level objects) is called an [OpenAPI document](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#oasDocument). The convention is to name the document **openapi.yml**.
 

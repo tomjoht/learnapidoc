@@ -11,7 +11,16 @@
     font-size: 12px;
     hyphens: auto;
     float: left;
-    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  .box {
+    .userMap {
+        margin-bottom: 30px;
+        display: span;
+    }
+
+  }
 }
 
 .box:hover {
