@@ -3,7 +3,7 @@ title: "Integrating Swagger UI with the rest of your docs"
 permalink: /pubapis_combine_swagger_and_guide.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.6
+weight: 8.5
 section: restapispecifications
 path1: /restapispecifications.html
 ---
@@ -17,7 +17,7 @@ Whenever discussions about Swagger and other REST API specifications take place,
 
 ## Single source of truth
 
-When you start pushing your documentation into another source file &mdash; in this case, a YAML or JSON file that's included in a Swagger UI file set, you end up splitting your single source of truth into multiple sources. You might have defined your endpoints and parameters in your regular documentation, and now the Swagger spec asks you to provide the same endpoints and descriptions in the spec. Do you copy and paste the same parameters and other information across both sites? Do you somehow generate the descriptions from the same source?
+When you start pushing your documentation into another source file &mdash; in this case, a YAML or JSON file that's included in a Swagger UI file set, you end up splitting your single source of truth into multiple sources. You might have defined your endpoints and parameters in your regular documentation, and now the OpenAPI spec asks you to provide the same endpoints and descriptions in the spec. Do you copy and paste the same parameters and other information across both sites? Do you somehow generate the descriptions from the same source?
 
 This conundrum is usually crystal clear to technical writers while remaining hard for engineers or other non-writers to grasp. API doc consists of more than reference material about the APIs. You've got all kinds of other information about getting API keys, setup and configuration of services, or other details that don't fit into the spec. I covered much of this in [Documenting non-reference sections](docapis_create_user_guide.html) part of the guide. You have sections such as the following:
 
@@ -42,13 +42,13 @@ Other times, you just have more detail that you need to communicate to the user 
          }
 ```
 
-What does the code `33` mean? If you go to the [Yahoo Weather API docs](https://developer.yahoo.com/weather/documentation.html) (which is where the data for this Mashape weather API originates), you'll see a Condition Codes table that tells you that `33` means "fair (night)". That long table (which includes nearly 50 separate condition codes) will be difficult to include in the parameter details in the Swagger spec.
+What does the code `33` mean? If you go to the [Yahoo Weather API docs](https://developer.yahoo.com/weather/documentation.html) (which is where the data for this Mashape weather API originates), you'll see a Condition Codes table that tells you that `33` means "fair (night)". That long table (which includes nearly 50 separate condition codes) will be difficult to include in the parameter details in the OpenAPI spec.
 
 If you have a lot of extra information and notes like this in your reference docs, it can be difficult to fit them into the parameter descriptions allotted. Unfortunately, there's not an easy solution for creating a single source of truth. Here are some options.
 
 ## Option 1: Put all info into your spec through expand/collapse sections
 
-You can try to put all information into your spec. You may be surprised about how much information you can actually include in the spec. Any `description` element (not just the `description` property in the `info` object) allows you to use Markdown and HTML. For example, here's the `info` object in the Swagger spec where a description appears. Type a pipe `|` to break the content onto the next line, and then indent two spaces. You can add a lot of content here.
+You can try to put all information into your spec. You may be surprised about how much information you can actually include in the spec. Any `description` element (not just the `description` property in the `info` object) allows you to use Markdown and HTML. For example, here's the `info` object in the OpenAPI spec where a description appears. Type a pipe `|` to break the content onto the next line, and then indent two spaces. You can add a lot of content here.
 
 ```yaml
 info:
@@ -104,13 +104,13 @@ Overall, I recommend trying to put all your information in the spec first. If yo
 
 There are just too many benefits to using a spec that you will miss out on if you choose another approach. When you store your information in a spec, many other tools can parse the spec and output the display.
 
-For example, [Spectacle](https://github.com/sourcey/spectacle) is a project that builds an output from a Swagger file with zero coding or other technical expertise. More and more tools are coming out that allow you to import your Swagger spec. For example, see [Lucybot](http://lucybot.com/), [Restlet Studio](https://studio.restlet.com), the [Swagger UI responsive theme](https://github.com/jensoleg/swagger-ui), [Material Swagger UI](https://github.com/legendecas/material-swagger-ui), [DynamicAPIs](https://www.dynamicapis.com), [Run in Postman](https://www.getpostman.com/docs/postman_for_publishers/run_button/creating_run_button), [SwaggerHub](pubapis_swaggerhub_smartbear.html), and more. They all read the Swagger spec.
+For example, [Spectacle](https://github.com/sourcey/spectacle) is a project that builds an output from a Swagger file with zero coding or other technical expertise. More and more tools are coming out that allow you to import your OpenAPI spec. For example, see [Lucybot](http://lucybot.com/), [Restlet Studio](https://studio.restlet.com), the [Swagger UI responsive theme](https://github.com/jensoleg/swagger-ui), [Material Swagger UI](https://github.com/legendecas/material-swagger-ui), [DynamicAPIs](https://www.dynamicapis.com), [Run in Postman](https://www.getpostman.com/docs/postman_for_publishers/run_button/creating_run_button), [SwaggerHub](pubapis_swaggerhub_smartbear.html), and more. They all read the OpenAPI spec.
 
-In fact, importing or reading a Swagger specification document is almost becoming a standard among API doc tools. Putting your content in the Swagger spec format allows you to separate your content from the presentation layer, instantly taking advantage of any new API tooling or platform that can parse the spec.
+In fact, importing or reading a OpenAPI specification document is almost becoming a standard among API doc tools. Putting your content in the OpenAPI spec format allows you to separate your content from the presentation layer, instantly taking advantage of any new API tooling or platform that can parse the spec.
 
-## Option 2: Read the Swagger specification document
+## Option 2: Read the OpenAPI specification document
 
-If you're using a tool such as Jekyll, which incorporates a scripting language called Liquid, you can read the Swagger specification document. It is, after all, just YAML syntax. For example, you could use a `for` loop to iterate through the Swagger spec values. Here's a code sample. In this example, the Swagger.yml file is stored inside Jekyll's \_data directory.
+If you're using a tool such as Jekyll, which incorporates a scripting language called Liquid, you can read the OpenAPI specification document. It is, after all, just YAML syntax. For example, you could use a `for` loop to iterate through the OpenAPI spec values. Here's a code sample. In this example, the Swagger.yml file is stored inside Jekyll's \_data directory.
 
 ```html
 {% raw %}<table>
@@ -141,7 +141,7 @@ If you're using a tool such as Jekyll, which incorporates a scripting language c
 </table>{% endraw %}
 ```
 
-Special thanks to Peter Henderson for sharing this technique and the code. With this approach, you may have to figure out the right Liquid syntax to iterate through your Swagger spec, and it may take a while. But this is probably the best way to single source the content.
+Special thanks to Peter Henderson for sharing this technique and the code. With this approach, you may have to figure out the right Liquid syntax to iterate through your OpenAPI spec, and it may take a while. But this is probably the best way to single source the content.
 
 ## Option 3: Store content in YAML files
 
@@ -168,9 +168,9 @@ info:
     {% raw %}{{site.data.parameters.acme_parameter}}{% endraw %}
 ```
 
-You would then take the output from Jekyll that contains the content pushed into each spec property. In this model, you're generating the Swagger spec from your Jekyll project.
+You would then take the output from Jekyll that contains the content pushed into each spec property. In this model, you're generating the OpenAPI spec from your Jekyll project.
 
-I've tried this approach. It's not a bad way to go, but it's hard to ensure that your Swagger spec remains valid as you write content. When you have references like this in your spec content (`{% raw %}{{site.data.parameters.acme_parameter}}{% endraw %}`), you can't benefit from the real-time spec validation that you get when using the [Swagger Editor](http://swagger.io/swagger-editor/).
+I've tried this approach. It's not a bad way to go, but it's hard to ensure that your OpenAPI spec remains valid as you write content. When you have references like this in your spec content (`{% raw %}{{site.data.parameters.acme_parameter}}{% endraw %}`), you can't benefit from the real-time spec validation that you get when using the [Swagger Editor](http://swagger.io/swagger-editor/).
 
 Most likely you'd need to include the entire Swagger UI project in your Jekyll site. At the top of your Swagger.yml file, add frontmatter dashes with `layout: null` to ensure Jekyll processes the file:
 
@@ -190,11 +190,11 @@ Again, although I've tried this approach, I grew frustrated at not being able to
 
 ## Option 4: Use a tool that imports Swagger and allows additional docs
 
-Another approach is to use a tool like [Readme.io](http://readme.io/) that allows you to both import your Swagger spec and also add your own separate documentation pages. Readme provides one of the most attractive outputs and is fully inclusive of almost every documentation feature you could want or need. I explore Readme with more depth in the [MTool opions for developer docs](pubapis_other_tool_options.html#readmeio). Readme.io requires third-party hosting, but there are some other doc tools that allow you to incorporate Swagger as well.
+Another approach is to use a tool like [Readme.io](http://readme.io/) that allows you to both import your OpenAPI spec and also add your own separate documentation pages. Readme provides one of the most attractive outputs and is fully inclusive of almost every documentation feature you could want or need. I explore Readme with more depth in the [MTool opions for developer docs](pubapis_other_tool_options.html#readmeio). Readme.io requires third-party hosting, but there are some other doc tools that allow you to incorporate Swagger as well.
 
-Sites like [Apiary](https://apiary.io/) and [Mulesoft](https://www.mulesoft.com/) let you import your Swagger spec while also add your own custom doc pages. These sites offer full-service management for APIs, so if your engineers are already using one of these platforms, it could make sense to store your docs there too.
+Sites like [Apiary](https://apiary.io/) and [Mulesoft](https://www.mulesoft.com/) let you import your OpenAPI spec while also add your own custom doc pages. These sites offer full-service management for APIs, so if your engineers are already using one of these platforms, it could make sense to store your docs there too.
 
-Cherryleaf has an interesting post called [Example of API documentation portal using MadCap Flare](https://www.cherryleaf.com/blog/2017/06/example-api-documentation-portal-using-madcap-flare/). In the post, Ellis Pratt shows a proof of concept with a Flare project that reads a Swagger spec and generates content from it. Although Ellis is still working on this approach, if he's successful it could be a huge win at integrating tech comm tools with API specification formats.
+Cherryleaf has an interesting post called [Example of API documentation portal using MadCap Flare](https://www.cherryleaf.com/blog/2017/06/example-api-documentation-portal-using-madcap-flare/). In the post, Ellis Pratt shows a proof of concept with a Flare project that reads a OpenAPI spec and generates content from it. Although Ellis is still working on this approach, if he's successful it could be a huge win at integrating tech comm tools with API specification formats.
 
 ## Having two sites isn't so bad
 

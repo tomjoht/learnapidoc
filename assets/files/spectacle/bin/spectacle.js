@@ -23,7 +23,7 @@ program.version(package.version)
     .option('-a, --app-dir <dir>', 'the application source directory (default: app)', String)
     .option('-l, --logo-file <file>', 'specify a custom logo file (default: null)', String, null)
     .option('-c, --config-file <file>', 'specify a custom configuration file (default: app/lib/config.js)')
-    // .option('-f, --spec-file <file>', 'the input OpenAPI/Swagger specification document (default: test/fixtures/petstore.json)', String, 'test/fixtures/petstore.json')
+    // .option('-f, --spec-file <file>', 'the input OpenAPI/OpenAPI specification document (default: test/fixtures/petstore.json)', String, 'test/fixtures/petstore.json')
     .parse(process.argv);
 
 // Show help if no specfile or options are specified

@@ -100,7 +100,7 @@ But the authoring of the docs would really only work for Java developers. It wou
 
 The [Run in Postman button](https://www.getpostman.com/integrations/run-button) provides a **Run in Postman** button that, when clicked, imports your API info into Postman so users can run calls using the Postman client.
 
-To try out Run in Postman, first [import your Swagger spec into Postman](https://www.getpostman.com/docs/postman/collections/data_formats#importing-postman-data) or enter your API information manually. Then see [Create the Run in Postman button](https://www.getpostman.com/docs/postman_for_publishers/run_button/creating_run_button).
+To try out Run in Postman, first [import your OpenAPI spec into Postman](https://www.getpostman.com/docs/postman/collections/data_formats#importing-postman-data) or enter your API information manually. Then see [Create the Run in Postman button](https://www.getpostman.com/docs/postman_for_publishers/run_button/creating_run_button).
 
 You can see the many [demos here](https://www.getpostman.com/integrations/run-button).
 
@@ -137,7 +137,7 @@ The downside is that your parameter and endpoint descriptions don't get pulled i
 
 Here's a [demo output](https://cheesestore.github.io/). You can also see an [output that uses the Mashape weather API file](assets/files/spectacle/public/index.html).
 
-With almost no needed setup or configuration, you can have a world-class output and site for your API docs. As long as the Swagger spec that you integrate is fully detailed, the generated Spectacle site will be attractive and full-featured.
+With almost no needed setup or configuration, you can have a world-class output and site for your API docs. As long as the OpenAPI spec that you integrate is fully detailed, the generated Spectacle site will be attractive and full-featured.
 
 You can also build the Spectacle site without the frame so you can embed it into another site. However, in playing with this embed option, I found that I would have to create my own styles. If using the default styles in the full-site output, they most likely will overwrite or interfere with your host site's appearance.
 
@@ -168,6 +168,10 @@ The upload scripts checked to ensure the JSON files were valid, and then they we
 If your documentation is published on a web-based CMS, you can probably find a development agency to create a similar script (if you don't have in-house engineers to create them).
 
 A lot of companies have custom solutions for their API documentation. Sometimes this kind of solution just makes sense and allows you to right-size the workflow to fit your specific information.
+
+## Tools that can read the OpenAPI specification
+
+Many commercial API tools and platforms can read the OpenAPI specification and generate an interactive documentation website. See the [list of tools on Swagger here](https://swagger.io/commercial-tools/).
 
 ## More tools
 

@@ -3,7 +3,7 @@ title: "OpenAPI tutorial step 5: The components object"
 permalink: /pubapis_openapi_step5_components_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.265
+weight: 8.35
 section: restapispecifications
 path1: /restapispecifications.html
 ---

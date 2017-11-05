@@ -3,7 +3,7 @@ title: "OpenAPI tutorial step 1: The openapi object"
 permalink: /pubapis_openapi_step1_openapi_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.261
+weight: 8.31
 section: restapispecifications
 path1: /restapispecifications.html
 ---
@@ -22,7 +22,7 @@ Before diving into the first step of the OpenAPI tutorial here, read the [OpenAP
 
 * This OpenAPI tutorial shows the spec in context of a simple weather API [introduced earlier](docapis_scenario_for_using_weather_api.html) in this course.
 * The OpenAPI tutorial shows how the spec information gets populated in [Swagger UI](https://github.com/swagger-api/swagger-ui).
-* The OpenAPI tutorial is a subset of the information in both the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification) and the [Swagger specification commentary](https://swagger.io/docs/specification/about/).
+* The OpenAPI tutorial is a subset of the information in both the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification) and the [OpenAPI specification commentary](https://swagger.io/docs/specification/about/).
 * The OpenAPI tutorial covers the 3.0 version of the OpenAPI spec, which is the latest version.
 
 ## The root-level objects in OpenAPI spec

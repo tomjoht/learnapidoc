@@ -56,7 +56,7 @@ Many tools can parse valid DITA XML and transform the content into different out
 
 The official description of the OpenAPI specification is available in a [Github repository here](https://github.com/OAI/OpenAPI-Specification). Some of the OpenAPI elements are `paths`, `parameters`, `responses`, and `security`. Each of these elements is actually an "object" (instead of an XML element) that holds a number of properties and arrays.
 
-In the OpenAPI specification, your endpoints are `paths`. If you had an endpoint called "pets", your Swagger specification for this endpoint might look as follows:
+In the OpenAPI specification, your endpoints are `paths`. If you had an endpoint called "pets", your OpenAPI specification for this endpoint might look as follows:
 
 ```
 paths:
@@ -150,7 +150,7 @@ In this regard, tech writers have a key role to play in collaborating with the A
 
 After you have a valid OpenAPI specification document that describes your API, you can then feed this specification to different tools to parse it and generate the interactive documentation similar to the [Petstore example](http://petstore.swagger.io/) I referenced earlier.
 
-Probably the most common tool used to parse the OpenAPI specification is [Swagger UI](https://github.com/swagger-api/swagger-ui). (Remember, "Swagger" refers to API tooling, whereas "OpenAPI" refers to the vendor-neutral, tool agnostic specification.) After you download Swagger UI, you basically just separate out the **dist** folder, open up the **index.html** file inside the **dist** folder (which contains the Swagger UI project build) and reference your own Swagger specification document in place of the default one.
+Probably the most common tool used to parse the OpenAPI specification is [Swagger UI](https://github.com/swagger-api/swagger-ui). (Remember, "Swagger" refers to API tooling, whereas "OpenAPI" refers to the vendor-neutral, tool agnostic specification.) After you download Swagger UI, you basically just separate out the **dist** folder, open up the **index.html** file inside the **dist** folder (which contains the Swagger UI project build) and reference your own OpenAPI specification document in place of the default one.
 
 The Swagger UI code generates a display that looks like this:
 

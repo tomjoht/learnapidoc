@@ -203,15 +203,8 @@ folders:
   - title: Introduction to the OpenAPI spec and Swagger
     jurl: /pubapis_swagger_intro.html
 
-  - title: Swagger UI with Mashape Weather API
-    jurl: /assets/files/swagger/
-
-  - title: Embedded Swagger with Mashape Weather API
-    jurl: /pubapis_swagger_embedded.html
-
     subfolders:
     - title: Open API tutorial
-
       subfolderitems:
 
       - title: "OpenAPI tutorial overview"
@@ -241,14 +234,24 @@ folders:
       - title: "Step 8: externaldocs object"
         jurl: /pubapis_openapi_step8_externaldocs_object.html
 
-  - title: Swagger tutorial
-    jurl: /pubapis_swagger.html
+    - title: Swagger UI
+      subfolderitems:
 
-  - title: Combining OpenAPI's (Swagger's) reference output with user guide docs
-    jurl: /pubapis_combine_swagger_and_guide.html
+      - title: Swagger UI tutorial
+        jurl: /pubapis_swagger.html
 
-  - title: Manage OpenAPI/Swagger projects with SwaggerHub
-    jurl: /pubapis_swaggerhub_smartbear.html
+      - title: Swagger UI Demo 1 (standalone)
+        jurl: /assets/files/swagger/
+
+      - title: Swagger UI Demo 2 (embedded)
+        jurl: /pubapis_swagger_embedded.html
+
+      - title: Integrating Swagger UI with the rest of your docs
+        jurl: /pubapis_combine_swagger_and_guide.html
+
+      - title: SwaggerHub introduction and tutorial
+        jurl: /pubapis_swaggerhub_smartbear.html
+
 
   - title: More about YAML
     jurl: /pubapis_yaml.html

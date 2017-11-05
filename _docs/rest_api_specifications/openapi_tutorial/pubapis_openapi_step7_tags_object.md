@@ -3,7 +3,7 @@ title: "OpenAPI tutorial step 7: The tags object"
 permalink: /pubapis_openapi_step7_tags_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.267
+weight: 8.37
 section: restapispecifications
 path1: /restapispecifications.html
 ---

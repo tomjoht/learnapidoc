@@ -70,7 +70,7 @@ REST APIs have four types of parameters:
 *  **Header parameters**: Parameters that are included in the request header. Usually header parameters relate to authorization.
 
 {: .tip}
-The terms for each of these parameter types comes from the Swagger spec, which defines a formal specification that includes descriptions of each parameter type. Using industry standard terminology helps you develop a vocabulary to describe different elements of an API.
+The terms for each of these parameter types comes from the OpenAPI spec, which defines a formal specification that includes descriptions of each parameter type. Using industry standard terminology helps you develop a vocabulary to describe different elements of an API.
 
 ## Data types indicate the format for the values
 
@@ -207,7 +207,7 @@ The same parameter values might be used in other requests as well, so organizati
 
 Is the display from the [Swagger UI](http://idratherbewriting.com/learnapidoc/pubapis_swagger) any better?  
 
-The [Swagger UI](https://github.com/swagger-api/swagger-ui) reads the Swagger specification document and displays it in the visual format that you see with examples such as the [Swagger Petstore](http://petstore.swagger.io/).
+The [Swagger UI](https://github.com/swagger-api/swagger-ui) reads the OpenAPI specification document and displays it in the visual format that you see with examples such as the [Swagger Petstore](http://petstore.swagger.io/).
 
 The Swagger UI lets you toggle between an "Example Value" and a "Model" view for both responses and request body parameters.
 
@@ -238,7 +238,7 @@ Now click **Model** (the grayed out text) and look at the view.
 
 <a class="noCrossRef" href="http://petstore.swagger.io/#!/pet/addPet"><img src="images/petstoremodelvalue_3_17.png" alt="Swagger Model" /></a>
 
-This view describes the various parts of the request, noting the data types and any descriptions in your Swagger spec. The model includes expand/collapse toggles with the values. The Petstore spec doesn't actually include many parameter descriptions in the Model, but if any descriptions that are included, they would appear here in the Model rather than the Example Value.
+This view describes the various parts of the request, noting the data types and any descriptions in your OpenAPI spec. The model includes expand/collapse toggles with the values. The Petstore spec doesn't actually include many parameter descriptions in the Model, but if any descriptions that are included, they would appear here in the Model rather than the Example Value.
 
 {: .tip}
 In a later chapter, I dive into Swagger. If you want to skip there now, go to [Introduction to Swagger](pubapis_swagger_intro.html).

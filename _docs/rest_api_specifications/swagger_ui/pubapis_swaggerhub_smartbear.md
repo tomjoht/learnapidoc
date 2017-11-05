@@ -1,16 +1,23 @@
 ---
-title: "Manage OpenAPI (Swagger) projects with SwaggerHub"
+title: "SwaggerHub introduction and tutorial"
 permalink: /pubapis_swaggerhub_smartbear.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.27
+weight: 8.6
 section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-Previously, I explored using [Swagger UI](https://github.com/swagger-api/swagger-ui) as a way to publish your Swagger documentation, and I wrote a [brief tutorial](pubapis_swagger.html) on how to download Swagger UI from GitHub, customize the index.html file from the distribution folder to reference your own Swagger specification document, and then deploy it on a web server.
+Previously, I explored using the open-source [Swagger UI project](pubapis_swagger.html) as a way to render your [OpenAPI specification document](pubapis_openapi_tutorial_overview.html). [SwaggerHub](https://app.swaggerhub.com/) is the commercial version of Swagger UI. You can see a comparison of features [here](https://swaggerhub.com/swagger-open-source-comparison/).
 
-While the free Swagger UI approach works, you'll run into several problems:
+{% if site.format == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
+## Advantages of SwaggerHub
+
+While the open-source Swagger UI approach works, you'll run into several problems:
 
 *  It's challenging to collaborate with other project members on the spec
 *  It's difficult to gather feedback from reviewers about specific parts of the spec
@@ -20,16 +27,11 @@ When you're working on REST API documentation, you need tools that are specifica
 
 There's a point at which experimenting with the free Swagger UI tooling hits a wall and you'll need to find another way to move to the next level. This is where [SwaggerHub](https://swaggerhub.com) from [Smartbear](https://smartbear.com/) comes in. SwaggerHub provides a complete solution for designing, managing, and publishing documentation for your API in ways that will simplify your life as an API technical writer.
 
-SwaggerHub is used by more than 15,000 software teams across the globe. As the Swagger spec becomes more of an industry standard for API documentation, SwaggerHub's swagger-specific tooling becomes essential.
-
-{% if site.format == "web" %}
-* TOC
-{:toc}
-{% endif %}
+SwaggerHub is used by more than 15,000 software teams across the globe. As the OpenAPI spec becomes more of an industry standard for API documentation, SwaggerHub's swagger-specific tooling becomes essential.
 
 ## SwaggerHub Intro and Dashboard
 
-[Smartbear](https://smartbear.com/) &mdash; the same company that maintains and develops the open source Swagger tooling ([Swagger Editor](https://swagger.io/swagger-editor/), [Swagger UI](https://swagger.io/swagger-ui/), [Swagger Codegen](https://swagger.io/swagger-codegen/), and others), and that formed the [OpenAPI Initiative](https://www.openapis.org/) which leads the evolution of the [Swagger (OpenAPI) specification](https://github.com/OAI/OpenAPI-Specification/) &mdash; developed SwaggerHub as a way to help teams collaborate around the Swagger spec.
+[Smartbear](https://smartbear.com/) &mdash; the same company that maintains and develops the open source Swagger tooling ([Swagger Editor](https://swagger.io/swagger-editor/), [Swagger UI](https://swagger.io/swagger-ui/), [Swagger Codegen](https://swagger.io/swagger-codegen/), and others), and that formed the [OpenAPI Initiative](https://www.openapis.org/) which leads the evolution of the [Swagger (OpenAPI) specification](https://github.com/OAI/OpenAPI-Specification/) &mdash; developed SwaggerHub as a way to help teams collaborate around the OpenAPI spec.
 
 Many of the client and server SDKs can be auto-generated from SwaggerHub, and there are a host of additional features you can leverage as you design, test, and publish your API.
 
@@ -51,13 +53,13 @@ However, unlike the standalone Swagger Editor, with SwaggerHub's Swagger Editor,
 
 <img src="images/swaggerhub_ui_toggle.png"/>
 
-Most importantly, as you're working in the Editor, SwaggerHub allows you to *save your work*. (With the free Swagger Editor, your content is just kept in the browser cache, with no ability to save it. When you clear your cache, your content is gone. As a result, if you use the standalone Swagger Editor, you have to regularly copy the content from the Swagger Editor into a file on your own computer each time you finish.)
+Most importantly, as you're working in the Editor, SwaggerHub allows you to *save your work*. With the free Swagger Editor, your content is just kept in the browser cache, with no ability to save it. When you clear your cache, your content is gone. As a result, if you use the standalone Swagger Editor, you have to regularly copy the content from the Swagger Editor into a file on your own computer each time you finish.
 
-You can save your specification document directly in SwaggerHub, or you can reference it in an external source such as GitHub.
+You can save your specification document directly in SwaggerHub, or you can reference and store it in an external source such as GitHub.
 
 ## Versions
 
-Not only does SwaggerHub allow you to save your Swagger spec, you can save different versions of your spec. This means you can experiment with new content by simply adding a new version. You can return to any version you want, and you can also publish or unpublish any version.
+Not only does SwaggerHub allow you to save your OpenAPI spec, you can save different versions of your spec. This means you can experiment with new content by simply adding a new version. You can return to any version you want, and you can also publish or unpublish any version.
 
 <img src="images/swaggerhub_versioning.png" />
 
@@ -83,7 +85,9 @@ Few tech comm tools support inline annotations like this, and it wouldn't be pos
 
 ## Auto-Generate Client SDKs
 
-Another benefit to SwaggerHub is the ability to auto-generate the needed client or server code from your specification. In the upper-right corner, click the down-arrow and select **Client** or **Server**. Users have access to generate client and server SDKs in more than 30 formats.
+Another benefit to SwaggerHub is the ability to auto-generate the needed client or server code from your specification. Client SDKs provide the tooling needed to make API requests in specific programming languages (like Java or Ruby).
+
+In the upper-right corner, click the down-arrow and select **Client** or **Server**. Users have access to generate client and server SDKs in more than 30 formats.
 
 <img src="images/swaggerhub_download.png" />
 
@@ -97,11 +101,11 @@ Providing this code not only speeds implementation for developers, it also helps
 
 ## Export to HTML
 
-One of the options for export is an HTML option. You can export your Swagger spec as a static HTML file in one of two styles: HTML or HTML2.
+One of the options for export is an HTML option. You can export your OpenAPI spec as a static HTML file in one of two styles: HTML or HTML2.
 
 You can see a demo export of the Weather API here: <a href="http://idratherassets.com/restapicourse/swaggerhub_htmloutput/index.html">HTML</a> or <a href="http://idratherassets.com/restapicourse/swaggerhub_html2output/index.html">HTML2</a>. Both exports generate all the content into an index.html file.
 
-The HTML export is a more basic output than HTML2. You could potentially incorporate the HTML output into your other documentation, such as what [Cherryleaf did in importing Swagger into Flare](https://www.cherryleaf.com/blog/2017/07/example-project-api-documentation-portal-using-madcap-flare/). (You might have to strip away some of the code and provide styles for the various documentation elements, and there wouldn't be any interactivity for users to try it out, but it could be done.) In another part of the book, I expand on ways to [combine Swagger's doc output with your other docs](pubapis_combine_swagger_and_guide.html).
+The HTML export is a more basic output than HTML2. You could potentially incorporate the HTML output into your other documentation, such as what [Cherryleaf did in importing Swagger into Flare](https://www.cherryleaf.com/blog/2017/07/example-project-api-documentation-portal-using-madcap-flare/). (You might have to strip away some of the code and provide styles for the various documentation elements, and there wouldn't be any interactivity for users to try it out, but it could be done.) In another part of the book, I expand on ways to [integrate Swagger UI's output with the rest of your docs](pubapis_combine_swagger_and_guide.html).
 
 The HTML2 export is more intended to stand on its own, as it has a fixed left sidebar to navigate the endpoints and navtabs showing 6 different code samples:
 
@@ -131,21 +135,24 @@ Using the domain minimizes duplicate content and enables you to be more consiste
 
 ## Organizations and projects
 
- The collaborative aspect of SwaggerHub is the biggest reason people move from the open source tools to SwaggerHub. You might have a lot of different engineers working on a variety of APIs in SwaggerHub. To organize the work, you can group APIs into [organizations](https://app.swaggerhub.com/help/organizations/index), and then assign members to the appropriate organization. When that member logs in to SwaggerHub, he or she will see only the organizations he or she has access to.
+The collaborative aspect of SwaggerHub is the biggest reason people move from the open source tools to SwaggerHub. You might have a lot of different engineers working on a variety of APIs in SwaggerHub. To organize the work, you can group APIs into [organizations](https://app.swaggerhub.com/help/organizations/index), and then assign members to the appropriate organization. When that member logs in to SwaggerHub, he or she will see only the organizations he or she has access to.
 
- Additionally, within an organization, you can further group APIs into different projects. This way teams working in the same organization but on different projects can have visibility into other APIs but still have their APIs logically grouped.
+Additionally, within an organization, you can further group APIs into different projects. This way teams working in the same organization but on different projects can have visibility into other APIs but still have their APIs logically grouped.
 
- <img src="images/swaggerhub_organizations.png" style="border: 1px solid #dedede;"/>
+<img src="images/swaggerhub_organizations.png" style="border: 1px solid #dedede;"/>
 
- This aspect of organizations and projects may not seem essential if you have just 1 or 2 APIs, but when you consider how you'll scale and grow as you have dozens of APIs and multiple teams, organizations and projects become essential.
+This aspect of organizations and projects may not seem essential if you have just 1 or 2 APIs, but when you consider how you'll scale and grow as you have dozens of APIs and multiple teams, organizations and projects become essential.
 
 ## Conclusion &mdash; expanding the tech writer's role with APIs
 
-Tech writers are positioned to be power players in the spec-first philosophy with Swagger design. By becoming adept at coding the Swagger spec and familiar with robust collaborative tools like SwaggerHub, tech writers can lead engineering teams not only through the creation and refinement of the API documentation but also pave the way for beta testing, review, and client/server SDK generation.
+Tech writers are positioned to be power players in the spec-first philosophy with OpenAPI design. By becoming adept at coding the OpenAPI spec and familiar with robust collaborative tools like SwaggerHub, tech writers can lead engineering teams not only through the creation and refinement of the API documentation but also pave the way for beta testing, review, and client/server SDK generation.
 
-Designing a fully-featured, highly functioning Swagger spec is at the heart of this endeavor. Few engineers are familiar with creating these specs, and technical writers who are skilled at both the spec and associating Swagger tooling can fill critical roles on API teams.
+Designing a fully-featured, highly functioning OpenAPI spec is at the heart of this endeavor. Few engineers are familiar with creating these specs, and technical writers who are skilled at both the spec and associating Swagger tooling can fill critical roles on API teams.
 
 Great tools aren’t free. SwaggerHub does [cost money](https://swaggerhub.com/pricing/), but this is a good thing, since free tools are frequently abandoned, poorly maintained, and lack documentation and support. By using a paid tool from a robust API company (the very company that maintains the Swagger tools, and sponsors the Swagger (OpenAPI) specification), you can plug into the tools you need to scale your API documentation efforts.
+
+{: .tip}
+To read more about SwaggerHub, checkout my blog post [SwaggerHub: A collaborative platform for working on OpenAPI/Swagger specification files, and more](http://idratherbewriting.com/2017/10/05/swaggerhub-collaborative-platform-for-swagger-openapi-projects).
 
 *Note that SwaggerHub is one of the sponsors of this site.*
 

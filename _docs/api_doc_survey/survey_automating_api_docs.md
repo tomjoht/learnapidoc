@@ -57,7 +57,7 @@ Swagger and other automated doc solutions for REST APIs pose other challenges as
 
 What if you have a note such as, "Pets remain in the pet store for a period of 30 days only, after which they are transferred to an animal shelter. Therefore the `petId` is only valid for 30 days. Passing an invalid `petID` returns an error. However, even after a `petId` has expired, you can't create a new `petId` with an expired `petId`. All `petId` values must be unique."
 
-Try cramming that note in there. (There might be a space for misc. notes about an endpoint in the Swagger spec -- I just don't know it well.)
+Try cramming that note in there. (There might be a space for misc. notes about an endpoint in the OpenAPI spec -- I just don't know it well.)
 
 If you don't have an API key, or if you don't have any real data to return meaningful results, you may not get a lot of value out of the Swagger doc. For example, in this scenario, I don't have any pets with IDs or names, so how can I test out the process of updating my `petId`?
 
@@ -73,7 +73,7 @@ One argument that's often made with platform specific APIs is that you can reduc
 
 Note that Swagger does not automate the documentation by adding comments in the code in the same way as a platform-specific API. In fact, “automated" or “automatic" may be entirely the wrong word to use here, since there's nothing documented automatically.
 
-Swagger specifies a framework for describing your API. You're not adding comments in the code of your API as you do with a Java or C++ API. Instead, you create a separate file that describes the capabilities of your API. Here's a [sample Swagger file](https://github.com/appirio-tech/lc1-challenge-service/blob/85160966dbf2cc9a0023e185a8fb99f5c98b9e86/api/swagger/swagger.yaml) from a post on [appiro](http://appirio.com/category/tech-blog/2014/10/writing-documentation-first-api/). Once you describe your API using this standard framework, Swagger can convert it to the display shown above (or [see the full Swagger demo here](http://petstore.swagger.wordnik.com/)).
+OpenAPI specifies a framework for describing your API. You're not adding comments in the code of your API as you do with a Java or C++ API. Instead, you create a separate file that describes the capabilities of your API. Here's a [sample Swagger file](https://github.com/appirio-tech/lc1-challenge-service/blob/85160966dbf2cc9a0023e185a8fb99f5c98b9e86/api/swagger/swagger.yaml) from a post on [appiro](http://appirio.com/category/tech-blog/2014/10/writing-documentation-first-api/). Once you describe your API using this standard framework, Swagger can convert it to the display shown above (or [see the full Swagger demo here](http://petstore.swagger.wordnik.com/)).
 
 In that sense, calling Swagger an automated doc solution is probably confusing things. One person previously referred to Swagger as an "automated endpoint generator," which I think may be a better term for it.
 
@@ -110,7 +110,7 @@ Despite the glowing reviews of Mashape's API Editor, orliesaurus' conclusions ab
 
 I'm not sure why he backpeddles on some of the earlier ratings and seems to give an "it depends" kind of conclusion, but his reviews are definitely helpful nonetheless.
 
-By the way, some of the tools he reviews use RAML (RESTful API Modeling Language), which is a simpler alternative to the Swagger specification. Other tools not reviewed but also prominent include Enunciate and Mashery I/O Docs.
+By the way, some of the tools he reviews use RAML (RESTful API Modeling Language), which is a simpler alternative to the OpenAPI specification. Other tools not reviewed but also prominent include Enunciate and Mashery I/O Docs.
 
 One reason Swagger may be more popular is that unlike Mashape, you aren't locked into a cloud platform. Mashape has a directory of APIs in a marketplace available on the general web so they're easy to consume. I think in many cases, technical writers may be working on private APIs behind firewalls.
 

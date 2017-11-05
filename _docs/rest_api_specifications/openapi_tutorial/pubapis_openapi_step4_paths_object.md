@@ -3,7 +3,7 @@ title: "OpenAPI tutorial step 4: The paths object"
 permalink: /pubapis_openapi_step4_paths_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.264
+weight: 8.34
 section: restapispecifications
 path1: /restapispecifications.html
 ---

@@ -19,7 +19,7 @@ See a demo of Spectacle in action here: [http://cheesestore.github.io](http://ch
 
 ## Features
 
-* **OpenAPI/Swagger 2.0 support**: Support for the latest OpenAPI/Swagger specification.
+* **OpenAPI/Swagger 2.0 support**: Support for the latest OpenAPI/OpenAPI specification.
 * **Highly configurable**: Easily configurable Handlebars templates and SCSS styles so you can add your own design and flavour without going bald. See [Custom Builds](#custom-builds)
 * **Markdown support**: Render markdown written in any of your API descriptions.
 * **Clean responsive design**: Responsive HTML5 and CSS3 layout built with [Foundation 6](http://foundation.zurb.com/sites.html) that looks great on all devices and screen sizes.

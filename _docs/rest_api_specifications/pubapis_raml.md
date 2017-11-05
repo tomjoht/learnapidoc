@@ -3,13 +3,13 @@ title: RAML tutorial
 permalink: /pubapis_raml.html
 keywords: RAML
 course: "Publishing REST APIs"
-weight: 8.4
+weight: 8.8
 sidebar: docapis
-section: restapispecifications 
+section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-RAML stands for REST API Modeling Language and is similar to Swagger and other API specifications. RAML is backed by [Mulesoft](https://www.mulesoft.com/), a commercial API company, and uses a more YAML-based syntax in the specification.
+RAML stands for REST API Modeling Language and is similar to the [OpenAPI specification](pubapis_openapi_tutorial_overview.html). RAML is backed by [Mulesoft](https://www.mulesoft.com/), a commercial API company, and uses a more YAML-based syntax in the specification.
 
 {% if site.format == "web" %}
 * TOC
@@ -18,13 +18,13 @@ RAML stands for REST API Modeling Language and is similar to Swagger and other A
 
 ## RAML overview
 
-Similar to Swagger, once you create a RAML file that describes your API, it can be consumed by different platforms to parse and display the information in attractive outputs. The RAML format, which uses YML syntax, tries to be human-readable, efficient, and simple.
+Similar to OpenAPI, after you create a RAML file that describes your API, it can be consumed by different platforms to parse and display the information in attractive outputs. The RAML format, which uses YML syntax, tries to be human-readable, efficient, and simple.
 
 <figure><img src="images/ramlexample.png" alt="Sample RAML output in API Console" /><figcaption>This is a sample RAML output in something called API Console</figcaption></figure>
 
 ## Auto-generating client SDK code
 
-It's important to note that with these specs (not just RAML), you're not just describing an API to generate a nifty doc output with an interactive console. There are tools that can also generate client SDKs and other code from the spec into a library that you can integrate into your project. This can help developers to more easily make requests to your API and receive responses.
+It's important to note that with these REST API specifications (not just RAML), you're not just describing an API to generate a nifty doc output with an interactive console. There are tools that can also generate client SDKs and other code from the spec into a library that you can integrate into your project. This can help developers to more easily make requests to your API and receive responses.
 
 Additionally, the interactive console can provide a way to test out your API before developers code it. Mulesoft offers a "mocking service" for your API that simulates calls at a different baseURI. The push for using a spec is to design your API the right way from the start, without iterating with different versions as you try to get the endpoints right.
 
@@ -34,9 +34,7 @@ To understand the proper syntax and format for RAML, you need to read the [RAML 
 
 {% include random_ad.html %}
 
-Even so, the documentation for the RAML spec isn't always so clear. For example, when I was trying to get the right syntax for the security scheme, the information was lacking on how to create security schemes that were based on a custom key in the header.
-
-Here's the Mashape Weather API formatted in the RAML spec:
+Here's the Mashape Weather API we've been using in this course formatted in the RAML spec:
 
 ```
 #%RAML 0.8
