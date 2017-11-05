@@ -200,18 +200,15 @@ folders:
   - title: Overview of REST API specification formats
     jurl: /pubapis_rest_specification_formats.html
 
-  - title: Introduction to the OpenAPI spec
+  - title: Introduction to the OpenAPI spec and Swagger
     jurl: /pubapis_swagger_intro.html
-
-  - title: Swagger tutorial
-    jurl: /pubapis_swagger.html
 
   - title: Swagger UI with Mashape Weather API
     jurl: /assets/files/swagger/
 
   - title: Embedded Swagger with Mashape Weather API
     jurl: /pubapis_swagger_embedded.html
-    
+
     subfolders:
     - title: Open API tutorial
 
@@ -244,6 +241,12 @@ folders:
       - title: "Step 8: externaldocs object"
         jurl: /pubapis_openapi_step8_externaldocs_object.html
 
+  - title: Swagger tutorial
+    jurl: /pubapis_swagger.html
+
+  - title: Combining OpenAPI's (Swagger's) reference output with user guide docs
+    jurl: /pubapis_combine_swagger_and_guide.html
+
   - title: Manage OpenAPI/Swagger projects with SwaggerHub
     jurl: /pubapis_swaggerhub_smartbear.html
 
@@ -255,9 +258,6 @@ folders:
 
   - title: API Blueprint tutorial
     jurl: /pubapis_api_blueprint.html
-
-  - title: Combining OpenAPI's (Swagger's) reference output with user guide docs
-    jurl: /pubapis_combine_swagger_and_guide.html
 
 - title: Documenting native library APIs
   jurl: /nativelibraryapis.html
