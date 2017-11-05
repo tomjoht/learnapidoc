@@ -25,7 +25,7 @@ Engineers will throw a quick description of a class in a file and generate a Jav
 
 Other people seem to have [similar opinions](https://communities.cisco.com/community/developer/blog/2014/09/03/introducing-devnet-slate):
 
->Auto-generated documentation that documents each API end-point directly from source code have their place (e.g., its great for team that built the API and its great for a reference document) but hand-crafted quality documentation that walks you through a use case for the API is invaluable.  It should tell you about the key end-points that are needed for solving a particular problem and it should provide you with code samples.”
+>Auto-generated documentation that documents each API end-point directly from source code have their place (e.g., its great for team that built the API and its great for a reference document) but hand-crafted quality documentation that walks you through a use case for the API is invaluable.  It should tell you about the key end-points that are needed for solving a particular problem and it should provide you with code samples."
 
 In general, document generators don't tell you a whole lot more than you would discover by browsing the source code itself. Some people even refer to auto-generated docs as a glorified source-code browser.
 

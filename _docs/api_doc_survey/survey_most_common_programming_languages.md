@@ -25,13 +25,13 @@ Note that this survey question is somewhat broad. It doesn't ask which languages
 
 ## Correlations between REST doc and programming knowledge
 
-Because respondents added their initials, I also correlated the answers that each person put down for “What type of API do you write documentation for?” with “What programming languages do you know?”
+Because respondents added their initials, I also correlated the answers that each person put down for “What type of API do you write documentation for?" with “What programming languages do you know?"
 
 I thought that maybe those who just document REST might not know many programming languages. But actually, there wasn't a correspondence at all. Pretty much everyone in the API doc space is technical enough to be familiar with at least or two programming languages.
 
-## What does it mean to “know” a language?
+## What does it mean to “know" a language?
 
-A lot of people qualified their understanding of a language. They wrote, “minimal knowledge” or “basic familiarity,” or “just reading about it”, or “familiar with the basic concepts and structure”, or “understood from a ‘documentation' perspective…so code understanding is very loosely understood” or “just by reading about it. No programming (yet)” or “I'm most comfortable in docs/understanding frameworks.”
+A lot of people qualified their understanding of a language. They wrote, “minimal knowledge" or “basic familiarity," or “just reading about it", or “familiar with the basic concepts and structure", or “understood from a ‘documentation' perspective…so code understanding is very loosely understood" or “just by reading about it. No programming (yet)" or “I'm most comfortable in docs/understanding frameworks."
 
 Level of proficiency is an important point. A _tech writer_ putting "Java" on his or her resume implies different expectations than a _developer_ putting "Java" on his or her resume.
 

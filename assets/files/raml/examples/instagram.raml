@@ -107,7 +107,7 @@ documentation:
       https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=code
       ```
 
-      *Note:* You may provide an optional *scope* parameter to request additional permissions outside of the “basic” permissions scope. [Learn more about scope](http://instagram.com/developer/authentication/#scope).
+      *Note:* You may provide an optional *scope* parameter to request additional permissions outside of the “basic" permissions scope. [Learn more about scope](http://instagram.com/developer/authentication/#scope).
 
       *Note*: You may provide an optional *state* parameter to carry through any server-specific state you need to, for example, protect against CSRF issues.
 
@@ -181,7 +181,7 @@ documentation:
       }
       ```
 
-      Note that we do not include an expiry time. Our access_tokens have no explicit expiry, though your app should handle the case that either the user revokes access or we expire the token after some period of time. In this case, your response’s meta will contain an “error_type=OAuthAccessTokenError”. In other words: do do not assume your access_token is valid forever.
+      Note that we do not include an expiry time. Our access_tokens have no explicit expiry, though your app should handle the case that either the user revokes access or we expire the token after some period of time. In this case, your response’s meta will contain an “error_type=OAuthAccessTokenError". In other words: do do not assume your access_token is valid forever.
 
       ## Client-Side (Implicit) Authentication
 
@@ -193,7 +193,7 @@ documentation:
       https://instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=token
       ```
 
-      At this point, we present the user with a login screen and then a confirmation screen where they approve your app’s access to their Instagram data. Note that unlike the explicit flow the response type here is “token”.
+      At this point, we present the user with a login screen and then a confirmation screen where they approve your app’s access to their Instagram data. Note that unlike the explicit flow the response type here is “token".
 
       ### Step Two: Receive the access_token via the URL fragment
 
@@ -207,7 +207,7 @@ documentation:
 
       ## Scope (Permissions)
 
-      The OAuth 2.0 spec allows you to specify the scope of the access you’re requesting from the user. Currently, all apps have basic read access by default. If all you want to do is access data then you do not need to specify a scope (the “basic” scope will be granted automatically).
+      The OAuth 2.0 spec allows you to specify the scope of the access you’re requesting from the user. Currently, all apps have basic read access by default. If all you want to do is access data then you do not need to specify a scope (the “basic" scope will be granted automatically).
 
       However, if you plan on asking for extended access such as liking, commenting, or managing friendships, you’ll have to specify these scopes in your authorization request. Here are the scopes we currently support:
 
@@ -218,7 +218,7 @@ documentation:
 
       You should only request the scope you need at the time of authorization. If in the future you require additional scope, you may forward the user to the authorization URL with that additional scope to be granted. If you attempt to perform a request with an access token that isn’t authorized for that scope, you will receive an OAuthPermissionsException error return.
 
-      If you’d like to request multiple scopes at once, simply separate the scopes by a space. In the url, this equates to an escaped space (“+”). So if you’re requesting the likes and comments permission, the parameter will look like this:
+      If you’d like to request multiple scopes at once, simply separate the scopes by a space. In the url, this equates to an escaped space (“+"). So if you’re requesting the likes and comments permission, the parameter will look like this:
 
       ```
       scope=likes+comments

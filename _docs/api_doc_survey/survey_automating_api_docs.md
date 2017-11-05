@@ -71,7 +71,7 @@ Despite these challenges, Peter said that for simple APIs, automated doc solutio
 
 One argument that's often made with platform specific APIs is that you can reduce documentation drift by keeping comments with the code. If a programmer can easily add a few notes in a semi-intuitive syntax directly in the code, you're less likely to encounter documentation drift, where the code and documentation start drifting farther and farther apart.
 
-Note that Swagger does not automate the documentation by adding comments in the code in the same way as a platform-specific API. In fact, “automated” or “automatic” may be entirely the wrong word to use here, since there's nothing documented automatically.
+Note that Swagger does not automate the documentation by adding comments in the code in the same way as a platform-specific API. In fact, “automated" or “automatic" may be entirely the wrong word to use here, since there's nothing documented automatically.
 
 Swagger specifies a framework for describing your API. You're not adding comments in the code of your API as you do with a Java or C++ API. Instead, you create a separate file that describes the capabilities of your API. Here's a [sample Swagger file](https://github.com/appirio-tech/lc1-challenge-service/blob/85160966dbf2cc9a0023e185a8fb99f5c98b9e86/api/swagger/swagger.yaml) from a post on [appiro](http://appirio.com/category/tech-blog/2014/10/writing-documentation-first-api/). Once you describe your API using this standard framework, Swagger can convert it to the display shown above (or [see the full Swagger demo here](http://petstore.swagger.wordnik.com/)).
 

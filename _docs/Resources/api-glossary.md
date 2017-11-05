@@ -154,6 +154,6 @@ version control
 : A system for managing code that relies on snapshots that store content at specific states. Enables you to revert to previous states, branch the code into different versions, and more. See [About Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) for details.
 
 YAML
-: Recursive acronym for "YAML Ain't No Markup Language.” A human- readable, space-sensitive syntax used in the Swagger specification document. See [More About YAML](http://idratherbewriting.com/learnapidoc/pubapis_yaml.html).
+: Recursive acronym for "YAML Ain't No Markup Language." A human- readable, space-sensitive syntax used in the Swagger specification document. See [More About YAML](http://idratherbewriting.com/learnapidoc/pubapis_yaml.html).
 
 {% include random_ad.html %}

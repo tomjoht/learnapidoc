@@ -15,13 +15,13 @@ There were 38 responses, which I have represented as follows:
 
 ![authoringtools](images/authoringtools.png)
 
-Once more, in hindsight, I realize how poorly worded my survey question was. I didn't define what I meant by “programming guides.” By “programming guides” I meant those tutorials outside of any auto-generated content. Presumably if you're generating API reference documentation from a platform-based API like Java, you would use Javadoc, for C++ you would Doxygen, and maybe for REST, you might use Swagger.
+Once more, in hindsight, I realize how poorly worded my survey question was. I didn't define what I meant by “programming guides." By “programming guides" I meant those tutorials outside of any auto-generated content. Presumably if you're generating API reference documentation from a platform-based API like Java, you would use Javadoc, for C++ you would Doxygen, and maybe for REST, you might use Swagger.
 
-Fortunately, I think most people guessed my original meaning and answered correctly, because only two responses listed auto-generated docs. But one person's response, “Not sure I understand the question. javadoc, doxygen, framemaker, webworks, straight HTML”, suggests that others may have misinterpreted this as well.
+Fortunately, I think most people guessed my original meaning and answered correctly, because only two responses listed auto-generated docs. But one person's response, “Not sure I understand the question. javadoc, doxygen, framemaker, webworks, straight HTML", suggests that others may have misinterpreted this as well.
 
 Another unfortunate nuance with the question is that I don't distinguish between tools used in the past versus tools used today. Someone may have used Framemaker in the 90s for their API doc but has since moved on to Confluence. However, both tools are reflected as tools API doc writers use.
 
-Most striking with the results is the Other category. Rather than listing all of the responses with one or two answers, I lumped them into a category that I called “Other.” _Other_ responses included the following:
+Most striking with the results is the Other category. Rather than listing all of the responses with one or two answers, I lumped them into a category that I called “Other." _Other_ responses included the following:
 
 *   Markdown into Doxygen: 2
 *   Home-built CMS: 1
@@ -48,9 +48,9 @@ Most striking with the results is the Other category. Rather than listing all of
 
 Despite the fragmentation of tools, we do have some clear winners: Confluence, raw HTML, DITA, Flare, Markdown, Framemaker, and Word.
 
-By the way, when most people list Word, they do so with some qualification. For example, one person wrote, “One job involved using Word (shudders).” Word is usually a tool forced upon someone like a disease they don't want and have been trying to get rid of.
+By the way, when most people list Word, they do so with some qualification. For example, one person wrote, “One job involved using Word (shudders)." Word is usually a tool forced upon someone like a disease they don't want and have been trying to get rid of.
 
-In contrast, one person wrote, “Given the choice and a clean slate, I'd prefer markdown, reStructuredText or if resources allow, DITA .” This answer shows the preferences people have, and which I will comment on later.
+In contrast, one person wrote, “Given the choice and a clean slate, I'd prefer markdown, reStructuredText or if resources allow, DITA ." This answer shows the preferences people have, and which I will comment on later.
 
 ## Wikis are not dead
 
