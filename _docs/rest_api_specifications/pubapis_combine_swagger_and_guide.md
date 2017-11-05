@@ -1,5 +1,5 @@
 ---
-title: "Combining OpenAPI's (Swagger's) reference output with user guide docs"
+title: "Integrating Swagger UI with the rest of your docs"
 permalink: /pubapis_combine_swagger_and_guide.html
 course: "Documenting REST APIs"
 sidebar: docapis

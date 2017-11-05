@@ -164,7 +164,7 @@ As with most Swagger-based outputs, Swagger UI provides a "Try it out" button. T
 
 <a href="http://petstore.swagger.io/"><img src="/learnapidoc/images/swaggerui_authorize.png" alt="Authorization modal in Swagger UI" /></a>
 
-The Petstore example has an OAuth 2.0 security model. However, the Petstore site is just for display purposes. There isn't any real code authorizing those requests, so you can simply close the Authorization modal.
+The Petstore example has an OAuth 2.0 security model. However, the Petstore authorization modal is just for demo purposes. There isn't any real code authorizing those requests, so you can simply close the Authorization modal.
 
 Next, expand the **Pet** endpoint. Click **Try it out**.
 

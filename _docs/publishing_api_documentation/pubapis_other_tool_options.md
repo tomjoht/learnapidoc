@@ -17,19 +17,19 @@ There are many different tools for creating documentation, and there’s no clea
 
 ## Readme.io {#readmeio}
 
-[readme.io](http://readme.io) is an online hosted options for docs that offers one of the most robust, full-featured interfaces and options for developer docs available. If you consider how much time it requires to build, maintain, troubleshoot, etc., your own website, then it really does make sense to consider an existing third-party platform where someone has already built all of this out for you.
+[readme.io](http://readme.io) is an online hosted options for docs that offers one of the most robust, full-featured interfaces and options for developer docs available. If you consider how much time it requires to build, maintain, troubleshoot, etc., your own website, it really does make sense to consider an existing third-party platform where someone has already built all of this out for you.
 
 To explore readme.io:
 
 1. Go to [readme.io](http://readme.io).
 2. Click the **Sign Up** button in the upper-right corner and sign up for an account.
-3. If necessary, click **+Add Project**. Then add a Project Name (e.g., Weather API), Subdomain (e.g., weather-api), and Project Logo. Then click **Create**.
+3. Click **+Add Project**. Then add a Project Name (e.g., Weather API), Subdomain (e.g., weather-api), and Project Logo. Then click **Create**.
 
    <img src="images/projectsettingsreadmeio.png" alt="Project Settings" />
 
 4. Now check out the API doc configuration section. In the left sidebar, click **Reference Docs**, and then click **API**.
 
-Although you can add your API information manually, you can also import a  [Swagger](http://idratherbewriting.com/learnapidoc/pubapis_swagger_intro.html) file. You can experiment by choosing one from the [Swagger examples](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0/yaml), such as [this one](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/petstore-expanded.json).
+Although you can add your API information manually, you can also import an  [OpenAPI](http://idratherbewriting.com/learnapidoc/pubapis_swagger_intro.html) file. You can experiment by choosing one from the [OpenAPI examples](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0/yaml), such as [this one](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/petstore-expanded.json).
 
 Readme.io provides a number of wizard-like screens to move you through the documentation process, prompting you with forms to complete.
 
@@ -47,16 +47,15 @@ Additionally, if the cloud location for your docs isn't an option, that may also
 
 Even so, the output is sharp and the talent behind this site is top-notch. The platform is constantly growing with new features, so maybe all of this functionality will eventually be there.
 
-One of the tools you can use to generate API documentation from source -- as long as your source is Java-based -- is Miredot.
+Here are a few sample API doc sites built with Readme.io:
 
-{% if site.format == "web" %}
-* TOC
-{:toc}
-{% endif %}
+* [Validic](https://docs.validic.com/docs/getting-started)
+* [Box API](https://developer.box.com/docs)
+* [Coinbase API](https://developers.coinbase.com/api/v2#introduction)
 
 ## Miredot
 
-Miredot is a plugin for Maven, which is a build tool that you integrate into your Java IDE. Miredot can generate an offline website that looks like this:
+[Miredot](http://miredot.com/) is one of the tools you can use to generate reference API documentation from a Java source. Miredot is a plugin for Maven, which is a build tool that you integrate into your Java IDE. Miredot can generate an offline website that looks like this:
 
 <a href="http://miredot.com/exampledocs/"><img src="images/miredotexample.png" alt="Miredot example" /></a>
 
@@ -146,7 +145,7 @@ I'm also not sure if you can add your own doc pages to the Spectacle site.
 
 ## Custom UX solutions
 
-If you want to build a beautiful API doc website that rivals sites such as [Parse.com](http://parse.com) and others, you'll most likely need to involve a UX engineer to build it. Fortunately, this is a solution that many UX engineers and other web developers are usually excited to tackle.
+If you want to build a beautiful API doc website that rivals sites such as [Parse.com](http://parse.com) (a custom-built solution that uses Prism.js, Sinatra, and other in-house tools), you'll most likely need to involve a UX engineer to build it. Fortunately, building an API docs site is a solution that many UX engineers and other web developers are usually excited to tackle.
 
 If you want to integrate your API documentation into your main website, ask the person designing your main website for strategies on integrating the doc site into it. This integration might allow you to leverage authentication (if needed) and other interaction points (such as with forums or support tickets).
 

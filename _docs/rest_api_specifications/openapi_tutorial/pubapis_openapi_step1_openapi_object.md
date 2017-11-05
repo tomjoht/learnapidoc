@@ -44,7 +44,7 @@ By "root level," I mean the first level in the OpenAPI document. This level is a
 The whole document (the object that contains these 8 root level objects) is called an [OpenAPI document](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#oasDocument). The convention is to name the document **openapi.yml**.
 
 {: .note}
-"OpenAPI" refers to the specification; "Swagger" refers to the tooling (at least from Smartbear) that supports the OpenAPI specification. For more details on the terms, see [What Is the Difference Between Swagger and OpenAPI?](https://blog.smartbear.com/open-source/what-is-the-difference-between-swagger-and-openapi/).
+"OpenAPI" refers to the specification; "Swagger" refers to the tooling (at least from Smartbear) that supports the OpenAPI specification. For more details on the terms, see [What Is the Difference Between Swagger and OpenAPI?](https://blog.smartbear.com/open-source/what-is-the-difference-between-swagger-and-openapi/)
 
 ## Swagger Editor
 
