@@ -122,13 +122,13 @@ Hopefully those brief examples will help align us with the terminology used in t
 The OpenAPI tutorial has 8 steps. Each step corresponds with one of the root-level objects in the OpenAPI document.
 
 * [Step 1: openapi object](pubapis_openapi_step1_openapi_object.html)
-* [Step 2: info object](pubapis_openapi_step2_openapi_info_object.html)
-* [Step 3: servers object](pubapis_openapi_step3_openapi_servers_object)
-* [Step 4: paths object](pubapis_openapi_step4_openapi_paths_object.html)
-* [Step 5: components object](pubapis_openapi_step5_openapi_components_object.html)
-* [Step 6: security object](pubapis_openapi_step6_openapi_security_object.html)
-* [Step 7: tags object](pubapis_openapi_step7_openapi_tags_object.html)
-* [Step 8: externalDocs object](pubapis_openapi_step8_openapi_external_docs_object.html)
+* [Step 2: info object](pubapis_openapi_step2_info_object.html)
+* [Step 3: servers object](pubapis_openapi_step3_servers_object)
+* [Step 4: paths object](pubapis_openapi_step4_paths_object.html)
+* [Step 5: components object](pubapis_openapi_step5_components_object.html)
+* [Step 6: security object](pubapis_openapi_step6_security_object.html)
+* [Step 7: tags object](pubapis_openapi_step7_tags_object.html)
+* [Step 8: externalDocs object](pubapis_openapi_step8_external_docs_object.html)
 
 Note that the spec alone does nothing with your content. Other tools are required to read and display the spec document, or to generate client SDKs from it.
 
