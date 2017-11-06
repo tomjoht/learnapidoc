@@ -10,7 +10,7 @@ path1: /introtoapis.html
 
 Here's some feedback I've received about my API course. If you'd like to leave feedback, send your comments through the form below:
 
-<div class="formEmbed">
+<div id="formEmbed">
 <div id="wufoo-w1957lnr0qhfn8e">
 Fill out my <a href="https://idratherbewriting.wufoo.com/forms/w1957lnr0qhfn8e">online form</a>.
 </div>

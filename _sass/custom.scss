@@ -513,10 +513,10 @@ dd ~dd {
     margin-top: 8px;
 }
 
-.formEmbed {
-  background-color: #d6f5d6;
+#formEmbed {
+  background-color: #d6f5d6 !important;
   padding: 15px;
 }
-.formEmbed form li.focused {
+#formEmbed form li.focused {
   background-color: #dedede;
 }
