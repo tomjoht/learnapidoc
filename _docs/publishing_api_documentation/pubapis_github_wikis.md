@@ -93,7 +93,7 @@ In this section, you'll be using Git commands through your terminal or command p
 2. Give the repository a name, description, select **Public**, select **Initialize the repo with a README**, and then click **Create repository**.
 3. Click the **Wiki** link at the top of the repository.
 4. Click **Create the first page**.
-5. Insert your own sample documentation page, preferably using Markdown syntax. Or grab the sample Markdown page of a <a href="http://idratherbewriting.com/files/restapicourse/surfreportendpointdoc.md">fake endpoint called surfreport here</a> and insert it into the page.
+5. Insert your own sample documentation page, preferably using Markdown syntax. Or grab the sample Markdown page of a <a href="h/learnapidoc/assets/files/restapicourse/surfreportendpointdoc.md">fake endpoint called surfreport here</a> and insert it into the page.
 7. Click **Save page**.
 
 Notice how GitHub automatically converts the Markdown syntax into HTML with some decent styling.

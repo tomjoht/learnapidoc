@@ -18,7 +18,7 @@ Second, I knew that through feedback, I could refine the information and make it
 
 Finally, the content would help drive traffic to my site. How would people discover the material if they couldn't find it online? If the material were only trapped in a print book or behind a firewall, it would be difficult to discover. But as content strategists know, documentation is a rich information asset that draws traffic to any site. It's what people primarily search for online.
 
-After having put the API doc on my site for some months, the feedback was positive. [One writer said](http://idratherbewriting.com/learnapidoc/index.html#comment-3124829110):
+After having put the API doc on my site for some months, the feedback was positive. [One writer said](/learnapidoc/index.html#comment-3124829110):
 
 > Tom, this course is great. I'm only part way through it, but it already helped me get a job by appearing fluent in APIs during an interview. Thanks for doing this. I can't imagine how many volunteer hours you've put into helping the technical communication community here.
 
@@ -26,7 +26,7 @@ After having put the API doc on my site for some months, the feedback was positi
 
 > I love this course (I may have already posted that)—it's the best resource I have come across, explained in terms I understand. I've used it as a basis for my style guide and my API documentation.
 
-[Another said](http://idratherbewriting.com/learnapidoc/index.html#comment-2570927595):
+[Another said](/learnapidoc/index.html#comment-2570927595):
 
 > Hi Tom, I went through the whole course. Its highly valuable and I learned a bunch of things that I am already applying to real world documentation projects. ...  I think for sure the most valuable thing about your course is the clear step by step procedural stuff that gives the reader hands-on examples to follow (its so great to follow a course by an actual tech. writer!)
 

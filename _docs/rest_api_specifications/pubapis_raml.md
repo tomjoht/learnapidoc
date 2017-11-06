@@ -11,6 +11,9 @@ path1: /restapispecifications.html
 
 RAML stands for REST API Modeling Language and is similar to the [OpenAPI specification](pubapis_openapi_tutorial_overview.html). RAML is backed by [Mulesoft](https://www.mulesoft.com/), a commercial API company, and uses a more YAML-based syntax in the specification.
 
+{: .note}
+Unless you're publishing your docs with Mulesoft or another platform that specifically requires RAML, I recommend using the [OpenAPI specification](pubapis_openapi_tutorial_overview.html) instead.
+
 {% if site.format == "web" %}
 * TOC
 {:toc}
@@ -18,7 +21,7 @@ RAML stands for REST API Modeling Language and is similar to the [OpenAPI specif
 
 ## RAML overview
 
-Similar to OpenAPI, after you create a RAML file that describes your API, it can be consumed by different platforms to parse and display the information in attractive outputs. The RAML format, which uses YML syntax, tries to be human-readable, efficient, and simple.
+Similar to OpenAPI, after you create a RAML file that describes your API, it can be consumed by different platforms to parse and display the information in attractive outputs. The RAML format, which uses YML syntax, is human-readable, efficient, and simple.
 
 <figure><img src="images/ramlexample.png" alt="Sample RAML output in API Console" /><figcaption>This is a sample RAML output in something called API Console</figcaption></figure>
 
@@ -26,7 +29,7 @@ Similar to OpenAPI, after you create a RAML file that describes your API, it can
 
 It's important to note that with these REST API specifications (not just RAML), you're not just describing an API to generate a nifty doc output with an interactive console. There are tools that can also generate client SDKs and other code from the spec into a library that you can integrate into your project. This can help developers to more easily make requests to your API and receive responses.
 
-Additionally, the interactive console can provide a way to test out your API before developers code it. Mulesoft offers a "mocking service" for your API that simulates calls at a different baseURI. The push for using a spec is to design your API the right way from the start, without iterating with different versions as you try to get the endpoints right.
+Additionally, the interactive console can provide a way to test out your API before developers code it. Mulesoft offers a "mocking service" for your API that simulates calls at a different baseURI. The idea of the mocking service is to design your API the right way from the start, without iterating with different versions as you try to get the endpoints right.
 
 ## Sample spec for Mashape Weather API
 
@@ -244,23 +247,23 @@ You can generate outputs using the RAML spec from a variety of platforms. Here a
 
 ## Deliver doc through the Anypoint Platform Developer Portal
 
-1. Log into the [Anypoint platform](https://anypoint.mulesoft.com/apiplatform).
-2. Click **APIs** on the top navigation.
-3. Click **Add new API** and complete the details of the dialog box.
-4. Click the API you just added.
-5. In the API Definition box, click **Edit in API Designer**.
-6. Input your RAML spec here (copy it from the above section), and then click **Save**.
-7. Click **APIs** on the top navigation, and then click your API.
-8. In the API Portal section, click **Create new portal**.
-9. In the left pane, select **API Reference**.
+1.  Log into the [Anypoint platform](https://anypoint.mulesoft.com/apiplatform).
+2.  Click **APIs** on the top navigation.
+3.  Click **Add new API** and complete the details of the dialog box.
+4.  Click the API you just added.
+5.  In the API Definition box, click **Edit in API Designer**.
+6.  Input your RAML spec here (copy it from the above section), and then click **Save**.
+7.  Click **APIs** on the top navigation, and then click your API.
+8.  In the API Portal section, click **Create new portal**.
+9.  In the left pane, select **API Reference**.
 
-	Note that you can add additional pages to your documentation here.
+	  Note that you can add additional pages to your documentation here.
 
-	<img src="images/addingmoreramlapiportal.png" alt="Adding additional pages" />
+	  <img src="images/addingmoreramlapiportal.png" alt="Adding additional pages" />
 
-	(Kudos to the Mulesoft team for recognizing that API documentation is more than just a set of reference endpoints.)
+	  (Kudos to the Mulesoft team for recognizing that API documentation is more than just a set of reference endpoints.)
 
-	One of the options here is an API Notebook. This is a unique tool designed by Mulesoft that allows you to provide interactive code examples that leverage your RAML spec. You can read more about [API Notebooks here](https://api-notebook.anypoint.mulesoft.com/#examples).
+	  One of the options here is an API Notebook. This is a unique tool designed by Mulesoft that allows you to provide interactive code examples that leverage your RAML spec. You can read more about [API Notebooks here](https://api-notebook.anypoint.mulesoft.com/#examples).
 
 10. Click the **Set to visible** icon (looks like an eye).
 11. Click **Live Portal**.
@@ -271,39 +274,39 @@ You can generate outputs using the RAML spec from a variety of platforms. Here a
 
 You can also download the same code that generates the output on the Anypoint Platform and create your own API Console.
 
-1. Download the [API Console code from Github](https://github.com/mulesoft/api-console).
-2. Save your RAML file to some place locally on your computer (such as weather.raml on Desktop).
-3. In the code you downloaded from Github, go to dist/index.html in your browser.
+1.  Download the [API Console code from Github](https://github.com/mulesoft/api-console).
+2.  Save your RAML file to some place locally on your computer (such as weather.raml on Desktop).
+3.  In the code you downloaded from Github, go to dist/index.html in your browser.
 
-	<img src="images/apiconsoleraml.png" alt="RAML Console" />
+	  <img src="images/apiconsoleraml.png" alt="RAML Console" />
 
-4. Copy the RAML code you created.
-5. Insert your copied code into the **Or parse RAML here** text box. Then click **Load RAML**.
+4.  Copy the RAML code you created.
+5.  Insert your copied code into the **Or parse RAML here** text box. Then click **Load RAML**.
 
-	The API Console loads your RAML content:
+	  The API Console loads your RAML content:
 
-	<img src="images/ramlloaded.png" alt="RAML loaded" />
+	  <img src="images/ramlloaded.png" alt="RAML loaded" />
 
-6. To auto-load a specific RAML file, add this to the body of the index.html file:
+6.  To auto-load a specific RAML file, add this to the body of the index.html file:
 
-   ```
-	<div style="overflow:auto; position:relative">
-	<raml-console src="examples/weather.raml"></raml-console>
-	  </div>
-   ```
+    ```
+    <div style="overflow:auto; position:relative">
+      <raml-console src="examples/weather.raml"></raml-console>
+    </div>
+    ```
 
-	In this example, the RAML file is located in examples/weather.raml.
+	  In this example, the RAML file is located in examples/weather.raml.
 
-7. Remove the following line:
+7.  Remove the following line:
 
-   ```
+    ```
 	  <raml-initializer></raml-initializer>
-   ```
+    ```
 
-	View the file in your web browser. Note that if the file doesn't load in Chrome, open it in Firefox. Chrome tends to block local JavaScript for security reasons.
+	  View the file in your web browser. Note that if the file doesn't load in Chrome, open it in Firefox. Chrome tends to block local JavaScript for security reasons.
 
-	{: .tip}
-Here's a <a href="http://idratherbewriting.com.com/files/restapicourse/raml/specific.html">sample RAML API Console output</a> that integrates the weather.raml file. Here's a <a href="http://idratherbewriting.com.com/files/restapicourse/raml/examples/weather.raml">generic RAML API Console</a> that allows you to insert your own RAML spec code.
+	  {: .tip}
+    Here's a <a href="/learnapidoc/assets/files/raml/specific.html">sample RAML API Console output</a> that integrates the weather.raml file. Here's a <a href="/learnapidoc/assets/files/raml/examples/weather.raml">generic RAML API Console</a> that allows you to insert your own RAML spec code.
 
 ## Deliver doc through the RAML2HTML Utility
 
@@ -311,29 +314,30 @@ Here's [an example](http://raml2html.leanlabs.io/github) of what the RAML2HTML o
 
 To generate this kind of output:
 
-1. Install RAML2HTML through either of these methods:
- * [Through Node](https://www.npmjs.com/package/raml2html)
- * [Through wget](http://raml2html.leanlabs.io/documentation)
-2. In Terminal, enter this command:
+1.  Install RAML2HTML through either of these methods:
+    * [Through Node](https://www.npmjs.com/package/raml2html)
+    * [Through wget](http://raml2html.leanlabs.io/documentation)
+2.  In Terminal, enter this command:
 
-   ```
-	raml2html generate -i input_file.raml -o output_file.html
-   ```
+    ```
+    raml2html generate -i input_file.raml -o output_file.html
+    ```
 
-	For example, if you're already in the directory where your RAML file is (named weather.raml), and you want the output file to be named index.html, then enter this:
+	 For example, if you're already in the directory where your RAML file is (named weather.raml), and you want the output file to be named index.html, then enter this:
 
-   ```
-	raml2html generate -i weather.raml -o index.html
-   ```
+    ```
+    raml2html generate -i weather.raml -o index.html
+    ```
 
-	Here's the result:
+	  Here's the result:
 
-	<img src="images/raml2htmloutput.png" alt="RAML2HTML" />
+	  <img src="images/raml2htmloutput.png" alt="RAML2HTML" />
 
-	{: .tip}
-To see this example in your browser, go to <a href="http://idratherbewriting.com/files/restapicourse/raml/examples/index.html">idratherbewriting.com.com/files/restapicourseraml/examples/index.html</a>.
+	  {: .tip}
+    To see this example in your browser, go to <a href="h/learnapidoc/assets/files/restapicourse/raml/examples/index.html">idratherbewriting.com.com/files/restapicourseraml/examples/index.html</a>.
 
 ## Other platforms that consume RAML and Swagger
+
 <a href="http://studio.restlet.com">Restlet Studio</a> is another platform to check out. Restlet Studio can process either Swagger or RAML specs.
 
 One advantage to using Restlet Studio is that it provides a form where you can assemble the needed spec by populating different form values, which theoretically should make building the RAML or Swagger file easier.

@@ -29,7 +29,7 @@ To explore readme.io:
 
 4. Now check out the API doc configuration section. In the left sidebar, click **Reference Docs**, and then click **API**.
 
-Although you can add your API information manually, you can also import an  [OpenAPI](http://idratherbewriting.com/learnapidoc/pubapis_swagger_intro.html) file. You can experiment by choosing one from the [OpenAPI examples](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0/yaml), such as [this one](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/petstore-expanded.json).
+Although you can add your API information manually, you can also import an  [OpenAPI](/learnapidoc/pubapis_swagger_intro.html) file. You can experiment by choosing one from the [OpenAPI examples](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0/yaml), such as [this one](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/petstore-expanded.json).
 
 Readme.io provides a number of wizard-like screens to move you through the documentation process, prompting you with forms to complete.
 

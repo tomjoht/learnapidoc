@@ -8,7 +8,9 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-In this tutorial, you'll learn how to use [Swagger UI](https://github.com/swagger-api/swagger-ui), a display framework that reads the [OpenAPI specification document](https://github.com/OAI/OpenAPI-Specification) and generates an interactive documentation website. For a more detailed conceptual overview of OpenAPI and Swagger, see [Introduction to the OpenAPI specification and Swagger](pubapis_swagger_intro.html). For step-by-step tutorial on creating an OpenAPI specification document, see the [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html).
+[Swagger UI](https://github.com/swagger-api/swagger-ui) provides a display framework that reads the [OpenAPI specification document](https://github.com/OAI/OpenAPI-Specification) and generates an interactive documentation website. This tutorial shows you how to use the Swagger UI interface and how to integrate an OpenAPI specification document into the standalone distribution of Swagger UI.
+
+For a more detailed conceptual overview of OpenAPI and Swagger, see [Introduction to the OpenAPI specification and Swagger](pubapis_swagger_intro.html). For step-by-step tutorial on creating an OpenAPI specification document, see the [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html).
 
 {% if site.format == "web" %}
 * TOC
@@ -76,7 +78,7 @@ Swagger UI submits the request and shows the [curl that was submitted](docapis_m
 
 {% include important.html content="The Petstore is a functioning API, and you have actually created a pet. You now need to take responsibility for your pet and begin feeding and caring for it! All joking aside, most users don't realize they're playing with real data when they execute responses in an API (using their own API key). This test data may be something you have to wipe clean when you transition from exploring and learning about the API to actually using the API for production use." %}
 
-### Verify that your pet was actually created
+### Verify that your pet was created
 
 1.  Expand the [**GET /pet/{petId}** endpoint](http://petstore.swagger.io/#/pet/getPetById).
 2.  Click **Try it out**.
@@ -101,9 +103,9 @@ You'll notice the documentation is short and sweet in a Swagger UI implementatio
 
 ## Create a Swagger UI display with an OpenAPI spec document
 
-In this activity, you'll create a Swagger UI display for the weatherdata endpoint in this [Mashape Weather API](https://www.mashape.com/fyhao/weather-13#weatherdata). (If you're jumping around in the documentation, this is a simple API that we used in earlier parts of the course.) You can see a demo of what we'll build [here](http://idratherbewriting.com/learnapidoc/assets/files/swagger/).
+In this activity, you'll create a Swagger UI display for the weatherdata endpoint in this [Mashape Weather API](https://www.mashape.com/fyhao/weather-13#weatherdata). (If you're jumping around in the documentation, this is a simple API that we used in earlier parts of the course.) You can see a demo of what we'll build [here](/learnapidoc/assets/files/swagger/).
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/"><img src="images/myswagger.png" alt="Swagger UI demo" /></a>
+<a href="/learnapidoc/assets/files/swagger/"><img src="images/myswagger.png" alt="Swagger UI demo" /></a>
 
 {: .tip}
 You can also follow instructions for working with Swagger UI [here in the Swagger.io docs](https://swagger.io/docs/swagger-tools/#swagger-ui-documentation-29).

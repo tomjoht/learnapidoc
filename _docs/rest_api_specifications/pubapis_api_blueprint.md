@@ -8,7 +8,10 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-Just as Swagger defines a spec for describing a REST API, API Blueprint is another spec (which you can [read here](https://github.com/apiaryio/api-blueprint/blob/master/API%20Blueprint%20Specification.md)). If you describe your API with this blueprint, then different tools can read and display the information.
+Just as Swagger defines a spec for describing a REST API, [API Blueprint](https://apiblueprint.org/) is another specification for describing REST APIs. If you describe your API with this blueprint, tools that support API Blueprint can read and display the information.
+
+{: .note}
+Unless you're using a platform that specifically requires API Blueprint, I recommend using the [OpenAPI specification](pubapis_openapi_tutorial_overview.html) instead.
 
 {% if site.format == "web" %}
 * TOC
@@ -225,177 +228,177 @@ For this tutorial, we'll use a platform called Apiary to read and display the AP
 
 ### a. Create a new Apiary project
 
-1. Go to [apiary.io](https://apiary.io/) and click **Quick start with Github**. Sign in with your Github account. (If you don't have a Github account, create one first.)
-2. Sign up for a free hacker account and create a new project.
+1.  Go to [apiary.io](https://apiary.io/) and click **Quick start with Github**. Sign in with your Github account. (If you don't have a Github account, create one first.)
+2.  Sign up for a free hacker account and create a new project.
 
-	You'll be placed in the API Blueprint editor.
+	  You'll be placed in the API Blueprint editor.
 
-	<img src="images/apiaryblueprinteditor.png" alt="API Blueprint editor" />
+	  <img src="images/apiaryblueprinteditor.png" alt="API Blueprint editor" />
 
-	By default the Polls blueprint is loaded so you can see how it looks. This blueprint gives you an example of the required format for the Apiary tool to parse and display the content. You can also see the [raw file here](https://raw.githubusercontent.com/apiaryio/api-blueprint/master/examples/Polls%20API.md).
+	  By default the Polls blueprint is loaded so you can see how it looks. This blueprint gives you an example of the required format for the Apiary tool to parse and display the content. You can also see the [raw file here](https://raw.githubusercontent.com/apiaryio/api-blueprint/master/examples/Polls%20API.md).
 
-3. At this point, you would start describing your API using the blueprint syntax in the editor. When you make a mistake, error flags indicate what's wrong.
+3.  At this point, you would start describing your API using the blueprint syntax in the editor. When you make a mistake, error flags indicate what's wrong.
 
-	You can [read the Apiary tutorial](https://apiary.io/blueprint) and structure your documentation in the blueprint format. The syntax seems to accommodate different methods applied to the same resources.
+	  You can [read the Apiary tutorial](https://apiary.io/blueprint) and structure your documentation in the blueprint format. The syntax seems to accommodate different methods applied to the same resources.
 
-	For this tutorial, you'll integrate the Mashape weather API information info formatted in the blueprint format.
+	  For this tutorial, you'll integrate the Mashape weather API information info formatted in the blueprint format.
 
-4. Copy the following code, which aligns with the API Blueprint spec, and paste it into the Apiary blueprint editor.
+4.  Copy the following code, which aligns with the API Blueprint spec, and paste it into the Apiary blueprint editor.
 
-   ```
-	FORMAT: 1A
-	HOST: https://simple-weather.p.mashape.com
+    ```markdown
+    FORMAT: 1A
+    HOST: https://simple-weather.p.mashape.com
 
-	# Weather API
+    # Weather API
 
-	Display Weather forecast data by latitude and longitude. Get raw weather data OR simple label description of weather forecast of some places.
+    Display Weather forecast data by latitude and longitude. Get raw weather data OR simple label description of weather forecast of some places.
 
-	# Weather API Root [/]
+    # Weather API Root [/]
 
-	# Group Weather
+    # Group Weather
 
-	Resources related to weather in the API.
+    Resources related to weather in the API.
 
-	## Weather data [/weatherdata{?lat,lng}]
+    ## Weather data [/weatherdata{?lat,lng}]
 
-	### Get the weather data [GET]
+    ### Get the weather data [GET]
 
-	Get the weather data in your area.
+    Get the weather data in your area.
 
-	+ Parameters
-	    + lat: 55.749792 (required, number) - Latitude
-	    + lng: 37.632495 (required, number) - Longitude
+    + Parameters
+      + lat: 55.749792 (required, number) - Latitude
+      + lng: 37.632495 (required, number) - Longitude
 
-	+ Request JSON Message
+    + Request JSON Message
 
-	    + Headers
+      + Headers
 
-	            X-Mashape-Authorization: APIKEY
-	            Accept: text/plain
+              X-Mashape-Authorization: APIKEY
+              Accept: text/plain
 
-	+ Response 200 (application/json)
+    + Response 200 (application/json)
 
-	    + Body
+      + Body
 
-	            [
-	                {
-	              "query": {
-	                "count": 1,
-	                "created": "2014-05-03T03:57:53Z",
-	                "lang": "en-US",
-	                "results": {
-	                  "channel": {
-	                    "title": "Yahoo! Weather - Tebrau, MY",
-	                    "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Tebrau__MY/*http://weather.yahoo.com/forecast/MYXX0004_c.html",
-	                    "description": "Yahoo! Weather for Tebrau, MY",
-	                    "language": "en-us",
-	                    "lastBuildDate": "Sat, 03 May 2014 11:00 am MYT",
-	                    "ttl": "60",
-	                    "location": {
-	                      "city": "Tebrau",
-	                      "country": "Malaysia",
-	                      "region": ""
-	                    },
-	                    "units": {
-	                      "distance": "km",
-	                      "pressure": "mb",
-	                      "speed": "km/h",
-	                      "temperature": "C"
-	                    },
-	                    "wind": {
-	                      "chill": "32",
-	                      "direction": "170",
-	                      "speed": "4.83"
-	                    },
-	                    "atmosphere": {
-	                      "humidity": "66",
-	                      "pressure": "982.05",
-	                      "rising": "0",
-	                      "visibility": "9.99"
-	                    },
-	                    "astronomy": {
-	                      "sunrise": "6:57 am",
-	                      "sunset": "7:06 pm"
-	                    },
-	                    "image": {
-	                      "title": "Yahoo! Weather",
-	                      "width": "142",
-	                      "height": "18",
-	                      "link": "http://weather.yahoo.com",
-	                      "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
-	                    },
-	                    "item": {
-	                      "title": "Conditions for Tebrau, MY at 11:00 am MYT",
-	                      "lat": "1.58",
-	                      "long": "103.74",
-	                      "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Tebrau__MY/*http://weather.yahoo.com/forecast/MYXX0004_c.html",
-	                      "pubDate": "Sat, 03 May 2014 11:00 am MYT",
-	                      "condition": {
-	                        "code": "28",
-	                        "date": "Sat, 03 May 2014 11:00 am MYT",
-	                        "temp": "32",
-	                        "text": "Mostly Cloudy"
-	                      },
-	                      "description": "\n<img src=\"http://l.yimg.com/a/i/us/we/52/28.gif\"/><br />\n<b>Current Conditions:</b><br />\nMostly Cloudy, 32 C<BR />\n<BR /><b>Forecast:</b><BR />\nSat - Scattered Thunderstorms. High: 32 Low: 26<br />\nSun - Thunderstorms. High: 33 Low: 27<br />\nMon - Scattered Thunderstorms. High: 32 Low: 26<br />\nTue - Thunderstorms. High: 32 Low: 26<br />\nWed - Scattered Thunderstorms. High: 32 Low: 27<br />\n<br />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Tebrau__MY/*http://weather.yahoo.com/forecast/MYXX0004_c.html\">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)<br/>\n",
-	                      "forecast": [
-	                        {
-	                          "code": "38",
-	                          "date": "3 May 2014",
-	                          "day": "Sat",
-	                          "high": "32",
-	                          "low": "26",
-	                          "text": "Scattered Thunderstorms"
-	                        },
-	                        {
-	                          "code": "4",
-	                          "date": "4 May 2014",
-	                          "day": "Sun",
-	                          "high": "33",
-	                          "low": "27",
-	                          "text": "Thunderstorms"
-	                        },
-	                        {
-	                          "code": "38",
-	                          "date": "5 May 2014",
-	                          "day": "Mon",
-	                          "high": "32",
-	                          "low": "26",
-	                          "text": "Scattered Thunderstorms"
-	                        },
-	                        {
-	                          "code": "4",
-	                          "date": "6 May 2014",
-	                          "day": "Tue",
-	                          "high": "32",
-	                          "low": "26",
-	                          "text": "Thunderstorms"
-	                        },
-	                        {
-	                          "code": "38",
-	                          "date": "7 May 2014",
-	                          "day": "Wed",
-	                          "high": "32",
-	                          "low": "27",
-	                          "text": "Scattered Thunderstorms"
-	                        }
-	                      ],
-	                      "guid": {
-	                        "isPermaLink": "false",
-	                        "content": "MYXX0004_2014_05_07_7_00_MYT"
-	                      }
-	                    }
-	                  }
-	                }
-	              }
-	            }
-	            ]
+              [
+                  {
+                "query": {
+                  "count": 1,
+                  "created": "2014-05-03T03:57:53Z",
+                  "lang": "en-US",
+                  "results": {
+                    "channel": {
+                      "title": "Yahoo! Weather - Tebrau, MY",
+                      "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Tebrau__MY/*http://weather.yahoo.com/forecast/MYXX0004_c.html",
+                      "description": "Yahoo! Weather for Tebrau, MY",
+                      "language": "en-us",
+                      "lastBuildDate": "Sat, 03 May 2014 11:00 am MYT",
+                      "ttl": "60",
+                      "location": {
+                        "city": "Tebrau",
+                        "country": "Malaysia",
+                        "region": ""
+                      },
+                      "units": {
+                        "distance": "km",
+                        "pressure": "mb",
+                        "speed": "km/h",
+                        "temperature": "C"
+                      },
+                      "wind": {
+                        "chill": "32",
+                        "direction": "170",
+                        "speed": "4.83"
+                      },
+                      "atmosphere": {
+                        "humidity": "66",
+                        "pressure": "982.05",
+                        "rising": "0",
+                        "visibility": "9.99"
+                      },
+                      "astronomy": {
+                        "sunrise": "6:57 am",
+                        "sunset": "7:06 pm"
+                      },
+                      "image": {
+                        "title": "Yahoo! Weather",
+                        "width": "142",
+                        "height": "18",
+                        "link": "http://weather.yahoo.com",
+                        "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+                      },
+                      "item": {
+                        "title": "Conditions for Tebrau, MY at 11:00 am MYT",
+                        "lat": "1.58",
+                        "long": "103.74",
+                        "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Tebrau__MY/*http://weather.yahoo.com/forecast/MYXX0004_c.html",
+                        "pubDate": "Sat, 03 May 2014 11:00 am MYT",
+                        "condition": {
+                          "code": "28",
+                          "date": "Sat, 03 May 2014 11:00 am MYT",
+                          "temp": "32",
+                          "text": "Mostly Cloudy"
+                        },
+                        "description": "\n<img src=\"http://l.yimg.com/a/i/us/we/52/28.gif\"/><br />\n<b>Current Conditions:</b><br />\nMostly Cloudy, 32 C<BR />\n<BR /><b>Forecast:</b><BR />\nSat - Scattered Thunderstorms. High: 32 Low: 26<br />\nSun - Thunderstorms. High: 33 Low: 27<br />\nMon - Scattered Thunderstorms. High: 32 Low: 26<br />\nTue - Thunderstorms. High: 32 Low: 26<br />\nWed - Scattered Thunderstorms. High: 32 Low: 27<br />\n<br />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Tebrau__MY/*http://weather.yahoo.com/forecast/MYXX0004_c.html\">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)<br/>\n",
+                        "forecast": [
+                          {
+                            "code": "38",
+                            "date": "3 May 2014",
+                            "day": "Sat",
+                            "high": "32",
+                            "low": "26",
+                            "text": "Scattered Thunderstorms"
+                          },
+                          {
+                            "code": "4",
+                            "date": "4 May 2014",
+                            "day": "Sun",
+                            "high": "33",
+                            "low": "27",
+                            "text": "Thunderstorms"
+                          },
+                          {
+                            "code": "38",
+                            "date": "5 May 2014",
+                            "day": "Mon",
+                            "high": "32",
+                            "low": "26",
+                            "text": "Scattered Thunderstorms"
+                          },
+                          {
+                            "code": "4",
+                            "date": "6 May 2014",
+                            "day": "Tue",
+                            "high": "32",
+                            "low": "26",
+                            "text": "Thunderstorms"
+                          },
+                          {
+                            "code": "38",
+                            "date": "7 May 2014",
+                            "day": "Wed",
+                            "high": "32",
+                            "low": "27",
+                            "text": "Scattered Thunderstorms"
+                          }
+                        ],
+                        "guid": {
+                          "isPermaLink": "false",
+                          "content": "MYXX0004_2014_05_07_7_00_MYT"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              ]
 
-   ```
+    ```
 
-	{: .note}
-If the code isn't easy to copy and paste, you can [view and download the file here](http://idratherbewriting.com/files/publishingapidocs/apiblueprintweatherdata.md).
+    {: .note}
+    If the code isn't easy to copy and paste, you can [view and download the file here](h/learnapidoc/assets/files/publishingapidocs/apiblueprintweatherdata.md).
 
-5. Click **Save and Publish**.
+5.  Click **Save and Publish**.
 
 ### b. Interact with the API on Apiary
 

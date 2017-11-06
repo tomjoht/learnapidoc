@@ -205,7 +205,7 @@ The same parameter values might be used in other requests as well, so organizati
 
 ## Swagger UI's approach
 
-Is the display from the [Swagger UI](http://idratherbewriting.com/learnapidoc/pubapis_swagger) any better?  
+Is the display from the [Swagger UI](/learnapidoc/pubapis_swagger) any better?  
 
 The [Swagger UI](https://github.com/swagger-api/swagger-ui) reads the OpenAPI specification document and displays it in the visual format that you see with examples such as the [Swagger Petstore](http://petstore.swagger.io/).
 

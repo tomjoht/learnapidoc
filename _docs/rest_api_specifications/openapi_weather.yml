@@ -27,8 +27,8 @@ paths:
     get:
       tags:
       - Air Quality
-      summary: getAqi
-      description: Gets the air quality index
+      summary: Gets the air quality index for the given area.
+      description: Gets the air quality index. Higher numbers indicate worse air quality.
       operationId: GetAqi
       externalDocs:
         description: More details
@@ -53,8 +53,8 @@ paths:
       - url: https://simple-weather.p.mashape.com
       tags:
       - Weather Forecast
-      summary: getWeather
-      description: Gets the weather forecast in abbreviated form
+      summary: Gets basic weather forecast details
+      description: Gets the weather forecast in abbreviated form for the current day, including temperature and current conditions.
       operationId: GetWeather
       externalDocs:
         description: More details
@@ -77,8 +77,8 @@ paths:
     get:
       tags:
         - Weather Forecast
-      summary: getWeatherData
-      description: Get weather forecast with lots of details
+      summary: Gets the full weather forecast details.
+      description: Get weather forecast in abundant details including nearly every category of information, including wind, atmosphere, astronomy, forecast, and more.
       operationId: GetWeatherData
       externalDocs:
         description: More details

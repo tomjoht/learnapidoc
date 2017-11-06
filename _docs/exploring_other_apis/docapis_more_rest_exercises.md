@@ -22,7 +22,7 @@ There are several examples with different APIs. A challenge is listed for each e
 In these examples, I usually printed the code to a web page to visualize the response. However, that part is not required in the challenge. (It mostly makes the exercise more fun to me.)
 
 ## Shortcuts for API keys
-Each API requires you to use an API key, token, or some other form of authentication. You can register for your own API keys, or you can [use my keys here](http://idratherbewriting.com/files/restapicourse/apikeys.txt).
+Each API requires you to use an API key, token, or some other form of authentication. You can register for your own API keys, or you can [use my keys here](h/learnapidoc/assets/files/restapicourse/apikeys.txt).
 
 ## Swap out APIKEY in code samples
 I never insert API keys in code samples for a few reasons:
