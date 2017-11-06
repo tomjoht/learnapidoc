@@ -35,6 +35,15 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
 
 ---------
 
+> Just an email to thank you for the wonderful API course on your site. I am a long-time tech writer for online help that was recently assigned a task to document a public API. I had no experience in the subject, but had to complete a plan within a single sprint. Luckily I remembered from your blog posts over the years that you had posted material about this.
+>
+> Your course on YouTube gave me enough information and understanding to be able to speak intelligently on the subject with developers in a short timeframe, and to dive into tools and publishing solutions.
+>
+> Thanks for the service that you do for tech writers - we are lucky to have an industry leader like you to provide information and expertise, such as I found in your API materials. Thanks
+> &mdash; Elizabeth Williams, Nov. 6, 2017.  
+
+
+
 > Tom, this course is great. I'm only part way through it, but it already helped me get a job by appearing fluent in APIs during an interview. Thanks for doing this. I can't imagine how many volunteer hours you've put into helping the technical communication community here. [Link](/learnapidoc/index.html#comment-3124829110)
 
 ---------
