@@ -246,8 +246,8 @@ folders:
       - title: Swagger UI Demo 1 (standalone)
         jurl: /assets/files/swagger/
 
-      - title: Swagger UI Demo 2 (embedded)
-        jurl: /pubapis_swagger_embedded.html
+      # - title: Swagger UI Demo 2 (embedded)
+      #   jurl: /pubapis_swagger_embedded.html
 
       - title: Integrating Swagger UI with the rest of your docs
         jurl: /pubapis_combine_swagger_and_guide.html

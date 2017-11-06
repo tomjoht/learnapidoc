@@ -11,6 +11,25 @@ path1: /restapispecifications.html
 <p class="note" style="margin-bottom: 15px;">The following is an embedded instance of the <a href="https://github.com/swagger-api/swagger-ui">Swagger UI</a> showing the <a href="{{ "/docs/rest_api_specifications/openapi_weather.yml" | prepend: site.baseurl }}">OpenAPI file for the Mashape weather API</a>.</p>
 
 <link rel="stylesheet" type="text/css" href="{{ "/assets/css/swagger-ui.css" | prepend: site.baseurl }}" >
+<style>
+  html
+  {
+    box-sizing: border-box;
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+  }
+  *,
+  *:before,
+  *:after
+  {
+    box-sizing: inherit;
+  }
+
+  body {
+    margin:0;
+    background: #fafafa;
+  }
+</style>
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
   <defs>
@@ -48,14 +67,15 @@ path1: /restapispecifications.html
 
 <div id="swagger-ui"></div>
 
-<script src="{{ "/assets/js/swagger-ui-bundle.js" | prepend: site.baseurl }}"> </script>
-<script src="{{ "/assets/js/swagger-ui-standalone-preset.js" | prepend: site.baseurl }}"> </script>
+<script src="{{ "/assets/files/swagger/swagger-ui-bundle.js" | prepend: site.baseurl }}"> </script>
+<script src="{{ "/assets/files/swagger/swagger-ui-standalone-preset.js" | prepend: site.baseurl }}"> </script>
 <script>
 window.onload = function() {
 
   // Build a system
   const ui = SwaggerUIBundle({
-    url: "{{"/docs/rest_api_specifications/openapi_weather.yml" | prepend: site.baseurl }}",
+    url: "{{"/docs/rest_api_specifications/openapi_weather.yml" | prepend: site.baseurl }}"
+    // url: "http://petstore.swagger.io/v2/swagger.json",
     dom_id: '#swagger-ui',
     deepLinking: true,
     presets: [
