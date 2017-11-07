@@ -16,17 +16,16 @@ blockquote {
 
 Here's some feedback I've received about my API course. If you'd like to leave feedback, send your comments through the form below:
 
-<div id="formEmbed">
 <div id="wufoo-w1957lnr0qhfn8e">
 Fill out my <a href="https://idratherbewriting.wufoo.com/forms/w1957lnr0qhfn8e">online form</a>.
 </div>
-<div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">HTML Forms powered by <a href="http://www.wufoo.com">Wufoo</a>.</div>
+<div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">Use <a href="http://www.wufoo.com/gallery/templates/">Wufoo templates</a> to make your own HTML forms.</div>
 <script type="text/javascript">var w1957lnr0qhfn8e;(function(d, t) {
 var s = d.createElement(t), options = {
 'userName':'idratherbewriting',
 'formHash':'w1957lnr0qhfn8e',
 'autoResize':true,
-'height':'638',
+'height':'640',
 'async':true,
 'host':'wufoo.com',
 'header':'show',
@@ -37,7 +36,7 @@ var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') retu
 try { w1957lnr0qhfn8e = new WufooForm();w1957lnr0qhfn8e.initialize(options);w1957lnr0qhfn8e.display(); } catch (e) {}};
 var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
 })(document, 'script');</script>
-</div>
+
 
 ---------
 
