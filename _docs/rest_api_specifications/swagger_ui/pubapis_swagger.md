@@ -6,6 +6,8 @@ sidebar: docapis
 weight: 8.4
 section: restapispecifications
 path1: /restapispecifications.html
+redirect_from:
+- http://idratherbewriting.com/pubapis_swagger/
 ---
 
 [Swagger UI](https://github.com/swagger-api/swagger-ui) provides a display framework that reads the [OpenAPI specification document](https://github.com/OAI/OpenAPI-Specification) and generates an interactive documentation website. This tutorial shows you how to use the Swagger UI interface and how to integrate an OpenAPI specification document into the standalone distribution of Swagger UI.

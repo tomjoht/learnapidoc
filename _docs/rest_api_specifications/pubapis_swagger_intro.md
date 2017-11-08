@@ -9,6 +9,8 @@ weight: 8.1
 sidebar: docapis
 section: restapispecifications
 path1: /restapispecifications.html
+redirect_from:
+- http://idratherbewriting.com/pubapis_swagger_intro/
 ---
 
 {: .tip}
