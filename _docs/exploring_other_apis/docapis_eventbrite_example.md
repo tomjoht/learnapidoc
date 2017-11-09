@@ -1,5 +1,5 @@
 ---
-title: 'EventBrite example: Get event information'
+title: 'Eventbrite example: Get event information'
 permalink: /docapis_eventbrite_example.html
 sidebar: docapis
 course: "Documenting REST APIs"
@@ -13,15 +13,15 @@ https://www.eventbrite.com/myevent?eid=17920884849
 
 IO6EB7MM6TSCIL2TIOHC
 
-Use the [EventBrite API](https://www.eventbrite.com/developer/v3/) to get the event title and description of an event.
+Use the [Eventbrite API](https://www.eventbrite.com/developer/v3/) to get the event title and description of an event.
 
 {% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}
 
-## About EventBrite
-EventBrite is an event management tool, and you can interact with it through an API to pull out the event information you want. In this example, you'll use the EventBrite API to print a description of an event to your page.
+## About Eventbrite
+Eventbrite is an event management tool, and you can interact with it through an API to pull out the event information you want. In this example, you'll use the Eventbrite API to print a description of an event to your page.
 
 ## 1. Get an anonymous OAuth token
 To make any kind of requests, you'll need a token, which you can learn about in the [Authentication section](https://www.eventbrite.com/developer/v3/api_overview/authentication/).
@@ -29,14 +29,14 @@ To make any kind of requests, you'll need a token, which you can learn about in 
 If you want to sign up for your own token, create and register your app [here](https://www.eventbrite.com/myaccount/apps/). Then click **Show Client Secret and OAuth Token** and copy the "Anonymous access OAuth token."
 
 ## 2. Determine the resource and endpoint you need
-The EventBrite API documentation is here: [developer.eventbrite.com](https://www.eventbrite.com/developer/v3/). Look through the endpoints available (listed under Endpoints in the sidebar). Which endpoint should we use?
+The Eventbrite API documentation is here: [developer.eventbrite.com](https://www.eventbrite.com/developer/v3/). Look through the endpoints available (listed under Endpoints in the sidebar). Which endpoint should we use?
 
 To get event information, we'll use the [events](https://www.eventbrite.com/developer/v3/endpoints/events/) object.
 
-<a href="https://www.eventbrite.com/developer/v3/endpoints/events/"><img src="images/eventsendpointeventbrite.png" alt="EventBrite Event" /></a>
+<a href="https://www.eventbrite.com/developer/v3/endpoints/events/"><img src="images/eventsendpointeventbrite.png" alt="Eventbrite Event" /></a>
 
 {: .note}
-Instead of calling them \"resources,\" the EventBrite API uses the term \"objects.\"
+Instead of calling them \"resources,\" the Eventbrite API uses the term \"objects.\"
 
 The events object allows us to "retrieve a paginated response of public event objects from across Eventbrite's directory, regardless of which user owns the event."
 
