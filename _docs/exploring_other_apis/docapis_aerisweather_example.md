@@ -182,6 +182,6 @@ To add a little variety to the code samples, here's one that's a bit different. 
 </html>
 ```
 
-Here's the result:
+Here's the <a href="http://idratherbewriting.com/learnapidoc/assets/files/aeris-observations.html">result</a>:
 
-<img src="images/notthatwindy.png" alt="Aeris Weather example" />
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/aeris-observations.html"><img src="images/notthatwindy.png" alt="Aeris Weather example" /></a>
