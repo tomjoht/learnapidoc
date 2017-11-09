@@ -1,0 +1,38 @@
+<html>
+   <body>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script>
+
+         jQuery.ajax({
+             url: "http://api.aerisapi.com/observations/santa%20clara,ca",
+             type: "GET",
+             data: {
+                 "client_id": "ByruDorHEne2JB64BhP1k",
+                 "client_secret": "uBDNO535gYHULH8mqx3skZmU13EV4nIf4GvB6jhY",
+             },
+         })
+         .done(function(data, textStatus, jqXHR) {
+             console.log("HTTP Request Succeeded: " + jqXHR.status);
+             console.log(data);
+             if (data.response.ob.windSpeedMPH > 15) {
+         	var windAnswer = "Yes, it's too windy.";
+         }
+         	else  {
+         	 var windAnswer = "No, it's not that windy.";
+         	}
+             $("#windAnswer").append(windAnswer)
+         })
+         .fail(function(jqXHR, textStatus, errorThrown) {
+             console.log("HTTP Request Failed");
+         })
+         .always(function() {
+             /* ... */
+         });
+
+
+      </script>
+      <p>Is it too windy to go on a bike ride?</p>
+      <div id="windAnswer" style="font-size:76px"></div>
+
+   </body>
+</html>

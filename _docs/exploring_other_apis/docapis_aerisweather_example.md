@@ -18,23 +18,23 @@ Use the Aeris Weather API to get the wind speed (MPH) for a specific place (your
 
 ## The Aeris Weather API
 
-Since you've been working with the weather API on Mashape, it's probably a good idea to compare this simple weather API with a more robust one. Check out the [Aeris Weather API here](http://www.aerisweather.com/support/docs/api/). This is one of the most interesting, well-documented and powerful APIs I've encountered.
+Since you've been working with the weather API on Mashape, it's probably a good idea to compare this simple weather API with a more robust one. Check out the [Aeris Weather API here](http://www.aerisweather.com/support/docs/api/). This is one of the most interesting, well-documented and powerful weather APIs I've encountered.
 
 In this example, you'll get the wind in MPH and then set an answer to display on the page based on some conditional logic.
 
 ## 1. Get the API keys
 
-See the [Getting Started](http://www.aerisweather.com/support/docs/api/getting-started/) page for information on how to register and get API keys. (Obviously get the free version of the keys available to development projects.) You will need both the CLIENTID and CLIENTSECRET to make API calls.
+See the [Getting Started](http://www.aerisweather.com/support/docs/api/getting-started/) page for information on how to register and get API keys. (Obviously, get the free version of the keys available to development projects.) You will need both the CLIENTID and CLIENTSECRET to make API calls.
 
 ## 2. Construct the request
 
-Browse through the [available endpoints](http://www.aerisweather.com/support/docs/api/reference/endpoints/) and look for one that would give you the wind speed. The [forecasts](http://www.aerisweather.com/support/docs/api/reference/endpoints/forecasts/) resource provides information about wind speed.
+Browse through the [available endpoints](http://www.aerisweather.com/support/docs/api/reference/endpoints/) and look for one that would give you the wind speed. The [`observations`](http://www.aerisweather.com/support/docs/api/reference/endpoints/observations/) resource provides information about wind speed, as does [`forecasts`](http://www.aerisweather.com/support/docs/api/reference/endpoints/forecasts/). The response from `observations` looks a little simpler, so let's use that endpoint.
 
-<a href="http://www.aerisweather.com/support/docs/api/reference/endpoints/forecasts/"><img src="images/aerisforecasts.png" alt="Aeris Weather forecasts resource" /></a>
+<a href="http://www.aerisweather.com/support/docs/api/reference/endpoints/observations/"><img src="images/aerisobservations.png" alt="Aeris Weather observations resource" /></a>
 
 {% include random_ad.html %}
 
-To get the forecast details for Santa Clara, California, add it after `/forecasts`, like this:
+To get the forecast details for Santa Clara, California, add it after `/observations`, like this:
 
 ```
 http://api.aerisapi.com/observations/santa%20clara,ca?client_id=CLIENT_ID&client_secret=CLIENT_SECRET
@@ -139,7 +139,7 @@ Here's the response from the request:
 
 To get the `windSpeedMPH`, you would access it through dot notation like this: `data.response.ob.windSpeedMPH`.
 
-To add a little variety to the code samples, here's one that's a bit different. We get the value for the `data.response.ob.windSpeedMPH` and then assign the variable based on a condition. The variable then gets appended to the page. See if you can understand this code logic by following the if-else condition:
+To add a little variety to the code samples, here's one that's a bit different. We get the value for the `data.response.ob.windSpeedMPH` and assign the variable based on a condition. The variable then gets appended to the page. See if you can understand this code logic by following the if-else condition:
 
 ```html
 <html>
