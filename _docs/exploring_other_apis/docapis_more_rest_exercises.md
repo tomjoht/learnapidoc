@@ -24,7 +24,7 @@ In these examples, I usually printed the code to a web page to visualize the res
 
 ## Shortcuts for API keys
 
-Each API requires you to use an API key, token, or some other form of authentication. You can register for your own API keys, or you can [use my keys here](/learnapidoc/assets/files/restapicourse/apikeys.txt).
+Each API requires you to use an API key, token, or some other form of authentication. You can register for your own API keys, or you can [use my keys here](/learnapidoc/assets/files/apikeys.txt).
 
 ## Swap out APIKEY in code samples
 
