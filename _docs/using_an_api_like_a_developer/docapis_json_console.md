@@ -40,11 +40,11 @@ Mashape [provides some sample code in unirest](https://docs.rapidapi.com/v1.0/do
 2.  Open Postman and click the request to the `weatherdata` endpoint that you configured earlier.
 3.  Click the **Code** button.
 
-    <img src="images/postmangeneratecodesnippet.png" alt="Generate code snippet" />
+    <img src="images/postmangeneratecodesnippet.png" class="medium" alt="Generate code snippet" />
 
 4.  Select **JavaScript > jQuery AJAX**.
 
-    <img src="images/postmancodesnippet.png" alt="JavaScript Ajax code snippet" />
+    <img src="images/postmancodesnippet.png"  class="medium" alt="JavaScript Ajax code snippet" />
 
 5.  Copy the code sample.
 
@@ -71,7 +71,7 @@ Mashape [provides some sample code in unirest](https://docs.rapidapi.com/v1.0/do
 
     You can put the script in the `head` section if you want &mdash; just make sure you add it after the jQuery reference.
 
-7.  The Postman code sample needs one more parameter: `datatype`. Add `"datatype": "json"` as parameter in `settings`.
+7.  The Postman code sample needs one more parameter: `datatype`. Add `"datatype": "json"` as parameter in `settings`. Otherwise the object returned will be shown in text format rather than JSON.
 
     Your final code should look like this:
 
@@ -101,6 +101,7 @@ Mashape [provides some sample code in unirest](https://docs.rapidapi.com/v1.0/do
     });
     </script>
     <body>
+      <h2>Open the JS Console (View > Developer > JavaScript Console) to see the object returned.</h2>
     </body>
     </html>
     ```
