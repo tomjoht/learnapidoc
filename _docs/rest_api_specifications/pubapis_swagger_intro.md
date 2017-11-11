@@ -148,7 +148,7 @@ You will most likely find that engineers in your company aren't familiar with Sw
 
 In this regard, tech writers have a key role to play in collaborating with the API team in producing the spec. If you're following a spec-first development philosophy, this leading role can help you shape the API before it gets coded and locked down. This means you might be able to actually influence the names of the endpoints, the consistency and patterns, simplicity, and other factors that go into the design of an API (which tech writers are usually absent from).
 
-## Parsing the OpenAPI specification with Swagger UI
+## Rendering Your API Docs Swagger UI
 
 After you have a valid OpenAPI specification document that describes your API, you can then feed this specification to different tools to parse it and generate the interactive documentation similar to the [Petstore example](http://petstore.swagger.io/) I referenced earlier.
 
@@ -161,6 +161,10 @@ The Swagger UI code generates a display that looks like this:
 Also check out the [sample Swagger UI integration with a simple weather API](/learnapidoc/assets/files/swagger/) used as a course example.
 
 Some designers criticize Swagger UI's expandable/collapsible output as being dated. At the same time, developers find the one-page model attractive and like the ability to zoom out or in for details. By consolidating all endpoints on the same page in one view, users can take in the whole API at a glance. This display gives users a glimpse of the whole, which helps reduce complexity and enables them to get started. In many ways, the Swagger UI display is a quick-reference guide for your API.
+
+## Play with Swagger
+
+{% include activity.html %}
 
 As with most Swagger-based outputs, Swagger UI provides a "Try it out" button. To make it work, first you would normally authorize Swagger by clicking **Authorize** and completing the right information required in the Authorization modal.
 

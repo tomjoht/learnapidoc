@@ -27,15 +27,17 @@ You don't have your own meteorological service, so you'll need to make some call
 
 ## Get an idea of the end goal
 
-To give you an idea of the end goal, here's a sample. It's not necessarily styled the same as the mockup, but it answers the question, "How windy is it?"
-
-Go to this URL: [/learnapidoc/assets/files/wind-mashape.html](/learnapidoc/assets/files/wind-mashape.html).
+To give you an idea of the end goal, here's a sample: [idrathebewriting.com/learnapidoc/assets/files/wind-mashape.html](/learnapidoc/assets/files/wind-mashape.html). It's not necessarily styled the same as the mockup, but it answers the question, "How windy is it?"
 
 Click the button to see wind details. When you request this data, an API goes out to a weather service, retrieves the information, and displays it to you.
+
+<a href="/learnapidoc/assets/files/wind-mashape.html"><img src="/learnapidoc/images/checkwindconditions.png" class="medium" /></a>
 
 The above example is extremely simple. You could also build an attractive interface like this:
 
 <a class="noCrossRef" href="https://weather.yahoo.com/united-states/california/santa-clara-2488836/"><img class="medium" src="images/attractiveinterfaceweather.png" alt="Sample weather interface" /></a>
+
+The concept and general technique is more or less the same.
 
 ## Find the Weather API by fyhao on Mashape
 
@@ -48,6 +50,8 @@ The APIs on Mashape tend to be rather simple compared to some other APIs, but th
 <a class="noCrossRef" href="https://market.mashape.com/"><img class="medium" src="images/mashape_explore_apis.png" alt="Explore APIs at Mashape" /></a>
 
 You're a consumer of an API, but which one do you need to pull in weather forecasts?
+
+{% include activity.html %}
 
 Explore the APIs available on Mashape and find the weather forecast API:
 
@@ -64,6 +68,10 @@ Explore the APIs available on Mashape and find the weather forecast API:
 
 Now let's look at another weather API (this one not on Mashape). In contrast to the simple API on Mashape, the [Aeris Weather API](http://www.aerisweather.com/) is much more robust and extensive. You can see that the Aeris Weather API is a professional grade, information-rich API that could empower an entire meteorology service.
 
+{% include activity.html %}
+
+Explore the Aeris Weather API by doing the following:
+
 1. Go to [www.aerisweather.com](http://www.aerisweather.com).
 2. Click **Developer** on the top navigation.  
 3. Under **Aeris Weather API**, click **Documentation**.
@@ -79,6 +87,8 @@ Here's the Aeris weather forecast API in action making the same call as I showed
 As you can see, both APIs contain this same information about wind, but the units differ.
 
 ## Answer some questions about the APIs
+
+{% include activity.html %}
 
 Spend a little time exploring the features and information that these weather APIs provide. Try to answer these basic questions:
 

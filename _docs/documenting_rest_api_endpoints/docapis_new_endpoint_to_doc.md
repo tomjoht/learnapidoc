@@ -120,14 +120,13 @@ https://simple-weather.p.mashape.com/surfreport/123?&days=2&units=metrics&hour=1
 
 In the next topics, you'll work on sorting this information out into eight common sections in REST API documentation:
 
-* Resource description
-* Endpoint
-* Methods
-* Parameters
-* Request submission example
-* Request response example
-* Status and error codes
-* Code samples
+* [Resource description](docapis_resource_descriptions.html)
+* [Endpoint definitions and methods](docapis_doc_endpoint_definitions.html)
+* [Parameters](docapis_doc_parameters.html)
+* [Request example](docapis_doc_sample_requests.html)
+* [Response example](docapis_doc_sample_responses.html)
+* [Status and error codes](docapis_doc_status_codes.html)
+* [Code samples](docapis_doc_code_samples.html)
 
 ## Create the basic structure for the endpoint documentation
 

@@ -84,10 +84,13 @@ folders:
   - title: Documenting sample responses
     jurl: /docapis_doc_sample_responses.html
 
+  - title: Documenting status and error codes
+    jurl: /docapis_doc_status_codes.html
+
   - title: Documenting code samples
     jurl: /docapis_doc_code_samples.html
 
-  - title: Put it all together
+  - title: Putting it all together
     jurl: /docapis_finished_doc_result.html
 
 - title: Testing your API documentation
@@ -118,9 +121,6 @@ folders:
 
   - title: Documenting authentication and authorization requirements
     jurl: /docapis_more_about_authorization.html
-
-  - title: Documenting response and error codes
-    jurl: /docapis_doc_response_codes.html
 
   - title: Documenting code samples and tutorials
     jurl: /docapis_codesamples_bestpractices.html
@@ -237,11 +237,17 @@ folders:
       - title: "Step 8: externaldocs object"
         jurl: /pubapis_openapi_step8_externaldocs_object.html
 
+      - title: "OpenAPI specification activity: Create your own specification document"
+        permalink: /pubapis_openapi_activity.html
+
     - title: Swagger UI
       subfolderitems:
 
       - title: Swagger UI tutorial
         jurl: /pubapis_swagger.html
+
+      - title: "Swagger UI activity: Create your own Swagger UI docs"
+        jurl: /pubapis_swagger_ui_activity.html
 
       - title: Swagger UI Demo 1 (standalone)
         jurl: /assets/files/swagger/
@@ -254,7 +260,6 @@ folders:
 
       - title: SwaggerHub introduction and tutorial
         jurl: /pubapis_swaggerhub_smartbear.html
-
 
   - title: More about YAML
     jurl: /pubapis_yaml.html

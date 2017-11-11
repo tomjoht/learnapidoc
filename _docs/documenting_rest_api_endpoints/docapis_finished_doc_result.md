@@ -1,5 +1,5 @@
 ---
-title: Put it all together
+title: Putting it all together
 permalink: /docapis_finished_doc_result.html
 categories:
 - api-doc
