@@ -1,5 +1,5 @@
 ---
-title: "Book Chapters"
+title: "Sections"
 permalink: /tocstart.html
 course: "Documenting REST APIs"
 sidebar: docapis

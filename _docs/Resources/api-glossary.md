@@ -28,7 +28,7 @@ Apiary
 
 API Blueprint
 : An
-The API Blueprint spec is an alternative to OpenAPI or RAML. API Blueprint is written in a Markdown-flavored syntax. See [API Blueprint](/learnapidoc/pubapis_api_blueprint.html) in this book, or go to [API Blueprint's homepage](https://apiblueprint.org/) to learn more.
+The API Blueprint spec is an alternative to OpenAPI or RAML. API Blueprint is written in a Markdown-flavored syntax. See [API Blueprint](/learnapidoc/pubapis_api_blueprint.html) in this course, or go to [API Blueprint's homepage](https://apiblueprint.org/) to learn more.
 
 Apigee
 : Similar to Apiary, Apigee provides services for you to manage the whole lifecycle of your API. Specifically, Apigee lets you "manage API complexity and risk in a multi- and hybrid-cloud world by ensuring security, visibility, and performance across the entire API landscape." Supports the OpenAPI spec. See [apigee.com](https://apigee.com/api-management/).

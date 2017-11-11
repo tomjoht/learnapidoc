@@ -31,7 +31,7 @@ If writers are going to be creating and publishing the documentation, using a to
 
 ### + Handles the toughest tech comm scenarios.
 
-When you have to deal with versioning, translation, content re-use, conditional filtering, authoring workflows, and PDF output, you're going to struggle to make this work with the other tools mentioned in this book.
+When you have to deal with versioning, translation, content re-use, conditional filtering, authoring workflows, and PDF output, you're going to struggle to make this work with the other tools mentioned in this course.
 
 ### + Integrates reference information with guides and tutorials.
 

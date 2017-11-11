@@ -111,7 +111,7 @@ However, CloudCannon wouldn't be a good solution if your docs require authentica
 
 Let's say you want to use a theme that provides ready-made templates for REST API documentation. In this activity, you'll publish the weatherdata endpoints in a Jekyll theme called Aviator. Additionally, rather than syncing the files from a Github repository, you'll just work with the files directly in CloudCannon.
 
-The [Aviator API documentation theme](https://github.com/CloudCannon/Aviator-Jekyll-Theme) by Cloud Cannon is designed for REST APIs. You'll use this theme to input a new endpoint. If you're continuing on from the previous chapters (Documenting REST APIs), you already have a new endpoint called surfreport.
+The [Aviator API documentation theme](https://github.com/CloudCannon/Aviator-Jekyll-Theme) by Cloud Cannon is designed for REST APIs. You'll use this theme to input a new endpoint. If you're continuing on from the previous sections (Documenting REST APIs), you already have a new endpoint called surfreport.
 
 <a href="https://github.com/CloudCannon/Aviator-Jekyll-Theme"><img src="images/aviatortheme.png" alt="Cloud Cannon Aviator theme" /></a>
 

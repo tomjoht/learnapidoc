@@ -19,7 +19,7 @@ The following design patterns are common with API doc sites: structure and templ
 
 ## Pattern 1: Structure and templates {#structure_and_templates}
 
-One overriding commonality with API documentation is that they share a common structure, particularly with the reference documentation around the endpoints. In an upcoming chapter, I dive into the common sections in [endpoint documentation](docendpoints.html). The non-reference topics also share similar topics, which I [touch on later](#docnonref) as well.
+One overriding commonality with API documentation is that they share a common structure, particularly with the reference documentation around the endpoints. In an earlier section, we explored the common sections in [endpoint documentation](docendpoints.html). The non-reference topics also share similar topics, which I [touched upon](docnonref.html) as well.
 
 From a tool perspective, if you have common sections to cover with each endpoint, it makes sense to formalize a template to accommodate the publishing of that content. The template can provide consistency, automate publishing and style, and allow you to more easily change the design without manually reformatting each section. You could just remember to add the exact same sections on each page, but this requires more manual consistency.
 
@@ -52,7 +52,7 @@ Note that this kind of structure is really only necessary if you have a lot of d
 
 I provided details with Jekyll only as an example. Many of the web platforms and technologies used implement a similar templating approach.
 
-When I worked at Badgeville, a gamification startup, we published using Drupal. We had a design agency construct a highly designed template in Drupal To publish the API reference documentation, engineers wrote a custom script that generated the content from a database into a JSON script that we imported into Drupal. The import process populated various fields in the template.
+When I worked at Badgeville, a gamification startup, we published using Drupal. We had a design agency construct a highly designed template in Drupal. To publish the API reference documentation, engineers wrote a custom script that generated the content from a database into a JSON script that we imported into Drupal. The import process populated various fields in the template.
 
 The resulting output was an eye-popping, visually appealing design. To achieve that kind of style in the UX, it would have certainly required a lot of custom div tags to apply classes and other scripts on the page. By separating the content from the template format, we could work with the raw content but also insert it dynamically into the stylized template.
 
@@ -104,7 +104,7 @@ For example, here's a [JavaScript style guide](http://google.github.io/styleguid
 
 If developers don't have an official style guide, ask them to recommend one online, and compare the code samples against the guidelines in it.
 
-I dive [more into code samples](docapis_doc_code_samples.html) later in this book.
+I dive [more into code samples](docapis_doc_code_samples.html) in another topic.
 
 ## Pattern 4: Longish pages {#longish_pages}
 
@@ -161,7 +161,7 @@ Another common pattern with API doc sites is that, given that developers are oft
 
 Git frequently acts as a storage source that other sites can pull from. For example, with many online platforms, such as [CloudCannon](https://cloudcannon.com/) and [Forestry.io](https://forestry.io/), you can set your content source as GitHub. These platforms will then pull in your content from GitHub, treating it as the source. This way you can do content management using GitHub but configure the front-end doc experience using one of these platforms.
 
-Many doc sites just use [GitHub Pages](https://pages.github.com/) directly as their doc site. If your site is a Jekyll site, GitHub Pages will build it automatically when you commit into your repo. Building from the server provides enormous benefits to publishing in a [docs-as-code model](pubapis_docs_as_code.html), and it's a topic I touch on in a [case study here](pubapis_switching_to_docs_as_code.html). GitHub's preference for building with Jekyll is one reason why I focus an [entire topic on Jekyll](pubapis_jekyll.html) later in the book.
+Many doc sites just use [GitHub Pages](https://pages.github.com/) directly as their doc site. If your site is a Jekyll site, GitHub Pages will build it automatically when you commit into your repo. Building from the server provides enormous benefits to publishing in a [docs-as-code model](pubapis_docs_as_code.html), and it's a topic I touch on in a [case study here](pubapis_switching_to_docs_as_code.html). GitHub's preference for building with Jekyll is one reason why I focus an [entire topic on Jekyll](pubapis_jekyll.html) later in the course.
 
 Many developer doc sites even promote their online GitHub source with a button that says "Edit on GitHub." See these sites for examples:
 

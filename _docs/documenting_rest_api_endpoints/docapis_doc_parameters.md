@@ -241,7 +241,7 @@ Now click **Model** (the grayed out text) and look at the view.
 This view describes the various parts of the request, noting the data types and any descriptions in your OpenAPI spec. The model includes expand/collapse toggles with the values. The Petstore spec doesn't actually include many parameter descriptions in the Model, but if any descriptions that are included, they would appear here in the Model rather than the Example Value.
 
 {: .tip}
-In a later chapter, I dive into Swagger. If you want to skip there now, go to [Introduction to Swagger](pubapis_swagger_intro.html).
+In a later section, I dive into Swagger. If you want to skip there now, go to [Introduction to Swagger](pubapis_swagger_intro.html).
 
 ## Conclusion
 
@@ -262,7 +262,7 @@ Here's what my table or definition list looks like:
 {% if site.format == "kindle" %}
 
 {: .note}
-Tables don't display well on Kindle devices, so I've converted them into definition lists in this book. However, here I've also included an image of the table. Tables are more common and easier, but definition lists work better on mobile and tablet devices.
+Tables don't display well on Kindle devices, so I've converted them into definition lists in this course. However, here I've also included an image of the table. Tables are more common and easier, but definition lists work better on mobile and tablet devices.
 
 Table:
 

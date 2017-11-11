@@ -35,7 +35,7 @@ I chose to format mine in Markdown syntax in a text editor. Here's my example.
 <h2 id="parameters">Parameters</h2>
 {% if site.format == "kindle" %}
 
-<p class="note">Tables don't display well on Kindle devices, so I've converted them into definition lists in this book. However, here I've also included an image of the table. Tables are more common and easier, but definition lists work better on mobile and tablet devices.</p>
+<p class="note">Tables don't display well on Kindle devices, so I've converted them into definition lists in this course. However, here I've also included an image of the table. Tables are more common and easier, but definition lists work better on mobile and tablet devices.</p>
 
 <img src="images/kindle-table-finished-result-parameters.png" />
 
@@ -129,7 +129,7 @@ curl --get --include 'https://simple-weather.p.mashape.com/surfreport/123?units=
 {% if site.format == "kindle" %}
 
 {: .note}
-Tables don't display well on Kindle devices, so I've converted them into definition lists in this book. However, here I've also included an image of the table. Tables are more common and easier, but definition lists work better on mobile and tablet devices.
+Tables don't display well on Kindle devices, so I've converted them into definition lists in this course. However, here I've also included an image of the table. Tables are more common and easier, but definition lists work better on mobile and tablet devices.
 
 <img src="images/kindle-table-finished-result-sample-response.png"/>
 

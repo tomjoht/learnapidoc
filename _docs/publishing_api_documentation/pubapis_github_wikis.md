@@ -8,7 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-One of the easiest toolchains to implement with developer docs is a GitHub wiki. Learning GitHub will also allow you to become familiar with the version control workflows that are common with many docs-as-code tools. For this reason, I have a detailed tutorial for using GitHub in this book.
+One of the easiest toolchains to implement with developer docs is a GitHub wiki. Learning GitHub will also allow you to become familiar with the version control workflows that are common with many docs-as-code tools. For this reason, I have a detailed tutorial for using GitHub in this course.
 
 When you create a repository on GitHub, the repository comes with a wiki that you can add pages to. This wiki can be really convenient if your source code is stored on GitHub.
 

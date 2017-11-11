@@ -19,7 +19,7 @@ However, to better understand how developers will access the data, we'll go thro
 
 ## Display part of the REST JSON response on a web page
 
-Mashape [provides some sample code](http://docs.mashape.com/javascript) to parse and display the REST response on a web page using JavaScript. You could use it, but you could also use some auto-generated code from Postman to do pretty much the same thing.
+Mashape [provides some sample code in unirest](https://docs.rapidapi.com/v1.0/docs/unirest) to parse and display the REST response on a web page. You could use it, but you could also use some auto-generated code from Postman to do pretty much the same thing.
 
 1.  Start with a basic HTML template with jQuery referenced, like this:
 
@@ -38,19 +38,40 @@ Mashape [provides some sample code](http://docs.mashape.com/javascript) to parse
    Save your file with a name such as weatherdata.html.
 
 2.  Open Postman and click the request to the `weatherdata` endpoint that you configured earlier.
-3.  Click the **Generate Code Snippet** button.
+3.  Click the **Code** button.
 
     <img src="images/postmangeneratecodesnippet.png" alt="Generate code snippet" />
 
 4.  Select **JavaScript > jQuery AJAX**.
+
+    <img src="images/postmancodesnippet.png" alt="JavaScript Ajax code snippet" />
+
 5.  Copy the code sample.
+
+    ```js
+    var settings = {
+      "async": true,
+      "crossDomain": true,
+      "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.3710062&lng=-122.0375935",
+      "method": "GET",
+      "headers": {
+        "accept": "application/json",
+        "x-mashape-key": "EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p",
+        "cache-control": "no-cache",
+        "postman-token": "e41085c0-de85-0002-53ea-b64558309c68"
+      }
+     }
+
+    $.ajax(settings).done(function (response) {
+      console.log(response);
+    });
+    ```
+
 6.  Insert the Postman code sample between `<script>` tags in the same template you started building in step 1.
 
     You can put the script in the `head` section if you want &mdash; just make sure you add it after the jQuery reference.
 
-7.  The Postman code sample needs one more parameter: `dataType`. Add `"dataType": "json"` as parameter in `settings`.
-
-    {{warning}} Make sure you capitalize the <code>T</code> in <code>dataType</code>.
+7.  The Postman code sample needs one more parameter: `datatype`. Add `"datatype": "json"` as parameter in `settings`.
 
     Your final code should look like this:
 
@@ -64,14 +85,17 @@ Mashape [provides some sample code](http://docs.mashape.com/javascript) to parse
     var settings = {
       "async": true,
       "crossDomain": true,
-      "dataType": "json",
-      "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&lng=-121.955236",
+      "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.3710062&lng=-122.0375935",
       "method": "GET",
+      "dataType": "json",
       "headers": {
         "accept": "application/json",
-        "x-mashape-key": "APIKEY"
-      }
-    }
+        "x-mashape-key": "EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p",
+        "cache-control": "no-cache",
+        "postman-token": "e41085c0-de85-0002-53ea-b64558309c68"
+       }
+     }
+
     $.ajax(settings).done(function (response) {
       console.log(response);
     });
@@ -81,6 +105,9 @@ Mashape [provides some sample code](http://docs.mashape.com/javascript) to parse
     </html>
     ```
 
+    {: .tip}
+    You can view the file here: [/learnapidoc/assets/files/weatherdata-plain.html](/learnapidoc/assets/files/weatherdata-plain.html)
+
 8.  Start Chrome and open the JavaScript Console by going to **View > Developer > JavaScript Console**.
 9.  Open the weatherdata.html file in Chrome (**File > Open File**).
 
@@ -89,7 +116,7 @@ Mashape [provides some sample code](http://docs.mashape.com/javascript) to parse
     <img src="images/jsonpayloadweatherdata.png" alt="JSON payload from weatherdata API logged to console" />
 
     Note that Chrome tells you whether each expandable section is an object or an array. Knowing this is critical to accessing the value through JavaScript dot notation.
-    
+
     The following sections will explain this AJAX code a bit more.
 
 {% include random_ad.html %}
@@ -100,7 +127,7 @@ Probably the most useful method to know for showing code samples is the `ajax` m
 
 In brief, this `ajax` method takes one argument: `settings`.
 
-```
+```js
 $.ajax(settings)
 ```
 
@@ -117,7 +144,6 @@ The response object from the `ajax` call is assigned to the `done` method's argu
 You can then access the values from the response object using object notation. In this example, the response is just logged to the console.
 
 This is likely a bit fuzzy right now, but it will become more clear with an example in the next section.
-
 
 ## Logging responses to the console
 

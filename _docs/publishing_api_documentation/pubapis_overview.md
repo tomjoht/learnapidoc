@@ -8,7 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-In earlier parts of this book, I used a simple [Weather API from Mashape](https://market.mashape.com/fyhao/weather-13) to demonstrate how to use a REST API. Now I'll explore various tools to publish documentation about this same Mashape Weather API.
+In earlier parts of this course, I used a simple [Weather API from Mashape](https://market.mashape.com/fyhao/weather-13) to demonstrate how to use a REST API. Now I'll explore various tools to publish documentation about this same Mashape Weather API.
 
 {% if site.format == "web" %}
 * TOC

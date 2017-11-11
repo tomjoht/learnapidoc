@@ -116,7 +116,7 @@ http://apiserver.com/homes/1234
 
 This might be an endpoint that retrieves a home resource with an ID of `1234`. What is transferred back from the server to the client is the "representation" of the resource. The resource may have many different representations (showing all homes, homes that match certain criteria, homes in a specific format, and so on), but here we want to see home 1234.
 
-We'll explore endpoints in much more depth in the chapters to come. But I wanted to provide a brief overview here.
+We'll explore endpoints in much more depth in the sections to come. But I wanted to provide a brief overview here.
 
 ### The web itself follows REST
 

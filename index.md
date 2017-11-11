@@ -61,7 +61,7 @@ Organizationally, this course is divided into the following sections:
 *  **API documentation survey results**
 *  **Resources**
 
-You don't have to read the chapters in order &mdash; skip around as you prefer. But some of the earlier sections on using a REST API like a developer and documenting endpoints follow a somewhat sequential order with the same weather API scenario.
+You don't have to read the sections in order &mdash; skip around as you prefer. But some of the earlier sections on using a REST API like a developer and documenting endpoints follow a somewhat sequential order with the same weather API scenario.
 
 Because the purpose of the course is to help you learn, there are many activities that require hands-on coding and other exercises. Along with the learning activities, there are also conceptual deep dives, but the focus is always on *learning by doing*.
 
@@ -77,7 +77,7 @@ JavaScript is one of the most useful and easy languages to become familiar with,
 
 ## What you'll need
 
-Here are a few things you'll need to do the exercises in this book:
+Here are a few things you'll need to do the exercises in this course:
 
 * **Text editor**. ([Sublime Text](http://www.sublimetext.com/) is a good option (it works on both Mac and Windows), but any text editor will do. On Windows, [Notepad++](https://notepad-plus-plus.org/) and [Komodo Edit](http://komodoide.com/komodo-edit/) are also good.)
 * **[Chrome browser](http://www.google.com/chrome/)**. (Other browsers are fine too, but we'll be using Chrome's Developer Console.)
@@ -95,4 +95,4 @@ If you'd prefer a short version of the course in video form, see this workshop I
 
 ## Stay updated
 
-If you're reading this book, you most likely want to learn more about APIs. I publish regular articles that talk about APIs and strategies for documenting them. You can stay updated about these posts by subscribing to my free newsletter at [https://tinyletter.com/tomjoht](https://tinyletter.com/tomjoht).
+If you're following this course, you most likely want to learn more about APIs. I publish regular articles that talk about APIs and strategies for documenting them. You can stay updated about these posts by subscribing to my free newsletter at [https://tinyletter.com/tomjoht](https://tinyletter.com/tomjoht).

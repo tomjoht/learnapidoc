@@ -12,7 +12,7 @@ I initially compiled this material to teach a series of workshops to a local tec
 
 These workshops were fast-paced and introduced the writers to a host of new tools, technologies, and workflows. Even for writers who had been working in the field 20 years, API documentation presented new challenges and concepts. The tech landscape is so vast, even for writers who had detailed knowledge of one technology, their tech background didn't always carry over into API doc.
 
-After the workshops, I put the material on my site, idratherbewriting.com, and opened it up to the world of technical writers. I did this for several reasons. First, I felt the tech writing community needed this information. There are very few books that dive into API documentation strategies for technical writers.
+After the workshops, I put the material on my site, idratherbewriting.com, and opened it up to the world of technical writers. I did this for several reasons. First, I felt the tech writing community needed this information. There are very few books or courses that dive into API documentation strategies for technical writers.
 
 Second, I knew that through feedback, I could refine the information and make it stronger. Almost no content is finished on its first release. Instead, content needs to iterate over a period of time through user testing and feedback.
 

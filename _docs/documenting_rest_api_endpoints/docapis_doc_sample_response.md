@@ -221,7 +221,7 @@ The following is a sample response from the <code>surfreport/{beachId}</code> en
 {% if site.format == "kindle" %}
 
 {: .note}
-Tables don't display well on Kindle devices, so I've converted them into definition lists in this book. However, here I've also included an image of the table. Tables are more common and easier, but definition lists work better on mobile and tablet devices.
+Tables don't display well on Kindle devices, so I've converted them into definition lists in this course. However, here I've also included an image of the table. Tables are more common and easier, but definition lists work better on mobile and tablet devices.
 
 <img src="images/kindle-table-surfreport.png" />
 
