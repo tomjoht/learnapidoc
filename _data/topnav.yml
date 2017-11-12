@@ -9,10 +9,10 @@ navbar_singleitems:
   - title: Github
     url: https://github.com/tomjoht/learnapidoc
   - title: Contact
-    url: contact.html
+    url: http://idratherbewriting.com/contact/
+  - title: Presentations
+    url: http://idratherbewriting.com/presentations/
 
-#
-#
 # topnav_dropdowns:
 # - title: Topnav dropdowns
 #   folders:
