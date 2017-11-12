@@ -1,0 +1,131 @@
+openapi: "3.0.0"
+
+info:
+  version: "1.0"
+  title: Sunset and sunrise times API
+  description: "We offer a free API that provides sunset and sunrise times for a given latitude and longitude."
+  contact:
+    name: API team
+    url: https://sunrise-sunset.org/contact
+
+servers:
+  - url: https://api.sunrise-sunset.org
+    description: Production server
+
+paths:
+  /json:
+    get:
+      summary: "Get sunrise/sunset times"
+      description: "Get the sunset and sunrise information for a given location based on latitude and longitude parameters."
+      operationId: getSunriseSunset
+      parameters:
+        - name: lat
+          in: query
+          description: "Latitude in decimal degrees."
+          required: true
+          schema:
+            type: number
+            format: float
+          example: "37.3708698"
+
+        - name: lng
+          in: query
+          description: "Longitude in decimal degrees."
+          required: true
+          schema:
+            type: number
+            format: float
+          example: "-122.037593"
+
+        - name: date
+          in: query
+          description: "Date in YYYY-MM-DD format. Also accepts other date formats and even relative date formats. If not present, date defaults to current date."
+          required: false
+          schema:
+            type: string
+          example: "today"
+
+        - name: callback
+          in: query
+          description: "Callback function name for JSONP response. Optional."
+          required: false
+          schema:
+            type: string
+
+        - name: formatted
+          in: query
+          required: false
+          description: "0 or 1 (1 is default). Time values in response will be expressed following ISO 8601 and day_length will be expressed in seconds."
+          schema:
+            type: integer
+            format: int32
+          example: 1
+      responses:
+        200:
+          description: Sunrise and sunset times response
+          content:
+            application/json:
+              schema:
+                description: AQI response
+                $ref: '#/components/schemas/SunriseSunsetResponse'
+components:
+  schemas:
+    SunriseSunsetResponse:
+      title: Response
+      type: object
+      properties:
+        results:
+          type: object
+          properties:
+            sunrise:
+              type: string
+              description: time of sunrise
+              example: '7:27:02 AM'
+            sunset:
+              type: string
+              description: time of sunset
+              example: '5:05:55 PM'
+            solar_noon:
+              type: string
+              description: time when sun is at apex
+              example: '12:16:28 PM'
+            day_length:
+              type: string
+              description: length of the day
+              example: '9:38:53'
+            civil_twilight_begin:
+              type: string
+              description: time when civil twilight begins
+              example: '6:58:14 AM'
+            civil_twilight_end:
+              type: string
+              description: time when civil twilight ends
+              example: '5:34:43 PM'
+            nautical_twilight_begin:
+              type: string
+              description: time when nautical twilight begins
+              example: '6:25:47 AM'
+            nautical_twilight_end:
+              type: string
+              description: time when nautical twilight ends
+              example: '6:07:10 PM'
+            astronomical_twilight_begin:
+              type: string
+              description: time when astronomical twilight begins
+              example: '5:54:14 AM'
+            astronomical_twilight_end:
+              type: string
+              description: time when astronomical twilight ends
+              example: '6:38:43 PM'
+        status:
+          type: string
+          description: "Four possible statuses:\n
+            \n* `OK`: No errors occurred.
+            \n* `INVALID_REQUEST`: Either lat or lng parameters are missing or invalid.
+            \n* `INVALID_DATE`: The date parameter is missing or invalid;
+            \n* `UNKNOWN_ERROR`: The request could not be processed due to a server error. The request may succeed if you try again."
+          example: "OK"
+
+externalDocs:
+  description: Documentation and main site
+  url: https://sunrise-sunset.org/api

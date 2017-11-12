@@ -157,7 +157,7 @@ Most of the properties for the operation object either require simple strings or
 
 ## Parameters object
 
-The [`parameters` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#parameter-object) can have these properties:
+The [`parameters` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#parameter-object) contains an array (list designated with dashes) with these properties:
 
 **parameters**:
 
@@ -192,26 +192,27 @@ paths:
         description: More details
         url: "https://market.mashape.com/fyhao/weather-13#aqi"
       parameters:
-        latParam:
-          name: lat
-          in: query
-          description: "Latitude coordinates."
-          required: true
-          style: form
-          explode: false
-          schema:
-            type: string
-          example: "37.3708698"
-        lngParam:
-          name: lng
-          in: query
-          description: "Longitude coordinates."
-          required: true
-          style: form
-          explode: false
-          schema:
-            type: string
-          example: "-122.037593"
+
+      - name: lat
+        in: query
+        description: "Latitude coordinates."
+        required: true
+        style: form
+        explode: false
+        schema:
+          type: string
+        example: "37.3708698"
+
+      - name: lng
+        in: query
+        description: "Longitude coordinates."
+        required: true
+        style: form
+        explode: false
+        schema:
+          type: string
+        example: "-122.037593"
+
       responses:
         200:
           description: AQI response
@@ -234,26 +235,27 @@ paths:
         description: More details
         url: "https://market.mashape.com/fyhao/weather-13#weather"
       parameters:
-        latParam:
-          name: lat
-          in: query
-          description: "Latitude coordinates."
-          required: true
-          style: form
-          explode: false
-          schema:
-            type: string
-          example: "37.3708698"
-        lngParam:
-          name: lng
-          in: query
-          description: "Longitude coordinates."
-          required: true
-          style: form
-          explode: false
-          schema:
-            type: string
-          example: "-122.037593"
+
+      - name: lat
+        in: query
+        description: "Latitude coordinates."
+        required: true
+        style: form
+        explode: false
+        schema:
+          type: string
+        example: "37.3708698"
+
+      - name: lng
+        in: query
+        description: "Longitude coordinates."
+        required: true
+        style: form
+        explode: false
+        schema:
+          type: string
+        example: "-122.037593"
+
       responses:
         200:
           description: weather response
@@ -267,7 +269,7 @@ paths:
   /weatherdata:
     get:
       tags:
-        - Weather Forecast
+      - Weather Forecast
       summary: getWeatherData
       description: Get weather forecast with lots of details
       operationId: GetWeatherData
@@ -275,26 +277,27 @@ paths:
         description: More details
         url: "https://market.mashape.com/fyhao/weather-13#weatherdata"
       parameters:
-        latParam:
-          name: lat
-          in: query
-          description: "Latitude coordinates."
-          required: true
-          style: form
-          explode: false
-          schema:
-            type: string
-          example: "37.3708698"
-        lngParam:
-          name: lng
-          in: query
-          description: "Longitude coordinates."
-          required: true
-          style: form
-          explode: false
-          schema:
-            type: string
-          example: "-122.037593"
+
+      - name: lat
+        in: query
+        description: "Latitude coordinates."
+        required: true
+        style: form
+        explode: false
+        schema:
+          type: string
+        example: "37.3708698"
+
+      - name: lng
+        in: query
+        description: "Longitude coordinates."
+        required: true
+        style: form
+        explode: false
+        schema:
+          type: string
+        example: "-122.037593"
+
       responses:
         200:
           description: Successful operation

@@ -112,6 +112,7 @@ Here are 100 API doc sites. Peruse them to get a sense of the variety, but also 
 99.  [Trip Advisor docs](https://developer-tripadvisor.com/content-api/documentation/)
 100. [Pinterest docs](https://developers.pinterest.com/docs/getting-started/introduction/?)
 101. [Uber docs](https://developer.uber.com/docs/)
+102. [Spotify API](https://developer.spotify.com/web-api/)
 
 {% include tip.html content="I last checked these links in October 2017. Given how fast the technology landscape changes, some links may be out of date. However, if you simply type <i>{product} + api docs</i> into Google's search, you will likely find the company's developer doc site. Most commonly the API docs are at developer.{company}.com." %}
 
