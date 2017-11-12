@@ -6,12 +6,10 @@ navbar_singleitems:
 - items:
   - title: Blog
     url: http://idratherbewriting.com
-  - title: Github
-    url: https://github.com/tomjoht/learnapidoc
   - title: Contact
-    url: http://idratherbewriting.com/contact/
+    url: /learnapidoc/contact.html
   - title: Presentations
-    url: http://idratherbewriting.com/presentations/
+    url: /learnapidoc/presentations.html
 
 # topnav_dropdowns:
 # - title: Topnav dropdowns
