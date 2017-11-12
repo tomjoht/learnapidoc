@@ -5,9 +5,6 @@ course: "Documenting REST APIs"
 sidebar: docapis
 ---
 
-{: .note}
-If you're interested in having me present on API documentation, [contact me](contact.html).
-
 <h2>Upcoming presentations</h2>
 
 <ol>
@@ -16,7 +13,7 @@ If you're interested in having me present on API documentation, [contact me](con
   <li>API documentation workshop (full-day). Boulder, Colorado. March 10, 2018. {% comment %}Dave Wilks, slack {% endcomment %}</li>
 </ol>
 
-<h2>Previous API doc presentations</h2>
+<h2>Previous API doc presentations and workshops</h2>
 
 The following are previous API presentations or workshops I've given. Some have recordings. For a full list of past presentations (including both API and other topics), see the [presentations page on my blog](http://idratherbewriting.com/presentations/).
 <ul>
