@@ -12,15 +12,17 @@ path1: /restapispecifications.html
 
 The [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html) walked you through 8 steps in building the OpenAPI specification document. Now it's your turn to practice building out an OpenAPI specification document on your own.
 
-{: .tip}
-Depending on the API you choose to work with, you could potentially use this specification document as part of your portfolio.
-
 * TOC
 {:toc}
 
 ## Identify an API
 
 First, find an API that's relatively simple. If you're already documenting an API for your work, by all means use that API. But if you're just taking this course to learn general API documentation, try creating an OpenAPI specification document for this simple [Sunrise and sunset times API](https://sunrise-sunset.org/api). This API doesn't require authentication with requests, so it removes some of the more complicated authentication workflows.
+
+{: .tip}
+Depending on the API you choose to work with, you could potentially use this specification document as part of your portfolio.
+
+## Follow the OpenAPI tutorial
 
 Go each step of the OpenAPI specification tutorial to build out the specification document:
 
@@ -33,13 +35,15 @@ Go each step of the OpenAPI specification tutorial to build out the specificatio
 * [Step 7: tags object](pubapis_openapi_step7_tags_object.html)
 * [Step 8: externalDocs object](pubapis_openapi_step8_external_docs_object.html)
 
-Validate your specification document in the [Swagger Editor](https://swagger.io/swagger-editor/). Then execute a request to make sure it's working correctly.
+## Make sure your spec validates
 
-## Check the answer
+Validate your specification document in the [Swagger Editor](https://swagger.io/swagger-editor/). Execute a request to make sure it's working correctly.
+
+## Check your spec against mine
 
 If you get stuck or want to compare your spec with mine, see [openapi_sunrise_sunset.yml](/learnapidoc/assets/files/swagger-sunrise-sunset/openapi_sunrise_sunset.yml).
 
+Note that the Sunrise and sunset times API doesn't require authorization, so you can skip [Step 6: security object](pubapis_openapi_step6_security_object.html).
+
 {: .tip}
 You can use this OpenAPI specification document when working through the [Swagger UI activity](pubapis_swagger_ui_activity.html).
-
-Note that the Sunrise and sunset times API doesn't require authorization, so you can skip [Step 6: security object](pubapis_openapi_step6_security_object.html).

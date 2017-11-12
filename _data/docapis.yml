@@ -238,7 +238,7 @@ folders:
         jurl: /pubapis_openapi_step8_externaldocs_object.html
 
       - title: "OpenAPI specification activity: Create your own specification document"
-        permalink: /pubapis_openapi_activity.html
+        jurl: /pubapis_openapi_activity.html
 
     - title: Swagger UI
       subfolderitems:

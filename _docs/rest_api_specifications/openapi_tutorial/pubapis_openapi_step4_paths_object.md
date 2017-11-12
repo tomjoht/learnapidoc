@@ -391,26 +391,25 @@ Now we're not repeating the parameter information multiple times. Instead, in `c
 ```yaml
 components:
   parameters:
-    latParam:
-      name: lat
-      in: query
-      description: "Latitude coordinates."
-      required: true
-      style: form
-      explode: false
-      schema:
-        type: string
-      example: "37.3708698"
-    lngParam:
-      name: lng
-      in: query
-      description: "Longitude coordinates."
-      required: true
-      style: form
-      explode: false
-      schema:
-        type: string
-      example: "-122.037593"
+  - name: lat
+    in: query
+    description: "Latitude coordinates."
+    required: true
+    style: form
+    explode: false
+    schema:
+      type: string
+    example: "37.3708698"
+
+  - name: lng
+    in: query
+    description: "Longitude coordinates."
+    required: true
+    style: form
+    explode: false
+    schema:
+      type: string
+    example: "-122.037593"
 ```
 
 
@@ -427,4 +426,4 @@ When you click **Try it out**, the `example` value populates the parameters fiel
 Each path is collapsed by default, but you can set whether the initial display is collapsed or open using the [`docExpansion` parameter in Swagger UI](https://github.com/swagger-api/swagger-ui#parameters).
 
 {: .tip}
-This `docExpanion` parameter is for Swagger UI and isn't part of the OpenAPI spec. Swagger UI has more than [20 different parameters](https://github.com/swagger-api/swagger-ui#parameters) that control its display. Currently, there isn't a parameter to hide the Models section or to disable the Try It Out section, but you can hide these functions through `display: none` with CSS, targeting the elements you want to hide. Additional Swagger UI parameters may be added in the future.
+This `docExpansion` parameter is for Swagger UI and isn't part of the OpenAPI spec. Swagger UI has more than [20 different parameters](https://github.com/swagger-api/swagger-ui#parameters) that control its display. Currently, there isn't a parameter to hide the Models section or to disable the Try It Out section, but you can hide these functions through `display: none` with CSS, targeting the elements you want to hide. Additional Swagger UI parameters may be added in the future.
