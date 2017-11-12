@@ -59,4 +59,4 @@ Docs-as-code tools give you incredible flexibility to adapt or adjust to your pa
 The tools are as flexible and robust as your coding skills allow. At a base level, almost all use HTML, CSS, and JavaScript, so if you are a master at these, there's nothing you can't do. Further, many static site generators allow you to use scripting logic such as Liquid that simplifies JavaScript and makes it easier to perform complex operations (like iterating through files and inserting certain fields into templates).
 
 {: .tip}
-To read details about switching to docs as code tools, see [Case study: Switching tools to docs-as-code](pubapis_tools_switching_to_docs_as_code.html).
+To read details about switching to docs as code tools, see [Case study: Switching tools to docs-as-code](pubapis_switching_to_docs_as_code.html).

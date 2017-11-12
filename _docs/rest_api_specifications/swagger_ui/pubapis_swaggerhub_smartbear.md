@@ -103,7 +103,7 @@ Providing this code not only speeds implementation for developers, it also helps
 
 One of the options for export is an HTML option. You can export your OpenAPI spec as a static HTML file in one of two styles: HTML or HTML2.
 
-You can see a demo export of the Weather API here: <a href="http://idratherassets.com/restapicourse/swaggerhub_htmloutput/index.html">HTML</a> or <a href="http://idratherassets.com/restapicourse/swaggerhub_html2output/index.html">HTML2</a>. Both exports generate all the content into an index.html file.
+You can see a demo export of the Weather API here: <a href="/learnapidoc/assets/files/swaggerhub_htmloutput/index.html">HTML</a> or <a href="/learnapidoc/assets/files/swaggerhub_html2output/index.html">HTML2</a>. Both exports generate all the content into an index.html file.
 
 The HTML export is a more basic output than HTML2. You could potentially incorporate the HTML output into your other documentation, such as what [Cherryleaf did in importing Swagger into Flare](https://www.cherryleaf.com/blog/2017/07/example-project-api-documentation-portal-using-madcap-flare/). (You might have to strip away some of the code and provide styles for the various documentation elements, and there wouldn't be any interactivity for users to try it out, but it could be done.) In another part of the course, I expand on ways to [integrate Swagger UI's output with the rest of your docs](pubapis_combine_swagger_and_guide.html).
 

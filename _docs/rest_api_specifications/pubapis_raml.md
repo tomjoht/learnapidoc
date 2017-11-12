@@ -334,7 +334,7 @@ To generate this kind of output:
 	  <img src="images/raml2htmloutput.png" alt="RAML2HTML" />
 
 	  {: .tip}
-    To see this example in your browser, go to <a href="h/learnapidoc/assets/files/restapicourse/raml/examples/index.html">idratherbewriting.com.com/files/restapicourseraml/examples/index.html</a>.
+    To see this example in your browser, go to <a href="/learnapidoc/assets/files/raml/examples/index.html">/learnapidoc/assets/files/examples/index.html</a>.
 
 ## Other platforms that consume RAML and Swagger
 

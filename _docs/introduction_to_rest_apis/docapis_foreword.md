@@ -33,5 +33,5 @@ One of my goals for the content is to keep this course a living, evolving docume
 {% if site.type == "kindle" %}
 I welcome feedback. Feel free to drop me a note at tom@idratherbewriting.com. And follow my blog at [http://idratherbewriting.com](http://idratherbewriting.com).
 {% else %}
-I welcome feedback. Feel free to drop me a note at <a href="mailto=tom@idratherbewriting.com">tom@idratherbewriting.com</a>. And follow my blog at [http://idratherbewriting.com](http://idratherbewriting.com).
+I welcome feedback. Feel free to drop me a note at <a href="mailto:tom@idratherbewriting.com">tom@idratherbewriting.com</a>. And follow my blog at [http://idratherbewriting.com](http://idratherbewriting.com).
 {% endif %}
