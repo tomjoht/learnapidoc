@@ -135,11 +135,11 @@ If you're on a Mac (with Rubygems and Jekyll installed), building Jekyll sites i
 	The frontmatter is formatted in a syntax called YML. YML is similar to JSON but uses spaces and hyphens instead of curly braces. This makes it more human readable.
 
 2. Create a new file called 1-6_weatherdata.md and save it in the same \_api folder.
-3. Get the data from the weatherdata endpoint from this [Weather API on Mashape](https://www.mashape.com/fyhao/weather-13#weatherdata). Put the data from this endpoint into the Aviator theme's template.
+3. Get the data from the weatherdata endpoint from this [Weather API on Mashape](https://market.mashape.com/fyhao/weather-13). Put the data from this endpoint into the Aviator theme's template.
 
 The Aviator Jekyll theme has a specific layout that will be applied to all the files inside the _api folder (these files are called a collection). Jekyll will access these values by going to api.title, api.type, and so forth. It will then push this content into the template (which you can see by going to _layouts/multi.md).
 
-Here's what my 1-6_weatherdata.md file looks like. Be sure to put the response within square brackets, indented with one tab (4 spaces). You can also <a href="h/learnapidoc/assets/files/publishingapidocs/1-6_weatherdata.md">download the file here</a>. Remove the `raw` and `endraw` tags at the beginning and end of the code sample (which I had to add to keep Jekyll from trying to process it).
+Here's what my 1-6_weatherdata.md file looks like. Be sure to put the response within square brackets, indented with one tab (4 spaces). Remove the `raw` and `endraw` tags at the beginning and end of the code sample (which I had to add to keep Jekyll from trying to process it).
 
 ```
 ---

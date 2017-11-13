@@ -33,7 +33,7 @@ Go each step of the OpenAPI specification tutorial to build out the specificatio
 * [Step 5: components object](pubapis_openapi_step5_components_object.html)
 * [Step 6: security object](pubapis_openapi_step6_security_object.html)
 * [Step 7: tags object](pubapis_openapi_step7_tags_object.html)
-* [Step 8: externalDocs object](pubapis_openapi_step8_external_docs_object.html)
+* [Step 8: externalDocs object](pubapis_openapi_step8_externaldocs_object.html)
 
 ## Make sure your spec validates
 

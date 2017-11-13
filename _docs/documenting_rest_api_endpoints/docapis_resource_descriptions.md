@@ -135,7 +135,7 @@ Review the [surf report wiki page](docapis_new_endpoint_to_doc.html) containing 
 
 Here are some examples of resource descriptions:
 
-**[Delicious API](https://github.com/SciDevs/delicious-api/blob/master/api/posts.md#v1postsupdate)**
+**[Delicious API](https://github.com/domainersuitedev/delicious-api/blob/master/api/posts.md#v1postsupdate)**
 
 <div class="docSample">
 <p><b>/v1/posts/update</b></p>

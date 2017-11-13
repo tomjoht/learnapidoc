@@ -58,7 +58,7 @@ Methods can take arguments, so there are parentheses `()` after the method name.
 
 ```java
 add(a, b) {
-sum = a + b;
+  sum = a + b;
 }
 ```
 
@@ -75,17 +75,17 @@ class Bicycle {
 	// code ...
 	}
 	void pedal(int rotations) {
-	System.out.println("Your speed is " + rotations + " per minute".);
+	   System.out.println("Your speed is " + rotations + " per minute".);
 	}
 
 	int brake(int force, int weight) {
-	torque == force * weight;
-	return torque;
+  	torque == force * weight;
+  	return torque;
 	}
 }
 ```
 
-See how the `brake` method accepts two arguments &mdash; `force` and `weight`? These arguments are integers, so Java excepts whole numbers here. (You must put the data type before the parameters in the method.) The arguments passed into this method get used to calculate the `torque`. The `torque` is then returned to the caller.
+See how the `brake` method accepts two arguments &mdash; `force` and `weight`? These arguments are integers, so Java expects whole numbers here. (You must put the data type before the parameters in the method.) The arguments passed into this method get used to calculate the `torque`. The `torque` is then returned to the caller.
 
 In Javadoc outputs, you'll see methods divided into two groups:
 
@@ -95,9 +95,8 @@ In Javadoc outputs, you'll see methods divided into two groups:
 Somewhere in your Java application, users will have something called a `main` method that looks like this:
 
 ```java
-	public static void main(String[] args) {
-
-	}
+public static void main(String[] args) {
+}
 ```
 
 Inside the main method is where you add your code to make your program run. This is where the Java Virtual Machine will look to execute the code.
@@ -112,10 +111,8 @@ Here's an example of some fields in class:
 
 ```java
 class Bicycle {
-
-String brand;
-int size;
-
+  String brand;
+  int size;
 }
 ```
 
@@ -130,7 +127,6 @@ Objects are instances of classes. They are the Treks, Raleighs, Specialized, etc
 If I wanted to use the `Bicycle` class, I would create an instance of the class. The instance of the class is called an object. Here's what it looks like when you "instantiate" the class:
 
 ```java
-
 Bicycle myBicycle = new Bicycle();
 ```
 

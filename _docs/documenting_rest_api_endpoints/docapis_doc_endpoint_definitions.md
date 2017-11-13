@@ -91,7 +91,7 @@ Some resources have multiple endpoints. For example, suppose you had two GET end
 If the endpoints are mostly the same, consolidating them on a single page could make sense. But if they're pretty unique (with different responses, parameters, and error messages), separating them out onto different pages is probably better (and easier to manage).
 
 {: .tip}
-In a later section on [design patterns](pubapis_design_patterns.html), I explore how [long pages](pubapis_design_patterns.html#longish_pages.html) are common pattern with developer docs, in part because they make content easily findable for developers using Ctrl + F.
+In a later section on [design patterns](pubapis_design_patterns.html), I explore how [long pages](pubapis_design_patterns.html#longish_pages) are common pattern with developer docs, in part because they make content easily findable for developers using Ctrl + F.
 
 ## Your turn to try: Write the endpoint definition for surfreport
 

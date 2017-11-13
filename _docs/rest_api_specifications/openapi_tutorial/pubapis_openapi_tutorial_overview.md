@@ -128,7 +128,7 @@ The OpenAPI tutorial has 8 steps. Each step corresponds with one of the root-lev
 * [Step 5: components object](pubapis_openapi_step5_components_object.html)
 * [Step 6: security object](pubapis_openapi_step6_security_object.html)
 * [Step 7: tags object](pubapis_openapi_step7_tags_object.html)
-* [Step 8: externalDocs object](pubapis_openapi_step8_external_docs_object.html)
+* [Step 8: externalDocs object](pubapis_openapi_step8_externaldocs_object.html)
 
 Note that the spec alone does nothing with your content. Other tools are required to read and display the spec document, or to generate client SDKs from it.
 

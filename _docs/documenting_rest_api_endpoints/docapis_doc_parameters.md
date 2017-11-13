@@ -211,7 +211,7 @@ The [Swagger UI](https://github.com/swagger-api/swagger-ui) reads the OpenAPI sp
 
 The Swagger UI lets you toggle between an "Example Value" and a "Model" view for both responses and request body parameters.
 
-The Example Value shows a sample of the syntax along with examples. When you click the Model (yellow box) in the [/Pet (POST) endpoint](http://petstore.swagger.io/#!/pet/addPet), Swagger inserts the content in the `body` parameter box. Here's the Pet POST endpoint's Example Value:
+The Example Value shows a sample of the syntax along with examples. When you click the Model (yellow box) in the [/Pet (POST) endpoint](http://petstore.swagger.io/#/pet/addPet), Swagger inserts the content in the `body` parameter box. Here's the Pet POST endpoint's Example Value:
 
 ```json
 {
@@ -236,7 +236,7 @@ The Example Value shows a sample of the syntax along with examples. When you cli
 
 Now click **Model** (the grayed out text) and look at the view.
 
-<a class="noCrossRef" href="http://petstore.swagger.io/#!/pet/addPet"><img src="images/petstoremodelvalue_3_17.png" alt="Swagger Model" /></a>
+<a class="noCrossRef" href="http://petstore.swagger.io/#/pet/addPet"><img src="images/petstoremodelvalue_3_17.png" alt="Swagger Model" /></a>
 
 This view describes the various parts of the request, noting the data types and any descriptions in your OpenAPI spec. The model includes expand/collapse toggles with the values. The Petstore spec doesn't actually include many parameter descriptions in the Model, but if any descriptions that are included, they would appear here in the Model rather than the Example Value.
 

@@ -42,15 +42,23 @@ If responses vary a lot, consider including multiple responses with the requests
 
 {% include random_ad.html %}
 
-In the CityGrid Places API, notice how the examples don't include the sample responses on the same page but rather link to live examples. When you click the URL link, you execute the request in your browser and can see the response. (Here's [an example](http://api.citygridmedia.com/content/places/v2/search/where?type=movietheater&where=90045&publisher=test)).
+Some sample requests in API don't show responses in the endpoint documentation. Instead, you click the request URL, which executes a GET request that doesn't require any authorization. You then see the response dynamically in the browser. The [Open Weather API](https://openweathermap.org/current) provides an example.
+
+For example, if you click one of the "Examples of API calls," such as [http://samples.openweathermap.org/data/2.5/weather?q=London](http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1), you see the response dynamically returned in the browser.
+
+<a href="http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1"><img class="medium" src="/learnapidoc/images/dynamicresponseinbrowser.png"/></a>
 
 This approach is common and works well (for GET requests) when you can pull it off. Unfortunately, this approach makes it difficult to define the responses. (The CityGrid API documentation is detailed and does include information in later sections that describes the responses.)
 
 ## API explorers provide interactivity with your own data
 
-Many APIs have a feature called an API explorer. For example, you can see Foursquare's API explorer here:
+Many APIs have a feature called an API explorer. For example, here's a typical reference page for Spotify's API docs:
 
- <a href="https://developer.foursquare.com/docs/explore"><img src="images/foursquareapiexplorer.png" alt="Foursquare's API Explorer" /></a>
+<a href="https://developer.spotify.com/web-api/console/get-album/"><img src="/learnapidoc/images/spotifyapiconsole.png"/></a>
+
+Flickr's API docs also have a built-in API Explorer:
+
+<a href="https://www.flickr.com/services/api/explore/flickr.photos.search"><img src="/learnapidoc/images/flickrapiexplorer.png"/></a>
 
 The API Explorer lets you insert your own values, your own API key, and other parameters into a request so you can see the responses directly in the Explorer. Being able to see your own data maybe makes the response more real and immediate.
 
@@ -58,9 +66,9 @@ However, if you don't have the right data in your system, using your own API key
 
 Here's another example from the New York Times API, which uses Lucybot (powered by Swagger) to handle the interactive API explorer features:
 
- <a href="http://developer.nytimes.com/books_api.json"><img src="images/nytimesapirequests.png" alt="NYTimes API Explorer created through Lucybot and Swagger" /></a>
+<a href="http://developer.nytimes.com/books_api.json"><img src="images/nytimesapirequests.png" alt="NYTimes API Explorer created through Lucybot and Swagger" /></a>
 
- This example compels users to try out the endpoints to get a better understanding of the information they return.
+This example compels users to try out the endpoints to get a better understanding of the information they return.
 
 ## API Explorers can be dangerous in the hands of users
 
@@ -71,6 +79,12 @@ It's one thing to allow GET methods, but if you include other methods, users cou
 In Sendgrid's API, they include a warning message to users before testing out calls with their API Explorer:
 
 <a href="https://sendgrid.com/docs/API_Reference/Web_API/blocks.html"><img src="images/sendgridwarningmessage.png" alt="SendGrid API Explorer warning message" /></a>
+
+Foursquare's API docs used to have a built-in API explorer in the previous version of their docs, but they have since removed it. I'm not sure why.
+
+ <a href="https://developer.foursquare.com/docs"><img src="images/foursquareapiexplorer.png" alt="Foursquare's API Explorer" /></a>
+
+ The [IBM Watson API](https://watson-api-explorer.mybluemix.net/) use [Swagger UI](pubapis_swagger.html) but they have suppressed the "Try it out" feature.
 
 As far as integrating other API Explorer tooling, this is a task that should be relatively easy for developers. All the Explorer does is map values from a field to an API call and return the response to the same interface. In other words, the API plumbing is all there &mdash; you just need a little JavaScript and front-end skills to make it happen.
 

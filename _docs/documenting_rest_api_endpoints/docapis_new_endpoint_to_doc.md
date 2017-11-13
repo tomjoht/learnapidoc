@@ -37,7 +37,7 @@ It's now your task to sort through the information on this page and create docum
 Most technical writers don't start from scratch with documentation projects. Engineers usually dump essential information onto an internal wiki page. However, the information on the wiki page will likely be incomplete, unnecessarily technical in places (like describing the database schema when users won't ever need this info), and have other issues. The info might include internal-only information (e.g., test logins, access protocols). Ultimately, the information will be written for other engineers on the same knowledge level. Your job as a technical writer will be to take this information and turn it into complete, accurate, usable information that meets your audience's goal.
 
 <div class="docSample">{% raw %}
-<h2>The wiki page: "Surf Report API"</h2>
+<h2 id="surf_report_api">The wiki page: "Surf Report API"</h2>
 
 <p>The new endpoint is <code>/surfreport/{beachId}</code>. This is for surfers who want to check things like tide and wave conditions to determine whether they should head out to the beach to surf. <code>{beachId}</code> is retrieved from a list of beaches on our site.</p>
 
@@ -75,7 +75,8 @@ https://simple-weather.p.mashape.com/surfreport/123?&days=2&units=metrics&hour=1
 
 <p>Sample format:</p>
 
-<pre>
+<div markdown="block">
+```json
 {
     "surfreport": [
         {
@@ -100,7 +101,8 @@ https://simple-weather.p.mashape.com/surfreport/123?&days=2&units=metrics&hour=1
         }
     ]
 }
-</pre>
+```
+</div>
 
 <p>Negative numbers in the tide represent incoming tide.</p>
 

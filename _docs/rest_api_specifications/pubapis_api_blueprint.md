@@ -220,7 +220,7 @@ You can find [examples of different blueprints here](https://github.com/apiaryio
 
 There are many tools that can parse an API blueprint. [Drafter](https://github.com/apiaryio/drafter) is one of the main parsers of the Blueprint. Many other tools build on Drafter and generate static HTML outputs of the blueprint. For example, [aglio](https://github.com/danielgtaylor/aglio) can parse a blueprint and generate static HTML files.
 
-For a more comprehensive list of tools, see the [Tooling](https://apiblueprint.org/#tooling) section on apiblueprint.org. (Some of these tools require quite a few prerequisites, so I omitted the tutorial steps here for generating the output on your own machine.)
+For a more comprehensive list of tools, see the [Tooling](https://apiblueprint.org/tools.html) section on apiblueprint.org. (Some of these tools require quite a few prerequisites, so I omitted the tutorial steps here for generating the output on your own machine.)
 
 ## Create a sample HTML output using API Blueprint and Apiary
 
@@ -396,7 +396,7 @@ For this tutorial, we'll use a platform called Apiary to read and display the AP
     ```
 
     {: .note}
-    If the code isn't easy to copy and paste, you can [view and download the file here](h/learnapidoc/assets/files/publishingapidocs/apiblueprintweatherdata.md).
+    If the code isn't easy to copy and paste, you can [view and download the file here](/learnapidoc/assets/files/apiblueprintweatherdata.md).
 
 5.  Click **Save and Publish**.
 
