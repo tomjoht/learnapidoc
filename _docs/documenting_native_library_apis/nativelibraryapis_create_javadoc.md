@@ -29,31 +29,38 @@ Here are some other characteristics of Javadoc:
 ## Generate a Javadoc
 
 
-1. Go to **File > Export**.
-2. Expand **Java** and select **Javadoc.** Then click **Next**.
-3. Select your project and package. Then in the right pane, select the classes you want included in the Javadoc. Don't select the class that contains your main method.
+1.  In Eclipse, go to **File > Export**.
+2.  Expand **Java** and select **Javadoc.** Then click **Next**.
+3.  Select your project and package. Then in the right pane, select the classes you want included in the Javadoc. Don't select the class that contains your main method. In this sample project, the main method is included in App.java.
 
-	<img src="images/generatejavadoc.png" alt="Generating a Javadoc" />
+	  <img src="images/generatejavadoc.png" alt="Generating a Javadoc" class="medium" />
 
-4. Select which visibility option you want: Private, Package, Protected, or Public. Generally you select **Public**.
+4.  Select which visibility option you want: Private, Package, Protected, or Public. Generally you select **Public**.
 
-	Your API probably has a lot of helper or utility classes used on the backend, but only a select number of classes will actually be used by your developer audience. These classes are made public. It's the public classes that your developer audience will use that form the API aspect of the class library.
+	  Your API probably has a lot of helper or utility classes used on the backend, but only a select number of classes will actually be used by your developer audience. These classes are made public. It's the public classes that your developer audience will use that form the API aspect of the class library.
 
-5. Make sure the **Use standard doclet** radio button is selected.
-6. Click the **Browse** button and select the output location where you want the Javadoc generated.
-7. Click **Next**.
+5.  Make sure the **Use standard doclet** radio button is selected (it's selected by default).
+6.  Click the **Browse** button and select the output location where you want the Javadoc generated.
 
-	<img src="images/javadocnext1.png" alt="Javadoc next screen" />
+    By default, it will be generated in the same project folder as your code, but in a subfolder called **doc**. This way you can browse the Javadoc directly within your Eclipse IDE.
 
-	Here you can select if you want to omit some tags, such as @author and @deprecated. Generally you don't include the @author tag, since it may only be important internally, not externally. You can also select different options in the Javadoc frame. If you have a custom stylesheet, you can select it here. Most likely you would only make superficial style changes such as with colors.
+7.  Click **Next**.
 
-8. Click **Next**.
+	  <img src="images/javadocnext1.png" alt="Javadoc next screen" />
 
-	<img src="images/generatejavadocnext2.png" alt="Overview page" />
+	  Here you can select if you want to omit some tags, such as @author and @deprecated. Generally you don't include the @author tag, since it may only be important internally, not externally. You can also select different options in the Javadoc frame. If you have a custom stylesheet, you can select it here. Most likely you would only make superficial style changes such as with colors.
 
-	Here you can select an HTML page that you want to be your overview page in the Javadoc. You can select any HTML page and it will be included in the index.
+8.  Click **Next**.
 
-9. Click **Finish**.
+	  <img src="images/generatejavadocnext2.png" alt="Overview page" />
+
+	  Here you can select an HTML page that you want to be your [overview page in the Javadoc](https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javadoc.html#overviewcomment). You can select any HTML page and it will be included in the index.
+
+9.  Click **Finish**.
+
+    If prompted to update the Javadoc location (which likely differs from your Eclipse workspace location), do so by clicking **Yes to all**.
+
+    Browse to the destination location and open the index.html file in your browser to view the files.
 
 ## Javadoc and error checking
 
