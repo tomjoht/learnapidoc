@@ -3,12 +3,16 @@ title: "OpenAPI tutorial step 6: The security object"
 permalink: /pubapis_openapi_step6_security_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.36
+weight: 8.8
 section: restapispecifications
 path1: /restapispecifications.html
 ---
 
 {% include workflow_map.html step="6" map="content/openapi_tutorial_map.html"  %}
+
+{% if site.format == "pdf" or site.format == "kindle" %}
+<img src="images/openapistep6.png"/>
+{% endif %}
 
 Swagger UI provides a "Try it out" feature that lets users submit actual requests. To actually submit requests that are authorized by your API server, the spec must contain security information that will authorize the request. The [`security` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#securityRequirementObject) specifies the security or authorization protocol used when submitting requests.
 
@@ -86,7 +90,7 @@ Properties you can use in the `securitySchemes` object include the following:
 
 In the Swagger UI, you see the `description` and other security details in the Authorization modal (which appears when you click the Authorization button):
 
-<a href="/learnapidoc/assets/files/swagger/"><img src="/learnapidoc/openapitutorial_securityauth.png"/></a>
+<a href="/learnapidoc/assets/files/swagger/"><img src="images/openapitutorial_securityauth.png"/></a>
 
 After users enter an API key and clicks **Authorize**, the authorization method is set for as many requests as they want to make. Only when users refresh the page does the authorization session expire.
 

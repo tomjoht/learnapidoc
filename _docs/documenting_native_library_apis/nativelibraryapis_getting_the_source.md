@@ -23,7 +23,7 @@ The [sample Java project](https://github.com/tomjoht/sample-java-project) is a l
 
 This program doesn't really do anything except print little messages to the console, but it's hopefully simple enough to be instructive in its purpose. The purpose of the app is to demonstrate different doc tags, their placement, and how they get rendered in the Javadoc.
 
-## Clone the source on Github
+## Download the project
 
 One of your immediate challenges to editing Javadoc will be to get the source code into your IDE. The sample java project is [here on Github](https://github.com/tomjoht/sample-java-project).
 
@@ -39,7 +39,7 @@ Or click **Clone in Desktop** and navigate to the right path in Github Desktop.
 
 (If you don't want to clone the source, you could click **Download ZIP** and download the content manually.)
 
-## Open the right location in Eclipse
+## Open the project in Eclipse
 
 1.  If you haven't already [downloaded and installed Eclipse](nativelibraryapis_overview.html#installation_reqs), do so.
 1.  After you've cloned or downloaded the Java project, open Eclipse. (If prompted to select a workspace, select the default location and click **Launch**. Also, close the Welcome screen if it appears.)
@@ -65,6 +65,8 @@ The sample project doesn't use Maven, but I want to add a note about Maven here 
 (By the way, to import a Maven project into Eclipse, you would go to **File > Import > Maven > Existing Maven Projects** and click **Next**. In the Root Directory field, you would click **Browse** and browse to the Java project folder (which contains the Maven pom.xml file) and then click **Open**. Then you would click **Finish** in the dialog box. In the Project Explorer pane in Eclipse, you would right-click the Java folder and select **Run as Maven Install**. Maven retrieves the necessary packages and builds the project. If the build is successful, you will see a "BUILD SUCCESS" message in the console. You would then use the source code in the built project.)
 
 ## Play with the Sample Java Project
+
+{% include activity.html %}
 
 This Java app doesn't do much. It's main purpose is to create some classes where I can add some Javadoc annotations. But for fun, you can run the app.
 

@@ -3,12 +3,15 @@ title: "OpenAPI tutorial step 5: The components object"
 permalink: /pubapis_openapi_step5_components_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.35
+weight: 8.37
 section: restapispecifications
 path1: /restapispecifications.html
 ---
 
 {% include workflow_map.html step="5" map="content/openapi_tutorial_map.html"  %}
+{% if site.format == "pdf" or site.format == "kindle" %}
+<img src="images/openapistep5.png"/>
+{% endif %}
 
 In the [step 4](pubapis_openapi_step4_paths_object.html), when we described the [`requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#requestBodyObject) and [`responses` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#responsesObject) objects, we used a [`schema`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#schemaObject) object to describe the model for the request or response. The `schema` refers to the data structure ( the fields, values, and hierarchy of the various objects and properties of a JSON or YAML object &mdash; see [What is a schema?](https://spacetelescope.github.io/understanding-json-schema/about.html#what-is-a-schema) for more details). It's common to use a reference pointer (`$ref`) for the `schema` object that points to more details in the `components` object.
 
@@ -749,7 +752,7 @@ Swagger UI displays each object in `components` in a section called `Models` at 
 
 Because I want to re-use objects, I'm going define each object in `components` separately. As a result, the Models section looks like this:
 
-<a href="/learnapidoc/assets/files/swagger/"><img src="/learnapidoc/images/swaggerui_models_broken_out.png" /></a>
+<a href="/learnapidoc/assets/files/swagger/"><img src="images/swaggerui_models_broken_out.png" /></a>
 
 ## Reason for models in the first place
 
@@ -757,7 +760,7 @@ The Models section is now in the latest version of Swagger UI. I'm not really su
 
 You don't need this Models section in Swagger UI because both the request and response sections of Swagger UI provide a "Model" link that lets the user toggle to this view. For example:
 
-<a href="/learnapidoc/assets/files/swagger/"><img src="/learnapidoc/images/models_options_in_responses.png" /></a>
+<a href="/learnapidoc/assets/files/swagger/"><img src="images/models_options_in_responses.png" /></a>
 
 ## Hiding the Models section
 

@@ -9,11 +9,10 @@ permalink: pdf_toc_page.html
 <ul id="docnavsidebar" class="docnav">
   {% assign sidebar = site.data[site.sidebar].folders %}
 {% for folder in sidebar %}
-{% unless folder.type == "frontmatter" %}
 <li class="sectionHead"><a href="{{folder.jurl | remove: "/"}}">{{ folder.title }}</a>
     <ul>
         {% for folderitem in folder.folderitems %}
-        {% if folderitem.title %}
+        {% if folderitem.title and folderitem.type != "web" %}
         <li><a href="{{ folderitem.jurl | remove: "/" }}">{{folderitem.title}}</a></li>
         {% endif %}
         {% for subfolder in folderitem.subfolders %}
@@ -22,7 +21,7 @@ permalink: pdf_toc_page.html
             <ul>
                 {% for subfolderitem in subfolder.subfolderitems %}
 
-                {% if subfolderitem.title %}
+                {% if subfolderitem.title and subfolderitem.type != "web" %}
                 <li class="level2items"><a href="{{ subfolderitem.jurl | remove: "/" }}">{{subfolderitem.title}}</a></li>
                 {% endif %}
 
@@ -30,7 +29,7 @@ permalink: pdf_toc_page.html
                 <li class="sectionHead"><a href="{{subsubfolder.jurl | remove: "/"}}">{{ subsubfolder.title }}</a>
                     <ul>
                         {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
-                        {% if subsubfolderitem.title %}
+                        {% if subsubfolderitem.title and subsubfolderitem.type != "web" %}
                         <li class="level3items"><a href="{{ subsubfolderitem.jurl | remove: "/" }}">{{subsubfolderitem.title}}</a></li>
                         {% endif %}
                         {% endfor %}
@@ -45,7 +44,6 @@ permalink: pdf_toc_page.html
 
         {% endfor %}
     </ul>
-{% endunless %}
     {% endfor %}
 
 </li>

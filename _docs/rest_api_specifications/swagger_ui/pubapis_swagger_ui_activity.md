@@ -3,7 +3,7 @@ title: "Swagger UI activity: Create your own Swagger UI docs"
 permalink: /pubapis_swagger_ui_activity.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.41
+weight: 8.93
 section: restapispecifications
 path1: /restapispecifications.html
 ---
@@ -56,7 +56,7 @@ A local web server simulates a web server on your local machine. To run a simple
 
 4.  Open a browser (such as Chrome), and go to `http://localhost:7800/`. The web server serves up the index.html file in that directory by default. You should see your Swagger UI project load the spedification document.
 
-    <a href="/learnapidoc/assets/files/swagger-sunrise-sunset/"><img class="medium" src="/learnapidoc/images/sunset_and_sunrise_swaggerui.png"/></a>
+    <a href="/learnapidoc/assets/files/swagger-sunrise-sunset/"><img class="medium" src="images/sunset_and_sunrise_swaggerui.png"/></a>
 
 
 ## Test your Swagger UI project

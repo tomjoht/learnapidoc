@@ -8,22 +8,32 @@ layout: null
 {{site.baseurl}}/pdf_toc_page.html
 
 {% for folder in sidebar %}
-{{ folder.jurl | prepend: "/Users/tomjoht/projects/learnapidoc/_site" }}
+{{ folder.jurl | prepend: site.baseurl }}
 {% for folderitem in folder.folderitems %}
 {% if folderitem.title %}
-{{ folderitem.jurl | prepend: "/Users/tomjoht/projects/learnapidoc/_site" }}
+{% unless folderitem.type == "web" %}
+{{ folderitem.jurl | prepend: site.baseurl }}
+{% endunless %}
 {% endif %}
 {% for subfolder in folderitem.subfolders %}
-{{ subfolder.jurl | prepend: "/Users/tomjoht/projects/learnapidoc/_site" }}
+{% if subfolder.title %}
+{{ subfolder.jurl | prepend: site.baseurl }}
+{% endif %}
 {% for subfolderitem in subfolder.subfolderitems %}
 {% if subfolderitem.title %}
-{{ subfolderitem.jurl | prepend: "/Users/tomjoht/projects/learnapidoc/_site" }}
+{% unless subfolderitem.type == "web" %}
+{{ subfolderitem.jurl | prepend: site.baseurl }}
+{% endunless %}
 {% endif %}
 {% for subsubfolder in subfolderitem.subsubfolders %}
-{{ subsubfolder.jurl | prepend: "/Users/tomjoht/projects/learnapidoc/_site"}}
+{% if subsubfolder.title %}
+{{ subsubfolder.jurl | prepend: site.baseurl}}
+{% endif %}
 {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
 {% if subsubfolderitem.title %}
-{{ subsubfolderitem.jurl | prepend: "/Users/tomjoht/projects/learnapidoc/_site" }}
+{% unless subsubfolderitem.type == "web" %}
+{{ subsubfolderitem.jurl | prepend: site.baseurl }}
+{% endunless %}
 {% endif %}
 {% endfor %}
 {% endfor %}

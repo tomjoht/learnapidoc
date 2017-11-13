@@ -196,7 +196,7 @@ folders:
   - title: "Case study: Switching tools to docs-as-code"
     jurl: /pubapis_switching_to_docs_as_code.html
 
-- title: OpenAPI REST API specifications (Swagger)
+- title: OpenAPI specification and Swagger
   jurl: /restapispecifications.html
   folderitems:
 
@@ -208,6 +208,7 @@ folders:
 
     subfolders:
     - title: Open API tutorial
+      jurl: /openapi.html
       subfolderitems:
 
       - title: "OpenAPI tutorial overview"
@@ -241,6 +242,7 @@ folders:
         jurl: /pubapis_openapi_activity.html
 
     - title: Swagger UI
+      jurl: /swaggerui.html
       subfolderitems:
 
       - title: Swagger UI tutorial
@@ -250,7 +252,12 @@ folders:
         jurl: /pubapis_swagger_ui_activity.html
 
       - title: Swagger UI Demo 1 (standalone)
-        jurl: /assets/files/swagger/
+        jurl: /assets/files/swagger/index.html
+        type: web
+
+      - title: Swagger UI Demo 1 (standalone)
+        jurl: /pubapis_swagger_ui_standalone.html
+        type: print
 
       - title: Swagger UI Demo 2 (embedded)
         jurl: /pubapis_swagger_embedded.html

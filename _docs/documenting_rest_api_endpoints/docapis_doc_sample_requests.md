@@ -46,7 +46,7 @@ Some sample requests in API don't show responses in the endpoint documentation. 
 
 For example, if you click one of the "Examples of API calls," such as [http://samples.openweathermap.org/data/2.5/weather?q=London](http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1), you see the response dynamically returned in the browser.
 
-<a href="http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1"><img class="medium" src="/learnapidoc/images/dynamicresponseinbrowser.png"/></a>
+<a href="http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1"><img class="medium" src="images/dynamicresponseinbrowser.png"/></a>
 
 This approach is common and works well (for GET requests) when you can pull it off. Unfortunately, this approach makes it difficult to define the responses. (The CityGrid API documentation is detailed and does include information in later sections that describes the responses.)
 
@@ -54,11 +54,11 @@ This approach is common and works well (for GET requests) when you can pull it o
 
 Many APIs have a feature called an API explorer. For example, here's a typical reference page for Spotify's API docs:
 
-<a href="https://developer.spotify.com/web-api/console/get-album/"><img src="/learnapidoc/images/spotifyapiconsole.png"/></a>
+<a href="https://developer.spotify.com/web-api/console/get-album/"><img src="images/spotifyapiconsole.png"/></a>
 
 Flickr's API docs also have a built-in API Explorer:
 
-<a href="https://www.flickr.com/services/api/explore/flickr.photos.search"><img src="/learnapidoc/images/flickrapiexplorer.png"/></a>
+<a href="https://www.flickr.com/services/api/explore/flickr.photos.search"><img src="images/flickrapiexplorer.png"/></a>
 
 The API Explorer lets you insert your own values, your own API key, and other parameters into a request so you can see the responses directly in the Explorer. Being able to see your own data maybe makes the response more real and immediate.
 

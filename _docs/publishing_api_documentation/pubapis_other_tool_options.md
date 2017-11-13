@@ -104,7 +104,7 @@ To try out Run in Postman, first [import your OpenAPI spec into Postman](https:/
 
 You can see the many [demos here](https://www.getpostman.com/integrations/run-button).
 
-{% if site.format == "kindle" %}
+{% if site.format == "kindle" or site.format == "pdf" %}
 For a demo using the sample Mashape weather API, see the [Postman section](pubapis_other_tool_options.html#postman) in "Tool options for developer docs."
 {% else %}
 Here's a demo using the sample Mashape weather API:

@@ -1,6 +1,4 @@
-{% unless site.format == "pdf" %}
-
-
+{% unless site.format == "pdf" or site.format == "kindle" %}
 <script>
 $( document ).ready(function() {
         $('.box{{include.step}}').addClass('active');

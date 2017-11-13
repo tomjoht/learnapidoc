@@ -28,6 +28,7 @@ Here are some other characteristics of Javadoc:
 
 ## Generate a Javadoc
 
+{% include activity.html %}
 
 1.  In Eclipse, go to **File > Export**.
 2.  Expand **Java** and select **Javadoc.** Then click **Next**.
@@ -40,9 +41,9 @@ Here are some other characteristics of Javadoc:
 	  Your API probably has a lot of helper or utility classes used on the backend, but only a select number of classes will actually be used by your developer audience. These classes are made public. It's the public classes that your developer audience will use that form the API aspect of the class library.
 
 5.  Make sure the **Use standard doclet** radio button is selected (it's selected by default).
-6.  Click the **Browse** button and select the output location where you want the Javadoc generated.
+6.  Click the **Browse** button and select the output location where you want the Javadoc generated. By default, it will be generated in the same project folder as your code, but in a subfolder called **doc**. This way you can browse the Javadoc directly within your Eclipse IDE.
 
-    By default, it will be generated in the same project folder as your code, but in a subfolder called **doc**. This way you can browse the Javadoc directly within your Eclipse IDE.
+    For this activity, choose a different output location (such as a folder on your desktop or in your documents) other than the default. Reason being, the project already has the generated Javadoc in a docs folder, so you might not even realize that you've generated a Javadoc file because your new output will just overwrite the existing doc files.
 
 7.  Click **Next**.
 

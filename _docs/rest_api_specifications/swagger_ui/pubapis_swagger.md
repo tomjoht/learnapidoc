@@ -3,7 +3,7 @@ title: "Swagger UI tutorial"
 permalink: /pubapis_swagger.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.4
+weight: 8.92
 section: restapispecifications
 path1: /restapispecifications.html
 redirect_from:
@@ -12,7 +12,10 @@ redirect_from:
 
 [Swagger UI](https://github.com/swagger-api/swagger-ui) provides a display framework that reads the [OpenAPI specification document](https://github.com/OAI/OpenAPI-Specification) and generates an interactive documentation website. This tutorial shows you how to use the Swagger UI interface and how to integrate an OpenAPI specification document into the standalone distribution of Swagger UI.
 
-For a more detailed conceptual overview of OpenAPI and Swagger, see [Introduction to the OpenAPI specification and Swagger](pubapis_swagger_intro.html). For step-by-step tutorial on creating an OpenAPI specification document, see the [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html).
+For a more detailed conceptual overview of OpenAPI and Swagger, see [Introduction to the OpenAPI specification and Swagger](pubapis_swagger_intro.html).
+
+{: .tip}
+For step-by-step tutorial on creating an OpenAPI specification document, see the [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html).
 
 {% if site.format == "web" %}
 * TOC
@@ -54,7 +57,7 @@ The endpoints are grouped into three tags:
 
 Before making any requests, you would normally authorize your session by clicking the **Authorize** button and completing the information required in the Authorization modal pictured below:
 
-<a href="http://petstore.swagger.io/"><img class="medium" src="/learnapidoc/images/swaggerui_authorize.png" alt="Authorization modal in Swagger UI" /></a>
+<a href="http://petstore.swagger.io/"><img class="medium" src="images/swaggerui_authorize.png" alt="Authorization modal in Swagger UI" /></a>
 
 The Petstore example has an OAuth 2.0 security model. However, the authorization code is just for demo purposes. There isn't any real logic authorizing those requests, so you can simply close the Authorization modal.
 
@@ -65,18 +68,18 @@ Now let's make a request:
 1.  Expand the [**POST Pet** endpoint](http://petstore.swagger.io/#/pet/addPet).
 2.  Click **Try it out**.
 
-    <a href="http://petstore.swagger.io/"><img src="/learnapidoc/images/swaggerui_petendpoint.png" alt="Try it out button in Swagger UI" /></a>
+    <a href="http://petstore.swagger.io/"><img src="images/swaggerui_petendpoint.png" alt="Try it out button in Swagger UI" /></a>
 
     After you click Try it out, the example value in the Request Body field becomes editable.
 
 3.  In the Example Value field, change the first `id` value to a random integer, such as `193844`. Change the second `name` value to something you'd recognize (your pet's name).
 4.  Click **Execute**.
 
-    <a href="http://petstore.swagger.io/"><img src="/learnapidoc/images/swaggerui_execute.png" alt="Executing a sample Petstore request" /></a>
+    <a href="http://petstore.swagger.io/"><img src="images/swaggerui_execute.png" alt="Executing a sample Petstore request" /></a>
 
 Swagger UI submits the request and shows the [curl that was submitted](docapis_make_curl_call.html). The Responses section shows the [response](docapis_doc_sample_responses.html). (If you select JSON rather than XML in the "Response content type" drop-down box, you can specify that JSON is returned rather than XML.)
 
-<a href="http://petstore.swagger.io/"><img src="/learnapidoc/images/swaggerui_response.png" alt="Response from Swagger Petstore get pet request" /></a>
+<a href="http://petstore.swagger.io/"><img src="images/swaggerui_response.png" alt="Response from Swagger Petstore get pet request" /></a>
 
 {% include important.html content="The Petstore is a functioning API, and you have actually created a pet. You now need to take responsibility for your pet and begin feeding and caring for it! All joking aside, most users don't realize they're playing with real data when they execute responses in an API (using their own API key). This test data may be something you have to wipe clean when you transition from exploring and learning about the API to actually using the API for production use." %}
 

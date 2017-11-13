@@ -1,6 +1,7 @@
 title: Document REST APIs
 subtitle: A guide for technical writers
 sidebar: docapis
+baseurl: /Users/tomjoht/projects/learnapidoc/_site
 
 language: english
 format: pdf

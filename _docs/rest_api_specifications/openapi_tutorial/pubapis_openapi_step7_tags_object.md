@@ -3,12 +3,16 @@ title: "OpenAPI tutorial step 7: The tags object"
 permalink: /pubapis_openapi_step7_tags_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.37
+weight: 8.9
 section: restapispecifications
 path1: /restapispecifications.html
 ---
 
 {% include workflow_map.html step="7" map="content/openapi_tutorial_map.html"  %}
+
+{% if site.format == "pdf" or site.format == "kindle" %}
+<img src="images/openapistep7.png"/>
+{% endif %}
 
 The `tags` object provides a way to group the paths (endpoints) in the Swagger UI display.
 
@@ -69,7 +73,7 @@ paths:
 
 All paths that have the same tag are grouped together in the display. For example, paths that have the `Weather Forecast` tag will be grouped together under the title `Weather Forecast`. Each group title is a collapsible/expandable toggle. The `/aqi` path has the `Air Quality` tag.
 
-<a href="/learnapidoc/assets/files/swagger/"><img src="/learnapidoc/images/openapitutorial_tags.png" /></a>
+<a href="/learnapidoc/assets/files/swagger/"><img src="images/openapitutorial_tags.png" /></a>
 
 The order of the tags in the `tags` object at the root level determines their order in Swagger UI. Additionally, the `descriptions` appear to the right of the tag name.
 

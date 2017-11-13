@@ -49,8 +49,19 @@ to test on kindle fire:
 - look into offering a paperback version of the kindle version
 - if so, you prob. need to generate the full TOC
 
-1. serve_pdf.sh
-2. new tab: .build_pdf.sh
+- if you run into issues, look at prince-list.txt in the output. make sure all paths are valid. they should all have an absolute URL going to them.
+- filter out the swagger demos.
+- the PDF frontmatter are served from the pdf_frontmatter folder in \_docs but these paths are hard-coded into the toc page.
+
+1. run ". serve_pdf.sh"
+this file uses the \_config_pdf.yml. in this file, two important properties are defined:
+baseurl: /Users/tomjoht/projects/learnapidoc/\_site
+format: pdf
+
+2. run " . build_pdf.sh"
+
+it builds from the local, so it's not necessary to have serve_pdf running
+
 3. see pdf/docapis.pdf
 
 - no need to swap in images for tables

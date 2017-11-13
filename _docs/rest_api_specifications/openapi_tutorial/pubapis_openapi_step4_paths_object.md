@@ -3,12 +3,16 @@ title: "OpenAPI tutorial step 4: The paths object"
 permalink: /pubapis_openapi_step4_paths_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.34
+weight: 8.6
 section: restapispecifications
 path1: /restapispecifications.html
 ---
 
 {% include workflow_map.html step="4" map="content/openapi_tutorial_map.html"  %}
+
+{% if site.format == "pdf" or site.format == "kindle" %}
+<img src="images/openapistep4.png"/>
+{% endif %}
 
 The [`paths` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#pathsObject) contains the meat of your API information. The `paths` object has a number of sub-objects: a [path items object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#pathItemObject), an [operations object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#operationObject), and more.
 
@@ -419,7 +423,7 @@ See [Storing re-used parameters in components](pubapis_openapi_step5_components_
 
 Swagger UI displays the `paths` object like this:
 
-<a href="/learnapidoc/assets/files/swagger/"><img src="/learnapidoc/images/openapiparameters.png" /></a>
+<a href="/learnapidoc/assets/files/swagger/"><img src="images/openapiparameters.png" /></a>
 
 When you click **Try it out**, the `example` value populates the parameters field.
 

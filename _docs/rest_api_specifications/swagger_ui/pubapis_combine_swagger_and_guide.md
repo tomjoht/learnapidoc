@@ -3,7 +3,7 @@ title: "Integrating Swagger UI with the rest of your docs"
 permalink: /pubapis_combine_swagger_and_guide.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.5
+weight: 8.96
 section: restapispecifications
 path1: /restapispecifications.html
 ---
@@ -46,7 +46,17 @@ What does the code `33` mean? If you go to the [Yahoo Weather API docs](https://
 
 If you have a lot of extra information and notes like this in your reference docs, it can be difficult to fit them into the parameter descriptions allotted. Unfortunately, there's not an easy solution for creating a single source of truth. Here are some options.
 
-## Option 1: Put all info into your spec through expand/collapse sections
+## Option 1: Embed Swagger UI in your docs
+
+One solution is to embed Swagger UI in your docs. You can see an example of this here: [Swagger UI Demo 2 (embedded)](pubapis_swagger_embedded.html). It's pretty easy to embed Swagger into an HTMl page. The latest version of Swagger has a more responsive, liquid design. It almost looks *designed* to be embedded into another site.
+
+The only problem with the embedding approach is that some of the Models aren't constrained within their container, so they just expand beyond their limits. Try expanding the Models section, particularly the weatherdata response, in the demo and you'll see what I'm talking about.
+
+I'm not sure if some ninja styling prowess could simply overcome this uncontained behavior. Probably, but I'm not a CSS ninja and I haven't fiddled around with this enough to say that it can actually be done. I did end up adding some custom styles to make some adjustments to Swagger UI in various places. If you [view the source](view-source:http://idratherbewriting.com/learnapidoc/pubapis_swagger_embedded.html) and check out the second `<style>` block, you can see the styles I haphazardly added.
+
+I like the embedded option, because it means you can still use the official Swagger UI tooling to read the spec, and you can include it in your main documentation. Swagger UI reads the latest version of the [OpenAPI specification](pubapis_openapi_tutorial_overview.html), which is something many tools don't yet support. Additionally, Swagger UI has the familiar interface that API developers are probably already familiar with.
+
+## Option 2: Put all info into your spec through expand/collapse sections
 
 You can try to put all information into your spec. You may be surprised about how much information you can actually include in the spec. Any `description` element (not just the `description` property in the `info` object) allows you to use Markdown and HTML. For example, here's the `info` object in the OpenAPI spec where a description appears. Type a pipe `|` to break the content onto the next line, and then indent two spaces. You can add a lot of content here.
 
@@ -108,7 +118,7 @@ For example, [Spectacle](https://github.com/sourcey/spectacle) is a project that
 
 In fact, importing or reading a OpenAPI specification document is almost becoming a standard among API doc tools. Putting your content in the OpenAPI spec format allows you to separate your content from the presentation layer, instantly taking advantage of any new API tooling or platform that can parse the spec.
 
-## Option 2: Read the OpenAPI specification document
+## Option 3: Parse the OpenAPI specification document
 
 If you're using a tool such as Jekyll, which incorporates a scripting language called Liquid, you can read the OpenAPI specification document. It is, after all, just YAML syntax. For example, you could use a `for` loop to iterate through the OpenAPI spec values. Here's a code sample. In this example, the Swagger.yml file is stored inside Jekyll's \_data directory.
 
@@ -143,7 +153,7 @@ If you're using a tool such as Jekyll, which incorporates a scripting language c
 
 Special thanks to Peter Henderson for sharing this technique and the code. With this approach, you may have to figure out the right Liquid syntax to iterate through your OpenAPI spec, and it may take a while. But this is probably the best way to single source the content.
 
-## Option 3: Store content in YAML files
+## Option 4: Store content in YAML files that's sourced to both outputs
 
 Another approach for integrating Swagger's output with your other docs might be to store your descriptions and other info in data yaml files in your project, and then include the data references in your specification document. I'm most familiar with Jekyll, so I'll describe the process using Jekyll (but similar techniques exist for other static site generators).
 
@@ -188,7 +198,7 @@ By storing the values in data files, you can then include them elsewhere in your
 
 Again, although I've tried this approach, I grew frustrated at not being able to immediately validate my spec. It was more challenging to track down the exact culprits behind my validation errors, and I eventually gave up. But it's a technique that could work.
 
-## Option 4: Use a tool that imports Swagger and allows additional docs
+## Option 5: Use a tool that imports Swagger and allows additional docs
 
 Another approach is to use a tool like [Readme.io](http://readme.io/) that allows you to both import your OpenAPI spec and also add your own separate documentation pages. Readme provides one of the most attractive outputs and is fully inclusive of almost every documentation feature you could want or need. I explore Readme with more depth in the [MTool opions for developer docs](pubapis_other_tool_options.html#readmeio). Readme.io requires third-party hosting, but there are some other doc tools that allow you to incorporate Swagger as well.
 
@@ -196,7 +206,7 @@ Sites like [Apiary](https://apiary.io/) and [Mulesoft](https://www.mulesoft.com/
 
 Cherryleaf has an interesting post called [Example of API documentation portal using MadCap Flare](https://www.cherryleaf.com/blog/2017/06/example-api-documentation-portal-using-madcap-flare/). In the post, Ellis Pratt shows a proof of concept with a Flare project that reads a OpenAPI spec and generates content from it. Although Ellis is still working on this approach, if he's successful it could be a huge win at integrating tech comm tools with API specification formats.
 
-## Having two sites isn't so bad
+## Option 6: Change perspectives -- Having two sites isn't so bad
 
 Finally, ask yourself, what's so bad about having two different sites? One site for your reference information, and another for your tutorials and other information that aren't part of the reference. Programmers might find the reference information convenient in the way it distills and simplifies the body of information. Rather than having a massive site to navigate, the Swagger output provides the core reference information they need. When they want non-reference information, they can consult the accompanying guide.
 

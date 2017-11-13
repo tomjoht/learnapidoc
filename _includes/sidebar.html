@@ -52,6 +52,7 @@
         {% for folderitem in folder.folderitems %}
 
         {% if folderitem.title %}
+        {% unless folderitem.type == "print" %}
         {% if page.url == folderitem.jurl %}
         <li class="level1items open"><a href="{{folderitem.jurl | remove_first: "/" }}">{{folderitem.title}}</a></li>
         {% elsif folderitem.jurl contains "http://" or folderitem.jurl contains "https://" %}
@@ -59,6 +60,7 @@
         {% else %}
         <li class="level1items"><a href="{{folderitem.jurl | remove_first: "/" }}">{{folderitem.title}}</a></li>
         {% endif %}
+        {% endunless %}
         {% endif %}
 
         {% for subfolder in folderitem.subfolders %}
@@ -71,6 +73,7 @@
                 {% for subfolderitem in subfolder.subfolderitems %}
 
                 {% if subfolderitem.title %}
+                {% unless subfolderitem.type == "print" %}
                 {% if page.url == subfolderitem.jurl %}
                 <li class="level2items open"><a href="{{subfolderitem.jurl | remove_first: "/" }}">{{subfolderitem.title}}</a></li>
                 {% elsif folderitem.jurl contains "http://" or folderitem.jurl contains "https://" %}
@@ -78,6 +81,7 @@
                 {% else %}
                 <li class="level2items"><a href="{{subfolderitem.jurl | remove_first: "/" }}">{{subfolderitem.title}}</a></li>
                 {% endif %}
+                {% endunless %}
                 {% endif %}
 
                 {% for subsubfolder in subfolderitem.subsubfolders %}
@@ -90,6 +94,7 @@
                         {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
 
                         {% if subsubfolderitem.title %}
+                        {% unless subsubfolderitem.type == "print" %}
                         {% if page.url == subsubfolderitem.jurl %}
                         <li class="level3items open"><a href="{{subsubfolderitem.jurl | remove_first: "/" }}">{{subsubfolderitem.title}}</a></li>
                         {% elsif folderitem.jurl contains "http://" or folderitem.jurl contains "https://" %}
@@ -97,6 +102,7 @@
                         {% else %}
                         <li class="level3items"><a href="{{subsubfolderitem.jurl | remove_first: "/" }}">{{subsubfolderitem.title}}</a></li>
                         {% endif %}
+                        {% endunless %}
                         {% endif %}
 
                         {% endfor %}

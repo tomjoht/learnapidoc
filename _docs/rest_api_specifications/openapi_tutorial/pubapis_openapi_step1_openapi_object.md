@@ -3,13 +3,16 @@ title: "OpenAPI tutorial step 1: The openapi object"
 permalink: /pubapis_openapi_step1_openapi_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.31
+weight: 8.3
 section: restapispecifications
 path1: /restapispecifications.html
 ---
 
 
 {% include workflow_map.html step="1" map="content/openapi_tutorial_map.html"  %}
+{% if site.format == "pdf" or site.format == "kindle" %}
+<img src="images/openapistep1.png"/>
+{% endif %}
 
 {% if site.format == "web" %}
 * TOC
@@ -93,13 +96,13 @@ openapi: "3.0.0"
 
 In the Swagger UI display, an "OAS3" tag appears to the right of the API name.
 
-<a href="/learnapidoc/assets/files/swagger/"><img src="/learnapidoc/images/openapitutorial_version.png" style="border: 1px solid #dedede;"/></a>
+<a href="/learnapidoc/assets/files/swagger/"><img src="images/openapitutorial_version.png" style="border: 1px solid #dedede;"/></a>
 
 ## Validator errors
 
 If your spec doesn't validate, the Swagger UI display often won't load the content or will show an error. For example, if you have an incorrect indentation in your YAML syntax, an error message might appear that indicates a `bad indentation of a mapping entry`. You can click the **Error** button in the lower right to see more information.
 
-<img src="/learnapidoc/images/validation-erorrs.png"/>
+<img src="images/validation-erorrs.png"/>
 
 Clicking this error button takes you to `https://online.swagger.io/validator/debug?url=/learnapidoc/docs/rest_api_specifications/openapi_weather.yml`, showing you which document the online Swagger validator is attempting to validate and the error. You can also open up the JS console to get a little more debugging information (such as the column where the error occurs).
 

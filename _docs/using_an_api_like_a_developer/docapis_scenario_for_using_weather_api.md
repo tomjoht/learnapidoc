@@ -31,7 +31,7 @@ To give you an idea of the end goal, here's a sample: [idrathebewriting.com/lear
 
 Click the button to see wind details. When you request this data, an API goes out to a weather service, retrieves the information, and displays it to you.
 
-<a href="/learnapidoc/assets/files/wind-mashape.html"><img src="/learnapidoc/images/checkwindconditions.png" class="medium" /></a>
+<a href="/learnapidoc/assets/files/wind-mashape.html"><img src="images/checkwindconditions.png" class="medium" /></a>
 
 The above example is extremely simple. You could also build an attractive interface like this:
 

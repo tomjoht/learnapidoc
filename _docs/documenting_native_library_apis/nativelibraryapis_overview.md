@@ -51,7 +51,7 @@ For this part of the course, you need to install the following:
 * **Java Development Kit (JDK)**. You can [download the JDK here](http://www.oracle.com/technetwork/java/javase/downloads/index.html). Click the Java button on the left (not Netbeans) and then select the appropriate download for your machine.
 * **Eclipse IDE for Java Developers**. Use the [Eclipse Installer to download Eclipse](https://eclipse.org/downloads/).
 
-<a href="https://eclipse.org/downloads/"><img src="/learnapidoc/images/eclipseforjavadevs.png" class="medium" /></a>
+<a href="https://eclipse.org/downloads/"><img src="images/eclipseforjavadevs.png" class="medium" /></a>
 
 To make sure you have Java installed, you can do the following:
 

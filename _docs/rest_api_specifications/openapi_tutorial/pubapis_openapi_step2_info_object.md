@@ -3,12 +3,15 @@ title: "OpenAPI tutorial step 2: The info object"
 permalink: /pubapis_openapi_step2_info_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.32
+weight: 8.4
 section: restapispecifications
 path1: /restapispecifications.html
 ---
 
 {% include workflow_map.html step="2" map="content/openapi_tutorial_map.html"  %}
+{% if site.format == "pdf" or site.format == "kindle" %}
+<img src="images/openapistep2.png"/>
+{% endif %}
 
 The [info object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#infoObject) contains basic information about your API, including the title, a description, version, link to the license, link to the terms of service, and contact information. Many of the properties are optional.
 
@@ -45,7 +48,7 @@ As you write content in `description` properties, note that colons are problemat
 
 In the Swagger UI display, the `info` object's information appears at the top:
 
-<a href="/learnapidoc/assets/files/swagger/"><img src="/learnapidoc/images/openapitutorial_info_object.png" style="border:1px solid #dedede;"/></a>
+<a href="/learnapidoc/assets/files/swagger/"><img src="images/openapitutorial_info_object.png" style="border:1px solid #dedede;"/></a>
 
 {: .tip}
 In the `description` property, you might want to provide some basic instructions to users on how to use Swagger UI. If there's a test account they should use, you can provide the information they need in this space.

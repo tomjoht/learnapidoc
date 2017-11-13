@@ -1,0 +1,51 @@
+{% assign sidebar = site.data[page.sidebar] %}
+
+
+{% comment %}check for items at first level {% endcomment %}
+
+<ul id="navig markdown-toc" class="onPageSectiontoc">
+{% for folder in sidebar.folders %}
+  {% if folder.jurl contains page.permalink %}
+    {% for folderitem in folder.folderitems %}
+      {% unless folderitem.type == "print" %}
+      <li><a href="{{folderitem.jurl | remove: "/" }}">{{folderitem.title}}</a></li>
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+{% comment %}check for items at second level {% endcomment %}
+{% for folder in sidebar.folders %}
+  {% for folderitem in folder.folderitems %}
+    {% for subfolder in folderitem.subfolders %}
+      {% if subfolder.jurl contains page.permalink %}
+        {% for subfolderitem in subfolder.subfolderitems %}
+        {% unless subfolderitem.type == "print" %}
+          <li><a href="{{subfolderitem.jurl | remove: "/" }}">{{subfolderitem.title}}</a></li>
+          {% endunless %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+{% endfor %}
+
+{% comment %}check for items at third level {% endcomment %}
+{% for folder in sidebar.folders %}
+  {% for folderitem in folder.folderitems %}
+    {% for subfolder in folderitem.subfolders %}
+      {% for subfolderitem in subfolder.subfolderitems %}
+        {% for subsubfolder in subfolderitem.subsubfolders %}
+          {% if subsubfolder.jurl contains page.permalink %}
+            {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
+            {% unless subsubfolderitem.type == "print" %}
+              <li><a href="{{subsubfolderitem.jurl | remove: "/" }}">{{subsubfolderitem.title}}</a></li>
+              {% endunless %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    {% endfor %}
+  {% endfor %}
+{% endfor %}
+
+</ul>

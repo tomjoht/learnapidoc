@@ -1,12 +1,16 @@
 ---
-title: Embedded Swagger with Mashape Weather API
+title: Swagger UI Demo 2 (embedded)
 permalink: /pubapis_swagger_embedded.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.27
+weight: 8.95
 section: restapispecifications
 path1: /restapispecifications.html
 ---
+
+{% if site.format == "pdf" or site.format == "kindle" %}
+<p>This page can only be viewed online. Go to <a href="http://idratherbewriting.com/learnapidoc/pubapis_swagger_embedded.html">http://idratherbewriting.com/learnapidoc/pubapis_swagger_embedded.html</a> to view it.</p>
+{% else %}
 
 <p class="note" style="margin-bottom: 15px;">The following is an embedded instance of the <a href="https://github.com/swagger-api/swagger-ui">Swagger UI</a> showing the <a href="{{ "/docs/rest_api_specifications/openapi_weather.yml" | prepend: site.baseurl }}">OpenAPI file for the Mashape weather API</a>.</p>
 
@@ -302,5 +306,6 @@ button.btn.try-out__btn {
 */
 </style>
 
+{% endif %}
 
 {% include random_ad.html %}

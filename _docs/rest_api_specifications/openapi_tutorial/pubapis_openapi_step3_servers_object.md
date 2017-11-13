@@ -3,12 +3,15 @@ title: "OpenAPI tutorial step 3: The servers object"
 permalink: /pubapis_openapi_step3_servers_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.33
+weight: 8.5
 section: restapispecifications
 path1: /restapispecifications.html
 ---
 
 {% include workflow_map.html step="3" map="content/openapi_tutorial_map.html"  %}
+{% if site.format == "pdf" or site.format == "kindle" %}
+<img src="images/openapistep3.png"/>
+{% endif %}
 
 In the [`servers` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#serverObject), you specify the basepath used in your API requests. The basepath is the part of the URL that appears before the endpoint.
 
@@ -45,7 +48,7 @@ servers:
 
 In Swagger UI, here's how the servers appear to users with multiple server URLs:
 
-<a href="/learnapidoc/assets/files/swagger/"><img src="/learnapidoc/images/openapi_serversurl.png"/></a>
+<a href="/learnapidoc/assets/files/swagger/"><img src="images/openapi_serversurl.png"/></a>
 
 If you have just one URL, you still see a drop-down box but with just one option.
 
