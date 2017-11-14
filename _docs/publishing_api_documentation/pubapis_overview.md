@@ -31,7 +31,7 @@ However, as I started looking more at API documentation sites, primarily [those 
 
 Despite many advances with single sourcing, content re-use, conditional filtering, and other features in help authoring tools and content management systems, almost no API documentation sites on Programmableweb.com use them. Why is that? Why has the development community implicitly rejected tech comm tools and their many years of evolution?
 
-Granted, there is the occasional HAT, as with [Photobucket's API](https://pic.photobucket.com/dev_help/WebHelpPublic/PhotobucketPublicHelp_Left.htm#CSHID=PB%20API%20Introduction.htm|StartTopic=Content%2FPB%20API%20Introduction.htm|SkinName=WebHelp), but they're rare. And it's even more rare to find an API doc site that structures the content in DITA (so far, [CouchDB](http://docs.couchdb.org/en/2.1.0/) is the only one I've come across).
+Granted, there is the occasional HAT, as with [Photobucket's API](http://bit.ly/photobucketlongurl), but they're rare. And it's even more rare to find an API doc site that structures the content in DITA (so far, [CouchDB](http://docs.couchdb.org/en/2.1.0/) is the only one I've come across).
 
 I asked a recruiter (who specializes in API documentation jobs in the Bay area) whether it was more advantageous to become adept with DITA or to learn a tool such as a static site generator, which is more common in the API space.
 
