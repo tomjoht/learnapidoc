@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 8.265
 section: restapispecifications
 path1: /restapispecifications.html
+path2: /swaggerui.html
 ---
 
 <p>This page can only be viewed online. Go to <a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html">http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html</a> to view it.</p>

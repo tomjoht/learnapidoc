@@ -3,7 +3,7 @@
 {% comment %}check for items at first level {% endcomment %}
 
 <div id="navig">
-  <b>Sections in this chapter:</b>
+  {% if site.format == "kindle" %}<b>Sections in this chapter:</b>{% endif %}
 <ul id="docnavsidebar" class="docnav">
 
 {% for folder in sidebar.folders %}

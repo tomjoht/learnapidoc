@@ -2,7 +2,7 @@
 title: Swagger UI
 permalink: /swaggerui.html
 sidebar: docapis
-path1: /publishingapis.html
+path1: /restapispecifications.html
 ---
 
 {% include minitoc.html %}

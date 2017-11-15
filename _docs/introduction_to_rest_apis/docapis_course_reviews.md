@@ -8,6 +8,7 @@ section: introtoapis
 path1: /introtoapis.html
 ---
 
+{% if site.format == "web" %}
 <style>
 blockquote {
   background-color: white;
@@ -39,6 +40,7 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
 
 
 ---------
+{% endif %}
 
 ## Reviews
 

@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 8.39
 section: restapispecifications
 path1: /restapispecifications.html
+path2: /openapi.html
 ---
 
 {% include activity.html %}

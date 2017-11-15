@@ -2,7 +2,8 @@
 title: OpenAPI specification
 permalink: /openapi.html
 sidebar: docapis
-path1: /publishingapis.html
+path1: /restapispecifications.html
 ---
+
 
 {% include minitoc.html %}

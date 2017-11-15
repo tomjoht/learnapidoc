@@ -318,55 +318,57 @@ folders:
   - title: How much code do you need to know?
     jurl: /jobapis_learning_code.html
 
-- title: API documentation survey results
-  jurl: /survey.html
-  folderitems:
-
-  - title: API documentation survey overview
-    jurl: /survey_introduction.html
-
-  - title: What type of API do you document?
-    jurl: /survey_most_popular_apis_to_document.html
-
-  - title: What programming languages are you most familiar with?
-    jurl: /survey_most_common_programming_languages.html
-
-  - title: What authoring tool/syntax do you use?
-    jurl: /survey_preferred_authoring_tools.html
-
-  - title: Do you create API doc by looking at source code?
-    jurl: /survey_creation_from_source_code.html
-
-  - title: Do you test out the API calls used in your doc yourself?
-    jurl: /survey_test_api_calls_yourself.html
-
-  - title: What IDE do you use?
-    jurl: /survey_preferred_ides.html
-
-  - title: Is your REST API doc auto-generated?
-    jurl: /survey_automating_api_docs.html
-
-  - title: How do you get the source files that contain code comments?
-    jurl: /survey_access_to_code.html
-
-  - title: How to learn what you need to know?
-    jurl: /survey_learn_what_you_need.html
-
-  - title: What aspect of API doc do you find most challenging?
-    jurl: /survey_most_challenging_aspect.html
-
-  - title: Do engineers write API doc in the source code?
-    jurl: /survey_engineers_write_in_source.html
-
-  - title: Are API docs auto-rendered through build process?
-    jurl: /survey_how_much_automation.html
-
 - title: Resources
   jurl: /resources.html
   folderitems:
 
   - title: Glossary
     jurl: /api-glossary.html
+
+    subfolders:
+
+    - title: API documentation survey
+      jurl: /survey.html
+      subfolderitems:
+
+      - title: API documentation survey overview
+        jurl: /survey_introduction.html
+
+      - title: What type of API do you document?
+        jurl: /survey_most_popular_apis_to_document.html
+
+      - title: What programming languages are you most familiar with?
+        jurl: /survey_most_common_programming_languages.html
+
+      - title: What authoring tool/syntax do you use?
+        jurl: /survey_preferred_authoring_tools.html
+
+      - title: Do you create API doc by looking at source code?
+        jurl: /survey_creation_from_source_code.html
+
+      - title: Do you test out the API calls used in your doc yourself?
+        jurl: /survey_test_api_calls_yourself.html
+
+      - title: What IDE do you use?
+        jurl: /survey_preferred_ides.html
+
+      - title: Is your REST API doc auto-generated?
+        jurl: /survey_automating_api_docs.html
+
+      - title: How do you get the source files that contain code comments?
+        jurl: /survey_access_to_code.html
+
+      - title: How to learn what you need to know?
+        jurl: /survey_learn_what_you_need.html
+
+      - title: What aspect of API doc do you find most challenging?
+        jurl: /survey_most_challenging_aspect.html
+
+      - title: Do engineers write API doc in the source code?
+        jurl: /survey_engineers_write_in_source.html
+
+      - title: Are API docs auto-rendered through build process?
+        jurl: /survey_how_much_automation.html
 
   - title: Copyright
     jurl: /copyright.html

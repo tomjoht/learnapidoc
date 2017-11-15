@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 8.97
 section: restapispecifications
 path1: /restapispecifications.html
+path2: /swaggerui.html
 ---
 
 Previously, I explored using the open-source [Swagger UI project](pubapis_swagger.html) as a way to render your [OpenAPI specification document](pubapis_openapi_tutorial_overview.html). [SwaggerHub](https://app.swaggerhub.com/) is the commercial version of Swagger UI. You can see a comparison of features [here](https://swaggerhub.com/swagger-open-source-comparison/).

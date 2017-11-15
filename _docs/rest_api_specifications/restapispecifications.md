@@ -1,5 +1,5 @@
 ---
-title: Using REST API specifications
+title: OpenAPI specification and Swagger
 permalink: /restapispecifications.html
 sidebar: docapis
 path1: /restapispecifications.html

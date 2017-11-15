@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 8.4
 section: restapispecifications
 path1: /restapispecifications.html
+path2: /openapi.html
 ---
 
 {% include workflow_map.html step="2" map="content/openapi_tutorial_map.html"  %}

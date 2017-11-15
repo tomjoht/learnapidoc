@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 8.2
 section: restapispecifications
 path1: /restapispecifications.html
+path2: /openapi.html
 ---
 
 In the [Swagger tutorial](pubapis_swagger.html), I referenced an [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification) document without explaining much about it. You simply plugged the document into a Swagger UI project. In this section, we'll dive more deeply into the OpenAPI specification. Specifically, we'll use the same [Mashape Weather API](https://market.mashape.com/fyhao/weather-13) that we've been using throughout other parts of this course as the content for our OpenAPI document.

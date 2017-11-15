@@ -4,7 +4,6 @@ layout: null
 {% assign sidebar = site.data[site.sidebar].folders %}
 
 {{site.baseurl}}/pdf_title_page.html
-{{site.baseurl}}/pdf_copyright_page.html
 {{site.baseurl}}/pdf_toc_page.html
 
 {% for folder in sidebar %}

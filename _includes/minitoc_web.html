@@ -10,6 +10,22 @@
       {% unless folderitem.type == "print" %}
       <li><a href="{{folderitem.jurl | remove: "/" }}">{{folderitem.title}}</a></li>
       {% endunless %}
+
+          {% for subfolder in folderitem.subfolders %}
+          <ul>
+            <li><a class="subfoldersTitle" href="{{ subfolder.jurl | remove_first: "/"}}">{{ subfolder.title }}</a></li>
+              {% for subfolderitem in subfolder.subfolderitems %}
+              <ul>
+                {% if subfolderitem.title %}
+                  {% unless subfolderitem.type == "print" %}
+                    <li><a href="{{subfolderitem.jurl | remove_first: "/" }}">{{subfolderitem.title}}</a></li>
+                    {% endunless %}
+                {% endif %}
+              </ul>
+        {% endfor %}
+            </ul>
+      {% endfor %}
+
     {% endfor %}
   {% endif %}
 {% endfor %}
@@ -49,3 +65,25 @@
 {% endfor %}
 
 </ul>
+
+
+{% comment %}
+third-level down (not coded due to complexity)
+{% for subsubfolder in subfolderitem.subsubfolders %}
+<ul>
+    <li><a class="subfoldersTitle" href="{{ subsubfolder.jurl | remove_first: "/"}}">{{ subsubfolder.title }}</a>
+        {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
+
+          {% if subsubfolderitem.title %}
+            {% unless subsubfolderitem.type == "print" %}
+              <li><a href="{{subsubfolderitem.jurl | remove_first: "/" }}">{{subsubfolderitem.title}}</a></li>
+            {% endunless %}
+          {% endif %}
+  {% endfor %}
+
+</li>
+</ul>
+
+</li>
+{% endfor %}
+{% endcomment %}

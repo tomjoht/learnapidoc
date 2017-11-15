@@ -65,9 +65,9 @@
 
         {% for subfolder in folderitem.subfolders %}
         {% if page.url == subfolder.jurl %}
-        <li class="level2 folderTitle current open"><a class="subfoldersTitle" href="{{ subfolder.jurl }}">{{ subfolder.title }}</a>
+        <li class="level2 folderTitle current open"><a class="subfoldersTitle" href="{{ subfolder.jurl | remove_first: "/"}}">{{ subfolder.title }}</a>
           {% else %}
-          <li class="level2 folderTitle"><a class="subfoldersTitle" href="{{ subfolder.jurl }}">{{ subfolder.title }}</a>
+          <li class="level2 folderTitle"><a class="subfoldersTitle" href="{{ subfolder.jurl | remove_first: "/"}}">{{ subfolder.title }}</a>
         {% endif %}
             <ul style="display:none;">
                 {% for subfolderitem in subfolder.subfolderitems %}
@@ -86,9 +86,9 @@
 
                 {% for subsubfolder in subfolderitem.subsubfolders %}
                 {% if page.url == subsubfolder.jurl %}
-                <li class="level3 folderTitle current open"><a class="subfoldersTitle" href="{{ subsubfolder.jurl }}">{{ subsubfolder.title }}</a>
+                <li class="level3 folderTitle current open"><a class="subfoldersTitle" href="{{ subsubfolder.jurl | remove_first: "/"}}">{{ subsubfolder.title }}</a>
                   {% else %}
-                  <li class="level3 folderTitle"><a class="subfoldersTitle" href="{{ subsubfolder.jurl }}">{{ subsubfolder.title }}</a>
+                  <li class="level3 folderTitle"><a class="subfoldersTitle" href="{{ subsubfolder.jurl | remove_first: "/"}}">{{ subsubfolder.title }}</a>
                    {% endif %}
                     <ul style="display:none;">
                         {% for subsubfolderitem in subsubfolder.subsubfolderitems %}

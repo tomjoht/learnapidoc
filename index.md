@@ -46,20 +46,19 @@ You'll learn how to leverage templates, build interactive API consoles so users 
 
 ## Course organization
 
-Organizationally, this course is divided into the following sections:
+This course is organized into the following sections:
 
-*  **Introduction to REST APIs**
-*  **Using a REST API like a developer**
-*  **Documenting endpoints**
-*  **Testing your API documentation**
-*  **Documenting non-reference sections**
-*  **Exploring other REST APIs**
-*  **Publishing your API documentation**
-*  **Using REST API specifications**
-*  **Documenting native library APIs**
-*  **Getting a job in API documentation**
-*  **API documentation survey results**
-*  **Resources**
+*  [Introduction to REST APIs](docapis_introtoapis.html)
+*  [Using a REST API like a developer](likeadeveloper.html)
+*  [Documenting endpoints](docendpoints.html)
+*  [Testing your API documentation](testingdocs.html)
+*  [Documenting non-reference sections](docnonref.html)
+*  [Exploring other REST APIs](otherapis.html)
+*  [Publishing your API documentation](publishingapis.html)
+*  [Using REST API specifications](restapispecifications)
+*  [Documenting native library APIs](nativelibraryapis.html)
+*  [Getting a job in API documentation](jobapis.html)
+*  [Resources](resources.html)
 
 You don't have to read the sections in order &mdash; skip around as you prefer. But some of the earlier sections on using a REST API like a developer and documenting endpoints follow a somewhat sequential order with the same weather API scenario.
 

@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 8.93
 section: restapispecifications
 path1: /restapispecifications.html
+path2: /swaggerui.html
 ---
 
 {% include activity.html %}
