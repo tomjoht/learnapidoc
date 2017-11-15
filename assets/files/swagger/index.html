@@ -1,5 +1,5 @@
 ---
-title: Swagger UI Demo 1 (standalone)
+title: Swagger UI Demo with Weather API (standalone)
 layout: null
 redirect_from:
 - /learnapidoc/pubapis_swagger_sample_specification_file.html
@@ -94,7 +94,7 @@ window.onload = function() {
 
   // Build a system
   const ui = SwaggerUIBundle({
-    url: "{{ "/docs/rest_api_specifications/openapi_weather.yml" | prepend: site.baseurl }}",
+    url: "{{ "docs/rest_api_specifications/openapi_weather.yml" | prepend: site.baseurl }}",
     dom_id: '#swagger-ui',
     deepLinking: true,
     docExpansion:"list",

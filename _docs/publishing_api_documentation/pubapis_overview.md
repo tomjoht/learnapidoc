@@ -59,7 +59,7 @@ If you have a lot of endpoints, you need a system for pushing the content into s
 
 ### 4. Many APIs have interactive API consoles, allowing you to try out the calls
 
-You won't find an [interactive API console](pubapis_design_patterns.html#interactive_api_explorers.html) in a HAT. By interactive API console, I mean you enter your own API key and values, and then run the call directly from the web pages in the documentation. ([Flickr's API explorer](https://www.flickr.com/services/api/explore/?method=flickr.photos.search) provides one such example of this interactivity.) The response you see from this explorers is from your own data in the API.
+You won't find an [interactive API console](pubapis_design_patterns.html#interactive_api_explorers) in a HAT. By interactive API console, I mean you enter your own API key and values, and then run the call directly from the web pages in the documentation. ([Flickr's API explorer](https://www.flickr.com/services/api/explore/?method=flickr.photos.search) provides one such example of this interactivity.) The response you see from this explorers is from your own data in the API.
 
 ### 5. With APIs, the doc *is* the interface, so it has to be attractive enough to sell the product.
 

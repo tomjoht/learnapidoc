@@ -32,13 +32,14 @@ layout: null
 
             {% for folderitem in folder.folderitems %}
             {% if folderitem.title %}
+            {% unless folderitem.type == "web" %}
 
             <navPoint class="toc" id="item_{{ folderitem.jurl | remove: "/" | remove: ".html" }}" playOrder="{% increment %}">
               <navLabel>
                 <text>{{ folderitem.title }}</text>
               </navLabel>
               <content src="{{ folderitem.jurl | remove: "/" }}"/>
-
+              {% endunless %}
             {% endif %}
 
             {% for subfolder in folderitem.subfolders %}
@@ -50,6 +51,7 @@ layout: null
 
                     {% for subfolderitem in subfolder.subfolderitems %}
                     {% if subfolderitem.title %}
+                    {% unless subfolderitem.type == "web" %}
 
                     <navPoint class="toc" id="item_{{ subfolderitem.jurl  | remove: "/" | remove: ".html" }}" playOrder="{% increment %}">
                       <navLabel>
@@ -57,7 +59,7 @@ layout: null
                       </navLabel>
                         <content src="{{ subfolderitem.jurl | remove: "/" }}"/>
                     </navPoint>
-
+                    {% endunless %}
                     {% endif %}
                     {% endfor %}
 

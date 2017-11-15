@@ -3,7 +3,7 @@ title: "API Blueprint tutorial"
 permalink: /pubapis_api_blueprint.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.991
+weight: 8.94
 section: restapispecifications
 path1: /restapispecifications.html
 ---
@@ -396,7 +396,7 @@ For this tutorial, we'll use a platform called Apiary to read and display the AP
     ```
 
     {: .note}
-    If the code isn't easy to copy and paste, you can [view and download the file here](/learnapidoc/assets/files/apiblueprintweatherdata.md).
+    If the code isn't easy to copy and paste, you can [view and download the file here](http://idratherbewriting.com/learnapidoc/assets/files/apiblueprintweatherdata.md).
 
 5.  Click **Save and Publish**.
 

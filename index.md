@@ -55,7 +55,7 @@ This course is organized into the following sections:
 *  [Documenting non-reference sections](docnonref.html)
 *  [Exploring other REST APIs](otherapis.html)
 *  [Publishing your API documentation](publishingapis.html)
-*  [Using REST API specifications](restapispecifications)
+*  [Using REST API specifications](restapispecifications.html)
 *  [Documenting native library APIs](nativelibraryapis.html)
 *  [Getting a job in API documentation](jobapis.html)
 *  [Resources](resources.html)

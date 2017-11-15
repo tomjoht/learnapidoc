@@ -158,7 +158,7 @@ The Swagger UI code generates a display that looks like this:
 
 <a href="http://petstore.swagger.io/"><img src="images/swagger_petstore_pic.png" alt="Swagger Petstore" /></a>
 
-Also check out the [sample Swagger UI integration with a simple weather API](/learnapidoc/assets/files/swagger/) used as a course example.
+Also check out the [sample Swagger UI integration with a simple weather API](http://idratherbewriting.com/learnapidoc/assets/files/swagger/) used as a course example.
 
 Some designers criticize Swagger UI's expandable/collapsible output as being dated. At the same time, developers find the one-page model attractive and like the ability to zoom out or in for details. By consolidating all endpoints on the same page in one view, users can take in the whole API at a glance. This display gives users a glimpse of the whole, which helps reduce complexity and enables them to get started. In many ways, the Swagger UI display is a quick-reference guide for your API.
 

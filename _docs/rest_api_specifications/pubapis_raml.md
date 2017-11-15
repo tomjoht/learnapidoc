@@ -3,7 +3,7 @@ title: RAML tutorial
 permalink: /pubapis_raml.html
 keywords: RAML
 course: "Publishing REST APIs"
-weight: 8.99
+weight: 8.93
 sidebar: docapis
 section: restapispecifications
 path1: /restapispecifications.html
@@ -306,7 +306,7 @@ You can also download the same code that generates the output on the Anypoint Pl
 	  View the file in your web browser. Note that if the file doesn't load in Chrome, open it in Firefox. Chrome tends to block local JavaScript for security reasons.
 
 	  {: .tip}
-    Here's a <a href="/learnapidoc/assets/files/raml/specific.html">sample RAML API Console output</a> that integrates the weather.raml file. Here's a <a href="/learnapidoc/assets/files/raml/examples/weather.raml">generic RAML API Console</a> that allows you to insert your own RAML spec code.
+    Here's a <a href="http://idratherbewriting.com/learnapidoc/assets/files/raml/specific.html">sample RAML API Console output</a> that integrates the weather.raml file. Here's a <a href="http://idratherbewriting.com/learnapidoc/assets/files/raml/examples/weather.raml">generic RAML API Console</a> that allows you to insert your own RAML spec code.
 
 ## Deliver doc through the RAML2HTML Utility
 
@@ -334,7 +334,7 @@ To generate this kind of output:
 	  <img src="images/raml2htmloutput.png" alt="RAML2HTML" />
 
 	  {: .tip}
-    To see this example in your browser, go to <a href="/learnapidoc/assets/files/raml/examples/index.html">/learnapidoc/assets/files/examples/index.html</a>.
+    To see this example in your browser, go to <a href="http://idratherbewriting.com/learnapidoc/assets/files/raml/examples/index.html">/learnapidoc/assets/files/examples/index.html</a>.
 
 ## Other platforms that consume RAML and Swagger
 

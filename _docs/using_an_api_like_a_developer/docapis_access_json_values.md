@@ -105,4 +105,4 @@ Let's say you wanted to print part of the JSON (the description element) to the 
     </html>
    ```
 
-    Here's <a href="/learnapidoc/assets/files/weatherdata-forecast.html">the result</a>.
+    Here's <a href="http://idratherbewriting.com/learnapidoc/assets/files/weatherdata-forecast.html">the result</a>.

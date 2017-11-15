@@ -27,11 +27,11 @@ You don't have your own meteorological service, so you'll need to make some call
 
 ## Get an idea of the end goal
 
-To give you an idea of the end goal, here's a sample: [idrathebewriting.com/learnapidoc/assets/files/wind-mashape.html](/learnapidoc/assets/files/wind-mashape.html). It's not necessarily styled the same as the mockup, but it answers the question, "How windy is it?"
+To give you an idea of the end goal, here's a sample: [idrathebewriting.com/learnapidoc/assets/files/wind-mashape.html](http://idratherbewriting.com/learnapidoc/assets/files/wind-mashape.html). It's not necessarily styled the same as the mockup, but it answers the question, "How windy is it?"
 
 Click the button to see wind details. When you request this data, an API goes out to a weather service, retrieves the information, and displays it to you.
 
-<a href="/learnapidoc/assets/files/wind-mashape.html"><img src="images/checkwindconditions.png" class="medium" /></a>
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-mashape.html"><img src="images/checkwindconditions.png" class="medium" /></a>
 
 The above example is extremely simple. You could also build an attractive interface like this:
 
@@ -82,7 +82,7 @@ Explore the Aeris Weather API by doing the following:
 4. In the list of endpoints, click **forecasts**.
 5. Browse the type of information that is available through this API.
 
-Here's the Aeris weather forecast API in action making the same call as I showed earlier with Mashape: <a href="/learnapidoc/assets/files/wind-aeris.html" alt="Aeris example">/learnapidoc/assets/files/wind-aeris.html</a>.
+Here's the Aeris weather forecast API in action making the same call as I showed earlier with Mashape: <a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-aeris.html" alt="Aeris example">/learnapidoc/assets/files/wind-aeris.html</a>.
 
 As you can see, both APIs contain this same information about wind, but the units differ.
 

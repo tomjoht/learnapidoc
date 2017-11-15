@@ -1,5 +1,5 @@
 ---
-title: "Design patterns overview"
+title: "Design patterns with API doc sites"
 permalink: /pubapis_design_patterns.html
 course: "Documenting REST APIs"
 sidebar: docapis
@@ -8,7 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-In the previous topic, we browsed up to [100 API doc sites](pubapis_apilist) and looked for similar patterns in their design. "Design patterns" are common approaches or techniques in the way something is designed. In looking over the many API doc sites, I tried to identify common approaches in the way the content was published.
+In the previous topic, we browsed up to [100 API doc sites](pubapis_apilist.html) and looked for similar patterns in their design. "Design patterns" are common approaches or techniques in the way something is designed. In looking over the many API doc sites, I tried to identify common approaches in the way the content was published.
 
 The following design patterns are common with API doc sites: structure and templates, website platforms, abundant code examples, long-ish pages, interactive API explorers, and GitHub as a storage platform. I explore each of these elements in the following sections.
 

@@ -22,14 +22,18 @@
                     </div>
 
                     {{content}}
+                    {% comment %}
                     {% unless page.permalink == "/docapis_course_reviews.html" %}
                     <p class="note" style="margin-top:30px">If this information was helpful, would you consider adding a <a href="https://idratherbewriting.wufoo.com/forms/sxgxvqb1ahtv6q/">course review comment</a>?</p>
                     {% endunless %}
+                    {% endcomment %}
                     {% include next.html %}
 
+                    {% comment %}
                     <div class="donateButton">
                     {% include donate_button.html %}
                     </div>
+                    {% endcomment %}
 
                   {% include single_post_ads.html %}
 

@@ -71,7 +71,7 @@ The event ID appears in the URL. Now populate the request with the ID of this ev
 https://www.eventbriteapi.com/v3/events/17920884849/?token={your api key}
 ```
 
-(If you need some sample API keys, you can use the [API keys](/learnapidoc/assets/files/apikeys.txt) listed here.)
+(If you need some sample API keys, you can use the [API keys](http://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt) listed here.)
 
 ## 4. Make a request and analyze the response
 
@@ -170,9 +170,9 @@ We covered this approach earlier in the course, so I won't go into much detail h
 {: .note}
 My API key is hidden from the above code sample to protect it from unauthorized access.
 
-Here's the <a href="/learnapidoc/assets/files/eventbrite-example.html">result</a>:
+Here's the <a href="http://idratherbewriting.com/learnapidoc/assets/files/eventbrite-example.html">result</a>:
 
-<a href="/learnapidoc/assets/files/eventbrite-example.html"><img src="images/eventbriteresultjoewelinske.png" alt="Eventbrite result" /></a>
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/eventbrite-example.html"><img src="images/eventbriteresultjoewelinske.png" alt="Eventbrite result" /></a>
 
 ## Code explanation
 

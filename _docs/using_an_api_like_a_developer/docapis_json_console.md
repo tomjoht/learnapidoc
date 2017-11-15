@@ -107,7 +107,7 @@ Mashape [provides some sample code in unirest](https://docs.rapidapi.com/v1.0/do
     ```
 
     {: .tip}
-    You can view the file here: [idratherbewriting.com/learnapidoc/assets/files/weatherdata-plain.html](/learnapidoc/assets/files/weatherdata-plain.html)
+    You can view the file here: [idratherbewriting.com/learnapidoc/assets/files/weatherdata-plain.html](http://idratherbewriting.com/learnapidoc/assets/files/weatherdata-plain.html)
 
 8.  Start Chrome and open the JavaScript Console by going to **View > Developer > JavaScript Console**.
 9.  Open the weatherdata.html file in Chrome (**File > Open File**).

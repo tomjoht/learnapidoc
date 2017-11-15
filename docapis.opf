@@ -66,7 +66,7 @@ layout: null
   <!-- Date: Date of publication in YYYY-MM-DD format. (Days and month can be omitted).
        Standard to follow: http://www.w3.org/TR/NOTE-datetime
   -->
-	<dc:date>2017-10-14</dc:date>
+	<dc:date>2017-12-01</dc:date>
 
   <!-- Description: A short description of the publication's content. -->
   <dc:description>A guide for technical writers documenting REST APIs in software development companies.</dc:description>
@@ -97,27 +97,34 @@ layout: null
     <item id="item_{{folder.jurl | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{folder.jurl | remove: "/" }}"></item>
 {% for folderitem in folder.folderitems %}
   {% if folderitem.title %}
-    <item id="item_{{folderitem.jurl | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{folderitem.jurl | remove: "/" }}"></item>
-    {% endif %}
+    {% unless folderitem.type == "web" %}
+      <item id="item_{{folderitem.jurl | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{folderitem.jurl | remove: "/" }}"></item>
+    {% endunless %}
+  {% endif %}
       {% for subfolder in folderitem.subfolders %}
     <item id="item_{{subfolder.jurl | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{subfolder.jurl | remove: "/" }}"></item>
               {% for subfolderitem in subfolder.subfolderitems %}
                 {% if subfolderitem.title %}
-    <item id="item_{{subfolderitem.jurl | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{subfolderitem.jurl | remove: "/" }}"></item>
-                    {% endif %}
+                  {% unless subfolderitem.type == "web" %}
+                    <item id="item_{{subfolderitem.jurl | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{subfolderitem.jurl | remove: "/" }}"></item>
+                  {% endunless %}
+                {% endif %}
                       {% for subsubfolder in subfolderitem.subsubfolders %}
-    <item id="item_{{subsubfolder.jurl | remove: "/" }}" media-type="application/xhtml+xml" href="{{subsubfolder.jurl | remove: "/" }}"></item>
+                          <item id="item_{{subsubfolder.jurl | remove: "/" }}" media-type="application/xhtml+xml" href="{{subsubfolder.jurl | remove: "/" }}"></item>
                             {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
                               {% if subsubfolderitem.title %}
-    <item id="item_{{subsubfolderitem.jurl | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{subsubfolderitem.jurl | remove: "/" }}"></item>
+                                {% unless subsubfolderitem.type == "web" %}
+                                  <item id="item_{{subsubfolderitem.jurl | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{subsubfolderitem.jurl | remove: "/" }}"></item>
+                                 {% endunless %}
                               {% endif %}
                             {% endfor %}
                       {% endfor %}
-{% endfor %}
-{% endfor %}
-{% endfor %}
+                  {% endfor %}
+              {% endfor %}
+          {% endfor %}
 {% endfor %}
 
+{% comment %}
 <!-- IMAGES -->
 {% assign image_files = site.static_files | where: "image", true %}
 {% for myimage in image_files %}
@@ -125,6 +132,7 @@ layout: null
   <item id="image{% increment imageCounter %}" media-type="image/{{myimage.extname | remove: "." }}" href="images{{ myimage.path | remove: "/images" }}"/>
 {% endunless %}
 {% endfor %}
+{% endcomment %}
 
 
   <!-- table of contents [mandatory] -->
@@ -158,19 +166,25 @@ layout: null
   <itemref idref="item_{{folder.jurl | remove: "/" | remove: ".html" }}"/>
 {% for folderitem in folder.folderitems %}
   {% if folderitem.title %}
+  {% unless folderitem.type == "web" %}
     <itemref idref="item_{{folderitem.jurl | remove: "/" | remove: ".html" }}"/>
+    {% endunless %}
     {% endif %}
       {% for subfolder in folderitem.subfolders %}
           <itemref idref="item_{{subfolder.jurl | remove: "/" | remove: ".html" }}"/>
               {% for subfolderitem in subfolder.subfolderitems %}
                 {% if subfolderitem.title %}
+                {% unless subfolderitem.type == "web" %}
                   <itemref idref="item_{{subfolderitem.jurl | remove: "/" | remove: ".html" }}"/>
+                  {% endunless %}
                     {% endif %}
                       {% for subsubfolder in subfolderitem.subsubfolders %}
                           <itemref idref="item_{{subsubfolder.jurl | remove: "/" | remove: ".html" }}"/>
                             {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
                               {% if subsubfolderitem.title %}
+                              {% unless subsubfolderitem.type == "web" %}
                                   <itemref idref="item_{{doc.subsubfolderitem | remove: "/" | remove: ".html" }}"/>
+                                {% endunless %}
                               {% endif %}
                             {% endfor %}
                       {% endfor %}

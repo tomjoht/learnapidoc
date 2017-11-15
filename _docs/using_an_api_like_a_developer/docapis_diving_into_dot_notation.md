@@ -185,9 +185,9 @@ A few things are different here, but it's essentially the same code:
 
 When you load the page and click the button, the following should appear:
 
-<a href="/learnapidoc/assets/files/wind-mashape.html"><img src="images/windconditionsfinaloutput.png" alt="Final REST API" /></a>
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-mashape.html"><img src="images/windconditionsfinaloutput.png" alt="Final REST API" /></a>
 
-You can view the file <a href="/learnapidoc/assets/files/wind-mashape.html">here</a>.
+You can view the file <a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-mashape.html">here</a>.
 <hr />
 
 **Answers to "Exercise with dot notation activity"**

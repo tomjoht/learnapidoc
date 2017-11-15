@@ -130,6 +130,6 @@ Note that Programmableweb lists only open web APIs, meaning APIs that you can ac
 
 {% include activity.html %}
 
-Look at about 5 different APIs (choose any of those listed on the page). Look for one thing that the APIs have in common. I provide a list of patterns in the next topic: [Design patterns overview docs](pubapis_design_patterns.html).
+Look at about 5 different APIs (choose any of those listed on the page). Look for one thing that the APIs have in common. I provide a list of patterns in the next topic: [Design patterns with API doc sites](pubapis_design_patterns.html).
 
 {% include note.html content="By analyzing API doc sites first before presenting conclusions, I hope to implement more of an inductive, unbiased approach toward the conclusions I draw about API docs in this course." %}

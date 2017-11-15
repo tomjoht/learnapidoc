@@ -70,7 +70,7 @@ The sample project doesn't use Maven, but I want to add a note about Maven here 
 
 This Java app doesn't do much. It's main purpose is to create some classes where I can add some Javadoc annotations. But for fun, you can run the app.
 
-In the Package Explorer, expand **javadoc_tags** and select the **App.java**. Then click the **Run App** button <img src="images/javarunbutton.png" style="max-width: 16px"/>.
+In the Package Explorer, expand **javadoc_tags** and select the **App.java**. Then click the **Run App** button <img src="images/javarunbutton.png" />.
 
 The main method runs these functions:
 
