@@ -3,3 +3,6 @@ _site/
 .jekyll-metadata
 **/.DS_Store
 pdf/docapis.pdf
+/mobi/
+*.mobi
+mobi/docapis.mobi
