@@ -18,9 +18,7 @@ Second, I knew that through feedback, I could refine the information and make it
 
 Finally, the content would help drive traffic to my site. How would people discover the material if they couldn't find it online? If the material were only trapped in a print book or behind a firewall, it would be difficult to discover. But as content strategists know, documentation is a rich information asset that draws traffic to any site. It's what people primarily search for online.
 
-After having put the API doc on my site for some months, the [feedback was positive](docapis_course_reviews.html).
-
-As much as possible, through this feedback I helped clarify and strengthen the overall content.
+After having put the API doc on my site for some months, the feedback was positive. As much as possible, through this feedback I helped clarify and strengthen the overall content.
 
 {% include random_ad.html %}
 
