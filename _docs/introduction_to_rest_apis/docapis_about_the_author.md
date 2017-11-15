@@ -8,7 +8,7 @@ section: introtoapis
 path1: /introtoapis.html
 ---
 
-<img src="images/tomjohnson.jpg" class="medium" />
+<img src="images/tomjohnson.jpg" class="small" style="float: right; padding-left:15px;"/>
 
 Hi, I'm Tom Johnson, a technical writer in the San Francisco Bay area. I work at [Amazon Lab126](http://www.lab126.com/), which builds the devices for many of Amazon's products (such as the Kindle, Echo, Fire TV, and more). Here's the story of how I got into API documentation.
 
