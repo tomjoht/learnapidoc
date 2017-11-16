@@ -1,5 +1,5 @@
 ---
-title: Resources
+title: Resources and glossary
 permalink: /resources.html
 sidebar: docapis
 ---
