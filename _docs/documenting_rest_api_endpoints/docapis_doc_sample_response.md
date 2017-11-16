@@ -20,7 +20,7 @@ It's important to provide a sample response from the endpoint. This lets develop
 
 Here's an example from Flattr's API. In this case, the response actually includes the response header as well as the response body:
 
-<a href="http://developers.flattr.net/api/resources/activities/"><img src="images/flattr.png" alt="Flattr example" /></a>
+<a href="http://developers.flattr.net/api/resources/activities/" class="noExtIcon"><img src="images/flattr.png" alt="Flattr example" /></a>
 
 If the header information is important, include it. Otherwise, leave it out.
 
@@ -40,20 +40,20 @@ Does each city/country define its own index? Does a high number indicate a poor 
 
 Many times the response contains nested objects (objects within objects). Here Dropbox represents the nesting with a slash. For example, `team/name` provides the documentation for the `name` object within the `team` object.
 
-<a href="https://www.dropbox.com/developers/core/docs#disable-token"><img src="images/returnvaluedefinitions.png" alt="Dropbox nested example" /></a>
+<a href="https://www.dropbox.com/developers/core/docs#disable-token" class="noExtIcon"><img src="images/returnvaluedefinitions.png" alt="Dropbox nested example" /></a>
 
 {: .tip}
 Notice how the response values are in a monospaced font while the descriptions are in a regular font? This helps improve the readability.
 
 Other APIs will nest the response definitions to imitate the JSON structure. Here's an example from bit.ly's API:
 
-<a href="http://dev.bitly.com/user_info.html"><img src="images/bitlyresponsedoc.png" alt="Bitly response" /></a>
+<a href="http://dev.bitly.com/user_info.html" class="noExtIcon"><img src="images/bitlyresponsedoc.png" alt="Bitly response" /></a>
 
 The indented approach with different levels of bullets can be an eyesore, so I recommend avoiding it.
 
 In [Peter Gruenbaum's API tech writing course on Udemy](https://www.udemy.com/api-documentation-1-json-and-xml/), he also represents the nested objects using tables:
 
-<a href="http://idratherbewriting.com/2015/05/22/api-technical-writing-course-on-udemy/"><img src="images/gruenbaumtable.png" alt="Peter Gruenbaum course" /></a>
+<a href="http://idratherbewriting.com/2015/05/22/api-technical-writing-course-on-udemy/" class="noExtIcon"><img src="images/gruenbaumtable.png" alt="Peter Gruenbaum course" /></a>
 
 Gruenbaum's use of tables is mostly to reduce the emphasis on tools and place it more on the content.
 
@@ -61,11 +61,11 @@ Gruenbaum's use of tables is mostly to reduce the emphasis on tools and place it
 
 eBay's approach is a little more unique:
 
-<a href="http://developer.ebay.com/Devzone/shopping/docs/CallRef/FindPopularItems.html"><img src="images/ebayexampleresponse.png" alt="eBay example response" /></a>
+<a href="http://developer.ebay.com/Devzone/shopping/docs/CallRef/FindPopularItems.html" class="noExtIcon"><img src="images/ebayexampleresponse.png" alt="eBay example response" /></a>
 
 For example, `MinimumAdvertisedPrice` is nested inside `DiscountPriceInfo`, which is nested in `Item`, which is nested in `ItemArray`. (Note also that this response is in XML instead of JSON.)
 
-<a href="http://developer.ebay.com/Devzone/shopping/docs/CallRef/FindPopularItems.html"><img src="images/ebaycode.png" alt="eBay nested example" /></a>
+<a href="http://developer.ebay.com/Devzone/shopping/docs/CallRef/FindPopularItems.html" class="noExtIcon"><img src="images/ebaycode.png" alt="eBay nested example" /></a>
 
 It's also interesting how much detail eBay includes for each item. Whereas the Twitter writers appear to omit descriptions, the eBay authors write small novels describing each item in the response.
 
@@ -76,7 +76,7 @@ A lot of APIs also return responses in XML, especially if the API is an older AP
 
 Some APIs collapse the response into a show/hide toggle to save space. Others put the response in a right column so you can see it while also looking at the endpoint description and parameters. Stripe's API made this tri-column design famous:
 
-<a href="https://stripe.com/docs/api#charge_object"><img src="images/stripetripanedesign.png" alt="Stripe's tri-column design" /></a>
+<a href="https://stripe.com/docs/api#charge_object" class="noExtIcon"><img src="images/stripetripanedesign.png" alt="Stripe's tri-column design" /></a>
 
 A lot of APIs have modeled their design after Stripe's. (For example, see <a href="https://github.com/tripit/slate">Slate</a> or <a href="http://readme.io">readme.io</a>.)
 
@@ -116,7 +116,7 @@ In addition to using standard tables to document JSON responses, you can also im
 
 In my [documentation theme for Jekyll](http://idratherbewriting.com/documentation-theme-jekyll), I tried an approach to documenting JSON that uses a jQuery plugin called ScrollTo. You can [see it here](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_scroll.html):
 
-<a href="http://idratherbewriting.com/documentation-theme-jekyll/mydoc_scroll.html"><img src="images/scrollto-550x310.png" alt="Scrollto"  style="border:1px solid #dedede;"/></a>
+<a href="http://idratherbewriting.com/documentation-theme-jekyll/mydoc_scroll.html" class="noExtIcon"><img src="images/scrollto-550x310.png" alt="Scrollto"  style="border:1px solid #dedede;"/></a>
 
 When you click on an item in the JSON object, the right-pane scrolls to the item's description. I like this approach, though I've not really seen it done in other API documentation sites.
 
@@ -129,7 +129,7 @@ Also, this approach doesn't allow for easy scanning. However, this scrolling vie
 
 In Stripe's API documentation, the writers try to juxtapose the responses in a right side pane with the documentation in the main window.
 
-<a href="https://stripe.com/docs/api#charge_object"><img src="images/stripe-550x373.png" alt="Stripe" style="border:1px solid #dedede;"/> </a>
+<a href="https://stripe.com/docs/api#charge_object" class="noExtIcon"><img src="images/stripe-550x373.png" alt="Stripe" style="border:1px solid #dedede;"/> </a>
 
 The idea is that you can see both the description and a sample response at the same time, and just scroll down.
 
@@ -139,7 +139,7 @@ However, the description doesn't always line up with the sample response. (In so
 
 Some sites, like Twitter's API docs, don't seem to describe the items in the JSON response at all. Looking at this [long response for the post status/retweet endpoint](https://dev.twitter.com/rest/reference/post/statuses/retweet/%3Aid) in Twitter's API docs, there isn't even an attempt to describe what all the items mean. Maybe they figure most of the items in the response are self-evident?
 
-<a href="https://dev.twitter.com/rest/reference/post/statuses/retweet/%3Aid"><img src="images/twitternojsondoc.png" alt="Twitter" style="border:1px solid #dedede;"/></a>
+<a href="https://dev.twitter.com/rest/reference/post/statuses/retweet/%3Aid" class="noExtIcon"><img src="images/twitternojsondoc.png" alt="Twitter" style="border:1px solid #dedede;"/></a>
 
 Theoretically, each item in the JSON response should be a clearly chosen word that represents what it means in an obvious way. However, to reduce the size and increase the speed of the response, developers often resort to shorter terms or use abbreviations. The shorter the term, the more it needs accompanying documentation.
 
@@ -163,7 +163,7 @@ The MYOB Developer Center takes an interesting approach in documenting the JSON 
 
 To the right of the JSON definitions is a code sample with real values. When you select a value, both the element in the table and the element in the code sample highlight at the same time.
 
-<a href="http://developer.myob.com/api/accountright/v2/generalledger/account/#GET"><img src="images/myobjsondoc.png" alt="MYOB JSON doc approach" /></a>
+<a href="http://developer.myob.com/api/accountright/v2/generalledger/account/#GET" class="noExtIcon"><img src="images/myobjsondoc.png" alt="MYOB JSON doc approach" /></a>
 
 If you have long JSON objects like this, a custom table with different classes applied to different levels might be the only truly usable solution. It facilitates scanning, and the popover + collapsible approach allows you to compress the table so you can jump to the part you're interested in.
 

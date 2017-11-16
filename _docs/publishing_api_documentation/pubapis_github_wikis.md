@@ -21,7 +21,7 @@ When you create a repository on GitHub, the repository comes with a wiki that yo
 
 Here's an example of the Basecamp API, which is housed on GitHub.
 
-<a href="https://github.com/basecamp/bcx-api"><img src="images/basecampapi.png" alt="Basecamp API" /></a>
+<a href="https://github.com/basecamp/bcx-api" class="noExtIcon"><img src="images/basecampapi.png" alt="Basecamp API" /></a>
 
 ## Markdown syntax
 
@@ -88,7 +88,7 @@ In this section, you'll be using Git commands through your terminal or command p
 
 1. Go to [GitHub](https://github.com) and sign in. After you're signed in, click the **+** button in the upper-right corner and select **New repository**.
 
-	<a href="https://github.com/new"><img src="images/newrepositorygithub.png" alt="Creating a new GitHub repository" /></a>
+	<a href="https://github.com/new" class="noExtIcon"><img src="images/newrepositorygithub.png" alt="Creating a new GitHub repository" /></a>
 
 2. Give the repository a name, description, select **Public**, select **Initialize the repo with a README**, and then click **Create repository**.
 3. Click the **Wiki** link at the top of the repository.

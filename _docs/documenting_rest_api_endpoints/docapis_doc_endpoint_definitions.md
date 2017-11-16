@@ -75,11 +75,11 @@ In general, if the placeholder name is ambiguous as to whether it's a placeholde
 
 It's common to list the method (GET, POST, PUT, DELETE) next to the endpoint. Since there's not much to say about the method itself, it makes sense to group the method with the endpoint. Here's an example from Box's API:
 
-<a href="https://developer.box.com/reference/#add-a-comment-to-an-item"><img src="images/methodwithendpoint.png" alt="Box API" /></a>
+<a href="https://developer.box.com/reference/#add-a-comment-to-an-item" class="noExtIcon"><img src="images/methodwithendpoint.png" alt="Box API" /></a>
 
 And here's an example from Linkedin's API:
 
-<a class="noCrossRef" href="https://developer.linkedin.com/docs/rest-api"><img src="images/linkedinexample.png" alt="Linkedin Example" /></a>
+<a class="noCrossRef" href="https://developer.linkedin.com/docs/rest-api" class="noExtIcon"><img src="images/linkedinexample.png" alt="Linkedin Example" /></a>
 
 {: .tip}
 Sometimes the method is referred to as the "verb." GET, PUT, POST, and DELETE are all verbs or actions.

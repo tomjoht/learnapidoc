@@ -752,7 +752,7 @@ Swagger UI displays each object in `components` in a section called `Models` at 
 
 Because I want to re-use objects, I'm going define each object in `components` separately. As a result, the Models section looks like this:
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html"><img src="images/swaggerui_models_broken_out.png" /></a>
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/swaggerui_models_broken_out.png" /></a>
 
 ## Reason for models in the first place
 
@@ -760,7 +760,7 @@ The Models section is now in the latest version of Swagger UI. I'm not really su
 
 You don't need this Models section in Swagger UI because both the request and response sections of Swagger UI provide a "Model" link that lets the user toggle to this view. For example:
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html"><img src="images/models_options_in_responses.png" /></a>
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/models_options_in_responses.png" /></a>
 
 ## Hiding the Models section
 

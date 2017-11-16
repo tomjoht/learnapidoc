@@ -12,7 +12,7 @@ Although this course has focused heavily on tools, I want to emphasize that cont
 
 Once you get the tooling infrastructure in place, it should mostly take a back seat to the daily tasks of content development.
 
-<a href="https://flic.kr/p/QMVMw"><img src="images/toolscontent.png" alt="Dave's Bike Tools, Bri Pettis, Flickr" /></a>
+<a href="https://flic.kr/p/QMVMw" class="noExtIcon"><img src="images/toolscontent.png" alt="Dave's Bike Tools, Bri Pettis, Flickr" /></a>
 
 I've changed my doc platforms numerous times, and rarely does anyone seem to care or notice. As long as it "looks decent," most project managers and users will focus on the content much more than the design. In some ways, the design should be invisible and unobtrusive, not foregrounding the focus on the content. In other words, the user shouldn't be distracted by the tooling.
 

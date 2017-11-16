@@ -90,7 +90,7 @@ Properties you can use in the `securitySchemes` object include the following:
 
 In the Swagger UI, you see the `description` and other security details in the Authorization modal (which appears when you click the Authorization button):
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html"><img src="images/openapitutorial_securityauth.png"/></a>
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapitutorial_securityauth.png"/></a>
 
 After users enter an API key and clicks **Authorize**, the authorization method is set for as many requests as they want to make. Only when users refresh the page does the authorization session expire.
 

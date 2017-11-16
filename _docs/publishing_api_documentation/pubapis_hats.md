@@ -19,7 +19,7 @@ In contrast to [docs-as-code tools](pubapis_docs_as_code.html), help authoring t
 
 Here's a sample help output from Flare for the Photobucket API:
 
-<a href="https://pic.photobucket.com/dev_help/WebHelpPublic/PhotobucketPublicHelp_Left.htm#CSHID=FAQ/FAQOverview.htm|StartTopic=Content/FAQ/FAQOverview.htm|SkinName=WebHelp"><img src="images/hatphotobucket.png" alt="Publishing API docs" /></a>
+<a href="http://bit.ly/photobucketlongurl" class="noExtIcon"><img src="images/hatphotobucket.png" alt="Publishing API docs" /></a>
 
 ## Pros of using a help authoring tool
 

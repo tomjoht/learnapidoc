@@ -19,7 +19,7 @@ As you use the API, you'll learn about endpoints, parameters, data types, authen
 The idea is that rather than learning about these concepts independent of any context, you learn them by immersing yourself in a real scenario while using an API. This makes these tools more meaningful.
 
 <figure>
-{% if site.format == "pdf" %}<img class="medium" src="images/restapi_www.png" alt="Web as REST API" />
+{% if site.format == "pdf" or site.format == "kindle" %}<img src="images/restapi_www.png" alt="Web as REST API" />
 {% elsif site.format == "web" %}<img class="medium" src="images/restapi_www.svg" alt="Web as REST API" />
 {% endif %}
 <figcaption>REST APIs involve requests and responses over HTTP protocol</figcaption></figure>
@@ -53,7 +53,6 @@ This course is organized into the following sections:
 *  [Documenting endpoints](docendpoints.html)
 *  [Testing your API documentation](testingdocs.html)
 *  [Documenting non-reference sections](docnonref.html)
-*  [Exploring other REST APIs](otherapis.html)
 *  [Publishing your API documentation](publishingapis.html)
 *  [Using REST API specifications](restapispecifications.html)
 *  [Documenting native library APIs](nativelibraryapis.html)
@@ -63,6 +62,9 @@ This course is organized into the following sections:
 You don't have to read the sections in order &mdash; skip around as you prefer. But some of the earlier sections on using a REST API like a developer and documenting endpoints follow a somewhat sequential order with the same weather API scenario.
 
 Because the purpose of the course is to help you learn, there are many activities that require hands-on coding and other exercises. Along with the learning activities, there are also conceptual deep dives, but the focus is always on *learning by doing*.
+
+{: .note}
+I refer to the content here as a "course" instead of a book or a website, primarily because I include a lot of exercises throughout in each section, and I find that people seeking to learn API documentation prefer a more hands-on "course" experience.
 
 ## No programming skills required
 
@@ -78,11 +80,11 @@ JavaScript is one of the most useful and easy languages to become familiar with,
 
 Here are a few things you'll need to do the exercises in this course:
 
-* **Text editor**. ([Sublime Text](http://www.sublimetext.com/) is a good option (it works on both Mac and Windows), but any text editor will do. On Windows, [Notepad++](https://notepad-plus-plus.org/) and [Komodo Edit](http://komodoide.com/komodo-edit/) are also good.)
-* **[Chrome browser](http://www.google.com/chrome/)**. (Other browsers are fine too, but we'll be using Chrome's Developer Console.)
-* **[Postman - REST Client (Chrome or Mac app)](http://www.getpostman.com/)**. Postman is an app that allows you to make requests and see responses through a GUI client. You can either use the Chrome or Mac app.
-* **[cURL](http://curl.haxx.se/)**. cURL is essential for making requests to endpoints from the command line. Mac computers already have cURL installed. Windows users should follow the instructions for installing cURL [here](http://www.confusedbycode.com/curl/#downloads).
-* **[Git](https://git-scm.com/)**. Git is a version control tool developers often use to collaborate on code. See [Set Up Git](https://help.github.com/articles/set-up-git/) for more details.
+* **Text editor**. ([Sublime Text](http://www.sublimetext.com/) is a good option (it works on both Mac and Windows), but other text editors will also work.
+* **Chrome browser**. [Chrome](https://www.google.com/chrome/browser/desktop/index.html) provides a Javascript Console that works well for inspecting JSON, so we'll be using this browser. [Firefox](https://www.mozilla.org/en-US/firefox/) works well too if you prefer that.
+* **Postman**. [Postman](http://www.getpostman.com/) is an app that allows you to make requests and see responses through a GUI client.
+* **cURL**. [cURL](http://curl.haxx.se/) is essential for making requests to endpoints from the command line. Mac computers already have cURL installed. Windows users should follow the instructions for installing cURL [here](http://www.confusedbycode.com/curl/#downloads).
+* **Git**. [Git](https://git-scm.com/) is a version control tool developers often use to collaborate on code. See [Set Up Git](https://help.github.com/articles/set-up-git/) for more details.
 
 {% if site.format == "web" %}
 ## Short version of the course in video

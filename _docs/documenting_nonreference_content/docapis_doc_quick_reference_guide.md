@@ -18,11 +18,11 @@ The quick reference guide serves a different function from the getting started g
 ## Sample quick reference guide
 Here's a quick reference guide from Eventful's API:
 
-<a href="http://api.eventful.com/docs"><img src="images/eventfulquickreference.png" alt="Eventful quick reference" /></a>
+<a href="http://api.eventful.com/docs" class="noExtIcon"><img src="images/eventfulquickreference.png" alt="Eventful quick reference" /></a>
 
 An online quick reference guide can serve as a great entry point into the documentation. Here's a quick reference from Shopify about using Liquid:
 
-<a href="http://cheat.markdunkley.com/"><img src="images/shopifyqrg.png" alt="Shopify quick reference guide" /></a>
+<a href="http://cheat.markdunkley.com/" class="noExtIcon"><img src="images/shopifyqrg.png" alt="Shopify quick reference guide" /></a>
 
 ## Visual quick reference guides
 

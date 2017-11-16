@@ -1,6 +1,5 @@
 language: english
 format: kindle
-type: kindle
 sidebar: docapis
 
 destination: _site

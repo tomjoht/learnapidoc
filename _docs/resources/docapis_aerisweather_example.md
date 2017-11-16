@@ -3,10 +3,10 @@ title: 'Aeris Weather Example: Get wind speed'
 permalink: /docapis_aerisweather_example.html
 keywords:
 course: "Documenting REST APIs"
-weight: 6.4
+weight: 13.5
 sidebar: docapis
-section: otherapis
-path1: /otherapis.html
+section: resources
+path1: /resources.html
 ---
 
 Use the Aeris Weather API to get the wind speed (MPH) for a specific place (your choice).
@@ -30,7 +30,7 @@ See the [Getting Started](http://www.aerisweather.com/support/docs/api/getting-s
 
 Browse through the [available endpoints](http://www.aerisweather.com/support/docs/api/reference/endpoints/) and look for one that would give you the wind speed. The [`observations`](http://www.aerisweather.com/support/docs/api/reference/endpoints/observations/) resource provides information about wind speed, as does [`forecasts`](http://www.aerisweather.com/support/docs/api/reference/endpoints/forecasts/). The response from `observations` looks a little simpler, so let's use that endpoint.
 
-<a href="http://www.aerisweather.com/support/docs/api/reference/endpoints/observations/"><img src="images/aerisobservations.png" alt="Aeris Weather observations resource" /></a>
+<a href="http://www.aerisweather.com/support/docs/api/reference/endpoints/observations/" class="noExtIcon"><img src="images/aerisobservations.png" alt="Aeris Weather observations resource" /></a>
 
 {% include random_ad.html %}
 
@@ -184,4 +184,4 @@ To add a little variety to the code samples, here's one that's a bit different. 
 
 Here's the <a href="http://idratherbewriting.com/learnapidoc/assets/files/aeris-observations.html">result</a>:
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/aeris-observations.html"><img src="images/notthatwindy.png" alt="Aeris Weather example" /></a>
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/aeris-observations.html" class="noExtIcon"><img src="images/notthatwindy.png" alt="Aeris Weather example" /></a>

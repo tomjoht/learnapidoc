@@ -2,10 +2,10 @@
 title: Next phase of course
 permalink: /docapis_completion.html
 course: "Documenting REST APIs"
-weight: 6.5
+weight: 3.8
 sidebar: docapis
-section: otherapis 
-path1: /otherapis.html
+section: docendpoints
+path1: /docendpoints.html
 ---
 
 Congratulations, you finished the documenting REST APIs section of the course. You've learned the core of documenting REST APIs. We haven't covered publishing tools or strategies. Instead, this part of the course has focused on the creating content, which should always be the first consideration.
@@ -36,6 +36,16 @@ Then you switched perspectives and approached APIs from a technical writer's poi
 * Status codes
 
 Although the technology landscape is broad, and there are many different technology platforms, languages, and code bases, most REST APIs have these same sections in common.
+
+## More practice
+
+If you'd like to get more practice making requests to APIs and doing something with the response (even just printing it to the page), check out the additional tutorials in the [Resources](resources.html) section:
+
+* [Overview for exploring other REST APIs](docapis_more_rest_exercises.html)
+* [EventBrite example: Get event information](docapis_eventbrite_example.html)
+* [Flickr example: Retrieve a Flickr gallery](docapis_flickr_example.html)
+* [Klout example: Retrieve Klout influencers](docapis_klout_example.html)
+* [Aeris Weather Example: Get wind speed](docapis_aerisweather_example.html)
 
 ## The next part of the course
 

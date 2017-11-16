@@ -56,7 +56,7 @@ Parameter
 
 Here's an example from Yelp's documentation:
 
-<a class="noCrossRef" href="https://www.yelp.com/developers/documentation/v2/search_api"><img src="images/yelp_3_17.png" alt="Yelp parameters" /></a>
+<a class="noCrossRef" href="https://www.yelp.com/developers/documentation/v2/search_api" class="noExtIcon"><img src="images/yelp_3_17.png" alt="Yelp parameters" /></a>
 
 You can format the values in a variety of ways (aside from a table). If you're using a definition list or other non-table format, you should develop styles that make the values easily readable.
 
@@ -112,7 +112,7 @@ However, if the parameter is part of the actual endpoint path (not added in the 
 
 Here's an example from Twilio:
 
-<a href="https://www.twilio.com/docs/api/rest/lookups"><img src="images/twilio_3_17.png" alt="Twilio Example" /></a>
+<a href="https://www.twilio.com/docs/api/rest/lookups" class="noExtIcon"><img src="images/twilio_3_17.png" alt="Twilio Example" /></a>
 
 The `{PhoneNumber}` value in `lookups.twilio.com/v1/PhoneNumbers/{PhoneNumber}` is described in the endpoint description rather than in another section that lists the query parameters.
 
@@ -193,11 +193,11 @@ By all means, if the JSON object is relatively small, a table is probably your b
 
 Take a look at eBay's [findItemsByProduct](http://developer.ebay.com/DevZone/finding/CallRef/findItemsByProduct.html) endpoint.
 
-<a class="noCrossRef" href="http://developer.ebay.com/DevZone/finding/CallRef/findItemsByProduct.html"><img src="images/ebaysample_3_17.png" alt="eBay parameters" /></a>
+<a class="noCrossRef" class="noExtIcon" href="http://developer.ebay.com/DevZone/finding/CallRef/findItemsByProduct.html"><img src="images/ebaysample_3_17.png" alt="eBay parameters" /></a>
 
 There's a table below the sample request that describes each parameter:
 
-<a class="noCrossRef" href="http://developer.ebay.com/DevZone/finding/CallRef/findItemsByProduct.html"><img src="images/ebaytable_3_17.png" alt="eBay parameters" /></a>
+<a class="noCrossRef" class="noExtIcon" href="http://developer.ebay.com/DevZone/finding/CallRef/findItemsByProduct.html"><img src="images/ebaytable_3_17.png" alt="eBay parameters" /></a>
 
 But the sample request also contains links to each of the parameters. When you click a parameter value in the sample request, you go to a page that provides more details about that parameter value, such as the [ItemFilter](http://developer.ebay.com/DevZone/finding/CallRef/types/ItemFilter.html). This is likely because the parameter values are more complex and require more explanation.
 

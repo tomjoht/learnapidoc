@@ -37,7 +37,7 @@ Many of the client and server SDKs can be auto-generated from SwaggerHub, and th
 
 To get started with SwaggerHub, go to [swaggerhub.com](https://swaggerhub.com/) and create an account or sign in with your GitHub credentials. After signing in, you see the SwaggerHub dashboard.
 
-<a href="https://app.swaggerhub.com/home"><img src="images/swaggerhubhomepage.png" /></a>
+<a href="https://app.swaggerhub.com/home" class="noExtIcon"><img src="images/swaggerhubhomepage.png" /></a>
 
 The dashboard shows a list of the APIs you've created. In this example, you see the [Weather API](docapis_scenario_for_using_weather_api.html) that I've been using throughout this course.
 

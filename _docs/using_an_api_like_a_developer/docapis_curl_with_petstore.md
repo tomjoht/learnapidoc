@@ -11,7 +11,7 @@ path1: /likeadeveloper.html
 
 Our sample weather API from Mashape doesn't allow you to use anything but a GET method, so for this example, we'll use the [petstore API from Swagger](http://petstore.swagger.io/), but without actually using the Swagger UI (which is something we'll explore later). For now, we just need an API with which we can use to create, update, and delete content.
 
-<a href="http://petstore.swagger.io/"><img src="images/petstore.png" alt="Swagger Petstore" /></a>
+<a href="http://petstore.swagger.io/" class="noExtIcon"><img src="images/petstore.png" alt="Swagger Petstore" /></a>
 
 In this example, you'll create a new pet, update the pet, get the pet's ID, delete the pet, and then try to get the deleted pet.
 

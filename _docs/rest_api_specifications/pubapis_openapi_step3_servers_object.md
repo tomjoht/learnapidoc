@@ -48,7 +48,7 @@ servers:
 
 In Swagger UI, here's how the servers appear to users with multiple server URLs:
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html"><img src="images/openapi_serversurl.png"/></a>
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapi_serversurl.png"/></a>
 
 If you have just one URL, you still see a drop-down box but with just one option.
 

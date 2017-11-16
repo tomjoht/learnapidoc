@@ -30,7 +30,7 @@ If a developer or QA person can't give you access to any such test server or sam
 
 Most of the time, developers respect technical writers tenfold when the technical writers write doc from test systems, trying things out for themselves. Engineers also appreciate any feedback you may have as you run through the system. Technical writers are usually the first users.
 
-<figure><a href="https://flic.kr/p/6Grete"><img src="images/testingeverything.jpg" alt="Testing everything" /></a><figcaption>Photo from Flickr (https://flic.kr/p/6Grete). City water testing laboratory, 1948</figcaption></figure>
+<figure><a href="https://flic.kr/p/6Grete" class="noExtIcon"><img src="images/testingeverything.jpg" alt="Testing everything" /></a><figcaption>Photo from Flickr (https://flic.kr/p/6Grete). City water testing laboratory, 1948</figcaption></figure>
 
 If it's really complicated to set up a local environment or to access a test server, ask an engineer to install the local system on your machine. Tell him or her that, in order to write good documentation &mdash; documentation that is accurate, complete, and doesn't assume anything &mdash; you need access to these test systems.
 

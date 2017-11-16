@@ -49,11 +49,11 @@ Once users know the domain root, they can easily add any endpoint to that domain
 ## Sample Getting Started sections
 Here's the Getting Started section from the Alchemy API:
 
-<a href="http://www.alchemyapi.com/developers/getting-started-guide"><img src="images/alchemyapigettingstarted.png" alt="Alchemy API" /></a>
+<a href="http://www.alchemyapi.com/developers/getting-started-guide" class="noExtIcon"><img src="images/alchemyapigettingstarted.png" alt="Alchemy API" /></a>
 
 Here's a Getting Started tutorial from the HipChat API:
 
-<a href="https://www.hipchat.com/docs/apiv2"><img src="images/hipchatgettingstarted.png" alt="HipChat API Getting Started" /></a>
+<a href="https://www.hipchat.com/docs/apiv2" class="noExtIcon"><img src="images/hipchatgettingstarted.png" alt="HipChat API Getting Started" /></a>
 
 {% include random_ad.html %}
 
@@ -63,7 +63,7 @@ Here's a Getting Started section from the Aeris Weather API:
 
 Here's another example of a Getting Started tutorial from Smugmug's API:
 
-<a href="https://api.smugmug.com/api/v2/doc"><img src="images/smugmuggettingstarted.png" alt="Smugmug" /></a>
+<a href="https://api.smugmug.com/api/v2/doc" class="noExtIcon"><img src="images/smugmuggettingstarted.png" alt="Smugmug" /></a>
 
 I like how, right from the start, Smugmug tries to hold your hand to get you started. In this case, the tutorial for getting started is integrated directly in with the main documentation.
 

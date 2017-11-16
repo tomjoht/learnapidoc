@@ -97,7 +97,7 @@ If the string matches the signature in the request header, it accepts the reques
 
 Here's a diagram depicting this workflow:
 
-{% if site.format == "pdf" %}
+{% if site.format == "pdf" or site.format == "kindle" %}
 <img class="medium" src="images/restapi_hmac.png" alt="HMAC workflow" />
 {% elsif site.format == "web" %}
 <img  class="medium" src="images/restapi_hmac.svg" alt="HMAC workflow" />
@@ -123,7 +123,7 @@ In contrast, three-legged OAuth is used when you need to protect sensitive data.
 
 Here's the basic workflow of OAuth 2.0:
 
-{% if site.format == "pdf" %}
+{% if site.format == "pdf" or site.format == "kindle" %}
 <img class="medium" src="images/restapi_oauth.png" alt="OAuth workflow" />
 {% elsif site.format == "web" %}
 <img  class="medium" src="images/restapi_oauth.svg" alt="OAuth workflow" />
@@ -166,7 +166,7 @@ Since the API keys section is usually essential before developers can start usin
 
 Here's a screenshot from SendGrid's documentation on API keys:
 
-<a href="https://sendgrid.com/docs/User_Guide/Settings/api_keys.html"><img src="images/sendgridapikeys.png" alt="SendGrid API Keys" /></a>
+<a href="https://sendgrid.com/docs/User_Guide/Settings/api_keys.html" class="noExtIcon"><img src="images/sendgridapikeys.png" alt="SendGrid API Keys" /></a>
 
 ## Include information on rate limits
 Whether in the authorization keys or another section, you should list any applicable rate limits to the API calls. Rate limits determine how frequently you can call a particular endpoint. Different tiers and licenses may have different capabilities or rate limits.
@@ -175,4 +175,4 @@ If your site has hundreds of thousands of visitors a day, and each page reload c
 
 Here's a great example of the rate limits section from the Github API:
 
-<a href="https://developer.github.com/v3/#rate-limiting"><img src="images/githubratelimiting.png" alt="Rate limiting section from Github" /></a>
+<a href="https://developer.github.com/v3/#rate-limiting" class="noExtIcon"><img src="images/githubratelimiting.png" alt="Rate limiting section from Github" /></a>

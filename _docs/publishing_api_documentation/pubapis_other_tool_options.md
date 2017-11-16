@@ -57,7 +57,7 @@ Here are a few sample API doc sites built with Readme.io:
 
 [Miredot](http://miredot.com/) is one of the tools you can use to generate reference API documentation from a Java source. Miredot is a plugin for Maven, which is a build tool that you integrate into your Java IDE. Miredot can generate an offline website that looks like this:
 
-<a href="http://miredot.com/exampledocs/"><img src="images/miredotexample.png" alt="Miredot example" /></a>
+<a href="http://miredot.com/exampledocs/" class="noExtIcon"><img src="images/miredotexample.png" alt="Miredot example" /></a>
 
 You can read the [Getting started guide](http://miredot.com/docs/getting-started/) for Miredot for instructions on how to incorporate it into your Java project.
 
@@ -88,7 +88,7 @@ To explore Miredot's output:
 1. Browse the [Miredot sample code](https://github.com/Qmino/miredot-petstore/blob/master/src/main/java/com/qmino/miredot/petstore/service/CatalogService.java).
 2. To see how this information gets rendered in the Miredot output, go to the [Petstore example docs](http://miredot.com/exampledocs/), expand **Catalog > Category** on the right, and then select **PUT**. Or go directly [here](http://www.miredot.com/exampledocs/#268738548).
 
-<a href="http://www.miredot.com/exampledocs/#268738548"><img src="images/miredotupdatecategory.png" alt="Miredot update category" /></a>
+<a href="http://www.miredot.com/exampledocs/#268738548" class="noExtIcon"><img src="images/miredotupdatecategory.png" alt="Miredot update category" /></a>
 
 {% include random_ad.html %}
 

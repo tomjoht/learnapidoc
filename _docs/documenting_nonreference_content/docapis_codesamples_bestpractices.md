@@ -15,7 +15,7 @@ As you write documentation for developers, you'll start to include more and more
 
 Here's a sample code sample page from Mashape:
 
-<a href="http://docs.mashape.com/javascript"><img src="images/consumeapi.png" alt="Mashape code sample" /></a>
+<a href="http://docs.mashape.com/javascript" class="noExtIcon"><img src="images/consumeapi.png" alt="Mashape code sample" /></a>
 
 The following sections list some best practices around code samples.
 

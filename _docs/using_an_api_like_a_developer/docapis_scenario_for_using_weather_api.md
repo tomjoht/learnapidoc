@@ -17,7 +17,7 @@ In the upcoming sections, you'll use two different APIs in the context of a spec
 
 Let's say that you're a web developer and you want to add a weather forecast feature to your site. Your site is for bicyclists. You want to allow users who come to your site to see what the wind conditions are for biking. You want something like this:
 
-{% if site.format == "pdf" %}
+{% if site.format == "pdf" or site.format == "kindle" %}
 <img class="small" src="images/restapi_windycall.png" alt="Wind meter conditions for website" />
 {% elsif site.format == "web" %}
 <img class="small" src="images/restapi_windycall.svg" alt="Wind meter conditions for website" />
@@ -31,11 +31,11 @@ To give you an idea of the end goal, here's a sample: [idrathebewriting.com/lear
 
 Click the button to see wind details. When you request this data, an API goes out to a weather service, retrieves the information, and displays it to you.
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-mashape.html"><img src="images/checkwindconditions.png" class="medium" /></a>
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-mashape.html" class="noExtIcon"><img src="images/checkwindconditions.png" class="medium" /></a>
 
 The above example is extremely simple. You could also build an attractive interface like this:
 
-<a class="noCrossRef" href="https://weather.yahoo.com/united-states/california/santa-clara-2488836/"><img class="medium" src="images/attractiveinterfaceweather.png" alt="Sample weather interface" /></a>
+<a class="noCrossRef" href="https://weather.yahoo.com/united-states/california/santa-clara-2488836/" class="noExtIcon"><img class="medium" src="images/attractiveinterfaceweather.png" alt="Sample weather interface" /></a>
 
 The concept and general technique is more or less the same.
 
@@ -47,7 +47,7 @@ The APIs on Mashape tend to be rather simple compared to some other APIs, but th
 
 {% include random_ad.html %}
 
-<a class="noCrossRef" href="https://market.mashape.com/"><img class="medium" src="images/mashape_explore_apis.png" alt="Explore APIs at Mashape" /></a>
+<a class="noCrossRef" href="https://market.mashape.com/" class="noExtIcon"><img class="medium" src="images/mashape_explore_apis.png" alt="Explore APIs at Mashape" /></a>
 
 You're a consumer of an API, but which one do you need to pull in weather forecasts?
 
@@ -62,7 +62,7 @@ Explore the APIs available on Mashape and find the weather forecast API:
 
 3. Search for an API called "Weather," by fyhao at <a href="https://market.mashape.com/fyhao/weather-13">https://market.mashape.com/fyhao/weather-13</a>. Although there are many weather APIs, this one seems to have a lot of reviews and is free.
 
-    <a class="noCrossRef" href="https://market.mashape.com/fyhao/weather-13"><img class="medium" src="images/weatherapi_mashape.png" alt="Weather API on Mashape" /></a>
+    <a class="noCrossRef" href="https://market.mashape.com/fyhao/weather-13" class="noExtIcon"><img class="medium" src="images/weatherapi_mashape.png" alt="Weather API on Mashape" /></a>
 
 ## Find the Aeris Weather API
 
@@ -77,7 +77,7 @@ Explore the Aeris Weather API by doing the following:
 3. Under **Aeris Weather API**, click **Documentation**.
 3. Under **Reference** in the left sidebar, click **Endpoints**.
 
-	<a  class="noCrossRef" href="http://www.aerisweather.com/support/docs/api/reference/endpoints/"><img class="medium" src="images/aerisendpoints.png" alt="Aeris Endpoints" /></a>
+	<a  class="noCrossRef" href="http://www.aerisweather.com/support/docs/api/reference/endpoints/" class="noExtIcon"><img class="medium" src="images/aerisendpoints.png" alt="Aeris Endpoints" /></a>
 
 4. In the list of endpoints, click **forecasts**.
 5. Browse the type of information that is available through this API.

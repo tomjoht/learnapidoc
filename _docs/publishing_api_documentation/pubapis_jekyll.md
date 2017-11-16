@@ -23,7 +23,7 @@ Jekyll is one of the most popular static site generators. All of my help content
 
 Here's the documentation theme that I developed for Jekyll:
 
-<a href="http://idratherbewriting.com/documentation-theme-jekyll/"><img src="images/jekylldocumentationtheme.png" alt="My Jekyll Documentation theme" /></a>
+<a href="http://idratherbewriting.com/documentation-theme-jekyll/" class="noExtIcon"><img src="images/jekylldocumentationtheme.png" alt="My Jekyll Documentation theme" /></a>
 
 There isn't any kind of special API reference endpoint formatting here (yet), but the platform is so flexible, you can do anything with it as long as you know HTML, CSS, and JavaScript (the fundamental language of the web).
 
@@ -113,7 +113,7 @@ Let's say you want to use a theme that provides ready-made templates for REST AP
 
 The [Aviator API documentation theme](https://github.com/CloudCannon/Aviator-Jekyll-Theme) by Cloud Cannon is designed for REST APIs. You'll use this theme to input a new endpoint. If you're continuing on from the previous sections (Documenting REST APIs), you already have a new endpoint called surfreport.
 
-<a href="https://github.com/CloudCannon/Aviator-Jekyll-Theme"><img src="images/aviatortheme.png" alt="Cloud Cannon Aviator theme" /></a>
+<a href="https://github.com/CloudCannon/Aviator-Jekyll-Theme" class="noExtIcon" class="noExtIcon"><img src="images/aviatortheme.png" alt="Cloud Cannon Aviator theme" /></a>
 
 {: .note}
 If you're on a Mac (with Rubygems and Jekyll installed), building Jekyll sites is a lot simpler. But even if you're on Windows, it won't matter for this tutorial. You'll be using CloudCannon, a SaaS website builder product, to build the Jekyll files.
@@ -122,7 +122,7 @@ If you're on a Mac (with Rubygems and Jekyll installed), building Jekyll sites i
 
 1. Go to [Aviator API documentation theme](https://github.com/CloudCannon/Aviator-Jekyll-Theme) and click the **Download ZIP** button.
 
-	<a href="https://github.com/CloudCannon/Aviator-Jekyll-Theme"><img src="images/gitdownloadzip.png" alt="Download ZIP button for Aviator theme" /></a>
+	<a href="https://github.com/CloudCannon/Aviator-Jekyll-Theme" class="noExtIcon"><img src="images/gitdownloadzip.png" alt="Download ZIP button for Aviator theme" /></a>
 
 2. Unzip the files.
 

@@ -59,7 +59,7 @@ Now let's get the keys for the Aeris Weather API. The Aeris Weather API requires
 
 5.  Click **Apps** (on the second navigation row, to the right of "Usage"), and then click **New Application**.
 
-    <a class="noCrossRef" href="https://www.aerisweather.com/account/apps"><img src="images/aerisaccount.png" alt="Aeris account" /></a>
+    <a class="noCrossRef" href="https://www.aerisweather.com/account/apps" class="noExtIcon"><img src="images/aerisaccount.png" alt="Aeris account" /></a>
 
 6.  In the dialog box, enter the following:
     * **Application Name**: My biking app (or something)

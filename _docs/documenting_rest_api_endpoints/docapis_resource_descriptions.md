@@ -48,7 +48,7 @@ With Mailchimp, a sample resource is "Automations." This endpoint has several me
 * `/automations/{workflow_id}/actions/pause-all-emails` (POST)
 * `/automations/{workflow_id}/actions/start-all-emails` (POST)
 
-<a class="noCrossRef" href="http://developer.mailchimp.com/documentation/mailchimp/reference/overview/"><img src="images/mailchimpapi_3_2017.png"/></a>
+<a class="noCrossRef" href="http://developer.mailchimp.com/documentation/mailchimp/reference/overview/" class="noExtIcon"><img src="images/mailchimpapi_3_2017.png"/></a>
 
 In contrast, look at Twitter's API. In their [API Reference overview](https://dev.twitter.com/rest/reference), they call them endpoint docs:
 
@@ -56,15 +56,15 @@ In contrast, look at Twitter's API. In their [API Reference overview](https://de
 
 A sample endpoint reference doc is [GET statuses/retweets/:id](https://dev.twitter.com/rest/reference/get/statuses/retweets/%3Aid). To access it, you use the Resource URL `https://api.twitter.com/1.1/statuses/retweets/:id.json`. They then list out "Resource Information."
 
-<a  class="noCrossRef" href="https://dev.twitter.com/rest/reference/get/statuses/retweets/%3Aid"><img src="images/twitterapi_3_17.png" alt="How Twitter refers to resources" /></a>
+<a  class="noCrossRef" href="https://dev.twitter.com/rest/reference/get/statuses/retweets/%3Aid" class="noExtIcon"><img src="images/twitterapi_3_17.png" alt="How Twitter refers to resources" /></a>
 
 Here's the approach by [Instagram](https://instagram.com/developer/endpoints/relationships/). Their doc calls resources "endpoints" in the plural -- e.g., "Relationship endpoints," with each endpoint listed on the relationship page.
 
-<a  class="noCrossRef" href="https://instagram.com/developer/endpoints/relationships/"><img src="images/instagramapi_3_17.png"/></a>
+<a  class="noCrossRef" href="https://instagram.com/developer/endpoints/relationships/" class="noExtIcon"><img src="images/instagramapi_3_17.png"/></a>
 
 The [EventBrite API](https://www.eventbrite.com/developer/v3/endpoints/events/) shows a list of endpoints, but when you go to an endpoint, the descriptions refer to them as objects. On the object's page you can see the variety of endpoints you can use with the object.
 
-<a  class="noCrossRef" href="https://www.eventbrite.com/developer/v3/endpoints/events/"><img src="images/eventbriteobjects.png" alt="Eventbrite" /></a>
+<a  class="noCrossRef" href="https://www.eventbrite.com/developer/v3/endpoints/events/" class="noExtIcon"><img src="images/eventbriteobjects.png" alt="Eventbrite" /></a>
 
 I point out discrepancies with the terminology to reinforce the fact that the terms are somewhat non-standard. Still, you can't go wrong by referring to them as resources. A resource can have many different endpoints and methods you can use with it.
 
@@ -114,7 +114,7 @@ It can get awkward referring to the resource by its endpoint path. For example, 
 
 The [Box API](https://docs.box.com/reference#membership-object) has a good example of how the same resource can have multiple endpoints and methods.
 
-<a  class="noCrossRef" href="https://docs.box.com/reference#membership-object"><img src="images/boxapi_3_17.png" alt="Example from Box" /></a>
+<a  class="noCrossRef" href="https://docs.box.com/reference#membership-object" class="noExtIcon"><img src="images/boxapi_3_17.png" alt="Example from Box" /></a>
 
 For the Membership object, as they call it, there are 7 different endpoints or methods you can call. Each of these methods lets you access the Membership  object in different ways. Why call it an object? When you GET the Membership resource, the response is a JSON object.
 

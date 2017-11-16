@@ -3,10 +3,10 @@ title: 'Eventbrite example: Get event information'
 permalink: /docapis_eventbrite_example.html
 sidebar: docapis
 course: "Documenting REST APIs"
-weight: 6.1
+weight: 13.2
 keywords: Eventbrite API example, REST APIs
-section: otherapis
-path1: /otherapis.html
+section: resources
+path1: /resources.html
 ---
 
 https://www.eventbrite.com/myevent?eid=17920884849
@@ -33,7 +33,7 @@ The Eventbrite API documentation is here: [developer.eventbrite.com](https://www
 
 To get event information, we'll use the [events](https://www.eventbrite.com/developer/v3/endpoints/events/) object.
 
-<a href="https://www.eventbrite.com/developer/v3/endpoints/events/"><img src="images/eventsendpointeventbrite.png" alt="Eventbrite Event" /></a>
+<a href="https://www.eventbrite.com/developer/v3/endpoints/events/" class="noExtIcon"><img src="images/eventsendpointeventbrite.png" alt="Eventbrite Event" /></a>
 
 {: .note}
 Instead of calling them \"resources,\" the Eventbrite API uses the term \"objects.\"
@@ -61,7 +61,7 @@ https://www.eventbriteapi.com/v3/events/:id/?token={your api key}
 
 Find an ID of an event you want to use, such as [this event](https://www.eventbrite.com/myevent?eid=17920884849):
 
-<a href="https://www.eventbrite.com/myevent?eid=17920884849"><img src="images/eventbrite_event.png" alt="Sample event" /></a>
+<a href="https://www.eventbrite.com/myevent?eid=17920884849" class="noExtIcon"><img src="images/eventbrite_event.png" alt="Sample event" /></a>
 
 (You have to sign in to Eventbrite to see this event page.)
 
@@ -172,7 +172,7 @@ My API key is hidden from the above code sample to protect it from unauthorized 
 
 Here's the <a href="http://idratherbewriting.com/learnapidoc/assets/files/eventbrite-example.html">result</a>:
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/eventbrite-example.html"><img src="images/eventbriteresultjoewelinske.png" alt="Eventbrite result" /></a>
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/eventbrite-example.html" class="noExtIcon"><img src="images/eventbriteresultjoewelinske.png" alt="Eventbrite result" /></a>
 
 ## Code explanation
 

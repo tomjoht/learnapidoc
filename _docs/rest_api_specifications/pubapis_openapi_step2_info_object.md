@@ -48,7 +48,7 @@ As you write content in `description` properties, note that colons are problemat
 
 In the Swagger UI display, the `info` object's information appears at the top:
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html"><img src="images/openapitutorial_info_object.png" style="border:1px solid #dedede;"/></a>
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapitutorial_info_object.png" style="border:1px solid #dedede;"/></a>
 
 {: .tip}
 In the `description` property, you might want to provide some basic instructions to users on how to use Swagger UI. If there's a test account they should use, you can provide the information they need in this space.

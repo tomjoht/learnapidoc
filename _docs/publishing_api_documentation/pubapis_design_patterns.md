@@ -62,7 +62,7 @@ As you look for documentation tools, keep in mind the need to templatize your AP
 
 Many API doc sites provide *one integrated website* to present all of the information. You usually aren't opening help in a new window, separate from the other content. The website is branded with the same look and feel as the product. Here's an example from Yelp:
 
-<a href="https://www.yelp.com/developers/documentation"><img src="images/yelpapi.png" alt="Yelp API documentation" /></a>
+<a href="https://www.yelp.com/developers/documentation" class="noExtIcon"><img src="images/yelpapi.png" alt="Yelp API documentation" /></a>
 
 I hinted at this earlier, but with API documentation, there isn't an application interface that the documentation complements. In most cases, the API documentation itself is the product that users navigate to use your product. As such, users will expect more from it.
 
@@ -82,7 +82,7 @@ This open invitation to use the tools of the web to construct your API doc site 
 
 More than anything else, developers love [code examples](docapis_doc_code_samples.html). Usually the more code you can add to your documentation, the better. Here's an example from Evernote's API:
 
-<a href="https://dev.evernote.com/doc/articles/note-sharing.php"><img src="images/evernotecodesamples.png" alt="Evernote code examples" /></a>
+<a href="https://dev.evernote.com/doc/articles/note-sharing.php" class="noExtIcon"><img src="images/evernotecodesamples.png" alt="Evernote code examples" /></a>
 
 The writers at Parse [emphasize the importance of code samples in docs](http://blog.parse.com/learn/engineering/designing-great-api-docs/):
 
@@ -120,10 +120,10 @@ One of the most stark differences between regular end-user documentation and dev
 
 The Backbone.js documentation takes this length to an extreme, publishing everything on one page:
 
-<a href="http://backbonejs.org/"><img src="images/backbonejs.png" alt="Backbone JS" /></a>
+<a href="http://backbonejs.org/" class="noExtIcon"><img src="images/backbonejs.png" alt="Backbone JS" /></a>
 
 For another example of a long page, see the Reddit API:
-<a href="https://www.reddit.com/dev/api"><img src="images/redditpage.png" alt="Backbone JS" /></a>
+<a href="https://www.reddit.com/dev/api" class="noExtIcon"><img src="images/redditpage.png" alt="Backbone JS" /></a>
 
 Why do API doc sites tend to have long-ish pages? Here are a few reasons:
 
@@ -142,7 +142,7 @@ For APIs not on these platforms, wiring up an API Explorer is often done by engi
 
 Here's a sample API explorer from [Watson's AlchemyLanguage API](https://watson-api-explorer.mybluemix.net/apis/alchemy-language-v1#!/Authors/get_html_HTMLGetAuthors) that uses [Swagger or OpenAPI](pubapis_swagger_intro.html) to provide the interactivity.
 
-<a href="https://watson-api-explorer.mybluemix.net/apis/alchemy-language-v1#!/Authors/get_html_HTMLGetAuthors"><img src="images/watson-try-it-out.png"/></a>
+<a href="https://watson-api-explorer.mybluemix.net/apis/alchemy-language-v1#!/Authors/get_html_HTMLGetAuthors" class="noExtIcon" class="noExtIcon"><img src="images/watson-try-it-out.png"/></a>
 
 Are API explorers novel, or extremely instructive? If you're going to be making a lot of calls, there's no reason why you couldn't just use [cURL](docapis_make_curl_call.html) or [Postman](docapis_postman.html) (particularly the [Postman Run Button](pubapis_other_tool_options.html#postman)) to quickly make the request and see the response. However, the API Explorer embedded directly in your documentation provides more of a graphical user interface that makes the endpoints accessible to more people. You don't have to worry about entering exactly the right syntax in your call &mdash; you just have to fill in the blanks.
 

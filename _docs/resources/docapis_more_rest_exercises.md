@@ -3,13 +3,13 @@ title: Overview for exploring other REST APIs
 permalink: /docapis_more_rest_exercises.html
 keywords:
 course: "Documenting REST APIs"
-weight: 6.0
+weight: 13.1
 sidebar: docapis
-section: otherapis
-path1: /otherapis.html
+section: resources
+path1: /resources.html
 ---
 
-Now it's time to explore some other REST APIs and code for some specific scenarios. This experience will give you more exposure to different REST APIs, how they're organized, the complexities and interdependency of endpoints, and more.
+In this resources section, I explore some other REST APIs and code for some specific scenarios. This experience will give you more exposure to different REST APIs, how they're organized, the complexities and interdependency of endpoints, and more.
 
 {% if site.format == "web" %}
 * TOC
@@ -18,9 +18,18 @@ Now it's time to explore some other REST APIs and code for some specific scenari
 
 ## Attack the challenge first, then read the answer
 
-There are several examples with different APIs. A challenge is listed for each exercise. First try to solve the challenge on your own. Then follow along in the sections below to see how I approached it.
+There are several examples with different APIs. A challenge is listed for each exercise. First, try to solve the challenge on your own. Then follow along in the sections below to see how I approached it.
 
 In these examples, I usually printed the code to a web page to visualize the response. However, that part is not required in the challenge. (It mostly makes the exercise more fun to me.)
+
+## Exercises
+
+The following exercises are available:
+
+* [EventBrite example: Get event information](docapis_eventbrite_example.html)
+* [Flickr example: Retrieve a Flickr gallery](docapis_flickr_example.html)
+* [Klout example: Retrieve Klout influencers](docapis_klout_example.html)
+* [Aeris Weather Example: Get wind speed](docapis_aerisweather_example.html)
 
 ## Shortcuts for API keys
 

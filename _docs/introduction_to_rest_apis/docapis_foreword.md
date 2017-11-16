@@ -18,7 +18,25 @@ Second, I knew that through feedback, I could refine the information and make it
 
 Finally, the content would help drive traffic to my site. How would people discover the material if they couldn't find it online? If the material were only trapped in a print book or behind a firewall, it would be difficult to discover. But as content strategists know, documentation is a rich information asset that draws traffic to any site. It's what people primarily search for online.
 
-After having put the API doc on my site for some months, the feedback was positive. As much as possible, through this feedback I helped clarify and strengthen the overall content.
+After having put the API doc on my site for some months, the feedback was positive. One person said:
+
+> Tom, this course is great. I'm only part way through it, but it already helped me get a job by appearing fluent in APIs during an interview. Thanks for doing this. I can't imagine how many volunteer hours you've put into helping the technical communication community here.
+
+Another commented:
+
+> Hi Tom, I went through the whole course. Its highly valuable and I learned a bunch of things that I am already applying to real world documentation projects. ...  I think for sure the most valuable thing about your course is the clear step by step procedural stuff that gives the reader hands-on examples to follow (its so great to follow a course by an actual tech. writer!)
+
+And another:
+
+> I love this course (I may have already posted that)—it's the best resource I have come across, explained in terms I understand. I've used it as a basis for my style guide and my API documentation....
+
+And more. I regularly receive emails like the following:
+
+> Just an email to thank you for the wonderful API course on your site. I am a long-time tech writer for online help that was recently assigned a task to document a public API. I had no experience in the subject, but had to complete a plan within a single sprint. Luckily I remembered from your blog posts over the years that you had posted material about this.
+>
+> Your course on YouTube gave me enough information and understanding to be able to speak intelligently on the subject with developers in a short timeframe, and to dive into tools and publishing solutions.
+
+Of course, not all comments or emails are praiseworthy. A lot of people note problems on pages, from broken links to broken code, unclear areas or missing information. As much as possible, through this feedback I helped clarify and strengthen the overall content.
 
 {% include random_ad.html %}
 
@@ -27,9 +45,3 @@ One question I faced in preparing the content is whether I should stick with tex
 Additionally, videos force the user to go at the pace of the narrator. If your skill level matches the narrator, great. But in my experience, videos often go too slow or too fast. In contrast, text lets you more easily skim ahead when you already know the material, or slow down when you need more time to absorb the material.
 
 One of my goals for the content is to keep this course a living, evolving document. As a digital publication, I'll continue to add and edit and refine it as needed. I want this content to become a vital learning resource for all technical writers, both now and in the years to come as technologies evolve.
-
-{% if site.type == "kindle" %}
-I welcome feedback. Feel free to drop me a note at tom@idratherbewriting.com. And follow my blog at [http://idratherbewriting.com](http://idratherbewriting.com).
-{% else %}
-I welcome feedback. Feel free to drop me a note at <a href="mailto:tom@idratherbewriting.com">tom@idratherbewriting.com</a>. And follow my blog at [http://idratherbewriting.com](http://idratherbewriting.com).
-{% endif %}

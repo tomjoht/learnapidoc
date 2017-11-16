@@ -125,25 +125,6 @@ folders:
   - title: How to create the quick reference guide
     jurl: /docapis_doc_quick_reference.html
 
-- title: Exploring other REST APIs
-  jurl: /otherapis.html
-  folderitems:
-
-  - title: Overview for exploring other REST APIs
-    jurl: /docapis_more_rest_exercises.html
-
-  - title: "EventBrite example: Get event information"
-    jurl: /docapis_eventbrite_example.html
-
-  - title: "Flickr example: Retrieve a Flickr gallery"
-    jurl: /docapis_flickr_example.html
-
-  - title: "Klout example: Retrieve Klout influencers"
-    jurl: /docapis_klout_example.html
-
-  - title: "Aeris Weather Example: Get wind speed"
-    jurl: /docapis_aerisweather_example.html
-
   - title: Next phase of course
     jurl: /docapis_completion.html
 
@@ -257,37 +238,6 @@ folders:
   - title: API Blueprint tutorial
     jurl: /pubapis_api_blueprint.html
 
-- title: Documenting native library APIs
-  jurl: /nativelibraryapis.html
-  folderitems:
-
-  - title: Overview of native library APIs
-    jurl: /nativelibraryapis_overview.html
-
-  - title: Get the Java source
-    jurl: /nativelibraryapis_getting_the_source.html
-
-  - title: Java crash course
-    jurl: /nativelibraryapis_java_crash_course.html
-
-  - title: Generate a Javadoc
-    jurl: /nativelibraryapis_create_javadoc.html
-
-  - title: Javadoc tags
-    jurl: /nativelibraryapis_javadoc_tags.html
-
-  - title: Explore the Javadoc output
-    jurl: /nativelibraryapis_exploring_javadoc_output.html
-
-  - title: Make edits to Javadoc tags
-    jurl: /nativelibraryapis_editing_javadoc.html
-
-  - title: Doxygen, a document generator mainly for C++
-    jurl: /nativelibraryapis_doxygen.html
-
-  - title: Create non-ref docs with native library APIs
-    jurl: /nativelibraryapis_nonrefdocs.html
-
 - title: Getting a Job in API Documentation
   jurl: /jobapis.html
   folderitems:
@@ -297,56 +247,25 @@ folders:
 
   - title: How much code do you need to know?
     jurl: /jobapis_learning_code.html
-  
-- title: API documentation survey
-  jurl: /survey.html
-  folderitems:
 
-  - title: API documentation survey overview
-    jurl: /survey_introduction.html
-
-  - title: What type of API do you document?
-    jurl: /survey_most_popular_apis_to_document.html
-
-  - title: What programming languages are you most familiar with?
-    jurl: /survey_most_common_programming_languages.html
-
-  - title: What authoring tool/syntax do you use?
-    jurl: /survey_preferred_authoring_tools.html
-
-  - title: Do you create API doc by looking at source code?
-    jurl: /survey_creation_from_source_code.html
-
-  - title: Do you test out the API calls used in your doc yourself?
-    jurl: /survey_test_api_calls_yourself.html
-
-  - title: What IDE do you use?
-    jurl: /survey_preferred_ides.html
-
-  - title: Is your REST API doc auto-generated?
-    jurl: /survey_automating_api_docs.html
-
-  - title: How do you get the source files that contain code comments?
-    jurl: /survey_access_to_code.html
-
-  - title: How to learn what you need to know?
-    jurl: /survey_learn_what_you_need.html
-
-  - title: What aspect of API doc do you find most challenging?
-    jurl: /survey_most_challenging_aspect.html
-
-  - title: Do engineers write API doc in the source code?
-    jurl: /survey_engineers_write_in_source.html
-
-  - title: Are API docs auto-rendered through build process?
-    jurl: /survey_how_much_automation.html
-
-- title: Glossary
+- title: Resources
   jurl: /resources.html
   folderitems:
 
   - title: Glossary
     jurl: /api-glossary.html
 
-  - title: Copyright
-    jurl: /copyright.html
+  - title: Overview for exploring other REST APIs
+    jurl: /docapis_more_rest_exercises.html
+
+  - title: "EventBrite example: Get event information"
+    jurl: /docapis_eventbrite_example.html
+
+  - title: "Flickr example: Retrieve a Flickr gallery"
+    jurl: /docapis_flickr_example.html
+
+  - title: "Klout example: Retrieve Klout influencers"
+    jurl: /docapis_klout_example.html
+
+  - title: "Aeris Weather Example: Get wind speed"
+    jurl: /docapis_aerisweather_example.html

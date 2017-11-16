@@ -4,10 +4,10 @@ permalink: /docapis_flickr_example.html
 categories:
 - api-doc
 course: "Documenting REST APIs"
-weight: 6.2
+weight: 13.3
 sidebar: docapis
-section: otherapis
-path1: /otherapis.html
+section: resources
+path1: /resources.html
 ---
 
 Use the Flickr API to get photo images from [this Flickr gallery](https://www.flickr.com/photos/flickr/galleries/72157647277042064/).
@@ -23,7 +23,7 @@ In this Flickr API example, you'll see that our goal requires us to call several
 
 In this example, we want to get all the photos from a [specific Flickr gallery](https://www.flickr.com/photos/flickr/galleries/72157647277042064/) and display them on a web page. Here's the gallery we want:
 
-<a href="https://www.flickr.com/photos/flickr/galleries/72157647277042064/"><img src="images/flickrgallery.png" alt="Flickr gallery" /></a>
+<a href="https://www.flickr.com/photos/flickr/galleries/72157647277042064/" class="noExtIcon"><img src="images/flickrgallery.png" alt="Flickr gallery" /></a>
 
 ## 1. Get an API key to make requests
 
@@ -33,13 +33,13 @@ Before you can make a request with the Flickr API, you'll need an API key, which
 
 From the list of [Flickr's API methods](https://www.flickr.com/services/api/), the [flickr.galleries.getPhotos](https://www.flickr.com/services/api/flickr.galleries.getPhotos.html) endpoint, which is listed under the galleries resource, is the one that will get photos from a gallery.
 
-<a href="https://www.flickr.com/services/api/flickr.galleries.getPhotos.html"><img src="images/flickr_get_photos.png" alt="Flickr getPhotos endpoint" /></a>
+<a href="https://www.flickr.com/services/api/flickr.galleries.getPhotos.html" class="noExtIcon"><img src="images/flickr_get_photos.png" alt="Flickr getPhotos endpoint" /></a>
 
 One of the arguments we need for the getPhotos endpoint is the gallery ID. Before we can get the gallery ID, however, we have to use another endpoint to retrieve it. *Rather unintuitively, the gallery ID is <em>not</em> the ID that appears in the URL of the gallery.*
 
 We use the [flickr.urls.lookupGallery](https://www.flickr.com/services/api/explore/flickr.urls.lookupGallery) endpoint listed in the URLs resource section to get the gallery ID from a gallery URL:
 
-<a href="https://www.flickr.com/services/api/explore/flickr.urls.lookupGallery"><img src="images/flickr_gallery_id.png" alt="Flickr lookupGallery endpoint endpoint" /></a>
+<a href="https://www.flickr.com/services/api/explore/flickr.urls.lookupGallery" class="noExtIcon"><img src="images/flickr_gallery_id.png" alt="Flickr lookupGallery endpoint endpoint" /></a>
 
 The gallery ID is `66911286-72157647277042064`. We now have the arguments we need for the [flickr.galleries.getPhotos](https://www.flickr.com/services/api/flickr.galleries.getPhotos.html) endpoint.
 
@@ -49,7 +49,7 @@ We can make the request to get the list of photos for this specific gallery ID.
 
 Flickr provides an API Explorer to simplify calls to the endpoints. If we go to the [API Explorer for the galleries.getPhotos endpoint](https://www.flickr.com/services/api/explore/flickr.galleries.getPhotos), we can plug in the gallery ID and see the response, as well as get the URL syntax for the endpoint.
 
-<a href="https://www.flickr.com/services/api/explore/flickr.galleries.getPhotos"><img src="images/flickrcallmethod.png" alt="Using the Flickr API Explorer to get the request syntax" /></a>
+<a href="https://www.flickr.com/services/api/explore/flickr.galleries.getPhotos" class="noExtIcon"><img src="images/flickrcallmethod.png" alt="Using the Flickr API Explorer to get the request syntax" /></a>
 
 Insert the gallery ID, select **Do not sign call** (we're just testing here, so we don't need extra security), and then click **Call Method**.
 

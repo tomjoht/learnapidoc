@@ -5,7 +5,7 @@ categories:
 - api-doc
 keywords:
 course: "Documenting REST APIs"
-weight: 13.1
+weight: 13.0
 sidebar: docapis
 section: resources
 path1: /resources.html

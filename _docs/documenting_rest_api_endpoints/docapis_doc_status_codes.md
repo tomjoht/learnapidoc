@@ -63,11 +63,11 @@ You can see a list of common [REST API status codes here](http://www.restapituto
 
 Most APIs should have a general page listing response and error codes across the entire API. Twitter's API has a good example of the possible status and error codes you will receive when making requests:
 
-<a href="https://dev.twitter.com/overview/api/response-codes"><img src="images/twitterstatuscode.png" alt="Twitter API status codes" /></a>
+<a href="https://dev.twitter.com/overview/api/response-codes" class="noExtIcon"><img src="images/twitterstatuscode.png" alt="Twitter API status codes" /></a>
 
 In contrast, with the Flickr API, each "method" (endpoint) lists error codes:
 
-<a href="https://www.flickr.com/services/api/flickr.galleries.getPhotos.html"><img src="images/flickrerrorcodes.png" alt="Flickr API" /></a>
+<a href="https://www.flickr.com/services/api/flickr.galleries.getPhotos.html" class="noExtIcon"><img src="images/flickrerrorcodes.png" alt="Flickr API" /></a>
 
 Either location has merits. Generally, I think status codes should be included with each endpoint. But if you have a lot of status codes, it might make sense to create a single, centralized pages with a table that lists them.
 
@@ -81,13 +81,13 @@ For example, if you exceed the rate limit for a specific call, the API might ret
 
 In the Flattr API, sometimes endpoints return particular status codes. For example, when you "Check if a thing exists," the response includes `HTTP/1.1 302 Found` when the object is found. This is a standard HTTP response. If it's not found, you see a 404 status code.
 
-<a href="http://developers.flattr.net/api/resources/things/#update-a-thing"><img src="images/flattrnotfound.png" alt="Not found status code" /></a>
+<a href="http://developers.flattr.net/api/resources/things/#update-a-thing" class="noExtIcon"><img src="images/flattrnotfound.png" alt="Not found status code" /></a>
 
 If the status code is specific to a particular endpoint, you can include it with that endpoint's documentation.
 
 Alternatively, you can have a general status and error codes page that lists all possible codes for all the endpoints. For example, with the Dropbox API, the writers list out the error codes related to the API:
 
-<a href="https://www.dropbox.com/developers/core/docs"><img src="images/apierrorsdropbox.png" alt="Dropbox API example with errors" /></a>
+<a href="https://www.dropbox.com/developers/core/docs" class="noExtIcon"><img src="images/apierrorsdropbox.png" alt="Dropbox API example with errors" /></a>
 
 In particular, you should look for codes that return when there is an error, since this information helps developers troubleshoot problems.
 

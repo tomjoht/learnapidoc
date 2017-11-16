@@ -18,7 +18,7 @@ The overview explains what you can do with the API (high-level business goals), 
 
 ## Sample overview
 The SendGrid API does a good job at providing an overview:
-<a href="https://sendgrid.com/docs/User_Guide/index.html"><img src="images/sendgridoverview.png" alt="Sendgrid overview" /></a>
+<a href="https://sendgrid.com/docs/User_Guide/index.html" class="noExtIcon"><img src="images/sendgridoverview.png" alt="Sendgrid overview" /></a>
 
 ## Common business scenarios
 In the overview, list some common business scenarios in which the API might be useful. This will give people the context they need to evaluate whether the API is relevant to their needs.

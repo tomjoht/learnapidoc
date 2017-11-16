@@ -23,7 +23,7 @@ Unless you're publishing your docs with Mulesoft or another platform that specif
 
 Similar to OpenAPI, after you create a RAML file that describes your API, it can be consumed by different platforms to parse and display the information in attractive outputs. The RAML format, which uses YML syntax, is human-readable, efficient, and simple.
 
-<figure><img src="images/ramlexample.png" alt="Sample RAML output in API Console" /><figcaption>This is a sample RAML output in something called API Console</figcaption></figure>
+<figure><a href="http://idratherbewriting.com/learnapidoc/assets/files/raml/index.html" class="noExtIcon"><img src="images/ramlexample.png" alt="Sample RAML output in API Console" /></a><figcaption>This is a sample RAML output in something called API Console</figcaption></figure>
 
 ## Auto-generating client SDK code
 

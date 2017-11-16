@@ -33,7 +33,7 @@ externalDocs:
 
 In the Swagger UI, this link appears after the API description along with other info about the API.
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html"><img src="images/openapi_tutorial_externaldocs.png" alt="externalDocs object"/></a>
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapi_tutorial_externaldocs.png" alt="externalDocs object"/></a>
 
 {: .tip}
 See the related topic, [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html) for tips on how to integrate your Swagger UI output into your regular documentation.
@@ -44,6 +44,6 @@ Now that we've completed all the steps in the tutorial, we're finished building 
 
 Here's the specification document embedded in Swagger UI:
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html"><img src="images/swagger_full_result.png" /></a>
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/swagger_full_result.png" /></a>
 
 You can actually insert any valid path to an OpenAPI specification document into the "Explore" box in Swagger UI (assuming it's using a version that supports your version of the spec), and it will display the content.

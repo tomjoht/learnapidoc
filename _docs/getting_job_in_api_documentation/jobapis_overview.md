@@ -27,7 +27,7 @@ You may wonder what the motivation is behind these requirements, especially if t
 
 Take a look at Algolia's API for an example. You can view the documentation for their [REST API here](https://www.algolia.com/doc/rest). However, when you implement Algolia (which provides a search feature for your site), you'll want to follow the documentation for your specific platform.
 
-<a href="https://www.algolia.com/doc"><img src="images/algolia_clientsdks.png" alt="Algolia client implementations" /></a>
+<a href="https://www.algolia.com/doc" class="noExtIcon"><img src="images/algolia_clientsdks.png" alt="Algolia client implementations" /></a>
 
 Although users could construct their own code when using the REST endpoints, most developers would rather leverage existing code to just copy and paste what they need.
 

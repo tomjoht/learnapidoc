@@ -4,10 +4,10 @@ permalink: /docapis_klout_example.html
 categories:
 - api-doc
 course: "Documenting REST APIs"
-weight: 6.3
+weight: 13.4
 sidebar: docapis
-section: otherapis
-path1: /otherapis.html
+section: resources
+path1: /resources.html
 ---
 
 Use the Klout API to get your Klout score and a list of your influencers and influencees.
@@ -22,7 +22,7 @@ Use the Klout API to get your Klout score and a list of your influencers and inf
 
 Klout has an "interactive console" driven by Mashery I/O docs that allows you to insert parameters and go to an endpoint. The interactive console also contains brief descriptions of what each endpoint does.
 
-<a href="http://developer.klout.com/io-docs"><img src="images/klout_interactive_console-550x362.png" alt="Klout Interactive Console" /></a>
+<a href="http://developer.klout.com/io-docs" class="noExtIcon"><img src="images/klout_interactive_console-550x362.png" alt="Klout Interactive Console" /></a>
 
 ## 1. Get an API key to make requests
 To use the API, you have to register an "app," which allows you to get an API key. Go to [My API Keys](http://developer.klout.com/apps/mykeys) page to register your app and get the keys.

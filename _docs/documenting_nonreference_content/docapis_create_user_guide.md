@@ -24,7 +24,7 @@ Whereas the endpoint documentation explains how to use each of the endpoints, yo
 
 In Mulesoft's API tooling, you can see some other sections common to API documentation:
 
-<a href="http://api-portal.anypoint.mulesoft.com/yahoo/api/yahoo-weather-api"><img src="images/commonsections.png" alt="Common sections in API documentation" /></a>
+<a href="http://api-portal.anypoint.mulesoft.com/yahoo/api/yahoo-weather-api" class="noExtIcon"><img src="images/commonsections.png" alt="Common sections in API documentation" /></a>
 
 Although this is the Yahoo Weather API page, all APIs using the Mulesoft platform have this same template.
 
@@ -77,7 +77,7 @@ This division of content represents the API documentation genre well and serves 
 
 In Mulesoft's API platform, you can see many of these sections in their standard template for API documentation:
 
-<a href="http://api-portal.anypoint.mulesoft.com/yahoo/api/yahoo-weather-api?ref=apihub"><img src="images/commonsections.png" alt="Common sections in API documentation" /></a>
+<a href="http://api-portal.anypoint.mulesoft.com/yahoo/api/yahoo-weather-api?ref=apihub" class="noExtIcon"><img src="images/commonsections.png" alt="Common sections in API documentation" /></a>
 
 I won't get into too much detail about each of these sections. In previous sections of this course, I explored the content development aspect of API documentation in depth. Here I'll just list the salient points.
 
@@ -103,7 +103,7 @@ By showing the developer how to create something from beginning to end, you prov
 
 Here's a list of tutorials from Parse:
 
-<a href="https://www.parse.com/tutorials"><img src="images/parsetutorials.png" alt="Parse tutorials" /></a>
+<a href="https://www.parse.com/tutorials" class="noExtIcon" class="noExtIcon"><img src="images/parsetutorials.png" alt="Parse tutorials" /></a>
 
 Some tutorials can even serve as reference implementations, showing full-scale code that shows how to implement something in a detailed way. This kind of code is highly appealing to developers because it usually helps clarify all the coding details.
 

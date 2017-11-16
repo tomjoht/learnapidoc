@@ -64,27 +64,26 @@ blockquote {
     padding: 1em;
 }
 
+
 p.note {
     background: #f1f1f1;
-    margin: 1em;
-    padding: .6em
-    padding-left: 1em;
+    margin: .4em 0em;
+    padding: 1em 1em 1em 1em;
+    border-left: 1em solid deepskyblue;
 }
 
 p.tip {
-    background: #f1f1f1;
-    margin: 1em;
-    border-left: 1em solid deepskyblue;
-    padding: .6em
-    padding-left: 1em;
+  background: #f1f1f1;
+  margin: .4em 0em;
+  padding: 1em 1em 1em 1em;
+  border-left: 1em solid #00b200;
 }
 
 p.warning {
-    background: #f1f1f1;
-    margin: 1em;
-    border-left: 1em solid red;
-    padding: .6em
-    padding-left: 1em;
+  background: #f1f1f1;
+  margin: .4em 0em;
+  padding: 1em 1em 1em 1em;
+  border-left: 1em solid #b20000;
 }
 
 p.note::before {
@@ -253,23 +252,11 @@ ul#markdown-toc {
   display: none;
 }
 
-pre {
-  background: black;
-  color: white;
-  padding: 1em;
-}
 
-
-
-a[href^="http://"]:after,
-a[href^="https://"]:after {
-  content: "\f08e";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  display: inline-block;
-  text-decoration: none;
-  padding-left: 3px;
+a[href^="http://"],
+a[href^="https://"] {
+  text-decoration:underline;
+  border-bottom: 1px solid #000;
 }
 
 /* Strip the outbound icon when this class is present */
@@ -277,6 +264,19 @@ a[href^="https://"]:after {
 a[href].noExtIcon::after,
 a.no_icon:after
  {
-  content: "" !important;
-  padding-left: 0;
+  text-decoration: none;
+  border-bottom: 0px;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 12px;
+}
+
+li, li a, ul li, ul li ul li {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: left;
 }

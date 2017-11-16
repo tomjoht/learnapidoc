@@ -24,11 +24,11 @@ Because you can't entirely know which language your end users will be developing
 
 However, some APIs do show simple code snippets in a variety of languages. Here's an example from Evernote's API documentation:
 
-<a href="https://dev.evernote.com/doc/articles/note-sharing.php"><img src="images/codesamplesevernote.png" alt="Evernote API code samples" /></a>
+<a href="https://dev.evernote.com/doc/articles/note-sharing.php" class="noExtIcon"><img src="images/codesamplesevernote.png" alt="Evernote API code samples" /></a>
 
 And another from Twilio:
 
-<a href="https://www.twilio.com/docs/api/rest/making-calls"><img src="images/twiliocodeexamples.png" alt="Twilio code samples" /></a>
+<a href="https://www.twilio.com/docs/api/rest/making-calls" class="noExtIcon"><img src="images/twiliocodeexamples.png" alt="Twilio code samples" /></a>
 
 However, don't feel so intimidated by this smorgasbord of code samples. Some API doc tools might actually automatically generate these code samples because the patterns for making REST requests in different programming languages follow a common template. This is why many APIs decide to provide one code sample (usually in cURL) and let the developer extrapolate the format in his or her own programming language.
 
@@ -38,7 +38,7 @@ You can auto-generate code samples from both Postman and Paw, if needed.
 
 Paw has more than a dozen code generator extensions:
 
-<a href="https://luckymarmot.com/paw/extensions/"><img src="images/pawcodegenerators.png" alt="Paw code generator" /></a>
+<a href="https://luckymarmot.com/paw/extensions/" class="noExtIcon"><img src="images/pawcodegenerators.png" alt="Paw code generator" /></a>
 
 Once you install them, generating a code sample is a one-click operation:
 
