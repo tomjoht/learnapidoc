@@ -232,6 +232,8 @@ dt {
     display: inline;
     vertical-align: bottom;
     margin-right: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .activitySection {

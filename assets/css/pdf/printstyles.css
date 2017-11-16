@@ -5,6 +5,11 @@ body {
     font-size:12px;
 }
 /*table .table {max-width:650px;}*/
+table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 table, th, td  {border: 1px solid black}
 th, td {
     padding: 15px;
@@ -72,7 +77,7 @@ a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::a
 .printSubtitle {
     font-size: 18pt;
     color: #cccccc !important;
-    font-family: "Grotesque MT Light";
+    font-family: sans-serif;
     line-height: 22pt;
     letter-spacing: -.5px;
     margin-bottom:20px;
@@ -348,6 +353,8 @@ pre, .highlight {
     display: inline;
     vertical-align: bottom;
     margin-right: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .activitySection {
@@ -464,4 +471,21 @@ button.btn.btn-default.btn-lg.modalButton1 {
 
 blockquote {
   font-size: 14px;
+}
+
+pre {
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.muted {
+  color: gray;
+}
+
+figure, img {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

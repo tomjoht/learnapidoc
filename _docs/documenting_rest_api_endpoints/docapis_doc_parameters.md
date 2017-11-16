@@ -51,7 +51,6 @@ Parameter
    </tbody>
 </table>
 
-
 {% endif %}
 
 Here's an example from Yelp's documentation:

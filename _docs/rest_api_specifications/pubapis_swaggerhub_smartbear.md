@@ -111,7 +111,7 @@ The HTML2 export is more intended to stand on its own, as it has a fixed left si
 
 <img src="images/swaggerhub_html2output.png"/>
 
-## Mocking Servers
+## Mocking Servers {#mocking_servers}
 
 Another cool feature of SwaggerHub is the ability to [create mock API servers](https://app.swaggerhub.com/help/integrations/api-auto-mocking). Suppose you have an API where you don't want users to generate real requests. (Maybe it's an ordering system where users might be ordering products through the API, or you simply don't have test accounts/systems). At the same time, you probably want to simulate real API responses to give users a sense of how your API works.
 

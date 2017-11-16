@@ -97,7 +97,7 @@ Putting together an app from scratch that leverages all the recommendation API c
 
 Overall, make sure to test the code you're documenting in as real of a situation as you can. You'll be surprised what you discover. Reporting back the issues to your team will make your product stronger and increase your value to the team.
 
-## Enjoyment benefits from testing
+## The pleasures of testing
 
 Testing your instructions makes the tech writing career a lot more engaging. I'd even say that testing all the docs is what converts tech writing from a boring, semi-isolated career to an engaging, interactive role with your team and users.
 

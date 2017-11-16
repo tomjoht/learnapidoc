@@ -5,10 +5,13 @@ permalink: pdf_title_page.html
 ---
 
 <div class="printTitleArea">
-    <div class="printTitle">{{site.title}}</div>
-    <div class="printSubtitle">{{site.subtitle}}</div>
+  {% if site.cover == true %}
     <div class="printTitleImage">
-        <img src="images/restapi_kindletitle.png" alt="Documenting REST APIs: A guide for technical writers"/>
+        <img src="{{site.cover_image}}" alt="Documenting REST APIs: A guide for technical writers"/>
         <p>All rights reserved. No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law. For permission requests, contact Tom Johnson.</p>
     </div>
+    {% else %}
+    <div class="printTitle">{{site.title}}</div>
+    <div class="printSubtitle">{{site.subtitle}}</div>
+    {% endif %}
 </div>

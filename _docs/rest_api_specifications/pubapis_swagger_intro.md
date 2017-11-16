@@ -126,21 +126,21 @@ So far I've been talking about creating the OpenAPI specification document as if
 
 This developer-centric approach may make sense if you have a large number of APIs and it's not practical for technical writers to create this documentation. If this is the case, make sure you get access to the source code to make edits to the annotations. Otherwise, your developers will be writing your docs (which can be good but often has poor results).
 
-Swagger offers a variety of libraries that you can add to your programming code to generate the specification document. See [Comparison of Automatic API Code Generation Tools For Swagger](https://apievangelist.com/2015/06/06/comparison-of-automatic-api-code-generation-tools-for-swagger/) by API Evangelist. He mentions [Swagger Codegen](http://editor.swagger.io/), [REST United](http://restunited.com/), [Restlet Studio](http://studio.restlet.com/), and [APIMATIC](https://apimatic.io/).
+Swagger offers a variety of libraries that you can add to your programming code to generate the specification document. These libraries are considered part of the [Swagger Codegen](https://swagger.io/swagger-codegen/) project. For more information, see [Comparison of Automatic API Code Generation Tools For Swagger](https://apievangelist.com/2015/06/06/comparison-of-automatic-api-code-generation-tools-for-swagger/) by API Evangelist. Other tools such as [REST United](http://restunited.com/), [Restlet Studio](http://studio.restlet.com/), [APIMATIC](https://apimatic.io/) can also be used.
 
-These libraries, specific to your programming language, will parse through your code's annotations and generate a specification document. Of course, someone has to know exactly what annotations to add and how to add them (the process isn't too unlike Javadoc's comments and annotations). Then someone has to write content for each of the annotation's values (describing the endpoint, the parameters, and so on).
+These libraries, specific to your programming language, will parse through your code's annotations and generate an OpenAPI specification document. Of course, someone has to know exactly what annotations to add and how to add them (the process isn't too unlike Javadoc's comments and annotations). Then someone has to write content for each of the annotation's values (describing the endpoint, the parameters, and so on).
 
-In short, this process isn't without effort &mdash; the automated part is having the Codegen libraries generate the spec. Still, many developers get excited about this approach because it offers a way to generate documentation from code annotations, which is what developers have been doing for years with other programming languages such as Java (using [Javadoc](http://www.oracle.com/technetwork/articles/java/index-137868.html)) or C++ (using [Doxygen](http://www.stack.nl/~dimitri/doxygen/)). They usually feel that generating documentation from the code results in less documentation drift. Docs are likely to remain up to date if the doc is tightly coupled with the code.
+In short, this process isn't without effort &mdash; the automated part is having the Codegen libraries generate the model definitions and the specification document. Still, many developers get excited about this approach because it offers a way to generate documentation from code annotations, which is what developers have been doing for years with other programming languages such as Java (using [Javadoc](http://www.oracle.com/technetwork/articles/java/index-137868.html)) or C++ (using [Doxygen](http://www.stack.nl/~dimitri/doxygen/)). They usually feel that generating documentation from the code results in less documentation drift. Docs are likely to remain up to date if the doc is tightly coupled with the code. Plus if engineers are writing the docs, they often prefer to stay within their own IDE to write.
 
 Although you can generate your specification document from code annotations, many say that this is *not* the best approach. In [Undisturbed REST: A Guide to Designing the Perfect API](https://www.mulesoft.com/lp/ebook/api/restbook), [Michael Stowe](https://twitter.com/mikegstowe) recommends that teams implement the specification by hand and then treat the specification document as a contract that developers use when doing the actual coding. This approach is often referred to as "spec-first development."
 
-In other words, developers consult the specification document to see what the parameter names should be called, what the responses should be, and so on. After this contract has been established, Stowe says you can then put the annotations in your code to auto-generate the specification document.
+In other words, developers consult the specification document to see what the parameter names should be called, what the responses should be, and so on. After this "contract" or "blueprint" has been established, Stowe says you can then put the annotations in your code to auto-generate the specification document.
 
 Too often, development teams quickly jump to coding the API endpoints, parameters, and responses without doing much user testing or research into whether the API aligns with what users want. Since versioning APIs is extremely difficult (you have to support each new version going forward with full backwards compatibility to previous versions), you want to avoid the "fail fast" approach that is so commonly embraced with agile. There's nothing worse than releasing a new version of your API that invalidates endpoints or parameters used in previous releases. Documentation also becomes a nightmare.
 
-In my conversations with [Smartbear](https://smartbear.com/), the company that makes [SwaggerHub](pubapis_swaggerhub_smartbear.html) (a collaborative platform for teams to work on Swagger API specifications), they say it's now more common for teams to manually write the spec rather than embed source annotations in programming code to auto-generate the spec. The spec-first approach help distribute the documentation work to more team members than engineers. Defining the spec before coding also helps teams produce better APIs.
+In my conversations with [Smartbear](https://smartbear.com/), the company that makes [SwaggerHub](pubapis_swaggerhub_smartbear.html) (a collaborative platform for teams to work on Swagger API specifications), they say it's now more common for teams to manually write the spec rather than embed source annotations in programming code to auto-generate the spec. The spec-first approach helps distribute the documentation work to more team members than engineers. Defining the spec before coding also helps teams produce better APIs.
 
-Even before the API has been coded, your spec can generate a mock response by adding response definitions in your spec. The mock server generates a response that looks like it's coming from a real server, but it's really just a pre-defined response in your code and appears to be dynamic to the user.
+Even before the API has been coded, your spec can generate a [mock response](pubapis_swaggerhub_smartbear.html#mocking_servers) by adding response definitions in your spec. The mock server generates a response that looks like it's coming from a real server, but it's really just a pre-defined response in your code and appears to be dynamic to the user.
 
 With my initial project, our developers weren't that familiar with Swagger or OpenAPI, so I simply created the OpenAPI specification document by hand. Additionally, I didn't have free access to the programming source code, and our developers spoke English as a second or third language only. They weren't eager to be in the documentation business.
 
@@ -148,7 +148,26 @@ You will most likely find that engineers in your company aren't familiar with Sw
 
 In this regard, tech writers have a key role to play in collaborating with the API team in producing the spec. If you're following a spec-first development philosophy, this leading role can help you shape the API before it gets coded and locked down. This means you might be able to actually influence the names of the endpoints, the consistency and patterns, simplicity, and other factors that go into the design of an API (which tech writers are usually absent from).
 
-## Rendering Your API Docs Swagger UI
+In summary, here are the pros and cons of annotating your programming code to auto-generate the specification document:
+
+**Pros of code annotations method:**
+
+* Reduces potential for documentation drift.
+* Consolidates your doc and code in the same location.
+* Enables engineers to write documentation using their existing IDE.
+* Automatically creates the model definitions for requests and responses.
+
+**Cons of code annotation method:**
+
+* Annotation syntax differs by programming language, with some languages not supported.
+* Potentially difficult to gain access to the programming source code (you'd need to integrate into the developer's version control workflow and review tooling).
+* Learning curve is greater, since you have to run your app to generate the specification document.
+* The specification file can only be generated *after* the API is coded, eliminating the idea of a contract or blueprint.
+* None of Swagger Codegen libraries support the latest version of the [OpenAPI 3.0 spec](pubapis_openapi_tutorial_overview.html) (as of Nov 2017).
+* Annotations clutter up the code with a lot of documentation.
+* No ability to use tools like [SwaggerHub](pubapis_swaggerhub_smartbear.html) to collaborate (which provides inline commenting and versioning features).
+
+## Rendering Your OpenAPI specification with Swagger UI
 
 After you have a valid OpenAPI specification document that describes your API, you can then feed this specification to different tools to parse it and generate the interactive documentation similar to the [Petstore example](http://petstore.swagger.io/) I referenced earlier.
 

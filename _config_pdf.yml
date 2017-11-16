@@ -1,5 +1,10 @@
 title: Documenting REST APIs
 subtitle: A guide for technical writers working with APIs
+
+cover: true
+# if cover is set to true, the title and subtitle aren't used. instead, the cover_image is used instead.
+cover_image: images/restapi_kindletitle.png
+
 sidebar: docapis
 baseurl: /Users/tomjoht/projects/learnapidoc/_site
 

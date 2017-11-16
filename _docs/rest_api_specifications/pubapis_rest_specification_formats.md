@@ -22,7 +22,7 @@ By far, the OpenAPI specification is the most popular, with the largest communit
 
 ## Should you use one of these specifications?
 
-In a [survey on API documentation](survey_automating_api_docs.html), I asked people if they were automating their REST API documentation through one of these standards. About 30% of the people said yes.
+In a [survey on API documentation](docapis_apidoc_survey.html), I asked people if they were automating their REST API documentation through one of these standards. About 30% of the people said yes.
 
 In my opinion, these specifications should certainly be used, as they not only lead to predictable, industry-consistent experiences for users of your APIs, they also force you to standardize on API terminology and give users a way to learn by doing as they try out the endpoints with real parameters and data.
 
