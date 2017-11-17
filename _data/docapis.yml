@@ -302,5 +302,5 @@ folders:
   - title: "Aeris Weather Example: Get wind speed"
     jurl: /docapis_aerisweather_example.html
 
-  # - title: API documentation survey
-  #   jurl: /docapis_apidoc_survey.html
+  - title: API documentation survey
+    jurl: /docapis_apidoc_survey.html
