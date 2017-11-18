@@ -20,7 +20,7 @@ The idea is that rather than learning about these concepts independent of any co
 
 ## REST APIs
 
-In a nutshell, REST APIs (which are a type of web API) involve requests and responses, not too unlike visiting a web page. You make a request to a resource stored on a server, and the server responds with the requested information. The protocol used to transport the data is HTTP. REST stands for representational state transfer.
+In a nutshell, REST APIs (which are a type of web API) involve requests and responses, not too unlike visiting a web page. You make a request to a resource stored on a server, and the server responds with the requested information. The protocol used to transport the data is HTTP. "REST" stands for representational state transfer.
 
 <figure>
 {% if site.format == "pdf" or site.format == "kindle" %}<img src="images/restapi_apidoc.png" alt="Response and request model for REST APIs" />
@@ -28,7 +28,7 @@ In a nutshell, REST APIs (which are a type of web API) involve requests and resp
 {% endif %}
 <figcaption>REST APIs involve requests and responses over HTTP protocol</figcaption></figure>
 
-I dive more into the principles of REST in [What is a REST API?](docapis_what_is_a_rest_api.html) In your REST API documentation, you describe the various endpoints available, their methods, parameters, and other details, and you also document sample responses from the endpoints. 
+I dive more into the principles of REST in [What is a REST API?](docapis_what_is_a_rest_api.html) In your REST API documentation, you describe the various endpoints available, their methods, parameters, and other details, and you also document sample responses from the endpoints.
 
 ## From practice to documentation
 
