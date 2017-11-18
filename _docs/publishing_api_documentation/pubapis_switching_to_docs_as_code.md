@@ -3,7 +3,7 @@ title: "Case study: Switching tools to docs-as-code"
 permalink: /pubapis_switching_to_docs_as_code.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.84
+weight: 7.94
 section: publishingapis
 path1: /publishingapis.html
 ---
@@ -19,7 +19,7 @@ In this article, I'll describe the challenges I faced into when implementing a d
 
 ## Previous processes
 
-Previously, the Appstore doc team published content through a content management system called Hippo (now called "Bloomreach".) Hippo was similar to WordPress or Drupal but was Java-based rather than PHP-based (which made it attractive to Java-centric enterprise).
+Previously, the Appstore doc team published content through a content management system called Hippo (now called "Bloomreach"). Hippo was similar to WordPress or Drupal but was Java-based rather than PHP-based (which made it attractive to Java-centric enterprise).
 
 To publish a page of documentation, we tech writers had to create a new page in the Hippo CMS and then paste in our HTML for the page (or try to use the WYSIWYG editor in the CMS, which was disastrous). If you had 50 pages of documentation to publish, you would need to paste the HTML into each CMS page one by one. Originally, many writers would use tools such as Pandoc to convert their content to HTML and then paste it into the Hippo CMS. It was painstaking, prone to error, and primitive.
 

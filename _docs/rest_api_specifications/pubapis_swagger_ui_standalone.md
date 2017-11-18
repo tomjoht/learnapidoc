@@ -1,9 +1,8 @@
 ---
-title: Swagger UI demo 1 (standalone)
+title: Swagger UI demo (standalone)
 permalink: /pubapis_swagger_ui_standalone.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.7
 section: restapispecifications
 path1: /restapispecifications.html
 ---

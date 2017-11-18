@@ -5,7 +5,7 @@ course: "Documenting REST APIs"
 weight: 1.2
 sidebar: docapis
 section: introtoapis
-path1: /introtoapis.html
+path1: /docapis_introtoapis.html
 ---
 
 Before we dive into the technical aspects of APIs, let's explore the market and general landscape and trends with API documentation.
@@ -98,8 +98,9 @@ API documentation is often a new world to technical writers. Many of the compone
 * Reference topics
 * User tasks
 
-When you try to navigate the world of API documentation, you may be initially overwhelmed by the differences and intimidated by the tools. Additionally, the documentation content itself is often complex and oriented towards developers.
+When you try to navigate the world of API documentation, you may be initially overwhelmed by the differences and intimidated by the tools. Additionally, the documentation content itself is often complex and requires familiarity with development concepts and processes.
 
+{% comment %}
 ## Learning materials about API doc are scarce
 
 Realizing there was a need for more information, in 2014 I guest-edited a special issue of Intercom dedicated to API documentation.
@@ -114,3 +115,4 @@ This issue was a good start, but many technical writers have asked for more trai
 In 2014, the STC Summit in Columbus held its first ever API documentation track. Since then, API documentation tracks and themes have become a consistent pattern in technical writing conferences. Many technical writers choose to specialize in API documentation as a way of distinguishing themselves and their skillsets in the marketplace.
 
 Overall, technical writers are hungry to learn more about APIs. This course will help you build the foundation of what you need to know to get a job in API documentation and excel in this field. As a skilled API technical writer, you will be in high demand and fulfill a critical role in companies that distribute their services through APIs.
+{% endcomment %}

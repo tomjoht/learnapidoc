@@ -5,7 +5,7 @@ course: "Documenting REST APIs"
 weight: 1.11
 sidebar: docapis
 section: introtoapis
-path1: /introtoapis.html
+path1: /docapis_introtoapis.html
 ---
 
 <img src="images/tomjohnson.jpg" class="small" style="float: right; padding:1em;"/>

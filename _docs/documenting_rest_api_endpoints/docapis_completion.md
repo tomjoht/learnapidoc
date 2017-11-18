@@ -2,7 +2,7 @@
 title: Next phase of course
 permalink: /docapis_completion.html
 course: "Documenting REST APIs"
-weight: 3.8
+weight: 5.71
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
@@ -49,4 +49,4 @@ If you'd like to get more practice making requests to APIs and doing something w
 
 ## The next part of the course
 
-Now that you've got the content down, the next step is to focus on publishing strategies for API documentation. This is the focus of the next part of the course.
+Now that you've got the content down, the next step is to focus on [publishing strategies for API documentation](pubapis_overview.html). This is the focus of the next part of the course.

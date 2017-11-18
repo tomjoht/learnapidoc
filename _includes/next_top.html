@@ -1,10 +1,9 @@
 {% if site.format == "web" %}<div class="seriesContext">
-  <hr/>
 
   {% assign newpages = site.docs | sort:"weight" | reverse %}
       {% for pg in newpages %}
           {% if pg.weight < page.weight %}
-          <div class="previousButton"><a class="noCrossRef" href="{{site.url}}{{site.baseurl}}{{pg.url}}"><small>&laquo; Previous: {{pg.title}}</small></a></div>
+          <div class="previousButton_top"><a class="noCrossRef" href="{{site.url}}{{site.baseurl}}{{pg.url}}"><small>&laquo; {{pg.title}}</small></a></div>
             {% break %}
         {% endif %}
       {% endfor %}
@@ -12,10 +11,10 @@
     {% assign pages = site.docs | sort:"weight"  %}
     {% for pg in pages %}
         {% if pg.weight > page.weight %}
-          <div class="nextButton"><a class="noCrossRef" href="{{site.url}}{{site.baseurl}}{{pg.url}}"><button type="button" class="btn btn-warning">  NEXT &raquo; {{pg.title}}</button></a></div>
+          <div class="nextButton_top"><a class="noCrossRef" href="{{site.url}}{{site.baseurl}}{{pg.url}}"><small>{{pg.title}} &raquo;</small></a></div>
           {% break %}
       {% endif %}
     {% endfor %}
-  <hr/>
 </div>
+<div style="clear: both;"></div>
 {% endif %}

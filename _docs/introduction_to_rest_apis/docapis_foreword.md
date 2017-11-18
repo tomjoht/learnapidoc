@@ -5,7 +5,7 @@ course: "Documenting REST APIs"
 weight: 1.1
 sidebar: docapis
 section: introtoapis
-path1: /introtoapis.html
+path1: /docapis_introtoapis.html
 ---
 
 I initially compiled this material to teach a series of workshops to a local tech writing firm in the San Francisco Bay area. They were convinced that they either needed to train their existing technical writers on how to document APIs, or they would have to let some of their writers go. I taught a series of three workshops delivered in the evenings, spread over several weeks.

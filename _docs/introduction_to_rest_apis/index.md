@@ -5,7 +5,7 @@ sidebar: docapis
 type: homepage
 path: Introduction to REST APIs
 section: introtoapis
-path1: /introtoapis.html
+path1: /docapis_introtoapis.html
 weight: 1.0
 class: first
 ---

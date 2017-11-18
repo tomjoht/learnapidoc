@@ -4,6 +4,8 @@
 {% comment %}check for items at first level {% endcomment %}
 
 <ul id="navig markdown-toc" class="onPageSectiontoc">
+  <b>Sections in this chapter:</b>
+
 {% for folder in sidebar.folders %}
   {% if folder.jurl contains page.permalink %}
     {% for folderitem in folder.folderitems %}

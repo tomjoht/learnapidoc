@@ -5,7 +5,7 @@ course: "Documenting REST APIs"
 weight: 1.11
 sidebar: docapis
 section: introtoapis
-path1: /introtoapis.html
+path1: /docapis_introtoapis.html
 published: false
 ---
 
