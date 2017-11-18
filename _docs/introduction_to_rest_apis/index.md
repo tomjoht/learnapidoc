@@ -20,17 +20,15 @@ The idea is that rather than learning about these concepts independent of any co
 
 ## REST APIs
 
-In a nutshell, REST APIs (which are a type of web API) involve requests and responses, not too unlike visiting a web page. You make a request to a resource stored on a server, and the server responds with the requested information. REST stands for representational state transfer.
-
-You may find REST APIs familiar because the web itself follows REST. Going to my website, idratherbewriting.com, involves submitting a GET request to my web server and getting a response (which happens to be rendered in a friendly, readable way through the browser). The protocol used to transport the data is HTTP.
+In a nutshell, REST APIs (which are a type of web API) involve requests and responses, not too unlike visiting a web page. You make a request to a resource stored on a server, and the server responds with the requested information. The protocol used to transport the data is HTTP. REST stands for representational state transfer.
 
 <figure>
-{% if site.format == "pdf" or site.format == "kindle" %}<img src="images/restapi_www.png" alt="Web as REST API" />
-{% elsif site.format == "web" %}<img class="medium" src="images/restapi_www.svg" alt="Web as REST API" />
+{% if site.format == "pdf" or site.format == "kindle" %}<img src="images/restapi_apidoc.png" alt="Response and request model for REST APIs" />
+{% elsif site.format == "web" %}<img class="medium" src="images/restapi_apidoc.svg" alt="Response and request model for REST APIs" />
 {% endif %}
 <figcaption>REST APIs involve requests and responses over HTTP protocol</figcaption></figure>
 
-I dive more into the principles of REST in [What is a REST API?](docapis_what_is_a_rest_api.html)
+I dive more into the principles of REST in [What is a REST API?](docapis_what_is_a_rest_api.html) In your REST API documentation, you describe the various endpoints available, their methods, parameters, and other details, and you also document sample responses from the endpoints. 
 
 ## From practice to documentation
 

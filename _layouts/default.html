@@ -15,7 +15,7 @@
             <div class="col-xs-12 col-sm-9 main">
 {% include breadcrumb.html %}
 
-{% include next_top.html %}
+{% comment %}{% include next_top.html %}{% endcomment %}
                     <h1>{{page.title}}</h1>
                     <div class="amazonBook">
                     {% include amazon_book.html %}
@@ -23,9 +23,7 @@
 
                     {{content}}
                     {% comment %}
-                    {% unless page.permalink == "/docapis_course_reviews.html" %}
                     <p class="note" style="margin-top:30px">If this information was helpful, would you consider adding a <a href="https://idratherbewriting.wufoo.com/forms/sxgxvqb1ahtv6q/">course review comment</a>?</p>
-                    {% endunless %}
                     {% endcomment %}
                     {% include next.html %}
 
