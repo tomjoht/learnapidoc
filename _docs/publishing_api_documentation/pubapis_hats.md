@@ -49,7 +49,7 @@ Some disadvantages of using a HAT include the following:
 
 ### - Most HATs don't run on Macs
 
-Almost no HAT runs on a Mac. But many developers and designers prefer Macs because they have a much better development platform (the command line is much friendlier and functional, for example). To make a cURL call, you just open Terminal and paste in the call. With a Windows machine, installing cURL and libcurl is much more onerous and harder to use.
+Almost no HAT runs on a Mac. But many developers and designers prefer Macs because they have a much better development platform (the command line is much friendlier and functional, for example). To make a curl call, you just open Terminal and paste in the call. With a Windows machine, installing curl and libcurl is much more onerous and harder to use.
 
 If most developers use Macs but you use a PC (to accommodate your HAT), you may struggle to install developer tools or to follow internal tutorials to get set up and test out content.
 

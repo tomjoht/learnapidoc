@@ -102,7 +102,7 @@ When you submit a request, Swagger UI shows you the curl request that is submitt
 curl -X GET "https://simple-weather.p.mashape.com/weather?lat=37.3708698&lng=-122.037593" -H "accept: text/plain" -H "X-Mashape-Key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p"
 ```
 
-The `-H "X-Mashape-Key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p"` indicates that a header is being sent with the API key. (For more on cURL, see [Make a cURL call](docapis_make_curl_call.html).)
+The `-H "X-Mashape-Key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p"` indicates that a header is being sent with the API key. (For more on curl, see [Make a curl call](docapis_make_curl_call.html).)
 
 ## Troubleshooting issues
 

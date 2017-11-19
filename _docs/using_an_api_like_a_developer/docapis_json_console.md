@@ -11,7 +11,7 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-Seeing the response from cURL or Postman is cool, but how do you make use of the JSON data? With most API documentation, you don't need to show how to make use of JSON data. You assume that developers will use their JavaScript skills to parse through the data and display it appropriately in their apps.
+Seeing the response from curl or Postman is cool, but how do you make use of the JSON data? With most API documentation, you don't need to show how to make use of JSON data. You assume that developers will use their JavaScript skills to parse through the data and display it appropriately in their apps.
 
 However, to better understand how developers will access the data, we'll go through a brief tutorial to display the REST response on a web page.
 
@@ -20,7 +20,7 @@ However, to better understand how developers will access the data, we'll go thro
 
 ## Display part of the REST JSON response on a web page
 
-Mashape [provides some sample code in unirest](https://docs.rapidapi.com/v1.0/docs/unirest) to parse and display the REST response on a web page. You could use it, but you could also use some auto-generated code from Postman to do pretty much the same thing.
+Mashape [provides some sample code in unirest](https://docs.rapidapi.com/v1.0/docs/unirest) to parse and display the REST response on a web page. You could use it, but you could also use some auto-generated JavaScript code from Postman to do pretty much the same thing.
 
 1.  Start with a basic HTML template with jQuery referenced, like this:
 
@@ -36,9 +36,9 @@ Mashape [provides some sample code in unirest](https://docs.rapidapi.com/v1.0/do
     </html>
     ```
 
-   Save your file with a name such as weatherdata.html.
+    Save your file with a name such as weatherdata.html.
 
-2.  Open Postman and click the request to the `weatherdata` endpoint that you configured earlier.
+2.  Open Postman and click the request to the `weatherdata` endpoint that you [configured earlier](docapis_postman.html).
 3.  Click the **Code** button.
 
     <img src="images/postmangeneratecodesnippet.png" class="medium" alt="Generate code snippet" />
@@ -115,7 +115,7 @@ Mashape [provides some sample code in unirest](https://docs.rapidapi.com/v1.0/do
 
     The page body will be blank, but the weatherdata response should be logged to the JavaScript console. You can inspect the payload by expanding the sections.
 
-    <img src="images/jsonpayloadweatherdata.png" alt="JSON payload from weatherdata API logged to console" />
+    <a href="http://idratherbewriting.com/learnapidoc/assets/files/weatherdata-plain.html"><img src="images/jsonpayloadweatherdata.png" alt="JSON payload from weatherdata API logged to console" /></a>
 
     Note that Chrome tells you whether each expandable section is an object or an array. Knowing this is critical to accessing the value through JavaScript dot notation.
 
@@ -125,7 +125,7 @@ Mashape [provides some sample code in unirest](https://docs.rapidapi.com/v1.0/do
 
 ## The AJAX method from jQuery
 
-Probably the most useful method to know for showing code samples is the `ajax` method from jQuery.
+Probably the most useful method to know for showing code samples is the [`ajax` method from jQuery](http://api.jquery.com/jquery.ajax).
 
 In brief, this `ajax` method takes one argument: `settings`.
 
@@ -167,6 +167,6 @@ Strings are always enclosed inside quotation marks, and you use the plus sign `+
 
 Customizing log messages is helpful if you're logging various things to the console and need to flag them with an identifier.
 
-## Inspect the payload
+{% include activity.html %}
 
-Inspect the payload by expanding each of the sections in the Mashape weather API. Find the section that appears here: **object > query > results > channel > item > description.**
+Inspect [the payload](http://idratherbewriting.com/learnapidoc/assets/files/weatherdata-plain.html) by expanding each of the sections returned in the JSON console object. Find the section that appears here: **object > query > results > channel > item > description.** Based on the information here, what's the forecast for today?

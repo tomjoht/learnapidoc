@@ -1,5 +1,5 @@
 ---
-title: Understand cURL more
+title: Understand curl more
 permalink: /docapis_understand_curl.html
 categories:
 - api-doc
@@ -11,38 +11,38 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-Almost every API shows how to interact with the API using cURL. So before moving on, let's pause a bit and learn more about cURL.
+Almost every API shows how to interact with the API using curl. So before moving on, let's pause a bit and learn more about curl.
 
 * TOC
 {:toc}
 
-## Why cURL?
+## Why curl?
 
 One of the advantages of REST APIs is that you can use almost any programming language to call the endpoint. The endpoint is simply a resource located on a web server at a specific path.
 
-Each programming language has a different way of making web calls. Rather than exhausting your energies trying to show how to make web calls in Java, Python, C++, JavaScript, Ruby, and so on, you can just show the call using cURL.
+Each programming language has a different way of making web calls. Rather than exhausting your energies trying to show how to make web calls in Java, Python, C++, JavaScript, Ruby, and so on, you can just show the call using curl.
 
-cURL provides a generic, language agnostic way to demonstrate HTTP requests and responses. Users can see the format of the request, including any headers and other parameters. Your users can translate this into the specific format for the language they're using.
+curl provides a generic, language agnostic way to demonstrate HTTP requests and responses. Users can see the format of the request, including any headers and other parameters. Your users can translate this into the specific format for the language they're using.
 
 ## REST APIs follow the same model of the web
 
 One reason REST APIs are so familiar is because REST follows the same model as the web. When you type an `http` address into a browser address bar, you're telling the browser to make an HTTP request to a resource on a server. The server returns a response, and your browser converts the response to a more visual display. But you can also see the raw code.
 
-## Try using cURL to GET a web page
+## Try using curl to GET a web page
 
-To see an example of how cURL retrieves a web resource, open a terminal and type the following:
+To see an example of how curl retrieves a web resource, open a terminal and type the following:
 
 ```bash
 curl http://example.com
 ```
 
-You should see all the code behind the site [example.com](http://example.com). The browser's job is to make that code visually readable. cURL shows you what you're really retrieving.
+You should see all the code behind the site [example.com](http://example.com). The browser's job is to make that code visually readable. curl shows you what you're really retrieving.
 
 ## Requests and responses include headers too
 
 When you type an address into a website, you see only the body of the response. But actually, there's more going on behind the scenes. When you make the request, you're sending a header that contains information about the request. The response also contains a header.
 
-1.  To see the response header in a cURL request, include `-i` in the cURL request:
+1.  To see the response header in a curl request, include `-i` in the curl request:
 
     ```bash
     curl http://example.com -i
@@ -75,7 +75,7 @@ When you type an address into a website, you see only the body of the response. 
 
     The header contains the metadata about the response. All of this information is transferred to the browser when you make a request to a URL in your browser (that is, when you surf to a web page online), but the browser doesn't show you this information. You can see the header information using the Chrome Developer Tools console if you look on the Network tab.
 
-3.  Now let's specify the method. The GET method is the default, but we'll make it explicit here:
+3.  Now let's specify the method. The GET method used by default, but we'll make it explicit here:
 
     ```bash
     curl -X GET http://example.com -I
@@ -132,9 +132,9 @@ When you type an address into a website, you see only the body of the response. 
     {% endif %}
 
     {: .note}
-    GET is used by default with cURL requests. If you use cURL to make HTTP requests other than GET, you need to specify the HTTP method.
+    GET is used by default with curl requests. If you use curl to make HTTP requests other than GET, you need to specify the HTTP method.
 
-## Unpacking the weather API cURL request
+## Unpacking the weather API curl request
 
 Let's look more closely at the request you submitted for the weather:
 
@@ -144,7 +144,7 @@ Let's look more closely at the request you submitted for the weather:
   -H 'Accept: text/plain'
 ```
 
-cURL has shorthand names for the various options that you include with your request. The `\` just creates a break for a new line for readability. (Don't use `\` in Windows.)
+curl has shorthand names for the various options that you include with your request. The `\` just creates a break for a new line for readability. (Don't use `\` in Windows.)
 
 Here's what the commands mean:
 
@@ -167,7 +167,7 @@ Here's what the commands mean:
    </colgroup>
    <thead>
       <tr>
-         <th markdown="span">cURL command</th>
+         <th markdown="span">curl command</th>
          <th markdown="span">Description</th>
       </tr>
    </thead>
@@ -189,7 +189,7 @@ Here's what the commands mean:
 {% endif %}
 
 {: .note}
-Most cURL commands have a couple of different representations. `--get` can also be written as `-X GET`.
+Most curl commands have a couple of different representations. `--get` can also be written as `-X GET`.
 
 ## Query strings and parameters
 
@@ -201,9 +201,9 @@ The latitude (`lat`) and longitude (`lng`) parameters were passed to the endpoin
 
 After the query string, each parameter is concatenated with other parameters through the `&` symbol. The order of the parameters doesn't matter. The order only matters if the parameters are part of the URL path itself (not listed after the query string).
 
-## Common cURL commands related to REST
+## Common curl commands related to REST
 
-cURL has a lot of possible commands, but the following are the most common when working with REST APIs.
+curl has a lot of possible commands, but the following are the most common when working with REST APIs.
 
 {% if site.format == "kindle" %}
 
@@ -220,7 +220,7 @@ cURL has a lot of possible commands, but the following are the most common when 
 :  *Example:* `curl -H "key:12345" http://www.example.com`
 
 `-X POST`
-:  The HTTP method to use with the request (in this example, `POST`). If you use `-d` in the request, cURL automatically specifies a POST method. With GET requests, including the HTTP method is optional, because GET is the default method used.
+:  The HTTP method to use with the request (in this example, `POST`). If you use `-d` in the request, curl automatically specifies a POST method. With GET requests, including the HTTP method is optional, because GET is the default method used.
 : *Example:* `curl -X POST -d "resource-to-update" http://www.example.com`
 
 `@filename`
@@ -236,7 +236,7 @@ cURL has a lot of possible commands, but the following are the most common when 
    </colgroup>
    <thead>
       <tr>
-         <th markdown="span">cURL command</th>
+         <th markdown="span">curl command</th>
          <th markdown="span">Description</th>
          <th markdown="span">Example</th>
       </tr>
@@ -259,7 +259,7 @@ cURL has a lot of possible commands, but the following are the most common when 
       </tr>
       <tr>
          <td markdown="span">`-X POST`</td>
-         <td markdown="span">The HTTP method to use with the request (in this example, `POST`). If you use `-d` in the request, cURL automatically specifies a POST method. With GET requests, including the HTTP method is optional, because GET is the default method used.</td>
+         <td markdown="span">The HTTP method to use with the request (in this example, `POST`). If you use `-d` in the request, curl automatically specifies a POST method. With GET requests, including the HTTP method is optional, because GET is the default method used.</td>
          <td markdown="span">`curl -X POST -d "resource-to-update" http://www.example.com`</td>
       </tr>
       <tr>
@@ -271,9 +271,9 @@ cURL has a lot of possible commands, but the following are the most common when 
 </table>
 {% endif %}
 
-See the [cURL documentation](http://curl.haxx.se/docs/manpage.html) for a comprehensive list of cURL commands you can use.
+See the [curl documentation](http://curl.haxx.se/docs/manpage.html) for a comprehensive list of curl commands you can use.
 
-## Example cURL command
+## Example curl command
 
 Here's an example that combines some of these commands:
 
@@ -293,11 +293,9 @@ curl -i \
      http://personsreport.com/status/person123 \
 ```
 
-(Line breaks are problematic on Windows, so I don't recommend formatting cURL requests like this.)
+(Line breaks are problematic on Windows, so I don't recommend formatting curl requests like this.)
 
 The `Accept` header tells the server that the only format we will accept in the response is JSON.
-
-## Summary
 
 {% include activity.html %}
 
@@ -309,6 +307,6 @@ What do the following parameters mean?
 * `-d`
 
 {: .tip}
-When you use cURL, the terminal and iTerm on the Mac provide a much easier experience than using the command prompt in Windows. If you're going to get serious about API documentation but you're still on a PC, consider switching. There are a lot of utilities that you install through a terminal that *just work* on a Mac.
+When you use curl, the terminal and iTerm on the Mac provide a much easier experience than using the command prompt in Windows. If you're going to get serious about API documentation but you're still on a PC, consider switching. There are a lot of utilities that you install through a terminal that *just work* on a Mac.
 
-To learn more about cURL with REST documentation, see [REST-esting with cURL](http://blogs.plexibus.com/2009/01/15/rest-esting-with-curl/).
+To learn more about curl with REST documentation, see [REST-esting with curl](http://blogs.plexibus.com/2009/01/15/rest-esting-with-curl/).

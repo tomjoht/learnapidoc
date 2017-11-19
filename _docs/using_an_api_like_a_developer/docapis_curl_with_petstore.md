@@ -1,5 +1,5 @@
 ---
-title: Use methods with cURL
+title: Use methods with curl
 permalink: /docapis_curl_with_petstore.html
 keywords:
 course: "Documenting REST APIs"
@@ -23,7 +23,7 @@ To create a pet, you have to pass a JSON message in the request body. Rather tha
 {: .tip}
 A lot of APIs require you to post requests containing JSON messages in the body. This is often how you configure a service. The list of JSON key-value pairs that the API accepts is called the "Model" in the Petstore API.
 
-1.  Insert the following into a file called mypet.json. This information will be passed in the `-d` parameter of the cURL request:
+1.  Insert the following into a file called mypet.json. This information will be passed in the `-d` parameter of the curl request:
 
     ```json
     {
@@ -46,7 +46,7 @@ A lot of APIs require you to post requests containing JSON messages in the body.
     }
     ```
 
-2.  Change the first `id` value to another integer (whole number) and the pet name of `fluffy`.
+2.  Change the first `id` value to another integer (whole number). Also, change the pet's name of `fluffy` to something else.
 
     {: .note}
     Use a unique ID and name that others aren't likely to also use. Also, don't begin your ID with the number 0.
@@ -82,7 +82,7 @@ A lot of APIs require you to post requests containing JSON messages in the body.
 Guess what, your pet hates its name! Change your pet's name to something more formal using the update pet method.
 
 1.  In the mypet.json file, change the pet's name.
-2.  Use the `PUT` method instead of `POST` with the same cURL content to update the pet's name:
+2.  Use the `PUT` method instead of `POST` with the same curl content to update the pet's name:
 
     ```bash
     curl -X PUT --header "Content-Type: application/json" --header "Accept: application/json" -d @mypet.json "http://petstore.swagger.io/v2/pet"
@@ -90,10 +90,10 @@ Guess what, your pet hates its name! Change your pet's name to something more fo
 
 ### Get your pet's name by ID
 
-Now you want to find your pet's name by passing the ID into the `/pet/{petID}` endpoint.
+Find your pet's name by passing the ID into the `/pet/{petID}` endpoint:
 
 1.  In your mypet.json file, copy the first `id` value.
-2.  Use this cURL command to get information about that pet ID, replacing `51231236` with your pet ID.
+2.  Use this curl command to get information about that pet ID, replacing `51231236` with your pet ID.
 
     ```bash
     curl -X GET --header "Accept: application/json" "http://petstore.swagger.io/v2/pet/51231236"
@@ -130,7 +130,7 @@ Now you want to find your pet's name by passing the ID into the `/pet/{petID}` e
 
 ### Delete your pet
 
-Unfortunately, your pet has died. It's time to delete your pet from the pet registry. &lt;cry + tears / &gt;
+Unfortunately, your pet has died. It's time to delete your pet from the pet registry.
 
 1.  Use the DELETE method to remove your pet. Replace `5123123` with your pet ID:
 
@@ -150,16 +150,16 @@ Unfortunately, your pet has died. It's time to delete your pet from the pet regi
     {"code":1,"type":"error","message":"Pet not found"}
     ```
 
-This example allowed you to see how you can work with cURL to create, read, update, and delete resources. These four operations are referred to as CRUD and are common to almost every programming language.
+This example allowed you to see how you can work with curl to create, read, update, and delete resources. These four operations are referred to as CRUD and are common to almost every programming language.
 
-Although Postman is probably easier to use, cURL lends itself to power-level usage. Quality assurance teams often construct advanced test scenarios that iterate through a lot of cURL requests.
+Although Postman is probably easier to use, curl lends itself to power-level usage. Quality assurance teams often construct advanced test scenarios that iterate through a lot of curl requests.
 
-## Import cURL into Postman
+## Import curl into Postman
 
-You can import cURL commands into Postman by doing the following:
+You can import curl commands into Postman by doing the following:
 
 1.  Open a new tab in Postman and click the **Import** button in the upper-left corner.
-2.  Select **Paste Raw Text** and insert your cURL command:
+2.  Select **Paste Raw Text** and insert your curl command:
 
     ```bash
     curl -X GET --header "Accept: application/json" "http://petstore.swagger.io/v2/pet/5123123"
@@ -173,15 +173,15 @@ You can import cURL commands into Postman by doing the following:
 4.  Close the dialog box.
 5.  Click **Send**.
 
-## Export Postman to cURL
+## Export Postman to curl
 
-You can export Postman to cURL by doing the following:
+You can export Postman to curl by doing the following:
 
 1.  In Postman, click the **Generate Code** button.
 
     <img src="images/postmangeneratecodesnippet.png" alt="Generating code snippets" />
 
-2.  Select **cURL** from the drop-down menu.
+2.  Select **curl** from the drop-down menu.
 3.  Copy the code snippet.
 
     ```bash

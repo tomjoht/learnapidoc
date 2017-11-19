@@ -49,7 +49,7 @@ CRUD
 : Create, Read, Update, Delete. These four programming operations are often compared to POST, GET, PUT, and DELETE with REST API operations.
 
 curl
-: A command line utility often used to interact with REST API endpoints. Used in documentation for request code samples. curl is usually the default format used to display requests in API documentation. See [curl](https://curl.haxx.se/). Also written as cURL. See [Make a cURL call](docapis_make_curl_call.html) and [Understand cURL more](docapis_understand_curl.html).
+: A command line utility often used to interact with REST API endpoints. Used in documentation for request code samples. curl is usually the default format used to display requests in API documentation. See [curl](https://curl.haxx.se/). Also written as curl. See [Make a curl call](docapis_make_curl_call.html) and [Understand curl more](docapis_understand_curl.html).
 
 endpoint
 : The end part of the request URL (after the base path). Also sometimes used to refer to the entire API reference topic. See [Describe the endpoints and methods](docapis_doc_endpoint_definitions.html).

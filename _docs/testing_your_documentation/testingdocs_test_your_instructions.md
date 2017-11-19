@@ -25,7 +25,7 @@ When things don't work, you can identify and log bugs in issue tracking systems 
 
 Other times, the bugs are within your own documentation. For example, I had one of my parameters wrong. Instead of `verboseMode`, the parameter was simply `verbose`. This is one of those details you don't discover unless you test something, find it doesn't work, and then set about figuring out what's wrong.
 
-If you're testing a REST API, you can submit the test calls using [cURL](docapis_make_curl_call.html), [Postman](docapis_postman.html), or another REST client. Save the calls so that you can quickly run a variety of scenarios.
+If you're testing a REST API, you can submit the test calls using [curl](docapis_make_curl_call.html), [Postman](docapis_postman.html), or another REST client. Save the calls so that you can quickly run a variety of scenarios.
 
 When you start to run your own tests and experiments, you'll begin to discover what does and does not work. For example, at one company, after setting up a test system and running some calls, I learned that part of my documentation was unnecessary. I thought that field engineers would need to configure a database with a particular code themselves, when it turns out that IT operations would actually be doing this configuration.
 

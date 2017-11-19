@@ -17,7 +17,7 @@ Almost all documentation builds on assumptions that may or may not be shared wit
 
 ## Assumptions about terminology
 
-You may assume that users already know how to SSH onto a server, create authorizations in REST headers, use cURL to submit calls, and so on. Usually documentation doesn't hold a user's hand from beginning to end, but rather jumps into a specific task that depends on concepts and techniques that you assume the user already knows.
+You may assume that users already know how to SSH onto a server, create authorizations in REST headers, use curl to submit calls, and so on. Usually documentation doesn't hold a user's hand from beginning to end, but rather jumps into a specific task that depends on concepts and techniques that you assume the user already knows.
 
 Making assumptions about concepts and techniques your audience knows can be dangerous. These assumptions are exactly why so many people get frustrated by instructions and throw them in the trash.
 

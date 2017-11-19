@@ -11,7 +11,7 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-When you're testing endpoints with different parameters, you can use one of the many GUI REST clients available to make the requests. You can also use [cURL](docapis_install_curl.html) (which we'll cover soon), but GUI clients tend to simplify testing with REST APIs.
+When you're testing endpoints with different parameters, you can use one of the many GUI REST clients available to make the requests. You can also use [curl](docapis_install_curl.html) (which we'll cover soon), but GUI clients tend to simplify testing with REST APIs.
 
 * TOC
 {:toc}
@@ -25,7 +25,7 @@ With a GUI REST client, you can:
 *  See the response in a prettified JSON view or a raw format
 *  Easily include header information
 
-Using a GUI REST client, you won't have to worry about getting cURL syntax right and analyzing requests and responses from the command line.
+Using a GUI REST client, you won't have to worry about getting curl syntax right and analyzing requests and responses from the command line.
 
 ## Common GUI clients
 

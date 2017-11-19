@@ -18,9 +18,9 @@ Status and error codes are essential for understanding responses from requests.
 {:toc}
 {% endif %}
 
-## Sample status code in cURL header
+## Sample status code in curl header
 
-Remember when we submitted the cURL call back in [an earlier lesson](docapis_make_curl_call.html)? We submitted a cURL call and specified that we wanted to see the response headers (`--include` or `-i`):
+Remember when we submitted the curl call back in [an earlier lesson](docapis_make_curl_call.html)? We submitted a curl call and specified that we wanted to see the response headers (`--include` or `-i`):
 
 ```bash
   curl --get -include 'https://simple-weather.p.mashape.com/weather?lat=37.354108&lng=-121.955236' \-H 'X-Mashape-Key: APIKEY' \
@@ -92,7 +92,7 @@ Alternatively, you can have a general status and error codes page that lists all
 In particular, you should look for codes that return when there is an error, since this information helps developers troubleshoot problems.
 
 {: .tip}
-You can run some of the cURL calls you made earlier (this time adding <code>-i</code>) and looking at the HTTP status code in the response.
+You can run some of the curl calls you made earlier (this time adding <code>-i</code>) and looking at the HTTP status code in the response.
 
 ## How to list status codes
 

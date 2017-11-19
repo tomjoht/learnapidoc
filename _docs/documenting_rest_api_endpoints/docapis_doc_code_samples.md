@@ -30,7 +30,7 @@ And another from Twilio:
 
 <a href="https://www.twilio.com/docs/api/rest/making-calls" class="noExtIcon"><img src="images/twiliocodeexamples.png" alt="Twilio code samples" /></a>
 
-However, don't feel so intimidated by this smorgasbord of code samples. Some API doc tools might actually automatically generate these code samples because the patterns for making REST requests in different programming languages follow a common template. This is why many APIs decide to provide one code sample (usually in cURL) and let the developer extrapolate the format in his or her own programming language.
+However, don't feel so intimidated by this smorgasbord of code samples. Some API doc tools might actually automatically generate these code samples because the patterns for making REST requests in different programming languages follow a common template. This is why many APIs decide to provide one code sample (usually in curl) and let the developer extrapolate the format in his or her own programming language.
 
 ## Auto-generating code samples
 

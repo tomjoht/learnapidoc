@@ -77,16 +77,21 @@ a[href^="https://"]:after {
 }
 
 
-a[href].noCrossRef::after, a[href].noExtIcon::after, pre a,
+a[href].noCrossRef::after, a[href].noExtIcon::after, pre a::after, pre.highlight a::after, pre.highlight code a::after, a.vglnk::after,
 a.no_icon:after
  {
   content: "" !important;
   padding-left: 0;
 }
 
-pre a:hover, pre a {
-  cursor: pipe;
+pre a:hover, pre a, a.vglnk, a.vglnk:hover {
+  cursor: text;
   text-decoration: none;
+  color: lightblue;
+}
+
+table code a.vglnk, table code a.vglnk:hover {
+  color: #c7254e;
 }
 
 /* Github edit button */

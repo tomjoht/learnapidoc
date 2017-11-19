@@ -128,7 +128,7 @@ If you open a browser and go to http://idratherbewriting.com, you're really usin
 {% elsif site.format == "web" %}<img class="medium" src="images/restapi_www.svg" alt="Web as REST API" />
 {% endif %}
 
-You can see this response in cURL if you open a Terminal prompt and type `curl http://idratherbewriting.com`. (This assumes you have cURL installed.)
+You can see this response in curl if you open a Terminal prompt and type `curl http://idratherbewriting.com`. (This assumes you have curl installed.)
 
 Because the web itself is an example of RESTful style architecture, the way REST APIs work will likely become second nature to you.
 

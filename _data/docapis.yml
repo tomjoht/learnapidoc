@@ -35,16 +35,16 @@ folders:
   - title: Submit requests through Postman
     jurl: /docapis_postman.html
 
-  - title: cURL intro and installation
+  - title: curl intro and installation
     jurl: /docapis_install_curl.html
 
-  - title: Make a cURL call
+  - title: Make a curl call
     jurl: /docapis_make_curl_call.html
 
-  - title: Understand cURL more
+  - title: Understand curl more
     jurl: /docapis_understand_curl.html
 
-  - title: Use methods with cURL
+  - title: Use methods with curl
     jurl: /docapis_curl_with_petstore.html
 
   - title: Analyze the JSON response

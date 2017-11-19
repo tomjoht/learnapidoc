@@ -17,7 +17,7 @@ Congratulations, you finished the documenting REST APIs section of the course. Y
 
 During this part of the course, you learned the core tasks involved in documenting REST APIs. First, as a developer, you did the following:
 
-* How to make calls to an API using cURL and Postman
+* How to make calls to an API using curl and Postman
 * How to pass parameters to API calls
 * How to inspect the objects in the JSON payload
 * How to use dot notation to access the JSON values you want
