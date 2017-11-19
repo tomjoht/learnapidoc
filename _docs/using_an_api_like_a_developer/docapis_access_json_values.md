@@ -11,7 +11,7 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-You'll notice that in the main content display of the weatherdata code, the REST response information didn't appear. It only appeared in the JavaScript Console. You need to use dot notation to access the JSON values you want.
+In the tutorial for [logging the `weatherdata` response to the JS Console](/learnapidoc/assets/files/weatherdata-plain.html) (from the previous tutorial, [Use the JSON from the response payload](docapis_json_console.html)), the REST response information didn't appear on the page. It only appeared in the JS Console. You need to use dot notation to access the JSON values you want.
 
 {: .note}
 This section will use a little bit of JavaScript. You probably wouldn't use this code very much for documentation, but it's important to know anyway.
@@ -38,76 +38,115 @@ console.log(response.query.results.channel.item.description);
 Your code should look like this:
 
 ```js
-  .done(function (response) {
-    console.log(response);
-    console.log (response.query.results.channel.item.description);
-  });
+.done(function (response) {
+  console.log(response);
+  console.log (response.query.results.channel.item.description);
+});
 ```
 
 Refresh your Chrome browser and see the information that appears in the console:
 
 <img src="images/weatherdatapartlycloudy.png" alt="Weather description that gets pulled out through dot notation" />
 
+{% include random_ad.html %}
+
 ## Printing a JSON value to the page
 
 Let's say you wanted to print part of the JSON (the description element) to the page. This involves a little bit of JavaScript or jQuery (to make it easier).
 
-{% include random_ad.html %}
+I'm assuming you're starting with the [same code](/learnapidoc/assets/files/weatherdata-plain.html) from the [previous tutorial &mdash; Use the JSON from the response payload](docapis_json_console.html). That code looks like this:
 
-1. Add a named element to the body of your page, like this:
+```html
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<title>Sample Page</title>
 
-   ```html
-    <div id="weatherDescription"></div>
-   ```
+<script>
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.3710062&lng=-122.0375935",
+  "method": "GET",
+  "dataType": "json",
+  "headers": {
+    "accept": "application/json",
+    "x-mashape-key": "EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p",
+    "cache-control": "no-cache",
+    "postman-token": "e41085c0-de85-0002-53ea-b64558309c68"
+   }
+ }
 
-2. Inside the tags of your `done` method, pull out the value you want into a variable, like this:
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+</script>
+</head>
+<h1>Sample Page</h1>
+<body>
+  <h3>Open the JS Console (View > Developer > JavaScript Console) to see the object returned.</h3>
+</body>
+</html>
+```
 
-   ```js
-    var content = response.query.results.channel.item.description;
-   ```
+To write a specific property to the page, modify your code to look like this:
 
-3. Below this (same section) use the jQuery `append` method to append the variable to the element on your page:
+```html
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+ var settings = {
+   "async": true,
+   "crossDomain": true,
+   "dataType": "json",
+   "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&lng=-121.955236",
+   "method": "GET",
+   "headers": {
+   "accept": "application/json",
+   "x-mashape-key": "APIKEY"
+   }
+ }
 
-   ```js
-    $("#weatherDescription").append(content);
-   ```
+$.ajax(settings).done(function (response) {
+ console.log(response);
 
-    This code says, find the element with the ID `weatherDescription` and append the `content` variable to it.
+ var content = response.query.results.channel.item.description;
+ $("#weatherDescription").append(content);
+});
+ </script>
+ <title>Sample Page</title>
+</head>
+<body>
+  <h1>Sample Page</h1>
 
-    Your entire code should look as follows:
+<div id="weatherDescription"></div>
 
-   ```html
-    <html>
-    <body>
+</body>
+</html>
+```
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+You can view the result here: <a href="/learnapidoc/assets/files/weatherdata-forecast.html">/learnapidoc/assets/files/weatherdata-forecast.html</a>.
 
-    <script>
-    var settings = {
-      "async": true,
-      "crossDomain": true,
-      "dataType": "json",
-    "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&lng=-121.955236",
-      "method": "GET",
-    "headers": {
-      "accept": "application/json",
-      "x-mashape-key": "APIKEY"
-    }
-    }
 
-    $.ajax(settings)
+Here's what we changed:
 
-    .done(function (response) {
-      console.log(response);
+We added a named element to the body of the page, like this:
 
-      var content = response.query.results.channel.item.description;
-      $("#weatherDescription").append(content);
-    });
-    </script>
+```html
+<div id="weatherDescription"></div>
+ ```
 
-    <div id="weatherDescription"></div>
-    </body>
-    </html>
-   ```
+Inside the tags of the `done` method, we pulled out the value we want into a variable, like this:
 
-    Here's <a href="http://idratherbewriting.com/learnapidoc/assets/files/weatherdata-forecast.html">the result</a>.
+```js
+var content = response.query.results.channel.item.description;
+```
+
+Below this same section, we used the [jQuery `append` method](http://api.jquery.com/append/) to append the `content` variable to the element with the `weatherDescription` ID on the page:
+
+```js
+$("#weatherDescription").append(content);
+```
+
+This code basically says, find the element with the ID `weatherDescription` and append the `content` variable to it.

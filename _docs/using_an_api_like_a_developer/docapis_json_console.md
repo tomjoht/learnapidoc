@@ -11,7 +11,7 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-Seeing the response from curl or Postman is cool, but how do you make use of the JSON data? With most API documentation, you don't need to show how to make use of JSON data. You assume that developers will use their JavaScript skills to parse through the data and display it appropriately in their apps.
+Seeing the response from curl or Postman is cool, but how do you make use of the JSON data? With most API documentation, you don't need to show how to make use of JSON data. You assume that developers will use their front-end development skills to parse through the data and display it appropriately in their apps.
 
 However, to better understand how developers will access the data, we'll go through a brief tutorial to display the REST response on a web page.
 
@@ -20,7 +20,7 @@ However, to better understand how developers will access the data, we'll go thro
 
 ## Display part of the REST JSON response on a web page
 
-Mashape [provides some sample code in unirest](https://docs.rapidapi.com/v1.0/docs/unirest) to parse and display the REST response on a web page. You could use it, but you could also use some auto-generated JavaScript code from Postman to do pretty much the same thing.
+Mashape [provides some sample code in unirest](https://docs.rapidapi.com/v1.0/docs/unirest) to parse and display the REST response on a web page. You could use the code, but you could also use some auto-generated jQuery code from Postman to do pretty much the same thing. We'll use regular jQuery in this sample.
 
 1.  Start with a basic HTML template with jQuery referenced, like this:
 
@@ -170,3 +170,6 @@ Customizing log messages is helpful if you're logging various things to the cons
 {% include activity.html %}
 
 Inspect [the payload](http://idratherbewriting.com/learnapidoc/assets/files/weatherdata-plain.html) by expanding each of the sections returned in the JSON console object. Find the section that appears here: **object > query > results > channel > item > description.** Based on the information here, what's the forecast for today?
+
+{: .note}
+In the next section, [Access and print a specific JSON value](docapis_access_json_values.html), we'll pull out this value and print it to the page.
