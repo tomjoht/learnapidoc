@@ -14,7 +14,12 @@ path1: /likeadeveloper.html
 You'll notice that in the main content display of the weatherdata code, the REST response information didn't appear. It only appeared in the JavaScript Console. You need to use dot notation to access the JSON values you want.
 
 {: .note}
-This section will use a tiny bit of JavaScript. You probably wouldn't use this code very much for documentation, but it's important to know anyway.
+This section will use a little bit of JavaScript. You probably wouldn't use this code very much for documentation, but it's important to know anyway.
+
+* TOC
+{:toc}
+
+## Getting a specific property from a JSON response object
 
 Let's say you wanted to pull out the `description` part of the JSON response. Here's the dot notation you would use:
 

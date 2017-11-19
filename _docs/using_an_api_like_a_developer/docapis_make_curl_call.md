@@ -11,9 +11,10 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-If you haven't installed cURL, see [cURL intro and installation](docapis_install_curl.html) first.
+In this section, you'll use cURL to make the same weather API requests you made previously with Postman. If you haven't installed cURL, see [cURL intro and installation](docapis_install_curl.html) first.
 
-In this section, you'll use cURL to make the same weather API requests you made previously with Postman.
+* TOC
+{:toc}
 
 ## Prepare the weather request in cURL format
 

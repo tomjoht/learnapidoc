@@ -20,13 +20,8 @@ For step-by-step tutorial on creating an OpenAPI specification document, see the
 
 With OpenAPI, instead of XML, you have set of JSON objects, with a specific schema that defines their naming, order, and contents. This JSON file (often expressed in YAML instead of JSON) describes each part of your API. By describing your API in a standard format, publishing tools can programmatically ingest the information about your API and display each component in a stylized, interactive display.
 
-{: .tip }
-To see a presentation that covers the same concepts in this article, see [https://goo.gl/n4Hvtq](https://goo.gl/n4Hvtq).
-
-{% if site.format == "web" %}
 * TOC
 {:toc}
-{% endif %}
 
 ## Backstory: experiences that prompted me toward OpenAPI
 
@@ -279,3 +274,6 @@ See the following resources for more information on OpenAPI and Swagger:
 * [Swagger-ui Responsive theme](https://github.com/jensoleg/swagger-ui)
 * [Swagger-ui](https://github.com/swagger-api/swagger-ui)
 * [Undisturbed REST: A Guide to Designing the Perfect API](http://www.mulesoft.com/lp/ebook/api/restbook), by Michael Stowe
+
+{: .tip }
+To see a presentation that covers the same concepts in this article, see [https://goo.gl/n4Hvtq](https://goo.gl/n4Hvtq).

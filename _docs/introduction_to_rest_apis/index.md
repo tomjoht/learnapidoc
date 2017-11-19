@@ -18,7 +18,10 @@ As you use the API, you'll learn about endpoints, parameters, data types, authen
 
 The idea is that rather than learning about these concepts independent of any context, you learn them by immersing yourself in a real scenario while using an API. This makes these tools and technologies more meaningful.
 
-## REST APIs
+* TOC
+{:toc}
+
+## About REST APIs
 
 In a nutshell, REST APIs (which are a type of web API) involve requests and responses, not too unlike visiting a web page. You make a request to a resource stored on a server, and the server responds with the requested information. The protocol used to transport the data is HTTP. "REST" stands for representational state transfer.
 

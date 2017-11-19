@@ -10,10 +10,8 @@ path1: /nativelibraryapis.html
 
 An alternative to Javadoc is Doxygen. Doxygen works highly similarly to Javadoc, except that you can process more languages (Java, C++, C#, and more) with it. Doxygen is most commonly used with C++. Additionally, there's a GUI tool (called Doxywizard) that makes it really easy to generate the file.
 
-{% if site.format == "web" %}
 * TOC
 {:toc}
-{% endif %}
 
 ## Download Doxywizard
 

@@ -11,6 +11,11 @@ path1: /likeadeveloper.html
 
 In the [previous topic](docapis_access_json_values.html), you accessed and printed a specific JSON value to the page. Let's dive into dot notation a little more.
 
+* TOC
+{:toc}
+
+## Dot notation
+
 You use a dot after the object name to access its properties. For example, suppose you have an object called `data`:
 
 ```json

@@ -12,6 +12,11 @@ It's pretty common for developers to add Javadoc tags and brief comments as they
 
 However, the comments that developers add are usually poor, incomplete, or incomprehensible. A tech writer's job with Javadoc is often to edit the content that's already there, providing more clarity, structure, inserting the right tags, and more.
 
+* TOC
+{:toc}
+
+## What to look for when editing Javadoc content
+
 When you make edits to Javadoc content, look for the following:
 
 * **Missing doc**. Lots of Javadoc is incomplete. Look for missing documentation.

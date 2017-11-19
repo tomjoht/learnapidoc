@@ -10,10 +10,8 @@ path1: /docendpoints.html
 
 Congratulations, you finished the documenting REST APIs section of the course. You've learned the core of documenting REST APIs. We haven't covered publishing tools or strategies. Instead, this part of the course has focused on the creating content, which should always be the first consideration.
 
-{% if site.format == "web" %}
 * TOC
 {:toc}
-{% endif %}
 
 ## Summary of what you learned
 
@@ -37,7 +35,7 @@ Then you switched perspectives and approached APIs from a technical writer's poi
 
 Although the technology landscape is broad, and there are many different technology platforms, languages, and code bases, most REST APIs have these same sections in common.
 
-## More practice
+## More practice with API requests and responses
 
 If you'd like to get more practice making requests to APIs and doing something with the response (even just printing it to the page), check out the additional tutorials in the [Resources](resources.html) section:
 

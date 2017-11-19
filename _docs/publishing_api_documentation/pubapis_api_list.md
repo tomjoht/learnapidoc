@@ -9,6 +9,11 @@ path1: /publishingapis.html
 
 The following are about 100 openly accessible REST APIs that you can browse as a way to look at patterns and examples. Most of these REST API links are available from [programmableweb.com](http://programmableweb.com). I highly recommend that you [browse APIs by category docs](https://www.programmableweb.com/category-api) from their site. I initially started gathering a list of the APIs in Programmableweb's [most popular APIs docs](https://www.programmableweb.com/news/which-are-developers-favorite-apis/research/2017/09/01), but then I just started adding links as I ran across interesting APIs.
 
+* TOC
+{:toc}
+
+## 100 API doc sites
+
 Here are 100 API doc sites. Peruse them to get a sense of the variety, but also try to identify common patterns.
 
 1.  [Google Places API docs](https://developers.google.com/places/webservice/intro)
@@ -118,7 +123,7 @@ Here are 100 API doc sites. Peruse them to get a sense of the variety, but also 
 
 I include not only impressively designed docs in this list but also docs that look like they were created by a department intern just learning HTML. The variety in the list demonstrates the wide variety of publishing tools and approaches, as well as terminology, in API docs. It seems that almost everyone does them their own way, with their own site, branding, organization, and typography.
 
-## Programmableweb.com: A directory of API doc sites on the open web
+## Programmableweb<span>.</span>com: A directory of API doc sites on the open web
 
 For a directory of API documentation sites on the open web, see the [Programmableweb.com docs](http://www.programmableweb.com/apis/directory). You can browse thousands more web APIs.
 
@@ -127,6 +132,8 @@ For a directory of API documentation sites on the open web, see the [Programmabl
 <a href="http://www.programmableweb.com/apis/directory" class="noExtIcon"><img src="images/programmableweb.png" alt="Programmable web directory" /></a>
 
 Note that Programmableweb lists only open web APIs, meaning APIs that you can access on the web (which also means it's usually a REST API). They don't list the countless internal, firewalled APIs that many companies provide at a cost to paying customers. There are many more thousands of private APIs out there that most of us will never know about.
+
+## Activity
 
 {% include activity.html %}
 

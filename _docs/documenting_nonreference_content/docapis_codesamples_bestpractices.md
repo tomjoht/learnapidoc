@@ -13,10 +13,6 @@ path1: /docnonref.html
 
 As you write documentation for developers, you'll start to include more and more code samples. You might not include these more detailed code samples with the endpoints you document, but as you create tasks and more sophisticated workflows about how to use the API to accomplish a variety of tasks, you'll end up leveraging different endpoints and showing how to address a variety of scenarios.
 
-Here's a sample code sample page from Mashape:
-
-<a href="http://docs.mashape.com/javascript" class="noExtIcon"><img src="images/consumeapi.png" alt="Mashape code sample" /></a>
-
 The following sections list some best practices around code samples.
 
 {% if site.format == "web" %}
@@ -27,8 +23,6 @@ The following sections list some best practices around code samples.
 ## Code samples are like candy for developers
 
 Code samples play an important role in helping developers use an API. No matter how much you try to explain and narrate *how*, it's only when you *show* something in action that developers truly get it.
-
-## You are not the audience
 
 Recognize that, as a technical writer rather than a developer, you aren't your audience. Developers aren't newbies when it comes to code. But different developers have different specializations. Someone who is a database programmer will have a different skill set from a Java developer who will have a different skillset from a JavaScript developer, and so on.
 

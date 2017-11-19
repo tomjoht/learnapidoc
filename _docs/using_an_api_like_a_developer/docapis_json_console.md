@@ -11,11 +11,12 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-Seeing the response from cURL or Postman is cool, but how do you make use of the JSON data?
-
-With most API documentation, you don't need to show how to make use of JSON data. You assume that developers will use their JavaScript skills to parse through the data and display it appropriately in their apps.
+Seeing the response from cURL or Postman is cool, but how do you make use of the JSON data? With most API documentation, you don't need to show how to make use of JSON data. You assume that developers will use their JavaScript skills to parse through the data and display it appropriately in their apps.
 
 However, to better understand how developers will access the data, we'll go through a brief tutorial to display the REST response on a web page.
+
+* TOC
+{:toc}
 
 ## Display part of the REST JSON response on a web page
 

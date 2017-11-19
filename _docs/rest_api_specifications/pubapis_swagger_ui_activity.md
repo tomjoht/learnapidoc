@@ -13,6 +13,9 @@ path2: /swaggerui.html
 
 In the [Swagger tutorial](pubapis_swagger.html), you explored the [Swagger Petstore site](http://petstore.swagger.io/), learned how the [Swagger Editor](https://swagger.io/swagger-editor/) works, and how to download and integrate your [OpenAPI specification document](pubapis_openapi_tutorial_overview.html) into [Swagger UI](https://github.com/swagger-api/swagger-ui). Now it's time to put this learning into practice by integrating the specification document into your own Swagger UI site.
 
+* TOC
+{:toc}
+
 ## Integrate your OpenAPI spec into Swagger UI
 
 1.  If you completed the [OpenAPI specification document activity](pubapis_openapi_activity.html), you should have a functional specification document from an API. If you don't, you can use the [openapi_sunrise_sunset.yml](http://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/openapi_sunrise_sunset.yml). This information comes from the [Sunset and sunrise times API](https://sunrise-sunset.org/api). Download the file to your computer.

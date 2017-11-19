@@ -11,20 +11,9 @@ section: docendpoints
 path1: /docendpoints.html
 ---
 
-Exactly what are the "things" that you access using a URL? Here are some of the terms used in different API docs:
-
-* API calls
-* Endpoints
-* API methods
-* Calls
-* Resources
-* Objects
-* Services
-* Requests
+Exactly what are the "things" that you access using a URL? Here are some of the terms used in different API docs: API calls, endpoints, API methods, calls, resources, objects, services, and requests.
 
 When it comes to the right terminology to describe these things (which I call "resources"), practices vary. Some docs get around the situation by not calling them anything explicitly.
-
-{% include random_ad.html %}
 
 You could probably choose the terms that you like best. My favorite is to use *resources* (along with *endpoint* for the URL. An API has various "resources" that you access through "endpoints." The endpoint gives you access to a resource. The endpoint is the URL path (in this example, `/surfreport`). The information the endpoint interacts with, though, is a resource.
 
@@ -33,7 +22,7 @@ You could probably choose the terms that you like best. My favorite is to use *r
 {:toc}
 {% endif %}
 
-## Some examples
+## Some examples of resource descriptions
 
 Take look at [Mailchimp's API for an example](http://developer.mailchimp.com/documentation/mailchimp/reference/overview/).
 
@@ -61,6 +50,8 @@ A sample endpoint reference doc is [GET statuses/retweets/:id](https://dev.twitt
 Here's the approach by [Instagram](https://instagram.com/developer/endpoints/relationships/). Their doc calls resources "endpoints" in the plural -- e.g., "Relationship endpoints," with each endpoint listed on the relationship page.
 
 <a  class="noCrossRef" href="https://instagram.com/developer/endpoints/relationships/" class="noExtIcon"><img src="images/instagramapi_3_17.png"/></a>
+
+{% include random_ad.html %}
 
 The [EventBrite API](https://www.eventbrite.com/developer/v3/endpoints/events/) shows a list of endpoints, but when you go to an endpoint, the descriptions refer to them as objects. On the object's page you can see the variety of endpoints you can use with the object.
 
