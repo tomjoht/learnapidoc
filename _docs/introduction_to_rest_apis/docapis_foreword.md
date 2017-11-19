@@ -36,7 +36,7 @@ These comments inspired me to continue adding to the course, building out more t
 >
 > Your course on YouTube gave me enough information and understanding to be able to speak intelligently on the subject with developers in a short timeframe, and to dive into tools and publishing solutions.
 
-Of course, not all comments or emails are praiseworthy. A lot of people note problems on pages, from broken links to broken code, unclear areas or missing information. As much as possible, through this feedback I helped clarify and strengthen the overall content.
+Of course, not all comments or emails are praiseworthy. A lot of people note problems on pages, such as broken links or broken code, unclear areas or missing information. As much as possible, through this feedback I helped clarify and strengthen the overall content.
 
 One question I faced in preparing the content is whether I should stick with text, or combine the text with video. While video can be helpful at times, it's too cumbersome to update. Given the fast-paced, rapidly evolving nature of the technical content, videos go out of date quickly.
 

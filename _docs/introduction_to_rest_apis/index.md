@@ -32,7 +32,7 @@ I dive more into the principles of REST in [What is a REST API?](docapis_what_is
 
 ## From practice to documentation
 
-After you use the sample weather API as a developer, you'll then shift perspectives and "become a technical writer" tasked with documenting a new endpoint that has been added to an API.
+In this course, after you practice using an API like a developer, you'll then shift perspectives and "become a technical writer" tasked with documenting a new endpoint that has been added to an API.
 
 As a technical writer, you'll tackle each element of a reference topic in REST API documentation:
 

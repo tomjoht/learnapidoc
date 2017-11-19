@@ -15,6 +15,11 @@ Enough with the abstract concepts. Let's start using an actual REST API to get m
 
 In the upcoming sections, you'll use two different APIs in the context of a specific use case: retrieving a weather forecast. By first playing the role of a developer using an API, you'll gain a greater understanding of how your audience will use APIs, the type of information they'll need, and what they might do with the information.
 
+* TOC
+{:toc}
+
+## Sample scenario: How windy is it?
+
 Let's say that you're a web developer and you want to add a weather forecast feature to your site. Your site is for bicyclists. You want to allow users who come to your site to see what the wind conditions are for biking. You want something like this:
 
 {% if site.format == "pdf" or site.format == "kindle" %}
@@ -37,19 +42,17 @@ The above example is extremely simple. You could also build an attractive interf
 
 <a class="noCrossRef" href="https://weather.yahoo.com/united-states/california/santa-clara-2488836/" class="noExtIcon"><img class="medium" src="images/attractiveinterfaceweather.png" alt="Sample weather interface" /></a>
 
-The concept and general technique is more or less the same.
+The concept and general techniques are more or less the same.
 
 ## Find the Weather API by fyhao on Mashape
 
-The Mashape Marketplace is a directory where publishers can publish their APIs, and where consumers can consume the APIs. Mashape manages the interaction between publishers and consumers by providing an interactive marketplace for APIs.
+Let's find a simple weather API that we can use for some exercises. The [Mashape Marketplace](https://market.mashape.com/) is a directory where publishers can publish their APIs, and where consumers can consume the APIs. Mashape manages the interaction between publishers and consumers by providing an interactive marketplace for APIs.
 
 The APIs on Mashape tend to be rather simple compared to some other APIs, but this simplicity will work well to illustrate the various aspects of an API without getting too mired in other details.
 
 {% include random_ad.html %}
 
 <a class="noCrossRef" href="https://market.mashape.com/" class="noExtIcon"><img class="medium" src="images/mashape_explore_apis.png" alt="Explore APIs at Mashape" /></a>
-
-You're a consumer of an API, but which one do you need to pull in weather forecasts?
 
 {% include activity.html %}
 
@@ -63,6 +66,8 @@ Explore the APIs available on Mashape and find the weather forecast API:
 3. Search for an API called "Weather," by fyhao at <a href="https://market.mashape.com/fyhao/weather-13">https://market.mashape.com/fyhao/weather-13</a>. Although there are many weather APIs, this one seems to have a lot of reviews and is free.
 
     <a class="noCrossRef" href="https://market.mashape.com/fyhao/weather-13" class="noExtIcon"><img class="medium" src="images/weatherapi_mashape.png" alt="Weather API on Mashape" /></a>
+
+    Browse the endpoints to get a sense of what this weather API offers.
 
 ## Find the Aeris Weather API
 
@@ -79,12 +84,12 @@ Explore the Aeris Weather API by doing the following:
 
 	<a  class="noCrossRef" href="http://www.aerisweather.com/support/docs/api/reference/endpoints/" class="noExtIcon"><img class="medium" src="images/aerisendpoints.png" alt="Aeris Endpoints" /></a>
 
-4. In the list of endpoints, click **forecasts**.
-5. Browse the type of information that is available through this API.
+4. In the list of endpoints, click **[observations](https://www.aerisweather.com/support/docs/api/reference/endpoints/observations/)**.
+5. Browse the type of information that is available through this endpoint.
 
 Here's the Aeris weather forecast API in action making the same call as I showed earlier with Mashape: <a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-aeris.html" alt="Aeris example">/learnapidoc/assets/files/wind-aeris.html</a>.
 
-As you can see, both APIs contain this same information about wind, but the units differ.
+As you can see, both APIs contain this same information about wind, but the units differ. Also, the Aeris weather API is a hundred times more robust than the Mashape one.  
 
 ## Answer some questions about the APIs
 

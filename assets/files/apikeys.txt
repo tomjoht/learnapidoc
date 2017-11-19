@@ -1,6 +1,6 @@
 API Keys
 
-In code examples, I use {api key} in place of the actual API key. This is because posting your API key is usually prohibited by the service, and it leads to abuse of the API key. When you work through the activities, you can register for your own API keys with each service, or you can simply use one of my API keys below. 
+In code examples, I use {api key} in place of the actual API key. This is because posting your API key is usually prohibited by the service, and it leads to abuse of the API key. When you work through the activities, you can register for your own API keys with each service, or you can simply use one of my API keys below.
 
 ## Mashape
 key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p
@@ -8,7 +8,7 @@ key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p
 ## Eventbrite
 token: IO6EB7MM6TSCIL2TIOHC
 
-## Flickr API 
+## Flickr API
 key: 71542c171848da257b3caa214f7ed00f
 secret: c9da662b86becdd4
 
@@ -16,9 +16,10 @@ secret: c9da662b86becdd4
 key: u4r7nd3r7bj9ksxfx3cuy6hw
 
 ## Aeris API
-ID: ByruDorHEne2JB64BhP1k 
-secret: uBDNO535gYHULH8mqx3skZmU13EV4nIf4GvB6jhY 
+ID: ByruDorHEne2JB64BhP1k
+secret: Jp4xullRcy6DXTPSTKBGXAvGGTaT04iiUQXPj0ob
 
+{% comment %}
 FTP
 
 host: learnapidoc.com
@@ -29,3 +30,4 @@ pass: iloveapidoc2015
 screenshot: http://learnapidoc.com/ftpsettings.png
 
 This account will connect you into this directory: http://learnapidoc.com/swagger
+{% endcomment %}

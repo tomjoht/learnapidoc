@@ -11,7 +11,14 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-When you're testing endpoints with different parameters, you can use one of the many GUI REST clients available. With a GUI REST client, you can:
+When you're testing endpoints with different parameters, you can use one of the many GUI REST clients available to make the requests. You can also use [cURL](docapis_install_curl.html) (which we'll cover soon), but GUI clients tend to simplify testing with REST APIs.
+
+* TOC
+{:toc}
+
+## Why use a GUI client
+
+With a GUI REST client, you can:
 
 *  Save your requests (and numerous variations) in a way that's easy to run again
 *  More easily enter information in the right format
@@ -27,7 +34,7 @@ Some popular GUI clients include the following:
 * [Postman](http://www.getpostman.com/)
 * [Advanced REST Client](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo) (Chrome browser extension)
 * [REST Console](https://chrome.google.com/webstore/detail/rest-console/cokgbflfommojglbmbpenpphppikmonn)
-* [Paw](https://luckymarmot.com/paw) (Mac, $30)
+* [Paw](https://luckymarmot.com/paw) (not free)
 
 Of the various GUI clients available, Postman is probably the best option, since it allows you to save both calls and responses, is free, works on both Mac and PC, and is easy to configure.
 
@@ -38,14 +45,15 @@ A lot of times abstract concepts don't make sense until you can contextualize th
 
 ## Make a request in Postman
 
+In this exercise, you'll make a REST call for the second endpoint (`https://simple-weather.p.mashape.com/weather`) in the Mashape Weather API.
+
+{: .note}
+You can also call the first endpoint (`aqi`), but the response is pretty short (2 characters), and unfortunately sometimes the API doesn't always return a response for the location. If this endpoint isn't working, you'll see "Not supported" response.
+
 1.  If you haven't already done so, download and install the Postman app at [http://www.getpostman.com](https://www.getpostman.com/). If you're on a Mac, choose the Mac app. If you're on Windows, choose the Windows app.
 2.  Start the Postman app.
-3.  You'll make a REST call for the second endpoint (`https://simple-weather.p.mashape.com/weather`) in the Mashape Weather API. Select **GET** for the method.
-
-    {: .note}
-    You can also call the first endpoint (`aqi`), but the response is pretty short (2 characters), and unfortunately sometimes the API doesn't always return a response for the location. If this endpoint isn't working, you'll see "Not supported" response.
-
-4.  Insert the endpoint into the main box (next to the method, which is GET by default): `https://simple-weather.p.mashape.com/weather`
+3.  Select **GET** for the method. (This is the default.)
+4.  Insert the endpoint into the box next to GET: `https://simple-weather.p.mashape.com/weather`.
 5.  Click the **Params** button (to the right of the box where you inserted the endpoint) and insert `lat` and `lng` parameters with specific values (other than `1`).
 
     {: .note}
@@ -53,9 +61,9 @@ A lot of times abstract concepts don't make sense until you can contextualize th
 
     <figure><a class="noCrossRef" href="https://www.google.com/maps/place/Santa+Clara,+CA/@37.3708698,-122.037593,12z/data=!3m1!4b1!4m5!3m4!1s0x808fb7815c08c193:0xe475a47ca3c0bfc0!8m2!3d37.3541079!4d-121.9552356" class="noExtIcon"><img src="images/googlemapslatlong.png" alt="Finding latitude and longitude on Google Maps" /></a><figcaption>Latitude is listed first, then longitude</figcaption></figure>
 
-	  When you add these `lat` and `lng` parameters, they will dynamically be added as a query string to the endpoint URI. The query string is the code followed by the `?` in the endpoint URL. For example, your endpoint should now look like this: `https://simple-weather.p.mashape.com/weather?lat=37.3710062&lng=-122.0375935`. Query string parameters appear after the question mark `?` symbol and are separated ampersands `&`.
+	  When you add these `lat` and `lng` parameters, they will dynamically be added as a query string to the endpoint URI. For example, your endpoint should now look like this: `https://simple-weather.p.mashape.com/weather?lat=37.3710062&lng=-122.0375935`. Query string parameters appear after the question mark `?` symbol and are separated ampersands `&`. The order of query string parameters doesn't matter.
 
-6.  Click the **Headers** tab (below the GET button) and insert the key value pairs: `Accept: text/plain` and `X-Mashape-Key: APIKEY`. (Swap in your own API key in place of `APIKEY`.)
+6.  Click the **Headers** tab (below the GET button) and insert the key value pairs: `Accept: text/plain` and `X-Mashape-Key: APIKEY`. (Swap in your own API key in place of `APIKEY`. If you want to use my API keys, see [apikeys.txt](/learnapidoc/assets/files/apikeys.txt).)
 
     Your inputs should look like this:
 
@@ -63,7 +71,7 @@ A lot of times abstract concepts don't make sense until you can contextualize th
 
 7.  Click **Send**.
 
-	 The response appears, such as `52`. In this case, the response is text only. You can switch the format to HTML, JSON, XML, or other formats, but since this response is text only, you won't see any difference. Usually the responses are JSON, which allows you to select a specific part of the response to work with.
+	 The response appears, such as `15 c, Mostly Cloudy at Sunnyvale, United States`. In this case, the response is text only. You can switch the format to HTML, JSON, XML, or other formats, but since this response is text only, you won't see any difference. Usually the responses are JSON, which allows you to select a specific part of the response to work with.
 
 	 {: .note}
    If you get a response that says "Unsupported," this means your `lat` and `lng` values aren't supported. Use the `lat` and `lng` values shown here (`?lat=37.3710062&lng=-122.0375935`).
@@ -71,20 +79,20 @@ A lot of times abstract concepts don't make sense until you can contextualize th
 ## Save the request
 
 1.  In Postman, click the **Save** button (next to Send).
-2.  In the Save Request dialog box, create a new collection (for example, weather) by typing the collection name in the **"Or create new collection"** box.
-3.  In the **Request Name** box at the top of the dialog box, type a friendly name for the request, such as "Mashape Weather endpoint."
+1.  In the Save Request dialog box, in the **Request Name** box at the top of the dialog box, type a friendly name for the request, such as "Mashape Weather endpoint."
+3.  Scroll down in the dialog box, and next to **"Or create new collection"**, create a new collection by typing the collection name in the box. Collections are simply groups to organize your saved requests.
 4.  Click **Save.**
 
 Saved endpoints appear in the left side pane under Collections.
 
 ## Make requests for the other endpoint
 
-Enter details into Postman for the other endpoint for the Mashape Weather API:
+Enter details into Postman for the `weatherdata` endpoint for the Mashape Weather API:
 
 * https://simple-weather.p.mashape.com/weatherdata
 
 {: .note}
-The Accept header tells the browser what format you will accept the response in. Whereas the first two endpoints (aqi and weather) use <code>text/plain</code>, the Accept header for the <code>weatherdata</code> endpoint is <code>application/json</code>.
+The Accept header tells the browser what format you will accept the response in. Whereas the first two endpoints (`aqi` and `weather`) use `text/plain`, the Accept header for the `weatherdata` endpoint is `application/json`.
 
 When you save these other endpoints, click the arrow next to Save and choose **Save As**. Then choose your collection and request name. (Otherwise you'll overwrite the settings of the existing request.)
 
@@ -147,5 +155,8 @@ You're thinking of moving to Arizona, but you want to find a place that's cool. 
 ```
 http://api.aerisapi.com/normals/flagstaff,az?client_id=CLIENTID&client_secret=CLIENTSECRET&limit=5&filter=hassnow
 ```
+
+{: .tip}
+You can also make these requests by simply going to the URL in your address bar. Use the [JSON Formatter plugin for Chrome](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en) to automatically format the JSON response.
 
 By looking at these two different weather APIs, you can see some differences in the way the information is called and returned. However, fundamentally both APIs have endpoints that you can configure with parameters. When you make requests with the endpoints, you get responses that contain information, often in JSON format. This is the core of how REST APIs work &mdash; you send a request and get a response.

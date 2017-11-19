@@ -63,7 +63,7 @@ div#search-results p {
 /* endsearch */
 
 
-/* this part adds an icon after external links, using FontAwesome
+/* this part adds an icon after external links, using FontAwesome */
 
 a[href^="http://"]:after,
 a[href^="https://"]:after {
@@ -75,15 +75,18 @@ a[href^="https://"]:after {
   text-decoration: none;
   padding-left: 3px;
 }
-*/
 
-/* Strip the outbound icon when this class is present */
 
-a[href].noCrossRef::after,
+a[href].noCrossRef::after, a[href].noExtIcon::after, pre a,
 a.no_icon:after
  {
   content: "" !important;
   padding-left: 0;
+}
+
+pre a:hover, pre a {
+  cursor: pipe;
+  text-decoration: none;
 }
 
 /* Github edit button */

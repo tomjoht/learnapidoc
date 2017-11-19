@@ -11,19 +11,23 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-Almost every API has a method in place to authenticate requests. You usually have to provide an API key in your requests to get a response. Requiring authorization allows API publishers to do the following:
+Almost every API has a method in place to authenticate requests. You usually have to provide an API key in your requests to get a response.
+
+* TOC
+{:toc}
+
+## Why requests need authorization
+
+Requiring authorization allows API publishers to do the following:
 
 * License access to the API
 * Rate limit the number of requests
 * Control availability of certain features within the API, and more
 
 {: .tip}
-Keep in mind how users authorize calls with an API &mdash; this is something you usually cover in API documentation. Later in the course we will dive into authorization methods in more detail.
+Keep in mind how users authorize calls with an API &mdash; this is something you usually cover in API documentation. Later in the course we will dive into [authorization methods](docapis_more_about_authorization.html) in more detail.
 
-In order to run the code samples in this course, you will need to use your own API keys, since these keys are usually treated like personal passwords and not given out or published openly on a web page.
-
-* TOC
-{:toc}
+In order to run the code samples in this course, you will need to use your own API keys, since these keys are usually treated like personal passwords and not given out or published openly on a web page. (Even so, if you want to borrow my API keys, you can view them [here](/learnapidoc/assets/files/apikeys.txt).)
 
 ## Get the Mashape authorization keys
 
@@ -40,7 +44,7 @@ To get the authorization keys to use the Mashape API, you must sign up for a Mas
 	  <img src="images/mashape_get_keys.png" alt="Mashape -- getting the keys" />
 
 	  {: .note}
-	  If you don't see the Get the Keys button, make sure you click <b>Applications > Default Application</b> on the top navigation bar first. You may have to horizontally scroll to the right (eek!) to see the Get the Keys button.
+	  If you don't see the Get the Keys button, make sure you click <b>Applications > Default Application</b> on the top navigation bar first. You may have to horizontally scroll to the right to see the Get the Keys button.
 
 3.  When the Environment Keys dialog appears, click **Copy** to copy the keys. (Choose the Testing keys, since this type allows you to make unlimited requests.)
 
@@ -53,7 +57,7 @@ To get the authorization keys to use the Mashape API, you must sign up for a Mas
 Now let's get the keys for the Aeris Weather API. The Aeris Weather API requires both a secret and ID to make requests.
 
 1.  Go to [http://www.aerisweather.com](http://www.aerisweather.com) and click **Sign Up** in the upper-right corner.
-2.  Under **Developer**, click **TRY FOR FREE**. (Note that the free version limits the number of requests per day and per minute you can make.)
+2.  Under **Developer**, click **TRY FOR FREE**. (The free version limits the number of requests per day and per minute you can make.)
 3.  Enter a username, email, and password, and then click **SIGN UP FOR FREE** to create an Aeris account. Then sign in.
 4.  After you sign up for an account, click **Account** in the upper-right corner.
 
@@ -61,12 +65,12 @@ Now let's get the keys for the Aeris Weather API. The Aeris Weather API requires
 
     <a class="noCrossRef" href="https://www.aerisweather.com/account/apps" class="noExtIcon"><img src="images/aerisaccount.png" alt="Aeris account" /></a>
 
-6.  In the dialog box, enter the following:
+6.  In the Add a New Application dialog box, enter the following:
     * **Application Name**: My biking app (or something)
     * **Application Namespace**: localhost
 7.  Click **Save App**.  
 
-Once your app registers, you should see an ID, secret, and namespace for the app. Copy this information into a text file, since you'll need it to make requests.
+After your app registers, you should see an ID, secret, and namespace for the app. Copy this information into a text file, since you'll need it to make requests.
 
 ## Text editor tips
 
