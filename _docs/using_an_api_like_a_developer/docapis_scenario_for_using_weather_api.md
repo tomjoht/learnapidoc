@@ -30,7 +30,7 @@ Let's say that you're a web developer and you want to add a weather forecast fea
 
 You don't have your own meteorological service, so you'll need to make some calls out to a weather service to get this information. Then you will present that information to users.
 
-## Get an idea of the end goal
+## Get an idea of the end goal {# endgoal}
 
 To give you an idea of the end goal, here's a sample: [idrathebewriting.com/learnapidoc/assets/files/wind-mashape.html](http://idratherbewriting.com/learnapidoc/assets/files/wind-mashape.html). It's not necessarily styled the same as the mockup, but it answers the question, "How windy is it?"
 

@@ -108,7 +108,7 @@ You'll notice the documentation is short and sweet in a Swagger UI implementatio
 
 ## Create a Swagger UI display with an OpenAPI spec document
 
-In this activity, you'll create a Swagger UI display for the weatherdata endpoint in this [Mashape Weather API](https://www.mashape.com/fyhao/weather-13#weatherdata). (If you're jumping around in the documentation, this is a simple API that we used in earlier parts of the course.) You can see a demo of what we'll build [here](http://idratherbewriting.com/learnapidoc/assets/files/swagger/).
+In this activity, you'll create a Swagger UI display for the weatherdata endpoint in this [Mashape Weather API](https://market.mashape.com/fyhao/weather-13#weatherdata). (If you're jumping around in the documentation, this is a simple API that we used in earlier parts of the course.) You can see a demo of what we'll build [here](http://idratherbewriting.com/learnapidoc/assets/files/swagger/).
 
 <a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/myswagger.png" alt="Swagger UI demo" /></a>
 

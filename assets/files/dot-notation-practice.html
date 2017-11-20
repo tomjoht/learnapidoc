@@ -1,0 +1,70 @@
+---
+layout: null
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>JSON dot notation practice</title>
+
+<script>
+$( document ).ready(function() {
+
+   var john = {
+    "hair": "brown",
+    "eyes": "green",
+    "shoes": {
+        "brand": "nike",
+        "type": "basketball"
+    },
+    "favcolors": [
+        "azure",
+        "goldenrod"
+    ],
+    "children": [
+        {
+            "child1": "Sarah",
+            "age": 2
+        },
+        {
+            "child2": "Jimmy",
+            "age": 5
+        }
+    ]
+}
+
+var sarahjson = john.children[0].child1;
+var greenjson = john.eyes;
+var nikejson = john.shoes.brand;
+var goldenrodjson = john.favcolors[1];
+var jimmyjson = john.children[1].child2;
+
+$("#sarah").append(sarahjson);
+$("#green").append(greenjson);
+$("#nike").append(nikejson);
+$("#goldenrod").append(goldenrodjson);
+$("#jimmy").append(jimmyjson);
+});
+</script>
+</head>
+<body>
+
+    <div id="sarah">Sarah: </div>
+    <div id="green">green: </div>
+    <div id="nike">nike: </div>
+    <div id="goldenrod">goldenrod: </div>
+    <div id="jimmy">Jimmy: </div>
+
+<h2>Answers</h2>
+{% highlight json %}
+var sarahjson = john.children[0].child1;
+var greenjson = john.eyes;
+var nikejson = john.shoes.brand;
+var goldenrodjson = john.favcolors[1];
+var jimmyjson = john.children[1].child2;
+{% endhighlight %}
+
+</body>
+</html>

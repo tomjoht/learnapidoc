@@ -128,7 +128,7 @@ $.ajax(settings).done(function (response) {
 
 You can view the result here: <a href="/learnapidoc/assets/files/weatherdata-forecast.html">/learnapidoc/assets/files/weatherdata-forecast.html</a>.
 
-(Note: I think the API content in the `description` element isn't quite right, but the code is correct here.)
+(Note: I think the content in the API's `description` element has some formatting that isn't quite right, but the code is correct here.)
 
 Here's what we changed:
 

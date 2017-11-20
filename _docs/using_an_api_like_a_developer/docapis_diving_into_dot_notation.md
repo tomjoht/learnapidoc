@@ -9,7 +9,7 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-In the [previous topic](docapis_access_json_values.html), you accessed and printed a specific JSON value to the page. Let's dive into dot notation a little more.
+In the previous topic, [Access and print a specific JSON value](docapis_access_json_values.html), you accessed and printed a specific JSON value to the page. Let's dive into dot notation a little more, since understanding how to access the right JSON value you want is key to making use of the response.
 
 * TOC
 {:toc}
@@ -26,7 +26,7 @@ You use a dot after the object name to access its properties. For example, suppo
 
 To access `Tom`, you would use `data.name`.
 
-It's important to note the different levels of nesting so you can trace back the appropriate objects and access the information you want. You access each level down through the object name followed by a dot.
+Note the different levels of nesting so you can trace back the appropriate objects and access the information you want. You access each level down through the object name followed by a dot.
 
 ## Use square brackets to access the values in an array
 
@@ -45,7 +45,9 @@ To access glove, you would use `data.items[2]`.
 {: .note}
 With most programming languages, you usually start counting at `0`, not `1`.
 
-## Exercise with dot notation
+## Exercise with dot notation {#exercise_dot_notation}
+
+{% include activity.html %}
 
 In this activity, you'll practice accessing different values through dot notation.
 
@@ -102,26 +104,26 @@ In this activity, you'll practice accessing different values through dot notatio
     <body>
 
         <div id="sarah">Sarah: </div>
-        <div id="green">Green: </div>
-        <div id="nike">Nike: </div>
-        <div id="goldenrod">Goldenrod: </div>
+        <div id="green">green: </div>
+        <div id="nike">nike: </div>
+        <div id="goldenrod">goldenrod: </div>
         <div id="jimmy">Jimmy: </div>
 
     </body>
     </html>
    ```
 
-    Here we have a JSON object defined as a variable named `john`. (Usually APIs retrieve the response through a URL request, but for practice here, we're just defining the object locally.)
+    Here we have a JSON object defined as a variable named `john`. (Usually, APIs retrieve the response through a URL request, but for practice here, we're just defining the object locally.)
 
     If you view the page in your browser, you'll see the page says "Sarah" for each item because we're accessing this value: `john.children[0].child1` for each item.
 
-2. Change `john.children[0].child1` to display the right values for each item. For example, the word `green` should appear at the ID tag called `green`.
+2. Change `john.children[0].child1` to display the corresponding values for each item. For example, the word `green` should appear at the ID tag called `green`.
 
-Answers are listed at the bottom of this page.
+You can view the correct page here: [http://idratherbewriting.com/learnapidoc/assets/files/dot-notation-practice.html](/learnapidoc/assets/files/dot-notation-practice.html). This page also shows the answers printed.
 
 ## Showing wind conditions on the page
 
-At the beginning of the course, I showed an example of embedding the wind speed and other details on a website. Now let's revisit this code example and see how it's put together.
+At the beginning of the section on [Using an API like a developer](docapis_scenario_for_using_weather_api.html#endgoal), I showed an example of [embedding the wind speed](docapis_scenario_for_using_weather_api.html#endgoal) and other details on a website. Now let's revisit this code example and see how it's put together.
 
 Copy the following code into a basic HTML page, customize the `APIKEY` value, and view the page in the browser:
 
@@ -148,12 +150,12 @@ function checkWind() {
     "async": true,
     "crossDomain": true,
     "dataType": "json",
-  "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&lng=-121.955236",
+    "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&lng=-121.955236",
     "method": "GET",
-  "headers": {
-    "accept": "application/json",
-    "x-mashape-key": "APIKEY"
-  }
+    "headers": {
+      "accept": "application/json",
+      "x-mashape-key": "APIKEY"
+    }
 }
 
   $.ajax(settings)
@@ -192,19 +194,6 @@ When you load the page and click the button, the following should appear:
 
 <a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-mashape.html" class="noExtIcon"><img src="images/windconditionsfinaloutput.png" alt="Final REST API" /></a>
 
-You can view the file <a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-mashape.html">here</a>.
-<hr />
-
-**Answers to "Exercise with dot notation activity"**
-
-Here's what your dot notation should look like:
-
-```js
-var sarahjson = john.children[0].child1;
-var greenjson = john.eyes;
-var nikejson = john.shoes.brand;
-var goldenrodjson = john.favcolors[1];
-var jimmyjson = john.children[1].child2;
-```
+You can view the file <a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-mashape.html">idratherbewriting.com/learnapidoc/assets/files/wind-mashape.html</a>.
 
 {% include random_ad.html %}

@@ -18,7 +18,7 @@ In this section, you'll use curl to make the same weather API requests you made 
 
 ## Prepare the weather request in curl format
 
-1.  Go back into the [Weather API on Mashape](https://www.mashape.com/fyhao/weather-13).
+1.  Go back into the [Weather API on Mashape](https://market.mashape.com/fyhao/weather-13).
 2.  Copy the curl request example for the second endpoint (`weather`) into your text editor:
 
     ```sh
