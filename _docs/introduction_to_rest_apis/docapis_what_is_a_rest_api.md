@@ -78,7 +78,7 @@ The following diagram shows the general model of a REST API:
 {% if site.format == "pdf" or site.format == "kindle" %}
 <img class="medium" src="images/restapi_restapi.png" alt="REST API" />
 {% elsif site.format == "web" %}
-<img class="medium" src="images/restapi_restapi.png" alt="REST API" />
+<img class="medium" src="images/restapi_restapi.svg" alt="REST API" />
 {% endif %}
 
 As you can see, there's a request and a response between a client to the API server. The client and server can be based in any language, but HTTP is the protocol used to transport the message. This request-and-response pattern is fundamentally how REST APIs work.
