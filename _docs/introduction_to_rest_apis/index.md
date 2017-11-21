@@ -102,7 +102,12 @@ Here are a few things you'll need to do the exercises in this course:
 {% if site.format == "web" %}
 ## Short version of the course in video
 
-If you'd prefer a short version of the course in video form, see this workshop I gave to the STC Sacramento chapter:
+If you'd prefer a short version of the course in video form, here's a 1-hour video that covers the first three sections. I gave this presentation to the STC Silicon Valley chapter:
+
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/NawxzLB4aro" frameborder="0" allowfullscreen></iframe></p>
+
+
+For a longer video, here's a recording from a 4-hour workshop I gave to the STC Sacramento chapter:
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/GerbihyUpdo" frameborder="0" allowfullscreen></iframe>
 {% endif %}
