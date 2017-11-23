@@ -1,5 +1,5 @@
 ---
-title: Documenting sample requests
+title: "API reference tutorial step 4: Request example"
 permalink: /docapis_doc_sample_requests.html
 categories:
 - api-doc
@@ -10,6 +10,20 @@ sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
 ---
+
+{% include workflow_map.html step="4" map="content/reference_doc_map.html"  %}
+{% if site.format == "pdf" or site.format == "kindle" %}
+<img src="images/apiref8.png"/>
+{% endif %}
+
+> **{{site.data.apirefsections.request_example.term}}**: {{site.data.apirefsections.request_example.def}}
+
+* TOC
+{:toc}
+
+## Example
+
+<a class="noExtIcon" href="https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-friends-list"><img src="images/twitterrequestexample.png" /></a>
 
 Although you've already listed the endpoint and parameters, you should also include one or more sample requests that shows the endpoint integrated with parameters in an easy-to-understand way.
 
@@ -59,6 +73,10 @@ Many APIs have a feature called an API explorer. For example, here's a typical r
 Flickr's API docs also have a built-in API Explorer:
 
 <a href="https://www.flickr.com/services/api/explore/flickr.photos.search" class="noExtIcon"><img src="images/flickrapiexplorer.png"/></a>
+
+As does the New York Times API:
+
+<a href="http://developer.nytimes.com/article_search_v2.json#/Console/GET/articlesearch.json"><img src="images/nytimesrequestexample.png"/></a>
 
 The API Explorer lets you insert your own values, your own API key, and other parameters into a request so you can see the responses directly in the Explorer. Being able to see your own data maybe makes the response more real and immediate.
 

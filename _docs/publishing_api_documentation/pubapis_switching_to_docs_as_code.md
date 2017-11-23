@@ -45,7 +45,7 @@ Documentation tools are often independent, standalone tools that offer complete 
 * Search and indexing
 * Website templating
 * Analytics
-* Secure servers with the amazon.com domain
+* Secure servers with the corporate domain
 * Media CDN for distributing images
 * Git repositories and GUI for managing code
 * Build pipelines and build management system

@@ -1,46 +1,36 @@
 ---
-title: Documenting endpoints and methods
-permalink: /docapis_doc_endpoint_definitions.html
+title: "API reference tutorial step 2: Resource URLs and methods"
+permalink: /docapis_doc_resource_urls_and_methods.html
 categories:
 - api-doc
 keywords:
 course: "Documenting REST APIs"
-weight: 3.2
+weight: 3.11
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
 ---
 
-In the previous section, I noted the variation over terminology related to resources, with some doc sites calling the resources "endpoints." Although some might call the whole topic "endpoint documentation," the endpoint usually refers to a specific part in the API. The endpoint literally refers to the resource URL that you call, specifically, the last part of the resource URL (after the base path).
-
-{% if site.format == "web" %}
-* TOC
-{:toc}
+{% include workflow_map.html step="2" map="content/reference_doc_map.html"  %}
+{% if site.format == "pdf" or site.format == "kindle" %}
+<img src="images/apiref2.png"/>
 {% endif %}
 
-## Varied terminology
+> **{{site.data.apirefsections.resource_urls.term}}**: {{site.data.apirefsections.resource_urls.def}}
 
-As you might expect, the terms used for the endpoint vary as well. In addition to "endpoint," you might see the following:
+* TOC
+{:toc}
 
-* Requests
-* API methods
-* Resource URLs
-* URLs
-* URL syntax
 
-My preferred term is "endpoint."
+## Example of resource URLs
 
-{% include random_ad.html %}
+Here's an example of the resource URL for the Relationships resource in the Instagram API:
 
-Often there's no term used at all above the endpoint &mdash; you can just list it on the page, styled in a way that makes it obvious what it is.
+<a class="noExtIcon" href="https://www.instagram.com/developer/endpoints/relationships/"><img src="images/instagramurlexample.png" /></a>
 
-## The endpoint definition usually contains the end path only
+The resource URL is usually set off in a stylized way that gives it more visual attention. Much of the documentation is built around the resource URL, so it might make sense to set it off against a background with a unique style.
 
-When you describe the endpoint, it's common to list the end path only (hence the nickname "endpoint").
-
-In our scenario, the endpoint/endpath is just `/surfreport/{beachId}`. You don't have to list the full URL every time (which would be `https://simple-weather.p.mashape.com/surfreport{beachId}`. Including the whole path distracts the user from focusing on the path that matters. (In your user guide, you usually explain the full code path in an introductory section.)
-
-The endpoint is arguably the most important aspect of API documentation, since this is what developers will implement to make their requests.
+Another consideration is how to group and list the resource URLs, particularly if you have a lot of resource URLs for the same resource. In the [examples for the resource](docapis_resource_descriptions.html#examples), we looked at a variety of APIs, and many provide different document designs for grouping or listing each URL for the resource.
 
 ## Represent path parameters with curly braces
 
@@ -50,26 +40,15 @@ If you have path parameters in your endpoint, represent them through curly brace
 /campaigns/{campaign_id}/actions/send
 ```
 
-Better yet, put the path parameter in another color to set it off:
+Better yet, put the [path parameter](docapis_doc_parameters.html) in another color to set it off:
 
 <pre>
-/campaigns/<span class="parameter">{campaign_id}</span>/actions/send
+/campaigns/<span class="orange">{campaign_id}</span>/actions/send
 </pre>
-
-{: .tip}
-If you set off your code block with `pre` tags (instead of backticks as is common with Github-flavored Markdown syntax), you can use `span` tags to set off specific elements in different colors, since angle brackets get processed as HTML. However, if you do use `pre` tags, you lose out on syntax highlighting, so it's a tradeoff.
 
 Curly braces are a convention that users will understand. In the above example, almost no URL uses curly braces in the actual path syntax, so the `{campaign_id}` is an obvious placeholder.
 
-Another convention is to represent parameter values with a colon, like this:
-
-```
-/campaigns/:campaign_id/actions/send
-```
-
-You can see this convention in the [EventBrite API](https://www.eventbrite.com/developer/v3/) and the [Aeris Weather API](http://www.aerisweather.com/support/docs/api/). But I'm not a fan of it.
-
-In general, if the placeholder name is ambiguous as to whether it's a placeholder or not, clarify it.
+The way different APIs set off the path parameter from the other parts of the resource URL varies (some precede it with a colon), but make sure the path parameter is easily identifiable.
 
 ## You can list the method beside the endpoint
 
@@ -83,6 +62,18 @@ And here's an example from Linkedin's API:
 
 {: .tip}
 Sometimes the method is referred to as the "verb." GET, PUT, POST, and DELETE are all verbs or actions.
+
+{% include random_ad.html %}
+
+Often there's no term used at all above the endpoint &mdash; you can just list it on the page, styled in a way that makes it obvious what it is.
+
+## The endpoint definition usually contains the end path only
+
+When you describe the endpoint, it's common to list the end path only (hence the nickname "endpoint").
+
+In our scenario, the endpoint/endpath is just `/surfreport/{beachId}`. You don't have to list the full URL every time (which would be `https://simple-weather.p.mashape.com/surfreport{beachId}`. Including the whole path distracts the user from focusing on the path that matters. (In your user guide, you usually explain the full code path in an introductory section.)
+
+The endpoint is arguably the most important aspect of API documentation, since this is what developers will implement to make their requests.
 
 ## Multiple endpoints for the same resource
 

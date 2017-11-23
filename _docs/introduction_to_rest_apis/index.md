@@ -39,13 +39,14 @@ In this course, after you practice using an API like a developer, you'll then sh
 
 As a technical writer, you'll tackle each element of a reference topic in REST API documentation:
 
-* [Resource descriptions](docapis_resource_descriptions.html)
-* [Endpoint definitions and methods](docapis_doc_endpoint_definitions.html)
-* [Parameters](docapis_doc_parameters.html)
-* [Sample requests](docapis_doc_sample_requests.html)
-* [Sample responses](docapis_doc_sample_responses.html)
-* [Status and error codes](docapis_doc_status_codes.html)
-* [Code samples](docapis_doc_code_samples.html)
+1. [Resource descriptions](docapis_resource_descriptions.html)
+2. [Resource URL](docapis_doc_resource_urls_and_methods.html)
+3. [Methods](docapis_doc_methods.html)
+4. [Parameters](docapis_doc_parameters.html)
+5. [Request example](docapis_doc_sample_requests.html)
+6. [Response example](docapis_doc_sample_responses.html)
+7. [Status and error codes](docapis_doc_status_codes.html)
+8 [Code samples](docapis_doc_code_samples.html)
 
 Diving into these sections will give you a solid understanding of how to document REST APIs. You'll also learn how to document the [non-reference sections for an API](docnonref.html), such as the [getting started](docapis_doc_getting_started_section.html) and request [authorization](docapis_more_about_authorization.html) sections.
 
@@ -104,7 +105,7 @@ Here are a few things you'll need to do the exercises in this course:
 
 If you'd prefer a short version of the course in video form, here's a 1-hour video that covers the first three sections. I gave this presentation to the STC Silicon Valley chapter:
 
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/NawxzLB4aro" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/NawxzLB4aro" frameborder="0" allowfullscreen></iframe></p>
 
 
 For a longer video, here's a recording from a 4-hour workshop I gave to the STC Sacramento chapter:

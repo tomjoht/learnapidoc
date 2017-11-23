@@ -1,9 +1,6 @@
 ---
-title: Documenting resource descriptions
+title: "API reference tutorial step 1: Resource description"
 permalink: /docapis_resource_descriptions.html
-categories:
-- api-doc
-keywords:
 course: "Documenting REST APIs"
 weight: 3.1
 sidebar: docapis
@@ -11,162 +8,137 @@ section: docendpoints
 path1: /docendpoints.html
 ---
 
-Exactly what are the "things" that you access using a URL? Here are some of the terms used in different API docs: API calls, endpoints, API methods, calls, resources, objects, services, and requests.
-
-When it comes to the right terminology to describe these things (which I call "resources"), practices vary. Some docs get around the situation by not calling them anything explicitly.
-
-You could probably choose the terms that you like best. My favorite is to use *resources* (along with *endpoint* for the URL. An API has various "resources" that you access through "endpoints." The endpoint gives you access to a resource. The endpoint is the URL path (in this example, `/surfreport`). The information the endpoint interacts with, though, is a resource.
-
-{% if site.format == "web" %}
-* TOC
-{:toc}
+{% include workflow_map.html step="1" map="content/reference_doc_map.html"  %}
+{% if site.format == "pdf" or site.format == "kindle" %}
+<img src="images/apiref1.png"/>
 {% endif %}
 
-## Some examples of resource descriptions
+> **{{site.data.apirefsections.resource_description.term}}**: {{site.data.apirefsections.resource_description.def}}
 
-Take look at [Mailchimp's API for an example](http://developer.mailchimp.com/documentation/mailchimp/reference/overview/).
+* TOC
+{:toc}
 
-> Quickly review all available resources for MailChimp API 3.0 with this reference overview.
+## Example of a resource description {#examples}
 
-The list of resources includes things like `authorized-apps`, `automations`, `batches`, and more.
+Typically, an API will have a number of resource URLs grouped under the same resource. In the Mailchimp API, the [Campaigns resource](http://developer.mailchimp.com/documentation/mailchimp/reference/campaigns/#) is described as follows:
 
-With Mailchimp, a sample resource is "Automations." This endpoint has several methods:
+<a class="noExtIcon" href="http://developer.mailchimp.com/documentation/mailchimp/reference/campaigns/"><img src="images/mailchimpcampaigns.png"/></a>
 
-* `/automations` (GET)
-* `/automations/{workflow_id}` (GET)
-* `/automations/{workflow_id}/actions/pause-all-emails` (POST)
-* `/automations/{workflow_id}/actions/start-all-emails` (POST)
+The Campaigns resource has various resource URLs (also often called endpoints):
 
-<a class="noCrossRef" href="http://developer.mailchimp.com/documentation/mailchimp/reference/overview/" class="noExtIcon"><img src="images/mailchimpapi_3_2017.png"/></a>
+* POST `/campaigns`
+* GET `/campaigns	`
+* GET `/campaigns/{campaign_id}`
+* PATCH `/campaigns/{campaign_id}`
+* DELETE `/campaigns/{campaign_id}`
+* POST `/campaigns/{campaign_id}/actions/cancel-send`
+* POST `/campaigns/{campaign_id}/actions/pause`
+* POST `/campaigns/{campaign_id}/actions/replicate`
+* POST `/campaigns/{campaign_id}/actions/resume`
+* POST `/campaigns/{campaign_id}/actions/schedule`
+* POST `/campaigns/{campaign_id}/actions/send`
+* POST `/campaigns/{campaign_id}/actions/test`
+* POST `/campaigns/{campaign_id}/actions/unschedule`
 
-In contrast, look at Twitter's API. In their [API Reference overview](https://dev.twitter.com/rest/reference), they call them endpoint docs:
+In the Eventbrite API, here's the Events resource:
 
-> These are the REST API endpoint reference docs.
+<a class="noExtIcon" href="https://www.eventbrite.com/developer/v3/endpoints/events/"><img src="images/eventbriteresourceexample.png"/></a>
 
-A sample endpoint reference doc is [GET statuses/retweets/:id](https://dev.twitter.com/rest/reference/get/statuses/retweets/%3Aid). To access it, you use the Resource URL `https://api.twitter.com/1.1/statuses/retweets/:id.json`. They then list out "Resource Information."
+The Events resource itself isn't defined. Instead, the descriptions are added for each of the Events resource URLs. The Events resource contains all of these resource URLs:
 
-<a  class="noCrossRef" href="https://dev.twitter.com/rest/reference/get/statuses/retweets/%3Aid" class="noExtIcon"><img src="images/twitterapi_3_17.png" alt="How Twitter refers to resources" /></a>
+* `/events/search/`
+* `/events/`
+* `/events/:id/`
+* `/events/:id/`
+* `/events/:id/publish/`
+* `/events/:id/cancel/`
+* `/events/:id/`
+* `/events/:id/display_settings/`
+* `/events/:id/display_settings/`
+* `/events/:id/ticket_classes/`
+* `/events/:id/ticket_classes/:ticket_class_id/`
+* `/events/:id/canned_questions/`
+* `/events/:id/questions/`
+* `/events/:id/attendees/`
+* `/events/:id/discounts`
 
-Here's the approach by [Instagram](https://instagram.com/developer/endpoints/relationships/). Their doc calls resources "endpoints" in the plural -- e.g., "Relationship endpoints," with each endpoint listed on the relationship page.
+And so on.
+
+As another example, here's the Relationships resource in the  [Instagram API](https://instagram.com/developer/endpoints/relationships/).
 
 <a  class="noCrossRef" href="https://instagram.com/developer/endpoints/relationships/" class="noExtIcon"><img src="images/instagramapi_3_17.png"/></a>
 
+The Relationships resource isn't described. Instead, the descriptions are added for each of the resources grouped within the Relationships resource:
+
+* GET `/users/self/followsGet`
+* GET `/users/self/followed-byGet`
+* GET `/users/self/requested-byList`
+* GET `/users/user-id/relationshipGet`
+* POST `/users/user-id/relationshipModify`
+
 {% include random_ad.html %}
 
-The [EventBrite API](https://www.eventbrite.com/developer/v3/endpoints/events/) shows a list of endpoints, but when you go to an endpoint, the descriptions refer to them as objects. On the object's page you can see the variety of endpoints you can use with the object.
-
-<a  class="noCrossRef" href="https://www.eventbrite.com/developer/v3/endpoints/events/" class="noExtIcon"><img src="images/eventbriteobjects.png" alt="Eventbrite" /></a>
-
-I point out discrepancies with the terminology to reinforce the fact that the terms are somewhat non-standard. Still, you can't go wrong by referring to them as resources. A resource can have many different endpoints and methods you can use with it.
-
-When you're writing documentation, it probably makes sense to group content by resources and then list the available endpoints for each resource on the resource's page, or as subpages under the resource.
-
-This simple example with the Mashape Weather API, however, just has three different endpoints. There's not a huge reason to separate out endpoints by resource.
-
-## When it gets confusing to refer to resources by the endpoint
-
-The Mashape Weather API is pretty simple, and just refers to the endpoints available. In this case, referring to the aqi endpoint or the air quality index resource doesn't make a huge difference. But with more complex APIs, using the endpoint path to talk about the resource can get problematic.
-
-At one company I worked at (Badgeville), our endpoints looked like this:
-
-```html
-// get all users
-api_site.com/{apikey}/users
-
-// get a specific user
-api_site.com/{apikey}/users/{userId}
-
-// get all rewards
-api_site.com/{apikey}/rewards
-
-// get a specific reward
-api_site.com/{apikey}/rewards/{rewardId}
-
-// get all rewards for a specific user
-api_site.com/{apikey}/users/{userId}/rewards
-
-// get a specific reward for a specific user
-api_site.com/{apikey}/users/{userId}/rewards/{rewardId}
-
-// get the rewards for a specfic mission related to a specific user
-api_site.com/{apikey}/users/{userId}/rewards/{missionId}
-
-// get the rewards available for a specific mission
-api_site.com/{apikey}/missions/{missionid}/rewards
-```
-
-A rewards resource had various endpoints that returned different types of information related to rewards.
-
-To say that you could use the rewards or missions endpoint wasn't always specific enough, because there were multiple rewards and missions endpoints.
-
-It can get awkward referring to the resource by its endpoint path. For example, "When you call `/users/{userId}/rewards/{rewardId}`, you get a specific reward for a user. The `/users/{userId}/rewards/{rewardId}` endpoint takes several parameters..." It's a mouthful.
-
-## The same resource can have multiple endpoints
-
-The [Box API](https://docs.box.com/reference#membership-object) has a good example of how the same resource can have multiple endpoints and methods.
+The [Box API](https://docs.box.com/reference#membership-object) is another good example of how the same resource can have multiple URLs.
 
 <a  class="noCrossRef" href="https://docs.box.com/reference#membership-object" class="noExtIcon"><img src="images/boxapi_3_17.png" alt="Example from Box" /></a>
 
-For the Membership object, as they call it, there are 7 different endpoints or methods you can call. Each of these methods lets you access the Membership  object in different ways. Why call it an object? When you GET the Membership resource, the response is a JSON object.
+For the Membership resource (or "object," as they call it), there are 7 different endpoints or methods you can call.
 
-{: .tip}
-Developers often use the term \"call a method\" when talking about using a method. If you consider the endpoints as HTTP methods, then you can call an API method.
+The Trello API shows another example. In Trello, the [Members](https://developers.trello.com/v1.0/reference#member) resource has around 40 resource URLs.
 
-## Wait, I'm confused
+Whether your API has resources that contain lots of variant resource URLs, or just one resource URL per resource, you need to describe the resource.
 
-You're probably thinking, wait, I'm a bit confused. Exactly what am I supposed to call the things I'm documenting in an API? My recommendation is to call them resources. In your table of contents, you might group all the resources under a larger umbrella called "API Reference."
+## How many resource URLs for the same resource?
 
-But my point is that there is no standard practice here. The terminology varies, and this is one of those cases where everyone chooses their favorite term.
+When developers create APIs, they have a design question to consider: Use lots of variants of resource URLs (as with Eventbrite's API), or provide lots of parameters to configure the same resource URL.
 
-## When describing the resource, start with a verb
+Often there's a balance between the two. The trend seems to be toward providing separate resource URLs rather than supplying a host of potentially confusing parameters for the same URL.
 
-Regardless of the terms you use, the description is usually brief, from 1-3 sentences, and often expressed as a fragment in the active tense.
+## Terminology for describing the resource
 
-Review the [surf report wiki page](docapis_new_endpoint_to_doc.html) containing the information about the endpoint, and try to describe the endpoint in the length of one or two tweets (140 characters).
+The exact terminology for referring to resources varies.  The "things" that you access using a URL can be referred to in a variety of ways. Other than "resources," you might see them listed as API calls, endpoints, API methods, calls, objects, services, and requests. Some docs get around the situation by not calling them anything explicitly.
 
-Here are some examples of resource descriptions:
+However, in general, an API has various "resources" that you access through "resource URLs." The resource URLs give you access to the resource. (But terminology isn't standard, so expect variety.)
 
-**[Delicious API](https://github.com/domainersuitedev/delicious-api/blob/master/api/posts.md#v1postsupdate)**
+The [Mashape Weather API](https://market.mashape.com/fyhao/weather-13) is pretty simple, and just refers to 3 endpoints available. Referring to the "`/aqi` resource URL" or to the "aqi resource" doesn't make a huge difference. But with more complex APIs, using the resource URL to talk about the resource can get problematic.
 
-<div class="docSample">
-<p><b>/v1/posts/update</b></p>
+At one company I worked at, our URLs for the Rewards resource looked like this:
 
-<p>Check to see when a user last posted an item. Returns the last updated time for the user, as well as the number of new items in the user’s inbox since it was last visited.</p>
+```html
+// get all rewards
+/rewards
 
-<p>Use this before calling posts/all to see if the data has changed since the last fetch.</p>
-</div>
+// get a specific reward
+/rewards/{rewardId}
 
-**[Foursquare API](https://developer.foursquare.com/docs/venues/menu)**
+// get all rewards for a specific user
+/users/{userId}/rewards
 
-<div class="docSample">
-<p><b>Venue Menu</b></p>
-<p><code>https://api.foursquare.com/v2/venues/VENUE_ID/menu</code></p>
+// get a specific reward for a specific user
+/users/{userId}/rewards/{rewardId}
+```
 
-<p>Returns menu information for a venue.</p>
+And rewards in context of the Missions resource looked like this:
 
-<p>In some cases, menu information is provided by our partners. When displaying the information from a partner, you must attribute them using the attribution information included in the provider field. Not all menu information available on Foursquare is able to be redistributed through our API.</p>
-</div>
+```html
+// get the rewards for a specific mission related to a specific user
+/users/{userId}/rewards/{missionId}
 
-## How I go about it
+// get the rewards available for a specific mission
+/missions/{missionid}/rewards
+```
 
-Here's how I went about creating the endpoint description. If you want to try crafting your own description of the endpoint first, and then compare yours to mine, go for it. However, you can also just follow along here.
+To say that you could use the rewards resource wasn't always specific enough, because there were multiple rewards and missions resource URLs.
 
-I start by making a list of what the resource contains.
+It can get awkward referring to the resource by its resource URL. For example, "When you call `/users/{userId}/rewards/`, you get a list of all rewards. To get a specific reward for a specific mission for a specific user, the `/users/{userId}/rewards/{missionId}` resource URL takes several parameters..." The longer the resource URL, the more difficult the reference. These kinds of descriptions would be more common in the [non-reference sections](docnonref.html) sections of your documentation.
 
-<div class="docSample">
-<p><b>Surfreport</b></p>
+## Describe the surfreport resource
 
-<ul><li>shows surfing conditions about surf height, water temperature, wind, and tide</li>
-<li>must pass in a specific beach ID</li>
-<li>gives overall recommendation about whether to go surfing</li>
-<li>conditions are broken out by hour</li>
-</ul>
-</div>
+{% include activity.html %}
 
-{: .tip}
-Whenever I have a blank page, instead of immediately filling it with full sentences, I usually create a rough outline. Outlines prevent writers block with almost any writing project. After I have an outline, then I craft the sentences.
+Review the [surf report wiki page](docapis_new_endpoint_to_doc.html) containing the information about the resource, and try to describe the resource in the length of one or two tweets (140 characters).
 
-So now that I have a rough outline here, I craft the sentences:
+Here's how I went about creating the resource description. If you want to try crafting your own description of the resource first, and then compare yours to mine, go for it. However, you can also just follow along here.
 
 <div class="docSample">
 
@@ -179,16 +151,18 @@ So now that I have a rough outline here, I craft the sentences:
 
 ## Critique the Mashape Weather API descriptions
 
-Look over the descriptions of the three endpoints in the weather API. They're pretty short. For example, the `aqi` endpoint just says "Air Quality Index."
+{% include activity.html %}
 
-These descriptions are too short. But developers like concision. If shortening the surfreport description, you could also write:
+Look over the descriptions of the three resources in the weather API. They're pretty short. For example, the `aqi` resource just says "Air Quality Index."
+
+These descriptions are too short, but developers like concision. If I were shortening the surfreport description, I might write:
 
 <div class="docSample">
 <p><b>/surfreport/{beachId}</b></p>
 <p>Provides surf condition information.</p>
 </div>
 
-Compare these descriptions with the endpoint descriptions from the [Aeris Weather API](http://www.aerisweather.com/support/docs/api/reference/endpoints/).
+Compare these descriptions with the resource descriptions from the [Aeris Weather API](http://www.aerisweather.com/support/docs/api/reference/endpoints/).
 
 With Aeris Weather, the description for the [forecasts endpoint](http://www.aerisweather.com/support/docs/api/reference/endpoints/forecasts/) is as follows:
 
@@ -201,7 +175,7 @@ In summary, the description provides a 1-3 sentence summary of the information t
 
 ## Recognize the difference between reference docs versus user guides
 
-One thing to keep in mind is the difference between reference docs and user guides/tutorials:
+Given how brief the user description is, one thing to keep in mind is the difference between reference docs and user guides/tutorials:
 
 * **Reference guides**: Concise, bare-bones information that developers can quickly reference.
 * **User guides/tutorials**: More elaborate detail about everything, including step-by-step instructions, code samples, concepts, and procedures.
@@ -211,4 +185,4 @@ With the description of surfreport, you might expand on this with much greater d
 You could link the description to the places in the user guide where you expand on it in more detail. But since developers often write API documentation, they sometimes never write the user guide (as is the case with the Weather API in Mashape).
 
 {: .tip}
-The description of the endpoint is likely something you'll re-use in different places: product overviews, tutorials, code samples, quick references, etc. As a result, put a lot of effort into crafting it.
+The description of the resource is likely something you'll re-use in different places: product overviews, tutorials, code samples, quick references, etc. As a result, put a lot of effort into crafting it. Consider storing the description in a re-usable snippet in your authoring tool so that you can list it without resorting to copy/paste methods in your [quic start guide](docapis_doc_quick_reference.html).

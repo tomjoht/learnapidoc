@@ -1,5 +1,5 @@
 ---
-title: Documenting status and error codes
+title: "API reference tutorial step 6: Status and error codes"
 permalink: /docapis_doc_status_codes.html
 redirect_from:
 - http://idratherbewriting.com/learnapidoc/docapis_doc_response_codes.html
@@ -10,6 +10,20 @@ sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
 ---
+
+{% include workflow_map.html step="6" map="content/reference_doc_map.html"  %}
+{% if site.format == "pdf" or site.format == "kindle" %}
+<img src="images/apiref7.png"/>
+{% endif %}
+
+> **{{site.data.apirefsections.status_error_codes.term}}**: {{site.data.apirefsections.status_error_codes.def}}
+
+* TOC
+{:toc}
+
+## Example
+
+<a  class="noExtIcon" href="https://www.flickr.com/services/api/flickr.galleries.getPhotos.html"><img src="images/flickrerrorcodes.png" /></a>
 
 Status and error codes are essential for understanding responses from requests.
 

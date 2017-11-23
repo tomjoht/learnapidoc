@@ -1,5 +1,5 @@
 ---
-title: Documenting sample responses
+title: "API reference tutorial step 5: Response example"
 permalink: /docapis_doc_sample_responses.html
 keywords:
 course: "Documenting REST APIs"
@@ -8,6 +8,20 @@ sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
 ---
+
+{% include workflow_map.html step="5" map="content/reference_doc_map.html"  %}
+{% if site.format == "pdf" or site.format == "kindle" %}
+<img src="images/apiref6.png"/>
+{% endif %}
+
+> **{{site.data.apirefsections.response_example.term}}**: {{site.data.apirefsections.response_example.def}}
+
+* TOC
+{:toc}
+
+## Example
+
+<a  class="noExtIcon" href="http://developer.nytimes.com/article_search_v2.json#/Documentation/GET/articlesearch.json"><img src="images/nytimesresponseexample.png" /></a>
 
 It's important to provide a sample response from the endpoint. This lets developers know if the endpoint contains the information they want, and how that information is labeled.
 

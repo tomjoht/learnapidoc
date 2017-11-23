@@ -1,5 +1,5 @@
 ---
-title: A new endpoint to document
+title: "A new endpoint to document"
 permalink: docapis_new_endpoint_to_doc.html
 categories:
 - api-doc
@@ -13,7 +13,7 @@ path1: /docendpoints.html
 
 Until this point, you've been acting as a developer with the task of integrating the weather data into your site. The point was to help you understand the type of information developers need and how they use APIs.
 
-Now let's shift perspectives. Now you're a technical writer working with the Mashape weather API team. The team is asking you to document a new endpoint.
+Now let's shift perspectives. Now suppose you're a technical writer working with the Mashape weather API team. The team is asking you to document a new endpoint.
 
 {: .note}
 For this exercise, you could equally document a new endpoint for the Aeris Weather API, but since that API is already quite robust, we'll keep it simple and work with the more minimalist Mashape weather API.
@@ -25,16 +25,16 @@ For this exercise, you could equally document a new endpoint for the Aeris Weath
 
 ## You have a new endpoint to document
 
-The project manager calls you over and says they have a new API for you to document for the next release. (By "API," the manager really just means a new endpoint to the existing API. Some APIs like [Alchemy API](http://www.alchemyapi.com/api/) even refer to each endpoint as an API.)
+The project manager calls you over and says the team has a new API for you to document for the next release. (By "API," the manager really just means a new endpoint to the existing API. But in the API landscape, developers often refer to each endpoint as well as the collective endpoints as an API.)
 
 "Here's the wiki page that contains all the data," the manager says. The information is scattered and random on the wiki page. In reality, you probably wouldn't have all the information available that you need, but to facilitate our scenario (you can't ask the "team" questions about this fictitious new endpoint), the page will help.
-
-{% include activity.html %}
 
 It's now your task to sort through the information on this page and create documentation from it. Read through the wiki page to get a sense of the information. The upcoming topics will guide you through creating documentation for this new endpoint.
 
 {: .tip}
-Most technical writers don't start from scratch with documentation projects. Engineers usually dump essential information onto an internal wiki page. However, the information on the wiki page will likely be incomplete, unnecessarily technical in places (like describing the database schema when users won't ever need this info), and have other issues. The info might include internal-only information (e.g., test logins, access protocols). Ultimately, the information will be written for other engineers on the same knowledge level. Your job as a technical writer will be to take this information and turn it into complete, accurate, usable information that meets your audience's goal.
+Most technical writers don't start from scratch with documentation projects. Engineers usually dump essential information onto an internal wiki page (or they communicate the info during meetings). However, the information on the wiki page will likely be incomplete, and unnecessarily technical in places (like describing the database schema or high-level architectural workflows). The info might also include internal-only information (for example, including test logins, access protocols, or code names), or have sections that are out-of-date. Ultimately, the information will be oriented toward other engineers on the same knowledge level as the team's engineers. Your job as a technical writer will be to take this information and turn it into complete, accurate, usable information that communicates with your audience.
+
+Here's the mock internal wiki page:
 
 <div class="docSample">{% raw %}
 <h2 id="surf_report_api">The wiki page: "Surf Report API"</h2>
@@ -96,7 +96,7 @@ https://simple-weather.p.mashape.com/surfreport/123?&days=2&units=metrics&hour=1
                     "surfheight": 3,
                     "recommendation": "Surfing conditions are okay, not great"
                 }
-                // ...  the other hours of the day are truncated here.
+
             }
         }
     ]
@@ -108,7 +108,7 @@ https://simple-weather.p.mashape.com/surfreport/123?&days=2&units=metrics&hour=1
 
 <p>The report won't include any details about riptide conditions. </p>
 
-<p>Note that although users can enter beach names, there are only certain beaches included in the report. Users can look to see which beaches are available from our website at <code>http://example.com/surfreport/beaches_available</code>. The beach names must be url encoded when passed in the endpoint as query strings.</p>
+<p>Although users can enter beach names, there are only certain beaches included in the report. Users can look to see which beaches are available from our website at <code>http://example.com/surfreport/beaches_available</code>. The beach names must be url encoded when passed in the endpoint as query strings.</p>
 
 <p>To switch from feet to metrics, users can add a query string of <code>&units=metrics</code>. Default is <code>&units=imperial</code>.</p>
 
@@ -119,24 +119,3 @@ https://simple-weather.p.mashape.com/surfreport/123?&days=2&units=metrics&hour=1
 {% endraw %}
 
 ## Essential sections in REST API documentation
-
-In the next topics, you'll work on sorting this information out into eight common sections in REST API documentation:
-
-* [Resource description](docapis_resource_descriptions.html)
-* [Endpoint definitions and methods](docapis_doc_endpoint_definitions.html)
-* [Parameters](docapis_doc_parameters.html)
-* [Request example](docapis_doc_sample_requests.html)
-* [Response example](docapis_doc_sample_responses.html)
-* [Status and error codes](docapis_doc_status_codes.html)
-* [Code samples](docapis_doc_code_samples.html)
-
-## Create the basic structure for the endpoint documentation
-
-Open up a new text file and create sections for each of these elements.
-
-{% include random_ad.html %}
-
-Each of your endpoints should follow this same pattern and structure. A common template helps increase consistency and familiarity/predictability with how users consume the information.
-
-{: .note}
-Although there are automated ways to publish API docs, we're focusing on content rather than tools in this course. For the sake of simplicity, try just using a text editor (such as [Sublime Text](https://www.sublimetext.com/)) and [Markdown syntax](https://help.github.com/articles/github-flavored-markdown).

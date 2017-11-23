@@ -94,6 +94,10 @@ pre a:hover, pre a, a.vglnk, a.vglnk:hover {
   color: lightblue;
 }
 
+.docSample a, .docSample a:hover {
+  color: #c7254e;
+}
+
 table code a.vglnk, table code a.vglnk:hover {
   color: #c7254e;
 }
@@ -275,6 +279,10 @@ img.docimage.border {
 }
 span.red {
     color: red;
+}
+
+span.orange {
+    color: orange;
 }
 /* footer */
 

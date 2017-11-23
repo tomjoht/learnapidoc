@@ -40,7 +40,7 @@ To access a value in an array, you use square brackets followed by the position 
 
 To access glove, you would use `data.items[2]`.
 
-`glove` is the third item in the array.
+`glove` is the third item in the array. (You can't access an item directly in an array by the item's name &mdash; only by its position. Usually, programmers loop through an array and pull out values that match.)
 
 {: .note}
 With most programming languages, you usually start counting at `0`, not `1`.
@@ -195,5 +195,11 @@ When you load the page and click the button, the following should appear:
 <a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-mashape.html" class="noExtIcon"><img src="images/windconditionsfinaloutput.png" alt="Final REST API" /></a>
 
 You can view the file <a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-mashape.html">idratherbewriting.com/learnapidoc/assets/files/wind-mashape.html</a>.
+
+## Next section
+
+As you've gone through the exercise of using an API like a developer, you've gained a high-level understanding of how REST APIs work, what information developers need, how they might use an API, how they make requests, evaluate responses, and other details.
+
+With this background, it's time to switch gears and put on your technical writing hat. In the next section, [Documenting endpoints](docendpoints.html), you'll assume the task of [documenting a new endpoint](docapis_new_endpoint_to_doc.html) that was added to the weather API. You'll learn the 8 essential sections in endpoint reference documentation, the terminology to use, and formatting conventions for the reference information.
 
 {% include random_ad.html %}

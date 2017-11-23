@@ -1,15 +1,26 @@
 ---
-title: Documenting code samples
+title: "API reference tutorial step 7: Code samples"
 permalink: /docapis_doc_code_samples.html
-categories:
-- api-doc
-keywords:
 course: "Documenting REST APIs"
 weight: 3.6
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
 ---
+
+{% include workflow_map.html step="7" map="content/reference_doc_map.html"  %}
+{% if site.format == "pdf" or site.format == "kindle" %}
+<img src="images/apiref8.png"/>
+{% endif %}
+
+> **{{site.data.apirefsections.code_samples.term}}**: {{site.data.apirefsections.code_samples.def}}
+
+* TOC
+{:toc}
+
+## Example
+
+<a class="noExtIcon" href="https://dev.evernote.com/doc/articles/note-sharing.php"><img src="images/codesamplesevernote.png" /></a>
 
 One aspect of REST APIs that facilitates widespread adoption is that they aren't tied to a specific programming language. Developers can code their applications in any language, from Java to Ruby to JavaScript, Python, C#, Node JS, or something else. As long as they can make an HTTP web request in that language, they can use the API. The response from the web request will contain the data in either JSON or XML.
 

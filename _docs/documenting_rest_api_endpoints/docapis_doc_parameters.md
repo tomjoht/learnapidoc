@@ -1,5 +1,5 @@
 ---
-title: Documenting parameters
+title: "API reference tutorial step 3: Parameters"
 permalink: /docapis_doc_parameters.html
 categories:
 - api-doc
@@ -10,6 +10,20 @@ sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
 ---
+
+{% include workflow_map.html step="3" map="content/reference_doc_map.html"  %}
+{% if site.format == "pdf" or site.format == "kindle" %}
+<img src="images/apiref4.png"/>
+{% endif %}
+
+> **{{site.data.apirefsections.parameters.term}}**: {{site.data.apirefsections.parameters.def}}
+
+* TOC
+{:toc}
+
+## Example
+
+<a class="noExtIcon" href="https://developer.box.com/reference#edit-a-collaboration"><img src="images/boxparameterexample.png" /></a>
 
 Parameters offer ways to configure the endpoint. The parameters you pass with an endpoint affect the response.
 
