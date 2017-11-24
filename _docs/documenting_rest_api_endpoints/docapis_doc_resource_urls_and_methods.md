@@ -1,5 +1,5 @@
 ---
-title: "API reference tutorial step 2: Resource URLs and methods"
+title: "Step 2: Resource URLs and methods (API reference tutorial)"
 permalink: /docapis_doc_resource_urls_and_methods.html
 categories:
 - api-doc

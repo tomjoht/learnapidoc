@@ -1,5 +1,5 @@
 ---
-title: "OpenAPI tutorial step 8: The externalDocs object"
+title: "Step 8: The externalDocs object (OpenAPI tutorial)"
 permalink: /pubapis_openapi_step8_externaldocs_object.html
 course: "Documenting REST APIs"
 sidebar: docapis

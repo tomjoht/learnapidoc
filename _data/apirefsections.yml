@@ -4,36 +4,31 @@ resource_description:
         The resource description describes the information provided by the resource. The description is brief (1-3 sentences) and usually starts with a verb. Resources themselves can have a number of resource URLs to access variations of the same resource, and multiple methods for each resource URL. Thus, you usually have a general resource described and sub-resources also described.
 
 resource_urls:
-  term: Resource URLs
+  term: Resource URLs and methods
   def: >
-        The URL paths where the resource can be accessed. The URL shows the end path ("endpoint") only, not the base path common to all endpoints. The same resource usually has a variety of related resource URLs, each with different paths and methods but ultimately returning information about the same resource.
+        The resource URLs, along with their method (such as GET, POST, or DELETE) indicate how the resource can be accessed. The URL shows the end path ("endpoint") only, not the base path common to all endpoints. The same resource usually has a variety of related resource URLs, each with different paths and methods but ultimately returning information about the same resource.
 
 parameters:
   term: Parameters
   def: >
-        Options you can use with the endpoint. There are four types of parameters: header parameters, path parameters, query string parameters, and request body parameters.
-
-methods:
-  term: Methods
-  def: >
-        The operations allowed for the resource URL (GET, POST, PUT, DELETE, and so on).
+        Parameters are options you can pass with the endpoint to determine the result. There are four types of parameters: header parameters, path parameters, query string parameters, and request body parameters.
 
 request_example:
   term: Request example
   def: >
-        A sample request for the resource, showing the endpoint and some parameters configured.
+        The request example shows a sample request using the resource URL, showing some parameters configured. The request example usually can't show all possible parameter configurations, but it should be as rich as possible with parameters.
 
-response_sample:
+response_example:
   term: Response example
   def: >
-        A sample response from a request. The sample response is not comprehensive of all parameter configurations or operations. Also usually contains a table documenting each element in the response.
+        The response example shows a sample response from the request example. The response example is not comprehensive of all parameter configurations or operations, but it should correspond with the parameters passed in the request example. The response example also describes each element in the response, such as with a table of definitions.
 
 status_error_codes:
   term: Status and error codes
   def: >
-        A code number in the response header that indicates the general status of the response &mdash; for example, whether the request was successful, resulted in an error, was not authorized, and so on. Most status codes (such as 200, 302, 500, etc.) are standard.
+        Status and error codes show a code number in the response header that indicates the general status of the response &mdash; for example, whether the request was successful (200), resulted in an server error (500), had authorization issues (403), and so on. Standard status codes don't need documentation as much as custom status and error codes specific to the API. Error codes in particular help with troubleshooting bad requests.
 
 code_samples:
   term: Code samples
   def: >
-        Sample code snippets for submitting a request to the endpoint using a particular programming language. Code samples are optional and not always included in the reference topics, but are usually welcome and helpful.
+        Code samples are short snippets for submitting a request to the endpoint using a particular programming language (such as JavaScript, Java, or PHP). Code samples are optional and not always included in the reference topics, but when available, users welcome them. Sometimes code samples can be automated. When choosing languages, target your primary user's language.

@@ -1,5 +1,5 @@
 ---
-title: "API reference tutorial step 6: Status and error codes"
+title: "Step 6: Status and error codes (API reference tutorial)"
 permalink: /docapis_doc_status_codes.html
 redirect_from:
 - http://idratherbewriting.com/learnapidoc/docapis_doc_response_codes.html

@@ -1,5 +1,5 @@
 ---
-title: "API reference tutorial step 4: Request example"
+title: "Step 4: Request example (API reference tutorial)"
 permalink: /docapis_doc_sample_requests.html
 categories:
 - api-doc
@@ -21,52 +21,59 @@ path1: /docendpoints.html
 * TOC
 {:toc}
 
-## Example
+## Example of a request
+
+The following example shows a request example from the [Callfire API](https://developers.callfire.com/docs.html#pagination):
+
+<a href="https://developers.callfire.com/docs.html#pagination"><img src="images/callfireapirequestexample.png"/></a>
+
+The design of their API doc site arranges the sample requests and responses in the right column of a three-column layout. The request is formatted in curl, which we [explored earlier](docapis_install_curl).
+
+```curl
+curl -u "username:password" -H "Content-Type:application/json" -X GET "https://api.callfire.com/v2/texts?limit=50&offset=200"
+```
+
+curl is a common format to show requests for several reasons:
+
+* curl is language agnostic, so it's not specific to one particular programming language.
+* curl shows the header information that is required in the request.
+* curl also shows the method used with the request, and other parameters.
+
+Other API doc sites might use a more plain URL, such as this lackluster example with Twitter:
 
 <a class="noExtIcon" href="https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-friends-list"><img src="images/twitterrequestexample.png" /></a>
 
-Although you've already listed the endpoint and parameters, you should also include one or more sample requests that shows the endpoint integrated with parameters in an easy-to-understand way.
+## Multiple request examples
 
-{% if site.format == "web" %}
-* TOC
-{:toc}
-{% endif %}
-
-## Example
-
-In the CityGrid Places API, the basic places endpoint is as follows:
+If you have a lot of parameters, it might make sense to include multiple request examples. In the CityGrid Places API, the [`where` endpoint](http://docs.citygridmedia.com/display/citygridv2/Places+API#PlacesAPI-WhereSearchHTTPSEndpoint) is as follows:
 
 ```
 https://api.citygridmedia.com/content/places/v2/search/where
 ```
 
-However, there are 17 possible query string parameters you can use with this endpoint. As a result, the documentation includes several sample requests show the parameters used with the endpoint:
+However, there are [literarlly 17 possible query string parameters](http://docs.citygridmedia.com/display/citygridv2/Places+API#PlacesAPI-WhereSearchRequest) you can use with this endpoint. As a result, the documentation includes several sample requests show the parameters used with the endpoint:
 
 <a href="http://docs.citygridmedia.com/display/citygridv2/Places+API" class="noExtIcon"><img src="images/search_usage_examples.png" alt="CityGrid Places API example" /></a>
 
 These examples show several common combinations of the parameters. Adding multiple requests as samples  makes sense when the parameters wouldn't usually be used together. For example, there are few cases where you might actually include all 17 parameters in the same request, so any sample will be limited in what it can show.
 
-This example shows "Italian restaurants in Chicago using placement 'sec-5'":
+This example shows "Find hotels in Boston, viewing results 1-5 in alphabetical order""
 
 ```
-https://api.citygridmedia.com/content/places/v2/search/where?what=restaurant&where=chicago,IL&tag=11279&placement=sec-5&publisher=test
+https://api.citygridmedia.com/content/places/v2/search/where?what=hotels&where=boston,ma&page=1&rpp=5&sort=alpha&publisher=test&format=json
 ```
 
-If responses vary a lot, consider including multiple responses with the requests. How many different requests and responses should you show? There's probably no easy answer, but probably no more than a few. You decide what makes sense for your API.
+If you click the link, you can see the response directly.
+
+How many different requests and responses should you show? There's probably no easy answer, but probably no more than a few. You decide what makes sense for your API. Users usually understand the pattern after a few examples.
 
 {% include random_ad.html %}
 
-Some sample requests in API don't show responses in the endpoint documentation. Instead, you click the request URL, which executes a GET request that doesn't require any authorization. You then see the response dynamically in the browser. The [Open Weather API](https://openweathermap.org/current) provides an example.
-
-For example, if you click one of the "Examples of API calls," such as [http://samples.openweathermap.org/data/2.5/weather?q=London](http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1), you see the response dynamically returned in the browser.
-
-<a href="http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1" class="noExtIcon"><img class="medium" src="images/dynamicresponseinbrowser.png"/></a>
-
-This approach is common and works well (for GET requests) when you can pull it off. Unfortunately, this approach makes it difficult to define the responses. (The CityGrid API documentation is detailed and does include information in later sections that describes the responses.)
+In the [responses topic](docapis_doc_sample_responses.html#dynamic_responses), I get into more details about dynamically showing the response when users click the request.
 
 ## API explorers provide interactivity with your own data
 
-Many APIs have a feature called an API explorer. For example, here's a typical reference page for Spotify's API docs:
+Many APIs have an API explorer feature. For example, here's a typical reference page for Spotify's API docs:
 
 <a href="https://developer.spotify.com/web-api/console/get-album/" class="noExtIcon"><img src="images/spotifyapiconsole.png"/></a>
 
@@ -80,39 +87,32 @@ As does the New York Times API:
 
 The API Explorer lets you insert your own values, your own API key, and other parameters into a request so you can see the responses directly in the Explorer. Being able to see your own data maybe makes the response more real and immediate.
 
-However, if you don't have the right data in your system, using your own API key may not show you the full response that's possible.
-
-Here's another example from the New York Times API, which uses Lucybot (powered by Swagger) to handle the interactive API explorer features:
-
-<a href="http://developer.nytimes.com/books_api.json" class="noExtIcon"><img src="images/nytimesapirequests.png" alt="NYTimes API Explorer created through Lucybot and Swagger" /></a>
-
-This example compels users to try out the endpoints to get a better understanding of the information they return.
+However, if you don't have the right data in your system, using your own API key may not show you the full response that's possible. It works best when the resources involve public information and the requests are GET requests.
 
 ## API Explorers can be dangerous in the hands of users
 
 Although interactivity is powerful, API Explorers can be a dangerous addition to your site. What if a novice user trying out a DELETE method accidentally removes data? How do you later remove the test data added by POST or PUT methods?
 
-It's one thing to allow GET methods, but if you include other methods, users could inadvertently corrupt their data. With [IBM's Watson APIs](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/apis/), which use the Swagger UI, they removed the Try it out button.
-
-In Sendgrid's API, they include a warning message to users before testing out calls with their API Explorer:
+It's one thing to allow GET methods, but if you include other methods, users could inadvertently corrupt their data. In Sendgrid's API, they include a warning message to users before testing out calls with their API Explorer:
 
 <a href="https://sendgrid.com/docs/API_Reference/Web_API/blocks.html" class="noExtIcon"><img src="images/sendgridwarningmessage.png" alt="SendGrid API Explorer warning message" /></a>
 
 Foursquare's API docs used to have a built-in API explorer in the previous version of their docs, but they have since removed it. I'm not sure why.
 
- <a href="https://developer.foursquare.com/docs" class="noExtIcon"><img src="images/foursquareapiexplorer.png" alt="Foursquare's API Explorer" /></a>
-
- The [IBM Watson API](https://watson-api-explorer.mybluemix.net/) use [Swagger UI](pubapis_swagger.html) but they have suppressed the "Try it out" feature.
+<a href="https://developer.foursquare.com/docs" class="noExtIcon"><img src="images/foursquareapiexplorer.png" alt="Foursquare's API Explorer" /></a>
 
 As far as integrating other API Explorer tooling, this is a task that should be relatively easy for developers. All the Explorer does is map values from a field to an API call and return the response to the same interface. In other words, the API plumbing is all there &mdash; you just need a little JavaScript and front-end skills to make it happen.
 
 However, you don't have to build your own tooling. Existing tools such as [Swagger UI](http://swagger.io/swagger-ui/) (which parses a OpenAPI specification document) and [Readme.io](http://readme.io) (which allows you to enter the details manually) can integrate API Explorer functionality directly into your documentation.
 
+{: .tip}
+For a tutorial on how to create your own API explorer functionality, see the [Swagger UI tutorial](pubapis_swagger.html).
+
 ## Document the sample request with the surfreport/{beachId} endpoint
 
 {% include activity.html %}
 
-Come back to the <code>surfreport/{beachId}</code> endpoint example. Create a sample request for it.
+Let's return to the `surfreport/{beachId}` endpoint in our [sample scenario](docapis_new_endpoint_to_doc.html). Create a request example for it.
 
 Here's mine:
 

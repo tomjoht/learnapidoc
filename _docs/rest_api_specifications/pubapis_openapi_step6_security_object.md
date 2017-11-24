@@ -1,5 +1,5 @@
 ---
-title: "OpenAPI tutorial step 6: The security object"
+title: "Step 6: The security object (OpenAPI tutorial)"
 permalink: /pubapis_openapi_step6_security_object.html
 course: "Documenting REST APIs"
 sidebar: docapis

@@ -1,5 +1,5 @@
 ---
-title: "OpenAPI tutorial step 4: The paths object"
+title: "Step 4: The paths object (OpenAPI tutorial)"
 permalink: /pubapis_openapi_step4_paths_object.html
 course: "Documenting REST APIs"
 sidebar: docapis

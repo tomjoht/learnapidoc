@@ -1,5 +1,5 @@
 ---
-title: "OpenAPI tutorial step 5: The components object"
+title: "Step 5: The components object (OpenAPI tutorial)"
 permalink: /pubapis_openapi_step5_components_object.html
 course: "Documenting REST APIs"
 sidebar: docapis

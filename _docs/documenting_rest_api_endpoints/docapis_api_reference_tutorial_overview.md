@@ -13,7 +13,7 @@ In the [new endpoint to document](docapis_new_endpoint_to_doc.html), you saw inf
 * TOC
 {:toc}
 
-## Eight common sections in REST API docs
+## Seven common sections in REST API docs
 
 Almost all API reference topics include these 8 sections:
 
@@ -41,7 +41,7 @@ Almost all API reference topics include these 8 sections:
 The topics include a workflow map to help guide and orient you each step of the way.
 
 <div style="margin-top:15px; margin-bottom: 15px;">
-{% include workflow_map.html step="99" map="content/openapi_tutorial_map.html"  %}
+{% include workflow_map.html step="99" map="content/reference_doc_map.html"  %}
 {% if site.format == "pdf" or site.format == "kindle" %}
 <a class="noExtIcon" href="docapis_resource_descriptions.html"><img src="images/openapistep1.png"/></a>
 {% endif %}

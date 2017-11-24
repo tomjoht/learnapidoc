@@ -69,25 +69,25 @@ folders:
   - title: "API reference tutorial overview"
     jurl: /docapis_api_reference_tutorial_overview.html
 
-  - title: "API ref tutorial step 1: Resource description"
+  - title: "Step 1: Resource description (API ref tutorial)"
     jurl: /docapis_resource_descriptions.html
 
-  - title: "API ref tutorial step 2: Resource URLs and methods"
+  - title: "Step 2: Resource URLs and methods (API ref tutorial)"
     jurl: /docapis_doc_resource_urls_and_methods.html
 
-  - title: "API ref tutorial step 3: Parameters"
+  - title: "Step 3: Parameters (API ref tutorial)"
     jurl: /docapis_doc_parameters.html
 
-  - title: "API ref tutorial step 4: Request example"
+  - title: "Step 4: Request example (API ref tutorial)"
     jurl: /docapis_doc_sample_requests.html
 
-  - title: "API ref tutorial step 5: Response example"
+  - title: "Step 5: Response example (API ref tutorial)"
     jurl: /docapis_doc_sample_responses.html
 
-  - title: "API ref tutorial step 6: Status and error codes"
+  - title: "Step 6: Status and error codes (API ref tutorial)"
     jurl: /docapis_doc_status_codes.html
 
-  - title: "API ref tutorial step 7: Code samples"
+  - title: "Step 7: Code samples (API ref tutorial)"
     jurl: /docapis_doc_code_samples.html
 
   - title: Putting it all together
@@ -190,28 +190,28 @@ folders:
   - title: "OpenAPI tutorial overview"
     jurl: /pubapis_openapi_tutorial_overview.html
 
-  - title: "OpenAPI tutorial Step 1: openapi object"
+  - title: "Step 1: openapi object (OpenAPI tutorial)"
     jurl: /pubapis_openapi_step1_openapi_object.html
 
-  - title: "OpenAPI tutorial Step 2: info object"
+  - title: "Step 2: info object (OpenAPI tutorial)"
     jurl: /pubapis_openapi_step2_info_object.html
 
-  - title: "OpenAPI tutorial Step 3: servers object"
+  - title: "Step 3: servers object (OpenAPI tutorial)"
     jurl: /pubapis_openapi_step3_servers_object.html
 
-  - title: "OpenAPI tutorial Step 4: paths object"
+  - title: "Step 4: paths object (OpenAPI tutorial)"
     jurl: /pubapis_openapi_step4_paths_object.html
 
-  - title: "OpenAPI tutorial Step 5: components object"
+  - title: "Step 5: components object (OpenAPI tutorial)"
     jurl: /pubapis_openapi_step5_components_object.html
 
-  - title: "OpenAPI tutorial Step 6: security object"
+  - title: "Step 6: security object (OpenAPI tutorial)"
     jurl: /pubapis_openapi_step6_security_object.html
 
-  - title: "OpenAPI tutorial Step 7: tags object"
+  - title: "Step 7: tags object (OpenAPI tutorial)"
     jurl: /pubapis_openapi_step7_tags_object.html
 
-  - title: "OpenAPI tutorial Step 8: externaldocs object"
+  - title: "Step 8: externaldocs object (OpenAPI tutorial)"
     jurl: /pubapis_openapi_step8_externaldocs_object.html
 
   - title: "OpenAPI specification activity: Create your own specification document"

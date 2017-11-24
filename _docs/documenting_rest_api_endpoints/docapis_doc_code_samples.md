@@ -1,5 +1,5 @@
 ---
-title: "API reference tutorial step 7: Code samples"
+title: "Step 7: Code samples (API reference tutorial)"
 permalink: /docapis_doc_code_samples.html
 course: "Documenting REST APIs"
 weight: 3.6

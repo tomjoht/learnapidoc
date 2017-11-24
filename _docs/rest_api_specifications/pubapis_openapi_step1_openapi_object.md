@@ -1,5 +1,5 @@
 ---
-title: "OpenAPI tutorial step 1: The openapi object"
+title: "Step 1: The openapi object (OpenAPI tutorial)"
 permalink: /pubapis_openapi_step1_openapi_object.html
 course: "Documenting REST APIs"
 sidebar: docapis

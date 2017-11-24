@@ -1,5 +1,5 @@
 ---
-title: "API reference tutorial step 1: Resource description"
+title: "Step 1: Resource description (API reference tutorial)"
 permalink: /docapis_resource_descriptions.html
 course: "Documenting REST APIs"
 weight: 3.1

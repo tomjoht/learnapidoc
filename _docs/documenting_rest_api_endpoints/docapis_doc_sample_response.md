@@ -1,5 +1,5 @@
 ---
-title: "API reference tutorial step 5: Response example"
+title: "Step 5: Response example (API reference tutorial)"
 permalink: /docapis_doc_sample_responses.html
 keywords:
 course: "Documenting REST APIs"
@@ -24,13 +24,6 @@ path1: /docendpoints.html
 <a  class="noExtIcon" href="http://developer.nytimes.com/article_search_v2.json#/Documentation/GET/articlesearch.json"><img src="images/nytimesresponseexample.png" /></a>
 
 It's important to provide a sample response from the endpoint. This lets developers know if the endpoint contains the information they want, and how that information is labeled.
-
-{% if site.format == "web" %}
-* TOC
-{:toc}
-{% endif %}
-
-## Example
 
 Here's an example from Flattr's API. In this case, the response actually includes the response header as well as the response body:
 
@@ -120,6 +113,17 @@ Sometimes responses are generated dynamically based on API calls to a test syste
 At one company I worked for, we had a test system we used to generate the responses. It was important that the test system had the right data to create good responses. You don't want a bunch of null or missing items in the response.
 
 However, once the test system generated the responses, those responses were imported into the documentation through a script.
+
+## Dynamically showing the responses {#dynamic_responses}
+
+Some sample requests in API don't show responses in the endpoint documentation. Instead, you click the request URL, which executes a GET request that doesn't require any authorization. You then see the response dynamically in the browser. In addition to the Citygrid API, the [Open Weather API](https://openweathermap.org/current) provides an example as well.
+
+In the Open Weather API, when you click one of the "Examples of API calls," such as [http://samples.openweathermap.org/data/2.5/weather?q=London](http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1), you see the response dynamically returned in the browser.
+
+<a href="http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1" class="noExtIcon"><img class="medium" src="images/dynamicresponseinbrowser.png"/></a>
+
+This approach is common and works well (for GET requests) when you can pull it off. Unfortunately, this approach makes it difficult to define the responses. (The CityGrid API documentation is detailed and does include information in later sections that describes the responses.)
+
 
 ## Creative approaches in documenting lengthy JSON responses
 
