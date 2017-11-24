@@ -19,38 +19,30 @@ path1: /docendpoints.html
 * TOC
 {:toc}
 
-## Example
+## Example of a response
+
+The following screenshot shows a sample response from the New York Times API:
 
 <a  class="noExtIcon" href="http://developer.nytimes.com/article_search_v2.json#/Documentation/GET/articlesearch.json"><img src="images/nytimesresponseexample.png" /></a>
-
-It's important to provide a sample response from the endpoint. This lets developers know if the endpoint contains the information they want, and how that information is labeled.
-
-Here's an example from Flattr's API. In this case, the response actually includes the response header as well as the response body:
-
-<a href="http://developers.flattr.net/api/resources/activities/" class="noExtIcon"><img src="images/flattr.png" alt="Flattr example" /></a>
 
 If the header information is important, include it. Otherwise, leave it out.
 
 ## Define what the values mean in the endpoint response
 
-Some APIs describe each item in the response, while others, perhaps because the responses are self-evident, omit the response documentation. In the Flattr example above, the response isn't explained. Neither is the response explained in [Twitter's API](https://dev.twitter.com/rest/public).
+Some APIs describe each item in the response, while others, perhaps because the responses are self-evident, omit the response documentation. In Twitter's API, the responses aren't explained (you can see an [example here](https://developer.twitter.com/en/docs/accounts-and-users/manage-account-settings/api-reference/get-account-settings)).
 
-If the labels in the response are abbreviated or non-intuitive, however, you definitely should document the responses. Developers sometimes abbreviate the responses to increase performance by reducing the amount of text sent.
+If the labels in the response are abbreviated or non-intuitive, however, you definitely should document what the responses mean. Developers sometimes abbreviate the responses to increase performance by reducing the amount of text sent. In one endpoint I documented, the response included about 20 different two-letter abbreviations. I spent days tracking down what each abbreviation meant. Many developers didn't even know what the abbreviations meant.
 
-Additionally, if you're documenting some of the response items but not others, the doc will look inconsistent.
-
-One of the problems with the Mashape Weather API is that it doesn't describe the meaning of the responses. If the air quality index is `25`, is that a good or bad value when compared to `65`? What is the scale based on?
-
-Does each city/country define its own index? Does a high number indicate a poor quality of air or a high quality? How does air quality differ from air pollution? These are the types of answers one would hope to learn in a description of the responses.
+One of the problems with the [Mashape Weather API](https://market.mashape.com/fyhao/weather-13) we've been using [as an example](docapis_new_endpoint_to_doc.html) is that it doesn't describe the meaning of the responses. If the air quality index is `25`, is that a good or bad value when compared to `65`? What is the scale based on? Does each city/country define its own index? Does a high number indicate a poor quality of air or a high quality? How does air quality differ from air pollution? These are the types of answers one would hope to learn in a description of the responses.
 
 ## Strategies for documenting nested objects
 
-Many times the response contains nested objects (objects within objects). Here Dropbox represents the nesting with a slash. For example, `team/name` provides the documentation for the `name` object within the `team` object.
+Many times the response contains nested objects (objects within objects). Here the Dropbox API represents the nesting with a slash. For example, `team/name` provides the documentation for the `name` object within the `team` object.
 
 <a href="https://www.dropbox.com/developers/core/docs#disable-token" class="noExtIcon"><img src="images/returnvaluedefinitions.png" alt="Dropbox nested example" /></a>
 
 {: .tip}
-Notice how the response values are in a monospaced font while the descriptions are in a regular font? This helps improve the readability.
+Notice how the response values are in a monospaced font while the descriptions are in a regular font. This helps improve the readability.
 
 Other APIs will nest the response definitions to imitate the JSON structure. Here's an example from bit.ly's API:
 
@@ -77,11 +69,11 @@ For example, `MinimumAdvertisedPrice` is nested inside `DiscountPriceInfo`, whic
 It's also interesting how much detail eBay includes for each item. Whereas the Twitter writers appear to omit descriptions, the eBay authors write small novels describing each item in the response.
 
 {: .note}
-A lot of APIs also return responses in XML, especially if the API is an older API. (Initially, XML was more popular than JSON, but now it's the reverse.) Some APIs give you the option of returning responses in either XML or JSON. If you're going to consume the API on a web page, JSON is probably much more popular because you can use JavaScript dot notation to grab the information you want.
+A lot of APIs also return responses in XML, especially if the API is an older API. Some APIs give you the option of returning responses in either XML or JSON. If you're going to consume the API on a web page, JSON is probably much more popular because you can use JavaScript dot notation to grab the information you want.
 
 ## Where to include the response
 
-Some APIs collapse the response into a show/hide toggle to save space. Others put the response in a right column so you can see it while also looking at the endpoint description and parameters. Stripe's API made this tri-column design famous:
+Some APIs collapse the response into a show/hide toggle to save space. Others put the response in a right column so you can see it while also looking at the endpoint description and parameters. Stripe's API made this three-column design popular:
 
 <a href="https://stripe.com/docs/api#charge_object" class="noExtIcon"><img src="images/stripetripanedesign.png" alt="Stripe's tri-column design" /></a>
 
@@ -91,18 +83,19 @@ To represent the child objects, Stripe uses an expandable section under the pare
 
 I'm not sure that the tripane column is so usable. The original idea of the design was to allow you to see the response and description at the same time, but when the description is lengthy (such as is the case with `source`), it creates unevenness in the juxtaposition.
 
-Many times in Stripe's documentation, the descriptions aren't in the same viewing area as the sample response, so what's the point of arranging them side by side? It splits the viewer's focus and causes more up and down scrolling.
+Many times in Stripe's documentation, the descriptions aren't in the same viewing area as the sample response. As a result, the viewer's focus is split, and the user must resort to more up-and-down scrolling.
 
 ## Use realistic values in the response
 
 The response should contain realistic values. If developers give you a sample response, make sure each of the possible items that can be included are shown. The values for each should be reasonable (not bogus test data that looks corny).
 
-## Format the JSON in a readable way
+Also, the sample response should not contain real customer data. If you get a sample response from an engineer, and the data looks real, make sure it's not just from a cloned production database.
+
+## Format the JSON and use code syntax highlighting
 
 Use proper JSON formatting for the response. A tool such as [JSON Formatter and Validator](http://jsonformatter.curiousconcept.com/) can make sure the spacing is correct.
 
-## Add syntax highlighting
-If you can add syntax highlighting as well, definitely do it. One good Python-based syntax highlighter is [Pygments](http://pygments.org/). This highlighter relies on "lexers" to indicate how the code should be highlighted. For example, some common lexers are `java`, `json`, `html`, `xml`, `cpp`, `dotnet`, and `javascript`. A non-python-based equivalent to Pygments is Rouge.
+If you can add syntax highlighting as well, definitely do it. One good Python-based syntax highlighter is [Pygments](http://pygments.org/). A ruby-based highlighter is [Rouge](https://github.com/jneen/rouge). These highlighters are often integrated into static site generators. Pygments and rouge rely on "lexers" to indicate how the code should be highlighted. For example, some common lexers are `java`, `json`, `html`, `xml`, `cpp`, `dotnet`, and `javascript`. A non-python-based equivalent to Pygments is Rouge.
 
 Since your tool and platform dictate the syntax highlighting options available, look for syntax highlighting options within the system that you're using. If you don't have any syntax highlighters to integrate directly into your tool, you could add syntax highlighting manually for each code sample by pasting it into the [syntaxhighlight.in](http://syntaxhighlight.in/) highlighter.
 
@@ -110,38 +103,17 @@ Since your tool and platform dictate the syntax highlighting options available, 
 
 Sometimes responses are generated dynamically based on API calls to a test system. For example, look at the [Rhapsody API](https://developer.rhapsody.com/api) and click an endpoint &mdash; it appears to be generated dynamically.
 
-At one company I worked for, we had a test system we used to generate the responses. It was important that the test system had the right data to create good responses. You don't want a bunch of null or missing items in the response.
-
-However, once the test system generated the responses, those responses were imported into the documentation through a script.
-
-## Dynamically showing the responses {#dynamic_responses}
-
-Some sample requests in API don't show responses in the endpoint documentation. Instead, you click the request URL, which executes a GET request that doesn't require any authorization. You then see the response dynamically in the browser. In addition to the Citygrid API, the [Open Weather API](https://openweathermap.org/current) provides an example as well.
-
-In the Open Weather API, when you click one of the "Examples of API calls," such as [http://samples.openweathermap.org/data/2.5/weather?q=London](http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1), you see the response dynamically returned in the browser.
+Another example is with the [Open Weather API](https://openweathermap.org/current). In the Open Weather API, when you click one of the "Examples of API calls," such as [http://samples.openweathermap.org/data/2.5/weather?q=London](http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1), you see the response dynamically returned in the browser.
 
 <a href="http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1" class="noExtIcon"><img class="medium" src="images/dynamicresponseinbrowser.png"/></a>
 
-This approach is common and works well (for GET requests) when you can pull it off. Unfortunately, this approach makes it difficult to define the responses. (The CityGrid API documentation is detailed and does include information in later sections that describes the responses.)
+The Citygrid API, which we explored in the [requests example topic](docapis_doc_sample_requests.html), also dynamically generates responses.
 
+This approach is common and works well (for GET requests) when you can pull it off. Unfortunately, this approach makes it difficult to define the responses.
 
 ## Creative approaches in documenting lengthy JSON responses
 
 In addition to using standard tables to document JSON responses, you can also implement some more creative approaches.
-
-{% comment %}
-### The scrolling-to-definitions approach
-
-In my [documentation theme for Jekyll](http://idratherbewriting.com/documentation-theme-jekyll), I tried an approach to documenting JSON that uses a jQuery plugin called ScrollTo. You can [see it here](http://idratherbewriting.com/documentation-theme-jekyll/mydoc_scroll.html):
-
-<a href="http://idratherbewriting.com/documentation-theme-jekyll/mydoc_scroll.html" class="noExtIcon"><img src="images/scrollto-550x310.png" alt="Scrollto"  style="border:1px solid #dedede;"/></a>
-
-When you click on an item in the JSON object, the right-pane scrolls to the item's description. I like this approach, though I've not really seen it done in other API documentation sites.
-
-One problem is that you end up with three scroll bars on one page, which isn't the best design. Additionally, the descriptions in this demo are just paragraphs. Usually you structure the information with more detail (for example, data type, description, notes, etc.).
-
-Also, this approach doesn't allow for easy scanning. However, this scrolling view might be an alternative view to a more scannable table. That is, you could store the definitions in another file and then include the definitions in both this scrolling view and a master table list, allowing the user to choose the view he or she wants.
-{% endcomment %}
 
 ### The side-by-side approach
 
@@ -160,8 +132,6 @@ Some sites, like Twitter's API docs, don't seem to describe the items in the JSO
 <a href="https://dev.twitter.com/rest/reference/post/statuses/retweet/%3Aid" class="noExtIcon"><img src="images/twitternojsondoc.png" alt="Twitter" style="border:1px solid #dedede;"/></a>
 
 Theoretically, each item in the JSON response should be a clearly chosen word that represents what it means in an obvious way. However, to reduce the size and increase the speed of the response, developers often resort to shorter terms or use abbreviations. The shorter the term, the more it needs accompanying documentation.
-
-In one endpoint I documented, the response included about 20 different two-letter abbreviations. I spent days tracking down what each abbreviation meant. Many developers didn't even know what the abbreviations meant.
 
 ### The RAML API Console approach
 
@@ -188,6 +158,8 @@ If you have long JSON objects like this, a custom table with different classes a
 However, this approach requires more manual work from a documentation point of view, and there isn't any interactivity to try out the endpoints. Still, if you have long JSON objects, it might be worth it.
 
 ## Create a sample response in your surfreport/{beachId} endpoint
+
+{% include activity.html %}
 
 For your `surfreport/{beachId}` endpoint, create a section that shows the sample response. Look over the response to make sure it shows what it should.
 

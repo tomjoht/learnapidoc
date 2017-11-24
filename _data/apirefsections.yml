@@ -16,7 +16,7 @@ parameters:
 request_example:
   term: Request example
   def: >
-        The request example shows a sample request using the resource URL, showing some parameters configured. The request example usually can't show all possible parameter configurations, but it should be as rich as possible with parameters.
+        The request example shows a sample request using the resource URL, showing some parameters configured. The request example usually can't show all possible parameter configurations, but it should be as rich as possible with parameters. The response lets developers know if the endpoint contains the information they want, the format, and how that information is structured and labeled.
 
 response_example:
   term: Response example
