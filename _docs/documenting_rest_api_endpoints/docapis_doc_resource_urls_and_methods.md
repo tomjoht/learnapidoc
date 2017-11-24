@@ -48,7 +48,11 @@ Better yet, put the [path parameter](docapis_doc_parameters.html) in another col
 
 Curly braces are a convention that users will understand. In the above example, almost no URL uses curly braces in the actual path syntax, so the `{campaign_id}` is an obvious placeholder.
 
-The way different APIs set off the path parameter from the other parts of the resource URL varies (some precede it with a colon), but make sure the path parameter is easily identifiable.
+The way different APIs set off the path parameter from the other parts of the resource URL varies (some precede it with a colon), but make sure the path parameter is easily identifiable. Here's an example from the Facebook API that colors the path parameter in an easily identifiable way:
+
+<a href="https://developers.facebook.com/docs/graph-api/reference/v2.11/achievement/" class="noExtIcon"><img src="images/facebookapicolor.png"/></a>
+
+When the parameters are described, the same green color is used to set off the parameters, which helps users recognize their meaning.
 
 ## You can list the method beside the endpoint
 

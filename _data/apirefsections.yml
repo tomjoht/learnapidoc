@@ -18,10 +18,10 @@ request_example:
   def: >
         The request example shows a sample request using the resource URL, showing some parameters configured. The request example usually can't show all possible parameter configurations, but it should be as rich as possible with parameters. The response lets developers know if the endpoint contains the information they want, the format, and how that information is structured and labeled.
 
-response_example:
-  term: Response example
+response_example_and_schema:
+  term: Response example and schema
   def: >
-        The response example shows a sample response from the request example. The response example is not comprehensive of all parameter configurations or operations, but it should correspond with the parameters passed in the request example. The response example also describes each element in the response, such as with a table of definitions.
+        The response example shows a sample response from the request example. The response example is not comprehensive of all parameter configurations or operations, but it should correspond with the parameters passed in the request example. The response schema  describes each element in the response and provides a model of the response's properties and structure.
 
 status_error_codes:
   term: Status and error codes

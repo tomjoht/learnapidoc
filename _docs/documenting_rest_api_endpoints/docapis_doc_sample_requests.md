@@ -39,13 +39,21 @@ curl is a common format to show requests for several reasons:
 * curl shows the header information that is required in the request.
 * curl also shows the method used with the request, and other parameters.
 
-Other API doc sites might use a more plain URL, such as this lackluster example with Twitter:
+Here's another example of a curl request in the Parse API:
+
+<a href="http://docs.parseplatform.org/rest/guide/#updating-objects" class="noExtIcon"><img src="images/parseapirequest.png"/></a>
+
+You can add backslashes in curl to separate out each parameter onto its own line (though, as I pointed out in the [curl tutorial](docapis_make_curl_call.html#make-the-request-in-curl-windows-7), Windows has trouble with backslashes).
+
+Other API doc sites might use a more plain URL, such as this lackluster example from Twitter:
 
 <a class="noExtIcon" href="https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-friends-list"><img src="images/twitterrequestexample.png" /></a>
 
+One problem with this Twitter request example is that it doesn't indicate if any header information needs to be passed to authorize the request.
+
 ## Multiple request examples
 
-If you have a lot of parameters, it might make sense to include multiple request examples. In the CityGrid Places API, the [`where` endpoint](http://docs.citygridmedia.com/display/citygridv2/Places+API#PlacesAPI-WhereSearchHTTPSEndpoint) is as follows:
+If you have a lot of parameters, it might make sense to include several request examples. In the CityGrid Places API, the [`where` endpoint](http://docs.citygridmedia.com/display/citygridv2/Places+API#PlacesAPI-WhereSearchHTTPSEndpoint) is as follows:
 
 ```
 https://api.citygridmedia.com/content/places/v2/search/where

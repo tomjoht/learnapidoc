@@ -18,7 +18,7 @@ In the [Swagger tutorial](pubapis_swagger.html), you explored the [Swagger Petst
 
 ## Integrate your OpenAPI spec into Swagger UI
 
-1.  If you completed the [OpenAPI specification document activity](pubapis_openapi_activity.html), you should have a functional specification document from an API. If you don't, you can use the [openapi_sunrise_sunset.yml](http://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/openapi_sunrise_sunset.yml). This information comes from the [Sunset and sunrise times API](https://sunrise-sunset.org/api). Download the file to your computer.
+1.  If you completed the [OpenAPI specification document activity](pubapis_openapi_activity.html), you should have a functional specification document from an API. If you don't, you can use the [openapi_sunrise_sunset.yml](/learnapidoc/assets/files/swagger-sunrise-sunset/openapi_sunrise_sunset.yml). This information comes from the [Sunset and sunrise times API](https://sunrise-sunset.org/api). Download the file to your computer.
 2.  Go to the [Swagger UI GitHub project](https://github.com/swagger-api/swagger-ui) and click **Clone or download**, then click **Download ZIP**.
 3.  Uncompress the downloaded swagger-ui-master.zip and move the **dist** folder into another directory on your computer. Give the dist folder a more meaningful name, such as "swagger."
 4.  Move your OpenAPI specification document (e.g., openapi_sunrise_sunset.yml) into the folder.
@@ -60,12 +60,12 @@ A local web server simulates a web server on your local machine. To run a simple
 
 4.  Open a browser (such as Chrome), and go to `http://localhost:7800/`. The web server serves up the index.html file in that directory by default. You should see your Swagger UI project load the spedification document.
 
-    <a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html" class="noExtIcon"><img class="medium" src="images/sunset_and_sunrise_swaggerui.png"/></a>
+    <a href="/learnapidoc/assets/files/swagger-sunrise-sunset/index.html" class="noExtIcon"><img class="medium" src="images/sunset_and_sunrise_swaggerui.png"/></a>
 
 
 ## Test your Swagger UI project
 
-Make a request with the Swagger UI display to make sure it's working. If you're using the [Sunset and sunrise times API example](http://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html), you can use these values for latitude and longitude:
+Make a request with the Swagger UI display to make sure it's working. If you're using the [Sunset and sunrise times API example](/learnapidoc/assets/files/swagger-sunrise-sunset/index.html), you can use these values for latitude and longitude:
 
 * lat: `37.3710062`
 * lng: `-122.0375932`

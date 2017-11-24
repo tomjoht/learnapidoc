@@ -1,5 +1,5 @@
 ---
-title: "Step 5: Response example (API reference tutorial)"
+title: "Step 5: Response example and schema (API reference tutorial)"
 permalink: /docapis_doc_sample_responses.html
 keywords:
 course: "Documenting REST APIs"
@@ -14,47 +14,82 @@ path1: /docendpoints.html
 <img src="images/apiref6.png"/>
 {% endif %}
 
-> **{{site.data.apirefsections.response_example.term}}**: {{site.data.apirefsections.response_example.def}}
+> **{{site.data.apirefsections.response_example_and_schema.term}}**: {{site.data.apirefsections.response_example_and_schema.def}}
 
 * TOC
 {:toc}
 
-## Example of a response
+## Example of a response example and response schema
 
-The following screenshot shows a sample response from the New York Times API:
+The following is a sample response from the SendGrid API. Their documentation provides a tabbed display with an example on one tab:
 
-<a  class="noExtIcon" href="http://developer.nytimes.com/article_search_v2.json#/Documentation/GET/articlesearch.json"><img src="images/nytimesresponseexample.png" /></a>
+<a class="noExtIcon" href="https://sendgrid.com/docs/API_Reference/api_v3.html"><img src="images/sendgridresponseexample1.png" /></a>
 
-If the header information is important, include it. Otherwise, leave it out.
+And a definition of the response schema on another tab:
 
-## Define what the values mean in the endpoint response
+<a class="noExtIcon" href="https://sendgrid.com/docs/API_Reference/api_v3.html"><img src="images/sendgridresponseexample2.png" /></a>
 
-Some APIs describe each item in the response, while others, perhaps because the responses are self-evident, omit the response documentation. In Twitter's API, the responses aren't explained (you can see an [example here](https://developer.twitter.com/en/docs/accounts-and-users/manage-account-settings/api-reference/get-account-settings)).
+The definition of the response is called the [schema or the model](http://json-schema.org/). What works particularly well with the SendGrid example is the use of expand/collapse tags to mirror the same structure as the example, with objects at different levels.
 
-If the labels in the response are abbreviated or non-intuitive, however, you definitely should document what the responses mean. Developers sometimes abbreviate the responses to increase performance by reducing the amount of text sent. In one endpoint I documented, the response included about 20 different two-letter abbreviations. I spent days tracking down what each abbreviation meant. Many developers didn't even know what the abbreviations meant.
+Swagger UI also provides both an example value and a schema or model. For example, in the sample Sunset and sunrise times API doc that I created for the [SwaggerUI activity](/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset), you can see a distinction between the response example and the response schema. Here's the example value:
 
-One of the problems with the [Mashape Weather API](https://market.mashape.com/fyhao/weather-13) we've been using [as an example](docapis_new_endpoint_to_doc.html) is that it doesn't describe the meaning of the responses. If the air quality index is `25`, is that a good or bad value when compared to `65`? What is the scale based on? Does each city/country define its own index? Does a high number indicate a poor quality of air or a high quality? How does air quality differ from air pollution? These are the types of answers one would hope to learn in a description of the responses.
+<a class="noExtIcon" href="/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset"><img src="images/sunriseexample.png" alt="Sunrise example value" /></a>
+
+The response example should correspond with the request example. However, just as the request example might only include a subset of all possible parameters, the response might also be a subset of all possible returned information.
+
+However, the response schema's documentations comprehensive of all possible properties returned in the response. This is why you need both a response example and a response schema/model. Here's the response model for the Sunrise and sunset API:
+
+<a class="noExtIcon" href="/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset"><img src="images/sunrisemodelexample.png" alt="Sunrise model" /></a>
+
+The schema or model provides the following:
+
+* Description of each property
+* Definition of the data type for each property
+* Whether each property is required or optional
+
+If the header information is important to include in the response example (because it provides unique information other than standard [status codes](docapis_doc_status_codes.html)), you can include it as well.
+
+## Do you need to define the response?
+
+One distinguishing characteristic of good API documentation is the inclusion of the response schema, with descriptions of each property. Some API documentation omits this section because the responses might seem self-evident or intuitive. That might be the case. In Twitter's API, the responses aren't explained (you can see an [example here](https://developer.twitter.com/en/docs/accounts-and-users/manage-account-settings/api-reference/get-account-settings)).
+
+However, most documentation would be better with the response described, especially if the properties are abbreviated or cryptic. Developers sometimes abbreviate the responses to increase performance by reducing the amount of text sent. In one endpoint I documented, the response included about 20 different two-letter abbreviations. I spent days tracking down what each abbreviation meant, and found that many developers didn't know what half the responses meant.
+
+One of the problems with the [Mashape Weather API](https://market.mashape.com/fyhao/weather-13) we've been using [as an example](docapis_new_endpoint_to_doc.html) is that it doesn't describe the meaning of the responses. If the air quality index is `25`, is that a good or bad value when compared to `65`? What is the max or min value that the API might return? Further, what exactly does the "air quality index" mean? Also, what longitude and latitude values are supported?
+
+## Use realistic values in the example response
+
+In the example response, the values should be realistic without being real. If developers give you a sample response, make sure each of the possible values are reasonable and not bogus (or consisting of comic book character names).
+
+Also, the sample response should not contain real customer data. If you get a sample response from an engineer, and the data looks real, make sure it's not just from a cloned production database, which is common. Developers may not realize that the data needs to be fictitious but representative, and scraping a production database may be the easiest approach for them.
+
+## Format the JSON and use code syntax highlighting
+
+Use proper JSON formatting for the response. A tool such as [JSON Formatter and Validator](http://jsonformatter.curiousconcept.com/) can make sure the spacing is correct.
+
+If you can add syntax highlighting as well, definitely do it. If you're using a static site generator such as [Jekyll](pubapis_jekyll.html) or markdown syntax with [GitHub](pubapis_github_wikis.html), you can probably use the [Rouge](https://github.com/jneen/rouge) built-in syntax highlighter. Other tools use [Pygments](http://pygments.org/). Rouge and Pygments rely on "lexers" to indicate how the code should be highlighted. For example, some common lexers are `java`, `json`, `html`, `xml`, `cpp`, `dotnet`, and `javascript`.
+
+If you don't have any syntax highlighters to integrate directly into your tool, you could add syntax highlighting manually for each code sample by pasting it into the [syntaxhighlight.in](http://syntaxhighlight.in/) highlighter.
 
 ## Strategies for documenting nested objects
 
-Many times the response contains nested objects (objects within objects). Here the Dropbox API represents the nesting with a slash. For example, `team/name` provides the documentation for the `name` object within the `team` object.
+Many times the response contains nested objects (objects within objects), or has repeating elements. Formatting the documentation for the response schema is one of the more challenging aspects of API reference documentation.
+
+Tables are most commonly used. In [Peter Gruenbaum's API tech writing course on Udemy](https://www.udemy.com/api-documentation-1-json-and-xml/), he represents the nested objects using tables with various columns:
+
+<a href="http://idratherbewriting.com/2015/05/22/api-technical-writing-course-on-udemy/" class="noExtIcon"><img src="images/gruenbaumtable.png" alt="Peter Gruenbaum course" /></a>
+
+Gruenbaum's use of tables is mostly to reduce the emphasis on tools and place it more on the content.
+
+The Dropbox API represents the nesting with a slash. For example, `name_details/` and `team/` indicate the multiple object levels.
 
 <a href="https://www.dropbox.com/developers/core/docs#disable-token" class="noExtIcon"><img src="images/returnvaluedefinitions.png" alt="Dropbox nested example" /></a>
-
-{: .tip}
-Notice how the response values are in a monospaced font while the descriptions are in a regular font. This helps improve the readability.
 
 Other APIs will nest the response definitions to imitate the JSON structure. Here's an example from bit.ly's API:
 
 <a href="http://dev.bitly.com/user_info.html" class="noExtIcon"><img src="images/bitlyresponsedoc.png" alt="Bitly response" /></a>
 
-The indented approach with different levels of bullets can be an eyesore, so I recommend avoiding it.
-
-In [Peter Gruenbaum's API tech writing course on Udemy](https://www.udemy.com/api-documentation-1-json-and-xml/), he also represents the nested objects using tables:
-
-<a href="http://idratherbewriting.com/2015/05/22/api-technical-writing-course-on-udemy/" class="noExtIcon"><img src="images/gruenbaumtable.png" alt="Peter Gruenbaum course" /></a>
-
-Gruenbaum's use of tables is mostly to reduce the emphasis on tools and place it more on the content.
+Multiple levels of bullets is usually an eyesore, but here it serves a purpose here that works well without requiring sophisticated styling.
 
 {% include random_ad.html %}
 
@@ -68,84 +103,17 @@ For example, `MinimumAdvertisedPrice` is nested inside `DiscountPriceInfo`, whic
 
 It's also interesting how much detail eBay includes for each item. Whereas the Twitter writers appear to omit descriptions, the eBay authors write small novels describing each item in the response.
 
-{: .note}
-A lot of APIs also return responses in XML, especially if the API is an older API. Some APIs give you the option of returning responses in either XML or JSON. If you're going to consume the API on a web page, JSON is probably much more popular because you can use JavaScript dot notation to grab the information you want.
+## Three-column designs
 
-## Where to include the response
-
-Some APIs collapse the response into a show/hide toggle to save space. Others put the response in a right column so you can see it while also looking at the endpoint description and parameters. Stripe's API made this three-column design popular:
+Some APIs put the response in a right column so you can see it while also looking at the resource description and parameters. Stripe's API made this three-column design popular:
 
 <a href="https://stripe.com/docs/api#charge_object" class="noExtIcon"><img src="images/stripetripanedesign.png" alt="Stripe's tri-column design" /></a>
 
-A lot of APIs have modeled their design after Stripe's. (For example, see <a href="https://github.com/tripit/slate">Slate</a> or <a href="http://readme.io">readme.io</a>.)
+Stripe's design juxtaposes the sample response in a right side pane with the response schema in the main window. The idea is that you can see both at the same time. The description won't always line up with the response, which might be confusing. Still, separating the response example from the response schema in separate columns helps differentiate the two.
 
-To represent the child objects, Stripe uses an expandable section under the parent (see the "Hide Child Attributes" link in the screenshot above).
+A lot of APIs have modeled their design after Stripe's. For example, see <a href="https://github.com/tripit/slate">Slate</a>, <a href="https://github.com/sourcey/spectacle">Spectacle</a>, or <a href="http://readme.io">readme.io</a>.
 
-I'm not sure that the tripane column is so usable. The original idea of the design was to allow you to see the response and description at the same time, but when the description is lengthy (such as is the case with `source`), it creates unevenness in the juxtaposition.
-
-Many times in Stripe's documentation, the descriptions aren't in the same viewing area as the sample response. As a result, the viewer's focus is split, and the user must resort to more up-and-down scrolling.
-
-## Use realistic values in the response
-
-The response should contain realistic values. If developers give you a sample response, make sure each of the possible items that can be included are shown. The values for each should be reasonable (not bogus test data that looks corny).
-
-Also, the sample response should not contain real customer data. If you get a sample response from an engineer, and the data looks real, make sure it's not just from a cloned production database.
-
-## Format the JSON and use code syntax highlighting
-
-Use proper JSON formatting for the response. A tool such as [JSON Formatter and Validator](http://jsonformatter.curiousconcept.com/) can make sure the spacing is correct.
-
-If you can add syntax highlighting as well, definitely do it. One good Python-based syntax highlighter is [Pygments](http://pygments.org/). A ruby-based highlighter is [Rouge](https://github.com/jneen/rouge). These highlighters are often integrated into static site generators. Pygments and rouge rely on "lexers" to indicate how the code should be highlighted. For example, some common lexers are `java`, `json`, `html`, `xml`, `cpp`, `dotnet`, and `javascript`. A non-python-based equivalent to Pygments is Rouge.
-
-Since your tool and platform dictate the syntax highlighting options available, look for syntax highlighting options within the system that you're using. If you don't have any syntax highlighters to integrate directly into your tool, you could add syntax highlighting manually for each code sample by pasting it into the [syntaxhighlight.in](http://syntaxhighlight.in/) highlighter.
-
-## Embedding dynamic responses
-
-Sometimes responses are generated dynamically based on API calls to a test system. For example, look at the [Rhapsody API](https://developer.rhapsody.com/api) and click an endpoint &mdash; it appears to be generated dynamically.
-
-Another example is with the [Open Weather API](https://openweathermap.org/current). In the Open Weather API, when you click one of the "Examples of API calls," such as [http://samples.openweathermap.org/data/2.5/weather?q=London](http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1), you see the response dynamically returned in the browser.
-
-<a href="http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1" class="noExtIcon"><img class="medium" src="images/dynamicresponseinbrowser.png"/></a>
-
-The Citygrid API, which we explored in the [requests example topic](docapis_doc_sample_requests.html), also dynamically generates responses.
-
-This approach is common and works well (for GET requests) when you can pull it off. Unfortunately, this approach makes it difficult to define the responses.
-
-## Creative approaches in documenting lengthy JSON responses
-
-In addition to using standard tables to document JSON responses, you can also implement some more creative approaches.
-
-### The side-by-side approach
-
-In Stripe's API documentation, the writers try to juxtapose the responses in a right side pane with the documentation in the main window.
-
-<a href="https://stripe.com/docs/api#charge_object" class="noExtIcon"><img src="images/stripe-550x373.png" alt="Stripe" style="border:1px solid #dedede;"/> </a>
-
-The idea is that you can see both the description and a sample response at the same time, and just scroll down.
-
-However, the description doesn't always line up with the sample response. (In some places, child attributes are collapsed to save space.) I'm not sure why some items (such as `livemode`) aren't documented.
-
-### The no-need-for-descriptions approach
-
-Some sites, like Twitter's API docs, don't seem to describe the items in the JSON response at all. Looking at this [long response for the post status/retweet endpoint](https://dev.twitter.com/rest/reference/post/statuses/retweet/%3Aid) in Twitter's API docs, there isn't even an attempt to describe what all the items mean. Maybe they figure most of the items in the response are self-evident?
-
-<a href="https://dev.twitter.com/rest/reference/post/statuses/retweet/%3Aid" class="noExtIcon"><img src="images/twitternojsondoc.png" alt="Twitter" style="border:1px solid #dedede;"/></a>
-
-Theoretically, each item in the JSON response should be a clearly chosen word that represents what it means in an obvious way. However, to reduce the size and increase the speed of the response, developers often resort to shorter terms or use abbreviations. The shorter the term, the more it needs accompanying documentation.
-
-### The RAML API Console approach
-
-When you use [RAML](http://idratherbewriting.com/pubapis_raml/) to document endpoints with JSON objects in the request body, the RAML API Console output looks something like this:
-
-<img src="images/ramljsonrepresentation.png" alt="RAML" />
-
-Here each body parameter is a named JSON object that has standard values such as `description` and `type`. While this looks a little cleaner initially, it's also somewhat confusing. The actual request body object won't contain `description` and `type` parameters like this, nor would it contain the `schema`, `type`, or `properties` keys either.
-
-The problem with RAML is that it tries to describe a JSON structure using a JSON structure itself, but the JSON structure of the description doesn't match the JSON structure it describes, so it's confusing.
-
-Further, this approach doesn't provide an example in context, which is what usually clarifies the data for the user.
-
-### Custom-styled tables
+Should you use a three-column layout with your API documentation? Maybe. However, if the response example and description doesn't line up, the viewer's focus is somewhat split, and the user must resort to more up-and-down scrolling. Additionally, if your layout uses three columns, your middle column will have some narrow constraints that doesn't leave much room for screenshots and code examples.
 
 The MYOB Developer Center takes an interesting approach in documenting the JSON in their APIs. They list the JSON structure in a table-like way, with different levels of indentation. You can move your mouse over a field for a tooltip description, or you can click it to have a description expand below.
 
@@ -157,11 +125,23 @@ If you have long JSON objects like this, a custom table with different classes a
 
 However, this approach requires more manual work from a documentation point of view, and there isn't any interactivity to try out the endpoints. Still, if you have long JSON objects, it might be worth it.
 
+## Embedding dynamic responses
+
+Sometimes responses are generated dynamically based on API calls to a test system. For example, look at the [Rhapsody API](https://developer.rhapsody.com/api) and click an endpoint &mdash; the response is generated dynamically.
+
+Another API with dynamic responses is the [Open Weather API](https://openweathermap.org/current). When you click one of the "Examples of API calls," such as [http://samples.openweathermap.org/data/2.5/weather?q=London](http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1), you see the response dynamically returned in the browser.
+
+<a href="http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1" class="noExtIcon"><img class="medium" src="images/dynamicresponseinbrowser.png"/></a>
+
+The Citygrid API, which we explored in the [requests example topic](docapis_doc_sample_requests.html), also dynamically generates responses.
+
+This approach works well for GET requests that return public information. However, it probably wouldn't scale for other methods (such as POST or DELETE) or which request authorization.
+
 ## Create a sample response in your surfreport/{beachId} endpoint
 
 {% include activity.html %}
 
-For your `surfreport/{beachId}` endpoint, create a section that shows the sample response. Look over the response to make sure it shows what it should.
+For the `surfreport/{beachId}` endpoint that we've been exploring in our [sample API scenario](docapis_new_endpoint_to_doc.html), create a section that shows the response example and a response schema. Look over the response to make sure it shows what it should.
 
 Here's what mine looks like:
 
@@ -209,64 +189,77 @@ The following is a sample response from the <code>surfreport/{beachId}</code> en
 {% if site.format == "web" or site.format == "pdf" %}
 <table>
 <colgroup>
-   <col width="40%" />
-   <col width="60%" />
+   <col width="30%" />
+   <col width="55%" />
+   <col width="15%" />
 </colgroup>
 <thead>
 <tr>
 <th>Response item</th>
 <th>Description</th>
+<th>Data type</th>
 </tr>
 </thead><tbody>
 <tr>
 <td><strong>beach</strong></td>
 <td>The beach you selected based on the beach ID in the request. The beach name is the official name as described in the National Park Service Geodatabase.</td>
+<td>String</td>
 </tr>
 <tr>
 <td><strong>{day}</strong></td>
 <td>The day of the week selected. A maximum of 3 days get returned in the response.</td>
+<td>Object</td>
 </tr>
 <tr>
 <td><strong>{time}</strong></td>
 <td>The time for the conditions. This item is only included if you include a time parameter in the request.</td>
+<td>String</td>
 </tr>
 <tr>
 <td><strong><span class="muted">{day}/{time}</span>/tide</strong></td>
 <td>The level of tide at the beach for a specific day and time. Tide is the distance inland that the water rises to, and can be a positive or negative number. When the tide is out, the number is negative. When the tide is in, the number is positive. The 0 point reflects the line when the tide is neither going in nor out but is in transition between the two states.</td>
+<td>Integer</td>
 </tr>
 <tr>
 <td><strong><span class="muted">{day}/{time}</span>/wind</strong></td>
 <td>The wind speed at the beach, measured in knots (nautical miles per hour). Wind affects the surf height and general wave conditions. Wind speeds of more than 15 knots make surf conditions undesirable, since the wind creates white caps and choppy waters.</td>
+<td>Integer</td>
 </tr>
 <tr>
 <td><strong><span class="muted">{day}/{time}</span>/watertemp</strong></td>
 <td>The temperature of the water, returned in Farenheit or Celsius depending upon the units you specify. Water temperatures below 70 F usually require you to wear a wetsuit. With temperatures below 60, you will need at least a 3mm wetsuit and preferably booties to stay warm.</td>
+<td>Integer</td>
 </tr>
 <tr>
 <td><strong><span class="muted">{day}/{time}</span>/surfheight</strong></td>
 <td>The height of the waves, returned in either feet or centimeters depending on the units you specify. A surf height of 3 feet is the minimum size needed for surfing. If the surf height exceeds 10 feet, it is not safe to surf.</td>
+<td>Integer</td>
 </tr>
 <tr>
 <td><strong><span class="muted">{day}/{time}</span>/recommendation</strong></td>
 <td>An overall recommendation based on a combination of the various factors (wind, watertemp, surfheight). Three responses are possible: (1) &quot;Go surfing!&quot;, (2) &quot;Surfing conditions are okay, not great&quot;, and (3) &quot;Not a good day for surfing.&quot; Each of the three factors is scored with a maximum of 33.33 points, depending on the ideal for each element. The three elements are combined to form a percentage. 0% to 59% yields response 3, 60% - 80% and below yields response 2, and 81% to 100% yields response 3.</td>
+<td>String</td>
 </tr>
 </tbody></table>
 
 {% elsif site.format == "kindle" %}
 
 {: .note}
-Tables don't display well on Kindle devices, so I've converted them into definition lists in this course. However, here I've also included an image of the table. Tables are more common and easier, but definition lists work better on mobile and tablet devices.
+Tables don't display well on Kindle devices, so I've converted them into definition lists in this course. However, here I've also included an image of the table. Tables are more common and easier to create, but definition lists work better on mobile and tablet devices.
 
 <img src="images/kindle-table-surfreport.png" />
 
 `beach`
 :  The beach you selected based on the beach ID in the request. The beach name is the official name as described in the National Park Service Geodatabase.
+:  String
 
 `{day}`
 :  The day of the week selected. A maximum of 3 days get returned in the response.
+:  String
 
 `{time}`
 :  The time for the conditions. This item is only included if you include a time parameter in the request.
+:  String
 
 <span class="muted"><code>{day}/{time}</code></span>/tide
 :  The level of tide at the beach for a specific day and time. Tide is the distance inland that the water rises to, and can be a positive or negative number. When the tide is out, the number is negative. When the tide is in, the number is positive. The 0 point reflects the line when the tide is neither going in nor out but is in transition between the two states.

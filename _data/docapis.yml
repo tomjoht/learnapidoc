@@ -81,7 +81,7 @@ folders:
   - title: "Step 4: Request example (API ref tutorial)"
     jurl: /docapis_doc_sample_requests.html
 
-  - title: "Step 5: Response example (API ref tutorial)"
+  - title: "Step 5: Response example and schema (API ref tutorial)"
     jurl: /docapis_doc_sample_responses.html
 
   - title: "Step 6: Status and error codes (API ref tutorial)"
