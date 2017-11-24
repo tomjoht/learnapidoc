@@ -149,7 +149,7 @@ Here's what mine looks like:
 
 <h2>Sample response</h2>
 
-The following is a sample response from the <code>surfreport/{beachId}</code> endpoint:
+<p>The following is a sample response from the <code>surfreport/{beachId}</code> endpoint:</p>
 
 <pre class="json">
 {
@@ -244,37 +244,44 @@ The following is a sample response from the <code>surfreport/{beachId}</code> en
 
 {% elsif site.format == "kindle" %}
 
-{: .note}
-Tables don't display well on Kindle devices, so I've converted them into definition lists in this course. However, here I've also included an image of the table. Tables are more common and easier to create, but definition lists work better on mobile and tablet devices.
+<p class="note">Tables don't display well on Kindle devices, so I've converted them into definition lists in this course. However, here I've also included an image of the table. Tables are more common and easier to create, but definition lists work better on mobile and tablet devices.</p>
 
 <img src="images/kindle-table-surfreport.png" />
 
-`beach`
+<dl style="margin-top: 20px; margin-bottom: 20px;" markdown="block">
+<code>beach</code>
 :  The beach you selected based on the beach ID in the request. The beach name is the official name as described in the National Park Service Geodatabase.
 :  String
 
-`{day}`
+<code>{day}</code>
 :  The day of the week selected. A maximum of 3 days get returned in the response.
-:  String
+:  Object
 
-`{time}`
+<code>{time}</code>
 :  The time for the conditions. This item is only included if you include a time parameter in the request.
 :  String
 
-<span class="muted"><code>{day}/{time}</code></span>/tide
+<code><span class="muted">{day}/{time}</span>/tide</code>
 :  The level of tide at the beach for a specific day and time. Tide is the distance inland that the water rises to, and can be a positive or negative number. When the tide is out, the number is negative. When the tide is in, the number is positive. The 0 point reflects the line when the tide is neither going in nor out but is in transition between the two states.
+:  Integer
 
-<span class="muted"><code>{day}/{time}</code></span>/wind
+<code><span class="muted">{day}/{time}</span>/wind</code>
 :  The wind speed at the beach, measured in knots (nautical miles per hour). Wind affects the surf height and general wave conditions. Wind speeds of more than 15 knots make surf conditions undesirable, since the wind creates white caps and choppy waters
+:  Integer
 
-<span class="muted"><code>{day}/{time}</code></span>/watertemp
+<code><span class="muted">{day}/{time}</span>/watertemp</code>
 :  The temperature of the water, returned in Farenheit or Celsius depending upon the units you specify. Water temperatures below 70 F usually require you to wear a wetsuit. With temperatures below 60, you will need at least a 3mm wetsuit and preferably booties to stay warm.
+:  Integer
 
-<span class="muted"><code>{day}/{time}</code></span>/surfheight
+<code><span class="muted">{day}/{time}</span>/surfheight</code>
 :  The height of the waves, returned in either feet or centimeters depending on the units you specify. A surf height of 3 feet is the minimum size needed for surfing. If the surf height exceeds 10 feet, it is not safe to surf.
+:  Integer
 
-<span class="muted"><code>{day}/{time}</code></span>/recommendation
+<code><span class="muted">{day}/{time}</span>/recommendation</code>
 :  An overall recommendation based on a combination of the various factors (wind, watertemp, surfheight). Three responses are possible: (1) &quot;Go surfing!&quot;, (2) &quot;Surfing conditions are okay, not great&quot;, and (3) &quot;Not a good day for surfing.&quot; Each of the three factors is scored with a maximum of 33.33 points, depending on the ideal for each element. The three elements are combined to form a percentage. 0% to 59% yields response 3, 60% - 80% and below yields response 2, and 81% to 100% yields response 3.
+:  String
+
+</dl>
 
 {% endif %}
 
