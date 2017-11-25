@@ -9,6 +9,8 @@ weight: 3.11
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
+redirect_from:
+- http://idratherbewriting.com/learnapidoc/docapis_doc_methods.html
 ---
 
 {% include workflow_map.html step="2" map="content/reference_doc_map.html"  %}
@@ -88,13 +90,9 @@ If the endpoints are mostly the same, consolidating them on a single page could 
 {: .tip}
 In a later section on [design patterns](pubapis_design_patterns.html), I explore how [long pages](pubapis_design_patterns.html#longish_pages) are common pattern with developer docs, in part because they make content easily findable for developers using Ctrl + F.
 
-## Your turn to try: Write the endpoint definition for surfreport
+## Create the resource URLs and methods section for surfreport
 
-{% include activity.html %}
-
-List out the endpoint definition and method for the surfreport/{beachId} endpoint.
-
-Here's my approach:
+Let's create the resource URLs and methods section for our [fictitious surfrefport endpoint](docapis_new_endpoint_to_doc.html). Here's my approach:
 
 <div class="docSample">
 
@@ -104,3 +102,7 @@ Here's my approach:
 </div>
 
 (There's not much to see here -- endpoints look best when styled attractively with CSS.)
+
+## Next steps
+
+Now that we've described the resource and listed the resource URLs and methods, it's time to tackle one of the most important parts of an API reference topic: the [parameters section](docapis_doc_parameters.html).

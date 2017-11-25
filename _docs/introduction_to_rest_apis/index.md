@@ -40,13 +40,11 @@ In this course, after you practice using an API like a developer, you'll then sh
 As a technical writer, you'll tackle each element of a reference topic in REST API documentation:
 
 1. [Resource descriptions](docapis_resource_descriptions.html)
-2. [Resource URL](docapis_doc_resource_urls_and_methods.html)
-3. [Methods](docapis_doc_methods.html)
-4. [Parameters](docapis_doc_parameters.html)
-5. [Request example](docapis_doc_sample_requests.html)
-6. [Response example](docapis_doc_sample_responses.html)
-7. [Status and error codes](docapis_doc_status_codes.html)
-8 [Code samples](docapis_doc_code_samples.html)
+2. [Resource URLs and methods](docapis_doc_resource_urls_and_methods.html)
+3. [Parameters](docapis_doc_parameters.html)
+4. [Request example](docapis_doc_sample_requests.html)
+5. [Response example](docapis_doc_sample_responses_and_schema.html)
+6. [Status and error codes](docapis_doc_status_codes.html)
 
 Diving into these sections will give you a solid understanding of how to document REST APIs. You'll also learn how to document the [non-reference sections for an API](docnonref.html), such as the [getting started](docapis_doc_getting_started_section.html) and request [authorization](docapis_more_about_authorization.html) sections.
 

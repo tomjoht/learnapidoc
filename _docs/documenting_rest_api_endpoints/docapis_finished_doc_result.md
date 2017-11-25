@@ -1,10 +1,6 @@
 ---
 title: Putting it all together
 permalink: /docapis_finished_doc_result.html
-categories:
-- api-doc
-keywords:
-course: "Documenting REST APIs"
 weight: 3.7
 sidebar: docapis
 section: docendpoints
@@ -24,13 +20,9 @@ I chose to format mine in Markdown syntax in a text editor. Here's my example.
 
 <p><code>{beachId}</code> refers to the ID for the beach you want to look up. All Beach ID codes are available from our site.</p>
 
-<h2 id="endpoint-definition">Endpoint definition</h2>
+<h2 id="endpoint-definition">Resource URL and method</h2>
 
-<p><code>surfreport/{beachId}</code></p>
-
-<h2 id="http-method">HTTP method</h2>
-
-<p><span class="label label-primary">GET</span> </p>
+<p><span class="label label-primary">GET</span> <code>surfreport/{beachId}</code></p>
 
 <h2 id="parameters">Parameters</h2>
 {% if site.format == "kindle" %}
@@ -89,40 +81,6 @@ I chose to format mine in Markdown syntax in a text editor. Here's my example.
 curl --get --include 'https://simple-weather.p.mashape.com/surfreport/123?units=imperial&days=1&time=1433772000' -H 'X-Mashape-Key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p' -H 'Accept: application/json'
 </pre>
 
-<h2 id="sample-response">Sample response</h2>
-
-<pre class="json">
-{
-    "surfreport": [
-        {
-            "beach": "Santa Cruz",
-            "monday": {
-                "1pm": {
-                    "tide": 5,
-                    "wind": 15,
-                    "watertemp": 80,
-                    "surfheight": 5,
-                    "recommendation": "Go surfing!"
-                },
-                "2pm": {
-                    "tide": -1,
-                    "wind": 1,
-                    "watertemp": 50,
-                    "surfheight": 3,
-                    "recommendation": "Surfing conditions are okay, not great."
-                },
-                "3pm": {
-                    "tide": -1,
-                    "wind": 10,
-                    "watertemp": 65,
-                    "surfheight": 1,
-                    "recommendation": "Not a good day for surfing."
-                }
-            }
-        }
-    ]
-}
-</pre>
 
 <h2>Sample response</h2>
 
@@ -155,6 +113,7 @@ curl --get --include 'https://simple-weather.p.mashape.com/surfreport/123?units=
                     "surfheight": 1,
                     "recommendation": "Not a good day for surfing."
                 }
+                ...
             }
         }
     ]
@@ -291,79 +250,6 @@ curl --get --include 'https://simple-weather.p.mashape.com/surfreport/123?units=
 </tr>
 </tbody></table>
 {% endif %}
-
-<h2 id="code-example">Code example</h2>
-
-<p>The following code samples shows how to use the surfreport endpoint to get the surf height for a specific beach. </p>
-
-{% comment %}  
-<pre class="html">
-<!DOCTYPE html>
-<head>
-<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script>
-var settings = {
-  "async": true,
-  "crossDomain": true,
-  "dataType": "json",
-  "url": "https://simple-weather.p.mashape.com/surfreport/25?days=1&units=metric",
-  "method": "GET",
-  "headers": {
-    "accept": "application/json",
-    "x-mashape-key": "APIKEY"
-  }
-}
-
-$.ajax(settings).done(function (response) {
-  console.log(response);
-  $("#surfheight").append(response.query.results.channel.surf.height);
-});
-</script>
-</head>
-<body>
-<h2>Surf Height</h2>
-<div id="surfheight"></div>
-</body>
-</html>
-</pre>
-{% endcomment %}
-
-<pre>
-&lt;!DOCTYPE html&gt;
-&lt;head&gt;
-&lt;script src=&quot;http://code.jquery.com/jquery-2.1.1.min.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;
-var settings = {
-  &quot;async&quot;: true,
-  &quot;crossDomain&quot;: true,
-  &quot;dataType&quot;: &quot;json&quot;,
-  &quot;url&quot;: &quot;https://simple-weather.p.mashape.com/surfreport/25?days=1&amp;units=metric&quot;,
-  &quot;method&quot;: &quot;GET&quot;,
-  &quot;headers&quot;: {
-    &quot;accept&quot;: &quot;application/json&quot;,
-    &quot;x-mashape-key&quot;: &quot;APIKEY&quot;
-  }
-}
-
-$.ajax(settings).done(function (response) {
-  console.log(response);
-  $(&quot;#surfheight&quot;).append(response.query.results.channel.surf.height);
-});
-&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;h2&gt;Surf Height&lt;/h2&gt;
-&lt;div id=&quot;surfheight&quot;&gt;&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</pre>
-
-<p>In this example, the <code>ajax</code> method from jQuery is used because it allows us to load a remote resource asynchronously.</p>
-<p>In the request, you submit the authorization through the header rather than directly in the endpoint path. The endpoint limits the days returned to 1 in order to increase the download speed.</p>
-
-<p>For demonstration purposes, the response is assigned to the <code>response</code> argument of the <code>done</code> method, and then written out to the <code>surfheight</code> tag on the page.</p>
-
-<p>We're just getting the surf height, but there's a lot of other data you could choose to display.</p>
 </div>
 
 ## Structure and templates

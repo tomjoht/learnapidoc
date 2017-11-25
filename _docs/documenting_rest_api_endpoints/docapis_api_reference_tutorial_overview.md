@@ -13,9 +13,9 @@ In the [new endpoint to document](docapis_new_endpoint_to_doc.html), you saw inf
 * TOC
 {:toc}
 
-## Seven common sections in REST API docs
+## Six common sections in REST API docs
 
-Almost all API reference topics include these 8 sections:
+Almost all API reference topics include these 6 sections:
 
 [1. Resource description](docapis_resource_descriptions.html)
 :  {{site.data.apirefsections.resource_description.def}}
@@ -29,14 +29,11 @@ Almost all API reference topics include these 8 sections:
 [4. Request example](docapis_doc_sample_requests.html)
 : {{site.data.apirefsections.request_example.def}}
 
-[5. Response example](docapis_doc_sample_responses.html)
+[5. Response example](docapis_doc_sample_responses_and_schema.html)
 : {{site.data.apirefsections.resource_description.def}}
 
 [6. Status and error codes](docapis_doc_status_codes.html)
 : {{site.data.apirefsections.status_error_codes.def}}
-
-[7. Code samples](docapis_doc_code_samples.html)
-: {{site.data.apirefsections.code_samples.def}}
 
 The topics include a workflow map to help guide and orient you each step of the way.
 
@@ -47,40 +44,22 @@ The topics include a workflow map to help guide and orient you each step of the 
 {% endif %}
 </div>
 
-When you're finished, the end result will look [like this](docapis_finished_doc_result.html).
-
-{% include random_ad.html %}
-
-## Create the basic structure for the endpoint documentation
-
-{% include activity.html %}
-
-Open up a new text file and create sections for each of these elements.
-
 Each of your endpoints should include these same sections, in the same order and styling for predictability.
 
 {: .tip}
 A common template in your documentation helps increase consistency and familiarity with how users consume the information.
 
-Here's a sample:
-
-```markdown
-## Resource description
-
-## Resource URLs and methods
-
-## Parameters
-
-## Request example
-
-## Response example
-
-## Status and error codes
-
-## Code samples
-```
+When you're finished, the end result will look [like this](docapis_finished_doc_result.html).
 
 {: .note}
 Although there are automated ways to publish API docs, we're focusing on content rather than tools in this section. For the sake of simplicity, try just using a text editor (such as [Sublime Text](https://www.sublimetext.com/)) and [Markdown syntax](https://help.github.com/articles/github-flavored-markdown). In the [Publishing your API documentation section](publishingapis.html), we'll jump into publishing tools and methods.
 
-You now have a list of sections to complete, so let's get going with the first section: [Resource description](docapis_resource_descriptions.html).
+{% include random_ad.html %}
+
+## Running example of API reference documentation
+
+In this API reference tutorial, I conclude each tutorial step with an example of how to provide the documentation for our [fictitious surfreport endpoint with the Mashape API](docapis_new_endpoint_to_doc.html). I do this to provide a more real, step-by-step walk-through for writing documentation. After you complete the tutorial, there's an activity to [critique or create your own API reference topic](docapis_api_reference_activity.html).
+
+## Next steps
+
+You now have an idea of the tutorial, let's get going with the first section: [Resource description](docapis_resource_descriptions.html).

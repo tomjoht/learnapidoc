@@ -82,16 +82,16 @@ folders:
     jurl: /docapis_doc_sample_requests.html
 
   - title: "Step 5: Response example and schema (API ref tutorial)"
-    jurl: /docapis_doc_sample_responses.html
+    jurl: /docapis_doc_sample_responses_and_schema.html
 
   - title: "Step 6: Status and error codes (API ref tutorial)"
     jurl: /docapis_doc_status_codes.html
 
-  - title: "Step 7: Code samples (API ref tutorial)"
-    jurl: /docapis_doc_code_samples.html
-
-  - title: Putting it all together
+  - title: "Putting it all together"
     jurl: /docapis_finished_doc_result.html
+
+  - title: "Activity: Critique or create an API reference topic"
+    jurl: /docapis_api_reference_activity.html
 
 - title: Testing your API documentation
   jurl: /testingdocs.html
@@ -214,13 +214,13 @@ folders:
   - title: "Step 8: externaldocs object (OpenAPI tutorial)"
     jurl: /pubapis_openapi_step8_externaldocs_object.html
 
-  - title: "OpenAPI specification activity: Create your own specification document"
+  - title: "Activity: Create an OpenAPI specification document"
     jurl: /pubapis_openapi_activity.html
 
   - title: Swagger UI tutorial
     jurl: /pubapis_swagger.html
 
-  - title: "Swagger UI activity: Create your own Swagger UI docs"
+  - title: "Activity: Create your own Swagger UI display"
     jurl: /pubapis_swagger_ui_activity.html
 
   - title: Swagger UI Demo

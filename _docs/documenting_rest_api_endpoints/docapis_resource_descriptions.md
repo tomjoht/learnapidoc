@@ -132,13 +132,23 @@ To say that you could use the rewards resource wasn't always specific enough, be
 
 It can get awkward referring to the resource by its resource URL. For example, "When you call `/users/{userId}/rewards/`, you get a list of all rewards. To get a specific reward for a specific mission for a specific user, the `/users/{userId}/rewards/{missionId}` resource URL takes several parameters..." The longer the resource URL, the more difficult the reference. These kinds of descriptions would be more common in the [non-reference sections](docnonref.html) sections of your documentation.
 
+## Recognize the difference between reference docs versus user guides
+
+Given how brief the user description is, one thing to keep in mind is the difference between reference docs and user guides/tutorials:
+
+* **Reference guides**: Concise, bare-bones information that developers can quickly reference.
+* **User guides/tutorials**: More elaborate detail about everything, including step-by-step instructions, code samples, concepts, and procedures.
+
+Although the description in an API reference topic provides a 1-3 sentence summary of the information the resource contains, you might expand on this with much greater detail in the user guide. You could link the reference description to the places in the user guide where you expand on it in more detail.
+
+{: .tip}
+The description of the resource is likely something you'll re-use in different places: product overviews, tutorials, code samples, quick references, etc. As a result, put a lot of effort into crafting it. Consider storing the description in a re-usable snippet in your authoring tool so that you can list it without resorting to copy/paste methods in your [quick start guide](docapis_doc_quick_reference.html).
+
 ## Describe the surfreport resource
 
 {% include activity.html %}
 
-Review the [surf report wiki page](docapis_new_endpoint_to_doc.html) containing the information about the resource, and try to describe the resource in the length of one or two tweets (140 characters).
-
-Here's how I went about creating the resource description. If you want to try crafting your own description of the resource first, and then compare yours to mine, go for it. However, you can also just follow along here.
+Let's review the [surf report wiki page](docapis_new_endpoint_to_doc.html) (which contains the information about the resource) and try to describe the resource in the length of one or two tweets (140 characters). Here's how I went about creating the resource description.
 
 <div class="docSample">
 
@@ -149,13 +159,11 @@ Here's how I went about creating the resource description. If you want to try cr
 <p><code>{beachId}</code> refers to the ID for the beach you want to look up. All Beach ID codes are available from our site.</p>
 </div>
 
-## Critique the Mashape Weather API descriptions
-
 {% include activity.html %}
 
 Look over the descriptions of the three resources in the weather API. They're pretty short. For example, the `aqi` resource just says "Air Quality Index."
 
-These descriptions are too short, but developers like concision. If I were shortening the surfreport description, I might write:
+Although these descriptions are short, developers like concision. If I were shortening the surfreport description, I might write:
 
 <div class="docSample">
 <p><b>/surfreport/{beachId}</b></p>
@@ -171,18 +179,6 @@ With Aeris Weather, the description for the [forecasts endpoint](http://www.aeri
 <p>The forecasts endpoint/data set provides the core forecast data for US and international locations. Forecast information is available in daily, day/night intervals, as well as, custom intervals such as 3 hour or 1 hour intervals.</p>
 </div>
 
-In summary, the description provides a 1-3 sentence summary of the information the resource contains.
+## Next steps
 
-## Recognize the difference between reference docs versus user guides
-
-Given how brief the user description is, one thing to keep in mind is the difference between reference docs and user guides/tutorials:
-
-* **Reference guides**: Concise, bare-bones information that developers can quickly reference.
-* **User guides/tutorials**: More elaborate detail about everything, including step-by-step instructions, code samples, concepts, and procedures.
-
-With the description of surfreport, you might expand on this with much greater detail in the user guide. But in the reference guide, just provide a short description.
-
-You could link the description to the places in the user guide where you expand on it in more detail. But since developers often write API documentation, they sometimes never write the user guide (as is the case with the Weather API in Mashape).
-
-{: .tip}
-The description of the resource is likely something you'll re-use in different places: product overviews, tutorials, code samples, quick references, etc. As a result, put a lot of effort into crafting it. Consider storing the description in a re-usable snippet in your authoring tool so that you can list it without resorting to copy/paste methods in your [quic start guide](docapis_doc_quick_reference.html).
+Now it's time to list out the [resource URLs and methods](docapis_doc_resource_urls_and_methods.html) for the resource. (Generally the resource, resource URL, and method are tightly packaged, but I've separated them out into two steps here.)

@@ -231,11 +231,7 @@ If you have relatively simple parameters, your choice won't matter that much. Bu
 
 ## Construct a table to list the surfreport parameters
 
-{% include activity.html %}
-
-For our new surfreport endpoint, look through the parameters available and create a table describing the parameters.
-
-Here's what my table or definition list looks like:
+For our new surfreport endpoint, let's look through the parameters available and create a table describing the parameters. Here's what my table or definition list looks like:
 
 {% if site.format == "kindle" %}
 
@@ -313,3 +309,7 @@ Even if you use Markdown for docs, you might consider using HTML syntax with tab
     50% Complete (info)
   </div>
 </div>
+
+## Next steps
+
+Now that we've documented the parameters, it's time to show a [sample request](docapis_doc_sample_requests.html) for the resource.

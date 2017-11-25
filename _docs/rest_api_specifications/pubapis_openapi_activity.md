@@ -1,5 +1,5 @@
 ---
-title: "OpenAPI specification activity: Create your own specification document"
+title: "Activity: Create an OpenAPI specification document"
 permalink: /pubapis_openapi_activity.html
 course: "Documenting REST APIs"
 sidebar: docapis

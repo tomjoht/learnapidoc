@@ -96,6 +96,7 @@ https://simple-weather.p.mashape.com/surfreport/123?&days=2&units=metrics&hour=1
                     "surfheight": 3,
                     "recommendation": "Surfing conditions are okay, not great"
                 }
+                ...
 
             }
         }
@@ -118,4 +119,6 @@ https://simple-weather.p.mashape.com/surfreport/123?&days=2&units=metrics&hour=1
 </div>
 {% endraw %}
 
-## Essential sections in REST API documentation
+## Next steps
+
+Jump into the [API reference tutorial overview](docapis_api_reference_tutorial_overview.html) for an overview of the 7 steps we'll cover in creating the API reference topic for this new endpoint.

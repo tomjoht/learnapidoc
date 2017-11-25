@@ -23,7 +23,7 @@ path1: /docendpoints.html
 
 ## Example of a request
 
-The following example shows a request example from the [Callfire API](https://developers.callfire.com/docs.html#pagination):
+The following example shows a sample request from the [Callfire API](https://developers.callfire.com/docs.html#pagination):
 
 <a href="https://developers.callfire.com/docs.html#pagination"><img src="images/callfireapirequestexample.png"/></a>
 
@@ -36,8 +36,8 @@ curl -u "username:password" -H "Content-Type:application/json" -X GET "https://a
 curl is a common format to show requests for several reasons:
 
 * curl is language agnostic, so it's not specific to one particular programming language.
-* curl shows the header information that is required in the request.
-* curl also shows the method used with the request, and other parameters.
+* curl shows the header information required in the request.
+* curl shows the method used with the request, and other parameters.
 
 Here's another example of a curl request in the Parse API:
 
@@ -59,25 +59,87 @@ If you have a lot of parameters, it might make sense to include several request 
 https://api.citygridmedia.com/content/places/v2/search/where
 ```
 
-However, there are [literarlly 17 possible query string parameters](http://docs.citygridmedia.com/display/citygridv2/Places+API#PlacesAPI-WhereSearchRequest) you can use with this endpoint. As a result, the documentation includes several sample requests show the parameters used with the endpoint:
+However, there are [literarily 17 possible query string parameters](http://docs.citygridmedia.com/display/citygridv2/Places+API#PlacesAPI-WhereSearchRequest) you can use with this resource URL. As a result, the documentation includes several sample requests show various parameter combinations:
 
 <a href="http://docs.citygridmedia.com/display/citygridv2/Places+API" class="noExtIcon"><img src="images/search_usage_examples.png" alt="CityGrid Places API example" /></a>
 
-These examples show several common combinations of the parameters. Adding multiple requests as samples  makes sense when the parameters wouldn't usually be used together. For example, there are few cases where you might actually include all 17 parameters in the same request, so any sample will be limited in what it can show.
+Adding multiple request examples makes sense when the parameters wouldn't usually be used together. For example, there are few cases where you might actually include all 17 parameters in the same request, so any sample will be limited in what it can show.
 
-This example shows "Find hotels in Boston, viewing results 1-5 in alphabetical order""
+This example shows how to "Find hotels in Boston, viewing results 1-5 in alphabetical order":
 
 ```
 https://api.citygridmedia.com/content/places/v2/search/where?what=hotels&where=boston,ma&page=1&rpp=5&sort=alpha&publisher=test&format=json
 ```
 
-If you click the link, you can see the response directly.
+If you click the link, you can see the response directly. In the [responses topic](docapis_doc_sample_responses_and_schema.html#dynamic_responses), I get into more details about dynamically showing the response when users click the request.
 
 How many different requests and responses should you show? There's probably no easy answer, but probably no more than a few. You decide what makes sense for your API. Users usually understand the pattern after a few examples.
 
 {% include random_ad.html %}
 
-In the [responses topic](docapis_doc_sample_responses.html#dynamic_responses), I get into more details about dynamically showing the response when users click the request.
+## Requests in various languages
+
+One aspect of REST APIs that facilitates widespread adoption is that they aren't tied to a specific programming language. Developers can code their applications in any language, from Java to Ruby to JavaScript, Python, C#, Node JS, or something else. As long as they can make an HTTP web request in that language, they can use the API. The response from the web request will contain the data in either JSON or XML.
+
+Because you can't entirely know which language your end users will be developing in, it's kind of fruitless to try to provide code samples in every language. Many APIs just show the format for submitting requests and a sample response, and the authors will assume that developers will know how to submit HTTP requests in their particular programming language.
+
+However, some APIs do show simple requests in a variety of languages. Here's an example from Twilio:
+
+<a href="https://www.twilio.com/docs/api/rest/making-calls" class="noExtIcon"><img src="images/twiliocodeexamples.png" alt="Twilio code samples" /></a>
+
+You can select which language you want the sample request in: C#, curl, Java, Node.js, PHP, Python, or Ruby.
+
+Here's another example from the Clearbit API:
+
+<a href="https://clearbit.com/docs?javascript#enrichment-api-combined-api" class="noExtIcon"><img src="images/clearbitrequestexamples.png" alt="Clearbit code samples" /></a>
+
+You can see the request in Shell (curl), Ruby, Node, or Python. Developers can easily copy the needed code into their applications, rather than figuring out how to make the translate the curl request into a particular programming language.
+
+Providing a variety of requests like this, often displayed through [tabs](https://getbootstrap.com/docs/3.3/javascript/#tabs), helps make your API easier to implement. It's even better if you can automatically populate the API keys with the actual user's API keys based on their logged-in profile.
+
+However, don't feel so intimidated by this smorgasbord of code samples. Some API doc tools (such as [Readme.io](pubapis_other_tool_options.html#readmeio) or [SwaggerHub](pubapis_swaggerhub_smartbear.html)) can actually automatically generate these code samples because the patterns for making REST requests in different programming languages follow a common template.
+
+## Auto-generating code samples
+
+If you're not using an authoring tool that auto-generates code examples, and you want to provide these code snippets, you can auto-generate code samples from both Postman and Paw, if desired.
+
+[Paw](https://paw.cloud/) (for Mac) lets you export your request into nearly every conceivable language:
+
+<a href="https://luckymarmot.com/paw/extensions/" class="noExtIcon"><img src="images/pawcodegenerators.png" alt="Paw code generator" /></a>
+
+After you have a request configured (a process similar to [Postman](docapis_postman.html)), you can generate a code snippet by going to **File > Export Request**.
+
+The Postman app also has the ability to generate code snippets in a similar way. I covered this process in an earlier tutorial on [using the JSON from the response payload](docapis_json_console.html). In Postman, after you configure your request, click the **Code** link.
+
+<img src="images/postmangeneratecodesnippet.png" class="medium" alt="Generate code snippet" />
+
+Then select the language you want:
+
+<img src="images/postmancodesnippet.png" class="medium" alt="JavaScript Ajax code snippet" />
+
+{: .note}
+Although these code generators are probably helpful, they may or may not work for your API. Always review code samples with developers. In most cases, developers supply the code samples for the documentation, and technical writers briefly comment on the code samples.
+
+## Generate a JavaScript code sample from Postman
+
+{% include activity.html %}
+{: .note}
+
+In this example, let's generate JavaScript code snippet from Postman:
+
+1.  Configure a weatherdata request in Postman (or select one you've saved).
+2.  Below the Send button, click the **Generate Code Snippets** button.
+3.  In the dialog box that appears, browse the available code samples using the drop-down menu. Note how your request data is implemented into each of the different code sample templates.
+4.  Select the **JavaScript > jQuery AJAX** code sample:
+5.  Copy the content by clicking the **Copy** button.
+
+## SDKs provide tooling for APIs
+
+A lot of times, developers will create an SDK (software development kit) that accompanies a REST API. The SDK helps developers implement the API using specific tooling.
+
+For example, at one company I worked at, we had both a REST API and a JavaScript SDK. Because JavaScript was the target language developers were working in, the company developed a JavaScript SDK to make it easier to work with REST using JavaScript. You could submit REST calls through the JavaScript SDK, passing a number of parameters relevant to web designers.
+
+An SDK is any kind of tooling that makes it easier to work with your API. It's extremely common for a company to provide a (language agnostic REST API), and then to develop an SDK that makes it easy to implement the API in the primary language they expect users to implement the API in. As such, peppering your sample requests with these small request snippets in other languages probably isn't that important, since the SDK provides an easier implementation. If you have an SDK, you'll want to make more detailed code samples showing how to use the SDK.
 
 ## API explorers provide interactivity with your own data
 
@@ -118,11 +180,7 @@ For a tutorial on how to create your own API explorer functionality, see the [Sw
 
 ## Document the sample request with the surfreport/{beachId} endpoint
 
-{% include activity.html %}
-
-Let's return to the `surfreport/{beachId}` endpoint in our [sample scenario](docapis_new_endpoint_to_doc.html). Create a request example for it.
-
-Here's mine:
+Let's return to the `surfreport/{beachId}` endpoint in our [sample scenario](docapis_new_endpoint_to_doc.html) and create a request example for it:
 
 <div class="docSample">
 
@@ -132,3 +190,7 @@ Here's mine:
 curl --get --include 'https://simple-weather.p.mashape.com/surfreport/123?units=imperial&days=1&time=1433772000' -H 'X-Mashape-Key: APIKEY' -H 'Accept: application/json'
 </pre>
 </div>
+
+## Next steps
+
+Now that we've created a sample request, the next steps naturally follow: include a [sample response](docapis_doc_sample_responses_and_schema.html) that corresponds with the same request. We'll also document the model or schema of the response in general.

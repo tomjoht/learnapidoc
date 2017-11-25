@@ -3,8 +3,6 @@ title: "Step 6: Status and error codes (API reference tutorial)"
 permalink: /docapis_doc_status_codes.html
 redirect_from:
 - http://idratherbewriting.com/learnapidoc/docapis_doc_response_codes.html
-keywords:
-course: "Documenting REST APIs"
 weight: 3.51
 sidebar: docapis
 section: docendpoints
@@ -166,3 +164,7 @@ A section on troubleshooting could list possible error messages users get when t
 * A required parameter is absent from the endpoint
 
 Where possible, document the exact text of the error in the documentation so that it easily surfaces in searches.
+
+## Next steps
+
+Now that you've completed the [API reference tutorial](docapis_api_reference_tutorial_overview.html), you're ready to either critique or create your own API reference topic. See the next topic, [Activity: Critique or create an API reference topic](docapis_api_reference_activity.html). 

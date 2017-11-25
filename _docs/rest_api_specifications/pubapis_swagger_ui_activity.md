@@ -1,5 +1,5 @@
 ---
-title: "Swagger UI activity: Create your own Swagger UI docs"
+title: "Activity: Create your own Swagger UI display"
 permalink: /pubapis_swagger_ui_activity.html
 course: "Documenting REST APIs"
 sidebar: docapis

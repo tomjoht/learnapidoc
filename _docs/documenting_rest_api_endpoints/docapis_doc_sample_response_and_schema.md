@@ -1,12 +1,14 @@
 ---
 title: "Step 5: Response example and schema (API reference tutorial)"
-permalink: /docapis_doc_sample_responses.html
+permalink: /docapis_doc_sample_responses_and_schema.html
 keywords:
 course: "Documenting REST APIs"
 weight: 3.5
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
+redirect_from:
+- http://idratherbewriting.com/learnapidoc/docapis_doc_sample_responses.html
 ---
 
 {% include workflow_map.html step="5" map="content/reference_doc_map.html"  %}
@@ -139,11 +141,7 @@ This approach works well for GET requests that return public information. Howeve
 
 ## Create a sample response in your surfreport/{beachId} endpoint
 
-{% include activity.html %}
-
-For the `surfreport/{beachId}` endpoint that we've been exploring in our [sample API scenario](docapis_new_endpoint_to_doc.html), create a section that shows the response example and a response schema. Look over the response to make sure it shows what it should.
-
-Here's what mine looks like:
+For the `surfreport/{beachId}` endpoint that we've been exploring in our [sample API scenario](docapis_new_endpoint_to_doc.html), let's create a section that shows the response example and a response schema. Here's my approach for these sections:
 
 <div class="docSample">
 
@@ -178,6 +176,7 @@ Here's what mine looks like:
                     "surfheight": 1,
                     "recommendation": "Not a good day for surfing."
                 }
+                ...
             }
         }
     ]
@@ -285,5 +284,9 @@ Here's what mine looks like:
 
 {% endif %}
 
-<small>*Because this is a fictitious endpoint, I'm making the descriptions up.</small>
+<small>\*Because this is a fictitious endpoint, I'm making the descriptions up.</small>
 </div>
+
+## Next steps
+
+Now that we've documented the sample response and schema, it's time to document the [status and error codes](docapis_doc_status_codes.html) related to the resource.

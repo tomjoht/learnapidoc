@@ -42,6 +42,7 @@ Here's an example of the difference:
 * **why**: Use the `ajax` method from jQuery because it allows cross-origin resource sharing (CORS) for the weather resources. In the request, you submit the authorization through the header rather than including the API key directly in the endpoint path.
 
 ## Explain your company's code, not general coding
+
 Developers unfamiliar with common code not related to your company (for example, the `.ajax()` method from jQuery) should consult outside sources for tutorials about that code. You shouldn't write your own version of another service's documentation. Instead, focus on the parts of the code unique to your company. Let the developer rely on other sources for the rest (feel free to link to other sites).
 
 ## Keep code samples simple
@@ -81,3 +82,261 @@ Remember that each code sample you provide needs to be tested and maintained. Wh
 Getting into code samples leads us more toward user guide tasks than reference tasks. However, keep in mind that code samples are a bear to maintain. When your API pushes out a new release, will you check all the code samples to make sure the code doesn't break with the new API (this is called regression testing by QA).
 
 What happens if new features require you to change your code examples? The more code examples you have, the more maintenance they require.
+
+{% comment %}
+## Implement the JavaScript code snippet
+
+You usually don't need to show the code sample on a working HTML file, but if you want to show users code they can make work in their own browsers, you can do so.
+
+1.  Create a new HTML file with the basic HTML elements:
+
+    ```html
+    <!DOCTYPE html>
+    <head>
+    <title>My sample page</title>
+    </head>
+    <body>
+
+    </body>
+    </html>
+    ```
+
+2.  Insert the JavaScript code you copied inside some `script` tags inside the `head`:
+
+    ```html
+    <!DOCTYPE html>
+    <head>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+    var settings = {
+      "async": true,
+      "crossDomain": true,
+      "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&lng=-121.955236",
+      "method": "GET",
+      "headers": {
+        "accept": "application/json",
+        "x-mashape-key": "APIKEY"
+      }
+    }
+
+    $.ajax(settings).done(function (response) {
+      console.log(response);
+    });
+    </script>
+    </head>
+    <body>
+
+    </body>
+    </html>
+    ```
+
+3.  The Mashape Weather API requires the `dataType` parameter, which Postman doesn't automatically include. Add `"dataType": "json",` in the list of `settings`:
+
+    ```html
+    <!DOCTYPE html>
+    <head>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+    var settings = {
+      "async": true,
+      "crossDomain": true,
+      "dataType": "json",
+      "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&lng=-121.955236",
+      "method": "GET",
+      "headers": {
+        "accept": "application/json",
+        "x-mashape-key": "APIKEY"
+      }
+    }
+
+    $.ajax(settings).done(function (response) {
+      console.log(response);
+    });
+    </script>
+    </head>
+    <body>
+    hello
+    </body>
+    </html>
+    ```
+
+4. This code uses the `ajax` method from jQuery. The parameters are defined in a variable called `settings` and then passed into the method. The `ajax` method will make the request and assign the response to the `done` method's argument (`response`). The `response` object will be logged to the console.
+5. Open the file up in your Chrome browser.
+6. Open the JavaScript Developer Console by going to **View > Developer > JavaScript Console**. Refresh the page.
+
+You should see the object logged to the console.
+
+<img src="images/consoleexamplefrompostman.png" alt="Object logged to the console" />
+
+{% include random_ad.html %}
+
+Let's say you wanted to pull out the `sunrise` time and append it to a tag on the page. You could do so like this:
+
+```html
+<!DOCTYPE html>
+<head>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script>
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "dataType": "json",
+  "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&lng=-121.955236",
+  "method": "GET",
+  "headers": {
+    "accept": "application/json",
+    "x-mashape-key": "APIKEY"
+  }
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+  $("#sunrise").append(response.query.results.channel.astronomy.sunrise);
+});
+</script>
+</head>
+<body>
+<h2>Sunrise time</h2>
+<div id="sunrise"></div>
+</body>
+</html>
+```
+
+This code uses the `append` method from jQuery to assign a value from the response object to the `sunrise` ID tag on the page.
+
+## General code samples
+
+Although you could provide general code samples for every language with every call, it's usually not done. Instead, there's often a page that shows how to work with the code in various languages. For example, with the Wunderground Weather API, they have a page that shows general code samples:
+
+<a href="http://www.wunderground.com/weather/api/d/docs?d=resources/code-samples&MR=1"><img src="images/wundergroundcodesamples.png" alt="Wunderground code samples" /></a>
+
+Although the Mashape Weather API doesn't provide a code sample in the Weather API page, Mashape as a platform provides a general code sample on their [Consume an API in JS](http://docs.mashape.com/javascript) page. The writers explain that you can consume the API with code on an HTML web page like this:
+
+<img src="images/mashapejsconsumption.png" alt="Consuming a REST API through JavaScript" />
+
+You already worked with this code earlier, so it shouldn't be new. It's mostly same code as the JavaScript snippet we just used, but here there's an error function defined, and the header is set a bit differently.
+
+
+## Create a code sample for the surfreport endpoint
+
+As a technical writer, add a code sample to the `surfreport/{beachId}` endpoint that you're documenting. Use the same code as above, and add a short description about why the code is doing what it's doing.
+
+Here's my approach:
+
+### Code example
+
+The following code samples shows how to use the surfreport endpoint to get the surf height for a specific beach.
+
+```html
+<!DOCTYPE html>
+<head>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script>
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "dataType": "json",
+  "url": "https://simple-weather.p.mashape.com/surfreport/25&days=1",
+  "method": "GET",
+  "headers": {
+    "accept": "application/json",
+    "x-mashape-key": "APIKEY"
+  }
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+  $("#surfheight").append(response.query.results.channel.surfheight);
+});
+</script>
+</head>
+<body>
+<h2>Surf Height</h2>
+<div id="surfheight"></div>
+</body>
+</html>
+```
+
+In this example, the `ajax` method from jQuery is used because it allows us to load a remote resource asynchronously.
+
+In the request, you submit the authorization through the header rather than directly in the endpoint path. The endpoint limits the days returned to 1 in order to increase the download speed.
+
+For demonstration purposes, the response is assigned to the `response` argument of the `done` method, and then written out to the `surfheight` tag on the page.
+
+We're just getting the surf height, but there's a lot of other data you could choose to display.
+
+You might not include a detailed code sample like this for just one endpoint, but including some kind of code sample is almost always helpful.
+
+<h2 id="code-example">Code example</h2>
+
+<p>The following code samples shows how to use the surfreport endpoint to get the surf height for a specific beach. </p>
+
+{% comment %}  
+<pre class="html">
+<!DOCTYPE html>
+<head>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script>
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "dataType": "json",
+  "url": "https://simple-weather.p.mashape.com/surfreport/25?days=1&units=metric",
+  "method": "GET",
+  "headers": {
+    "accept": "application/json",
+    "x-mashape-key": "APIKEY"
+  }
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+  $("#surfheight").append(response.query.results.channel.surf.height);
+});
+</script>
+</head>
+<body>
+<h2>Surf Height</h2>
+<div id="surfheight"></div>
+</body>
+</html>
+</pre>
+{% endcomment %}
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+&lt;script src=&quot;http://code.jquery.com/jquery-2.1.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+var settings = {
+  &quot;async&quot;: true,
+  &quot;crossDomain&quot;: true,
+  &quot;dataType&quot;: &quot;json&quot;,
+  &quot;url&quot;: &quot;https://simple-weather.p.mashape.com/surfreport/25?days=1&amp;units=metric&quot;,
+  &quot;method&quot;: &quot;GET&quot;,
+  &quot;headers&quot;: {
+    &quot;accept&quot;: &quot;application/json&quot;,
+    &quot;x-mashape-key&quot;: &quot;APIKEY&quot;
+  }
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+  $(&quot;#surfheight&quot;).append(response.query.results.channel.surf.height);
+});
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;Surf Height&lt;/h2&gt;
+&lt;div id=&quot;surfheight&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<p>In this example, the <code>ajax</code> method from jQuery is used because it allows us to load a remote resource asynchronously.</p>
+<p>In the request, you submit the authorization through the header rather than directly in the endpoint path. The endpoint limits the days returned to 1 in order to increase the download speed.</p>
+
+<p>For demonstration purposes, the response is assigned to the <code>response</code> argument of the <code>done</code> method, and then written out to the <code>surfheight</code> tag on the page.</p>
+
+<p>We're just getting the surf height, but there's a lot of other data you could choose to display.</p>
+{% endcomment %}
