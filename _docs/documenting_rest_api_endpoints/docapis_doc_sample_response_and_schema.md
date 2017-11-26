@@ -289,4 +289,4 @@ For the `surfreport/{beachId}` endpoint that we've been exploring in our [sample
 
 ## Next steps
 
-Now that we've documented the sample response and schema, it's time to document the [status and error codes](docapis_doc_status_codes.html) related to the resource.
+Now that you've completed the [API reference tutorial](docapis_api_reference_tutorial_overview.html), you're ready to either critique or create your own API reference topic. See the next topic, [Activity: Critique or create an API reference topic](docapis_api_reference_activity.html).

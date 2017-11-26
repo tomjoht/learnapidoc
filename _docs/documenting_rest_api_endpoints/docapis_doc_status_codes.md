@@ -1,43 +1,57 @@
 ---
-title: "Step 6: Status and error codes (API reference tutorial)"
+title: "Documenting status and error codes"
 permalink: /docapis_doc_status_codes.html
 redirect_from:
 - http://idratherbewriting.com/learnapidoc/docapis_doc_response_codes.html
-weight: 3.51
+weight: 5.41
 sidebar: docapis
-section: docendpoints
-path1: /docendpoints.html
+section: docnonref
+path1: /docnonref.html
 ---
 
-{% include workflow_map.html step="6" map="content/reference_doc_map.html"  %}
-{% if site.format == "pdf" or site.format == "kindle" %}
-<img src="images/apiref7.png"/>
-{% endif %}
+Status and error codes show a code number in the response header that indicates the general classification of the response &mdash; for example, whether the request was successful (200), resulted in an server error (500), had authorization issues (403), and so on.
 
-> **{{site.data.apirefsections.status_error_codes.term}}**: {{site.data.apirefsections.status_error_codes.def}}
+Standard status codes don't need documentation as much as custom status and error codes specific to the API. Error codes in particular help with troubleshooting bad requests.
 
 * TOC
 {:toc}
 
-## Example
+## Example of status and error codes
 
-<a  class="noExtIcon" href="https://www.flickr.com/services/api/flickr.galleries.getPhotos.html"><img src="images/flickrerrorcodes.png" /></a>
+Here's an example of a status and error codes section in Flickr's API:
 
-Status and error codes are essential for understanding responses from requests.
+<a class="noExtIcon" href="https://www.flickr.com/services/api/flickr.galleries.getPhotos.html"><img src="images/flickrerrorcodes.png" /></a>
 
-{% if site.format == "web" %}
-* TOC
-{:toc}
-{% endif %}
+Here you can see that mostly the status and error codes are not the standard codes common to all requests (like 200), but are rather codes that are specific to Flickr's API.
+
+Here's an example from OpenSecret's API:
+
+<a  class="noExtIcon" href="https://www.opensecrets.org/api/?method=candSummary&output=doc"><img src="images/opensecretsstatuscodes.png" alt="Open Secrets API status and error codes"/></a>
+
+Honestly, I've never seen so many status and error codes listed. But I think it's great to document this information if it's relevant to the API. (Obviously, if users would rarely encounter a particular status code, don't include it.)
+
+The status and error codes section of an API is often the same across most resources. As a result, this section might appear outside the reference topics. But as a convenience, the status and error codes are often embedded in each reference topic as well, with the assumption that developers need quick access to these codes as they're working with the endpoints.
+
+In the Clearbit API, the error codes appears as its own topic:
+
+<a class="noExtIcon" href="https://clearbit.com/docs?python#errors"><img src="images/clearbitstatuserrorcodes.png" alt="Clearbit status error codes" /></a>
+
+Again, although many codes are standard, some unique codes specific to the Clearbit API are highlighted, such as 402: "Over plan quota on this endpoint."
+
+Finally, here's an example of status and error codes from Dropbox's API:
+
+<a href="https://www.dropbox.com/developers/core/docs" class="noExtIcon"><img src="images/apierrorsdropbox.png" alt="Dropbox API example with errors" /></a>
 
 ## Sample status code in curl header
 
-Remember when we submitted the curl call back in [an earlier lesson](docapis_make_curl_call.html)? We submitted a curl call and specified that we wanted to see the response headers (`--include` or `-i`):
+Status codes don't appear in the response body. They appear in the response header, which you might not see by default.
 
-```bash
-  curl --get -include 'https://simple-weather.p.mashape.com/weather?lat=37.354108&lng=-121.955236' \-H 'X-Mashape-Key: APIKEY' \
+Remember when we submitted the curl call back in [an earlier lesson](docapis_make_curl_call.html)? In one exercise, we submitted a curl call and specified (by adding `--include` or `-i`) that we wanted the response headers included in the response:
+
+<pre>
+  curl --get <span class="orange">-include</span> 'https://simple-weather.p.mashape.com/weather?lat=37.354108&lng=-121.955236' \-H 'X-Mashape-Key: APIKEY' \
   -H 'Accept: text/plain'
-```
+</pre>
 
 The response, including the header, looked like this:
 
@@ -58,53 +72,34 @@ The first line, `HTTP/1.1 200 OK`, tells us the status of the request. (If you c
 
 {% include random_ad.html %}
 
-With a GET request, it's pretty easy to tell if the request is successful or not because you get back something in the response.
+With a GET request, it's pretty easy to tell if the request is successful because you get back the expected response.
 
-But suppose you're making a POST, PUT, or DELETE call, where you're changing data contained in the resource. How do you know if the request was successfully processed and received by the API?
-
-HTTP response codes in the header of the response will indicate whether the operation was successful. The HTTP status codes are just abbreviations for longer messages.
+But suppose you're making a POST, PUT, or DELETE call, where you're changing data contained in the resource. How do you know if the request was successfully processed and received by the API? HTTP response codes in the header of the response will indicate whether the operation was successful. The HTTP status codes are just abbreviations for longer messages.
 
 ## Common status codes follow standard protocols
 
 Most REST APIs follow a standard protocol for response headers. For example, `200` isn't just an arbitrary code decided upon by the Mashape Weather API developers. `200` is a universally accepted code for a successful HTTP request.
 
 You can see a list of common [REST API status codes here](http://www.restapitutorial.com/httpstatuscodes.html) and a [general list of HTTP status codes here](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes
-).
+). Although it's probably good to include a few standard status codes, comprehensively documenting all standard status codes, especially if rarely triggered by your API, is unnecessary.
 
 ## Where to list the HTTP response and error codes
 
-Most APIs should have a general page listing response and error codes across the entire API. Twitter's API has a good example of the possible status and error codes you will receive when making requests:
+Most APIs should have a general page listing response and error codes across the entire API. In addition to the Clearbit example mentioned above, Twitter's API also has a good example of the possible status and error codes you will receive when making requests:
 
 <a href="https://dev.twitter.com/overview/api/response-codes" class="noExtIcon"><img src="images/twitterstatuscode.png" alt="Twitter API status codes" /></a>
 
-In contrast, with the Flickr API, each "method" (endpoint) lists error codes:
+This Response Codes page stands alone rather than appearing embedded within each API reference topic. However, either location has merits. A standalone page allows you to expand on each code with more detail without crowding out the other documentation. It also reduces redundancy and the appearance of a heavy amount of information (information which is actually just repeated).
 
-<a href="https://www.flickr.com/services/api/flickr.galleries.getPhotos.html" class="noExtIcon"><img src="images/flickrerrorcodes.png" alt="Flickr API" /></a>
-
-Either location has merits. Generally, I think status codes should be included with each endpoint. But if you have a lot of status codes, it might make sense to create a single, centralized pages with a table that lists them.
+On the other hand, if some resources are prone to triggering certain status and error codes more than others, it makes sense to highlight those status and error codes on the relevant API reference pages. Perhaps you could call attention to any particularly relevant status or error codes, and then link to the centralized page for full information.
 
 ## Where to get status and error codes
 
-Status and error codes may not be readily apparent when you're documenting your API. You will need to ask developers for a list of all the status codes. In particular, if developers have created special status codes for the API, highlight these in the documentation.
+Status and error codes may not be readily apparent when you're documenting your API. You will need to ask developers for a list of all the status and error codes that are unique to your API. Sometimes developers hard-code these status and error codes directly in the programming code and don't have easy ways to hand you a comprehensive list (this makes localization problematic as well).
 
-For example, if you exceed the rate limit for a specific call, the API might return a special status code. You would especially need to document this custom code. Listing out all the error codes is a reference section in the "Troubleshooting" topic of your API documentation.
+As a result, you may need to experiment a bit to ferret out all the codes. Specifically, you might need to try to break the API to see all the potential error codes.
 
-## When endpoints have specific status codes
-
-In the Flattr API, sometimes endpoints return particular status codes. For example, when you "Check if a thing exists," the response includes `HTTP/1.1 302 Found` when the object is found. This is a standard HTTP response. If it's not found, you see a 404 status code.
-
-<a href="http://developers.flattr.net/api/resources/things/#update-a-thing" class="noExtIcon"><img src="images/flattrnotfound.png" alt="Not found status code" /></a>
-
-If the status code is specific to a particular endpoint, you can include it with that endpoint's documentation.
-
-Alternatively, you can have a general status and error codes page that lists all possible codes for all the endpoints. For example, with the Dropbox API, the writers list out the error codes related to the API:
-
-<a href="https://www.dropbox.com/developers/core/docs" class="noExtIcon"><img src="images/apierrorsdropbox.png" alt="Dropbox API example with errors" /></a>
-
-In particular, you should look for codes that return when there is an error, since this information helps developers troubleshoot problems.
-
-{: .tip}
-You can run some of the curl calls you made earlier (this time adding <code>-i</code>) and looking at the HTTP status code in the response.
+For example, if you exceed the rate limit for a specific call, the API might return a special error or status code. You would especially need to document this custom code. A troubleshooting section in your API might make special use of the error codes.
 
 ## How to list status codes
 
@@ -164,7 +159,3 @@ A section on troubleshooting could list possible error messages users get when t
 * A required parameter is absent from the endpoint
 
 Where possible, document the exact text of the error in the documentation so that it easily surfaces in searches.
-
-## Next steps
-
-Now that you've completed the [API reference tutorial](docapis_api_reference_tutorial_overview.html), you're ready to either critique or create your own API reference topic. See the next topic, [Activity: Critique or create an API reference topic](docapis_api_reference_activity.html). 

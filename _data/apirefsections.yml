@@ -22,8 +22,3 @@ response_example_and_schema:
   term: Response example and schema
   def: >
         The response example shows a sample response from the request example. The response example is not comprehensive of all parameter configurations or operations, but it should correspond with the parameters passed in the request example. The response lets developers know if the resource contains the information they want, the format, and how that information is structured and labeled. The response schema describes the response in a more comprehensive, general way, listing each property returned, a description of the property, the data format of the property's value, the structure, and other details.
-
-status_error_codes:
-  term: Status and error codes
-  def: >
-        Status and error codes show a code number in the response header that indicates the general status of the response &mdash; for example, whether the request was successful (200), resulted in an server error (500), had authorization issues (403), and so on. Standard status codes don't need documentation as much as custom status and error codes specific to the API. Error codes in particular help with troubleshooting bad requests.

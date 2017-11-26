@@ -8,14 +8,14 @@ section: docendpoints
 path1: /docendpoints.html
 ---
 
-In the [new endpoint to document](docapis_new_endpoint_to_doc.html), you saw information about a new endpoint to document for our weather API. In this API reference tutorial tutorial, you'll work on creating eight common sections in REST API reference documentation.
+In the [new endpoint to document](docapis_new_endpoint_to_doc.html), you saw information about a new endpoint to document for our weather API. In this API reference tutorial tutorial, you'll work on creating five common sections in REST API reference documentation.
 
 * TOC
 {:toc}
 
-## Six common sections in REST API docs
+## Five common sections in REST API docs
 
-Almost all API reference topics include these 6 sections:
+Almost all API reference topics include these five sections:
 
 [1. Resource description](docapis_resource_descriptions.html)
 :  {{site.data.apirefsections.resource_description.def}}
@@ -31,9 +31,6 @@ Almost all API reference topics include these 6 sections:
 
 [5. Response example](docapis_doc_sample_responses_and_schema.html)
 : {{site.data.apirefsections.resource_description.def}}
-
-[6. Status and error codes](docapis_doc_status_codes.html)
-: {{site.data.apirefsections.status_error_codes.def}}
 
 The topics include a workflow map to help guide and orient you each step of the way.
 

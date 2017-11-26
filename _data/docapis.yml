@@ -84,9 +84,6 @@ folders:
   - title: "Step 5: Response example and schema (API ref tutorial)"
     jurl: /docapis_doc_sample_responses_and_schema.html
 
-  - title: "Step 6: Status and error codes (API ref tutorial)"
-    jurl: /docapis_doc_status_codes.html
-
   - title: "Putting it all together"
     jurl: /docapis_finished_doc_result.html
 
@@ -121,6 +118,9 @@ folders:
 
   - title: Documenting authentication and authorization requirements
     jurl: /docapis_more_about_authorization.html
+
+  - title: "Documenting status and error codes"
+    jurl: /docapis_doc_status_codes.html
 
   - title: Documenting code samples and tutorials
     jurl: /docapis_codesamples_bestpractices.html
