@@ -8,7 +8,9 @@ section: docendpoints
 path1: /docendpoints.html
 ---
 
-In the [new endpoint to document](docapis_new_endpoint_to_doc.html), you saw information about a new endpoint to document for our weather API. In this API reference tutorial tutorial, we'll work on creating five common sections in REST API reference documentation.
+In this API reference tutorial tutorial, we'll work on creating five common sections in REST API reference documentation: resource description, resource URLs and methods, parameters, request example, and response example.
+
+For context, we'll structure the information from the [sample new endpoint to document](docapis_new_endpoint_to_doc.html) into these five sections.
 
 * TOC
 {:toc}
@@ -29,8 +31,10 @@ Almost all API reference topics include these five sections:
 [4. Request example](docapis_doc_sample_requests.html)
 : {{site.data.apirefsections.request_example.def}}
 
-[5. Response example](docapis_doc_sample_responses_and_schema.html)
+[5. Response example and schema](docapis_doc_sample_responses_and_schema.html)
 : {{site.data.apirefsections.response_example_and_schema.def}}
+
+## Tutorial workflow map
 
 The topics include a workflow map to help guide and orient you each step of the way.
 
@@ -40,6 +44,8 @@ The topics include a workflow map to help guide and orient you each step of the 
 <a class="noExtIcon" href="docapis_resource_descriptions.html"><img src="images/openapistep1.png"/></a>
 {% endif %}
 </div>
+
+## After the tutorial
 
 When we're finished, the end result will look [like this](docapis_finished_doc_result.html). You'll then have an opportunity to [create an API reference topic](docapis_api_reference_activity.html) with your own [open-source API project](docapis_find_open_source_project.html).
 

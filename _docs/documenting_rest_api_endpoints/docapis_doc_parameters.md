@@ -27,7 +27,7 @@ The following screenshot shows a sample of parameters with the Box API:
 
 <a class="noExtIcon" href="https://developer.box.com/reference#edit-a-collaboration"><img src="images/boxparameterexample.png" /></a>
 
-In this example, the parameters are grouped by type: path parameters, query parameters, and body parameters. The resource URL sets off the path parameter (`collab_id`) in an recognizable way.
+In this example, the parameters are grouped by type: path parameters, query parameters, and body parameters. The resource URL also sets off the path parameter (`collab_id`) in an recognizable way.
 
 ## Listing parameters in a table
 
@@ -49,7 +49,7 @@ Parameter
    <thead>
       <tr>
          <th markdown="span">Parameter</th>
-         <th markdown="span">Required?</th>
+         <th markdown="span">Required/Optional</th>
          <th markdown="span">Data Type</th>
       </tr>
    </thead>
@@ -74,21 +74,21 @@ You can format the values in a variety of ways (aside from a table). If you're u
 
 REST APIs have four types of parameters:
 
-*  **Path parameters**: Parameters that appear within the path of the endpoint, before the query string (`?`)
-*  **Query string parameters**: Parameters that appear in the query string of the endpoint, after the `?`.
+*  **Path parameters**: Parameters that appear within the path of the resource URL, before the query string (`?`)
+*  **Query string parameters**: Parameters that appear in the query string of the resource URL, after the `?`.
 *  **Request body parameters**: Parameters that are included in the request body. Usually submitted as JSON.
-*  **Header parameters**: Parameters that are included in the request header. Usually header parameters relate to authorization.
+*  **Header parameters**: Parameters that are included in the request header, usually related to authorization.
 
 {: .tip}
 The terms for each of these parameter types comes from the [OpenAPI specification](pubapis_openapi_tutorial_overview), which defines a formal specification that includes descriptions of each parameter type (see the [Path object tutorial](pubapis_openapi_step4_paths_object)). Using industry standard terminology helps you develop a vocabulary to describe different elements of an API.
 
 ## Data types indicate the format for the values
 
-It's important to list the data type for each parameter &mdash; APIs may not process the parameter correctly if it's the wrong data type or wrong format. These data types are the most common with REST APIs:
+Because APIs may not process the parameter correctly if it's the wrong data type or wrong format, it's important to list the data type for each parameter. These data types are the most common with REST APIs:
 
 * **string**: An alphanumeric sequence of letters and/or numbers
 * **integer**: A whole number &mdash; can be positive or negative
-* **boolean**: true or false
+* **boolean**: True or false value
 * **object**: Key-value pairs in JSON format
 * **array**: A list of values
 
@@ -101,39 +101,39 @@ There are more data types in programming, and if you have more specific data typ
 
 In addition to specifying the data type, the parameters should indicate the maximum, minimum, and allowed values. For example, if the weather API only allows longitude and latitude coordinates of specific countries, these limits should be described in the parameters documentation.
 
+Omitting information about max/min values or other illegal values is common in docs. Developers often don't realize all the "creative" ways users might use the APIs. The quality assurance team (QA) is probably your best resource for identifying the values that aren't allowed, because it's QA's job to try to break the developer's code.
+
+{: .tip}
+When you test an API, try running a resource URL without the required parameters, or with the wrong parameters. See what kind of error response comes back. Include that response in your [status and error codes section](docapis_doc_status_codes.html). I get deeper with the importance of testing in [Testing your docs](testingdocs.html).
+
 ## Order of query string parameter doesn't matter
 
-Query string parameters appear after a question mark (`?`) in the resource URL. The question mark followed by the parameters and their values is referred to as the query string. In the query string,  each parameter is listed one right after the other with an ampersand (`&`) separating them. The order of the query string parameters does not matter.
+Query string parameters appear after a question mark (`?`) in the resource URL. The question mark followed by the parameters and their values is referred to as the "query string." In the query string,  each parameter is listed one right after the other with an ampersand (`&`) separating them. The order of the query string parameters does not matter.
 
 For example:
 
-```html
-/surfreport/{beachId}?days=3&amp;units=metric&amp;time=1400
-```
+<pre>
+/surfreport/{beachId}?days=3<span class="orange">&</span>units=metric<span class="orange">&</span>time=1400
+</pre>
 
 and
 
-```html
-/surfreport/{beachId}?time=1400&amp;units=metric&amp;days=3
-```
+<pre>
+/surfreport/{beachId}?time=1400<span class="orange">&</span>units=metric<span class="orange">&</span>days=3
+</pre>
 
 would return the same result.
 
-However, with path parameters, order does matter. If the parameter is part of the actual endpoint path (not added in the query string), such as with `{beachId}` in our [sample scenario](docapis_new_endpoint_to_doc.html), then you usually describe this value in the description of the endpoint itself.
-
-
-
-{: .tip}
-When you test an API, try running an endpoint without the required parameters, or with the wrong parameters. See what kind of error response comes back. Include that response in your response codes section. I get deeper with the importance of testing in [Testing your docs](testingdocs.html).
+However, with path parameters, order *does* matter. If the parameter is part of the actual resource URL (not added after the query string), then you usually describe this value in the description of the resource URL itself.
 
 ## Color coding parameter values
 
-When you list the parameters in your endpoint, it can help to color code the parameters both in the table and in the endpoint definition. This makes it clear what's a parameter and what's not. Through color you create an immediate connection between the endpoint and the parameter definitions.
+When you list the parameters in your resource URL, it can help to color code the parameters both in the table and in the resource definition. This makes it clear what's a parameter and what's not. Through color you create an immediate connection between the resource URL and the parameter definitions.
 
-For example, suppose your endpoint definition is as follows:
+For example, suppose your resource URL is as follows:
 
 <div class="docSample">
-<p style="font-family: courier"><b>/service/myendpoint/user/<span class="red">{user}</span>/bicycles/<span class="red">{bicycles}</span></b></p>
+<p style="font-family: courier"><b>/service/myresource/user/<span class="red">{user}</span>/bicycles/<span class="red">{bicycles}</span></b></p>
 </div>
 
 Follow through with this same color in your table describing the parameters:
@@ -176,9 +176,9 @@ By color coding the parameters, it's easy to see the parameter in contrast with 
 
 ## Request body parameters
 
-Frequently with POST requests, where you're creating something, you submit a JSON object in the request body. This is known as a request body parameter, and you format is usually JSON. This JSON object may be a lengthy list of key value pairs with multiple levels of nesting.
+Frequently with POST requests, where you're creating something, you submit a JSON object in the request body. This is known as a request body parameter, and the format is usually JSON. This JSON object may be a lengthy list of key value pairs with multiple levels of nesting.
 
-For example, the endpoint URL may be something simple, such as `/surfreport/{beachId}`. But in the body of the request, you might include a JSON object, like this:
+For example, the resource URL may be something simple, such as `/surfreport/{beachId}`. But in the body of the request, you might include a JSON object with a number of key-value pairs, like this:
 
 ```json
 {
@@ -190,13 +190,13 @@ For example, the endpoint URL may be something simple, such as `/surfreport/{bea
 
 ## Documenting complex request body parameters
 
-Documenting JSON data (both in request body parameters and responses) is actually one of the trickier parts of API documentation. Documenting a JSON object is easy if the object is simple, with just a few key-value pairs at the same level. But if you have a JSON object with multiple objects inside objects, numerous levels of nesting, and lengthy conditional data, it can be trickier. And if the JSON object spans more than 100 lines, or 1,000, you'll need to carefully think about how you present the information.
+Documenting JSON data (both in request body parameters and responses) is actually one of the trickier parts of API documentation. Documenting a JSON object is easy if the object is simple, with just a few key-value pairs at the same level. But if you have a JSON object with multiple objects inside objects, numerous levels of nesting, and lengthy conditional data, it can be tricky. And if the JSON object spans more than 100 lines, or 1,000, you'll need to carefully think about how you present the information.
 
 Tables work all right for documenting JSON, but in a table, it can be hard to distinguish between top-level and sub-level items. The object that contains an object that also contains an object, and another object, etc., can be confusing to represent.
 
 By all means, if the JSON object is relatively small, a table is probably your best option. But there are other approaches that designers have taken as well.
 
-Take a look at eBay's [findItemsByProduct](http://developer.ebay.com/DevZone/finding/CallRef/findItemsByProduct.html) resource. Here's the request body parameter (in this case, the format is XML).
+Take a look at eBay's [findItemsByProduct](http://developer.ebay.com/DevZone/finding/CallRef/findItemsByProduct.html) resource. Here's the request body parameter (in this case, the format is XML):
 
 <a class="noCrossRef" class="noExtIcon" href="http://developer.ebay.com/DevZone/finding/CallRef/findItemsByProduct.html"><img src="images/ebaysample_3_17.png" alt="eBay parameters" /></a>
 
@@ -210,28 +210,24 @@ The same parameter values might be used in other requests as well, so organizati
 
 ## Swagger UI's approach
 
-Is the display from the [Swagger UI](pubapis_swagger_demo.html) any better? The [Swagger UI](https://github.com/swagger-api/swagger-ui) framework reads the OpenAPI specification document and displays it in the visual format that you see with examples such as the [Swagger Petstore](http://petstore.swagger.io/).
-
-The Swagger UI lets you toggle between an "Example Value" and a "Model" view for both responses and request body parameters.
+Is the display from the [Swagger UI](pubapis_swagger_demo.html) any better? Swagger UI reads the OpenAPI specification document and displays it in the visual format that you see below, with examples such as the [Swagger Petstore](http://petstore.swagger.io/). Swagger UI lets you toggle between an "Example Value" and a "Model" view for both responses and request body parameters.
 
 <a class="noExtIcon" href="http://petstore.swagger.io/#/operations/pet/addPet"><img src="images/swaggeruiexamplemodel.png"/></a>
 
 The Example Value shows a sample of the syntax along with examples. When you click the Model link, you see a sample request body parameter and any descriptions of each element in the request body parameter.
 
-The model includes expand/collapse toggles with the values. (The Petstore spec doesn't actually include many parameter descriptions in the Model, but if any descriptions that are included, they would appear here in the Model rather than the Example Value.)
+The model includes expand/collapse toggles with the values. (The [Petstore demo](http://petstore.swagger.io/) doesn't actually include many parameter descriptions in the Model, but if any descriptions that are included, they would appear here in the Model rather than the Example Value.)
 
 {: .tip}
 In a later section, I dive into Swagger. If you want to skip there now, go to [Introduction to Swagger](pubapis_swagger_intro.html).
 
-## Conclusion
+You can see that there's a lot of variety in documenting JSON and XML in request body parameters. There's no right way to document the information. As always, choose the method that depicts your API's parameters in the clearest, easiest-to-read way.
 
-You can see that there's a lot of variety in documenting JSON and XML responses. There's no right way to document the parameters. As always, choose the method that depicts your API's parameters in the clearest, easiest to read way.
-
-If you have relatively simple parameters, your choice won't matter that much. But if you have complex, unwieldy parameters, you may have to resort to custom styling and templates to present them clearly.
+If you have relatively simple parameters, your choice won't matter that much. But if you have complex, unwieldy parameters, you may have to resort to custom styling and templates to present them clearly. I explore this topic in more depth in the [Response example and schema section](docapis_doc_sample_responses_and_schema.html).
 
 ## Construct a table to list the surfreport parameters
 
-For our new surfreport endpoint, let's look through the parameters available and create a table describing the parameters. Here's what my table or definition list looks like:
+For our new surfreport resource, let's look through the parameters available and create a table describing the parameters. Here's what my parameter information looks like:
 
 {% if site.format == "kindle" %}
 
@@ -242,58 +238,60 @@ Table:
 
 <img src="images/kindle-parameters-table-demo.png"/>
 
-Definition list:
+<h2>Parameters</h2>
 
-`days`
-:  The number of days to include in the response. Default is 3.
-:  Required: Optional
-:  Data type: integer
+<dl>
+<dt>days</dt>
+<dd>The number of days to include in the response. Default is 3.</dd>
+<dd>Optional</dd>
+<dd>Integer</dd>
 
-`units`
-:  Options are either <code>imperial</code> or <code>metric</code>. Whether to return the values in imperial or metric measurements. Imperial will use feet, knots, and fahrenheit. Metric will use centimeters, kilometers per hour, and celsius. <code>metric</code> is the default.
-:  Required: Optional
-:  Data type: string
+<dt>units</dt>
+<dd>Whether to return the values in imperial or metric measurements. Imperial will use feet, knots, and Fahrenheit. Metric will use centimeters, kilometers per hour, and celsius.</dd>
+<dd>Optional</dd>
+<dd>String</dd>
 
-`time`
-:  If you include the time, then only the current hour will be returned in the response.
-:  Required: Optional
-:  Data type: integer. Unix format (ms since 1970) in UTC.
+<dt>time</dt>
+<dd>If you include the time, then only the current hour will be returned in the response.</dd>
+<dd>Optional</dd>
+<dd>Integer. Unix format (ms since 1970) in UTC.</dd>
+</dl>
 
 {% else %}
 
 <div class="docSample">
 <table>
 <colgroup>
-   <col width="20%" />
-   <col width="20%" />
+   <col width="15%" />
+   <col width="25%" />
    <col width="40%" />
    <col width="20%" />
 </colgroup>
 <thead>
 <tr>
 <th>Parameter</th>
-<th>Required</th>
+<th>Required / Optional</th>
 <th>Description</th>
 <th>Type</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>days</td>
+<td><code>days</code></td>
 <td>Optional</td>
 <td>The number of days to include in the response. Default is 3.</td>
 <td>Integer</td>
 </tr>
 <tr>
-<td>units</td>
+<td><code>units</code></td>
 <td>Optional</td>
 <td>Options are either <code>imperial</code> or <code>metric</code>. Whether to return the values in imperial or metric measurements. Imperial will use feet, knots, and fahrenheit. Metric will use centimeters, kilometers per hour, and celsius. <code>metric</code> is the default.</td>
-<td>string</td>
+<td>String</td>
 </tr>
 <tr>
-<td>time</td>
+<td><code>time</code></td>
 <td>Optional</td>
 <td>If you include the time, then only the current hour will be returned in the response.</td>
-<td>integer. Unix format (ms since 1970) in UTC.</td>
+<td>Integer. Unix format (ms since 1970) in UTC.</td>
 </tr>
 </tbody></table>
 </div>
@@ -302,13 +300,6 @@ Definition list:
 
 {: .tip}
 Even if you use Markdown for docs, you might consider using HTML syntax with tables. You usually want the control over column widths to make some columns wider or narrower. Markdown doesn't allow that granular level of control. With HTML, you can use a `colgroup` property to specify the `col width` for each column.
-
-<div class="progress">
-  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
-  aria-valuemin="0" aria-valuemax="100" style="width:50%">
-    50% Complete (info)
-  </div>
-</div>
 
 ## Next steps
 

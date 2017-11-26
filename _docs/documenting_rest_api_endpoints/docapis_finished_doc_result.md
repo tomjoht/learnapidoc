@@ -34,45 +34,58 @@ I chose to format mine in Markdown syntax in a text editor. Here's my example.
 <dl>
 <dt>days</dt>
 <dd>The number of days to include in the response. Default is 3.</dd>
-<dd>Required: Optional</dd>
-<dd>Type: integer</dd>
+<dd>Optional</dd>
+<dd>Integer</dd>
 
 <dt>units</dt>
-<dd>Whether to return the values in imperial or metric measurements. Imperial will use feet, knots, and fahrenheit. Metric will use centimeters, kilometers per hour, and celsius.</dd>
-<dd>Required: Optional</dd>
-<dd>Type: string</dd>
+<dd>Whether to return the values in imperial or metric measurements. Imperial will use feet, knots, and Fahrenheit. Metric will use centimeters, kilometers per hour, and celsius.</dd>
+<dd>Optional</dd>
+<dd>String</dd>
 
 <dt>time</dt>
 <dd>If you include the time, then only the current hour will be returned in the response.</dd>
-<dd>Required: Optional</dd>
-<dd>Type: integer. Unix format (ms since 1970) in UTC.</dd>
+<dd>Optional</dd>
+<dd>Integer. Unix format (ms since 1970) in UTC.</dd>
 </dl>
 
 {% else %}
 
-<table><thead>
+<div class="docSample">
+<table>
+<colgroup>
+   <col width="15%" />
+   <col width="25%" />
+   <col width="40%" />
+   <col width="20%" />
+</colgroup>
+<thead>
 <tr>
 <th>Parameter</th>
+<th>Required / Optional</th>
 <th>Description</th>
-<th>Data Type</th>
+<th>Type</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>days</td>
-<td><em>Optional</em>. The number of days to include in the response. Default is 3.</td>
-<td>integer</td>
+<td><code>days</code></td>
+<td>Optional</td>
+<td>The number of days to include in the response. Default is 3.</td>
+<td>Integer</td>
 </tr>
 <tr>
-<td>units</td>
-<td><em>Optional</em>. Whether to return the values in imperial or metric measurements. Imperial will use feet, knots, and fahrenheit. Metric will use centimeters, kilometers per hour, and celsius.</td>
-<td>string</td>
+<td><code>units</code></td>
+<td>Optional</td>
+<td>Options are either <code>imperial</code> or <code>metric</code>. Whether to return the values in imperial or metric measurements. Imperial will use feet, knots, and fahrenheit. Metric will use centimeters, kilometers per hour, and celsius. <code>metric</code> is the default.</td>
+<td>String</td>
 </tr>
 <tr>
-<td>time</td>
-<td><em>Optional</em>. If you include the time, then only the current hour will be returned in the response.</td>
-<td>integer. Unix format (ms since 1970) in UTC.</td>
+<td><code>time</code></td>
+<td>Optional</td>
+<td>If you include the time, then only the current hour will be returned in the response.</td>
+<td>Integer. Unix format (ms since 1970) in UTC.</td>
 </tr>
 </tbody></table>
+</div>
 {% endif %}
 
 <h2 id="sample-request">Sample request</h2>

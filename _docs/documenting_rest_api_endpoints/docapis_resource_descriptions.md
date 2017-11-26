@@ -20,7 +20,7 @@ path1: /docendpoints.html
 
 ## Example of a resource description {#examples}
 
-Typically, an API will have a number of resource URLs grouped under the same resource. In the Mailchimp API, the [Campaigns resource](http://developer.mailchimp.com/documentation/mailchimp/reference/campaigns/#) is described as follows:
+Here's an example of a resource description from the Mailchimp API's [Campaigns resource](http://developer.mailchimp.com/documentation/mailchimp/reference/campaigns/#):
 
 <a class="noExtIcon" href="http://developer.mailchimp.com/documentation/mailchimp/reference/campaigns/"><img src="images/mailchimpcampaigns.png"/></a>
 
@@ -39,6 +39,8 @@ The Campaigns resource has various resource URLs (also often called endpoints):
 * POST `/campaigns/{campaign_id}/actions/send`
 * POST `/campaigns/{campaign_id}/actions/test`
 * POST `/campaigns/{campaign_id}/actions/unschedule`
+
+Typically, an API will have a number of related resource URLs grouped under the same resource.
 
 In the Eventbrite API, here's the Events resource:
 
@@ -68,7 +70,7 @@ As another example, here's the Relationships resource in the  [Instagram API](ht
 
 <a  class="noCrossRef" href="https://instagram.com/developer/endpoints/relationships/" class="noExtIcon"><img src="images/instagramapi_3_17.png"/></a>
 
-The Relationships resource isn't described. Instead, the descriptions are added for each of the resources grouped within the Relationships resource:
+The Relationships resource isn't described but rather acts as a container for relationship resource URLs. Descriptions are added for each of the resources grouped within the Relationships resource:
 
 * GET `/users/self/followsGet`
 * GET `/users/self/followed-byGet`
@@ -78,29 +80,26 @@ The Relationships resource isn't described. Instead, the descriptions are added 
 
 {% include random_ad.html %}
 
-The [Box API](https://docs.box.com/reference#membership-object) is another good example of how the same resource can have multiple URLs.
+Here's a resource description for the Membership resource in the [Box API](https://docs.box.com/reference#membership-object):
 
 <a  class="noCrossRef" href="https://docs.box.com/reference#membership-object" class="noExtIcon"><img src="images/boxapi_3_17.png" alt="Example from Box" /></a>
 
-For the Membership resource (or "object," as they call it), there are 7 different endpoints or methods you can call.
+For the Membership resource (or "object," as they call it), there are 7 different endpoints or methods you can call. The Box API does describe the Membership resource and each of the sub-resources under it.
 
 The Trello API shows another example. In Trello, the [Members](https://developers.trello.com/v1.0/reference#member) resource has around 40 resource URLs.
 
-Whether your API has resources that contain lots of variant resource URLs, or just one resource URL per resource, you need to describe the resource.
+Whether your API has resources that contain lots of variant resource URLs, or just one resource URL per resource, you need to describe the resources.
 
-## How many resource URLs for the same resource?
-
-When developers create APIs, they have a design question to consider: Use lots of variants of resource URLs (as with Eventbrite's API), or provide lots of parameters to configure the same resource URL.
-
-Often there's a balance between the two. The trend seems to be toward providing separate resource URLs rather than supplying a host of potentially confusing parameters for the same URL.
+{: .note}
+When developers create APIs, they have a design question to consider: Use a lot of variants of resource URLs (as with Eventbrite's API), or provide lots of parameters to configure the same resource URL. Often there's a balance between the two. The trend seems to be toward providing separate resource URLs rather than supplying a host of potentially confusing parameters for the same URL.
 
 ## Terminology for describing the resource
 
 The exact terminology for referring to resources varies.  The "things" that you access using a URL can be referred to in a variety of ways. Other than "resources," you might see them listed as API calls, endpoints, API methods, calls, objects, services, and requests. Some docs get around the situation by not calling them anything explicitly.
 
-However, in general, an API has various "resources" that you access through "resource URLs." The resource URLs give you access to the resource. (But terminology isn't standard, so expect variety.)
+However, in general, an API has various "resources" that you access through "resource URLs." The resource URLs give you access to the resource. (But terminology isn't standard, so expect variety.) The [Mashape Weather API](https://market.mashape.com/fyhao/weather-13) is pretty simple, and just refers to 3 "endpoints" available.
 
-The [Mashape Weather API](https://market.mashape.com/fyhao/weather-13) is pretty simple, and just refers to 3 endpoints available. Referring to the "`/aqi` resource URL" or to the "aqi resource" doesn't make a huge difference. But with more complex APIs, using the resource URL to talk about the resource can get problematic.
+How do you refer to the resources and all resource URLs within an API reference topic? Referring to the "`/aqi` resource URL" or to the "aqi resource" doesn't make a huge difference. But with more complex APIs, using the resource URL to talk about the resource can get problematic.
 
 At one company I worked at, our URLs for the Rewards resource looked like this:
 
@@ -130,14 +129,14 @@ And rewards in context of the Missions resource looked like this:
 
 To say that you could use the rewards resource wasn't always specific enough, because there were multiple rewards and missions resource URLs.
 
-It can get awkward referring to the resource by its resource URL. For example, "When you call `/users/{userId}/rewards/`, you get a list of all rewards. To get a specific reward for a specific mission for a specific user, the `/users/{userId}/rewards/{missionId}` resource URL takes several parameters..." The longer the resource URL, the more difficult the reference. These kinds of descriptions would be more common in the [non-reference sections](docnonref.html) sections of your documentation.
+It can get awkward referring to the resource by its resource URL. For example, "When you call `/users/{userId}/rewards/`, you get a list of all rewards. To get a specific reward for a specific mission for a specific user, the `/users/{userId}/rewards/{missionId}` resource URL takes several parameters..." The longer the resource URL, the more difficult the reference. These kinds of descriptions are more common in the [non-reference sections](docnonref.html) sections of your documentation. However, brief, clear references to the resource URLs are sometimes challenging.
 
 ## Recognize the difference between reference docs versus user guides
 
-Given how brief the user description is, one thing to keep in mind is the difference between reference docs and user guides/tutorials:
+Resource descriptions are typically short, usually 1-2 sentences. What if you have a lot more detail to add? In these situations, keep in mind is the difference between reference docs and user guides/tutorials:
 
 * **Reference guides**: Concise, bare-bones information that developers can quickly reference.
-* **User guides/tutorials**: More elaborate detail about everything, including step-by-step instructions, code samples, concepts, and procedures.
+* **User guides/tutorials**: More elaborate detail about how to use the API, including step-by-step instructions, code samples, concepts, and procedures.
 
 Although the description in an API reference topic provides a 1-3 sentence summary of the information the resource contains, you might expand on this with much greater detail in the user guide. You could link the reference description to the places in the user guide where you expand on it in more detail.
 
@@ -148,15 +147,13 @@ The description of the resource is likely something you'll re-use in different p
 
 {% include activity.html %}
 
-Let's review the [surf report wiki page](docapis_new_endpoint_to_doc.html) (which contains the information about the resource) and try to describe the resource in the length of one or two tweets (140 characters). Here's how I went about creating the resource description.
+Let's review the [surf report wiki page](docapis_new_endpoint_to_doc.html) (which contains the information about the resource) and try to describe the resource in the length of one or two tweets (140 characters). Here's my approach:
 
 <div class="docSample">
 
 <p><b>surfreport/{beachId}</b></p>
 
-<p>Returns information about surfing conditions at a specific beach ID, including the surf height, water temperature, wind, and tide. Also provides an overall recommendation about whether to go surfing. </p>
-
-<p><code>{beachId}</code> refers to the ID for the beach you want to look up. All Beach ID codes are available from our site.</p>
+<p>Returns information about surfing conditions at a specific beach ID, including the surf height, water temperature, wind, and tide. Also provides an overall recommendation about whether to go surfing. <code>{beachId}</code> refers to the ID for the beach you want to look up. All Beach ID codes are available from our site.</p>
 </div>
 
 {% include activity.html %}
@@ -170,9 +167,7 @@ Although these descriptions are short, developers like concision. If I were shor
 <p>Provides surf condition information.</p>
 </div>
 
-Compare these descriptions with the resource descriptions from the [Aeris Weather API](http://www.aerisweather.com/support/docs/api/reference/endpoints/).
-
-With Aeris Weather, the description for the [forecasts endpoint](http://www.aerisweather.com/support/docs/api/reference/endpoints/forecasts/) is as follows:
+Compare these descriptions with the resource descriptions from the [Aeris Weather API](http://www.aerisweather.com/support/docs/api/reference/endpoints/). With Aeris Weather, the description for the [forecasts endpoint](http://www.aerisweather.com/support/docs/api/reference/endpoints/forecasts/) is as follows:
 
 <div class="docSample">
 <p><b>Endpoint: forecasts</b></p>
@@ -181,4 +176,4 @@ With Aeris Weather, the description for the [forecasts endpoint](http://www.aeri
 
 ## Next steps
 
-Now it's time to list out the [resource URLs and methods](docapis_doc_resource_urls_and_methods.html) for the resource. (Generally the resource, resource URL, and method are tightly packaged, but I've separated them out into two steps here.)
+Now it's time to list out the [resource URLs and methods](docapis_doc_resource_urls_and_methods.html) for the resource. (Generally the resource, resource URL, and method are tightly packaged, but I've separated them out into a couple of steps here.)
