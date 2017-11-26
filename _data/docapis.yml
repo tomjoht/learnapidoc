@@ -22,6 +22,9 @@ folders:
   - title: What is a REST API?
     jurl: /docapis_what_is_a_rest_api.html
 
+  - title: "Activity: Find an Open Source Project"
+    jurl: /docapis_find_open_source_project.html
+
 - title: Using a REST API as a developer
   jurl: /likeadeveloper.html
   folderitems:

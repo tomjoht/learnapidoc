@@ -17,7 +17,9 @@ The [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html) walked you throug
 
 ## Identify an API
 
-First, find an API that's relatively simple. If you're already documenting an API for your work, by all means use that API. But if you're just taking this course to learn general API documentation, try creating an OpenAPI specification document for this simple [Sunrise and sunset times API](https://sunrise-sunset.org/api). This API doesn't require authentication with requests, so it removes some of the more complicated authentication workflows.
+In an earlier activity, you [found an open-source API project](docapis_find_open_source_project.html) with some documentation needs. Create an OpenAPI specification for this API.
+
+If you don't want to use that API (maybe it already has an OpenAPI specification document, or there are other complications), you can use this simple [Sunrise and sunset times API](https://sunrise-sunset.org/api). This Sunrise and sunset times API doesn't require authentication with requests, so it removes some of the more complicated authentication workflows.
 
 {: .tip}
 Depending on the API you choose to work with, you could potentially use this specification document as part of your portfolio.

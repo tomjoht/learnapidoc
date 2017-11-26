@@ -15,9 +15,6 @@ Until this point, you've been acting as a developer with the task of integrating
 
 Now let's shift perspectives. Now suppose you're a technical writer working with the Mashape weather API team. The team is asking you to document a new endpoint.
 
-{: .note}
-For this exercise, you could equally document a new endpoint for the Aeris Weather API, but since that API is already quite robust, we'll keep it simple and work with the more minimalist Mashape weather API.
-
 {% if site.format == "web" %}
 * TOC
 {:toc}
@@ -27,9 +24,9 @@ For this exercise, you could equally document a new endpoint for the Aeris Weath
 
 The project manager calls you over and says the team has a new API for you to document for the next release. (By "API," the manager really just means a new endpoint to the existing API. But in the API landscape, developers often refer to each endpoint as well as the collective endpoints as an API.)
 
-"Here's the wiki page that contains all the data," the manager says. The information is scattered and random on the wiki page. In reality, you probably wouldn't have all the information available that you need, but to facilitate our scenario (you can't ask the "team" questions about this fictitious new endpoint), the page will help.
+"Here's the wiki page that contains all the data," the manager says. The information is scattered and random on the wiki page.
 
-It's now your task to sort through the information on this page and create documentation from it. Read through the wiki page to get a sense of the information. The upcoming topics will guide you through creating documentation for this new endpoint.
+It's now your task to sort through the information on this page and create documentation from it. You can read through the mock wiki page below to get a sense of the information. In the upcoming topics, I will create documentation from this information as I proceed through each of the needed sections for an API reference topic.
 
 {: .tip}
 Most technical writers don't start from scratch with documentation projects. Engineers usually dump essential information onto an internal wiki page (or they communicate the info during meetings). However, the information on the wiki page will likely be incomplete, and unnecessarily technical in places (like describing the database schema or high-level architectural workflows). The info might also include internal-only information (for example, including test logins, access protocols, or code names), or have sections that are out-of-date. Ultimately, the information will be oriented toward other engineers on the same knowledge level as the team's engineers. Your job as a technical writer will be to take this information and turn it into complete, accurate, usable information that communicates with your audience.

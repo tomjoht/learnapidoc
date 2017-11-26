@@ -8,7 +8,7 @@ section: docendpoints
 path1: /docendpoints.html
 ---
 
-In the [new endpoint to document](docapis_new_endpoint_to_doc.html), you saw information about a new endpoint to document for our weather API. In this API reference tutorial tutorial, you'll work on creating five common sections in REST API reference documentation.
+In the [new endpoint to document](docapis_new_endpoint_to_doc.html), you saw information about a new endpoint to document for our weather API. In this API reference tutorial tutorial, we'll work on creating five common sections in REST API reference documentation.
 
 * TOC
 {:toc}
@@ -30,7 +30,7 @@ Almost all API reference topics include these five sections:
 : {{site.data.apirefsections.request_example.def}}
 
 [5. Response example](docapis_doc_sample_responses_and_schema.html)
-: {{site.data.apirefsections.resource_description.def}}
+: {{site.data.apirefsections.response_example_and_schema.def}}
 
 The topics include a workflow map to help guide and orient you each step of the way.
 
@@ -41,21 +41,12 @@ The topics include a workflow map to help guide and orient you each step of the 
 {% endif %}
 </div>
 
-Each of your endpoints should include these same sections, in the same order and styling for predictability.
-
-{: .tip}
-A common template in your documentation helps increase consistency and familiarity with how users consume the information.
-
-When you're finished, the end result will look [like this](docapis_finished_doc_result.html).
+When we're finished, the end result will look [like this](docapis_finished_doc_result.html). You'll then have an opportunity to [create an API reference topic](docapis_api_reference_activity.html) with your own [open-source API project](docapis_find_open_source_project.html).
 
 {: .note}
-Although there are automated ways to publish API docs, we're focusing on content rather than tools in this section. For the sake of simplicity, try just using a text editor (such as [Sublime Text](https://www.sublimetext.com/)) and [Markdown syntax](https://help.github.com/articles/github-flavored-markdown). In the [Publishing your API documentation section](publishingapis.html), we'll jump into publishing tools and methods.
+Although there are automated ways to publish API docs, we're focusing on content rather than tools in this section. In the [Publishing your API documentation section](publishingapis.html), we'll jump into publishing tools and methods.
 
 {% include random_ad.html %}
-
-## Running example of API reference documentation
-
-In this API reference tutorial, I conclude each tutorial step with an example of how to provide the documentation for our [fictitious surfreport endpoint with the Mashape API](docapis_new_endpoint_to_doc.html). I do this to provide a more real, step-by-step walk-through for writing documentation. After you complete the tutorial, there's an activity to [critique or create your own API reference topic](docapis_api_reference_activity.html).
 
 ## Next steps
 

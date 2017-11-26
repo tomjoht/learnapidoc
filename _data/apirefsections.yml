@@ -6,17 +6,17 @@ resource_description:
 resource_urls:
   term: Resource URLs and methods
   def: >
-        The resource URLs, along with their method (such as GET, POST, or DELETE) indicate how the resource can be accessed. The URL shows the end path ("endpoint") only, not the base path common to all endpoints. The same resource usually has a variety of related resource URLs, each with different paths and methods but ultimately returning information about the same resource.
+        The resource URLs, along with their method (such as GET, POST, or DELETE) indicate how you can interact with the resource. The URL shows the end path ("endpoint") only, not the base path common to all endpoints. The same resource usually has a variety of related resource URLs, each with different paths and methods but ultimately returning information about the same resource.
 
 parameters:
   term: Parameters
   def: >
-        Parameters are options you can pass with the endpoint to determine the result. There are four types of parameters: header parameters, path parameters, query string parameters, and request body parameters.
+        Parameters are options you can pass with the resource URL (such as specifying the format or the amount returned) to influence the result. There are four types of parameters: header parameters, path parameters, query string parameters, and request body parameters.
 
 request_example:
   term: Request example
   def: >
-        The request example shows a sample request using the resource URL, showing some parameters configured. The request example usually can't show all possible parameter configurations, but it should be as rich as possible with parameters. Sample requests sometimes include code snippets that show the same request in a variety of languages (besides curl). Code samples are optional and not always included in the reference topics, but when available, users welcome them. Sometimes code samples can be automated. Companies often developer SDKs in a particular language to make it easy to implement the API.
+        The request example shows a sample request using the resource URL, showing some parameters configured. The request example usually can't show all possible parameter configurations, but it should be as rich as possible with parameters. Sample requests sometimes include code snippets that show the same request in a variety of languages (besides curl). Requests shown in other programming languages are optional and not always included in the reference topics, but when available, users welcome them. 
 
 response_example_and_schema:
   term: Response example and schema

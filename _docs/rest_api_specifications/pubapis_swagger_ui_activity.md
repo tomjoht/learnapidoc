@@ -18,7 +18,7 @@ In the [Swagger tutorial](pubapis_swagger.html), you explored the [Swagger Petst
 
 ## Integrate your OpenAPI spec into Swagger UI
 
-1.  If you completed the [OpenAPI specification document activity](pubapis_openapi_activity.html), you should have a functional specification document from an API. If you don't, you can use the [openapi_sunrise_sunset.yml](/learnapidoc/assets/files/swagger-sunrise-sunset/openapi_sunrise_sunset.yml). This information comes from the [Sunset and sunrise times API](https://sunrise-sunset.org/api). Download the file to your computer.
+1.  If you completed the [OpenAPI specification document activity](pubapis_openapi_activity.html), you should have a functional specification document from an API. If you don't, you can use the [openapi_sunrise_sunset.yml](/learnapidoc/assets/files/swagger-sunrise-sunset/openapi_sunrise_sunset.yml). This spec's information comes from the [Sunset and sunrise times API](https://sunrise-sunset.org/api). Download the file to your computer.
 2.  Go to the [Swagger UI GitHub project](https://github.com/swagger-api/swagger-ui) and click **Clone or download**, then click **Download ZIP**.
 3.  Uncompress the downloaded swagger-ui-master.zip and move the **dist** folder into another directory on your computer. Give the dist folder a more meaningful name, such as "swagger."
 4.  Move your OpenAPI specification document (e.g., openapi_sunrise_sunset.yml) into the folder.
