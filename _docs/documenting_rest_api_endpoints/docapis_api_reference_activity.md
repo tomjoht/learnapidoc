@@ -20,7 +20,7 @@ Assuming you've found an open-source API doc project, it's time to start the act
 2.  Identify each of the sections in the existing documentation:
 
     *  Resource description
-    *  Resource URL and method
+    *  Endpoints
     *  Parameters
     *  Request example
     *  Response example and schema
@@ -32,7 +32,7 @@ Assuming you've found an open-source API doc project, it's time to start the act
 
     **Resource description:** Is it action-oriented? A brief 1-3 sentence summary? Clear?
 
-    **Resource URL and method:** Does it include the method? Are any path parameters easy to identify? If there are multiple URLs, are they logically grouped?
+    **Endpoints and methods:** Does it include the method? Are any path parameters easy to identify? If there are multiple URLs, are they logically grouped?
 
     **Parameters:** Is each parameter described? If it's a request body parameter, are the data types indicated? Are max and min values identified? Any unsupported values noted?
 

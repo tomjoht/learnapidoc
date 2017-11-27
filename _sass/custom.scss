@@ -81,11 +81,15 @@ a[href^="https://"]:after {
 }
 
 
-a[href].noCrossRef::after, a[href].noExtIcon::after, pre a::after, pre.highlight a::after, pre.highlight code a::after, pre a.vglnk::after,
+a[href].noCrossRef::after, a[href].noExtIcon::after, pre a::after, pre.highlight a::after, pre.highlight code a::after, pre code a.vglnk::after,
 a.no_icon:after
  {
   content: "" !important;
   padding-left: 0;
+}
+
+pre a.vglnk, pre a.vglnk:visited {
+  color: lightblue;
 }
 
 pre a:hover, pre a, pre code a.vglnk, pre code a.vglnk:hover {

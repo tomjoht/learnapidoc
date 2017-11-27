@@ -58240,7 +58240,7 @@ function $HttpProvider() {
      * ### JSON Vulnerability Protection
      *
      * A [JSON vulnerability](http://haacked.com/archive/2008/11/20/anatomy-of-a-subtle-json-vulnerability.aspx)
-     * allows third party website to turn your JSON resource URL into
+     * allows third party website to turn your JSON endpoint into
      * [JSONP](http://en.wikipedia.org/wiki/JSONP) request under some conditions. To
      * counter this your server can prefix all JSON requests with following string `")]}',\n"`.
      * Angular will automatically strip the prefix before processing it as JSON.
@@ -64228,7 +64228,7 @@ function $SceDelegateProvider() {
    * same origin resource requests.
    *
    * @description
-   * Sets/Gets the whitelist of trusted resource URLs.
+   * Sets/Gets the whitelist of trusted endpoints.
    */
   this.resourceUrlWhitelist = function(value) {
     if (arguments.length) {
@@ -64261,7 +64261,7 @@ function $SceDelegateProvider() {
    * is no blacklist.)
    *
    * @description
-   * Sets/Gets the blacklist of trusted resource URLs.
+   * Sets/Gets the blacklist of trusted endpoints.
    */
 
   this.resourceUrlBlacklist = function(value) {

@@ -52,7 +52,7 @@ curl
 : A command line utility often used to interact with REST API endpoints. Used in documentation for request code samples. curl is usually the default format used to display requests in API documentation. See [curl](https://curl.haxx.se/). Also written as curl. See [Make a curl call](docapis_make_curl_call.html) and [Understand curl more](docapis_understand_curl.html).
 
 endpoint
-: The end part of the request URL (after the base path). Also sometimes used to refer to the entire API reference topic. See [Resource URLs and methods](docapis_doc_resource_urls_and_methods.html).
+: The end part of the request URL (after the base path). Also sometimes used to refer to the entire API reference topic. See [Endpoints](docapis_resource_endpoints.html).
 
 Git
 : Distributed version control system commonly used when interacting with code. GitHub uses Git, as does BitBucket and other version control platforms. Learning Git is essential for working with developer documentation, since this is the most common way developers share, review, collaborate, and distribute code. See [https://git-scm.com/](https://git-scm.com/).

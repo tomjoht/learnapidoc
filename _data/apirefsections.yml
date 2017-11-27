@@ -1,22 +1,22 @@
 resource_description:
   term: Resource description
   def: >
-        The resource description describes the information provided by the resource. The description is brief (1-3 sentences) and usually starts with a verb. Resources themselves can have a number of resource URLs to access variations of the same resource, and multiple methods for each resource URL. Thus, on the same page, you usually have a general resource described and sub-resources also described.
+        The resource description describes the information provided by the resource. The description is brief (1-3 sentences) and usually starts with a verb. Resources themselves can have a number of endpoints to access the resource, and multiple methods for each endpoint. Thus, on the same page, you usually have a general resource described with a number of endpoints for accessing the resource. The endpoints are also briefly described.
 
-resource_urls:
-  term: Resource URLs and methods
+resource_endpoints_and_methods:
+  term: Endpoints
   def: >
-        The resource URLs, along with their method (such as GET, POST, or DELETE), indicate how you can interact with the resource. The resource URL shows the end path ("endpoint") only, not the base path common to all endpoints. The same resource usually has a variety of related resource URLs, each with different paths and methods but returning variant information about the same resource.
+        The endpoints indicate how you access the resource, and the method used with the endpoint indicates the allowed interactions (such as GET, POST, or DELETE) with the resource. The endpoint shows the end path of a resource URL only, not the base path common to all endpoints. The same resource usually has a variety of related endpoints, each with different paths and methods but returning variant information about the same resource.
 
 parameters:
   term: Parameters
   def: >
-        Parameters are options you can pass with the resource URL (such as specifying the response format or the amount returned) to influence the response. There are four types of parameters: header parameters, path parameters, query string parameters, and request body parameters.
+        Parameters are options you can pass with the endpoint (such as specifying the response format or the amount returned) to influence the response. There are four types of parameters: header parameters, path parameters, query string parameters, and request body parameters.
 
 request_example:
   term: Request example
   def: >
-        The request example includes a sample request using the resource URL, showing some parameters configured. The request example usually can't show all possible parameter configurations, but it should be as rich as possible with parameters. Sample requests sometimes include code snippets that show the same request in a variety of languages (besides curl). Requests shown in other programming languages are optional and not always included in the reference topics, but when available, users welcome them.
+        The request example includes a sample request using the endpoint, showing some parameters configured. The request example usually can't show all possible parameter configurations, but it should be as rich as possible with parameters. Sample requests sometimes include code snippets that show the same request in a variety of languages (besides curl). Requests shown in other programming languages are optional and not always included in the reference topics, but when available, users welcome them.
 
 response_example_and_schema:
   term: Response example and schema

@@ -29,21 +29,21 @@ Jim Bisso, an experienced API technical writer in the Silicon Valley area, descr
 
 {% include random_ad.html %}
 
-APIs often work in similar ways. When you push a button in an interface, functions underneath get triggered to go and retrieve information. But instead of retrieving information from within the same system, web APIs call remote services on the web to get their information.
+APIs often work in similar ways. When you push a button in an interface, functions underneath also get triggered to go and retrieve information. But instead of retrieving information from within the same system, web APIs call remote services on the web to get their information.
 
 Ultimately, developers use API calls behind the scenes to pull information into their apps. A button on a GUI may be internally wired to make calls to an external service. For example, the embedded Twitter or Facebook buttons that interact with social networks, or embedded Youtube videos that pull a video in from youtube.com, are powered by web APIs underneath.
 
 ## APIs that use HTTP protocol are "web services"
 
-A "web service" is a web-based application that provides information in a format consumable by other computers. Web services include various types of APIs, including both REST and SOAP APIs. Web services are basically request and response interactions between clients and servers (a computer makes the request, and the web service provides the response).
+A "web service" is a web-based application that provides resources in a format consumable by other computers. Web services include various types of APIs, including both REST and SOAP APIs. Web services are basically request and response interactions between clients and servers (a computer makes the request for a resource, and the web service provides the response).
 
 All APIs that use HTTP protocol as the transport format for requests and responses can be classified as "web services."
 
 ## Language agnostic
 
-With web services, the client making the request and the API server providing the response can use any programming language or platform &mdash; it doesn't matter because the message request and response are made through a common HTTP web protocol.
+With web services, the client making the request for the resource and the API server providing the response can use any programming language or platform &mdash; it doesn't matter because the message request and response are made through a common HTTP web protocol.
 
-This is part of the beauty of web services: they are language agnostic and therefore interoperable across different platforms and systems. When documenting a REST API, it doesn't really matter whether the API is built with Java, Ruby, Python, or some other language. The requests are made over HTTP, and the responses are returned through HTTP.
+This is part of the beauty of web services: they are language agnostic and therefore interoperable across different platforms and systems. When documenting a REST API, it doesn't matter whether the API is built with Java, Ruby, Python, or some other language. The requests are made over HTTP, and the responses are returned through HTTP.
 
 Each programming language that makes the request will have a different way of submitting a web request and parsing the response, but the way requests for each language are made and the responses retrieved are common operations for the programming language and not usually specific to a particular REST API.
 
@@ -91,27 +91,33 @@ Despite the variety of message format options, most REST APIs use JSON (JavaScri
 
 ### REST focuses on resources accessed through URLs
 
-Another unique aspect of REST is that REST APIs focus on *resources* (that is, *things*, rather than actions) and ways to access the resources. You access the resources through URLs (Uniform Resource Locations). The URLs are accompanied by a method that specifies how you want to interact with the resource.
+Another unique aspect of REST is that REST APIs focus on *resources* (that is, *things*, rather than actions) and ways to access the resources. Resources are typically different types of information. You access the resources through URLs (Uniform Resource Locators), just like going to a URL in your browser retrieves an information resource. The URLs are accompanied by a method that specifies how you want to interact with the resource.
 
-Common methods include GET (read), POST (create), PUT (update), and DELETE (remove). The URL usually includes query parameters that specify more details about the representation of the resource you want to see. For example, you might specify (in a query parameter) that you want to limit the display of 5 instances of the resource.
+Common methods include GET (read), POST (create), PUT (update), and DELETE (remove). The endpoint usually includes query parameters that specify more details about the representation of the resource you want to see. For example, you might specify (in a query parameter) that you want to limit the display of 5 instances of the resource.
 
 ### Sample URLs for a REST API
 
-Here's what a sample REST URI or endpoint might look like:
+Here's what a sample endpoint might look like:
 
 ```
 http://apiserver.com/homes?limit=5&format=json
 ```
 
-This endpoint would get the "homes" resource and limit the result to 5 homes. It would return the response in JSON format.
+The endpoint shows the whole path to the resource. However, in documentation, we usually separate out this URL into more specific parts:
+
+* The **base path** (or base URL or host) refers to the common path for the API. In the example above, the base path is `http://apiserver.com`.
+* The **endpoint** refers to the end path of the endpoint. In the example above, `/homes`.
+* The `?limit=5&format=json` part of the endpoint contains query string parameters for the endpoint.
+
+In the example above, this endpoint would get the "homes" resource and limit the result to 5 homes. It would return the response in JSON format.
 
 You can have multiple endpoints that refer to the same resource. Here's one variation:
 
 ```
-http://apiserver.com/homes/1234
+http://apiserver.com/homes/{home id}
 ```
 
-This might be an endpoint that retrieves a home resource with an ID of `1234`. What is transferred back from the server to the client is the "representation" of the resource. The resource may have many different representations (showing all homes, homes that match certain criteria, homes in a specific format, and so on), but here we want to see home 1234.
+This might be an endpoint that retrieves a home resource that contains a particular ID. What is transferred back from the server to the client is the "representation" of the resource. The resource may have many different representations (showing all homes, homes that match certain criteria, homes in a specific format, and so on), but here we want to see a home with a particular ID.
 
 {: .tip}
 The relationship between resources and methods is often described in terms of "nouns" and "verbs." The resource is the noun because it is an object or thing. The verb is what you're doing with that noun. Combining nouns with verbs is how you form the language in REST.
@@ -128,7 +134,7 @@ If you open a browser and go to http://idratherbewriting.com, you're really usin
 {% elsif site.format == "web" %}<img class="medium" src="images/restapi_www.svg" alt="Web as REST API" />
 {% endif %}
 
-You can see this response in curl if you open a Terminal prompt and type `curl http://idratherbewriting.com`. (This assumes you have curl installed.)
+You can see this response in curl if you open a terminal prompt and type `curl http://idratherbewriting.com`. (This assumes you have curl installed.)
 
 Because the web itself is an example of RESTful style architecture, the way REST APIs work will likely become second nature to you.
 
@@ -154,7 +160,7 @@ In order to understand how to interact with a REST API, you have to *read the do
 
 Some formal specifications &mdash; for example, such [OpenAPI](pubapis_swagger_intro.html) and [RAML](pubapis_raml.html) &mdash; have been developed to describe REST APIs. When you describe your API using the OpenAPI or RAML specification, tools that can read those specifications (like [Swagger UI](pubapis_swagger.html) or the [RAML API Console](pubapis_raml.html#deliver-doc-through-the-api-console-project) will generate an interactive documentation output.
 
-The Swagger or RAML output can take the place of the WSDL file that was more common with SOAP. These spec-driven outputs are usually interactive (featuring API Consoles or API Explorers) and allow you to try out REST calls and see responses directly in the documentation.
+The OpenAPI specification document can take the place of the WSDL file that was more common with SOAP. Tools like [Swagger UI](pubapis_swagger.html) that read the specification documents are usually interactive (featuring API Consoles or API Explorers) and allow you to try out REST calls and see responses directly in the documentation.
 
 But don't expect the Swagger UI or RAML API Console documentation outputs to include all the details users would need to work with your API. For example, these outputs won't include info about [authorization keys](docapis_more_about_authorization.html), details about workflows and interdependencies between endpoints, and so on. The Swagger or RAML output usually contains reference documentation only, which typically only accounts for a third of the total needed documentation.
 

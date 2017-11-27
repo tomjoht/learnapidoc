@@ -43,7 +43,7 @@ paths:
 
 ## Operation Objects
 
-Each path item object contains an [operation object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#operation-object). Operations are the GET, POST, PUT, and DELETE methods we explored in the [resource URLs and methods section](docapis_doc_resource_urls_and_methods.html) of the API reference tutorial methods. The operation object contains a number of potential properties and objects:
+Each path item object contains an [operation object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#operation-object). Operations are the GET, POST, PUT, and DELETE methods we explored in the [Endpoints section](docapis_resource_endpoints.html) of the API reference tutorial methods. The operation object contains a number of potential properties and objects:
 
 * `tags`: A tag to organize the path under when displayed in the Swagger UI. Swagger UI will organize or group endpoints under tag headings.
 * `summary`: A brief overview of the path. Swagger UI displays the summary next to the path name. Limit the summary to 5-10 words only. The display appears even when this section is collapsed.

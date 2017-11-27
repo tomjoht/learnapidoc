@@ -28,9 +28,9 @@ The "Getting started" section should explain the first steps users must take to 
 
 ## Show the general pattern for requests
 
-When you start listing out the endpoints for your resources, you just list the "end point" part of the URL. You don't list the full HTTP URL that users will need to make the request. Listing out the full HTTP URL with each endpoint would be tedious and take up a lot of space.
+When you start listing out the endpoints for your resources, you just list the "end point" part of the URL. You don't list the full resource URL that users will need to make the request. Listing out the full resource URL with each endpoint would be tedious and take up a lot of space.
 
-You generally list the full HTTP URL in a Getting Started section that shows how to make a call to the API.
+You generally list the full resource URL in a Getting Started section that shows how to make a call to the API.
 
 For example, you might explain that the domain root for making a request is this:
 
@@ -38,7 +38,7 @@ For example, you might explain that the domain root for making a request is this
 http://myapi.com/v2/
 ```
 
-And when you combine the domain root with a sample endpoint (or resource root), it looks like this:
+And when you combine the domain root with a sample endpoint, it looks like this:
 
 ```
 http://myapi.com/v2/homes/{id}

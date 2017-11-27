@@ -26,7 +26,7 @@ During this part of the course, you learned the core tasks involved in documenti
 Then you switched perspectives and approached APIs from a technical writer's point of view. As a technical writer, you documented each of the main components of a REST API:
 
 * Resource description
-* Endpoint definition and method
+* Endpoints
 * Parameters
 * Request example
 * Response example

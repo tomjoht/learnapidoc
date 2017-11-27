@@ -1,0 +1,90 @@
+<h2>Parameters</h2>
+{% if site.format == "kindle" %}
+
+<p class="note">Tables don't display well on Kindle devices, so I've converted them into definition lists in this course for Kindle outputs.</p>
+
+<h2>Parameters</h2>
+
+<h3>Path parameters</h3>
+
+<dl>
+<dt>{beachId}</dt>
+<dd>Refers to the ID for the beach you want to look up. All Beach ID codes are available from our site at sampleurl.com.</dd>
+</dl>
+
+<h3>Query string parameters</h3>
+
+<dl>
+<dt><code>days</code></dt>
+<dd>The number of days to include in the response. Default is 3.</dd>
+<dd>Optional</dd>
+<dd>Integer</dd>
+
+<dt><code>units</code></dt>
+<dd>Whether to return the values in imperial or metric measurements. Imperial will use feet, knots, and Fahrenheit. Metric will use centimeters, kilometers per hour, and celsius.</dd>
+<dd>Optional</dd>
+<dd>String</dd>
+
+<dt><code>time</code></dt>
+<dd>If you include the time, then only the current hour will be returned in the response.</dd>
+<dd>Optional</dd>
+<dd>Integer. Unix format (ms since 1970) in UTC.</dd>
+</dl>
+
+{% else %}
+
+<h3>Path parameters</h3>
+<table>
+<colgroup>
+   <col width="30%" />
+   <col width="70%" />
+</colgroup>
+<thead>
+<tr>
+<th>Path parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>{beachId}</code></td>
+<td>Refers to the ID for the beach you want to look up. All Beach ID codes are available from our site at sampleurl.com.
+</td>
+</tr>
+</tbody></table>
+
+<h3>Query string parameters</h3>
+<table>
+<colgroup>
+   <col width="15%" />
+   <col width="25%" />
+   <col width="40%" />
+   <col width="20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Query string parameter</th>
+<th>Required / optional</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>days</code></td>
+<td>Optional</td>
+<td>The number of days to include in the response. Default is 3.</td>
+<td>Integer</td>
+</tr>
+<tr>
+<td><code>units</code></td>
+<td>Optional</td>
+<td>Options are either <code>imperial</code> or <code>metric</code>. Whether to return the values in imperial or metric measurements. Imperial will use feet, knots, and fahrenheit. Metric will use centimeters, kilometers per hour, and celsius. <code>metric</code> is the default.</td>
+<td>String</td>
+</tr>
+<tr>
+<td><code>time</code></td>
+<td>Optional</td>
+<td>If you include the time, then only the current hour will be returned in the response.</td>
+<td>Integer. Unix format (ms since 1970) in UTC.</td>
+</tr>
+</tbody></table>
+{% endif %}

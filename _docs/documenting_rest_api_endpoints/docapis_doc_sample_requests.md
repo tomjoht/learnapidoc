@@ -25,7 +25,7 @@ path1: /docendpoints.html
 
 The following example shows a sample request from the [Callfire API](https://developers.callfire.com/docs.html#pagination):
 
-<a href="https://developers.callfire.com/docs.html#pagination"><img src="images/callfireapirequestexample.png"/></a>
+<a class="noExtIcon" href="https://developers.callfire.com/docs.html#pagination"><img src="images/callfireapirequestexample.png"/></a>
 
 The design of their API doc site arranges the sample requests and responses in the right column of a three-column layout. The request is formatted in curl, which we [explored earlier](docapis_install_curl).
 
@@ -45,7 +45,7 @@ Here's another example of a curl request in the Parse API:
 
 You can add backslashes in curl to separate out each parameter onto its own line (though, as I pointed out in the [curl tutorial](docapis_make_curl_call.html#make-the-request-in-curl-windows-7), Windows has trouble with backslashes).
 
-Other API doc sites might use a more plain URL, such as this lackluster example from Twitter:
+Other API doc sites might use a more plain URL, such as this plain example from Twitter:
 
 <a class="noExtIcon" href="https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-friends-list"><img src="images/twitterrequestexample.png" /></a>
 
@@ -59,7 +59,7 @@ If you have a lot of parameters, it might make sense to include several request 
 https://api.citygridmedia.com/content/places/v2/search/where
 ```
 
-However, there are [literarily 17 possible query string parameters](http://docs.citygridmedia.com/display/citygridv2/Places+API#PlacesAPI-WhereSearchRequest) you can use with this resource URL. As a result, the documentation includes several sample requests show various parameter combinations:
+However, there are [literarily 17 possible query string parameters](http://docs.citygridmedia.com/display/citygridv2/Places+API#PlacesAPI-WhereSearchRequest) you can use with this endpoint. As a result, the documentation includes several sample requests show various parameter combinations:
 
 <a href="http://docs.citygridmedia.com/display/citygridv2/Places+API" class="noExtIcon"><img src="images/search_usage_examples.png" alt="CityGrid Places API example" /></a>
 
@@ -178,17 +178,12 @@ However, you don't have to build your own tooling. Existing tools such as [Swagg
 {: .tip}
 For a tutorial on how to create your own API explorer functionality, see the [Swagger UI tutorial](pubapis_swagger.html).
 
-## Document the sample request with the surfreport/{beachId} endpoint
+## Request example for the surfreport endpoint
 
 Let's return to the `surfreport/{beachId}` endpoint in our [sample scenario](docapis_new_endpoint_to_doc.html) and create a request example for it:
 
 <div class="docSample">
-
-<h2>Sample request</h2>
-
-<pre>
-curl --get --include 'https://simple-weather.p.mashape.com/surfreport/123?units=imperial&days=1&time=1433772000' -H 'X-Mashape-Key: APIKEY' -H 'Accept: application/json'
-</pre>
+{% include_relative surfreport_request.html %}
 </div>
 
 ## Next steps

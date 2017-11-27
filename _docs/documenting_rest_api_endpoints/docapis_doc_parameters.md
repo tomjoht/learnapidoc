@@ -27,7 +27,7 @@ The following screenshot shows a sample of parameters with the Box API:
 
 <a class="noExtIcon" href="https://developer.box.com/reference#edit-a-collaboration"><img src="images/boxparameterexample.png" /></a>
 
-In this example, the parameters are grouped by type: path parameters, query parameters, and body parameters. The resource URL also sets off the path parameter (`collab_id`) in an recognizable way.
+In this example, the parameters are grouped by type: path parameters, query parameters, and body parameters. The endpoint also sets off the path parameter (`collab_id`) in an recognizable way.
 
 ## Listing parameters in a table
 
@@ -74,8 +74,8 @@ You can format the values in a variety of ways (aside from a table). If you're u
 
 REST APIs have four types of parameters:
 
-*  **Path parameters**: Parameters that appear within the path of the resource URL, before the query string (`?`)
-*  **Query string parameters**: Parameters that appear in the query string of the resource URL, after the `?`.
+*  **Path parameters**: Parameters that appear within the path of the endpoint, before the query string (`?`)
+*  **Query string parameters**: Parameters that appear in the query string of the endpoint, after the `?`.
 *  **Request body parameters**: Parameters that are included in the request body. Usually submitted as JSON.
 *  **Header parameters**: Parameters that are included in the request header, usually related to authorization.
 
@@ -104,11 +104,11 @@ In addition to specifying the data type, the parameters should indicate the maxi
 Omitting information about max/min values or other illegal values is common in docs. Developers often don't realize all the "creative" ways users might use the APIs. The quality assurance team (QA) is probably your best resource for identifying the values that aren't allowed, because it's QA's job to try to break the developer's code.
 
 {: .tip}
-When you test an API, try running a resource URL without the required parameters, or with the wrong parameters. See what kind of error response comes back. Include that response in your [status and error codes section](docapis_doc_status_codes.html). I get deeper with the importance of testing in [Testing your docs](testingdocs.html).
+When you test an API, try running a endpoint without the required parameters, or with the wrong parameters. See what kind of error response comes back. Include that response in your [status and error codes section](docapis_doc_status_codes.html). I get deeper with the importance of testing in [Testing your docs](testingdocs.html).
 
 ## Order of query string parameter doesn't matter
 
-Query string parameters appear after a question mark (`?`) in the resource URL. The question mark followed by the parameters and their values is referred to as the "query string." In the query string,  each parameter is listed one right after the other with an ampersand (`&`) separating them. The order of the query string parameters does not matter.
+Query string parameters appear after a question mark (`?`) in the endpoint. The question mark followed by the parameters and their values is referred to as the "query string." In the query string,  each parameter is listed one right after the other with an ampersand (`&`) separating them. The order of the query string parameters does not matter.
 
 For example:
 
@@ -124,13 +124,13 @@ and
 
 would return the same result.
 
-However, with path parameters, order *does* matter. If the parameter is part of the actual resource URL (not added after the query string), then you usually describe this value in the description of the resource URL itself.
+However, with path parameters, order *does* matter. If the parameter is part of the actual endpoint (not added after the query string), then you usually describe this value in the description of the endpoint itself.
 
 ## Color coding parameter values
 
-When you list the parameters in your resource URL, it can help to color code the parameters both in the table and in the resource definition. This makes it clear what's a parameter and what's not. Through color you create an immediate connection between the resource URL and the parameter definitions.
+When you list the parameters in your endpoint, it can help to color code the parameters both in the table and in the resource definition. This makes it clear what's a parameter and what's not. Through color you create an immediate connection between the endpoint and the parameter definitions.
 
-For example, suppose your resource URL is as follows:
+For example, suppose your endpoint is as follows:
 
 <div class="docSample">
 <p style="font-family: courier"><b>/service/myresource/user/<span class="red">{user}</span>/bicycles/<span class="red">{bicycles}</span></b></p>
@@ -178,7 +178,7 @@ By color coding the parameters, it's easy to see the parameter in contrast with 
 
 Frequently with POST requests, where you're creating something, you submit a JSON object in the request body. This is known as a request body parameter, and the format is usually JSON. This JSON object may be a lengthy list of key value pairs with multiple levels of nesting.
 
-For example, the resource URL may be something simple, such as `/surfreport/{beachId}`. But in the body of the request, you might include a JSON object with a number of key-value pairs, like this:
+For example, the endpoint may be something simple, such as `/surfreport/{beachId}`. But in the body of the request, you might include a JSON object with a number of key-value pairs, like this:
 
 ```json
 {
@@ -225,78 +225,13 @@ You can see that there's a lot of variety in documenting JSON and XML in request
 
 If you have relatively simple parameters, your choice won't matter that much. But if you have complex, unwieldy parameters, you may have to resort to custom styling and templates to present them clearly. I explore this topic in more depth in the [Response example and schema section](docapis_doc_sample_responses_and_schema.html).
 
-## Construct a table to list the surfreport parameters
+## Parameters for the surfreport endpoint
 
 For our new surfreport resource, let's look through the parameters available and create a table describing the parameters. Here's what my parameter information looks like:
 
-{% if site.format == "kindle" %}
-
-{: .note}
-Tables don't display well on Kindle devices, so I've converted them into definition lists in this course for Kindle outputs. However, here I've also included an image of the table. Tables are more common and easier, but definition lists work better on mobile and tablet devices.
-
-Table:
-
-<img src="images/kindle-parameters-table-demo.png"/>
-
-<h2>Parameters</h2>
-
-<dl>
-<dt>days</dt>
-<dd>The number of days to include in the response. Default is 3.</dd>
-<dd>Optional</dd>
-<dd>Integer</dd>
-
-<dt>units</dt>
-<dd>Whether to return the values in imperial or metric measurements. Imperial will use feet, knots, and Fahrenheit. Metric will use centimeters, kilometers per hour, and celsius.</dd>
-<dd>Optional</dd>
-<dd>String</dd>
-
-<dt>time</dt>
-<dd>If you include the time, then only the current hour will be returned in the response.</dd>
-<dd>Optional</dd>
-<dd>Integer. Unix format (ms since 1970) in UTC.</dd>
-</dl>
-
-{% else %}
-
 <div class="docSample">
-<table>
-<colgroup>
-   <col width="15%" />
-   <col width="25%" />
-   <col width="40%" />
-   <col width="20%" />
-</colgroup>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Required / Optional</th>
-<th>Description</th>
-<th>Type</th>
-</tr>
-</thead><tbody>
-<tr>
-<td><code>days</code></td>
-<td>Optional</td>
-<td>The number of days to include in the response. Default is 3.</td>
-<td>Integer</td>
-</tr>
-<tr>
-<td><code>units</code></td>
-<td>Optional</td>
-<td>Options are either <code>imperial</code> or <code>metric</code>. Whether to return the values in imperial or metric measurements. Imperial will use feet, knots, and fahrenheit. Metric will use centimeters, kilometers per hour, and celsius. <code>metric</code> is the default.</td>
-<td>String</td>
-</tr>
-<tr>
-<td><code>time</code></td>
-<td>Optional</td>
-<td>If you include the time, then only the current hour will be returned in the response.</td>
-<td>Integer. Unix format (ms since 1970) in UTC.</td>
-</tr>
-</tbody></table>
+{% include_relative surfreport_parameters.html %}
 </div>
-
-{% endif %}
 
 {: .tip}
 Even if you use Markdown for docs, you might consider using HTML syntax with tables. You usually want the control over column widths to make some columns wider or narrower. Markdown doesn't allow that granular level of control. With HTML, you can use a `colgroup` property to specify the `col width` for each column.
