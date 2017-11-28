@@ -8,8 +8,6 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 ---
 
-## Reality check on the importance of this activity
-
 You're probably going through this course for one of the following reasons:
 
 * You want to break into the field of API documentation.
@@ -22,6 +20,9 @@ For the first two scenarios, you need to start thinking about API documentation 
 How will you generate API doc samples for your portfolio, without having a job developing API documentation? This is where the activities in this course become important.
 
 Rather than simply completing modules and tracking your progress toward the course's completion, I've included activities here that will actually help build up your portfolio with API documentation samples, helping you progress to the goal of either obtaining an API doc job or hitting a home run on an API doc project in your current role.
+
+* TOC
+{:toc}
 
 ## Finding an open-source API project
 

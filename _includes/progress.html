@@ -10,8 +10,8 @@
     {% assign completedPages = forloop.index %}
     <script>
     $( document ).ready(function() {
-    var percentComplete = "width:" + ({{completedPages}} / {{totalPages}}).toPrecision(2) * 100 + "%";
-    var yourProgressSoFar = "<h2>Your progress through this course so far: " + ({{completedPages}} / {{totalPages}}).toPrecision(2) * 100 + "%</h2>";
+    var percentComplete = "width:" + ({{completedPages}} / {{totalPages}}) * 100 + "%";
+    var yourProgressSoFar = "<h2>Your progress through this course so far: " + Math.round(({{completedPages}} / {{totalPages}}) * 100) + "%</h2>";
     // console.log("percentComplete:" + percentComplete);
 
     $( "#progressBar" ).attr("style", percentComplete);
