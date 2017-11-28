@@ -195,4 +195,4 @@ As I explained earlier, [Swagger](https://swagger.io/) refers to the various API
 * **[Swagger-codegen](https://github.com/swagger-api/swagger-codegen)**: This tool generates client SDK code for a lot of different platforms (such as Java, JavaScript, Scala, Python, PHP, Ruby, Scala, and more). The client SDK code helps developers integrate your API on a specific platform and provides for more robust implementations that might include more scaling, threading, and other necessary code. In general, SDKs are toolkits for implementing the requests made with an API. Swagger Codegen generates the client SDKs in nearly every programming language.
 * **[Swaggerhub](https://app.swaggerhub.com/)**: The commercial version of the open-source Swagger UI project.
 
-For more tools, see [Swagger Tools])(https://swagger.io/tools/).
+For more tools, see [Swagger Tools](https://swagger.io/tools/).

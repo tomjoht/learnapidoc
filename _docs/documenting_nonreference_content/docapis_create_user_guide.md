@@ -128,4 +128,4 @@ Note that the endpoint documentation is never meant to be a starting point. The 
 
 Here's a sample page showing endpoints from Instagram's API:
 
-<a href="https://instagram.com/developer/endpoints/relationships/"><img src="images/instagramref.png" alt="Instagram endpoints" /></a>
+<a class="noExtIcon" href="https://instagram.com/developer/endpoints/relationships/"><img src="images/instagramref.png" alt="Instagram endpoints" /></a>

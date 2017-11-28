@@ -1,0 +1,36 @@
+{% if site.format == "web" %}<div class="progressContext">
+<h2>Your progress in this course</h2>
+
+    {% assign pages = site.docs | where: "progress", true %}
+    {% assign progressPages = pages | sort: "weight" %}
+    {% for pg in progressPages %}
+    {% if pg.permalink == page.permalink %}
+    {% assign remainingPages = forloop.length | minus: forloop.index %}
+    {% assign totalPages = forloop.length %}
+    {% assign completedPages = forloop.index %}
+    <script>
+    $( document ).ready(function() {
+    var percentComplete = "width:" + ({{completedPages}} / {{totalPages}}) * 100 + "%";
+    // console.log("percentComplete:" + percentComplete);
+
+    $( "#progressBar" ).attr("style", percentComplete);
+  });
+    </script>
+    <div class="progress">
+  <div id="progressBar" class="progress-bar" role="progressbar" aria-valuenow="{{forloop.index}}"
+  aria-valuemin="0" aria-valuemax="{{forloop.length}}">
+    <span class="sr-only">{{forloop.index}}% Complete</span>
+  </div>
+</div>
+          {% break %}
+          {% endif %}
+    {% endfor %}
+    {% if remainingPages == 0 %}
+    You've completed the course!
+    {% else %}
+    <p>{{completedPages}}/{{totalPages}} pages complete. Only {{remainingPages}} more pages to go...</p>
+    {% endif %}
+
+
+</div>
+{% endif %}

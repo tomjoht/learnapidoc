@@ -4,6 +4,7 @@ permalink: /contact.html
 course: "Documenting REST APIs"
 sidebar: docapis
 type: plain
+progress: false
 ---
 
 Feel free to ask me any questions you like. You can contact me directly using one of the following methods, or use the contact form below.

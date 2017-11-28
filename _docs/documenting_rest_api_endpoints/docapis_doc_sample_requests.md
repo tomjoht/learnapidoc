@@ -45,7 +45,7 @@ Here's another example of a curl request in the Parse API:
 
 You can add backslashes in curl to separate out each parameter onto its own line (though, as I pointed out in the [curl tutorial](docapis_make_curl_call.html#make-the-request-in-curl-windows-7), Windows has trouble with backslashes).
 
-Other API doc sites might use a more plain URL, such as this plain example from Twitter:
+Other API doc sites might use the full resource URL, such as this plain example from Twitter:
 
 <a class="noExtIcon" href="https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-friends-list"><img src="images/twitterrequestexample.png" /></a>
 

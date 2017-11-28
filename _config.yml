@@ -46,6 +46,7 @@ defaults:
     values:
       layout: default
       topnav: topnav
+      progress: true
   -
     scope:
       path: ""
