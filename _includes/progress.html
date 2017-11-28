@@ -1,5 +1,5 @@
 {% if site.format == "web" %}<div class="progressContext">
-<h2>Your progress in this course</h2>
+<div id="yourProgress"></div>
 
     {% assign pages = site.docs | where: "progress", true %}
     {% assign progressPages = pages | sort: "weight" %}
@@ -10,10 +10,12 @@
     {% assign completedPages = forloop.index %}
     <script>
     $( document ).ready(function() {
-    var percentComplete = "width:" + ({{completedPages}} / {{totalPages}}) * 100 + "%";
+    var percentComplete = "width:" + ({{completedPages}} / {{totalPages}}).toPrecision(2) * 100 + "%";
+    var yourProgressSoFar = "<h2>Your progress through this course so far: " + ({{completedPages}} / {{totalPages}}).toPrecision(2) * 100 + "%</h2>";
     // console.log("percentComplete:" + percentComplete);
 
     $( "#progressBar" ).attr("style", percentComplete);
+    $( "#yourProgress" ).append(yourProgressSoFar);
   });
     </script>
     <div class="progress">
