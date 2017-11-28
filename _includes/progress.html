@@ -1,4 +1,4 @@
-{% if site.format == "web" %}<div class="progressContext">
+{% if site.format == "web" and page.progress != false %}<div class="progressContext">
 <div id="yourProgress"></div>
 
     {% assign pages = site.docs | where: "progress", true %}
