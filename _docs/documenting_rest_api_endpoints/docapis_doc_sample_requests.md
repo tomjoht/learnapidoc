@@ -33,7 +33,7 @@ The design of their API doc site arranges the sample requests and responses in t
 curl -u "username:password" -H "Content-Type:application/json" -X GET "https://api.callfire.com/v2/texts?limit=50&offset=200"
 ```
 
-curl is a common format to show requests for several reasons:
+In general, use curl to show your sample request. curl is a common format to show requests for several reasons:
 
 * curl is language agnostic, so it's not specific to one particular programming language.
 * curl shows the header information required in the request.
@@ -49,7 +49,7 @@ Other API doc sites might use the full resource URL, such as this plain example 
 
 <a class="noExtIcon" href="https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-friends-list"><img src="images/twitterrequestexample.png" /></a>
 
-One problem with this Twitter request example is that it doesn't indicate if any header information needs to be passed to authorize the request.
+The resource URL includes both the base path and the endpoint. One problem with this Twitter request example is that it doesn't indicate if any header information needs to be passed to authorize the request. curl requests can easily show any header parameters.
 
 ## Multiple request examples
 

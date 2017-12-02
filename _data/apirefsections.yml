@@ -11,12 +11,12 @@ endpoints_and_methods:
 parameters:
   term: Parameters
   def: >
-        Parameters are options you can pass with the endpoint (such as specifying the response format or the amount returned) to influence the response. There are four types of parameters: header parameters, path parameters, query string parameters, and request body parameters. The different types of parameter are often documented in separate tables. Not all endpoints contain each type of parameter.
+        Parameters are options you can pass with the endpoint (such as specifying the response format or the amount returned) to influence the response. There are four types of parameters: header parameters, path parameters, query string parameters, and request body parameters. The different types of parameters are often documented in separate groups. Not all endpoints contain each type of parameter.
 
 request_example:
   term: Request example
   def: >
-        The request example includes a sample request using the endpoint, showing some parameters configured. The request example usually can't show all possible parameter configurations, but it should be as rich as possible with parameters. Sample requests sometimes include code snippets that show the same request in a variety of languages (besides curl). Requests shown in other programming languages are optional and not always included in the reference topics, but when available, users welcome them.
+        The request example includes a sample request using the endpoint, showing some parameters configured. The request example usually doesn't show all possible parameter configurations, but it should be as rich as possible with parameters. Sample requests sometimes include code snippets that show the same request in a variety of languages (besides curl). Requests shown in other programming languages are optional and not always included in the reference topics, but when available, users welcome them.
 
 response_example_and_schema:
   term: Response example and schema

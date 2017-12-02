@@ -69,6 +69,9 @@ HAT
 HATEOS
 : Stands for Hypermedia as the Engine of Application State. Hypermedia is one of the characteristics of REST that is often overlooked or missing from REST APIs. In API responses, responses that span multiple pages should provide links for users to page to the other items. See [HATEOS](https://en.wikipedia.org/wiki/HATEOAS).
 
+Header parameters
+: Parameters that are included in the request header, usually related to authorization.
+
 Hugo
 : A static site generator that uses the Go programming language as its base. Along with Jekyll, Hugo is among the top 5 most popular static site generators. Hugo is probably the fastest site generator available. Speed matters as you scale the number of documents in your project beyond several hundred. See [https://gohugo.io/](https://gohugo.io/).
 
@@ -99,6 +102,9 @@ OpenAPI Initiative
 parameter
 : {{site.data.apirefsections.parameters.def}} See [Documenting parameters](docapis_doc_parameters.html) for more.
 
+Path parameters
+: Parameters that appear within the path of the endpoint, before the query string (`?`). These are usually set off within curly braces.
+
 Pelican
 : A static site generator based on Python. See [https://github.com/getpelican/pelican](https://github.com/getpelican/pelican).
 
@@ -114,6 +120,9 @@ Pull Request
 push
 : In Git, when you want to update the origin with the latest updates from your local copy, you make `git push`. Your updates will bring origin back into sync with your local copy. See [https://git-scm.com/docs/git-push](https://git-scm.com/docs/git-push).
 
+Query string parameters
+: Parameters that appear in the query string of the endpoint, after the `?`.
+
 RAML
 : Stands REST API Modeling Language and is similar to OpenAPI specifications. RAML is backed by Mulesoft, a commercial API company, and uses a more YAML-based syntax in the specification.See [RAML tutorial](pubapis_raml.html) in this course or [RAML](https://raml.org/).
 
@@ -125,6 +134,9 @@ repo
 
 request
 : The way information is returned from an API. In a request, the client provides a resource URL with the proper authorization to an API server. The API returns a response with the informatino requested.
+
+request body parameters
+: Parameters that are included in the request body. Usually submitted as JSON.
 
 request example
 : {{site.data.apirefsections.request_example.def}}
