@@ -1,17 +1,17 @@
 resource_description:
   term: Resource description
   def: >
-        The resource description describes the information provided by the resource. The description is brief (1-3 sentences) and usually starts with a verb. Resources themselves can have a number of endpoints to access the resource, and multiple methods for each endpoint. Thus, on the same page, you usually have a general resource described with a number of endpoints for accessing the resource. The endpoints are also briefly described.
+        \"Resources\" refers to the information returned by an API. Most APIs have various categories of information, or various resources, that can be returned. The resource description provides details about the information returned in each resource. The resource description is brief (1-3 sentences) and usually starts with a verb. Resources usually have a number of endpoints to access the resource, and multiple methods for each endpoint. Thus, on the same page, you usually have a general resource described along with a number of endpoints for accessing the resource, also described.
 
-resource_endpoints_and_methods:
-  term: Endpoints
+endpoints_and_methods:
+  term: Endpoints and methods
   def: >
-        The endpoints indicate how you access the resource, and the method used with the endpoint indicates the allowed interactions (such as GET, POST, or DELETE) with the resource. The endpoint shows the end path of a resource URL only, not the base path common to all endpoints. The same resource usually has a variety of related endpoints, each with different paths and methods but returning variant information about the same resource.
+        The endpoints indicate how you access the resource, and the method used with the endpoint indicates the allowed interactions (such as GET, POST, or DELETE) with the resource. The endpoint shows the end path of a resource URL only, not the base path common to all endpoints. The same resource usually has a variety of related endpoints, each with different paths and methods but returning variant information about the same resource. Endpoints usually have brief descriptions similar to the overall resource description but shorter.
 
 parameters:
   term: Parameters
   def: >
-        Parameters are options you can pass with the endpoint (such as specifying the response format or the amount returned) to influence the response. There are four types of parameters: header parameters, path parameters, query string parameters, and request body parameters.
+        Parameters are options you can pass with the endpoint (such as specifying the response format or the amount returned) to influence the response. There are four types of parameters: header parameters, path parameters, query string parameters, and request body parameters. The different types of parameter are often documented in separate tables. Not all endpoints contain each type of parameter.
 
 request_example:
   term: Request example
@@ -21,4 +21,4 @@ request_example:
 response_example_and_schema:
   term: Response example and schema
   def: >
-        The response example shows a sample response from the request example. The response example is not comprehensive of all parameter configurations or operations, but it should correspond with the parameters passed in the request example. The response lets developers know if the resource contains the information they want, the format, and how that information is structured and labeled. The response schema describes the response in a more comprehensive, general way, listing each property returned, a description of the property, the data format of the values, the structure, and other details.
+        The response example shows a sample response from the request example. The response example is not comprehensive of all parameter configurations or operations, but it should correspond with the parameters passed in the request example. The response lets developers know if the resource contains the information they want, the format, and how that information is structured and labeled. The description of the response is known as the response schema. The response schema documents the response in a more comprehensive, general way, listing each property returned, what each property contains, the data format of the values, the structure, and other details.

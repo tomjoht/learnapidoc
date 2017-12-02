@@ -23,7 +23,7 @@ Almost all API reference topics include these five sections:
 :  {{site.data.apirefsections.resource_description.def}}
 
 [2. Endpoints and methods](docapis_resource_endpoints.html)
-: {{site.data.apirefsections.resource_endpoints_and_methods.def}}
+: {{site.data.apirefsections.endpoints_and_methods.def}}
 
 [3. Parameters](docapis_doc_parameters.html)
 : {{site.data.apirefsections.parameters.def}}
@@ -56,4 +56,4 @@ Although there are automated ways to publish API docs, we're focusing on content
 
 ## Next steps
 
-You now have an idea of the tutorial, let's get going with the first section: [Resource description](docapis_resource_descriptions.html).
+Now that you have an idea of the tutorial, let's get going with the first section: [Resource description](docapis_resource_descriptions.html).

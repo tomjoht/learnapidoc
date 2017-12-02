@@ -52,7 +52,7 @@ curl
 : A command line utility often used to interact with REST API endpoints. Used in documentation for request code samples. curl is usually the default format used to display requests in API documentation. See [curl](https://curl.haxx.se/). Also written as curl. See [Make a curl call](docapis_make_curl_call.html) and [Understand curl more](docapis_understand_curl.html).
 
 endpoint
-: The end part of the request URL (after the base path). Also sometimes used to refer to the entire API reference topic. See [Endpoints](docapis_resource_endpoints.html).
+: {{site.data.apirefsections.endpoints_and_methods.def}} See [Endpoints and methods](docapis_resource_endpoints.html).
 
 Git
 : Distributed version control system commonly used when interacting with code. GitHub uses Git, as does BitBucket and other version control platforms. Learning Git is essential for working with developer documentation, since this is the most common way developers share, review, collaborate, and distribute code. See [https://git-scm.com/](https://git-scm.com/).
@@ -78,6 +78,9 @@ JSON
 Mercurial
 : An distributed revision control system, similar to Git but not as popular. See [https://www.mercurial-scm.org/](https://www.mercurial-scm.org/).
 
+method
+: The allowed operation with a resource in terms of GET, POST, PUT, DELETE, and so on. These operations determine whether you're reading information, creating new information, updating existing information, or deleting information.
+
 Mulesoft
 : Similar to Apiary or Apigee, Mulesoft provides an end-to-end platform for designing, developing, and distributing your APIs. For documentation, Mulesoft supports [RAML](pubapis_raml.html). See [https://www.mulesoft.com/](https://www.mulesoft.com/).
 
@@ -94,7 +97,7 @@ OpenAPI Initiative
 : The governing body that directs the OpenAPI specification. Backed by the Linux Foundation. See [https://www.openapis.org/](https://www.openapis.org/).
 
 parameter
-: A value usually passed into an endpoint that affects the response in some way. REST has four possible parameter types: head, path, query, and body parameters. See [Documenting parameters](docapis_doc_parameters.html) for more.
+: {{site.data.apirefsections.parameters.def}} See [Documenting parameters](docapis_doc_parameters.html) for more.
 
 Pelican
 : A static site generator based on Python. See [https://github.com/getpelican/pelican](https://github.com/getpelican/pelican).
@@ -119,6 +122,21 @@ RAML Console
 
 repo
 : In Git, a repo (short for repository) stores your project's code. Usually you only store non-binary (human-readable) text files in a repo, because Git can run diffs on text files and show you what has changed (but not with binary files).
+
+request
+: The way information is returned from an API. In a request, the client provides a resource URL with the proper authorization to an API server. The API returns a response with the informatino requested.
+
+request example
+: {{site.data.apirefsections.request_example.def}}
+
+resource description
+: {{site.data.apirefsections.resource_description.def}}
+
+response
+: The information returned by an API after a request is made. Responses are usually in either JSON or XML format.
+
+response example and schema
+: {{site.data.apirefsections.request_example.def}}
 
 REST API
 : Stands for Representational State Transfer. Uses web protocols (HTTP) to make requests and provide responses in a language agnostic way, meaning that users can choose whatever programming language they want to make the calls. See [What is a REST API?](docapis_what_is_a_rest_api.html).

@@ -40,7 +40,7 @@ In this course, after you practice using an API like a developer, you'll then sh
 As a technical writer, you'll tackle each element of a reference topic in REST API documentation:
 
 1. [Resource descriptions](docapis_resource_descriptions.html)
-2. [Endpoints](docapis_resource_endpoints.html)
+2. [Endpoints and methods](docapis_resource_endpoints.html)
 3. [Parameters](docapis_doc_parameters.html)
 4. [Request example](docapis_doc_sample_requests.html)
 5. [Response example](docapis_doc_sample_responses_and_schema.html)
