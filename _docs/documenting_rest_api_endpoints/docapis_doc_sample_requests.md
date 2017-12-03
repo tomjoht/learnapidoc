@@ -27,19 +27,19 @@ The following example shows a sample request from the [Callfire API](https://dev
 
 <a class="noExtIcon" href="https://developers.callfire.com/docs.html#pagination"><img src="images/callfireapirequestexample.png"/></a>
 
-The design of their API doc site arranges the sample requests and responses in the right column of a three-column layout. The request is formatted in curl, which we [explored earlier](docapis_install_curl).
+The design of this API doc site arranges the sample requests and responses in the right column of a three-column layout. The request is formatted in curl, which we [explored earlier](docapis_install_curl).
 
 ```curl
 curl -u "username:password" -H "Content-Type:application/json" -X GET "https://api.callfire.com/v2/texts?limit=50&offset=200"
 ```
 
-In general, use curl to show your sample request. curl is a common format to show requests for several reasons:
+curl is a common format to show requests for several reasons:
 
 * curl is language agnostic, so it's not specific to one particular programming language.
 * curl shows the header information required in the request.
 * curl shows the method used with the request, and other parameters.
 
-Here's another example of a curl request in the Parse API:
+In general, use curl to show your sample request. Here's another example of a curl request in the Parse API:
 
 <a href="http://docs.parseplatform.org/rest/guide/#updating-objects" class="noExtIcon"><img src="images/parseapirequest.png"/></a>
 
@@ -49,11 +49,11 @@ Other API doc sites might use the full resource URL, such as this plain example 
 
 <a class="noExtIcon" href="https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-friends-list"><img src="images/twitterrequestexample.png" /></a>
 
-The resource URL includes both the base path and the endpoint. One problem with this Twitter request example is that it doesn't indicate if any header information needs to be passed to authorize the request. curl requests can easily show any header parameters.
+The resource URL includes both the base path and the endpoint. One problem with showing the full resource URL is that it doesn't indicate if any header information needs to be passed to authorize the request. (If your API consists of GET requests only and doesn't require authorization, great, but few APIs are set up this way.) curl requests can easily show any header parameters.
 
 ## Multiple request examples
 
-If you have a lot of parameters, it might make sense to include several request examples. In the CityGrid Places API, the [`where` endpoint](http://docs.citygridmedia.com/display/citygridv2/Places+API#PlacesAPI-WhereSearchHTTPSEndpoint) is as follows:
+If you have a lot of parameters, consider including several request examples. In the CityGrid Places API, the [`where` endpoint](http://docs.citygridmedia.com/display/citygridv2/Places+API#PlacesAPI-WhereSearchHTTPSEndpoint) is as follows:
 
 ```
 https://api.citygridmedia.com/content/places/v2/search/where
@@ -71,7 +71,7 @@ This example shows how to "Find hotels in Boston, viewing results 1-5 in alphabe
 https://api.citygridmedia.com/content/places/v2/search/where?what=hotels&where=boston,ma&page=1&rpp=5&sort=alpha&publisher=test&format=json
 ```
 
-If you click the link, you can see the response directly. In the [responses topic](docapis_doc_sample_responses_and_schema.html#dynamic_responses), I get into more details about dynamically showing the response when users click the request.
+If you [click the link](https://api.citygridmedia.com/content/places/v2/search/where?what=hotels&where=boston,ma&page=1&rpp=5&sort=alpha&publisher=test&format=json), you can see the response directly. In the [responses topic](docapis_doc_sample_responses_and_schema.html#dynamic_responses), I get into more details about dynamically showing the response when users click the request.
 
 How many different requests and responses should you show? There's probably no easy answer, but probably no more than a few. You decide what makes sense for your API. Users usually understand the pattern after a few examples.
 
@@ -79,7 +79,7 @@ How many different requests and responses should you show? There's probably no e
 
 ## Requests in various languages
 
-One aspect of REST APIs that facilitates widespread adoption is that they aren't tied to a specific programming language. Developers can code their applications in any language, from Java to Ruby to JavaScript, Python, C#, Node JS, or something else. As long as they can make an HTTP web request in that language, they can use the API. The response from the web request will contain the data in either JSON or XML.
+One aspect of REST APIs that facilitates widespread adoption is that they aren't tied to a specific programming language. Developers can code their applications in any language, from Java to Ruby to JavaScript, Python, C#, Node JS, or something else. As long as developers can make an HTTP web request in that language, they can use the API. The response from the web request will contain the data in either JSON or XML.
 
 Because you can't entirely know which language your end users will be developing in, it's kind of fruitless to try to provide code samples in every language. Many APIs just show the format for submitting requests and a sample response, and the authors will assume that developers will know how to submit HTTP requests in their particular programming language.
 
@@ -113,25 +113,14 @@ The Postman app also has the ability to generate code snippets in a similar way.
 
 <img src="images/postmangeneratecodesnippet.png" class="medium" alt="Generate code snippet" />
 
-Then select the language you want:
+Then select the language you want, such as jQuery:
 
 <img src="images/postmancodesnippet.png" class="medium" alt="JavaScript Ajax code snippet" />
 
 {: .note}
 Although these code generators are probably helpful, they may or may not work for your API. Always review code samples with developers. In most cases, developers supply the code samples for the documentation, and technical writers briefly comment on the code samples.
 
-## Generate a JavaScript code sample from Postman
-
-{% include activity.html %}
-{: .note}
-
-In this example, let's generate JavaScript code snippet from Postman:
-
-1.  Configure a weatherdata request in Postman (or select one you've saved).
-2.  Below the Send button, click the **Generate Code Snippets** button.
-3.  In the dialog box that appears, browse the available code samples using the drop-down menu. Note how your request data is implemented into each of the different code sample templates.
-4.  Select the **JavaScript > jQuery AJAX** code sample:
-5.  Copy the content by clicking the **Copy** button.
+(For an activity that involves using the generated jQuery code from Postman, see [Use the JSON from the response payload](docapis_json_console.html).)
 
 ## SDKs provide tooling for APIs
 
@@ -139,11 +128,11 @@ A lot of times, developers will create an SDK (software development kit) that ac
 
 For example, at one company I worked at, we had both a REST API and a JavaScript SDK. Because JavaScript was the target language developers were working in, the company developed a JavaScript SDK to make it easier to work with REST using JavaScript. You could submit REST calls through the JavaScript SDK, passing a number of parameters relevant to web designers.
 
-An SDK is any kind of tooling that makes it easier to work with your API. It's extremely common for a company to provide a (language agnostic REST API), and then to develop an SDK that makes it easy to implement the API in the primary language they expect users to implement the API in. As such, peppering your sample requests with these small request snippets in other languages probably isn't that important, since the SDK provides an easier implementation. If you have an SDK, you'll want to make more detailed code samples showing how to use the SDK.
+An SDK is any kind of tooling that makes it easier to work with your API. It's extremely common for a company to provide a language agnostic REST API, and then to develop an SDK that makes it easy to implement the API in the primary language they expect users to implement the API in. As such, peppering your sample requests with these small request snippets in other languages probably isn't that important, since the SDK provides an easier implementation. If you have an SDK, you'll want to make more detailed code samples showing how to use the SDK.
 
 ## API explorers provide interactivity with your own data
 
-Many APIs have an API explorer feature. For example, here's a typical reference page for Spotify's API docs:
+Many APIs have an API explorer feature that lets users make actual requests directly from the documentation. For example, here's a typical reference page for Spotify's API docs:
 
 <a href="https://developer.spotify.com/web-api/console/get-album/" class="noExtIcon"><img src="images/spotifyapiconsole.png"/></a>
 
@@ -153,7 +142,7 @@ Flickr's API docs also have a built-in API Explorer:
 
 As does the New York Times API:
 
-<a href="http://developer.nytimes.com/article_search_v2.json#/Console/GET/articlesearch.json"><img src="images/nytimesrequestexample.png"/></a>
+<a class="noExtIcon" href="http://developer.nytimes.com/article_search_v2.json#/Console/GET/articlesearch.json"><img src="images/nytimesrequestexample.png"/></a>
 
 The API Explorer lets you insert your own values, your own API key, and other parameters into a request so you can see the responses directly in the Explorer. Being able to see your own data maybe makes the response more real and immediate.
 
@@ -171,16 +160,16 @@ Foursquare's API docs used to have a built-in API explorer in the previous versi
 
 <a href="https://developer.foursquare.com/docs" class="noExtIcon"><img src="images/foursquareapiexplorer.png" alt="Foursquare's API Explorer" /></a>
 
-As far as integrating other API Explorer tooling, this is a task that should be relatively easy for developers. All the Explorer does is map values from a field to an API call and return the response to the same interface. In other words, the API plumbing is all there &mdash; you just need a little JavaScript and front-end skills to make it happen.
+As far as integrating custom API Explorer tooling, this is a task that should be relatively easy for developers. All the Explorer does is map values from a field to an API call and return the response to the same interface. In other words, the API plumbing is all there &mdash; you just need a little JavaScript and front-end skills to make it happen.
 
-However, you don't have to build your own tooling. Existing tools such as [Swagger UI](http://swagger.io/swagger-ui/) (which parses a OpenAPI specification document) and [Readme.io](http://readme.io) (which allows you to enter the details manually) can integrate API Explorer functionality directly into your documentation.
+However, you don't have to build your own tooling. Existing tools such as [Swagger UI](http://swagger.io/swagger-ui/) (which parses a [OpenAPI specification document](pubapis_openapi_tutorial_overview.html)) and [Readme.io](http://readme.io) (which allows you to enter the details manually or from an OpenAPI specification) can integrate API Explorer functionality directly into your documentation.
 
 {: .tip}
 For a tutorial on how to create your own API explorer functionality, see the [Swagger UI tutorial](pubapis_swagger.html).
 
 ## Request example for the surfreport endpoint
 
-Let's return to the `surfreport/{beachId}` endpoint in our [sample scenario](docapis_new_endpoint_to_doc.html) and create a request example for it:
+Let's return to the `surfreport/{beachId}` endpoint in our [sample scenario](docapis_new_endpoint_to_doc.html) and create a request example for it. Here's my approach:
 
 <div class="docSample">
 {% include_relative surfreport_request.html %}

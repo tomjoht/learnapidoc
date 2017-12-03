@@ -23,23 +23,23 @@ redirect_from:
 
 ## Example of a response example and response schema
 
-The following is a sample response from the SendGrid API. Their documentation provides a tabbed display with an example on one tab:
+The following is a sample response from the SendGrid API. Their documentation provides a tabbed display with an **Example** on one tab:
 
 <a class="noExtIcon" href="https://sendgrid.com/docs/API_Reference/api_v3.html"><img src="images/sendgridresponseexample1.png" /></a>
 
-And a definition of the response schema on another tab:
+And the response **Schema** on another tab:
 
 <a class="noExtIcon" href="https://sendgrid.com/docs/API_Reference/api_v3.html"><img src="images/sendgridresponseexample2.png" /></a>
 
-The definition of the response is called the [schema or the model](http://json-schema.org/). What works particularly well with the SendGrid example is the use of expand/collapse tags to mirror the same structure as the example, with objects at different levels.
+The definition of the response is called the schema or the model (the terms are used synonymously), and aligns with the [JSON schema language and descriptions](http://json-schema.org/). What works particularly well with the SendGrid example is the use of expand/collapse tags to mirror the same structure as the example, with objects at different levels.
 
-Swagger UI also provides both an example value and a schema or model. For example, in the sample Sunset and sunrise times API doc that I created for the [SwaggerUI activity](/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset), you can see a distinction between the response example and the response schema. Here's the example value:
+Swagger UI also provides both an Example Value and a Schema or Model. For example, in the sample Sunset and sunrise times API doc that I created for the [SwaggerUI activity](/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset), you can see a distinction between the response example and the response schema. Here's the example value:
 
 <a class="noExtIcon" href="/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset"><img src="images/sunriseexample.png" alt="Sunrise example value" /></a>
 
-The response example should correspond with the request example. However, just as the request example might only include a subset of all possible parameters, the response might also be a subset of all possible returned information.
+The response example should correspond with the request example. Just as the request example might only include a subset of all possible parameters, the response example might also be a subset of all possible returned information.
 
-However, the response schema's documentations comprehensive of all possible properties returned in the response. This is why you need both a response example and a response schema/model. Here's the response model for the Sunrise and sunset API:
+However, the response schema's documentation is comprehensive of all possible properties returned in the response. This is why you need both a response example and a response schema/model. Here's the response schema/model for the Sunrise and sunset API:
 
 <a class="noExtIcon" href="/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset"><img src="images/sunrisemodelexample.png" alt="Sunrise model" /></a>
 
@@ -53,23 +53,25 @@ If the header information is important to include in the response example (becau
 
 ## Do you need to define the response?
 
-One distinguishing characteristic of good API documentation is the inclusion of the response schema, with descriptions of each property. Some API documentation omits this section because the responses might seem self-evident or intuitive. That might be the case. In Twitter's API, the responses aren't explained (you can see an [example here](https://developer.twitter.com/en/docs/accounts-and-users/manage-account-settings/api-reference/get-account-settings)).
+Some API documentation omits the response schema because the responses might seem self-evident or intuitive. That might be the case. In Twitter's API, the responses aren't explained (you can see an [example here](https://developer.twitter.com/en/docs/accounts-and-users/manage-account-settings/api-reference/get-account-settings)).
 
-However, most documentation would be better with the response described, especially if the properties are abbreviated or cryptic. Developers sometimes abbreviate the responses to increase performance by reducing the amount of text sent. In one endpoint I documented, the response included about 20 different two-letter abbreviations. I spent days tracking down what each abbreviation meant, and found that many developers didn't know what half the responses meant.
+However, most documentation would be better with the response described, especially if the properties are abbreviated or cryptic. Developers sometimes abbreviate the responses to increase performance by reducing the amount of text sent. In one endpoint I documented, the response included about 20 different two-letter abbreviations. I spent days tracking down what each abbreviation meant, and found that many developers who worked on the API didn't know what many of the responses meant.
 
 One of the problems with the [Mashape Weather API](https://market.mashape.com/fyhao/weather-13) we've been using [as an example](docapis_new_endpoint_to_doc.html) is that it doesn't describe the meaning of the responses. If the air quality index is `25`, is that a good or bad value when compared to `65`? What is the max or min value that the API might return? Further, what exactly does the "air quality index" mean? Also, what longitude and latitude values are supported?
 
 ## Use realistic values in the example response
 
-In the example response, the values should be realistic without being real. If developers give you a sample response, make sure each of the possible values are reasonable and not bogus (or consisting of comic book character names).
+In the example response, the values should be realistic without being real. If developers give you a sample response, make sure each of the possible values are reasonable and not so fake they're distracting (such as users consisting of comic book character names).
 
-Also, the sample response should not contain real customer data. If you get a sample response from an engineer, and the data looks real, make sure it's not just from a cloned production database, which is common. Developers may not realize that the data needs to be fictitious but representative, and scraping a production database may be the easiest approach for them.
+Also, the sample response should not contain real customer data. If you get a sample response from an engineer, and the data looks real, make sure it's not just from a cloned production database, which is commonly done. Developers may not realize that the data needs to be fictitious but representative, and scraping a production database may be the easiest approach for them.
 
 ## Format the JSON and use code syntax highlighting
 
 Use proper JSON formatting for the response. A tool such as [JSON Formatter and Validator](http://jsonformatter.curiousconcept.com/) can make sure the spacing is correct.
 
-If you can add syntax highlighting as well, definitely do it. If you're using a static site generator such as [Jekyll](pubapis_jekyll.html) or markdown syntax with [GitHub](pubapis_github_wikis.html), you can probably use the [Rouge](https://github.com/jneen/rouge) built-in syntax highlighter. Other tools use [Pygments](http://pygments.org/). Rouge and Pygments rely on "lexers" to indicate how the code should be highlighted. For example, some common lexers are `java`, `json`, `html`, `xml`, `cpp`, `dotnet`, and `javascript`.
+If you can add syntax highlighting as well, definitely do it. If you're using a static site generator such as [Jekyll](pubapis_jekyll.html) or markdown syntax with [GitHub](pubapis_github_wikis.html), you can probably use the [Rouge](https://github.com/jneen/rouge) built-in syntax highlighter. Other static site generators use [Pygments](http://pygments.org/). 
+
+Rouge and Pygments rely on "lexers" to indicate how the code should be highlighted. For example, some common lexers are `java`, `json`, `html`, `xml`, `cpp`, `dotnet`, and `javascript`.
 
 If you don't have any syntax highlighters to integrate directly into your tool, you could add syntax highlighting manually for each code sample by pasting it into the [syntaxhighlight.in](http://syntaxhighlight.in/) highlighter.
 

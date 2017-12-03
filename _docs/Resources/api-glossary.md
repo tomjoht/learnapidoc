@@ -153,6 +153,9 @@ response example and schema
 REST API
 : Stands for Representational State Transfer. Uses web protocols (HTTP) to make requests and provide responses in a language agnostic way, meaning that users can choose whatever programming language they want to make the calls. See [What is a REST API?](docapis_what_is_a_rest_api.html).
 
+SDK
+: Software development kit. Developers often create an SDK to accompany a REST API. The SDK helps developers implement the API using a specific language, such as Java or PHP.
+
 Smartbear
 : The company that maintains and develops the Swagger tooling &mdash; [Swagger Editor](https://swagger.io/swagger-editor/), [Swagger UI](https://swagger.io/swagger-ui/), [Swagger Codegen](https://swagger.io/swagger-codegen/), [SwaggerHub](https://app.swaggerhub.com/home), and [others](https://swagger.io/tools/). See [Smartbear](https://smartbear.com/).
 

@@ -62,7 +62,7 @@ folders:
   - title: Dive into dot notation
     jurl: /docapis_diving_into_dot_notation.html
 
-- title: Documenting endpoints
+- title: Documenting API reference topics
   jurl: /docendpoints.html
   folderitems:
 
