@@ -33,13 +33,13 @@ And the response **Schema** on another tab:
 
 The definition of the response is called the schema or the model (the terms are used synonymously), and aligns with the [JSON schema language and descriptions](http://json-schema.org/). What works particularly well with the SendGrid example is the use of expand/collapse tags to mirror the same structure as the example, with objects at different levels.
 
-Swagger UI also provides both an Example Value and a Schema or Model. For example, in the sample Sunset and sunrise times API doc that I created for the [SwaggerUI activity](/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset), you can see a distinction between the response example and the response schema. Here's the example value:
+Swagger UI also provides both an example value and a schema or model. For example, in the sample Sunset and sunrise times API doc that I created for the [SwaggerUI activity](/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset), you can see a distinction between the response example and the response schema. Here's the **Example Value**:
 
 <a class="noExtIcon" href="/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset"><img src="images/sunriseexample.png" alt="Sunrise example value" /></a>
 
-The response example should correspond with the request example. Just as the request example might only include a subset of all possible parameters, the response example might also be a subset of all possible returned information.
+The example response should correspond with the example request. And just as the request example might only include a subset of all possible parameters, the response example might also be a subset of all possible returned information.
 
-However, the response schema's documentation is comprehensive of all possible properties returned in the response. This is why you need both a response example and a response schema/model. Here's the response schema/model for the Sunrise and sunset API:
+However, the *response schema* is comprehensive of all possible properties returned in the response. This is why you need both a response example and a response schema. Here's the response schema for the Sunrise and sunset API:
 
 <a class="noExtIcon" href="/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset"><img src="images/sunrisemodelexample.png" alt="Sunrise model" /></a>
 
@@ -53,9 +53,9 @@ If the header information is important to include in the response example (becau
 
 ## Do you need to define the response?
 
-Some API documentation omits the response schema because the responses might seem self-evident or intuitive. That might be the case. In Twitter's API, the responses aren't explained (you can see an [example here](https://developer.twitter.com/en/docs/accounts-and-users/manage-account-settings/api-reference/get-account-settings)).
+Some API documentation omits the response schema because the responses might seem self-evident or intuitive. In Twitter's API, the responses aren't explained (you can see an [example here](https://developer.twitter.com/en/docs/accounts-and-users/manage-account-settings/api-reference/get-account-settings)).
 
-However, most documentation would be better with the response described, especially if the properties are abbreviated or cryptic. Developers sometimes abbreviate the responses to increase performance by reducing the amount of text sent. In one endpoint I documented, the response included about 20 different two-letter abbreviations. I spent days tracking down what each abbreviation meant, and found that many developers who worked on the API didn't know what many of the responses meant.
+However, most documentation would be better off with the response described, especially if the properties are abbreviated or cryptic. Developers sometimes abbreviate the responses to increase performance by reducing the amount of text sent. In one endpoint I documented, the response included about 20 different two-letter abbreviations. I spent days tracking down what each abbreviation meant, and found that many developers who worked on the API didn't know what many of the responses meant.
 
 One of the problems with the [Mashape Weather API](https://market.mashape.com/fyhao/weather-13) we've been using [as an example](docapis_new_endpoint_to_doc.html) is that it doesn't describe the meaning of the responses. If the air quality index is `25`, is that a good or bad value when compared to `65`? What is the max or min value that the API might return? Further, what exactly does the "air quality index" mean? Also, what longitude and latitude values are supported?
 
@@ -69,7 +69,7 @@ Also, the sample response should not contain real customer data. If you get a sa
 
 Use proper JSON formatting for the response. A tool such as [JSON Formatter and Validator](http://jsonformatter.curiousconcept.com/) can make sure the spacing is correct.
 
-If you can add syntax highlighting as well, definitely do it. If you're using a static site generator such as [Jekyll](pubapis_jekyll.html) or markdown syntax with [GitHub](pubapis_github_wikis.html), you can probably use the [Rouge](https://github.com/jneen/rouge) built-in syntax highlighter. Other static site generators use [Pygments](http://pygments.org/). 
+If you can add syntax highlighting as well, definitely do it. If you're using a static site generator such as [Jekyll](pubapis_jekyll.html) or markdown syntax with [GitHub](pubapis_github_wikis.html), you can probably use the [Rouge](https://github.com/jneen/rouge) built-in syntax highlighter. Other static site generators use [Pygments](http://pygments.org/).
 
 Rouge and Pygments rely on "lexers" to indicate how the code should be highlighted. For example, some common lexers are `java`, `json`, `html`, `xml`, `cpp`, `dotnet`, and `javascript`.
 
@@ -85,7 +85,7 @@ Tables are most commonly used. In [Peter Gruenbaum's API tech writing course on 
 
 Gruenbaum's use of tables is mostly to reduce the emphasis on tools and place it more on the content.
 
-The Dropbox API represents the nesting with a slash. For example, `name_details/` and `team/` indicate the multiple object levels.
+The Dropbox API represents the nesting with a slash. For example, `name_details/`, `team/`, and `quota_info` indicate the multiple object levels.
 
 <a href="https://www.dropbox.com/developers/core/docs#disable-token" class="noExtIcon"><img src="images/returnvaluedefinitions.png" alt="Dropbox nested example" /></a>
 
@@ -93,17 +93,17 @@ Other APIs will nest the response definitions to imitate the JSON structure. Her
 
 <a href="http://dev.bitly.com/user_info.html" class="noExtIcon"><img src="images/bitlyresponsedoc.png" alt="Bitly response" /></a>
 
-Multiple levels of bullets is usually an eyesore, but here it serves a purpose here that works well without requiring sophisticated styling.
+Multiple levels of bullets is usually an eyesore, but here it serves a purpose that works well without requiring sophisticated styling.
 
 {% include random_ad.html %}
 
-eBay's approach is a little more unique:
-
-<a href="http://developer.ebay.com/Devzone/shopping/docs/CallRef/FindPopularItems.html" class="noExtIcon"><img src="images/ebayexampleresponse.png" alt="eBay example response" /></a>
-
-For example, `MinimumAdvertisedPrice` is nested inside `DiscountPriceInfo`, which is nested in `Item`, which is nested in `ItemArray`. (Note also that this response is in XML instead of JSON.)
+eBay's approach is a little more unique. In this case, `MinimumAdvertisedPrice` is nested inside `DiscountPriceInfo`, which is nested in `Item`, which is nested in `ItemArray`. (Note also that this response is in XML instead of JSON.)
 
 <a href="http://developer.ebay.com/Devzone/shopping/docs/CallRef/FindPopularItems.html" class="noExtIcon"><img src="images/ebaycode.png" alt="eBay nested example" /></a>
+
+Here's the response documentation:
+
+<a href="http://developer.ebay.com/Devzone/shopping/docs/CallRef/FindPopularItems.html" class="noExtIcon"><img src="images/ebayexampleresponse.png" alt="eBay example response" /></a>
 
 It's also interesting how much detail eBay includes for each item. Whereas the Twitter writers appear to omit descriptions, the eBay authors write small novels describing each item in the response.
 
@@ -117,23 +117,23 @@ Stripe's design juxtaposes the sample response in a right side pane with the res
 
 A lot of APIs have modeled their design after Stripe's. For example, see <a href="https://github.com/tripit/slate">Slate</a>, <a href="https://github.com/sourcey/spectacle">Spectacle</a>, or <a href="http://readme.io">readme.io</a>.
 
-Should you use a three-column layout with your API documentation? Maybe. However, if the response example and description doesn't line up, the viewer's focus is somewhat split, and the user must resort to more up-and-down scrolling. Additionally, if your layout uses three columns, your middle column will have some narrow constraints that doesn't leave much room for screenshots and code examples.
+Should you use a three-column layout with your API documentation? Maybe. However, if the response example and description doesn't line up, the viewer's focus is somewhat split, and the user must resort to more up-and-down scrolling. Additionally, if your layout uses three columns, your middle column will have some narrow constraints that don't leave much room for screenshots and code examples.
 
-The MYOB Developer Center takes an interesting approach in documenting the JSON in their APIs. They list the JSON structure in a table-like way, with different levels of indentation. You can move your mouse over a field for a tooltip description, or you can click it to have a description expand below.
+The MYOB Developer Center takes an interesting approach in documenting the JSON in their APIs. They list the JSON structure in a table-like way, with different levels of indentation. You can move your mouse over a field for a tooltip description, or you can click it to have a description expand below. The use of tooltips enables the rows of the example and the description to line up perfectly.
 
 To the right of the JSON definitions is a code sample with real values. When you select a value, both the element in the table and the element in the code sample highlight at the same time.
 
 <a href="http://developer.myob.com/api/accountright/v2/generalledger/account/#GET" class="noExtIcon"><img src="images/myobjsondoc.png" alt="MYOB JSON doc approach" /></a>
 
-If you have long JSON objects like this, a custom table with different classes applied to different levels might be the only truly usable solution. It facilitates scanning, and the popover + collapsible approach allows you to compress the table so you can jump to the part you're interested in.
+This approach facilitates scanning, and the popover + collapsible approach allows you to compress the table so you can jump to the part you're interested in.
 
-However, this approach requires more manual work from a documentation point of view, and there isn't any interactivity to try out the endpoints. Still, if you have long JSON objects, it might be worth it.
+However, this approach requires more manual work from a documentation point of view. Still, if you have long JSON objects, it might be worth it.
 
 ## Embedding dynamic responses
 
 Sometimes responses are generated dynamically based on API calls to a test system. For example, look at the [Rhapsody API](https://developer.rhapsody.com/api) and click an endpoint &mdash; the response is generated dynamically.
 
-Another API with dynamic responses is the [Open Weather API](https://openweathermap.org/current). When you click one of the "Examples of API calls," such as [http://samples.openweathermap.org/data/2.5/weather?q=London](http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1), you see the response dynamically returned in the browser.
+Another API with dynamic responses is the [Open Weather API](https://openweathermap.org/current). When you click a link in the "Examples of API calls" section, such as [http://samples.openweathermap.org/data/2.5/weather?q=London](http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1), you see the response dynamically returned in the browser.
 
 <a href="http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1" class="noExtIcon"><img class="medium" src="images/dynamicresponseinbrowser.png"/></a>
 
@@ -141,9 +141,13 @@ The Citygrid API, which we explored in the [requests example topic](docapis_doc_
 
 This approach works well for GET requests that return public information. However, it probably wouldn't scale for other methods (such as POST or DELETE) or which request authorization.
 
+## What about status codes?
+
+The responses section sometimes (briefly) lists the possible status and error codes returned with the responses. However, because these codes are usually common across all endpoints in the API, status and error codes are often documented in their own section, apart from a specific endpoint's documentation. I cover this topic in [Documenting status and error codes](docapis_doc_status_codes.html).
+
 ## Response example and schema for the surfreport endpoint
 
-For the `surfreport/{beachId}` endpoint that we've been exploring in our [sample API scenario](docapis_new_endpoint_to_doc.html), let's create a section that shows the response example and a response schema. Here's my approach for these sections:
+For the `surfreport/{beachId}` endpoint that we've been exploring in our [sample API scenario](docapis_new_endpoint_to_doc.html), let's create a section that shows the response example and schema. Here's my approach for these sections:
 
 <div class="docSample">
 {% include_relative surfreport_response.html %}

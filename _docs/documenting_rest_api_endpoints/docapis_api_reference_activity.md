@@ -14,7 +14,9 @@ After completing the [API reference tutorial](docapis_api_reference_tutorial_ove
 
 ## Critique the API reference documentation
 
-Assuming you've found an open-source API doc project, it's time to start the activity.
+If you've found an open source project, great. If you don't have a project but you still want to do the activity, select one of the API from the [list here](pubapis_apilist.html).
+
+To critique an API reference topic:
 
 1.  Locate one of the reference topics for a resource in the API.
 2.  Identify each of the sections in the existing documentation:
@@ -24,24 +26,27 @@ Assuming you've found an open-source API doc project, it's time to start the act
     *  Parameters
     *  Request example
     *  Response example and schema
-    *  Status and error codes
+
+    The section names may differ, but they usually are easily recognizable.
 
 3.  Evaluate each of these sections and assess whether the documentation is complete. Are there areas for improvement? Critique one or more of the API reference topics.
 
-    Here are some areas to look at:
+    Here are some questions to look at:
 
-    **Resource description:** Is it action-oriented? A brief 1-3 sentence summary? Clear?
+    **Resource description:** Is the description action-oriented? Is it a brief 1-3 sentence summary? Is it clear? Does it link to more information somewhere else?
 
-    **Endpoints and methods:** Does it include the method? Are any path parameters easy to identify? If there are multiple URLs, are they logically grouped?
+    **Endpoints and methods:** Does the endpoint list the methods available? Are any path parameters in the endpoint easy to identify? If there are multiple endpoints, are they logically grouped?
 
-    **Parameters:** Is each parameter described? If it's a request body parameter, are the data types indicated? Are max and min values identified? Any unsupported values noted?
+    **Parameters:** Is each parameter described? Are the parameters separated out into different sections by parameter type? If it's a request body parameter, are the data types indicated? Are max and min values identified? Any unsupported values noted?
 
-    **Request example:** Does the sample request work (with the right authorization)? Does it include a representative number of parameters? Is it formatted correctly in curl?
+    **Request example:** Does the sample request work (with the right authorization)? Does it include a representative number of parameters? Is it formatted correctly in curl? Are any other languages shown with the sample request? Is the code syntax highlighted?
 
-    **Response example:** Does the sample response match the sample request? Is it formatted and highlighted correctly? Is each element in the response described, along with the data type?
+    **Response example:** Does the sample response match the sample request? Is it formatted and highlighted correctly? Is each element in the response described, along with the data type? Does the response documentation separate the example from the description, or combine the two? How are nested objects portrayed? Are any status and error codes listed?
 
-    **Status and error codes:** Does the API provide status and error codes that are unique? Are they documented?
+## Create or fix an API reference documentation topic
 
-4.  Focus on one of the API reference topics that needs help, and edit the topic to improve it.
-5.  If the API has a new reference endpoint to document, create the documentation for it.
-6.  Create a [pull request](pubapis_github_pull_requests.html) and contribute it to the project.
+This part of the activity might be more difficult to do, but here is where you'll start building some examples for your portfolio. 
+
+1.  Identify one of the API reference topics that needs help. (If the API has a new reference endpoint to document, focus on this endpoint.)
+2.  Edit the topic to improve it. (If it's a new endpoint, write the documentation for it.)
+6.  Create a [pull request](pubapis_github_pull_requests.html) and contribute your edits to the project.
