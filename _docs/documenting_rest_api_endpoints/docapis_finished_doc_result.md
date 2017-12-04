@@ -9,9 +9,7 @@ path1: /docendpoints.html
 
 {% include activity.html %}
 
-Pull together the various parts you've worked on and bring them together to showcase the full example.
-
-I chose to format mine in Markdown syntax in a text editor. Here's my example.
+Let's pull together the various parts we've worked on and bring them together to showcase the full example.
 
 <div class="docSample">
 {% include_relative surfreport_resource_description.html %}
@@ -21,8 +19,15 @@ I chose to format mine in Markdown syntax in a text editor. Here's my example.
 {% include_relative surfreport_response.html %}
 </div>
 
-## Structure and templates
+## Some notes on templates and tools
 
+With the sample documentation here, I'm using Jekyll. Each of these sections is stored as a relative include that I've singled sourced to both this page and the previous pages. This ensures I'm not copying and pasting the same content in multiple areas of the site.
+
+{: .tip}
 If you have a lot of endpoints to document, you'll probably want to create templates that follow a common structure. Additionally, if you want to add a lot of styling to each of the elements, you may want to push each of these elements into your template by way of a script. I'll talk more about publishing in the upcoming sections, [Publishing API Documentation](publishingapis.html).
+
+## Next steps
+
+Now that you've had your head buried in API reference documentation, it's time to dive into testing a bit more. As you work with API endpoints and other code, you'll need to test these endpoints yourself, both to gather and verify the information in your documentation. Testing isn't always straightfoward, so I devote an entire section to this topic.
 
 {% include random_ad.html %}

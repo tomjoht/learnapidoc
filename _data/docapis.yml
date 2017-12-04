@@ -97,6 +97,9 @@ folders:
   jurl: /testingdocs.html
   folderitems:
 
+  - title: Overview to testing your docs
+    jurl: /testingdocs_overview.html
+
   - title: Set up a test environment
     jurl: /testingdocs_test_environment.html
 
