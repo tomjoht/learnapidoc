@@ -143,7 +143,7 @@ You can also follow instructions for working with Swagger UI [here in the Swagge
 
     Save the file.
 
-7.  Drag the **swagger_weather.yml** file that you downloaded earlier into the same directory as the index.html file you just edited. Your file structure should look as follows:
+7.  Drag the **openapi_weather.yml** file that you downloaded earlier into the same directory as the index.html file you just edited. Your file structure should look as follows:
 
     ```
     ├── swagger
