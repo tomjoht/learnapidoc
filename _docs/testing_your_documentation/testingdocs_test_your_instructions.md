@@ -21,7 +21,7 @@ One benefit to testing your instructions is that you can start to answer your ow
 
 A lot of times, when you discover a discrepancy in what's supposed to happen, you can confront an engineer and tell him or her that something isn't working correctly. Or you can make suggestions for improving workflows, terms, responses, error messages, etc. You can't do this if you're just taking notes about what engineers say, or if you're just copying information from wiki specs or engineer-written pages.
 
-When things don't work, you can identify and log bugs in issue tracking systems such as JIRA. This is helpful to the team overall and increases your own credibility with the engineers. It's also immensely fun to log a bug against an engineer's code, because it shows that you've discovered flaws and errors in the system.
+When things don't work, you can identify and log bugs in issue tracking systems such as JIRA. This is helpful to the team overall and increases your own credibility with the engineers. It's also immensely fun to log a bug against an engineer's code, because it shows that you've discovered flaws and errors in what the "gods of code" have created.
 
 Other times, the bugs are within your own documentation. For example, I had one of my parameters wrong. Instead of `verboseMode`, the parameter was simply `verbose`. This is one of those details you don't discover unless you test something, find it doesn't work, and then set about figuring out what's wrong.
 
@@ -37,15 +37,11 @@ It's little things like that, which you learn as you're going through the proces
 
 In addition to testing individual endpoints and other features, it's also important to go through the whole user workflow from beginning to end.
 
-While working at Amazon, it wasn't until I built my own app and submitted it to the Appstore that I discovered some bugs. At the time, I was documenting an app template designed for third-party Android developers building streaming media apps for the Amazon Appstore.
-
-To get a better understanding of the developer's tasks and process, I needed to be familiar with the steps I was asking developers to do. For me, that meant building an app and actually submitting my app to the Appstore &mdash; the whole workflow from beginning to end.
+While working at one company, it wasn't until I built my own app and submitted it to the Appstore that I discovered some bugs. I was documenting an app template designed for third-party Android developers building streaming media apps for the Amazon Appstore. To get a better understanding of the developer's tasks and process, I needed to be familiar with the steps I was asking developers to do. For me, that meant building an app and actually submitting my app to the Appstore &mdash; the whole workflow from beginning to end.
 
 To build my sample app, I had to first figure out how to get content for my app. I decided to take the video recordings of podcasts and meetups that we had through the [Write the Docs podcast](http://podcast.writethedocs.org/) and various WTD meetups and use that media for the app.
 
-Since the app template didn't support YouTube as a web host, I downloaded the MP4s from YouTube and uploaded them directly to my web host.
-
-Then I needed to construct the media feed that I would use to integrate with the app template. The app template could read all the media from a feed by targeting it with Jayway Jsonpath or XPath expression syntax.
+Since the app template didn't support YouTube as a web host, I downloaded the MP4s from YouTube and uploaded them directly to my web host. Then I needed to construct the media feed that I would use to integrate with the app template. The app template could read all the media from a feed by targeting it with Jayway Jsonpath or XPath expression syntax.
 
 I used Jekyll to build my feed. You can view my JSON-based feed here: [podcast.writethedocs.org/fab.json](http://podcast.writethedocs.org/fab.json). I auto-generated the feed through Liquid `for` loops in Jekyll.
 
@@ -67,9 +63,9 @@ When you select a video, you see a video preview screen:
 
 The meetups are divided into various categories, which gives some order to the list of videos.
 
-All seemed to go well, but then I discovered some bugs that I wouldn't have discovered had I not actually submitted the app into the Appstore. First, I found that device targeting (listing certain features in your Android manifest to identify which Fire devices your app supports) didn't work correctly for Fire TV apps. This issue wasn't directly related to the apptemplate, though.
+All seemed to go well, but then I discovered some bugs that I wouldn't have discovered had I not actually submitted the app into the Appstore. First, I found that device targeting (listing certain features in your Android manifest to identify which Fire devices your app supports) didn't work correctly for Fire TV apps. (This issue wasn't directly related to the app template, though.)
 
-I also discovered other issues. Although developers had tested the app template for many months, they hadn't tested pushing apps into the Appstore with the app template. It turns out the template's in-app purchases component (not active or configured by default) automatically triggered the Appstore to automatically add a tag indicating that the app contains in-app purchases.
+I also discovered other issues. Although developers had tested the app template for many months, they hadn't tested pushing apps into the Appstore with the app template. It turns out the template's in-app purchases component (not active or configured by default) automatically triggered the Appstore to add a tag indicating that the app contains in-app purchases.
 
 This surprised the dev team, and it would have caused a lot of issues if all apps that third-party developers were building suddenly showed this in-app purchases tag.
 
@@ -81,13 +77,15 @@ This experience reinforced to me the importance of testing everything myself and
 
 It's not always possible to run code through real situations, and there are times when I might just help edit and publish engineering-written docs, but that's not the scenario I prefer to work in. I love getting my hands on the code and actually trying to make it work in the scenario it was designed for. Really, how else can you write good documentation?
 
+The team also asserted that the same app could be submitted into the Google Play Appstore. However, this was an untested assumption. When I submitted my app, Google rejected it due to missing banner assets declared in the manifest. It also triggered "dangerous permission" warnings. I relayed the information to engineers, who created JIRA tickets to address the issues. More than just creating better documentation, this testing allowed me to improve the products I was documenting.
+
 Another team developer had a different tool for publishing apps, which I also set about documenting. This tool was designed for non-technical end users and was supposed to be so easy, it didn't have any more documentation than a brief FAQ.
 
-I tested the tool from beginning to end by creating and submitting an app with it. By the time I finished, I had more than 30 questions along with several significant issues that I discovered.
+I tested the tool from beginning to end by creating and submitting an app with it. By the time I finished, I had more than 30 questions along with several significant issues that I discovered. I uncovered a number of previously unknown bugs, called attention to a problematic synchronization issue, brought together teams from across organizations to troubleshoot some issues, and generally raised my value from mere documentation writer to more of a power player on the team.
 
 ## Empowered to test additional features
 
-Testing documentation for developers is difficult because we often just provide reference APIs for users to integrate into their own apps. We assume that they already have apps, and so all they need is the API integration information. But many times you can't know what issues the API has until you integrate it into a sample app, using the API in a full scenario from beginning to end.
+Testing documentation for developers is difficult because we often just provide reference APIs for users to integrate into their own apps. We assume that they already have apps, and so all they need is the API integration information. But many times you can't know what issues the API has until you integrate it into a sample app and use the API in a full scenario from beginning to end.
 
 For example, for general Fire TV users who weren't using the app template, I also wrote documentation on how to integrate and send recommendations. But since I didn't have my own general Fire TV app (not one built with Fire App Builder) to test this with, I didn't play around with the code to actually send recommendations. I had to take on faith much of my information based on the engineer's instructions and the feedback we were getting from beta users.
 
@@ -103,12 +101,14 @@ Testing your instructions makes the tech writing career a lot more engaging. I'd
 
 There's nothing worse than ending up as a secretary for engineers, where your main task is to listen to what engineers say, write up notes, send it to them for review, and listen to their every word as if they're emperors who give you a thumbs up or thumbs down. That's not the kind of technical writing work that inspires or motivates me.
 
-Instead, when I can walk through the instructions myself, and confirm whether they work or not, adjusting them with more clarity or detail as needed, that's when things become interesting. (And actually, the more I learn about the knowledge domain itself -- the technology, product landscape, business and industry, etc -- the appeal of technical writing increases dramatically.
+Instead, when I can walk through the instructions myself, and confirm whether they work or not, adjusting them with more clarity or detail as needed, that's when things become interesting. (And actually, the more I learn about the knowledge domain itself &mdash; the technology, product landscape, business and industry, etc &mdash; the appeal of technical writing increases dramatically.
 
-In contrast, if you just stick to technical editing, formatting, publishing, and curating, these activities will likely not fulfill you in your career (even though these activities are still worthwhile). Only when you get your synapses firing in the knowledge domain you're writing in as well as your hands dirty testing and trying out all the steps and processes does the work of technical writing come alive.
+In contrast, if you just stick to technical editing, formatting, publishing, and curating, these activities will likely not fulfill you in your technical writing career (even though these activities are still worthwhile). Only when you get your synapses firing in the knowledge domain you're writing in as well as your hands dirty testing and trying out all the steps and processes does the work of technical writing come alive.
 
 ## Accounting for the necessary time
 
 Note that it takes time to try out the instructions yourself and with users. It probably doubles or triples the documentation time. Writing thorough, accurate instructions that address users with different setups, computers, and goals is tedious. You don't always have this time before release.
 
-Don't assume that once your product is released, your doc is done. You can always go back over your existing docs and improve them. Consider the first release a kind of "Day 1" for your docs. It's the first iteration. Your docs will get better with each iteration. If you can capture feedback as your docs get used (feedback from forums, contact email, logs, and other means), you can improve it and see gaps that you likely missed.
+But don't assume that once your product is released, your doc is done. You can always go back over your existing docs and improve them. Consider the first release a kind of "Day 1" for your docs. It's the first iteration. Your docs will get better with each iteration. If you couldn't get your test system up and running before the first release, that's okay. Build it for the upcoming release.
+
+With the first release, if you can capture feedback as your docs get used (feedback from forums, contact email, logs, and other means), you can improve your docs and see gaps that you likely missed. In some ways, each time users consult your docs they are testing them.
