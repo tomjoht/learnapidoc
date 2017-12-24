@@ -14,4 +14,4 @@ Now that you've read about testing, it's time to get some more hands-on practice
 * An API endpoint
 * A tutorial or other key task
 
-Test the content. Identify any incorrect or missing or inaccurate information.
+Test the content. Run all the endpoint requests. Proceed through all the steps in the tutorial. Do all the identified tasks with the topic. As you test out the content, identify any incorrect or missing or inaccurate information.

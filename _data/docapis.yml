@@ -110,7 +110,7 @@ folders:
     jurl: /testingdocs_testing_assumptions.html
 
   - title: "Activity: Test your project's documentation"
-    jurl: /testingdocs_testingdocs_activity.html
+    jurl: /testingdocs_activity.html
 
 - title: Documenting non-reference sections
   jurl: /docnonref.html

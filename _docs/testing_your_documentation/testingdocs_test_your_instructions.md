@@ -43,9 +43,7 @@ To build my sample app, I had to first figure out how to get content for my app.
 
 Since the app template didn't support YouTube as a web host, I downloaded the MP4s from YouTube and uploaded them directly to my web host. Then I needed to construct the media feed that I would use to integrate with the app template. The app template could read all the media from a feed by targeting it with Jayway Jsonpath or XPath expression syntax.
 
-I used Jekyll to build my feed. You can view my JSON-based feed here: [podcast.writethedocs.org/fab.json](http://podcast.writethedocs.org/fab.json). I auto-generated the feed through Liquid `for` loops in Jekyll.
-
-The most difficult part in setting up this feed was configuring the `recommendations` object. Each video has some `tags`. The `recommendations` object needs to show other videos that have the same tag. Getting the JSON valid there was challenging and I relied on some support from the Jekyll forum.
+I used Jekyll to build my feed. (You can view my JSON-based feed here: [podcast.writethedocs.org/fab.json](http://podcast.writethedocs.org/fab.json).) The most difficult part in setting up this feed was configuring the `recommendations` object. Each video has some `tags`. The `recommendations` object needs to show other videos that have the same tag. Getting the JSON valid there was challenging and I relied on some support from the Jekyll forum.
 
 After I had the media and the feed, integrating it into Fire App Builder was easy because, after all, I had written the documentation for that.
 
@@ -89,7 +87,7 @@ Testing documentation for developers is difficult because we often just provide 
 
 For example, for general Fire TV users who weren't using the app template, I also wrote documentation on how to integrate and send recommendations. But since I didn't have my own general Fire TV app (not one built with Fire App Builder) to test this with, I didn't play around with the code to actually send recommendations. I had to take on faith much of my information based on the engineer's instructions and the feedback we were getting from beta users.
 
-As you can imagine, I later discovered gaps in the documentation that I needed to address. (It turns out when you actually send recommendations to Fire TV, Fire TV uses only *some* of the recommendations info you send in the display. But in my initial docs, I didn't indicate which fields actually get used. This left developers wondering if they integrated the recommendations correctly. Unsurprisingly, in our forums, a third-party developer soon asked what he was doing wrong because a field he was passing seemed to have no effect on the display.)
+As you can imagine, I later discovered gaps in the documentation that I needed to address. It turns out when you actually send recommendations to Fire TV, Fire TV uses only *some* of the recommendations info you send in the display. But in my initial docs, I didn't indicate which fields actually get used. This left developers wondering if they integrated the recommendations correctly. Unsurprisingly, in our forums, a third-party developer soon asked what he was doing wrong because a field he was passing seemed to have no effect on the display.
 
 Putting together an app from scratch that leverages all the recommendation API calls requires more effort, for sure. But to get the initial foundation going, it's the step I needed to take to ferret out all the potential issues users would face.
 
