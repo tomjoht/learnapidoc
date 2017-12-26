@@ -153,13 +153,10 @@ folders:
   - title: Design patterns with API doc sites
     jurl: /pubapis_design_patterns.html
 
-  - title: "Tool decisions: Who will write?"
-    jurl: /pubapis_tooldecisions.html
-
   - title: Docs-as-code tools
     jurl: /pubapis_docs_as_code.html
 
-  - title: Github wikis
+  - title: "Activity: Manage content in a GitHub wiki"
     jurl: /pubapis_github_wikis.html
 
   - title: More about Markdown
@@ -263,7 +260,7 @@ folders:
   - title: Java crash course
     jurl: /nativelibraryapis_java_crash_course.html
 
-  - title: Generate a Javadoc
+  - title: "Activity: Generate a Javadoc from a sample project"
     jurl: /nativelibraryapis_create_javadoc.html
 
   - title: Javadoc tags
@@ -316,3 +313,6 @@ folders:
 
   - title: API documentation survey
     jurl: /docapis_apidoc_survey.html
+
+  # - title: Course Reviews
+  #   jurl: /docapis_course_reviews.html

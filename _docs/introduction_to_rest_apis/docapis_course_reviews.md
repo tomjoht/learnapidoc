@@ -44,6 +44,11 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
 {% endif %}
 
 ## Reviews
+{% comment %} got approval for this already {% endcomment %} 
+### Amy Constant
+
+> I cannot thank you enough for this site. I started a new job and my role is to create API documentation. While I've created docs for a RESTful API in the past, it's been a while, the industry has changed/matured, and I certainly didn't understand all of the concepts. In addition, I've always worked with a traditional HATs (Frame and then Flare), and I just recently learned about static site generators and markdown. As the new and only writer, I need to figure out my tools and deliverables. THIS SITE HAS BEEN INVALUABLE! Thank you so much.
+-a
 
 ### Elizabeth Williams:
 
@@ -108,7 +113,7 @@ kate.wilcox@nextlabs.com
 
 ### Barry Shanko
 	barry.shanko@starsolutions.com
-> Enjoyed your API documentation course as I was recently told we are adding API's to our next release of our software. What would be really helpful is to have the entire course available as a PDF, so it can be printed out without wasting so much papter on comments, links, etc. Thanks a lot. (May 2017)
+> Enjoyed your API documentation course as I was recently told we are adding API's to our next release of our software. What would be really helpful is to have the entire course available as a PDF, so it can be printed out without wasting so much paper on comments, links, etc. Thanks a lot. (May 2017)
 
 --------
 

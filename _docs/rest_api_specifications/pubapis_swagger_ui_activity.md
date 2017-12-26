@@ -9,8 +9,6 @@ path1: /restapispecifications.html
 path2: /swaggerui.html
 ---
 
-{% include activity.html %}
-
 In the [Swagger tutorial](pubapis_swagger.html), you explored the [Swagger Petstore site](http://petstore.swagger.io/), learned how the [Swagger Editor](https://swagger.io/swagger-editor/) works, and how to download and integrate your [OpenAPI specification document](pubapis_openapi_tutorial_overview.html) into [Swagger UI](https://github.com/swagger-api/swagger-ui). Now it's time to put this learning into practice by integrating the specification document into your own Swagger UI site.
 
 * TOC

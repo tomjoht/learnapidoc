@@ -1,5 +1,5 @@
 ---
-title: "GitHub wikis"
+title: "Activity: Manage content in a GitHub wiki"
 permalink: /pubapis_github_wikis.html
 course: "Documenting REST APIs"
 sidebar: docapis
@@ -10,7 +10,7 @@ path1: /publishingapis.html
 
 One of the easiest toolchains to implement with developer docs is a GitHub wiki. Learning GitHub will also allow you to become familiar with the version control workflows that are common with many docs-as-code tools. For this reason, I have a detailed tutorial for using GitHub in this course.
 
-When you create a repository on GitHub, the repository comes with a wiki that you can add pages to. This wiki can be really convenient if your source code is stored on GitHub.
+When you create a repository on GitHub, the repository comes with a wiki that you can add pages to. This wiki can be convenient if your source code is stored on GitHub.
 
 {% if site.format == "web" %}
 * TOC
@@ -25,7 +25,7 @@ Here's an example of the Basecamp API, which is housed on GitHub.
 
 ## Markdown syntax
 
-You write wiki pages in Markdown syntax. There's a special flavor of Markdown syntax for GitHub wikis. The [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/) allows you to create tables, add classes to code blocks (for proper syntax highlighting), and more.
+With GitHub, you write wiki pages in Markdown syntax. There's a special flavor of Markdown syntax for GitHub wikis called "Github-flavored Markdown," or GFM. The [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/) allows you to create tables, add classes to code blocks (for proper syntax highlighting), and more.
 
 ## The wiki repository
 
@@ -33,7 +33,7 @@ Unlike other wikis, the GitHub wiki you create is its own repository that you ca
 
 ## Treating doc as code
 
-One of the neat things about using a GitHub repository is that you treat the doc as code, editing it in a text editor, committing it to a repository, and packaging it up into the same area as the rest of the source code. Because it's in its own repository, technical writers can work in the documentation right alongside project code without getting merge conflicts.
+One of the neat things about using a GitHub repository is that you treat the [docs as code](pubapis_docs_as_code.html), editing it in a text editor, committing it to a repository, and packaging it up into the same area as the rest of the source code. Because the content resides in a separate repository, technical writers can work in the documentation right alongside project code without getting merge conflicts.
 
 {% include random_ad.html %}
 
@@ -48,6 +48,9 @@ There are some limitations with GitHub wikis:
 * **Limited branding**. All GitHub wikis look the same.
 * **Open access on the web**. If your docs need to be private, GitHub isn't the place to put them.
 * **No structure**. The GitHub wiki pages give you a blank page and basically allow you to add sections. You won't be able to do any advanced styling or more attractive-looking interactive features.
+
+{: .note}
+I'm specifically talking about the built-in wiki feature with GitHub here, not [GitHub Pages](https://pages.github.com/). You can use tools such as Jekyll to brand and auto-build your content with whatever look and feel you want. I explore this with more depth in the tutorial on [Jekyll](pubapis_jekyll.html).
 
 ## Set up Git and GitHub authentication {#set_up_git_and_github}
 
@@ -70,7 +73,8 @@ Before you start working with GitHub, you need to set up Git and install any nec
 
 2. Create a GitHub account by going to [GitHub.com](http://github.com).
 
-   GitHub and Git are not the same thing. Git provides distributed version control. GitHub is a platform that helps you manage Git projects. GitHub also provides a GUI interface that allows you to execute a lot of Git commands, such as pull requests.
+   {: .note}
+   GitHub and Git are not the same. Git provides [distributed version control](pubapis_version_control_systems.html). GitHub is a platform that helps you manage Git projects. GitHub also provides a GUI interface that allows you to execute a lot of Git commands, such as pull requests.
 
 3. Configure Git with GitHub authorization. This will allow you to push changes without entering your username and password each time. See the following topics to set this up:
    * [Set up Git](https://help.github.com/articles/set-up-git/) (Note that when you configure your username, use your GitHub username, which will be something like tomjoht instead of "Tom Johnson".)
@@ -83,9 +87,6 @@ After you make these configurations, close and re-open your terminal.
 
 In this section, you will create a new GitHub repo and publish a sample file there.
 
-{: .note}
-In this section, you'll be using Git commands through your terminal or command prompt. In later tutorials, you'll use the GitHub Desktop and GitHub browser tools. You can interact with GitHub in a variety of ways.
-
 1. Go to [GitHub](https://github.com) and sign in. After you're signed in, click the **+** button in the upper-right corner and select **New repository**.
 
 	<a href="https://github.com/new" class="noExtIcon"><img src="images/newrepositorygithub.png" alt="Creating a new GitHub repository" /></a>
@@ -96,9 +97,9 @@ In this section, you'll be using Git commands through your terminal or command p
 5. Insert your own sample documentation page, preferably using Markdown syntax. Or grab the sample Markdown page of a <a href="http://idratherbewriting.com/learnapidoc/assets/files/surfreportendpointdoc.md">fake endpoint called surfreport here</a> and insert it into the page.
 7. Click **Save page**.
 
-Notice how GitHub automatically converts the Markdown syntax into HTML with some decent styling.
+Notice how GitHub automatically converts the Markdown syntax into HTML and styles it in a readable way.
 
-You could use this GitHub wiki in an entirely browser-based way for multiple people to collaborate and edit content. However, you can also take all the content offline and edit locally, and then reupload all your edits.
+You could use this GitHub wiki in an entirely browser-based way for multiple people to collaborate and edit content. However, you can also take all the content offline and edit locally, and then commit your changes.
 
 ## Save the GitHub repository locally
 
@@ -106,7 +107,7 @@ You could use this GitHub wiki in an entirely browser-based way for multiple peo
 
 	Cloning the wiki gives you a copy of the content on your local machine. Git is *distributed* version control software, so everyone has his or her own copy. You will clone this wiki on your local machine; the version in the cloud on GitHub is referred to as "origin."
 
-	More than just copying the files, though, when you clone a repo, you initialize Git in the folder where you clone the repo. Initializing Git means Git will create an invisible Git folder in that directory, and Git will start tracking your edits to the files, providing version control. With Git initialized, you can run "pull" commands to get updates of the online repository (origin) pulled down to your local copy. You can also commit your changes and then push your changes back up to the origin repository if you're entitled as a collaborator for the project.
+	More than just copying the files, though, when you clone a repo, you initialize Git in the folder where you clone the repo. Initializing Git means Git will create an invisible Git folder in that directory, and Git will start tracking your edits to the files, providing version control. With Git initialized, you can run `pull` commands to get updates of the online repository (origin) pulled down to your local copy. You can also `commit` your changes and then `push` your changes back up to the origin repository if you're entitled as a collaborator for the project.
 
 	The "Clone this wiki locally" link allows you to easily insert the URL into a `git clone {url}` command in your terminal.
 
@@ -130,7 +131,7 @@ You could use this GitHub wiki in an entirely browser-based way for multiple peo
 
 ## Make a change locally, commit it, and push the commit to the GitHub repository
 
-1. In a text editor, open the Markdown file you downloaded in the github repository.
+1. In a text editor, open the Markdown file you downloaded in the GitHub repository.
 2. Make a small change and save it.
 3. In your terminal, make sure you're in the directory where you downloaded the github project. To look at the directories under your current path, type `ls`. Then use `cd {directory name}` to drill into the folder, or `cd ../` to move up a level.
 

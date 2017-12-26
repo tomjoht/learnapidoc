@@ -98,6 +98,18 @@ Here are a few things you'll need to do the exercises in this course:
 * **curl**. [curl](http://curl.haxx.se/) is essential for making requests to endpoints from the command line. Mac computers already have curl installed. Windows users should follow the instructions for installing curl [here](http://www.confusedbycode.com/curl/#downloads).
 * **Git**. [Git](https://git-scm.com/) is a version control tool developers often use to collaborate on code. See [Set Up Git](https://help.github.com/articles/set-up-git/) for more details.
 
+## Will this course help you get a job in API documentation?
+
+The most common reason people take this course is to transition to an API documentation. This course will help you make that transition, but you can't just passively read through the content. You've got to do all the activities outlined in each section. These activities are key to building experience and credibility with a portfolio. These in-depth activities are identified with the word "Activity" in the topic title. There is usually one main activity for each section:
+
+* [Activity: Find an Open Source Project](docapis_find_open_source_project.html)
+* [Activity: Critique or create an API reference topic](docapis_api_reference_activity.html)
+* [Activity: Test the docs in your Open Source project](testingdocs_activity.html)
+* [Activity: Manage content in a GitHub wiki](pubapis_github_wikis.html)
+* [Activity: Create an OpenAPI specification document](pubapis_openapi_activity.html)
+* [Activity: Create your own Swagger UI display](pubapis_swagger_ui_activity.html)
+* [Activity: Generate a Javadoc from a sample project](nativelibraryapis_create_javadoc.html)
+
 {% if site.format == "web" %}
 ## Short version of the course in video
 

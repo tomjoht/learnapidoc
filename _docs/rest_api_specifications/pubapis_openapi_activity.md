@@ -8,8 +8,6 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-{% include activity.html %}
-
 The [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html) walked you through 8 steps in building the OpenAPI specification document. Now it's your turn to practice building out an OpenAPI specification document on your own.
 
 * TOC

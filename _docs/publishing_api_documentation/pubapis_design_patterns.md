@@ -8,7 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-In the previous topic, we browsed up to [100 API doc sites](pubapis_apilist.html) and looked for similar patterns in their design. "Design patterns" are common approaches or techniques in the way something is designed. The following design patterns are common with API doc sites: structure and templates, website platforms, abundant code examples, long-ish pages, interactive API explorers, and GitHub as a storage platform. I explore each of these elements in the following sections.
+In the previous topic, we browsed up to [100 API doc sites](pubapis_apilist.html) and looked for similar patterns in their design. "Design patterns" are common approaches or techniques in the way something is designed. The following design patterns are common with API doc sites: structure and templates, website platforms, abundant code examples, long-ish pages, and interactive API explorers. I explore each of these elements in the following sections.
 
 {% if site.format == "web" %}
 * TOC
@@ -147,29 +147,6 @@ Nevertheless, clearly it is a design pattern to provide this kind of interactivi
 If your users log in, you can store their API keys and dynamically populate the calls and code samples with API keys. The API key can most likely be a variable that stores the user's API key. This is a feature provided with sites like [Readme.io](pubapis_other_tool_options.html#readmeio).
 
 However, if you store customer API keys on your site, this might create authentication and login requirements that make your site more complex to create. If you have users logging in and dynamically populating the explorer with their API keys, you'll probably need a front-end designer and web developer to create this experience.
-
-## Pattern 6: GitHub as a Storage Platform
-
-Given that developers are often heavily involved in the writing, managing, and publishing of the information, the documentation source for API doc sites is often stored in [GitHub](https://github.com/).
-
-Git frequently acts as a storage source that other sites can pull from. For example, with many online platforms, such as [CloudCannon](https://cloudcannon.com/) and [Forestry.io](https://forestry.io/), you can set your content source as GitHub. These platforms will then pull in your content from GitHub. You manage your content in GitHub but configure the front-end doc experience using one of these platforms.
-
-Many doc sites just use [GitHub Pages](https://pages.github.com/) directly as their doc site. If your site is a Jekyll site, GitHub Pages will build it automatically when you commit into your repo. Building from the server provides enormous benefits to publishing in a [docs-as-code model](pubapis_docs_as_code.html), and is a topic I touch on in a [case study here](pubapis_switching_to_docs_as_code.html). GitHub's preference for building with Jekyll is one reason why I focus an [entire topic on Jekyll](pubapis_jekyll.html) later in the course.
-
-Many developer doc sites even promote their online GitHub source with a button that says "Edit on GitHub." See these sites for examples:
-
-* [Smartthings developer documentation](http://docs.smartthings.com/en/latest/getting-started/overview.html)
-* [Apache MyNewt documentation](https://mynewt.apache.org/latest/os/introduction/)
-* [Quill documentation](https://quilljs.com/docs/quickstart/)
-* [Jekyll documentation](https://jekyllrb.com/docs/home/)
-
-I won't discuss the challenges of building community and contributions using "Edit on GitHub" links like this. For the most part, my experience with external collaborators has been about the same as with wikis. For more on inviting collaboration from users, see these posts:
-
-* [Crowdsourcing docs with docs-as-code tools -- same result as with wikis?](http://idratherbewriting.com/2017/03/08/crowdsourcing-docs-with-github-docs-as-code-tools-same-as-wikis/)
-* [My Journey To and From Wikis: Why I Adopted Wikis, Why I Veered Away, and a New Model][http://idratherbewriting.com/2012/06/11/essay-my-journey-to-and-from-wikis-why-i-adopted-wikis-why-i-veered-away-from-them-and-a-new-model-for-collaboration/]
-* [1% rule](https://en.wikipedia.org/wiki/1%25_rule_(Internet_culture))
-
-If you have an online project where the contributors interact and publish online, these "Edit on GitHub" links can facilitate writing and editing within the group. It's not so much that these groups are hoping outsiders will jump in and make a bunch of edits (though that might be welcome). More common is that GitHub is the infrastructure for their open source project, and these links make it easier for existing contributors (already committed to the project) to make updates.
 
 ## Some non-patterns in API doc sites
 
