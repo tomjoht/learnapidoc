@@ -1,14 +1,14 @@
 ---
-title: "Test your assumptions"
+title: "Test your assumptions against users"
 course: "Documenting REST APIs"
 permalink: /testingdocs_testing_assumptions.html
 weight: 4.2
 sidebar: docapis
-section: testingdocs 
+section: testingdocs
 path1: /testingdocs.html
 ---
 
-Almost all documentation builds on assumptions that may or may not be shared with your audience. While [testing your documentation](testingdocs_test_your_instructions.html), recognize that what may seem clear to you may be confusing to your users. Learn to identify these assumptions that can interfere with your user's ability to follow the instructions in your docs.
+The previous two sections talked about testing from the perspective of the tech writer merely running through the steps. However, remember that you, the tech writer, are not the user. Almost all documentation builds on assumptions that may or may not be shared with your audience. While [testing your documentation](testingdocs_test_your_instructions.html), recognize that what may seem clear to you may be confusing to your users. Learn to identify these assumptions that can interfere with your audience's ability to follow the instructions in your docs.
 
 {% if site.format == "web" %}
 * TOC
@@ -17,9 +17,7 @@ Almost all documentation builds on assumptions that may or may not be shared wit
 
 ## Assumptions about terminology
 
-You may assume that users already know how to SSH onto a server, create authorizations in REST headers, use curl to submit calls, and so on. Usually documentation doesn't hold a user's hand from beginning to end, but rather jumps into a specific task that depends on concepts and techniques that you assume the user already knows.
-
-Making assumptions about concepts and techniques your audience knows can be dangerous. These assumptions are exactly why so many people get frustrated by instructions and throw them in the trash.
+You might assume that your audience already know how to SSH onto a server, create authorizations in REST headers, use curl to submit calls, and so on. Usually documentation doesn't hold a user's hand from beginning to end, but rather jumps into a specific task that depends on concepts and techniques that you assume the user already knows. However, making assumptions about concepts and techniques your audience knows can be dangerous. These assumptions are exactly why so many people get frustrated by instructions and throw them in the trash.
 
 For example, my 10-year-old daughter is starting to cook. She feels confident that if the instructions are clear, she can follow almost anything (assuming we have the ingredients to make it). However, she says sometimes the instructions tell her to do something that she doesn't know how to do &mdash; such as *sauté* something.
 
@@ -33,7 +31,7 @@ The world of software instruction is full of similarly confusing terminology. Fo
 
 This is why checking over your own instructions by walking through the steps yourself becomes problematic. The first rule of usability is to know the user, and also to recognize that you aren't the user.
 
-With developer documentation, usually the audience's skill level is far beyond my own, so adding little notes that clarify obvious instruction (such as saying that the `$` in code samples signals a command prompt and shouldn't be typed in the actual command, or that ellipses `...` in code blocks indicates truncated code and shouldn't be copied and pasted) isn't essential. But adding these notes can't hurt, especially when some users of the documentation are product marketers rather than developers.
+With developer documentation, usually the audience's skill level is beyond my own, so adding little notes that clarify obvious instruction (such as saying that the `$` in code samples signals a command prompt and shouldn't be typed in the actual command, or that ellipses `...` in code blocks indicates truncated code and shouldn't be copied and pasted) isn't essential. But adding these notes can't hurt, especially when some users of the documentation are product marketers rather than developers.
 
 We must also remember that users may have deep knowledge in another technical area outside of the domain we're writing in. For example, the user may be a Java expert but a novice when it comes to JavaScript, and vice versa.
 
@@ -47,11 +45,11 @@ The problem, though, is learning to see the blind spots. If you're the only one 
 
 ## Testing your docs against an audience
 
-Almost no developer can push out their code without running it through QA, but for some reason technical writers usually don't follow the same QA processes as developers. There are some cases where tech docs are "tested" by QA, but whenever this happens I usually get strange feedback, as if a robot were testing my instructions.
+Almost no developer can push out their code without running it through QA, but for some reason technical writers usually don't follow the same QA processes as developers. There are some cases where tech docs are "tested" by QA, but when I do get feedback from QA, the reviewers rarely assess clarity, organization, or other communication. They just highlight any errors they find.
 
-QA people test to see whether the instructions are accurate. They don't test whether a user would understand the instructions or whether concepts are clear. And QA team members are poor testers because they already know the system too well in the first place.
+In general, QA people don't test whether a user would understand the instructions or whether concepts are clear. They just look for accuracy. QA team members are poor testers because they already know the system too well in the first place.
 
-Before publishing, every tech writer should submit his or her instructions through a testing process, i.e., a "quality assurance" process. Strangely, few IT shops actually have a consistent quality assurance process for documentation. You wouldn't dream of setting up an IT shop without a quality assurance group for developers &mdash; why should docs be any different?
+Before publishing, every tech writer should submit his or her instructions through a testing process of some kind, i.e., a "quality assurance" process. Strangely, few IT shops actually have a consistent quality assurance process for documentation. You wouldn't dream of setting up an IT shop without a quality assurance group for developers &mdash; why should docs be any different?
 
 {% include random_ad.html %}
 

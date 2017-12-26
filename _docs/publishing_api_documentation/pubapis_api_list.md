@@ -7,14 +7,15 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-The following are about 100 openly accessible REST APIs that you can browse as a way to look at patterns and examples. Most of these REST API links are available from [programmableweb.com](http://programmableweb.com). I highly recommend that you [browse APIs by category docs](https://www.programmableweb.com/category-api) from their site. I initially started gathering a list of the APIs in Programmableweb's [most popular APIs docs](https://www.programmableweb.com/news/which-are-developers-favorite-apis/research/2017/09/01), but then I just started adding links as I ran across interesting APIs.
+Rather than approach the the topic of publishing prescriptively, we're going to begin with some concrete examples and move towards the formulation of general principles. The following are about 100 openly accessible REST APIs that you can browse as a way to look at patterns and examples. Most of these REST API links are available from [programmableweb.com](http://programmableweb.com). I highly recommend that you [browse APIs by category docs](https://www.programmableweb.com/category-api) from their site.
 
 * TOC
 {:toc}
 
 ## 100 API doc sites
 
-Here are 100 API doc sites. Peruse them to get a sense of the variety, but also try to identify common patterns.
+Peruse a few of these documentation sites to get a sense of the variety, but also try to identify common patterns. In this list, I include not only impressively designed docs but also docs that look like they were created by a department intern just learning HTML. The variety in the list demonstrates the wide variety of publishing tools and approaches, as well as terminology, in API docs. It seems that almost everyone does their API docs their own way, with their own site, branding, organization, and typography.
+
 
 1.  [Google Places API docs](https://developers.google.com/places/webservice/intro)
 2.  [Twitter API docs](https://dev.twitter.com/rest/public)
@@ -120,13 +121,11 @@ Here are 100 API doc sites. Peruse them to get a sense of the variety, but also 
 102. [Spotify API](https://developer.spotify.com/web-api/)
 103. [Trello API](https://developers.trello.com/)
 
-{% include tip.html content="I last checked these links in October 2017. Given how fast the technology landscape changes, some links may be out of date. However, if you simply type <i>{product} + api docs</i> into Google's search, you will likely find the company's developer doc site. Most commonly the API docs are at developer.{company}.com." %}
-
-I include not only impressively designed docs in this list but also docs that look like they were created by a department intern just learning HTML. The variety in the list demonstrates the wide variety of publishing tools and approaches, as well as terminology, in API docs. It seems that almost everyone does them their own way, with their own site, branding, organization, and typography.
+{% include tip.html content="I last checked these links in January 2018. Given how fast the technology landscape changes, some links may be out of date. However, if you simply type <i>{product} + api docs</i> into Google's search, you will likely find the company's developer doc site. Most commonly the API docs are at developer.{company}.com." %}
 
 ## Programmableweb<span>.</span>com: A directory of API doc sites on the open web
 
-For a directory of API documentation sites on the open web, see the [Programmableweb.com docs](http://www.programmableweb.com/apis/directory). You can browse thousands more web APIs.
+For a directory of API documentation sites on the open web, see the [Programmableweb.com docs](http://www.programmableweb.com/apis/directory). You can browse thousands of web API docs in a variety of categories.
 
 {% include random_ad.html %}
 
@@ -134,10 +133,6 @@ For a directory of API documentation sites on the open web, see the [Programmabl
 
 Note that Programmableweb lists only open web APIs, meaning APIs that you can access on the web (which also means it's usually a REST API). They don't list the countless internal, firewalled APIs that many companies provide at a cost to paying customers. There are many more thousands of private APIs out there that most of us will never know about.
 
-## Activity
-
 {% include activity.html %}
 
 Look at about 5 different APIs (choose any of those listed on the page). Look for one thing that the APIs have in common. I provide a list of patterns in the next topic: [Design patterns with API doc sites](pubapis_design_patterns.html).
-
-{% include note.html content="By analyzing API doc sites first before presenting conclusions, I hope to implement more of an inductive, unbiased approach toward the conclusions I draw about API docs in this course." %}

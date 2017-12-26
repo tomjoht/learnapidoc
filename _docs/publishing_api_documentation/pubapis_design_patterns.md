@@ -8,9 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-In the previous topic, we browsed up to [100 API doc sites](pubapis_apilist.html) and looked for similar patterns in their design. "Design patterns" are common approaches or techniques in the way something is designed. In looking over the many API doc sites, I tried to identify common approaches in the way the content was published.
-
-The following design patterns are common with API doc sites: structure and templates, website platforms, abundant code examples, long-ish pages, interactive API explorers, and GitHub as a storage platform. I explore each of these elements in the following sections.
+In the previous topic, we browsed up to [100 API doc sites](pubapis_apilist.html) and looked for similar patterns in their design. "Design patterns" are common approaches or techniques in the way something is designed. The following design patterns are common with API doc sites: structure and templates, website platforms, abundant code examples, long-ish pages, interactive API explorers, and GitHub as a storage platform. I explore each of these elements in the following sections.
 
 {% if site.format == "web" %}
 * TOC
@@ -21,11 +19,11 @@ The following design patterns are common with API doc sites: structure and templ
 
 One overriding commonality with API documentation is that they share a common structure, particularly with the reference documentation around the endpoints. In an earlier section, we explored the common sections in [endpoint documentation](docendpoints.html). The non-reference topics also share similar topics, which I [touched upon](docnonref.html) as well.
 
-From a tool perspective, if you have common sections to cover with each endpoint, it makes sense to formalize a template to accommodate the publishing of that content. The template can provide consistency, automate publishing and style, and allow you to more easily change the design without manually reformatting each section. You could just remember to add the exact same sections on each page, but this requires more manual consistency.
+From a tool perspective, if you have common sections to cover with each endpoint, it makes sense to formalize a template to accommodate the publishing of that content. The template can provide consistency, automate publishing and style, and allow you to more easily change the design without manually reformatting each section. Without a template, you could just remember to add the exact same sections on each page, but this requires more effort to be consistent.
 
-With a template, you can insert various values (descriptions, methods, parameters, etc.) into a highly stylized output. Rather than work with all the style tags in your page directly, you can create values that exist as an object on a page. A custom script can loop through the objects and insert the values into your template.
+With a template, you can insert various values (descriptions, methods, parameters, etc.) into a highly stylized output, complete with div tags and other style classes.
 
-Different authoring tools have different ways of processing templates. In Jekyll, a static site generator, here's how you might go about it. In the frontmatter of a page, you could list out the key value pairs for each section.
+Different authoring tools have different ways of processing templates. In Jekyll, a static site generator, you can create values in a YAML file and loop through them using Liquid to access the values. Here's how you might go about it. In the frontmatter of a page, you could list out the key value pairs for each section.
 
 ```
 resource_name: surfreport
@@ -37,14 +35,12 @@ And so on.
 
 You could then use a for loop to cycle through each of the items and insert them into your template:
 
-{% raw %}
 ```liquid
-{% for p in site.endpoints %}
+{% raw %}{% for p in site.endpoints %}
 <div class="resName">{{p.resource_name}}</div>
 <div class="resDesc">{{p.resource_description}}</div>
-<div class="endpointDef">{{p.endpoint}}</div>
+<div class="endpointDef">{{p.endpoint}}</div>{% endraw %}
 ```
-{% endraw %}
 
 This approach makes it easy to change your template without reformatting all of your pages. For example, if you decide to change the order of the elements on the page, or if you want to add new classes or some other value, you just alter the template. The values remain the same, since they can be processed in any order.
 
@@ -64,7 +60,7 @@ Many API doc sites provide *one integrated website* to present all of the inform
 
 <a href="https://www.yelp.com/developers/documentation" class="noExtIcon"><img src="images/yelpapi.png" alt="Yelp API documentation" /></a>
 
-I hinted at this earlier, but with API documentation, there isn't an application interface that the documentation complements. In most cases, the API documentation itself is the product that users navigate to use your product. As such, users will expect more from it.
+I hinted at this earlier, but with API documentation, there isn't an application interface that the documentation complements. In most cases, the API documentation itself is the interface that users navigate to use your product. As such, users will expect more from it.
 
 One of the challenges in using documentation generated from [OpenAPI](pubapis_swagger_intro.html) or some other document generator is figuring out how to integrate it with the rest of the site. Ideally, you want users to have a seamless experience across the entire website. If your endpoints are rendered into their own separate view, how do you integrate the endpoint reference into the rest of the documentation?
 
@@ -74,7 +70,7 @@ If you can integrate the branding and search, users may not care. But if it feel
 
 Think about other content that users will interact with, such as Marketing content, terms of service, support, and so on. How do you pull together all of this information into a single site experience without resorting to an overbloated CMS or some other web framework?
 
-The reality is that most API documentation sites are custom-designed websites that blend seamlessly with the other marketing content on the site, because your API doc must sell your API. As a website platform (rather than a tripane help output), you can leverage all the scripts, CSS, and JS techniques available in building websites. You aren't limited to a small subset of available tools that are allowed by your [HAT](pubapis_hats.html); instead, you have the whole web landscape and toolset at your disposal.
+The reality is that most API documentation sites are custom-designed websites that blend seamlessly with the other marketing content on the site, because your API doc must sell your API. As a website platform (rather than a tripane help output), you can leverage all the HTML, CSS, and JS techniques available in building websites. You aren't limited to a small subset of available tools that are allowed by your [HAT](pubapis_hats.html); instead, you have the whole web landscape and toolset at your disposal.
 
 This open invitation to use the tools of the web to construct your API doc site is both a blessing and a challenge. A blessing because, for the most part, there's nothing you can't do with your docs. You're only limited by your lack of knowledge about front-end coding. But it's also a challenge because many of the needs you may have with docs (single sourcing, PDF, variables, and more) might not be readily available with common website tooling.
 
@@ -84,17 +80,17 @@ More than anything else, developers love [code examples](docapis_doc_code_sample
 
 <a href="https://dev.evernote.com/doc/articles/note-sharing.php" class="noExtIcon"><img src="images/evernotecodesamples.png" alt="Evernote code examples" /></a>
 
-The writers at Parse [emphasize the importance of code samples in docs](http://blog.parse.com/learn/engineering/designing-great-api-docs/):
+The writers at Parse [emphasize the importance of code samples in docs](http://blog.parse.com/learn/engineering/designing-great-api-docs/), giving the following advice:
 
 >Liberally sprinkle real world examples throughout your documentation. No developer will ever complain that there are too many examples. They dramatically reduce the time for developers to understand your product. In fact, we even have example code right on our homepage.
 
 For code samples, you'll want to incorporate syntax highlighting. The syntax highlighter colors different elements of the code sample appropriately based on the programming language. There are numerous syntax highlighters that you can usually incorporate into your platform. For example, Jekyll uses [rouge](https://github.com/jneen/rouge) by default. Another common highlighter is [pygments](http://pygments.org/). These highlighters have stylesheets prepared to highlight languages based on specific syntax.
 
-Usually tools that you use will incorporate one of these highlighting tools (based on Ruby or Python) into their HTML generation process. (You don't implement the syntax highlighter as a standalone tool.) If you don't have access to a syntax highlighter for your platform, you can [manually add a highlighting using syntax highlighter library](http://code.tutsplus.com/tutorials/quick-tip-how-to-add-syntax-highlighting-to-any-project--net-21099).
+Usually, tools that you use for authoring will incorporate highlighting utilities (based on Ruby or Python) into their HTML generation process. (You don't implement the syntax highlighter as a standalone tool.) If you don't have access to a syntax highlighter for your platform, you can [manually add a highlighting using syntax highlighter library](http://code.tutsplus.com/tutorials/quick-tip-how-to-add-syntax-highlighting-to-any-project--net-21099).
 
 Another important element in code samples is to use consistent white space. Although computers can read minified code, users usually can't or won't want to look at minified code. Use a tool to format the code with the appropriate spacing and line breaks. You'll need to format the code based on the conventions of the programming language. Fortunately, there are many code beautifier tools online to automate that (such as [Code Beautify](https://codebeautify.org/javaviewer)).
 
-Sometimes development shops have an official style guide for formatting code samples. This might prescribe details such as the following:
+Sometimes development shops have an official style guide for formatting code samples. This style guide for code might prescribe details such as the following:
 
 * Spaces inside of parentheses
 * Line breaks
@@ -110,8 +106,6 @@ I dive [more into code samples](docapis_doc_code_samples.html) in another topic.
 
 One of the most stark differences between regular end-user documentation and developer documentation is that developer doc pages tend to have longer pages. In a [post on designing great API docs](http://blog.parse.com/learn/engineering/designing-great-api-docs/), the writers at Parse explain that short pages frustrate developers:
 
->Minimize Clicking
->
 >It's no secret that developers hate to click. Don't spread your documentation onto a million different pages. Keep related topics close to each other on the same page.
 >
 >We're big fans of long single page guides that let users see the big picture with the ability to easily zoom into the details with a persistent navigation bar. This has the great side effect that users can search all the content with an in-page browser search.
@@ -127,12 +121,12 @@ For another example of a long page, see the Reddit API:
 
 Why do API doc sites tend to have long-ish pages? Here are a few reasons:
 
-* **Provides the big picture**: As the Parse writers indicate, single-page docs allow users to zoom out or in depending on the information they need. A new developer might zoom out to get the big picture, learning the base REST path and how to submit calls. But a more advanced developer already familiar with the API might only need to check the parameters allowed for a specific endpoint. The single-page doc model allows developers to jump to the right page and use Ctrl+F to locate the information.
+* **Provides the big picture**: As the Parse writers indicate, single-page docs allow users to zoom out or in depending on the information they need. A new developer might zoom out to get the big picture, learning the base REST path and how to submit calls. But a more advanced developer already familiar with the API might need only to check the parameters allowed for a specific endpoint. The single-page doc model allows developers to jump to the right page and use Ctrl+F to locate the information.
 * **Many platforms lack search**: A lot of the API doc sites don't have good search engines. In fact, many lack built-in search features altogether. This is partly because Google does such a better job at search, the in-site search feature of any website is often meager by comparison. Also, some of the other document generator and static site generator tools just don't have search (neither did Javadoc). Without search, you can find information by creating long pages and using Ctrl+F.
 * **Everything is at your fingertips**: If the information is chunked up into little pieces here and there, requiring users to click around constantly to find anything (as is [often the case with DITA's information model](http://idratherbewriting.com/2013/04/22/does-dita-encourage-authors-to-fragment-information-into-a-million-little-pieces/)), the experience can be like playing information pinball. As a general strategy, you want to include complete information on a page. If an API resource has several different methods, splitting them out into separate pages can create findability issues. Sometimes it makes sense to keep all related information in one place, or rather "everything at your fingertips."
 * **Today's navigation controls are sophisticated**: Today there are better navigation controls for moving around on long pages than in the past. For example, [Bootstrap's Scrollspy feature](http://getbootstrap.com/docs/4.0/components/scrollspy/) dynamically highlights your place in the sidebar as you're scrolling down the page. Other solutions allow collapsing or expanding of sections to show content only if users need it.
 
-Usually the long pages on a site are the reference pages. Personally, I'm not a fan of listing every endpoint on the same page. Long pages also present challenges with linking as well. Either way you approach page length, developers probably won't care that much. They will care much more about the content on the page.
+Usually the long pages on a site are the reference pages. Personally, I'm not a fan of listing every endpoint on the same long page. Long pages also present challenges with linking as well.
 
 ## Pattern 5: API Interactivity {#interactive_api_explorers}
 
@@ -148,20 +142,19 @@ Are API explorers novel, or extremely instructive? If you're going to be making 
 
 However, API Explorers tend to work better with simpler APIs. If your API requires you to retrieve data before you can use a certain endpoint, or if the data you submit is a JSON object in the body of the post, or you have some other complicated interdependency with the endpoints, the API Explorer might not be as helpful.
 
-Nevertheless, clearly it is a design pattern to provide this kind of interactivity in the documentation.
+Nevertheless, clearly it is a design pattern to provide this kind of interactivity in API documentation.
 
 If your users log in, you can store their API keys and dynamically populate the calls and code samples with API keys. The API key can most likely be a variable that stores the user's API key. This is a feature provided with sites like [Readme.io](pubapis_other_tool_options.html#readmeio).
 
-However, if you store customer API keys on your site, this might create authentication and login requirements that make your site more complex to create. If you have users logging in and dynamically populating the explorer with their API keys, you'll probably need a front-end designer and web developer to pull this off.
-
+However, if you store customer API keys on your site, this might create authentication and login requirements that make your site more complex to create. If you have users logging in and dynamically populating the explorer with their API keys, you'll probably need a front-end designer and web developer to create this experience.
 
 ## Pattern 6: GitHub as a Storage Platform
 
-Another common pattern with API doc sites is that, given that developers are often heavily involved in the writing, managing, and publishing of the information, the documentation source is often stored in [GitHub](https://github.com/), which is an online platform for managing Git projects.
+Given that developers are often heavily involved in the writing, managing, and publishing of the information, the documentation source for API doc sites is often stored in [GitHub](https://github.com/).
 
-Git frequently acts as a storage source that other sites can pull from. For example, with many online platforms, such as [CloudCannon](https://cloudcannon.com/) and [Forestry.io](https://forestry.io/), you can set your content source as GitHub. These platforms will then pull in your content from GitHub, treating it as the source. This way you can do content management using GitHub but configure the front-end doc experience using one of these platforms.
+Git frequently acts as a storage source that other sites can pull from. For example, with many online platforms, such as [CloudCannon](https://cloudcannon.com/) and [Forestry.io](https://forestry.io/), you can set your content source as GitHub. These platforms will then pull in your content from GitHub. You manage your content in GitHub but configure the front-end doc experience using one of these platforms.
 
-Many doc sites just use [GitHub Pages](https://pages.github.com/) directly as their doc site. If your site is a Jekyll site, GitHub Pages will build it automatically when you commit into your repo. Building from the server provides enormous benefits to publishing in a [docs-as-code model](pubapis_docs_as_code.html), and it's a topic I touch on in a [case study here](pubapis_switching_to_docs_as_code.html). GitHub's preference for building with Jekyll is one reason why I focus an [entire topic on Jekyll](pubapis_jekyll.html) later in the course.
+Many doc sites just use [GitHub Pages](https://pages.github.com/) directly as their doc site. If your site is a Jekyll site, GitHub Pages will build it automatically when you commit into your repo. Building from the server provides enormous benefits to publishing in a [docs-as-code model](pubapis_docs_as_code.html), and is a topic I touch on in a [case study here](pubapis_switching_to_docs_as_code.html). GitHub's preference for building with Jekyll is one reason why I focus an [entire topic on Jekyll](pubapis_jekyll.html) later in the course.
 
 Many developer doc sites even promote their online GitHub source with a button that says "Edit on GitHub." See these sites for examples:
 
@@ -176,15 +169,16 @@ I won't discuss the challenges of building community and contributions using "Ed
 * [My Journey To and From Wikis: Why I Adopted Wikis, Why I Veered Away, and a New Model][http://idratherbewriting.com/2012/06/11/essay-my-journey-to-and-from-wikis-why-i-adopted-wikis-why-i-veered-away-from-them-and-a-new-model-for-collaboration/]
 * [1% rule](https://en.wikipedia.org/wiki/1%25_rule_(Internet_culture))
 
-For most part, if you have an online project where the contributors interact and publish online, these "Edit on GitHub" links can facilitate writing and editing within the group. It's not so much that these groups are hoping outsiders will jump in and make a bunch of edits (though that might be welcome). More common is that GitHub is the infrastructure for their open source project, and these links make it easier for existing contributors (already committed to the project) to edit and update pages.
+If you have an online project where the contributors interact and publish online, these "Edit on GitHub" links can facilitate writing and editing within the group. It's not so much that these groups are hoping outsiders will jump in and make a bunch of edits (though that might be welcome). More common is that GitHub is the infrastructure for their open source project, and these links make it easier for existing contributors (already committed to the project) to make updates.
 
 ## Some non-patterns in API doc sites
 
-Finally, I'd like to mention some non-patterns in API documentation. In the [list of 100 API doc sites](pubapis_apilist.html), rarely do you see any of the following:
+Finally, I'd like to briefly mention some non-patterns in API documentation. In the [list of 100 API doc sites](pubapis_apilist.html), you rarely see any of the following:
 
 * Video tutorials
 * PDFs
 * Page commenting features
 * Translated sites
+* Single sourced outputs for different roles
 
 By non-patterns, it's not to say these elements aren't a good idea. But generally they aren't emphasized as primary requirements.
