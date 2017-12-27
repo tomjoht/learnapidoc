@@ -41,7 +41,7 @@ Validate your specification document in the [Swagger Editor](https://swagger.io/
 
 ## Check your spec against mine
 
-If you get stuck or want to compare your spec with mine, see [openapi_sunrise_sunset.yml](http://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.htmlopenapi_sunrise_sunset.yml).
+If you get stuck or want to compare your spec with mine, see [openapi_sunrise_sunset.yml](/learnapidoc/assets/files/swagger-sunrise-sunset/openapi_sunrise_sunset.yml).
 
 Note that the Sunrise and sunset times API doesn't require authorization, so you can skip [Step 6: security object](pubapis_openapi_step6_security_object.html).
 

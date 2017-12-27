@@ -6,6 +6,7 @@ redirect_from:
 progress: false
 ---
 
+
 <!-- HTML for static distribution bundle build -->
 <!DOCTYPE html>
 <html lang="en">
@@ -33,19 +34,6 @@ progress: false
     body {
       margin:0;
       background: #fafafa;
-    }
-    /*tom - custom*/
-    .swagger-ui .model, .swagger-ui .model p {
-    /*max-width: 800px !important;*/
-    word-wrap: break-word !important;
-    display: block;
-    max-width: 600px;
-    }
-
-.swagger-ui .model .prop span {
-    /*max-width: 800px;*/
-    display: block;
-    max-width: 600px;
     }
   </style>
 </head>
@@ -95,11 +83,9 @@ window.onload = function() {
 
   // Build a system
   const ui = SwaggerUIBundle({
-    url: "http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_weather.yml",
+    url: "/learnapidoc/docs/rest_api_specifications/openapi_weather.yml",
     dom_id: '#swagger-ui',
     deepLinking: true,
-    docExpansion:"list",
-    validatorUrl: "https://online.swagger.io/validator",
     presets: [
       SwaggerUIBundle.presets.apis,
       SwaggerUIStandalonePreset
@@ -113,9 +99,6 @@ window.onload = function() {
   window.ui = ui
 }
 </script>
-
-<!-- <img src="http://online.swagger.io/validator?url=http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_weather.yml"> -->
-
 </body>
 
 </html>
