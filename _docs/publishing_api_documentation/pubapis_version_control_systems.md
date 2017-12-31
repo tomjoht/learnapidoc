@@ -66,7 +66,7 @@ You can also see changes in a text file format, but the `>>>>>` and `<<<<<` tags
 
 In this tutorial, you'll use Github Desktop to manage the workflow. First download and install [Github Desktop](https://desktop.github.com/). You'll also need a Github account.
 
-1. Go to [Github.com](http://github.com) and create a new repository from the the **Repositories** tab.
+1. Go to [Github.com](http://github.com) and create a new repository from the **Repositories** tab.
 2. View your repository, and then click the **Clone in Desktop** button.
 
 	<img src="images/cloneindesktop.png" alt="Clone in Desktop" />

@@ -57,20 +57,20 @@ If you have a lot of endpoints, you need a system for pushing the content into s
 
 You won't find an [interactive API console](pubapis_design_patterns.html#interactive_api_explorers) in a HAT. By interactive API console, I mean you enter your own API key and values, and then run the call directly from the web pages in the documentation. ([Flickr's API explorer](https://www.flickr.com/services/api/explore/?method=flickr.photos.search) provides one such example of this interactivity, as does [Swagger UI](pubapis_swagger.html).) The response you see from this explorers is from your own data in the API.
 
-### 5. With APIs, the doc *is* the interface, so it has to be attractive enough to sell the product.
+### 5. With APIs, the doc *is* the product's interface, so it has to be attractive enough to sell the product.
 
 Most output from HATs look dated and old. They look like a relic of the pre-2000 Internet era. (See [Tripane help and PDF files: past their prime?](http://www.robertdesprez.com/2013/01/18/tripane-help-and-pdfs-time-to-move-on/) from Robert Desprez.)
 
-With API documentation, often times the documentation *is* the product &mdash; there isn't a separate product GUI (graphical user interface) that clients interact with. Because the product's GUI is the documentation, it has to be sexy and awesome.
+With API documentation, often times the documentation *is* the product's interface &mdash; there isn't a separate product GUI (graphical user interface) that clients interact with. Because the product's GUI is the documentation, it has to be sexy and awesome.
 
 Most tripane help doesn't make that cut. If the help looks old and frame-based, it doesn't instill much confidence toward the developers using it.
 
 ## A new direction: Static site generators
 
-Based on all of these factors, I decided to put DITA authoring on pause and try a new tool with my documentation: [Jekyll](pubapis_jekyll.html). I've come to love using Jekyll, which allows you to work primarily in Markdown, leverage Liquid for conditional logic, and commit updates to a repository.
+Based on all of these factors, I decided to put DITA authoring on pause and try a new tool with my documentation: [Jekyll](pubapis_jekyll.html). I've come to love using Jekyll, which allows you to work primarily in Markdown, leverage Liquid for conditional logic, and initiate builds directly from a repository.
 
 I realize that not everyone has the luxury of switching authoring tools, but when I made the switch, my company was a startup, and we had only 3 authors and a minimal amount of legacy content. I wasn't burdened by a ton of legacy content or heavy processes, so I could innovate.
 
 Jekyll is just one documentation publishing option in the API doc space. I enjoy working with it's [code-based approach](pubapis_docs_as_code.html), but there are [many different options and routes](pubapis_apilist.html) to explore.
 
-Now that I've hopefully established that traditional HATs aren't the go-to tools with API docs, let's explore various ways to publish API documentation. Most of these routes will take you away from traditional tech comm tools and publishing strategies toward more developer-centric tools.
+Now that I've hopefully established that traditional HATs aren't the go-to tools with API docs, let's explore various ways to publish API documentation. Most of these routes will take you away from traditional tech comm tools more toward more developer-centric tools.

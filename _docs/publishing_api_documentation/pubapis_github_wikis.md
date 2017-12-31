@@ -8,49 +8,40 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-One of the easiest toolchains to implement with developer docs is a GitHub wiki. Learning GitHub will also allow you to become familiar with the version control workflows that are common with many docs-as-code tools. For this reason, I have a detailed tutorial for using GitHub in this course.
+One of the easiest toolchains to implement with developer docs is a GitHub wiki. When you create a repository on GitHub, the repository comes with a wiki that you can add pages to. This wiki can be convenient if your source code is stored on GitHub. Learning GitHub will also allow you to become familiar with the version control workflows that are common with many docs-as-code tools. For this reason, I have a detailed tutorial for using GitHub in this course.
 
-When you create a repository on GitHub, the repository comes with a wiki that you can add pages to. This wiki can be convenient if your source code is stored on GitHub.
 
 {% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}
 
-## GitHub example
+## About GitHub Wikis
 
 Here's an example of the Basecamp API, which is housed on GitHub.
 
 <a href="https://github.com/basecamp/bcx-api" class="noExtIcon"><img src="images/basecampapi.png" alt="Basecamp API" /></a>
 
-## Markdown syntax
-
-With GitHub, you write wiki pages in Markdown syntax. There's a special flavor of Markdown syntax for GitHub wikis called "Github-flavored Markdown," or GFM. The [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/) allows you to create tables, add classes to code blocks (for proper syntax highlighting), and more.
-
-## The wiki repository
-
 Unlike other wikis, the GitHub wiki you create is its own repository that you can clone and work on locally. (If you look at the "Clone this wiki locally" link, you'll see that it's a separate repo from your main code repository.) You can work on files locally and then commit them to the wiki repository when you're ready to publish. You can also arrange the wiki pages into a sidebar.
-
-## Treating doc as code
 
 One of the neat things about using a GitHub repository is that you treat the [docs as code](pubapis_docs_as_code.html), editing it in a text editor, committing it to a repository, and packaging it up into the same area as the rest of the source code. Because the content resides in a separate repository, technical writers can work in the documentation right alongside project code without getting merge conflicts.
 
+With GitHub, you write wiki pages in Markdown syntax. There's a special flavor of Markdown syntax for GitHub wikis called "Github-flavored Markdown," or GFM. The [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/) allows you to create tables, add classes to code blocks (for proper syntax highlighting), and more.
+
+Because you can work with the wiki files locally, you can leverage other tools (such as static site generators, or even DITA) to generate the Markdown files if desired. This means you can handle all the re-use, conditional filtering, and other logic outside of the GitHub wiki. You can then output your content as Markdown files and then commit them to your GitHub repository.
+
 {% include random_ad.html %}
-
-## Working locally allows you to leverage other tools
-
-Because you can work with the wiki files locally, you can leverage other tools (such as static site generators, or even DITA) to generate the Markdown files. This means you can handle all the re-use, conditional filtering, and other logic outside of the GitHub wiki. You can then output your content as Markdown files and then commit them to your GitHub repository.
 
 ## Limitations with GitHub wikis
 
 There are some limitations with GitHub wikis:
 
 * **Limited branding**. All GitHub wikis look the same.
-* **Open access on the web**. If your docs need to be private, GitHub isn't the place to put them.
+* **Open access on the web**. If your docs need to be private, GitHub probably isn't the place to store them (private repos, however, are an option).
 * **No structure**. The GitHub wiki pages give you a blank page and basically allow you to add sections. You won't be able to do any advanced styling or more attractive-looking interactive features.
 
 {: .note}
-I'm specifically talking about the built-in wiki feature with GitHub here, not [GitHub Pages](https://pages.github.com/). You can use tools such as Jekyll to brand and auto-build your content with whatever look and feel you want. I explore this with more depth in the tutorial on [Jekyll](pubapis_jekyll.html).
+I'm specifically talking about the built-in wiki feature with GitHub here, not [GitHub Pages](https://pages.github.com/). You can use tools such as Jekyll to brand and auto-build your content with whatever look and feel you want. I explore GitHub Pages with more depth in the tutorial on [Jekyll](pubapis_jekyll.html).
 
 ## Set up Git and GitHub authentication {#set_up_git_and_github}
 
@@ -61,7 +52,7 @@ Before you start working with GitHub, you need to set up Git and install any nec
    You can check to see if you have Git already installed by opening a terminal and typing `git --version`.
 
 	{: .tip}
-  It's easiest to install Git by <a href="https://desktop.github.com">installing GitHub Desktop</a>. Installing GitHub Desktop will include all the Git software as well.
+  It might be easiest to install Git by <a href="https://desktop.github.com">installing GitHub Desktop</a>. Installing GitHub Desktop will include all the Git software as well. However, I recommend using the command line rather than the GUI tool.
 
 	If you're installing the Windows version of GitHub Desktop, after you install GitHub, you'll get a special GitHub Shell shortcut that you can use to work on the command line. You should use that special GitHub Shell rather than the usual command line prompt.
 

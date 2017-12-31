@@ -4293,7 +4293,7 @@ RAML.Inspector = (function() {
       return done(new Error('Unable to process url: ' + url));
     }
 
-    // Merge the fragment with the the query string. This is because, at least,
+    // Merge the fragment with the query string. This is because, at least,
     // Instagram has a bug where the OAuth 2.0 state is being passed back as
     // part of the query string instead of the fragment. For example:
     // "?state=123#access_token=abc"

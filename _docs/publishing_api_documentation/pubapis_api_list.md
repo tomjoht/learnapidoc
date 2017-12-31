@@ -7,14 +7,14 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-Rather than approach the the topic of publishing prescriptively, we're going to begin with some concrete examples and move towards the formulation of general principles. The following are about 100 openly accessible REST APIs that you can browse as a way to look at patterns and examples. Most of these REST API links are available from [programmableweb.com](http://programmableweb.com). I highly recommend that you [browse APIs by category docs](https://www.programmableweb.com/category-api) from their site.
+Rather than approach the topic of publishing prescriptively, we're going to begin with some concrete examples and move towards the formulation of general principles. The following are about 100 openly accessible REST APIs that you can browse as a way to look at patterns and examples. Many of these REST API links are available from [programmableweb.com](http://programmableweb.com).
 
 * TOC
 {:toc}
 
 ## 100 API doc sites
 
-Peruse a few of these documentation sites to get a sense of the variety, but also try to identify common patterns. In this list, I include not only impressively designed docs but also docs that look like they were created by a department intern just learning HTML. The variety in the list demonstrates the wide variety of publishing tools and approaches, as well as terminology, in API docs. It seems that almost everyone does their API docs their own way, with their own site, branding, organization, and typography.
+Browse a few of these documentation sites to get a sense of the variety, but also try to identify common patterns. In this list, I include not only impressively designed docs but also docs that look like they were created by a department intern just learning HTML. The variety in the list demonstrates the wide variety of publishing tools and approaches, as well as terminology, in API docs. It seems that almost everyone does their API docs their own way, with their own site, branding, organization, and style.
 
 
 1.  [Google Places API docs](https://developers.google.com/places/webservice/intro)
@@ -121,7 +121,7 @@ Peruse a few of these documentation sites to get a sense of the variety, but als
 102. [Spotify API](https://developer.spotify.com/web-api/)
 103. [Trello API](https://developers.trello.com/)
 
-{% include tip.html content="I last checked these links in January 2018. Given how fast the technology landscape changes, some links may be out of date. However, if you simply type <i>{product} + api docs</i> into Google's search, you will likely find the company's developer doc site. Most commonly the API docs are at developer.{company}.com." %}
+{% include tip.html content="I last checked these links in January 2018. Given how fast the technology landscape changes, some links may be out of date. However, if you simply type <i>{product} + api docs</i> into Google's search, you will likely find the company's developer doc site. Most commonly, the API docs are at developer.{company}.com." %}
 
 ## Programmableweb<span>.</span>com: A directory of API doc sites on the open web
 
