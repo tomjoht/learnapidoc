@@ -8,15 +8,10 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-In the previous step, you used Github Desktop to manage the workflow of committing files and creating requests. In this tutorial, you'll do a similar thing but using the browser-based interface that Github provides rather than using a terminal or Github Desktop.
+In the previous step, [Using the GitHub Desktop Client](pubapis_github_desktop_client.html), you used Github Desktop to manage the workflow of committing files and creating requests. In this tutorial, you'll do a similar thing but using the browser-based interface that Github provides rather than using a terminal or Github Desktop.
 
-{: .tip}
-When you ask developers to review content, ask the specific developer who created the feature you're documenting. Developer tasks are usually specific. One developer may not understand what another developer is really doing (beyond a superficial level).
-
-{% if site.format == "web" %}
 * TOC
 {:toc}
-{% endif %}
 
 ## Make edits in a separate branch
 

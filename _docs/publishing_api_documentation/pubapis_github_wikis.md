@@ -8,13 +8,12 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-One of the easiest toolchains to implement with developer docs is a GitHub wiki. When you create a repository on GitHub, the repository comes with a wiki that you can add pages to. This wiki can be convenient if your source code is stored on GitHub. Learning GitHub will also allow you to become familiar with the version control workflows that are common with many docs-as-code tools. For this reason, I have a detailed tutorial for using GitHub in this course.
+One of the easiest toolchains to implement with developer docs is a GitHub wiki. When you create a repository on GitHub, the repository comes with a wiki that you can add pages to. This wiki can be convenient if your source code is stored on GitHub.
 
+Learning GitHub will also allow you to become familiar with the version control workflows that are common with many docs-as-code tools. For this reason, I have a detailed tutorial for using GitHub in this course. Regardless of whether you actually use GitHub as a publishing tool, this tutorial will introduce you to Git workflows with content.
 
-{% if site.format == "web" %}
 * TOC
 {:toc}
-{% endif %}
 
 ## About GitHub Wikis
 
@@ -32,33 +31,31 @@ Because you can work with the wiki files locally, you can leverage other tools (
 
 {% include random_ad.html %}
 
-## Limitations with GitHub wikis
-
-There are some limitations with GitHub wikis:
+GitHub wikis have some limitations:
 
 * **Limited branding**. All GitHub wikis look the same.
 * **Open access on the web**. If your docs need to be private, GitHub probably isn't the place to store them (private repos, however, are an option).
 * **No structure**. The GitHub wiki pages give you a blank page and basically allow you to add sections. You won't be able to do any advanced styling or more attractive-looking interactive features.
 
 {: .note}
-I'm specifically talking about the built-in wiki feature with GitHub here, not [GitHub Pages](https://pages.github.com/). You can use tools such as Jekyll to brand and auto-build your content with whatever look and feel you want. I explore GitHub Pages with more depth in the tutorial on [Jekyll](pubapis_jekyll.html).
+I'm specifically talking about the built-in wiki feature with GitHub, not [GitHub Pages](https://pages.github.com/). You can use tools such as Jekyll to brand and auto-build your content with whatever look and feel you want. I explore GitHub Pages with more depth in the tutorial on [Jekyll](pubapis_jekyll.html).
 
 ## Set up Git and GitHub authentication {#set_up_git_and_github}
 
 Before you start working with GitHub, you need to set up Git and install any necessary tools and credentials to work with GitHub (especially if you're on Windows).
 
-1.  If you don't already have it, set up Git on your computer.
+1.  If you don't already have Git, set it up on your computer.
 
     You can check to see if you have Git already installed by opening a terminal and typing `git --version`.
 
     {: .tip}
-    It might be easiest to install Git by <a href="https://desktop.github.com">installing GitHub Desktop</a>. Installing GitHub Desktop will include all the Git software as well. However, I recommend using the command line rather than the GUI tool.
+    On Windows, it might be easiest to install Git by <a href="https://desktop.github.com">installing GitHub Desktop</a>. Installing GitHub Desktop will include all the Git software as well. However, I recommend using the command line rather than the GitHub Desktop GUI tool.
 
     If you're installing the Windows version of GitHub Desktop, after you install GitHub, you'll get a special GitHub Shell shortcut that you can use to work on the command line. Use that special GitHub Shell rather than the usual command line prompt. When you use that GitHub Shell, you can also use more typical Unix commands, such as `pwd` for present working directory instead of `dir` (though both commands will work).
 
     You can also install Git on Windows by following the instructions here: [Installing on Windows](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#_installing_on_windows).
 
-    To install Git on a Mac, see [Installing on Mac](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#_installing_on_mac). On a Mac, however, you don't need a special Git Shell. Open the Terminal in the same way &mdash; go to **Applications > Utilities > Terminal**.
+    To install Git on a Mac, see [Installing on Mac](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#_installing_on_mac). On a Mac, however, you don't need a special Git Shell. You can open Terminal by doing to **Applications > Utilities > Terminal**. Or install [iTerm](https://www.iterm2.com/), or use [PlatformIO IDE Terminal](https://atom.io/packages/platformio-ide-terminal) in [Atom](https://atom.io/) (my preferred method).
 
 2.  Create a GitHub account by going to [GitHub.com](http://github.com).
 
@@ -69,6 +66,7 @@ Before you start working with GitHub, you need to set up Git and install any nec
     * [Set up Git](https://help.github.com/articles/set-up-git/). Note that when you configure your username, use your GitHub username, which will be something like `tomjoht` instead of `Tom Johnson`.
     * [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
     * [Adding a new SSH key to your GitHub account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
+    * [Associating text editors with Git](https://help.github.com/articles/associating-text-editors-with-git/)
 
     After you make these configurations, close and re-open your terminal.
 
@@ -83,12 +81,13 @@ In this section, you will create a new GitHub repo and publish a sample file the
 2.  Give the repository a name, description, select **Public**, select **Initialize the repo with a README**, and then click **Create repository**.
 3.  Click the **Wiki** link at the top of the repository.
 4.  Click **Create the first page**.
-5.  Insert your own sample documentation page, preferably using Markdown syntax. Or grab the sample Markdown page of a <a href="http://idratherbewriting.com/learnapidoc/assets/files/surfreportendpointdoc.md">fake endpoint called surfreport here</a> and insert it into the page.
-6.  Click **Save page**.
+5.  In the default page ("Home"), insert your own sample documentation content, preferably using Markdown syntax. Or grab the sample Markdown page of a <a href="http://idratherbewriting.com/learnapidoc/assets/files/surfreportendpointdoc.md">fake endpoint called surfreport here</a> and insert it into the page.
+6.  In the **Edit Message** box, type a description of what you updated (your commit message).
+7.  Click **Save page**.
 
     Notice how GitHub automatically converts the Markdown syntax into HTML and styles it in a readable way.
 
-    You could use this GitHub wiki in an entirely browser-based way for multiple people to collaborate and edit content. However, you can also take all the content offline and edit locally, and then commit your changes.
+    You could use this GitHub wiki in an entirely browser-based way for multiple people to collaborate and edit content. However, you can also take all the content offline and edit locally, and then commit your changes and push them online.
 
 ## Save the GitHub repository locally
 
@@ -96,88 +95,95 @@ So far you've been working with GitHub in the browser. Now we'll take the same c
 
 1.  While viewing your the GitHub wiki in your browser, look to the right to the section that says **Clone this wiki locally**. Click the clipboard button. (This copies the clone URL to your clipboard.)
 
-	  Cloning the wiki gives you a copy of the content on your local machine. Git is *distributed* version control software, so everyone has his or her own copy. You will clone this wiki on your local machine; the version in the cloud on GitHub is referred to as "origin."
-
-	  More than just copying the files, though, when you clone a repo, you initialize Git in the folder where you clone the repo. Initializing Git means Git will create an invisible Git folder in that directory, and Git will start tracking your edits to the files, providing version control. With Git initialized, you can run `pull` commands to get updates of the online repository (origin) pulled down to your local copy. You can also `commit` your changes and then `push` your changes back up to the origin repository if you're entitled as a collaborator for the project.
-
-	  The "Clone this wiki locally" link allows you to easily insert the URL into a `git clone {url}` command in your terminal.
+    <img class="medium" src="images/clone-this-wiki-locally.png" class="noExtIcon" alt="Clone this wiki locally"/>
 
 	  {: .note}
-    Note that the wiki is a separate clone URL than the project's repository. Make sure you're viewing your wiki and not your project.
+    The wiki is a separate clone URL than the project's repository. Make sure you're viewing your wiki and not your project. The clone URL will include `.wiki`.
 
 	  In contrast to "Clone this wiki locally," the "Clone in Desktop" option launches the GitHub Desktop client and allows you to manage the repository and your modified files, commits, pushes, and pull through the GitHub Desktop client.
 
-4.  If you're a Windows user, open the **Git Shell**, which should be a shortcut on your Desktop or should be available in your list of programs. (This shell gets installed when you installed GitHub Desktop &mdash; see [Set Up Git and GitHub authentication](#set_up_git_and_github) above).
+4.  If you're a Windows user, open the **Git Shell**, which should be a shortcut on your Desktop or should be available in your list of programs. (This shell gets installed when you installed GitHub Desktop &mdash; see [Set Up Git and GitHub authentication](#set_up_git_and_github) above). On a Mac, open a terminal.
 3.  In your terminal, either use the default directory or browse (`cd`) to a directory where you want to download your repository.
 4.  Type the following, but replace the git URL with your own git URL that you copied earlier (it should be on your clipboard). The command should look like this:
 
-    ```
+    ```bash
 	  git clone https://github.com/tomjoht/weatherapi.wiki.git
     ```
 
-	 {: .note}
-   To paste content into the Git Shell on Windows, right-click and select <b>Paste</b>.
+	  {: .note}
+    To paste content into the Git Shell on Windows, right-click and select <b>Paste</b>.
 
-5.  Navigate to the directory (either using standard ways of browsing for files on your computer or via the terminal) to see the files you downloaded. If you can view invisible files on your machine ([Windows](https://support.microsoft.com/en-us/help/14201/windows-show-hidden-files), [Mac](https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/)), you will also see a git folder.
+    Cloning the wiki gives you a copy of the content on your local machine. Git is *distributed* version control software, so everyone has his or her own copy. You will clone this wiki on your local machine; the version in the cloud on GitHub is referred to as "origin."
+
+    More than just copying the files, though, when you clone a repo, you initialize Git in the folder where you clone the repo. Initializing Git means Git will create an invisible Git folder in that directory, and Git will start tracking your edits to the files, providing version control. With Git initialized, you can run `pull` commands to get updates of the online repository (origin) pulled down to your local copy. You can also `commit` your changes and then `push` your changes back up to the origin repository if you're entitled as a collaborator for the project.
+
+5.  Navigate to the directory (either using standard ways of browsing for files on your computer or via the terminal with `cd`) to see the files you downloaded. For example, type `cd weatherapi.wiki` and then `ls` to see the files.
+
+    If you can view invisible files on your machine ([Windows](https://support.microsoft.com/en-us/help/14201/windows-show-hidden-files), [Mac](https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/)), you will also see a git folder.
 
 ## Make a change locally, commit it, and push the commit to the GitHub repository
 
 1.  In a text editor, open the Markdown file you downloaded in the GitHub repository.
+
+    On a Mac, you can type `open Home.md` in your Terminal, and the file will open in the default text editor.
+
 2.  Make a small change and save it.
-3.  In your terminal, make sure you're in the directory where you downloaded the github project.
+3.  In your terminal, make sure you're in the directory where you downloaded the GitHub project.
 
     To look at the directories under your current path, type `ls`. Then use `cd {directory name}` to drill into the folder, or `cd ../` to move up a level.
 
-4.  Add the file to your staging area:
+4.  Add all the files to your staging area:
 
-    ```
-	  git add --all
+    ```bash
+	  git add .
     ```
 
-	  Git doesn't track all files in the same folder where the invisible Git folder has been initialized. Git tracks modifications only for the files that have been "added" to Git. By selecting `--all`, you're adding all the files in the folder to Git. You could also type a specific file name here instead of `--all`. Or you can type `git add .` to achieve the same result.
+	  Git doesn't automatically track all files in the same folder where the invisible Git folder has been initialized. Git tracks modifications only for the files that have been "added" to Git. By selecting ` . ` or `--all`, you're adding all the files in the folder to Git. You could also type a specific file name here instead, such as `git add Home.md`, to just add one file to Git's tracking.
 
 	  {: .warning}
-    Use Git only to track text (non-binary) files. Don't start tracking large binary files, especially audio or video files. Version control systems really can't handle that kind of format well. If you use Git to manage your documentation, exclude these files through your [.gitignore file](https://git-scm.com/docs/gitignore).
+    Use Git only to track text (non-binary) files. Don't start tracking large binary files, especially audio or video files. Version control systems really can't handle that kind of format well. If you use Git to manage your documentation, exclude these files through your [.gitignore file](https://git-scm.com/docs/gitignore). You might also consider excluding images, as they bloat your repo size as well.
 
 4.  See the changes set in your staging area:
 
-    ```
+    ```bash
 	  git status
     ```
 
-	  The staging area lists all the files that have been added to Git that you have modified in some way.
+	  The staging area lists all the files that have been added to Git that you have modified in some way. It's a good practice to always type `git status` before committing files, because you might realize that by typing `git add .`, you might have accidentally added some files you didn't intend to track. You can always back out a change to a file by typing `git checkout Home.md`, where Home.md is the file you in which want to undo changes and Git staging.
 
 5.  Commit the changes:
 
-    ```
+    ```bash
 	  git commit -m "updated some content"
     ```
 
-  	When you commit the changes, you're creating a snapshot of the files at a specific point in time for versioning.
+    When you commit the changes, you're creating a snapshot of the files at a specific point in time for versioning.
 
-  	The `git commit -m` command is a shortcut for committing and typing a commit message in the same step. It's much easier to commit updates this way.
+    The `git commit -m` command is a shortcut for committing and typing a commit message in the same step. It's much easier to commit updates this way.
 
-  	If you just type `git commit`, you'll be prompted with another window to describe the change. On Windows, this new window will be a Notepad window. Describe the change on the top line, and then save and close the Windows file.
+    If you just type `git commit`, you'll be prompted with another window to describe the change. On Windows, this new window will be a Notepad window. Describe the change on the top line, and then save and close the Windows file.
 
-  	On a Mac, a new window doesn't open. Instead, the [vi editor](https://en.wikipedia.org/wiki/Vi) mode opens up. ("vi" stands for visual, but it's not a very visual editor.) To use this mode, you have to know a few simple Unix commands:
-  	<ul>
-  	<li><b>Arrow keys:</b> You use your arrow keys to move around. You don't use your mouse.</li>
-  	<li><b>Insert mode:</b> If you start typing, vi enters the Insert mode.</li>
-  	<li><b>Escaping out of Insert Mode:</b> To escape out of Insert mode, press your <b>Escape</b> key.</li>
-  	<li><b>Saving: </b>To save your edits, you need to do a "write quit." Press <b>Escape</b> to exit Insert mode. Then Press <b>Ctrl + :</b>. Then type <b>wq</b> for "write quit." If you made changes but don't want to save them, type <b>q!</b> for "quit override."</li>
-  	</ul>
-  	<p>You can also use <a href="http://www.cs.rit.edu/~cslab/vi.html">other vi commands</a>.</p>
+    On a Mac, a new window doesn't open. Instead, the [Vim editor](https://en.wikipedia.org/wiki/Vi) mode opens up. ("vi" stands for visual and "m" for mode, but it's not a very visual editor.) To use this mode, you have to know a few simple Unix commands:
+
+    * **Arrow keys:** You use your arrow keys to move around. You don't use your mouse.
+    * **Insert mode:** If you start typing, vi enters the Insert mode.
+    * **Escaping out of Insert Mode:** To escape out of Insert mode, press your **Escape** key.
+    * **Saving** To save your edits, you need to do a "write quit." Press **Escape** to exit Insert mode. Then Press **Ctrl + :**. Then type **wq** for "write quit." If you made changes but don't want to save them, type <b>q!</b> for "quit override."
+
+    You can also use [other vim commands](http://www.cs.rit.edu/~cslab/vi.html). Overall, I don't like the Vi[m] editor and prefer using Sublime Text as my default editor associated with Git. See [Associating text editors with Git](https://help.github.com/articles/associating-text-editors-with-git/) for details.
 
 6.  Push the changes to your repository:
 
-    ```
-  	git push
+    ```bash
+    git push
     ```
 
     If you didn't [set up GitHub authentication](#set_up_git_and_github), you may be prompted for your GitHub user name and password.
 
+    Note that when you type `git push` or `git pull` and don't specify the branch, GitHub uses the default branch from origin. The default branch on GitHub is called `master`. Thus the command actually passed is `git push origin master` or `git push origin master`. Some developers prefer to specify the repository and branch to ensure they are interacting with the right repositories and branches.
+
 7.  Now verify that your changes took effect. Browse to your GitHub wiki repository and look to see the changes.
 
-## GitHub Workflows
+## GitHub workflows for online and local edits
 
-The visual editor on GitHub.com might be an easy way for subject matter experts to contribute, whereas tech writers will probably want to clone the repo and work locally. If some people make edits in the browser while others edit locally, you might encounter merge conflicts. To avoid merge conflicts, always run `git pull` before running `git push` to update origin. If two people edit the same content simultaneously between commits, you will likely need to [resolve merge conflicts](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/).
+The visual editor on GitHub.com might be an easy way for subject matter experts to contribute, whereas tech writers will probably want to clone the repo and work locally. If some people make edits in the browser while others edit locally, you might encounter merge conflicts. To avoid merge conflicts, always run `git pull` before running `git push`. If two people edit the same content simultaneously between commits, you will likely need to [resolve merge conflicts](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/).
