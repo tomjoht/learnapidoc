@@ -85,6 +85,7 @@ To find an open-source project with API doc needs:
 5.  If searching GitHub doesn't yield any appropriate projects, try the following resources:
 
     * [Trending GitHub projects](https://github.com/trending)
+    * [Crowdforge](https://crowdforge.io/)
     * [Up for Grabs](http://up-for-grabs.net/#/)
     * [Bus Factor](https://libraries.io/experiments/bus-factor)
     * [Code Triage](https://www.codetriage.com/)

@@ -8,7 +8,9 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-In the previous step, [Using the GitHub Desktop Client](pubapis_github_desktop_client.html), you used Github Desktop to manage the workflow of committing files and creating requests. In this tutorial, you'll do a similar thing but using the browser-based interface that Github provides rather than using a terminal or Github Desktop.
+In the previous step, [Activity: Use the GitHub Desktop Client](pubapis_github_desktop_client.html), you used Github Desktop to manage the workflow of committing files, branching, and merging. In this tutorial, you'll do a similar activity but using the browser-based interface that Github provides rather than using a terminal or Github Desktop.
+
+Understanding the pull request workflow is important for reviewing changes in a collaborative project, such as an open-source project with many contributors. Using GitHub's interface is also handy if you have non-technical reviewers.
 
 * TOC
 {:toc}
@@ -20,15 +22,15 @@ By default, your new repository has one branch called "Master." Usually when you
 {: .note}
 Although you can perform these operations using Git commands from your terminal, you can also perform the actions through the browser interface. This might be helpful if you have less technical people making edits to your content.
 
-To make edits in a separate branch:
+To make edits in a separate branch on GitHub:
 
-1. Pretend you're a SME reviewer. Go to the Github repo and create a new branch by selecting the branch drop-down menu and typing a new branch name, such as "sme review."
+1. Pretend you're a SME reviewer. Go to the Github repo and create a new branch by selecting the branch drop-down menu and typing a new branch name, such as "sme-review." Then press your **Enter** key.
 
 	<img src="images/github_sme_review.png" alt="Creating a new branch" />
 
-	When you create a new branch, the content from the master is copied over into the new branch. The branch is like doing a "Save as" with an existing document.
+	When you create a new branch, the content from the master (or whatever branch you're currently viewing) is copied over into the new branch. The branch is like doing a "Save as" with an existing document.
 
-2. Click the **README.txt** file, and then click the **Edit this file** button (pencil icon) to edit the file.
+2. Click a file, and then click the pencil icon <img src="images/github-pencil-icon.png" alt="Edit this file" style="vertical-align: bottom"/> ("Edit this file") to edit the file.
 
 	<img src="images/github_making_branch_edits.png" alt="Making an edit" />
 
@@ -38,7 +40,7 @@ To make edits in a separate branch:
 
 ## Create a pull request
 
-Now that the review process is complete, it's time to merge the branch into the master. You merge the branch into the master through a pull request. Any "collaborator" on the team with write access can initiate and complete the pull request. You can add collaborators through Settings.
+Now that the review process is complete, it's time to merge the branch into the master. You merge the branch into the master through a pull request. Any "collaborator" on the team with write access can initiate and complete the pull request. You can add collaborators through Settings > Collaborators.
 
 To create a pull request:
 
@@ -51,7 +53,7 @@ To create a pull request:
 
 	<img src="images/github_compare_to.png" alt="Compare to" />
 
-	When you compare the branch against the master, you can see a list of all the changes. You can view the changes through two viewing modes: Unified or Split. Unified shows the edits together in the same content area, whereas split shows the two files side by side.
+	When you compare the branch against the master, you can see a list of all the changes. You can view the changes through two viewing modes: Unified or Split (these are tabs shown on the right of the content). Unified shows the edits together in the same content area, whereas split shows the two files side by side.
 
   {% include random_ad.html %}
 
@@ -65,10 +67,10 @@ Now pretend you are the project owner, and you see that you received a new pull 
 1. Click the **Pull requests** button to see the pending pull requests.
 2. Click the pull request and view the changes by clicking the **Files changed** tab.
 
-	<img src="images/github_files_changed.png" alt="Github files changed" />
+	 <img src="images/github_files_changed.png" alt="Github files changed" />
 
 	{: .note}
-If you only want to implement some of the edits, go into the sme review branch and make the updates before processing the pull request. The pull request doesn't give you a line-by-line option about which changes you want to accept or reject (like in Microsoft Word's Track Changes). Merging pull requests is an all-or-nothing process.
+  If you only want to implement some of the edits, go into the sme review branch and make the updates before processing the pull request. The pull request doesn't give you a line-by-line option about which changes you want to accept or reject (like in Microsoft Word's Track Changes). Merging pull requests is an all-or-nothing process. You can also click **Review changes** and select the **Request changes** option, asking the reviewer to make the changes.
 
 	Note also that if the pull request is made against an older version of the master, such that the master's original content no longer exists or has moved elsewhere, the merges will be more difficult to make.
 
@@ -85,18 +87,17 @@ If you only want to implement some of the edits, go into the sme review branch a
 
 	If you look at your list of branches, you'll see that the deleted branch no longer appears.
 
-
 ## Add collaborators to your project
 
-You need to add collaborators to your Github project so they can commit edits to a branch. If someone isn't a collaborator and they want to make edits, they will receive an error.
+You might need to add collaborators to your Github project so they can commit edits to a branch. If other project members aren't collaborators and they want to make edits, they will receive an error. (See [Inviting collaborators to a personal repository](https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/).)
 
-If people don't have write access, they can fork the project instead of making edits on a branch on the same project. Forking a project clones the entire repository, though, rather than creating a branch within the same repository. You can merge a forked repository, but this scenario probably is less common for technical writers working with developers on the same projects.
+If people don't have write access, they can [fork the repo](https://help.github.com/articles/fork-a-repo/) instead of making edits on a branch on the same project. Forking a project clones the entire repository, though, rather than creating a branch within the same repository. The fork (copy) then exists in the user's personal GitHub account. You can merge a forked repository (this is the typical model for open-source projects with many outside contributors), but this scenario probably is less common for technical writers working with developers on the same projects.
 
 To add collaborators to your Github project:
 
-1. While viewing your Github repository, click the **Settings** button (gear icon) on the lower-right.
+1. While viewing your Github repository, click the **Settings** button (gear icon).
 2. Click the **Collaborators** tab on the left.
-3. Type the Github usernames of those you want to have access in the Collaborator area.
+3. Type the Github user names of those you want to have access in the Collaborator area.
 4. Click **Add Collaborator**.
 
 	<img src="images/github_add_collaborators.png" alt="Adding collaborators" />

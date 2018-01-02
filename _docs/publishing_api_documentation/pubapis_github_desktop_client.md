@@ -1,5 +1,5 @@
 ---
-title: Using the GitHub Desktop Client
+title: "Activity: Use the GitHub Desktop client"
 permalink: /pubapis_github_desktop_client.html
 course: "Documenting REST APIs"
 weight: 7.71
@@ -42,10 +42,10 @@ In this tutorial, you'll use GitHub Desktop to manage the Git workflow.
 
 9.  Click **Push origin** at the top.
 
-If you view your repository online (by going to **Repository > View on GitHub**), you'll see that the change you made has been pushed to the master. You can also click the **History** tab int he GitHub Desktop client (instead of the **Changes** tab), or go to **View > Show History** to see the changes you previously committed.
+If you view your repository online (by going to **Repository > View on GitHub**), you'll see that the change you made has been pushed to the master branch on origin. You can also click the **History** tab in the GitHub Desktop client (instead of the **Changes** tab), or go to **View > Show History** to see the changes you previously committed.
 
 {: .note}
-Although I prefer to use the terminal instead of the GitHub Desktop GUI, the GUI gives you an easier visual experience to see the changes made to a repository. You could use both the command line and Desktop client if you want.
+Although I prefer to use the terminal instead of the GitHub Desktop GUI, the GUI gives you an easier visual experience to see the changes made to a repository. You can use both the command line and Desktop client in combination, if you want.
 
 ## Create a branch
 
@@ -58,7 +58,7 @@ Now let's create a branch, make some changes, and see how the changes are specif
 	  <img src="images/github-desktop-current-branch.png" alt="Working in a branch" />
 
 2.  In your new branch, browse to the file you created earlier and make a change to it, such as adding a new line with some text. Save the changes.
-3.  Return to GitHub Desktop and notice that on the Uncommitted Changes tab, you have new modified files.
+3.  Return to GitHub Desktop and notice that on the Changes tab, you have new modified files.
 
 	  <img src="images/github-desktop-file-changes.png" alt="New files modified" />
 
@@ -70,13 +70,12 @@ Now let's create a branch, make some changes, and see how the changes are specif
 
 6.  Switch back to your master branch and note how the changes you made while editing in the development branch don't appear in your master branch.
 
-    Usually, you create a new branch when you're making extensive changes to your content. For example, suppose you want to revamp a section ("Section X") in your docs. However, you might want to publish other updates before publishing the extensive changes in Section X. If you were working in the same branch, it would be difficult to selectively push updates on a few files outside of Section X without pushing updates you've made to files in Section X as well.
-
-    Through branching, you can confine your changes to a specific version that you don't push live until you're ready to merge the changes into your master branch.
+    {: note}
+    Usually, you create a new branch when you're making extensive changes to your content. For example, suppose you want to revamp a section ("Section X") in your docs. However, you might want to publish other updates before publishing the extensive changes in Section X. If you were working in the same branch, it would be difficult to selectively push updates on a few files outside of Section X without pushing updates you've made to files in Section X as well. <br/><br/>Through branching, you can confine your changes to a specific version that you don't push live until you're ready to merge the changes into your master branch.
 
 ## Merge the development branch into master
 
-Now let's merge the development branch into master.
+Now let's merge the development branch into the master branch.
 
 1.  In the GitHub Desktop client, select the development branch. Make a change to a file, and then commit the changes.
 2.  Switch to the master branch.
@@ -87,12 +86,14 @@ Now let's merge the development branch into master.
 
     If you look at your changed file, you should see the changes in the master branch.
 
+{% include random_ad.html %}
 
 ## Merge the branch through a pull request
 
 Now let's merge the development branch into the master using a pull request workflow. We'll pretend that we've cloned a repo managed by engineers, and we want to have the engineers merge in the development branch. (In other words, we might not have rights to merge branches into the master.) To do this, we'll create a pull request.
 
-1.  In the GitHub Desktop client, while you have development branch selected, go to **Branch > Create Pull Request**.
+1.  As before, switch to the development branch, make some updates to the content in a file, and then save and commit the changes. After committing the changes, click **Push origin** to push your changes to the remote version of the development branch on GitHub.
+2.  In the GitHub Desktop client, while you have development branch selected, go to **Branch > Create Pull Request**.
 
 	  GitHub opens in the browser with the Pull Request form opened.
 
@@ -100,7 +101,7 @@ Now let's merge the development branch into the master using a pull request work
 
     The left-facing arrow from the development branch towards the master indicates that the pull request ("PR") wants to merge development into master.
 
-2.  Describe the pull request, and then click **Send Pull Request**.
+3.  Describe the pull request, and then click **Send Pull Request**.
 
     At this point, engineers would get an email request asking for them to merge in the edits. Play the part of the engineer by confirming the merge request. As long as the merge request doesn't pose any conflicts, you'll see a **Merge Pull Request** button.
 
@@ -108,11 +109,11 @@ Now let's merge the development branch into the master using a pull request work
 
     To see what changes you're merging into master, you can click the **Files changed** tab. Then click **Merge Pull Request** to merge in the branch, and click **Confirm Merge** to complete the merge.
 
-5.  Now let's get the updates you merged into master online into your local copy. In your GitHub Desktop GUI client, select the **master** branch, and then click the **Fetch origin** button. Fetch gets the latest updates from origin but doesn't update your local working copy with the changes.
+4.  Now let's get the updates you merged into master online into your local copy. In your GitHub Desktop GUI client, select the **master** branch, and then click the **Fetch origin** button. Fetch gets the latest updates from origin but doesn't update your local working copy with the changes.
 
     After you click **Fetch origin**, the button changes to **Pull Origin**.
 
-6.  Click **Pull Origin** to update your local working copy with the fetched updates.
+5.  Click **Pull Origin** to update your local working copy with the fetched updates.
 
     Now check your files and notice that the updates that were originally in the development branch now appear in master.
 
@@ -128,7 +129,7 @@ The button that previously said "Push origin" now says "Pull origin." Click **Pu
 
 > "We found some conflicts while trying to merge. Please resolve the conflicts and commit the changes."
 
-If you decide to commit your changes, you'll see a message that says,
+If you decide to commit your changes, you'll see a message that says:
 
 >"Please resolve all conflicted files, commit, and then try syncing again."
 

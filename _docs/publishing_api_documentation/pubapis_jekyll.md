@@ -8,26 +8,22 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-Static site generators are a breed of website compilers that package up a group of files (usually written in Markdown) and make them into a website. There are more than 350 different static site generators. You can browse them at [staticgen.com](http://www.staticgen.com/). The most popular static site generator (based on number of downloads, usage, and community) is Jekyll, so I'll be focusing on Jekyll here.
+Static site generators are a breed of website compilers that package up a group of files (usually written in Markdown) and make them into a fully deployable website. There are more than 350 different static site generators. You can browse them at [staticgen.com](http://www.staticgen.com/). The most popular static site generator (based on number of downloads, usage, and community) is [Jekyll](https://jekyllrb.com/), and it's the one I have the most experience with, so I'll be focusing on Jekyll here.
 
-{% if site.format == "web" %}
 * TOC
 {:toc}
-{% endif %}
 
 ## Jekyll
 
-Jekyll is one of the most popular static site generators. All of my help content is on Jekyll. You can publish a fully functional tech comm website that includes content re-use, conditional filtering, variables, PDF output, and everything else you might need as a technical writer.
+Jekyll is a Ruby-based static site generator, meaning it uses Ruby as the underlying programming language to compile the website. This site, my [blog](http://idratherbewriting.com), and the documentation for my past two jobs were created using Jekyll. With Jekyll, you can publish a fully functional tech comm website that includes content re-use, conditional filtering, variables, PDF output, and everything else you might need as a technical writer.
 
 {% include random_ad.html %}
 
-Here's the documentation theme that I developed for Jekyll:
+Here's a documentation theme that I developed for Jekyll:
 
 <a href="http://idratherbewriting.com/documentation-theme-jekyll/" class="noExtIcon"><img src="images/jekylldocumentationtheme.png" alt="My Jekyll Documentation theme" /></a>
 
-There isn't any kind of special API reference endpoint formatting here (yet), but the platform is so flexible, you can do anything with it as long as you know HTML, CSS, and JavaScript (the fundamental language of the web).
-
-Whereas the Swagger, RAML, and API Blueprint REST specifications mainly just produce an interactive API console, with a static site generator, you have a tool for building a full-fledged website. With the website, you can include complex navigation, content re-use, translation, PDF generation, and more.
+There isn't any kind of special API reference endpoint formatting here, but the platform is so flexible, you can do anything with it as long as you know HTML, CSS, and JavaScript (the fundamental language of the web). With a static site generator, you have a tool for building a full-fledged website using pretty much any style or JavaScript framework you want. With the Jekyll website, you can include complex navigation, content re-use, translation, PDF generation, and more.
 
 ## Static site generators give you a flexible web platform
 
@@ -51,40 +47,48 @@ When you're authoring a Jekyll site, you open up a preview server that continuou
 
 This setup works fairly well. Granted, I do have a Mac Thunderbolt 21-inch monitor, so it gives me more real estate. On a small screen, you might have to switch back and forth between screens to see the output.
 
-Admittedly, the Markdown format is easy to use but also susceptible to error, especially if you have complicated list formatting. When you have ordered list items separated by screenshots and result statements, and sometimes the result statements have lists themselves or note formatting, it can be a bit tricky to get the display right.
-
-But for the majority of the time, writing in Markdown is a joy. You can focus on the content without getting wrapped up in tags. If you do need complex tags, anything you can write in HTML or JavaScript you can include on your page.
+Admittedly, the Markdown format is easy to use but also susceptible to error, especially if you have complicated list formatting. But for the majority of the time, writing in Markdown is a joy. You can focus on the content without getting wrapped up in tags. If you do need complex tags, anything you can write in HTML or JavaScript you can include on your page.
 
 ## Automating builds from Github
 
-Let's do an example in publishing in CloudCannon using the Documentation Theme for Jekyll (the theme I built). You don't need to have a Windows machine to facilitate the building and publishing &mdash; you'll do that via CloudCannon and Github.
+Let's do an example in publishing in [CloudCannon](https://cloudcannon.com/), "The Cloud CMS for Jekyll," using the Documentation Theme for Jekyll (the theme I built). You don't need to have a Windows machine to facilitate the building and publishing &mdash; you'll do that via CloudCannon and Github. This tutorial will show you how to plug into a robust hosting platform that reads content stored and managed on GitHub.
 
 ## Set up your doc theme on Github
 
 1.  Go to the [Github page for the Documentation theme for Jekyll](https://github.com/tomjoht/documentation-theme-jekyll) and click **Fork** in the upper-right.
 
-	When you fork a project, a copy of the project (using the same name) gets added to your own Github repository. You'll see the project at `https://github.com/{your github username}/documentation-theme-jekyll`.
+	When you fork a project, a copy of the project (using the same name) gets added to your own Github repository. You'll see the project at <code>https://github.com/{your github username}/documentation-theme-jekyll</code>.
 
 	Sometimes people fork repositories to make changes and then propose pull requests of the fork to the original repo. Other times people fork repositories to create a starting point for a splinter project from the original. Github is all about social coding &mdash; one person's ending point is another person's starting point, and multiple projects can be merged into each other. You can [learn more about forking here](https://help.github.com/articles/fork-a-repo/).
 
-2.  Sign up for a free account at [CloudCannon](http://cloudcannon.com).
-3.  Once you sign in, click **Create Site**.
-4.  While viewing your site, in the left sidebar, click **Site Settings**.
-5.  On the **Details** tab, clear the **Minify and serve assets from CDN** check box. Then click **Update Site**.
-	Why this step? The theme you'll be connecting to uses relative link paths, which don't play nicely with the CDN caching feature in CloudCannon.
+2.  Sign up for a free account at [CloudCannon](https://cloudcannon.com).
+3.  Once you sign in, click **Create Site** and then give the new site a name.
+4.  While viewing your site, in the left sidebar, click **Settings**.  
+6.  While still under Settings, click **File Syncing**, and then next to **Github**, click **Connect**. You may be taken to Github to authorize CloudCannon's access to your Github repository.
+7.  When asked which repository to authorize, select the **Documentation theme for Jekyll** repository (the gh-pages branch), and then click **Connect**.
+8.  In the left sidebar, click **Files**. You should see the files from the repo you synced from GitHub.
+5.  Click **Settings**, select **Build**, and do the following:
 
-6.  Click **Storage Providers** and then under Github, click **Connect**.
+    * Clear the **Minify and serve assets from CDN** check box.
+    * Select **Use Experimental Build Server**.
 
-	You'll be taken to Github to authorize CloudCannon's access to your Github repository.
+    Then click **Update Build Details** at the bottom.
 
-7.  When asked which repository to authorize, select the **Documentation theme for Jekyll** repository.
-8.  Select the default write direction for changes. The default is for changes made on Github to be pushed to CloudCannon, so the arrow (which represents changes) flow from Github to CloudCannon. That's the direction you want.
-9. Wait about 5 minutes for the files from your Github repository to sync over to CloudCannon. In the left sidebar, click **File Browser**. If you see a bunch of files with a green check mark, it means the files have synced over from the Github repo.
+    In the upper-right corner, you'll see a small icon showing the build process. Click the rotating circle to see the build status.
+
+    <img src="images/cloudcannonsitebuildstatus.png"/>
+
 10. View your CloudCannon site at the preview URL in the upper-left corner.
 
-	<img src="images/previewurlcloudcannon.png" alt="Preview URL" />
+	 <a href="http://doted-lily.cloudvent.net/" class="noExtIcon"><img src="images/cloudcannonpreviewurl.png" alt="Preview URL" /></a>
 
 	It should look just like the [Documentation theme for Jekyll here](http://idratherbewriting.com/documentation-theme-jekyll).
+
+  I have to say, the integration between Cloud Cannon and GitHub is pretty mind-blowing. Through Cloud Cannon, you can offload all the hassle of hosting and maintaining your website, but you aren't locked into the system in a proprietary way. Your content lives in a custom Jekyll theme on GitHub.
+
+  Cloud Cannon automatically builds the site when you commit new updates to your GitHub repo, entirely removing the publishing and deployment step with a website. Cloud Cannon also provides additional features for authentication, metrics, suggested improvements, and more.
+
+  The only drawback with Cloud Cannon is that your company must allow you to host documentation content on GitHub. Then of course Cloud Cannon charges a monthly fee (see their [pricing](https://cloudcannon.com/pricing/)). If you need to make a case for third-party hosting, I recommend doing so by analyzing the costs of internal hosting and maintenance.
 
 ## Make an update to your Github repo
 
@@ -92,31 +96,22 @@ Remember your Github files are syncing from Github to CloudCannon. Let's see tha
 
 1.  In your browser, go to your Github repository that you forked and make a change.
 
-	For example, browse to the index.md file, click the **Edit** button (pencil icon), make an update, and then commit the update.
+	  For example, browse to the index.md file, click the **Edit this file** button (pencil icon), make an update, and then commit the update.
 
-2.  Wait a minute or so, and look for the change at the preview URL to your site on CloudCannon (refresh the page). The change should be reflected.
+2.  Return to Cloud Cannon and observe that your site automatically starts rebuilding. Wait until the build finishes, and then look for the change at the preview URL. The change should be reflected.
 
-	You've now got a workflow that involves Github as the storage provider syncing to a Jekyll theme hosted on CloudCannon.
-
-## What's cool about CloudCannon and Jekyll
-
-Jekyll is a good solution because it provides near infinite flexibility and fits well within the UX web stack.
-
-CloudCannon provides an easy way to allow subject matter experts to author and edit content, since CloudCanonn allows you to create editable regions within your Jekyll theme. This would allow a tools team to  maintain the site while providing areas for less technical people to author content.
-
-However, CloudCannon wouldn't be a good solution if your docs require authentication in a highly secure environment. Additionally, Jekyll only provides static HTML files. If you want users to log in, and then personalize what they see when logged in, Jekyll won't provide this experience.
+	You've now got a workflow that involves Github as the storage provider syncing to a Jekyll theme hosted on CloudCannon. You're publishing on the fly, based on commits to a repo. This is the essential characteristic of a [docs-as-code publishing workflow](http://127.0.0.1:4000/learnapidoc/pubapis_docs_as_code.html).
 
 ## Publish the surfreport in the Aviator Jekyll theme using CloudCannon's interface
 
+Let's say you want to use a theme that provides ready-made templates for REST API documentation. In this activity, you'll publish the weatherdata endpoints that we worked on in a Jekyll theme called Aviator. Additionally, rather than syncing the files from a Github repository, you'll just work with the files directly in CloudCannon.
 
-Let's say you want to use a theme that provides ready-made templates for REST API documentation. In this activity, you'll publish the weatherdata endpoints in a Jekyll theme called Aviator. Additionally, rather than syncing the files from a Github repository, you'll just work with the files directly in CloudCannon.
-
-The [Aviator API documentation theme](https://github.com/CloudCannon/Aviator-Jekyll-Theme) by Cloud Cannon is designed for REST APIs. You'll use this theme to input a new endpoint. If you're continuing on from the previous sections (Documenting REST APIs), you already have a new endpoint called surfreport.
+The [Aviator API documentation theme](https://github.com/CloudCannon/Aviator-Jekyll-Theme) by Cloud Cannon is designed for REST APIs. You'll use this theme to input a new endpoint.
 
 <a href="https://github.com/CloudCannon/Aviator-Jekyll-Theme" class="noExtIcon" class="noExtIcon"><img src="images/aviatortheme.png" alt="Cloud Cannon Aviator theme" /></a>
 
 {: .note}
-If you're on a Mac (with Rubygems and Jekyll installed), building Jekyll sites is a lot simpler. But even if you're on Windows, it won't matter for this tutorial. You'll be using CloudCannon, a SaaS website builder product, to build the Jekyll files.
+If you're on a Mac (with Rubygems and Jekyll installed), building Jekyll sites is a lot simpler. But even if you're on Windows, it won't matter for this tutorial. You'll be using CloudCannon, a SaaS website hosting and build service, to build the Jekyll files.
 
 ### a. Download the Jekyll Aviator theme
 
@@ -128,7 +123,7 @@ If you're on a Mac (with Rubygems and Jekyll installed), building Jekyll sites i
 
 ### b. Add the weatherdata endpoint doc to the theme
 
-1. Browse to the theme's files. In the _api folder, open 1_1_books_list.md in a text editor and look at the format.
+1. Browse to the theme's files. In the \_api folder, open 1_1_books_list.md in a text editor and look at the format.
 
 	In every Jekyll file, there's some "frontmatter" at the top. The frontmatter section has three dashes before and after it.
 
@@ -137,7 +132,7 @@ If you're on a Mac (with Rubygems and Jekyll installed), building Jekyll sites i
 2. Create a new file called 1-6_weatherdata.md and save it in the same \_api folder.
 3. Get the data from the weatherdata endpoint from this [Weather API on Mashape](https://market.mashape.com/fyhao/weather-13). Put the data from this endpoint into the Aviator theme's template.
 
-The Aviator Jekyll theme has a specific layout that will be applied to all the files inside the _api folder (these files are called a collection). Jekyll will access these values by going to api.title, api.type, and so forth. It will then push this content into the template (which you can see by going to _layouts/multi.md).
+The Aviator Jekyll theme has a specific layout that will be applied to all the files inside the \_api folder (these files are called a collection). Jekyll will access these values by going to api.title, api.type, and so forth. It will then push this content into the template (which you can see by going to \_layouts/multi.md).
 
 Here's what my 1-6_weatherdata.md file looks like. Be sure to put the response within square brackets, indented with one tab (4 spaces). Remove the `raw` and `endraw` tags at the beginning and end of the code sample (which I had to add to keep Jekyll from trying to process it).
 
@@ -286,10 +281,8 @@ curl --get --include 'https://simple-weather.p.mashape.com/weatherdata?lat=1.0&l
 
 
 1. Go to [http://cloudcannon.com](http://cloudcannon.com) and, if you don't already have an account, sign up for a free test account by clicking **Sign Up**
-2. After signing up and logging in, click **Create Site**.
-3. Log in and click **Create Site**.
-4. Type a name for the site (e.g., Aviator Test) and press your **Enter** key.
-3. Click the **Upload Files** button in the upper-right corner.
+2. After signing up and logging in, click **Create Site** and give the site a name.
+3. Click the **+** button ("Add Files") in the upper-right corner.
 
 	<img src="images/cloudcannonupload.png" alt="Uploading to Cloud Cannon" />
 
@@ -306,15 +299,12 @@ The site should appear as follows:
 
 <img src="images/weatherdataendpointcloudcannon.png" alt="CloudCannon Weatherdata endpoint" />
 
-You can see my site at [http://delightful-nightingale.cloudvent.net/](http://delightful-nightingale.cloudvent.net/). The password is `stcsummit`.
+You can see my site at [http://delightful-nightingale.cloudvent.net/](http://delightful-nightingale.cloudvent.net/).
 
 {: .tip}
 If your endpoint doesn't appear, you probably have invalid YML syntax. Make sure the left edge of the response is at least one tab (4 spaces) in.
 
-Each time you save the site, CloudCannon actually rebuilds the Jekyll files into the site that you see.
-
-{: .note}
-If you switch between the code editor and visual display, the code sample gets mangled. (The CloudCannon editor will convert the https path into a link.) This is a bug in CloudCannon that will be fixed.
+Each time you save the site, CloudCannon rebuilds the Jekyll files into the site that you see.
 
 ## Doc Websites Using Jekyll
 

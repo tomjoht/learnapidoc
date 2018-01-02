@@ -165,7 +165,7 @@ folders:
   - title: Version control systems
     jurl: /pubapis_version_control.html
 
-  - title: Using GitHub Desktop Client
+  - title: "Activity: Use the GitHub Desktop Client"
     jurl: /pubapis_github_desktop_client.html
 
   - title: Pull request workflows through GitHub
