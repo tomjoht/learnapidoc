@@ -17,7 +17,7 @@ There are many different tools for creating documentation, and there’s no clea
 
 ## Readme.io {#readmeio}
 
-[readme.io](http://readme.io) is an online hosted options for docs that offers one of the most robust, full-featured interfaces and options for developer docs available. If you consider how much time it requires to build, maintain, troubleshoot, etc., your own website, it really does make sense to consider an existing third-party platform where someone has already built all of this out for you.
+[Readme.io](http://readme.io) is an online hosted option for docs that offers one of the most robust, full-featured interfaces and options for developer docs available. If you consider how much time it requires to build, maintain, and troubleshoot your own website, it makes sense to consider an existing third-party platform where someone has already built all of this out for you.
 
 To explore readme.io:
 
@@ -35,17 +35,17 @@ Readme.io provides a number of wizard-like screens to move you through the docum
 
 <img src="images/readmeio_manual_api.png" style="border: 1px solid #dedede;" />
 
-Readme.io provides a robust GUI for creating API documentation, in a way that is more extensive and well-designed than virtually any other platform available. The Readme output provides an interactive, try-it-out experience with endpoints:
+Overall, Readme.io provides a robust GUI for creating API documentation, in a way that is more extensive and well-designed than virtually any other platform available. The output includes an interactive, try-it-out experience with endpoints:
 
 <img src="images/readmeiotryitout.png" style="border: 1px solid #dedede;" />
 
 The experience is similar to Swagger in that the response appears directly in the documentation. This API Explorer gives you a sense of the data returned by the API.
 
-Readme.io is a pretty sweet platform, and you don't have to worry about describing your API based on a specification based on either RAML or Swagger. But this also has downsides. It means that your doc is tied to the Readme.io platform. Additionally, you can't auto-generate the output from annotations in your source code.
+Readme.io is a pretty sweet platform, and you don't have to worry about describing your API based on a specification based on either RAML or Swagger. But this also has downsides. It means that your doc is tied to the Readme.io platform (though some export options are available).
 
-Additionally, if the cloud location for your docs isn't an option, that may also pose challenges. Finally, there isn't any content re-use functionality, so if you have multiple outputs for your documentation that you're single sourcing, Readme.io may not be for you.
+Additionally, if the cloud location for your docs isn't an option, the Readme platform may pose challenges. Finally, there isn't any content re-use functionality, so if you have multiple outputs for your documentation that you're single sourcing, Readme.io may not be for you.
 
-Even so, the output is sharp and the talent behind this site is top-notch. The platform is constantly growing with new features, so maybe all of this functionality will eventually be there.
+Even so, the output is sharp and the talent behind this site is top-notch. The platform is constantly growing with new features, and there are many high-profile companies with their docs on Readme.
 
 Here are a few sample API doc sites built with Readme.io:
 
@@ -55,7 +55,7 @@ Here are a few sample API doc sites built with Readme.io:
 
 ## Run in Postman button {#postman}
 
-The [Run in Postman button](https://www.getpostman.com/integrations/run-button) provides a **Run in Postman** button that, when clicked, imports your API info into Postman so users can run calls using the Postman client.
+The [Run in Postman button](https://www.getpostman.com/integrations/run-button) provides a button (labeled "Run in Postman") that, when clicked, imports your API info into Postman so users can run calls using the Postman client.
 
 To try out Run in Postman, first [import your OpenAPI spec into Postman](https://www.getpostman.com/docs/postman/collections/data_formats#importing-postman-data) or enter your API information manually. Then see [Create the Run in Postman button](https://www.getpostman.com/docs/postman_for_publishers/run_button/creating_run_button).
 
@@ -86,19 +86,21 @@ Especially if your users are already familiar with Postman, Run in Postman is a 
 
 If you don't already have a "Try it out" feature in your docs, the Run in Postman button gives you this interactivity in an easy way, without requiring you to sacrifice the single source of truth for your docs.
 
-The downside is that your parameter and endpoint descriptions don't get pulled into Postman. Additionally, if users are unfamiliar with Postman, they may struggle a bit to understand how to use it. In contrast, the "Try it out" editors that run directly in the browser tend to be more straightforward and do a better job integrating documentation (including sample responses and the model they follow).
+The downside is that your parameter and endpoint descriptions don't get pulled into Postman. Additionally, if users are unfamiliar with Postman, they may struggle a bit to understand how to use it. In contrast, the "Try it out" editors that run directly in the browser tend to be more straightforward and do a better job integrating documentation.
 
 ## Spectacle
 
-[Spectacle](https://github.com/sourcey/spectacle) is a Github project that builds an output from a Swagger file. The display provides a three-pane output similar to the Stripe or Slate docs. After you download the project files, you can build the display using Node simply by referencing your Swagger file.
+[Spectacle](https://github.com/sourcey/spectacle) is a Github project that builds an output from an OpenAPI specification file. The display provides a three-pane output similar to the Stripe or Slate docs. After you download the project files, you can build the display using Node simply by referencing your OpenAPI spec file.
 
-Here's a [demo output](https://cheesestore.github.io/). You can also see an [output that uses the Mashape weather API file](http://idratherbewriting.com/learnapidoc/assets/files/spectacle/public/index.html).
+Here's a [demo output](https://cheesestore.github.io/).
 
-With almost no needed setup or configuration, you can have a world-class output and site for your API docs. As long as the OpenAPI spec that you integrate is fully detailed, the generated Spectacle site will be attractive and full-featured.
+<a href="https://cheesestore.github.io/" class="noExtIcon"><img src="images/spectacle-sample-output.png"/></a>
 
-You can also build the Spectacle site without the frame so you can embed it into another site. However, in playing with this embed option, I found that I would have to create my own styles. If using the default styles in the full-site output, they most likely will overwrite or interfere with your host site's appearance.
+You can also see an [output that uses the Mashape weather API file](http://idratherbewriting.com/learnapidoc/assets/files/spectacle/public/index.html).
 
-I'm also not sure if you can add your own doc pages to the Spectacle site.
+With almost no needed setup or configuration, Spectacle gives you a world-class output and site for your API docs. As long as the OpenAPI spec that you integrate is fully detailed, the generated Spectacle site will be attractive and full-featured.
+
+You can also build the Spectacle site without the frame so you can embed it into another site. However, in playing with this embed option, I found that to do this, I'd have to create my own styles. If using the default styles in the full-site output, they most likely will overwrite or interfere with your host site's appearance. I'm also not sure if you can add your own doc pages to the Spectacle site.
 
 ## Miredot
 
@@ -135,13 +137,11 @@ To explore Miredot's output:
 1. Browse the [Miredot sample code](https://github.com/Qmino/miredot-petstore/blob/master/src/main/java/com/qmino/miredot/petstore/service/CatalogService.java).
 2. To see how this information gets rendered in the Miredot output, go to the [Petstore example docs](http://miredot.com/exampledocs/), expand **Catalog > Category** on the right, and then select **PUT**. Or go directly [here](http://www.miredot.com/exampledocs/#268738548).
 
-<a href="http://www.miredot.com/exampledocs/#268738548" class="noExtIcon"><img src="images/miredotupdatecategory.png" alt="Miredot update category" /></a>
+   <a href="http://www.miredot.com/exampledocs/#268738548" class="noExtIcon"><img src="images/miredotupdatecategory.png" alt="Miredot update category" /></a>
 
 {% include random_ad.html %}
 
-If you browse the navigation of Miredot's output, it's an interesting-looking solution. This kind of documentation might fit a Java-based REST API well.
-
-But the authoring of the docs would really only work for Java developers. It wouldn't work well for technical writers unless you're plugged into the source control workflow.
+If you browse the navigation of Miredot's output, it's an interesting-looking solution. This kind of documentation might fit a Java-based REST API well. But the authoring of the docs would really only work for Java developers. It wouldn't work well for technical writers unless you're plugged into the source control workflow.
 
 ## Custom UX solutions
 
