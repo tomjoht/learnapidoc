@@ -1,5 +1,5 @@
 ---
-title: "Jekyll &mdash; my favorite static site generator"
+title: "Jekyll &mdash; a popular static site generator"
 permalink: /pubapis_jekyll.html
 course: "Documenting REST APIs"
 sidebar: docapis
@@ -102,217 +102,92 @@ Remember your Github files are syncing from Github to CloudCannon. Let's see tha
 
 	You've now got a workflow that involves Github as the storage provider syncing to a Jekyll theme hosted on CloudCannon. You're publishing on the fly, based on commits to a repo. This is the essential characteristic of a [docs-as-code publishing workflow](http://127.0.0.1:4000/learnapidoc/pubapis_docs_as_code.html).
 
-## Publish the surfreport in the Aviator Jekyll theme using CloudCannon's interface
+## Publish the endpoint in the Jekyll Aviator theme
 
-Let's say you want to use a theme that provides ready-made templates for REST API documentation. In this activity, you'll publish the weatherdata endpoints that we worked on in a Jekyll theme called Aviator. Additionally, rather than syncing the files from a Github repository, you'll just work with the files directly in CloudCannon.
-
-The [Aviator API documentation theme](https://github.com/CloudCannon/Aviator-Jekyll-Theme) by Cloud Cannon is designed for REST APIs. You'll use this theme to input a new endpoint.
+Let's say you want to use a theme that provides ready-made templates for REST API documentation. Although my Jekyll documentation theme could work, it doesn't have templates coded for API endpoint reference documentation. In this activity, you'll publish the weatherdata endpoints that we worked on earlier; we'll use the [Aviator API documentation theme](https://github.com/CloudCannon/Aviator-Jekyll-Theme) by Cloud Cannon, which is designed for REST APIs.
 
 <a href="https://github.com/CloudCannon/Aviator-Jekyll-Theme" class="noExtIcon" class="noExtIcon"><img src="images/aviatortheme.png" alt="Cloud Cannon Aviator theme" /></a>
 
-{: .note}
-If you're on a Mac (with Rubygems and Jekyll installed), building Jekyll sites is a lot simpler. But even if you're on Windows, it won't matter for this tutorial. You'll be using CloudCannon, a SaaS website hosting and build service, to build the Jekyll files.
+### a. Fork the Jekyll Aviator theme, clone it, and open it in Atom
 
-### a. Download the Jekyll Aviator theme
+1.  Go to [Aviator API documentation theme](https://github.com/CloudCannon/Aviator-Jekyll-Theme) and click the **Fork** button in the upper-right. Confirm the GitHub account where you want to fork the project.
 
-1. Go to [Aviator API documentation theme](https://github.com/CloudCannon/Aviator-Jekyll-Theme) and click the **Download ZIP** button.
+    <img src="images/github-fork-project.png" alt="Forking a GitHub project" />
 
-	<a href="https://github.com/CloudCannon/Aviator-Jekyll-Theme" class="noExtIcon"><img src="images/gitdownloadzip.png" alt="Download ZIP button for Aviator theme" /></a>
+    Instead of cloning the project, this time we're forking it. You clone a project when you want to regularly pull from and push to the same repo. But we don't own the Aviator repo, and we want to customize it with our own content. You fork a project when you want to make a copy of the project in another GitHub repo.
 
-2. Unzip the files.
+3.  After forking the project, go to the project in your repo and copy the Clone URI. Then clone the repo on your machine. The `git clone` command and URI will look something like this:
+
+    ```bash
+    git clone https://github.com/tomjoht/aviator-jekyll-template.git
+    ```
+
+    Only instead of `tomjoht`, you will see your own GitHub username.
+
+2.  Download [Atom](https://atom.io/), install it, and open it.  
+3.  Open the **aviator-jekyll-template** folder in Atom so you can see all the files in the sidebar.
+4.  Go to [Cloud Cannon](https://cloudcannon.com/) and click **Create Site** to create a new site. Give it a name, such as "Aviator demo."
+5.  Go to **Settings**, and then click **File Syncing**.
+6.  Next to **GitHub**, click **Connect**, then next to **aviator-jekyll-template** repo, click **Connect Repo**. The files from the GitHub repo sync over to Cloud Cannon.
+    In Cloud Cannon, in the upper-right corner, a green check icon indicates a successful build.
+7.  Click the preview link in the upper-left and preview the built site.
 
 ### b. Add the weatherdata endpoint doc to the theme
 
-1. Browse to the theme's files. In the \_api folder, open 1_1_books_list.md in a text editor and look at the format.
+1.  In Atom, browse to the **\_api** folder, duplicate the **books_add.md** file, and name the duplicated file **weatherdata.md**. Then open up weatherdata.md.
 
-	In every Jekyll file, there's some "frontmatter" at the top. The frontmatter section has three dashes before and after it.
+	  In every Jekyll page, there's some "frontmatter" at the top. The frontmatter section has three dashes before and after it.
 
-	The frontmatter is formatted in a syntax called YML. YML is similar to JSON but uses spaces and hyphens instead of curly braces. This makes it more human readable.
+	  The frontmatter is formatted in a syntax called YML. YML is similar to JSON but uses spaces and hyphens instead of curly braces. This makes it more human readable. (See [More About YAML](pubapis_yaml.html) for details.)
 
-2. Create a new file called 1-6_weatherdata.md and save it in the same \_api folder.
-3. Get the data from the weatherdata endpoint from this [Weather API on Mashape](https://market.mashape.com/fyhao/weather-13). Put the data from this endpoint into the Aviator theme's template.
+    The key-value pairs in the YAML frontmatter are entirely arbitrary and are designed here to suit the API doc theme the author created. If we were to look at the code in the theme, we'd see Liquid `for` loops that iterate over the YAML values and populate the content into a template. Jekyll will access these values and push this content into the template (which you can see by going to \_layouts/default.md). The author has separated the content from the format so that we don't have to manually wrap all the values in style tags.
 
-The Aviator Jekyll theme has a specific layout that will be applied to all the files inside the \_api folder (these files are called a collection). Jekyll will access these values by going to api.title, api.type, and so forth. It will then push this content into the template (which you can see by going to \_layouts/multi.md).
+2.  Replace the contents of weatherdata.md with the following content: [aviator-weatherdata.md](/learnapidoc/assets/files/aviator-weatherdata.md).
 
-Here's what my 1-6_weatherdata.md file looks like. Be sure to put the response within square brackets, indented with one tab (4 spaces). Remove the `raw` and `endraw` tags at the beginning and end of the code sample (which I had to add to keep Jekyll from trying to process it).
+    {: .note}
+    Normally, you would build the Jekyll project locally to make sure it looks right. But since that's beyond the scope of this tutorial, we'll just commit it to GitHub and have Cloud Cannon build it.
 
-```
----
-title: /weatherdata
-type: get
-description: Get weather forecast by Latitude and Longitude.
-parameters:
-  title: Weatherdata parameters
-  data:
-    - lat:
-      - string
-      - Required. Latitude.
-    - lng:
-      - string
-      - Required. Longitude.
-right_code:
-  return: |
-    [
-    {
-    "query": {
-    "count": 1,
-    "created": "2014-05-03T03:57:53Z",
-    "lang": "en-US",
-    "results": {
-      "channel": {
-        "title": "Yahoo! Weather - Tebrau, MY",
-        "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Tebrau__MY/*http://weather.yahoo.com/forecast/MYXX0004_c.html",
-        "description": "Yahoo! Weather for Tebrau, MY",
-        "language": "en-us",
-        "lastBuildDate": "Sat, 03 May 2014 11:00 am MYT",
-        "ttl": "60",
-        "location": {
-          "city": "Tebrau",
-          "country": "Malaysia",
-          "region": ""
-        },
-        "units": {
-          "distance": "km",
-          "pressure": "mb",
-          "speed": "km/h",
-          "temperature": "C"
-        },
-        "wind": {
-          "chill": "32",
-          "direction": "170",
-          "speed": "4.83"
-        },
-        "atmosphere": {
-          "humidity": "66",
-          "pressure": "982.05",
-          "rising": "0",
-          "visibility": "9.99"
-        },
-        "astronomy": {
-          "sunrise": "6:57 am",
-          "sunset": "7:06 pm"
-        },
-        "image": {
-          "title": "Yahoo! Weather",
-          "width": "142",
-          "height": "18",
-          "link": "http://weather.yahoo.com",
-          "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
-        },
-        "item": {
-          "title": "Conditions for Tebrau, MY at 11:00 am MYT",
-          "lat": "1.58",
-          "long": "103.74",
-          "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Tebrau__MY/*http://weather.yahoo.com/forecast/MYXX0004_c.html",
-          "pubDate": "Sat, 03 May 2014 11:00 am MYT",
-          "condition": {
-            "code": "28",
-            "date": "Sat, 03 May 2014 11:00 am MYT",
-            "temp": "32",
-            "text": "Mostly Cloudy"
-          },
-          "description": "\n<img src=\"http://l.yimg.com/a/i/us/we/52/28.gif\"/><br />\n<b>Current Conditions:</b><br />\nMostly Cloudy, 32 C<BR />\n<BR /><b>Forecast:</b><BR />\nSat - Scattered Thunderstorms. High: 32 Low: 26<br />\nSun - Thunderstorms. High: 33 Low: 27<br />\nMon - Scattered Thunderstorms. High: 32 Low: 26<br />\nTue - Thunderstorms. High: 32 Low: 26<br />\nWed - Scattered Thunderstorms. High: 32 Low: 27<br />\n<br />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Tebrau__MY/*http://weather.yahoo.com/forecast/MYXX0004_c.html\">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)<br/>\n",
-          "forecast": [
-            {
-              "code": "38",
-              "date": "3 May 2014",
-              "day": "Sat",
-              "high": "32",
-              "low": "26",
-              "text": "Scattered Thunderstorms"
-            },
-            {
-              "code": "4",
-              "date": "4 May 2014",
-              "day": "Sun",
-              "high": "33",
-              "low": "27",
-              "text": "Thunderstorms"
-            },
-            {
-              "code": "38",
-              "date": "5 May 2014",
-              "day": "Mon",
-              "high": "32",
-              "low": "26",
-              "text": "Scattered Thunderstorms"
-            },
-            {
-              "code": "4",
-              "date": "6 May 2014",
-              "day": "Tue",
-              "high": "32",
-              "low": "26",
-              "text": "Thunderstorms"
-            },
-            {
-              "code": "38",
-              "date": "7 May 2014",
-              "day": "Wed",
-              "high": "32",
-              "low": "27",
-              "text": "Scattered Thunderstorms"
-            }
-          ],
-          "guid": {
-            "isPermaLink": "false",
-            "content": "MYXX0004_2014_05_07_7_00_MYT"
-          }
-        }
-      }
-    }
-    }
-    }
-    ]
----
+3.  Then add the files to Git tracking, commit, and push to origin:
 
-<div class="code-viewer">
+    ```bash
+    # add all files to Git tracking
+    git add .
 
-<pre data-language="curl">
-curl --get --include 'https://simple-weather.p.mashape.com/weatherdata?lat=1.0&lng=1.0' \
-  -H 'X-Mashape-Key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p' \
-  -H 'Accept: application/json'
-  </pre>
+    # commit the added files to Git's staging
+    git commit -m "added weatherdata file"
 
-</div>
-```
+    # push the files to origin
+    git push
+    ```
 
-### c. Publish your Jekyll project on CloudCannon
+    Cloud Cannon is listening to changes in the repo and will immediately sync and build the project.
 
+4.  In Cloud Cannon, click the preview URL in the upper-left corner and view the built site. The  built site should include the weatherdata endpoint and look as follows:
 
-1. Go to [http://cloudcannon.com](http://cloudcannon.com) and, if you don't already have an account, sign up for a free test account by clicking **Sign Up**
-2. After signing up and logging in, click **Create Site** and give the site a name.
-3. Click the **+** button ("Add Files") in the upper-right corner.
+    <a href="http://tropical-jackal.cloudvent.net" class="noExtIcon"><img src="images/aviator-weatherdata-endpoint.png" /></a>
 
-	<img src="images/cloudcannonupload.png" alt="Uploading to Cloud Cannon" />
+    You can view my site here: [http://tropical-jackal.cloudvent.net](http://tropical-jackal.cloudvent.net).
 
-4. Open your Aviator theme files, select them all, and drag them into the upload file dialog box. (Don't just drag the Aviator theme folder into CloudCannon).
+    Each time you commit changes to your repo, CloudCannon rebuilds the Jekyll files into the site that you see.
 
-5. After the files finish uploading (and little green check marks appear next to the files), click the preview link in the upper-left corner:
-
-	<img src="images/previewlinkcc.png" alt="Preview link" />
-
-6. When prompted for a password for viewing the site to add, add one.
-7. Click the preview link to view the site.
-
-The site should appear as follows:
-
-<img src="images/weatherdataendpointcloudcannon.png" alt="CloudCannon Weatherdata endpoint" />
-
-You can see my site at [http://delightful-nightingale.cloudvent.net/](http://delightful-nightingale.cloudvent.net/).
-
-{: .tip}
-If your endpoint doesn't appear, you probably have invalid YML syntax. Make sure the left edge of the response is at least one tab (4 spaces) in.
-
-Each time you save the site, CloudCannon rebuilds the Jekyll files into the site that you see.
+    {: .tip}
+    If you don't want to use Cloud Cannon to build your site, you can also use [GitHub Pages](https://pages.github.com/) to achieve a similar result. GitHub Pages is also free.
 
 ## Doc Websites Using Jekyll
 
 Here are some websites using Jekyll:
 
-* [http://dev.iron.io/](http://dev.iron.io/)
-* [http://healthcare.gov](http://healthcare.gov)
-* [http://getbootstrap.com](http://getbootstrap.com)
-* [http://iamnotarealprogrammer.com/](http://iamnotarealprogrammer.com/)
-* [http://jekyllrb.com/](http://jekyllrb.com/)
-* [http://docs.balsamiq.com](http://docs.balsamiq.com)
+*  [Bootstrap](http://getbootstrap.com/)
+*  [Beegit](http://help.beegit.com/)
+*  [Stack Overflow blog](https://blog.stackoverflow.com/)
+*  [RethinkDB](http://rethinkdb.com/docs/)
+*  [Github docs](https://help.github.com/)
+*  [Basekit](http://docs.basekit.com/)
+*  [Jekyllrb docs](http://jekyllrb.com/docs/home/)
+*  [SendGrid docs](https://sendgrid.com/docs)
+*  [Atlassian Design](https://design.atlassian.com/)
+*  [Cloud Cannon docs](https://docs.cloudcannon.com/)
+*  [Wistia help center](http://wistia.com/support)
+*  [Liquid (Shopify)](https://help.shopify.com/themes/liquid/basics)
+*  [devo.ps documentation](http://docs.devo.ps/)
+*  [healthcare.gov](http://www.healthcare.gov)
