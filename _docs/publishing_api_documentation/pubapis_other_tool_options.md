@@ -17,9 +17,9 @@ There are many different tools for creating documentation, and there’s no clea
 
 ## Readme.io {#readmeio}
 
-[Readme.io](http://readme.io) is an online hosted option for docs that offers one of the most robust, full-featured interfaces and options for developer docs available. If you consider how much time it requires to build, maintain, and troubleshoot your own website, it makes sense to consider an existing third-party platform where someone has already built all of this out for you.
+[Readme.io](http://readme.io) is an online hosted option for docs that offers one of the most robust, full-featured interfaces for developer docs available. If you consider how much time it requires to build, maintain, and troubleshoot your own website, it makes sense to consider an existing third-party platform where someone has already built all of this out for you.
 
-To explore readme.io:
+To explore Readme.io:
 
 1. Go to [readme.io](http://readme.io).
 2. Click the **Sign Up** button in the upper-right corner and sign up for an account.
@@ -29,7 +29,7 @@ To explore readme.io:
 
 4. Now check out the API doc configuration section. In the left sidebar, click **Reference Docs**, and then click **API**.
 
-Although you can add your API information manually, you can also import an  [OpenAPI](pubapis_swagger_intro.html) file. You can experiment by choosing one from the [OpenAPI examples](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0/yaml), such as [this one](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/petstore-expanded.json).
+Although you can add your API information manually, you can also import an  [OpenAPI specification file](pubapis_swagger_intro.html). You can experiment by choosing one from the [OpenAPI examples](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0/yaml), such as [this one](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/petstore-expanded.json).
 
 Readme.io provides a number of wizard-like screens to move you through the documentation process, prompting you with forms to complete.
 
@@ -43,7 +43,7 @@ The experience is similar to Swagger in that the response appears directly in th
 
 Readme.io is a pretty sweet platform, and you don't have to worry about describing your API based on a specification based on either RAML or Swagger. But this also has downsides. It means that your doc is tied to the Readme.io platform (though some export options are available).
 
-Additionally, if the cloud location for your docs isn't an option, the Readme platform may pose challenges. Finally, there isn't any content re-use functionality, so if you have multiple outputs for your documentation that you're single sourcing, Readme.io may not be for you.
+Additionally, if a paid cloud location for your docs isn't an option, the Readme platform may pose challenges. Finally, there isn't any content re-use functionality, so if you have multiple outputs for your documentation that you're single sourcing, Readme.io may not be for you.
 
 Even so, the output is sharp and the talent behind this site is top-notch. The platform is constantly growing with new features, and there are many high-profile companies with their docs on Readme.
 
@@ -53,18 +53,30 @@ Here are a few sample API doc sites built with Readme.io:
 * [Box API](https://developer.box.com/docs)
 * [Coinbase API](https://developers.coinbase.com/api/v2#introduction)
 
+## Spectacle
+
+[Spectacle](https://github.com/sourcey/spectacle) is an open-source Github project that builds an output from an OpenAPI specification file. The display provides a three-pane output similar to the Stripe or Slate docs. After you download the project files, you can build the display using Node simply by referencing your OpenAPI spec file.
+
+Here's a [demo output](https://cheesestore.github.io/).
+
+<a href="https://cheesestore.github.io/" class="noExtIcon"><img src="images/spectacle-sample-output.png"/></a>
+
+You can also see an [output that uses the Mashape weather API file](http://idratherbewriting.com/learnapidoc/assets/files/spectacle/public/index.html).
+
+With almost no needed setup or configuration, Spectacle gives you a world-class output and site for your API docs. As long as the [OpenAPI spec](pubapis_openapi_tutorial_overview.html) that you integrate is fully detailed, the generated Spectacle site will be attractive and full-featured.
+
+You can also build the Spectacle site without the framed layout so you can embed it into another site. However, in playing with this embed option, I found that to do this, I'd have to create my own styles. If using the default styles in the full-site output, they most likely will overwrite or interfere with your host site's appearance.
+
 ## Run in Postman button {#postman}
 
-The [Run in Postman button](https://www.getpostman.com/integrations/run-button) provides a button (labeled "Run in Postman") that, when clicked, imports your API info into Postman so users can run calls using the Postman client.
+Postman is a REST API GUI client that we explored earlier in [Submit requests through Postman
+](docapis_postman.html). The [Run in Postman button](https://www.getpostman.com/integrations/run-button) provides a button (labeled "Run in Postman") that, when clicked, imports your API info into Postman so users can run calls using the Postman client. As such, this isn't a full-fledged authoring tool but rather a way to import the interactive, try-it-out API explorer for your endpoints into a web page.
 
-To try out Run in Postman, first [import your OpenAPI spec into Postman](https://www.getpostman.com/docs/postman/collections/data_formats#importing-postman-data) or enter your API information manually. Then see [Create the Run in Postman button](https://www.getpostman.com/docs/postman_for_publishers/run_button/creating_run_button).
+To try out Run in Postman, first [import your OpenAPI spec into Postman](https://www.getpostman.com/docs/postman/collections/data_formats#importing-postman-data) or enter your API information manually. Then see the Postman docs on how to [Create the Run in Postman button](https://www.getpostman.com/docs/postman_for_publishers/run_button/creating_run_button).
 
-You can see the many [demos here](https://www.getpostman.com/integrations/run-button).
+You can see the many [demos of Run in Postman here](https://www.getpostman.com/integrations/run-button).
 
-{% if site.format == "kindle" or site.format == "pdf" %}
-For a demo using the sample Mashape weather API, see the [Postman section](pubapis_other_tool_options.html#postman) in "Tool options for developer docs."
-{% else %}
-Here's a demo using the sample Mashape weather API:
+Here's a demo of Run in Postman using the sample Mashape weather API:
 
 <div class="postman-run-button"
 data-postman-action="collection/import"
@@ -87,20 +99,6 @@ Especially if your users are already familiar with Postman, Run in Postman is a 
 If you don't already have a "Try it out" feature in your docs, the Run in Postman button gives you this interactivity in an easy way, without requiring you to sacrifice the single source of truth for your docs.
 
 The downside is that your parameter and endpoint descriptions don't get pulled into Postman. Additionally, if users are unfamiliar with Postman, they may struggle a bit to understand how to use it. In contrast, the "Try it out" editors that run directly in the browser tend to be more straightforward and do a better job integrating documentation.
-
-## Spectacle
-
-[Spectacle](https://github.com/sourcey/spectacle) is a Github project that builds an output from an OpenAPI specification file. The display provides a three-pane output similar to the Stripe or Slate docs. After you download the project files, you can build the display using Node simply by referencing your OpenAPI spec file.
-
-Here's a [demo output](https://cheesestore.github.io/).
-
-<a href="https://cheesestore.github.io/" class="noExtIcon"><img src="images/spectacle-sample-output.png"/></a>
-
-You can also see an [output that uses the Mashape weather API file](http://idratherbewriting.com/learnapidoc/assets/files/spectacle/public/index.html).
-
-With almost no needed setup or configuration, Spectacle gives you a world-class output and site for your API docs. As long as the OpenAPI spec that you integrate is fully detailed, the generated Spectacle site will be attractive and full-featured.
-
-You can also build the Spectacle site without the frame so you can embed it into another site. However, in playing with this embed option, I found that to do this, I'd have to create my own styles. If using the default styles in the full-site output, they most likely will overwrite or interfere with your host site's appearance. I'm also not sure if you can add your own doc pages to the Spectacle site.
 
 ## Miredot
 
@@ -139,19 +137,17 @@ To explore Miredot's output:
 
    <a href="http://www.miredot.com/exampledocs/#268738548" class="noExtIcon"><img src="images/miredotupdatecategory.png" alt="Miredot update category" /></a>
 
-{% include random_ad.html %}
-
-If you browse the navigation of Miredot's output, it's an interesting-looking solution. This kind of documentation might fit a Java-based REST API well. But the authoring of the docs would really only work for Java developers. It wouldn't work well for technical writers unless you're plugged into the source control workflow.
+If you browse the navigation of Miredot's output, you'll see that it's an interesting-looking solution. This kind of documentation might fit a Java-based REST API well. But the authoring of the docs would really only work for Java developers. It wouldn't work well for technical writers unless you're plugged into the [source control](pubapis_version_control.html) workflow.
 
 ## Custom UX solutions
 
 If you want to build a beautiful API doc website that rivals sites such as [Parse.com](http://parse.com) (a custom-built solution that uses Prism.js, Sinatra, and other in-house tools), you'll most likely need to involve a UX engineer to build it. Fortunately, building an API docs site is a solution that many UX engineers and other web developers are usually excited to tackle.
 
-If you want to integrate your API documentation into your main website, ask the person designing your main website for strategies on integrating the doc site into it. This integration might allow you to leverage authentication (if needed) and other interaction points (such as with forums or support tickets).
+If you want to integrate your API documentation into your main website, ask the person designing your main website for strategies on integrating the documentation into it. This integration might allow you to leverage authentication (if needed) and other interaction points (such as with forums or support tickets).
 
-Many custom websites are built using a variety of JavaScript, HTML, and CSS tools. Most likely you'll be able to supply a batch of Markdown or HTML files to the web developer to integrate. Your UX developers will often be eager to design a custom solution to make your docs beautiful and seamlessly integrated with the rest of your content.
+Many custom websites are built using a variety of JavaScript, HTML, and CSS tools. Most likely you'll be able to supply a batch of Markdown or HTML files to the web developer to integrate. Your UX developers will often be eager to design a custom solution to make your docs beautiful and seamlessly integrated with the rest of your site's content.
 
-<img src="images/uxteam.png" alt="Getting help from your UX team" />
+<figure><img src="images/uxteam.png" alt="Getting help from your UX team" /><figcaption><a href="Images from Vecteezy &mdash; see <a href="https://www.vecteezy.com">Free Vector Art by www.Vecteezy.com</a></figcaption></figure>
 
 When I worked at Badgeville, our solution for publishing API documentation was to use custom scripts that pulled some information from source files and pushed them into templates.
 
@@ -169,11 +165,16 @@ If your documentation is published on a web-based CMS, you can probably find a d
 
 A lot of companies have custom solutions for their API documentation. Sometimes this kind of solution just makes sense and allows you to right-size the workflow to fit your specific information.
 
-## Tools that can read the OpenAPI specification
+## Sphinx
 
-Many commercial API tools and platforms can read the OpenAPI specification and generate an interactive documentation website. See the [list of tools on Swagger here](https://swagger.io/commercial-tools/).
+[Sphinx](http://www.sphinx-doc.org/en/stable/) is a popular static site generator based on Python. It was developed by the Python community to document the Python programming language (and it has some direct capability to document Python classes), but Sphinx is used for a variety of documentation projects unrelated to Python.
 
-## More tools
+Because Sphinx was designed from the ground up as a documentation tool, not just as tool for building websites, Sphinx has more documentation-specific functionality that is often absent from other static site generator tools. Some of these features include the following:
+
+* Robust search
+* Linking (linking to sections, automating titles based on links, and more)
+* rST format for more semantic rich markup
+
 
 I'll be adding more tools here in the days to come...
 

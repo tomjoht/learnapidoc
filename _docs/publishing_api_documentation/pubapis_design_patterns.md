@@ -19,11 +19,11 @@ In the previous topic, we browsed up to [100 API doc sites](pubapis_apilist.html
 
 One overriding commonality with API documentation is that they share a common structure, particularly with the reference documentation around the endpoints. In an earlier section, we explored the common sections in [endpoint documentation](docendpoints.html). The [non-reference topics](docnonref.html) also share similar topics, which I touched upon earlier as well.
 
-From a tool perspective, if you have common sections to cover with each endpoint, it makes sense to formalize a template to accommodate the publishing of that content. The template can provide consistency, automate publishing and style, and allow you to more easily change the design without manually reformatting each section. Without a template, you could just remember to add the exact same sections on each page, but this requires more effort to be consistent.
+From a tool perspective, if you have common sections to cover with each endpoint, it makes sense to formalize a template to accommodate the publishing of that content. The template can provide consistency, automate publishing and styles, and allow you to more easily change the design without manually reformatting each section. (Without a template, you could just remember to add the exact same sections on each page, but this requires more effort to be consistent.) With a template, you can insert various values (descriptions, methods, parameters, etc.) into a highly stylized output, complete with div tags and other style classes.
 
-With a template, you can insert various values (descriptions, methods, parameters, etc.) into a highly stylized output, complete with div tags and other style classes.
+Different authoring tools have different ways of processing templates. In [Jekyll](pubapis_jekyll.html), a static site generator, you can create values in a [YAML file](pubapis_yaml.html) and loop through them using Liquid to access the values.
 
-Different authoring tools have different ways of processing templates. In Jekyll, a static site generator, you can create values in a YAML file and loop through them using Liquid to access the values. Here's how you might go about it. In the frontmatter of a page, you could list out the key value pairs for each section.
+Here's how you might go about it. In the frontmatter of a page, you could list out the key value pairs for each section.
 
 ```
 resource_name: surfreport
@@ -33,7 +33,7 @@ endpoint: /surfreport
 
 And so on.
 
-You could then use a for loop to cycle through each of the items and insert them into your template:
+You could then use a [`for` loop](https://help.shopify.com/themes/liquid/objects/for-loops) to cycle through each of the items and insert them into your template:
 
 ```liquid
 {% raw %}{% for p in site.endpoints %}
@@ -45,6 +45,96 @@ You could then use a for loop to cycle through each of the items and insert them
 
 This approach makes it easy to change your template without reformatting all of your pages. For example, if you decide to change the order of the elements on the page, or if you want to add new classes or some other value, you just alter the template. The values remain the same, since they can be processed in any order.
 
+For a more full-fledged example of API templating, see the [Aviator theme from Cloud Cannon](https://github.com/CloudCannon/aviator-jekyll-template). In my [Jekyll tutorial](pubapis_jekyll.html#publish-the-endpoint-in-the-jekyll-aviator-theme) later in the course, I include an activity where you add a new weatherdata endpoint to the Aviator theme, using the same frontmatter templating designed by the theme author.
+
+The sample endpoint for adding books in the Aviator theme looks as follows:
+
+```
+---
+title: /books
+position: 1.1
+type: post
+description: Create Book
+right_code: |
+  ~~~ json
+  {
+    "id": 3,
+    "title": "The Book Thief",
+    "score": 4.3,
+    "dateAdded": "5/1/2015"
+  }
+  ~~~
+  {: title="Response" }
+
+  ~~~ json
+  {
+    "error": true,
+    "message": "Invalid score"
+  }
+  ~~~
+  {: title="Error" }
+---
+title
+: The title for the book
+
+score
+: The book's score between 0 and 5
+
+The book will automatically be added to your reading list
+{: .success }
+
+Adds a book to your collection.
+
+~~~ javascript
+$.post("http://api.myapp.com/books/", {
+  "token": "YOUR_APP_KEY",
+  "title": "The Book Thief",
+  "score": 4.3
+}, function(data) {
+  alert(data);
+});
+~~~
+{: title="jQuery" }
+```
+
+(The `~~~` are alternate markup for backticks <code>&#96;&#96;&#96;</code>. `{: .success }` is [kramdown](https://kramdown.gettalong.org/) syntax for custom classes.) The theme author created a layout that iterates through these values and pushes the content into HTML formatting. If you look in the [Aviator's index.html file](https://github.com/CloudCannon/aviator-jekyll-template/blob/master/index.html), you'll see this code:
+
+```html
+{% raw %}{% assign sorted_collections = site.collections | sort: "position" %}
+{% for collection in sorted_collections %}
+	{% assign sorted_docs = collection.docs | sort: "position" %}
+	{% for doc in sorted_docs %}
+		<section class="doc-content">
+			<section class="left-docs">
+				<h3>
+					<a id="{{ doc.id | replace: '/', '' | replace: '.', '' }}">
+						{{ doc.title }}
+						{% if doc.type %}
+							<span class="endpoint {{ doc.type }}"></span>
+						{% endif %}
+					</a>
+				</h3>
+				{% if doc.description %}
+					<p class="description">{{doc.description}}</p>
+				{% endif %}
+
+				{{ doc.content | replace: "<dl>", "<h6>Parameters</h6><dl>" }}
+			</section>
+
+			{% if doc.right_code %}
+				<section class="right-code">
+					{{ doc.right_code | markdownify }}
+				</section>
+			{% endif %}
+		</section>
+	{% endfor %}
+{% endfor %}{% endraw %}
+```
+
+This code uses `for` loops in [Liquid scripting](https://help.shopify.com/themes/liquid/basics) to iterate through the items in the `api` collection and pushes the content into the HTML styles of the template. The result looks like this:
+
+<a href="https://tangerine-lemon.cloudvent.net/" class="noExtIcon"><img src="images/aviatortheme.png" /></a>
+
 Note that this kind of structure is really only necessary if you have a lot of different endpoints. If you only have a handful, there's no need to automate the template process.
 
 I provided details with Jekyll only as an example. Many of the web platforms and technologies used implement a similar templating approach.
@@ -54,6 +144,12 @@ When I worked at Badgeville, a gamification startup, we published using Drupal. 
 The resulting output was an eye-popping, visually appealing design. To achieve that kind of style in the UX, it would have certainly required a lot of custom div tags to apply classes and other scripts on the page. By separating the content from the template format, we could work with the content without worrying about the right style tags and other formatting.
 
 As you look for documentation tools, keep in mind the need to templatize your API reference documentation.
+
+Also note that you don't have to create your own templates to display API documentation. You can probably already see problems related to custom templates. The templates are entirely arbitrary, with terms and structure based on the designer's perceived needs and styles. If you write documentation to fit a specific template, what happens when you want to switch themes? You'd have to create new templates that parse through the same custom frontmatter. It's a lot of custom coding.
+
+Given that REST APIs follow similar characteristics and sections, wouldn't it make sense to create a standard in the way APIs are described, and then leverage tools that parse through these standard descriptions? *Yes!* That's what the OpenAPI specification is all about. Later in this course, I explain several [REST API description formats](pubapis_rest_specification_formats.html), and then launch into an extensive tutorial for the [OpenAPI specification](pubapis_openapi_tutorial_overview.html). Afterwards, I provide a tutorial for reading the OpenAPI specification using [Swagger UI](pubapis_swagger.html), along with an activity to [create your own Swagger UI](pubapis_swagger_ui_activity.html).
+
+My point here is that you shouldn't be daunted by the coding challenges around creating your own API templates. The Aviator theme shows one custom approach, and I highlight it here with code samples to demonstrate the complexity and custom-nature of defining your own templates.
 
 ## Pattern 2: A website platform {#website_platform}
 
