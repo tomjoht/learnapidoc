@@ -142,7 +142,7 @@ To explore Miredot's output:
 
 If you browse the navigation of Miredot's output, you'll see that it's an interesting-looking solution. This kind of documentation might fit a Java-based REST API well. But the authoring of the docs would really only work for Java developers. It wouldn't work well for technical writers unless you're plugged into the [source control](pubapis_version_control.html) workflow.
 
-## Custom UX solutions
+## Custom UX solutions (from HTML, CSS, and JS)
 
 If you want to build a beautiful API doc website that rivals sites such as [Parse.com](http://parse.com) (a custom-built solution that uses Prism.js, Sinatra, and other in-house tools), you'll most likely need to involve a UX engineer to build it. Fortunately, building an API docs site is a solution that many UX engineers and other web developers are usually excited to tackle.
 
@@ -150,7 +150,7 @@ If you want to integrate your API documentation into your main website, ask the 
 
 Many custom websites are built using a variety of JavaScript, HTML, and CSS tools. Most likely you'll be able to supply a batch of Markdown or HTML files to the web developer to integrate. Your UX developers will often be eager to design a custom solution to make your docs beautiful and seamlessly integrated with the rest of your site's content.
 
-<figure><img src="images/uxteam.png" alt="Getting help from your UX team" /><figcaption><a href="Images from Vecteezy &mdash; see <a href="https://www.vecteezy.com">Free Vector Art by www.Vecteezy.com</a></figcaption></figure>
+<figure><img src="images/uxteam.png" alt="Getting help from your UX team" /><figcaption>Most designers I meet are hipsters. Most designers would be more than happy to use their web skills to create a custom documentation site that integrates with the rest of the company's content.<a href="https://www.vecteezy.com">Free Vector Art by www.Vecteezy.com</a></figcaption></figure>
 
 When I worked at Badgeville, our solution for publishing API documentation was to use custom scripts that pulled some information from source files and pushed them into templates.
 
@@ -172,10 +172,60 @@ A lot of companies have custom solutions for their API documentation. Sometimes 
 
 [Sphinx](http://www.sphinx-doc.org/en/stable/) is a popular static site generator based on Python. It was developed by the Python community to document the Python programming language (and it has some direct capability to document Python classes), but Sphinx is used for a variety of documentation projects unrelated to Python.
 
-Because Sphinx was designed from the ground up as a documentation tool, not just as tool for building websites, Sphinx has more documentation-specific functionality that is often absent from other static site generator tools. Some of these features include the following:
+Because Sphinx was designed from the ground up as a documentation tool, not just as tool for building websites, Sphinx has more documentation-specific functionality that is often absent from other static site generator tools. Some of these features include robust search, more advanced linking (linking to sections, automating titles based on links, cross-references, and more), and use of reStructuredText (rST), which is more semantically rich, standard, and extensible than Markdown. See [What about reStructuredText and Asciidoc?](pubapis_markdown.html#rst_and_asciidoc) for more details around rST compared to Markdown.
 
-* Robust search
-* Linking (linking to sections, automating titles based on links, and more)
+## Read the Docs
+
+Read the Docs is an online platform that can read your content and automatically build an output. Read the Docs has both an open-source, free version &mdash; [readthedocs.org](https://readthedocs.org/). And a commercial version &mdash; [readthedocs.com](https://readthedocs.com/). Read the Docs uses Sphinx and rST (or Markdown) as the documentation platform, and also contains web hooks to auto-build your output when you commit to a repo. The [Read the Docs documentation](https://docs.readthedocs.io/en/latest/getting_started.html) shows a sample output.
+
+<a href="https://docs.readthedocs.io/en/latest/getting_started.html" class="noExtIcon"><img src="images/readthedocsplatform.png" /></a>
+
+Read the Docs describes itself as follows:
+
+> Read the Docs hosts documentation, making it fully searchable and easy to find. You can import your docs using any major version control system, including Mercurial, Git, Subversion, and Bazaar. We support webhooks so your docs get built when you commit code. There's also support for versioning so you can build docs from tags and branches of your code in your repository.
+
+Some key features include a robust sidebar with expand/collapse functionality, search, versioning, output to PDF and Epub, and more. Read the Docs is similar to GitHub Pages in that the builds automatically trigger when you commit to the repo. However, whereas GitHub Pages is based on Jekyll and Markdown, Read the Docs is based on Sphinx and reStructuredText, which provides more documentation-specific features.
+
+The Read the Docs platform was co-founded by [Eric Holscher](http://ericholscher.com/), the same co-founder of [Write the Docs](http://www.writethedocs.org/). Write the Docs was originally intended as a conference for the Read the Docs community but evolved into a more general conferenced focused on technical communication for software projects. If you go to a Write the Docs conference, you'll find that sessions focus more on best practices for documentation rather than discussions about tools. (You can read my post, [Impressions from the Write the Docs Conference](http://idratherbewriting.com/2017/05/23/write-the-docs-and-the-battle-against-vendor-evil/)) or listen to this [Write the Docs podcast with the co-founders](http://idratherbewriting.com/2017/12/14/write-the-docs-founding-ideas-and-principles-podcast/) for more details.)
+
+Read the Docs has an impressive number of users. The platform has more than 100,000 projects and receives millions of page views a month across these projects. It is one of the largest open-source documentation undertakings on the web, and continues to grow at an impressive rate.
+
+## GitHub Pages
+
+[GitHub Pages](https://pages.github.com/) is not specifically designed as a documentation platform but rather as a website platform. If you upload a Jekyll project to a GitHub repository, you can indicate that it's a Jekyll project in the settings, and GitHub will automatically build it when you commit to your GitHub repo. This feature &mdash; building Jekyll projects directly from your GitHub repo &mdash; is referred to as GitHub Pages.
+
+In you GitHub repo, click **Settings** and scroll down to **GitHub Pages**. This is where you activate the GitHub Pages feature.
+
+<figure><img src="images/githubpagesconfigurationsettings.png"/><figcaption>Every GitHub repository is potentially a Jekyll project that you can auto-build when you commit to it.</figcaption></figure>
+
+The tight integration of Jekyll with GitHub makes for a compelling argument to use a Jekyll-GitHub solution. For the most part, GitHub is the dominant platform for open source projects. If you're already using GitHub, it makes sense to choose a static site generator that integrates into the same platform to build your docs.
+
+Quite a few doc sites use GitHub and Jekyll. For example, [Bootstrap](https://getbootstrap.com/) uses it:
+
+<a href="https://pages.github.com/" class="noExtIcon"><img src="images/githubpagesscreenshot.png"/></a>
+
+GitHub Pages is free but does have some limitations in scope:
+
+> GitHub Pages sites are subject to the following usage limits:
+>
+> * GitHub Pages source repositories have a recommended limit of 1GB .
+> * Published GitHub Pages sites may be no larger than 1 GB.
+> * GitHub Pages sites have a soft bandwidth limit of 100GB per month.
+> * GitHub Pages sites have a soft limit of 10 builds per hour.
+
+Unlike with Read the Docs, GitHub Pages doesn't offer a commercial version that expands these limits. You can learn more about [GitHub Pages here](https://help.github.com/categories/github-pages-basics/).
+
+## CloudCannon
+
+Suppose you want to use Jekyll and GitHub, but you're frustrated by GitHub's limitations and you need a more robust publishing platform. If so, [CloudCannon](https://cloudcannon.com/) is your solution.
+
+.... (more content coming....)
+
+Forestry.io
+
+GitHub Pages
+
+Netlify
 * rST format for more semantic rich markup
 
 

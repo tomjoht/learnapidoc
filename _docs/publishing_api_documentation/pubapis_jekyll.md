@@ -84,11 +84,11 @@ Let's do an example in publishing in [CloudCannon](https://cloudcannon.com/), "T
 
 	It should look just like the [Documentation theme for Jekyll here](http://idratherbewriting.com/documentation-theme-jekyll).
 
-  I have to say, the integration between Cloud Cannon and GitHub is pretty mind-blowing. Through Cloud Cannon, you can offload all the hassle of hosting and maintaining your website, but you aren't locked into the system in a proprietary way. Your content lives in a custom Jekyll theme on GitHub.
+  I have to say, the integration between CloudCannon and GitHub is pretty mind-blowing. Through CloudCannon, you can offload all the hassle of hosting and maintaining your website, but you aren't locked into the system in a proprietary way. Your content lives in a custom Jekyll theme on GitHub.
 
-  Cloud Cannon automatically builds the site when you commit new updates to your GitHub repo, entirely removing the publishing and deployment step with a website. Cloud Cannon also provides additional features for authentication, metrics, suggested improvements, and more.
+  CloudCannon automatically builds the site when you commit new updates to your GitHub repo, entirely removing the publishing and deployment step with a website. CloudCannon also provides additional features for authentication, metrics, suggested improvements, and more.
 
-  The only drawback with Cloud Cannon is that your company must allow you to host documentation content on GitHub. Then of course Cloud Cannon charges a monthly fee (see their [pricing](https://cloudcannon.com/pricing/)). If you need to make a case for third-party hosting, I recommend doing so by analyzing the costs of internal hosting and maintenance.
+  The only drawback with CloudCannon is that your company must allow you to host documentation content on GitHub. Then of course CloudCannon charges a monthly fee (see their [pricing](https://cloudcannon.com/pricing/)). If you need to make a case for third-party hosting, I recommend doing so by analyzing the costs of internal hosting and maintenance.
 
 ## Make an update to your Github repo
 
@@ -98,15 +98,15 @@ Remember your Github files are syncing from Github to CloudCannon. Let's see tha
 
 	  For example, browse to the index.md file, click the **Edit this file** button (pencil icon), make an update, and then commit the update.
 
-2.  Return to Cloud Cannon and observe that your site automatically starts rebuilding. Wait until the build finishes, and then look for the change at the preview URL. The change should be reflected.
+2.  Return to CloudCannon and observe that your site automatically starts rebuilding. Wait until the build finishes, and then look for the change at the preview URL. The change should be reflected.
 
 	You've now got a workflow that involves Github as the storage provider syncing to a Jekyll theme hosted on CloudCannon. You're publishing on the fly, based on commits to a repo. This is the essential characteristic of a [docs-as-code publishing workflow](http://127.0.0.1:4000/learnapidoc/pubapis_docs_as_code.html).
 
 ## Publish the endpoint in the Jekyll Aviator theme
 
-Let's say you want to use a theme that provides ready-made templates for REST API documentation. Although my Jekyll documentation theme could work, it doesn't have templates coded for API endpoint reference documentation. In this activity, you'll publish the weatherdata endpoints that we worked on earlier; we'll use the [Aviator API documentation theme](https://github.com/CloudCannon/Aviator-Jekyll-Theme) by Cloud Cannon, which is designed for REST APIs.
+Let's say you want to use a theme that provides ready-made templates for REST API documentation. Although my Jekyll documentation theme could work, it doesn't have templates coded for API endpoint reference documentation. In this activity, you'll publish the weatherdata endpoints that we worked on earlier; we'll use the [Aviator API documentation theme](https://github.com/CloudCannon/Aviator-Jekyll-Theme) by CloudCannon, which is designed for REST APIs.
 
-<a href="https://github.com/CloudCannon/Aviator-Jekyll-Theme" class="noExtIcon" class="noExtIcon"><img src="images/aviatortheme.png" alt="Cloud Cannon Aviator theme" /></a>
+<a href="https://github.com/CloudCannon/Aviator-Jekyll-Theme" class="noExtIcon" class="noExtIcon"><img src="images/aviatortheme.png" alt="CloudCannon Aviator theme" /></a>
 
 ### a. Fork the Jekyll Aviator theme, clone it, and open it in Atom
 
@@ -126,10 +126,10 @@ Let's say you want to use a theme that provides ready-made templates for REST AP
 
 2.  Download [Atom](https://atom.io/), install it, and open it.  
 3.  Open the **aviator-jekyll-template** folder in Atom so you can see all the files in the sidebar.
-4.  Go to [Cloud Cannon](https://cloudcannon.com/) and click **Create Site** to create a new site. Give it a name, such as "Aviator demo."
+4.  Go to [CloudCannon](https://cloudcannon.com/) and click **Create Site** to create a new site. Give it a name, such as "Aviator demo."
 5.  Go to **Settings**, and then click **File Syncing**.
-6.  Next to **GitHub**, click **Connect**, then next to **aviator-jekyll-template** repo, click **Connect Repo**. The files from the GitHub repo sync over to Cloud Cannon.
-    In Cloud Cannon, in the upper-right corner, a green check icon indicates a successful build.
+6.  Next to **GitHub**, click **Connect**, then next to **aviator-jekyll-template** repo, click **Connect Repo**. The files from the GitHub repo sync over to CloudCannon.
+    In CloudCannon, in the upper-right corner, a green check icon indicates a successful build.
 7.  Click the preview link in the upper-left and preview the built site.
 
 ### b. Add the weatherdata endpoint doc to the theme
@@ -145,7 +145,7 @@ Let's say you want to use a theme that provides ready-made templates for REST AP
 2.  Replace the contents of weatherdata.md with the following content: [aviator-weatherdata.md](/learnapidoc/assets/files/aviator-weatherdata.md).
 
     {: .note}
-    Normally, you would build the Jekyll project locally to make sure it looks right. But since that's beyond the scope of this tutorial, we'll just commit it to GitHub and have Cloud Cannon build it.
+    Normally, you would build the Jekyll project locally to make sure it looks right. But since that's beyond the scope of this tutorial, we'll just commit it to GitHub and have CloudCannon build it.
 
 3.  Then add the files to Git tracking, commit, and push to origin:
 
@@ -160,9 +160,9 @@ Let's say you want to use a theme that provides ready-made templates for REST AP
     git push
     ```
 
-    Cloud Cannon is listening to changes in the repo and will immediately sync and build the project.
+    CloudCannon is listening to changes in the repo and will immediately sync and build the project.
 
-4.  In Cloud Cannon, click the preview URL in the upper-left corner and view the built site. The  built site should include the weatherdata endpoint and look as follows:
+4.  In CloudCannon, click the preview URL in the upper-left corner and view the built site. The  built site should include the weatherdata endpoint and look as follows:
 
     <a href="http://tropical-jackal.cloudvent.net" class="noExtIcon"><img src="images/aviator-weatherdata-endpoint.png" /></a>
 
@@ -171,7 +171,7 @@ Let's say you want to use a theme that provides ready-made templates for REST AP
     Each time you commit changes to your repo, CloudCannon rebuilds the Jekyll files into the site that you see.
 
     {: .tip}
-    If you don't want to use Cloud Cannon to build your site, you can also use [GitHub Pages](https://pages.github.com/) to achieve a similar result. GitHub Pages is also free.
+    If you don't want to use CloudCannon to build your site, you can also use [GitHub Pages](https://pages.github.com/) to achieve a similar result. GitHub Pages is also free.
 
 ## Doc Websites Using Jekyll
 
@@ -186,7 +186,7 @@ Here are some websites using Jekyll:
 *  [Jekyllrb docs](http://jekyllrb.com/docs/home/)
 *  [SendGrid docs](https://sendgrid.com/docs)
 *  [Atlassian Design](https://design.atlassian.com/)
-*  [Cloud Cannon docs](https://docs.cloudcannon.com/)
+*  [CloudCannon docs](https://docs.cloudcannon.com/)
 *  [Wistia help center](http://wistia.com/support)
 *  [Liquid (Shopify)](https://help.shopify.com/themes/liquid/basics)
 *  [devo.ps documentation](http://docs.devo.ps/)

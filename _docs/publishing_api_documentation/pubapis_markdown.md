@@ -306,7 +306,7 @@ The HTML will be rendered like this:
 
 Kramdown also lets you use Markdown inside of HTML elements (which is usually not allowed). If you add `markdown="span" or markdown="block"` attribute to an element, the content will be processed as either an inline span or a block div element. See [Syntax](https://kramdown.gettalong.org/syntax.html) in the kramdown documentation for more details.
 
-## What about reStructuredText and Asciidoc?
+## What about reStructuredText and Asciidoc? {#rst_and_asciidoc}
 
 If you're using lightweight markup, you might be interested in exploring [reStructured Text (rST)](http://docutils.sourceforge.net/reStructuredText.html) or Asciidoc. reStructuredText is similar to Markdown, in that it offers lightweight wiki-like syntax for more complex HTML. However, reStructuredText is more semantically rich than Markdown (for example, there's syntax for notes or warnings, and for Python classes).
 

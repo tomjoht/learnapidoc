@@ -45,7 +45,7 @@ You could then use a [`for` loop](https://help.shopify.com/themes/liquid/objects
 
 This approach makes it easy to change your template without reformatting all of your pages. For example, if you decide to change the order of the elements on the page, or if you want to add new classes or some other value, you just alter the template. The values remain the same, since they can be processed in any order.
 
-For a more full-fledged example of API templating, see the [Aviator theme from Cloud Cannon](https://github.com/CloudCannon/aviator-jekyll-template). In my [Jekyll tutorial](pubapis_jekyll.html#publish-the-endpoint-in-the-jekyll-aviator-theme) later in the course, I include an activity where you add a new weatherdata endpoint to the Aviator theme, using the same frontmatter templating designed by the theme author.
+For a more full-fledged example of API templating, see the [Aviator theme from CloudCannon](https://github.com/CloudCannon/aviator-jekyll-template). In my [Jekyll tutorial](pubapis_jekyll.html#publish-the-endpoint-in-the-jekyll-aviator-theme) later in the course, I include an activity where you add a new weatherdata endpoint to the Aviator theme, using the same frontmatter templating designed by the theme author.
 
 The sample endpoint for adding books in the Aviator theme looks as follows:
 
