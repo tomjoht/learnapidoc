@@ -10,10 +10,8 @@ path1: /publishingapis.html
 
 There are many different tools for creating documentation, and there’s no clear industry standard in this space. Different tools may better suit different environments, skill sets, and products. On this page, I've listed as many authoring tools as I can find that are related to the developer documentation space.
 
-{% if site.format == "web" %}
 * TOC
 {:toc}
-{% endif %}
 
 ## Readme.io {#readmeio}
 
@@ -76,6 +74,7 @@ To try out Run in Postman, first [import your OpenAPI spec into Postman](https:/
 
 You can see the many [demos of Run in Postman here](https://www.getpostman.com/integrations/run-button).
 
+{% if site.format == "web" %}
 Here's a demo of Run in Postman using the sample Mashape weather API:
 
 <div class="postman-run-button"
@@ -90,6 +89,10 @@ data-postman-var-1="d1b7adeb50d95d9851e7"></div>
     ));
   }(window, document, "\_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
 </script>
+{% endif %}
+
+{% if site.format == "kindle" or site.format == "pdf" %}
+For a demo of Run in Postman using the sample Mashape weather API, go to [idratherbewriting.com/learnapidoc/pubapis_other_tool_options.html#postman](http://idratherbewriting.com/learnapidoc/pubapis_other_tool_options.html#postman).
 {% endif %}
 
 Postman provides a powerful REST API client that many developers are familiar with. It allows users to customize the API key and parameters and save those values. Although you don't have the in-browser experience to try out calls, in many ways the Postman client is more useful. This is what developers often use to save and store API calls as they test and explore the functionality.
