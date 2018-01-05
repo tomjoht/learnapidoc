@@ -8,14 +8,14 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-There are many different tools for creating documentation, and there’s no clear industry standard in this space. Different tools may better suit different environments, skill sets, and products. On this page, I've listed as many authoring tools as I can find that are related to the developer documentation space.
+There are many different tools for creating documentation, and there’s no clear industry standard in this space. Different tools may better suit different environments, skill sets, and products. On this page, I've listed the most common authoring tools related to the developer documentation space.
 
 * TOC
 {:toc}
 
 ## Readme.io {#readmeio}
 
-[Readme.io](http://readme.io) is an online hosted option for docs that offers one of the most robust, full-featured interfaces for developer docs available. If you consider how much time it requires to build, maintain, and troubleshoot your own website, it makes sense to consider an existing third-party platform where someone has already built all of this out for you.
+[Readme.io](http://readme.io) is an online hosted option for docs that offers one of the most robust, full-featured interfaces for developer docs available. If you consider how much time it requires to build, maintain, and troubleshoot your own website, it makes sense to consider an existing third-party platform where someone has already built all of this out.
 
 To explore Readme.io:
 
@@ -27,21 +27,21 @@ To explore Readme.io:
 
 4. Now check out the API doc configuration section. In the left sidebar, click **Reference Docs**, and then click **API**.
 
-Although you can add your API information manually, you can also import an  [OpenAPI specification file](pubapis_swagger_intro.html). You can experiment by choosing one from the [OpenAPI examples](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0/yaml), such as [this one](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/petstore-expanded.json).
+Although you can add your API information manually, you can also import an [OpenAPI specification file](pubapis_swagger_intro.html). You can experiment by choosing one from the [OpenAPI examples](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0/yaml), such as [this one](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/petstore-expanded.json).
 
 Readme.io provides a number of wizard-like screens to move you through the documentation process, prompting you with forms to complete.
 
 <img src="images/readmeio_manual_api.png" style="border: 1px solid #dedede;" />
 
-Overall, Readme.io provides a robust GUI for creating API documentation, in a way that is more extensive and well-designed than virtually any other platform available. The output includes an interactive, try-it-out experience with endpoints:
+Overall, Readme.io provides a robust GUI for creating API documentation in a way that is more extensive and well-designed than virtually any other platform available. The output includes an interactive, try-it-out experience with endpoints:
 
 <img src="images/readmeiotryitout.png" style="border: 1px solid #dedede;" />
 
 The experience is similar to Swagger in that the response appears directly in the documentation. This API Explorer gives you a sense of the data returned by the API.
 
-Readme.io is a pretty sweet platform, and you don't have to worry about describing your API based on a specification based on either RAML or Swagger. But this also has downsides. It means that your doc is tied to the Readme.io platform (though some export options are available).
+Readme.io is a pretty sweet platform, and you don't have to worry about describing your API through the OpenAPI specification in order to get interactive documentation. But this also has downsides. It means that your doc is tied to the Readme.io platform (though some export options are available).
 
-Additionally, if a paid cloud location for your docs isn't an option, the Readme platform may pose challenges. Finally, there isn't any content re-use functionality, so if you have multiple outputs for your documentation that you're single sourcing, Readme.io may not be for you.
+Additionally, if a paid cloud location for your docs isn't an option, the Readme platform may pose challenges. Finally, there isn't any content re-use functionality (currently), so if you have multiple outputs for your documentation that you're single sourcing, Readme.io may not be for you.
 
 Even so, the output is sharp and the talent behind this site is top-notch. The platform is constantly growing with new features, and there are many high-profile companies with their docs on Readme.
 
@@ -221,20 +221,31 @@ Suppose you want to use Jekyll and GitHub, but you're frustrated by GitHub's lim
 
 .... (more content coming....)
 
-Forestry.io
-
-GitHub Pages
-
-Netlify
-* rST format for more semantic rich markup
-
-
-I'll be adding more tools here in the days to come...
-
+* Forestry.io
+* Netlify
 * readthedocs.org/com
 * mkdocs
 * hugo
 * slate
 * dexy
+* http://apidocjs.com/
 
-http://apidocjs.com/
+## Choosing the right publishing solution
+
+Which solution should you choose? As I said earlier, it depends on your skillset, product, and environment. But here's my recommendation.
+
+If you can avoid building and maintaining your own doc site, or if you lack the web development skills or other resources for building your own, then use an online hosted platform such as Readme.io. The tradeoff is that you abdicate some control to customize the solution and functionality &mdash; you're stuck with whatever features and functionality Readme.io provides.
+
+If you have web development skills (or access to UX talent) and want control over your doc solution (maybe you want to build a custom theme or incorporate special scripts), then use either Sphinx with Read the Docs or Jekyll with GitHub or CloudCannon. I recommend Read the Docs, GitHub, or CloudCannon because hosting and maintaining your own server is not the business you want to be in, and these platforms enable builds from the server. (Removing the hassle of publishing by automating builds from the server will simplify your life unimaginable ways.)
+
+If you've narrowed the choice down to Sphinx with rST or Jekyll with Markdown, then at this point ask yourself whether engineers at your company will write in rST. If they'll write in rST, great, Sphinx is probably superior for documentation projects. But if engineers prefer Markdown, then maybe Jekyll will be more successful.
+
+Choosing Jekyll does have a strong argument because its community extends beyond documentation groups. If you think about it, which platform will likely gain more community and popularity &mdash; one that is geared towards documentation groups (always a niche crowd), or one for web development in general?
+
+In my experience, documentation tools never win out against more general web development tools. So the tradeoff with Jekyll is that although it lacks some better documentation features (cross-references, search, semantic markup), it might have more community and momentum in the long-term.
+
+Regardless of the tool, I recommend describing your API using the OpenAPI specification rather than creating your own template or manually defining these reference sections. Not many doc tools easily incorporate and display the OpenAPI specification (yet), so perhaps the best alternative might be to embed Swagger UI (assuming more deep integration isn't possible) into your doc platform. (I've seen some deeper integrations of Swagger UI into existing websites, and some day I hope to do this with a Jekyll theme, but I haven't yet.)
+
+Some static site generators do have some good integration of OpenAPI, like Spectacle. That might be a good option. But will the platform have the support, tutorials, maintenance, and features to sustain the platform in the long run?
+
+One option I recommend against is building your own tool from scratch. Although I like having control over the doc solution, I've spent far too much time developing themes or working on other documentation platform needs than I intended to. I once had lunch with a tech writer who told me he's working on building his own system from scratch using Ruby. Although this might be a good way to learn Ruby, it seems inefficient for a tech writer, who should be focusing more on documentation and content rather than tools.
