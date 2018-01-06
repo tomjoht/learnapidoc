@@ -89,7 +89,9 @@ For [theming](https://jekyllrb.com/docs/themes/), Jekyll offers the ability to p
 
 ## Hugo
 
-[Hugo](https://gohugo.io/) is a fast static site generator that is rapidly growing in popularity. Based on the Go language, Hugo builds your site faster than most other static site generators, including Jekyll. There's an impressive number of [themes](https://themes.gohugo.io/), including some designed for [documentation](https://themes.gohugo.io/tags/documentation/). As with Jekyll, Hugo allows you to write in Markdown, add frontmatter content in YAML (or TOML or JSON) at the top of your Markdown pages, and more.
+[Hugo](https://gohugo.io/) is a fast static site generator that is rapidly growing in popularity. Based on the Go language, Hugo builds your site faster than most other static site generators, including Jekyll. There's an impressive number of [themes](https://themes.gohugo.io/), including some designed for [documentation](https://themes.gohugo.io/tags/documentation/). Specifically, see the [Learn theme](https://themes.gohugo.io/theme/hugo-theme-learn/en).
+
+As with Jekyll, Hugo allows you to write in Markdown, add frontmatter content in YAML (or TOML or JSON) at the top of your Markdown pages, and more.
 
 Hugo has a robust and flexible templating language that makes it appealing to designers, who can build more sophisticated websites based on the depth of the platform (see [Hugo's docs here](https://gohugo.io/documentation/)). For example, see this [multilingual API documentation theme](https://github.com/bep/docuapi). But the main selling point behind Hugo is that it's fast.
 
