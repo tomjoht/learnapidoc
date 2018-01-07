@@ -174,11 +174,11 @@ folders:
   - title: Jekyll &mdash; a popular static site generator
     jurl: /pubapis_jekyll.html
 
-  - title: Other tool options &mdash; a miscellaneous compilation
-    jurl: /pubapis_other_tool_options.html
+  - title: Publishing tool options for developer docs
+    jurl: /pubapis_publishing_tool_options.html
 
-  - title: What about traditional help authoring tools (HATs)?
-    jurl: /pubapis_hats.html
+  - title: "Which tool to choose for API docs -- my recommendations"
+    jurl: /pubapis_which_tool_to_choose.html
 
   - title: Tools versus Content
     jurl: /pubapis_tools_vs_content.html

@@ -6,6 +6,8 @@ sidebar: docapis
 weight: 7.94
 section: publishingapis
 path1: /publishingapis.html
+redirect_from:
+- /learnapidoc/pubapis_hats.html
 ---
 
 {: .tip}
