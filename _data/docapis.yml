@@ -157,7 +157,7 @@ folders:
     jurl: /pubapis_docs_as_code.html
 
   - title: Publishing tool options for developer docs
-    jurl: /pubapis_publishing_tool_options.html
+    jurl: /pubapis_docs_as_code_tool_options.html
 
   - title: "Which tool to choose for API docs -- my recommendations"
     jurl: /pubapis_which_tool_to_choose.html

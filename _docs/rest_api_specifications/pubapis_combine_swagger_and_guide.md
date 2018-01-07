@@ -200,7 +200,7 @@ Again, although I've tried this approach, I grew frustrated at not being able to
 
 ## Option 5: Use a tool that imports Swagger and allows additional docs
 
-Another approach is to use a tool like [Readme.io](http://readme.io/) that allows you to both import your OpenAPI spec and also add your own separate documentation pages. Readme provides one of the most attractive outputs and is fully inclusive of almost every documentation feature you could want or need. I explore Readme with more depth in the [MTool opions for developer docs](pubapis_publishing_tool_options.html#readmeio). Readme.io requires third-party hosting, but there are some other doc tools that allow you to incorporate Swagger as well.
+Another approach is to use a tool like [Readme.io](http://readme.io/) that allows you to both import your OpenAPI spec and also add your own separate documentation pages. Readme provides one of the most attractive outputs and is fully inclusive of almost every documentation feature you could want or need. I explore Readme with more depth in the [MTool opions for developer docs](pubapis_docs_as_code_tool_options.html#readmeio). Readme.io requires third-party hosting, but there are some other doc tools that allow you to incorporate Swagger as well.
 
 Sites like [Apiary](https://apiary.io/) and [Mulesoft](https://www.mulesoft.com/) let you import your OpenAPI spec while also add your own custom doc pages. These sites offer full-service management for APIs, so if your engineers are already using one of these platforms, it could make sense to store your docs there too.
 

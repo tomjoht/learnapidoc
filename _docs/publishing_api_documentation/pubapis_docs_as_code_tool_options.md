@@ -1,6 +1,6 @@
 ---
-title: "Publishing tool options for developer docs"
-permalink: /pubapis_publishing_tool_options.html
+title: "Docs-as-code tool options for developer docs"
+permalink: /pubapis_docs_as_code_tool_options.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 7.41
@@ -8,9 +8,10 @@ section: publishingapis
 path1: /publishingapis.html
 redirect_from:
 - /learnapidoc/pubapis_other_tool_options.html
+- /learnapidoc/pubapis_docs_as_code_tool_options.html
 ---
 
-In the developer documentation space, there are many different tools for creating documentation, and there’s no clear industry standard. Different tools may better suit different environments, skill sets, and products. On this page, I've listed the most common authoring tools related to the developer documentation space.
+In the developer documentation space, there are many different tools for creating documentation, and there’s no clear industry standard. Different tools may better suit different environments, skill sets, products, and requirements. On this page, I've listed the most common authoring tools related to the developer documentation space.
 
 There are a lot of tools in this space, and I've sorted them into three main groups: static site generators, hosting and deployment options, and static CMS platforms. You use static site generators to author content, and hosting and deployment options to build and deploy the content. Some solutions combine the two &mdash; these I call static CMS's.
 
@@ -143,6 +144,8 @@ With Slate, you write in Markdown, build from the command line, and deploy your 
 #### Miscellaneous
 
 The list of other possibilities is quite extensive. Although probably not worth using due to the small community and limited platform, you might also explore [Asciidoctor](http://asciidoctor.org/), [Dexy](http://www.dexy.it/), [Nanoc](https://nanoc.ws/), [API Documentation Platform](https://viasocket.com/docs), and [Apidoco](https://github.com/72pulses/apidoco). For more doc tools, see [Generating Docs](https://github.com/PharkMillups/beautiful-docs#generating-docs) list in [Beautiful Docs](https://github.com/PharkMillups/beautiful-docs).
+
+What about ... X tool? Hey, there are *a lot* of tool options out there, and no doubt some readers will be stomping their feet and shaking their fist that I didn't mention X tool. Recognize that I'm only recommending what I perceive to be the most popular options. The developer tool landscape is diverse and constantly changing, and what may be relevant one day might be passé the next. Tools change pretty quickly, and new tools and platforms can quickly gain momentum. This is a difficult space to navigate, and selecting the right tool for your needs is a [tough question](pubapis_which_tool_to_choose.html). If you feel strongly that I missed an essential tool here, feel free to [contact me](contact.html).
 
 ## Hosting and deployment options
 
@@ -279,3 +282,6 @@ Unlike CloudCannon, Forestry also offers an on-premise enterprise installation s
 The content can be stored in GitHub, GitLab, or BitBucket. Netlify CMS provides a CMS layer over your project using a React-based wrapper.
 
 Netlify CMS also integrates with [Netlify](#netlify), which is a popular hosting and deployment service for static site projects.
+
+{: .tip}
+Which tool should you use? I provide some more concrete recommendations in [Which tool to choose for API docs -- my recommendations](pubapis_which_tool_to_choose.html).

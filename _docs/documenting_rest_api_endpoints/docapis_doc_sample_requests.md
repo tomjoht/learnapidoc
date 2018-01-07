@@ -97,7 +97,7 @@ You can see the request in Shell (curl), Ruby, Node, or Python. Developers can e
 
 Providing a variety of requests like this, often displayed through [tabs](https://getbootstrap.com/docs/3.3/javascript/#tabs), helps make your API easier to implement. It's even better if you can automatically populate the API keys with the actual user's API keys based on their logged-in profile.
 
-However, don't feel so intimidated by this smorgasbord of code samples. Some API doc tools (such as [Readme.io](pubapis_publishing_tool_options.html#readmeio) or [SwaggerHub](pubapis_swaggerhub_smartbear.html)) can actually automatically generate these code samples because the patterns for making REST requests in different programming languages follow a common template.
+However, don't feel so intimidated by this smorgasbord of code samples. Some API doc tools (such as [Readme.io](pubapis_docs_as_code_tool_options.html#readmeio) or [SwaggerHub](pubapis_swaggerhub_smartbear.html)) can actually automatically generate these code samples because the patterns for making REST requests in different programming languages follow a common template.
 
 ## Auto-generating code samples
 
