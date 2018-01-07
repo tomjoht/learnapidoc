@@ -156,8 +156,11 @@ folders:
   - title: Docs-as-code tools
     jurl: /pubapis_docs_as_code.html
 
-  - title: "Activity: Manage content in a GitHub wiki"
-    jurl: /pubapis_github_wikis.html
+  - title: Publishing tool options for developer docs
+    jurl: /pubapis_publishing_tool_options.html
+
+  - title: "Which tool to choose for API docs -- my recommendations"
+    jurl: /pubapis_which_tool_to_choose.html
 
   - title: More about Markdown
     jurl: /pubapis_markdown.html
@@ -165,23 +168,17 @@ folders:
   - title: Version control systems
     jurl: /pubapis_version_control.html
 
+  - title: "Activity: Manage content in a GitHub wiki"
+    jurl: /pubapis_github_wikis.html
+
   - title: "Activity: Use the GitHub Desktop Client"
     jurl: /pubapis_github_desktop_client.html
 
   - title: Pull request workflows through GitHub
     jurl: /pubapis_github_pull_requests.html
 
-  - title: Jekyll &mdash; a popular static site generator
+  - title: Jekyll publishing tutorial
     jurl: /pubapis_jekyll.html
-
-  - title: Publishing tool options for developer docs
-    jurl: /pubapis_publishing_tool_options.html
-
-  - title: "Which tool to choose for API docs -- my recommendations"
-    jurl: /pubapis_which_tool_to_choose.html
-
-  - title: Tools versus Content
-    jurl: /pubapis_tools_vs_content.html
 
   - title: "Case study: Switching tools to docs-as-code"
     jurl: /pubapis_switching_to_docs_as_code.html

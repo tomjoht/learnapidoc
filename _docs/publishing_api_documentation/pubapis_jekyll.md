@@ -1,5 +1,5 @@
 ---
-title: "Jekyll &mdash; a popular static site generator"
+title: "JJekyll publishing tutorial"
 permalink: /pubapis_jekyll.html
 course: "Documenting REST APIs"
 sidebar: docapis

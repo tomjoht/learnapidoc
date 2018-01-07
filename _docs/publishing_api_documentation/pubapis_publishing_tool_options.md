@@ -3,7 +3,7 @@ title: "Publishing tool options for developer docs"
 permalink: /pubapis_publishing_tool_options.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.91
+weight: 7.41
 section: publishingapis
 path1: /publishingapis.html
 redirect_from:
@@ -212,7 +212,7 @@ Read the Docs has an impressive number of users. The platform has more than 100,
 
 The most impressive example of a Netlify-driven site is Smashing Magazine. Previously hosted on WordPress, Smashing Magazine made the switch to Netlify, with Hugo as the static site generator engine. See [Smashing Magazine just got 10x faster](https://www.netlify.com/blog/2017/03/16/smashing-magazine-just-got-10x-faster/).
 
-### Aerobatic
+### Aerobatic {#aerobatic}
 
 [Aerobatic](https://www.aerobatic.com/) is similar to Netlify in that it builds and publishes your static site. Aerobatic gives you a robust publishing engine that includes a CDN, SSL, continuous delivery, a deployment CLI, password protection, and more. Aerobatic can publish a number of static site generators, including Jekyll, Hugo, Hexo, and more. Aerobatic says,
 
