@@ -12,9 +12,11 @@ redirect_from:
 
 In the developer documentation space, there are many different tools for creating documentation, and there’s no clear industry standard. Different tools may better suit different environments, skill sets, and products. On this page, I've listed the most common authoring tools related to the developer documentation space.
 
+There are a lot of tools in this space, and I've sorted them into three main groups: static site generators, hosting and deployment options, and static CMS platforms. You use static site generators to author content, and hosting and deployment options to build and deploy the content. Some solutions combine the two &mdash; these I call static CMS's.
+
 Note that the tools below are useful for writing and deploying documentation, particularly the [nonreference docs](docnonref.html) in your project. For tools that will read an [OpenAPI specification document](pubapis_swagger_intro.html) and generate interactive reference documentation, see [Other tools to parse and display OpenAPI specs](pubapis_other_openapi_parsers.html).
 
-Also, as explained in [Docs-as-code tools](pubapis_docs_as_code.html), I'm primarily focusing on static site generators and continuous delivery platforms rather than traditional HATs. There are a lot of tools in this space, and I've sorted them into three main groups: static site generators, continuous delivery hosting platforms, and static CMS platforms. You use static site generators to author content, and continuous delivery hosting platforms to build and deploy the content. Some solutions combine the two. These I call static CMS's.
+Also, as explained in [Docs-as-code tools](pubapis_docs_as_code.html), I'm primarily focusing on static site generators and hosting/deployment options rather than traditional HATs.
 
 * TOC
 {:toc}
@@ -23,23 +25,21 @@ Also, as explained in [Docs-as-code tools](pubapis_docs_as_code.html), I'm prima
 
 ### What are static site generators?
 
-Static site generators (fully listed on [Staticgen.com](https://www.staticgen.com/)) are applications that run on the command line and compile a website. For example, you may have various files defining a layout, some "include" files, a configuration file, and your content files.
+Static site generators (fully listed on [Staticgen.com](https://www.staticgen.com/)) are applications that run on the command line and compile a website. For example, you may have various files defining a layout, some "include" files, a configuration file, and your content files. The static site generator reads your configuration file and pushes your content into the layout files, adds whatever includes are referenced (such as a sidebar or footer), and renders everything into HTML. Each page has the sidebar and other navigation included directly into it, as well as all the other layout code you've defined, ready for viewing.
 
-The static site generator reads your configuration file and pushes your content into the layout files, adds whatever includes are referenced (such as a sidebar or footer), and renders everything into HTML. Each page has the sidebar and other navigation included directly into it, as well as all the other layout code you've defined, ready for viewing.
+The entire website is pre-built, so when users visit the page, all the content is already there. With a regular content management system (CMS) like WordPress, content is actually stored in a separate database and dynamically retrieved on each user visit. Static site generators don't have databases &mdash; all the content is on the page already, and nothing is dynamically assembled on the fly through PHP or other dynamic scripting.
 
-The entire website is pre-built, so when users visit the page, the entire content is already there. With a regular content management system (CMS) like WordPress, content is actually stored in the database and dynamically retrieved on each user visit. Static site generators don't have databases &mdash; all the content is on the page already, and nothing is dynamically assembled on the fly through PHP or any other dynamic scripting.
+With static site generators when you're developing content on your local machine, you're usually given a web server preview (such as `http://127.0.0.1:4000/`). Many static site generators rebuild your site continuously in the browser preview server. Each time you make a change to your site, the static site generator recompiles your site in about 1 second (depending on the size of the project). You can refresh your browser preview page to see the changes as you work.
 
-When you're working on content, static site generators give you a web server preview (such as `http://127.0.0.1:4000/`). Many static site generators rebuild your site continuously in the browser preview. Each time you make a change to your site, the static site generator recompiles your site in about 1 second (depending on the size of the project). You can refresh your browser preview page to see the changes as you work.
-
-Because everything is compiled locally, you don't need to worry about security hacks into a database. Everything is a plain text file. There are no security issues. It's also incredibly easy to work with code samples. You can author your content in Markdown or HTML, add code samples inside code blocks that are processed with a Markdown processor, and more. You can add your own scripts directly on the page. It's simply much easier and more flexible to do what you want.
+Because everything is compiled locally, you don't need to worry about security hacks into a database. Everything is a plain text file. There are no security issues, and it's also incredibly easy to work with code samples. You can author your content in Markdown or HTML, add code samples inside code blocks that are processed with a Markdown processor, and more. You can add your own scripts directly on the page. It's simply much easier and more flexible to do what you want.
 
 Most static site generators allow you to use a templating and scripting languages inside your content. You can use if-else statements, run loops, insert variables, and do a lot more sophisticated processing of your content through this templating language directly on your page.
 
-Because you're working with text files, you usually store your site files in a code repository such as Github. You treat your content files with the same workflow as programming code &mdash; committing to the repository, pushing and pulling for updates, and more.
+Because you're working with text files, you usually store your site files in a code repository such as GitHub. You treat your content files with the same workflow as programming code &mdash; committing to the repository, pushing and pulling for updates, and more.
 
-When you're ready to publish your site, you can usually build the site directly from your Git repository (rather than building it locally and then uploading the files). This means your code repository becomes your publishing host. It eliminates the need to actually build your site and deploy the build; instead, you just deploy the source code, and the repository builds it for you.
+When you're ready to publish your site, you can usually build the site directly from your Git repository (rather than building it locally and then uploading the files). This means your code repository becomes your publishing host. "Continuous delivery," as it's called, eliminates the need to actually build your site and deploy the build. Instead, you just deploy the source code, and the continuous delivery platform builds it for you.
 
-Although there are hundreds of static site generators, only a handful of are relevant:
+Although there are hundreds of static site generators, only a handful of are probably relevant for documentation:
 
 * [Jekyll](#jekyll)
 * [Hugo](#hugo)
@@ -144,17 +144,17 @@ With Slate, you write in Markdown, build from the command line, and deploy your 
 
 The list of other possibilities is quite extensive. Although probably not worth using due to the small community and limited platform, you might also explore [Asciidoctor](http://asciidoctor.org/), [Dexy](http://www.dexy.it/), [Nanoc](https://nanoc.ws/), [API Documentation Platform](https://viasocket.com/docs), and [Apidoco](https://github.com/72pulses/apidoco). For more doc tools, see [Generating Docs](https://github.com/PharkMillups/beautiful-docs#generating-docs) list in [Beautiful Docs](https://github.com/PharkMillups/beautiful-docs).
 
-## Continuous delivery hosts
+## Hosting and deployment options
 
-Static site generators handle content development, but not hosting and deployment. For this, you have a whole other platform to consider. I call these options continuous delivery hosting platforms.
+Static site generators handle content development, but not hosting and deployment. For this, you have a whole other category of tools to consider.
 
 Theoretically, you could publish a static website on any web server (e.g., AWS S3, Bluehost, and more). But continuous delivery hosting platforms do something more &mdash; they automatically build your output when you commit a change to a repo. These hosts often read content stored on GitHub and initiate build and publishing pipelines when they detect a change in a particular branch.
 
-These platforms are built on
+Hosting and deployment platforms usually offer a number of additional features, such as SSL, CDNs, minification, authentication, backup/redundancy, and more.
 
 ### GitHub Pages {#github_pages}
 
-[GitHub Pages](https://pages.github.com/) is not specifically designed as a documentation platform but rather as a web deployment option. If you upload a Jekyll project to a GitHub repository, you can indicate that it's a Jekyll project in the settings, and GitHub will automatically build it when you commit to your GitHub repo. This feature &mdash; building Jekyll projects directly from your GitHub repo &mdash; is referred to as GitHub Pages.
+[GitHub Pages](https://pages.github.com/) provides a free hosting and deployment option for Jekyll projects. If you upload a Jekyll project to a GitHub repository, you can indicate that it's a Jekyll project in the settings, and GitHub will automatically build it when you commit to your GitHub repo. This feature &mdash; building Jekyll projects directly from your GitHub repo &mdash; is referred to as GitHub Pages.
 
 In you GitHub repo, click **Settings** and scroll down to **GitHub Pages**. This is where you activate the GitHub Pages feature.
 
