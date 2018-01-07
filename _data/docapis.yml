@@ -156,17 +156,17 @@ folders:
   - title: Docs-as-code tools
     jurl: /pubapis_docs_as_code.html
 
-  - title: Publishing tool options for developer docs
-    jurl: /pubapis_docs_as_code_tool_options.html
-
-  - title: "Which tool to choose for API docs -- my recommendations"
-    jurl: /pubapis_which_tool_to_choose.html
-
   - title: More about Markdown
     jurl: /pubapis_markdown.html
 
   - title: Version control systems
     jurl: /pubapis_version_control.html
+
+  - title: Publishing tool options for developer docs
+    jurl: /pubapis_docs_as_code_tool_options.html
+
+  - title: "Which tool to choose for API docs &mdash; my recommendations"
+    jurl: /pubapis_which_tool_to_choose.html
 
   - title: "Activity: Manage content in a GitHub wiki"
     jurl: /pubapis_github_wikis.html

@@ -2,13 +2,13 @@
 title: Version control systems
 permalink: /pubapis_version_control.html
 course: "Documenting REST APIs"
-weight: 7.7
+weight: 7.41
 sidebar: docapis
 section: publishingapis
 path1: /publishingapis.html
 ---
 
-Pretty much every IT shop uses some form of version control with their software code. Version control is how developers collaborate and manage their work. Although we used some Git workflows with the [GitHub wikis tutorial](pubapis_github_wikis.html), version control is such an important element to learn, we'll dive more deeply into it here. To provide variety from the GitHub wikis tutorial, in this section, you'll use the GitHub Desktop client instead.
+Pretty much every IT shop uses some form of version control with their software code. Version control is how developers collaborate and manage their work. When you use docs-as-code tools, you'll invariably use version control such as Git. Version control is such an important element to learn, we'll dive more deeply into it here. To provide variety from the GitHub wikis tutorial, in this section, you'll use the GitHub Desktop client instead.
 
 * TOC
 {:toc}

@@ -3,21 +3,21 @@ title: "Activity: Manage content in a GitHub wiki"
 permalink: /pubapis_github_wikis.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.5
+weight: 7.8
 section: publishingapis
 path1: /publishingapis.html
 ---
 
-One of the easiest toolchains to implement with developer docs is a GitHub wiki. When you create a repository on GitHub, the repository comes with a wiki that you can add pages to. This wiki can be convenient if your source code is stored on GitHub.
+When you create a repository on GitHub, the repository comes with a wiki that you can add pages to. This wiki can be convenient if your source code is stored on GitHub. Although GitHub is probably not a tool you would use for publishing your docs, understanding how to interact with it can be important for understanding [version control](pubapis_version_control.html).
 
-Learning GitHub will also allow you to become familiar with the version control workflows that are common with many docs-as-code tools. For this reason, I have a detailed tutorial for using GitHub in this course. Regardless of whether you actually use GitHub as a publishing tool, this tutorial will introduce you to Git workflows with content.
+Learning GitHub will allow you to become familiar with the version control workflows that are common with many docs-as-code tools. For this reason, I have a detailed tutorial for using GitHub in this course. Regardless of whether you actually use GitHub as a publishing tool, this tutorial will introduce you to Git workflows with content.
 
 * TOC
 {:toc}
 
 ## About GitHub Wikis
 
-Here's an example of the Basecamp API, which is housed on GitHub.
+You could actually use the default GitHub wiki as your doc site. Here's an example of the Basecamp API, which is housed on GitHub.
 
 <a href="https://github.com/basecamp/bcx-api" class="noExtIcon"><img src="images/basecampapi.png" alt="Basecamp API" /></a>
 
