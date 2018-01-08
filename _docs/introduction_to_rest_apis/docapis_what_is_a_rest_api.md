@@ -7,6 +7,8 @@ weight: 1.3
 sidebar: docapis
 section: introtoapis
 path1: /docapis_introtoapis.html
+redirect_from:
+- /docapis_what-is-a-rest-api/
 ---
 
 This course is all about learning by doing, but while *doing* various activities, I'll periodically pause and dive into some more abstract concepts to fill in more detail. This is one of those deep dive moments. Here we'll dive into what a REST API is, comparing it to other types of APIs like SOAP. REST APIs have common characteristics but no definitive protocols like their predecessors did.

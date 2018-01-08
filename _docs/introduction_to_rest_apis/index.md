@@ -8,6 +8,8 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 weight: 1.0
 class: first
+redirect_from:
+- /restapicourse2-0/
 ---
 
 In this course on writing documentation for REST APIs, instead of just talking about abstract concepts, I contextualize REST APIs with a direct, hands-on approach.
