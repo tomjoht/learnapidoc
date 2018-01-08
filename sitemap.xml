@@ -6,7 +6,12 @@ search: false
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <sitemap>
-        <loc>docs/sitemap_en.xml</loc>
+      {% for doc in site.docs %}
+        {% unless doc.search == false %}
+        <loc>{{doc.url | prepend: site.baseurl | prepend: site.url }}</loc>
         <lastmod>{{site.time | date: '%Y-%B-%d' }}</lastmod>
+        {% unless forloop.last %},{% endunless %}
+        {% endunless %}
+        {% endfor %}
     </sitemap>
 </sitemapindex>

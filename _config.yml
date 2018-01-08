@@ -62,7 +62,6 @@ defaults:
       image: true
 
 plugins:
-  - jekyll-sitemap
   - jekyll-mentions
   - jekyll-redirect-from
   - jekyll-paginate
