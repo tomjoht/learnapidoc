@@ -26,31 +26,31 @@ Also, as explained in [Docs-as-code tools](pubapis_docs_as_code.html), I'm prima
 
 ### What are static site generators?
 
-Static site generators (you can view a full list at [Staticgen.com](https://www.staticgen.com/)) are applications that run on the command line and compile a website. For example, you might have various files defining a layout, some "include" files, a configuration file, and your content files. The static site generator reads your configuration file and pushes your content into the layout files, adds whatever includes are referenced (such as a sidebar or footer), and writes out the HTML pages from the Markdown sources. Each page usually has the sidebar and other navigation included directly into it, as well as all the other layout code you've defined, ready for viewing.
+Static site generators (view a full list at [Staticgen.com](https://www.staticgen.com/)) are applications that run on the command line and compile a website. For example, you might have various files defining a layout, some "include" files, a configuration file, and your content files. The static site generator reads your configuration file and pushes your content into the layout files, adds whatever includes are referenced (such as a sidebar or footer), and writes out the HTML pages from the Markdown sources. Each page usually has the sidebar and other navigation included directly into it, as well as all the other layout code you've defined, ready for viewing.
 
-With a regular content management system (CMS) like WordPress, content is actually stored in a separate database and dynamically retrieved on each user visit. Static site generators don't have databases &mdash; all the content is on the page already, and nothing is dynamically assembled on the fly through PHP or other dynamic scripting. The entire website is fully built; nothing changes dynamically based on the user's profile (unless done with client-side JS).
+With a regular content management system (CMS) like WordPress, content is actually stored in a separate database and dynamically pulled from the database to the web page on each user visit. Static site generators don't have databases &mdash; all the content is on the page already, and nothing is dynamically assembled on the fly through PHP or other server-side scripting. The entire website is fully built when the user arrives; nothing changes dynamically based on the user's profile (unless done with client-side JS).
 
 With static site generators, when you're developing content on your local machine, you're usually given a web server preview (such as `http://127.0.0.1:4000/`). Many static site generators rebuild your site continuously in the browser preview server each time you make a change. The time to rebuild your site could take less than a second or, if you have thousands of pages, several minutes.
 
-Because everything is compiled locally, you don't need to worry about security hacks into a database. Everything is a human-readable plain text file. There are no security issues, and it's also incredibly easy to work with custom code. You can author your content in Markdown or HTML, add code samples inside code blocks that are processed with a Markdown processor, and more. You can add your own scripts directly on the page. It's simply much easier and more flexible to do what you want.
+Because everything is compiled locally, you don't need to worry about security hacks into a database. Everything is a human-readable plain text file. It's also incredibly easy to work with custom code, such as special JavaScript libraries or advanced HTML or other complex code you want to use on a page. You can author your content in Markdown or HTML, add code samples inside code blocks that are processed with a code-syntax highlighter, and more. It's simply much easier and more flexible to do what you want.
 
 Most static site generators allow you to use a templating and scripting languages inside your content. You can use if-else statements, run loops, insert variables, and do a lot more sophisticated processing of your content through this templating language directly on your page.
 
 Because you're working with text files, you usually store your project files (but not the built site output) in a code repository such as GitHub. You treat your content files with the same workflow as programming code &mdash; committing to the repository, pushing and pulling for updates, branching and merging, and more.
 
-When you're ready to publish your site, you can usually build the site directly from your Git repository (rather than building it locally and then uploading the files to a web server). This means your code repository becomes your publishing host. "Continuous delivery," as it's called, eliminates the need to manually build your site and deploy the build. Instead, you just deploy the source code, and the continuous delivery platform builds and deploys it for you.
+When you're ready to publish your site, you can usually build the site directly from your Git repository (rather than building it locally and then uploading the files to a web server). This means your code repository becomes your publishing host. "Continuous delivery," as it's called, eliminates the need to manually build your site and deploy the build. Instead, you just push a commit to your repository, and the continuous delivery platform builds and deploys it for you.
 
-Although there are hundreds of static site generators, only a handful of are probably relevant for documentation. I'll consider these three:
+Although there are hundreds of static site generators, only a handful of are probably relevant for documentation. I'll consider these three in this article:
 
 * [Jekyll](#jekyll)
 * [Hugo](#hugo)
 * [Sphinx](#sphinx)
 
-One could discuss many more &mdash; Hexo, Middleman, Gitbook, Pelican, and so on. But the reality is that these other static site generators are fading (at least for documentation) as the top handful mature and develop more robust, refined features.
+One could discuss many more &mdash; Hexo, Middleman, Gitbook, Pelican, and so on. But the reality is that these other static site generators aren't used that frequently for documentation projects.
 
 ### Jekyll {#jekyll}
 
-I devote an entire topic to [Jekyll](pubapis_jekyll.html), complete with example Git workflows, so I won't go as deep in detail here. Jekyll is a static site generator similar to Hugo. It builds your website by converting Markdown to HTML, inserting pages into layouts you define, running any Liquid scripting and logic, compressing styles, and writing the output to a \_site folder that that you can deploy on a web server.
+I devote an entire topic to [Jekyll](pubapis_jekyll.html), complete with example Git workflows, so I won't go as deep in detail here. Jekyll is a Ruby-based static site generator originally built by the co-founder of GitHub. Jekyll builds your website by converting Markdown to HTML, inserting pages into layouts you define, running any Liquid scripting and logic, compressing styles, and writing the output to a \_site folder that that you can deploy on a web server.
 
 There are several compelling reasons to use Jekyll:
 
@@ -58,7 +58,7 @@ There are several compelling reasons to use Jekyll:
 * **Control.** Jekyll provides a lot of powerful features (often through Liquid, a scripting language) that allow you to do almost anything with the platform. Because of this, you probably won't outgrow it. Jekyll will match whatever web development skills or other JS, HTML, or CSS frameworks you want to use with it. Even without a development background, it's fairly easy to figure out and code the scripts you need. (See my series [Jekyll versus DITA](http://idratherbewriting.com/2015/03/23/new-series-jekyll-versus-dita/) for details on how to do in Jekyll what you're probably used to doing in DITA.)
 * **Integration with GitHub and AWS S3.** Tightly coupling Jekyll with the most used version control repository on the planet (GitHub) almost guarantees its success. The more GitHub is used, the more Jekyll is also used, and vice versa. [GitHub Pages](#github_pages) will auto-build your Jekyll site ("continuous delivery"), allowing you to automate the publishing workflow without effort.
 
-If GitHub isn't appropriate for your project, you can also publish to AWS S3 bucket using the [s3_website plugin](https://github.com/laurilehmijoki/s3_website), which syncs your output with an S3 bucket by only adding or removing the files that changed in your output.
+If GitHub isn't appropriate for your project, you can also publish to AWS S3 bucket using the [s3_website plugin](https://github.com/laurilehmijoki/s3_website), which syncs your Jekyll output with an S3 bucket by only adding or removing the files that changed.
 
 For [theming](https://jekyllrb.com/docs/themes/), Jekyll offers the ability to package your theme as a Rubygem and then distribute it across multiple themes. Rubygems is a package manager, which means it's a repository for plugins. You pull the latest gems (plugins) you need from Rubygems through the command line, often using Bundler. Distributing your theme as a Rubygem is one approach you could use for breaking up your project into smaller projects to ensure faster build times.
 
@@ -72,14 +72,16 @@ As with Jekyll, Hugo allows you to write in Markdown, add frontmatter content in
 
 Hugo has a robust and flexible templating language (Golang) that makes it appealing to designers, who can build more sophisticated websites based on the depth of the platform (see [Hugo's docs here](https://gohugo.io/documentation/)). But the main selling point behind Hugo is that it builds your site fast.
 
+### Comparing speed with Hugo with Jekyll
+
 {: .note}
 Speed here refers to the time to compile your web output, not the time your site takes to load when visitors view the content in a browser.
 
-Speed may not be immediately apparent when you first start evaluating static site generators. You probably won't realize how important speed is until you have hundreds (or thousands) of pages in your site and are waiting for it to build.
+Speed may not be immediately apparent when you first start evaluating static site generators. You probably won't realize how important speed is until you have thousands of pages in your site and are waiting for it to build.
 
-Although it depends on how you've coded your site, in general, I've noticed that with Jekyll projects, if you have, say, 1,000 pages in your project, it might take about a minute or two to build the site. Thus, if you have 5,000 pages, you could be waiting 5 minutes or more for the site to build. The whole automatic re-building feature becomes almost irrelevant, and it can be difficult to identify formatting or other errors until the build finishes.
+Although it depends on how you've coded your site (e.g., the number of for loops that iterate through pages), in general, I've noticed that with Jekyll projects, if you have, say, 1,000 pages in your project, it might take about a minute or two to build the site. Thus, if you have 5,000 pages, you could be waiting 5 minutes or more for the site to build. The whole automatic re-building feature becomes almost irrelevant, and it can be difficult to identify formatting or other errors until the build finishes.
 
-If Hugo can build a site much, much faster, it offers a serious advantage in the choice of static site generators. Given that major web development sites like [Smashing Magazine chose Hugo](https://next.smashingmagazine.com/2017/03/a-little-surprise-is-waiting-for-you-here/) is evidence of Hugo's emerging superiority among the static site generators.
+If Hugo can build a site much, much faster, it offers a serious advantage in the choice of static site generators. Given that major web development sites like [Smashing Magazine chose Hugo](https://next.smashingmagazine.com/2017/03/a-little-surprise-is-waiting-for-you-here/), this is evidence of Hugo's emerging superiority among the static site generators.
 
 For a detailed comparison of Hugo versus Jekyll, see [Hugo vs. Jekyll: Comparing the leading static website generators](https://opensource.com/article/17/5/hugo-vs-jekyll). In one of the comments, a reader says:
 
@@ -97,25 +99,27 @@ Generating a 2,700 page document site in Jekyll took 90 seconds; with Hugo, it t
 
 The deliberation between Hugo and Jekyll will require you to think about project size &mdash; how big should your site be? Should you have one giant site, with content for all documentation/products stored in the same repo? Or should you have multiple smaller repos? These are some of the considerations I wrestled with when [implementing docs-as-code tooling](pubapis_switching_to_docs_as_code.html). I concluded that having a single, massive project is superior because it allows easier content re-use, onboarding, validation and error checking, deployment management, and more.
 
-If starting from scratch, I would probably use Hugo instead of Jekyll. However, I have a lot of custom scripting in Jekyll already (such as the ability to generate Kindle books and PDF), not to mention a publishing pipeline with Jekyll already integrated. However, given that content is largely in the same format (Markdown with YAML frontmatter), switching between the two platforms shouldn't be too difficult (thought admittedly, I haven't tried it).
+If starting from scratch, I might use Hugo instead of Jekyll. However, I have a lot of custom scripting in Jekyll already (such as the ability to generate Kindle books and PDF), not to mention a publishing pipeline with Jekyll already integrated. However, given that content is largely in the same format (Markdown with YAML frontmatter), switching between the two platforms shouldn't be too difficult (thought admittedly, I haven't tried it).
 
-Also, as a side note, there are workarounds in Jekyll to enabling faster builds. In my doc projects at work (where we have probably 1,500 pages or so across many different doc sets), we implemented build shortcuts. By cascading configuration files, we can limit the builds to one particular doc directory. I have one configuration file (e.g., \_config.yml, the default) that sets all content as `publish: true`, and another configuration file (e.g., config-acme.yml) that sets all content as `publish: false` except for a particular doc directory (the one I'm working with, e.g., acme). When I'm working with that doc directory, I build Jekyll like this:
+Also, there are workarounds in Jekyll to enabling faster builds. In my doc projects at work (where we have probably 1,500 pages or so across many different doc sets), we implemented build shortcuts. By cascading configuration files, we can limit the builds to one particular doc directory. I have one configuration file (e.g., \_config.yml, the default) that sets all content as `publish: true`, and another configuration file (e.g., config-acme.yml) that sets all content as `publish: false` except for a particular doc directory (the one I'm working with, e.g., acme). When I'm working with that acme doc directory, I build Jekyll like this:
 
 ```
 jekeyll serve --config _config.yml,config-acme.yml
 ```
 
-The `config-acme.yml` will overwrite the default `_config.yml` to enable one specific doc directory to build while disabling all others. As a result, Jekyll builds lightning fast. This method tends to work quite well and is used by others with large Jekyll projects as well. We have continuous delivery configured with the server, so when it's time to push out the full build, that full build process (where all docs are `publish: true` and no config-acme.yml file is used) takes place on the server, not the local machine.
+The `config-acme.yml` will overwrite the default `_config.yml` to enable one specific doc directory as `publish: true` while disabling all others. As a result, Jekyll builds lightning fast. This method tends to work quite well and is used by others with large Jekyll projects as well. We have continuous delivery configured with the server, so when it's time to push out the full build (where `publish: true` is applied to all directories and no config-acme.yml file is used), that full build process takes place on the server, not the local machine.
 
-Although static site generators seem to change quickly, it's harder for one tool, like Hugo, to overtake another, like Jekyll, because of the custom coding developers usually do with the platform. If you're just using someone's theme with general Markdown pages, great, switching will be easy. But if you've built custom layouts and added custom frontmatter in your Markdown pages that gets processed in unique ways by the layouts, as well as other custom scripts or code that you created specifically for your content, changing platforms will be more challenging.
+Although static site generators seem to change quickly, it's harder for one tool, like Hugo, to overtake another, like Jekyll, because of the custom coding developers usually do with the platform. If you're just using someone's theme with general Markdown pages, great, switching will be easy. But if you've built custom layouts and added custom frontmatter in your Markdown pages that gets processed in unique ways by the layouts, as well as other custom scripts or code that you created in your theme specifically for your content, changing platforms will be more challenging. You'll have to change all your custom Liquid scripting to Golang. Or if working with another platform, you might need to change your Golang scripts to Jinja templating, and so forth.
+
+For this reason, you don't just jump from one platform to the next (as you might do with DITA projects, where you don't often usually their own output tools, and where the content follows the same standard.)
 
 ### Sphinx {#sphinx}
 
-[Sphinx](http://www.sphinx-doc.org/en/stable/) is a popular static site generator based on Python. It was developed by the Python community to document the Python programming language (and it has some direct capability to document Python classes), but Sphinx is also used for many documentation projects unrelated to Python.
+[Sphinx](http://www.sphinx-doc.org/en/stable/) is a popular static site generator based on Python. It was originally developed by the Python community to document the Python programming language (and it has some direct capability to document Python classes), but Sphinx is also used for many documentation projects unrelated to Python.
 
 Because Sphinx was designed from the ground up as a documentation tool, not just as tool for building websites (like Jekyll and Hugo were), Sphinx has more documentation-specific functionality that is often absent from other static site generator tools. Some of these documentation-specific features include robust search, more advanced linking (linking to sections, automating titles based on links, cross-references, and more), and use of reStructuredText (rST), which is more semantically rich, standard, and extensible than Markdown. (See [What about reStructuredText and Asciidoc?](pubapis_markdown.html#rst_and_asciidoc) for more details around rST compared to Markdown.)
 
-Sphinx is used with the [Read the Docs](#readthedocs) platform and has a passionate fan base among those who use it. However, because it is specifically designed as a documentation tool, the community isn't as large as some of the other static site generators.
+Sphinx can be used with the [Read the Docs](#readthedocs) platform and has a passionate fan base among those who use it. However, because it is specifically designed as a documentation tool, the community isn't as large as some of the other static site generators.
 
 As of January 2018, [Staticgen.com](https://www.staticgen.com/) shows the number of stars, forks, and issues as follows:
 
@@ -126,9 +130,9 @@ As of January 2018, [Staticgen.com](https://www.staticgen.com/) shows the number
 </div>
 <div style="clear: both;"></div>
 
-### Others
+Jekyll and Hugo are the most common static site generators. Between Hugo and Sphinx, there are 22 other static site generators (Hexo, GitBook, Docpad, Pelican, Wintersmith, and so forth), but I called out Sphinx here because of its popularity among documentation groups and for its integration with [Read the Docs](#readthedocs).
 
-Jekyll and Hugo are the most common static site generators. Between Hugo and Sphinx, there are 22 other static site generators (Hexo, GitBook, Docpad, Pelican, Wintersmith, and so forth), but I called out Sphinx here because of its popularity among documentation crowds and for its integration with [Read the Docs](#readthedocs).
+### Others
 
 #### MkDocs {#mkdocs}
 
@@ -140,13 +144,13 @@ Some [other themes](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes) are als
 
 Although there are many static site generators with similar features, MkDocs is one more specifically oriented towards documentation. For example, it does include search.
 
-However, while it seems like orienting the platform towards documentation would be advantageous for tech writers, this approach might actually backfire, because it drastically shrinks the community. The number of general web designers versus documentation designers is probably a ration of 100:1. As such, MkDocs remains a small, niche platform that probably won't see much growth and long-term development beyond the original designer's needs.
+However, while it seems like orienting the platform towards documentation would be advantageous for tech writers, this approach might actually backfire, because it shrinks the community. The number of general web designers versus documentation designers is probably a ratio of 100:1. As such, MkDocs remains a small, niche platform that probably won't see much growth and long-term development beyond the original designer's needs.
 
 This is the constant tradeoff with tools &mdash; the tools and platforms with the most community and usage aren't usually the doc tools. The doc tools have more features designed for tech writers, but they lack the momentum and depth of the more popular website building tools.
 
 #### Slate {#slate}
 
-[Slate](https://github.com/lord/slate) is popular theme for generating documentation following the three-column design made popular by [Stripe](https://stripe.com/docs/api). Slate is based on [Middleman](https://middlemanapp.com/), a Ruby-based static site generator that is popular.
+ Slate is based on [Middleman](https://middlemanapp.com/), a Ruby-based static site generator that is popular. [Slate](https://github.com/lord/slate) is popular theme for generating documentation following the three-column design made popular by [Stripe](https://stripe.com/docs/api).
 
 <a href="https://github.com/lord/slate" class="noExtIcon"><img src="images/slatescreenshot.png" /></a>
 
@@ -156,11 +160,11 @@ With Slate, you write in Markdown, build from the command line, and deploy your 
 
 The list of other doc-oriented static site generator possibilities is quite extensive. Although probably not worth using due to the small community and limited platform, you might also explore [Asciidoctor](http://asciidoctor.org/), [Dexy](http://www.dexy.it/), [Nanoc](https://nanoc.ws/), [API Documentation Platform](https://viasocket.com/docs), and [Apidoco](https://github.com/72pulses/apidoco). For more doc tools, see the [Generating Docs](https://github.com/PharkMillups/beautiful-docs#generating-docs) list in [Beautiful Docs](https://github.com/PharkMillups/beautiful-docs).
 
-Right now there are probably many readers who are clenching their first and lowering their eyebrows at the omission of their tool. *What about ... X!!???*
+Right now there are probably many readers who are clenching their first and lowering their eyebrows in anger at the omission of their tool. *What about ... Docpad!!??? What about Nikola??!!*
 
-Hey, there are *a lot* of tool options out there, and no doubt some readers may have found perfect matches for their content and tool. (If you feel strongly that I missed an essential tool here, feel free to [contact me](contact.html).)
+Hey, there are *a lot* of tool options out there, and no doubt some readers may have found perfect match for their content and tool. If you feel strongly that I missed an essential tool here, feel free to [contact me](contact.html). (This page is already 5,000+ words long.)
 
-Recognize that I'm only recommending what I perceive to be the most popular options. The developer tool landscape is diverse and constantly changing, and what may be relevant one day might be passé the next. This is a difficult space to navigate, and selecting the right tool for your needs is a [tough question](pubapis_which_tool_to_choose.html). Unfortunately, the tool you choose can massively affect your productivity, so it tends to be an important choice.
+Also, recognize that I'm only recommending what I perceive to be the most popular options. The developer tool landscape is diverse and constantly changing, and what may be relevant one day might be passé the next. This is a difficult space to navigate, and selecting the right tool for your needs is a [tough question](pubapis_which_tool_to_choose.html). Unfortunately, the tool you choose can massively affect both your productivity and capability, so it tends to be an important choice.
 
 ## Hosting and deployment options
 
