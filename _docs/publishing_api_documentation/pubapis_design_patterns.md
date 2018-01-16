@@ -8,7 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-In the previous topic, we browsed up to [100 API doc sites](pubapis_apilist.html) and looked for similar patterns in their design. "Design patterns" are common approaches or techniques in the way something is designed. The following design patterns are common with API doc sites: structure and templates, website platforms, abundant code examples, lengthy pages, and interactive API explorers. I explore each of these elements in the following sections.
+In the previous topic, we browsed through a long [survey of API doc sites](pubapis_apilist.html) and looked for similar patterns in their design. "Design patterns" are common approaches or techniques in the way something is designed. The following design patterns are common with API doc sites: structure and templates, website platforms, abundant code examples, lengthy pages, and interactive API explorers. I explore each of these elements in the following sections.
 
 {% if site.format == "web" %}
 * TOC
@@ -241,7 +241,7 @@ However, if you store customer API keys on your site, this might create authenti
 
 ## Some non-patterns in API doc sites
 
-Finally, I'd like to briefly mention some non-patterns in API documentation. In the [list of 100 API doc sites](pubapis_apilist.html), you rarely see any of the following:
+Finally, I'd like to briefly mention some non-patterns in API documentation. In the [Survey of API doc sites](pubapis_apilist.html), you rarely see any of the following:
 
 * Video tutorials
 * PDFs

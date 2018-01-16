@@ -1,5 +1,5 @@
 ---
-title: List of 100 API doc sites
+title: Survey of API doc sites
 permalink: /pubapis_apilist.html
 sidebar: docapis
 weight: 7.1
