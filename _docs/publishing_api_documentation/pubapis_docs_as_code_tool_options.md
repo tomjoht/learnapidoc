@@ -17,7 +17,7 @@ I've sorted these tools into three main groups:
 
 * **Static site generators**: Used to author content and build the web output.
 * **Hosting and deployment options**: Used to build, deploy, and host the web output.
-* **Static CMS platforms**: Combines the above two -- used for authoring, building, and hosting the web output.
+* **Flat-file CMS platforms**: Provides an online GUI for authoring/publishing but content is stored in flat files.
 
 Note that the tools below are particularly useful for writing and deploying the [non-reference content](docnonref.html) in your project. For tools that will read an [OpenAPI specification document](pubapis_swagger_intro.html) and generate interactive reference documentation, see [Other tools to parse and display OpenAPI specs](pubapis_other_openapi_parsers.html).
 
@@ -225,14 +225,16 @@ Suppose you want to use Jekyll and GitHub, but you're frustrated by GitHub's lim
 * Multiple environments for different branches
 * Visual online interface for editing
 * Jekyll plugins
-* SSL
+* SSL for custom domains
 * Automatic minification, and more
 
 The founders of CloudCannon are experts with Jekyll and have designed the platform specifically for Jekyll projects. They also created a [host of Jekyll tutorials](https://learn.cloudcannon.com/) to enrich developer knowledge.
 
 ### Read the Docs {#readthedocs}
 
-Read the Docs is an online platform that can read Sphinx projects and automatically build an output. Read the Docs has both an open-source, free version &mdash; [readthedocs.org](https://readthedocs.org/) &mdash; and a commercial version &mdash; [readthedocs.com](https://readthedocs.com/). Read the Docs uses Sphinx and rST (or Markdown) as the documentation platform, and also contains web hooks to auto-build your output when you commit to a repo. The [Read the Docs documentation](https://docs.readthedocs.io/en/latest/getting_started.html) shows a sample output.
+Read the Docs is an online hosting and deployment platform that can read Sphinx projects (from a public repository such as GitHub or Bitbucket) and automatically build the web output. In other words, it is a "continuous documentation platform for Sphinx" (see [An introduction to Sphinx and Read the Docs for Technical Writers](http://ericholscher.com/blog/2016/jul/1/sphinx-and-rtd-for-writers/)).
+
+Read the Docs has both an open-source, free version &mdash; [readthedocs.org](https://readthedocs.org/) &mdash; and a commercial version &mdash; [readthedocs.com](https://readthedocs.com/). Read the Docs uses Sphinx and reStructuredText (or Markdown, if you prefer that instead) as the content format, and also contains web hooks to auto-build your output when you commit to a repo. The [Read the Docs documentation](https://docs.readthedocs.io/en/latest/getting_started.html) shows a sample output.
 
 <a href="https://docs.readthedocs.io/en/latest/getting_started.html" class="noExtIcon"><img src="images/readthedocsplatform.png" /></a>
 
@@ -240,11 +242,24 @@ Read the Docs describes itself as follows:
 
 > Read the Docs hosts documentation, making it fully searchable and easy to find. You can import your docs using any major version control system, including Mercurial, Git, Subversion, and Bazaar. We support webhooks so your docs get built when you commit code. There's also support for versioning so you can build docs from tags and branches of your code in your repository.
 
-Some key features include a robust sidebar with expand/collapse functionality, search, versioning, output to PDF and ePub, and more. Read the Docs is similar to GitHub Pages in that it offers continuous deployment when you commit to the repo. However, whereas GitHub Pages is based on Jekyll and Markdown, Read the Docs is based on Sphinx and [reStructuredText](pubapis_markdown.html#rst_and_asciidoc), which provides more documentation-specific features.
+Some key features include a robust sidebar with expand/collapse functionality, search, versioning, output to PDF and ePub, and more. Read the Docs is similar to GitHub Pages in that it offers continuous deployment when you commit to the repo. Whereas GitHub Pages is based on Jekyll and Markdown, Read the Docs is based on Sphinx and prefers [reStructuredText](pubapis_markdown.html#rst_and_asciidoc), which provides more documentation-specific features.
+
+To learn more about Sphinx, read through the [Read the Docs guide](https://docs.readthedocs.io/en/latest/) or see some of Eric's posts. Eric explains that Read the docs includes most of the features technical writers would expect:
+
+> Single Source Publishing
+> * Output HTML, PDF, ePub, and more
+> * Content reuse through includes
+> * Conditional includes based on content type and tags
+> Multiple mature HTML themes that provide great user experience on mobile and desktop
+> Referencing across pages, documents, and projects
+> Index and Glossary support
+> Internationalization support ([An introduction to Sphinx and Read the Docs for Technical Writers](http://ericholscher.com/blog/2016/jul/1/sphinx-and-rtd-for-writers/))
 
 The Read the Docs platform was co-founded by [Eric Holscher](http://ericholscher.com/), the same co-founder of [Write the Docs](http://www.writethedocs.org/). Write the Docs was originally intended as a conference for the Read the Docs community but evolved into a more general conference focused on technical communication for software projects. If you go to a Write the Docs conference, you'll find that sessions focus more on best practices for documentation rather than discussions about tools. (You can read my post, [Impressions from the Write the Docs Conference](http://idratherbewriting.com/2017/05/23/write-the-docs-and-the-battle-against-vendor-evil/)) or listen to this [Write the Docs podcast with the co-founders](http://idratherbewriting.com/2017/12/14/write-the-docs-founding-ideas-and-principles-podcast/) for more details.)
 
-Read the Docs has an impressive number of users. The platform has more than 100,000 projects and receives millions of page views a month across these projects. It is one of the largest open-source documentation undertakings on the web, and continues to grow at an impressive rate. What's nice about Read the Docs is that it offers both a free model and a paid model, which allows you to level-up your project when your needs mature, but also doesn't lock you into a paid solution when you're not ready for it.
+Read the Docs has an impressive number of users. The platform has thousands of projects (in 2016, 53,673) and receives millions of page views (252 million page views and 56 million unique visitors) across these projects. You can [view their stats here](http://blog.readthedocs.com/read-the-docs-2016-stats/). Read the Docs is one of the most visited sites on the web and continues to grow at an impressive rate.
+
+What's nice about Read the Docs is that it offers both a free model and a paid model, which allows you to level-up your project when your needs mature, but also doesn't lock you into a paid solution when you're not ready for it.
 
 ### Netlify {#netlify}
 
@@ -254,21 +269,23 @@ Netlify works similar to GitHub Pages &mdash; when you push your content to the 
 
 The most impressive example of a Netlify-hosted site is [Smashing Magazine](https://www.smashingmagazine.com/). Previously hosted on WordPress, Smashing Magazine made the switch to Netlify, with Hugo as the static site generator engine. See [Smashing Magazine just got 10x faster](https://www.netlify.com/blog/2017/03/16/smashing-magazine-just-got-10x-faster/) for details.
 
+Complementing Netlify is [Netlify CMS](#netlify_cms), a flat-file CMS for your content.
+
 ### Aerobatic {#aerobatic}
 
 [Aerobatic](https://www.aerobatic.com/) is similar to Netlify in that it builds and publishes your static site. Aerobatic gives you a robust publishing engine that includes a CDN, SSL, continuous delivery, a deployment CLI, password protection, and more. Aerobatic can publish a number of static site generators, including Jekyll, Hugo, Hexo, and more. Aerobatic says,
 
 > Aerobatic is a specialized platform for efficient delivery of static webpages and website assets. We take care of the configuration details for you that provide the best balance of performance and maintainability. Stop fiddling with CDNs and web server configs and focus on coding great front-end experiences. &mdash; [Static website serving](https://www.aerobatic.com/docs/static-serving/)
 
-## Static CMS platforms
+## Flat-file CMS platforms
 
-Finally, there is a class of developer doc tools that combine both the authoring and the hosting/deployment in the same tool. These tools are often referred to as static content management systems (CMSs) because they provide a GUI layer over your static content.
+Finally, there is a class of developer doc tools that provide online GUIs for authoring and publishing, but they still store your content as flat files in repositories such as GitHub and Bitbucket. In other words, they provide a WordPress.com-like experience for your content (giving you a user interface to browse your posts, pages, layouts, and other content).
 
-In other words, they provide a WordPress.com-like experience for your content (giving you a user interface to browse your posts, pages, layouts, and other content). Updates you make are built automatically on the platform. But unlike Wordpress, the solution does not involve storing your content in a database and dynamically retrieving that content from the database when readers visit your page. In fact, many times you can store your content on GitHub, and the static CMS will read/pull it in a seamless way.
+Flat-file CMSs often combine both the authoring and the hosting/deployment in the same tool. Updates you make are built automatically on the platform. But unlike WordPress, the solution does not involve storing your content in a database and dynamically retrieving that content from the database when readers visit your page. In fact, many times you can store your content on GitHub, and the flat-file CMS will read/pull it in a seamless way.
 
 ### Readme.io {#readmeio}
 
-[Readme.io](http://readme.io) is an online static CMS for docs that offers one of the most robust, full-featured interfaces for developer docs available. Specifically, Readme.io includes features for displaying API documentation content. (If you consider how much time it requires to build, maintain, and troubleshoot your own website, it makes sense to consider an existing third-party platform where someone has already built all of this out already.)
+[Readme.io](http://readme.io) is an online flat-file CMS for docs that offers one of the most robust, full-featured interfaces for developer docs available. Most important, Readme.io includes features for displaying API documentation content.
 
 To explore Readme.io:
 
@@ -294,7 +311,7 @@ The experience is similar to Swagger in that the response appears directly in th
 
 (You don't have to describe your API through the OpenAPI specification in order to get interactive documentation. But if you don't, your doc will be tied to the Readme.io platform. Some export options are available.)
 
-Additionally, if a paid cloud location for your docs isn't an option, the Readme platform may pose challenges. There isn't any content re-use functionality (currently), so if you have multiple outputs for your documentation that you're single sourcing, Readme.io may not be for you.
+Additionally, if a paid cloud location for your docs isn't an option, the Readme.io platform may pose challenges. There isn't any content re-use functionality (currently), so if you have multiple outputs for your documentation that you're single sourcing, Readme.io may not be for you.
 
 Even so, the output is sharp and the talent behind this site is top-notch. The platform is constantly growing with new features, and there are many high-profile companies with their docs on Readme.
 
@@ -306,7 +323,7 @@ Here are a few sample API doc sites built with Readme.io:
 
 ### Forestry.io {#forestry}
 
-[Forestry.io](https://forestry.io/) is similar to CloudCannon in that it offers online hosting for Jekyll projects, but it also provides hosting for [Hugo](https://gohugo.io/) (another popular static site generator, with faster build times than Jekyll), and for Git. Forestry's emphasis is on providing an online CMS interface for static site generators.
+[Forestry.io](https://forestry.io/) is similar to CloudCannon in that it offers online hosting for Jekyll projects, but it also provides hosting for [Hugo](https://gohugo.io/) and for Git. Forestry's emphasis is on providing an online CMS interface for static site generators.
 
 <a href="https://forestry.io/" class="noExtIcon"><img src="images/forestryio.png" /></a>
 
