@@ -15,9 +15,9 @@ In the developer documentation space, you have many tool options for creating an
 
 I've sorted these tools into three main groups:
 
-* **Static site generators**: Used to author content and build the web output.
-* **Hosting and deployment options**: Used to build, deploy, and host the web output.
-* **Flat-file CMS platforms**: Provides an online GUI for authoring/publishing but content is stored in flat files.
+* **[Static site generators](#staticsitegenerators)**: Used to author content and build the web output.
+* **[Hosting and deployment options](#hostinganddeployment)**: Used to build, deploy, and host the web output.
+* **[CMS platforms (mostly flat-file CMSs)](#cmsplatforms)**: Provides an online GUI for authoring/publishing. In many cases, content is stored in plain text files and pulled in from GitHub.
 
 Note that the tools below are particularly useful for writing and deploying the [non-reference content](docnonref.html) in your project. For tools that will read an [OpenAPI specification document](pubapis_swagger_intro.html) and generate interactive reference documentation, see [Other tools to parse and display OpenAPI specs](pubapis_other_openapi_parsers.html).
 
@@ -27,7 +27,7 @@ As explained in [Docs-as-code tools](pubapis_docs_as_code.html), I'm primarily f
 * TOC
 {:toc}
 
-## Static site generators
+## Static site generators {#staticsitegenerators}
 
 ### What are static site generators?
 
@@ -181,7 +181,7 @@ Hey, there are *a lot* of tool options out there, and you might have found perfe
 
 Also, recognize that I'm only recommending what I perceive to be the most popular options. The developer tool landscape is diverse and constantly changing, and what may be relevant one day might be passé the next. This is a difficult space to navigate, and selecting the right tool for your needs is a tough question [though I offer more specific advice and recommendations here](pubapis_which_tool_to_choose.html). The tool you choose can massively affect both your productivity and capability, so it tends to be an important choice.
 
-## Hosting and deployment options
+## Hosting and deployment options {#hostinganddeployment}
 
 Static site generators handle content development, but not hosting and deployment. For this, you have another category of tools to consider. I call this category of tools "hosting and deployment options."
 
@@ -277,49 +277,11 @@ Complementing Netlify is [Netlify CMS](#netlify_cms), a flat-file CMS for your c
 
 > Aerobatic is a specialized platform for efficient delivery of static webpages and website assets. We take care of the configuration details for you that provide the best balance of performance and maintainability. Stop fiddling with CDNs and web server configs and focus on coding great front-end experiences. &mdash; [Static website serving](https://www.aerobatic.com/docs/static-serving/)
 
-## Flat-file CMS platforms
+## CMS platforms (mostly flat-file CMSs) {#cmsplatforms}
 
 Finally, there is a class of developer doc tools that provide online GUIs for authoring and publishing, but they still store your content as flat files in repositories such as GitHub and Bitbucket. In other words, they provide a WordPress.com-like experience for your content (giving you a user interface to browse your posts, pages, layouts, and other content).
 
 Flat-file CMSs often combine both the authoring and the hosting/deployment in the same tool. Updates you make are built automatically on the platform. But unlike WordPress, the solution does not involve storing your content in a database and dynamically retrieving that content from the database when readers visit your page. In fact, many times you can store your content on GitHub, and the flat-file CMS will read/pull it in a seamless way.
-
-### Readme.io {#readmeio}
-
-[Readme.io](http://readme.io) is an online flat-file CMS for docs that offers one of the most robust, full-featured interfaces for developer docs available. Most important, Readme.io includes features for displaying API documentation content.
-
-To explore Readme.io:
-
-1. Go to [readme.io](http://readme.io).
-2. Click the **Sign Up** button in the upper-right corner and sign up for an account.
-3. Click **+Add Project**. Then add a Project Name (e.g., Weather API), Subdomain (e.g., weather-api), and Project Logo. Then click **Create**.
-
-   <img src="images/projectsettingsreadmeio.png" alt="Project Settings" />
-
-4. Now check out the API doc configuration section. In the left sidebar, click **Reference Docs**, and then click **API**.
-
-Although you can add your API information manually, you can also import an [OpenAPI specification file](pubapis_swagger_intro.html). You can experiment by choosing one from the [OpenAPI examples](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0/yaml), such as [this one](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/petstore-expanded.json).
-
-Readme.io provides a number of wizard-like screens to move you through documentation process, prompting you with forms to complete.
-
-<img class="medium" src="images/readmeio_manual_api.png" style="border: 1px solid #dedede;" />
-
-Overall, Readme.io provides a robust GUI for creating API documentation in a way that is more extensive and well-designed than virtually any other platform available. The output includes an interactive, try-it-out experience with endpoints:
-
-<img class="medium" src="images/readmeiotryitout.png" style="border: 1px solid #dedede;" />
-
-The experience is similar to Swagger in that the response appears directly in the documentation. This API Explorer gives you a sense of the data returned by the API.
-
-(You don't have to describe your API through the OpenAPI specification in order to get interactive documentation. But if you don't, your doc will be tied to the Readme.io platform. Some export options are available.)
-
-Additionally, if a paid cloud location for your docs isn't an option, the Readme.io platform may pose challenges. There isn't any content re-use functionality (currently), so if you have multiple outputs for your documentation that you're single sourcing, Readme.io may not be for you.
-
-Even so, the output is sharp and the talent behind this site is top-notch. The platform is constantly growing with new features, and there are many high-profile companies with their docs on Readme.
-
-Here are a few sample API doc sites built with Readme.io:
-
-* [Validic](https://docs.validic.com/docs/getting-started)
-* [Box API](https://developer.box.com/docs)
-* [Coinbase API](https://developers.coinbase.com/api/v2#introduction)
 
 ### Forestry.io {#forestry}
 
@@ -340,6 +302,42 @@ Unlike CloudCannon, Forestry also offers an on-premise enterprise installation s
 The content can be stored in GitHub, GitLab, or BitBucket. Netlify CMS provides a CMS layer over your project using a React-based wrapper.
 
 Netlify CMS also integrates with [Netlify](#netlify), which is a popular hosting and deployment service for static site projects.
+
+### Readme.io {#readmeio}
+
+[Readme.io](http://readme.io) is an online CMS for docs that offers one of the most robust, full-featured interfaces for developer docs available. Readme.io isn't a flat-file CMS, meaning you don't just point to your GitHub repo to pull in the content. Readme.io's emphasis is on providing an interface that helps you more easily write documentation based on best practices and designs. Readme.io provides a number of wizard-like screens to move you through documentation process, prompting you with forms to complete.
+
+<img class="medium" src="images/readmeio_manual_api.png" style="border: 1px solid #dedede;" />
+
+Most importantly, Readme.io includes *specific features for displaying API documentation content*, which puts it into a class of its own. Although you can add your API information manually, you can also import an [OpenAPI specification file](pubapis_swagger_intro.html). You can experiment by choosing one from the [OpenAPI examples](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0/yaml), such as [this one](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/petstore-expanded.json). Readme.io's integration of OpenAPI along with other doc content helps integrate outputs that are often separated. (This fragmentation is a problem I explore later in [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).)
+
+To explore Readme.io:
+
+1. Go to [readme.io](http://readme.io).
+2. Click the **Sign Up** button in the upper-right corner and sign up for an account.
+3. Click **+Add Project**. Then add a Project Name (e.g., Weather API), Subdomain (e.g., weather-api), and Project Logo. Then click **Create**.
+
+   <img src="images/projectsettingsreadmeio.png" alt="Project Settings" />
+
+4. Now check out the API doc configuration section. In the left sidebar, click **Reference Docs**, and then click **API**.
+
+Overall, Readme.io provides a robust GUI for creating API documentation in a way that is more extensive and well-designed than virtually any other platform available. The output includes an interactive, try-it-out experience with endpoints:
+
+<img class="medium" src="images/readmeiotryitout.png" style="border: 1px solid #dedede;" />
+
+The experience is similar to Swagger in that the response appears directly in the documentation. This API Explorer gives you a sense of the data returned by the API.
+
+There are some challenges with the platform. Readme.io isn't free, so you'll need licenses per author. Additionally, there isn't any content re-use functionality (currently), so if you have multiple outputs for your documentation that you're single sourcing, Readme.io may not be for you. Finally, if you want to customize your own design or implement a feature not supported, you probably can't just hack it into your code. You're stuck within the platform's constraints.
+
+Even so, the output is sharp and the talent behind this site is top-notch. The platform is constantly growing with new features, and there are many high-profile companies with their docs on Readme. If you consider how much time it actually takes to build and deploy your own doc solution, going with a site like Readme.io will save you a lot of time. It will let you **focus on your content** while also adhering to best practices with site design.
+
+Here are a few sample API doc sites built with Readme.io:
+
+* [Validic](https://docs.validic.com/docs/getting-started)
+* [Box API](https://developer.box.com/docs)
+* [Coinbase API](https://developers.coinbase.com/api/v2#introduction)
+* [Farmbase Software](https://farmbot-software.readme.io/docs)
+
 
 {: .tip}
 Which tool should you use? I provide some more concrete recommendations in [Which tool to choose for API docs -- my recommendations](pubapis_which_tool_to_choose.html).
