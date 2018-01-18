@@ -303,6 +303,9 @@ The content can be stored in GitHub, GitLab, or BitBucket. Netlify CMS provides 
 
 Netlify CMS also integrates with [Netlify](#netlify), which is a popular hosting and deployment service for static site projects.
 
+{: .tip}
+For a tutorial on integrating Jekyll with Netlify CMS, see [Adding a CMS to Your Static Site With Netlify CMS](https://dzone.com/articles/adding-a-cms-to-your-static-site-with-netlify-cms).
+
 ### Readme.io {#readmeio}
 
 [Readme.io](http://readme.io) is an online CMS for docs that offers one of the most robust, full-featured interfaces for developer docs available. Readme.io isn't a flat-file CMS, meaning you don't just point to your GitHub repo to pull in the content. Readme.io's emphasis is on providing an interface that helps you more easily write documentation based on best practices and designs. Readme.io provides a number of wizard-like screens to move you through documentation process, prompting you with forms to complete.
