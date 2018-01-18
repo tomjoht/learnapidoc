@@ -17,7 +17,7 @@ I've sorted these tools into three main groups:
 
 * **[Static site generators](#staticsitegenerators)**: Used to author content and build the web output.
 * **[Hosting and deployment options](#hostinganddeployment)**: Used to build, deploy, and host the web output.
-* **[CMS platforms (mostly flat-file CMSs)](#cmsplatforms)**: Provides an online GUI for authoring/publishing. In many cases, content is stored in plain text files and pulled in from GitHub.
+* **[CMS platforms (mostly headless CMSs)](#cmsplatforms)**: Provides an online GUI for authoring/publishing. In many cases, content is stored in plain text files and pulled in from GitHub.
 
 Note that the tools below are particularly useful for writing and deploying the [non-reference content](docnonref.html) in your project. For tools that will read an [OpenAPI specification document](pubapis_swagger_intro.html) and generate interactive reference documentation, see [Other tools to parse and display OpenAPI specs](pubapis_other_openapi_parsers.html).
 
@@ -77,7 +77,7 @@ If you're looking for a documentation theme, see my [Documentation theme for Jek
 
 As with Jekyll, Hugo allows you to write in Markdown, add frontmatter content in YAML (or TOML or JSON) at the top of your Markdown pages, and more. In this sense, Hugo shares a lot of similarity with Jekyll.
 
-Hugo has a robust and flexible templating language (Golang) that makes it appealing to designers, who can build more sophisticated websites based on the depth of the platform (see [Hugo's docs here](https://gohugo.io/documentation/)). But the main selling point behind Hugo is that it builds your site fast.
+Hugo has a robust and flexible templating language (Golang) that makes it appealing to designers, who can build more sophisticated websites based on the depth of the platform (see [Hugo's docs here](https://gohugo.io/documentation/)). Go templating has more of a learning curve than templating with Liquid in Jekyll, and the docs might assume more technical familiarity than many users have. Still, the main selling point behind Hugo is that it builds your site fast. This speed factor might be enough to overcome other issues.
 
 ### Comparing speed with Hugo with Jekyll
 
@@ -158,25 +158,25 @@ However, while it seems like orienting the platform towards documentation would 
 
 This is the constant tradeoff with tools &mdash; the tools and platforms with the most community and usage aren't usually the doc tools. The doc tools have more features designed for tech writers, but they lack the momentum and depth of the more popular website building tools.
 
-#### Slate / Middleman {#slate}
+#### Slate {#slate}
 
- Slate is based on [Middleman](https://middlemanapp.com/), a Ruby-based static site generator that is popular. [Slate](https://github.com/lord/slate) is common theme for generating documentation following the three-column design made popular by [Stripe](https://stripe.com/docs/api).
+[Slate](https://github.com/lord/slate) (based on [Middleman](https://middlemanapp.com/), a Ruby-based static site generator that is popular) is a common static site generator for API documentation that follows the three-column design made popular by [Stripe](https://stripe.com/docs/api).
 
 <a href="https://github.com/lord/slate" class="noExtIcon"><img src="images/slatescreenshot.png" /></a>
 
-With Slate, you write in Markdown, build from the command line, and deploy your site similar to other static site generators.
+With Slate, you write in Markdown, build from the command line, and deploy your site similar to other static site generators. All your content appears on one page, with navigation that lets users easily move down to the sections they need.
 
-Here I called out the theme (Slate) instead of the platform (Middleman) for a specific reason. The static site generator gives you the tools to build a website; it does not always give you a perfectly designed theme that fits your needs. You will probably end up forking an existing theme and customizing it to fit your needs.
-
-Theme customization will require some web development skills, or at least some familiarity with HTML, CSS, and JS, not to mention any scripting languages the static site generator uses. As such, you might be attracted to a particular static site generator precisely because of the themes available on that platform.
+Unlike with other static site generators mentioned here, Slate is more focused on API documentation than other types of content.
 
 #### Miscellaneous
 
-The list of other doc-oriented static site generator possibilities is quite extensive. Although probably not worth using due to the small community and limited platform, you might also explore [Asciidoctor](http://asciidoctor.org/), [Dexy](http://www.dexy.it/), [Nanoc](https://nanoc.ws/), [API Documentation Platform](https://viasocket.com/docs), [Apidoco](https://github.com/72pulses/apidoco), and more For more doc tools, see the [Generating Docs](https://github.com/PharkMillups/beautiful-docs#generating-docs) list in [Beautiful Docs](https://github.com/PharkMillups/beautiful-docs).
+The list of other doc-oriented static site generator possibilities is quite extensive. Although probably not worth using due to the small community and limited platform, you might also explore [Asciidoctor](http://asciidoctor.org/), [Dexy](http://www.dexy.it/), [Nanoc](https://nanoc.ws/), [API Documentation Platform](https://viasocket.com/docs), [Apidoco](https://github.com/72pulses/apidoco), and more.
+
+For more doc tools, see the [Generating Docs](https://github.com/PharkMillups/beautiful-docs#generating-docs) list in [Beautiful Docs](https://github.com/PharkMillups/beautiful-docs). Additionally, [DocBuilds](http://www.docbuilds.com/) tries to index some of more popular documentation-specific static site generators.
 
 Right now there are probably many readers who are clenching their first and lowering their eyebrows in anger at the omission of their tool. *What about ... Docpad!!??? What about Nikola??!!*
 
-Hey, there are *a lot* of tool options out there, and you might have found perfect match between your content needs and the tool. (This page is already 5,000+ words long.) If you feel strongly that I missed an essential tool for docs here, feel free to [contact me](contact.html).
+Hey, there are *a lot* of tool options out there, and you might have found perfect match between your content needs and the tool. (This page is already 5,000+ words long.) If you feel strongly that I missed an essential tool for docs here, feel free to [contact me](contact.html). Additionally, the tools landscape for developer docs is robust, complex and seemingly endless.
 
 Also, recognize that I'm only recommending what I perceive to be the most popular options. The developer tool landscape is diverse and constantly changing, and what may be relevant one day might be passé the next. This is a difficult space to navigate, and selecting the right tool for your needs is a tough question [though I offer more specific advice and recommendations here](pubapis_which_tool_to_choose.html). The tool you choose can massively affect both your productivity and capability, so it tends to be an important choice.
 
@@ -273,7 +273,7 @@ The most impressive example of a Netlify-hosted site is [Smashing Magazine](http
 
 Other notable doc sites using Netlify include [Docker](https://docs.docker.com/), [Kubernetes](https://kubernetes.io/docs/home/), [React](https://reactjs.org/docs/hello-world.html), [Yarn](https://yarnpkg.com/lang/en/docs/), [Lodash](https://lodash.com/docs/), [Gatsby](https://www.gatsbyjs.org/docs/), and [Hugo](https://gohugo.io/documentation/).
 
-Complementing Netlify is [Netlify CMS](#netlifycms), a flat-file CMS for your content.
+Complementing Netlify is [Netlify CMS](#netlifycms), a headless CMS for your content.
 
 ### Aerobatic {#aerobatic}
 
@@ -281,11 +281,15 @@ Complementing Netlify is [Netlify CMS](#netlifycms), a flat-file CMS for your co
 
 > Aerobatic is a specialized platform for efficient delivery of static webpages and website assets. We take care of the configuration details for you that provide the best balance of performance and maintainability. Stop fiddling with CDNs and web server configs and focus on coding great front-end experiences. &mdash; [Static website serving](https://www.aerobatic.com/docs/static-serving/)
 
-## CMS platforms (mostly flat-file CMSs) {#cmsplatforms}
+## Headless CMSes {#cmsplatforms}
 
-Finally, there is a class of developer doc tools that provide online GUIs for authoring and publishing, but they still store your content as flat files in repositories such as GitHub and Bitbucket. In other words, they provide a WordPress.com-like experience for your content (giving you a user interface to browse your posts, pages, layouts, and other content).
+Finally, there is a class of developer doc tools that provide online GUIs for authoring and publishing, but they still store your content as flat files in repositories such as GitHub and Bitbucket. In other words, they provide a WordPress.com-like experience for your content (giving you a user interface to browse your posts, pages, layouts, and other content), but allow your content to live in plain text files in version control repositories. This category of tools is called "headless CMSs."
 
-Flat-file CMSs often combine both the authoring and the hosting/deployment in the same tool. Updates you make are built automatically on the platform. But unlike WordPress, the solution does not involve storing your content in a database and dynamically retrieving that content from the database when readers visit your page. In fact, many times you can store your content on GitHub, and the flat-file CMS will read/pull it in a seamless way.
+Just as we have [staticgen.com](https://www.staticgen.com/) that lists common static site generators, there's a similar index of [headless content management systems](https://headlesscms.org/), this one arranged in alphabetical order (rather than ranked by popularity).
+
+<a href="https://headlesscms.org/"><img src="headlesscms.png"/></a>
+
+Headless CMSs often combine both the authoring and the hosting/deployment in the same tool. Updates you make are built automatically on the platform. But unlike WordPress, the solution does not involve storing your doc content in a database and dynamically retrieving that content from the database when readers visit your page. Many times you can store your content on GitHub, and the headless CMS will read/pull it in a seamless way. (The platform probably will contain a database of some kind for your profile and other CMS features, but your content is not stored and retrieved there.)
 
 ### Forestry.io {#forestry}
 
@@ -312,7 +316,7 @@ For a tutorial on integrating Jekyll with Netlify CMS, see [Adding a CMS to Your
 
 ### Readme.io {#readmeio}
 
-[Readme.io](http://readme.io) is an online CMS for docs that offers one of the most robust, full-featured interfaces for developer docs available. Readme.io isn't a flat-file CMS, meaning you don't just point to your GitHub repo to pull in the content. Readme.io's emphasis is on providing an interface that helps you more easily write documentation based on best practices and designs. Readme.io provides a number of wizard-like screens to move you through documentation process, prompting you with forms to complete.
+[Readme.io](http://readme.io) is an online CMS for docs that offers one of the most robust, full-featured interfaces for developer docs available. Readme.io isn't a headless CMS, meaning you don't just point to your GitHub repo to pull in the content. Readme.io's emphasis is on providing an interface that helps you more easily write documentation based on best practices and designs. Readme.io provides a number of wizard-like screens to move you through documentation process, prompting you with forms to complete.
 
 <img class="medium" src="images/readmeio_manual_api.png" style="border: 1px solid #dedede;" />
 

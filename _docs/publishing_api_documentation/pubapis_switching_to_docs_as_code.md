@@ -58,7 +58,7 @@ All we really needed to do was to generate out the body HTML along with the side
 
 In the end, here's the solution we implemented. We stored the Jekyll project in an internal Git repository &mdash; the same farm of Git repositories other engineers used for nearly every software project, and which hooked into a build management system. When we pushed our Jekyll doc content to the master branch of our Git repository, a build pipeline would kick off and build the Jekyll project from the server (similar to GitHub Pages).
 
-Our Jekyll layout omitted any header or footer. The built HTML pages were then pulled into an S3 bucket in AWS. This bucket acted somewhat like a flat-file database for storing content. Our website would make calls to the content in S3 based on permalink values in the HTML to pull the content into a larger website template that included the header and footer.
+Our Jekyll layout omitted any header or footer. The built HTML pages were then pulled into an S3 bucket in AWS. This bucket acted somewhat like a headless database for storing content. Our website would make calls to the content in S3 based on permalink values in the HTML to pull the content into a larger website template that included the header and footer.
 
 The build process from the Git repo to the deployed website took about 10 minutes, but tech writers didn't need to do anything during that time. After you typed a few commands in your terminal, the process kicked off and ran all by itself.
 
