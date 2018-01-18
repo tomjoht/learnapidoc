@@ -269,7 +269,7 @@ Netlify works similar to GitHub Pages &mdash; when you push your content to the 
 
 The most impressive example of a Netlify-hosted site is [Smashing Magazine](https://www.smashingmagazine.com/). Previously hosted on WordPress, Smashing Magazine made the switch to Netlify, with Hugo as the static site generator engine. See [Smashing Magazine just got 10x faster](https://www.netlify.com/blog/2017/03/16/smashing-magazine-just-got-10x-faster/) for details.
 
-Complementing Netlify is [Netlify CMS](#netlify_cms), a flat-file CMS for your content.
+Complementing Netlify is [Netlify CMS](#netlifycms), a flat-file CMS for your content.
 
 ### Aerobatic {#aerobatic}
 
@@ -295,16 +295,16 @@ Unlike CloudCannon, Forestry also offers an on-premise enterprise installation s
 
 ### Netlify CMS {#netlifycms}
 
-[Netlify CMS](https://www.netlifycms.org/) is similar to Forestry in its offering of a content management system for static site generator platform. But rather than limiting the static site generators you can use, it provides a more open platform that integrates with any static site generator. Netlify CMS's key value is in simplifying the content development experience for less technical users.
+[Netlify CMS](https://www.netlifycms.org/) is similar to Forestry in its offering of a content management system for static site generators. But rather than limiting the static site generators you can use, it provides a more open platform wrapper (based on React) that integrates with any static site generator.
+
+One of Netlify CMS's key advantages is in simplifying the content development experience for less technical users. But you can also standardize your authoring through the interface. Netlify CMS lets you map the custom fields in your theme to a GUI template, as shown in the image below. This reduces the chance that authors might use the wrong frontmatter tag in their pages (for example, `intro_blurb` or `IntroBlurb` or `introBlurb`) and instead just provides a box for this.
 
 <figure><a href="https://www.netlifycms.org/" class="noExtIcon"><img src="images/netlifycms.png" style="border: 1px solid #dedede;"/></a><figcaption>Their site says, "The web-based app includes rich-text editing, real-time preview, and drag-and-drop media uploads. ... Writers and editors can easily manage content from draft to review to publish across any number of custom content types.</figcaption></figure>
 
-The content can be stored in GitHub, GitLab, or BitBucket. Netlify CMS provides a CMS layer over your project using a React-based wrapper.
-
-Netlify CMS also integrates with [Netlify](#netlify), which is a popular hosting and deployment service for static site projects.
+Your content source can be stored in GitHub, GitLab, or BitBucket. Netlify CMS also integrates with [Netlify](#netlify), which is a popular hosting and deployment service for static site projects.
 
 {: .tip}
-For a tutorial on integrating Jekyll with Netlify CMS, see [Adding a CMS to Your Static Site With Netlify CMS](https://dzone.com/articles/adding-a-cms-to-your-static-site-with-netlify-cms).
+For a tutorial on integrating Jekyll with Netlify CMS, see [Adding a CMS to Your Static Site With Netlify CMS](https://dzone.com/articles/adding-a-cms-to-your-static-site-with-netlify-cms). Or just start with the [Netlify CMS documentation](https://www.netlifycms.org/docs/).
 
 ### Readme.io {#readmeio}
 
