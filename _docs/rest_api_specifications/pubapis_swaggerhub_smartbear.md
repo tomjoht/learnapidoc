@@ -10,6 +10,9 @@ path1: /restapispecifications.html
 
 Previously, I explored using the open-source [Swagger UI project](pubapis_swagger.html) as a way to render your [OpenAPI specification document](pubapis_openapi_tutorial_overview.html). [SwaggerHub](https://app.swaggerhub.com/) is the commercial version of Swagger UI. You can see a comparison of features [here](https://swaggerhub.com/swagger-open-source-comparison/).
 
+{: .tip}
+You can see a demo of the [sample weather API on SwaggerHub here](https://app.swaggerhub.com/apis/IdRatherBeWriting/MashapeWeatherAPI/2.3). On the demo page, click the download arrow icon in the upper-right corner to see the list of client and server SDKs that you can download from SwaggerHub.
+
 {% if site.format == "web" %}
 * TOC
 {:toc}

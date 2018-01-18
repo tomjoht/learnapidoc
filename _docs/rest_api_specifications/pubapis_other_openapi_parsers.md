@@ -19,6 +19,9 @@ Swagger has a detailed list of tools that can read the OpenAPI spec here: [Comme
 
 Below I'll expand on a couple of others, and add more over time.
 
+{: .note}
+I'm currently developing out the content here. Currently, the list tools and info is anemic.
+
 ## Spectacle {#spectacle}
 
 [Spectacle](https://github.com/sourcey/spectacle) is an open-source Github project that builds an output from an OpenAPI specification file. The display provides a three-pane output similar to the Stripe or Slate docs. After you download the project files, you can build the display using Node simply by referencing your OpenAPI spec file.

@@ -303,7 +303,7 @@ Unlike CloudCannon, Forestry also offers an on-premise enterprise installation s
 
 ### Netlify CMS {#netlifycms}
 
-[Netlify CMS](https://www.netlifycms.org/) is similar to Forestry in its offering of a content management system for static site generators. But rather than limiting the static site generators you can use, it provides a more open platform wrapper (based on React) that integrates with any static site generator.
+[Netlify CMS](https://www.netlifycms.org/) is similar to Forestry in its offering of a content management system for static site generators. But rather than limiting the static site generators you can use, it provides a more open platform wrapper (built with React but using Git to manage the content) that integrates with any static site generator.
 
 One of Netlify CMS's key advantages is in simplifying the content development experience for less technical users. But you can also standardize your authoring through the interface. Netlify CMS lets you map the custom fields in your theme to a GUI template, as shown in the image below. This reduces the chance that authors might use the wrong frontmatter tag in their pages (for example, `intro_blurb` or `IntroBlurb` or `introBlurb`) and instead just provides a box for this.
 
@@ -331,6 +331,9 @@ To explore Readme.io:
    <img src="images/projectsettingsreadmeio.png" alt="Project Settings" />
 
 4. Now check out the API doc configuration section. In the left sidebar, click **Reference Docs**, and then click **API**.
+
+{: .tip}
+For a demo of the sample weather API (that we've been using in this course) published on Readme.io, see [apitest.readme.io/docs](https://apitest.readme.io/docs). 
 
 Overall, Readme.io provides a robust GUI for creating API documentation in a way that is more extensive and well-designed than virtually any other platform available. The output includes an interactive, try-it-out experience with endpoints:
 
