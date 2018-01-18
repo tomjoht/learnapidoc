@@ -232,42 +232,47 @@ The founders of CloudCannon are experts with Jekyll and have designed the platfo
 
 ### Read the Docs {#readthedocs}
 
-Read the Docs is an online hosting and deployment platform that can read Sphinx projects (from a public repository such as GitHub or Bitbucket) and automatically build the web output. In other words, it is a "continuous documentation platform for Sphinx" (see [An introduction to Sphinx and Read the Docs for Technical Writers](http://ericholscher.com/blog/2016/jul/1/sphinx-and-rtd-for-writers/)).
+Read the Docs is an online hosting and deployment platform that can read Sphinx projects (from a public repository such as GitHub or Bitbucket) and automatically build the web output. In other words, it is a "continuous documentation platform for Sphinx" (see [An introduction to Sphinx and Read the Docs for Technical Writers](http://ericholscher.com/blog/2016/jul/1/sphinx-and-rtd-for-writers/)). Whereas GitHub Pages is based on Jekyll, Read the Docs is based on Sphinx.
 
-Read the Docs has both an open-source, free version &mdash; [readthedocs.org](https://readthedocs.org/) &mdash; and a commercial version &mdash; [readthedocs.com](https://readthedocs.com/). Read the Docs uses Sphinx and reStructuredText (or Markdown, if you prefer that instead) as the content format, and also contains web hooks to auto-build your output when you commit to a repo. The [Read the Docs documentation](https://docs.readthedocs.io/en/latest/getting_started.html) shows a sample output.
-
-<a href="https://docs.readthedocs.io/en/latest/getting_started.html" class="noExtIcon"><img src="images/readthedocsplatform.png" /></a>
-
-Read the Docs describes itself as follows:
+The introduction on the [Read the Docs homepage](https://readthedocs.org/) describes the platform as follows:
 
 > Read the Docs hosts documentation, making it fully searchable and easy to find. You can import your docs using any major version control system, including Mercurial, Git, Subversion, and Bazaar. We support webhooks so your docs get built when you commit code. There's also support for versioning so you can build docs from tags and branches of your code in your repository.
 
-Some key features include a robust sidebar with expand/collapse functionality, search, versioning, output to PDF and ePub, and more. Read the Docs is similar to GitHub Pages in that it offers continuous deployment when you commit to the repo. Whereas GitHub Pages is based on Jekyll and Markdown, Read the Docs is based on Sphinx and prefers [reStructuredText](pubapis_markdown.html#rst_and_asciidoc), which provides more documentation-specific features.
+Read the Docs has both an open-source, free version ([readthedocs.org](https://readthedocs.org/)) and a commercial version ([readthedocs.com](https://readthedocs.com/)). This allows you to level-up your project when your needs mature but also doesn't lock you into a paid solution when you're not ready for it.
 
-To learn more about Sphinx, read through the [Read the Docs guide](https://docs.readthedocs.io/en/latest/) or see some of Eric's posts. Eric explains that Read the docs includes most of the features technical writers would expect:
+Read the Docs provides themes specific for documentation websites, and also lets you author in reStructuredText (or Markdown, if you prefer that instead). reStructuredText provides more documentation-specific features and semantics &mdash; see my discussion [here](pubapis_markdown.html#rst_and_asciidoc) for more details, or see [Why You Shouldn't Use "Markdown" for Documentation](http://ericholscher.com/blog/2016/mar/15/dont-use-markdown-for-technical-docs/) for a more impassioned argument for rST.
 
-> Single Source Publishing
+The [Read the Docs documentation](https://docs.readthedocs.io/en/latest/getting_started.html) shows a sample output.
+
+<a href="https://docs.readthedocs.io/en/latest/getting_started.html" class="noExtIcon"><img src="images/readthedocsplatform.png" /></a>
+
+Some key features include a robust sidebar with expand/collapse functionality, search, versioning, output to PDF and ePub, and more.
+
+To learn more about the platform, read through the [Read the Docs guide](https://docs.readthedocs.io/en/latest/). Read the docs includes most of the features technical writers would expect, especially related to single-source publishing. Some of these features include:
+
 > * Output HTML, PDF, ePub, and more
 > * Content reuse through includes
 > * Conditional includes based on content type and tags
 > Multiple mature HTML themes that provide great user experience on mobile and desktop
 > Referencing across pages, documents, and projects
 > Index and Glossary support
-> Internationalization support ([An introduction to Sphinx and Read the Docs for Technical Writers](http://ericholscher.com/blog/2016/jul/1/sphinx-and-rtd-for-writers/))
+> Internationalization support. (&mdash; [An introduction to Sphinx and Read the Docs for Technical Writers](http://ericholscher.com/blog/2016/jul/1/sphinx-and-rtd-for-writers/))
 
-The Read the Docs platform was co-founded by [Eric Holscher](http://ericholscher.com/), the same co-founder of [Write the Docs](http://www.writethedocs.org/). Write the Docs was originally intended as a conference for the Read the Docs community but evolved into a more general conference focused on technical communication for software projects. If you go to a Write the Docs conference, you'll find that sessions focus more on best practices for documentation rather than discussions about tools. (You can read my post, [Impressions from the Write the Docs Conference](http://idratherbewriting.com/2017/05/23/write-the-docs-and-the-battle-against-vendor-evil/)) or listen to this [Write the Docs podcast with the co-founders](http://idratherbewriting.com/2017/12/14/write-the-docs-founding-ideas-and-principles-podcast/) for more details.)
+The Read the Docs platform was co-founded by [Eric Holscher](http://ericholscher.com/), the same co-founder of [Write the Docs](http://www.writethedocs.org/). Write the Docs was originally intended as a conference for the Read the Docs community but evolved into a more general conference focused on technical communication for software projects. If you go to a Write the Docs conference, you'll find that sessions focus more on best practices for documentation rather than discussions about tools. (You can read my post, [Impressions from the Write the Docs Conference](http://idratherbewriting.com/2017/05/23/write-the-docs-and-the-battle-against-vendor-evil/) or listen to this [Write the Docs podcast with the co-founders](http://idratherbewriting.com/2017/12/14/write-the-docs-founding-ideas-and-principles-podcast/) for more details.)
 
-Read the Docs has an impressive number of users. The platform has thousands of projects (in 2016, 53,673) and receives millions of page views (252 million page views and 56 million unique visitors) across these projects. You can [view their stats here](http://blog.readthedocs.com/read-the-docs-2016-stats/). Read the Docs is one of the most visited sites on the web and continues to grow at an impressive rate.
-
-What's nice about Read the Docs is that it offers both a free model and a paid model, which allows you to level-up your project when your needs mature, but also doesn't lock you into a paid solution when you're not ready for it.
+Read the Docs has an impressive number of users. The platform has thousands of projects and receives millions of page views a month across these projects. In 2016, Read the Docs had more than 50,000 projects and received 252 million page views and 56 million unique visitors). You can [view their stats here](http://blog.readthedocs.com/read-the-docs-2016-stats/). Read the Docs is one of the most visited sites on the web and continues to grow at an impressive rate.
 
 ### Netlify {#netlify}
 
 [Netlify](https://www.netlify.com/) is a popular hosting and deployment service for static site projects. Unlike with other hosting platforms, Netlify works with almost any static site generator, not just with Jekyll or Sphinx.
 
-Netlify works similar to GitHub Pages &mdash; when you push your content to the service, Netlify automatically builds and deploys your output (continuous delivery). However, Netlify offers this server hosting and deployment platform on a larger, more commercial scale than GitHub's free platform. With Netlify, you get a distributed content delivery network (CDN), infinite scalability, SSL, continuous delivery, a programmable API, CLI, and more.
+Netlify offers continuous delivery for your project. You can store your content on GitHub, GitLab, or Bitbucket, then link it to Netlify, and Netlify will build whenever you push changes.
+
+Netlify offers a free plan with features similar to GitHub Pages, but also lets you scale up to Pro, Business, or Enterprise plans for more robust needs. With Netlify, you can get deploy previews, rollbacks, form handling, distributed content delivery network (CDN), infinite scalability, SSL, a programmable API, CLI, and more.
 
 The most impressive example of a Netlify-hosted site is [Smashing Magazine](https://www.smashingmagazine.com/). Previously hosted on WordPress, Smashing Magazine made the switch to Netlify, with Hugo as the static site generator engine. See [Smashing Magazine just got 10x faster](https://www.netlify.com/blog/2017/03/16/smashing-magazine-just-got-10x-faster/) for details.
+
+Other notable doc sites using Netlify include [Docker](https://docs.docker.com/), [Kubernetes](https://kubernetes.io/docs/home/), [React](https://reactjs.org/docs/hello-world.html), [Yarn](https://yarnpkg.com/lang/en/docs/), [Lodash](https://lodash.com/docs/), [Gatsby](https://www.gatsbyjs.org/docs/), and [Hugo](https://gohugo.io/documentation/).
 
 Complementing Netlify is [Netlify CMS](#netlifycms), a flat-file CMS for your content.
 
