@@ -132,14 +132,13 @@ Sphinx can be used with the [Read the Docs](#readthedocs) platform and has a pas
 
 As of January 2018, [Staticgen.com](https://www.staticgen.com/) shows the number of stars, forks, and issues as follows:
 
+<figure>
 <div style="padding: 10px;">
 <a href="https://www.staticgen.com/jekyll" class="noExtIcon"><img src="images/staticgenjekyll.png" style="float: left; margin: 10px;"/></a>
 <a href="https://www.staticgen.com/hugo" class="noExtIcon"><img src="images/staticgenhugo.png" style="float: left; margin: 10px;"/></a>
 <a href="https://www.staticgen.com/sphinx" class="noExtIcon"><img src="images/staticgensphinx.png" style="float: left; margin: 10px;"/></a>
 </div>
-<div style="clear: both;"></div>
-
-The star icon represents the number of users who have "starred" the project (basically followed its activity). The branch icon represents the number of times the project has been branched (copied into another GitHub account). The bug icon represents the number of open issues logged against the project. The green numbers indicate trends with these numbers.
+<div style="clear: both;"></div><figcaption>The star icon represents the number of users who have "starred" the project (basically followed its activity). The branch icon represents the number of times the project has been branched (copied into another GitHub account). The bug icon represents the number of open issues logged against the project. The green numbers indicate trends with these numbers.</figcaption></figure>
 
 Jekyll and Hugo are the most common static site generators. Although I positioned the three graphics together here, if you look at [Staticgen.com](https://www.staticgen.com/), you'll see that between Hugo and Sphinx, there are 22 other static site generators (Hexo, Gatsby, GitBook, Nuxt, Pelican, Metalsmith, Brunch, Middleman, MkDocs, Harp, Expose, Assemble, Wintersmith, Cactus, React Static, Docpad, hubPress, Phenomic, Lektor, Hakyll, Nanoc, Octopress, *and then Sphinx*). But I called out Sphinx here because of its popularity among documentation groups and for its integration with [Read the Docs](#readthedocs).
 
