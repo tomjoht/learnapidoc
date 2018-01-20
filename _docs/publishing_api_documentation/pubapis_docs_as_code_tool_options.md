@@ -287,7 +287,7 @@ Finally, there is a class of developer doc tools that provide online GUIs for au
 
 Just as we have [staticgen.com](https://www.staticgen.com/) that lists common static site generators, there's a similar index of [headless content management systems](https://headlesscms.org/), this one arranged in alphabetical order (rather than ranked by popularity).
 
-<a href="https://headlesscms.org/"><img src="headlesscms.png"/></a>
+<a href="https://headlesscms.org/"><img src="images/headlesscms.png"/></a>
 
 Headless CMSs often combine both the authoring and the hosting/deployment in the same tool. Updates you make are built automatically on the platform. But unlike WordPress, the solution does not involve storing your doc content in a database and dynamically retrieving that content from the database when readers visit your page. Many times you can store your content on GitHub, and the headless CMS will read/pull it in a seamless way. (The platform probably will contain a database of some kind for your profile and other CMS features, but your content is not stored and retrieved there.)
 
@@ -333,7 +333,7 @@ To explore Readme.io:
 4. Now check out the API doc configuration section. In the left sidebar, click **Reference Docs**, and then click **API**.
 
 {: .tip}
-For a demo of the sample weather API (that we've been using in this course) published on Readme.io, see [apitest.readme.io/docs](https://apitest.readme.io/docs). 
+For a demo of the sample weather API (that we've been using in this course) published on Readme.io, see [apitest.readme.io/docs](https://apitest.readme.io/docs).
 
 Overall, Readme.io provides a robust GUI for creating API documentation in a way that is more extensive and well-designed than virtually any other platform available. The output includes an interactive, try-it-out experience with endpoints:
 
