@@ -355,3 +355,131 @@ Here are a few sample API doc sites built with Readme.io:
 
 {: .tip}
 Which tool should you use? I provide some more concrete recommendations in [Which tool to choose for API docs -- my recommendations](pubapis_which_tool_to_choose.html).
+
+
+{% comment %}
+
+briandominick [1:12 PM]
+Hey Tom! Here's my review/s of those two new tooling articles. I really enjoyed them. Big contribution, and believe me I appreciate how hard it is to convey some of this stuff.
+[1:13 PM]
+On the "Which Tool..." article:
+
+The requirements checklist is awesome!
+
+My personal bias would recommend adding AsciiDoc to the paragraph starting "Markup is also a consideration." Among the three you're featuring, Jekyll has support for AsciiDoc via the jekyll-asciidoc plugin. This does not yet fix any of the limitations of Jekyll you cited, including xrefs, PDFs -- though it does enable semantic markup, of course.
+
+I'm a little curious why you don't recommend GitHub hosting for all SSGs. In the other article, you refer to GitHub Pages as the automated Jekyll build/serve service that GitHub Pages performs, but GitHub Pages can also host and serve any static web files very easily by merging them to master branch or the `docs/` subdir, however that's configured (as I believe I've seen you instruct elsewhere?). Assuming all SSGs have the ability to generate local static builds into a target directory, GitHub Pages can be used as a free hosting platform for those built files. This is part of the portability promise of the SSG concept. I need to write up how I'm doing it, but it's nothing revolutionary. I even have HTTPS enabled using Cloudflare as instructed in this guide: https://hackernoon.com/how-to-setup-your-jekyll-website-with-free-web-hosting-ssl-and-a-custom-domain-4056ff862ca1
+Hacker Noon
+How to setup your Jekyll website with free web hosting, SSL, and a custom domain
+Free Web hosting for your finished Jekyll project
+Reading time
+4 min read
+Nov 11th, 2017
+(99 kB)
+https://cdn-images-1.medium.com/max/1200/1*9sL-ooE5f8Z4ANBRen_sdA.png
+[1:17 PM]
+On the "Publishing Tool Options..." article:
+
+Just a nitpick, but I think SSGs probably are not strictly command-line based, if it's still early enough to help you settle the definition once and for all ;-); certainly there's no reason a GUI-style app could not be used to mange build/serve procedures, as well as configuration and so forth, even if all it's doing it is executing commands and editing flat files in the background. Not a big deal, it just doesn't seem important which UI is used to execute basic commands.
+
+More importantly on this same issue, I think all SSGs _can_ be used programmatically, such as coded into a build configuration using a tool like Rake, Gradle, etc, or custom scripting. Really the only thing they have in common is compiling websites from simpler source files, right?
+
+I did a double-take on this: "The entire website is fully built when the user arrives" -- it sounds like you could saying either exact opposite thing: that the entire site is built at runtime ("when" as in "at the time"), or that the site is pre-built. It's likely that readers with no background in web servers won't even appreciate the difference, anyway, so I'd be very specific here, like "All the pages on a static site were built prior to the browser's request, enabling an instantaneous response; nothing changes dynamically based on the user’s profile (unless done with client-side JS)." Maybe that's not ideal -- this is always tricky to convey briefly.
+
+Unless I'm missing something, you don't really touch on the "portability" or "platform independence" aspect of SSGs. One of the main appeals for me is not getting wedded to, or even needing, an application server. I mean, PHP is just a pain, self-administered or otherwise, and it makes a lot of shops uncomfortable with running even mature CMSes, let alone some of the hackier stuff out there. But the site you build with an SSG can be hosted with minimal configuration and dependencies, which means very high security, as well.
+
+In your the caption for your staticgen.com comparison screenshot, you wrote "The branch icon represents the number of times the project has been branched". Are you deliberately not using "forked"? That icon represents the number of repo forks that exist registered on their platform (GitHub, etc). Branching is internal to a repo and is not necessarily a measurement of anything useful to a shopper.
+
+Very psyched to learn about CloudCannon. Last time I needed to add authentication to an internal docs site we wound up using Heroku with some janky plugins.
+
+Your domain expertise continues to impress me. The more I learn about tooling, the more I realize how much more there is to know. I hope some of this helps, and thanks a ton for laying this all out! You've inspired me to write up how I'm using GitHub Pages, which I've been meaning to do.
+[1:18 PM]
+Sorry, tons of text.
+
+tomjohnson [1:19 PM]
+Thanks Brian. I’ll add the note about asciidoc with Jekyll. Re the static hosting with Jekyll, that’s a good point too that I’ll add. One reason I didn’t is because I think the hosting and deployment platform should build your project from the server. I do use GitHub repos for some projects that don’t use jekyll (e.g., reveal JS slide presentation projects), and I have GitHub display the web content. That is a useful tip to know.
+
+briandominick [1:21 PM]
+Yeah I totally get that I'm suggesting explaining a different approach to CI, that would require local build configuration rather than relying on GH. At least I think that's the key distinction. And yeah I'm still learning core DevOps concepts to figure out what is and is not true "CI"
+[1:23 PM]
+So I'm not necessarily suggesting it, is what I actually mean :wink:
+
+tomjohnson [1:25 PM]
+more good points! thanks.
+
+- re interacting with SSGs through a GUI instead of the command line, interesting. just curious, would an example be Netlify CMS or Forestry.io there (the headless CMS that uses Git as a wrapper)?
+
+- re “The entire website is fully built when the user arrives”, thanks for the suggested rewording there. Will incorporate that.
+
+- re platform independence, yes, I totally need to add this point to my intro to SSGs. That is a huge reason to use them (almost every company I’ve worked at bans PHP, and most traditional web CMSs use PHP).
+
+- re branched versus forked, good note. I just described that incorrectly.
+
+- The guy behind CloudCannon (Mike Neumegen) is quite an impressive Jekyll guru who has produced a ton of useful video tutorials with Jekyll. I wish we could use CloudCannon where I’m at.
+[1:26 PM]
+just curious, what is your authoring and publishing setup?
+
+briandominick [1:29 PM]
+Yeah I think the headless CMS concept, which I'm also just recently starting to tinker with, is pretty much a GUI for an SSG.
+[1:32 PM]
+My go-to is managing complex content in YAML files, prose/topical content in AsciiDoc, and then using a tool I wrote called LiquiDoc to preprocess YAML and AsciiDoc as needed for various output formats. So I've got Atom as my editor for AsciiDoc, which I truly love over Markdown and RST just far and away, as did nearly all the engineers I worked with at my last gig. And I've been building HTML with Jekyll but am now starting to play with Grain, which has AsciiDoc and RST processing built in and is configured in Groovy and will integrate with more complex builds.
+[1:34 PM]
+And the crux of my toolchain is the Asciidoctor suite. Those folks are building an amazing tool and a really great community around it. They write great code and have an amazing process. I'm betting on AsciiDoc because of them, as well as my experience with Java/Go and even front-end programmers digging it.
+
+tomjohnson [1:35 PM]
+I should have probably given some attention to AsciiDoc in that list of tools. Besides the Asciidoctor suite, how many other SSGs or other tools can process AsciiDoc?
+
+briandominick [1:36 PM]
+Very few. It's really weak in the SSG field. For all the same reasons you noted about docs-specializing tools.
+[1:36 PM]
+But I believe Jekyll, MkDocs, and Grain might be it
+
+tomjohnson [1:37 PM]
+I need to read more of the content on your site. I marked a few pages to check out later, such as your Codewriting book and the Liquidoc tool, and I added your blog to my feedly rss list. Thanks!
+
+briandominick [1:37 PM]
+I'm not actually arguing that AsciiDoc has a strong showing in this exact area you're covering. I don't think you neglected it except where I noted
+
+tomjohnson [1:37 PM]
+Jared Morgan really likes Asciidoc.
+[1:37 PM]
+I’ve never used it.
+
+briandominick [1:38 PM]
+Very cool, thanks for checking it out. I'd be thrilled for any feedback. I have a lot of quotes and cites from you saved up for my next batch if commits to the book project.
+[1:38 PM]
+There's definitely some parts I'll point out to you that I'd love feedback on specifically. But this work you just did is a big contribution. I dance around it so far in what I've written in the book.
+
+tomjohnson [1:39 PM]
+great. is the book available on epub or kindle or anything? or just pdf?
+
+briandominick [1:39 PM]
+It's still a draft, so you can grab that PDF or generate an HTML version
+[1:40 PM]
+https://github.com/briandominick/codewriting/releases/download/v0.3.0-alpha/codewriting-book-draft-3.pdf
+[1:40 PM]
+Somebody did a full review so I have a HUGE commit coming soon
+[1:40 PM]
+But you'll get the gist from that version for sure
+
+tomjohnson [1:41 PM]
+thanks.
+
+briandominick [1:41 PM]
+I'm keeping it open source and soliciting contributions, so if you wanna try out AsciiDoc, consider submitting a sidebar to my book! :wink:
+
+tomjohnson [1:41 PM]
+btw, it may take me a month or so to read it due to a project-full/busy plate, but i plan to check it out more.
+
+briandominick [1:41 PM]
+Absolutely understand
+[1:42 PM]
+It's just a draft and I'll send you the next one directly when it's released
+
+tomjohnson [1:42 PM]
+sounds good.
+
+briandominick [1:42 PM]
+Cool, I'll ping you down the road a bit. Have a great weekend!
+
+{% endcomment %}

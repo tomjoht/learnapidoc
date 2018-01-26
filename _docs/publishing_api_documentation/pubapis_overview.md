@@ -15,6 +15,14 @@ In earlier parts of this course, I used a simple [Weather API from Mashape](http
 {:toc}
 {% endif %}
 
+## Video about publishing tools for API docs
+
+If you'd like to view a presentation I gave to the [Write the Docs South Bay chapter](https://www.meetup.com/Write-the-Docs-SF/events/246427319/) on this topic, you can view it here:
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/__vSXJn-JQo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+(For more details about this post, see my [writeup here](http://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/).)
+
 ## Why focus on publishing API docs?
 
 The first question about a focus on publishing API documentation might be, *why?* What makes publishing API documentation so different from publishing other kinds of documentation such that it would merit its own section? How and why does the approach with publishing API docs need to differ from the approach for publishing regular documentation?
