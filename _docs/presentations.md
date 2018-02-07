@@ -1,23 +1,19 @@
 ---
-title: Presentations
+title: Past API doc presentations
 permalink: /presentations.html
 course: "Documenting REST APIs"
 sidebar: docapis
 progress: false
 ---
 
-<h2>Upcoming presentations</h2>
-
-<ol>
-  <li>"Publishing tools for API documentation." January 18, 2018. South Bay WTD chapter. {% comment %}	beelia@gmail.com{% endcomment %}</li>
-  <li>API documentation. Feb 21, 2018. <a href="https://stc-sf.org/">STC SF chapter</a>. {% comment %}David Hulbert{% endcomment %}</li>
-  <li>API documentation workshop (full-day). Boulder, Colorado. March 10, 2018. {% comment %}Dave Wilks, slack {% endcomment %}</li>
-</ol>
+For a list of upcoming presentations and past presentations all topics, see [Presentations](http://idratherbewriting.com/presentations).
 
 <h2>Previous API doc presentations and workshops</h2>
 
 The following are previous API presentations or workshops I've given. Some have recordings. For a full list of past presentations (including both API and other topics), see the [presentations page on my blog](http://idratherbewriting.com/presentations/).
 <ul>
+    <li>January 18, 2018. <a href="http://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/">Publishing tools for API documentation.</a>  <a href="https://www.meetup.com/Write-the-Docs-SF/events/246427319/">WTD SF chapter, South Bay</a>. </li>
+    <li>November 20, 2018. <a href="http://idratherbewriting.com/2017/11/19/upcoming-api-doc-presentation-stc-sv-chapter/">Intro to API Documentation</a>. <a href="http://www.stc-siliconvalley.org/2017/11/06/november-20-2017-introduction-to-api-documentation/">STC Silicon Valley chapter</a>.</li>
    <li>January 9, 2017. <a href="http://idratherbewriting.com/2017/01/17/swagger-presentation-documenting-rest-apis/">Harnessing the Chi of Swagger in Your API Docs [TC Dojo]</a> <a href="http://www.single-sourcing.com/products/tcdojo/">TC Dojo</a>. </li>
    <li>March 19, 2016. <a href="http://idratherbewriting.com/2016/03/27/rest-api-workshop-recording-sacramento-stc/">Documenting REST APIs workshop. STC Sacramento chapter.</a> Rocklin Public Library, Sacramento, CA.</li>
    <li>February 18, 2016. <a href="http://idratherbewriting.com/files/apiwebinar/">Best practices for REST API documentation</a>. STC webinar. Online.</li>

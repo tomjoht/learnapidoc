@@ -75,7 +75,7 @@ folders:
   - title: "Step 1: Resource description (API ref tutorial)"
     jurl: /docapis_resource_descriptions.html
 
-  - title: "Step 2: Endpoints (API ref tutorial)"
+  - title: "Step 2: Endpoints and methods (API ref tutorial)"
     jurl: /docapis_resource_endpoints.html
 
   - title: "Step 3: Parameters (API ref tutorial)"
