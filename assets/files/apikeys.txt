@@ -18,16 +18,3 @@ key: u4r7nd3r7bj9ksxfx3cuy6hw
 ## Aeris API
 ID: ByruDorHEne2JB64BhP1k
 secret: Jp4xullRcy6DXTPSTKBGXAvGGTaT04iiUQXPj0ob
-
-{% comment %}
-FTP
-
-host: learnapidoc.com
-protocol: ftp
-user: learnapidoc@idratherbewriting.com
-pass: iloveapidoc2015
-
-screenshot: http://learnapidoc.com/ftpsettings.png
-
-This account will connect you into this directory: http://learnapidoc.com/swagger
-{% endcomment %}
