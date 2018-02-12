@@ -87,10 +87,13 @@ I've seen some deeper integrations of Swagger UI into existing websites, and som
 
 Although this section has focused heavily on tools, I want to emphasize that content always trumps tooling. The content should be your primary focus, not the tools you use to publish the content. After you get the tooling infrastructure in place, it should mostly take a back seat to the daily tasks of content development.
 
+{: .tip}
+For a great article on the importance of content over tools, see [Good API Documentation Is Not About Choosing the Right Tool](https://blog.algolia.com/api-documentation-choosing-right-tool/) from the Algolia blog. The author explains that "a quality README.md stored on GitHub can be far more efficient than over-engineered documentation that is well displayed but has issues with content."
+
 In some ways, tools are the basketball player's shoes. They matter, for sure. But Michael Jordan wasn't a great basketball player because he wore Nikes, nor was Kobe Bryant great due to his Adidas shoes. You can probably write incredible documentation despite your tooling and platform. Don't let tooling derail your focus on what really matters in your role: the content.
 
 I've changed my doc platforms numerous times, and rarely does anyone seem to care or notice. As long as it looks decent, most project managers and users will focus on the content much more than the design or platform. In some ways, the design should be invisible and unobtrusive, not foregrounding the focus on the content. The user shouldn't be distracted by the tooling.
 
 Also, users and reviewers won't even notice all the effort behind the tools. Even when you've managed to single source content, loop through a custom collection to generate out a special display, incorporate language switchers to jump from platform to platform, etc., the feedback you'll get is "There's a typo here."
 
-On the other hand, the tools you choose do make a huge difference in your productivity, capabilities, and general happiness as a technical writer. Choosing the wrong tool can set back your ability to deliver documentation that your users need. 
+On the other hand, the tools you choose do make a huge difference in your productivity, capabilities, and general happiness as a technical writer. Choosing the wrong tool can set back your ability to deliver documentation that your users need.
