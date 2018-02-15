@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 850 550" enable-background="new 0 0 850 550" xml:space="preserve">
+<rect fill="#E8F4F9" width="850" height="550"/>
+<path fill="#686868" d="M588.7,242.6c-14.2,0-27.1,8.3-32.8,21.3l-63.7-14.7c3.9-23.9-2.2-48.2-16.8-67.5l57.9-50.1
+	c23,20.4,57.9,19.5,79.6-2.2c21.8-21.7,22.9-56.6,2.5-79.6c-20.4-23-55.2-26.2-79.4-7.2c-24.2,19-29.4,53.5-11.9,78.8l-57.6,49.9
+	c-15.3-15.3-35.6-24.5-57.2-26.1c-21.6-1.6-43,4.7-60.4,17.6L288.6,93c11.3-14.7,9.6-35.6-3.9-48.3c-13.6-12.7-34.5-13-48.4-0.7
+	c-13.9,12.3-16.3,33.1-5.4,48.1c10.9,15,31.4,19.4,47.4,10l60.2,69.6c-18,18.1-27.6,43-26.3,68.5c1.3,25.5,13.3,49.3,33.1,65.5
+	l-42,60.1h0c-27.9-15.2-62.8-6.1-79.6,20.9c-16.8,27-9.7,62.3,16.3,80.7c25.9,18.3,61.7,13.2,81.5-11.7c19.8-24.9,16.7-60.8-7-82
+	l42.1-60.2c13.9,8.3,29.8,12.6,46,12.6c16.2,0,32.1-4.4,46-12.6l60.6,87.3c-8.7,10.3-8.5,25.5,0.6,35.5c9.1,10,24.1,11.7,35.2,4
+	s14.7-22.4,8.5-34.4c-6.2-12-20.4-17.5-33-12.9l-60.5-87.1c13.8-11.2,24-26.2,29.3-43.2l63.6,14.7v1.3c0,14.5,8.7,27.7,22.2,33.2
+	c13.4,5.6,28.9,2.5,39.2-7.8c10.3-10.3,13.3-25.7,7.8-39.2C616.3,251.4,603.2,242.6,588.7,242.6L588.7,242.6z"/>
+<circle fill="#686868" cx="189.5" cy="215" r="29"/>
+<line fill="none" stroke="#686868" stroke-width="10" stroke-miterlimit="10" x1="324.4" y1="233.9" x2="208.2" y2="216.9"/>
+<text transform="matrix(1 0 0 1 642.733 267)"><tspan x="0" y="0" font-family="'ArialMT'" font-size="31">Unit </tspan><tspan x="0" y="37.2" font-family="'ArialMT'" font-size="31">testing</tspan></text>
+<text transform="matrix(1 0 0 1 136.1182 38)"><tspan x="0" y="0" font-family="'ArialMT'" font-size="31">Client </tspan><tspan x="0" y="37.2" font-family="'ArialMT'" font-size="31">SDKs</tspan></text>
+<text transform="matrix(1 0 0 1 163.0659 466)"><tspan x="0" y="0" font-family="'ArialMT'" font-size="31">UX </tspan><tspan x="0" y="37.2" font-family="'ArialMT'" font-size="31">prototyping</tspan></text>
+<text transform="matrix(1 0 0 1 461.5858 474)"><tspan x="0" y="0" font-family="'ArialMT'" font-size="31">Development</tspan><tspan x="0" y="37.2" font-family="'ArialMT'" font-size="31">contract</tspan></text>
+<text transform="matrix(1 0 0 1 634.59 48)"><tspan x="0" y="0" font-family="'ArialMT'" font-size="31">Interactive</tspan><tspan x="0" y="37.2" font-family="'ArialMT'" font-size="31">documentation</tspan></text>
+<text transform="matrix(1 0 0 1 57.8575 189)"><tspan x="0" y="0" font-family="'ArialMT'" font-size="31">Sales </tspan><tspan x="0" y="37.2" font-family="'ArialMT'" font-size="31">demo</tspan></text>
+<circle fill="#FFAA00" stroke="#6A6B6A" stroke-miterlimit="10" cx="403.1" cy="236.1" r="91.4"/>
+<text transform="matrix(1 0 0 1 338.2706 204.6727)"><tspan x="0" y="0" font-family="'Arial-BoldMT'" font-size="27.164">OpenAPI </tspan><tspan x="0" y="32.6" font-family="'ArialMT'" font-size="27.164">specification </tspan><tspan x="0" y="65.2" font-family="'ArialMT'" font-size="27.164">document</tspan></text>
+</svg>

@@ -111,18 +111,19 @@ The most common reason people take this course is to transition to an API docume
 * [Activity: Create your own Swagger UI display](pubapis_swagger_ui_activity.html)
 * [Activity: Generate a Javadoc from a sample project](nativelibraryapis_create_javadoc.html)
 
-{% if site.format == "web" %}
-## Short version of the course in video
+## Video of this section
 
-If you'd prefer a short version of the course in video form, here's a 1-hour video that covers the first three sections. I gave this presentation to the STC Silicon Valley chapter:
+For a video recording of this section of the course, see the following:
 
-<p><iframe width="640" height="360" src="https://www.youtube.com/embed/NawxzLB4aro" frameborder="0" allowfullscreen></iframe></p>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/NawxzLB4aro" frameborder="0" allowfullscreen></iframe>
 
+This video covers these sections:
 
-For a longer video, here's a recording from a 4-hour workshop I gave to the STC Sacramento chapter:
+* [Introduction to REST APIs](http://idratherbewriting.com/learnapidoc/docapis_introtoapis.html)
+* [Using a REST API as a developer](http://idratherbewriting.com/learnapidoc/likeadeveloper.html)
+* [Documenting API reference topics](http://idratherbewriting.com/learnapidoc/docendpoints.html)
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/GerbihyUpdo" frameborder="0" allowfullscreen></iframe>
-{% endif %}
+To see more videos, check out [Recorded video presentations](docapis_course_videos.html). 
 
 ## Stay updated
 

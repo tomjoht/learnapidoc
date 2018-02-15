@@ -10,6 +10,9 @@ folders:
   - title: Course Overview
     jurl: /index.html
 
+  - title: Recorded video presentations
+    jurl: /docapis_course_videos.html
+
   - title: Course Background
     jurl: /docapis_foreword.html
 
