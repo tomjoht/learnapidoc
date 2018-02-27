@@ -1,4 +1,8 @@
 ---
+layout: none
+---
+
+---
 title: /weatherdata
 position: 1.6
 type: get
