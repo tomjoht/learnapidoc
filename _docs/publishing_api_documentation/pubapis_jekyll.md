@@ -142,7 +142,7 @@ Let's say you want to use a theme that provides ready-made templates for REST AP
 
     The key-value pairs in the YAML frontmatter are entirely arbitrary and are designed here to suit the API doc theme the author created. If we were to look at the code in the theme, we'd see Liquid `for` loops that iterate over the YAML values and populate the content into a template. Jekyll will access these values and push this content into the template (which you can see by going to \_layouts/default.md). The author has separated the content from the format so that we don't have to manually wrap all the values in style tags.
 
-2.  Replace the contents of weatherdata.md with the following content: [aviator-weatherdata.md](/learnapidoc/assets/files/aviator-weatherdata.md).
+2.  Replace the contents of weatherdata.md with the following content: [aviator-weatherdata.txt](/learnapidoc/assets/files/aviator-weatherdata.txt).
 
     {: .note}
     Normally, you would build the Jekyll project locally to make sure it looks right. But since that's beyond the scope of this tutorial, we'll just commit it to GitHub and have CloudCannon build it.

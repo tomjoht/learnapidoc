@@ -46,7 +46,7 @@ Browse a few of these documentation sites to get a sense of the variety, but als
 26. [Yahoo Social API docs](https://developer.yahoo.com/social/rest_api_guide/index.html)
 27. [Google Analytics Management API docs](https://developers.google.com/analytics/devguides/config/)
 28. [Yelp API docs](https://www.yelp.com/developers/documentation)
-29. [Panaromio API docs](http://www.panoramio.com/api/widget/api.html)
+29. [Lyft API docs](https://developer.lyft.com/docs/overview)
 30. [Facebook API docs](https://developers.facebook.com/docs/graph-api)
 31. [Eventful API docs](http://api.eventful.com/docs)
 32. [Concur API docs](https://developer.concur.com/docs-and-resources/documentation)
@@ -121,6 +121,7 @@ Browse a few of these documentation sites to get a sense of the variety, but als
 101. [Uber docs](https://developer.uber.com/docs/)
 102. [Spotify API](https://developer.spotify.com/web-api/)
 103. [Trello API](https://developers.trello.com/)
+104. [Yext API](http://developer.yext.com/docs/)
 
 {% include tip.html content="I last checked these links in January 2018. Given how fast the technology landscape changes, some links may be out of date. However, if you simply type <i>{product} + api docs</i> into Google's search, you will likely find the company's developer doc site. Most commonly, the API docs are at developer.{company}.com." %}
 
