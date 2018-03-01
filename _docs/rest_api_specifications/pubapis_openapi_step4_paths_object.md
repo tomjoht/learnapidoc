@@ -50,7 +50,7 @@ Each path item object contains an [operation object](https://github.com/OAI/Open
 * `description`: A full description of the path. Include as much detail as you want. There's a lot of space in the Swagger UI for these details. CommonMark Markdown is allowed.
 * [`externalDocs`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#externalDocumentationObject) (object): Links to documentation for more information about the path.
 * `operationId`: A unique identifier for the path.
-* [`parameters`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#parameter-object) (object): Parameters accepted by the path. Does not include request body parameters, which are instead detailed in the `requestBody` object. The `parameters` object can also include a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#referenceObject) that simply contains a pointer to the description in the `components` object (this is explained in [step 5](pubapis_openapi_step5_components_object.html)).
+* [`parameters`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#parameterObject) (object): Parameters accepted by the path. Does not include request body parameters, which are instead detailed in the `requestBody` object. The `parameters` object can also include a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#referenceObject) that simply contains a pointer to the description in the `components` object (this is explained in [step 5](pubapis_openapi_step5_components_object.html)).
 * [`requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#requestBodyObject) (object): The request body parameter details for this path. The `requestBody` object can also include a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#referenceObject) that simply contains a pointer to the description in the `components` object (explained in [step 5](pubapis_openapi_step5_components_object.html)).
 * [`responses`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#responsesObject) (object): Responses provided from requests with this path. The `responses` object can also include a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#referenceObject) that simply contains a pointer to the description in the `components` object. Responses use standard [status codes](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#http-status-codes).
 * [`callbacks`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#callbackObject) (object): Callback details to be initiated by the server if desired. Callbacks are operations performed after a function finishes executing. The `callbacks` object can also include a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#referenceObject) that simply contains a pointer to the description in the `components` object.
@@ -161,7 +161,7 @@ Most of the properties for the operation object either require simple strings or
 
 ## Parameters object
 
-The [`parameters` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#parameter-object) contains an array (list designated with dashes) with these properties:
+The [`parameters` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#parameterObject) contains an array (list designated with dashes) with these properties:
 
 **parameters**:
 
@@ -395,25 +395,26 @@ Now we're not repeating the parameter information multiple times. Instead, in `c
 ```yaml
 components:
   parameters:
-  - name: lat
-    in: query
-    description: "Latitude coordinates."
-    required: true
-    style: form
-    explode: false
-    schema:
-      type: string
-    example: "37.3708698"
-
-  - name: lng
-    in: query
-    description: "Longitude coordinates."
-    required: true
-    style: form
-    explode: false
-    schema:
-      type: string
-    example: "-122.037593"
+    latParam:
+      name: lat
+      in: query
+      description: "Latitude coordinates."
+      required: true
+      style: form
+      explode: false
+      schema:
+        type: string
+      example: "37.3708698"
+    lngParam:
+      name: lng
+      in: query
+      description: "Longitude coordinates."
+      required: true
+      style: form
+      explode: false
+      schema:
+        type: string
+      example: "-122.037593"
 ```
 
 
