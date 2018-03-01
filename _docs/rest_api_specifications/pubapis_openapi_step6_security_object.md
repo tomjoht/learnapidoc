@@ -14,7 +14,7 @@ path1: /restapispecifications.html
 <img src="images/openapistep6.png"/>
 {% endif %}
 
-Swagger UI provides a "Try it out" feature that lets users submit actual requests. To actually submit requests that are authorized by your API server, the spec must contain security information that will authorize the request. The [`security` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#securityRequirementObject) specifies the security or authorization protocol used when submitting requests.
+Swagger UI provides a "Try it out" feature that lets users submit actual requests. To actually submit requests that are authorized by your API server, the spec must contain security information that will authorize the request. The [`security` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#securityRequirementObject) specifies the security or authorization protocol used when submitting requests.
 
 {% if site.format == "web" %}
 * TOC
@@ -30,7 +30,7 @@ REST APIs can use a number of different security approaches to authorize request
 * OAuth 2.0
 * Open ID Connect
 
-In this tutorial, I'll explain the API key method, as it's the most common and it's what I'm most familiar with. If your API uses [OAuth 2.0](docapis_more_about_authorization.html#oauth-20) or another method, you'll need to read the [Security Scheme information](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#security-scheme-object) for details on how to configure it. However, all the security methods largely follow the same pattern.
+In this tutorial, I'll explain the API key method, as it's the most common and it's what I'm most familiar with. If your API uses [OAuth 2.0](docapis_more_about_authorization.html#oauth-20) or another method, you'll need to read the [Security Scheme information](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#security-scheme-object) for details on how to configure it. However, all the security methods largely follow the same pattern.
 
 ## API key authorization
 
@@ -61,7 +61,7 @@ Then the `weatherdata` path would use the `Some-Other-Key` security method, whil
 
 ## Referencing the security scheme in components
 
-In the [`components` object](pubapis_openapi_step5_components_object.html), we add a [`securitySchemes` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#securitySchemeObject) that defines details about the security scheme we're using:
+In the [`components` object](pubapis_openapi_step5_components_object.html), we add a [`securitySchemes` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#securitySchemeObject) that defines details about the security scheme we're using:
 
 ```yaml
 components:
@@ -83,7 +83,7 @@ Properties you can use in the `securitySchemes` object include the following:
 * `in`: Specifies where the security key is applied. Options are `query`, `header` or `cookie`. Used only for `apiKey` type security.
 * `scheme`. Used with `http` type authorization.
 * `bearerFormat`. Used with `http` type authorization.
-* [`flows`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#oauthFlowsObject) (object): Used with `oauth2` type authorization.
+* [`flows`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#oauthFlowsObject) (object): Used with `oauth2` type authorization.
 * `openIdConnectUrl`: Used with `openIdConnect` type authorization.
 
 ## Swagger UI appearance

@@ -13,7 +13,7 @@ path1: /restapispecifications.html
 <img src="images/openapistep5.png"/>
 {% endif %}
 
-In the [step 4](pubapis_openapi_step4_paths_object.html), when we described the [`requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#requestBodyObject) and [`responses` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#responsesObject) objects, we used a [`schema`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#schemaObject) object to describe the model for the request or response. The `schema` refers to the data structure ( the fields, values, and hierarchy of the various objects and properties of a JSON or YAML object &mdash; see [What is a schema?](https://spacetelescope.github.io/understanding-json-schema/about.html#what-is-a-schema) for more details). It's common to use a reference pointer (`$ref`) for the `schema` object that points to more details in the `components` object.
+In the [step 4](pubapis_openapi_step4_paths_object.html), when we described the [`requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#requestBodyObject) and [`responses` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#responsesObject) objects, we used a [`schema`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#schemaObject) object to describe the model for the request or response. The `schema` refers to the data structure ( the fields, values, and hierarchy of the various objects and properties of a JSON or YAML object &mdash; see [What is a schema?](https://spacetelescope.github.io/understanding-json-schema/about.html#what-is-a-schema) for more details). It's common to use a reference pointer (`$ref`) for the `schema` object that points to more details in the `components` object.
 
 {% if site.format == "web" %}
 * TOC
@@ -27,23 +27,23 @@ Describing the schema of complex responses can be one of the more challenging as
 * You might want to re-use parts of the schema in other requests or responses. It's common to have the same object, such as `units` or `days`, appear in multiple places in an API. Through the `components` object, OpenAPI allows you to re-use these same definitions in multiple places.
 * You might not want to clutter up your `paths` object with too many request and response details, since the `paths` object is already somewhat complex with several levels of objects.
 
-Instead of listing the schema for your requests and responses in the `paths` object, for more complex schemas (or for schemas that are re-used in multiple operations or paths), you typically use a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#referenceObject), referenced through `$ref`, that refers to a specific definition in the [`components` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#componentsObject).
+Instead of listing the schema for your requests and responses in the `paths` object, for more complex schemas (or for schemas that are re-used in multiple operations or paths), you typically use a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#referenceObject), referenced through `$ref`, that refers to a specific definition in the [`components` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#componentsObject).
 
 Think of the `components` object like an appendix where the re-usable details are provided. If multiple parts of your spec have the same schema, you point each of these references to the same object in your `components` object, and in so doing you single source the content. The `components` object can even be [stored in a separate file](http://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-8-splitting-specification-file/) if you have a large API and want to organize the information that way. (However, with multiple files, you wouldn't be able to use the online Swagger Editor to validate the content.)
 
 ## Objects in components
 
-You can store a lot of different re-usable objects in the `components` object. The [`components` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#componentsObject) can contain these objects:
+You can store a lot of different re-usable objects in the `components` object. The [`components` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#componentsObject) can contain these objects:
 
-* [`schemas`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#schemaObject)
-* [`responses`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#responses-object)
-* [`parameters`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#parameterObject)
-* [`examples`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#examples-object)
-* [`requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#requestBodyObject)
-* [`headers`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#headerObject)
-* [`securitySchemes`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#securitySchemeObject)
-* [`links`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#linkObject)
-* [`callbacks`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#callbackObject)
+* [`schemas`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#schemaObject)
+* [`responses`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#responses-object)
+* [`parameters`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#parameterObject)
+* [`examples`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#examples-object)
+* [`requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#requestBodyObject)
+* [`headers`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#headerObject)
+* [`securitySchemes`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#securitySchemeObject)
+* [`links`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#linkObject)
+* [`callbacks`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#callbackObject)
 
 The properties for each object inside `components` are the same as they are when used in other parts of the OpenAPI spec.
 
@@ -812,7 +812,7 @@ To describe your JSON objects, you might use the following keywords:
 * `format`
 * `default`
 
-A number of [data types](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#data-types) are also available:
+A number of [data types](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#data-types) are also available:
 
 * `integer`
 * `long`
@@ -826,7 +826,7 @@ A number of [data types](https://github.com/OAI/OpenAPI-Specification/blob/maste
 * `dateTime`
 * `password`
 
-I suggest you start by looking in the OpenAPI's [schema object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#schemaObject), and then consult the [JSON Schema](https://tools.ietf.org/html/draft-wright-json-schema-00) if something isn't covered.
+I suggest you start by looking in the OpenAPI's [schema object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#schemaObject), and then consult the [JSON Schema](https://tools.ietf.org/html/draft-wright-json-schema-00) if something isn't covered.
 
 Additionally, look at some example schemas. You can view [3.0 examples here](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v3.0). I usually find a spec that resembles what I'm trying to represent and mimic the same properties and structure.
 
@@ -834,4 +834,4 @@ The `schema` object in 3.0 differs slightly from the schema object in 2.0 &mdash
 
 ## Security definitions
 
-The `components` object also contains a [`securitySchemes` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#securitySchemeObject) that defines the authorization method used with each `path`. Rather than dive into the security configuration details here, I explore security in the [step 6](pubapis_openapi_step6_security_object.html).
+The `components` object also contains a [`securitySchemes` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#securitySchemeObject) that defines the authorization method used with each `path`. Rather than dive into the security configuration details here, I explore security in the [step 6](pubapis_openapi_step6_security_object.html).

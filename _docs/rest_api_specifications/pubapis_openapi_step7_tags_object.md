@@ -23,7 +23,7 @@ The `tags` object provides a way to group the paths (endpoints) in the Swagger U
 
 ## Defining tags at the root level
 
-At the root level, the [`tags` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#tagObject) lists all the tags that are used in the [operation objects](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#operationObject) (which appear within the `paths` object, as explained in [step 4](pubapis_openapi_step4_paths_object.html)).
+At the root level, the [`tags` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#tagObject) lists all the tags that are used in the [operation objects](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#operationObject) (which appear within the `paths` object, as explained in [step 4](pubapis_openapi_step4_paths_object.html)).
 
 Here's an example of the `tags` object for our Mashape Weather API:
 

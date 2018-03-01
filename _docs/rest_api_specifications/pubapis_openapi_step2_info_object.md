@@ -13,7 +13,7 @@ path1: /restapispecifications.html
 <img src="images/openapistep2.png"/>
 {% endif %}
 
-The [info object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#infoObject) contains basic information about your API, including the title, a description, version, link to the license, link to the terms of service, and contact information. Many of the properties are optional.
+The [info object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#infoObject) contains basic information about your API, including the title, a description, version, link to the license, link to the terms of service, and contact information. Many of the properties are optional.
 
 {% if site.format == "web" %}
 * TOC

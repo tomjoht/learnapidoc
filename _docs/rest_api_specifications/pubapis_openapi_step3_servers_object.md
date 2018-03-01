@@ -13,7 +13,7 @@ path1: /restapispecifications.html
 <img src="images/openapistep3.png"/>
 {% endif %}
 
-In the [`servers` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#serverObject), you specify the basepath used in your API requests. The basepath is the part of the URL that appears before the endpoint.
+In the [`servers` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#serverObject), you specify the basepath used in your API requests. The basepath is the part of the URL that appears before the endpoint.
 
 {% if site.format == "web" %}
 * TOC

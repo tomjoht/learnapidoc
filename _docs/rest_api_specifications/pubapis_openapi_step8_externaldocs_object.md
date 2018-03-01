@@ -14,7 +14,7 @@ path1: /restapispecifications.html
 <img src="images/openapistep8.png"/>
 {% endif %}
 
-The [`externalDocs` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#external-documentation-object) lets you link to external documentation. You can also provide links to external docs in the `paths` object.
+The [`externalDocs` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#external-documentation-object) lets you link to external documentation. You can also provide links to external docs in the `paths` object.
 
 {% if site.format == "web" %}
 * TOC
