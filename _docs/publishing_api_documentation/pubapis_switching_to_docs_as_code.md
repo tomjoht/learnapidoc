@@ -232,6 +232,26 @@ I outlined the challenges here to reinforce the fact that implementing docs-as-c
 
 If you're implementing docs-as-code at a small company, you can simplify processes and use a system that meets your needs. For example, you could simply use [GitHub Pages](https://pages.github.com/), or use the [S3_website plugin](https://github.com/laurilehmijoki/s3_website) to publish on AWS S3, or better yet, use a continuous deployment platform like [CloudCannon](https://cloudcannon.com/) or [Netlify](https://www.netlify.com/). (I explore these tools in more depth here: [Publishing tool options for developer docs](pubapis_docs_as_code_tool_options.html).) I might have opted for either of these approaches if allowed and if we didn't have an engineering support team to implement the workflow I described.
 
+## Slides and links to republished content
+
+I have a slide presentation that covers topics listed in this article:
+
+<a class="noCrossRef" href="https://github.com/tomjoht/docs-as-code-tools-and-workflows"><img src="images/docsascodepresotitle.png"/></a>.
+
+These slides are for an [upcoming presentation](http://idratherbewriting.com/2018/01/29/docs-as-code-tools-and-workflows-denver-presentation/) I'm giving on this topic.
+
+Additionally, this content was republished here in the [Developer Portals e-Magazine Winter 2018](https://pronovix.com/e-books/developer-portals-e-magazine-winter-2018), by Pronovix:
+
+<a href="https://pronovix.com/e-books/developer-portals-e-magazine-winter-2018" class="noCrossRef"><img src="images/devportalswinter2018.png" style="max-width: 350px;"/></a>
+
+It was also republished in Anne Gentle's [Docs Like Code: Case Studies](https://www.docslikecode.com/articles/change-case-study/):
+
+<a href="https://www.docslikecode.com/articles/change-case-study/" class="noCrossRef"><img src="images/docslikecodeannegentlecasestudies.png" style="max-width: 350px;"/></a>
+
+{: .tip}
+To Learn more about docs as code, see Anne Gentle's book [Docs Like Code](https://www.amazon.com/Docs-Like-Code-Anne-Gentle/dp/1365816079/ref=sr_1_1?ie=UTF8&qid=1508090523&sr=8-1&keywords=docs+like+code).
+
+
 ## Blog posts about docs-as-code tools
 
 To read some other docs-as-code posts on my blog, see the following:
@@ -239,6 +259,3 @@ To read some other docs-as-code posts on my blog, see the following:
 * [Discoveries and realizations while walking down the Docs-as-Code path](http://idratherbewriting.com/2017/08/23/content-architecture-and-repo-sizes/)
 * [Limits to the idea of treating docs as code](http://idratherbewriting.com/2017/06/02/when-docs-are-not-like-code/)
 * [Will the docs-as-code approach scale? Responding to comments on my Review of Modern Technical Writing](http://idratherbewriting.com/2016/08/01/responding-to-feedback-on-modern-tech-writing-review/)
-
-{: .tip}
-To Learn more about docs as code, see Anne Gentle's book [Docs Like Code](https://www.amazon.com/Docs-Like-Code-Anne-Gentle/dp/1365816079/ref=sr_1_1?ie=UTF8&qid=1508090523&sr=8-1&keywords=docs+like+code).

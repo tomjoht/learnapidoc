@@ -93,11 +93,13 @@ JavaScript is one of the most useful and easy languages to become familiar with,
 
 Here are a few things you'll need to do the exercises in this course:
 
-* **Text editor**. ([Sublime Text](http://www.sublimetext.com/) is a good option, it works on both Mac and Windows, but other text editors will also work.
+* **Text editor**. ([Atom editor](https://atom.io/) or [Sublime Text](http://www.sublimetext.com/) are good options, and they work on both Mac and Windows.
 * **Chrome browser**. [Chrome](https://www.google.com/chrome/browser/desktop/index.html) provides a Javascript Console that works well for inspecting JSON, so we'll be using this browser. [Firefox](https://www.mozilla.org/en-US/firefox/) works well too if you prefer that.
 * **Postman**. [Postman](http://www.getpostman.com/) is an app that allows you to make requests and see responses through a GUI client.
 * **curl**. [curl](http://curl.haxx.se/) is essential for making requests to endpoints from the command line. Mac computers already have curl installed. Windows users should follow the instructions for installing curl [here](http://www.confusedbycode.com/curl/#downloads).
 * **Git**. [Git](https://git-scm.com/) is a version control tool developers often use to collaborate on code. See [Set Up Git](https://help.github.com/articles/set-up-git/) for more details.
+* **GitHub account**. [GitHub](https://github.com) will be used for various activities and is commonly used as an authentication service for developer tools. If you don't already have a GitHub account, sign up for one.
+* **Stoplight App**. [Stoplight](https://next.stoplight.io/) provides visual modeling tools for working with the OpenAPI specification. Create a Stoplight account and download the [Desktop app](https://github.com/stoplightio/desktop/releases/tag/v3.6.1) here.
 
 ## Will this course help you get a job in API documentation?
 
@@ -111,19 +113,20 @@ The most common reason people take this course is to transition to an API docume
 * [Activity: Create your own Swagger UI display](pubapis_swagger_ui_activity.html)
 * [Activity: Generate a Javadoc from a sample project](nativelibraryapis_create_javadoc.html)
 
-## Video of this section
+## Video recordings
 
-For a video recording of this section of the course, see the following:
+For video recordings of this course, see the [Recorded Video Presentations](docapis_course_videos.html).
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/NawxzLB4aro" frameborder="0" allowfullscreen></iframe>
+## Slides
 
-This video covers these sections:
+I have various slides that cover different sections of this course. See the following:
 
-* [Introduction to REST APIs](http://idratherbewriting.com/learnapidoc/docapis_introtoapis.html)
-* [Using a REST API as a developer](http://idratherbewriting.com/learnapidoc/likeadeveloper.html)
-* [Documenting API reference topics](http://idratherbewriting.com/learnapidoc/docendpoints.html)
+* [Intro to API documentation](http://idratherbewriting.com/intro-to-api-documentation/index.html)
+* [Non-reference content in API docs](http://idratherbewriting.com/nonref-content-api-docs/#/)
+* [OpenAPI and Swagger](http://idratherbewriting.com/openapi-and-swagger/#/)
+* [Publishing API documentation](http://idratherbewriting.com/publishing-api-docs/#/)
 
-To see more videos, check out [Recorded video presentations](docapis_course_videos.html). 
+(By the way, these slides are all hosted on GitHub at https://github.com/tomjoht/. I use [RevealJS](https://github.com/hakimel/reveal.js/) for slides, which lets me create the slide content in HTML.)
 
 ## Stay updated
 
