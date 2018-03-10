@@ -34,7 +34,7 @@ curl --get -k --include "https://simple-weather.p.mashape.com/weatherdata?lat=1.
 ## Postman client activity
 
 1. Download [Postman](https://www.getpostman.com/).
-2. Populate Postman from [Run in Postman button](http://idratherbewriting.com/intro-api-documentation/index.html#/6).
+2. Populate Postman from [Run in Postman button](http://idratherbewriting.com/intro-to-api-documentation/index.html#/6).
 3. Make requests in Postman.
 4. Generate code snippets in JavaScript (AJAX) from Postman.
 
