@@ -8,6 +8,8 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 ---
 
+hello there.
+
 <img src="images/tomjohnson.jpg" class="small" style="float: right; padding:1em;"/>
 
 In case you'd like to know a little bit about me, I'm currently based in the San Francisco Bay area of California. I work at [Amazon Lab126](http://www.lab126.com/), which builds the devices for many of Amazon's products (such as the Kindle, Echo, Fire TV, and more).
