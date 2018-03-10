@@ -28,6 +28,9 @@ folders:
   - title: "Activity: Find an Open Source Project"
     jurl: /docapis_find_open_source_project.html
 
+  - title: "Workshop activities"
+    jurl: /workshop-activities.html
+
 - title: Using a REST API as a developer
   jurl: /likeadeveloper.html
   folderitems:

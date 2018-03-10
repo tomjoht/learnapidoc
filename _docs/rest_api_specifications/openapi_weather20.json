@@ -1,0 +1,748 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is a sample spec that describes a Mashape Weather API. This example demonstrates features in the Swagger-2.0 specification as rendered with SwaggerHub. This output is part of the [Documenting REST APIs course](http://idratherbewriting.com/learnapidoc) on I'd Rather Be Writing. \n\nThis Weather API displays forecast data by latitude and longitude. It's a simple weather API, but the data comes from Yahoo Weather Service. The weatherdata endpoint delivers the most robust package of information of the endpoints here.\n\nTo explore the API, you'll need an API key. You can sign up for an API through Mashape, or you can just use this one\\: `EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p`. For the latitude and longitude parameters, you can get this information from the URL of a location on Google Maps. For example, for Santa Clara, California, use the following\\:\n* **lat**: `37.3708698`\n* **lng**: `-122.037593` \n",
+    "version": "2.3",
+    "title": "Weather API from Mashape",
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": {
+      "email": "tom@idratherbewriting.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "simple-weather.p.mashape.com",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/aqi": {
+      "get": {
+        "tags": [
+          "Air Quality"
+        ],
+        "summary": "Gets the air quality index",
+        "description": "Air quality is a measure of air pollution. The higher the number, the worse the pollution.",
+        "operationId": "getAqi",
+        "produces": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "name": "lat",
+            "in": "query",
+            "description": "latitude",
+            "type": "string",
+            "required": true,
+            "example": 37.3708698
+          },
+          {
+            "name": "lng",
+            "in": "query",
+            "description": "longitude",
+            "type": "string",
+            "required": true,
+            "example": -122.037593
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "AQI response",
+            "schema": {
+              "$ref": "#/definitions/aqiResponse"
+            },
+            "examples": {
+              "application/text": 52
+            },
+            "headers": {
+              "Connection": {
+                "description": "keep-alive",
+                "type": "string"
+              },
+              "Content-Length": {
+                "description": 23,
+                "type": "integer"
+              },
+              "Content-Type": {
+                "description": "text/plain",
+                "type": "string"
+              },
+              "Date": {
+                "description": "The date of the request. For example, \"Tue, 04 Nov 2014 15:22:12 GMT\"",
+                "type": "string"
+              },
+              "Server": {
+                "description": "The server where the response initiates. For example, \"Mashape/5.0.5.\"",
+                "type": "string"
+              },
+              "X-Powered-By": {
+                "description": "Service powering the response. For example, \"Express\"",
+                "type": "string"
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": [
+
+            ]
+          }
+        ]
+      }
+    },
+    "/weather": {
+      "get": {
+        "tags": [
+          "Weather Forecast"
+        ],
+        "summary": "Gets brief details about the weather forecast",
+        "description": "Retrieves the weather forecast and summarizes it in one short sentence. Indicates temperature and general conditions for the area.",
+        "operationId": "getWeather",
+        "produces": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "name": "lat",
+            "in": "query",
+            "description": "latitude coordinates",
+            "required": true,
+            "type": "string",
+            "example": 37.3708698
+          },
+          {
+            "name": "lng",
+            "in": "query",
+            "description": "longitude coordinates",
+            "required": true,
+            "type": "string",
+            "example": -122.037593
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "weather response",
+            "schema": {
+              "$ref": "#/definitions/weatherResponse"
+            },
+            "examples": {
+              "application/text": "19 c, Mostly Clear at Santa Clara, California"
+            },
+            "headers": {
+              "Connection": {
+                "description": "keep-alive",
+                "type": "string"
+              },
+              "Content-Length": {
+                "description": 23,
+                "type": "integer"
+              },
+              "Content-Type": {
+                "description": "text/plain",
+                "type": "string"
+              },
+              "Date": {
+                "description": "The date of the request. For example, \"Tue, 04 Nov 2014 15:22:12 GMT\"",
+                "type": "string"
+              },
+              "Server": {
+                "description": "The server where the response initiates. For example, \"Mashape/5.0.5.\"",
+                "type": "string"
+              },
+              "X-Powered-By": {
+                "description": "Service powering the response. For example, \"Express\"",
+                "type": "string"
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": [
+
+            ]
+          }
+        ]
+      }
+    },
+    "/weatherdata": {
+      "get": {
+        "tags": [
+          "Weather Data"
+        ],
+        "summary": "Get the full weather forecast with abundant details",
+        "description": "Includes full details of the weather forecast, in JSON format. Details include everything from temperature to wind conditions, humidity, pressure, astronomy, conditions, sunset, high/lows, and future forecast.",
+        "operationId": "getWeatherData",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "lat",
+            "in": "query",
+            "description": "latitude",
+            "type": "string",
+            "required": true,
+            "example": 37.3708698
+          },
+          {
+            "name": "lng",
+            "in": "query",
+            "description": "longitude",
+            "type": "string",
+            "required": true,
+            "example": -122.037593
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "schema": {
+              "$ref": "#/definitions/weatherdata response"
+            },
+            "examples": {
+              "application/json": {
+                "query": {
+                  "count": 1,
+                  "created": "2017-06-24T23:47:36Z",
+                  "lang": "en-US",
+                  "results": {
+                    "channel": {
+                      "units": {
+                        "distance": "km",
+                        "pressure": "mb",
+                        "speed": "km/h",
+                        "temperature": "C"
+                      },
+                      "title": "Yahoo! Weather - Sunnyvale, CA, US",
+                      "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91990359/",
+                      "description": "Yahoo! Weather for Sunnyvale, CA, US",
+                      "language": "en-us",
+                      "lastBuildDate": "Sat, 24 Jun 2017 04:47 PM PDT",
+                      "ttl": "60",
+                      "location": {
+                        "city": "Sunnyvale",
+                        "country": "United States",
+                        "region": " CA"
+                      },
+                      "wind": {
+                        "chill": "73",
+                        "direction": "345",
+                        "speed": "28.97"
+                      },
+                      "atmosphere": {
+                        "humidity": "64",
+                        "pressure": "34033.22",
+                        "rising": "0",
+                        "visibility": "25.91"
+                      },
+                      "astronomy": {
+                        "sunrise": "5:48 am",
+                        "sunset": "8:33 pm"
+                      },
+                      "image": {
+                        "title": "Yahoo! Weather",
+                        "width": "142",
+                        "height": "18",
+                        "link": "http://weather.yahoo.com",
+                        "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+                      },
+                      "item": {
+                        "title": "Conditions for Sunnyvale, CA, US at 04:00 PM PDT",
+                        "lat": "37.377499",
+                        "long": "-122.04686",
+                        "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91990359/",
+                        "pubDate": "Sat, 24 Jun 2017 04:00 PM PDT",
+                        "condition": {
+                          "code": "28",
+                          "date": "Sat, 24 Jun 2017 04:00 PM PDT",
+                          "temp": "22",
+                          "text": "Mostly Cloudy"
+                        },
+                        "forecast": [
+                          {
+                            "code": "28",
+                            "date": "24 Jun 2017",
+                            "day": "Sat",
+                            "high": "25",
+                            "low": "16",
+                            "text": "Mostly Cloudy"
+                          },
+                          {
+                            "code": "30",
+                            "date": "25 Jun 2017",
+                            "day": "Sun",
+                            "high": "25",
+                            "low": "15",
+                            "text": "Partly Cloudy"
+                          },
+                          {
+                            "code": "30",
+                            "date": "26 Jun 2017",
+                            "day": "Mon",
+                            "high": "22",
+                            "low": "14",
+                            "text": "Partly Cloudy"
+                          },
+                          {
+                            "code": "30",
+                            "date": "27 Jun 2017",
+                            "day": "Tue",
+                            "high": "23",
+                            "low": "15",
+                            "text": "Partly Cloudy"
+                          },
+                          {
+                            "code": "34",
+                            "date": "28 Jun 2017",
+                            "day": "Wed",
+                            "high": "25",
+                            "low": "13",
+                            "text": "Mostly Sunny"
+                          },
+                          {
+                            "code": "30",
+                            "date": "29 Jun 2017",
+                            "day": "Thu",
+                            "high": "25",
+                            "low": "13",
+                            "text": "Partly Cloudy"
+                          },
+                          {
+                            "code": "34",
+                            "date": "30 Jun 2017",
+                            "day": "Fri",
+                            "high": "25",
+                            "low": "13",
+                            "text": "Mostly Sunny"
+                          },
+                          {
+                            "code": "30",
+                            "date": "01 Jul 2017",
+                            "day": "Sat",
+                            "high": "25",
+                            "low": "14",
+                            "text": "Partly Cloudy"
+                          },
+                          {
+                            "code": "30",
+                            "date": "02 Jul 2017",
+                            "day": "Sun",
+                            "high": "25",
+                            "low": "14",
+                            "text": "Partly Cloudy"
+                          },
+                          {
+                            "code": "30",
+                            "date": "03 Jul 2017",
+                            "day": "Mon",
+                            "high": "23",
+                            "low": "15",
+                            "text": "Partly Cloudy"
+                          }
+                        ],
+                        "description": "<![CDATA[<img src=\"http://l.yimg.com/a/i/us/we/52/28.gif\"/>\n<BR />\n<b>Current Conditions:</b>\n<BR />Mostly Cloudy\n<BR />\n<BR />\n<b>Forecast:</b>\n<BR /> Sat - Mostly Cloudy. High: 25Low: 16\n<BR /> Sun - Partly Cloudy. High: 25Low: 15\n<BR /> Mon - Partly Cloudy. High: 22Low: 14\n<BR /> Tue - Partly Cloudy. High: 23Low: 15\n<BR /> Wed - Mostly Sunny. High: 25Low: 13\n<BR />\n<BR />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91990359/\">Full Forecast at Yahoo! Weather</a>\n<BR />\n<BR />\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)\n<BR />\n]]>",
+                        "guid": {
+                          "isPermaLink": "false"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": [
+
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "securityDefinitions": {
+    "api_key": {
+      "type": "apiKey",
+      "name": "X-Mashape-Key",
+      "in": "header"
+    }
+  },
+  "externalDocs": {
+    "description": "Find out more about this Weather API",
+    "url": "https://market.mashape.com/fyhao/weather-13"
+  },
+  "definitions": {
+    "aqiResponse": {
+      "type": "string"
+    },
+    "weatherResponse": {
+      "type": "string"
+    },
+    "weatherdata response": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "$ref": "#/definitions/query"
+        }
+      }
+    },
+    "query": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer",
+          "description": "The number of items (rows) returned -- specifically, the number of sub-elements in the results property",
+          "example": 1
+        },
+        "created": {
+          "type": "string",
+          "description": "The date and time the response was created",
+          "example": "2017-06-14T14:30:14Z"
+        },
+        "lang": {
+          "type": "string",
+          "description": "The locale for the response",
+          "example": "en-US"
+        },
+        "results": {
+          "$ref": "#/definitions/results"
+        }
+      }
+    },
+    "results": {
+      "type": "object",
+      "properties": {
+        "channel": {
+          "$ref": "#/definitions/channel"
+        }
+      }
+    },
+    "channel": {
+      "type": "object",
+      "properties": {
+        "units": {
+          "$ref": "#/definitions/units"
+        },
+        "title": {
+          "type": "string",
+          "description": "The title of the feed, which includes the location city",
+          "example": "Yahoo! Weather - Singapore, South West, SG"
+        },
+        "link": {
+          "type": "string",
+          "description": "The URL for the Weather page of the forecast for this location",
+          "example": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/"
+        },
+        "description": {
+          "type": "string",
+          "description": "The overall description of the feed including the location",
+          "example": "Yahoo! Weather for Singapore, South West, SG"
+        },
+        "language": {
+          "type": "string",
+          "description": "The language of the weather forecast",
+          "example": "en-us"
+        },
+        "lastBuildDate": {
+          "type": "string",
+          "description": "The last time the feed was updated. The format is in the date format defined by [RFC822 Section 5](http://www.rfc-editor.org/rfc/rfc822.txt).",
+          "example": "Wed, 14 Jun 2017 10:30 PM SGT"
+        },
+        "ttl": {
+          "type": "string",
+          "description": "Time to Live -- how long in minutes this feed should be cached.",
+          "example": "60"
+        },
+        "location": {
+          "$ref": "#/definitions/location"
+        },
+        "wind": {
+          "$ref": "#/definitions/wind"
+        },
+        "atmosphere": {
+          "$ref": "#/definitions/atmosphere"
+        },
+        "astronomy": {
+          "$ref": "#/definitions/astronomy"
+        },
+        "image": {
+          "$ref": "#/definitions/image"
+        },
+        "item": {
+          "$ref": "#/definitions/item"
+        }
+      }
+    },
+    "units": {
+      "type": "object",
+      "description": "Units for various aspects of the forecast. Note that the default is to use metric formats for the units (Celsius, kilometers, millibars, kilometers per hour).",
+      "properties": {
+        "distance": {
+          "type": "string",
+          "description": "Units for distance, mi for miles or km for kilometers",
+          "example": "km"
+        },
+        "pressure": {
+          "type": "string",
+          "description": "Units of barometric pressure, \"in\" for pounds per square inch or \"mb\" for millibars.",
+          "example": "mb"
+        },
+        "speed": {
+          "type": "string",
+          "description": "Units of speed, \"mph\" for miles per hour or \"kph\" for kilometers per hour.",
+          "example": "km/h"
+        },
+        "temperature": {
+          "type": "string",
+          "description": "Degree units, \"f\" for Fahrenheit or \"c\" for Celsius.",
+          "example": "C"
+        }
+      }
+    },
+    "location": {
+      "type": "object",
+      "description": "The location of this forecast",
+      "properties": {
+        "city": {
+          "type": "string",
+          "description": "City name",
+          "example": "Singapore"
+        },
+        "country": {
+          "type": "string",
+          "description": "Two-character country code",
+          "example": "Singapore"
+        },
+        "region": {
+          "type": "string",
+          "description": "State, territory, or region, if given",
+          "example": "South West"
+        }
+      }
+    },
+    "wind": {
+      "type": "object",
+      "description": "Forecast information about wind",
+      "properties": {
+        "chill": {
+          "type": "integer",
+          "description": "Wind chill in degrees",
+          "example": "81"
+        },
+        "direction": {
+          "type": "integer",
+          "description": "Wind direction, in degrees",
+          "example": "158"
+        },
+        "speed": {
+          "type": "integer",
+          "description": "Wind speed, in the units specified in the speed attribute of the units element (mph or kph)",
+          "example": "11.27"
+        }
+      }
+    },
+    "atmosphere": {
+      "type": "object",
+      "description": "Forecast information about current atmospheric pressure, humidity, and visibility",
+      "properties": {
+        "humidity": {
+          "type": "integer",
+          "description": "humidity, in percent",
+          "example": "87"
+        },
+        "pressure": {
+          "type": "integer",
+          "description": "Barometric pressure, in the units specified by the pressure attribute of the yweather:units element (\"in\" or \"mb\").",
+          "example": "34168.68"
+        },
+        "rising": {
+          "type": "integer",
+          "description": "State of the barometric pressure: steady (0), rising (1), or falling (2).",
+          "example": "0"
+        },
+        "visibility": {
+          "type": "integer",
+          "description": "Visibility, in the units specified by the distance attribute of the units element (\"mi\" or \"km\"). Note that the visibility is specified as the actual value * 100. For example, a visibility of 16.5 miles will be specified as 1650. A visibility of 14 kilometers will appear as 1400.",
+          "example": "25.91"
+        }
+      }
+    },
+    "astronomy": {
+      "type": "object",
+      "description": "Forecast information about current astronomical conditions",
+      "properties": {
+        "sunrise": {
+          "type": "string",
+          "description": "Today's sunrise time. The time is a string in a local time format of \"h:mm am/pm\"",
+          "example": "6:59 am"
+        },
+        "sunset": {
+          "type": "string",
+          "description": "Today's sunset time. The time is a string in a local time format of \"h:mm am/pm\"",
+          "example": "7:11 pm"
+        }
+      }
+    },
+    "image": {
+      "type": "object",
+      "description": "The image used to identify this feed",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "The title of the image.",
+          "example": "Yahoo! Weather"
+        },
+        "width": {
+          "type": "string",
+          "description": "The width of the image, in pixels",
+          "example": "142"
+        },
+        "height": {
+          "type": "string",
+          "description": "The height of the image, in pixels",
+          "example": "18"
+        },
+        "link": {
+          "type": "string",
+          "description": "Description of link",
+          "example": "http://weather.yahoo.com"
+        },
+        "url": {
+          "type": "string",
+          "description": "The URL of Yahoo! Weather",
+          "example": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+        }
+      }
+    },
+    "item": {
+      "type": "object",
+      "description": "The item element contains current conditions and forecast for the given location. There are multiple weather forecast elements for today and tomorrow.",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "The forecast title and time.",
+          "example": "Conditions for Singapore, South West, SG at 09:00 PM SGT"
+        },
+        "lat": {
+          "type": "string",
+          "description": "The latitude of the location.",
+          "example": "1.33464"
+        },
+        "long": {
+          "type": "string",
+          "description": "The longitude of the location.",
+          "example": "103.726471"
+        },
+        "link": {
+          "type": "string",
+          "description": "The Yahoo! Weather URL for this forecast.",
+          "example": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/"
+        },
+        "pubDate": {
+          "type": "string",
+          "description": "The date and time this forecast was posted, in the date format defined by [RFC822 Section 5](http://www.rfc-editor.org/rfc/rfc822.txt).",
+          "example": "Wed, 14 Jun 2017 09:00 PM SGT"
+        },
+        "condition": {
+          "$ref": "#/definitions/condition"
+        },
+        "forecast": {
+          "$ref": "#/definitions/forecast"
+        },
+        "description": {
+          "type": "string",
+          "description": "A simple summary of the current conditions and tomorrow's forecast, in HTML format, including a link to Yahoo! Weather for the full forecast.",
+          "example": "This is one of the examples..."
+        },
+        "guid": {
+          "$ref": "#/definitions/guid"
+        }
+      }
+    },
+    "condition": {
+      "type": "object",
+      "description": "The current weather conditions",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "description": "The condition code for this forecast. You could use this code to choose a text description or image for the forecast. The possible values for this element are described in the [Condition Codes](https://developer.yahoo.com/weather/).documentation.html.",
+          "example": "33"
+        },
+        "date": {
+          "type": "string",
+          "description": "The current date and time for which this forecast applies. The date is in RFC822 Section 5 format.",
+          "example": "Wed, 14 Jun 2017 09:00 PM SGT"
+        },
+        "temp": {
+          "type": "integer",
+          "description": "The current temperature, in the units specified by the units element.",
+          "example": "26"
+        },
+        "text": {
+          "type": "string",
+          "description": "A textual description of conditions",
+          "example": "Mostly Clear"
+        }
+      }
+    },
+    "forecast": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/forecast array"
+      }
+    },
+    "forecast array": {
+      "type": "object",
+      "description": "The weather forecast for a specific day. The item element contains multiple forecast elements for today and tomorrow.",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "description": "The condition code for this forecast. You could use this code to choose a text description or image for the forecast. The possible values for this element are described in the [Condition Codes](https://developer.yahoo.com/weather/documentation.html#codes).\n",
+          "example": "4"
+        },
+        "date": {
+          "type": "string",
+          "description": "The date to which this forecast applies. The date is in 'dd Mmm yyyy' format, for example '30 Nov 2005'",
+          "example": "14 Jun 2017"
+        },
+        "day": {
+          "type": "string",
+          "description": "Day of the week to which this forecast applies. Possible values are Mon Tue Wed Thu Fri Sat Sun.",
+          "example": "Wed"
+        },
+        "high": {
+          "type": "integer",
+          "description": "The forecasted high temperature for this day, in the units specified by the units element.",
+          "example": "28"
+        },
+        "low": {
+          "type": "integer",
+          "description": "The forecasted low temperature for this day, in the units specified by the units element.",
+          "example": "25"
+        },
+        "text": {
+          "type": "string",
+          "description": "A textual description of conditions",
+          "example": "Thunderstorms"
+        }
+      }
+    },
+    "guid": {
+      "type": "object",
+      "description": "Unique identifier for the forecast, made up of the location ID, the date, and the time.",
+      "properties": {
+        "isPermaLink": {
+          "type": "string",
+          "description": "The attribute isPermaLink is false.",
+          "example": "false"
+        }
+      }
+    }
+  }
+}
