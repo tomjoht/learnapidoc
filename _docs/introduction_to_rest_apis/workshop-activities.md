@@ -41,7 +41,7 @@ curl --get -k --include "https://simple-weather.p.mashape.com/weatherdata?lat=37
 ### Activity: Postman client
 
 1. Download [Postman](https://www.getpostman.com/).
-2. Populate Postman from the Run in Postman button:
+2. Populate Postman from the Run in Postman button or from [this link](https://www.getpostman.com/collections/7975e93f7b4944f50fa7):
 
     <div class="postman-run-button"
     data-postman-action="collection/import"
