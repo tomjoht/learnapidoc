@@ -251,6 +251,11 @@ It was also republished in Anne Gentle's [Docs Like Code: Case Studies](https://
 {: .tip}
 To Learn more about docs as code, see Anne Gentle's book [Docs Like Code](https://www.amazon.com/Docs-Like-Code-Anne-Gentle/dp/1365816079/ref=sr_1_1?ie=UTF8&qid=1508090523&sr=8-1&keywords=docs+like+code).
 
+## Video recording
+
+I recently [gave a presentation on Docs-as-code tools and workflows](/2018/03/09/docs-as-code-tools-and-workflows-denver-presentation/) to the STC Rocky Mountain and WTD Denver group.
+
+<iframe  width="640" height="360" src="https://www.youtube.com/embed/Z3e_38WS-2Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Blog posts about docs-as-code tools
 

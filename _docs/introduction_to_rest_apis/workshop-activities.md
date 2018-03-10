@@ -8,16 +8,23 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 ---
 
-The following are activities used in the live workshops.
+The following are activities used in the [live workshops](http://idratherbewriting.com/2018/01/29/api-workshop-in-denver/).
 
 * TOC
 {:toc}
 
-## Intro to API documentation activity
+## Part I: Intro to API documentation
 
-Explore the basic sections in API reference documentation of this [Mashape Weather API](https://market.mashape.com/fyhao/weather-13).
+Slides: [Intro to API documentation](http://idratherbewriting.com/intro-to-api-documentation/index.html)
 
-## Make a curl request activity
+### Activity: Explore an API
+
+Explore the basic sections in API reference documentation in these 2 weather APIs:
+
+* [Mashape Weather API](https://market.mashape.com/fyhao/weather-13).
+* [Aeris Weather API](https://www.aerisweather.com/support/docs/api/)
+
+### Activity: Make a curl request
 
 Mac:
 
@@ -28,18 +35,36 @@ curl --get --include 'https://simple-weather.p.mashape.com/weatherdata?lat=37.37
 Windows:
 
 ```
-curl --get -k --include "https://simple-weather.p.mashape.com/weatherdata?lat=1.0&lng=1.0" -H "X-Mashape-Key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p" -H "Accept: application/json"
+curl --get -k --include "https://simple-weather.p.mashape.com/weatherdata?lat=37.3710062&lng=-122.0375935" -H "X-Mashape-Key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p" -H "Accept: application/json"
 ```
 
-## Postman client activity
+### Activity: Postman client
 
 1. Download [Postman](https://www.getpostman.com/).
-2. Populate Postman from [Run in Postman button](http://idratherbewriting.com/intro-to-api-documentation/index.html#/6).
+2. Populate Postman from the Run in Postman button:
+
+    <div class="postman-run-button"
+    data-postman-action="collection/import"
+    data-postman-var-1="7975e93f7b4944f50fa7"></div>
+    <script type="text/javascript">
+    (function (p,o,s,t,m,a,n) {
+    !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+    !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+    (n = o.createElement("script")),
+    (n.id = s+t), (n.async = 1), (n.src = m), n
+    ));
+    }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+    </script>
+
 3. Make requests in Postman.
 4. Generate code snippets in JavaScript (AJAX) from Postman.
+5. Create a Run in Postman button for your requests. In the Collections pane, click the **<** arrow to expand the pane and click **Share**.
 
+## Part II: OpenAPI and Swagger
 
-## OpenAPI with Stoplight activity
+Slides: [OpenAPI and Swagger](http://idratherbewriting.com/openapi-and-swagger/#/)
+
+### Activity: OpenAPI with Stoplight
 
 1. Open [v3 next Stoplight app](https://next.stoplight.io/). (You can also use the [Desktop app](https://github.com/stoplightio/desktop/releases/latest))
 2. From main.oas, open the Code tab and paste in content for this 2.0 JSON Open API definition: [http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_weather20.json](/learnapidoc/docs/rest_api_specifications/openapi_weather20.json)
@@ -125,12 +150,12 @@ curl --get -k --include "https://simple-weather.p.mashape.com/weatherdata?lat=1.
   ```
 
 
-## Swagger Editor activity
+### Activity: Swagger Editor
 
 1. Paste [this YAML file](/learnapidoc/docs/rest_api_specifications/openapi_weather.yml) into [Swagger Editor](https://editor.swagger.io/) and make updates.
 2. Go to [this SwaggerHub API](https://app.swaggerhub.com/apis/IdRatherBeWriting/MashapeWeatherAPI/2.3). Observe Generate Client SDK options.
 
-## Swagger UI activity
+### Activity: Swagger UI
 
 1. Download [Swagger UI](https://github.com/swagger-api/swagger-ui/tree/v3.4.1).
 2. Uncompress and pull out the **dist** folder.
@@ -138,12 +163,11 @@ curl --get -k --include "https://simple-weather.p.mashape.com/weatherdata?lat=1.
 4. Reference **openapi_weather.yml** in place of the default `url` value.
 5. Open in Firefox.
 
+## Part III: Non-reference content in API docs
 
-## API doc design patterns activity
+Slides: [Non-reference content in API docs](http://idratherbewriting.com/nonref-content-api-docs/#/)
 
-1.  Observe design patterns from 3 sites listed here: [http://idratherbewriting.com/learnapidoc/pubapis_apilist.html](http://idratherbewriting.com/learnapidoc/pubapis_apilist.html).
-
-##  GitHub workflow activity
+###  Activity: GitHub workflow
 
 1.  Create new repo and initialize with readme. Clone repo locally using `git clone`.
 2.  Make update to readme file and push back into repo:
