@@ -18,19 +18,17 @@
     <script type="text/javascript" src="assets/js/jquery.navgoco.min.js"></script>
     <!-- Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Algolia -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0"></script>
     <!-- Anchor JS -->
-    {% unless page.layout == "homepage" or page.type == "search" %}
+    {% unless page.layout == "homepage" %}
         <script src="assets/js/anchor.min.js"></script>
         <script>
         $( document ).ready(function() {
             anchors.add('h2,h3,h4,h5');
         });
-        function my_search_google()
-{
-    var query = document.getElementById("my-google-search").value;
-    window.open("http://google.com/search?q=" + query
-    + "%20site:" + "http://idratherbewriting.com/learnapidoc");
-}
         </script>
     {% endunless %}
 
@@ -116,7 +114,7 @@
                     {% if page.github == true %}
                     <li><a href="https://github.com/amzn/appstore-alexa-docs/issues" class="noCrossRef">{{site.uistring.log_doc_issue}}</a></li>
                     <li><a target="_blank" href="https://github.com/amzn/appstore-alexa-docs/blob/github-docs/{{page.path}}" class="editButton noCrossRef"><i class="fa fa-github fa-lg"></i> {{site.uistring.github_edit_button_text}}</a></li>{% endif %}
-                    {% unless page.type == "homepage" or page.type == "search" or page.type == "404" %}
+                    {% unless page.type == "homepage" or page.type == "404" %}
                     <li><a target="_blank" href="{{ site.data[page.sidebar].forum.forum_link }}" class="editButton noCrossRef">{{ site.data[page.sidebar].forum.forum_name }}</a></li>
                     {% endunless %}
                     {% endfor %}
@@ -149,15 +147,6 @@
                 <ul class="nav navbar-nav navbar-right">
                   {% include topBannerAd.html %}
                     <li>
-                        <!--start search -->
-                        <!--
-                        <div id="search-demo-container">
-                            <form action="search.html" method="get">
-                                <input type="text" id="search-input" placeholder="{{site.uistring.search_placeholder_global}}" name="query">
-                            </form>
-                        </div>
-                        -->
-                        <!-- end search-->
                     </li>
                 </ul>
             </div>

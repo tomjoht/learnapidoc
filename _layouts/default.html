@@ -13,33 +13,38 @@
 
             <!-- main area -->
             <div class="col-xs-12 col-sm-9 main">
-{% include breadcrumb.html %}
+              {% include search_results.html %}
+              <div id="content">
+                {% include breadcrumb.html %}
 
-{% comment %}{% include next_top.html %}{% endcomment %}
-                    <h1>{{page.title}}</h1>
-                    <div class="amazonBook">
-                    {% include amazon_book.html %}
-                    </div>
+                {% comment %}{% include next_top.html %}{% endcomment %}
 
-                    {{content}}
-                    {% include progress.html %}
-                    {% comment %}
-                    <p class="note" style="margin-top:30px">If this information was helpful, would you consider adding a <a href="https://idratherbewriting.wufoo.com/forms/sxgxvqb1ahtv6q/">course review comment</a>?</p>
-                    {% endcomment %}
-                    {% include next.html %}
+                <h1>{{page.title}}</h1>
+                <div class="amazonBook">
+                {% include amazon_book.html %}
+                </div>
 
+                {{content}}
 
-                    <div class="donateButton">
-                    {% include donate_button.html %}
-                    </div>
-              
-
-                  {% include single_post_ads.html %}
+                {% include progress.html %}
+                {% comment %}
+                <p class="note" style="margin-top:30px">If this information was helpful, would you consider adding a <a href="https://idratherbewriting.wufoo.com/forms/sxgxvqb1ahtv6q/">course review comment</a>?</p>
+                {% endcomment %}
+                {% include next.html %}
 
 
+                <div class="donateButton">
+                {% include donate_button.html %}
+                </div>
+          
 
-                    <div style="max-width: 375px">{% include tinyletter.html %}</div>
-                    {% include disqus.html %}
+                {% include single_post_ads.html %}
+
+
+
+                <div style="max-width: 375px">{% include tinyletter.html %}</div>
+                {% include disqus.html %}
+              </div>
 
 
             </div>
