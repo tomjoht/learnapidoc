@@ -8,9 +8,86 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 ---
 
-The following are some video recordings that cover different topics in this course.
+## Most recent workshop recording
+
+The most recording is a workshop I gave to STC/WTD Denver (the event description is [here](https://idratherbewriting.com/2018/03/12/api-documentation-workshop-in-denver/). The recording is divided into three parts. Each of these sections includes a video recording, audio file, and slides.
 
 {% if site.format == "web" %}
+
+**Part I**:
+
+<iframe  width="640" height="360" src="https://www.youtube.com/embed/Ivum3YbOWQ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**Part II**:
+
+<iframe  width="640" height="360" src="https://www.youtube.com/embed/zV6m-6_j56w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**Part III**:
+<iframe  width="640" height="360" src="https://www.youtube.com/embed/LSLg6Oy1OzM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+### Audio only recordings
+
+**Part I**:
+
+<div class="audioControls">
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/denverapiworkshop_part1.mp3" type="audio/mpeg" /></audio></p>
+</div>
+
+<a href="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/denverapiworkshop_part1.mp3">Download MP3</a>
+
+**Part II**:
+
+<div class="audioControls">
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/denverapiworkshop_part2.mp3" type="audio/mpeg" /></audio></p>
+</div>
+
+<a href="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/denverapiworkshop_part2.mp3">Download MP3</a>
+
+**Part III**:
+
+<div class="audioControls">
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/denverapiworkshop_part3.mp3" type="audio/mpeg" /></audio></p>
+</div>
+
+<a href="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/denverapiworkshop_part3.mp3">Download MP3</a>
+
+If you're driving across the country and you want to listen to all audio combined into one consolidated file (consisting of parts I, II, and III), you can do so here:
+
+<div class="audioControls">
+<p><audio controls="controls"><source src="{{page.podcast_link}}" type="audio/mpeg" /></audio></p>
+
+<p>As always, you can <a href="{{page.podcast_link}}" alt="{{page.title}}">download the MP3 file</a>, <a href="https://itunes.apple.com/us/podcast/id-rather-be-writing-podcast/id277365275">subscribe in iTunes</a>, or <a href="http://www.stitcher.com/podcast/id-rather-be-writing-technical-writing-podcast"> listen with Stitcher</a>.</p>
+</div>
+
+
+### Slides
+
+If you just want to browse the slides, you can do so here:
+
+**Part I**:
+
+<a href="http://idratherbewriting.com/intro-to-api-documentation/index.html"><img src="/images/introapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+
+**Part II**:
+
+<a href="http://idratherbewriting.com/openapi-and-swagger/#/"><img src="/images/openapiswaggertitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+
+**Part III**:
+
+<a href="http://idratherbewriting.com/nonref-content-api-docs/#/"><img src="/images/nonreftitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+
+The slides are all stored on GitHub:
+
+* [intro-to-api-documentation](https://github.com/tomjoht/intro-to-api-documentation)
+* [openapi-and-swagger](https://github.com/tomjoht/intro-to-api-documentation)
+* [nonref-content-api-docs](https://github.com/tomjoht/intro-to-api-documentation)
+
+
+## Other recordings
+
+The following are other video recordings for API-related presentations:
+
+### Intro to API docs
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/NawxzLB4aro" frameborder="0" allowfullscreen></iframe>
 
@@ -20,10 +97,9 @@ This video covers these sections:
 * [Using a REST API as a developer](http://idratherbewriting.com/learnapidoc/likeadeveloper.html)
 * [Documenting API reference topics](http://idratherbewriting.com/learnapidoc/docendpoints.html)
 
-(I gave this presentation to the STC Silicon Valley chapter -- more details are [here]().)
+(I gave this presentation to the STC Silicon Valley chapter -- more details are [here](https://idratherbewriting.com/2017/11/19/upcoming-api-doc-presentation-stc-sv-chapter/).)
 
-<hr/>
-
+### Publishing API docs
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/__vSXJn-JQo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -33,7 +109,12 @@ This video covers these sections:
 
 (This is a presentation I gave to the WTD South Bay group -- more details are  [here](http://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/).)
 
-<hr/>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z3e_38WS-2Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+(This is a presentation I gave to STC/WTD Denver -- more details are [here](https://idratherbewriting.com/2018/03/09/docs-as-code-tools-and-workflows-denver-presentation/).)
+
+### OpenAPI and Swagger
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/gcDSL-8pkvU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -51,9 +132,9 @@ You can also view a video about Swagger here:
 
 (More details are [here](http://idratherbewriting.com/2017/01/17/swagger-presentation-documenting-rest-apis/).)
 
-<hr/>
+### Older workshop recordings
 
-For a longer video, here's a recording from a 4-hour workshop I gave to the STC Sacramento chapter:
+For a longer (and older) video, here's a recording from a 4-hour workshop I gave to the STC Sacramento chapter:
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/GerbihyUpdo" frameborder="0" allowfullscreen></iframe>
 
