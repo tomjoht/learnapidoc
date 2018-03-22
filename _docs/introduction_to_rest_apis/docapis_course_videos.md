@@ -10,7 +10,7 @@ path1: /docapis_introtoapis.html
 
 ## Most recent workshop recording
 
-The most recording is a workshop I gave to STC/WTD Denver (the event description is [here](https://idratherbewriting.com/2018/03/12/api-documentation-workshop-in-denver/). The recording is divided into three parts. Each of these sections includes a video recording, audio file, and slides.
+The most recording is a workshop I gave to STC/WTD Denver (the event description is [here](https://idratherbewriting.com/2018/03/12/api-documentation-workshop-in-denver/)). The recording is divided into three parts. Each of these sections includes a video recording, audio file, and slides.
 
 {% if site.format == "web" %}
 
@@ -54,11 +54,7 @@ The most recording is a workshop I gave to STC/WTD Denver (the event description
 If you're driving across the country and you want to listen to all audio combined into one consolidated file (consisting of parts I, II, and III), you can do so here:
 
 <div class="audioControls">
-<p><audio controls="controls"><source src="{{page.podcast_link}}" type="audio/mpeg" /></audio></p>
-
-<p>As always, you can <a href="{{page.podcast_link}}" alt="{{page.title}}">download the MP3 file</a>, <a href="https://itunes.apple.com/us/podcast/id-rather-be-writing-podcast/id277365275">subscribe in iTunes</a>, or <a href="http://www.stitcher.com/podcast/id-rather-be-writing-technical-writing-podcast"> listen with Stitcher</a>.</p>
-</div>
-
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/denverapiworkshop_all.mp3" type="audio/mpeg" /></audio></p>
 
 ### Slides
 
