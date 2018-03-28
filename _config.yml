@@ -80,6 +80,6 @@ uistring:
 
 ####### Algolia configuration ###########
 algolia:
-  application_id: MXM0JWJNIW
+  application_id: 7JEKBAXL1Y
   index_name: learnapidocs
-  search_only_api_key: ff7b0847d8705c279222272303e68527
+  search_only_api_key: 268324bcfa734077d7983ed51a671760
