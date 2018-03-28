@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    {% if page.layout == "homepage" or page.type == "search" %}
+    {% if page.layout == "homepage" %}
     <title>{{page.title}} | {{site.title}}</title>
     {% else %}
     <title>{{page.title}} | {{page.product}}</title>
@@ -24,7 +24,7 @@
     <!-- Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Anchor JS -->
-    {% unless page.layout == "homepage" or page.type == "search" %}
+    {% unless page.layout == "homepage" %}
         <script src="assets/js/anchor.min.js"></script>
         <script>
         $( document ).ready(function() {

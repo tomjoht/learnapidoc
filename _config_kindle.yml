@@ -41,14 +41,6 @@ defaults:
       topnav: topnav
   -
     scope:
-      path: ""
-      type: search
-    values:
-      layout: default
-      topnav: topnav
-      type: search
-  -
-    scope:
       path: images
     values:
       image: true
@@ -73,11 +65,7 @@ uistring:
     collapseall: Collapse All
     title: Learn API Doc # Displays as site title on top nav bar and on site metadata
     description: A guide for technical writers learning how to document APIs  # Displays as site description meta
-    search_placeholder_global: Global Search ...
-    search_placeholder_product: Search ...
     github_edit_button_text: Edit on GitHub
-    search_results_page_title: Search results
-    search_no_results_found: No results found.
     products: Products
     docindex_product: Product
     docindex_startpage: Starting page

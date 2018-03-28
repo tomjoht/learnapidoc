@@ -42,31 +42,6 @@ span.muted {
     color: #a8a8a8;
 }
 
-/* search */
-
-div#search-results p {
-  margin-bottom: 25px;
-}
-
-.searchForm404 {
-  margin: 20px 0px;
-}
-
-.input-group.search {
-  max-width: 200px;
-  margin-right: 10px;
-  margin-top: 0px;
-}
-.sidebarSearchBar {
-  margin-bottom: 30px;
-  padding-top:20px;
-  max-width: 80%;
-
-}
-
-/* endsearch */
-
-
 /* this part adds an icon after external links, using FontAwesome */
 
 a[href^="http://"]:after,

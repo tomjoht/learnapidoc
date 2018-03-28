@@ -2,35 +2,7 @@
 <div class="mydocsidebar">
 <div class="sidebar-inner">
 
-<!-- search bar - uses Lunr.js  -->
-<div class="sidebarSearchBar">
-  {% comment %}
-<form action="search.html" method="get">
-  <div class="input-group search">
-    <input type="text" id="search-box" name="query" class="form-control" placeholder="{{site.uistring.search_placeholder_product}}">
-    <div class="input-group-btn">
-      <button class="btn btn-default" type="submit" value="search">
-        <i class="glyphicon glyphicon-search"></i>
-      </button>
-    </div>
-  </div>
-</form>
-{% endcomment %}
-
-<form class="navbar-form navbar-left" role="search" onsubmit="my_search_google()">
-                        <div class="input-group search">
-                          <div class="input-group search">
-                            <input type="text" class="form-control" placeholder="Search ..." id="my-google-search">
-                            <div class="input-group-btn">
-                              <button class="btn btn-default" type="submit" value="search">
-                                <i class="glyphicon glyphicon-search"></i>
-                      </button>
-                            </div>
-                        </div>
-                    </form>
-</div></div>
-
-<!-- end search bar -->
+<div id="search-searchbar"></div>
 
 {% unless page.sidebar == null %}
 <div class="productTitle">{{sidebar.sidebarTitle}}</div>
