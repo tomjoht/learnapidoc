@@ -102,7 +102,7 @@ Mashape [provides some sample code in unirest](https://docs.rapidapi.com/v1.0/do
     });
     </script>
     <body>
-      <h3>Open the JS Console (View > Developer > JavaScript Console) to see the object returned.</h3>
+      <h3>Open the Web Console to see the object returned.</h3>
     </body>
     </html>
     ```
@@ -110,10 +110,14 @@ Mashape [provides some sample code in unirest](https://docs.rapidapi.com/v1.0/do
     {: .tip}
     You can view the file here: [idratherbewriting.com/learnapidoc/assets/files/weatherdata-plain.html](http://idratherbewriting.com/learnapidoc/assets/files/weatherdata-plain.html)
 
-8.  Start Chrome and open the JavaScript Console by going to **View > Developer > JavaScript Console**.
-9.  Open the weatherdata.html file in Chrome (**File > Open File**).
+8.  Normally, I would recommend using Chrome. But Chrome's security settings block JavaScript on local files, so use Firefox instead. Start Firefox and open the Web Console by going to **Tools > Web Developer > Web Console**.
+9.  Open the weatherdata.html file in the browser by going to **File > Open File**.
 
-    The page body will be blank, but the weatherdata response should be logged to the JavaScript console. You can inspect the payload by expanding the sections.
+    The page body will be blank, but the weatherdata response should be logged to the web console. You can inspect the payload by expanding the sections.
+
+    <a href="http://idratherbewriting.com/learnapidoc/assets/files/weatherdata-plain.html"><img src="images/firefoxwebconsole.png" alt="JSON payload from weatherdata API logged to console" /></a>
+
+    If you want to use Chrome instead, use the web instance of the file [here](http://idratherbewriting.com/learnapidoc/assets/files/weatherdata-plain.html) and open the JS Console by going to **View > Developer > JavaScript Console**. It will look as follows:
 
     <a href="http://idratherbewriting.com/learnapidoc/assets/files/weatherdata-plain.html"><img src="images/jsonpayloadweatherdata.png" alt="JSON payload from weatherdata API logged to console" /></a>
 
