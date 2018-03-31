@@ -11,7 +11,7 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-In the tutorial for [logging the `weatherdata` response to the JS Console](/learnapidoc/assets/files/weatherdata-plain.html) (from the previous tutorial, [Use the JSON from the response payload](docapis_json_console.html)), the REST response information didn't appear on the page. It only appeared in the JS Console. You need to use dot notation to access the JSON values you want.
+In the [sample page](/learnapidoc/assets/files/weatherdata-plain.html) logging the `weatherdata` response to the JS Console (from the previous topic, [Use the JSON from the response payload](docapis_json_console.html)), the REST response information didn't appear on the page. It only appeared in the JS Console. You need to use dot notation to access the JSON values you want.
 
 {: .note}
 This section will use a little bit of JavaScript. You probably wouldn't use this code very much for documentation, but it's important to know anyway.

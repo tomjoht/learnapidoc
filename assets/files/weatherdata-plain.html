@@ -9,15 +9,9 @@
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.3710062&lng=-122.0375935",
+  "url": "http://api.aerisapi.com/observations/Santa+Clara,CA?client_id=ByruDorHEne2JB64BhP1k&client_secret=Jp4xullRcy6DXTPSTKBGXAvGGTaT04iiUQXPj0ob",
   "method": "GET",
-  "dataType": "json",
-  "headers": {
-    "accept": "application/json",
-    "x-mashape-key": "EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p",
-    "cache-control": "no-cache",
-    "postman-token": "e41085c0-de85-0002-53ea-b64558309c68"
-   }
+  "dataType": "json"
  }
 
 $.ajax(settings).done(function (response) {
@@ -27,7 +21,10 @@ $.ajax(settings).done(function (response) {
 </head>
 <h1>Sample Page</h1>
 <body>
-  <h3>If viewing this file locally, in Firefox, open the Web Console (Tools > Web Developer > Web Console) to see the object returned.</h3>
-  <h3>If viewing this file on the web, in Chrome, open the JS Console (View > Developer > JavaScript Console) to see the object returned.</h3>
+  <h3>Local</h3>
+  <p>If viewing this file locally, open Firefox and go to <b>Tools > Web Developer > Web Console</b> to see the object returned. (Chrome won't let JS work locally, so you must use Firefox.)</p>
+
+  <h3>On the web</h3>
+  <p>If viewing this file on the web, you can use either Chrome or Firefox. For Chrome, open the JS Console by going to <b>View > Developer > JavaScript Console</b> to see the object returned. For Firefox, go to <b>Tools > Web Developer > Web Console</b>.</h3>
 </body>
 </html>
