@@ -1,4 +1,4 @@
-openapi: 3.0.0
+openapi: 3.0.1
 info:
   title: OpenWeatherMap API
   description: 'Get current weather, daily forecast for 16 days, and 3-hourly forecast 5 days for your city. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location. tations. Data is available in JSON, XML, or HTML format. **Note**: This sample Swagger file covers the `current` endpoint only from the OpenWeatherMap API. <br/><br/> **Tip**: We recommend that you call the API by city ID (using the `id` parameter) to get unambiguous results for your city.'
@@ -11,8 +11,6 @@ paths:
     get:
       tags:
       - weather
-      security:
-        - app_id: []
       summary: Get current weather data
       description: Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations.
       operationId: WeatherGet
@@ -77,14 +75,20 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/WeatherGetResponse'
+                $ref: '#/components/schemas/200'
         404:
-          description: Not found
-      deprecated: false
+          description: Not found response
+          content:
+            text/plain:
+              schema:
+                title: Weather not found
+                type: string
+                example: Not found
+
 components:
   schemas:
-    WeatherGetResponse:
-      title: WeatherGetResponse
+    200:
+      title: Successful response
       type: object
       properties:
         coord:
@@ -266,6 +270,9 @@ components:
           description: Sunset time, unix, UTC
           format: int32
           example: 1435650870
+
+
+
 
   securitySchemes:
     app_id:

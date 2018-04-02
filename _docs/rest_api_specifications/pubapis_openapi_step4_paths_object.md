@@ -26,19 +26,12 @@ My preferred term is "endpoint" rather than "path," but to be consistent with th
 
 ## Start by listing the paths
 
-Start by listing the paths (endpoints) and their allowed operations (methods). For the Mashape Weather API, there are just 3 paths, each with the `get` operation:
+Start by listing the paths (endpoints) and their allowed operations (methods). For the `current` endpoint in the OpenWeatherMap API, there is just 1 path with the `get` operation:
 
 ```yaml
 paths:
-  /aqi:
-    get:
-
   /weather:
     get:
-
-  /weatherdata:
-    get:
-
 ```
 
 ## Operation Objects
@@ -113,7 +106,7 @@ paths:
 
 Now we can remove a few unnecessary fields:
 
-* There's no need to include [`requestBody` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#requestBodyObject) here because none of the Mashape Weather API paths contain request body parameters.
+* There's no need to include [`requestBody` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#requestBodyObject) here because none of the OpenWeatherMap API paths contain request body parameters.
 * There's no need to include the  [`servers` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#serverObject) because the paths just use the same global `servers` URL that we [defined globally](pubapis_openapi_step3_servers_object.html) at the root level.
 * There's no need to include [security](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#securityRequirementObject) because all the paths use the same `security` object, which we defined globally at the root (see [step 6](pubapis_openapi_step6_security_object.html)).
 * There's no need to include `deprecated` because none of the paths are deprecated.
@@ -123,16 +116,6 @@ As a result, we can reduce the number of fields to concern ourselves with:
 
 ```yaml
 paths:
-  /aqi:
-    get:
-      tags:
-      summary:
-      description:
-      operationId:
-      externalDocs:
-      parameters:
-      responses:
-
   /weather:
     get:
       tags:
@@ -142,16 +125,6 @@ paths:
       externalDocs:
       parameters:
       responses:
-
-  /weatherdata:
-    get:
-      tags:
-      summary:
-      description:
-      operationId:
-      externalDocs:
-      parameters:
-      responses:      
 ```
 
 {: .tip}
@@ -178,247 +151,163 @@ The [`parameters` object](https://github.com/OAI/OpenAPI-Specification/blob/mast
 * `example`: An example of the media type. If your `examples` object contains examples, those examples appear in Swagger UI rather than the content in the `example` object.
 * [`examples`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#exampleObject) (object): An example of the media type, including the schema.
 
-{: .note}
-Rather than defining the schema here, it's common to place a `$ref` (reference) pointer to a fuller definition in the `components` object. This approach also allows you to single source the schema, because now you can have many references pointing to the same defined schema in `components`. You can use the same technique for `responses`, `parameters`, and other properties. I explain more about using `$ref` below in [Re-using definitions across objects](#reusing_definitions) and in [step 5](pubapis_openapi_step5_components_object.html).
-
-Here's the `operation` object defined for the Mashape Weather API:
+Here's the `operation` object defined for the OpenWeather API:
 
 ```yaml
 paths:
-  /aqi:
-    get:
-      tags:
-      - Air Quality
-      summary: getAqi
-      description: Gets the air quality index
-      operationId: GetAqi
-      externalDocs:
-        description: More details
-        url: "https://market.mashape.com/fyhao/weather-13#aqi"
-      parameters:
-
-      - name: lat
-        in: query
-        description: "Latitude coordinates."
-        required: true
-        style: form
-        explode: false
-        schema:
-          type: string
-        example: "37.3708698"
-
-      - name: lng
-        in: query
-        description: "Longitude coordinates."
-        required: true
-        style: form
-        explode: false
-        schema:
-          type: string
-        example: "-122.037593"
-
-      responses:
-        200:
-          description: AQI response
-          content:
-            text/plain:
-              schema:
-                type: string
-                description: AQI response
-                example: 52
   /weather:
     get:
-      servers:
-      - url: https://simple-weather.p.mashape.com
       tags:
-      - Weather Forecast
-      summary: getWeather
-      description: Gets the weather forecast in abbreviated form
-      operationId: GetWeather
-      externalDocs:
-        description: More details
-        url: "https://market.mashape.com/fyhao/weather-13#weather"
+      - weather
+      summary: Get current weather data
+      description: Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations.
+      operationId: WeatherGet
       parameters:
+
+      - name: q
+        in: query
+        description: "**City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes."
+        schema:
+          type: string
+
+      - name: id
+        in: query
+        description: "**City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded here http://bulk.openweathermap.org/sample/. You can include multiple cities in parameter -- just separate them by commas. The limit of locations is 20. NOTE: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls."
+        schema:
+          type: string
 
       - name: lat
         in: query
-        description: "Latitude coordinates."
-        required: true
-        style: form
-        explode: false
+        description: "**Latitude**. *Example: 35*. The latitude coordinate of the location of your interest. Must use with longitude."
         schema:
           type: string
-        example: "37.3708698"
 
-      - name: lng
+      - name: Longitude
         in: query
-        description: "Longitude coordinates."
-        required: true
-        style: form
-        explode: false
+        description: "**Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with latitude."
         schema:
           type: string
-        example: "-122.037593"
 
-      responses:
-        200:
-          description: weather response
-          content:
-            text/plain:
-              schema:
-                type: string
-                description: weather response
-                example: 26 c, Mostly Clear at Singapore, Singapore
-
-  /weatherdata:
-    get:
-      tags:
-      - Weather Forecast
-      summary: getWeatherData
-      description: Get weather forecast with lots of details
-      operationId: GetWeatherData
-      externalDocs:
-        description: More details
-        url: "https://market.mashape.com/fyhao/weather-13#weatherdata"
-      parameters:
-
-      - name: lat
+      - name: zip
         in: query
-        description: "Latitude coordinates."
-        required: true
-        style: form
-        explode: false
+        description: "Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default."
         schema:
           type: string
-        example: "37.3708698"
+          default: "94040,us"
+        example:
+          "94040,us"
 
-      - name: lng
+      - name: units
         in: query
-        description: "Longitude coordinates."
-        required: true
-        style: form
-        explode: false
+        description: '**Units**. *Example: imperial*. Possible values: `standard`, `metric`, `imperial`. When you do not use units parameter, the format is `standard` by default.'
         schema:
           type: string
-        example: "-122.037593"
+          enum: [standard, metric, imperial]
+        example: "imperial"
 
-      responses:
-        200:
-          description: Successful operation
-          content:
-            application/json:
-              schema:
-                description: Successful operation
-                $ref: '#/components/schemas/WeatherdataResponse'
+      - name: lang
+        in: query
+        description: '**Language**. *Example: en*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - `ar`, Bulgarian - `bg`, Catalan - `ca`, Czech - `cz`, German - `de`, Greek - `el`, English - `en`, Persian (Farsi) - `fa`, Finnish - `fi`, French - `fr`, Galician - `gl`, Croatian - `hr`, Hungarian - `hu`, Italian - `it`, Japanese - `ja`, Korean - `kr`, Latvian - `la`, Lithuanian - `lt`, Macedonian - `mk`, Dutch - `nl`, Polish - `pl`, Portuguese - `pt`, Romanian - `ro`, Russian - `ru`, Swedish - `se`, Slovak - `sk`, Slovenian - `sl`, Spanish - `es`, Turkish - `tr`, Ukrainian - `ua`, Vietnamese - `vi`, Chinese Simplified - `zh_cn`, Chinese Traditional - `zh_tw`.'
+        schema:
+          type: string
+          enum: [ar, bg, ca, cz, de, el, en, fa, fi, fr, gl, hr, hu, it, ja, kr, la, lt, mk, nl, pl, pt, ro, ru, se, sk, sl, es, tr, ua, vi, zh_cn, zh_tw]
+        example: "en"
+
+      - name: Mode
+        in: query
+        description: "**Mode**. *Example: html*. Determines format of response. Possible values are `xml` and `html`. If mode parameter is empty the format is `json` by default."
+        schema:
+          type: string
+          enum: [json, xml, html]
+        example: "json"
 ```
 
-## Re-using definitions across objects {#reusing_definitions}
+## Single-sourcing definitions across objects {#reusing_definitions}
 
-In this API, the `lat` and `lng` parameters are duplicated in each path. Copying and pasting this information multiple times is inefficient and can lead to inconsistency. The OpenAPI spec allows you to single source the parameter information from a common definition.
+Instead of defining all your parameters and schemas in the `paths` object, if you re-use the same parameters or schemas across multiple endpoints, you can store these definitions in `components` and then reference them using `$ref` pointers (`$ref` stands for [`reference` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#referenceObject)). I explain more about using `$ref` in [step 5](pubapis_openapi_step5_components_object.html).
 
-I'll dive into more details in the [`components` step](pubapis_openapi_step5_components_object.html), but for now, note that we can use a `$ref` property to refer to more details in the `components` object. See how `parameters` simply contains a [`reference` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#referenceObject):
+In this example, I'm just documenting one endpoint in the OpenWeatherMap API. But suppose some parameters such as `lat` and `lon` are re-used across many endpoints. In that case, you would want to store each of these parameters in `components` so that you can re-use them. Copying and pasting information multiple times is inefficient and can lead to inconsistency. The OpenAPI spec allows you to single source the parameter information from a common definition.
+
+The code below shows how you reference a common definition stored in `components`. See how `parameters` simply contains a `$ref: '#/components/parameters/q`, which is defined in `components`. For brevity, I included just 2 parameters in this example.
 
 ```yaml
+
 paths:
-  /aqi:
-    get:
-      tags:
-      - Air Quality
-      summary: getAqi
-      description: Gets the air quality index
-      operationId: GetAqi
-      externalDocs:
-        description: More details
-        url: "https://market.mashape.com/fyhao/weather-13#aqi"
-      parameters:
-        - $ref: '#/components/parameters/latParam'
-        - $ref: '#/components/parameters/lngParam'
-      responses:
-        200:
-          description: AQI response
-          content:
-            text/plain:
-              schema:
-                type: string
-                description: AQI response
-                example: 52
   /weather:
     get:
-      servers:
-      - url: https://simple-weather.p.mashape.com
       tags:
-      - Weather Forecast
-      summary: getWeather
-      description: Gets the weather forecast in abbreviated form
-      operationId: GetWeather
-      externalDocs:
-        description: More details
-        url: "https://market.mashape.com/fyhao/weather-13#weather"
+      - weather
+      summary: Get current weather data
+      description: Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations.
+      operationId: WeatherGet
       parameters:
-        - $ref: '#/components/parameters/latParam'
-        - $ref: '#/components/parameters/lngParam'
-      responses:
-        200:
-          description: weather response
-          content:
-            text/plain:
-              schema:
-                type: string
-                description: weather response
-                example: 26 c, Mostly Clear at Singapore, Singapore
+        - $ref: '#/components/parameters/q'
+        - $ref: '#/components/parameters/id'
 
-  /weatherdata:
-    get:
-      tags:
-        - Weather Forecast
-      summary: getWeatherData
-      description: Get weather forecast with lots of details
-      operationId: GetWeatherData
-      externalDocs:
-        description: More details
-        url: "https://market.mashape.com/fyhao/weather-13#weatherdata"
-      parameters:
-        - $ref: '#/components/parameters/latParam'
-        - $ref: '#/components/parameters/lngParam'
-      responses:
-        200:
-          description: Successful operation
-          content:
-            application/json:
-              schema:
-                description: Successful operation
-                $ref: '#/components/schemas/WeatherdataResponse'
-```
-
-Now we're not repeating the parameter information multiple times. Instead, in `components`, we define these parameters:
-
-```yaml
 components:
   parameters:
-    latParam:
-      name: lat
+    q:
       in: query
-      description: "Latitude coordinates."
-      required: true
-      style: form
-      explode: false
+      description: "**City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes."
       schema:
         type: string
-      example: "37.3708698"
-    lngParam:
-      name: lng
+    id:
       in: query
-      description: "Longitude coordinates."
-      required: true
-      style: form
-      explode: false
+      description: "**City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded here http://bulk.openweathermap.org/sample/. You can include multiple cities in parameter -- just separate them by commas. The limit of locations is 20. NOTE: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls."
       schema:
         type: string
-      example: "-122.037593"
 ```
 
-
 See [Storing re-used parameters in components](pubapis_openapi_step5_components_object.html#reused_parameters) for more details. Also see [Describing Parameters](https://swagger.io/docs/specification/describing-parameters/) in Swagger's OpenAPI documentation.
+
+## Responses
+
+One property of the operation object that we haven't yet defined is the [`responses` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#responsesObject). `responses` is at the same level as `parameters`. For the `responses` property, we typically just reference a full definition in the `components` object, so I'll cover the `responses` object in the next section &mdash; [Step 5: The components object](pubapis_openapi_step5_components_object.html).
+
+For now, just add a `$ref` pointer to it:
+
+```yaml
+paths:
+  /weather:
+    get:
+      tags:
+      summary: Get current weather data
+      description: Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations.
+      operationId: WeatherGet
+      parameters:
+
+      - name: q
+        in: query
+        description: "**City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes."
+        schema:
+          type: string
+
+      - name: id
+        in: query
+        description: "**City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded here http://bulk.openweathermap.org/sample/. You can include multiple cities in parameter -- just separate them by commas. The limit of locations is 20. NOTE: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls."
+        schema:
+          type: string
+
+        ...
+
+      responses:
+        200:
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/200'
+        404:
+          description: Not found response
+          content:
+            text/plain:
+              schema:
+                title: Weather not found
+                type: string
+                example: Not found
+```
+
+We'll define the details for `$ref: '#/components/schemas/WeatherGetResponse'` in the [next topic]((pubapis_openapi_step5_components_object.html)).
 
 ## Appearance of paths in Swagger UI
 
@@ -431,4 +320,4 @@ When you click **Try it out**, the `example` value populates the parameters fiel
 Each path is collapsed by default, but you can set whether the initial display is collapsed or open using the [`docExpansion` parameter in Swagger UI](https://github.com/swagger-api/swagger-ui#parameters).
 
 {: .tip}
-This `docExpansion` parameter is for Swagger UI and isn't part of the OpenAPI spec. Swagger UI has more than [20 different parameters](https://github.com/swagger-api/swagger-ui#parameters) that control its display. Currently, there isn't a parameter to hide the Models section or to disable the Try It Out section, but you can hide these functions through `display: none` with CSS, targeting the elements you want to hide. Additional Swagger UI parameters may be added in the future.
+This `docExpansion` parameter is for Swagger UI and isn't part of the OpenAPI spec. Swagger UI has more than [20 different parameters](https://github.com/swagger-api/swagger-ui#parameters) that control its display. If you don't want the `Models` section to appear, add the parameter `defaultModelsExpandDepth: -1,` in your Swagger UI file.

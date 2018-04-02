@@ -8,7 +8,7 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-In the [Swagger tutorial](pubapis_swagger.html), I referenced an [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification) document without explaining much about it. You simply plugged the document into a Swagger UI project. In this section, we'll dive more deeply into the OpenAPI specification. Specifically, we'll use the same [Mashape Weather API](https://market.mashape.com/fyhao/weather-13) that we've been using throughout other parts of this course as the content for our OpenAPI document.
+In the [Swagger tutorial](pubapis_swagger.html), I referenced an [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification) document without explaining much about it. You simply plugged the document into a Swagger UI project. In this section, we'll dive more deeply into the OpenAPI specification. Specifically, we'll use the same [OpenWeatherMap API](https://openweathermap.org/current) that we've been using throughout other parts of this course as the content for our OpenAPI document.
 
 * TOC
 {:toc}
@@ -136,8 +136,8 @@ My preferred tool for parsing and displaying information from the specification 
 
 You can see OpenAPI spec rendered with Swagger UI in the following links:
 
-* [Swagger UI with Mashape Weather API](http://idratherbewriting.com/learnapidoc/assets/files/swagger/)
-* [Embedded Swagger with Mashape Weather API](pubapis_swagger_demo.html)
+* [Swagger UI with OpenWeatherMap API](http://idratherbewriting.com/learnapidoc/assets/files/swagger/)
+* [Embedded Swagger with OpenWeatherMap API](pubapis_swagger_demo.html)
 
 ## Migrating from OpenAPI 2.0 to 3.0
 

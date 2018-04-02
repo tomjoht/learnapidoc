@@ -13,7 +13,7 @@ path1: /restapispecifications.html
 <img src="images/openapistep5.png"/>
 {% endif %}
 
-In the [step 4](pubapis_openapi_step4_paths_object.html), when we described the [`requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#requestBodyObject) and [`responses` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#responsesObject) objects, we used a [`schema`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#schemaObject) object to describe the model for the request or response. The `schema` refers to the data structure ( the fields, values, and hierarchy of the various objects and properties of a JSON or YAML object &mdash; see [What is a schema?](https://spacetelescope.github.io/understanding-json-schema/about.html#what-is-a-schema) for more details). It's common to use a reference pointer (`$ref`) for the `schema` object that points to more details in the `components` object.
+In the [step 4](pubapis_openapi_step4_paths_object.html), when we described the [`responses` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#responsesObject) object, we used a [`schema`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#schemaObject) object to describe the model for the request or response. The `schema` refers to the data structure (the fields, values, and hierarchy of the various objects and properties of a JSON or YAML object &mdash; see [What is a schema?](https://spacetelescope.github.io/understanding-json-schema/about.html#what-is-a-schema) for more details). It's common to use a reference pointer (`$ref`) for the `schema` object that points to more details in the `components` object.
 
 {% if site.format == "web" %}
 * TOC
@@ -22,12 +22,12 @@ In the [step 4](pubapis_openapi_step4_paths_object.html), when we described the 
 
 ## Reasons to use the components object
 
-Describing the schema of complex responses can be one of the more challenging aspects of the OpenAPI spec. While our Mashape weather API is simple, the response from the `weatherdata` endpoint is complex. Although you can define the schema directly in the `requestBody` or `responses` object, you typically don't list it there for two reasons:
+Describing the schema of complex responses can be one of the more challenging aspects of the OpenAPI spec. Although you can define the schema directly in the `requestBody` or `responses` object, you typically don't list it there for two reasons:
 
 * You might want to re-use parts of the schema in other requests or responses. It's common to have the same object, such as `units` or `days`, appear in multiple places in an API. Through the `components` object, OpenAPI allows you to re-use these same definitions in multiple places.
 * You might not want to clutter up your `paths` object with too many request and response details, since the `paths` object is already somewhat complex with several levels of objects.
 
-Instead of listing the schema for your requests and responses in the `paths` object, for more complex schemas (or for schemas that are re-used in multiple operations or paths), you typically use a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#referenceObject), referenced through `$ref`, that refers to a specific definition in the [`components` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#componentsObject).
+Instead of listing the schema for your requests and responses in the `paths` object, for more complex schemas (or for schemas that are re-used in multiple operations or paths), you typically use a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#referenceObject) (referenced with `$ref`) that refers to a specific definition in the [`components` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#componentsObject). See [Using $ref](https://swagger.io/docs/specification/using-ref/) for more details on this standard JSON reference property.
 
 Think of the `components` object like an appendix where the re-usable details are provided. If multiple parts of your spec have the same schema, you point each of these references to the same object in your `components` object, and in so doing you single source the content. The `components` object can even be [stored in a separate file](http://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-8-splitting-specification-file/) if you have a large API and want to organize the information that way. (However, with multiple files, you wouldn't be able to use the online Swagger Editor to validate the content.)
 
@@ -47,708 +47,293 @@ You can store a lot of different re-usable objects in the `components` object. T
 
 The properties for each object inside `components` are the same as they are when used in other parts of the OpenAPI spec.
 
-## Re-using parameters in components {#reused_parameters}
-
-In the Mashape Weather API, the `lat` and `lng` parameters are the same for each of the paths. Rather than duplicate this same description in each path, we can store the object in the `components`. To do this, in the `path` object, we simply include a `$ref` pointer that refers to the location in `components` that contains these details:
-
-```yaml
-paths:
-  /aqi:
-    get:
-      ...
-      parameters:
-            - $ref: '#/components/parameters/latParam'
-            - $ref: '#/components/parameters/lngParam'
-      ...
-```
-
-(Ellipses (`...`) indicate truncated code.)
-
-The `latParam` and `lngParam` names are arbitrary. These names just act like variables that are defined in the `components` section.
-
-Notice that the `parameters` are stored under `components/parameters`. Now let's define the parameters one time in `components`:
-
-```yaml
-components:
-  parameters:
-    latParam:
-      name: lat
-      in: query
-      description: "Latitude coordinates."
-      required: true
-      style: form
-      explode: false
-      schema:
-        type: string
-      example: "37.3708698"
-    lngParam:
-      name: lng
-      in: query
-      description: "Longitude coordinates."
-      required: true
-      style: form
-      explode: false
-      schema:
-        type: string
-      example: "-122.037593"
-```
-
-{: .tip}
-See [Using $ref](https://swagger.io/docs/specification/using-ref/) for more details on this standard JSON reference property.
-
 ## Re-using response objects
 
-Response objects are another common object to re-use across paths. In this API, suppose we had a `404` response for each path indicating a resource is not found. Here's how we can reference that in the response object:
+In the previous topic, I explained how to [re-use parameter definitions in components](pubapis_openapi_step4_paths_object.html#reusing_definitions), so I won't re-explain the approach. Here we'll cover how to re-use the schema definitions in the `responses` objects.
+
+Although we don't need to reuse the `weather` response in this exercise (because we're only documenting one endpoint), it'll be better to organize this schema definition under `components` anyway because it reduces the detail under the `paths` object. If you recall in the previous step ([OpenAPI tutorial step 4: The paths object](pubapis_openapi_step4_paths_object.html), the `responses` object for the `current` endpoint looked like this:
 
 ```yaml
 paths:
-  /aqi:
+  /current:
     get:
+      parameters:
+
       ...
+
       responses:
         200:
-          description: AQI response
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/200'
+        404:
+          description: Not found response
           content:
             text/plain:
               schema:
+                title: Weather not found
                 type: string
-                description: AQI response
-                example: 52
-        404:
-          $ref: '#/components/responses/404'
+                example: Not found
 ```
 
-Then in `components/responses`, we define it:
+Then in `components/schemas`, we define the `200` schema.
 
-```yaml
-components:
-  responses:
-    404:
-      description: Not found
-      content:
-        text/plain:
-          schema:
-            type: string
-            description: Not found
-            example: Not found
+Before we describe the response in the `components` object, it might be helpful to review what the [`current` response] from the OpenWeatherMap API looks like. The response contains multiple nested objects at various levels.
+
+
+```json
+{
+  "coord": {
+    "lon": 145.77,
+    "lat": -16.92
+  },
+  "weather": [
+    {
+      "id": 803,
+      "main": "Clouds",
+      "description": "broken clouds",
+      "icon": "04n"
+    }
+  ],
+  "base": "cmc stations",
+  "main": {
+    "temp": 293.25,
+    "pressure": 1019,
+    "humidity": 83,
+    "temp_min": 289.82,
+    "temp_max": 295.37,
+    "sea_level": 984,
+    "grnd_level": 990
+  },
+  "wind": {
+    "speed": 5.1,
+    "deg": 150
+  },
+  "clouds": {
+    "all": 75
+  },
+  "rain": {
+    "3h": 3
+  },
+  "snow": {
+    "3h": 6
+  },
+  "dt": 1435658272,
+  "sys": {
+    "type": 1,
+    "id": 8166,
+    "message": 0.0166,
+    "country": "AU",
+    "sunrise": 1435610796,
+    "sunset": 1435650870
+  },
+  "id": 2172797,
+  "name": "Cairns",
+  "cod": 200
+}
 ```
 
-## The weatherdata response
-
-Although we don't need to reuse the `weatherdata` response, it's so lengthy and complex, it'll be better to organize it under `components`. If you recall in the previous step ([OpenAPI tutorial step 4: The paths object](pubapis_openapi_step4_paths_object.html), the `responses` object for the `weatherdata` endpoint looked like this:
-
-```yaml
-responses:
-  200:
-    description: Successful operation
-    content:
-      application/json:
-        schema:
-          description: Successful operation
-          $ref: '#/components/schemas/WeatherdataResponse'
-```
-
-The `$ref` points to a definition stored in the `components` object. Before we describe the response in the `components` object, it might be helpful to review what the [`weatherdata` response looks like](http://idratherbewriting.com/learnapidoc/assets/files/swagger/#/Weather_Forecast/GetWeatherData). The response contains multiple nested objects at various levels. (Note that this Mashape Weather API builds off of a [Yahoo weather service API](https://developer.yahoo.com/weather/documentation.html), so the data returned in the `weather` and `weatherdata` endpoints is highly similar to the data returned by the Yahoo weather service API.)
-
-There are a couple of ways to go about describing this response. You could create one long description like this:
-
-```yaml
-components:
-  schemas:
-    WeatherdataResponse:
-      title: weatherdata response
-      type: object
-      properties:
-        query:
-          type: object
-          properties:
-            count:
-              type: integer
-              description: The number of items (rows) returned -- specifically, the number of sub-elements in the results property
-              format: int32
-              example: 1
-            created:
-              type: string
-              description: The date and time the response was created
-              example: 6/14/2017 2:30:14 PM
-            lang:
-              type: string
-              description: The locale for the response
-              example: en-US
-            results:
-              type: object
-              properties:
-                channel:
-                  type: object
-                  properties:
-                    units:
-                      description: Units for various aspects of the forecast. Note that the default is to use metric formats for the units (Celsius, kilometers, millibars, kilometers per hour).
-                      Units:
-                        description: Units for various aspects of the forecast. Note that the default is to use metric formats for the units (Celsius, kilometers, millibars, kilometers per hour).
-                        type: object
-                        properties:
-                          distance:
-                            type: string
-                            description: Units for distance, mi for miles or km for kilometers
-                            example: km
-                          pressure:
-                            type: string
-                            description: Units of barometric pressure, "in" for pounds per square inch or "mb" for millibars.
-                            example: mb
-                          speed:
-                            type: string
-                            description: Units of speed, "mph" for miles per hour or "kph" for kilometers per hour.
-                            example: km/h
-                          temperature:
-                            type: string
-                            description: Degree units, "f" for Fahrenheit or "c" for Celsius.
-                            example: C
-
-                    title:
-                      type: string
-                      description: The title of the feed, which includes the location city
-                      example: Yahoo! Weather - Singapore, South West, SG
-
-                    link:
-                      type: string
-                      description: The URL for the Weather page of the forecast for this location
-                      example: http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/
-
-                    description:
-                      type: string
-                      description: The overall description of the feed including the location
-                      example: Yahoo! Weather for Singapore, South West, SG
-
-                    language:
-                      type: string
-                      description: The language of the weather forecast
-                      example: en-us
-
-                    lastBuildDate:
-                      type: string
-                      description: The last time the feed was updated. The format is in the date format defined by [RFC822 Section 5](http://www.rfc-editor.org/rfc/rfc822.txt).
-                      example: Wed, 14 Jun 2017 10:30 PM SGT
-
-                    ttl:
-                      type: string
-                      description: Time to Live -- how long in minutes this feed should be cached.
-                      example: 60
-
-                    location:
-                      description: The location of this forecast
-                      type: object
-                      properties:
-                        city:
-                          type: string
-                          description: City name
-                          example: Singapore
-                        country:
-                          type: string
-                          description: Two-character country code
-                          example: Singapore
-                        region:
-                          type: string
-                          description: State, territory, or region, if given
-                          example: South West
-
-                    wind:
-                      description: Forecast information about wind
-                      type: object
-                      properties:
-                        chill:
-                          type: integer
-                          description: Wind chill in degrees
-                          format: int32
-                          example: 81
-                        direction:
-                          type: integer
-                          description: Wind direction, in degrees
-                          format: int32
-                          example: 158
-                        speed:
-                          type: integer
-                          description: Wind speed, in the units specified in the speed attribute of the units element (mph or kph)
-                          format: int32
-
-                    atmosphere:
-                      description: Forecast information about current atmospheric pressure, humidity, and visibility
-                      type: object
-                      properties:
-                        humidity:
-                          type: integer
-                          description: humidity, in percent
-                          format: int32
-                          example: 87
-                        pressure:
-                          type: integer
-                          description: Barometric pressure, in the units specified by the pressure attribute of the yweather:units element ("in" or "mb").
-                          format: int32
-                        rising:
-                          type: integer
-                          description: 'State of the barometric pressure: steady (0), rising (1), or falling (2).'
-                          format: int32
-                          example: 0
-                        visibility:
-                          type: integer
-                          description: Visibility, in the units specified by the distance attribute of the units element ("mi" or "km"). Note that the visibility is specified as the actual value * 100. For example, a visibility of 16.5 miles will be specified as 1650. A visibility of 14 kilometers will appear as 1400.
-                          format: int32
-
-                    astronomy:
-                      description: Forecast information about current astronomical conditions
-                      type: object
-                      properties:
-                        sunrise:
-                          type: string
-                          description: Today's sunrise time. The time is a string in a local time format of "h:mm am/pm"
-                          example: 6:59 am
-                        sunset:
-                          type: string
-                          description: Today's sunset time. The time is a string in a local time format of "h:mm am/pm"
-                          example: 7:11 pm
-
-                    image:
-                      description: The image used to identify this feed
-                      type: object
-                      properties:
-                        title:
-                          type: string
-                          description: The title of the image.
-                          example: Yahoo! Weather
-                        width:
-                          type: string
-                          description: The width of the image, in pixels
-                          example: 142
-                        height:
-                          type: string
-                          description: The height of the image, in pixels
-                          example: 18
-                        link:
-                          type: string
-                          description: Description of link
-                          example: http://weather.yahoo.com
-                        url:
-                          type: string
-                          description: The URL of Yahoo! Weather
-                          example: http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif
-
-                    item:
-                      description: The item element contains current conditions and forecast for the given location. There are multiple weather forecast elements for today and tomorrow.
-                      type: object
-                      properties:
-                        title:
-                          type: string
-                          description: The forecast title and time.
-                          example: Conditions for Singapore, South West, SG at 09:00 PM SGT
-                        lat:
-                          type: string
-                          description: The latitude of the location.
-                          example: 1.33464
-                        long:
-                          type: string
-                          description: The longitude of the location.
-                          example: 103.726471
-                        link:
-                          type: string
-                          description: The Yahoo! Weather URL for this forecast.
-                          example: http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/
-                        pubDate:
-                          type: string
-                          description: The date and time this forecast was posted, in the date format defined by [RFC822 Section 5](http://www.rfc-editor.org/rfc/rfc822.txt).
-                          example: Wed, 14 Jun 2017 09:00 PM SGT
-                        condition:
-                          description: The current weather conditions
-                          type: object
-                          properties:
-                            code:
-                              type: integer
-                              description: The condition code for this forecast. You could use this code to choose a text description or image for the forecast. The possible values for this element are described in the [Condition Codes](https://developer.yahoo.com/weather/).documentation.html.
-                              format: int32
-                              example: 33
-                            date:
-                              type: string
-                              description: The current date and time for which this forecast applies. The date is in RFC822 Section 5 format.
-                              example: Wed, 14 Jun 2017 09:00 PM SGT
-                            temp:
-                              type: integer
-                              description: The current temperature, in the units specified by the units element.
-                              format: int32
-                              example: 26
-                            text:
-                              type: string
-                              description: A textual description of conditions
-                              example: Mostly Clear
-
-
-                        forecast:
-                          description: The item element contains current conditions and forecast for the given location. There are multiple weather forecast elements for today and tomorrow.
-                          type: array
-                          items:
-                            type: object
-                            properties:
-                              code:
-                                type: integer
-                                description: The condition code for this forecast. You could use this code to choose a text description or image for the forecast. The possible values for this element are described in the [Condition Codes](https://developer.yahoo.com/weather/documentation.html#codes).
-                                format: int32
-                                example: 4
-                              date:
-                                type: string
-                                description: The date to which this forecast applies. The date is in 'dd Mmm yyyy' format, for example '30 Nov 2005'
-                                example: 14 Jun 2017
-                              day:
-                                type: string
-                                description: Day of the week to which this forecast applies. Possible values are Mon Tue Wed Thu Fri Sat Sun.
-                                example: Wed
-                              high:
-                                type: integer
-                                description: The forecasted high temperature for this day, in the units specified by the units element.
-                                format: int32
-                                example: 28
-                              low:
-                                type: integer
-                                description: The forecasted low temperature for this day, in the units specified by the units element.
-                                format: int32
-                                example: 25
-                              text:
-                                type: string
-                                description: A textual description of conditions
-                                example: Thunderstorms
-                            description: The weather forecast for a specific day. The item element contains multiple forecast elements for today and tomorrow.
-                          Guid:
-                            title: guid
-                            type: object
-                            properties:
-                              isPermaLink:
-                                type: string
-                                description: The attribute isPermaLink is false.
-                                example: false
-                            description: Unique identifier for the forecast, made up of the location ID, the date, and the time.
-                        description:
-                          type: string
-                          description: A simple summary of the current conditions and tomorrow's forecast, in HTML format, including a link to Yahoo! Weather for the full forecast.
-                          example: "<![CDATA[<img src=\"http:\/\/l.yimg.com\/a\/i\/us\/we\/52\/4.gif\"\/>\n<BR \/>\n<b>Current Conditions:<\/b>\n<BR \/>Thunderstorms\n<BR \/>\n<BR \/>\n<b>Forecast:<\/b>\n<BR \/> Fri - Thunderstorms. High: 30Low: 25\n<BR \/> Sat - Thunderstorms. High: 28Low: 25\n<BR \/> Sun - Thunderstorms. High: 28Low: 25\n<BR \/> Mon - Thunderstorms. High: 28Low: 25\n<BR \/> Tue - Thunderstorms. High: 28Low: 25\n<BR \/>\n<BR \/>\n<a href=\"http:\/\/us.rd.yahoo.com\/dailynews\/rss\/weather\/Country__Country\/*https:\/\/weather.yahoo.com\/country\/state\/city-91792352\/\">Full Forecast at Yahoo! Weather<\/a>\n<BR \/>\n<BR \/>\n(provided by <a href=\"http:\/\/www.weather.com\" >The Weather Channel<\/a>)\n<BR \/>\n]]>"
-                        guid:
-                          type: string
-                          description: Unique identifier for the forecast, made up of the location ID, the date, and the time.
-                          format: uuid
-```
-
-One challenge is that it's difficult to keep all the levels straight. With so many nested objects, it's dizzying and confusing. Additionally, it's easy to make mistakes. Worst of all, you can't re-use the individual objects. This undercuts one of the main reasons for storing this object in `components` in the first place.
+There are a couple of ways to go about describing this response. You could create one long description that contains all the hierarchy reflected. One challenge is that it's difficult to keep all the levels straight. With so many nested objects, it's dizzying and confusing. Additionally, it's easy to make mistakes. Worst of all, you can't re-use the individual objects. This undercuts one of the main reasons for storing this object in `components` in the first place.
 
 Another approach is to make each object its own entity in the `components`. Whenever an object contains an object, add a `$ref` value that points to the new object. This way objects remain shallow and you won't get lost in a sea of confusing sublevels.
 
+Here's the description of the `200` response for the `current` endpoint:
+
 ```yaml
 components:
   schemas:
-    WeatherdataResponse:
-      title: weatherdata response
+    200:
+      title: Successful response
       type: object
       properties:
-        query:
-          $ref: '#/components/schemas/Query'
-    Query:
-      title: query
-      type: object
-      properties:
-        count:
-          type: integer
-          description: The number of items (rows) returned -- specifically, the number of sub-elements in the results property
-          format: int32
-          example: 1
-        created:
-          type: string
-          description: The date and time the response was created
-          example: 6/14/2017 2:30:14 PM
-        lang:
-          type: string
-          description: The locale for the response
-          example: en-US
-        results:
-          $ref: '#/components/schemas/Results'
-    Results:
-      title: results
-      type: object
-      properties:
-        channel:
-          $ref: '#/components/schemas/Channel'
-    Channel:
-      title: channel
-      type: object
-      properties:
-        units:
-          description: Units for various aspects of the forecast. Note that the default is to use metric formats for the units (Celsius, kilometers, millibars, kilometers per hour).
-          $ref: '#/components/schemas/Units'
-        title:
-          type: string
-          description: The title of the feed, which includes the location city
-          example: Yahoo! Weather - Singapore, South West, SG
-        link:
-          type: string
-          description: The URL for the Weather page of the forecast for this location
-          example: http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/
-        description:
-          type: string
-          description: The overall description of the feed including the location
-          example: Yahoo! Weather for Singapore, South West, SG
-        language:
-          type: string
-          description: The language of the weather forecast
-          example: en-us
-        lastBuildDate:
-          type: string
-          description: The last time the feed was updated. The format is in the date format defined by [RFC822 Section 5](http://www.rfc-editor.org/rfc/rfc822.txt).
-          example: Wed, 14 Jun 2017 10:30 PM SGT
-        ttl:
-          type: string
-          description: Time to Live -- how long in minutes this feed should be cached.
-          example: 60
-        location:
-          description: The location of this forecast
-          $ref: '#/components/schemas/Location'
-        wind:
-          description: Forecast information about wind
-          $ref: '#/components/schemas/Wind'
-        atmosphere:
-          description: Forecast information about current atmospheric pressure, humidity, and visibility
-          $ref: '#/components/schemas/Atmosphere'
-        astronomy:
-          description: Forecast information about current astronomical conditions
-          $ref: '#/components/schemas/Astronomy'
-        image:
-          description: The image used to identify this feed
-          $ref: '#/components/schemas/Image'
-        item:
-          description: The item element contains current conditions and forecast for the given location. There are multiple weather forecast elements for today and tomorrow.
-          $ref: '#/components/schemas/Item'
-    Units:
-      title: units
-      type: object
-      properties:
-        distance:
-          type: string
-          description: Units for distance, mi for miles or km for kilometers
-          example: km
-        pressure:
-          type: string
-          description: Units of barometric pressure, "in" for pounds per square inch or "mb" for millibars.
-          example: mb
-        speed:
-          type: string
-          description: Units of speed, "mph" for miles per hour or "kph" for kilometers per hour.
-          example: km/h
-        temperature:
-          type: string
-          description: Degree units, "f" for Fahrenheit or "c" for Celsius.
-          example: C
-      description: Units for various aspects of the forecast. Note that the default is to use metric formats for the units (Celsius, kilometers, millibars, kilometers per hour).
-    Location:
-      title: location
-      type: object
-      properties:
-        city:
-          type: string
-          description: City name
-          example: Singapore
-        country:
-          type: string
-          description: Two-character country code
-          example: Singapore
-        region:
-          type: string
-          description: State, territory, or region, if given
-          example: South West
-      description: The location of this forecast
-    Wind:
-      title: wind
-      type: object
-      properties:
-        chill:
-          type: integer
-          description: Wind chill in degrees
-          format: int32
-          example: 81
-        direction:
-          type: integer
-          description: Wind direction, in degrees
-          format: int32
-          example: 158
-        speed:
-          type: integer
-          description: Wind speed, in the units specified in the speed attribute of the units element (mph or kph)
-          format: int32
-      description: Forecast information about wind
-    Atmosphere:
-      title: atmosphere
-      type: object
-      properties:
-        humidity:
-          type: integer
-          description: humidity, in percent
-          format: int32
-          example: 87
-        pressure:
-          type: integer
-          description: Barometric pressure, in the units specified by the pressure attribute of the yweather:units element ("in" or "mb").
-          format: int32
-        rising:
-          type: integer
-          description: 'State of the barometric pressure: steady (0), rising (1), or falling (2).'
-          format: int32
-          example: 0
-        visibility:
-          type: integer
-          description: Visibility, in the units specified by the distance attribute of the units element ("mi" or "km"). Note that the visibility is specified as the actual value * 100. For example, a visibility of 16.5 miles will be specified as 1650. A visibility of 14 kilometers will appear as 1400.
-          format: int32
-      description: Forecast information about current atmospheric pressure, humidity, and visibility
-    Astronomy:
-      title: astronomy
-      type: object
-      properties:
-        sunrise:
-          type: string
-          description: Today's sunrise time. The time is a string in a local time format of "h:mm am/pm"
-          example: 6:59 am
-        sunset:
-          type: string
-          description: Today's sunset time. The time is a string in a local time format of "h:mm am/pm"
-          example: 7:11 pm
-      description: Forecast information about current astronomical conditions
-    Image:
-      title: image
-      type: object
-      properties:
-        title:
-          type: string
-          description: The title of the image.
-          example: Yahoo! Weather
-        width:
-          type: string
-          description: The width of the image, in pixels
-          example: 142
-        height:
-          type: string
-          description: The height of the image, in pixels
-          example: 18
-        link:
-          type: string
-          description: Description of link
-          example: http://weather.yahoo.com
-        url:
-          type: string
-          description: The URL of Yahoo! Weather
-          example: http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif
-      description: The image used to identify this feed
-    Item:
-      title: item
-      type: object
-      properties:
-        title:
-          type: string
-          description: The forecast title and time.
-          example: Conditions for Singapore, South West, SG at 09:00 PM SGT
-        lat:
-          type: string
-          description: The latitude of the location.
-          example: 1.33464
-        long:
-          type: string
-          description: The longitude of the location.
-          example: 103.726471
-        link:
-          type: string
-          description: The Yahoo! Weather URL for this forecast.
-          example: http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91792352/
-        pubDate:
-          type: string
-          description: The date and time this forecast was posted, in the date format defined by [RFC822 Section 5](http://www.rfc-editor.org/rfc/rfc822.txt).
-          example: Wed, 14 Jun 2017 09:00 PM SGT
-        condition:
-          description: The current weather conditions
-          $ref: '#/components/schemas/Condition'
-        forecast:
+        coord:
+          $ref: '#/components/schemas/Coord'
+        weather:
           type: array
           items:
-            $ref: '#/components/schemas/ForecastArray'
-          description: ''
+            $ref: '#/components/schemas/Weather'
+          description: (more info Weather condition codes)
+        base:
+          type: string
+          description: Internal parameter
+          example: cmc stations
+        main:
+          $ref: '#/components/schemas/Main'
+        wind:
+          $ref: '#/components/schemas/Wind'
+        clouds:
+          $ref: '#/components/schemas/Clouds'
+        rain:
+          $ref: '#/components/schemas/Rain'
+        snow:
+          $ref: '#/components/schemas/Snow'
+        dt:
+          type: integer
+          description: Time of data calculation, unix, UTC
+          format: int32
+          example: 1435658272
+        sys:
+          $ref: '#/components/schemas/Sys'
+        id:
+          type: integer
+          description: City ID
+          format: int32
+          example: 2172797
+        name:
+          type: string
+          example: Cairns
+        cod:
+          type: integer
+          description: Internal parameter
+          format: int32
+          example: 200
+    Coord:
+      title: Coord
+      type: object
+      properties:
+        lon:
+          type: number
+          description: City geo location, longitude
+          example: 145.77000000000001
+        lat:
+          type: number
+          description: City geo location, latitude
+          example: -16.920000000000002
+    Weather:
+      title: Weather
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Weather condition id
+          format: int32
+          example: 803
+        main:
+          type: string
+          description: Group of weather parameters (Rain, Snow, Extreme etc.)
+          example: Clouds
         description:
           type: string
-          description: A simple summary of the current conditions and tomorrow's forecast, in HTML format, including a link to Yahoo! Weather for the full forecast.
-          example: "<![CDATA[<img src=\"http:\/\/l.yimg.com\/a\/i\/us\/we\/52\/4.gif\"\/>\n<BR \/>\n<b>Current Conditions:<\/b>\n<BR \/>Thunderstorms\n<BR \/>\n<BR \/>\n<b>Forecast:<\/b>\n<BR \/> Fri - Thunderstorms. High: 30Low: 25\n<BR \/> Sat - Thunderstorms. High: 28Low: 25\n<BR \/> Sun - Thunderstorms. High: 28Low: 25\n<BR \/> Mon - Thunderstorms. High: 28Low: 25\n<BR \/> Tue - Thunderstorms. High: 28Low: 25\n<BR \/>\n<BR \/>\n<a href=\"http:\/\/us.rd.yahoo.com\/dailynews\/rss\/weather\/Country__Country\/*https:\/\/weather.yahoo.com\/country\/state\/city-91792352\/\">Full Forecast at Yahoo! Weather<\/a>\n<BR \/>\n<BR \/>\n(provided by <a href=\"http:\/\/www.weather.com\" >The Weather Channel<\/a>)\n<BR \/>\n]]>"
-        guid:
+          description: Weather condition within the group
+          example: broken clouds
+        icon:
           type: string
-          description: Unique identifier for the forecast, made up of the location ID, the date, and the time.
-          format: uuid
-      description: The item element contains current conditions and forecast for the given location. There are multiple weather forecast elements for today and tomorrow.
-    Condition:
-      title: condition
+          description: Weather icon id
+          example: 04n
+    Main:
+      title: Main
       type: object
       properties:
-        code:
-          type: integer
-          description: The condition code for this forecast. You could use this code to choose a text description or image for the forecast. The possible values for this element are described in the [Condition Codes](https://developer.yahoo.com/weather/).documentation.html.
-          format: int32
-          example: 33
-        date:
-          type: string
-          description: The current date and time for which this forecast applies. The date is in RFC822 Section 5 format.
-          example: Wed, 14 Jun 2017 09:00 PM SGT
         temp:
+          type: number
+          description: 'Temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.'
+          example: 293.25
+        pressure:
           type: integer
-          description: The current temperature, in the units specified by the units element.
+          description: Atmospheric pressure (on the sea level, if there is no sea_level or grnd_level data), hPa
           format: int32
-          example: 26
-        text:
-          type: string
-          description: A textual description of conditions
-          example: Mostly Clear
-      description: The current weather conditions
-    ForecastArray:
-      title: forecast array
+          example: 1019
+        humidity:
+          type: integer
+          description: Humidity, %
+          format: int32
+          example: 83
+        temp_min:
+          type: number
+          description: 'Minimum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopolises geographically expanded (use these parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.'
+          example: 289.81999999999999
+        temp_max:
+          type: number
+          description: 'Maximum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopolises geographically expanded (use these parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.'
+          example: 295.37
+        sea_level:
+          type: number
+          description: Atmospheric pressure on the sea level, hPa
+          example: 984
+        grnd_level:
+          type: number
+          description: Atmospheric pressure on the ground level, hPa
+          example: 990
+    Wind:
+      title: Wind
       type: object
       properties:
-        code:
+        speed:
+          type: number
+          description: 'Wind speed. Unit Default: meter/sec, Metric: meter/sec, Imperial: miles/hour.'
+          example: 5.0999999999999996
+        deg:
           type: integer
-          description: The condition code for this forecast. You could use this code to choose a text description or image for the forecast. The possible values for this element are described in the [Condition Codes](https://developer.yahoo.com/weather/documentation.html#codes).
+          description: Wind direction, degrees (meteorological)
           format: int32
-          example: 4
-        date:
-          type: string
-          description: The date to which this forecast applies. The date is in 'dd Mmm yyyy' format, for example '30 Nov 2005'
-          example: 14 Jun 2017
-        day:
-          type: string
-          description: Day of the week to which this forecast applies. Possible values are Mon Tue Wed Thu Fri Sat Sun.
-          example: Wed
-        high:
-          type: integer
-          description: The forecasted high temperature for this day, in the units specified by the units element.
-          format: int32
-          example: 28
-        low:
-          type: integer
-          description: The forecasted low temperature for this day, in the units specified by the units element.
-          format: int32
-          example: 25
-        text:
-          type: string
-          description: A textual description of conditions
-          example: Thunderstorms
-      description: The weather forecast for a specific day. The item element contains multiple forecast elements for today and tomorrow.
-    Guid:
-      title: guid
+          example: 150
+    Clouds:
+      title: Clouds
       type: object
       properties:
-        isPermaLink:
+        all:
+          type: integer
+          description: Cloudiness, %
+          format: int32
+          example: 75
+    Rain:
+      title: Rain
+      type: object
+      properties:
+        3h:
+          type: integer
+          description: Rain volume for the last 3 hours
+          format: int32
+          example: 3
+    Snow:
+      title: Snow
+      type: object
+      properties:
+        3h:
+          type: number
+          description: Snow volume for the last 3 hours
+          example: 6
+    Sys:
+      title: Sys
+      type: object
+      properties:
+        type:
+          type: integer
+          description: Internal parameter
+          format: int32
+          example: 1
+        id:
+          type: integer
+          description: Internal parameter
+          format: int32
+          example: 8166
+        message:
+          type: number
+          description: Internal parameter
+          example: 0.0166
+        country:
           type: string
-          description: The attribute isPermaLink is false.
-          example: false
-      description: Unique identifier for the forecast, made up of the location ID, the date, and the time.
+          description: Country code (GB, JP etc.)
+          example: AU
+        sunrise:
+          type: integer
+          description: Sunrise time, unix, UTC
+          format: int32
+          example: 1435610796
+        sunset:
+          type: integer
+          description: Sunset time, unix, UTC
+          format: int32
+          example: 1435650870
 ```
 
-Not only can you use `$ref` properties in other parts of your spec, you can use it within `components` too.
+As you can see, not only can you use `$ref` properties in other parts of your spec, you can use it within `components` too.
 
 ## Appearance of components in Swagger UI
 
-Swagger UI displays each object in `components` in a section called `Models` at the end of your Swagger UI display. If you decided to consolidate all schemas into a single object, without using the `$ref` property to point to new objects, then you will see just one object in Models. If you split out the objects, then you see each object listed separately, including the object that contains all the references.
+By default, Swagger UI displays each object in `components` in a section called `Models` at the end of your Swagger UI display. If you decided to consolidate all schemas into a single object, without using the `$ref` property to point to new objects, then you will see just one object in Models. If you split out the objects, then you see each object listed separately, including the object that contains all the references.
 
 Because I want to re-use objects, I'm going define each object in `components` separately. As a result, the Models section looks like this:
 

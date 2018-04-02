@@ -79,7 +79,7 @@ tags:
 externalDocs:
 ```
 
-In the following sections, we'll proceed through each of these objects and document the Mashape Weather API. Tackling each root-level object individually helps reduce the complexity of the spec.
+In the following sections, we'll proceed through each of these objects and document the [OpenWeatherMap current API](https://openweathermap.org/current). Tackling each root-level object individually helps reduce the complexity of the spec.
 
 {: .note}
 `components` is more of a storage object for schemas defined in other objects, but to avoid introducing too much at once, I'll wait until the [`components` tutorial](pubapis_openapi_step5_components_object.html) to fully explain how to reference a schema in one object and add a reference pointer to the full definition in `components`.
