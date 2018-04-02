@@ -28,6 +28,6 @@ If you have a lot of endpoints to document, you'll probably want to create templ
 
 ## Next steps
 
-Now that you've had your head buried in API reference documentation, it's time to dive into testing a bit more. As you work with API endpoints and other code, you'll need to test these endpoints yourself, both to gather and verify the information in your documentation. Testing isn't always straightfoward, so I devote an entire section to this topic.
+Now that you've completed the [API reference tutorial](docapis_api_reference_tutorial_overview.html), you're ready to either critique or create your own API reference topic. See the next topic, [Activity: Critique or create an API reference topic](docapis_api_reference_activity.html).
 
 {% include random_ad.html %}

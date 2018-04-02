@@ -21,21 +21,13 @@ Slides: [Intro to API documentation](http://idratherbewriting.com/intro-to-api-d
 
 Explore the basic sections in API reference documentation in these 2 weather APIs:
 
-* [Mashape Weather API](https://market.mashape.com/fyhao/weather-13).
+* [OpenWeatherMap API](https://openweathermap.org/api/).
 * [Aeris Weather API](https://www.aerisweather.com/support/docs/api/)
 
 ### Activity: Make a curl request
 
-Mac:
-
-```
-curl --get --include 'https://simple-weather.p.mashape.com/weatherdata?lat=37.3710062&lng=-122.0375935' -H 'X-Mashape-Key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p' -H 'Accept: application/json'
-```
-
-Windows:
-
-```
-curl --get -k --include "https://simple-weather.p.mashape.com/weatherdata?lat=37.3710062&lng=-122.0375935" -H "X-Mashape-Key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p" -H "Accept: application/json"
+```bash
+curl -I -X GET "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
 ```
 
 ### Activity: Postman client
@@ -153,7 +145,7 @@ Slides: [OpenAPI and Swagger](http://idratherbewriting.com/openapi-and-swagger/#
 ### Activity: Swagger Editor
 
 1. Paste [this YAML file](/learnapidoc/docs/rest_api_specifications/openapi_weather.yml) into [Swagger Editor](https://editor.swagger.io/) and make updates.
-2. Go to [this SwaggerHub API](https://app.swaggerhub.com/apis/IdRatherBeWriting/MashapeWeatherAPI/2.3). Observe Generate Client SDK options.
+2. Go to [this SwaggerHub API](https://app.swaggerhub.com/apis/IdRatherBeWriting/OpenWeatherMap/2.3). Observe Generate Client SDK options.
 
 ### Activity: Swagger UI
 

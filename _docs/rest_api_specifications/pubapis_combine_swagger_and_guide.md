@@ -31,7 +31,7 @@ This conundrum is usually crystal clear to technical writers while remaining har
 * troubleshooting
 * glossary
 
-Other times, you just have more detail that you need to communicate to the user that won't fit easily into the spec. For example, in the `weatherdata` endpoint in the [sample Mashape weather API](pubapis_swagger.html) that we've been using in this course, there's a whole table about condition codes that is essential to interpreting the `item` property in the response. Here's a sample:
+Other times, you just have more detail that you need to communicate to the user that won't fit easily into the spec. For example, in the `weatherdata` endpoint in the [sample OpenWeatherMap API](pubapis_swagger.html) that we've been using in this course, there's a whole table about condition codes that is essential to interpreting the `item` property in the response. Here's a sample:
 
 ```json
 "condition": {

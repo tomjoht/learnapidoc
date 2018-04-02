@@ -96,7 +96,7 @@ The description of the resource is likely something you'll re-use in different p
 
 The exact terminology for referring to resources varies. The "things" that you access using a URL can be referred to in a variety of ways, but "resource" is the most common term because you access them through a URL, or uniform *resource* locator. Other than "resources," you might see terms such as API calls, endpoints, API methods, calls, objects, services, and requests. Some docs get around the situation by not calling them anything explicitly.
 
-Despite the variety with terminology, in general an API has various "resources" that you access through "endpoints." The endpoints give you access to the resource. (But terminology isn't standard, so expect variety.) The [Mashape Weather API](https://market.mashape.com/fyhao/weather-13) is pretty simple, and just refers to 3 "endpoints" available.
+Despite the variety with terminology, in general an API has various "resources" that you access through "endpoints." The endpoints give you access to the resource. (But terminology isn't standard, so expect variety.)
 
 ## Recognize the difference between reference docs versus user guides
 

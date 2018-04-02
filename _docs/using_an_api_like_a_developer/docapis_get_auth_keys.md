@@ -29,32 +29,17 @@ Keep in mind how users authorize calls with an API &mdash; this is something you
 
 In order to run the code samples in this course, you will need to use your own API keys, since these keys are usually treated like personal passwords and not given out or published openly on a web page. (Even so, if you want to borrow my API keys, you can view them [here](/learnapidoc/assets/files/apikeys.txt).)
 
-## Get the Mashape authorization keys
+## Get an OpenWeatherMap API key
 
-To get the authorization keys to use the Mashape API, you must sign up for a Mashape account.
+To get an authorization key to use the OpenWeatherMap API:
 
-1.  On [market.mashape.com](https://market.mashape.com/), click **Sign Up** in the upper-right corner and create an account.
-
-	  {: .tip}
-	  It's easiest if you first create an account on GitHub, and then just click **SIGNUP WITH GITHUB** in the Mashape login window.
-
-2.  Click **Applications** on the top navigation bar, and then select **Default Application**.
-3.  In the upper-right corner, click **Get the Keys**.
-
-	  <img src="images/mashape_get_keys.png" alt="Mashape -- getting the keys" />
-
-	  {: .note}
-	  If you don't see the Get the Keys button, make sure you click <b>Applications > Default Application</b> on the top navigation bar first. You may have to horizontally scroll to the right to see the Get the Keys button.
-
-3.  When the Environment Keys dialog appears, click **Copy** to copy the keys. (Choose the Testing keys, since this type allows you to make unlimited requests.)
-
-    <img src="images/environmentkeys.png" alt="Mashape keys" />
-
-4.  Open a text editor and paste the key so that you can easily access it later when you construct a call.
+1.  On [https://openweathermap.org/](https://openweathermap.org), click **Sign Up** in the top nav bar and create an account.
+2.  After you sign up, sign in and find your API key from the developer dashboard.
+3.  Copy the key into a place you can easily find it.
 
 ## Get the Aeris Weather API secret and ID
 
-Now let's get the keys for the Aeris Weather API. The Aeris Weather API requires both a secret and ID to make requests.
+Now for contrast, let's get the keys for the Aeris Weather API. The Aeris Weather API requires both a secret and ID to make requests.
 
 1.  Go to [http://www.aerisweather.com](http://www.aerisweather.com) and click **Sign Up** in the upper-right corner.
 2.  Under **Developer**, click **TRY FOR FREE**. (The free version limits the number of requests per day and per minute you can make.)

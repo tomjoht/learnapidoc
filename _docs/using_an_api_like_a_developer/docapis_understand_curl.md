@@ -136,67 +136,27 @@ When you type an address into a website, you see only the body of the response. 
 
 ## Unpacking the weather API curl request
 
-Let's look more closely at the request you submitted for the weather:
+Let's look more closely at the request you submitted for the weather in the [previous topic](docapis_make_curl_call.html):
 
 ```bash
-  curl --get --include 'https://simple-weather.p.mashape.com/weather?lat=37.354108&lng=-121.955236' \
-  -H 'X-Mashape-Key: APIKEY' \
-  -H 'Accept: text/plain'
+curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: 930d08d6-7b2a-6ea2-0725-27324755c684" "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
 ```
 
-curl has shorthand names for the various options that you include with your request. The `\` just creates a break for a new line for readability. (Don't use `\` in Windows.)
+curl has shorthand names for the various options that you include with your request.
 
 Here's what the commands mean:
 
-{% if site.format == "kindle" %}
+* `-X GET`. The `-X` signifies the method used for for the request. Common options are `GET`, `POST`, `DELETE`, `PUT`. (`GET` is the default, so if it's not specified, it's automatically used. You might also see `--get` used instead. Most curl commands have a couple of different representations. `-X GET` can also be written as `--get`.)
 
-`--get`
-:  The HTTP method to use. (This is actually unnecessary. You can remove this and the request returns the same response, since GET is the method used by default.)
-
-`--include`
-:  Whether to show the headers in the response. Also represented by `-i`.
-
-`-H`
-:  Submits a custom header. Include an additional `-H` for each header key-value pair you're submitting.
+`-H`. Submits a custom header. Include an additional `-H` for each header key-value pair you're submitting.
 {% else %}
-
-<table>
-   <colgroup>
-      <col width="30%" />
-      <col width="70%" />
-   </colgroup>
-   <thead>
-      <tr>
-         <th markdown="span">curl command</th>
-         <th markdown="span">Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td markdown="span">`--get`</td>
-         <td markdown="span">The HTTP method to use. (This is actually unnecessary. You can remove this and the request returns the same response, since GET is the method used by default.)</td>
-      </tr>
-      <tr>
-         <td markdown="span">`--include`</td>
-         <td markdown="span">Whether to show the headers in the response. Also represented by `-i`.</td>
-      </tr>
-      <tr>
-         <td markdown="span">`-H`</td>
-         <td markdown="span">Submits a custom header. Include an additional `-H` for each header key-value pair you're submitting.</td>
-      </tr>
-   </tbody>
-</table>
-{% endif %}
-
-{: .note}
-Most curl commands have a couple of different representations. `--get` can also be written as `-X GET`.
 
 ## Query strings and parameters
 
-The latitude (`lat`) and longitude (`lng`) parameters were passed to the endpoint using "query strings." The `?` appended to the URL is the query string where the parameters are passed to the endpoint:
+The zip code (`zip`) and app ID (`appid`) and units (`units`) parameters were passed to the endpoint using "query strings." The `?` appended to the URL is the query string where the parameters are passed to the endpoint:
 
 ```
-?lat=37.354108&lng=-121.955236
+?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial
 ```
 
 After the query string, each parameter is concatenated with other parameters through the `&` symbol. The order of the parameters doesn't matter. The order only matters if the parameters are part of the URL path itself (not listed after the query string).

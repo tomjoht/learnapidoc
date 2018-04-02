@@ -11,16 +11,14 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-Enough with the abstract concepts. Let's start using an actual REST API to get more familiar with how they work.
-
-In the upcoming sections, you'll use two different APIs in the context of a specific use case: retrieving a weather forecast. By first playing the role of a developer using an API, you'll gain a greater understanding of how your audience will use APIs, the type of information they'll need, and what they might do with the information.
+Enough with the abstract concepts. Let's start using an actual REST API to get more familiar with how they work. In the upcoming sections, you'll explore some weather APIs in the context of a specific use case: retrieving a weather forecast. By first playing the role of a developer using an API, you'll gain a greater understanding of how your audience will use APIs, the type of information they'll need, and what they might do with the information.
 
 * TOC
 {:toc}
 
 ## Sample scenario: How windy is it?
 
-Let's say that you're a web developer and you want to add a weather forecast feature to your site. Your site is for bicyclists. You want to allow users who come to your site to see what the wind conditions are for biking. You want something like this:
+Let's say that you're a web developer and you want to add a weather conditions feature to your site. Your site is for bicyclists. You want to allow users who come to your site to see what the wind and temperature conditions are for biking. You want something like this:
 
 {% if site.format == "pdf" or site.format == "kindle" %}
 <img class="small" src="images/restapi_windycall.png" alt="Wind meter conditions for website" />
@@ -30,13 +28,13 @@ Let's say that you're a web developer and you want to add a weather forecast fea
 
 You don't have your own meteorological service, so you'll need to make some calls out to a weather service to get this information. Then you will present that information to users.
 
-## Get an idea of the end goal {# endgoal}
+## Get an idea of the end goal {#endgoal}
 
-To give you an idea of the end goal, here's a sample: [idrathebewriting.com/learnapidoc/assets/files/wind-mashape.html](http://idratherbewriting.com/learnapidoc/assets/files/wind-mashape.html). It's not necessarily styled the same as the mockup, but it answers the question, "How windy is it?"
+To give you an idea of the end goal, here's a sample: [wind-weatherbit.html](/learnapidoc/assets/files/wind-openweathermap.html). It's not necessarily styled the same as the mockup, but it answers the question, "What's the wind and temperature?"
 
-Click the button to see wind details. When you request this data, an API goes out to a weather service, retrieves the information, and displays it to you.
+Click the button to see wind and temperature details. When you request this data, an API goes out to the [OpenWeatherMap API service](https://openweathermap.org/api), retrieves the information, and displays it to you.
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-mashape.html" class="noExtIcon"><img src="images/checkwindconditions.png" class="medium" /></a>
+<a target="\_blank" href="/learnapidoc/assets/files/wind-openweathermap.html" class="noExtIcon"><img src="images/checkwindconditions.png" class="medium" /></a>
 
 The above example is extremely simple. You could also build an attractive interface like this:
 
@@ -44,52 +42,51 @@ The above example is extremely simple. You could also build an attractive interf
 
 The concept and general techniques are more or less the same.
 
-## Find the Weather API by fyhao on Mashape
+## Explore the OpenWeatherMap API
 
-Let's find a simple weather API that we can use for some exercises. The [Mashape Marketplace](https://market.mashape.com/) is a directory where publishers can publish their APIs, and where consumers can consume the APIs. Mashape manages the interaction between publishers and consumers by providing an interactive marketplace for APIs.
-
-The APIs on Mashape tend to be rather simple compared to some other APIs, but this simplicity will work well to illustrate the various aspects of an API without getting too mired in other details.
+Let's find a simple weather API that we can use for some exercises. There are [many good weather API options for developers](https://superdevresources.com/weather-forecast-api-for-developing-apps/). Let's use [OpenWeatherMap](https://www.weatherbit.io/api), because their service is easy to use, free, and stable.
 
 {% include random_ad.html %}
 
-<a class="noCrossRef" href="https://market.mashape.com/" class="noExtIcon"><img class="medium" src="images/mashape_explore_apis.png" alt="Explore APIs at Mashape" /></a>
-
 {% include activity.html %}
 
-Explore the APIs available on Mashape and find the weather forecast API:
+Explore the information available on OpenWeatherMap:
 
-1. Go to [Mashape Marketplace](https://market.mashape.com/) and click **Explore APIs**.
-2. Try to find an API that will allow you to retrieve the weather forecast.
+1.  Go to [https://openweathermap.org](https://openweathermap.org) and click **API**.
+2.  Explore the information available in the [Current Weather Data](https://openweathermap.org/current) by clicking **API Doc** in that section.
 
-    As you explore the various APIs, get a sense of the variety and services that APIs provide. These APIs aren't applications themselves. They provide developers with ways to pipe information into their applications. In other words, the APIs will provide the data plumbing for the applications that developers build.
+    As you explore the site, get a sense of the variety and services that API provides. The API calls provide developers with ways to pull information into their applications. In other words, the APIs will provide the data plumbing for the applications that developers build.
 
-3. Search for an API called "Weather," by fyhao at <a href="https://market.mashape.com/fyhao/weather-13">https://market.mashape.com/fyhao/weather-13</a>. Although there are many weather APIs, this one seems to have a lot of reviews and is free.
+3. As you explore the Current Weather Data API, see if it contains information about temperature and wind conditions relevant to our coding scenario.
 
-    <a class="noCrossRef" href="https://market.mashape.com/fyhao/weather-13" class="noExtIcon"><img class="medium" src="images/weatherapi_mashape.png" alt="Weather API on Mashape" /></a>
+## Explore the Aeris Weather API
 
-    Browse the endpoints to get a sense of what this weather API offers.
-
-## Find the Aeris Weather API
-
-Now let's look at another weather API (this one not on Mashape). In contrast to the simple API on Mashape, the [Aeris Weather API](http://www.aerisweather.com/) is much more robust and extensive. You can see that the Aeris Weather API is a professional grade, information-rich API that could empower an entire meteorology service.
-
-{% include activity.html %}
-
-Explore the Aeris Weather API by doing the following:
+Now let's look at another weather API for contrast. In contrast to the OpenWeatherMap API, the [Aeris Weather API](http://www.aerisweather.com/) is a bit more robust and extensive. Explore the Aeris Weather API by doing the following:
 
 1. Go to [www.aerisweather.com](http://www.aerisweather.com).
 2. Click **Developer** on the top navigation.  
 3. Under **Aeris Weather API**, click **Documentation**.
 3. Under **Reference** in the left sidebar, click **Endpoints**.
 
-	<a  class="noCrossRef" href="http://www.aerisweather.com/support/docs/api/reference/endpoints/" class="noExtIcon"><img class="medium" src="images/aerisendpoints.png" alt="Aeris Endpoints" /></a>
+	<a class="noCrossRef" href="http://www.aerisweather.com/support/docs/api/reference/endpoints/" class="noExtIcon"><img class="medium" src="images/aerisendpoints.png" alt="Aeris Endpoints" /></a>
 
 4. In the list of endpoints, click **[observations](https://www.aerisweather.com/support/docs/api/reference/endpoints/observations/)**.
 5. Browse the type of information that is available through this endpoint.
 
-Here's the Aeris weather forecast API in action making the same call as I showed earlier with Mashape: <a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-aeris.html" alt="Aeris example">/learnapidoc/assets/files/wind-aeris.html</a>.
+Here's the Aeris weather forecast API in action making mostly the same calls as I showed earlier with OpenWeatherMap: <a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-aeris.html" alt="Aeris example">/learnapidoc/assets/files/wind-aeris.html</a>.
 
-As you can see, both APIs contain this same information about wind, but the units differ. Also, the Aeris weather API is a hundred times more robust than the Mashape one.  
+## More weather APIs
+
+APIs differ considerably in their design, presentation, responses, and other detail. For more comparison, check out some of the following weather APIs:
+
+* [Dark Sky API](https://darksky.net/dev)
+* [Accuweather API](https://developer.accuweather.com/)
+* [Weather Underground API](https://www.wunderground.com/weather/api/)
+* [Weatherbit API](https://www.weatherbit.io/api)
+
+Each weather API has a totally different approach to documentation. As you'll see going through this course, the variety and uniqueness of each API doc site (even when approaching the same topic &mdash; a weather forecast) presents a lot of challenges to tech writing teams. Not only do presentations vary, terminology with APIs varies as well.
+
+As I mentioned in [REST is a style, not a standard](docapis_what_is_a_rest_api.html#rest-is-a-style-not-a-standard), REST APIs are an architectural style following common characteristics and principles; they don't all follow the same standard or specification. You really have to read the documentation to understand how to use the APIs.
 
 ## Answer some questions about the APIs
 
@@ -102,10 +99,6 @@ Spend a little time exploring the features and information that these weather AP
 * What information do the endpoints provide?
 * What kind of parameters does each endpoint take?
 * What kind of response does the endpoint provide?
-
-These are common questions developers want to know about an API.
-
-Can you see how APIs can differ significantly? As I mentioned previously, REST APIs are an architectural style, not a specific standard that everyone follows. You really have to read the documentation to understand how to use them.
 
 {: .tip}
 Sometimes people use the term \"API\" to refer to a whole collection of endpoints, functions, or classes. Other times they use API to refer to a single endpoint. For example, a developer might say, \"We need you to document a new API.\" They mean they added a new endpoint or class to the API, not that they launched an entirely new API service.

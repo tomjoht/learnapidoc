@@ -32,9 +32,9 @@ Using a GUI REST client, you won't have to worry about getting curl syntax right
 Some popular GUI clients include the following:
 
 * [Postman](http://www.getpostman.com/)
+* [Paw](https://luckymarmot.com/paw)
 * [Advanced REST Client](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo) (Chrome browser extension)
 * [REST Console](https://chrome.google.com/webstore/detail/rest-console/cokgbflfommojglbmbpenpphppikmonn)
-* [Paw](https://luckymarmot.com/paw) (not free)
 
 Of the various GUI clients available, Postman is probably the best option, since it allows you to save both calls and responses, is free, works on both Mac and PC, and is easy to configure.
 
@@ -45,118 +45,145 @@ A lot of times abstract concepts don't make sense until you can contextualize th
 
 ## Make a request in Postman
 
-In this exercise, you'll make a REST call for the second endpoint (`https://simple-weather.p.mashape.com/weather`) in the Mashape Weather API.
-
-{: .note}
-You can also call the first endpoint (`aqi`), but the response is pretty short (2 characters), and unfortunately sometimes the API doesn't always return a response for the location. If this endpoint isn't working, you'll see "Not supported" response.
+In this exercise, you'll make a REST call using OpenWeatherMap's [current weather data API endpoint](https://openweathermap.org/current).
 
 1.  If you haven't already done so, download and install the Postman app at [http://www.getpostman.com](https://www.getpostman.com/). If you're on a Mac, choose the Mac app. If you're on Windows, choose the Windows app.
 2.  Start the Postman app.
 3.  Select **GET** for the method. (This is the default.)
-4.  Insert the endpoint into the box next to GET: `https://simple-weather.p.mashape.com/weather`.
-5.  Click the **Params** button (to the right of the box where you inserted the endpoint) and insert `lat` and `lng` parameters with specific values (other than `1`).
+4.  Insert the endpoint into the box next to GET: `http://api.openweathermap.org/data/2.5/weather`.
+5.  Click the **Params** button (to the right of the box where you inserted the endpoint) 3 parameters:
 
-    {: .note}
-    Only some countries are supported in this weather API &mdash; specifically the United States, Singapore, Malaysia, Europe, and Australia. If the country isn't supported, you'll see "Not supported" in the API response. The latitude and longitude coordinates for Santa Clara, California are <code>lat: 37.3710062</code> and <code>lng: -122.0375935</code>. For Singapore, they're <code>lat: 1.3321256</code> and <code>lng: 103.7373503</code>. You can find latitude and longitude values from the URL in Google Maps when you go to a specific location. The latitude appears first.
+    * `zip: 95050`
+    * `units: imperial`
+    * `appid: {your api key}`
 
-    <figure><a class="noCrossRef" href="https://www.google.com/maps/place/Santa+Clara,+CA/@37.3708698,-122.037593,12z/data=!3m1!4b1!4m5!3m4!1s0x808fb7815c08c193:0xe475a47ca3c0bfc0!8m2!3d37.3541079!4d-121.9552356" class="noExtIcon"><img src="images/googlemapslatlong.png" alt="Finding latitude and longitude on Google Maps" /></a><figcaption>Latitude is listed first, then longitude</figcaption></figure>
+    Customize the `zip` and `appid` values to your own zip code an [OpenWeatherMap API key](docapis_get_auth_keys). Your Postman should look like this:
 
-	  When you add these `lat` and `lng` parameters, they will dynamically be added as a query string to the endpoint URI. For example, your endpoint should now look like this: `https://simple-weather.p.mashape.com/weather?lat=37.3710062&lng=-122.0375935`. Query string parameters appear after the question mark `?` symbol and are separated ampersands `&`. The order of query string parameters doesn't matter.
+    <img src="images/postmanopenweatherapi.png" class="medium"/>
 
-6.  Click the **Headers** tab (below the GET button) and insert the key value pairs: `Accept: text/plain` and `X-Mashape-Key: APIKEY`. (Swap in your own API key in place of `APIKEY`. If you want to use my API keys, see [apikeys.txt](/learnapidoc/assets/files/apikeys.txt).)
+	  When you add these parameters, they will dynamically be added as a query string to the endpoint URI. For example, your endpoint will now look like this: `http://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial` (but with different query string values). Query string parameters appear after the question mark `?` symbol and are separated ampersands `&`. The order of query string parameters doesn't matter.
 
-    Your inputs should look like this:
-
-	  <img src="images/postmannewinterface.png" alt="Postman request" />
+    Many APIs pass the API key in the header rather than as a query string parameter in the request URL. If that were the case, you would click the **Headers** tab (below the GET button) and insert the required key-value pairs in the header.
 
 7.  Click **Send**.
 
-	 The response appears, such as `15 c, Mostly Cloudy at Sunnyvale, United States`. In this case, the response is text only. You can switch the format to HTML, JSON, XML, or other formats, but since this response is text only, you won't see any difference. Usually the responses are JSON, which allows you to select a specific part of the response to work with.
+	  The response appears in the lower window. For example:
 
-	 {: .note}
-   If you get a response that says "Unsupported," this means your `lat` and `lng` values aren't supported. Use the `lat` and `lng` values shown here (`?lat=37.3710062&lng=-122.0375935`).
+    <img src="images/postmanopenweatherapiresponse.png" class="medium"/>
 
 ## Save the request
 
 1.  In Postman, click the **Save** button (next to Send).
-1.  In the Save Request dialog box, in the **Request Name** box at the top of the dialog box, type a friendly name for the request, such as "Mashape Weather endpoint."
-3.  Scroll down in the dialog box, and next to **"Or create new collection"**, create a new collection by typing the collection name in the box. Collections are simply groups to organize your saved requests.
+1.  In the Save Request dialog box, in the **Request Name** box at the top of the dialog box, type a friendly name for the request, such as "Current weather for 95050."
+3.  Next to **Or create new collection**, create a new collection by typing the collection name in the box, such as OpenWeatherMap. Collections are simply groups to organize your saved requests.
+
+    Your Postman collection should look something like this:
+
+    <img src="images/postmancollectiondialog.png" class="small"/>
+
 4.  Click **Save.**
 
 Saved endpoints appear in the left side pane under Collections.
 
-## Make requests for the other endpoint
+## Make a request for the OpenWeatherMap 5 day forecast
 
-Enter details into Postman for the `weatherdata` endpoint for the Mashape Weather API:
+Enter details into Postman for the [5 day forecast](https://openweathermap.org/forecast5). You can click a new tab, or click the arrow next to Save and choose **Save As**. Then choose your collection and request name.
 
-* https://simple-weather.p.mashape.com/weatherdata
+The 5 day forecast request looks like this:
 
-{: .note}
-The Accept header tells the browser what format you will accept the response in. Whereas the first two endpoints (`aqi` and `weather`) use `text/plain`, the Accept header for the `weatherdata` endpoint is `application/json`.
+```
+http://api.openweathermap.org/data/2.5/forecast?zip=95050&appid=APIKEY&units=imperial
+```
 
-When you save these other endpoints, click the arrow next to Save and choose **Save As**. Then choose your collection and request name. (Otherwise you'll overwrite the settings of the existing request.)
+(In the above code, replace out `APIKEY` with your own API key.)
 
-<img src="images/postmansaveas.png" alt="Save as" />
+## Same request but in Paw instead of Postman
 
-(Alternatively, click the **+** button on the new tab and create each request in separate tabs.)
-
-## View the format of the weatherdata response in JSON
-
-While the first two endpoint responses include text only, the weatherdata endpoint response is in JSON.
-
-In Postman, make a request to the weatherdata API. Then toggle the options to **Pretty** and **JSON**.
-
-<img src="images/postmanjsonresponse.png" alt="JSON response" />
-
-The Pretty JSON view expands the JSON response into more readable code.
-
-{: .tip}
-To "prettify" code means to un-minify it and format it with white space that is readable.
-
-For the sake of variety with GUI clients, here's the same call made in Paw:
+For the sake of variety with GUI clients, here's the same call made in [Paw (for Mac)](https://paw.cloud/):
 
 <img src="images/pawexample.png" alt="Paw" />
 
-Like Postman, Paw also allows you to easily see the request headers, response headers, URL parameters, and other data. However, Paw is specific to Mac only.
+Like Postman, Paw also allows you to easily see the request headers, response headers, URL parameters, and other data. I like that Paw shows the response in an expandable/collapsible way. This can make it easier to explore the response. Note that Paw is specific to Mac only, and like most products for Mac users, costs money.
 
 ## Enter several requests for the Aeris API into Postman
 
-Now let's switch APIs a bit and see some weather information from the Aeris API. Constructing the endpoints for the Aeris Weather API is a bit more complicated since there are many different queries, filters, and other parameters you can use to configure the endpoint.
+Now let's switch APIs a bit and see some weather information from the [Aeris Weather API](https://www.aerisweather.com/), which you explored a bit in [Scenarios for using a weather API](docapis_scenario_for_using_weather_api.html). Constructing the endpoints for the Aeris Weather API is a bit more complicated since there are many different queries, filters, and other parameters you can use to configure the endpoint.
 
-Here are a few requests to configure for Aeris. You can just paste the requests directly into the URL request box in Postman and the parameters will auto-populate in the parameter fields.
+Here are a few pre-configured requests to configure for Aeris. You can just paste the requests directly into the URL request box in Postman, and the parameters will auto-populate in the parameter fields.
 
-Note that the Aeris API doesn't use a Header field to pass the API keys &mdash; the key and secret are passed directly in the request URL as part of the query string.
+As with the OpenWeather Map API, the Aeris API doesn't use a Header field to pass the API keys &mdash; the key and secret are passed directly in the request URL as part of the query string.
 
 {: .note}
-When you make the following requests, insert your own values for the <code>CLIENTID</code> and <code>CLIENTSECRET</code>.
+When you make the following requests, insert your own values for the <code>CLIENTID</code> and <code>CLIENTSECRET</code> (assuming you requested them in [Get the authorization keys](docapis_get_auth_keys.html)). If you don't have a client ID or secret, you can use my keys [here](/learnapidoc/assets/files/apikeys.txt).
 
-Get the weather forecast for your area:
+Get the weather forecast for your area using the [observations endpoint](https://www.aerisweather.com/support/docs/api/reference/endpoints/observations/):
 
 ```
 http://api.aerisapi.com/observations/Santa+Clara,CA?client_id=CLIENTID&client_secret=CLIENTSECRET&limit=1
 ```
 
-In the response, find the wind speed and compare it with the wind from the Mashape API. Are they the same?
-
-Get the weather from a city on the equator &mdash; Chimborazo, Ecuador:
+Get the weather from a city on the equator &mdash; Chimborazo, Ecuador using the same [observations endpoint](https://www.aerisweather.com/support/docs/api/reference/endpoints/observations/):
 
 ```
 http://api.aerisapi.com/observations/Chimborazo,Ecuador?client_id=CLIENTID&client_secret=CLIENTSECRET&limit=1
 ```
 
-Find out if all the country music in Knoxville, Tennessee is giving people migraines:
+Find out if all the country music in Knoxville, Tennessee is giving people migraines using the [indices endpoint](https://www.aerisweather.com/support/docs/api/reference/endpoints/indices/):
 
 ```
 http://api.aerisapi.com/indices/migraine/Knoxville,TN?client_id=CLIENTID&client_secret=CLIENTSECRET
 ```
 
-You're thinking of moving to Arizona, but you want to find a place that's cool. Use the `normals` endpoint:
+You're thinking of moving to Arizona, but you want to find a place that's cool. Use the [normals endpoint](https://www.aerisweather.com/support/docs/api/reference/endpoints/normals/):
 
 ```
 http://api.aerisapi.com/normals/flagstaff,az?client_id=CLIENTID&client_secret=CLIENTSECRET&limit=5&filter=hassnow
 ```
 
 {: .tip}
-You can also make these requests by simply going to the URL in your address bar. Use the [JSON Formatter plugin for Chrome](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en) to automatically format the JSON response.
+With both the OpenWeatherMap and Aeris Weather API, you can also make these requests by simply going to the URL in your address bar (because the APIs are passed in the query string rather than the header). Use the [JSON Formatter plugin for Chrome](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en) to automatically format the JSON response.
 
 By looking at these two different weather APIs, you can see some differences in the way the information is called and returned. However, fundamentally both APIs have endpoints that you can configure with parameters. When you make requests with the endpoints, you get responses that contain information, often in JSON format. This is the core of how REST APIs work &mdash; you send a request and get a response.
+
+## Automatically import the Postman collections
+
+Postman has a nifty import feature that will automatically pull in the same requests you've been entering. You can click the Run in Postman buttons below to automatically import these two collections into your own instance of Postman.
+
+### OpenWeatherMap API collection
+
+<div class="postman-run-button"
+data-postman-action="collection/import"
+data-postman-var-1="abd0d0741e8206266958"></div>
+<script type="text/javascript">
+  (function (p,o,s,t,m,a,n) {
+    !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+    !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+      (n = o.createElement("script")),
+      (n.id = s+t), (n.async = 1), (n.src = m), n
+    ));
+  }(window, document, "\_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+</script>
+
+If this button doesn't work for you, copy this [import link](https://www.getpostman.com/collections/abd0d0741e8206266958).
+
+### Aeris Weather API collection.
+
+<div class="postman-run-button"
+data-postman-action="collection/import"
+data-postman-var-1="65dcddab41ff7a773bb1"></div>
+<script type="text/javascript">
+  (function (p,o,s,t,m,a,n) {
+    !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+    !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+      (n = o.createElement("script")),
+      (n.id = s+t), (n.async = 1), (n.src = m), n
+    ));
+  }(window, document, "\_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+</script>
+
+If this button doesn't work for you, copy this [import link](https://www.getpostman.com/collections/65dcddab41ff7a773bb1).
+
+Clicking the Run in Postman buttons should automatically prompt you to import the content into Postman. If it doesn't work, copy the import link address and, in Postman, click **Import** in the upper-left corner. Then click the **Import from link** tab, paste in the address, and then click **Import**.
+
+{: .tip}
+If you'd like to learn more about Postman, listen to this [interview with the Postman founder](https://idratherbewriting.com/2018/01/22/postman-for-docs-podcast/). We recorded this as part of the [Write the Docs podcast](http://podcast.writethedocs.org/), focusing on the documentation features within Postman.

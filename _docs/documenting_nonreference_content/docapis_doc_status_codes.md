@@ -46,39 +46,38 @@ Finally, here's an example of status and error codes from Dropbox's API:
 
 Status codes don't appear in the response body. They appear in the response header, which you might not see by default.
 
-Remember when we submitted the curl call back in [an earlier lesson](docapis_make_curl_call.html)? In one exercise, we submitted a curl call and specified (by adding `--include` or `-i`) that we wanted the response headers included in the response:
+Remember when we submitted the curl call back in [an earlier lesson](docapis_make_curl_call.html)? In order to get the response header, we need to add `--include` or `-i` to the curl request. If we want *only the response header returned*, we capitalize it: `-I`.
 
-<pre>
-  curl --get <span class="orange">-include</span> 'https://simple-weather.p.mashape.com/weather?lat=37.354108&lng=-121.955236' \-H 'X-Mashape-Key: APIKEY' \
-  -H 'Accept: text/plain'
-</pre>
+```
+curl -I -X GET "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
+```
 
-The response, including the header, looked like this:
+The response header looks as follows:
 
 ```
 HTTP/1.1 200 OK
-Content-Type: text/plain
-Date: Fri, 16 Jun 2017 21:48:55 GMT
-Server: Mashape/5.0.6
-Via: 1.1 vegur
-X-Powered-By: Express
-Content-Length: 41
+Server: openresty
+Date: Mon, 02 Apr 2018 01:14:13 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 441
 Connection: keep-alive
-
-30 c, Sunny at Santa Clara, United States
+X-Cache-Key: /data/2.5/weather?units=imperial&zip=95050%2cus
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, POST
 ```
 
 The first line, `HTTP/1.1 200 OK`, tells us the status of the request. (If you change the method, you'll get back a different status code.)
 
 {% include random_ad.html %}
 
-With a GET request, it's pretty easy to tell if the request is successful because you get back the expected response.
+With a `GET` request, it's pretty easy to tell if the request is successful because you get back the expected response.
 
-But suppose you're making a POST, PUT, or DELETE call, where you're changing data contained in the resource. How do you know if the request was successfully processed and received by the API? HTTP response codes in the header of the response will indicate whether the operation was successful. The HTTP status codes are just abbreviations for longer messages.
+But suppose you're making a `POST`, `PUT`, or `DELETE` call, where you're changing data contained in the resource. How do you know if the request was successfully processed and received by the API? HTTP response codes in the header of the response will indicate whether the operation was successful. The HTTP status codes are just abbreviations for longer messages.
 
 ## Common status codes follow standard protocols
 
-Most REST APIs follow a standard protocol for response headers. For example, `200` isn't just an arbitrary code decided upon by the Mashape Weather API developers. `200` is a universally accepted code for a successful HTTP request.
+Most REST APIs follow a standard protocol for response headers. For example, `200` isn't just an arbitrary code decided upon by the OpenWeatherMap API developers. `200` is a universally accepted code for a successful HTTP request.
 
 You can see a list of common [REST API status codes here](http://www.restapitutorial.com/httpstatuscodes.html) and a [general list of HTTP status codes here](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 ). Although it's probably good to include a few standard status codes, comprehensively documenting all standard status codes, especially if rarely triggered by your API, is unnecessary.

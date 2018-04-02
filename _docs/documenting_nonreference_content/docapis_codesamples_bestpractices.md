@@ -77,132 +77,11 @@ Providing code samples is almost always a good thing, so if you have the bandwid
 
 Remember that each code sample you provide needs to be tested and maintained. When you make updates to your API, you'll need to update each of the code samples across all the different languages.
 
-## Code samples are maintenance heavy with new releases
+## Code samples require heavy maintenance with new releases
 
 Getting into code samples leads us more toward user guide tasks than reference tasks. However, keep in mind that code samples are a bear to maintain. When your API pushes out a new release, will you check all the code samples to make sure the code doesn't break with the new API (this is called regression testing by QA).
 
 What happens if new features require you to change your code examples? The more code examples you have, the more maintenance they require.
-
-{% comment %}
-## Implement the JavaScript code snippet
-
-You usually don't need to show the code sample on a working HTML file, but if you want to show users code they can make work in their own browsers, you can do so.
-
-1.  Create a new HTML file with the basic HTML elements:
-
-    ```html
-    <!DOCTYPE html>
-    <head>
-    <title>My sample page</title>
-    </head>
-    <body>
-
-    </body>
-    </html>
-    ```
-
-2.  Insert the JavaScript code you copied inside some `script` tags inside the `head`:
-
-    ```html
-    <!DOCTYPE html>
-    <head>
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script>
-    var settings = {
-      "async": true,
-      "crossDomain": true,
-      "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&lng=-121.955236",
-      "method": "GET",
-      "headers": {
-        "accept": "application/json",
-        "x-mashape-key": "APIKEY"
-      }
-    }
-
-    $.ajax(settings).done(function (response) {
-      console.log(response);
-    });
-    </script>
-    </head>
-    <body>
-
-    </body>
-    </html>
-    ```
-
-3.  The Mashape Weather API requires the `dataType` parameter, which Postman doesn't automatically include. Add `"dataType": "json",` in the list of `settings`:
-
-    ```html
-    <!DOCTYPE html>
-    <head>
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script>
-    var settings = {
-      "async": true,
-      "crossDomain": true,
-      "dataType": "json",
-      "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&lng=-121.955236",
-      "method": "GET",
-      "headers": {
-        "accept": "application/json",
-        "x-mashape-key": "APIKEY"
-      }
-    }
-
-    $.ajax(settings).done(function (response) {
-      console.log(response);
-    });
-    </script>
-    </head>
-    <body>
-    hello
-    </body>
-    </html>
-    ```
-
-4. This code uses the `ajax` method from jQuery. The parameters are defined in a variable called `settings` and then passed into the method. The `ajax` method will make the request and assign the response to the `done` method's argument (`response`). The `response` object will be logged to the console.
-5. Open the file up in your Chrome browser.
-6. Open the JavaScript Developer Console by going to **View > Developer > JavaScript Console**. Refresh the page.
-
-You should see the object logged to the console.
-
-<img src="images/consoleexamplefrompostman.png" alt="Object logged to the console" />
-
-{% include random_ad.html %}
-
-Let's say you wanted to pull out the `sunrise` time and append it to a tag on the page. You could do so like this:
-
-```html
-<!DOCTYPE html>
-<head>
-<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script>
-var settings = {
-  "async": true,
-  "crossDomain": true,
-  "dataType": "json",
-  "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&lng=-121.955236",
-  "method": "GET",
-  "headers": {
-    "accept": "application/json",
-    "x-mashape-key": "APIKEY"
-  }
-}
-
-$.ajax(settings).done(function (response) {
-  console.log(response);
-  $("#sunrise").append(response.query.results.channel.astronomy.sunrise);
-});
-</script>
-</head>
-<body>
-<h2>Sunrise time</h2>
-<div id="sunrise"></div>
-</body>
-</html>
-```
-
-This code uses the `append` method from jQuery to assign a value from the response object to the `sunrise` ID tag on the page.
 
 ## General code samples
 
@@ -210,12 +89,7 @@ Although you could provide general code samples for every language with every ca
 
 <a href="http://www.wunderground.com/weather/api/d/docs?d=resources/code-samples&MR=1"><img src="images/wundergroundcodesamples.png" alt="Wunderground code samples" /></a>
 
-Although the Mashape Weather API doesn't provide a code sample in the Weather API page, Mashape as a platform provides a general code sample on their [Consume an API in JS](http://docs.mashape.com/javascript) page. The writers explain that you can consume the API with code on an HTML web page like this:
-
-<img src="images/mashapejsconsumption.png" alt="Consuming a REST API through JavaScript" />
-
-You already worked with this code earlier, so it shouldn't be new. It's mostly same code as the JavaScript snippet we just used, but here there's an error function defined, and the header is set a bit differently.
-
+The OpenWeatherMap API has a number of [example integrations](https://openweathermap.org/examples) that provide more advanced user interfaces with weather.
 
 ## Create a code sample for the surfreport endpoint
 
@@ -235,18 +109,13 @@ The following code samples shows how to use the surfreport endpoint to get the s
 var settings = {
   "async": true,
   "crossDomain": true,
-  "dataType": "json",
-  "url": "https://simple-weather.p.mashape.com/surfreport/25&days=1",
-  "method": "GET",
-  "headers": {
-    "accept": "application/json",
-    "x-mashape-key": "APIKEY"
-  }
+  "url": "http://api.openweathermap.org/surfreport/25&days=1",
+  "method": "GET"
 }
 
 $.ajax(settings).done(function (response) {
   console.log(response);
-  $("#surfheight").append(response.query.results.channel.surfheight);
+  $("#surfheight").append(response.surfreport.conditions);
 });
 </script>
 </head>
@@ -271,38 +140,6 @@ You might not include a detailed code sample like this for just one endpoint, bu
 
 <p>The following code samples shows how to use the surfreport endpoint to get the surf height for a specific beach. </p>
 
-{% comment %}  
-<pre class="html">
-<!DOCTYPE html>
-<head>
-<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script>
-var settings = {
-  "async": true,
-  "crossDomain": true,
-  "dataType": "json",
-  "url": "https://simple-weather.p.mashape.com/surfreport/25?days=1&units=metric",
-  "method": "GET",
-  "headers": {
-    "accept": "application/json",
-    "x-mashape-key": "APIKEY"
-  }
-}
-
-$.ajax(settings).done(function (response) {
-  console.log(response);
-  $("#surfheight").append(response.query.results.channel.surf.height);
-});
-</script>
-</head>
-<body>
-<h2>Surf Height</h2>
-<div id="surfheight"></div>
-</body>
-</html>
-</pre>
-{% endcomment %}
-
 <pre>
 &lt;!DOCTYPE html&gt;
 &lt;head&gt;
@@ -311,13 +148,8 @@ $.ajax(settings).done(function (response) {
 var settings = {
   &quot;async&quot;: true,
   &quot;crossDomain&quot;: true,
-  &quot;dataType&quot;: &quot;json&quot;,
-  &quot;url&quot;: &quot;https://simple-weather.p.mashape.com/surfreport/25?days=1&amp;units=metric&quot;,
-  &quot;method&quot;: &quot;GET&quot;,
-  &quot;headers&quot;: {
-    &quot;accept&quot;: &quot;application/json&quot;,
-    &quot;x-mashape-key&quot;: &quot;APIKEY&quot;
-  }
+  &quot;url&quot;: &quot;http://api.openweathermap.org/surfreport/25?days=1&amp;units=metric&quot;,
+  &quot;method&quot;: &quot;GET&quot;
 }
 
 $.ajax(settings).done(function (response) {
@@ -339,4 +171,3 @@ $.ajax(settings).done(function (response) {
 <p>For demonstration purposes, the response is assigned to the <code>response</code> argument of the <code>done</code> method, and then written out to the <code>surfheight</code> tag on the page.</p>
 
 <p>We're just getting the surf height, but there's a lot of other data you could choose to display.</p>
-{% endcomment %}

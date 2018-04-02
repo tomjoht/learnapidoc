@@ -4,7 +4,7 @@
     <link rel="stylesheet"  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
     <title>Aeris Example</title>
     <style>
-        #wind_direction, #wind_chill, #wind_speed, #temperature, #speed {color: red; font-weight: bold;}
+        #wind_direction, #wind_chill, #wind_speed, #temperature, #speed, #current_conditions {color: red; font-weight: bold;}
         body {margin:20px;}
     </style>
 
@@ -20,6 +20,7 @@
                     $("#wind_speed").append(data.response.ob.windMPH + " MPH");
                     $("#wind_direction").append(data.response.ob.windDir);
                     $("#wind_chill").append(data.response.ob.feelslikeF + " F");
+                    $("#current_conditions").append(data.response.ob.weather);
                 },
                 error: function(err) { alert(err); }
             });
@@ -32,8 +33,9 @@
 
 <h2>Wind conditions for Santa Clara</h2>
 
-<b>Wind chill: </b><span id="wind_chill"></span> <span id="temperature"></span><br>
+<b>Temperature (with wind chill): </b><span id="wind_chill"></span> <span id="temperature"></span><br>
 <b>Wind speed: </b><span id="wind_speed"></span> <span id="speed"></span><br>
-<b>Wind direction: </b><span id="wind_direction"></span>
+<b>Wind direction: </b><span id="wind_direction"></span><br/>
+<b>Current conditions: </b><span id="current_conditions"></span>
 
 </body></html>

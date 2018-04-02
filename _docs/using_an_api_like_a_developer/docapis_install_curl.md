@@ -32,25 +32,10 @@ If you have a Mac, by default, curl is probably already installed. To check:
 
     ```
     curl 7.54.0 (x86_64-apple-darwin16.0) libcurl/7.54.0 SecureTransport zlib/1.2.8
-    Protocols: dict file ftp ftps gopher http https imap imaps ldap ldaps pop3 pop3s rtsp smb smbs smtp smtps telnet tftp
-    Features: AsynchDNS IPv6 Largefile GSS-API Kerberos SPNEGO NTLM NTLM_WB SSL libz UnixSockets
+    Protocols: dict file ftp ftps gopher http https imap imaps ldap ldaps pop3 pop3s rtsp smb smbs smtp smtps telnet tftp Features: AsynchDNS IPv6 Largefile GSS-API Kerberos SPNEGO NTLM NTLM_WB SSL libz UnixSockets
     ```
 
 If you don't see this, you need to [download and install curl](http://curl.haxx.se/).
-
-To make a test API call, submit the following:
-
-```
-curl --get -k --include "https://simple-weather.p.mashape.com/weather?lat=37.3710062&lng=-122.0375935" -H "X-Mashape-Key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p" -H "Accept: text/plain"
-```
-
-You should get back a response like this:
-
-```
-5 c, Cloudy at Sunnyvale, United States
-```
-
-{% include random_ad.html %}
 
 ### Install curl on Windows
 
@@ -69,20 +54,24 @@ Protocols: dict file ftp ftps gopher http https imap imaps ldap ldaps pop3 pop3s
 Features: AsynchDNS GSS-Negotiate IPv6 Largefile NTLM NTLM_WB SSL libz
 ```
 
-To make a test API call, submit the following:
+## Make a test API call
+
+After you have curl installed, make a test API call:
 
 ```
-curl --get -k --include "https://simple-weather.p.mashape.com/weather?lat=37.3710062&lng=-122.0375935" -H "X-Mashape-Key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p" -H "Accept: text/plain"
+curl -X GET "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
 ```
+
+You should get minified JSON response back like this:
+
+```
+{"coord":{"lon":-121.96,"lat":37.35},"weather":[{"id":701,"main":"Mist","description":"mist","icon":"50d"}],"base":"stations","main":{"temp":66.92,"pressure":1017,"humidity":50,"temp_min":53.6,"temp_max":75.2},"visibility":16093,"wind":{"speed":10.29,"deg":300},"clouds":{"all":75},"dt":1522526400,"sys":{"type":1,"id":479,"message":0.0051,"country":"US","sunrise":1522504404,"sunset":1522549829},"id":420006397,"name":"Santa Clara","cod":200}
+```
+
+{% include random_ad.html %}
 
 {: .note}
 In Windows, Ctrl+ V doesn't work; instead, you right-click and then select Paste.
-
-You should get back a response like this:
-
-```
-5 c, Cloudy at Sunnyvale, United States
-```
 
 {: .tip}
 If you're on Windows 8.1 and you encounter an error that says, "The program can't start because MSVCR100.dll is missing from your computer," see <a href="http://www.faqforge.com/windows/fix-the-program-cant-start-because-msvcr100-dll-is-missing-from-your-computer-error-on-windows/">this article</a> and install the suggested package.
@@ -91,4 +80,4 @@ If you're on Windows 8.1 and you encounter an error that says, "The program can'
 
 * Use double quotes in the Windows command line. (Windows doesn't support single quotes.)
 * Don't use backslashes (`\`) to separate lines. (This is for readability only and doesn't affect the call on Macs. Unfortunately, the sample request for the Weather API on Mashape uses these slashes in their curl examples.)
-* By adding `-k` in the curl command, you bypass curl's security certificate, which may or may not be necessary.
+* By adding `-k` in the curl command, you can bypass curl's security certificate, which may or may not be necessary.

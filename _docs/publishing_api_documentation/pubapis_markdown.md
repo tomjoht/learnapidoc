@@ -162,9 +162,7 @@ Returns information about surfing conditions at a specific beach ID, including t
 ## Sample request
 
 ```
-curl --get --include 'https://simple-weather.p.mashape.com/surfreport/123?units=imperial&days=1&time=1433772000'
-  -H 'X-Mashape-Key: WOyzMuE8c9mshcofZaBke3kw7lMtp1HjVGAjsndqIPbU9n2eET'
-  -H 'Accept: application/json'
+curl -I -X GET "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
 ```
 
 ## Sample response
@@ -230,44 +228,37 @@ The following table lists the status and error codes related to this request.
 The following code samples shows how to use the surfreport endpoint to get the surf conditions for a specific beach. In this case, the code is just showing the overall recommendation about whether to go surfing.
 
 ```html
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;script src=&quot;http://code.jquery.com/jquery-2.1.1.min.js&quot;&gt;&lt;/script&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;API Weather Query&lt;/title&gt;
-  &lt;script&gt;
+<html>
+<head>
+  <meta charset="UTF-8">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<title>Sample Page</title>
 
-  function getSurfReport() {
-
-// use AJAX to avoid CORS restrictions in API calls.
- var output = $.ajax({
-    url: 'https://simple-weather.p.mashape.com/surfreport/123?units=imperial&amp;days=1&amp;time=1433772000',
-    type: 'GET',
-    data: {},
-    dataType: 'json',
-    success: function(data) {
-        //Here we pull out the recommendation from the JSON object.
-        //To see the whole object, you can output it to your browser console using console.log(data);
-        document.getElementById(&quot;output&quot;).innerHTML = data.surfreport[0].monday.2pm.recommendation;
-        },
-    error: function(err) { alert(err); },
-    beforeSend: function(xhr) {
-    xhr.setRequestHeader(&quot;X-Mashape-Authorization&quot;, &quot;WOyzMuE8c9mshcofZaBke3kw7lMtp1HjVGAjsndqIPbU9n2eET&quot;); // Enter here your Mashape key
-    }
-});
-
+<script>
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "http://api.openweathermap.org/data/2.5/surfreport?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial&days=2",
+  "method": "GET"
 }
 
-&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
+$.ajax(settings).done(function (response) {
+  console.log(response);
 
-  &lt;button onclick=&quot;getSurfReport()&quot;&gt;See the surfing recommendation&lt;/button&gt;
-  &lt;div id=&quot;output&quot;&gt;&lt;/div&gt;
+  var content = response.surfreport.conditions;
+  $("#surfReportConditions").append(content);
 
-&lt;/body&gt;
-&lt;/html&gt;
+});
+</script>
+</head>
+<body>
+<h1>Sample Page</h1>
+
+<div id="surfReportConditions">Surf report conditions: </div>
+
+</body>
+</html>
+
 ```
 
 In this example, the `ajax` method from jQuery is used because it allows cross-origin resource sharing (CORS) for the weather resources. In the request, you submit the authorization through the header rather than directly in the endpoint path. The endpoint limits the days returned to 1 in order to increase the download speed.

@@ -45,8 +45,12 @@ To critique an API reference topic:
 
 ## Create or fix an API reference documentation topic
 
-This part of the activity might be more difficult to do, but here is where you'll start building some examples for your portfolio. 
+This part of the activity might be more difficult to do, but here is where you'll start building some examples for your portfolio.
 
 1.  Identify one of the API reference topics that needs help. (If the API has a new reference endpoint to document, focus on this endpoint.)
 2.  Edit the topic to improve it. (If it's a new endpoint, write the documentation for it.)
 6.  Create a [pull request](pubapis_github_pull_requests.html) and contribute your edits to the project.
+
+## Next steps
+
+Now that you've had your head buried in API reference documentation, it's time to dive into testing a bit more. As you work with API endpoints and other code, you'll need to test these endpoints yourself, both to gather and verify the information in your documentation. Testing isn't always straightforward, so I devote an entire section to this topic. Go to [Overview to testing your docs](testingdocs_overview.html).

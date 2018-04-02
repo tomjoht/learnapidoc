@@ -88,7 +88,7 @@ Sometimes the method is referred to as the "verb." GET, PUT, POST, PATCH, and DE
 
 When you describe the endpoint, you list the end path only (hence the term "end point"). The full path that contains both the base path and the endpoint is often called a resource URL.
 
-In our sample API scenario, the endpoint is just `/surfreport/{beachId}`. You don't have to list the full resource URL every time (which would be `https://simple-weather.p.mashape.com/surfreport{beachId}`). Including the full resource URL would distract users from focusing on the path that matters. In your user guide, you usually explain the full resource URL, along with the required [authorization](docapis_more_about_authorization.html), in an introductory section.
+In our sample API scenario, the endpoint is just `/surfreport/{beachId}`. You don't have to list the full resource URL every time (which would be `http://api.openweathermap.org/surfreport{beachId}`). Including the full resource URL would distract users from focusing on the path that matters. In your user guide, you usually explain the full resource URL, along with the required [authorization](docapis_more_about_authorization.html), in an introductory section.
 
 ## How to group multiple endpoints for the same resource
 

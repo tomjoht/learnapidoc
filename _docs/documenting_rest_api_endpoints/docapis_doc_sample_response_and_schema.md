@@ -57,8 +57,6 @@ Some API documentation omits the response schema because the responses might see
 
 However, most documentation would be better off with the response described, especially if the properties are abbreviated or cryptic. Developers sometimes abbreviate the responses to increase performance by reducing the amount of text sent. In one endpoint I documented, the response included about 20 different two-letter abbreviations. I spent days tracking down what each abbreviation meant, and found that many developers who worked on the API didn't know what many of the responses meant.
 
-One of the problems with the [Mashape Weather API](https://market.mashape.com/fyhao/weather-13) we've been using [as an example](docapis_new_endpoint_to_doc.html) is that it doesn't describe the meaning of the responses. If the air quality index is `25`, is that a good or bad value when compared to `65`? What is the max or min value that the API might return? Further, what exactly does the "air quality index" mean? Also, what longitude and latitude values are supported?
-
 ## Use realistic values in the example response
 
 In the example response, the values should be realistic without being real. If developers give you a sample response, make sure each of the possible values are reasonable and not so fake they're distracting (such as users consisting of comic book character names).
@@ -155,4 +153,4 @@ For the `surfreport/{beachId}` endpoint that we've been exploring in our [sample
 
 ## Next steps
 
-Now that you've completed the [API reference tutorial](docapis_api_reference_tutorial_overview.html), you're ready to either critique or create your own API reference topic. See the next topic, [Activity: Critique or create an API reference topic](docapis_api_reference_activity.html).
+Now that you've completed each of the sections, take a look at all the sections together: [Putting it all together](docapis_finished_doc_result.html).

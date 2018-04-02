@@ -18,181 +18,49 @@ In this section, you'll use curl to make the same weather API requests you made 
 
 ## Prepare the weather request in curl format
 
-1.  Go back into the [Weather API on Mashape](https://market.mashape.com/fyhao/weather-13).
-2.  Copy the curl request example for the second endpoint (`weather`) into your text editor:
+1.  Assuming you completed the exercises in the [Postman tutorial](docapis_postman.html), go back into Postman.
+2.  On any call you've configured, right below the Save button in Postman, click the **Code** link, then select **cURL** from the drop-down select, and click **Copy to Clipboard**.
 
-    ```sh
-	  curl --get --include 'https://simple-weather.p.mashape.com/weather?lat=1.0&lng=1.0' \
-      -H 'X-Mashape-Key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p' \
-      -H 'Accept: text/plain'
+    <img src="images/postmancurl.png" class="medium" />
+
+    (The official name is "cURL" but most people just write it as "curl.")
+
+    The code for the OpenWeatherMap weather request looks like this in curl format:
+
+    ```bash
+    curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: 930d08d6-7b2a-6ea2-0725-27324755c684" "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
     ```
 
-3.  If you're on Windows, do the following:
+    For whatever reason, Postman adds some of its own header information (designated with `-H`). Remove these extra header tags.
 
-    * Change the single quotation marks to double quotation marks
-    * Remove the backslashes (`\`)
-    * Add `-k` after `--get`  as well to work around security certificate issues.
-
-    The request should now look like this:
-
-    ```sh
-    curl --get -k --include "https://simple-weather.p.mashape.com/weather?lat=1.0&lng=1.0" -H "X-Mashape-Key: APIKEY" -H "Accept: text/plain"
+    ```bash
+    curl -X GET "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
     ```
 
-4.  Swap in your own API key in place of `APIKEY`.
-
-    {: .note}
-    In the instruction in this course, <code>APIKEY</code> will always be used instead of an actual API key. You should replace that text with your own API key. (If you want to borrow an API key, see [API keys](/learnapidoc/assets/files/apikeys.txt).)
-
-5.  Customize the `lat` and `lng` values to the following:
-
-    * `lat=37.3710062`
-    * `lng=-122.0375935`
-
-## Make the request in curl (Mac)
-
-1.  Open a terminal. To open Terminal, press **Cmd + space bar** and type **Terminal**.
+3.  If you're on a Mac, open Terminal by pressing **Cmd + space bar** and typing **Terminal**. Paste the request you have in your text editor into the command line and then press the **Enter** key.
 
     {: .tip}
-    Instead of using Terminal, download and use [iTerm](https://www.iterm2.com/) instead. It will give you the ability to open multiple tabs, save profiles, and more.
+    Mac users: Instead of using Terminal, download and use [iTerm](https://www.iterm2.com/) instead. It will give you the ability to open multiple tabs, save profiles, and more.
 
-2.  Paste the request you have in your text editor into the command line and then press the **Enter** key.
+4.  If you're on Windows, go to **Start** and type **cmd** to open up the command line. (If you're on Windows 8, see [these instructions for accessing the commandline](http://pcsupport.about.com/od/windows-8/a/command-prompt-windows-8.htm).) Right-click and then select **Paste** to insert the call.
 
-    My request for the Mashape Weather API looks like this:
+    The response from the OpenWeatherMap weather request should look as follows:
 
-    ```sh
-	  curl --get --include 'https://simple-weather.p.mashape.com/weather?lat=37.3710062&lng=-122.0375935' -H 'X-Mashape-Key: APIKEY' -H 'Accept: text/plain'
+    ```
+    {"coord":{"lon":-121.96,"lat":37.35},"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02d"}],"base":"stations","main":{"temp":65.59,"pressure":1014,"humidity":46,"temp_min":60.8,"temp_max":69.8},"visibility":16093,"wind":{"speed":4.7,"deg":270},"clouds":{"all":20},"dt":1522608960,"sys":{"type":1,"id":479,"message":0.1642,"country":"US","sunrise":1522590719,"sunset":1522636280},"id":420006397,"name":"Santa Clara","cod":200}
     ```
 
-    For the Aeris Weather observations endpoint, the request looks like this:
+    This response is minified. You can un-minify it by going to a site such as [JSON pretty print](http://jsonprettyprint.com/), or on a Mac (with Python installed) you can add <code>| python -m json.tool</code> at the end of your cURL request to minify the JSON in the response. See [this Stack Overflow thread](https://stackoverflow.com/questions/352098/how-can-i-pretty-print-json-in-a-unix-shell-script) for details.
 
-    ```sh
-	  curl --get --include "http://api.aerisapi.com/observations/santa%20clara,ca?client_id=CLIENTID&client_secret=CLIENTSECRET" "Accept: application/json"
-    ```
+## Make curl requests for each of the Postman requests
 
-## Make the request in curl (Windows 7)
+{% include activity.html %}
 
-1.  Copy the curl call from your text editor.
-2.  Go to **Start** and type **cmd** to open up the command line. (If you're on Windows 8, see [these instructions for accessing the commandline](http://pcsupport.about.com/od/windows-8/a/command-prompt-windows-8.htm).)
-3.  Right-click and then select **Paste** to insert the call. My call for the Mashape API looks like this:
+Make a curl request for each of the requests you entered in Postman.
 
-    ```sh
-	  curl --get -k --include "https://simple-weather.p.mashape.com/weather?lat=37.3710062&lng=-122.0375935" -H "X-Mashape-Key: APIKEY" -H "Accept: text/plain"
-    ```
+## Note about single and double quotes with Windows curl requests
 
-    For the Aeris endpoint, it looks like this:
-
-    ```sh
-    curl --get --include "http://api.aerisapi.com/observations/santa%20clara,ca?client_id=CLIENTID&client_secret=CLIENTSECRET" -H "Accept: application/json"
-    ```
-
-## Responses from the requests
-
-The response from the Mashape request should look as follows:
-
-```
-9 c, Mostly Cloudy at Sunnyvale, United States
-```
-
-For the Aeris Weather API, the [prettified JSON response](http://jsonprettyprint.com/) looks as follows:
-
-```json
-{
-  "success": true,
-  "error": null,
-  "response": {
-    "id": "KSJC",
-    "loc": {
-      "long": -121.91666666667,
-      "lat": 37.366666666667
-    },
-    "place": {
-      "name": "san jose",
-      "state": "ca",
-      "country": "us"
-    },
-    "profile": {
-      "tz": "America\/Los_Angeles",
-      "elevM": 24,
-      "elevFT": 79
-    },
-    "obTimestamp": 1511110380,
-    "obDateTime": "2017-11-19T08:53:00-08:00",
-    "ob": {
-      "timestamp": 1511110380,
-      "dateTimeISO": "2017-11-19T08:53:00-08:00",
-      "tempC": 10,
-      "tempF": 50,
-      "dewpointC": 6.1,
-      "dewpointF": 43,
-      "humidity": 77,
-      "pressureMB": 1021,
-      "pressureIN": 30.15,
-      "spressureMB": 1019,
-      "spressureIN": 30.09,
-      "altimeterMB": 1022,
-      "altimeterIN": 30.18,
-      "windKTS": 0,
-      "windKPH": 0,
-      "windMPH": 0,
-      "windSpeedKTS": 0,
-      "windSpeedKPH": 0,
-      "windSpeedMPH": 0,
-      "windDirDEG": 0,
-      "windDir": "N",
-      "windGustKTS": null,
-      "windGustKPH": null,
-      "windGustMPH": null,
-      "flightRule": "LIFR",
-      "visibilityKM": 16.09344,
-      "visibilityMI": 10,
-      "weather": "Mostly Cloudy",
-      "weatherShort": "Mostly Cloudy",
-      "weatherCoded": "::BK",
-      "weatherPrimary": "Mostly Cloudy",
-      "weatherPrimaryCoded": "::BK",
-      "cloudsCoded": "BK",
-      "icon": "mcloudy.png",
-      "heatindexC": 10,
-      "heatindexF": 50,
-      "windchillC": 10,
-      "windchillF": 50,
-      "feelslikeC": 10,
-      "feelslikeF": 50,
-      "isDay": true,
-      "sunrise": 1511103155,
-      "sunriseISO": "2017-11-19T06:52:35-08:00",
-      "sunset": 1511139250,
-      "sunsetISO": "2017-11-19T16:54:10-08:00",
-      "snowDepthCM": null,
-      "snowDepthIN": null,
-      "precipMM": 0,
-      "precipIN": 0,
-      "solradWM2": 184,
-      "solradMethod": "estimated",
-      "ceilingFT": 20000,
-      "ceilingM": 6096,
-      "light": 28,
-      "QC": "O",
-      "QCcode": 10,
-      "sky": 81
-    },
-    "raw": "KSJC 191653Z 00000KT 10SM FEW060 FEW110 BKN200 10\/06 A3017 RMK AO2 SLP216 T01000061",
-    "relativeTo": {
-      "lat": 37.35411,
-      "long": -121.95524,
-      "bearing": 68,
-      "bearingENG": "ENE",
-      "distanceKM": 3.684,
-      "distanceMI": 2.289
-    }
-  }
-}
-```
-
-## Single and Double Quotes with Windows curl requests
-
-Note that if you're using Windows to submit a lot of curl requests, you'll eventually run into issues with single versus double quotes. Some API endpoints (usually for POST methods) require you to submit content in the body of the message request. The body content is formatted in JSON. Since you can't use double quotes inside of other double quotes, you'll run into issues in submitting curl requests in these scenarios.
+If you're using Windows to submit a lot of curl requests, and the curl request require you to submit JSON in the request body, you might run into issues with single versus double quotes. Some API endpoints (usually for POST methods) require you to submit content in the body of the message request. The body content is formatted in JSON. Since you can't use double quotes inside of other double quotes, you'll run into issues in submitting curl requests in these scenarios.
 
 {% include random_ad.html %}
 
@@ -203,9 +71,3 @@ curl -H "Content-Type: application/json" -H "Authorization: 123" -X POST -d @myp
 ```
 
 Here curl will look in the existing directory for the mypostbody.json file. (You can also reference the complete path to the JSON file on your machine.)
-
-## Make curl requests for each of the weather endpoints
-
-{% include activity.html %}
-
-Make a curl request for each of the weather endpoints for both the Mashape weather endpoints and the Aeris Weather endpoints, similar to how you made the requests in Postman.

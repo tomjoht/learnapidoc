@@ -13,7 +13,7 @@ path1: /docendpoints.html
 
 Until this point, you've been [acting as a developer](likeadeveloper.html) with the task of integrating the weather data into your site. The point was to help you understand the type of information developers need and how they use APIs.
 
-Now let's shift perspectives. Now suppose you're a technical writer working with the Mashape weather API team. The team is asking you to document a new endpoint.
+Now let's shift perspectives. Now suppose you're a technical writer working with the OpenWeatherMap team. The team is asking you to document a new endpoint.
 
 {% if site.format == "web" %}
 * TOC
@@ -58,7 +58,7 @@ Here's the mock internal wiki page:
 <p>Sample endpoint with parameters: </p>
 
 <pre>
-https://simple-weather.p.mashape.com/surfreport/123?&days=2&units=metrics&hour=1400
+http://api.openweathermap.org/com/surfreport/123?&days=2&units=metrics&hour=1400
 </pre>
 
 <p>The response contains these elements:</p>

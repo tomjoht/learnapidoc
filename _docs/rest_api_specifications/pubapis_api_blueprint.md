@@ -241,7 +241,7 @@ For this tutorial, we'll use a platform called Apiary to read and display the AP
 
 	  You can [read the Apiary tutorial](https://apiary.io/blueprint) and structure your documentation in the blueprint format. The syntax seems to accommodate different methods applied to the same resources.
 
-	  For this tutorial, you'll integrate the Mashape weather API information info formatted in the blueprint format.
+	  For this tutorial, you'll integrate the OpenWeatherMap weather API information info formatted in the blueprint format.
 
 4.  Copy the following code, which aligns with the API Blueprint spec, and paste it into the Apiary blueprint editor.
 

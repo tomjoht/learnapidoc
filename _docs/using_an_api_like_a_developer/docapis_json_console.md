@@ -20,108 +20,108 @@ However, to better understand how developers will access the data, we'll go thro
 
 ## Display part of the REST JSON response on a web page
 
-Mashape [provides some sample code in unirest](https://docs.rapidapi.com/v1.0/docs/unirest) to parse and display the REST response on a web page. You could use the code, but you could also use some auto-generated jQuery code from Postman to do pretty much the same thing. We'll use regular jQuery in this sample.
+For this activity, we'll use JavaScript to display the response on a web page. You can use some auto-generated jQuery code from Postman to create the code.
 
 1.  Start with a basic HTML template with jQuery referenced, like this:
 
     ```html
     <html>
-    <head>
-    <title>Sample Page</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    </head>
+    <meta charset="UTF-8">
+      <head>
+          <title>Sample page</title>
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      </head>
     <body>
+      <h1>Sample page</h2>
 
     </body>
     </html>
     ```
 
-    Save your file with a name such as weatherdata.html.
+    Save your file with a name such as weather.html.
 
-2.  Open Postman and click the request to the `weatherdata` endpoint that you [configured earlier](docapis_postman.html).
-3.  Click the **Code** button.
+2.  Open Postman and click the request to the `weather` endpoint that you [configured earlier](docapis_postman.html).
+3.  Click the **Code** link (below the Save button), and then select **JavaScript > jQuery AJAX**.
 
-    <img src="images/postmangeneratecodesnippet.png" class="medium" alt="Generate code snippet" />
+    <img src="images/postmanjqueryajax.png" class="medium" alt="JavaScript Ajax code snippet" />
 
-4.  Select **JavaScript > jQuery AJAX**.
-
-    <img src="images/postmancodesnippet.png"  class="medium" alt="JavaScript Ajax code snippet" />
-
-5.  Copy the code sample.
+5.  Copy **Copy to Clipboard** to copy the code sample.
 
     ```js
     var settings = {
       "async": true,
       "crossDomain": true,
-      "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.3710062&lng=-122.0375935",
+      "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
       "method": "GET",
       "headers": {
-        "accept": "application/json",
-        "x-mashape-key": "EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p",
         "cache-control": "no-cache",
-        "postman-token": "e41085c0-de85-0002-53ea-b64558309c68"
+        "postman-token": "e9be9756-b922-89b3-7109-66bc4cf06b17"
       }
-     }
+    }
 
     $.ajax(settings).done(function (response) {
       console.log(response);
     });
     ```
 
-6.  Insert the Postman code sample between `<script>` tags in the same template you started building in step 1.
+6.  In the same template you started building in step 1, add a pair of `<script></script>` tags below the jQuery script, and then insert the Postman code inside the new `script` tags.
 
     You can put the script in the `head` section if you want &mdash; just make sure you add it after the jQuery reference.
 
-7.  The Postman code sample needs one more parameter: `datatype`. Add `"datatype": "json"` as parameter in `settings`. Otherwise the object returned will be shown in text format rather than JSON.
+7.  In the jQuery code, remove the headers that Postman inserts:
+
+    ```
+    "headers": {
+      "cache-control": "no-cache",
+      "postman-token": "e9be9756-b922-89b3-7109-66bc4cf06b17"
+    }
+    ```
 
     Your final code should look like this:
 
     ```html
+    <!DOCTYPE html>
     <html>
+    <meta charset="UTF-8">
     <head>
+      <meta charset="UTF-8">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    </head>
     <title>Sample Page</title>
+
     <script>
     var settings = {
       "async": true,
       "crossDomain": true,
-      "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.3710062&lng=-122.0375935",
-      "method": "GET",
-      "dataType": "json",
-      "headers": {
-        "accept": "application/json",
-        "x-mashape-key": "EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p",
-        "cache-control": "no-cache",
-        "postman-token": "e41085c0-de85-0002-53ea-b64558309c68"
-       }
-     }
+      "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+      "method": "GET"
+    }
 
     $.ajax(settings).done(function (response) {
       console.log(response);
     });
     </script>
+    </head>
     <body>
-      <h3>Open the Web Console to see the object returned.</h3>
+      <h1>Sample Page</h1>
     </body>
     </html>
     ```
 
     {: .tip}
-    You can view the file here: [idratherbewriting.com/learnapidoc/assets/files/weatherdata-plain.html](http://idratherbewriting.com/learnapidoc/assets/files/weatherdata-plain.html)
+    You can view the file here: [idratherbewriting.com/learnapidoc/assets/files/weather-plain.html](http://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html)
 
-8.  Normally, I would recommend using Chrome. But Chrome's security settings block JavaScript on local files, so use Firefox instead. Start Firefox and open the Web Console by going to **Tools > Web Developer > Web Console**.
-9.  Open the weatherdata.html file in the browser by going to **File > Open File**.
+8.  Start **Firefox** and open the Web Console by going to **Tools > Web Developer > Web Console**. (Normally, I would recommend using Chrome. But Chrome's security settings block JavaScript on local files, so use Firefox instead.)
+9.  Open the **weather.html** file in the browser by going to **File > Open File**.
 
-    The page body will be blank, but the weatherdata response should be logged to the web console. You can inspect the payload by expanding the sections.
+    The page body will be blank, but the weather response should be logged to the web console. You can inspect the payload by expanding the object. Here's what it looks like expanded in Firefox:
 
-    <a href="http://idratherbewriting.com/learnapidoc/assets/files/weatherdata-plain.html"><img src="images/firefoxwebconsole.png" alt="JSON payload from weatherdata API logged to console" /></a>
+    <a href="http://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html"><img src="images/firefoxwebconsole.png" alt="JSON payload from weather API logged to console" /></a>
 
-    If you want to use Chrome instead, use the web instance of the file [here](http://idratherbewriting.com/learnapidoc/assets/files/weatherdata-plain.html) and open the JS Console by going to **View > Developer > JavaScript Console**. It will look as follows:
+    If you want to use Chrome instead, go to the web location the file [here](http://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html) and open the JS Console by going to **View > Developer > JavaScript Console**. If you expand the object returned to the console, it will look as follows:
 
-    <a href="http://idratherbewriting.com/learnapidoc/assets/files/weatherdata-plain.html"><img src="images/jsonpayloadweatherdata.png" alt="JSON payload from weatherdata API logged to console" /></a>
+    <a href="http://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html"><img src="images/jsonpayloadweather.png" alt="JSON payload from weather API logged to console" /></a>
 
-    Note that Chrome tells you whether each expandable section is an object or an array. Knowing this is critical to accessing the value through JavaScript dot notation.
+    Note that Chrome tells you whether each expandable section is an object or an array. Knowing this is important to accessing the value through JavaScript dot notation.
 
     The following sections will explain this AJAX code a bit more.
 
@@ -129,7 +129,7 @@ Mashape [provides some sample code in unirest](https://docs.rapidapi.com/v1.0/do
 
 ## The AJAX method from jQuery
 
-Probably the most useful method to know for showing code samples is the [`ajax` method from jQuery](http://api.jquery.com/jquery.ajax).
+If you're working with JavaScript and APIs, probably the most useful method to know for showing code samples is the [`ajax` method from jQuery](http://api.jquery.com/jquery.ajax).
 
 In brief, this `ajax` method takes one argument: `settings`.
 
@@ -173,7 +173,7 @@ Customizing log messages is helpful if you're logging various things to the cons
 
 {% include activity.html %}
 
-Inspect [the payload](http://idratherbewriting.com/learnapidoc/assets/files/weatherdata-plain.html) by expanding each of the sections returned in the JSON console object. Find the section that appears here: **object > query > results > channel > item > description.** Based on the information here, what's the forecast for today?
+Inspect [the payload](http://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html) by expanding each of the sections returned in the JSON console object. Find the section that appears here: **object > query > results > channel > item > description.** Based on the information here, what's the forecast for today?
 
 {: .note}
 In the next section, [Access and print a specific JSON value](docapis_access_json_values.html), we'll pull out this value and print it to the page.

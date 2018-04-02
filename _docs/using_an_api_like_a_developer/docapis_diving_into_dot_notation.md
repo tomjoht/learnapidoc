@@ -125,7 +125,7 @@ You can view the correct page here: [http://idratherbewriting.com/learnapidoc/as
 
 At the beginning of the section on [Using an API like a developer](docapis_scenario_for_using_weather_api.html#endgoal), I showed an example of [embedding the wind speed](docapis_scenario_for_using_weather_api.html#endgoal) and other details on a website. Now let's revisit this code example and see how it's put together.
 
-Copy the following code into a basic HTML page, customize the `APIKEY` value, and view the page in the browser:
+Copy the following code into a basic HTML page:
 
 ```html
 <html>
@@ -133,9 +133,9 @@ Copy the following code into a basic HTML page, customize the `APIKEY` value, an
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <link rel="stylesheet"  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
 
-  <title>Sample Query to get the wind</title>
+  <title>OpenWeatherMap Integration</title>
 <style>
-   #wind_direction, #wind_chill, #wind_speed, #temperature, #speed {color: red; font-weight: bold;}
+   #wind_direction, #wind_speed, #wind_speed_unit, #wind_degree_unit, #weather_conditions, #main_temp_unit, #main_temp {color: red; font-weight: bold;}
    body {margin:20px;}
 </style>
   </head>
@@ -145,17 +145,12 @@ Copy the following code into a basic HTML page, customize the `APIKEY` value, an
 <script>
 
 function checkWind() {
-
   var settings = {
     "async": true,
     "crossDomain": true,
     "dataType": "json",
-    "url": "https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&lng=-121.955236",
-    "method": "GET",
-    "headers": {
-      "accept": "application/json",
-      "x-mashape-key": "APIKEY"
-    }
+  "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050,us&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+    "method": "GET"
 }
 
   $.ajax(settings)
@@ -163,13 +158,14 @@ function checkWind() {
   .done(function (response) {
     console.log(response);
 
-    $("#wind_speed").append (response.query.results.channel.wind.speed);
-    $("#wind_direction").append (response.query.results.channel.wind.direction);
-    $("#wind_direction").append (" degrees");
-    $("#wind_chill").append (response.query.results.channel.wind.chill);
-    $("#temperature").append (response.query.results.channel.units.temperature);
-    $("#speed").append (response.query.results.channel.units.speed);
-  });
+$("#wind_speed").append (response.wind.speed);
+$("#wind_direction").append (response.wind.deg);
+$("#main_temp").append (response.main.temp);
+$("#weather_conditions").append (response.weather[0].main);
+$("#wind_speed_unit").append (" MPH");
+$("#wind_degree_unit").append (" degrees");
+$("#main_temp_unit").append (" F");
+});
 }
 </script>
 
@@ -178,23 +174,24 @@ function checkWind() {
 
 <h2>Wind conditions for Santa Clara</h2>
 
-<b>Wind chill: </b><span id="wind_chill"></span> <span id="temperature"></span></br>
-<b>Wind speed: </b><span id="wind_speed"></span> <span id="speed"></span></br>
-<b>Wind direction: </b><span id="wind_direction"></span>
+<span><b>Temperature: </b></span><span id="main_temp"></span><span id="main_temp_unit"></span><br/>
+<span><b>Wind speed: </b></span><span id="wind_speed"></span> <span id="wind_speed_unit"></span><br/>
+<span><b>Wind direction: </b></span><span id="wind_direction"></span><span id="wind_degree_unit"></span><br/>
+<span><b>Current conditions: </b></span><span id="weather_conditions"></span>
 </body>
 </html>
+
 ```
 A few things are different here, but it's essentially the same code:
 
 * Rather than running the `ajax` method on page load, the `ajax` method is wrapped inside a function called `checkWind`. When the web page's button is clicked, the `onclick` method fires the `checkWind()` function.
-* When `checkWind` runs, the wind chill, speed, and direction values are written to several ID tags on the page. Units for each of these values are also added to the page.
-* Some minimal styling is added. Bootstrap is loaded to make the button styling.
+* When the `checkWind` function runs, the values for temperature, wind speed, wind direction, and current conditions are written to several ID tags on the page.
 
 When you load the page and click the button, the following should appear:
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-mashape.html" class="noExtIcon"><img src="images/windconditionsfinaloutput.png" alt="Final REST API" /></a>
+<a href="/learnapidoc/assets/files/wind-openweathermap.html" class="noExtIcon"><img src="images/windconditionsfinaloutput.png" class="medium" alt="Final REST API" /></a>
 
-You can view the file <a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-mashape.html">idratherbewriting.com/learnapidoc/assets/files/wind-mashape.html</a>.
+You can view the file <a href="/learnapidoc/assets/files/checkwindconditions.png.html">idratherbewriting.com/learnapidoc/assets/files/wind-weatherbit.html</a>.
 
 ## Next section
 
