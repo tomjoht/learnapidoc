@@ -149,7 +149,6 @@ Here's what the commands mean:
 * `-X GET`. The `-X` signifies the method used for for the request. Common options are `GET`, `POST`, `DELETE`, `PUT`. (`GET` is the default, so if it's not specified, it's automatically used. You might also see `--get` used instead. Most curl commands have a couple of different representations. `-X GET` can also be written as `--get`.)
 
 `-H`. Submits a custom header. Include an additional `-H` for each header key-value pair you're submitting.
-{% else %}
 
 ## Query strings and parameters
 
