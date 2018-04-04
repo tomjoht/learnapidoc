@@ -83,3 +83,8 @@ algolia:
   application_id: 7JEKBAXL1Y
   index_name: learnapidocs
   search_only_api_key: 268324bcfa734077d7983ed51a671760
+  files_to_exclude:
+    - ./toc.html
+    - _docs/pdf_frontmatter/*
+    - _docs/introduction_to_rest_apis/tocstart.html
+    - _docs/introduction_to_rest_apis/tocstart_fulldetails.md
