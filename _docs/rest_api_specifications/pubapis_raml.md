@@ -21,9 +21,9 @@ Unless you're publishing your docs with Mulesoft or another platform that specif
 
 ## RAML overview
 
-Similar to OpenAPI, after you create a RAML file that describes your API, it can be consumed by different platforms to parse and display the information in attractive outputs. The RAML format, which uses YML syntax, is human-readable, efficient, and simple.
+Similar to OpenAPI, after you create a RAML file that describes your API, it can be consumed by different platforms to parse and display the information in attractive outputs. The RAML format, which uses YML syntax, is human-readable, efficient, and simple. See this [demo](http://idratherassets.com/raml/build/index.html):
 
-<figure><a href="http://idratherbewriting.com/learnapidoc/assets/files/raml/index.html" class="noExtIcon"><img src="images/ramlexample.png" alt="Sample RAML output in API Console" /></a><figcaption>This is a sample RAML output in something called API Console</figcaption></figure>
+<figure><a href="http://idratherassets.com/raml/build/index.html" class="noExtIcon"><img src="images/ramlexample.png" alt="Sample RAML output in API Console" /></a><figcaption>This is a sample RAML output in something called API Console</figcaption></figure>
 
 ## Auto-generating client SDK code
 
@@ -37,7 +37,7 @@ To understand the proper syntax and format for RAML, you need to read the [RAML 
 
 {% include random_ad.html %}
 
-Here's the OpenWeatherMap API we've been using in this course formatted in the RAML spec:
+Here's the OpenWeatherMap API we've been using in this course formatted in the RAML spec. (I actually just used [API Transformer](https://apimatic.io/transformer) to convert my OpenAPI 3.0 spec to RAML.)
 
 ```
 #%RAML 1.0
@@ -452,41 +452,28 @@ You can generate outputs using the RAML spec from a variety of platforms. Here a
 
 ## Deliver doc through the API Console Project
 
-You can also download the same code that generates the output on the Anypoint Platform and create your own API Console.
+You can also download the same code that generates the output on the Anypoint Platform and create your own API Console. The standalone project is called [API Console](https://github.com/mulesoft/api-console). Here's a [demo](http://idratherassets.com/raml/build/index.html). Instructions are available on the [api-console](https://github.com/mulesoft/api-console) project on GitHub. Basically, do the following:
 
-1.  Download the [API Console code from Github](https://github.com/mulesoft/api-console).
-2.  Save your RAML file to some place locally on your computer (such as weather.raml on Desktop).
-3.  In the code you downloaded from Github, go to dist/index.html in your browser.
-
-	  <img src="images/apiconsoleraml.png" alt="RAML Console" />
-
-4.  Copy the RAML code you created.
-5.  Insert your copied code into the **Or parse RAML here** text box. Then click **Load RAML**.
-
-	  The API Console loads your RAML content:
-
-	  <img src="images/ramlloaded.png" alt="RAML loaded" />
-
-6.  To auto-load a specific RAML file, add this to the body of the index.html file:
+1.  Install the api-console CLI:
 
     ```
-    <div style="overflow:auto; position:relative">
-      <raml-console src="examples/weather.raml"></raml-console>
-    </div>
+    sudo npm install -g api-console-cli
     ```
 
-	  In this example, the RAML file is located in examples/weather.raml.
-
-7.  Remove the following line:
+2.  Create a directory where you want to build the tool.
+3.  Switch to sudo on your computer (`sudo su`).
+4.  Build your RAML file (or convert your existing OpenAPI spec using [API Transformer](https://apimatic.io/transformer)).
+5.  Put your RAML file onto a web server (for example, [http://idratherassets.com/raml/weather.raml](http://idratherassets.com/raml/weather.raml)).
+6.  Run the api-console build tool:
 
     ```
-	  <raml-initializer></raml-initializer>
+    api-console build http://idratherassets.com/raml/weather.raml
     ```
 
-	  View the file in your web browser. Note that if the file doesn't load in Chrome, open it in Firefox. Chrome tends to block local JavaScript for security reasons.
+    It takes a few minutes for the build to complete. (If you run into errors, make sure you're in sudo mode.)
+7.  Upload the output to your webserver, and then go to the index.html file in your browser.
 
-	  {: .tip}
-    Here's a <a href="http://idratherbewriting.com/learnapidoc/assets/files/raml/specific.html">sample RAML API Console output</a> that integrates the weather.raml file. Here's a <a href="http://idratherbewriting.com/learnapidoc/assets/files/raml/examples/weather.raml">generic RAML API Console</a> that allows you to insert your own RAML spec code.
+You can also [embed the API console as an HTML element](https://github.com/mulesoft/api-console#embed-as-an-html-element).
 
 ## Deliver doc through the RAML2HTML Utility
 
