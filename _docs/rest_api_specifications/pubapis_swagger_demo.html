@@ -85,6 +85,8 @@ window.onload = function() {
     url: "docs/rest_api_specifications/openapi_openweathermap.yml",
     // url: "http://petstore.swagger.io/v2/swagger.json",
     dom_id: '#swagger-ui',
+    defaultModelsExpandDepth: -1,
+    docExpansion: "full",
     deepLinking: true,
     presets: [
       SwaggerUIBundle.presets.apis,

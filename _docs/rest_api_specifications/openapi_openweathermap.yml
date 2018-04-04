@@ -1,19 +1,29 @@
 openapi: 3.0.1
 info:
   title: OpenWeatherMap API
-  description: 'Get current weather, daily forecast for 16 days, and 3-hourly forecast 5 days for your city. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location. tations. Data is available in JSON, XML, or HTML format. **Note**: This sample Swagger file covers the `current` endpoint only from the OpenWeatherMap API. <br/><br/> **Tip**: We recommend that you call the API by city ID (using the `id` parameter) to get unambiguous results for your city.'
+  description: 'Get current weather, daily forecast for 16 days, and 3-hourly forecast 5 days for your city. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location stations. Data is available in JSON, XML, or HTML format. **Note**: This sample Swagger file covers the `current` endpoint only from the OpenWeatherMap API. <br/><br/> **Note**: All parameters are optional, but you must select at least one parameter. Calling the API by city ID (using the `id` parameter) will provide the most precise location results.'
   version: '2.5'
+  termsOfService: https://openweathermap.org/terms
+  contact:
+    name: OpenWeatherMap API
+    url: https://openweathermap.org/api
+    #email: some_email@gmail.com
+  license:
+    name: "CC Attribution-ShareAlike 4.0 (CC BY-SA 4.0)"
+    url: https://openweathermap.org/price
 servers:
 - url: http://api.openweathermap.org/data/2.5/
-  variables: {}
+tags:
+  - name: Current Weather Data
+    description: "Get current weather details"
 paths:
   /weather:
     get:
       tags:
-      - weather
-      summary: Get current weather data
-      description: Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations.
-      operationId: WeatherGet
+      - Current Weather Data
+      summary: "Call current weather data for one location"
+      description: "Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations."
+      operationId: CurrentWeatherData
       parameters:
       - name: q
         in: query
@@ -23,24 +33,25 @@ paths:
 
       - name: id
         in: query
-        description: "**City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded here http://bulk.openweathermap.org/sample/. You can include multiple cities in parameter -- just separate them by commas. The limit of locations is 20. NOTE: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls."
+        description: "**City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls.*"
         schema:
           type: string
 
       - name: lat
         in: query
-        description: "**Latitude**. *Example: 35*. The latitude cordinate of the location of your interest. Must use with longitude."
+        description: "**Latitude**. *Example: 35*. The latitude cordinate of the location of your interest. Must use with `lon`."
         schema:
           type: string
-      - name: Longitude
+
+      - name: lon
         in: query
-        description: "**Longitude**. *Example: 139*. Longitude cordinate of the location of your interest. Must use with latitude."
+        description: "**Longitude**. *Example: 139*. Longitude cordinate of the location of your interest. Must use with `lat`."
         schema:
           type: string
 
       - name: zip
         in: query
-        description: "Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default."
+        description: "**Zip code**. Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default."
         schema:
           type: string
           default: "94040,us"
@@ -53,13 +64,16 @@ paths:
         schema:
           type: string
           enum: [standard, metric, imperial]
+          default: "standard"
         example: "imperial"
+
       - name: lang
         in: query
         description: '**Language**. *Example: en*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - `ar`, Bulgarian - `bg`, Catalan - `ca`, Czech - `cz`, German - `de`, Greek - `el`, English - `en`, Persian (Farsi) - `fa`, Finnish - `fi`, French - `fr`, Galician - `gl`, Croatian - `hr`, Hungarian - `hu`, Italian - `it`, Japanese - `ja`, Korean - `kr`, Latvian - `la`, Lithuanian - `lt`, Macedonian - `mk`, Dutch - `nl`, Polish - `pl`, Portuguese - `pt`, Romanian - `ro`, Russian - `ru`, Swedish - `se`, Slovak - `sk`, Slovenian - `sl`, Spanish - `es`, Turkish - `tr`, Ukrainian - `ua`, Vietnamese - `vi`, Chinese Simplified - `zh_cn`, Chinese Traditional - `zh_tw`.'
         schema:
           type: string
           enum: [ar, bg, ca, cz, de, el, en, fa, fi, fr, gl, hr, hu, it, ja, kr, la, lt, mk, nl, pl, pt, ro, ru, se, sk, sl, es, tr, ua, vi, zh_cn, zh_tw]
+          default: "en"
         example: "en"
       - name: Mode
         in: query
@@ -67,6 +81,7 @@ paths:
         schema:
           type: string
           enum: [json, xml, html]
+          default: "json"
         example: "json"
 
       responses:
@@ -104,6 +119,10 @@ components:
           example: cmc stations
         main:
           $ref: '#/components/schemas/Main'
+        visibility:
+          type: integer
+          description: Visibility, meter
+          example: 16093
         wind:
           $ref: '#/components/schemas/Wind'
         clouds:
@@ -271,9 +290,6 @@ components:
           format: int32
           example: 1435650870
 
-
-
-
   securitySchemes:
     app_id:
       type: apiKey
@@ -282,3 +298,6 @@ components:
       in: query
 security:
 - app_id: []
+externalDocs:
+  description: API Documentation
+  url: https://openweathermap.org/api

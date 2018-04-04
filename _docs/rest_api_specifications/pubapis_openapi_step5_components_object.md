@@ -51,7 +51,7 @@ The properties for each object inside `components` are the same as they are when
 
 In the previous topic, I explained how to [re-use parameter definitions in components](pubapis_openapi_step4_paths_object.html#reusing_definitions), so I won't re-explain the approach. Here we'll cover how to re-use the schema definitions in the `responses` objects.
 
-Although we don't need to reuse the `weather` response in this exercise (because we're only documenting one endpoint), it'll be better to organize this schema definition under `components` anyway because it reduces the detail under the `paths` object. If you recall in the previous step ([OpenAPI tutorial step 4: The paths object](pubapis_openapi_step4_paths_object.html), the `responses` object for the `current` endpoint looked like this:
+Although we don't need to reuse the `weather` response in this exercise (because we're only documenting one endpoint), it'll be better to organize this schema definition under `components` anyway because it reduces the detail under the `paths` object. If you recall in the previous step ([OpenAPI tutorial step 4: The paths object](pubapis_openapi_step4_paths_object.html), the `responses` object for the `weather` endpoint looked like this:
 
 ```yaml
 paths:
@@ -80,7 +80,7 @@ paths:
 
 Then in `components/schemas`, we define the `200` schema.
 
-Before we describe the response in the `components` object, it might be helpful to review what the [`current` response] from the OpenWeatherMap API looks like. The response contains multiple nested objects at various levels.
+Before we describe the response in the `components` object, it might be helpful to review what the [`weather` response] from the OpenWeatherMap API looks like. The response contains multiple nested objects at various levels.
 
 
 ```json
@@ -139,7 +139,7 @@ There are a couple of ways to go about describing this response. You could creat
 
 Another approach is to make each object its own entity in the `components`. Whenever an object contains an object, add a `$ref` value that points to the new object. This way objects remain shallow and you won't get lost in a sea of confusing sublevels.
 
-Here's the description of the `200` response for the `current` endpoint:
+Here's the description of the `200` response for the `weather` endpoint:
 
 ```yaml
 components:
@@ -161,6 +161,10 @@ components:
           example: cmc stations
         main:
           $ref: '#/components/schemas/Main'
+        visibility:
+          type: integer
+          description: Visibility, meter
+          example: 16093
         wind:
           $ref: '#/components/schemas/Wind'
         clouds:
@@ -331,33 +335,35 @@ components:
 
 As you can see, not only can you use `$ref` properties in other parts of your spec, you can use it within `components` too.
 
+## Automatically generate the schema from JSON using Stoplight
+
+Describing a JSON response can be complicated and confusing. Fortunately, there's a somewhat easy workaround. Download [Stoplight](https://next.stoplight.io/). Use the **Generate JSON** feature to have Stoplight automatically create the OpenAPI schema description. Here's a short (silent) video showing how to do this:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o8aTo6e0kCY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+The only catch is that Stoplight uses OpenAPI 2.0, not 3.0. You might need to use [API Transformer](https://apimatic.io/transformer) to convert the 2.0 schema output to 3.0. Even so, this approach can save you a lot of time.
+
+## Automating the examples
+
+Notice how the schema definition includes an `example` property for element? Swagger UI will take this `example` and use it to automatically build a full code sample. It's one of the neat things about Swagger UI. This wy, your schema documentation and example remain consistent.
+
 ## Appearance of components in Swagger UI
 
-By default, Swagger UI displays each object in `components` in a section called `Models` at the end of your Swagger UI display. If you decided to consolidate all schemas into a single object, without using the `$ref` property to point to new objects, then you will see just one object in Models. If you split out the objects, then you see each object listed separately, including the object that contains all the references.
+By default, Swagger UI displays each object in `components` in a section called `Models` at the end of your Swagger UI display. If you consolidate all schemas into a single object, without using the `$ref` property to point to new objects, you will see just one object in Models. If you split out the objects, then you see each object listed separately, including the object that contains all the references.
 
 Because I want to re-use objects, I'm going define each object in `components` separately. As a result, the Models section looks like this:
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/swaggerui_models_broken_out.png" /></a>
+<a href="/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/swaggerui_models_broken_out.png" class="medium" /></a>
 
-## Reason for models in the first place
+## The Models section -- why it exists, how to hide it
 
 The Models section is now in the latest version of Swagger UI. I'm not really sure why the Models section appears at all, actually. Apparently, it was added by popular request because the online Swagger Editor showed the display, and many users asked for it to be incorporated into Swagger UI.
 
 You don't need this Models section in Swagger UI because both the request and response sections of Swagger UI provide a "Model" link that lets the user toggle to this view. For example:
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/models_options_in_responses.png" /></a>
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/models_options_in_responses.png" class="medium" /></a>
 
-## Hiding the Models section
-
-You might confuse users by including the Models section. Currently, there isn't a [Swagger UI parameter](https://github.com/swagger-api/swagger-ui#parameters) to hide the Models section. To hide Models, simply add this style to the Swagger UI page:
-
-```html
-<style>
-section.models {
-    display: none;
-}
-</style>
-```
+You might confuse users by including the Models section. To hide Models, simply add the `    defaultModelsExpandDepth: -1` parameter in your Swagger UI project.
 
 ## Describing a schema
 

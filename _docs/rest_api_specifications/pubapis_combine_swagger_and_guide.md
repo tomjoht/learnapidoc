@@ -31,20 +31,20 @@ This conundrum is usually crystal clear to technical writers while remaining har
 * troubleshooting
 * glossary
 
-Other times, you just have more detail that you need to communicate to the user that won't fit easily into the spec. For example, in the `weatherdata` endpoint in the [sample OpenWeatherMap API](pubapis_swagger.html) that we've been using in this course, there's a whole table about condition codes that is essential to interpreting the `item` property in the response. Here's a sample:
+Other times, you just have more detail that you need to communicate to the user that won't fit easily into the spec. For example, in the `weather` endpoint in the [sample OpenWeatherMap API](pubapis_swagger.html) that we've been using in this course, there's some detail about city IDs that needs some explanation.
 
 ```json
-"condition": {
-           "code": "33",
-           "date": "Wed, 14 Jun 2017 09:00 PM SGT",
-           "temp": "26",
-           "text": "Mostly Clear"
-         }
+...
+},
+"id": 420006397,
+ "name": "Santa Clara",
+ "cod": 200
+}
 ```
 
-What does the code `33` mean? If you go to the [Yahoo Weather API docs](https://developer.yahoo.com/weather/documentation.html) (which is where the data for this Mashape weather API originates), you'll see a Condition Codes table that tells you that `33` means "fair (night)". That long table (which includes nearly 50 separate condition codes) will be difficult to include in the parameter details in the OpenAPI spec.
+What does the code `420006397` mean? If you go to the [City ID section in the docs](http://openweathermap.org/current#cityid), you'll see a link to download a list of file city codes.
 
-If you have a lot of extra information and notes like this in your reference docs, it can be difficult to fit them into the parameter descriptions allotted. Unfortunately, there's not an easy solution for creating a single source of truth. Here are some options.
+If you have a lot of extra information and notes like this in your reference docs, it can be difficult to fit them into the parameter descriptions allotted in the OpenAPI spec. Unfortunately, there's not an easy solution for creating a single source of truth. Here are some options.
 
 ## Option 1: Embed Swagger UI in your docs
 
@@ -58,16 +58,13 @@ I like the embedded option, because it means you can still use the official Swag
 
 ## Option 2: Put all info into your spec through expand/collapse sections
 
-You can try to put all information into your spec. You may be surprised about how much information you can actually include in the spec. Any `description` element (not just the `description` property in the `info` object) allows you to use Markdown and HTML. For example, here's the `info` object in the OpenAPI spec where a description appears. Type a pipe `|` to break the content onto the next line, and then indent two spaces. You can add a lot of content here.
+You can try to put all information into your spec. You may be surprised about how much information you can actually include in the spec. Any `description` element (not just the `description` property in the `info` object) allows you to use Markdown and HTML. For example, here's the `info` object in the OpenAPI spec where a description appears. (If desired, you can type a pipe `|` to break the content onto the next line, and then indent two spaces. You can add a lot of content here.)
 
 ```yaml
 info:
-  description: |
-    This is a sample spec that describes a Mashape Weather API as an example to demonstrate features in the Swagger-2.0 specification. This output is part of the <a href="http://idratherbewriting.com/learnapidoc">Documenting REST API course</a> on my site. The Weather API displays forecast data by latitude and longitude. It's a simple weather API, but the data comes from Yahoo Weather Service. The weatherdata endpoint delivers the most robust package of information of the endpoints here.
-
-    To explore the API, you'll need an API key. You can sign up for an API through Mashape, or you can just use this one\: `EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p`. For the latitude and longitude parameters, you can get this information from the URL of a location on Google Maps. For example, for Santa Clara, California, use the following\:
-    * **lat**: `37.3708698`
-    * **lng**: `-122.037593`
+  title: OpenWeatherMap API
+  description: 'Get current weather, daily forecast for 16 days, and 3-hourly forecast 5 days for your city. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location. tations. Data is available in JSON, XML, or HTML format. **Note**: This sample Swagger file covers the `weather` endpoint only from the OpenWeatherMap API. <br/><br/> **Tip**: We recommend that you call the API by city ID (using the `id` parameter) to get unambiguous results for your city.'
+  version: '2.5'
 ```
 
 With one Swagger API project I worked on, I referenced Bootstrap CSS and JS in the header of the index.html of the Swagger UI project, and then incorporated Bootstrap alerts and expand/collapse buttons in this `description` element. Here's an example:

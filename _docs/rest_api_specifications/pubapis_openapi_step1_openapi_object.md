@@ -96,13 +96,13 @@ openapi: "3.0.1"
 
 In the Swagger UI display, an "OAS3" tag appears to the right of the API name.
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapitutorial_version.png" style="border: 1px solid #dedede;"/></a>
+<a href="/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapitutorial_version.png" class="medium" style="border: 1px solid #dedede;"/></a>
 
 ## Validator errors
 
 If your spec doesn't validate, the Swagger UI display often won't load the content or will show an error. For example, if you have an incorrect indentation in your YAML syntax, an error message might appear that indicates a `bad indentation of a mapping entry`. You can click the **Error** button in the lower right to see more information.
 
-<img src="images/validation-erorrs.png"/>
+<img src="images/validation-erorrs.png" class="medium"/>
 
 Clicking this error button takes you to `https://online.swagger.io/validator/debug?url=/learnapidoc/docs/rest_api_specifications/openapi_weather.yml`, showing you which document the online Swagger validator is attempting to validate and the error. You can also open up the JS console to get a little more debugging information (such as the column where the error occurs).
 

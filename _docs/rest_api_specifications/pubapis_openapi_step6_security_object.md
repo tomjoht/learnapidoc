@@ -34,7 +34,7 @@ In this tutorial, I'll explain the API key method, as it's the most common and i
 
 ## API key authorization
 
-The sample Mashape weather API we're using in this course uses an API key passed in the request header (`X-Mashape-Key: 123456789`). If you submit a request without this header (and without a valid API key), the server denies the request.
+The sample OpenWeatherMap API we're using in this course uses an API key passed in the URL's query string (rather than the header). If you submit a request without the API key in the query string (or without a valid API key), the server denies the request.
 
 ## Security object
 
@@ -42,22 +42,22 @@ At the root level of your OpenAPI document, add a `security` object that defines
 
 ```yaml
 security:
-- Mashape-Key: []
+- app_id: []
 ```
 
-`Mashape-Key` is the arbitrary name we gave to this security scheme in our `securitySchemes` object. We could have named it anything. We'll define `Mashape-Key` in `components`.
+`app_id` is the arbitrary name we gave to this security scheme in our `securitySchemes` object. We could have named it anything. We'll define `app_id` in `components`.
 
-All paths will use the `Mashape-Key` security method by default unless it's overridden by a value at the [`path` object level](pubapis_openapi_step4_paths_object.html). For example, at the path level we could overwrite the global security method as follows:
+All paths will use the `app_id` security method by default unless it's overridden by a value at the [`path` object level](pubapis_openapi_step4_paths_object.html). For example, at the path level we could overwrite the global security method as follows:
 
 ```yaml
-/weatherdata:
+/current:
   get:
     ...
     security:
-    - Some-Other-Key: []
+    - some_other_key: []
 ```
 
-Then the `weatherdata` path would use the `Some-Other-Key` security method, while all other paths would use the globally declared security, `Mashape-Key`.
+Then the `weather` path would use the `some_other_key` security method, while all other paths would use the globally declared security, `app_id`.
 
 ## Referencing the security scheme in components
 
@@ -68,11 +68,11 @@ components:
   ...
 
   securitySchemes:
-    Mashape-Key:
+    app_id:
       type: apiKey
-      description: "The API authorizes requests through an API key in your header. Enter your Mashape key here. If you don't have an API key, for testing purposes you can use `EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p`."
-      name: X-Mashape-Key
-      in: header
+      description: API key to authorize requests. If you don't have an OpenWeatherMap API key, use `fd4698c940c6d1da602a70ac34f0b147`.
+      name: appid
+      in: query
 ```
 
 Properties you can use in the `securitySchemes` object include the following:
@@ -90,7 +90,7 @@ Properties you can use in the `securitySchemes` object include the following:
 
 In the Swagger UI, you see the `description` and other security details in the Authorization modal (which appears when you click the Authorization button):
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapitutorial_securityauth.png"/></a>
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapitutorial_securityauth.png" class="medium"/></a>
 
 After users enter an API key and clicks **Authorize**, the authorization method is set for as many requests as they want to make. Only when users refresh the page does the authorization session expire.
 
@@ -99,10 +99,10 @@ After users enter an API key and clicks **Authorize**, the authorization method 
 When you submit a request, Swagger UI shows you the curl request that is submitted. For example, after executing a weather request, the curl is as follows:
 
 ```bash
-curl -X GET "https://simple-weather.p.mashape.com/weather?lat=37.3708698&lng=-122.037593" -H "accept: text/plain" -H "X-Mashape-Key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p"
+curl -X GET "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
 ```
 
-The `-H "X-Mashape-Key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p"` indicates that a header is being sent with the API key. (For more on curl, see [Make a curl call](docapis_make_curl_call.html).)
+The `&appid=fd4698c940c6d1da602a70ac34f0b147"` indicates that the API key is being included in the query string. (For more on curl, see [Make a curl call](docapis_make_curl_call.html).)
 
 ## Troubleshooting issues
 

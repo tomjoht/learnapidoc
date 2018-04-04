@@ -26,7 +26,7 @@ My preferred term is "endpoint" rather than "path," but to be consistent with th
 
 ## Start by listing the paths
 
-Start by listing the paths (endpoints) and their allowed operations (methods). For the `current` endpoint in the OpenWeatherMap API, there is just 1 path with the `get` operation:
+Start by listing the paths (endpoints) and their allowed operations (methods). For the `weather` endpoint in the OpenWeatherMap API, there is just 1 path with the `get` operation:
 
 ```yaml
 paths:
@@ -58,21 +58,6 @@ Let's add a skeleton of the operation object details to our existing code:
 
 ```yaml
 paths:
-  /aqi:
-    get:
-      tags:
-      summary:
-      description:
-      operationId:
-      externalDocs:
-      parameters:
-      responses:
-      deprecated:
-      security:
-      servers:
-      requestBody:
-      callbacks:
-
   /weather:
     get:
       tags:
@@ -87,21 +72,6 @@ paths:
       servers:
       requestBody:
       callbacks:
-
-  /weatherdata:
-    get:
-      tags:
-      summary:
-      description:
-      operationId:
-      externalDocs:
-      parameters:
-      responses:
-      deprecated:
-      security:  
-      servers:
-      requestBody:
-      callbacks:     
 ```
 
 Now we can remove a few unnecessary fields:
@@ -151,19 +121,18 @@ The [`parameters` object](https://github.com/OAI/OpenAPI-Specification/blob/mast
 * `example`: An example of the media type. If your `examples` object contains examples, those examples appear in Swagger UI rather than the content in the `example` object.
 * [`examples`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#exampleObject) (object): An example of the media type, including the schema.
 
-Here's the `operation` object defined for the OpenWeather API:
+Here's the `operation` object defined for the OpenWeatherMap API:
 
 ```yaml
 paths:
   /weather:
     get:
       tags:
-      - weather
-      summary: Get current weather data
-      description: Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations.
-      operationId: WeatherGet
+      - Current Weather Data
+      summary: "Call current weather data for one location"
+      description: "Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations."
+      operationId: CurrentWeatherData
       parameters:
-
       - name: q
         in: query
         description: "**City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes."
@@ -172,25 +141,25 @@ paths:
 
       - name: id
         in: query
-        description: "**City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded here http://bulk.openweathermap.org/sample/. You can include multiple cities in parameter -- just separate them by commas. The limit of locations is 20. NOTE: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls."
+        description: "**City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls.*"
         schema:
           type: string
 
       - name: lat
         in: query
-        description: "**Latitude**. *Example: 35*. The latitude coordinate of the location of your interest. Must use with longitude."
+        description: "**Latitude**. *Example: 35*. The latitude cordinate of the location of your interest. Must use with `lon`."
         schema:
           type: string
 
-      - name: Longitude
+      - name: lon
         in: query
-        description: "**Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with latitude."
+        description: "**Longitude**. *Example: 139*. Longitude cordinate of the location of your interest. Must use with `lat`."
         schema:
           type: string
 
       - name: zip
         in: query
-        description: "Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default."
+        description: "**Zip code**. Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default."
         schema:
           type: string
           default: "94040,us"
@@ -199,10 +168,11 @@ paths:
 
       - name: units
         in: query
-        description: '**Units**. *Example: imperial*. Possible values: `standard`, `metric`, `imperial`. When you do not use units parameter, the format is `standard` by default.'
+        description: '**Units**. *Example: imperial*. Possible values: `metric`, `imperial`. When you do not use units parameter, format is `standard` by default.'
         schema:
           type: string
           enum: [standard, metric, imperial]
+          default: "standard"
         example: "imperial"
 
       - name: lang
@@ -211,16 +181,26 @@ paths:
         schema:
           type: string
           enum: [ar, bg, ca, cz, de, el, en, fa, fi, fr, gl, hr, hu, it, ja, kr, la, lt, mk, nl, pl, pt, ro, ru, se, sk, sl, es, tr, ua, vi, zh_cn, zh_tw]
+          default: "en"
         example: "en"
-
       - name: Mode
         in: query
         description: "**Mode**. *Example: html*. Determines format of response. Possible values are `xml` and `html`. If mode parameter is empty the format is `json` by default."
         schema:
           type: string
           enum: [json, xml, html]
+          default: "json"
         example: "json"
 ```
+
+## Parameter dependencies
+
+The OpenAPI specification doesn't allow you to declare dependencies with parameters, or mutually exclusive parameters. According to the Swagger OpenAPI documentation,
+
+> OpenAPI 3.0 does not support parameter dependencies and mutually exclusive parameters. There is an open feature request at [https://github.com/OAI/OpenAPI-Specification/issues/256](https://github.com/OAI/OpenAPI-Specification/issues/256).
+What you can do is document the restrictions in the parameter description and define the logic in the 400 Bad Request response. ([Parameter Dependencies](https://swagger.io/docs/specification/describing-parameters/#parameter-dependencies-19))
+
+In the case of the weather endpoint with the OpenWeatherMap, most of the parameters are mutually exclusive. You can't search by City ID and by zip code. Although the parameters are optional, you have to use at least one parameter. Also, if you use the latitude parameter, you must also use the longitude parameter, as they're a pair. The OpenAPI spec can't programmatically reflect that structured logic, so you just have to explain it in the description property or in other more conceptual documentation.
 
 ## Single-sourcing definitions across objects {#reusing_definitions}
 
@@ -231,18 +211,18 @@ In this example, I'm just documenting one endpoint in the OpenWeatherMap API. Bu
 The code below shows how you reference a common definition stored in `components`. See how `parameters` simply contains a `$ref: '#/components/parameters/q`, which is defined in `components`. For brevity, I included just 2 parameters in this example.
 
 ```yaml
-
 paths:
   /weather:
     get:
       tags:
-      - weather
-      summary: Get current weather data
-      description: Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations.
-      operationId: WeatherGet
+      - Current Weather Data
+      summary: "Call current weather data for one location"
+      description: "Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations."
+      operationId: CurrentWeatherData
       parameters:
         - $ref: '#/components/parameters/q'
         - $ref: '#/components/parameters/id'
+        ...
 
 components:
   parameters:
@@ -251,11 +231,13 @@ components:
       description: "**City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes."
       schema:
         type: string
+
     id:
       in: query
-      description: "**City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded here http://bulk.openweathermap.org/sample/. You can include multiple cities in parameter -- just separate them by commas. The limit of locations is 20. NOTE: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls."
+      description: "**City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls.*"
       schema:
         type: string
+      ...
 ```
 
 See [Storing re-used parameters in components](pubapis_openapi_step5_components_object.html#reused_parameters) for more details. Also see [Describing Parameters](https://swagger.io/docs/specification/describing-parameters/) in Swagger's OpenAPI documentation.
@@ -313,7 +295,7 @@ We'll define the details for `$ref: '#/components/schemas/WeatherGetResponse'` i
 
 Swagger UI displays the `paths` object like this:
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapiparameters.png" /></a>
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapiparameters.png" class="medium" /></a>
 
 When you click **Try it out**, the `example` value populates the parameters field.
 

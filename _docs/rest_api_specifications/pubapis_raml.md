@@ -31,13 +31,13 @@ It's important to note that with these REST API specifications (not just RAML), 
 
 Additionally, the interactive console can provide a way to test out your API before developers code it. Mulesoft offers a "mocking service" for your API that simulates calls at a different baseURI. The idea of the mocking service is to design your API the right way from the start, without iterating with different versions as you try to get the endpoints right.
 
-## Sample spec for Mashape Weather API
+## Sample spec for OpenWeatherMap API
 
 To understand the proper syntax and format for RAML, you need to read the [RAML spec](http://raml.org/spec.html) and look at some examples. See also [this RAML tutorial](http://raml.org/docs.html#step-introduction) and this [video tutorial](https://www.youtube.com/embed/5o_nExedezw?autoplay=1).
 
 {% include random_ad.html %}
 
-Here's the Mashape Weather API we've been using in this course formatted in the RAML spec:
+Here's the OpenWeatherMap API we've been using in this course formatted in the RAML spec:
 
 ```
 #%RAML 0.8

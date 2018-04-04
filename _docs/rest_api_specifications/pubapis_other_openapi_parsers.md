@@ -30,7 +30,7 @@ Here's a [demo output](https://cheesestore.github.io/).
 
 <a href="https://cheesestore.github.io/" class="noExtIcon"><img src="images/spectacle-sample-output.png"/></a>
 
-You can also see an [output that uses the Mashape weather API file](http://idratherbewriting.com/learnapidoc/assets/files/spectacle/public/index.html).
+You can also see an [output that uses the Mashape API file](http://idratherbewriting.com/learnapidoc/assets/files/spectacle/public/index.html).
 
 With almost no needed setup or configuration, Spectacle gives you a world-class output and site for your API docs. As long as the [OpenAPI spec](pubapis_openapi_tutorial_overview.html) that you integrate is fully detailed, the generated Spectacle site will be attractive and full-featured.
 
@@ -46,11 +46,11 @@ To try out Run in Postman, first [import your OpenAPI spec into Postman](https:/
 You can see the many [demos of Run in Postman here](https://www.getpostman.com/integrations/run-button).
 
 {% if site.format == "web" %}
-Here's a demo of Run in Postman using the sample Mashape weather API:
+Here's a demo of Run in Postman using the OpenWeatherMap API (`weather` endpoint):
 
 <div class="postman-run-button"
 data-postman-action="collection/import"
-data-postman-var-1="d1b7adeb50d95d9851e7"></div>
+data-postman-var-1="abd0d0741e8206266958"></div>
 <script type="text/javascript">
   (function (p,o,s,t,m,a,n) {
     !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
@@ -63,7 +63,7 @@ data-postman-var-1="d1b7adeb50d95d9851e7"></div>
 {% endif %}
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-For a demo of Run in Postman using the sample Mashape weather API, go to [idratherbewriting.com/learnapidoc/pubapis_docs_as_code_tool_options.html#postman](http://idratherbewriting.com/learnapidoc/pubapis_docs_as_code_tool_options.html#postman).
+For a demo of Run in Postman using the sample OpenWeatherMap API, go to [idratherbewriting.com/learnapidoc/pubapis_docs_as_code_tool_options.html#postman](http://idratherbewriting.com/learnapidoc/pubapis_docs_as_code_tool_options.html#postman).
 {% endif %}
 
 Postman provides a powerful REST API client that many developers are familiar with. It allows users to customize the API key and parameters and save those values. Although you don't have the in-browser experience to try out calls, in many ways the Postman client is more useful. This is what developers often use to save and store API calls as they test and explore the functionality.

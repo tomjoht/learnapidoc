@@ -27,16 +27,16 @@ Here's an example:
 ```yaml
 info:
   title: OpenWeatherMap API
-  description: 'Get current weather, daily forecast for 16 days, and 3-hourly forecast 5 days for your city. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location. tations. Data is available in JSON, XML, or HTML format. **Note**: This sample Swagger file covers the `current` endpoint only from the OpenWeatherMap API. <br/><br/> **Tip**: We recommend that you call the API by city ID (using the `id` parameter) to get unambiguous results for your city.'
+  description: 'Get current weather, daily forecast for 16 days, and 3-hourly forecast 5 days for your city. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location stations. Data is available in JSON, XML, or HTML format. **Note**: This sample Swagger file covers the `current` endpoint only from the OpenWeatherMap API. <br/><br/> **Note**: All parameters are optional, but you must select at least one parameter. Calling the API by city ID (using the `id` parameter) will provide the most precise location results.'
   version: '2.5'
   termsOfService: https://openweathermap.org/terms
   contact:
-    name: OpenWeatherMap
-    url: https://openweathermap.org/terms
-    #email: support@openweathermap.com
+    name: OpenWeatherMap API
+    url: https://openweathermap.org/api
+    #email: some_email@gmail.com
   license:
-    name: Limited license
-    url: https://openweathermap.org/terms
+    name: "CC Attribution-ShareAlike 4.0 (CC BY-SA 4.0)"
+    url: https://openweathermap.org/price
 ```
 
 {: .tip}
@@ -48,7 +48,7 @@ As you write content in `description` properties, note that colons are problemat
 
 In the Swagger UI display, the `info` object's information appears at the top:
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapitutorial_info_object.png" style="border:1px solid #dedede;"/></a>
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapitutorial_info_object.png" class="medium" /></a>
 
 {: .tip}
 In the `description` property, you might want to provide some basic instructions to users on how to use Swagger UI. If there's a test account they should use, you can provide the information they need in this space.

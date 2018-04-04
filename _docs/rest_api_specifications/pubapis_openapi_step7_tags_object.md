@@ -25,56 +25,36 @@ The `tags` object provides a way to group the paths (endpoints) in the Swagger U
 
 At the root level, the [`tags` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#tagObject) lists all the tags that are used in the [operation objects](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#operationObject) (which appear within the `paths` object, as explained in [step 4](pubapis_openapi_step4_paths_object.html)).
 
-Here's an example of the `tags` object for our Mashape Weather API:
+Here's an example of the `tags` object for our OpenWeatherMap API:
 
 ```yaml
 tags:
-  - name: Air Quality
-    description: The pollution quality of the air.
-  - name: Weather Forecast
-    description: A full list of details about the current weather.
+  - name: Current Weather Data
+    description: "Get current weather details"
 ```
 
-In this simple weather API, there are two tags. You can list both the `name` and a `description` for each tag.
+We just have one tag, but you could have as many as you want (if you have a lot of endpoints, it would make sense to create multiple tags to group them). You can list both the `name` and a `description` for each tag. The `description` appears as a subtitle for the tag name.
 
 ## Tags at the path object level
 
-The `tags` object at the root level should comprehensively list all tags used within the operation objects at each path.
+The `tags` object at the root level should comprehensively list all tags used within the operation objects at each path. Then in each path, you list the tag you want that path grouped under.
 
-For example, in the operations object for the `/weather` path, we used the tag `Weather Forecast`:
+For example, in the operations object for the `/current` path, we used the same tag `Weather`:
 
 ```yaml
 paths:
-  ...
   /weather:
     get:
-      servers:
-      - url: https://simple-weather.p.mashape.com
       tags:
-      - Weather Forecast
-      ...
-```
-
-We used the same tag with the `/weatherdata` path:
-
-```yaml
-paths:
-...
-  /weatherdata:
-    get:
-      tags:
-        - Weather Forecast
-      summary: getWeatherData
-      description: Get weather forecast with lots of details
-      operationId: GetWeatherData
+      - Current Weather Data
 ```
 
 ## How tags appear in Swagger UI
 
-All paths that have the same tag are grouped together in the display. For example, paths that have the `Weather Forecast` tag will be grouped together under the title `Weather Forecast`. Each group title is a collapsible/expandable toggle. The `/aqi` path has the `Air Quality` tag.
+All paths that have the same tag are grouped together in the display. For example, paths that have the `Weather` tag will be grouped together under the title `Weather`. Each group title is a collapsible/expandable toggle.
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapitutorial_tags.png" /></a>
+<a href="/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapitutorial_tags.png" class="medium" /></a>
 
 The order of the tags in the `tags` object at the root level determines their order in Swagger UI. Additionally, the `descriptions` appear to the right of the tag name.
 
-In this simple weather API, tags don't seem all that necessary. But imagine if you had a robust API with 30+ paths to describe. You would certainly want to organize the paths into logical groups for users to navigate.
+In our sample OpenAPI spec, tags don't seem all that necessary since we're just documenting one path/endpoint. (Additionally, I configured the Swagger UI display to expand the section by default.) But imagine if you had a robust API with 30+ paths to describe. You would certainly want to organize the paths into logical groups for users to navigate.
