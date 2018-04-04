@@ -11,7 +11,7 @@ path1: /restapispecifications.html
 Previously, I explored using the open-source [Swagger UI project](pubapis_swagger.html) as a way to render your [OpenAPI specification document](pubapis_openapi_tutorial_overview.html). [SwaggerHub](https://app.swaggerhub.com/) is the commercial version of Swagger UI. You can see a comparison of features [here](https://swaggerhub.com/swagger-open-source-comparison/).
 
 {: .tip}
-You can see a demo of the [sample weather API on SwaggerHub here](https://app.swaggerhub.com/apis/IdRatherBeWriting/MashapeWeatherAPI/2.3). On the demo page, click the download arrow icon in the upper-right corner to see the list of client and server SDKs that you can download from SwaggerHub.
+You can see a demo of the [sample OpenWeatherMap API on SwaggerHub here](https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/2.5). On the demo page, click the download arrow icon in the upper-right corner to see the list of client and server SDKs that you can download from SwaggerHub.
 
 {% if site.format == "web" %}
 * TOC
@@ -74,7 +74,7 @@ You can also send users to the default version when they go they don't include t
 
 Versioning is helpful when you're collaborating on the spec with other team members. For example, suppose you see the original version drafted by an engineer, and you want to make major edits. Rather than directly overwriting the content (or making a backup copy of an offline file), you can create a new version and then take more ownership to overhaul that version with your own wordsmithing, without fear that the engineer will react negatively about overwritten/lost content.
 
-When you publish your Swagger documentation on SwaggerHub, the base URL remain as a subdirectory on app.swaggerhub.com. You can add your own company logo and visual branding as desired.
+When you publish your Swagger documentation on SwaggerHub, the base URL remain as a subdirectory on app.swaggerhub.com. You can add your own company logo and visual branding as desired. 
 
 ## Inline commenting/review
 
