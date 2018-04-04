@@ -51,13 +51,15 @@
             var highlightedTitle = highlight(hit, 'title');
             var highlightedContent = highlight(hit, 'content');
 
-            var headings = hit.headings.join(' > ');
+            var headings = [];
             if (hit._highlightResult.headings) {
               headings = hit._highlightResult.headings
                 .map(heading => heading.value)
-                .join(' > ');
+            } else {
+              headings = hit.headings || []
             }
-
+            headings = headings.join(' > ');
+            
             return `
                 <div class="search-hit">
                   <a class="search-hit-title" href="${url}">${highlightedTitle}</a>
