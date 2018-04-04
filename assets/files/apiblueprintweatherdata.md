@@ -1,148 +1,213 @@
 FORMAT: 1A
-HOST: https://simple-weather.p.mashape.com
+HOST: http://api.openweathermap.org/data/2.5/
 
-# Weather API
+# OpenWeatherMap API
+Get current weather, daily forecast for 16 days, and 3-hourly forecast 5 days for your city. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location stations. Data is available in JSON, XML, or HTML format. **Note**: This sample Swagger file covers the `current` endpoint only from the OpenWeatherMap API. <br/><br/> **Note**: All parameters are optional, but you must select at least one parameter. Calling the API by city ID (using the `id` parameter) will provide the most precise location results.
 
-Display Weather forecast data by latitude and longitude. Get raw weather data OR simple label description of weather forecast of some places.
+## Authentication
+This API uses Custom Query Parameter for its authentication.
 
-# Weather API Root [/]
+The parameters that are needed to be sent for this type of authentication are as follows:
++ `appid` - API key to authorize requests. If you don't have an OpenWeatherMap API key, use `fd4698c940c6d1da602a70ac34f0b147`.
 
-# Group Weather
+# Group Current Weather Data
 
-Resources related to weather in the API.
+## Weather [/weather{?q,id,lat,lon,zip,units,lang,Mode}]
 
-## Weather data [/weatherdata{?lat}{?lng}]
-
-### Get the weather data [GET]
-
-Get the weather data in your area.
-
+### Call current weather data for one location [GET]
+Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations.
 + Parameters
-    + lat: 55.749792 (required, number) - Latitude
-    + lng: 37.632495 (required, number) - Longitude
+    + q (string, optional)
 
-+ Request JSON Message
+        **City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes.
 
-    + Headers
-    
-            X-Mashape-Authorization: WOyzMuE8c9mshcofZaBke3kw7lMtp1HjVGAjsndqIPbU9n2eET
-            Accept: text/plain
+    + id (string, optional)
+
+        **City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls.*
+
+    + lat (string, optional)
+
+        **Latitude**. *Example: 35*. The latitude cordinate of the location of your interest. Must use with `lon`.
+
+    + lon (string, optional)
+
+        **Longitude**. *Example: 139*. Longitude cordinate of the location of your interest. Must use with `lat`.
+
+    + zip (string, optional) -
+
+        **Zip code**. Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default.
+
+        + Default: 94040,us
+        + Sample: 94040,us
+    + units (enum[string], optional)
+
+        **Units**. *Example: imperial*. Possible values: `metric`, `imperial`. When you do not use units parameter, format is `standard` by default.
+
+        + Default: standard
+        + Sample: imperial
+        + Members
+            + `standard`
+            + `metric`
+            + `imperial`
+
+    + lang (enum[string], optional)
+
+        **Language**. *Example: en*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - `ar`, Bulgarian - `bg`, Catalan - `ca`, Czech - `cz`, German - `de`, Greek - `el`, English - `en`, Persian (Farsi) - `fa`, Finnish - `fi`, French - `fr`, Galician - `gl`, Croatian - `hr`, Hungarian - `hu`, Italian - `it`, Japanese - `ja`, Korean - `kr`, Latvian - `la`, Lithuanian - `lt`, Macedonian - `mk`, Dutch - `nl`, Polish - `pl`, Portuguese - `pt`, Romanian - `ro`, Russian - `ru`, Swedish - `se`, Slovak - `sk`, Slovenian - `sl`, Spanish - `es`, Turkish - `tr`, Ukrainian - `ua`, Vietnamese - `vi`, Chinese Simplified - `zh_cn`, Chinese Traditional - `zh_tw`.
+
+        + Default: en
+        + Sample: en
+        + Members
+            + `ar`
+            + `bg`
+            + `ca`
+            + `cz`
+            + `de`
+            + `el`
+            + `en`
+            + `fa`
+            + `fi`
+            + `fr`
+            + `gl`
+            + `hr`
+            + `hu`
+            + `it`
+            + `ja`
+            + `kr`
+            + `la`
+            + `lt`
+            + `mk`
+            + `nl`
+            + `pl`
+            + `pt`
+            + `ro`
+            + `ru`
+            + `se`
+            + `sk`
+            + `sl`
+            + `es`
+            + `tr`
+            + `ua`
+            + `vi`
+            + `zh_cn`
+            + `zh_tw`
+
+    + Mode (enum[string], optional)
+
+        **Mode**. *Example: html*. Determines format of response. Possible values are `xml` and `html`. If mode parameter is empty the format is `json` by default.
+
+        + Default: json
+        + Sample: json
+        + Members
+            + `json`
+            + `xml`
+            + `html`
+
 
 + Response 200 (application/json)
 
-            
-    + Body
-    
-            [
-                {
-              "query": {
-                "count": 1,
-                "created": "2014-05-03T03:57:53Z",
-                "lang": "en-US",
-                "results": {
-                  "channel": {
-                    "title": "Yahoo! Weather - Tebrau, MY",
-                    "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Tebrau__MY/*http://weather.yahoo.com/forecast/MYXX0004_c.html",
-                    "description": "Yahoo! Weather for Tebrau, MY",
-                    "language": "en-us",
-                    "lastBuildDate": "Sat, 03 May 2014 11:00 am MYT",
-                    "ttl": "60",
-                    "location": {
-                      "city": "Tebrau",
-                      "country": "Malaysia",
-                      "region": ""
-                    },
-                    "units": {
-                      "distance": "km",
-                      "pressure": "mb",
-                      "speed": "km/h",
-                      "temperature": "C"
-                    },
-                    "wind": {
-                      "chill": "32",
-                      "direction": "170",
-                      "speed": "4.83"
-                    },
-                    "atmosphere": {
-                      "humidity": "66",
-                      "pressure": "982.05",
-                      "rising": "0",
-                      "visibility": "9.99"
-                    },
-                    "astronomy": {
-                      "sunrise": "6:57 am",
-                      "sunset": "7:06 pm"
-                    },
-                    "image": {
-                      "title": "Yahoo! Weather",
-                      "width": "142",
-                      "height": "18",
-                      "link": "http://weather.yahoo.com",
-                      "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
-                    },
-                    "item": {
-                      "title": "Conditions for Tebrau, MY at 11:00 am MYT",
-                      "lat": "1.58",
-                      "long": "103.74",
-                      "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Tebrau__MY/*http://weather.yahoo.com/forecast/MYXX0004_c.html",
-                      "pubDate": "Sat, 03 May 2014 11:00 am MYT",
-                      "condition": {
-                        "code": "28",
-                        "date": "Sat, 03 May 2014 11:00 am MYT",
-                        "temp": "32",
-                        "text": "Mostly Cloudy"
-                      },
-                      "description": "\n<img src=\"http://l.yimg.com/a/i/us/we/52/28.gif\"/><br />\n<b>Current Conditions:</b><br />\nMostly Cloudy, 32 C<BR />\n<BR /><b>Forecast:</b><BR />\nSat - Scattered Thunderstorms. High: 32 Low: 26<br />\nSun - Thunderstorms. High: 33 Low: 27<br />\nMon - Scattered Thunderstorms. High: 32 Low: 26<br />\nTue - Thunderstorms. High: 32 Low: 26<br />\nWed - Scattered Thunderstorms. High: 32 Low: 27<br />\n<br />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Tebrau__MY/*http://weather.yahoo.com/forecast/MYXX0004_c.html\">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)<br/>\n",
-                      "forecast": [
-                        {
-                          "code": "38",
-                          "date": "3 May 2014",
-                          "day": "Sat",
-                          "high": "32",
-                          "low": "26",
-                          "text": "Scattered Thunderstorms"
-                        },
-                        {
-                          "code": "4",
-                          "date": "4 May 2014",
-                          "day": "Sun",
-                          "high": "33",
-                          "low": "27",
-                          "text": "Thunderstorms"
-                        },
-                        {
-                          "code": "38",
-                          "date": "5 May 2014",
-                          "day": "Mon",
-                          "high": "32",
-                          "low": "26",
-                          "text": "Scattered Thunderstorms"
-                        },
-                        {
-                          "code": "4",
-                          "date": "6 May 2014",
-                          "day": "Tue",
-                          "high": "32",
-                          "low": "26",
-                          "text": "Thunderstorms"
-                        },
-                        {
-                          "code": "38",
-                          "date": "7 May 2014",
-                          "day": "Wed",
-                          "high": "32",
-                          "low": "27",
-                          "text": "Scattered Thunderstorms"
-                        }
-                      ],
-                      "guid": {
-                        "isPermaLink": "false",
-                        "content": "MYXX0004_2014_05_07_7_00_MYT"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-            ]
-              
+        Successful response
+
+    + Attributes (Successful response)
+
+
++ Response 404
+
+        Not found response
+
+
+
+
+
+
+# Data Structures
+
+## Successful response (object)
+
+
+### Properties
++ `coord` (Coord, optional)
++ `weather` (array[Weather], optional) - (more info Weather condition codes)
++ `base`: `cmc stations` (string, optional) - Internal parameter
++ `main`: `cmc stations` (Main, optional)
++ `visibility`: `16093` (number, optional) - Visibility, meter
++ `wind`: `16093` (Wind, optional)
++ `clouds`: `16093` (Clouds, optional)
++ `rain`: `16093` (Rain, optional)
++ `snow`: `16093` (Snow, optional)
++ `dt`: `1435658272` (number, optional) - Time of data calculation, unix, UTC
++ `sys`: `1435658272` (Sys, optional)
++ `id`: `2172797` (number, optional) - City ID
++ `name`: `Cairns` (string, optional)
++ `cod`: `200` (number, optional) - Internal parameter
+
+
+## Coord (object)
+
+
+### Properties
++ `lon`: `145.77` (number, optional) - City geo location, longitude
++ `lat`: `-16.92` (number, optional) - City geo location, latitude
+
+
+## Weather (object)
+
+
+### Properties
++ `id`: `803` (number, optional) - Weather condition id
++ `main`: `Clouds` (string, optional) - Group of weather parameters (Rain, Snow, Extreme etc.)
++ `description`: `broken clouds` (string, optional) - Weather condition within the group
++ `icon`: `04n` (string, optional) - Weather icon id
+
+
+## Main (object)
+
+
+### Properties
++ `temp`: `293.25` (number, optional) - Temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.
++ `pressure`: `1019` (number, optional) - Atmospheric pressure (on the sea level, if there is no sea_level or grnd_level data), hPa
++ `humidity`: `83` (number, optional) - Humidity, %
++ `temp_min`: `289.82` (number, optional) - Minimum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopolises geographically expanded (use these parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.
++ `temp_max`: `295.37` (number, optional) - Maximum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopolises geographically expanded (use these parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.
++ `sea_level`: `984` (number, optional) - Atmospheric pressure on the sea level, hPa
++ `grnd_level`: `990` (number, optional) - Atmospheric pressure on the ground level, hPa
+
+
+## Wind (object)
+
+
+### Properties
++ `speed`: `5.1` (number, optional) - Wind speed. Unit Default: meter/sec, Metric: meter/sec, Imperial: miles/hour.
++ `deg`: `150` (number, optional) - Wind direction, degrees (meteorological)
+
+
+## Clouds (object)
+
+
+### Properties
++ `all`: `75` (number, optional) - Cloudiness, %
+
+
+## Rain (object)
+
+
+### Properties
++ `3h`: `3` (number, optional) - Rain volume for the last 3 hours
+
+
+## Snow (object)
+
+
+### Properties
++ `3h`: `6` (number, optional) - Snow volume for the last 3 hours
+
+
+## Sys (object)
+
+
+### Properties
++ `type`: `1` (number, optional) - Internal parameter
++ `id`: `8166` (number, optional) - Internal parameter
++ `message`: `0.0166` (number, optional) - Internal parameter
++ `country`: `AU` (string, optional) - Country code (GB, JP etc.)
++ `sunrise`: `1435610796` (number, optional) - Sunrise time, unix, UTC
++ `sunset`: `1435650870` (number, optional) - Sunset time, unix, UTC

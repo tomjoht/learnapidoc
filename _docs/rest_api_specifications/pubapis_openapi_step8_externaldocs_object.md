@@ -40,10 +40,10 @@ See the related topic, [Integrating Swagger UI with the rest of your docs](pubap
 
 ## Seeing the finished result
 
-Now that we've completed all the steps in the tutorial, we're finished building our OpenAPI document. You can see the end result here: <a href="/learnapidoc/docs/rest_api_specifications/openapi_weather.yml">docs/rest_api_specifications/openapi_weather.yml</a>.
+Now that we've completed all the steps in the tutorial, we're finished building our OpenAPI document. You can see the end result here: <a href="http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_weather.yml">docs/rest_api_specifications/openapi_weather.yml</a>.
 
 Here's the specification document embedded in Swagger UI:
 
-<a href="/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/swagger_full_result.png" class="medium" /></a>
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/swagger_full_result.png" class="medium" /></a>
 
 You can actually insert any valid path to an OpenAPI specification document into the "Explore" box in Swagger UI (assuming it's using a version that supports your version of the spec), and it will display the content.
