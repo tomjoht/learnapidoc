@@ -89,7 +89,7 @@ As you can see, there's a request and a response between a client to the API ser
 
 As an architectural style, you aren't limited to XML as the message format. REST APIs can use any message format the API developers want to use, including XML, JSON, Atom, RSS, CSV, HTML, and more.
 
-Despite the variety of message format options, most REST APIs use JSON (JavaScript Object Notation) as the default message format. This is because JSON provides a lightweight, simple, and more flexible message format that increases the speed of communication. The lightweight nature of JSON also allows for mobile processing scenarios and is easy to parse on the web using JavaScript. In contrast, with XML you have to use XSLT to parse and process the content.
+Despite the variety of message format options, most REST APIs use JSON (JavaScript Object Notation) as the default message format. This is because JSON provides a lightweight, simple, and more flexible message format that increases the speed of communication. The lightweight nature of JSON also allows for mobile processing scenarios and is easy to parse on the web using JavaScript. In contrast, with XML, XSLT is used more for presenting or rather "transforming" (the "T" in XSLT) the content stored in an XML language. XSLT enables the human readability (rather than processing data stored in an XML format).
 
 ### REST focuses on resources accessed through URLs
 
