@@ -1,7 +1,10 @@
-#search-searchbar {
-  margin: 20px 10px 20px 0px;
+#search-hits-wrapper {
+  display: none;
 }
-/* Search header */
+#search-searchbar {
+  height: 46px;
+  margin: 20px 10px 20px 0px;
+}/* Search header */
 .search-header {
   display: flex;
   flex-direction: row;
