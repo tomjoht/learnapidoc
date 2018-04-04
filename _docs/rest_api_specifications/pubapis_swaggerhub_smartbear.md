@@ -74,7 +74,7 @@ You can also send users to the default version when they go they don't include t
 
 Versioning is helpful when you're collaborating on the spec with other team members. For example, suppose you see the original version drafted by an engineer, and you want to make major edits. Rather than directly overwriting the content (or making a backup copy of an offline file), you can create a new version and then take more ownership to overhaul that version with your own wordsmithing, without fear that the engineer will react negatively about overwritten/lost content.
 
-When you publish your Swagger documentation on SwaggerHub, the base URL remain as a subdirectory on app.swaggerhub.com. You can add your own company logo and visual branding as desired. 
+When you publish your Swagger documentation on SwaggerHub, the base URL remain as a subdirectory on app.swaggerhub.com. You can add your own company logo and visual branding as desired.   
 
 ## Inline commenting/review
 

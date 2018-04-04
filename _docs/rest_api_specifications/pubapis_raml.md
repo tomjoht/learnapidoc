@@ -40,201 +40,381 @@ To understand the proper syntax and format for RAML, you need to read the [RAML 
 Here's the OpenWeatherMap API we've been using in this course formatted in the RAML spec:
 
 ```
-#%RAML 0.8
----
-title: Mashape Weather API
-baseUri: https://simple-weather.p.mashape.com
-version: v1
-
-/aqi:
-  get:
-    description: Get the air quality index (AQI). The AQI number indicates the level of pollution in the air. **Higher** numbers are worse.
-    headers:
-      x-mashape-key:
-        displayName: Mashape key
-        description: This header is used to send data that contains your mashape API key
+#%RAML 1.0
+title: OpenWeatherMap API
+version: 2.5
+baseUri: http://api.openweathermap.org/data/2.5/
+baseUriParameters: {}
+documentation:
+- title: OpenWeatherMap API
+  content: 'Get current weather, daily forecast for 16 days, and 3-hourly forecast 5 days for your city. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location stations. Data is available in JSON, XML, or HTML format. **Note**: This sample Swagger file covers the `current` endpoint only from the OpenWeatherMap API. <br/><br/> **Note**: All parameters are optional, but you must select at least one parameter. Calling the API by city ID (using the `id` parameter) will provide the most precise location results.'
+securitySchemes:
+  auth:
+    type: Pass Through
+    describedBy:
+      queryParameters:
+        appid:
+          required: true
+          displayName: appid
+          description: API key to authorize requests. If you don't have an OpenWeatherMap API key, use `fd4698c940c6d1da602a70ac34f0b147`.
+          type: string
+types:
+  SuccessfulResponse:
+    displayName: Successful response
+    type: object
+    properties:
+      coord:
+        required: false
+        displayName: coord
+        type: Coord
+      weather:
+        required: false
+        displayName: weather
+        description: (more info Weather condition codes)
+        type: array
+        items:
+          type: Weather
+      base:
+        required: false
+        displayName: base
+        description: Internal parameter
         type: string
-    queryParameters:
+      main:
+        required: false
+        displayName: main
+        type: Main
+      visibility:
+        required: false
+        displayName: visibility
+        description: Visibility, meter
+        type: integer
+        format: int32
+      wind:
+        required: false
+        displayName: wind
+        type: Wind
+      clouds:
+        required: false
+        displayName: clouds
+        type: Clouds
+      rain:
+        required: false
+        displayName: rain
+        type: Rain
+      snow:
+        required: false
+        displayName: snow
+        type: Snow
+      dt:
+        required: false
+        displayName: dt
+        description: Time of data calculation, unix, UTC
+        type: integer
+        format: int32
+      sys:
+        required: false
+        displayName: sys
+        type: Sys
+      id:
+        required: false
+        displayName: id
+        description: City ID
+        type: integer
+        format: int32
+      name:
+        required: false
+        displayName: name
+        type: string
+      cod:
+        required: false
+        displayName: cod
+        description: Internal parameter
+        type: integer
+        format: int32
+  Coord:
+    displayName: Coord
+    type: object
+    properties:
+      lon:
+        required: false
+        displayName: lon
+        description: City geo location, longitude
+        type: number
+        format: double
       lat:
-        displayName: Latitude
-        description: The latitude coordinate
+        required: false
+        displayName: lat
+        description: City geo location, latitude
         type: number
-        required: true
-        example: 37.354108
-      lng:
+        format: double
+  Weather:
+    displayName: Weather
+    type: object
+    properties:
+      id:
+        required: false
+        displayName: id
+        description: Weather condition id
+        type: integer
+        format: int32
+      main:
+        required: false
+        displayName: main
+        description: Group of weather parameters (Rain, Snow, Extreme etc.)
+        type: string
+      description:
+        required: false
+        displayName: description
+        description: Weather condition within the group
+        type: string
+      icon:
+        required: false
+        displayName: icon
+        description: Weather icon id
+        type: string
+  Main:
+    displayName: Main
+    type: object
+    properties:
+      temp:
+        required: false
+        displayName: temp
+        description: 'Temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.'
         type: number
-        description: The longitude coordinate
-        required: true
-        example: -121.955236
-    responses:
-       200:
-         body:
-           application/text:
-            example: |
-               65
-
-
+        format: double
+      pressure:
+        required: false
+        displayName: pressure
+        description: Atmospheric pressure (on the sea level, if there is no sea_level or grnd_level data), hPa
+        type: integer
+        format: int32
+      humidity:
+        required: false
+        displayName: humidity
+        description: Humidity, %
+        type: integer
+        format: int32
+      temp_min:
+        required: false
+        displayName: temp_min
+        description: 'Minimum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopolises geographically expanded (use these parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.'
+        type: number
+        format: double
+      temp_max:
+        required: false
+        displayName: temp_max
+        description: 'Maximum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopolises geographically expanded (use these parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.'
+        type: number
+        format: double
+      sea_level:
+        required: false
+        displayName: sea_level
+        description: Atmospheric pressure on the sea level, hPa
+        type: number
+        format: double
+      grnd_level:
+        required: false
+        displayName: grnd_level
+        description: Atmospheric pressure on the ground level, hPa
+        type: number
+        format: double
+  Wind:
+    displayName: Wind
+    type: object
+    properties:
+      speed:
+        required: false
+        displayName: speed
+        description: 'Wind speed. Unit Default: meter/sec, Metric: meter/sec, Imperial: miles/hour.'
+        type: number
+        format: double
+      deg:
+        required: false
+        displayName: deg
+        description: Wind direction, degrees (meteorological)
+        type: integer
+        format: int32
+  Clouds:
+    displayName: Clouds
+    type: object
+    properties:
+      all:
+        required: false
+        displayName: all
+        description: Cloudiness, %
+        type: integer
+        format: int32
+  Rain:
+    displayName: Rain
+    type: object
+    properties:
+      3h:
+        required: false
+        displayName: 3h
+        description: Rain volume for the last 3 hours
+        type: integer
+        format: int32
+  Snow:
+    displayName: Snow
+    type: object
+    properties:
+      3h:
+        required: false
+        displayName: 3h
+        description: Snow volume for the last 3 hours
+        type: number
+        format: double
+  Sys:
+    displayName: Sys
+    type: object
+    properties:
+      type:
+        required: false
+        displayName: type
+        description: Internal parameter
+        type: integer
+        format: int32
+      id:
+        required: false
+        displayName: id
+        description: Internal parameter
+        type: integer
+        format: int32
+      message:
+        required: false
+        displayName: message
+        description: Internal parameter
+        type: number
+        format: double
+      country:
+        required: false
+        displayName: country
+        description: Country code (GB, JP etc.)
+        type: string
+      sunrise:
+        required: false
+        displayName: sunrise
+        description: Sunrise time, unix, UTC
+        type: integer
+        format: int32
+      sunset:
+        required: false
+        displayName: sunset
+        description: Sunset time, unix, UTC
+        type: integer
+        format: int32
 /weather:
   get:
-    headers:
-      x-mashape-key:
-        displayName: Mashape key
-        description: This header is used to send data that contains your mashape API key
-        type: string
-    description: Gets the weather forecast for the current day
+    displayName: Call current weather data for one location
+    description: Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations.
+    securedBy:
+    - auth
     queryParameters:
-      lat:
-        displayName: Latitude
-        description: The latitude coordinate
-        type: number
-        required: true
-        example: 37.354108
-      lng:
-        type: number
-        description: The longitude coordinate
-        required: true
-        example: -121.955236
-    responses:
-       200:
-         body:
-           application/text:
-            example: |
-               28 c, Partly Cloudy at Santa Clara, United States
-/weatherdata:
-  get:
-    headers:
-      x-mashape-key:
-        displayName: Mashape key
-        description: This header is used to send data that contains your mashape API key
+      q:
+        required: false
+        displayName: q
+        description: '**City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes.'
         type: string
-    description: Gets a detailed weather object containing a lot of different weather information in a JSON object.
-    queryParameters:
+      id:
+        required: false
+        displayName: id
+        description: "**City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls.*"
+        type: string
       lat:
-        displayName: Latitude
-        description: The latitude coordinate
-        type: number
-        required: true
-        example: 37.354108
-      lng:
-        type: number
-        description: The longitude coordinate
-        required: true
-        example: -121.955236
+        required: false
+        displayName: lat
+        description: '**Latitude**. *Example: 35*. The latitude cordinate of the location of your interest. Must use with `lon`.'
+        type: string
+      lon:
+        required: false
+        displayName: lon
+        description: '**Longitude**. *Example: 139*. Longitude cordinate of the location of your interest. Must use with `lat`.'
+        type: string
+      zip:
+        required: false
+        default: 94040,us
+        example:
+          value: 94040,us
+        displayName: zip
+        description: '**Zip code**. Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default.'
+        type: string
+      units:
+        required: false
+        default: standard
+        example:
+          value: imperial
+        displayName: units
+        description: '**Units**. *Example: imperial*. Possible values: `metric`, `imperial`. When you do not use units parameter, format is `standard` by default.'
+        type: string
+        enum:
+        - standard
+        - metric
+        - imperial
+      lang:
+        required: false
+        default: en
+        example:
+          value: en
+        displayName: lang
+        description: '**Language**. *Example: en*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - `ar`, Bulgarian - `bg`, Catalan - `ca`, Czech - `cz`, German - `de`, Greek - `el`, English - `en`, Persian (Farsi) - `fa`, Finnish - `fi`, French - `fr`, Galician - `gl`, Croatian - `hr`, Hungarian - `hu`, Italian - `it`, Japanese - `ja`, Korean - `kr`, Latvian - `la`, Lithuanian - `lt`, Macedonian - `mk`, Dutch - `nl`, Polish - `pl`, Portuguese - `pt`, Romanian - `ro`, Russian - `ru`, Swedish - `se`, Slovak - `sk`, Slovenian - `sl`, Spanish - `es`, Turkish - `tr`, Ukrainian - `ua`, Vietnamese - `vi`, Chinese Simplified - `zh_cn`, Chinese Traditional - `zh_tw`.'
+        type: string
+        enum:
+        - ar
+        - bg
+        - ca
+        - cz
+        - de
+        - el
+        - en
+        - fa
+        - fi
+        - fr
+        - gl
+        - hr
+        - hu
+        - it
+        - ja
+        - kr
+        - la
+        - lt
+        - mk
+        - nl
+        - pl
+        - pt
+        - ro
+        - ru
+        - se
+        - sk
+        - sl
+        - es
+        - tr
+        - ua
+        - vi
+        - zh_cn
+        - zh_tw
+      Mode:
+        required: false
+        default: json
+        example:
+          value: json
+        displayName: Mode
+        description: '**Mode**. *Example: html*. Determines format of response. Possible values are `xml` and `html`. If mode parameter is empty the format is `json` by default.'
+        type: string
+        enum:
+        - json
+        - xml
+        - html
     responses:
-       200:
-         body:
-           application/json:
-            example: |
-              {
-                "query": {  
-                "count": 1,
-                "created": "2014-05-03T03:57:53Z",
-                "lang": "en-US",
-                "results": {
-                "channel": {
-                "title": "Yahoo! Weather - Tebrau, MY",
-                "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Tebrau__MY/*http://weather.yahoo.c/forecast/MYXX0004_c.html",
-                "description": "Yahoo! Weather for Tebrau, MY",
-                "language": "en-us",
-                "lastBuildDate": "Sat, 03 May 2014 11:00 am MYT",
-                "ttl": "60",
-                "location": {
-                  "city": "Tebrau",
-                  "country": "Malaysia",
-                  "region": ""
-                },
-                "units": {
-                  "distance": "km",
-                  "pressure": "mb",
-                  "speed": "km/h",
-                  "temperature": "C"
-                },
-                "wind": {
-                  "chill": "32",
-                  "direction": "170",
-                  "speed": "4.83"
-                },
-                "atmosphere": {
-                  "humidity": "66",
-                  "pressure": "982.05",
-                  "rising": "0",
-                  "visibility": "9.99"
-                },
-                "astronomy": {
-                  "sunrise": "6:57 am",
-                  "sunset": "7:06 pm"
-                },
-                "image": {
-                  "title": "Yahoo! Weather",
-                  "width": "142",
-                  "height": "18",
-                  "link": "http://weather.yahoo.com",
-                  "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
-                },
-                "item": {
-                  "title": "Conditions for Tebrau, MY at 11:00 am MYT",
-                  "lat": "1.58",
-                  "long": "103.74",
-                  "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Tebrau__MY/*http://weather.yahocom/forecast/MYXX0004_c.html",
-                  "pubDate": "Sat, 03 May 2014 11:00 am MYT",
-                  "condition": {
-                    "code": "28",
-                    "date": "Sat, 03 May 2014 11:00 am MYT",
-                    "temp": "32",
-                    "text": "Mostly Cloudy"
-                  },
-                  "description": "\n<img src=\"http://l.yimg.com/a/i/us/we/52/28.gif\"/><br />\n<Current Conditions:</b><br />\nMostly Cloudy, 32 C<BR />\n<BR /><b>Forecast:</b><BR />\nSat - Scattered Thunderstorms. High: 32 Low: 26<br />\nSun - Thunderstorms. High: 33 Low: 27<br />\nMon - Scattered Thunderstorms. High: 32 Low: 26<br />\nTue - Thunderstorms. High: 32 Low: 26<br />\nWed - Scattered Thunderstorms. High: 32 Low: 27<br />\n<br />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Tebrau__MY/*http://weather.yahoo.com/forecast/MYXX0004_c.html\">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)<br/>\n",
-                  "forecast": [
-                    {
-                      "code": "38",
-                      "date": "3 May 2014",
-                      "day": "Sat",
-                      "high": "32",
-                      "low": "26",
-                      "text": "Scattered Thunderstorms"
-                    },
-                    {
-                      "code": "4",
-                      "date": "4 May 2014",
-                      "day": "Sun",
-                      "high": "33",
-                      "low": "27",
-                      "text": "Thunderstorms"
-                    },
-                    {
-                      "code": "38",
-                      "date": "5 May 2014",
-                      "day": "Mon",
-                      "high": "32",
-                      "low": "26",
-                      "text": "Scattered Thunderstorms"
-                    },
-                    {
-                      "code": "4",
-                      "date": "6 May 2014",
-                      "day": "Tue",
-                      "high": "32",
-                      "low": "26",
-                      "text": "Thunderstorms"
-                    },
-                    {
-                      "code": "38",
-                      "date": "7 May 2014",
-                      "day": "Wed",
-                      "high": "32",
-                      "low": "27",
-                      "text": "Scattered Thunderstorms"
-                    }
-                  ],
-                  "guid": {
-                    "isPermaLink": "false",
-                    "content": "MYXX0004_2014_05_07_7_00_MYT"
-                  }
-                }
-              }
-              }
-               }
-              }
+      200:
+        description: Successful response
+        body:
+          application/json:
+            displayName: response
+            description: Successful response
+            type: SuccessfulResponse
+      404:
+        description: Not found response
+        body: {}
 ```
 
 ## Outputs
