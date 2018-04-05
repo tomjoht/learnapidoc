@@ -86,7 +86,7 @@ Here's what the Dropbox API looks like:
 
 <a class="noCrossRef" href="https://www.dropbox.com/developers" class="noExtIcon"><img class="medium" src="images/dropbox_clean.png" alt="Dropbox API" /></a>
 
-It's not a sophisticated design. But its simplicity and brevity is one of its strengths. When you consider that the API documentation is more or less the product interface, building a sharp, modern-looking doc site is paramount for credibility and traction in the market. (I dive into the [job market for API documentation later](jobapis_overview).)
+It's not a sophisticated design. But its simplicity and brevity is one of its strengths. When you consider that the API documentation is more or less the product interface, building a sharp, modern-looking doc site is paramount for credibility and traction in the market. (I dive into the [job market for API documentation later](jobapis_overview.html).
 
 ## API doc is a new world for most tech writers
 

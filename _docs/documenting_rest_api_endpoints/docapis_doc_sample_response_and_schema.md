@@ -13,7 +13,7 @@ redirect_from:
 
 {% include workflow_map.html step="5" map="content/reference_doc_map.html"  %}
 {% if site.format == "pdf" or site.format == "kindle" %}
-<img src="images/apiref6.png"/>
+<img src="images/apiref5.png"/>
 {% endif %}
 
 > **{{site.data.apirefsections.response_example_and_schema.term}}**: {{site.data.apirefsections.response_example_and_schema.def}}
@@ -33,7 +33,7 @@ And the response **Schema** on another tab:
 
 The definition of the response is called the schema or the model (the terms are used synonymously), and aligns with the [JSON schema language and descriptions](http://json-schema.org/). What works particularly well with the SendGrid example is the use of expand/collapse tags to mirror the same structure as the example, with objects at different levels.
 
-Swagger UI also provides both an example value and a schema or model. For example, in the sample Sunset and sunrise times API doc that I created for the [SwaggerUI activity](/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset), you can see a distinction between the response example and the response schema. Here's the **Example Value**:
+Swagger UI also provides both an example value and a schema or model. For example, in the sample Sunset and sunrise times API doc that I created for the [SwaggerUI activity](http://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset), you can see a distinction between the response example and the response schema. Here's the **Example Value**:
 
 <a class="noExtIcon" href="http://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset"><img src="images/sunriseexample.png" alt="Sunrise example value" /></a>
 

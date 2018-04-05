@@ -13,7 +13,7 @@ path1: /docendpoints.html
 
 {% include workflow_map.html step="4" map="content/reference_doc_map.html"  %}
 {% if site.format == "pdf" or site.format == "kindle" %}
-<img src="images/apiref8.png"/>
+<img src="images/apiref4.png"/>
 {% endif %}
 
 > **{{site.data.apirefsections.request_example.term}}**: {{site.data.apirefsections.request_example.def}}
@@ -109,11 +109,11 @@ If you're not using an authoring tool that auto-generates code examples, and you
 
 After you have a request configured (a process similar to [Postman](docapis_postman.html)), you can generate a code snippet by going to **File > Export Request**.
 
-The Postman app also has the ability to generate code snippets in a similar way. I covered this process in an earlier tutorial on [using the JSON from the response payload](docapis_json_console.html). In Postman, after you configure your request, click the **Code** link.
+The Postman app also has the ability to generate code snippets in a similar way. I covered this process in an earlier tutorial on [using the JSON from the response payload](docapis_json_console.html). In Postman, after you configure your request, click the **Code** link (which appears below the Save button in the upper-right area).
 
 <img src="images/postmangeneratecodesnippet.png" class="medium" alt="Generate code snippet" />
 
-Then select the language you want, such as jQuery:
+Then select the language you want, such as JavaScript > Jquery AJAX:
 
 <img src="images/postmancodesnippet.png" class="medium" alt="JavaScript Ajax code snippet" />
 

@@ -27,9 +27,9 @@ Requiring authorization allows API publishers to do the following:
 {: .tip}
 Keep in mind how users authorize calls with an API &mdash; this is something you usually cover in API documentation. Later in the course we will dive into [authorization methods](docapis_more_about_authorization.html) in more detail.
 
-In order to run the code samples in this course, you will need to use your own API keys, since these keys are usually treated like personal passwords and not given out or published openly on a web page. (Even so, if you want to borrow my API keys, you can view them [here](/learnapidoc/assets/files/apikeys.txt).)
+In order to run the code samples in this course, you will need to use your own API keys, since these keys are usually treated like personal passwords and not given out or published openly on a web page. (Even so, if you want to borrow my API keys, you can view them [here](http://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt).)
 
-## Get an OpenWeatherMap API key
+## Get an OpenWeatherMap API key {#openweathermap_apikey}
 
 To get an authorization key to use the OpenWeatherMap API:
 
@@ -37,7 +37,7 @@ To get an authorization key to use the OpenWeatherMap API:
 2.  After you sign up, sign in and find your API key from the developer dashboard.
 3.  Copy the key into a place you can easily find it.
 
-## Get the Aeris Weather API secret and ID
+## Get the Aeris Weather API secret and ID {#aeris_weather_apikey}
 
 Now for contrast, let's get the keys for the Aeris Weather API. The Aeris Weather API requires both a secret and ID to make requests.
 

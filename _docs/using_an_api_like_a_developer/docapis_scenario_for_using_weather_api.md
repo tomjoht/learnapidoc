@@ -30,7 +30,7 @@ You don't have your own meteorological service, so you'll need to make some call
 
 ## Get an idea of the end goal {#endgoal}
 
-To give you an idea of the end goal, here's a sample: [wind-weatherbit.html](/learnapidoc/assets/files/wind-openweathermap.html). It's not necessarily styled the same as the mockup, but it answers the question, "What's the wind and temperature?"
+To give you an idea of the end goal, here's a sample: [wind-weatherbit.html](http://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html). It's not necessarily styled the same as the mockup, but it answers the question, "What's the wind and temperature?"
 
 Click the button to see wind and temperature details. When you request this data, an API goes out to the [OpenWeatherMap API service](https://openweathermap.org/api), retrieves the information, and displays it to you.
 

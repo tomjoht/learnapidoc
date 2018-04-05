@@ -19,7 +19,13 @@ In earlier parts of this course, I used a [Weather API from OpenWeatherMap](http
 
 If you'd like to view a presentation I gave to the [Write the Docs South Bay chapter](http://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/ on this topic, you can view it here:
 
+{% if site.format == "kindle" or site.format == "pdf" %}
+This content doesn't embed well in print, as it contains YouTube videos. Please go to http://idratherbewriting.com/learnapidoc/pubapis_overview.html to view the content.
+{% elsif site.format == "web" %}
+
 <iframe width="640" height="360" src="https://www.youtube.com/embed/__vSXJn-JQo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+{% endif %}
 
 (For more details about this post, see my [writeup here](http://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/).)
 

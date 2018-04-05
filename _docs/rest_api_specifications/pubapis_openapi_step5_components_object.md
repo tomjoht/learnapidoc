@@ -339,7 +339,15 @@ As you can see, not only can you use `$ref` properties in other parts of your sp
 
 Describing a JSON response can be complicated and confusing. Fortunately, there's a somewhat easy workaround. Download [Stoplight](https://next.stoplight.io/). Use the **Generate JSON** feature to have Stoplight automatically create the OpenAPI schema description. Here's a short (silent) video showing how to do this:
 
+{% if site.format == "pdf" or site.format == "kindle" %}
+
+Go to [http://idratherbewriting.com/learnapidoc/pubapis_openapi_step5_components_object.html](http://idratherbewriting.com/learnapidoc/pubapis_openapi_step5_components_object.html) to view this content.
+
+{% elsif site.format == "web" %}
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/o8aTo6e0kCY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+{% endif %}
 
 The only catch is that Stoplight uses OpenAPI 2.0, not 3.0. You might need to use [API Transformer](https://apimatic.io/transformer) to convert the 2.0 schema output to 3.0. Even so, this approach can save you a lot of time.
 

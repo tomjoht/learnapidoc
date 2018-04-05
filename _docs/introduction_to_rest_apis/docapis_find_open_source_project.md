@@ -78,7 +78,7 @@ To find an open-source project with API doc needs:
 
    <a href="https://github.com/search?utf8=%E2%9C%93&q=api+documentation+docs+label%3A%22help+wanted%22&type=Repositories&ref=advsearch&l=&l="><img src="images/githubopensourceprojects.png"/></a>
 
-4.  Click **Search** and browse [the results](ttps://github.com/search?utf8=%E2%9C%93&q=api+documentation+docs+label%3A%22help+wanted%22&type=Repositories&ref=advsearch&l=&l=).
+4.  Click **Search** and browse [the results](https://github.com/search?utf8=%E2%9C%93&q=api+documentation+docs+label%3A%22help+wanted%22&type=Repositories&ref=advsearch&l=&l=).
 
     Are there any projects that meet the [needed criteria](#needed_criteria)? If so, great. If not, adjust some of the keywords and keep looking.
 

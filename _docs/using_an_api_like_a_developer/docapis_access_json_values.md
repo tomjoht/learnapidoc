@@ -11,7 +11,7 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-This tutorial continues from the previous topic, [Use the JSON from the response payload](docapis_json_console.html). In the [sample page](/learnapidoc/assets/files/weatherdata-plain.html) where you logged the `weather` response to the JS Console, the REST response information didn't appear on the page. It only appeared in the JS Console. You need to use dot notation to access the JSON values you want. In this tutorial, you'll use a bit of JavaScript to print some of the response to the page.
+This tutorial continues from the previous topic, [Use the JSON from the response payload](docapis_json_console.html). In the [sample page](http://idratherbewriting.com/learnapidoc/assets/files/weatherdata-plain.html) where you logged the `weather` response to the JS Console, the REST response information didn't appear on the page. It only appeared in the JS Console. You need to use dot notation to access the JSON values you want. In this tutorial, you'll use a bit of JavaScript to print some of the response to the page.
 
 {: .note}
 This section will use a little bit of JavaScript. You probably wouldn't use this code very much for documentation, but it's important to know anyway.
@@ -56,7 +56,7 @@ wind speed: 13.87
 
 Let's say you wanted to print part of the JSON (the wind speed data) to the page. This involves a little bit of JavaScript or jQuery (to make it easier).
 
-I'm assuming you're starting with the [same code](/learnapidoc/assets/files/weather-plain.html) from the [previous tutorial &mdash; Use the JSON from the response payload](docapis_json_console.html). That code looks like this:
+I'm assuming you're starting with the [same code](http://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html) from the [previous tutorial &mdash; Use the JSON from the response payload](docapis_json_console.html). That code looks like this:
 
 ```html
 <html>

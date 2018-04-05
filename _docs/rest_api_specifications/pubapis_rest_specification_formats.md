@@ -47,6 +47,14 @@ Having multiple documentation outputs (rather than one seamless whole) presents 
 
 For a video presentation of this section of the course, see the following:
 
+{% if site.format == "pdf" or site.format == "kindle" %}
+
+Go to [http://idratherbewriting.com/learnapidoc/pubapis_rest_specification_formats.html](http://idratherbewriting.com/learnapidoc/pubapis_rest_specification_formats.html) to view this content.
+
+{% elsif site.format == "web" %}
+
 <iframe width="640" height="360" src="https://www.youtube.com/embed/gcDSL-8pkvU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+{% endif %}
 
 This was a presentation I gave to the STC/WTD San Diego chapter on February 18, 2018. (More details are [here](http://idratherbewriting.com/2018/02/14/openapi-and-swagger-presentation/).)

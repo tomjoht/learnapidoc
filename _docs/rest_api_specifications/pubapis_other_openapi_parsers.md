@@ -44,8 +44,13 @@ To try out Run in Postman, first [import your OpenAPI spec into Postman](https:/
 
 You can see the many [demos of Run in Postman here](https://www.getpostman.com/integrations/run-button).
 
-{% if site.format == "web" %}
 Here's a demo of Run in Postman using the OpenWeatherMap API (`weather` endpoint):
+
+{% if site.format == "pdf" or site.format == "kindle" %}
+
+To view this code, go to  [http://idratherbewriting.com/learnapidoc/pubapis_other_openapi_parsers.html.html](http://idratherbewriting.com/learnapidoc/pubapis_other_openapi_parsers.html.html).
+
+{$ elsif site.format == "web" %}
 
 <div class="postman-run-button"
 data-postman-action="collection/import"
@@ -59,10 +64,6 @@ data-postman-var-1="abd0d0741e8206266958"></div>
     ));
   }(window, document, "\_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
 </script>
-{% endif %}
-
-{% if site.format == "kindle" or site.format == "pdf" %}
-For a demo of Run in Postman using the sample OpenWeatherMap API, go to [idratherbewriting.com/learnapidoc/pubapis_docs_as_code_tool_options.html#postman](http://idratherbewriting.com/learnapidoc/pubapis_docs_as_code_tool_options.html#postman).
 {% endif %}
 
 Postman provides a powerful REST API client that many developers are familiar with. It allows users to customize the API key and parameters and save those values. Although you don't have the in-browser experience to try out calls, in many ways the Postman client is more useful. This is what developers often use to save and store API calls as they test and explore the functionality.

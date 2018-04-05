@@ -57,7 +57,7 @@ In this exercise, you'll make a REST call using OpenWeatherMap's [current weathe
     * `units: imperial`
     * `appid: {your api key}`
 
-    Customize the `zip` and `appid` values to your own zip code an [OpenWeatherMap API key](docapis_get_auth_keys). Your Postman should look like this:
+    Customize the `zip` and `appid` values to your own zip code and [OpenWeatherMap API key](docapis_get_auth_keys.html). Your Postman UI should look like this:
 
     <img src="images/postmanopenweatherapi.png" class="medium"/>
 
@@ -114,7 +114,7 @@ Here are a few pre-configured requests to configure for Aeris. You can just past
 As with the OpenWeather Map API, the Aeris API doesn't use a Header field to pass the API keys &mdash; the key and secret are passed directly in the request URL as part of the query string.
 
 {: .note}
-When you make the following requests, insert your own values for the <code>CLIENTID</code> and <code>CLIENTSECRET</code> (assuming you requested them in [Get the authorization keys](docapis_get_auth_keys.html)). If you don't have a client ID or secret, you can use my keys [here](/learnapidoc/assets/files/apikeys.txt).
+When you make the following requests, insert your own values for the <code>CLIENTID</code> and <code>CLIENTSECRET</code> (assuming you requested them in [Get the authorization keys](docapis_get_auth_keys.html)). If you don't have a client ID or secret, you can use my keys [here](http://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt).
 
 Get the weather forecast for your area using the [observations endpoint](https://www.aerisweather.com/support/docs/api/reference/endpoints/observations/):
 
@@ -149,6 +149,12 @@ By looking at these two different weather APIs, you can see some differences in 
 
 Postman has a nifty import feature that will automatically pull in the same requests you've been entering. You can click the Run in Postman buttons below to automatically import these two collections into your own instance of Postman.
 
+{% if site.format == "pdf" or site.format == "kindle" %}
+
+To view these buttons, go to the web page for this content at [http://idratherbewriting.com/learnapidoc/docapis_postman.html](http://idratherbewriting.com/learnapidoc/docapis_postman.html).
+
+{% elsif site.format == "web" %}
+
 ### OpenWeatherMap API collection
 
 <div class="postman-run-button"
@@ -166,7 +172,7 @@ data-postman-var-1="abd0d0741e8206266958"></div>
 
 If this button doesn't work for you, copy this [import link](https://www.getpostman.com/collections/abd0d0741e8206266958).
 
-### Aeris Weather API collection.
+### Aeris Weather API collection
 
 <div class="postman-run-button"
 data-postman-action="collection/import"
@@ -182,6 +188,8 @@ data-postman-var-1="65dcddab41ff7a773bb1"></div>
 </script>
 
 If this button doesn't work for you, copy this [import link](https://www.getpostman.com/collections/65dcddab41ff7a773bb1).
+
+{% endif %}
 
 Clicking the Run in Postman buttons should automatically prompt you to import the content into Postman. If it doesn't work, copy the import link address and, in Postman, click **Import** in the upper-left corner. Then click the **Import from link** tab, paste in the address, and then click **Import**.
 
