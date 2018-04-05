@@ -95,12 +95,13 @@ The OpenWeatherMap API has a number of [example integrations](https://openweathe
 
 As a technical writer, add a code sample to the `surfreport/{beachId}` endpoint that you're documenting. Use the same code as above, and add a short description about why the code is doing what it's doing.
 
-Here's my approach:
+Here's my approach. (You might not include a detailed code sample like this for just one endpoint, but including some kind of code sample is almost always helpful.)
 
 ### Code example
 
 The following code samples shows how to use the surfreport endpoint to get the surf height for a specific beach.
 
+{% if site.format == "web" or site.format == "pdf" %}
 ```html
 <!DOCTYPE html>
 <head>
@@ -125,20 +126,7 @@ $.ajax(settings).done(function (response) {
 </body>
 </html>
 ```
-
-In this example, the `ajax` method from jQuery is used because it allows us to load a remote resource asynchronously.
-
-In the request, you submit the authorization through the header rather than directly in the endpoint path. The endpoint limits the days returned to 1 in order to increase the download speed.
-
-For demonstration purposes, the response is assigned to the `response` argument of the `done` method, and then written out to the `surfheight` tag on the page.
-
-We're just getting the surf height, but there's a lot of other data you could choose to display.
-
-You might not include a detailed code sample like this for just one endpoint, but including some kind of code sample is almost always helpful.
-
-<h2 id="code-example">Code example</h2>
-
-<p>The following code samples shows how to use the surfreport endpoint to get the surf height for a specific beach. </p>
+{% elsif site.format == "kindle" %}
 
 <pre>
 &lt;!DOCTYPE html&gt;
@@ -164,10 +152,12 @@ $.ajax(settings).done(function (response) {
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
+{% endif %}
 
-<p>In this example, the <code>ajax</code> method from jQuery is used because it allows us to load a remote resource asynchronously.</p>
-<p>In the request, you submit the authorization through the header rather than directly in the endpoint path. The endpoint limits the days returned to 1 in order to increase the download speed.</p>
+In this example, the `ajax` method from jQuery is used because it allows us to load a remote resource asynchronously.
 
-<p>For demonstration purposes, the response is assigned to the <code>response</code> argument of the <code>done</code> method, and then written out to the <code>surfheight</code> tag on the page.</p>
+In the request, you submit the authorization through a query string URL. The endpoint limits the days returned to 1 in order to increase the download speed.
 
-<p>We're just getting the surf height, but there's a lot of other data you could choose to display.</p>
+For demonstration purposes, the response is assigned to the `response` argument of the `done` method, and then written out to the `surfheight` tag on the page.
+
+We're just getting the surf height, but there's a lot of other data you could choose to display.

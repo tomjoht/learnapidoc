@@ -88,49 +88,37 @@ The following table lists the status and error codes related to this request.
 
 ## Code example
 
-The following code samples shows how to use the surfreport endpoint to get the surf conditions for a specific beach. In this case, the code is just showing the overall recommendation about whether to go surfing.
+The following code samples shows how to use the surfreport endpoint to get the surf height for a specific beach.
 
 ```html
 <!DOCTYPE html>
-<html>
 <head>
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <meta charset="utf-8">
-  <title>API Weather Query</title>
-  <script>
-
-  function getSurfReport() {
-
-// use AJAX to avoid CORS restrictions in API calls.
- var output = $.ajax({
-    url: 'https://simple-weather.p.mashape.com/surfreport/123?units=imperial&days=1&time=1433772000',
-    type: 'GET',
-    data: {},
-    dataType: 'json',
-    success: function(data) {
-        //Here we pull out the recommendation from the JSON object.
-        //To see the whole object, you can output it to your browser console using console.log(data);
-        document.getElementById("output").innerHTML = data.surfreport[0].monday.2pm.recommendation;
-        },
-    error: function(err) { alert(err); },
-    beforeSend: function(xhr) {
-    xhr.setRequestHeader("X-Mashape-Authorization", "WOyzMuE8c9mshcofZaBke3kw7lMtp1HjVGAjsndqIPbU9n2eET"); // Enter here your Mashape key
-    }
-});
-
+<script>
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "http://api.openweathermap.org/surfreport/25&days=1",
+  "method": "GET"
 }
 
+$.ajax(settings).done(function (response) {
+  console.log(response);
+  $("#surfheight").append(response.surfreport.conditions);
+});
 </script>
 </head>
 <body>
-
-  <button onclick="getSurfReport()">See the surfing recommendation</button>
-  <div id="output"></div>
-
+<h2>Surf Height</h2>
+<div id="surfheight"></div>
 </body>
 </html>
 ```
 
-In this example, the `ajax` method from jQuery is used because it allows cross-origin resource sharing (CORS) for the weather resources. In the request, you submit the authorization through the header rather than directly in the endpoint path. The endpoint limits the days returned to 1 in order to increase the download speed.
+In this example, the `ajax` method from jQuery is used because it allows us to load a remote resource asynchronously.
 
-For simple demo purposes, the response is assigned to the `data` argument of the success method, and then written out to the `output` tag on the page. We're just getting the surfing recommendation, but there's a lot of other data you could choose to display.
+In the request, you submit the authorization through a query string URL. The endpoint limits the days returned to 1 in order to increase the download speed.
+
+For demonstration purposes, the response is assigned to the `response` argument of the `done` method, and then written out to the `surfheight` tag on the page.
+
+We're just getting the surf height, but there's a lot of other data you could choose to display.

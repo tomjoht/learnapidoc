@@ -1,0 +1,837 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "2.5",
+    "title": "OpenWeatherMap API",
+    "description": "Get current weather, daily forecast for 16 days, and 3-hourly forecast 5 days for your city. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location stations. Data is available in JSON, XML, or HTML format. **Note**: This sample Swagger file covers the `current` endpoint only from the OpenWeatherMap API. <br/><br/> **Note**: All parameters are optional, but you must select at least one parameter. Calling the API by city ID (using the `id` parameter) will provide the most precise location results."
+  },
+  "host": "api.openweathermap.org",
+  "basePath": "/data/2.5/",
+  "securityDefinitions": {
+    "appid": {
+      "type": "apiKey",
+      "description": "API key to authorize requests. If you don't have an OpenWeatherMap API key, use `fd4698c940c6d1da602a70ac34f0b147`.",
+      "name": "appid",
+      "in": "query",
+      "x-testValue": "",
+      "x-skip-client-authentication": false
+    }
+  },
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/weather": {
+      "get": {
+        "description": "Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations.",
+        "summary": "Call current weather data for one location",
+        "tags": [
+          "Current Weather Data"
+        ],
+        "operationId": "WeatherGet",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "description": "**City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes."
+          },
+          {
+            "name": "id",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "description": "**City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls.*"
+          },
+          {
+            "name": "lat",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "description": "**Latitude**. *Example: 35*. The latitude cordinate of the location of your interest. Must use with `lon`."
+          },
+          {
+            "name": "lon",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "description": "**Longitude**. *Example: 139*. Longitude cordinate of the location of your interest. Must use with `lat`."
+          },
+          {
+            "name": "zip",
+            "in": "query",
+            "required": false,
+            "default": "94040,us",
+            "type": "string",
+            "description": "**Zip code**. Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default."
+          },
+          {
+            "name": "units",
+            "in": "query",
+            "required": false,
+            "enum": [
+              "standard",
+              "metric",
+              "imperial"
+            ],
+            "x-enum-elements": [
+              {
+                "name": "standard",
+                "description": ""
+              },
+              {
+                "name": "metric",
+                "description": ""
+              },
+              {
+                "name": "imperial",
+                "description": ""
+              }
+            ],
+            "default": "standard",
+            "type": "string",
+            "description": "**Units**. *Example: imperial*. Possible values: `metric`, `imperial`. When you do not use units parameter, format is `standard` by default."
+          },
+          {
+            "name": "lang",
+            "in": "query",
+            "required": false,
+            "enum": [
+              "ar",
+              "bg",
+              "ca",
+              "cz",
+              "de",
+              "el",
+              "en",
+              "fa",
+              "fi",
+              "fr",
+              "gl",
+              "hr",
+              "hu",
+              "it",
+              "ja",
+              "kr",
+              "la",
+              "lt",
+              "mk",
+              "nl",
+              "pl",
+              "pt",
+              "ro",
+              "ru",
+              "se",
+              "sk",
+              "sl",
+              "es",
+              "tr",
+              "ua",
+              "vi",
+              "zh_cn",
+              "zh_tw"
+            ],
+            "x-enum-elements": [
+              {
+                "name": "ar",
+                "description": ""
+              },
+              {
+                "name": "bg",
+                "description": ""
+              },
+              {
+                "name": "ca",
+                "description": ""
+              },
+              {
+                "name": "cz",
+                "description": ""
+              },
+              {
+                "name": "de",
+                "description": ""
+              },
+              {
+                "name": "el",
+                "description": ""
+              },
+              {
+                "name": "en",
+                "description": ""
+              },
+              {
+                "name": "fa",
+                "description": ""
+              },
+              {
+                "name": "fi",
+                "description": ""
+              },
+              {
+                "name": "fr",
+                "description": ""
+              },
+              {
+                "name": "gl",
+                "description": ""
+              },
+              {
+                "name": "hr",
+                "description": ""
+              },
+              {
+                "name": "hu",
+                "description": ""
+              },
+              {
+                "name": "it",
+                "description": ""
+              },
+              {
+                "name": "ja",
+                "description": ""
+              },
+              {
+                "name": "kr",
+                "description": ""
+              },
+              {
+                "name": "la",
+                "description": ""
+              },
+              {
+                "name": "lt",
+                "description": ""
+              },
+              {
+                "name": "mk",
+                "description": ""
+              },
+              {
+                "name": "nl",
+                "description": ""
+              },
+              {
+                "name": "pl",
+                "description": ""
+              },
+              {
+                "name": "pt",
+                "description": ""
+              },
+              {
+                "name": "ro",
+                "description": ""
+              },
+              {
+                "name": "ru",
+                "description": ""
+              },
+              {
+                "name": "se",
+                "description": ""
+              },
+              {
+                "name": "sk",
+                "description": ""
+              },
+              {
+                "name": "sl",
+                "description": ""
+              },
+              {
+                "name": "es",
+                "description": ""
+              },
+              {
+                "name": "tr",
+                "description": ""
+              },
+              {
+                "name": "ua",
+                "description": ""
+              },
+              {
+                "name": "vi",
+                "description": ""
+              },
+              {
+                "name": "zh_cn",
+                "description": ""
+              },
+              {
+                "name": "zh_tw",
+                "description": ""
+              }
+            ],
+            "default": "en",
+            "type": "string",
+            "description": "**Language**. *Example: en*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - `ar`, Bulgarian - `bg`, Catalan - `ca`, Czech - `cz`, German - `de`, Greek - `el`, English - `en`, Persian (Farsi) - `fa`, Finnish - `fi`, French - `fr`, Galician - `gl`, Croatian - `hr`, Hungarian - `hu`, Italian - `it`, Japanese - `ja`, Korean - `kr`, Latvian - `la`, Lithuanian - `lt`, Macedonian - `mk`, Dutch - `nl`, Polish - `pl`, Portuguese - `pt`, Romanian - `ro`, Russian - `ru`, Swedish - `se`, Slovak - `sk`, Slovenian - `sl`, Spanish - `es`, Turkish - `tr`, Ukrainian - `ua`, Vietnamese - `vi`, Chinese Simplified - `zh_cn`, Chinese Traditional - `zh_tw`."
+          },
+          {
+            "name": "Mode",
+            "in": "query",
+            "required": false,
+            "enum": [
+              "json",
+              "xml",
+              "html"
+            ],
+            "x-enum-elements": [
+              {
+                "name": "json",
+                "description": ""
+              },
+              {
+                "name": "xml",
+                "description": ""
+              },
+              {
+                "name": "html",
+                "description": ""
+              }
+            ],
+            "default": "json",
+            "type": "string",
+            "description": "**Mode**. *Example: html*. Determines format of response. Possible values are `xml` and `html`. If mode parameter is empty the format is `json` by default."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "$ref": "#/definitions/SuccessfulResponse"
+            },
+            "examples": {}
+          },
+          "404": {
+            "description": "Not found response",
+            "schema": {}
+          }
+        },
+        "security": [
+          {
+            "appid": []
+          }
+        ],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/weather?zip=94040,us&units=standard&lang=en&Mode=json"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Test Call current weather data for one location",
+            "x-testDescription": "Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations."
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Units": {
+      "title": "units",
+      "example": "standard",
+      "x-enum-elements": [
+        {
+          "name": "standard",
+          "description": ""
+        },
+        {
+          "name": "metric",
+          "description": ""
+        },
+        {
+          "name": "imperial",
+          "description": ""
+        }
+      ],
+      "type": "string",
+      "enum": [
+        "standard",
+        "metric",
+        "imperial"
+      ]
+    },
+    "Lang": {
+      "title": "lang",
+      "example": "ar",
+      "x-enum-elements": [
+        {
+          "name": "ar",
+          "description": ""
+        },
+        {
+          "name": "bg",
+          "description": ""
+        },
+        {
+          "name": "ca",
+          "description": ""
+        },
+        {
+          "name": "cz",
+          "description": ""
+        },
+        {
+          "name": "de",
+          "description": ""
+        },
+        {
+          "name": "el",
+          "description": ""
+        },
+        {
+          "name": "en",
+          "description": ""
+        },
+        {
+          "name": "fa",
+          "description": ""
+        },
+        {
+          "name": "fi",
+          "description": ""
+        },
+        {
+          "name": "fr",
+          "description": ""
+        },
+        {
+          "name": "gl",
+          "description": ""
+        },
+        {
+          "name": "hr",
+          "description": ""
+        },
+        {
+          "name": "hu",
+          "description": ""
+        },
+        {
+          "name": "it",
+          "description": ""
+        },
+        {
+          "name": "ja",
+          "description": ""
+        },
+        {
+          "name": "kr",
+          "description": ""
+        },
+        {
+          "name": "la",
+          "description": ""
+        },
+        {
+          "name": "lt",
+          "description": ""
+        },
+        {
+          "name": "mk",
+          "description": ""
+        },
+        {
+          "name": "nl",
+          "description": ""
+        },
+        {
+          "name": "pl",
+          "description": ""
+        },
+        {
+          "name": "pt",
+          "description": ""
+        },
+        {
+          "name": "ro",
+          "description": ""
+        },
+        {
+          "name": "ru",
+          "description": ""
+        },
+        {
+          "name": "se",
+          "description": ""
+        },
+        {
+          "name": "sk",
+          "description": ""
+        },
+        {
+          "name": "sl",
+          "description": ""
+        },
+        {
+          "name": "es",
+          "description": ""
+        },
+        {
+          "name": "tr",
+          "description": ""
+        },
+        {
+          "name": "ua",
+          "description": ""
+        },
+        {
+          "name": "vi",
+          "description": ""
+        },
+        {
+          "name": "zh_cn",
+          "description": ""
+        },
+        {
+          "name": "zh_tw",
+          "description": ""
+        }
+      ],
+      "type": "string",
+      "enum": [
+        "ar",
+        "bg",
+        "ca",
+        "cz",
+        "de",
+        "el",
+        "en",
+        "fa",
+        "fi",
+        "fr",
+        "gl",
+        "hr",
+        "hu",
+        "it",
+        "ja",
+        "kr",
+        "la",
+        "lt",
+        "mk",
+        "nl",
+        "pl",
+        "pt",
+        "ro",
+        "ru",
+        "se",
+        "sk",
+        "sl",
+        "es",
+        "tr",
+        "ua",
+        "vi",
+        "zh_cn",
+        "zh_tw"
+      ]
+    },
+    "Mode": {
+      "title": "Mode",
+      "example": "json",
+      "x-enum-elements": [
+        {
+          "name": "json",
+          "description": ""
+        },
+        {
+          "name": "xml",
+          "description": ""
+        },
+        {
+          "name": "html",
+          "description": ""
+        }
+      ],
+      "type": "string",
+      "enum": [
+        "json",
+        "xml",
+        "html"
+      ]
+    },
+    "SuccessfulResponse": {
+      "title": "Successful response",
+      "type": "object",
+      "properties": {
+        "coord": {
+          "$ref": "#/definitions/Coord"
+        },
+        "weather": {
+          "description": "(more info Weather condition codes)",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Weather"
+          }
+        },
+        "base": {
+          "description": "Internal parameter",
+          "example": "cmc stations",
+          "type": "string"
+        },
+        "main": {
+          "$ref": "#/definitions/Main"
+        },
+        "visibility": {
+          "description": "Visibility, meter",
+          "example": 16093,
+          "type": "integer",
+          "format": "int32"
+        },
+        "wind": {
+          "$ref": "#/definitions/Wind"
+        },
+        "clouds": {
+          "$ref": "#/definitions/Clouds"
+        },
+        "rain": {
+          "$ref": "#/definitions/Rain"
+        },
+        "snow": {
+          "$ref": "#/definitions/Snow"
+        },
+        "dt": {
+          "description": "Time of data calculation, unix, UTC",
+          "example": 1435658272,
+          "type": "integer",
+          "format": "int32"
+        },
+        "sys": {
+          "$ref": "#/definitions/Sys"
+        },
+        "id": {
+          "description": "City ID",
+          "example": 2172797,
+          "type": "integer",
+          "format": "int32"
+        },
+        "name": {
+          "description": "",
+          "example": "Cairns",
+          "type": "string"
+        },
+        "cod": {
+          "description": "Internal parameter",
+          "example": 200,
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "Coord": {
+      "title": "Coord",
+      "type": "object",
+      "properties": {
+        "lon": {
+          "description": "City geo location, longitude",
+          "example": 145.77,
+          "type": "number",
+          "format": "double"
+        },
+        "lat": {
+          "description": "City geo location, latitude",
+          "example": -16.92,
+          "type": "number",
+          "format": "double"
+        }
+      }
+    },
+    "Weather": {
+      "title": "Weather",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Weather condition id",
+          "example": 803,
+          "type": "integer",
+          "format": "int32"
+        },
+        "main": {
+          "description": "Group of weather parameters (Rain, Snow, Extreme etc.)",
+          "example": "Clouds",
+          "type": "string"
+        },
+        "description": {
+          "description": "Weather condition within the group",
+          "example": "broken clouds",
+          "type": "string"
+        },
+        "icon": {
+          "description": "Weather icon id",
+          "example": "04n",
+          "type": "string"
+        }
+      }
+    },
+    "Main": {
+      "title": "Main",
+      "type": "object",
+      "properties": {
+        "temp": {
+          "description": "Temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.",
+          "example": 293.25,
+          "type": "number",
+          "format": "double"
+        },
+        "pressure": {
+          "description": "Atmospheric pressure (on the sea level, if there is no sea_level or grnd_level data), hPa",
+          "example": 1019,
+          "type": "integer",
+          "format": "int32"
+        },
+        "humidity": {
+          "description": "Humidity, %",
+          "example": 83,
+          "type": "integer",
+          "format": "int32"
+        },
+        "temp_min": {
+          "description": "Minimum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopolises geographically expanded (use these parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.",
+          "example": 289.82,
+          "type": "number",
+          "format": "double"
+        },
+        "temp_max": {
+          "description": "Maximum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopolises geographically expanded (use these parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.",
+          "example": 295.37,
+          "type": "number",
+          "format": "double"
+        },
+        "sea_level": {
+          "description": "Atmospheric pressure on the sea level, hPa",
+          "example": 984,
+          "type": "number",
+          "format": "double"
+        },
+        "grnd_level": {
+          "description": "Atmospheric pressure on the ground level, hPa",
+          "example": 990,
+          "type": "number",
+          "format": "double"
+        }
+      }
+    },
+    "Wind": {
+      "title": "Wind",
+      "type": "object",
+      "properties": {
+        "speed": {
+          "description": "Wind speed. Unit Default: meter/sec, Metric: meter/sec, Imperial: miles/hour.",
+          "example": 5.1,
+          "type": "number",
+          "format": "double"
+        },
+        "deg": {
+          "description": "Wind direction, degrees (meteorological)",
+          "example": 150,
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "Clouds": {
+      "title": "Clouds",
+      "type": "object",
+      "properties": {
+        "all": {
+          "description": "Cloudiness, %",
+          "example": 75,
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "Rain": {
+      "title": "Rain",
+      "type": "object",
+      "properties": {
+        "3h": {
+          "description": "Rain volume for the last 3 hours",
+          "example": 3,
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "Snow": {
+      "title": "Snow",
+      "type": "object",
+      "properties": {
+        "3h": {
+          "description": "Snow volume for the last 3 hours",
+          "example": 6,
+          "type": "number",
+          "format": "double"
+        }
+      }
+    },
+    "Sys": {
+      "title": "Sys",
+      "type": "object",
+      "properties": {
+        "type": {
+          "description": "Internal parameter",
+          "example": 1,
+          "type": "integer",
+          "format": "int32"
+        },
+        "id": {
+          "description": "Internal parameter",
+          "example": 8166,
+          "type": "integer",
+          "format": "int32"
+        },
+        "message": {
+          "description": "Internal parameter",
+          "example": 0.0166,
+          "type": "number",
+          "format": "double"
+        },
+        "country": {
+          "description": "Country code (GB, JP etc.)",
+          "example": "AU",
+          "type": "string"
+        },
+        "sunrise": {
+          "description": "Sunrise time, unix, UTC",
+          "example": 1435610796,
+          "type": "integer",
+          "format": "int32"
+        },
+        "sunset": {
+          "description": "Sunset time, unix, UTC",
+          "example": 1435650870,
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    }
+  }
+}

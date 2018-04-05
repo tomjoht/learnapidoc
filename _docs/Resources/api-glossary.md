@@ -87,6 +87,9 @@ method
 Mulesoft
 : Similar to Apiary or Apigee, Mulesoft provides an end-to-end platform for designing, developing, and distributing your APIs. For documentation, Mulesoft supports [RAML](pubapis_raml.html). See [https://www.mulesoft.com/](https://www.mulesoft.com/).
 
+OAS
+: Abbreviation for OpenAPI specification.
+
 OpenAPI
 : The official name for the OpenAPI specification. The OpenAPI specification provides a set of elements that can be used to describe your REST API. When valid, the specification document can be used to create interactive documentation, generate client SDKs, run unit tests, and more. See [https://github.com/OAI/OpenAPI-Specification](https://github.com/OAI/OpenAPI-Specification). Now under the Open API Initiative with the Linux Foundation, the OpenAPI specification aims to be vendor neutral.
 

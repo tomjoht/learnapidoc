@@ -1,6 +1,0 @@
-{{!Renders all subschemas}}
-{{#if definitions}}
-  {{#eachSorted definitions}}
-    {{>json-schema/main-panel . title=@key anchor=true}}
-  {{/eachSorted}}
-{{/if}}

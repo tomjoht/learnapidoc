@@ -9,10 +9,10 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-RAML stands for REST API Modeling Language and is similar to the [OpenAPI specification](pubapis_openapi_tutorial_overview.html). RAML is backed by [Mulesoft](https://www.mulesoft.com/), a commercial API company, and uses a more YAML-based syntax in the specification.
+RAML stands for REST API Modeling Language and is similar to the [OpenAPI specification](pubapis_openapi_tutorial_overview.html). RAML is backed by [Mulesoft](https://www.mulesoft.com/), an full-service, end-to-end API company, and uses a more YAML-based syntax in the specification.
 
 {: .note}
-Unless you're publishing your docs with Mulesoft or another platform that specifically requires RAML, I recommend using the [OpenAPI specification](pubapis_openapi_tutorial_overview.html) instead.
+Unless you're publishing your docs with Mulesoft or another platform that specifically requires RAML, I recommend using the [OpenAPI specification](pubapis_openapi_tutorial_overview.html) instead. However, Mulesoft offers enterprise-grade API design, management, and deployment capabilities. If you're using Mulesoft for your API, use RAML for your documentation specification.
 
 {% if site.format == "web" %}
 * TOC
@@ -21,9 +21,9 @@ Unless you're publishing your docs with Mulesoft or another platform that specif
 
 ## RAML overview
 
-Similar to OpenAPI, after you create a RAML file that describes your API, it can be consumed by different platforms to parse and display the information in attractive outputs. The RAML format, which uses YML syntax, is human-readable, efficient, and simple. See this [demo](http://idratherassets.com/raml/build/index.html):
+Similar to OpenAPI, after you create a RAML file that describes your API, it can be consumed by different platforms to parse and display the information in attractive outputs. The RAML format, which uses YML syntax, is human-readable, efficient, and simple. Here's the OpenWeatherMap API file described in RAML file and rendered with the API Console:
 
-<figure><a href="http://idratherassets.com/raml/build/index.html" class="noExtIcon"><img src="images/ramlexample.png" alt="Sample RAML output in API Console" /></a><figcaption>This is a sample RAML output in something called API Console</figcaption></figure>
+<figure><a class="noCrossref" href="http://idratherassets.com/raml/build/index.html" class="noExtIcon"><img src="images/ramlexample.png" alt="Sample RAML output in API Console." /></a><figcaption>This is a sample RAML output in something called API Console</figcaption></figure>
 
 ## Auto-generating client SDK code
 
@@ -37,9 +37,9 @@ To understand the proper syntax and format for RAML, you need to read the [RAML 
 
 {% include random_ad.html %}
 
-Here's the OpenWeatherMap API we've been using in this course formatted in the RAML spec. (I actually just used [API Transformer](https://apimatic.io/transformer) to convert my OpenAPI 3.0 spec to RAML.)
+Here's the OpenWeatherMap API we've been using in this course formatted in the RAML spec. (I actually just used [API Transformer](https://apimatic.io/transformer) to convert my OpenAPI 3.0 spec to RAML.) It's highly similar to the OpenAPI spec.
 
-```
+```yaml
 #%RAML 1.0
 title: OpenWeatherMap API
 version: 2.5
@@ -421,38 +421,29 @@ types:
 
 You can generate outputs using the RAML spec from a variety of platforms. Here are three ways:
 
- * [Developer Portal on Anypoint platform](https://anypoint.mulesoft.com/apiplatform). Choose this option if you are developing and delivering your API on Mulesoft's Anypoint platform.
- * [API Console output](https://github.com/mulesoft/api-console). Choose this option if you want a standalone API Console output delivered on your own server. (Note that this option also allows you to embed the console in an iframe.)
- * [RAML2HTML project](http://raml2html.leanlabs.io/). Choose this option if you want a simple HTML output of your API documentation. No interactive console is included.
+* [Developer Portal on Anypoint platform](#anypointexchange). Choose this option if you are developing and delivering your API on Mulesoft's Anypoint platform.
+* [API Console output](#apiconsole). Choose this option if you want a standalone API Console output delivered on your own server. (Note that this option also allows you to embed the console in an iframe.)
+* [RAML2HTML project](#raml2html). Choose this option if you want a simple HTML output of your API documentation. No interactive console is included.
 
-## Deliver doc through the Anypoint Platform Developer Portal
+## Deliver doc through Mulesoft's Anypoint Platform and Exchange Portal {#anypointexchange}
 
-1.  Log into the [Anypoint platform](https://anypoint.mulesoft.com/apiplatform).
-2.  Click **APIs** on the top navigation.
-3.  Click **Add new API** and complete the details of the dialog box.
-4.  Click the API you just added.
-5.  In the API Definition box, click **Edit in API Designer**.
-6.  Input your RAML spec here (copy it from the above section), and then click **Save**.
-7.  Click **APIs** on the top navigation, and then click your API.
-8.  In the API Portal section, click **Create new portal**.
-9.  In the left pane, select **API Reference**.
+[Anypoint](https://anypoint.mulesoft.com/apiplatform) is the API development platform on Mulesoft. APIs you develop with Mulesoft can be shared and viewed on their [Anypoint Exchange portal](https://www.mulesoft.com/exchange/).
 
-	  Note that you can add additional pages to your documentation here.
+The Anypoint console has a dashboard where you can work on your RAML definition, add other documentation pages (outside the spec), configure mocking services, and more. If your company already uses Mulesoft for other API development services, it would make sense to use their documentation and portal features as well.
 
-	  <img src="images/addingmoreramlapiportal.png" alt="Adding additional pages" />
+<figure><img src="images/anypointplatform.png" /><figcaption>The UI when working with RAML definitions in the Anypoint platform</figcaption></figure>
 
-	  (Kudos to the Mulesoft team for recognizing that API documentation is more than just a set of reference endpoints.)
+Note that you can add additional pages to your documentation in Anypoint. (Kudos to the Mulesoft team for recognizing that API documentation is more than just a set of reference endpoints.)
 
-	  One of the options here is an API Notebook. This is a unique tool designed by Mulesoft that allows you to provide interactive code examples that leverage your RAML spec. You can read more about [API Notebooks here](https://api-notebook.anypoint.mulesoft.com/#examples).
+Here's what the sample OpenWeatherMap API looks like in Anypoint Exchange:
 
-10. Click the **Set to visible** icon (looks like an eye).
-11. Click **Live Portal**.
+<a class="noCrossref" href="https://anypoint.mulesoft.com/exchange/18a207fd-59c5-4c64-845f-de1568e92fc5/openweathermap/1.0.0/console/types/Coord/"><img src="images/anypointexchange.png"/></a>
 
-	<img src="images/apireferenceanypoint.png" alt="AnyPoint Developer Portal" />
+One of the unique options Mulesoft is called [API Notebook](https://api-notebook.anypoint.mulesoft.com). This is a unique tool designed by Mulesoft that allows you to provide interactive code examples that leverage your RAML spec.
 
-## Deliver doc through the API Console Project
+## Deliver doc through the API Console Project {#apiconsole}
 
-You can also download the same code that generates the output on the Anypoint Platform and create your own API Console. The standalone project is called [API Console](https://github.com/mulesoft/api-console). Here's a [demo](http://idratherassets.com/raml/build/index.html). Instructions are available on the [api-console](https://github.com/mulesoft/api-console) project on GitHub. Basically, do the following:
+You can download the same code that generates the output on the Anypoint Platform and create your own API Console. The standalone project (on GitHub) is called [API Console](https://github.com/mulesoft/api-console). Here's a [demo](http://idratherassets.com/raml/build/index.html). Instructions are available on the [api-console](https://github.com/mulesoft/api-console) project on GitHub. Basically, do the following:
 
 1.  Install the api-console CLI:
 
@@ -471,42 +462,18 @@ You can also download the same code that generates the output on the Anypoint Pl
     ```
 
     It takes a few minutes for the build to complete. (If you run into errors, make sure you're in sudo mode.)
-7.  Upload the output to your webserver, and then go to the index.html file in your browser.
 
-You can also [embed the API console as an HTML element](https://github.com/mulesoft/api-console#embed-as-an-html-element).
+7.  Upload the output to your web server, and then go to the index.html file in your browser.
 
-## Deliver doc through the RAML2HTML Utility
+    <figure><a class="noCrossref" href="http://idratherassets.com/raml/build/index.html" class="noExtIcon"><img src="images/ramlexample.png" alt="Sample RAML output in API Console." /></a><figcaption>This is a sample RAML output in something called API Console</figcaption></figure>
 
-Here's [an example](http://raml2html.leanlabs.io/github) of what the RAML2HTML output looks like. It's a static HTML output without any interactivity.
+    {: .tip}
+    You can also [embed the API console as an HTML element](https://github.com/mulesoft/api-console#embed-as-an-html-element).
 
-To generate this kind of output:
+## Deliver doc through the RAML2HTML Utility {#raml2html}
 
-1.  Install RAML2HTML through either of these methods:
-    * [Through Node](https://www.npmjs.com/package/raml2html)
-    * [Through wget](http://raml2html.leanlabs.io/documentation)
-2.  In Terminal, enter this command:
+Finally, you can also use a tool called [RAML2HTML project](http://raml2html.leanlabs.io/) to generate HTML documentation from a RAML spec. Here's [an example](http://raml2html.leanlabs.io/github) of what the RAML2HTML output looks like. It's a static HTML output without any interactivity. See the [RAML2HTML documentation](http://raml2html.leanlabs.io/documentation) for instructions on generating this output.
 
-    ```
-    raml2html generate -i input_file.raml -o output_file.html
-    ```
+## Conclusions
 
-	 For example, if you're already in the directory where your RAML file is (named weather.raml), and you want the output file to be named index.html, then enter this:
-
-    ```
-    raml2html generate -i weather.raml -o index.html
-    ```
-
-	  Here's the result:
-
-	  <img src="images/raml2htmloutput.png" alt="RAML2HTML" />
-
-	  {: .tip}
-    To see this example in your browser, go to <a href="http://idratherbewriting.com/learnapidoc/assets/files/raml/examples/index.html">/learnapidoc/assets/files/examples/index.html</a>.
-
-## Other platforms that consume RAML and Swagger
-
-<a href="http://studio.restlet.com">Restlet Studio</a> is another platform to check out. Restlet Studio can process either Swagger or RAML specs.
-
-One advantage to using Restlet Studio is that it provides a form where you can assemble the needed spec by populating different form values, which theoretically should make building the RAML or Swagger file easier.
-
-Exploring more platforms in depth is beyond the scope of this tutorial, but the concept is more or less the same. Large platforms that process and display your API documentation can only do so if your documentation aligns with a spec their tools can parse.
+Exploring Mulesoft in more depth is beyond the scope of this tutorial, but hopefully I've introduced you to RAML and Mulesoft. Overall, large platforms that process and display your API documentation can only do so if your documentation aligns with a spec their tools can parse. RAML provides this standard spec for the Mulesoft ecosystem of tools. Their enterprise-level API tools provide powerful capabilities for your API.

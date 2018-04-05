@@ -11,7 +11,7 @@ path1: /restapispecifications.html
 Previously, I explored using the open-source [Swagger UI project](pubapis_swagger.html) as a way to render your [OpenAPI specification document](pubapis_openapi_tutorial_overview.html). [SwaggerHub](https://app.swaggerhub.com/) is the commercial version of Swagger UI. You can see a comparison of features [here](https://swaggerhub.com/swagger-open-source-comparison/).
 
 {: .tip}
-You can see a demo of the [sample OpenWeatherMap API on SwaggerHub here](https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/2.5). On the demo page, click the download arrow icon in the upper-right corner to see the list of client and server SDKs that you can download from SwaggerHub.
+You can see a demo of the [sample OpenWeatherMap API on SwaggerHub here](https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/2.5).
 
 {% if site.format == "web" %}
 * TOC
@@ -42,7 +42,7 @@ To get started with SwaggerHub, go to [swaggerhub.com](https://swaggerhub.com/) 
 
 <a href="https://app.swaggerhub.com/home" class="noExtIcon"><img src="images/swaggerhubhomepage.png" /></a>
 
-The dashboard shows a list of the APIs you've created. In this example, you see the [Weather API](docapis_scenario_for_using_weather_api.html) that I've been using throughout this course.
+The dashboard shows a list of the APIs you've created. In this example, you see the [OpenWeatherMap API](docapis_scenario_for_using_weather_api.html) that I've been using throughout this course.
 
 ## SwaggerHub Editor
 
@@ -68,9 +68,9 @@ Not only does SwaggerHub allow you to save your OpenAPI spec, you can save diffe
 
 When you publish a version, the published version becomes Read Only. If you want to make changes to a published version (rather than creating a new version), you can unpublish the version and make edits on it.
 
-You can link to specific versions of your documentation, or you can use a more general link path that will automatically forward to the latest version. Here's a link to the Weather API published on SwaggerHub that uses version 2.0 of the spec: [https://app.swaggerhub.com/apis/IdRatherBeWriting/MashapeWeatherAPI/2.2](https://app.swaggerhub.com/apis/IdRatherBeWriting/MashapeWeatherAPI/2.2).
+You can link to specific versions of your documentation, or you can use a more general link path that will automatically forward to the latest version. Here's a link to the OpenWeatherMap API published on SwaggerHub that uses version 3.0 of the spec: [hhttps://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/2.5](https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/2.5).
 
-You can also send users to the default version when they go they don't include the version at the end. For example, if you go to [https://app.swaggerhub.com/apis/IdRatherBeWriting/MashapeWeatherAPI](https://app.swaggerhub.com/apis/IdRatherBeWriting/MashapeWeatherAPI), you get forwarded to the latest published version of the spec automatically.
+You can also send users to the default version when they go they don't include the version at the end. For example, if you go to [https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/](https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/), you get forwarded to the latest published version of the spec automatically.
 
 Versioning is helpful when you're collaborating on the spec with other team members. For example, suppose you see the original version drafted by an engineer, and you want to make major edits. Rather than directly overwriting the content (or making a backup copy of an offline file), you can create a new version and then take more ownership to overhaul that version with your own wordsmithing, without fear that the engineer will react negatively about overwritten/lost content.
 
@@ -101,6 +101,9 @@ Some API documentation sites look impressive for showing implementations in vari
 The output includes more than a simple code sample showing how to call a REST endpoint in that language. The output includes a whole SDK that includes the various nuts and bolts of an implementation in that language.
 
 Providing this code not only speeds implementation for developers, it also helps you scale your language-agnostic REST API to a greater variety of platforms and users, reducing the friction in adoption.
+
+{: .note}
+The client and server SDKs aren't yet available for OpenAPI 3.0 specs, just for 2.0 specs. As of April 2018, a note in the UI indicates that these features will be added soon. Until the features are added, you can see these menus in an [older weather API doc here](https://app.swaggerhub.com/apis/IdRatherBeWriting/MashapeWeatherAPI/2.3) I created that uses the 2.0 version of the spec.
 
 ## Export to HTML
 
