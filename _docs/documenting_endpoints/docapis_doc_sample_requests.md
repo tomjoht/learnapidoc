@@ -27,7 +27,7 @@ The following example shows a sample request from the [Callfire API](https://dev
 
 <a class="noExtIcon" href="https://developers.callfire.com/docs.html#pagination"><img src="images/callfireapirequestexample.png"/></a>
 
-The design of this API doc site arranges the sample requests and responses in the right column of a three-column layout. The request is formatted in curl, which we [explored earlier](docapis_install_curl).
+The design of this API doc site arranges the sample requests and responses in the right column of a three-column layout. The request is formatted in curl, which we [explored earlier](docapis_install_curl.html).
 
 ```curl
 curl -u "username:password" -H "Content-Type:application/json" -X GET "https://api.callfire.com/v2/texts?limit=50&offset=200"
@@ -43,7 +43,7 @@ In general, use curl to show your sample request. Here's another example of a cu
 
 <a href="http://docs.parseplatform.org/rest/guide/#updating-objects" class="noExtIcon"><img src="images/parseapirequest.png"/></a>
 
-You can add backslashes in curl to separate out each parameter onto its own line (though, as I pointed out in the [curl tutorial](docapis_make_curl_call.html#make-the-request-in-curl-windows-7), Windows has trouble with backslashes).
+You can add backslashes in curl to separate out each parameter onto its own line (though, as I pointed out in the [curl tutorial](docapis_make_curl_call.html#windows_notes), Windows has trouble with backslashes).
 
 Other API doc sites might use the full resource URL, such as this plain example from Twitter:
 

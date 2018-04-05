@@ -69,7 +69,7 @@ layout: null
 	<dc:date>2017-12-01</dc:date>
 
   <!-- Description: A short description of the publication's content. -->
-  <dc:description>A guide for technical writers documenting REST APIs in software development companies.</dc:description>
+  <dc:description>A guide for technical writers documenting REST APIs</dc:description>
 
 </metadata>
 

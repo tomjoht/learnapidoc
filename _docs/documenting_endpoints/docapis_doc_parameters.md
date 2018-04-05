@@ -72,12 +72,12 @@ You can format the values in a variety of ways (aside from a table). If you're u
 REST APIs have four types of parameters:
 
 *  **[Header parameters](#header_parameters)**: Parameters that are included in the request header, usually related to authorization.
-*  **[Path parameters](#path_paramters)**: Parameters that appear within the path of the endpoint, before the query string (`?`). These are usually set off within curly braces.
+*  **[Path parameters](#path_parameters)**: Parameters that appear within the path of the endpoint, before the query string (`?`). These are usually set off within curly braces.
 *  **[Query string parameters](#query_string_parameters)**: Parameters that appear in the query string of the endpoint, after the `?`.
 *  **[Request body parameters](#request_body_parameters)**: Parameters that are included in the request body. Usually submitted as JSON.
 
 {: .tip}
-The terms for each of these parameter types comes from the [OpenAPI specification](pubapis_openapi_tutorial_overview), which defines a formal specification that includes descriptions of each parameter type (see the [Path object tutorial](pubapis_openapi_step4_paths_object)). Using industry standard terminology helps you develop a vocabulary to describe different elements of an API.
+The terms for each of these parameter types comes from the [OpenAPI specification](pubapis_openapi_tutorial_overview.html), which defines a formal specification that includes descriptions of each parameter type (see the [Path object tutorial](pubapis_openapi_step4_paths_object.html)). Using industry standard terminology helps you develop a vocabulary to describe different elements of an API.
 
 ## What to note in parameter documentation
 

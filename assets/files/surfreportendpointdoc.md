@@ -18,7 +18,6 @@ Returns information about surfing conditions at a specific beach ID, including t
 | Parameter | Description | Data Type |
 |-----------|------|-----|-----------|
 | days | *Optional*. The number of days to include in the response. Default is 3. | integer |
-| units | *Optional*. Whether to return the values in imperial or metric measurements. Imperial will use feet, knots, and Fahrenheit. Metric will use centimeters, kilometers per hour, and celsius. | string |
 | time | *Optional*. If you include the time, then only the current hour will be returned in the response.| integer. Unix format (ms since 1970) in UTC. |
 
 ## Sample request

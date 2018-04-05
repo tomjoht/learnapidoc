@@ -176,7 +176,7 @@ For more doc tools, see the [Generating Docs](https://github.com/PharkMillups/be
 
 Right now there are probably many readers who are clenching their first and lowering their eyebrows in anger at the omission of their tool. *What about ... Docpad!!??? What about Nikola??!!*
 
-Hey, there are *a lot* of tool options out there, and you might have found perfect match between your content needs and the tool. (This page is already 5,000+ words long.) If you feel strongly that I missed an essential tool for docs here, feel free to [contact me](contact.html). Additionally, the tools landscape for developer docs is robust, complex and seemingly endless.
+Hey, there are *a lot* of tool options out there, and you might have found perfect match between your content needs and the tool. (This page is already 5,000+ words long.) If you feel strongly that I missed an essential tool for docs here, feel free to [contact me](http://idratherbewriting.com/contact/). Additionally, the tools landscape for developer docs is robust, complex and seemingly endless.
 
 Also, recognize that I'm only recommending what I perceive to be the most popular options. The developer tool landscape is diverse and constantly changing, and what may be relevant one day might be passé the next. This is a difficult space to navigate, and selecting the right tool for your needs is a tough question [though I offer more specific advice and recommendations here](pubapis_which_tool_to_choose.html). The tool you choose can massively affect both your productivity and capability, so it tends to be an important choice.
 

@@ -79,7 +79,6 @@ Swap in your own API key for the `appid` value in the URL's query string.
     </script>
 
     If this button doesn't work for you, copy this [import link](https://www.getpostman.com/collections/65dcddab41ff7a773bb1).
-
     {% endif %}
 
 3.  Make requests in Postman.

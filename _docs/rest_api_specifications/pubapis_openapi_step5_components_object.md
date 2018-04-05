@@ -20,7 +20,7 @@ In the [step 4](pubapis_openapi_step4_paths_object.html), when we described the 
 {:toc}
 {% endif %}
 
-## Reasons to use the components object
+## Reasons to use the components object {#reused_parameters}
 
 Describing the schema of complex responses can be one of the more challenging aspects of the OpenAPI spec. Although you can define the schema directly in the `requestBody` or `responses` object, you typically don't list it there for two reasons:
 
@@ -47,7 +47,7 @@ You can store a lot of different re-usable objects in the `components` object. T
 
 The properties for each object inside `components` are the same as they are when used in other parts of the OpenAPI spec.
 
-## Re-using response objects
+## Re-using response objects {#reusing_objects}
 
 In the previous topic, I explained how to [re-use parameter definitions in components](pubapis_openapi_step4_paths_object.html#reusing_definitions), so I won't re-explain the approach. Here we'll cover how to re-use the schema definitions in the `responses` objects.
 

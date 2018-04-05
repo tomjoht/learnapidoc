@@ -15,7 +15,7 @@ API
 : Application Programming Interface. Enables different systems to interact with each other programmatically. Two types of APIs are web services and library-based APIs. See [What is a REST API?](docapis_what_is_a_rest_api.html).
 
 API Console
-: Renders an interactive display for the RAML spec. Similar to Swagger UI, but for [RAML](pubapis_raml.html#sample-spec-for-openweathermap-weather-api). See [github.com/mulesoft/api-console](https://github.com/mulesoft/api-console).
+: Renders an interactive display for the RAML spec. Similar to Swagger UI, but for [RAML](pubapis_raml.html#apiconsole). See [github.com/mulesoft/api-console](https://github.com/mulesoft/apiconsole).
 
 APIMATIC
 : Supports most REST API description formats (OpenAPI, RAML, API Blueprint, etc.) and provides SDK code generation, conversions from one spec format to another, and many more services. APIMATIC "lets you define APIs and generate SDKs for more than 10 languages." For example, you can automatically convert Swagger 2.0 to 3.0 using the [API Transformer](https://apimatic.io/transformer) service on this site. See [https://apimatic.io/](https://apimatic.io/) and read the [documentation](https://docs.apimatic.io/).

@@ -242,18 +242,18 @@ These slides are for an [upcoming presentation](http://idratherbewriting.com/201
 
 Additionally, this content was republished here in the [Developer Portals e-Magazine Winter 2018](https://pronovix.com/e-books/developer-portals-e-magazine-winter-2018), by Pronovix:
 
-<a href="https://pronovix.com/e-books/developer-portals-e-magazine-winter-2018" class="noCrossRef"><img src="images/devportalswinter2018.png" style="max-width: 350px;"/></a>
+<a href="https://pronovix.com/e-books/developer-portals-e-magazine-winter-2018" class="noCrossRef"><img src="images/devportalswinter2018.png" class="small" /></a>
 
 It was also republished in Anne Gentle's [Docs Like Code: Case Studies](https://www.docslikecode.com/articles/change-case-study/):
 
-<a href="https://www.docslikecode.com/articles/change-case-study/" class="noCrossRef"><img src="images/docslikecodeannegentlecasestudies.png" style="max-width: 350px;"/></a>
+<a href="https://www.docslikecode.com/articles/change-case-study/" class="noCrossRef"><img src="images/docslikecodeannegentlecasestudies.png" class="small" /></a>
 
 {: .tip}
 To Learn more about docs as code, see Anne Gentle's book [Docs Like Code](https://www.amazon.com/Docs-Like-Code-Anne-Gentle/dp/1365816079/ref=sr_1_1?ie=UTF8&qid=1508090523&sr=8-1&keywords=docs+like+code).
 
 ## Video recording
 
-I recently [gave a presentation on Docs-as-code tools and workflows](/2018/03/09/docs-as-code-tools-and-workflows-denver-presentation/) to the STC Rocky Mountain and WTD Denver group.
+I recently [gave a presentation on Docs-as-code tools and workflows](http://idratherbewriting.com/2018/03/09/docs-as-code-tools-and-workflows-denver-presentation/) to the STC Rocky Mountain and WTD Denver group.
 
 {% if site.format == "kindle" or site.format == "pdf" %}
 This content doesn't embed well in print, as it contains YouTube videos. Please go to http://idratherbewriting.com/learnapidoc/pubapis_overview.html to view the content.

@@ -60,7 +60,7 @@ Before you start working with GitHub, you need to set up Git and install any nec
 2.  Create a GitHub account by going to [GitHub.com](http://github.com).
 
     {: .note}
-    GitHub and Git are not the same. Git provides [distributed version control](pubapis_version_control_systems.html). GitHub is a platform that helps you manage Git projects. GitHub also provides a GUI interface that allows you to execute a lot of Git commands, such as pull requests.
+    GitHub and Git are not the same. Git provides [distributed version control](pubapis_version_control.html). GitHub is a platform that helps you manage Git projects. GitHub also provides a GUI interface that allows you to execute a lot of Git commands, such as pull requests.
 
 3.  Configure Git with GitHub authorization. This will allow you to push changes without entering your username and password each time. See the following topics to set this up:
     * [Set up Git](https://help.github.com/articles/set-up-git/). Note that when you configure your username, use your GitHub username, which will be something like `tomjoht` instead of `Tom Johnson`.

@@ -58,7 +58,7 @@ In this section, you'll use curl to make the same weather API requests you made 
 
 Make a curl request for each of the requests you entered in Postman.
 
-## Note about single and double quotes with Windows curl requests
+## Note about single and double quotes with Windows curl requests {#windows_notes}
 
 If you're using Windows to submit a lot of curl requests, and the curl request require you to submit JSON in the request body, you might run into issues with single versus double quotes. Some API endpoints (usually for POST methods) require you to submit content in the body of the message request. The body content is formatted in JSON. Since you can't use double quotes inside of other double quotes, you'll run into issues in submitting curl requests in these scenarios.
 

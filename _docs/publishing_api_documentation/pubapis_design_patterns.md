@@ -173,7 +173,7 @@ This open invitation to use the tools of the web to construct your API doc site 
 
 ## Pattern 3: Abundant code samples {#abundant_code_examples}
 
-More than anything else, developers love [code examples](docapis_doc_code_samples.html), and the abundance of syntax-highlighted, properly formatted code samples on API doc sites constitutes a design pattern. Usually the more code you can add to your documentation, the better. Here's an example from Evernote's API:
+More than anything else, developers love [code examples](docapis_codesamples_bestpractices.html), and the abundance of syntax-highlighted, properly formatted code samples on API doc sites constitutes a design pattern. Usually the more code you can add to your documentation, the better. Here's an example from Evernote's API:
 
 <a href="https://dev.evernote.com/doc/articles/note-sharing.php" class="noExtIcon"><img src="images/evernotecodesamples.png" alt="Evernote code examples" /></a>
 
@@ -193,7 +193,7 @@ Sometimes development shops have an official style guide for formatting code sam
 * Line breaks
 * Inline code comment styles
 
-For example, here's a [JavaScript style guide](http://google.github.io/styleguide/javascriptguide.xml). If developers don't have an official style guide, ask them to recommend one online, and compare the code samples against the guidelines in it. I dive [more into code samples](docapis_doc_code_samples.html) in another topic.
+For example, here's a [JavaScript style guide](http://google.github.io/styleguide/javascriptguide.xml). If developers don't have an official style guide, ask them to recommend one online, and compare the code samples against the guidelines in it. I dive [more into code samples](docapis_codesamples_bestpractices.html) in another topic.
 
 ## Pattern 4: Lengthy pages {#longish_pages}
 
@@ -231,7 +231,7 @@ Here's a sample API explorer from [Watson's AlchemyLanguage API](https://watson-
 
 <a href="https://watson-api-explorer.mybluemix.net/apis/alchemy-language-v1#!/Authors/get_html_HTMLGetAuthors" class="noExtIcon" class="noExtIcon"><img src="images/watson-try-it-out.png"/></a>
 
-Are API explorers novel, or instructive? If you're going to be making a lot of calls, there's no reason why you couldn't just use [curl](docapis_make_curl_call.html) or [Postman](docapis_postman.html) (particularly the [Postman Run Button](pubapis_docs_as_code_tool_options.html#postman)) to quickly make the request and see the response. However, the API Explorer embedded directly in your documentation provides more of a graphical user interface that makes the endpoints accessible to more people. You don't have to worry about entering exactly the right syntax in your call &mdash; you just have to fill in the blanks.
+Are API explorers novel, or instructive? If you're going to be making a lot of calls, there's no reason why you couldn't just use [curl](docapis_make_curl_call.html) or [Postman](docapis_postman.html) (particularly the [Postman Run Button](pubapis_other_openapi_parsers.html#postman)) to quickly make the request and see the response. However, the API Explorer embedded directly in your documentation provides more of a graphical user interface that makes the endpoints accessible to more people. You don't have to worry about entering exactly the right syntax in your call &mdash; you just have to fill in the blanks.
 
 However, API Explorers tend to work better with simpler APIs. If your API requires you to retrieve data before you can use a certain endpoint, or if the data you submit is a JSON object in the body of the post, or you have some other complicated interdependency with the endpoints, the API Explorer might not be as helpful. Nevertheless, clearly it is a design pattern to provide this kind of interactivity in API documentation.
 

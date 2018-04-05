@@ -127,7 +127,7 @@ This approach facilitates scanning, and the popover + collapsible approach allow
 
 However, this approach requires more manual work from a documentation point of view. Still, if you have long JSON objects, it might be worth it.
 
-## Embedding dynamic responses
+## Embedding dynamic responses {#dynamic_responses}
 
 Sometimes responses are generated dynamically based on API calls to a test system. For example, look at the [Rhapsody API](https://developer.rhapsody.com/api) and click an endpoint &mdash; the response is generated dynamically.
 

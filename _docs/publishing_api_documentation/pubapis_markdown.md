@@ -156,7 +156,6 @@ Returns information about surfing conditions at a specific beach ID, including t
 | Parameter | Description | Data Type |
 |-----------|------|-----|-----------|
 | days | *Optional*. The number of days to include in the response. Default is 3. | integer |
-| units | *Optional*. Whether to return the values in imperial or metric measurements. Imperial will use feet, knots, and fahrenheit. Metric will use centimeters, kilometers per hour, and celsius. | string |
 | time | *Optional*. If you include the time, then only the current hour will be returned in the response.| integer. Unix format (ms since 1970) in UTC. |
 
 ## Sample request
@@ -228,37 +227,36 @@ The following table lists the status and error codes related to this request.
 The following code samples shows how to use the surfreport endpoint to get the surf conditions for a specific beach. In this case, the code is just showing the overall recommendation about whether to go surfing.
 
 ```html
-<html>
-<head>
-  <meta charset="UTF-8">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<title>Sample Page</title>
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;title&gt;Sample Page&lt;/title&gt;
 
-<script>
+&lt;script&gt;
 var settings = {
-  "async": true,
-  "crossDomain": true,
-  "url": "http://api.openweathermap.org/data/2.5/surfreport?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial&days=2",
-  "method": "GET"
+  &quot;async&quot;: true,
+  &quot;crossDomain&quot;: true,
+  &quot;url&quot;: &quot;http://api.openweathermap.org/data/2.5/surfreport?zip=95050%2Cus&amp;appid=fd4698c940c6d1da602a70ac34f0b147&amp;units=imperial&amp;days=2&quot;,
+  &quot;method&quot;: &quot;GET&quot;
 }
 
 $.ajax(settings).done(function (response) {
   console.log(response);
 
   var content = response.surfreport.conditions;
-  $("#surfReportConditions").append(content);
+  $(&quot;#surfReportConditions&quot;).append(content);
 
 });
-</script>
-</head>
-<body>
-<h1>Sample Page</h1>
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Sample Page&lt;/h1&gt;
 
-<div id="surfReportConditions">Surf report conditions: </div>
+&lt;div id=&quot;surfReportConditions&quot;&gt;Surf report conditions: &lt;/div&gt;
 
-</body>
-</html>
-
+&lt;/body&gt;
+&lt;/html&gt;
 ```
 
 In this example, the `ajax` method from jQuery is used because it allows cross-origin resource sharing (CORS) for the weather resources. In the request, you submit the authorization through the header rather than directly in the endpoint path. The endpoint limits the days returned to 1 in order to increase the download speed.
@@ -272,11 +270,11 @@ Look at about 5 different APIs (choose any of those listed on the page). Look fo
 
 On your Github wiki page, edit the page and create the following:
 
-* a numbered list
-* a bulleted list
-* a bold word
-* a code sample with html highlighting
-*  a level 2 heading
+* Numbered list
+* Bulleted list
+* Word with bold formatting
+* Code sample with HTML highlighting
+* Level 2 heading
 
 ## Limitations in Markdown
 

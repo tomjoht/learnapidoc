@@ -240,7 +240,7 @@ components:
       ...
 ```
 
-See [Storing re-used parameters in components](pubapis_openapi_step5_components_object.html#reused_parameters) for more details. Also see [Describing Parameters](https://swagger.io/docs/specification/describing-parameters/) in Swagger's OpenAPI documentation.
+See [Re-using response objects](pubapis_openapi_step5_components_object.html#reusing_objects) for more details. Also see [Describing Parameters](https://swagger.io/docs/specification/describing-parameters/) in Swagger's OpenAPI documentation.
 
 ## Responses
 
@@ -289,7 +289,7 @@ paths:
                 example: Not found
 ```
 
-We'll define the details for `$ref: '#/components/schemas/WeatherGetResponse'` in the [next topic]((pubapis_openapi_step5_components_object.html)).
+We'll define the details for `$ref: '#/components/schemas/200'` in the [next topic](pubapis_openapi_step5_components_object.html).
 
 ## Appearance of paths in Swagger UI
 
