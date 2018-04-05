@@ -53,16 +53,16 @@ to test on kindle fire:
 - filter out the swagger demos.
 - the PDF frontmatter are served from the pdf_frontmatter folder in \_docs but these paths are hard-coded into the toc page.
 
-1. run ". serve_pdf.sh"
+
+1. run " . build_pdf.sh"
+
 this file uses the \_config_pdf.yml. in this file, two important properties are defined:
 baseurl: /Users/tomjoht/projects/learnapidoc/\_site
 format: pdf
 
-2. run " . build_pdf.sh"
-
 it builds from the local, so it's not necessary to have serve_pdf running
 
-3. see pdf/docapis.pdf
+2. see pdf/docapis.pdf
 
 - no need to swap in images for tables
 - format: pdf
