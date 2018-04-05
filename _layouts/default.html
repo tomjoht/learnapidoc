@@ -26,6 +26,8 @@
 
                 {{content}}
 
+                {% unless page.type == 404 %}
+
                 {% include progress.html %}
                 {% comment %}
                 <p class="note" style="margin-top:30px">If this information was helpful, would you consider adding a <a href="https://idratherbewriting.wufoo.com/forms/sxgxvqb1ahtv6q/">course review comment</a>?</p>
@@ -36,7 +38,7 @@
                 <div class="donateButton">
                 {% include donate_button.html %}
                 </div>
-          
+
 
                 {% include single_post_ads.html %}
 
@@ -44,6 +46,8 @@
 
                 <div style="max-width: 375px">{% include tinyletter.html %}</div>
                 {% include disqus.html %}
+                {% endunless %}
+
               </div>
 
 
