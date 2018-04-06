@@ -121,7 +121,7 @@ $.ajax(settings).done(function (response) {
 </html>
 ```
 
-You can view the result here: <a href="http://idratherbewriting.com/learnapidoc/assets/files/weather-windspeed.html">/learnapidoc/assets/files/weather-windspeed.html</a>.
+You can view the result here: <a href="http://idratherbewriting.com/learnapidoc/assets/files/weather-windspeed.html">idratherbewriting.com/learnapidoc/assets/files/weather-windspeed.html</a>.
 
 Here's what we changed:
 

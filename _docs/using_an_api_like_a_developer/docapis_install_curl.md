@@ -73,7 +73,6 @@ You should get minified JSON response back like this:
 {: .note}
 In Windows, Ctrl+ V doesn't work; instead, you right-click and then select Paste.
 
-{: .tip}
 If you're on Windows 8.1 and you encounter an error that says, "The program can't start because MSVCR100.dll is missing from your computer," see <a href="http://www.faqforge.com/windows/fix-the-program-cant-start-because-msvcr100-dll-is-missing-from-your-computer-error-on-windows/">this article</a> and install the suggested package.
 
 ### Notes about using curl with Windows

@@ -67,21 +67,18 @@ blockquote {
 
 p.note {
     background: #f1f1f1;
-    margin: .4em 0em;
     padding: 1em 1em 1em 1em;
     border-left: 1em solid deepskyblue;
 }
 
 p.tip {
   background: #f1f1f1;
-  margin: .4em 0em;
   padding: 1em 1em 1em 1em;
   border-left: 1em solid #00b200;
 }
 
 p.warning {
   background: #f1f1f1;
-  margin: .4em 0em;
   padding: 1em 1em 1em 1em;
   border-left: 1em solid #b20000;
 }

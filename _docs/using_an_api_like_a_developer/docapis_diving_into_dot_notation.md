@@ -191,12 +191,12 @@ When you load the page and click the button, the following should appear:
 
 <a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html" class="noExtIcon"><img src="images/windconditionsfinaloutput.png" class="medium" alt="Final REST API" /></a>
 
-You can view the file <a href="http://idratherbewriting.com/learnapidoc/assets/files/checkwindconditions.html">idratherbewriting.com/learnapidoc/assets/files/wind-weatherbit.html</a>.
+You can view the file <a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html">idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html</a>.
 
 ## Next section
 
 As you've gone through the exercise of using an API like a developer, you've gained a high-level understanding of how REST APIs work, what information developers need, how they might use an API, how they make requests, evaluate responses, and other details.
 
-With this background, it's time to switch gears and put on your technical writing hat. In the next section, [Documenting endpoints](docendpoints.html), you'll assume the task of [documenting a new endpoint](docapis_new_endpoint_to_doc.html) that was added to the weather API. You'll learn the 8 essential sections in endpoint reference documentation, the terminology to use, and formatting conventions for the reference information.
+With this background, it's time to switch gears and put on your technical writing hat. In the next section, [Documenting endpoints](docendpoints.html), you'll assume the task of [documenting a new endpoint](docapis_new_endpoint_to_doc.html) that was added to the weather API. You'll learn the essential sections in endpoint reference documentation, the terminology to use, and formatting conventions for the reference information.
 
 {% include random_ad.html %}
