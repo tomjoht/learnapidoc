@@ -1,8 +1,6 @@
 ---
 title: Documenting code samples and tutorials
 permalink: /docapis_codesamples_bestpractices.html
-categories:
-- api-doc
 keywords:
 course: "Documenting REST APIs"
 weight: 5.6
@@ -10,6 +8,10 @@ sidebar: docapis
 section: docnonref
 path1: /docnonref.html
 ---
+
+{% comment %} 
+{% include course_image.html url="" size="medium" border="true" filename="nonref_codetutorials" ext_print="png" ext_web="svg" alt="Code tutorials" caption="Code tutorials" %}
+{% endcomment %}
 
 As you write documentation for developers, you'll start to include more and more code samples. You might not include these more detailed code samples with the endpoints you document, but as you create tasks and more sophisticated workflows about how to use the API to accomplish a variety of tasks, you'll end up leveraging different endpoints and showing how to address a variety of scenarios.
 

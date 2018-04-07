@@ -9,6 +9,10 @@ section: docnonref
 path1: /docnonref.html
 ---
 
+{% comment %}
+{% include course_image.html url="" size="medium" border="true" filename="nonref_gettingstarted" ext_print="png" ext_web="svg" alt="Getting started" caption="Getting started" %}
+ {% endcomment %}
+
 Following the Overview section, you usually have a "Getting started" section that details the first steps users need to start using the API.
 
 {% if site.format == "web" %}

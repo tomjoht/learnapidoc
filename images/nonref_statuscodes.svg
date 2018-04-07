@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 850 566" enable-background="new 0 0 850 566" xml:space="preserve">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M134,117.2c-6.3,0-11.4-5.1-11.4-11.4c0-6.3,5.1-11.4,11.4-11.4
+	c6.3,0,11.4,5.1,11.4,11.4C145.3,112.1,140.2,117.2,134,117.2z M134,83c-12.6,0-22.8,10.2-22.8,22.8c0,12.6,10.2,22.8,22.8,22.8
+	c12.6,0,22.8-10.2,22.8-22.8C156.7,93.2,146.5,83,134,83z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M185.3,117.2c-6.3,0-11.4-5.1-11.4-11.4c0-6.3,5.1-11.4,11.4-11.4
+	c6.3,0,11.4,5.1,11.4,11.4C196.6,112.1,191.5,117.2,185.3,117.2z M185.3,83c-12.6,0-22.8,10.2-22.8,22.8c0,12.6,10.2,22.8,22.8,22.8
+	c12.6,0,22.8-10.2,22.8-22.8C208,93.2,197.8,83,185.3,83z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M236.6,117.2c-6.3,0-11.4-5.1-11.4-11.4c0-6.3,5.1-11.4,11.4-11.4
+	c6.3,0,11.4,5.1,11.4,11.4C247.9,112.1,242.8,117.2,236.6,117.2z M236.6,83c-12.6,0-22.8,10.2-22.8,22.8c0,12.6,10.2,22.8,22.8,22.8
+	c12.6,0,22.8-10.2,22.8-22.8C259.3,93.2,249.1,83,236.6,83z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M105.4,77.3h319.2v57H105.4V77.3z M265,316.7c-40.9,0-74.1-33.2-74.1-74.1
+	c0-40.9,33.2-74.1,74.1-74.1c40.9,0,74.1,33.2,74.1,74.1C339.2,283.5,305.9,316.7,265,316.7z M219.5,339.5c0-3.2,2.6-5.7,5.7-5.7
+	h74.1c3.2,0,5.7,2.6,5.7,5.7c0,3.2-2.6,5.7-5.7,5.7h-74.1C222,345.2,219.5,342.6,219.5,339.5z M327.7,368H196.6
+	c-3.2,0-5.7-2.5-5.7-5.7s2.6-5.7,5.7-5.7h131.1c3.2,0,5.7,2.6,5.7,5.7S330.9,368,327.7,368z M94,407.9h342v-342H94V407.9z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M297.6,267.1c2.2,2.2,2.2,5.8,0,8.1c-1.1,1.1-2.6,1.7-4,1.7c-1.5,0-2.9-0.6-4-1.7
+	L265,250.7l-24.5,24.5c-1.1,1.1-2.6,1.7-4,1.7c-1.5,0-2.9-0.6-4-1.7c-2.2-2.2-2.2-5.8,0-8.1l24.5-24.5l-24.5-24.5
+	c-2.2-2.2-2.2-5.8,0-8.1c2.2-2.2,5.8-2.2,8.1,0l24.5,24.5l24.5-24.5c2.2-2.2,5.8-2.2,8.1,0c2.2,2.2,2.2,5.8,0,8.1l-24.5,24.5
+	L297.6,267.1z M265,179.9c-34.6,0-62.7,28.1-62.7,62.7c0,34.6,28.1,62.7,62.7,62.7s62.7-28.1,62.7-62.7
+	C327.7,208,299.6,179.9,265,179.9z"/>
+<text transform="matrix(1 0 0 1 480.9948 370.512)" font-family="'CourierNewPSMT'" font-size="32">500 server error</text>
+<text transform="matrix(1 0 0 1 480.9944 105.7935)" font-family="'CourierNewPSMT'" font-size="32">200 ok</text>
+<text transform="matrix(1 0 0 1 480.9948 171.9731)" font-family="'CourierNewPSMT'" font-size="32">400 bad request</text>
+<text transform="matrix(1 0 0 1 480.9947 238.1527)" font-family="'CourierNewPSMT'" font-size="32">404 not found</text>
+<text transform="matrix(1 0 0 1 480.9944 304.3323)" font-family="'CourierNewPSMT'" font-size="32">403 forbidden</text>
+<text transform="matrix(1 0 0 1 94.8414 480.9749)"><tspan x="0" y="0" font-family="'ArialMT'" font-size="42">Error codes/messages should </tspan><tspan x="0" y="50.4" font-family="'ArialMT'" font-size="42">help users recover from failure.</tspan></text>
+<line fill="#FF0000" stroke="#FEFF6A" stroke-width="11" stroke-linecap="round" stroke-miterlimit="10" x1="225" y1="339.5" x2="301" y2="339.5"/>
+<line fill="#FF0000" stroke="#FEFF6A" stroke-width="14" stroke-linecap="round" stroke-miterlimit="10" x1="196" y1="363" x2="328" y2="363"/>
+</svg>

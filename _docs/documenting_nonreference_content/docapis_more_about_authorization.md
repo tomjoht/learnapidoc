@@ -7,6 +7,10 @@ section: docnonref
 path1: /docnonref.html
 ---
 
+{% comment %}
+{% include course_image.html url="" size="medium" border="true" filename="nonref_authentication" ext_print="png" ext_web="svg" alt="Authentication and authorization" caption="Authentication and authorization" %}
+ {% endcomment %}
+
 Before users can make requests with your API, they'll usually need to register for some kind of application key, or learn other ways to authenticate the requests.
 
 APIs vary in the way they authenticate users. Some APIs just require you to include an API key in the request header, while other APIs require elaborate security due to the need to protect sensitive data, prove identity, and ensure the requests aren't tampered with.

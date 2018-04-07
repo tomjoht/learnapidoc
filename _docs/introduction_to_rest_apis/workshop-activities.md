@@ -92,7 +92,7 @@ Slides: [OpenAPI and Swagger](http://idratherbewriting.com/openapi-and-swagger/#
 ### Activity: OpenAPI with Stoplight
 
 1.  Open [v3 next Stoplight app](https://next.stoplight.io/). (You can also use the [Desktop app](https://github.com/stoplightio/desktop/releases/latest))
-2.  From main.oas, open the Code tab and paste in content for this 2.0 JSON Open API definition: [openapi_wewathermap_swagger20.json](http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_wewathermap_swagger20.json).
+2.  From main.oas, open the Code tab and paste in content for this 2.0 JSON Open API definition: [openweathermap_swagger20.json](http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openweathermap_swagger20.json).
 3.  Edit, explore Basics, Requests, Responses sections.
 4.  In the Responses area, click **Generate from JSON**, paste in complex JSON snippet into the Responses area, then click **Generate!**
 

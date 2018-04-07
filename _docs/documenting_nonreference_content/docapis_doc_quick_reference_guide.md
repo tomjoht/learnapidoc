@@ -9,6 +9,10 @@ section: docnonref
 path1: /docnonref.html
 ---
 
+{% comment %}
+{% include course_image.html url="" size="medium" border="true" filename="nonref_quickreference" ext_print="png" ext_web="svg" alt="Quick reference" caption="Quick reference" %}
+ {% endcomment %}
+
 For those power users who just want to glance at the content to understand it, provide a quick reference guide. The quick reference guide serves a different function from the getting started guide. The getting started guide helps beginners get oriented; the quick reference guide helps advanced users quickly find details about endpoints and other API details.
 
 * TOC

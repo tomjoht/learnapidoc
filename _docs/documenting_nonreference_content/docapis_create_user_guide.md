@@ -1,8 +1,6 @@
 ---
 title: User guide tasks
 permalink: /docapis_create_user_guide.html
-categories:
-- api-doc
 keywords:
 course: "Documenting REST APIs"
 weight: 5.0

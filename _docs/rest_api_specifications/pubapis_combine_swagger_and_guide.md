@@ -48,7 +48,7 @@ If you have a lot of extra information and notes like this in your reference doc
 
 ## Option 1: Embed Swagger UI in your docs
 
-One solution is to embed Swagger UI in your docs. You can see an example of this here: [Swagger UI Demo 2 (embedded)](pubapis_swagger_demo.html). It's pretty easy to embed Swagger into an HTMl page. The latest version of Swagger has a more responsive, liquid design. It almost looks *designed* to be embedded into another site.
+One solution is to embed Swagger UI in your docs. You can see an example of this here: [Swagger UI Demo](pubapis_swagger_demo.html). It's pretty easy to embed Swagger into an HTMl page. The latest version of Swagger has a more responsive, liquid design. It almost looks *designed* to be embedded into another site.
 
 The only problem with the embedding approach is that some of the Models aren't constrained within their container, so they just expand beyond their limits. Try expanding the Models section, particularly the weatherdata response, in the demo and you'll see what I'm talking about.
 

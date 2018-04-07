@@ -11,7 +11,7 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-hen you're testing endpoints with different parameters, you can use one of the many GUI REST clients available to make the requests. You can also use [curl](docapis_install_curl.html) (which we'll cover soon), but GUI clients tend to simplify testing with REST APIs.
+When you're testing endpoints with different parameters, you can use one of the many GUI REST clients available to make the requests. You can also use [curl](docapis_install_curl.html) (which we'll cover soon), but GUI clients tend to simplify testing with REST APIs.
 
 * TOC
 {:toc}

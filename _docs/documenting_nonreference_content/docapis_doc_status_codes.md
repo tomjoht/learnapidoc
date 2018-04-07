@@ -8,6 +8,9 @@ sidebar: docapis
 section: docnonref
 path1: /docnonref.html
 ---
+{% comment %}
+{% include course_image.html url="" size="medium" border="true" filename="nonref_statuscodes" ext_print="png" ext_web="svg" alt="Status codes" caption="Status codes" %}
+ {% endcomment %}
 
 Status and error codes show a code number in the response header that indicates the general classification of the response &mdash; for example, whether the request was successful (200), resulted in an server error (500), had authorization issues (403), and so on.
 

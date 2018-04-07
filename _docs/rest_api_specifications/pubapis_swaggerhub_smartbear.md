@@ -34,9 +34,9 @@ SwaggerHub is used by more than 15,000 software teams across the globe. As the O
 
 ## SwaggerHub Intro and Dashboard
 
-[Smartbear](https://smartbear.com/) &mdash; the same company that maintains and develops the open source Swagger tooling ([Swagger Editor](https://swagger.io/swagger-editor/), [Swagger UI](https://swagger.io/swagger-ui/), [Swagger Codegen](https://swagger.io/swagger-codegen/), and others), and that formed the [OpenAPI Initiative](https://www.openapis.org/) which leads the evolution of the [Swagger (OpenAPI) specification](https://github.com/OAI/OpenAPI-Specification/) &mdash; developed SwaggerHub as a way to help teams collaborate around the OpenAPI spec.
+[Smartbear](https://smartbear.com/) is the company that maintains and develops the open source Swagger tooling ([Swagger Editor](https://swagger.io/swagger-editor/), [Swagger UI](https://swagger.io/swagger-ui/), [Swagger Codegen](https://swagger.io/swagger-codegen/), and others. They also formed the [OpenAPI Initiative](https://www.openapis.org/), which leads the evolution of the [Swagger (OpenAPI) specification](https://github.com/OAI/OpenAPI-Specification/).
 
-Many of the client and server SDKs can be auto-generated from SwaggerHub, and there are a host of additional features you can leverage as you design, test, and publish your API.
+This same company, Smartbear, developed SwaggerHub as a way to help teams collaborate around the OpenAPI spec. Many of the client and server SDKs can be auto-generated from SwaggerHub, and there are a host of additional features you can leverage as you design, test, and publish your API.
 
 To get started with SwaggerHub, go to [swaggerhub.com](https://swaggerhub.com/) and create an account or sign in with your GitHub credentials. After signing in, you see the SwaggerHub dashboard.
 

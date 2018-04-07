@@ -59,65 +59,61 @@ Let's say you wanted to print part of the JSON (the wind speed data) to the page
 I'm assuming you're starting with the [same code](http://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html) from the [previous tutorial &mdash; Use the JSON from the response payload](docapis_json_console.html). That code looks like this:
 
 ```html
+<!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<head>
-  <meta charset="UTF-8">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<title>Sample Page</title>
+   <head>
+      <meta charset="utf-8">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <title>Sample Page</title>
+      <script>
+         var settings = {
+           "async": true,
+           "crossDomain": true,
+           "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+           "method": "GET"
+         }
 
-<script>
-var settings = {
-  "async": true,
-  "crossDomain": true,
-  "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
-  "method": "GET"
-}
-
-$.ajax(settings).done(function (response) {
-  console.log(response);
-});
-</script>
-</head>
-<body>
-<h1>Sample Page</h1>
-</body>
+         $.ajax(settings).done(function (response) {
+           console.log(response);
+         });
+      </script>
+   </head>
+   <body>
+      <h1>Sample Page</h1>
+   </body>
 </html>
 ```
 
 To print a specific property from the response to the page, modify your code to look like this:
 
 ```html
+<!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<head>
-  <meta charset="UTF-8">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<title>Sample Page</title>
+   <head>
+      <meta charset="utf-8">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <title>Sample Page</title>
+      <script>
+         var settings = {
+           "async": true,
+           "crossDomain": true,
+           "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+           "method": "GET"
+         }
 
-<script>
-var settings = {
-  "async": true,
-  "crossDomain": true,
-  "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
-  "method": "GET"
-}
+         $.ajax(settings).done(function (response) {
+           console.log(response);
 
-$.ajax(settings).done(function (response) {
-  console.log(response);
+           var content = response.wind.speed;
+           $("#windSpeed").append(content);
 
-  var content = response.wind.speed;
-  $("#windSpeed").append(content);
-
-});
-</script>
-</head>
-<body>
-<h1>Sample Page</h1>
-
-<div id="windSpeed">Wind speed: </div>
-
-</body>
+         });
+      </script>
+   </head>
+   <body>
+      <h1>Sample Page</h1>
+      <div id="windSpeed">Wind speed: </div>
+   </body>
 </html>
 ```
 

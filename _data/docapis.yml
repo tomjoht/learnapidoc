@@ -137,11 +137,23 @@ folders:
   - title: "Documenting status and error codes"
     jurl: /docapis_doc_status_codes.html
 
+  # - title: Rate limiting and thresholds
+  #   jurl: /docapis_rate_limiting_and_thresholds.html
+
   - title: Documenting code samples and tutorials
     jurl: /docapis_codesamples_bestpractices.html
 
-  - title: How to create the quick reference guide
+  # - title: SDKs and sample apps
+  #   jurl: /docapis_sdks_and_sample_apps.html
+
+  - title: The quick reference guide
     jurl: /docapis_doc_quick_reference.html
+
+  # - title: Best practices with the API
+  #   jurl: /docapis_best_practices_with_api.html
+  #
+  # - title: Glossary section
+  #   jurl: /docapis_glossary_section.html
 
   - title: Next phase of course
     jurl: /docapis_completion.html
@@ -243,6 +255,9 @@ folders:
 
   - title: SwaggerHub introduction and tutorial
     jurl: /pubapis_swaggerhub_smartbear.html
+
+  # - title: Stoplight &mdash; visual modeling tools for creating your spec
+  #   jurl: /stoplight-tutorial.html
 
   - title: Other tools to parse and display OpenAPI specs
     jurl: /pubapis_other_openapi_parsers.html

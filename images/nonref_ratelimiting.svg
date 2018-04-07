@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 850 566" enable-background="new 0 0 850 566" xml:space="preserve">
+<polygon fill="none" stroke="#FF0000" stroke-width="5.3632" stroke-miterlimit="10" stroke-opacity="0.37" points="569.1,72.6 
+	627.8,115 627.8,127.5 574.9,154.7 "/>
+<g>
+	<path opacity="0.44" fill="#C61818" d="M569,135.1c0,10.2-1.3,21.2-2.7,24.3S549,165,538.8,165H206.2c-10.2,0-21.3-1.3-24.4-2.6
+		c-3.1-1.3-5.8-17-5.8-27.3V91c0-10.2,1.2-21.3,2.6-24.3c1.4-3,17.3-5.7,27.5-5.7h332.6c10.2,0,21.3,1.3,24.4,2.7S569,80.8,569,91
+		V135.1z"/>
+</g>
+<line fill="#FF0000" x1="176" y1="162" x2="569" y2="162"/>
+<path fill="none" stroke="#000000" stroke-width="17.0703" stroke-miterlimit="10" d="M568.8,407.4c0,23.2-19,42.2-42.2,42.2H218.4
+	c-23.2,0-42.2-19-42.2-42.2V99.2c0-23.2,19-42.2,42.2-42.2h308.2c23.2,0,42.2,19,42.2,42.2L568.8,407.4z"/>
+<line fill="none" stroke="#000000" stroke-width="17.0703" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="229" y1="243.7" x2="229" y2="379.6"/>
+<line fill="none" stroke="#000000" stroke-width="17.0703" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="288.8" y1="304.8" x2="288.8" y2="379.6"/>
+<line fill="none" stroke="#000000" stroke-width="17.0703" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="348.6" y1="201.6" x2="348.6" y2="379.6"/>
+<line fill="none" stroke="#000000" stroke-width="17.0703" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="408.3" y1="137.1" x2="408.3" y2="379.6"/>
+<line fill="none" stroke="#000000" stroke-width="17.0703" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="468.1" y1="234.4" x2="468.1" y2="379.6"/>
+<line fill="none" stroke="#000000" stroke-width="17.0703" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="523.9" y1="310.2" x2="523.9" y2="379.6"/>
+<polyline fill="none" stroke="#000000" stroke-width="17.0703" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	221,169.3 276.8,243.7 330,169.3 408.3,91.8 478.8,160 523.9,270.3 "/>
+<line fill="none" stroke="#000000" stroke-width="17.0703" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="205.8" y1="404.5" x2="539.2" y2="404.5"/>
+<text transform="matrix(1 0 0 1 642.9437 131.4299)" font-family="'ArialMT'" font-size="34">threshold</text>
+<text transform="matrix(1 0 0 1 73.8839 526.0577)" font-family="'ArialMT'" font-size="46">Limits to Pro plan: 10,000 calls/day</text>
+<g>
+	<g>
+		<line fill="none" stroke="#000000" stroke-width="2.0189" stroke-miterlimit="10" x1="623.9" y1="129.4" x2="622.6" y2="130.2"/>
+		
+			<line fill="none" stroke="#000000" stroke-width="2.0189" stroke-miterlimit="10" stroke-dasharray="3.071,3.071" x1="619.9" y1="131.6" x2="567.5" y2="160.5"/>
+		<line fill="none" stroke="#000000" stroke-width="2.0189" stroke-miterlimit="10" x1="566.1" y1="161.3" x2="564.8" y2="162"/>
+	</g>
+</g>
+<line fill="none" stroke="#000000" stroke-width="2.2295" stroke-miterlimit="10" stroke-dasharray="3.3442" x1="627.8" y1="114.1" x2="568.7" y2="72.4"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3" x1="627" y1="116" x2="627" y2="129"/>
+<line fill="none" stroke="#828282" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="6" x1="0" y1="166" x2="850" y2="166"/>
+</svg>
