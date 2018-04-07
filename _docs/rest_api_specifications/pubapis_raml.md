@@ -397,7 +397,7 @@ types:
         default: json
         example:
           value: json
-        displayName: Mode
+        displayname: mode
         description: '**Mode**. *Example: html*. Determines format of response. Possible values are `xml` and `html`. If mode parameter is empty the format is `json` by default.'
         type: string
         enum:

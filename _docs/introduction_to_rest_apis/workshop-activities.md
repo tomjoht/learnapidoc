@@ -144,7 +144,7 @@ Slides: [OpenAPI and Swagger](http://idratherbewriting.com/openapi-and-swagger/#
 ### Activity: Swagger Editor
 
 1. Paste [this YAML file](http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) into [Swagger Editor](https://editor.swagger.io/) and make updates.
-2. Go to [this SwaggerHub API](https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/2.5). Observe Generate Client SDK options.
+2. Go to [this SwaggerHub API](https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/). Observe Generate Client SDK options.
 
 ### Activity: Swagger UI
 

@@ -183,7 +183,7 @@ paths:
           enum: [ar, bg, ca, cz, de, el, en, fa, fi, fr, gl, hr, hu, it, ja, kr, la, lt, mk, nl, pl, pt, ro, ru, se, sk, sl, es, tr, ua, vi, zh_cn, zh_tw]
           default: "en"
         example: "en"
-      - name: Mode
+      - name: mode
         in: query
         description: "**Mode**. *Example: html*. Determines format of response. Possible values are `xml` and `html`. If mode parameter is empty the format is `json` by default."
         schema:

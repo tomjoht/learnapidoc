@@ -6,3 +6,4 @@ pdf/docapis.pdf
 /mobi/
 *.mobi
 mobi/docapis.mobi
+reindex.sh
