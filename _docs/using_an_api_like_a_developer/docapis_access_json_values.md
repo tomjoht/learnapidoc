@@ -154,7 +154,7 @@ In the previous section, you retrieved a value from a JSON object. Now let's get
       "description": "few clouds",
       "icon": "02d"
     }
-  ],
+  ]
   ...
 ```
 

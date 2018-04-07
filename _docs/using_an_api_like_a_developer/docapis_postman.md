@@ -91,7 +91,7 @@ Enter details into Postman for the [5 day forecast](https://openweathermap.org/f
 
 The 5 day forecast request looks like this:
 
-```
+```bash
 http://api.openweathermap.org/data/2.5/forecast?zip=95050&appid=APIKEY&units=imperial
 ```
 
@@ -118,25 +118,25 @@ When you make the following requests, insert your own values for the <code>CLIEN
 
 Get the weather forecast for your area using the [observations endpoint](https://www.aerisweather.com/support/docs/api/reference/endpoints/observations/):
 
-```
+```bash
 http://api.aerisapi.com/observations/Santa+Clara,CA?client_id=CLIENTID&client_secret=CLIENTSECRET&limit=1
 ```
 
 Get the weather from a city on the equator &mdash; Chimborazo, Ecuador using the same [observations endpoint](https://www.aerisweather.com/support/docs/api/reference/endpoints/observations/):
 
-```
+```bash
 http://api.aerisapi.com/observations/Chimborazo,Ecuador?client_id=CLIENTID&client_secret=CLIENTSECRET&limit=1
 ```
 
 Find out if all the country music in Knoxville, Tennessee is giving people migraines using the [indices endpoint](https://www.aerisweather.com/support/docs/api/reference/endpoints/indices/):
 
-```
+```bash
 http://api.aerisapi.com/indices/migraine/Knoxville,TN?client_id=CLIENTID&client_secret=CLIENTSECRET
 ```
 
 You're thinking of moving to Arizona, but you want to find a place that's cool. Use the [normals endpoint](https://www.aerisweather.com/support/docs/api/reference/endpoints/normals/):
 
-```
+```bash
 http://api.aerisapi.com/normals/flagstaff,az?client_id=CLIENTID&client_secret=CLIENTSECRET&limit=5&filter=hassnow
 ```
 

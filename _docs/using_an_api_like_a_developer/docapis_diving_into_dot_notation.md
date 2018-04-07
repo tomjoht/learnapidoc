@@ -54,62 +54,59 @@ In this activity, you'll practice accessing different values through dot notatio
 1. Create a new file in your text editor and insert the following into it:
 
    ```html
-    <!DOCTYPE html>
+   <!DOCTYPE html>
     <html>
-    <head>
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <meta charset="utf-8">
-      <title>JSON dot notation practice</title>
+      <head>
+         <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+         <meta charset="utf-8">
+         <title>JSON dot notation practice</title>
+         <script>
+            $( document ).ready(function() {
 
-    <script>
-    $( document ).ready(function() {
-
-       var john = {
-        "hair": "brown",
-        "eyes": "green",
-        "shoes": {
-            "brand": "nike",
-            "type": "basketball"
-        },
-        "favcolors": [
-            "azure",
-            "goldenrod"
-        ],
-        "children": [
-            {
-                "child1": "Sarah",
-                "age": 2
-            },
-            {
-                "child2": "Jimmy",
-                "age": 5
+               var john = {
+                "hair": "brown",
+                "eyes": "green",
+                "shoes": {
+                    "brand": "nike",
+                    "type": "basketball"
+                },
+                "favcolors": [
+                    "azure",
+                    "goldenrod"
+                ],
+                "children": [
+                    {
+                        "child1": "Sarah",
+                        "age": 2
+                    },
+                    {
+                        "child2": "Jimmy",
+                        "age": 5
+                    }
+                ]
             }
-        ]
-    }
 
-    var sarahjson = john.children[0].child1;
-    var greenjson = john.children[0].child1;
-    var nikejson = john.children[0].child1;
-    var goldenrodjson = john.children[0].child1;
-    var jimmyjson = john.children[0].child1;
+            var sarahjson = john.children[0].child1;
+            var greenjson = john.children[0].child1;
+            var nikejson = john.children[0].child1;
+            var goldenrodjson = john.children[0].child1;
+            var jimmyjson = john.children[0].child1;
 
-    $("#sarah").append(sarahjson);
-    $("#green").append(greenjson);
-    $("#nike").append(nikejson);
-    $("#goldenrod").append(goldenrodjson);
-    $("#jimmy").append(jimmyjson);
-    });
-    </script>
-    </head>
-    <body>
-
-        <div id="sarah">Sarah: </div>
-        <div id="green">green: </div>
-        <div id="nike">nike: </div>
-        <div id="goldenrod">goldenrod: </div>
-        <div id="jimmy">Jimmy: </div>
-
-    </body>
+            $("#sarah").append(sarahjson);
+            $("#green").append(greenjson);
+            $("#nike").append(nikejson);
+            $("#goldenrod").append(goldenrodjson);
+            $("#jimmy").append(jimmyjson);
+            });
+         </script>
+      </head>
+      <body>
+         <div id="sarah">Sarah: </div>
+         <div id="green">green: </div>
+         <div id="nike">nike: </div>
+         <div id="goldenrod">goldenrod: </div>
+         <div id="jimmy">Jimmy: </div>
+      </body>
     </html>
    ```
 
@@ -129,58 +126,49 @@ Copy the following code into a basic HTML page:
 
 ```html
 <html>
-<head>
-<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-<link rel="stylesheet"  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+   <head>
+      <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <link rel="stylesheet"  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+      <title>OpenWeatherMap Integration</title>
+      <style>
+         #wind_direction, #wind_speed, #wind_speed_unit, #wind_degree_unit, #weather_conditions, #main_temp_unit, #main_temp {color: red; font-weight: bold;}
+         body {margin:20px;}
+      </style>
+   </head>
+   <body>
+      <script>
+         function checkWind() {
+           var settings = {
+             "async": true,
+             "crossDomain": true,
+             "dataType": "json",
+             "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050,us&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+             "method": "GET"
+         }
 
-  <title>OpenWeatherMap Integration</title>
-<style>
-   #wind_direction, #wind_speed, #wind_speed_unit, #wind_degree_unit, #weather_conditions, #main_temp_unit, #main_temp {color: red; font-weight: bold;}
-   body {margin:20px;}
-</style>
-  </head>
-<body>
+           $.ajax(settings)
+         
+           .done(function (response) {
+             console.log(response);
 
-
-<script>
-
-function checkWind() {
-  var settings = {
-    "async": true,
-    "crossDomain": true,
-    "dataType": "json",
-  "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050,us&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
-    "method": "GET"
-}
-
-  $.ajax(settings)
-
-  .done(function (response) {
-    console.log(response);
-
-$("#wind_speed").append (response.wind.speed);
-$("#wind_direction").append (response.wind.deg);
-$("#main_temp").append (response.main.temp);
-$("#weather_conditions").append (response.weather[0].main);
-$("#wind_speed_unit").append (" MPH");
-$("#wind_degree_unit").append (" degrees");
-$("#main_temp_unit").append (" F");
-});
-}
-</script>
-
-
-<button type="button" onclick="checkWind()" class="btn btn-danger weatherbutton">Check wind conditions</button>
-
-<h2>Wind conditions for Santa Clara</h2>
-
-<span><b>Temperature: </b></span><span id="main_temp"></span><span id="main_temp_unit"></span><br/>
-<span><b>Wind speed: </b></span><span id="wind_speed"></span> <span id="wind_speed_unit"></span><br/>
-<span><b>Wind direction: </b></span><span id="wind_direction"></span><span id="wind_degree_unit"></span><br/>
-<span><b>Current conditions: </b></span><span id="weather_conditions"></span>
-</body>
+         $("#wind_speed").append (response.wind.speed);
+         $("#wind_direction").append (response.wind.deg);
+         $("#main_temp").append (response.main.temp);
+         $("#weather_conditions").append (response.weather[0].main);
+         $("#wind_speed_unit").append (" MPH");
+         $("#wind_degree_unit").append (" degrees");
+         $("#main_temp_unit").append (" F");
+         });
+         }
+      </script>
+      <button type="button" onclick="checkWind()" class="btn btn-danger weatherbutton">Check wind conditions</button>
+      <h2>Wind conditions for Santa Clara</h2>
+      <span><b>Temperature: </b></span><span id="main_temp"></span><span id="main_temp_unit"></span><br/>
+      <span><b>Wind speed: </b></span><span id="wind_speed"></span> <span id="wind_speed_unit"></span><br/>
+      <span><b>Wind direction: </b></span><span id="wind_direction"></span><span id="wind_degree_unit"></span><br/>
+      <span><b>Current conditions: </b></span><span id="weather_conditions"></span>
+   </body>
 </html>
-
 ```
 A few things are different here, but it's essentially the same code:
 

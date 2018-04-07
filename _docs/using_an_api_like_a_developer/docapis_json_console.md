@@ -82,28 +82,27 @@ For this activity, we'll use JavaScript to display the response on a web page. Y
     ```html
     <!DOCTYPE html>
     <html>
-    <meta charset="UTF-8">
-    <head>
-      <meta charset="UTF-8">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <title>Sample Page</title>
+       <meta charset="UTF-8">
+       <head>
+          <meta charset="UTF-8">
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+          <title>Sample Page</title>
+          <script>
+             var settings = {
+               "async": true,
+               "crossDomain": true,
+               "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+               "method": "GET"
+             }
 
-    <script>
-    var settings = {
-      "async": true,
-      "crossDomain": true,
-      "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
-      "method": "GET"
-    }
-
-    $.ajax(settings).done(function (response) {
-      console.log(response);
-    });
-    </script>
-    </head>
-    <body>
-      <h1>Sample Page</h1>
-    </body>
+             $.ajax(settings).done(function (response) {
+               console.log(response);
+             });
+          </script>
+       </head>
+       <body>
+          <h1>Sample Page</h1>
+       </body>
     </html>
     ```
 
