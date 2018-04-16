@@ -1,0 +1,186 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "Sunset and sunrise times API",
+    "description": "We offer a free API that provides sunset and sunrise times for a given latitude and longitude."
+  },
+  "host": "api.sunrise-sunset.org",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/json": {
+      "get": {
+        "description": "Get the sunset and sunrise information for a given location based on latitude and longitude parameters.",
+        "summary": "Get sunrise/sunset times",
+        "operationId": "JsonGet",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "lat",
+            "in": "query",
+            "required": true,
+            "type": "number",
+            "format": "double",
+            "exclusiveMaximum": false,
+            "exclusiveMinimum": false,
+            "description": "Latitude in decimal degrees."
+          },
+          {
+            "name": "lng",
+            "in": "query",
+            "required": true,
+            "type": "number",
+            "format": "double",
+            "exclusiveMaximum": false,
+            "exclusiveMinimum": false,
+            "description": "Longitude in decimal degrees."
+          },
+          {
+            "name": "date",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "description": "Date in YYYY-MM-DD format. Also accepts other date formats and even relative date formats. If not present, date defaults to current date."
+          },
+          {
+            "name": "callback",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "description": "Callback function name for JSONP response. Optional."
+          },
+          {
+            "name": "formatted",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "exclusiveMaximum": false,
+            "exclusiveMinimum": false,
+            "description": "0 or 1 (1 is default). Time values in response will be expressed following ISO 8601 and day_length will be expressed in seconds."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Sunrise and sunset times response",
+            "schema": {
+              "$ref": "#/definitions/Response"
+            },
+            "examples": {}
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/json?lat=37.3708698&lng=-122.037593&date=today&formatted=1"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Test Get sunrise/sunset times",
+            "x-testDescription": "Get the sunset and sunrise information for a given location based on latitude and longitude parameters."
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Response": {
+      "title": "Response",
+      "description": "AQI response",
+      "type": "object",
+      "properties": {
+        "results": {
+          "$ref": "#/definitions/Results"
+        },
+        "status": {
+          "description": "Four possible statuses:\n \n* `OK`: No errors occurred. \n* `INVALID_REQUEST`: Either lat or lng parameters are missing or invalid. \n* `INVALID_DATE`: The date parameter is missing or invalid; \n* `UNKNOWN_ERROR`: The request could not be processed due to a server error. The request may succeed if you try again.",
+          "example": "OK",
+          "type": "string"
+        }
+      }
+    },
+    "Results": {
+      "title": "Results",
+      "type": "object",
+      "properties": {
+        "sunrise": {
+          "description": "time of sunrise",
+          "example": "7:27:02 AM",
+          "type": "string"
+        },
+        "sunset": {
+          "description": "time of sunset",
+          "example": "5:05:55 PM",
+          "type": "string"
+        },
+        "solar_noon": {
+          "description": "time when sun is at apex",
+          "example": "12:16:28 PM",
+          "type": "string"
+        },
+        "day_length": {
+          "description": "length of the day",
+          "example": "9:38:53",
+          "type": "string"
+        },
+        "civil_twilight_begin": {
+          "description": "time when civil twilight begins",
+          "example": "6:58:14 AM",
+          "type": "string"
+        },
+        "civil_twilight_end": {
+          "description": "time when civil twilight ends",
+          "example": "5:34:43 PM",
+          "type": "string"
+        },
+        "nautical_twilight_begin": {
+          "description": "time when nautical twilight begins",
+          "example": "6:25:47 AM",
+          "type": "string"
+        },
+        "nautical_twilight_end": {
+          "description": "time when nautical twilight ends",
+          "example": "6:07:10 PM",
+          "type": "string"
+        },
+        "astronomical_twilight_begin": {
+          "description": "time when astronomical twilight begins",
+          "example": "5:54:14 AM",
+          "type": "string"
+        },
+        "astronomical_twilight_end": {
+          "description": "time when astronomical twilight ends",
+          "example": "6:38:43 PM",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

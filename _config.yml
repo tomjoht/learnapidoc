@@ -15,6 +15,12 @@ exclude:
   - pdf
 format: web
 
+plugins:
+  - jekyll-sitemap
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-paginate
+
 markdown: kramdown
 kramdown:
  input: GFM

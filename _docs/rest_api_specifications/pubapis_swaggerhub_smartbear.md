@@ -160,6 +160,6 @@ Great tools aren’t free. SwaggerHub does [cost money](https://swaggerhub.com/
 {: .tip}
 To read more about SwaggerHub, checkout my blog post [SwaggerHub: A collaborative platform for working on OpenAPI/Swagger specification files, and more](http://idratherbewriting.com/2017/10/05/swaggerhub-collaborative-platform-for-swagger-openapi-projects).
 
-*Note that SwaggerHub is one of the sponsors of this site.*
+<small>Note that Smartbear is one of the sponsors of my site.</small>
 
 {% include random_ad.html %}
