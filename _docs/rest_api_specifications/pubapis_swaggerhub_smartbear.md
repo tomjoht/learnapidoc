@@ -3,7 +3,7 @@ title: "SwaggerHub introduction and tutorial"
 permalink: /pubapis_swaggerhub_smartbear.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.91
+weight: 8.8
 section: restapispecifications
 path1: /restapispecifications.html
 ---

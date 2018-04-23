@@ -250,9 +250,6 @@ folders:
   - title: Swagger UI Demo
     jurl: /pubapis_swagger_demo.html
 
-  - title: Integrating Swagger UI with the rest of your docs
-    jurl: /pubapis_combine_swagger_and_guide.html
-
   - title: SwaggerHub introduction and tutorial
     jurl: /pubapis_swaggerhub_smartbear.html
 
@@ -265,14 +262,17 @@ folders:
   - title: Other tools to parse and display OpenAPI specs
     jurl: /pubapis_other_openapi_parsers.html
 
-  - title: More about YAML
-    jurl: /pubapis_yaml.html
+  - title: Integrating Swagger UI with the rest of your docs
+    jurl: /pubapis_combine_swagger_and_guide.html
 
   - title: RAML tutorial
     jurl: /pubapis_raml.html
 
   - title: API Blueprint tutorial
     jurl: /pubapis_api_blueprint.html
+
+  - title: More about YAML
+    jurl: /pubapis_yaml.html
 
 - title: Documenting native library APIs
   jurl: /nativelibraryapis.html
