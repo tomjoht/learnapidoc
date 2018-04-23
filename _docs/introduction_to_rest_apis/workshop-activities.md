@@ -91,7 +91,7 @@ Slides: [OpenAPI and Swagger](http://idratherbewriting.com/openapi-and-swagger/#
 
 ### Activity: OpenAPI with Stoplight
 
-1.  Open [v3 next Stoplight app](https://next.stoplight.io/). (You can also use the [Desktop app](https://github.com/stoplightio/desktop/releases/latest))
+1.  Open [v3 next Stoplight app](https://next.stoplight.io/). (You can also use the [Desktop app](https://github.com/stoplightio/desktop/releases/latest).)
 2.  From main.oas, open the Code tab and paste in content for this 2.0 JSON Open API definition: [openweathermap_swagger20.json](http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openweathermap_swagger20.json).
 3.  Edit, explore Basics, Requests, Responses sections.
 4.  In the Responses area, click **Generate from JSON**, paste in complex JSON snippet into the Responses area, then click **Generate!**
@@ -141,6 +141,11 @@ Slides: [OpenAPI and Swagger](http://idratherbewriting.com/openapi-and-swagger/#
     }
    ```
 
+   More details about Stoplight are available here:
+
+   * [Stoplight — visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html)
+   * [Activity: Use Stoplight to edit your OpenAPI spec](pubapis_stoplight_activity.html)
+
 ### Activity: Swagger Editor
 
 1. Paste [this YAML file](http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) into [Swagger Editor](https://editor.swagger.io/) and make updates.
@@ -159,6 +164,8 @@ Slides: [OpenAPI and Swagger](http://idratherbewriting.com/openapi-and-swagger/#
 Slides: [Non-reference content in API docs](http://idratherbewriting.com/nonref-content-api-docs/#/)
 
 ###  Activity: GitHub workflow
+
+This workflow is key for working with sample apps and code repositories.
 
 1.  Create new repo and initialize with readme. Clone repo locally using `git clone`.
 2.  Make update to readme file and push back into repo:
