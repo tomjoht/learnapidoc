@@ -66,28 +66,18 @@ If you're driving across the country and you want to listen to all audio combine
 <p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/denverapiworkshop_all.mp3" type="audio/mpeg" /></audio></p>
 </div>
 
-### Slides
+## Publishing API Docs
 
-If you just want to browse the slides, you can do so here:
+(This section wasn't included directly during the workshop but rather as a supporting presentation.)
 
-**Part I**:
+<iframe width="640" height="360" src="https://www.youtube.com/embed/__vSXJn-JQo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-<a href="http://idratherbewriting.com/intro-to-api-documentation/index.html"><img src="images/introapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+This is a presentation I gave to the WTD South Bay group -- more details are  [here](http://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/). This video covers the [Publishing API docs](http://idratherbewriting.com/learnapidoc/pubapis_overview.html) section in this course.
 
-**Part II**:
 
-<a href="http://idratherbewriting.com/openapi-and-swagger/#/"><img src="images/openapiswaggertitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+{: .tip}
 
-**Part III**:
-
-<a href="http://idratherbewriting.com/nonref-content-api-docs/#/"><img src="images/nonreftitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
-
-The slides are all stored on GitHub:
-
-* [intro-to-api-documentation](https://github.com/tomjoht/intro-to-api-documentation)
-* [openapi-and-swagger](https://github.com/tomjoht/intro-to-api-documentation)
-* [nonref-content-api-docs](https://github.com/tomjoht/intro-to-api-documentation)
-
+If you just want to browse the slides, see the [Course Slides](docapis_course_slides.html).
 
 ## Other API course recordings
 
@@ -102,12 +92,6 @@ I gave this presentation to the STC Silicon Valley chapter -- more details are [
 * [Introduction to REST APIs](http://idratherbewriting.com/learnapidoc/docapis_introtoapis.html)
 * [Using a REST API as a developer](http://idratherbewriting.com/learnapidoc/likeadeveloper.html)
 * [Documenting API reference topics](http://idratherbewriting.com/learnapidoc/docendpoints.html)
-
-### Publishing API docs
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/__vSXJn-JQo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-This is a presentation I gave to the WTD South Bay group -- more details are  [here](http://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/). This video covers the [Publishing API docs](http://idratherbewriting.com/learnapidoc/pubapis_overview.html) section in this course.
 
 ### Docs as code tools and workflows
 
