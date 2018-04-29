@@ -1,6 +1,8 @@
 {% if site.format == "pdf" or site.format == "kindle" %}
-<figure>{% if {{include.url}} %}<a target="_blank class="noExtIcon"" href="{{include.url}}">{% endif %}<img {% if {{include.size}} %} class="{{include.size}}"{% endif %} class="docimage {% if {{include.border}} == "true" %}border{% endif %}" src="images/{{include.filename}}.{{include.ext_print}}" alt="{{include.alt}}" />{% if {{include.url}} %}</a>{% endif %}{% if {{include.caption}}%}<figcaption>{{include.caption}}</figcaption>{% endif %}</figure>
+<figure>{% if {{include.url}} %}<a target="_blank class="noExtIcon" href="{{include.url}}">{% endif %}<img class="docimage {% if {{include.size}} %}{{include.size}}{% endif %} {% if {{include.border}} == "true" %}border{% endif %}" src="images/{{include.filename}}.{{include.ext_print}}" alt="{{include.alt}}" />{% if {{include.url}} %}</a>{% endif %}{% if {{include.caption}}%}<figcaption>{{include.caption}}</figcaption>{% endif %}</figure>
 
 {% elsif site.format == "web" %}
-<figure>{% if {{include.url}} %}<a target="_blank" class="noExtIcon" href="{{include.url}}">{% endif %}<img {% if {{include.size}} %} class="{{include.size}}"{% endif %} class="docimage {% if {{include.border}} == "true" %}border{% endif %}" src="images/{{include.filename}}.{{include.ext_web}}" alt="{{include.alt}}" />{% if {{include.url}} %}</a>{% endif %}{% if {{include.caption}}%}<figcaption>{{include.caption}}</figcaption>{% endif %}</figure>
+<figure>{% if {{include.url}} %}<a target="_blank" class="noExtIcon" href="{{include.url}}">{% endif %}<img class="docimage {% if {{include.size}} %}{{include.size}}{% endif %} {% if {{include.border}} == "true" %}border{% endif %}"
+ src="images/{{include.filename}}.{{include.ext_web}}" alt="{{include.alt}}" />{% if {{include.url}} %}</a>{% endif %}{% if {{include.caption}}%}<figcaption>{{include.caption}}</figcaption>{% endif %}</figure>
+
 {% endif %}

@@ -42,19 +42,19 @@ Here are a few sample API overviews:
 
 **Sendgrid**:
 
-<a href="https://sendgrid.com/docs/User_Guide/index.html" class="noExtIcon"><img src="images/sendgridoverview.png" alt="Sendgrid overview" /></a>
+{% include course_image.html url="https://sendgrid.com/docs/User_Guide/index.html" filename="sendgridoverview" ext_web="png" ext_print="png" alt="Sendgrid API overview" caption="Sendgrid API overview" %}
 
 The overview starts off with two key sections: "What is SendGrid?" and "Who is SendGrid for?" I like the straightforward approach. Even in the description of what SendGrid is, the authors don't assume everyone knows what an SMTP provider is, so they link out to Wikipedia. Overall, in about 10 seconds you can get an idea of what SendGrid is all about.
 
 **Lyft**
 
-<a href="https://developer.lyft.com/docs/overview" class="noExtIcon"><img src="images/lyftapioverview.png" alt="Lyft overview" /></a>
+{% include course_image.html url="https://developer.lyft.com/docs/overview" filename="lyftapioverview" ext_web="png" ext_print="png" alt="Lyft API overview" caption="Lyft API overview" %}
 
 Lyft's API overview starts out in a similar way, with sections titled "What is Lyft?" and "Why Use Lyft as a Developer." Their homepage also provides information on access, rate limits and throttling, and testing. The Lyft authors also recognize that each tech domain has its own lingo, so they provide a glossary up front.
 
 **IBM Watson Assistant**
 
-<a href="https://console.bluemix.net/docs/services/conversation/index.html#about" class="noExtIcon"><img src="images/ibmcloudoverview.png" alt="IBM Watson Assistant " /></a>
+{% include course_image.html url="https://console.bluemix.net/docs/services/conversation/index.html#about" filename="ibmcloudoverview" ext_web="png" ext_print="png" alt="IBM Watson Assistant" caption="IBM Watson Assistant" %}
 
 IBM Watson Assistant starts off with a brief summary of the service, followed by a high-level diagram of the system and the summary about how to implement it. Including a diagram of how your API works and how developers can implement it gives users a good grounding in what to expect, such as the level of complexity and time it will take to incorporate the API.
 
