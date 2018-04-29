@@ -3,7 +3,7 @@ title: Rate limiting and thresholds
 permalink: docapis_rate_limiting_and_thresholds.html
 keywords:
 course: "Documenting REST APIs"
-weight: 5.6
+weight: 5.5
 sidebar: docapis
 section: docnonref
 path1: /docnonref.html

@@ -3,7 +3,7 @@ title: Glossary section
 permalink: docapis_glossary_section.html
 keywords:
 course: "Documenting REST APIs"
-weight: 5.6
+weight: 5.9
 sidebar: docapis
 section: docnonref
 path1: /docnonref.html

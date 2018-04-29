@@ -3,7 +3,7 @@ title: FAQ
 permalink: docapis_faq.html
 keywords:
 course: "Documenting REST APIs"
-weight: 5.6
+weight: 5.91
 sidebar: docapis
 section: docnonref
 path1: /docnonref.html
