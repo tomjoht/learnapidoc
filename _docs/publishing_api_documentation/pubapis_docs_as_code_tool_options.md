@@ -9,17 +9,19 @@ path1: /publishingapis.html
 redirect_from:
 - /learnapidoc/pubapis_other_tool_options.html
 - /learnapidoc/pubapis_docs_as_code_tool_options.html
+- /learnapidoc/pubapis_other_openapi_parsers.html
 ---
 
 In the developer documentation space, you have many tool options for creating and publishing documentation, and there’s no clear industry standard. Different tools may better suit different environments, skill sets, products, and requirements. On this page, I've listed the most common authoring tools related to the developer documentation space.
 
-I've sorted these tools into three main groups:
+I've sorted these tools into several main groups:
 
 * **[Static site generators](#staticsitegenerators)**: Used to author content and build the web output.
 * **[Hosting and deployment options](#hostinganddeployment)**: Used to build, deploy, and host the web output.
 * **[CMS platforms (mostly headless CMSs)](#cmsplatforms)**: Provides an online GUI for authoring/publishing. In many cases, content is stored in plain text files and pulled in from GitHub.
+* **[Tools for reading the OpenAPI specification](#openapitools):** Used for reading and displaying content formatted according to the [OpenAPI specification](pubapis_openapi_tutorial_overview.html).
 
-Note that the tools below are particularly useful for writing and deploying the [non-reference content](docnonref.html) in your project. For tools that will read an [OpenAPI specification document](pubapis_swagger_intro.html) and generate interactive reference documentation, see [Other tools to parse and display OpenAPI specs](pubapis_other_openapi_parsers.html).
+Note that the tools below are particularly useful for writing and deploying the [non-reference content](docnonref.html) in your project. For tools that will read an [OpenAPI specification document](pubapis_swagger_intro.html) and generate interactive reference documentation, see [Other tools to parse and display OpenAPI specs](pubapis_docs_as_code_tool_options.html).
 
 {: .note}
 As explained in [Docs-as-code tools](pubapis_docs_as_code.html), I'm primarily focusing on static site generators and hosting/deployment options rather than traditional help authoring tools (HATs). See [Why focus on publishing API docs?](pubapis_overview.html#why-focus-on-publishing-api-docs) for more background.
@@ -352,10 +354,30 @@ Here are a few sample API doc sites built with Readme.io:
 * [Coinbase API](https://developers.coinbase.com/api/v2#introduction)
 * [Farmbase Software](https://farmbot-software.readme.io/docs)
 
+## Tools for reading the OpenAPI specification {#openapitools}
+
+In the [OpenAPI and Swagger section of this course](restapispecifications.html), I emphasize using [Swagger UI](pubapis_swagger.html) to read and display the [OpenAPI specification](pubapis_swagger_intro.html) as interactive documentation. I also provide a tutorial for using [Stoplight, a visual modeling tool](pubapis_stoplight_activity.html). Since I go into depth with those tools in other parts of the course, I won't dive into them here.
+
+Beyond Swagger UI and Stoplight, there are many other tools that can read OpenAPI specification documents. That's the whole idea of a standard &mdash; when you create a standard way of describing APIs, many tools can predictably read the description and generate documentation (and other tooling) based on it.
+
+Swagger has a detailed list of tools that can read the OpenAPI spec here: [Commercial Tools](https://swagger.io/commercial-tools/). You can see the many [open-source tools here](https://swagger.io/open-source-integrations/). Let's dive into one of these tools not covered elsewhere in this course: Spectacle.
+
+### Spectacle {#spectacle}
+
+[Spectacle](https://github.com/sourcey/spectacle) is an open-source Github project that builds an output from an OpenAPI specification file. The display provides a three-pane output similar to the Stripe or Slate docs. After you download the project files, you can build the display using Node simply by referencing your OpenAPI spec file.
+
+Here's a [demo output](https://cheesestore.github.io/) using the sample OpenWeatherMap API:
+
+<a href="http://idratherassets.com/spectacle/" class="noExtIcon"><img src="images/spectacleopenweather.png"/></a>
+
+You can also see their [cheesestore demo](https://cheesestore.github.io/).
+
+With almost no needed setup or configuration, Spectacle gives you a world-class output and site for your API reference docs. As long as the [OpenAPI spec](pubapis_openapi_tutorial_overview.html) that you integrate is fully detailed, the generated Spectacle site will be attractive and full-featured. (Spectacle doesn't allow you to add custom pages for other tutorials or conceptual docs.)
+
+You can also build the Spectacle site without the framed layout so you can embed it into another site. However, in playing with this embed option, I found that to do this, I'd have to create my own styles. If using the default styles in the full-site output, they most likely will overwrite or interfere with your host site's appearance.
 
 {: .tip}
 Which tool should you use? I provide some more concrete recommendations in [Which tool to choose for API docs -- my recommendations](pubapis_which_tool_to_choose.html).
-
 
 {% comment %}
 

@@ -9,7 +9,6 @@ section: docnonref
 path1: /docnonref.html
 ---
 
-
 Following the Overview section, you usually have a "Getting started" section that details the first steps users need to start using the API. This section often includes the whole process from beginning to end, compressed as simply as possible.
 
 {% if site.format == "web" %}
@@ -20,6 +19,8 @@ Following the Overview section, you usually have a "Getting started" section tha
 ## Purpose of the API overview
 
 The Getting Started topic is somewhat like the typical Hello World tutorial in developer documentation, but with an API. The tutorial holds a user's hand from start to finish in producing the simplest possible output with the system. For Hello World tutorials, the simplest output might just be a message that says "Hello World." For an API, it might be a successful response from the most basic request.
+
+{% include course_image.html size="small" filename="timetohelloworld" ext_print="png" ext_web="svg" alt="Getting started tutorials are like Hello World tutorials." caption="Think of getting started tutorials as a kind of Hello World tutorial with the API. How long would it take for a developer to get the most basic possible response using your API" %}
 
 Both Hello World tutorials and Getting started tutorials with APIs share the same goal: To show a user how to use your API to get the simplest and easiest result, so they get a sense of how it works and feel productive.
 
@@ -37,6 +38,46 @@ The Getting Started tutorial might involve the following:
 {% include course_image.html size="medium" border="true" filename="nonref_gettingstarted" ext_print="png" ext_web="svg" alt="Getting started" caption="The Getting started tutorial usually walks users through the process from beginning to end but in a compressed, simple way." %}
 
 Put a link to your Getting Started tutorial on your documentation homepage. Make it as easy as possible for developers to use the API to get some result. If this means using pre-provisioned accounts or setup configurations, do so.
+
+## Run in Postman button
+
+In your Getting Started tutorial, consider including a Run in Postman button. If you have your [API endpoints integrated into Postman](docapis_postman.html), you can export your Postman collections as a widget to embed in an HTML page. Postman is a REST API GUI client that we explored earlier in [Submit requests through Postman](docapis_postman.html). The [Run in Postman button](https://www.getpostman.com/integrations/run-button) provides a button (labeled "Run in Postman") that, when clicked, imports your API info into Postman so users can run calls using the Postman client. As such, this isn't a full-fledged authoring tool but rather a way to import the interactive, try-it-out API explorer for your endpoints into a web page.
+
+To try out Run in Postman, first [import your OpenAPI spec into Postman](https://www.getpostman.com/docs/postman/collections/data_formats#importing-postman-data) or enter your API information manually. Then see the Postman docs on how to [Create the Run in Postman button](https://www.getpostman.com/docs/postman_for_publishers/run_button/creating_run_button).
+
+You can see the many [demos of Run in Postman here](https://www.getpostman.com/integrations/run-button). Many of these demos are listed in [Postman's API Network](https://www.getpostman.com/api-network/).
+
+{% include course_image.html filename="postmanapinetwork" ext_print="png" ext_web="png" alt="Postman API network" caption="Postman API network" %}
+
+Here's a demo of Run in Postman using the OpenWeatherMap API (`weather` endpoint):
+
+{% if site.format == "pdf" or site.format == "kindle" %}
+
+To view this code, go to [http://idratherbewriting.com/learnapidoc/docapis_doc_getting_started_section.html##postman](http://idratherbewriting.com/learnapidoc/docapis_doc_getting_started_section.html#postman).
+
+{% elsif site.format == "web" %}
+
+<div class="postman-run-button"
+data-postman-action="collection/import"
+data-postman-var-1="abd0d0741e8206266958"></div>
+<script type="text/javascript">
+  (function (p,o,s,t,m,a,n) {
+    !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+    !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+      (n = o.createElement("script")),
+      (n.id = s+t), (n.async = 1), (n.src = m), n
+    ));
+  }(window, document, "\_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+</script>
+{% endif %}
+
+Postman provides a powerful REST API client that many developers are familiar with. It allows users to customize the API key and parameters and save those values. Although you don't have the in-browser experience to try out calls, in many ways the Postman client is more useful. This is what developers often use to save and store API calls as they test and explore the functionality.
+
+Especially if your users are already familiar with Postman, Run in Postman is a good option to provide (especially as one option of many for users to try out your API), as it allows users to easily integrate your API into a client they can use. It gives them a jumping off point where they can build on your information to create more detailed and customized calls.
+
+If you don't already have a "Try it out" feature in your docs, the Run in Postman button gives you this interactivity in an easy way, without requiring you to sacrifice the single source of truth for your docs.
+
+The downside is that your parameter and endpoint descriptions don't get pulled into Postman. Additionally, if users are unfamiliar with Postman, they may struggle a bit to understand how to use it. In contrast, the "Try it out" editors that run directly in the browser tend to be more straightforward and do a better job integrating documentation.
 
 ## Samples of API overviews
 

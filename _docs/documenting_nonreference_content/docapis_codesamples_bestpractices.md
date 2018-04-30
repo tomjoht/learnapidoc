@@ -9,13 +9,7 @@ section: docnonref
 path1: /docnonref.html
 ---
 
-{% comment %} 
-{% include course_image.html url="" size="medium" border="true" filename="nonref_codetutorials" ext_print="png" ext_web="svg" alt="Code tutorials" caption="Code tutorials" %}
-{% endcomment %}
-
-As you write documentation for developers, you'll start to include more and more code samples. You might not include these more detailed code samples with the endpoints you document, but as you create tasks and more sophisticated workflows about how to use the API to accomplish a variety of tasks, you'll end up leveraging different endpoints and showing how to address a variety of scenarios.
-
-The following sections list some best practices around code samples.
+As you write documentation for developers, you'll start to include more and more code samples. You might not include these more detailed code samples with the endpoints you document, but as you create tasks and more sophisticated workflows about how to use the API to accomplish a variety of tasks, you'll end up leveraging different endpoints and showing how to address a variety of scenarios. The following sections list some best practices around code samples.
 
 {% if site.format == "web" %}
 * TOC
@@ -24,15 +18,16 @@ The following sections list some best practices around code samples.
 
 ## Code samples are like candy for developers
 
-Code samples play an important role in helping developers use an API. No matter how much you try to explain and narrate *how*, it's only when you *show* something in action that developers truly get it.
+Code samples play an important role in helping developers use an API. No matter how much you try to explain and narrate *how*, it's only when you *show* something in action that developers truly get it. Additionally, although some project teams feel that the reference documentation is all you need, that's only because the team is already familiar with the API. In an article on the Programmable Web called [The Six Pillars of Complete Developer Documentation
+](https://www.programmableweb.com/news/six-pillars-complete-developer-documentation/2011/09/12), the authors explain:
 
-Recognize that, as a technical writer rather than a developer, you aren't your audience. Developers aren't newbies when it comes to code. But different developers have different specializations. Someone who is a database programmer will have a different skill set from a Java developer who will have a different skillset from a JavaScript developer, and so on.
-
-{% include random_ad.html %}
+> While a developer’s guide should walk a developer through the basic usage of an API and its functionality, it can’t cover every possible use of that API in a coherent way. That is where articles and tutorials come in, to teach developers tangential or specialized uses of an API, like combining it with another service, framework, or API.
 
 Developers often make the mistake of assuming that their developer audience has a skill set similar to their own, without recognizing different developer specializations. Developers will often say, "If the user doesn't understand this code, he or she shouldn't be using our API."
 
-It might be important to remind developers that users often have technical talent in different areas. For example, a user might be an expert in Java but only mildly familiar with JavaScript.
+It might be important to remind developers that users often have technical talent in different areas. For example, a user might be an expert in Java but only mildly familiar with JavaScript. Also, as a technical writer rather than a developer, you aren't your audience. Developers aren't newbies when it comes to code, but different developers have different specializations. Someone who is a database programmer will have a different skill set than someone who is a Java developer who will have a different skillset from a JavaScript developer, and so on. Given these differences and the likely possibility that you will have many novice (or unfamiliar) users, more extensive code tutorials are warranted.
+
+{% include course_image.html size="medium" border="true" filename="nonref_codetutorials" ext_print="png" ext_web="svg" alt="Code tutorials" caption="Code is in another language, so as much as you might try to describe the communication in this other language through text, it often falls short. When developer see code, they can often read the code and understand it natively." %}
 
 ## Focus on the why, not the what
 
@@ -46,6 +41,8 @@ Here's an example of the difference:
 ## Explain your company's code, not general coding
 
 Developers unfamiliar with common code not related to your company (for example, the `.ajax()` method from jQuery) should consult outside sources for tutorials about that code. You shouldn't write your own version of another service's documentation. Instead, focus on the parts of the code unique to your company. Let the developer rely on other sources for the rest (feel free to link to other sites).
+
+{% include random_ad.html %}
 
 ## Keep code samples simple
 
@@ -93,18 +90,41 @@ Although you could provide general code samples for every language with every ca
 
 The OpenWeatherMap API has a number of [example integrations](https://openweathermap.org/examples) that provide more advanced user interfaces with weather.
 
-## Create a code sample for the surfreport endpoint
+**Samples of code tutorials**
 
-As a technical writer, add a code sample to the `surfreport/{beachId}` endpoint that you're documenting. Use the same code as above, and add a short description about why the code is doing what it's doing.
+The following are a few samples of code tutorials in API documentation.
 
-Here's my approach. (You might not include a detailed code sample like this for just one endpoint, but including some kind of code sample is almost always helpful.)
+{: .note}
+This section is currently under construction ...
 
-### Code example
+**Eventful**
 
-The following code samples shows how to use the surfreport endpoint to get the surf height for a specific beach.
+{% include course_image.html url="http://api.eventful.com/tools/tutorials/search" filename="eventfulcodesample" ext_print="" ext_web="" alt="Eventful code samples" caption="Eventful code samples" %}
+
+**Twilio**
+
+{% include course_image.html url="https://www.twilio.com/docs/quickstart" filename="twiliocodesamples" ext_print="png" ext_web="png" alt="Twilio code samples" caption="Twilio code samples" %}
+
+**Mailchimp**
+
+{% include course_image.html url="http://developer.mailchimp.com/documentation/mailchimp/guides/manage-subscribers-with-the-mailchimp-api/" filename="mailchimpcodesamples" ext_print="png" ext_web="png" alt="Mailchimp code samples" caption="Mailchimp code samples" %}
+
+**IBM Watson**
+
+{% include course_image.html url="https://console.bluemix.net/docs/services/conversation/tutorial.html#tutorial" filename="ibmwatsoncodesamples" ext_print="png" ext_web="png" alt="IBM Watson code samples" caption="IBM Watson code samples" %}
+
+## Code samples for weather API
+
+Earlier in the course we walked through [each element of reference documentation](docapis_new_endpoint_to_doc.html) for a fictitious new endpoint (`surfreport`) for the weather API we were working with. Let's return briefly to that scenario and assume that we also want to add a code tutorial for showing the surfreport on a web page. What might that tutorial look like? Here's an example:
+
+<div class="docSample">
+
+<h2>Code tutorial for surfreport endpoint</h2>
+
+<p>The following code samples shows how to use the <code>surfreport</code> endpoint to get the surf height for a specific beach.</p>
 
 {% if site.format == "web" or site.format == "pdf" %}
-```html
+{% highlight javascript %}
 <!DOCTYPE html>
 <head>
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -127,7 +147,8 @@ $.ajax(settings).done(function (response) {
 <div id="surfheight"></div>
 </body>
 </html>
-```
+{% endhighlight %}
+
 {% elsif site.format == "kindle" %}
 
 <pre>
@@ -156,10 +177,13 @@ $.ajax(settings).done(function (response) {
 </pre>
 {% endif %}
 
-In this example, the `ajax` method from jQuery is used because it allows us to load a remote resource asynchronously.
+<p>In this example, the <code>ajax</code> method from jQuery is used because it allows us to load a remote resource asynchronously.</p>
 
-In the request, you submit the authorization through a query string URL. The endpoint limits the days returned to 1 in order to increase the download speed.
+<p>In the request, you submit the authorization through a query string URL. The endpoint limits the days returned to 1 in order to increase the download speed.</p>
 
-For demonstration purposes, the response is assigned to the `response` argument of the `done` method, and then written out to the `surfheight` tag on the page.
+<p>For demonstration purposes, the response is assigned to the <code>response</code> argument of the <code>done</code> method, and then written out to the <code>surfheight</code> tag on the page.</p>
 
-We're just getting the surf height, but there's a lot of other data you could choose to display.
+<p>We're just getting the surf height, but there's a lot of other data you could choose to display.</p>
+</div>
+
+Obviously, one could go into a lot more detail with the explanation, even going line by line through the code. But here the commentary is already about half the length of the code.

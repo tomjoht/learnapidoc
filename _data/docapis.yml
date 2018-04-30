@@ -265,9 +265,6 @@ folders:
   - title: "Activity: Use Stoplight to edit your spec"
     jurl: /pubapis_stoplight_activity.html
 
-  - title: Other tools to parse and display OpenAPI specs
-    jurl: /pubapis_other_openapi_parsers.html
-
   - title: Integrating Swagger UI with the rest of your docs
     jurl: /pubapis_combine_swagger_and_guide.html
 
