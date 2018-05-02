@@ -46,7 +46,12 @@
         container: '#search-hits',
         templates: {
           item: function(hit) {
-            var url = `{{ site.baseurl }}${hit.url}#${hit.anchor}`;
+            if (hit.anchor) {
+              url = `{{ site.baseurl }}${hit.url}#${hit.anchor}`;
+              }
+            else {
+              var url = `{{ site.baseurl }}${hit.url}`;
+            }
             var title = hit.title;
             var highlightedTitle = highlight(hit, 'title');
             var highlightedContent = highlight(hit, 'content');
@@ -59,7 +64,7 @@
               headings = hit.headings || []
             }
             headings = headings.join(' > ');
-            
+
             return `
                 <div class="search-hit">
                   <a class="search-hit-title" href="${url}">${highlightedTitle}</a>
