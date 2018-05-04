@@ -13,19 +13,11 @@ In previous activities, you created your own [OpenAPI specification document](pu
 {: .note}
 If you landed on this activity before learning about Stoplight, read [Stoplight &mdash; visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html) first.
 
-## Spec versions
-
-It would be great if all tools supported the latest version of the OpenAPI specification (3.0). However, the reality is that, as if April 2018, most tools support only the 2.0 version of the spec (except for [Swagger UI](pubapis_swagger.html) and [SwaggerHub](pubapis_swaggerhub_smartbear.html)). Many tools are catching up, and it's only a matter of time until 3.0 is fully supported. In the meantime, you can either learn an outdated specification that is compatible with the tool you want, or you can code in the 3.0 version and then programmatically convert it to 2.0.
-
-My preference is to code in the 3.0 version and then use [API Transformer](https://apimatic.io/transformer) to programmatically convert the spec to the 2.0 specification. The only limitation with this approach is if you're using some features in the 3.0 version of the spec that aren't available in 2.0. For example, JSON schema definitions that use `anyOf`, `oneOf`, and `not` are supported only in 3.0. See [A Guide to What’s New in OpenAPI 3.0](https://swagger.io/blog/whats-new-in-openapi-3-0/) for full details about how 3.0 differs from 2.0.
-
-In this exercise, you'll use Stoplight.io to work with the specification. Currently, Stoplight supports only the 2.0 version of the spec, but they're working on support for 3.0 in the near future. The exercise will let you
-
 ## Download and populate Stoplight with an OpenAPI specification
 
 In this activity, you'll download and explore Stoplight. To speed things up, you'll start with an OpenAPI definition that you paste into the Stoplight editor, and then you'll make some modifications to it using Stoplight's visual modeling tools.
 
-You can use Stoplight in the browser or as a web app. For simplicity, we'll use the browser version. For the OpenAPI spec that you paste in, use the custom specification you created in an [earlier activity with the spec](pubapis_openapi_activity.html). If so, convert it to the **"Swagger 2.0 JSON"** version using [API Transformer](https://apimatic.io/transformer). Alternatively, you can use the [2.0 version of the Sunrise and Sunset OpenAPI spec](http://idratherbewriting.com/learnapidoc/assets/files/swagger/openapi_sunrise_sunset_20.json) that I've already created, or the [2.0 version of the OpenWeather Map API](http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openweathermap_swagger20.json) that I've already converted.
+You can use Stoplight in the browser or as a web app. For simplicity, we'll use the browser version. For the OpenAPI spec that you paste in, use the custom specification you created in an [earlier activity with the spec](pubapis_openapi_activity.html). However, because Stoplight supports only the 2.0 version of the spec (as do most tools currently), you'll need to convert your 3.0 version to 2.0 using the [API Transformer](https://apimatic.io/transformer) (a nifty converter tool from APIMATIC). Alternatively, you can use the [2.0 version of the Sunrise and Sunset OpenAPI spec](http://idratherbewriting.com/learnapidoc/assets/files/swagger/openapi_sunrise_sunset_20.json) that I've already converted, or the [2.0 version of the OpenWeather Map API](http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openweathermap_swagger20.json) that I've already converted.
 
 To download and populate Stoplight with an existing OpenAPI spec:
 
@@ -41,7 +33,7 @@ To download and populate Stoplight with an existing OpenAPI spec:
 
 ## Explore Stoplight
 
-In this activity, you'll explore Stoplight more by expanding various sections and making some modifications.
+Now that you have some data populated in Stoplight, let's explore Stoplight a bit more by expanding various sections and making some modifications.
 
 1.  In the side pane, expand **PATHS** and then expand your endpoint. It should look something like this:
 
@@ -97,6 +89,7 @@ In this activity, you'll explore Stoplight more by expanding various sections an
       "cod": 200
     }
     ```
+
 6.  Then click **Generate!**.
 
     This video shows the process of auto-generating JSON. (Instead of starting with the above sample JSON, the video makes request in Postman and then copies the response from there &mdash; but the idea should be clear.)
