@@ -31,7 +31,7 @@ To download and populate Stoplight with an existing OpenAPI spec:
 7.  Click **Save** and then **Confirm**.
 8.  Click the **Design** button at the top to switch back to the visual view.
 
-## Explore Stoplight
+## Explore Stoplight and make some edits
 
 Now that you have some data populated in Stoplight, let's explore Stoplight a bit more by expanding various sections and making some modifications.
 
