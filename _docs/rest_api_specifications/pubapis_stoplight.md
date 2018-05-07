@@ -89,7 +89,7 @@ Stoplight also allows you to create variables to use in *both* your specificatio
 
 Although I generally like working directly in the code, I've found that Stoplight lets me focus more on the content and less on the details of the spec's format. Ideally, you can probably get developers and other project team members to populate reference content in Stoplight themselves, since this is an activity that needs to happen much earlier in the API design process anyway.
 
-If you're documenting an API, [Stoplight](http://stoplight.io/) is definitely worth checking out. But don't think of it as just a documentation platform or an easy way to generate the OpenAPI description. Consider Stoplight a way to design the single source of truth that will empower all other teams in a more efficient toward a successful API.
+If you're documenting an API, [Stoplight](https://stoplight.io) (and their [hosted doc solution](https://stoplight.io/platform/docs/)) are definitely worth checking out. But don't think of Stoplight as just a documentation platform or an easy way to generate the OpenAPI description. Consider Stoplight a way to design the single source of truth that will empower all other teams in a more efficient toward a successful API.
 
 See [Activity: Use Stoplight to edit your OpenAPI spec](pubapis_stoplight_activity.html) for a hands-on activity using Stoplight.
 
