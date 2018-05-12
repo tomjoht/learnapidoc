@@ -9,9 +9,6 @@ section: docnonref
 path1: /docnonref.html
 ---
 
-{: .note}
-Most of this section is currently under construction. I'll be finishing it by May 1, 2018.
-
 Up until this point, we've been focusing on the endpoint (or reference) aspect of API documentation. The reference documentation is only one part &mdash; granted, a significant one &mdash; in API documentation. You also need to create a user guide and tutorials that cover non-reference topics. Reference documentation tends to appeal to more advanced users, while non-reference documentation is used more by newcomers and novices who need the bigger picture and more handholding.
 
 {% if site.format == "web" %}
