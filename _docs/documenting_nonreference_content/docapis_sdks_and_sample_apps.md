@@ -16,13 +16,21 @@ SDKs (software development kits) and sample apps are similar to [code samples](d
 
 ## SDKs show the implementation of an API in a specific language
 
-The terms API and SDK are often used together, but they aren't synonyms. SDKs implement the language-agnostic REST API in a specific language, such as Java or C++. REST APIs by themselves aren't tied to any particular language; usually you demonstrate the APIs by [making calls using cURL](docapis_make_curl_call.html), a command-line tool for submitting web requests and getting responses. But developers probably won't use cURL requests when they implement your API. Instead, they will implement the API requests using the language their application is coded in.
+The terms API and SDK are often used together, but they aren't synonyms. SDKs implement the language-agnostic REST API in a specific language, such as Java or C++. REST APIs by themselves aren't tied to any particular language; usually you demonstrate the APIs by [making calls using cURL](docapis_make_curl_call.html), a command-line tool for submitting web requests and getting responses. But developers won't use cURL requests when they implement your API. Instead, they will implement the API requests using the language their application is coded in.
 
-For example, Java, C++, or Node applications make API requests in different ways. Each language has its own way of calling a web API. You can use Postman or Paw to auto-generate a request in a specific language (see [Auto-generating code samples](docapis_doc_sample_requests.html#auto-generating-code-samples). However, the SDK takes the implementation to another level. SDKs might involve many more files or libraries as part of the implementation.
+For example, Java, C++, or Node applications make API requests in different ways. Each language has its own way of constructing requests to a web API. You can use Postman or Paw to auto-generate a request in a specific language (see [Auto-generating code samples](docapis_doc_sample_requests.html#auto-generating-code-samples). However, the SDK takes the implementation to another level. SDKs might involve many more files or libraries as part of the implementation.
 
 In the SwaggerHub tutorial in this course, I show how to [auto-generate client SDKs](pubapis_swaggerhub_smartbear.html#auto-generate-client-sdks) through SwaggerHub's interface. But usually, rather than relying on auto-generated SDKs, if your development team offers a client SDK, it will be code that the development team prepares and tests. The development team often provides the SDK in a few target languages based on their user's main language, showing how the API can be implemented.
 
 In addition to implementations of the API, SDKs loosely refer to any kind of additional tooling to support the API. As a "software development kit," the kit might involve a collection of tools, samples, and other files (again, focused on a specific language) that accompany the API.
+
+In [What is the Difference Between an API and an SDK?](https://nordicapis.com/what-is-the-difference-between-an-api-and-an-sdk/), Kristopher Sandoval explains an SDK as follows:
+
+> SDK stands for “Software Development Kit”, which is a great way to think about it — a kit. Think about putting together a model car or plane. When constructing this model, a whole kit of items is needed, including the kit pieces themselves, the tools needed to put them together, assembly instructions, and so forth.
+>
+> An SDK or devkit functions in much the same way, providing a set of tools, libraries, relevant documentation, code samples, processes, and or guides that allow developers to create software applications on a specific platform. If an API is a set of building blocks that allows for the creation of something, an SDK is a full-fledged workshop, facilitating creation far outside the scopes of what an API would allow.
+
+Sandoval compares examples from Facebook APIs and SDKs to clarify the difference. Later, he sums up the difference as follows: "The SDK is the building blocks of the application, whereas the API is the language of its requests."
 
 ## What is your role in documenting the SDK and sample app
 
@@ -78,6 +86,6 @@ Even so, there is probably quite a bit of variability from one library to the ne
 
 {% include course_image.html url="https://cloud.google.com/sdk/docs/" filename="sdk_amazon_aws" ext_print="png" ext_web="png" alt="Google Cloud SDK documentation" caption="Google Cloud SDK documentation" %}
 
-The Google Cloud SDK provides quickstart guides for Linux, Debian, Ubuntu, and other operating systems. The guides explain how to install, set up, and manage the SDK commands. An API reference for the commands is also included. 
+The Google Cloud SDK provides quickstart guides for Linux, Debian, Ubuntu, and other operating systems. The guides explain how to install, set up, and manage the SDK commands. An API reference for the commands is also included.
 
 Looking at the Google Cloud SDK versus the Amazon SDK shows some of the breadth and variety of technologies you might have to document in SDK territory. These SDKs are specific to a particular programming language, operating system, or other framework, and as such, it can be daunting to try to ramp up in order to document this category of tools. For SDK documentation, you'll need to work closely with engineers and listen to feedback from users.
