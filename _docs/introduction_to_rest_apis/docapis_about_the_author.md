@@ -14,11 +14,11 @@ In case you'd like to know a little bit about me, I'm currently based in the San
 
 Like most technical writers, I stumbled into technical writing after working in other fields. I first earned a BA in English and an MFA in nonfiction creative writing, and then started out my career as a writing teacher. After a stint in teaching, I transitioned into marketing copywriting, and then turned to technical writing (mainly for financial reasons).
 
-Despite my initial resistance to the idea of technical writing (I thought it would boring), I found that I actually liked technical writing &mdash; a lot more than copywriting. Technical writing combined my love for writing with my fascination for technology. I got to play with tools and handle all aspects of content production from designing web styles to configuring publishing workflows.
+Despite my initial resistance to the idea of technical writing (I thought it would be boring), I found that I actually liked technical writing &mdash; a lot more than copywriting. Technical writing combined my love for writing with my fascination for technology. I got to play with tools and handle all aspects of content production from designing web styles to configuring publishing workflows.
 
 I worked as a traditional technical writer for a number of years, mostly documenting applications with user interfaces. One day, my organization decided to lay off the tech writing team.
 
-After that, and based on my proclivity for tinkering with tools, I decided to steer my career into a tech writing market that was more in demand: developer documentation, particularly API documentation. I also moved into Silicon Valley to be at the center of tech.
+After that, and based on my proclivity for tinkering with tools, I decided to steer my career into a tech writing market that was more in demand: developer documentation, particularly API documentation. I also moved to Silicon Valley to be at the center of tech.
 
 I started documenting my first API at a gamification startup, and then transitioned to another semi-startup to continue with more API documentation. I was no longer working with applications that had user interfaces, and the audiences for my docs were primarily developers. Developer doc was a new landscape to navigate, with different tools, expectations, goals, and deliverables.
 
