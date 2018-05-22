@@ -62,7 +62,7 @@ Each REST API functions a bit differently. There isn't a single way of doing thi
 
 Another reason why REST APIs are taking off is because the web itself is evolving into a conglomeration of APIs. Instead of massive, do-it-all systems, web sites are pulling in the services they need through APIs.
 
-For example, rather than building your own search to power your website, you might use Switftype instead and leverage their service through the [Swiftype API](https://swiftype.com/developers). Rather than building your own payment gateway, you might integrate [Stripe and its API](https://stripe.com/docs/api). Rather than building your own login system, you might use [UserApp and its API](https://app.userapp.io/#/docs/). Rather than building your own e-commerce system, you might use [Snipcart and its API](http://docs.snipcart.com/api-reference/introduction). And so on.
+For example, rather than building your own search to power your website, you might use Swiftype instead and leverage their service through the [Swiftype API](https://swiftype.com/developers). Rather than building your own payment gateway, you might integrate [Stripe and its API](https://stripe.com/docs/api). Rather than building your own login system, you might use [UserApp and its API](https://app.userapp.io/#/docs/). Rather than building your own e-commerce system, you might use [Snipcart and its API](https://docs.snipcart.com/api-reference/introduction). And so on.
 
 Practically every service provides its information and tools through an API that you use. Jekyll, a popular static site generator, doesn't have all the components you need to run a site. There's no newsletter integration, analytics, search, commenting systems, forms, chat e-commerce, surveys, or other systems. Instead, you leverage the services you need into your static Jekyll site. CloudCannon has put together a [long list of services](http://cloudcannon.com/tips/2014/12/12/the-ultimate-list-of-services-for-static-websites.html) that you can integrate into your static site.
 
@@ -86,7 +86,11 @@ Here's what the Dropbox API looks like:
 
 <a class="noCrossRef" href="https://www.dropbox.com/developers" class="noExtIcon"><img class="medium" src="images/dropbox_clean.png" alt="Dropbox API" /></a>
 
+<<<<<<< HEAD
 It's not a sophisticated design. But its simplicity and brevity are what make it appealing. When you consider that the API documentation is more or less the product interface, building a sharp, modern-looking doc site is paramount for credibility and traction in the market. (I dive into the [job market for API documentation later](jobapis_overview.html).
+=======
+It's not a sophisticated design. But its simplicity and brevity is one of its strengths. When you consider that the API documentation is more or less the product interface, building a sharp, modern-looking doc site is paramount for credibility and traction in the market. (I dive into the [job market for API documentation later](jobapis_overview.html)).
+>>>>>>> 7a12bb85c41debe95a2cd3c688a4d6a6d2a0c6d6
 
 ## API doc is a new world for most tech writers
 
