@@ -152,14 +152,14 @@ folders:
   - title: Quick reference guide
     jurl: /docapis_doc_quick_reference.html
 
-  - title: API best practices
-    jurl: /docapis_best_practices_with_api.html
-
-  - title: Glossary
-    jurl: /docapis_glossary_section.html
-
-  - title: FAQ
-    jurl: /docapis_faq.html
+  # - title: API best practices
+  #   jurl: /docapis_best_practices_with_api.html
+  #
+  # - title: Glossary
+  #   jurl: /docapis_glossary_section.html
+  #
+  # - title: FAQ
+  #   jurl: /docapis_faq.html
 
   - title: Next phase of course
     jurl: /docapis_completion.html
