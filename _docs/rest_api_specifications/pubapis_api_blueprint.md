@@ -216,6 +216,8 @@ For a tutorial on the blueprint syntax, see this [Apiary tutorial](https://apiar
 
 You can find [examples of different blueprints here](https://github.com/apiaryio/api-blueprint/tree/master/examples). The examples can often clarify different aspects of the spec.
 
+{% include random_ad2.html %}
+
 ## Parsing the blueprint
 
 There are many tools that can parse an API blueprint. [Drafter](https://github.com/apiaryio/drafter) is one of the main parsers of the Blueprint. Many other tools build on Drafter and generate static HTML outputs of the blueprint. For example, [aglio](https://github.com/danielgtaylor/aglio) can parse a blueprint and generate static HTML files.

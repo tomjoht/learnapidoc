@@ -28,6 +28,8 @@ The project manager calls you over and says the team has a new endpoint for you 
 
 It's now your task to sort through the information on this page and create documentation from it. You can read through the mock wiki page below to get a sense of the information. In the upcoming topics, I will create documentation from this information as I proceed through each of the needed sections for an API reference topic.
 
+{% include random_ad.html %}
+
 ## Sorting out information
 
 Most technical writers don't start from scratch with documentation projects. Engineers usually dump essential information onto an internal wiki page (or they communicate the info during meetings). However, the information on the wiki page will likely be incomplete, and unnecessarily technical in places (like describing the database schema or high-level architectural workflows). The info might also include internal-only information (for example, including test logins, access protocols, or code names), or have sections that are out-of-date.
@@ -120,6 +122,8 @@ http://api.openweathermap.org/com/surfreport/123?&days=2&units=metrics&hour=1400
 <p>If the query is malformed, you get error code 400 and an indication of the error.</p>
 </div>
 {% endraw %}
+
+{% include random_ad2.html %}
 
 ## Next steps
 

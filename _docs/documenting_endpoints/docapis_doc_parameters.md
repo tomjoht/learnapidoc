@@ -118,6 +118,8 @@ Header parameters are included in the request header. Usually, the header just i
 
 However, if your endpoint requires specific parameters to be passed in the header, you would document them in the parameters documentation here. (For more on request and response headers, see the [curl tutorial](docapis_understand_curl.html#requests-and-responses-include-headers-too) where we explored this with some examples.)
 
+{% include random_ad2.html %}
+
 ## Path parameters {#path_parameters}
 
 Path parameters are part of the endpoint itself, and are not optional. For example, `{user}` and `{bicycleId}` are the path parameters in the following endpoint:

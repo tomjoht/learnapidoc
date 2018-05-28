@@ -25,6 +25,8 @@ YAML is an attempt to create a more human readable data exchange format. It's si
 
 Many computers ingest data in a YAML or JSON format. It's a syntax commonly used in configuration files and an increasing number of platforms (like Jekyll), so it's a good idea to become familiar with it.
 
+{% include random_ad.html %}
+
 ## YAML is a superset of JSON
 
 YAML and JSON are practically different ways of structuring the same data. Dot notation accesses the values the same way. For example, the Swagger UI can read the openapi.json or openapi.yaml files equivalently. Pretty much any parser that reads JSON will also read YAML. However, some JSON parsers might not read YAML, because there are a few features YAML has that JSON lacks (more on that later).
@@ -59,7 +61,7 @@ Each level can contain either a single key-value pair (also referred to as a dic
 
 The values for each key can optionally be enclosed in quotation marks or not. If your value has something like a colon or quotation mark in it, you'll want to enclose it in quotation marks. And if there's a double quotation mark, enclose the value in single quotation marks, or vice versa.
 
-{% include random_ad.html %}
+{% include random_ad2.html %}
 
 ## Comparing JSON to YAML
 

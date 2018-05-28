@@ -30,3 +30,7 @@ The following are previous API presentations or workshops I've given. Some have 
    <li>August 11, 2015. <a href="http://www.northbaycommunicators.org/2015/07/august-meeting-apisoftware-authoring-environments/">API/Software Authoring Environments</a>. North Bay Communicators Network. Roundtable discussion. </li>
    <li>Oct 15, 2014. <a href="http://idratherbewriting.com/2014/10/16/api-doc-presentation-slides-and-recording/">Publishing strategies for API documentation.</a> <a href="http://www.stc-sf.org/">San Francisco STC chapter</a>.</li>
 </ul>
+
+{% include random_ad2.html %}
+
+{% include random_ad.html %}

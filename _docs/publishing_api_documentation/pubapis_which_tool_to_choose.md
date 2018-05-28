@@ -75,7 +75,7 @@ If you don't have budget for a third-party host and deployment option, nor do yo
 
 If your company prefers to build its own publishing pipeline, before you go down this road, find out what features the internal solution will provide. Explore some of the benefits of these third-party host and deployment options and examine whether the internal solution will have enough parity and long-term support. If you have strong engineering backing, then great, you're probably in a good spot. But if engineers will barely give you the time of day, consider a third-party solution. See [Case study: Switching tools to docs-as-code](pubapis_switching_to_docs_as_code.html) for my experience going down this route.
 
-{% include random_ad.html %}
+{% include random_ad2.html %}
 
 ### Parsing the OpenAPI specification
 
@@ -93,6 +93,8 @@ For a great article on the importance of content over tools, see [Good API Docum
 In some ways, tools are the basketball player's shoes. They matter, for sure. But Michael Jordan wasn't a great basketball player because he wore Nikes, nor was Kobe Bryant great due to his Adidas shoes. You can probably write incredible documentation despite your tooling and platform. Don't let tooling derail your focus on what really matters in your role: the content.
 
 I've changed my doc platforms numerous times, and rarely does anyone seem to care or notice. As long as it looks decent, most project managers and users will focus on the content much more than the design or platform. In some ways, the design should be invisible and unobtrusive, not foregrounding the focus on the content. The user shouldn't be distracted by the tooling.
+
+{% include random_ad.html %}
 
 Also, users and reviewers won't even notice all the effort behind the tools. Even when you've managed to single source content, loop through a custom collection to generate out a special display, incorporate language switchers to jump from platform to platform, etc., the feedback you'll get is "There's a typo here."
 

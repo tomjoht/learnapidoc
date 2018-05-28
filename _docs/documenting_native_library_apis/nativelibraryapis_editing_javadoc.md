@@ -17,6 +17,8 @@ However, the comments that developers add are usually poor, incomplete, or incom
 
 ## What to look for when editing Javadoc content
 
+{% include random_ad2.html %}
+
 When you make edits to Javadoc content, look for the following:
 
 * **Missing doc**. Lots of Javadoc is incomplete. Look for missing documentation.

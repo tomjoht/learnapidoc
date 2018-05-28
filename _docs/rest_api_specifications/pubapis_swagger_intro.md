@@ -49,6 +49,8 @@ OpenAPI is a specification for describing REST APIs. This means OpenAPI provides
 
 You can think of the OpenAPI specification like DITA but for APIs. With DITA, you have a number of elements that you use to describe your help content (for example, `task`, `step`, `cmd`). The elements have a specific order they have to appear in. The `cmd` element must appear inside a `step`, which must appear inside a `task`, and so on. The elements have to be used correctly according to the XML schema in order to be valid.
 
+{% include random_ad2.html %}
+
 Many tools can parse valid DITA XML and transform the content into different outputs. The OpenAPI specification works similarly, only the specification is entirely different, since you're describing an API instead of a help topic.
 
 The official description of the OpenAPI specification is available in a [Github repository here](https://github.com/OAI/OpenAPI-Specification). Some of the OpenAPI elements are `paths`, `parameters`, `responses`, and `security`. Each of these elements is actually an "object" (instead of an XML element) that holds a number of properties and arrays.

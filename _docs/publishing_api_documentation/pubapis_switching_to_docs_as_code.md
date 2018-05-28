@@ -30,6 +30,8 @@ When I started, I championed using Jekyll to generate and manage the HTML, and I
 
 Despite this innovation, our publishing process still involved pasting the generated HTML (after building Jekyll) page by page into the CMS. Thus, we were halfway with our docs-as-code approach and still had room to go. One of the tenets of docs-as-code is to build your output directly from the server (called "continuous deployment"). In other words, you incorporate the publishing logic on the server rather than running the publishing process from your local computer.
 
+{% include random_ad2.html %}
+
 This last step, publishing directly from the server, was difficult because another engineering group was responsible for the website and server, and we couldn't just rip Hippo out and start uploading the Jekyll-generated files onto a web server ourselves. It would take another year or more before the engineering team had the bandwidth for the project. Once it started, the project was a wild ride of mismatched expectations and assumptions. But in the end, we succeeded.
 
 Most of the lessons learned here are about this process, specifically how we transitioned to building Jekyll directly from an internal Git repo, the decisions we made and the reasoning behind those decisions, the compromises and other changes of direction, and so on. My purpose here is to share lessons learned so that other writers embarking on similar endeavors can benefit from understanding what might be on the road ahead.
@@ -55,6 +57,8 @@ All we really needed to do was to generate out the body HTML along with the side
 ## End solution
 
 In the end, here's the solution we implemented. We stored our Jekyll project in an internal Git repository &mdash; the same farm of Git repositories other engineers used for nearly every software project, and which connected into a build management system. After we pushed our Jekyll doc content to the master branch of the Git repository, a build pipeline would kick off and build the Jekyll project directly from the server (similar to [GitHub Pages](https://pages.github.com/)).
+
+{% include random_ad.html %}
 
 Our Jekyll layout omitted any header or footer in the theme. The built HTML pages were then pulled into an S3 bucket in AWS through an ingestion tool (which would check for titles, descriptions, and unique permalinks in the HTML). This bucket acted as a flat-file database for storing content. Our website would make calls to the content in S3 based on permalink values in the HTML to pull the content into a larger website template that included the header and footer.
 

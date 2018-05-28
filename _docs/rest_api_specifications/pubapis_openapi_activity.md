@@ -19,6 +19,8 @@ In an earlier activity, you [found an open-source API project](docapis_find_open
 
 If you don't want to use that API (maybe it already has an OpenAPI specification document, or there are other complications), you can use this simple [Sunrise and sunset times API](https://sunrise-sunset.org/api). This Sunrise and sunset times API doesn't require authentication with requests, so it removes some of the more complicated authentication workflows.
 
+{% include random_ad.html %}
+
 {: .tip}
 Depending on the API you choose to work with, you could potentially use this specification document as part of your portfolio.
 
@@ -36,6 +38,8 @@ Go each step of the OpenAPI specification tutorial to build out the specificatio
 * [Step 8: externalDocs object](pubapis_openapi_step8_externaldocs_object.html)
 
 ## Make sure your spec validates
+
+{% include random_ad2.html %}
 
 Validate your specification document in the [Swagger Editor](https://swagger.io/swagger-editor/). Execute a request to make sure it's working correctly.
 

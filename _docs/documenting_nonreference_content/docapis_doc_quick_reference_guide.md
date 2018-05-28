@@ -23,6 +23,8 @@ Here's a quick reference guide from Eventful's API:
 
 <a href="http://api.eventful.com/docs" class="noExtIcon"><img src="images/eventfulquickreference.png" alt="Eventful quick reference" /></a>
 
+{% include random_ad2.html %}
+
 An online quick reference guide can serve as a great entry point into the documentation. Here's a quick reference from Shopify about using Liquid:
 
 <a href="http://cheat.markdunkley.com/" class="noExtIcon"><img src="images/shopifyqrg.png" alt="Shopify quick reference guide" /></a>

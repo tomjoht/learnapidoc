@@ -11,6 +11,8 @@ section: resources
 path1: /resources.html
 ---
 
+{% include random_ad2.html %}
+
 API
 : Application Programming Interface. Enables different systems to interact with each other programmatically. Two types of APIs are web services and library-based APIs. See [What is a REST API?](docapis_what_is_a_rest_api.html).
 

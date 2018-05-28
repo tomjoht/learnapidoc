@@ -21,6 +21,8 @@ Let's pull together the various parts we've worked on and bring them together to
 
 ## Some notes on templates and tools
 
+{% include random_ad2.html %}
+
 With the sample documentation here, I'm using Jekyll. Each of these sections is stored as a relative include that I've singled sourced to both this page and the previous pages. This ensures I'm not copying and pasting the same content in multiple areas of the site.
 
 {: .tip}

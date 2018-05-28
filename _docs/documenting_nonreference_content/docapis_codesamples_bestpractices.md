@@ -44,6 +44,8 @@ Your documentation regarding the code should mix code comments with some explana
 
 Comments within the code are usually short one-line notes that appear after every 5-10 lines of code. You can follow up this code with more robust explanations in your documentation.
 
+{% include random_ad2.html %}
+
 This approach of adding brief comments within the code, followed by more robust explanations after the code, aligns with principles of progressive information disclosure that help align with both advanced and novice user types.
 
 ## Explain your company's code, not general coding

@@ -39,6 +39,8 @@ Note that GitHub provides online repositories and tools for Git. However, Git an
 
 When you install version control software such as Git and initialize a repository in a folder, an invisible folder gets added to the repository. This invisible folder handles the versioning of the content in that folder. (If you want to move the Git tracking to another folder, you can simply move the invisible git folder to that other folder.)
 
+{% include random_ad2.html %}
+
 When you add files to Git and commit them, Git takes a snapshot of that file at that point in time. When you commit another change, Git creates another snapshot. If you decide to revert to an earlier version of the file, you just revert to the particular snapshot. This is the basic idea of versioning content.
 
 ## Basic workflow with version control

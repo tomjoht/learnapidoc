@@ -111,6 +111,8 @@ Some APIs put the response in a right column so you can see it while also lookin
 
 <a href="https://stripe.com/docs/api#charge_object" class="noExtIcon"><img src="images/stripetripanedesign.png" alt="Stripe's tri-column design" /></a>
 
+{% include random_ad2.html %}
+
 Stripe's design juxtaposes the sample response in a right side pane with the response schema in the main window. The idea is that you can see both at the same time. The description won't always line up with the response, which might be confusing. Still, separating the response example from the response schema in separate columns helps differentiate the two.
 
 A lot of APIs have modeled their design after Stripe's. For example, see <a href="https://github.com/tripit/slate">Slate</a>, <a href="https://github.com/sourcey/spectacle">Spectacle</a>, or <a href="http://readme.io">readme.io</a>.

@@ -29,7 +29,7 @@ Jim Bisso, an experienced API technical writer in the Silicon Valley area, descr
 
 <img class="small" src="images/calculator.png" alt="calculator" />
 
-{% include random_ad.html %}
+{% include random_ad2.html %}
 
 APIs often work in similar ways. When you push a button in an interface, functions underneath also get triggered to go and retrieve information. But instead of retrieving information from within the same system, web APIs call remote services on the web to get their information.
 
@@ -52,6 +52,8 @@ Each programming language that makes the request will have a different way of su
 ## SOAP APIs are the predecessor to REST APIs
 
 Before REST became the most popular web service, SOAP (Simple Object Access Protocol) was much more common. To understand REST a little better, it helps to have some context with SOAP. This way you can see what makes REST different.
+
+{% include random_ad.html %}
 
 ### SOAP used standardized protocols and WSDL files
 

@@ -15,6 +15,3 @@ token: IO6EB7MM6TSCIL2TIOHC
 ## Flickr API
 key: 71542c171848da257b3caa214f7ed00f
 secret: c9da662b86becdd4
-
-## Klout
-key: u4r7nd3r7bj9ksxfx3cuy6hw

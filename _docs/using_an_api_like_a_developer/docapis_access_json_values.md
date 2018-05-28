@@ -119,6 +119,8 @@ To print a specific property from the response to the page, modify your code to 
 
 You can view the result here: <a href="http://idratherbewriting.com/learnapidoc/assets/files/weather-windspeed.html">idratherbewriting.com/learnapidoc/assets/files/weather-windspeed.html</a>.
 
+{% include random_ad2.html %}
+
 Here's what we changed:
 
 We added a named element to the body of the page, like this:

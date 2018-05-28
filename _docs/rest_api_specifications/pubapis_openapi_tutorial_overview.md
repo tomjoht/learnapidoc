@@ -132,6 +132,8 @@ The OpenAPI tutorial has 8 steps. Each step corresponds with one of the root-lev
 
 Note that the spec alone does nothing with your content. Other tools are required to read and display the spec document, or to generate client SDKs from it.
 
+{% include random_ad2.html %}
+
 My preferred tool for parsing and displaying information from the specification document is [Swagger UI](https://github.com/swagger-api/swagger-ui), but many other tools can consume the OpenAPI document and display it in different ways. See the [list of tools on Swagger here](https://swagger.io/commercial-tools/). Consider the screenshots from Swagger UI as one example of how the fields from the spec might be rendered.
 
 You can see OpenAPI spec rendered with Swagger UI in the following links:

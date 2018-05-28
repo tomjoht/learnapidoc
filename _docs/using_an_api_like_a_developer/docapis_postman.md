@@ -41,7 +41,7 @@ Of the various GUI clients available, Postman is probably the best option, since
 {: .note}
 A lot of times abstract concepts don't make sense until you can contextualize them with some kind of action. In this course, I'm following more of an act-first-then-understand type of methodology. After you do an activity, we'll explore the concepts in more depth. So if it seems like I'm glossing over concepts things now, like what a GET method is or a endpoint, hang in there. When we deep dive into these points later, things will be a lot clearer.
 
-{% include random_ad.html %}
+{% include random_ad2.html %}
 
 ## Make a request in Postman
 
@@ -70,6 +70,8 @@ In this exercise, you'll make a REST call using OpenWeatherMap's [current weathe
 	  The response appears in the lower window. For example:
 
     <img src="images/postmanopenweatherapiresponse.png" class="medium"/>
+
+{% include random_ad.html %}
 
 ## Save the request
 

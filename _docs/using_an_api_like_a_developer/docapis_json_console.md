@@ -124,7 +124,7 @@ For this activity, we'll use JavaScript to display the response on a web page. Y
 
     The following sections will explain this AJAX code a bit more.
 
-{% include random_ad.html %}
+{% include random_ad2.html %}
 
 ## The AJAX method from jQuery
 
@@ -143,6 +143,8 @@ Some important values are the `url`, which is the URI or endpoint you are submit
 Look at the code sample you created. The `settings` variable is passed in as the argument to the `ajax` method. jQuery makes the request to the HTTP URL asynchronously, which means it won't hang up your computer while you wait for the response. You can continue using your application while the request executes.
 
 You get the response by calling the method `done`. In the preceding code sample, `done` contains an anonymous function (a function without a name) that executes when `done` is called.
+
+{% include random_ad.html %}
 
 The response object from the `ajax` call is assigned to the `done` method's argument, which in this case is `response`. (You can name the argument whatever you want.)
 

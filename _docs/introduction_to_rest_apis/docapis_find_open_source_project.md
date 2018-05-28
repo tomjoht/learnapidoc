@@ -37,6 +37,8 @@ If you've already got an API project through your work, or if you're an engineer
 
 Finding the right project can be challenging, but it is critical to your portfolio and your success in breaking into API documentation. Fortunately, almost all open-source projects use GitHub, and GitHub provides various tags for documentation and "help wanted" in order to attract volunteers. (The task is actually so common, GitHub provides advice for [finding open source projects](https://help.github.com/articles/finding-open-source-projects-on-github/).)
 
+{% include random_ad2.html %}
+
 ## Criteria for the open-source project {#needed_criteria}
 
 The ideal open-source API project should meet the following criteria. The project should:
@@ -49,6 +51,8 @@ The ideal open-source API project should meet the following criteria. The projec
 ## Don't undervalue your doc skills
 
 You may think that it's too early to even think about joining let alone contributing to an API documentation project, especially when you're learning. When you interact with the open-source team, you might feel intimidated that you don't have any programming skills.
+
+{% include random_ad.html %}
 
 However, don't undervalue your role as a contributor to documentation (regardless of the contribution). Open-source projects suffer greatly from bad documentation. See [GitHub Survey: Open Source Is Popular, Plagued by Poor Docs and Rude People](https://adtmag.com/articles/2017/06/05/open-source-survey.aspx). A [2017 GitHub Survey](http://opensourcesurvey.org/2017/) found that
 

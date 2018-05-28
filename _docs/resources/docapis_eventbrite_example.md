@@ -9,10 +9,6 @@ section: resources
 path1: /resources.html
 ---
 
-https://www.eventbrite.com/myevent?eid=17920884849
-
-IO6EB7MM6TSCIL2TIOHC
-
 Use the [Eventbrite API](https://www.eventbrite.com/developer/v3/) to get the event title and description of an event.
 
 {% if site.format == "web" %}
@@ -21,9 +17,11 @@ Use the [Eventbrite API](https://www.eventbrite.com/developer/v3/) to get the ev
 {% endif %}
 
 ## About Eventbrite
+
 Eventbrite is an event management tool, and you can interact with it through an API to pull out the event information you want. In this example, you'll use the Eventbrite API to print a description of an event to your page.
 
 ## 1. Get an anonymous OAuth token
+
 To make any kind of requests, you'll need a token, which you can learn about in the [Authentication section](https://www.eventbrite.com/developer/v3/api_overview/authentication/).
 
 If you want to sign up for your own token, create and register your app [here](https://www.eventbrite.com/myaccount/apps/). Then click **Show Client Secret and OAuth Token** and copy the "Anonymous access OAuth token."
@@ -39,6 +37,8 @@ To get event information, we'll use the [events](https://www.eventbrite.com/deve
 Instead of calling them \"resources,\" the Eventbrite API uses the term \"objects.\"
 
 The events object allows us to "retrieve a paginated response of public event objects from across Eventbrite's directory, regardless of which user owns the event."
+
+{% include random_ad2.html %}
 
 The events object has a lot of different endpoints available. However, the GET `events/:id/` URL, described [here](https://www.eventbrite.com/developer/v3/endpoints/events/#ebapi-get-events-id) seems to provide what we need.
 
@@ -64,6 +64,8 @@ Find an ID of an event you want to use, such as [this event](https://www.eventbr
 <a href="https://www.eventbrite.com/myevent?eid=17920884849" class="noExtIcon"><img src="images/eventbrite_event.png" alt="Sample event" /></a>
 
 (You have to sign in to Eventbrite to see this event page.)
+
+{% include random_ad.html %}
 
 The event ID appears in the URL. Now populate the request with the ID of this event:
 

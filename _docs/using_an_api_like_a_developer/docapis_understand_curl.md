@@ -162,6 +162,8 @@ After the query string, each parameter is concatenated with other parameters thr
 
 ## Common curl commands related to REST
 
+{% include random_ad.html %}
+
 curl has a lot of possible commands, but the following are the most common when working with REST APIs.
 
 {% if site.format == "kindle" %}
@@ -240,7 +242,7 @@ Here's an example that combines some of these commands:
 curl -i -H "Accept: application/json" -X POST -d "{status:MIA}" http://personsreport.com/status/person123
 ```
 
-{% include random_ad.html %}
+{% include random_ad2.html %}
 
 We could also format this with line breaks to make it more readable:
 

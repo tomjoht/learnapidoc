@@ -117,6 +117,8 @@ Now let's merge the development branch into the master using a pull request work
 
     Now check your files and notice that the updates that were originally in the development branch now appear in master.
 
+{% include random_ad2.html %}
+
 ## Managing merge conflicts
 
 Suppose you make a change on your local copy of a file in the repository, and someone else changes the same file using the online GitHub.com browser interface. The changes conflict with each other. What happens?

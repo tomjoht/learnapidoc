@@ -33,7 +33,7 @@ This content doesn't embed well in print, as it contains YouTube videos. Please 
 
 The first question about a focus on publishing API documentation might be, *why?* What makes publishing API documentation so different from publishing other kinds of documentation such that it would merit its own section? How and why does the approach with publishing API docs need to differ from the approach for publishing regular documentation?
 
-{% include random_ad.html %}
+{% include random_ad2.html %}
 
 This is a valid question that I want to answer by telling a story. When I first transitioned to API documentation, I had my mind set on using DITA, and I converted a large portion of my content over to it.
 
@@ -54,6 +54,8 @@ His response, and my subsequent emphasis on static site generators, led me to un
 If devs are going to contribute to docs (or write docs entirely themselves), the tools need to fit their own processes and workflows. Their tooling is to treat [doc as code](pubapis_docs_as_code.html), committing it to [version control](pubapis_version_control.html), building outputs from the server, etc. They want to package the documentation in with their other code, checking it into their repos, and automating it as part of their build process.
 
 Why are engineers writing documentation in the first place, you might ask? Well, sometimes you really need engineers to contribute because the content is so technical, it's beyond the domain of non-specialists. If you want engineers to get involved, especially to write, you need to use developer tooling.
+
+{% include random_ad.html %}
 
 ### 2. HATs won't generate docs from source
 

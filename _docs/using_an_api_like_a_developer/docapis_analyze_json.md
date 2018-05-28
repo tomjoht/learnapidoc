@@ -69,7 +69,7 @@ The (unminified) response from the OpenWeatherMap weather endpoint looks like th
 }
 ```
 
-{% include random_ad.html %}
+{% include random_ad2.html %}
 
 ## JSON objects are key-value pairs
 
@@ -137,6 +137,8 @@ And objects can contain arrays in the value part of the key-value pair:
 "hobbies": ["swimming","biking","drawing","horseplaying"]
 }
 ```
+
+{% include random_ad.html %}
 
 Just remember, objects are surrounded with curly braces `{ }` and contain key-value pairs. Sometimes those values are arrays. Arrays are lists and are surrounded with square brackets `[ ]`.
 

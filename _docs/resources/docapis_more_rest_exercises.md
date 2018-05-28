@@ -20,6 +20,8 @@ In this resources section, I explore some other REST APIs and code for some spec
 
 There are several examples with different APIs. A challenge is listed for each exercise. First, try to solve the challenge on your own. Then follow along in the sections below to see how I approached it.
 
+{% include random_ad2.html %}
+
 In these examples, I usually printed the code to a web page to visualize the response. However, that part is not required in the challenge. (It mostly makes the exercise more fun to me.)
 
 ## Exercises
@@ -28,10 +30,11 @@ The following exercises are available:
 
 * [EventBrite example: Get event information](docapis_eventbrite_example.html)
 * [Flickr example: Retrieve a Flickr gallery](docapis_flickr_example.html)
-* [Klout example: Retrieve Klout influencers](docapis_klout_example.html)
 * [Aeris Weather Example: Get wind speed](docapis_aerisweather_example.html)
 
 ## Shortcuts for API keys
+
+{% include random_ad.html %}
 
 Each API requires you to use an API key, token, or some other form of authentication. You can register for your own API keys, or you can [use my keys here](http://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt).
 

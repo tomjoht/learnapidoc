@@ -23,6 +23,8 @@ You could actually use the default GitHub wiki as your doc site. Here's an examp
 
 Unlike other wikis, the GitHub wiki you create is its own repository that you can clone and work on locally. (If you look at the "Clone this wiki locally" link, you'll see that it's a separate repo from your main code repository.) You can work on files locally and then commit them to the wiki repository when you're ready to publish. You can also arrange the wiki pages into a sidebar.
 
+{% include random_ad2.html %}
+
 One of the neat things about using a GitHub repository is that you treat the [docs as code](pubapis_docs_as_code.html), editing it in a text editor, committing it to a repository, and packaging it up into the same area as the rest of the source code. Because the content resides in a separate repository, technical writers can work in the documentation right alongside project code without getting merge conflicts.
 
 With GitHub, you write wiki pages in Markdown syntax. There's a special flavor of Markdown syntax for GitHub wikis called "Github-flavored Markdown," or GFM. The [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/) allows you to create tables, add classes to code blocks (for proper syntax highlighting), and more.

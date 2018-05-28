@@ -27,6 +27,8 @@ An API might authenticate you but not authorize you to make a certain request.
 
 ## Consequences if an API lacks security
 
+{% include random_ad2.html %}
+
 Why do APIs even need authentication? For read-only APIs, sometimes users don't need keys. But most commercial APIs do require authorization in the form of API keys or other methods. If you *didn't* have any kind of security with your API, the following could happen:
 
 * Users could make unlimited amounts of API calls without any kind of registration, making a revenue model associated with your API difficult.

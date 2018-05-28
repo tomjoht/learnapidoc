@@ -17,6 +17,8 @@ path1: /restapispecifications.html
 
 Before jumping into Stoplight, let me provide some background about why I think it's an important tool, and why I've both listed it in this course and created an [activity for using it](pubapis_stoplight_activity). At the [2018 TC Camp conference](http://www.tccamp.org/) in Santa Clara, the camp organizers put on a full-day API workshop focused on OpenAPI and Swagger. I was excited to see this topic addressed in a workshop because I think coding the spec is both the most complicated and most important part of API documentation.
 
+{% include random_ad2.html %}
+
 I didn't attend the workshop myself, but I was chatting with a few who did. One attendee was a little frustrated that they spent *so much time in YAML* working on different parts of the OpenAPI spec definition. He said they actually spent most of the day in YAML, and it was kind of frustrating/tedious/boring. For this participant, this isn't what he imagined when he signed up to learn how to create interactive API docs.
 
 In the instructor's defense, I told my friend that describing an API using the OpenAPI spec *does* pretty much involve living in YAML all day, and it *is* tedious, highly prone to error, and technical. One of my favorite API bloggers, API evangelist Kin Lane, explains that "hand crafting even the base API definition for any API is time consuming." It is an activity "that swells quickly to being hours when you consider the finish work that's required" ([Automated Mapping Of The API Universe...](http://apievangelist.com/2016/02/05/automated-mapping-of-the-api-universe-with-charles-proxy-dropbox-openapi-spec-and-some-custom-apis/)).
@@ -86,6 +88,8 @@ In addition to putting the OpenAPI specification at the center of the API lifecy
 <figure><a class="noCrossRef" href="https://developer.shopgate.com/docs/"><img alt="Shopgate docs" src="images/shopgate.png" class="noExtIcon"/></a><figcaption>You can integrate your reference and non-reference documentation in Stoplight's hosted doc solution. Integrating these two content types has been a longtime challenge for tech writers in the API doc space.</figcaption></figure>
 
 Stoplight also allows you to create variables to use in *both* your specification and your how-to docs. Stoplight plans to take re-use one step further by allowing re-use of your [spec's component definitions](pubapis_openapi_step5_components_object.html) in your [non-reference documentation](docnonref.html) as well. (But this feature is still forthcoming.)
+
+{% include random_ad.html %}
 
 Although I generally like working directly in the code, I've found that Stoplight lets me focus more on the content and less on the details of the spec's format. Ideally, you can probably get developers and other project team members to populate reference content in Stoplight themselves, since this is an activity that needs to happen much earlier in the API design process anyway.
 

@@ -26,6 +26,8 @@ My preferred term is "endpoint" rather than "path," but to be consistent with th
 
 ## Start by listing the paths
 
+{% include random_ad2.html %}
+
 Start by listing the paths (endpoints) and their allowed operations (methods). For the `weather` endpoint in the OpenWeatherMap API, there is just 1 path with the `get` operation:
 
 ```yaml
@@ -73,6 +75,8 @@ paths:
       requestBody:
       callbacks:
 ```
+
+{% include random_ad.html %}
 
 Now we can remove a few unnecessary fields:
 

@@ -24,6 +24,8 @@ Here's an example of a resource description from the Mailchimp API's [Campaigns 
 
 <a class="noExtIcon" href="http://developer.mailchimp.com/documentation/mailchimp/reference/campaigns/"><img src="images/mailchimpcampaigns.png"/></a>
 
+{% include random_ad2.html %}
+
 Typically, an API will have a number of endpoints grouped under the same resource. Normally, you describe both the general resource and the individual endpoints. For example, the Campaigns resource has various endpoints that are also described:
 
 * POST `/campaigns`

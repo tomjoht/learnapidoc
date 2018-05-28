@@ -35,6 +35,8 @@ Then you switched perspectives and approached APIs from a technical writer's poi
 
 Although the technology landscape is broad, and there are many different technology platforms, languages, and code bases, most REST APIs have these same sections in common.
 
+{% include random_ad.html %}
+
 ## More practice with API requests and responses
 
 If you'd like to get more practice making requests to APIs and doing something with the response (even just printing it to the page), check out the additional tutorials in the [Resources](resources.html) section:
@@ -42,8 +44,9 @@ If you'd like to get more practice making requests to APIs and doing something w
 * [Overview for exploring other REST APIs](docapis_more_rest_exercises.html)
 * [EventBrite example: Get event information](docapis_eventbrite_example.html)
 * [Flickr example: Retrieve a Flickr gallery](docapis_flickr_example.html)
-* [Klout example: Retrieve Klout influencers](docapis_klout_example.html)
 * [Aeris Weather Example: Get wind speed](docapis_aerisweather_example.html)
+
+{% include random_ad2.html %}
 
 ## The next part of the course
 

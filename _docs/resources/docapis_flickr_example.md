@@ -25,6 +25,8 @@ In this example, we want to get all the photos from a [specific Flickr gallery](
 
 <a href="https://www.flickr.com/photos/flickr/galleries/72157647277042064/" class="noExtIcon"><img src="images/flickrgallery.png" alt="Flickr gallery" /></a>
 
+{% include random_ad2.html %}
+
 ## 1. Get an API key to make requests
 
 Before you can make a request with the Flickr API, you'll need an API key, which you can read more about [here](https://www.flickr.com/services/apps/create/). When you register an app, you're given a key and secret.
@@ -42,6 +44,8 @@ We use the [flickr.urls.lookupGallery](https://www.flickr.com/services/api/explo
 <a href="https://www.flickr.com/services/api/explore/flickr.urls.lookupGallery" class="noExtIcon"><img src="images/flickr_gallery_id.png" alt="Flickr lookupGallery endpoint endpoint" /></a>
 
 The gallery ID is `66911286-72157647277042064`. We now have the arguments we need for the [flickr.galleries.getPhotos](https://www.flickr.com/services/api/flickr.galleries.getPhotos.html) endpoint.
+
+{% include random_ad.html %}
 
 ## 3. Construct the request
 

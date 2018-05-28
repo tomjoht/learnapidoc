@@ -16,6 +16,8 @@ After completing the [API reference tutorial](docapis_api_reference_tutorial_ove
 
 If you've found an open source project, great. If you don't have a project but you still want to do the activity, select one of the API from the [list here](pubapis_apilist.html).
 
+{% include random_ad2.html %}
+
 To critique an API reference topic:
 
 1.  Locate one of the reference topics for a resource in the API.
@@ -42,6 +44,8 @@ To critique an API reference topic:
     **Request example:** Does the sample request work (with the right authorization)? Does it include a representative number of parameters? Is it formatted correctly in curl? Are any other languages shown with the sample request? Is the code syntax highlighted?
 
     **Response example:** Does the sample response match the sample request? Is it formatted and highlighted correctly? Is each element in the response described, along with the data type? Does the response documentation separate the example from the description, or combine the two? How are nested objects portrayed? Are any status and error codes listed?
+
+{% include random_ad.html %}
 
 ## Create or fix an API reference documentation topic
 

@@ -53,6 +53,8 @@ The resource URL includes both the base path and the endpoint. One problem with 
 
 ## Multiple request examples
 
+{% include random_ad2.html %}
+
 If you have a lot of parameters, consider including several request examples. In the CityGrid Places API, the [`where` endpoint](http://docs.citygridmedia.com/display/citygridv2/Places+API#PlacesAPI-WhereSearchHTTPSEndpoint) is as follows:
 
 ```

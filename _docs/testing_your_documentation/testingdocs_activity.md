@@ -20,6 +20,8 @@ With the [open-source API project you're working with](docapis_find_open_source_
 
 Test the content. Run all the endpoint requests. Proceed through all the steps in the tutorial. Do all the identified tasks with the topic. As you test out the content, identify any incorrect or missing or inaccurate information.
 
+{% include random_ad2.html %}
+
 ## 2. Find out test details
 
 Identify who performs the testing on the project. Reach out and interact with the QA lead for the project to gather as much information as you can about how testing is done. Find answers to the following questions:
@@ -29,3 +31,5 @@ Identify who performs the testing on the project. Reach out and interact with th
 * How are the tests executed? Automatically? Manually?
 * What kind of testing is done before a release?
 * If you encounter a bug while testing, how should you report it?
+
+{% include random_ad.html %}

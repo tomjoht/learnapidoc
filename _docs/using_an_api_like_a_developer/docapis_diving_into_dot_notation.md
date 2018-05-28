@@ -120,6 +120,8 @@ You can view the correct page here: [http://idratherbewriting.com/learnapidoc/as
 
 ## Showing wind conditions on the page
 
+{% include random_ad2.html %}
+
 At the beginning of the section on [Using an API like a developer](docapis_scenario_for_using_weather_api.html#endgoal), I showed an example of [embedding the wind speed](docapis_scenario_for_using_weather_api.html#endgoal) and other details on a website. Now let's revisit this code example and see how it's put together.
 
 Copy the following code into a basic HTML page:
@@ -147,7 +149,7 @@ Copy the following code into a basic HTML page:
          }
 
            $.ajax(settings)
-         
+
            .done(function (response) {
              console.log(response);
 

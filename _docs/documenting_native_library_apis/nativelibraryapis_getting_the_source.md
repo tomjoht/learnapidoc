@@ -19,7 +19,7 @@ In order to understand documentation for Java APIs, it helps to have a context o
 
 The [sample Java project](https://github.com/tomjoht/sample-java-project) is a little application about different tools that a coyote will use to capture a roadrunner. There are two classes (ACMESmartphone and Dynamite) and another class file called App that references the classes.
 
-{% include random_ad.html %}
+{% include random_ad2.html %}
 
 This program doesn't really do anything except print little messages to the console, but it's hopefully simple enough to be instructive in its purpose. The purpose of the app is to demonstrate different doc tags, their placement, and how they get rendered in the Javadoc.
 
@@ -38,6 +38,8 @@ git clone https://github.com/tomjoht/sample-java-project
 Or click **Clone in Desktop** and navigate to the right path in Github Desktop.
 
 (If you don't want to clone the source, you could click **Download ZIP** and download the content manually.)
+
+{% include random_ad.html %}
 
 ## Open the project in Eclipse
 

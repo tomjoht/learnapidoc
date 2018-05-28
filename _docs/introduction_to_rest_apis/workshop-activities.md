@@ -36,6 +36,8 @@ curl -I -X GET "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&ap
 
 Swap in your own API key for the `appid` value in the URL's query string.
 
+{% include random_ad2.html %}
+
 ### Activity: Postman client
 
 1.  Download [Postman](https://www.getpostman.com/).
@@ -145,6 +147,8 @@ Slides: [OpenAPI and Swagger](http://idratherbewriting.com/openapi-and-swagger/#
 
    * [Stoplight — visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html)
    * [Activity: Use Stoplight to edit your OpenAPI spec](pubapis_stoplight_activity.html)
+
+{% include random_ad.html %}
 
 ### Activity: Swagger Editor
 

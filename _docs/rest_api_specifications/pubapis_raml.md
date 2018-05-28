@@ -27,6 +27,8 @@ Similar to OpenAPI, after you create a RAML file that describes your API, it can
 
 ## Auto-generating client SDK code
 
+{% include random_ad.html %}
+
 It's important to note that with these REST API specifications (not just RAML), you're not just describing an API to generate a nifty doc output with an interactive console. There are tools that can also generate client SDKs and other code from the spec into a library that you can integrate into your project. This can help developers to more easily make requests to your API and receive responses.
 
 Additionally, the interactive console can provide a way to test out your API before developers code it. Mulesoft offers a "mocking service" for your API that simulates calls at a different baseURI. The idea of the mocking service is to design your API the right way from the start, without iterating with different versions as you try to get the endpoints right.
@@ -35,7 +37,7 @@ Additionally, the interactive console can provide a way to test out your API bef
 
 To understand the proper syntax and format for RAML, you need to read the [RAML spec](http://raml.org/spec.html) and look at some examples. See also [this RAML tutorial](http://raml.org/docs.html#step-introduction) and this [video tutorial](https://www.youtube.com/embed/5o_nExedezw?autoplay=1).
 
-{% include random_ad.html %}
+{% include random_ad2.html %}
 
 Here's the OpenWeatherMap API we've been using in this course formatted in the RAML spec. (I actually just used [API Transformer](https://apimatic.io/transformer) to convert my OpenAPI 3.0 spec to RAML.) It's highly similar to the OpenAPI spec.
 

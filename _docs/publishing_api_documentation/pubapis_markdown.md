@@ -84,7 +84,6 @@ Although you can also work with DITA in a text editor, it's a lot harder to read
 
 Now compare the same syntax with Markdown:
 
-
 ```markdown
 ## Print a page
 
@@ -96,6 +95,8 @@ I wrote about this in [Why developers will never adopt DITA
 ](http://idratherbewriting.com/2014/09/30/why-developers-will-never-adopt-dita/). Granted, the XML example has a lot more semantic information packed into it, which the Markdown version lacks. So in theory the two aren't the same. However, the end result, if generated out to HTML, will probably look the same.
 
 Although you can read the XML and get used to it, most people who write in XML use specialized XML editors (like OxygenXML) that make the raw text more readable. Simply by working in XML all day, you get used to working with all the tags.
+
+{% include random_ad2.html %}
 
 But if you send a developer an XML file, they probably won't be familiar with all the tags, nor the nesting schema of the tags. Developers tend to be allergic to XML for at least these reasons:
 

@@ -47,6 +47,8 @@ The topics include a workflow map to help guide and orient you each step of the 
 
 ## After the tutorial
 
+{% include random_ad2.html %}
+
 When we're finished, the end result will look [like this](docapis_finished_doc_result.html). You'll then have an opportunity to [create an API reference topic](docapis_api_reference_activity.html) with your own [open-source API project](docapis_find_open_source_project.html).
 
 {: .note}

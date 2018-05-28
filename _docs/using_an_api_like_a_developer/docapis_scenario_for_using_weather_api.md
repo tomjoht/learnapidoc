@@ -46,7 +46,7 @@ The concept and general techniques are more or less the same.
 
 Let's find a simple weather API that we can use for some exercises. There are [many good weather API options for developers](https://superdevresources.com/weather-forecast-api-for-developing-apps/). Let's use [OpenWeatherMap](https://openweathermap.org), because their service is easy to use, free, and stable.
 
-{% include random_ad.html %}
+{% include random_ad2.html %}
 
 {% include activity.html %}
 
@@ -87,6 +87,8 @@ APIs differ considerably in their design, presentation, responses, and other det
 Each weather API has a totally different approach to documentation. As you'll see going through this course, the variety and uniqueness of each API doc site (even when approaching the same topic &mdash; a weather forecast) presents a lot of challenges to tech writing teams. Not only do presentations vary, terminology with APIs varies as well.
 
 As I mentioned in [REST is a style, not a standard](docapis_what_is_a_rest_api.html#rest-is-a-style-not-a-standard), REST APIs are an architectural style following common characteristics and principles; they don't all follow the same standard or specification. You really have to read the documentation to understand how to use the APIs.
+
+{% include random_ad.html %}
 
 ## Answer some questions about the APIs
 

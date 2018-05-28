@@ -36,6 +36,8 @@ In the [Swagger tutorial](pubapis_swagger.html), you explored the [Swagger Petst
 
 6.  To run Swagger UI locally, some browsers (such as Chrome or Safari) may block the local JavaScript. Try opening the index.html file in Firefox. If it doesn't load without error in Firefox, either upload the project to a web server or [run a local web server](#local_web_server) in that folder.
 
+{% include random_ad2.html %}
+
 ## Run a Local Web Server {#local_web_server}
 
 A local web server simulates a web server on your local machine. To run a simple Python web server in the directory, you can follow use this [simple HTTP server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server).
@@ -60,6 +62,7 @@ A local web server simulates a web server on your local machine. To run a simple
 
     <a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html" class="noExtIcon"><img class="medium" src="images/sunset_and_sunrise_swaggerui.png"/></a>
 
+{% include random_ad.html %}
 
 ## Test your Swagger UI project
 

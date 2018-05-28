@@ -21,7 +21,7 @@ Riona Macnamara, a technical writer at Google, says that several years ago, inte
 
 Riona says they helped solve the problem by integrating documentation into the engineer's workflow. Rather than trying to force-fit writer-centric tools onto engineers, they fit the documentation into developer-centric tools. Developers now write documentation in Markdown files in the same repository as their code. The developers also have script to display these Markdown files in a browser directly from the code repository.
 
-{% include random_ad.html %}
+{% include random_ad2.html %}
 
 The method quickly gained traction, with hundreds of developer projects adopting the new method. Now instead of authoring documentation in a separate system (using writer-centric tools), developers simply add the doc in the same repository as the code. This ensures that anyone who is using the code can also find the documentation. Engineers can either read the documentation directly in the Markdown source, or they can read it displayed in a browser.
 
@@ -48,6 +48,8 @@ In short, treating docs like code means to use the same systems, processes, and 
 {% endif %}
 
 ## Advantages to docs-as-code approaches for docs {#docsascode_advantages}
+
+{% include random_ad.html %}
 
 Just because you *can* manage docs like code, should you? What exactly are the advantages of treating docs like code? Here are a few reasons to embrace docs-as-code tools for documentation.
 

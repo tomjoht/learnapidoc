@@ -75,7 +75,7 @@ A lot of APIs require you to post requests containing JSON messages in the body.
     {: .tip}
     Feel free to run this same request a few times more. REST APIs are \"idempotent,\" which means that running the same request more than once won't end up duplicating the results (you just create one pet here, not multiple pets). Todd Fredrich explains idempotency by [comparing it to a pregnant cow](http://www.restapitutorial.com/lessons/idempotency.html). Let's say you bring over a bull to get a cow pregnant. Even if the bull and cow mate multiple times, the result will be just one pregnancy, not a pregnancy for each mating session.
 
-{% include random_ad.html %}
+{% include random_ad2.html %}
 
 ### Update your pet
 
@@ -153,6 +153,8 @@ Unfortunately, your pet has died. It's time to delete your pet from the pet regi
 This example allowed you to see how you can work with curl to create, read, update, and delete resources. These four operations are referred to as CRUD and are common to almost every programming language.
 
 Although Postman is probably easier to use, curl lends itself to power-level usage. Quality assurance teams often construct advanced test scenarios that iterate through a lot of curl requests.
+
+{% include random_ad.html %}
 
 ## Import curl into Postman
 

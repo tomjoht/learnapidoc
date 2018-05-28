@@ -1,8 +1,7 @@
 ---
 title: Locations for API doc writer jobs
-published: false
+permalink: jobapis_location.html
 ---
-
 
 I recently received a question about API documentation jobs for technical writers. A reader asks,
 
@@ -44,6 +43,10 @@ This post, [Silicon America: A Map of Tech Hubs in the United States](http://www
 
 It lists places such as New York City, New Orleans, Los Angeles, Seattle, Phoenix, Portland, Charleston, D.C., Austin, Salt Lake City, Kansas City, and others as cities that are nipping at the heels of Silicon Valley.
 
+{% include random_ad.html %}
+
 (I wonder if anyone has ever calculated the ratio of engineering jobs to technical writing jobs based on this data.)
 
 Tech companies will continue to grow and expand outside of Silicon Valley. There's not enough space here, and the number of engineers gets fewer and fewer as companies grow. Google is buying up huge plots of land, and so is Facebook, just to keep a hold of resources and housing in this area.
+
+{% include random_ad2.html %}

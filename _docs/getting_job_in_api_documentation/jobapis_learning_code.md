@@ -44,6 +44,8 @@ Additionally, while engineers can fill in the deep technical knowledge needed, n
 
 Just today I spent a good chunk of time trying to find information on a corporate wiki, only to be met with mountains of poorly written pages, abandoned content, impossible to navigate spaces, and other issues. It was a completely frustrating experience.
 
+{% include random_ad2.html %}
+
 Anyone who has a wiki at their company usually has a similar experience. Because no one really cares about internal wikis, companies let them degenerate into content junkyards.
 
 ## Times when deeper tech knowledge is needed
@@ -61,6 +63,8 @@ See [this video recording on YouTube](https://www.youtube.com/embed/lmNHBg20ql0?
 Clearly, Neiman argues for a higher level of coding proficiency than Wood or Rhea. The level of coding knowledge required no doubt depends on the position, environment, and expectations. If you're in a situation where the code is over your head, developers may send you chunks of code to add to the documentation.
 
 Without the technical acumen to fully understand, test, and integrate the code in meaningful ways, you will be at the mercy of engineers and their terse explanations or cryptic inline comments. Your role will be reduced more to scribe than writer.
+
+{% include random_ad.html %}
 
 Neiman says in one company, he tested out the code from engineers and found that much of the code relied on programs, utilities, or other configurations already set up on the developers' computers.
 

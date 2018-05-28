@@ -14,6 +14,8 @@ These workshops were fast-paced and introduced the writers to a host of new tool
 
 After the workshops, I put the material on my site, idratherbewriting.com, and opened it up to the broader world of technical writers. I did this for several reasons. First, I felt the tech writing community needed this information. There are very few books or courses that dive into API documentation strategies for technical writers.
 
+{% include random_ad2.html %}
+
 Second, I knew that through feedback, I could refine the information and make it better. Almost no content is finished on its first release. Instead, content needs to iterate over a period of time through user testing and feedback. This is the case with help content, and it's the same for course material as well.
 
 Finally, the content would help drive traffic to my site. How would people discover the material if they couldn't find it online? If the material were only trapped in a print book or behind a firewall, it would be difficult to discover. Content is a rich information asset that draws traffic to any site. It's what people primarily search for online.

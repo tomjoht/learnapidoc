@@ -10,6 +10,8 @@ path1: /testingdocs.html
 
 Walking through all the steps in documentation yourself is critical to producing high-quality, accurate instructions. But the more complex setup you have, the more difficult it can be to test all of the steps. Still, if you want to move beyond merely editing and publishing engineer-written documentation, you’ll need to build sample apps or set up the systems necessary to test the API docs. These tests should mirror what actual users will do as closely as possible.
 
+{% include random_ad2.html %}
+
 I believe so strongly in testing API doc content that I've created an entire section devoted to this topic. This section includes three topics:
 
 * [Set up a test environment](testingdocs_test_environment.html)

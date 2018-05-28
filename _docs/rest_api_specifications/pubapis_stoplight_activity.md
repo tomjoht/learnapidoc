@@ -17,7 +17,11 @@ If you landed on this activity before learning about Stoplight, read [Stoplight 
 
 In this activity, you'll download and explore Stoplight. To speed things up, you'll start with an OpenAPI definition that you paste into the Stoplight editor, and then you'll make some modifications to it using Stoplight's visual modeling tools.
 
+{% include random_ad2.html %}
+
 You can use Stoplight in the browser or as a web app. For simplicity, we'll use the browser version. For the OpenAPI spec that you paste in, use the custom specification you created in an [earlier activity with the spec](pubapis_openapi_activity.html). However, because Stoplight supports only the 2.0 version of the spec (as do most tools currently), you'll need to convert your 3.0 version to 2.0 using the [API Transformer](https://apimatic.io/transformer) (a nifty converter tool from APIMATIC). Alternatively, you can use the [2.0 version of the Sunrise and Sunset OpenAPI spec](http://idratherbewriting.com/learnapidoc/assets/files/swagger/openapi_sunrise_sunset_20.json) that I've already converted, or the [2.0 version of the OpenWeather Map API](http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openweathermap_swagger20.json) that I've already converted.
+
+{% include random_ad.html %}
 
 To download and populate Stoplight with an existing OpenAPI spec:
 

@@ -38,6 +38,8 @@ Even so, you don't need to be a programmer. You just need a minimal understandin
 
 You know what happens when engineers write &mdash; the content is cryptic and often incomplete. Usually the developer assumes everyone is as knowledgeable as he or she is, and any kind of extra explanatory detail, examples, cross-references, glossaries, or other helpful information is omitted.
 
+{% include random_ad2.html %}
+
 ## My approach to teaching native library API doc
 
 There are many books and online resources you can consult to learn a specific programming language. This section of the course will not try to [teach you Java](nativelibraryapis_java_crash_course.html). However, to understand a bit about Java API documentation (which uses a document generator called [Javadoc](http://www.oracle.com/technetwork/articles/java/index-jsp-135444.html)), you will need some understanding of Java.

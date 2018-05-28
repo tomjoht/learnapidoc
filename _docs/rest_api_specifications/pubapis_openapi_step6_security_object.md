@@ -32,6 +32,8 @@ REST APIs can use a number of different security approaches to authorize request
 
 In this tutorial, I'll explain the API key method, as it's the most common and it's what I'm most familiar with. If your API uses [OAuth 2.0](docapis_more_about_authorization.html#oauth-20) or another method, you'll need to read the [Security Scheme information](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#security-scheme-object) for details on how to configure it. However, all the security methods largely follow the same pattern.
 
+{% include random_ad.html %}
+
 ## API key authorization
 
 The sample OpenWeatherMap API we're using in this course uses an API key passed in the URL's query string (rather than the header). If you submit a request without the API key in the query string (or without a valid API key), the server denies the request.
@@ -87,6 +89,8 @@ Properties you can use in the `securitySchemes` object include the following:
 * `openIdConnectUrl`: Used with `openIdConnect` type authorization.
 
 ## Swagger UI appearance
+
+{% include random_ad2.html %}
 
 In the Swagger UI, you see the `description` and other security details in the Authorization modal (which appears when you click the Authorization button):
 

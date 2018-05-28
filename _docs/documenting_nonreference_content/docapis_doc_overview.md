@@ -20,6 +20,8 @@ The overview explains what you can do with the API (high-level business goals), 
 
 Too often with API documentation (perhaps because the content is often written by developers), the documentation gets quickly mired in technical details without ever explaining clearly what the API is used for. Don't lose sight of the overall purpose and business goals of your API by getting lost in the endpoints.
 
+{% include random_ad.html %}
+
 The overview grounds users with a high-level understanding of the system. This high-level understanding is critical to grasping the system as a whole. It allows the details to fit into a larger conceptual framework. In an article in Simplifying Complexity called [Reduction, layering, and distillation as a strategy for simplicity](http://idratherbewriting.com/simplifying-complexity/reduction-layering-distillation.html), I dive into ways that users consume information. We start at the high-level, getting a gist of what something is about from the title and description, and we work our way into more details. This overview provides this initial orientation for the user.
 
 {% include course_image.html size="medium" border="true" filename="nonref_overview" ext_print="png" ext_web="svg" alt="API overview" caption="The API overview provides high-level detail about the purpose, audience, and market need for your API." %}
@@ -58,4 +60,4 @@ Lyft's API overview starts out in a similar way, with sections titled "What is L
 
 IBM Watson Assistant starts off with a brief summary of the service, followed by a high-level diagram of the system and the summary about how to implement it. Including a diagram of how your API works and how developers can implement it gives users a good grounding in what to expect, such as the level of complexity and time it will take to incorporate the API.
 
-{% include random_ad.html %}
+{% include random_ad2.html %}

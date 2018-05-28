@@ -25,16 +25,18 @@ The most recording is a workshop I gave to STC/WTD Denver (the event description
 
 **Part I**:
 
-<iframe  width="640" height="360" src="https://www.youtube.com/embed/Ivum3YbOWQ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Ivum3YbOWQ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 **Part II**:
 
-<iframe  width="640" height="360" src="https://www.youtube.com/embed/zV6m-6_j56w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/zV6m-6_j56w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 **Part III**:
-<iframe  width="640" height="360" src="https://www.youtube.com/embed/LSLg6Oy1OzM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/LSLg6Oy1OzM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Audio only recordings
+
+{% include random_ad.html %}
 
 **Part I**:
 
@@ -65,6 +67,8 @@ If you're driving across the country and you want to listen to all audio combine
 <div class="audioControls">
 <p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/denverapiworkshop_all.mp3" type="audio/mpeg" /></audio></p>
 </div>
+
+{% include random_ad2.html %}
 
 ## Publishing API Docs
 

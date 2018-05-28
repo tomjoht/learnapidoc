@@ -31,6 +31,8 @@ In contrast to Javadoc, Doxygen also allows you to incorporate external files wr
 
 Doxygen is maintained by a single developer and, like Javadoc, hasn't changed much over the years. In my opinion, the interface is highly dated and kind of confusing.
 
+{% include random_ad2.html %}
+
 ## Integrating builds automatically
 
 In a lot of developer shops, document generators are integrated into the software build process automatically. Doxygen allows you to create a configuration file that can be run from the command line (rather than using the frontend GUI). This means when developers build the software, the reference documentation is automatically built and included in the output.

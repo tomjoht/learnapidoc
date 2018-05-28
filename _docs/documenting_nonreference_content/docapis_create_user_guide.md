@@ -18,6 +18,8 @@ Up until this point, we've been focusing on the endpoint (or reference) aspect o
 
 ## Essential sections in a user guide
 
+{% include random_ad.html %}
+
 Whereas the endpoint documentation explains how to use each of the endpoints, you also need to explain how to use the API overall. There are other sections common to API documentation that you must also include:
 
 * [API Overview](docapis_doc_overview.html)
@@ -34,7 +36,7 @@ Whereas the endpoint documentation explains how to use each of the endpoints, yo
 
 Since the content of these sections varies based on your API, it's not practical to explore each of these sections using the same weather API like we did with the API endpoint reference documentation. Instead, I'll provide general descriptions and overviews of what these sections contain.
 
-{% include random_ad.html %}
+{% include random_ad2.html %}
 
 ## Other tasks and tutorials
 

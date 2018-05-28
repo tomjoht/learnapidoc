@@ -89,6 +89,8 @@ Now pretend you are the project owner, and you see that you received a new pull 
 
 ## Add collaborators to your project
 
+{% include random_ad2.html %}
+
 You might need to add collaborators to your Github project so they can commit edits to a branch. If other project members aren't collaborators and they want to make edits, they will receive an error. (See [Inviting collaborators to a personal repository](https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/).)
 
 If people don't have write access, they can [fork the repo](https://help.github.com/articles/fork-a-repo/) instead of making edits on a branch on the same project. Forking a project clones the entire repository, though, rather than creating a branch within the same repository. The fork (copy) then exists in the user's personal GitHub account. You can merge a forked repository (this is the typical model for open-source projects with many outside contributors), but this scenario probably is less common for technical writers working with developers on the same projects.

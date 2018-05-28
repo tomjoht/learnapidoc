@@ -67,6 +67,8 @@ Status and error codes may not be readily apparent when you're documenting your 
 
 As a result, you may need to experiment a bit to ferret out all the codes. Specifically, you might need to try to break the API to see all the potential error codes. For example, if you exceed the rate limit for a specific call, the API might return a special error or status code. You would especially need to document this custom code. A troubleshooting section in your API might make special use of the error codes.
 
+{% include random_ad2.html %}
+
 ## How to list status codes
 
 Your list of status codes can be done in a basic table or definition list, somewhat like this:

@@ -80,3 +80,5 @@ If you're on Windows 8.1 and you encounter an error that says, "The program can'
 * Use double quotes in the Windows command line. (Windows doesn't support single quotes.)
 * Don't use backslashes (`\`) to separate lines. (This is for readability only and doesn't affect the call on Macs.)
 * By adding `-k` in the curl command, you can bypass curl's security certificate, which may or may not be necessary.
+
+{% include random_ad2.html %}

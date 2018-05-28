@@ -1,0 +1,32 @@
+{% if site.format == "web" %}<div class="singlePostAds">
+    <script>
+var contentsb=new Array()
+
+contentsb[0]='<div class="randomAd"><div class="bs-callout bs-callout-info bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div>Stoplight lets you create a valid OpenAPI spec without having to work in code. Instead of fiddling with YAML syntax, you can use Stoplight’s visual designer to describe your APIs\' endpoints, parameters, requests, responses, and more. <b>Learn more at <a href="http://stoplight.io/" class="noCrossRef">Stoplight.io</a></b>.</div></div>'
+contentsb[1]='<div class="randomAd"><div class="bs-callout bs-callout-success bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div>Stoplight lets your team collaborate on the OpenAPI spec using visual modeling tools that everyone on the team can use. You can work together on the OpenAPI spec in a central online space or through local client apps that sync the information. <b>Learn more at <a href="http://stoplight.io/" class="noCrossRef">Stoplight.io</a></b>.</div></div>'
+contentsb[2]='<div class="randomAd"><div class="bs-callout bs-callout-warning bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div>Did you know that you can re-use common definitions (for parameters, requests, and responses) across multiple places in the same spec file or even across multiple spec files with Stoplight? <b>Learn more at <a href="http://stoplight.io/" class="noCrossRef">Stoplight.io</a></b>.</div></div>'
+contentsb[3]='<div class="randomAd"><div class="bs-callout bs-callout-important bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div>Stoplight lets you integrate your non-reference documentation with your reference documentation in one site, creating a seamless, integrated experience with your docs. <b>Learn more at <a href="http://stoplight.io/" class="noCrossRef">Stoplight.io</a></b>.</div></div>'
+contentsb[4]='<div class="randomAd"><div class="bs-callout bs-callout-danger bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div>Stoplight lets you switch between visual views and code views of the spec depending on your authoring preference. You’re not limited to either the code or the visual designer -- you can switch to the view you prefer. <b>Learn more at <a href="http://stoplight.io/" class="noCrossRef">Stoplight.io</a></b>.</div></div>'
+contentsb[5]='<div class="randomAd"><div class="bs-callout bs-callout-info bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div>Do you find documenting JSON schemas tricky and tedious? Stoplight lets you automatically generate JSON schema documentation in your spec when you paste in blocks of JSON and tell Stoplight to auto-generate the spec code. <b>Learn more at <a href="http://stoplight.io/" class="noCrossRef">Stoplight.io</a></b>.</div></div>'
+contentsb[6]='<div class="randomAd"><div class="bs-callout bs-callout-success bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div>Are you spending countless hours in YAML just trying to get the spec to validate? Try using Stoplight’s visual editor to simplify development with the OpenAPI, and bring in the rest of the product team to collaborate on the spec. <b>Learn more at <a href="http://stoplight.io/" class="noCrossRef">Stoplight.io</a></b>.</div></div>'
+contentsb[7]='<div class="randomAd"><div class="bs-callout bs-callout-warning bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div>With Stoplight, creating the OpenAPI spec is just the first step in API development. You can then use the OpenAPI spec to drive the rest of the API life cycle, from prototyping to testing to interactive docs and more. <b>Learn more at <a href="http://stoplight.io/" class="noCrossRef">Stoplight.io</a></b>.</div></div>'
+contentsb[8]='<div class="randomAd"><div class="bs-callout bs-callout-important bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div>Stoplight promotes a design-first philosophy. Developing good design-first practices at your organization will minimize future cost, speed up your time to market, and lead to more consistent, higher quality APIs. <b>Learn more at <a href="http://stoplight.io/" class="noCrossRef">Stoplight.io</a></b>.</div></div>'
+contentsb[9]='<div class="randomAd"><div class="bs-callout bs-callout-danger bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div>At Stoplight, everything starts with design. Our visual designer makes it easy for anybody in your organization to model and document APIs, no matter the complexity. <b>Learn more at <a href="http://stoplight.io/" class="noCrossRef">Stoplight.io</a></b>.</div></div>'
+
+var i=0
+//variable used to contain controlled random number
+var random
+//while all of array elements haven't been cycled thru
+while (i<contentsb.length){
+//generate random num between 0 and arraylength-1
+random=Math.floor(Math.random()*contentsb.length)
+//if element hasn't been marked as "selected"
+if (contentsb[random]!="selected"){
+document.write(contentsb[random])
+//mark element as selected
+contentsb[random]="selected"
+break;
+}
+}
+</script>
+</div>{% endif %}

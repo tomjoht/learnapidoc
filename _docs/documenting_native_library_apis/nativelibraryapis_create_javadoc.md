@@ -61,6 +61,8 @@ Here are some other characteristics of Javadoc:
 
     Browse to the destination location and open the index.html file in your browser to view the files.
 
+{% include random_ad2.html %}
+
 ## Javadoc and error checking
 
 Javadoc also checks your tags against the actual code. If you have parameters, exceptions, or returns that don't match up with the parameters, exceptions, or returns in your actual code, then Javadoc will show some warnings.

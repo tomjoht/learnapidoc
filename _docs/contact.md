@@ -7,17 +7,9 @@ type: plain
 progress: false
 ---
 
-Feel free to ask me any questions you like. You can contact me directly using one of the following methods, or use the contact form below.
-
-<ul>
-  <li><strong>Email: </strong><a href="mailto:tomjoht@gmail.com">tom@idratherbewriting.com</a></li>
-  <li><strong>Twitter: </strong><a href="http://twitter.com/tomjohnson" target="\_blank">@tomjohnson</a></li>
-  <li><strong>Write the Docs Slack:</strong><a href="https://writethedocs.slack.com/team/tomjohnson" target="\_blank">@tomjohnson</a></li>
-</ul>
+Feel free to ask me any questions you like. You can contact me directly using the form below:
 
 <div style="margin-top:30px;"></div>
-
-For your convenience, you can also contact me through the form below:
 
 <div style="margin-bottom:15px; padding-bottom:10px;">
 <div id="wufoo-mlxbnfd14yabfn">

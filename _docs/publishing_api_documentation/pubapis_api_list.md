@@ -138,3 +138,5 @@ Note that Programmableweb lists only open web APIs, meaning APIs that you can ac
 {% include activity.html %}
 
 Look at about 5 different APIs (choose any of those listed on the page). Look for one thing that the APIs have in common. I provide a list of patterns in the next topic: [Design patterns with API doc sites](pubapis_design_patterns.html).
+
+{% include random_ad2.html %}

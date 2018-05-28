@@ -8,7 +8,6 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-
 {% include workflow_map.html step="1" map="content/openapi_tutorial_map.html"  %}
 {% if site.format == "pdf" or site.format == "kindle" %}
 <img src="images/openapistep1.png"/>
@@ -27,6 +26,8 @@ Before diving into the first step of the OpenAPI tutorial here, read the [OpenAP
 * The OpenAPI tutorial shows how the spec information gets populated in [Swagger UI](https://github.com/swagger-api/swagger-ui).
 * The OpenAPI tutorial is a subset of the information in both the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification) and the [OpenAPI specification commentary](https://swagger.io/docs/specification/about/).
 * The OpenAPI tutorial covers the 3.0 version of the OpenAPI spec, which is the latest version.
+
+{% include random_ad2.html %}
 
 ## The root-level objects in OpenAPI spec
 
@@ -50,6 +51,8 @@ The whole document (the object that contains these 8 root level objects) is call
 "OpenAPI" refers to the specification; "Swagger" refers to the tooling (at least from Smartbear) that supports the OpenAPI specification. For more details on the terms, see [What Is the Difference Between Swagger and OpenAPI?](https://blog.smartbear.com/open-source/what-is-the-difference-between-swagger-and-openapi/)
 
 ## Swagger Editor
+
+{% include random_ad.html %}
 
 As you work on your specification document, use the online [Swagger Editor](https://swagger.io/swagger-editor/). The Swagger Editor provides a split view &mdash; on the left where you write your spec code, and on the right you see a fully functional Swagger UI display. You can even submit requests from the Swagger UI display in this editor.
 

@@ -29,8 +29,9 @@ You click a class name to dive into the details.
 
 When you view a class page, you're presented with a brief summary of the fields, constructors, and methods for the class. Again this is just an overview. When you scroll down, you can see the full details about each of them.
 
-<img src="images/fulldetails.png" alt="full class details" />
-http://docs.oracle.com/javase/7/docs/api/
+<a href="http://docs.oracle.com/javase/7/docs/api/" class="noCrossRef"><img src="images/fulldetails.png" alt="full class details" /></a>
+
+{% include random_ad2.html %}
 
 ## Other navigation
 

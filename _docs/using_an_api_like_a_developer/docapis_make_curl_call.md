@@ -18,6 +18,8 @@ In this section, you'll use curl to make the same weather API requests you made 
 
 ## Prepare the weather request in curl format
 
+{% include random_ad.html %}
+
 1.  Assuming you completed the exercises in the [Postman tutorial](docapis_postman.html), go back into Postman.
 2.  On any call you've configured, right below the Save button in Postman, click the **Code** link, then select **cURL** from the drop-down select, and click **Copy to Clipboard**.
 
@@ -62,7 +64,7 @@ Make a curl request for each of the requests you entered in Postman.
 
 If you're using Windows to submit a lot of curl requests, and the curl request require you to submit JSON in the request body, you might run into issues with single versus double quotes. Some API endpoints (usually for POST methods) require you to submit content in the body of the message request. The body content is formatted in JSON. Since you can't use double quotes inside of other double quotes, you'll run into issues in submitting curl requests in these scenarios.
 
-{% include random_ad.html %}
+{% include random_ad2.html %}
 
 Here's the workaround. If you have to submit body content in JSON, you can store the content in a JSON file. Then you reference the file with an `@` symbol, like this:
 

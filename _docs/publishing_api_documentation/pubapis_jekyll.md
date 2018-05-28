@@ -17,7 +17,7 @@ Static site generators are a breed of website compilers that package up a group 
 
 Jekyll is a Ruby-based static site generator, meaning it uses Ruby as the underlying programming language to compile the website. This site, my [blog](http://idratherbewriting.com), and the documentation for my past two jobs were created using Jekyll. With Jekyll, you can publish a fully functional tech comm website that includes content re-use, conditional filtering, variables, PDF output, and everything else you might need as a technical writer.
 
-{% include random_ad.html %}
+{% include random_ad2.html %}
 
 Here's a documentation theme that I developed for Jekyll:
 
@@ -52,6 +52,8 @@ Admittedly, the Markdown format is easy to use but also susceptible to error, es
 ## Automating builds from Github
 
 Let's do an example in publishing in [CloudCannon](https://cloudcannon.com/), "The Cloud CMS for Jekyll," using the Documentation Theme for Jekyll (the theme I built). You don't need to have a Windows machine to facilitate the building and publishing &mdash; you'll do that via CloudCannon and Github. This tutorial will show you how to plug into a robust hosting platform that reads content stored and managed on GitHub.
+
+{% include random_ad.html %}
 
 ## Set up your doc theme on Github
 

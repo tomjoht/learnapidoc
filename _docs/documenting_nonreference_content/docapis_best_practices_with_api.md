@@ -10,6 +10,10 @@ path1: /docnonref.html
 ---
 
 {: .note}
-This page is under construction. I'll be finishing it by May 1, 2018.
+This page is under construction. I'll be finishing it soon...
 
 {% include course_image.html url="" size="medium" border="true" filename="nonref_bestpractices" ext_print="png" ext_web="svg" alt="Best practices" caption="Best practices" %}
+
+{% include random_ad2.html %}
+
+{% include random_ad.html %}

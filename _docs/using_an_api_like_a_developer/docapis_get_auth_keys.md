@@ -29,6 +29,8 @@ Keep in mind how users authorize calls with an API &mdash; this is something you
 
 In order to run the code samples in this course, you will need to use your own API keys, since these keys are usually treated like personal passwords and not given out or published openly on a web page. (Even so, if you want to borrow my API keys, you can view them [here](http://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt).)
 
+{% include random_ad.html %}
+
 ## Get an OpenWeatherMap API key {#openweathermap_apikey}
 
 To get an authorization key to use the OpenWeatherMap API:
@@ -59,7 +61,7 @@ After your app registers, you should see an ID, secret, and namespace for the ap
 
 ## Text editor tips
 
-{% include random_ad.html %}
+{% include random_ad2.html %}
 
 When you're working with code, you use a text editor (to work in plain text) instead of a rich text editor (which would provide a WYSIWYG interface). Many developers use different text editors. Here are a few choices:
 

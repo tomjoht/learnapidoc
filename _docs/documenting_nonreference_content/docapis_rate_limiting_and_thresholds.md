@@ -22,6 +22,8 @@ Companies with APIs make money by charging for access to the API, but they usual
 
 If your site has hundreds of thousands of visitors a day, and each page reload calls an API endpoint, you want to be sure the API can support that kind of traffic.
 
+{% include random_ad.html %}
+
 This kind of information is probably within the domain of marketing rather than tech docs. However, developers will still want to know a few key behaviors around the threshold:
 
 When you exceed the threshold, do your calls get throttled with slower responses, do you get overcharges for every extra call, or do the responses simply return a particular status code (if so, which one)?
@@ -39,6 +41,8 @@ Here are a few examples of rate limiting sections in documentation:
 {% include course_image.html url="https://developer.github.com/v3/#rate-limiting" filename="githubratelimiting" ext_print="png" ext_web="png" alt="GitHub rate limiting" caption="GitHub rate limiting" %}
 
 GitHub's documentation explains rate limits for authenticated versus unauthenticated requests, the header returned and the meaning of the rate limiting titles (`X-RateLimit-Limit`, `X-RateLimit-Remaining`, and `X-RateLimit-Reset`), how to check your current usage, increasing the rate limit for a specific application, what happens when rate limits are abused, and more.
+
+{% include random_ad2.html %}
 
 Here's a great example of the rate limits section from the Github API:
 

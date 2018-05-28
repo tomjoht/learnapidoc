@@ -79,6 +79,8 @@ Because the purpose of the course is to help you learn, there are many activitie
 {: .note}
 I refer to the content here as a "course" instead of a book or a website, primarily because I include a lot of exercises throughout in each section, and I find that people who want to learn API documentation prefer a more hands-on "course" experience. However, this content is just as much a book or website as it is a course.
 
+{% include random_ad.html %}
+
 ## No programming skills required
 
 As for the needed technical background for the course, you don't need any programming background or other prerequisites, but it will help to know some basic HTML, CSS, and JavaScript.
@@ -112,6 +114,8 @@ The most common reason people take this course is to transition to an API docume
 * [Activity: Create an OpenAPI specification document](pubapis_openapi_activity.html)
 * [Activity: Create your own Swagger UI display](pubapis_swagger_ui_activity.html)
 * [Activity: Generate a Javadoc from a sample project](nativelibraryapis_create_javadoc.html)
+
+{% include random_ad2.html %}
 
 ## Video recordings
 

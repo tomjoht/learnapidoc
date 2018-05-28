@@ -8,15 +8,14 @@ sidebar: docapis
 section: docnonref
 path1: /docnonref.html
 ---
-
-{: .note}
-This page is under construction. I'll be finishing it by May 1, 2018.
-
-{% comment %}
-{% include course_image.html url="" size="medium" border="true" filename="nonref_faq" ext_print="png" ext_web="svg" alt="FAQ" caption="FAQ" %}
- {% endcomment %}
+{% include course_image.html size="medium" border="true" filename="nonref_faq" ext_print="png" ext_web="svg" alt="FAQ" caption="FAQ" %}
 
 <img src="/images/faqsversusgoals.png"/>
+
+Although FAQs aren't all the common in API docs, they do tend to be common in documentation in general. I treat them here because sometimes development groups start writing documentation themselves, and they might begin with an FAQ that gets longer and longer. In these situations, it's a good idea to understand how FAQs should be designed.
+
+* TOC
+{:toc}
 
 ## How the FAQ begins
 
@@ -30,6 +29,8 @@ Here's how the FAQ typically begins. Someone on the team (it could be an enginee
 The team member (again, usually not a technical writer) cranks out quick responses to these random questions with about the same effort as typing an email.
 
 As the project progresses, and especially as the team starts to do beta testing and gathers feedback from actual users, the list of FAQs grows. Now there are 20+ FAQs instead of an original 10. At this point the team member may try to group the FAQs to give them some sense of organization.
+
+{% include random_ad2.html %}
 
 The final week before the release, everyone and their cousin is checking out the software and begins asking many more questions. What the team originally thought was intuitive and obvious is suddenly called into question. More questions are added:
 
@@ -59,6 +60,8 @@ The FAQ is a bad idea for a number of reasons:
 4. The laundry list of questions, spanning everything from trivial to important, are no longer questions that are "frequently asked." They're just a long string of miscellaneous questions. No one wants to title it "Miscellaneous questions" or "Random questions" or "A bunch of questions in an endless list," but that's what it is.
 
 5. These questions rarely originate from actual users. They're often safe, sanitized, and positive questions imagined by the product team. As such, they're not really "questions" either. The product team  just uses a question-like format to give the impression of answering user's questions. In this light, since the questions are neither "frequent" or actually "asked" by users, the topic is an outright falsehood from the start.
+
+{% include random_ad.html %}
 
 ## FAQ is an easy writing model
 

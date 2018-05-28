@@ -14,6 +14,8 @@ In case you'd like to know a little bit about me, I'm currently based in the San
 
 Like most technical writers, I stumbled into technical writing after working in other fields. I first earned a BA in English and an MFA in nonfiction creative writing, and then started out my career as a writing teacher. After a stint in teaching, I transitioned into marketing copywriting, and then turned to technical writing (mainly for financial reasons).
 
+{% include random_ad2.html %}
+
 Despite my initial resistance to the idea of technical writing (I thought it would be boring), I found that I actually liked technical writing &mdash; a lot more than copywriting. Technical writing combined my love for writing with my fascination for technology. I got to play with tools and handle all aspects of content production from designing web styles to configuring publishing workflows.
 
 I worked as a traditional technical writer for a number of years, mostly documenting applications with user interfaces. One day, my organization decided to lay off the tech writing team.
@@ -27,6 +29,8 @@ Although I don't have a programming background, I've always been somewhat techni
 Still, I'm by no means a programmer. As a technical writer, deep technical knowledge is helpful but not always essential, as it tends to be too specialized and comes at the expense of other skills and knowledge. What matters most is the ability to learn something new, across a lot of different domains and products, even if it's challenging at first. And then to articulate the knowledge in easy-to-consume ways.
 
 That's probably why you're taking this course &mdash; because you want to develop your skills and knowledge to increase your capabilities at work, enhance your skillset's marketability, and maybe figure out how to document the new API your company is rolling out.
+
+{% include random_ad.html %}
 
 You're in the right place. By the time you finish this course, you'll have a solid understanding of how to document APIs. You'll be familiar with the right tools, approaches, and other techniques you need to be successful with developer documentation projects. If you have feedback during any part of the course, feel free to drop me a line or comment on one of the pages.
 

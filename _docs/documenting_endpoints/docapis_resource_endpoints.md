@@ -105,6 +105,8 @@ In a later section on [design patterns](pubapis_design_patterns.html), I explore
 
 How do you refer to the endpoints within an API reference topic? Referring to the "`/aqi` endpoint" or to the "`/weatherdata`" endpoint doesn't make a huge difference. But with more complex APIs, using the endpoint to talk about the resource can get problematic.
 
+{% include random_ad2.html %}
+
 At one company I worked at, our URLs for the Rewards endpoints looked like this:
 
 ```html

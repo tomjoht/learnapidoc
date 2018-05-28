@@ -189,7 +189,7 @@ layout: null
 
 In your `jekyll serve` command, configure the `destination` to build your output into an htdocs folder where you have [XAMPP server](https://www.apachefriends.org/index.html) running. With each build, check the display to see whether it's valid or not.
 
-{% include random_ad.html %}
+{% include random_ad2.html %}
 
 By storing the values in data files, you can then include them elsewhere in your doc as well. For example, you might have a parameters section in your doc where you would also include the `{% raw %}{{site.data.parameters.acme_parameter}}{% endraw %}` description.
 
@@ -202,6 +202,8 @@ Another approach is to use a tool like [Readme.io](http://readme.io/) that allow
 Sites like [Apiary](https://apiary.io/) and [Mulesoft](https://www.mulesoft.com/) let you import your OpenAPI spec while also add your own custom doc pages. These sites offer full-service management for APIs, so if your engineers are already using one of these platforms, it could make sense to store your docs there too.
 
 Cherryleaf has an interesting post called [Example of API documentation portal using MadCap Flare](https://www.cherryleaf.com/blog/2017/06/example-api-documentation-portal-using-madcap-flare/). In the post, Ellis Pratt shows a proof of concept with a Flare project that reads a OpenAPI spec and generates content from it. Although Ellis is still working on this approach, if he's successful it could be a huge win at integrating tech comm tools with API specification formats.
+
+{% include random_ad.html %}
 
 ## Option 6: Change perspectives -- Having two sites isn't so bad
 

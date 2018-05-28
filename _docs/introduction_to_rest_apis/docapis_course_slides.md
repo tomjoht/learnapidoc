@@ -16,6 +16,7 @@ If you're teaching this material in a workshop, you can use the slides below. Th
 
 <a href="https://github.com/tomjoht/intro-to-api-documentation" class="noCrossRef"><button type="button" class="btn btn-default"><i class="fa fa-github pr-1"></i> Slides on GitHub</button></a>
 
+{% include random_ad.html %}
 
 ## Part II: OpenAPI and Swagger
 
@@ -36,3 +37,5 @@ If you're teaching this material in a workshop, you can use the slides below. Th
 <a href="http://idratherbewriting.com/publishing-api-docs/#/" class="noCrossRef"><img src="images/publishingapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 <a href="https://github.com/tomjoht/publishing-api-docs/#/" class="noCrossRef"><button type="button" class="btn btn-default"><i class="fa fa-github pr-1"></i> Slides on GitHub</button></a>
+
+{% include random_ad2.html %}

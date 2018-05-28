@@ -335,9 +335,6 @@ folders:
   - title: "Flickr example: Retrieve a Flickr gallery"
     jurl: /docapis_flickr_example.html
 
-  - title: "Klout example: Retrieve Klout influencers"
-    jurl: /docapis_klout_example.html
-
   - title: "Aeris Weather Example: Get wind speed"
     jurl: /docapis_aerisweather_example.html
 

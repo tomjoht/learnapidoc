@@ -41,6 +41,8 @@ The bulk of documentation often explains how to use the endpoints together to ac
 
 If you choose to automate your documentation using one of these specifications, it likely will be a separate site that showcases your endpoints and provides API interactivity. You'll still need to write many more pages of documentation about how to actually use your API.
 
+{% include random_ad2.html %}
+
 Having multiple documentation outputs (rather than one seamless whole) presents a challenge when creating and publishing API documentation. I explore this challenge in more depth in [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).
 
 ## Video presentation of this section

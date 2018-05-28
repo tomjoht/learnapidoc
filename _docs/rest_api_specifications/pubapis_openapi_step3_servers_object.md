@@ -33,6 +33,8 @@ Each of your endpoints (called "paths" in the spec) will be appended to the serv
 
 ## Options with the server URL
 
+{% include random_ad.html %}
+
 You have some flexibility and configuration options for your server URL. You can specify multiple server URLs that might relate to different environments (test, beta, production). If you have multiple server URLs, users can select the environment from a servers drop-down box. For example, you can specify multiple server URLs like this:
 
 ```yaml
@@ -50,6 +52,8 @@ In Swagger UI, here's how the servers appear to users with multiple server URLs:
 <a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapi_serversurl.png" class="medium" /></a>
 
 If you have just one URL, you still see a drop-down box but with just one option.
+
+{% include random_ad2.html %}
 
 You can also incorporate variables into the server URL that can be populated at runtime by your server. Additionally, if different paths (endpoints) require different server URLs, you can add the `servers` object as a property in the [`path`](pubapis_openapi_step4_paths_object.html) object's operation object. The locally declared servers URL will override the global servers URL.
 

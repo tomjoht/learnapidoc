@@ -50,6 +50,8 @@ public class Bicycle{
 
 You mostly need to focus on `public` classes, since these are the classes that will be used by your audience. The `public` classes are the API of the library.
 
+{% include random_ad2.html %}
+
 ## Methods
 
 Methods are subroutines or actions that the class can do. For example, with a bicycle you can pedal, brake, and turn. A class can have as many methods as it needs.

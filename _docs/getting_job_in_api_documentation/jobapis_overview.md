@@ -29,6 +29,8 @@ Take a look at Algolia's API for an example. You can view the documentation for 
 
 <a href="https://www.algolia.com/doc" class="noExtIcon"><img src="images/algolia_clientsdks.png" alt="Algolia client implementations" /></a>
 
+{% include random_ad.html %}
+
 Although users could construct their own code when using the REST endpoints, most developers would rather leverage existing code to just copy and paste what they need.
 
 When I worked at Badgeville, we developed a collection of JavaScript widgets that code developers could easily copy and paste into their web pages, making a few adjustments as needed. Sure developers could have created their own JavaScript widget code based on calls to the REST endpoints, but sometimes it can be tricky to know how to retrieve all the right information and then manipulate it in the right way in your language.
@@ -36,6 +38,8 @@ When I worked at Badgeville, we developed a collection of JavaScript widgets tha
 Remember that developers are typically using a REST API as a *third-party* service. The developer's main focus is his or her own company's code; they're just leveraging your REST API as an additional, extra service. As such, the developer wants to just get in, get the code, and get out. This is why companies need to provide multiple client references in as many languages as possible &mdash; these client implementations make it easy for developers to implement the API.
 
 If you were recruiting for a technical writer to document Algolia, how would you word the job requirements? Can you now see why even though the core work involves documenting the REST API, it would also be good to have an "ability to read code in one or more programming languages, such as Java, C++, or Python."
+
+{% include random_ad2.html %}
 
 ## Technical writers who are former programmers
 

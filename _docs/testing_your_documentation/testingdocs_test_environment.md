@@ -17,6 +17,8 @@ The first step to testing your instructions is to set up a test environment. Wit
 
 ## Types of test environments
 
+{% include random_ad2.html %}
+
 The type of test environment you set up depends on your product and company. In the following sections, I explain testing setup details for different scenarios:
 
 * [Testing from a test server](#test_servers)
@@ -51,6 +53,8 @@ If the setup to build locally is complex, you may need to ask a developer for he
 At one company, to gain access to the test system, we had to jump over a series of security hurdles. For example, connections to the web services from internal systems required developers to go through an intermediary server. So to connect to the web server test instance, you had to SSL to the intermediary server, and then connect from the intermediary to the web server. (This wasn't something users would need to do, just internal engineers.)
 
 The first time I attempted this, I asked a developer to help me set this up. I carefully observed the commands and steps he went through on my computer. I later documented it for future knowledge purposes, and other engineers used my doc to set up the same access.
+
+{% include random_ad.html %}
 
 Many times, developers aren't too motivated to set up your system, so they may give you a quick explanation about installing this and that tool. But never let a developer say "Oh, you just do a, b, and c." Then you go back to your station and nothing works, or it's much more complicated than he or she let on. It can take persistence to get everything set up and working the first time.
 

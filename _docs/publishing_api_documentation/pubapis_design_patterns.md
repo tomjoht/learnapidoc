@@ -151,6 +151,8 @@ Given that REST APIs follow similar characteristics and sections, wouldn't it ma
 
 My point here is that you shouldn't be daunted by the coding challenges around creating your own API templates. The Aviator theme shows one custom approach, and I highlight it here with code samples to demonstrate the complexity and custom-nature of defining your own templates.
 
+{% include random_ad2.html %}
+
 ## Pattern 2: A website platform {#website_platform}
 
 Many API doc sites provide *one integrated website* to present all of the information. You usually aren't opening help in a new window, separate from the other content. The website is branded with the same look and feel as the product. Here's an example from Yelp:

@@ -22,6 +22,8 @@ In the [step 4](pubapis_openapi_step4_paths_object.html), when we described the 
 
 ## Reasons to use the components object {#reused_parameters}
 
+{% include random_ad2.html %}
+
 Describing the schema of complex responses can be one of the more challenging aspects of the OpenAPI spec. Although you can define the schema directly in the `requestBody` or `responses` object, you typically don't list it there for two reasons:
 
 * You might want to re-use parts of the schema in other requests or responses. It's common to have the same object, such as `units` or `days`, appear in multiple places in an API. Through the `components` object, OpenAPI allows you to re-use these same definitions in multiple places.
@@ -50,6 +52,8 @@ The properties for each object inside `components` are the same as they are when
 ## Re-using response objects {#reusing_objects}
 
 In the previous topic, I explained how to [re-use parameter definitions in components](pubapis_openapi_step4_paths_object.html#reusing_definitions), so I won't re-explain the approach. Here we'll cover how to re-use the schema definitions in the `responses` objects.
+
+{% include random_ad.html %}
 
 Although we don't need to reuse the `weather` response in this exercise (because we're only documenting one endpoint), it'll be better to organize this schema definition under `components` anyway because it reduces the detail under the `paths` object. If you recall in the previous step ([OpenAPI tutorial step 4: The paths object](pubapis_openapi_step4_paths_object.html), the `responses` object for the `weather` endpoint looked like this:
 

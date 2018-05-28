@@ -19,6 +19,8 @@ Javadoc is a document generator that looks through your Java source files for sp
 
 The following are the most common tags used in Javadoc. Each tag has a word that follows it. For example, `@param latitude` means the parameter is "latitude".
 
+{% include random_ad2.html %}
+
 <div markdown="span" class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> To see a lengthy Javadoc tag, see this <a href="http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#examples">example from Oracle</a>.</div>
 
 The following are some common Javadoc tags:
