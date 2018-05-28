@@ -49,7 +49,7 @@ As a technical writer, you'll tackle each element of a reference topic in REST A
 
 Diving into these sections will give you a solid understanding of how to document REST APIs. You'll also learn how to document the [non-reference sections for an API](docnonref.html), such as the [getting started](docapis_doc_getting_started_section.html), [status and error codes](docapis_doc_status_codes.html), and request [authorization](docapis_more_about_authorization.html) sections.
 
-{% include random_ad.html %}
+{% include random_ad2.html %}
 
 Finally, you'll dive into different ways to [publish REST API documentation](publishingapis.html), exploring tools and specifications such as [GitHub](pubapis_github_wikis.html), [Jekyll](pubapis_jekyll.html), and other [Docs-as-code approaches](pubapis_docs_as_code.html). You'll learn how to leverage templates, build interactive API consoles so users can try out requests and see responses, and learn how to manage your content through [version control](pubapis_version_control.html).
 
@@ -114,8 +114,6 @@ The most common reason people take this course is to transition to an API docume
 * [Activity: Create an OpenAPI specification document](pubapis_openapi_activity.html)
 * [Activity: Create your own Swagger UI display](pubapis_swagger_ui_activity.html)
 * [Activity: Generate a Javadoc from a sample project](nativelibraryapis_create_javadoc.html)
-
-{% include random_ad2.html %}
 
 ## Video recordings
 
