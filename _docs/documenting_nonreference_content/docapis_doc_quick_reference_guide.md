@@ -1,5 +1,5 @@
 ---
-title: How to create the quick reference guide
+title: Quick reference guides
 permalink: /docapis_doc_quick_reference.html
 keywords:
 course: "Documenting REST APIs"
@@ -9,28 +9,71 @@ section: docnonref
 path1: /docnonref.html
 ---
 
-{% comment %}
-{% include course_image.html url="" size="medium" border="true" filename="nonref_quickreference" ext_print="png" ext_web="svg" alt="Quick reference" caption="Quick reference" %}
- {% endcomment %}
-
-For those power users who just want to glance at the content to understand it, provide a quick reference guide. The quick reference guide serves a different function from the getting started guide. The getting started guide helps beginners get oriented; the quick reference guide helps advanced users quickly find details about endpoints and other API details.
+The quick reference guide serves a different function from the [getting started guide](docapis_doc_getting_started_section.html). While the getting started guide helps beginners get oriented by providing an beginning-to-end tutorial to make a simple API request, the quick reference guide helps users get a glimpse of the system as a whole often by providing a hierarchical diagram of the API endpoints.
 
 * TOC
 {:toc}
 
-## Sample quick reference guide
-Here's a quick reference guide from Eventful's API:
+## The need for quick reference guides
 
-<a href="http://api.eventful.com/docs" class="noExtIcon"><img src="images/eventfulquickreference.png" alt="Eventful quick reference" /></a>
+Whether for end-user documentation or developer documentation, the quick reference guide provides a 1-2-page guide that provides a brief summary of the core tasks and features in the system.
+
+{% include course_image.html size="large" border="true" filename="nonref_quickreference" ext_print="png" ext_web="svg" alt="Quick reference" caption="Quick reference guides compress the key information into a brief format for easy consumption" %}
+
+The quick reference guide should provide the user with just enough information to get the gist of what the system is about, including the key endpoints and tasks. Often times with APIs, the endpoints have relationships with each other that can be depicted visually. Here's an API diagram I created at a previous company:
+
+{% include course_image.html size="medium" url="images/sample_api_diagram.pdf" filename="sample_api_diagram.pdf" ext_print="png" ext_web="png" alt="Sample quick reference guide format" caption="A quick reference guide format" %}
+
+The text is Greeked here for privacy reasons, so the logic may not be entirely apparent. But with this API, the endpoints could be organized into different groups. Some of the groups had multiple levels within the endpoint, and multiple include options for each endpoint. I created this diagram in Adobe Illustrator and distributed it as a PDF. Developers found it useful because it tried to make sense of the API as a whole, how all the endpoints fit together in a logical harmony.
+
+Outside of API documentation, quick reference guides tend to focus more on tasks. If you have a service to setup or configure, a more narrative rather than visual format might make sense. Here's a sample layout for such a guide:
+
+{% include course_image.html url="images/sample_qrg.png" filename="quickreferenceguideformat" ext_print="png" ext_web="png" alt="Quick reference guide format focusing on tasks" caption="Quick reference guide format focusing on tasks" %}
+
+However, with API documentation, usually the quick reference guide focuses on some visual grouping or display of the endpoints, since this is what constitutes the core functionality in the system.
+
+## Learning benefits from distilled information
+
+The information in the quick reference usually can’t be single sourced, since it’s not just an excerpt from the docs but rather a more briefly written summary or depiction of the entire system. As a result, many times it seems like yet another deliverable we don’t have time to write. But for the best user experience, the quick reference guide provides incalculable value to users.
+
+When you create the quick reference guide, try to condense the most important information into one or two pages that users can print and pin up on their wall. By "condense" I don't mean shrink the font to 6 point, decrease the leading, and eliminate all white space. With the quick reference guide, you take something that's robust and complex, and distill it down to its essence a way that still maintains clarity to users.
+
+Through this distillation, quick reference guides provide a unique advantage for users to understand the material. Providing a high-level overview of a system helps users get a sense of the whole before getting lost in the details. I wrote about the importance of distillation here: [Reduction, layering, and distillation as a strategy for simplicity](http://idratherbewriting.com/simplifying-complexity/reduction-layering-distillation.html).
+
+Distilling large amounts of information into concisely worded titles, summaries, headings, mini-TOCs, and topic sentences can facilitate information consumption and comprehension. Quick reference guides take the principle of distillation to another level by compressing the whole system into a bite-sized deliverable. This helps users consume vast amounts of information quickly.
+
+Quick reference guides are like the poetry of technical writing. The goal is not just to be brief or concise. With poetry, the poet attempts to evoke a mood or paint a moment, and in that brief moment, capture the entire essence of the whole. Writing a quick reference guide involves much the same effort. It's not that you merely cut words to make the documentation shorter, or restrict the output to a few topics, but that you try to compress the documentation as a whole and express in its minimalist equivalent.
+
+I'll grant that the task is probably impossible for technical material. Still, the attempt is there. The philosophy remains the same. Teach us how to use this manual in 5 minutes rather than 5 hours. It's a philosophy of simplification and linguistic efficiency.
 
 {% include random_ad2.html %}
 
-An online quick reference guide can serve as a great entry point into the documentation. Here's a quick reference from Shopify about using Liquid:
+Don't be deceived by the brevity and scope of the quick reference guide. In wrangling with layout, scope, and concision, you might spend several days writing just one page. But when you're done you can practically frame it.
 
-<a href="http://cheat.markdunkley.com/" class="noExtIcon"><img src="images/shopifyqrg.png" alt="Shopify quick reference guide" /></a>
+## Sample quick reference guides
 
-## Visual quick reference guides
+**Eventful**
 
-You can also make a visual illustration showing the API endpoints and how they relate to one another. I once created a one page endpoint diagram at Badgeville, and I found it so useful I ended up taping it on my wall. Although I can't include it here for privacy reasons, the diagram depicted the various endpoints and methods available to each of the resources (remember that one resource can have many endpoints).
+{% include course_image.html url="http://api.eventful.com/docs" filename="eventfulquickreference" ext_print="png" ext_web="png" alt="Eventful quick reference guide" caption="Eventful quick reference guide" %}
+
+Eventful provides a one-page quick list of all the endpoints in the API, organized by resource group. Each endpoint is described in about half a line, so that you can get a gist of them all quickly. For example, the description for the "/events/get" is "Get an event record." But if you click for more details, the more descriptive definition is "Given an event ID, returns the event data associated with that event. See [http://eventful.com/events/E0-001-000278174-6](ttp://eventful.com/events/E0-001-000278174-6) for an example interface."
+
+There's a certain value you get from seeing all the endpoints at a glance. By looking from high-above at the forest, you can see the shape of the forest as a whole. Sure, you may not even know what kinds of trees the forest contains, but you can comprehend other details that aren't apparent when you're next to a single tree.
+
+**Parse**
+
+{% include course_image.html url="http://docs.parseplatform.org/rest/guide/#quick-reference" filename="parsequickreferenceguide" ext_print="png" ext_web="png" alt="Parse platform quick reference guide" caption="Parse quick reference guide" %}
+
+The quick reference for Parse is similar to Eventful in that it's a long list of endpoints, this time grouped in tables. One design choice that differs with Parse is that this quick reference page is just a section within one long page of docs. In their approach, all documentation is on the same page, but as you scroll down, different entries in the sidebar highlight.
+
+Sometimes, developers like the one-page approach because it reduces information fragmentation and lets them use Ctrl+F to find all instances of a keyword. I explored the tradeoffs in this one-page approach in [Single-page docs versus "Click Insanity"](http://idratherbewriting.com/2014/01/12/single-page-docs-versus-click-insanity/).
+
+
+
+**Shopify**
+
+{% include course_image.html url="http://cheat.markdunkley.com/" filename="shopifyquickreferenceguide" ext_print="png" ext_web="png" alt="Shopify quick reference guide" caption="Shopify quick reference guide" %}
+
+This Shopify quick reference guide isn't an API but it does show the filters, variables, and other functions available in Liquid, a scripting language for developers often building e-commerce sites. Here Shopify takes advantage of collapse and expand functionality to compress the information. This quick reference guide is handy because it lets you browse all the available functionality in Liquid at once, so you can know what to dive into for more information. It's like a map of the system.
 
 {% include random_ad.html %}
