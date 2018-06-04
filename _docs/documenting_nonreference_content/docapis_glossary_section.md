@@ -1,9 +1,9 @@
 ---
-title: Glossary section
+title: Glossary
 permalink: docapis_glossary_section.html
 keywords:
 course: "Documenting REST APIs"
-weight: 5.9
+weight: 5.91
 sidebar: docapis
 section: docnonref
 path1: /docnonref.html
@@ -18,7 +18,7 @@ The glossary defines all the terms that might be unique to your company or API.
 
 Usually, providing a glossary in your documentation seems like going above and beyond the call of duty. However, simply defining these terms has tremendous benefit for the writer too, not just the users. Defining terms helps you recognize the special lingo that might be used with your API &mdash; terms that you may have become immune to by hearing them so frequently in project meetings. By defining the terms, you ensure you're using them more precisely and accurately (rather than switching around with synonyms for simple variety).
 
-{% include course_image.html size="medium" border="true" filename="nonref_glossary" ext_print="png" ext_web="svg" alt="Glossary" caption="Glossary" %}
+{% include course_image.html size="medium" border="true" filename="nonref_glossary" ext_print="png" ext_web="svg" alt="Glossary" caption="Glossaries not only provide clarity about terms for users, they also help the writers think more clearly and consistently about the topic" %}
 
 ## Localization
 
@@ -52,7 +52,7 @@ Lyft's glossary doesn't have a ton of terms (there are about 10), but they're sp
 
 **Yext**
 
-{% include course_image.html url="" filename="http://developer.yext.com/docs/glossary/" ext_print="png" ext_web="png" alt="Yext glossary" caption="Yext glossary" %}
+{% include course_image.html url="http://developer.yext.com/docs/glossary/" filename="glossary_yext"  ext_print="png" ext_web="png" alt="Yext glossary" caption="Yext glossary" %}
 
 Note how in the Yext glossary, when industry standard terms such as "SSO" are defined, the definitions cover the company's specific use of SSO; the general term SSO isn't simply defined. Yext explains, "Single Sign On, which is a feature available to enterprise clients and partners." And then goes on to explain more details around partners' versus employees of enterprise clients and how they can each use SSO.
 

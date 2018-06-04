@@ -1,5 +1,5 @@
 ---
-title: Documenting getting started section
+title: Getting started
 permalink: /docapis_doc_getting_started_section.html
 keywords:
 course: "Documenting REST APIs"
@@ -20,7 +20,7 @@ Following the Overview section, you usually have a "Getting started" section tha
 
 The Getting Started topic is somewhat like the typical Hello World tutorial in developer documentation, but with an API. The tutorial holds a user's hand from start to finish in producing the simplest possible output with the system. For Hello World tutorials, the simplest output might just be a message that says "Hello World." For an API, it might be a successful response from the most basic request.
 
-{% include course_image.html size="small" filename="timetohelloworld" ext_print="png" ext_web="svg" alt="Getting started tutorials are like Hello World tutorials." caption="Think of getting started tutorials as a kind of Hello World tutorial with the API. How long would it take for a developer to get the most basic possible response using your API" %}
+{% include course_image.html size="medium" filename="timetohelloworld" ext_print="png" ext_web="svg" alt="Getting started tutorials are like Hello World tutorials." caption="Think of getting started tutorials as a kind of Hello World tutorial with the API. How long would it take for a developer to get the most basic possible response using your API" %}
 
 Both Hello World tutorials and Getting started tutorials with APIs share the same goal: To show a user how to use your API to get the simplest and easiest result, so they get a sense of how it works and feel productive.
 

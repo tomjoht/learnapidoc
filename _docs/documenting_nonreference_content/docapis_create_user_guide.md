@@ -32,7 +32,6 @@ Whereas the endpoint documentation explains how to use each of the endpoints, yo
 * [Quick reference guide](docapis_doc_quick_reference.html)
 * [API best practices](docapis_best_practices_with_api.html)
 * [Glossary](docapis_glossary_section.html)
-* [FAQ](docapis_faq.html)
 
 Since the content of these sections varies based on your API, it's not practical to explore each of these sections using the same weather API like we did with the API endpoint reference documentation. Instead, I'll provide general descriptions and overviews of what these sections contain.
 

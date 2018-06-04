@@ -1,5 +1,5 @@
 ---
-title: Documenting the API overview
+title: API overview
 permalink: /docapis_doc_overview.html
 keywords:
 course: "Documenting REST APIs"

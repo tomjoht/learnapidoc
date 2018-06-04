@@ -1,5 +1,5 @@
 ---
-title: "Documenting status and error codes"
+title: "Status and error codes"
 permalink: /docapis_doc_status_codes.html
 redirect_from:
 - http://idratherbewriting.com/learnapidoc/docapis_doc_response_codes.html

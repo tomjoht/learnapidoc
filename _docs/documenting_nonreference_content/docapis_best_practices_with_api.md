@@ -3,7 +3,7 @@ title: API best practices
 permalink: docapis_best_practices_with_api.html
 keywords:
 course: "Documenting REST APIs"
-weight: 5.6
+weight: 5.9
 sidebar: docapis
 section: docnonref
 path1: /docnonref.html
