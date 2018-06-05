@@ -9,7 +9,7 @@ section: docnonref
 path1: /docnonref.html
 ---
 
-Following the Overview section, you usually have a "Getting started" section that details the first steps users need to start using the API. This section often includes the whole process from beginning to end, compressed as simply as possible.
+Following the [API Overview section](docapis_doc_overview.html), you usually have a "Getting started" section that details the first steps users need to start using the API. This section often includes the whole process from beginning to end, compressed as simply as possible.
 
 {% if site.format == "web" %}
 * TOC
@@ -20,9 +20,9 @@ Following the Overview section, you usually have a "Getting started" section tha
 
 The Getting Started topic is somewhat like the typical Hello World tutorial in developer documentation, but with an API. The tutorial holds a user's hand from start to finish in producing the simplest possible output with the system. For Hello World tutorials, the simplest output might just be a message that says "Hello World." For an API, it might be a successful response from the most basic request.
 
-{% include course_image.html size="medium" filename="timetohelloworld" ext_print="png" ext_web="svg" alt="Getting started tutorials are like Hello World tutorials." caption="Think of getting started tutorials as a kind of Hello World tutorial with the API. How long would it take for a developer to get the most basic possible response using your API" %}
+{% include course_image.html size="medium" filename="timetohelloworld" ext_print="png" ext_web="svg" alt="Getting started tutorials are like Hello World tutorials." caption="Think of getting started tutorials as a kind of Hello World tutorial with the API. How long would it take for a developer to get the simplest possible response using your API?" %}
 
-Both Hello World tutorials and Getting started tutorials with APIs share the same goal: To show a user how to use your API to get the simplest and easiest result, so they get a sense of how it works and feel productive.
+Both Hello World tutorials and Getting Started tutorials share the same goal: To show a user how to use a framework, API, or some other system to get the simplest and easiest result, so they get a sense of how it works and feel productive.
 
 As an example, you could take a common, basic use case for your API and show how to construct a request, as well as what response returns. If a developer can make that call successfully, he or she can probably be successful with the other calls too.
 
@@ -31,25 +31,25 @@ The Getting Started tutorial might involve the following:
 * Signing up for an account
 * Getting API keys
 * Making a request
-* Reviewing the endpoints available
-* Calling a specific endpoint
-* Evaluating a response
+* Evaluating the response
 
-{% include course_image.html size="medium" border="true" filename="nonref_gettingstarted" ext_print="png" ext_web="svg" alt="Getting started" caption="The Getting started tutorial usually walks users through the process from beginning to end but in a compressed, simple way." %}
+{% include course_image.html size="medium" border="true" filename="nonref_gettingstarted" ext_print="png" ext_web="svg" alt="Getting started" caption="The Getting started tutorial usually walks users through the process from beginning to end but in a compressed, simple way" %}
 
 Put a link to your Getting Started tutorial on your documentation homepage. Make it as easy as possible for developers to use the API to get some result. If this means using pre-provisioned accounts or setup configurations, do so.
 
 ## Run in Postman button
 
-In your Getting Started tutorial, consider including a Run in Postman button. If you have your [API endpoints integrated into Postman](docapis_postman.html), you can export your Postman collections as a widget to embed in an HTML page. Postman is a REST API GUI client that we explored earlier in [Submit requests through Postman](docapis_postman.html). The [Run in Postman button](https://www.getpostman.com/integrations/run-button) provides a button (labeled "Run in Postman") that, when clicked, imports your API info into Postman so users can run calls using the Postman client. As such, this isn't a full-fledged authoring tool but rather a way to import the interactive, try-it-out API explorer for your endpoints into a web page.
+In your Getting Started tutorial, consider including a Run in Postman button. (Postman is a REST API GUI client that we explored earlier in [Submit requests through Postman](docapis_postman.html).) If you have your [API endpoints integrated in Postman](docapis_postman.html), you can export your Postman collections as a widget to embed in an HTML page.  
 
-To try out Run in Postman, first [import your OpenAPI spec into Postman](https://www.getpostman.com/docs/postman/collections/data_formats#importing-postman-data) or enter your API information manually. Then see the Postman docs on how to [Create the Run in Postman button](https://www.getpostman.com/docs/postman_for_publishers/run_button/creating_run_button).
+The [Run in Postman button](https://www.getpostman.com/integrations/run-button) provides a button that, when clicked, imports your API info into Postman so users can run calls using the Postman client. As such, this isn't a full-fledged authoring tool but rather a way to import the interactive, try-it-out API explorer for your endpoints into a web page.
+
+To try out Run in Postman, you can either [import an OpenAPI spec into Postman](https://www.getpostman.com/docs/postman/collections/data_formats#importing-postman-data) or enter your API information manually. Then see the Postman docs on how to [Create the Run in Postman button](https://www.getpostman.com/docs/postman_for_publishers/run_button/creating_run_button).
 
 You can see the many [demos of Run in Postman here](https://www.getpostman.com/integrations/run-button). Many of these demos are listed in [Postman's API Network](https://www.getpostman.com/api-network/).
 
 {% include course_image.html filename="postmanapinetwork" ext_print="png" ext_web="png" alt="Postman API network" caption="Postman API network" %}
 
-Here's a demo of Run in Postman using the OpenWeatherMap API (`weather` endpoint):
+Here's a demo of Run in Postman using the OpenWeatherMap API's `weather` endpoint (which we worked with in [earlier tutorials](docapis_scenario_for_using_weather_api.html)):
 
 {% if site.format == "pdf" or site.format == "kindle" %}
 
@@ -57,7 +57,7 @@ To view this code, go to [http://idratherbewriting.com/learnapidoc/docapis_doc_g
 
 {% elsif site.format == "web" %}
 
-<div class="postman-run-button"
+<div style="margin-top:15px; margin-bottom: 15px;" class="postman-run-button"
 data-postman-action="collection/import"
 data-postman-var-1="abd0d0741e8206266958"></div>
 <script type="text/javascript">
@@ -71,11 +71,15 @@ data-postman-var-1="abd0d0741e8206266958"></div>
 </script>
 {% endif %}
 
-Postman provides a powerful REST API client that many developers are familiar with. It allows users to customize the API key and parameters and save those values. Although you don't have the in-browser experience to try out calls, in many ways the Postman client is more useful. This is what developers often use to save and store API calls as they test and explore the functionality.
+When you click the button, you should be prompted to open the collection in a Postman client:
+
+{% include course_image.html size="small" filename="postmanlaunchhandler" ext_print="png" ext_web="png" alt="Options to open the Postman collection" caption="Options to open the Postman collection" %}
+
+[Postman](docapis_postman.html) provides a powerful REST API client that many developers are familiar with. It allows users to customize the API key and parameters and save those values. Although Postman doesn't provide the in-browser experience to try out calls as with [Swagger UI](pubapis_swagger_demo.html), in many ways the Postman client is more useful, because it lets users configure and save the calls they make. This is what internal developers often use to save and store API calls as they test and explore the functionality.
 
 {% include random_ad2.html %}
 
-Especially if your users are already familiar with Postman, Run in Postman is a good option to provide (especially as one option of many for users to try out your API), as it allows users to easily integrate your API into a client they can use. It gives them a jumping off point where they can build on your information to create more detailed and customized calls.
+Especially if your users are already familiar with Postman, Run in Postman is a good option to provide (especially as one option of many for users to try out your API), as it allows users to easily generate the needed code to make requests in practically any language. It gives users a jumping off point where they can build on your information to create more detailed and customized calls.
 
 If you don't already have a "Try it out" feature in your docs, the Run in Postman button gives you this interactivity in an easy way, without requiring you to sacrifice the single source of truth for your docs.
 
@@ -83,19 +87,19 @@ The downside is that your parameter and endpoint descriptions don't get pulled i
 
 ## Samples of API overviews
 
-Here are a few sample Getting Started topics in APIs. If you compare the various Getting Started sections, you'll see that some are detailed and some are high-level and brief. In general, the more you can hold the developer's hand, the better. However, the tutorial should still be brief and not simply duplicate the regular documentation. The key is that you show the user the beginning to end full process in working with the API.
+Here are a few sample Getting Started topics in APIs. If you compare the various Getting Started sections, you'll see that some are detailed and some are high-level and brief. In general, the more you can hold the developer's hand, the better. However, the tutorial should still be brief and not simply redundant with the other documentation. The key is that you show the user the beginning to end full process in working with the API.
 
 **Paypal**
 
 {% include course_image.html url="https://developer.paypal.com/docs/api/overview/" size="" border="" filename="paypalgetstarted" ext_print="png" ext_web="png" alt="Paypal getting started tutorial" caption="Paypal getting started tutorial" %}
 
-Paypal's getting started tutorial contains quite a bit of detail, starting out with authorization, requests, and other details before making the first call. Although not so brief, this level of details surely helps orient users with the information they need. The format is clean and easy to follow.
+Paypal's getting started tutorial contains quite a bit of detail, starting out with authorization, requests, and other details before making the first call. Although not so brief, this level of details helps orient users with the information they need. The format is clean and easy to follow.
 
 **Twitter**
 
 {% include course_image.html url="https://developer.twitter.com/en/docs/basics/getting-started" filename="twittergettingstarted" ext_web="png" ext_print="png" alt="Paypal getting started tutorial" caption="Twitter getting started" %}
 
-Twitter's getting started page has several getting started sections for different development goals. The text is concise and easy to follow. The tutorial links frequently to other documentation for more details. This is usually the required strategy for getting started documentation. In the need for brevity, you have to link out to other pages that have more detail if the user needs it.
+Twitter's getting started page has several getting started sections for different development goals. The text is concise and easy to follow. The tutorial links frequently to other documentation for more details. This is usually the required strategy for getting started documentation. In the need for brevity, you might have to link out to other pages that have more detail.
 
 **Parse Server**
 
@@ -113,7 +117,7 @@ The Adsense tutorial separates out some foundational prerequisites to getting st
 
 {% include course_image.html url="http://www.aerisweather.com/support/docs/api/getting-started/" filename="aerisgettingstarted" ext_web="png" ext_print="png" alt="Aeris getting started tutorial" caption="Aeris getting started tutorial" %}
 
-The Aeris weather getting started provides information for setting up an application and then making a request in one of several popular languages. While showing code in specific languages is undoubtedly more helpful for programmers coding in those languages, the code samples are irrelevant to other users. Ideally, code samples in a getting started tutorial might be more practical in a more language-agnostic framework, but if you have a good sense of user's preferred languages, this approach can also work.
+The Aeris weather getting started provides information for setting up an application and then making a request in one of several popular languages. While showing code in specific languages is undoubtedly more helpful for programmers coding in those languages, the code samples are irrelevant to other users. 
 
 **Watson and IBM Cloud**
 
