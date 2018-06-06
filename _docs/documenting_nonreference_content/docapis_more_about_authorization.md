@@ -7,7 +7,7 @@ section: docnonref
 path1: /docnonref.html
 ---
 
-Before users can make requests with your API, they'll usually need to register for some kind of application key, or learn other ways to authenticate the requests. APIs vary in the way they authenticate users. Some APIs just require you to include an API key in the request header, while other APIs require elaborate security due to the need to protect sensitive data, prove identity, and ensure the requests aren't tampered with. In this section, you'll learn more about authentication and what you should focus on in documentation.
+Before users can make requests with your API, they'll usually need to register for some kind of application key, or learn other ways to authenticate the requests. APIs vary in the way they authenticate users. Some APIs require you to include an API key in the request header, while other APIs require elaborate security due to the need to protect sensitive data, prove identity, and ensure the requests aren't tampered with. In this section, you'll learn more about authentication and what you should focus on in documentation.
 
 {% if site.format == "web" %}
 * TOC
@@ -23,20 +23,15 @@ First, a brief definition of terms:
 
 An API might authenticate you but not authorize you to make a certain request.
 
-{% include course_image.html size="medium" border="true" filename="nonref_authentication" ext_print="png" ext_web="svg" alt="Authentication and authorization" caption="Authentication and authorization" %}
+{% include course_image.html size="medium" border="true" filename="nonref_authentication" ext_print="png" ext_web="svg" alt="Authentication versus authorization" caption="Authentication and authorization" %}
 
 ## Consequences if an API lacks security
 
 {% include random_ad2.html %}
 
-Why do APIs even need authentication? For read-only APIs, sometimes users don't need keys. But most commercial APIs do require authorization in the form of API keys or other methods. If you *didn't* have any kind of security with your API, the following could happen:
+Why do APIs even need authentication? For read-only APIs, sometimes users don't need keys. But most commercial APIs do require authorization in the form of API keys or other methods. If you *didn't* have any kind of security with your API, users could make unlimited amounts of API calls without any kind of registration, making a revenue model associated with your API difficult.
 
-* Users could make unlimited amounts of API calls without any kind of registration, making a revenue model associated with your API difficult.
-* You couldn't track who is using your API, or what endpoints are most used.
-* Someone could possibly make malicious DELETE requests on another person's data through API calls.
-* The wrong person could intercept or access private information and steal it.
-
-Clearly, API developers must think about ways to make APIs secure.
+Additionally, there wouldn't be an easy way to associate requests with specific user data, or there wouldn't be a way to protect the wrong users from making calls that affected a user's data (such as DELETE requests). Finally, you couldn't track who is using your API, or what endpoints are most used. Clearly, API developers must think about ways to make APIs secure.
 
 ## Different types of authorization
 
@@ -49,7 +44,7 @@ There are quite a few different methods for authorization. The following are var
 
 ### API keys {#api_keys}
 
-Most APIs require you to sign up for an API key in order to use the API. The API key is a long string that you usually include either in the request URL or in a header. The API key mainly functions as a way to identify the person making the API call (authenticating you to use the API). The API key is associated with a specific app that you register.
+Most APIs require you to sign up for an API key in order to use the API. The API key is a long string that you usually include either in the request URL or request header. The API key mainly functions as a way to identify the person making the API call (authenticating you to use the API). The API key is associated with a specific app that you register.
 
 The company producing the API might use the API key for any of the following:
 
@@ -59,11 +54,11 @@ The company producing the API might use the API key for any of the following:
 * Block or throttle any requester who exceeds the rate limits
 * Apply different permission levels to different users
 
-Sometimes APIs will give you both a public and private key. The public key is usually included in the request, while the private key is treated more like a password and used only in server-to-server communication. For some API documentation sites, when you're logged into the site, your API key automatically gets populated into the sample code and API Explorer.
+APIs might give you both a public and private key. The public key is usually included in the request, while the private key is treated more like a password and used only in server-to-server communication. For some API documentation sites, when you're logged into the site, your API key automatically gets populated into the sample code and API Explorer.
 
 ### Basic Auth {#basic_auth}
 
-One type of authorization is called Basic Auth. With this method, the sender places a `username:password` into the request header. The username and password is encoded with Base64, which is an encoding technique that converts the username and password into a set of 64 characters to ensure safe transmission. Here's an example of a Basic Auth in a header:
+Another type of authorization is called Basic Auth. With this method, the sender places a `username:password` into the request header. The username and password is encoded with Base64, which is an encoding technique that converts the username and password into a set of 64 characters to ensure safe transmission. Here's an example of a Basic Auth in a request header:
 
 ```
 Authorization: Basic bG9sOnNlY3VyZQ==
@@ -75,13 +70,7 @@ APIs that use Basic Auth will also use HTTPS, which means the message content wi
 
 When the API server receives the message, it decrypts the message and examines the header. After decoding the string and analyzing the username and password, it then decides whether to accept or reject the request.
 
-In Postman, you can configure Basic Authorization like this:
-
-1. Click the **Authorization** tab.
-2. Type the **username** and **password** on the right of the colon on each row.
-3. Click **Update Request**.
-
-The Headers tab will show a key-value pair that looks like this:
+In Postman, you can configure Basic Authorization by clicking the **Authorization** tab, and then typing the **username** and **password** on the right of the colon on each row. The Headers tab will show a key-value pair that looks like this:
 
 ```
 Authorization: Basic RnJlZDpteXBhc3N3b3Jk
@@ -91,7 +80,7 @@ Postman handles the Base64 encoding for you automatically when you enter a usern
 
 ### HMAC (Hash-based message authorization code) {#hmac}
 
-HMAC stands for Hash-based message authorization code and is a stronger type of authentication. With HMAC, both the sender and receiver know a secret key that no one else does. The sender creates a message based on some system properties (for example, the request timestamp plus account ID).
+HMAC stands for Hash-based message authorization code and is a stronger type of authentication, more common in financial APIs. With HMAC, both the sender and receiver know a secret key that no one else does. The sender creates a message based on some system properties (for example, the request timestamp plus account ID).
 
 The message is then encoded by the secret key and passed through a secure hashing algorithm (SHA). (A hash is a scramble of a string based on an algorithm.) The resulting value, referred to as a signature, is placed in the request header.
 
@@ -153,25 +142,26 @@ Since the API keys section is usually essential before developers can start usin
 
 The following are a few samples of authorization sections in API documentation.
 
-**Sendgrid**
+### SendGrid
 
-{% include course_image.html url="https://sendgrid.com/docs/User_Guide/Settings/api_keys.html" filename="sendgrid_authorization" ext_print="png" ext_web="png" alt="Sendgrid API keys" caption="Sendgrid API keys" %}
+{% include course_image.html url="https://sendgrid.com/docs/User_Guide/Settings/api_keys.html" filename="sendgrid_authorization" ext_print="png" ext_web="png" alt="SendGrid API keys" caption="SendGrid API keys" %}
 
-Sendgrid offers a detailed explanation of API keys, starting out with the basics by explaining, "What are API keys?" Contextually, the topic on API keys appears with other account management topics.
+SendGrid offers a detailed explanation of API keys, starting out with the basics by explaining, "What are API keys?" Contextually, the topic on API keys appears with other account management topics.
 
-**Twitter**
+### Twitter
+
 {% include course_image.html url="https://developer.twitter.com/en/docs/basics/authentication/guides/authorizing-a-request" filename="twitter_authentication" ext_print="png" ext_web="png" alt="Twitter authorization" caption="Twitter authorization" %}
 
-With Twitter, because the OAuth 2.0 authorization requirements are a bit more involved, a detail example is warranted and provided.
+With Twitter, because the OAuth 2.0 authorization requirements are a bit more involved, a detailed example is warranted and provided.
 
-**Amazon**
+### Amazon Web Services
 
 {% include course_image.html url="https://docs.aws.amazon.com/AWSECommerceService/latest/DG/HMACSignatures.html" filename="amazon_authentication" ext_print="png" ext_web="png" alt="Amazon authorization" caption="Amazon authorization" %}
 
 The Amazon example uses HMAC. The process is complex enough that a full-fledged diagram is included to show the steps users need to perform.
 
-**Dropbox**
+### Dropbox
 
 {% include course_image.html url="https://www.dropbox.com/developers/reference/oauth-guide" filename="dropbox_authentication" ext_print="png" ext_web="png" alt="Dropbox authorization" caption="Dropbox authorization" %}
 
-Like Twitter, Dropbox also uses OAuth 2.0. Their documentation includes not just one but two diagrams and copious explanation of the process.
+Like Twitter, Dropbox also uses OAuth 2.0. Their documentation includes not just one but two diagrams and a copious explanation of the process.

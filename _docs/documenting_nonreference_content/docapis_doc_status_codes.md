@@ -18,7 +18,7 @@ Status and error codes show a code number in the response header that indicates 
 
 Status codes don't appear in the response body. They appear in the response header, which you might not see by default.
 
-Remember when we submitted the curl call back in [an earlier lesson](docapis_make_curl_call.html)? To get the response header, we need to add `--include` or `-i` to the curl request. If we want *only the response header returned*, we capitalize it: `-I`.
+Remember when you submitted the curl call back in [an earlier lesson](docapis_make_curl_call.html)? To get the response header, you needed to add `--include` or `-i` to the curl request. If you want *only the response header returned*, capitalize the `-I`, like this:
 
 ```
 curl -I -X GET "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
@@ -39,7 +39,7 @@ Access-Control-Allow-Credentials: true
 Access-Control-Allow-Methods: GET, POST
 ```
 
-The first line, `HTTP/1.1 200 OK`, tells us the status of the request. (If you change the method, you'll get back a different status code.)
+The first line, `HTTP/1.1 200 OK`, tells us the status of the request (`200`). (If you change the method, you'll get back a different status code.)
 
 {% include random_ad.html %}
 
@@ -107,9 +107,9 @@ Your list of status codes can be done in a basic table or definition list, somew
 
 ## Status/error codes can assist in troubleshooting
 
-Status and error codes can be particularly helpful when it comes to troubleshooting. Therefore, you can think of these error codes as complementary to a section on troubleshooting.
+Status and error codes can be particularly helpful when it comes to troubleshooting. As such, you can think of these error codes as complementary to a section on troubleshooting.
 
-Almost every set of documentation could benefit from a section on troubleshooting. Document what happens when users get off the happy path and start stumbling around in the dark forest.
+Almost every set of documentation could benefit from a section on troubleshooting. In a troubleshooting topic, you document what happens when users get off the happy path and stumble around in the dark forest.
 
 A section on troubleshooting could list possible error messages users get when they do any of the following:
 
@@ -126,28 +126,32 @@ Where possible, document the exact text of the error in the documentation so tha
 
 ## Example of status and error codes
 
-**Context.io**
+The following are some sample status and error code pages in API documentation.
+
+### Context.io
 
 {% include course_image.html url="https://clearbit.com/docs?python#errors-error-types" filename="context_statuscodes" ext_print="png" ext_web="png" alt="Context.io status and error codes" caption="Context.io status and error codes" %}
 
-Clearbit not only documents the standard status codes, they describe the unique parameters returned by their API. Find out if your API has unique codes returned because these especially need documentation. Most developers will probably be familiar with 200, 400, and 500 codes.
+Clearbit not only documents the standard status codes, it describes the unique parameters returned by their API. Most developers will probably be familiar with 200, 400, and 500 codes. But if your API has unique codes, make sure to document these.
 
-**Twitter**
+### Twitter
 
 {% include course_image.html url="https://developer.twitter.com/en/docs/basics/response-codes" filename="twitter_statuscodes" ext_print="png" ext_web="png" alt="Twitter status and error codes" caption="Twitter status and error codes" %}
 
-Twitter's status codes not only describe the code and status, they provide a description that provides more information, potentially assisting with error recovery. For example, with the `500` error, the authors don't just say broken service, they explain, "This is usually a temporary error, for example in a high load situation or if an endpoint is temporarily having issues. Check in the [developer forums](https://twittercommunity.com/) in case others are having similar issues, or try again later." This kind of helpful message is what tech writers should aim for with status codes (at least for those codes that indicate problems).
+Twitter's status codes not only describe the code and status, their documentation provides a description that provides more information, potentially assisting with error recovery. For example, with the `500` error, the authors don't just say it refers to a broken service, they explain, "This is usually a temporary error, for example in a high load situation or if an endpoint is temporarily having issues. Check in the [developer forums](https://twittercommunity.com/) in case others are having similar issues, or try again later." This kind of helpful message is what tech writers should aim for with status codes (at least for those codes that indicate problems).
 
-**Mailchimp**
+### Mailchimp
 
 {% include course_image.html url="http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/" filename="mailchimp_statuscodes" ext_print="png" ext_web="png" alt="Mailhimp status and error codes" caption="Mailchimp status and error codes" %}
 
-Mailchimp provides extremely readable and friendly descriptions of the error message. For example, with the 403 errors, instead of just writing "Forbidden," they explain reasons why you might receive the Forbidden code. Apparently, with Mailchimp there are several types of 403 errors. Your request may be forbidden due to a disabled user account or request made to the wrong data center. For the "WrongDataCenter" error, they note that "It’s often associated with misconfigured libraries" and they link to more information on data centers. Again, this is the type of error code documentation that is helpful to users.
+Mailchimp provides extremely readable and friendly descriptions of the error message. For example, with the 403 errors, instead of just writing "Forbidden," Mailchimp explains reasons why you might receive the Forbidden code. With Mailchimp, there are several types of 403 errors. Your request might be forbidden due to a disabled user account or request made to the wrong data center. For the "WrongDataCenter" error, Mailchimp notes that "It’s often associated with misconfigured libraries" and they link to more information on data centers. This is the type of error code documentation that is helpful to users.
 
-**Flickr**
+### Flickr
 
 {% include course_image.html url="https://www.flickr.com/services/api/upload.api.html" filename="flickr_statuscodes" ext_print="png" ext_web="png" alt="Flickr status and error codes" caption="Flickr status and error codes" %}
 
-This Response Codes page is embedded within each API reference topic. As such, the descriptions are short. While this makes the error codes more visible, in some ways it's less helpful. Because it's embedded within each API topic, the descriptions about the error codes must be brief or the content would overwhelm the endpoint request information. In contrast, a standalone page listing error codes allows you to expand on each code with more detail without crowding out the other documentation. The standalone page also reduces redundancy and the appearance of a heavy amount of information (information which is actually just repeated).
+With Flickr, the Response Codes section is embedded within each API reference topic. As such, the descriptions are short. While this makes the error codes more visible, in some ways it's less helpful. Because it's embedded within each API topic, the descriptions about the error codes must be brief or the content would overwhelm the endpoint request information.
 
-If some resources are prone to triggering certain status and error codes more than others, it makes sense to highlight those status and error codes on the relevant API reference pages. I recommend calling attention to any particularly relevant status or error codes, and then linking to the centralized page for full information.
+In contrast, a standalone page listing error codes allows you to expand on each code with more detail without crowding out the other documentation. The standalone page also reduces redundancy and the appearance of a heavy amount of information (information which is actually just repeated).
+
+If some endpoints are prone to triggering certain status and error codes more than others, it makes sense to highlight those status and error codes on the relevant API reference pages. I recommend calling attention to any particularly relevant status or error codes on an endpoint's page, and then linking to the centralized page for full information.

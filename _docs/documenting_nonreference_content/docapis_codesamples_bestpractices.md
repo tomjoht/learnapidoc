@@ -78,23 +78,23 @@ Providing code samples is almost always a good thing, so if you have the bandwid
 
 Remember that each code sample you provide needs to be tested and maintained. When you make updates to your API, you'll need to update each of the code samples across all the different languages. When your API pushes out a new release, you'll need to check all the code samples to make sure the code doesn't break with the new API (this is called "regression testing" in QA lingo).
 
-## Sample code tutorials**
+## Sample code tutorials
 
 The following are a few samples of code tutorials in API documentation.
 
-**Weather Underground**
+### Weather Underground
 
 {% include course_image.html url="http://www.wunderground.com/weather/api/d/docs?d=resources/code-samples&MR=1" filename="codesamples_weatherunderground" ext_print="png" ext_web="png" alt="Weather Underground code samples" caption="Weather Underground code samples" %}
 
 Here we have various code samples across half a dozen languages, but no explanation about what the code sample returns. In some ways, the code is probably simple enough that developers can look at it and understand from the code itself what's going on. Still, some explanation is usually warranted, especially if there are multiple ways to make the call.
 
-**Eventful**
+### Eventful
 
 {% include course_image.html url="http://api.eventful.com/tools/tutorials/search" filename="eventfulcodesample" ext_print="png" ext_web="png" alt="Eventful code samples" caption="Eventful code samples" %}
 
 You won't see chunks of code here, but there are various examples about query string parameters for the endpoints. Although these parameters are also defined in the [reference documentation for the search endpoint](http://api.eventful.com/docs/events/search), this tutorial expands on how to use the parameters in more of a friendly, tutorial way. I like this tutorial because it shows how documentation that is usually contained in reference material can be pulled out and explained in a more narrative, example-full way. It shows more of the difference between reference and tutorial information.
 
-**Twilio**
+### Twilio
 
 {% include course_image.html url="https://www.twilio.com/docs/quickstart" filename="twiliocodesamples" ext_print="png" ext_web="png" alt="Twilio code samples" caption="Twilio code samples" %}
 
@@ -104,19 +104,19 @@ One question I have is whether the conceptual content in the middle column is si
 
 Another challenge is that the middle column feels narrow and cramped. There isn't much room for a screenshot. Additionally, the right column doesn't scroll in sync with the middle column -- it's mostly static (by design). But if it's fixed, I'm not sure why it needs to remain ever-present. Overall, there are certainly challenges with the presentation, but Twilio has certainly innovated in this space with some interesting techniques.
 
-**Mailchimp**
+### Mailchimp
 
 {% include course_image.html url="http://developer.mailchimp.com/documentation/mailchimp/guides/manage-subscribers-with-the-mailchimp-api/" filename="mailchimpcodesamples" ext_print="png" ext_web="png" alt="Mailchimp code samples" caption="Mailchimp code samples" %}
 
 As usual, Mailchimp provides solid tutorials for their products. The "Before You Start" section any necessary prerequisites before starting the tutorial. Then each part of the tutorial is set off with section headings. The section heading style is worth considering over numbered steps. Most technical writers have numbered steps as a habit for tech docs, so when they start writing a tutorial, the first inclination is to begin a sequence of steps. But with a tutorial, you might have lengthy code samples that are followed by detailed explanations, and so on. Maintaining the list numbered across steps might become onerous. The section headings provide an easier formatting, and you can still preface each section heading with "Step 1", "Step 2", and so on.
 
-**IBM Watson**
+### IBM Watson
 
 {% include course_image.html url="https://console.bluemix.net/docs/services/conversation/tutorial.html#tutorial" filename="ibmwatsoncodesamples" ext_print="png" ext_web="png" alt="IBM Watson code samples" caption="IBM Watson code samples" %}
 
 The IBM Watson tutorial does a nice job breaking up the tutorial steps into different sections, with easy-to-follow steps in each section. Up front, it lists the learning objectives, duration, and prerequisites. There's nothing particularly difficult about the formatting or the display &mdash; the emphasis focuses on the content.
 
-## Code samples for weather API
+## Code samples for sample weather API
 
 Earlier in the course we walked through [each element of reference documentation](docapis_new_endpoint_to_doc.html) for a fictitious new endpoint  called `surfreport` for the weather API we were working with. Let's return briefly to that scenario and assume that we also want to add a code tutorial for showing the surfreport on a web page. What might that tutorial look like? Here's an example:
 

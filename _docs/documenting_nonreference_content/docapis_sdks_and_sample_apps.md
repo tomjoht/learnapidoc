@@ -50,7 +50,7 @@ As I mentioned in the [code samples topic](docapis_codesamples_bestpractices.htm
 
 Here are some sample SDKs and sample apps.
 
-**OpenWeatherMap API**
+### OpenWeatherMap API
 
 {% include course_image.html url="https://openweathermap.org/examples" filename="codesamples_openweathermap" ext_print="png" ext_web="png" alt="Code samples for OpenWeatherMap API" caption="Code samples for OpenWeatherMap API" %}
 
@@ -58,7 +58,7 @@ The example integrations for the OpenWeatherMap API aren't just short code snipp
 
 If you can put your sample apps and SDKs on GitHub, it's usually a good idea to do so. Storing code on GitHub accomplishes two purposes: First, it usually puts the burden on engineering to maintain and test the code samples, as well as respond to issues users might log against the project. Second, it makes it easier to provide fully functional code, since users can clone the project and start working with the code immediately.
 
-**Paypal REST SDK**
+### Paypal REST SDK
 
 {% include course_image.html url="https://developer.paypal.com/docs/api/quickstart/" filename="sdk_paypal" ext_print="png" ext_web="png" alt="" caption="Paypal REST SDKs" %}
 
@@ -66,7 +66,7 @@ The SDKs in the [Additional information](https://developer.paypal.com/docs/api/q
 
 {% include course_image.html url="https://paypal.github.io/PayPal-PHP-SDK/" filename="sdk_paypal_github" ext_print="png" ext_web="png" alt="Paypal PHP SDK" caption="Paypal PHP SDK" %}
 
-**Heroku SDK**
+### Heroku SDK
 
 {% include course_image.html url="https://devcenter.heroku.com/articles/pubnub" filename="sdk_heroku" ext_print="png" ext_web="png" alt="Heroku SDK" caption="Heroku SDK" %}
 
@@ -76,7 +76,7 @@ As I mentioned earlier, it's unlikely that you'll be able to contribute signific
 
 If engineers tell you that users should know X, don't simply submit to their judgment out of ignorance with the language. Instead, find some developers in that language (even internal engineers in other groups) to test the documentation against. If those users push back and say they need more detail, you can then interface with the engineering team to provide it. Thus, in these cases, technical writers act more as mediators between the engineering authors and the engineering users. Technical writers identify and fill gaps in the documentation, and they often manage the publishing and distribution of the docs.
 
-**Amazon SDK**
+### Amazon SDK
 
 {% include course_image.html url="https://aws.amazon.com/tools/#sdk" filename="sdk_amazon_aws" ext_print="png" ext_web="png" alt="Amazon AWS SDKs" caption="Amazon AWS SDKs" %}
 
@@ -86,7 +86,7 @@ Each programming language typically has its own annotation syntax and document g
 
 Even so, there is probably quite a bit of variability from one library to the next. How do engineers ensure they use the same description for a class in Java that they do for Ruby and PHP? These document generator tools aren't smart enough to leverage snippets or includes stored in some common online repository. You also can't usually use variables or other single-sourcing techniques.
 
-**Google Cloud SDK**
+### Google Cloud SDK
 
 {% include course_image.html url="https://cloud.google.com/sdk/docs/" filename="sdk_amazon_aws" ext_print="png" ext_web="png" alt="Google Cloud SDK documentation" caption="Google Cloud SDK documentation" %}
 

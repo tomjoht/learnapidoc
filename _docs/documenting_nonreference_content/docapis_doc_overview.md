@@ -42,19 +42,19 @@ The API overview usually appears on the homepage of the API. The homepage (the s
 
 Here are a few sample API overviews.
 
-**SendGrid**
+### SendGrid
 
 {% include course_image.html url="https://sendgrid.com/docs/User_Guide/index.html" filename="sendgridoverview" ext_web="png" ext_print="png" alt="SendGrid API overview" caption="SendGrid API overview" %}
 
 The Sendgrid overview starts off with two key sections: "What is SendGrid?" and "Who is SendGrid for?" I like the straightforward approach. Even in the description of what SendGrid is, the authors don't assume everyone knows what an SMTP provider is, so they link out to more information. Overall, in about 10 seconds you can get an idea of what the SendGrid API is all about.
 
-**Lyft**
+### Lyft
 
 {% include course_image.html url="https://developer.lyft.com/docs/overview" filename="lyftapioverview" ext_web="png" ext_print="png" alt="Lyft API overview" caption="Lyft API overview" %}
 
 Lyft's API overview starts out in a similar way, with sections titled "What is Lyft?" and "Why Use Lyft as a Developer." Their homepage also provides information on access, rate limits and throttling, and testing. The Lyft authors also recognize that each tech domain has its own lingo, so they provide a [glossary](docapis_glossary_section.html) up front.
 
-**IBM Watson Assistant**
+### IBM Watson Assistant
 
 {% include course_image.html url="https://console.bluemix.net/docs/services/conversation/index.html#about" filename="ibmcloudoverview" ext_web="png" ext_print="png" alt="IBM Watson Assistant overview" caption="IBM Watson Assistant overview" %}
 

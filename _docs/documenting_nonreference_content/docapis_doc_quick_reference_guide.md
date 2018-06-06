@@ -52,7 +52,9 @@ Don't be deceived by the brevity and scope of the quick reference guide. In wran
 
 ## Sample quick reference guides
 
-**Eventful**
+The following are sample quick reference guides in various APIs.
+
+### Eventful
 
 {% include course_image.html url="http://api.eventful.com/docs" filename="eventfulquickreference" ext_print="png" ext_web="png" alt="Eventful quick reference guide" caption="Eventful quick reference guide" %}
 
@@ -60,7 +62,7 @@ Eventful provides a one-page quick list of all the endpoints in the API, organiz
 
 There's a certain value you get from seeing all the endpoints at a glance. By looking from high-above at the forest, you can see the shape of the forest as a whole. Sure, you may not even know what kinds of trees the forest contains, but you can comprehend other details that aren't apparent when you're next to a single tree.
 
-**Parse**
+### Parse
 
 {% include course_image.html url="http://docs.parseplatform.org/rest/guide/#quick-reference" filename="parsequickreferenceguide" ext_print="png" ext_web="png" alt="Parse platform quick reference guide" caption="Parse quick reference guide" %}
 
@@ -68,9 +70,7 @@ The quick reference for Parse is similar to Eventful in that it's a long list of
 
 Sometimes, developers like the one-page approach because it reduces information fragmentation and lets them use Ctrl+F to find all instances of a keyword. I explored the tradeoffs in this one-page approach in [Single-page docs versus "Click Insanity"](http://idratherbewriting.com/2014/01/12/single-page-docs-versus-click-insanity/).
 
-
-
-**Shopify**
+### Shopify
 
 {% include course_image.html url="http://cheat.markdunkley.com/" filename="shopifyquickreferenceguide" ext_print="png" ext_web="png" alt="Shopify quick reference guide" caption="Shopify quick reference guide" %}
 

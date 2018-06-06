@@ -44,13 +44,15 @@ However, it's probably easiest to simply the term to the glossary definition the
 
 ## Sample glossary pages
 
-**Lyft**
+The following are sample glossary pages in various APIs.
+
+### Lyft
 
 {% include course_image.html url="https://developer.lyft.com/docs/glossary" filename="glossary_lyft" ext_print="png" ext_web="png" alt="Lyft glossary" caption="Lyft glossary" %}
 
 Lyft's glossary doesn't have a ton of terms (there are about 10), but they're specific to the Lyft API world. You see terms such as "Lyft Line," "Lyft Lux," "Lyft Plus," and so on. I like that the developer documentation takes pains to actually define terms that might normally be bandied about in Marketing and Sales pages. Whenever a company includes a glossary, it demonstrates a sensitivity the company has toward users in not assuming that the user automatically knows all the company's special terms and vocabulary.
 
-**Yext**
+### Yext
 
 {% include course_image.html url="http://developer.yext.com/docs/glossary/" filename="glossary_yext"  ext_print="png" ext_web="png" alt="Yext glossary" caption="Yext glossary" %}
 
@@ -60,7 +62,7 @@ When viewing the glossary, the terms also appear in the sidebar, replacing any d
 
 One challenge this Yext example brings up is how to distribute glossaries across multiple doc sets. Suppose only some of these terms are relevant to one doc set, and other terms are relevant to another doc set. Do you partition the glossary into multiple specialized glossaries or just have one general glossary for the entire site? Use the strategy that makes sense for your docs. For the most part, since users just jump down to one specific glossary entry, it doesn't matter if other terms (that aren't specific to the doc set in context) are also included.
 
-**Apigee**
+### Apigee
 
 {% include course_image.html url="https://docs.apigee.com/api-platform/reference/glossary" filename="glossary_apigee" ext_print="png" ext_web="png" alt="Apigee glossary" caption="Apigee glossary" %}
 

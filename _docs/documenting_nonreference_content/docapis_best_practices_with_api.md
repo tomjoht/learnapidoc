@@ -26,7 +26,7 @@ The list of topics might include topics such as the following: pagination, time 
 
 ## Sample API best practices
 
-**Mailchimp**
+### Mailchimp
 
 {% include course_image.html url="http://developer.mailchimp.com/documentation/mailchimp/guides/mailchimp-api-best-practices/" filename="bestpractices_mailchimp" ext_print="png" ext_web="png" alt="Mailchimp best practices" caption="Mailchimp best practices" %}
 
@@ -36,7 +36,7 @@ With specific requests, Mailchimp warns users against the long time it can take 
 
 {% include random_ad.html %}
 
-**Coinbase**
+### Coinbase
 
 {% include course_image.html url="https://developers.coinbase.com/api/v2#pagination" filename="bestpractices_coinbase" ext_print="png" ext_web="png" alt="Coinbase best practices" caption="Mailchimp best practices" %}
 

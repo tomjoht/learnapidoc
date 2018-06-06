@@ -36,7 +36,7 @@ Also, when developers implement the code into their applications or web pages, d
 
 Here are a few examples of rate limiting sections in documentation:
 
-**GitHub**
+### GitHub
 
 {% include course_image.html url="https://developer.github.com/v3/#rate-limiting" filename="githubratelimiting" ext_print="png" ext_web="png" alt="GitHub rate limiting" caption="GitHub rate limiting" %}
 
@@ -46,13 +46,13 @@ GitHub's documentation explains rate limits for authenticated versus unauthentic
 
 Here's a great example of the rate limits section from the Github API:
 
-**Linkedin**
+### Linkedin
 
 {% include course_image.html url="https://developer.linkedin.com/docs/rest-api?u=0#" filename="dropboxratelimiting" ext_print="png" ext_web="png" alt="Linkedin rate throttling section" caption="Linkedin rate throttling section" %}
 
 Linkedin's rate limiting documentation explains that different API endpoints have different limits. There are three different types of throttling: Application throttling, User throttling, and Developer throttling. Their documentation also explains the time zone used to track the day's beginning and end.
 
-**Bitly**
+### Bitly
 
 {% include course_image.html url="http://dev.bitly.com/rate_limiting.html" filename="bitlyratelimiting" ext_print="png" ext_web="png" alt="Bitly's rate limiting" caption="Bitly's rate limiting" %}
 
