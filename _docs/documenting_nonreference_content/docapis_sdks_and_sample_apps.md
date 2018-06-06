@@ -9,7 +9,7 @@ section: docnonref
 path1: /docnonref.html
 ---
 
-SDKs (software development kits) and sample apps are similar to [code samples](docapis_codesamples_bestpractices.html) but much more extensive and usually involve a whole collection of files that work together as a whole. The SDK might include libraries that you download and incorporate into your application. The term "SDK" is actually a somewhat broad term that refers to any tooling that supports an API. Sample apps (which can be part of an SDK) are self-contained applications that implement the API for a specific scenario. Sample apps demonstrate an implementation from beginning to end (which might include initialization, configuration, requests, etc.).
+SDKs (software development kits) and sample apps are similar to [code samples](docapis_codesamples_bestpractices.html) but are much more extensive and usually involve a whole collection of files that work together as a whole. The SDK might include libraries that you download and incorporate into your application. The term "SDK" is actually a somewhat broad term that refers to any tooling that supports an API. Sample apps (which can be part of an SDK) are self-contained applications that implement the API for a specific scenario. Sample apps demonstrate an implementation from beginning to end (which might include initialization, configuration, requests, etc.).
 
 * TOC
 {:toc}
