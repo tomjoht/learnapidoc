@@ -134,7 +134,7 @@ folders:
   - title: Getting started
     jurl: /docapis_doc_getting_started_section.html
 
-  - title: Authentication and authorization requirements
+  - title: Authentication and authorization
     jurl: /docapis_more_about_authorization.html
 
   - title: Status and error codes
@@ -158,6 +158,8 @@ folders:
   - title: Glossary
     jurl: /docapis_glossary_section.html
 
+  - title: "Activity: Assess the non-reference content in your project"
+    jurl: /docapis_nonref_activity.html
 
   - title: Next phase of course
     jurl: /docapis_completion.html
