@@ -9,22 +9,18 @@ section: docnonref
 path1: /docnonref.html
 ---
 
-SDKs (software development kits) and sample apps are similar to [code samples](docapis_codesamples_bestpractices.html) but are much more extensive and usually involve a whole collection of files that work together as a whole. The SDK might include libraries that you download and incorporate into your application. The term "SDK" is actually a somewhat broad term that refers to any tooling that supports an API. Sample apps (which can be part of an SDK) are self-contained applications that implement the API for a specific scenario. Sample apps demonstrate an implementation from beginning to end (which might include initialization, configuration, requests, etc.).
+SDKs (software development kits) and sample apps are similar to [code samples](docapis_codesamples_bestpractices.html) but are much more extensive and usually involve a whole collection of files that work together as a package or app. The SDK might include libraries that you download and incorporate into your application, and can include tools, sample apps, and other code. Sample apps are self-contained applications that implement the API for a specific scenario. Sample apps demonstrate an implementation from beginning to end (usually including initialization, configuration, requests, etc.).
 
 * TOC
 {:toc}
 
-## SDKs show the implementation of an API in a specific language
+## What is an SDK?
 
-The terms API and SDK are often used together, but they aren't synonyms. SDKs implement the language-agnostic REST API in a specific language, such as Java or C++. REST APIs by themselves aren't tied to any particular language; usually you demonstrate the APIs by [making calls using cURL](docapis_make_curl_call.html), a command-line tool for submitting web requests and getting responses. But developers won't use cURL requests when they implement your API. Instead, they will implement the API requests using the language their application is coded in.
+The terms API and SDK are often used together, but they aren't synonyms. SDKs implement the language-agnostic REST API in a specific language, such as Java or C++. REST APIs by themselves aren't tied to any particular language; usually you demonstrate the APIs by [making calls using cURL](docapis_make_curl_call.html), a command-line tool for submitting web requests and getting responses. But developers won't usually use cURL requests when they implement your API. Instead, they will implement the API requests using the language their application is coded in.
 
 For example, Java, C++, or Node applications make API requests in different ways. Each language has its own way of constructing requests to a web API. You can use Postman or Paw to auto-generate a request in a specific language (see [Auto-generating code samples](docapis_doc_sample_requests.html#auto-generating-code-samples). However, the SDK takes the implementation to another level. SDKs might involve many more files or libraries as part of the implementation.
 
 {% include random_ad.html %}
-
-In the SwaggerHub tutorial in this course, I show how to [auto-generate client SDKs](pubapis_swaggerhub_smartbear.html#auto-generate-client-sdks) through SwaggerHub's interface. But usually, rather than relying on auto-generated SDKs, if your development team offers a client SDK, it will be code that the development team prepares and tests. The development team often provides the SDK in a few target languages based on their user's main language, showing how the API can be implemented.
-
-In addition to implementations of the API, SDKs loosely refer to any kind of additional tooling to support the API. As a "software development kit," the kit might involve a collection of tools, samples, and other files (again, focused on a specific language) that accompany the API.
 
 In [What is the Difference Between an API and an SDK?](https://nordicapis.com/what-is-the-difference-between-an-api-and-an-sdk/), Kristopher Sandoval explains an SDK as follows:
 
@@ -32,9 +28,11 @@ In [What is the Difference Between an API and an SDK?](https://nordicapis.com/wh
 >
 > An SDK or devkit functions in much the same way, providing a set of tools, libraries, relevant documentation, code samples, processes, and or guides that allow developers to create software applications on a specific platform. If an API is a set of building blocks that allows for the creation of something, an SDK is a full-fledged workshop, facilitating creation far outside the scopes of what an API would allow.
 
-Sandoval compares examples from Facebook APIs and SDKs to clarify the difference. Later, he sums up the difference as follows: "The SDK is the building blocks of the application, whereas the API is the language of its requests."
+Sandoval compares examples from Facebook APIs and SDKs to clarify the difference. He sums up the difference as follows: "The SDK is the building blocks of the application, whereas the API is the language of its requests." As a "software development kit," the kit might involve a collection of tools, samples, and other files (again, focused on a specific language) that accompany the API.
 
 ## What is your role in documenting the SDK and sample app
+
+In the SwaggerHub tutorial in this course, I show how to [auto-generate client SDKs](pubapis_swaggerhub_smartbear.html#auto-generate-client-sdks) through SwaggerHub's interface. But usually, rather than relying on auto-generated SDKs, if your development team offers a client SDK, it will be code that the development team prepares and tests. The development team often provides the SDK in a few target languages based on their user's main language, showing how the API can be implemented.
 
 As an API technical writer, documenting SDKs and sample apps present a tough challenge because SDKs requires you to be familiar with one or more programming languages. I explored the question of [how much code you need to know](jobapis_learning_code.html) in another topic, so I won't get into too much detail here. Usually, engineers don't expect you to know multiple programming languages in depth, but some familiarity with them will be required in order to both write and review the documentation. When deciding whether to call a block of code a function, class, method, or other name, you need to have a basic understanding of the terms used in that language.
 
@@ -48,7 +46,7 @@ As I mentioned in the [code samples topic](docapis_codesamples_bestpractices.htm
 
 ## Sample SDKs and sample apps
 
-Here are some sample SDKs and sample apps.
+The following examples show documentation for some sample SDKs and sample apps.
 
 ### OpenWeatherMap API
 
@@ -56,13 +54,13 @@ Here are some sample SDKs and sample apps.
 
 The example integrations for the OpenWeatherMap API aren't just short code snippets that show how to make a request to an endpoint. Instead, they are full-fledged, sophisticated integrations across a variety of platforms. As such, many of the code samples are stored in GitHub. Each scenario has a detailed explanation that precedes it.
 
-If you can put your sample apps and SDKs on GitHub, it's usually a good idea to do so. Storing code on GitHub accomplishes two purposes: First, it usually puts the burden on engineering to maintain and test the code samples, as well as respond to issues users might log against the project. Second, it makes it easier to provide fully functional code, since users can clone the project and start working with the code immediately.
+If you can put your sample apps and SDKs on GitHub, it's usually a good idea to do so. Storing code on GitHub accomplishes two purposes: First, it usually puts the burden on engineering to maintain and test the code samples as well as respond to issues users might log against the project. Second, it makes it easier to provide fully functional code, since users can clone the project and start working with the code immediately.
 
 ### Paypal REST SDK
 
 {% include course_image.html url="https://developer.paypal.com/docs/api/quickstart/" filename="sdk_paypal" ext_print="png" ext_web="png" alt="" caption="Paypal REST SDKs" %}
 
-The SDKs in the [Additional information](https://developer.paypal.com/docs/api/quickstart/#additional-information) section include Node JS, PHP, Python, Ruby, Java, and .NET SDKs. Each implementation has its own GitHub site, with its own wiki, sample code, source docs, and more. If you browse some of these GitHub pages, such as the [one for PHP](https://paypal.github.io/PayPal-PHP-SDK/), you can see the whole collection of language-specific files for this SDK.
+The SDKs in the [Paypal's Additional information](https://developer.paypal.com/docs/api/quickstart/#additional-information) section include Node JS, PHP, Python, Ruby, Java, and .NET SDKs. Each implementation has its own GitHub site, with its own wiki, sample code, source docs, and more. If you browse some of these GitHub pages, such as the [site for PHP](https://paypal.github.io/PayPal-PHP-SDK/), you can see the whole collection of language-specific files for this SDK. These sites show how SDKs include a variety of file types.
 
 {% include course_image.html url="https://paypal.github.io/PayPal-PHP-SDK/" filename="sdk_paypal_github" ext_print="png" ext_web="png" alt="Paypal PHP SDK" caption="Paypal PHP SDK" %}
 
@@ -74,7 +72,7 @@ The Heroku SDK is actually operated by PubNub and includes a Ruby, Java, Node JS
 
 As I mentioned earlier, it's unlikely that you'll be able to contribute significantly to either writing or reviewing the SDK documentation unless you're somewhat familiar with the language. Development groups usually don't expect technical writers to be conversant in half a dozen languages. More likely, you'll be reliant on engineers who are conversant in these languages and frameworks to author this content. But doing so will require you to interact skillfully with engineers and be somewhat familiar with programming lingo and concepts.
 
-If engineers tell you that users should know X, don't simply submit to their judgment out of ignorance with the language. Instead, find some developers in that language (even internal engineers in other groups) to test the documentation against. If those users push back and say they need more detail, you can then interface with the engineering team to provide it. Thus, in these cases, technical writers act more as mediators between the engineering authors and the engineering users. Technical writers identify and fill gaps in the documentation, and they often manage the publishing and distribution of the docs.
+If engineers tell you that users should know X, don't simply submit to their judgment out of ignorance with the language. Instead, find some developers in that language (even internal engineers in other groups) to test the documentation against. If those users push back and say they need more detail, you can then interface with the engineering team to provide it. Thus, in these cases, technical writers act more as mediators between the engineering authors and the engineering users. Technical writers identify and fill gaps in the documentation, and they often manage the publishing and distribution of the docs. The content itself might be too technical for technical writers to play a content authoring role.
 
 ### Amazon SDK
 

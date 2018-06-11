@@ -146,8 +146,8 @@ Mailchimp provides extremely readable and friendly descriptions of the error mes
 
 {% include course_image.html url="https://www.flickr.com/services/api/upload.api.html" filename="flickr_statuscodes" ext_print="png" ext_web="png" alt="Flickr status and error codes" caption="Flickr's status and error codes" %}
 
-With Flickr, the Response Codes section is embedded within each API reference topic. As such, the descriptions are short. While this makes the error codes more visible, in some ways it's less helpful. Because it's embedded within each API topic, the descriptions about the error codes must be brief or the content would overwhelm the endpoint request information.
+With Flickr, the Response Codes section is embedded within each API reference topic. As such, the descriptions are short. While embedding the Response Codes in each topic makes the error codes more visible, in some ways it's less helpful. Because it's embedded within each API topic, the descriptions about the error codes must be brief or the content would overwhelm the endpoint request information.
 
 In contrast, a standalone page listing error codes allows you to expand on each code with more detail without crowding out the other documentation. The standalone page also reduces redundancy and the appearance of a heavy amount of information (information which is actually just repeated).
 
-If some endpoints are prone to triggering certain status and error codes more than others, it makes sense to highlight those status and error codes on the relevant API reference pages. I recommend calling attention to any particularly relevant status or error codes on an endpoint's page, and then linking to the centralized page for full information.
+If some endpoints are prone to triggering certain status and error codes more than others, it makes sense to highlight those status and error codes on their relevant API reference pages. I recommend calling attention to any particularly relevant status or error codes on an endpoint's page, and then linking to the centralized page for full information.
