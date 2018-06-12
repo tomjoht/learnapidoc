@@ -9,7 +9,7 @@ section: docnonref
 path1: /docnonref.html
 ---
 
-The glossary defines all the terms that might be unique to your company or API. Glossaries are often overlooked or skipped, but their importance cannot be understated, since much of the user's understanding of API documentation depends on the clarity and alignment of specific terms.
+The glossary defines all the terms that might be unique to your company or API. Glossaries are often overlooked or skipped, but their importance should not be understated, since much of the user's understanding of API documentation depends on the clarity and alignment of specific terms.
 
 * TOC
 {:toc}
