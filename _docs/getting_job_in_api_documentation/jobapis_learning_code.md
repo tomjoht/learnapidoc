@@ -42,11 +42,11 @@ If you spend excessive amounts of time learning to code, at the expense of tendi
 
 Additionally, while engineers can fill in the deep technical knowledge needed, no one will provide the tech comm tasks in place of a tech writer. As evidence, just look at any corporate wiki. Corporate wikis are prime examples of what happens when engineers (or other non-tech writers) publish documentation. Pages may be rich with technical detail, but the degree of ROT (redundant, outdated, trivial content) gets compounded, navigation suffers, clarity gets muddled, and no one can find anything.
 
-Just today I spent a good chunk of time trying to find information on a corporate wiki, only to be met with mountains of poorly written pages, abandoned content, impossible to navigate spaces, and other issues. It was a completely frustrating experience.
+Almost every time I dive deep into my company's wiki, I encounter mountains of poorly written pages, abandoned content, impossible to navigate spaces, and other issues. It's a completely hit-and-miss, frustrating experience.
 
 {% include random_ad2.html %}
 
-Anyone who has a wiki at their company usually has a similar experience. Because no one really cares about internal wikis, companies let them degenerate into content junkyards.
+Anyone who has a wiki at their company usually has a similar experience. Because no one really cares about internal wikis, companies let them degenerate into content junkyards. The same would happen if we focused only on programming and other technical details at the expense of other tech comm aspects.
 
 ## Times when deeper tech knowledge is needed
 
@@ -56,9 +56,7 @@ Neiman says tech writers often need to look over a developer's shoulder, watchin
 
 Neiman also says you may need to take the code examples in Java and produce equivalent samples in another language, such as C++, all on your own. In Neiman's view, API technical writers need more technical depth to excel than Wood and Rhea suggest.
 
-James Neiman and [Andrew Davis](http://www.synergistech.com/) recently gave a presentation titled [Finding the right API Technical Writer](https://www.youtube.com/embed/lmNHBg20ql0) at a API conference in London last October.  
-
-See [this video recording on YouTube](https://www.youtube.com/embed/lmNHBg20ql0?start=22m33s&end=24m17s) (around the 23 minute mark) for the highlights.
+James Neiman and [Andrew Davis](http://www.synergistech.com/) (a recruiter for API tech writers in the Bay area) recently gave a presentation titled [Finding the right API Technical Writer](https://www.youtube.com/embed/lmNHBg20ql0) at an API conference in London last October. See [this video recording on YouTube](https://www.youtube.com/embed/lmNHBg20ql0?start=22m33s&end=24m17s) (around the 23-minute mark) for the highlights.
 
 Clearly, Neiman argues for a higher level of coding proficiency than Wood or Rhea. The level of coding knowledge required no doubt depends on the position, environment, and expectations. If you're in a situation where the code is over your head, developers may send you chunks of code to add to the documentation.
 
@@ -70,7 +68,7 @@ Neiman says in one company, he tested out the code from engineers and found that
 
 As such, the engineers were blind to the initial setup requirements that users would need to properly run the code. Neiman says this is one danger of simply copying and pasting the code from engineers into documentation. While it may work on the developer's machine, it will often fail for users.
 
-The more technical you are, the more powerful of a role you can play in shaping the information. Neiman is a former engineer and says that during his career, he has probably worked with 20-25 different programming languages. Being able to learn a new language quickly and get up to speed is a key characteristic of his tech comm consulting success.
+The more technical you are, the more powerful of a role you can play in shaping the information. Neiman is a former engineer and says that during his career, he has probably worked with 20-25 different programming languages. Being able to learn a new language quickly and get up to speed is a key characteristic of his tech comm consulting success, he says.
 
 ## Techniques for learning code
 
@@ -78,7 +76,7 @@ The difficulty of learning programming is probably the most strenuous aspect of 
 
 For example, do you dedicate 2 hours a day to simply learning to code in the particular language of the product you're documenting? Should you carve this time out of your employer's time, or your own, or both? How do you get other doc work done, given that meetings and miscellaneous tasks usually eat up another 2 hours of work time? What strategies should you implement to actually learn code in a way that sticks? What if what you're learning has little connection or relevance with the code you're documenting?
 
-There are a lot of questions to answer about just how to learn code. But a few conclusions are clear:
+There are a lot of questions about just how to learn code, and I don't have all the answers. But here's what I know:
 
 *  Developer documentation requires some familiarity with code.
 *  You have to understand explanations from engineers, including the terms used.
@@ -94,6 +92,9 @@ Some might consider the tech writer's bad coding ability and superficial knowled
 
 It might seem depressing to realize that your coding knowledge will usually be kindergartner-like in comparison to developers. This positions tech writers more like second-class citizens in the corporation &mdash; in a university setting, it's the equivalent of having an associates degree where others have PhDs.
 
-However, I've since realized that this mindset is misguided. My role as a technical writer is not to code nor even to develop code. My role is to create awesome *documentation*. Creating awesome documentation isn't just about knowing code. There are a hundred other details that factor into the creation of good documentation.
+However, I take consolation in the fact that my job is not to code but rather to create awesome *documentation*. Creating awesome documentation isn't just about knowing code. There are a hundred other details that factor into the creation of good documentation. As long as you set your goals on creating great documentation, not just on learning to code, you won't feel disappointed in being a bad coder. This direction doesn't address all the issues around learning programming, but it helps me remember that at the end of the day, my job involves documentation, not just knowledge of code.
 
-As long as you set your goals on creating great documentation, not just on learning to code, you won't feel disappointed in being a bad coder.
+See these two topics for more details about working with code:
+
+* [SDKs and sample apps](docapis_sdks_and_sample_apps.html)
+* [Code samples and tutorials](docapis_codesamples_bestpractices.html)
