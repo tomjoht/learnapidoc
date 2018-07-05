@@ -158,11 +158,11 @@ Understanding REST at a higher, more theoretical level isn't my goal here, nor i
 
 An important aspect of REST APIs, especially in terms of documentation, is that they don't use a WSDL file to describe the elements and parameters allowed in the requests and responses.
 
-Although there is a possible WADL (Web Application Description Language) file that can be used to describe REST APIs, they're rarely used since the WADL files don't adequately describe all the resources, parameters, message formats, and other attributes the REST API. (Remember that the REST API is an architectural style, not a standardized protocol.)
+Although there is a possible WADL (Web Application Description Language) file that can be used to describe REST APIs, they're rarely used since the WADL files don't adequately describe all the resources, parameters, message formats, and other attributes of the REST API. (Remember that the REST API is an architectural style, not a standardized protocol.)
 
-In order to understand how to interact with a REST API, you have to *read the documentation* for the API. Hooray! This makes the technical writers' role extremely important with REST APIs.
+In order to understand how to interact with a REST API, you have to *read the documentation* for the API. Hooray! This makes the technical writer's role extremely important with REST APIs.
 
-Some formal specifications &mdash; for example, such [OpenAPI](pubapis_swagger_intro.html) and [RAML](pubapis_raml.html) &mdash; have been developed to describe REST APIs. When you describe your API using the OpenAPI or RAML specification, tools that can read those specifications (like [Swagger UI](pubapis_swagger.html) or the [RAML API Console](pubapis_raml.html#apiconsole) will generate an interactive documentation output.
+Some formal specifications &mdash; for example, such [OpenAPI](pubapis_swagger_intro.html) and [RAML](pubapis_raml.html) &mdash; have been developed to describe REST APIs. When you describe your API using the OpenAPI or RAML specification, tools that can read those specifications (such as [Swagger UI](pubapis_swagger.html) or the [RAML API Console](pubapis_raml.html#apiconsole)) will generate an interactive documentation output.
 
 The OpenAPI specification document can take the place of the WSDL file that was more common with SOAP. Tools like [Swagger UI](pubapis_swagger.html) that read the specification documents are usually interactive (featuring API Consoles or API Explorers) and allow you to try out REST calls and see responses directly in the documentation.
 
