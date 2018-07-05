@@ -1,12 +1,12 @@
 ---
-title: 'Aeris Weather Example: Get wind speed'
+title: 'Activity: Get wind speed using the Aeris Weather API'
 permalink: /docapis_aerisweather_example.html
 keywords:
 course: "Documenting REST APIs"
-weight: 13.5
+weight: 2.95
 sidebar: docapis
-section: resources
-path1: /resources.html
+section: likeadeveloper
+path1: /likeadeveloper.html
 ---
 
 Use the Aeris Weather API to get the wind speed (MPH) for a specific place (your choice).

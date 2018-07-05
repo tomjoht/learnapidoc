@@ -1,15 +1,15 @@
 ---
-title: Overview for exploring other REST APIs
+title:  More REST API exercises
 permalink: /docapis_more_rest_exercises.html
 keywords:
 course: "Documenting REST APIs"
-weight: 13.1
+weight: 2.92
 sidebar: docapis
-section: resources
-path1: /resources.html
+section: likeadeveloper
+path1: /likeadeveloper.html
 ---
 
-In this resources section, I explore some other REST APIs and code for some specific scenarios. This experience will give you more exposure to different REST APIs, how they're organized, the complexities and interdependency of endpoints, and more.
+While you've got your developer hat on, let's explore some other REST APIs and code some specific scenarios. This experience will give you more exposure to different REST APIs, how they're organized, the complexities and interdependency of endpoints, and more.
 
 {% if site.format == "web" %}
 * TOC
@@ -22,15 +22,15 @@ There are several examples with different APIs. A challenge is listed for each e
 
 {% include random_ad2.html %}
 
-In these examples, I usually printed the code to a web page to visualize the response. However, that part is not required in the challenge. (It mostly makes the exercise more fun to me.)
+In these examples, I usually printed the code to a web page to visualize the response.
 
 ## Exercises
 
 The following exercises are available:
 
-* [EventBrite example: Get event information](docapis_eventbrite_example.html)
+* [Activity: Get event information using the EventBrite API](docapis_eventbrite_example.html)
 * [Flickr example: Retrieve a Flickr gallery](docapis_flickr_example.html)
-* [Aeris Weather Example: Get wind speed](docapis_aerisweather_example.html)
+* [Activity: Get wind speed using the Aeris Weather API](docapis_aerisweather_example.html)
 
 ## Shortcuts for API keys
 

@@ -8,7 +8,7 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 ---
 
-I've given numerous presentations on API documentation, and most of them I've recorded. The most recent presentations are available below. Keep in mind that my API content evolves, so some older presentations might no longer match the course content.
+I've given numerous presentations on API documentation, and I've recorded most of them. The most recent presentations are available below. Keep in mind that my API content evolves, so some older presentations might no longer match the course content.
 
 {% if site.format == "kindle" or site.format == "pdf" %}
 This content doesn't embed well in print, as it contains YouTube videos. Please go to http://idratherbewriting.com/learnapidoc/docapis_course_videos.html to view the content.
@@ -112,7 +112,7 @@ This was a presentation I gave to the STC/WTD San Diego chapter (more details ar
 
 ### How to Add Swagger to your API
 
-I gave this presentation as a TC Dojo webinar (more details are [here](http://idratherbewriting.com/2017/01/17/swagger-presentation-documenting-rest-apis/)). it covers the [OpenAPI specification and Swagger](http://idratherbewriting.com/learnapidoc/restapispecifications.html) section in this course.
+I gave this presentation as a TC Dojo webinar (more details are [here](http://idratherbewriting.com/2017/01/17/swagger-presentation-documenting-rest-apis/)). It covers the [OpenAPI specification and Swagger](http://idratherbewriting.com/learnapidoc/restapispecifications.html) section in this course.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/wC5hxY0RItQ" frameborder="0" allowfullscreen></iframe>
 
@@ -127,5 +127,7 @@ For a longer (and older) video, here's a recording from a 4-hour workshop I gave
 Here'a recording of an API workshop I gave in India a while back (more details are [here](http://idratherbewriting.com/2015/03/19/recording-of-api-documentation-workshop-rest-and-javadoc-at-tcworld-india-2015/)). In contrast to other videos, this one includes (near the last 30 min.) some of the [Java API parts of the course](nativelibraryapis.html).
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/zYDW6Pw26ls" frameborder="0" allowfullscreen></iframe>
+
+For more details about past presentations, see [Presentations](http://idratherbewriting.com/presentations/) on my blog.
 
 {% endif %}

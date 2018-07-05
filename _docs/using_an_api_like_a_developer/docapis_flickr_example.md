@@ -1,13 +1,13 @@
 ---
-title: 'Flickr example: Retrieve a Flickr gallery'
+title: 'Activity: Retrieve a gallery using the Flickr API'
 permalink: /docapis_flickr_example.html
 categories:
 - api-doc
 course: "Documenting REST APIs"
-weight: 13.3
+weight: 2.94
 sidebar: docapis
-section: resources
-path1: /resources.html
+section: likeadeveloper
+path1: /likeadeveloper.html
 ---
 
 Use the Flickr API to get photo images from [this Flickr gallery](https://www.flickr.com/photos/flickr/galleries/72157647277042064/).

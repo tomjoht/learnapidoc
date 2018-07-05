@@ -12,9 +12,7 @@ redirect_from:
 - /restapicourse2-0/
 ---
 
-In this course on writing documentation for REST APIs, instead of just talking about abstract concepts, I contextualize REST APIs with a direct, hands-on approach.
-
-You'll learn about API documentation in the context of using some simple weather APIs to put a weather forecast on your site.
+In this course on writing documentation for REST APIs, instead of just talking about abstract concepts, I contextualize REST APIs with a direct, hands-on approach. You'll learn about API documentation in the context of using some simple weather APIs to put a weather forecast on your site.
 
 As you use the API, you'll learn about endpoints, parameters, data types, authentication, curl, JSON, the command line, Chrome's Developer Console, JavaScript, and other details associated with REST APIs.
 
@@ -47,13 +45,13 @@ As a technical writer, you'll tackle each element of a reference topic in REST A
 4. [Request example](docapis_doc_sample_requests.html)
 5. [Response example](docapis_doc_sample_responses_and_schema.html)
 
-Diving into these sections will give you a solid understanding of how to document REST APIs. You'll also learn how to document the [non-reference sections for an API](docnonref.html), such as the [getting started](docapis_doc_getting_started_section.html), [status and error codes](docapis_doc_status_codes.html), and request [authorization](docapis_more_about_authorization.html) sections.
+Diving into these sections will give you a solid understanding of how to document REST APIs. You'll also learn how to document the [non-reference sections for an API](docnonref.html), such as the [getting started](docapis_doc_getting_started_section.html), [status and error codes](docapis_doc_status_codes.html),  [request authorization](docapis_more_about_authorization.html), and more.
 
 {% include random_ad2.html %}
 
 Finally, you'll dive into different ways to [publish REST API documentation](publishingapis.html), exploring tools and specifications such as [GitHub](pubapis_github_wikis.html), [Jekyll](pubapis_jekyll.html), and other [Docs-as-code approaches](pubapis_docs_as_code.html). You'll learn how to leverage templates, build interactive API consoles so users can try out requests and see responses, and learn how to manage your content through [version control](pubapis_version_control.html).
 
-I also dive into specifications such as the [OpenAPI specification](pubapis_openapi_tutorial_overview.html) and [Swagger](pubapis_swagger_intro.html), which provides tooling for the OpenAPI specification. Additionally, I included a section on [documenting native library APIs](nativelibraryapis.html) and generating [Javadoc](nativelibraryapis_create_javadoc.html). Throughout it all, I put these tools in a real, applicable context with examples and demos.
+I also dive into specifications such as the [OpenAPI specification](pubapis_openapi_tutorial_overview.html) and [Swagger](pubapis_swagger_intro.html), which provides tooling for the OpenAPI specification. Additionally, I cover how to [document native library APIs](nativelibraryapis.html) and generate [Javadoc](nativelibraryapis_create_javadoc.html). Throughout it all, I put these tools in a real, applicable context with examples and demos.
 
 ## Course organization
 
@@ -76,10 +74,30 @@ Because the purpose of the course is to help you learn, there are many activitie
 
 {% include activity.html %}
 
-{: .note}
-I refer to the content here as a "course" instead of a book or a website, primarily because I include a lot of exercises throughout in each section, and I find that people who want to learn API documentation prefer a more hands-on "course" experience. However, this content is just as much a book or website as it is a course.
+Other topics consist entirely of activities. The course has the following activities:
 
-{% include random_ad.html %}
+* [Activity: Find an Open Source Project](docapis_find_open_source_project.html)
+* [Activity: Submit requests through Postman](docapis_postman.html)
+* [Activity: Make a curl call](docapis_make_curl_call.html)
+* [Activity: Use methods with curl](docapis_curl_with_petstore.html)
+* [Activity: Access and print a specific JSON value](docapis_access_json_values.html)
+* [Activity: Get event information using the EventBrite API](docapis_eventbrite_example.html)
+* [Activity: Retrieve a gallery using the Flickr API](docapis_flickr_example.html)
+* [Activity: Get wind speed using the Aeris Weather API](docapis_aerisweather_example.html)
+* [Activity: Get event information using the EventBrite API](docapis_eventbrite_example.html)
+* [Activity: Critique or create an API reference topic](docapis_api_reference_activity.html)
+* [Activity: Test the docs in your Open Source project](testingdocs_activity.html)
+* [Activity: Assess the non-reference content in your project](docapis_nonref_activity.html)
+* [Activity: Manage content in a GitHub wiki](pubapis_github_wikis.html)
+* [Activity: Use the GitHub Desktop client](pubapis_github_desktop_client.html)
+* [Activity: Create an OpenAPI specification document](pubapis_openapi_activity.html)
+* [Activity: Create your own Swagger UI display](pubapis_swagger_ui_activity.html)
+* [Activity: Use Stoplight to edit your OpenAPI spec](pubapis_stoplight_activity.html)
+* [Activity: Generate a Javadoc from a sample project](nativelibraryapis_create_javadoc.html)
+
+I refer to the content here as a "course" instead of a book or a website, primarily because I include a lot of exercises throughout in each section, and I find that people who want to learn API documentation prefer a more hands-on "course" experience.
+
+{% include callout.html title="Will this course help you get a job in API documentation?" type="primary" content="The most common reason people take this course is to transition to an API documentation. This course will help you make that transition, but you can't just passively read through the content. You need to do the activities outlined in each section, especially those topics that involve working with content from an open-source project. These activities are key to building experience and credibility with a portfolio." %}
 
 ## No programming skills required
 
@@ -89,35 +107,25 @@ If you do have some familiarity with programming concepts, you might speed throu
 
 Some of the code samples in this course use JavaScript. JavaScript may or may not be a language that you actually use when you document REST APIs, but most likely there will be some programming language or platform that becomes important to know.
 
-JavaScript is one of the most useful and easy languages to become familiar with, so it works well in code samples for this introduction to REST API documentation. JavaScript allows you to test out code by merely opening it in your browser (rather than compiling it in an IDE). I have a [quick crash-course in JavaScript here](http://idratherbewriting.com/javascript/).
+JavaScript is one of the most useful and easy languages to become familiar with, so it works well in code samples for this introduction to REST API documentation. JavaScript allows you to test out code by merely opening it in your browser (rather than compiling it in an IDE). (I have a [quick crash-course in JavaScript here](http://idratherbewriting.com/javascript/) if you need it.)
+
+{% include random_ad.html %}
 
 ## What you'll need
 
 Here are a few things you'll need to do the exercises in this course:
 
-* **Text editor**. ([Atom editor](https://atom.io/) or [Sublime Text](http://www.sublimetext.com/) are good options, and they work on both Mac and Windows.
+* **Text editor**. ([Atom editor](https://atom.io/) or [Sublime Text](http://www.sublimetext.com/) are good options, and they work on both Mac and Windows.)
 * **Chrome browser**. [Chrome](https://www.google.com/chrome/browser/desktop/index.html) provides a Javascript Console that works well for inspecting JSON, so we'll be using this browser. [Firefox](https://www.mozilla.org/en-US/firefox/) works well too if you prefer that.
 * **Postman**. [Postman](http://www.getpostman.com/) is an app that allows you to make requests and see responses through a GUI client.
 * **curl**. [curl](http://curl.haxx.se/) is essential for making requests to endpoints from the command line. Mac computers already have curl installed. Windows users should follow the instructions for installing curl [here](http://www.confusedbycode.com/curl/#downloads).
 * **Git**. [Git](https://git-scm.com/) is a version control tool developers often use to collaborate on code. See [Set Up Git](https://help.github.com/articles/set-up-git/) for more details.
 * **GitHub account**. [GitHub](https://github.com) will be used for various activities and is commonly used as an authentication service for developer tools. If you don't already have a GitHub account, sign up for one.
-* **Stoplight App**. [Stoplight](https://next.stoplight.io/) provides visual modeling tools for working with the OpenAPI specification. Create a Stoplight account and download the [Desktop app](https://github.com/stoplightio/desktop/releases/tag/v3.6.1) here.
-
-## Will this course help you get a job in API documentation?
-
-The most common reason people take this course is to transition to an API documentation. This course will help you make that transition, but you can't just passively read through the content. You've got to do all the activities outlined in each section. These activities are key to building experience and credibility with a portfolio. These in-depth activities are identified with the word "Activity" in the topic title. There is usually one main activity for each section:
-
-* [Activity: Find an Open Source Project](docapis_find_open_source_project.html)
-* [Activity: Critique or create an API reference topic](docapis_api_reference_activity.html)
-* [Activity: Test the docs in your Open Source project](testingdocs_activity.html)
-* [Activity: Manage content in a GitHub wiki](pubapis_github_wikis.html)
-* [Activity: Create an OpenAPI specification document](pubapis_openapi_activity.html)
-* [Activity: Create your own Swagger UI display](pubapis_swagger_ui_activity.html)
-* [Activity: Generate a Javadoc from a sample project](nativelibraryapis_create_javadoc.html)
+* **Stoplight App**. [Stoplight](https://next.stoplight.io/) provides visual modeling tools for working with the OpenAPI specification. Create a Stoplight account and download the [Stoplight desktop app](https://github.com/stoplightio/desktop/releases/tag/v3.6.1) here.
 
 ## Video recordings
 
-For video recordings of this course, see the [Recorded Video Presentations](docapis_course_videos.html).
+For video recordings of this course, see the [Recorded Video Presentations](docapis_course_videos.html). The most recent full-length video of the entire course is a half-day API workshop I gave in Denver.
 
 ## Slides
 
@@ -128,7 +136,7 @@ I have various slides that cover different sections of this course. See the foll
 * [OpenAPI and Swagger](http://idratherbewriting.com/openapi-and-swagger/#/)
 * [Publishing API documentation](http://idratherbewriting.com/publishing-api-docs/#/)
 
-(By the way, these slides are all hosted on GitHub at https://github.com/tomjoht/. I use [RevealJS](https://github.com/hakimel/reveal.js/) for slides, which lets me create the slide content in HTML.)
+These slides are all hosted on GitHub at https://github.com/tomjoht/. I use [RevealJS](https://github.com/hakimel/reveal.js/) for slides, which lets me create the slide content in HTML. If you're a teacher using material from this course in your classroom, you can adapt the slides as needed for your lessons.
 
 ## Stay updated
 

@@ -8,7 +8,7 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 ---
 
-If you're teaching this material in a workshop, you can use the slides below. The slides are built with [RevealJS](https://github.com/hakimel/reveal.js/), which means they're pure HTML. As such, I store them in GitHub repositories that you can fork and then modify to suit your needs. The slides are divided into several groups:
+If you're teaching this material in a workshop, you can use the slides below. The slides are built with [RevealJS](https://github.com/hakimel/reveal.js/), which means they're HTML. As such, I store them in GitHub repositories that you can fork and then modify to suit your needs. The slides are divided into several groups:
 
 ## Part I: Introduction to API Documentation
 

@@ -44,7 +44,7 @@ Now that you have some data populated in Stoplight, let's explore Stoplight a bi
     <img class="large" src="images/stoplight-editor-view-openweathermap.png"/>
 
 2.  In the main content area, the API content is grouped in several sections: Basics, Request, and Responses. Explore each of these sections by expanding them and viewing the content.
-3.  Expand the **Requests** section, then expand **[#] Query Parameters**. Make an edit to one of your query parameter descriptions by clicking the <img style="display:inline" src="images/stoplighteditbutton"/> button.
+3.  Expand the **Requests** section, then expand **[#] Query Parameters**. Make an edit to one of your query parameter descriptions by clicking the <img style="display:inline" src="images/stoplighteditbutton.png"/> button.
 4.  Expand the **Responses** section, and for the **200** response, select the **Raw Schema** tab and delete the existing content. It will leave `{}` there, which is good.
 5.  Switch to the **Editor** tab, click **Generate from JSON** and paste in the following JSON response from the OpenWeatherMap weather endpoint.
 

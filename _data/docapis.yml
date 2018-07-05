@@ -16,7 +16,7 @@ folders:
   - title: Course slides
     jurl: /docapis_course_slides.html
 
-  - title: Course Background
+  - title: Why I developed this course
     jurl: /docapis_foreword.html
 
   - title: About the author
@@ -44,19 +44,19 @@ folders:
   - title: Get authorization keys
     jurl: /docapis_get_auth_keys.html
 
-  - title: Submit requests through Postman
+  - title: "Activity: Submit requests through Postman"
     jurl: /docapis_postman.html
 
   - title: curl intro and installation
     jurl: /docapis_install_curl.html
 
-  - title: Make a curl call
+  - title: "Activity: Make a curl call"
     jurl: /docapis_make_curl_call.html
 
   - title: Understand curl more
     jurl: /docapis_understand_curl.html
 
-  - title: Use methods with curl
+  - title: "Activity: Use methods with curl"
     jurl: /docapis_curl_with_petstore.html
 
   - title: Analyze the JSON response
@@ -65,11 +65,23 @@ folders:
   - title: Use the JSON from the response payload
     jurl: /docapis_json_console.html
 
-  - title: Access and print a specific JSON value
+  - title: "Activity: Access and print a specific JSON value"
     jurl: /docapis_access_json_values.html
 
   - title: Dive into dot notation
     jurl: /docapis_diving_into_dot_notation.html
+
+  - title:  More REST API exercises
+    jurl: /docapis_more_rest_exercises.html
+
+  - title: "Activity: Get event information using the EventBrite API"
+    jurl: /docapis_eventbrite_example.html
+
+  - title: "Activity: Retrieve a gallery using the Flickr API"
+    jurl: /docapis_flickr_example.html
+
+  - title: "Activity: Get wind speed using the Aeris Weather API"
+    jurl: /docapis_aerisweather_example.html
 
 - title: Documenting API reference topics
   jurl: /docendpoints.html
@@ -319,27 +331,17 @@ folders:
     jurl: /jobapis_learning_code.html
 
 
-- title: Resources and glossary
+- title: Glossary
   jurl: /resources.html
   folderitems:
 
   - title: Glossary
     jurl: /api-glossary.html
 
-  - title: Overview for exploring other REST APIs
-    jurl: /docapis_more_rest_exercises.html
 
-  - title: "EventBrite example: Get event information"
-    jurl: /docapis_eventbrite_example.html
-
-  - title: "Flickr example: Retrieve a Flickr gallery"
-    jurl: /docapis_flickr_example.html
-
-  - title: "Aeris Weather Example: Get wind speed"
-    jurl: /docapis_aerisweather_example.html
-
-  - title: API documentation survey
-    jurl: /docapis_apidoc_survey.html
+  #
+  # - title: API documentation survey
+  #   jurl: /docapis_apidoc_survey.html
 
   # - title: Course Reviews
   #   jurl: /docapis_course_reviews.html
