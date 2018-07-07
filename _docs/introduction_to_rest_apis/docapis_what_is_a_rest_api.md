@@ -11,7 +11,7 @@ redirect_from:
 - /docapis_what-is-a-rest-api/
 ---
 
-This course is all about learning by doing, but while *doing* various activities, I'll periodically pause and dive into some more abstract concepts to fill in more detail. This is one of those deep dive moments. Here we'll dive into what a REST API is, comparing it to other types of APIs like SOAP. REST APIs have common characteristics but no definitive protocols like their predecessors did.
+This course is all about learning by doing, but while *doing* various activities, I'll periodically pause and dive into some more abstract concepts to fill in more detail. This is one of those deep dive moments. Here we'll dive into what a REST API is, comparing it to other types of APIs like SOAP. REST APIs have common characteristics but no definitive protocols like their predecessors.
 
 
 {% if site.format == "web" %}
@@ -31,7 +31,7 @@ Jim Bisso, an experienced API technical writer in the Silicon Valley area, descr
 
 {% include random_ad2.html %}
 
-APIs often work in similar ways. When you push a button in an interface, functions underneath also get triggered to go and retrieve information. But instead of retrieving information from within the same system, web APIs call remote services on the web to get their information.
+APIs often work in similar ways. When you push a button in an interface, functions underneath get triggered to go and retrieve information. But instead of retrieving information from within the same system, web APIs call remote services on the web to get their information.
 
 Ultimately, developers use API calls behind the scenes to pull information into their apps. A button on a GUI may be internally wired to make calls to an external service. For example, the embedded Twitter or Facebook buttons that interact with social networks, or embedded Youtube videos that pull a video in from youtube.com, are powered by web APIs underneath.
 
@@ -55,9 +55,9 @@ Before REST became the most popular web service, SOAP (Simple Object Access Prot
 
 {% include random_ad.html %}
 
-### SOAP used standardized protocols and WSDL files
+### SOAP uses standardized protocols and WSDL files
 
-SOAP is a standardized protocol that requires XML as the message format for requests and responses. As a standardized protocol, the message format is usually defined through something called a WSDL file (Web Services Description Language).
+SOAP is a standardized protocol that requires XML as the message format for requests and responses. As a standardized protocol, the message format is usually defined through something called a WSDL (Web Services Description Language) file.
 
 The WSDL file defines the allowed elements and attributes in the message exchanges. The WSDL file is machine readable and used by the servers interacting with each other to facilitate the communication.
 
@@ -107,7 +107,7 @@ Here's what a sample endpoint might look like:
 http://apiserver.com/homes?limit=5&format=json
 ```
 
-The endpoint shows the whole path to the resource. However, in documentation, we usually separate out this URL into more specific parts:
+The endpoint shows the whole path to the resource. However, in documentation, you usually separate out this URL into more specific parts:
 
 * The **base path** (or base URL or host) refers to the common path for the API. In the example above, the base path is `http://apiserver.com`.
 * The **endpoint** refers to the end path of the endpoint. In the example above, `/homes`.
@@ -126,19 +126,19 @@ This might be an endpoint that retrieves a home resource that contains a particu
 {: .tip}
 The relationship between resources and methods is often described in terms of "nouns" and "verbs." The resource is the noun because it is an object or thing. The verb is what you're doing with that noun. Combining nouns with verbs is how you form the language in REST.
 
-We'll explore endpoints in much more depth in the sections to come. But I wanted to provide a brief overview here.
+We'll explore endpoints in much more depth in the sections to come (for example, in the [API reference tutorial](docapis_api_reference_tutorial_overview.html) we go through each property in a resource). But I wanted to provide a brief overview here.
 
 ### The web itself follows REST
 
-The terminology of "URIs" and "GET requests" and "message responses" transported over "HTTP protocol" might seem unfamiliar, but really this is just the official REST terminology to describe what's happening. Because you've used the web, you're already familiar with how REST APIs work &mdash; the web itself essentially follows a RESTful style.
+The terminology of "URIs" and "GET requests" and "message responses" transported over "HTTP protocol" might seem unfamiliar, but this is just the official REST terminology to describe what's happening. Because you've used the web, you're already familiar with how REST APIs work &mdash; the web itself essentially follows a RESTful style.
 
-If you open a browser and go to http://idratherbewriting.com, you're really using HTTP protocol (`http://`) to submit a GET request to the resource available on a web server. The response from the server sends the content at this resource back to you using HTTP. Your browser is just a client that makes the message response look pretty.
+If you open a browser and go to [http://idratherbewriting.com](http://idratherbewriting.com), you're really using HTTP protocol (`http://`) to submit a GET request to the resource available on a web server. The response from the server sends the content at this resource back to you using HTTP. Your browser is just a client that makes the message response look pretty.
 
 {% if site.format == "pdf" or site.format == "kindle" %}<img class="medium" src="images/restapi_www.png" alt="Web as REST API" />
 {% elsif site.format == "web" %}<img class="medium" src="images/restapi_www.svg" alt="Web as REST API" />
 {% endif %}
 
-You can see this response in curl if you open a terminal prompt and type `curl http://idratherbewriting.com`. (This assumes you have curl installed.)
+You can see this response in [curl](docapis_install_curl.html) if you open a terminal prompt and type `curl http://idratherbewriting.com`. (This assumes you have curl installed.)
 
 Because the web itself is an example of RESTful style architecture, the way REST APIs work will likely become second nature to you.
 
@@ -166,7 +166,7 @@ Some formal specifications &mdash; for example, such [OpenAPI](pubapis_swagger_i
 
 The OpenAPI specification document can take the place of the WSDL file that was more common with SOAP. Tools like [Swagger UI](pubapis_swagger.html) that read the specification documents are usually interactive (featuring API Consoles or API Explorers) and allow you to try out REST calls and see responses directly in the documentation.
 
-But don't expect the Swagger UI or RAML API Console documentation outputs to include all the details users would need to work with your API. For example, these outputs won't include info about [authorization keys](docapis_more_about_authorization.html), details about workflows and interdependencies between endpoints, and so on. The Swagger or RAML output usually contains reference documentation only, which typically only accounts for a third of the total needed documentation.
+But don't expect the Swagger UI or RAML API Console documentation outputs to include all the details users would need to work with your API. For example, these outputs won't include info about [authorization keys](docapis_more_about_authorization.html), details about workflows and interdependencies between endpoints, and so on. The Swagger or RAML output usually contains reference documentation only, which typically only accounts for a third or half of the total needed documentation (depending on the API).
 
 Overall, REST APIs are more varied and flexible than SOAP APIs, and you almost always need to read the documentation in order to understand how to interact with a REST API. As you explore REST APIs, you will find that they differ greatly from one to another (especially the format and display of their documentation sites), but they all share the common patterns outlined here. At the core of any REST API is a request and response transmitted over the web.
 

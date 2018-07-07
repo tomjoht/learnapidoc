@@ -10,8 +10,8 @@ path1: /docapis_introtoapis.html
 
 In this course, you'll do a variety of activities to build your skills, develop content, and gain experience. Many of the activities in this course will require you to work on documentation related to an open-source project that you find.
 
-{: .important}
-Without this project, it will be difficult to do many of the later activities in this course.
+{: .warning}
+If you don't find an open-source project, it will be difficult to do many of the later activities in this course.
 
 * TOC
 {:toc}
@@ -23,13 +23,13 @@ You're probably going through this course for one or more of the following reaso
 * You want to break into the field of API documentation.
 * You want to develop your API doc skills for a future job.
 * You have a new API to document at work and need information on how to do it.
-* You're a developer who needs to document your API.
+* You're a developer who needs to document an API.
 
-For the first two scenarios, you need to start thinking about API documentation samples in your portfolio. Your portfolio is key to [getting a job in API documentation](jobapis.html). Without a portfolio with compelling API documentation samples, it will be extremely difficult to get a job in API documentation.
+For the first two reasons, you need to start thinking about API documentation samples in your portfolio. Your portfolio is key to [getting a job in API documentation](jobapis.html). Without a portfolio that contains compelling API documentation samples, it will be extremely difficult to get a job in API documentation.
 
 How will you generate API doc samples for your portfolio, without having a job developing API documentation? This is where the activities in this course become important.
 
-Rather than simply completing modules and tracking your progress toward the course's completion, I've included activities here that will actually help build up your portfolio with API documentation samples, helping you progress to the goal of either obtaining an API doc job or hitting a home run on an API doc project in your current role.
+Rather than simply completing modules and tracking your progress toward the course's completion, I've included activities here that will actually help build up your portfolio with API documentation samples, helping you progress to the goal of either obtaining an API documentation job or hitting a home run on an API doc project in your current role.
 
 ## Finding an open-source API project
 
@@ -54,11 +54,11 @@ You may think that it's too early to even think about joining let alone contribu
 
 {% include random_ad.html %}
 
-However, don't undervalue your role as a contributor to documentation (regardless of the contribution). Open-source projects suffer greatly from bad documentation. See [GitHub Survey: Open Source Is Popular, Plagued by Poor Docs and Rude People](https://adtmag.com/articles/2017/06/05/open-source-survey.aspx). A [2017 GitHub Survey](http://opensourcesurvey.org/2017/) found that
+However, don't undervalue your role as a contributor to documentation (regardless of the contribution). Open-source projects suffer greatly from bad documentation. In [GitHub Survey: Open Source Is Popular, Plagued by Poor Docs and Rude People](https://adtmag.com/articles/2017/06/05/open-source-survey.aspx), David Ramel summarizes findings from the [2017 GitHub Survey](http://opensourcesurvey.org/2017/):
 
 > Incomplete or outdated documentation is a pervasive problem, observed by 93 percent of respondents, yet 60 percent of contributors say they rarely or never contribute to documentation.
 
-Also check out [Open source documentation is bad, but proprietary software is worse](https://www.techrepublic.com/article/open-source-documentation-is-bad-but-proprietary-software-is-worse/) as well. The article also highlights the documentation results from the same GitHub survey:
+Also check out [Open source documentation is bad, but proprietary software is worse](https://www.techrepublic.com/article/open-source-documentation-is-bad-but-proprietary-software-is-worse/) by Matt Asay as well. Asay highlights the documentation results from the same GitHub survey:
 
 > 93% of respondents gnashed their teeth over shoddy documentation but also admitted to doing virtually nothing to improve the situation. ... If you think this deeply felt need for documentation would motivate more developers to pitch in and help, you'd be wrong: 60% of developers can't be bothered to contribute documentation.
 
@@ -80,7 +80,7 @@ To find an open-source project with API doc needs:
 2.  In the "With the labels" section, type `help wanted`. This is a common tag teams use to attract volunteers to their project (but some teams that need help might not use it).
 3.  Scroll to the top and notice that `label: "help wanted"` automatically populates in the field. In this Advanced Search box at the top, add some additional keywords (such as `api`, `docs`, and `documentation`) as well:
 
-   <a href="https://github.com/search?utf8=%E2%9C%93&q=api+documentation+docs+label%3A%22help+wanted%22&type=Repositories&ref=advsearch&l=&l="><img src="images/githubopensourceprojects.png"/></a>
+   <a class="noCrossRef" href="https://github.com/search?utf8=%E2%9C%93&q=api+documentation+docs+label%3A%22help+wanted%22&type=Repositories&ref=advsearch&l=&l="><img src="images/githubopensourceprojects.png"/></a>
 
 4.  Click **Search** and browse [the results](https://github.com/search?utf8=%E2%9C%93&q=api+documentation+docs+label%3A%22help+wanted%22&type=Repositories&ref=advsearch&l=&l=).
 
@@ -112,7 +112,7 @@ You don't have to actually reach out or interact with the team yet. You're just 
 
 When you later contribute to the open-source project, you will need to understand the basic [Pull request Git workflow](pubapis_github_pull_requests.html). This might require you to ramp up on [some Git tutorials](https://www.atlassian.com/git/tutorials) a bit first, but there's no better way to learn Git than by actively using it in a real project scenario.
 
-Don't worry so much about this now. You can learn these skills later when you have content you're ready to contribute.
+Don't worry so much about Git now. You can learn these skills later when you have content you're ready to contribute. For now, just find a project.
 
 ## More reading
 

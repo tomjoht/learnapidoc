@@ -2,10 +2,10 @@
 title: Workshop activities
 permalink: /workshop-activities.html
 course: "Documenting REST APIs"
-weight: 1.32
+weight: 13.1
 sidebar: docapis
-section: introtoapis
-path1: /docapis_introtoapis.html
+section: resources
+path1: /resources.html
 ---
 
 The following are activities used in the [live workshops](http://idratherbewriting.com/2018/01/29/api-workshop-in-denver/).

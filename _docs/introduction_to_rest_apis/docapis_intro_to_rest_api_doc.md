@@ -22,7 +22,7 @@ The API landscape is diverse. In addition to web service APIs (which include RES
 * Native library APIs (such as APIs for Java, C++, and .NET)
 * REST APIs (which are a type of web API)
 
-With native library APIs, you deliver a library of classes or functions to users, and they incorporate this library into their projects. They can then call those classes or functions directly in their code, because the library has become part of their code.
+With native library APIs, you deliver a library of classes or functions to users, and they incorporate this library into their projects. They can then call those classes or functions directly in their code.
 
 {% include random_ad.html %}
 
@@ -50,11 +50,11 @@ If REST APIs were an uncommon software product, it wouldn't be that big of a dea
 
 <a class="noCrossRef" href="http://www.slideshare.net/programmableweb/web-api-growthsince2005" class="noExtIcon"><img class="medium" src="images/growthinrestapis.png" alt="Growth in web APIs" /></a>
 
-eBay's API in 2005 was one of the first web APIs. Since then, there has been a tremendous growth in web APIs. Given the importance of clear and accurate API documentation, this presents a perfect market opportunity for technical writers. Technical writers can apply their communication skills to fill a gap in a market that is rapidly expanding.
+eBay's API in 2005 was one of the first web APIs (the API allowed sellers to manage their products in their eBay stores). Since then, there has been a tremendous growth in web APIs. Given the importance of clear and accurate API documentation, this presents a perfect market opportunity for technical writers. Technical writers can apply their communication skills to fill a gap in a market that is rapidly expanding.
 
 ## Because REST APIs are a style not a standard, docs are essential
 
-REST APIs are a bit different from the SOAP APIs that were popular some years ago. SOAP APIs (service-oriented architecture protocol) enforced a specific message format for sending requests and returning responses. As an XML message format, SOAP was very specific and had a WSDL file (web service description language) that described how to interact with the API.
+REST APIs are a bit different from the SOAP APIs that were popular some years ago. SOAP APIs (service-oriented architecture protocol) enforce a specific message format for sending requests and returning responses. As an XML message format, SOAP is very specific and has a WSDL (Web Service Description Language) file that describes how to interact with the API.
 
 REST APIs, however, do not follow a standard message format. Instead, REST is an architectural *style*, a set of recommended practices for submitting requests and returning responses. To understand the request and response format for REST APIs, you don't consult the SOAP message specification or look at the WSDL file. Instead, you have to consult the REST API's *documentation*.
 
@@ -88,7 +88,7 @@ Here's what the Dropbox API looks like:
 
 <a class="noCrossRef" href="https://www.dropbox.com/developers" class="noExtIcon"><img class="medium" src="images/dropbox_clean.png" alt="Dropbox API" /></a>
 
-It's not a sophisticated design. But its simplicity and brevity are what make it appealing. When you consider that the API documentation is more or less the product interface, building a sharp, modern-looking doc site is paramount for credibility and traction in the market. (I dive into the [job market for API documentation later](jobapis_overview.html).
+It's not a sophisticated design. But its simplicity and brevity are what make it appealing. When you consider that the API documentation is more or less the product interface, building a sharp, modern-looking doc site is paramount for credibility and traction in the market. (I dive into the [job market for API documentation later](jobapis_overview.html).)
 
 ## API doc is a new world for most tech writers
 

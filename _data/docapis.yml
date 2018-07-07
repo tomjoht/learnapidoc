@@ -31,9 +31,6 @@ folders:
   - title: "Activity: Find an Open Source Project"
     jurl: /docapis_find_open_source_project.html
 
-  - title: "Workshop activities"
-    jurl: /workshop-activities.html
-
 - title: Using a REST API as a developer
   jurl: /likeadeveloper.html
   folderitems:
@@ -331,14 +328,16 @@ folders:
     jurl: /jobapis_learning_code.html
 
 
-- title: Glossary
+- title: Glossary and resources
   jurl: /resources.html
   folderitems:
 
   - title: Glossary
     jurl: /api-glossary.html
 
-
+  - title: "Workshop activities"
+    jurl: /workshop-activities.html
+    
   #
   # - title: API documentation survey
   #   jurl: /docapis_apidoc_survey.html
