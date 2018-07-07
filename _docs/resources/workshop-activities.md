@@ -8,7 +8,7 @@ section: resources
 path1: /resources.html
 ---
 
-The following are activities used in the [live workshops](http://idratherbewriting.com/2018/01/29/api-workshop-in-denver/).
+When I give API workshops, it helps to consolidate activities into a single page with brief instructions. The following are activities used in the [live workshops in Denver](http://idratherbewriting.com/2018/01/29/api-workshop-in-denver/). I include this resource here in case you're using this content to provide your own workshop or classroom instruction.
 
 * TOC
 {:toc}

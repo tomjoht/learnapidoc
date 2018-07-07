@@ -9,7 +9,7 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-Our [sample weather API](docapis_scenario_for_using_weather_api.html) doesn't allow you to use anything but a GET method, so for this exercise, we'll use the [petstore API from Swagger](http://petstore.swagger.io/), but without actually using the Swagger UI (which is something we'll [explore later](pubapis_swagger_intro.html)). For now, we just need an API with which we can use to create, update, and delete content.
+Our [sample weather API](docapis_scenario_for_using_weather_api.html) doesn't allow you to use anything but a `GET` method, so for this exercise, we'll use the [petstore API from Swagger](http://petstore.swagger.io/), but without actually using the Swagger UI (which is something we'll [explore later](pubapis_swagger_intro.html)). For now, we just need an API with which we can use to create, update, and delete content.
 
 In this example, using the Petstore API, you'll create a new pet, update the pet, get the pet's ID, delete the pet, and then try to get the deleted pet.
 
@@ -167,9 +167,10 @@ You can import curl commands into Postman by doing the following:
     curl -X GET --header "Accept: application/json" "http://petstore.swagger.io/v2/pet/5123123"
     ```
 
-    <img src="images/postmanimport.png" alt="Importing into Postman" />
-
     Make sure you don't have any extra spaces at the beginning.
+
+    <img src="images/postmanimport.png" class="small" alt="Importing into Postman" />
+
 
 3.  Click **Import**.
 4.  Close the dialog box.
@@ -177,11 +178,11 @@ You can import curl commands into Postman by doing the following:
 
 ## Export Postman to curl
 
-You can export Postman to curl by doing the following:
+You can also export Postman to curl by doing the following:
 
-1.  In Postman, click the **Generate Code** button.
+1.  In Postman, click the **Code** button (it's right below Save).
 
-    <img src="images/postmangeneratecodesnippet.png" alt="Generating code snippets" />
+    <img class="medium" src="images/postmangeneratecodesnippet.png" alt="Generating code snippets" />
 
 2.  Select **curl** from the drop-down menu.
 3.  Copy the code snippet.

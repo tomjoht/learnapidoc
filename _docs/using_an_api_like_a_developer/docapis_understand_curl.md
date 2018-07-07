@@ -24,11 +24,9 @@ Each programming language has a different way of making web calls. Rather than e
 
 curl provides a generic, language agnostic way to demonstrate HTTP requests and responses. Users can see the format of the request, including any headers and other parameters. Your users can translate this into the specific format for the language they're using.
 
-## REST APIs follow the same model of the web
-
-One reason REST APIs are so familiar is because REST follows the same model as the web. When you type an `http` address into a browser address bar, you're telling the browser to make an HTTP request to a resource on a server. The server returns a response, and your browser converts the response to a more visual display. But you can also see the raw code.
-
 ## Try using curl to GET a web page
+
+As [mentioned earlier](docapis_what_is_a_rest_api.html#the-web-itself-follows-rest), one reason REST APIs are so familiar is because REST follows the same model as the web. When you type an `http` address into a browser address bar, you're telling the browser to make an HTTP request to a resource on a server. The server returns a response, and your browser converts the response to a more visual display. But you can also see the raw code.
 
 To see an example of how curl retrieves a web resource, open a terminal and type the following:
 
@@ -48,7 +46,21 @@ When you type an address into a website, you see only the body of the response. 
     curl http://example.com -i
     ```
 
-    The header will be included *above* the body in the response.
+    The header will be included *above* the body in the response:
+
+    ```bash
+    HTTP/1.1 200 OK
+    Cache-Control: max-age=604800
+    Content-Type: text/html
+    Date: Sat, 07 Jul 2018 23:25:03 GMT
+    Etag: "1541025663+ident"
+    Expires: Sat, 14 Jul 2018 23:25:02 GMT
+    Last-Modified: Fri, 09 Aug 2013 23:54:35 GMT
+    Server: ECS (sjc/4FB8)
+    Vary: Accept-Encoding
+    X-Cache: HIT
+    Content-Length: 1270
+    ```
 
 2.  To limit the response to just the header, use `-I`:
 
@@ -56,24 +68,7 @@ When you type an address into a website, you see only the body of the response. 
     curl http://example.com -I
     ```
 
-    The response header is as follows:
-
-    ```
-    HTTP/1.1 200 OK
-    Content-Encoding: gzip
-    Accept-Ranges: bytes
-    Cache-Control: max-age=604800
-    Content-Type: text/html
-    Date: Sat, 25 Mar 2017 16:24:59 GMT
-    Etag: "359670651"
-    Expires: Sat, 01 Apr 2017 16:24:59 GMT
-    Last-Modified: Fri, 09 Aug 2013 23:54:35 GMT
-    Server: ECS (rhv/81A7)
-    X-Cache: HIT
-    Content-Length: 606
-    ```
-
-    The header contains the metadata about the response. All of this information is transferred to the browser when you make a request to a URL in your browser (that is, when you surf to a web page online), but the browser doesn't show you this information. You can see the header information using the Chrome Developer Tools console if you look on the Network tab.
+    The header contains the metadata about the response. All of this information is transferred to the browser when you make a request to a URL in your browser (that is, when you surf to a web page online), but the browser doesn't show you this information. You can see the header information using the [Chrome Developer Tools console](https://developers.google.com/web/tools/chrome-devtools/console/) if you look on the Network tab.
 
 3.  Now let's specify the method. The GET method used by default, but we'll make it explicit here:
 
@@ -139,24 +134,24 @@ When you type an address into a website, you see only the body of the response. 
 Let's look more closely at the request you submitted for the weather in the [previous topic](docapis_make_curl_call.html):
 
 ```bash
-curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: 930d08d6-7b2a-6ea2-0725-27324755c684" "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
+curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: 930d08d6-7b2a-6ea2-0725-27324755c684" "http://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
 ```
 
 curl has shorthand names for the various options that you include with your request.
 
 Here's what the commands mean:
 
-* `-X GET`. The `-X` signifies the method used for for the request. Common options are `GET`, `POST`, `DELETE`, `PUT`. (`GET` is the default, so if it's not specified, it's automatically used. You might also see `--get` used instead. Most curl commands have a couple of different representations. `-X GET` can also be written as `--get`.)
+* `-X GET`. The `-X` signifies the method used for for the request. Common options are `GET`, `POST`, `DELETE`, `PUT`. (You might also see `--get` used instead. Most curl commands have a couple of different representations. `-X GET` can also be written as `--get`.)
 
-`-H`. Submits a custom header. Include an additional `-H` for each header key-value pair you're submitting.
+* `-H`. Submits a custom header. Include an additional `-H` for each header key-value pair you're submitting.
 
 ## Query strings and parameters
 
 The zip code (`zip`) and app ID (`appid`) and units (`units`) parameters were passed to the endpoint using "query strings." The `?` appended to the URL is the query string where the parameters are passed to the endpoint:
 
-```
-?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial
-```
+<pre>
+<span style="color: red">?</span>zip=95050<span style="color: red">&</span>appid=fd4698c940c6d1da602a70ac34f0b147<span style="color: red">&</span>units=imperial
+</pre>
 
 After the query string, each parameter is concatenated with other parameters through the `&` symbol. The order of the parameters doesn't matter. The order only matters if the parameters are part of the URL path itself (not listed after the query string).
 
@@ -169,23 +164,23 @@ curl has a lot of possible commands, but the following are the most common when 
 {% if site.format == "kindle" %}
 
 `-i` or `--include`
-:  Include the response headers in the response.
+:  Includes the response headers in the response.
 :  *Example:* `curl -i http://www.example.com`
 
 `-d` or `--data`
-:  Include data to post to the URL. The data needs to be [url encoded](http://www.w3schools.com/tags/ref_urlencode.asp). Data can also be passed in the request body.
+:  Includes data to post to the URL. The data needs to be [url encoded](http://www.w3schools.com/tags/ref_urlencode.asp). Data can also be passed in the request body.
 :  *Example:* `curl -d "data-to-post" http://www.example.com`
 
 `-H` or `--header`
-:  Submit the request header to the resource. This is very common with REST API requests because the authorization is usually included here.
+:  Submits the request header to the resource. This is very common with REST API requests because the authorization is usually included in the header.
 :  *Example:* `curl -H "key:12345" http://www.example.com`
 
 `-X POST`
-:  The HTTP method to use with the request (in this example, `POST`). If you use `-d` in the request, curl automatically specifies a POST method. With GET requests, including the HTTP method is optional, because GET is the default method used.
+:  Specifies the HTTP method to use with the request (in this example, `POST`). If you use `-d` in the request, curl automatically specifies a POST method. With `GET` requests, including the HTTP method is optional, because GET is the default method used.
 : *Example:* `curl -X POST -d "resource-to-update" http://www.example.com`
 
 `@filename`
-:  Load content from a file
+:  Loads content from a file
 :  *Example:* `curl -X POST -d @mypet.json http://www.example.com`
 
 {% else %}
@@ -205,27 +200,27 @@ curl has a lot of possible commands, but the following are the most common when 
    <tbody>
       <tr>
          <td markdown="span">`-i` or `--include` </td>
-         <td markdown="span">Include the response headers in the response. </td>
+         <td markdown="span">Includes the response headers in the response. </td>
          <td markdown="span">`curl -i http://www.example.com`</td>
       </tr>
       <tr>
          <td markdown="span">`-d` or `--data`</td>
-         <td markdown="span">Include data to post to the URL. The data needs to be [url encoded](http://www.w3schools.com/tags/ref_urlencode.asp). Data can also be passed in the request body.</td>
+         <td markdown="span">Includes data to post to the URL. The data needs to be [url encoded](http://www.w3schools.com/tags/ref_urlencode.asp). Data can also be passed in the request body.</td>
          <td markdown="span">`curl -d "data-to-post" http://www.example.com` </td>
       </tr>
       <tr>
          <td markdown="span">`-H` or `--header`</td>
-         <td markdown="span">Submit the request header to the resource. This is very common with REST API requests because the authorization is usually included here.</td>
+         <td markdown="span">Submits the request header to the resource. This is very common with REST API requests because the authorization is usually included in the header.</td>
          <td markdown="span">`curl -H "key:12345" http://www.example.com` </td>
       </tr>
       <tr>
          <td markdown="span">`-X POST`</td>
-         <td markdown="span">The HTTP method to use with the request (in this example, `POST`). If you use `-d` in the request, curl automatically specifies a POST method. With GET requests, including the HTTP method is optional, because GET is the default method used.</td>
+         <td markdown="span">Specifies the HTTP method to use with the request (in this example, `POST`). If you use `-d` in the request, curl automatically specifies a POST method. With GET requests, including the HTTP method is optional, because `GET` is the default method used.</td>
          <td markdown="span">`curl -X POST -d "resource-to-update" http://www.example.com`</td>
       </tr>
       <tr>
          <td markdown="span">`@filename`</td>
-         <td markdown="span">Load content from a file.</td>
+         <td markdown="span">Loads content from a file.</td>
          <td markdown="span">`curl -X POST -d @mypet.json http://www.example.com`</td>
       </tr>
    </tbody>
@@ -260,7 +255,7 @@ The `Accept` header tells the server that the only format we will accept in the 
 
 {% include activity.html %}
 
-What do the following parameters mean?
+Quiz yourself to see how much you remember. What do the following parameters mean?
 
 * `-i`
 * `-H`

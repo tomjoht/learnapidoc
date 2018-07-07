@@ -44,7 +44,7 @@ The concept and general techniques are more or less the same.
 
 ## Explore the OpenWeatherMap API
 
-Let's find a simple weather API that we can use for some exercises. There are [many good weather API options for developers](https://superdevresources.com/weather-forecast-api-for-developing-apps/). Let's use [OpenWeatherMap](https://openweathermap.org), because their service is easy to use, free, and stable.
+Although there are [many good weather API options for developers](https://superdevresources.com/weather-forecast-api-for-developing-apps/), I decided to use the [OpenWeatherMap](https://openweathermap.org) because their service is easy to use, free, and stable.
 
 {% include random_ad2.html %}
 
@@ -52,8 +52,8 @@ Let's find a simple weather API that we can use for some exercises. There are [m
 
 Explore the information available on OpenWeatherMap:
 
-1.  Go to [https://openweathermap.org](https://openweathermap.org) and click **API**.
-2.  Explore the information available in the [Current Weather Data](https://openweathermap.org/current) by clicking **API Doc** in that section.
+1.  Go to [https://openweathermap.org](https://openweathermap.org) and click **API** in the top navigation bar.
+2.  Explore the information available in the [Current Weather Data](https://openweathermap.org/current) by clicking the **API Doc** button in that section.
 
     As you explore the site, get a sense of the variety and services that API provides. The API calls provide developers with ways to pull information into their applications. In other words, the APIs will provide the data plumbing for the applications that developers build.
 
@@ -61,19 +61,23 @@ Explore the information available on OpenWeatherMap:
 
 ## Explore the Aeris Weather API
 
-Now let's look at another weather API for contrast. In contrast to the OpenWeatherMap API, the [Aeris Weather API](http://www.aerisweather.com/) is a bit more robust and extensive. Explore the Aeris Weather API by doing the following:
+Before diving too far down int the OpenWeatherMap API, let's look at another weather API for contrast. In contrast to the OpenWeatherMap API, the [Aeris Weather API](http://www.aerisweather.com/) is a bit more robust and extensive. Explore the Aeris Weather API by doing the following:
 
 1. Go to [www.aerisweather.com](http://www.aerisweather.com).
-2. Click **Developer** on the top navigation.  
-3. Under **Aeris Weather API**, click **Documentation**.
-3. Under **Reference** in the left sidebar, click **Endpoints**.
+2. Click **Documentation** on the top navigation.  
+3. Click **Weather API**.
+4. Click **Data Endpoints**.
+3. Click **Reference** and then click **Endpoints**. (Or just go [here](https://www.aerisweather.com/support/docs/api/reference/endpoints/) directly.)
 
 	<a class="noCrossRef" href="http://www.aerisweather.com/support/docs/api/reference/endpoints/" class="noExtIcon"><img class="medium" src="images/aerisendpoints.png" alt="Aeris Endpoints" /></a>
 
 4. In the list of endpoints, click **[observations](https://www.aerisweather.com/support/docs/api/reference/endpoints/observations/)**.
-5. Browse the type of information that is available through this endpoint.
+5. Browse the type of information that is available through this endpoint. Does this endpoint provide information about wind and temperature that would work for our sample development scenario?
 
+{: .tip}
 Here's the Aeris weather forecast API in action making mostly the same calls as I showed earlier with OpenWeatherMap: <a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-aeris.html" alt="Aeris example">/learnapidoc/assets/files/wind-aeris.html</a>.
+
+For this scenario, there are dozens of different weather APIs we could use. As you create your API documentation, think about whether your users have the same decisions to make. Are there several other APIs that developers can choose from for the same information? What will make your API stand out more? Although you probably can't define your product roadmap, you might at least argue that the docs for your API will be superior!
 
 ## More weather APIs
 
@@ -86,7 +90,7 @@ APIs differ considerably in their design, presentation, responses, and other det
 
 Each weather API has a totally different approach to documentation. As you'll see going through this course, the variety and uniqueness of each API doc site (even when approaching the same topic &mdash; a weather forecast) presents a lot of challenges to tech writing teams. Not only do presentations vary, terminology with APIs varies as well.
 
-As I mentioned in [REST is a style, not a standard](docapis_what_is_a_rest_api.html#rest-is-a-style-not-a-standard), REST APIs are an architectural style following common characteristics and principles; they don't all follow the same standard or specification. You really have to read the documentation to understand how to use the APIs.
+As I mentioned in [REST is a style, not a standard](docapis_what_is_a_rest_api.html#rest-is-a-style-not-a-standard), REST APIs are an architectural style following common characteristics and principles; they don't all follow the same standard or specification. Users really have to read the documentation to understand how to use the API.
 
 {% include random_ad.html %}
 

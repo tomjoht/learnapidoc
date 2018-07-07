@@ -8,7 +8,7 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-While Postman is convenient, it's hard to represent how to make calls with it in your documentation. Additionally, different users probably use different GUI clients, or none at all (preferring the command line instead).
+While [Postman](docapis_postman.html) is convenient, it's hard to represent how to make calls with it in your documentation. Additionally, different users probably use different GUI clients, or none at all (preferring the command line instead).
 
 Instead of describing how to make REST calls using a GUI client like Postman, the most conventional method for documenting request syntax is to explain how to make the calls using curl.
 
@@ -41,7 +41,7 @@ If you don't see this, you need to [download and install curl](http://curl.haxx.
 
 Installing curl on Windows involves a few more steps. First, determine whether you have 32-bit or 64-bit Windows by right-clicking **Computer** and selecting **Properties.** Then follow the instructions in this [Confused by Code page](http://www.confusedbycode.com/curl/#downloads). Most likely, you'll want to select the **With Administrator Privileges (free)** installer.
 
-After it's installed, test your version of curl by doing the following:
+After curl is installed, test your version of curl by doing the following:
 
 1. Open a command prompt by clicking the **Start** button and typing **cmd**.
 2. Type `curl -V`.
@@ -71,7 +71,7 @@ You should get minified JSON response back like this:
 {% include random_ad.html %}
 
 {: .note}
-In Windows, Ctrl+ V doesn't work; instead, you right-click and then select Paste.
+In Windows, Ctrl+ V doesn't work; instead, you right-click and then select **Paste**.
 
 If you're on Windows 8.1 and you encounter an error that says, "The program can't start because MSVCR100.dll is missing from your computer," see <a href="http://www.faqforge.com/windows/fix-the-program-cant-start-because-msvcr100-dll-is-missing-from-your-computer-error-on-windows/">this article</a> and install the suggested package.
 
