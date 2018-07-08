@@ -43,7 +43,7 @@ The first line, `HTTP/1.1 200 OK`, tells us the status of the request (`200`). M
 
 {% include random_ad.html %}
 
-With a `GET` request, it's pretty easy to tell if the request is successful because you get back the expected response. But suppose you're making a `POST`, `PUT`, or `DELETE` call, where you're changing data contained in the resource. How do you know if the request was successfully processed and received by the API? HTTP response codes in the header of the response will indicate whether the operation was successful. The HTTP status codes are just abbreviations for longer messages.
+With a GET request, it's pretty easy to tell if the request is successful because you get back the expected response. But suppose you're making a POST, PUT, or DELETE call, where you're changing data contained in the resource. How do you know if the request was successfully processed and received by the API? HTTP response codes in the header of the response will indicate whether the operation was successful. The HTTP status codes are just abbreviations for longer messages.
 
 {% include course_image.html url="" size="medium" border="true" filename="nonref_statuscodes" ext_print="png" ext_web="svg" alt="Status codes" caption="Status codes are pretty subtle, but when a developer is working with an API, these codes may be the only \"interface\" the developer has. If you can control the messages the developer sees, it can be a huge win." %}
 

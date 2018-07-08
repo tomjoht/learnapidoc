@@ -8,9 +8,7 @@ section: docendpoints
 path1: /docendpoints.html
 ---
 
-In this API reference tutorial tutorial, we'll work on creating five common sections in REST API reference documentation: resource description, endpoints and methods, parameters, request example, and response example.
-
-For context, we'll structure the information from the [sample new endpoint to document](docapis_new_endpoint_to_doc.html) into these five sections.
+In this API reference tutorial tutorial, we'll work on creating five common sections in REST API reference documentation: resource description, endpoints and methods, parameters, request example, and response example. To provide some context (and to continue with our sample documentation scenario), we'll structure the information from the [new endpoint to document](docapis_new_endpoint_to_doc.html) into these five sections.
 
 * TOC
 {:toc}
@@ -36,7 +34,7 @@ Almost all API reference topics include these five sections:
 
 ## Tutorial workflow map
 
-The topics include a workflow map to help guide and orient you each step of the way.
+The tutorial includes a workflow map to help guide and orient you each step of the way.
 
 <div style="margin-top:15px; margin-bottom: 15px;">
 {% include workflow_map.html step="99" map="content/reference_doc_map.html"  %}

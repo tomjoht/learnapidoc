@@ -20,15 +20,13 @@ path1: /docendpoints.html
 
 ## Example of parameters
 
-The following screenshot shows a sample of parameters with the Box API:
+The following screenshot shows a sample parameters section with the Box API:
 
 <a class="noExtIcon" href="https://developer.box.com/reference#edit-a-collaboration"><img src="images/boxparameterexample.png" /></a>
 
-In this example, the parameters are grouped by type: path parameters, query parameters, and body parameters. The endpoint also sets off the path parameter (`collab_id`) in an recognizable way.
+In this example, the parameters are grouped by type: path parameters, query parameters, and body parameters. The endpoint also sets off the path parameter (`collab_id`) in an recognizable way in the endpoint definition.
 
-## Listing parameters in a table
-
-Many times parameters are listed in a simple table or definition list like this:
+Many times parameters are simply listed in a table or definition list like this:
 
 {% if site.format == "kindle" %}
 
@@ -71,10 +69,10 @@ You can format the values in a variety of ways (aside from a table). If you're u
 
 REST APIs have four types of parameters:
 
-*  **[Header parameters](#header_parameters)**: Parameters that are included in the request header, usually related to authorization.
-*  **[Path parameters](#path_parameters)**: Parameters that appear within the path of the endpoint, before the query string (`?`). These are usually set off within curly braces.
-*  **[Query string parameters](#query_string_parameters)**: Parameters that appear in the query string of the endpoint, after the `?`.
-*  **[Request body parameters](#request_body_parameters)**: Parameters that are included in the request body. Usually submitted as JSON.
+*  **[Header parameters](#header_parameters)**: Parameters included in the request header, usually related to authorization.
+*  **[Path parameters](#path_parameters)**: Parameters within the path of the endpoint, before the query string (`?`). These are usually set off within curly braces.
+*  **[Query string parameters](#query_string_parameters)**: Parameters in the query string of the endpoint, after the `?`.
+*  **[Request body parameters](#request_body_parameters)**: Parameters included in the request body. Usually submitted as JSON.
 
 {: .tip}
 The terms for each of these parameter types comes from the [OpenAPI specification](pubapis_openapi_tutorial_overview.html), which defines a formal specification that includes descriptions of each parameter type (see the [Path object tutorial](pubapis_openapi_step4_paths_object.html)). Using industry standard terminology helps you develop a vocabulary to describe different elements of an API.
@@ -88,7 +86,7 @@ Regardless of the parameter type, consider noting the following:
 
 ### Data types for parameters {#data_types_parameters}
 
-Because APIs may not process the parameter correctly if it's the wrong data type or wrong format, it's important to list the data type for each parameter. This is usually a good idea with all parameter types but is especially true for request body parameters, since these are usually formatted in JSON.
+APIs may not process the parameter correctly if it's the wrong data type or wrong format. Therefore, it's important to list the data type for each parameter. This is usually a good idea with all parameter types but is especially true for request body parameters, since these are usually formatted in JSON.
 
 These data types are the most common with REST APIs:
 
@@ -99,7 +97,7 @@ These data types are the most common with REST APIs:
 * **array**: A list of values
 
 {: .note}
-There are more data types in programming, and if you have more specific data types that are important to note, be sure to document them. In Java, for example, it's important to note the data type allowed because Java allocates memory space based on the size of the data. As such, Java gets much more specific about the size of numbers. You have a byte, short, int, double, long, float, char, boolean, and so on. However, you usually don't have to specify this level of detail with a REST API. You can probably just write "number."
+There are more data types in programming, and if you have more specific data types that are important to note, be sure to document them. In Java, for example, it's important to note the data type allowed because Java allocates memory space based on the size of the data. As such, Java gets much more specific about the size of numbers. You have a byte, short, int, double, long, float, char, boolean, and so on. However, you usually don't have to specify this level of detail with a REST API. You can usually just write "number."
 
 {% include random_ad.html %}
 
@@ -107,16 +105,16 @@ There are more data types in programming, and if you have more specific data typ
 
 In addition to specifying the data type, the parameters should indicate the maximum, minimum, and allowed values. For example, if the weather API allows only longitude and latitude coordinates of specific countries, these limits should be described in the parameters documentation.
 
-Omitting information about max/min values or other unallowed values is a common pitfall in docs. Developers often don't realize all the "creative" ways users might use the APIs. The quality assurance team (QA) is probably your best resource for identifying the values that aren't allowed, because it's QA's job to try to break the API.
+Omitting information about max/min values or other unallowed values is a common pitfall in docs. Developers often don't realize all the "creative" ways users might use the APIs. The quality assurance team (QA) is probably your best resource for identifying the values that aren't allowed because it's QA's job to try to break the API.
 
 {: .tip}
-When you test an API, try running a endpoint without the required parameters, or with the wrong parameters, or with values that exceed the max or min amounts. See what kind of error response comes back. Include that response in your [status and error codes section](docapis_doc_status_codes.html). I get deeper with the importance of testing in [Testing your docs](testingdocs.html).
+When you test an API, try running a endpoint without the required parameters, or with the wrong parameters, or with values that exceed the max or min amounts. See what kind of error response comes back. Include that response in your [status and error codes section](docapis_doc_status_codes.html). I talk more about the importance of testing in [Testing your docs](testingdocs.html).
 
 ## Header parameters {#header_parameters}
 
-Header parameters are included in the request header. Usually, the header just includes authorization parameters that are common across all endpoints and thus is not documented with each endpoint. Instead, the authorization parameters are documented in the [authorization requirements section](docapis_more_about_authorization.html).
+Header parameters are included in the request header. Usually, the header just includes authorization parameters that are common across all endpoints; as a result, the header parameters aren't usually documented with each endpoint. Instead, the authorization parameters are documented in the [authorization requirements section](docapis_more_about_authorization.html).
 
-However, if your endpoint requires specific parameters to be passed in the header, you would document them in the parameters documentation here. (For more on request and response headers, see the [curl tutorial](docapis_understand_curl.html#requests-and-responses-include-headers-too) where we explored this with some examples.)
+However, if your endpoint requires unique parameters to be passed in the header, you would document them in the parameters documentation here. (For more on request and response headers, see the [curl tutorial](docapis_understand_curl.html#requests-and-responses-include-headers-too) where we explored this with some examples.)
 
 {% include random_ad2.html %}
 
@@ -124,9 +122,9 @@ However, if your endpoint requires specific parameters to be passed in the heade
 
 Path parameters are part of the endpoint itself, and are not optional. For example, `{user}` and `{bicycleId}` are the path parameters in the following endpoint:
 
-```
-/service/myresource/user/{user}/bicycles/{bicycleId}
-```
+<pre>
+/service/myresource/user/<span class="orange">{user}</span>/bicycles/<span class="orange">{bicycleId}</span>
+</pre>
 
 Path parameters are usually set off with curly braces, but some API doc style's precede the value with a colon or use other syntax. When you document path parameters, indicate the default values, the allowed values, and other details.
 
@@ -176,7 +174,7 @@ Optionally, you could also use the same color for the parameters in your documen
 </table>
 {% endif %}
 
-By color coding the parameters, it's easy to see the parameter in contrast with the other parts of the endpoint.
+By color coding the parameters, it's easy to see the parameter being defined relates to the endpoint definition.
 
 ## Query string parameters {#query_string_parameters}
 
@@ -196,11 +194,11 @@ and
 
 would return the same result.
 
-However, with path parameters, order *does* matter. If the parameter is part of the actual endpoint (not added after the query string), then you usually describe this value in the description of the endpoint itself.
+However, with path parameters, order *does* matter. If the parameter is part of the actual endpoint (not added after the query string), you usually describe this value in the description of the endpoint itself.
 
 ## Request body parameters {#request_body_parameters}
 
-Frequently with POST requests, where you're creating something, you submit a JSON object in the request body. This is known as a request body parameter, and the format is usually JSON. This JSON object may be a lengthy list of key value pairs with multiple levels of nesting.
+Frequently, with POST requests (where you're creating something), you submit a JSON object in the request body. This is known as a request body parameter, and the format is usually JSON. This JSON object may be a lengthy list of key value pairs with multiple levels of nesting.
 
 For example, the endpoint may be something simple, such as `/surfreport/{beachId}`. But in the body of the request, you might include a JSON object with a number of key-value pairs, like this:
 
@@ -230,7 +228,7 @@ Below the request body parameter is a table that describes each parameter:
 
 But the sample request also contains links to each of the parameters. When you click a parameter value in the sample request, you go to a page that provides more details about that parameter value, such as the [ItemFilter](http://developer.ebay.com/DevZone/finding/CallRef/types/ItemFilter.html). This is likely because the parameter values are more complex and require more explanation.
 
-The same parameter values might be used in other requests as well, so organization approach facilitates re-use. Even so, I dislike jumping around to other pages for the information I need.
+The same parameter values might be used in other requests as well, so eBay's approach likely facilitates re-use. Even so, I dislike jumping around to other pages for the information I need.
 
 ### Swagger UI's approach for request body parameters
 
@@ -238,9 +236,9 @@ The same parameter values might be used in other requests as well, so organizati
 
 <a class="noExtIcon" href="http://petstore.swagger.io/#/operations/pet/addPet"><img src="images/swaggeruiexamplemodel.png"/></a>
 
-See the [Swagger Petstore](http://petstore.swagger.io/) to explore the demo here. The Example Value shows a sample of the syntax along with examples. When you click the Model link, you see a sample request body parameter and any descriptions of each element in the request body parameter.
+See the [Swagger Petstore](http://petstore.swagger.io/) to explore the demo here. The Example Value shows a sample of the syntax along with examples. When you click the **Model** link, you see a sample request body parameter and any descriptions of each element in the request body parameter.
 
-The Model includes expand/collapse toggles with the values. (The [Petstore demo](http://petstore.swagger.io/) doesn't actually include many parameter descriptions in the Model, but if any descriptions that are included, they would appear here in the Model rather than the Example Value.)
+The Model includes expand/collapse toggles with the values. (The [Petstore demo](http://petstore.swagger.io/) doesn't actually include many parameter descriptions in the Model, but if any descriptions were included, they would appear here in the Model rather than the Example Value.)
 
 {: .tip}
 In a later section, I dive into Swagger. If you want to skip there now, go to [Introduction to Swagger](pubapis_swagger_intro.html).

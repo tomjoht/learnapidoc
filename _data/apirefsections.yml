@@ -6,12 +6,12 @@ resource_description:
 endpoints_and_methods:
   term: Endpoints and methods
   def: >
-        The endpoints indicate how you access the resource, and the method used with the endpoint indicates the allowed interactions (such as GET, POST, or DELETE) with the resource. The endpoint shows the end path of a resource URL only, not the base path common to all endpoints. The same resource usually has a variety of related endpoints, each with different paths and methods but returning variant information about the same resource. Endpoints usually have brief descriptions similar to the overall resource description but shorter.
+        The endpoints indicate how you access the resource, and the method used with the endpoint indicates the allowed interactions (such as <code>GET</code>, <code>POST</code>, or <code>DELETE</code>) with the resource. The endpoint shows the end path of a resource URL only, not the base path common to all endpoints. The same resource usually has a variety of related endpoints, each with different paths and methods but returning different information about the same resource. Endpoints usually have brief descriptions similar to the overall resource description but shorter.
 
 parameters:
   term: Parameters
   def: >
-        Parameters are options you can pass with the endpoint (such as specifying the response format or the amount returned) to influence the response. There are four types of parameters: header parameters, path parameters, query string parameters, and request body parameters. The different types of parameters are often documented in separate groups. Not all endpoints contain each type of parameter.
+        Parameters are options you can pass with the endpoint (such as specifying the response format or the amount returned) to influence the response. There are four types of parameters: header parameters, path parameters, query string parameters, and request body parameters. The different types of parameters are often documented in separate groups on the same page. Not all endpoints contain each type of parameter.
 
 request_example:
   term: Request example

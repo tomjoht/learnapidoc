@@ -26,7 +26,7 @@ Here's an example of a resource description from the Mailchimp API's [Campaigns 
 
 {% include random_ad2.html %}
 
-Typically, an API will have a number of endpoints grouped under the same resource. Normally, you describe both the general resource and the individual endpoints. For example, the Campaigns resource has various endpoints that are also described:
+Typically, an API will have a number of endpoints grouped under the same resource. In this case, you describe both the general resource and the individual endpoints. For example, the Campaigns resource has various endpoints that are also described:
 
 * POST `/campaigns`
 * GET `/campaigns	`
@@ -92,11 +92,11 @@ The Relationships resource isn't described but rather acts as a container for re
 For another example of an API with resources and endpoints, check out the [Trello API](https://developers.trello.com/v1.0/reference#introduction).
 
 {: .tip}
-The description of the resource is likely something you'll re-use in different places: product overviews, tutorials, code samples, quick references, etc. As a result, put a lot of effort into crafting it. Consider storing the description in a re-usable snippet in your authoring tool so that you can list it without resorting to copy/paste methods in your [quick start guide](docapis_doc_quick_reference.html).
+The description of the resource is likely something you'll re-use in different places &mdash; product overviews, tutorials, code samples, quick references, etc. As a result, put a lot of effort into crafting it. Consider storing the description in a re-usable snippet in your authoring tool so that you can list it without resorting to copy/paste methods in your [quick start guide](docapis_doc_quick_reference.html).
 
 ## Terminology for describing the resource
 
-The exact terminology for referring to resources varies. The "things" that you access using a URL can be referred to in a variety of ways, but "resource" is the most common term because you access them through a URL, or uniform *resource* locator. Other than "resources," you might see terms such as API calls, endpoints, API methods, calls, objects, services, and requests. Some docs get around the situation by not calling them anything explicitly.
+The exact terminology for referring to resources varies. The "things" that you access using a URL can be referred to in a variety of ways, but "resource" is the most common term because you access them through a URL, or uniform *resource* locator. Other than "resources," you might see terms such as *API calls*, *endpoints*, *API methods*, *calls*, *objects*, *services*, and *requests*. Some docs get around the situation by not calling them anything explicitly.
 
 Despite the variety with terminology, in general an API has various "resources" that you access through "endpoints." The endpoints give you access to the resource. (But terminology isn't standard, so expect variety.)
 
@@ -105,7 +105,7 @@ Despite the variety with terminology, in general an API has various "resources" 
 Resource descriptions (as well as endpoint descriptions) are typically short, usually 1-3 sentences. What if you have a lot more detail to add? In these situations, keep in mind the difference between reference documentation and user guides/tutorials:
 
 * **Reference documentation**: Concise, bare-bones information that developers can quickly reference.
-* **User guides/tutorials**: More elaborate detail about how to use the API, including step-by-step instructions, code samples, concepts, and procedures.
+* **User guides/tutorials**: More elaborate detail about how to use the API, including step-by-step instructions, code samples, concepts, and procedures. I go into much more detail about this content in [Documenting non-reference sections](docnonref.html).
 
 Although the description in an API reference topic provides a 1-3 sentence summary of the information the resource contains, you might expand on this with much greater detail in the user guide. (You could link the reference description to the places in the guide where you provide more detail.)
 
