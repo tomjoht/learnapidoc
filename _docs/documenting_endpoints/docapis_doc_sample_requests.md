@@ -99,7 +99,7 @@ You can see the request in Shell (curl), Ruby, Node, or Python. Developers can e
 
 Providing a variety of requests like this, often displayed through [tabs](https://getbootstrap.com/docs/3.3/javascript/#tabs), helps make your API easier to implement. It's even better if you can automatically populate the API keys with the actual user's API keys based on their logged-in profile.
 
-However, don't feel so intimidated by this smorgasbord of code samples. Some API doc tools (such as [Readme.io](pubapis_docs_as_code_tool_options.html#readmeio) or [SwaggerHub](pubapis_swaggerhub_smartbear.html)) can actually automatically generate these code samples because the patterns for making REST requests in different programming languages follow a common template.
+However, don't feel so intimidated by this smorgasbord of code samples. Some API doc tools (such as [Readme.io](pubapis_docs_as_code_tool_options.html#readmeio) or [SwaggerHub](pubapis_swaggerhub_smartbear.html)) can automatically generate these code samples because the patterns for making REST requests in different programming languages follow a common template.
 
 ## Auto-generating code samples
 
@@ -126,11 +126,11 @@ Although these code generators are probably helpful, they may or may not work fo
 
 ## SDKs provide tooling for APIs
 
-A lot of times, developers will create an SDK (software development kit) that accompanies a REST API. The SDK helps developers implement the API using specific tooling.
+A lot of times, developers will create an [SDK (software development kit)](docapis_sdks_and_sample_apps.html) that accompanies a REST API. The SDK helps developers implement the API using specific tooling.
 
 For example, at one company I worked at, we had both a REST API and a JavaScript SDK. Because JavaScript was the target language developers were working in, the company developed a JavaScript SDK to make it easier to work with REST using JavaScript. You could submit REST calls through the JavaScript SDK, passing a number of parameters relevant to web designers.
 
-An SDK is any kind of tooling that makes it easier to work with your API. It's extremely common for a company to provide a language agnostic REST API, and then to develop an SDK that makes it easy to implement the API in the primary language they expect users to implement the API in. As such, peppering your sample requests with these small request snippets in other languages probably isn't that important, since the SDK provides an easier implementation. If you have an SDK, you'll want to make more detailed code samples showing how to use the SDK.
+An SDK is any kind of tooling that makes it easier to work with your API. It's extremely common for a company to provide a language agnostic REST API, and then to develop an SDK that makes it easy to implement the API in the primary language they expect users to implement the API in. As such, peppering your sample requests with these small request snippets in other languages probably isn't that important, since the SDK provides an easier implementation. If you have an SDK, you'll want to make more detailed [code samples](docapis_codesamples_bestpractices.html) showing how to use the SDK.
 
 ## API explorers provide interactivity with your own data
 
@@ -146,7 +146,7 @@ As does the New York Times API:
 
 <a class="noExtIcon" href="http://developer.nytimes.com/article_search_v2.json#/Console/GET/articlesearch.json"><img src="images/nytimesrequestexample.png"/></a>
 
-The API Explorer lets you insert your own values, your own API key, and other parameters into a request so you can see the responses directly in the Explorer. Being able to see your own data maybe makes the response more real and immediate.
+The API Explorer lets you insert your own values, your own API key, and other parameters into a request so you can see the responses directly in the API Explorer. Being able to see your own data makes the response more real and immediate.
 
 However, if you don't have the right data in your system, using your own API key may not show you the full response that's possible. It works best when the resources involve public information and the requests are GET requests.
 
@@ -158,11 +158,11 @@ It's one thing to allow GET methods, but if you include other methods, users cou
 
 <a href="https://sendgrid.com/docs/API_Reference/Web_API/blocks.html" class="noExtIcon"><img src="images/sendgridwarningmessage.png" alt="SendGrid API Explorer warning message" /></a>
 
-Foursquare's API docs used to have a built-in API explorer in the previous version of their docs, but they have since removed it. I'm not sure why.
+Foursquare's API docs used to have a built-in API explorer in the previous version of their docs (shown below), but they have since removed it. I'm not sure why.
 
 <a href="https://developer.foursquare.com/docs" class="noExtIcon"><img src="images/foursquareapiexplorer.png" alt="Foursquare's API Explorer" /></a>
 
-As far as integrating custom API Explorer tooling, this is a task that should be relatively easy for developers. All the Explorer does is map values from a field to an API call and return the response to the same interface. In other words, the API plumbing is all there &mdash; you just need a little JavaScript and front-end skills to make it happen.
+As far as integrating custom API Explorer tooling, this is a task that should be relatively easy for developers. All the API Explorer does is map values from a field to an API call and return the response to the same interface. In other words, the API plumbing is all there &mdash; you just need a little JavaScript and front-end skills to make it happen.
 
 However, you don't have to build your own tooling. Existing tools such as [Swagger UI](http://swagger.io/swagger-ui/) (which parses a [OpenAPI specification document](pubapis_openapi_tutorial_overview.html)) and [Readme.io](http://readme.io) (which allows you to enter the details manually or from an OpenAPI specification) can integrate API Explorer functionality directly into your documentation.
 

@@ -14,7 +14,7 @@ After completing the [API reference tutorial](docapis_api_reference_tutorial_ove
 
 ## Critique the API reference documentation
 
-If you've found an open source project, great. If you don't have a project but you still want to do the activity, select one of the API from the [list here](pubapis_apilist.html).
+If you've found an open source project, great. If you don't have a project but you still want to do the activity, select one of the API from the [list of 100 API doc sites here](pubapis_apilist.html).
 
 {% include random_ad2.html %}
 
@@ -57,4 +57,4 @@ This part of the activity might be more difficult to do, but here is where you'l
 
 ## Next steps
 
-Now that you've had your head buried in API reference documentation, it's time to dive into testing a bit more. As you work with API endpoints and other code, you'll need to test these endpoints yourself, both to gather and verify the information in your documentation. Testing isn't always straightforward, so I devote an entire section to this topic. Go to [Overview to testing your docs](testingdocs_overview.html).
+Now that you've had your head buried in API reference documentation, it's time to dive into testing a bit more. As you work with API endpoints and other code, you'll need to test these endpoints yourself, both to gather and verify the information in your documentation. Testing isn't always straightforward, so I devote an entire section to this topic. Continue to [Overview to testing your docs](testingdocs_overview.html).
