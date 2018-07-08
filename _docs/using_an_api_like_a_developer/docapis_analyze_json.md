@@ -22,7 +22,7 @@ JSON stands for JavaScript Object Notation. It's the most common way REST APIs r
 
 Although some APIs return information in both JSON and XML, if you're trying to parse through the response and render it on a web page, JSON fits much better into the existing JavaScript + HTML toolset that powers most web pages.
 
-The (unminified) response from the OpenWeatherMap weather endpoint looks like this:
+The unminified response from the OpenWeatherMap weather endpoint looks like this:
 
 ```json
 {
@@ -82,7 +82,7 @@ JSON has two types of basic structures: objects and arrays. An object is a colle
 }
 ```
 
-The key-value pairs are each put into double quotation marks when both are strings. If the value is an integer (a whole number) or Boolean (true or false value), omit the quotation marks around the value. Each key-value pair is separated from the next by a comma (except for the last pair).
+The key-value pairs are each put into double quotation marks when both are strings. If the value is an integer (a whole number) or Boolean (true or false value), omit the quotation marks around the value. Each key-value pair is separated from the next by a comma.
 
 ## JSON arrays are lists of items
 
@@ -94,9 +94,13 @@ An array is a list of items, surrounded by brackets:
 
 The list of items can contain strings, numbers, booleans, arrays, or other objects. With integers or booleans, you don't use quotation marks.
 
+Integers:
+
 ```json
 [1, 2, 3]
 ```
+
+Booleans:
 
 ```json
 [true, false, true]
@@ -140,7 +144,7 @@ And objects can contain arrays in the value part of the key-value pair:
 
 {% include random_ad.html %}
 
-Just remember, objects are surrounded with curly braces `{ }` and contain key-value pairs. Sometimes those values are arrays. Arrays are lists and are surrounded with square brackets `[ ]`.
+Just remember, objects are surrounded with curly braces `{ }` and contain key-value pairs. Sometimes those values are arrays. Arrays are lists and are surrounded with square brackets `[ ]`. It's common for arrays to contain lists of objects, and for objects to contain arrays.
 
 {: .tip}
 It's important to understand the difference between objects and arrays because it determines how you access and display the information. Later exercises with dot notation will require you to understand this.
@@ -148,8 +152,6 @@ It's important to understand the difference between objects and arrays because i
 {% include activity.html %}
 
 Look at the response from the `weather` endpoint of the OpenWeatherMap weather API. Where are the objects? Where are the arrays?
-
-It's common for arrays to contain lists of objects, and for objects to contain arrays.
 
 ## More information
 

@@ -1,5 +1,5 @@
 ---
-title: "Activity: Make a curl call"
+title: "Make a curl call"
 permalink: /docapis_make_curl_call.html
 categories:
 - api-doc

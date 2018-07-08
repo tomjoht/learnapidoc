@@ -124,7 +124,7 @@ You can view the correct page here: [http://idratherbewriting.com/learnapidoc/as
 
 At the beginning of the section on [Using an API like a developer](docapis_scenario_for_using_weather_api.html#endgoal), I showed an example of [embedding the wind speed](docapis_scenario_for_using_weather_api.html#endgoal) and other details on a website. Now let's revisit this code example and see how it's put together.
 
-Copy the following code into a basic HTML page:
+Copy the following code into a basic HTML file:
 
 ```html
 <html>
@@ -172,7 +172,7 @@ Copy the following code into a basic HTML page:
    </body>
 </html>
 ```
-A few things are different here, but it's essentially the same code:
+A few things are different here, but it's essentially the same code as you created in the [Access and print a specific JSON value](docapis_access_json_values.html). Here's what's different:
 
 * Rather than running the `ajax` method on page load, the `ajax` method is wrapped inside a function called `checkWind`. When the web page's button is clicked, the `onclick` method fires the `checkWind()` function.
 * When the `checkWind` function runs, the values for temperature, wind speed, wind direction, and current conditions are written to several ID tags on the page.
@@ -187,6 +187,6 @@ You can view the file <a href="http://idratherbewriting.com/learnapidoc/assets/f
 
 As you've gone through the exercise of using an API like a developer, you've gained a high-level understanding of how REST APIs work, what information developers need, how they might use an API, how they make requests, evaluate responses, and other details.
 
-With this background, it's time to switch gears and put on your technical writing hat. In the next section, [Documenting endpoints](docendpoints.html), you'll assume the task of [documenting a new endpoint](docapis_new_endpoint_to_doc.html) that was added to the weather API. You'll learn the essential sections in endpoint reference documentation, the terminology to use, and formatting conventions for the reference information.
+With this background, it's time to switch gears and put on your technical writing hat. In the next section, [Documenting endpoints](docendpoints.html), you'll assume the task of [documenting a new endpoint](docapis_new_endpoint_to_doc.html) that was added to a weather API. You'll learn the essential sections in endpoint reference documentation, the terminology to use, and formatting conventions for the reference information.
 
 {% include random_ad.html %}

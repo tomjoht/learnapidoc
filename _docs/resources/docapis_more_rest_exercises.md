@@ -3,34 +3,30 @@ title:  More REST API exercises
 permalink: /docapis_more_rest_exercises.html
 keywords:
 course: "Documenting REST APIs"
-weight: 2.92
+weight: 13.1
 sidebar: docapis
-section: likeadeveloper
-path1: /likeadeveloper.html
+section: resources
+path1: /resources.html
 ---
 
-While you've got your developer hat on, let's explore some other REST APIs and code some specific scenarios. This experience will give you more exposure to different REST APIs, how they're organized, the complexities and interdependency of endpoints, and more.
+To get more practice working with various APIs, I provide several examples in this Resources section. Working through these exercises will give you more exposure to different REST APIs, how they're organized, the complexities and interdependency of endpoints, and more.
 
 {% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}
 
-## Attack the challenge first, then read the answer
+## Available exercises
 
 There are several examples with different APIs. A challenge is listed for each exercise. First, try to solve the challenge on your own. Then follow along in the sections below to see how I approached it.
 
 {% include random_ad2.html %}
 
-In these examples, I usually printed the code to a web page to visualize the response.
+In these examples, I usually printed the code to a web page to visualize the response. The following exercises are available:
 
-## Exercises
-
-The following exercises are available:
-
-* [Activity: Get event information using the EventBrite API](docapis_eventbrite_example.html)
+* [Get event information using the EventBrite API](docapis_eventbrite_example.html)
 * [Flickr example: Retrieve a Flickr gallery](docapis_flickr_example.html)
-* [Activity: Get wind speed using the Aeris Weather API](docapis_aerisweather_example.html)
+* [Get wind speed using the Aeris Weather API](docapis_aerisweather_example.html)
 
 ## Shortcuts for API keys
 

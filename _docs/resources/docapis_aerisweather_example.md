@@ -1,9 +1,9 @@
 ---
-title: 'Activity: Get wind speed using the Aeris Weather API'
+title: 'Get wind speed using the Aeris Weather API'
 permalink: /docapis_aerisweather_example.html
 keywords:
 course: "Documenting REST APIs"
-weight: 2.95
+weight: 13.3
 sidebar: docapis
 section: likeadeveloper
 path1: /likeadeveloper.html

@@ -2,7 +2,7 @@
 title: Workshop activities
 permalink: /workshop-activities.html
 course: "Documenting REST APIs"
-weight: 13.1
+weight: 13.4
 sidebar: docapis
 section: resources
 path1: /resources.html

@@ -122,7 +122,7 @@ Then select the language you want, such as JavaScript > Jquery AJAX:
 {: .note}
 Although these code generators are probably helpful, they may or may not work for your API. Always review code samples with developers. In most cases, developers supply the code samples for the documentation, and technical writers briefly comment on the code samples.
 
-(For an activity that involves using the generated jQuery code from Postman, see [Use the JSON from the response payload](docapis_json_console.html).)
+(For an activity that involves using the generated jQuery code from Postman, see [Inspect the JSON from the response payload](docapis_json_console.html).)
 
 ## SDKs provide tooling for APIs
 

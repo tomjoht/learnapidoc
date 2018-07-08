@@ -41,44 +41,32 @@ folders:
   - title: Get authorization keys
     jurl: /docapis_get_auth_keys.html
 
-  - title: "Activity: Submit requests through Postman"
+  - title: "Submit requests through Postman"
     jurl: /docapis_postman.html
 
   - title: curl intro and installation
     jurl: /docapis_install_curl.html
 
-  - title: "Activity: Make a curl call"
+  - title: "Make a curl call"
     jurl: /docapis_make_curl_call.html
 
   - title: Understand curl more
     jurl: /docapis_understand_curl.html
 
-  - title: "Activity: Use methods with curl"
+  - title: "Use methods with curl"
     jurl: /docapis_curl_with_petstore.html
 
   - title: Analyze the JSON response
     jurl: /docapis_analyze_json.html
 
-  - title: Use the JSON from the response payload
+  - title: Inspect the JSON from the response payload
     jurl: /docapis_json_console.html
 
-  - title: "Activity: Access and print a specific JSON value"
+  - title: "Access and print a specific JSON value"
     jurl: /docapis_access_json_values.html
 
   - title: Dive into dot notation
     jurl: /docapis_diving_into_dot_notation.html
-
-  - title:  More REST API exercises
-    jurl: /docapis_more_rest_exercises.html
-
-  - title: "Activity: Get event information using the EventBrite API"
-    jurl: /docapis_eventbrite_example.html
-
-  - title: "Activity: Retrieve a gallery using the Flickr API"
-    jurl: /docapis_flickr_example.html
-
-  - title: "Activity: Get wind speed using the Aeris Weather API"
-    jurl: /docapis_aerisweather_example.html
 
 - title: Documenting API reference topics
   jurl: /docendpoints.html
@@ -335,9 +323,21 @@ folders:
   - title: Glossary
     jurl: /api-glossary.html
 
+  - title:  REST API exercises
+    jurl: /docapis_more_rest_exercises.html
+
+  - title: "Activity: Get event information using the EventBrite API"
+    jurl: /docapis_eventbrite_example.html
+
+  - title: "Activity: Retrieve a gallery using the Flickr API"
+    jurl: /docapis_flickr_example.html
+
+  - title: "Activity: Get wind speed using the Aeris Weather API"
+    jurl: /docapis_aerisweather_example.html
+
   - title: "Workshop activities"
     jurl: /workshop-activities.html
-    
+
   #
   # - title: API documentation survey
   #   jurl: /docapis_apidoc_survey.html

@@ -1,12 +1,12 @@
 ---
-title: 'Activity: Get event information using the EventBrite API'
+title: 'Get event information using the EventBrite API'
 permalink: /docapis_eventbrite_example.html
 sidebar: docapis
 course: "Documenting REST APIs"
-weight: 2.93
-keywords: Eventbrite API example, REST APIs
-section: likeadeveloper
-path1: /likeadeveloper.html
+weight: 13.2
+sidebar: docapis
+section: resources
+path1: /resources.html
 ---
 
 Use the [Eventbrite API](https://www.eventbrite.com/developer/v3/) to get the event title and description of an event.

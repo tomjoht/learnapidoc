@@ -77,13 +77,6 @@ Because the purpose of the course is to help you learn, there are many activitie
 Other topics consist entirely of activities. The course has the following activities:
 
 * [Activity: Find an Open Source Project](docapis_find_open_source_project.html)
-* [Activity: Submit requests through Postman](docapis_postman.html)
-* [Activity: Make a curl call](docapis_make_curl_call.html)
-* [Activity: Use methods with curl](docapis_curl_with_petstore.html)
-* [Activity: Access and print a specific JSON value](docapis_access_json_values.html)
-* [Activity: Get event information using the EventBrite API](docapis_eventbrite_example.html)
-* [Activity: Retrieve a gallery using the Flickr API](docapis_flickr_example.html)
-* [Activity: Get wind speed using the Aeris Weather API](docapis_aerisweather_example.html)
 * [Activity: Get event information using the EventBrite API](docapis_eventbrite_example.html)
 * [Activity: Critique or create an API reference topic](docapis_api_reference_activity.html)
 * [Activity: Test the docs in your Open Source project](testingdocs_activity.html)

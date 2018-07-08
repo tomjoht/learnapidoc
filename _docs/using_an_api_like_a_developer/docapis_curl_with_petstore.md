@@ -1,5 +1,5 @@
 ---
-title: "Activity: Use methods with curl"
+title: "Use methods with curl"
 permalink: /docapis_curl_with_petstore.html
 keywords:
 course: "Documenting REST APIs"
