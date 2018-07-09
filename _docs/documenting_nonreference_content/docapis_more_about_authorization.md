@@ -7,7 +7,7 @@ section: docnonref
 path1: /docnonref.html
 ---
 
-Before users can make requests with your API, they'll usually need to register for some kind of application key, or learn other ways to authenticate the requests. APIs vary in the way they authenticate users. Some APIs require you to include an API key in the request header, while other APIs require elaborate security due to the need to protect sensitive data, prove identity, and ensure the requests aren't tampered with. In this section, you'll learn more about authentication and what you should focus on in documentation.
+Before users can make requests with your API, they'll usually need to register for some kind of application key, or learn other ways to authenticate the requests. APIs vary in the way they authenticate users. Some APIs require you to include an API key in the request header, while other APIs require elaborate security due to the need to protect sensitive data, prove identity, and ensure the requests aren't tampered with. In this section, you'll learn more about authentication and authorization and what you should focus on in documentation.
 
 {% if site.format == "web" %}
 * TOC
@@ -16,10 +16,10 @@ Before users can make requests with your API, they'll usually need to register f
 
 ## Defining terms
 
-First, a brief definition of terms:
+First, let's define some key terms:
 
-* **Authentication**: Proving correct identity
-* **Authorization**: Allowing a certain action
+* **Authentication**: Refers to proving correct identity
+* **Authorization**: Refers to allowing a certain action
 
 An API might authenticate you but not authorize you to make a certain request.
 
@@ -29,13 +29,23 @@ An API might authenticate you but not authorize you to make a certain request.
 
 {% include random_ad2.html %}
 
-Why do APIs even need authentication? For read-only APIs, sometimes users don't need keys. But most commercial APIs do require authorization in the form of API keys or other methods. If you *didn't* have any kind of security with your API, users could make unlimited amounts of API calls without any kind of registration, making a revenue model associated with your API difficult.
+Why do APIs even need authentication? For read-only APIs, sometimes users don't need keys. But most commercial APIs do require authorization in the form of API keys or other methods. If you *didn't* have any kind of security with your API, users could make unlimited amounts of API calls without any kind of registration. This would make a revenue model for your API difficult.
 
-Additionally, there wouldn't be an easy way to associate requests with specific user data, or there wouldn't be a way to protect the wrong users from making calls that affected a user's data (such as DELETE requests). Finally, you couldn't track who is using your API, or what endpoints are most used. Clearly, API developers must think about ways to make APIs secure.
+Additionally, without authentication, there wouldn't be an easy way to associate requests with specific user data. And there wouldn't be a way to protect against requests from malicious users that might delete another user's data (such as DELETE requests on another's account).
+
+Finally, you couldn't track who is using your API, or what endpoints are most used. Clearly, API developers must think about ways to authenticate and authorize requests made to their API.
+
+Overall, authentication and authorization with APIs serves the following purposes:
+
+* Authenticate calls to the API to registered users only
+* Track who is making the requests
+* Track usage of the API
+* Block or throttle any requester who exceeds the [rate limits](docapis_rate_limiting_and_thresholds.html)
+* Apply different permission levels to different users
 
 ## Different types of authorization
 
-There are quite a few different methods for authorization. The following are various types of API authorization you might encounter:
+There are several different methods for authorization. The following are various types of API authorization you might encounter:
 
 * [API keys](#api_keys)
 * [Basic Auth](#basic_auth)
@@ -44,15 +54,7 @@ There are quite a few different methods for authorization. The following are var
 
 ### API keys {#api_keys}
 
-Most APIs require you to sign up for an API key in order to use the API. The API key is a long string that you usually include either in the request URL or request header. The API key mainly functions as a way to identify the person making the API call (authenticating you to use the API). The API key is associated with a specific app that you register.
-
-The company producing the API might use the API key for any of the following:
-
-* Authenticate calls to the API to registered users only
-* Track who is making the requests
-* Track usage of the API
-* Block or throttle any requester who exceeds the rate limits
-* Apply different permission levels to different users
+Most APIs require you to sign up for an API key in order to use the API. The API key is a long string that you usually include either in the request URL or request header. The API key mainly functions as a way to identify the person making the API call (authenticating you to use the API). The API key might also be associated with a specific app that you register.
 
 APIs might give you both a public and private key. The public key is usually included in the request, while the private key is treated more like a password and used only in server-to-server communication. For some API documentation sites, when you're logged into the site, your API key automatically gets populated into the sample code and API Explorer.
 
@@ -118,7 +120,7 @@ The user then makes a request to the resource server (API server). The access to
 
 Access tokens not only provide authentication for the requester, they also define the permissions of how the user can use the API. Additionally, access tokens usually expire after a period of time and require the user to log in again. For more information about OAuth 2.0, see these resources:
 
-* Peter Udemy's course [API technical writing on Udemy](https://www.udemy.com/learn-api-technical-writing-2-rest-for-writers/)
+* [Learn API Technical Writing 2: REST for Writers (Udemy)](https://www.udemy.com/learn-api-technical-writing-2-rest-for-writers/), by Peter Gruenbaum
 * [OAuth simplified](https://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified), by Aaron Parecki
 
 ## What to document with authentication
@@ -164,4 +166,4 @@ The Amazon example uses HMAC. The process is complex enough that a full-fledged 
 
 {% include course_image.html url="https://www.dropbox.com/developers/reference/oauth-guide" filename="dropbox_authentication" ext_print="png" ext_web="png" alt="Dropbox authorization" caption="Dropbox authorization" %}
 
-Like Twitter, Dropbox also uses OAuth 2.0. Their documentation includes not just one but two diagrams and a copious explanation of the process.
+Like Twitter, Dropbox also uses OAuth 2.0. Their documentation includes not just one but two diagrams and an extended explanation of the process.

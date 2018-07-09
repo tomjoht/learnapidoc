@@ -103,7 +103,7 @@ After users enter an API key and clicks **Authorize**, the authorization method 
 When you submit a request, Swagger UI shows you the curl request that is submitted. For example, after executing a weather request, the curl is as follows:
 
 ```bash
-curl -X GET "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
+curl -X GET "http://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
 ```
 
 The `&appid=fd4698c940c6d1da602a70ac34f0b147"` indicates that the API key is being included in the query string. (For more on curl, see [Make a curl call](docapis_make_curl_call.html).)

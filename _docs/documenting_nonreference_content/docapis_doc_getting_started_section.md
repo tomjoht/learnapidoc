@@ -1,5 +1,5 @@
 ---
-title: Getting started
+title: Getting started tutorial
 permalink: /docapis_doc_getting_started_section.html
 keywords:
 course: "Documenting REST APIs"
@@ -22,7 +22,7 @@ The Getting Started topic is somewhat like the typical Hello World tutorial in d
 
 {% include course_image.html size="medium" filename="timetohelloworld" ext_print="png" ext_web="svg" alt="Getting started tutorials are like Hello World tutorials." caption="Think of getting started tutorials as a kind of Hello World tutorial with the API. How long would it take for a developer to get the simplest possible response using your API?" %}
 
-Both Hello World tutorials and Getting Started tutorials share the same goal: To show a user how to use a framework, API, or some other system to get the simplest and easiest result, so they get a sense of how it works and feel productive.
+Both Hello World tutorials and Getting Started tutorials share the same goal: to show a user how to use a framework, API, or some other system to get the simplest and easiest result, so they get a sense of how it works and feel productive.
 
 As an example, you could take a common, basic use case for your API and show how to construct a request, as well as what response returns. If a developer can make that call successfully, he or she can probably be successful with the other calls too.
 
@@ -41,7 +41,7 @@ Put a link to your Getting Started tutorial on your documentation homepage. Make
 
 In your Getting Started tutorial, consider including a Run in Postman button. (Postman is a REST API GUI client that we explored earlier in [Submit requests through Postman](docapis_postman.html).) If you have your [API endpoints integrated in Postman](docapis_postman.html), you can export your Postman collections as a widget to embed in an HTML page.  
 
-The [Run in Postman button](https://www.getpostman.com/integrations/run-button) provides a button that, when clicked, imports your API info into Postman so users can run calls using the Postman client. As such, this isn't a full-fledged authoring tool but rather a way to import the interactive, try-it-out API explorer for your endpoints into a web page.
+The [Run in Postman button](https://www.getpostman.com/integrations/run-button) provides a button that, when clicked, imports your API info into Postman so users can run calls using the Postman client. As such, the Run in Postman button provides a way to import the interactive, try-it-out API explorer for your endpoints into a web page.
 
 To try out Run in Postman, you can either [import an OpenAPI spec into Postman](https://www.getpostman.com/docs/postman/collections/data_formats#importing-postman-data) or enter your API information manually. Then see the Postman docs on how to [Create the Run in Postman button](https://www.getpostman.com/docs/postman_for_publishers/run_button/creating_run_button).
 
@@ -87,7 +87,7 @@ The downside is that your parameter and endpoint descriptions don't get pulled i
 
 ## Samples of API overviews
 
-Here are a few sample Getting Started topics in APIs. If you compare the various Getting Started sections, you'll see that some are detailed and some are high-level and brief. In general, the more you can hold the developer's hand, the better. However, the tutorial should still be brief and not simply redundant with the other documentation. The key is that you show the user the beginning to end full process in working with the API.
+Here are a few sample Getting Started topics in APIs. If you compare the various Getting Started sections, you'll see that some are detailed and some are high-level and brief. In general, the more you can hold the developer's hand, the better. However, the tutorial should still be brief and not simply redundant with the other documentation. The key is that you show the user the beginning-to-end, full process in working with the API.
 
 ### Paypal
 
@@ -99,7 +99,7 @@ Paypal's getting started tutorial contains quite a bit of detail, starting out w
 
 {% include course_image.html url="https://developer.twitter.com/en/docs/basics/getting-started" filename="twittergettingstarted" ext_web="png" ext_print="png" alt="Paypal getting started tutorial" caption="Twitter getting started" %}
 
-Twitter's getting started page has several getting started sections for different development goals. The text is concise and easy to follow. The tutorial links frequently to other documentation for more details. This is usually the required strategy for getting started documentation. In the need for brevity, you might have to link out to other pages that have more detail.
+Twitter's getting started page has several getting started sections for different development goals. The text is concise and easy to follow. The tutorial links frequently to other documentation for more details. In the need for brevity, you might need to follow this same strategy &mdash; being brief and linking out to other pages that have more detail.
 
 ### Parse Server
 
@@ -111,18 +111,18 @@ The Parse Server tutorial provides a good amount of detail and handholding throu
 
 {% include course_image.html url="https://developers.google.com/adsense/management/getting_started" filename="adsensegettingstarted" ext_web="png" ext_print="png" alt="Parse Server getting started" caption="Adsense getting started" %}
 
-The Adsense tutorial separates out some foundational prerequisites to getting started on the platform. After you get set up, it then provides a "quick start tutorial." The information provides a user through a simple scenario from end to end, helping them get a sense of the product and its capabilities.
+The Adsense tutorial separates out some foundational prerequisites for getting started on the platform. After you get set up, it then provides a "quick start tutorial." The tutorial walks users through a simple scenario from end to end, helping them get a sense of the product and its capabilities.
 
 ### Aeris
 
 {% include course_image.html url="http://www.aerisweather.com/support/docs/api/getting-started/" filename="aerisgettingstarted" ext_web="png" ext_print="png" alt="Aeris getting started tutorial" caption="Aeris getting started tutorial" %}
 
-The Aeris weather getting started provides information for setting up an application and then making a request in one of several popular languages. While showing code in specific languages is undoubtedly more helpful for programmers coding in those languages, the code samples are irrelevant to other users.
+The Aeris weather getting started provides information for setting up an application and then making a request in one of several popular languages. While showing code in specific languages is undoubtedly more helpful for programmers coding in those languages, the code samples are irrelevant to other users. Focusing in a specific language is often a tradeoff.
 
 ### Watson and IBM Cloud
 
 {% include course_image.html url="https://console.bluemix.net/docs/services/watson/index.html#about" filename="watsongettingstarted" ext_print="web" ext_web="png" alt="Watson and IBM Cloud getting started tutorial" caption="Watson and IBM Cloud getting started tutorial" %}
 
-The Watson and IBM Cloud getting started lists 3 steps. It's not an end-to-end getting started, though. It just gets the user started in selecting a service for your project. At the end, you start to code using the Watson Dashboard. Ideally, a getting started tutorial should help a user see some tangible output, but whether that's possible or not probably depends on your API.
+The Watson and IBM Cloud getting started tutorial lists 3 steps. It's not an end-to-end getting started tutorial, though. It just gets the user started in selecting a service for your project. At the end, you start to code using the Watson Dashboard. Ideally, a getting started tutorial should help a user see some tangible output, but whether that's possible or not depends on your API.
 
 {% include random_ad.html %}

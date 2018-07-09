@@ -23,7 +23,7 @@ Returns information about surfing conditions at a specific beach ID, including t
 
 ```
 curl -I -X GET
-"http://api.openweathermap.org/data/2.5/surfreport?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial&days=2"
+"http://api.openweathermap.org/data/2.5/surfreport?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial&days=2"
 ```
 
 ## Sample response

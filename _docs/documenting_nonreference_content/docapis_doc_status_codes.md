@@ -9,7 +9,7 @@ section: docnonref
 path1: /docnonref.html
 ---
 
-Status and error codes refer to a code number in the response header that indicates the general classification of the response &mdash; for example, whether the request was successful (200), resulted in an server error (500), had authorization issues (403), and so on. Standard status codes don't usually need much documentation, but custom status and error codes specific to your API definitely do. Error codes in particular help with troubleshooting bad requests.
+Status and error codes refer to a code number in the response header that indicates the general classification of the response &mdash; for example, whether the request was successful (200), resulted in an server error (500), had authorization issues (403), and so on. Standard status codes don't usually need much documentation, but custom status and error codes specific to your API definitely do. Error codes in particular help in troubleshooting bad requests.
 
 * TOC
 {:toc}
@@ -21,7 +21,7 @@ Status codes don't appear in the response body. They appear in the response head
 Remember when you submitted the curl call back in [an earlier lesson](docapis_make_curl_call.html)? To get the response header, you add `--include` or `-i` to the curl request. If you want *only the response header returned* in the response (and nothing else), capitalize the `-I`, like this:
 
 ```
-curl -I -X GET "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
+curl -I -X GET "http://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
 ```
 
 The response header looks as follows:
@@ -33,7 +33,7 @@ Date: Mon, 02 Apr 2018 01:14:13 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 441
 Connection: keep-alive
-X-Cache-Key: /data/2.5/weather?units=imperial&zip=95050%2cus
+X-Cache-Key: /data/2.5/weather?units=imperial&zip=95050
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Credentials: true
 Access-Control-Allow-Methods: GET, POST

@@ -9,7 +9,7 @@ section: docnonref
 path1: /docnonref.html
 ---
 
-The overview explains what you can do with the API (high-level business goals), the pain points or market needs it solves, who the API is for, and other introductory information.
+The API overview explains what you can do with the API, including the high-level business goals, the market needs (or pain points) it solves, who the API is for, and other introductory information.
 
 {% if site.format == "web" %}
 * TOC
@@ -20,17 +20,24 @@ The overview explains what you can do with the API (high-level business goals), 
 
 Too often with API documentation (perhaps because the content is often written by developers), the documentation gets quickly mired in technical details without ever explaining clearly what the API is used for. Don't lose sight of the overall purpose and business goals of your API by getting lost in the endpoints.
 
-The API overview grounds users with a high-level understanding of the system. This high-level understanding is critical to grasping the system as a whole. It allows the details to fit into a larger conceptual framework. We start at the high-level, getting a gist of what something is about from the title and description, and we work our way into more details. This overview provides this initial orientation for the user. (For more details on this, see [Reduction, layering, and distillation as a strategy for simplicity](http://idratherbewriting.com/simplifying-complexity/reduction-layering-distillation.html).)
+The API overview grounds users with a high-level understanding of the system. This high-level understanding is critical to grasping the system as a whole. It allows the details to fit into a larger conceptual framework.
+
+Start at the high-level, getting a gist of what something is about from the title and description, and work your way into more details. This overview provides this initial orientation for the user.
 
 {% include course_image.html size="medium" border="true" filename="nonref_overview" ext_print="png" ext_web="svg" alt="API overview" caption="The API overview provides high-level detail about the purpose, audience, and market need for your API." %}
+
+{: .tip}
+For more details on the importance of high-level overviews, see [Reduction, layering, and distillation as a strategy for simplicity](http://idratherbewriting.com/simplifying-complexity/reduction-layering-distillation.html).
 
 In the overview, list some common business scenarios in which the API might be useful. This will give people the context they need to evaluate whether the API is relevant to their needs.
 
 {% include random_ad.html %}
 
-Keep in mind that there are thousands of APIs. If people are browsing your API, their first and most pressing question is, what information does it return? Is this information relevant and useful to me?
+Keep in mind that there are thousands of APIs. If people are browsing your API, their first and most pressing question is, what information does it return? Is this information relevant and useful to my needs?
 
-In [The Top 20 Reasons Startups Fail](https://www.cbinsights.com/research/startup-failure-reasons-top/), one of the main reasons startups fail is the inability for the company to solve a market problem. The authors explain:
+## Explain the market problems your API solves
+
+In [The Top 20 Reasons Startups Fail](https://www.cbinsights.com/research/startup-failure-reasons-top/), one of the main reasons startups fail is their inability to solve a market problem. The authors explain:
 
 > Startups fail when they are not solving a market problem. We were not solving a large enough problem that we could universally serve with a scalable solution. We had great technology, great data on shopping behavior, great reputation as a thought leader, great expertise, great advisors, etc, but what we didn’t have was technology or business model that solved a pain point in a scalable way. (*CB Insights*)
 

@@ -51,7 +51,7 @@ For this activity, we'll use JavaScript to display the response on a web page. Y
     var settings = {
       "async": true,
       "crossDomain": true,
-      "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+      "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
       "method": "GET",
       "headers": {
         "cache-control": "no-cache",
@@ -91,7 +91,7 @@ For this activity, we'll use JavaScript to display the response on a web page. Y
              var settings = {
                "async": true,
                "crossDomain": true,
-               "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+               "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
                "method": "GET"
              }
 
@@ -135,7 +135,7 @@ In this section, I'll explain a bit more about the `ajax` function you used earl
    var settings = {
      "async": true,
      "crossDomain": true,
-     "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+     "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
      "method": "GET"
    }
 

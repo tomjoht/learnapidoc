@@ -104,7 +104,7 @@ In my documentation projects, I admit that I don't do nearly as much user testin
 
 Agile testing methods are okay. You should definitely act on this feedback. But hopefully you can catch errors *before* they get to users. The whole point of a quality assurance process is to ensure users get a quality product prior to release.
 
-Additionally, the later errors are identified in the software development process, the more costly it is. For example, suppose you discover that a button or label or error message is really confusing. It's much harder to change it post-release than pre-release. At least with documentation, you can continually improve your docs based on incoming feedback.
+Additionally, the later errors are identified in the software development process, the more costly it is. For example, suppose you discover that a button or label or error message is really confusing. It's much harder to change it post-release rather than pre-release. At least with documentation, you can continually improve your docs based on incoming feedback.
 
 ## Conclusion
 

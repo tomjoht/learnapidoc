@@ -69,7 +69,7 @@ I'm assuming you're starting with the [same code](http://idratherbewriting.com/l
          var settings = {
            "async": true,
            "crossDomain": true,
-           "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+           "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
            "method": "GET"
          }
 
@@ -97,7 +97,7 @@ To print a specific property from the response to the page, modify your code to 
          var settings = {
            "async": true,
            "crossDomain": true,
-           "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+           "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
            "method": "GET"
          }
 
