@@ -14,6 +14,20 @@ The glossary defines all the terms that might be unique to your company or API. 
 * TOC
 {:toc}
 
+## Define any words you invest
+
+Unlike most other professional writing disciplines, tech docs are notorious for the amount of specialized terms in their content. Not only do we have unique terms related to our products, industry jargon and company-specific terms make their way into docs, driving up their complexity.
+
+API evangelist Kim Lane recently noted his frustration with an API's language when he encountered an undefined acronym &mdash; "DEG". Lane explains,
+
+> I came across a set of API resources for managing a DEG the other day. You could add, updated, delete and get DEGs. You can also pull analytics, history, and other elements of a DEG. I spent about 10-15 minutes looking around their developer portal, documentation, and even Googling, but never could figure out what a DEG was. Nowhere in their documentation did they ever tell consumers what a DEG was, you just had to be in the know I guess. The API designer (if that occurred) and developer had never stopped to consider that maybe someone would stumble across their very public API and not know what a DEG was. ([Using Plain Language In Your API Paths](https://apievangelist.com/2018/07/09/use-plain-language-in-api-paths/))
+
+In this case, DEG must have been an acronym specific to the developer's API. In these cases, there's really no excuse for not defining your own pet acronyms and unique vocabulary. You can't simply make up an acronym and not define it for users (without frustrating them).
+
+But many times, acronyms and unfamiliar terms are part of a specialized domain. As a technical writer, using the correct terms for your knowledge domain and your product is necessary, and those terms are often appropriate for that particular knowledge domain.
+
+To simplify the language, you can't just omit the necessary terminology for the domain or substitute in more friendly names. You have to teach the user the right language so they can participate in the conversation. One commonsense approach for teaching users how to speak this language involves defining unfamiliar words for the user by way of a glossary.
+
 ## Should you provide a glossary?
 
 Usually, providing a glossary in your documentation seems like going above and beyond the call of duty. However, simply defining these terms has tremendous benefit for the writer too, not just the users. Defining terms helps you recognize the special terminology that might be used with your API &mdash; terms that you may have become immune to by hearing them so frequently in project meetings. By defining the terms, you ensure that you're using these terms more precisely and accurately (rather than switching around with synonyms for variety).
@@ -24,9 +38,9 @@ Usually, providing a glossary in your documentation seems like going above and b
 
 If you're planning to localize your API documentation, most translators will require a glossary. Especially with API documentation, there are many technical terms that translators need to to be aware of so they can decide whether the terms should be translated.
 
-For example, suppose in your sample Android app, you have terms like `PlaybackState` and "media session" and "callback" and `BroadcastReceiver`. Translators need to be technical enough to know whether these terms should be translated or left as is. Terms set off in `code` tags normally wouldn't be translated, but many other terms referring to technical components might also best be left untranslated. It can be a tricky judgement call when the technical term isn't set off as code but refers to a class (such as "MediaSession").
+For example, suppose in your sample Android app, you have terms like `PlaybackState` and "media session" and "callback" and `BroadcastReceiver`. Translators need to be technical enough to know whether these terms should be translated or left as is. Terms set off in `code` tags normally wouldn't be translated, but many other terms referring to technical elements might also best be left untranslated. It can be a tricky judgement call when the technical term isn't set off as code but refers to a technical concept or class (such as "MediaSession").
 
-After translators finish translating the content, the translation needs to be QA'd by a subject matter expert in that language &mdash; usually by a field engineer who works with clients in that locale.
+After translators finish translating the content, the translation needs to be checked over by a subject matter expert in that language &mdash; usually by a field engineer who works with clients in that locale. The glossary will also assist the subject matter experts who review the translation.
 
 ## Specialized versus non-specialized terms
 
