@@ -17,42 +17,36 @@ The first step to testing your instructions is to set up a test environment. Wit
 
 ## Types of test environments
 
-{% include random_ad2.html %}
-
 The type of test environment you set up depends on your product and company. In the following sections, I explain testing setup details for different scenarios:
 
-* [Testing from a test server](#test_servers)
+* [Testing on a test server](#test_servers)
 * [Testing local builds](#local_builds)
 * [Testing sample apps in specific programming languages](#sample_apps)
 * [Testing hardware products](#hardware_products)
 
-## Testing on a test servers {#test_servers}
+## Testing on a test server {#test_servers}
 
-When you start setting up tests for your documentation, you typically interact with the quality assurance (QA) team. Developers might be helpful too, but the quality assurance team already has, presumably, a test system in place, usually a test server and "test cases." Test cases are the various scenarios that they're testing.
+The easiest way to test an API is by making requests to a test server where the API service is configured. QA can usually help you with access to the test server. With the test server, you'll need to get the appropriate URLs, login IDs, roles, etc. Ask QA if there's anything you shouldn't alter or delete because sometimes the same testing environment is shared among groups.
 
-You'll want to make friends with the quality assurance team and find out best practices for testing scenarios relevant to your documentation. They can usually help you get started in an efficient way, and they'll be excited to have more eyes on the system. If you find bugs, you can either forward them to QA or log them yourself.
+{% include random_ad2.html %}
 
-If you can hook into a set of test cases QA teams use to run tests, you can often get a jump start on the tasks you're documenting. Good test cases usually list the steps required to produce a result, and the scripts can inform the documentation you write.
+Additionally, make sure your logins correspond with the permissions users will have. If you have an admin login, you might not experience the same responses as a regular user.
 
-With the test system, you'll need to get the appropriate URLs, login IDs, roles, etc., from QA. Ask if there's anything you shouldn't alter or delete because sometimes the same testing environment is shared among groups. Make sure your logins correspond with the permissions users will have. If you have an admin login, you might not experience the same responses as a regular user.
-
-You may also need to construct certain files necessary to configure a server with the settings you want to test. Understanding exactly how to create the files, the directories to upload them to, the services to stop and restart, and so on can require a lot of asking around for help.
+You may also need to construct certain files necessary to configure a server with the settings you want to test. Understanding exactly how to create the files, the directories to upload them to, the services to stop and restart, and so on, can require a lot of initial investigation.
 
 Exactly what you have to do depends on your product, the environment, the company, and security restrictions, etc. No two companies are alike. Sometimes it's a pain to set up your test system, and other times it's a breeze.
-
-## Testing local builds {#local_builds}
-
-Many times, developers work on local instances of the system, meaning they build the app or web server entirely on their own machines and run through test code there. To build code locally, you may need to install special utilities or frameworks, become familiar with various command line operations to build the code, and more.
-
-If you can get the local builds running on your own machine, it's usually worthwhile because it can empower you to document content ahead of time, long before the release.
-
-If it's too complicated to set up a local environment or to access a test server, ask an engineer to install the local system on your machine. Tell him or her that, in order to write good documentation &mdash; documentation that is accurate, complete, and doesn't assume anything &mdash; you need access to these test systems.
-
-If the setup to build locally is complex, you may need to ask a developer for help. Sometimes, developers like to just sit down at your computer and take over the task of installing and setting up a system. They can work quickly on the command terminal and troubleshoot systems or quickly proceed through installation commands that would otherwise be tedious to walk you through.
 
 At one company, to gain access to the test system, we had to jump over a series of security hurdles. For example, connections to the web services from internal systems required developers to go through an intermediary server. So to connect to the web server test instance, you had to SSL to the intermediary server, and then connect from the intermediary to the web server. (This wasn't something users would need to do, just internal engineers.)
 
 The first time I attempted this, I asked a developer to help me set this up. I carefully observed the commands and steps he went through on my computer. I later documented it for future knowledge purposes, and other engineers used my doc to set up the same access.
+
+## Testing local builds {#local_builds}
+
+Many times, developers work on local instances of the system before pushing it to a test server. In other words, they build the app or web server entirely on their own machines and run through test code there. To build code locally, you may need to install special utilities or frameworks, become familiar with various command line operations to build the code, and more.
+
+If you can get the local builds running on your own machine, it's usually worthwhile because it can empower you to document content ahead of time, long before the release.
+
+If it's too complicated to set up a local environment, you can ask an engineer to install the local system on your machine. Sometimes developers like to just sit down at your computer and take over the task of installing and setting up a system. They can work quickly on the command terminal and troubleshoot systems or quickly proceed through installation commands that would otherwise be tedious to walk you through.
 
 {% include random_ad.html %}
 
@@ -64,9 +58,9 @@ With local builds, setting up a functional system is much more challenging than 
 
 ## Testing sample apps {#sample_apps}
 
-Depending on the product, you might also have a sample app in your code deliverables. You often include a sample app (or multiple apps in various programming languages) with a product to demonstrate how to integrate and call the API. If you have a test app that integrates the API, you'll probably need to install some programs or frameworks on your own machine to get the sample app working.
+Depending on the product, you might also have a [sample app](docapis_codesamples_bestpractices.html) in your code deliverables. You often include a sample app (or multiple apps in various programming languages) with a product to demonstrate how to integrate and call the API. If you have a test app that integrates the API, you'll probably need to install some programs or frameworks on your own machine to get the sample app working.
 
-For example, you might have to build a sample Java app to interact with the system. If the app is in PHP, you may need to install PHP. Or you may need to download Android Studio and connect it to an actual device.
+For example, you might have to build a sample Java app to interact with the system &mdash; so you'd likely need to have the Java Development Kit and a Java IDE installed on your computer to make it work. If the app is in PHP, you probably need to install PHP. Or if it's an Android app, you will probably need to download Android Studio and connect it to virtual (or actual) device.
 
 There's usually fewer instructions about how to run a sample app because developers assume users will already have these environments set up on their machines. (It wouldn't make sense for a user to choose the Java app if they didn't already have a Java environment, for example.)
 
@@ -74,21 +68,23 @@ The sample app is among the most helpful pieces of documentation. As you set up 
 
 ## Testing hardware products {#hardware_products}
 
-If you're documenting a hardware product, you'll want to secure a device that has the right build installed on it. Big companies often have prototype devices available. At some companies, there may be kiosks where you can "flash" (quickly install) a specific build number on the device. Or you may send your device's serial number to someone who manages a pool of devices included in certain updates from the cloud.
+If you're documenting a hardware product, you'll want to secure a device that has the right build installed on it. Big companies often have prototype devices available. At some companies, there may be kiosks where you can "flash" (quickly install) a specific build number on the device. Or you may send your device's serial number to someone who manages a pool of devices that receive beta-version updates from the cloud.
 
 With some hardware products, it may be difficult to get a test instance of the product to play with. I once worked at a government facility documenting a million-dollar storage array. The only time I was allowed to see the storage array was by signing into a special data server room environment, accompanied by an engineer, who wouldn't dream of letting me actually touch the array, much less swap out a storage disk, run commands in the terminal, replace a RAID, or do some other task (for which I was writing instructions).
 
-I learned early on to steer my career towards jobs where I could actually get my hands on the product, usually software code, and play around with it. If you're documenting hardware, you need access to the hardware to provide reliable documentation on how to use it. You'll need to understand how to run apps on the device and interface with it. Hopefully, the product is one that you can access to actually play around with.
+I learned early on to steer my career towards jobs where I could actually get my hands on the product, usually software code, and play around with it. In my role at Amazon, I have a drawer full of Fire TV devices and prototypes. Through Android Studio, I often run an app on one of these physical devices to test how it works.
+
+If you're documenting hardware, you need access to the hardware to provide reliable documentation on how to use it. You'll need to understand how to run apps on the device and interface with it. Hopefully, the product is one that you can access to actually play around with.
 
 ## If you encounter developer resistance ...
 
-Many times developers don't expect that a technical writer will be doing anything more than just transcribing and relaying the information given to them. With this mindset, a developer might not immediately think that you need or want a sample app to test out the calls or other code. You might need to ask (or even petition) them for it.
+Many times developers don't expect that a technical writer will be do anything more than just transcribe and relay the information given to by engineers. With this mindset, a developer might not immediately think that you need or want a sample app to test out the calls or other code. You might need to ask (or even petition) them for it.
 
-Most of the time, developers respect technical writers much more if the technical writers can test out the code themselves. Engineers also appreciate any feedback you may have as you run through the system. Technical writers, along with QA, are usually the first users of the developer's code.
+I've found that most of the time, developers respect technical writers much more if the technical writers can test out the code themselves. Engineers also appreciate any feedback you may have as you run through the system. Technical writers, along with QA, are usually the first users of the developer's code.
 
 If a developer or QA person can't give you access to any such test server or sample code, be suspicious. How can a development and QA team create and test their code without a sample system where they expect it to be implemented? And if there's a sample system, why can't you also have access so you can write good documentation on how to use it?
 
-Sometimes developers don't want to go through the effort of getting something working on your machine, so you may have to explain more about your purpose and goals in testing. If you run into friction, be persistent. It might take one or more days to get your test environment set up. Once you have a test system set up, it makes it much easier to create documentation, because you can start to answer your own questions.
+Sometimes developers don't want to go through the effort of getting something working on your machine, so you may have to explain more about your purpose and goals in testing. If you run into friction, be persistent. It might take one or more days to get your test environment set up. For example, it took me several days to get an app framework for Fire TV to successfully build on my Fire TV hardware. But once you have a test system set up, it makes it much easier to create documentation because you can start to answer your own questions.
 
 ## Next steps
 

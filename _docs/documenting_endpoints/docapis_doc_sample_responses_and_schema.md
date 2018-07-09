@@ -16,7 +16,7 @@ redirect_from:
 <img src="images/apiref5.png"/>
 {% endif %}
 
-> **{{site.data.apirefsections.response_example_and_schema.term}}**: {{site.data.apirefsections.response_example_and_schema.def}}
+{{site.data.apirefsections.response_example_and_schema.def}}
 
 * TOC
 {:toc}

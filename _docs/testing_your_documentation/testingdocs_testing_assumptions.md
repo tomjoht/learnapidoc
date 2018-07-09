@@ -8,7 +8,7 @@ section: testingdocs
 path1: /testingdocs.html
 ---
 
-The previous two sections talked about testing from the perspective of the tech writer merely running through the steps. However, remember that you, the tech writer, are not the user. Almost all documentation builds on assumptions that may or may not be shared with your audience. While [testing your documentation](testingdocs_test_your_instructions.html), recognize that what may seem clear to you may be confusing to your users. Learn to identify these assumptions that can interfere with your audience's ability to follow the instructions in your docs.
+The previous two sections talked about testing from the perspective of the tech writer merely running through the steps. However, remember that you, the tech writer, are not the user. Almost all documentation builds on assumptions (about capabilities, setup, previous knowledge) that may or may not be shared with your audience. While [testing your documentation](testingdocs_test_your_instructions.html), recognize that what may seem clear to you may be confusing to your users. Learn to identify assumptions that can interfere with your audience's ability to follow the instructions in your documentation.
 
 {% if site.format == "web" %}
 * TOC
@@ -17,17 +17,17 @@ The previous two sections talked about testing from the perspective of the tech 
 
 ## Assumptions about terminology
 
-You might assume that your audience already know how to SSH onto a server, create authorizations in REST headers, use curl to submit calls, and so on. Usually documentation doesn't hold a user's hand from beginning to end, but rather jumps into a specific task that depends on concepts and techniques that you assume the user already knows. However, making assumptions about concepts and techniques your audience knows can be dangerous. These assumptions are exactly why so many people get frustrated by instructions and throw them in the trash.
+You might assume that your audience already know how to SSH onto a server, create [authorizations in REST headers](docapis_more_about_authorization.html), [use curl to submit calls](docapis_make_curl_call.html), and so on. Usually documentation doesn't hold a user's hand from beginning to end, but rather jumps into a specific task that depends on concepts and techniques that you assume the user already knows. However, making assumptions about concepts and techniques your audience knows can be dangerous. These assumptions are exactly why so many people get frustrated by instructions and (figuratively) throw them in the trash.
 
-For example, my 10-year-old daughter is starting to cook. She feels confident that if the instructions are clear, she can follow almost anything (assuming we have the ingredients to make it). However, she says sometimes the instructions tell her to do something that she doesn't know how to do &mdash; such as *sauté* something.
+For example, my 10-year-old daughter is starting to cook. She feels confident that if the cookbook's instructions are clear, she can follow almost anything (assuming we have the ingredients to make it). However, she says sometimes the instructions tell her to do something that she doesn't know how to do &mdash; such as *sauté* something.
 
 To *sauté* an onion, you cook onions in butter until they turn soft and translucent. To *julienne* a carrot, you cut them in the shape of little fingers. To *grease* a pan, you spray it with Pam or smear it with butter. To add an egg *white* only, you use the shell to separate out the yolk. To *dice* a pepper, you chop it into little tiny pieces.
 
-The terms can all be confusing if you haven't done much cooking. Sometimes you must *knead* bread, or *cut* butter, or *fold in* flour, or add a *pinch* of salt, or add a cup of *packed* brown sugar, or add some *confectioners* sugar, and so on.
+The terms can all be confusing if you haven't done much cooking. Sometimes you must *knead* bread, or *cut* butter, or *fold in* flour, or add a *pinch* of salt, or add a cup of *packed* brown sugar, or add some *confectioners* sugar, or bring liquid to a *roiling boil*, and so on.
 
 Sure, these terms are cooking 101, but if you're 10-years-old and baking for the first time, this is a world of new terminology. Even measuring a cup of flour is difficult &mdash; does it have to be *exact*, and if so, how do you get it exact? You could use the flat edge of a knife to knock off the top peaks, but someone has to teach you how to do that. When my 10-year-old first started measuring flour, she went to great lengths to get it exactly 1 cup, as if the success of the entire recipe depended on it.
 
-The world of software instruction is full of similarly confusing terminology. For the most part, you have to know your audience's general level so that you can assess whether something will be clear. Does a user know how to *clear their cache*, or update *Flash*, or ensure the *JRE* is installed, or *clone* or *fork* a git repository? Do the users know how to open a *terminal*, *deploy* a web app, import a *package*, *cd* on the command line, submit a *PR*, or *chmod* file permissions?
+The world of software instruction is full of similarly confusing terminology. For the most part, you have to know your audience's general level so that you can assess whether something will be clear. Does a user know how to *clear their cache*, or update *Flash*, or ensure the *JDK* is installed, or *clone* or *fork* a git repository? Do the users know how to open a *terminal*, *deploy* a web app, import a *package*, *cd* on the command line, submit a *PR*, or *chmod* file permissions?
 
 This is why checking over your own instructions by walking through the steps yourself becomes problematic. The first rule of usability is to know the user, and also to recognize that you aren't the user.
 
@@ -35,21 +35,24 @@ With developer documentation, usually the audience's skill level is beyond my ow
 
 We must also remember that users may have deep knowledge in another technical area outside of the domain we're writing in. For example, the user may be a Java expert but a novice when it comes to JavaScript, and vice versa.
 
+{: .tip}
+To read more about how specialized language makes technical documentation difficult to understand, see [Reducing the complexity of technical language](http://idratherbewriting.com/simplifying-complexity/reducing-the-complexity-of-technical-language.html) in my series on Simplifying Complexity.
+
 ## Solutions for addressing different audiences
 
-The solution to addressing different audiences doesn't involve writing entirely different sets of documentation. You can link potentially unfamiliar terms to a glossary or reference section where beginners can ramp up on the basics.
+The solution to addressing different audiences doesn't involve writing entirely different sets of documentation (although conceptually, that might be a good strategy in some situations). You can link potentially unfamiliar terms to a glossary or reference section where beginners can ramp up on the basics.
 
 You can likewise provide links to separate, advanced topics for those scenarios when you want to give some power-level instruction but don't want to hold a user's hand through the whole process. You don't have to offer just one path through the doc set.
 
-The problem, though, is learning to see the blind spots. If you're the only one testing your instructions, the instructions might seem perfectly clear to you. (I think most developers also feel this way after they write something. They usually take the approach of rendering the instruction in the most concise way possible, assuming their audience knows exactly what they do.) But the audience *doesn't* know exactly what you know, and although you might feel like what you've written is crystal clear, because c'mon, everyone knows how to clear their cache, in reality you won't know until you *test your instructions against an audience*.
+The problem, though, is learning to see the blind spots. If you're the only one testing your instructions, the instructions might seem perfectly clear to you. (I think most developers also feel this way after they write something; they usually take the approach of rendering the instruction in the most concise way possible, assuming their audience knows exactly what they do.) But the audience *doesn't* know exactly what you know, and although you might feel like what you've written is crystal clear, because c'mon, everyone knows how to clear their cache, in reality you won't know until you **test your instructions against an audience**.
 
 ## Testing your docs against an audience
 
-Almost no developer can push out their code without running it through QA, but for some reason technical writers usually don't follow the same QA processes as developers. There are some cases where tech docs are "tested" by QA, but when I do get feedback from QA, the reviewers rarely assess clarity, organization, or other communication. They just highlight any errors they find.
+Almost no developer can push out their code without running it through QA, but for some reason technical writers usually don't follow the same QA processes with their documentation. There are some cases where tech docs are "tested" by QA, but in my experience, when I do get feedback from QA, the reviewers rarely assess aspects of clarity, organization, or communication. They just highlight any errors they find (which is still helpful on some level).
 
-In general, QA people don't test whether a user would understand the instructions or whether concepts are clear. They just look for accuracy. QA team members are poor testers because they already know the system too well in the first place.
+In general, QA people don't test whether a user would understand the instructions or whether concepts are clear. They just look for accuracy. QA team members are also poor testers because they already know the system too well in the first place.
 
-Before publishing, every tech writer should submit his or her instructions through a testing process of some kind, i.e., a "quality assurance" process. Strangely, few IT shops actually have a consistent quality assurance process for documentation. You wouldn't dream of setting up an IT shop without a quality assurance group for developers &mdash; why should docs be any different?
+Before publishing, every tech writer should submit his or her instructions through a testing process of some kind, i.e., a "quality assurance" process. Companies wouldn't dream of setting up an IT shop without a quality assurance group for developers &mdash; why should docs be any different?
 
 {% include random_ad2.html %}
 
@@ -59,13 +62,13 @@ While conforming to the same style guide is important, it's not as important as 
 
 I haven't had an editor for years. In fact, the only time I've ever had an editor was at my first tech writing job, where we had a dozen writers. The editor focused mostly on style.
 
-I remember one time our editor was on vacation, and I got to play the editor role. I tried testing out the instructions and found that about a quarter of the time, I got lost. The instructions either missed a step, needed a screenshot, built on assumptions I didn't know, or had other issues.
+I remember one time our editor was on vacation, and I got to play the editor role in her absence. As interim editor, I tried testing out the instructions and found that about a quarter of the time, I got lost. The instructions either missed a step, needed a screenshot, built on assumptions I didn't know, or had other issues.
 
-The response, when you give instructions back to the writer, is usually the old "Oh, users will know that." The problem is that we're usually so disconnected with the actual user experience &mdash; we rarely see users trying out docs &mdash; we can't recognize the "users-will-know-how-to-do-that" statement for the fallacy that it is.
-
-How do you test instructions without a dedicated editor, without a group of users, and without any formal structure in place? At the very least, you can ask a colleague to try out the instructions.
+The response, when you give instructions back to the writer, is usually, "Oh, users will know that." The problem is that we're usually so disconnected with the actual user experience (since we rarely see users trying out docs), we can't recognize the "users-will-know" statement for the fallacy that it is.
 
 ## Using your colleagues as test subjects
+
+If you have access to real users who can test your docs, great. Take advantage of this situation. But if you don't, how do you test instructions without a dedicated editor, without a group of users, and without any formal structure in place? At the very least, you can ask a colleague or product team member to try out the instructions.
 
 Other technical writers are usually both curious and helpful when you ask them to try out your instructions. And when other technical writers start to walk through your steps, they recognize discrepancies in style that are worthy of discussion in themselves.
 
@@ -73,9 +76,9 @@ Although usually other technical writers don't have time to go through your inst
 
 {% include random_ad2.html %}
 
-Tech writers are good testing candidates precisely because they are writers instead of developers. As writers, they usually lack the technical assumptions that a lot of developers have (assumptions that can cripple documentation).
+Tech writers are good testing candidates precisely because they are writers instead of developers. As writers, they usually lack the technical assumptions that a lot of developers have (assumptions that can cripple documentation). Also, developers may feel embarrassed if they don't already understand a concept or process referenced in the docs.
 
-Additionally, tech writers who test your instructions know exactly the kind of feedback you're looking for. They won't feel ashamed and dumb if they get stuck and can't follow your instructions. They'll usually let you know where your instructions are poor. They might say, *I got confused right here because I couldn't find the X button, and I didn't know what Y meant.* They know what you need to hear.
+Tech writers who test your instructions know exactly the kind of feedback you're looking for. They won't feel ashamed and dumb if they get stuck and can't follow your instructions. They'll usually let you know where your instructions are poor. They might say, *I got confused right here because I couldn't find the X function, and I didn't know what Y meant.* They know what you need to hear.
 
 In general, it's always good to have a non-expert test something rather than an expert. Experts can often compensate for shortcomings in documentation with their own expertise. In fact, experts may pride themselves in being able to complete a task *despite the poor instruction*. Novices can't compensate.
 
@@ -83,7 +86,7 @@ Another reason tech writers make good testers is because this kind of activity f
 
 By giving other technical writers the opportunity to test your documentation, you create the same kind of sharing and review of content. You build a community rather than having each technical writer always work on independent projects.
 
-What might come out of a user test from a colleague is more than highlighting shortcomings about poor instruction. You might bring up matters of style, or you might foster great team discussions about innovative approaches to your help. Maybe you've integrated a glossary tooltip that is simply cool, or an embedded series button. When other writers test your instructions, they not only see your demo, they understand how helpful a feature is in a real context and they can incorporate similar techniques.
+The outcomes from having colleagues test your docs might include more than just feedback about the shortcomings in a specific doc set. You might bring up matters of style, or you might foster great team discussions about innovative approaches to your help. Maybe you've integrated a glossary tooltip that is simply cool, or an embedded series button. When other writers test your instructions, they not only see your demo, they understand how helpful a feature is in a real context, and they can incorporate similar techniques.
 
 ## Observing users as they test your docs
 
@@ -101,7 +104,7 @@ In my documentation projects, I admit that I don't do nearly as much user testin
 
 Agile testing methods are okay. You should definitely act on this feedback. But hopefully you can catch errors *before* they get to users. The whole point of a quality assurance process is to ensure users get a quality product prior to release.
 
-Additionally, the later in the software cycle you catch an error, the more costly it is. For example, suppose you discover that a button or label or error message is really confusing. It's much harder to change it post-release than pre-release. At least with documentation, you can continually improve your docs based on incoming feedback.
+Additionally, the later errors are identified in the software development process, the more costly it is. For example, suppose you discover that a button or label or error message is really confusing. It's much harder to change it post-release than pre-release. At least with documentation, you can continually improve your docs based on incoming feedback.
 
 ## Conclusion
 

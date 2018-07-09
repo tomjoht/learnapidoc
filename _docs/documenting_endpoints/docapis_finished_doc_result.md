@@ -30,6 +30,6 @@ If you have a lot of endpoints to document, you'll probably want to create templ
 
 ## Next steps
 
-Now that you've completed the [API reference tutorial](docapis_api_reference_tutorial_overview.html), you're ready to either critique or create your own API reference topic. See the next topic, [Activity: Critique or create an API reference topic](docapis_api_reference_activity.html).
+Now that you've completed the [API reference tutorial](docapis_api_reference_tutorial_overview.html), you're ready to either critique or create your own API reference topic. See the next topic: [Activity: Critique or create an API reference topic](docapis_api_reference_activity.html).
 
 {% include random_ad.html %}

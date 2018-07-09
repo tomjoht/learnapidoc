@@ -1,24 +1,24 @@
 resource_description:
   term: Resource description
   def: >
-        \"Resources\" refers to the information returned by an API. Most APIs have various categories of information, or various resources, that can be returned. The resource description provides details about the information returned in each resource. The resource description is brief (1-3 sentences) and usually starts with a verb. Resources usually have a number of endpoints to access the resource, and multiple methods for each endpoint. Thus, on the same page, you usually have a general resource described along with a number of endpoints for accessing the resource, also described.
+        \"Resources\" refers to the information returned by an API. Most APIs have various categories of information, or various resources, that can be returned. The resource description provides details about the information returned in each resource. <br/><br/>The resource description is brief (1-3 sentences) and usually starts with a verb. Resources usually have a number of endpoints to access the resource, and multiple methods for each endpoint. Thus, on the same page, you usually have a general resource described along with a number of endpoints for accessing the resource, also described.
 
 endpoints_and_methods:
   term: Endpoints and methods
   def: >
-        The endpoints indicate how you access the resource, and the method used with the endpoint indicates the allowed interactions (such as <code>GET</code>, <code>POST</code>, or <code>DELETE</code>) with the resource. The endpoint shows the end path of a resource URL only, not the base path common to all endpoints. The same resource usually has a variety of related endpoints, each with different paths and methods but returning different information about the same resource. Endpoints usually have brief descriptions similar to the overall resource description but shorter.
+        The endpoints indicate how you access the resource, and the method used with the endpoint indicates the allowed interactions (such as GET, POST, or DELETE) with the resource. The endpoint shows the end path of a resource URL only, not the base path common to all endpoints.  <br/><br/>The same resource usually has a variety of related endpoints, each with different paths and methods but returning different information about the same resource. Endpoints usually have brief descriptions similar to the overall resource description but shorter.
 
 parameters:
   term: Parameters
   def: >
-        Parameters are options you can pass with the endpoint (such as specifying the response format or the amount returned) to influence the response. There are four types of parameters: header parameters, path parameters, query string parameters, and request body parameters. The different types of parameters are often documented in separate groups on the same page. Not all endpoints contain each type of parameter.
+        Parameters are options you can pass with the endpoint (such as specifying the response format or the amount returned) to influence the response. There are four types of parameters: header parameters, path parameters, query string parameters, and request body parameters. <br/><br/>The different types of parameters are often documented in separate groups on the same page. Not all endpoints contain each type of parameter.
 
 request_example:
   term: Request example
   def: >
-        The request example includes a sample request using the endpoint, showing some parameters configured. The request example usually doesn't show all possible parameter configurations, but it should be as rich as possible with parameters. Sample requests sometimes include code snippets that show the same request in a variety of languages (besides curl). Requests shown in other programming languages are optional and not always included in the reference topics, but when available, users welcome them.
+        The request example includes a sample request using the endpoint, showing some parameters configured. The request example usually doesn't show all possible parameter configurations, but it should be as rich as possible with parameters.  <br/><br/>Sample requests sometimes include code snippets that show the same request in a variety of languages (besides curl). Requests shown in other programming languages are optional and not always included in the reference topics, but when available, users welcome them.
 
 response_example_and_schema:
   term: Response example and schema
   def: >
-        The response example shows a sample response from the request example. The response example is not comprehensive of all parameter configurations or operations, but it should correspond with the parameters passed in the request example. The response lets developers know if the resource contains the information they want, the format, and how that information is structured and labeled. The description of the response is known as the response schema. The response schema documents the response in a more comprehensive, general way, listing each property returned, what each property contains, the data format of the values, the structure, and other details.
+        The response example shows a sample response from the request example; the response schema defines all possible elements in the response. The response example is not comprehensive of all parameter configurations or operations, but it should correspond with the parameters passed in the request example. The response lets developers know if the resource contains the information they want, the format, and how that information is structured and labeled.  <br/><br/>The description of the response is known as the response schema. The response schema documents the response in a more comprehensive, general way, listing each property returned, what each property contains, the data format of the values, the structure, and other details.

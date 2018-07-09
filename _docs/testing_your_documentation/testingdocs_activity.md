@@ -18,7 +18,7 @@ With the [open-source API project you're working with](docapis_find_open_source_
 * An API endpoint
 * A tutorial or other key task
 
-Test the content. Run all the endpoint requests. Proceed through all the steps in the tutorial. Do all the identified tasks with the topic. As you test out the content, identify any incorrect or missing or inaccurate information.
+Test the content. For example, run all the endpoint requests. Proceed through all the steps in the tutorial. Do all the identified tasks with the topic. As you test out the content, identify any incorrect or missing or inaccurate information.
 
 {% include random_ad2.html %}
 

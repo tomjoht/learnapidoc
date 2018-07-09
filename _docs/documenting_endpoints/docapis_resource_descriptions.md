@@ -13,7 +13,7 @@ path1: /docendpoints.html
 <img src="images/apiref1.png"/>
 {% endif %}
 
-> **{{site.data.apirefsections.resource_description.term}}**: {{site.data.apirefsections.resource_description.def}}
+{{site.data.apirefsections.resource_description.def}}
 
 * TOC
 {:toc}

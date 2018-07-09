@@ -18,19 +18,19 @@ In this API reference tutorial tutorial, we'll work on creating five common sect
 Almost all API reference topics include these five sections:
 
 [1. Resource description](docapis_resource_descriptions.html)
-:  {{site.data.apirefsections.resource_description.def}}
+:  {{site.data.apirefsections.resource_description.def | split: "." | first | append: "." }}
 
 [2. Endpoints and methods](docapis_resource_endpoints.html)
-: {{site.data.apirefsections.endpoints_and_methods.def}}
+: {{site.data.apirefsections.endpoints_and_methods.def | split: "." | first | append: "." }}
 
 [3. Parameters](docapis_doc_parameters.html)
-: {{site.data.apirefsections.parameters.def}}
+: {{site.data.apirefsections.parameters.def | split: "." | first | append: "." }}
 
 [4. Request example](docapis_doc_sample_requests.html)
-: {{site.data.apirefsections.request_example.def}}
+: {{site.data.apirefsections.request_example.def | split: "." | first | append: "." }}
 
 [5. Response example and schema](docapis_doc_sample_responses_and_schema.html)
-: {{site.data.apirefsections.response_example_and_schema.def}}
+: {{site.data.apirefsections.response_example_and_schema.def | split: "." | first | append: "." }}
 
 ## Tutorial workflow map
 

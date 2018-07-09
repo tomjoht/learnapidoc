@@ -19,7 +19,7 @@ redirect_from:
 <img src="images/apiref2.png"/>
 {% endif %}
 
-> **{{site.data.apirefsections.endpoints_and_methods.term}}**: {{site.data.apirefsections.endpoints_and_methods.def}}
+{{site.data.apirefsections.endpoints_and_methods.def}}
 
 * TOC
 {:toc}
