@@ -203,7 +203,7 @@ Customizing log messages is helpful if you're logging various things to the cons
 
 {% include activity.html %}
 
-Inspect [the payload](http://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html) by expanding each of the sections returned in the JSON console object. Based on the information here, what's the forecast for today?
+Inspect the payload by expanding each of the sections [returned in the JSON console object](http://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html). Based on the information here, what's the forecast for today?
 
 {: .note}
 I realize the page is blank and unexciting. In the next section, [Access and print a specific JSON value](docapis_access_json_values.html), we'll pull out some values and print them to the page.

@@ -45,7 +45,7 @@ The first line, `HTTP/1.1 200 OK`, tells us the status of the request (`200`). M
 
 With a GET request, it's pretty easy to tell if the request is successful because you get back the expected response. But suppose you're making a POST, PUT, or DELETE call, where you're changing data contained in the resource. How do you know if the request was successfully processed and received by the API? HTTP response codes in the header of the response will indicate whether the operation was successful. The HTTP status codes are just abbreviations for longer messages.
 
-{% include course_image.html url="" size="medium" border="true" filename="nonref_statuscodes" ext_print="png" ext_web="svg" alt="Status codes" caption="Status codes are pretty subtle, but when a developer is working with an API, these codes may be the only \"interface\" the developer has. If you can control the messages the developer sees, it can be a huge win." %}
+{% include course_image.html url="" size="medium" border="true" filename="nonref_statuscodes" ext_print="png" ext_web="svg" alt="Status codes" caption="Status codes are pretty subtle, but when a developer is working with an API, these codes may be the only \"interface\" the developer has. If you can control the messages the developer sees, it can be a huge win for usability." %}
 
 All too often, status codes are uninformative, poorly written, and communicate little or no helpful information to the user to overcome the error. Ultimately, status codes should assist users in recovering from errors.
 
@@ -53,21 +53,21 @@ You can see a list of common [REST API status codes here](http://www.restapituto
 
 ## Where to list the HTTP response and error codes
 
-Most APIs should have a general page listing response and error codes across the entire API. A standalone page allows you to expand on each code with more detail without crowding the other documentation. It also reduces redundancy and the appearance of a heavy amount of information (information which is actually just repeated).
+Most APIs should have a general page listing response and error codes across the entire API. A standalone page listing the status codes (rather than including these status codes with each endpoint) allows you to expand on each code with more detail without crowding the other documentation. It also reduces redundancy and the sense of information overload.
 
-On the other hand, if some resources are prone to triggering certain status and error codes more than others, it makes sense to highlight those status and error codes on same API reference pages. One strategy might be to call attention to any particularly relevant status or error codes for a specific endpoint, and then link to the centralized "Response and Status Codes" page for full information.
+On the other hand, if some endpoints are prone to triggering certain status and error codes more than others, it makes sense to highlight those status and error codes on same API reference pages. One strategy might be to call attention to any particularly relevant status or error codes for a specific endpoint, and then link to the centralized "Response and Status Codes" page for full information.
 
 ## Where to get status and error codes
 
 Status and error codes may not be readily apparent when you're documenting your API. You'll probably will need to ask developers for a list of all the status and error codes that are unique to your API. Sometimes developers hard-code these status and error codes directly in the programming code and don't have easy ways to hand you a comprehensive list (this makes localization problematic as well).
 
-As a result, you may need to experiment a bit to ferret out all the codes. Specifically, you might need to try to break the API to see all the potential error codes. For example, if you exceed the rate limit for a specific call, the API might return a special error or status code. You would especially need to document this custom code. A troubleshooting section in your API might make special use of the error codes.
+As a result, you may need to experiment a bit to ferret out all the codes. Specifically, you might need to [try to break the API](testingdocs_test_your_instructions.html) to see all the potential error codes. For example, if you exceed the [rate limit](docapis_rate_limiting_and_thresholds.html) for a specific call, the API might return a special error or status code. You would especially need to document this custom code. A troubleshooting section in your API might make special use of the error codes.
 
 {% include random_ad2.html %}
 
 ## How to list status codes
 
-Your list of status codes can be done in a basic table or definition list, somewhat like this:
+You can list your status and error codes in a basic table or definition list, somewhat like this:
 
 {% if site.format == "kindle" %}
 200 status code
@@ -107,7 +107,7 @@ Status and error codes can be particularly helpful when it comes to troubleshoot
 
 Almost every set of documentation could benefit from a section on troubleshooting. In a troubleshooting topic, you document what happens when users get off the happy path and stumble around in the dark forest. Status codes are like the poorly illuminated trail signs that will help users sort of get back onto the right path.
 
-A section on troubleshooting could list possible error messages users get when they do any of the following:
+A section on troubleshooting could list error messages related to the following situations:
 
 * The wrong API keys are used
 * Invalid API keys are used
@@ -128,13 +128,15 @@ The following are some sample status and error code pages in API documentation.
 
 {% include course_image.html url="https://clearbit.com/docs?python#errors-error-types" filename="context_statuscodes" ext_print="png" ext_web="png" alt="Context.io's status and error codes" caption="Context.io status and error codes" %}
 
-Clearbit not only documents the standard status codes, it describes the unique parameters returned by their API. Most developers will probably be familiar with 200, 400, and 500 codes, but if your API has unique codes, make sure to document these.
+Clearbit not only documents the standard status codes, they describe the unique parameters returned by their API. Most developers will probably be familiar with 200, 400, and 500 codes, so these codes don't need a lot of explanatory detail. But if your API has unique codes, make sure to describe these adequately.
 
 ### Twitter
 
 {% include course_image.html url="https://developer.twitter.com/en/docs/basics/response-codes" filename="twitter_statuscodes" ext_print="png" ext_web="png" alt="Twitter's status and error codes" caption="Twitter status and error codes" %}
 
-Twitter's status codes documentation not only describe the code and status, it also provides a description that provides more information, potentially assisting with error recovery. For example, with the `500` error, the authors don't just say it refers to a broken service, they explain, "This is usually a temporary error, for example in a high load situation or if an endpoint is temporarily having issues. Check in the [developer forums](https://twittercommunity.com/) in case others are having similar issues, or try again later." This kind of helpful message is what tech writers should aim for with status codes (at least for those codes that indicate problems).
+With their status code documentation, Twitter not only describes the code and status, they also provide helpful troubleshooting information, potentially assisting with error recovery. For example, with the `500` error, the authors don't just say the status refers to a broken service, they explain, "This is usually a temporary error, for example in a high load situation or if an endpoint is temporarily having issues. Check in the [developer forums](https://twittercommunity.com/) in case others are having similar issues, or try again later."
+
+This kind of helpful message is what tech writers should aim for with status codes (at least for those codes that indicate problems).
 
 ### Mailchimp
 

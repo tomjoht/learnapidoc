@@ -30,7 +30,7 @@ You don't have your own meteorological service, so you'll need to make some call
 
 ## Get an idea of the end goal {#endgoal}
 
-To give you an idea of the end goal, here's a sample: [wind-openweathermap.html](http://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html). It's not necessarily styled the same as the mockup, but it answers the question, "What's the wind and temperature?"
+To give you an idea of the end goal, here's a sample: [idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html](http://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html). It's not necessarily styled the same as the mockup, but it answers the question, "What's the wind and temperature?"
 
 Click the button to see wind and temperature details. When you request this data, an API goes out to the [OpenWeatherMap API service](https://openweathermap.org/api), retrieves the information, and displays it to you.
 
@@ -75,7 +75,7 @@ Before diving too far down int the OpenWeatherMap API, let's look at another wea
 5. Browse the type of information that is available through this endpoint. Does this endpoint provide information about wind and temperature that would work for our sample development scenario?
 
 {: .tip}
-Here's the Aeris weather forecast API in action making mostly the same calls as I showed earlier with OpenWeatherMap: <a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-aeris.html" alt="Aeris example">/learnapidoc/assets/files/wind-aeris.html</a>.
+Here's the Aeris weather forecast API in action making mostly the same calls as I showed earlier with OpenWeatherMap: <a href="http://idratherbewriting.com/learnapidoc/assets/files/wind-aeris.html" alt="Aeris example">idratherbewriting.com/learnapidoc/assets/files/wind-aeris.html</a>.
 
 For this scenario, there are dozens of different weather APIs we could use. As you create your API documentation, think about whether your users have the same decisions to make. Are there several other APIs that developers can choose from for the same information? What will make your API stand out more? Although you probably can't define your product roadmap, you might at least argue that the docs for your API will be superior!
 
