@@ -3,7 +3,7 @@ title: "Jekyll publishing tutorial"
 permalink: /pubapis_jekyll.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.91
+weight: 8.91
 section: publishingapis
 path1: /publishingapis.html
 ---

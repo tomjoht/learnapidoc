@@ -1,8 +1,6 @@
 ---
 title: 'Retrieve a gallery using the Flickr API'
 permalink: /docapis_flickr_example.html
-categories:
-- api-doc
 course: "Documenting REST APIs"
 weight: 13.3
 sidebar: docapis

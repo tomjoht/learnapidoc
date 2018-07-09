@@ -3,7 +3,7 @@ title: "Publishing tool options for developer docs"
 permalink: /pubapis_docs_as_code_tool_options.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.5
+weight: 8.5
 section: publishingapis
 path1: /publishingapis.html
 redirect_from:

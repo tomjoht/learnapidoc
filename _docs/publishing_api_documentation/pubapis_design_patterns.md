@@ -3,7 +3,7 @@ title: "Design patterns with API doc sites"
 permalink: /pubapis_design_patterns.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.2
+weight: 8.2
 section: publishingapis
 path1: /publishingapis.html
 ---

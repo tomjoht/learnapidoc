@@ -3,7 +3,7 @@ title: User guide topics
 permalink: /docapis_create_user_guide.html
 keywords:
 course: "Documenting REST APIs"
-weight: 5.0
+weight: 5.01
 sidebar: docapis
 section: docnonref
 path1: /docnonref.html

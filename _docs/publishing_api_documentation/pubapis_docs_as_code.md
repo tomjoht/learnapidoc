@@ -3,7 +3,7 @@ title: "Docs-as-code tools"
 permalink: /pubapis_docs_as_code.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.3
+weight: 8.3
 section: publishingapis
 path1: /publishingapis.html
 ---

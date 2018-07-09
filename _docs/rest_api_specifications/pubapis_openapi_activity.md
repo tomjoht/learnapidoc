@@ -3,7 +3,7 @@ title: "Activity: Create an OpenAPI specification document"
 permalink: /pubapis_openapi_activity.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.4
+weight: 7.4
 section: restapispecifications
 path1: /restapispecifications.html
 ---

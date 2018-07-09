@@ -16,7 +16,7 @@ Rate limits determine how frequently you can call a particular endpoint. Usually
 
 ## What to cover with rate limiting
 
-Companies with APIs make money by charging for access to the API, but they usually distinguish between low usage and high usage, often making the low usage options free so that developers can explore and experiment with the API. With the sample OpenWeatherMap Weather API that we've [been using in this course](docapis_scenario_for_using_weather_api.html), you can see where the pricing begins:
+Companies with APIs make money by charging for access to the API, but they usually distinguish between low usage and high usage, often making the low usage options free so that developers can explore and experiment with the API. With the sample OpenWeatherMap Weather API that we've [been using in this course](docapis_scenario_for_using_weather_api.html), you can see where the pricing tier begins:
 
 {% include course_image.html border="" filename="openweathermapratelimits" ext_print="png" ext_web="png" alt="Pricing tier for OpenWeatherMap API" caption="Pricing tiers for OpenWeatherMap API. Each call is a request to the API. If your page makes just one call for weather, and you get more than 60 visitors per second, you'll need to move past the free tier." %}
 
@@ -24,7 +24,7 @@ If your site has hundreds of thousands of visitors a day, and each page reload c
 
 {% include random_ad.html %}
 
-Pricing details related to rate limiting is probably information that's within the marketing domain rather than documentation domain. However, developers will still want to know a few key behaviors around the rate limiting thresholds. For example:
+Pricing related to rate limiting is probably information that's within the marketing domain rather than documentation domain. However, developers will still want to know a few key behaviors around the rate limiting thresholds. For example:
 
 * When you exceed the threshold, do your calls get throttled with slower responses?
 * Do you get overcharges for every extra call?
@@ -58,4 +58,4 @@ Linkedin's rate limiting documentation explains that different API endpoints hav
 
 Bitly provides basic information on the page above but also links to [best practices for avoid rate limiting issues](http://dev.bitly.com/best_practices.html). These best practices include tips such as caching, security issues, long page loads, batch processing, high-volume requests, URL encoding, and more.
 
-By looking at these three examples, you can see that while rate limiting might seem like a simple, straightforward topic, there are layers of depth and complexity to cover. Obviously, the relevance of the topic depends on your API and the rate limiting policies your company sets, but this information cannot be entirely offloaded to Marketing to handle. So much of the information around rate limiting directly affects development.
+By looking at these examples, you can see that while rate limiting might seem like a simple, straightforward topic, there are layers of depth and complexity to cover. The relevance of the topic depends on your API and the rate limiting policies your company sets, but this information cannot be entirely offloaded to Marketing to handle. So much of the information around rate limiting directly affects development.

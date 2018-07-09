@@ -1,9 +1,6 @@
 ---
 title: Understand curl more
 permalink: /docapis_understand_curl.html
-categories:
-- api-doc
-keywords:
 course: "Documenting REST APIs"
 weight: 2.5
 sidebar: docapis

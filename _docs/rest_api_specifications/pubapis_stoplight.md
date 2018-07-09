@@ -3,7 +3,7 @@ title: Stoplight &mdash; visual modeling tools for creating your OpenAPI spec
 permalink: pubapis_stoplight.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.9
+weight: 7.9
 section: restapispecifications
 path1: /restapispecifications.html
 ---

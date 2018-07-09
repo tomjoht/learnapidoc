@@ -5,7 +5,7 @@ categories:
 - api-doc
 keywords:
 course: "Documenting REST APIs"
-weight: 8.1
+weight: 7.1
 sidebar: docapis
 section: restapispecifications
 path1: /restapispecifications.html

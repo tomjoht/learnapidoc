@@ -3,7 +3,7 @@ title: "Activity: Use Stoplight to edit your OpenAPI spec"
 permalink: pubapis_stoplight_activity.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.91
+weight: 7.91
 section: restapispecifications
 path1: /restapispecifications.html
 ---

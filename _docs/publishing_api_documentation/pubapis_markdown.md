@@ -3,7 +3,7 @@ title: "More about Markdown"
 permalink: /pubapis_markdown.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.4
+weight: 8.4
 section: publishingapis
 path1: /publishingapis.html
 ---

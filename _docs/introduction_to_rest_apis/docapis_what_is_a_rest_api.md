@@ -142,7 +142,7 @@ You can see this response in [curl](docapis_install_curl.html) if you open a ter
 
 Because the web itself is an example of RESTful style architecture, the way REST APIs work will likely become second nature to you.
 
-### REST APIs are stateless and cacheable
+### REST APIs are stateless and cacheable {#stateless_and_cacheable}
 
 REST APIs are also stateless and cacheable. Stateless means that each time you access a resource through an endpoint, the API provides the same response. It doesn't remember your last request and take that into account when providing the new response. In other words, there aren't any previously remembered states that the API takes into account with each request.
 

@@ -3,7 +3,7 @@ title: "Activity: Create your own Swagger UI display"
 permalink: /pubapis_swagger_ui_activity.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.6
+weight: 7.6
 section: restapispecifications
 path1: /restapispecifications.html
 path2: /swaggerui.html

@@ -1,7 +1,6 @@
 ---
 title:  More REST API exercises
 permalink: /docapis_more_rest_exercises.html
-keywords:
 course: "Documenting REST APIs"
 weight: 13.1
 sidebar: docapis

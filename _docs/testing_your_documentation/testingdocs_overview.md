@@ -2,7 +2,7 @@
 title: "Overview to testing your docs"
 course: "Documenting REST APIs"
 permalink: /testingdocs_overview.html
-weight: 4.0
+weight: 4.01
 sidebar: docapis
 section: testingdocs
 path1: /testingdocs.html
