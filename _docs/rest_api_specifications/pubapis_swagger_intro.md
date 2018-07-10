@@ -13,47 +13,19 @@ redirect_from:
 - /pubapis_swagger_intro/
 ---
 
-{: .tip}
-For step-by-step tutorial on creating an OpenAPI specification document, see the [OpenAPI tutorial here](pubapis_openapi_tutorial_overview.html).
-
 [OpenAPI](https://www.openapis.org/) is a specification for describing REST APIs. You can think of the OpenAPI specification like the specification for DITA. With DITA, there are specific XML elements used to define help components, and a required order and hierarchy to those elements. Different tools can read DITA and build out a documentation website from the information.
 
 With OpenAPI, instead of XML, you have set of JSON objects, with a specific schema that defines their naming, order, and contents. This JSON file (often expressed in YAML instead of JSON) describes each part of your API. By describing your API in a standard format, publishing tools can programmatically ingest the information about your API and display each component in a stylized, interactive display.
 
+{: .tip}
+For step-by-step tutorial on creating an OpenAPI specification document, see the [OpenAPI tutorial here](pubapis_openapi_tutorial_overview.html).
+
 * TOC
 {:toc}
 
-## Backstory: experiences that prompted me toward OpenAPI
+## The OpenAPI specification
 
-On one project some years ago, after I created documentation for a new API, the project manager wanted to demo the new functionality to some field engineers.
-
-To prepare for the demo, the project manager summarized, in a PowerPoint presentation, the new endpoints that had been added. The request and responses from each endpoint were included as attractively as possible in a number of PowerPoint slides.
-
-During the demo, the project manager talked through each of the slides, explaining the new endpoints, the parameters the users can configure, and the responses from the server.
-
-How did the field engineers react to the new demo? The field engineers wanted to try out the requests and see the responses for themselves. They wanted to "push the buttons," so to speak, and see how the API responded.
-
-I'm not sure if they were skeptical of the API's advertised behavior, or if they had questions the slides failed to answer. But they insisted on making actual calls themselves and seeing the responses, despite what the project manager had noted on each slide.
-
-{% include random_ad.html %}
-
-The field engineers' insistence on trying out every endpoint made me rethink my API documentation. All the engineers I've ever known have had similar inclinations to explore and experiment on their own.
-
-I have a mechanical engineering friend who once nearly entirely dismantled his car's engine to change a head gasket: he simply loved to take things apart and put them back together. It's the engineering mind. When you force engineers to passively watch a PowerPoint presentation, they quickly lose interest.
-
-After the meeting, I wanted to make my documentation more interactive, with options for users to try out the calls themselves. I had heard of [Swagger](https://swagger.io/). I knew that Swagger / OpenAPI was a way to make my API documentation interactive. Looking at the [Swagger Petstore demo](http://petstore.swagger.io), I knew I had to figure it out.
-
-## About OpenAPI
-
-OpenAPI is a specification for describing REST APIs. This means OpenAPI provides a set of objects, with a specific schema about their naming, order, and contents, that you use to describe each part of your API.
-
-You can think of the OpenAPI specification like DITA but for APIs. With DITA, you have a number of elements that you use to describe your help content (for example, `task`, `step`, `cmd`). The elements have a specific order they have to appear in. The `cmd` element must appear inside a `step`, which must appear inside a `task`, and so on. The elements have to be used correctly according to the XML schema in order to be valid.
-
-{% include random_ad2.html %}
-
-Many tools can parse valid DITA XML and transform the content into different outputs. The OpenAPI specification works similarly, only the specification is entirely different, since you're describing an API instead of a help topic.
-
-The official description of the OpenAPI specification is available in a [Github repository here](https://github.com/OAI/OpenAPI-Specification). Some of the OpenAPI elements are `paths`, `parameters`, `responses`, and `security`. Each of these elements is actually an "object" (instead of an XML element) that holds a number of properties and arrays.
+The official description of the OpenAPI specification is available in a [Github repository here](https://github.com/OAI/OpenAPI-Specification). For example, some of the OpenAPI elements are `paths`, `parameters`, `responses`, and `security`. Each of these elements is actually an "object" (instead of an XML element) that holds a number of properties and arrays.
 
 In the OpenAPI specification, your endpoints are `paths`. If you had an endpoint called "pets", your OpenAPI specification for this endpoint might look as follows:
 
@@ -106,6 +78,8 @@ Here's what these objects mean:
 
 It can take quite a while to figure out the OpenAPI specification. Give yourself a couple of weeks and a lot of example specification documents to look at, especially in the context of the actual API you're documenting. Remember that the OpenAPI specification is general enough to describe nearly every REST API, so some parts may be more applicable than others.
 
+## Validating the specification
+
 When you're coding your OpenAPI specification document, instead of working in a text editor, you can write your code in the [Swagger Editor](http://editor.swagger.io/). The Swagger Editor dynamically validates your content to determine whether the specification document you're creating is valid.
 
 <img src="images/swagger_editor_pic.png" alt="Swagger Editor" />
@@ -117,70 +91,57 @@ languages such as XML.
 
 YAML depends on spacing and colons to establish the object syntax. This makes the code more human-readable, but it's also sometimes trickier to get the spacing right.
 
-## Manual or automated?
+## Automatically generating the specification document
 
-So far I've been talking about creating the OpenAPI specification document as if it's the technical writer's task and requires manual coding in a text editor based on close study of the specification. That's how I approached it, but it's not the only way to create the document. You can also auto-generate the specification document through annotations in the programming source code.
+So far I've been talking about creating the OpenAPI specification document as if it's the technical writer's task and requires manual coding in a text editor based on close study of the specification. That's how I usually approach it, but it's not the only way to create the document. You can also auto-generate the specification document through annotations in the programming source code.
 
-This developer-centric approach may make sense if you have a large number of APIs and it's not practical for technical writers to create this documentation. If this is the case, make sure you get access to the source code to make edits to the annotations. Otherwise, your developers will be writing your docs (which can be good but often has poor results).
+This developer-centric approach may make sense if you have a large number of APIs or if it's not practical for technical writers to create this documentation. If this is the case, make sure you get access to the source code to make edits to the annotations. Otherwise, your developers will be writing your docs (which can be good but often has poor results).
 
 Swagger offers a variety of libraries that you can add to your programming code to generate the specification document. These libraries are considered part of the [Swagger Codegen](https://swagger.io/swagger-codegen/) project. For more information, see [Comparison of Automatic API Code Generation Tools For Swagger](https://apievangelist.com/2015/06/06/comparison-of-automatic-api-code-generation-tools-for-swagger/) by API Evangelist. Other tools such as [REST United](http://restunited.com/), [Restlet Studio](http://studio.restlet.com/), [APIMATIC](https://apimatic.io/) can also be used.
 
-These libraries, specific to your programming language, will parse through your code's annotations and generate an OpenAPI specification document. Of course, someone has to know exactly what annotations to add and how to add them (the process isn't too unlike Javadoc's comments and annotations). Then someone has to write content for each of the annotation's values (describing the endpoint, the parameters, and so on).
+These libraries, specific to your programming language, will parse through your code's annotations and generate an OpenAPI specification document. Someone has to know exactly what annotations to add and how to add them (the process isn't too unlike Javadoc's comments and annotations). Then someone has to write content for each of the annotation's values (describing the endpoint, the parameters, and so on).
 
-In short, this process isn't without effort &mdash; the automated part is having the Codegen libraries generate the model definitions and the specification document. Still, many developers get excited about this approach because it offers a way to generate documentation from code annotations, which is what developers have been doing for years with other programming languages such as Java (using [Javadoc](http://www.oracle.com/technetwork/articles/java/index-137868.html)) or C++ (using [Doxygen](http://www.stack.nl/~dimitri/doxygen/)). They usually feel that generating documentation from the code results in less documentation drift. Docs are likely to remain up to date if the doc is tightly coupled with the code. Plus if engineers are writing the docs, they often prefer to stay within their own IDE to write.
+In short, this process isn't without effort &mdash; the automated part is having the Codegen libraries generate the model definitions and the valid specification document that conforms the OpenAPI schema. Still, many developers get excited about this approach because it offers a way to generate documentation from code annotations, which is what developers have been doing for years with other programming languages such as Java (using [Javadoc](http://www.oracle.com/technetwork/articles/java/index-137868.html)) or C++ (using [Doxygen](http://www.stack.nl/~dimitri/doxygen/)). They usually feel that generating documentation from the code results in less documentation drift. Docs are likely to remain up to date if the doc is tightly coupled with the code. Plus if engineers are writing the docs, they often prefer to stay within their own IDE to write.
+
+## Another approach: Spec-first development
 
 Although you can generate your specification document from code annotations, many say that this is *not* the best approach. In [Undisturbed REST: A Guide to Designing the Perfect API](https://www.mulesoft.com/lp/ebook/api/restbook), [Michael Stowe](https://twitter.com/mikegstowe) recommends that teams implement the specification by hand and then treat the specification document as a contract that developers use when doing the actual coding. This approach is often referred to as "spec-first development."
 
 In other words, developers consult the specification document to see what the parameter names should be called, what the responses should be, and so on. After this "contract" or "blueprint" has been established, Stowe says you can then put the annotations in your code to auto-generate the specification document.
 
-Too often, development teams quickly jump to coding the API endpoints, parameters, and responses without doing much user testing or research into whether the API aligns with what users want. Since versioning APIs is extremely difficult (you have to support each new version going forward with full backwards compatibility to previous versions), you want to avoid the "fail fast" approach that is so commonly embraced with agile. There's nothing worse than releasing a new version of your API that invalidates endpoints or parameters used in previous releases. Documentation also becomes a nightmare.
+Too often, development teams quickly jump to coding the API endpoints, parameters, and responses without doing much user testing or research into whether the API aligns with what users want. Since versioning APIs is extremely difficult (you have to support each new version going forward with full backwards compatibility to previous versions), you want to avoid the "fail fast" approach that is so commonly celebrated with agile. There's nothing worse than releasing a new version of your API that invalidates endpoints or parameters used in previous releases. Documentation versioning also becomes a nightmare.
 
 In my conversations with [Smartbear](https://smartbear.com/), the company that makes [SwaggerHub](pubapis_swaggerhub_smartbear.html) (a collaborative platform for teams to work on Swagger API specifications), they say it's now more common for teams to manually write the spec rather than embed source annotations in programming code to auto-generate the spec. The spec-first approach helps distribute the documentation work to more team members than engineers. Defining the spec before coding also helps teams produce better APIs.
 
 Even before the API has been coded, your spec can generate a [mock response](pubapis_swaggerhub_smartbear.html#mocking_servers) by adding response definitions in your spec. The mock server generates a response that looks like it's coming from a real server, but it's really just a pre-defined response in your code and appears to be dynamic to the user.
 
-With my initial project, our developers weren't that familiar with Swagger or OpenAPI, so I simply created the OpenAPI specification document by hand. Additionally, I didn't have free access to the programming source code, and our developers spoke English as a second or third language only. They weren't eager to be in the documentation business.
+## The tech writer's role with the spec
 
-You will most likely find that engineers in your company aren't familiar with Swagger or OpenAPI but are interested in using it as an API template (the approach fits the engineering mindset). As such, you'll probably need to take the lead to guide engineers in the needed information, the approach, and other details that align with best practices toward creating the spec.
+In most of my projects, developers haven't that familiar with Swagger or OpenAPI, so I usually create the OpenAPI specification document by hand. Additionally, I often don't have free access to the programming source code, and our developers speak English as a second or third language only. They aren't eager to be in the documentation business.
+
+You will most likely find that engineers in your company aren't familiar with Swagger or OpenAPI but are interested in using it as an API template (the approach fits the engineering mindset). As such, you'll probably need to take the lead to guide engineers in the needed information, approach, and other details that align with best practices toward creating the spec.
 
 In this regard, tech writers have a key role to play in collaborating with the API team in producing the spec. If you're following a spec-first development philosophy, this leading role can help you shape the API before it gets coded and locked down. This means you might be able to actually influence the names of the endpoints, the consistency and patterns, simplicity, and other factors that go into the design of an API (which tech writers are usually absent from).
 
-In summary, here are the pros and cons of annotating your programming code to auto-generate the specification document:
-
-**Pros of code annotations method:**
-
-* Reduces potential for documentation drift.
-* Consolidates your doc and code in the same location.
-* Enables engineers to write documentation using their existing IDE.
-* Automatically creates the model definitions for requests and responses.
-
-**Cons of code annotation method:**
-
-* Annotation syntax differs by programming language, with some languages not supported.
-* Potentially difficult to gain access to the programming source code (you'd need to integrate into the developer's version control workflow and review tooling).
-* Learning curve is greater, since you have to run your app to generate the specification document.
-* The specification file can only be generated *after* the API is coded, eliminating the idea of a contract or blueprint.
-* None of Swagger Codegen libraries support the latest version of the [OpenAPI 3.0 spec](pubapis_openapi_tutorial_overview.html) (as of Nov 2017).
-* Annotations clutter up the code with a lot of documentation.
-* No ability to use tools like [SwaggerHub](pubapis_swaggerhub_smartbear.html) to collaborate (which provides inline commenting and versioning features).
-
 ## Rendering Your OpenAPI specification with Swagger UI
 
-After you have a valid OpenAPI specification document that describes your API, you can then feed this specification to different tools to parse it and generate the interactive documentation similar to the [Petstore example](http://petstore.swagger.io/) I referenced earlier.
+After you have a valid OpenAPI specification document that describes your API, you can then feed this specification to different tools to parse it and generate the interactive documentation similar to the [Petstore demo](http://petstore.swagger.io/).
 
-Probably the most common tool used to parse the OpenAPI specification is [Swagger UI](https://github.com/swagger-api/swagger-ui). (Remember, "Swagger" refers to API tooling, whereas "OpenAPI" refers to the vendor-neutral, tool agnostic specification.) After you download Swagger UI, you basically just separate out the **dist** folder, open up the **index.html** file inside the **dist** folder (which contains the Swagger UI project build) and reference your own OpenAPI specification document in place of the default one.
+Probably the most common tool used to parse the OpenAPI specification is [Swagger UI](https://github.com/swagger-api/swagger-ui). (Remember, "Swagger" refers to API tooling, whereas "OpenAPI" refers to the vendor-neutral, tool agnostic specification.) After you download Swagger UI, it's pretty easy to configure it with your own specification file. (I provide a tutorial here: [Swagger UI tutorial](pubapis_swagger.html).)
 
 The Swagger UI code generates a display that looks like this:
 
 <a href="http://petstore.swagger.io/" class="noExtIcon"><img src="images/swagger_petstore_pic.png" alt="Swagger Petstore" /></a>
 
-Also check out the [sample Swagger UI integration with a simple weather API](http://idratherbewriting.com/learnapidoc/assets/files/swagger/) used as a course example.
+You can also check out the [sample Swagger UI integration with a simple weather API](http://idratherbewriting.com/learnapidoc/assets/files/swagger/) used as a course example.
 
 Some designers criticize Swagger UI's expandable/collapsible output as being dated. At the same time, developers find the one-page model attractive and like the ability to zoom out or in for details. By consolidating all endpoints on the same page in one view, users can take in the whole API at a glance. This display gives users a glimpse of the whole, which helps reduce complexity and enables them to get started. In many ways, the Swagger UI display is a quick-reference guide for your API.
 
-## Play with Swagger
+## Explore Swagger UI through the Petstore Demo
 
 {% include activity.html %}
+
+Let's get some hands-on experience with Swagger. Go to the [Swagger Pet Store Demo](https://petstore.swagger.io/).
 
 As with most Swagger-based outputs, Swagger UI provides a "Try it out" button. To make it work, first you would normally authorize Swagger by clicking **Authorize** and completing the right information required in the Authorization modal.
 
@@ -192,7 +153,7 @@ Next, expand the **Pet** endpoint. Click **Try it out**.
 
 <a href="http://petstore.swagger.io/" class="noExtIcon"><img src="images/swaggerui_petendpoint.png" alt="Try it out button in Swagger UI" /></a>
 
-After you click Try it out, the example value in the Request Body field becomes editable. Change the first `id` value to an integer, such as `193844`. Change the second `name` value to something you'd recognize (your pet's name). Then click **Execute**.
+After you click Try it out, the example value in the Request Body field becomes editable. Change the first `id` value to an integer, such as `193844`. Change the second `name` value to something you'd recognize (your pet's name &mdash; `Bentley`). Then click **Execute**.
 
 <a href="http://petstore.swagger.io/" class="noExtIcon"><img src="images/swaggerui_execute.png" alt="Executing a sample Petstore request" /></a>
 
@@ -206,29 +167,29 @@ The Petsore is a functioning API, and you have actually created a pet. For fun, 
 
 There are other tools besides Swagger UI that can parse your OpenAPI specification document. Some of these tools include [Restlet Studio](https://restlet.com/products/restlet-studio/), [Apiary](https://apiary.io/), [Apigee](http://apigee.com/about/), [Lucybot](https://lucybot.com/), [Gelato](https://gelato.io/), [Readme.io](http://readme.io/), [swagger2postman](https://github.com/josephpconley/swagger2postman), [swagger-ui responsive theme](https://github.com/jensoleg/swagger-ui), [Postman Run Buttons](https://www.getpostman.com/docs/run_button) and more.
 
-Some web designers have created integrations of OpenAPI with static site generators such as Jekyll (see [Carte](https://github.com/Wiredcraft/carte)) and [Readme](https://readme.io). You can also embed Swagger UI into web pages as well. More tools roll out regularly for parsing and displaying content from a OpenAPI specification document.
+Some web designers have created integrations of OpenAPI with static site generators such as Jekyll (see [Carte](https://github.com/Wiredcraft/carte)) and [Readme](https://readme.io)). You can also embed Swagger UI into web pages as well. More tools roll out regularly for parsing and displaying content from a OpenAPI specification document.
 
 In fact, once you have a valid OpenAPI specification, using a tool called [API Transformer](https://apitransformer.com), you can even transform it into other API specification formats, such as [RAML](http://raml.org/) or [API Blueprint](https://apiblueprint.org/). This allows you to expand your tool horizons even wider. (RAML and API Blueprint are alternative specifications to Swagger: they're not as popular, but the logic of the specifications is similar. And if you're using a platform like Mulesoft or Apiary, you might want to use the specification for which that platform is optimized.)
 
 ## Responses to Swagger documentation
 
-With my OpenAPI project, I used the Swagger UI to parse my OpenAPI specification. I customized Swagger UI's colors a bit, added a logo and a few other features. I spliced in a reference to Bootstrap so that I could have pop-up modals where users could generate their authorization codes. I even added some collapse and expand features in the description element to provide necessary information to users about a sample project.
+With my OpenAPI projects, I might customize the Swagger UI's colors a bit, add a custom logo and a few other custom styles. With one project, I spliced in a reference to Bootstrap so that I could have pop-up modals where users could generate their authorization codes. You can even add collapse and expand features in the description element to provide more information to users.
 
 Beyond these simple modifications, however, it takes a bit of web-developer prowess to significantly alter the Swagger UI display.
 
-When I showed the results to the project manager, he loved it. He and others quickly embraced the Swagger output in place of the PowerPoint slides and promoted it among the field engineers and users. The vice president of Engineering even decided that Swagger would be the default approach for documenting all APIs.
+The first time I created a Swagger UI output for an API doc project, the project manager loved it. He and others quickly embraced the Swagger output in place of the PowerPoint slides (the previous demo tool) and promoted it among the field engineers and users. The vice president of Engineering even decided that Swagger would be the default approach for documenting all APIs.
 
-Overall, delivering the Swagger output was a huge feather in my cap at the company, and it established an immediate credibility of my technical documentation skills, since no one else in the company knew how to deliver the Swagger output.
+Overall, delivering the Swagger output has been a huge feather in my cap at every company, and it establishes an immediate credibility for my technical documentation skills, since few others at companies I've been at know how to create the OpenAPI spec and Swagger UI output.
 
-## A slight trough of disillusionment
+## Downsides to OpenAPI and Swagger UI
 
 Despite Swagger's interactive power to appeal to the "let me try" desires of users, there are some downsides to Swagger and OpenAPI.
 
-The OpenAPI specification and Swagger UI's output are just reference documentation. OpenAPI provides the basics about each endpoint, including a description, the parameters, a sample request, and a response. It doesn't provide space for a Hello World tutorial, information about how to get API keys, how to configure any API services, information about rate limits, or the hundred other details that go into a user guide for developers.
+The OpenAPI specification and Swagger UI's output are just [reference documentation](docendpoints.html). OpenAPI provides the basics about each endpoint, including a description, the parameters, a sample request, and a response. It doesn't provide space for a [getting started tutorial](docapis_doc_getting_started_section.html), information about how to get [API keys](docapis_more_about_authorization.html), how to run a [sample app](docapis_sdks_and_sample_apps.html), information about [rate limits](docapis_rate_limiting_and_thresholds.html), or the hundred other details that go into a user guide for developers.
 
-Even though you have this cool, interactive tool for users to explore and learn about your API, at the same time you still have to provide a user guide. Similarly, delivering a Javadoc or Doxygen output for a library-based API won't teach users how to actually use your API. You still have to describe scenarios for using a class or method, explain how to set your code up, what to do with the response, how to troubleshoot problems, and so on. In short, you still have to write actual help guides and tutorials.
+Even though you have this cool, interactive tool for users to explore and learn about your API, at the same time you still have to provide a user guide. As an analogy, delivering a Javadoc or Doxygen output for a library-based API won't teach users how to actually use your API. You still have to describe scenarios for using a class or method, explain how to set your code up, what to do with the response, how to troubleshoot problems, and so on. In short, you still have to write actual help guides and tutorials.
 
-With OpenAPI in the mix, you now have some additional challenges. You have *two places* where you're describing your endpoints and parameters, and you have to either keep the two in sync, embed one in the other, or otherwise link between the two.
+With OpenAPI in the mix, you now have some additional challenges. You have *two places* where you're describing your endpoints and parameters, and you have to either keep the two in sync, embed one in the other, or otherwise link between the two (I explore integration strategies in [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html)).
 
 [Peter Gruenbaum](https://www.udemy.com/user/petergruenbaum/), who has published several tutorials on writing API documentation on Udemy, says that automated tools such as Swagger work best when the APIs are simple.
 
@@ -250,7 +211,7 @@ Despite the shortcomings of OpenAPI, I still highly recommend it for describing 
 
 Swagger UI definitely provides a nice visual shape for an API. You can easily see all the endpoints and their parameters (like a quick-reference guide). Based on this framework, you can help users grasp the basics of your API.
 
-Additionally, I found that learning the OpenAPI specification and describing my API with these objects and properties helped inform my own API vocabulary. By poring through the specification, I realized that there were four main types of parameters: "path" parameters, "header" parameters, "query" parameters, and "request body" parameters. I learned that parameter data types with REST were a "Boolean", "number", "integer", or "string." I learned that responses provided "objects" containing "strings" or "arrays."
+Additionally, I found that learning the OpenAPI specification and describing my API with these objects and properties helped inform my own API vocabulary. For example, I realized that there were four main types of parameters: "path" parameters, "header" parameters, "query" parameters, and "request body" parameters. I learned that parameter data types with REST were a "Boolean", "number", "integer", or "string." I learned that responses provided "objects" containing "strings" or "arrays."
 
 In short, implementing the specification gave me an education about API terminology, which in turn helped me describe the various components of my API in credible ways.
 
@@ -279,3 +240,6 @@ See the following resources for more information on OpenAPI and Swagger:
 
 {: .tip }
 To see a presentation that covers the same concepts in this article, see [https://goo.gl/n4Hvtq](https://goo.gl/n4Hvtq).
+
+{: .tip}
+For an excellent overview and comparison of these three REST specification formats, see [Top Specification Formats for REST APIs](http://nordicapis.com/top-specification-formats-for-rest-apis/) by Kristopher Sandoval on the Nordic APIs blog.
