@@ -10,17 +10,17 @@ path1: /restapispecifications.html
 
 When I [introduced REST APIs](docapis_what_is_a_rest_api.html), I mentioned that REST APIs follow an architectural style, not a specific standard. However, there are several REST specifications that have been developed to try to provide some standards about how REST APIs are described. The three most popular REST API specifications are as follows: [OpenAPI (formally called Swagger)](https://github.com/OAI/OpenAPI-Specification), [RAML](https://raml.org/), and [API Blueprint](https://apiblueprint.org/).
 
-In the early years of specifications, there was healthy competition between the formats. But now, without a doubt the OpenAPI specification is the most popular, with the largest community, momentum, and tooling. Because of this, I spend the most time on OpenAPI. Overall, these specifications for REST APIs lead to better documentation, tooling, and structure with your API documentation.
+In the early years of specifications, there was healthy competition between the formats. But now, without a doubt the OpenAPI specification is the most popular, with the largest community, momentum, and tooling. Because of this, I spend the most time on OpenAPI.
 
 {: .note}
 "OpenAPI" refers to the specification, while "Swagger" refers to the API tooling that reads and displays the information in the specification. I'll dive into both OpenAPI and Swagger in much more depth in the pages to come.
 
-Keep in mind that these REST API specifications mostly describe the *reference endpoints* in an API. While the reference topics are important, you will likely have a lot more documentation to write. (This is why I created an entire section of [non-reference or user guide topics](docnonref.html).)
+Overall, specifications for REST APIs lead to better documentation, tooling, and structure with your API documentation.Keep in mind that these REST API specifications mostly describe the [*reference endpoints*](docendpoints.html) in an API. While the reference topics are important, you will likely have a lot more documentation to write. (This is why I created an entire section of [non-reference or user guide topics](docnonref.html).)
 
-Nevertheless, the documentation the specification provides often constitutes the core value of your API, since it addresses the endpoints and what they return.
+Nevertheless, the reference documentation the specification covers often constitutes the core value of your API, since it addresses the endpoints and what they return.
 
 {% include random_ad2.html %}
 
-Having multiple documentation outputs (rather than one seamless whole) presents a challenge when creating and publishing API documentation. I explore this challenge in more depth in [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).
+Writing to a specification introduces a new dimension to documentation that makes API documentation substantially unique. By mastering the OpenAPI specification format, you can distinguish yourself in significant ways from other technical writers.
 
 {% include random_ad.html %}
