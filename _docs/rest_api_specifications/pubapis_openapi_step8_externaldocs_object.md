@@ -52,13 +52,15 @@ See the related topic, [Integrating Swagger UI with the rest of your docs](pubap
 
 {% include activity.html %}
 
-Now that we've completed all the steps in the tutorial, we're finished building our OpenAPI specification document. You can see the complete specification document here: <a href="http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweeathermap.yml">docs/rest_api_specifications/openapi_openweeathermap.yml</a>.
+Now that we've completed all the steps in the tutorial, we're finished building our OpenAPI specification document. You can see the complete specification document here: <a href="http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml">http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml</a>.
 
 Here's the specification document rendered by Swagger UI:
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/swagger_full_result.png" class="medium" /></a>
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/swagger_full_result.png" class="medium" /></a
+
+Try executing a request in the version above and look at the result. Select **Imperial** to get the temperature in Farenheit degrees. In the result, locate the `temp` value in the `main` object. Then take a break by going outside to evaluate whether the temperature outside matches the response.
 
 {: .tip}
-You can actually insert any valid path to an OpenAPI specification document into the "Explore" box in Swagger UI (assuming it's using a version that supports your version of the spec), and it will display the content.
+You can actually insert any valid path to an OpenAPI specification document into the "Explore" box in Swagger UI (assuming it's using a version that supports your version of the spec), and it will display the content. For example, you could insert `https://petstore.swagger.io/v2/swagger.json` and it would show the Petstore API.
 
 {% include random_ad.html %}

@@ -207,7 +207,7 @@ paths:
 
       - name: units
         in: query
-        description: '**Units**. *Example: imperial*. Possible values: `metric`, `imperial`. When you do not use units parameter, format is `standard` by default.'
+        description: '**Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use units parameter, format is `standard` by default.'
         schema:
           type: string
           enum: [standard, metric, imperial]
