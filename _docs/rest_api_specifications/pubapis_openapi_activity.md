@@ -52,4 +52,4 @@ If you get stuck or want to compare your spec with mine, see the specification d
 {: .tip}
 You can use this OpenAPI specification document when working through the [Swagger UI activity](pubapis_swagger_ui_activity.html).
 
-To see the Sunrise and Sunset specification document rendered by Swagger UI, just go to the [Swagger UI Demo](http://idratherbewriting.com/learnapidoc/assets/files/swagger/) and paste in the link to the openapi_sunrise_sunset.yml file into the **Explore** box.
+To see the Sunrise and Sunset specification document rendered by Swagger UI, just go to the [Swagger UI Demo](http://idratherbewriting.com/learnapidoc/assets/files/swagger/) and paste in the link to the `openapi_sunrise_sunset.yml` file into the **Explore** box.

@@ -10,12 +10,12 @@ redirect_from:
 - http://idratherbewriting.com/pubapis_swagger/
 ---
 
-[Swagger UI](https://github.com/swagger-api/swagger-ui) provides a display framework that reads the [OpenAPI specification document](https://github.com/OAI/OpenAPI-Specification) and generates an interactive documentation website. This tutorial shows you how to use the Swagger UI interface and how to integrate an OpenAPI specification document into the standalone distribution of Swagger UI.
+[Swagger UI](https://github.com/swagger-api/swagger-ui) provides a display framework that reads an [OpenAPI specification document](https://github.com/OAI/OpenAPI-Specification) and generates an interactive documentation website. This tutorial shows you how to use the Swagger UI interface and how to integrate an OpenAPI specification document into the standalone distribution of Swagger UI.
 
 For a more detailed conceptual overview of OpenAPI and Swagger, see [Introduction to the OpenAPI specification and Swagger](pubapis_swagger_intro.html).
 
 {: .tip}
-For step-by-step tutorial on creating an OpenAPI specification document, see the [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html).
+For step-by-step tutorial on creating an OpenAPI specification document, see the [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html). In the tutorial, I showed how the OpenAPI specification gets rendered by the Swagger UI display that is built into the [Swagger Editor](https://editor.swagger.io/). Here I explain how to use Swagger UI as a standalone output.  
 
 {% if site.format == "web" %}
 * TOC
@@ -26,14 +26,12 @@ For step-by-step tutorial on creating an OpenAPI specification document, see the
 
 First, let's clarify a few terms:
 
-* [Swagger](https://swagger.io/) was the original name of the spec, but the spec was later changed to [OpenAPI](https://github.com/OAI/OpenAPI-Specification/) to reinforce the open, non-proprietary nature of the standard. People sometimes refer to both names interchangeably (esp. on older web pages), but "OpenAPI" is how the spec should be referred to.
+* [Swagger](https://swagger.io/) was the original name of the spec, but the spec was later changed to [OpenAPI](https://github.com/OAI/OpenAPI-Specification/) to reinforce the open, non-proprietary nature of the standard. People sometimes refer to both names interchangeably (especially on older web pages), but "OpenAPI" is how the spec should be referred to. For more details, see [What Is the Difference Between Swagger and OpenAPI?](https://swagger.io/difference-between-swagger-and-openapi/).
 * The OpenAPI spec is driven by the [OpenAPI initiative](https://www.openapis.org/), backed by the Linux Foundation and steered by [many companies and organizations](https://www.openapis.org/membership/members). The Swagger YAML file that you create to describe your API is called the "OpenAPI specification document."
 * Swagger refers to API tooling that around the OpenAPI spec. Some of these tools include [Swagger Editor](https://swagger.io/swagger-editor/), [Swagger UI](https://swagger.io/swagger-ui/), [Swagger Codegen](https://swagger.io/swagger-codegen/), [SwaggerHub](https://app.swaggerhub.com/home), and [others](https://swagger.io/tools/). These tools are managed by [Smartbear](https://smartbear.com/).
 * [SwaggerHub](https://app.swaggerhub.com/home) is the more fully featured, commercial version of the open-source Swagger UI. See [Swagger UI on Swagger.io](https://swagger.io/download-swagger-ui/) for a feature comparison.
 
-For more details, see [What Is the Difference Between Swagger and OpenAPI?](https://swagger.io/difference-between-swagger-and-openapi/) and the [API Glossary](api-glossary.html).
-
-This tutorial focuses on Swagger UI. For a deep dive into the OpenAPI spec, see my [OpenAPI tutorial here](pubapis_openapi_tutorial_overview.html).
+For other terms, see the [API Glossary](api-glossary.html).
 
 ## Swagger UI overview
 
@@ -49,7 +47,7 @@ To get a better understanding of Swagger UI, let's explore the <a href="http://p
 
 <a href="http://petstore.swagger.io/" class="noExtIcon"><img src="images/swaggerpetstoreui.png" alt="Petstore UI" /></a>
 
-The endpoints are grouped into three tags:
+The endpoints are grouped as follows:
 
 * [pet](http://petstore.swagger.io/#/pet)
 * [store](http://petstore.swagger.io/#/store)
@@ -61,7 +59,7 @@ Before making any requests, you would normally authorize your session by clickin
 
 <a href="http://petstore.swagger.io/" class="noExtIcon"><img class="medium" src="images/swaggerui_authorize.png" alt="Authorization modal in Swagger UI" /></a>
 
-The Petstore example has an OAuth 2.0 security model. However, the authorization code is just for demo purposes. There isn't any real logic authorizing those requests, so you can simply close the Authorization modal.
+The Petstore example has an OAuth 2.0 security model. However, the authorization code is just for demonstration purposes. There isn't any real logic authorizing those requests, so you can simply close the Authorization modal.
 
 ### Make a request
 
@@ -79,17 +77,17 @@ Now let's make a request:
 
     <a href="http://petstore.swagger.io/" class="noExtIcon"><img src="images/swaggerui_execute.png" alt="Executing a sample Petstore request" /></a>
 
-Swagger UI submits the request and shows the [curl that was submitted](docapis_make_curl_call.html). The Responses section shows the [response](docapis_doc_sample_responses_and_schema.html). (If you select JSON rather than XML in the "Response content type" drop-down box, you can specify that JSON is returned rather than XML.)
+Swagger UI submits the request and shows the [curl that was submitted](docapis_make_curl_call.html). The Responses section shows the [response](docapis_doc_sample_responses_and_schema.html). (If you select JSON rather than XML in the "Response content type" drop-down box, the response's format will be JSON.)
 
 <a href="http://petstore.swagger.io/" class="noExtIcon"><img src="images/swaggerui_response.png" alt="Response from Swagger Petstore get pet request" /></a>
 
-{% include important.html content="The Petstore is a functioning API, and you have actually created a pet. You now need to take responsibility for your pet and begin feeding and caring for it! All joking aside, most users don't realize they're playing with real data when they execute responses in an API (using their own API key). This test data may be something you have to wipe clean when you transition from exploring and learning about the API to actually using the API for production use." %}
+{% include important.html content="The Petstore is a functioning API, and you have actually created a pet. You now need to take responsibility for your pet and begin feeding and caring for it! All joking aside, most users don't realize they're playing with real data when they execute responses in an API (especially when using their own API key). This test data may be something you have to wipe clean when you transition from exploring and learning about the API to actually using the API for production use." %}
 
 ### Verify that your pet was created
 
 1.  Expand the [**GET /pet/{petId}** endpoint](http://petstore.swagger.io/#/pet/getPetById).
 2.  Click **Try it out**.
-3.  Enter the pet ID you used in the previous operation. (If you forgot it, look back in the POST Pet** endpoint to check the value.)
+3.  Enter the pet ID you used in the previous operation. (If you forgot it, look back in the **POST Pet** endpoint to check the value.)
 4.  Click **Execute**. You should see your pet's name returned in the Response section.
 
 {% include random_ad.html %}
@@ -106,7 +104,7 @@ Before we get into this Swagger tutorial with another API (other than Petstore),
 
 Some of these sites look the same, but others, such as The Movie Database API and Zomato, have been integrated seamlessly into the rest of their documentation website.
 
-You'll notice the documentation is short and sweet in a Swagger UI implementation. This is because the Swagger display is meant to be an interactive experience where you can try out calls and see responses &mdash; using your own API key to see your own data. It's the learn-by-doing-and-seeing-it approach.
+You'll notice the documentation is short and sweet in a Swagger UI implementation. This is because the Swagger display is meant to be an interactive experience where you can try out calls and see responses &mdash; using your own API key to see your own data. It's the learn-by-doing-and-seeing-it approach. Also, Swagger UI only covers the [reference topics](docendpoints.html) of your documentation.
 
 ## Create a Swagger UI display with an OpenAPI spec document
 
