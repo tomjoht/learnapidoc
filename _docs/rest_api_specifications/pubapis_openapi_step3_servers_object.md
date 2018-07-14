@@ -29,7 +29,7 @@ servers:
 - url: http://api.openweathermap.org/data/2.5/
 ```
 
-Each of your endpoints (called "paths" in the spec) will be appended to the server URL when users make "Try it out" requests. For example, if one of the paths is `/weather`, when Swagger UI submits the request, it will submit it to `{server URL}{path}` or `http://api.openweathermap.org/data/2.5/weather`.
+Each of your endpoints (called "paths" in the spec) will be appended to the server URL when users make "Try it out" requests. For example, if one of the paths is `/weather`, when Swagger UI submits the request, it will submit the path to `{server URL}{path}` or `http://api.openweathermap.org/data/2.5/weather`.
 
 ## Options with the server URL
 
@@ -58,3 +58,9 @@ If you have just one URL, you still see a drop-down box but with just one option
 You can also incorporate variables into the server URL that can be populated at runtime by your server. Additionally, if different paths (endpoints) require different server URLs, you can add the `servers` object as a property in the [`path`](pubapis_openapi_step4_paths_object.html) object's operation object. The locally declared servers URL will override the global servers URL.
 
 See ["Overriding Servers"](https://swagger.io/docs/specification/api-host-and-base-path/) in the "API Server and Base URL" page for more details.
+
+## Appearance in Swagger UI
+
+Paste the `servers` object (the first code sample above showing just one `url`) into your Swagger Editor, adding to the code you already have there. Swagger UI will look as follows.
+
+{% include course_image.html filename="step3swaggeruiprogress" ext_print="png" ext_web="png" alt="Progress in Swagger UI with servers object" caption="Progress in Swagger UI with servers object" %}

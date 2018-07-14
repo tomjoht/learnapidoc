@@ -20,7 +20,7 @@ path1: /restapispecifications.html
 
 ## OpenAPI tutorial overview
 
-Before diving into the first step of the OpenAPI tutorial here, read the [OpenAPI tutorial overview](pubapis_openapi_tutorial_overview.html) to get a sense of the scope of this tutorial. In brief, this OpenAPI tutorial is unique in the following ways:
+Before diving into the first step of the OpenAPI tutorial here, read the [OpenAPI tutorial overview](pubapis_openapi_tutorial_overview.html) (if you haven't already) to get a sense of the scope of this tutorial. In brief, this OpenAPI tutorial is unique in the following ways:
 
 * This OpenAPI tutorial shows the spec in context of a simple weather API [introduced earlier](docapis_scenario_for_using_weather_api.html) in this course.
 * The OpenAPI tutorial shows how the spec information gets populated in [Swagger UI](https://github.com/swagger-api/swagger-ui).
@@ -54,59 +54,31 @@ The whole document (the object that contains these 8 root level objects) is call
 
 {% include random_ad.html %}
 
-As you work on your specification document, use the online [Swagger Editor](https://swagger.io/swagger-editor/). The Swagger Editor provides a split view &mdash; on the left where you write your spec code, and on the right you see a fully functional Swagger UI display. You can even submit requests from the Swagger UI display in this editor.
-
-Note that the Swagger Editor will validate your content in real-time, and you will probably see validation errors until you finish coding the specification document.
-
-I usually keep a local text file (using [Atom editor](https://atom.io/)) where I keep the specification document, but I work with the document's content in the online [Swagger Editor](https://swagger.io/swagger-editor/). When I'm done, I copy and save the content back to my local file. The Swagger Editor caches the content quite well (just don't clear your browser's cache).
-
-## Step 1: Add root-level objects
-
-Start your openapi.yml file by adding each of these root level objects:
-
-```yaml
-openapi:
-
-info:
-
-servers:
-
-paths:
-
-components:
-
-security:
-
-tags:
-
-externalDocs:
-```
-
-In the following sections, we'll proceed through each of these objects and document the [OpenWeatherMap current API](https://openweathermap.org/current). Tackling each root-level object individually helps reduce the complexity of the spec.
+As you work on your specification document, use the online [Swagger Editor](https://swagger.io/swagger-editor/). The Swagger Editor provides a split view: on the left where you write your spec code, and on the right you see a fully functional Swagger UI display. You can even submit requests from the Swagger UI display in this editor.
 
 {: .note}
-`components` is more of a storage object for schemas defined in other objects, but to avoid introducing too much at once, I'll wait until the [`components` tutorial](pubapis_openapi_step5_components_object.html) to fully explain how to reference a schema in one object and add a reference pointer to the full definition in `components`.
+The Swagger Editor will validate your content in real-time, and you will see validation errors until you finish coding the specification document. Don't worry about the errors unless you see X marks in the code you're working on.
+
+I usually keep a local text file (using [Atom editor](https://atom.io/)) where I keep the specification document offline, but I work with the document's content in the online [Swagger Editor](https://swagger.io/swagger-editor/). When I'm done working for the day, I copy and save the content back to my local file. Even so, the Swagger Editor caches the content quite well (just don't clear your browser's cache), so you probably won't need your local file as a backup.
+
+If you want to purchase a subscription to [SwaggerHub](pubapis_swaggerhub_smartbear.html), you could keep your spec content in the cloud (SwaggerHub has an editor almost identical to Swagger UI) associated with your personal login. SwaggerHub is the premium tooling for the open-source and free Swagger Editor.
 
 ## The openapi object
 
-In the [openapi](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#oasObject), indicate the version of the OpenAPI spec to validate against. The latest version is `3.0.1`.
+In the [openapi](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#oasObject) object, indicate the version of the OpenAPI spec to validate against. The latest version is `3.0.1`.
 
 ```yaml
 openapi: "3.0.1"
 ```
 
-3.0 was released in July 2017, and 3.0.1 was releasein December 2017. Much of the information and examples online, as well as supporting tools, often focus only on 2.0. Even if you're locked into publishing in a 2.0 tool or platform, you can code the spec in 3.0 and then use a tool such as [APIMATIC Transformer](https://apimatic.io/transformer) to convert the 3.0 spec to 2.0. You can also convert a spec from 2.0 to 3.0.
+3.0 was released in July 2017, and 3.0.1 was released in December 2017. Much of the information and examples online, as well as supporting tools, often focus only on 2.0. Even if you're locked into publishing in a 2.0 tool or platform, you can code the spec in 3.0 and then use a tool such as [APIMATIC Transformer](https://apimatic.io/transformer) to convert the 3.0 spec to 2.0. You can also convert a spec from 2.0 to 3.0.
 
-In the Swagger UI display, an "OAS3" tag appears to the right of the API name.
+## Appearance in Swagger UI
+
+There's not much to the `openapi` object, and right now there's not enough content for the spec to validate. But when you later render your specification document through the Swagger UI display, you'll see that an "OAS3" tag will appear to the right of the API name.
 
 <a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapitutorial_version.png" class="medium" style="border: 1px solid #dedede;"/></a>
 
-## Validator errors
+On the backend, Swagger UI uses the 3.0.1 version of the spec to validate your content.
 
-If your spec doesn't validate, the Swagger UI display often won't load the content or will show an error. For example, if you have an incorrect indentation in your YAML syntax, an error message might appear that indicates a `bad indentation of a mapping entry`. You can click the **Error** button in the lower right to see more information.
-
-<img src="images/validation-erorrs.png" class="medium"/>
-
-Clicking this error button takes you to `https://online.swagger.io/validator/debug?url=/learnapidoc/docs/rest_api_specifications/openapi_weather.yml`, showing you which document the online Swagger validator is attempting to validate and the error. You can also open up the JS console to get a little more debugging information (such as the column where the error occurs).
-
-The online Swagger Editor provides these messages in the UI, so you probably won't need to use Swagger UI's error validation messaging to troubleshoot errors.
+In the above screenshot, the "2.5" version refers to the version of the API here, not the version of the OpenAPI spec.

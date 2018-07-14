@@ -13,7 +13,7 @@ path1: /restapispecifications.html
 <img src="images/openapistep5.png"/>
 {% endif %}
 
-In the [step 4](pubapis_openapi_step4_paths_object.html), when we described the [`responses` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#responsesObject) object, we used a [`schema`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#schemaObject) object to describe the model for the request or response. The `schema` refers to the data structure (the fields, values, and hierarchy of the various objects and properties of a JSON or YAML object &mdash; see [What is a schema?](https://spacetelescope.github.io/understanding-json-schema/about.html#what-is-a-schema) for more details). It's common to use a reference pointer (`$ref`) for the `schema` object that points to more details in the `components` object.
+The `components` object is unique from the other objects in the OpenAPI specification. In `components`, you store re-usable definitions that might appear in multiple places in your specification document. In our API documentation scenario, we'll store details for both the `parameters` and `responses` object in `components`.
 
 {% if site.format == "web" %}
 * TOC
@@ -24,14 +24,14 @@ In the [step 4](pubapis_openapi_step4_paths_object.html), when we described the 
 
 {% include random_ad2.html %}
 
-Describing the schema of complex responses can be one of the more challenging aspects of the OpenAPI spec. Although you can define the schema directly in the `requestBody` or `responses` object, you typically don't list it there for two reasons:
+Describing the details of your parameters and describing the schema of complex responses can be the most  challenging aspects of the OpenAPI spec. Although you can define the parameters and responses directly in the `parameters` and `responses` objects, you typically don't list them there for two reasons:
 
-* You might want to re-use parts of the schema in other requests or responses. It's common to have the same object, such as `units` or `days`, appear in multiple places in an API. Through the `components` object, OpenAPI allows you to re-use these same definitions in multiple places.
-* You might not want to clutter up your `paths` object with too many request and response details, since the `paths` object is already somewhat complex with several levels of objects.
+* You might want to re-use parts of these definitions in other requests or responses. It's common to have the same parameter or response used in multiple places in an API. Through the `components` object, OpenAPI allows you to re-use these same definitions in multiple places.
+* You might not want to clutter up your `paths` object with too many parameter and response details, since the `paths` object is already somewhat complex with several levels of objects.
 
 Instead of listing the schema for your requests and responses in the `paths` object, for more complex schemas (or for schemas that are re-used in multiple operations or paths), you typically use a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#referenceObject) (referenced with `$ref`) that refers to a specific definition in the [`components` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#componentsObject). See [Using $ref](https://swagger.io/docs/specification/using-ref/) for more details on this standard JSON reference property.
 
-Think of the `components` object like an appendix where the re-usable details are provided. If multiple parts of your spec have the same schema, you point each of these references to the same object in your `components` object, and in so doing you single source the content. The `components` object can even be [stored in a separate file](http://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-8-splitting-specification-file/) if you have a large API and want to organize the information that way. (However, with multiple files, you wouldn't be able to use the online Swagger Editor to validate the content.)
+Think of the `components` object like a document appendix where the re-usable details are provided. If multiple parts of your spec have the same schema, you point each of these references to the same object in your `components` object, and in so doing you single source the content. The `components` object can even be [stored in a separate file](http://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-8-splitting-specification-file/) if you have a large API and want to organize the information that way. (However, with multiple files, you wouldn't be able to use the online Swagger Editor to validate the content.)
 
 ## Objects in components
 
@@ -47,15 +47,127 @@ You can store a lot of different re-usable objects in the `components` object. T
 * [`links`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#linkObject)
 * [`callbacks`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#callbackObject)
 
-The properties for each object inside `components` are the same as they are when used in other parts of the OpenAPI spec.
+The properties for each object inside `components` are the same as they are when used in other parts of the OpenAPI spec. You use a reference pointer (`$ref`) to point to more details in the `components` object. `$ref` stands for [`reference` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#referenceObject) and is part of JSON.
+
+## Re-using parameters across multiple paths
+
+For the parameters in the previous step, we listed all the details directly in the `parameters` object. To facilitate re-use of the same parameters in other paths, let's store the `parameters` content in `components`. The code below shows how to make these references:
+
+```yaml
+paths:
+  /weather:
+    get:
+      tags:
+      - Current Weather Data
+      summary: "Call current weather data for one location"
+      description: "Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations."
+      operationId: CurrentWeatherData
+      parameters:
+        - $ref: '#/components/parameters/q'
+        - $ref: '#/components/parameters/id'
+        - $ref: '#/components/parameters/lat'
+        - $ref: '#/components/parameters/lon'
+        - $ref: '#/components/parameters/zip'
+        - $ref: '#/components/parameters/units'
+        - $ref: '#/components/parameters/lang'
+        - $ref: '#/components/parameters/mode'
+
+      responses:
+        200:
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                title: Sample
+                type: object
+                properties:
+                  placeholder:
+                    type: string
+                    description: Placeholder description
+
+        404:
+          description: Not found response
+          content:
+            text/plain:
+              schema:
+                title: Weather not found
+                type: string
+                example: Not found
+
+components:
+
+  parameters:
+    q:
+      name: q
+      in: query
+      description: "**City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes."
+      schema:
+        type: string
+    id:
+      name: id
+      in: query
+      description: "**City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls.*"
+      schema:
+        type: string
+
+    lat:
+      name: lat
+      in: query
+      description: "**Latitude**. *Example: 35*. The latitude cordinate of the location of your interest. Must use with `lon`."
+      schema:
+        type: string
+
+    lon:
+      name: lon
+      in: query
+      description: "**Longitude**. *Example: 139*. Longitude cordinate of the location of your interest. Must use with `lat`."
+      schema:
+        type: string
+
+    zip:
+      name: zip
+      in: query
+      description: "**Zip code**. Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default."
+      schema:
+        type: string
+
+    units:
+      name: units
+      in: query
+      description: '**Units**. *Example: imperial*. Possible values: `metric`, `imperial`. When you do not use units parameter, format is `standard` by default.'
+      schema:
+        type: string
+        enum: [standard, metric, imperial]
+        default: "imperial"
+
+    lang:
+      name: lang
+      in: query
+      description: '**Language**. *Example: en*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - `ar`, Bulgarian - `bg`, Catalan - `ca`, Czech - `cz`, German - `de`, Greek - `el`, English - `en`, Persian (Farsi) - `fa`, Finnish - `fi`, French - `fr`, Galician - `gl`, Croatian - `hr`, Hungarian - `hu`, Italian - `it`, Japanese - `ja`, Korean - `kr`, Latvian - `la`, Lithuanian - `lt`, Macedonian - `mk`, Dutch - `nl`, Polish - `pl`, Portuguese - `pt`, Romanian - `ro`, Russian - `ru`, Swedish - `se`, Slovak - `sk`, Slovenian - `sl`, Spanish - `es`, Turkish - `tr`, Ukrainian - `ua`, Vietnamese - `vi`, Chinese Simplified - `zh_cn`, Chinese Traditional - `zh_tw`.'
+      schema:
+        type: string
+        enum: [ar, bg, ca, cz, de, el, en, fa, fi, fr, gl, hr, hu, it, ja, kr, la, lt, mk, nl, pl, pt, ro, ru, se, sk, sl, es, tr, ua, vi, zh_cn, zh_tw]
+        default: "en"
+
+    mode:
+      name: mode
+      in: query
+      description: "**Mode**. *Example: html*. Determines format of response. Possible values are `xml` and `html`. If mode parameter is empty the format is `json` by default."
+      schema:
+        type: string
+        enum: [json, xml, html]
+        default: "json"
+```
+
+Replace the existing `paths` object in your code in Swagger Editor with the above code sample, and include the new `components` object, and observe that the rendered display still looks the same.
 
 ## Re-using response objects {#reusing_objects}
 
-In the previous topic, I explained how to [re-use parameter definitions in components](pubapis_openapi_step4_paths_object.html#reusing_definitions), so I won't re-explain the approach. Here we'll cover how to re-use the schema definitions in the `responses` objects.
+In the [step 4](pubapis_openapi_step4_paths_object.html), when we described the [`responses` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#responsesObject) object, even with just a simple placeholder, we used a [`schema`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#schemaObject) object to describe the model for the request or response. The `schema` refers to the data structure (the fields, values, and hierarchy of the various objects and properties of a JSON or YAML object; see [What is a schema?](https://spacetelescope.github.io/understanding-json-schema/about.html#what-is-a-schema)).
 
 {% include random_ad.html %}
 
-Although we don't need to reuse the `weather` response in this exercise (because we're only documenting one endpoint), it'll be better to organize this schema definition under `components` anyway because it reduces the detail under the `paths` object. If you recall in the previous step ([OpenAPI tutorial step 4: The paths object](pubapis_openapi_step4_paths_object.html), the `responses` object for the `weather` endpoint looked like this:
+Let's dive deep into how to use the schema properties to document the `responses` object. We will also store this content in `components` so that it can be re-used in other parts of the specification document. If you recall in the previous step ([OpenAPI tutorial step 4: The paths object](pubapis_openapi_step4_paths_object.html), the `responses` object for the `weather` endpoint looked like this:
 
 ```yaml
 paths:
@@ -64,6 +176,50 @@ paths:
       parameters:
 
       ...
+
+      responses:
+        200:
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                title: Sample
+                type: object
+                properties:
+                  placeholder:
+                    type: string
+                    description: Placeholder description
+
+        404:
+          description: Not found response
+          content:
+            text/plain:
+              schema:
+                title: Weather not found
+                type: string
+                example: Not found
+```
+
+Now let's move the `schema` description for the `200` response into the `components` object:
+
+```yaml
+paths:
+  /weather:
+    get:
+      tags:
+      - Current Weather Data
+      summary: "Call current weather data for one location"
+      description: "Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations."
+      operationId: CurrentWeatherData
+      parameters:
+        - $ref: '#/components/parameters/q'
+        - $ref: '#/components/parameters/id'
+        - $ref: '#/components/parameters/lat'
+        - $ref: '#/components/parameters/lon'
+        - $ref: '#/components/parameters/zip'
+        - $ref: '#/components/parameters/units'
+        - $ref: '#/components/parameters/lang'
+        - $ref: '#/components/parameters/mode'
 
       responses:
         200:
@@ -82,10 +238,14 @@ paths:
                 example: Not found
 ```
 
-Then in `components/schemas`, we define the `200` schema.
+Then in `components/schemas`, we'll define the `200` schema.
 
-Before we describe the response in the `components` object, it might be helpful to review what the [`weather` response] from the OpenWeatherMap API looks like. The response contains multiple nested objects at various levels.
+Before we describe the response in the `components` object, it might be helpful to review what the `weather` response from the OpenWeatherMap API looks like. The response contains multiple nested objects at various levels.
 
+{% if site.format == "web" %}
+<button type="button" class="btn btn-info" onclick="$('#sampleblock').toggle( 'fast' )">View the Weather response &raquo;</button>
+<div id="sampleblock" markdown="block" class="expandedBox" aria-expanded="false" style="display: none;">
+<h3>Weather response</h3>
 
 ```json
 {
@@ -138,15 +298,112 @@ Before we describe the response in the `components` object, it might be helpful 
   "cod": 200
 }
 ```
+</div>
+
+{% elsif site.format == "pdf" or site.format == "kindle" %}
+
+```json
+{
+  "coord": {
+    "lon": 145.77,
+    "lat": -16.92
+  },
+  "weather": [
+    {
+      "id": 803,
+      "main": "Clouds",
+      "description": "broken clouds",
+      "icon": "04n"
+    }
+  ],
+  "base": "cmc stations",
+  "main": {
+    "temp": 293.25,
+    "pressure": 1019,
+    "humidity": 83,
+    "temp_min": 289.82,
+    "temp_max": 295.37,
+    "sea_level": 984,
+    "grnd_level": 990
+  },
+  "wind": {
+    "speed": 5.1,
+    "deg": 150
+  },
+  "clouds": {
+    "all": 75
+  },
+  "rain": {
+    "3h": 3
+  },
+  "snow": {
+    "3h": 6
+  },
+  "dt": 1435658272,
+  "sys": {
+    "type": 1,
+    "id": 8166,
+    "message": 0.0166,
+    "country": "AU",
+    "sunrise": 1435610796,
+    "sunset": 1435650870
+  },
+  "id": 2172797,
+  "name": "Cairns",
+  "cod": 200
+}
+```
+{% endif %}
 
 There are a couple of ways to go about describing this response. You could create one long description that contains all the hierarchy reflected. One challenge is that it's difficult to keep all the levels straight. With so many nested objects, it's dizzying and confusing. Additionally, it's easy to make mistakes. Worst of all, you can't re-use the individual objects. This undercuts one of the main reasons for storing this object in `components` in the first place.
 
 Another approach is to make each object its own entity in the `components`. Whenever an object contains an object, add a `$ref` value that points to the new object. This way objects remain shallow and you won't get lost in a sea of confusing sublevels.
 
-Here's the description of the `200` response for the `weather` endpoint:
+Here's the description of the `200` response for the `weather` endpoint. I included the `paths` tag to maintain some context:
+
+<span id="responses_with_components"><b>Responses object with components documentation:</b></span>
 
 ```yaml
+paths:
+  /weather:
+    get:
+      tags:
+      - Current Weather Data
+      summary: "Call current weather data for one location"
+      description: "Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations."
+      operationId: CurrentWeatherData
+      parameters:
+        - $ref: '#/components/parameters/q'
+        - $ref: '#/components/parameters/id'
+        - $ref: '#/components/parameters/lat'
+        - $ref: '#/components/parameters/lon'
+        - $ref: '#/components/parameters/zip'
+        - $ref: '#/components/parameters/units'
+        - $ref: '#/components/parameters/lang'
+        - $ref: '#/components/parameters/mode'
+
+      responses:
+        200:
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/200'
+        404:
+          description: Not found response
+          content:
+            text/plain:
+              schema:
+                title: Weather not found
+                type: string
+                example: Not found
+
 components:
+
+  parameters:
+    # not shown -- see previous section for details
+    ...
+
   schemas:
     200:
       title: Successful response
@@ -337,45 +594,10 @@ components:
           example: 1435650870
 ```
 
-As you can see, not only can you use `$ref` properties in other parts of your spec, you can use it within `components` too.
+I'll explain a bit more in the next sections how to describe the response. In looking at the above code, you may have noticed that not only can you use `$ref` properties in other parts of your spec, you can use it within `components` too.
 
-## Automatically generate the schema from JSON using Stoplight
-
-Describing a JSON response can be complicated and confusing. Fortunately, there's a somewhat easy workaround. Download [Stoplight](https://next.stoplight.io/). Use the **Generate JSON** feature to have Stoplight automatically create the OpenAPI schema description. Here's a short (silent) video showing how to do this:
-
-{% if site.format == "pdf" or site.format == "kindle" %}
-
-Go to [http://idratherbewriting.com/learnapidoc/pubapis_openapi_step5_components_object.html](http://idratherbewriting.com/learnapidoc/pubapis_openapi_step5_components_object.html) to view this content.
-
-{% elsif site.format == "web" %}
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/o8aTo6e0kCY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-{% endif %}
-
-The only catch is that Stoplight uses OpenAPI 2.0, not 3.0. You might need to use [API Transformer](https://apimatic.io/transformer) to convert the 2.0 schema output to 3.0. Even so, this approach can save you a lot of time.
-
-## Automating the examples
-
-Notice how the schema definition includes an `example` property for element? Swagger UI will take this `example` and use it to automatically build a full code sample. It's one of the neat things about Swagger UI. This wy, your schema documentation and example remain consistent.
-
-## Appearance of components in Swagger UI
-
-By default, Swagger UI displays each object in `components` in a section called `Models` at the end of your Swagger UI display. If you consolidate all schemas into a single object, without using the `$ref` property to point to new objects, you will see just one object in Models. If you split out the objects, then you see each object listed separately, including the object that contains all the references.
-
-Because I want to re-use objects, I'm going define each object in `components` separately. As a result, the Models section looks like this:
-
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/swaggerui_models_broken_out.png" class="medium" /></a>
-
-## The Models section -- why it exists, how to hide it
-
-The Models section is now in the latest version of Swagger UI. I'm not really sure why the Models section appears at all, actually. Apparently, it was added by popular request because the online Swagger Editor showed the display, and many users asked for it to be incorporated into Swagger UI.
-
-You don't need this Models section in Swagger UI because both the request and response sections of Swagger UI provide a "Model" link that lets the user toggle to this view. For example:
-
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/models_options_in_responses.png" class="medium" /></a>
-
-You might confuse users by including the Models section. To hide Models, simply add the `    defaultModelsExpandDepth: -1` parameter in your Swagger UI project.
+{: .tip}
+Notice how the schema definition includes an `example` property for element? Swagger UI will take this `example` and use it to automatically build a full code sample in the Responses section in the Swagger UI output. Thus, you don't need big chunks of code for the sample responses in your spec. Instead, these sample responses get built automatically from the schema. It's one of the neat things about Swagger UI. This way, your schema documentation and example remain consistent.
 
 ## Describing a schema
 
@@ -385,7 +607,7 @@ In other words, you aren't merely using terms defined by the OpenAPI spec to des
 
 The OpenAPI specification doesn't attempt to document how to model JSON schemas. This would be redundant with what's already documented in the [JSON Schema](http://json-schema.org/) site, and outside of the scope of the OpenAPI spec. Therefore you might need to consult [JSON Schema](http://json-schema.org) for more details. (One other helpful tutorial is [Advanced Data](http://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-4-advanced-data-modeling/) from API Handyman.)
 
-To describe your JSON objects, you might use the following keywords:
+To describe your JSON objects, you might use the following identifiers:
 
 * `title`
 * `multipleOf`
@@ -429,11 +651,64 @@ A number of [data types](https://github.com/OAI/OpenAPI-Specification/blob/maste
 * `dateTime`
 * `password`
 
-I suggest you start by looking in the OpenAPI's [schema object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#schemaObject), and then consult the [JSON Schema](https://tools.ietf.org/html/draft-wright-json-schema-00) if something isn't covered.
+When you start documenting your own schema, start by looking in the OpenAPI's [schema object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#schemaObject), and then consult the [JSON Schema](https://tools.ietf.org/html/draft-wright-json-schema-00) if something isn't covered.
 
 Additionally, look at some example schemas. You can view [3.0 examples here](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v3.0). I usually find a spec that resembles what I'm trying to represent and mimic the same properties and structure.
 
-The `schema` object in 3.0 differs slightly from the schema object in 2.0 &mdash; see this [post on Nordic APIs](https://nordicapis.com/whats-new-in-openapi-3-0/#jsonandotherschema) for some details on what's new. However, example schemas from [2.0 specs](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0) (which are a lot more abundant online) would probably also be helpful as long as you just look at the schema definitions (and not the rest of the spec). (A lot has changed from 2.0 to 3.0 in the spec.)
+The `schema` object in 3.0 differs slightly from the schema object in 2.0 &mdash; see this [post on Nordic APIs](https://nordicapis.com/whats-new-in-openapi-3-0/#jsonandotherschema) for some details on what's new. However, example schemas from [2.0 specs](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0) (which are a lot more abundant online) would probably also be helpful as long as you just look at the schema definitions (and not the rest of the spec).
+
+## A way to cheat -- automatically generate the schema from JSON using Stoplight
+
+Describing a JSON response can be complicated and confusing. Fortunately, there's a somewhat easy workaround. To be honest, this is the approach I use when I'm documenting JSON responses. Download [Stoplight](https://next.stoplight.io/) and use the **Generate JSON** feature to have Stoplight automatically create the OpenAPI schema description. Here's a short (silent) video showing how to do this:
+
+{% if site.format == "pdf" or site.format == "kindle" %}
+
+Go to [http://idratherbewriting.com/learnapidoc/pubapis_openapi_step5_components_object.html](http://idratherbewriting.com/learnapidoc/pubapis_openapi_step5_components_object.html) to view this content.
+
+{% elsif site.format == "web" %}
+
+<iframe width="640" height="385" src="https://www.youtube.com/embed/0IOWY0Hj3Xc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+{% endif %}
+
+Basically, you copy the JSON response you want to document into the Stoplight Editor. Then you click **Generate JSON**. Then you go into the code view and copy the JSON. Then convert the JSON to YAML using an [online converter](https://www.json2yaml.com/). For more details, see [Stoplight — visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html).
+
+The only catch is that Stoplight uses OpenAPI 2.0, not 3.0. You might need to use [API Transformer](https://apimatic.io/transformer) to convert the 2.0 schema output to 3.0. Even so, this approach can save you a lot of time.
+
+## The appearance in Swagger UI
+
+Copy the lengthy code sample above under [Responses object with components documentation](#responses_with_components) and paste it into Swagger Editor, adding to what's already there. Since you already have a `components` object in Swagger Editor, you need to merge the two so that there's just one instance of `components`:
+
+```
+components:
+  parameters:
+  ...
+  schemas:
+  ...
+```
+
+{% include course_image.html filename="step5_bswaggeruiprogress" ext_print="png" ext_web="png" alt="Responses object defined in components" caption="Responses object defined in components" %}
+
+In the Response section, note how the `example` definitions have been dynamically pulled together from the schema to show a sample response.
+
+Also, click the **Model** link to see how the descriptions of each element appear in an expandable/collapsible way:
+
+{% include course_image.html size="medium" filename="models_options_in_responses" ext_print="png" ext_web="png" alt="Descriptions appear in the Model" caption="Descriptions appear in the Model" %}
+
+
+## The Models section -- why it exists, how to hide it
+
+You'll also notice a "Models" section at the end. By default, Swagger UI displays each object in `components` in a section called "Models" at the end of your Swagger UI display. If you consolidate all schemas into a single object, without using the `$ref` property to point to new objects, you will see just one object in Models. If you split out the objects, then you see each object listed separately, including the object that contains all the references.
+
+Because I want to re-use objects, I'm going define each object in `components` separately. As a result, the Models section looks like this:
+
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/swaggerui_models_broken_out.png" class="medium" /></a>
+
+The Models section is now in the latest version of Swagger UI. I'm not really sure why the Models section appears at all, actually. Apparently, it was added by popular request because the online Swagger Editor showed the display, and many users asked for it to be incorporated into Swagger UI.
+
+You don't need this Models section in Swagger UI because both the request and response sections of Swagger UI provide a "Model" link that lets the user toggle to this view. For example:
+
+You might confuse users by including the Models section. To hide Models, add the parameter `defaultModelsExpandDepth: -1` parameter in your Swagger UI project. I provide a [Swagger UI tutorial](pubapis_swagger.html#create-a-swagger-ui-display-with-an-openapi-spec-document) in an upcoming section in this course. See the [Swagger UI parameters documentation](https://github.com/swagger-api/swagger-ui/blob/master/docs/usage/configuration.md#parameters) for more details on how to configure Swagger UI.
 
 ## Security definitions
 

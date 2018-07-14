@@ -24,21 +24,22 @@ The [info object](https://github.com/OAI/OpenAPI-Specification/blob/master/versi
 
 {% include random_ad.html %}
 
-Here's an example:
+Here's an example of the `info` object and its properties:
 
 ```yaml
+openapi: "3.0.1"
 info:
-  title: OpenWeatherMap API
-  description: 'Get current weather, daily forecast for 16 days, and 3-hourly forecast 5 days for your city. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location stations. Data is available in JSON, XML, or HTML format. **Note**: This sample Swagger file covers the `current` endpoint only from the OpenWeatherMap API. <br/><br/> **Note**: All parameters are optional, but you must select at least one parameter. Calling the API by city ID (using the `id` parameter) will provide the most precise location results.'
-  version: '2.5'
-  termsOfService: https://openweathermap.org/terms
+  title: "OpenWeatherMap API"
+  description: "Get current weather, daily forecast for 16 days, and 3-hourly forecast 5 days for your city. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location stations. Data is available in JSON, XML, or HTML format. **Note**: This sample Swagger file covers the `current` endpoint only from the OpenWeatherMap API. <br/><br/> **Note**: All parameters are optional, but you must select at least one parameter. Calling the API by city ID (using the `id` parameter) will provide the most precise location results."
+  version: "2.5"
+  termsOfService: "https://openweathermap.org/terms"
   contact:
-    name: OpenWeatherMap API
-    url: https://openweathermap.org/api
-    #email: some_email@gmail.com
+    name: "OpenWeatherMap API"
+    url: "https://openweathermap.org/api"
+    email: "some_email@gmail.com"
   license:
     name: "CC Attribution-ShareAlike 4.0 (CC BY-SA 4.0)"
-    url: https://openweathermap.org/price
+    url: "https://openweathermap.org/price"
 ```
 
 {: .tip}
@@ -46,13 +47,15 @@ In any `description` property, you can use [CommonMark Markdown](http://spec.com
 
 {% include random_ad2.html %}
 
-As you write content in `description` properties, note that colons are problematic in YAML because they signify new levels. Either escape colons with a backslash or enclose the `description` value in quotation marks.
+As you write content in `description` properties, note that colons are problematic in YAML because they signify new levels. Either escape colons with a backslash or enclose the `description` value in quotation marks. You can use single or double quotation marks for the property values. (If you enclose the values in quotation marks, syntax highlighters can display better color coding between the properties and values.)
 
 ## Appearance in Swagger UI
 
+At this point, go ahead and paste this above code along with the `info` object from the previous step into the [Swagger Editor](https://editor.swagger.io/). You'll see some rendering errors (because the specification document doesn't yet have any `path` objects), but the content will still appear. (Just hide the errors section at the top for now).
+
 In the Swagger UI display, the `info` object's information appears at the top:
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapitutorial_info_object.png" class="medium" /></a>
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/step2swaggeruiprogress.png" class="medium" /></a>
 
 {: .tip}
 In the `description` property, you might want to provide some basic instructions to users on how to use Swagger UI. If there's a test account they should use, you can provide the information they need in this space.

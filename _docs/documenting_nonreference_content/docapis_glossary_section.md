@@ -18,7 +18,7 @@ The glossary defines all the terms that might be unique to your company or API. 
 
 Unlike most other professional writing disciplines, tech docs are notorious for the amount of specialized terms in their content. Not only do we have unique terms related to our products, industry jargon and company-specific terms make their way into docs, driving up their complexity.
 
-API evangelist Kim Lane recently noted his frustration with an API's language when he encountered an undefined acronym &mdash; "DEG". Lane explains,
+API evangelist Kin Lane recently noted his frustration with an API's language when he encountered an undefined acronym &mdash; "DEG". Lane explains,
 
 > I came across a set of API resources for managing a DEG the other day. You could add, updated, delete and get DEGs. You can also pull analytics, history, and other elements of a DEG. I spent about 10-15 minutes looking around their developer portal, documentation, and even Googling, but never could figure out what a DEG was. Nowhere in their documentation did they ever tell consumers what a DEG was, you just had to be in the know I guess. The API designer (if that occurred) and developer had never stopped to consider that maybe someone would stumble across their very public API and not know what a DEG was. ([Using Plain Language In Your API Paths](https://apievangelist.com/2018/07/09/use-plain-language-in-api-paths/))
 
