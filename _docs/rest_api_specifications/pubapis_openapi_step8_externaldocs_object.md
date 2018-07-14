@@ -56,7 +56,7 @@ Now that we've completed all the steps in the tutorial, we're finished building 
 
 Here's the specification document rendered by Swagger UI:
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/swagger_full_result.png" class="medium" /></a
+<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/swagger_full_result.png" class="medium" /></a>
 
 Try executing a request in the version above and look at the result. Select **Imperial** to get the temperature in Farenheit degrees. In the result, locate the `temp` value in the `main` object. Then take a break by going outside to evaluate whether the temperature outside matches the response.
 
