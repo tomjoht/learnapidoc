@@ -30,17 +30,17 @@ REST APIs can use a number of different security approaches to authorize request
 * OAuth 2.0
 * Open ID Connect
 
-In this tutorial, I'll explain the API key method, as it's the most common and it's what I'm most familiar with. If your API uses [OAuth 2.0](docapis_more_about_authorization.html#oauth-20) or another method, you'll need to read the [Security Scheme information](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#security-scheme-object) for details on how to configure it. However, all the security methods largely follow the same pattern.
+In this step of the OpenAPI tutorial, we'll use the API key approach, since this is what the OpenWeatherMap API uses. If your API uses [OAuth 2.0](docapis_more_about_authorization.html#oauth-20) or another method, you'll need to read the [Security Scheme information](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#security-scheme-object) for details on how to configure it. However, all the security methods largely follow the same pattern.
 
 {% include random_ad.html %}
 
 ## API key authorization
 
-The sample OpenWeatherMap API we're using in this course uses an API key passed in the URL's query string (rather than the header). If you submit a request without the API key in the query string (or without a valid API key), the server denies the request.
+The sample OpenWeatherMap API we're using in this course uses an API key passed in the URL's query string (rather than the header). If you submit a request without the API key in the query string (or without a valid API key), the server denies the request. For details on the OpenWeatherMap's authorization model, see [How to start](https://openweathermap.org/appid#use).
 
 ## Security object
 
-At the root level of your OpenAPI document, add a `security` object that defines the global method we're using for security:
+At the root level of your OpenAPI document, we add a `security` object that defines the global method for our security:
 
 ```yaml
 security:
@@ -77,7 +77,7 @@ components:
       in: query
 ```
 
-Properties you can use in the `securitySchemes` object include the following:
+Properties you can use for each item in the `securitySchemes` object include the following:
 
 * `type`: The type of authorization &mdash; `apiKey`, `http`, `oauth2`, or `openIdConnect`.
 * `description`: A description of your security method. In Swagger UI, this description appears in the Authorization modal (see screenshot below). CommonMark Markdown is allowed.
@@ -88,11 +88,41 @@ Properties you can use in the `securitySchemes` object include the following:
 * [`flows`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#oauthFlowsObject) (object): Used with `oauth2` type authorization.
 * `openIdConnectUrl`: Used with `openIdConnect` type authorization.
 
-## Swagger UI appearance
-
 {% include random_ad2.html %}
 
-In the Swagger UI, you see the `description` and other security details in the Authorization modal (which appears when you click the Authorization button):
+## Appearance in Swagger UI
+
+{% include activity.html %}
+
+In Swagger Editor, insert the following at the root level:
+
+```yaml
+security:
+- app_id: []
+```
+
+And insert the `securitySchemes` object into `components` (indented at the same level as `parameters` and `responses`):
+
+```yaml
+components:
+  parameters:
+  ...
+  responses:
+  ...
+
+  securitySchemes:
+    app_id:
+      type: apiKey
+      description: API key to authorize requests. If you don't have an OpenWeatherMap API key, use `fd4698c940c6d1da602a70ac34f0b147`.
+      name: appid
+      in: query
+```
+
+You'll see an "Authorize" button appear in the Swagger UI display.
+
+{% include course_image.html filename="step6swaggeruiprogress" ext_print="png" ext_web="png" alt="Adding security information into the spec" caption="Adding security information into the spec" %}
+
+When you click the Authorization button, the `description` and other security details appear:
 
 <a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapitutorial_securityauth.png" class="medium"/></a>
 
@@ -100,16 +130,36 @@ After users enter an API key and clicks **Authorize**, the authorization method 
 
 ## Checking to see if authorization works
 
-When you submit a request, Swagger UI shows you the curl request that is submitted. For example, after executing a weather request, the curl is as follows:
+{% include activity.html %}
+
+Now that we've added authorization, let's test it out. In the Swagger Editor (the right pane), click the **Authorize** button, paste the sample API key shown in the description into the **Value** field and click **Authorize**. Then click **Close** to close the authorization modal.
+
+Then in the Current Weather Data section, expand the **GET weather** endpoint and click **Try it out**. In the **zip** field, enter your zip code and country abbreviation (`e.g., 95050,us`), and then click **Execute**.
+
+When you execute the request, Swagger UI shows you the [curl request]((docapis_make_curl_call.html)) that is submitted. For example, after executing a weather request, the curl is as follows:
 
 ```bash
-curl -X GET "http://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
+curl -X GET "http://api.openweathermap.org/data/2.5/weather?zip=95050&units=imperial&lang=en&mode=json&appid=fd4698c940c6d1da602a70ac34f0b147" -H "accept: application/json"
 ```
 
-The `&appid=fd4698c940c6d1da602a70ac34f0b147"` indicates that the API key is being included in the query string. (For more on curl, see [Make a curl call](docapis_make_curl_call.html).)
+The `&appid=fd4698c940c6d1da602a70ac34f0b147"` indicates that the API key is being included in the query string, so the request will be authorized.
+
+However, in this sample scenario, OpenWeatherMap doesn't seem to allow requests from Swagger Editor, so you'll see "TypeError: Failed to fetch" as the response.
+
+If you copy the curl submitted and paste it into the command line, you'll see a successful response:
+
+{% include course_image.html size="medium" border="" filename="curlrequestopenapiswagger" ext_print="png" ext_web="png" alt="Successful curl response" caption="Successful curl response" %}
+
+With the successful message from the command line, you know that Swagger is submitting a successful request but the API server is rejecting it. See the next section for Troubleshooting tips.
 
 ## Troubleshooting issues
+
+**CORS issues:**
 
 If you have security correctly configured but the requests are being rejected, it could be due to a CORS (cross-origin resource sharing) issue. CORS is a security measure that websites implement to make sure other scripts and processes cannot take their content through requests from remote servers. See [CORS Support](https://github.com/swagger-api/swagger-ui#cors-support) in Swagger UI's documentation for details.
 
 If the requests aren't working, open your browser's JavaScript console (in Chrome, View > Developer > Javascript Console) when you make the request and see if the error relates to cross-origin requests. If so, ask your developers to enable CORS on the endpoints.
+
+**Host URL issues:**
+
+Another reason requests might be rejected is due to the host from your test server. Some APIs (like Aeris Weather) require you to create an App ID that's based on the host URL where you'll be executing requests. If the host URL you registered is `http://mysite.com` but you're submitting the test from `https://editor.swagger.io/`, the API server will reject the requests.

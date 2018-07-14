@@ -31,9 +31,17 @@ externalDocs:
   url: https://openweathermap.org/api
 ```
 
-In the Swagger UI, this link appears after the API description along with other info about the API.
+Note that this documentation should relate to the API as a whole. To link a specific parameter to more documentation, you can add an `externalDocs` object to the operation object, as noted in [Operation objects](pubapis_openapi_step4_paths_object.html#operation-objects) section in Step 4 with paths.
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapi_tutorial_externaldocs.png" alt="externalDocs object"/></a>
+## Appearance in Swagger UI
+
+{% include activity.html %}
+
+Add the above code to the root level of your OpenAPI document in Swagger UI.
+
+When you do, in the Swagger UI, a link appears after the API description along with other info about the API:
+
+{% include course_image.html filename="step8swaggerprogress" ext_print="png" ext_web="png" alt="External documentation link" caption="External documentation link" %}
 
 {: .tip}
 See the related topic, [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html) for tips on how to integrate your Swagger UI output into your regular documentation.
@@ -42,12 +50,15 @@ See the related topic, [Integrating Swagger UI with the rest of your docs](pubap
 
 ## Seeing the finished result
 
-Now that we've completed all the steps in the tutorial, we're finished building our OpenAPI document. You can see the end result here: <a href="http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_weather.yml">docs/rest_api_specifications/openapi_weather.yml</a>.
+{% include activity.html %}
 
-Here's the specification document embedded in Swagger UI:
+Now that we've completed all the steps in the tutorial, we're finished building our OpenAPI specification document. You can see the complete specification document here: <a href="http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweeathermap.yml">docs/rest_api_specifications/openapi_openweeathermap.yml</a>.
+
+Here's the specification document rendered by Swagger UI:
 
 <a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/swagger_full_result.png" class="medium" /></a>
 
+{: .tip}
 You can actually insert any valid path to an OpenAPI specification document into the "Explore" box in Swagger UI (assuming it's using a version that supports your version of the spec), and it will display the content.
 
 {% include random_ad.html %}

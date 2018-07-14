@@ -22,8 +22,6 @@ The [info object](https://github.com/OAI/OpenAPI-Specification/blob/master/versi
 
 ## Sample info object
 
-{% include random_ad.html %}
-
 Here's an example of the `info` object and its properties:
 
 ```yaml
@@ -49,9 +47,13 @@ In any `description` property, you can use [CommonMark Markdown](http://spec.com
 
 As you write content in `description` properties, note that colons are problematic in YAML because they signify new levels. Either escape colons with a backslash or enclose the `description` value in quotation marks. You can use single or double quotation marks for the property values. (If you enclose the values in quotation marks, syntax highlighters can display better color coding between the properties and values.)
 
+{% include random_ad.html %}
+
 ## Appearance in Swagger UI
 
-At this point, go ahead and paste this above code along with the `info` object from the previous step into the [Swagger Editor](https://editor.swagger.io/). You'll see some rendering errors (because the specification document doesn't yet have any `path` objects), but the content will still appear. (Just hide the errors section at the top for now).
+{% include activity.html %}
+
+At this point, go ahead and paste this above code along with the `openapi` object from the previous step into the [Swagger Editor](https://editor.swagger.io/). You'll see some rendering errors (because the specification document doesn't yet have any `path` objects), but the content will still appear. (Just hide the errors section at the top for now).
 
 In the Swagger UI display, the `info` object's information appears at the top:
 

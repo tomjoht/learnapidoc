@@ -65,11 +65,17 @@ If you want to purchase a subscription to [SwaggerHub](pubapis_swaggerhub_smartb
 
 ## The openapi object
 
-In the [openapi](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#oasObject) object, indicate the version of the OpenAPI spec to validate against. The latest version is `3.0.1`.
+{% include activity.html %}
+
+Go to the [Swagger Editor](https://editor.swagger.io/) and go to **File > Clear editor**. Keep this tab open throughout the OpenAPI tutorial, as you'll be adding to your specification document with each step.
+
+Add the first root-level property for the specification document: `openapi`. In the [openapi](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#oasObject) object, indicate the version of the OpenAPI spec to validate against. The latest version is `3.0.1`.
 
 ```yaml
 openapi: "3.0.1"
 ```
+
+Until you add more information in here, you'll see error messages and nots such as "No operations defined in spec!" That's okay &mdash; in the next step you'll start seeing more info.
 
 3.0 was released in July 2017, and 3.0.1 was released in December 2017. Much of the information and examples online, as well as supporting tools, often focus only on 2.0. Even if you're locked into publishing in a 2.0 tool or platform, you can code the spec in 3.0 and then use a tool such as [APIMATIC Transformer](https://apimatic.io/transformer) to convert the 3.0 spec to 2.0. You can also convert a spec from 2.0 to 3.0.
 

@@ -61,6 +61,8 @@ See ["Overriding Servers"](https://swagger.io/docs/specification/api-host-and-ba
 
 ## Appearance in Swagger UI
 
+{% include activity.html %}
+
 Paste the `servers` object (the first code sample above showing just one `url`) into your Swagger Editor, adding to the code you already have there. Swagger UI will look as follows.
 
 {% include course_image.html filename="step3swaggeruiprogress" ext_print="png" ext_web="png" alt="Progress in Swagger UI with servers object" caption="Progress in Swagger UI with servers object" %}

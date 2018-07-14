@@ -41,7 +41,7 @@ We just have one tag, but you could have as many as you want (if you have a lot 
 
 The `tags` object at the root level should comprehensively list all tags used within the operation objects at each path. Then in each path, you list the tag you want that path grouped under.
 
-For example, in the operations object for the `/current` path, we used the same tag `Weather`:
+For example, in the operations object for the `/current` path, we already used the same tag `Current Weather Data`:
 
 ```yaml
 paths:
@@ -51,9 +51,23 @@ paths:
       - Current Weather Data
 ```
 
-## How tags appear in Swagger UI
+## Appearance in Swagger UI
 
-All paths that have the same tag are grouped together in the display. For example, paths that have the `Weather` tag will be grouped together under the title `Weather`. Each group title is a collapsible/expandable toggle.
+{% include activity.html %}
+
+Add the following to the root level of your OpenAPI document in Swagger Editor:
+
+```yaml
+tags:
+  - name: Current Weather Data
+    description: "Get current weather details"
+```
+
+Observe how the description appears next to the collapsed Current Weather Data section.
+
+{% include course_image.html filename="step7swaggeruiprogress" ext_print="png" ext_web="png" alt="Tags defined at the root level" caption="Tags defined at the root level" %}
+
+All paths that have the same tag are grouped together in the display. For example, paths that have the `Current Weather Data` tag will be grouped together under the title `Current Weather Data`. Each group title is a collapsible/expandable toggle.
 
 <a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapitutorial_tags.png" class="medium" /></a>
 
@@ -61,4 +75,4 @@ The order of the tags in the `tags` object at the root level determines their or
 
 {% include random_ad2.html %}
 
-In our sample OpenAPI spec, tags don't seem all that necessary since we're just documenting one path/endpoint. (Additionally, I configured the Swagger UI display to expand the section by default.) But imagine if you had a robust API with 30+ paths to describe. You would certainly want to organize the paths into logical groups for users to navigate.
+In our sample OpenAPI spec, tags don't seem all that necessary since we're just documenting one path/endpoint. (Additionally, I configured the [Swagger UI demo](pubapis_swagger_demo.html) to expand the section by default.) But imagine if you had a robust API with 30+ paths to describe. You would certainly want to organize the paths into logical groups for users to navigate.

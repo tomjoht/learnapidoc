@@ -253,6 +253,8 @@ paths:
 
 ## Appearance in Swagger UI
 
+{% include activity.html %}
+
 Paste the above code into Swagger UI (adding to the code you added in the previous tutorials). Swagger UI displays the `paths` object like this:
 
 <a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/step5_aswaggeruiprogress.png" class="medium" /></a>
@@ -266,7 +268,7 @@ Note that in Swagger UI's display, each path is collapsed by default. You can se
 {: .tip}
 This `docExpansion` parameter is for Swagger UI and isn't part of the OpenAPI spec. Swagger UI has more than [20 different parameters](https://github.com/swagger-api/swagger-ui#parameters) of its own that control its display. For example, if you don't want the `Models` section to appear, add the parameter `defaultModelsExpandDepth: -1,` in your Swagger UI file.
 
-## Parameter dependencies
+## Note about parameter dependencies
 
 The OpenAPI specification doesn't allow you to declare dependencies with parameters, or mutually exclusive parameters. According to the Swagger OpenAPI documentation,
 
