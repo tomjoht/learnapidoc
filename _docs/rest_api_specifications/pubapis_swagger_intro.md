@@ -100,7 +100,18 @@ So far I've been talking about creating the OpenAPI specification document as if
 
 This developer-centric approach may make sense if you have a large number of APIs or if it's not practical for technical writers to create this documentation. If this is the case, make sure you get access to the source code to make edits to the annotations. Otherwise, your developers will be writing your docs (which can be good but often has poor results).
 
-Swagger offers a variety of libraries that you can add to your programming code to generate the specification document. These libraries are considered part of the [Swagger Codegen](https://swagger.io/swagger-codegen/) project. For more information, see [Comparison of Automatic API Code Generation Tools For Swagger](https://apievangelist.com/2015/06/06/comparison-of-automatic-api-code-generation-tools-for-swagger/) by API Evangelist. Other tools such as [REST United](http://restunited.com/), [Restlet Studio](http://studio.restlet.com/), [APIMATIC](https://apimatic.io/) can also be used.
+Swagger offers a variety of libraries that you can add to your programming code to generate the specification document. These libraries are considered part of the [Swagger Codegen](https://swagger.io/swagger-codegen/) project. For more information, see [Comparison of Automatic API Code Generation Tools For Swagger](https://apievangelist.com/2015/06/06/comparison-of-automatic-api-code-generation-tools-for-swagger/) by API Evangelist. For additional tools and libraries, see [Swagger services and tools](http://swagger.io/open-source-integrations/) and [Open Source Integrations](https://swagger.io/open-source-integrations/).
+
+The annotation methods for Swagger doc blocks vary based on the programming language. For example, here's a [tutorial on annotating code with Swagger for Scalatra](http://www.infoq.com/articles/swagger-scalatra). 
+
+## Auto-generating the Swagger file from code annotations
+
+Instead of coding the Swagger file by hand, you can also auto-generate it from annotations in your programming code. There are many Swagger libraries for integrating with different code bases. These Swagger libraries then parse the annotations that developers add and generate the same Swagger file that you produced manually using the earlier steps.
+
+By integrating Swagger into the code, you allow developers to easily write documentation, make sure new features are always documented, and keep the documentation more current.
+
+
+
 
 These libraries, specific to your programming language, will parse through your code's annotations and generate an OpenAPI specification document. Someone has to know exactly what annotations to add and how to add them (the process isn't too unlike Javadoc's comments and annotations). Then someone has to write content for each of the annotation's values (describing the endpoint, the parameters, and so on).
 

@@ -22,17 +22,6 @@ For step-by-step tutorial on creating an OpenAPI specification document, see the
 {:toc}
 {% endif %}
 
-## Terminology notes
-
-First, let's clarify a few terms:
-
-* [Swagger](https://swagger.io/) was the original name of the spec, but the spec was later changed to [OpenAPI](https://github.com/OAI/OpenAPI-Specification/) to reinforce the open, non-proprietary nature of the standard. People sometimes refer to both names interchangeably (especially on older web pages), but "OpenAPI" is how the spec should be referred to. For more details, see [What Is the Difference Between Swagger and OpenAPI?](https://swagger.io/difference-between-swagger-and-openapi/).
-* The OpenAPI spec is driven by the [OpenAPI initiative](https://www.openapis.org/), backed by the Linux Foundation and steered by [many companies and organizations](https://www.openapis.org/membership/members). The Swagger YAML file that you create to describe your API is called the "OpenAPI specification document."
-* Swagger refers to API tooling that around the OpenAPI spec. Some of these tools include [Swagger Editor](https://swagger.io/swagger-editor/), [Swagger UI](https://swagger.io/swagger-ui/), [Swagger Codegen](https://swagger.io/swagger-codegen/), [SwaggerHub](https://app.swaggerhub.com/home), and [others](https://swagger.io/tools/). These tools are managed by [Smartbear](https://smartbear.com/).
-* [SwaggerHub](https://app.swaggerhub.com/home) is the more fully featured, commercial version of the open-source Swagger UI. See [Swagger UI on Swagger.io](https://swagger.io/download-swagger-ui/) for a feature comparison.
-
-For other terms, see the [API Glossary](api-glossary.html).
-
 ## Swagger UI overview
 
 Swagger UI is one of the most popular tools for generating interactive documentation from your OpenAPI document. Swagger UI generates an interactive API console for users to quickly learn about and try the API. Additionally, Swagger UI is an actively managed project (with an Apache 2.0 license) that supports the latest version of the OpenAPI spec (3.0) and integrates with other Swagger tools.
@@ -40,6 +29,49 @@ Swagger UI is one of the most popular tools for generating interactive documenta
 In the following tutorial, I'll show you how to Swagger UI works and how to integrate an OpenAPI specification document into it.
 
 {% include random_ad2.html %}
+
+Before we dive into Swagger, it might help to clarify some key terms.
+
+{% if site.format == "web" %}
+<button type="button" class="btn btn-info" onclick="$('#sampleblock').toggle( 'fast' )">Key terms &raquo;</button>
+<div id="sampleblock" markdown="block" class="expandedBox" aria-expanded="false" style="display: none;">
+<h3>Key terms</h3>
+
+Swagger
+: Refers to API tooling that around the OpenAPI spec. Some of these tools include [Swagger Editor](https://swagger.io/swagger-editor/), [Swagger UI](https://swagger.io/swagger-ui/), [Swagger Codegen](https://swagger.io/swagger-codegen/), [SwaggerHub](https://app.swaggerhub.com/home), and [others](https://swagger.io/tools/). These tools are managed by [Smartbear](https://smartbear.com/). For more tools, see [Swagger Tools](https://swagger.io/tools/). "Swagger" was the original name of the OpenAPI spec, but the name was later changed to [OpenAPI](https://github.com/OAI/OpenAPI-Specification/) to reinforce the open, non-proprietary nature of the standard. People sometimes refer to both names interchangeably (especially on older web pages), but "OpenAPI" is how the spec should be referred to. (See [What Is the Difference Between Swagger and OpenAPI?](https://swagger.io/difference-between-swagger-and-openapi/).)
+
+OpenAPI
+: Refers to the name of the specification. The OpenAPI specification is driven by the [OpenAPI initiative](https://www.openapis.org/), backed by the Linux Foundation and steered by [many companies and organizations](https://www.openapis.org/membership/members). The YAML or JSON file that you create to describe your API following the OpenAPI specification is called the "OpenAPI specification document."
+
+Swagger Editor
+: An online editor that validates your OpenAPI document against the rules of the OpenAPI specification. The Swagger Editor will flag errors and give you formatting tips. See [Swagger Editor](http://editor.swagger.io/#/).
+
+Swagger UI
+: An open-source web framework ([on GitHub](https://github.com/swagger-api/swagger-ui)) that parses an OpenAPI specification document and generates an interactive documentation website. This is the tool that transforms your spec into the [Petstore-like site](http://petstore.swagger.io/).
+
+Swagger Codegen
+: Tools that general client SDK code for a lot of different platforms (such as Java, JavaScript, Scala, Python, PHP, Ruby, Scala, and more). The client SDK code helps developers integrate your API on a specific platform and provides for more robust implementations that might include more scaling, threading, and other necessary code. In general, SDKs are toolkits for implementing the requests made with an API. Swagger Codegen generates the client SDKs in nearly every programming language. See [Swagger-codegen](https://github.com/swagger-api/swagger-codegen) for more details.
+
+</div>
+
+{% elsif site.format == "pdf" or site.format == "kindle" %}
+
+Swagger
+: Refers to API tooling that around the OpenAPI spec. Some of these tools include [Swagger Editor](https://swagger.io/swagger-editor/), [Swagger UI](https://swagger.io/swagger-ui/), [Swagger Codegen](https://swagger.io/swagger-codegen/), [SwaggerHub](https://app.swaggerhub.com/home), and [others](https://swagger.io/tools/). These tools are managed by [Smartbear](https://smartbear.com/). For more tools, see [Swagger Tools](https://swagger.io/tools/). "Swagger" was the original name of the OpenAPI spec, but the name was later changed to [OpenAPI](https://github.com/OAI/OpenAPI-Specification/) to reinforce the open, non-proprietary nature of the standard. People sometimes refer to both names interchangeably (especially on older web pages), but "OpenAPI" is how the spec should be referred to. (See [What Is the Difference Between Swagger and OpenAPI?](https://swagger.io/difference-between-swagger-and-openapi/).)
+
+OpenAPI
+: Refers to the name of the specification. The OpenAPI specification is driven by the [OpenAPI initiative](https://www.openapis.org/), backed by the Linux Foundation and steered by [many companies and organizations](https://www.openapis.org/membership/members). The YAML or JSON file that you create to describe your API following the OpenAPI specification is called the "OpenAPI specification document."
+
+Swagger Editor
+: An online editor that validates your OpenAPI document against the rules of the OpenAPI specification. The Swagger Editor will flag errors and give you formatting tips. See [Swagger Editor](http://editor.swagger.io/#/).
+
+Swagger UI
+: An open-source web framework ([on GitHub](https://github.com/swagger-api/swagger-ui)) that parses an OpenAPI specification document and generates an interactive documentation website. This is the tool that transforms your spec into the [Petstore-like site](http://petstore.swagger.io/).
+
+Swagger Codegen
+: Tools that general client SDK code for a lot of different platforms (such as Java, JavaScript, Scala, Python, PHP, Ruby, Scala, and more). The client SDK code helps developers integrate your API on a specific platform and provides for more robust implementations that might include more scaling, threading, and other necessary code. In general, SDKs are toolkits for implementing the requests made with an API. Swagger Codegen generates the client SDKs in nearly every programming language. See [Swagger-codegen](https://github.com/swagger-api/swagger-codegen) for more details.
+
+{% endif %}
 
 ## The Swagger UI Petstore example
 
@@ -108,16 +140,18 @@ You'll notice the documentation is short and sweet in a Swagger UI implementatio
 
 ## Create a Swagger UI display with an OpenAPI spec document
 
+{% include activity.html %}
+
 In this activity, you'll create a Swagger UI display for the weather endpoint in this [OpenWeatherMap API](http://openweathermap.org/current). (If you're jumping around in the documentation, this is a simple API that we used in earlier parts of the course.) You can see a demo of what we'll build [here](http://idratherbewriting.com/learnapidoc/assets/files/swagger/).
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/myswagger.png" alt="Swagger UI demo" /></a>
+{% include course_image.html url="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" filename="swagger_full_result" size="medium" ext_print="png" ext_web="png" alt="" caption="Demo of Swagger UI rendering an OpenWeatherMap OpenAPI specification document" %}
 
 {: .tip}
-You can also follow instructions for working with Swagger UI [here in the Swagger.io docs](https://swagger.io/docs/swagger-tools/#swagger-ui-documentation-29).
+You can also follow instructions for working with Swagger UI in the [Swagger.io docs](https://swagger.io/docs/swagger-tools/#swagger-ui-documentation-29).
 
 **To integrate your OpenAPI spec into Swagger UI:**
 
-1.  If you don't already have an OpenAPI specification document, follow the [OpenAPI tutorial here](pubapis_openapi_tutorial_overview.html) to create one. The tutorial here focuses on Swagger UI, so for convenience, copy [this sample OpenAPI file](http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_weather.yml) by right-clicking the link and saving the file ("openapi_weather.yml") to your desktop.
+1.  If you don't already have an OpenAPI specification document, follow the [OpenAPI tutorial here](pubapis_openapi_tutorial_overview.html) to create one. The tutorial here focuses on Swagger UI, so for convenience, you can also copy [this sample OpenAPI file](http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) by right-clicking the link and saving the file ("openapi_openweathermap.yml") to your desktop.
 
     {: .tip}
     If you want to preview what your Swagger UI implementation will look like ahead of time, copy the content from the OpenAPI specification document you just downloaded into the [Swagger online editor](http://editor.swagger.io/#/). The view on the right of the Swagger Editor shows a fully functional Swagger UI display.
@@ -125,10 +159,10 @@ You can also follow instructions for working with Swagger UI [here in the Swagge
 2.  Go to the [Swagger UI GitHub project](https://github.com/swagger-api/swagger-ui).
 3.  Click **Clone or download**, and then click **Download ZIP** button. Download the files to a convenient location on your computer and extract the files.
 
-	  The only folder you'll be working with here is the **dist** folder (short for distribution). Everything else is used only if you're regenerating the files, which is beyond the scope of this tutorial.
+	  The only folder you'll be working with in the downloaded zip is the **dist** folder (short for distribution). Everything else is used only if you're recompiling the Swagger files, which is beyond the scope of this tutorial.
 
 4.  Drag the **dist** folder out of the swagger-ui-master folder so that it stands alone. Then delete the swagger-ui-master folder and zip file.
-4.  Inside your **dist** folder, open **index.html** in a text editor such as Atom or Sublime Text.
+4.  Inside your **dist** folder, open **index.html** in a text editor such as [Atom editor](https://atom.io/) or [Sublime Text](https://www.sublimetext.com/).
 5.  Look for the following code:
 
     ```js
@@ -138,12 +172,38 @@ You can also follow instructions for working with Swagger UI [here in the Swagge
 6.  Change the `url` value from `http://petstore.swagger.io/v2/swagger.json` to the following:
 
     ```js
-    url: "openapi_weather.yml",
+    url: "openapi_openweathermap.yml",
     ```
 
     Save the file.
 
-7.  Drag the **openapi_weather.yml** file that you downloaded earlier into the same directory as the index.html file you just edited. Your file structure should look as follows:
+7.  Configure any special Swagger UI parameters as desired.
+
+    Swagger UI provides a number of [parameters](https://swagger.io/docs/swagger-tools/#parameters-37) you can use to customize the display. For example, you can set whether each endpoint is expanded or collapsed, how tags and operations are sorted, whether to show request headers in the response, and more.
+
+    For example, if you look at the [source of the Swagger UI demo](view-source:http://idratherbewriting.com/learnapidoc/assets/files/swagger/), you'll see the parameters listed in the `// Build a system` section:
+
+    ```js
+      // Build a system
+    const ui = SwaggerUIBundle({
+      url: "http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml",
+      dom_id: '#swagger-ui',
+      defaultModelsExpandDepth: -1,
+      deepLinking: true,
+      presets: [
+        SwaggerUIBundle.presets.apis,
+        SwaggerUIStandalonePreset
+      ],
+      plugins: [
+        SwaggerUIBundle.plugins.DownloadUrl
+      ],
+      layout: "StandaloneLayout"
+    })
+    ```
+
+    The parameters there (e.g., `deepLinking`, `dom_id`, etc.) are defaults. However, I've added `defaultModelsExpandDepth: -1` to hide the "Models" section at the bottom of the Swagger UI display (since I think that section is unnecessary).
+
+7.  Drag the **openapi_openweathermap.yml** file that you downloaded earlier into the same directory as the index.html file you just edited. Your file structure should look as follows:
 
     ```
     ├── swagger
@@ -160,39 +220,17 @@ You can also follow instructions for working with Swagger UI [here in the Swagge
     │   ├── swagger-ui.js
     │   ├── swagger-ui.js.map
     │   ├── swagger30.yml
-    │   └── openapi_weather.yml
+    │   └── openapi_openweathermap.yml
     ```
 
 8.  Upload the folder to a web server and go to the folder path. For example, if you called your directory **dist** (leaving it unchanged), you would go to **http://myserver.com/dist**. (You can change the "dist" folder name to whatever you want.)
 
-You can also view the file locally in your browser. It's also common to run a local web server to view the Swagger UI site. To run a local web server on your computer, you can use a [simple Python http server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server) or a more robust local server such as [XAMPP](https://www.apachefriends.org/index.html).
-
-{: .tip}
-Swagger UI provides a number of [parameters](https://swagger.io/docs/swagger-tools/#parameters-37) you can use to customize the display. For example, you can set whether each endpoint is expanded or collapsed, how tags and operations are sorted, whether to show request headers in the response, and more.
+You can also view the file locally in your browser.
 
 ## Challenges with Swagger UI
 
 As you explore Swagger UI, you may notice a few limitations with the approach:
 
-* There's not much room to describe in detail the workings of the endpoint in Swagger. If you have several paragraphs of details and gotchas about a parameter, it's best to link out from the description to another page in your docs. The OpenAPI spec provides a way to link to external documentation in both the [paths object](pubapis_openapi_step4_paths_object.html) and the [info object](pubapis_openapi_step2_info_object.html).
-* The Swagger UI looks mostly the same for each output. You can modify the source files and regenerate the output, but doing so requires more advanced coding skills.
-* The Swagger UI might be a separate site from your other documentation. This means in your regular docs, you'll probably need to link to Swagger as the reference for your endpoints. You don't want to duplicate your parameter descriptions and other details in two different sites. See [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html) for more details on workarounds. You can [customize Swagger UI](https://swagger.io/docs/swagger-tools/#customization-36) with your own branding, but it will some deeper UX skills.
-
-## Auto-generating the Swagger file from code annotations
-
-Instead of coding the Swagger file by hand, you can also auto-generate it from annotations in your programming code. There are many Swagger libraries for integrating with different code bases. These Swagger libraries then parse the annotations that developers add and generate the same Swagger file that you produced manually using the earlier steps.
-
-By integrating Swagger into the code, you allow developers to easily write documentation, make sure new features are always documented, and keep the documentation more current. Here's a [tutorial on annotating code with Swagger for Scalatra](http://www.infoq.com/articles/swagger-scalatra). The annotation methods for Swagger doc blocks vary based on the programming language.
-
-For other tools and libraries, see [Swagger services and tools](http://swagger.io/open-source-integrations/) and [Open Source Integrations](https://swagger.io/open-source-integrations/).
-
-## Sorting out the various Swagger tools
-
-As I explained earlier, [Swagger](https://swagger.io/) refers to the various API tools built around the [OpenAPI spec](https://github.com/OAI/OpenAPI-Specification). Here's a quick summary of what Swagger tools are available:
-
-* **[Swagger editor](http://editor.swagger.io/#/)**: The Swagger Editor is an online editor that validates your OpenAPI document against the rules of the OpenApI spec. You'll need to be familiar with OpenAPI specification to be successful here. The Swagger editor will flag errors and give you formatting tips. See my [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html) for a step-by-step walkthrough.
-* **[Swagger-UI](https://github.com/swagger-api/swagger-ui)**: The Swagger UI is an HTML/CSS/JS framework that parses an OpenAPI specification document and generates an interactive documentation website. This is the tool that transforms your spec into the [Petstore-like site](http://petstore.swagger.io/).
-* **[Swagger-codegen](https://github.com/swagger-api/swagger-codegen)**: This tool generates client SDK code for a lot of different platforms (such as Java, JavaScript, Scala, Python, PHP, Ruby, Scala, and more). The client SDK code helps developers integrate your API on a specific platform and provides for more robust implementations that might include more scaling, threading, and other necessary code. In general, SDKs are toolkits for implementing the requests made with an API. Swagger Codegen generates the client SDKs in nearly every programming language.
-* **[Swaggerhub](https://app.swaggerhub.com/)**: The commercial version of the open-source Swagger UI project.
-
-For more tools, see [Swagger Tools](https://swagger.io/tools/).
+* There's not much room to describe in detail the workings of the endpoint in Swagger. If you have several paragraphs of details and gotchas about a parameter, it's best to link out from the description to another page in your docs. The OpenAPI spec provides a way to link to external documentation in both the [paths object](pubapis_openapi_step4_paths_object.html), the [info object](pubapis_openapi_step2_info_object.html), and the [externalDocs object](pubapis_openapi_step8_externaldocs_object.html)
+* The Swagger UI looks mostly the same for each output. You can [customize Swagger UI](https://swagger.io/docs/swagger-tools/#customization-36) with your own branding, but it will some deeper UX skills.
+* The Swagger UI might be a separate site from your other documentation. This means in your regular docs, you'll probably need to link to Swagger as the reference for your endpoints. You don't want to duplicate your parameter descriptions and other details in two different sites. See [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html) for more details on workarounds.
