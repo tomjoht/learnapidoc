@@ -3,9 +3,9 @@ title: "API Blueprint tutorial"
 permalink: /pubapis_api_blueprint.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.96
-section: restapispecifications
-path1: /restapispecifications.html
+weight: 13.5
+section: resources
+path1: /resources.html
 ---
 
 Just as Swagger defines a spec for describing a REST API, [API Blueprint](https://apiblueprint.org/) is another specification for describing REST APIs. If you describe your API with this blueprint, tools that support API Blueprint can read and display the information.

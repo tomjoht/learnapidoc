@@ -3,7 +3,7 @@ title: "OpenAPI 3.0 tutorial overview"
 permalink: /pubapis_openapi_tutorial_overview.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.2
+weight: 7.21
 section: restapispecifications
 path1: /restapispecifications.html
 ---
@@ -46,7 +46,7 @@ Now that I've cleared up those terms, let's continue. (For other terms, see the 
 
 ## Terminology to Describe JSON/YAML
 
-Let's clear up some other terminology before we get started. The specification document in my OpenAPI tutorial uses YAML, but it could also be expressed in JSON. JSON is a subset of YAML, so the two are practically interchangeable formats (for the data structures we're using). Ultimately, though, the OpenAPI spec is a JSON object. The specification notes:
+Let's clear up some other terminology before we get started. The specification document in my OpenAPI tutorial uses YAML (which I introduced briefly [here](pubapis_yaml.html)), but it could also be expressed in JSON. JSON is a subset of YAML, so the two are practically interchangeable formats (for the data structures we're using). Ultimately, though, the OpenAPI spec is a JSON object. The specification notes:
 
 >An OpenAPI document that conforms to the OpenAPI Specification is itself a JSON object, which may be represented either in JSON or YAML format. (See [Format](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#format))
 

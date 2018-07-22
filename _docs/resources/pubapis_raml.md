@@ -3,10 +3,10 @@ title: RAML tutorial
 permalink: /pubapis_raml.html
 keywords: RAML
 course: "Publishing REST APIs"
-weight: 7.95
+weight: 13.4
 sidebar: docapis
-section: restapispecifications
-path1: /restapispecifications.html
+section: resources
+path1: /resources.html
 ---
 
 RAML stands for REST API Modeling Language and is similar to the [OpenAPI specification](pubapis_openapi_tutorial_overview.html). RAML is backed by [Mulesoft](https://www.mulesoft.com/), an full-service, end-to-end API company, and uses a more YAML-based syntax in the specification.

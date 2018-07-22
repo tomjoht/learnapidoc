@@ -84,8 +84,6 @@ Other topics consist entirely of activities. The course has the following activi
 * [Activity: Manage content in a GitHub wiki](pubapis_github_wikis.html)
 * [Activity: Use the GitHub Desktop client](pubapis_github_desktop_client.html)
 * [Activity: Create an OpenAPI specification document](pubapis_openapi_activity.html)
-* [Activity: Create your own Swagger UI display](pubapis_swagger_ui_activity.html)
-* [Activity: Use Stoplight to edit your OpenAPI spec](pubapis_stoplight_activity.html)
 * [Activity: Generate a Javadoc from a sample project](nativelibraryapis_create_javadoc.html)
 
 I refer to the content here as a "course" instead of a book or a website, primarily because I include a lot of exercises throughout in each section, and I find that people who want to learn API documentation prefer a more hands-on "course" experience.

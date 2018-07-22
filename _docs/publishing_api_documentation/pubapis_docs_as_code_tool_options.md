@@ -360,7 +360,7 @@ Here are a few sample API doc sites built with Readme.io:
 
 ## Tools for reading the OpenAPI specification {#openapitools}
 
-In the [OpenAPI and Swagger section of this course](restapispecifications.html), I emphasize using [Swagger UI](pubapis_swagger.html) to read and display the [OpenAPI specification](pubapis_swagger_intro.html) as interactive documentation. I also provide a tutorial for using [Stoplight, a visual modeling tool](pubapis_stoplight_activity.html). Since I go into depth with those tools in other parts of the course, I won't dive into them here.
+In the [OpenAPI and Swagger section of this course](restapispecifications.html), I emphasize using [Swagger UI](pubapis_swagger.html) to read and display the [OpenAPI specification](pubapis_swagger_intro.html) as interactive documentation. I also provide a tutorial for using [Stoplight, a visual modeling tool](pubapis_stoplight.html#workshop_activity). Since I go into depth with those tools in other parts of the course, I won't dive into them here.
 
 Beyond Swagger UI and Stoplight, there are many other tools that can read OpenAPI specification documents. That's the whole idea of a standard &mdash; when you create a standard way of describing APIs, many tools can predictably read the description and generate documentation (and other tooling) based on it.
 

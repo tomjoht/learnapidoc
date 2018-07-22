@@ -2,7 +2,7 @@
 title: Workshop activities
 permalink: /workshop-activities.html
 course: "Documenting REST APIs"
-weight: 13.4
+weight: 13.5
 sidebar: docapis
 section: resources
 path1: /resources.html
@@ -146,7 +146,7 @@ Slides: [OpenAPI and Swagger](http://idratherbewriting.com/openapi-and-swagger/#
    More details about Stoplight are available here:
 
    * [Stoplight — visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html)
-   * [Activity: Use Stoplight to edit your OpenAPI spec](pubapis_stoplight_activity.html)
+   * [Activity: Use Stoplight to edit your OpenAPI spec](pubapis_stoplight.html#workshop_activity)
 
 {% include random_ad.html %}
 

@@ -8,7 +8,7 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-Previously, I explored using the open-source [Swagger UI project](pubapis_swagger.html) as a way to render your [OpenAPI specification document](pubapis_openapi_tutorial_overview.html). [SwaggerHub](https://app.swaggerhub.com/) is the commercial version of Swagger UI. You can see a comparison of features [here](https://swaggerhub.com/swagger-open-source-comparison/).
+Previously, I explored using the open-source [Swagger UI project](pubapis_swagger.html) as a way to render your [OpenAPI specification document](pubapis_openapi_tutorial_overview.html). The same company (Smartbear) that offers the free, open-source version of Swagger Editor and Swagger UI also offers a premium version with more robust features. This premium version is called [SwaggerHub](https://app.swaggerhub.com/). You can see a comparison of features between the open source and premium versions [here](https://swaggerhub.com/swagger-open-source-comparison/).
 
 {: .tip}
 You can see a demo of the [sample OpenWeatherMap API on SwaggerHub here](https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/).
@@ -18,9 +18,11 @@ You can see a demo of the [sample OpenWeatherMap API on SwaggerHub here](https:/
 {:toc}
 {% endif %}
 
+<small>Note that Smartbear is one of the sponsors of my site.</small>
+
 ## Advantages of SwaggerHub
 
-While the open-source Swagger UI approach works, you'll run into several problems:
+While the open-source Swagger Editor + UI approach works, you'll run into several problems:
 
 *  It's challenging to collaborate with other project members on the spec
 *  It's difficult to gather feedback from reviewers about specific parts of the spec
@@ -46,9 +48,7 @@ The dashboard shows a list of the APIs you've created. In this example, you see 
 
 ## SwaggerHub Editor
 
-SwaggerHub contains the same [Swagger Editor](https://swagger.io/swagger-editor/) that you can access online. This provides you with real-time validation as you work on your API spec.
-
-However, unlike the standalone Swagger Editor, with SwaggerHub's Swagger Editor, you can toggle between 3 modes:
+SwaggerHub contains the same [Swagger Editor](https://swagger.io/swagger-editor/) that you can access online. This provides you with real-time validation as you work on your API spec. However, unlike the standalone Swagger Editor, with SwaggerHub's Swagger Editor, you can toggle between 3 modes:
 
 * **Editor**: Shows the spec in full screen
 * **Split**: Shows the spec on the left, the UI display on the right
@@ -56,7 +56,7 @@ However, unlike the standalone Swagger Editor, with SwaggerHub's Swagger Editor,
 
 <img src="images/swaggerhub_ui_toggle.png"/>
 
-Most importantly, as you're working in the Editor, SwaggerHub allows you to *save your work*. With the free Swagger Editor, your content is just kept in the browser cache, with no ability to save it. When you clear your cache, your content is gone. As a result, if you use the standalone Swagger Editor, you have to regularly copy the content from the Swagger Editor into a file on your own computer each time you finish.
+Most importantly, as you're working in the Editor, SwaggerHub allows you to *save your work*. With the free Swagger Editor, your content is just kept in the browser cache, with no ability to save the file in the cloud. When you clear your cache, your content is gone. As a result, if you use the standalone Swagger Editor, you have to regularly copy the content from the Swagger Editor into a file on your own computer each time you finish.
 
 You can save your specification document directly in SwaggerHub, or you can reference and store it in an external source such as GitHub.
 
@@ -68,13 +68,13 @@ Not only does SwaggerHub allow you to save your OpenAPI spec, you can save diffe
 
 When you publish a version, the published version becomes Read Only. If you want to make changes to a published version (rather than creating a new version), you can unpublish the version and make edits on it.
 
-You can link to specific versions of your documentation, or you can use a more general link path that will automatically forward to the latest version. Here's a link to the OpenWeatherMap API published on SwaggerHub that uses version 3.0 of the spec: [hhttps://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/](https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/2.5).
+You can link to specific versions of your documentation, or you can use a more general link path that will automatically forward to the latest version. Here's a link to the OpenWeatherMap API published on SwaggerHub that uses version 2.5.1 of the documentation: [https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/2.5.1/](https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/2.5.1/). To link to a specific version, include the version number in the URL.
 
-You can also send users to the default version when they go they don't include the version at the end. For example, notice that when you go to [https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/](https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/), you get forwarded to the latest published version of the spec automatically. To link to a specific version, include the version number in the URL.
+You can also send users to the latest version by excluding the version number in the path: [https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/](https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/). When you go to this link, you are forwarded to the latest published version of the documentation automatically (2.5.2).
 
 Versioning is helpful when you're collaborating on the spec with other team members. For example, suppose you see the original version drafted by an engineer, and you want to make major edits. Rather than directly overwriting the content (or making a backup copy of an offline file), you can create a new version and then take more ownership to overhaul that version with your own wordsmithing, without fear that the engineer will react negatively about overwritten/lost content.
 
-When you publish your Swagger documentation on SwaggerHub, the base URL remain as a subdirectory on app.swaggerhub.com. You can add your own company logo and visual branding as desired.   
+When you publish your Swagger documentation on SwaggerHub, Swagger's base URL (app.swaggerhub.com) remains in the URL. Although this base URL isn't customizable, you can add your own company logo and visual branding as desired.   
 
 ## Inline commenting/review
 
@@ -107,7 +107,7 @@ The client and server SDKs aren't yet available for OpenAPI 3.0 specs, just for 
 
 ## Export to HTML
 
-One of the options for export is an HTML option. You can export your OpenAPI spec as a static HTML file in one of two styles: HTML or HTML2.
+Among SwaggerHub's many options for generating client and SDK files is an HTML option. You can export your OpenAPI spec as a static HTML file in one of two styles: HTML or HTML2.
 
 You can see a demo export of the Weather API here: <a href="http://idratherbewriting.com/learnapidoc/assets/files/swaggerhub_htmloutput/index.html">HTML</a> or <a href="http://idratherbewriting.com/learnapidoc/assets/files/swaggerhub_html2output/index.html">HTML2</a>. Both exports generate all the content into an index.html file.
 
@@ -123,15 +123,17 @@ Another cool feature of SwaggerHub is the ability to [create mock API servers](h
 
 {% include random_ad.html %}
 
-Assuming you have example responses in your API spec, you can set your API to auto-mock. When a user tries out a request, SwaggerHub will return the example response from your spec. The response won't contain the custom parameters the user entered in the UI but will instead return the example responses coded into your spec as if returned from a server.
+Assuming you have example responses in your API spec, you can set your API to "auto-mock." When a user tries out a request, SwaggerHub will return the example response from your spec. The response won't contain the custom parameters the user entered in the UI but will instead return the example responses coded into your spec as if returned from a server.
 
 Providing an auto-mock for your API solves the problem of potentially complicating user data by having users interact with their real API keys and data. In many cases, you don't want users junking up their data with tests and other experiments. At the same time, you also want to simulate the API response.
 
-Simulating the API can be especially useful for testing your API with beta users. One reason many people code their API with the spec before writing any lines of code (following a [spec-first philosophy such as that described by Michael Stowe](http://idratherbewriting.com/2015/10/12/spec-driven-design-podcast-michael-stowe/)) is to avoid coding an API with endpoints and responses that users don't actually want.
+Simulating the API can be especially useful for testing your API with beta users. One reason many people code their API with the spec before writing any lines of code (following a [spec-first philosophy such as that described by Michael Stowe](pubapis_swagger_intro.html#another-approach-spec-first-development)) is to avoid coding an API with endpoints and responses that users don't actually want.
 
 Using the mock server approach, SwaggerHub not only provides documentation but also acts as a beta-testing tool to get the design of your API right before sinking thousands of hours of time into actual coding. You can enable auto-mocking for different versions of your API, creating variants and testing each of the variants.
 
-To set up a mocking server in SwaggerHub, click <img class="inline" src="images/swaggerhub_integration_button.png" /> and select to add a new integration. Select the **API Auto Mocking** service and complete the configuration details. Make sure you have `examples` for each of the endpoint responses in your spec.
+{% include random_ad.html %}
+
+To set up a mocking server in SwaggerHub, click <img class="inline" src="images/swaggerhub_integration_button.png" /> and select to add a new integration. Select the **API Auto Mocking** service and complete the configuration details. Make sure you have `examples` for each of the endpoint responses in your spec. See [API Auto Mocking](https://app.swaggerhub.com/help/integrations/api-auto-mocking) for more details.
 
 ## Content Re-use (Domains)
 
@@ -143,13 +145,13 @@ Using the domain minimizes duplicate content and enables you to be more consiste
 
 ## Organizations and projects
 
-The collaborative aspect of SwaggerHub is the biggest reason people move from the open source tools to SwaggerHub. You might have a lot of different engineers working on a variety of APIs in SwaggerHub. To organize the work, you can group APIs into [organizations](https://app.swaggerhub.com/help/organizations/index), and then assign members to the appropriate organization. When that member logs in to SwaggerHub, he or she will see only the organizations he or she has access to.
+The collaborative aspect of SwaggerHub is the most common reason people move from the open source tools to SwaggerHub. You might have a lot of different engineers working on a variety of APIs in SwaggerHub. To organize the work, you can group APIs into [organizations](https://app.swaggerhub.com/help/organizations/index), and then assign members to the appropriate organization. When that member logs in to SwaggerHub, he or she will see only the organizations he or she has access to.
 
 Additionally, within an organization, you can further group APIs into different projects. This way teams working in the same organization but on different projects can have visibility into other APIs but still have their APIs logically grouped.
 
 <img src="images/swaggerhub_organizations.png" style="border: 1px solid #dedede;"/>
 
-This aspect of organizations and projects may not seem essential if you have just 1 or 2 APIs, but when you consider how you'll scale and grow as you have dozens of APIs and multiple teams, organizations and projects become essential.
+This aspect of organizations and projects may not seem essential if you have just 1 or 2 APIs, but consider how you'll scale and grow as you have dozens of APIs and multiple teams. In these more robust scenarios, the organizations and projects features become essential.
 
 ## Conclusion &mdash; expanding the tech writer's role with APIs
 
@@ -163,5 +165,3 @@ Great tools aren’t free. SwaggerHub does [cost money](https://swaggerhub.com/
 
 {: .tip}
 To read more about SwaggerHub, checkout my blog post [SwaggerHub: A collaborative platform for working on OpenAPI/Swagger specification files, and more](http://idratherbewriting.com/2017/10/05/swaggerhub-collaborative-platform-for-swagger-openapi-projects).
-
-<small>Note that Smartbear is one of the sponsors of my site.</small>

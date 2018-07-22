@@ -10,13 +10,13 @@ redirect_from:
 - pubapis_swagger_embedded.html
 ---
 
-<p>The following is an embedded instance of the <a href="https://github.com/swagger-api/swagger-ui">Swagger UI</a> showing the <a href="http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml">OpenAPI file for the OpenWeatherMapAPI</a>.</p>
+<p>When you use Swagger UI, it's not necessary for the Swagger UI output to be a <a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger">standalone site</a>. You can also embed Swagger into an existing web page. The following is an embedded instance of the <a href="https://github.com/swagger-api/swagger-ui">Swagger UI</a> showing the <a href="http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml">OpenAPI file for the OpenWeatherMapAPI</a>.</p>
+
+<p>While the Swagger UI display is designed to be responsive, the collapse/expand sections in the Model views still have overflow issues in responsive views, so you might run into issues with embedding. </p>
 
 {% if site.format == "pdf" or site.format == "kindle" %}
 <p>This page can only be viewed online in your computer's web browser{% if site.format == "kindle" %} (not through Kindle's browser){% endif %}. Go to <a href="http://idratherbewriting.com/learnapidoc/pubapis_swagger_demo.html">http://idratherbewriting.com/learnapidoc/pubapis_swagger_demo.html</a> to view it.</p>
 {% else %}
-
-<p class="note" style="margin-bottom: 15px;">To view the same Swagger UI project as a standalone file, see <a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger">http://idratherbewriting.com/learnapidoc/assets/files/swagger/</a>.</p>
 
 <link rel="stylesheet" type="text/css" href="assets/css/swagger-ui.css" >
 <style>
@@ -315,5 +315,7 @@ button.btn.try-out__btn {
 {% endif %}
 
 {% include random_ad.html %}
+
+<p>Personally, I prefer to separate out Swagger UI from the rest of my docs simply because I dislike the sense of a website within a website. Developers can keep the Swagger UI page open as a <a href="docapis_doc_quick_reference.html">quick reference</a> while they work on their projects. I view the Swagger UI reference output similar to the standalone nature of <a href="nativelibraryapis_exploring_javadoc_output.html">Javadoc</a>.</p>
 
 {% include random_ad2.html %}

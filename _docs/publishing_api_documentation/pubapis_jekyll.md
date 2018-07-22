@@ -140,7 +140,7 @@ Let's say you want to use a theme that provides ready-made templates for REST AP
 
 	  In every Jekyll page, there's some "frontmatter" at the top. The frontmatter section has three dashes before and after it.
 
-	  The frontmatter is formatted in a syntax called YML. YML is similar to JSON but uses spaces and hyphens instead of curly braces. This makes it more human readable. (See [More About YAML](pubapis_yaml.html) for details.)
+	  The frontmatter is formatted in a syntax called YML. YML is similar to JSON but uses spaces and hyphens instead of curly braces. This makes it more human readable. (See [Working in YAML](pubapis_yaml.html) for details.)
 
     The key-value pairs in the YAML frontmatter are entirely arbitrary and are designed here to suit the API doc theme the author created. If we were to look at the code in the theme, we'd see Liquid `for` loops that iterate over the YAML values and populate the content into a template. Jekyll will access these values and push this content into the template (which you can see by going to \_layouts/default.md). The author has separated the content from the format so that we don't have to manually wrap all the values in style tags.
 

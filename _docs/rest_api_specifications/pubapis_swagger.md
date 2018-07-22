@@ -24,7 +24,7 @@ For step-by-step tutorial on creating an OpenAPI specification document, see the
 
 ## Swagger UI overview
 
-Swagger UI is one of the most popular tools for generating interactive documentation from your OpenAPI document. Swagger UI generates an interactive API console for users to quickly learn about and try the API. Additionally, Swagger UI is an actively managed project (with an Apache 2.0 license) that supports the latest version of the OpenAPI spec (3.0) and integrates with other Swagger tools.
+Swagger UI is one of the most popular tools for generating interactive documentation from your OpenAPI document. Swagger UI generates an interactive API console for users to quickly learn about and try the API. Additionally, Swagger UI is an [actively managed project](https://github.com/swagger-api/swagger-ui) (with an Apache 2.0 license) that supports the latest version of the OpenAPI spec (3.0) and integrates with other Swagger tools.
 
 In the following tutorial, I'll show you how to Swagger UI works and how to integrate an OpenAPI specification document into it.
 
@@ -138,7 +138,7 @@ Some of these sites look the same, but others, such as The Movie Database API an
 
 You'll notice the documentation is short and sweet in a Swagger UI implementation. This is because the Swagger display is meant to be an interactive experience where you can try out calls and see responses &mdash; using your own API key to see your own data. It's the learn-by-doing-and-seeing-it approach. Also, Swagger UI only covers the [reference topics](docendpoints.html) of your documentation.
 
-## Create a Swagger UI display with an OpenAPI spec document
+## Create a Swagger UI display with an OpenAPI spec document {#create_swaggerui}
 
 {% include activity.html %}
 
@@ -179,14 +179,14 @@ You can also follow instructions for working with Swagger UI in the [Swagger.io 
 
 7.  Configure any special Swagger UI parameters as desired.
 
-    Swagger UI provides a number of [parameters](https://swagger.io/docs/swagger-tools/#parameters-37) you can use to customize the display. For example, you can set whether each endpoint is expanded or collapsed, how tags and operations are sorted, whether to show request headers in the response, and more.
+    We won't get too much into the details of these parameters here. I just want to call attention to them here for awareness. Swagger UI provides a number of [parameters](https://swagger.io/docs/swagger-tools/#parameters-37) (unrelated to your OpenAPI parameters) you can use to customize the display. For example, you can set whether each endpoint is expanded or collapsed, how tags and operations are sorted, whether to show request headers in the response, and more.
 
     For example, if you look at the [source of the Swagger UI demo](view-source:http://idratherbewriting.com/learnapidoc/assets/files/swagger/), you'll see the parameters listed in the `// Build a system` section:
 
     ```js
       // Build a system
     const ui = SwaggerUIBundle({
-      url: "http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml",
+      url: "openapi_openweathermap.yml",
       dom_id: '#swagger-ui',
       defaultModelsExpandDepth: -1,
       deepLinking: true,
@@ -203,7 +203,7 @@ You can also follow instructions for working with Swagger UI in the [Swagger.io 
 
     The parameters there (e.g., `deepLinking`, `dom_id`, etc.) are defaults. However, I've added `defaultModelsExpandDepth: -1` to hide the "Models" section at the bottom of the Swagger UI display (since I think that section is unnecessary).
 
-7.  Drag the **openapi_openweathermap.yml** file that you downloaded earlier into the same directory as the index.html file you just edited. Your file structure should look as follows:
+7.  Drag the **openapi_openweathermap.yml** file that you downloaded in step 1 into the same directory as the index.html file you just edited. Your file structure should look as follows:
 
     ```
     ├── swagger
@@ -225,11 +225,11 @@ You can also follow instructions for working with Swagger UI in the [Swagger.io 
 
 8.  Upload the folder to a web server and go to the folder path. For example, if you called your directory **dist** (leaving it unchanged), you would go to **http://myserver.com/dist**. (You can change the "dist" folder name to whatever you want.)
 
-You can also view the file locally in your browser.
+You can also view the file locally in your browser. In Chrome, go to **File > Open** and browse to the **index.html** file in your dist folder.
 
 ## Challenges with Swagger UI
 
-As you explore Swagger UI, you may notice a few limitations with the approach:
+As you explore Swagger UI, you may notice a few limitations:
 
 * There's not much room to describe in detail the workings of the endpoint in Swagger. If you have several paragraphs of details and gotchas about a parameter, it's best to link out from the description to another page in your docs. The OpenAPI spec provides a way to link to external documentation in both the [paths object](pubapis_openapi_step4_paths_object.html), the [info object](pubapis_openapi_step2_info_object.html), and the [externalDocs object](pubapis_openapi_step8_externaldocs_object.html)
 * The Swagger UI looks mostly the same for each output. You can [customize Swagger UI](https://swagger.io/docs/swagger-tools/#customization-36) with your own branding, but it will some deeper UX skills.

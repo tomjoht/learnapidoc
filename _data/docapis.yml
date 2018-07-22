@@ -171,6 +171,9 @@ folders:
   - title: Introduction to the OpenAPI spec and Swagger
     jurl: /pubapis_swagger_intro.html
 
+  - title: Working in YAML
+    jurl: /pubapis_yaml.html
+    
   - title: "OpenAPI tutorial overview"
     jurl: /pubapis_openapi_tutorial_overview.html
 
@@ -204,9 +207,6 @@ folders:
   - title: Swagger UI tutorial
     jurl: /pubapis_swagger.html
 
-  - title: "Activity: Create your own Swagger UI display"
-    jurl: /pubapis_swagger_ui_activity.html
-
   - title: Swagger UI Demo
     jurl: /pubapis_swagger_demo.html
 
@@ -216,20 +216,8 @@ folders:
   - title: Stoplight &mdash; visual modeling tools for creating your spec
     jurl: /pubapis_stoplight.html
 
-  - title: "Activity: Use Stoplight to edit your spec"
-    jurl: /pubapis_stoplight_activity.html
-
   - title: Integrating Swagger UI with the rest of your docs
     jurl: /pubapis_combine_swagger_and_guide.html
-
-  - title: RAML tutorial
-    jurl: /pubapis_raml.html
-
-  - title: API Blueprint tutorial
-    jurl: /pubapis_api_blueprint.html
-
-  - title: More about YAML
-    jurl: /pubapis_yaml.html
 
 - title: Publishing your API documentation
   jurl: /publishingapis.html
@@ -336,6 +324,12 @@ folders:
 
   - title: "Activity: Get wind speed using the Aeris Weather API"
     jurl: /docapis_aerisweather_example.html
+
+  - title: RAML tutorial
+    jurl: /pubapis_raml.html
+
+  - title: API Blueprint tutorial
+    jurl: /pubapis_api_blueprint.html
 
   - title: "Workshop activities"
     jurl: /workshop-activities.html

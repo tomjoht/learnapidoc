@@ -1,14 +1,16 @@
 ---
-title: More about YAML
+title: Working in YAML
 permalink: /pubapis_yaml.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.97
+weight: 7.20
 section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-When you created the [OpenAPI specification](pubapis_openapi_tutorial_overview.html), you usually use a syntax called YAML. The file extension can be either ".yaml" or ".yml." (You can also use [JSON](docapis_analyze_json.html), but the prevailing trend with the OpenAPI document format is YAML.) YAML stands for "YAML Ain't Markup Language." This means that the YAML syntax doesn't have markup tags such as `<` or `>`. Instead, it uses colons to denote an object's properties and hyphens to denote an array.
+Before we dive into the steps of the [OpenAPI Tutorial](pubapis_openapi_tutorial_overview.html), it will help to have a better grounding in YAML, since this is the most common syntax for the specification document. (You can also use [JSON](docapis_analyze_json.html), but the prevailing trend with the OpenAPI document format is YAML.)
+
+YAML stands for "YAML Ain't Markup Language." This means that the YAML syntax doesn't have markup tags such as `<` or `>`. Instead, it uses colons to denote an object's properties and hyphens to denote an array.
 
 {% if site.format == "web" %}
 * TOC
@@ -29,7 +31,7 @@ Many computers ingest data in a YAML or JSON format. It's a syntax commonly used
 
 ## YAML is a superset of JSON
 
-YAML and JSON are practically different ways of structuring the same data. Dot notation accesses the values the same way. For example, the Swagger UI can read the openapi.json or openapi.yaml files equivalently. Pretty much any parser that reads JSON will also read YAML. However, some JSON parsers might not read YAML, because there are a few features YAML has that JSON lacks (more on that later).
+For the most part, YAML and JSON are different ways of structuring the same data. Dot notation accesses the values the same way. For example, the Swagger UI can read the openapi.json or openapi.yaml files equivalently. Pretty much any parser that reads JSON will also read YAML. However, some JSON parsers might not read YAML, because there are a few features YAML has that JSON lacks (more on that later).
 
 ## YAML syntax
 
@@ -44,9 +46,9 @@ level1:
 Each new level is an object. In this example, the level1 object contains the level2 object, which contains the level3 object.
 
 {: .note}
-With YAML, you generally don't use tabs (since they're non-standard). Instead, you space twice.
+With YAML, you generally don't use tabs (since tab spacing is non-standard). Instead, you space twice.
 
-Each level can contain either a single key-value pair (also referred to as a dictionary) or a sequence (a list of hyphens):
+Each level can contain either a single key-value pair (also referred to as a *dictionary* in YAML lingo) or a *sequence* (a list of hyphens):
 
 ```yaml
 ---
@@ -59,7 +61,7 @@ Each level can contain either a single key-value pair (also referred to as a dic
       itembmeta: "four"
 ```
 
-The values for each key can optionally be enclosed in quotation marks or not. If your value has something like a colon or quotation mark in it, you'll want to enclose it in quotation marks. And if there's a double quotation mark, enclose the value in single quotation marks, or vice versa.
+The values for each key can optionally be enclosed in quotation marks. If your value has a colon or quotation mark in it, enclose it in quotation marks.
 
 {% include random_ad2.html %}
 
@@ -85,8 +87,6 @@ Here's the same thing in YAML syntax:
 key1: value1
 key2: value2
 ```
-
-These key-value pairs are also called dictionaries.
 
 Here's an array (list of items) in JSON:
 
@@ -132,11 +132,11 @@ Here's an array containing objects in JSON:
 [  
    {  
       "name":"Tom",
-      "age":39
+      "age":42
    },
    {  
       "name":"Shannon",
-      "age":37
+      "age":41
    }
 ]
 ```
@@ -146,13 +146,13 @@ Here's the same array containing objects converted to YAML:
 ```yaml
 -
     name: Tom
-    age: 39
+    age: 42
 -
     name: Shannon
-    age: 37
+    age: 41
 ```
 
-Hopefully by seeing the syntax side by side, it will begin to make more sense. Is the YAML syntax more readable? It might be difficult to see in these simple examples.
+Hopefully, by seeing the syntax side by side, it will begin to make more sense. Is the YAML syntax more readable? It might be difficult to see in these simple examples, but generally it is.
 
 JavaScript uses the same dot notation techniques to access the values in YAML as it does in JSON. (They're pretty much interchangeable formats.) The benefit to using YAML, however, is that it's more readable than JSON.
 
@@ -160,11 +160,7 @@ However, YAML is more tricky sometimes because it depends on getting the spacing
 
 ## Some features of YAML not present in JSON
 
-YAML has some features that JSON lacks.
-
-You can add comments in YAML files using the `#` sign.
-
-YAML also allows you to use something called "anchors." For example, suppose you have two definitions that are similar. You could write the definition once and use a pointer to refer to both:
+YAML has some features that JSON lacks. You can add comments in YAML files using the `#` sign. YAML also allows you to use something called "anchors." For example, suppose you have two definitions that are similar. You could write the definition once and use a pointer to refer to both:
 
 ```yaml
 api: &apidef Application programming interface
@@ -173,5 +169,8 @@ application_programming_interface: *apidef
 
 If you access the value (e.g., `yamlfile.api` or `yamlfile.application_programming_interface`), the same definition will be used for both. The `*apidef` acts as an anchor or pointer to the definition established at `&apidef`.
 
-For details on other differences, see [Learn YAML in Minutes](http://learnxinyminutes.com/docs/yaml/).
-To learn more about YAML, see this [YAML tutorial](http://rhnh.net/2011/01/31/yaml-tutorial).
+You won't use these unique YAML features in the OpenAPI tutorial, but they're worth noting because JSON and YAML aren't entirely equivalent.
+
+For details on other differences between JSON and YAML, see [Learn YAML in Minutes](http://learnxinyminutes.com/docs/yaml/). To learn more about YAML, see this [YAML tutorial](http://rhnh.net/2011/01/31/yaml-tutorial).
+
+YAML is also used with Jekyll. See my [YAML tutorial in the context of Jekyll](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_yaml_tutorial) for more details.
