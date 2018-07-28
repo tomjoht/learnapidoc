@@ -8,16 +8,16 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-Markdown is a shorthand syntax for HTML. Instead of using `ul` and `li` tags, for example, you just use asterisks (`*`). Instead of using `h2` tags, you use hashes (`##`). There's a Markdown tag for most of the common HTML elements.
+Most of the docs-as-code solutions use lightweight Markup syntax, often Markdown. So let's learn a bit more about Markdown. Markdown is a shorthand syntax for HTML. Instead of using `ul` and `li` tags, for example, you just use asterisks (`*`). Instead of using `h2` tags, you use hashes (`##`). There's a Markdown tag for most of the common HTML elements, but not all of them.
 
 {% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}
 
-## Sample syntax
+## Sample Markdown syntax
 
-Here's a sample to get a sense of the syntax:
+Here's a sample to get a sense of the Markdown syntax:
 
 ```
 ## Heading 2
@@ -45,13 +45,13 @@ If a system accepts Markdown, it converts the Markdown into HTML so the browser 
 
 ## Development by popular demand versus by committee
 
-John Gruber, a blogger, fireStructuredText created Markdown (see his [Markdown documentation here](http://daringfireball.net/projects/markdown/)). Others adopted it, and many made modifications to include the syntax they needed. As a result, there are various "flavors" of Markdown, such as [Github-flavored Markdown](https://help.github.com/articles/github-flavored-markdown/), [Multimarkdown](http://fletcherpenney.net/multimarkdown/), [kramdown](https://kramdown.gettalong.org/), and more.
+John Gruber, a blogger, created Markdown as a way to simplify HTML (see his [Markdown documentation here](http://daringfireball.net/projects/markdown/)). Others adopted it, and many made modifications to include the syntax they needed. As a result, there are various "flavors" of Markdown, such as [Github-flavored Markdown](https://help.github.com/articles/github-flavored-markdown/), [Multimarkdown](http://fletcherpenney.net/multimarkdown/), [kramdown](https://kramdown.gettalong.org/), and more.
 
 In contrast, DITA is a committee-based XML architecture derived from a committee. There aren't lots of different flavors and spinoffs of DITA based on how people customized the tags. There's an official DITA spec that is agreed upon by the DITA OASIS committee. Markdown doesn't have that kind of committee, so it evolves on its own as people choose to implement it.
 
 ## Why developers love Markdown
 
-In many development tools (particularly [static site generators](https://www.staticgen.com/)) you use for publishing documentation, many of them will use Markdown. For example, Github uses Markdown. If you upload files containing Markdown and use an md file extension, Github will automatically render the Markdown into HTML.
+In many development tools (particularly [static site generators](https://www.staticgen.com/)) that you use for publishing documentation, many of them will use Markdown. For example, Github uses Markdown. If you upload files containing Markdown and use an md file extension, Github will automatically render the Markdown into HTML.
 
 Markdown has appeal (especially by developers) for a number of reasons:
 
@@ -61,7 +61,7 @@ Markdown has appeal (especially by developers) for a number of reasons:
 
 ### Why not use a more semantically rich markup?
 
-Although you can also work with DITA in a text editor, it's a lot harder to read the code with all the XML tag syntax. For example, look at the tags required by DITA for a simple instruction about printing a page:
+Why not use a more semantically rich markup language like DITA? Although you can also work with DITA in a text editor, it's a lot harder to read the code with all the XML tag syntax. For example, look at the tags required by DITA for a simple instruction about printing a page:
 
 ```xml
 <task id="task_mhs_zjk_pp">
@@ -92,7 +92,7 @@ Now compare the same syntax with Markdown:
 ```
 
 I wrote about this in [Why developers will never adopt DITA
-](http://idratherbewriting.com/2014/09/30/why-developers-will-never-adopt-dita/). Granted, the XML example has a lot more semantic information packed into it, which the Markdown version lacks. So in theory the two aren't the same. However, the end result, if generated out to HTML, will probably look the same.
+](http://idratherbewriting.com/2014/09/30/why-developers-will-never-adopt-dita/). Granted, the XML example has a lot more semantic information packed into it, which the Markdown version lacks. So in theory the two don't have the same content, even though the output is the same. However, the end result, if generated out to HTML, will probably look the same.
 
 Although you can read the XML and get used to it, most people who write in XML use specialized XML editors (like OxygenXML) that make the raw text more readable. Simply by working in XML all day, you get used to working with all the tags.
 
@@ -100,25 +100,25 @@ Although you can read the XML and get used to it, most people who write in XML u
 
 But if you send a developer an XML file, they probably won't be familiar with all the tags, nor the nesting schema of the tags. Developers tend to be allergic to XML for at least these reasons:
 
-* Most developers usually don't want to expend energy learning an XML documentation format.
-* Most developers don't want to spend a lot of time in documentation, so when they do review content, the simpler the format, the better.
+* Most developers usually don't want to expend energy learning an XML documentation format. Their brains already hurt from all the programming they have to figure out, so with docs, they don't want to add to this technical burden.
+* Most developers don't want to spend a lot of time in documentation in the first place, so when they do review content, the simpler the format, the better.
 
 In contrast, Markdown allows you to easily read it and work with it in a text editor.
 
 {: .tip}
 Most text editors (for example, Sublime Text or Webstorm or Atom) have Markdown plugins/extensions that will create syntax highlighting based on Markdown tags.
 
-Another great thing about Markdown is that you can package up the Markdown files and run them through the same workflow as code. You can run diffs to see what changed, you can insert comments, and exert the same control as you do with regular code files. Working with Markdown files comes naturally to developers.
+Another great thing about Markdown (as opposed to binary tools like Word or Framemaker) is that you can package up the Markdown files and run them through the same workflow as code. You can run diffs to see what changed, you can insert comments, and exert the same control as you do with regular code files. Working with Markdown files comes naturally to developers. (Granted, you can also work with DITA in plain text files and manage the content in Git repositories.)
 
 ## Drawbacks of Markdown
 
-Markdown has a few drawbacks:
+Markdown does have a few drawbacks:
 
 * **Limited to HTML tags**: You're pretty much limited to HTML tags. For the times when Markdown doesn't offer shortcut for the HTML, you juse use HTML directly. XML advocates like to emphasize how XML offers semantic tagging (and avoids the div soup that HTML can become). However, HTML5 offers many semantic tags (such as `section`, `header`, `footer`, etc), and even for those times in which there aren't any unique HTML elements, all XML structures that transform into HTML become bound by the limits of HTML anyway.
 
 * **Non-standard**: Because Markdown is non-standard, it can be a bit of a guessing game as to what is supported by the Markdown processor you may be using. By and large, the Github flavor of Markdown is the most commonly used, as it allows you to add syntax classes to code samples and use tables. Whatever system you adopt, if it uses Markdown, make sure you undereStructuredTextand what type of Markdown it supports.
 
-* **White space sensitivity**: Markdown is white-space sensitive, which can be frustrating at times. If you have spaces where there shouldn't be, the extra spaces can cause formatting issues. For example, if you don't indent blank spaces in a list, it will restart the list. As a result, with Markdown formatting, it's easy to make errors. Documents still render as valid even if the Markdown conversion to HTML is problematic. It can be difficult to catch all the errors.
+* **White space sensitivity**: Markdown is white-space sensitive, which can be frustrating at times. If you have spaces where there shouldn't be, the extra spaces can cause formatting issues. For example, if you don't indent blank spaces in a list, it will restart the list. As a result, with Markdown formatting, it's easy to make errors. Documents usually still render broken Markdown as valid when they convert it to HTML, making it hard to catch formatting errors.
 
 ## Markdown and complexity
 

@@ -8,7 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-In the previous topic, we browsed through a long [survey of API doc sites](pubapis_apilist.html) and looked for similar patterns in their design. "Design patterns" are common approaches or techniques in the way something is designed. The following design patterns are common with API doc sites: structure and templates, website platforms, abundant code examples, lengthy pages, and interactive API explorers. I explore each of these elements in the following sections.
+In the previous topic, we browsed through a long [survey of API doc sites](pubapis_apilist.html) and looked for similar patterns in their designs. "Design patterns" are common approaches or techniques in the way something is designed. The following design patterns are common with API doc sites: structure and templates, single seamless website, abundant code examples, lengthy pages, and interactive API explorers. I explore each of these elements in the following sections.
 
 {% if site.format == "web" %}
 * TOC
@@ -17,7 +17,7 @@ In the previous topic, we browsed through a long [survey of API doc sites](pubap
 
 ## Pattern 1: Structure and templates {#structure_and_templates}
 
-One overriding commonality with API documentation is that they share a common structure, particularly with the reference documentation around the endpoints. In an earlier section, we explored the common sections in [endpoint documentation](docendpoints.html). The [non-reference topics](docnonref.html) also share similar topics, which I touched upon earlier as well.
+One overriding commonality with API documentation is that they share a common structure, particularly with the reference documentation around the endpoints. In an earlier section, we explored the common sections in [endpoint documentation](docendpoints.html).
 
 From a tool perspective, if you have common sections to cover with each endpoint, it makes sense to formalize a template to accommodate the publishing of that content. The template can provide consistency, automate publishing and styles, and allow you to more easily change the design without manually reformatting each section. (Without a template, you could just remember to add the exact same sections on each page, but this requires more effort to be consistent.) With a template, you can insert various values (descriptions, methods, parameters, etc.) into a highly stylized output, complete with div tags and other style classes.
 
@@ -97,7 +97,7 @@ $.post("http://api.myapp.com/books/", {
 {: title="jQuery" }
 ```
 
-(The `~~~` are alternate markup for backticks <code>&#96;&#96;&#96;</code>. `{: .success }` is [kramdown](https://kramdown.gettalong.org/) syntax for custom classes.) The theme author created a layout that iterates through these values and pushes the content into HTML formatting. If you look in the [Aviator's index.html file](https://github.com/CloudCannon/aviator-jekyll-template/blob/master/index.html), you'll see this code:
+(The `~~~` are alternate markup for backticks <code>&#96;&#96;&#96;</code>. The notation `{: .success }` is [kramdown](https://kramdown.gettalong.org/) syntax for custom classes.) The theme author created a layout that iterates through these values and pushes the content into HTML formatting. If you look in the [Aviator's index.html file](https://github.com/CloudCannon/aviator-jekyll-template/blob/master/index.html), you'll see this code:
 
 ```html
 {% raw %}{% assign sorted_collections = site.collections | sort: "position" %}
@@ -139,7 +139,7 @@ Note that this kind of structure is really only necessary if you have a lot of d
 
 I provided details with Jekyll only as an example. Many of the web platforms and technologies used implement a similar templating approach.
 
-When I worked at Badgeville, a gamification startup, we published using Drupal. We had a design agency construct a highly designed template in Drupal. To publish the API reference documentation, engineers wrote a custom script that generated the content from a database into a JSON file that we imported into Drupal. The import process populated various fields in the template.
+When I worked at Badgeville, a gamification startup, we published using Drupal. We had a design agency construct a highly designed template in Drupal. To publish the API reference documentation, engineers wrote a custom script that generated the content from a database into a JSON file that we then imported into Drupal. The import process populated various fields in the Drupal template.
 
 The resulting output was an eye-popping, visually appealing design. To achieve that kind of style in the UX, it would have certainly required a lot of custom div tags to apply classes and other scripts on the page. By separating the content from the template format, we could work with the content without worrying about the right style tags and other formatting.
 
@@ -147,19 +147,19 @@ As you look for documentation tools, keep in mind the need to templatize your AP
 
 Also note that you don't have to create your own templates to display API documentation. You can probably already see problems related to custom templates. The templates are entirely arbitrary, with terms and structure based on the designer's perceived needs and styles. If you write documentation to fit a specific template, what happens when you want to switch themes? You'd have to create new templates that parse through the same custom frontmatter. It's a lot of custom coding.
 
-Given that REST APIs follow similar characteristics and sections, wouldn't it make sense to create a standard in the way APIs are described, and then leverage tools that parse through these standard descriptions? *Yes!* That's what the OpenAPI specification is all about. Later in this course, I explain several [REST API description formats](pubapis_rest_specification_formats.html), and then launch into an extensive tutorial for the [OpenAPI specification](pubapis_openapi_tutorial_overview.html). Afterwards, I provide a tutorial for reading the OpenAPI specification using [Swagger UI](pubapis_swagger.html), along with an activity to [create your own Swagger UI](pubapis_swagger.html#create_swaggerui).
+Given that REST APIs follow similar characteristics and sections, wouldn't it make sense to create a standard in the way APIs are described, and then leverage tools that parse through these standard descriptions? *Yes!* That's what the OpenAPI specification is all about. Earlier in this course, I explained several [REST API description formats](pubapis_rest_specification_formats.html), and then launched into an extensive tutorial for the [OpenAPI specification](pubapis_openapi_tutorial_overview.html). I provided a tutorial for reading the OpenAPI specification using [Swagger UI](pubapis_swagger.html), along with an activity to [create your own Swagger UI](pubapis_swagger.html#create_swaggerui).
 
-My point here is that you shouldn't be daunted by the coding challenges around creating your own API templates. The Aviator theme shows one custom approach, and I highlight it here with code samples to demonstrate the complexity and custom-nature of defining your own templates.
+My point here is that you shouldn't be daunted by the coding challenges around creating your own API templates. The Aviator theme shows one custom approach, and I highlight it here with code samples to demonstrate the complexity and custom-nature of defining your own templates. But this isn't the only approach nor is it even the recommended approach.
 
 {% include random_ad2.html %}
 
-## Pattern 2: A website platform {#website_platform}
+## Pattern 2: A single seamless website {#website_platform}
 
 Many API doc sites provide *one integrated website* to present all of the information. You usually aren't opening help in a new window, separate from the other content. The website is branded with the same look and feel as the product. Here's an example from Yelp:
 
 <a href="https://www.yelp.com/developers/documentation" class="noExtIcon"><img src="images/yelpapi.png" alt="Yelp API documentation" /></a>
 
-I hinted at this earlier, but with API documentation, there isn't an application interface that the documentation complements. In most cases, the API documentation itself is the interface that users navigate to use your product. As such, users will expect more from it.
+I hinted at this earlier, but with API documentation, there usually isn't a GUI (graphical user interface) that the documentation complements. In most cases, the API documentation itself is the interface that users navigate to use your product. As such, users will expect more from it.
 
 One of the challenges in using documentation generated from [OpenAPI](pubapis_swagger_intro.html) or some other document generator is figuring out how to integrate it with the rest of the site. Ideally, you want users to have a seamless experience across the entire website. If your endpoints are rendered into their own separate view, how do you integrate the endpoint reference into the rest of the documentation?
 
@@ -171,7 +171,7 @@ Think about other content that users will interact with, such as Marketing conte
 
 The reality is that most API documentation sites are custom-designed websites that blend seamlessly with the other marketing content on the site, because your API doc must sell your API. As a website platform (rather than a tripane help output), you can leverage all the HTML, CSS, and JS techniques available in building websites. You aren't limited to a small subset of available tools that are allowed by your [HAT](pubapis_docs_as_code.html#hats); instead, you have the whole web landscape and toolset at your disposal.
 
-This open invitation to use the tools of the web to construct your API doc site is both a blessing and a challenge. A blessing because, for the most part, there's nothing you can't do with your docs. You're only limited by your lack of knowledge about front-end coding. But it's also a challenge because many of the needs you may have with docs (single sourcing, PDF, variables, and more) might not be readily available with common website tooling.
+This open invitation to use the tools of the web to construct your API doc site is both a benefit and a challenge. A benefit because, for the most part, there's nothing you can't do with your docs. You're only limited by your lack of knowledge about front-end coding. But it's also a challenge because many of the needs you may have with docs (single sourcing, PDF, variables, and more) might not be readily available with common website tooling.
 
 ## Pattern 3: Abundant code samples {#abundant_code_examples}
 
@@ -179,9 +179,9 @@ More than anything else, developers love [code examples](docapis_codesamples_bes
 
 <a href="https://dev.evernote.com/doc/articles/note-sharing.php" class="noExtIcon"><img src="images/evernotecodesamples.png" alt="Evernote code examples" /></a>
 
-The writers at Parse [emphasize the importance of code samples in docs](http://blog.parse.com/learn/engineering/designing-great-api-docs/), giving the following advice:
+James Yu at Parse gives the following advice:
 
->Liberally sprinkle real world examples throughout your documentation. No developer will ever complain that there are too many examples. They dramatically reduce the time for developers to understand your product. In fact, we even have example code right on our homepage.
+>Liberally sprinkle real world examples throughout your documentation. No developer will ever complain that there are too many examples. They dramatically reduce the time for developers to understand your product. In fact, we even have example code right on our homepage. ([Designing Great API Docs](https://www.pixelstech.net/article/1331352900-Designing-Great-API-Docs))
 
 For code samples, you'll want to incorporate syntax highlighting. The syntax highlighter colors different elements of the code sample appropriately based on the programming language. There are numerous syntax highlighters that you can usually incorporate into your platform. For example, Jekyll uses [rouge](https://github.com/jneen/rouge) by default. Another common highlighter is [pygments](http://pygments.org/). These highlighters have stylesheets prepared to highlight languages based on specific syntax.
 
@@ -195,17 +195,17 @@ Sometimes development shops have an official style guide for formatting code sam
 * Line breaks
 * Inline code comment styles
 
-For example, here's a [JavaScript style guide](http://google.github.io/styleguide/javascriptguide.xml). If developers don't have an official style guide, ask them to recommend one online, and compare the code samples against the guidelines in it. I dive [more into code samples](docapis_codesamples_bestpractices.html) in another topic.
+For example, here's a [JavaScript style guide](http://google.github.io/styleguide/javascriptguide.xml). If developers don't have an official style guide, ask them to recommend one online, and then compare the code samples against the guidelines in it. I dive [more into code samples](docapis_codesamples_bestpractices.html) in another topic.
 
 ## Pattern 4: Lengthy pages {#longish_pages}
 
-One of the most stark differences between regular end-user documentation and developer documentation is that developer doc pages tend to be much longer. In a [post on designing great API docs](http://blog.parse.com/learn/engineering/designing-great-api-docs/), the writers at Parse explain that short pages frustrate developers:
+One of the most stark differences between regular end-user documentation and developer documentation is that developer doc pages tend to be much longer. Again quoting from Yu's article on designing API docs, he says:
 
 >It's no secret that developers hate to click. Don't spread your documentation onto a million different pages. Keep related topics close to each other on the same page.
 >
 >We're big fans of long single page guides that let users see the big picture with the ability to easily zoom into the details with a persistent navigation bar. This has the great side effect that users can search all the content with an in-page browser search.
 >
->A great example of this is the Backbone.js documentation, which has everything at your fingertips.
+>A great example of this is the Backbone.js documentation, which has everything at your fingertips. ([Designing Great API Docs](https://www.pixelstech.net/article/1331352900-Designing-Great-API-Docs))
 
 The Backbone.js documentation takes this length to an extreme, publishing everything on one page:
 
@@ -248,7 +248,7 @@ Finally, I'd like to briefly mention some non-patterns in API documentation. In 
 * Video tutorials
 * PDFs
 * Commenting features
-* Translated sites
+* Localization
 * Single sourced outputs for different roles
 
-By non-patterns, it's not to say these elements aren't a good idea. But generally they aren't emphasized as primary requirements.
+By non-patterns, it's not to say these elements aren't a good idea. But generally they aren't emphasized as primary requirements in API documentation. If you get pressure to provide these outputs as part of your documentation requirements, look around to see how other API doc sites deliver it. Their frequent omission might inform your own decision and provide some support to make a case for or against the requirement.

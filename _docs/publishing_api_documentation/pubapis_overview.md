@@ -15,20 +15,6 @@ In earlier parts of this course, I used a [Weather API from OpenWeatherMap](http
 {:toc}
 {% endif %}
 
-## Video about publishing tools for API docs
-
-If you'd like to view a presentation I gave to the [Write the Docs South Bay chapter](http://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/ on this topic, you can view it here:
-
-{% if site.format == "kindle" or site.format == "pdf" %}
-This content doesn't embed well in print, as it contains YouTube videos. Please go to http://idratherbewriting.com/learnapidoc/pubapis_overview.html to view the content.
-{% elsif site.format == "web" %}
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/__vSXJn-JQo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-{% endif %}
-
-(For more details about this post, see my [writeup here](http://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/).)
-
 ## Why focus on publishing API docs?
 
 The first question about a focus on publishing API documentation might be, *why?* What makes publishing API documentation so different from publishing other kinds of documentation such that it would merit its own section? How and why does the approach with publishing API docs need to differ from the approach for publishing regular documentation?
@@ -41,11 +27,11 @@ However, as I started looking more at API documentation sites, primarily [those 
 
 Despite many advances with single sourcing, content re-use, conditional filtering, and other features in help authoring tools and content management systems, almost no API documentation sites on Programmableweb.com use them. Why is that? Why has the development community implicitly rejected tech comm tools and their many years of evolution?
 
-Granted, there is the occasional HAT, as with [Photobucket's API](http://bit.ly/photobucketlongurl), but they're rare. And it's even more rare to find an API doc site that structures the content in DITA (so far, [CouchDB](http://docs.couchdb.org/en/2.1.0/) is the only one I've come across).
+Granted, there is the occasional HAT, as with [Photobucket's API](http://bit.ly/photobucketlongurl), but they're rare. And it's even more rare to find an API doc site that structures the content in DITA.
 
-I asked a recruiter (who specializes in API documentation jobs in the Bay area) whether it was more advantageous to become adept with DITA or to learn a tool such as a static site generator, which is more common in the API space.
+I asked [Andrew Davis](http://www.synergistech.com/contact_us.html), who specializes in recruiting for API documentation jobs in the Bay area, whether it was more advantageous to become adept with DITA or to learn a tool such as a static site generator, which is more common in the API space.
 
-My recruiter friend knows the market &mdash; especially the Silicon Valley market &mdash; extremely well. Without hesitation, he urged me to pursue the static site generator route. He said many small companies, especially startups, are looking for writers who can publish documentation that looks beautiful, like the many modern web outputs on Programmableweb.
+Davis knows the market &mdash; especially the Silicon Valley market &mdash; extremely well. Without hesitation, he urged me to pursue the static site generator route. He said many small companies, especially startups, are looking for writers who can publish documentation that looks beautiful, like the many modern web outputs on Programmableweb.
 
 His response, and my subsequent emphasis on static site generators, led me to understand why traditional help authoring tools aren't used often in the API doc space. Here are 5 reasons:
 
@@ -55,13 +41,17 @@ If devs are going to contribute to docs (or write docs entirely themselves), the
 
 Why are engineers writing documentation in the first place, you might ask? Well, sometimes you really need engineers to contribute because the content is so technical, it's beyond the domain of non-specialists. If you want engineers to get involved, especially to write, you need to use developer tooling.
 
+If you're hoping for developers to contribute to the documentation, it's going to be hard to get buy-in if you're using a HAT. Additionally, almost no HAT runs on a Mac. Many developers and designers prefer Macs because they have a much better development platform (the command line is much friendlier and functional, for example).
+
+If most developers use Macs but you use a PC (to accommodate your HAT), you may struggle to install developer tools or to follow internal tutorials to get set up and test out content. Additionally, HATs often have steep license restrictions, whereas docs-as-code tools are often open source and can therefore scale across the company without budgetary funding and approval.
+
 {% include random_ad.html %}
 
 ### 2. HATs won't generate docs from source
 
 Ideally, engineers want to add annotations in their code and then generate the doc from those annotations. They've been doing this with Java and C++ code through Javadoc and Doxygen for the past 20 years (for a comprehensive list of these tools, see [Comparison of document generators in Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_documentation_generators)).
 
-Even for REST APIs, there are tools/libraries that will auto-generate documentation from source code annotations (such as from Java to a OpenAPI spec through [Codegen](https://swagger.io/swagger-codegen/)), but it's not something that HATs can do.
+Even for REST APIs, there are tools/libraries that will auto-generate documentation from source code annotations (such as from Java to a OpenAPI spec through [Swagger Codegen](https://swagger.io/swagger-codegen/)), but it's not something that HATs can do.
 
 ### 3. API doc follows a specific structure and pattern not modeled in any HAT
 
@@ -77,16 +67,37 @@ You won't find an [interactive API console](pubapis_design_patterns.html#interac
 
 Most output from HATs look dated and old. They look like a relic of the pre-2000 Internet era. (See [Tripane help and PDF files: past their prime?](http://www.robertdesprez.com/2013/01/18/tripane-help-and-pdfs-time-to-move-on/) from Robert Desprez.)
 
-With API documentation, often times the documentation *is* the product's interface &mdash; there isn't a separate product GUI (graphical user interface) that clients interact with. Because the product's GUI is the documentation, it has to be sexy and awesome.
+For example, here's a sample help output from Flare for the Photobucket API:
+
+<a href="http://bit.ly/photobucketlongurl" class="noExtIcon"><img src="images/hatphotobucket.png" alt="Publishing API docs" /></a>
+
+With API documentation, often times the documentation *is* the product's interface &mdash; there isn't a separate product GUI (graphical user interface) that clients interact with. Because the product's GUI is the documentation, it has to be sexy and attractive.
 
 Most tripane help doesn't make that cut. If the help looks old and frame-based, it doesn't instill much confidence toward the developers using it.
+
+In Flare's latest release, you *can* customize the display in pretty significant ways, so maybe it will help end the dated tripane output's appearance. Even so, the effort and process of skinning a HAT's output is usually drastically different from customizing the output from a static site generator. Web developers will be much more comfortable with the latter.
 
 ## A new direction: Static site generators
 
 Based on all of these factors, I decided to put DITA authoring on pause and try a new tool with my documentation: [Jekyll](pubapis_jekyll.html). I've come to love using Jekyll, which allows you to work primarily in Markdown, leverage Liquid for conditional logic, and initiate builds directly from a repository.
 
-I realize that not everyone has the luxury of switching authoring tools, but when I made the switch, my company was a startup, and we had only 3 authors and a minimal amount of legacy content. I wasn't burdened by a ton of legacy content or heavy processes, so I could innovate.
+I realize that not everyone has the luxury of switching authoring tools, but when I made the switch, my company was a startup, and we had only 3 authors and a minimal amount of legacy content. I wasn't burdened by a ton of documentation debt or heavy processes, so I could innovate.
 
-Jekyll is just one documentation publishing option in the API doc space. I enjoy working with it's [code-based approach](pubapis_docs_as_code.html), but there are [many different options and routes](pubapis_apilist.html) to explore.
+Jekyll is just one documentation publishing option in the API doc space. I enjoy working with it's [code-based approach](pubapis_docs_as_code.html), but there are [many different options and routes](pubapis_docs_as_code_tool_options.html) to explore.
 
 Now that I've hopefully established that traditional HATs aren't the go-to tools with API docs, let's explore various ways to publish API documentation. Most of these routes will take you away from traditional tech comm tools more toward more developer-centric tools.
+
+
+## Video about publishing tools for API docs
+
+If you'd like to view a presentation I gave to the [Write the Docs South Bay chapter](http://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/) on this topic, you can view it here:
+
+{% if site.format == "kindle" or site.format == "pdf" %}
+This content doesn't embed well in print, as it contains YouTube videos. Please go to http://idratherbewriting.com/learnapidoc/pubapis_overview.html to view the content.
+{% elsif site.format == "web" %}
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/__vSXJn-JQo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+{% endif %}
+
+(For more details about this post, see my [writeup here](http://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/).)

@@ -91,7 +91,7 @@ Browse a few of these documentation sites to get a sense of the variety, but als
 71. [IBM Watson docs](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/apis/)
 72. [HipChat API docs](https://www.hipchat.com/docs/apiv2)
 73. [Stores API docs](https://developer.bigcommerce.com/api/)
-74. [Alchemy API docs](http://www.alchemyapi.com/api/)
+74. [Alchemy API docs](https://www.ibm.com/watson/alchemy-api.html)
 75. [Indivo API 2.0 docs](http://docs.indivohealth.org/en/2.0/api.html)
 76. [Socrata API docs](http://dev.socrata.com/)
 77. [Github API docs](https://developer.github.com/v3/)
@@ -111,7 +111,7 @@ Browse a few of these documentation sites to get a sense of the variety, but als
 91.  [The Movie Database API docs](https://developers.themoviedb.org/3/getting-started)
 92.  [Free Music Archive API docs](https://freemusicarchive.org/api)
 93.  [Context.io docs](https://docs.context.io/#getting-started)
-94.  [CouchDB docs](http://docs.couchdb.org/en/2.0.0/api/)
+94.  [CouchDB docs](http://docs.couchdb.org)
 95.  [Smart Home API (Amazon Alexa) docs](https://developer.amazon.com/docs/device-apis/alexa-interface.html)
 96.  [Coinbase docs](https://developers.coinbase.com/api/v2)
 97.  [Shopify API docs](https://help.shopify.com/api/reference)
@@ -124,7 +124,7 @@ Browse a few of these documentation sites to get a sense of the variety, but als
 104. [Yext API](http://developer.yext.com/docs/)
 105. [Threat Stack API docs](https://apidocs.threatstack.com/v2/)
 
-{% include tip.html content="I last checked these links in January 2018. Given how fast the technology landscape changes, some links may be out of date. However, if you simply type <i>{product} + api docs</i> into Google's search, you will likely find the company's developer doc site. Most commonly, the API docs are at developer.{company}.com." %}
+{% include tip.html content="I last checked these links in July 2018. Given how fast the technology landscape changes, some links may be out of date. However, if you simply type <i>{product} + api docs</i> into Google's search, you will likely find the company's developer doc site. Most commonly, the API docs are at developer.{company}.com." %}
 
 ## Programmableweb<span>.</span>com: A directory of API doc sites on the open web
 
