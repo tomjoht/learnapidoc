@@ -8,7 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-Pretty much every IT shop uses some form of version control with their software code. Version control is how developers collaborate and manage their work. When you use docs-as-code tools, you'll invariably use version control such as Git. Version control is such an important element to learn, we'll dive more deeply into it here. To provide variety from the GitHub wikis tutorial, in this section, you'll use the GitHub Desktop client instead.
+Pretty much every IT shop uses some form of version control with their software code. Version control is how developers collaborate and manage their work. When you use docs-as-code tools, you'll probably also use version control such as Git. Version control is such an important element to learn, we'll dive more deeply into it here. To provide variety from the [GitHub wikis tutorial](pubapis_github_wikis.html), in this section we'll use the GitHub Desktop client instead.
 
 * TOC
 {:toc}
@@ -21,15 +21,15 @@ If you're working in API documentation, you'll most likely need to plug into you
 
 Many developers are extremely familiar with version control, but typically these systems aren't used much by technical writers because technical writers have traditionally worked with binary file formats, such as Microsoft Word and Adobe Framemaker. Binary file formats are readable only by computers, and version control systems do a poor job in managing binary files because you can't easily see changes from one version to the next.
 
-If you're working in a text file format, you can integrate your doc authoring and workflow into a version control system. If you do, a whole new world will open up to you.
+If you're working in a text file format, you can integrate your doc authoring and workflow into a version control system. When you do, a whole new world will open up to you.
 
 ## Different types of version control systems
 
 There are different types of version control systems. A _centralized_ version control system requires everyone to check out or synchronize files with a central repository when editing them. This setup isn't so common anymore, since working with files on a central server tends to be slow.
 
-More commonly, software shops use _distributed_ version control systems. The most common systems are probably Git and Mercurial. Largely due to the fact that GitHub provides repositories for free on the web, Git is the most common version control repository for web and open source projects, so we'll be focusing on it more. However, these two systems share the same concepts and workflows.
+More commonly, software shops use _distributed_ version control systems. The most common system is Git (probably because GitHub provides Git repositories for free on the web) so we'll be focusing on it here. Other version control systems include Mercurial, Subversion (SVN), and Perforce. However, Git is used most of the time, so we'll focus on it exclusively.
 
-<figure><a href="http://github.com" class="noExtIcon"><img src="images/githubhomepage.png" alt="Github" /></a><figcaption>Github's distributed version control system allows for a phenomenon called "social coding."</figcaption></figure>
+<figure><a href="http://github.com" class="noExtIcon"><img src="images/githubhomepage.png" alt="Github" /></a><figcaption>Github is a site that built tooling around Git."</figcaption></figure>
 
 Note that GitHub provides online repositories and tools for Git. However, Git and GitHub aren't the same. GitHub is simply a platform for managing Git projects.
 
@@ -41,7 +41,7 @@ When you install version control software such as Git and initialize a repositor
 
 {% include random_ad2.html %}
 
-When you add files to Git and commit them, Git takes a snapshot of that file at that point in time. When you commit another change, Git creates another snapshot. If you decide to revert to an earlier version of the file, you just revert to the particular snapshot. This is the basic idea of versioning content.
+When you add files to Git and commit them, Git takes a snapshot of the committed files at that point in time. When you commit another change, Git creates another snapshot. If you decide to revert to an earlier version of the file, you just revert to the particular snapshot. This is the basic idea of versioning content.
 
 ## Basic workflow with version control
 
@@ -57,3 +57,5 @@ There are many excellent tutorials on version control on the web, so I'll defer 
 Git's default repository is the "master" branch. When collaborating with others on the same project, usually people branch the master, make edits in the branch, and then merge the branch back into the master.
 
 If you're editing doc annotations in code files, you'll probably follow this same workflow &mdash; making edits in a special doc branch. When you're done, you'll create a pull request to have developers merge the doc branch back into the master.
+
+With that brief introduction to docs-as-code and version control, let's jump into a host of [authoring and publishing options for developer documentation](pubapis_docs_as_code_tool_options.html).

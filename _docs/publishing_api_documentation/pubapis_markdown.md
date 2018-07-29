@@ -122,7 +122,7 @@ Markdown does have a few drawbacks:
 
 ## Markdown and complexity
 
-If you need more complexity than Markdown offers, a lot of tools will leverage other templating languages, such as [Liquid](https://docs.shopify.com/themes/liquid-documentation/basics) or [Coffeescript](http://coffeescript.org/). Many times these other processing languages will fill in the gaps for Markdown and provide you with the ability to create includes, conditional attributes, conditional text, and more.
+If you need more complexity than what Markdown or HTML offers, a lot of tools will leverage other templating languages, such as [Liquid](https://docs.shopify.com/themes/liquid-documentation/basics) or [Coffeescript](http://coffeescript.org/). Many times these other processing languages (often like a lightweight JavaScript) will fill in the gaps for Markdown and provide you with the ability to create includes, conditional attributes, conditional text, and more.
 
 For example, if you're using Jekyll, you have access to a lot of advanced scripting functionality. You can use variables, for loops, sorting, and a host of other functionality. For a detailed comparison of how to achieve the same DITA functionality within Jekyll, see my series [Jekyll versus DITA](http://idratherbewriting.com/2015/03/23/new-series-jekyll-versus-dita/). In this series, I cover the following:
 
@@ -133,143 +133,10 @@ For example, if you're using Jekyll, you have access to a lot of advanced script
 * [Producing PDFs](http://idratherbewriting.com/2015/04/14/producing-pdfs-in-dita-versus-jekyll/)
 * [Creating links](http://idratherbewriting.com/2015/04/06/creating-links-in-dita-versus-jekyll/)
 
-## Analyzing a Markdown sample
-
-Take a look at the following Github-Flavored-Markdown content. Try to identify the various Markdown syntax used.
-
-<pre>
-# surfreport/{beachId}
-
-Returns information about surfing conditions at a specific beach ID, including the surf height, water temperature, wind, and tide. Also provides an overall recommendation about whether to go surfing.
-
-`{beachId}` refers to the ID for the beach you want to look up. All Beach ID codes are available from our site.
-
-## Endpoint definition
-
-`surfreport/{beachId}`
-
-## HTTP method
-
-&lt;span class="label label-primary"&gt;GET&lt;/span&gt;
-
-## Parameters
-
-| Parameter | Description | Data Type |
-|-----------|------|-----|-----------|
-| days | *Optional*. The number of days to include in the response. Default is 3. | integer |
-| time | *Optional*. If you include the time, then only the current hour will be returned in the response.| integer. Unix format (ms since 1970) in UTC. |
-
-## Sample request
-
-```
-curl -I -X GET "http://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
-```
-
-## Sample response
-
-```json
-{
-    "surfreport": [
-        {
-            "beach": "Santa Cruz",
-            "monday": {
-                "1pm": {
-                    "tide": 5,
-                    "wind": 15,
-                    "watertemp": 80,
-                    "surfheight": 5,
-                    "recommendation": "Go surfing!"
-                },
-                "2pm": {
-                    "tide": -1,
-                    "wind": 1,
-                    "watertemp": 50,
-                    "surfheight": 3,
-                    "recommendation": "Surfing conditions are okay, not great."
-                },
-                "3pm": {
-                    "tide": -1,
-                    "wind": 10,
-                    "watertemp": 65,
-                    "surfheight": 1,
-                    "recommendation": "Not a good day for surfing."
-                }
-            }
-        }
-    ]
-}
-```
-
-The following table describes each item in the response.
-
-|Response item | Description |
-|----------|------------|
-| **beach** | The beach you selected based on the beach ID in the request. The beach name is the official name as described in the National Park Service Geodatabase. |
-| **{day}** | The day of the week selected. A maximum of 3 days get returned in the response. |
-| **{time}** | The time for the conditions. This item is only included if you include a time parameter in the request. |
-| **{day}/{time}/tide** | The level of tide at the beach for a specific day and time. Tide is the distance inland that the water rises to, and can be a positive or negative number. When the tide is out, the number is negative. When the tide is in, the number is positive. The 0 point reflects the line when the tide is neither going in nor out but is in transition between the two states. |
-| **{day}/{time}/wind** | The wind speed at the beach, measured in knots per hour or kilometers per hour depending on the units you specify. Wind affects the surf height and general wave conditions. Wind speeds of more than 15 knots per hour make surf conditions undesirable, since the wind creates white caps and choppy waters. |
-| **{day}/{time}/watertemp** | The temperature of the water, returned in Farenheit or Celsius depending upon the units you specify. Water temperatures below 70 F usually require you to wear a wetsuit. With temperatures below 60, you will need at least a 3mm wetsuit and preferably booties to stay warm.|
-| **{day}/{time}/surfheight** | The height of the waves, returned in either feet or centimeters depending on the units you specify. A surf height of 3 feet is the minimum size needed for surfing. If the surf height exceeds 10 feet, it is not safe to surf. |
-| **{day}/{time}/recommendation** | An overall recommendation based on a combination of the various factors (wind, watertemp, surfheight). Three responses are possible: (1) "Go surfing!", (2) "Surfing conditions are okay, not great", and (3) "Not a good day for surfing." Each of the three factors is scored with a maximum of 33.33 points, depending on the ideal for each element. The three elements are combined to form a percentage. 0% to 59% yields response 3, 60% - 80% and below yields response 2, and 81% to 100% yields response 3. |
-
-## Error and status codes
-
-The following table lists the status and error codes related to this request.
-
-| Status code | Meaning |
-|--------|----------|
-| 200 | Successful response |
-| 400 | Bad request -- one or more of the parameters was rejected. |
-| 4112 | The beach ID was not found in the lookup. |
-
-## Code example
-
-The following code samples shows how to use the surfreport endpoint to get the surf conditions for a specific beach. In this case, the code is just showing the overall recommendation about whether to go surfing.
-
-```html
-&lt;html&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;title&gt;Sample Page&lt;/title&gt;
-
-&lt;script&gt;
-var settings = {
-  &quot;async&quot;: true,
-  &quot;crossDomain&quot;: true,
-  &quot;url&quot;: &quot;http://api.openweathermap.org/data/2.5/surfreport?zip=95050&amp;appid=fd4698c940c6d1da602a70ac34f0b147&amp;units=imperial&amp;days=2&quot;,
-  &quot;method&quot;: &quot;GET&quot;
-}
-
-$.ajax(settings).done(function (response) {
-  console.log(response);
-
-  var content = response.surfreport.conditions;
-  $(&quot;#surfReportConditions&quot;).append(content);
-
-});
-&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;h1&gt;Sample Page&lt;/h1&gt;
-
-&lt;div id=&quot;surfReportConditions&quot;&gt;Surf report conditions: &lt;/div&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-```
-
-In this example, the `ajax` method from jQuery is used because it allows cross-origin resource sharing (CORS) for the weather resources. In the request, you submit the authorization through the header rather than directly in the endpoint path. The endpoint limits the days returned to 1 in order to increase the download speed.
-
-For simple demo purposes, the response is assigned to the `data` argument of the success method, and then written out to the `output` tag on the page. We're just getting the surfing recommendation, but there's a lot of other data you could choose to display.
-</pre>
-
-Look at about 5 different APIs (choose any of those listed on the page). Look for one thing that the APIs have in common.
-
+## Markdown activity
 {% include activity.html %}
 
-On your Github wiki page, edit the page and create the following:
+To get a sense of how Markdown works, go to an online Markdown editor (such as [this one])  and create the following:
 
 * Numbered list
 * Bulleted list
@@ -277,11 +144,13 @@ On your Github wiki page, edit the page and create the following:
 * Code sample with HTML highlighting
 * Level 2 heading
 
-## Limitations in Markdown
-
 Markdown handles most of the syntax I normally use, but for tables, I recommend simply using HTML syntax. HTML syntax gives you more control over column widths, which can be important when customizing tables, especially if the tables have code tags.
 
-If you're using a static site generator, see the markdown processor used to convert the Markdown into HTML. With Jekyll, the default Markdown processor is [kramdown](https://kramdown.gettalong.org/). kramdown gives you more capabilities than the basic Markdown. For example, in kramdown, you can add a class to any element like this:
+## Markdown and static site generators
+
+If you're using a static site generator, see the specific Markdown syntax used. With Jekyll, the default Markdown is [kramdown](https://kramdown.gettalong.org/).
+
+kramdown gives you more capabilities than the basic Markdown. For example, in kramdown, you can add a class to any element like this:
 
 ```liquid
 {: .note}
@@ -294,13 +163,13 @@ The HTML will be rendered like this:
 <p class="note">This is a note.</p>
 ```
 
-Kramdown also lets you use Markdown inside of HTML elements (which is usually not allowed). If you add `markdown="span" or markdown="block"` attribute to an element, the content will be processed as either an inline span or a block div element. See [Syntax](https://kramdown.gettalong.org/syntax.html) in the kramdown documentation for more details.
+kramdown also lets you use Markdown inside of HTML elements (which is usually not allowed). If you add `markdown="span"` or `markdown="block"` attribute to an element, the content will be processed as either an inline `span` or a block `div` element. See [Syntax](https://kramdown.gettalong.org/syntax.html) in the kramdown documentation for more details.
 
 ## What about reStructuredText and Asciidoc? {#rst_and_asciidoc}
 
-If you're using lightweight markup, you might be interested in exploring [reStructured Text (rST)](http://docutils.sourceforge.net/reStructuredText.html) or Asciidoc. reStructuredText is similar to Markdown, in that it offers lightweight wiki-like syntax for more complex HTML. However, reStructuredText is more semantically rich than Markdown (for example, there's syntax for notes or warnings, and for Python classes).
+If you're using lightweight markup, you might be interested in exploring [reStructured Text (rST)](http://docutils.sourceforge.net/reStructuredText.html) or [Asciidoc](http://asciidoc.org/). reStructuredText is similar to Markdown, in that it offers lightweight wiki-like syntax for more complex HTML. However, reStructuredText is more semantically rich than Markdown (for example, there's syntax for notes or warnings, and for Python classes).
 
-reStructuredText can be extended, doesn't have a dozen Markdown flavors, and gives you more features specific to writing technical documentation, such as cross-references. See [reStructuredText vs Markdown for documentation](http://zverovich.net/2016/06/16/reStructuredText-vs-markdown.html) for a more detailed comparison. If you're using [Sphinx](http://www.sphinx-doc.org/en/stable/), you'll want to use reStructuredText.
+reStructuredText can be extended, follows a standard (rather than having many variants), and gives you more features specific to writing technical documentation, such as cross-references. See [reStructuredText vs Markdown for documentation](http://zverovich.net/2016/06/16/reStructuredText-vs-markdown.html) for a more detailed comparison. If you're using [Sphinx](http://www.sphinx-doc.org/en/stable/), you'll want to use reStructuredText.
 
 [Asciidoc](http://asciidoc.org/) also offers more semantic richness and standardization. Asciidoc provides syntax for tables, footnotes, cross-references, videos, and more. In fact, Asciidoc "was initially designed as a plain-text alternative to the DocBook XML schema" ([asciidoc-vs-markdown.adoc](https://github.com/asciidoctor/asciidoctor.org/blob/master/docs/_includes/asciidoc-vs-markdown.adoc)). As with rST, you don't have the variety of flavors with Markdown, so you can process it more consistently. [Asciidoctor](http://asciidoctor.org/) is one static site generator that uses Asciidoc as the syntax. Both reStructuredText and Asciidoc (and other syntaxes) are [supported on GitHub](https://github.com/github/markup#markups).
 
@@ -316,18 +185,19 @@ Eric Holscher, co-founder of [Write the Docs](http://www.writethedocs.org/) and 
 
 There's merit to the argument, for sure. You might be able to switch Markdown flavors using a tool such as [Pandoc](https://pandoc.org/), or by converting the Markdown to HTML, and then converting the HTML to another Markdown flavor. However, switching tools will likely lead to a headache in updating the syntax in your content.
 
-Here's an example. For many years, Jekyll used [redcarpet](https://github.com/vmg/redcarpet) and [pygments](http://pygments.org/) to process Markdown and apply code syntax highlighting. However, to increase Windows support, Jekyll switched to [kramdown](https://kramdown.gettalong.org/) and [rouge](https://github.com/jneen/rouge) at version 3.0. (redcarpet and pygments are the engines that render Markdown to HTML.) It was supposed to be a seamless backend switch that wouldn't require any adjustment to existing Markdown. However, I found that kramdown imposed different requirements around spacing that broke a lot of my content, particularly around lists. I wrote about this issue here: [Updating from redcarpet and Pygments to Kramdown and Rouge on Github Pages](http://idratherbewriting.com/2016/02/21/bug-with-kramdown-and-rouge-with-github-pages/).
+Here's an example. For many years, Jekyll used [redcarpet](https://github.com/vmg/redcarpet) and [pygments](http://pygments.org/) to process Markdown and apply code syntax highlighting. However, to increase Windows support, Jekyll switched to [kramdown](https://kramdown.gettalong.org/) and [rouge](https://github.com/jneen/rouge) at version 3.0. It was supposed to be a seamless backend switch that wouldn't require any adjustment to your existing Markdown. However, I found that kramdown imposed different requirements around spacing that broke a lot of my content, particularly with lists. I wrote about this issue here: [Updating from redcarpet and Pygments to Kramdown and Rouge on Github Pages](http://idratherbewriting.com/2016/02/21/bug-with-kramdown-and-rouge-with-github-pages/).
 
-In many ways, my content requires tool support for kramdown-flavored Markdown and rouge syntax highlighting. However, I'm reluctant to switch to a more semantic lightweight syntax because tool support for Markdown in general, usually GitHub-flavored Markdown, it still much more widespread than support for reStructuredText or Asciidoc. Despite the many Markdown flavors, GitHub-flavored Markdown is probably the most common. kramdown is largely compatible with GitHub-flavored Markdown &mdash; it wouldn't be that difficult to migrate.
+In many ways, my blog requires tool support for kramdown-flavored Markdown and rouge syntax highlighting. However, I'm reluctant to switch to a more semantic lightweight syntax because tool support for Markdown in general, following GitHub-flavored Markdown, is still much more widespread than support for reStructuredText or Asciidoc. Despite the many Markdown flavors, GitHub-flavored Markdown is probably the most common. kramdown is largely compatible with GitHub-flavored Markdown &mdash; it wouldn't be that difficult to migrate.
 
-Additionally, developers tend to be familiar with Markdown but not reStructuredText or Asciidoc. If you want to encourage collaboration with developers, you might encounter more resistance by forcing them to write in reStructuredText or Asciidoc. Simplicity tends to win out in the end, and Markdown has clear momentum in the lightweight syntax arena. I imagine that in 10 years, reStructuredText and Asciidoc will be dwarfed in the same way that RAML and API Blueprint are dwarfed by the OpenAPI spec.
+Additionally, developers tend to be familiar with Markdown but not reStructuredText or Asciidoc. If you want to encourage collaboration with developers, you might encounter more resistance by forcing them to write in reStructuredText or Asciidoc. Simplicity tends to win out in the end, and Markdown has clear momentum in the lightweight syntax arena. I imagine that in 10 years, reStructuredText and Asciidoc will be dwarfed in the same way that RAML and API Blueprint were dwarfed by the OpenAPI spec.
 
-Further, the OpenAPI spec actually lets you use CommonMark Markdown in `description` elements, which might make Markdown a better choice for API documentation. As long as you use the Markdown elements that are common across most flavors, migration might not be as painful.
+Further, the [OpenAPI spec](pubapis_swagger_intro.html) actually lets you use [CommonMark Markdown](https://commonmark.org/) in `description` elements, which might make Markdown a better choice for API documentation. As long as you use the Markdown elements that are common across most flavors, migration might not be as painful.
 
 Overall, debates between Markdown, reStructuredText, and Asciidoc are pretty heated. You will find many for-and-against arguments for each lightweight syntax, as well as debates between XML and lightweight syntax.
 
 ## Lightweight DITA
 
-One problem with lightweight syntax is its incompatibility with larger content management systems. Component content management systems (CCMSs) typically require more structured content such as DITA. The DITA committee recently introduced a proposal for [Lightweight DITA](https://lists.oasis-open.org/archives/dita/201711/msg00029.html), which would allow you to use Markdown and HTML in your DITA projects.
+One problem with lightweight syntax is its incompatibility with larger content management systems. Component content management systems (CCMSs) typically require more structured content such as DITA. The DITA committee recently approved [Lightweight DITA](http://docs.oasis-open.org/dita/LwDITA/v1.0/cnprd01/LwDITA-v1.0-cnprd01.html), which will allow you to use GitHub-flavored Markdown and HTML in your DITA projects (assuming tool vendors support it &mdash; OxygenXML already [provides support for Markdown](https://www.oxygenxml.com/demo/Markdown.html)).
 
-Right now, the proposal is still in the process of being considered and accepted. After its acceptance, tool vendors will need to build in the support. (OxygenXML already [provides support for Markdown](https://www.oxygenxml.com/demo/Markdown.html).) In a few years, it will likely be more common for DITA systems to process Markdown. What flavor of Markdown will they adopt? GitHub-flavored Markdown.
+{: .tip}
+For more details about Lightweight DITA (LwDITA), see the [interview with Carlos Evia](http://idratherbewriting.com/2018/07/23/adventures-of-techie-academic-conversation-with-carlos-evia/) on my blog. Carlos is co-chair of the OASIS committee for LwDITA. 
