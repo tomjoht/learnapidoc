@@ -11,7 +11,7 @@ path1: /docapis_introtoapis.html
 I've given numerous presentations on API documentation, and I've recorded most of them. The most recent presentations are available below. Keep in mind that my API content evolves, so some older presentations might no longer match the course content.
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-This content doesn't embed well in print, as it contains YouTube videos. Please go to http://idratherbewriting.com/learnapidoc/docapis_course_videos.html to view the content.
+This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/docapis_course_videos.html to view the content.
 {% endif %}
 
 {% if site.format == "web" %}
@@ -76,7 +76,7 @@ If you're driving across the country and you want to listen to all audio combine
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/__vSXJn-JQo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-This is a presentation I gave to the WTD South Bay group -- more details are  [here](http://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/). This video covers the [Publishing API docs](http://idratherbewriting.com/learnapidoc/pubapis_overview.html) section in this course.
+This is a presentation I gave to the WTD South Bay group -- more details are  [here](https://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/). This video covers the [Publishing API docs](https://idratherbewriting.com/learnapidoc/pubapis_overview.html) section in this course.
 
 
 {: .tip}
@@ -93,9 +93,9 @@ The following are other video recordings for API-related presentations:
 
 I gave this presentation to the STC Silicon Valley chapter -- more details are [here](https://idratherbewriting.com/2017/11/19/upcoming-api-doc-presentation-stc-sv-chapter/). This video covers these course sections:
 
-* [Introduction to REST APIs](http://idratherbewriting.com/learnapidoc/docapis_introtoapis.html)
-* [Using a REST API as a developer](http://idratherbewriting.com/learnapidoc/likeadeveloper.html)
-* [Documenting API reference topics](http://idratherbewriting.com/learnapidoc/docendpoints.html)
+* [Introduction to REST APIs](https://idratherbewriting.com/learnapidoc/docapis_introtoapis.html)
+* [Using a REST API as a developer](https://idratherbewriting.com/learnapidoc/likeadeveloper.html)
+* [Documenting API reference topics](https://idratherbewriting.com/learnapidoc/docendpoints.html)
 
 ### Docs as code tools and workflows
 
@@ -107,27 +107,27 @@ This is a presentation I gave to STC/WTD Denver -- more details are [here](https
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/gcDSL-8pkvU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-This was a presentation I gave to the STC/WTD San Diego chapter (more details are [here](http://idratherbewriting.com/2018/02/14/openapi-and-swagger-presentation/). This video covers the [OpenAPI specification and Swagger](http://idratherbewriting.com/learnapidoc/restapispecifications.html) section.
+This was a presentation I gave to the STC/WTD San Diego chapter (more details are [here](https://idratherbewriting.com/2018/02/14/openapi-and-swagger-presentation/). This video covers the [OpenAPI specification and Swagger](https://idratherbewriting.com/learnapidoc/restapispecifications.html) section.
 
 
 ### How to Add Swagger to your API
 
-I gave this presentation as a TC Dojo webinar (more details are [here](http://idratherbewriting.com/2017/01/17/swagger-presentation-documenting-rest-apis/)). It covers the [OpenAPI specification and Swagger](http://idratherbewriting.com/learnapidoc/restapispecifications.html) section in this course.
+I gave this presentation as a TC Dojo webinar (more details are [here](https://idratherbewriting.com/2017/01/17/swagger-presentation-documenting-rest-apis/)). It covers the [OpenAPI specification and Swagger](https://idratherbewriting.com/learnapidoc/restapispecifications.html) section in this course.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/wC5hxY0RItQ" frameborder="0" allowfullscreen></iframe>
 
 ### Sacramento API workshop
 
-For a longer (and older) video, here's a recording from a 4-hour workshop I gave to the STC Sacramento chapter (more details about the workshop are [here](http://idratherbewriting.com/2016/03/27/rest-api-workshop-recording-sacramento-stc/)).
+For a longer (and older) video, here's a recording from a 4-hour workshop I gave to the STC Sacramento chapter (more details about the workshop are [here](https://idratherbewriting.com/2016/03/27/rest-api-workshop-recording-sacramento-stc/)).
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/GerbihyUpdo" frameborder="0" allowfullscreen></iframe>
 
 ### India API workshop
 
-Here'a recording of an API workshop I gave in India a while back (more details are [here](http://idratherbewriting.com/2015/03/19/recording-of-api-documentation-workshop-rest-and-javadoc-at-tcworld-india-2015/)). In contrast to other videos, this one includes (near the last 30 min.) some of the [Java API parts of the course](nativelibraryapis.html).
+Here'a recording of an API workshop I gave in India a while back (more details are [here](https://idratherbewriting.com/2015/03/19/recording-of-api-documentation-workshop-rest-and-javadoc-at-tcworld-india-2015/)). In contrast to other videos, this one includes (near the last 30 min.) some of the [Java API parts of the course](nativelibraryapis.html).
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/zYDW6Pw26ls" frameborder="0" allowfullscreen></iframe>
 
-For more details about past presentations, see [Presentations](http://idratherbewriting.com/presentations/) on my blog.
+For more details about past presentations, see [Presentations](https://idratherbewriting.com/presentations/) on my blog.
 
 {% endif %}

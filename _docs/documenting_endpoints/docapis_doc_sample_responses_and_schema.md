@@ -8,7 +8,7 @@ sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
 redirect_from:
-- http://idratherbewriting.com/learnapidoc/docapis_doc_sample_responses.html
+- https://idratherbewriting.com/learnapidoc/docapis_doc_sample_responses.html
 ---
 
 {% include workflow_map.html step="5" map="content/reference_doc_map.html"  %}
@@ -33,15 +33,15 @@ And the response **Schema** on another tab:
 
 The definition of the response is called the *schema* or *model* (the terms are used synonymously), and aligns with the [JSON schema language and descriptions](http://json-schema.org/). What works particularly well with the SendGrid example is the use of expand/collapse tags to mirror the same structure as the example, with objects at different levels.
 
-Swagger UI also provides both an example value and a schema or model. For example, in the sample Sunset and Sunrise Times API doc that I used for the [SwaggerUI activity](http://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset) (which comes later in the course), you can see a distinction between the response example and the response schema. Here's the **Example Value**:
+Swagger UI also provides both an example value and a schema or model. For example, in the sample Sunset and Sunrise Times API doc that I used for the [SwaggerUI activity](https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset) (which comes later in the course), you can see a distinction between the response example and the response schema. Here's the **Example Value**:
 
-<a class="noExtIcon" href="http://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset"><img src="images/sunriseexample.png" alt="Sunrise example value" /></a>
+<a class="noExtIcon" href="https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset"><img src="images/sunriseexample.png" alt="Sunrise example value" /></a>
 
 The example response should correspond with the example request. Just as the request example might only include a subset of all possible parameters, the response example might also be a subset of all possible returned information.
 
 However, the *response schema* is comprehensive of all possible properties returned in the response. This is why you need both a response example and a response schema. Here's the response schema for the Sunrise and sunset API:
 
-<a class="noExtIcon" href="http://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset"><img src="images/sunrisemodelexample.png" alt="Sunrise model" /></a>
+<a class="noExtIcon" href="https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset"><img src="images/sunrisemodelexample.png" alt="Sunrise model" /></a>
 
 The schema or model provides the following:
 
@@ -79,7 +79,7 @@ Many times the response contains nested objects (objects within objects), or has
 
 Tables are most commonly used. In [Peter Gruenbaum's API tech writing course on Udemy](https://www.udemy.com/api-documentation-1-json-and-xml/), Gruenbaum represents the nested objects using tables with various columns:
 
-<a href="http://idratherbewriting.com/2015/05/22/api-technical-writing-course-on-udemy/" class="noExtIcon"><img src="images/gruenbaumtable.png" alt="Peter Gruenbaum course" /></a>
+<a href="https://idratherbewriting.com/2015/05/22/api-technical-writing-course-on-udemy/" class="noExtIcon"><img src="images/gruenbaumtable.png" alt="Peter Gruenbaum course" /></a>
 
 Gruenbaum's use of tables is mostly to reduce the emphasis on tools and place it more on the content.
 

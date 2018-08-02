@@ -53,7 +53,7 @@ Here's a demo of Run in Postman using the OpenWeatherMap API's `weather` endpoin
 
 {% if site.format == "pdf" or site.format == "kindle" %}
 
-To view this code, go to [http://idratherbewriting.com/learnapidoc/docapis_doc_getting_started_section.html##postman](http://idratherbewriting.com/learnapidoc/docapis_doc_getting_started_section.html#postman).
+To view this code, go to [https://idratherbewriting.com/learnapidoc/docapis_doc_getting_started_section.html##postman](https://idratherbewriting.com/learnapidoc/docapis_doc_getting_started_section.html#postman).
 
 {% elsif site.format == "web" %}
 

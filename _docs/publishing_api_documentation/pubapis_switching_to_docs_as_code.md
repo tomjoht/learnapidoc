@@ -242,7 +242,7 @@ I have a slide presentation that covers topics listed in this article:
 
 <a class="noCrossRef" href="https://github.com/tomjoht/docs-as-code-tools-and-workflows"><img src="images/docsascodepresotitle.png"/></a>.
 
-These slides are for an [upcoming presentation](http://idratherbewriting.com/2018/01/29/docs-as-code-tools-and-workflows-denver-presentation/) I'm giving on this topic.
+These slides are for an [upcoming presentation](https://idratherbewriting.com/2018/01/29/docs-as-code-tools-and-workflows-denver-presentation/) I'm giving on this topic.
 
 Additionally, this content was republished here in the [Developer Portals e-Magazine Winter 2018](https://pronovix.com/e-books/developer-portals-e-magazine-winter-2018), by Pronovix:
 
@@ -257,10 +257,10 @@ To Learn more about docs as code, see Anne Gentle's book [Docs Like Code](https:
 
 ## Video recording
 
-I recently [gave a presentation on Docs-as-code tools and workflows](http://idratherbewriting.com/2018/03/09/docs-as-code-tools-and-workflows-denver-presentation/) to the STC Rocky Mountain and WTD Denver group.
+I recently [gave a presentation on Docs-as-code tools and workflows](https://idratherbewriting.com/2018/03/09/docs-as-code-tools-and-workflows-denver-presentation/) to the STC Rocky Mountain and WTD Denver group.
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-This content doesn't embed well in print, as it contains YouTube videos. Please go to http://idratherbewriting.com/learnapidoc/pubapis_overview.html to view the content.
+This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/pubapis_overview.html to view the content.
 {% elsif site.format == "web" %}
 
 <iframe  width="640" height="360" src="https://www.youtube.com/embed/Z3e_38WS-2Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -271,6 +271,6 @@ This content doesn't embed well in print, as it contains YouTube videos. Please 
 
 To read some other docs-as-code posts on my blog, see the following:
 
-* [Discoveries and realizations while walking down the Docs-as-Code path](http://idratherbewriting.com/2017/08/23/content-architecture-and-repo-sizes/)
-* [Limits to the idea of treating docs as code](http://idratherbewriting.com/2017/06/02/when-docs-are-not-like-code/)
-* [Will the docs-as-code approach scale? Responding to comments on my Review of Modern Technical Writing](http://idratherbewriting.com/2016/08/01/responding-to-feedback-on-modern-tech-writing-review/)
+* [Discoveries and realizations while walking down the Docs-as-Code path](https://idratherbewriting.com/2017/08/23/content-architecture-and-repo-sizes/)
+* [Limits to the idea of treating docs as code](https://idratherbewriting.com/2017/06/02/when-docs-are-not-like-code/)
+* [Will the docs-as-code approach scale? Responding to comments on my Review of Modern Technical Writing](https://idratherbewriting.com/2016/08/01/responding-to-feedback-on-modern-tech-writing-review/)

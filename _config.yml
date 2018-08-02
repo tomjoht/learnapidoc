@@ -4,7 +4,7 @@ format: web
 sidebar: docapis
 
 # Link to home
-url: http://idratherbewriting.com
+url: https://idratherbewriting.com
 baseurl: /learnapidoc
 
 destination: _site

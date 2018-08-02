@@ -183,6 +183,6 @@ To add a little variety to the code samples, here's one that's a bit different. 
 </html>
 ```
 
-Here's the <a href="http://idratherbewriting.com/learnapidoc/assets/files/aeris-observations.html">result</a>:
+Here's the <a href="https://idratherbewriting.com/learnapidoc/assets/files/aeris-observations.html">result</a>:
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/aeris-observations.html" class="noExtIcon"><img src="images/notthatwindy.png" alt="Aeris Weather example" /></a>
+<a href="https://idratherbewriting.com/learnapidoc/assets/files/aeris-observations.html" class="noExtIcon"><img src="images/notthatwindy.png" alt="Aeris Weather example" /></a>

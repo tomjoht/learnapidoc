@@ -27,7 +27,7 @@ Start at the high-level, getting a gist of what something is about from the titl
 {% include course_image.html size="medium" border="true" filename="nonref_overview" ext_print="png" ext_web="svg" alt="API overview" caption="The API overview provides high-level detail about the purpose, audience, and market need for your API." %}
 
 {: .tip}
-For more details on the importance of high-level overviews, see [Reduction, layering, and distillation as a strategy for simplicity](http://idratherbewriting.com/simplifying-complexity/reduction-layering-distillation.html).
+For more details on the importance of high-level overviews, see [Reduction, layering, and distillation as a strategy for simplicity](https://idratherbewriting.com/simplifying-complexity/reduction-layering-distillation.html).
 
 In the overview, list some common business scenarios in which the API might be useful. This will give people the context they need to evaluate whether the API is relevant to their needs.
 

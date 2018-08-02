@@ -5,7 +5,7 @@ navbar_singleitems:
 # topnav:
 - items:
   - title: Blog
-    url: http://idratherbewriting.com
+    url: https://idratherbewriting.com
   - title: Contact
     url: contact.html
   - title: Presentations
@@ -23,7 +23,7 @@ navbar_singleitems:
 #         - title: Jekyll on Stack Overflow
 #           external_url: http://stackoverflow.com/questions/tagged/jekyll
 #         - title: Jekyll on my blog
-#           external_url: http://idratherbewriting.com/category-jekyll/
+#           external_url: https://idratherbewriting.com/category-jekyll/
 #     - title: Products
 #       folderitems:
 #         - title: Jekyll Documentation Theme

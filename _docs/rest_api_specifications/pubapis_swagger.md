@@ -7,7 +7,7 @@ weight: 7.5
 section: restapispecifications
 path1: /restapispecifications.html
 redirect_from:
-- http://idratherbewriting.com/pubapis_swagger/
+- https://idratherbewriting.com/pubapis_swagger/
 ---
 
 [Swagger UI](https://github.com/swagger-api/swagger-ui) provides a display framework that reads an [OpenAPI specification document](https://github.com/OAI/OpenAPI-Specification) and generates an interactive documentation website. This tutorial shows you how to use the Swagger UI interface and how to integrate an OpenAPI specification document into the standalone distribution of Swagger UI.
@@ -142,16 +142,16 @@ You'll notice the documentation is short and sweet in a Swagger UI implementatio
 
 {% include activity.html %}
 
-In this activity, you'll create a Swagger UI display for the weather endpoint in this [OpenWeatherMap API](http://openweathermap.org/current). (If you're jumping around in the documentation, this is a simple API that we used in earlier parts of the course.) You can see a demo of what we'll build [here](http://idratherbewriting.com/learnapidoc/assets/files/swagger/).
+In this activity, you'll create a Swagger UI display for the weather endpoint in this [OpenWeatherMap API](http://openweathermap.org/current). (If you're jumping around in the documentation, this is a simple API that we used in earlier parts of the course.) You can see a demo of what we'll build [here](https://idratherbewriting.com/learnapidoc/assets/files/swagger/).
 
-{% include course_image.html url="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" filename="swagger_full_result" size="medium" ext_print="png" ext_web="png" alt="" caption="Demo of Swagger UI rendering an OpenWeatherMap OpenAPI specification document" %}
+{% include course_image.html url="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" filename="swagger_full_result" size="medium" ext_print="png" ext_web="png" alt="" caption="Demo of Swagger UI rendering an OpenWeatherMap OpenAPI specification document" %}
 
 {: .tip}
 You can also follow instructions for working with Swagger UI in the [Swagger.io docs](https://swagger.io/docs/swagger-tools/#swagger-ui-documentation-29).
 
 **To integrate your OpenAPI spec into Swagger UI:**
 
-1.  If you don't already have an OpenAPI specification document, follow the [OpenAPI tutorial here](pubapis_openapi_tutorial_overview.html) to create one. The tutorial here focuses on Swagger UI, so for convenience, you can also copy [this sample OpenAPI file](http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) by right-clicking the link and saving the file ("openapi_openweathermap.yml") to your desktop.
+1.  If you don't already have an OpenAPI specification document, follow the [OpenAPI tutorial here](pubapis_openapi_tutorial_overview.html) to create one. The tutorial here focuses on Swagger UI, so for convenience, you can also copy [this sample OpenAPI file](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) by right-clicking the link and saving the file ("openapi_openweathermap.yml") to your desktop.
 
     {: .tip}
     If you want to preview what your Swagger UI implementation will look like ahead of time, copy the content from the OpenAPI specification document you just downloaded into the [Swagger online editor](http://editor.swagger.io/#/). The view on the right of the Swagger Editor shows a fully functional Swagger UI display.
@@ -181,7 +181,7 @@ You can also follow instructions for working with Swagger UI in the [Swagger.io 
 
     We won't get too much into the details of these parameters here. I just want to call attention to them here for awareness. Swagger UI provides a number of [parameters](https://swagger.io/docs/swagger-tools/#parameters-37) (unrelated to your OpenAPI parameters) you can use to customize the display. For example, you can set whether each endpoint is expanded or collapsed, how tags and operations are sorted, whether to show request headers in the response, and more.
 
-    For example, if you look at the [source of the Swagger UI demo](view-source:http://idratherbewriting.com/learnapidoc/assets/files/swagger/), you'll see the parameters listed in the `// Build a system` section:
+    For example, if you look at the [source of the Swagger UI demo](view-source:https://idratherbewriting.com/learnapidoc/assets/files/swagger/), you'll see the parameters listed in the `// Build a system` section:
 
     ```js
       // Build a system

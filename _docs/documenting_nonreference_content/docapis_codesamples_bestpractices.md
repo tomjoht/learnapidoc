@@ -63,7 +63,7 @@ Your documentation regarding the code should mix code comments with some explana
 
 Comments within the code are usually short one-line notes that appear after every 5-10 lines of code. You can follow up this code with more robust explanations in your documentation, but it's ideal to pepper code samples with comments because it puts the explanation next to the code doing the action.
 
-This approach of adding brief comments within the code, followed by more robust explanations after the code, aligns with principles of [progressive information disclosure](http://idratherbewriting.com/2012/08/09/applying-progressive-information-disclosure-to-online-help-navigation/) that help align with both advanced and novice user types.
+This approach of adding brief comments within the code, followed by more robust explanations after the code, aligns with principles of [progressive information disclosure](https://idratherbewriting.com/2012/08/09/applying-progressive-information-disclosure-to-online-help-navigation/) that help align with both advanced and novice user types.
 
 {% include random_ad.html %}
 
@@ -213,4 +213,4 @@ One could go into a lot more detail with the explanation, even going line by lin
 Documenting code can be one of the most challenging aspects of developer documentation. Part of the challenge is that code isn't organized such that a line by line (or block by block) description makes sense. Variables are often defined first, functions are called that are defined elsewhere, and other aspects are non-linear as well.
 
 {: .tip}
-For a deeper dive into how to document code samples, see my presentation on [Creating code samples for API/SDK documentation](http://idratherbewriting.com/2014/05/30/creating-code-samples-webinar-recording-slides-and-audio/).
+For a deeper dive into how to document code samples, see my presentation on [Creating code samples for API/SDK documentation](https://idratherbewriting.com/2014/05/30/creating-code-samples-webinar-recording-slides-and-audio/).

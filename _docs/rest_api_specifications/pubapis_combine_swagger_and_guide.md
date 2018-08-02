@@ -32,7 +32,7 @@ This conundrum is usually crystal clear to technical writers. API doc consists o
 * [API best practices](docapis_best_practices_with_api.html)
 * [Glossary](docapis_glossary_section.html)
 
-Other times, you just have more detail that you need to communicate to the user that won't fit easily into the spec. For example, in the `weather` endpoint in the [sample OpenWeatherMap API](http://idratherbewriting.com/learnapidoc/assets/files/swagger/) that we've been using in this course, there's some detail about city IDs that needs some explanation.
+Other times, you just have more detail that you need to communicate to the user that won't fit easily into the spec. For example, in the `weather` endpoint in the [sample OpenWeatherMap API](https://idratherbewriting.com/learnapidoc/assets/files/swagger/) that we've been using in this course, there's some detail about city IDs that needs some explanation.
 
 ```json
 ...

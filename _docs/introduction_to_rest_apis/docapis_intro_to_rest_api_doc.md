@@ -28,7 +28,7 @@ With native library APIs, you deliver a library of classes or functions to users
 
 With REST APIs, you don't deliver a library of files to users. Instead, the users make requests for the resources on a web server, and the server returns responses containing the information.
 
-REST APIs follow the same protocol as the web. When you open a browser and type a website URL (such as http://idratherbewriting.com), you're actually making a GET request for a resource on a server. The server responds with the content and the browser makes the content visible.
+REST APIs follow the same protocol as the web. When you open a browser and type a website URL (such as https://idratherbewriting.com), you're actually making a GET request for a resource on a server. The server responds with the content and the browser makes the content visible.
 
 This course focuses mostly on REST APIs because REST APIs are more popular and in demand, and they're also more accessible to technical writers. You don't need to know programming to document REST APIs. And REST is becoming the most common type of API anyway. (Even so, I also cover native library APIs in a [later section](nativelibraryapis_overview.html).)
 

@@ -41,11 +41,11 @@ When you create the quick reference guide, try to condense the most important in
 Through this distillation, quick reference guides provide a unique advantage for users to understand the material. Providing a high-level overview of a system helps users get a sense of the whole before drilling into the details.
 
 {: .tip}
-For a deep dive into the importance of distilling information for users, see [Reduction, layering, and distillation as a strategy for simplicity](http://idratherbewriting.com/simplifying-complexity/reduction-layering-distillation.html). Reading overviews, summaries, and other high-level information to see the whole at a glance can help users understand a complex system in significant ways. Too often, users get thrown into the technical details without more grounding and orientation about the whole.
+For a deep dive into the importance of distilling information for users, see [Reduction, layering, and distillation as a strategy for simplicity](https://idratherbewriting.com/simplifying-complexity/reduction-layering-distillation.html). Reading overviews, summaries, and other high-level information to see the whole at a glance can help users understand a complex system in significant ways. Too often, users get thrown into the technical details without more grounding and orientation about the whole.
 
 Distilling large amounts of information into concisely worded titles, summaries, headings, mini-TOCs, and topic sentences can facilitate information consumption and comprehension. Quick reference guides take the principle of distillation to another level by compressing the whole system into a bite-sized information deliverable.
 
-Quick reference guides are like the [poetry of technical writing](http://idratherbewriting.com/2008/07/06/quick-reference-guides-the-poetry-of-technical-writing/). The goal is not just to be brief or concise. With poetry, the poet attempts to evoke a mood or paint a moment, and in that brief moment, capture the essence of the whole.
+Quick reference guides are like the [poetry of technical writing](https://idratherbewriting.com/2008/07/06/quick-reference-guides-the-poetry-of-technical-writing/). The goal is not just to be brief or concise. With poetry, the poet attempts to evoke a mood or paint a moment, and in that brief moment, capture the essence of the whole.
 
 Writing a quick reference guide involves much the same effort. It's not that you merely cut words to make the documentation shorter, or restrict the output to a few topics, but that you try to compress the documentation as a whole and express its minimalist equivalent.
 
@@ -73,7 +73,7 @@ There's a certain value you get from seeing all the endpoints at a glance. By lo
 
 The quick reference for Parse is similar to Eventful in that it's a long list of endpoints, this time grouped in tables. Notice that this quick reference page is just a section within one long, single page of docs. In their approach, all documentation is on the same page, but as you scroll down, different entries in the sidebar highlight.
 
-Sometimes developers like the one-page approach because it reduces information fragmentation and lets them use Ctrl+F to find all instances of a keyword. I explored the tradeoffs in this one-page approach in [Single-page docs versus "Click Insanity"](http://idratherbewriting.com/2014/01/12/single-page-docs-versus-click-insanity/).
+Sometimes developers like the one-page approach because it reduces information fragmentation and lets them use Ctrl+F to find all instances of a keyword. I explored the tradeoffs in this one-page approach in [Single-page docs versus "Click Insanity"](https://idratherbewriting.com/2014/01/12/single-page-docs-versus-click-insanity/).
 
 If you use the [OpenAPI reference docs on GitHub](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md), you'll notice the docs are also contained on a single page. Developers might like to use Ctrl+F to quickly see all instances of a topic. However, I'm not a fan of single-page documentation like this because it provides a lot of visual complexity for users to sort out.
 

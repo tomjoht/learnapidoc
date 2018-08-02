@@ -51,7 +51,7 @@ However, if you think listing some industry terms in the glossary would be helpf
 The glossary is really where so many of the challenges around developer documentation come into focus. Separating your API's terminology from the general knowledge domain gets at the heart of why developer documentation can be so challenging for technical writers (who often aren't experts in the knowledge domain). You'll likely need to rely on engineers to help identify terms that need to be defined.
 
 {: .tip}
-I explored glossaries in depth in [Reducing the complexity of technical language](http://idratherbewriting.com/simplifying-complexity/reducing-the-complexity-of-technical-language.html). As a best practice, you can get a good sense as to whether you're using the right terms in a standard way by reading your competitor's documentation.
+I explored glossaries in depth in [Reducing the complexity of technical language](https://idratherbewriting.com/simplifying-complexity/reducing-the-complexity-of-technical-language.html). As a best practice, you can get a good sense as to whether you're using the right terms in a standard way by reading your competitor's documentation.
 
 ## Integration of the glossary with documentation
 

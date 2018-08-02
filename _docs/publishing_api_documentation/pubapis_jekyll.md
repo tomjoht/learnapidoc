@@ -15,13 +15,13 @@ Static site generators are a breed of website compilers that package up a group 
 
 ## Jekyll
 
-Jekyll is a Ruby-based static site generator, meaning it uses Ruby as the underlying programming language to compile the website. This site, my [blog](http://idratherbewriting.com), and the documentation for my past two jobs were created using Jekyll. With Jekyll, you can publish a fully functional tech comm website that includes content re-use, conditional filtering, variables, PDF output, and everything else you might need as a technical writer.
+Jekyll is a Ruby-based static site generator, meaning it uses Ruby as the underlying programming language to compile the website. This site, my [blog](https://idratherbewriting.com), and the documentation for my past two jobs were created using Jekyll. With Jekyll, you can publish a fully functional tech comm website that includes content re-use, conditional filtering, variables, PDF output, and everything else you might need as a technical writer.
 
 {% include random_ad2.html %}
 
 Here's a documentation theme that I developed for Jekyll:
 
-<a href="http://idratherbewriting.com/documentation-theme-jekyll/" class="noExtIcon"><img src="images/jekylldocumentationtheme.png" alt="My Jekyll Documentation theme" /></a>
+<a href="https://idratherbewriting.com/documentation-theme-jekyll/" class="noExtIcon"><img src="images/jekylldocumentationtheme.png" alt="My Jekyll Documentation theme" /></a>
 
 There isn't any kind of special API reference endpoint formatting here, but the platform is so flexible, you can do anything with it as long as you know HTML, CSS, and JavaScript (the fundamental language of the web). With a static site generator, you have a tool for building a full-fledged website using pretty much any style or JavaScript framework you want. With the Jekyll website, you can include complex navigation, content re-use, translation, PDF generation, and more.
 
@@ -84,7 +84,7 @@ Let's do an example in publishing in [CloudCannon](https://cloudcannon.com/), "T
 
 	 <a href="http://doted-lily.cloudvent.net/" class="noExtIcon"><img src="images/cloudcannonpreviewurl.png" alt="Preview URL" /></a>
 
-	It should look just like the [Documentation theme for Jekyll here](http://idratherbewriting.com/documentation-theme-jekyll).
+	It should look just like the [Documentation theme for Jekyll here](https://idratherbewriting.com/documentation-theme-jekyll).
 
   I have to say, the integration between CloudCannon and GitHub is pretty mind-blowing. Through CloudCannon, you can offload all the hassle of hosting and maintaining your website, but you aren't locked into the system in a proprietary way. Your content lives in a custom Jekyll theme on GitHub.
 
@@ -144,7 +144,7 @@ Let's say you want to use a theme that provides ready-made templates for REST AP
 
     The key-value pairs in the YAML frontmatter are entirely arbitrary and are designed here to suit the API doc theme the author created. If we were to look at the code in the theme, we'd see Liquid `for` loops that iterate over the YAML values and populate the content into a template. Jekyll will access these values and push this content into the template (which you can see by going to \_layouts/default.md). The author has separated the content from the format so that we don't have to manually wrap all the values in style tags.
 
-2.  Replace the contents of weatherdata.md with the following content: [aviator-weather.txt](http://idratherbewriting.com/learnapidoc/assets/files/aviator-weather.txt).
+2.  Replace the contents of weatherdata.md with the following content: [aviator-weather.txt](https://idratherbewriting.com/learnapidoc/assets/files/aviator-weather.txt).
 
     {: .note}
     Normally, you would build the Jekyll project locally to make sure it looks right. But since that's beyond the scope of this tutorial, we'll just commit it to GitHub and have CloudCannon build it.

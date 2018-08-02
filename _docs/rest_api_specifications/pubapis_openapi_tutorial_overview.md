@@ -148,7 +148,7 @@ With each step, you'll paste the object you're working on into the Swagger Edito
 
 Later, when I talk more about publishing, I'll explain how to configure Swagger UI with your specification document as a standalone output. For our sample OpenWeatherMap API, you can see OpenAPI spec rendered with Swagger UI in the following links:
 
-* [Swagger UI with OpenWeatherMap API](http://idratherbewriting.com/learnapidoc/assets/files/swagger/)
+* [Swagger UI with OpenWeatherMap API](https://idratherbewriting.com/learnapidoc/assets/files/swagger/)
 * [Embedded Swagger with OpenWeatherMap API](pubapis_swagger_demo.html)
 
 ## Migrating from OpenAPI 2.0 to 3.0

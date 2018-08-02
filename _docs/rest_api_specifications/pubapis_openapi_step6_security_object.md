@@ -124,7 +124,7 @@ You'll see an "Authorize" button appear in the Swagger UI display.
 
 When you click the Authorization button, the `description` and other security details appear:
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapitutorial_securityauth.png" class="medium"/></a>
+<a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapitutorial_securityauth.png" class="medium"/></a>
 
 After users enter an API key and clicks **Authorize**, the authorization method is set for as many requests as they want to make. Only when users refresh the page does the authorization session expire.
 

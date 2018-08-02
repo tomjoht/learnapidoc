@@ -109,7 +109,7 @@ The client and server SDKs aren't yet available for OpenAPI 3.0 specs, just for 
 
 Among SwaggerHub's many options for generating client and SDK files is an HTML option. You can export your OpenAPI spec as a static HTML file in one of two styles: HTML or HTML2.
 
-You can see a demo export of the Weather API here: <a href="http://idratherbewriting.com/learnapidoc/assets/files/swaggerhub_htmloutput/index.html">HTML</a> or <a href="http://idratherbewriting.com/learnapidoc/assets/files/swaggerhub_html2output/index.html">HTML2</a>. Both exports generate all the content into an index.html file.
+You can see a demo export of the Weather API here: <a href="https://idratherbewriting.com/learnapidoc/assets/files/swaggerhub_htmloutput/index.html">HTML</a> or <a href="https://idratherbewriting.com/learnapidoc/assets/files/swaggerhub_html2output/index.html">HTML2</a>. Both exports generate all the content into an index.html file.
 
 The HTML export is a more basic output than HTML2. You could potentially incorporate the HTML output into your other documentation, such as what [Cherryleaf did in importing Swagger into Flare](https://www.cherryleaf.com/blog/2017/07/example-project-api-documentation-portal-using-madcap-flare/). (You might have to strip away some of the code and provide styles for the various documentation elements, and there wouldn't be any interactivity for users to try it out, but it could be done.) In another part of the course, I expand on ways to [integrate Swagger UI's output with the rest of your docs](pubapis_combine_swagger_and_guide.html).
 
@@ -164,4 +164,4 @@ Designing a fully-featured, highly functioning OpenAPI spec is at the heart of t
 Great tools aren’t free. SwaggerHub does [cost money](https://swaggerhub.com/pricing/), but this is a good thing, since free tools are frequently abandoned, poorly maintained, and lack documentation and support. By using a paid tool from a robust API company (the very company that maintains the Swagger tools, and sponsors the Swagger (OpenAPI) specification), you can plug into the tools you need to scale your API documentation efforts.
 
 {: .tip}
-To read more about SwaggerHub, checkout my blog post [SwaggerHub: A collaborative platform for working on OpenAPI/Swagger specification files, and more](http://idratherbewriting.com/2017/10/05/swaggerhub-collaborative-platform-for-swagger-openapi-projects).
+To read more about SwaggerHub, checkout my blog post [SwaggerHub: A collaborative platform for working on OpenAPI/Swagger specification files, and more](https://idratherbewriting.com/2017/10/05/swaggerhub-collaborative-platform-for-swagger-openapi-projects).

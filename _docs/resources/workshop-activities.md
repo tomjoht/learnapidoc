@@ -8,14 +8,14 @@ section: resources
 path1: /resources.html
 ---
 
-When I give API workshops, it helps to consolidate activities into a single page with brief instructions. The following are activities used in the [live workshops in Denver](http://idratherbewriting.com/2018/01/29/api-workshop-in-denver/). I include this resource here in case you're using this content to provide your own workshop or classroom instruction.
+When I give API workshops, it helps to consolidate activities into a single page with brief instructions. The following are activities used in the [live workshops in Denver](https://idratherbewriting.com/2018/01/29/api-workshop-in-denver/). I include this resource here in case you're using this content to provide your own workshop or classroom instruction.
 
 * TOC
 {:toc}
 
 ## Part I: Intro to API documentation
 
-Slides: [Intro to API documentation](http://idratherbewriting.com/intro-to-api-documentation/index.html)
+Slides: [Intro to API documentation](https://idratherbewriting.com/intro-to-api-documentation/index.html)
 
 ### Activity: Explore an API
 
@@ -45,7 +45,7 @@ Swap in your own API key for the `appid` value in the URL's query string.
 
     {% if site.format == "pdf" or site.format == "kindle" %}
 
-    To view these buttons, go to the web page for this content at [http://idratherbewriting.com/learnapidoc/workshop-activities.html](http://idratherbewriting.com/learnapidoc/workshop-activities.html).
+    To view these buttons, go to the web page for this content at [https://idratherbewriting.com/learnapidoc/workshop-activities.html](https://idratherbewriting.com/learnapidoc/workshop-activities.html).
 
     {% elsif site.format == "web" %}
     **OpenWeatherMap API collection**
@@ -89,12 +89,12 @@ Swap in your own API key for the `appid` value in the URL's query string.
 
 ## Part II: OpenAPI and Swagger
 
-Slides: [OpenAPI and Swagger](http://idratherbewriting.com/openapi-and-swagger/#/)
+Slides: [OpenAPI and Swagger](https://idratherbewriting.com/openapi-and-swagger/#/)
 
 ### Activity: OpenAPI with Stoplight
 
 1.  Open [v3 next Stoplight app](https://next.stoplight.io/). (You can also use the [Desktop app](https://github.com/stoplightio/desktop/releases/latest).)
-2.  From main.oas, open the Code tab and paste in content for this 2.0 JSON Open API definition: [openweathermap_swagger20.json](http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openweathermap_swagger20.json).
+2.  From main.oas, open the Code tab and paste in content for this 2.0 JSON Open API definition: [openweathermap_swagger20.json](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openweathermap_swagger20.json).
 3.  Edit, explore Basics, Requests, Responses sections.
 4.  In the Responses area, click **Generate from JSON**, paste in complex JSON snippet into the Responses area, then click **Generate!**
 
@@ -152,20 +152,20 @@ Slides: [OpenAPI and Swagger](http://idratherbewriting.com/openapi-and-swagger/#
 
 ### Activity: Swagger Editor
 
-1. Paste [this YAML file](http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) into [Swagger Editor](https://editor.swagger.io/) and make updates.
+1. Paste [this YAML file](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) into [Swagger Editor](https://editor.swagger.io/) and make updates.
 2. Go to [this SwaggerHub API](https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/). Observe Generate Client SDK options.
 
 ### Activity: Swagger UI
 
 1. Download [Swagger UI](https://github.com/swagger-api/swagger-ui/tree/v3.4.1).
 2. Uncompress and pull out the **dist** folder.
-3. Save this file locally:  [openapi_openweathermap.yml](http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) into the **dist** folder.
+3. Save this file locally:  [openapi_openweathermap.yml](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) into the **dist** folder.
 4. Reference **openapi_openweathermap.yml** in place of the default `url` value.
 5. Open in Firefox.
 
 ## Part III: Non-reference content in API docs
 
-Slides: [Non-reference content in API docs](http://idratherbewriting.com/nonref-content-api-docs/#/)
+Slides: [Non-reference content in API docs](https://idratherbewriting.com/nonref-content-api-docs/#/)
 
 ###  Activity: GitHub workflow
 

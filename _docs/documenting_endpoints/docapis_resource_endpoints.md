@@ -7,8 +7,8 @@ sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
 redirect_from:
-- http://idratherbewriting.com/learnapidoc/docapis_doc_methods.html
-- http://idratherbewriting.com/learnapidoc/docapis_doc_resource_urls_and_methods.html
+- https://idratherbewriting.com/learnapidoc/docapis_doc_methods.html
+- https://idratherbewriting.com/learnapidoc/docapis_doc_resource_urls_and_methods.html
 ---
 
 {% include workflow_map.html step="2" map="content/reference_doc_map.html"  %}

@@ -98,7 +98,7 @@ If you do have some familiarity with programming concepts, you might speed throu
 
 Some of the code samples in this course use JavaScript. JavaScript may or may not be a language that you actually use when you document REST APIs, but most likely there will be some programming language or platform that becomes important to know.
 
-JavaScript is one of the most useful and easy languages to become familiar with, so it works well in code samples for this introduction to REST API documentation. JavaScript allows you to test out code by merely opening it in your browser (rather than compiling it in an IDE). (I have a [quick crash-course in JavaScript here](http://idratherbewriting.com/javascript/) if you need it.)
+JavaScript is one of the most useful and easy languages to become familiar with, so it works well in code samples for this introduction to REST API documentation. JavaScript allows you to test out code by merely opening it in your browser (rather than compiling it in an IDE). (I have a [quick crash-course in JavaScript here](https://idratherbewriting.com/javascript/) if you need it.)
 
 {% include random_ad.html %}
 
@@ -122,10 +122,10 @@ For video recordings of this course, see the [Recorded Video Presentations](doca
 
 I have various slides that cover different sections of this course. See the following:
 
-* [Intro to API documentation](http://idratherbewriting.com/intro-to-api-documentation/index.html)
-* [Non-reference content in API docs](http://idratherbewriting.com/nonref-content-api-docs/#/)
-* [OpenAPI and Swagger](http://idratherbewriting.com/openapi-and-swagger/#/)
-* [Publishing API documentation](http://idratherbewriting.com/publishing-api-docs/#/)
+* [Intro to API documentation](https://idratherbewriting.com/intro-to-api-documentation/index.html)
+* [Non-reference content in API docs](https://idratherbewriting.com/nonref-content-api-docs/#/)
+* [OpenAPI and Swagger](https://idratherbewriting.com/openapi-and-swagger/#/)
+* [Publishing API documentation](https://idratherbewriting.com/publishing-api-docs/#/)
 
 These slides are all hosted on GitHub at https://github.com/tomjoht/. I use [RevealJS](https://github.com/hakimel/reveal.js/) for slides, which lets me create the slide content in HTML. If you're a teacher using material from this course in your classroom, you can adapt the slides as needed for your lessons.
 

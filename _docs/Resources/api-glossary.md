@@ -96,7 +96,7 @@ OpenAPI contract:
 : Synonym for OpenAPI specification document.
 
 OpenAPI specification document
-: The specification document, usually created manually, that defines the blueprints that developers should code the API to. The contract aligns with a "spec-first" or "spec-driven development" philosophy. The contract essentially acts like the API requirements for developers. See [this blog post/podcast](http://idratherbewriting.com/2015/10/12/spec-driven-design-podcast-michael-stowe/) for details on spec-first development.
+: The specification document, usually created manually, that defines the blueprints that developers should code the API to. The contract aligns with a "spec-first" or "spec-driven development" philosophy. The contract essentially acts like the API requirements for developers. See [this blog post/podcast](https://idratherbewriting.com/2015/10/12/spec-driven-design-podcast-michael-stowe/) for details on spec-first development.
 
 OpenAPI Initiative
 : The governing body that directs the OpenAPI specification. Backed by the Linux Foundation. See [https://www.openapis.org/](https://www.openapis.org/).

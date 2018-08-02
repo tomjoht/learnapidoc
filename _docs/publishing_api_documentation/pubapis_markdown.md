@@ -92,7 +92,7 @@ Now compare the same syntax with Markdown:
 ```
 
 I wrote about this in [Why developers will never adopt DITA
-](http://idratherbewriting.com/2014/09/30/why-developers-will-never-adopt-dita/). Granted, the XML example has a lot more semantic information packed into it, which the Markdown version lacks. So in theory the two don't have the same content, even though the output is the same. However, the end result, if generated out to HTML, will probably look the same.
+](https://idratherbewriting.com/2014/09/30/why-developers-will-never-adopt-dita/). Granted, the XML example has a lot more semantic information packed into it, which the Markdown version lacks. So in theory the two don't have the same content, even though the output is the same. However, the end result, if generated out to HTML, will probably look the same.
 
 Although you can read the XML and get used to it, most people who write in XML use specialized XML editors (like OxygenXML) that make the raw text more readable. Simply by working in XML all day, you get used to working with all the tags.
 
@@ -124,14 +124,14 @@ Markdown does have a few drawbacks:
 
 If you need more complexity than what Markdown or HTML offers, a lot of tools will leverage other templating languages, such as [Liquid](https://docs.shopify.com/themes/liquid-documentation/basics) or [Coffeescript](http://coffeescript.org/). Many times these other processing languages (often like a lightweight JavaScript) will fill in the gaps for Markdown and provide you with the ability to create includes, conditional attributes, conditional text, and more.
 
-For example, if you're using Jekyll, you have access to a lot of advanced scripting functionality. You can use variables, for loops, sorting, and a host of other functionality. For a detailed comparison of how to achieve the same DITA functionality within Jekyll, see my series [Jekyll versus DITA](http://idratherbewriting.com/2015/03/23/new-series-jekyll-versus-dita/). In this series, I cover the following:
+For example, if you're using Jekyll, you have access to a lot of advanced scripting functionality. You can use variables, for loops, sorting, and a host of other functionality. For a detailed comparison of how to achieve the same DITA functionality within Jekyll, see my series [Jekyll versus DITA](https://idratherbewriting.com/2015/03/23/new-series-jekyll-versus-dita/). In this series, I cover the following:
 
-* [Variables and conditional processing](http://idratherbewriting.com/2015/03/26/variables-and-conditional-processing-jekyll-versus-dita/)
-* [Creating re-usable chunks (conref)](http://idratherbewriting.com/2015/04/01/creating-re-usable-chunks-conref-in-jekyll-versus-dita/)
-* [Building a table of contents](http://idratherbewriting.com/2015/04/02/building-a-table-of-contents-with-dita-versus-jekyll/)
-* [Reviewing content](http://idratherbewriting.com/2015/04/13/reviewing-markdown-content/)
-* [Producing PDFs](http://idratherbewriting.com/2015/04/14/producing-pdfs-in-dita-versus-jekyll/)
-* [Creating links](http://idratherbewriting.com/2015/04/06/creating-links-in-dita-versus-jekyll/)
+* [Variables and conditional processing](https://idratherbewriting.com/2015/03/26/variables-and-conditional-processing-jekyll-versus-dita/)
+* [Creating re-usable chunks (conref)](https://idratherbewriting.com/2015/04/01/creating-re-usable-chunks-conref-in-jekyll-versus-dita/)
+* [Building a table of contents](https://idratherbewriting.com/2015/04/02/building-a-table-of-contents-with-dita-versus-jekyll/)
+* [Reviewing content](https://idratherbewriting.com/2015/04/13/reviewing-markdown-content/)
+* [Producing PDFs](https://idratherbewriting.com/2015/04/14/producing-pdfs-in-dita-versus-jekyll/)
+* [Creating links](https://idratherbewriting.com/2015/04/06/creating-links-in-dita-versus-jekyll/)
 
 ## Markdown activity
 {% include activity.html %}
@@ -185,7 +185,7 @@ Eric Holscher, co-founder of [Write the Docs](http://www.writethedocs.org/) and 
 
 There's merit to the argument, for sure. You might be able to switch Markdown flavors using a tool such as [Pandoc](https://pandoc.org/), or by converting the Markdown to HTML, and then converting the HTML to another Markdown flavor. However, switching tools will likely lead to a headache in updating the syntax in your content.
 
-Here's an example. For many years, Jekyll used [redcarpet](https://github.com/vmg/redcarpet) and [pygments](http://pygments.org/) to process Markdown and apply code syntax highlighting. However, to increase Windows support, Jekyll switched to [kramdown](https://kramdown.gettalong.org/) and [rouge](https://github.com/jneen/rouge) at version 3.0. It was supposed to be a seamless backend switch that wouldn't require any adjustment to your existing Markdown. However, I found that kramdown imposed different requirements around spacing that broke a lot of my content, particularly with lists. I wrote about this issue here: [Updating from redcarpet and Pygments to Kramdown and Rouge on Github Pages](http://idratherbewriting.com/2016/02/21/bug-with-kramdown-and-rouge-with-github-pages/).
+Here's an example. For many years, Jekyll used [redcarpet](https://github.com/vmg/redcarpet) and [pygments](http://pygments.org/) to process Markdown and apply code syntax highlighting. However, to increase Windows support, Jekyll switched to [kramdown](https://kramdown.gettalong.org/) and [rouge](https://github.com/jneen/rouge) at version 3.0. It was supposed to be a seamless backend switch that wouldn't require any adjustment to your existing Markdown. However, I found that kramdown imposed different requirements around spacing that broke a lot of my content, particularly with lists. I wrote about this issue here: [Updating from redcarpet and Pygments to Kramdown and Rouge on Github Pages](https://idratherbewriting.com/2016/02/21/bug-with-kramdown-and-rouge-with-github-pages/).
 
 In many ways, my blog requires tool support for kramdown-flavored Markdown and rouge syntax highlighting. However, I'm reluctant to switch to a more semantic lightweight syntax because tool support for Markdown in general, following GitHub-flavored Markdown, is still much more widespread than support for reStructuredText or Asciidoc. Despite the many Markdown flavors, GitHub-flavored Markdown is probably the most common. kramdown is largely compatible with GitHub-flavored Markdown &mdash; it wouldn't be that difficult to migrate.
 
@@ -200,4 +200,4 @@ Overall, debates between Markdown, reStructuredText, and Asciidoc are pretty hea
 One problem with lightweight syntax is its incompatibility with larger content management systems. Component content management systems (CCMSs) typically require more structured content such as DITA. The DITA committee recently approved [Lightweight DITA](http://docs.oasis-open.org/dita/LwDITA/v1.0/cnprd01/LwDITA-v1.0-cnprd01.html), which will allow you to use GitHub-flavored Markdown and HTML in your DITA projects (assuming tool vendors support it &mdash; OxygenXML already [provides support for Markdown](https://www.oxygenxml.com/demo/Markdown.html)).
 
 {: .tip}
-For more details about Lightweight DITA (LwDITA), see the [interview with Carlos Evia](http://idratherbewriting.com/2018/07/23/adventures-of-techie-academic-conversation-with-carlos-evia/) on my blog. Carlos is co-chair of the OASIS committee for LwDITA. 
+For more details about Lightweight DITA (LwDITA), see the [interview with Carlos Evia](https://idratherbewriting.com/2018/07/23/adventures-of-techie-academic-conversation-with-carlos-evia/) on my blog. Carlos is co-chair of the OASIS committee for LwDITA.

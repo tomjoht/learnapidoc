@@ -132,13 +132,13 @@ We'll explore endpoints in much more depth in the sections to come (for example,
 
 The terminology of "URIs" and "GET requests" and "message responses" transported over "HTTP protocol" might seem unfamiliar, but this is just the official REST terminology to describe what's happening. Because you've used the web, you're already familiar with how REST APIs work &mdash; the web itself essentially follows a RESTful style.
 
-If you open a browser and go to [http://idratherbewriting.com](http://idratherbewriting.com), you're really using HTTP protocol (`http://`) to submit a GET request to the resource available on a web server. The response from the server sends the content at this resource back to you using HTTP. Your browser is just a client that makes the message response look pretty.
+If you open a browser and go to [https://idratherbewriting.com](https://idratherbewriting.com), you're really using HTTP protocol (`http://`) to submit a GET request to the resource available on a web server. The response from the server sends the content at this resource back to you using HTTP. Your browser is just a client that makes the message response look pretty.
 
 {% if site.format == "pdf" or site.format == "kindle" %}<img class="medium" src="images/restapi_www.png" alt="Web as REST API" />
 {% elsif site.format == "web" %}<img class="medium" src="images/restapi_www.svg" alt="Web as REST API" />
 {% endif %}
 
-You can see this response in [curl](docapis_install_curl.html) if you open a terminal prompt and type `curl http://idratherbewriting.com`. (This assumes you have curl installed.)
+You can see this response in [curl](docapis_install_curl.html) if you open a terminal prompt and type `curl https://idratherbewriting.com`. (This assumes you have curl installed.)
 
 Because the web itself is an example of RESTful style architecture, the way REST APIs work will likely become second nature to you.
 

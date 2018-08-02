@@ -107,18 +107,18 @@ For this activity, we'll use JavaScript to display the response on a web page. Y
     ```
 
     {: .tip}
-    You can view the file here: [idratherbewriting.com/learnapidoc/assets/files/weather-plain.html](http://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html)
+    You can view the file here: [idratherbewriting.com/learnapidoc/assets/files/weather-plain.html](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html)
 
 8.  Start **Firefox** and open the Web Console by going to **Tools > Web Developer > Web Console**. (Normally, I would recommend using Chrome. But Chrome's security settings block JavaScript on local files, so use Firefox instead.)
 9.  Open the **weather.html** file in the browser by going to **File > Open File**.
 
     The page body will be blank, but the weather response should be logged to the web console. You can inspect the payload by expanding the object. Here's what it looks like expanded in Firefox:
 
-    <a class="noCrossRef" href="http://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html"><img src="images/firefoxwebconsole.png" alt="JSON payload from weather API logged to console" /></a>
+    <a class="noCrossRef" href="https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html"><img src="images/firefoxwebconsole.png" alt="JSON payload from weather API logged to console" /></a>
 
-    If you want to use Chrome instead, go to the web location the file [here](http://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html) and open the JS Console by going to **View > Developer > JavaScript Console**. If you expand the object returned to the console, it will look as follows:
+    If you want to use Chrome instead, go to the web location the file [here](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html) and open the JS Console by going to **View > Developer > JavaScript Console**. If you expand the object returned to the console, it will look as follows:
 
-    <a class="noCrossRef" href="http://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html"><img src="images/jsonpayloadweather.png" alt="JSON payload from weather API logged to console" /></a>
+    <a class="noCrossRef" href="https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html"><img src="images/jsonpayloadweather.png" alt="JSON payload from weather API logged to console" /></a>
 
     Note that Chrome tells you whether each expandable section is an object or an array. Knowing this is important to accessing the value through JavaScript dot notation.
 
@@ -203,7 +203,7 @@ Customizing log messages is helpful if you're logging various things to the cons
 
 {% include activity.html %}
 
-Inspect the payload by expanding each of the sections [returned in the JSON console object](http://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html). Based on the information here, what's the forecast for today?
+Inspect the payload by expanding each of the sections [returned in the JSON console object](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html). Based on the information here, what's the forecast for today?
 
 {: .note}
 I realize the page is blank and unexciting. In the next section, [Access and print a specific JSON value](docapis_access_json_values.html), we'll pull out some values and print them to the page.

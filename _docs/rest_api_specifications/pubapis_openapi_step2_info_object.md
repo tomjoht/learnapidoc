@@ -57,7 +57,7 @@ At this point, go ahead and paste this above code along with the `openapi` objec
 
 In the Swagger UI display, the `info` object's information appears at the top:
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/step2swaggeruiprogress.png" class="medium" /></a>
+<a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/step2swaggeruiprogress.png" class="medium" /></a>
 
 {: .tip}
 In the `description` property, you might want to provide some basic instructions to users on how to use Swagger UI. If there's a test account they should use, you can provide the information they need in this space.

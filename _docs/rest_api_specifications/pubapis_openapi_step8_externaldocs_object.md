@@ -52,11 +52,11 @@ See the related topic, [Integrating Swagger UI with the rest of your docs](pubap
 
 {% include activity.html %}
 
-Now that we've completed all the steps in the tutorial, we're finished building our OpenAPI specification document. You can see the complete specification document here: <a href="http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml">http://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml</a>.
+Now that we've completed all the steps in the tutorial, we're finished building our OpenAPI specification document. You can see the complete specification document here: <a href="https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml">https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml</a>.
 
 Here's the specification document rendered by Swagger UI:
 
-<a target="\_blank" href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/swagger_full_result.png" class="medium" /></a>
+<a target="\_blank" href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/swagger_full_result.png" class="medium" /></a>
 
 Try executing a request in the version above and look at the result. In the result, locate the `temp` value in the `main` object. Then take a break by going outside to evaluate whether the temperature outside matches the response.
 

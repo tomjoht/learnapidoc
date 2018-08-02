@@ -663,7 +663,7 @@ Describing a JSON response can be complicated and confusing. Fortunately, there'
 
 {% if site.format == "pdf" or site.format == "kindle" %}
 
-Go to [http://idratherbewriting.com/learnapidoc/pubapis_openapi_step5_components_object.html](http://idratherbewriting.com/learnapidoc/pubapis_openapi_step5_components_object.html) to view this content.
+Go to [https://idratherbewriting.com/learnapidoc/pubapis_openapi_step5_components_object.html](https://idratherbewriting.com/learnapidoc/pubapis_openapi_step5_components_object.html) to view this content.
 
 {% elsif site.format == "web" %}
 
@@ -703,7 +703,7 @@ You'll also notice a "Models" section at the end. By default, Swagger UI display
 
 Because I want to re-use objects, I'm going define each object in `components` separately. As a result, the Models section looks like this:
 
-<a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/swaggerui_models_broken_out.png" class="medium" /></a>
+<a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/swaggerui_models_broken_out.png" class="medium" /></a>
 
 The Models section is now in the latest version of Swagger UI. I'm not really sure why the Models section appears at all, actually. Apparently, it was added by popular request because the online Swagger Editor showed the display, and many users asked for it to be incorporated into Swagger UI.
 

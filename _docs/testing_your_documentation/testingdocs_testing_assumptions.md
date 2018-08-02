@@ -36,7 +36,7 @@ With developer documentation, usually the audience's skill level is beyond my ow
 We must also remember that users may have deep knowledge in another technical area outside of the domain we're writing in. For example, the user may be a Java expert but a novice when it comes to JavaScript, and vice versa.
 
 {: .tip}
-To read more about how specialized language makes technical documentation difficult to understand, see [Reducing the complexity of technical language](http://idratherbewriting.com/simplifying-complexity/reducing-the-complexity-of-technical-language.html) in my series on Simplifying Complexity.
+To read more about how specialized language makes technical documentation difficult to understand, see [Reducing the complexity of technical language](https://idratherbewriting.com/simplifying-complexity/reducing-the-complexity-of-technical-language.html) in my series on Simplifying Complexity.
 
 ## Solutions for addressing different audiences
 
