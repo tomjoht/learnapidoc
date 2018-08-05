@@ -131,4 +131,6 @@ These slides are all hosted on GitHub at https://github.com/tomjoht/. I use [Rev
 
 ## Stay updated
 
-If you're following this course, you most likely want to learn more about APIs. I publish regular articles that talk about APIs and strategies for documenting them. You can stay updated about these posts by subscribing to my free newsletter at [https://tinyletter.com/tomjoht](https://tinyletter.com/tomjoht).
+If you're following this course, you most likely want to learn more about APIs. I publish regular articles that talk about APIs and strategies for documenting them. You can stay updated about these posts by subscribing to my free newsletter.
+
+{% include mailchimp.html %}
