@@ -1,12 +1,29 @@
 {% if site.format == "web" %}<!-- tinyletter.html -->
-<h3 id="newsletter" class="sidebar">I'd Rather Be Writing Newsletter</h3>
-<p>Get new posts delivered straight to your inbox.</p>
-<div class="form-group">
-    <form style="text-align: center; background-color: whitesmoke; border:1px solid #ccc;padding:3px;text-align:center" action="https://tinyletter.com/tomjoht" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/tomjoht', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-        <p><label for="tlemail">Enter your email address</label></p>
-        <p><input type="text" style="width:140px" name="email" id="tlemail" /></p>
+<style>
+.irbw.form-group {
+  width: 260px !important;
+}
+form.irbw {
+  padding: 10px !important;
+  border-radius: 5px;
+}
+.mailingListSubtext {
+    text-align: left;
+    margin-bottom: 7px;
+    font-size: 12px;
+}
+
+label.irbw {
+    text-transform: uppercase;
+    text-align: left;
+}
+</style>
+  <div class="irbw form-group">
+    <form class="irbw" style="padding: 10px; text-align: center; background-color: #EDF0F8; border:1px solid #ccc;padding:3px;text-align:center" action="https://tinyletter.com/tomjoht" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/tomjoht', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+        <p><label class="irbw" for="tlemail"><i class="fa fa-envelope-o fa-2x" aria-hidden="true" style="float:left; padding-right:5px;"></i>I'd Rather Be Writing Newsletter</label></p>
+        <div class="mailingListSubtext">Keep current with the latest trends in technical communication by subscribing to my email newsletter. <i>4,500+ subscribers</i></div>
+        <p><input type="text" style="width:200px;" placeholder=" email address" name="email" id="tlemail" /></p>
         <input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" class="btn btn-warning"></input>
-        <p><small>Subscriber count: 4,285</small></p>
     </form>
 </div> <!-- end form-group-->
 <!-- end tinyletter.html -->{% endif %}

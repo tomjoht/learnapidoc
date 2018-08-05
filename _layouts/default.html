@@ -22,7 +22,7 @@
                 <h1>{{page.title}}</h1>
                 <div class="amazonBook">
                 {% include amazon_book.html %}
-                {% include mailchimp.html %}
+                {% include tinyletter.html %}
                 </div>
 
                 {{content}}
@@ -43,7 +43,7 @@
 
 
 
-                <div style="max-width: 375px">{% include mailchimp.html %}</div>
+                <div style="max-width: 375px">{% include tinyletter.html %}</div>
                 {% include disqus.html %}
                 {% endunless %}
 
