@@ -8,9 +8,9 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-In this tutorial, we'll walk through a publishing workflow with one of the most common developer platforms: GitHub. When you create a repository on GitHub, the repository comes with a wiki that you can add pages to. This wiki can be convenient if your source code is stored on GitHub. Although GitHub is probably not a tool you would use for publishing your docs, understanding how to interact with it can be important for understanding [version control](pubapis_version_control.html).
+In this tutorial, we'll walk through a publishing workflow with one of the most common developer platforms: GitHub. When you create a repository on GitHub, the repository comes with a wiki that you can add pages to. This wiki can be convenient if your source code is stored on GitHub. Although GitHub might not be a platform where you publish your docs, understanding how to interact with it can be important for understanding [version control](pubapis_version_control.html).
 
-Learning GitHub will allow you to become familiar with the version control workflows that are common with many docs-as-code tools. For this reason, I have a detailed tutorial for using GitHub in this course. Regardless of whether you actually use GitHub as a publishing tool, this tutorial will introduce you to Git workflows with content.
+Learning GitHub will allow you to become familiar with the version control workflows that are common with many [docs-as-code tools](pubapis_docs_as_code_tool_options.html). For this reason, I have a detailed tutorial for using GitHub in this course. Regardless of whether you actually use GitHub as a publishing tool, this tutorial will introduce you to Git workflows with content.
 
 * TOC
 {:toc}
@@ -19,7 +19,7 @@ Learning GitHub will allow you to become familiar with the version control workf
 
 You could actually use the default GitHub wiki as your doc site. Here's an example of the Basecamp API, which is housed on GitHub.
 
-<a href="https://github.com/basecamp/bcx-api" class="noExtIcon"><img src="images/basecampapi.png" alt="Basecamp API" /></a>
+<a href="https://github.com/basecamp/bc3-api" class="noExtIcon"><img src="images/basecampapi.png" alt="Basecamp API" /></a>
 
 Unlike other wikis, the GitHub wiki you create is its own repository that you can clone and work on locally. (If you look at the "Clone this wiki locally" link, you'll see that it's a separate repo from your main code repository.) You can work on files locally and then commit them to the wiki repository when you're ready to publish. You can also arrange the wiki pages into a sidebar.
 
@@ -27,15 +27,15 @@ Unlike other wikis, the GitHub wiki you create is its own repository that you ca
 
 One of the neat things about using a GitHub repository is that you treat the [docs as code](pubapis_docs_as_code.html), editing it in a text editor, committing it to a repository, and packaging it up into the same area as the rest of the source code. Because the content resides in a separate repository, technical writers can work in the documentation right alongside project code without getting merge conflicts.
 
-With GitHub, you write wiki pages in Markdown syntax. There's a special flavor of Markdown syntax for GitHub wikis called "Github-flavored Markdown," or GFM. The [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/) allows you to create tables, add classes to code blocks (for proper syntax highlighting), and more.
+With GitHub, you write wiki pages in Markdown syntax. There's a special flavor of Markdown syntax for GitHub wikis called [Github-flavored Markdown](https://help.github.com/articles/github-flavored-markdown/), or GFM. The GitHub Flavored Markdown allows you to create tables, add classes to code blocks (for proper syntax highlighting), and more.
 
-Because you can work with the wiki files locally, you can leverage other tools (such as static site generators, or even DITA) to generate the Markdown files if desired. This means you can handle all the re-use, conditional filtering, and other logic outside of the GitHub wiki. You can then output your content as Markdown files and then commit them to your GitHub repository.
+Because you can work with the wiki files locally, you can leverage other tools (such as static site generators, or even DITA) to generate the Markdown files if desired. This means you can handle all the re-use, conditional filtering, and other logic outside of the GitHub wiki. You can then output your content as Markdown files and commit them to your GitHub repository.
 
 {% include random_ad.html %}
 
 GitHub wikis have some limitations:
 
-* **Limited branding**. All GitHub wikis look the same.
+* **Limited branding**. All GitHub wikis pretty much look the same.
 * **Open access on the web**. If your docs need to be private, GitHub probably isn't the place to store them (private repos, however, are an option).
 * **No structure**. The GitHub wiki pages give you a blank page and basically allow you to add sections. You won't be able to do any advanced styling or more attractive-looking interactive features.
 
@@ -80,33 +80,31 @@ In this section, you will create a new GitHub repo and publish a sample file the
 
 	 <a href="https://github.com/new" class="noExtIcon"><img src="images/newrepositorygithub.png" alt="Creating a new GitHub repository" /></a>
 
-2.  Give the repository a name, description, select **Public**, select **Initialize the repo with a README**, and then click **Create repository**.
-3.  Click the **Wiki** link at the top of the repository.
+2.  Give the repo a **Repository name**, a short **Description**, select **Public**, select **Initialize the repo with a README**, and then click **Create repository**. (Don't worry about selecting the license or gitignore settings for this test.)
+3.  Click the **Wiki** tab on the top navigation bar of your new repository.
 4.  Click **Create the first page**.
 5.  In the default page ("Home"), insert your own sample documentation content, preferably using Markdown syntax. Or grab the sample Markdown page of a <a href="https://idratherbewriting.com/learnapidoc/assets/files/surfreportendpointdoc.md">fake endpoint called surfreport here</a> and insert it into the page.
-6.  In the **Edit Message** box, type a description of what you updated (your commit message).
-7.  Click **Save page**.
+6.  In the **Edit message** box, type a description of what you updated (your commit message).
+7.  Click **Save Page**.
 
-    Notice how GitHub automatically converts the Markdown syntax into HTML and styles it in a readable way.
-
-    You could use this GitHub wiki in an entirely browser-based way for multiple people to collaborate and edit content. However, you can also take all the content offline and edit locally, and then commit your changes and push them online.
+    Notice how GitHub automatically converts the Markdown syntax into HTML and styles it in a readable way. You could work with this GitHub wiki entirely in the browser as a way for multiple people to collaborate and edit content. However, you can also take all the content offline and edit locally, and then commit your changes and push the changes back online.
 
 ## Save the GitHub repository locally
 
 So far you've been working with GitHub in the browser. Now we'll take the same content and work with it locally.
 
-1.  While viewing your the GitHub wiki in your browser, look to the right to the section that says **Clone this wiki locally**. Click the clipboard button. (This copies the clone URL to your clipboard.)
+1.  While viewing your the GitHub wiki in your browser, look to the right to the section that says **Clone this wiki locally**. Click the clipboard <img src="images/githubcopybutton.png" style="max-width="20px"> button. (This copies the clone URL to your clipboard.)
 
     <img class="medium" src="images/clone-this-wiki-locally.png" class="noExtIcon" alt="Clone this wiki locally"/>
 
 	  {: .note}
     The wiki is a separate clone URL than the project's repository. Make sure you're viewing your wiki and not your project. The clone URL will include `.wiki`.
 
-	  In contrast to "Clone this wiki locally," the "Clone in Desktop" option launches the GitHub Desktop client and allows you to manage the repository and your modified files, commits, pushes, and pull through the GitHub Desktop client.
+	  In contrast to the "Clone this wiki locally" section, the "Clone in Desktop" button launches the GitHub Desktop client and allows you to manage the repository and your modified files, commits, pushes, and pull through the GitHub Desktop client.
 
 4.  If you're a Windows user, open the **Git Shell**, which should be a shortcut on your Desktop or should be available in your list of programs. (This shell gets installed when you installed GitHub Desktop &mdash; see [Set Up Git and GitHub authentication](#set_up_git_and_github) above). On a Mac, open a terminal.
 3.  In your terminal, either use the default directory or browse (`cd`) to a directory where you want to download your repository.
-4.  Type the following, but replace the git URL with your own git URL that you copied earlier (it should be on your clipboard). The command should look like this:
+4.  Type the following, but replace the git URL with your own git URL that you copied earlier (it should be on your clipboard). The command should look something like this:
 
     ```bash
 	  git clone https://github.com/tomjoht/weatherapi.wiki.git
@@ -115,13 +113,16 @@ So far you've been working with GitHub in the browser. Now we'll take the same c
 	  {: .note}
     To paste content into the Git Shell on Windows, right-click and select <b>Paste</b>.
 
-    Cloning the wiki gives you a copy of the content on your local machine. Git is *distributed* version control software, so everyone has his or her own copy. You will clone this wiki on your local machine; the version in the cloud on GitHub is referred to as "origin."
+    Cloning the wiki gives you a copy of the content on your local machine. Git is *distributed* version control software, so everyone has his or her own copy. When you clone the repo, you create a copy on your local machine; the version in the cloud on GitHub is referred to as "origin." Thus, you have two instances of the content.
 
-    More than just copying the files, though, when you clone a repo, you initialize Git in the folder where you clone the repo. Initializing Git means Git will create an invisible Git folder in that directory, and Git will start tracking your edits to the files, providing version control. With Git initialized, you can run `pull` commands to get updates of the online repository (origin) pulled down to your local copy. You can also `commit` your changes and then `push` your changes back up to the origin repository if you're entitled as a collaborator for the project.
+    More than just copying the files, though, when you clone a repo, you initialize Git in the folder where you clone the repo. Initializing Git means Git will create an invisible Git folder in that directory, and Git will start tracking your edits to the files, providing version control. With Git initialized, you can run `pull` commands to get updates from the online repository (origin) pulled down to your local copy. You can also `commit` your changes and then `push` your changes back up to origin.
 
-5.  Navigate to the directory (either using standard ways of browsing for files on your computer or via the terminal with `cd`) to see the files you downloaded. For example, type `cd weatherapi.wiki` and then `ls` to see the files.
+5.  Navigate to the directory where you cloned the repo (either using standard ways of browsing for files on your computer or via the terminal with `cd`) to see the files you downloaded. For example, type `cd weatherapi.wiki` and then `ls` to see the files.
 
-    If you can view invisible files on your machine ([Windows](https://support.microsoft.com/en-us/help/14201/windows-show-hidden-files), [Mac](https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/)), you will also see a git folder.
+    {: .tip}
+    You don't have to type the full directory name. Just start typing the first few letters and then press your **Tab** key to autocomplete the rest.
+
+    You might also want to browse to this folder via Finder or Explorer. If you can view invisible files on your machine (for instructions on making hidden files visible, see one of the following: [Windows](https://support.microsoft.com/en-us/help/14201/windows-show-hidden-files) or [Mac](https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/)), you will also see a git folder.
 
 ## Make a change locally, commit it, and push the commit to the GitHub repository
 
@@ -129,7 +130,9 @@ So far you've been working with GitHub in the browser. Now we'll take the same c
 
     On a Mac, you can type `open Home.md` in your Terminal, and the file will open in the default text editor.
 
-2.  Make a small change and save it.
+    For instructions on configuring Git to open the text editor you want, see [Associating text editors with Git](https://help.github.com/articles/associating-text-editors-with-git/).
+
+2.  Make a small change to the content and save it.
 3.  In your terminal, make sure you're in the directory where you downloaded the GitHub project.
 
     To look at the directories under your current path, type `ls`. Then use `cd {directory name}` to drill into the folder, or `cd ../` to move up a level.
@@ -140,10 +143,10 @@ So far you've been working with GitHub in the browser. Now we'll take the same c
 	  git add .
     ```
 
-	  Git doesn't automatically track all files in the same folder where the invisible Git folder has been initialized. Git tracks modifications only for the files that have been "added" to Git. By selecting ` . ` or `--all`, you're adding all the files in the folder to Git. You could also type a specific file name here instead, such as `git add Home.md`, to just add one file to Git's tracking.
+	  Git doesn't automatically track all files in the same folder where the invisible Git folder has been initialized. Git tracks modifications only for the files that have been "added" to Git. By selecting ` . ` or `--all`, you're adding all the files in the folder to Git. You could also type a specific file name here instead, such as `git add Home.md`, to just add a specific file (rather than all files changed) to Git's tracking.
 
 	  {: .warning}
-    Use Git only to track text (non-binary) files. Don't start tracking large binary files, especially audio or video files. Version control systems really can't handle that kind of format well. If you use Git to manage your documentation, exclude these files through your [.gitignore file](https://git-scm.com/docs/gitignore). You might also consider excluding images, as they bloat your repo size as well.
+    Use Git only to track text (that is, non-binary) files. Don't start tracking large binary files, especially audio or video files. I don't even recommend tracking Microsoft Word or Adobe PDF files. Version control systems really can't handle that kind of format well and your repo size will increase exponentially. If you use Git to manage your documentation, exclude these files through your [.gitignore file](https://git-scm.com/docs/gitignore). You might also consider excluding images, as they bloat your repo size as well.
 
 4.  See the changes set in your staging area:
 
@@ -183,6 +186,10 @@ So far you've been working with GitHub in the browser. Now we'll take the same c
     If you didn't [set up GitHub authentication](#set_up_git_and_github), you may be prompted for your GitHub user name and password.
 
     Note that when you type `git push` or `git pull` and don't specify the branch, GitHub uses the default branch from origin. The default branch on GitHub is called `master`. Thus the command actually passed is `git push origin master` or `git push origin master`. Some developers prefer to specify the repository and branch to ensure they are interacting with the right repositories and branches.
+
+    Your terminal window probably looks something like this:
+
+    {% include course_image.html size="medium" filename="terminalupdates" ext_print="png" ext_web="png" alt="Terminal window with git commands" caption="Terminal window with git commands" %}
 
 7.  Now verify that your changes took effect. Browse to your GitHub wiki repository and look to see the changes.
 
