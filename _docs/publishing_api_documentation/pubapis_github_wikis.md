@@ -19,7 +19,7 @@ Learning GitHub will allow you to become familiar with the version control workf
 
 You could actually use the default GitHub wiki as your doc site. Here's an example of the Basecamp API, which is housed on GitHub.
 
-<a href="https://github.com/basecamp/bc3-api" class="noExtIcon"><img src="images/basecampapi.png" alt="Basecamp API" /></a>
+{% include course_image.html url="https://github.com/basecamp/bc3-api" size="large" filename="basecampapi" ext_print="png" ext_web="png" alt="Basecamp API" caption="Basecamp API" %}
 
 Unlike other wikis, the GitHub wiki you create is its own repository that you can clone and work on locally. (If you look at the "Clone this wiki locally" link, you'll see that it's a separate repo from your main code repository.) You can work on files locally and then commit them to the wiki repository when you're ready to publish. You can also arrange the wiki pages into a sidebar.
 
@@ -78,7 +78,7 @@ In this section, you will create a new GitHub repo and publish a sample file the
 
 1.  Go to [GitHub](https://github.com) and sign in. After you're signed in, click the **+** button in the upper-right corner and select **New repository**.
 
-	 <a href="https://github.com/new" class="noExtIcon"><img src="images/newrepositorygithub.png" alt="Creating a new GitHub repository" /></a>
+    {% include course_image.html url="https://github.com/new" size="medium" filename="newrepositorygithub" ext_print="png" ext_web="png" alt="Creating a new GitHub repository" caption="Creating a new GitHub repository" %}
 
 2.  Give the repo a **Repository name**, a short **Description**, select **Public**, select **Initialize the repo with a README**, and then click **Create repository**. (Don't worry about selecting the license or gitignore settings for this test.)
 3.  Click the **Wiki** tab on the top navigation bar of your new repository.
@@ -95,7 +95,7 @@ So far you've been working with GitHub in the browser. Now we'll take the same c
 
 1.  While viewing your the GitHub wiki in your browser, look to the right to the section that says **Clone this wiki locally**. Click the clipboard <img src="images/githubcopybutton.png" style="max-width="20px"> button. (This copies the clone URL to your clipboard.)
 
-    <img class="medium" src="images/clone-this-wiki-locally.png" class="noExtIcon" alt="Clone this wiki locally"/>
+    {% include course_image.html size="medium" filename="clone-this-wiki-locally" ext_print="png" ext_web="png" alt="Clone this wiki locally" caption="Clone this wiki locally" %}
 
 	  {: .note}
     The wiki is a separate clone URL than the project's repository. Make sure you're viewing your wiki and not your project. The clone URL will include `.wiki`.

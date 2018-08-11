@@ -21,11 +21,11 @@ In this tutorial, you'll use GitHub Desktop to manage the Git workflow.
 2.  Go to [Github.com](http://github.com) and browse to the wiki repository you created in the [GitHub tutorial](pubapis_github_wikis.html). (If you didn't do the previous activity, just create a new repository.)
 3.  While viewing your GitHub repo in the browser, click **Clone** and select **Open in Desktop**.
 
-    <img src="images/open-in-github-desktop.png" alt="Open in GitHub Desktop" />
+    {% include course_image.html filename="open-in-github-desktop" size="medium" ext_print="png" ext_web="png" alt="Open in GitHub Desktop" caption="Open in GitHub Desktop" %}
 
 4.  In the confirmation dialog, select **Open GitHub Desktop.app**. GitHub Desktop should launch with a "Clone a Repository" dialog box about where to clone the repository. If desired, you can change the Local Path.
 
-    <img src="images/localpathgithubdesktop.png" class="medium" alt="Choosing the path for GitHub clone" />
+    {% include course_image.html size="medium" filename="localpathgithubdesktop" ext_print="png" ext_web="png" alt="Choosing the path for GitHub clone" caption="Choosing the path for GitHub clone" %}
 
     (If you're using the same repo from the [previous GitHub tutorial](pubapis_github_wikis.html), you might want to delete the test repo you already installed in that directory.)
 
@@ -34,7 +34,7 @@ In this tutorial, you'll use GitHub Desktop to manage the Git workflow.
 6.  Go into the repository where GitHub Desktop cloned the repo (use your Finder or browsing folders normally) and add a simple text file with some content. Or make a change to an existing file.
 7.  Go back to GitHub Desktop. You'll see the new file you added in the list of uncommitted changes on the left.
 
-    <img src="images/github-desktop-file-uncommitted-changes.png" alt="Uncommitted changes shown" />
+    {% include course_image.html filename="github-desktop-file-uncommitted-changes" size="medium"  ext_print="png" ext_web="png" alt="Uncommitted changes shown" caption="Uncommitted changes shown" %}
 
     In the list of changed files, the green + means you've added a new file. A yellow circle means you've modified an existing file.
 
@@ -46,7 +46,7 @@ In this tutorial, you'll use GitHub Desktop to manage the Git workflow.
 
     You'll see GitHub Desktop show that it's "Pushing to origin."
 
-    <img src="images/pushingtoorigin.png"/>
+    {% include course_image.html url=""  size="small" filename="pushingtoorigin" ext_print="png" ext_web="png" alt="Pushing to origin" caption="Pushing to origin" %}
 
 If you view your repository online (by going to **Repository > View on GitHub**), you'll see that the change you made has been pushed to the master branch on origin. You can also click the **History** tab in the GitHub Desktop client (instead of the **Changes** tab), or go to **View > Show History** to see the changes you previously committed.
 
@@ -59,16 +59,16 @@ Now let's create a branch, make some changes, and see how the changes are specif
 
 1.  Go to **Branch > New Branch** and create a new branch. Call it "development" branch, and click **Create Branch**.
 
-    <img src="images/creatingnewbranchgithubdesktop.png" class="medium" />
+    {% include course_image.html size="medium" filename="creatingnewbranchgithubdesktop" ext_print="png" ext_web="png" alt="Creating a new branch" caption="Creating a new branch" %}
 
 	  When you create the branch, you'll see the Current branch drop-down menu indicate that you're working in that branch. Creating a branch copies the existing content (from the branch you're currently in, *master*) into the new branch (*development*).
 
-	  <img src="images/github-desktop-current-branch.png" alt="Working in a branch" />
+    {% include course_image.html  size="medium" filename="github-desktop-current-branch" ext_print="png" ext_web="png" alt="Working in a branch" caption="Working in a branch" %}
 
 2.  Using Finder or Explorer, browse to the file you created earlier and make a change to it, such as adding a new line with some text. Save the changes.
 3.  Return to GitHub Desktop and notice that on the Changes tab, you have new modified files.
 
-	  <img src="images/github-desktop-file-changes.png" alt="New files modified" />
+    {% include course_image.html  size="medium" filename="github-desktop-file-changes" ext_print="png" ext_web="png" alt="New files modified" caption="New files modified" %}
 
 	  The file changes shows deleted lines in red and new lines in green. The colors help you see what changed.
 
@@ -89,7 +89,7 @@ Now let's merge the development branch into the master branch.
 2.  Go to **Branch > Merge into Current Branch**.
 3.  In the merge window, select the **development** branch, and then click **Merge into master**.
 
-    <img src="images/mergeintomastergithubclient.png" alt="Merging into master" />
+    {% include course_image.html  size="medium" filename="mergeintomastergithubclient" ext_print="png" ext_web="png" alt="Merging into master" caption="Merging into master" %}
 
     If you look at your changed file, you should see the changes in the master branch.
 
@@ -108,7 +108,7 @@ Now let's merge the development branch into the master using a pull request work
 
 	  GitHub opens in the browser with the Pull Request form opened.
 
-    <img src="images/mergepullrequestgithubdesktop.png" alt="Pull reqeust" />
+    {% include course_image.html url="" size="" border="" filename="mergepullrequestgithubdesktop" ext_print="png" ext_web="png" alt="Pull request" caption="Pull request" %}
 
     The left-facing arrow from the development branch towards the master indicates that the pull request ("PR") wants to merge development into master.
 
@@ -116,7 +116,7 @@ Now let's merge the development branch into the master using a pull request work
 
 4.  At this point, engineers would get an email request asking for them to merge in the edits. Play the part of the engineer by going to the **Pull requests** tab to examine and confirm the merge request. As long as the merge request doesn't pose any conflicts, you'll see a **Merge pull request** button.
 
-    <img src="images/mergepullrequest.png" alt="Confirm merge request" />
+    {% include course_image.html url="" size="" border="" filename="mergepullrequest" ext_print="png" ext_web="png" alt="Confirm merge request" caption="Confirm merge request" %}
 
 5.  To see what changes you're merging into master, you can click the **Files changed** tab (which appears on the secondary navigation bar near the top). Then click **Merge pull request** to merge in the branch, and click **Confirm merge** to complete the merge.
 
