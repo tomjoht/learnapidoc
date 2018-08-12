@@ -2,7 +2,7 @@
 title: "Activity: Use the GitHub Desktop client"
 permalink: /pubapis_github_desktop_client.html
 course: "Documenting REST APIs"
-weight: 8.71
+weight: 8.9
 sidebar: docapis
 section: publishingapis
 path1: /publishingapis.html
@@ -46,7 +46,7 @@ In this tutorial, you'll use GitHub Desktop to manage the Git workflow.
 
     You'll see GitHub Desktop show that it's "Pushing to origin."
 
-    {% include course_image.html url=""  size="small" filename="pushingtoorigin" ext_print="png" ext_web="png" alt="Pushing to origin" caption="Pushing to origin" %}
+    <img src="images/pushingtoorigin.png" style="max-width:250px" alt="Pushing to origin" />
 
 If you view your repository online (by going to **Repository > View on GitHub**), you'll see that the change you made has been pushed to the master branch on origin. You can also click the **History** tab in the GitHub Desktop client (instead of the **Changes** tab), or go to **View > Show History** to see the changes you previously committed.
 
