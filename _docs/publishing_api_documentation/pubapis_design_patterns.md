@@ -199,7 +199,17 @@ For example, here's a [JavaScript style guide](http://google.github.io/styleguid
 
 ## Pattern 4: Lengthy pages {#longish_pages}
 
-One of the most stark differences between regular end-user documentation and developer documentation is that developer doc pages tend to be much longer. Again quoting from Yu's article on designing API docs, he says:
+One of the most stark differences between regular end-user documentation and developer documentation is that developer doc pages tend to be much longer. In [How API Documentation Fails](https://ieeexplore.ieee.org/document/7140676/) (published in [*IEEE Software*](https://ieeexplore.ieee.org)), researchers looked at common reasons why developers had severe problems with API documentation. In addition to incompleteness, ambiguity, and other reasons, Martin P. Robillard and Gias Uddin also found that "fragmentation" was cited as a common issue (which is more related to the presentation of content than the content itself).
+
+Robillard and Udin explain, "When the respondents had to click through multiple pages of an API document to learn the functionality and use of an API element, they found the separation of the descriptions at such a micro level to be unnecessary."
+
+Developers in their survey said they "had difficulty navigating through the myriad pages in an API document to find information," with one respondent explaining:
+
+> I find really difficult to use, where you have to have 10s of clicks through links to find the information you need, and page after page to read.
+
+If you're using an information model in your documentation that chunks information, make sure your presentation to the user doesn't fragment the content into too many discrete pieces (as I wrote about in [Does DITA Encourage Authors to Fragment Information into a Million Little Pieces?](https://idratherbewriting.com/2013/04/22/does-dita-encourage-authors-to-fragment-information-into-a-million-little-pieces/)).
+
+James Yu at Parse also echoes similar feedback about fragmentation. He says,
 
 >It's no secret that developers hate to click. Don't spread your documentation onto a million different pages. Keep related topics close to each other on the same page.
 >
@@ -216,7 +226,7 @@ For another example of a long page, see the Reddit API:
 
 Why do API doc sites tend to have such lengthy pages? Here are a few reasons:
 
-* **Provides the big picture**: As the Parse writers indicate, single-page docs allow users to zoom out or in depending on the information they need. A new developer might zoom out to get the big picture, learning the base REST path and how to submit calls. But a more advanced developer already familiar with the API might need only to check the parameters allowed for a specific endpoint. The single-page doc model allows developers to jump to the right page and use Ctrl+F to locate the information.
+* **Provides the big picture**: As Yu indicates, single-page docs allow users to zoom out or in depending on the information they need. A new developer might zoom out to get the big picture, learning the base REST path and how to submit calls. But a more advanced developer already familiar with the API might need only to check the parameters allowed for a specific endpoint. The single-page doc model allows developers to jump to the right page and use Ctrl+F to locate the information.
 * **Many platforms lack search**: A lot of the API doc sites don't have good search engines. In fact, many lack built-in search features altogether. This is partly because Google does such a better job at search, the in-site search feature of any website is often meager by comparison. Also, some of the other document generator and static site generator tools just don't have search (neither did Javadoc). Without search, you can find information by creating long pages and using Ctrl+F.
 * **Everything is at your fingertips**: If the information is chunked up into little pieces here and there, requiring users to click around constantly to find anything (as is [often the case with DITA's information model](https://idratherbewriting.com/2013/04/22/does-dita-encourage-authors-to-fragment-information-into-a-million-little-pieces/)), the experience can be like playing information pinball. As a general strategy, you want to include complete information on a page. If an API resource has several different methods, splitting them out into separate pages can create findability issues. Sometimes it makes sense to keep all related information in one place, with "everything at your fingertips."
 * **Today's navigation controls are sophisticated**: Today there are better navigation controls today for moving around on long pages than there were in the past. For example, [Bootstrap's Scrollspy feature](http://getbootstrap.com/docs/4.0/components/scrollspy/) dynamically highlights your place in the sidebar as you're scrolling down the page. Other solutions allow collapsing or expanding of sections to show content only if users need it.
