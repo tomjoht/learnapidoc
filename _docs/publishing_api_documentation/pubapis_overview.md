@@ -10,6 +10,9 @@ path1: /publishingapis.html
 
 In earlier parts of this course, I used a [Weather API from OpenWeatherMap](https://openweathermap.org/api) to demonstrate how to use a REST API. Now I'll explore various tools to publish API documentation, also using this same OpenWeatherMap API as an example.
 
+{: note}
+As technical writers look for ways to provide value in highly technical organizations, they might find that they do less writing and more editing/publishing. Tech writers might be guiding and directing the publishing of technical content that engineers mainly develop. So even though tools typically falls outside of content development, you might find it to be more relevant with API doc contexts.
+
 {% if site.format == "web" %}
 * TOC
 {:toc}
