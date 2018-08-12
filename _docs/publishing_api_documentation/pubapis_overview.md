@@ -8,10 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-In earlier parts of this course, I used a [Weather API from OpenWeatherMap](https://openweathermap.org/api) to demonstrate how to use a REST API. Now I'll explore various tools to publish API documentation, also using this same OpenWeatherMap API as an example.
-
-{: note}
-As technical writers look for ways to provide value in highly technical organizations, they might find that they do less writing and more editing/publishing. Tech writers might be guiding and directing the publishing of technical content that engineers mainly develop. So even though tools typically falls outside of content development, you might find it to be more relevant with API doc contexts.
+As you look for ways to provide value as a technical *writer* in a highly technical organization, you might find that you do less direct authoring of technical content and more editing/publishing. You might be guiding and directing the publishing of technical content that engineers mainly develop. So even though tools typically falls outside of content development, you might find it to be more relevant with API doc contexts.
 
 {% if site.format == "web" %}
 * TOC
@@ -24,29 +21,53 @@ The first question about a focus on publishing API documentation might be, *why?
 
 {% include random_ad2.html %}
 
-This is a valid question that I want to answer by telling a story. When I first transitioned to API documentation, I had my mind set on using DITA, and I converted a large portion of my content over to it.
+With API documentation, you're no longer in the realm of GUI (graphical user interface) documentation, usually intended for mainstream end users. A lot of the content for developers is complex and requires a background not just in programming, but in a specific programming language or framework.
+
+As such, you may find that as a technical writer, you're in over your head in complexity and as such, you're reliant on engineers to write more of the content. You end up playing of a doc tooling and workflow role.
+
+In [How API Documentation Fails](https://ieeexplore.ieee.org/document/7140676/) (published in [*IEEE Software*](https://ieeexplore.ieee.org)), Martin Robillard and Gias Uddin surveyed developers to find out why API docs failed for them. They found that most of the shortcomings were related to content, whether it was incomplete, inaccurate, missing, ambiguous, fragmented, etc. They summarized their findings here:
+
+{% include course_image.html url="https://ieeexplore.ieee.org/document/7140676/" filename="whyapidocsfail" ext_print="png" ext_web="png" alt="Reasons why docs fail for developers" caption="Reasons why docs fail for developers" %}
+
+The problem is that the very people who can fix this content are usually fully engaged in development work. Robillard and Uddin write,
+
+> Perhaps unsurprisingly, the biggest problems with API documentation were also the ones requiring the most technical expertise to solve. Completing, clarifying, and correcting documentation require deep, authoritative knowledge of the API’s implementation. This makes accomplishing these tasks difficult for non-developers or recent contributors to a project.  
+>
+> So, how can we improve API documentation if the only people who can accomplish this task are too busy to do it or are working on tasks that have been given a higher priority? One potential way forward is to develop recommendation systems that can reduce as much of the administrative overhead of documentation writing as possible, letting experts focus exclusively on the value-producing part of the task. As Barthélémy Dagenais and Martin Robillard discovered, a main challenge for evolving API documentation is identifying where a document needs to be updated.
+
+For example, suppose you identify a high point of developer friction related to poor documentation. Fixing it isn't a matter of converting the content into plain language or adding some details about missing parameters. The required fixes might involve explaining how the parameters interact in the code, how one value gets used by another and how they get mapped into variables that the code iterates through, etc. Maybe the only person who truly understands the crazy syntax users have to write is the lead developer.
+
+But guess what? What lead developer isn't going to have time to figure out docs. He or she is usually heads-down deep in a complex programming scenario. So the very person who has the knowledge to decompile and explain the needed concepts in the documentation usually isn't available to do so. But if the content is beyond the comprehension of generalists, at some point these SMEs will need to devote some time to docs. In these scenarios, Robillard and Uddin say the best help would be to reduce the overhead of the documentation process.
+
+As an editor/publisher, you can help the SME author by accurately identifying the point of confusion, the area of the doc that needs updating, and provide easy tools for the SME to make the updates. The engineers can't be bothered to figure out static site generators or publishing workflows, PDFs, or other doc publishing tools. By playing a role as an editor/publisher, you can be a valuable contributor to the product team. This is why being a doc tools expert is particularly relevant in API documentation contexts.
+
+## Using tools your SME authors want to use to collaborate
+
+Another aspect of doc tools is using tools that your SME authors want to use to collaborate. When I first transitioned to API documentation, I had my mind set on using DITA, and I converted a large portion of my content over to it.
 
 However, as I started looking more at API documentation sites, primarily [those listed on Programmableweb.com](http://www.programmableweb.com/apis/directory), which maintains the largest directory of web APIs, I didn't find many DITA-based API doc sites. In fact, it turns out that almost none of the API doc sites listed on Programmable Web even use tech comm authoring tools.
 
-Despite many advances with single sourcing, content re-use, conditional filtering, and other features in help authoring tools and content management systems, almost no API documentation sites on Programmableweb.com use them. Why is that? Why has the development community implicitly rejected tech comm tools and their many years of evolution?
+Despite many advances with single sourcing, content re-use, conditional filtering, and other features in help authoring tools and content management systems, almost no API documentation sites (at least those listed on Programmableweb.com) use them. Why is that? Why has the development community implicitly rejected tech comm tools and their many years of evolution?
 
 Granted, there is the occasional HAT, as with [Photobucket's API](http://bit.ly/photobucketlongurl), but they're rare. And it's even more rare to find an API doc site that structures the content in DITA.
 
-I asked [Andrew Davis](http://www.synergistech.com/contact_us.html), who specializes in recruiting for API documentation jobs in the Bay area, whether it was more advantageous to become adept with DITA or to learn a tool such as a static site generator, which is more common in the API space.
+The short answer is that in API documentation scenarios, more engineers are writing. The content is so technical, they're the only ones who understand it. And when engineers write, they'll naturally gravitate towards tools and workflows they're familiar with.
 
-Davis knows the market &mdash; especially the Silicon Valley market &mdash; extremely well. Without hesitation, he urged me to pursue the static site generator route. He said many small companies, especially startups, are looking for writers who can publish documentation that looks beautiful, like the many modern web outputs on Programmableweb.
+[Andrew Davis](http://www.synergistech.com/contact_us.html), a recruiter who specializes in API documentation jobs in the Bay area, told me that specializing in docs-as-code tools is 100% more advantageous than becoming adept with DITA or some other traditionally technical-writer-oriented tooling.
 
-His response, and my subsequent emphasis on static site generators, led me to understand why traditional help authoring tools aren't used often in the API doc space. Here are 5 reasons:
+Davis knows the market &mdash; especially the Silicon Valley market &mdash; extremely well. Without hesitation, he urged me to pursue the static site generator route (instead of DITA). He said many small companies, especially startups, are looking for writers who can publish documentation that looks beautiful, like the many modern web outputs on Programmableweb.
+
+His response, and my subsequent emphasis on static site generators, led me to understand why traditional help authoring tools aren't used often in the API doc space. To make the case even stronger, let me dive into five main reasons why tech writers use docs-as-code tools in developer documentation spaces:
 
 ### 1. The HAT tooling doesn't match developer workflows and environments
 
 If devs are going to contribute to docs (or write docs entirely themselves), the tools need to fit their own processes and workflows. Their tooling is to treat [doc as code](pubapis_docs_as_code.html), committing it to [version control](pubapis_version_control.html), building outputs from the server, etc. They want to package the documentation in with their other code, checking it into their repos, and automating it as part of their build process.
 
-Why are engineers writing documentation in the first place, you might ask? Well, sometimes you really need engineers to contribute because the content is so technical, it's beyond the domain of non-specialists. If you want engineers to get involved, especially to write, you need to use developer tooling.
-
 If you're hoping for developers to contribute to the documentation, it's going to be hard to get buy-in if you're using a HAT. Additionally, almost no HAT runs on a Mac. Many developers and designers prefer Macs because they have a much better development platform (the command line is much friendlier and functional, for example).
 
-If most developers use Macs but you use a PC (to accommodate your HAT), you may struggle to install developer tools or to follow internal tutorials to get set up and test out content. Additionally, HATs often have steep license restrictions, whereas docs-as-code tools are often open source and can therefore scale across the company without budgetary funding and approval.
+Even if you could get them using a HAT, you'd likely need to buy a license for each contributing developer. In contrast, docs-as-code tools are often open source and can therefore scale across the company without budgetary funding and approval
+
+Also, if most developers use Macs but you use a PC (to accommodate your HAT), you might struggle to install developer tools or to follow internal tutorials to get set up and test out content. 
 
 {% include random_ad.html %}
 
