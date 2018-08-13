@@ -10,6 +10,7 @@ weight: 1.0
 class: first
 redirect_from:
 - /restapicourse2-0/
+- /learnapidoc/introtoapis.html
 ---
 
 In this course on writing documentation for REST APIs, instead of just talking about abstract concepts, I contextualize REST APIs with a direct, hands-on approach. You'll learn about API documentation in the context of using some simple weather APIs to put a weather forecast on your site.
