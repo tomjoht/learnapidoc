@@ -256,11 +256,25 @@ folders:
   - title: Pull request workflows through GitHub
     jurl: /pubapis_github_pull_requests.html
 
-  - title: Jekyll and CloudCannon continuous integration publishing
+  - title: Jekyll and CloudCannon continuous deployment
     jurl: /pubapis_jekyll.html
 
   - title: "Case study: Switching tools to docs-as-code"
     jurl: /pubapis_switching_to_docs_as_code.html
+
+
+- title: Getting a Job in API Documentation
+  jurl: /jobapis.html
+  folderitems:
+
+  - title: The job market for API technical writers
+    jurl: /jobapis_overview.html
+
+  - title: How much code do you need to know?
+    jurl: /jobapis_learning_code.html
+
+  - title: Locations for API doc writer jobs
+    jurl: jobapis_location.html
 
 - title: Documenting native library APIs
   jurl: /nativelibraryapis.html
@@ -293,18 +307,6 @@ folders:
   - title: Create non-ref docs with native library APIs
     jurl: /nativelibraryapis_nonrefdocs.html
 
-- title: Getting a Job in API Documentation
-  jurl: /jobapis.html
-  folderitems:
-
-  - title: The job market for API technical writers
-    jurl: /jobapis_overview.html
-
-  - title: How much code do you need to know?
-    jurl: /jobapis_learning_code.html
-
-  # - title: Locations for API doc writer jobs
-  #   jurl: jobapis_location.html
 
 - title: Glossary and resources
   jurl: /resources.html

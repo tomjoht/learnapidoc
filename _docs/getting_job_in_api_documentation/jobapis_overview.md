@@ -2,7 +2,7 @@
 title: The job market for API technical writers
 course: "Documenting REST APIs"
 permalink: /jobapis_overview.html
-weight: 11.01
+weight: 10.1
 sidebar: docapis
 section: jobapis
 path1: /jobapis.html
@@ -45,13 +45,13 @@ When faced with these multi-language documentation challenges, hiring managers o
 
 But even developers will not know more than a few languages. Finding a technical writer who commands a high degree of English language fluency in addition to possessing a deep technical knowledge of Java, Python, C++, .NET, Ruby, and more is like finding a unicorn. (In other words, these technical writers don't really exist.)
 
-If you find one of these technical writers, the person is likely making a small fortune in contracting rates and has a near limitless choice of jobs. Companies often list knowledge of multiple programming languages as a requirement, but they realize they'll never find a candidate who is both a Shakespeare and a Steve Wozniak.
+If you find one of these technical writers, the person is likely making a small fortune in contracting rates and has a near limitless choice of jobs. Companies often list knowledge of multiple programming languages as a requirement, but they realize they'll never find a candidate who is both a William Shakespeare and a Steve Wozniak.
 
-Why does this hybrid individual not exist? In part, it's because the more a person enters into the worldview of computer programming, the more they begin thinking in computer terms and processes. Computers by definition are non-human. The more you develop code, the more your brain's language starts thinking and expressing itself with these non-human, computer-driven gears. Ultimately, you begin communicating less and less to humans using regular speech and fall more into the non-human, mechanical lingo.
+Why does this hybrid individual not exist? In part, it's because the more a person enters into the worldview of computer programming, the more they begin thinking in computer terms and processes. Computers by definition are non-human. The more you develop code, the more your brain's language starts thinking and expressing itself with these non-human, computer-driven gears. Ultimately, you begin communicating less and less to humans using regular speech and fall more into the non-human, mechanical lingo. (I explored this concept more in [Reducing the complexity of technical language](https://idratherbewriting.com/simplifying-complexity/reducing-the-complexity-of-technical-language.html).)
 
 This is both good and bad &mdash; good because other engineers in the same mindset may better understand you, but bad because anyone who doesn't inhabit that perspective and embrace the terminology already will be somewhat lost.
 
-Remember that the terminology and model will vary from one language and platform to the next. One user may speak fluently in Ruby, but that language may not connect with somebody who is a .NET developer. Consequently speaking "geek" can both connect with some developers and backfire with other developers.
+Remember that the terminology and model will vary from one language and platform to the next. One user may speak fluently in Ruby, but that language may not connect with somebody who is a .NET developer. Consequently, speaking "geek" can both connect with some developers and backfire with other developers.
 
 ## Wide, not deep understanding of programming
 
@@ -75,9 +75,9 @@ The technical landscape is diverse, so the generalizations I'm providing here ma
 
 However, with the proliferation of REST APIs, this scenario is much less common. Companies can't afford to cater only to one programming language. Doing so drastically reduces their audience and limits their revenue. The advantages of providing a universally accessible API using any language platform usually outweigh the specifics you get from a native library API.
 
-When I worked at 41st Parameter, the company had a library-based Java, .NET, and C++ API &mdash; each implementation did the same thing but in different languages. Maintaining the same functionality across three separate platforms was a serious challenge for developers. Not only was it difficult to find skill sets for developers across these three platforms, having multiple code bases made it harder to test and maintain the code. It was three times the amount of work, not to mention three times the amount of documentation.
+When I worked at 41st Parameter (a startup acquired by Experian), the company had a library-based Java, .NET, and C++ API &mdash; each implementation did the same thing but in different languages. Maintaining the same functionality across three separate platforms was a serious challenge for developers. Not only was it difficult to find skill sets for developers across these three platforms, having multiple code bases made it harder to test and maintain the code. It was three times the amount of work, not to mention three times the amount of documentation.
 
-Additionally, since native library APIs are implemented locally in the developer's code, it was almost impossible to get users to upgrade to the latest version of your API. We had to send out new library files and explain how to upgrade versions, licenses, and other deployment code. If you've ever tried to get a big company with a lengthy deployment process on board with making updates every couple of months to the code they've deployed, you realize how impractical it is. Rolling out a simple update could take 6 months or more.
+Additionally, since native library APIs are implemented locally in the developer's code, it was almost impossible to get users to upgrade to the latest version of the API. We had to send out new library files and explain how to upgrade versions, licenses, and other deployment code. If you've ever tried to get a big company with a lengthy deployment process on board with making updates every couple of months to the code they've deployed, you realize how impractical it is. Rolling out a simple update could take 6 months or more.
 
 It's much more feasible for API development shops to move to a SaaS model using REST, and then create various client implementations that briefly demonstrate how to call the REST API using the different languages. With a REST API, you can update it at any time (hopefully maintaining backward compatibility), and developers can simply continue using their same deployment code.
 
@@ -87,7 +87,7 @@ But even with a REST API, you'll still likely have a few language-specific SDKs.
 
 This proliferation of code and platforms creates more pressure on the multi-lingual capabilities of technical writers. Here's one consolation, though. If you can understand what's going on in one programming language, then your description of the reference implementations in other programming languages will follow highly similar patterns.
 
-What mainly changes across languages are the code snippets and some of the terms. You may refer to "functions" instead of "classes," and so on. Even so, getting all the language right can be a serious challenge, which is why it's so hard to find technical writers who have skills for producing developer documentation. (See [SDKs and sample apps](docapis_sdks_and_sample_apps.html) for more details.)
+What mainly changes across languages are the code snippets and some of the terms. You may refer to "functions" instead of "classes," and so on. Even so, getting all the language right can be a challenge, which is why it's so hard to find technical writers who have skills for producing developer documentation, especially for the [SDKs and sample apps](docapis_sdks_and_sample_apps.html).
 
 With this scenario of having multiple client implementations, you'll face other challenges, such as maintaining consistency across the various platforms. As you try to single source your explanations for various languages, your documentation code will become complex and difficult to maintain.
 
@@ -109,7 +109,7 @@ The truth is that you can learn anything, but it may take a long time to do so. 
 
 How can you get by without a deeper knowledge of programming? When you work in developer documentation environments, one strategy is to interview engineers about what's going on in the code, and then try your best to describe the actions in as clear speech as possible.
 
-You can always fall back on the idea that for those users who need Python, the Python code should look somewhat familiar to them. Well-written code should be, in some sense, self-descriptive in what it's doing. Unless there's something odd or non-standard in the approach, engineers fluent in code should be able to get a sense of what the code is doing.
+You can always fall back on the idea that for those users who need Python, the Python code should look somewhat familiar to them. Well-written code should be, in some sense, self-descriptive in what it's doing. Unless there's something odd or non-standard in the approach, engineers fluent in code should be able to get a sense of how the code works.
 
 In your documentation, you'll need to focus on the higher level information, the "why" behind the approach, the highlighting of any non-standard techniques, and the general strategy behind the code. (See [Code samples and tutorials](docapis_codesamples_bestpractices.html) for details.)
 

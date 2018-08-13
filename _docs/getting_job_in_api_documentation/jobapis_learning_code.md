@@ -2,7 +2,7 @@
 title: How much code do you need to know?
 permalink: /jobapis_learning_code.html
 course: "Documenting REST APIs"
-weight: 11.1
+weight: 10.2
 sidebar: docapis
 section: jobapis
 path1: /jobapis.html
@@ -34,9 +34,7 @@ James Rhea, in response to my post on [Generalist versus Specialist](https://idr
 >
 > I speculate that the need for writers to have deep technical knowledge diminishes as Tech Comm teams grow in size and as other skills become more important than they are for smaller Tech Comm teams. I'm not claiming that deep technical knowledge is useless. I'm suggesting that (to frame it negatively) neglecting deep technical knowledge has less severe consequences than neglecting content curation, doc tool set, or workflow considerations. ([Adding Value as a Technical Writer](https://withintheordinary.wordpress.com/2016/12/21/adding-value-as-a-technical-writer/))
 
-## Tech comm work that gets neglected
-
-If you spend excessive amounts of time learning to code, at the expense of tending to other documentation tasks such as shaping information architecture, analyzing user metrics, overseeing translation workflows, developing user personas, ensuring clear navigation, and more, your doc's technical content may improve a bit, but the overall doc site will go downhill.
+In other words, if you spend excessive amounts of time learning to code, at the expense of tending to other documentation tasks such as shaping information architecture, analyzing user metrics, overseeing translation workflows, developing user personas, ensuring clear navigation, and more, your doc's technical content may improve a bit, but the overall doc site will go downhill.
 
 Additionally, while engineers can fill in the deep technical knowledge needed, no one will provide the tech comm tasks in place of a tech writer. As evidence, just look at any corporate wiki. Corporate wikis are prime examples of what happens when engineers (or other non-tech writers) publish documentation. Pages may be rich with technical detail, but the degree of ROT (redundant, outdated, trivial content) gets compounded, navigation suffers, clarity gets muddled, and no one can find anything.
 
@@ -54,17 +52,19 @@ Neiman says tech writers often need to look over a developer's shoulder, watchin
 
 Neiman also says you may need to take the code examples in Java and produce equivalent samples in another language, such as C++, all on your own. In Neiman's view, API technical writers need more technical depth to excel than Wood and Rhea suggest.
 
-James Neiman and [Andrew Davis](http://www.synergistech.com/) (a recruiter for API tech writers in the Bay area) recently gave a presentation titled [Finding the right API Technical Writer](https://www.youtube.com/embed/lmNHBg20ql0) at an API conference in London last October. See [this video recording on YouTube](https://www.youtube.com/embed/lmNHBg20ql0?start=22m33s&end=24m17s) (around the 23-minute mark) for the highlights.
+James Neiman and [Andrew Davis](http://www.synergistech.com/) (a recruiter for API tech writers in the Bay area) recently gave a presentation titled [Finding the right API Technical Writer](https://www.youtube.com/embed/lmNHBg20ql0) at an API conference in London last October (scrub to around the 23-minute mark) for the highlights).
 
-Clearly, Neiman argues for a higher level of coding proficiency than Wood or Rhea. The level of coding knowledge required no doubt depends on the position, environment, and expectations. If you're in a situation where the code is over your head, developers may send you chunks of code to add to the documentation.
+{% if site.format == "web" %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lmNHBg20ql0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+{% endif %}
+
+Clearly, Neiman argues for a higher level of coding proficiency than Wood or Rhea. The level of coding knowledge required no doubt depends on the position, environment, and expectations at your company. If you're in a situation where the code is over your head, developers may send you chunks of code to add to the documentation.
 
 Without the technical acumen to fully understand, test, and integrate the code in meaningful ways, you will be at the mercy of engineers and their terse explanations or cryptic inline comments. Your role will be reduced more to scribe than writer.
 
 {% include random_ad.html %}
 
-Neiman says in one company, he tested out the code from engineers and found that much of the code relied on programs, utilities, or other configurations already set up on the developers' computers.
-
-As such, the engineers were blind to the initial setup requirements that users would need to properly run the code. Neiman says this is one danger of simply copying and pasting the code from engineers into documentation. While it may work on the developer's machine, it will often fail for users.
+Neiman says in one company, he tested out the code from engineers and found that much of the code relied on programs, utilities, or other configurations already set up on the developers' computers. As such, the engineers were blind to the initial setup requirements that users would need to properly run the code. Neiman says this is one danger of simply copying and pasting the code from engineers into documentation. While it may work on the developer's machine, it will often fail for users.
 
 The more technical you are, the more powerful of a role you can play in shaping the information. Neiman is a former engineer and says that during his career, he has probably worked with 20-25 different programming languages. Being able to learn a new language quickly and get up to speed is a key characteristic of his tech comm consulting success, he says.
 

@@ -2,7 +2,7 @@
 title: Java crash course
 permalink: /nativelibraryapis_java_crash_course.html
 course: "Documenting REST APIs"
-weight: 10.2
+weight: 11.2
 sidebar: docapis
 section: nativelibraryapis
 path1: /nativelibraryapis.html

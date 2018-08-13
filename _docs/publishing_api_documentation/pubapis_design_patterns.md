@@ -21,7 +21,7 @@ One overriding commonality with API documentation is that they share a common st
 
 From a tool perspective, if you have common sections to cover with each endpoint, it makes sense to formalize a template to accommodate the publishing of that content. The template can provide consistency, automate publishing and styles, and allow you to more easily change the design without manually reformatting each section. (Without a template, you could just remember to add the exact same sections on each page, but this requires more effort to be consistent.) With a template, you can insert various values (descriptions, methods, parameters, etc.) into a highly stylized output, complete with div tags and other style classes.
 
-Different authoring tools have different ways of processing templates. In [Jekyll](pubapis_jekyll.html), a static site generator, you can create values in a [YAML file](pubapis_yaml.html) and loop through them using Liquid to access the values.
+Different authoring tools have different ways of processing templates. With [Jekyll](pubapis_jekyll.html), a static site generator, you can create values in a [YAML file](pubapis_yaml.html) and loop through them using Liquid to access the values.
 
 Here's how you might go about it. In the frontmatter of a page, you could list out the key value pairs for each section.
 

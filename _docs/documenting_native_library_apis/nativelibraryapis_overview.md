@@ -3,7 +3,7 @@ title: "Overview of native library APIs"
 permalink: /nativelibraryapis_overview.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 10.01
+weight: 11.01
 section: nativelibraryapis
 path1: /nativelibraryapis.html
 ---

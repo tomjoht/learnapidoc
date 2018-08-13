@@ -1,5 +1,5 @@
 ---
-title: "Jekyll and CloudCannon continuous integration publishing"
+title: "Jekyll and CloudCannon continuous deployment"
 permalink: /pubapis_jekyll.html
 course: "Documenting REST APIs"
 sidebar: docapis
