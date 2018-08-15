@@ -31,7 +31,7 @@ Explore the basic sections in API reference documentation in these two weather A
 This is a curl request for the weather endpoint in the OpenWeatherMap API:
 
 ```bash
-curl -I -X GET "http://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
+curl -I -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
 ```
 
 Swap in your own API key for the `appid` value in the URL's query string.

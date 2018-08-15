@@ -12,7 +12,7 @@ info:
     name: "CC Attribution-ShareAlike 4.0 (CC BY-SA 4.0)"
     url: https://openweathermap.org/price
 servers:
-- url: http://api.openweathermap.org/data/2.5/
+- url: https://api.openweathermap.org/data/2.5/
 tags:
   - name: Current Weather Data
     description: "Get current weather details"

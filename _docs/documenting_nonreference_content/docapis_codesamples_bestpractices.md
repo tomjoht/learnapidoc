@@ -154,7 +154,7 @@ Earlier in the course, we walked through [each element of reference documentatio
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "http://api.openweathermap.org/surfreport/25&days=1",
+  "url": "https://api.openweathermap.org/surfreport/25&days=1",
   "method": "GET"
 }
 
@@ -181,7 +181,7 @@ $.ajax(settings).done(function (response) {
 var settings = {
   &quot;async&quot;: true,
   &quot;crossDomain&quot;: true,
-  &quot;url&quot;: &quot;http://api.openweathermap.org/surfreport/25?days=1&amp;units=metric&quot;,
+  &quot;url&quot;: &quot;https://api.openweathermap.org/surfreport/25?days=1&amp;units=metric&quot;,
   &quot;method&quot;: &quot;GET&quot;
 }
 

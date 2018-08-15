@@ -139,7 +139,7 @@ Then in the Current Weather Data section, expand the **GET weather** endpoint an
 When you execute the request, Swagger UI shows you the [curl request]((docapis_make_curl_call.html)) that is submitted. For example, after executing a weather request, the curl is as follows:
 
 ```bash
-curl -X GET "http://api.openweathermap.org/data/2.5/weather?zip=95050&units=imperial&lang=en&mode=json&appid=fd4698c940c6d1da602a70ac34f0b147" -H "accept: application/json"
+curl -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050&units=imperial&lang=en&mode=json&appid=fd4698c940c6d1da602a70ac34f0b147" -H "accept: application/json"
 ```
 
 The `&appid=fd4698c940c6d1da602a70ac34f0b147"` indicates that the API key is being included in the query string, so the request will be authorized.

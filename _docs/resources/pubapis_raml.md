@@ -45,7 +45,7 @@ Here's the OpenWeatherMap API we've been using in this course formatted in the R
 #%RAML 1.0
 title: OpenWeatherMap API
 version: 2.5
-baseUri: http://api.openweathermap.org/data/2.5/
+baseUri: https://api.openweathermap.org/data/2.5/
 baseUriParameters: {}
 documentation:
 - title: OpenWeatherMap API

@@ -131,7 +131,7 @@ When you type an address into a website, you see only the body of the response. 
 Let's look more closely at the request you submitted for the weather in the [previous topic](docapis_make_curl_call.html):
 
 ```bash
-curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: 930d08d6-7b2a-6ea2-0725-27324755c684" "http://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
+curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: 930d08d6-7b2a-6ea2-0725-27324755c684" "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
 ```
 
 curl has shorthand names for the various options that you include with your request.

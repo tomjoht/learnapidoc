@@ -60,7 +60,7 @@ Here's the mock internal wiki page:
 <p>Sample endpoint with parameters: </p>
 
 <pre>
-http://api.openweathermap.org/com/surfreport/123?&days=2&units=metrics&hour=1400
+https://api.openweathermap.org/com/surfreport/123?&days=2&units=metrics&hour=1400
 </pre>
 
 <p>The response contains these elements:</p>

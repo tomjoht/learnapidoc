@@ -23,7 +23,7 @@ Returns information about surfing conditions at a specific beach ID, including t
 
 ```
 curl -I -X GET
-"http://api.openweathermap.org/data/2.5/surfreport?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial&days=2"
+"https://api.openweathermap.org/data/2.5/surfreport?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial&days=2"
 ```
 
 ## Sample response
@@ -96,7 +96,7 @@ The following code samples shows how to use the surfreport endpoint to get the s
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "http://api.openweathermap.org/surfreport/25&days=1",
+  "url": "https://api.openweathermap.org/surfreport/25&days=1",
   "method": "GET"
 }
 

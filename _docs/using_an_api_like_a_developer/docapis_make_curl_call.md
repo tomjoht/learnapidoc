@@ -30,13 +30,13 @@ In this section, you'll use curl to make the same weather API requests you made 
     The code for the OpenWeatherMap weather request looks like this in curl format:
 
     ```bash
-    curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: 930d08d6-7b2a-6ea2-0725-27324755c684" "http://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
+    curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: 930d08d6-7b2a-6ea2-0725-27324755c684" "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
     ```
 
     For whatever reason, Postman adds some of its own header information (designated with `-H`). You can optionally remove these extra header tags (including them won't hurt anything). Here's the curl call with the `-H` content removed:
 
     ```bash
-    curl -X GET "http://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
+    curl -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
     ```
 
 3.  If you're on a Mac, open Terminal by pressing **Cmd + space bar** and typing **Terminal**. Paste the request you have in your text editor into the command line and then press the **Enter** key.

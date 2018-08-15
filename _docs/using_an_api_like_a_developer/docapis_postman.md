@@ -50,7 +50,7 @@ In this exercise, you'll make a REST call using OpenWeatherMap's [current weathe
 1.  If you haven't already done so, download and install the Postman app at [http://www.getpostman.com](https://www.getpostman.com/).
 2.  Start the Postman app (and enjoy the quirky messages that appear while the app loads).
 3.  If necessary, select **GET** for the method. (This is the default.)
-4.  Insert the following endpoint into the box next to GET: `http://api.openweathermap.org/data/2.5/weather`.
+4.  Insert the following endpoint into the box next to GET: `https://api.openweathermap.org/data/2.5/weather`.
 5.  Click the **Params** button (to the right of the box where you inserted the endpoint) and then add the following three parameters. You'll need to insert the key into the Param's **key** field and the value into the Param's **value** field:
 
     * key: `zip` / value: `95050`
@@ -63,7 +63,7 @@ In this exercise, you'll make a REST call using OpenWeatherMap's [current weathe
 
     <img src="images/postmanopenweatherapi.png" class="medium"/>
 
-	  When you add these parameters, they will dynamically be added as a query string to the endpoint URI. For example, your endpoint will now look like this: `http://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial` (but with different query string values). Query string parameters appear after the question mark `?` symbol and are separated ampersands `&`. The order of query string parameters doesn't matter.
+	  When you add these parameters, they will dynamically be added as a query string to the endpoint URI. For example, your endpoint will now look like this: `https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial` (but with different query string values). Query string parameters appear after the question mark `?` symbol and are separated ampersands `&`. The order of query string parameters doesn't matter.
 
     Many APIs pass the API key in the header rather than as a query string parameter in the request URL. (If that were the case, you would click the **Headers** tab &mdash; below the GET button &mdash; and insert the required key-value pairs in the header.)
 
@@ -96,7 +96,7 @@ Now instead of getting the current weather, let's use another endpoint to get th
 The 5 day forecast request looks like this:
 
 ```bash
-http://api.openweathermap.org/data/2.5/forecast?zip=95050&appid=APIKEY&units=imperial
+https://api.openweathermap.org/data/2.5/forecast?zip=95050&appid=APIKEY&units=imperial
 ```
 
 (In the above code, replace out `APIKEY` with your own API key.)

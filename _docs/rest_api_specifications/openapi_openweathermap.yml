@@ -14,7 +14,7 @@ info:
     url: "https://openweathermap.org/price"
 
 servers:
-- url: "http://api.openweathermap.org/data/2.5/"
+- url: "https://api.openweathermap.org/data/2.5/"
 
 paths:
   /weather:
