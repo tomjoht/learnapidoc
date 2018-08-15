@@ -149,7 +149,7 @@ Earlier in the course, we walked through [each element of reference documentatio
 {% highlight javascript %}
 <!DOCTYPE html>
 <head>
-<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script>
 var settings = {
   "async": true,

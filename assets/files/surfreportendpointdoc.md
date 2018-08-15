@@ -91,7 +91,7 @@ The following code samples shows how to use the surfreport endpoint to get the s
 ```html
 <!DOCTYPE html>
 <head>
-<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script>
 var settings = {
   "async": true,

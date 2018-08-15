@@ -57,7 +57,7 @@ In this activity, you'll practice accessing different values through dot notatio
    <!DOCTYPE html>
     <html>
       <head>
-         <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
          <meta charset="utf-8">
          <title>JSON dot notation practice</title>
          <script>
@@ -129,7 +129,7 @@ Copy the following code into a basic HTML file:
 ```html
 <html>
    <head>
-      <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <link rel="stylesheet"  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
       <title>OpenWeatherMap Integration</title>
       <style>
