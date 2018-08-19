@@ -61,19 +61,29 @@ Neiman says tech writers often need to look over a developer's shoulder, watchin
 
 Neiman also says you may need to take the code examples in Java and produce equivalent samples in another language, such as C++, all on your own. In Neiman's view, API technical writers need more technical depth to excel than Wood and Rhea suggest.
 
-James Neiman and [Andrew Davis](http://www.synergistech.com/) (a recruiter for API tech writers in the Bay area) recently gave a presentation titled [Finding the right API Technical Writer](https://youtu.be/lmNHBg20ql0?t=1314) at an API conference in London last October. Their presentation format includes a Q&A between Andrew and James. Here's an interesting part:
+James Neiman and [Andrew Davis](http://www.synergistech.com/) (a recruiter for API tech writers in the Bay area) recently gave a presentation titled [Finding the right API Technical Writer](https://youtu.be/lmNHBg20ql0?t=1314) at an API conference in London last October. Their presentation format includes a Q&A between Andrew and James.
 
-> Andrew: What is essential to your relationships with each new client?
->
-> James: Being part of the product team, that communication within the team so that I know what is changing (and I expect things to change very rapidly, especially in a disordered environment where people are trying to stand up a product). I also need to earn and retain trust. Why should I say that? I'm going to be sitting with an engineering team. I'm going to need them to let me into their source code and let me modify their source code comments. I'm going to need to be able to pick an engineer's brain for fifteen minutes and fifteen minutes only &mdash; and get meaningful information out of that interview so that I can go and produce the documentation they need and get it right the first time. If I don't get it right the first time, I've wasted the engineer's time and I've wasted the company's money.
-> Andrew: Can a tech writer without a development background write great API doc?
-> Absolutely not. There is no way that a busy engineering team has time to train a person without a computer science degree. That's just the reality of it. Engineers at best can speak to you in some version of English, which may or may not be their native language. They don't have a lot of time, and they expect you to finish their thoughts for them. That means that you need to be able to sit next to them and look at how they're coding. And be able to replicate that and extend it and even create examples. They may say, "Here's an example. You can extend it, add on these other APIs, work out this use case for us. We haven't had time to finish this." They can say, "Well, let me show you how this works in Objective C; we also support this on Java. Can you create something similar on Java?" If you don't have that kind of development background, it's unrealistic that you could expect to train, for example, somebody with a masters degree in English and very intelligent person but otherwise not technical, to do such a thing.
-
-(Scrub to around the 22-minute mark for the highlights).
+Scrub to around the 22-minute mark for the relevant part:
 
 {% if site.format == "web" %}
-<iframe width="560" height="315" src="https://youtu.be/lmNHBg20ql0?t=1314" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lmNHBg20ql0?t=1314" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 {% endif %}
+
+Here's a transcription of the relevant exchange:
+
+> **Andrew**: What is essential to your relationships with each new client?
+>
+> **James**: Being part of the product team, that communication within the team so that I know what is changing (and I expect things to change very rapidly, especially in a disordered environment where people are trying to stand up a product). I also need to earn and retain trust.
+>
+> Why should I say that? I'm going to be sitting with an engineering team. I'm going to need them to let me into their source code and let me modify their source code comments. I'm going to need to be able to pick an engineer's brain for fifteen minutes and fifteen minutes only &mdash; and get meaningful information out of that interview so that I can go and produce the documentation they need and get it right the first time. If I don't get it right the first time, I've wasted the engineer's time and I've wasted the company's money.
+>
+> **Andrew**: Can a tech writer without a development background write great API doc?
+>
+> **James**: Absolutely not. There is no way that a busy engineering team has time to train a person without a computer science degree. That's just the reality of it. Engineers at best can speak to you in some version of English, which may or may not be their native language. They don't have a lot of time, and they expect you to finish their thoughts for them. That means that you need to be able to sit next to them and look at how they're coding. And be able to replicate that and extend it and even create examples.
+>
+> They may say, "Here's an example. You can extend it, add on these other APIs, work out this use case for us. We haven't had time to finish this." They can say, "Well, let me show you how this works in Objective C; we also support this on Java. Can you create something similar on Java?"
+>
+> If you don't have that kind of development background, it's unrealistic that you could expect to train, for example, somebody with a masters degree in English and very intelligent person but otherwise not technical, to do such a thing.
 
 Clearly, Neiman argues for a higher level of coding proficiency than Wood or Rhea. The level of coding knowledge required no doubt depends on the position, environment, and expectations at your company. If you're in a situation where the code is over your head, developers may send you chunks of code to add to the documentation.
 
