@@ -1,6 +1,6 @@
 ---
 title: Locations for API doc writer jobs
-permalink: jobapis_location.html
+permalink: /jobapis_location.html
 sidebar: docapis
 path1: /jobapis.html
 weight: 10.3
@@ -419,3 +419,13 @@ Before I moved into Santa Clara, I considered two alternatives: Austin and Seatt
 Tech companies will continue to grow and expand outside of Silicon Valley. There's not enough space in Silicon Valley, and the number of engineers gets fewer and fewer as companies grow. Many say that Silicon Valley's days are over, since it's no longer practical for a startup to launch in the conditions here.
 
 Much more could be written about where to live. (For more thoughts on API tech writer jobs in Silicon Valley, see [Do you have to relocate to an urban tech hub to find a technical writing job?](https://idratherbewriting.com/2018/04/27/tech-dystopia-and-where-the-tech-comm-jobs-are/).) Overall, if you want to find work, target these popular areas &mdash; California, New York, Texas, D.C. Washington State, Massachusetts, Virginia, Georgia, and Illinois. On the other hand, if you want to perhaps start a farm or ranch, move to Wyoming.
+
+## How to conduct a simple test
+
+If you're curious about the job opportunities in an area, there's a simple way to gauge how many technical writing jobs a city provides. I did a test a while back. Given the high cost of housing in San Jose, I wanted to keep an eye out for other potential job locations. I went to [indeed.com](http://indeed.com) and set up a job alert for "technical writer" in Portland, Seattle, and San Jose (the last acting as a benchmark).
+
+Indeed will send you a daily job alert whenever there are new jobs in that area. Over a period of time, you can consistently see how many new tech writing jobs are popping up in a city. Without question, there were about 3-4 times more technical writing jobs appearing in San Jose than Portland, and a 2-3 times more than in Seattle.
+
+I didn't run comparisons for more cities, nor did I add "API" into the job title. I'm willing to bet that API technical writing jobs will always be a fraction of normal technical writing jobs (maybe 15%?).
+
+Your best option might be to select a few cities where you might like to live, set up some job alerts on Indeed.com for those areas, and then monitor the frequency of jobs there over the next month.
