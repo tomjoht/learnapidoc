@@ -30,11 +30,13 @@ According to the STC Salary Database (which is based on the Bureau of Labor Stat
 9.  Phoenix-Mesa-Scottscale, AZ
 10. San Diego-Carlsbad, CA
 
-A lot of the employment data in the STC Salary Database focuses on "metropolitan statistical areas," but it's much harder to filter jobs based on these metro areas using job tools such as [Indeed.com](https://indeed.com). To gather some quick data, I did a search on Indeed.com for the term [API](https://www.indeed.com/jobs?q=API&l=California) by state, another search for [technical writer](https://www.indeed.com/jobs?q=technical+writer&l=California) by state, and then listed the employment of technical writers by state as indicated by the 2016 STC Salary Database (the latest version). My searches on Indeed.com were done on August 12, 2018.
+In other words, these areas have a lot of technical writers. A lot of the employment data in the STC Salary Database focuses on "metropolitan statistical areas," but it hard to filter jobs based on these metro areas (rather than states) using job tools such as [Indeed.com](https://indeed.com).
 
-Granted, whether searches for these terms yields meaningful results is not certain, which is why I also list the more reliable information from the STC Salary Database. Also, I'm by no means versed in statistics, and even if California has the largest number of mentions of "API" and also the largest mentions of "technical writer," this data has to be contextualized by the size of the state and the number of employed technical writers in the area.
+To gather some quick data, I did a search on Indeed.com for the term [API](https://www.indeed.com/jobs?q=API&l=California) by state, another search for [technical writer](https://www.indeed.com/jobs?q=technical+writer&l=California) by state, and then listed the employment of technical writers by state as indicated by the 2016 STC Salary Database (the latest version). My searches on Indeed.com were done on August 12, 2018.
 
-For example, suppose the state is small and has only about 500 tech writers in the area, but the number of jobs for technical writers is high as well as the mentions of "API." Is that a better area in which to find a job? Maybe. On the other hand, the sheer variety of living in a larger tech hub with more job opportunities might provide more selection and fit for your particular skills.
+Whether searches for these terms yields meaningful results is not certain, which is why I also list the more reliable information (though unrelated to APIs) from the STC Salary Database. Also, I'm by no means versed in statistics, and even if California has the largest number of mentions of "API" and also the largest mentions of "technical writer," this data has to be contextualized by the size of the state and the number of employed technical writers in the area. A high number of jobs doesn't necessarily mean more jobs will be available if there are simply more technical writers competing for those jobs. Thus, it's hard to say for sure where the best locations are for API doc opportunities.
+
+Suppose the state is small and has only about 500 tech writers in the area, but the number of jobs for technical writers is high as well as the mentions of "API." Is that a better area in which to find a job? Maybe. It depends on how many writers are competing for the jobs. On the other hand, the sheer variety of living in a larger tech hub with more job opportunities might provide more selection and fit for your particular skills.
 
 All right, here's the data from my quick search:
 
@@ -363,7 +365,7 @@ All right, here's the data from my quick search:
  </tbody>
 </table>
 
-In general, California, Texas, New York, D.C., Washington State, Virginia, Massachusetts, Illinois, and Georgia are hot areas for API jobs for tech writers (of course, this assertion rests on some assumptions about how to interpret this data). If "API" is a more common term, I assume more technical writer jobs will involve working with APIs in those areas.
+In general, California, Texas, New York, D.C., Washington State, Virginia, Massachusetts, Illinois, and Georgia are hot areas for API jobs for tech writers. (Of course, this assertion rests on some assumptions about how to interpret this data &mdash; If "API" is a more common term, I assume more technical writer jobs will involve working with APIs in those areas.)
 
 {% include random_ad.html %}
 
@@ -380,7 +382,7 @@ To provide more of a percentage relative to the area size, I divided the API num
 9.  Texas
 10. Illinois
 
-Presumably, this weighting suggests that API jobs make up a higher percentage of jobs in the area. Weighting the states like this might be meaningless. Maybe Maine has a real shortage to fill a dozen open positions for tech writers were tech writers are largely absent, whereas California might have 200 positions but many hundreds more tech writers competing for them.
+Presumably, this weighting suggests that API jobs make up a higher percentage of jobs in the area. Weighting the states like this might be meaningless. Maybe Maine has a real shortage to fill a dozen open positions for tech writers where applicants are largely absent, whereas California might have 200 positions but many hundreds more applicants competing for them.
 
 I'll leave the statistics and number crunching to academics. Overall, I recommend locating yourself in any of these top states:
 
@@ -396,17 +398,19 @@ I'll leave the statistics and number crunching to academics. Overall, I recommen
 
 ## Should you move to California?
 
-Since I'm currently in California, I'll comment a bit on API jobs in this location. California (specifically Silicon Valley, which spans from San Francisco to San Jose) continues to be a hub (if not *the* hub) for API technical writer jobs. However, California has a number of drawbacks, mainly with housing and traffic. To live in Silicon Valley, you need the dual income of two working professionals to survive financially. Alternatively, you need to be single and willing to share a house with roommates. Traffic along the 101 can also crawl at a snail's pace during rush hour.
+Since I'm currently in California, I'll comment a bit on API jobs in this location. California (specifically Silicon Valley, which spans from San Francisco to San Jose) continues to be a hub (if not *the* hub) for API technical writer jobs. However, California has a number of drawbacks, mainly with housing and traffic.
 
-That said, given the increased exodus of tech professionals in this area (some estimate 46% are leaving](https://www.sfgate.com/realestate/article/Google-facebook-can-t-afford-Silicon-Valley-13132157.php) because housing is so unaffordable), this means the need and opportunity for tech writers will be even greater. In fact, the STC Salary Database indicates that "San Jose-Sunnyvale-Santa Clara" had the second largest reported loss of tech writers during 2016 (second to Houston-The Woodlands-Sugar Lands, TX). Tech writing jobs were already plentiful in this area, and now tech writers will be in more demand now than ever.
+To live in Silicon Valley, you need the dual income of two working professionals to survive financially. Alternatively, you probably need to be single and willing to share a house with roommates. Traffic along the 101 can also crawl at a snail's pace during rush hour.
+
+That said, given the increased exodus of tech professionals in this area (some estimate 46% are leaving](https://www.sfgate.com/realestate/article/Google-facebook-can-t-afford-Silicon-Valley-13132157.php) because housing is so unaffordable), the need and opportunity for tech writers will be even greater. In fact, the STC Salary Database indicates that "San Jose-Sunnyvale-Santa Clara" had the second largest reported loss of tech writers during 2016 (second to Houston-The Woodlands-Sugar Lands, TX). Tech writing jobs were already plentiful in this area, and now tech writers will be in even more demand now than ever.
 
 So if you're willing to sacrifice a few comforts related to housing &mdash; like living in a 1,000 square-foot house for $3k/month rent instead of owning a $3,000 square-foot house for $1,500/month mortgage &mdash; your future could be bright in California. California has many other perks as well &mdash; beautiful beaches, mountains with awe-inspiring Sequoias and Redwoods, free city-wide wifi, bike-friendly paths, an abundance of parks and good schools, year-round pleasant weather, and more.
 
-But living here is a tradeoff. In [Tech Comm and The State of Urbanization](https://techcommgeekmom.com/2018/04/12/tech-comm-and-the-state-of-urbanization/), Danielle Villegas, frustrated by the lack of tech writer jobs in the New Jersey area and not ready to give up her nice home and garden for the urban life, writes:
+But living here is a tradeoff. In [Tech Comm and The State of Urbanization](https://techcommgeekmom.com/2018/04/12/tech-comm-and-the-state-of-urbanization/), Danielle Villegas, frustrated by the lack of tech writer jobs in the New Jersey area but not ready to give up her nice home and garden for the urban life, writes:
 
 > Why would I want to try to get a studio apartment in San Francisco or Silicon Valley or New York City for USD $1-2 million when I can get a three-to-four bedroom house in a nice neighborhood, have some green space/a garden, a good school district for my child, for a fraction of that? Why should I have to sacrifice my time with my family and other obligations I have to my community by commuting four hours round trip every day, and sacrificing my physical and mental well-being at the same time?
 
-It's a tradeoff that might not make sense for the lifestyle you want. For me, I moved to California (from Utah) after our tech writing team was laid off. I received a generous severance package and decided to move to the mecca of tech (the Bay area). I have four daughters and am the primary breadwinner in my family, so it was important to be located in a place where jobs were more abundant, stable, and where salaries were more lucrative. I was willing to trade my spacious Utah house and the green garden (okay, I actually hate gardening) for the chance to work in a thriving tech space.
+It's a tradeoff that might not make sense for the lifestyle you want. For me, I moved to California (from Utah) after our tech writing team at a Utah company was laid off. I received a generous severance package and decided to move to the mecca of tech (the Bay area). I have four daughters and am the primary breadwinner in my family, so it was important to be located in a place where jobs were more abundant, stable, and where salaries were more lucrative. I was willing to trade my spacious Utah house and the green garden (okay, I actually hate gardening) for the chance to work in a thriving tech space.
 
 Having been here 5 years, I honestly love it. For starters, there are a plethora of tech writing jobs here if you're qualified. If you have a few years of experience writing developer docs and are familiar with some technical languages or frameworks, many companies will gladly open their doors. Startups offer opportunities to build doc departments and tool workflows from the ground up as well. It might be tough to land your *first* tech writing job here, but once you get some experience, doors open.
 
