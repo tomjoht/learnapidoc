@@ -10,7 +10,7 @@ path1: /nativelibraryapis.html
 
 To understand the different components of a Javadoc, you have to first understand a bit about Java. Just being familiar with the names of the different components of Java will allow you to enter conversations and understand code at a high level. When you describe different aspects of sample code, knowing when to call something a class, method, parameter, or enum can be critical to your documentation's credibility.
 
-I'll run you through a brief crash course in the basics. For more detail about learning Java, I recommend consulting [lynda.com](http://lynda.com) and [safaribooksonline](http://safaribooksonline.com). Below I'll focus on some basic concepts in Java that will be important in understanding the Javadoc tags and elements.
+I'll run you through a brief crash course in the basics. Don't worry if this seems like a blur. For more detail about learning Java, I recommend consulting [lynda.com](http://lynda.com) and [safaribooksonline](http://safaribooksonline.com). Below I'll focus on some basic concepts in Java that will be important in understanding the Javadoc tags and elements.
 
 {% if site.format == "web" %}
 * TOC
@@ -25,13 +25,13 @@ Java is one of the most common languages used because of its flexibility. Java i
 
 Classes are templates or blueprints that drive pretty much everything in Java. It's easiest to understand classes through an example. Think of a class like a general blueprint of a "bicycle." There are many different types of bicycles (Trek bikes, Specialized bikes, Giant bikes, Raleigh bikes, etc.). But they're all just different instances of the general class of a bicycle.
 
-In Java, you start out by defining classes. Each class is its own file, and begins with a capital letter. The file name matches the class name, which means you have just one class per file.
+In Java, you start out by defining classes. Each class is its own file and begins with a capital letter. The file name matches the class name, which means you have just one class per file.
 
 {% include random_ad.html %}
 
 Each class can contain a number of fields (variables for the class) and methods (subroutines the class can do).
 
-Before the class name, an access modifier indicates how the class can be accessed. Several options for access modifiers are:
+Before the class name, an access modifier indicates how the class can be accessed. Several options for access modifiers are as follows:
 
 * `public`: Anyone can access
 * `private`: Only other packages can access
@@ -48,7 +48,7 @@ public class Bicycle{
 }
 ```
 
-You mostly need to focus on `public` classes, since these are the classes that will be used by your audience. The `public` classes are the API of the library.
+You mostly need to focus on `public` classes, since these are the classes that will be used by external developers. The `public` classes are the API of the library.
 
 {% include random_ad2.html %}
 
@@ -87,7 +87,7 @@ class Bicycle {
 }
 ```
 
-See how the `brake` method accepts two arguments &mdash; `force` and `weight`? These arguments are integers, so Java expects whole numbers here. (You must put the data type before the parameters in the method.) The arguments passed into this method get used to calculate the `torque`. The `torque` is then returned to the caller.
+See how the `brake` method accepts two arguments &mdash; `force` and `weight`. These arguments are integers, so Java expects whole numbers here. (You must put the data type before the parameters in the method.) The arguments passed into this method get used to calculate the `torque`. The `torque` is then returned to the caller.
 
 In Javadoc outputs, you'll see methods divided into two groups:
 
@@ -107,7 +107,7 @@ Inside the main method is where you add your code to make your program run. This
 
 Fields are variables available within the class. A variable is a placeholder that is populated with a different value depending on what the user wants.
 
-Fields indicate their data types, because all data in Java is "statically typed" (meaning, its format/length is defined) so that the data doesn't take up more space than it needs. Some data types include `byte`, `short`, `long`, `int`, `float`, or `double`. Basically these are numbers or decimals of different sizes. You can also specify a `char`, `string`, or `boolean`.
+Fields indicate their data types because all data in Java is "statically typed" (meaning, its format/length is defined) so that the data doesn't take up more space than it needs. Some data types include `byte`, `short`, `long`, `int`, `float`, or `double`. Basically, these are numbers or decimals of different sizes. You can also specify a `char`, `string`, or `boolean`.
 
 Here's an example of some fields in class:
 
@@ -214,7 +214,7 @@ Maven handles package management for Java projects. Maven will automatically go 
 
 ## Exceptions
 
-In order to avoid broken code, developers anticipate potential problems with exception handling. Exceptions basically say, if there's an issue here, flag the error with this exception and then continue on through the code.
+In order to avoid broken code, developers anticipate potential problems through exception handling. Exceptions basically say, if there's an issue here, flag the error with this exception and then continue on through the code.
 
 Different types of errors throw different exceptions. By identifying the type of exception thrown, you can more easily troubleshoot problems when code breaks because you know the specific error that's happening.
 
@@ -230,7 +230,7 @@ When you indicate the exception here, you list the type of exception using a spe
 
 ## Inheritance
 
-Some classes can extend other classes. This mean a class inherits the properties of another class. When one class extends another class, you'll see a note like this:
+Some classes can extend other classes. This means a class inherits the properties of another class. When one class extends another class, you'll see a note like this:
 
 ```java
 public class Bicycle extends Vehicle {
@@ -276,3 +276,5 @@ Here's a quick summary of the concepts we talked about:
 * **Subclass**: a class that inherits the fields + methods of another class
 * **JAR file**: a zip-like file containing Java classes
 * **WAR file**: a compiled Java web application to be deployed on a server
+
+The point is that now you can use these terms intelligently in documentation and have at least a sense of what's going on.

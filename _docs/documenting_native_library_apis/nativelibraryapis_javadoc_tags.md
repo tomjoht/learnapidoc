@@ -26,8 +26,8 @@ The following are the most common tags used in Javadoc. Each tag has a word that
 The following are some common Javadoc tags:
 
 * **`@author`**  A person who made significant contribution to the code. Applied only at the class, package, or overview level. Not included in Javadoc output. It's not recommended to include this tag since authorship changes often.
-* **`@param`** A parameter that the method or constructor accepts. Write the description like this: "`@param` count Sets the number of widgets you want included."
-* **`@deprecated`** Lets users know the class or method is no longer used. This tag will be positioned in a prominent way in the Javadoc. Accompany it with a `@see` or `{@link}` tag as well. |
+* **`@param`** A parameter that the method or constructor accepts. Write the description like this: `@param count Sets the number of widgets you want included.`
+* **`@deprecated`** Lets users know the class or method is no longer used. This tag will be positioned in a prominent way in the Javadoc. Accompany it with a `@see` or `{@link}` tag as well.
 * **`@return`** What the method returns.
 * **`@see`** Creates a see also list. Use `{@link}` for the content to be linked.
 * **`{@link}`** Used to create links to other classes or methods. Example: `{@link Foo#bar}` links to the method `bar` that belongs to the class `Foo`. To link to the method in the same class, just include #bar.
@@ -62,7 +62,7 @@ To include content in Javadoc, you add *two* asterisks at the start, before the 
 */
 ```
 
-(In Eclipse, if you type /** and hit return, it autofills the rest of the syntax automatically.)
+(In Eclipse, if you type `/**` and hit return, it autofills the rest of the syntax automatically.)
 
 The format for adding the various elements is like this:
 
@@ -116,7 +116,7 @@ You add Javadoc tags to classes, methods, and fields.
 
 ## Public versus private modifiers and Javadoc
 
-Javadoc only includes classes, methods, etc. marked as public. Private elements are not included. If you omit `public`, the default is that the class or method is available to the package only. In this case, it is not included in Javadoc.
+Javadoc includes only classes, methods, etc. marked as `public`. Elements marked as `private` are not included in Javadoc unless you specifically select **private** when generating the Javadoc. If you omit `public` from your source code, the default is that the class or method is available to the package only. In this case, it is not included in Javadoc.
 
 ## The description
 
@@ -154,14 +154,14 @@ Avoid using links in that first sentence. After the period, the next sentence sh
 
 The verb tense should be present tense, such as _gets, puts, displays, calculates..._
 
-What if the method is so obvious (for example, printPage) that your description ("prints a page") becomes obvious and looks stupid? Oracle says in these cases, you can omit saying "prints a page" and instead try to offer some other insight:
+What if the method is so obvious (for example, printPage) that your description ("prints a page") becomes redundant and looks useless? Oracle says in these cases, you can omit saying "prints a page" and instead try to offer some other insight. Oracle suggests:
 
 > Add description beyond the API name.
 >  The best API names are "self-documenting", meaning they tell you basically what the API does. If the doc comment merely repeats the API name in sentence form, it is not providing more information. For example, if method description uses only the words that appear in the method name, then it is adding nothing at all to what you could infer. The ideal comment goes beyond those words and should always reward you with some bit of information that was not immediately obvious from the API name. -- [How to write javadoc comments](http://www.oracle.com/technetwork/articles/java/index-137868.html)
 
-## Avoid @author
+## Avoid `@author`
 
-Commenting on Javadoc best practices, one person says to avoid @author because it easily slips out of date and the source control provides better indication of the last author. ([Javadoc coding standards](http://blog.joda.org/2012/11/javadoc-coding-standards.html)
+Commenting on Javadoc best practices, some people recommend using `@author` because it easily slips out of date, and the source control provides better indication of the last author. (See [Javadoc coding standards](http://blog.joda.org/2012/11/javadoc-coding-standards.html) for more detail.)
 
 ## Order of tags
 
@@ -179,7 +179,7 @@ Oracle says the order of the tags should be as follows:
 @deprecated
 ```
 
-## @param tags
+## `@param` tags
 
 @param tags only apply to methods and constructors, both of which take parameters.
 
@@ -197,9 +197,9 @@ The order of multiple @param tags should mirror their order in the method or con
 
 As far as including the data type in the parameter description, Oracle says:
 
-> By convention, the first noun in the description is the data type of the parameter. (Articles like "a", "an", and "the" can precede the noun.) An exception is made for the primitive int, where the data type is usually omitted. -- [How to write doc comments using Javadoc](http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#tag)
+> By convention, the first noun in the description is the data type of the parameter. (Articles like "a", "an", and "the" can precede the noun.) An exception is made for the primitive int, where the data type is usually omitted. (See [How to write doc comments using Javadoc](http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#tag).)
 
-The example they give is as follows:
+The example Oracle gives is as follows:
 
 ```java
 @param ch the character to be tested
@@ -209,9 +209,9 @@ However, the data type is visible from the parameters in the method. So even if 
 
 Note that you can have multiple spaces after the parameter name so that your parameter definitions all line up.
 
-@param tags must be provided for every parameter in a method or constructor. Failure to do so will create an error and warning when you render Javadoc.
+`@param` tags must be provided for every parameter in a method or constructor. Failure to do so will create an error and warning when you render Javadoc.
 
-Note that usually classes don't have parameters. There is one exception: Generics. Generic classes are classes that work with different type of objects. The object is specified as a parameter in the class in diamond brackets: `<>`. Although the Javadoc guidance from Oracle doesn't mention them, you can add a @param tag for a generic class to note the parameters for the generic class. See this [StackOverflow post](http://stackoverflow.com/questions/2015972/is-there-a-javadoc-tag-for-documentating-generic-type-parameters) for details. Here's an example from that page:
+Note that usually classes don't have parameters. There is one exception: Generics. Generic classes are classes that work with different type of objects. The object is specified as a parameter in the class in diamond brackets: `<>`. Although the Javadoc guidance from Oracle doesn't mention them, you can add a `@param` tag for a generic class to note the parameters for the generic class. See this [StackOverflow post](http://stackoverflow.com/questions/2015972/is-there-a-javadoc-tag-for-documentating-generic-type-parameters) for details. Here's an example from that page:
 
 ```java
 /**
@@ -222,13 +222,13 @@ Note that usually classes don't have parameters. There is one exception: Generic
         }
 ```
 
-## @return tag
+## `@return` tags
 
-Only methods return values, so only methods would receive a @return tag. If a method has `void` as a modifier, then it doesn't return anything. If it doesn't say `void`, then you must include a @return tag to avoid an error when you compile Javadoc.
+Only methods return values, so only methods would receive a `@return` tag. If a method has `void` as a modifier, then it doesn't return anything. If it doesn't say `void`, then you must include a `@return` tag to avoid an error when you compile Javadoc.
 
-## @throws tag
+## `@throws` tags
 
-You add @throws tags to methods or classes only if the method or class throws a particular kind of error.
+You add `@throws` tags to methods or classes only if the method or class throws a particular kind of error.
 
 Here's an example:
 
@@ -238,7 +238,7 @@ Here's an example:
 
 Stephen Colebourne recommends starting the description of the throws tag with an "if" clause for readability.
 
-> The @throws feature should normally be followed by "if" and the rest of the phrase describing the condition. For example, "@throws if the file could not be found". This aids readability in source code and when generated.
+> The `@throws` feature should normally be followed by `if ...` and the rest of the phrase describing the condition. For example, `@throws if the file could not be found`. This aids readability in source code and when generated.
 
 If you have multiple throws tag, arrange them alphabetically.
 
@@ -246,7 +246,7 @@ If you have multiple throws tag, arrange them alphabetically.
 
 It's a best practice to include a constructor in a class. However, if the constructor is omitted, Javadoc automatically creates a constructor in the Javadoc but omits any description of the constructor.
 
-Constructors have @param tags but not @return tags. Everything else is similar to methods.
+Constructors have `@param` tags but not `@return` tags. Everything else is similar to methods.
 
 ## Doc comments for fields
 
@@ -254,14 +254,14 @@ Fields have descriptions only. You would only add doc comments to a field if the
 
 ## Cases where you don't need to add doc comments
 
-Oracle says there are 3 scenarios where the doc comments get inherited, so you don't need to type them:
+Oracle says there are three scenarios where the doc comments get inherited, so you don't need to include comments in these scenarios:
 
-> When a method in a class overrides a method in a superclass
->  When a method in an interface overrides a method in a superinterface
->  When a method in a class implements a method in an interface
->  -- [How to write Javadoc comments](http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#tag)
+>  * When a method in a class overrides a method in a superclass
+>  * When a method in an interface overrides a method in a superinterface
+>  * When a method in a class implements a method in an interface
+>  <br/>(See [How to write Javadoc comments](http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#tag).)
 
-## @see tags
+## `@see` tags
 
 The @see tag provides a see also reference. There are various ways to denote what you're linking to in order to create the link. If you're linking to a field, constructor, or method within the same field, use `#`.
 
@@ -289,7 +289,7 @@ If you're linking to a class in another package, put the package name first, the
 @see package.Class#method(Type id, Type, id)
 ```
 
--- [How to write Javadoc comments](http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#tag)
+For more information, see [How to write Javadoc comments](http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#tag).
 
 ## Links
 
@@ -318,9 +318,9 @@ To change the linked text, put a word after `#baz` like this: `@see #baz Baz met
 
 In Eclipse, you can use the Javadoc tab at the bottom of the screen to preview the Javadoc information included for the class you're viewing.
 
-<img src="images/javadocpane.png" alt="Javadoc pane" />
+{% include course_image.html size="medium" filename="javadocpane" ext_print="png" ext_web="png" alt="Javadoc pane" caption="Javadoc pane" %}
 
-## More information
+## More information about Javadoc
 
 * [Oracle's explanation of Javadoc tags](http://www.oracle.com/technetwork/articles/java/index-137868.html)
 * [Javadoc](http://docs.oracle.com/javase/7/docs/technotes/tools/windows/javadoc.html)

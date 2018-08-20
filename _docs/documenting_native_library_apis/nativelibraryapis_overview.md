@@ -8,7 +8,7 @@ section: nativelibraryapis
 path1: /nativelibraryapis.html
 ---
 
-In previous parts of the course, we focused exclusively on REST APIs. Now let's explore native library APIs, which are more common when building native apps.
+In most of this course, we focused on REST APIs. For this section, let's explore native library APIs, which are more common when building native apps that you install on devices (such as Android or iOS devices).
 
 {% if site.format == "web" %}
 * TOC
@@ -19,14 +19,12 @@ In previous parts of the course, we focused exclusively on REST APIs. Now let's 
 
 Native library APIs (also called class-based APIs or just APIs) are notably different in the following ways:
 
-* **Installed locally**. Native library APIs are installed locally, compiled into the programmer's code as an additional library. The programmer can then use the classes, methods, or other functions available in the library. (The API part refers to the *public* classes the users use to access the functions in the library. There are probably lots of helper and utility classes in the Java library that aren't public. The *public* functions that the developer audience uses form the API, since this is how people make use of the library.)
-* **No requests and responses**. The classes in the native library API don't use HTTP protocol, nor are there request and responses sent across the web. The native library API is simply a collection of functions that enhance the existing code with more capabilities. It's entirely on-premises.
-* **Language specific**. Native library APIs are language specific. There are as many different types of APIs as there are programming languages, more or less. You can have a Java API, C++ API, C# or .NET API, JavaScript API, and so on.
+* **Installed locally**. Native library APIs are installed locally, compiled into the programmer's code as an additional library. The programmer can then use the classes, methods, or other functions available in the library. (The API part refers to the *public* classes the developers use to access the functions in the library. There are probably lots of helper and utility classes in the Java library that aren't public. The *public* functions that the developer audience uses form the API, since this is how people make use of the library.)
+* **No requests and responses**. The classes in the native library API don't use HTTP protocol, nor are there requests and responses sent across the web. The native library API is simply a collection of functions that enhance the existing code with more capabilities. It's entirely local.
+* **Language specific**. Native library APIs are language specific. There are as many different types of APIs as there are programming languages, more or less. You can have a Java API, Python API, C++ API, C# or .NET API, JavaScript API, and so on.
 * **Requires some programming knowledge to document**. To understand how the API works, you need to have a general understanding of the programming language the API is written for. You don't need to be a programmer, but you should be familiar with the nuts and bolts of the programming language, the correct terms, how the different parts fit together, and how developers will use the API.
 
 We will focus this section on Java APIs, since they're probably one of the most common. However, many of the concepts and code conventions mentioned here will apply to the other languages, with minor differences.
-
-<img src="images/eclipseframe.png" alt="Eclipse" />
 
 {% include random_ad.html %}
 
@@ -50,16 +48,35 @@ To keep the focus on API documentation, we'll take a documentation-centric appro
 
 For this part of the course, you need to install the following:
 
-* **Java Development Kit (JDK)**. You can [download the JDK here](http://www.oracle.com/technetwork/java/javase/downloads/index.html). Click the Java button on the left (not Netbeans) and then select the appropriate download for your machine.
-* **Eclipse IDE for Java Developers**. Use the [Eclipse Installer to download Eclipse](https://eclipse.org/downloads/).
+**Java Development Kit (JDK)**
 
-<a href="https://eclipse.org/downloads/" class="noExtIcon"><img src="images/eclipseforjavadevs.png" class="medium" /></a>
+You can [download the JDK here](http://www.oracle.com/technetwork/java/javase/downloads/index.html). Click the Java button and then select the appropriate download for your machine.
 
 To make sure you have Java installed, you can do the following:
 
 * On Mac: Open Terminal and type `java -version`.
 * On Windows: Open a Command Prompt and type `where java`.
 
-Also, start Eclipse and make sure it doesn't complain that you don't have the JDK.
+If it's installed, you should see a message somewhat like this:
 
-(Since we'll just be using Java within the context of Eclipse, Windows users don't need to add Java to their class path. But if you want to be able to compile Java from the command line, you can do this.)
+```
+java version "10.0.1" 2018-04-17
+Java(TM) SE Runtime Environment 18.3 (build 10.0.1+10)
+Java HotSpot(TM) 64-Bit Server VM 18.3 (build 10.0.1+10, mixed mode)
+```
+
+**Eclipse IDE for Java Developers**
+
+Use the [Eclipse Installer to download Eclipse](https://eclipse.org/downloads/). When you launch the installer, you can choose to install the **Eclipse IDE for Java**.
+
+  {% include course_image.html url="https://eclipse.org/downloads/" size="small" border="true" filename="eclipseforjavadevs" ext_print="png" ext_web="png" alt="Eclipse installer" caption="Eclipse installer" %}
+
+Start Eclipse. When prompted to select a workspace, select the default location and click **Launch**. Close the welcome tab. To make sure you have the right JDK installed, go to **Project -> Properties -> Java Compiler** and make sure you have **1.8** selected.
+
+Also, to make sure Eclipse is configured to use version 1.8, go to **Eclipse > Preferences** and then **Java > Installed JREs**.
+
+{% include course_image.html size="medium" filename="installed-jre-eclipse" ext_print="png" ext_web="png" alt="Installed JRE settings" caption="Installed JRE settings" %}
+
+If 1.8 isn't selected, browse to your install directory (on Macbook Pro, it's `/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home`) and select it.
+
+(Since we'll just be using Java within the context of Eclipse, Windows users don't need to add Java to their class path. But if you want to be able to compile Java from the command line, you would also need to do this.)
