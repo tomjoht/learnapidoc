@@ -8,7 +8,7 @@ section: nativelibraryapis
 path1: /nativelibraryapis.html
 ---
 
-Although much attention tends to be given to the reference documentation with APIs, actually the bulk of what technical writers usually do with native library API docs is provide non-reference documentation. This is the stuff that engineers rarely write.
+Although much attention tends to be given to the reference documentation with APIs, actually the bulk of what technical writers usually do with native library API docs is provide [non-reference documentation](docnonref.html). This is the content that engineers rarely write.
 
 Engineers will throw a quick description of a class in a file and generate a Javadoc, and they'll give that Javadoc to the user as if it represents a complete set of documentation, but reference docs don't tell even half the story.
 
@@ -25,11 +25,7 @@ Engineers will throw a quick description of a class in a file and generate a Jav
 
 {% include random_ad.html %}
 
-Other people seem to have [similar opinions](https://communities.cisco.com/community/developer/blog/2014/09/03/introducing-devnet-slate):
-
->Auto-generated documentation that documents each API end-point directly from source code have their place (e.g., its great for team that built the API and its great for a reference document) but hand-crafted quality documentation that walks you through a use case for the API is invaluable.  It should tell you about the key end-points that are needed for solving a particular problem and it should provide you with code samples."
-
-In general, document generators don't tell you a whole lot more than you would discover by browsing the source code itself. Some people even refer to auto-generated docs as a glorified source-code browser.
+Other people seem to have similar opinions. In general, document generators don't tell you a whole lot more than you would discover by browsing the source code itself. Some people even refer to auto-generated docs as a glorified source-code browser.
 
 ## Reference docs are feature-based, not task-based
 One of the main problems with reference documentation is that it's feature based rather than task based. It's the equivalent of going tab-by-tab through an interface and describing what's on each tab, what's in each menu, and so on. We know that's a really poor way to approach documentation, since users organize their mental model by the tasks they want to perform.

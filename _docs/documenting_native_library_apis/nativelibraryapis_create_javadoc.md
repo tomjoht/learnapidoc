@@ -78,3 +78,7 @@ Javadoc also checks your tags against the actual code. If you have parameters, e
 {% include activity.html %}
 
 Try removing a parameter from a method and generate the Javadoc again. Make sure the console window is open.
+
+## Auto-building the Javadoc
+
+In most development shops, you'll never manually create a Javadoc file as I've explained here. Javadoc allows you to build it from the command line by feeding it a configuration file. Most developers have a build management tool where they can configure outputs from their code, including Javadoc. If developers ask you to build the Javadoc, chances are their build management system might be somewhat primitive. However, it can be helpful to build the Javadoc output yourself (as I've explained here) to test and review the output prior to generating it through the build management tool.

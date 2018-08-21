@@ -8,7 +8,7 @@ section: nativelibraryapis
 path1: /nativelibraryapis.html
 ---
 
-An alternative to Javadoc is Doxygen. Doxygen works highly similarly to Javadoc, except that you can process more languages (Java, C++, C#, and more) with it. Doxygen is most commonly used with C++. Additionally, there's a GUI tool (called Doxywizard) that makes it really easy to generate the file.
+An alternative to Javadoc is Doxygen. Doxygen works highly similarly to Javadoc, except that you can process more languages (Java, C++, C#, and more) with it. Doxygen is most commonly used with C++. Additionally, there's a GUI tool called Doxywizard that makes it really easy to generate the file.
 
 * TOC
 {:toc}
@@ -17,19 +17,19 @@ An alternative to Javadoc is Doxygen. Doxygen works highly similarly to Javadoc,
 
 You can download the Doxywizard tool when you install Doxygen. See the [Doxygen](http://www.stack.nl/~dimitri/doxygen/download.html) download page for more information.
 
-Here's Doxygen's front-end GUI generator (Doxywizard):
+Here's the Doxywizard front-end GUI generator:
 
-<img src="images/doxygenfrontendgui.png" alt="Doxygen front-end GUI generator" />
+{% include course_image.html filename="doxygenfrontendgui" size="large" ext_print="png" ext_web="png" alt="Doxygen front-end GUI generator" caption="Doxygen front-end GUI generator" %}
 
 Here's the Doxygen output:
 
-<img src="images/doxygensample.png" alt="Doxygen Sample" />
+{% include course_image.html filename="doxygensample" size="large" ext_print="png" ext_web="png" alt="Doxygen Sample" caption="Doxygen Sample" %}
 
-By the way, you don't need to use the wizard. You can also just generate Doxygen through a configuration file. This is how developers typically run Doxygen builds from a server.
+You don't need to use the wizard. You can also just generate Doxygen through a configuration file. This is how developers typically run Doxygen builds from a server.
 
 In contrast to Javadoc, Doxygen also allows you to incorporate external files written in Markdown. And Doxygen provides a search feature. These are two features that Javadoc lacks.
 
-Doxygen is maintained by a single developer and, like Javadoc, hasn't changed much over the years. In my opinion, the interface is highly dated and kind of confusing.
+Doxygen is maintained by a single developer and, like Javadoc, hasn't changed much over the years. In my opinion, the interface is highly dated and somewhat confusing. But C++ developers will be accustomed to it.
 
 {% include random_ad2.html %}
 
@@ -43,4 +43,4 @@ You don't need to limit yourself to either Javadoc or Doxygen. There are dozens 
 
 {% include random_ad.html %}
 
-Perhaps the biggest frustration of document generators is that you can't really integrate the rest of your documentation with them. You're mostly stuck with the reference doc output. You'll need to also generate your how-to guides and other tutorials, and then link to the reference doc output. As such, you won't end up with a single integrated experience of documentation. Additionally, it will be hard to create links between the two outputs.
+Perhaps the biggest frustration of document generators is that you can't integrate the rest of your documentation with them. You're mostly stuck with the reference doc output. You'll need to also generate your how-to guides and other tutorials, and then link to the reference doc output. As such, you won't end up with a single integrated experience of documentation. Additionally, it will be hard to create links between the two outputs. This is a topic I explored in more depth in [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).
