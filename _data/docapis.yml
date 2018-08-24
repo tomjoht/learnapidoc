@@ -274,7 +274,7 @@ folders:
     jurl: /jobapis_learning_code.html
 
   - title: Locations for API doc writer jobs
-    jurl: jobapis_location.html
+    jurl: /jobapis_location.html
 
 - title: Documenting native library APIs
   jurl: /nativelibraryapis.html
