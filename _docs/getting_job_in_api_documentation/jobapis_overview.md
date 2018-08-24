@@ -17,13 +17,13 @@ Technical writers who can write developer documentation are in high demand, espe
 
 ## Basic qualifications you must have
 
-Breaking into your first API documentation role can be challenging. Employers will usually require three prerequisites:
+Breaking into your first API documentation role can be challenging. Employers will usually have three requirements to hire you:
 
-1. Familiarity with 1-2 programming languages
+1. Familiarity with 1-2 programming languages or other technical foundations
 2. Experience writing docs for a developer audience
 3. A portfolio with writing samples demonstrating the above two points
 
-This is why in this course I've focused on activities that will actually help you break into the field. Although I could create little quizzes in this course, and at the end you could earn a "certificate," it would be virtually meaningless in your job search and larger goals. There's no way around it: if you're serious about breaking into API documentation, you need to fulfill the above prerequisites. Completing the activities in this course will help you do that.
+This is why in this course I've focused on activities that will actually help you break into the field. Although I could create more quizzes in this course, and at the end you could earn a "certificate" (which wouldn't be a bad idea, actually) it would be virtually meaningless in your job search and larger goals. There's no way around it: if you're serious about breaking into API documentation, you need to fulfill the above requirements. Completing the activities in this course will help you do that.
 
 ## Why employers look for candidates who can read programming languages
 
@@ -41,13 +41,13 @@ Take a look at Algolia's API for an example. You can view the documentation for 
 
 Although users could construct their own code when using the REST endpoints, most developers would rather leverage existing code and just copy and paste what they need.
 
-When I worked at Badgeville, we developed a collection of JavaScript widgets that developers could easily copy and paste into their web pages, making a few adjustments as needed. Developers could also create their own JavaScript widget code (from scratch) based on calls to the REST endpoints, but sometimes it can be tricky to know how to retrieve all the right information and then manipulate it in the right way in your chosen language.
+When I worked at Badgeville, we developed a collection of JavaScript widgets that developers could easily copy and paste into their web pages, making a few adjustments as needed. Developers could also create their own JavaScript widget code (from scratch) based on calls to the REST endpoints, but sometimes it can be tricky to know how to retrieve all the right information and then manipulate it in the right way in your chosen language. It's easier to just use the pre-built widgets.
 
 Remember that developers are typically using a REST API as a *third-party* service. The developer's main focus is his or her own company's code; they're just leveraging your REST API as an additional, extra service. As such, the developer wants to just get in, get the code, and get out. This is why companies need to provide multiple client SDKs in as many languages as possible &mdash; these client implementations make it easy for developers to implement the API.
 
 If you were recruiting for a technical writer to document Algolia, how would you word the job requirements? Can you now see why even though the core work involves documenting the REST API, it would also be good to have an "ability to read code in one or more programming languages, such as Java, C++, or Python."
 
-The number of SDKs a company has can vary considerably. You might not actually have six SDKs in multiple languages and frameworks for your API. You might be in a JavaScript-only shop where all you need to know is JavaScript and nothing more. If that's the case, you'll need to develop a deeper knowledge of the programming language so you can provide more value in your writing role.
+The number of SDKs a company distributes can vary considerably. You might not have six SDKs in multiple languages and frameworks for your API. You might be in a JavaScript-only shop where all you need to know is JavaScript and nothing more. If that's the case, you'll need to develop a deeper knowledge of JavaScript so you can provide more value in your writing role.
 
 {% include random_ad2.html %}
 
@@ -59,13 +59,15 @@ What mainly changes across languages are the code snippets and some of the terms
 
 The degree to which you can provide value in your role as a technical writer is often directly proportional to your level of technical knowledge. For example, if you land (or inherit) a job that involves working with several API projects involving languages you don't know, you can still facilitate the documentation for the projects. However, you'll play more of an editing/publishing role rather than an authoring role.
 
-In many highly technical shops, this editor/publisher role is becoming increasingly common. Engineers will write the technical material, especially the reference documentation, and technical writers will focus more on making sure the content checks all the boxes -- has an overview, release notes, addresses user tasks, and so on. You can shape and organize the content, and identify areas where it's deficient or needs expansion. But the ability to add deeper value requires deeper knowledge of the subject matter.
+In many highly technical shops, this editor/publisher role is becoming increasingly common. Engineers will write the technical material, especially the reference documentation, and technical writers will focus more on making sure the content checks all the boxes -- has an overview, release notes, addresses user tasks, follows the style guide, integrates with the other docs, and so on. You can shape and organize the content, and identify areas where it's deficient or needs expansion, but the ability to add deeper value requires deeper knowledge of the subject matter.
 
-In the [Overview for publishing API docs](pubapis_overview.html), I quoted from [How API Documentation Fails](https://ieeexplore.ieee.org/document/7140676/) (published in [*IEEE Software*](https://ieeexplore.ieee.org)). In the article, Martin Robillard and Gias Uddin assert:
+Still, this lack of more technical knowledge will likely remove some of the value from your role. In [How API Documentation Fails](https://ieeexplore.ieee.org/document/7140676/) (published in [*IEEE Software*](https://ieeexplore.ieee.org), Martin Robillard and Gias Uddin explain:
 
-> Perhaps unsurprisingly, the biggest problems with API documentation were also the ones requiring the most technical expertise to solve. Completing, clarifying, and correcting documentation require deep, authoritative knowledge of the API’s implementation. This makes accomplishing these tasks difficult for non-developers or recent contributors to a project.  
+> Perhaps unsurprisingly, the biggest problems with API documentation were also the ones requiring the most technical expertise to solve. Completing, clarifying, and correcting documentation require deep, authoritative knowledge of the API’s implementation. This makes accomplishing these tasks difficult for non-developers or recent contributors to a project.
 
-The balance between generalist and specialist roles is an ongoing challenge that I'll dive into more in the next topics in this section. But if you want to solve the biggest problem with API documentation, you'll need to develop more technical expertise in the subject area.
+Without deep, authoritative knowledge of the API, it will be difficult to complete, clarify, and correct errors in the content.
+
+The balance between generalist and specialist roles is an ongoing challenge that I'll dive into more in the next topic: [How much code do you need to know?](jobapis_learning_code.html). But in short, if you want to solve the biggest problem with API documentation, you'll need to develop more technical expertise in the subject area.
 
 ## Consolations for technical writers
 
@@ -75,7 +77,7 @@ For example, when I worked at 41st Parameter (a startup acquired by Experian), t
 
 Maintaining the same functionality across three separate API platforms was a serious challenge for the company's developers. Not only was it difficult to find skill sets for developers across these three platforms, having multiple code bases made it harder to test and maintain the code. It was three times the amount of work, not to mention three times the amount of documentation.
 
-Additionally, since native library APIs are implemented locally in the developer's code, it was almost impossible to get users to upgrade to the latest version of the API. We had to send out new library files and explain how to upgrade versions, licenses, and other deployment code. If you've ever tried to get a big company with a lengthy deployment process on board with making updates every couple of months to the code they've deployed, you realize how impractical it is. Rolling out a simple update could take 6-12 months or more.
+Additionally, since native library APIs are implemented locally in the developer's code, it was almost impossible to get users to upgrade to the latest version of the API. We had to send out new library files and explain how to upgrade versions, licenses, and other deployment code. If you've ever tried to get a big company with a lengthy deployment process on board with making updates every couple of months to the code they've deployed, you realize how impractical it is. Rolling out a simple update could take 6-12 months or more. During that time, the company is often struggling with a load of bugs and other issues that are setting them back.
 
 It's much more feasible for API development shops to move to a SaaS model using REST, and then create various client implementations that briefly demonstrate how to call the REST API using the different languages. With a REST API, you can update it at any time (hopefully maintaining backward compatibility), and developers can simply continue using their same deployment code.
 
@@ -83,4 +85,4 @@ As such, you won't be hopelessly lost if you can't navigate these other domains 
 
 That said, one area where REST APIs can be problematic is with devices (for example, smartphones and tablets, devices in cars, streaming media devices). In these cases, calls to REST APIs tend to be slow, so a native library API (such as [Android](https://developer.android.com)) is used instead.
 
-In the next topic, [How much code do you need to know?](jobapis_learning_code.html), I'll explore the topic of how much code you need to know, and strategies for learning it.
+In the next topic, [How much code do you need to know?](jobapis_learning_code.html), I'll explore the topic of how much code you need to know and strategies for learning it.
