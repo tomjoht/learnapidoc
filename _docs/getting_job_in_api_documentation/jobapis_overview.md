@@ -67,7 +67,7 @@ Still, this lack of more technical knowledge will likely remove some of the valu
 
 Without deep, authoritative knowledge of the API, it will be difficult to complete, clarify, and correct errors in the content.
 
-The balance between generalist and specialist roles is an ongoing challenge that I'll dive into more in the next topic: [How much code do you need to know?](jobapis_learning_code.html). But in short, if you want to solve the biggest problem with API documentation, you'll need to develop more technical expertise in the subject area.
+The balance between generalist and specialist roles is an ongoing challenge that I'll dive into more in the next topic: [How much code do you need to know?](jobapis_learning_code.html) But in short, if you want to solve the biggest problem with API documentation, you'll need to develop more technical expertise in the subject area.
 
 ## Consolations for technical writers
 
