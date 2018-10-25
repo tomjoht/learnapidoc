@@ -46,7 +46,7 @@ As a technical writer, you'll tackle each element of a reference topic in REST A
 4. [Request example](docapis_doc_sample_requests.html)
 5. [Response example](docapis_doc_sample_responses_and_schema.html)
 
-Diving into these sections will give you a solid understanding of how to document REST APIs. You'll also learn how to document the [non-reference sections for an API](docnonref.html), such as the [getting started](docapis_doc_getting_started_section.html), [status and error codes](docapis_doc_status_codes.html),  [request authorization](docapis_more_about_authorization.html), and more.
+Diving into these sections will give you a solid understanding about how to document REST APIs. You'll also learn how to document the [non-reference sections for an API](docnonref.html), such as the [getting started](docapis_doc_getting_started_section.html), [status and error codes](docapis_doc_status_codes.html),  [request authorization](docapis_more_about_authorization.html), and more.
 
 {% include random_ad2.html %}
 
@@ -69,13 +69,13 @@ This course is organized into the following sections:
 *  [Getting a job in API documentation](jobapis.html)
 *  [Resources and glossary](resources.html)
 
-You don't have to read the sections in order &mdash; feel free to skip around as you prefer. But some of the earlier sections (such as the section on [Using a REST API like a developer](likeadeveloper.html), and the section on [documenting endpoints](docendpoints.html)) follow a somewhat sequential order with the same weather API scenario.
+You don't have to read the sections in order &mdash; feel free to skip around as you prefer. But some of the earlier sections (such as the section on [Using a REST API like a developer](likeadeveloper.html), and the section on [Documenting endpoints](docendpoints.html)) follow a somewhat sequential order with the same weather API scenario.
 
-Because the purpose of the course is to help you learn, there are many activities that require hands-on coding and other exercises. Along with the learning activities, there are also conceptual deep dives, but the focus is always on *learning by doing*. Where there are hands-on activities, I include an activity graphic like this:
+Because the purpose of the course is to help you learn, there are many activities that require hands-on coding and other exercises. Along with the learning activities, there are also conceptual deep dives, but the focus is always on *learning by doing*. Where there are hands-on activities, I include an "Activity" graphic like this:
 
 {% include activity.html %}
 
-Other topics consist entirely of activities. The course has the following activities:
+Other topics have the word "Activity" in the title, such as the following:
 
 * [Activity: Find an Open Source Project](docapis_find_open_source_project.html)
 * [Activity: Get event information using the EventBrite API](docapis_eventbrite_example.html)
@@ -105,10 +105,10 @@ JavaScript is one of the most useful and easy languages to become familiar with,
 
 ## What you'll need
 
-Here are a few things you'll need to do the exercises in this course:
+Here are a few tools you'll need to do the exercises in this course:
 
 * **Text editor**. ([Atom editor](https://atom.io/) or [Sublime Text](http://www.sublimetext.com/) are good options, and they work on both Mac and Windows.)
-* **Chrome browser**. [Chrome](https://www.google.com/chrome/browser/desktop/index.html) provides a Javascript Console that works well for inspecting JSON, so we'll be using this browser. [Firefox](https://www.mozilla.org/en-US/firefox/) works well too if you prefer that.
+* **Chrome browser**. [Chrome](https://www.google.com/chrome/browser/desktop/index.html) provides a Javascript Console that works well for inspecting JSON, so we'll be using Chrome. [Firefox](https://www.mozilla.org/en-US/firefox/) works well too if you prefer that.
 * **Postman**. [Postman](http://www.getpostman.com/) is an app that allows you to make requests and see responses through a GUI client.
 * **curl**. [curl](http://curl.haxx.se/) is essential for making requests to endpoints from the command line. Mac computers already have curl installed. Windows users should follow the instructions for installing curl [here](http://www.confusedbycode.com/curl/).
 * **Git**. [Git](https://git-scm.com/) is a version control tool developers often use to collaborate on code. See [Set Up Git](https://help.github.com/articles/set-up-git/) for more details.
@@ -117,7 +117,7 @@ Here are a few things you'll need to do the exercises in this course:
 
 ## Video recordings
 
-For video recordings of this course, see the [Recorded Video Presentations](docapis_course_videos.html). The most recent full-length video of the entire course is a half-day API workshop I gave in Denver.
+For video recordings of this course, see the [Recorded Video Presentations](docapis_course_videos.html). The most recent full-length video of the entire course is a half-day API workshop I gave in Denver in March 2018.
 
 ## Slides
 
@@ -128,8 +128,8 @@ I have various slides that cover different sections of this course. See the foll
 * [OpenAPI and Swagger](https://idratherbewriting.com/openapi-and-swagger/#/)
 * [Publishing API documentation](https://idratherbewriting.com/publishing-api-docs/#/)
 
-These slides are all hosted on GitHub at https://github.com/tomjoht/. I use [RevealJS](https://github.com/hakimel/reveal.js/) for slides, which lets me create the slide content in HTML. If you're a teacher using material from this course in your classroom, you can adapt the slides as needed for your lessons.
+These slides are all hosted on GitHub and are open source. I use [RevealJS](https://github.com/hakimel/reveal.js/) for slides, which lets me create the slide content in HTML. If you're a teacher using material from this course in your classroom, you can adapt the slides as needed for your lessons.
 
 ## Stay updated
 
-If you're following this course, you most likely want to learn more about APIs. I publish regular articles that talk about APIs and strategies for documenting them. You can stay updated about these posts by subscribing to my free newsletter.
+If you're following this course, you most likely want to learn more about APIs. I publish regular articles that talk about APIs and strategies for documenting them. You can stay updated about these posts by [subscribing to my free newsletter](https://tinyletter.com/tomjoht).
