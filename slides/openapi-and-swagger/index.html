@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Swagger UI and the OpenAPI specification</title>
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/beige.css">
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+        <style>
+            p.alignLeft {
+            text-align: left;
+            }
+            span.orange, a.orange {
+            color: orange;
+            outline-color: gray;
+            }
+            div.innovation ul li {
+            margin-bottom:12px;
+            font-size: .9em;
+            }
+            figcaption {
+            font-size:12px;
+            }
+            .reveal p.miscItems, p, li {
+            font-size:.8em;
+            }
+            .slides section h3 {
+            color: #f19132 !important; outline: darkorange;
+            margin:0px;
+            /*padding-top: 80px;*/
+            font-size: 1.8em;
+            text-transform: none;
+            }
+            .slides img {
+            max-width: 80%;
+            max-height: 80%;
+            border:3px solid red;
+            }
+            #upcoming-slide .label {
+            color: #444 !important
+            }
+            ul.credits li {
+            font-size: .6em;
+            }
+            .reveal section h3 {
+            margin:0px;
+            }
+            .reveal section img {
+            margin-bottom:0px;
+            }
+            .reveal li {
+            margin: 20px 0px;
+            font-size: 1em;
+            }
+            span.strategy {
+            border: 1px solid #dedede;
+            padding: 4px 6px;
+            border-radius: 8px;
+            }
+            span.myname {
+            font-weight: bold;
+            font-size: 52px;
+            color: #555;
+            font-family: palatino
+            }
+            .reveal pre code, pre {
+            padding:20px;
+            background-color: #3f3f3f;
+            }
+            .reveal img {
+            background-color: white !important;
+            }
+            .reveal div.imageFit {
+            max-width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="reveal innovation">
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+        <section>
+            <h1>OpenAPI and Swagger</h1>
+            <p>
+                <small>By Tom Johnson / <a target="_blank" href="http://twitter.com/tomjohnson">@tomjohnson</a><br/>
+                <a target="_blank" href="http://idratherbewriting.com">idratherbewriting.com</a></small><br/><br/>
+            <p><small>Slides available at <br/><a target="_blank" href="http://idratherbewriting.com/openapi-and-swagger/index.html#/">idratherbewriting.com/openapi-and-swagger</a></small></p>
+            </p>
+        </section>
+         <section>
+            <h2>Video recording</h2>
+            <p><small>The following is a video recording of this presentation. </small></p>
+            <p><iframe width="640" height="360" src="https://www.youtube.com/embed/gcDSL-8pkvU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+            </section>
+
+
+        <section>
+            <h3>What I'll talk about</h3>
+            <img src="media/vectors/swagger-openapi-pres_openapiswagger.svg" style="max-width: 400px;"/>
+            <ul style="font-size: 90%">
+                <li>Concepts more than technical details</li>
+                <li>The kind of documentation engineers want</li>
+                <li>Swagger UI and how to use it</li>
+                <li>OpenAPI specification and how to create them</li>
+                <li>Other interactive documentation platforms</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Where to find more information</h3>
+            <figure>
+                <a target="_blank" href="http://idratherbewriting.com/learnapidoc/"><img class="shortened" src="media/rasters/learnapidocsite.png"/></a>
+                <figcaption><a target="_blank" href="http://idratherbewriting.com/learnapidoc/restapispecifications.html">idratherbewriting.com/learnapidoc</a></figcaption>
+            </figure>
+        </section>
+
+        <section>
+          <h3>What engineers want in documentation</h3>
+          <img src="media/vectors/swagger-openapi-pres_whatengineerswant.svg"/>
+
+        </section>
+
+
+        <section>
+          <h3>Why interactivity with API docs?</h3>
+          <img src="media/vectors/swagger-openapi-pres_interactivity.svg"/>
+
+        </section>
+
+        <section>
+          <h3>Swagger UI Petstore Demo</h3>
+          <a href="http://petstore.swagger.io/"><img src="media/rasters/swaggerpetstore.png"/></a>
+        </section>
+
+        <section>
+          <h3>OpenAPI specification</h3>
+          <img src="media/vectors/swagger-openapi-pres_openapiinitiative.svg"/>
+<aside class="notes">
+          <ul>
+            <li>Think of it like DITA for web API information</li>
+            <li>"OpenAPI" refers to spec, "Swagger" to tooling</li>
+          </ul>
+        </aside>
+
+        </section>
+
+
+        <section>
+          <h3>Objects in OpenAPI spec</h3>
+<style>
+ul.narrow li {
+  margin-top:3px;
+  margin-bottom: 3px;
+  padding: 2px 0px;
+}
+</style>
+          <ul class="narrow">
+            <li><code>openapi</code></li>
+            <li><code>info</code></li>
+            <li><code>servers</code></li>
+            <li><code>paths</code></li>
+            <li><code>components</code></li>
+            <li><code>security</code></li>
+            <li><code>tags</code></li>
+            <li><code>externalDocs</code></li>
+            </ul>
+
+            <p><small><a href="https://github.com/OAI/OpenAPI-Specification/blob/master/examples/v3.0/petstore.yaml">Petstore sample spec</a> | <a href="https://github.com/OAI/OpenAPI-Specification">Spec reference</a></small></p>
+
+        </section>
+
+
+          <section>
+            <h3>Swagger Editor</h3>
+            <a href="https://editor.swagger.io/"><img src="media/rasters/swaggereditor.png"/></a>
+          </section>
+
+
+        <section>
+          <h3>Forms simplify authoring</h3>
+          <img src="media/vectors/swagger-openapi-pres_openapiasform.svg" />
+          <aside class="notes">
+          <ul>
+            <li>A form to complete &mdash; perfect for both engineers writing docs and tech writers</li>
+            <li>No guesswork about names, arrangement, templates</li>
+          </ul>
+        </aside>
+        </section>
+
+        <section>
+          <h3>Standardized terminology</h3>
+          <img src="media/vectors/swagger-openapi-pres_apiterminology.svg" />
+        </section>
+
+        <section>
+          <h3>Not just for interactive documentation</h3>
+          <img src="media/vectors/swagger-openapi-pres_openapihub.svg" />
+          <aside class="notes">
+          <p>The spec can drive prototyping, testing, SDK generation, and more</p>
+        </aside>
+
+        </section>
+
+        <section>
+          <h3>Tutorial for building OpenAPI spec doc</h3>
+          <a href="http://idratherbewriting.com/learnapidoc/pubapis_openapi_tutorial_overview.html"><img src="media/rasters/openapitutorial.png"/></a>
+<p><small>(See also Peter Gruenbaum's resources (<a href="http://www.stc-psc.org/event/documenting-web-apis-with-swagger-free-webinar/">STC preso</a> and <a href="https://www.udemy.com/learn-swagger-and-the-open-api-specification/">Udemy course</a>)</small></p>
+        </section>
+
+        <section>
+          <h3>Tools can programmatically process the spec</h3>
+          <img src="media/vectors/swagger-openapi-pres_toolstoprocessspec.svg"/>
+        </section>
+
+        <section>
+          <h3>Swagger UI</h3>
+          <figure><a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/#"><img src="media/rasters/swaggeruidemo.png"/></a><figcaption><small>Swagger UI is open-source and can easily be hosted on a web server.</small></figcaption></figure>
+
+        </section>
+
+        <section>
+          <h3>SwaggerHub</h3>
+          <figure><a href="https://app.swaggerhub.com/apis/IdRatherBeWriting/MashapeWeatherAPI/2.3"><img src="media/rasters/swaggerhubdemo.png"/></a><figcaption><small>SwaggerHub is considered the commercial version of Swagger.</small></figcaption></figure>
+
+        </section>
+
+        <section>
+          <h3>Stoplight</h3>
+          <figure><a href="https://app.stoplight.io/wk/Jj82MQXLoWG4hfz3t/wsGaxccdt6kYZjZvr/DN8r6BgjpQaCyCGK4/docs/preview"><img src="media/rasters/stoplightdemo.png"/></a>
+          <figcaption><small>Stoplight builds many services around the OpenAPI spec file. Demo: <a href="https://apidocs.threatstack.com/v2/agents/list-all-agents">Threat Stack</a>.</small></figcaption></figure>
+        </section>
+
+        <section>
+          <h3>Readme</h3>
+          <figure><a href="https://apitest.readme.io/docs"><img src="media/rasters/readmedemo.png"/></a>
+<figcaption><small>Import OpenAPI spec or build from within. Demo: <a href="https://developer.box.com/v2.0/reference">Box API</a>.</small></figcaption></figure>
+        </section>
+
+        <section>
+          <h3>Spectacle</h3>
+          <figure><a href="http://idratherbewriting.com/learnapidoc/assets/files/spectacle/public/index.html"><img src="media/rasters/spectacledemo.png"/></a>
+          <figcaption><small>Plug in OpenAPI spec and build. Demo: <a href="https://cheesestore.github.io/">Cheese Store</a></small></figcaption></figure>
+        </section>
+
+        <section>
+          <h3>APIMATIC</h3>
+          <figure><a href="https://apimatic.io/apidocs/apitestweather"><img src="media/rasters/apimaticdemo.png"/></a><figcaption><small>A different UI for each programming language.</small></figcaption></figure>
+
+        </section>
+
+        <section>
+            <h3>Integration challenges</h3>
+            <img src="media/vectors/publishing-apis_integrationproblem.svg"/>
+            <aside class="notes">
+            <p>Need to combine API reference docs with <br/>non-reference content</p>
+          </aside>
+        </section>
+
+        <section>
+            <h2>Questions?</h2>
+            <img src="media/vectors/questions-01.svg"/>
+        </section>
+        <section>
+            <h1>The end</h1>
+            <div>
+            <div style="float:left; padding: 10px;">
+                <img src="http://idratherbewriting.com/learnapidoc/images/tomjohnson.jpg"/>
+            </div>
+            <div style="float:left; padding: 10px; text-align: left;">
+                <p><span class="myname">Tom Johnson</span><br/>
+                    &mdash; <a target="_blank" href="http://idratherbewriting.com">idratherbewriting.com</a><br/>
+                    &mdash;  <a target="_blank" href="http://twitter.com/tomjohnson">@tomjohnson</a><br />
+                    &mdash; <a target="_blank" href="mailto:tom@idratherbewriting.com">tom@idratherbewriting.com</a>
+                </p>
+            </div>
+        </section>
+        <section>
+          <h3>Credits</h3>
+          <p>Some graphics by: <a href="https://www.vecteezy.com">Vecteezy.com</a> and the <a href="https://thenounproject.com/">Noun Project</a>.</p>
+        </section>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                 history: true,
+                 center: false,
+                 progress: true,
+                 slideNumber: true,
+            	dependencies: [
+            		{ src: 'plugin/markdown/marked.js' },
+            		{ src: 'plugin/markdown/markdown.js' },
+            		{ src: 'plugin/notes/notes.js', async: true },
+            		{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+            	]
+            });
+        </script>
+    </body>
+</html>

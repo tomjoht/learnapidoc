@@ -31,15 +31,13 @@ If you want to borrow my API keys, you can access them [here](https://idratherbe
 
 {% include random_ad.html %}
 
-## Get an OpenWeatherMap API key {#openweathermap_apikey}
+## Get authorization keys
 
-To get an authorization key to use the OpenWeatherMap API:
+In order to work with the APIs in the upcoming activities, you'll need to get some API keys.
 
-1.  On [https://openweathermap.org/](https://openweathermap.org), click **Sign Up** in the top nav bar and create an account.
-2.  After you sign up, sign in and find your default API key from the developer dashboard. It's under the **API Keys** tab.
-3.  Copy the key into a place you can easily find it.
+{% include content/activities/get_authorization_keys.md %}
 
-## Get the Aeris Weather API secret and ID {#aeris_weather_apikey}
+### Get the Aeris Weather API secret and ID {#aeris_weather_apikey}
 
 Now for contrast, let's get the keys for the Aeris Weather API. The Aeris Weather API requires both a secret and ID to make requests.
 

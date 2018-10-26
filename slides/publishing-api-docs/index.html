@@ -1,0 +1,424 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Publishing API documentation</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+    <style>
+       p.alignLeft {
+       text-align: left;
+       }
+       span.orange, a.orange {
+       color: orange;
+       outline-color: gray;
+       }
+       div.innovation ul li {
+       margin-bottom:12px;
+       font-size: .9em;
+       }
+       figcaption {
+       font-size:12px;
+       }
+       .reveal p.miscItems, p, li {
+       font-size:.8em;
+       }
+       .slides section h3 {
+       color: #f19132 !important; outline: darkorange;
+       margin:0px;
+       /*padding-top: 80px;*/
+       font-size: 1.8em;
+       text-transform: none;
+       }
+       .slides img {
+       max-width: 80%;
+       max-height: 80%;
+       border:3px solid red;
+       }
+       #upcoming-slide .label {
+       color: #444 !important
+       }
+       ul.credits li {
+       font-size: .6em;
+       }
+       .reveal section h3 {
+       margin:0px;
+       }
+       .reveal section img {
+       margin-bottom:0px;
+       }
+       .reveal li {
+         margin: 20px 0px;
+         font-size: 1em;
+       }
+       span.strategy {
+       border: 1px solid #dedede;
+       padding: 4px 6px;
+       border-radius: 8px;
+       }
+       span.myname {
+       font-weight: bold;
+       font-size: 52px;
+       color: #555;
+       font-family: palatino
+       }
+       .reveal pre code, pre {
+       padding:20px;
+       background-color: #3f3f3f;
+       }
+       .reveal img {
+        background-color: white !important;
+      }
+
+      .reveal div.imageFit {
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+
+      }
+    </style>
+	</head>
+	<body>
+    <div class="reveal innovation">
+       <!-- Any section element inside of this container is displayed as a slide -->
+       <div class="slides">
+          <section>
+             <h1>Publishing API documentation</h1>
+
+             <p>
+                <small>By Tom Johnson / <a target="_blank" href="http://twitter.com/tomjohnson">@tomjohnson</a><br/>
+                <a target="_blank" href="http://idratherbewriting.com">idratherbewriting.com</a></small><br/><br/>
+                <p><small>Slides available at <br/><a target="_blank" href="http://idratherbewriting.com/publishing-api-docs/index.html#/">idratherbewriting.com/publishing-api-docs</a></small></p>
+             </p>
+          </section>
+           <section>
+            <h2>Video recording</h2>
+            <p><small>The following is a video recording of this presentation. </small></p>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/__vSXJn-JQo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+          </section>
+
+<section>
+<section>
+  <h2>Introduction</h2>
+  <img src="media/vectors/publishing-apis_publishingtools.svg"/>
+
+</section>
+          <section>
+            <h3>What I'll talk about</h3>
+          <ul style="font-size: 90%">
+            <li>What makes dev doc unique</li>
+            <li>Dev doc design patterns</li>
+            <li>Docs-as-code characteristics</li>
+            <li>Markdown and version control</li>
+            <li>REST APIs and OpenAPI spec</li>
+            <li>The jungle of publishing tools</li>
+            <li>Lessons learned</li>
+            </ul>
+          </section>
+
+          <section>
+             <h3>Where to find more information</h3>
+             <figure><a target="_blank" href="http://idratherbewriting.com/learnapidoc/"><img class="shortened" src="media/rasters/publishing-your-api-docs.png"/></a><figcaption><a target="_blank" href="http://idratherbewriting.com/learnapidoc/">idratherbewriting.com/learnapidoc</a></figcaption></figure>
+          </section>
+
+          <section>
+            <h3>"API docs" versus "developer" docs</h3>
+            <ul>
+              <li>All API docs are developer docs, but not vice versa</li>
+              <li>API docs include both reference and non-reference content</li>
+              <li>Tool options in this space are mind-boggling</li>
+              <li>There's a tools gap for integrating API reference docs and <br/>non-reference content</li>
+            </ul>
+          </section>
+        </section>
+
+          <section>
+            <section>
+            <h2>Why not just use traditional HATs?</h2>
+            <ul>
+              <li>Developers are authors</li>
+              <li>API structure/templates</li>
+              <li>API requests demo'd on page</li>
+              <li>API docs are the product interface</li>
+            </ul>
+</section>
+
+          <section>
+            <h3>Survey of API doc sites</h3>
+            <ul>
+              <li>Let's begin descriptively</li>
+              <li>Pick 3 from <a target="_blank" href="http://idratherbewriting.com/learnapidoc/pubapis_apilist.html">100 API doc sites</a></li>
+                <li>Identify common characteristics</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Design patterns with API doc sites</h3>
+            <ul>
+              <li>Structure and templates</li>
+              <li>Website platform</li>
+              <li>Abundant code samples</li>
+              <li>Lengthy pages</li>
+              <li>API Interactivity</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Developers treat docs as code</h3>
+            <ul>
+              <li>Markdown or rST</li>
+              <li>Static site generators</li>
+              <li>IDE-like text editor</li>
+              <li>Git to manage content</li>
+              <li>Build from server</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Markdown is preferred syntax</h3>
+            <ul>
+              <li>Readable as code</li>
+              <li>Compatible with version control</li>
+              <li>Semantics defined in YAML frontmatter</li>
+              <li>Scripting languages handle complex scenarios</li>
+              <li>Risk: Lack of standards creates tool lock-in</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Git for managing content</h3>
+            <ul>
+              <li>Ingenious way to collaborate</li>
+              <li>Helps you understand engineering workflows</li>
+              <li>More of a learning curve than your SSG</li>
+              <li>The Git model scales</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Build from server</h3>
+            <ul>
+              <li>"Continuous delivery" is the killer feature</li>
+              <li>No manual uploading/deploying files</li>
+              <li>Focus on content</li>
+            </ul>
+
+            </section>
+
+          <section>
+            <h3>API reference content</h3>
+            <ul>
+              <li>Use templates for common API sections</li>
+              <li>Describe with OpenAPI specification</li>
+              <li>Render with Swagger UI or other</li>
+              <li>Integrate with non-reference docs</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Authoring and publishing tools</h2>
+            <img src="media/vectors/publishing-apis_toolsoptions.svg"/>
+          </section>
+
+            <section>
+              <h3>4 categories of tools</h3>
+                <ol>
+                  <li><a target="_blank" href="https://www.staticgen.com/">Static site generators</a></li>
+                  <li>Hosting and deployment options</li>
+                  <li><a target="_blank" href="https://headlesscms.org/">Headless content management systems</a></li>
+                  <li>Tools to render OpenAPI spec</li>
+                </ol>
+              </section>
+
+            <section>
+              <h3>1. Static site generators</h3>
+              <ul>
+                <li><a target="_blank" href="http://jekyllrb.com">Jekyll</a></li>
+                <li><a target="_blank" href="https://gohugo.io/">Hugo</a></li>
+                <li><a target="_blank" href="http://www.sphinx-doc.org/en/stable/">Sphinx</a></li>
+                <li>+350 more</li>
+                </ul>
+                <p style="font-size: .7em; background-color: #f0f0f0; padding: 15px;">Speed &bull; Format &bull; Community</p>
+              </ul>
+            </section>
+
+            <section>
+              <h3>2. Hosting and deployment options</h3>
+              <ul>
+                <li><a target="_blank" href="https://pages.github.com/">GitHub Pages</a></li>
+                <li><a target="_blank" href="https://cloudcannon.com/">CloudCannon</a></li>
+                <li><a target="_blank" href="https://readthedocs.com/">Read the Docs</a></li>
+                <li><a target="_blank" href="https://www.netlify.com/">Netlify</a></li>
+                <li><a target="_blank" href="https://www.aerobatic.com/">Aerobatic</a></li>
+              </ul>
+
+              <p style="font-size: .7em; background-color: #f0f0f0; padding: 15px;">Continuous delivery &bull; Integration</p>
+            </ul>
+            </section>
+
+            <section>
+              <h3>3. Headless CMSs</h3>
+              <ul>
+                <li><a target="_blank" href="https://forestry.io/">Forestry.io</a></li>
+                <li><a target="_blank" href="https://www.netlifycms.org/">Netlify CMS</a></li>
+                <li><a target="_blank" href="http://readme.io/">Readme.io</a></li>
+                <li>+ dozens more</li>
+              </ul>
+              <p style="font-size: .7em; background-color: #f0f0f0; padding: 15px;">Continuous delivery &bull; Integration &bull; Authentication</p>
+
+            </section>
+
+            <section>
+              <h3>4. Tools to render OpenAPI spec</h3>
+              <ul>
+                <li><a target="_blank" href="https://swagger.io/swagger-ui/">Swagger UI</a> (<a target="_blank" href="http://idratherbewriting.com/learnapidoc/pubapis_swagger_demo.html">Demo</a>)</li>
+                <li><a target="_blank" href="https://swaggerhub.com">SwaggerHub</a> (<a target="_blank" href="https://app.swaggerhub.com/apis/IdRatherBeWriting/MashapeWeatherAPI/2.3">Demo</a>)</li>
+                <li><a target="_blank" href="https://readme.io">Readme.io</a> (<a target="_blank" href="https://apitest.readme.io/docs">Demo</a>)</li>
+                <li><a target="_blank" href="https://sourcey.com/spectacle">Spectacle</a> (<a target="_blank" href="https://cheesestore.github.io/">Demo</a>)</li>
+                <li><a target="_blank" href="http://stoplight.io/">Stoplight.io</a>(<a target="_blank" href="https://app.stoplight.io/wk/Jj82MQXLoWG4hfz3t/4h4h8xoQLJpwjweDx/XknprcEELR39Lv3ro/design/endpoints">Demo</a>)</li>
+                <li><a target="_blank" href="https://apimatic.io">APIMATIC.io</a> (<a target="_blank" href="https://apimatic.io/apidocs/sample-portal/v/1_0#/">Demo</a>)</li>
+                  <li><a target="_blank" href="https://restlet.com/modules/studio/">Restlet Studio</a> (<a target="_blank" href="https://studio.restlet.com/apis/local/resources/~2Fcontacts~2F/operations/post">Demo</a>)</li>
+
+              </ul>
+
+              <p style="font-size: .7em; background-color: #f0f0f0; padding: 15px;">API Explorer &bull; Client SDK generation &bull; Versioning &bull; Collaboration</p>
+
+            </section>
+
+
+            <section>
+              <h3>Integration challenges</h3>
+
+                <p>Need to combine API reference docs with <br/>non-reference content</p>
+                <img src="media/vectors/publishing-apis_integrationproblem.svg"/>
+
+            </section>
+
+         <section>
+            <h3>Which tool to choose for API docs?</h3>
+            <ol>
+              <li>Define your requirements</li>
+              <li>Choose your priorities</li>
+              <li>Consider the time you want to spend on tools</li>
+              <li>Hope that you don't sink months into the wrong tools and platforms</li>
+            </ol>
+          </section>
+
+
+
+        </section>
+
+        <section>
+          <section>
+          <h2>Lessons learned</h2>
+          <img src="media/vectors/publishing-apis_lessonslearned.svg"/>
+</section>
+
+<section>
+  <h3>My current setup at work</h3>
+  <ul>
+    <li>Jekyll + custom theme with no header/footer</li>
+    <li>Use existing internal Git infrastructure</li>
+    <li>Custom-built publishing pipeline</li>
+      <ul><li>Builds output, then ingests HTML into S3</li>
+        <li>Server requests pull matching files from S3 store and inserts into template with header/footer</li>
+      </ul>
+      <li>Embed Swagger UI directly onto page or link to it</li>
+            </ul>
+    <p><a target="_blank" href="https://developer.amazon.com/appstore/documentation">View sample</a></p>
+
+</section>
+
+
+          <section>
+            <h3>My experience switching to docs-as-code</h3>
+            <ul>
+              <li>Mostly love it, would never go back</li>
+              <li>Continuous deployment with Git is the killer feature</li>
+              <li>Love the control and flexibility of open source SSG</li>
+              <li>Takes way more time than you think</li>
+              <li>No good solution for search or translation</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Other implementation realizations</h3>
+            <ul>
+              <li>3rd-party hosting ideal but company permission can be an issue</li>
+              <li>Engineers understand infrastructure but not SSGs</li>
+              <li>Collaborative effort with engineers, not a DIY project</li>
+              <li>1-2 repos max, feeding into same publishing pipeline</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Confusing landscape, but here's what I know</h3>
+            <ul>
+              <li>Describe REST with OpenAPI spec</li>
+              <li>Build continously from the server</li>
+              <li>Manage content with Git</li>
+              <li>Seek 3rd-party solutions when possible</li>
+              <li>Don't spend infinity in the rabbit hole of tools</li>
+              <li>Weigh the tradeoff between control/flexibility versus time/effort/responsibility</li>
+            </ul>
+          </section>
+        </section>
+    <section>
+      <h2>Questions?</h2>
+      <img src="media/vectors/questions-01.svg"/>
+      </section>
+       <section>
+             <h1>The end</h1>
+             <div>
+                <div style="float:left; padding: 10px;">
+                   <img src="http://idratherbewriting.com/learnapidoc/images/tomjohnson.jpg"/>
+                </div>
+                <div style="float:left; padding: 10px; text-align: left;">
+                   <p><span class="myname">Tom Johnson</span><br/>
+                      &mdash; <a target="_blank" href="http://idratherbewriting.com">idratherbewriting.com</a><br/>
+                      &mdash;  <a target="_blank" href="http://twitter.com/tomjohnson">@tomjohnson</a><br />
+                      &mdash; <a target="_blank" href="mailto:tom@idratherbewriting.com">tom@idratherbewriting.com</a>
+                   </p>
+                </div>
+              </section>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+        history: true,
+        center: false,
+        progress: true,
+        slideNumber: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,1 @@
+Contains my presentation titled "OpenAPI and Swagger." You can view the presentation here: [http://idratherbewriting.com/nonref-content-api-docs](http://idratherbewriting.com/nonref-content-api-docs/index.html).

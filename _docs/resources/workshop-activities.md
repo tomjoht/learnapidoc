@@ -17,14 +17,11 @@ When I give API workshops, it helps to consolidate activities into a single page
 
 Slides: [Intro to API documentation](https://idratherbewriting.com/intro-to-api-documentation/index.html)
 
-### Activity: Explore an API
+{% include workshop_button.html title="Explore OpenWeatherMap API" activity="explore_openweathermap_api" %}
 
-Explore the basic sections in API reference documentation in these two weather APIs:
+{% include workshop_button.html title="Get OpenWeatherMap authorization keys" activity="get_authorization_keys" %}
 
-* [OpenWeatherMap API](https://openweathermap.org/api/)
-* [Aeris Weather API](https://www.aerisweather.com/support/docs/api/)
-
-[Generate your own API key](docapis_get_auth_keys.html#openweathermap_apikey) for at least the OpenWeatherMap API.
+{% include workshop_button.html title="Make requests with Postman" activity="postman_request" %}
 
 ### Activity: Make a curl request
 

@@ -50,14 +50,7 @@ Although there are [many good weather API options for developers](https://superd
 
 {% include activity.html %}
 
-Explore the information available on OpenWeatherMap:
-
-1.  Go to [https://openweathermap.org](https://openweathermap.org) and click **API** in the top navigation bar.
-2.  Explore the information available in the [Current Weather Data](https://openweathermap.org/current) by clicking the **API Doc** button in that section.
-
-    As you explore the site, get a sense of the variety and services that API provides. The API calls provide developers with ways to pull information into their applications. In other words, the APIs will provide the data plumbing for the applications that developers build.
-
-3. As you explore the Current Weather Data API, see if it contains information about temperature and wind conditions relevant to our coding scenario.
+{% include content/activities/explore_openweathermap_api.md %}
 
 ## Explore the Aeris Weather API
 
