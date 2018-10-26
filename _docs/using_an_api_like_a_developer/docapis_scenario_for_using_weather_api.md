@@ -48,8 +48,6 @@ Although there are [many good weather API options for developers](https://superd
 
 {% include random_ad2.html %}
 
-{% include activity.html %}
-
 {% include content/activities/explore_openweathermap_api.md %}
 
 ## Explore the Aeris Weather API
@@ -87,9 +85,7 @@ As I mentioned in [REST is a style, not a standard](docapis_what_is_a_rest_api.h
 
 {% include random_ad.html %}
 
-## Answer some questions about the APIs
-
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> Answer some questions about the APIs
 
 Spend a little time exploring the features and information that these weather APIs provide. Try to answer these basic questions:
 

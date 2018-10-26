@@ -45,9 +45,7 @@ To access glove, you would use `data.items[2]`.
 {: .note}
 With most programming languages, you usually start counting at `0`, not `1`.
 
-## Exercise with dot notation {#exercise_dot_notation}
-
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> Exercise with dot notation {#exercise_dot_notation}
 
 In this activity, you'll practice accessing different values through dot notation.
 

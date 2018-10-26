@@ -8,81 +8,24 @@ section: resources
 path1: /resources.html
 ---
 
-When I give API workshops, it helps to consolidate activities into a single page with brief instructions. The following are activities used in the [live workshops in Denver](https://idratherbewriting.com/2018/01/29/api-workshop-in-denver/). I include this resource here in case you're using this content to provide your own workshop or classroom instruction.
-
-* TOC
-{:toc}
+When I give API workshops, it helps to consolidate activities into a single page with brief instructions. The following are activities I use when teaching an API workshop. (The content for the activities is the same content that appears in other parts of the course &mdash; it's just pulled in here for convenience.)
 
 ## Part I: Intro to API documentation
 
 Slides: [Intro to API documentation](https://idratherbewriting.com/intro-to-api-documentation/index.html)
 
-{% include workshop_button.html title="Explore OpenWeatherMap API" activity="explore_openweathermap_api" %}
+**Activities**:
 
-{% include workshop_button.html title="Get OpenWeatherMap authorization keys" activity="get_authorization_keys" %}
+{% include workshop_button.html title="Activity 1: Explore OpenWeatherMap API" activity="explore_openweathermap_api" %}
 
-{% include workshop_button.html title="Make requests with Postman" activity="postman_request" %}
+{% include workshop_button.html title="Activity 2: Get OpenWeatherMap authorization keys" activity="get_authorization_keys" %}
 
-### Activity: Make a curl request
+{% include workshop_button.html title="Activity 3: Make requests with Postman" activity="postman_request" %}
 
-This is a curl request for the weather endpoint in the OpenWeatherMap API:
+{% include workshop_button.html title="Activity 4: Make requests with curl" activity="make_curl_request" %}
 
-```bash
-curl -I -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
-```
+{% include workshop_button.html title="Activity 5: Make AJAX request and inspect payload" activity="ajax_api_request" %}
 
-Swap in your own API key for the `appid` value in the URL's query string.
-
-{% include random_ad2.html %}
-
-### Activity: Postman client
-
-1.  Download [Postman](https://www.getpostman.com/).
-2.  Populate Postman from the Run in Postman buttons below (or from the import links):
-
-    {% if site.format == "pdf" or site.format == "kindle" %}
-
-    To view these buttons, go to the web page for this content at [https://idratherbewriting.com/learnapidoc/workshop-activities.html](https://idratherbewriting.com/learnapidoc/workshop-activities.html).
-
-    {% elsif site.format == "web" %}
-    **OpenWeatherMap API collection**
-
-    <div class="postman-run-button"
-    data-postman-action="collection/import"
-    data-postman-var-1="abd0d0741e8206266958"></div>
-    <script type="text/javascript">
-      (function (p,o,s,t,m,a,n) {
-        !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
-        !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
-          (n = o.createElement("script")),
-          (n.id = s+t), (n.async = 1), (n.src = m), n
-        ));
-      }(window, document, "\_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
-    </script>
-
-    If this button doesn't work for you, copy this [import link](https://www.getpostman.com/collections/abd0d0741e8206266958).
-
-    **Aeris Weather API collection**
-
-    <div class="postman-run-button"
-    data-postman-action="collection/import"
-    data-postman-var-1="65dcddab41ff7a773bb1"></div>
-    <script type="text/javascript">
-      (function (p,o,s,t,m,a,n) {
-        !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
-        !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
-          (n = o.createElement("script")),
-          (n.id = s+t), (n.async = 1), (n.src = m), n
-        ));
-      }(window, document, "\_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
-    </script>
-
-    If this button doesn't work for you, copy this [import link](https://www.getpostman.com/collections/65dcddab41ff7a773bb1).
-    {% endif %}
-
-3.  Make requests in Postman.
-4.  Generate code snippets in JavaScript (AJAX) from Postman.
-5.  Create a Run in Postman button for your requests. In the Collections pane, click the **<** arrow to expand the pane and click **Share**.
 
 ## Part II: OpenAPI and Swagger
 
@@ -177,3 +120,6 @@ This workflow is key for working with sample apps and code repositories.
     git pull
     git push
     ```
+
+
+{% include random_ad2.html %}

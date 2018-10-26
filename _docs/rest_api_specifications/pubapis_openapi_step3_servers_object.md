@@ -59,9 +59,7 @@ You can also incorporate variables into the server URL that can be populated at 
 
 See ["Overriding Servers"](https://swagger.io/docs/specification/api-host-and-base-path/) in the "API Server and Base URL" page for more details.
 
-## Appearance in Swagger UI
-
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> View the Appearance in Swagger UI
 
 Paste the `servers` object (the first code sample above showing just one `url`) into your Swagger Editor, adding to the code you already have there. Swagger UI will look as follows.
 

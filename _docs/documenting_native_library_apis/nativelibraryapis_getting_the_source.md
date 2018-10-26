@@ -55,9 +55,7 @@ Or click **Clone in Desktop** and navigate to the right path in Github Desktop.
 
     {% include course_image.html size="medium" border="true" filename="eclipsefileview" ext_print="" ext_web="png" alt="png" caption="Eclipse File View" %}
 
-## Play with the Sample Java Project
-
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> Play with the Sample Java Project
 
 This Java app doesn't do much. It's main purpose is to create some classes where I can add some Javadoc annotations. But for fun, you can run the app.
 

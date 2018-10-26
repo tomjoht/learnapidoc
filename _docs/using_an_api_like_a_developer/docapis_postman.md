@@ -43,8 +43,6 @@ A lot of times abstract concepts don't make sense until you can contextualize th
 
 {% include random_ad2.html %}
 
-{% include activity.html %}
-
 {% include content/activities/postman_request.md %}
 
 ## Same request but in Paw instead of Postman

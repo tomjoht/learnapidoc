@@ -102,7 +102,7 @@ This developer-centric approach may make sense if you have a large number of API
 
 Swagger offers a variety of libraries that you can add to your programming code to generate the specification document. These libraries are considered part of the [Swagger Codegen](https://swagger.io/swagger-codegen/) project. For more information, see [Comparison of Automatic API Code Generation Tools For Swagger](https://apievangelist.com/2015/06/06/comparison-of-automatic-api-code-generation-tools-for-swagger/) by API Evangelist. For additional tools and libraries, see [Swagger services and tools](http://swagger.io/open-source-integrations/) and [Open Source Integrations](https://swagger.io/open-source-integrations/).
 
-The annotation methods for Swagger doc blocks vary based on the programming language. For example, here's a [tutorial on annotating code with Swagger for Scalatra](http://www.infoq.com/articles/swagger-scalatra). 
+The annotation methods for Swagger doc blocks vary based on the programming language. For example, here's a [tutorial on annotating code with Swagger for Scalatra](http://www.infoq.com/articles/swagger-scalatra).
 
 ## Auto-generating the Swagger file from code annotations
 
@@ -151,9 +151,7 @@ You can also check out the [sample Swagger UI integration with a simple weather 
 
 Some designers criticize Swagger UI's expandable/collapsible output as being dated. At the same time, developers find the one-page model attractive and like the ability to zoom out or in for details. By consolidating all endpoints on the same page in one view, users can take in the whole API at a glance. This display gives users a glimpse of the whole, which helps reduce complexity and enables them to get started. In many ways, the Swagger UI display is a quick-reference guide for your API.
 
-## Explore Swagger UI through the Petstore Demo
-
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> Explore Swagger UI through the Petstore Demo
 
 Let's get some hands-on experience with Swagger UI. Go to the [Swagger Pet Store Demo](https://petstore.swagger.io/).
 

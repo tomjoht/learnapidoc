@@ -51,9 +51,7 @@ paths:
       - Current Weather Data
 ```
 
-## Appearance in Swagger UI
-
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> View the Appearance in Swagger UI
 
 Add the following to the root level of your OpenAPI document in Swagger Editor:
 

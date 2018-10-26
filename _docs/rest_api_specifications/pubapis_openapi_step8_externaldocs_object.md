@@ -33,9 +33,7 @@ externalDocs:
 
 Note that this documentation should relate to the API as a whole. To link a specific parameter to more documentation, you can add an `externalDocs` object to the operation object, as noted in [Operation objects](pubapis_openapi_step4_paths_object.html#operation-objects) section in Step 4 with paths.
 
-## Appearance in Swagger UI
-
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> View the Appearance in Swagger UI
 
 Add the above code to the root level of your OpenAPI document in Swagger UI.
 
@@ -48,9 +46,7 @@ See the related topic, [Integrating Swagger UI with the rest of your docs](pubap
 
 {% include random_ad2.html %}
 
-## Seeing the finished result
-
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> Seeing the finished result
 
 Now that we've completed all the steps in the tutorial, we're finished building our OpenAPI specification document. You can see the complete specification document here: <a href="https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml">https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml</a>.
 

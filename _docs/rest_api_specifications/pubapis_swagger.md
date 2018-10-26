@@ -138,9 +138,7 @@ Some of these sites look the same, but others, such as The Movie Database API an
 
 You'll notice the documentation is short and sweet in a Swagger UI implementation. This is because the Swagger display is meant to be an interactive experience where you can try out calls and see responses &mdash; using your own API key to see your own data. It's the learn-by-doing-and-seeing-it approach. Also, Swagger UI only covers the [reference topics](docendpoints.html) of your documentation.
 
-## Create a Swagger UI display with an OpenAPI spec document {#create_swaggerui}
-
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> Create a Swagger UI display with an OpenAPI spec document {#create_swaggerui}
 
 In this activity, you'll create a Swagger UI display for the weather endpoint in this [OpenWeatherMap API](http://openweathermap.org/current). (If you're jumping around in the documentation, this is a simple API that we used in earlier parts of the course.) You can see a demo of what we'll build [here](https://idratherbewriting.com/learnapidoc/assets/files/swagger/).
 

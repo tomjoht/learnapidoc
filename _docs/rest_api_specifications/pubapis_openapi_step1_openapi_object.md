@@ -63,9 +63,7 @@ I usually keep a local text file (using [Atom editor](https://atom.io/)) where I
 
 If you want to purchase a subscription to [SwaggerHub](pubapis_swaggerhub_smartbear.html), you could keep your spec content in the cloud (SwaggerHub has an editor almost identical to Swagger UI) associated with your personal login. SwaggerHub is the premium tooling for the open-source and free Swagger Editor.
 
-## The openapi object
-
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> Add the openapi object
 
 Go to the [Swagger Editor](https://editor.swagger.io/) and go to **File > Clear editor**. Keep this tab open throughout the OpenAPI tutorial, as you'll be adding to your specification document with each step.
 

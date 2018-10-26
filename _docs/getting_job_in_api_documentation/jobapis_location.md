@@ -424,9 +424,7 @@ Will I stay here forever? Probably not. I'll probably never be able to afford a 
 
 Overall, tech companies will continue to grow and expand outside of Silicon Valley. There's not enough space in Silicon Valley, and the number of engineers gets fewer and fewer as companies grow. Many say that Silicon Valley's days are over, since it's no longer practical for a startup to launch in the conditions here. So if you want to come to California to work as a technical writer, great. But many other locations might be more ideal. (For more thoughts on API tech writer jobs in Silicon Valley, see [Do you have to relocate to an urban tech hub to find a technical writing job?](https://idratherbewriting.com/2018/04/27/tech-dystopia-and-where-the-tech-comm-jobs-are/).)
 
-## How to conduct a simple test
-
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> How to conduct a simple test
 
 If you're curious about the job opportunities in your area, there's a simple way to gauge how many technical writing jobs a city provides. Select a few cities where you might like to live, set up some job alerts on [Indeed.com](http://indeed.com) for those areas, and then monitor the frequency of jobs there over the next month.
 

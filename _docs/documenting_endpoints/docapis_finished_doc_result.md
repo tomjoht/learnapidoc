@@ -7,8 +7,6 @@ section: docendpoints
 path1: /docendpoints.html
 ---
 
-{% include activity.html %}
-
 Let's pull together the various parts we've worked on and bring them together to showcase the full example.
 
 <div class="docSample">

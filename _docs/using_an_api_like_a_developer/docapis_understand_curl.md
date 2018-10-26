@@ -250,7 +250,7 @@ curl -i \
 
 The `Accept` header tells the server that the only format we will accept in the response is JSON.
 
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> Quiz yourself
 
 Quiz yourself to see how much you remember. What do the following parameters mean?
 

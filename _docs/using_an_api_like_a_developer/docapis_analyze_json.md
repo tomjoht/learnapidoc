@@ -149,9 +149,9 @@ Just remember, objects are surrounded with curly braces `{ }` and contain key-va
 {: .tip}
 It's important to understand the difference between objects and arrays because it determines how you access and display the information. Later exercises with dot notation will require you to understand this.
 
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> Examine the weather response
 
-Look at the response from the `weather` endpoint of the OpenWeatherMap weather API. Where are the objects? Where are the arrays?
+Look at the response from the `weather` endpoint of the OpenWeatherMap weather API. Where are the objects? Where are the arrays? Which objects are nested? Which values are booleans versus strings?
 
 ## More information
 

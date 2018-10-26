@@ -16,6 +16,9 @@ folders:
   - title: Course slides
     jurl: /docapis_course_slides.html
 
+  - title: "Workshop activities"
+    jurl: /workshop-activities.html
+    
   - title: Why I developed this course
     jurl: /docapis_foreword.html
 
@@ -333,8 +336,7 @@ folders:
   - title: API Blueprint tutorial
     jurl: /pubapis_api_blueprint.html
 
-  - title: "Workshop activities"
-    jurl: /workshop-activities.html
+
 
   #
   # - title: API documentation survey

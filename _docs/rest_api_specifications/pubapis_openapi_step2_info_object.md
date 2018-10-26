@@ -49,9 +49,7 @@ As you write content in `description` properties, note that colons are problemat
 
 {% include random_ad.html %}
 
-## Appearance in Swagger UI
-
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> View the Appearance in Swagger UI
 
 At this point, go ahead and paste this above code along with the `openapi` object from the previous step into the [Swagger Editor](https://editor.swagger.io/). You'll see some rendering errors (because the specification document doesn't yet have any `path` objects), but the content will still appear. (Just hide the errors section at the top for now).
 

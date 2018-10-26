@@ -251,9 +251,7 @@ paths:
                 example: Not found
 ```
 
-## Appearance in Swagger UI
-
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> View the Appearance in Swagger UI
 
 Paste the above code into Swagger UI (adding to the code you added in the previous tutorials). Swagger UI displays the `paths` object like this:
 

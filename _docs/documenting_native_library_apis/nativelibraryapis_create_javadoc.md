@@ -24,9 +24,7 @@ Here are some other characteristics of Javadoc:
 
 {% include random_ad.html %}
 
-## Generate a Javadoc
-
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> Generate a Javadoc
 
 1.  In Eclipse, go to **File > Export**.
 2.  Expand **Java** and select **Javadoc.** Then click **Next**.
@@ -75,7 +73,7 @@ Javadoc also checks your tags against the actual code. If you have parameters, e
 
 {% include course_image.html size="medium" border="" filename="javadocerrorchecking" ext_print="png" ext_web="png" alt="Javadoc error checking" caption="Javadoc error checking" %}
 
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> Play with Javadoc parameters
 
 Try removing a parameter from a method and generate the Javadoc again. Make sure the console window is open.
 

@@ -675,9 +675,7 @@ Basically, you copy the JSON response you want to document into the Stoplight Ed
 
 The only catch is that Stoplight uses OpenAPI 2.0, not 3.0. You might need to use [API Transformer](https://apimatic.io/transformer) to convert the 2.0 schema output to 3.0. Even so, this approach can save you a lot of time.
 
-## Appearance in Swagger UI
-
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> View the Appearance in Swagger UI
 
 Copy the lengthy code sample (the one under [Responses object with components documentation](#responses_with_components)) and paste it into Swagger Editor, adding to what's already there. Since you already have a `components` object in Swagger Editor, you need to merge the two so that there's just one instance of `components`. For example:
 

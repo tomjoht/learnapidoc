@@ -27,7 +27,7 @@ When you make edits to Javadoc content, look for the following:
 
 {% include random_ad.html %}
 
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> Make some edits to the Javadoc
 
 Make some edits to a class and method. Then regenerate the Javadoc and find your changes. See how they get rendered in the output.
 

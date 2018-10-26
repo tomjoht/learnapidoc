@@ -71,9 +71,7 @@ This course is organized into the following sections:
 
 You don't have to read the sections in order &mdash; feel free to skip around as you prefer. But some of the earlier sections (such as the section on [Using a REST API like a developer](likeadeveloper.html), and the section on [Documenting endpoints](docendpoints.html)) follow a somewhat sequential order with the same weather API scenario.
 
-Because the purpose of the course is to help you learn, there are many activities that require hands-on coding and other exercises. Along with the learning activities, there are also conceptual deep dives, but the focus is always on *learning by doing*. Where there are hands-on activities, I include an "Activity" graphic like this:
-
-{% include activity.html %}
+Because the purpose of the course is to help you learn, there are many activities that require hands-on coding and other exercises. Along with the learning activities, there are also conceptual deep dives, but the focus is always on *learning by doing*. Where there are hands-on activities, I typically include this icon in the section title: <i class="fa fa-user-circle"></i>
 
 Other topics have the word "Activity" in the title, such as the following:
 

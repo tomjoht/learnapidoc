@@ -90,9 +90,7 @@ Properties you can use for each item in the `securitySchemes` object include the
 
 {% include random_ad2.html %}
 
-## Appearance in Swagger UI
-
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> View the Appearance in Swagger UI
 
 In Swagger Editor, insert the following at the root level:
 
@@ -128,9 +126,7 @@ When you click the Authorization button, the `description` and other security de
 
 After users enter an API key and clicks **Authorize**, the authorization method is set for as many requests as they want to make. Only when users refresh the page does the authorization session expire.
 
-## Checking to see if authorization works
-
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> Test out how authorization works
 
 Now that we've added authorization, let's test it out. In the Swagger Editor (the right pane), click the **Authorize** button, paste the sample API key shown in the description into the **Value** field and click **Authorize**. Then click **Close** to close the authorization modal.
 

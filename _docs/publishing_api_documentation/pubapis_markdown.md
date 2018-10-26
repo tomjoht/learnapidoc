@@ -133,8 +133,7 @@ For example, if you're using Jekyll, you have access to a lot of advanced script
 * [Producing PDFs](https://idratherbewriting.com/2015/04/14/producing-pdfs-in-dita-versus-jekyll/)
 * [Creating links](https://idratherbewriting.com/2015/04/06/creating-links-in-dita-versus-jekyll/)
 
-## Markdown activity
-{% include activity.html %}
+## <i class="fa fa-user-circle"></i> Get practice with Markdown
 
 To get a sense of how Markdown works, go to an online Markdown editor (such as [this one])  and create the following:
 
