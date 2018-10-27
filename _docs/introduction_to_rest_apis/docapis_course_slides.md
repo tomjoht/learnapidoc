@@ -8,7 +8,7 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 ---
 
-If you're teaching this material in a workshop, you can use the slides below. The slide groups mirror the same sections in the course.
+The slides correspond to API workshops that I gave. The slide groups mirror the same sections in the course.
 
 ## Part I: Introduction to API Documentation
 
@@ -21,8 +21,6 @@ If you're teaching this material in a workshop, you can use the slides below. Th
 ## Part III: Documenting API endpoints
 
 <a href="/learnapidoc/slides/documenting-api-endpoints.html" class="noCrossRef"><img src="images/documenting-endpoints-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
-
-
 
 
 ## Part I: OpenAPI and Swagger

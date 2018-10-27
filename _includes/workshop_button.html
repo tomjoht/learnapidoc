@@ -1,12 +1,4 @@
-<style>
-.card-body {
-  background-color: #F8F8F8;
-  border: 1px solid #dedede;
-  padding: 15px;
-  margin: 15px 15px;
-}
-</style>
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#{{include.activity}}" aria-expanded="false" aria-controls="collapseExample">
+<button class="btn btn-{{include.button_type}}" type="button" data-toggle="collapse" data-target="#{{include.activity}}" aria-expanded="false" aria-controls="collapseExample">
 {{include.title}}
 </button>
 <div class="collapse" id="{{include.activity}}">
@@ -14,3 +6,4 @@
 {% include content/activities/{{include.activity}}.md %}
 </div>
 </div>
+{% comment %} button types: default, primary, success, info, warning, danger, link. {% endcomment %}

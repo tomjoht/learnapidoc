@@ -17,7 +17,7 @@ folders:
     jurl: /docapis_course_slides.html
 
   - title: "Workshop activities"
-    jurl: /workshop-activities.html
+    jurl: /docapis_workshop_activities.html
 
   - title: Why I developed this course
     jurl: /docapis_foreword.html
@@ -31,8 +31,8 @@ folders:
   - title: What is a REST API?
     jurl: /docapis_what_is_a_rest_api.html
 
-  - title: "Activity: Find an Open Source Project"
-    jurl: /docapis_find_open_source_project.html
+  - title: "Activity: Identify your goals"
+    jurl: /docapis_identify_your_goals.html
 
 - title: "Part II: Using a REST API as a developer"
   jurl: /likeadeveloper.html
@@ -99,8 +99,11 @@ folders:
   - title: "Putting it all together"
     jurl: /docapis_finished_doc_result.html
 
-  - title: "Activity: Critique or create an API reference topic"
+  - title: "Activity: Evaluate API reference docs for core elements"
     jurl: /docapis_api_reference_activity.html
+
+  - title: "Activity: Find an Open Source Project"
+    jurl: /docapis_find_open_source_project.html
 
 - title: "Part IV: Testing your API documentation"
   jurl: /testingdocs.html

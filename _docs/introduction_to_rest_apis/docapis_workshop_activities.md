@@ -1,35 +1,42 @@
 ---
 title: Workshop activities
-permalink: /workshop-activities.html
+permalink: /docapis_workshop_activities.html
 course: "Documenting REST APIs"
-weight: 13.5
+weight: 1.03
 sidebar: docapis
-section: resources
-path1: /resources.html
+section: introtoapis
+path1: /docapis_introtoapis.html
+redirect_from:
+ - /learnapidoc/workshop-activities.html
 ---
 
 When I give API workshops, it helps to consolidate activities into a single page with brief instructions. The following are activities I use when teaching an API workshop. (The content for the activities is the same content that appears in other parts of the course &mdash; it's just pulled in here for convenience.)
 
 ## Part I: Intro to API documentation
 
-Slides: [Intro to API documentation](https://idratherbewriting.com/intro-to-api-documentation/index.html)
+{% include workshop_button.html title="Activity 1: Identify your goals" activity="identify_goals" button_type="warning" %}
 
-**Activities**:
+## Part II: Using an API like a developer
 
-{% include workshop_button.html title="Activity 1: Explore OpenWeatherMap API" activity="explore_openweathermap_api" %}
+{% include workshop_button.html title="Activity 1: Explore OpenWeatherMap API" activity="explore_openweathermap_api" button_type="primary" %}
 
-{% include workshop_button.html title="Activity 2: Get OpenWeatherMap authorization keys" activity="get_authorization_keys" %}
+{% include workshop_button.html title="Activity 2: Get OpenWeatherMap authorization keys" activity="get_authorization_keys" button_type="primary" %}
 
-{% include workshop_button.html title="Activity 3: Make requests with Postman" activity="postman_request" %}
+{% include workshop_button.html title="Activity 3: Make requests with Postman" activity="postman_request" button_type="primary" %}
 
-{% include workshop_button.html title="Activity 4: Make requests with curl" activity="make_curl_request" %}
+{% include workshop_button.html title="Activity 4: Make requests with curl" activity="make_curl_request" button_type="primary" %}
 
-{% include workshop_button.html title="Activity 5: Make AJAX request and inspect payload" activity="ajax_api_request" %}
+{% include workshop_button.html title="Activity 5: Make AJAX request and inspect payload" activity="ajax_api_request" button_type="primary" %}
+
+## Part III: Documenting API endpoints
+
+{% include workshop_button.html title="Activity 1: Evaluate API ref docs to identify core elements" activity="evaluate_elements_api_ref" button_type="success" %}
+
+{% include workshop_button.html title="Activity 2: Find an open-source project" activity="find_open_source_project" button_type="success" %}
 
 
 ## Part II: OpenAPI and Swagger
 
-Slides: [OpenAPI and Swagger](https://idratherbewriting.com/openapi-and-swagger/#/)
 
 ### Activity: OpenAPI with Stoplight
 
