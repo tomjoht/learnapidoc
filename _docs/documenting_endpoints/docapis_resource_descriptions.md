@@ -18,7 +18,7 @@ path1: /docendpoints.html
 * TOC
 {:toc}
 
-## Example of a resource description {#examples}
+## Examples of resource descriptions {#examples}
 
 Here's an example of a resource description from the Mailchimp API's [Campaigns resource](http://developer.mailchimp.com/documentation/mailchimp/reference/campaigns/#):
 
@@ -109,7 +109,7 @@ Resource descriptions (as well as endpoint descriptions) are typically short, us
 
 Although the description in an API reference topic provides a 1-3 sentence summary of the information the resource contains, you might expand on this with much greater detail in the user guide. (You could link the reference description to the places in the guide where you provide more detail.)
 
-## <i class="fa fa-user-circle"></i> sResource description for the surfreport endpoint
+## <i class="fa fa-user-circle"></i> Resource description for the surfreport endpoint
 
 Let's review the [surf report wiki page](docapis_new_endpoint_to_doc.html) (which contains the information about the resource) and try to describe the resource in 1-3 sentences. Here's my approach:
 

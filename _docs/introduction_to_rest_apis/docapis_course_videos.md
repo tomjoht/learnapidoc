@@ -95,7 +95,7 @@ I gave this presentation to the STC Silicon Valley chapter -- more details are [
 
 * [Introduction to REST APIs](https://idratherbewriting.com/learnapidoc/docapis_introtoapis.html)
 * [Using a REST API as a developer](https://idratherbewriting.com/learnapidoc/likeadeveloper.html)
-* [Documenting API reference topics](https://idratherbewriting.com/learnapidoc/docendpoints.html)
+* [Documenting API endpoints](https://idratherbewriting.com/learnapidoc/docendpoints.html)
 
 ### Docs as code tools and workflows
 

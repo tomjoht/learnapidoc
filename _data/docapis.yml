@@ -2,7 +2,7 @@ sidebartitle: Document REST APIs
 
 folders:
 
-- title: Introduction to REST APIs
+- title: "Part I: Introduction to REST APIs"
   jurl: /docapis_introtoapis.html
   class: first
   folderitems:
@@ -18,7 +18,7 @@ folders:
 
   - title: "Workshop activities"
     jurl: /workshop-activities.html
-    
+
   - title: Why I developed this course
     jurl: /docapis_foreword.html
 
@@ -34,7 +34,7 @@ folders:
   - title: "Activity: Find an Open Source Project"
     jurl: /docapis_find_open_source_project.html
 
-- title: Using a REST API as a developer
+- title: "Part II: Using a REST API as a developer"
   jurl: /likeadeveloper.html
   folderitems:
 
@@ -71,7 +71,7 @@ folders:
   - title: Dive into dot notation
     jurl: /docapis_diving_into_dot_notation.html
 
-- title: Documenting API reference topics
+- title: "Part III: Documenting API endpoints"
   jurl: /docendpoints.html
   folderitems:
 
@@ -102,7 +102,7 @@ folders:
   - title: "Activity: Critique or create an API reference topic"
     jurl: /docapis_api_reference_activity.html
 
-- title: Testing your API documentation
+- title: "Part IV: Testing your API documentation"
   jurl: /testingdocs.html
   folderitems:
 
@@ -121,7 +121,7 @@ folders:
   - title: "Activity: Test your project's documentation"
     jurl: /testingdocs_activity.html
 
-- title: Documenting non-reference sections
+- title: "Part V: Documenting non-reference sections"
   jurl: /docnonref.html
   folderitems:
 
@@ -164,7 +164,7 @@ folders:
   - title: Next phase of course
     jurl: /docapis_completion.html
 
-- title: OpenAPI specification and Swagger
+- title: "Part VI: OpenAPI specification and Swagger"
   jurl: /restapispecifications.html
   folderitems:
 
@@ -222,7 +222,7 @@ folders:
   - title: Integrating Swagger UI with the rest of your docs
     jurl: /pubapis_combine_swagger_and_guide.html
 
-- title: Publishing your API documentation
+- title: "Part VII: Publishing your API documentation"
   jurl: /publishingapis.html
   folderitems:
 
@@ -266,7 +266,7 @@ folders:
     jurl: /pubapis_switching_to_docs_as_code.html
 
 
-- title: Getting a Job in API Documentation
+- title: "Part VIII: Getting a Job in API Documentation"
   jurl: /jobapis.html
   folderitems:
 
@@ -279,7 +279,7 @@ folders:
   - title: Locations for API doc writer jobs
     jurl: /jobapis_location.html
 
-- title: Documenting native library APIs
+- title: "Part IX: Documenting native library APIs"
   jurl: /nativelibraryapis.html
   folderitems:
 
@@ -311,7 +311,7 @@ folders:
     jurl: /nativelibraryapis_nonrefdocs.html
 
 
-- title: Glossary and resources
+- title: "Part X: Glossary and resources"
   jurl: /resources.html
   folderitems:
 

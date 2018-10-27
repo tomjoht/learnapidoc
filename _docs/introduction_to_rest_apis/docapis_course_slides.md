@@ -8,32 +8,35 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 ---
 
-If you're teaching this material in a workshop, you can use the slides below. The slides are built with [RevealJS](https://github.com/hakimel/reveal.js/), which means they're HTML. As such, I store them in GitHub repositories that you can fork and then modify to suit your needs. The slides are divided into several groups:
+If you're teaching this material in a workshop, you can use the slides below. The slide groups mirror the same sections in the course.
 
 ## Part I: Introduction to API Documentation
 
-<a href="/learnapidoc/slides/intro-api-documentation/index.html" class="noCrossRef"><img src="images/introapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/intro-api-documentation.html" class="noCrossRef"><img src="images/introapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
-<a href="/learnapidoc/slides/intro-api-documentation/index.html" class="noCrossRef"><button type="button" class="btn btn-default"><i class="fa fa-picture-o pr-1"></i> Slides</button></a>
+## Part II: Using an API like a developer
 
-{% include random_ad.html %}
+<a href="/learnapidoc/slides/using-api-like-developer.html" class="noCrossRef"><img src="images/using-api-developer-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
-## Part II: OpenAPI and Swagger
+## Part III: Documenting API endpoints
 
-<a href="/learnapidoc/slides/openapi-and-swagger/" class="noCrossRef"><img src="images/openapiswaggertitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/documenting-api-endpoints.html" class="noCrossRef"><img src="images/documenting-endpoints-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
-<a href="/learnapidoc/slides/openapi-and-swagger/" class="noCrossRef"><button type="button" class="btn btn-default"><i class="fa fa-picture-o pr-1"></i> Slides</button></a>
+
+
+
+## Part I: OpenAPI and Swagger
+
+<a href="/learnapidoc/slides/openapi-and-swagger.html" class="noCrossRef"><img src="images/openapiswaggertitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 ## Part III: Non-reference Content in API Documentation
 
-<a href="/learnapidoc/slides/nonref-content-api-docs/" class="noCrossRef"><img src="images/nonreftitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/nonref-content-api-docs.html" class="noCrossRef"><img src="images/nonreftitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
-<a href="/learnapidoc/slides/nonref-content-api-docs/" class="noCrossRef"><button type="button" class="btn btn-default"><i class="fa fa-picture-o pr-1"></i> Slides</button></a>
+{% include random_ad.html %}
 
 ## Part IV: Publishing API Documentation
 
-<a href="/learnapidoc/slides/publishing-api-docs/" class="noCrossRef"><img src="images/publishingapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
-
-<a href="/learnapidoc/slides/publishing-api-docs/" class="noCrossRef"><button type="button" class="btn btn-default"><i class="fa fa-picture-o pr-1"></i> Slides</button></a>
+<a href="/learnapidoc/slides/publishing-api-docs.html" class="noCrossRef"><img src="images/publishingapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include random_ad2.html %}

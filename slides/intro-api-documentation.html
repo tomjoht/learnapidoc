@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Introduction to API documentation</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+    <style>
+       p.alignLeft {
+       text-align: left;
+       }
+       span.orange, a.orange {
+       color: orange;
+       outline-color: gray;
+       }
+       div.innovation ul li {
+       margin-bottom:12px;
+       }
+       figcaption {
+       font-size:12px;
+       }
+       .reveal p.miscItems, p, li {
+       font-size:.9em;
+       }
+       .slides section h3 {
+       color: orange !important; outline: gray;
+       margin:0px;
+       /*padding-top: 80px;*/
+       font-size: 1.1em;
+       }
+       .slides img {
+       max-width: 80%;
+       max-height: 80%;
+       border:3px solid red;
+       }
+       #upcoming-slide .label {
+       color: #444 !important
+       }
+       ul.credits li {
+       font-size: .6em;
+       }
+       .reveal section h3 {
+       margin:0px;
+       }
+       .reveal section img {
+       margin-bottom:0px;
+       }
+       span.strategy {
+       border: 1px solid #dedede;
+       padding: 4px 6px;
+       border-radius: 8px;
+       }
+       span.myname {
+       font-weight: bold;
+       font-size: 52px;
+       color: #555;
+       font-family: cursive;
+       }
+       .reveal pre code, pre {
+       padding:20px;
+       background-color: #3f3f3f;
+       }
+       .reveal img {
+        background-color: white !important;
+      }
+
+      .reveal div.imageFit {
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+
+      }
+    </style>
+	</head>
+	<body>
+    <div class="reveal innovation">
+       <!-- Any section element inside of this container is displayed as a slide -->
+       <div class="slides">
+          <section>
+             <h1>Intro to API documentation</h1>
+             <p>
+                <small>By Tom Johnson / <a href="http://twitter.com/tomjohnson">@tomjohnson</a><br/>
+                <a href="http://idratherbewriting.com">idratherbewriting.com</a></small><br/><br/>
+                <p><small>Slides available at <br/><a href="http://idratherbewriting.com/learnapidoc/slides/intro-api-documentation.html">idratherbewriting.com/learnapidoc/slides/intro-api-documentation.html</a></small></p>
+             </p>
+          </section>
+          <section>
+             <h2>Part I: Introduction to API doc</h2>
+             <a href="http://idratherbewriting.com/learnapidoc/docapis_introtoapis.html"><img class="shortened" src="media/rasters/idratherbewriting.png"/></a>
+          </section>
+             <section>
+                <h2>REST API growth</h2>
+                <a href="http://www.programmableweb.com/news/api-consumers-want-reliability-documentation-and-community/2013/01/07"><img class="shortened" src="../images/growthinrestapis.png"/></a>
+             </section>
+
+             <section>
+                <h2>Doc is the interface</h2>
+                <a href="http://www.programmableweb.com/news/api-consumers-want-reliability-documentation-and-community/2013/01/07"><img class="shortened" src="media/rasters/programwebsurvey.png"/></a>
+             </section>
+
+             <section>
+                <h2>Services mashup</h2>
+                <a href="http://cloudcannon.com/tips/2014/12/12/the-ultimate-list-of-services-for-static-websites.html"><img class="shortened" src="../images/servicesforstaticsites.png"/></a>
+             </section>
+
+             <section>
+                <h2>Job market</h2>
+                <img class="shortened" src="../images/indeed_com.png"/>
+             </section>
+
+             <section>
+                <h2>APIs allow systems to interact</h2>
+                <img src="../images/spinning_gears.jpg"/>
+             </section>
+
+             <section>
+                <h2>Functions below interfaces</h2>
+                <img style="max-height: 350px;" src="../images/calculator.png"/>
+             </section>
+
+             <section>
+                <h2>Requests and responses</h2>
+                <img src="../images/restapi_restapi.svg"/>
+             </section>
+
+             <section>
+                <h2>The web follows REST</h2>
+                <img src="../images/restapi_www.svg"/>
+             </section>
+
+    </section>
+     <section>
+      <h2>Questions?</h2>
+      <img src="../images/questions-01.svg"/>
+      </section>
+      <!--
+       <section>
+             <h1>The end</h1>
+             <div>
+                <div style="float:left; padding: 10px;">
+                   <img src="../images/tomjohnson.jpg"/>
+                </div>
+                <div style="float:left; padding: 10px; text-align: left;">
+                   <p><span class="myname">Tom Johnson</span><br/>
+                      &mdash; <a href="http://idratherbewriting.com">idratherbewriting.com</a><br/>
+                      &mdash;  <a href="http://twitter.com/tomjohnson">@tomjohnson</a><br />
+                      &mdash; <a href="mailto:tomjoht@gmail.com">tomjoht@gmail.com</a>
+                   </p>
+                </div>
+</section> -->
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+        history: true,
+        center: false,
+        progress: true,
+        slideNumber: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

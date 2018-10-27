@@ -1,1 +1,0 @@
-Contains my presentation titled "Publishing API Documentation." You can view the presentation here: [http://idratherbewriting.com/publishing-api-docs](http://idratherbewriting.com/publishing-api-docs/index.html).

@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Documenting API endpoints</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+    <style>
+       p.alignLeft {
+       text-align: left;
+       }
+       span.orange, a.orange {
+       color: orange;
+       outline-color: gray;
+       }
+       div.innovation ul li {
+       margin-bottom:12px;
+       }
+       figcaption {
+       font-size:12px;
+       }
+       .reveal p.miscItems, p, li {
+       font-size:.9em;
+       }
+       .slides section h3 {
+       color: orange !important; outline: gray;
+       margin:0px;
+       /*padding-top: 80px;*/
+       font-size: 1.1em;
+       }
+       .slides img {
+       max-width: 80%;
+       max-height: 80%;
+       border:3px solid red;
+       }
+       #upcoming-slide .label {
+       color: #444 !important
+       }
+       ul.credits li {
+       font-size: .6em;
+       }
+       .reveal section h3 {
+       margin:0px;
+       }
+       .reveal section img {
+       margin-bottom:0px;
+       }
+       span.strategy {
+       border: 1px solid #dedede;
+       padding: 4px 6px;
+       border-radius: 8px;
+       }
+       span.myname {
+       font-weight: bold;
+       font-size: 52px;
+       color: #555;
+       font-family: cursive;
+       }
+       .reveal pre code, pre {
+       padding:20px;
+       background-color: #3f3f3f;
+       }
+       .reveal img {
+        background-color: white !important;
+      }
+
+      .reveal div.imageFit {
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+
+      }
+      .orange {color: orange};
+
+    </style>
+	</head>
+	<body>
+    <div class="reveal innovation">
+       <!-- Any section element inside of this container is displayed as a slide -->
+       <div class="slides">
+          <section>
+             <h1>Documenting API endpoints</h1>
+             <p>
+                <small>By Tom Johnson / <a href="http://twitter.com/tomjohnson">@tomjohnson</a><br/>
+                <a href="http://idratherbewriting.com">idratherbewriting.com</a></small><br/><br/>
+                <p><small>Slides available at <br/><a href="http://idratherbewriting.com/learnapidoc/slides/documenting-api-endpoints.html">idratherbewriting.com/learnapidoc/slides/documenting-api-endpoints.html/</a></small></p>
+             </p>
+          </section>
+
+<section>
+  <h2>Part III: Documenting API endpoints</h2>
+  <p><a href="http://idratherbewriting.com/learnapidoc/docendpoints.html">Documenting endpoints</a></p>
+
+</section>
+          <section>
+             <h2>Common sections in API endpoint docs</h2>
+                <ol>
+                  <li>Resource description</li>
+                  <li>Endpoints and methods</li>
+                  <li>Parameters</li>
+                  <li>Request example</li>
+                  <li>Response example and schema</li>
+                </ol>
+
+          </section>
+          <section>
+             <h2>1. Resource description</h2>
+             <section>
+               <h3>What is it</h3>
+               <p>"Resources" refers to the information returned by an API.</p>
+             </section>
+             <section>
+                <h3>Resource terminology varies</h3>
+                <ul>
+                   <li>API calls</li>
+                   <li>Endpoints</li>
+                   <li>API methods</li>
+                   <li>Calls</li>
+                   <li>Resources</li>
+                   <li>Objects</li>
+                   <li>Services</li>
+                   <li>Requests</li>
+                </ul>
+             </section>
+
+             <section>
+                <h3>Mailchimp example</h3>
+                <a href="http://developer.mailchimp.com/documentation/mailchimp/reference/campaigns/"><img src="../images/mailchimpcampaigns.png"/></a>
+             </section>
+
+             <section>
+                <h3>Box example</h3>
+                <a href="https://docs.box.com/reference#membership-object"><img src="../images/boxapi_3_17.png"/></a>
+             </section>
+
+              <section>
+                 <h3>Eventbrite example</h3>
+                 <a href="https://www.eventbrite.com/developer/v3/endpoints/events/"><img src="../images/eventbriteresourceexample.png"/></a>
+              </section>
+              </section>
+
+          <section>
+             <h2>2. Endpoints and methods</h2>
+             <section>
+               <h3>Description</h3>
+               <p>The endpoints indicate how you access the resource, and the method used with the endpoint indicates the allowed interactions (such as GET, POST, or DELETE) with the resource.</p>
+             </section>
+
+
+             <section>
+               <h3>Example</h3>
+   <a href="https://www.instagram.com/developer/endpoints/relationships/"><img src="../images/instagramurlexample.png"/></a>
+             </section>
+
+             <section>
+               <h3>Put path parameters in curly braces</h3>
+               <pre style="color: whitesmoke; padding: 15px;">
+/campaigns/<span style="color: orange;">{campaign_id}</span>/actions/send
+                  </pre>
+                  <p>Example: <a href="https://developers.facebook.com/docs/graph-api/reference/v2.11/achievement/">Facebook</a></p>
+                </section>
+
+                <section>
+                  <h3>List endpoint beside method</h3>
+                  <a href="https://developer.box.com/reference/#add-a-comment-to-an-item"><img src="../images/methodwithendpoint.png"/></a>
+                </section>
+
+                <section>
+                  <h3>How to refer to endpoints in tutorials</h3>
+                  <p>How would you refer to these two endpoints?</p>
+<code>
+  <pre style="color: whitesmoke; padding: 15px;">
+  /users/<span class="orange">{userId}</span>/rewards/<span class="orange">{missionId}</span>
+  /missions/<span class="orange">{missionid}</span>/rewards
+  </pre>
+</code>
+                </section>
+              </section>
+
+             <section>
+             <h2>3. Parameters</h2>
+            <section>
+             <p>Parameters are options you can pass with the endpoint (such as specifying the response format or the amount returned) to influence the response.
+             </p>
+
+             </section>
+             <section>
+                <h3>Box Example</h3>
+                <a href="https://developer.box.com/reference#edit-a-collaboration"><img src="../images/boxparameterexample.png" /></a>
+             </section>
+
+             <section>
+                <h3>Yelp Example</h3>
+                <a href="https://www.yelp.com/developers/documentation/v2/search_api"><img src="../images/yelp_3_17.png" /></a>
+             </section>
+
+             <section>
+               <h3>4 types of parameters</h3>
+               <ul>
+                 <li>Header parameters</li>
+                  <li>Path parameters</li>
+                  <li>Query string parameters</li>
+                  <li>Request body parameters</li>
+                </ul>
+              </section>
+
+              <section>
+                <small>Header:</small>
+                <pre style="color: whitesmoke; padding: 15px;">authorization-key: "12345"</pre>
+                <small>Path:</small>
+                <pre style="color: whitesmoke; padding: 15px;">/service/myresource/user/<span class="orange">{user}</span>/bicycles/{bicycleId}</pre>
+                <small>Query string:</small>
+                <pre style="color: whitesmoke; padding: 15px;">/surfreport/<span class="orange">{beachId}</span>?days=3&units=metric&time=1400</pre>
+              </section>
+              <section>
+                <small>Request body:</small>
+                <pre style="color: whitesmoke; padding: 15px;">
+{
+  "days": 2,
+  "units": "imperial",
+  "time": 1433524597
+  }
+</pre>
+              </section>
+
+              <section>
+       <h3>Parameter data types</h3>
+       <ul>
+       <li>string</li>
+       <li>integer</li>
+       <li>boolean</li>
+       <li>object</li>
+       <li>array</li>
+       </ul>
+       </section>
+
+           <section>
+             <h3>Query string parameter order is irrelevant</h3>
+           <pre style="color: whitesmoke; padding: 15px;">
+           /surfreport/{beachId}?days=3&amp;units=metric&amp;time=1400
+
+           /surfreport/{beachId}?time=1400&amp;units=metric&amp;days=3
+           </pre>
+           <h3>But not path parameter order</h3>
+           <pre style="color: whitesmoke; padding: 15px;">/service/myresource/user/<span class="orange">{user}</span>/bicycles/{bicycleId}
+
+            /service/myresource/user/<span class="orange">{user}</span>/{bicycleId}/bicycles</pre>
+           </section>
+
+    <section>
+      <h3>Request body parameter example</h3>
+
+    <pre><code data-trim contenteditable>
+    {
+    "days": 2,
+    "units": "imperial",
+    "time": 1433524597,
+    "active": true
+    }
+    </code></pre></section>
+
+
+
+          </section>
+          <section>
+             <h2>4. Request example</h2>
+             <section><h3>Description</h3>
+               <p>The request example includes a sample request using the endpoint, showing some parameters configured.</p>
+             </section>
+             <section><h3>Callfire example</h3>
+               <a href="https://developers.callfire.com/docs.html#pagination"><img src="../images/callfireapirequestexample.png"/></a>
+           </section>
+
+           <section>
+             <h3>Parse request example</h3>
+             <a href="http://docs.parseplatform.org/rest/guide/#updating-objects"><img src="../images/parseapirequest.png" /></a>
+           </section>
+
+           <section>
+             <h3>Twitter request example</h3>
+             <a href="https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-friends-list"><img src="../images/twitterrequestexample.png" /></a>
+           </section>
+
+           <section><h3>Multiple request examples</h3>
+             <a href="http://docs.citygridmedia.com/display/citygridv2/Places+API"><img src="../images/search_usage_examples.png"/></a>
+           </section>
+
+           <section><h3>Requests in various languages</h3>
+             <a href="https://clearbit.com/docs?javascript#enrichment-api-combined-api"><img src="../images/clearbitrequestexamples.png"/></a>
+           </section>
+
+           <section>
+             <h3>Autogenerating code requests across languages</h3>
+             <img src="../images/postmancodesnippet.png" />
+           </section>
+
+
+
+           <section><h3>API Explorers provide interactivity</h3>
+             <a href="http://developer.nytimes.com/article_search_v2.json#/Console/GET/articlesearch.json"><img src="../images/nytimesrequestexample.png"/></a>
+           </section>
+
+           <section><h3>Requests can be dangerous</h3>
+             <a href="https://sendgrid.com/docs/API_Reference/Web_API/blocks.html"><img src="../images/Web_API/blocks.png" /></a></p>
+           </section>
+
+          </section>
+          <section>
+             <h2>6. Response example and schema</h2>
+
+             <section><h3>Description</h3>
+             <p>The response example shows a sample response from the request example; the response schema defines all possible elements in the response.</p>
+             </section>
+             <section><h3>Example</h3>
+               <a href="http://developer.nytimes.com/article_search_v2.json#/Documentation/GET/articlesearch.json"><img src="../images/nytimesresponseexample.png"/></a>
+             </section>
+
+             <section><h3>Strategies for nested objects</h3>
+               <a href="https://www.dropbox.com/developers/core/docs#disable-token"><img src="../images/returnvaluedefinitions.png"/></a>
+             </section>
+
+             <section><h3>Tripane help design</h3>
+               <a href="https://stripe.com/docs/api#charge_object"><img src="../images/stripetripanedesign.png"/></a>
+             </section>
+
+          </section>
+
+          <section>
+             <h2>Putting it all together</h2>
+             <a href="http://idratherbewriting.com/learnapidoc/docapis_finished_doc_result.html"><img src="../images/puttingitalltogether.png" /></a>
+          </section>
+        </section>
+
+
+    <section>
+      <h2>Questions?</h2>
+      <img src="../images/questions-01.svg"/>
+      </section>
+       <!-- <section>
+             <h1>The end</h1>
+             <div>
+                <div style="float:left; padding: 10px;">
+                   <img src="../images/tomjohnson.jpg"/>
+                </div>
+                <div style="float:left; padding: 10px; text-align: left;">
+                   <p><span class="myname">Tom Johnson</span><br/>
+                      &mdash; <a href="http://idratherbewriting.com">idratherbewriting.com</a><br/>
+                      &mdash;  <a href="http://twitter.com/tomjohnson">@tomjohnson</a><br />
+                      &mdash; <a href="mailto:tomjoht@gmail.com">tomjoht@gmail.com</a>
+                   </p>
+                </div> -->
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+        history: true,
+        center: false,
+        progress: true,
+        slideNumber: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

@@ -1,5 +1,5 @@
 ---
-title: Documenting API reference topics
+title: Documenting API endpoints
 permalink: /docendpoints.html
 sidebar: docapis
 path1: /docendpoints.html
