@@ -3,7 +3,7 @@ title: Working in YAML
 permalink: /pubapis_yaml.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.20
+weight: 4.20
 section: restapispecifications
 path1: /restapispecifications.html
 ---

@@ -3,7 +3,7 @@ title: "OpenAPI 3.0 tutorial overview"
 permalink: /pubapis_openapi_tutorial_overview.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.21
+weight: 4.21
 section: restapispecifications
 path1: /restapispecifications.html
 ---

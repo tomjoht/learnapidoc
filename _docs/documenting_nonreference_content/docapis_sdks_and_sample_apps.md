@@ -2,7 +2,7 @@
 title: SDKs and sample apps
 permalink: docapis_sdks_and_sample_apps.html
 course: "Documenting REST APIs"
-weight: 5.7
+weight: 6.7
 sidebar: docapis
 section: docnonref
 path1: /docnonref.html

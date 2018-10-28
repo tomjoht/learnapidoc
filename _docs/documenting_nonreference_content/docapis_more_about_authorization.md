@@ -1,7 +1,7 @@
 ---
 title: Authentication and authorization requirements
 permalink: /docapis_more_about_authorization.html
-weight: 5.3
+weight: 6.3
 sidebar: docapis
 section: docnonref
 path1: /docnonref.html

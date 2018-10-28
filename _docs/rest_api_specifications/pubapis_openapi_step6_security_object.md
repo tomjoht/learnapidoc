@@ -3,7 +3,7 @@ title: "Step 6: The security object (OpenAPI tutorial)"
 permalink: /pubapis_openapi_step6_security_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.35
+weight: 4.35
 section: restapispecifications
 path1: /restapispecifications.html
 ---

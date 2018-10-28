@@ -3,7 +3,7 @@ title: Code samples and tutorials
 permalink: /docapis_codesamples_bestpractices.html
 keywords:
 course: "Documenting REST APIs"
-weight: 5.6
+weight: 6.6
 sidebar: docapis
 section: docnonref
 path1: /docnonref.html

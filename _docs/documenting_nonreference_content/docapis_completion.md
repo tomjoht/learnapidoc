@@ -2,7 +2,7 @@
 title: Next phase of course
 permalink: /docapis_completion.html
 course: "Documenting REST APIs"
-weight: 5.93
+weight: 6.93
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html

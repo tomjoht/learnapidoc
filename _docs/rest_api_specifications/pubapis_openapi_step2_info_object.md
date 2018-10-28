@@ -3,7 +3,7 @@ title: "Step 2: The info object (OpenAPI tutorial)"
 permalink: /pubapis_openapi_step2_info_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.31
+weight: 4.31
 section: restapispecifications
 path1: /restapispecifications.html
 ---

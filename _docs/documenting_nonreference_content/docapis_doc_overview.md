@@ -3,7 +3,7 @@ title: API overview
 permalink: /docapis_doc_overview.html
 keywords:
 course: "Documenting REST APIs"
-weight: 5.1
+weight: 6.1
 sidebar: docapis
 section: docnonref
 path1: /docnonref.html

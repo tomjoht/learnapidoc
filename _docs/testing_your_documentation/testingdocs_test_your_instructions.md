@@ -2,7 +2,7 @@
 title: "Test all instructions yourself"
 course: "Documenting REST APIs"
 permalink: /testingdocs_test_your_instructions.html
-weight: 4.1
+weight: 5.1
 sidebar: docapis
 section: testingdocs
 path1: /testingdocs.html

@@ -3,7 +3,7 @@ title: "Status and error codes"
 permalink: /docapis_doc_status_codes.html
 redirect_from:
 - https://idratherbewriting.com/learnapidoc/docapis_doc_response_codes.html
-weight: 5.4
+weight: 6.4
 sidebar: docapis
 section: docnonref
 path1: /docnonref.html

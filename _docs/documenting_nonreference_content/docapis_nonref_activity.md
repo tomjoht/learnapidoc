@@ -2,7 +2,7 @@
 title: "Activity: Assess the non-reference content in your project"
 permalink: /docapis_nonref_activity.html
 course: "Documenting REST APIs"
-weight: 5.92
+weight: 6.92
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html

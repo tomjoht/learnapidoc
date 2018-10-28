@@ -3,7 +3,7 @@ title: "Step 3: The servers object (OpenAPI tutorial)"
 permalink: /pubapis_openapi_step3_servers_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 7.32
+weight: 4.32
 section: restapispecifications
 path1: /restapispecifications.html
 ---

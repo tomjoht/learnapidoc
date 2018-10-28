@@ -2,7 +2,7 @@
 title: "Activity: Test the docs in your Open Source project"
 course: "Documenting REST APIs"
 permalink: /testingdocs_activity.html
-weight: 4.3
+weight: 5.3
 sidebar: docapis
 section: testingdocs
 path1: /testingdocs.html
