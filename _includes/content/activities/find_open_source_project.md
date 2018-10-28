@@ -1,3 +1,5 @@
+##  <i class="fa fa-user-circle"></i>  Find an open-source project with API doc needs
+
 To find an open-source project with API doc needs:
 
 1.  Go to the [GitHub Advanced Search](https://github.com/search/advanced).

@@ -151,29 +151,7 @@ You can also check out the [sample Swagger UI integration with a simple weather 
 
 Some designers criticize Swagger UI's expandable/collapsible output as being dated. At the same time, developers find the one-page model attractive and like the ability to zoom out or in for details. By consolidating all endpoints on the same page in one view, users can take in the whole API at a glance. This display gives users a glimpse of the whole, which helps reduce complexity and enables them to get started. In many ways, the Swagger UI display is a quick-reference guide for your API.
 
-## <i class="fa fa-user-circle"></i> Explore Swagger UI through the Petstore Demo
-
-Let's get some hands-on experience with Swagger UI. Go to the [Swagger Pet Store Demo](https://petstore.swagger.io/).
-
-As with most Swagger-based outputs, Swagger UI provides a "Try it out" button. To make it work, first you would normally authorize Swagger by clicking **Authorize** and completing the right information required in the Authorization modal.
-
-<a href="http://petstore.swagger.io/" class="noExtIcon"><img src="images/swaggerui_authorize.png" alt="Authorization modal in Swagger UI" /></a>
-
-The Petstore example has an OAuth 2.0 security model. However, the Petstore authorization modal is just for demo purposes. There isn't any real code authorizing those requests, so you can simply close the Authorization modal.
-
-Next, expand the **Pet** endpoint. Click **Try it out**.
-
-<a href="http://petstore.swagger.io/" class="noExtIcon"><img src="images/swaggerui_petendpoint.png" alt="Try it out button in Swagger UI" /></a>
-
-After you click Try it out, the example value in the Request Body field becomes editable. Change the first `id` value to an integer, such as `193844`. Change the second `name` value to something you'd recognize (your pet's name &mdash; `Bentley`). Then click **Execute**.
-
-<a href="http://petstore.swagger.io/" class="noExtIcon"><img src="images/swaggerui_execute.png" alt="Executing a sample Petstore request" /></a>
-
-Swagger UI submits the request and shows the curl that was submitted. The Responses section shows the response. (If you select JSON rather than XML in the "Response content type" drop-down box, you can specify that JSON is returned rather than XML.)
-
-<a href="http://petstore.swagger.io/" class="noExtIcon"><img src="images/swaggerui_response.png" alt="Response from Swagger Petstore get pet request" /></a>
-
-The Petsore is a functioning API, and you have actually created a pet. For fun, expand the GET **/pet/{petId}** endpoint, click Try it out, enter the pet ID you used in the previous operation, and then execute the request. You should see your pet's name returned.
+{% include content/activities/explore_swagger_petstore.md %}
 
 ## Other tools for reading OpenAPI spec
 

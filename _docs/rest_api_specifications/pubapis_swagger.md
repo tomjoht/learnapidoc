@@ -109,11 +109,11 @@ Now let's make a request:
 
     <a href="http://petstore.swagger.io/" class="noExtIcon"><img src="images/swaggerui_execute.png" alt="Executing a sample Petstore request" /></a>
 
-Swagger UI submits the request and shows the [curl that was submitted](docapis_make_curl_call.html). The Responses section shows the [response](docapis_doc_sample_responses_and_schema.html). (If you select JSON rather than XML in the "Response content type" drop-down box, the response's format will be JSON.)
+    Swagger UI submits the request and shows the [curl that was submitted](docapis_make_curl_call.html). The Responses section shows the [response](docapis_doc_sample_responses_and_schema.html). (If you select JSON rather than XML in the "Response content type" drop-down box, the response's format will be JSON.)
 
-<a href="http://petstore.swagger.io/" class="noExtIcon"><img src="images/swaggerui_response.png" alt="Response from Swagger Petstore get pet request" /></a>
+    <a href="http://petstore.swagger.io/" class="noExtIcon"><img src="images/swaggerui_response.png" alt="Response from Swagger Petstore get pet request" /></a>
 
-{% include important.html content="The Petstore is a functioning API, and you have actually created a pet. You now need to take responsibility for your pet and begin feeding and caring for it! All joking aside, most users don't realize they're playing with real data when they execute responses in an API (especially when using their own API key). This test data may be something you have to wipe clean when you transition from exploring and learning about the API to actually using the API for production use." %}
+    {% include important.html content="The Petstore is a functioning API, and you have actually created a pet. You now need to take responsibility for your pet and begin feeding and caring for it! All joking aside, most users don't realize they're playing with real data when they execute responses in an API (especially when using their own API key). This test data may be something you have to wipe clean when you transition from exploring and learning about the API to actually using the API for production use." %}
 
 ### Verify that your pet was created
 
@@ -138,92 +138,37 @@ Some of these sites look the same, but others, such as The Movie Database API an
 
 You'll notice the documentation is short and sweet in a Swagger UI implementation. This is because the Swagger display is meant to be an interactive experience where you can try out calls and see responses &mdash; using your own API key to see your own data. It's the learn-by-doing-and-seeing-it approach. Also, Swagger UI only covers the [reference topics](docendpoints.html) of your documentation.
 
-## <i class="fa fa-user-circle"></i> Create a Swagger UI display with an OpenAPI spec document {#create_swaggerui}
+{% include content/activities/create_swaggerui_display.md %}
 
-In this activity, you'll create a Swagger UI display for the weather endpoint in this [OpenWeatherMap API](http://openweathermap.org/current). (If you're jumping around in the documentation, this is a simple API that we used in earlier parts of the course.) You can see a demo of what we'll build [here](https://idratherbewriting.com/learnapidoc/assets/files/swagger/).
+## Configuring Swagger UI parameters
 
-{% include course_image.html url="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" filename="swagger_full_result" size="medium" ext_print="png" ext_web="png" alt="" caption="Demo of Swagger UI rendering an OpenWeatherMap OpenAPI specification document" %}
+Swagger UI provides a number of [configuration parameters](https://github.com/swagger-api/swagger-ui/blob/master/docs/usage/configuration.md) (unrelated to your [OpenAPI parameters](pubapis_openapi_step4_paths_object.html#parameters)) you can use to customize the interactive display. For example, you can set whether each endpoint is expanded or collapsed, how tags and operations are sorted, whether to show request headers in the response, whether to include the Model, and more.
 
-{: .tip}
-You can also follow instructions for working with Swagger UI in the [Swagger.io docs](https://swagger.io/docs/swagger-tools/#swagger-ui-documentation-29).
+We won't get too much into the details of these configuration parameters in the tutorial. I just want to call attention to these parameters here for awareness.
 
-**To integrate your OpenAPI spec into Swagger UI:**
+If you look at the [source of the Swagger UI demo](view-source:https://idratherbewriting.com/learnapidoc/assets/files/swagger/), you'll see the parameters listed in the `// Build a system` section:
 
-1.  If you don't already have an OpenAPI specification document, follow the [OpenAPI tutorial here](pubapis_openapi_tutorial_overview.html) to create one. The tutorial here focuses on Swagger UI, so for convenience, you can also copy [this sample OpenAPI file](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) by right-clicking the link and saving the file ("openapi_openweathermap.yml") to your desktop.
+```js
+  // Build a system
+const ui = SwaggerUIBundle({
+  url: "openapi_openweathermap.yml",
+  dom_id: '#swagger-ui',
+  defaultModelsExpandDepth: -1,
+  deepLinking: true,
+  presets: [
+    SwaggerUIBundle.presets.apis,
+    SwaggerUIStandalonePreset
+  ],
+  plugins: [
+    SwaggerUIBundle.plugins.DownloadUrl
+  ],
+  layout: "StandaloneLayout"
+})
+```
 
-    {: .tip}
-    If you want to preview what your Swagger UI implementation will look like ahead of time, copy the content from the OpenAPI specification document you just downloaded into the [Swagger online editor](http://editor.swagger.io/#/). The view on the right of the Swagger Editor shows a fully functional Swagger UI display.
+The parameters there (e.g., `deepLinking`, `dom_id`, etc.) are defaults. However, I've added `defaultModelsExpandDepth: -1` to hide the "Models" section at the bottom of the Swagger UI display (since I think that section is unnecessary).
 
-2.  Go to the [Swagger UI GitHub project](https://github.com/swagger-api/swagger-ui).
-3.  Click **Clone or download**, and then click **Download ZIP** button. Download the files to a convenient location on your computer and extract the files.
-
-	  The only folder you'll be working with in the downloaded zip is the **dist** folder (short for distribution). Everything else is used only if you're recompiling the Swagger files, which is beyond the scope of this tutorial.
-
-4.  Drag the **dist** folder out of the swagger-ui-master folder so that it stands alone. Then delete the swagger-ui-master folder and zip file.
-4.  Inside your **dist** folder, open **index.html** in a text editor such as [Atom editor](https://atom.io/) or [Sublime Text](https://www.sublimetext.com/).
-5.  Look for the following code:
-
-    ```js
-    url: "http://petstore.swagger.io/v2/swagger.json",
-    ```
-
-6.  Change the `url` value from `http://petstore.swagger.io/v2/swagger.json` to the following:
-
-    ```js
-    url: "openapi_openweathermap.yml",
-    ```
-
-    Save the file.
-
-7.  Configure any special Swagger UI parameters as desired.
-
-    We won't get too much into the details of these parameters here. I just want to call attention to them here for awareness. Swagger UI provides a number of [parameters](https://swagger.io/docs/swagger-tools/#parameters-37) (unrelated to your OpenAPI parameters) you can use to customize the display. For example, you can set whether each endpoint is expanded or collapsed, how tags and operations are sorted, whether to show request headers in the response, and more.
-
-    For example, if you look at the [source of the Swagger UI demo](view-source:https://idratherbewriting.com/learnapidoc/assets/files/swagger/), you'll see the parameters listed in the `// Build a system` section:
-
-    ```js
-      // Build a system
-    const ui = SwaggerUIBundle({
-      url: "openapi_openweathermap.yml",
-      dom_id: '#swagger-ui',
-      defaultModelsExpandDepth: -1,
-      deepLinking: true,
-      presets: [
-        SwaggerUIBundle.presets.apis,
-        SwaggerUIStandalonePreset
-      ],
-      plugins: [
-        SwaggerUIBundle.plugins.DownloadUrl
-      ],
-      layout: "StandaloneLayout"
-    })
-    ```
-
-    The parameters there (e.g., `deepLinking`, `dom_id`, etc.) are defaults. However, I've added `defaultModelsExpandDepth: -1` to hide the "Models" section at the bottom of the Swagger UI display (since I think that section is unnecessary).
-
-7.  Drag the **openapi_openweathermap.yml** file that you downloaded in step 1 into the same directory as the index.html file you just edited. Your file structure should look as follows:
-
-    ```
-    ├── swagger
-    │   ├── favicon-16x16.png
-    │   ├── favicon-32x32.png
-    │   ├── index.html
-    │   ├── oauth2-redirect.html
-    │   ├── swagger-ui-bundle.js
-    │   ├── swagger-ui-bundle.js.map
-    │   ├── swagger-ui-standalone-preset.js
-    │   ├── swagger-ui-standalone-preset.js.map
-    │   ├── swagger-ui.css
-    │   ├── swagger-ui.css.map
-    │   ├── swagger-ui.js
-    │   ├── swagger-ui.js.map
-    │   ├── swagger30.yml
-    │   └── openapi_openweathermap.yml
-    ```
-
-8.  Upload the folder to a web server and go to the folder path. For example, if you called your directory **dist** (leaving it unchanged), you would go to **http://myserver.com/dist**. (You can change the "dist" folder name to whatever you want.)
-
-You can also view the file locally in your browser. In Chrome, go to **File > Open** and browse to the **index.html** file in your dist folder.
+You can also learn about the Swagger UI configuration parameters in the [Swagger documentation](https://swagger.io/docs/open-source-tools/swagger-ui/usage/configuration/).
 
 ## Challenges with Swagger UI
 

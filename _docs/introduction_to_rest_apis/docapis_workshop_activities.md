@@ -14,7 +14,7 @@ When I give API workshops, it helps to consolidate activities into a single page
 
 ## Part I: Intro to API documentation
 
-{% include workshop_button.html title="Activity 1: Identify your goals" activity="identify_goals" button_type="warning" %}
+{% include workshop_button.html title="Activity 1: Identify your goals" activity="identify_goals" button_type="default" %}
 
 ## Part II: Using an API like a developer
 
@@ -34,85 +34,17 @@ When I give API workshops, it helps to consolidate activities into a single page
 
 {% include workshop_button.html title="Activity 2: Find an open-source project" activity="find_open_source_project" button_type="success" %}
 
+## Part V: OpenAPI and Swagger
 
-## Part II: OpenAPI and Swagger
+{% include workshop_button.html title="Activity 1: Explore Swagger UI through the Petstore Demo" activity="explore_swagger_petstore" button_type="info" %}
 
+{% include workshop_button.html title="Activity 2: Edit an existing OpenAPI specification document" activity="edit_openapi_spec_file" button_type="info" %}
 
-### Activity: OpenAPI with Stoplight
+{% include workshop_button.html title="Activity 3: Create a SwaggerUI display" activity="create_swaggerui_display" button_type="info" %}
 
-1.  Open [v3 next Stoplight app](https://next.stoplight.io/). (You can also use the [Desktop app](https://github.com/stoplightio/desktop/releases/latest).)
-2.  From main.oas, open the Code tab and paste in content for this 2.0 JSON Open API definition: [openweathermap_swagger20.json](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openweathermap_swagger20.json).
-3.  Edit, explore Basics, Requests, Responses sections.
-4.  In the Responses area, click **Generate from JSON**, paste in complex JSON snippet into the Responses area, then click **Generate!**
-
-    ```json
-      {
-      "coord": {
-        "lon": -121.96,
-        "lat": 37.35
-      },
-      "weather": [
-        {
-          "id": 804,
-          "main": "Clouds",
-          "description": "overcast clouds",
-          "icon": "04d"
-        }
-      ],
-      "base": "stations",
-      "main": {
-        "temp": 57.18,
-        "pressure": 1020,
-        "humidity": 47,
-        "temp_min": 53.6,
-        "temp_max": 59
-      },
-      "visibility": 16093,
-      "wind": {
-        "speed": 3.29,
-        "deg": 256.502
-      },
-      "clouds": {
-        "all": 90
-      },
-      "dt": 1522947600,
-      "sys": {
-        "type": 1,
-        "id": 479,
-        "message": 0.0049,
-        "country": "US",
-        "sunrise": 1522935974,
-        "sunset": 1522982091
-      },
-      "id": 420006397,
-      "name": "Santa Clara",
-      "cod": 200
-    }
-   ```
-
-   More details about Stoplight are available here:
-
-   * [Stoplight — visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html)
-   * [Activity: Use Stoplight to edit your OpenAPI spec](pubapis_stoplight.html#workshop_activity)
-
-{% include random_ad.html %}
-
-### Activity: Swagger Editor
-
-1. Paste [this YAML file](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) into [Swagger Editor](https://editor.swagger.io/) and make updates.
-2. Go to [this SwaggerHub API](https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/). Observe Generate Client SDK options.
-
-### Activity: Swagger UI
-
-1. Download [Swagger UI](https://github.com/swagger-api/swagger-ui/tree/v3.4.1).
-2. Uncompress and pull out the **dist** folder.
-3. Save this file locally:  [openapi_openweathermap.yml](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) into the **dist** folder.
-4. Reference **openapi_openweathermap.yml** in place of the default `url` value.
-5. Open in Firefox.
+{% include workshop_button.html title="Activity 4: Work with the OpenAPI in Stoplight" activity="work_with_stoplight" button_type="info" %}
 
 ## Part III: Non-reference content in API docs
-
-Slides: [Non-reference content in API docs](https://idratherbewriting.com/nonref-content-api-docs/#/)
 
 ###  Activity: GitHub workflow
 
@@ -128,5 +60,6 @@ This workflow is key for working with sample apps and code repositories.
     git push
     ```
 
+{% include random_ad.html %}
 
 {% include random_ad2.html %}

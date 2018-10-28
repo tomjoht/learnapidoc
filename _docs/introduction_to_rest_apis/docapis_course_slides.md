@@ -12,7 +12,7 @@ The slides correspond to API workshops that I gave. The slide groups mirror the 
 
 ## Part I: Introduction to API Documentation
 
-<a href="/learnapidoc/slides/intro-api-documentation.html" class="noCrossRef"><img src="images/introapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/intro_api_documentation.html" class="noCrossRef"><img src="images/introapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 ## Part II: Using an API like a developer
 
@@ -20,12 +20,12 @@ The slides correspond to API workshops that I gave. The slide groups mirror the 
 
 ## Part III: Documenting API endpoints
 
-<a href="/learnapidoc/slides/documenting-api-endpoints.html" class="noCrossRef"><img src="images/documenting-endpoints-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/documenting_api_endpoints.html" class="noCrossRef"><img src="images/documenting-endpoints-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 
 ## Part I: OpenAPI and Swagger
 
-<a href="/learnapidoc/slides/openapi-and-swagger.html" class="noCrossRef"><img src="images/openapiswaggertitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/openapi_and_swagger.html" class="noCrossRef"><img src="images/openapiswaggertitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 ## Part III: Non-reference Content in API Documentation
 
@@ -35,6 +35,6 @@ The slides correspond to API workshops that I gave. The slide groups mirror the 
 
 ## Part IV: Publishing API Documentation
 
-<a href="/learnapidoc/slides/publishing-api-docs.html" class="noCrossRef"><img src="images/publishingapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/publishing_api_docs.html" class="noCrossRef"><img src="images/publishingapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include random_ad2.html %}

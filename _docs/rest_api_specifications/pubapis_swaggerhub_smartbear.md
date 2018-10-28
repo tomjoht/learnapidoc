@@ -18,7 +18,7 @@ You can see a demo of the [sample OpenWeatherMap API on SwaggerHub here](https:/
 {:toc}
 {% endif %}
 
-<small>Note that Smartbear is one of the sponsors of my site.</small>
+*Note that Smartbear is one of the sponsors of my site.*
 
 ## Advantages of SwaggerHub
 

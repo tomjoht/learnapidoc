@@ -13,18 +13,13 @@ The [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html) walked you throug
 * TOC
 {:toc}
 
-## Identify an API
+{% include content/activities/edit_openapi_spec_file.md %}
 
-In an earlier activity, you [found an open-source API project](docapis_find_open_source_project.html) with some documentation needs. Try creating an OpenAPI specification for this API.
+## Create the OpenAPI specification document for an API of your choosing
 
-{: .tip}
-Depending on the API you choose to work with, you could potentially use this specification document as part of your portfolio.
-
-If you don't want to use that API (maybe it already has an OpenAPI specification document, or maybe there are other complications), you can use this simple [Sunrise and sunset times API](https://sunrise-sunset.org/api). This Sunrise and sunset times API doesn't require authentication with requests, so it removes some of the more complicated authentication workflows.
+In an earlier activity, you [found an open-source API project](docapis_find_open_source_project.html) with some documentation needs. Try creating an OpenAPI specification for this API. Depending on the API you choose to work with, you could potentially use this specification document as part of your portfolio.
 
 {% include random_ad.html %}
-
-## Follow the OpenAPI tutorial
 
 Go each step of the OpenAPI specification tutorial to build out the specification document:
 
@@ -37,19 +32,6 @@ Go each step of the OpenAPI specification tutorial to build out the specificatio
 * [Step 7: tags object](pubapis_openapi_step7_tags_object.html)
 * [Step 8: externalDocs object](pubapis_openapi_step8_externaldocs_object.html)
 
-Note that the Sunrise and sunset times API doesn't require authorization, so you can skip [Step 6: security object](pubapis_openapi_step6_security_object.html).
-
-## Make sure your spec validates
-
 Validate your specification document in the [Swagger Editor](https://swagger.io/swagger-editor/). Execute a request to make sure it's working correctly.
 
 {% include random_ad2.html %}
-
-## Check your spec against mine
-
-If you get stuck or want to compare your spec with mine, see the specification document for the Sunrise and Sunset API here:  [https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/openapi_sunrise_sunset.yml](https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/openapi_sunrise_sunset.yml).
-
-{: .tip}
-You can use this OpenAPI specification document when working through the [Swagger UI activity](pubapis_swaggerui.html#create_swaggerui).
-
-To see the Sunrise and Sunset specification document rendered by Swagger UI, just go to the [Swagger UI Demo](https://idratherbewriting.com/learnapidoc/assets/files/swagger/) and paste in the link to the `openapi_sunrise_sunset.yml` file into the **Explore** box.
