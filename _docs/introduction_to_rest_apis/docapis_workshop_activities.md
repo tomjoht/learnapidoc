@@ -34,7 +34,7 @@ When I give API workshops, it helps to consolidate activities into a single page
 
 {% include workshop_button.html title="Activity 2: Find an open-source project" activity="find_open_source_project" button_type="success" %}
 
-## Part V: OpenAPI and Swagger
+## Part IV: OpenAPI and Swagger
 
 {% include workshop_button.html title="Activity 1: Explore Swagger UI through the Petstore Demo" activity="explore_swagger_petstore" button_type="info" %}
 
@@ -44,21 +44,13 @@ When I give API workshops, it helps to consolidate activities into a single page
 
 {% include workshop_button.html title="Activity 4: Work with the OpenAPI in Stoplight" activity="work_with_stoplight" button_type="info" %}
 
-## Part III: Non-reference content in API docs
+## Part VI: Non-reference content in API docs
 
-###  Activity: GitHub workflow
+{% include workshop_button.html title="Activity 1: Assess the non-reference content in 3 API doc sites" activity="assess_nonref_content" button_type="danger" %}
 
-This workflow is key for working with sample apps and code repositories.
 
-1.  Create new repo and initialize with readme. Clone repo locally using `git clone`.
-2.  Make update to readme file and push back into repo:
 
-    ```
-    git add .
-    git commit -m "made update to readme"
-    git pull
-    git push
-    ```
+## Part VI: Publishing API documentation
 
 {% include random_ad.html %}
 

@@ -6,6 +6,8 @@
         <title>Swagger UI and the OpenAPI specification</title>
         <link rel="stylesheet" href="css/reveal.css">
         <link rel="stylesheet" href="css/theme/beige.css">
+        <link rel="stylesheet" href="css/custom.css">
+
         <!-- Theme used for syntax highlighting of code -->
         <link rel="stylesheet" href="lib/css/zenburn.css">
         <!-- Printing and PDF exports -->
@@ -16,76 +18,7 @@
             link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
             document.getElementsByTagName( 'head' )[0].appendChild( link );
         </script>
-        <style>
-            p.alignLeft {
-            text-align: left;
-            }
-            span.orange, a.orange {
-            color: orange;
-            outline-color: gray;
-            }
-            div.innovation ul li {
-            margin-bottom:12px;
-            font-size: .9em;
-            }
-            figcaption {
-            font-size:12px;
-            }
-            .reveal p.miscItems, p, li {
-            font-size:.8em;
-            }
-            .slides section h3 {
-            color: #f19132 !important; outline: darkorange;
-            margin:0px;
-            /*padding-top: 80px;*/
-            font-size: 1.8em;
-            text-transform: none;
-            }
-            .slides img {
-            max-width: 80%;
-            max-height: 80%;
-            border:3px solid red;
-            }
-            #upcoming-slide .label {
-            color: #444 !important
-            }
-            ul.credits li {
-            font-size: .6em;
-            }
-            .reveal section h3 {
-            margin:0px;
-            }
-            .reveal section img {
-            margin-bottom:0px;
-            }
-            .reveal li {
-            margin: 20px 0px;
-            font-size: 1em;
-            }
-            span.strategy {
-            border: 1px solid #dedede;
-            padding: 4px 6px;
-            border-radius: 8px;
-            }
-            span.myname {
-            font-weight: bold;
-            font-size: 52px;
-            color: #555;
-            font-family: palatino
-            }
-            .reveal pre code, pre {
-            padding:20px;
-            background-color: #3f3f3f;
-            }
-            .reveal img {
-            background-color: white !important;
-            }
-            .reveal div.imageFit {
-            max-width: 85%;
-            margin-left: auto;
-            margin-right: auto;
-            }
-        </style>
+      
     </head>
     <body>
         <div class="reveal innovation">
@@ -99,15 +32,8 @@
             <p><small>Slides available at <br/><a target="_blank" href="http://idratherbewriting.com//learnapidoc/slides/openapi_and_swagger.html">idratherbewriting.com//learnapidoc/slides/openapi_and_swagger.html</a></small></p>
             </p>
         </section>
-         <!-- <section>
-            <h2>Video recording</h2>
-            <p><small>The following is a video recording of this presentation. </small></p>
-            <p><iframe width="640" height="360" src="https://www.youtube.com/embed/gcDSL-8pkvU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
-            </section> -->
-
-
-        <section>
-            <h3>What I'll talk about</h3>
+  <section>
+            <h2>What I'll talk about</h2>
             <img src="../images/swagger-openapi-pres_openapiswagger.svg" style="max-width: 400px;"/>
             <ul style="font-size: 90%">
                 <li>Concepts more than technical details</li>
@@ -118,7 +44,7 @@
             </ul>
         </section>
         <section>
-            <h3>Where to find more information</h3>
+            <h2>Where to find more information</h2>
             <figure>
                 <a target="_blank" href="http://idratherbewriting.com/learnapidoc/"><img class="shortened" src="../images/learnapidocsite.png"/></a>
                 <figcaption><a target="_blank" href="http://idratherbewriting.com/learnapidoc/restapispecifications.html">idratherbewriting.com/learnapidoc</a></figcaption>
@@ -126,28 +52,28 @@
         </section>
 
         <section>
-          <h3>What engineers want in documentation</h3>
+          <h2>What engineers want in documentation</h2>
           <img src="../images/swagger-openapi-pres_whatengineerswant.svg"/>
 
         </section>
 
         <section>
-          <h3>Why interactivity with API docs?</h3>
+          <h2>Why interactivity with API docs?</h2>
           <img src="../images/swagger-openapi-pres_interactivity.svg"/>
 
         </section>
 
         <section>
-          <h3>Swagger UI Petstore Demo</h3>
+          <h2>Swagger UI Petstore Demo</h2>
           <a href="http://petstore.swagger.io/"><img src="../images/swaggerpetstore.png"/></a>
         </section>
 
         <section>
-          <h3>Activity 1: Explore Swagger UI through the Petstore Demo</h3>
+          <h2>Activity 1: Explore Swagger UI through the Petstore Demo</h2>
         </section>
 
         <section>
-          <h3>OpenAPI specification</h3>
+          <h2>OpenAPI specification</h2>
           <img src="../images/swagger-openapi-pres_openapiinitiative.svg"/>
 <aside class="notes">
           <ul>
@@ -159,7 +85,7 @@
 
 
         <section>
-          <h3>Objects in OpenAPI spec</h3>
+          <h2>Objects in OpenAPI spec</h2>
 <style>
 ul.narrow li {
   margin-top:3px;
@@ -183,7 +109,7 @@ ul.narrow li {
         </section>
 
         <section>
-          <h3>OpenAPI spec at a glance</h3>
+          <h2>OpenAPI spec at a glance</h2>
           <pre><code>
 paths:
   /pets:
@@ -222,17 +148,17 @@ paths:
           </section>
 
           <section>
-            <h3>YAML syntax</h3>
+            <h2>YAML syntax</h2>
             <a href="http://yaml.org/"><img src="../images/yamlscreenshot.png" /></a>
           </section>
 
           <section>
-            <h3>Spec-first development versus code annotations</h3>
+            <h2>Spec-first development versus code annotations</h2>
             <a href="https://www.amazon.com/gp/product/B0125TOLNU?keywords=undisturbed%20rest%20michael%20stowe&qid=1444665700"><img src="../images/spec_driven_development.jpg"/></a>
           </section>
 
         <section>
-          <h3>Forms simplify authoring</h3>
+          <h2>Forms simplify authoring</h2>
           <img src="../images/swagger-openapi-pres_openapiasform.svg" />
           <aside class="notes">
           <ul>
@@ -243,27 +169,27 @@ paths:
         </section>
 
         <section>
-          <h3>Standardized terminology</h3>
+          <h2>Standardized terminology</h2>
           <img src="../images/swagger-openapi-pres_apiterminology.svg" />
         </section>
 
         <section>
-          <h3>Swagger Editor</h3>
+          <h2>Swagger Editor</h2>
           <a href="https://editor.swagger.io/"><img src="../images/swaggereditor.png"/></a>
         </section>
 
         <section>
-          <h3>Tutorial for building OpenAPI spec doc</h3>
+          <h2>Tutorial for building OpenAPI spec doc</h2>
           <a href="http://idratherbewriting.com/learnapidoc/pubapis_openapi_tutorial_overview.html"><img src="../images/openapitutorial.png"/></a>
 <p><small>(See also Peter Gruenbaum's resources (<a href="http://www.stc-psc.org/event/documenting-web-apis-with-swagger-free-webinar/">STC preso</a> and <a href="https://www.udemy.com/learn-swagger-and-the-open-api-specification/">Udemy course</a>)</small></p>
         </section>
 
         <section>
-          <h3>Activity: Edit an OpenAPI specification document</h3>
+          <h2>Activity: Edit an OpenAPI specification document</h2>
         </section>
 
         <section>
-          <h3>Not just for interactive documentation</h3>
+          <h2>Not just for interactive documentation</h2>
           <img src="../images/swagger-openapi-pres_openapihub.svg" />
           <aside class="notes">
           <p>The spec can drive prototyping, testing, SDK generation, and more</p>
@@ -272,60 +198,60 @@ paths:
         </section>
 
         <section>
-          <h3>Swagger UI</h3>
+          <h2>Swagger UI</h2>
           <figure><a href="http://idratherbewriting.com/learnapidoc/assets/files/swagger/#"><img src="../images/swaggeruidemo.png"/></a><figcaption><small>Swagger UI is open-source and can easily be hosted on a web server.</small></figcaption></figure>
 
         </section>
 
         <section>
-          <h3>Activity: Build a Swagger UI file</h3>
+          <h2>Activity: Build a Swagger UI file</h2>
         </section>
 
 
 
         <section>
-          <h3>Tools can programmatically process the spec</h3>
+          <h2>Tools can programmatically process the spec</h2>
           <img src="../images/swagger-openapi-pres_toolstoprocessspec.svg"/>
         </section>
 
 
 
         <section>
-          <h3>SwaggerHub</h3>
+          <h2>SwaggerHub</h2>
           <a href="https://app.swaggerhub.com/apis-docs/IdRatherBeWriting/open-weather_map_api/2.5.2"><img src="../images/swaggerhubdemo.png"/></a>
 
         </section>
 
         <section>
-          <h3>Stoplight</h3>
+          <h2>Stoplight</h2>
           <figure><a href="https://next.stoplight.io/"><img src="../images/stoplightappinterface.png"/></a>
           <figcaption>Demo: <a href="https://developer.shopgate.com/">Shopgate</a></figcaption></figure>
         </section>
 
         <section>
-          <h3>Readme</h3>
+          <h2>Readme</h2>
           <figure><a href="https://apitest.readme.io/docs"><img src="../images/readmedemo.png"/></a>
 <figcaption><small>Demo: <a href="https://developer.box.com/v2.0/reference">Box API</a>.</small></figcaption></figure>
         </section>
 
         <section>
-          <h3>Spectacle</h3>
+          <h2>Spectacle</h2>
           <figure><a href="http://idratherbewriting.com/learnapidoc/assets/files/spectacle/public/index.html"><img src="../images/spectacledemo.png"/></a>
           <figcaption><small>Demo: <a href="https://cheesestore.github.io/">Cheese Store</a></small></figcaption></figure>
         </section>
 
         <section>
-          <h3>APIMATIC</h3>
+          <h2>APIMATIC</h2>
           <figure><a href="https://apimatic.io/apidocs/apitestweather"><img src="../images/apimaticdemo.png"/></a><figcaption></figcaption></figure>
 
         </section>
 
         <section>
-          <h3>Activity: Work with the OpenAPI spec in Stoplight</h3>
+          <h2>Activity: Work with the OpenAPI spec in Stoplight</h2>
         </section>
 
         <section>
-            <h3>Integration challenges</h3>
+            <h2>Integration challenges</h2>
             <img src="../images/publishing-apis_integrationproblem.svg"/>
             <aside class="notes">
             <p>Need to combine API reference docs with <br/>non-reference content</p>
@@ -351,7 +277,7 @@ paths:
             </div>
         </section> -->
         <section>
-          <h3>Credits</h3>
+          <h2>Credits</h2>
           <p>Some graphics by: <a href="https://www.vecteezy.com">Vecteezy.com</a> and the <a href="https://thenounproject.com/">Noun Project</a>.</p>
         </section>
         <script src="lib/js/head.min.js"></script>

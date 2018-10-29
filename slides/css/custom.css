@@ -1,0 +1,70 @@
+p.alignLeft {
+text-align: left;
+}
+span.orange, a.orange {
+color: orange;
+outline-color: gray;
+}
+div.innovation ul li {
+margin-bottom:12px;
+}
+figcaption {
+font-size:12px;
+}
+.reveal p.miscItems, p, li {
+font-size:.9em;
+}
+.slides section h3 {
+color: orange !important; outline: gray;
+margin:0px;
+/*padding-top: 80px;*/
+font-size: 1.1em;
+}
+.slides img {
+max-width: 80%;
+max-height: 80%;
+border:3px solid red;
+}
+#upcoming-slide .label {
+color: #444 !important
+}
+ul.credits li {
+font-size: .6em;
+}
+.reveal section h3 {
+margin:0px;
+}
+.reveal section img {
+margin-bottom:0px;
+}
+span.strategy {
+border: 1px solid #dedede;
+padding: 4px 6px;
+border-radius: 8px;
+}
+span.myname {
+font-weight: bold;
+font-size: 52px;
+color: #555;
+font-family: cursive;
+}
+.reveal pre code, pre {
+padding:20px;
+background-color: #3f3f3f;
+}
+.reveal img {
+ background-color: white !important;
+}
+
+.reveal div.imageFit {
+ max-width: 85%;
+ margin-left: auto;
+ margin-right: auto;
+
+}
+.orange {
+  color: orange
+};
+.red {
+  color: red
+};

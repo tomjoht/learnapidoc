@@ -16,24 +16,23 @@ The slides correspond to API workshops that I gave. The slide groups mirror the 
 
 ## Part II: Using an API like a developer
 
-<a href="/learnapidoc/slides/using-api-like-developer.html" class="noCrossRef"><img src="images/using-api-developer-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/using_api_like_developer.html" class="noCrossRef"><img src="images/using-api-developer-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 ## Part III: Documenting API endpoints
 
 <a href="/learnapidoc/slides/documenting_api_endpoints.html" class="noCrossRef"><img src="images/documenting-endpoints-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
-
-## Part I: OpenAPI and Swagger
+## Part IV: OpenAPI and Swagger
 
 <a href="/learnapidoc/slides/openapi_and_swagger.html" class="noCrossRef"><img src="images/openapiswaggertitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
-## Part III: Non-reference Content in API Documentation
+## Part VI: Non-reference Content in API Documentation
 
-<a href="/learnapidoc/slides/nonref-content-api-docs.html" class="noCrossRef"><img src="images/nonreftitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/nonref_content_api_docs.html" class="noCrossRef"><img src="images/nonreftitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include random_ad.html %}
 
-## Part IV: Publishing API Documentation
+## Part VII: Publishing API Documentation
 
 <a href="/learnapidoc/slides/publishing_api_docs.html" class="noCrossRef"><img src="images/publishingapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 

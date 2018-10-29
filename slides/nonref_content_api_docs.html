@@ -1,0 +1,457 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Non-reference content in API docs</title>
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/beige.css">
+        <link rel="stylesheet" href="css/custom.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+    </head>
+    <body>
+        <div class="reveal innovation">
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+        <section>
+            <h1>Non-reference content in API docs</h1>
+            <p>
+                <small>By Tom Johnson / <a target="_blank" href="http://twitter.com/tomjohnson">@tomjohnson</a><br/>
+                <a target="_blank" href="http://idratherbewriting.com">idratherbewriting.com</a></small><br/><br/>
+            <p><small>Slides available at <br/><a target="_blank" href="http://idratherbewriting.com/learnapidoc/slides/nonref_content_api_docs.html">idratherbewriting.com/learnapidoc/slides/nonref_content_api_docs.html</a></small></p>
+            </p>
+
+            <aside class="notes">
+              <ul>
+                <li>Not sure what to call this info: Conceptual information, Tutorials, How-to guides, Programming guides, Administratrive information, Developer portal, User guide, Guides </li>
+                <li>if there are divisions of responsibilities, tech writers typically handle this type of content more</li>
+                <li>there's a whole lot of other topics related to APIs that i won't cover, so see the other presentations for that.</li>
+              </ul>
+            </aside>
+
+        </section>
+        <section>
+            <h2>What I'll talk about</h2>
+            <div class="bothSections">
+            <div class="firstSection" style="font-size: 90%; padding: 20px; padding-right: 30px; float: left; max-width: 400px">
+            <ol>
+                <li>Overviews</li>
+                <li>Getting started</li>
+                <li>Authentication and authorization</li>
+                <li>Status and error codes</li>
+                <li>Rate limiting and thresholds</li>
+
+              </ol>
+            </div>
+            <div class="secondSection" style="font-size: 90%; padding: 20px; padding-top:10px; float: left;">
+              <ol style="font-size: 90%; padding: 20px; float: left; max-width: 400px" start=6>
+                <li>Code samples and tutorials</li>
+              <li>SDKs and sample apps</li>
+              <li>Quick reference</li>
+              <li>Best practices with the API</li>
+              <li>Glossary</li>
+          </ol>
+        </div>
+      </div>
+
+          <aside class="notes">
+            <ul>
+              <li>I am recording this, so I'll repeat the question.</li>
+              <li>Am happy to go in whatever direction people have questions about.</li>
+            </ul>
+          </aside>
+
+        </section>
+
+        <section>
+          <h2>1. API Overview</h2>
+          <section>
+          <img src="../images/nonref_overview.svg"/>
+        </section>
+        <section>
+          <h3>Address the "why"</h3>
+          <blockquote>“Startups fail when they are not solving a market problem. We were not solving a large enough problem that we could universally serve with a scalable solution. We had great technology, great data on shopping behavior, great reputation as a thought leader, great expertise, great advisors, etc, but what we didn’t have was technology or business model that solved a pain point in a scalable way.” <small>&mdash; Treehouse Logic, <a href="https://www.cbinsights.com/research/startup-failure-reasons-top/">The Top 20 Reasons Startups Fail</a></small></blockquote>
+        </section>
+          <section>
+            <h3>SendGrid example</h3>
+            <a href="https://sendgrid.com/docs/User_Guide/index.html"><img src="../images/sendgridoverview.png"/></a>
+          </section>
+
+          <section>
+            <h3>Lyft example</h3>
+            <a href="https://developer.lyft.com/docs/overview"><img src="../images/lyftapioverview.png"/></a>
+          </section>
+
+          <section>
+            <h3>Watson Assistant example</h3>
+            <a href="https://console.bluemix.net/docs/services/conversation/index.html#about"><img src="../images/ibmcloudoverview.png"/></a>
+          </section>
+        </section>
+
+        <section>
+          <h2>2. Getting started</h2>
+          <section>
+          <img src="../images/nonref_gettingstarted.svg"/></a>
+        </section>
+        <section><h3>Compare with Hello World tutorials</h3>
+        <img src="../images/timetohelloworld.svg" />
+      </section>
+        <section>
+          <h3>Run in Postman</h3>
+          <a target="_blank" href="https://www.getpostman.com/api-network/"><img src="../images/postmanapinetwork.png"/></a>
+<div style="clearfix"></div>
+  <div class="postman-run-button"
+  data-postman-action="collection/import"
+  data-postman-var-1="d1b7adeb50d95d9851e7"></div>
+  <script type="text/javascript">
+    (function (p,o,s,t,m,a,n) {
+      !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+      !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+        (n = o.createElement("script")),
+        (n.id = s+t), (n.async = 1), (n.src = m), n
+      ));
+    }(window, document, "\_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+  </script>
+
+        </section>
+
+        <section>
+          <h3>Parse example</h3>
+          <a href="https://developer.paypal.com/docs/api/overview/"><img src="../images/paypalgetstarted.png"/></a>
+        </section>
+        <section>
+          <h3>Paypal example</h3>
+          <a href="https://developer.paypal.com/docs/api/overview/"><img src="../images/paypalgetstarted.png"/></a>
+        </section>
+        <section>
+          <h3>Lyft example</h3>
+          <a href="https://developer.twitter.com/en/docs/basics/getting-started"><img src="../images/twittergettingstarted.png"/></a>
+        </section>
+        <section>
+          <h3>Google example</h3>
+          <a href="https://developers.google.com/adsense/management/getting_started"><img src="../images/adsensegettingstarted.png"/></a>
+        </section>
+      </section>
+
+
+      <section>
+        <h2>3. Authorization and authentication</h2>
+        <section>
+        <img src="../images/nonref_authentication.svg"/>
+      </section>
+
+        <section>
+          <h3>API Key</h3>
+          <img src="../images/nonref-docs-preso_apikey.svg"/></a><figcaption>
+        </section>
+
+        <section>
+          <h3>HMAC</h3>
+          <img src="../images/restapi_hmac.svg"/>
+        </section>
+
+        <section>
+          <h3>OAuth</h3>
+          <img src="../images/restapi_oauth.svg"/>
+        </section>
+
+        <section>
+          <h3>Sendgrid example</h3>
+          <a href="https://sendgrid.com/docs/User_Guide/Settings/api_keys.html"><img src="../images/sendgrid_authorization.png"/></a>
+        </section>
+
+        <section>
+          <h3>Twitter example</h3>
+          <a href="https://sendgrid.com/docs/User_Guide/Settings/api_keys.html"><img src="../images/twitter_authentication.png"/></a>
+        </section>
+
+        <section>
+          <h3>AWS example</h3>
+          <a href="https://docs.aws.amazon.com/AWSECommerceService/latest/DG/HMACSignatures.html"><img src="../images/amazon_authentication.png"/></a>
+        </section>
+
+        <section>
+          <h3>Dropbox example</h3>
+          <a href="https://www.dropbox.com/developers/reference/oauth-guide"><img src="../images/dropbox_authentication.png"/></a>
+        </section>
+      </section>
+
+      <section>
+        <h2>4. Status and error codes</h2>
+        <section>
+        <img src="../images/nonref_statuscodes.svg"/>
+      </section>
+
+      <section>
+        <h3>Response header</h3>
+        <pre><code>
+HTTP/1.1 200 OK
+Server: openresty
+Date: Mon, 02 Apr 2018 01:14:13 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 441
+Connection: keep-alive
+X-Cache-Key: /data/2.5/weather?units=imperial&zip=95050
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, POST
+</code></pre>
+      </section>
+
+      <section>
+        <h3>Context.io example</h3>
+        <a href="https://clearbit.com/docs?python#errors-error-types"><img src="../images/context_statuscodes.png"/></a>
+      </section>
+
+      <section>
+        <h3>Twitter example</h3>
+        <a href="https://developer.twitter.com/en/docs/basics/response-codes"><img src="../images/twitter_statuscodes.png"/></a>
+      </section>
+
+      <section>
+        <h3>Mailchimp example</h3>
+        <a href="http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/"><img src="../images/mailchimp_statuscodes.png"/></a>
+      </section>
+
+
+  </section>
+
+        <section>
+          <h2>5. Rate limiting and thresholds</h2>
+          <section>
+          <img src="../images/nonref_ratelimiting.svg"/></a>
+        </section>
+
+        <section>
+          <h3>GitHub example</h3>
+          <a href="../images/githubratelimiting.png"><img src="../images/githubratelimiting.png"/></a>
+        </section>
+
+        <section>
+          <h3>Linkedin example</h3>
+          <a href="https://developer.linkedin.com/docs/rest-api?u=0#"><img src="../images/dropboxratelimiting.png"/></a>
+        </section>
+
+        <section>
+          <h3>Bitly example</h3>
+          <a href="http://dev.bitly.com/rate_limiting.html"><img src="../images/bitlyratelimiting.png"/></a>
+        </section>
+        </section>
+
+        <section>
+          <h2>6. Code samples and tutorials</h2>
+          <section>
+          <img src="../images/nonref_codetutorials.svg"/>
+        </section>
+<section>
+  <h3>Cover common scenarios</h3>
+      <blockquote>While a developer’s guide should walk a developer through the basic usage of an API and its functionality, it can’t cover every possible use of that API in a coherent way. That is where articles and tutorials come in, to teach developers tangential or specialized uses of an API, like combining it with another service, framework, or API. <small>&mdash;<a href="https://www.programmableweb.com/news/six-pillars-complete-developer-documentation/2011/09/12">The Six Pillars of Complete Developer Documentation</a></small></blockquote>
+</section>
+
+<section>
+  <h3>What Twilio found</h3>
+  <a href="https://eventil.com/presentations/pOszD6"><img src="../images/twiliouserresearch.png"/></a>
+</section>
+
+<section>
+  <h3>Core principles for code samples</h3>
+  <ul>
+    <li>Don’t just provide reference docs</li>
+    <li>Focus on the why, not the what</li>
+    <li>Keep code samples simple</li>
+    <li>Make code samples copy-and-paste friendly</li>
+    <li>Provide a sample in your target language</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Weather Underground example</h3>
+  <a href="http://www.wunderground.com/weather/api/d/docs?d=resources/code-samples&MR=1"><img src="../images/codesamples_weatherunderground.png"/></a>
+</section>
+
+<section>
+  <h3> Eventful example</h3>
+  <a href="http://api.eventful.com/tools/tutorials/search"><img src="../images/eventfulcodesample.png"/></a>
+</section>
+
+<section>
+  <h3> Twilio example</h3>
+  <a href="https://www.twilio.com/docs/quickstart"><img src="../images/twiliocodesamples.png"/></a>
+</section>
+        </section>
+
+        <section>
+          <h2>7. SDKs and sample apps</h2>
+          <section>
+          <img src="../images/nonref_sdksampleapp.svg"/></a>
+        </section>
+
+        <section>
+          <h3>Typical patterns with SDK docs</h3>
+          <ul>
+            <li>Roles technical writers play with SDKs</li>
+            <li>Assumed levels of knowledge</li>
+            <li>Auto-generating from OpenAPI</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>OpenWeatherMap API example</h3>
+          <a href="https://openweathermap.org/examples"><img src="../images/codesamples_openweathermap.png"/></a>
+        </section>
+
+        <section>
+          <h3>Paypal REST SDK</h3>
+          <a href="https://developer.paypal.com/docs/api/quickstart/"><img src="../images/sdk_paypal.png"/></a>
+        </section>
+
+        <section>
+          <h3>Heroku SDK</h3>
+          <a href="https://devcenter.heroku.com/articles/pubnub"><img src="../images/sdk_heroku.png"/></a>
+        </section>
+
+        <section>
+          <h3>Amazon SDK</h3>
+          <a href="https://aws.amazon.com/tools/#sdk"><img src="../images/sdk_amazon_aws.png"/></a>
+        </section>
+      </section>
+
+
+      <section>
+        <h2>8. Quick reference</h2>
+        <section>
+        <img src="../images/nonref_quickreference.svg"/></a>
+      </section>
+
+        <section>
+          <h3>Quick reference for APIs</h3>
+        <a href="../images/sample_api_diagram.pdf"><img src="../images/nonref_quickreference.svg"/></a>
+      </section>
+
+        <section>
+          <h3>Typical quick reference</h3>
+        <a href="../images/sample_qrg.png"><img src="../images/sample_qrg.png"/></a>
+      </section>
+
+        <section>
+          <h3>Eventful quick reference</h3>
+        <a href="http://api.eventful.com/docs"><img src="../images/eventfulquickreference.png"/></a>
+      </section>
+
+        <section>
+          <h3>Parse quick reference</h3>
+        <a href="http://docs.parseplatform.org/rest/guide/#quick-reference"><img src="../images/parsequickreferenceguide.png"/></a>
+      </section>
+
+        <section>
+          <h3>Shopify quick reference</h3>
+        <a href="http://cheat.markdunkley.com/"><img src="../images/shopifyquickreferenceguide.png"/></a>
+      </section>
+
+</section>
+
+          <section>
+          <h2>9. Best practices</h2>
+        <section>
+          <img src="../images/nonref_bestpractices.svg"/>
+        </section>
+
+          <section>
+            <h3>Sample best practice topics</h3>
+          <p>pagination, time ranges, fault tolerance, cache values, connectivity, timeouts, downtime, SSL, versions, testing and validation, exports, languages, number handling, expanding resources, notifications, etc.</p>
+        </section>
+
+        <section>
+          <h3>Mailchimp example</h3>
+          <a href="http://developer.mailchimp.com/documentation/mailchimp/guides/mailchimp-api-best-practices/"><img src="../images/bestpractices_mailchimp.png"/></a>
+        </section>
+
+        <section>
+          <h3>Coinbase example</h3>
+          <a href="https://developers.coinbase.com/api/v2#pagination"><img src="../images/bestpractices_coinbase.png"/></a>
+        </section>
+
+        </section>
+
+
+        <section>
+          <h2>10. Glossary</h2>
+          <section>
+          <img src="../images/nonref_glossary.svg"/>
+        </section>
+
+        <section>
+          <h3>Lyft example</h3>
+          <a href="https://developer.lyft.com/docs/glossary"><img src="../images/glossary_lyft.png" /></a>
+        </section>
+
+        <section>
+          <h3>Yext example</h3>
+          <a href="http://developer.yext.com/docs/glossary/"><img src="../images/glossary_yext.png" /></a>
+        </section>
+
+        <section>
+          <h3>Apigee example</h3>
+          <a href="https://docs.apigee.com/api-platform/reference/glossary"><img src="../images/glossary_apigee.png" /></a>
+        </section>
+      </section>
+
+        <section>
+            <h2>Questions?</h2>
+            <img src="../images/questions-01.svg"/>
+            <aside class="notes">
+              <ul>
+                <li></li>
+              </ul>
+            </aside>
+        </section>
+        <!-- <section>
+            <h1>The end</h1>
+            <div>
+            <div style="float:left; padding: 10px;">
+                <img src="../images/tomjohnson.jpg"/>
+            </div>
+            <div style="float:left; padding: 10px; text-align: left;">
+                <p><span class="myname">Tom Johnson</span><br/>
+                    &mdash; <a target="_blank" href="http://idratherbewriting.com">idratherbewriting.com</a><br/>
+                    &mdash;  <a target="_blank" href="http://twitter.com/tomjohnson">@tomjohnson</a><br />
+                    &mdash; <a target="_blank" href="mailto:tom@idratherbewriting.com">tom@idratherbewriting.com</a>
+                </p>
+            </div>
+        </section> -->
+        <!-- <section>
+          <h2>Credits</h2>
+          <p>Some graphics by: <a target="_blank" href="https://www.vecteezy.com">Vecteezy.com</a> and the <a target="_blank" href="https://thenounproject.com/">Noun Project</a>.</p>
+        </section> -->
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                 history: true,
+                 center: false,
+                 progress: true,
+                 slideNumber: true,
+            	dependencies: [
+            		{ src: 'plugin/markdown/marked.js' },
+            		{ src: 'plugin/markdown/markdown.js' },
+            		{ src: 'plugin/notes/notes.js', async: true },
+            		{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+            	]
+            });
+        </script>
+    </body>
+</html>
