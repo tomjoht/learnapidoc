@@ -400,6 +400,8 @@ I'll leave the statistics and number-crunching to academics (who have more time 
 
 Since I'm currently in California, I'll comment a bit on API jobs in this location. California (specifically Silicon Valley, which roughly spans from San Francisco to San Jose) continues to be a hub (if not *the* hub) for API technical writer jobs. However, California has a number of drawbacks, mainly with housing and traffic.
 
+{% include course_image.html border="true" filename="californiasanfrancisco" ext_print="jpg" ext_web="jpg" alt="Should you move to California (or stay here if you're already in California)?" size="large" caption="Should you move to California (or stay here if you're already in California)?" %}
+
 To live in Silicon Valley, you need the dual income of two working professionals to survive financially. Alternatively, you probably need to be single and willing to share a house with roommates. Traffic along the 101 can also crawl at a snail's pace during rush hour.
 
 That said, given the increased exodus of tech professionals in the Silicon Valley area (some estimate that [46% are leaving](https://www.sfgate.com/realestate/article/Google-facebook-can-t-afford-Silicon-Valley-13132157.php) because housing is so unaffordable), the need and opportunity for tech writers will be even greater in Silicon Valley. In fact, the STC Salary Database indicates that "San Jose-Sunnyvale-Santa Clara" had the second largest reported loss of tech writers during 2016 (second to Houston-The Woodlands-Sugar Lands, TX). This might just be anecdotal, but I get emails from recruiters pinging me several times a week, trying to fill positions. At my own company, I've seen how difficult it is to find qualified candidates for developer doc positions. At times, it seems like the candidates just aren't there.
@@ -435,3 +437,5 @@ In this case, I didn't run comparisons for more cities, nor did I add "API" into
 ## Conclusion
 
 Much more could be written about where to live for API tech jobs. Overall, if you want to find a job in API documentation, target these popular areas &mdash; California, New York, Texas, D.C. Washington State, Massachusetts, Virginia, Georgia, and Illinois. On the other hand, if you want to start a farm or ranch, move to Wyoming.
+
+{% include content/activities/look_for_apidoc_jobs.md %}

@@ -34,6 +34,10 @@ The slides correspond to API workshops that I gave. The slide groups mirror the 
 
 <a href="/learnapidoc/slides/publishing_api_docs.html" class="noCrossRef"><img src="images/publishingapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
+## Part VIII: Getting a job in API Documentation
+
+<a href="/learnapidoc/slides/getting_job_api_docs.html" class="noCrossRef"><img src="images/gettingajobdsdoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+
 {% include random_ad.html %}
 
 {% include random_ad2.html %}

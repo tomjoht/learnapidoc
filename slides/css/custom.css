@@ -68,3 +68,7 @@ background-color: #3f3f3f;
 .red {
   color: red
 };
+
+.reveal blockquote {
+  width: 85%;
+}

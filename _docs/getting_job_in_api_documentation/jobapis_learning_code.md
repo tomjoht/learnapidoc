@@ -67,6 +67,10 @@ Neiman and [Andrew Davis](http://www.synergistech.com/) (a recruiter for API tec
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lmNHBg20ql0?t=1314" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 {% endif %}
 
+{% if site.format == "pdf" or site.format == "kindle" %}
+{% include course_image.html url="https://www.youtube.com/embed/lmNHBg20ql0?t=1314" size="600px" border="" filename="neimanpreso" ext_print="png" ext_web="png" alt="James Neiman on the required technical baseline for API docs" caption="James Neiman on the required technical baseline for API docs" %}
+{% endif %}
+
 Here's a transcript of two questions in their exchange (cleaned up a bit for readability):
 
 > **Andrew**: What is essential to your relationship with each new client?
@@ -162,6 +166,8 @@ In a post called [Strategies for learning technology -- podcast recommendation a
 Personally, I think spending 20 minutes a day isn't enough to keep up with the knowledge needs. 60 minutes is more appropriate, but really, if you want to make progress, you'll need to devote about twice this time. Finding 1-2 hours of time at work to learn it is unlikely. I always feel like I'm not getting enough done as is during work hours &mdash; learning technology often feels like a side activity taking me away from my real duties. The information I need to document in the present moment is usually too advanced to simply learn from watching tutorials on Safaribooks or other sources. But I can't just start out consuming advanced material. I have to ramp up through the foundational topics first, and that slow ramp-up feels like a tangent to the real work that needs to get done. And yet, I have a busy home life as well (4 daughters, all at home!), so I have to find time between work and home to get some learning done. (Did I also mention that I blog a lot?)
 
 One strategy I've found to work well is to divide the learning into "pomodoros" (a technique named after tomato kitchen timers). With the [Pomodoro Technique](https://francescocirillo.com/pages/pomodoro-technique), you set a timer for 20 minutes and focus on your learning task for that chunk of time. You can set a goal to complete as many pomodoros a day as you want. After about 1-2 months of these regular pomodoros, you'll be surprised at your progress.
+
+<{% include course_image.html url="" size="large" filename="techpomodoro" ext_print="png" ext_web="png" alt="The Focus app lets you define and track pomdoros" caption="The Focus app lets you define and track pomdoros" %}
 
 Even so, this technique doesn't solve the problem. It's still hard to squeeze time in for the pomodoros. Whenever I squeeze these into my life, I end up squeezing other activities out.
 
