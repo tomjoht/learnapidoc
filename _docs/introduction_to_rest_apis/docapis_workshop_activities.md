@@ -10,15 +10,13 @@ redirect_from:
  - /learnapidoc/workshop-activities.html
 ---
 
-When I give API workshops, it helps to consolidate activities into a single page with brief instructions. The content for the activities below is the same content that appears in other parts of the course &mdash; it's just pulled in here for convenience.
+For API workshops, it helps to consolidate activities into a single page with brief instructions. The content for the activities below is the same content that appears in other parts of the course &mdash; it's just pulled in here for convenience.
 
 Because completing the activities is an essential part of learning, I've tried to incorporate as many hands-on learning activities as possible, making them both practical and useful. If you have feedback about how to improve the activities, or places where you keep getting stuck, [let me know](contact.html).
 
-Some people have asked me whether a certificate is available for completing all of the activities in the course. Currently, no certificate is available. However, I'm currently investigating the best approach for doing this.
-
 ## Part I: Intro to API documentation
 
-{% include workshop_button.html title="Activity 1: Identify your goals" activity="identify_goals" button_type="default" %}
+{% include workshop_button.html title="Activity 1: Identify your goals" activity="identify_goals" button_type="info" %}
 
 ## Part II: Using an API like a developer
 
@@ -52,7 +50,7 @@ Some people have asked me whether a certificate is available for completing all 
 
 {% include workshop_button.html title="Activity 1: Assess the non-reference content in 3 API doc sites" activity="assess_nonref_content" button_type="danger" %}
 
-## Part VI: Publishing API documentation
+## Part VII: Publishing API documentation
 
 {% include workshop_button.html title="Activity 1: Look for common patterns in API doc sites" activity="api_doc_patterns" button_type="warning" %}
 
@@ -63,6 +61,10 @@ Some people have asked me whether a certificate is available for completing all 
 {% include workshop_button.html title="Activity 4: Clone your GitHub repo locally" activity="clone_repo_locally" button_type="warning" %}
 
 {% include workshop_button.html title="Activity 4: Push local changes to the remote" activity="push_local_to_remote" button_type="warning" %}
+
+## VIII: Getting a job in API documentation
+
+{% include workshop_button.html title="Activity 1: Look at API documentation jobs and requirements" activity="look_for_apidoc_jobs" button_type="info" %}
 
 {% include random_ad.html %}
 
