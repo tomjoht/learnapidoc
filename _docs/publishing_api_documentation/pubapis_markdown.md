@@ -133,15 +133,7 @@ For example, if you're using Jekyll, you have access to a lot of advanced script
 * [Producing PDFs](https://idratherbewriting.com/2015/04/14/producing-pdfs-in-dita-versus-jekyll/)
 * [Creating links](https://idratherbewriting.com/2015/04/06/creating-links-in-dita-versus-jekyll/)
 
-## <i class="fa fa-user-circle"></i> Get practice with Markdown
-
-To get a sense of how Markdown works, go to an online Markdown editor (such as [this one])  and create the following:
-
-* Numbered list
-* Bulleted list
-* Word with bold formatting
-* Code sample with HTML highlighting
-* Level 2 heading
+{% include content/activities/markdown_practice.md %}
 
 Markdown handles most of the syntax I normally use, but for tables, I recommend simply using HTML syntax. HTML syntax gives you more control over column widths, which can be important when customizing tables, especially if the tables have code tags.
 

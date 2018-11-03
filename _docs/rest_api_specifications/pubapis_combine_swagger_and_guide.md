@@ -149,7 +149,7 @@ If you're using a tool such as Jekyll, which incorporates a scripting language c
 </table>{% endraw %}
 ```
 
-Special thanks to Peter Henderson for sharing this technique and the code. With this approach, you may have to figure out the right Liquid syntax to iterate through your OpenAPI spec, and it may take a while. But this might work if you're looking for tight integration into your authoring tool. (Note that many [static site generators](pubapis_docs_as_code_tool_options.html#staticsitegenerators) can parse YAML, not just Jekyll.)
+Special thanks to Peter Henderson for sharing this technique and the code. With this approach, you may have to figure out the right Liquid syntax to iterate through your OpenAPI spec, and it may take a while. But this might work if you're looking for tight integration into your authoring tool. (Note that many [static site generators](pubapis_static_site_generators.html) can parse YAML, not just Jekyll.)
 
 ## Option 4: Store content in YAML files that's sourced to both outputs
 
@@ -198,7 +198,7 @@ Again, although I've tried this approach, I grew frustrated at not being able to
 
 ## Option 5: Use a tool that imports Swagger and allows additional docs
 
-Another approach is to use a tool like [Readme.io](http://readme.io/) that allows you to both import your OpenAPI spec and also add your own separate documentation pages. Readme provides one of the most attractive outputs and is fully inclusive of almost every documentation feature you could want or need. I explore Readme with more depth in [Publishing tool options for developer docs](pubapis_docs_as_code_tool_options.html#readmeio). Readme.io requires third-party hosting, but there are some other doc tools that allow you to incorporate Swagger as well.
+Another approach is to use a tool like [Readme.io](http://readme.io/) that allows you to both import your OpenAPI spec and also add your own separate documentation pages. Readme provides one of the most attractive outputs and is fully inclusive of almost every documentation feature you could want or need. I explore Readme with more depth in [Headless CMS options](pubapis_headless_cms.html#readmeio). Readme.io requires third-party hosting, but there are some other doc tools that allow you to incorporate Swagger as well.
 
 Sites like [Apiary](https://apiary.io/) and [Mulesoft](https://www.mulesoft.com/) let you import your OpenAPI spec while also add your own custom doc pages. These sites offer full-service management for APIs, so if your engineers are already using one of these platforms, it could make sense to store your docs there too.
 

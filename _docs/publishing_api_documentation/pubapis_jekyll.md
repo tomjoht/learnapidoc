@@ -15,7 +15,7 @@ Static site generators are a breed of website compilers that package up a group 
 
 ## About Jekyll
 
-Jekyll is a Ruby-based [static site generator](pubapis_docs_as_code_tool_options.html#staticsitegenerators), meaning it uses Ruby as the underlying programming language to compile the website. This site and my [blog](https://idratherbewriting.com) use Jekyll, and I used Jekyll for the documentation at my past two jobs. For example, all the docs [here](https://developer.amazon.com/appstore/documentation) use Jekyll. With Jekyll, you can publish a fully functional tech comm website that includes content re-use, conditional filtering, variables, PDF output, and everything else you might need as a technical writer.
+Jekyll is a Ruby-based [static site generator](pubapis_static_site_generators.html#jekyll), meaning it uses Ruby as the underlying programming language to compile the website. This site and my [blog](https://idratherbewriting.com) use Jekyll, and I used Jekyll for the documentation at my past two jobs. For example, all the docs [here](https://developer.amazon.com/appstore/documentation) use Jekyll. With Jekyll, you can publish a fully functional tech comm website that includes content re-use, conditional filtering, variables, PDF output, and everything else you might need as a technical writer.
 
 {% include random_ad2.html %}
 
@@ -77,7 +77,7 @@ Admittedly, the Markdown format is easy to use but also susceptible to error, es
 
 You can integrate Jekyll into platforms such as GitHub Pages or CloudCannon to create continuous delivery publishing. Continuous delivery means that when you commit a change to your Git repo, the server automatically rebuilds your Jekyll site.
 
-[GitHub Pages](pubapis_docs_as_code_tool_options.html#github_pages) is free and is what I use for my blog and this API docs site. But CloudCannon provides more features that might be needed by the enterprise. So let's follow an example in publishing in [CloudCannon](https://cloudcannon.com/), which calls itself as the "The Cloud CMS for Jekyll."
+[GitHub Pages](pubapis_hosting_and_deployment.html#github_pages) is free and is what I use for my blog and this API docs site. But CloudCannon provides more features that might be needed by the enterprise. So let's follow an example in publishing in [CloudCannon](https://cloudcannon.com/), which calls itself as the "The Cloud CMS for Jekyll."
 
 In this activity, we'll publish to CloudCanon using the [Documentation Theme for Jekyll](https://idratherbewriting.com/documentation-theme-jekyll) (the theme I built). You don't need to have a Windows machine to facilitate the building and publishing &mdash; you'll do that via CloudCannon and Github. (Of course, being able to build locally is important if you're developing with Jekyll, but I want to avoid [Jekyll installation](https://jekyllrb.com/docs/installation/) issues here and simply demonstrate the continuous deployment features that a host like CloudCannon provides.) This tutorial will show you how to plug into a robust hosting platform that reads content stored and managed on GitHub.
 

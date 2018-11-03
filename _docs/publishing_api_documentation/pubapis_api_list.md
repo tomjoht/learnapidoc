@@ -136,8 +136,6 @@ For a directory of API documentation sites on the open web, see the [Programmabl
 
 Note that Programmableweb lists only open web APIs, meaning APIs that you can access on the web (which also means it's usually a REST API). They don't list the countless internal, firewalled APIs that many companies provide at a cost to paying customers. There are many more thousands of private APIs out there that most of us will never know about.
 
-## <i class="fa fa-user-circle"></i> Look for commmon patterns in API doc sites
-
-Look at about 5 different APIs (choose any of those listed on the page). Look for one thing that the APIs have in common. I provide a list of patterns in the next topic: [Design patterns with API doc sites](pubapis_design_patterns.html).
+{% include content/activities/api_doc_patterns.md %}
 
 {% include random_ad2.html %}

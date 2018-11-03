@@ -1,5 +1,5 @@
 ---
-title: Version control systems
+title: Version control systems (such as Git)
 permalink: /pubapis_version_control.html
 course: "Documenting REST APIs"
 weight: 8.5
@@ -58,4 +58,4 @@ Git's default repository is the "master" branch. When collaborating with others 
 
 If you're editing doc annotations in code files, you'll probably follow this same workflow &mdash; making edits in a special doc branch. When you're done, you'll create a pull request to have developers merge the doc branch back into the master.
 
-With that brief introduction to docs-as-code and version control, let's jump into a host of [authoring and publishing options for developer documentation](pubapis_docs_as_code_tool_options.html).
+With that brief introduction to docs-as-code and version control, let's jump into a host of authoring tools for developer documentation, starting with [static site generators](pubapis_static_site_generators.html).

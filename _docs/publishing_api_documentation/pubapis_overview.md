@@ -33,11 +33,11 @@ The problem is that the very people who can fix this content are usually fully e
 
 > Perhaps unsurprisingly, the biggest problems with API documentation were also the ones requiring the most technical expertise to solve. Completing, clarifying, and correcting documentation require deep, authoritative knowledge of the API’s implementation. This makes accomplishing these tasks difficult for non-developers or recent contributors to a project.  
 >
-> So, how can we improve API documentation if the only people who can accomplish this task are too busy to do it or are working on tasks that have been given a higher priority? One potential way forward is to develop recommendation systems that can reduce as much of the administrative overhead of documentation writing as possible, letting experts focus exclusively on the value-producing part of the task. As Barthélémy Dagenais and Martin Robillard discovered, a main challenge for evolving API documentation is identifying where a document needs to be updated.
+> So, how can we improve API documentation if the only people who can accomplish this task are too busy to do it or are working on tasks that have been given a higher priority? One potential way forward is to develop recommendation systems that can reduce as much of the administrative overhead of documentation writing as possible, letting experts focus exclusively on the value-producing part of the task. As Barthélemy Dagenais and Martin Robillard discovered, a main challenge for evolving API documentation is identifying where a document needs to be updated.
 
 For example, suppose you identify a high point of developer friction related to poor documentation. Fixing it isn't a matter of converting the content into plain language or adding some details about missing parameters. The required fixes might involve explaining how the parameters interact in the code, how one value gets used by another and how they get mapped into variables that the code iterates through, etc. Maybe the only person who truly understands the crazy syntax users have to write is the lead developer.
 
-But guess what? What lead developer isn't going to have time to figure out docs. He or she is usually heads-down deep in a complex programming scenario. So the very person who has the knowledge to decompile and explain the needed concepts in the documentation usually isn't available to do so. But if the content is beyond the comprehension of generalists, at some point these SMEs will need to devote some time to docs. In these scenarios, Robillard and Uddin say the best help would be to reduce the overhead of the documentation process.
+But guess what? What lead developer isn't going to have time to figure out docs. He or she is usually heads-down deep in a complex programming scenario. So the very person who has the knowledge to decompile and excogitate the needed concepts in the documentation usually isn't available to do so. But if the content is beyond the comprehension of generalists, at some point these SMEs will need to devote some time to docs. In these scenarios, Robillard and Uddin say the best help would be to reduce the overhead of the documentation process.
 
 As an editor/publisher, you can help the SME author by accurately identifying the point of confusion, the area of the doc that needs updating, and provide easy tools for the SME to make the updates. The engineers can't be bothered to figure out static site generators or publishing workflows, PDFs, or other doc publishing tools. By playing a role as an editor/publisher, you can be a valuable contributor to the product team. This is why being a doc tools expert is particularly relevant in API documentation contexts.
 
@@ -67,7 +67,7 @@ If you're hoping for developers to contribute to the documentation, it's going t
 
 Even if you could get them using a HAT, you'd likely need to buy a license for each contributing developer. In contrast, docs-as-code tools are often open source and can therefore scale across the company without budgetary funding and approval
 
-Also, if most developers use Macs but you use a PC (to accommodate your HAT), you might struggle to install developer tools or to follow internal tutorials to get set up and test out content. 
+Also, if most developers use Macs but you use a PC (to accommodate your HAT), you might struggle to install developer tools or to follow internal tutorials to get set up and test out content.
 
 {% include random_ad.html %}
 
@@ -107,7 +107,7 @@ Based on all of these factors, I decided to put DITA authoring on pause and try 
 
 I realize that not everyone has the luxury of switching authoring tools, but when I made the switch, my company was a startup, and we had only 3 authors and a minimal amount of legacy content. I wasn't burdened by a ton of documentation debt or heavy processes, so I could innovate.
 
-Jekyll is just one documentation publishing option in the API doc space. I enjoy working with it's [code-based approach](pubapis_docs_as_code.html), but there are [many different options and routes](pubapis_docs_as_code_tool_options.html) to explore.
+Jekyll is just one documentation publishing option in the API doc space. I enjoy working with it's [code-based approach](pubapis_docs_as_code.html), but there are [many different tools](pubapis_static_site_generators.html) and [publishing options](pubapis_hosting_and_deployment.html) to explore.
 
 Now that I've hopefully established that traditional HATs aren't the go-to tools with API docs, let's explore various ways to publish API documentation. Most of these routes will take you away from traditional tech comm tools more toward more developer-centric tools.
 

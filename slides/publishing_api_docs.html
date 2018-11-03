@@ -8,6 +8,8 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/beige.css">
+    <link rel="stylesheet" href="css/custom.css">
+
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -21,78 +23,7 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 
-    <style>
-       p.alignLeft {
-       text-align: left;
-       }
-       span.orange, a.orange {
-       color: orange;
-       outline-color: gray;
-       }
-       div.innovation ul li {
-       margin-bottom:12px;
-       font-size: .9em;
-       }
-       figcaption {
-       font-size:12px;
-       }
-       .reveal p.miscItems, p, li {
-       font-size:.8em;
-       }
-       .slides section h3 {
-       color: #f19132 !important; outline: darkorange;
-       margin:0px;
-       /*padding-top: 80px;*/
-       font-size: 1.8em;
-       text-transform: none;
-       }
-       .slides img {
-       max-width: 80%;
-       max-height: 80%;
-       border:3px solid red;
-       }
-       #upcoming-slide .label {
-       color: #444 !important
-       }
-       ul.credits li {
-       font-size: .6em;
-       }
-       .reveal section h3 {
-       margin:0px;
-       }
-       .reveal section img {
-       margin-bottom:0px;
-       }
-       .reveal li {
-         margin: 20px 0px;
-         font-size: 1em;
-       }
-       span.strategy {
-       border: 1px solid #dedede;
-       padding: 4px 6px;
-       border-radius: 8px;
-       }
-       span.myname {
-       font-weight: bold;
-       font-size: 52px;
-       color: #555;
-       font-family: palatino
-       }
-       .reveal pre code, pre {
-       padding:20px;
-       background-color: #3f3f3f;
-       }
-       .reveal img {
-        background-color: white !important;
-      }
 
-      .reveal div.imageFit {
-        max-width: 85%;
-        margin-left: auto;
-        margin-right: auto;
-
-      }
-    </style>
 	</head>
 	<body>
     <div class="reveal innovation">
@@ -104,23 +35,16 @@
              <p>
                 <small>By Tom Johnson / <a target="_blank" href="http://twitter.com/tomjohnson">@tomjohnson</a><br/>
                 <a target="_blank" href="http://idratherbewriting.com">idratherbewriting.com</a></small><br/><br/>
-                <p><small>Slides available at <br/><a target="_blank" href="http://idratherbewriting.com/learnapidoc/slides/publishing-api-docs/">idratherbewriting.com/learnapidoc/slides/publishing-api-docs</a></small></p>
+                <p><small>Slides available at <br/><a target="_blank" href="http://idratherbewriting.com/learnapidoc/slides/publishing_api_docs/">idratherbewriting.com/learnapidoc/slides/publishing_api_docs</a></small></p>
              </p>
           </section>
-           <section>
-            <h2>Video recording</h2>
-            <p><small>The following is a video recording of this presentation. </small></p>
-            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/__vSXJn-JQo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
-          </section>
 
-<section>
 <section>
   <h2>Introduction</h2>
   <img src="../images/publishing-apis_publishingtools.svg"/>
-
 </section>
           <section>
-            <h3>What I'll talk about</h3>
+            <h2>What I'll talk about</h2>
           <ul style="font-size: 90%">
             <li>What makes dev doc unique</li>
             <li>Dev doc design patterns</li>
@@ -133,54 +57,61 @@
           </section>
 
           <section>
-             <h3>Where to find more information</h3>
-             <figure><a target="_blank" href="http://idratherbewriting.com/learnapidoc/"><img class="shortened" src="../images/publishing-your-api-docs.png"/></a><figcaption><a target="_blank" href="http://idratherbewriting.com/learnapidoc/">idratherbewriting.com/learnapidoc</a></figcaption></figure>
+            <h2>"API docs" versus "developer" docs</h2>
+            <ul>
+              <li>All API docs are developer docs, but not vice versa</li>
+              <li>API docs include both ref and non-ref content</li>
+            </ul>
           </section>
 
           <section>
-            <h3>"API docs" versus "developer" docs</h3>
-            <ul>
-              <li>All API docs are developer docs, but not vice versa</li>
-              <li>API docs include both reference and non-reference content</li>
-              <li>Tool options in this space are mind-boggling</li>
-              <li>There's a tools gap for integrating API reference docs and <br/>non-reference content</li>
-            </ul>
+            <h2>Why focus on publishing API docs?</h2>
+            <a href="https://idratherbewriting.com/learnapidoc/images/whyapidocsfail.png"><img src="../images/whyapidocsfail.png"/></a>
           </section>
-        </section>
 
           <section>
             <section>
             <h2>Why not just use traditional HATs?</h2>
+
+            <a href="http://bit.ly/photobucketlongurl"><img src="../images/hatphotobucket.png"/></a>
+            <aside class="notes">
             <ul>
               <li>Developers are authors</li>
               <li>API structure/templates</li>
               <li>API requests demo'd on page</li>
               <li>API docs are the product interface</li>
             </ul>
+          </aside>
 </section>
 
           <section>
             <h3>Survey of API doc sites</h3>
+            <a href="pubapis_list.html"><img src="../images/100apidocsites.png"/></a>
+          </section>
+
+          <section>
+            <h2>Activity: Identify common patterns in API doc sites</h2>
+          </section>
+
+          <section>
+            <h2>Design patterns with API doc sites</h2>
             <ul>
-              <li>Let's begin descriptively</li>
-              <li>Pick 3 from <a target="_blank" href="http://idratherbewriting.com/learnapidoc/pubapis_apilist.html">100 API doc sites</a></li>
-                <li>Identify common characteristics</li>
+              <li>Pattern 1: Structure and templates</li>
+              <li>Pattern 2: A single seamless website</li>
+              <li>Pattern 3: Abundant code samples</li>
+              <li>Pattern 4: Lengthy pages</li>
+              <li>Pattern 5: API Interactivity</li>
             </ul>
           </section>
 
           <section>
-            <h3>Design patterns with API doc sites</h3>
-            <ul>
-              <li>Structure and templates</li>
-              <li>Website platform</li>
-              <li>Abundant code samples</li>
-              <li>Lengthy pages</li>
-              <li>API Interactivity</li>
-            </ul>
+            <h2>Developers treat docs as code</h2>
+            <img src="../images/limitstodocsascode-01.svg"/>
           </section>
 
           <section>
-            <h3>Developers treat docs as code</h3>
+            <h2>Characteristics of docs as code</h2>
+
             <ul>
               <li>Markdown or rST</li>
               <li>Static site generators</li>
@@ -192,17 +123,42 @@
 
           <section>
             <h3>Markdown is preferred syntax</h3>
-            <ul>
-              <li>Readable as code</li>
-              <li>Compatible with version control</li>
-              <li>Semantics defined in YAML frontmatter</li>
-              <li>Scripting languages handle complex scenarios</li>
-              <li>Risk: Lack of standards creates tool lock-in</li>
-            </ul>
+
+            <pre><code class="hljs" data-trim contenteditable>
+## Heading 2
+
+This is a bulleted list:
+
+* fireStructuredText item
+* second item
+* third item
+
+This is a numbered list:
+
+1. Click this **button**.
+2. Go to [this site](http://www.example.com).
+3. See this image:
+
+![My alt tag](myimagefile.png)
+            </code></pre>
           </section>
 
           <section>
-            <h3>Git for managing content</h3>
+            <h2>Why use Markdown</h2>
+            <ul>
+              <li>Readable as code</li>
+              <li>Compatible with version control</li>
+              <li>Simple enough for devs to learn in minutes</li>
+              <li>Define semantics in frontmatter</li>
+              <li>For more complexity, using scripting languages or HTML</li>
+            </ul>
+          </section>
+
+<section>
+  <h2>Activity 2: Practice with Markdown</h2>
+</section>
+          <section>
+            <h2>Version control systems (e.g., Git)</h2>
             <ul>
               <li>Ingenious way to collaborate</li>
               <li>Helps you understand engineering workflows</li>

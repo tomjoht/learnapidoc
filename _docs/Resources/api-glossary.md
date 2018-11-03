@@ -72,7 +72,7 @@ Header parameters
 : Parameters that are included in the request header, usually related to authorization.
 
 Hugo
-: A static site generator that uses the Go programming language as its base. Along with Jekyll, Hugo is among the top 5 most popular static site generators. Hugo is probably the fastest site generator available. Speed matters as you scale the number of documents in your project beyond several hundred. See [https://gohugo.io/](https://gohugo.io/). For more about static site generators, see [Publishing tool options for developer docs](pubapis_docs_as_code_tool_options.html).
+: A static site generator that uses the Go programming language as its base. Along with Jekyll, Hugo is among the top 5 most popular static site generators. Hugo is probably the fastest site generator available. Speed matters as you scale the number of documents in your project beyond several hundred. See [https://gohugo.io/](https://gohugo.io/). For more about static site generators, see [Static site generators](pubapis_static_site_generators.html).
 
 JSON
 : JavaScript Object Notation. A lightweight syntax containing objects and arrays, usually used (instead of XML) to return information from a REST API. See [Analyze the JSON response](docapis_analyze_json.html) in this course and [http://www.json.org/](http://www.json.org/)
@@ -108,7 +108,7 @@ Path parameters
 : Parameters that appear within the path of the endpoint, before the query string (`?`). These are usually set off within curly braces. See [Parameters](docapis_doc_parameters.html) for more details.
 
 Pelican
-: A static site generator based on Python. See [https://github.com/getpelican/pelican](https://github.com/getpelican/pelican). For more about static site generators, see [Publishing tool options for developer docs](pubapis_docs_as_code_tool_options.html).
+: A static site generator based on Python. See [https://github.com/getpelican/pelican](https://github.com/getpelican/pelican). For more about static site generators, see [Static site generators](pubapis_static_site_generators.html).
 
 Perforce
 : Revision control system often used before Git became popular. Often configured as centralized repository instead of a distributed repository. See [Perforce](https://en.wikipedia.org/wiki/Perforce_Helix).
@@ -162,10 +162,10 @@ Smartbear
 : The company that maintains and develops the Swagger tooling &mdash; [Swagger Editor](https://swagger.io/swagger-editor/), [Swagger UI](https://swagger.io/swagger-ui/), [Swagger Codegen](https://swagger.io/swagger-codegen/), [SwaggerHub](https://app.swaggerhub.com/home), and [others](https://swagger.io/tools/). See [Smartbear](https://smartbear.com/).
 
 Sphinx
-: A static site generator developed for managing documentation for Python. Sphinx is the most documentation-oriented static site generator available and includes many robust features -- such as search, sidebar navigation, semantic markup, managed links -- that other static site generators lack. Based on Python. See [staticgen.com/sphinx](https://www.staticgen.com/sphinx) for high-level details. For more about static site generators, see [Publishing tool options for developer docs](pubapis_docs_as_code_tool_options.html).
+: A static site generator developed for managing documentation for Python. Sphinx is the most documentation-oriented static site generator available and includes many robust features -- such as search, sidebar navigation, semantic markup, managed links -- that other static site generators lack. Based on Python. See [staticgen.com/sphinx](https://www.staticgen.com/sphinx) for high-level details. For more about static site generators, see [Static site generators](pubapis_static_site_generators.html#sphinx).
 
 Static site generator
-: A breed of website compilers that package up a group of files (usually written in Markdown) and make them into a website. There are more than 350 different static site generators. See [Jekyll](pubapis_jekyll.html) in this course for a deep-dive into the most popular static site generator, or [Staticgen](https://www.staticgen.com/) for a list of all static site generators. Also see [Publishing tool options for developer docs](pubapis_docs_as_code_tool_options.html) for a deep-dive into this topic.
+: A breed of website compilers that package up a group of files (usually written in Markdown) and make them into a website. There are more than 350 different static site generators. See [Jekyll](pubapis_jekyll.html) in this course for a deep-dive into the most popular static site generator, or [Staticgen](https://www.staticgen.com/) for a list of all static site generators. Also see [Static site generators](pubapis_static_site_generators.html) for a deep-dive into this topic.
 
 Stoplight
 : provides a platform with visual modeling tools to create an OpenAPI document for your API &mdash; without requiring you to know the OpenAPI spec details or code the spec line by line. See [http://stoplight.io/](http://stoplight.io/) for more information. Also see [Stoplight &mdash; visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html).

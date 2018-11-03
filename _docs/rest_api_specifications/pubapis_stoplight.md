@@ -48,7 +48,7 @@ Additionally, you can toggle between the visual tools and the specification code
 
 ## Not just simpler tools, but a design-first philosophy
 
-After playing around with Stoplight, I had the opportunity to chat with [Marc Macleod](https://www.linkedin.com/in/marcmacleod/), founder of Stoplight, about how Stoplight differs from [SwaggerHub](pubapis_swaggerhub_smartbear.html) and [Readme](pubapis_docs_as_code_tool_options.html#readmeio). Marc said when the spec was first introduced, he saw value in having a standard specification for APIs, but at the time, all the tooling required users to write the specification line by line. This hand coding was error prone, slow, and tedious.
+After playing around with Stoplight, I had the opportunity to chat with [Marc Macleod](https://www.linkedin.com/in/marcmacleod/), founder of Stoplight, about how Stoplight differs from [SwaggerHub](pubapis_swaggerhub_smartbear.html) and [Readme](pubapis_headless_cms.html#readmeio). Marc said when the spec was first introduced, he saw value in having a standard specification for APIs, but at the time, all the tooling required users to write the specification line by line. This hand coding was error prone, slow, and tedious.
 
 Marc and his team designed Stoplight with visual modeling tools that don't require teams to know the details of the OpenAPI spec. This simplification of tooling opens up the spec's development to a wider number of team players &mdash; to product managers, developers, UX designers, technical writers, and more. The barrier to entry in the design and prototyping of the API grows beyond the scope of just engineers.
 

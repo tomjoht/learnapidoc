@@ -52,9 +52,11 @@ Some people have asked me whether a certificate is available for completing all 
 
 {% include workshop_button.html title="Activity 1: Assess the non-reference content in 3 API doc sites" activity="assess_nonref_content" button_type="danger" %}
 
-
-
 ## Part VI: Publishing API documentation
+
+{% include workshop_button.html title="Activity 1: Look for common patterns in API doc sites" activity="api_doc_patterns" button_type="success" %}
+
+{% include workshop_button.html title="Activity 2:  Get practice with Markdown" activity="markdown_practice" button_type="success" %}
 
 {% include random_ad.html %}
 

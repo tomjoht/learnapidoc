@@ -244,11 +244,17 @@ folders:
   - title: More about Markdown
     jurl: /pubapis_markdown.html
 
-  - title: Version control systems
+  - title: Version control systems (such as Git)
     jurl: /pubapis_version_control.html
 
-  - title: Publishing tool options for developer docs
-    jurl: /pubapis_docs_as_code_tool_options.html
+  - title: Static site generators
+    jurl: /pubapis_static_site_generators.html
+
+  - title: Hosting and deployment options
+    jurl: /pubapis_hosting_and_deployment.html
+
+  - title: Headless CMS options
+    jurl: /pubapis_headless_cms.html
 
   - title: "Which tool to choose for API docs &mdash; my recommendations"
     jurl: /pubapis_which_tool_to_choose.html
