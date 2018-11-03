@@ -73,17 +73,7 @@ You don't have to read the sections in order &mdash; feel free to skip around as
 
 Because the purpose of the course is to help you learn, there are many activities that require hands-on coding and other exercises. Along with the learning activities, there are also conceptual deep dives, but the focus is always on *learning by doing*. Where there are hands-on activities, I typically include this icon in the section title: <i class="fa fa-user-circle"></i>
 
-Other topics have the word "Activity" in the title, such as the following:
-
-* [Activity: Find an Open Source Project](docapis_find_open_source_project.html)
-* [Activity: Get event information using the EventBrite API](docapis_eventbrite_example.html)
-* [Activity: Critique or create an API reference topic](docapis_api_reference_activity.html)
-* [Activity: Test the docs in your Open Source project](testingdocs_activity.html)
-* [Activity: Assess the non-reference content in your project](docapis_nonref_activity.html)
-* [Activity: Manage content in a GitHub wiki](pubapis_github_wikis.html)
-* [Activity: Use the GitHub Desktop client](pubapis_github_desktop_client.html)
-* [Activity: Create an OpenAPI specification document](pubapis_openapi_activity.html)
-* [Activity: Generate a Javadoc from a sample project](nativelibraryapis_create_javadoc.html)
+Other topics have the word "Activity" in the title. The activities are integrated in various sections, but you can also see a consolidated list of activity content in the [Workshop Activities](docapis_workshop_activities.html).
 
 I refer to the content here as a "course" instead of a book or a website, primarily because I include a lot of exercises throughout in each section, and I find that people who want to learn API documentation prefer a more hands-on "course" experience.
 
@@ -109,7 +99,7 @@ Here are a few tools you'll need to do the exercises in this course:
 * **Chrome browser**. [Chrome](https://www.google.com/chrome/browser/desktop/index.html) provides a Javascript Console that works well for inspecting JSON, so we'll be using Chrome. [Firefox](https://www.mozilla.org/en-US/firefox/) works well too if you prefer that.
 * **Postman**. [Postman](http://www.getpostman.com/) is an app that allows you to make requests and see responses through a GUI client.
 * **curl**. [curl](http://curl.haxx.se/) is essential for making requests to endpoints from the command line. Mac computers already have curl installed. Windows users should follow the instructions for installing curl [here](http://www.confusedbycode.com/curl/).
-* **Git**. [Git](https://git-scm.com/) is a version control tool developers often use to collaborate on code. See [Set Up Git](https://help.github.com/articles/set-up-git/) for more details.
+* **Git**. [Git](https://git-scm.com/) is a version control tool developers often use to collaborate on code. For Windows, see [https://gitforwindows.org/](https://gitforwindows.org/) to set up Git and the Git BASH terminal emulator. For Mac, see [Downloading Git](https://git-scm.com/download/mac) and also consider installing [iTerm2](https://iterm2.com/).
 * **GitHub account**. [GitHub](https://github.com) will be used for various activities and is commonly used as an authentication service for developer tools. If you don't already have a GitHub account, sign up for one.
 * **Stoplight App**. [Stoplight](https://next.stoplight.io/) provides visual modeling tools for working with the OpenAPI specification. Create a Stoplight account using your GitHub credentials.
 

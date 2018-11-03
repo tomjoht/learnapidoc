@@ -69,9 +69,8 @@
             <a href="https://idratherbewriting.com/learnapidoc/images/whyapidocsfail.png"><img src="../images/whyapidocsfail.png"/></a>
           </section>
 
-          <section>
             <section>
-            <h2>Why not just use traditional HATs?</h2>
+            <h2>Docs as code versus traditional HATs</h2>
 
             <a href="http://bit.ly/photobucketlongurl"><img src="../images/hatphotobucket.png"/></a>
             <aside class="notes">
@@ -85,12 +84,12 @@
 </section>
 
           <section>
-            <h3>Survey of API doc sites</h3>
+            <h2>Survey of API doc sites</h2>
             <a href="pubapis_list.html"><img src="../images/100apidocsites.png"/></a>
           </section>
 
           <section>
-            <h2>Activity: Identify common patterns in API doc sites</h2>
+            <h3>Activity: Identify common patterns in API doc sites</h3>
           </section>
 
           <section>
@@ -105,7 +104,7 @@
           </section>
 
           <section>
-            <h2>Developers treat docs as code</h2>
+            <h2>The Docs as Code model</h2>
             <img src="../images/limitstodocsascode-01.svg"/>
           </section>
 
@@ -113,7 +112,7 @@
             <h2>Characteristics of docs as code</h2>
 
             <ul>
-              <li>Markdown or rST</li>
+              <li>Lightweight markup</li>
               <li>Static site generators</li>
               <li>IDE-like text editor</li>
               <li>Git to manage content</li>
@@ -122,7 +121,7 @@
           </section>
 
           <section>
-            <h3>Markdown is preferred syntax</h3>
+            <h2>Markdown is preferred syntax</h2>
 
             <pre><code class="hljs" data-trim contenteditable>
 ## Heading 2
@@ -147,103 +146,94 @@ This is a numbered list:
             <h2>Why use Markdown</h2>
             <ul>
               <li>Readable as code</li>
-              <li>Compatible with version control</li>
-              <li>Simple enough for devs to learn in minutes</li>
+              <li>Compatible with Git</li>
+              <li>Simple enough for devs</li>
+            </ul>
+            <aside class="notes">
+              <ul>
               <li>Define semantics in frontmatter</li>
               <li>For more complexity, using scripting languages or HTML</li>
             </ul>
           </section>
 
 <section>
-  <h2>Activity 2: Practice with Markdown</h2>
+  <h3>Activity 2: Practice with Markdown</h3>
 </section>
           <section>
-            <h2>Version control systems (e.g., Git)</h2>
+            <h2>Version control systems (Git)</h2>
+
+            <a href="https://github.com"><img src="../images/githubhomepage.png"/></a>
+            <aside class="notes">
             <ul>
               <li>Ingenious way to collaborate</li>
               <li>Helps you understand engineering workflows</li>
               <li>More of a learning curve than your SSG</li>
               <li>The Git model scales</li>
             </ul>
+          </aside>
           </section>
 
           <section>
-            <h3>Build from server</h3>
-            <ul>
-              <li>"Continuous delivery" is the killer feature</li>
-              <li>No manual uploading/deploying files</li>
-              <li>Focus on content</li>
-            </ul>
-
-            </section>
+            <h3>Activity: Set up a GitHub wiki</h3>
+          </section>
 
           <section>
-            <h3>API reference content</h3>
-            <ul>
-              <li>Use templates for common API sections</li>
-              <li>Describe with OpenAPI specification</li>
-              <li>Render with Swagger UI or other</li>
-              <li>Integrate with non-reference docs</li>
-            </ul>
+            <h3>Activity: Clone your GitHub repo locally</h3>
           </section>
-        </section>
 
-        <section>
+          <section>
+            <h3>Activity: Push local changes to the remote</h3>
+          </section>
+
           <section>
             <h2>Authoring and publishing tools</h2>
             <img src="../images/publishing-apis_toolsoptions.svg"/>
           </section>
 
             <section>
-              <h3>4 categories of tools</h3>
+              <h2>4 categories of tools</h2>
                 <ol>
-                  <li><a target="_blank" href="https://www.staticgen.com/">Static site generators</a></li>
+                  <li>Static site generators</li>
                   <li>Hosting and deployment options</li>
-                  <li><a target="_blank" href="https://headlesscms.org/">Headless content management systems</a></li>
+                  <li>Headless CMS options</li>
                   <li>Tools to render OpenAPI spec</li>
                 </ol>
               </section>
 
             <section>
-              <h3>1. Static site generators</h3>
-              <ul>
-                <li><a target="_blank" href="http://jekyllrb.com">Jekyll</a></li>
-                <li><a target="_blank" href="https://gohugo.io/">Hugo</a></li>
-                <li><a target="_blank" href="http://www.sphinx-doc.org/en/stable/">Sphinx</a></li>
-                <li>+350 more</li>
-                </ul>
+              <h2>1. Static site generators</h2>
+              <a href="https://staticgen.com"><img src="../images/staticgendisplay.png"/></a>
                 <p style="font-size: .7em; background-color: #f0f0f0; padding: 15px;">Speed &bull; Format &bull; Community</p>
               </ul>
             </section>
 
             <section>
-              <h3>2. Hosting and deployment options</h3>
+              <h2>2. Hosting and deployment options</h2>
               <ul>
                 <li><a target="_blank" href="https://pages.github.com/">GitHub Pages</a></li>
                 <li><a target="_blank" href="https://cloudcannon.com/">CloudCannon</a></li>
-                <li><a target="_blank" href="https://readthedocs.com/">Read the Docs</a></li>
                 <li><a target="_blank" href="https://www.netlify.com/">Netlify</a></li>
                 <li><a target="_blank" href="https://www.aerobatic.com/">Aerobatic</a></li>
               </ul>
 
-              <p style="font-size: .7em; background-color: #f0f0f0; padding: 15px;">Continuous delivery &bull; Integration</p>
+              <p style="font-size: .7em; background-color: #f0f0f0; padding: 15px;">Continuous delivery &bull; GitHub Integration</p>
             </ul>
             </section>
 
             <section>
-              <h3>3. Headless CMSs</h3>
+              <h2>3. Headless CMS options?</h2>
               <ul>
                 <li><a target="_blank" href="https://forestry.io/">Forestry.io</a></li>
                 <li><a target="_blank" href="https://www.netlifycms.org/">Netlify CMS</a></li>
                 <li><a target="_blank" href="http://readme.io/">Readme.io</a></li>
                 <li>+ dozens more</li>
               </ul>
-              <p style="font-size: .7em; background-color: #f0f0f0; padding: 15px;">Continuous delivery &bull; Integration &bull; Authentication</p>
+              <p style="font-size: .7em; background-color: #f0f0f0; padding: 15px;">Do you need it?</p>
 
             </section>
 
             <section>
-              <h3>4. Tools to render OpenAPI spec</h3>
+              <h2>4. Tools to render OpenAPI spec</h2>
               <ul>
                 <li><a target="_blank" href="https://swagger.io/swagger-ui/">Swagger UI</a> (<a target="_blank" href="http://idratherbewriting.com/learnapidoc/pubapis_swagger_demo.html">Demo</a>)</li>
                 <li><a target="_blank" href="https://swaggerhub.com">SwaggerHub</a> (<a target="_blank" href="https://app.swaggerhub.com/apis/IdRatherBeWriting/MashapeWeatherAPI/2.3">Demo</a>)</li>
@@ -261,15 +251,14 @@ This is a numbered list:
 
 
             <section>
-              <h3>Integration challenges</h3>
+              <h2>Integration challenges</h2>
 
-                <p>Need to combine API reference docs with <br/>non-reference content</p>
                 <img src="../images/publishing-apis_integrationproblem.svg"/>
 
             </section>
 
          <section>
-            <h3>Which tool to choose for API docs?</h3>
+            <h2>Which tool to choose for API docs?</h2>
             <ol>
               <li>Define your requirements</li>
               <li>Choose your priorities</li>
@@ -278,15 +267,11 @@ This is a numbered list:
             </ol>
           </section>
 
-
-
-        </section>
-
-        <section>
-          <section>
-          <h2>Lessons learned</h2>
-          <img src="../images/publishing-apis_lessonslearned.svg"/>
+<section>
+  <h2>Lessons learned</h2>
+  <img src="../images/publishing-apis_lessonslearned.svg"/>
 </section>
+
 
 <section>
   <h3>My current setup at work</h3>
@@ -300,10 +285,7 @@ This is a numbered list:
       <li>Embed Swagger UI directly onto page or link to it</li>
             </ul>
     <p><a target="_blank" href="https://developer.amazon.com/appstore/documentation">View sample</a></p>
-
 </section>
-
-
           <section>
             <h3>My experience switching to docs-as-code</h3>
             <ul>
@@ -321,9 +303,11 @@ This is a numbered list:
               <li>3rd-party hosting ideal but company permission can be an issue</li>
               <li>Engineers understand infrastructure but not SSGs</li>
               <li>Collaborative effort with engineers, not a DIY project</li>
-              <li>1-2 repos max, feeding into same publishing pipeline</li>
+              <li>2-3 repos max, feeding into same publishing pipeline</li>
             </ul>
           </section>
+
+
 
           <section>
             <h3>Confusing landscape, but here's what I know</h3>

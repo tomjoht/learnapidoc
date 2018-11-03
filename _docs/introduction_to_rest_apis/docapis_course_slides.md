@@ -30,10 +30,10 @@ The slides correspond to API workshops that I gave. The slide groups mirror the 
 
 <a href="/learnapidoc/slides/nonref_content_api_docs.html" class="noCrossRef"><img src="images/nonreftitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
-{% include random_ad.html %}
-
 ## Part VII: Publishing API Documentation
 
 <a href="/learnapidoc/slides/publishing_api_docs.html" class="noCrossRef"><img src="images/publishingapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+
+{% include random_ad.html %}
 
 {% include random_ad2.html %}

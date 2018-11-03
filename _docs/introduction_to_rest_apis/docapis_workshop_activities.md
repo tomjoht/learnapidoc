@@ -54,9 +54,15 @@ Some people have asked me whether a certificate is available for completing all 
 
 ## Part VI: Publishing API documentation
 
-{% include workshop_button.html title="Activity 1: Look for common patterns in API doc sites" activity="api_doc_patterns" button_type="success" %}
+{% include workshop_button.html title="Activity 1: Look for common patterns in API doc sites" activity="api_doc_patterns" button_type="warning" %}
 
-{% include workshop_button.html title="Activity 2:  Get practice with Markdown" activity="markdown_practice" button_type="success" %}
+{% include workshop_button.html title="Activity 2: Get practice with Markdown" activity="markdown_practice" button_type="warning" %}
+
+{% include workshop_button.html title="Activity 3: Set up a GitHub wiki" activity="create_github_wiki" button_type="warning" %}
+
+{% include workshop_button.html title="Activity 4: Clone your GitHub repo locally" activity="clone_repo_locally" button_type="warning" %}
+
+{% include workshop_button.html title="Activity 4: Push local changes to the remote" activity="push_local_to_remote" button_type="warning" %}
 
 {% include random_ad.html %}
 
