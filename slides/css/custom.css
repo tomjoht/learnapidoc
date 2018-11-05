@@ -15,7 +15,7 @@ font-size:12px;
 font-size:.9em;
 }
 .slides section h3 {
-color: orange !important; outline: gray;
+color: dimgrey !important; outline: gray;
 margin:0px;
 /*padding-top: 80px;*/
 font-size: 1.1em;
@@ -69,22 +69,16 @@ background-color: #3f3f3f;
   color: red
 };
 
-.reveal blockquote {
-  width: 85%;
+.reveal section blockquote {
+  width: 85% !important;
 }
 
-.scrollable-slide {
-    height: 600px;
-    overflow-y: auto !important;
-    text-align: left;
+.reveal img.activity_work {
+  max-width: 350px;
+  background-color: transparent;
+  border: 0px;
 }
 
-.scrollable-slide h2, .scrollable-slide h3 {
-  font-size: 48px;
-  text-align: center;
-  color: darkorange;
-}
-
-.scrollable-slide p, .scrollable-slide li {
-  font-size: 26px;
+.reveal img.shortened {
+  max-height: 500px;
 }

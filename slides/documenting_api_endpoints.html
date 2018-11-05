@@ -1,6 +1,6 @@
 ---
 layout: slides
-slide_title: Documenting API endpoints
+slide_title: "Documenting API endpoints"
 ---
 
 	<body>
@@ -16,11 +16,6 @@ slide_title: Documenting API endpoints
              </p>
           </section>
 
-<section>
-  <h2>Part III: Documenting API endpoints</h2>
-  <p><a href="http://idratherbewriting.com/learnapidoc/docendpoints.html">Documenting endpoints</a></p>
-
-</section>
           <section>
              <h2>Common sections in API endpoint docs</h2>
                 <ol>
@@ -35,7 +30,7 @@ slide_title: Documenting API endpoints
           <section>
              <h2>1. Resource description</h2>
              <section>
-               <h3>What is it</h3>
+
                <p>"Resources" refers to the information returned by an API.</p>
              </section>
              <section>
@@ -71,22 +66,25 @@ slide_title: Documenting API endpoints
           <section>
              <h2>2. Endpoints and methods</h2>
              <section>
-               <h3>Description</h3>
+
                <p>The endpoints indicate how you access the resource, and the method used with the endpoint indicates the allowed interactions (such as GET, POST, or DELETE) with the resource.</p>
              </section>
 
 
              <section>
-               <h3>Example</h3>
+               <h3>Instagram example</h3>
    <a href="https://www.instagram.com/developer/endpoints/relationships/"><img src="../images/instagramurlexample.png"/></a>
              </section>
 
              <section>
                <h3>Put path parameters in curly braces</h3>
+               <a href="https://developers.facebook.com/docs/graph-api/reference/v2.11/achievement/"><img src="../images/facebookapicolor.png"/></a>
+               <!--
                <pre style="color: whitesmoke; padding: 15px;">
 /campaigns/<span style="color: orange;">{campaign_id}</span>/actions/send
                   </pre>
                   <p>Example: <a href="https://developers.facebook.com/docs/graph-api/reference/v2.11/achievement/">Facebook</a></p>
+-->
                 </section>
 
                 <section>
@@ -95,7 +93,7 @@ slide_title: Documenting API endpoints
                 </section>
 
                 <section>
-                  <h3>How to refer to endpoints in tutorials</h3>
+                  <h3>References</h3>
                   <p>How would you refer to these two endpoints?</p>
 <code>
   <pre style="color: whitesmoke; padding: 15px;">
@@ -112,15 +110,6 @@ slide_title: Documenting API endpoints
              <p>Parameters are options you can pass with the endpoint (such as specifying the response format or the amount returned) to influence the response.
              </p>
 
-             </section>
-             <section>
-                <h3>Box Example</h3>
-                <a href="https://developer.box.com/reference#edit-a-collaboration"><img src="../images/boxparameterexample.png" /></a>
-             </section>
-
-             <section>
-                <h3>Yelp Example</h3>
-                <a href="https://www.yelp.com/developers/documentation/v2/search_api"><img src="../images/yelp_3_17.png" /></a>
              </section>
 
              <section>
@@ -188,12 +177,20 @@ slide_title: Documenting API endpoints
     }
     </code></pre></section>
 
+    <section>
+       <h3>Box Example</h3>
+       <a href="https://developer.box.com/reference#edit-a-collaboration"><img src="../images/boxparameterexample.png" /></a>
+    </section>
 
+    <section>
+       <h3>Yelp Example</h3>
+       <a href="https://www.yelp.com/developers/documentation/v2/search_api"><img src="../images/yelp_3_17.png" /></a>
+    </section>
 
           </section>
           <section>
              <h2>4. Request example</h2>
-             <section><h3>Description</h3>
+             <section>
                <p>The request example includes a sample request using the endpoint, showing some parameters configured.</p>
              </section>
              <section><h3>Callfire example</h3>
@@ -237,15 +234,15 @@ slide_title: Documenting API endpoints
           <section>
              <h2>5. Response example and schema</h2>
 
-             <section><h3>Description</h3>
+             <section>
              <p>The response example shows a sample response from the request example; the response schema defines all possible elements in the response.</p>
              </section>
              <section><h3>Sendgrid - example</h3>
-               <a href="https://sendgrid.com/docs/API_Reference/api_v3.html"><img src="../images/sendgridresponseexample1.png"/></a>
+               <a href="https://sendgrid.com/docs/API_Reference/api_v3.html"><img class="shortened" src="../images/sendgridresponseexample1.png"/></a>
              </section>
 
              <section><h3>Sendgrid - schema</h3>
-               <a href="https://sendgrid.com/docs/API_Reference/api_v3.html"><img src="../images/sendgridresponseexample2.png"/></a>
+               <a href="https://sendgrid.com/docs/API_Reference/api_v3.html"><img class="shortened" src="../images/sendgridresponseexample2.png"/></a>
              </section>
 
              <section><h3>Sunrise/sunset - example</h3>
@@ -257,11 +254,11 @@ slide_title: Documenting API endpoints
              </section>
 
              <section><h3>Strategies for nested objects</h3>
-               <a href="https://www.dropbox.com/developers/core/docs#disable-token"><img src="../images/returnvaluedefinitions.png"/></a>
+               <a href="https://www.dropbox.com/developers/core/docs#disable-token"><img class="shortened" src="../images/returnvaluedefinitions.png"/></a>
              </section>
 
              <section><h3>Side-by-side displays</h3>
-               <a href="http://developer.myob.com/api/accountright/v2/generalledger/account/#GET"><img src="../images/myobjsondoc.png"/></a>
+               <a href="http://developer.myob.com/api/accountright/v2/generalledger/account/#GET"><img class="shortened" src="../images/myobjsondoc.png"/></a>
              </section>
 
              <section><h3>Tripane help design</h3>
@@ -275,6 +272,17 @@ slide_title: Documenting API endpoints
              <a href="http://idratherbewriting.com/learnapidoc/docapis_finished_doc_result.html"><img src="../images/puttingitalltogether.png" /></a>
           </section>
         </section>
+
+        <section>
+          <h3><i class="fa fa-user-circle"></i> Activity 3a: Evaluate API reference docs for core elements</h3>
+          <img class="activity_work" src="../images/activity_work.svg"/>
+          </section>
+
+        <section>
+          <h3><i class="fa fa-user-circle"></i> Activity 3b: Find an open-source project with API doc needs</h3>
+          <img class="activity_work" src="../images/activity_work.svg"/>
+
+          </section>
 
 
     <section>
