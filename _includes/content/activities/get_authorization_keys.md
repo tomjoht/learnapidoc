@@ -1,4 +1,4 @@
-### <i class="fa fa-user-circle"></i> Get an OpenWeatherMap API key {#openweathermap_apikey}
+## <i class="fa fa-user-circle"></i> Activity 2a: Get an OpenWeatherMap API key {#openweathermap_apikey}
 
 To make calls to the API, you'll need authorization keys.
 

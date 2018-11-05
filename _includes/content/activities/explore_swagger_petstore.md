@@ -1,4 +1,4 @@
-## <i class="fa fa-user-circle"></i> Explore Swagger UI through the Petstore Demo
+## <i class="fa fa-user-circle"></i> Activity 4a: Explore Swagger UI through the Petstore Demo
 
 Let's get some hands-on experience with Swagger UI.
 

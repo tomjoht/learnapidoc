@@ -1,4 +1,4 @@
-## <i class="fa fa-user-circle"></i> Assess the non-reference content in 3 API doc sites
+## <i class="fa fa-user-circle"></i> Activity 6a: Assess the non-reference content in 3 API doc sites
 
 In an [earlier activity](docapis_find_open_source_project.html), you located an open source project to work on. In this activity, you'll evaluate docs to see which non-reference topics might be missing.
 

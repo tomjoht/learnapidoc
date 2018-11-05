@@ -1,4 +1,4 @@
-## <i class="fa fa-user-circle"></i> Look for common patterns in API doc sites
+## <i class="fa fa-user-circle"></i> Activity 7a: Look for common patterns in API doc sites
 
 In this activity, you'll identify common patterns in API documentation sites.
 

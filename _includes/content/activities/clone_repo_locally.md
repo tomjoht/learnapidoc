@@ -1,4 +1,4 @@
-## <i class="fa fa-user-circle"></i> Clone your GitHub repo locally
+## <i class="fa fa-user-circle"></i> Activity 7d: Clone your GitHub repo locally
 
 So far you've been working with GitHub in the browser. Now we'll take the same content and work with it locally. This is what makes the GitHub wiki unique from other wikis &mdash; it's a Git repo.
 

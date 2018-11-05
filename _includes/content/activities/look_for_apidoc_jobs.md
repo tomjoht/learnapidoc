@@ -1,4 +1,4 @@
-## Activity: Look at API documentation jobs and requirements
+## <i class="fa fa-user-circle"></i> Activity 8a: Look at API documentation jobs and requirements
 
 In this activity, you'll get a sense of the skills needed for the jobs in your location, and then draw up a plan.
 

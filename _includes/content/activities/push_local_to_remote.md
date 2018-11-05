@@ -1,4 +1,4 @@
-## <i class="fa fa-user-circle"></i> Push local changes to the remote
+## <i class="fa fa-user-circle"></i> Activity 7e: Push local changes to the remote
 
 1.  In a text editor, open the Markdown file you downloaded in the GitHub repository.
 2.  Make a small change to the content and save it.

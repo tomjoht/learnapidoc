@@ -72,3 +72,19 @@ background-color: #3f3f3f;
 .reveal blockquote {
   width: 85%;
 }
+
+.scrollable-slide {
+    height: 600px;
+    overflow-y: auto !important;
+    text-align: left;
+}
+
+.scrollable-slide h2, .scrollable-slide h3 {
+  font-size: 48px;
+  text-align: center;
+  color: darkorange;
+}
+
+.scrollable-slide p, .scrollable-slide li {
+  font-size: 26px;
+}

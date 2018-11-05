@@ -1,4 +1,4 @@
-## <i class="fa fa-user-circle"></i> Create a GitHub wiki and publish content on a sample page
+## <i class="fa fa-user-circle"></i> Activity 7c: Create a GitHub wiki and publish content on a sample page
 
 In this section, you will create a new GitHub repo and publish a sample file there.
 

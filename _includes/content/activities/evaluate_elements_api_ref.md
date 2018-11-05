@@ -1,4 +1,4 @@
-## <i class="fa fa-user-circle"></i> Evaluate API reference docs for core elements
+## <i class="fa fa-user-circle"></i> Activity 3a: Evaluate API reference docs for core elements
 
 In this activity, you'll review API reference documentation and identify the common elements that we covered in this section.
 

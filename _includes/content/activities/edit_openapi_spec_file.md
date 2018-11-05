@@ -1,4 +1,4 @@
-##  <i class="fa fa-user-circle"></i> Edit an existing OpenAPI specification document
+## <i class="fa fa-user-circle"></i> Activity 4b: Edit an existing OpenAPI specification document
 
 Use this simple [Sunrise and sunset times API](https://sunrise-sunset.org/api) to get more familiar with the process of creating an OpenAPI specification file. This Sunrise and sunset times API doesn't require authentication with requests, so it removes some of the more complicated authentication workflows (you can skip creating the [security object](pubapis_openapi_step6_security_object.html)).
 

@@ -1,4 +1,4 @@
-##  <i class="fa fa-user-circle"></i> Identify your goals with API documentation
+## <i class="fa fa-user-circle"></i> Activity 1a: Identify your goals with API documentation
 
 Ramping up on API documentation, developing a portfolio of API documentation writing samples, and completing all the activities in this course will require a lot of time and effort. Identify your goals here and make sure they align with this course.
 

@@ -1,4 +1,4 @@
-## <i class="fa fa-user-circle"></i> Make the OpenWeatherAPI request using curl
+## <i class="fa fa-user-circle"></i>  Activity 2d: Make the OpenWeatherAPI request using curl
 
 1.  Assuming you completed the exercises in the [Postman tutorial](docapis_postman.html), go back into Postman.
 2.  On any call you've configured, right below the Save button in Postman, click the **Code** link, then select **cURL** from the drop-down select, and click **Copy to Clipboard**.

@@ -1,4 +1,4 @@
-## <i class="fa fa-user-circle"></i> Get practice with Markdown
+## <i class="fa fa-user-circle"></i> Activity 7b: Get practice with Markdown
 
 To get a sense of how Markdown works, lets practice a bit with Markdown.
 

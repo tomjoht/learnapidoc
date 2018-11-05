@@ -1,4 +1,4 @@
-##  <i class="fa fa-user-circle"></i>  Find an open-source project with API doc needs
+## <i class="fa fa-user-circle"></i> Activity 3b: Find an open-source project with API doc needs
 
 To find an open-source project with API doc needs:
 

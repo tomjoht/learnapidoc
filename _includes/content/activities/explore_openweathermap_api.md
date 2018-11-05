@@ -1,4 +1,4 @@
-### <i class="fa fa-user-circle"></i> Activity: Get familiar with the OpenWeatherMap API
+## <i class="fa fa-user-circle"></i> Activity 2a: Get familiar with the OpenWeatherMap API
 
 Explore the basic sections in the [OpenWeatherMap API](https://openweathermap.org/api/):
 
