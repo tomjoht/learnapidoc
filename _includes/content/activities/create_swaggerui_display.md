@@ -62,11 +62,12 @@ In this activity, you'll create a Swagger UI display for an OpenAPI specificatio
 7.  View the index.html file locally in your browser. Note that Chrome's security restrictions (CORS objections) prevent you from viewing the Swagger UI file locally. You have several workarounds:
 
     *  View the file locally using [Firefox](https://www.mozilla.org/en-US/firefox/new/).
+    *  Use the hosted URL for [openapi_openweathermap.yml](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) or [openapi_sunrise_sunset.yml](https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/openapi_sunrise_sunset.yml). (Right-click the link and select **Copy Link Address**.)
     *  Upload the **dist** folder to a web server and view it there.
     *  Put the YAML file onto a public [GitHub Gist](https://gist.github.com/) and then click **Raw**. Use the URL for this Gist.
     *  Use a local server such as [simple local HTTP server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server).
 
-8.  Upload the folder to a web server and go to the index.html file. For example, if you called your directory **dist** (leaving it unchanged), you would go to **http://myserver.com/dist**. (You can change the "dist" folder name to whatever you want.)
+When you're ready to publish your Swagger UI file, you simply upload the folder to a web server and go to the index.html file. For example, if you called your directory **dist** (leaving it unchanged), you would go to **http://myserver.com/dist**. (You can change the "dist" folder name to whatever you want.)
 
 {: .tip}
 For more instructions in working with Swagger UI, see the [Swagger.io docs](https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/).

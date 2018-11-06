@@ -1,6 +1,6 @@
 ## <i class="fa fa-user-circle"></i> Activity 4b: Edit an existing OpenAPI specification document
 
-Use this simple [Sunrise and sunset times API](https://sunrise-sunset.org/api) to get more familiar with the process of creating an OpenAPI specification file. This Sunrise and sunset times API doesn't require authentication with requests, so it removes some of the more complicated authentication workflows (you can skip creating the [security object](pubapis_openapi_step6_security_object.html)).
+Use this simple [Sunrise and sunset times API](https://sunrise-sunset.org/api) to get more familiar with the process of creating an OpenAPI specification file. This Sunrise and sunset times API doesn't require authentication with requests, so it removes some of the more complicated authentication workflows (you can skip creating the [security object](pubapis_openapi_step6_security_object.html)). In this activity, you'll simply edit some of the existing values in an OpenAPI specification document that's already written.
 
 To edit the OpenAPI specification file:
 
@@ -12,12 +12,10 @@ To edit the OpenAPI specification file:
     * [Step 3: servers object](pubapis_openapi_step3_servers_object.html)
     * [Step 4: paths object](pubapis_openapi_step4_paths_object.html)
     * [Step 5: components object](pubapis_openapi_step5_components_object.html)
-    * [Step 6: security object](pubapis_openapi_step6_security_object.html)
-    * [Step 7: tags object](pubapis_openapi_step7_tags_object.html)
     * [Step 8: externalDocs object](pubapis_openapi_step8_externaldocs_object.html)
 
-4.  In the `info` object, make some changes to the `description` property and see how the visual editor gets updated.
+4.  In the `info` object (near the top), make some changes to the `description` property and see how the visual display in the right column gets updated.
 5.  In the `parameters` object, make some changes to one of the `description` properties and see how the visual editor gets updated.
 6.  Look for the `$ref` pointer in the `response` object. Identify what it points to in `components`.
-7.  Change some spacing in a way that makes the spec invalid, and look at the error that appears. Then fix this.
+7.  Change some spacing in a way that makes the spec invalid (such as inserting a space before `info`), and look at the error that appears. Then revert the invalid space.
 8.  Expand the **Get** section and click **Try it out**. Then click **Execute** and look at the response.

@@ -31,9 +31,9 @@ Finding an open-source project to which you can contribute and work with can be 
 6.  After selecting a project, make notes on the following:
 
     *  Does the project involve a REST API?
-    *  How does the project tag documentation related issues? For example, does it use the "documentation" label?
-    *  Identify the current state of the project's documentation. Are the docs robust, skimpy, nonexistent, etc.?
-    *  How active is the project? What is the frequency of commits with the project?
+    *  How does the project tag documentation-related issues? For example, does it use the "documentation" label?
+    *  Identify the current state of the project's documentation. Are the docs robust, skimpy, nonexistent, extensive?
+    *  How active is the project? (What is the frequency of commits?)
     *  How many contributors does the project have?
 
     {: .note}

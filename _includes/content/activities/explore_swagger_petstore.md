@@ -1,6 +1,6 @@
 ## <i class="fa fa-user-circle"></i> Activity 4a: Explore Swagger UI through the Petstore Demo
 
-Let's get some hands-on experience with Swagger UI.
+Let's get some hands-on experience with Swagger UI using the Petstore demo.
 
 1.  Go to the [Swagger Pet Store Demo](https://petstore.swagger.io/).
 
@@ -17,7 +17,7 @@ Let's get some hands-on experience with Swagger UI.
 
     After you click Try it out, the example value in the Request Body field becomes editable.
 
-4.  In the example value, change the first `id` value to an integer, such as `193844`. Change the second `name` value to something you'd recognize (your pet's name &mdash; `Bentley`).
+4.  In the example value, change the first `id` value to a unique (and unlikely repeated) whole number. Change the second `name` value to something you'd recognize (your pet's name &mdash; `Bentley`).
 5.  Click **Execute**.
 
     <a href="http://petstore.swagger.io/" class="noExtIcon"><img src="images/swaggerui_execute.png" alt="Executing a sample Petstore request" /></a>
