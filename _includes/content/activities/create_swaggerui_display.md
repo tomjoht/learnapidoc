@@ -1,6 +1,6 @@
 ## <i class="fa fa-user-circle"></i> Activity 4c: Create a Swagger UI display with an OpenAPI spec document {#create_swaggerui}
 
-In this activity, you'll create a Swagger UI display for an OpenAPI specification document. If you're using one of the pre-built OpenAPI files, you can see a demo of what we'll build here: [OpenWeatherMap Swagger UI](https://idratherbewriting.com/learnapidoc/assets/files/swagger/) and [Sunrise/sunset Swagger UI](https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html).
+In this activity, you'll create a Swagger UI display for an OpenAPI specification document. If you're using one of the pre-built OpenAPI files, you can see a demo of what we'll build here: [OpenWeatherMap Swagger UI](https://idratherbewriting.com/learnapidoc/assets/files/swagger/) or [Sunrise/sunset Swagger UI](https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html).
 
 {% include course_image.html url="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" filename="swagger_full_result" size="medium" ext_print="png" ext_web="png" alt="Demo of Swagger UI" caption="Demo of Swagger UI rendering an OpenWeatherMap OpenAPI specification document" %}
 
@@ -13,7 +13,7 @@ In this activity, you'll create a Swagger UI display for an OpenAPI specificatio
 2.  Make sure your OpenAPI specification is valid. Paste your OpenAPI specification code into the [Swagger online editor](http://editor.swagger.io/#/) and make sure no warnings appear. The view on the right of the Swagger Editor shows a fully functional Swagger UI display.
 
 3.  Go to the [Swagger UI GitHub project](https://github.com/swagger-api/swagger-ui).
-4.  Click **Clone or download**, and then click **Download ZIP** button. Download the files to a convenient location on your computer and extract the files.
+4.  Click **Clone or download**, and then click **Download ZIP**. Download the files to a convenient location on your computer and extract the files.
 
 	  The only folder you'll be working with in the downloaded zip is the **dist** folder (short for distribution). Everything else is used only if you're recompiling the Swagger files, which is beyond the scope of this tutorial.
 
@@ -59,7 +59,13 @@ In this activity, you'll create a Swagger UI display for an OpenAPI specificatio
 
     Save the file.
 
-7.  View the index.html file locally in your browser. In Chrome, go to **File > Open** and browse to the **index.html** file in your dist folder.
+7.  View the index.html file locally in your browser. Note that Chrome's security restrictions (CORS objections) prevent you from viewing the Swagger UI file locally. You have several workarounds:
+
+    *  View the file locally using [Firefox](https://www.mozilla.org/en-US/firefox/new/).
+    *  Upload the **dist** folder to a web server and view it there.
+    *  Put the YAML file onto a public [GitHub Gist](https://gist.github.com/) and then click **Raw**. Use the URL for this Gist.
+    *  Use a local server such as [simple local HTTP server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server).
+
 8.  Upload the folder to a web server and go to the index.html file. For example, if you called your directory **dist** (leaving it unchanged), you would go to **http://myserver.com/dist**. (You can change the "dist" folder name to whatever you want.)
 
 {: .tip}

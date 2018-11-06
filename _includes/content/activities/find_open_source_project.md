@@ -1,16 +1,19 @@
 ## <i class="fa fa-user-circle"></i> Activity 3b: Find an open-source project with API doc needs
 
-To find an open-source project with API doc needs:
+Finding an open-source project to which you can contribute and work with can be invaluable for building a portfolio of developer documentation samples. To find an open-source project with API doc needs:
 
 1.  Go to the [GitHub Advanced Search](https://github.com/search/advanced).
-2.  In the "With the labels" section, type `help wanted`. This is a common tag teams use to attract volunteers to their project (but some teams that need help might not use it).
-3.  Scroll to the top and notice that `label: "help wanted"` automatically populates in the field. In this Advanced Search box at the top, add some additional keywords (such as `documentation` and `api`) as well:
+2.  Under the **Issues Options** section, in the **With the labels** row, type `help wanted`. This is a common tag teams use to attract volunteers to their project (but some teams that need help might not use it).
+
+    Scroll to the top and notice that `label: "help wanted"` automatically populates in the field.
+
+3.  In this Advanced Search box at the top, add some additional keywords (such as `documentation` and `api`) as well:
 
     <a class="noCrossRef" href="https://github.com/search?utf8=%E2%9C%93&q=documentation+api+label%3A%22help+wanted%22&type=Issues&ref=advsearch&l=&l="><img src="images/githubopensourceprojects.png"/></a>
 
 4.  Click **Search** and browse [the results](https://github.com/search?utf8=%E2%9C%93&q=documentation+api+label%3A%22help+wanted%22&type=Issues&ref=advsearch&l=&l=).
 
-    Are there any projects that look promising? If so, great. If not, adjust some of the keywords and keep looking.
+    In the results, you might want to look for a REST API project (rather than a [native-library API](nativelibraryapis_overview.html) such as a Java API). Are there any projects that look interesting or promising? If so, great. If not, adjust some of the keywords and keep looking.
 
 5.  If searching GitHub doesn't yield any appropriate projects, try the following resources:
 

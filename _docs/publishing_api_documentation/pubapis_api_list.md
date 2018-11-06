@@ -13,7 +13,7 @@ Rather than approach the topic of publishing prescriptively, we're going to begi
 * TOC
 {:toc}
 
-## 100 API doc sites
+## 100 API doc sites {#list_api_doc_sites}
 
 Browse a few of these documentation sites to get a sense of the variety, but also try to identify common patterns. In this list, I include not only impressively designed docs but also docs that look like they were created by a department intern just learning HTML. The variety in the list demonstrates the wide variety of publishing tools and approaches, as well as terminology, in API docs. It seems that almost everyone does their API docs their own way, with their own site, branding, organization, and style.
 
@@ -69,7 +69,7 @@ Browse a few of these documentation sites to get a sense of the variety, but als
 49. [Stripe API docs](https://stripe.com/docs/api)
 50. [Parse API docs](http://docs.parseplatform.org/rest/guide/)
 51. [Opensecrets API docs](https://www.opensecrets.org/resources/create/apis.php)
-52. [CNN API docs](https://developer.cnn.com/docs/read/api)
+52. [CNN API docs](http://developer.cnn.com/docs/)
 53. [CTA Train Tracker API](http://www.transitchicago.com/developers/ttdocs/default.aspx)
 54. [Amazon API docs](http://docs.aws.amazon.com/AlexaWebInfoService/latest/)
 55. [Revit API docs](https://docs.synapsepay.com/)
