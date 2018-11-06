@@ -45,6 +45,8 @@ A lot of times abstract concepts don't make sense until you can contextualize th
 
 {% include content/activities/postman_request.md %}
 
+{% include random_ad.html %}
+
 ## Same request but in Paw instead of Postman
 
 Although Postman is a popular REST client, you can also use others, such as Paw. For the sake of variety, the following image shows the same current weather request made in [Paw (for Mac)](https://paw.cloud/):

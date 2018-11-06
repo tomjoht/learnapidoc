@@ -98,10 +98,10 @@ Here are a few tools you'll need to do the exercises in this course:
 * **Text editor**. ([Atom editor](https://atom.io/) or [Sublime Text](http://www.sublimetext.com/) are good options, and they work on both Mac and Windows.)
 * **Chrome browser**. [Chrome](https://www.google.com/chrome/browser/desktop/index.html) provides a Javascript Console that works well for inspecting JSON, so we'll be using Chrome. [Firefox](https://www.mozilla.org/en-US/firefox/) works well too if you prefer that.
 * **Postman**. [Postman](http://www.getpostman.com/) is an app that allows you to make requests and see responses through a GUI client.
-* **curl**. [curl](http://curl.haxx.se/) is essential for making requests to endpoints from the command line. Mac computers already have curl installed. Windows users should follow the instructions for installing curl [here](http://www.confusedbycode.com/curl/).
+* **curl**. [curl](http://curl.haxx.se/) is essential for making requests to endpoints from the command line. Mac computers already have curl installed. Windows users should follow the instructions for installing curl [here](http://www.confusedbycode.com/curl/). (Note: Choose one of the "free" versions to install curl.)
 * **Git**. [Git](https://git-scm.com/) is a version control tool developers often use to collaborate on code. For Windows, see [https://gitforwindows.org/](https://gitforwindows.org/) to set up Git and the Git BASH terminal emulator. For Mac, see [Downloading Git](https://git-scm.com/download/mac) and also consider installing [iTerm2](https://iterm2.com/).
 * **GitHub account**. [GitHub](https://github.com) will be used for various activities and is commonly used as an authentication service for developer tools. If you don't already have a GitHub account, sign up for one.
-* **Stoplight App**. [Stoplight](https://next.stoplight.io/) provides visual modeling tools for working with the OpenAPI specification. Create a Stoplight account using your GitHub credentials.
+* **Stoplight account**. [Stoplight](https://next.stoplight.io/) provides visual modeling tools for working with the OpenAPI specification. Create a Stoplight account using your GitHub credentials. (You don't need the app.)
 
 ## Video recordings
 

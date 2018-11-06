@@ -145,7 +145,7 @@ To add a little variety to the code samples, here's one that's a bit different. 
 ```html
 <html>
    <body>
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       <script>
 
          jQuery.ajax({

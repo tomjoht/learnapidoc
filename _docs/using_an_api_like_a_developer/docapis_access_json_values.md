@@ -63,7 +63,7 @@ I'm assuming you're starting with the [same code](https://idratherbewriting.com/
 <html>
    <head>
       <meta charset="utf-8">
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       <title>Sample Page</title>
       <script>
          var settings = {
@@ -91,7 +91,7 @@ To print a specific property from the response to the page, modify your code to 
 <html>
    <head>
       <meta charset="utf-8">
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       <title>Sample Page</title>
       <script>
          var settings = {

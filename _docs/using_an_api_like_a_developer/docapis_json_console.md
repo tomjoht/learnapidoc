@@ -20,6 +20,8 @@ However, to better understand how developers will access the data, we'll go thro
 
 {% include content/activities/ajax_api_request.md %}
 
+The following sections will explain this AJAX code a bit more.
+
 {% include random_ad2.html %}
 
 ## The AJAX method from jQuery
