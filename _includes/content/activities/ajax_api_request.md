@@ -97,3 +97,26 @@ For this activity, you'll use JavaScript to display the API response on a web pa
     <a class="noCrossRef" href="https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html"><img src="images/jsonpayloadweather.png" alt="JSON payload from weather API logged to console" /></a>
 
     This information is now available for you to integrate into your page.
+
+10. To use a value from the JSON response, add the following inside the `ajax` function:
+
+    <pre>
+    $.ajax(settings).done(function (response) {
+    console.log(response);
+
+    <span class="red">var content = response.wind.speed;
+    $("#windSpeed").append(content);
+    </span>
+    });
+    </pre>
+
+11. In the page body (inside the `body` tags), add the following div tag:
+
+    <pre>
+    &lt;body&gt;
+      &lt;h1&gt;Sample page&lt;/h2&gt;
+      <span class="red">&lt;div id=&quot;windSpeed&quot;&gt;Wind speed: &lt;/div&gt;</span>
+    &lt;/body&gt;
+    </pre>
+
+12.  Refresh the page and you will see the wind speed printed to the page. (Here's [an example](https://idratherbewriting.com/learnapidoc/assets/files/weather-windspeed.html).)
