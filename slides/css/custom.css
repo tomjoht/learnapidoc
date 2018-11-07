@@ -14,8 +14,14 @@ font-size:12px;
 .reveal p.miscItems, p, li {
 font-size:.9em;
 }
-.slides section h3 {
+.slides h3.activity {
 color: dimgrey !important; outline: gray;
+margin:0px;
+/*padding-top: 80px;*/
+font-size: 1.1em;
+}
+.slides section h3 {
+color: orange !important; outline: gray;
 margin:0px;
 /*padding-top: 80px;*/
 font-size: 1.1em;

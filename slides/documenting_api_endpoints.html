@@ -36,14 +36,14 @@ slide_title: "Documenting API endpoints"
              <section>
                 <h3>Resource terminology varies</h3>
                 <ul>
-                   <li>API calls</li>
-                   <li>Endpoints</li>
-                   <li>API methods</li>
-                   <li>Calls</li>
-                   <li>Resources</li>
-                   <li>Objects</li>
-                   <li>Services</li>
-                   <li>Requests</li>
+                   <li>"API calls"</li>
+                   <li>"Endpoints"</li>
+                   <li>"API methods"</li>
+                   <li>"Calls"</li>
+                   <li>"Resources"</li>
+                   <li>"Objects"</li>
+                   <li>"Services"</li>
+                   <li>"Requests"</li>
                 </ul>
              </section>
 
@@ -54,7 +54,7 @@ slide_title: "Documenting API endpoints"
 
              <section>
                 <h3>Box example</h3>
-                <a href="https://docs.box.com/reference#membership-object"><img src="../images/boxapi_3_17.png"/></a>
+                <a class="shortened" href="https://docs.box.com/reference#membership-object"><img src="../images/boxapi_3_17.png"/></a>
              </section>
 
               <section>
@@ -88,12 +88,12 @@ slide_title: "Documenting API endpoints"
                 </section>
 
                 <section>
-                  <h3>List endpoint beside method</h3>
+                  <h3>List the method beside the endpoint</h3>
                   <a href="https://developer.box.com/reference/#add-a-comment-to-an-item"><img src="../images/methodwithendpoint.png"/></a>
                 </section>
 
                 <section>
-                  <h3>References</h3>
+                  <h3>References to endpoints ~ tricky</h3>
                   <p>How would you refer to these two endpoints?</p>
 <code>
   <pre style="color: whitesmoke; padding: 15px;">
@@ -123,22 +123,22 @@ slide_title: "Documenting API endpoints"
               </section>
 
               <section>
-                <small>Header:</small>
+                <small>Header parameter:</small>
                 <pre style="color: whitesmoke; padding: 15px;">authorization-key: "12345"</pre>
-                <small>Path:</small>
+                <small>Path parameter:</small>
                 <pre style="color: whitesmoke; padding: 15px;">/service/myresource/user/<span class="orange">{user}</span>/bicycles/{bicycleId}</pre>
-                <small>Query string:</small>
-                <pre style="color: whitesmoke; padding: 15px;">/surfreport/<span class="orange">{beachId}</span>?days=3&units=metric&time=1400</pre>
+                <small>Query string parameter:</small>
+                <pre style="color: whitesmoke; padding: 15px;">/surfreport/{beachId}?<span class="orange">days=3</span>&<span class="orange">units=metric</span>&<span class="orange">time=1400</span></pre>
               </section>
               <section>
-                <small>Request body:</small>
-                <pre style="color: whitesmoke; padding: 15px;">
+                <small>Request body parameter:</small>
+                <pre><code>
 {
   "days": 2,
   "units": "imperial",
   "time": 1433524597
   }
-</pre>
+</code></pre>
               </section>
 
               <section>
@@ -160,9 +160,9 @@ slide_title: "Documenting API endpoints"
            /surfreport/{beachId}?time=1400&amp;units=metric&amp;days=3
            </pre>
            <h3>But not path parameter order</h3>
-           <pre style="color: whitesmoke; padding: 15px;">/service/myresource/user/<span class="orange">{user}</span>/bicycles/{bicycleId}
-
-            /service/myresource/user/<span class="orange">{user}</span>/{bicycleId}/bicycles</pre>
+           <pre style="color: whitesmoke; padding: 15px;">/service/myresource/user/<span class="orange">{userId}</span>/bicycles/<span class="orange">{bicycleId}</span></pre>
+<p><small> ... is not the same as:</small></p>
+            <pre style="color: whitesmoke; padding: 15px;">/service/myresource/user/<span class="orange">{userId}</span>/<span class="orange">{bicycleId}</span>/bicycles</pre>
            </section>
 
     <section>
@@ -179,7 +179,7 @@ slide_title: "Documenting API endpoints"
 
     <section>
        <h3>Box Example</h3>
-       <a href="https://developer.box.com/reference#edit-a-collaboration"><img src="../images/boxparameterexample.png" /></a>
+       <a href="https://developer.box.com/reference#edit-a-collaboration"><img class="shortened" src="../images/boxparameterexample.png" /></a>
     </section>
 
     <section>
@@ -204,7 +204,7 @@ slide_title: "Documenting API endpoints"
 
            <section>
              <h3>Twitter request example</h3>
-             <a href="https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-friends-list"><img src="../images/twitterrequestexample.png" /></a>
+             <a href="https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-friends-list"><img class="shortened" src="../images/twitterrequestexample.png" /></a>
            </section>
 
            <section><h3>Multiple request examples</h3>
@@ -223,7 +223,7 @@ slide_title: "Documenting API endpoints"
 
 
            <section><h3>API Explorers provide interactivity</h3>
-             <a href="http://developer.nytimes.com/article_search_v2.json#/Console/GET/articlesearch.json"><img src="../images/nytimesrequestexample.png"/></a>
+             <a href="http://developer.nytimes.com/article_search_v2.json#/Console/GET/articlesearch.json"><img class="shortened" src="../images/nytimesrequestexample.png"/></a>
            </section>
 
            <section><h3>Requests can be dangerous</h3>
@@ -269,17 +269,17 @@ slide_title: "Documenting API endpoints"
 
           <section>
              <h2>Putting it all together</h2>
-             <a href="http://idratherbewriting.com/learnapidoc/docapis_finished_doc_result.html"><img src="../images/puttingitalltogether.png" /></a>
+             <a href="https://idratherbewriting.com/learnapidoc/docapis_finished_doc_result.html"><img src="../images/puttingitalltogether.png" /></a>
           </section>
         </section>
 
         <section>
-          <h3><i class="fa fa-user-circle"></i> Activity 3a: Evaluate API reference docs for core elements</h3>
+          <h3 class="activity"><i class="fa fa-user-circle"></i> Activity 3a: Evaluate API reference docs for core elements</h3>
           <img class="activity_work" src="../images/activity_work.svg"/>
           </section>
 
         <section>
-          <h3><i class="fa fa-user-circle"></i> Activity 3b: Find an open-source project with API doc needs</h3>
+          <h3 class="activity"><i class="fa fa-user-circle"></i> Activity 3b: Find an open-source project with API doc needs</h3>
           <img class="activity_work" src="../images/activity_work.svg"/>
 
           </section>
