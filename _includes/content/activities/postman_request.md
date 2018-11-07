@@ -61,3 +61,5 @@ https://api.openweathermap.org/data/2.5/forecast?zip=95050&appid=APIKEY&units=im
 ```
 
 (In the above code, replace out `APIKEY` with your own API key.)
+
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Submit requests through Postman](docapis_postman.html).*{% endif %}

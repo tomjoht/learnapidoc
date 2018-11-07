@@ -1,6 +1,7 @@
 ---
 title: Workshop activities
 permalink: /docapis_workshop_activities.html
+workshop_activities: true
 course: "Documenting REST APIs"
 weight: 1.03
 sidebar: docapis

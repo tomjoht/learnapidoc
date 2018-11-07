@@ -83,3 +83,5 @@ One of the coolest features in Stoplight is the ability to auto-generate the sch
     <figure><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/0IOWY0Hj3Xc?ecver=2" width="560" height="340" frameborder="0" allow="autoplay; encrypted-media" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div><figcaption>Stoplight's visual modeling tools let you automatically create the correct JSON schema definition from a block of JSON that you paste in.</figcaption></figure>
 
 7.  Click the **Raw Schema** tab to see the code that Stoplight automatically wrote for you based on the sample JSON you copied in. This auto-generated schema documentation will make your life easier. Even if you prefer to hand-code your OpenAPI specification files in your own editor, you might find that you visit Stoplight just to auto-generate your response schema documentation.
+
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Stoplight &mdash; visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html).*{% endif %}

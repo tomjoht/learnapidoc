@@ -33,3 +33,5 @@ So far you've been working with GitHub in the browser. Now we'll take the same c
     You don't have to type the full directory name. Just start typing the first few letters and then press your **Tab** key to autocomplete the rest.
 
     You might also want to browse to this folder via Finder (Mac) or Explorer (Windows). If you can view invisible files on your machine (for instructions on making hidden files visible, see one of the following: [Windows](https://support.microsoft.com/en-us/help/14201/windows-show-hidden-files) or [Mac](https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/)), you will also see a git folder.
+
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Manage content in a GitHub wiki](pubapis_github_wikis.html).*{% endif %}

@@ -14,3 +14,5 @@ Explore the basic sections in the [OpenWeatherMap API](https://openweathermap.or
     * What does a sample request look like?
     * How many endpoints does the API have?
     * What authorization credentials are required to get a response?
+
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Scenario for using a weather API](docapis_scenario_for_using_weather_api.html).*{% endif %}

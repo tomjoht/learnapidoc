@@ -35,4 +35,6 @@
 
     This response is minified. You can un-minify it by going to a site such as [JSON pretty print](http://jsonprettyprint.com/), or on a Mac (with [Python installed](https://www.python.org/downloads/)) you can add <code>| python -m json.tool</code> at the end of your cURL request to minify the JSON in the response. See [this Stack Overflow thread](https://stackoverflow.com/questions/352098/how-can-i-pretty-print-json-in-a-unix-shell-script) for details.
 
-5.  Now make a similar curl request for the 5 day forecast request that you also have in Postman. 
+5.  Now make a similar curl request for the 5 day forecast request that you also have in Postman.
+
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Make a curl call](docapis_make_curl_call.html).*{% endif %}

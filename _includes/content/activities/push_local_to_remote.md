@@ -53,3 +53,5 @@
     {% include course_image.html size="medium" filename="terminalupdates" ext_print="png" ext_web="png" alt="Terminal window with git commands" caption="Terminal window with git commands" %}
 
 7.  Now verify that your changes took effect. Browse to your GitHub wiki repository and look to see the changes.
+
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Manage content in a GitHub wiki](pubapis_github_wikis.html).*{% endif %}

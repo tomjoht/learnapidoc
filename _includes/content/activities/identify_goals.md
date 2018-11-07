@@ -11,3 +11,5 @@ Answer the following questions:
 *  Do you have the technical mindset needed to excel in developer documentation fields?
 
 For live workshops, we typically share responses in a get-to-know-everyone format. But if you're taking this course online, consider jotting down some thoughts in a journal or blog entry.
+
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Documenting APIs: A guide for technical writers](index.html).*{% endif %}

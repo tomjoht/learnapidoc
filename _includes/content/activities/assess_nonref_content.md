@@ -98,3 +98,5 @@ In this activity, you'll evaluate several API docs to see which non-reference to
     Recreate this table in your favorite word processing application and populate the columns with Xs if they contain the topic.
 
 3.  Do you have any noteworthy observations from your analysis?
+
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Activity: Identify non-reference content](docapis_nonref_activity.html).*{% endif %}

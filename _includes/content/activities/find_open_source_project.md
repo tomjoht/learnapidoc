@@ -38,3 +38,5 @@ Finding an open-source project to which you can contribute and work with can be 
 
     {: .note}
     You don't have to actually reach out or interact with the team yet. You're just gathering information and analyzing documentation needs here.
+
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Find an Open Source Project](docapis_find_open_source_project.html).*{% endif %}

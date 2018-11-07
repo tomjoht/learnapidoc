@@ -22,3 +22,5 @@ In this activity, you'll identify common patterns in API documentation sites.
     * Multiple outputs by role
 
 5.  Be prepared to share your findings.
+
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Survey of API doc sites](pubapis_apilist.html).*{% endif %}

@@ -71,3 +71,5 @@ When you're ready to publish your Swagger UI file, you simply upload the folder 
 
 {: .tip}
 For more instructions in working with Swagger UI, see the [Swagger.io docs](https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/).
+
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Swagger UI tutorial](pubapis_swagger.html).*{% endif %}

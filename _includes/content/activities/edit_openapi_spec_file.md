@@ -19,3 +19,5 @@ To edit the OpenAPI specification file:
 6.  Look for the `$ref` pointer in the `response` object. Identify what it points to in `components`.
 7.  Change some spacing in a way that makes the spec invalid (such as inserting a space before `info`), and look at the error that appears. Then revert the invalid space.
 8.  Expand the **Get** section and click **Try it out**. Then click **Execute** and look at the response.
+
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Create an OpenAPI specification document](pubapis_openapi_activity.html).*{% endif %}

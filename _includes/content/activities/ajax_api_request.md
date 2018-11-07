@@ -120,3 +120,5 @@ For this activity, you'll use JavaScript to display the API response on a web pa
     </pre>
 
 12.  Refresh the page and you will see the wind speed printed to the page. (Here's [an example](https://idratherbewriting.com/learnapidoc/assets/files/weather-windspeed.html).)
+
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Inspect the JSON from the response payload](docapis_json_console.html) and [Access and print a specific JSON value](docapis_access_json_values.html).*{% endif %}

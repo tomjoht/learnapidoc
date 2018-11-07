@@ -15,3 +15,5 @@ In this section, you will create a new GitHub repo and publish a sample file the
 7.  Click **Save Page**.
 
 Notice how GitHub automatically converts the Markdown syntax into HTML and styles it in a readable way. You could work with this GitHub wiki entirely in the browser as a way for multiple people to collaborate and edit content. However, you can also take all the content offline and edit locally, and then commit your changes and push the changes back online.
+
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Manage content in a GitHub wiki](pubapis_github_wikis.html).*{% endif %}
