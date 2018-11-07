@@ -3,7 +3,7 @@
 In this activity, you'll get a sense of the skills needed for the jobs in your location, and then draw up a plan.
 
 1.  Go to [indeed.com](https://www.indeed.com/).
-2.  Set the filter to your [desired] location.
+2.  In the **Where** field, type your desired location.
 3.  Search for "API technical writer" or some combination of API + technical writer + developer documentation jobs.
 4.  Read the descriptions of 5 jobs.
 5.  Note a few of the salient requirements for these jobs.
@@ -11,5 +11,6 @@ In this activity, you'll get a sense of the skills needed for the jobs in your l
     *  Portfolio with writing samples that include developer documentation
     *  Technical knowledge related to developer domain
     *  Experience writing developer documentation
+7.  Make a plan for how you'll match up your portfolio, tech knowledge, and experience related to what these job descriptions are asking for. You will likely need to dedicate more time to the [open-source documentation project](docapis_find_open_source_project.html) that you identified earlier.
 
 {% if page.workshop_activities == true %}*For more information related to this activity, see [Locations for API doc writer jobs](jobapis_location.html).*{% endif %}

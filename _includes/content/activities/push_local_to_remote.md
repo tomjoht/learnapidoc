@@ -12,7 +12,7 @@
 	  git add .
     ```
 
-	  Git doesn't automatically track all files in the same folder where Git has been initialized. Git tracks modifications only for the files that have been "added" to Git. By typing `git add .` or `git add --all`, you're adding all the files in the directory (and subdirectories) to Git. You could also type a specific file name here instead, such as `git add Home.md`, to just add a specific file (rather than all files changed) to Git's tracking.
+	  Git doesn't automatically track all files in the same folder where Git has been initialized. Git tracks modifications only for the files that have been "added" to Git. By typing `git add .` or `git add --all`, you're telling Git to start tracking modifications to all files in this directory. You could also type a specific file name here instead, such as `git add Home.md`, to just add a specific file (rather than all files changed) to Git's tracking.
 
     After you run the `git add` command, Git adds the files into what's called the staging area. As a sports analogy, the staging area is like your on-deck circle. These files are ready to be committed when you run `git commit`.
 
@@ -22,7 +22,16 @@
 	  git status
     ```
 
-	  The staging area lists all the files that have been added to Git that you have modified in some way. It's a good practice to always type `git status` before committing files, because you might realize that by typing `git add .`, you might have accidentally added some files you didn't intend to track (such as the large binary files). You can always back out a change to a file by typing `git checkout Home.md`, where Home.md is the file you in which want to undo changes and Git staging.
+    Git responds with a message indicating which files are on-deck to be committed.
+
+    ```bash
+    Changes to be committed:
+    (use "git reset HEAD <file>..." to unstage)
+
+  	modified:   Home.md
+    ```
+
+	  The staging area lists all the files that have been added to Git that you have modified in some way. It's a good practice to always type `git status` before committing files, because you might realize that by typing `git add .`, you might have accidentally added some files you didn't intend to track (such as large binary files). If you want to remove this file from the staging area, you can type `git reset HEAD Home.md` to unstage it.
 
 5.  Commit the changes:
 
@@ -44,9 +53,9 @@
     git push
     ```
 
-    If you didn't [set up automatic GitHub authentication](pubapis_github_wikis.html#set-up-automatic-github-authentication), you may be prompted for your GitHub user name and password.
+    If you didn't [set up automatic GitHub authentication](pubapis_github_wikis.html#set-up-automatic-github-authentication), you will be prompted for your GitHub user name and password.
 
-    Note that when you type `git push` or `git pull` and don't specify the branch, GitHub uses the default branch from origin. The default branch on GitHub is called `master`. Thus the command actually passed is `git push origin master` or `git push origin master`. Some developers prefer to specify the repository and branch to ensure they are interacting with the right repositories and branches.
+    Note that when you type `git push` or `git pull` and don't specify the branch, GitHub uses the default branch from origin. The default branch on GitHub is called `master`. Thus the command actually passed is `git push origin master` (or, push these changes to the remote repository, in the `master` branch). Some developers prefer to specify the repository and branch to ensure they are interacting with the right repositories and branches.
 
     Your terminal window probably looks something like this:
 

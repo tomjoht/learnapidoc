@@ -2,7 +2,7 @@
 
 So far you've been working with GitHub in the browser. Now we'll take the same content and work with it locally. This is what makes the GitHub wiki unique from other wikis &mdash; it's a Git repo.
 
-1.  If you don't already have Git installed, set it up on your computer. See [Install Git](#pubapis_github_wikis.html#git_install).
+1.  If you don't already have Git installed, set it up on your computer. (You can check by typing `git --version` in your terminal window. See [Install Git](#pubapis_github_wikis.html#git_install) for more information on installation.)
 2.  While viewing your the GitHub wiki in your browser, look for the section that says **Clone this wiki locally**. Click the clipboard button. (This copies the clone URL to your clipboard.)
 
     {% include course_image.html size="medium" filename="clone-this-wiki-locally" ext_print="png" ext_web="png" alt="Clone this wiki locally" caption="Clone this wiki locally" %}
@@ -27,10 +27,23 @@ So far you've been working with GitHub in the browser. Now we'll take the same c
 
     More than just copying the files, though, when you clone a repo, you initialize Git in the folder where you clone the repo. Initializing Git means Git will create an invisible Git folder in that directory, and Git will start tracking your edits to the files, providing version control. With Git initialized, you can run `pull` commands to get updates from the online repository (origin) pulled down to your local copy. You can also `commit` your changes and then `push` your changes back up to origin.
 
+    When you clone a repo, Git will show something like the following:
+
+    ```bash
+    Cloning into 'weatherapi.wiki'...
+    remote: Enumerating objects: 3, done.
+    remote: Counting objects: 100% (3/3), done.
+    remote: Compressing objects: 100% (2/2), done.
+    remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 6
+    Unpacking objects: 100% (9/9), done.
+    ```
+
+    The folder Git creates in the above example is `weatherapi.wiki`.
+
 5.  Navigate to the directory where you cloned the repo (either using standard ways of browsing for files on your computer or via the terminal with `cd`) to see the files you downloaded. For example, type `cd weatherapi.wiki` and then `ls` to see the files.
 
     {: .tip}
-    You don't have to type the full directory name. Just start typing the first few letters and then press your **Tab** key to autocomplete the rest.
+    You don't need to type the full directory name. Just start typing the first few letters and then press your **Tab** key to autocomplete the rest.
 
     You might also want to browse to this folder via Finder (Mac) or Explorer (Windows). If you can view invisible files on your machine (for instructions on making hidden files visible, see one of the following: [Windows](https://support.microsoft.com/en-us/help/14201/windows-show-hidden-files) or [Mac](https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/)), you will also see a git folder.
 
