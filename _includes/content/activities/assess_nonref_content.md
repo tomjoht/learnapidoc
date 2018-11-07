@@ -1,6 +1,6 @@
 ## <i class="fa fa-user-circle"></i> Activity 6a: Assess the non-reference content in 3 API doc sites
 
-In an [earlier activity](docapis_find_open_source_project.html), you located an open source project to work on. In this activity, you'll evaluate docs to see which non-reference topics might be missing.
+In this activity, you'll evaluate several API docs to see which non-reference topics might be missing.
 
 1.  Identify 3 API doc sets to analyze. The API doc sets could be documentation projects could be any of the following:
 
@@ -96,3 +96,5 @@ In an [earlier activity](docapis_find_open_source_project.html), you located an 
     </table>    
 
     Recreate this table in your favorite word processing application and populate the columns with Xs if they contain the topic.
+
+3.  Do you have any noteworthy observations from your analysis?
