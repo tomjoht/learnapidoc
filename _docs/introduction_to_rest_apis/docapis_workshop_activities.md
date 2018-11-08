@@ -67,12 +67,9 @@ Because completing the activities is an essential part of learning, I've tried t
 
 {% include workshop_button.html title="Activity 8a: Look at API documentation jobs and requirements" activity="look_for_apidoc_jobs" button_type="info" %}
 
-{% comment %}
 ## Survey
 
 Please take this survey to provide feedback about the workshop: [https://www.questionpro.com/t/AOaGwZdHog](https://www.questionpro.com/t/AOaGwZdHog).
-
-{% endcomment %}
 
 {% include random_ad.html %}
 
