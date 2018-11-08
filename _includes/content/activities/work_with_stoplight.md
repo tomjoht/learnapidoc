@@ -4,28 +4,26 @@ In this activity, you'll work with an OpenAPI file in Stoplight, which provides 
 
 To work with an OpenAPI file in Stoplight:
 
-1.  Unless you already have an OpenAPI specification file, download the [OpenWeatherMap API spec file](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml).
+1.  Stoplight only supports OpenAPI 2.0, not 3.0. You could convert your 3.0 spec using [APIMATIC Transformer](https://apimatic.io/transformer) to 2.0, but to speed things up, download this [2.0 OpenAPI JSON file already converted](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openweathermap_swagger20.json).
 2.  Go to [next.stoplight.io/](https://next.stoplight.io/).
 3.  Click **Login** in the upper-right corner and log in using your GitHub account.
 4.  Click **New Personal Project**.
 5.  Type a **Project name** (e.g., OpenWeatherMap API), choose whether you want the visibility public or private (it doesn't matter), and click **Next**.
-6.  On the next screen (Project Designer), select the **Import Existing** tab. Then the click **Upload OpenAPI (Swagger), Markdown or HTML File** button and select the **openapi_openweathermap.yml** file that you downloaded earlier.
-7.  Click the **+openapi_openweathermap.oas2.yml** button. The OpenAPI file gets uploaded into Stoplight and the data populates the Stoplight interface.
-8.  At the top of the screen, switch between the **Code** and **Design** views by clicking the corresponding buttons at the top. Make some edits in the code and then switch to the Design view to see the edits reflected. Note that Stoplight converts the YAML to JSON. The following video shows this process:
+6.  On the next screen (Project Designer), select the **Import Existing** tab. Then the click **Upload OpenAPI (Swagger), Markdown or HTML File** button and select the **openweathermap_swagger20.json** file that you downloaded in step 1.
+7.  Click the **+openweathermap_swagger20.oas2.yml** button. The OpenAPI file gets uploaded into Stoplight and the data populates the Stoplight interface.
+8.  At the top of the screen, switch between the **Code** and **Design** views by clicking the corresponding buttons at the top. Make some edits in the code and then switch to the Design view to see the edits reflected. (Note that Stoplight prefers JSON as the code format.) The following video shows this process:
 
     <figure><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/vqDJBa-haYs" width="560" height="340" frameborder="0" allow="autoplay; encrypted-media" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div><figcaption>When you switch to the code view, the editor automatically goes to the part of the spec you were creating in the visual editor and highlights it. When you switch back, the visual UI updates with any changes you made in the code. Switching between modes is seamless and easy.</figcaption></figure>
 
-9.  Explore the different options in the Design editor (specifically, expand **Paths** and click **/weather**) and make some arbitrary textual changes to see how to update information.
+9.  Explore the different options in the Design editor (specifically, expand **Paths** and click **/weather > Call current weather data for...**) and make some arbitrary textual changes to see how to update information.
 
 ### Automatically generate schema documentation
 
 One of the coolest features in Stoplight is the ability to auto-generate the schema documentation from a sample JSON response. Try this out by following these steps:
 
 1.  In the middle column of Stoplight, click **PATHS**, and then click **/weather**, and then click **Call current weather data for ...**.
-2.  In the **Responses** section, click **Raw Schema** and, if necessary, delete the existing response schema. (Even when you delete the info here, it will leave `{}` there, which is good.)
-    Note: For some reason, when importing this OpenAPI file into Stoplight, the sample response isn't importing correctly, so it shows blank. I'm currently investigating this bug.
-
-5.  Switch to the **Editor** tab, click **Generate from JSON** and paste in the following JSON response from the OpenWeatherMap weather endpoint:
+2.  In the **Responses** section, click **Raw Schema** and delete the existing response schema. (Even when you delete the info here, it will leave `{}` there when you switch tabs, which is good.)
+3.  Switch to the **Editor** tab, click **Generate from JSON** and paste in the following JSON response from the OpenWeatherMap weather endpoint:
 
     ```json
     {
@@ -74,7 +72,7 @@ One of the coolest features in Stoplight is the ability to auto-generate the sch
 
 6.  Then click **Generate!**
 
-    The JSON schema gets automatically generated:
+    Stoplight automatically generates the JSON schema that conforms to the OpenAPI spec. You just saved yourself an afternoon of work!
 
     {% include course_image.html filename="stoplight_autogenerated_schema" ext_print="png" ext_web="png" alt="Autogenerated JSON schema" caption="Stoplight will autogenerate the JSON schema documentation" %}
 
@@ -82,6 +80,8 @@ One of the coolest features in Stoplight is the ability to auto-generate the sch
 
     <figure><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/0IOWY0Hj3Xc?ecver=2" width="560" height="340" frameborder="0" allow="autoplay; encrypted-media" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div><figcaption>Stoplight's visual modeling tools let you automatically create the correct JSON schema definition from a block of JSON that you paste in.</figcaption></figure>
 
-7.  Click the **Raw Schema** tab to see the code that Stoplight automatically wrote for you based on the sample JSON you copied in. This auto-generated schema documentation will make your life easier. Even if you prefer to hand-code your OpenAPI specification files in your own editor, you might find that you visit Stoplight just to auto-generate your response schema documentation.
+7.  Click the **Raw Schema** tab to see the code that Stoplight automatically wrote for you based on the sample JSON you copied in.
+
+    This auto-generated schema documentation will make your life easier. Even if you prefer to hand-code your OpenAPI specification files in your own editor, you might find that you visit Stoplight just to auto-generate your response schema documentation.
 
 {% if page.workshop_activities == true %}*For more information related to this activity, see [Stoplight &mdash; visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html).*{% endif %}
