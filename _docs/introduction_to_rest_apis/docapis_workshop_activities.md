@@ -11,8 +11,6 @@ redirect_from:
  - /learnapidoc/workshop-activities.html
 ---
 
-hello from menlo park.
-
 For API workshops, it helps to consolidate activities into a single page with brief instructions. The content for the activities below is the same content that appears in other parts of the course &mdash; it's just pulled in here for convenience.
 
 Because completing the activities is an essential part of learning, I've tried to incorporate as many hands-on learning activities as possible, making them both practical and useful. If you have feedback about how to improve the activities, or places where you keep getting stuck, [let me know](contact.html).
@@ -69,9 +67,11 @@ Because completing the activities is an essential part of learning, I've tried t
 
 {% include workshop_button.html title="Activity 8a: Look at API documentation jobs and requirements" activity="look_for_apidoc_jobs" button_type="info" %}
 
+{% comment %}
 ## Survey
 
 Please take this survey to provide feedback about the workshop: [https://www.questionpro.com/t/AOaGwZdHog](https://www.questionpro.com/t/AOaGwZdHog).
+ {% endcomment %}
 
 {% include random_ad.html %}
 
