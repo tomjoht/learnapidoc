@@ -19,71 +19,100 @@ This content doesn't embed well in print, as it contains YouTube videos. Please 
 * TOC
 {:toc}
 
-## Most recent API workshop recording
+## API Workshop in Menlo Park, California (Nov 8, 2018)
 
-The most recording is a workshop I gave to STC/WTD Denver (the event description is [here](https://idratherbewriting.com/2018/03/12/api-documentation-workshop-in-denver/)). The recording is divided into three parts. Each of these sections includes a video recording, audio file, and slides.
+I recorded this full-day API documentation in Menlo Park, California, on November 8, 2018. (For more details, see this [blog post](https://idratherbewriting.com/2018/10/31/upcoming-api-doc-workshop/).) This recording closely aligns with the latest content and activities in this course. I divided this all-day workshop into 5 separate videos.
 
-**Part I**:
+### Video 1
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/X1u453Gtw9g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Video 2
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/FuZfob2eVb4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### Video 3
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/GgA8772arys" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Video 4
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/mLnea0LLTh4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Video 5
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/9mSqxqV7TXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Audio only version
+
+If you prefer audio only, you can listen here:
+
+Video 1 of 5:
+<div class="audioControls">
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/menloapidoc/apidocvideo1.mp3" type="audio/mpeg" /></audio></p>
+</div>
+
+Video 2 of 5:
+<div class="audioControls">
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/menloapidoc/apidocvideo2.mp3" type="audio/mpeg" /></audio></p>
+</div>
+
+Video 3 of 5:
+<div class="audioControls">
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/menloapidoc/apidocvideo3.mp3" type="audio/mpeg" /></audio></p>
+</div>
+
+Video 4 of 5:
+<div class="audioControls">
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/menloapidoc/apidocvideo4.mp3" type="audio/mpeg" /></audio></p>
+</div>
+
+Video 5 of 5:
+<div class="audioControls">
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/menloapidoc/apidocvideo5.mp3" type="audio/mpeg" /></audio></p>
+</div>
+
+
+## API Workshop in Denver, Colorado (March 2018)
+
+These videos are from an API documentation workshop that I gave in Denver, Colorado, on March 10, 2018. (For more details, see this [blog post](https://idratherbewriting.com/2018/03/12/api-documentation-workshop-in-denver/)). This version of the workshop is slightly different from the latest version of the course, but the content is still good. I divided the videos into 3 parts.
+
+### Part I of III
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ivum3YbOWQ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-**Part II**:
+### Part II of III
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/zV6m-6_j56w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-**Part III**:
+### Part III of III
+
 <iframe width="640" height="360" src="https://www.youtube.com/embed/LSLg6Oy1OzM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-### Audio only recordings
+### Audio only version
 
-{% include random_ad.html %}
+If you prefer audio only, you can listen here:
 
-**Part I**:
-
+Part I:
 <div class="audioControls">
 <p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/denverapiworkshop_part1.mp3" type="audio/mpeg" /></audio></p>
 </div>
 
-<a href="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/denverapiworkshop_part1.mp3">Download MP3</a>
-
-**Part II**:
-
+Part II:
 <div class="audioControls">
 <p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/denverapiworkshop_part2.mp3" type="audio/mpeg" /></audio></p>
 </div>
 
-<a href="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/denverapiworkshop_part2.mp3">Download MP3</a>
-
-**Part III**:
-
+Part III:
 <div class="audioControls">
 <p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/denverapiworkshop_part3.mp3" type="audio/mpeg" /></audio></p>
 </div>
 
-<a href="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/denverapiworkshop_part3.mp3">Download MP3</a>
 
-If you're driving across the country and you want to listen to all audio combined into one consolidated file (consisting of parts I, II, and III), you can do so here:
+{% include random_ad.html %}
 
-<div class="audioControls">
-<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/denverapiworkshop_all.mp3" type="audio/mpeg" /></audio></p>
-</div>
-
-{% include random_ad2.html %}
-
-## Publishing API Docs
-
-(This section wasn't included directly during the workshop but rather as a supporting presentation.)
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/__vSXJn-JQo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-This is a presentation I gave to the WTD South Bay group -- more details are  [here](https://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/). This video covers the [Publishing API docs](https://idratherbewriting.com/learnapidoc/pubapis_overview.html) section in this course.
-
-
-{: .tip}
-
-If you just want to browse the slides, see the [Course Slides](docapis_course_slides.html).
-
-## Other API course recordings
+## Other API presentation recordings
 
 The following are other video recordings for API-related presentations:
 
@@ -93,11 +122,11 @@ The following are other video recordings for API-related presentations:
 
 I gave this presentation to the STC Silicon Valley chapter -- more details are [here](https://idratherbewriting.com/2017/11/19/upcoming-api-doc-presentation-stc-sv-chapter/). This video covers these course sections:
 
-* [Introduction to REST APIs](https://idratherbewriting.com/learnapidoc/docapis_introtoapis.html)
-* [Using a REST API as a developer](https://idratherbewriting.com/learnapidoc/likeadeveloper.html)
-* [Documenting API endpoints](https://idratherbewriting.com/learnapidoc/docendpoints.html)
-
 ### Docs as code tools and workflows
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/__vSXJn-JQo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+This is a presentation I gave to the WTD South Bay group -- more details are  [here](https://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/). This video covers the [Publishing API docs](https://idratherbewriting.com/learnapidoc/pubapis_overview.html) section in this course.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z3e_38WS-2Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -108,7 +137,6 @@ This is a presentation I gave to STC/WTD Denver -- more details are [here](https
 <iframe width="640" height="360" src="https://www.youtube.com/embed/gcDSL-8pkvU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 This was a presentation I gave to the STC/WTD San Diego chapter (more details are [here](https://idratherbewriting.com/2018/02/14/openapi-and-swagger-presentation/). This video covers the [OpenAPI specification and Swagger](https://idratherbewriting.com/learnapidoc/restapispecifications.html) section.
-
 
 ### How to Add Swagger to your API
 
@@ -122,12 +150,7 @@ For a longer (and older) video, here's a recording from a 4-hour workshop I gave
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/GerbihyUpdo" frameborder="0" allowfullscreen></iframe>
 
-### India API workshop
+{% include random_ad2.html %}
 
-Here'a recording of an API workshop I gave in India a while back (more details are [here](https://idratherbewriting.com/2015/03/19/recording-of-api-documentation-workshop-rest-and-javadoc-at-tcworld-india-2015/)). In contrast to other videos, this one includes (near the last 30 min.) some of the [Java API parts of the course](nativelibraryapis.html).
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/zYDW6Pw26ls" frameborder="0" allowfullscreen></iframe>
-
-For more details about past presentations, see [Presentations](https://idratherbewriting.com/presentations/) on my blog.
 
 {% endif %}
