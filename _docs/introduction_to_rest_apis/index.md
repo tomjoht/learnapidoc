@@ -12,11 +12,11 @@ redirect_from:
 - /learnapidoc/introtoapis.html
 ---
 
-In this course on writing documentation for REST APIs, instead of just talking about abstract concepts, I contextualize REST APIs with a direct, hands-on approach. You'll learn about API documentation in the context of using some simple weather APIs to put a weather forecast on your site.
+In this course on writing documentation for REST APIs, instead of just talking about abstract concepts, I contextualize REST APIs with a direct, hands-on approach. You'll first learn about API documentation by using a simple weather API to put a weather forecast on your site.
 
-As you use the API, you'll learn about endpoints, parameters, data types, authentication, curl, JSON, the command line, Chrome's Developer Console, JavaScript, and other standards, tools, and technologies associated with REST APIs.
+As you use the API, you'll learn about endpoints, parameters, data types, authentication, curl, JSON, the command line, Chrome's Developer Console, JavaScript, and more. The idea is that rather than learning about these concepts independent of any context, you learn them by immersing yourself in a real scenario while using an API. This makes these tools and technologies more meaningful.
 
-The idea is that rather than learning about these concepts independent of any context, you learn them by immersing yourself in a real scenario while using an API. This makes these tools and technologies more meaningful.
+We'll then transition into standards, tools, and specifications for REST APIs. You'll learn about the required sections in API documentation, analyze examples of REST API documentation from various companies, learn how to join an open-source project to get experience, and more.
 
 * TOC
 {:toc}
@@ -49,9 +49,9 @@ Diving into these sections will give you a solid understanding about how to docu
 
 {% include random_ad2.html %}
 
-Finally, you'll dive into different ways to [publish REST API documentation](publishingapis.html), exploring tools and specifications such as [GitHub](pubapis_github_wikis.html), [Jekyll](pubapis_jekyll.html), and other [Docs-as-code approaches](pubapis_docs_as_code.html). You'll learn how to leverage templates, build interactive API consoles so users can try out requests and see responses, and learn how to manage your content through [version control](pubapis_version_control.html).
+Finally, you'll dive into different ways to [publish REST API documentation](publishingapis.html), exploring tools and specifications such as [GitHub](pubapis_github_wikis.html), [Jekyll](pubapis_jekyll.html), and other [docs-as-code approaches](pubapis_docs_as_code.html). You'll learn how to leverage templates, build interactive API consoles so users can try out requests and see responses, and learn how to manage your content through [version control](pubapis_version_control.html).
 
-I also dive into specifications such as the [OpenAPI specification](pubapis_openapi_tutorial_overview.html) and [Swagger](pubapis_swagger_intro.html), which provides tooling for the OpenAPI specification. Additionally, I cover how to [document native library APIs](nativelibraryapis.html) and generate [Javadoc](nativelibraryapis_create_javadoc.html). Throughout it all, I put these tools in a real, applicable context with examples and demos.
+We'll also dive into specifications such as the [OpenAPI specification](pubapis_openapi_tutorial_overview.html) and [Swagger](pubapis_swagger_intro.html), which provides tooling for the OpenAPI specification. Additionally, you'll learn how to [document native library APIs](nativelibraryapis.html) and generate [Javadoc](nativelibraryapis_create_javadoc.html). Throughout this course, I put these concepts in real, applicable contexts with examples and demos.
 
 ## Course organization
 
@@ -66,11 +66,11 @@ This course is organized into the following sections:
 *  [OpenAPI specification and Swagger](restapispecifications.html)
 *  [Documenting native library APIs](nativelibraryapis.html)
 *  [Getting a job in API documentation](jobapis.html)
-*  [Resources and glossary](resources.html)
+*  [Glossary and additional resources](resources.html)
 
-You don't have to read the sections in order &mdash; feel free to skip around as you prefer. But some of the earlier sections (such as the section on [Using a REST API like a developer](likeadeveloper.html), and the section on [Documenting endpoints](docendpoints.html)) follow a somewhat sequential order with the same weather API scenario.
+You don't have to read the sections in order &mdash; feel free to skip around as you prefer. But some of the earlier sections (such as the section on [Using a REST API like a developer](likeadeveloper.html) and [Documenting endpoints](docendpoints.html)) follow a somewhat sequential order with the same weather API scenario.
 
-Because the purpose of the course is to help you learn, there are many activities that require hands-on coding and other exercises. Along with the learning activities, there are also conceptual deep dives, but the focus is always on *learning by doing*. Where there are hands-on activities, I typically include this icon in the section title: <i class="fa fa-user-circle"></i>
+Because the purpose of the course is to help you learn, there are many activities that require hands-on coding and other exercises. Along with the learning activities, there are also conceptual deep dives, but the focus is always on *learning by doing*. {% if site.format == "web" %}Where there are hands-on activities, I typically include this icon in the section title: <i class="fa fa-user-circle"></i>.{% endif %}
 
 Other topics have the word "Activity" in the title. The activities are integrated in various sections, but you can also see a consolidated list of activity content in the [Workshop Activities](docapis_workshop_activities.html).
 
@@ -78,9 +78,7 @@ I refer to the content here as a "course" instead of a book or a website, primar
 
 ## Will this course help you get a job in API documentation?
 
-The most common reason people take this course is to transition to an API documentation. This course will help you make that transition, but you can't just passively read through the content. You need to do the activities outlined in each section, especially those topics that involve working with content from an open-source project. These activities are key to building experience and credibility with a portfolio.
-
-For tips on breaking into API documentation, make sure you [get involved in an open-source project](docapis_find_open_source_project.html). Also see the section on [Getting a job in API documentation](learnapidoc/jobapis.html).
+The most common reason people take this course is to transition into API documentation. This course will help you make that transition, but you can't just passively read through the content. You need to do the activities outlined in each section, especially those topics that involve working with content from an [open-source project](docapis_find_open_source_project.html). These activities are key to building experience and credibility with a portfolio. I provide more details in [Getting a job in API documentation](learnapidoc/jobapis.html).
 
 ## No programming skills required
 
@@ -105,7 +103,7 @@ Here are a few tools you'll need to do the exercises in this course:
 * **Git**. [Git](https://git-scm.com/) is a version control tool developers often use to collaborate on code. For Windows, see [https://gitforwindows.org/](https://gitforwindows.org/) to set up Git and the Git BASH terminal emulator. For Mac, see [Downloading Git](https://git-scm.com/download/mac) and also consider installing [iTerm2](https://iterm2.com/).
 * **GitHub account**. [GitHub](https://github.com) will be used for various activities and is commonly used as an authentication service for developer tools. If you don't already have a GitHub account, sign up for one.
 * **Stoplight account**. [Stoplight](https://next.stoplight.io/) provides visual modeling tools for working with the OpenAPI specification. Create a Stoplight account using your GitHub credentials. (You don't need the app.)
-* **OpenWeatherMap API key**. We'll be using the [OpenWeatherMap API](https://openweathermap.org/) for some exercises. It takes a couple of hours for the OpenWeatherMap API key to activate, so it's best if you get the API key ahead of time. Then when you get to the OpenWeatherMap API activities, you'll be all set. To get your (free) OpenWeatherMap API key, go to [https://openweathermap.org/](https://openweathermap.org/). Click **Sign Up** in the top nav bar and create an account. After you sign up, sign in and find your default API key from the developer dashboard. It’s under the API Keys tab. Copy the key into a place you can easily find it.
+* **OpenWeatherMap API key**. We'll be using the [OpenWeatherMap API](https://openweathermap.org/) for some exercises. It takes a couple of hours for the OpenWeatherMap API key to activate, so it's best if you get the API key ahead of time &mdash; then when you get to the OpenWeatherMap API activities, you'll be all set. To get your (free) OpenWeatherMap API key, go to [https://openweathermap.org/](https://openweathermap.org/). Click **Sign Up** in the top nav bar and create an account. After you sign up, sign in and find your default API key from the developer dashboard. It’s under the API Keys tab. Copy the key into a place you can easily find it.
 
 ## Video recordings
 
@@ -115,13 +113,13 @@ See my [Upcoming Presentations](https://idratherbewriting.com/presentations/) on
 
 ## Course Slides
 
-For the live workshops, I have various slides that cover different sections of this course. If you're a teacher adapting this material for a course on API documentation in a tech comm program, you can clone and modify the slides. See [Course Slides](docapis_course_slides.html) for the links. Basically, you would clone this GitHub repo and copy over the content in the `slides` directory.
+For the live workshops, I have various slides that cover different sections of this course. If you're a teacher adapting this material for a course on API documentation in a tech comm program, you can clone and modify the slides. See [Course Slides](docapis_course_slides.html) for the links. Basically, you would clone this GitHub repo and copy over the content from the `slides` directory.
 
 The slides use [RevealJS](https://github.com/hakimel/reveal.js/), which is an HTML/CSS/JS framework for slides. The images are single-sourced between the site and the slides, so they'll more likely stay in sync. You can adapt the slides as needed for your lessons.
 
 ## Let me know if any content is out of date
 
-One of the challenges in any technical course is ensuring the content stays up to date. Technology changes rapidly, and given the many [hands-on activities](docapis_workshop_activities.html) in the course, it's easy for some steps to become out of date when a company releases an update. I've tried to maintain a healthy balance between general and specific details in the content here. If you find something is out of date, either add a comment on that page or [let me know](https://idratherbewriting.com/learnapidoc/contact.html).
+One of the challenges in any technical course is ensuring the content stays up to date. Technology changes rapidly, and given the many [hands-on activities](docapis_workshop_activities.html) in the course, it's easy for some steps to become out of date as time passes. I've tried to maintain a healthy balance between general and specific details in the content here. If you find something is out of date, either add a comment on that page or [let me know](https://idratherbewriting.com/learnapidoc/contact.html).
 
 ## Stay updated
 

@@ -22,15 +22,15 @@ The API landscape is diverse. In addition to web service APIs (which include RES
 * Native library APIs (such as APIs for Java, C++, and .NET)
 * REST APIs (which are a type of web API)
 
-With native library APIs, you deliver a library of classes or functions to users, and they incorporate this library into their projects. They can then call those classes or functions directly in their code.
+With native library APIs, you deliver a library of classes or functions to developers, and they incorporate this library into their projects. They can then call those classes or functions directly in their code.
 
 {% include random_ad.html %}
 
 With REST APIs, you don't deliver a library of files to users. Instead, the users make requests for the resources on a web server, and the server returns responses containing the information.
 
-REST APIs follow the same protocol as the web. When you open a browser and type a website URL (such as https://idratherbewriting.com), you're actually making a GET request for a resource on a server. The server responds with the content and the browser makes the content visible.
+REST APIs follow the same protocol as the web. When you open a browser and type a website URL (such as `https://idratherbewriting.com`), you're actually making a GET request for a resource on a server. The server responds with the content and the browser makes the content visible.
 
-This course focuses mostly on REST APIs because REST APIs are more popular and in demand, and they're also more accessible to technical writers. You don't need to know programming to document REST APIs. And REST is becoming the most common type of API anyway. Even so, I also cover native library APIs in a [Native Library APIs](nativelibraryapis_overview.html).
+This course focuses mostly on REST APIs because REST APIs are more popular and in demand, and they're also more accessible to technical writers. You don't need to know programming to document REST APIs. And REST is becoming the most common type of API anyway. (Even so, I also cover native library APIs briefly in a [Native Library APIs](nativelibraryapis_overview.html).)
 
 ## Programmableweb API survey rates doc #1 factor in APIs
 
@@ -40,7 +40,7 @@ In a [2013 survey by Programmableweb.com](http://www.programmableweb.com/news/ap
 
 {% include course_image.html url="http://www.programmableweb.com/news/api-consumers-want-reliability-documentation-and-community/2013/01/07" size="medium" filename="progwebsurvey" ext_print="png" ext_web="png" alt="Programmableweb survey" caption="Programmableweb survey showing that complete and accurate documentation is the most important factor for developers" %}
 
-John Musser, one of the founders of Programmableweb.com, emphasizes the importance of documentation in his presentations. In "10 reasons why developers hate your API," he says the number one reason developers hate your API is because "Your documentation sucks."
+John Musser, one of the founders of Programmableweb.com, emphasizes the importance of documentation in his presentations. In [10 reasons why developers hate your API](https://www.infoq.com/presentations/API-design-mistakes), he says the number one reason developers hate your API is because "Your documentation sucks."
 
 {% include random_ad2.html %}
 
@@ -58,7 +58,7 @@ REST APIs are a bit different from the SOAP APIs that were popular some years ag
 
 REST APIs, however, do not follow a standard message format. Instead, REST is an architectural *style*, a set of recommended practices for submitting requests and returning responses. To understand the request and response format for REST APIs, you don't consult the SOAP message specification or look at the WSDL file. Instead, you have to consult the REST API's *documentation*.
 
-Each REST API functions a bit differently. There isn't a single way of doing things, and this flexibility and variety is what fuels the need for accurate and clear documentation. As long as there is variety with REST APIs, there will be a strong need for technical writers to provide documentation for these APIs.
+Each REST API functions a bit differently. There isn't a single way of doing things, and this flexibility and variety is what fuels the need for accurate and clear documentation. (I'll explain more about REST APIs in the [What is a REST API?](docapis_what_is_a_rest_api.html)) As long as there is variety with REST APIs, there will be a strong need for technical writers to provide documentation for these APIs.
 
 ## The web is becoming an interwoven mashup of APIs
 
@@ -76,7 +76,7 @@ The way each site leverages its service is usually through a REST API of some ki
 
 ## Job market is hot for API technical writers
 
-Many employers are looking to hire technical writers who can create not only complete and accurate documentation, but who can also create stylish outputs for their documentation. Here's a job posting from a recruiter looking for someone who can emulate Dropbox's documentation:
+Many employers are looking to hire technical writers who can create not only complete and accurate documentation but who can also create stylish outputs for their documentation. Here's a job posting from a recruiter looking for someone who can emulate Dropbox's documentation:
 
 {% include course_image.html url="" size="medium" filename="indeed_com" ext_print="png" ext_web="png" alt="Job description asking for someone with skills to create doc site like Dropbox" caption="Job description asking for someone with skills to create doc site like Dropbox" %}
 
@@ -102,11 +102,9 @@ API documentation is often a new world to technical writers. Many of the compone
 
 When you try to navigate the world of API documentation, you may be initially overwhelmed by the differences and intimidated by the tools. Additionally, the documentation content itself is often complex and requires familiarity with development concepts and processes.
 
-## Learning materials about API doc are scarce
-
 Realizing there was a need for more information, in 2014 I guest-edited a special issue of Intercom dedicated to API documentation.
 
-{% include course_image.html url="http://bit.ly/stcintercomapiissue" size="small" filename="intercom" ext_print="png" ext_web="png" alt="STC Intercom issue focused on API documentation" caption="STC Intercom issue focused on API documentation" %}
+{% include course_image.html url="http://bit.ly/stcintercomapiissue" size="small" filename="intercom" ext_print="png" ext_web="png" alt="STC Intercom issue (that I guest-edited) focusing on API documentation" caption="STC Intercom issue focused on API documentation" %}
 
 {: .tip}
 You can read this issue for free at [http://bit.ly/stcintercomapiissue](http://bit.ly/stcintercomapiissue).

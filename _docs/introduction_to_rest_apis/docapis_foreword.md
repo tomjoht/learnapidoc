@@ -12,13 +12,13 @@ I initially compiled this material to teach a series of workshops to a local tec
 
 These workshops were fast-paced and introduced the writers to a host of new tools, technologies, and workflows. Even for writers who had been working in the tech comm field for 20 years, API documentation presented new challenges and concepts. The tech landscape is so vast, even for writers who had detailed knowledge of one technology, their tech background didn't always carry over into REST API documentation.
 
-After the workshops, I put the material on my site, idratherbewriting.com, and opened it up to the broader world of technical writers. I did this for several reasons. First, I felt the tech writing community needed this information. There are very few books or courses that dive into API documentation strategies for technical writers. (In fact, as of this writing, my course is the only one.)
+After the workshops, I put the material on my site, idratherbewriting.com, and opened it up to the broader world of technical writers. I did this for several reasons. First, I felt the tech writing community needed this information. There are very few books or courses that dive into API documentation strategies for technical writers.
 
 {% include random_ad2.html %}
 
-Second, I knew that through feedback, I could refine the information and make it better. Almost no content is finished on its first release. Instead, content needs to iterate over a period of time through user testing and feedback. This is the case with help content, and it's the same for course material as well.
+Second, I knew that through feedback, I could refine the information and make it better. Almost no content is finished on its first release. Instead, content needs to iterate over a period of time through user testing and feedback. This is the case with help content, and it's the same for course material as well. I've been giving both presentations and workshops on this content for several years now.
 
-Finally, the content would help drive traffic to my site. How would people discover the material if they couldn't find it online? If the material were only trapped in a print book or behind a firewall, it would be difficult to discover. Content is a rich information asset that draws traffic to any site. It's what people primarily search for online.
+Finally, the content would help [drive traffic to my site](https://idratherbewriting.com/2018/08/09/writing-no-longer-a-skill/). How would people discover the material if they couldn't find it online? If the material were only trapped in a print book or behind a firewall, it would be difficult to discover. Content is a rich information asset that draws traffic to any site. It's what people primarily search for online.
 
 After putting the API doc on my site for some months, the feedback was positive. One person said:
 
@@ -38,11 +38,15 @@ These comments inspired me to continue adding to the course, building out more t
 >
 > Your course on YouTube gave me enough information and understanding to be able to speak intelligently on the subject with developers in a short timeframe, and to dive into tools and publishing solutions.
 
-Of course, not all comments or emails are praiseworthy. A lot of people note problems on pages, such as broken links or broken code, unclear areas or missing information. As much as possible, after receiving this feedback, I went back and clarified or strengthened those areas.
+And more:
 
-One question I faced in preparing the content is whether I should stick with text, or combine the text with video. While video can be helpful at times, it's too cumbersome to update. Given the fast-paced, rapidly evolving nature of the technical content, videos go out of date quickly.
+> I am nearly in tears after finding this site! I think I stumbled upon it some time ago, but I must not have been ready for what you have to say. NOW I am ready! As a former technical writer now knowledge manager, I stumbled upon API writing and have learned a lot simply by being curious and observant...
 
-Additionally, videos force the user to go at the pace of the narrator. If your skill level matches the narrator, that's great. But in my experience, videos often go too slow or too fast. In contrast, text lets you more easily skim ahead when you already know the material, or slow down when you need more time to absorb the material.
+Of course, not all comments or emails are praiseworthy. Some people note problems on pages, such as broken links or broken code, unclear areas or missing information. As much as possible, after receiving this feedback, I go back and clarify or strengthen those areas.
+
+One question I faced in preparing the content is whether I should stick with text, or combine the text with video. While video can be helpful at times, it's too cumbersome to update. Given the fast-paced, rapidly evolving nature of the technical content, videos get out of date quickly.
+
+Additionally, videos force the user to go at the pace of the narrator. If your skill level matches the narrator, that's great. But in my experience, videos often go too slow or too fast. In contrast, text lets you more easily skim ahead when you already know the material, or slow down when you need more time to absorb concepts.
 
 One of my goals for the content is to keep this course a living, evolving document. As such, I'll continue to add and edit and refine it as needed. I want this content to become a vital learning resource for all technical writers, both now and in the years to come as technologies evolve. My hope is that it will primarily serve the following audiences:
 

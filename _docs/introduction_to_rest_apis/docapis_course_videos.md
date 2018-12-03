@@ -8,7 +8,7 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 ---
 
-I've given numerous presentations on API documentation, and I've recorded most of them. The most recent presentations are available below. Keep in mind that my API content evolves, so some older presentations might no longer match the course content.
+I've given numerous presentations and workshops on API documentation, and I've recorded most of them. The most recent recordings are available below. Keep in mind that my API content evolves, so some older presentations might no longer match the course content.
 
 {% if site.format == "kindle" or site.format == "pdf" %}
 This content doesn't embed well in print, as it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/docapis_course_videos.html](https://idratherbewriting.com/learnapidoc/docapis_course_videos.html) to view the content.
@@ -114,7 +114,7 @@ Part III:
 
 ## Other API presentation recordings
 
-The following are other video recordings for API-related presentations:
+The following are other video recordings for API-related presentations.
 
 ### Intro to API docs
 
@@ -128,7 +128,7 @@ I gave this presentation to the STC Silicon Valley chapter -- more details are [
 
 This is a presentation I gave to the WTD South Bay group -- more details are  [here](https://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/). This video covers the [Publishing API docs](https://idratherbewriting.com/learnapidoc/pubapis_overview.html) section in this course.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Z3e_38WS-2Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Z3e_38WS-2Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 This is a presentation I gave to STC/WTD Denver -- more details are [here](https://idratherbewriting.com/2018/03/09/docs-as-code-tools-and-workflows-denver-presentation/). The video covers the [Docs as code tools](pubapis_docs_as_code.html) and [Case study: Switching tools to docs-as-code](pubapis_switching_to_docs_as_code.html) topics.
 

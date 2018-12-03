@@ -16,6 +16,8 @@ path1: /docapis_introtoapis.html
 
 In case you'd like to know a little bit about me, I'm currently based in the San Francisco Bay area of California working at Amazon. I mainly write documentation for third-party developers creating apps for the Amazon Appstore, primarily related to Fire TV.
 
+Most people know me through my blog, [I'd Rather Be Writing](https://idratherbewriting.com), which has been an active online hub for tech comm for the past decade.
+
 Like most technical writers, I stumbled into technical writing after working in other fields. I first earned a BA in English and an MFA in Literary Nonfiction, and then started out my career as a writing teacher. After a stint in teaching, I transitioned into marketing copywriting, and then turned to technical writing (mainly for financial reasons).
 
 Despite my initial resistance to the idea of technical writing (I thought it would be boring), I found that I actually liked technical writing &mdash; a lot more than copywriting. Technical writing combines my love for writing and my fascination for technology. I get to play with tools and handle all aspects of content production, from design to styles to publishing workflows.

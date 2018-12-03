@@ -11,9 +11,7 @@ redirect_from:
  - /learnapidoc/workshop-activities.html
 ---
 
-For API workshops, it helps to consolidate activities into a single page with brief instructions. The content for the activities below is the same content that appears in other parts of the course &mdash; it's just pulled in here for convenience.
-
-Because completing the activities is an essential part of learning, I've tried to incorporate as many hands-on learning activities as possible, making them both practical and useful. If you have feedback about how to improve the activities, or places where you keep getting stuck, [let me know](https://idratherbewriting.com/learnapidoc/contact.html).
+For API workshops, it helps to consolidate activities into a single page with brief instructions. The content for the activities below is the same content that appears in other parts of the course &mdash; it's just pulled in here (single-sourced) for convenience. Workshops require a healthy amount of hands-on activities to be engaging. If you have feedback about how to improve the activities, or places where you keep getting stuck, [let me know](https://idratherbewriting.com/learnapidoc/contact.html).
 
 {% if site.format == "kindle" or site.format == "pdf" %}
 
