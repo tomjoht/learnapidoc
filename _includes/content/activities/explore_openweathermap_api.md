@@ -1,11 +1,12 @@
 ## <i class="fa fa-user-circle"></i> Activity 2a: Get familiar with the OpenWeatherMap API
 
-Explore the basic sections in the [OpenWeatherMap API](https://openweathermap.org/api/):
+Let's explore the basic sections in the [OpenWeatherMap API](https://openweathermap.org/api/):
 
-1.  Go to [https://openweathermap.org](https://openweathermap.org) and click **API** in the top navigation bar.
-2.  Explore the information available in the **Current weather data** by clicking the **API Doc** button in that section.
+1.  Go to [https://openweathermap.org](https://openweathermap.org)
+2.  Click **API** in the top navigation bar.
+2.  In the **Current weather data** section, click the **API Doc** button.
 
-    As you explore the site, get a sense of the information this Current Weather Data API provides. The API calls provide developers with ways to pull information into their applications. In other words, the APIs will provide the data plumbing for the applications that developers build.
+    Get a sense of the information this Current Weather Data API provides. The API calls provide developers with ways to pull information into their applications. In other words, the APIs will provide the data plumbing for the applications that developers build.
 
 3.  Answer the following questions about the Current weather data API endpoint:
 

@@ -11,14 +11,14 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-Enough with the abstract concepts. Let's start using an actual REST API to get more familiar with how they work. In the upcoming sections, you'll explore some weather APIs in the context of a specific use case: retrieving a weather forecast. By first playing the role of a developer using an API, you'll gain a greater understanding of how your audience will use APIs, the type of information they'll need, and what they might do with the information.
+Let's start using an actual REST API to get more familiar with how they work. In the upcoming sections, you'll explore some weather APIs in the context of a specific use case: retrieving a weather forecast. By first playing the role of a developer using an API, you'll gain a greater understanding of how your audience will use APIs, the type of information they'll need, and what they might do with the information.
 
 * TOC
 {:toc}
 
 ## Sample scenario: How windy is it?
 
-Let's say that you're a web developer and you want to add a weather conditions feature to your site. Your site is for bicyclists. You want to allow users who come to your site to see what the wind and temperature conditions are for biking. You want something like this:
+Let's say that you're a web developer and you want to add a weather conditions feature to your site, which is for cyclists. You want to allow users who come to your site to see what the wind and temperature conditions are for biking. You want something like this:
 
 {% if site.format == "pdf" or site.format == "kindle" %}
 <img class="small" src="images/restapi_windycall.png" alt="Wind meter conditions for website" />
@@ -32,7 +32,7 @@ You don't have your own meteorological service, so you'll need to make some call
 
 To give you an idea of the end goal, here's a sample: [idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html](https://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html). It's not necessarily styled the same as the mockup, but it answers the question, "What's the wind and temperature?"
 
-Click the button to see wind and temperature details. When you request this data, an API goes out to the [OpenWeatherMap API service](https://openweathermap.org/api), retrieves the information, and displays it to you.
+Click the **Check wind conditions** button to see wind and temperature details. When you request this data, an API goes out to the [OpenWeatherMap API service](https://openweathermap.org/api), retrieves the information, and displays it to you.
 
 <a target="\_blank" href="https://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html" class="noExtIcon"><img src="images/checkwindconditions.png" class="medium" /></a>
 
@@ -40,11 +40,11 @@ The above example is extremely simple. You could also build an attractive interf
 
 <a class="noCrossRef" href="https://weather.yahoo.com/united-states/california/santa-clara-2488836/" class="noExtIcon"><img class="medium" src="images/attractiveinterfaceweather.png" alt="Sample weather interface" /></a>
 
-The concept and general techniques are more or less the same.
+The concept and general techniques are more or less the same. Behind the scenes, the code makes requests to a weather service API and then displays the returned information in a stylized user interface.
 
 ## Explore the OpenWeatherMap API
 
-Although there are [many good weather API options for developers](https://superdevresources.com/weather-forecast-api-for-developing-apps/), I decided to use the [OpenWeatherMap](https://openweathermap.org) because their service is easy to use, free, and stable.
+Although there are [many good weather API options for developers](https://superdevresources.com/weather-forecast-api-for-developing-apps/), I decided to use the [OpenWeatherMap](https://openweathermap.org) because the service is easy to use, free, and stable.
 
 {% include random_ad2.html %}
 
@@ -55,10 +55,10 @@ Although there are [many good weather API options for developers](https://superd
 Before diving too far down int the OpenWeatherMap API, let's look at another weather API for contrast. In contrast to the OpenWeatherMap API, the [Aeris Weather API](http://www.aerisweather.com/) is a bit more robust and extensive. Explore the Aeris Weather API by doing the following:
 
 1. Go to [www.aerisweather.com](http://www.aerisweather.com).
-2. Click **Documentation** on the top navigation.  
+2. Click **Documentation** on the top navigation bar.  
 3. Click **Weather API**.
 4. Click **Data Endpoints**.
-3. Click **Reference** and then click **Endpoints**. (Or just go [here](https://www.aerisweather.com/support/docs/api/reference/endpoints/) directly.)
+3. Click **Reference** (in the sidebar) and then click **Endpoints**. (Or just go [here](https://www.aerisweather.com/support/docs/api/reference/endpoints/) directly.)
 
 	<a class="noCrossRef" href="http://www.aerisweather.com/support/docs/api/reference/endpoints/" class="noExtIcon"><img class="medium" src="images/aerisendpoints.png" alt="Aeris Endpoints" /></a>
 
