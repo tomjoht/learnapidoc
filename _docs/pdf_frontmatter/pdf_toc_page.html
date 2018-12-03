@@ -9,6 +9,7 @@ progress: false
 <ul id="docnavsidebar" class="docnav">
   {% assign sidebar = site.data[site.sidebar].folders %}
 {% for folder in sidebar %}
+{% unless folder.type == "web" %}
 <li class="sectionHead"><a href="{{folder.jurl | remove: "/"}}">{{ folder.title }}</a>
     <ul>
         {% for folderitem in folder.folderitems %}
@@ -16,6 +17,7 @@ progress: false
         <li><a href="{{ folderitem.jurl | remove: "/" }}">{{folderitem.title}}</a></li>
         {% endif %}
         {% for subfolder in folderitem.subfolders %}
+        {% unless subfolder.type == "web" %}
 
         <li class="sectionHead"><a href="{{subfolder.jurl | remove: "/"}}">{{ subfolder.title }}</a>
             <ul>
@@ -26,6 +28,7 @@ progress: false
                 {% endif %}
 
                 {% for subsubfolder in subfolderitem.subsubfolders %}
+                {% unless subsubfolder.type == "web" %}
                 <li class="sectionHead"><a href="{{subsubfolder.jurl | remove: "/"}}">{{ subsubfolder.title }}</a>
                     <ul>
                         {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
@@ -35,15 +38,17 @@ progress: false
                         {% endfor %}
                     </ul>
                 </li>
+                {% endunless %}
                 {% endfor %}
                 {% endfor %}
             </ul>
         </li>
-
+{% endunless %}
         {% endfor %}
 
         {% endfor %}
     </ul>
+    {% endunless %}
     {% endfor %}
 
 </li>
