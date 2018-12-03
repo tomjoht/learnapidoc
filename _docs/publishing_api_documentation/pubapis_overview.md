@@ -41,7 +41,7 @@ But guess what? What lead developer isn't going to have time to figure out docs.
 
 As an editor/publisher, you can help the SME author by accurately identifying the point of confusion, the area of the doc that needs updating, and provide easy tools for the SME to make the updates. The engineers can't be bothered to figure out static site generators or publishing workflows, PDFs, or other doc publishing tools. By playing a role as an editor/publisher, you can be a valuable contributor to the product team. This is why being a doc tools expert is particularly relevant in API documentation contexts.
 
-## Using tools your SME authors want to use to collaborate
+## Using tools your SME authors want to use to collaborate {#hats}
 
 Another aspect of doc tools is using tools that your SME authors want to use to collaborate. When I first transitioned to API documentation, I had my mind set on using DITA, and I converted a large portion of my content over to it.
 
@@ -117,6 +117,8 @@ Now that I've hopefully established that traditional HATs aren't the go-to tools
 If you'd like to view a presentation I gave to the [Write the Docs South Bay chapter](https://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/) on this topic, you can view it here:
 
 {% if site.format == "kindle" or site.format == "pdf" %}
+
+{: .note}
 This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/docapis_course_videos.html to view the content.
 {% elsif site.format == "web" %}
 

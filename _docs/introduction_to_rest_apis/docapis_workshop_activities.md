@@ -16,7 +16,9 @@ For API workshops, it helps to consolidate activities into a single page with br
 Because completing the activities is an essential part of learning, I've tried to incorporate as many hands-on learning activities as possible, making them both practical and useful. If you have feedback about how to improve the activities, or places where you keep getting stuck, [let me know](https://idratherbewriting.com/learnapidoc/contact.html).
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-The content here merely contains the same exercises that appear embedded in other places throughout the site. I just consolidate them here for convenience when teaching workshops. See [https://idratherbewriting.com/learnapidoc/docapis_workshop_activities.html](https://idratherbewriting.com/learnapidoc/docapis_workshop_activities.html) to view the content.
+
+{: .note}
+The content here merely contains the same exercises that appear embedded in other places throughout the site. I just consolidate them here for convenience when teaching workshops. See [https://idratherbewriting.com/learnapidoc/docapis_workshop_activities.html](https://idratherbewriting.com/learnapidoc/docapis_workshop_activities.html) to view the consolidated activities.
 {% endif %}
 
 {% if site.format == "web" %}

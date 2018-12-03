@@ -61,7 +61,7 @@ git repo
 : A tool for consolidating and managing many smaller repos with one system. See [git-repo](https://code.google.com/archive/p/git-repo/).
 
 HAT
-: Help Authoring Tool. Refers to the traditional help authoring tools (RoboHelp, Flare, Author-it, etc.) used by technical writers for documentation. Tooling for API docs tend to use [Docs as code tools](pubapis_docs_as_code.html) more than [HATs](pubapis_docs_as_code.html#hats).
+: Help Authoring Tool. Refers to the traditional help authoring tools (RoboHelp, Flare, Author-it, etc.) used by technical writers for documentation. Tooling for API docs tend to use [Docs as code tools](pubapis_docs_as_code.html) more than [HATs](pubapis_overview.html#hats).
 
 HATEOS
 : Stands for Hypermedia as the Engine of Application State. Hypermedia is one of the characteristics of REST that is often overlooked or missing from REST APIs. In API responses, responses that span multiple pages should provide links for users to page to the other items. See [HATEOS](https://en.wikipedia.org/wiki/HATEOAS).

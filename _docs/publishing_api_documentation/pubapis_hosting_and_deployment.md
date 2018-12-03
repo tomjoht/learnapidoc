@@ -100,7 +100,7 @@ The most impressive example of a Netlify-hosted site is [Smashing Magazine](http
 
 Other notable doc sites using Netlify include [Docker](https://docs.docker.com/), [Kubernetes](https://kubernetes.io/docs/home/), [React](https://reactjs.org/docs/hello-world.html), [Yarn](https://yarnpkg.com/lang/en/docs/), [Lodash](https://lodash.com/docs/), [Gatsby](https://www.gatsbyjs.org/docs/), and [Hugo](https://gohugo.io/documentation/).
 
-Complementing Netlify is [Netlify CMS](#netlifycms), a headless CMS for your content (which I discuss in more detail later on).
+Complementing Netlify is [Netlify CMS](pubapis_headless_cms.html#netlifycms), a headless CMS for your content (which I discuss in more detail later on).
 
 ## Aerobatic {#aerobatic}
 

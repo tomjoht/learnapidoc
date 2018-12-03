@@ -5,6 +5,7 @@ course: "Documenting REST APIs"
 sidebar: docapis
 type: plain
 progress: false
+no_newsletter: true
 ---
 
 Feel free to ask me any questions you like. You can contact me directly using the form below:

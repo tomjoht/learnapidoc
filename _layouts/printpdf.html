@@ -1,3 +1,4 @@
+<head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,10 +18,11 @@
 
 <script>
     Prince.addScriptFunc("guideName", function() {
-        return "{{site.print_title}}";
+        return "{{site.title}}";
     });
 </script>
-
+</head>
+<body class="{{page.class}}">
 <div class="post-header">
   {% unless page.type == "title" %}
     <h1 class="post-title-main" id="{{page.permalink | replace: '/', '' }}">{{ page.title }}</h1>
@@ -30,3 +32,4 @@
 <div class="post-content">
     {{ content }}
 </div>
+</body>

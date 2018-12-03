@@ -7,7 +7,6 @@ path: Introduction to REST APIs
 section: introtoapis
 path1: /docapis_introtoapis.html
 weight: 1.0
-class: first
 redirect_from:
 - /restapicourse2-0/
 - /learnapidoc/introtoapis.html
@@ -77,7 +76,11 @@ Other topics have the word "Activity" in the title. The activities are integrate
 
 I refer to the content here as a "course" instead of a book or a website, primarily because I include a lot of exercises throughout in each section, and I find that people who want to learn API documentation prefer a more hands-on "course" experience.
 
-{% include callout.html title="Will this course help you get a job in API documentation?" type="primary" content="The most common reason people take this course is to transition to an API documentation. This course will help you make that transition, but you can't just passively read through the content. You need to do the activities outlined in each section, especially those topics that involve working with content from an open-source project. These activities are key to building experience and credibility with a portfolio." %}
+## Will this course help you get a job in API documentation?
+
+The most common reason people take this course is to transition to an API documentation. This course will help you make that transition, but you can't just passively read through the content. You need to do the activities outlined in each section, especially those topics that involve working with content from an open-source project. These activities are key to building experience and credibility with a portfolio.
+
+For tips on breaking into API documentation, make sure you [get involved in an open-source project](docapis_find_open_source_project.html). Also see the section on [Getting a job in API documentation](learnapidoc/jobapis.html).
 
 ## No programming skills required
 
@@ -102,22 +105,23 @@ Here are a few tools you'll need to do the exercises in this course:
 * **Git**. [Git](https://git-scm.com/) is a version control tool developers often use to collaborate on code. For Windows, see [https://gitforwindows.org/](https://gitforwindows.org/) to set up Git and the Git BASH terminal emulator. For Mac, see [Downloading Git](https://git-scm.com/download/mac) and also consider installing [iTerm2](https://iterm2.com/).
 * **GitHub account**. [GitHub](https://github.com) will be used for various activities and is commonly used as an authentication service for developer tools. If you don't already have a GitHub account, sign up for one.
 * **Stoplight account**. [Stoplight](https://next.stoplight.io/) provides visual modeling tools for working with the OpenAPI specification. Create a Stoplight account using your GitHub credentials. (You don't need the app.)
-* **OpenWeatherMap API key**. We'll be using the [OpenWeatherMap API](https://openweathermap.org/) for some exercises. It might take a couple of hours for the API key to activate, so it's best if you get the API key ahead of time. Then when you get to the OpenWeatherMap API activities, you'll be all set. To get your (free) OpenWeatherMap API key, go to [https://openweathermap.org/](https://openweathermap.org/). Click **Sign Up** in the top nav bar and create an account. After you sign up, sign in and find your default API key from the developer dashboard. It’s under the API Keys tab. Copy the key into a place you can easily find it.
+* **OpenWeatherMap API key**. We'll be using the [OpenWeatherMap API](https://openweathermap.org/) for some exercises. It takes a couple of hours for the OpenWeatherMap API key to activate, so it's best if you get the API key ahead of time. Then when you get to the OpenWeatherMap API activities, you'll be all set. To get your (free) OpenWeatherMap API key, go to [https://openweathermap.org/](https://openweathermap.org/). Click **Sign Up** in the top nav bar and create an account. After you sign up, sign in and find your default API key from the developer dashboard. It’s under the API Keys tab. Copy the key into a place you can easily find it.
 
 ## Video recordings
 
-For video recordings of this course, see the [Recorded Video Presentations](docapis_course_videos.html). The most recent full-length video of the entire course is a half-day API workshop I gave in Denver in March 2018.
+For video recordings of this course, see the [Recorded Video Presentations](docapis_course_videos.html). The most recent full-length video of the entire course is a full-day API workshop I gave in Menlo Park, California, in November 2018. The video doesn't go into the same level of detail as the written material, but it would be a good start.
 
-## Slides
+See my [Upcoming Presentations](https://idratherbewriting.com/presentations/) on my blog for details about future workshops and presentations.
 
-I have various slides that cover different sections of this course. See the following:
+## Course Slides
 
-* [Intro to API documentation](https://idratherbewriting.com/intro-to-api-documentation/index.html)
-* [Non-reference content in API docs](https://idratherbewriting.com/nonref-content-api-docs/#/)
-* [OpenAPI and Swagger](https://idratherbewriting.com/openapi-and-swagger/#/)
-* [Publishing API documentation](https://idratherbewriting.com/publishing-api-docs/#/)
+For the live workshops, I have various slides that cover different sections of this course. If you're a teacher adapting this material for a course on API documentation in a tech comm program, you can clone and modify the slides. See [Course Slides](docapis_course_slides.html) for the links. Basically, you would clone this GitHub repo and copy over the content in the `slides` directory.
 
-These slides are all hosted on GitHub and are open source. I use [RevealJS](https://github.com/hakimel/reveal.js/) for slides, which lets me create the slide content in HTML. If you're a teacher using material from this course in your classroom, you can adapt the slides as needed for your lessons.
+The slides use [RevealJS](https://github.com/hakimel/reveal.js/), which is an HTML/CSS/JS framework for slides. The images are single-sourced between the site and the slides, so they'll more likely stay in sync. You can adapt the slides as needed for your lessons.
+
+## Let me know if any content is out of date
+
+One of the challenges in any technical course is ensuring the content stays up to date. Technology changes rapidly, and given the many [hands-on activities](docapis_workshop_activities.html) in the course, it's easy for some steps to become out of date when a company releases an update. I've tried to maintain a healthy balance between general and specific details in the content here. If you find something is out of date, either add a comment on that page or [let me know](https://idratherbewriting.com/learnapidoc/contact.html).
 
 ## Stay updated
 

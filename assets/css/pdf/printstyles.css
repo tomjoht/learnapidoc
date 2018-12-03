@@ -4,16 +4,16 @@
 body {
     font-size:12px;
 }
-/*table .table {max-width:650px;}*/
-table {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 
-table, th, td  {border: 1px solid black}
+/*table .table {max-width:650px;}*/
+table, th, td  {border: 1px solid #dedede;}
 th, td {
     padding: 15px;
     text-align: left;
+}
+
+table {
+  margin: 20px 0px;
 }
 tr:nth-child(even) {background-color: #f2f2f2}
 th  {background-color: #595959}
@@ -50,7 +50,7 @@ th  {color: white}
 
 
 a[href]::after {
-    content: " (page " target-counter(attr(href), page) ")"
+    content: " (p. " target-counter(attr(href), page) ")"
 }
 
 a[href^="http:"]::after, a[href^="https:"]::after {
@@ -102,6 +102,7 @@ a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::a
 .alert a {
     text-decoration: none !important;
 }
+
 body.first {counter-reset: page 1}
 
 @page {
@@ -126,7 +127,6 @@ body.title { page: title }
         content: " ";
     }
 }
-body.copyright {counter-reset: page 1}
 
 body.frontmatter { page: frontmatter }
 @page frontmatter {
@@ -488,4 +488,30 @@ pre {
 figure, img {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+figcaption {
+    font-size: 12px;
+    color: gray;
+    font-style: italic;
+}
+
+img.large {
+  max-width: 700px
+}
+
+img.medium {
+  max-width: 600px
+}
+
+img.small_medium {
+  max-width: 450px;
+}
+
+img.small {
+  max-width: 300px;
+}
+
+img.tiny {
+  max-width: 200px;
 }

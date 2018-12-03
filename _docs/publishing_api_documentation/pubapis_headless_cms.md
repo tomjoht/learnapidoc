@@ -39,7 +39,7 @@ One of Netlify CMS's key advantages is in simplifying the content development ex
 
 <figure><a href="https://www.netlifycms.org/" class="noExtIcon"><img src="images/netlifycms.png" style="border: 1px solid #dedede;"/></a><figcaption>Netlify lets you create a user interface for your custom fields.</figcaption></figure>
 
-Your content source can be stored in GitHub, GitLab, or BitBucket. Netlify CMS also integrates with [Netlify](#netlify), which is a popular hosting and deployment service for static site projects.
+Your content source can be stored in GitHub, GitLab, or BitBucket. Netlify CMS also integrates with [Netlify](pubapis_hosting_and_deployment.html#netlify), which is a popular hosting and deployment service for static site projects.
 
 {: .tip}
 For a tutorial on integrating Jekyll with Netlify CMS, see [Adding a CMS to Your Static Site With Netlify CMS](https://dzone.com/articles/adding-a-cms-to-your-static-site-with-netlify-cms). Or just start with the [Netlify CMS documentation](https://www.netlifycms.org/docs/).

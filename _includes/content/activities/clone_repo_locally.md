@@ -2,7 +2,7 @@
 
 So far you've been working with GitHub in the browser. Now we'll take the same content and work with it locally. This is what makes the GitHub wiki unique from other wikis &mdash; it's a Git repo.
 
-1.  If you don't already have Git installed, set it up on your computer. (You can check by typing `git --version` in your terminal window. See [Install Git](#pubapis_github_wikis.html#git_install) for more information on installation.)
+1.  If you don't already have Git installed, set it up on your computer. (You can check by typing `git --version` in your terminal window. See [Install Git](pubapis_github_wikis.html#git_install) for more information on installation.)
 2.  While viewing your the GitHub wiki in your browser, look for the section that says **Clone this wiki locally**. Click the clipboard button. (This copies the clone URL to your clipboard.)
 
     {% include course_image.html size="medium" filename="clone-this-wiki-locally" ext_print="png" ext_web="png" alt="Clone this wiki locally" caption="Clone this wiki locally" %}

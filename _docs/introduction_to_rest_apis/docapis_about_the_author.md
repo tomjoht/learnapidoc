@@ -8,7 +8,11 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 ---
 
-<img src="images/tomjohnson.jpg" class="small" style="float: right; padding:1em;"/>
+{% if site.format == "web" %}<img src="images/tomjohnson.jpg" class="small" style="float: right; padding:1em;"/>
+{% else %}
+<img src="images/tomjohnsonsmall.jpg" class="small" style="float: right; padding:1em;"/>
+{% endif %}
+
 
 In case you'd like to know a little bit about me, I'm currently based in the San Francisco Bay area of California working at Amazon. I mainly write documentation for third-party developers creating apps for the Amazon Appstore, primarily related to Fire TV.
 

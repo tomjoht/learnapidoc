@@ -23,11 +23,15 @@ This course is all about learning by doing, but while *doing* various activities
 
 In general, an API (or Application Programming Interface) provides an interface between two systems. It's like a cog that allows two systems to interact with each other. In this case, the two systems are computers that interact programmatically through the API.
 
-<figure><a class="noCrossRef" href="http://bit.ly/1DexWM0" class="noExtIcon"><img class="medium" class="small" src="images/spinning_gears.jpg" alt="Spinning gears. By Brent 2.0. Flickr." /></a><figcaption>spinning gears by Brent 2.0</figcaption></figure>
+<figure><a class="noCrossRef" href="http://bit.ly/1DexWM0" class="noExtIcon"><img class="medium" class="small" src="images/spinning_gears.jpg" alt="Spinning gears. By Brent 2.0. Flickr." /></a><figcaption><a href='https://www.flickr.com/photos/brentinoz/'>Brent 2.0</a>, <a href='http://bit.ly/1DexWM0'>spinning gears</a>, <a href='https://creativecommons.org/licenses/by-nd/2.0/legalcode'>CC BY-ND 2.0</a></figcaption></figure>
 
 Jim Bisso, an experienced API technical writer in the Silicon Valley area, describes APIs by using the analogy of your computer's calculator. When you press buttons, functions underneath are interacting with other components to get information. Once the information is returned, the calculator presents the data back to the GUI.
 
-<img class="small" src="images/calculator.png" alt="calculator" />
+{% if site.format == "web" %}
+{% include course_image.html size="tiny" filename="calculator" ext_print="png" ext_web="png" alt="When you press buttons, functions behind the scenes perform operations and retrieve data" caption="When you press buttons, functions behind the scenes perform operations and retrieve data" %}
+{% else %}
+{% include course_image.html size="tiny" filename="calculatorsmall" ext_print="png" ext_web="png" alt="When you press buttons, functions behind the scenes perform operations and retrieve data" caption="When you press buttons, functions behind the scenes perform operations and retrieve data" %}
+{% endif %}
 
 {% include random_ad2.html %}
 

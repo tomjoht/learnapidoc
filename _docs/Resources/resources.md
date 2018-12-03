@@ -1,5 +1,5 @@
 ---
-title: Resources and glossary
+title: Glossary and additional resources
 permalink: /resources.html
 course: "Documenting REST APIs"
 sidebar: docapis

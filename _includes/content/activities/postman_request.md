@@ -42,7 +42,7 @@ In this exercise, you'll use Postman to make a request using OpenWeatherMap's [c
 
 4.  Click **Save.**
 
-Saved endpoints appear in the left side pane under Collections. (If you don't see the Collections pane, click the **Show/Hide Sidebar** button <img style="vertical-align: bottom" src="images/postmanexpandcollections.png"/> in the upper-left corner to expand it.)
+Saved endpoints appear in the left side pane under Collections. (If you don't see the Collections pane, click the **Show/Hide Sidebar** button {% if site.format == "web" %}<img style="vertical-align: bottom" src="images/postmanexpandcollections.png"/>{% endif %} in the upper-left corner to expand it.)
 
 ### Make a request for the OpenWeatherMap 5 day forecast
 

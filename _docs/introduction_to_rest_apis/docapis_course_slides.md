@@ -11,7 +11,9 @@ path1: /docapis_introtoapis.html
 The slides correspond to API workshops that I gave. The slide groups mirror the same sections in the course.
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-This content doesn't embed well in print, since it merely contains thumbnail images pointing HTML slide decks. Please go to [https://idratherbewriting.com/learnapidoc/docapis_course_slides.html](https://idratherbewriting.com/learnapidoc/docapis_course_slides.html) to view the content.
+
+{: .note}
+This content doesn't embed well in print, since it merely contains thumbnail images pointing HTML slide decks. Please go to [https://idratherbewriting.com/learnapidoc/docapis_course_slides.html](https://idratherbewriting.com/learnapidoc/docapis_course_slides.html) to view the slide content.
 {% endif %}
 
 {% if site.format == "web" %}

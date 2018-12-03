@@ -30,7 +30,7 @@ With REST APIs, you don't deliver a library of files to users. Instead, the user
 
 REST APIs follow the same protocol as the web. When you open a browser and type a website URL (such as https://idratherbewriting.com), you're actually making a GET request for a resource on a server. The server responds with the content and the browser makes the content visible.
 
-This course focuses mostly on REST APIs because REST APIs are more popular and in demand, and they're also more accessible to technical writers. You don't need to know programming to document REST APIs. And REST is becoming the most common type of API anyway. (Even so, I also cover native library APIs in a [later section](nativelibraryapis_overview.html).)
+This course focuses mostly on REST APIs because REST APIs are more popular and in demand, and they're also more accessible to technical writers. You don't need to know programming to document REST APIs. And REST is becoming the most common type of API anyway. Even so, I also cover native library APIs in a [Native Library APIs](nativelibraryapis_overview.html).
 
 ## Programmableweb API survey rates doc #1 factor in APIs
 
@@ -38,17 +38,17 @@ Before we get into the nuts and bolts of documenting REST APIs, let me provide s
 
 In a [2013 survey by Programmableweb.com](http://www.programmableweb.com/news/api-consumers-want-reliability-documentation-and-community/2013/01/07) (which is a site that tracks and lists web APIs), about 250 developers were asked to rank the most important factors in an API. "Complete and accurate documentation" ranked as #1.
 
-<a class="noCrossRef" href="http://www.programmableweb.com/news/api-consumers-want-reliability-documentation-and-community/2013/01/07" class="noExtIcon"><img class="medium" src="images/progwebsurvey.png" alt="Programmableweb survey" /></a>
+{% include course_image.html url="http://www.programmableweb.com/news/api-consumers-want-reliability-documentation-and-community/2013/01/07" size="medium" filename="progwebsurvey" ext_print="png" ext_web="png" alt="Programmableweb survey" caption="Programmableweb survey showing that complete and accurate documentation is the most important factor for developers" %}
 
 John Musser, one of the founders of Programmableweb.com, emphasizes the importance of documentation in his presentations. In "10 reasons why developers hate your API," he says the number one reason developers hate your API is because "Your documentation sucks."
 
 {% include random_ad2.html %}
 
-<a class="noCrossRef" href="http://www.slideshare.net/jmusser/ten-reasons-developershateyourapi" class="noExtIcon"><img class="medium" src="images/yourdocsucks.png" alt="Your API documentation sucks" /></a>
+{% include course_image.html url="http://www.slideshare.net/jmusser/ten-reasons-developershateyourapi" filename="yourdocsucks" ext_print="png" ext_web="png" alt="APIs often fail because the doc fails the developers" caption="APIs often fail because the doc fails the developers" %}
 
 If REST APIs were an uncommon software product, it wouldn't be that big of a deal. But actually, REST APIs are taking off in a huge way. Through the PEW Research Center, Programmableweb.com has charted and tracked the prevalence of web APIs.
 
-<a class="noCrossRef" href="http://www.slideshare.net/programmableweb/web-api-growthsince2005" class="noExtIcon"><img class="medium" src="images/growthinrestapis.png" alt="Growth in web APIs" /></a>
+{% include course_image.html url="http://www.slideshare.net/programmableweb/web-api-growthsince2005" size="" border="" filename="growthinrestapis" ext_print="png" ext_web="png" alt="The phenomenal growth in web APIs" caption="The phenomenal growth in web APIs" %}
 
 eBay's API in 2005 was one of the first web APIs (the API allowed sellers to manage their products in their eBay stores). Since then, there has been a tremendous growth in web APIs. Given the importance of clear and accurate API documentation, this presents a perfect market opportunity for technical writers. Technical writers can apply their communication skills to fill a gap in a market that is rapidly expanding.
 
@@ -68,7 +68,7 @@ For example, rather than building your own search to power your website, you mig
 
 Practically every service provides its information and tools through an API that you use. Jekyll, a popular static site generator, doesn't have all the components you need to run a site. There's no newsletter integration, analytics, search, commenting systems, forms, chat e-commerce, surveys, or other systems. Instead, you leverage the services you need into your static Jekyll site. CloudCannon has put together a [long list of services](http://cloudcannon.com/tips/2014/12/12/the-ultimate-list-of-services-for-static-websites.html) that you can integrate into your static site.
 
-<a class="noCrossRef" href="http://jekyll.tips/services/" class="noExtIcon"><img class="medium" src="images/servicesforstaticsites.png" alt="services for static websites" /></a>
+{% include course_image.html url="http://jekyll.tips/services/" filename="servicesforstaticsites" ext_print="png" ext_web="png" alt="Many sites pull in all the services they need through external APIs" caption="Many sites pull in all the services they need through external APIs" %}
 
 This cafeteria style model is replacing the massive, swiss-army-site model that tries to do anything and everything. It's better to rely on specialized companies to create powerful, robust tools (such as search) and leverage their service rather than trying to build all of these services yourself.
 
@@ -78,7 +78,7 @@ The way each site leverages its service is usually through a REST API of some ki
 
 Many employers are looking to hire technical writers who can create not only complete and accurate documentation, but who can also create stylish outputs for their documentation. Here's a job posting from a recruiter looking for someone who can emulate Dropbox's documentation:
 
-<img class="medium" src="images/indeed_com.png" alt="Indeed example" />
+{% include course_image.html url="" size="medium" filename="indeed_com" ext_print="png" ext_web="png" alt="Job description asking for someone with skills to create doc site like Dropbox" caption="Job description asking for someone with skills to create doc site like Dropbox" %}
 
 As you can see, the client wants to find "someone who'll emulate Dropbox's documentation."
 
@@ -86,7 +86,7 @@ Why does the look and feel of the documentation matter so much? With API documen
 
 Here's what the Dropbox API looks like:
 
-<a class="noCrossRef" href="https://www.dropbox.com/developers" class="noExtIcon"><img class="medium" src="images/dropbox_clean.png" alt="Dropbox API" /></a>
+{% include course_image.html url="https://www.dropbox.com/developers" filename="dropbox_clean" ext_print="png" ext_web="png" alt="Dropbox API's developer site has a simple but clean UI" caption="Dropbox API's developer site has a simple but clean UI" %}
 
 It's not a sophisticated design. But its simplicity and brevity are what make it appealing. When you consider that the API documentation is more or less the product interface, building a sharp, modern-looking doc site is paramount for credibility and traction in the market. (I dive into the [job market for API documentation later](jobapis_overview.html).)
 
@@ -106,7 +106,7 @@ When you try to navigate the world of API documentation, you may be initially ov
 
 Realizing there was a need for more information, in 2014 I guest-edited a special issue of Intercom dedicated to API documentation.
 
-<a class="noCrossRef" href="http://bit.ly/stcintercomapiissue" class="noExtIcon"><img class="small" src="images/intercom.png" alt="STC Intercom issue focused on API documentation" /></a>
+{% include course_image.html url="http://bit.ly/stcintercomapiissue" size="small" filename="intercom" ext_print="png" ext_web="png" alt="STC Intercom issue focused on API documentation" caption="STC Intercom issue focused on API documentation" %}
 
 {: .tip}
 You can read this issue for free at [http://bit.ly/stcintercomapiissue](http://bit.ly/stcintercomapiissue).

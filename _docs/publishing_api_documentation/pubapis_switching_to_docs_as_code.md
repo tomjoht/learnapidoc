@@ -265,6 +265,8 @@ To Learn more about docs as code, see Anne Gentle's book [Docs Like Code](https:
 I recently [gave a presentation on Docs-as-code tools and workflows](https://idratherbewriting.com/2018/03/09/docs-as-code-tools-and-workflows-denver-presentation/) to the STC Rocky Mountain and WTD Denver group.
 
 {% if site.format == "kindle" or site.format == "pdf" %}
+
+{: .note}
 This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/pubapis_overview.html to view the content.
 {% elsif site.format == "web" %}
 
