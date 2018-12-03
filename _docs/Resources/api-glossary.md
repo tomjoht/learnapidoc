@@ -3,17 +3,17 @@ title: API glossary
 permalink: /api-glossary.html
 keywords:
 course: "Documenting REST APIs"
-weight: 10.5
+weight: 13.01
 sidebar: docapis
-section: glossary
-path1: /glossary.html
+section: resources
+path1: /resources.html
 ---
 
 API
 : Application Programming Interface. Enables different systems to interact with each other programmatically. Two types of APIs are web services and library-based APIs. See [What is a REST API?](docapis_what_is_a_rest_api.html).
 
 API Console
-: Renders an interactive display for the RAML spec. Similar to Swagger UI, but for [RAML](https://idratherbewriting.com/learnapidoc/pubapis_raml.html#apiconsole). See [github.com/mulesoft/api-console](https://github.com/mulesoft/apiconsole).
+: Renders an interactive display for the RAML spec. Similar to Swagger UI, but for [RAML](pubapis_raml.html#apiconsole). See [github.com/mulesoft/api-console](https://github.com/mulesoft/apiconsole).
 
 APIMATIC
 : Supports most REST API description formats (OpenAPI, RAML, API Blueprint, etc.) and provides SDK code generation, conversions from one spec format to another, and many more services. APIMATIC "lets you define APIs and generate SDKs for more than 10 languages." For example, you can automatically convert Swagger 2.0 to 3.0 using the [API Transformer](https://apimatic.io/transformer) service on this site. See [https://apimatic.io/](https://apimatic.io/) and read their [documentation](https://docs.apimatic.io/).
@@ -25,7 +25,7 @@ Apiary
 : Platform that supports the full life-cycle of API design, development, and deployment. For interactive documentation, Apiary supports the API Blueprint specification, which similar to OpenAPI or RAML but includes more Markdown elements. It also supports the OpenAPI specification now too. See [apiary.io](https://apiary.io).
 
 API Blueprint
-: The API Blueprint spec is an alternative specification to OpenAPI or RAML. API Blueprint is written in a Markdown-flavored syntax. See [API Blueprint](https://idratherbewriting.com/learnapidoc/pubapis_api_blueprint.html) in this course, or go to [API Blueprint's homepage](https://apiblueprint.org/) to learn more.
+: The API Blueprint spec is an alternative specification to OpenAPI or RAML. API Blueprint is written in a Markdown-flavored syntax. See [API Blueprint](pubapis_api_blueprint.html) in this course, or go to [API Blueprint's homepage](https://apiblueprint.org/) to learn more.
 
 Apigee
 : Similar to Apiary, Apigee provides services for you to manage the whole lifecycle of your API. Specifically, Apigee lets you "manage API complexity and risk in a multi- and hybrid-cloud world by ensuring security, visibility, and performance across the entire API landscape." Supports the OpenAPI spec. See [apigee.com](https://apigee.com/api-management/).
@@ -82,7 +82,7 @@ method
 : The allowed operation with a resource in terms of GET, POST, PUT, DELETE, and so on. These operations determine whether you're reading information, creating new information, updating existing information, or deleting information. See [Endpoints and methods](docapis_resource_endpoints.html).
 
 Mulesoft
-: Similar to Apiary or Apigee, Mulesoft provides an end-to-end platform for designing, developing, and distributing your APIs. For documentation, Mulesoft supports [RAML](https://idratherbewriting.com/learnapidoc/pubapis_raml.html). See [https://www.mulesoft.com/](https://www.mulesoft.com/).
+: Similar to Apiary or Apigee, Mulesoft provides an end-to-end platform for designing, developing, and distributing your APIs. For documentation, Mulesoft supports [RAML](pubapis_raml.html). See [https://www.mulesoft.com/](https://www.mulesoft.com/).
 
 OAS
 : Abbreviation for OpenAPI specification.
@@ -124,7 +124,7 @@ Query string parameters
 : Parameters that appear in the query string of the endpoint, after the `?`. See [Parameters](docapis_doc_parameters.html) for more details.
 
 RAML
-: Stands for REST API Modeling Language and is similar to OpenAPI specifications. RAML is backed by Mulesoft, a commercial API company, and uses a more YAML-based syntax in the specification. See [RAML tutorial](https://idratherbewriting.com/learnapidoc/pubapis_raml.html) in this course or [RAML](https://raml.org/).
+: Stands for REST API Modeling Language and is similar to OpenAPI specifications. RAML is backed by Mulesoft, a commercial API company, and uses a more YAML-based syntax in the specification. See [RAML tutorial](pubapis_raml.html) in this course or [RAML](https://raml.org/).
 
 RAML Console
 : In Mulesoft, the RAML Console is where you design your RAML spec. Similar to the Swagger Editor for the OpenAPI spec.

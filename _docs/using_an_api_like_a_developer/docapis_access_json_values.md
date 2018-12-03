@@ -170,13 +170,8 @@ Then you would follow the same pattern as before to print it to the page. Althou
 
 ## More exercises
 
-{% if site.format == "web" %}
 If you'd like to follow some more exercises that involve calling REST APIs, accessing specific values, and printing them to the page, see the following topics in Resources:
 
 * [Get event information using the EventBrite API](docapis_eventbrite_example.html)
 * [Flickr example: Retrieve a Flickr gallery](docapis_flickr_example.html)
 * [Get wind speed using the Aeris Weather API](docapis_aerisweather_example.html)
-{% else %}
-If you'd like to follow some more exercises that involve calling REST APIs, accessing specific values, and printing them to the page, see the Resources section in the online site.
-
-{% endif %}

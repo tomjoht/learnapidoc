@@ -11,7 +11,7 @@ path1: /docapis_introtoapis.html
 I've given numerous presentations on API documentation, and I've recorded most of them. The most recent presentations are available below. Keep in mind that my API content evolves, so some older presentations might no longer match the course content.
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-This content doesn't embed well in print, as it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/docapis_course_videos.html](https://idratherbewriting.com/learnapidoc/docapis_course_videos.html) to view the content.
+This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/docapis_course_videos.html to view the content.
 {% endif %}
 
 {% if site.format == "web" %}

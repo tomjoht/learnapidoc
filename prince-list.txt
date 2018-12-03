@@ -7,7 +7,6 @@ layout: null
 {{site.baseurl}}/pdf_toc_page.html
 
 {% for folder in sidebar %}
-{% unless folder.type == "web" %}
 {{ folder.jurl | prepend: site.baseurl }}
 {% for folderitem in folder.folderitems %}
 {% if folderitem.title %}
@@ -16,7 +15,6 @@ layout: null
 {% endunless %}
 {% endif %}
 {% for subfolder in folderitem.subfolders %}
-{% unless subfolder.type == "web" %}
 {% if subfolder.title %}
 {{ subfolder.jurl | prepend: site.baseurl }}
 {% endif %}
@@ -27,7 +25,6 @@ layout: null
 {% endunless %}
 {% endif %}
 {% for subsubfolder in subfolderitem.subsubfolders %}
-{% unless subsubfolder.type == "web" %}
 {% if subsubfolder.title %}
 {{ subsubfolder.jurl | prepend: site.baseurl}}
 {% endif %}
@@ -38,11 +35,8 @@ layout: null
 {% endunless %}
 {% endif %}
 {% endfor %}
-{% endunless %}
 {% endfor %}
 {% endfor %}
-{% endunless %}
 {% endfor %}
 {% endfor %}
-{% endunless %}
 {% endfor %}

@@ -52,7 +52,7 @@ Diving into these sections will give you a solid understanding about how to docu
 
 Finally, you'll dive into different ways to [publish REST API documentation](publishingapis.html), exploring tools and specifications such as [GitHub](pubapis_github_wikis.html), [Jekyll](pubapis_jekyll.html), and other [Docs-as-code approaches](pubapis_docs_as_code.html). You'll learn how to leverage templates, build interactive API consoles so users can try out requests and see responses, and learn how to manage your content through [version control](pubapis_version_control.html).
 
-I also dive into specifications such as the [OpenAPI specification](pubapis_openapi_tutorial_overview.html) and [Swagger](pubapis_swagger_intro.html), which provides tooling for the OpenAPI specification. Additionally, I cover how to [document native library APIs](https://idratherbewriting.com/learnapidoc/nativelibraryapis.html) and generate [Javadoc](nativelibraryapis_create_javadoc.html). Throughout it all, I put these tools in a real, applicable context with examples and demos.
+I also dive into specifications such as the [OpenAPI specification](pubapis_openapi_tutorial_overview.html) and [Swagger](pubapis_swagger_intro.html), which provides tooling for the OpenAPI specification. Additionally, I cover how to [document native library APIs](nativelibraryapis.html) and generate [Javadoc](nativelibraryapis_create_javadoc.html). Throughout it all, I put these tools in a real, applicable context with examples and demos.
 
 ## Course organization
 
@@ -65,18 +65,15 @@ This course is organized into the following sections:
 *  [Documenting non-reference sections](docnonref.html)
 *  [Publishing your API documentation](publishingapis.html)
 *  [OpenAPI specification and Swagger](restapispecifications.html)
+*  [Documenting native library APIs](nativelibraryapis.html)
 *  [Getting a job in API documentation](jobapis.html)
-*  [Glossary](glossary.html)
-{% unless site.format == "web" %}
-*  [Documenting native library APIs](https://idratherbewriting.com/learnapidoc/nativelibraryapis.html)
-*  [Resources](resources.html)
-{% endunless %}
+*  [Resources and glossary](resources.html)
 
 You don't have to read the sections in order &mdash; feel free to skip around as you prefer. But some of the earlier sections (such as the section on [Using a REST API like a developer](likeadeveloper.html), and the section on [Documenting endpoints](docendpoints.html)) follow a somewhat sequential order with the same weather API scenario.
 
 Because the purpose of the course is to help you learn, there are many activities that require hands-on coding and other exercises. Along with the learning activities, there are also conceptual deep dives, but the focus is always on *learning by doing*. Where there are hands-on activities, I typically include this icon in the section title: <i class="fa fa-user-circle"></i>
 
-Other topics have the word "Activity" in the title. The activities are integrated in various sections, but you can also see a consolidated list of activity content in the [Workshop Activities](https://idratherbewriting.com/learnapidoc/docapis_workshop_activities.html).
+Other topics have the word "Activity" in the title. The activities are integrated in various sections, but you can also see a consolidated list of activity content in the [Workshop Activities](docapis_workshop_activities.html).
 
 I refer to the content here as a "course" instead of a book or a website, primarily because I include a lot of exercises throughout in each section, and I find that people who want to learn API documentation prefer a more hands-on "course" experience.
 
@@ -109,9 +106,18 @@ Here are a few tools you'll need to do the exercises in this course:
 
 ## Video recordings
 
-For video recordings of this course, see the [Recorded Video Presentations](https://idratherbewriting.com/learnapidoc/docapis_course_videos.html). The most recent full-length video of the entire course is a full-day API workshop I gave in Menlo Park, California in November 2018.
+For video recordings of this course, see the [Recorded Video Presentations](docapis_course_videos.html). The most recent full-length video of the entire course is a half-day API workshop I gave in Denver in March 2018.
 
-I have various slides that cover different sections of this course. See the [course slides](https://idratherbewriting.com/learnapidoc/docapis_course_slides.html).
+## Slides
+
+I have various slides that cover different sections of this course. See the following:
+
+* [Intro to API documentation](https://idratherbewriting.com/intro-to-api-documentation/index.html)
+* [Non-reference content in API docs](https://idratherbewriting.com/nonref-content-api-docs/#/)
+* [OpenAPI and Swagger](https://idratherbewriting.com/openapi-and-swagger/#/)
+* [Publishing API documentation](https://idratherbewriting.com/publishing-api-docs/#/)
+
+These slides are all hosted on GitHub and are open source. I use [RevealJS](https://github.com/hakimel/reveal.js/) for slides, which lets me create the slide content in HTML. If you're a teacher using material from this course in your classroom, you can adapt the slides as needed for your lessons.
 
 ## Stay updated
 

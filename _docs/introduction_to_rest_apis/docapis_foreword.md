@@ -50,6 +50,6 @@ One of my goals for the content is to keep this course a living, evolving docume
 * Students learning how to prepare themselves technically to succeed in the tech comm field, which is becoming more focused on developer documentation.
 * Developers who are documenting their own APIs and want to know best practices for structure, terminology, and style with tech docs.
 
-If you have general feedback about this course, feel free to [drop me a line](https://idratherbewriting.com/learnapidoc/contact.html).
+If you have general feedback about this course, feel free to [drop me a line](contact.html).
 
 {% include random_ad.html %}

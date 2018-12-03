@@ -13,7 +13,7 @@ Finding an open-source project to which you can contribute and work with can be 
 
 4.  Click **Search** and browse [the results](https://github.com/search?utf8=%E2%9C%93&q=documentation+api+label%3A%22help+wanted%22&type=Issues&ref=advsearch&l=&l=).
 
-    In the results, you might want to look for a REST API project (rather than a native-library API such as a Java API). Are there any projects that look interesting or promising? If so, great. If not, adjust some of the keywords and keep looking.
+    In the results, you might want to look for a REST API project (rather than a [native-library API](nativelibraryapis_overview.html) such as a Java API). Are there any projects that look interesting or promising? If so, great. If not, adjust some of the keywords and keep looking.
 
 5.  If searching GitHub doesn't yield any appropriate projects, try the following resources:
 
