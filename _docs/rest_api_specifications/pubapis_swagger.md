@@ -146,7 +146,7 @@ Swagger UI provides a number of [configuration parameters](https://github.com/sw
 
 We won't get too much into the details of these configuration parameters in the tutorial. I just want to call attention to these parameters here for awareness.
 
-If you look at the [source of the Swagger UI demo](view-source:https://idratherbewriting.com/learnapidoc/assets/files/swagger/), you'll see the parameters listed in the `// Build a system` section:
+If you look at the [source of the Swagger UI demo](https://idratherbewriting.com/learnapidoc/assets/files/swagger/) (go to View > Source), you'll see the parameters listed in the `// Build a system` section:
 
 ```js
   // Build a system

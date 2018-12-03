@@ -45,9 +45,7 @@ You could then use a [`for` loop](https://help.shopify.com/themes/liquid/objects
 
 This approach makes it easy to change your template without reformatting all of your pages. For example, if you decide to change the order of the elements on the page, or if you want to add new classes or some other value, you just alter the template. The values remain the same, since they can be processed in any order.
 
-For a more full-fledged example of API templating, see the [Aviator theme from CloudCannon](https://github.com/CloudCannon/aviator-jekyll-template). In my [Jekyll tutorial](pubapis_jekyll.html#publish-the-endpoint-in-the-jekyll-aviator-theme) later in the course, I include an activity where you add a new weatherdata endpoint to the Aviator theme, using the same frontmatter templating designed by the theme author.
-
-The sample endpoint for adding books in the Aviator theme looks as follows:
+For a more full-fledged example of API templating, see the [Aviator theme from CloudCannon](https://github.com/CloudCannon/aviator-jekyll-template). The sample endpoint for adding books in the Aviator theme looks as follows:
 
 ```
 ---
@@ -169,7 +167,7 @@ If you can integrate the branding and search, users may not care. But if it feel
 
 Think about other content that users will interact with, such as Marketing content, terms of service, support, and so on. How do you pull together all of this information into a single site experience without resorting to an overbloated CMS or some other web framework?
 
-The reality is that most API documentation sites are custom-designed websites that blend seamlessly with the other marketing content on the site, because your API doc must sell your API. As a website platform (rather than a tripane help output), you can leverage all the HTML, CSS, and JS techniques available in building websites. You aren't limited to a small subset of available tools that are allowed by your [HAT](pubapis_docs_as_code.html#hats); instead, you have the whole web landscape and toolset at your disposal.
+The reality is that most API documentation sites are custom-designed websites that blend seamlessly with the other marketing content on the site, because your API doc must sell your API. As a website platform (rather than a tripane help output), you can leverage all the HTML, CSS, and JS techniques available in building websites. You aren't limited to a small subset of available tools that are allowed by a particular help authoring tool; instead, you have the whole web landscape and toolset at your disposal.
 
 This open invitation to use the tools of the web to construct your API doc site is both a benefit and a challenge. A benefit because, for the most part, there's nothing you can't do with your docs. You're only limited by your lack of knowledge about front-end coding. But it's also a challenge because many of the needs you may have with docs (single sourcing, PDF, variables, and more) might not be readily available with common website tooling.
 
@@ -243,7 +241,7 @@ Here's a sample API explorer from [Watson's AlchemyLanguage API](https://watson-
 
 <a href="https://watson-api-explorer.mybluemix.net/apis/alchemy-language-v1#!/Authors/get_html_HTMLGetAuthors" class="noExtIcon" class="noExtIcon"><img src="images/watson-try-it-out.png"/></a>
 
-Are API explorers novel, or instructive? If you're going to be making a lot of calls, there's no reason why you couldn't just use [curl](docapis_make_curl_call.html) or [Postman](docapis_postman.html) (particularly the [Postman Run Button](docapis_doc_getting_started_section.html#postman)) to quickly make the request and see the response. However, the API Explorer embedded directly in your documentation provides more of a graphical user interface that makes the endpoints accessible to more people. You don't have to worry about entering exactly the right syntax in your call &mdash; you just have to fill in the blanks.
+Are API explorers novel, or instructive? If you're going to be making a lot of calls, there's no reason why you couldn't just use [curl](docapis_make_curl_call.html) or [Postman](docapis_postman.html) (particularly the [Postman Run Button](docapis_doc_getting_started_section.html#run-in-postman-button)) to quickly make the request and see the response. However, the API Explorer embedded directly in your documentation provides more of a graphical user interface that makes the endpoints accessible to more people. You don't have to worry about entering exactly the right syntax in your call &mdash; you just have to fill in the blanks.
 
 However, API Explorers tend to work better with simpler APIs. If your API requires you to retrieve data before you can use a certain endpoint, or if the data you submit is a JSON object in the body of the post, or you have some other complicated interdependency with the endpoints, the API Explorer might not be as helpful. Nevertheless, clearly it is a design pattern to provide this kind of interactivity in API documentation.
 

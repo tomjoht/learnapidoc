@@ -30,7 +30,7 @@ REST APIs can use a number of different security approaches to authorize request
 * OAuth 2.0
 * Open ID Connect
 
-In this step of the OpenAPI tutorial, we'll use the API key approach, since this is what the OpenWeatherMap API uses. If your API uses [OAuth 2.0](docapis_more_about_authorization.html#oauth-20) or another method, you'll need to read the [Security Scheme information](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#security-scheme-object) for details on how to configure it. However, all the security methods largely follow the same pattern.
+In this step of the OpenAPI tutorial, we'll use the API key approach, since this is what the OpenWeatherMap API uses. If your API uses [OAuth 2.0](docapis_more_about_authorization.html#oauth) or another method, you'll need to read the [Security Scheme information](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#security-scheme-object) for details on how to configure it. However, all the security methods largely follow the same pattern.
 
 {% include random_ad.html %}
 
@@ -132,7 +132,7 @@ Now that we've added authorization, let's test it out. In the Swagger Editor (th
 
 Then in the Current Weather Data section, expand the **GET weather** endpoint and click **Try it out**. In the **zip** field, enter your zip code and country abbreviation (`e.g., 95050,us`), and then click **Execute**.
 
-When you execute the request, Swagger UI shows you the [curl request]((docapis_make_curl_call.html)) that is submitted. For example, after executing a weather request, the curl is as follows:
+When you execute the request, Swagger UI shows you the [curl request](docapis_make_curl_call.html) that is submitted. For example, after executing a weather request, the curl is as follows:
 
 ```bash
 curl -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050&units=imperial&lang=en&mode=json&appid=fd4698c940c6d1da602a70ac34f0b147" -H "accept: application/json"

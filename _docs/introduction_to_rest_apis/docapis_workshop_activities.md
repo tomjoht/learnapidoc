@@ -13,7 +13,13 @@ redirect_from:
 
 For API workshops, it helps to consolidate activities into a single page with brief instructions. The content for the activities below is the same content that appears in other parts of the course &mdash; it's just pulled in here for convenience.
 
-Because completing the activities is an essential part of learning, I've tried to incorporate as many hands-on learning activities as possible, making them both practical and useful. If you have feedback about how to improve the activities, or places where you keep getting stuck, [let me know](contact.html).
+Because completing the activities is an essential part of learning, I've tried to incorporate as many hands-on learning activities as possible, making them both practical and useful. If you have feedback about how to improve the activities, or places where you keep getting stuck, [let me know](https://idratherbewriting.com/learnapidoc/contact.html).
+
+{% if site.format == "kindle" or site.format == "pdf" %}
+The content here merely contains the same exercises that appear embedded in other places throughout the site. I just consolidate them here for convenience when teaching workshops. See [https://idratherbewriting.com/learnapidoc/docapis_workshop_activities.html](https://idratherbewriting.com/learnapidoc/docapis_workshop_activities.html) to view the content.
+{% endif %}
+
+{% if site.format == "web" %}
 
 ## Part I: Intro to API documentation
 
@@ -76,3 +82,5 @@ Please take this survey to provide feedback about the workshop: [https://www.que
 {% include random_ad.html %}
 
 {% include random_ad2.html %}
+
+{% endif %}

@@ -707,7 +707,7 @@ The Models section is now in the latest version of Swagger UI. I'm not really su
 
 You don't need this Models section in Swagger UI because both the request and response sections of Swagger UI provide a "Model" link that lets the user toggle to this view. For example:
 
-You might confuse users by including the Models section. To hide Models, add the parameter `defaultModelsExpandDepth: -1` parameter in your Swagger UI project. I provide a [Swagger UI tutorial](pubapis_swagger.html#create-a-swagger-ui-display-with-an-openapi-spec-document) in an upcoming section in this course. See the [Swagger UI parameters documentation](https://github.com/swagger-api/swagger-ui/blob/master/docs/usage/configuration.md#parameters) for more details on how to configure Swagger UI.
+You might confuse users by including the Models section. To hide Models, add the parameter `defaultModelsExpandDepth: -1` parameter in your Swagger UI project. I provide a [Swagger UI tutorial](pubapis_swagger.html#create_swaggerui) in an upcoming section in this course. See the [Swagger UI parameters documentation](https://github.com/swagger-api/swagger-ui/blob/master/docs/usage/configuration.md#parameters) for more details on how to configure Swagger UI.
 
 ## Security definitions
 

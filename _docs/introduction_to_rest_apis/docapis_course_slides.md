@@ -10,6 +10,12 @@ path1: /docapis_introtoapis.html
 
 The slides correspond to API workshops that I gave. The slide groups mirror the same sections in the course.
 
+{% if site.format == "kindle" or site.format == "pdf" %}
+This content doesn't embed well in print, since it merely contains thumbnail images pointing HTML slide decks. Please go to [https://idratherbewriting.com/learnapidoc/docapis_course_slides.html](https://idratherbewriting.com/learnapidoc/docapis_course_slides.html) to view the content.
+{% endif %}
+
+{% if site.format == "web" %}
+
 ## Part I: Introduction to API Documentation
 
 <a href="/learnapidoc/slides/intro_api_documentation.html" class="noCrossRef"><img src="images/introapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
@@ -41,3 +47,5 @@ The slides correspond to API workshops that I gave. The slide groups mirror the 
 {% include random_ad.html %}
 
 {% include random_ad2.html %}
+
+{% endif %}
