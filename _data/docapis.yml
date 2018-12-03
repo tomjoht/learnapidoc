@@ -222,9 +222,6 @@ folders:
   - title: "Activity: Assess the non-reference content in your project"
     jurl: /docapis_nonref_activity.html
 
-  - title: Next phase of course
-    jurl: /docapis_completion.html
-
 - title: "Part VII: Publishing your API documentation"
   jurl: /publishingapis.html
   folderitems:

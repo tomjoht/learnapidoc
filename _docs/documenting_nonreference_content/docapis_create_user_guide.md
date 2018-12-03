@@ -11,8 +11,6 @@ path1: /docnonref.html
 
 Up until this point, we've been focusing on the [reference aspect of API documentation](docendpoints.html) (the endpoints). The reference documentation is only one part (granted, a significant one) in API documentation. In this section, I'll cover the main non-reference topics that are commonly found in API documentation. Rather than "non-reference topics," you might consider this type of information part of the "user guide."
 
-{% include random_ad.html %}
-
 * TOC
 {:toc}
 
@@ -47,5 +45,7 @@ Sure, there are innumerable ways that users can put together different endpoints
  * Show the number of times a post has been retweeted
 
 In your non-reference documentation, you'll want to provide documentation for these business goals, just like you would with any user guide. Seeing the tasks users can do with an API may be a little less familiar because you don't have a GUI to click through. But the basic concept is the same &mdash; find out what tasks users want to do with this product, and explain how to do it.
+
+{% include random_ad.html %}
 
 I provide some instruction for this general area in [Code samples/tutorials](docapis_codesamples_bestpractices.html), but you might need to go beyond these non-reference sections to include additional topics based on your user's goals.

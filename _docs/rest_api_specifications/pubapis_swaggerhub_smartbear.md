@@ -10,7 +10,6 @@ path1: /restapispecifications.html
 
 Previously, I explored using the open-source [Swagger UI project](pubapis_swagger.html) as a way to render your [OpenAPI specification document](pubapis_openapi_tutorial_overview.html). The same company (Smartbear) that offers the free, open-source version of Swagger Editor and Swagger UI also offers a premium version with more robust features. This premium version is called [SwaggerHub](https://app.swaggerhub.com/). You can see a comparison of features between the open source and premium versions [here](https://swaggerhub.com/swagger-open-source-comparison/).
 
-{: .tip}
 You can see a demo of the [sample OpenWeatherMap API on SwaggerHub here](https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/).
 
 {% if site.format == "web" %}

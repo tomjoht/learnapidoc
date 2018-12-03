@@ -13,8 +13,7 @@ path1: /likeadeveloper.html
 
 This tutorial continues from the previous topic, [Inspect the JSON from the response payload](docapis_json_console.html). In the [sample page](https://idratherbewriting.com/learnapidoc/assets/files/weatherdata-plain.html) where you logged the `weather` response to the JS Console, the REST response information didn't appear on the page. It only appeared in the JS Console. You need to use dot notation and JavaScript to access the JSON values you want. In this tutorial, you'll use a bit of JavaScript to print some of the response to the page.
 
-{: .note}
-This section will use a little bit of JavaScript. You probably wouldn't use this code very much for documentation, but it's important to know anyway.
+Note that this section will use a little bit of JavaScript. Depending on your role, you might not use this code much in your documentation, but it's important to know anyway.
 
 * TOC
 {:toc}

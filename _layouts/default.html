@@ -21,8 +21,10 @@
 
                 <h1>{{page.title}}</h1>
                 <div class="amazonBook">
-                {% include amazon_book.html %}
+                {% comment %}{% include amazon_book.html %}{% endcomment %}
+                {% unless page.no_newsletter == true %}
                 {% include tinyletter.html %}
+                {% endunless %}
                 </div>
 
                 {{content}}

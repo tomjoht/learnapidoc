@@ -10,6 +10,9 @@ path1: /testingdocs.html
 
 Now that you've read about testing, it's time to get some more hands-on practice.
 
+* TOC
+{:toc}
+
 ## 1. Test a topic
 
 With the [open-source API project you're working with](docapis_find_open_source_project.html), find one of the following:

@@ -100,7 +100,7 @@ The important point is that the secret key (critical to reconstructing the hash)
 
 One popular method for authenticating and authorizing users is OAuth 2.0. This approach relies on an authentication server to communicate with the API server in order to grant access. You often see OAuth 2.0 when you're using a site and are prompted to log in using a service like Twitter, Google, or Facebook.
 
-{% include course_image.html filename="oauthwindow" ext_web="png" alt="OAuth login window" caption="OAuth login window" %}
+{% include course_image.html filename="oauthwindow" ext_web="png" ext_print="png" alt="OAuth login window" caption="OAuth login window" %}
 
 There are a few varieties of OAuth &mdash; namely, "one-legged OAuth" and "three-legged OAuth." One-legged OAuth is used when you don't have sensitive data to secure. This might be the case if you're just retrieving general, read-only information (such as news articles).
 

@@ -5,6 +5,7 @@ weight: 3.7
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
+no_newsletter: true
 ---
 
 Let's pull together the various parts we've worked on and bring them together to showcase the full example.

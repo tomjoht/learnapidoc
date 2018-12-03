@@ -53,7 +53,7 @@ Or click **Clone in Desktop** and navigate to the right path in Github Desktop.
 
 	  The Java files should be visible in the left pane (Package Explorer) within your Eclipse IDE.
 
-    {% include course_image.html size="medium" border="true" filename="eclipsefileview" ext_print="" ext_web="png" alt="png" caption="Eclipse File View" %}
+    {% include course_image.html size="medium" border="true" filename="eclipsefileview" ext_print="png" ext_web="png" alt="png" caption="Eclipse File View" %}
 
 ## <i class="fa fa-user-circle"></i> Play with the Sample Java Project
 

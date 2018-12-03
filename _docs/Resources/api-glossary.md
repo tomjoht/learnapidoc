@@ -9,8 +9,6 @@ section: resources
 path1: /resources.html
 ---
 
-{% include random_ad2.html %}
-
 API
 : Application Programming Interface. Enables different systems to interact with each other programmatically. Two types of APIs are web services and library-based APIs. See [What is a REST API?](docapis_what_is_a_rest_api.html).
 
@@ -196,5 +194,7 @@ version control
 
 YAML
 : Recursive acronym for "YAML Ain't No Markup Language." A human-readable, space-sensitive syntax used in the OpenAPI specification document. See [More About YAML](pubapis_yaml.html).
+
+{% include random_ad2.html %}
 
 {% include random_ad.html %}

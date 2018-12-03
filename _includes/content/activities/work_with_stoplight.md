@@ -13,7 +13,13 @@ To work with an OpenAPI file in Stoplight:
 7.  Click the **+openweathermap_swagger20.oas2.yml** button. The OpenAPI file gets uploaded into Stoplight and the data populates the Stoplight interface.
 8.  At the top of the screen, switch between the **Code** and **Design** views by clicking the corresponding buttons at the top. Make some edits in the code and then switch to the Design view to see the edits reflected. (Note that Stoplight prefers JSON as the code format.) The following video shows this process:
 
+    {% if site.format == "kindle" or site.format == "pdf" %}
+    This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/pubapis_stoplight.html to view the content.
+    {% elsif site.format == "web" %}
+
     <figure><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/vqDJBa-haYs" width="560" height="340" frameborder="0" allow="autoplay; encrypted-media" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div><figcaption>When you switch to the code view, the editor automatically goes to the part of the spec you were creating in the visual editor and highlights it. When you switch back, the visual UI updates with any changes you made in the code. Switching between modes is seamless and easy.</figcaption></figure>
+
+    {% endif %}
 
 9.  Explore the different options in the Design editor (specifically, expand **Paths** and click **/weather > Call current weather data for...**) and make some arbitrary textual changes to see how to update information.
 
@@ -78,7 +84,13 @@ One of the coolest features in Stoplight is the ability to auto-generate the sch
 
     Here's a short video showing the process of auto-generating JSON. The Stoplight editor has evolved a bit, but it's still highly similar. (Instead of starting with the above sample JSON, the video makes request in Postman and then copies the response from there &mdash; but the idea should be clear.)
 
+    {% if site.format == "kindle" or site.format == "pdf" %}
+    This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/pubapis_stoplight.html to view the content.
+    {% elsif site.format == "web" %}
+
     <figure><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/0IOWY0Hj3Xc?ecver=2" width="560" height="340" frameborder="0" allow="autoplay; encrypted-media" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div><figcaption>Stoplight's visual modeling tools let you automatically create the correct JSON schema definition from a block of JSON that you paste in.</figcaption></figure>
+    
+    {% endif %}
 
 7.  Click the **Raw Schema** tab to see the code that Stoplight automatically wrote for you based on the sample JSON you copied in.
 
