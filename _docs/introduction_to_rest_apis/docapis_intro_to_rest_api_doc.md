@@ -30,7 +30,7 @@ With REST APIs, you don't deliver a library of files to users. Instead, the user
 
 REST APIs follow the same protocol as the web. When you open a browser and type a website URL (such as https://idratherbewriting.com), you're actually making a GET request for a resource on a server. The server responds with the content and the browser makes the content visible.
 
-This course focuses mostly on REST APIs because REST APIs are more popular and in demand, and they're also more accessible to technical writers. You don't need to know programming to document REST APIs. And REST is becoming the most common type of API anyway. (Even so, I also cover native library APIs in a [later section](nativelibraryapis_overview.html).)
+This course focuses mostly on REST APIs because REST APIs are more popular and in demand, and they're also more accessible to technical writers. You don't need to know programming to document REST APIs. And REST is becoming the most common type of API anyway. {% unless site.format == "web" %}(Even so, I also cover native library APIs in a [later section](nativelibraryapis_overview.html).){% endunless %}
 
 ## Programmableweb API survey rates doc #1 factor in APIs
 

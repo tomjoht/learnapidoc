@@ -162,7 +162,7 @@ Although there is a possible WADL (Web Application Description Language) file th
 
 In order to understand how to interact with a REST API, you have to *read the documentation* for the API. Hooray! This makes the technical writer's role extremely important with REST APIs.
 
-Some formal specifications &mdash; for example, such [OpenAPI](pubapis_swagger_intro.html) and [RAML](pubapis_raml.html) &mdash; have been developed to describe REST APIs. When you describe your API using the OpenAPI or RAML specification, tools that can read those specifications (such as [Swagger UI](pubapis_swagger.html) or the [RAML API Console](pubapis_raml.html#apiconsole)) will generate an interactive documentation output.
+Some formal specifications &mdash; for example, such [OpenAPI](pubapis_swagger_intro.html), have been developed to describe REST APIs. When you describe your API using the OpenAPI specification, tools that can read those specifications (such as [Swagger UI](pubapis_swagger.html) will generate an interactive documentation output.
 
 The OpenAPI specification document can take the place of the WSDL file that was more common with SOAP. Tools like [Swagger UI](pubapis_swagger.html) that read the specification documents are usually interactive (featuring API Consoles or API Explorers) and allow you to try out REST calls and see responses directly in the documentation.
 

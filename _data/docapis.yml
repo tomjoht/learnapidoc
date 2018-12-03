@@ -12,12 +12,15 @@ folders:
 
   - title: Recorded video presentations
     jurl: /docapis_course_videos.html
+    type: web
 
   - title: Course slides
     jurl: /docapis_course_slides.html
+    type: web
 
   - title: "Workshop activities"
     jurl: /docapis_workshop_activities.html
+    type: web
 
   - title: Why I developed this course
     jurl: /docapis_foreword.html
@@ -285,62 +288,83 @@ folders:
   - title: Locations for API doc writer jobs
     jurl: /jobapis_location.html
 
-- title: "Part IX: Documenting native library APIs"
+- title: "Part IX: Glossary"
+  jurl: /glossary_landing_page.html
+  folderitems:
+
+  - title: API Glossary
+    jurl: /api-glossary.html
+
+- title: "Part X: Documenting native library APIs"
   jurl: /nativelibraryapis.html
+  type: web
+
   folderitems:
 
   - title: Overview of native library APIs
     jurl: /nativelibraryapis_overview.html
+    type: web
 
   - title: Get the Java source
     jurl: /nativelibraryapis_getting_the_source.html
+    type: web
 
   - title: Java crash course
     jurl: /nativelibraryapis_java_crash_course.html
+    type: web
 
   - title: "Activity: Generate a Javadoc from a sample project"
     jurl: /nativelibraryapis_create_javadoc.html
+    type: web
 
   - title: Javadoc tags
     jurl: /nativelibraryapis_javadoc_tags.html
+    type: web
 
   - title: Explore the Javadoc output
     jurl: /nativelibraryapis_exploring_javadoc_output.html
+    type: web
 
   - title: Make edits to Javadoc tags
     jurl: /nativelibraryapis_editing_javadoc.html
+    type: web
 
   - title: Doxygen, a document generator mainly for C++
     jurl: /nativelibraryapis_doxygen.html
+    type: web
 
   - title: Create non-ref docs with native library APIs
     jurl: /nativelibraryapis_nonrefdocs.html
+    type: web
 
-
-- title: "Part X: Glossary and resources"
+- title: "Part XI: Additional resources"
   jurl: /resources.html
+  type: web
   folderitems:
-
-  - title: Glossary
-    jurl: /api-glossary.html
 
   - title:  REST API exercises
     jurl: /docapis_more_rest_exercises.html
+    type: web
 
   - title: "Activity: Get event information using the EventBrite API"
     jurl: /docapis_eventbrite_example.html
+    type: web
 
   - title: "Activity: Retrieve a gallery using the Flickr API"
     jurl: /docapis_flickr_example.html
+    type: web
 
   - title: "Activity: Get wind speed using the Aeris Weather API"
     jurl: /docapis_aerisweather_example.html
+    type: web
 
   - title: RAML tutorial
     jurl: /pubapis_raml.html
+    type: web
 
   - title: API Blueprint tutorial
     jurl: /pubapis_api_blueprint.html
+    type: web
 
 
 

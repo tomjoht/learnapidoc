@@ -24,7 +24,7 @@ Finding the right project can be challenging, but it is critical to your portfol
 
 The ideal open-source API project should meet the following criteria. The project should:
 
-* Involve a REST API (not a [library-based API](nativelibraryapis_overview.html) or some other developer tool that isn't an API).
+* Involve a REST API (not a library-based API or some other developer tool that isn't an API).
 * Have some documentation needs.
 * Not be so technical that it's beyond your ability to learn it. (If you already have familiarity with a programming language, you might target projects that focus on that language.)
 * Be active, with a somewhat recent commit.
