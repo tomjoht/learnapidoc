@@ -23,7 +23,7 @@ curl provides a generic, language agnostic way to demonstrate HTTP requests and 
 
 ## Try using curl to GET a web page
 
-As [mentioned earlier](docapis_what_is_a_rest_api.html#the-web-itself-follows-rest), one reason REST APIs are so familiar is because REST follows the same model as the web. When you type an `http` address into a browser address bar, you're telling the browser to make an HTTP request to a resource on a server. The server returns a response, and your browser converts the response to a more visual display. But you can also see the raw code.
+As mentioned earlier, one reason REST APIs are so familiar is because REST follows the same model as the web (see ["The web itself follows REST"](docapis_what_is_a_rest_api.html#the-web-itself-follows-rest)). When you type an `http` address into a browser address bar, you're telling the browser to make an HTTP request to a resource on a server. The server returns a response, and your browser converts the response to a more visual display. But you can also see the raw code.
 
 To see an example of how curl retrieves a web resource, open a terminal and type the following:
 
@@ -35,7 +35,7 @@ You should see all the code behind the site [example.com](http://example.com). T
 
 ## Requests and responses include headers too
 
-When you type an address into a website, you see only the body of the response. But actually, there's more going on behind the scenes. When you make the request, you're sending a header that contains information about the request. The response also contains a header.
+When you type an address into a website, you see only the body of the response. But actually, there's more going on behind the scenes. When you make the request, you're sending a (request) header that contains information about the request. The response also contains a (response) header.
 
 1.  To see the response header in a curl request, include `-i` in the curl request:
 
@@ -46,17 +46,19 @@ When you type an address into a website, you see only the body of the response. 
     The header will be included *above* the body in the response:
 
     ```bash
+    ~/projects $ curl http://example.com -I
     HTTP/1.1 200 OK
+    Content-Encoding: gzip
+    Accept-Ranges: bytes
     Cache-Control: max-age=604800
-    Content-Type: text/html
-    Date: Sat, 07 Jul 2018 23:25:03 GMT
-    Etag: "1541025663+ident"
-    Expires: Sat, 14 Jul 2018 23:25:02 GMT
+    Content-Type: text/html; charset=UTF-8
+    Date: Tue, 04 Dec 2018 04:35:43 GMT
+    Etag: "1541025663+gzip"
+    Expires: Tue, 11 Dec 2018 04:35:43 GMT
     Last-Modified: Fri, 09 Aug 2013 23:54:35 GMT
-    Server: ECS (sjc/4FB8)
-    Vary: Accept-Encoding
+    Server: ECS (sjc/4F91)
     X-Cache: HIT
-    Content-Length: 1270
+    Content-Length: 606
     ```
 
 2.  To limit the response to just the header, use `-I`:
@@ -67,7 +69,7 @@ When you type an address into a website, you see only the body of the response. 
 
     The header contains the metadata about the response. All of this information is transferred to the browser when you make a request to a URL in your browser (that is, when you surf to a web page online), but the browser doesn't show you this information. You can see the header information using the [Chrome Developer Tools console](https://developers.google.com/web/tools/chrome-devtools/console/) if you look on the Network tab.
 
-3.  Now let's specify the method. The GET method used by default, but we'll make it explicit here:
+3.  Now let's specify the method. The GET method (read) is implied by default when no other method is specified, but we'll make it explicit here with the `-X` parameter:
 
     ```bash
     curl -X GET http://example.com -I
@@ -144,13 +146,13 @@ Here's what the commands mean:
 
 ## Query strings and parameters
 
-The zip code (`zip`) and app ID (`appid`) and units (`units`) parameters were passed to the endpoint using "query strings." The `?` appended to the URL is the query string where the parameters are passed to the endpoint:
+The zip code (`zip`) and app ID (`appid`) and units (`units`) parameters were passed to the endpoint using "query strings." The `?` appended to the URL indicates the start of the query string. The query string parameters are the parameters that appear *after* the `?`:
 
 <pre>
 <span style="color: red">?</span>zip=95050<span style="color: red">&</span>appid=fd4698c940c6d1da602a70ac34f0b147<span style="color: red">&</span>units=imperial
 </pre>
 
-After the query string, each parameter is concatenated with other parameters through the `&` symbol. The order of the parameters doesn't matter. The order only matters if the parameters are part of the URL path itself (not listed after the query string).
+After the query string, each parameter is concatenated with other parameters through the ampersand `&` symbol. The order of the query string parameters doesn't matter. The order only matters if the parameters are part of the URL path itself (on the left of the query string). Any configurable parts of the endpoint that appear before the query string are called [header parameters](docapis_doc_parameters.html#header_parameters) (we'll dive into these later).
 
 ## Common curl commands related to REST
 
@@ -177,7 +179,7 @@ curl has a lot of possible commands, but the following are the most common when 
 : *Example:* `curl -X POST -d "resource-to-update" http://www.example.com`
 
 `@filename`
-:  Loads content from a file
+:  Loads content from a file. Used with the data parameter (`-d`).
 :  *Example:* `curl -X POST -d @mypet.json http://www.example.com`
 
 {% else %}
@@ -260,6 +262,6 @@ Quiz yourself to see how much you remember. What do the following parameters mea
 * `-d`
 
 {: .tip}
-When you use curl, the terminal and iTerm on the Mac provide a much easier experience than using the command prompt in Windows. If you're going to get serious about API documentation but you're still on a PC, consider switching. There are a lot of utilities that you install through a terminal that *just work* on a Mac.
+When you use curl, the Terminal and [iTerm](https://www.iterm2.com/) on the Mac provide a much easier experience than using the command prompt in Windows. If you're going to get serious about API documentation but you're still on a PC, consider switching. There are a lot of utilities that you install through a terminal that *just work* on a Mac.
 
 To learn more about curl with REST documentation, see [REST-esting with curl](http://blogs.plexibus.com/2009/01/15/rest-esting-with-curl/).

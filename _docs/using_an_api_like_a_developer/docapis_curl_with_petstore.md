@@ -9,14 +9,14 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-Our [sample weather API](docapis_scenario_for_using_weather_api.html) doesn't allow you to use anything but a GET method, so for this exercise, we'll use the [petstore API from Swagger](http://petstore.swagger.io/), but without actually using the Swagger UI (which is something we'll [explore later](pubapis_swagger_intro.html)). For now, we just need an API with which we can use to create, update, and delete content.
+Our [sample weather API](docapis_scenario_for_using_weather_api.html) doesn't allow you to use anything but a GET method, so for this exercise, we'll use the [petstore API from Swagger](http://petstore.swagger.io/) but without actually using the Swagger UI (which is something we'll [explore later](pubapis_swagger_intro.html)). For now, we just need an API with which we can use to create, update, and delete content.
 
 In this example, using the Petstore API, you'll create a new pet, update the pet, get the pet's ID, delete the pet, and then try to get the deleted pet.
 
 * TOC
 {:toc}
 
-### Create a new pet
+## Create a new pet
 
 To create a pet, you have to pass a JSON message in the request body. Rather than trying to encode the JSON and pass it in the URL, you'll store the JSON in a file and reference the file.
 
@@ -77,7 +77,7 @@ A lot of APIs require you to post requests containing JSON messages in the body.
 
 {% include random_ad2.html %}
 
-### Update your pet
+## Update your pet
 
 Guess what, your pet hates its name! Change your pet's name to something more formal using the update pet method.
 
@@ -88,7 +88,7 @@ Guess what, your pet hates its name! Change your pet's name to something more fo
     curl -X PUT --header "Content-Type: application/json" --header "Accept: application/json" -d @mypet.json "http://petstore.swagger.io/v2/pet"
     ```
 
-### Get your pet's name by ID
+## Get your pet's name by ID
 
 Find your pet's name by passing the ID into the `/pet/{petID}` endpoint:
 
@@ -128,7 +128,7 @@ Find your pet's name by passing the ID into the `/pet/{petID}` endpoint:
     }
     ```
 
-### Delete your pet
+## Delete your pet
 
 Unfortunately, your pet has died. It's time to delete your pet from the pet registry.
 

@@ -35,7 +35,7 @@ In this exercise, you'll use Postman to make a request using OpenWeatherMap's [c
 1.  In Postman, click the **Save** button (next to Send).
 1.  In the Save Request dialog box, in the **Request Name** box at the top, type a friendly name for the request, such as "OpenWeatherMap Current API."
 1.  In the **Request description (Optional)** field, type a description such as "gets the current weather for 95050 in imperial units."
-3.  Scroll down a bit and click **Create collection** to create a folder to save the request in (e.g. "OpenWeatherMap"). Then select the new collection you just created.
+3.  Scroll down a bit and click **Create collection** to create a folder to save the request in (e.g., "OpenWeatherMap"). Then select the new collection you just created.
 
     After you create the collection, the Save button will be enabled. Your Postman collection should look something like this:
 
