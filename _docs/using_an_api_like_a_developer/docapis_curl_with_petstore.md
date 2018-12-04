@@ -21,9 +21,9 @@ In this example, using the Petstore API, you'll create a new pet, update the pet
 To create a pet, you have to pass a JSON message in the request body. Rather than trying to encode the JSON and pass it in the URL, you'll store the JSON in a file and reference the file.
 
 {: .tip}
-A lot of APIs require you to post requests containing JSON messages in the body. This is often how you configure a service. The list of JSON key-value pairs that the API accepts is called the "Model" in the Petstore API.
+A lot of APIs require you to post requests containing JSON messages in the body. This is often how you configure a service. The list of JSON key-value pairs that the API accepts is called the "Model" in the Swagger UI display.
 
-1.  Insert the following into a file called mypet.json. This information will be passed in the `-d` parameter of the curl request:
+1.  Insert the following into a next text file. This information will be passed in the `-d` parameter of the curl request:
 
     ```json
     {
@@ -51,8 +51,8 @@ A lot of APIs require you to post requests containing JSON messages in the body.
     {: .note}
     Use a unique ID and name that others aren't likely to also use. Also, don't begin your ID with the number 0.
 
-3.  Save the file in this directory: `Users/YOURUSERNAME`. (Replace `YOURUSERNAME` with your actual user name on your computer.)
-4.  In your Terminal, browse to the directory where you saved the mypet.json file. (Usually the default directory is `Users/YOURUSERNAME` &mdash; hence the previous step.)
+3.  Save the file in a directory that you can conveniently access from your terminal, such as your user directory (on a Mac, `Users/YOURUSERNAME` &mdash; replace `YOURUSERNAME` with your actual user name on your computer).
+4.  In your terminal, browse to the directory where you saved the **mypet.json** file. (Usually the default directory is `Users/YOURUSERNAME` &mdash; hence the previous step.)
 
     If you've never browsed directories using the command line, here's how you do it:
 
@@ -60,7 +60,7 @@ A lot of APIs require you to post requests containing JSON messages in the body.
 
     On a PC, just look at the prompt path to see your current directory. Then move up by typing `cd ../`. Move down by typing `cd pets`, where `pets` is the name of the directory you want to move into. Type `dir` to list the contents of the current directory.
 
-3.  After your Terminal or command prompt is in the same directory as your json file, create the new pet:
+3.  After your terminal or command prompt is in the same directory as your JSON file, create the new pet:
 
     ```bash
     curl -X POST --header "Content-Type: application/json" --header "Accept: application/json" -d @mypet.json "http://petstore.swagger.io/v2/pet"
@@ -72,6 +72,8 @@ A lot of APIs require you to post requests containing JSON messages in the body.
     {"id":51231236,"category":{"id":4,"name":"testexecution"},"name":"fluffernutter","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
     ```
 
+    Check to see that your pet's name was returned.
+
     {: .tip}
     Feel free to run this same request a few times more. REST APIs are \"idempotent,\" which means that running the same request more than once won't end up duplicating the results (you just create one pet here, not multiple pets). Todd Fredrich explains idempotency by [comparing it to a pregnant cow](http://www.restapitutorial.com/lessons/idempotency.html). Let's say you bring over a bull to get a cow pregnant. Even if the bull and cow mate multiple times, the result will be just one pregnancy, not a pregnancy for each mating session.
 
@@ -81,7 +83,7 @@ A lot of APIs require you to post requests containing JSON messages in the body.
 
 Guess what, your pet hates its name! Change your pet's name to something more formal using the update pet method.
 
-1.  In the mypet.json file, change the pet's name.
+1.  In the **mypet.json** file, change the pet's name.
 2.  Use the `PUT` method instead of `POST` with the same curl content to update the pet's name:
 
     ```bash
@@ -92,14 +94,14 @@ Guess what, your pet hates its name! Change your pet's name to something more fo
 
 Find your pet's name by passing the ID into the `/pet/{petID}` endpoint:
 
-1.  In your mypet.json file, copy the first `id` value.
+1.  In your **mypet.json** file, copy the first `id` value.
 2.  Use this curl command to get information about that pet ID, replacing `51231236` with your pet ID.
 
     ```bash
     curl -X GET --header "Accept: application/json" "http://petstore.swagger.io/v2/pet/51231236"
     ```
 
-    The response contains your pet name and other information:
+    The response contains your pet's name and other information:
 
     ```json
     {"id":51231236,"category":{"id":4,"name":"test"},"name":"mr. fluffernutter","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
@@ -174,13 +176,14 @@ You can import curl commands into Postman by doing the following:
 
 3.  Click **Import**.
 4.  Close the dialog box.
-5.  Click **Send**.
+5.  Click **Send**. (If you deleted your pet, you'll see the same "Pet not found" error message as before.)
 
 ## Export Postman to curl
 
 You can also export Postman to curl by doing the following:
 
-1.  In Postman, click the **Code** button (it's right below Save).
+1.  If desired, select one of your OpenWeatherMap API requests in Postman.
+1.  Click the **Code** button (it's right below Save).
 
     <img class="medium" src="images/postmangeneratecodesnippet.png" alt="Generating code snippets" />
 
@@ -188,7 +191,19 @@ You can also export Postman to curl by doing the following:
 3.  Copy the code snippet.
 
     ```bash
-    curl -X GET -H "Accept: application/json" -H "Cache-Control: no-cache" -H "Postman-Token: e40c8069-21db-916e-9a94-0b9a42b39e1b" 'http://petstore.swagger.io/v2/pet/5123123'
+    curl -X GET \
+      'https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=-121.9689848&units=imperial&appid=fd4698c940c6d1da602a70ac34f0b147' \
+      -H 'Postman-Token: de0da6b7-1dbc-44d6-acc1-9741f05a7bf1' \
+      -H 'cache-control: no-cache'
     ```
 
-    You can see that Postman adds some extra header information (`-H "Cache-Control: no-cache" -H "Postman-Token: e40c8069-21db-916e-9a94-0b9a42b39e1b"`) into the request. This extra header information is unnecessary and can be removed.
+    You can see that Postman adds some extra header information (`-H 'Postman-Token: de0da6b7-1dbc-44d6-acc1-9741f05a7bf1' \ -H 'cache-control: no-cache'`) into the request. This extra header information is unnecessary and can be removed.
+
+4.  Remove the backslashes and line breaks. If you're on Windows, change the single quotes to double quotes.
+5.  Insert the curl command into your terminal and observe the result.
+
+    ```bash
+    curl -X GET "https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=-121.9689848&units=imperial&appid=fd4698c940c6d1da602a70ac34f0b147"
+    ```
+
+    Through Postman's Import and Code functionality, you can easily switch between Postman and curl.

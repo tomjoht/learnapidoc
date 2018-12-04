@@ -40,7 +40,7 @@ To access a value in an array, you use square brackets followed by the position 
 
 To access glove, you would use `data.items[2]`.
 
-`glove` is the third item in the array. (You can't access an item directly in an array by the item's name &mdash; only by its position. Usually, programmers loop through an array and pull out values that match.)
+`glove` is the third item in the array. You can't access an item directly in an array by the item's name &mdash; only by its position. Usually, programmers loop through an array and pull out values that match.
 
 {: .note}
 With most programming languages, you usually start counting at `0`, not `1`.
@@ -112,7 +112,15 @@ In this activity, you'll practice accessing different values through dot notatio
 
     If you view the page in your browser, you'll see the page says "Sarah" for each item because we're accessing this value: `john.children[0].child1` for each item.
 
-2. Change `john.children[0].child1` to display the corresponding values for each item. For example, the word `green` should appear at the ID tag called `green`.
+    ```js
+    var sarahjson = john.children[0].child1;
+    var greenjson = john.children[0].child1;
+    var nikejson = john.children[0].child1;
+    var goldenrodjson = john.children[0].child1;
+    var jimmyjson = john.children[0].child1;
+    ```
+
+2. Change `john.children[0].child1` to display the correct values for each item. For example, the word `green` should appear at the ID tag called `green`.
 
 You can view the correct page here: [https://idratherbewriting.com/learnapidoc/assets/files/dot-notation-practice.html](https://idratherbewriting.com/learnapidoc/assets/files/dot-notation-practice.html). This page also shows the answers printed.
 
@@ -183,7 +191,7 @@ You can view the file <a href="https://idratherbewriting.com/learnapidoc/assets/
 
 ## Next section
 
-As you've gone through the exercise of using an API like a developer, you've gained a high-level understanding of how REST APIs work, what information developers need, how they might use an API, how they make requests, evaluate responses, and other details.
+As you've completed through the exercises for using an API like a developer, you've gained a high-level understanding of how REST APIs work, what information developers need, how they might use an API, how they make requests, evaluate responses, and other details.
 
 With this background, it's time to switch gears and put on your technical writing hat. In the next section, [Documenting endpoints](docendpoints.html), you'll assume the task of [documenting a new endpoint](docapis_new_endpoint_to_doc.html) that was added to a weather API. You'll learn the essential sections in endpoint reference documentation, the terminology to use, and formatting conventions for the reference information.
 

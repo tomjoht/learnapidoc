@@ -11,22 +11,18 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-Seeing the response from curl or Postman is cool, but how do you make use of the JSON data? With most API documentation, you don't need to show how to make use of JSON data. You assume that developers will use their front-end development skills to parse through the data and display it appropriately in their apps.
-
-However, to better understand how developers will access the data, we'll go through a brief tutorial to display the REST response on a web page.
+Seeing the response from curl or Postman is cool, but how do you make use of the JSON data? With most API documentation, you don't need to show how to make use of JSON data. You assume that developers will use their front-end development skills to parse through the data and display it appropriately in their apps. However, to better understand how developers will access the data, we'll go through a brief tutorial to display the REST response on a web page.
 
 * TOC
 {:toc}
 
 {% include content/activities/ajax_api_request.md %}
 
-The following sections will explain this AJAX code a bit more.
-
 {% include random_ad2.html %}
 
 ## The AJAX method from jQuery
 
-In this section, I'll explain a bit more about the `ajax` function you used earlier. This information probably isn't essential for documenting REST APIs, but it's good to understand it. To recap, here's the `ajax` script:
+In this section, I'll explain a bit more about the `ajax` function you used earlier. This information probably isn't essential for documenting REST APIs, but it's good to understand. To recap, here's the `ajax` script:
 
 ```javascript
 <script>
@@ -43,7 +39,7 @@ In this section, I'll explain a bit more about the `ajax` function you used earl
 </script>
 ```
 
-If you're working with JavaScript and APIs, probably the most useful method to know for showing code samples is the [`ajax` method from jQuery](http://api.jquery.com/jquery.ajax). In brief, this `ajax` method takes one argument: `settings`.
+If you're working with JavaScript and APIs, the [`ajax` method from jQuery](http://api.jquery.com/jquery.ajax) can be helpful with code samples. This `ajax` method takes one argument: `settings`.
 
 ```js
 $.ajax(settings)
@@ -72,7 +68,7 @@ In the earlier code sample, `done` contains an anonymous function (a function wi
 
 You can then access the values from the response object using object notation. In this example, the response is just logged to the console.
 
-This is likely a bit fuzzy right now, but it will become more clear with an example in the next section.
+If you're new to JavaScript, this is likely a bit fuzzy right now. If so, don't worry &mdash; code becomes clearer the more you use it.
 
 {: .tip}
 Notice how difficult it is to explain code? This is one of the challenges of developer documentation. Fortunately, you wouldn't need to explain much from standard programming languages like JavaScript. But you might need to explain how to work with your API in different languages. I cover this topic in more depth in [Code samples and tutorials](docapis_codesamples_bestpractices.html).

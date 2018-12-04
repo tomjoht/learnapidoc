@@ -11,7 +11,7 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-This tutorial continues from the previous topic, [Inspect the JSON from the response payload](docapis_json_console.html). In the [sample page](https://idratherbewriting.com/learnapidoc/assets/files/weatherdata-plain.html) where you logged the `weather` response to the JS Console, the REST response information didn't appear on the page. It only appeared in the JS Console. You need to use dot notation and JavaScript to access the JSON values you want. In this tutorial, you'll use a bit of JavaScript to print some of the response to the page.
+This tutorial continues from the previous topic, [Inspect the JSON from the response payload](docapis_json_console.html). In the [sample page](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html) where you logged the `weather` response to the JS Console, the REST response information didn't appear on the page. It only appeared in the JS Console. You need to use dot notation and JavaScript to access the JSON values you want. In this tutorial, you'll use a bit of JavaScript to print some of the response to the page.
 
 Note that this section will use a little bit of JavaScript. Depending on your role, you might not use this code much in your documentation, but it's important to know anyway.
 
@@ -20,11 +20,11 @@ Note that this section will use a little bit of JavaScript. Depending on your ro
 
 ## Getting a specific property from a JSON response object
 
-JSON wouldn't be very useful if you had to always print out the entire response. Instead, you select the exact property you want and pull that out through dot notation. The dot (`.`) after `response` (the name of the JSON payload, as defined (arbitrarily) in the jQuery AJAX function) is how you access the values you want from the JSON object.
+JSON wouldn't be very useful if you had to always print out the entire response. Instead, you select the exact property you want and pull that out through dot notation. The dot (`.`) after `response` (the name of the JSON payload, as defined arbitrarily in the jQuery AJAX function) is how you access the values you want from the JSON object.
 
 Let's say you wanted to pull out the wind speed part of the JSON response. Here's the dot notation you would use:
 
-```
+```js
 response.wind.speed
 ```
 
@@ -53,7 +53,7 @@ wind speed: 13.87
 
 ## Printing a JSON value to the page
 
-Let's say you wanted to print part of the JSON (the wind speed data) to the page (not just the console). This involves a little bit of JavaScript or jQuery (to make it easier).
+Let's say you wanted to print part of the JSON (the wind speed data) to the page (not just the console). This involves a little bit of JavaScript (or jQuery to make it easier).
 
 I'm assuming you're starting with the [same code](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html) from the [previous tutorial](docapis_json_console.html). That code looks like this:
 
@@ -83,50 +83,67 @@ I'm assuming you're starting with the [same code](https://idratherbewriting.com/
 </html>
 ```
 
-To print a specific property from the response to the page, modify your code to look like this:
+To print a specific property from the response to the page,
 
-```html
-<!DOCTYPE html>
-<html>
-   <head>
-      <meta charset="utf-8">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      <title>Sample Page</title>
-      <script>
-         var settings = {
-           "async": true,
-           "crossDomain": true,
-           "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
-           "method": "GET"
-         }
+1.  Add the following inside the `ajax` function:
 
-         $.ajax(settings).done(function (response) {
-           console.log(response);
+    <pre>
+    $.ajax(settings).done(function (response) {
+    console.log(response);
 
-           var content = response.wind.speed;
-           $("#windSpeed").append(content);
+    <span class="red">var content = response.wind.speed;
+    $("#windSpeed").append(content);
+    </span>
+    });
+    </pre>
 
-         });
-      </script>
-   </head>
-   <body>
-      <h1>Sample Page</h1>
-      <div id="windSpeed">Wind speed: </div>
-   </body>
-</html>
-```
+2.  Then in the page body (inside the `body` tags), add the following `div` tag:
 
-You can view the result here: <a href="https://idratherbewriting.com/learnapidoc/assets/files/weather-windspeed.html">idratherbewriting.com/learnapidoc/assets/files/weather-windspeed.html</a>.
+    <pre>
+    &lt;body&gt;
+      &lt;h1&gt;Sample page&lt;/h2&gt;
+      <span class="red">&lt;div id=&quot;windSpeed&quot;&gt;Wind speed: &lt;/div&gt;</span>
+    &lt;/body&gt;
+    </pre>
+
+    Your code should look as follows:
+
+    ```html
+    <!DOCTYPE html>
+    <html>
+       <head>
+          <meta charset="utf-8">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+          <title>Sample Page</title>
+          <script>
+             var settings = {
+               "async": true,
+               "crossDomain": true,
+               "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+               "method": "GET"
+             }
+
+             $.ajax(settings).done(function (response) {
+               console.log(response);
+
+               var content = response.wind.speed;
+               $("#windSpeed").append(content);
+
+             });
+          </script>
+       </head>
+       <body>
+          <h1>Sample Page</h1>
+          <div id="windSpeed">Wind speed: </div>
+       </body>
+    </html>
+    ```
+
+4.  Refresh the page and you will see the wind speed printed to the page. Here's [an example](https://idratherbewriting.com/learnapidoc/assets/files/weather-windspeed.html) with both wind speed and weather conditions.
 
 {% include random_ad2.html %}
 
 Here's what we changed:
-
-We added a named element to the body of the page, like this:
-
-```html
-<div id="windSpeed">Wind speed: </div>
- ```
 
 Inside the tags of the AJAX `done` method, we pulled out the value we want into a variable, like this:
 
@@ -134,13 +151,19 @@ Inside the tags of the AJAX `done` method, we pulled out the value we want into 
 var content = response.wind.speed;
 ```
 
-Below this same section, we used the [jQuery `append` method](http://api.jquery.com/append/) to append the `content` variable to the element with the `windSpeed` ID on the page:
+Then we added a named element to the body of the page, like this:
+
+```html
+<div id="windSpeed">Wind speed: </div>
+ ```
+
+We used the [jQuery `append` method](http://api.jquery.com/append/) to append the `content` variable to the element with the `windSpeed` ID on the page:
 
 ```js
 $("#windSpeed").append(content);
 ```
 
-This code says to find the element with the ID `windSpeed` and append the `content` variable to it.
+This code says to find the element with the ID `windSpeed` and add the `content` variable after it.
 
 ## Get the value from an array
 
@@ -162,15 +185,55 @@ In the previous section, you retrieved a value from a JSON object. Now let's get
 
 Remember that brackets signify an array. Inside the `weather` array is an unnamed object. To get the `main` element from this array, you would use the following dot notation:
 
-```
+```js
 response.weather[0].main
 ```
 
 Then you would follow the same pattern as before to print it to the page. Although objects allow you to get a specific property, arrays require you to select the position in the list that you want.
 
+Here's the code from the [sample page](https://idratherbewriting.com/learnapidoc/assets/files/weather-windspeed.html):
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<title>Sample Page</title>
+
+<script>
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+  "method": "GET"
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+
+  var content = response.wind.speed;
+  $("#windSpeed").append(content);
+
+  var currentWeather = response.weather[0].main;
+  $("#currentWeather").append(currentWeather);
+
+});
+</script>
+</head>
+<body>
+<h1>Sample Page</h1>
+
+<div id="windSpeed">Wind speed: </div>
+<div id="currentWeather">Current weather conditions: </div>
+
+</body>
+</html>
+```
+
 ## More exercises
 
-If you'd like to follow some more exercises that involve calling REST APIs, accessing specific values, and printing them to the page, see the following topics in Resources:
+If you'd like to follow some more exercises that involve calling REST APIs, accessing specific values, and printing them to the page, see the following topics in the [Glossary and additional resources](resources.html) section:
 
 * [Get event information using the EventBrite API](docapis_eventbrite_example.html)
 * [Flickr example: Retrieve a Flickr gallery](docapis_flickr_example.html)

@@ -18,9 +18,7 @@ JSON is the most common format for responses from REST APIs. Let's look at the J
 
 ## JSON response from OpenWeatherMap weather endpoint
 
-JSON stands for JavaScript Object Notation. It's the most common way REST APIs return information. Through JavaScript, you can easily parse through the JSON and display it on a web page.
-
-Although some APIs return information in both JSON and XML, if you're trying to parse through the response and render it on a web page, JSON fits much better into the existing JavaScript + HTML toolset that powers most web pages.
+JSON stands for JavaScript Object Notation. It's the most common way REST APIs return information. Although some APIs return information in both JSON and XML, if you're trying to parse through the response and render it on a web page, JSON fits much better into the existing JavaScript + HTML + CSS technology that powers most web pages. With JavaScript, you can easily parse through the JSON and integrate it into your web content.
 
 The unminified response from the OpenWeatherMap weather endpoint looks like this:
 
@@ -147,7 +145,7 @@ And objects can contain arrays in the value part of the key-value pair:
 Just remember, objects are surrounded with curly braces `{ }` and contain key-value pairs. Sometimes those values are arrays. Arrays are lists and are surrounded with square brackets `[ ]`. It's common for arrays to contain lists of objects, and for objects to contain arrays.
 
 {: .tip}
-It's important to understand the difference between objects and arrays because it determines how you access and display the information. Later exercises with dot notation will require you to understand this.
+It's important to understand the difference between objects and arrays because it determines how you access and display the information. Later exercises with dot notation will require you to understand this difference.
 
 ## <i class="fa fa-user-circle"></i> Examine the weather response
 

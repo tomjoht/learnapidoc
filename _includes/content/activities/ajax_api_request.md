@@ -18,9 +18,9 @@ For this activity, you'll use JavaScript to display the API response on a web pa
     </html>
     ```
 
-2.  Save your file (anywhere convenient) with a name such as weather.html.
+2.  Save your file (anywhere convenient) with a name such as **weather.html**.
 
-2.  Open Postman and go to the Current weather data (`weather`) endpoint that you [configured earlier](docapis_postman.html).
+2.  Open Postman and go to the Current weather data (`weather`) endpoint that you configured in an earlier activity (see [Submit requests through Postman](docapis_postman.html).
 3.  Click the **Code** link (below the Save button), and then select **JavaScript > jQuery AJAX**.
 
     <img src="images/postmanjqueryajax.png" class="medium" alt="JavaScript Ajax code snippet" />
@@ -55,7 +55,7 @@ For this activity, you'll use JavaScript to display the API response on a web pa
     }
     ```
 
-8.  And also remove the comma after `"method": "GET"`.
+8.  Also remove the comma after `"method": "GET"`.
 
     Your final code should look like this:
 
@@ -90,35 +90,12 @@ For this activity, you'll use JavaScript to display the API response on a web pa
     You can view the file here: [idratherbewriting.com/learnapidoc/assets/files/weather-plain.html](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html)
 
 8.  Start **Chrome** and open the JavaScript Console by going to **View > Developer > JavaScript Console**.
-9.  In Chrome, go to **File > Open File** and select the **weather.html** file.
+9.  In Chrome, go to **File > Open File** and select the **weather.html** file. (If you don't see the File menu in Chrome, press **Cmd + O** or **Ctrl + O**, or just drag your weather.html file into your browser window.)
 
     The page body will be blank, but the weather response should be logged to the JavaScript Console (due to the `console.log(response)` code in the request). If you expand the object returned to the console, it will look as follows:
 
     <a class="noCrossRef" href="https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html"><img src="images/jsonpayloadweather.png" alt="JSON payload from weather API logged to console" /></a>
 
     This information is now available for you to integrate into your page.
-
-10. To use a value from the JSON response, add the following inside the `ajax` function:
-
-    <pre>
-    $.ajax(settings).done(function (response) {
-    console.log(response);
-
-    <span class="red">var content = response.wind.speed;
-    $("#windSpeed").append(content);
-    </span>
-    });
-    </pre>
-
-11. In the page body (inside the `body` tags), add the following div tag:
-
-    <pre>
-    &lt;body&gt;
-      &lt;h1&gt;Sample page&lt;/h2&gt;
-      <span class="red">&lt;div id=&quot;windSpeed&quot;&gt;Wind speed: &lt;/div&gt;</span>
-    &lt;/body&gt;
-    </pre>
-
-12.  Refresh the page and you will see the wind speed printed to the page. (Here's [an example](https://idratherbewriting.com/learnapidoc/assets/files/weather-windspeed.html).)
 
 {% if page.workshop_activities == true %}*For more information related to this activity, see [Inspect the JSON from the response payload](docapis_json_console.html) and [Access and print a specific JSON value](docapis_access_json_values.html).*{% endif %}
