@@ -11,7 +11,7 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-Almost every API has a method in place to authenticate requests. You usually have to provide an API key in your requests to get a response. Although we'll dive into [authentication and authorization](docapis_more_about_authorization.html) later, we need to get some API keys now in order to make requests to the weather API.
+Almost every API has a method in place to authenticate requests. You usually have to provide an API key in your requests to get a response. Although we'll dive into [authentication and authorization](docapis_more_about_authorization.html) later, we need to get some API keys now in order to make requests to our weather API.
 
 * TOC
 {:toc}
@@ -27,17 +27,13 @@ Requiring authorization allows API publishers to do the following:
 In order to run the code samples in this course, you will need to use your own API keys, since these keys are usually treated like passwords and not given out or published openly on a web page.
 
 {: .tip}
-If you want to borrow my API keys, you can access them [here](https://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt). I sometimes find that workshop participants get hung up in trying to acquire simple API keys, so I'd like to remove that roadblock from you if you're running into issues.
+Even though you should treat API keys like passwords, if you want to borrow my API keys, you can access them [here](https://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt). I sometimes find that workshop participants get hung up in trying to acquire API keys, so I make them available here to avoid hangups and delays in the activities.
 
 {% include random_ad.html %}
 
-## Get authorization keys
-
-In order to work with the APIs in the upcoming activities, you'll need to get some API keys.
-
 {% include content/activities/get_authorization_keys.md %}
 
-### Get the Aeris Weather API secret and ID {#aeris_weather_apikey}
+## Get the Aeris Weather API secret and ID {#aeris_weather_apikey}
 
 Now for contrast, let's get the keys for the Aeris Weather API. The Aeris Weather API requires both a secret and ID to make requests.
 
@@ -60,9 +56,9 @@ After your app registers, you should see an ID, secret, and namespace for the ap
 {: .tip}
 Keep in mind how users authorize calls with an API &mdash; this is something you usually cover in API documentation. Later in the course we will dive into [authorization methods](docapis_more_about_authorization.html) in more detail.
 
-## Text editor tips
+## Make sure you have a text editor
 
-When you're working with code, you use a text editor (to work in plain text) instead of a rich text editor (which would provide a WYSIWYG interface). Many developers use different text editors. Here are a few choices:
+In the upcoming activities, you'll work with code in a text file. When you're working with code, you use a text editor (to work in plain text) instead of a rich text editor (which would provide a WYSIWYG interface). Here are a few choices for text editors:
 
 * [Sublime Text](http://www.sublimetext.com/) (Mac or PC)
 * [TextWrangler](http://www.barebones.com/products/textwrangler/) or [BBedit](http://www.barebones.com/products/bbedit/) (Mac)

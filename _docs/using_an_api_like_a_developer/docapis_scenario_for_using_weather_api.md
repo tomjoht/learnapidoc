@@ -50,7 +50,7 @@ Although there are [many good weather API options for developers](https://superd
 
 {% include content/activities/explore_openweathermap_api.md %}
 
-## Explore the Aeris Weather API
+## Explore the Aeris Weather API {#aeris}
 
 Before diving too far down int the OpenWeatherMap API, let's look at another weather API for contrast. In contrast to the OpenWeatherMap API, the [Aeris Weather API](http://www.aerisweather.com/) is a bit more robust and extensive. Explore the Aeris Weather API by doing the following:
 
@@ -68,7 +68,7 @@ Before diving too far down int the OpenWeatherMap API, let's look at another wea
 {: .tip}
 Here's the Aeris weather forecast API in action making mostly the same calls as I showed earlier with OpenWeatherMap: <a href="https://idratherbewriting.com/learnapidoc/assets/files/wind-aeris.html" alt="Aeris example">idratherbewriting.com/learnapidoc/assets/files/wind-aeris.html</a>.
 
-For this scenario, there are dozens of different weather APIs we could use. As you create your API documentation, think about whether your users have the same decisions to make. Are there several other APIs that developers can choose from for the same information? What will make your API stand out more? Although you probably can't define your product roadmap, you might at least argue that the docs for your API will be superior!
+For our development scenario (showing weather on a website), there are dozens of different weather APIs we could use. As you create your API documentation, think about how your users might have to make the same decisions in choosing APIs. Are there several APIs that provide similar information? What will make your API stand out more? Although you probably can't pick and choose what information your API returns, you might at least argue that the docs for your API will be superior!
 
 ## More weather APIs
 
