@@ -1,7 +1,7 @@
 ---
 title: "Activity: Evaluate API reference docs for core elements"
 permalink: /docapis_api_reference_activity.html
-weight: 3.71
+weight: 3.72
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
@@ -26,6 +26,6 @@ This part of the activity might be more difficult to do, but here is where you'l
 
 ## Next steps
 
-Now that you've had your head buried in API reference documentation, it's time to dive into testing a bit more. As you work with API endpoints and other code, you'll need to test these endpoints yourself, both to gather and verify the information in your documentation. Testing isn't always straightforward, so I devote an entire section to this topic. Continue to [Overview to testing your docs](testingdocs_overview.html).
+Now that you've had your head buried in API reference documentation, it's time to dive into testing. As you work with API endpoints and other code, you'll need to test these endpoints yourself, both to gather and verify the information in your documentation. Testing isn't always straightforward, so I devote an entire section to this topic. Continue to [Overview to testing your docs](testingdocs_overview.html).
 
 {% include random_ad2.html %}

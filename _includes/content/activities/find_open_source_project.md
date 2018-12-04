@@ -1,6 +1,6 @@
-## <i class="fa fa-user-circle"></i> Activity 3b: Find an open-source project with API doc needs
+## <i class="fa fa-user-circle"></i> Activity 3a: Find an open-source project with API doc needs
 
-Finding an open-source project to which you can contribute and work with can be invaluable for building a portfolio of developer documentation samples. To find an open-source project with API doc needs:
+To find an open-source project with API doc needs:
 
 1.  Go to the [GitHub Advanced Search](https://github.com/search/advanced).
 2.  Under the **Issues Options** section, in the **With the labels** row, type `help wanted`. This is a common tag teams use to attract volunteers to their project (but some teams that need help might not use it).

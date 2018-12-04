@@ -99,11 +99,11 @@ folders:
   - title: "Putting it all together"
     jurl: /docapis_finished_doc_result.html
 
-  - title: "Activity: Evaluate API reference docs for core elements"
-    jurl: /docapis_api_reference_activity.html
-
   - title: "Activity: Find an Open Source Project"
     jurl: /docapis_find_open_source_project.html
+    
+  - title: "Activity: Evaluate API reference docs for core elements"
+    jurl: /docapis_api_reference_activity.html
 
 - title: "Part IV: OpenAPI specification and Swagger"
   jurl: /restapispecifications.html

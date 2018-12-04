@@ -21,7 +21,7 @@ redirect_from:
 * TOC
 {:toc}
 
-## Example of a response example and response schema
+## Examples of response examples and schemas
 
 The following is a sample response from the SendGrid API. Their documentation provides a tabbed display with an **Example** on one tab:
 
@@ -55,7 +55,7 @@ If the header information is important to include in the response example (becau
 
 Some API documentation omits the response schema because the responses might seem self-evident or intuitive. In Twitter's API, the responses aren't explained (you can see an [example here](https://developer.twitter.com/en/docs/accounts-and-users/manage-account-settings/api-reference/get-account-settings)).
 
-However, most documentation would be better off with the response described, especially if the properties are abbreviated or cryptic. Developers sometimes abbreviate the responses to increase performance by reducing the amount of text sent. In one endpoint I documented, the response included about 20 different two-letter abbreviations. I spent days tracking down what each abbreviation meant, and found that many developers who worked on the API didn't know what many of the responses meant.
+However, most documentation would be better off with the response described, especially if the properties are abbreviated or cryptic. Developers sometimes abbreviate the responses to increase performance by reducing the amount of text sent. In one endpoint I documented, the response included about 20 different two-letter abbreviations. I spent days tracking down what each abbreviation meant, and found that many developers who worked on the API didn't even know what many of the responses meant.
 
 ## Use realistic values in the example response
 
@@ -115,35 +115,33 @@ Some APIs put the response in a right column so you can see it while also lookin
 
 Stripe's design juxtaposes the sample response in a right side pane with the response schema in the main window. The idea is that you can see both at the same time. The description won't always line up with the response, which might be confusing. Still, separating the response example from the response schema in separate columns helps differentiate the two.
 
-A lot of APIs have modeled their design after Stripe's. For example, see <a href="https://github.com/tripit/slate">Slate</a>, <a href="https://github.com/sourcey/spectacle">Spectacle</a>, or <a href="http://readme.io">Readme.io</a>.
+A lot of APIs have modeled their design after Stripe's. For example, see <a href="https://github.com/tripit/slate">Slate</a>, <a href="https://github.com/sourcey/spectacle">Spectacle</a>, or <a href="http://readme.io">Readme.io</a>. Should you use a three-column layout with your API documentation? Maybe. However, if the response example and description doesn't line up, the viewer's focus is somewhat split, and the user must resort to more up-and-down scrolling. Additionally, if your layout uses three columns, your middle column will have some narrow constraints that don't leave much room for screenshots and code examples.
 
-Should you use a three-column layout with your API documentation? Maybe. However, if the response example and description doesn't line up, the viewer's focus is somewhat split, and the user must resort to more up-and-down scrolling. Additionally, if your layout uses three columns, your middle column will have some narrow constraints that don't leave much room for screenshots and code examples.
-
-The MYOB Developer Center takes an interesting approach in documenting the JSON in their APIs. They list the JSON structure in a table-like way, with different levels of indentation. You can move your mouse over a field for a tooltip description, or you can click it to have a description expand below. The use of tooltips enables the rows of the example and the description to line up perfectly.
+The MYOB Developer Center takes an interesting approach in documenting the JSON in their APIs. They list the JSON structure in a table-like way, with different levels of indentation. You can move your mouse over a field for a tooltip description, or you can click it to have a description expand below. The use of tooltips enables the rows containing the example and the description to line up perfectly.
 
 To the right of the JSON definitions is a code sample with real values. When you select a value, both the element in the table and the element in the code sample highlight at the same time.
 
 <a href="http://developer.myob.com/api/accountright/v2/generalledger/account/#GET" class="noExtIcon"><img src="images/myobjsondoc.png" alt="MYOB JSON doc approach" /></a>
 
-This approach facilitates scanning, and the popover + collapsible approach allows you to compress the table so you can jump to the part you're interested in.
-
-However, this approach requires more manual work from a documentation point of view. Still, if you have long JSON objects, it might be worth it.
+This approach facilitates scanning, and the popover + collapsible approach allows you to compress the table so you can jump to the part you're interested in. However, this approach requires more manual work from a documentation point of view. Still, if you have long JSON objects, it might be worth it.
 
 ## Embedding dynamic responses {#dynamic_responses}
 
 Sometimes responses are generated dynamically based on API calls to a test system. For example, look at the [Rhapsody API](https://developer.rhapsody.com/api) and click an endpoint &mdash; the response is generated dynamically.
 
-Another API with dynamic responses is the [OpenWeatherMap API](https://openweathermap.org/current) (which we used in earlier activities). When you click a link in the "Examples of API calls" section, such as [http://samples.openweathermap.org/data/2.5/weather?q=London](http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1), you see the response dynamically returned in the browser.
+Another API with dynamic responses is the [OpenWeatherMap API](https://openweathermap.org/current) (which we used in earlier activities). When you click a link in the "Examples of API calls" section, such as [http://samples.openweathermap.org/data/2.5/weather?q=London](http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1), you see the response returned in the browser.
 
 <a href="http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1" class="noExtIcon"><img class="medium" src="images/dynamicresponseinbrowser.png"/></a>
 
+(Actually, the OpenWeatherMap response isn't generated dynamically &mdash; it just looks that way.)
+
 The Citygrid API, which we explored in the [requests example topic](docapis_doc_sample_requests.html), also dynamically generates responses.
 
-This approach works well for GET requests that return public information. However, it probably wouldn't scale for other methods (such as POST or DELETE) or which request authorization.
+This dynamic approach works well for GET requests that return public information. However, it probably wouldn't scale for other methods (such as POST or DELETE) or which request authorization.
 
 ## What about status codes?
 
-The responses section sometimes (briefly) lists the possible status and error codes returned with the responses. However, because these codes are usually common across all endpoints in the API, status and error codes are often documented in their own section, apart from a specific endpoint's documentation. I cover this topic in [Documenting status and error codes](docapis_doc_status_codes.html).
+The responses section sometimes briefly lists the possible status and error codes returned with the responses. However, because these codes are usually common across all endpoints in the API, status and error codes are often documented in their own section, apart from a specific endpoint's documentation. For this reason, I cover this topic in [Documenting status and error codes](docapis_doc_status_codes.html).
 
 ## Response example and schema for the surfreport endpoint
 

@@ -2,7 +2,7 @@
 title: "Activity: Find an Open Source Project"
 permalink: /docapis_find_open_source_project.html
 course: "Documenting REST APIs"
-weight: 3.72
+weight: 3.71
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
@@ -10,7 +10,15 @@ path1: /docendpoints.html
 
 To break into API documentation, you need to start thinking about API documentation samples in your portfolio. Your portfolio is key to [getting a job in API documentation](jobapis.html). Without a portfolio that contains compelling API documentation samples, it will be extremely difficult to get a job in API documentation.
 
-Here's the situation you want to avoid. Let's assume you don't have any experience in API documentation, but you're trying to get a API documentation job. Employers will be willing to overlook experience if you can demonstrate API documentation writing samples. But how will you get API doc writing samples without an API doc job? It's simple: you create these API doc samples through open source projects that you contribute to. This is where the activities in this course become important.
+* TOC
+{:toc}
+
+
+## Avoiding a catch-22
+
+Let's assume you don't have any experience in API documentation, but you're trying to get a API documentation job. Employers will be willing to overlook experience if you can demonstrate API documentation writing samples. But how will you get API doc writing samples without an API doc job? And without API doc samples, how can you get an API doc job? This can seem like an impossible situation.
+
+Getting around this catch-22 is simple: you create these API doc samples through open source projects that you contribute to. This is where the activities in this course become important.
 
 Rather than simply completing modules and tracking your progress toward the course's completion, I've included activities here that will actually help build up your portfolio with API documentation samples, helping you progress to the goal of either obtaining an API documentation job or hitting a home run on an API doc project in your current role.
 
@@ -28,8 +36,6 @@ The ideal open-source API project should meet the following criteria. The projec
 * Have some documentation needs.
 * Not be so technical that it's beyond your ability to learn it. (If you already have familiarity with a programming language, you might target projects that focus on that language.)
 * Be active, with a somewhat recent commit.
-
-## Search for an open-source project with API doc needs
 
 {% include content/activities/find_open_source_project.md %}
 
@@ -57,7 +63,7 @@ So yeah, as a technical writer, you may not be fixing bugs in the code or develo
 
 I know the value of the doc role intimately from my own experience in contributing to open source doc projects. At one point, before focusing my energy on this API doc course, I contributed a number of tutorials in the [Jekyll docs](https://jekyllrb.com/docs/home/). I added instructions that included a lot of new content, and even added a [Tutorials section](https://jekyllrb.com/tutorials/home/).
 
-I thought other developers would continue creating new tutorials in a steady stream. But they didn't. Developers tend to add little snippets of documentation to pages &mdash; a sentence here, a paragraph there, an update here, a correction there. You will rarely find someone who writes a new article or tutorial from scratch. When there's a new release, there often aren't release notes &mdash; there are simply links to (cryptic) GitHub issue logs.
+I thought other developers would continue creating new tutorials in a steady stream, but they didn't. Developers tend to add little snippets of documentation to pages &mdash; a sentence here, a paragraph there, an update here, a correction there. You will rarely find someone who writes a substantial new article or tutorial from scratch. When there's a new release, there often aren't release notes &mdash; there are simply links to (cryptic) GitHub issue logs.
 
 As such, you should feel confident about the value you can bring to an open-source project. You're creating much-needed documentation for the project.
 
@@ -67,3 +73,7 @@ See the following for more information on finding an open-source project:
 
 * [How to choose (and contribute to) your first open source project](https://github.com/collections/choosing-projects)
 * [Contribute to open-source projects through documentation](https://mapzen.com/blog/open-source-docs/)
+
+## Next steps
+
+After you find an open-source project, go to the next activity: [Evaluate API reference docs for core elements](docapis_api_reference_activity.html).

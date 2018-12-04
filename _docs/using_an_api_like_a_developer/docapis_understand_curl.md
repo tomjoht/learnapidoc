@@ -152,7 +152,7 @@ The zip code (`zip`) and app ID (`appid`) and units (`units`) parameters were pa
 <span style="color: red">?</span>zip=95050<span style="color: red">&</span>appid=fd4698c940c6d1da602a70ac34f0b147<span style="color: red">&</span>units=imperial
 </pre>
 
-After the query string, each parameter is concatenated with other parameters through the ampersand `&` symbol. The order of the query string parameters doesn't matter. The order only matters if the parameters are part of the URL path itself (on the left of the query string). Any configurable parts of the endpoint that appear before the query string are called [header parameters](docapis_doc_parameters.html#header_parameters) (we'll dive into these later).
+After the query string, each parameter is concatenated with other parameters through the ampersand `&` symbol. The order of the query string parameters doesn't matter. The order only matters if the parameters are part of the URL path itself (on the left of the query string). Any configurable parts of the endpoint that appear before the query string are called [path parameters](docapis_doc_parameters.html#path_parameters) (we'll dive into these later).
 
 ## Common curl commands related to REST
 

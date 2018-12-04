@@ -18,7 +18,7 @@ path1: /docendpoints.html
 * TOC
 {:toc}
 
-## Example of parameters
+## Examples of parameters
 
 The following screenshot shows a sample parameters section with the Box API:
 
@@ -97,7 +97,7 @@ These data types are the most common with REST APIs:
 * **array**: A list of values
 
 {: .note}
-There are more data types in programming, and if you have more specific data types that are important to note, be sure to document them. In Java, for example, it's important to note the data type allowed because Java allocates memory space based on the size of the data. As such, Java gets much more specific about the size of numbers. You have a byte, short, int, double, long, float, char, boolean, and so on. However, you usually don't have to specify this level of detail with a REST API. You can usually just write "number."
+There are more data types in programming, and if you have more specific data types that are important to note, be sure to document them. In Java, for example, it's important to note the data type allowed because Java allocates memory space based on the size of the data. As such, Java gets much more specific about the size of numbers. You have a byte, short, int, double, long, float, char, boolean, and so on. However, you usually don't have to specify this level of detail with a REST API."
 
 {% include random_ad.html %}
 
@@ -126,7 +126,7 @@ Path parameters are part of the endpoint itself, and are not optional. For examp
 /service/myresource/user/<span class="orange">{user}</span>/bicycles/<span class="orange">{bicycleId}</span>
 </pre>
 
-Path parameters are usually set off with curly braces, but some API doc style's precede the value with a colon or use other syntax. When you document path parameters, indicate the default values, the allowed values, and other details.
+Path parameters are usually set off with curly braces, but some API doc styles precede the value with a colon or use other syntax. When you document path parameters, indicate the default values, the allowed values, and other details.
 
 ### Color coding the path parameters
 
@@ -138,7 +138,7 @@ For example, you could color code your parameters like this:
 /service/myresource/user/<span class="orange">{user}</span>/bicycles/<span class="orange">{bicycleId}</span>
 </pre>
 
-Optionally, you could also use the same color for the parameters in your documentation:
+You could then use the same color for these parameters in later descriptions:
 
 {% if site.format == "kindle" %}
 

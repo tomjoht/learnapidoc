@@ -8,7 +8,7 @@ section: docendpoints
 path1: /docendpoints.html
 ---
 
-In this API reference tutorial tutorial, we'll work on creating five common sections in REST API reference documentation: resource description, endpoints and methods, parameters, request example, and response example. To provide some context (and to continue with our sample documentation scenario), we'll structure the information from the [new endpoint to document](docapis_new_endpoint_to_doc.html) into these five sections.
+In this API reference tutorial tutorial, we'll work on creating five common sections in REST API reference documentation: resource description, endpoints and methods, parameters, request example, and response example. To provide some context (and to continue with our sample documentation scenario), we'll structure the information from the [new endpoint to document](docapis_new_endpoint_to_doc.html#surf_report_api) into these five sections.
 
 * TOC
 {:toc}
@@ -34,7 +34,7 @@ Almost all API reference topics include these five sections:
 
 ## Tutorial workflow map
 
-The tutorial includes a workflow map to help guide and orient you each step of the way.
+The tutorial here includes a workflow map to help guide and orient you each step of the way.
 
 <div style="margin-top:15px; margin-bottom: 15px;">
 {% include workflow_map.html step="99" map="content/reference_doc_map.html"  %}
@@ -47,13 +47,13 @@ The tutorial includes a workflow map to help guide and orient you each step of t
 
 {% include random_ad2.html %}
 
-When we're finished, the end result will look [like this](docapis_finished_doc_result.html). You'll then have an opportunity to [create an API reference topic](docapis_api_reference_activity.html) with your own [open-source API project](docapis_find_open_source_project.html).
+When we're finished, the end result will look [like this](docapis_finished_doc_result.html). You'll then have an opportunity to [edit or create an API reference topic](docapis_api_reference_activity.html) with your own [open-source API project](docapis_find_open_source_project.html).
 
 {: .note}
-Although there are automated ways to publish API docs, we're focusing on content rather than tools in this section. In the [Publishing your API documentation section](publishingapis.html), we'll jump into publishing tools and methods.
+Although there are automated ways to publish API docs, we're focusing on content rather than tools in this section. In the next section, [OpenAPI specification and Swagger](restapispecifications.html), we'll look at how to describe these same reference components using the OpenAPI specification. In the [Publishing your API documentation section](publishingapis.html), we'll look at ways to publish the information.
 
 {% include random_ad.html %}
 
 ## Next steps
 
-Now that you have an idea of the tutorial, let's get going with the first section: [Resource description](docapis_resource_descriptions.html).
+Now that you have an idea of the tutorial, let's get going with the first section: [Step 1: Resource description](docapis_resource_descriptions.html).

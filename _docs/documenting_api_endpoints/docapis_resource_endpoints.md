@@ -22,7 +22,7 @@ redirect_from:
 {:toc}
 
 
-## Example of an endpoints
+## Examples of endpoints
 
 Here's an example of the endpoints for the Relationships resource in the Instagram API:
 
@@ -52,7 +52,7 @@ Here's an example from the Facebook API that colors the path parameter in an eas
 
 <a href="https://developers.facebook.com/docs/graph-api/reference/v2.11/achievement/" class="noExtIcon"><img src="images/facebookapicolor.png"/></a>
 
-When the parameters are described, the same green color is used to set off the parameters, which helps users recognize their meaning.
+When the parameters are described in Facebook's docs, the same green color is used to set off the parameters, which helps users recognize their meaning.
 
 Path parameters aren't always set off with a unique color (for example, some precede it with a colon), but whatever the convention, make sure the path parameter is easily identifiable.
 
@@ -85,7 +85,7 @@ Sometimes the method is referred to as the "verb." GET, PUT, POST, PATCH, and DE
 
 When you describe the endpoint, you list the end path only (hence the term "*end* point"). The full path that contains both the base path and the endpoint is often called a resource URL.
 
-In our sample API scenario, the endpoint is just `/surfreport/{beachId}`. You don't have to list the full resource URL every time (which would be `https://api.openweathermap.org/surfreport{beachId}`). Including the full resource URL would distract users from focusing on the path that matters. In your user guide, you usually explain the full resource URL, along with the required [authorization](docapis_more_about_authorization.html), in an introductory section.
+In our sample API scenario, the endpoint is just `/surfreport/{beachId}`. You don't have to list the full resource URL every time (which would be `https://api.openweathermap.org/surfreport{beachId}`). Including the full resource URL would distract users from focusing on the path that matters. In your user guide, you usually explain the full resource URL, along with the required [authorization](docapis_more_about_authorization.html), in an introductory section (such as the [Getting started tutorial](docapis_doc_getting_started_section.html)).
 
 ## How to group multiple endpoints for the same resource
 

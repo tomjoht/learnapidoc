@@ -21,13 +21,13 @@ path1: /docendpoints.html
 * TOC
 {:toc}
 
-## Example of a request
+## Examples of requests
 
 The following example shows a sample request from the [Callfire API](https://developers.callfire.com/docs.html#pagination):
 
 <a class="noExtIcon" href="https://developers.callfire.com/docs.html#pagination"><img src="images/callfireapirequestexample.png"/></a>
 
-The design of this API doc site arranges the sample requests and responses in the right column of a three-column layout. The request is formatted in curl, which we [explored earlier](docapis_install_curl.html).
+The design of this API doc site arranges the sample requests and responses in the right column of a three-column layout. The request is formatted in curl, which we [explored earlier](docapis_make_curl_call.html).
 
 ```curl
 curl -u "username:password" -H "Content-Type:application/json" -X GET "https://api.callfire.com/v2/texts?limit=50&offset=200"
@@ -81,7 +81,7 @@ How many different requests and responses should you show? There's probably no e
 
 ## Requests in various languages
 
-One aspect of REST APIs that facilitates widespread adoption is that they aren't tied to a specific programming language. Developers can code their applications in any language, from Java to Ruby to JavaScript, Python, C#, Node JS, or something else. As long as developers can make an HTTP web request in that language, they can use the API. The response from the web request will contain the data in either JSON or XML.
+As noted earlier, in [What is a REST API?](docapis_what_is_a_rest_api.html), REST APIs are language agnostic. This helps facilitates widespread adoption across programming languages. Developers can code their applications in any language, from Java to Ruby to JavaScript, Python, C#, Node JS, or something else. As long as developers can make an HTTP web request in that language, they can use the API. The response from the web request will contain the data in either JSON or XML.
 
 Because you can't entirely know which language your end users will be developing in, it's kind of fruitless to try to provide code samples in every language. Many APIs just show the format for submitting requests and a sample response, and the authors will assume that developers will know how to submit HTTP requests in their particular programming language.
 
@@ -122,11 +122,11 @@ Then select the language you want, such as JavaScript > Jquery AJAX:
 {: .note}
 Although these code generators are probably helpful, they may or may not work for your API. Always review code samples with developers. In most cases, developers supply the code samples for the documentation, and technical writers briefly comment on the code samples.
 
-(For an activity that involves using the generated jQuery code from Postman, see [Inspect the JSON from the response payload](docapis_json_console.html).)
+(For an activity that involves using the generated jQuery code from Postman, see [Inspect the JSON from the response payload](docapis_json_console.html) and [Access and print a specific JSON value](docapis_access_json_values.html).)
 
 ## SDKs provide tooling for APIs
 
-A lot of times, developers will create an [SDK (software development kit)](docapis_sdks_and_sample_apps.html) that accompanies a REST API. The SDK helps developers implement the API using specific tooling.
+A lot of times, developers will create an [SDK (software development kit)](docapis_sdks_and_sample_apps.html) that accompanies a REST API. The SDK helps developers implement the API using specific tooling. While APIs are language agnostic, SDKs are language specific.
 
 For example, at one company I worked at, we had both a REST API and a JavaScript SDK. Because JavaScript was the target language developers were working in, the company developed a JavaScript SDK to make it easier to work with REST using JavaScript. You could submit REST calls through the JavaScript SDK, passing a number of parameters relevant to web designers.
 
@@ -158,7 +158,7 @@ It's one thing to allow GET methods, but if you include other methods, users cou
 
 <a href="https://sendgrid.com/docs/API_Reference/Web_API/blocks.html" class="noExtIcon"><img src="images/sendgridwarningmessage.png" alt="SendGrid API Explorer warning message" /></a>
 
-Foursquare's API docs used to have a built-in API explorer in the previous version of their docs (shown below), but they have since removed it. I'm not sure why.
+Foursquare's API docs used to have a built-in API explorer in the previous version of their docs (shown below), but they have since removed it. I'm not sure why (maybe they ran into the dangers just described?).
 
 <a href="https://developer.foursquare.com/docs" class="noExtIcon"><img src="images/foursquareapiexplorer.png" alt="Foursquare's API Explorer" /></a>
 
@@ -179,4 +179,4 @@ Let's return to the `surfreport/{beachId}` endpoint in our [sample scenario](doc
 
 ## Next steps
 
-Now that we've created a sample request, the next steps naturally follow: include a [sample response](docapis_doc_sample_responses_and_schema.html) that corresponds with the same request. We'll also document the model or schema of the response in general.
+Now that we've created a sample request, the next steps naturally follow &mdash; include a sample response that corresponds with the same request. We'll also document the model or schema of the response in general. Go to [Step 5: Response example and schema (API reference tutorial)](docapis_doc_sample_responses_and_schema.html).
