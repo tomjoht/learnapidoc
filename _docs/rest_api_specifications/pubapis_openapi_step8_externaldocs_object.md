@@ -14,7 +14,7 @@ path1: /restapispecifications.html
 <img src="images/openapistep8.png"/>
 {% endif %}
 
-The [`externalDocs` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#external-documentation-object) lets you link to external documentation. You can also provide links to external docs in the `paths` object.
+The [`externalDocs` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#external-documentation-object) lets you link to external documentation. You can also provide links to external docs in the `paths` object.
 
 {% if site.format == "web" %}
 * TOC
@@ -42,7 +42,7 @@ When you do, in the Swagger UI, a link appears after the API description along w
 {% include course_image.html filename="step8swaggerprogress" ext_print="png" ext_web="png" alt="External documentation link" caption="External documentation link" %}
 
 {: .tip}
-See the related topic, [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html) for tips on how to integrate your Swagger UI output into your regular documentation.
+Here you can probably start to see challenges with integrating the Swagger UI output with the rest of your documentation. The `externalDocs` object at least gives you a predictable place to link back to your other [non-reference topics](docnonref.html). See the related topic, [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html) for tips on how to integrate your Swagger UI output into your regular documentation.
 
 {% include random_ad2.html %}
 

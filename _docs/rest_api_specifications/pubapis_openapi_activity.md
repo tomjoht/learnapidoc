@@ -23,14 +23,14 @@ In an earlier activity, you [found an open-source API project](docapis_find_open
 
 Go each step of the OpenAPI specification tutorial to build out the specification document:
 
-* [Step 1: openapi object](pubapis_openapi_step1_openapi_object.html)
-* [Step 2: info object](pubapis_openapi_step2_info_object.html)
-* [Step 3: servers object](pubapis_openapi_step3_servers_object.html)
-* [Step 4: paths object](pubapis_openapi_step4_paths_object.html)
-* [Step 5: components object](pubapis_openapi_step5_components_object.html)
+* [Step 1: The openapi object](pubapis_openapi_step1_openapi_object.html)
+* [Step 2: The info object](pubapis_openapi_step2_info_object.html)
+* [Step 3: The servers object](pubapis_openapi_step3_servers_object.html)
+* [Step 4: The paths object](pubapis_openapi_step4_paths_object.html)
+* [Step 5: The components object](pubapis_openapi_step5_components_object.html)
 * [Step 6: security object](pubapis_openapi_step6_security_object.html)
-* [Step 7: tags object](pubapis_openapi_step7_tags_object.html)
-* [Step 8: externalDocs object](pubapis_openapi_step8_externaldocs_object.html)
+* [Step 7: The tags object](pubapis_openapi_step7_tags_object.html)
+* [Step 8: The externalDocs object](pubapis_openapi_step8_externaldocs_object.html)
 
 Validate your specification document in the [Swagger Editor](https://swagger.io/swagger-editor/). Execute a request to make sure it's working correctly.
 

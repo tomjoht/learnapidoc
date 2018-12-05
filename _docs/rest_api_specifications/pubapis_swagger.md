@@ -177,3 +177,17 @@ As you explore Swagger UI, you may notice a few limitations:
 * There's not much room to describe in detail the workings of the endpoint in Swagger. If you have several paragraphs of details and gotchas about a parameter, it's best to link out from the description to another page in your docs. The OpenAPI spec provides a way to link to external documentation in both the [paths object](pubapis_openapi_step4_paths_object.html), the [info object](pubapis_openapi_step2_info_object.html), and the [externalDocs object](pubapis_openapi_step8_externaldocs_object.html)
 * The Swagger UI looks mostly the same for each output. You can [customize Swagger UI](https://swagger.io/docs/swagger-tools/#customization-36) with your own branding, but it will some deeper UX skills.
 * The Swagger UI might be a separate site from your other documentation. This means in your regular docs, you'll probably need to link to Swagger as the reference for your endpoints. You don't want to duplicate your parameter descriptions and other details in two different sites. See [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html) for more details on workarounds.
+
+## Troubleshooting issues with Swagger UI {#troubleshooting_swagger}
+
+When you're setting up Swagger UI, you might run into the following issues:
+
+**CORS issues:**
+
+If you have security correctly configured but the requests are being rejected, it could be due to a CORS (cross-origin resource sharing) issue. CORS is a security measure that websites implement to make sure other scripts and processes cannot take their content through requests from remote servers. See [CORS Support](https://github.com/swagger-api/swagger-ui#cors-support) in Swagger UI's documentation for details.
+
+If the requests aren't working, open your browser's JavaScript console (in Chrome, View > Developer > Javascript Console) when you make the request and see if the error relates to cross-origin requests. If so, ask your developers to enable CORS on the endpoints.
+
+**Host URL issues:**
+
+Another reason requests might be rejected is due to the host from your test server. Some APIs (like Aeris Weather) require you to create an App ID that's based on the host URL where you'll be executing requests. If the host URL you registered is `http://mysite.com` but you're submitting the test from `https://editor.swagger.io/`, the API server will reject the requests.

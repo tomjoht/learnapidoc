@@ -19,10 +19,10 @@ Learning the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specificatio
 
 * [Sample OpenAPI specification documents](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v3.0). These sample specification documents provide a good starting point as a basis for your specification document. They give you a big picture about the general shape of a specification document.
 * [Swagger user guide](https://swagger.io/docs/specification/about/). The Swagger user guide is more friendly, conceptual, and easy to follow. It doesn't have the detail and exactness of the specification documentation on GitHub, but in many ways it's clearer and contains more examples.
-* [OpenAPI specification documentation](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md). The specification documentation is technical and takes a little getting used to, but you'll no doubt consult it frequently when describing your API. It's a long, single page document to facilitate findability through Ctrl+F.
+* [OpenAPI specification documentation](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md). The specification documentation is technical and takes a little getting used to, but you'll no doubt consult it frequently when describing your API. It's a long, single page document to facilitate findability through Ctrl+F.
 
 {: .note}
-There are other Swagger/OpenAPI tutorials online, but make sure you follow tutorials for the [3.0 version of the API](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md) rather than [2.0](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md). Version 3.0 was [released in July 2017](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#appendix-a-revision-history). 3.0 is substantially different from 2.0. ([Version 3.0.1](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md) was released in December 2017 and makes minor improvements to 3.0. Note that whenever I refer to 3.0, I'm referring to 3.x, meaning any incremental dot release from the 3.0 line.)
+There are other Swagger/OpenAPI tutorials online, but make sure you follow tutorials for the [3.0 version of the API](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md) rather than [2.0](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md). Version 3.0 was [released in July 2017](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#appendix-a-revision-history). 3.0 is substantially different from 2.0. ([Version 3.0.2](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md) was released in December 2017 and makes minor improvements to 3.0. Note that whenever I refer to 3.0, I'm referring to 3.x, meaning any incremental dot release from the 3.0 line.)
 
 ## How my OpenAPI/Swagger tutorial is different
 
@@ -44,7 +44,7 @@ For other terms, see the [Glossary](api-glossary.html).
 
 Let's clear up some additional descriptors around JSON and YAML as well. The specification document in my OpenAPI tutorial uses YAML (which I introduced briefly [here](pubapis_yaml.html)), but it could also be expressed in JSON. JSON is a subset of YAML, so the two are practically interchangeable formats (for the data structures we're using). Ultimately, though, the OpenAPI spec is a JSON object. The specification notes:
 
->An OpenAPI document that conforms to the OpenAPI Specification is itself a JSON object, which may be represented either in JSON or YAML format. (See [Format](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#format))
+>An OpenAPI document that conforms to the OpenAPI Specification is itself a JSON object, which may be represented either in JSON or YAML format. (See [Format](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#format))
 
 In other words, the OpenAPI document you create is a JSON object, but you have the option of expressing the JSON using either JSON or YAML syntax. YAML is more readable and is a more common format (see API Handyman's take on [JSON vs YAML](https://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-1-introduction/#json-vs-yaml) for more discussion), so I've used YAML exclusively here. You will see that the specification documentation always shows both the JSON and YAML syntax when showing specification formats. (For a more detailed comparison of YAML versus JSON, see "Relation to JSON" in the [YAML spec](http://www.yaml.org/spec/1.2/spec.html).)
 
@@ -119,14 +119,14 @@ If you would like to get a big picture of the specification document, take a loo
 
 The OpenAPI tutorial has 8 steps. Each step corresponds with one of the root-level objects in the OpenAPI document.
 
-* [Step 1: openapi object](pubapis_openapi_step1_openapi_object.html)
-* [Step 2: info object](pubapis_openapi_step2_info_object.html)
-* [Step 3: servers object](pubapis_openapi_step3_servers_object.html)
-* [Step 4: paths object](pubapis_openapi_step4_paths_object.html)
-* [Step 5: components object](pubapis_openapi_step5_components_object.html)
+* [Step 1: The openapi object](pubapis_openapi_step1_openapi_object.html)
+* [Step 2: The info object](pubapis_openapi_step2_info_object.html)
+* [Step 3: The servers object](pubapis_openapi_step3_servers_object.html)
+* [Step 4: The paths object](pubapis_openapi_step4_paths_object.html)
+* [Step 5: The components object](pubapis_openapi_step5_components_object.html)
 * [Step 6: security object](pubapis_openapi_step6_security_object.html)
-* [Step 7: tags object](pubapis_openapi_step7_tags_object.html)
-* [Step 8: externalDocs object](pubapis_openapi_step8_externaldocs_object.html)
+* [Step 7: The tags object](pubapis_openapi_step7_tags_object.html)
+* [Step 8: The externalDocs object](pubapis_openapi_step8_externaldocs_object.html)
 
 You don't have to create the specification document in this order; I've merely chosen this order to provide more of a specific path and series of steps to the process.
 

@@ -13,7 +13,7 @@ path1: /restapispecifications.html
 <img src="images/openapistep3.png"/>
 {% endif %}
 
-In the [`servers` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#serverObject), you specify the basepath used in your API requests. The basepath is the part of the URL that appears before the endpoint.
+In the [`servers` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#serverObject), you specify the basepath used in your API requests. The basepath is the part of the URL that appears before the endpoint.
 
 {% if site.format == "web" %}
 * TOC
@@ -47,7 +47,7 @@ servers:
     description: Some other server
 ```
 
-In Swagger UI, here's how the servers appear to users with multiple server URLs:
+In Swagger UI, the multiple servers appear as options users can select in a drop-down list:
 
 <a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapi_serversurl.png" class="medium" /></a>
 
@@ -57,7 +57,7 @@ If you have just one URL, you still see a drop-down box but with just one option
 
 You can also incorporate variables into the server URL that can be populated at runtime by your server. Additionally, if different paths (endpoints) require different server URLs, you can add the `servers` object as a property in the [`path`](pubapis_openapi_step4_paths_object.html) object's operation object. The locally declared servers URL will override the global servers URL.
 
-See ["Overriding Servers"](https://swagger.io/docs/specification/api-host-and-base-path/) in the "API Server and Base URL" page for more details.
+See ["Overriding Servers"](https://swagger.io/docs/specification/api-host-and-base-path/) in "API Server and Base URL" (Swagger's docs) for more details.
 
 ## <i class="fa fa-user-circle"></i> View the Appearance in Swagger UI
 

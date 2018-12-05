@@ -7,12 +7,12 @@ To edit the OpenAPI specification file:
 1.  Copy the code from this [pre-built OpenAPI specification](https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/openapi_sunrise_sunset.yml).
 2.  Paste the YAML content into the [Swagger Editor](https://editor.swagger.io/).
 3.  Identify each of the root-level objects of the OpenAPI spec:
-    * [Step 1: openapi object](pubapis_openapi_step1_openapi_object.html)
-    * [Step 2: info object](pubapis_openapi_step2_info_object.html)
-    * [Step 3: servers object](pubapis_openapi_step3_servers_object.html)
-    * [Step 4: paths object](pubapis_openapi_step4_paths_object.html)
-    * [Step 5: components object](pubapis_openapi_step5_components_object.html)
-    * [Step 8: externalDocs object](pubapis_openapi_step8_externaldocs_object.html)
+    * [Step 1: The openapi object](pubapis_openapi_step1_openapi_object.html)
+    * [Step 2: The info object](pubapis_openapi_step2_info_object.html)
+    * [Step 3: The servers object](pubapis_openapi_step3_servers_object.html)
+    * [Step 4: The paths object](pubapis_openapi_step4_paths_object.html)
+    * [Step 5: The components object](pubapis_openapi_step5_components_object.html)
+    * [Step 8: The externalDocs object](pubapis_openapi_step8_externaldocs_object.html)
 
 4.  In the `info` object (near the top), make some changes to the `description` property and see how the visual display in the right column gets updated.
 5.  In the `parameters` object, make some changes to one of the `description` properties and see how the visual editor gets updated.
