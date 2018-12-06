@@ -31,7 +31,7 @@ An API might authenticate you but not authorize you to make a certain request.
 
 Why do APIs even need authentication? For read-only APIs, sometimes users don't need keys. But most commercial APIs do require authorization in the form of API keys or other methods. If you *didn't* have any kind of security with your API, users could make unlimited amounts of API calls without any kind of registration. This would make a revenue model for your API difficult.
 
-Additionally, without authentication, there wouldn't be an easy way to associate requests with specific user data. And there wouldn't be a way to protect against requests from malicious users that might delete another user's data (such as DELETE requests on another's account).
+Additionally, without authentication, there wouldn't be an easy way to associate requests with specific user data. And there wouldn't be a way to protect against requests from malicious users that might delete another user's data (such as by making DELETE requests on another's account).
 
 Finally, you couldn't track who is using your API, or what endpoints are most used. Clearly, API developers must think about ways to authenticate and authorize requests made to their API.
 
@@ -45,7 +45,7 @@ Overall, authentication and authorization with APIs serves the following purpose
 
 ## Different types of authorization
 
-There are several different methods for authorization. The following are various types of API authorization you might encounter:
+There are several methods for authorization. The following are various types of API authorization you might encounter:
 
 * [API keys](#api_keys)
 * [Basic Auth](#basic_auth)
@@ -74,7 +74,7 @@ APIs that use Basic Auth will also use HTTPS, which means the message content wi
 
 When the API server receives the message, it decrypts the message and examines the header. After decoding the string and analyzing the username and password, it then decides whether to accept or reject the request.
 
-In Postman, you can configure Basic Authorization by clicking the **Authorization** tab, and then typing the **username** and **password** on the right of the colon on each row. The Headers tab will show a key-value pair that looks like this:
+In Postman, you can configure Basic Authorization by clicking the **Authorization** tab, selecting **Basic Auth** from the drop-down selector, and then typing the **username** and **password** on the right of the colon on each row. The Headers tab will show a key-value pair that looks like this:
 
 ```
 Authorization: Basic RnJlZDpteXBhc3N3b3Jk
@@ -134,11 +134,10 @@ However, you do need to explain some basic information such as:
 * How to get API keys
 * How to authenticate requests
 * Error messages related to invalid authentication
-* Rate limits with API requests
-* Potential costs surrounding API request usage
+* Sensitivity around authentication information
 * Token expiration times
 
-If you have public and private keys, you should explain where each key should be used, and that private keys should not be shared. If different license tiers provide different access to the API calls you can make, these licensing tiers should be explicit in your authorization section or elsewhere.
+If you have public and private keys, you should explain where each key should be used, and note that private keys should not be shared. If different license tiers provide different access to the API calls, these licensing tiers should be explicit in your authorization section or elsewhere.
 
 Since the API keys section is usually essential before developers can start using the API, this section needs to appear in the beginning of your help.
 

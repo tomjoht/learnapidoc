@@ -8,24 +8,28 @@ section: testingdocs
 path1: /testingdocs.html
 ---
 
-Now that you've read about testing, it's time to get some more hands-on practice.
+Now that you've read about testing, it's time to get some more hands-on practice. In this activity, you'll do some doc testing with an open-source project (or other project you identified).
 
 * TOC
 {:toc}
 
-## 1. Test a topic
+## Test a topic
 
-With the [open-source API project you're working with](docapis_find_open_source_project.html), find one of the following:
+1.  With the [open-source API project you're working with](docapis_find_open_source_project.html), find the following:
 
-* Getting started tutorial
-* An API endpoint
-* A tutorial or other key task
+    * Getting started tutorial (or similar tutorial)
+    * API endpoint
 
-Test the content. For example, run all the endpoint requests. Proceed through all the steps in the tutorial. Do all the identified tasks with the topic. As you test out the content, identify any incorrect or missing or inaccurate information.
+2.  Now test the documentation by walking through the documentation details. More specifically:
+
+    * For the Getting started tutorial, proceed through all the steps in the tutorial. Make note of any assumptions that you found confusing, new terms or acronyms that were unfamiliar, or other questions you had. How long did it take to complete the getting started tutorial?
+    * For the API endpoint, make a request and examine the response. Does the response match what's in the documentation? Try different variations of parameters in the endpoint and see if the responses are what you expect. Identify any incorrect or missing or inaccurate information.
+
+3.  If you found information that was incorrect, either log an issue or reach out to the QA lead with the feedback.
 
 {% include random_ad2.html %}
 
-## 2. Find out test details
+## Find out test details
 
 Identify who performs the testing on the project. Reach out and interact with the QA lead for the project to gather as much information as you can about how testing is done. Find answers to the following questions:
 

@@ -9,7 +9,7 @@ section: docnonref
 path1: /docnonref.html
 ---
 
-The API overview explains what you can do with the API, including the high-level business goals, the market needs (or pain points) it solves, who the API is for, and other introductory information.
+The API overview explains what you can do with the API, including the high-level business goals, the market needs or pain points it solves, who the API is for, and other introductory information.
 
 {% if site.format == "web" %}
 * TOC
@@ -22,14 +22,14 @@ Too often with API documentation (perhaps because the content is often written b
 
 The API overview grounds users with a high-level understanding of the system. This high-level understanding is critical to grasping the system as a whole. It allows the details to fit into a larger conceptual framework.
 
-Start at the high-level, getting a gist of what something is about from the title and description, and work your way into more details. This overview provides this initial orientation for the user.
+To get an idea of what the API is about, users start at a high-level, getting a gist of what something is about from the title and description, and then work their way into more details. This overview provides this initial orientation for the user.
 
 {% include course_image.html size="medium" border="true" filename="nonref_overview" ext_print="png" ext_web="svg" alt="API overview" caption="The API overview provides high-level detail about the purpose, audience, and market need for your API." %}
 
 {: .tip}
 For more details on the importance of high-level overviews, see [Reduction, layering, and distillation as a strategy for simplicity](https://idratherbewriting.com/simplifying-complexity/reduction-layering-distillation.html).
 
-In the overview, list some common business scenarios in which the API might be useful. This will give people the context they need to evaluate whether the API is relevant to their needs.
+In the overview, list some common business scenarios in which the API might be useful. This will give users the context they need to evaluate whether the API is relevant to their needs.
 
 {% include random_ad.html %}
 
@@ -41,7 +41,7 @@ In [The Top 20 Reasons Startups Fail](https://www.cbinsights.com/research/startu
 
 > Startups fail when they are not solving a market problem. We were not solving a large enough problem that we could universally serve with a scalable solution. We had great technology, great data on shopping behavior, great reputation as a thought leader, great expertise, great advisors, etc, but what we didn’t have was technology or business model that solved a pain point in a scalable way. (*CB Insights*)
 
-This overview focuses in on the market problem that the API solves.
+This overview focuses in on the market problem that the API solves. If your API fails, it's likely because it's not solving a market problem.
 
 The API overview usually appears on the homepage of the API. The homepage (the start of your docs) is a good place to put this overview, because in this overview you also define your audience. Understanding your audience helps you orient the content in your API documentation appropriately.
 
@@ -65,6 +65,6 @@ Lyft's API overview starts out in a similar way, with sections titled "What is L
 
 {% include course_image.html url="https://console.bluemix.net/docs/services/conversation/index.html#about" filename="ibmcloudoverview" ext_web="png" ext_print="png" alt="IBM Watson Assistant overview" caption="IBM Watson Assistant overview" %}
 
-IBM Watson Assistant starts off with a brief summary of the service, followed by a high-level diagram of the system and a summary about how to implement it. Including a diagram of how your API works and how developers can implement it gives users a good grounding in what to expect, such as the level of complexity and time it will take to incorporate the API.
+IBM Watson Assistant starts off with a brief summary of the service, followed by a high-level diagram of the system and a summary about how to implement it. Including a diagram of how your API works gives users a good grounding about what to expect, such as the level of complexity and time it will take to incorporate the API.
 
 {% include random_ad2.html %}

@@ -22,7 +22,7 @@ The Getting Started topic is somewhat like the typical Hello World tutorial in d
 
 {% include course_image.html size="medium" filename="timetohelloworld" ext_print="png" ext_web="svg" alt="Getting started tutorials are like Hello World tutorials." caption="Think of getting started tutorials as a kind of Hello World tutorial with the API. How long would it take for a developer to get the simplest possible response using your API?" %}
 
-Both Hello World tutorials and Getting Started tutorials share the same goal: to show a user how to use a framework, API, or some other system to get the simplest and easiest result, so they get a sense of how it works and feel productive.
+Both Hello World tutorials and Getting Started tutorials share the same goal: to show a user how to use a framework, API, or some other system to get the simplest and easiest result, so they get a beginning-to-end sense of how it works.
 
 As an example, you could take a common, basic use case for your API and show how to construct a request, as well as what response returns. If a developer can make that call successfully, he or she can probably be successful with the other calls too.
 
@@ -35,7 +35,7 @@ The Getting Started tutorial might involve the following:
 
 {% include course_image.html size="medium" border="true" filename="nonref_gettingstarted" ext_print="png" ext_web="svg" alt="Getting started" caption="The Getting started tutorial usually walks users through the process from beginning to end but in a compressed, simple way" %}
 
-Put a link to your Getting Started tutorial on your documentation homepage. Make it as easy as possible for developers to use the API to get some result. If this means using pre-provisioned accounts or setup configurations, do so.
+Put a link to your Getting Started tutorial on your documentation homepage. Make it as easy as possible for developers to use the API to get some result. If this means using pre-provisioned accounts or setup configurations, consider doing so.
 
 ## Run in Postman button {#runinpostmanbutton}
 
@@ -79,7 +79,7 @@ When you click the button, you should be prompted to open the collection in a Po
 
 {% include random_ad2.html %}
 
-Especially if your users are already familiar with Postman, Run in Postman is a good option to provide (especially as one option of many for users to try out your API), as it allows users to easily generate the needed code to make requests in practically any language. It gives users a jumping off point where they can build on your information to create more detailed and customized calls.
+Especially if your users are already familiar with Postman, Run in Postman is a good option to provide (especially as one option of many for users to try out your API) because it allows users to easily generate the needed code to make requests in practically any language. It gives users a jumping off point where they can build on your information to create more detailed and customized calls.
 
 If you don't already have a "Try it out" feature in your docs, the Run in Postman button gives you this interactivity in an easy way, without requiring you to sacrifice the single source of truth for your docs.
 
@@ -105,7 +105,7 @@ Twitter's getting started page has several getting started sections for differen
 
 {% include course_image.html url="http://docs.parseplatform.org/parse-server/guide/#getting-started" filename="parseservergettingstarted" ext_web="png" ext_print="png" alt="Parse Server getting started" caption="Parse Server getting started" %}
 
-The Parse Server tutorial provides a good amount of detail and handholding through the various steps. For the more detailed steps of connecting your app and running the server elsewhere, the tutorial links out to more information.
+The Parse Server tutorial provides a good amount of detail and handholding through the various steps. For the more detailed steps on connecting your app and running the server elsewhere, the tutorial links out to more information.
 
 ### Adsense
 
@@ -117,7 +117,7 @@ The Adsense tutorial separates out some foundational prerequisites for getting s
 
 {% include course_image.html url="http://www.aerisweather.com/support/docs/api/getting-started/" filename="aerisgettingstarted" ext_web="png" ext_print="png" alt="Aeris getting started tutorial" caption="Aeris getting started tutorial" %}
 
-The Aeris weather getting started provides information for setting up an application and then making a request in one of several popular languages. While showing code in specific languages is undoubtedly more helpful for programmers coding in those languages, the code samples are irrelevant to other users. Focusing in a specific language is often a tradeoff.
+The Aeris weather getting started provides information for setting up an application and then making a request in one of several popular languages. While showing code in specific languages is undoubtedly more helpful for programmers coding in those languages, the code samples might be irrelevant to other users (e.g., Java devs might find the Python code irrelevant and vice versa). Focusing in a specific language is often a tradeoff.
 
 ### Watson and IBM Cloud
 

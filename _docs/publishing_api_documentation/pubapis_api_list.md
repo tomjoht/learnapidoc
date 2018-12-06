@@ -126,6 +126,7 @@ Browse a few of these documentation sites to get a sense of the variety, but als
 106. [Strava API](https://developers.strava.com/)
 107. [Plaid API](https://plaid.com/docs/)
 108. [Paymill API](https://developers.paymill.com/API/index)
+109. [Rundown API](https://rapidapi.com/therundown/api/therundown?endpoint=5ace93eae4b04378c0ca27ba)
 
 {% include tip.html content="I last checked these links in July 2018. Given how fast the technology landscape changes, some links may be out of date. However, if you simply type <i>{product} + api docs</i> into Google's search, you will likely find the company's developer doc site. Most commonly, the API docs are at developer.{company}.com." %}
 
