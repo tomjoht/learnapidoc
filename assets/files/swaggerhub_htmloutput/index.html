@@ -1,202 +1,194 @@
 <!doctype html>
 <html>
   <head>
-    <title>Weather API from Mashape</title>
+    <title>OpenWeatherMap API</title>
     <style type="text/css">
       body {
-	font-family: Trebuchet MS, sans-serif;
-	font-size: 15px;
-	color: #444;
-	margin-right: 24px;
-}
-
-h1	{
-	font-size: 25px;
-}
-h2	{
-	font-size: 20px;
-}
-h3	{
-	font-size: 16px;
-	font-weight: bold;
-}
-hr	{
-	height: 1px;
-	border: 0;
-	color: #ddd;
-	background-color: #ddd;
-}
-
-.app-desc {
-  clear: both;
-  margin-left: 20px;
-}
-.param-name {
-  width: 100%;
-}
-.license-info {
-  margin-left: 20px;
-}
-
-.license-url {
-  margin-left: 20px;
-}
-
-.model {
-  margin: 0 0 0px 20px;
-}
-
-.method {
-  margin-left: 20px;
-}
-
-.method-notes	{
-	margin: 10px 0 20px 0;
-	font-size: 90%;
-	color: #555;
-}
-
-pre {
-  padding: 10px;
-  margin-bottom: 2px;
-}
-
-.http-method {
- text-transform: uppercase;
-}
-
-pre.get {
-  background-color: #0f6ab4;
-}
-
-pre.post {
-  background-color: #10a54a;
-}
-
-pre.put {
-  background-color: #c5862b;
-}
-
-pre.delete {
-  background-color: #a41e22;
-}
-
-.huge	{
-	color: #fff;
-}
-
-pre.example {
-  background-color: #f3f3f3;
-  padding: 10px;
-  border: 1px solid #ddd;
-}
-
-code {
-  white-space: pre;
-}
-
-.nickname {
-  font-weight: bold;
-}
-
-.method-path {
-  font-size: 1.5em;
-  background-color: #0f6ab4;
-}
-
-.up {
-  float:right;
-}
-
-.parameter {
-  width: 500px;
-}
-
-.param {
-  width: 500px;
-  padding: 10px 0 0 20px;
-  font-weight: bold;
-}
-
-.param-desc {
-  width: 700px;
-  padding: 0 0 0 20px;
-  color: #777;
-}
-
-.param-type {
-  font-style: italic;
-}
-
-.param-enum-header {
-width: 700px;
-padding: 0 0 0 60px;
-color: #777;
-font-weight: bold;
-}
-
-.param-enum {
-width: 700px;
-padding: 0 0 0 80px;
-color: #777;
-font-style: italic;
-}
-
-.field-label {
-  padding: 0;
-  margin: 0;
-  clear: both;
-}
-
-.field-items	{
-	padding: 0 0 15px 0;
-	margin-bottom: 15px;
-}
-
-.return-type {
-  clear: both;
-  padding-bottom: 10px;
-}
-
-.param-header {
-  font-weight: bold;
-}
-
-.method-tags {
-  text-align: right;
-}
-
-.method-tag {
-  background: none repeat scroll 0% 0% #24A600;
-  border-radius: 3px;
-  padding: 2px 10px;
-  margin: 2px;
-  color: #FFF;
-  display: inline-block;
-  text-decoration: none;
-}
-
+      	font-family: Trebuchet MS, sans-serif;
+      	font-size: 15px;
+      	color: #444;
+      	margin-right: 24px;
+      }
+      
+      h1	{
+      	font-size: 25px;
+      }
+      h2	{
+      	font-size: 20px;
+      }
+      h3	{
+      	font-size: 16px;
+      	font-weight: bold;
+      }
+      hr	{
+      	height: 1px;
+      	border: 0;
+      	color: #ddd;
+      	background-color: #ddd;
+      }
+      
+      .app-desc {
+        clear: both;
+        margin-left: 20px;
+      }
+      .param-name {
+        width: 100%;
+      }
+      .license-info {
+        margin-left: 20px;
+      }
+      
+      .license-url {
+        margin-left: 20px;
+      }
+      
+      .model {
+        margin: 0 0 0px 20px;
+      }
+      
+      .method {
+        margin-left: 20px;
+      }
+      
+      .method-notes	{
+      	margin: 10px 0 20px 0;
+      	font-size: 90%;
+      	color: #555;
+      }
+      
+      pre {
+        padding: 10px;
+        margin-bottom: 2px;
+      }
+      
+      .http-method {
+       text-transform: uppercase;
+      }
+      
+      pre.get {
+        background-color: #0f6ab4;
+      }
+      
+      pre.post {
+        background-color: #10a54a;
+      }
+      
+      pre.put {
+        background-color: #c5862b;
+      }
+      
+      pre.delete {
+        background-color: #a41e22;
+      }
+      
+      .huge	{
+      	color: #fff;
+      }
+      
+      pre.example {
+        background-color: #f3f3f3;
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+      
+      code {
+        white-space: pre;
+      }
+      
+      .nickname {
+        font-weight: bold;
+      }
+      
+      .method-path {
+        font-size: 1.5em;
+        background-color: #0f6ab4;
+      }
+      
+      .up {
+        float:right;
+      }
+      
+      .parameter {
+        width: 500px;
+      }
+      
+      .param {
+        width: 500px;
+        padding: 10px 0 0 20px;
+        font-weight: bold;
+      }
+      
+      .param-desc {
+        width: 700px;
+        padding: 0 0 0 20px;
+        color: #777;
+      }
+      
+      .param-type {
+        font-style: italic;
+      }
+      
+      .param-enum-header {
+      width: 700px;
+      padding: 0 0 0 60px;
+      color: #777;
+      font-weight: bold;
+      }
+      
+      .param-enum {
+      width: 700px;
+      padding: 0 0 0 80px;
+      color: #777;
+      font-style: italic;
+      }
+      
+      .field-label {
+        padding: 0;
+        margin: 0;
+        clear: both;
+      }
+      
+      .field-items	{
+      	padding: 0 0 15px 0;
+      	margin-bottom: 15px;
+      }
+      
+      .return-type {
+        clear: both;
+        padding-bottom: 10px;
+      }
+      
+      .param-header {
+        font-weight: bold;
+      }
+      
+      .method-tags {
+        text-align: right;
+      }
+      
+      .method-tag {
+        background: none repeat scroll 0% 0% #24A600;
+        border-radius: 3px;
+        padding: 2px 10px;
+        margin: 2px;
+        color: #FFF;
+        display: inline-block;
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
-  <h1>Weather API from Mashape</h1>
-    <div class="app-desc">This is a sample spec that describes a Mashape Weather API. This example demonstrates features in the Swagger-2.0 specification as rendered with SwaggerHub. This output is part of the [Documenting REST APIs course](https://idratherbewriting.com/learnapidoc) on I'd Rather Be Writing. 
-
-This Weather API displays forecast data by latitude and longitude. It's a simple weather API, but the data comes from Yahoo Weather Service. The weatherdata endpoint delivers the most robust package of information of the endpoints here.
-
-To explore the API, you'll need an API key. You can sign up for an API through Mashape, or you can just use this one\: `EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p`. For the latitude and longitude parameters, you can get this information from the URL of a location on Google Maps. For example, for Santa Clara, California, use the following\:
-* **lat**: `37.3708698`
-* **lng**: `-122.037593` 
-</div>
-    
-    <div class="app-desc">Contact Info: <a href="tom@idratherbewriting.com">tom@idratherbewriting.com</a></div>
-    <div class="app-desc">Version: 2.2</div>
-    
-    <div class="license-info">Apache 2.0</div>
-    <div class="license-url">http://www.apache.org/licenses/LICENSE-2.0.html</div>
+  <h1>OpenWeatherMap API</h1>
+    <div class="app-desc">Get current weather, daily forecast for 16 days, and 3-hourly forecast 5 days for your city. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location stations. Data is available in JSON, XML, or HTML format. <strong>Note</strong>: This sample Swagger file covers the <code>current</code> endpoint only from the OpenWeatherMap API. <br/><br/> <strong>Note</strong>: All parameters are optional, but you must select at least one parameter. Calling the API by city ID (using the <code>id</code> parameter) will provide the most precise location results.</div>
+    <div class="app-desc">More information: <a href="https://openweathermap.org/api">https://openweathermap.org/api</a></div>
+    <div class="app-desc">Contact Info: <a href="some_email@gmail.com">some_email@gmail.com</a></div>
+    <div class="app-desc">Version: 2.5.3</div>
+    <div class="app-desc">BasePath:/data/2.5/</div>
+    <div class="license-info">CC Attribution-ShareAlike 4.0 (CC BY-SA 4.0)</div>
+    <div class="license-url">https://openweathermap.org/price</div>
   <h2>Access</h2>
     <ol>
-      <li>APIKey KeyParamName:X-Mashape-Key KeyInQuery:false KeyInHeader:true</li>
+      <li>APIKey KeyParamName:appid KeyInQuery:true KeyInHeader:false</li>
     </ol>
 
   <h2><a name="__Methods">Methods</a></h2>
@@ -204,282 +196,18 @@ To explore the API, you'll need an API key. You can sign up for an API through M
 
   <h3>Table of Contents </h3>
   <div class="method-summary"></div>
-  <h4><a href="#AirQuality">AirQuality</a></h4>
+  <h4><a href="#CurrentWeatherData">CurrentWeatherData</a></h4>
   <ul>
-  <li><a href="#getAqi"><code><span class="http-method">get</span> /aqi</code></a></li>
-  </ul>
-  <h4><a href="#WeatherData">WeatherData</a></h4>
-  <ul>
-  <li><a href="#getWeatherData"><code><span class="http-method">get</span> /weatherdata</code></a></li>
-  </ul>
-  <h4><a href="#WeatherForecast">WeatherForecast</a></h4>
-  <ul>
-  <li><a href="#getWeather"><code><span class="http-method">get</span> /weather</code></a></li>
+  <li><a href="#currentWeatherData"><code><span class="http-method">get</span> /weather</code></a></li>
   </ul>
 
-  <h1><a name="AirQuality">AirQuality</a></h1>
-  <div class="method"><a name="getAqi"/>
-    <div class="method-path">
-    <a class="up" href="#__Methods">Up</a>
-    <pre class="get"><code class="huge"><span class="http-method">get</span> /aqi</code></pre></div>
-    <div class="method-summary">Gets the air quality index (<span class="nickname">getAqi</span>)</div>
-    <div class="method-notes">Air quality is a measure of air pollution. The higher the number, the worse the pollution.</div>
-
-
-
-
-
-    <h3 class="field-label">Query parameters</h3>
-    <div class="field-items">
-      <div class="param">lat (required)</div>
-
-      <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; latitude </div><div class="param">lng (required)</div>
-
-      <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; longitude </div>
-    </div>  <!-- field-items -->
-
-
-    <h3 class="field-label">Return type</h3>
-    <div class="return-type">
-      <a href="#aqiResponse">aqiResponse</a>
-      
-    </div>
-
-    <!--Todo: process Response Object and its headers, schema, examples -->
-
-    <h3 class="field-label">Example data</h3>
-    <div class="example-data-content-type">Content-Type: application/text</div>
-    <pre class="example"><code>52</code></pre>
-
-    <h3 class="field-label">Produces</h3>
-    This API call produces the following media types according to the <span class="header">Accept</span> request header;
-    the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
-    <ul>
-      <li><code>text/plain</code></li>
-    </ul>
-
-    <h3 class="field-label">Responses</h3>
-    <h4 class="field-label">200</h4>
-    AQI response
-        <a href="#aqiResponse">aqiResponse</a>
-    <h3 class="field-label">Example data</h3>
-    <div class="example-data-content-type">Content-Type: application/text</div>
-    <pre class="example"><code>52</code></pre>
-  </div> <!-- method -->
-  <hr/>
-  <h1><a name="WeatherData">WeatherData</a></h1>
-  <div class="method"><a name="getWeatherData"/>
-    <div class="method-path">
-    <a class="up" href="#__Methods">Up</a>
-    <pre class="get"><code class="huge"><span class="http-method">get</span> /weatherdata</code></pre></div>
-    <div class="method-summary">Get the full weather forecast with abundant details (<span class="nickname">getWeatherData</span>)</div>
-    <div class="method-notes">Includes full details of the weather forecast, in JSON format. Details include everything from temperature to wind conditions, humidity, pressure, astronomy, conditions, sunset, high/lows, and future forecast.</div>
-
-
-
-
-
-    <h3 class="field-label">Query parameters</h3>
-    <div class="field-items">
-      <div class="param">lat (required)</div>
-
-      <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; latitude </div><div class="param">lng (required)</div>
-
-      <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; longitude </div>
-    </div>  <!-- field-items -->
-
-
-    <h3 class="field-label">Return type</h3>
-    <div class="return-type">
-      <a href="#weatherdata response">weatherdata response</a>
-      
-    </div>
-
-    <!--Todo: process Response Object and its headers, schema, examples -->
-
-    <h3 class="field-label">Example data</h3>
-    <div class="example-data-content-type">Content-Type: application/json</div>
-    <pre class="example"><code>{
-  "query" : {
-    "count" : 1,
-    "created" : "2017-06-24T23:47:36Z",
-    "lang" : "en-US",
-    "results" : {
-      "channel" : {
-        "units" : {
-          "distance" : "km",
-          "pressure" : "mb",
-          "speed" : "km/h",
-          "temperature" : "C"
-        },
-        "title" : "Yahoo! Weather - Sunnyvale, CA, US",
-        "link" : "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91990359/",
-        "description" : "Yahoo! Weather for Sunnyvale, CA, US",
-        "language" : "en-us",
-        "lastBuildDate" : "Sat, 24 Jun 2017 04:47 PM PDT",
-        "ttl" : "60",
-        "location" : {
-          "city" : "Sunnyvale",
-          "country" : "United States",
-          "region" : " CA"
-        },
-        "wind" : {
-          "chill" : "73",
-          "direction" : "345",
-          "speed" : "28.97"
-        },
-        "atmosphere" : {
-          "humidity" : "64",
-          "pressure" : "34033.22",
-          "rising" : "0",
-          "visibility" : "25.91"
-        },
-        "astronomy" : {
-          "sunrise" : "5:48 am",
-          "sunset" : "8:33 pm"
-        },
-        "image" : {
-          "title" : "Yahoo! Weather",
-          "width" : "142",
-          "height" : "18",
-          "link" : "http://weather.yahoo.com",
-          "url" : "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
-        },
-        "item" : {
-          "title" : "Conditions for Sunnyvale, CA, US at 04:00 PM PDT",
-          "lat" : "37.377499",
-          "long" : "-122.04686",
-          "link" : "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91990359/",
-          "pubDate" : "Sat, 24 Jun 2017 04:00 PM PDT",
-          "condition" : {
-            "code" : "28",
-            "date" : "Sat, 24 Jun 2017 04:00 PM PDT",
-            "temp" : "22",
-            "text" : "Mostly Cloudy"
-          },
-          "forecast" : [ {
-            "code" : "28",
-            "date" : "24 Jun 2017",
-            "day" : "Sat",
-            "high" : "25",
-            "low" : "16",
-            "text" : "Mostly Cloudy"
-          }, {
-            "code" : "30",
-            "date" : "25 Jun 2017",
-            "day" : "Sun",
-            "high" : "25",
-            "low" : "15",
-            "text" : "Partly Cloudy"
-          }, {
-            "code" : "30",
-            "date" : "26 Jun 2017",
-            "day" : "Mon",
-            "high" : "22",
-            "low" : "14",
-            "text" : "Partly Cloudy"
-          }, {
-            "code" : "30",
-            "date" : "27 Jun 2017",
-            "day" : "Tue",
-            "high" : "23",
-            "low" : "15",
-            "text" : "Partly Cloudy"
-          }, {
-            "code" : "34",
-            "date" : "28 Jun 2017",
-            "day" : "Wed",
-            "high" : "25",
-            "low" : "13",
-            "text" : "Mostly Sunny"
-          }, {
-            "code" : "30",
-            "date" : "29 Jun 2017",
-            "day" : "Thu",
-            "high" : "25",
-            "low" : "13",
-            "text" : "Partly Cloudy"
-          }, {
-            "code" : "34",
-            "date" : "30 Jun 2017",
-            "day" : "Fri",
-            "high" : "25",
-            "low" : "13",
-            "text" : "Mostly Sunny"
-          }, {
-            "code" : "30",
-            "date" : "01 Jul 2017",
-            "day" : "Sat",
-            "high" : "25",
-            "low" : "14",
-            "text" : "Partly Cloudy"
-          }, {
-            "code" : "30",
-            "date" : "02 Jul 2017",
-            "day" : "Sun",
-            "high" : "25",
-            "low" : "14",
-            "text" : "Partly Cloudy"
-          }, {
-            "code" : "30",
-            "date" : "03 Jul 2017",
-            "day" : "Mon",
-            "high" : "23",
-            "low" : "15",
-            "text" : "Partly Cloudy"
-          } ],
-          "description" : "<![CDATA[<img src=\"http://l.yimg.com/a/i/us/we/52/28.gif\"/>\n<BR />\n<b>Current Conditions:</b>\n<BR />Mostly Cloudy\n<BR />\n<BR />\n<b>Forecast:</b>\n<BR /> Sat - Mostly Cloudy. High: 25Low: 16\n<BR /> Sun - Partly Cloudy. High: 25Low: 15\n<BR /> Mon - Partly Cloudy. High: 22Low: 14\n<BR /> Tue - Partly Cloudy. High: 23Low: 15\n<BR /> Wed - Mostly Sunny. High: 25Low: 13\n<BR />\n<BR />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91990359/\">Full Forecast at Yahoo! Weather</a>\n<BR />\n<BR />\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)\n<BR />\n]]>",
-          "guid" : {
-            "isPermaLink" : "false"
-          }
-        }
-      }
-    }
-  }
-}</code></pre>
-
-    <h3 class="field-label">Produces</h3>
-    This API call produces the following media types according to the <span class="header">Accept</span> request header;
-    the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
-    <ul>
-      <li><code>application/json</code></li>
-    </ul>
-
-    <h3 class="field-label">Responses</h3>
-    <h4 class="field-label">200</h4>
-    Successful operation
-        <a href="#weatherdata response">weatherdata response</a>
-    <h3 class="field-label">Example data</h3>
-    <div class="example-data-content-type">Content-Type: application/json</div>
-    <pre class="example"><code>{query&#x3D;{count&#x3D;1, created&#x3D;2017-06-24T23:47:36Z, lang&#x3D;en-US, results&#x3D;{channel&#x3D;{units&#x3D;{distance&#x3D;km, pressure&#x3D;mb, speed&#x3D;km/h, temperature&#x3D;C}, title&#x3D;Yahoo! Weather - Sunnyvale, CA, US, link&#x3D;http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91990359/, description&#x3D;Yahoo! Weather for Sunnyvale, CA, US, language&#x3D;en-us, lastBuildDate&#x3D;Sat, 24 Jun 2017 04:47 PM PDT, ttl&#x3D;60, location&#x3D;{city&#x3D;Sunnyvale, country&#x3D;United States, region&#x3D; CA}, wind&#x3D;{chill&#x3D;73, direction&#x3D;345, speed&#x3D;28.97}, atmosphere&#x3D;{humidity&#x3D;64, pressure&#x3D;34033.22, rising&#x3D;0, visibility&#x3D;25.91}, astronomy&#x3D;{sunrise&#x3D;5:48 am, sunset&#x3D;8:33 pm}, image&#x3D;{title&#x3D;Yahoo! Weather, width&#x3D;142, height&#x3D;18, link&#x3D;http://weather.yahoo.com, url&#x3D;http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif}, item&#x3D;{title&#x3D;Conditions for Sunnyvale, CA, US at 04:00 PM PDT, lat&#x3D;37.377499, long&#x3D;-122.04686, link&#x3D;http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91990359/, pubDate&#x3D;Sat, 24 Jun 2017 04:00 PM PDT, condition&#x3D;{code&#x3D;28, date&#x3D;Sat, 24 Jun 2017 04:00 PM PDT, temp&#x3D;22, text&#x3D;Mostly Cloudy}, forecast&#x3D;[{code&#x3D;28, date&#x3D;24 Jun 2017, day&#x3D;Sat, high&#x3D;25, low&#x3D;16, text&#x3D;Mostly Cloudy}, {code&#x3D;30, date&#x3D;25 Jun 2017, day&#x3D;Sun, high&#x3D;25, low&#x3D;15, text&#x3D;Partly Cloudy}, {code&#x3D;30, date&#x3D;26 Jun 2017, day&#x3D;Mon, high&#x3D;22, low&#x3D;14, text&#x3D;Partly Cloudy}, {code&#x3D;30, date&#x3D;27 Jun 2017, day&#x3D;Tue, high&#x3D;23, low&#x3D;15, text&#x3D;Partly Cloudy}, {code&#x3D;34, date&#x3D;28 Jun 2017, day&#x3D;Wed, high&#x3D;25, low&#x3D;13, text&#x3D;Mostly Sunny}, {code&#x3D;30, date&#x3D;29 Jun 2017, day&#x3D;Thu, high&#x3D;25, low&#x3D;13, text&#x3D;Partly Cloudy}, {code&#x3D;34, date&#x3D;30 Jun 2017, day&#x3D;Fri, high&#x3D;25, low&#x3D;13, text&#x3D;Mostly Sunny}, {code&#x3D;30, date&#x3D;01 Jul 2017, day&#x3D;Sat, high&#x3D;25, low&#x3D;14, text&#x3D;Partly Cloudy}, {code&#x3D;30, date&#x3D;02 Jul 2017, day&#x3D;Sun, high&#x3D;25, low&#x3D;14, text&#x3D;Partly Cloudy}, {code&#x3D;30, date&#x3D;03 Jul 2017, day&#x3D;Mon, high&#x3D;23, low&#x3D;15, text&#x3D;Partly Cloudy}], description&#x3D;&lt;![CDATA[&lt;img src&#x3D;&quot;http://l.yimg.com/a/i/us/we/52/28.gif&quot;/&gt;
-&lt;BR /&gt;
-&lt;b&gt;Current Conditions:&lt;/b&gt;
-&lt;BR /&gt;Mostly Cloudy
-&lt;BR /&gt;
-&lt;BR /&gt;
-&lt;b&gt;Forecast:&lt;/b&gt;
-&lt;BR /&gt; Sat - Mostly Cloudy. High: 25Low: 16
-&lt;BR /&gt; Sun - Partly Cloudy. High: 25Low: 15
-&lt;BR /&gt; Mon - Partly Cloudy. High: 22Low: 14
-&lt;BR /&gt; Tue - Partly Cloudy. High: 23Low: 15
-&lt;BR /&gt; Wed - Mostly Sunny. High: 25Low: 13
-&lt;BR /&gt;
-&lt;BR /&gt;
-&lt;a href&#x3D;&quot;http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-91990359/&quot;&gt;Full Forecast at Yahoo! Weather&lt;/a&gt;
-&lt;BR /&gt;
-&lt;BR /&gt;
-(provided by &lt;a href&#x3D;&quot;http://www.weather.com&quot; &gt;The Weather Channel&lt;/a&gt;)
-&lt;BR /&gt;
-]]&gt;, guid&#x3D;{isPermaLink&#x3D;false}}}}}}</code></pre>
-  </div> <!-- method -->
-  <hr/>
-  <h1><a name="WeatherForecast">WeatherForecast</a></h1>
-  <div class="method"><a name="getWeather"/>
+  <h1><a name="CurrentWeatherData">CurrentWeatherData</a></h1>
+  <div class="method"><a name="currentWeatherData"></a>
     <div class="method-path">
     <a class="up" href="#__Methods">Up</a>
     <pre class="get"><code class="huge"><span class="http-method">get</span> /weather</code></pre></div>
-    <div class="method-summary">Gets brief details about the weather forecast (<span class="nickname">getWeather</span>)</div>
-    <div class="method-notes">Retrieves the weather forecast and summarizes it in one short sentence. Indicates temperature and general conditions for the area.</div>
+    <div class="method-summary">Call current weather data for one location (<span class="nickname">currentWeatherData</span>)</div>
+    <div class="method-notes">Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations.</div>
 
 
 
@@ -487,229 +215,158 @@ To explore the API, you'll need an API key. You can sign up for an API through M
 
     <h3 class="field-label">Query parameters</h3>
     <div class="field-items">
-      <div class="param">lat (required)</div>
-
-      <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; latitude coordinates </div><div class="param">lng (required)</div>
-
-      <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; longitude coordinates </div>
-    </div>  <!-- field-items -->
+      <div class="param">q (optional)</div>
+      
+            <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; &lt;strong&gt;City name&lt;/strong&gt;. &lt;em&gt;Example: London&lt;/em&gt;. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes. </div>      <div class="param">id (optional)</div>
+      
+            <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; &lt;strong&gt;City ID&lt;/strong&gt;. &lt;em&gt;Example: &lt;code&gt;2172797&lt;/code&gt;&lt;/em&gt;. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded &lt;a href&#x3D;&quot;http://bulk.openweathermap.org/sample/&quot;&gt;here&lt;/a&gt;. You can include multiple cities in parameter — just separate them by commas. The limit of locations is 20. &lt;em&gt;Note: A single ID counts as a one API call. So, if you have city IDs. it&#x27;s treated as 3 API calls.&lt;/em&gt; </div>      <div class="param">lat (optional)</div>
+      
+            <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; &lt;strong&gt;Latitude&lt;/strong&gt;. &lt;em&gt;Example: 35&lt;/em&gt;. The latitude cordinate of the location of your interest. Must use with &lt;code&gt;lon&lt;/code&gt;. </div>      <div class="param">lon (optional)</div>
+      
+            <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; &lt;strong&gt;Longitude&lt;/strong&gt;. &lt;em&gt;Example: 139&lt;/em&gt;. Longitude cordinate of the location of your interest. Must use with &lt;code&gt;lat&lt;/code&gt;. </div>      <div class="param">zip (optional)</div>
+      
+            <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; &lt;strong&gt;Zip code&lt;/strong&gt;. Search by zip code. &lt;em&gt;Example: 95050,us&lt;/em&gt;. Please note if country is not specified then the search works for USA as a default. </div>      <div class="param">units (optional)</div>
+      
+            <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; &lt;strong&gt;Units&lt;/strong&gt;. &lt;em&gt;Example: imperial&lt;/em&gt;. Possible values: &lt;code&gt;standard&lt;/code&gt;, &lt;code&gt;metric&lt;/code&gt;, and &lt;code&gt;imperial&lt;/code&gt;. When you do not use units parameter, format is &lt;code&gt;standard&lt;/code&gt; by default. </div>      <div class="param">lang (optional)</div>
+      
+            <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; &lt;strong&gt;Language&lt;/strong&gt;. &lt;em&gt;Example: en&lt;/em&gt;. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - &lt;code&gt;ar&lt;/code&gt;, Bulgarian - &lt;code&gt;bg&lt;/code&gt;, Catalan - &lt;code&gt;ca&lt;/code&gt;, Czech - &lt;code&gt;cz&lt;/code&gt;, German - &lt;code&gt;de&lt;/code&gt;, Greek - &lt;code&gt;el&lt;/code&gt;, English - &lt;code&gt;en&lt;/code&gt;, Persian (Farsi) - &lt;code&gt;fa&lt;/code&gt;, Finnish - &lt;code&gt;fi&lt;/code&gt;, French - &lt;code&gt;fr&lt;/code&gt;, Galician - &lt;code&gt;gl&lt;/code&gt;, Croatian - &lt;code&gt;hr&lt;/code&gt;, Hungarian - &lt;code&gt;hu&lt;/code&gt;, Italian - &lt;code&gt;it&lt;/code&gt;, Japanese - &lt;code&gt;ja&lt;/code&gt;, Korean - &lt;code&gt;kr&lt;/code&gt;, Latvian - &lt;code&gt;la&lt;/code&gt;, Lithuanian - &lt;code&gt;lt&lt;/code&gt;, Macedonian - &lt;code&gt;mk&lt;/code&gt;, Dutch - &lt;code&gt;nl&lt;/code&gt;, Polish - &lt;code&gt;pl&lt;/code&gt;, Portuguese - &lt;code&gt;pt&lt;/code&gt;, Romanian - &lt;code&gt;ro&lt;/code&gt;, Russian - &lt;code&gt;ru&lt;/code&gt;, Swedish - &lt;code&gt;se&lt;/code&gt;, Slovak - &lt;code&gt;sk&lt;/code&gt;, Slovenian - &lt;code&gt;sl&lt;/code&gt;, Spanish - &lt;code&gt;es&lt;/code&gt;, Turkish - &lt;code&gt;tr&lt;/code&gt;, Ukrainian - &lt;code&gt;ua&lt;/code&gt;, Vietnamese - &lt;code&gt;vi&lt;/code&gt;, Chinese Simplified - &lt;code&gt;zh_cn&lt;/code&gt;, Chinese Traditional - &lt;code&gt;zh_tw&lt;/code&gt;. </div>      <div class="param">mode (optional)</div>
+      
+            <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; &lt;strong&gt;Mode&lt;/strong&gt;. &lt;em&gt;Example: html&lt;/em&gt;. Determines format of response. Possible values are &lt;code&gt;xml&lt;/code&gt; and &lt;code&gt;html&lt;/code&gt;. If mode parameter is empty the format is &lt;code&gt;json&lt;/code&gt; by default. </div>    </div>  <!-- field-items -->
 
 
     <h3 class="field-label">Return type</h3>
     <div class="return-type">
-      <a href="#weatherResponse">weatherResponse</a>
+      <a href="#200">200</a>
       
     </div>
 
     <!--Todo: process Response Object and its headers, schema, examples -->
 
-    <h3 class="field-label">Example data</h3>
-    <div class="example-data-content-type">Content-Type: application/text</div>
-    <pre class="example"><code>"19 c, Mostly Clear at Santa Clara, California"</code></pre>
 
     <h3 class="field-label">Produces</h3>
     This API call produces the following media types according to the <span class="header">Accept</span> request header;
-    the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
     <ul>
+      <li><code>application/json</code></li>
       <li><code>text/plain</code></li>
     </ul>
 
     <h3 class="field-label">Responses</h3>
     <h4 class="field-label">200</h4>
-    weather response
-        <a href="#weatherResponse">weatherResponse</a>
-    <h3 class="field-label">Example data</h3>
-    <div class="example-data-content-type">Content-Type: application/text</div>
-    <pre class="example"><code>19 c, Mostly Clear at Santa Clara, California</code></pre>
+    Successful response
+        <a href="#200">200</a>
+    <h4 class="field-label">404</h4>
+    Not found response
+        <a href="#String">String</a>
   </div> <!-- method -->
   <hr/>
 
-  <div class="up"><a href="#__Models">Up</a></div>
   <h2><a name="__Models">Models</a></h2>
   [ Jump to <a href="#__Methods">Methods</a> ]
 
   <h3>Table of Contents</h3>
   <ol>
-    <li><a href="#aqiResponse"><code>aqiResponse</code></a></li>
-    <li><a href="#astronomy"><code>astronomy</code></a></li>
-    <li><a href="#atmosphere"><code>atmosphere</code></a></li>
-    <li><a href="#channel"><code>channel</code></a></li>
-    <li><a href="#condition"><code>condition</code></a></li>
-    <li><a href="#forecast"><code>forecast</code></a></li>
-    <li><a href="#forecast array"><code>forecast array</code></a></li>
-    <li><a href="#guid"><code>guid</code></a></li>
-    <li><a href="#image"><code>image</code></a></li>
-    <li><a href="#item"><code>item</code></a></li>
-    <li><a href="#location"><code>location</code></a></li>
-    <li><a href="#query"><code>query</code></a></li>
-    <li><a href="#results"><code>results</code></a></li>
-    <li><a href="#units"><code>units</code></a></li>
-    <li><a href="#weatherResponse"><code>weatherResponse</code></a></li>
-    <li><a href="#weatherdata response"><code>weatherdata response</code></a></li>
-    <li><a href="#wind"><code>wind</code></a></li>
+    <li><a href="#200"><code>200</code> - Successful response</a></li>
+    <li><a href="#Clouds"><code>Clouds</code> - Clouds</a></li>
+    <li><a href="#Coord"><code>Coord</code> - Coord</a></li>
+    <li><a href="#Main"><code>Main</code> - Main</a></li>
+    <li><a href="#Rain"><code>Rain</code> - Rain</a></li>
+    <li><a href="#Snow"><code>Snow</code> - Snow</a></li>
+    <li><a href="#Sys"><code>Sys</code> - Sys</a></li>
+    <li><a href="#Weather"><code>Weather</code> - Weather</a></li>
+    <li><a href="#Wind"><code>Wind</code> - Wind</a></li>
   </ol>
 
   <div class="model">
-    <h3 class="field-label"><a name="aqiResponse">aqiResponse - </a> <a class="up" href="#__Models">Up</a></h3>
-    <div class='model-description'></div>
+    <h3><a name="200"><code>200</code> - Successful response</a> <a class="up" href="#__Models">Up</a></h3>
+    
     <div class="field-items">
-          </div>  <!-- field-items -->
-  </div>
-  <div class="model">
-    <h3 class="field-label"><a name="astronomy">astronomy - </a> <a class="up" href="#__Models">Up</a></h3>
-    <div class='model-description'>Forecast information about current astronomical conditions</div>
-    <div class="field-items">
-      <div class="param">sunrise (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Today&#39;s sunrise time. The time is a string in a local time format of &quot;h:mm am/pm&quot; </div>
-<div class="param">sunset (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Today&#39;s sunset time. The time is a string in a local time format of &quot;h:mm am/pm&quot; </div>
+      <div class="param">coord (optional)</div><div class="param-desc"><span class="param-type"><a href="#Coord">Coord</a></span>  </div>
+<div class="param">weather (optional)</div><div class="param-desc"><span class="param-type"><a href="#Weather">array[Weather]</a></span> (more info Weather condition codes) </div>
+<div class="param">base (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Internal parameter </div>
+<div class="param">main (optional)</div><div class="param-desc"><span class="param-type"><a href="#Main">Main</a></span>  </div>
+<div class="param">visibility (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Visibility, meter format: int32</div>
+<div class="param">wind (optional)</div><div class="param-desc"><span class="param-type"><a href="#Wind">Wind</a></span>  </div>
+<div class="param">clouds (optional)</div><div class="param-desc"><span class="param-type"><a href="#Clouds">Clouds</a></span>  </div>
+<div class="param">rain (optional)</div><div class="param-desc"><span class="param-type"><a href="#Rain">Rain</a></span>  </div>
+<div class="param">snow (optional)</div><div class="param-desc"><span class="param-type"><a href="#Snow">Snow</a></span>  </div>
+<div class="param">dt (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Time of data calculation, unix, UTC format: int32</div>
+<div class="param">sys (optional)</div><div class="param-desc"><span class="param-type"><a href="#Sys">Sys</a></span>  </div>
+<div class="param">id (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> City ID format: int32</div>
+<div class="param">name (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">cod (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Internal parameter format: int32</div>
     </div>  <!-- field-items -->
   </div>
   <div class="model">
-    <h3 class="field-label"><a name="atmosphere">atmosphere - </a> <a class="up" href="#__Models">Up</a></h3>
-    <div class='model-description'>Forecast information about current atmospheric pressure, humidity, and visibility</div>
+    <h3><a name="Clouds"><code>Clouds</code> - Clouds</a> <a class="up" href="#__Models">Up</a></h3>
+    
     <div class="field-items">
-      <div class="param">humidity (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> humidity, in percent </div>
-<div class="param">pressure (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Barometric pressure, in the units specified by the pressure attribute of the yweather:units element (&quot;in&quot; or &quot;mb&quot;). </div>
-<div class="param">rising (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> State of the barometric pressure: steady (0), rising (1), or falling (2). </div>
-<div class="param">visibility (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Visibility, in the units specified by the distance attribute of the units element (&quot;mi&quot; or &quot;km&quot;). Note that the visibility is specified as the actual value * 100. For example, a visibility of 16.5 miles will be specified as 1650. A visibility of 14 kilometers will appear as 1400. </div>
+      <div class="param">all (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Cloudiness, % format: int32</div>
     </div>  <!-- field-items -->
   </div>
   <div class="model">
-    <h3 class="field-label"><a name="channel">channel - </a> <a class="up" href="#__Models">Up</a></h3>
-    <div class='model-description'></div>
+    <h3><a name="Coord"><code>Coord</code> - Coord</a> <a class="up" href="#__Models">Up</a></h3>
+    
     <div class="field-items">
-      <div class="param">units (optional)</div><div class="param-desc"><span class="param-type"><a href="#units">units</a></span>  </div>
-<div class="param">title (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The title of the feed, which includes the location city </div>
-<div class="param">link (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The URL for the Weather page of the forecast for this location </div>
-<div class="param">description (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The overall description of the feed including the location </div>
-<div class="param">language (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The language of the weather forecast </div>
-<div class="param">lastBuildDate (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The last time the feed was updated. The format is in the date format defined by [RFC822 Section 5](http://www.rfc-editor.org/rfc/rfc822.txt). </div>
-<div class="param">ttl (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Time to Live -- how long in minutes this feed should be cached. </div>
-<div class="param">location (optional)</div><div class="param-desc"><span class="param-type"><a href="#location">location</a></span>  </div>
-<div class="param">wind (optional)</div><div class="param-desc"><span class="param-type"><a href="#wind">wind</a></span>  </div>
-<div class="param">atmosphere (optional)</div><div class="param-desc"><span class="param-type"><a href="#atmosphere">atmosphere</a></span>  </div>
-<div class="param">astronomy (optional)</div><div class="param-desc"><span class="param-type"><a href="#astronomy">astronomy</a></span>  </div>
-<div class="param">image (optional)</div><div class="param-desc"><span class="param-type"><a href="#image">image</a></span>  </div>
-<div class="param">item (optional)</div><div class="param-desc"><span class="param-type"><a href="#item">item</a></span>  </div>
+      <div class="param">lon (optional)</div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span> City geo location, longitude </div>
+<div class="param">lat (optional)</div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span> City geo location, latitude </div>
     </div>  <!-- field-items -->
   </div>
   <div class="model">
-    <h3 class="field-label"><a name="condition">condition - </a> <a class="up" href="#__Models">Up</a></h3>
-    <div class='model-description'>The current weather conditions</div>
+    <h3><a name="Main"><code>Main</code> - Main</a> <a class="up" href="#__Models">Up</a></h3>
+    
     <div class="field-items">
-      <div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> The condition code for this forecast. You could use this code to choose a text description or image for the forecast. The possible values for this element are described in the [Condition Codes](https://developer.yahoo.com/weather/).documentation.html. </div>
-<div class="param">date (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The current date and time for which this forecast applies. The date is in RFC822 Section 5 format. </div>
-<div class="param">temp (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> The current temperature, in the units specified by the units element. </div>
-<div class="param">text (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> A textual description of conditions </div>
+      <div class="param">temp (optional)</div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span> Temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit. </div>
+<div class="param">pressure (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Atmospheric pressure (on the sea level, if there is no sea_level or grnd_level data), hPa format: int32</div>
+<div class="param">humidity (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Humidity, % format: int32</div>
+<div class="param">temp_min (optional)</div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span> Minimum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopolises geographically expanded (use these parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit. </div>
+<div class="param">temp_max (optional)</div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span> Maximum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopolises geographically expanded (use these parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit. </div>
+<div class="param">sea_level (optional)</div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span> Atmospheric pressure on the sea level, hPa </div>
+<div class="param">grnd_level (optional)</div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span> Atmospheric pressure on the ground level, hPa </div>
     </div>  <!-- field-items -->
   </div>
   <div class="model">
-    <h3 class="field-label"><a name="forecast">forecast - </a> <a class="up" href="#__Models">Up</a></h3>
-    <div class='model-description'></div>
+    <h3><a name="Rain"><code>Rain</code> - Rain</a> <a class="up" href="#__Models">Up</a></h3>
+    
     <div class="field-items">
-          </div>  <!-- field-items -->
-  </div>
-  <div class="model">
-    <h3 class="field-label"><a name="forecast array">forecast array - </a> <a class="up" href="#__Models">Up</a></h3>
-    <div class='model-description'>The weather forecast for a specific day. The item element contains multiple forecast elements for today and tomorrow.</div>
-    <div class="field-items">
-      <div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> The condition code for this forecast. You could use this code to choose a text description or image for the forecast. The possible values for this element are described in the [Condition Codes](https://developer.yahoo.com/weather/documentation.html#codes).
- </div>
-<div class="param">date (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The date to which this forecast applies. The date is in &#39;dd Mmm yyyy&#39; format, for example &#39;30 Nov 2005&#39; </div>
-<div class="param">day (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Day of the week to which this forecast applies. Possible values are Mon Tue Wed Thu Fri Sat Sun. </div>
-<div class="param">high (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> The forecasted high temperature for this day, in the units specified by the units element. </div>
-<div class="param">low (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> The forecasted low temperature for this day, in the units specified by the units element. </div>
-<div class="param">text (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> A textual description of conditions </div>
+      <div class="param">3h (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Rain volume for the last 3 hours format: int32</div>
     </div>  <!-- field-items -->
   </div>
   <div class="model">
-    <h3 class="field-label"><a name="guid">guid - </a> <a class="up" href="#__Models">Up</a></h3>
-    <div class='model-description'>Unique identifier for the forecast, made up of the location ID, the date, and the time.</div>
+    <h3><a name="Snow"><code>Snow</code> - Snow</a> <a class="up" href="#__Models">Up</a></h3>
+    
     <div class="field-items">
-      <div class="param">isPermaLink (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The attribute isPermaLink is false. </div>
+      <div class="param">3h (optional)</div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span> Snow volume for the last 3 hours </div>
     </div>  <!-- field-items -->
   </div>
   <div class="model">
-    <h3 class="field-label"><a name="image">image - </a> <a class="up" href="#__Models">Up</a></h3>
-    <div class='model-description'>The image used to identify this feed</div>
+    <h3><a name="Sys"><code>Sys</code> - Sys</a> <a class="up" href="#__Models">Up</a></h3>
+    
     <div class="field-items">
-      <div class="param">title (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The title of the image. </div>
-<div class="param">width (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The width of the image, in pixels </div>
-<div class="param">height (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The height of the image, in pixels </div>
-<div class="param">link (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Description of link </div>
-<div class="param">url (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The URL of Yahoo! Weather </div>
+      <div class="param">type (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Internal parameter format: int32</div>
+<div class="param">id (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Internal parameter format: int32</div>
+<div class="param">message (optional)</div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span> Internal parameter </div>
+<div class="param">country (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Country code (GB, JP etc.) </div>
+<div class="param">sunrise (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Sunrise time, unix, UTC format: int32</div>
+<div class="param">sunset (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Sunset time, unix, UTC format: int32</div>
     </div>  <!-- field-items -->
   </div>
   <div class="model">
-    <h3 class="field-label"><a name="item">item - </a> <a class="up" href="#__Models">Up</a></h3>
-    <div class='model-description'>The item element contains current conditions and forecast for the given location. There are multiple weather forecast elements for today and tomorrow.</div>
+    <h3><a name="Weather"><code>Weather</code> - Weather</a> <a class="up" href="#__Models">Up</a></h3>
+    
     <div class="field-items">
-      <div class="param">title (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The forecast title and time. </div>
-<div class="param">lat (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The latitude of the location. </div>
-<div class="param">long (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The longitude of the location. </div>
-<div class="param">link (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The Yahoo! Weather URL for this forecast. </div>
-<div class="param">pubDate (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The date and time this forecast was posted, in the date format defined by [RFC822 Section 5](http://www.rfc-editor.org/rfc/rfc822.txt). </div>
-<div class="param">condition (optional)</div><div class="param-desc"><span class="param-type"><a href="#condition">condition</a></span>  </div>
-<div class="param">forecast (optional)</div><div class="param-desc"><span class="param-type"><a href="#forecast">forecast</a></span>  </div>
-<div class="param">description (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> A simple summary of the current conditions and tomorrow&#39;s forecast, in HTML format, including a link to Yahoo! Weather for the full forecast. </div>
-<div class="param">guid (optional)</div><div class="param-desc"><span class="param-type"><a href="#guid">guid</a></span>  </div>
+      <div class="param">id (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Weather condition id format: int32</div>
+<div class="param">main (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Group of weather parameters (Rain, Snow, Extreme etc.) </div>
+<div class="param">description (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Weather condition within the group </div>
+<div class="param">icon (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Weather icon id </div>
     </div>  <!-- field-items -->
   </div>
   <div class="model">
-    <h3 class="field-label"><a name="location">location - </a> <a class="up" href="#__Models">Up</a></h3>
-    <div class='model-description'>The location of this forecast</div>
+    <h3><a name="Wind"><code>Wind</code> - Wind</a> <a class="up" href="#__Models">Up</a></h3>
+    
     <div class="field-items">
-      <div class="param">city (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> City name </div>
-<div class="param">country (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Two-character country code </div>
-<div class="param">region (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> State, territory, or region, if given </div>
-    </div>  <!-- field-items -->
-  </div>
-  <div class="model">
-    <h3 class="field-label"><a name="query">query - </a> <a class="up" href="#__Models">Up</a></h3>
-    <div class='model-description'></div>
-    <div class="field-items">
-      <div class="param">count (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> The number of items (rows) returned -- specifically, the number of sub-elements in the results property </div>
-<div class="param">created (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The date and time the response was created </div>
-<div class="param">lang (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The locale for the response </div>
-<div class="param">results (optional)</div><div class="param-desc"><span class="param-type"><a href="#results">results</a></span>  </div>
-    </div>  <!-- field-items -->
-  </div>
-  <div class="model">
-    <h3 class="field-label"><a name="results">results - </a> <a class="up" href="#__Models">Up</a></h3>
-    <div class='model-description'></div>
-    <div class="field-items">
-      <div class="param">channel (optional)</div><div class="param-desc"><span class="param-type"><a href="#channel">channel</a></span>  </div>
-    </div>  <!-- field-items -->
-  </div>
-  <div class="model">
-    <h3 class="field-label"><a name="units">units - </a> <a class="up" href="#__Models">Up</a></h3>
-    <div class='model-description'>Units for various aspects of the forecast. Note that the default is to use metric formats for the units (Celsius, kilometers, millibars, kilometers per hour).</div>
-    <div class="field-items">
-      <div class="param">distance (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Units for distance, mi for miles or km for kilometers </div>
-<div class="param">pressure (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Units of barometric pressure, &quot;in&quot; for pounds per square inch or &quot;mb&quot; for millibars. </div>
-<div class="param">speed (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Units of speed, &quot;mph&quot; for miles per hour or &quot;kph&quot; for kilometers per hour. </div>
-<div class="param">temperature (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Degree units, &quot;f&quot; for Fahrenheit or &quot;c&quot; for Celsius. </div>
-    </div>  <!-- field-items -->
-  </div>
-  <div class="model">
-    <h3 class="field-label"><a name="weatherResponse">weatherResponse - </a> <a class="up" href="#__Models">Up</a></h3>
-    <div class='model-description'></div>
-    <div class="field-items">
-          </div>  <!-- field-items -->
-  </div>
-  <div class="model">
-    <h3 class="field-label"><a name="weatherdata response">weatherdata response - </a> <a class="up" href="#__Models">Up</a></h3>
-    <div class='model-description'></div>
-    <div class="field-items">
-      <div class="param">query (optional)</div><div class="param-desc"><span class="param-type"><a href="#query">query</a></span>  </div>
-    </div>  <!-- field-items -->
-  </div>
-  <div class="model">
-    <h3 class="field-label"><a name="wind">wind - </a> <a class="up" href="#__Models">Up</a></h3>
-    <div class='model-description'>Forecast information about wind</div>
-    <div class="field-items">
-      <div class="param">chill (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Wind chill in degrees </div>
-<div class="param">direction (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Wind direction, in degrees </div>
-<div class="param">speed (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Wind speed, in the units specified in the speed attribute of the units element (mph or kph) </div>
+      <div class="param">speed (optional)</div><div class="param-desc"><span class="param-type"><a href="#BigDecimal">BigDecimal</a></span> Wind speed. Unit Default: meter/sec, Metric: meter/sec, Imperial: miles/hour. </div>
+<div class="param">deg (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Wind direction, degrees (meteorological) format: int32</div>
     </div>  <!-- field-items -->
   </div>
   </body>

@@ -16,7 +16,7 @@ path1: /docendpoints.html
 <img src="images/apiref4.png"/>
 {% endif %}
 
-{{site.data.apirefsections.request_example.def}}
+{{site.data.glossary.request_example.def}}
 
 * TOC
 {:toc}

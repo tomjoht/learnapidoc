@@ -23,7 +23,7 @@ Before jumping into details, let me provide some background about why I think St
 
 {% include random_ad2.html %}
 
-I didn't attend the workshop myself, but I was chatting with a few who did. One attendee was a little frustrated that they spent *so much time in [YAML](pubapis_yaml.html)* working on different parts of the OpenAPI spec definition. He said they actually spent most of the day in YAML, and it was kind of frustrating/tedious/boring. For this participant, this isn't what he imagined when he signed up to learn how to create interactive API docs.
+I didn't attend the workshop myself, but I was chatting with a few who did. One attendee was a little frustrated that they spent *so much time in [YAML](pubapis_yaml.html)* working on different parts of the [OpenAPI spec definition](pubapis_openapi_tutorial_overview.html). He said they actually spent most of the day in YAML, and it was kind of frustrating/tedious/boring. For this participant, this isn't what he imagined when he signed up to learn how to create interactive API docs.
 
 In the instructor's defense, I told my friend that describing an API using the OpenAPI spec *does* pretty much involve living in YAML all day, and it *is* tedious, highly prone to error, and technical. One of my favorite API bloggers, API evangelist Kin Lane, explains that "hand crafting even the base API definition for any API is time consuming." It is an activity "that swells quickly to being hours when you consider the finish work that's required" ([Automated Mapping Of The API Universe...](http://apievangelist.com/2016/02/05/automated-mapping-of-the-api-universe-with-charles-proxy-dropbox-openapi-spec-and-some-custom-apis/)).
 
@@ -31,9 +31,9 @@ Lane says he was exploring ways to automate the API definition using different t
 
 > I stayed up way too late playing with some of the new features in Stoplight.io. If you aren't familiar with what the Stoplight team has been cooking up&mdash;they have been hard at work crafting a pretty slick set of API modeling tools. I feel the platform provides me with a new way to look at the API life cycle&mdash;a perspective that spans multiple dimensions, including design, definition, virtualization, documentation, testing, discovery, orchestration, and client. … I am curious to see what API designers, and architects do with Stoplight&mdash;I feel like it has the potential to shift the landscape pretty significantly, something I haven't seen any API service provider do in a while. ([Automagically Defining Your API Infrastructure As You Work Using Stoplight.io](https://apievangelist.com/2016/02/16/automagically-defining-your-api-infrastructure-as-you-work-using-stoplightio))
 
-I, too, started playing around with Stoplight. I was curious to see whether the visual modeling tools for describing an API could take the tedium out of working in YAML on a line-by-line level with the spec. While using Stoplight to create an OpenAPI description for a recent web API at my work, and I found Stoplight to be really useful. It made it much easier to create the OpenAPI specification document.
+I, too, started playing around with Stoplight. I was curious to see whether the visual modeling tools for describing an API could take the tedium out of working in YAML on a line-by-line level with the spec. While using Stoplight to create an OpenAPI description for a recent web API at my work, I found Stoplight to be really useful. It made it much easier to create the OpenAPI specification document.
 
-Stoplight's visual modeling tools eliminate the need to be familiar with the format of the specification. You don't have to know the data type for each property, whether the property needs to be indented or defined directly and so forth. That level of complexity has been abstracted away in a GUI for designing your API.
+Stoplight's visual modeling tools eliminate the need to be familiar with the format of the OpenAPI specification. You don't have to know the data type for each property, whether the property needs to be nested or defined directly and so forth. That level of complexity has been abstracted away in a GUI for designing your API.
 
 {% include course_image.html url="https://next.stoplight.io/" size="large" border="true" filename="stoplightappinterface" ext_print="png" ext_web="png" alt="Stoplight app interface" caption="Stoplight provides visual modeling tools to describe your API. The screenshot above shows the UI for documenting parameters. Stoplight's UI produces a valid OpenAPI specification document, which is then used to drive other API services and activities on their site." %}
 
@@ -107,9 +107,11 @@ In this design-first model, technical writers can also insert themselves early i
 
 ## Documentation hosting features on Stoplight
 
-In addition to putting the OpenAPI specification at the center of the API lifecycle process, Stoplight has some other features of particular interest to technical writers. Stoplight offers a hosted docs solution, where you can integrate your non-reference content (the tutorials, guides, and other how-to's) together with the reference API docs. Here's an example hosted doc site on Stoplight for a product called [Shopgate](https://developer.shopgate.com/docs/).
+In addition to putting the OpenAPI specification at the center of the API lifecycle process, Stoplight has some other features of particular interest to technical writers. Stoplight offers a hosted docs solution, where you can integrate your non-reference content (the tutorials, guides, and other how-to's) together with the reference API docs. Here's a sample page from Stoplight for a product called [Shopgate](https://developer.shopgate.com/).
 
-<figure><a class="noCrossRef" href="https://developer.shopgate.com/docs/"><img alt="Shopgate docs" src="images/shopgate.png" class="noExtIcon"/></a><figcaption>You can integrate your reference and non-reference documentation in Stoplight's hosted doc solution. Integrating these two content types has been a longtime challenge for tech writers in the API doc space.</figcaption></figure>
+{% include course_image.html url="https://developer.shopgate.com/references/cart-integration/merchant-api/order/get-orders" size="" border="" filename="shopgate" ext_print="png" ext_web="png" alt="Sample page from the Shopgate Developer Center, which uses Stoplight to generate their API documentation" caption="Sample page from the Shopgate Developer Center, which uses Stoplight to generate their API documentation" %}
+
+Note that you can integrate your reference and non-reference documentation in Stoplight's hosted doc solution. Integrating these two content types has been a longtime challenge for tech writers in the API doc space. (For more on integration challenges with API documentation, see [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).)
 
 Stoplight also allows you to create variables to use in *both* your specification and your how-to docs. Stoplight plans to take re-use one step further by allowing re-use of your [spec's component definitions](pubapis_openapi_step5_components_object.html) in your [non-reference documentation](docnonref.html) as well. (But this feature is still forthcoming.)
 
@@ -117,9 +119,7 @@ Stoplight also allows you to create variables to use in *both* your specificatio
 
 Although I generally like working directly in the code, I've found that Stoplight lets me focus more on the content and less on the details of the spec's format. Ideally, you can probably get developers and other project team members to populate reference content in Stoplight themselves, since this is an activity that needs to happen much earlier in the API design process anyway.
 
-If you're documenting an API, [Stoplight](https://stoplight.io) (and their [hosted doc solution](https://stoplight.io/platform/docs/)) are definitely worth checking out. But don't think of Stoplight as just a documentation platform or an easy way to generate the OpenAPI description. Consider Stoplight a way to design the single source of truth that will empower all other teams in a more efficient toward a successful API.
-
-See the next section for a hands-on activity using Stoplight.
+If you're documenting an API, [Stoplight](https://stoplight.io) and their [hosted doc solution](https://stoplight.io/documentation/) are definitely worth checking out. But don't think of Stoplight as just a documentation platform or an easy way to generate the OpenAPI description. Consider Stoplight a way to design the single source of truth that will empower all other teams in a more efficient toward a successful API.
 
 ## Activity: Use Stoplight to edit your OpenAPI spec {#workshop_activity}
 

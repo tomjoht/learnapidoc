@@ -1,0 +1,23 @@
+{% assign glossaryFileParam = {{include.file}} %}
+{% assign glossaryFile = site.data[glossaryFileParam] %}
+
+{% if site.format == "web" %}
+<button type="button" class="btn btn-info" onclick="$('#keyterms').toggle( 'fast' )">Key terms &raquo;</button>
+<div id="keyterms" markdown="block" class="expandedBox" aria-expanded="false" style="display: none;">
+<dl>
+{% for entry in page.glossary_keys %}
+<dt><a id="{{item}}"></a>{{glossaryFile[entry].term}}</dt>
+<dd markdown="span">{{glossaryFile[entry].def}}</dd>
+{% endfor %}
+</dl>
+</div>
+{% else %}
+
+<div id="keyterms" markdown="block" class="expandedBox" aria-expanded="false" style="display: none;">
+<dl>
+{% for entry in page.glossary_keys %}
+<dt><a id="{{item}}"></a>{{glossaryFile[entry].term}}</dt>
+<dd markdown="span">{{glossaryFile[entry].def}}</dd>
+{% endfor %}
+</dl>
+{% endif %}

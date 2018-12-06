@@ -16,7 +16,7 @@ redirect_from:
 <img src="images/apiref2.png"/>
 {% endif %}
 
-{{site.data.apirefsections.endpoints_and_methods.def}}
+{{site.data.glossary.endpoints_and_methods.def}}
 
 * TOC
 {:toc}

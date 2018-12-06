@@ -1,5 +1,5 @@
 ---
-title: Glossary
+title: API Glossary
 permalink: docapis_glossary_section.html
 keywords:
 course: "Documenting REST APIs"
@@ -7,6 +7,7 @@ weight: 6.91
 sidebar: docapis
 section: docnonref
 path1: /docnonref.html
+no_newsletter: true
 ---
 
 The glossary defines all the terms that might be unique to your company or API. Glossaries are often overlooked or skipped, but their importance should not be understated, since much of the user's understanding of API documentation depends on the clarity and alignment of specific terms.

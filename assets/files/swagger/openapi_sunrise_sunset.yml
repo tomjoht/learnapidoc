@@ -66,7 +66,6 @@ paths:
           content:
             application/json:
               schema:
-                description: AQI response
                 $ref: '#/components/schemas/SunriseSunsetResponse'
 components:
   schemas:

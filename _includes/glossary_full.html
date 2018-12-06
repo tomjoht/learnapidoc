@@ -1,0 +1,28 @@
+{% assign letterAlphabet = include.letters | split: "," %}
+{% assign glossaryFileParam = {{include.file}} %}
+{% assign glossaryFile = site.data[glossaryFileParam] %}
+
+<style>
+span.glossarySeparator {
+  padding: 0 10px;
+  color: #dedede;
+}
+</style>
+
+<div class="glossaryJumpMenu">
+{% for item in letterAlphabet %} <a href="#{{item}}">{{item | capitalize }}</a><span class='glossarySeparator'>|</span> {% endfor %}
+</div>
+
+{% for item in letterAlphabet %}
+
+<h2 id="{{item}}">{{item | capitalize}}</h2>
+
+<dl>
+
+{% for entry in page.glossary_keys[item] %}
+<dt><a id="{{entry}}"></a>{{glossaryFile[entry].term}}</dt>
+<dd markdown="span">{{glossaryFile[entry].def}} {{glossaryFile[entry].link}}</dd>
+{% endfor %}
+</dl>
+
+{% endfor %}

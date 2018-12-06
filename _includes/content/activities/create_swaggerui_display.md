@@ -18,7 +18,7 @@ In this activity, you'll create a Swagger UI display for an OpenAPI specificatio
 	  The only folder you'll be working with in the downloaded zip is the **dist** folder (short for distribution). Everything else is used only if you're recompiling the Swagger files, which is beyond the scope of this tutorial.
 
 5.  Drag the **dist** folder out of the swagger-ui-master folder so that it stands alone. (Then optionally delete the swagger-ui-master folder and zip file.)
-7.  Drag your OpenAPI specification file that you prepared earlier (in step 1) into the the **dist** folder. Your file structure should look as follows:
+7.  Drag your OpenAPI specification file that you prepared earlier (in step 1) into the the **dist** folder. If you're using the pre-build OpenAPI files, it's either **openapi_openweathermap.yml** or **openapi_sunrise_sunset.yml**.) Your file structure should look as follows:
 
     <pre>
     ├── dist
@@ -45,7 +45,7 @@ In this activity, you'll create a Swagger UI display for an OpenAPI specificatio
     url: "http://petstore.swagger.io/v2/swagger.json",
     ```
 
-6.  Change the `url` value from `http://petstore.swagger.io/v2/swagger.json` to a relative path to your YAML file. For example
+6.  Change the `url` value from `http://petstore.swagger.io/v2/swagger.json` to a relative path to your YAML file, and then save the file. For example
 
     ```js
     url: "openapi_openweathermap.yml",
@@ -57,8 +57,6 @@ In this activity, you'll create a Swagger UI display for an OpenAPI specificatio
     url: "openapi_sunrise_sunset.yml",
     ```
 
-    Save the file.
-
 7.  View the index.html file locally in your browser. Note that Chrome's security restrictions (CORS objections) prevent you from viewing the Swagger UI file locally. You have several workarounds:
 
     *  View the file locally using [Firefox](https://www.mozilla.org/en-US/firefox/new/).
@@ -67,7 +65,7 @@ In this activity, you'll create a Swagger UI display for an OpenAPI specificatio
     *  Put the YAML file onto a public [GitHub Gist](https://gist.github.com/) and then click **Raw**. Use the URL for this Gist.
     *  Use a local server such as [simple local HTTP server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server).
 
-When you're ready to publish your Swagger UI file, you simply upload the folder to a web server and go to the index.html file. For example, if you called your directory **dist** (leaving it unchanged), you would go to **http://myserver.com/dist**. (You can change the "dist" folder name to whatever you want.)
+When you're ready to publish your Swagger UI file, you simply upload the folder to a web server and go to the **index.html** file. For example, if you called your directory **dist** (leaving it unchanged), you would go to **http://myserver.com/dist**. (You can change the "dist" folder name to whatever you want.)
 
 {: .tip}
 For more instructions in working with Swagger UI, see the [Swagger.io docs](https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/).

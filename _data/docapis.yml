@@ -101,7 +101,7 @@ folders:
 
   - title: "Activity: Find an Open Source Project"
     jurl: /docapis_find_open_source_project.html
-    
+
   - title: "Activity: Evaluate API reference docs for core elements"
     jurl: /docapis_api_reference_activity.html
 
@@ -216,7 +216,7 @@ folders:
   - title: API best practices
     jurl: /docapis_best_practices_with_api.html
 
-  - title: Glossary
+  - title: API Glossary
     jurl: /docapis_glossary_section.html
 
   - title: "Activity: Assess the non-reference content in your project"

@@ -37,7 +37,7 @@ We just have one tag, but you could have as many as you want (if you have a lot 
 
 ## Tags at the path object level
 
-The `tags` object at the root level should list all tags (groups) that you want in your API. Then in each object under `paths`, you list the tag you want that path grouped under.
+The `tags` object at the root level should list all tags (groups) that you want in your API. Then in each path object under `paths`, you list the tag you want that path grouped under.
 
 For example, in the operations object for the `/current` path, we used the tag `Current Weather Data`:
 
