@@ -8,6 +8,4 @@ section: restapispecifications
 course: "Documenting REST APIs"
 ---
 
-The OpenAPI specification provides a formal way of describing your REST API, and includes all the reference sections mentioned in Documenting API endpoints. Display frameworks such as Swagger UI can parse the OpenAPI specification and generate interactive documentation that lets users try out endpoints while learning about the API.
-
 {% include minitoc.html %}
