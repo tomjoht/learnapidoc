@@ -111,11 +111,24 @@ For video recordings of this course, see the [Recorded Video Presentations](doca
 
 See my [Upcoming Presentations](https://idratherbewriting.com/presentations/) on my blog for details about future workshops and presentations.
 
-## Course Slides
+## Course slides
 
 For the live workshops, I have various slides that cover different sections of this course. If you're a teacher adapting this material for a course on API documentation in a tech comm program, you can clone and modify the slides. See [Course Slides](docapis_course_slides.html) for the links. Basically, you would clone this GitHub repo and copy over the content from the `slides` directory.
 
 The slides use [RevealJS](https://github.com/hakimel/reveal.js/), which is an HTML/CSS/JS framework for slides. The images are single-sourced between the site and the slides, so they'll more likely stay in sync. You can adapt the slides as needed for your lessons.
+
+## Section overviews
+
+To give you a better sense of the course content, the following are brief overviews of each section:
+
+{% assign sidebar = site.data.docapis %}
+
+{% for folder in sidebar.folders %}
+
+* **[{{folder.title}}]({{folder.jurl | remove_first: "/" }})**: {{folder.description}}
+
+{% endfor %}
+
 
 ## Let me know if any content is out of date
 

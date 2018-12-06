@@ -2,7 +2,7 @@
 title: "Test all instructions yourself"
 course: "Documenting REST APIs"
 permalink: /testingdocs_test_your_instructions.html
-weight: 5.1
+weight: 5.2
 sidebar: docapis
 section: testingdocs
 path1: /testingdocs.html
@@ -27,11 +27,11 @@ Other times, the bugs are within your own documentation. For example, on one pro
 
 If you're testing a REST API, you can submit the test calls using [curl](docapis_make_curl_call.html), [Postman](docapis_postman.html), or another REST client. Save the calls so that you can quickly run a variety of scenarios.
 
-When you start to run your own tests and experiments, you'll begin to discover what does and does not work. For example, at one company, after setting up a test system and running some calls, I learned that part of my documentation was unnecessary. I thought that field engineers would need to configure a database with a particular code themselves, when it turns out that IT operations would actually be doing this configuration.
+When you start to run your own tests and experiments, you'll begin to discover what does and does not work. For example, at one company, after setting up a test system and running some calls, I learned that part of my documentation was unnecessary. I thought that field engineers would need to configure a database with a particular code themselves, when it turned out that IT operations would actually be doing this configuration.
 
 I didn't realize this until I started to ask how to configure the database, and an engineer said that my audience wouldn't be able to do that configuration, so it shouldn't be in the documentation.
 
-It's little things like that, which you learn as you're going through the process yourself, that make testing your docs vital to writing good developer documentation.
+It's little things like that, which you learn as you're going through the process yourself, that reinforce the importance of testing your docs. Testing is vital to writing good developer documentation. Never just take an engineer's word for how something works. If you follow this advice and test all your docs, you'll be successful in the API doc field. But if you just transcribe what engineers tell you, you'll basically end up being an engineer's secretary. (For more, see my blog post [How to avoid being a secretary for engineers](https://idratherbewriting.com/2018/11/19/avoid-being-secretary-for-engineers/).)
 
 ## Going through the whole process
 
@@ -61,7 +61,7 @@ When you select a video, you see a video preview screen:
 
 The meetups are divided into various categories, which gives some order to the list of videos.
 
-All seemed to go well, but then I discovered some bugs that I wouldn't have discovered had I not actually submitted the app into the Appstore. First, I found that device targeting (listing certain features in your Android manifest to identify which Fire devices your app supports) didn't work correctly for Fire TV apps. (This issue wasn't directly related to the app template, though.)
+All seemed to go well, but then I discovered some bugs that I would not have discovered had I not actually submitted the app into the Appstore. First, I found that device targeting (listing certain features in your Android manifest to identify which Fire devices your app supports) didn't work correctly for Fire TV apps. (This issue wasn't directly related to the app template, though.)
 
 I also discovered other issues. Although developers had tested the app template for many months, they hadn't tested pushing apps into the Appstore with the app template. It turns out the template's in-app purchases component (not active or configured by default) automatically triggered the Appstore to add a tag indicating that the app contained in-app purchases.
 
@@ -71,13 +71,13 @@ The developers said users could simply deregister the component from the app. So
 
 {% include random_ad.html %}
 
-This experience reinforced to me the importance of testing everything myself and not taking the developer's word for how something works. It also reinforced how absolutely vital it is to get your hands on the code you're documenting and run it through as real of a situation as you can.
+This experience reinforced to me how absolutely vital it is to get your hands on the code you're documenting and run it through as real of a situation as you can. It blew my mind that the engineering team did not actually have an app in the Appstore that was published with this template. I was the only one.
 
-It's not always possible to run code through real situations, and there are times when I might just help edit and publish engineering-written docs, but that's not the scenario I prefer to work in. I love getting my hands on the code and actually trying to make it work in the scenario it was designed for. Really, how else can you write good documentation?
+It's not always possible to run code through real situations, and there are times when I might just help edit and publish engineering-written docs, but that's not the scenario I prefer to work in. I love getting my hands on the code and actually try to make it work in the scenario it was designed for. Really, how else can you write good documentation?
 
-The team also asserted that the same app could be submitted into the Google Play Appstore. However, this was an untested assumption. When I submitted my app, Google rejected it due to missing banner assets declared in the manifest. It also triggered "dangerous permission" warnings. I relayed the information to engineers, who created JIRA tickets to address the issues. More than just creating better documentation, this testing allowed me to improve the products I was documenting. (It also improved my credibility with the engineers.)
+The team also asserted that the same app could be submitted into the Google Play Appstore. However, this was an untested assumption. When I submitted my app into the Play Store, Google rejected it due to missing banner assets declared in the manifest. It also triggered "dangerous permission" warnings. I relayed the information to engineers, who created JIRA tickets to address the issues. More than just creating better documentation, this testing allowed me to improve the products I was documenting. (It also improved my credibility with the engineers.)
 
-Another team developer had a different tool for publishing apps, which I also set about documenting. This tool was designed for non-technical end users and was supposed to be so easy, it didn't have any more documentation than a brief FAQ.
+This is a story that repeats itself frequently with other projects. Another engineering team I was supporting also developed an app template (web instead of Android) for publishing apps in the Appstore. This tool was designed for non-technical end users and was supposed to be so easy, it didn't have any more documentation than a brief FAQ.
 
 I tested the tool from beginning to end by creating and submitting an app with it. By the time I finished, I had more than 30 questions along with several significant issues that I discovered. I uncovered a number of previously unknown bugs, called attention to a problematic synchronization issue, brought together teams from across organizations to troubleshoot some issues, and generally raised my value from mere documentation writer to more of a power player on multiple teams.
 
@@ -89,7 +89,7 @@ For example, for general Fire TV users who weren't using the app template, I als
 
 As you can imagine, I later discovered gaps in the documentation that I needed to address. It turns out when you actually send recommendations to Fire TV, Fire TV uses only *some* of the recommendations information that you submit. But in my initial docs, I didn't indicate which fields actually get used. This left developers wondering if they integrated the recommendations correctly. Unsurprisingly, in our forums, a third-party developer soon asked what he was doing wrong because a field he was passing seemed to have no effect on the display.
 
-Putting together an app from scratch that leverages all the recommendation API calls requires more effort, for sure. But to write better documentation, it's the step I needed to take to ferret out all the potential issues users would face.
+Putting together an app from scratch that leverages all the recommendation API calls requires more effort, for sure. But to write better documentation, it's the step I needed to take to ferret out all the potential issues users would face. If creating the sample app is beyond your skill level, ask the engineers for a demo app or to schedule a meeting where they will demonstrate the feature in a live way.
 
 Overall, make sure to test the code you're documenting in as real of a situation as you can. You'll be surprised what you discover. Reporting back the issues to your team will make your product stronger and increase your value to the team.
 
@@ -99,11 +99,11 @@ Overall, make sure to test the code you're documenting in as real of a situation
 
 Testing your instructions makes the tech writing career a lot more engaging. I'd even say that testing all the docs is what converts tech writing from a boring, semi-isolated career to an engaging, interactive role with your team and users.
 
-There's nothing worse than ending up as a secretary for engineers, where your main task is to record what engineers say, write up notes, send it to them for review, and then listen to their every word as if they're emperors who give you a thumbs up or thumbs down. That's not the kind of technical writing work that inspires or motivates me.
+There's nothing worse than ending up as a secretary for engineers, where your main task is to record what engineers say, write up notes, send it to them for review, and then listen to their every word as if they're emperors who give you a thumbs up or thumbs down. That's not the kind of technical writing work that motivates me.
 
 Instead, when I can walk through the instructions myself, and confirm whether they work or not, adjusting them with more clarity or detail as needed, that's when things become interesting. (And actually, the more I learn about the knowledge domain itself &mdash; the technology, product landscape, business and industry, etc &mdash; the appeal of technical writing increases dramatically.)
 
-In contrast, if you just stick to technical editing, formatting, publishing, and curating, these activities will likely not fulfill you in your technical writing career (even though these activities are still worthwhile). Only when you get your synapses firing in the knowledge domain you're writing in as well as get your hands dirty testing and trying out all the steps and processes does the work of technical writing come alive.
+In contrast, if you just stick to technical editing, formatting, publishing, and curating, these activities will likely not fulfill you in your technical writing career (even though these activities are still worthwhile). Only when you get your synapses firing in the knowledge domain you're writing in, as well as get your hands dirty testing and trying out all the steps and processes, does the work of technical writing come alive.
 
 ## Accounting for the necessary time
 
@@ -111,6 +111,6 @@ Note that it takes time to try out the instructions yourself and with users. It 
 
 But don't assume that once your product is released, all documentation is done. You can always go back over your existing, already-published documentation and improve it. Consider the first release a kind of "Day 1" for your documentation. It's the first iteration. Your documentation will get better with each iteration. If you couldn't get your test system up and running before the first release, that's okay. Build the test system for the upcoming release.
 
-With the first release, if you can [capture feedback](https://idratherbewriting.com/simplifying-complexity/reconstructing-the-absent-user.html) as your documentation get used (feedback from forums, contact email, logs, and other means), you can improve your documentation and see gaps that you likely missed. In some ways, each time users consult the documentation to perform a task, they are testing your documentation.
+With the first release, if you can capture feedback as your documentation get used (feedback from forums, contact email, logs, and other means), you can improve your documentation and see gaps that you likely missed. In some ways, each time users consult the documentation to perform a task, they are testing your documentation. (For more on capturing feedback, see my post on [Reconstructing the absent user](https://idratherbewriting.com/simplifying-complexity/reconstructing-the-absent-user.html).)
 
 Beyond just testing documentation yourself, you also need to [test it against users](testingdocs_testing_assumptions.html).

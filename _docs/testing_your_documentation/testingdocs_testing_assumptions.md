@@ -2,13 +2,13 @@
 title: "Test your assumptions against users"
 course: "Documenting REST APIs"
 permalink: /testingdocs_testing_assumptions.html
-weight: 5.2
+weight: 5.3
 sidebar: docapis
 section: testingdocs
 path1: /testingdocs.html
 ---
 
-The previous two sections talked about testing from the perspective of the tech writer merely running through the steps. However, remember that you, the tech writer, are not the user. Almost all documentation builds on assumptions (about capabilities, setup, previous knowledge) that may or may not be shared with your audience. While [testing your documentation](testingdocs_test_your_instructions.html), recognize that what may seem clear to you may be confusing to your users. Learn to identify assumptions that can interfere with your audience's ability to follow the instructions in your documentation.
+The previous two sections talked about testing from the perspective of the tech writer merely running through the steps. However, remember that you, the tech writer, are not the user. Almost all documentation builds on assumptions (about capabilities, setup, previous knowledge) that may or may not be shared with your audience. While [testing your documentation](testingdocs_test_your_instructions.html), recognize that what may seem clear to you may be confusing to your users. And what might be confusing to you might be clear to users. Learn to identify assumptions that can interfere with your audience's ability to follow the instructions in your documentation.
 
 {% if site.format == "web" %}
 * TOC
@@ -17,7 +17,7 @@ The previous two sections talked about testing from the perspective of the tech 
 
 ## Assumptions about terminology
 
-You might assume that your audience already know how to SSH onto a server, create [authorizations in REST headers](docapis_more_about_authorization.html), [use curl to submit calls](docapis_make_curl_call.html), and so on. Usually documentation doesn't hold a user's hand from beginning to end, but rather jumps into a specific task that depends on concepts and techniques that you assume the user already knows. However, making assumptions about concepts and techniques your audience knows can be dangerous. These assumptions are exactly why so many people get frustrated by instructions and (figuratively) throw them in the trash.
+You might assume that your audience already knows how to SSH onto a server, create [authorizations in REST headers](docapis_more_about_authorization.html), [use curl to submit calls](docapis_make_curl_call.html), and so on. Usually documentation doesn't hold a user's hand from beginning to end, but rather jumps into a specific task that depends on concepts and techniques that you assume the user already knows. However, making assumptions about concepts and techniques your audience knows can be dangerous. These assumptions are exactly why so many people get frustrated by instructions.
 
 For example, my 10-year-old daughter is starting to cook. She feels confident that if the cookbook's instructions are clear, she can follow almost anything (assuming we have the ingredients to make it). However, she says sometimes the instructions tell her to do something that she doesn't know how to do &mdash; such as *sauté* something.
 
@@ -35,12 +35,11 @@ With developer documentation, usually the audience's skill level is beyond my ow
 
 We must also remember that users may have deep knowledge in another technical area outside of the domain we're writing in. For example, the user may be a Java expert but a novice when it comes to JavaScript, and vice versa.
 
-{: .tip}
 To read more about how specialized language makes technical documentation difficult to understand, see [Reducing the complexity of technical language](https://idratherbewriting.com/simplifying-complexity/reducing-the-complexity-of-technical-language.html) in my series on Simplifying Complexity.
 
 ## Solutions for addressing different audiences
 
-The solution to addressing different audiences doesn't involve writing entirely different sets of documentation (although conceptually, that might be a good strategy in some situations). You can link potentially unfamiliar terms to a glossary or reference section where beginners can ramp up on the basics.
+The solution to addressing different audiences doesn't involve writing entirely different sets of documentation (although conceptually, that might be a good strategy in some situations). You can link potentially unfamiliar terms to a [glossary](docapis_glossary_section.html) or [getting started tutorial](docapis_doc_getting_started_section.html) where beginners can ramp up on the basics.
 
 You can likewise provide links to separate, advanced topics for those scenarios when you want to give some power-level instruction but don't want to hold a user's hand through the whole process. You don't have to offer just one path through the doc set.
 
@@ -52,7 +51,7 @@ Almost no developer can push out their code without running it through QA, but f
 
 In general, QA people don't test whether a user would understand the instructions or whether concepts are clear. They just look for accuracy. QA team members are also poor testers because they already know the system too well in the first place.
 
-Before publishing, every tech writer should submit his or her instructions through a testing process of some kind, i.e., a "quality assurance" process. Companies wouldn't dream of setting up an IT shop without a quality assurance group for developers &mdash; why should docs be any different?
+Before publishing, it's ideal to submit your documentation through a testing process of some kind, that is, a "quality assurance" process. Companies wouldn't dream of setting up an IT shop without a quality assurance group for developers &mdash; why should docs be any different?
 
 {% include random_ad2.html %}
 
@@ -62,7 +61,7 @@ While conforming to the same style guide is important, it's not as important as 
 
 I haven't had an editor for years. In fact, the only time I've ever had an editor was at my first tech writing job, where we had a dozen writers. The editor focused mostly on style.
 
-I remember one time our editor was on vacation, and I got to play the editor role in her absence. As interim editor, I tried testing out the instructions and found that about a quarter of the time, I got lost. The instructions either missed a step, needed a screenshot, built on assumptions I didn't know, or had other issues.
+I remember one time our editor was on vacation, and I was asked to fill in as editor during her absence. As interim editor, I tried testing out the instructions and found that about a quarter of the time, I got lost. The instructions either missed a step, needed a screenshot, built on assumptions I didn't know, or had other issues.
 
 The response, when you give instructions back to the writer, is usually, "Oh, users will know that." The problem is that we're usually so disconnected with the actual user experience (since we rarely see users trying out docs), we can't recognize the "users-will-know" statement for the fallacy that it is.
 
@@ -72,7 +71,7 @@ If you have access to real users who can test your docs, great. Take advantage o
 
 Other technical writers are usually both curious and helpful when you ask them to try out your instructions. And when other technical writers start to walk through your steps, they recognize discrepancies in style that are worthy of discussion in themselves.
 
-Although usually other technical writers don't have time to go through your instructions, and they usually share your same level of technical expertise, having *someone* test your instructions is better than no one.
+Although other technical writers don't always have time to go through your instructions, and they usually share your same level of technical expertise, having *someone* test your instructions is better than no one.
 
 {% include random_ad2.html %}
 
@@ -80,17 +79,17 @@ Tech writers are good testing candidates precisely because they are writers inst
 
 Tech writers who test your instructions know exactly the kind of feedback you're looking for. They won't feel ashamed and dumb if they get stuck and can't follow your instructions. They'll usually let you know where your instructions are poor. They might say, *I got confused right here because I couldn't find the X function, and I didn't know what Y meant.* They know what you need to hear.
 
-In general, it's always good to have a non-expert test something rather than an expert. Experts can often compensate for shortcomings in documentation with their own expertise. In fact, experts may pride themselves in being able to complete a task *despite the poor instruction*. Novices can't compensate.
+In general, it's always good to have a non-expert test something rather than an expert. Experts can often compensate for shortcomings in documentation by relying on their own expertise. In fact, experts may pride themselves in being able to complete a task *despite the poor instruction*. Novices can't compensate.
 
-Another reason tech writers make good testers is because this kind of activity fosters good team building and knowledge sharing. At a previous job, I worked in a large department that had, at one time, about 30 UX engineers. The UX team held periodic meetings during which they submitted a design for general feedback and discussion.
+Also, when you have other technical writers test your docs, the activity fosters good team building and knowledge sharing. At a previous job, I worked in a large department that had, at one time, about 30 UX engineers. The UX team held periodic meetings during which they submitted a design for general feedback and discussion. The camaraderie and team-building during the design reviews was immediately apparent to me, and I wished we had something similar with our tech pubs team.
 
 By giving other technical writers the opportunity to test your documentation, you create the same kind of sharing and review of content. You build a community rather than having each technical writer always work on independent projects.
 
-The outcomes from having colleagues test your docs might include more than just feedback about the shortcomings in a specific doc set. You might bring up matters of style, or you might foster great team discussions about innovative approaches to your help. Maybe you've integrated a glossary tooltip that is simply cool, or an embedded series button. When other writers test your instructions, they not only see your demo, they understand how helpful a feature is in a real context, and they can incorporate similar techniques.
+The outcomes from having colleagues test your docs might include more than just feedback about the shortcomings in a specific doc set. You might bring up matters of style, or you might foster great team discussions about innovative approaches to your help. Maybe you've integrated a glossary tooltip that is simply cool, or a button for an embedded series. When other writers test your instructions, they not only see your demo, they understand how helpful a feature is in a real context, and they can incorporate similar techniques.
 
 ## Observing users as they test your docs
 
-One question in testing users is whether you should watch them in test mode. Undeniably, when you watch users, you put some pressure on them. Users don't want to look incompetent or dumb when they're following what should be clear instructions.
+One question in testing docs with your users is whether you should watch them in test mode. Undeniably, when you watch users, you put some pressure on them. Users don't want to look incompetent or dumb when they're following what should be clear instructions.
 
 But if you don't watch users, the whole testing process is much more nebulous. Exactly *when* is a user trying out the instructions? How much time are they spending on the tasks? Are they asking others for help, googling terms, and going through a process of trial and error to arrive at the right answer?
 
@@ -104,8 +103,8 @@ In my documentation projects, I admit that I don't do nearly as much user testin
 
 Agile testing methods are okay. You should definitely act on this feedback. But hopefully you can catch errors *before* they get to users. The whole point of a quality assurance process is to ensure users get a quality product prior to release.
 
-Additionally, the later errors are identified in the software development process, the more costly it is. For example, suppose you discover that a button or label or error message is really confusing. It's much harder to change it post-release rather than pre-release. At least with documentation, you can continually improve your docs based on incoming feedback.
+Additionally, the later that errors are identified in the software development process, the more costly they are. For example, suppose you discover that a button or label or error message is really confusing. It's much harder to change it post-release rather than pre-release. Changing a button might require the app to undergo retesting, error messages to be adjusted, retraining, UI modifications, and more. Changes to APIs are even worse, because presumably third-party developers have already integrated the calls into their apps. If you change the endpoint or parameters, the team might have to support both the old and new API, which then doubles the testing efforts.
 
 ## Conclusion
 
-No matter how extensively or minimally you do it, look for opportunities to test your instructions against an actual audience. You don't need to do a lot of tests (even the usability pros say 4-5 test subjects is usually enough to identify 80% of the problems), but try to do *some user testing*. When you treat docs like code, it naturally follows that just as we should test code, we should also test docs.
+No matter how extensively or minimally you do it, look for opportunities to test your instructions against an actual audience. You don't need to do a lot of tests (even the usability pros say 4-5 test subjects is usually enough to identify 80% of the problems), but try to do *some user testing*. When you treat [docs like code](pubapis_docs_as_code.html), it naturally follows that just as we should test code, we should also test docs.
