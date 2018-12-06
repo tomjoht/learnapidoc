@@ -57,16 +57,10 @@ We'll also dive into specifications such as the [OpenAPI specification](pubapis_
 
 This course is organized into the following sections:
 
-*  [Introduction to REST APIs](docapis_introtoapis.html)
-*  [Using a REST API like a developer](likeadeveloper.html)
-*  [Documenting endpoints](docendpoints.html)
-*  [Testing your API documentation](testingdocs.html)
-*  [Documenting non-reference sections](docnonref.html)
-*  [Publishing your API documentation](publishingapis.html)
-*  [OpenAPI specification and Swagger](restapispecifications.html)
-*  [Documenting native library APIs](nativelibraryapis.html)
-*  [Getting a job in API documentation](jobapis.html)
-*  [Glossary and additional resources](resources.html)
+{% assign sidebar = site.data.docapis %}
+{% for folder in sidebar.folders %}
+* **[{{folder.title}}]({{folder.jurl | remove_first: "/" }})**: {{folder.description}}
+{% endfor %}
 
 You don't have to read the sections in order &mdash; feel free to skip around as you prefer. But some of the earlier sections (such as the section on [Using a REST API like a developer](likeadeveloper.html) and [Documenting endpoints](docendpoints.html)) follow a somewhat sequential order with the same weather API scenario.
 
@@ -116,19 +110,6 @@ See my [Upcoming Presentations](https://idratherbewriting.com/presentations/) on
 For the live workshops, I have various slides that cover different sections of this course. If you're a teacher adapting this material for a course on API documentation in a tech comm program, you can clone and modify the slides. See [Course Slides](docapis_course_slides.html) for the links. Basically, you would clone this GitHub repo and copy over the content from the `slides` directory.
 
 The slides use [RevealJS](https://github.com/hakimel/reveal.js/), which is an HTML/CSS/JS framework for slides. The images are single-sourced between the site and the slides, so they'll more likely stay in sync. You can adapt the slides as needed for your lessons.
-
-## Section overviews
-
-To give you a better sense of the course content, the following are brief overviews of each section:
-
-{% assign sidebar = site.data.docapis %}
-
-{% for folder in sidebar.folders %}
-
-* **[{{folder.title}}]({{folder.jurl | remove_first: "/" }})**: {{folder.description}}
-
-{% endfor %}
-
 
 ## Let me know if any content is out of date
 
