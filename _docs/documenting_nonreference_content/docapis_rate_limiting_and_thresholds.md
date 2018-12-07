@@ -60,7 +60,7 @@ Bitly provides basic information on the page above but also links to [best pract
 
 By looking at these examples, you can see that while rate limiting might seem like a straightforward topic, there are layers of depth and complexity to cover. The relevance of the topic depends on your API and the rate limiting policies your company sets, but this information cannot be entirely offloaded to Marketing to handle. So much of the information around rate limiting directly affects development.
 
-## Activity with rate limits
+## <i class="fa fa-user-circle"></i> Activity with rate limits
 
 With the [open-source project you identified](docapis_find_open_source_project.html), identify the information about rate limits with the API. Answer the following questions:
 

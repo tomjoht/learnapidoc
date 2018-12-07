@@ -169,7 +169,7 @@ The Amazon example uses HMAC. The process is complex enough that a full-fledged 
 
 Like Twitter, Dropbox also uses OAuth 2.0. Their documentation includes not just one but two diagrams and an extended explanation of the process.
 
-## Activity with authorization
+## <i class="fa fa-user-circle"></i> Activity with authorization
 
 With the [open-source project you identified](docapis_find_open_source_project.html), identify the information about authorization for requests to the API. Answer the following questions:
 

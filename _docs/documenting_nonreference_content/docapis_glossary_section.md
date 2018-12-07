@@ -3,14 +3,14 @@ title: API Glossary
 permalink: docapis_glossary_section.html
 keywords:
 course: "Documenting REST APIs"
-weight: 6.91
+weight: 6.90
 sidebar: docapis
 section: docnonref
 path1: /docnonref.html
 no_newsletter: true
 ---
 
-The glossary defines all the terms that might be unique to your company or API. Glossaries are often overlooked or skipped, but their importance should not be understated, since much of the user's understanding of API documentation depends on the clarity and alignment of specific terms.
+The API glossary defines all the terms that might be unique to your company or API. Glossaries are often overlooked or skipped, but their importance should not be understated, since much of the user's understanding of API documentation depends on the clarity and alignment of specific terms.
 
 * TOC
 {:toc}
@@ -19,21 +19,24 @@ The glossary defines all the terms that might be unique to your company or API. 
 
 Unlike most other professional writing disciplines, tech docs are notorious for the amount of specialized terms in their content. Not only do we have unique terms related to our products, industry jargon and company-specific terms make their way into docs, driving up their complexity.
 
-API evangelist Kin Lane recently noted his frustration with an API's language when he encountered an undefined acronym &mdash; "DEG". Lane explains,
+API evangelist Kin Lane recently noted his frustration with an API's language when he encountered an undefined acronym in some API docs he was browsing. Lane explains,
 
 > I came across a set of API resources for managing a DEG the other day. You could add, updated, delete and get DEGs. You can also pull analytics, history, and other elements of a DEG. I spent about 10-15 minutes looking around their developer portal, documentation, and even Googling, but never could figure out what a DEG was. Nowhere in their documentation did they ever tell consumers what a DEG was, you just had to be in the know I guess. The API designer (if that occurred) and developer had never stopped to consider that maybe someone would stumble across their very public API and not know what a DEG was. ([Using Plain Language In Your API Paths](https://apievangelist.com/2018/07/09/use-plain-language-in-api-paths/))
 
-In this case, DEG must have been an acronym specific to the developer's API. In these cases, there's really no excuse for not defining your own pet acronyms and unique vocabulary. You can't simply make up an acronym and not define it for users (without frustrating them).
+In this case, DEG must have been an acronym specific to the developer's API. In these cases, there's really no excuse for not defining your own pet acronyms and unique vocabulary.
 
 But many times, acronyms and unfamiliar terms are part of a specialized domain. As a technical writer, using the correct terms for your knowledge domain and your product is necessary, and those terms are often appropriate for that particular knowledge domain.
 
-To simplify the language, you can't just omit the necessary terminology for the domain or substitute in more friendly names. You have to teach the user the right language so they can participate in the conversation. One commonsense approach for teaching users how to speak this language involves defining unfamiliar words for the user by way of a glossary.
+To simplify the language, you can't just omit the necessary terminology for the domain and substitute in more friendly names. You have to teach the user the right language so they can participate in the conversation. One commonsense approach for teaching users how to speak this language involves defining unfamiliar words for the user by way of a glossary.
+
+{% include course_image.html size="medium" border="true" filename="nonref_glossary" ext_print="png" ext_web="svg" alt="Glossary" caption="Glossaries not only provide clarity about terms for users, they also help the writers think more clearly and consistently about the topic" %}
+
+{: .tip}
+I provide an [API glossary here](api-glossary.html) that defines many terms related to API documentation. If you run into unfamiliar jargon that I don't define in the topic, you can always consult the glossary.
 
 ## Should you provide a glossary?
 
-Usually, providing a glossary in your documentation seems like going above and beyond the call of duty. However, simply defining these terms has tremendous benefit for the writer too, not just the users. Defining terms helps you recognize the special terminology that might be used with your API &mdash; terms that you may have become immune to by hearing them so frequently in project meetings. By defining the terms, you ensure that you're using these terms more precisely and accurately (rather than switching around with synonyms for variety).
-
-{% include course_image.html size="medium" border="true" filename="nonref_glossary" ext_print="png" ext_web="svg" alt="Glossary" caption="Glossaries not only provide clarity about terms for users, they also help the writers think more clearly and consistently about the topic" %}
+Usually, providing a glossary in your documentation seems like going above and beyond the call of duty. However, simply defining these terms has tremendous benefit for the writer too, not just for the users. Defining terms helps you recognize the special terminology that might be used with your API &mdash; terms that you may have become immune to by hearing them so frequently in project meetings. By defining the terms, you ensure that you're using these terms more precisely and accurately (rather than switching around with synonyms for variety).
 
 ## Localization requirements and glossaries
 
@@ -45,7 +48,7 @@ After translators finish translating the content, the translation needs to be ch
 
 ## Specialized versus non-specialized terms
 
-One challenge in coming up with a glossary is distinguishing between specialized terms unique to your API and terms that are common within the industry or knowledge domain. You don't need to define terms that are common within the knowledge domain you're working in. For example, with a sample Android app, you wouldn't need to define adb (Android Debug Bridge) in your glossary because anyone who developers with Android would presumably already be familiar with adb.
+One challenge in coming up with a glossary is distinguishing between specialized terms unique to your API and terms that are common within the industry or knowledge domain. You don't need to define terms that are common within the knowledge domain you're working in. For example, with a sample Android app, you wouldn't need to define adb (Android Debug Bridge) in your glossary because anyone who develops on Android would presumably already be familiar with adb.
 
 However, if you think listing some industry terms in the glossary would be helpful for users, who might need a little more information, you can do so. Glossaries can easily accommodate dozens or even hundreds of terms. In your definitions, you can also include links to external sites where more information is available.
 
@@ -78,7 +81,7 @@ Note how in the Yext glossary, when industry standard terms such as "SSO" are de
 
 When viewing the glossary, the terms also appear in the sidebar, replacing any doc pages listed there. I'm not a fan of this approach because it causes users to lose the context of their documentation sidebar. If the glossary is common to multiple sets of documentation, one would hope the glossary definitions are single-sourced through the authoring tools.
 
-One challenge this Yext example brings up is how to distribute glossaries across multiple doc sets. Suppose only some of these terms are relevant to one doc set, and other terms are relevant to another doc set. Do you partition the glossary into multiple specialized glossaries by product, or just have one general glossary across all products?
+One challenge this Yext example raises is how to distribute glossaries across multiple doc sets. Suppose only some of these terms are relevant to one doc set, and other terms are relevant to another doc set. Do you partition the glossary into multiple specialized glossaries by product, or just have one general glossary across all products?
 
 Use the strategy that makes sense for your docs. For the most part, since users just jump down to one specific glossary entry, it probably doesn't matter if other terms (that aren't specific to the doc set in context) are also included. On the other hand, filtering the definitions to a relevant subset would also encourage readers to actually browse through the definitions.
 
@@ -89,3 +92,13 @@ Use the strategy that makes sense for your docs. For the most part, since users 
 The Apigee glossary provides another good model to follow. One interesting decision with Apigee's glossary is to format the entries as a table. The format probably doesn't matter much, but given that there are official definition list elements in HTML, it seems a bit odd to reject definition lists and use tables instead. Definition lists usually display better on mobile devices such as phones and tablets, and definition lists are easier to work with in general.
 
 Regardless of the format, I'm usually thrilled to see a glossary. All too often, glossaries are neglected in documentation (not just in API documentation). They shouldn't be. Much of the complexity of technical content is due to the high number of specialized terms &mdash; terms that product teams often assume their audiences know (but in reality do not).
+
+## <i class="fa fa-user-circle"></i> Activity with glossaries
+
+With the [open-source project you identified](docapis_find_open_source_project.html), identify the glossary (or lack of one). Then answer the following questions:
+
+1. Does the API include a glossary?
+2. If the API lacks a glossary, what terms would you suggest including in a glossary?
+3. If the API includes a glossary, do term definitions link to any documentation topics for more information?
+4. Are unfamiliar terms defined in the context of topics themselves?
+5. Are the terms in the glossary consistent with the same terms used in competitor's documentation?

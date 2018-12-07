@@ -127,7 +127,7 @@ The Watson and IBM Cloud getting started tutorial lists 3 steps. It's not an end
 
 {% include random_ad.html %}
 
-## Activity with getting started tutorials
+## <i class="fa fa-user-circle"></i> Activity with getting started tutorials
 
 With the [open-source project you identified](docapis_find_open_source_project.html), identify the getting started tutorial. Then answer the following questions:
 

@@ -154,7 +154,7 @@ In contrast, a standalone page listing error codes allows you to expand on each 
 
 If some endpoints are prone to triggering certain status and error codes more than others, it makes sense to highlight those status and error codes on their relevant API reference pages. I recommend calling attention to any particularly relevant status or error codes on an endpoint's page, and then linking to the centralized page for full information.
 
-## Activity with status and error codes
+## <i class="fa fa-user-circle"></i> Activity with status and error codes
 
 With the [open-source project you identified](docapis_find_open_source_project.html), identify the status and error code information. Answer the following questions:
 

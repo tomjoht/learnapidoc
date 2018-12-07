@@ -93,7 +93,7 @@ The Google Cloud SDK provides quickstart guides for Linux, Debian, Ubuntu, and o
 
 Looking at the Google Cloud SDK versus the Amazon SDK shows some of the breadth and variety of technologies you might have to document in SDK territory. These SDKs are specific to a particular programming language, operating system, or other framework, and as such, it can be daunting to try to ramp up in order to document this category of tools. For SDK documentation, you'll need to work closely with engineers and listen to feedback from users.
 
-## Activity with SDKs
+## <i class="fa fa-user-circle"></i> Activity with SDKs
 
 With the [open-source project you identified](docapis_find_open_source_project.html), identify the information about any SDKs for the API. Answer the following questions:
 

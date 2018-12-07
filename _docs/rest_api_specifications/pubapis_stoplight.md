@@ -121,7 +121,7 @@ Although I generally like working directly in the code, I've found that Stopligh
 
 If you're documenting an API, [Stoplight](https://stoplight.io) and their [hosted doc solution](https://stoplight.io/documentation/) are definitely worth checking out. But don't think of Stoplight as just a documentation platform or an easy way to generate the OpenAPI description. Consider Stoplight a way to design the single source of truth that will empower all other teams in a more efficient toward a successful API.
 
-## Activity: Use Stoplight to edit your OpenAPI spec {#workshop_activity}
+## <i class="fa fa-user-circle"></i> Activity: Use Stoplight to edit your OpenAPI spec {#workshop_activity}
 
 In previous activities, you created your own [OpenAPI specification document](pubapis_openapi_activity.html) and also created a [Swagger UI display](pubapis_swagger.html#create_swaggerui) with that specification document. In this example, you'll make some modifications to your specification document using [Stoplight](pubapis_stoplight.html), a visual editor.
 

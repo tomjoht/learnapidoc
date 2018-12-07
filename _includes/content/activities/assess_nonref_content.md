@@ -1,15 +1,7 @@
 ## <i class="fa fa-user-circle"></i> Activity: Assess the non-reference content in 3 API doc sites
 
-In this activity, you'll evaluate several API docs to see which non-reference topics might be missing.
-
-1.  Identify 3 API doc sets to analyze. The API doc sets could be documentation projects could be any of the following:
-
-    *  API documentation projects at your current work
-    *  [An open-source API documentation project](docapis_find_open_source_project.html)
-    *  API documentation from the [list of 100 API doc sites](pubapis_apilist.html)
-    *  API documentation sites from your favorite tools or companies
-
-2.  Look through the documentation and identify whether the API documentation site contains each of the following.
+1.  Go to the [list of 100 API doc sites](pubapis_apilist.html) and identify 3 API doc sites to analyze. The API doc sets could be API documentation sites from your favorite tools or companies, or just API sites you select at random.
+2.  Look through the documentation and identify whether the API documentation site contains each of the following:
 
     <style>
     table, th, td {
@@ -81,13 +73,13 @@ In this activity, you'll evaluate several API docs to see which non-reference to
              <td markdown="span"></td>
           </tr>
           <tr>
-             <td markdown="span">[API best practices](docapis_best_practices_with_api.html)</td>
+          <td markdown="span">[Glossary](docapis_glossary_section.html)</td>
              <td markdown="span"></td>
              <td markdown="span"></td>
              <td markdown="span"></td>
           </tr>
           <tr>
-             <td markdown="span">[Glossary](docapis_glossary_section.html)</td>
+          <td markdown="span">[API best practices](docapis_best_practices_with_api.html)</td>
              <td markdown="span"></td>
              <td markdown="span"></td>
              <td markdown="span"></td>

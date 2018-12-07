@@ -9,7 +9,7 @@ section: docnonref
 path1: /docnonref.html
 ---
 
-Quick reference guides serve a different function than [getting started tutorials](docapis_doc_getting_started_section.html). While the getting started tutorial helps beginners get oriented by providing an beginning-to-end instruction to make a simple API request, with API documentation the quick reference guide helps users get a glimpse of the system as a whole, often by providing a list of the API's endpoints.
+Quick reference guides serve a different function than [getting started tutorials](docapis_doc_getting_started_section.html). While the getting started tutorial helps beginners get oriented by providing an beginning-to-end instruction to make a simple API request, the quick reference guide helps users get a glimpse of the system as a whole, often by providing a list of the API's endpoints.
 
 * TOC
 {:toc}
@@ -24,7 +24,7 @@ The quick reference guide should provide the user with just enough information t
 
 {% include course_image.html size="medium" url="https://idratherbewriting.com/learnapidoc/images/sample_api_diagram.pdf" filename="sample_api_diagram.pdf" ext_print="png" ext_web="png" alt="Sample quick reference guide format" caption="A quick reference guide format" %}
 
-The text is Latin filler for privacy reasons, so the logic may not be entirely apparent. But with this API, the endpoints could be organized into different groups. Some of the groups had multiple levels within the endpoint, and multiple include options for each endpoint. I created this diagram in Adobe Illustrator and distributed it as a PDF. Developers found it useful because it tried to make sense of the API as a whole, showing how all the endpoints fit together in a logical harmony.
+The text is Latin filler for privacy reasons, so the logic may not be entirely apparent. But with this API, the endpoints could be organized into different groups. Some of the groups had multiple levels within the endpoint, and multiple include options for each endpoint. I created this diagram in Adobe Illustrator and distributed it as a PDF. Developers found it useful because it tried to make sense of the API as a whole, showing how all the endpoints fit together in a logical harmony. Most commonly with API documentation, the quick reference guide lists abbreviated descriptions of the endpoints. For this reason, the [Swagger UI output](pubapis_swagger_demo.html) can often function as a quick reference guide.
 
 Outside of API documentation, quick reference guides tend to focus more on tasks. If you have a service to set up or configure, a more narrative rather than visual format might make sense. Here's a sample layout for such a guide:
 
@@ -41,13 +41,11 @@ When you create the quick reference guide, try to condense the most important in
 Through this distillation, quick reference guides provide a unique advantage for users to understand the material. Providing a high-level overview of a system helps users get a sense of the whole before drilling into the details.
 
 {: .tip}
-For a deep dive into the importance of distilling information for users, see [Reduction, layering, and distillation as a strategy for simplicity](https://idratherbewriting.com/simplifying-complexity/reduction-layering-distillation.html). Reading overviews, summaries, and other high-level information to see the whole at a glance can help users understand a complex system in significant ways. Too often, users get thrown into the technical details without more grounding and orientation about the whole.
+For a deep dive into the importance of distilling information for users, see [Reduction, layering, and distillation as a strategy for simplicity](https://idratherbewriting.com/simplifying-complexity/reduction-layering-distillation.html) in my series on Simplifying Complexity. Reading overviews, summaries, and other high-level information to see the whole at a glance can help users understand a complex system in significant ways. Too often, users get thrown into the technical details without more grounding and orientation about the whole.
 
 Distilling large amounts of information into concisely worded titles, summaries, headings, mini-TOCs, and topic sentences can facilitate information consumption and comprehension. Quick reference guides take the principle of distillation to another level by compressing the whole system into a bite-sized information deliverable.
 
-Quick reference guides are like the [poetry of technical writing](https://idratherbewriting.com/2008/07/06/quick-reference-guides-the-poetry-of-technical-writing/). The goal is not just to be brief or concise. With poetry, the poet attempts to evoke a mood or paint a moment, and in that brief moment, capture the essence of the whole.
-
-Writing a quick reference guide involves much the same effort. It's not that you merely cut words to make the documentation shorter, or restrict the output to a few topics, but that you try to compress the documentation as a whole and express its minimalist equivalent.
+Quick reference guides are like the [poetry of technical writing](https://idratherbewriting.com/2008/07/06/quick-reference-guides-the-poetry-of-technical-writing/). The goal is not just to be brief or concise. With poetry, the poet attempts to evoke a mood or paint a moment, and in that brief moment, capture the essence of the whole. Writing a quick reference guide involves much the same effort. It's not that you merely cut words to make the documentation shorter, or restrict the output to a few topics, but that you try to compress the documentation as a whole and express its minimalist equivalent.
 
 I'll grant that the task is probably impossible for technical material. Still, the attempt is worthwhile and the philosophy remains the same. Quick reference guides teach each us how to use the system in 5 minutes rather than 5 hours. It's a philosophy of simplification and linguistic efficiency.
 
@@ -81,8 +79,18 @@ If you use the [OpenAPI reference docs on GitHub](https://github.com/OAI/OpenAPI
 
 {% include course_image.html url="http://cheat.markdunkley.com/" filename="shopifyquickreferenceguide" ext_print="png" ext_web="png" alt="Shopify quick reference guide" caption="Shopify quick reference guide" %}
 
-The Shopify quick reference guide isn't for an API but it does show the filters, variables, and other functions available in Liquid, which is a scripting language for developers. Here Shopify takes advantage of collapse-and-expand functionality to compress the information.
+The Shopify quick reference guide isn't for an API, but it does show the filters, variables, and other functions available in Liquid, which is a scripting language for developers. Here Shopify takes advantage of collapse-and-expand functionality to compress the information.
 
 This quick reference guide is handy because it lets you browse all the available functionality in Liquid at once, so you can know what to dive into for more information. It's like a map of the Liquid terrain. The map let's you know all the functions that exist.
+
+## <i class="fa fa-user-circle"></i> Activity with quick reference guides
+
+With the [open-source project you identified](docapis_find_open_source_project.html), identify the information about quick reference guides for the API. Answer the following questions:
+
+1. Is there a quick reference guide for the API? Perhaps a quick list of the API endpoints?
+2. Is there a Swagger UI output that acts as a quick reference for the API?
+3. If there isn't a quick reference guide, would the API benefit from one? Why or why not?
+4. Besides listing abbreviated descriptions of the endpoints, what else would you put in the API's quick reference guide? Common tasks?
+5. Are there several essential tasks users need to perform with the API? Are these core tasks also communicated in the getting started tutorial?
 
 {% include random_ad.html %}

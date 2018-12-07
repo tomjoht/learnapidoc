@@ -219,11 +219,11 @@ folders:
   - title: Quick reference guide
     jurl: /docapis_doc_quick_reference.html
 
-  - title: API best practices
-    jurl: /docapis_best_practices_with_api.html
-
   - title: API Glossary
     jurl: /docapis_glossary_section.html
+
+  - title: API best practices
+    jurl: /docapis_best_practices_with_api.html
 
   - title: "Activity: Assess the non-reference content in your project"
     jurl: /docapis_nonref_activity.html
@@ -331,7 +331,7 @@ folders:
   description: "The API documentation landscape is full of jargon, acronyms, and many new terms. This glossary provides a list of terms and definitions. Additionally, this section contains additional exercises and information, such as more activities calling APIs, or more info about alternative specifications."
   folderitems:
 
-  - title: Glossary
+  - title: Glossary for API documentation
     jurl: /api-glossary.html
 
   - title:  REST API exercises

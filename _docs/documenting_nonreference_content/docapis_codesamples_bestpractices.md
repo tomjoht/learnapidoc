@@ -226,7 +226,7 @@ Documenting code can be one of the most challenging aspects of developer documen
 {: .tip}
 For a deeper dive into how to document code samples, see my presentation on [Creating code samples for API/SDK documentation](https://idratherbewriting.com/2014/05/30/creating-code-samples-webinar-recording-slides-and-audio/).
 
-## Activity with code samples
+## <i class="fa fa-user-circle"></i> Activity with code samples
 
 With the [open-source project you identified](docapis_find_open_source_project.html), identify code samples in the API documentation. Answer the following questions:
 
