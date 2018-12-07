@@ -1,4 +1,4 @@
-## <i class="fa fa-user-circle"></i> Activity 2a: Get an OpenWeatherMap API key {#openweathermap_apikey}
+## <i class="fa fa-user-circle"></i> Activity: Get an OpenWeatherMap API key {#openweathermap_apikey}
 
 To get an API key for the OpenWeatherMap API:
 

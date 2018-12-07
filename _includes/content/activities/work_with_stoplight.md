@@ -1,4 +1,4 @@
-###  <i class="fa fa-user-circle"></i> Activity 4d: Download and populate Stoplight with an OpenAPI specification
+###  <i class="fa fa-user-circle"></i> Activity: Download and populate Stoplight with an OpenAPI specification
 
 In this activity, you'll work with an OpenAPI file in Stoplight, which provides a GUI editor for working with the OpenAPI specification information. To speed things up, you'll start with a pre-built OpenAPI file that you paste into the Stoplight editor, and then you'll make some modifications to it using Stoplight's visual modeling tools. You can use Stoplight in the browser or as a web app. For simplicity, we'll use the browser version.
 

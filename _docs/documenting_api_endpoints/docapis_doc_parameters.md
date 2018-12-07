@@ -22,7 +22,7 @@ path1: /docendpoints.html
 
 The following screenshot shows a sample parameters section with the Box API:
 
-<a class="noExtIcon" href="https://developer.box.com/reference#edit-a-collaboration"><img src="images/boxparameterexample.png" /></a>
+{% include course_image.html url="https://developer.box.com/reference#edit-a-collaboration"   filename="boxparameterexample" ext_print="png" ext_web="png" alt="Sample parameters from Box API" caption="Sample parameters from Box API" %}
 
 In this example, the parameters are grouped by type: path parameters, query parameters, and body parameters. The endpoint also sets off the path parameter (`collab_id`) in an recognizable way in the endpoint definition.
 

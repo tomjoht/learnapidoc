@@ -50,7 +50,7 @@ For a tutorial on integrating Jekyll with Netlify CMS, see [Adding a CMS to Your
 
 Readme.io's emphasis is on providing an interface that helps you more easily write documentation based on best practices and designs. Readme.io provides a number of wizard-like screens to move you through documentation process, prompting you with forms to complete.
 
-<img class="medium" class="medium" src="images/readmeio_manual_api.png" style="border: 1px solid #dedede;" />
+{% include course_image.html  size="medium" border="true" filename="readmeio_manual_api" ext_print="png" ext_web="png" alt="Readme.io" caption="Readme.io" %}
 
 Most importantly, Readme.io includes *specific features for displaying API documentation content*, which puts it into a class of its own. Although you can add your API information manually, you can also import an [OpenAPI specification file](pubapis_swagger_intro.html). You can experiment by choosing one from the [OpenAPI examples](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0/yaml), such as [this one](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/petstore-expanded.json). Readme.io's integration of OpenAPI along with other doc content helps integrate outputs that are often separated. (This fragmentation is a problem I explore later in [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).)
 

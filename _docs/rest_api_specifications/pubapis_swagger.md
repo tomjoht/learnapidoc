@@ -81,7 +81,7 @@ Now let's make a request:
 3.  In the Example Value field, change the first `id` value to a random integer, such as `193844`. Change the second `name` value to something you'd recognize (your pet's name).
 4.  Click **Execute**.
 
-    <a href="http://petstore.swagger.io/" class="noExtIcon"><img src="images/swaggerui_execute.png" alt="Executing a sample Petstore request" /></a>
+    {% include course_image.html url="http://petstore.swagger.io/" size="large" filename="swaggerui_execute" ext_print="png" ext_web="png" alt="Executing a sample Petstore request" caption="Executing a sample Petstore request" %}
 
     Swagger UI submits the request and shows the [curl that was submitted](docapis_make_curl_call.html). The Responses section shows the [response](docapis_doc_sample_responses_and_schema.html). (If you select JSON rather than XML in the "Response content type" drop-down box, the response's format will be JSON.)
 
@@ -168,4 +168,4 @@ Another reason requests might be rejected is due to the host from your test serv
 
 ## Embedding Swagger UI within an existing site
 
-In addition to publishing your Swagger UI output as a [standalone site](https://idratherbewriting.com/learnapidoc/assets/files/swagger/), you can also [embed the Swagger file within an existing site](pubapis_swagger_demo.html). Since the Swagger UI site is responsive, it resizes well to fit into most any space. 
+In addition to publishing your Swagger UI output as a [standalone site](https://idratherbewriting.com/learnapidoc/assets/files/swagger/), you can also [embed the Swagger file within an existing site](pubapis_swagger_demo.html). Since the Swagger UI site is responsive, it resizes well to fit into most any space.

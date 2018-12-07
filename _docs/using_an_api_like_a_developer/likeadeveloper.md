@@ -1,5 +1,5 @@
 ---
-title: Using a REST API like a developer
+title: Using an API like a developer
 permalink: /likeadeveloper.html
 sidebar: docapis
 path1: /likeadeveloper.html

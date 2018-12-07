@@ -135,7 +135,7 @@ Probably the most common tool used to parse the OpenAPI specification is [Swagge
 
 The Swagger UI code generates a display that looks like this:
 
-{% include course_image.html url="http://petstore.swagger.io/" size="large" border="" filename="swagger_petstore_pic" ext_print="png" ext_web="png" alt="" caption="The Swagger Petstore demo shows how Swagger UI renders the OpenAPI spec" %}
+{% include course_image.html url="http://petstore.swagger.io/" size="large"  filename="swagger_petstore_pic" ext_print="png" ext_web="png" alt="The Swagger Petstore demo shows how Swagger UI renders the OpenAPI spec" caption="The Swagger Petstore demo shows how Swagger UI renders the OpenAPI spec" %}
 
 You can also check out the [sample Swagger UI integration with a simple weather API](https://idratherbewriting.com/learnapidoc/assets/files/swagger/) used as a course example.
 

@@ -1,4 +1,4 @@
-## <i class="fa fa-user-circle"></i> Activity 6a: Assess the non-reference content in 3 API doc sites
+## <i class="fa fa-user-circle"></i> Activity: Assess the non-reference content in 3 API doc sites
 
 In this activity, you'll evaluate several API docs to see which non-reference topics might be missing.
 

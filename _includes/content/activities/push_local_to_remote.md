@@ -1,4 +1,4 @@
-## <i class="fa fa-user-circle"></i> Activity 7e: Push local changes to the remote
+## <i class="fa fa-user-circle"></i> Activity: Push local changes to the remote
 
 1.  In a text editor, open the Markdown file you downloaded in the GitHub repository.
 2.  Make a small change to the content and save it.
@@ -27,8 +27,7 @@
     ```bash
     Changes to be committed:
     (use "git reset HEAD <file>..." to unstage)
-
-  	modified:   Home.md
+    modified:   Home.md
     ```
 
 	  The staging area lists all the files that have been added to Git that you have modified in some way. It's a good practice to always type `git status` before committing files, because you might realize that by typing `git add .`, you might have accidentally added some files you didn't intend to track (such as large binary files). If you want to remove this file from the staging area, you can type `git reset HEAD Home.md` to unstage it.

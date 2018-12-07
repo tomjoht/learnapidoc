@@ -141,7 +141,7 @@ You've now got a workflow that involves Github as the storage provider syncing t
 
 My Jekyll documentation theme is just one possibility for a Jekyll site. (Most people who use it end up heavily customizing it for their needs.) You could also use this [Aviator API documentation theme](https://github.com/CloudCannon/Aviator-Jekyll-Theme), which has some API templating built-in, or you could choose from many others Jekyll themes. I also wrote a tutorial for [creating your own Jekyll theme](https://jekyllrb.com/tutorials/convert-site-to-jekyll/), likely using your company's site as the template.
 
-{% include course_image.html url="https://github.com/CloudCannon/Aviator-Jekyll-Theme" size="" border="" filename="aviatortheme" ext_print="png" ext_web="png" alt="CloudCannon Aviator theme" caption="CloudCannon Aviator theme" %}
+{% include course_image.html url="https://github.com/CloudCannon/Aviator-Jekyll-Theme"   filename="aviatortheme" ext_print="png" ext_web="png" alt="CloudCannon Aviator theme" caption="CloudCannon Aviator theme" %}
 
 For inspiration, here are some websites using Jekyll:
 

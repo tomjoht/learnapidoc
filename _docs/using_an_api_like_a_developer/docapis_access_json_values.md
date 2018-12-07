@@ -233,7 +233,7 @@ $.ajax(settings).done(function (response) {
 
 ## More exercises
 
-If you'd like to follow some more exercises that involve calling REST APIs, accessing specific values, and printing them to the page, see the following topics in the [Glossary and additional resources](resources.html) section:
+If you'd like to follow some more exercises that involve calling REST APIs, accessing specific values, and printing them to the page, see the following topics in the [Glossary and resources](resources.html) section:
 
 * [Get event information using the EventBrite API](docapis_eventbrite_example.html)
 * [Flickr example: Retrieve a Flickr gallery](docapis_flickr_example.html)

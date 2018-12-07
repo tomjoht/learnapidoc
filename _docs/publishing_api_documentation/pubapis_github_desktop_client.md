@@ -46,7 +46,7 @@ In this tutorial, you'll use GitHub Desktop to manage the Git workflow.
 
     You'll see GitHub Desktop show that it's "Pushing to origin."
 
-    <img src="images/pushingtoorigin.png" style="max-width:250px" alt="Pushing to origin" />
+    {% include course_image.html  size="small" filename="pushingtoorigin" ext_print="png" ext_web="png" alt="Pushing to origin" caption="Pushing to origin" %}
 
 If you view your repository online (by going to **Repository > View on GitHub**), you'll see that the change you made has been pushed to the master branch on origin. You can also click the **History** tab in the GitHub Desktop client (instead of the **Changes** tab), or go to **View > Show History** to see the changes you previously committed.
 
@@ -108,7 +108,7 @@ Now let's merge the development branch into the master using a pull request work
 
 	  GitHub opens in the browser with the Pull Request form opened.
 
-    {% include course_image.html url="" size="" border="" filename="mergepullrequestgithubdesktop" ext_print="png" ext_web="png" alt="Pull request" caption="Pull request" %}
+    {% include course_image.html size="large" filename="mergepullrequestgithubdesktop" ext_print="png" ext_web="png" alt="Pull request" caption="Pull request" %}
 
     The left-facing arrow from the development branch towards the master indicates that the pull request ("PR") wants to merge development into master.
 
@@ -116,7 +116,7 @@ Now let's merge the development branch into the master using a pull request work
 
 4.  At this point, engineers would get an email request asking for them to merge in the edits. Play the part of the engineer by going to the **Pull requests** tab to examine and confirm the merge request. As long as the merge request doesn't pose any conflicts, you'll see a **Merge pull request** button.
 
-    {% include course_image.html url="" size="" border="" filename="mergepullrequest" ext_print="png" ext_web="png" alt="Confirm merge request" caption="Confirm merge request" %}
+    {% include course_image.html    filename="mergepullrequest" ext_print="png" ext_web="png" alt="Confirm merge request" caption="Confirm merge request" %}
 
 5.  To see what changes you're merging into master, you can click the **Files changed** tab (which appears on the secondary navigation bar near the top). Then click **Merge pull request** to merge in the branch, and click **Confirm merge** to complete the merge.
 

@@ -22,7 +22,7 @@ Whether for end-user documentation or developer documentation, the quick referen
 
 The quick reference guide should provide the user with just enough information to get the gist of what the system is about, including the key endpoints and tasks. Often times with APIs, the endpoints have relationships with each other that can be depicted visually. Here's an API diagram I created at a previous company:
 
-{% include course_image.html size="medium" url="images/sample_api_diagram.pdf" filename="sample_api_diagram.pdf" ext_print="png" ext_web="png" alt="Sample quick reference guide format" caption="A quick reference guide format" %}
+{% include course_image.html size="medium" url="https://idratherbewriting.com/learnapidoc/images/sample_api_diagram.pdf" filename="sample_api_diagram.pdf" ext_print="png" ext_web="png" alt="Sample quick reference guide format" caption="A quick reference guide format" %}
 
 The text is Latin filler for privacy reasons, so the logic may not be entirely apparent. But with this API, the endpoints could be organized into different groups. Some of the groups had multiple levels within the endpoint, and multiple include options for each endpoint. I created this diagram in Adobe Illustrator and distributed it as a PDF. Developers found it useful because it tried to make sense of the API as a whole, showing how all the endpoints fit together in a logical harmony.
 

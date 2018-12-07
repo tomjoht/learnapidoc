@@ -30,7 +30,7 @@ To make edits in a separate branch on GitHub:
 
 	 When you create a new branch, the content from the master (or whatever branch you're currently viewing) is copied over into the new branch. The branch is like doing a "Save as" with an existing document.
 
-2. Click a file, and then click the pencil icon <img src="images/github-pencil-icon.png" alt="Edit this file" style="vertical-align: bottom"/> ("Edit this file") to edit the file.
+2. Click a file, and then click the pencil icon <img src="images/github-pencil-icon.png" alt="Edit this file"/> ("Edit this file") to edit the file.
 
    {% include course_image.html size="large" filename="github_making_branch_edits" ext_print="png" ext_web="png" alt="Making an edit" caption="Making an edit" %}
 

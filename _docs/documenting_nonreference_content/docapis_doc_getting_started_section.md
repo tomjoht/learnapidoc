@@ -91,7 +91,7 @@ Here are a few sample Getting Started topics in APIs. If you compare the various
 
 ### Paypal
 
-{% include course_image.html url="https://developer.paypal.com/docs/api/overview/" size="" border="" filename="paypalgetstarted" ext_print="png" ext_web="png" alt="Paypal getting started tutorial" caption="Paypal getting started tutorial" %}
+{% include course_image.html url="https://developer.paypal.com/docs/api/overview/"   filename="paypalgetstarted" ext_print="png" ext_web="png" alt="Paypal getting started tutorial" caption="Paypal getting started tutorial" %}
 
 Paypal's getting started tutorial contains quite a bit of detail, starting out with authorization, requests, and other details before making the first call. Although not so brief, this level of details helps orient users with the information they need. The format is clean and easy to follow.
 

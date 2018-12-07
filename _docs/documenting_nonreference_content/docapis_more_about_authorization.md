@@ -56,7 +56,7 @@ There are several methods for authorization. The following are various types of 
 
 Most APIs require you to sign up for an API key in order to use the API. The API key is a long string that you usually include either in the request URL or request header. The API key mainly functions as a way to identify the person making the API call (authenticating you to use the API). The API key might also be associated with a specific app that you register.
 
-{% include course_image.html size="large" filename="nonref-docs-preso_apikey" ext_print="png" ext_web="svg" alt="" caption="APK keys use a string in a header property to authorize requests" %}
+{% include course_image.html size="large" filename="nonref-docs-preso_apikey" ext_print="png" ext_web="svg" alt="APK keys use a string in a header property to authorize requests" caption="APK keys use a string in a header property to authorize requests" %}
 
 APIs might give you both a public and private key. The public key is usually included in the request, while the private key is treated more like a password and used only in server-to-server communication. For some API documentation sites, when you're logged into the site, your API key automatically gets populated into the sample code and API Explorer.
 

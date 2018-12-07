@@ -53,7 +53,7 @@ Here are some other characteristics of Javadoc:
 
 8.  Click **Next**.
 
-    {% include course_image.html size="small_medium" border="" filename="generatejavadocnext2" ext_print="png" ext_web="png" alt="Overview page" caption="Overview page" %}
+    {% include course_image.html size="small_medium"  filename="generatejavadocnext2" ext_print="png" ext_web="png" alt="Overview page" caption="Overview page" %}
 
 	  Here you can select an HTML page that you want to be your [overview page in the Javadoc](https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javadoc.html#overviewcomment). You can select any HTML page and it will be included in the index.
 
@@ -71,7 +71,7 @@ Here are some other characteristics of Javadoc:
 
 Javadoc also checks your tags against the actual code. If you have parameters, exceptions, or returns that don't match up with the parameters, exceptions, or returns in your actual code, then Javadoc will show some warnings.
 
-{% include course_image.html size="medium" border="" filename="javadocerrorchecking" ext_print="png" ext_web="png" alt="Javadoc error checking" caption="Javadoc error checking" %}
+{% include course_image.html size="medium"  filename="javadocerrorchecking" ext_print="png" ext_web="png" alt="Javadoc error checking" caption="Javadoc error checking" %}
 
 ## <i class="fa fa-user-circle"></i> Play with Javadoc parameters
 

@@ -48,7 +48,7 @@ John Musser, one of the founders of Programmableweb.com, emphasizes the importan
 
 If REST APIs were an uncommon software product, it wouldn't be that big of a deal. But actually, REST APIs are taking off in a huge way. Through the PEW Research Center, Programmableweb.com has charted and tracked the prevalence of web APIs.
 
-{% include course_image.html url="http://www.slideshare.net/programmableweb/web-api-growthsince2005" size="" border="" filename="growthinrestapis" ext_print="png" ext_web="png" alt="The phenomenal growth in web APIs" caption="The phenomenal growth in web APIs" %}
+{% include course_image.html url="http://www.slideshare.net/programmableweb/web-api-growthsince2005"   filename="growthinrestapis" ext_print="png" ext_web="png" alt="The phenomenal growth in web APIs" caption="The phenomenal growth in web APIs" %}
 
 eBay's API in 2005 was one of the first web APIs (the API allowed sellers to manage their products in their eBay stores). Since then, there has been a tremendous growth in web APIs. Given the importance of clear and accurate API documentation, this presents a perfect market opportunity for technical writers. Technical writers can apply their communication skills to fill a gap in a market that is rapidly expanding.
 
@@ -78,7 +78,7 @@ The way each site leverages its service is usually through a REST API of some ki
 
 Many employers are looking to hire technical writers who can create not only complete and accurate documentation but who can also create stylish outputs for their documentation. Here's a job posting from a recruiter looking for someone who can emulate Dropbox's documentation:
 
-{% include course_image.html url="" size="medium" filename="indeed_com" ext_print="png" ext_web="png" alt="Job description asking for someone with skills to create doc site like Dropbox" caption="Job description asking for someone with skills to create doc site like Dropbox" %}
+{% include course_image.html  size="medium" filename="indeed_com" ext_print="png" ext_web="png" alt="Job description asking for someone with skills to create doc site like Dropbox" caption="Job description asking for someone with skills to create doc site like Dropbox" %}
 
 As you can see, the client wants to find "someone who'll emulate Dropbox's documentation."
 

@@ -57,7 +57,7 @@ If you can put your sample apps and SDKs on GitHub, it's usually a good idea to 
 
 ### Paypal REST SDK
 
-{% include course_image.html url="https://developer.paypal.com/docs/api/quickstart/" filename="sdk_paypal" ext_print="png" ext_web="png" alt="" caption="Paypal REST SDKs" %}
+{% include course_image.html url="https://developer.paypal.com/docs/api/quickstart/" filename="sdk_paypal" ext_print="png" ext_web="png" alt="Paypal REST SDKs" caption="Paypal REST SDKs" %}
 
 The SDKs in the [Paypal's Additional information](https://developer.paypal.com/docs/api/quickstart/#additional-information) section include Node JS, PHP, Python, Ruby, Java, and .NET SDKs. Each implementation has its own GitHub site, with its own wiki, sample code, source docs, and more. If you browse some of these GitHub pages (such as the [site for PHP](https://paypal.github.io/PayPal-PHP-SDK/)), you can see the whole collection of language-specific files for this SDK. These sites show how SDKs include a variety of file types.
 

@@ -1,5 +1,5 @@
 ---
-title: Testing your API documentation
+title: Testing API documentation
 permalink: /testingdocs.html
 sidebar: docapis
 path1: /testingdocs.html

@@ -1,5 +1,5 @@
 ---
-title: Documenting native library APIs
+title: Native library APIs
 permalink: /nativelibraryapis.html
 sidebar: docapis
 path1: /nativelibraryapis.html

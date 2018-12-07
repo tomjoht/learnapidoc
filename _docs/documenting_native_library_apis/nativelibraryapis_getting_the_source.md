@@ -92,7 +92,7 @@ roadrunner located at Longitude = 39.2334, Latitude = 41.4899
 Backfire!!! zapping coyote with 1,000,000 volts!!!!
 ```
 
-{% include course_image.html  size="medium" border="" filename="java-app-in-action" ext_print="png" ext_web="png" alt="Running the program" caption="Running the program" %}
+{% include course_image.html  size="medium"  filename="java-app-in-action" ext_print="png" ext_web="png" alt="Running the program" caption="Running the program" %}
 
 Note that I've chosen to position my Console on the bottom (to make the code visible), but by default it's on the right side.
 

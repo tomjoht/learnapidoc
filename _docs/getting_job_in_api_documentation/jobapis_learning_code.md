@@ -68,7 +68,7 @@ Neiman and [Andrew Davis](http://www.synergistech.com/) (a recruiter for API tec
 {% endif %}
 
 {% if site.format == "pdf" or site.format == "kindle" %}
-{% include course_image.html url="https://www.youtube.com/embed/lmNHBg20ql0?t=1314" size="600px" border="" filename="neimanpreso" ext_print="png" ext_web="png" alt="James Neiman on the required technical baseline for API docs" caption="James Neiman on the required technical baseline for API docs" %}
+{% include course_image.html url="https://www.youtube.com/embed/lmNHBg20ql0?t=1314" size="600px"  filename="neimanpreso" ext_print="png" ext_web="png" alt="James Neiman on the required technical baseline for API docs" caption="James Neiman on the required technical baseline for API docs" %}
 {% endif %}
 
 Here's a transcript of two questions in their exchange (cleaned up a bit for readability):
@@ -170,7 +170,7 @@ Personally, I think spending 20 minutes a day isn't enough to keep up with the k
 
 One strategy I've found to work well is to divide the learning into "pomodoros" (a technique named after tomato kitchen timers). With the [Pomodoro Technique](https://francescocirillo.com/pages/pomodoro-technique), you set a timer for 20 minutes and focus on your learning task for that chunk of time. You can set a goal to complete as many pomodoros a day as you want. After about 1-2 months of these regular pomodoros, you'll be surprised at your progress.
 
-<{% include course_image.html url="" size="large" filename="techpomodoro" ext_print="png" ext_web="png" alt="The Focus app lets you define and track pomdoros" caption="The Focus app lets you define and track pomdoros" %}
+<{% include course_image.html  size="large" filename="techpomodoro" ext_print="png" ext_web="png" alt="The Focus app lets you define and track pomdoros" caption="The Focus app lets you define and track pomdoros" %}
 
 Even so, this technique doesn't solve the problem. It's still hard to squeeze time in for the pomodoros. Whenever I squeeze these into my life, I end up squeezing other activities out.
 

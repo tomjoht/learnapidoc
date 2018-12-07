@@ -25,7 +25,7 @@ path1: /docendpoints.html
 
 The following example shows a sample request from the [Callfire API](https://developers.callfire.com/docs.html#pagination):
 
-<a class="noExtIcon" href="https://developers.callfire.com/docs.html#pagination"><img src="images/callfireapirequestexample.png"/></a>
+{% include course_image.html url="https://developers.callfire.com/docs.html#pagination" size="large" filename="callfireapirequestexample" ext_print="png" ext_web="png" alt="Sample request from Callfire" caption="Sample request from Callfire" %}
 
 The design of this API doc site arranges the sample requests and responses in the right column of a three-column layout. The request is formatted in curl, which we [explored earlier](docapis_make_curl_call.html).
 

@@ -140,7 +140,7 @@ Sphinx can be used with the [Read the Docs](pubapis_hosting_and_deployment.html#
 
 As of July 2018, [Staticgen.com](https://www.staticgen.com/) shows the number of stars, forks, and issues as follows:
 
-{% include course_image.html url="https://www.staticgen.com/" filename="staticgendisplay" ext_print="png" ext_web="png" alt="" caption="Top static site generators" %}
+{% include course_image.html url="https://www.staticgen.com/" filename="staticgendisplay" ext_print="png" ext_web="png" alt="Top static site generators" caption="Top static site generators" %}
 
 On the Staticgen.com site, the star icon represents the number of users who have "starred" the project (basically followed its activity). The forked icon represents the number of repo forks that exist registered on their platform (GitHub, etc). The bug icon represents the number of open issues logged against the project. The green numbers indicate trends with these numbers.
 

@@ -1,4 +1,4 @@
-## <i class="fa fa-user-circle"></i> Activity 2e: Make the request on a page with AJAX
+## <i class="fa fa-user-circle"></i> Activity: Make the request on a page with AJAX
 
 For this activity, you'll use JavaScript to display the API response on a web page. You'll use some auto-generated jQuery code from Postman to create the AJAX request.
 
