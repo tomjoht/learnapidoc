@@ -8,7 +8,7 @@ section: docnonref
 path1: /docnonref.html
 ---
 
-SDKs (software development kits) and sample apps are similar to [code samples and tutorials](docapis_codesamples_bestpractices.html) but are much more extensive and usually involve a whole collection of files that work together as a package or app. The SDK might include libraries that you download and incorporate into your application, and can include tools, sample apps, and other code. Sample apps are usually self-contained applications that implement the API for a specific scenario in a specific programming language.
+SDKs (software development kits) and sample apps are similar to [code samples and tutorials](docapis_codesamples_bestpractices.html) but are much more extensive and usually involve a whole collection of files that work together as a package or sample app. The SDK might include libraries that you download and incorporate into your application, and can include tools, sample apps, and other code.
 
 * TOC
 {:toc}
@@ -31,17 +31,17 @@ Sandoval compares examples from both Facebook APIs and SDKs to clarify the diffe
 
 ## What is your role in documenting the SDK and sample app
 
-In the SwaggerHub tutorial (later in this course), I show how to [auto-generate client SDKs](pubapis_swaggerhub_smartbear.html#auto-generate-client-sdks) through SwaggerHub's interface. But usually, rather than relying on auto-generated SDKs, if your development team offers a client SDK, it will be code that the development team prepares and tests. The development team often provides the SDK in a few target languages based on their user's main language, making it easier for users to implement the API.
+In the SwaggerHub tutorial, I showed how to [auto-generate client SDKs](pubapis_swaggerhub_smartbear.html#auto-generate-client-sdks) through SwaggerHub's interface. But usually rather than relying on auto-generated SDKs, if your development team offers a client SDK, it will be code that the development team prepares and tests. The development team often provides the SDK in a few target languages based on their user's main language, making it easier for users to implement the API.
 
-As an API technical writer, documenting SDKs and sample apps presents a tough challenge because SDKs require you to be familiar with one or more programming languages. I explored the question of [how much code you need to know](jobapis_learning_code.html) in another topic, so I won't get into too much detail here. Usually, engineers don't expect you to know multiple programming languages in depth, but some familiarity with them will be required in order to both write and review the documentation. When deciding whether to call a block of code a function, class, method, or other name, you need to have a basic understanding of the terms used in that language.
+As an API technical writer, documenting SDKs and sample apps presents a tough challenge because SDKs require you to be familiar with one or more programming languages. I explore the question of [how much code you need to know](jobapis_learning_code.html) in the [Jobs section](jobapis.html), so I won't get into too much detail here. Usually, engineers don't expect you to know multiple programming languages in depth, but some familiarity with them will be required in order to both write and review the documentation. When deciding whether to call a block of code a function, class, method, or other name, you need to have a basic understanding of the terms used in that language.
 
 {% include course_image.html size="medium" border="true" filename="nonref_sdksampleapp" ext_print="png" ext_web="svg" alt="SDKs and sample apps" caption="SDKs and sample apps" %}
 
-If you're unfamiliar with the language, you can just take what engineers write, clean it up a bit, try to walk through the steps to get them working, and see what feedback you get from users. Usually, if you can get a sample app installed and working, and make sure that the basic documentation for running the app works, as well as what the app does, that might be sufficient. But of course making any significant contributions to SDK documentation will require you to be familiar with that programming language.
+If you're unfamiliar with the language, you can just take what engineers write, clean it up a bit, try to walk through the steps to get any sample apps working, and see what feedback you get from users. Usually, if you can get a sample app installed and working, and make sure that the basic documentation for running the app works, as well as what the app does, that might be sufficient. But of course making any significant contributions to SDK documentation will require you to be familiar with that programming language.
 
 {% include random_ad2.html %}
 
-As I mentioned in the [code samples topic](docapis_codesamples_bestpractices.html), you don't need to document how a particular language works, just how your own company's SDK works. Presumably, if an engineer downloads the Java SDK for an API, it's because the engineer is already familiar with Java. However, if your API was implemented in a particular way in Java, you should explain *why* that approach was taken. (Granted, understanding the difference between documenting Java and documenting a particular approach in the Java implementation also sort of requires you to understand Java.)
+As I mentioned in the [Code samples and tutorials](docapis_codesamples_bestpractices.html), you don't need to document how a particular language works, just how your own company's SDK works. Presumably, if an engineer downloads the Java SDK for an API, it's because the engineer is already familiar with Java. However, if your API was implemented in a particular way in Java, you should explain *why* that approach was taken. (Granted, understanding the difference between documenting Java and documenting a particular approach in the Java implementation also sort of requires you to [understand Java](nativelibraryapis_java_crash_course.html).)
 
 ## Sample SDKs and sample apps
 
@@ -73,7 +73,7 @@ As I mentioned earlier, it's unlikely that you'll be able to contribute signific
 
 If engineers tell you that users should know X, don't simply submit to their judgment out of ignorance with the language. Instead, find some developers in that language (even internal engineers in other groups) to test the documentation against. If those users push back and say they need more detail, you can then interface with the engineering team to provide it.
 
-Without more familiarity with the language of the SDK, technical writers act more as mediators between the engineering authors and the engineering users. Technical writers identify and fill gaps in the documentation, and they often manage the publishing and distribution of the docs. But the content itself might be too technical for most technical writers to play a content authoring role.
+Without more familiarity with the language of the SDK, technical writers act more as mediators between the engineering authors and the engineering users. Technical writers identify and fill gaps in the documentation, and they often manage the publishing and distribution of the docs. But the content itself might be too technical for most technical writers to play a content authoring role. (I explored this topic in depth in an essay in my Simplifying Complexity series called [Be both a generalist and specialist through your technical acuity](https://idratherbewriting.com/simplifying-complexity/both-a-generalist-and-specialist-through-technical-acuity.html).)
 
 ### Amazon SDK
 
@@ -87,8 +87,18 @@ Even so, there is probably quite a bit of variability from one library to the ne
 
 ### Google Cloud SDK
 
-{% include course_image.html url="https://cloud.google.com/sdk/docs/" filename="sdk_amazon_aws" ext_print="png" ext_web="png" alt="Google Cloud SDK documentation" caption="Google Cloud SDK documentation" %}
+{% include course_image.html url="https://cloud.google.com/sdk/docs/" filename="googlecloudsdk" ext_print="png" ext_web="png" alt="Google Cloud SDK documentation" caption="Google Cloud SDK documentation" %}
 
 The Google Cloud SDK provides quickstart guides for Linux, Debian, Ubuntu, and other operating systems. The guides explain how to install, set up, and manage the SDK commands. An API reference for the commands is also included.
 
 Looking at the Google Cloud SDK versus the Amazon SDK shows some of the breadth and variety of technologies you might have to document in SDK territory. These SDKs are specific to a particular programming language, operating system, or other framework, and as such, it can be daunting to try to ramp up in order to document this category of tools. For SDK documentation, you'll need to work closely with engineers and listen to feedback from users.
+
+## Activity with SDKs
+
+With the [open-source project you identified](docapis_find_open_source_project.html), identify the information about any SDKs for the API. Answer the following questions:
+
+1. Does the API project include any SDKs?
+2. What language are the SDKs provided in?
+3. Why did the developers choose to make the SDK available in that particular language?
+4. How extensive are the instructions for working with that SDK?
+5. Where is the code for the SDK stored and delivered? In GitHub? In a separate downloadable zip file?

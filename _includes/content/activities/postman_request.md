@@ -1,4 +1,4 @@
-## <i class="fa fa-user-circle"></i>  Activity: Make requests with Postman
+## <i class="fa fa-user-circle"></i> Activity: Make requests with Postman
 
 ### Make a request
 

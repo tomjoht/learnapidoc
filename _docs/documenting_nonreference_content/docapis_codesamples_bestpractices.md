@@ -34,26 +34,26 @@ In other words, when developers see code, it's the equivalent of seeing a task-b
 
 ## Don't just provide reference docs
 
-Sometimes engineers avoid code samples because they feel the endpoint reference documentation contains all the information developers need and stands on its own. However, this view is often shortsighted. In an article on the Programmable Web called [The Six Pillars of Complete Developer Documentation](https://www.programmableweb.com/news/six-pillars-complete-developer-documentation/2011/09/12), the authors explain:
+Sometimes engineers want to avoid including code samples in API docs because they feel the endpoint reference documentation contains all the information developers need and stands on its own. However, this view is often shortsighted. In an article on the Programmable Web called [The Six Pillars of Complete Developer Documentation](https://www.programmableweb.com/news/six-pillars-complete-developer-documentation/2011/09/12), the authors explain:
 
 > While a developer’s guide should walk a developer through the basic usage of an API and its functionality, it can’t cover every possible use of that API in a coherent way. That is where articles and tutorials come in, to teach developers tangential or specialized uses of an API, like combining it with another service, framework, or API.
 
 In other words, the articles and tutorials complement the reference documentation to provide more complete instruction. Code samples that show how to use the various endpoints to achieve a goal occupy an important space in your user guide.
 
-Not everyone agrees about the need for code samples. Developers on the product team often make the mistake of assuming that the developer audience has a skill set similar to their own, without recognizing different developer specializations. Internal developers will often say, "If the user doesn't understand this code, he or she shouldn't be using our API."
+Additionally, even if including code samples, the level of detail and explanation is also somewhat debatable. Many developers assume that the developer audience has a skill set similar to their own, without recognizing different developer specializations. And so they will add a code sample but not give any explanation about it. Internal developers will often say, "If the user doesn't understand this code, he or she shouldn't be using our API."
 
-If you encounter this attitude, remind developers that users often have technical talent in different areas. For example, a user might be an expert in Java but only mildly familiar with JavaScript. Someone who is a database programmer will have a different skill set than someone who is a Python programmer who will have a different skillset from a front-end web development engineer, and so on. Given these differences and the likely possibility that you will have many novice (or unfamiliar) users, more extensive code tutorials are warranted.
+If you encounter this attitude, remind developers that users often have technical talent in different areas. For example, a user might be an expert in Java but only mildly familiar with JavaScript. Someone who is a database programmer will have a different skill set than someone who is a Python programmer, who will have a different skillset from a front-end web development engineer, and so on. Given these differences and the likely possibility that you will have many novice (or unfamiliar) users, more extensive code tutorials and explanations are warranted.
 
 ## Focus on the why, not the what
 
-In any code sample, focus your explanation on the *why*, not the *what*. Explain why you're doing what you're doing, not the detailed play-by-play of what's going on, especially when the *what* refers more to standard programming mechanics that aren't unique to your API.
+Once you have code samples in your documentation, the next question is how to document them. User interfaces have clear tasks &mdash; buttons to click, linear workflows, etc. But documenting code can be more of a conundrum. Remember this basic principle: In any code sample, focus your explanation on the *why*, not the *what*. Explain why you're doing what you're doing, not the detailed play-by-play of what's going on, especially when the *what* refers more to standard programming mechanics that aren't unique to your API.
 
 {% include random_ad2.html %}
 
 Here's an example of the difference:
 
 * **what**: "In this code, several arguments are passed to jQuery's `ajax` method. The response is assigned to the data argument of the callback function, which in this case is `success`."
-* **why**: "Use the `ajax` method from jQuery because it allows cross-origin resource sharing (CORS) for the weather response."
+* **why**: "Use the `ajax` method from jQuery because it allows for asynchronous responses that won't block the loading of your page.
 
 Developers unfamiliar with common code not related to your company (for example, the `.ajax()` method from jQuery) should consult outside sources for tutorials about that code. Don't write your own version of documentation for another programming language or service. Instead, focus on the parts of the code unique to your company. Let the developer rely on other sources for the rest (feel free to link to other sites).
 
@@ -61,20 +61,18 @@ Developers unfamiliar with common code not related to your company (for example,
 
 Your documentation regarding the code should mix code comments with some explanation either before or after the code sample. Different languages have different conventions for comments, but generally brief code comments are set off with forward slashes `//` in the code; longer comments are set off between slashes and asterisks, like this: `/* .... */`.
 
-Comments within the code are usually short one-line notes that appear after every 5-10 lines of code. You can follow up this code with more robust explanations in your documentation, but it's ideal to pepper code samples with comments because it puts the explanation next to the code doing the action.
+Comments within the code are usually short one-line notes that appear after every 5-10 lines of code. You can follow up this code with more robust explanations in your documentation, but it's ideal to pepper code samples with comments because it puts the explanation next to the code doing the action. This approach of adding brief comments within the code, followed by more robust explanations after the code, aligns with principles of [progressive information disclosure](https://idratherbewriting.com/2012/08/09/applying-progressive-information-disclosure-to-online-help-navigation/) that help align with both advanced and novice user types. In this case, progressive information disclosure means you provide some detail in the context of an activity, and then add links or references for more information if the user needs it.
 
-This approach of adding brief comments within the code, followed by more robust explanations after the code, aligns with principles of [progressive information disclosure](https://idratherbewriting.com/2012/08/09/applying-progressive-information-disclosure-to-online-help-navigation/) that help align with both advanced and novice user types.
-
-Some research about how developers use documentation found that there are two common behaviors: developers who start in code and only read higher-level conceptual documentation as needed ("opportunistic" behavior); and developers who start in higher-level conceptual documentation before working their way down to code ("systematic" behavior). Michael Meng, Stephanie Steinhardt, and Andreas Schubert explain:
+If you have comments interspersed in code as well as in conceptual sections before or after the code, won't that be somewhat redundant? Not really. Some research about how developers use documentation found that there are two common behaviors: developers who start in code and read higher-level conceptual documentation only as needed (called "opportunistic" behavior). And developers who start in higher-level conceptual documentation before working their way down to code (called "systematic" behavior). Michael Meng, Stephanie Steinhardt, and Andreas Schubert explain:
 
 > Once a high-level understanding of the API purpose and features has been formed, two different pathways seem to emerge that closely resemble the "systematic" and the "opportunistic" developer personas described by Clarke (2007) (see also Stylos, 2009). According to Clarke (2007), developers represented by the systematic developer persona work top down in the sense that they try to get a deeper understanding of the system as a whole before turning to individual
-components. On the other hand, the learning goals of opportunistic developers are more narrowly focussed on solving a particular problem and dependent on the specific issues and blockers they encounter while working toward a solution (“Application Programming Interface Documentation: What Do Software Developers Want?” *Journal of Technical Writing and Communication*. 2018, Vol. 48(3) 295–330. [ResearchGate](https://www.researchgate.net/publication/318733467_Application_Programming_Interface_Documentation_What_Do_Software_Developers_Want)
+components. On the other hand, the learning goals of opportunistic developers are more narrowly focussed on solving a particular problem and dependent on the specific issues and blockers they encounter while working toward a solution (“Application Programming Interface Documentation: What Do Software Developers Want?” *Journal of Technical Writing and Communication*. 2018, Vol. 48(3) 295–330. [ResearchGate](https://www.researchgate.net/publication/318733467_Application_Programming_Interface_Documentation_What_Do_Software_Developers_Want))
 
-For the opportunistic developer that first starts in the code, comments in the code can provide helpful documentation to get the developer oriented quickly.
+For the opportunistic developer that first starts in the code, comments in the code can provide helpful documentation to get the developer oriented quickly. But not everyone starts in the code. Some prefer to read the conceptual overviews first.
 
-For more research on how do document code, also see "When Not to Comment: Questions and Tradeoffs with API Documentation for C++ Projects" by Andrew Head, Caitlin Sadowski, Emerson Murphy-Hill, and Andrea Knight (2018 *ACM/IEEE 40th International Conference on Software Engineering.* ([ResearchGate](https://www.researchgate.net/publication/325732077_When_not_to_comment_questions_and_tradeoffs_with_API_documentation_for_C_projects)). The researchers explore whether developers are more apt to look in header files or implementation code for documentation (they focused on C++). In some cases, reading the implementation code directly provides a clearer path to understanding for developers. Additionally, some developers distrust that documentation is up to date and so prefer to look at the code directly. For more complex code, however, learning from more elaborate documentation in header files was helpful.
+For more research on how do document code, see "When Not to Comment: Questions and Tradeoffs with API Documentation for C++ Projects" by Andrew Head, Caitlin Sadowski, Emerson Murphy-Hill, and Andrea Knight (2018 *ACM/IEEE 40th International Conference on Software Engineering.* [ResearchGate](https://www.researchgate.net/publication/325732077_When_not_to_comment_questions_and_tradeoffs_with_API_documentation_for_C_projects)). The researchers explore whether developers are more apt to look in header files (where more formal descriptions of the class and methods appear) or implementation code for documentation (they focused on C++). In some cases, reading the implementation code directly provides a clearer path to understanding for developers. Additionally, some developers distrust that documentation is up to date and so prefer to look at the code directly. For more complex code, however, learning from more elaborate documentation in header files was helpful.
 
-Overall, not every programmer reads code the same way. But based on the research, it's a good idea to include comments directly in the code. If developers give you a chunk of code that has comments peppered throughout, don't assume that the code comments are somehow separate from documentation or outside your stewardship as a technical writer. Think of comments in code as the equivalent of context-sensitive help in a user interface &mdash; in many ways, this is the most read content of all.
+Overall, not every programmer reads code the same way. But based on the research, it's a good idea to include comments directly in the code as well as more formal explanations outside the code. If developers give you a chunk of code that has comments peppered throughout, don't assume that the code comments are somehow separate from documentation or outside your stewardship as a technical writer. Think of comments in code as the equivalent of context-sensitive help in a user interface &mdash; in many ways, this might be the most read content of all.
 
 {% include random_ad.html %}
 
@@ -92,7 +90,7 @@ Many times developers will copy and paste code directly from the documentation i
 
 If you intend for users to copy and paste the code, make sure it works. When I first used used some sample `ajax` code from a code tutorial on an API site, the `dataType` parameter was actually spelled `datatype`. As a result, the code didn't work (it returned the response as text, not JSON). It took me about 30 minutes of troubleshooting before I consulted the [`ajax` method](http://api.jquery.com/jquery.ajax/) and realized that it should be `dataType` with a capital `T`.
 
-Ideally, test out all the code samples yourself (or implement a more robust process for testing code). This allows you to spot errors, understand whether all the parameters are complete and valid, and more. In the earlier video from Twilio, the authors say they wanted to treat code samples in documentation like their other engineering code, so they stored their code in a separate container (also pushed to GitHub) so they could run regular tests on it. They pulled the code into their documentation where appropriate. For lengthy code samples, consider storing them on GitHub.
+Ideally, test out all the code samples yourself (or implement a more robust process for testing code). This allows you to spot errors, understand whether all the parameters are complete and valid, and more. In the earlier video from Twilio, the authors say they wanted to treat code samples in documentation like their other engineering code, so they stored their code in a separate container (also pushed to GitHub) so they could run regular tests on it. They pulled the code into their documentation where appropriate. For lengthy code samples, consider storing the code on GitHub. This way engineers can more easily test it as part of their test cases for each release. Sometimes when code blocks are buried in documentation, they're overlooked with new releases.
 
 ## Provide a sample in your target language
 
@@ -162,6 +160,7 @@ Earlier in the course, we walked through [each element of reference documentatio
 <head>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script>
+// limit the result through days parameter to keep the returned data set light
 var settings = {
   "async": true,
   "crossDomain": true,
@@ -169,6 +168,7 @@ var settings = {
   "method": "GET"
 }
 
+// use ajax method to allow for asynchronous calls that won't block page loading
 $.ajax(settings).done(function (response) {
   console.log(response);
   $("#surfheight").append(response.surfreport.conditions);
@@ -219,7 +219,7 @@ $.ajax(settings).done(function (response) {
 <p>We're just getting the surf height, but there's a lot of other data you could choose to display.</p>
 </div>
 
-One could go into a lot more detail with the explanation, even going line by line through the code, but here the commentary is already about half the length of the code.
+One could go into a lot more detail with the explanation, even going line by line through the code, but here the commentary is already about half the length of the code. And there are some comments interspersed in the code. The comments address more the question of "why" rather than "what."
 
 Documenting code can be one of the most challenging aspects of developer documentation. Part of the challenge is that code isn't organized such that a line by line (or block by block) description makes sense. Variables are often defined first, functions are called that are defined elsewhere, and other aspects are non-linear as well. As you explain the logic, you might find that you're jumping around to different places in the code, not necessarily moving from top to bottom.
 
@@ -230,8 +230,8 @@ For a deeper dive into how to document code samples, see my presentation on [Cre
 
 With the [open-source project you identified](docapis_find_open_source_project.html), identify code samples in the API documentation. Answer the following questions:
 
-1. Are there code samples provided (in a particular language)? Which language?
+1. Are there code samples provided? In which languages?
 2. How many code samples are there? Lots? Just a few? None?
 3. Are there comments within the blocks of code?
-4. Are any parts of the code dynamically populated with the user's API keys or other user information?
-5. How do the conceptual explanations point to specific lines of code? Is the explanation given before, during, or after the blocks of code?
+4. How do the conceptual explanations point to specific lines of code? Is the explanation given before, during, or after the blocks of code?
+5. Do the code explanations focus more on the "why" (the decisions behind the code) or the "what" (the mechanics of the code)?
