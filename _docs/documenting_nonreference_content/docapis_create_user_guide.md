@@ -29,10 +29,12 @@ The following are non-reference topics commonly found in API documentation:
 * [API best practices](docapis_best_practices_with_api.html)
 * [Glossary](docapis_glossary_section.html)
 
-I'll provide general descriptions and overviews of what these sections contain, following by examples from actual API documentation sites.
+Beyond the sections outlined above, you might want to include other tasks and tutorials specific to your API, based on what you expect your users to do and the business scenarios for which they'll use your API.
 
 {% include random_ad2.html %}
 
-Beyond the sections outlined above, you might want to include other tasks and tutorials specific to your API, based on what you expect your users to do and the business scenarios for which they'll use your API.
+In each non-reference topic, I'll provide general descriptions and overviews of what these sections contain, followed by examples from actual API documentation sites.
+
+With each topic, there's an activity for you to go into your [open-source project](docapis_find_open_source_project.html) and evaluate the non-reference topic at hand. Although many of the concepts in the non-reference section are basic, when you look at the information in context, that is, when you look to see how the information is actually implemented, it gets a lot more interesting.
 
 {% include random_ad.html %}

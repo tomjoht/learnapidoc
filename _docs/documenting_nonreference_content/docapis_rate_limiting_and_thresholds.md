@@ -16,9 +16,9 @@ Rate limits determine how frequently you can call a particular endpoint. Usually
 
 ## What to cover with rate limiting
 
-Companies with APIs make money by charging for access to the API, but they usually distinguish between low usage and high usage, often making the low usage options free so that developers can explore and experiment with the API. With the sample OpenWeatherMap Weather API that we've [been using in this course](docapis_scenario_for_using_weather_api.html), you can see where the pricing tier begins:
+Companies with APIs make money by charging for access to the API, but they usually distinguish between low usage and high usage, often making the low usage options free so that developers can explore and experiment with the API. With the sample [OpenWeatherMap Weather API](https://openweathermap.org/price) that we've been using in this course, you can see where the pricing tier begins:
 
-{% include course_image.html border="" filename="openweathermapratelimits" ext_print="png" ext_web="png" alt="Pricing tier for OpenWeatherMap API" caption="Pricing tiers for OpenWeatherMap API. Each call is a request to the API. If your page makes just one call for weather, and you get more than 60 visitors per second, you'll need to move past the free tier." %}
+{% include course_image.html url="https://openweathermap.org/price" filename="openweathermapratelimits" ext_print="png" ext_web="png" alt="Pricing tier for OpenWeatherMap API" caption="Pricing tiers for OpenWeatherMap API. Each call is a request to the API. If your page makes just one call for weather, and you get more than 60 visitors per second, you'll need to move past the free tier." %}
 
 If your site has hundreds of thousands of visitors a day, and each page reload calls an API endpoint, you want to be sure the API can support that kind of traffic.
 
@@ -28,11 +28,11 @@ Pricing related to rate limiting is probably information that's within the marke
 
 * When you exceed the threshold, do your calls get throttled with slower responses?
 * Do you get overcharges for every extra call?
-* Do the responses simply return a particular status code (if so, which one)?
+* If you exceed the limit, do the responses simply return a particular status code (if so, which one)?
 
-Also, when developers implement the code into their applications or web pages, how are they implementing code for responses that don't provide data (due to the threshold being exceeded)? Are there conditions and checks to handle these scenarios? Does the widget (or whatever might be implementing the API) simply freeze or hang, display empty or crash?
+Also, when developers implement the code into their applications, how are they handling situations where the API doesn't respond due to rate limit violations? Are there conditions and checks to handle these throtted scenarios? Does the widget (or whatever might be implementing the API) simply freeze or hang, display empty or crash?
 
-{% include course_image.html size="medium" border="true" filename="nonref_ratelimiting" ext_print="png" ext_web="svg" alt="" caption="Rate limiting might seem like a marketing topic, but actually the rate limiting policies and how they affect API calls has a significant impact on development." %}
+{% include course_image.html size="medium" border="true" filename="nonref_ratelimiting" ext_print="png" ext_web="svg" alt="" caption="Rate limiting might seem like a marketing topic, but actually the rate limiting policies and how they affect API calls can have a significant impact on development." %}
 
 ## Examples rate limiting sections
 
@@ -58,4 +58,13 @@ Linkedin's rate limiting documentation explains that different API endpoints hav
 
 Bitly provides basic information on the page above but also links to [best practices for avoid rate limiting issues](http://dev.bitly.com/best_practices.html). These best practices include tips such as caching, security issues, long page loads, batch processing, high-volume requests, URL encoding, and more.
 
-By looking at these examples, you can see that while rate limiting might seem like a simple, straightforward topic, there are layers of depth and complexity to cover. The relevance of the topic depends on your API and the rate limiting policies your company sets, but this information cannot be entirely offloaded to Marketing to handle. So much of the information around rate limiting directly affects development.
+By looking at these examples, you can see that while rate limiting might seem like a straightforward topic, there are layers of depth and complexity to cover. The relevance of the topic depends on your API and the rate limiting policies your company sets, but this information cannot be entirely offloaded to Marketing to handle. So much of the information around rate limiting directly affects development.
+
+## Activity with rate limits
+
+With the [open-source project you identified](docapis_find_open_source_project.html), identify the information about rate limits with the API. Answer the following questions:
+
+1. Does the API have rate limits?
+2. What happens if users exceed the rate limits?
+3. What status codes are sent if rate limits are exceeded?
+4. What kind of rate limits exist with the free (or development) tiers of the API?
