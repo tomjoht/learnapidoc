@@ -8,7 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-In the previous topic, we browsed through a long [survey of API doc sites](pubapis_apilist.html) and looked for similar patterns in their designs. "Design patterns" are common approaches or techniques in the way something is designed. The following design patterns are common with API doc sites: structure and templates, single seamless website, abundant code examples, lengthy pages, and interactive API explorers. I explore each of these elements in the following sections.
+In the previous topic, we browsed through a long [survey of API doc sites](pubapis_apilist.html) and looked for similar patterns in their designs. "Design patterns" are common approaches or techniques in the way something is designed. Although one could probably identify many more patterns, the following design patterns are common with API doc sites: structure and templates, single seamless website, abundant code examples, lengthy pages, and interactive API explorers. I explore each of these elements in the following sections.
 
 {% if site.format == "web" %}
 * TOC
@@ -17,13 +17,13 @@ In the previous topic, we browsed through a long [survey of API doc sites](pubap
 
 ## Pattern 1: Structure and templates {#structure_and_templates}
 
-One overriding commonality with API documentation is that they share a common structure, particularly with the reference documentation around the endpoints. In an earlier section, we explored the common sections in [endpoint documentation](docendpoints.html).
+One overriding commonality with API documentation is that they share a common structure, particularly with the reference documentation around the endpoints. In an earlier section, we explored the common sections in [API endpoint documentation](docendpoints.html).
 
-From a tool perspective, if you have common sections to cover with each endpoint, it makes sense to formalize a template to accommodate the publishing of that content. The template can provide consistency, automate publishing and styles, and allow you to more easily change the design without manually reformatting each section. (Without a template, you could just remember to add the exact same sections on each page, but this requires more effort to be consistent.) With a template, you can insert various values (descriptions, methods, parameters, etc.) into a highly stylized output, complete with div tags and other style classes.
+From a tool perspective, if you have common sections to cover with each endpoint, it makes sense to formalize a template to accommodate the publishing of that content. The template can provide consistency, automate publishing and styles, and allow you to more easily change the design without manually reformatting each section. (Without a template, you could just remember to add the exact same sections on each page, but this requires more effort to be consistent.) With a template, you can insert various values (descriptions, methods, parameters, etc.) into a highly stylized output, complete with sophisticated styling.
 
 Different authoring tools have different ways of processing templates. With [Jekyll](pubapis_jekyll.html), a static site generator, you can create values in a [YAML file](pubapis_yaml.html) and loop through them using Liquid to access the values.
 
-Here's how you might go about it. In the frontmatter of a page, you could list out the key value pairs for each section.
+Here's how you might go about it. In the frontmatter of a page (for example, endpoints.yml), you could list out the key value pairs for each section.
 
 ```
 resource_name: surfreport
@@ -43,7 +43,7 @@ You could then use a [`for` loop](https://help.shopify.com/themes/liquid/objects
 {% endfor %}{% endraw %}
 ```
 
-This approach makes it easy to change your template without reformatting all of your pages. For example, if you decide to change the order of the elements on the page, or if you want to add new classes or some other value, you just alter the template. The values remain the same, since they can be processed in any order.
+This approach makes it easy to change your template without reformatting all of your pages. If you decide to change the order of the elements on the page, or if you want to add new classes or some other value, you just alter the template. The values remain the same, since they can be processed in any order.
 
 For a more full-fledged example of API templating, see the [Aviator theme from CloudCannon](https://github.com/CloudCannon/aviator-jekyll-template). The sample endpoint for adding books in the Aviator theme looks as follows:
 
@@ -95,47 +95,45 @@ $.post("http://api.myapp.com/books/", {
 {: title="jQuery" }
 ```
 
-(The `~~~` are alternate markup for backticks <code>&#96;&#96;&#96;</code>. The notation `{: .success }` is [kramdown](https://kramdown.gettalong.org/) syntax for custom classes.) The theme author created a layout that iterates through these values and pushes the content into HTML formatting. If you look in the [Aviator's index.html file](https://github.com/CloudCannon/aviator-jekyll-template/blob/master/index.html), you'll see this code:
+(The `~~~` are alternate markup for backticks <code>&#96;&#96;&#96;</code>. The notation `{: .success }` is [kramdown](https://kramdown.gettalong.org/) syntax for custom classes.) The theme author created a layout that iterates through these values and push the content into HTML formatting. If you look in the [Aviator's index.html file](https://github.com/CloudCannon/aviator-jekyll-template/blob/master/index.html), you'll see this code:
 
 ```html
 {% raw %}{% assign sorted_collections = site.collections | sort: "position" %}
 {% for collection in sorted_collections %}
-	{% assign sorted_docs = collection.docs | sort: "position" %}
-	{% for doc in sorted_docs %}
-		<section class="doc-content">
-			<section class="left-docs">
-				<h3>
-					<a id="{{ doc.id | replace: '/', '' | replace: '.', '' }}">
-						{{ doc.title }}
-						{% if doc.type %}
-							<span class="endpoint {{ doc.type }}"></span>
-						{% endif %}
-					</a>
-				</h3>
-				{% if doc.description %}
-					<p class="description">{{doc.description}}</p>
-				{% endif %}
-
-				{{ doc.content | replace: "<dl>", "<h6>Parameters</h6><dl>" }}
-			</section>
-
-			{% if doc.right_code %}
-				<section class="right-code">
-					{{ doc.right_code | markdownify }}
-				</section>
-			{% endif %}
-		</section>
-	{% endfor %}
+  {% assign sorted_docs = collection.docs | sort: "position" %}
+  {% for doc in sorted_docs %}
+     <section class="doc-content">
+       <section class="left-docs">
+         <h3>
+           <a id="{{ doc.id | replace: '/', '' | replace: '.', '' }}">
+             {{ doc.title }}
+             {% if doc.type %}
+             <span class="endpoint {{ doc.type }}"></span>
+             {% endif %}
+           </a>
+         </h3>
+         {% if doc.description %}
+         <p class="description">{{doc.description}}</p>
+         {% endif %}
+         {{ doc.content | replace: "<dl>", "<h6>Parameters</h6><dl>" }}
+         </section>
+         {% if doc.right_code %}
+         <section class="right-code">
+           {{ doc.right_code | markdownify }}
+         </section>
+         {% endif %}
+       </section>
+       {% endfor %}
 {% endfor %}{% endraw %}
 ```
 
-This code uses `for` loops in [Liquid scripting](https://help.shopify.com/themes/liquid/basics) to iterate through the items in the `api` collection and pushes the content into the HTML styles of the template. The result looks like this:
+This code uses `for` loops in [Liquid scripting](https://help.shopify.com/themes/liquid/basics) to iterate through the items in the `docs` collection and pushes the content into the HTML styles of the template. The result looks like this:
 
 <a href="https://tangerine-lemon.cloudvent.net/" class="noExtIcon"><img src="images/aviatortheme.png" /></a>
 
 Note that this kind of structure is really only necessary if you have a lot of different endpoints. If you only have a handful, there's no need to automate the template process.
 
-I provided details with Jekyll only as an example. Many of the web platforms and technologies used implement a similar templating approach.
+I provided details with Jekyll only as an example. Many of the web platforms and technologies used for API documentation implement a similar templating approach.
 
 When I worked at Badgeville, a gamification startup, we published using Drupal. We had a design agency construct a highly designed template in Drupal. To publish the API reference documentation, engineers wrote a custom script that generated the content from a database into a JSON file that we then imported into Drupal. The import process populated various fields in the Drupal template.
 
@@ -143,11 +141,11 @@ The resulting output was an eye-popping, visually appealing design. To achieve t
 
 As you look for documentation tools, keep in mind the need to templatize your API reference documentation.
 
-Also note that you don't have to create your own templates to display API documentation. You can probably already see problems related to custom templates. The templates are entirely arbitrary, with terms and structure based on the designer's perceived needs and styles. If you write documentation to fit a specific template, what happens when you want to switch themes? You'd have to create new templates that parse through the same custom frontmatter. It's a lot of custom coding.
+You can probably already see problems related to custom templates. The templates are entirely arbitrary, with terms and structure based on the designer's perceived needs and styles. If you write documentation to fit a specific template, what happens when you want to switch themes? You'd have to create new templates that parse through the same custom frontmatter. It's a lot of custom coding.
 
-Given that REST APIs follow similar characteristics and sections, wouldn't it make sense to create a standard in the way APIs are described, and then leverage tools that parse through these standard descriptions? *Yes!* That's what the OpenAPI specification is all about. Earlier in this course, I explained several [REST API description formats](pubapis_rest_specification_formats.html), and then launched into an extensive tutorial for the [OpenAPI specification](pubapis_openapi_tutorial_overview.html). I provided a tutorial for reading the OpenAPI specification using [Swagger UI](pubapis_swagger.html), along with an activity to [create your own Swagger UI](pubapis_swagger.html#create_swaggerui).
+Given that REST APIs follow similar characteristics and sections, wouldn't it make sense to create a standard in the way APIs are described, and then leverage tools that parse through these standard descriptions? Yes, that's what the OpenAPI specification is all about. Earlier in this course, I explained several [REST API description formats](pubapis_rest_specification_formats.html), and then launched into an extensive tutorial for the [OpenAPI specification](pubapis_openapi_tutorial_overview.html). I provided a tutorial for reading the OpenAPI specification using [Swagger UI](pubapis_swagger.html), along with an activity to [create your own Swagger UI](pubapis_swagger.html#create_swaggerui).
 
-My point here is that you shouldn't be daunted by the coding challenges around creating your own API templates. The Aviator theme shows one custom approach, and I highlight it here with code samples to demonstrate the complexity and custom-nature of defining your own templates. But this isn't the only approach nor is it even the recommended approach.
+My point here is that you shouldn't be overwhelmed by the coding challenges around creating your own API templates. The Aviator theme shows one custom approach, and I highlight it here with code samples to demonstrate the complexity and custom-nature of defining your own templates. But this isn't the only approach nor is it even the recommended approach.
 
 {% include random_ad2.html %}
 
