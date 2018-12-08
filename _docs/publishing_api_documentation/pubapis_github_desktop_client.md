@@ -2,7 +2,7 @@
 title: "Activity: Use the GitHub Desktop client"
 permalink: /pubapis_github_desktop_client.html
 course: "Documenting REST APIs"
-weight: 8.9
+weight: 8.52
 sidebar: docapis
 section: publishingapis
 path1: /publishingapis.html

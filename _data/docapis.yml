@@ -251,6 +251,12 @@ folders:
   - title: Version control systems (such as Git)
     jurl: /pubapis_version_control.html
 
+  - title: "Activity: Manage content in a GitHub wiki"
+    jurl: /pubapis_github_wikis.html
+
+  - title: "Activity: Use the GitHub Desktop Client"
+    jurl: /pubapis_github_desktop_client.html
+    
   - title: Static site generators
     jurl: /pubapis_static_site_generators.html
 
@@ -262,12 +268,6 @@ folders:
 
   - title: "Which tool to choose for API docs &mdash; my recommendations"
     jurl: /pubapis_which_tool_to_choose.html
-
-  - title: "Activity: Manage content in a GitHub wiki"
-    jurl: /pubapis_github_wikis.html
-
-  - title: "Activity: Use the GitHub Desktop Client"
-    jurl: /pubapis_github_desktop_client.html
 
   - title: Pull request workflows through GitHub
     jurl: /pubapis_github_pull_requests.html
