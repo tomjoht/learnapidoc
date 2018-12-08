@@ -10,7 +10,7 @@ So far you've been working with GitHub in the browser. Now we'll take the same c
 	  {: .note}
     The wiki is a separate clone URL than the project's repository. Make sure you're viewing your wiki and not your project. The clone URL will include `.wiki`.
 
-	  In contrast to the "Clone this wiki locally" section, the "Clone in Desktop" button launches the GitHub Desktop client and allows you to manage the repository and your modified files, commits, pushes, and pull through the GitHub Desktop client.
+	  In contrast to the "Clone this wiki locally" section, the "Clone in Desktop" button launches the GitHub Desktop client and allows you to manage the repository and your modified files, commits, pushes, and pull through the GitHub Desktop client. There's another tutorial for working with the Desktop client: [Activity: Use the GitHub Desktop client](pubapis_github_desktop_client.html).
 
 4.  Open your terminal emulator:
 
@@ -22,10 +22,6 @@ So far you've been working with GitHub in the browser. Now we'll take the same c
     ```bash
 	  git clone https://github.com/tomjoht/weatherapi.wiki.git
     ```
-
-    Cloning the wiki gives you a copy of the content on your local machine. Git is *distributed* version control software, so everyone has his or her own copy. When you clone the repo, you create a copy on your local machine; the version in the cloud on GitHub is referred to as "origin." Thus, you have two instances of the content.
-
-    More than just copying the files, though, when you clone a repo, you initialize Git in the folder where you clone the repo. Initializing Git means Git will create an invisible Git folder in that directory, and Git will start tracking your edits to the files, providing version control. With Git initialized, you can run `pull` commands to get updates from the online repository (origin) pulled down to your local copy. You can also `commit` your changes and then `push` your changes back up to origin.
 
     When you clone a repo, Git will show something like the following:
 
@@ -39,6 +35,10 @@ So far you've been working with GitHub in the browser. Now we'll take the same c
     ```
 
     The folder Git creates in the above example is `weatherapi.wiki`.
+
+    Cloning the wiki gives you a copy of the content on your local machine. Git is distributed version control software, so everyone has his or her own copy. When you clone the repo, you create a copy on your local machine; the version in the cloud on GitHub is referred to as "origin." Thus, you have two instances of the content.
+
+    More than just copying the files, though, when you clone a repo, you initialize Git in the folder where you clone the repo. Initializing Git means Git will create an invisible Git folder in that directory, and Git can start tracking your edits to the files, providing version control. With Git initialized, you can run `pull` commands to get updates from the online repository (origin) pulled down to your local copy. You can also `commit` your changes and then `push` your changes back up to origin.
 
 5.  Navigate to the directory where you cloned the repo (either using standard ways of browsing for files on your computer or via the terminal with `cd`) to see the files you downloaded. For example, type `cd weatherapi.wiki` and then `ls` to see the files.
 

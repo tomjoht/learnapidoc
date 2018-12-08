@@ -8,7 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-Although most developers use the command line when working with version control systems, there are many GUI clients available that potentially simplify the process. GUI clients might be especially helpful when you're trying to see what has changed in a file, since the GUI can easily highlight and indicate the changes taking place.
+Although most developers use the command line when working with version control systems, there are many GUI clients available that can potentially simplify the process. GUI clients might be especially helpful when you're trying to see what has changed in a file, since the GUI can easily highlight and indicate the changes taking place.
 
 * TOC
 {:toc}
@@ -17,21 +17,25 @@ Although most developers use the command line when working with version control 
 
 In this tutorial, you'll use GitHub Desktop to manage the Git workflow.
 
+{: .note}
+Rather than working in a GitHub wiki (as you did in the [previous GitHub tutorial](pubapis_github_wikis.html)), you'll work in a regular Git repository. This is because GitHub wikis have some limitations when it comes to making pull requests.
+
+To set up your Git repo using the GitHub Desktop client:
+
 1.  First, download and install [GitHub Desktop](https://desktop.github.com/). Launch the app and sign in. (You should already have a GitHub account from [previous tutorials](pubapis_github_wikis.html), but if not, create one.)
-2.  Go to [Github.com](http://github.com) and browse to the wiki repository you created in the [GitHub tutorial](pubapis_github_wikis.html). (If you didn't do the previous activity, just create a new repository.)
-3.  While viewing your GitHub repo in the browser, click **Clone** and select **Open in Desktop**.
+2.  Go to [Github.com](http://github.com) and browse to the repository you created in the [GitHub tutorial](pubapis_github_wikis.html), but not the wiki. Just go to the main repo. (If you didn't do the previous activity, just create a new repository.)
+3.  While viewing your GitHub repo in the browser, click **Clone or download** and select **Open in Desktop**.
 
     {% include course_image.html filename="open-in-github-desktop" size="medium" ext_print="png" ext_web="png" alt="Open in GitHub Desktop" caption="Open in GitHub Desktop" %}
 
-4.  In the confirmation dialog, select **Open GitHub Desktop.app**. GitHub Desktop should launch with a "Clone a Repository" dialog box about where to clone the repository. If desired, you can change the Local Path.
+4.  Open GitHub Desktop client and go to **File > Clone Repository**.
+5.  In the confirmation dialog, select **Open GitHub Desktop.app**. GitHub Desktop should launch with a "Clone a Repository" dialog box about where to clone the repository. If desired, you can change the Local Path.
+5.  Click the **URL** tab, and then paste in the clone URL. In the **Local Path** field, select where you want the repo cloned. For example:
 
-    {% include course_image.html size="medium" filename="localpathgithubdesktop" ext_print="png" ext_web="png" alt="Choosing the path for GitHub clone" caption="Choosing the path for GitHub clone" %}
-
-    (If you're using the same repo from the [previous GitHub tutorial](pubapis_github_wikis.html), you might want to delete the test repo you already installed in that directory.)
+    {% include course_image.html filename="localpathgithubdesktop" size="large" ext_print="png" ext_web="png" alt="Selecting paths for the repo in GitHub Desktop" caption="Selecting paths for the repo in GitHub Desktop" %}
 
 5.  Click **Clone**.
-
-6.  Go into the repository where GitHub Desktop cloned the repo (use your Finder or browsing folders normally) and add a simple text file with some content. Or make a change to an existing file.
+6.  Go into the repository where GitHub Desktop cloned the repo (use your Finder or browsing folders normally) and either add a simple text file with some content, or make a change to an existing file.
 7.  Go back to GitHub Desktop. You'll see the new file you added in the list of uncommitted changes on the left.
 
     {% include course_image.html filename="github-desktop-file-uncommitted-changes" size="medium"  ext_print="png" ext_web="png" alt="Uncommitted changes shown" caption="Uncommitted changes shown" %}
@@ -46,9 +50,9 @@ In this tutorial, you'll use GitHub Desktop to manage the Git workflow.
 
     You'll see GitHub Desktop show that it's "Pushing to origin."
 
-    {% include course_image.html  size="small" filename="pushingtoorigin" ext_print="png" ext_web="png" alt="Pushing to origin" caption="Pushing to origin" %}
+    <img src="images/pushingtoorigin.png" style="width:250px" alt="Pushing to origin" />
 
-If you view your repository online (by going to **Repository > View on GitHub**), you'll see that the change you made has been pushed to the master branch on origin. You can also click the **History** tab in the GitHub Desktop client (instead of the **Changes** tab), or go to **View > Show History** to see the changes you previously committed.
+If you view your repository online, you'll see that the change you made has been pushed to the master branch on origin. You can also click the **History** tab in the GitHub Desktop client (instead of the **Changes** tab), or go to **View > Show History** to see the changes you previously committed.
 
 {: .note}
 Although I prefer to use the terminal instead of the GitHub Desktop GUI, the GUI gives you an easier visual experience to see the changes made to a repository. You can use both the command line and Desktop client in combination, if you want.
@@ -57,7 +61,7 @@ Although I prefer to use the terminal instead of the GitHub Desktop GUI, the GUI
 
 Now let's create a branch, make some changes, and see how the changes are specific to that branch.
 
-1.  Go to **Branch > New Branch** and create a new branch. Call it "development" branch, and click **Create Branch**.
+1.  In the GitHub Desktop client, go to **Branch > New Branch** and create a new branch. Call it "development" branch, and click **Create Branch**.
 
     {% include course_image.html size="medium" filename="creatingnewbranchgithubdesktop" ext_print="png" ext_web="png" alt="Creating a new branch" caption="Creating a new branch" %}
 
@@ -78,16 +82,17 @@ Now let's create a branch, make some changes, and see how the changes are specif
 
 6.  Switch back to your master branch (using the Branch drop-down option at the top of the GitHub Desktop client). Then look at your file (in your text editor, such as Sublime text). Note how the file changes you made while editing in the development branch don't appear in your master branch.
 
-    {: note}
-    Usually, you create a new branch when you're making extensive changes to your content. For example, suppose you want to revamp a section ("Section X") in your docs. However, you might want to publish other updates before publishing the extensive changes in Section X. If you were working in the same branch, it would be difficult to selectively push updates on a few files outside of Section X without pushing updates you've made to files in Section X as well. <br/><br/>Through branching, you can confine your changes to a specific version that you don't push live until you're ready to merge the changes into your master branch.
+You usually create a new branch when you're making extensive changes to your content. For example, suppose you want to revamp a section ("Section X") in your docs. However, you might want to publish other updates before publishing the extensive changes in Section X. If you were working in the same branch, it would be difficult to selectively push updates on a few files outside of Section X without pushing updates you've made to files in Section X as well.
+
+Through branching, you can confine your changes to a specific version that you don't push live until you're ready to merge the changes into your master branch.
 
 ## Merge the development branch into master
 
 Now let's merge the development branch into the master branch.
 
-1.  In the GitHub Desktop client, switch to the master branch.
+1.   In the GitHub Desktop client, switch to the branch you want to merge the development branch into. From the branch selector, select the **master** branch.
 2.  Go to **Branch > Merge into Current Branch**.
-3.  In the merge window, select the **development** branch, and then click **Merge into master**.
+3.  In the merge window, select the **development** branch, and then click **Merge development into master**.
 
     {% include course_image.html  size="medium" filename="mergeintomastergithubclient" ext_print="png" ext_web="png" alt="Merging into master" caption="Merging into master" %}
 
@@ -104,17 +109,17 @@ Now let's merge the development branch into the master branch.
 Now let's merge the development branch into the master using a pull request workflow. We'll pretend that we've cloned a repo managed by engineers, and we want to have the engineers merge in the development branch. (In other words, we might not have rights to merge branches into the master.) To do this, we'll create a pull request.
 
 1.  Just as you did in the previous section, switch to the development branch, make some updates to the content in a file, and then save and commit the changes. After committing the changes, click **Push origin** to push your changes to the remote version of the development branch on GitHub.
-2.  In the GitHub Desktop client, while you have development branch selected, go to **Branch > Create Pull Request**.
+2.  In the GitHub Desktop client, while you have **development** branch selected, go to **Branch > Create Pull Request**.
 
 	  GitHub opens in the browser with the Pull Request form opened.
 
     {% include course_image.html size="large" filename="mergepullrequestgithubdesktop" ext_print="png" ext_web="png" alt="Pull request" caption="Pull request" %}
 
-    The left-facing arrow from the development branch towards the master indicates that the pull request ("PR") wants to merge development into master.
+    The left-facing arrow (pointing from the development branch towards the master) indicates that the pull request ("PR") wants to merge the development branch into the master branch.
 
 3.  Describe the pull request, and then click **Create pull request**.
 
-4.  At this point, engineers would get an email request asking for them to merge in the edits. Play the part of the engineer by going to the **Pull requests** tab to examine and confirm the merge request. As long as the merge request doesn't pose any conflicts, you'll see a **Merge pull request** button.
+4.  At this point, engineers would get an email request asking for them to merge in the edits. Play the part of the engineer by going to the **Pull requests** tab (on GitHub) to examine and confirm the merge request. As long as the merge request doesn't pose any conflicts, you'll see a **Merge pull request** button.
 
     {% include course_image.html    filename="mergepullrequest" ext_print="png" ext_web="png" alt="Confirm merge request" caption="Confirm merge request" %}
 
@@ -168,6 +173,6 @@ Now you need to re-add the file to Git again. In the GitHub Desktop client, comm
 
 ## Conclusion
 
-The more you use GitHub, the more familiar you'll become with the workflows you need. Git is a robust, powerful collaboration platform, and there are many commands and workflows and features that you could leverage for a variety of scenarios. But most likely the scenarios you'll actually use are somewhat limited and learnable without too much effort. Pretty soon, these workflows will become automatic.
+The more you use GitHub, the more familiar you'll become with the workflows you need. Git is a robust, powerful collaboration platform, and there are many commands and workflows and features that you could adopt for a variety of scenarios. Despite Git's variety of commands and workflows, most likely the scenarios you'll actually use are somewhat limited in scope and learnable without too much effort. Pretty soon, these workflows will become automatic.
 
-Although we've been using the GitHub Desktop client for this exercise, you can do all of this through the command line, and you'll probably find it preferable that way. However, the Desktop Client can be a good starting point as you transition into becoming more of a Git power user.
+Although we've been using the GitHub Desktop client for this exercise, you can do all of this through the command line, and you'll probably find it preferable that way. However, the GitHub Desktop client can be a good starting point as you transition into becoming more of a Git power user.

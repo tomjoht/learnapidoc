@@ -25,16 +25,16 @@ Unlike other wikis, the GitHub wiki you create is its own repository that you ca
 
 {% include random_ad2.html %}
 
-One of the neat things about using a GitHub repository is that you treat the [docs as code](pubapis_docs_as_code.html), editing it in a text editor, committing it to a repository, and packaging it up into the same area as the rest of the source code. Because the content resides in a separate repository, technical writers can work in the documentation right alongside project code without getting merge conflicts.
-
 With GitHub, you write wiki pages in Markdown syntax. There's a special flavor of Markdown syntax for GitHub wikis called [Github-flavored Markdown](https://help.github.com/articles/github-flavored-markdown/), or GFM. The GitHub Flavored Markdown allows you to create tables, add classes to code blocks (for proper syntax highlighting), and more.
 
 Because you can work with the wiki files locally, you can leverage other tools (such as static site generators, or even DITA) to generate the Markdown files if desired. This means you can handle all the re-use, conditional filtering, and other logic outside of the GitHub wiki. You can then output your content as Markdown files and commit them to your GitHub repository.
 
 {: .warning}
-Use Git only to track text (that is, non-binary) files. Don't start tracking large binary files, such as audio files, video files, Microsoft Word files, or Adobe PDF files. Version control systems really can't handle that kind of format well and your repo size will increase exponentially. If you use Git to manage your documentation, exclude these files through your [.gitignore file](https://git-scm.com/docs/gitignore). You might also consider excluding images, as they bloat your repo size as well.
+Use Git only to track text files. Don't start tracking large binary files, such as audio files, video files, Microsoft Word files, or Adobe PDF files. Version control systems really can't handle that kind of format well and your repo size will increase exponentially. If you use Git to manage your documentation, exclude these files through your [.gitignore file](https://git-scm.com/docs/gitignore). You might also consider excluding images, as they bloat your repo size as well.
 
 {% include random_ad.html %}
+
+## Limitations with GitHub wikis
 
 GitHub wikis have some limitations:
 
@@ -55,7 +55,7 @@ To install Git on a Mac, see [Installing on Mac](https://git-scm.com/download/ma
 
 * Open the default Terminal application by doing to **Applications > Utilities > Terminal**.
 * Install [iTerm](https://www.iterm2.com/), a separate terminal app.
-* Use [PlatformIO IDE Terminal](https://atom.io/packages/platformio-ide-terminal) in [Atom](https://atom.io/) (this is my preferred method).
+* Use [PlatformIO IDE Terminal](https://atom.io/packages/platformio-ide-terminal) in [Atom](https://atom.io/) (this is my preferred method when working with projects).
 
 **Windows**:
 
@@ -73,7 +73,7 @@ git --version
 
 You can configure Git so that when you push changes to GitHub, you won't need to type your username and password each time. See the following topics to set this up:
 
-* [Set up Git](https://help.github.com/articles/set-up-git/). Note that when you configure your username, use your GitHub username, which will be something like `tomjoht` instead of `Tom Johnson`.
+* [Set up Git](https://help.github.com/articles/set-up-git/).
 * [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
 * [Adding a new SSH key to your GitHub account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
 * [Associating text editors with Git](https://help.github.com/articles/associating-text-editors-with-git/)
@@ -90,6 +90,6 @@ GitHub and Git are not the same. Git provides [distributed version control](puba
 {% include content/activities/push_local_to_remote.md %}
 
 
-## GitHub workflows for online and local edits
+## Avoiding merge conflicts when editing online and locally
 
 The visual editor on GitHub.com might be an easy way for subject matter experts to contribute, whereas tech writers will probably want to clone the repo and work locally. If some people make edits in the browser while others edit locally, you might encounter merge conflicts. To avoid merge conflicts, always run `git pull` before running `git push`. If two people edit the same content simultaneously between commits, you will likely need to [resolve merge conflicts](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/).
