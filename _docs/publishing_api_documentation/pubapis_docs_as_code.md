@@ -29,13 +29,13 @@ If you plan to have developers write, definitely check out Riona Macnamara's Wri
 
 ## What docs-as-code tools means
 
-Having developers write or contribute to documentation should inform your tool choice with API documentation. If you plan to involve developers in writing and editing, you'll naturally choose more of a [docs-as-code tools](pubapis_docs_as_code.html) approach. Docs-as-code means to embrace tools that treat docs just like developers treat software code. To treat docs like code generally means doing some of the following:
+Having developers write or contribute to documentation should inform your tool choice with API documentation. If you plan to involve developers in writing and editing, you'll naturally choose more of a docs-as-code tools approach. Docs-as-code means to treat docs just like developers treat code. To treat docs like code generally means doing some of the following:
 
-*  **Working in plain text files** (rather than binary file formats like FrameMaker or Word).
-*  **Using an open-source static site generator** like [Sphinx](pubapis_static_site_generators.html#sphinx), [Jekyll](pubapis_static_site_generators.html#jekyll), or [Hugo](pubapis_static_site_generators.html#hugo) to build the files locally through the command line (rather than using a commercial program such as FrameMaker or Microsoft Word).
+*  **Working in plain text files** (rather than binary file formats like Adobe FrameMaker or Microsoft Word).
+*  **Using an open-source static site generator** like [Sphinx](pubapis_static_site_generators.html#sphinx), [Jekyll](pubapis_static_site_generators.html#jekyll), or [Hugo](pubapis_static_site_generators.html#hugo) to build the files locally through the command line (rather than using a commercial program such as FrameMaker or Word).
 *  **Working with files through a text editor** such as Atom or Sublime Text (rather than relying on commercial tools with proprietary, closed systems that function like black boxes).
 *  **Storing docs in a version control repository** (usually a Git repo) similar to how programming code is stored (rather than keeping docs in another space like SharePoint or a shared drive); also if appropriate, potentially storing the docs in the same repository as the code itself.
-*  **Collaborating with other writers using version control** such as Git and GitHub to branch, merge, push, and pull updates (rather than collaborating through large content management systems or SharePoint-like check-in/check-out sites).
+*  **Collaborating with other writers using version control** such as Git to branch, merge, push, and pull updates (rather than collaborating through large content management systems or SharePoint-like check-in/check-out sites).
 *  **Automating the site build process with continuous delivery** to build the web output from the server when you update a particular branch (rather than manually publishing and transferring files from one place to another).
 *  **Running validation checks** using custom scripts to check for broken links, improper terms/styles, and formatting errors (rather than spot checking the content manually).
 
@@ -55,12 +55,12 @@ Just because you *can* manage docs like code, should you? What exactly are the a
 
 ### Collaboration with developers {#collaboration_with_developers}
 
-If you work with developer documentation, chances are you'll be working on a wide variety of deeply technical topics and will be reliant on engineers to contribute and review the docs. Many times developer documentation is so complex, only developers can really write and review it. Unless you have a background in engineering, understanding all the details in programming, server configuration, or other technical platforms may be beyond the technical writers' ability to document (without a lot of research, interviewing, and careful note taking).
+If you work with developer documentation, chances are you'll be working on a wide variety of deeply technical topics and will be reliant on engineers to contribute and review the docs. Many times developer documentation is so complex, only developers can really write and review it. Unless you have a background in engineering, understanding all the details in programming, server configuration, or other technical platforms may be beyond your ability to document (without a lot of research, interviewing, and careful note taking).
 
 {: .tip}
 See my post [What technical writing trends will we see in 2018?](https://idratherbewriting.com/2018/01/02/technical-writing-trends-2018-and-2017-review/) for a description of how specialization is forcing technical writers to play more of a generalist role with content.
 
-Additionally, some developers prefer to just write the doc themselves. If a developer is the audience, and another developer is the writer, chances are they can cut through some of the guesswork about assumptions, prerequisite knowledge, and accuracy. It's hard to say this, but sometimes it might be more efficient than trying to transmit the information to a technical writer.
+Additionally, some developers prefer to just write the doc themselves. If a developer is the audience, and another developer is the writer, chances are they can cut through some of the guesswork about assumptions, prerequisite knowledge, and accuracy. In short, in some API documentation contexts, developers write the content. The fact alone is enough to make the case for adopting a docs-as-code approach.
 
 Most developers are comfortable with Markdown, enjoy being able to work in their existing text editor or IDE (integrated development environment) to edit content, prefer to collaborate in a Git repo using branching, merging, and code review tools, and are generally comfortable with the whole code-based process and environment. By using tooling that is familiar to them, you empower them to contribute and participate more fully with the documentation authoring and publishing.
 
@@ -70,9 +70,9 @@ If tech writers are available, API documentation is usually a collaborative effo
 
 ### Continuous delivery
 
-Continuous delivery with docs means rebuilding your output by simply committing and pushing content into a Git repository, which then detects and change and triggers a build and publishing job. This greatly simplifies the act of publishing. You can make edits across a number of docs and commit your code into your doc repo. When you merge your branch into a gamma or production environment, a server process automatically starts building and deploying the content to your server.
+Continuous delivery with docs means rebuilding your output by simply committing and pushing content into a Git repository, which then detects and change and triggers a build and publishing job. This greatly simplifies the act of publishing. You can make edits across a number of docs and commit your code into your doc repo. When you merge your branch into a gamma or production environment, a server process automatically starts building and deploying the content to your server. You don't have to FTP files to a server or follow some other manual deployment process.
 
-At first, learning the right Git commands might take some time. But after working this way for a few weeks, these commands become second-nature and almost built into your typing memory. Eliminating the hassle of publishing and deploying docs allows you to focus more on content, and you can push out updates quickly and easily. Publishing and deploying the output is no longer a step you have to devote time towards.
+At first, learning the right Git commands might take some time. But after working this way for a few weeks, these commands become second-nature and almost built into your typing memory. Eliminating the hassle of publishing and deploying docs allows you to focus more on content, and you can push out updates quickly and easily. Publishing and deploying the output is no longer a step you have to devote time towards. Continuous delivery is the killer feature that makes docs-as-code so much more effortless (when it comes to publishing) compared to other solutions.
 
 ### Increased collaboration with other contributors
 
@@ -82,9 +82,9 @@ By working out of the same repository, you aren't siloed in separate projects th
 
 ### Flexibility and control
 
-Docs-as-code tools give you incredible flexibility and control to adjust to your particular environment or company's infrastructure. For example, suppose the localized version of your website requires you to output the content with a particular URL pattern, or you want to deliver the content with a certain layout in different environments, or you want to include custom metadata to process your files in a particular way with your company's authentication or whitelisting mechanisms. With docs-as-code tools, the files are open and can be customized to incorporate the logic you want. This can be especially important if you're integrating your docs into a website rather than generating a standalone output.
+Docs-as-code tools give you incredible flexibility and control to adjust to your particular environment or company's infrastructure. For example, suppose the localized version of your website requires you to output the content with a particular URL pattern, or you want to deliver the content with a certain layout in different environments, or you want to include custom metadata to process your files in a particular way with your company's authentication or whitelisting mechanisms. With docs-as-code tools, the files are open and can be customized to incorporate the logic you want. This can be especially important if you're integrating your docs into a website rather than generating a standalone output (see [Pattern 2: A single seamless website](pubapis_design_patterns.html#website_platform)).
 
-The docs-as-code tools are as flexible and robust as your coding skills allow. At a base level, almost all docs-as-code tools use HTML, CSS, and JavaScript, so if you are a master with these web technologies, there's almost nothing you can't do.
+The docs-as-code tools are as flexible and robust as your coding skills allow. At a base level, almost all docs-as-code tools use HTML, CSS, and JavaScript. So if you are a master with these web technologies, there's almost nothing you can't do.
 
 Further, many static site generators allow you to use scripting logic such as Liquid that simplifies JavaScript and makes it easier to perform complex operations (like iterating through files and inserting certain fields into templates). The scripting logic gives you the ability to handle complex scenarios. You can use variables, re-use content, abstract away complex code through templates, and more.
 
@@ -93,7 +93,7 @@ To read details about switching to docs as code tools, see [Case study: Switchin
 
 ## Dealing with more challenging factors
 
-A lot of the docs-as-code solutions aren't built with robust technical documentation needs in mind. For example, you might have to deal with some of the following:
+A lot of the docs-as-code solutions aren't built with robust technical documentation needs in mind. Suppose you have some of the following requirements:
 
 * Localization
 * Content re-use
@@ -107,9 +107,9 @@ At one company where I used Jekyll, we had requirements around both PDF output a
 
 Jekyll provides a templating language called Liquid that allows you to do conditional filtering, content re-use, variables, and more, so you can fill these more robust requirements. I used this advanced logic to single source the output without duplicating the content. Other static site generators (like Hugo or Sphinx) have similar templating and scripting logic that lets you accomplish advanced tasks.
 
-To handle PDF with Jekyll, I integrated a tool called [Prince](http://www.princexml.com/), which converts a list of HTML pages into a PDF document, complete with running headers and footers, page numbering, and other print styling. You could also use [Pandoc](https://pandoc.org/) to fill simpler PDF requirements.
+To handle PDF with Jekyll, I integrated a tool called [Prince](http://www.princexml.com/), which converts a list of HTML pages into a PDF document, complete with running headers and footers, page numbering, and other print styling (it even uses CSS for the styling) You could also use [Pandoc](https://pandoc.org/) to fill simpler PDF requirements. PDF is possible, just not usually an out-of-the-box feature (except with [Sphinx](http://www.sphinx-doc.org/en/master/)).
 
-My point is that you can handle these more challenging factors with non-traditional tools, but it requires more expertise.
+You can handle these more challenging factors with non-traditional tools, but it might require more expertise and creativity.
 
 ## Conclusion
 

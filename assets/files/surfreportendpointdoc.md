@@ -15,7 +15,7 @@ Returns information about surfing conditions at a specific beach ID, including t
 ## Parameters
 
 | Parameter | Description | Data Type |
-|-----------|------|-----|-----------|
+|-----------|------|----------|
 | days | *Optional*. The number of days to include in the response. Default is 3. | integer |
 | time | *Optional*. If you include the time, then only the current hour will be returned in the response.| integer. Unix format (ms since 1970) in UTC. |
 

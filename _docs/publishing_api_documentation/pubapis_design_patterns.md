@@ -95,7 +95,7 @@ $.post("http://api.myapp.com/books/", {
 {: title="jQuery" }
 ```
 
-(The `~~~` are alternate markup for backticks <code>&#96;&#96;&#96;</code>. The notation `{: .success }` is [kramdown](https://kramdown.gettalong.org/) syntax for custom classes.) The theme author created a layout that iterates through these values and push the content into HTML formatting. If you look in the [Aviator's index.html file](https://github.com/CloudCannon/aviator-jekyll-template/blob/master/index.html), you'll see this code:
+(The `~~~` are alternate markup for backticks <code>&#96;&#96;&#96;</code>. The notation `{: .success }` is [kramdown](https://kramdown.gettalong.org/) syntax for custom classes.) The theme author created a layout that iterates through these values and pushes the content into HTML formatting. If you look in the [Aviator's index.html file](https://github.com/CloudCannon/aviator-jekyll-template/blob/master/index.html), you'll see this code:
 
 ```html
 {% raw %}{% assign sorted_collections = site.collections | sort: "position" %}
@@ -137,13 +137,11 @@ I provided details with Jekyll only as an example. Many of the web platforms and
 
 When I worked at Badgeville, a gamification startup, we published using Drupal. We had a design agency construct a highly designed template in Drupal. To publish the API reference documentation, engineers wrote a custom script that generated the content from a database into a JSON file that we then imported into Drupal. The import process populated various fields in the Drupal template.
 
-The resulting output was an eye-popping, visually appealing design. To achieve that kind of style in the UX, it would have certainly required a lot of custom div tags to apply classes and other scripts on the page. By separating the content from the template format, we could work with the content without worrying about the right style tags and other formatting.
+The resulting output was an eye-popping, visually appealing design. To achieve that kind of style in the UX, it would have certainly required a lot of custom div tags to apply classes and other scripts on the page. By separating the content from the template format, we could work with the content without worrying about the right style tags and other formatting. As you look for documentation tools, keep in mind the need to templatize your API reference documentation.
 
-As you look for documentation tools, keep in mind the need to templatize your API reference documentation.
+Although it can be fun to create your own templates (if you like to tinker with doc tools), you can probably already see problems related to custom templates. The templates are entirely arbitrary, with terms and structure based on the designer's perceived needs and styles. If you write documentation to fit a specific template, what happens when you want to switch themes or products? You'd have to create new templates that parse through the same custom frontmatter. It's a lot of custom coding.
 
-You can probably already see problems related to custom templates. The templates are entirely arbitrary, with terms and structure based on the designer's perceived needs and styles. If you write documentation to fit a specific template, what happens when you want to switch themes? You'd have to create new templates that parse through the same custom frontmatter. It's a lot of custom coding.
-
-Given that REST APIs follow similar characteristics and sections, wouldn't it make sense to create a standard in the way APIs are described, and then leverage tools that parse through these standard descriptions? Yes, that's what the OpenAPI specification is all about. Earlier in this course, I explained several [REST API description formats](pubapis_rest_specification_formats.html), and then launched into an extensive tutorial for the [OpenAPI specification](pubapis_openapi_tutorial_overview.html). I provided a tutorial for reading the OpenAPI specification using [Swagger UI](pubapis_swagger.html), along with an activity to [create your own Swagger UI](pubapis_swagger.html#create_swaggerui).
+Given that REST APIs follow similar characteristics and sections, wouldn't it make sense to create a standard in the way APIs are described, and then leverage tools that parse through these standard descriptions? *Yes!* That's what the OpenAPI specification is all about. Earlier in this course, I explained several [REST API description formats](pubapis_rest_specification_formats.html), and then launched into an extensive tutorial for the [OpenAPI specification](pubapis_openapi_tutorial_overview.html). I provided a tutorial for reading the OpenAPI specification using [Swagger UI](pubapis_swagger.html), along with an activity to [create your own Swagger UI](pubapis_swagger.html#create_swaggerui).
 
 My point here is that you shouldn't be overwhelmed by the coding challenges around creating your own API templates. The Aviator theme shows one custom approach, and I highlight it here with code samples to demonstrate the complexity and custom-nature of defining your own templates. But this isn't the only approach nor is it even the recommended approach.
 
@@ -155,17 +153,17 @@ Many API doc sites provide *one integrated website* to present all of the inform
 
 <a href="https://www.yelp.com/developers/documentation" class="noExtIcon"><img src="images/yelpapi.png" alt="Yelp API documentation" /></a>
 
-I hinted at this earlier, but with API documentation, there usually isn't a GUI (graphical user interface) that the documentation complements. In most cases, the API documentation itself is the interface that users navigate to use your product. As such, users will expect more from it.
+I hinted at this earlier (in [The market for REST API documentation](docapis_intro_to_rest_api_doc.html)), but with API documentation, there usually isn't a GUI (graphical user interface) that the documentation complements. In most cases, the API documentation itself is the interface that users navigate to use your product. As such, users will expect more from it.
 
-One of the challenges in using documentation generated from [OpenAPI](pubapis_swagger_intro.html) or some other document generator is figuring out how to integrate it with the rest of the site. Ideally, you want users to have a seamless experience across the entire website. If your endpoints are rendered into their own separate view, how do you integrate the endpoint reference into the rest of the documentation?
+One of the challenges in using documentation generated from [OpenAPI and Swagger](pubapis_swagger_intro.html) or some other document generation process is figuring out how to integrate it with the rest of the site. Ideally, you want users to have a seamless experience across the entire website. If your endpoints are rendered into their own separate view, how do you integrate the endpoint reference into the rest of the documentation?
 
 If you can integrate the branding and search, users may not care. But if it feels like users are navigating several sites poorly cobbled together, the UX experience will be somewhat fragmented.
 
 {% include random_ad.html %}
 
-Think about other content that users will interact with, such as Marketing content, terms of service, support, and so on. How do you pull together all of this information into a single site experience without resorting to an overbloated CMS or some other web framework?
+Think about other content that users will interact with, such as marketing content, terms of service, support, and so on. How do you pull together all of this information into a single site experience without resorting to an overbloated CMS or some other web framework?
 
-The reality is that most API documentation sites are custom-designed websites that blend seamlessly with the other marketing content on the site, because your API doc must sell your API. As a website platform (rather than a tripane help output), you can leverage all the HTML, CSS, and JS techniques available in building websites. You aren't limited to a small subset of available tools that are allowed by a particular help authoring tool; instead, you have the whole web landscape and toolset at your disposal.
+The reality is that most API documentation sites are custom-designed websites that blend seamlessly with the other marketing content on the site because your API doc must sell your API. As a website platform (rather than a tripane help output), you can leverage all the HTML, CSS, and JS techniques available in building websites. You aren't limited to a small subset of available tools that are allowed by a particular help authoring tool; instead, you have the whole web landscape and toolset at your disposal.
 
 This open invitation to use the tools of the web to construct your API doc site is both a benefit and a challenge. A benefit because, for the most part, there's nothing you can't do with your docs. You're only limited by your lack of knowledge about front-end coding. But it's also a challenge because many of the needs you may have with docs (single sourcing, PDF, variables, and more) might not be readily available with common website tooling.
 
@@ -181,9 +179,9 @@ James Yu at Parse gives the following advice:
 
 For code samples, you'll want to incorporate syntax highlighting. The syntax highlighter colors different elements of the code sample appropriately based on the programming language. There are numerous syntax highlighters that you can usually incorporate into your platform. For example, Jekyll uses [rouge](https://github.com/jneen/rouge) by default. Another common highlighter is [pygments](http://pygments.org/). These highlighters have stylesheets prepared to highlight languages based on specific syntax.
 
-Usually, tools that you use for authoring will incorporate highlighting utilities (based on Ruby or Python) into their HTML generation process. (You don't implement the syntax highlighter as a standalone tool.) If you don't have access to a syntax highlighter for your platform, you can [manually add a highlighting using syntax highlighter library](http://code.tutsplus.com/tutorials/quick-tip-how-to-add-syntax-highlighting-to-any-project--net-21099).
+Usually, tools that you use for authoring will incorporate highlighting utilities (based on Ruby or Python) into their HTML generation process. You usually don't implement the syntax highlighter as a standalone tool. If you don't have access to a syntax highlighter for your platform, you can [manually add a highlighting using syntax highlighter library](http://code.tutsplus.com/tutorials/quick-tip-how-to-add-syntax-highlighting-to-any-project--net-21099).
 
-Another important element in code samples is to use consistent white space. Although computers can read minified code, users usually can't or won't want to look at minified code. Use a tool to format the code with the appropriate spacing and line breaks. You'll need to format the code based on the conventions of the programming language. Fortunately, there are many code beautifier tools online to automate that (such as [Code Beautify](https://codebeautify.org/javaviewer)).
+Another important element in code samples is to use consistent white space. Use a tool to format the code with the appropriate spacing and line breaks. You'll need to format the code based on the conventions of the programming language. Fortunately, there are many code beautifier tools online to automate that (such as [Code Beautify](https://codebeautify.org/javaviewer)).
 
 Sometimes development shops have an official style guide for formatting code samples. This style guide for code might prescribe details such as the following:
 
@@ -191,13 +189,15 @@ Sometimes development shops have an official style guide for formatting code sam
 * Line breaks
 * Inline code comment styles
 
-For example, here's a [JavaScript style guide](http://google.github.io/styleguide/javascriptguide.xml). If developers don't have an official style guide, ask them to recommend one online, and then compare the code samples against the guidelines in it. I dive [more into code samples](docapis_codesamples_bestpractices.html) in another topic.
+For example, here's the [Google JavaScript Style Guide](http://google.github.io/styleguide/javascriptguide.xml). If developers don't have an official style guide, ask them to recommend one online, and then compare the code samples against the guidelines in it. I dive more into code samples in [Code samples and tutorials](docapis_codesamples_bestpractices.html).
 
 ## Pattern 4: Lengthy pages {#longish_pages}
 
-One of the most stark differences between regular end-user documentation and developer documentation is that developer doc pages tend to be much longer. In [How API Documentation Fails](https://ieeexplore.ieee.org/document/7140676/) (published in [*IEEE Software*](https://ieeexplore.ieee.org)), researchers looked at common reasons why developers had severe problems with API documentation. In addition to incompleteness, ambiguity, and other reasons, Martin Robillard and Gias Uddin also found that "fragmentation" was cited as a common issue (which is more related to the presentation of content than the content itself).
+One of the most stark differences between regular end-user documentation and developer documentation is that developer doc pages tend to be much longer. Why are the pages longer? In [How API Documentation Fails](https://ieeexplore.ieee.org/document/7140676/) (published in [*IEEE Software*](https://ieeexplore.ieee.org)), Martin Robillard and Gias Uddin looked at common reasons why developers had severe problems with API documentation. In addition to incompleteness, ambiguity, and other reasons, the researchers also found that "fragmentation" was cited as a common issue (which is more related to the presentation of content than the content itself).
 
-Robillard and Udin explain, "When the respondents had to click through multiple pages of an API document to learn the functionality and use of an API element, they found the separation of the descriptions at such a micro level to be unnecessary."
+Robillard and Udin explain:
+
+> When the respondents had to click through multiple pages of an API document to learn the functionality and use of an API element, they found the separation of the descriptions at such a micro level to be unnecessary.
 
 Developers in their survey said they "had difficulty navigating through the myriad pages in an API document to find information," with one respondent explaining:
 
@@ -224,14 +224,14 @@ Why do API doc sites tend to have such lengthy pages? Here are a few reasons:
 
 * **Provides the big picture**: As Yu indicates, single-page docs allow users to zoom out or in depending on the information they need. A new developer might zoom out to get the big picture, learning the base REST path and how to submit calls. But a more advanced developer already familiar with the API might need only to check the parameters allowed for a specific endpoint. The single-page doc model allows developers to jump to the right page and use Ctrl+F to locate the information.
 * **Many platforms lack search**: A lot of the API doc sites don't have good search engines. In fact, many lack built-in search features altogether. This is partly because Google does such a better job at search, the in-site search feature of any website is often meager by comparison. Also, some of the other document generator and static site generator tools just don't have search (neither did Javadoc). Without search, you can find information by creating long pages and using Ctrl+F.
-* **Everything is at your fingertips**: If the information is chunked up into little pieces here and there, requiring users to click around constantly to find anything (as is [often the case with DITA's information model](https://idratherbewriting.com/2013/04/22/does-dita-encourage-authors-to-fragment-information-into-a-million-little-pieces/)), the experience can be like playing information pinball. As a general strategy, you want to include complete information on a page. If an API resource has several different methods, splitting them out into separate pages can create findability issues. Sometimes it makes sense to keep all related information in one place, with "everything at your fingertips."
+* **Everything is at your fingertips**: If the information is chunked up into little pieces here and there, requiring users to click around constantly to find anything (as is [often the case with DITA's information model](https://idratherbewriting.com/2013/04/22/does-dita-encourage-authors-to-fragment-information-into-a-million-little-pieces/)), the experience can be like playing information pinball. As a general strategy, you want to include complete information on a page. If an API resource has several different methods, splitting them out into separate pages can create findability issues. See [Single Page Docs: Stop the Click Insanity](https://www.youtube.com/watch?v=rXcdTYuxwys) by Brandon Philips for more. Sometimes it makes sense to keep all related information in one place, with "everything at your fingertips." This is the approach the authors of the [OpenAPI spec on GitHub](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md) took &mdash; one massive page, with the ability to use Ctrl+F to easily jump around.
 * **Today's navigation controls are sophisticated**: Today there are better navigation controls today for moving around on long pages than there were in the past. For example, [Bootstrap's Scrollspy feature](http://getbootstrap.com/docs/4.0/components/scrollspy/) dynamically highlights your place in the sidebar as you're scrolling down the page. Other solutions allow collapsing or expanding of sections to show content only if users need it.
 
 Usually the long pages on a site are the reference pages. Personally, I'm not a fan of listing every endpoint on the same long page. Long pages also present challenges with linking as well. However, I do tend to create lengthier pages in API doc sites than I typically see in other types of documentation.
 
 ## Pattern 5: API Interactivity {#interactive_api_explorers}
 
-A recurring feature in many API doc publishing sites is interactivity with API calls. Swagger, readme.io, Apiary, and many other platforms allow you to try out calls and see responses directly in the browser.
+A recurring feature in many API doc publishing sites is interactivity with API calls. [Swagger UI](https://swagger.io/tools/swagger-ui/), [Readme.io](https://readme.io/), [Apiary](https://apiary.io/), and many other platforms allow you to try out calls and see responses directly in the browser.
 
 For APIs not on these platforms, wiring up an API Explorer is often done by engineers. Since you already have the API functionality to make calls and receive responses, creating an API Explorer is not usually a difficult task for a UI developer. You're just creating a form to populate the endpoint's parameters and printing the response to the page.
 
@@ -245,11 +245,11 @@ However, API Explorers tend to work better with simpler APIs. If your API requir
 
 If your users log in, you can store their API keys and dynamically populate the calls and code samples with API keys. The API key can most likely be a variable that stores the user's API key. This is a feature provided with sites like [Readme.io](pubapis_headless_cms.html#readmeio).
 
-However, if you store customer API keys on your site, this might create authentication and login requirements that make your site more complex to create. If you have users logging in and dynamically populating the explorer with their API keys, you'll probably need a front-end designer and web developer to create this experience.
+However, if you store customer API keys on your site, this might create authentication and login requirements that make your site more complex to create. If your creating this experience in a custom way, you'll probably need the help of a front-end designer and web developer.
 
 ## Some non-patterns in API doc sites
 
-Finally, I'd like to briefly mention some non-patterns in API documentation. In the [Survey of API doc sites](pubapis_apilist.html), you rarely see any of the following:
+Finally, I'd like to briefly mention some non-patterns in API documentation. With many API documentation sites, you rarely see any of the following:
 
 * Video tutorials
 * PDFs
@@ -257,4 +257,4 @@ Finally, I'd like to briefly mention some non-patterns in API documentation. In 
 * Localization
 * Single sourced outputs for different roles
 
-By non-patterns, it's not to say these elements aren't a good idea. But generally they aren't emphasized as primary requirements in API documentation. If you get pressure to provide these outputs as part of your documentation requirements, look around to see how other API doc sites deliver it. Their frequent omission might inform your own decision and provide some support to make a case for or against the requirement.
+These might even be considered "non-patterns" in API doc sites. By non-patterns, I'm not saying these elements aren't a good idea, but generally they aren't emphasized as primary requirements in API documentation. If you get pressure to provide these outputs as part of your documentation requirements, look around to see how other API doc sites deliver it. Their frequent omission might inform your own decision and provide some support to make a case for or against the requirement.

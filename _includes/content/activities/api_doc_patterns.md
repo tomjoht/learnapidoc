@@ -1,6 +1,6 @@
 ## <i class="fa fa-user-circle"></i> Activity: Look for common patterns in API doc sites
 
-In this activity, you'll identify common patterns in API documentation sites.
+In this activity, identify common patterns in API documentation sites.
 
 1.  Go the list of [100+ API documentation sites](pubapis_apilist.html#list_api_doc_sites).
 2.  Select about 5 different APIs (choose any of those listed on the page).
@@ -21,7 +21,7 @@ In this activity, you'll identify common patterns in API documentation sites.
     * Commenting features
     * Multiple outputs by role
 
-5.  Make some notes in an API log or journal of some kind.
+5.  Make some notes in an API log or journal (or share them in the comments below).
 
 In the next section, we'll look at [Design patterns with API doc sites](pubapis_design_patterns.html). From your notes, look to see if the patterns I highlight match the ones you observed in the API doc sites you analyzed.
 

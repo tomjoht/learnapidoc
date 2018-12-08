@@ -8,7 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-Rather than approach the topic of publishing prescriptively, we're going to begin with some concrete examples and move towards the formulation of general principles. The following are more than 100 openly accessible REST APIs that you can browse as a way to look at patterns and examples. You can find many more APIs by browsing [programmableweb.com](http://programmableweb.com).
+Rather than approach the topic of publishing prescriptively, lets begin with some concrete examples and move towards the formulation of general principles. The following are more than 100 openly accessible REST APIs that you can browse as a way to look at patterns and examples. You can find many more APIs by browsing [programmableweb.com](http://programmableweb.com).
 
 * TOC
 {:toc}
