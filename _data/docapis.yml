@@ -125,28 +125,28 @@ folders:
   - title: "OpenAPI tutorial overview"
     jurl: /pubapis_openapi_tutorial_overview.html
 
-  - title: "Step 1: The openapi object (OpenAPI tutorial)"
+  - title: "Step 1: The openapi object"
     jurl: /pubapis_openapi_step1_openapi_object.html
 
-  - title: "Step 2: The info object (OpenAPI tutorial)"
+  - title: "Step 2: The info object"
     jurl: /pubapis_openapi_step2_info_object.html
 
-  - title: "Step 3: The servers object (OpenAPI tutorial)"
+  - title: "Step 3: The servers object"
     jurl: /pubapis_openapi_step3_servers_object.html
 
-  - title: "Step 4: The paths object (OpenAPI tutorial)"
+  - title: "Step 4: The paths object"
     jurl: /pubapis_openapi_step4_paths_object.html
 
-  - title: "Step 5: The components object (OpenAPI tutorial)"
+  - title: "Step 5: The components object"
     jurl: /pubapis_openapi_step5_components_object.html
 
-  - title: "Step 6: security object (OpenAPI tutorial)"
+  - title: "Step 6: security object"
     jurl: /pubapis_openapi_step6_security_object.html
 
-  - title: "Step 7: The tags object (OpenAPI tutorial)"
+  - title: "Step 7: The tags object"
     jurl: /pubapis_openapi_step7_tags_object.html
 
-  - title: "Step 8: The externalDocs object (OpenAPI tutorial)"
+  - title: "Step 8: The externalDocs object"
     jurl: /pubapis_openapi_step8_externaldocs_object.html
 
   - title: "Activity: Create an OpenAPI specification document"

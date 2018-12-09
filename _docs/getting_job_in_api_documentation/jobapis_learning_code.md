@@ -19,7 +19,7 @@ With developer documentation roles, some level of coding is required. But you do
 
 When faced with these multi-language documentation challenges, hiring managers often search for technical writers who are former programmers to do the tasks. There are a good number of technical writers who were once programmers, and they can command more respect and competition for these developer documentation jobs.
 
-But even developers will not know more than a few languages. Finding a technical writer who commands a high degree of English language fluency in addition to possessing a deep technical knowledge of Java, Python, C++, .NET, Ruby, in addition to mastering docs tools to facilitate the authoring/publishing process from beginning to end is like finding a unicorn. (In other words, these technical writers don't really exist.)
+But even developers will not know more than a few languages. Finding a technical writer who commands a high degree of English language fluency in addition to possessing a deep technical knowledge of Java, Python, C++, .NET, Ruby, in addition to mastering [docs tools](pubapis_docs_as_code.html) to facilitate the authoring/publishing process from beginning to end is like finding a unicorn. (In other words, these technical writers don't really exist.)
 
 If you find one of these technical writers, the person is likely making a small fortune in contracting rates and has a near limitless choice of jobs. Companies often list knowledge of multiple programming languages as a requirement, but they realize they'll never find a candidate who is both a William Shakespeare and a Steve Wozniak.
 
@@ -29,7 +29,7 @@ This mental transformation is both good and bad &mdash; good because other engin
 
 ## Writers who learned programming  
 
-When looking for candidates, would you rather hire a writer who learned programming, or a programmer who learned writing? There are pros and cons to each approach. Let's first examine writers who learn programming, and then in the next section I'll look at the reverse: programmers who learned writing.
+When looking for candidates, would you rather hire a writer who learned programming, or a programmer who learned writing? There are pros and cons to each approach. Let's first examine writers who learn programming, and then in the next section look at the reverse: programmers who learned writing.
 
 In [Enough to Be Dangerous: The Joy of Bad Python](http://hackwrite.com/posts/enough-to-be-dangerous/), Adam Wood argues that tech writers don't need to be expert coders, on par with developers. Learning to code badly (such as is usually the case with writers who learn to code) is often enough to perform the tasks needed for documentation. As such, Wood aligns more with the camp of writers who learned programming. Wood writes:
 
@@ -57,7 +57,7 @@ Additionally, while engineers can fill in the deep technical knowledge needed, n
 
 ## Programmers who learned writing
 
-Now let's flip to the other side of the argument. What are the advantages of hiring programmers who learned writing? In contrast to Wood and Rhea, [James Neiman](http://drjamesneiman.com/), an experienced API technical writer, says that tech writers need engineering backgrounds, such as a computer science degree or previous experience as an engineer to excel in API documentation roles.
+Now let's flip to the other side of the argument. What are the advantages of hiring programmers who learned writing? In contrast to Wood and Rhea, [James Neiman](http://drjamesneiman.com/), an experienced API technical writer, says that tech writers need engineering backgrounds, such as a computer science degree or previous experience as an engineer, to excel in API documentation roles.
 
 Neiman says tech writers often need to look over a developer's shoulder, watching the developer code, or listen to an engineer's brief 15-minute explanation, and then return to their desks to create the documentation. You might need to take the code examples in Java and produce equivalent samples in another language, such as C++, all on your own. In Neiman's view, API technical writers need more technical depth to excel in this role.
 
@@ -89,9 +89,9 @@ Here's a transcript of two questions in their exchange (cleaned up a bit for rea
 
 Keep in mind that Davis and Neiman are trying to persuade more European countries to use Synergistech as their recruiting agency to find and hire API tech writers, so they're presenting the need for engineering-savvy tech writers (which are harder to find; hence the need for expert recruiters). Regardless of the agenda, Neiman and Davis argue for a higher level of coding proficiency than Wood or Rhea.
 
-The level of coding knowledge required no doubt depends on the position, environment, and expectations at your company. Perhaps if the tech writer doesn't have more of an engineering background, engineers will simply send the tech writer code snippets to paste into the docs. But without the technical acumen to fully understand, test, and integrate the code in meaningful ways, the tech writer will be at the mercy of engineers and their terse explanations or cryptic inline comments. The tech writer's role will be reduced to being an editor/publisher instead of a writer.
+The level of coding knowledge required no doubt depends on the position, environment, and expectations at your company. Perhaps if the tech writer doesn't have more of an engineering background, engineers will simply send the tech writer [code snippets](docapis_codesamples_bestpractices.html) to paste into the docs. But without the technical acumen to fully understand, test, and integrate the code in meaningful ways, the tech writer will be at the mercy of engineers and their terse explanations or cryptic inline comments. The tech writer's role will be reduced to being an editor/publisher instead of a writer.
 
-In my experience, Neiman's explanation about developers instructing tech writers to go create similar code in other languages (based on a 15-minute over-the-shoulder conversation at the engineer's desk) goes too far. Although I've created simple JavaScript code samples (based on a pattern the engineer's showed me), I've never been asked to create code samples across other languages. I could auto-generate code snippets for web API requests (using Postman), but to develop code across myriad other languages tends to be more of the programmer's responsibility, not the tech writer's. Then again, maybe Neiman's role as a consultant and his background in engineering allows him to perform tasks that I cannot (and because I cannot, I have not been asked to).
+In my experience, Neiman's explanation about developers instructing tech writers to go create similar code in other languages (based on a 15-minute over-the-shoulder conversation at the engineer's desk) goes too far. Although I've created simple JavaScript code samples (based on a pattern the engineer's showed me), I've never been asked to create code samples across other languages. I could auto-generate code snippets for web API requests (using Postman), but to develop code across myriad other languages tends to be more of the programmer's responsibility, not the tech writer's.
 
 {% include random_ad.html %}
 
@@ -107,11 +107,14 @@ For example, recently I was working with an engineering team on a new voice feat
 
 I wasn't directly embedded with the team, nor was I a dedicated resource for the team. In this role, I simply acted as editor and publisher. But I had to turn around the gibberish they wrote at a rapid rate, usually in 1-2 hours. As this project was one of many I was juggling, I had to quickly restructure and rewrite the content (sometimes touching every sentence) to make it read like a native speaker had written it rather than engineers in India. During this same time, I was working on rewriting our team website and other writing projects.
 
-I have a tech writing colleague who is a former engineer, and I often wonder if he has the same writing skills to edit this content with the same speed and efficiency that I do. Of course, I shouldn't make judgments, but I'm pretty good at both writing and editing. After all, look at the output on my blog. In just a couple of hours during the evening, I can write a post that is worth reading in the morning. Can engineers who lack writing backgrounds do this? If tech writers are increasingly playing publishing/editing roles instead of developing content directly (because the content is so highly technical, only specialists can create it), then shouldn't companies prioritize writing abilities over (waning) technical abilities?
+I have a tech writing colleague who is a former engineer, and I often wonder if he has the same writing skills to edit this content with the same speed and efficiency that I do. Of course, I shouldn't make judgments, but I'm pretty good at both writing and editing. After all, look at the output on my blog. In just a couple of hours during the evening, I can write a post that is worth reading in the morning. Can engineers who lack writing backgrounds do this? If tech writers are increasingly playing publishing/editing roles instead of developing content directly (because the content is so highly technical, only specialists can create it), then shouldn't companies prioritize writing abilities over technical abilities (to an extent)?
 
-Further, companies who assume that "everyone can write" fail to distinguish the different levels of writing. It's one thing to write coherent sentences in a paragraph or even single topic, but can the *writer* read over 20 pages in a documentation system and ensure consistency across all the topics? Can the writer weave together workflows and journeys across these larger systems? Can they distill information from a long, complicated process into an intelligible quick reference guide? Writing skills fall along a spectrum, and while most professionals appear somewhere on the spectrum, their skills might not be enough to excel in ways that provide deeper value for documentation.
+Further, companies who assume that "everyone can write" fail to distinguish the different levels of writing. It's one thing to write coherent sentences in a paragraph or even single topic, but can the *writer* read over 20 pages in a documentation system and ensure consistency across all the topics? Can the writer weave together workflows and journeys across these larger systems? Can the writer distill information from a long, complicated process into an intelligible quick reference guide? Writing skills fall along a spectrum, and while most professionals appear somewhere on the spectrum, their skills might not be enough to excel in ways that provide deeper value for documentation.
 
-Overall, technical writers of all stripes are playing generalist roles in increasing ways, and in these generalist roles, strong writing skills rather than specialized knowledge might be more important. Then again, a combination of the two skills tends to be a knockout punch in the job market.
+Overall, technical writers of all stripes are playing generalist roles in increasing ways, and in these generalist roles, strong writing skills rather than specialized knowledge might be more important. A combination of the two skills &mdash; writing and technical expertise &mdash; tends to be a knockout punch in the job market.
+
+{: .tip}
+For an in-depth analysis about the dilemma between being a generalist or specialist, see my essay [Be both a generalist and specialist through your technical acuity](https://idratherbewriting.com/simplifying-complexity/both-a-generalist-and-specialist-through-technical-acuity.html) in my Simplifying Complexity series.
 
 ## Wide, not deep understanding of programming
 
@@ -133,7 +136,8 @@ Of course, you'll need to find a lot of time for this as well. Don't expect to h
 
 Suppose you find yourself deep in APIs that require you to know a lot more technical detail than you currently do (despite your programs of study to learn more)? How can you get by without a deeper knowledge of programming?
 
-Keep in mind that your level of involvement with editing, publishing, and authoring depends on your level of tech knowledge. If you have a strong knowledge of the tech, you can author
+Keep in mind that your level of involvement with editing, publishing, and authoring depends on your level of tech knowledge. If you have a strong knowledge of the tech, you can author, edit, and publish. If you have weak tech knowledge, your role might just involve publishing only. The following spectrum diagram illustrates this range of involvement:
+
 {% include course_image.html size="large" border="true" filename="techknowledge" ext_print="png" ext_web="svg" alt="The degree to which you can publish, edit, or author depends on your level of tech knowledge" caption="The degree to which you can publish, edit, or author depends on your level of tech knowledge" %}
 
 If you're stuck in the publishing/editing area, you can interview engineers at length about what's going on in the code (even record these discussions &mdash; Evernote has a nifty recording feature built-in that I've used multiple times for just this purpose), and then try your best to describe the actions in as clear speech as possible. You can always fall back on the idea that for those users who need Python, the Python code should look somewhat familiar to them. Well-written code should be, in some sense, self-descriptive in what it's doing. Unless there's something odd or non-standard in the approach, engineers fluent in code should be able to get a sense of how the code works.
@@ -162,23 +166,23 @@ The truth is that you can learn anything, but it may take a long time to do so. 
 
 The difficulty of learning programming is probably the most strenuous aspect of API documentation. How much programming do you need to know? How much time do you spend learning to code? How much priority should you spend on learning technology?
 
-For example, do you dedicate 2 hours a day to simply learning to code in the particular language of the product you're documenting? Should you carve this time out of your employer's time, or your own, or both? How do you get other doc work done, given that meetings and miscellaneous tasks usually eat up another 2 hours of work time? What strategies should you implement to actually learn code in a way that sticks? What if what you're learning has little connection or relevance with the code you're documenting?
+For example, do you dedicate 2 hours a day to simply learning to code in the particular language of the product you're documenting? Should you carve this time out of your employer's time, or your own, or both? How do you get other doc work done, given that meetings and miscellaneous tasks usually eat up another 2 hours of work time? What strategies should you implement to actually learn code in a way that sticks? What if what your learning has little connection or relevance with the code you're documenting?
 
 In a post called [Strategies for learning technology -- podcast recommendation and a poll](https://idratherbewriting.com/2018/08/10/how-much-time-devoted-to-learning-tech-is-needed/), I linked to a 10-minute Tech Comm podcast with [Amruta Ranade on Learning New Technology](https://www.stitcher.com/podcast/uah-technical-writing/10minute-tech-comm/e/supersized-holiday-spectacular-41636141) and then polled readers to learn a little about their tech learning habits. In the [reader responses](https://www.questionpro.com/t/PEGKEZcj57), most indicated that they *should* spend 30-60 minutes each day learning technology, but most spend between 0-20 min actually doing so. To learn, they use general Google searches. They mostly devote this time to learning tech at work, though some split the time between work at home.
 
-Personally, I think spending 20 minutes a day isn't enough to keep up with the knowledge needs. 60 minutes is more appropriate, but really, if you want to make progress, you'll need to devote about twice this time. Finding 1-2 hours of time at work to learn it is unlikely. I always feel like I'm not getting enough done as is during work hours &mdash; learning technology often feels like a side activity taking me away from my real duties. The information I need to document in the present moment is usually too advanced to simply learn from watching tutorials on Safaribooks or other sources. But I can't just start out consuming advanced material. I have to ramp up through the foundational topics first, and that slow ramp-up feels like a tangent to the real work that needs to get done. And yet, I have a busy home life as well (4 daughters, all at home!), so I have to find time between work and home to get some learning done. (Did I also mention that I blog a lot?)
+Personally, I think spending 20 minutes a day isn't enough to keep up with the knowledge needs. 60 minutes is more appropriate, but really, if you want to make progress, you'll need to devote about twice this time. Finding 1-2 hours of time at work to learn it is unlikely. I always feel like I'm not getting enough done as is during work hours &mdash; learning technology often feels like a side activity taking me away from my real duties. The information I need to document in the present moment is usually too advanced to simply learn from watching tutorials on Safaribooks or other sources. But I can't just start out consuming advanced material. I have to ramp up through the foundational topics first, and that slow ramp-up feels like a tangent to the real work that needs to get done. And yet, I have a busy home life as well (4 daughters, all at home!), so I have to find time between work and home to get some learning done. (Did I also mention that I blog a lot, and play basketball too?)
 
 One strategy I've found to work well is to divide the learning into "pomodoros" (a technique named after tomato kitchen timers). With the [Pomodoro Technique](https://francescocirillo.com/pages/pomodoro-technique), you set a timer for 20 minutes and focus on your learning task for that chunk of time. You can set a goal to complete as many pomodoros a day as you want. After about 1-2 months of these regular pomodoros, you'll be surprised at your progress.
 
-<{% include course_image.html  size="large" filename="techpomodoro" ext_print="png" ext_web="png" alt="The Focus app lets you define and track pomdoros" caption="The Focus app lets you define and track pomdoros" %}
+{% include course_image.html  size="large" url="https://itunes.apple.com/us/app/focus-time-manager/id777233759?mt=12" filename="techpomodoro" ext_print="png" ext_web="png" alt="The Focus app lets you define and track pomdoros" caption="The Focus app lets you define and track pomdoros" %}
 
-Even so, this technique doesn't solve the problem. It's still hard to squeeze time in for the pomodoros. Whenever I squeeze these into my life, I end up squeezing other activities out.
+Even so, this technique for focus doesn't solve the problem. It's still hard to squeeze time in for the pomodoros. Whenever I squeeze these into my life, I end up squeezing other activities out.
 
 There are a lot of questions about just how to learn code, and I don't have all the answers. But here's what I know:
 
 *  Developer documentation requires familiarity with code, though exactly how much expertise you need is debatable.
-*  You have to understand explanations from engineers, including the terms used. These explanations should focus on the *why* more than the *how*.
-*  You should be able to test code from engineers in order to identify assumptions that engineers are often blind to.
+*  You have to understand explanations from engineers, including the [terms used](docapis_glossary_section.html). These explanations should focus on the *why* more than the *how*.
+*  You should be able to [test code](testingdocs_overview.html) from engineers in order to identify assumptions that engineers are often blind to.
 *  To thrive in an API documentation career, you have to incorporate a regiment of continual learning.
 
 ## Is being a generalist disappointing from a career standpoint?
@@ -191,9 +195,9 @@ It might seem depressing to realize that your coding knowledge will usually be k
 
 However, take consolation in the fact that your job is not to code but rather to create awesome *documentation*. Creating awesome documentation isn't just about knowing code. There are a hundred other details that factor into the creation of good documentation. As long as you set your goals on creating great documentation, not just on learning to code, you won't feel entirely disappointed in being a bad coder.
 
-This direction doesn't address all the issues, but it does provide some consolation at the end of the day.
-
-For more information about working with code, see these two topics:
+This direction doesn't address all the issues, but it does provide some consolation at the end of the day. For more information about working with code, see these two topics:
 
 * [SDKs and sample apps](docapis_sdks_and_sample_apps.html)
 * [Code samples and tutorials](docapis_codesamples_bestpractices.html)
+
+Let's look at one more topic in this jobs section: [Locations for API doc writer jobs](jobapis_location.html).
