@@ -74,6 +74,8 @@ See the following for more information on finding an open-source project:
 * [How to choose (and contribute to) your first open source project](https://github.com/collections/choosing-projects)
 * [Contribute to open-source projects through documentation](https://mapzen.com/blog/open-source-docs/)
 
+For a tutorial on pull requests workflows with GitHub projects, see [Pull request workflows through GitHub](pubapis_github_pull_requests.html).
+
 ## Next steps
 
 After you find an open-source project, go to the next activity: [Evaluate API reference docs for core elements](docapis_api_reference_activity.html).

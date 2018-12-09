@@ -8,9 +8,9 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-Static site generators handle content development, but not hosting and deployment. For this, you have another category of tools to consider. I call this category of tools "hosting and deployment options."
+[Static site generators](pubapis_static_site_generators.html) handle content development, but not hosting and deployment. For this, you need another category of tools. I call this category of tools "hosting and deployment options."
 
-Theoretically, you could publish a static website on any web server (e.g., AWS S3, Bluehost, and more). But continuous delivery hosting platforms do something more &mdash; they automatically build your output when you commit a change to a repo. These platforms often read content stored on GitHub, sync it to their platform, and initiate build and publishing processes when they detect a change in a particular branch (such as gamma or prod).
+Theoretically, you could publish a static website on any web server (e.g., AWS S3, Bluehost, and more). But continuous delivery hosting platforms do something more: They automatically build your output when you commit a change to a repo. The whole build process takes place entirely on the server.
 
 Hosting and deployment platforms usually offer a number of additional features beyond simple web hosting, such as SSL, CDNs, minification, authentication, backup/redundancy, and more. These platforms often integrate with specific static site generators as well (which is one reason I limited my earlier discussions to Jekyll, Hugo, and Sphinx).
 
@@ -21,19 +21,15 @@ Hosting and deployment platforms usually offer a number of additional features b
 
 [GitHub Pages](https://pages.github.com/) provides a free hosting and deployment option for Jekyll projects. If you upload a Jekyll project to a GitHub repository, you can indicate that it's a Jekyll project in your GitHub repo's Settings, and GitHub will automatically build it when you commit to your repo. This feature &mdash; building Jekyll projects directly from your GitHub repo &mdash; is referred to as GitHub Pages.
 
-Quite a few doc sites use GitHub and Jekyll. For example, [Bootstrap](https://getbootstrap.com/) uses it:
-
-{% include course_image.html url="https://pages.github.com/" filename="githubpagesscreenshot" ext_print="png" ext_web="png" alt="GitHub Pages integration with GitHub repositories" caption="GitHub Pages integration with GitHub repositories" %}
-
 In your GitHub repo, click **Settings** and scroll down to **GitHub Pages**. This is where you activate GitHub Pages for your project.
 
-<figure><img src="images/githubpagesconfigurationsettings.png"/><figcaption>Every GitHub repository is potentially a Jekyll project that you can auto-build when you commit to it.</figcaption></figure>
+{% include course_image.html url="https://pages.github.com/" filename="githubpagesscreenshot" ext_print="png" ext_web="png" alt="GitHub Pages integration with GitHub repositories" caption="Every GitHub repository is potentially a Jekyll project that you can auto-build when you commit to it." %}
 
 The tight integration of Jekyll with GitHub makes for a compelling argument to use a Jekyll-GitHub solution. For the most part, GitHub is the dominant platform for open source projects. If you're already using GitHub, it makes sense to choose a static site generator that integrates into the same platform to build your docs.
 
 GitHub Pages is free but does have some limitations in scope:
 
-> * GitHub Pages source repositories have a recommended limit of 1GB .
+> * GitHub Pages source repositories have a recommended limit of 1GB.
 > * Published GitHub Pages sites may be no larger than 1 GB.
 > * GitHub Pages sites have a soft bandwidth limit of 100GB per month.
 > * GitHub Pages sites have a soft limit of 10 builds per hour. (See [Usage Limits](https://help.github.com/articles/what-is-github-pages/))
@@ -41,7 +37,7 @@ GitHub Pages is free but does have some limitations in scope:
 Unlike with other hosting and deployment platforms, GitHub Pages doesn't offer a commercial version that expands these limits. You can learn more about [GitHub Pages here](https://help.github.com/categories/github-pages-basics/).
 
 {: .note}
-I build this site and [my blog](https://idratherbewriting.com) using Jekyll and GitHub Pages. They are actually separate Jekyll projects and repos. My blog is in a GitHub repo called [tomjoht.github.io](https://github.com/tomjoht/tomjoht.github.io), named after my GitHub user name but published using a custom domain idratherbewriting.com. (Without the custom domain, it would be available at http://tomjoht.github.com.) The API doc site is in a repo called [learnapidoc](https://github.com/tomjoht/learnapidoc). It's available by default at https://idratherbewriting.com/learnapidoc. They seem like the same site, but they are actually separate projects in separate repos. The fact that each repo is simply available in a subdirectory like this off of my main domain is pretty cool.
+I build this site and [my blog](https://idratherbewriting.com) using Jekyll and GitHub Pages. They are actually separate Jekyll projects and repos. My blog is in a GitHub repo called [`tomjoht.github.io`](https://github.com/tomjoht/tomjoht.github.io), named after my GitHub user name but published using a custom domain `idratherbewriting.com`. (Without the custom domain, it would be available at `http://tomjoht.github.com`.) The API doc site is in a repo called [learnapidoc](https://github.com/tomjoht/learnapidoc). It's available by default at `https://idratherbewriting.com/learnapidoc`. They seem like the same site, but they are actually separate projects in separate repos. The fact that each repo is simply available in a subdirectory like this off of my main domain is pretty cool.
 
 ## CloudCannon {#cloudcannon}
 
@@ -56,13 +52,16 @@ Suppose you want to use Jekyll and GitHub, but you're frustrated by GitHub's lim
 
 The founders of CloudCannon are experts with Jekyll and have designed the platform specifically for Jekyll projects. They also created a [host of Jekyll tutorials](https://learn.cloudcannon.com/) to enrich developer knowledge.
 
+{: .tip}
+For a tutorial on setting up Jekyll on CloudCannon, see [Jekyll and CloudCannon continuous deployment tutorial](pubapis_jekyll.html).
+
 ## Read the Docs {#readthedocs}
 
 Read the Docs is an online hosting and deployment platform that can read Sphinx projects (from a public repository such as GitHub or Bitbucket) and automatically build the web output. In other words, it is a "continuous documentation platform for Sphinx" (see [An introduction to Sphinx and Read the Docs for Technical Writers](http://ericholscher.com/blog/2016/jul/1/sphinx-and-rtd-for-writers/)).
 
 The introduction on the [Read the Docs homepage](https://readthedocs.org/) describes the platform as follows:
 
-> Read the Docs hosts documentation, making it fully searchable and easy to find. You can import your docs using any major version control system, including Mercurial, Git, Subversion, and Bazaar. We support webhooks so your docs get built when you commit code. There's also support for versioning so you can build docs from tags and branches of your code in your repository.
+> We will host your documentation for free forever. There are no tricks. We help 94,898 open source projects share their docs. ... Whenever you push code to your favorite version control system, whether that is Git, Mercurial, Bazaar, or Subversion, we will automatically build your docs so your code and documentation are never out of sync.
 
 Read the Docs provides both an open-source, free version ([readthedocs.org](https://readthedocs.org/)) and a commercial version ([readthedocs.com](https://readthedocs.com/)). This allows you to level-up your project when your needs mature but also doesn't lock you into a paid solution when you're not ready for it.
 
@@ -86,7 +85,7 @@ To learn more about the platform, read through the [Read the Docs guide](https:/
 
 The Read the Docs platform was co-founded by [Eric Holscher](http://ericholscher.com/), the same co-founder of [Write the Docs](http://www.writethedocs.org/). Write the Docs was originally intended as a conference for the Read the Docs community but evolved into a more general conference focused on technical communication for software projects. If you go to a Write the Docs conference, you'll find that sessions focus more on best practices for documentation rather than discussions about tools. (You can read my post, [Impressions from the Write the Docs Conference](https://idratherbewriting.com/2017/05/23/write-the-docs-and-the-battle-against-vendor-evil/) or listen to this [Write the Docs podcast with the co-founders](https://idratherbewriting.com/2017/12/14/write-the-docs-founding-ideas-and-principles-podcast/) for more details.)
 
-Read the Docs has an impressive number of users. The platform has thousands of projects and receives millions of page views a month across these projects. In 2016, Read the Docs had more than 50,000 projects and received 252 million page views and 56 million unique visitors). You can [view their stats here](http://blog.readthedocs.com/read-the-docs-2016-stats/). Read the Docs is one of the most visited sites on the web and continues to grow at an impressive rate.
+Read the Docs has an impressive number of users. The platform has thousands of projects and receives millions of page views a month across these projects. In 2016, Read the Docs had more than 77,000 projects and received 338 million page views and 75 million unique visitors). You can [view their 2017 stats here](http://blog.readthedocs.com/read-the-docs-2017-stats/). Read the Docs is one of the most visited sites on the web and continues to grow at an impressive rate.
 
 ## Netlify {#netlify}
 
@@ -100,10 +99,14 @@ The most impressive example of a Netlify-hosted site is [Smashing Magazine](http
 
 Other notable doc sites using Netlify include [Docker](https://docs.docker.com/), [Kubernetes](https://kubernetes.io/docs/home/), [React](https://reactjs.org/docs/hello-world.html), [Yarn](https://yarnpkg.com/lang/en/docs/), [Lodash](https://lodash.com/docs/), [Gatsby](https://www.gatsbyjs.org/docs/), and [Hugo](https://gohugo.io/documentation/).
 
-Complementing Netlify is [Netlify CMS](pubapis_headless_cms.html#netlifycms), a headless CMS for your content (which I discuss in more detail later on).
+Complementing Netlify is [Netlify CMS](pubapis_headless_cms.html#netlifycms), a headless CMS for your content (which I discuss in more detail in [Headless CMS options (and Readme.io)](pubapis_headless_cms.html)).
 
 ## Aerobatic {#aerobatic}
 
 [Aerobatic](https://www.aerobatic.com/) is similar to Netlify in that it builds and publishes your static site. Aerobatic gives you a robust publishing engine that includes a CDN, SSL, continuous delivery, a deployment CLI, password protection, and more. Aerobatic can publish a number of static site generators, including Jekyll, Hugo, Hexo, and more. Aerobatic says,
 
 > Aerobatic is a specialized platform for efficient delivery of static webpages and website assets. We take care of the configuration details for you that provide the best balance of performance and maintainability. Stop fiddling with CDNs and web server configs and focus on coding great front-end experiences. &mdash; [Static website serving](https://www.aerobatic.com/docs/static-serving/)
+
+Overall, there are many options for hosting and deploying your site. GitHub Pages, CloudCannon, Read the Docs, Netlify, and Aerobatic are just a few. You can also probably explore custom-built hosting and deployment options available through your company's existing infrastructure.
+
+There's one more category of tools to consider: [Headless CMS options (and Readme.io)](pubapis_headless_cms.html). The headless CMS often combines the authoring and deployment solution together, so the class of tools is closely related to the ones mentioned here, but I've separated out the category anyway.

@@ -3,7 +3,7 @@ title: "Pull request workflows through GitHub"
 permalink: /pubapis_github_pull_requests.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.91
+weight: 8.53
 section: publishingapis
 path1: /publishingapis.html
 ---
@@ -24,13 +24,13 @@ Although you can perform these operations using Git commands from your terminal,
 
 To make edits in a separate branch on GitHub:
 
-1. Pretend you're a sme-reviewer. Go to the same GitHub repo you created earlier (or create a new repo). Create a new branch by selecting the branch drop-down menu and typing a new branch name, such as "sme-review." Then press your **Enter** key.
+1. Pretend you're a SME reviewer. Go to the same GitHub repo you created in an [earlier tutorial](pubapis_github_desktop_client.html) (or create a new repo). Create a new branch by selecting the branch drop-down menu and typing a new branch name, such as "sme-review." Then press your **Enter** key.
 
    {% include course_image.html size="large" filename="github_sme_review" ext_print="png" ext_web="png" alt="Creating a new branch" caption="Creating a new branch" %}
 
 	 When you create a new branch, the content from the master (or whatever branch you're currently viewing) is copied over into the new branch. The branch is like doing a "Save as" with an existing document.
 
-2. Click a file, and then click the pencil icon <img src="images/github-pencil-icon.png" alt="Edit this file"/> ("Edit this file") to edit the file.
+2. Click a file, and then click the pencil icon ("Edit this file") to edit the file.
 
    {% include course_image.html size="large" filename="github_making_branch_edits" ext_print="png" ext_web="png" alt="Making an edit" caption="Making an edit" %}
 
@@ -40,7 +40,7 @@ To make edits in a separate branch on GitHub:
 
 ## Create a pull request
 
-Now that the review process is complete, it's time to merge the branch into the master. You merge the branch into the master through a pull request. Any "collaborator" on the team with write access can initiate and complete the pull request. You can add collaborators through Settings > Collaborators.
+Now let's suppose that the review process is complete, and it's time to merge the branch into the master. You merge the branch into the master through a pull request. Any "collaborator" on the team with write access can initiate and complete the pull request (you can add collaborators through Settings > Collaborators).
 
 To create a pull request:
 
@@ -51,7 +51,7 @@ To create a pull request:
 
 3. Select the branch ("sme-review") that you want to compare against the master.
 
-   {% include course_image.html size="large" filename="github_compare_to" ext_print="png" ext_web="png" alt="Compare to" caption="Compare to" %}
+   {% include course_image.html size="large" filename="github_compare_to" ext_print="png" ext_web="png" alt="Compare to option" caption="Compare to option looks to see if the branches can be merged" %}
 
 	 When you compare the branch against the master, you can see a list of all the changes. You can view the changes through two viewing modes: Unified or Split (these are tabs shown on the right of the content). Unified shows the edits together in the same content area, whereas split shows the two files side by side.
 
@@ -72,7 +72,7 @@ Now pretend you are the project owner, and you see that you received a new pull 
    {% include course_image.html size="large" filename="github_files_changed" ext_print="png" ext_web="png" alt="Github files changed" caption="Github files changed" %}
 
 	 {: .note}
-   If you only want to implement some of the edits, go into the sme-review branch and make the updates before processing the pull request. The pull request doesn't give you a line-by-line option about which changes you want to accept or reject (like in Microsoft Word's Track Changes). Merging pull requests is an all-or-nothing process. You can also click **Review changes** and select the **Request changes** option, asking the reviewer to make the changes.
+   If you only want to implement some of the edits, go into the sme-review branch and make the updates before processing the pull request. The pull request doesn't give you a line-by-line option about which changes you want to accept or reject (like in Microsoft Word's Track Changes). Merging pull requests is an all-or-nothing process. You can also click **Review changes**, add some comments, and then select the **Request changes** radio button, asking the reviewer to make the changes.
 
 	 Note also that if the pull request is made against an older version of the master, such that the master's original content no longer exists or has moved elsewhere, the merges will be more difficult to make.
 

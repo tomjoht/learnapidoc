@@ -133,6 +133,9 @@ Now let's merge the development branch into the master using a pull request work
 
     Now check your files and notice that the updates that were originally in the development branch now appear in master.
 
+{: .note}
+For a more detailed tutorial in making pull requests using the GitHub interface, see [Pull request workflows through GitHub](pubapis_github_pull_requests.html). I include an extensive tutorial with pull requests because it will likely be a common workflow if you are [contributing to an open-source project](docapis_find_open_source_project.html).
+
 {% include random_ad2.html %}
 
 ## Managing merge conflicts

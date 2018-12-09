@@ -8,7 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-Static site generators are a breed of website compilers that package up a group of files (usually written in Markdown) and make them into a fully deployable website. There are more than 350 different static site generators. You can browse them at [staticgen.com](http://www.staticgen.com/). One of the most popular static site generators (based on number of downloads, usage, and community) is [Jekyll](https://jekyllrb.com/), and it's the one I have the most experience with, so I'll be focusing on Jekyll here, particularly how you can integrate Jekyll with CloudCannon for a continuous delivery publishing solution.
+[Static site generators](pubapis_static_site_generators.html) are a breed of website compilers that package up a group of files (usually [written in Markdown](pubapis_markdown.html)) and make them into a fully deployable website. One of the most popular static site generators (based on number of downloads, usage, and community) is [Jekyll](https://jekyllrb.com/), and it's the one I have the most experience with, so I'll be focusing on Jekyll here, particularly how you can integrate Jekyll with CloudCannon for a continuous delivery publishing solution.
 
 * TOC
 {:toc}
@@ -19,7 +19,7 @@ Jekyll is a Ruby-based [static site generator](pubapis_static_site_generators.ht
 
 {% include random_ad2.html %}
 
-Here's a documentation theme that I developed for Jekyll:
+Here's a [documentation theme](https://idratherbewriting.com/documentation-theme-jekyll/) that I developed for Jekyll:
 
 <a href="https://idratherbewriting.com/documentation-theme-jekyll/" class="noExtIcon"><img src="images/jekylldocumentationtheme.png" size="large" alt="My Jekyll Documentation theme" /></a>
 
@@ -77,7 +77,7 @@ Admittedly, the Markdown format is easy to use but also susceptible to error, es
 
 You can integrate Jekyll into platforms such as GitHub Pages or CloudCannon to create continuous delivery publishing. Continuous delivery means that when you commit a change to your Git repo, the server automatically rebuilds your Jekyll site.
 
-[GitHub Pages](pubapis_hosting_and_deployment.html#github_pages) is free and is what I use for my blog and this API docs site. But CloudCannon provides more features that might be needed by the enterprise. So let's follow an example in publishing in [CloudCannon](https://cloudcannon.com/), which calls itself as the "The Cloud CMS for Jekyll."
+[GitHub Pages](pubapis_hosting_and_deployment.html#github_pages) is free and is what I use for my blog and this API docs site. But CloudCannon provides more features that might be needed by the enterprise. So let's follow an example in publishing in [CloudCannon](https://cloudcannon.com/), which describes itself as the "The Cloud CMS for Jekyll."
 
 In this activity, we'll publish to CloudCanon using the [Documentation Theme for Jekyll](https://idratherbewriting.com/documentation-theme-jekyll) (the theme I built). You don't need to have a Windows machine to facilitate the building and publishing &mdash; you'll do that via CloudCannon and Github. (Of course, being able to build locally is important if you're developing with Jekyll, but I want to avoid [Jekyll installation](https://jekyllrb.com/docs/installation/) issues here and simply demonstrate the continuous deployment features that a host like CloudCannon provides.) This tutorial will show you how to plug into a robust hosting platform that reads content stored and managed on GitHub.
 
@@ -92,28 +92,27 @@ In this activity, we'll publish to CloudCanon using the [Documentation Theme for
 	 Sometimes people fork repositories to make changes and then propose pull requests of the fork to the original repo. Other times people fork repositories to create a starting point for a splinter project from the original. Github is all about social coding &mdash; one person's ending point is another person's starting point, and multiple projects can be merged into each other. You can [learn more about forking here](https://help.github.com/articles/fork-a-repo/).
 
 2.  Sign up for a free account at [CloudCannon](https://cloudcannon.com); sign in using your GitHub credentials.
-3.  Once you sign in, click **Create Site** and then give the new site a name.
-4.  Click the **GitHub Repository: Sync with a branch** box.
+3.  Once you sign in, click **Create Site** and then give the new site a name. Then press **Enter** to create the site.
+4.  Click the **GitHub Repository** box.
 
     {% include course_image.html size="large" filename="cloudcannonsyncwithgithub" ext_print="png" ext_web="png" alt="Sync with GitHub" caption="Sync with GitHub" %}
 
 5.  Choose the GitHub repo that you forked &mdash; **documentation-theme-jekyll**. Select the **gh-pages** branch.
 
-6.  CloudCannon pulls the files from the synced repo over to CloudCannon.
-7.  When the sync finishes, click **Start Site Build** to have CloudCannon build Jekyll from the server.
+6.  CloudCannon pulls the files from the synced repo over to CloudCannon. When the sync finishes, click **Start Site Build** to have CloudCannon build Jekyll from the server.
 
-    When it finishes building, you see "Your first build is complete!".
+    When it finishes building, you see a green check mark in the upper-right corner.
 
-8.  Click **Go to Editor Dashboard.**
-9.  From the Dashboard, click the **View Live Site** box:
+8.  Go to the **Dashboard.**
+9.  From the Dashboard, click the URL that appears below your site image:
 
-    {% include course_image.html size="large" filename="cloudcannonviewlivesite" ext_print="png" ext_web="png" alt="View Live Site" caption="View Live Site" %}
+    {% include course_image.html size="large" filename="cloudcannonviewlivesite" ext_print="png" ext_web="png" alt="Viewing your live site" caption="Viewing your live site" %}
 
-	  The preview URL will be something random, such as https://doted-lily.cloudvent.net/. When you visit the URL, the theme should look just like the [Documentation theme for Jekyll here](https://idratherbewriting.com/documentation-theme-jekyll).
+	  The preview URL will be something random, such as `https://balmy-sunglasses.cloudvent.net/`. You'll need to click **Continue to sample site** because you're on the free plan. When you visit the URL, the theme should look just like the [Documentation theme for Jekyll here](https://idratherbewriting.com/documentation-theme-jekyll).
 
 Using the CloudCannon user interface, you can make updates to files and the updates will sync back to GitHub. Likewise, if you push updates to GitHub, CloudCannon will be notified, pull the changes, and rebuild the output.
 
-I have to say, the integration between CloudCannon and GitHub is pretty mind-blowing. Through CloudCannon, you can offload all the hassle of hosting and maintaining your website, but you aren't locked into the system in a proprietary way. Your content lives in a custom Jekyll theme on GitHub.
+The integration between CloudCannon and GitHub is pretty mind-blowing. Through CloudCannon, you can offload all the hassle of hosting and maintaining your website, but you aren't locked into the system in a proprietary way. Your content lives in a custom Jekyll theme on GitHub.
 
 CloudCannon automatically builds the site when you commit new updates to your GitHub repo, entirely removing the publishing and deployment step with a website. CloudCannon also provides additional features for authentication, metrics, suggested improvements, and more.
 
@@ -125,9 +124,9 @@ If cost is an issue and you don't have any privacy restrictions around your docs
 
 When you connect a GitHub repo with CloudCannon, the two sites sync the files. Let's see that workflow in action.
 
-1.  In your browser, go to your Github repository that you forked and make a change to a file.
+1.  In your browser, on GitHub, go to your Github repository that you forked and make a change to a file.
 
-	  For example, browse to the index.md file, click the pencil icon <img src="images/github-pencil-icon.png" alt="Edit this file" style="vertical-align: bottom"/> ("Edit this file"), make an update, and then commit the update.
+	  For example, browse to the index.md file, click the pencil icon ("Edit this file"), make an update, and then commit the update.
 
 2.  Return to CloudCannon and observe that your site automatically starts rebuilding.
 
