@@ -27,7 +27,7 @@ To publish a page of documentation, tech writers had to create a new page in the
 
 When I started, I championed using Jekyll to generate and manage the HTML, and I started storing the Jekyll projects in internal Git repositories. I also created a layout in Jekyll that was designed specifically for Hippo publishing. The layout included a documentation-specific sidebar (previously absent in Hippo on a granular level) to navigate all the content in a particular set of documentation. This Jekyll layout included a number of styles and scripts to override settings in the CMS.
 
-Despite this innovation, our publishing process still involved pasting the generated HTML (after building Jekyll) page by page into the CMS. Thus, we were halfway with our docs-as-code approach and still had room to go. One of the tenets of docs-as-code is to build your output directly from the server (called "continuous deployment"). In other words, you incorporate the publishing logic on the server rather than running the publishing process from your local computer.
+Despite this innovation, our publishing process still involved pasting the generated HTML (after building Jekyll) page by page into the CMS. Thus, we were only partially using docs-as-code and still had a long way to go. One of the tenets of docs-as-code is to build your output directly from the server (called "continuous deployment"). In other words, you incorporate the publishing logic on the server rather than running the publishing process from your local computer.
 
 {% include random_ad2.html %}
 
@@ -63,9 +63,9 @@ Our Jekyll layout omitted any header or footer in the theme. The built HTML page
 
 The build process from the Git repo to the deployed website took about 10 minutes, but tech writers didn't need to do anything during that time. After you typed a few commands in your terminal (merging with the `gamma` or `production` branch locally and then pushing out the update to origin), the deployment process kicked off and ran all by itself.
 
-The first day in launching our new system, a team had to publish 40 new pages of documentation. Had we still been in Hippo, this would have taken several hours. Even more painful, their release timeframe was an early morning, pre-dawn hour, so the team would have had to publish 40 pages in Hippo CMS at around 4 am to 6 am, copying and pasting the HTML frantically to meet the release push and hoping they didn't screw anything up.
+The first day in launching our new system, a team had to publish 40 new pages of documentation. Had we still been in Hippo, this would have taken several hours to publish. Even more painful, their release timeframe was an early morning, pre-dawn hour, so the team would have had to publish 40 pages in Hippo CMS at around 4 am to 6 am, copying and pasting the HTML frantically to meet the release push and hoping they didn't screw anything up.
 
-Instead, with the new process, the writer just merged her development branch into the `production` branch and pushed the update to the repo. Ten minutes later, all 40 pages were live on the site. She was floored! We knew this was the beginning of a new chapter in our team's processes. We felt like a huge burden had been lifted off our shoulders.
+Instead, with the new process, the writer just merged her `development` branch into the `production` branch and pushed the update to the repo. Ten minutes later, all 40 pages were live on the site. She was floored! We knew this was the beginning of a new chapter in the team's processes. We all felt like a huge publishing burden had been lifted off our shoulders.
 
 ## Challenges we faced
 
@@ -77,7 +77,7 @@ The biggest challenge, ironically, was probably with myself &mdash; dealing with
 
 During this wait time, we refined our Jekyll theme and process, ramped up on our Git skills, and migrated all of the content out of the old CMS into [kramdown Markdown](https://kramdown.gettalong.org/). Even so, as project timelines kept getting delayed and pushed out, we weren't sure if the engineering team's bandwidth would ever lighten up. I wanted to jump ship and just deploy everything myself through the [S3_website plugin](https://github.com/laurilehmijoki/s3_website) on [AWS S3](https://aws.amazon.com/s3/).
 
-But as I researched domain policies, server requirements, and other corporate standards and workflows, I realized that a do-it-myself approach wouldn't work (unless I possessed a lot more engineering knowledge than I currently did). Given our corporate domain, security policies required us to host the content on an internal tier 1 server, which had to pass security requirements and other standards. It became clear that this would involve a lot more engineering knowledge and time than I had, as well as maintenance time if I managed the server post-release. So we had to wait.
+But as I researched domain policies, server requirements, and other corporate standards and workflows, I realized that a do-it-myself approach wouldn't work (unless I possessed a lot more engineering knowledge than I currently did). Given our corporate domain, security policies required us to host the content on an internal tier 1 server, which had to pass security requirements and other standards. It became clear that this would involve a lot more engineering and server knowledge and time than I had, as well as maintenance time if I managed the server post-release. So we had to wait.
 
 We wanted to get this right because we probably wouldn't get bandwidth from the engineering team again for a few years. In the end, waiting turned out to be the right approach.
 
@@ -85,9 +85,9 @@ We wanted to get this right because we probably wouldn't get bandwidth from the 
 
 When we did finally begin the project and start working with the engineering team, another challenge was in understanding each other. The engineering team (the ones implementing the server build pipeline and workflow) didn't understand our Jekyll authoring process and needs.
 
-Conversely, we didn't understand the engineer's world well either. To me, it seemed all they needed to do was upload HTML files to a web server, which seemed a simple task. I felt they were overcomplicating the process with unnecessary workflows and layouts. And what was the deal with storing content in S3 and doing dynamic lookups based on matching permalinks? But whereas I had in mind a doghouse, they had in mind a skyscraper. So their processes were probably more or less scaled and scoped to the business needs and requirements.
+Conversely, we didn't understand the engineer's world well either. To me, it seemed all they needed to do was upload HTML files to a web server, which seemed a simple task. I felt they were overcomplicating the process with unnecessary workflows and layouts. And what was the deal with storing content in S3 and doing dynamic lookups based on matching permalinks? But they already had a process for publishing content to the existing site, so they were more or less following the same build flow.
 
-Still, we lived in different worlds, and we had to constantly communicate about what each other needed. It didn't help that we were located in different states and had to interact virtually, often through chat and email.
+Despite the common goal, we lived in seemingly different worlds, and we had to constantly communicate about what each other needed. It didn't help that we were located in different states and had to interact virtually, often through chat and email.
 
 ### Figuring out repo size
 
@@ -107,7 +107,7 @@ The long build times were so annoying, we decided to switch back to individual r
 
 I came up with several creative ways to push the theme files out to multiple small repos in a semi-automated way. My first solution was to distribute the theme through [RubyGems](https://rubygems.org/), which is Jekyll's official [solution for theming](https://jekyllrb.com/docs/themes/). I created a theme gem, open-sourced it and the theme (see [Jekyll Doc Project](https://github.com/amzn/jekyll-doc-project)), and practiced the workflow to push out updates to the theme gem and pull them into each repo.
 
-It worked well (just as designed). However, it turns out our build management system (an engineering tool used to build outputs or other artifacts from code repositories) couldn't build Jekyll from the server using [Bundler](http://bundler.io/), which is what RubyGems required. (Bundler is a tool that automatically gets the right gems for your Jekyll project based on the Jekyll version you are using. Without Bundler, each writer just installs the [jekyll gem](https://rubygems.org/gems/jekyll/versions/3.3.1) locally and builds the Jekyll project based on that gem version.
+It worked well (just as designed). However, it turns out our build management system (an engineering system used to build outputs or other artifacts from code repositories) couldn't build Jekyll from the server using [Bundler](http://bundler.io/), which is what RubyGems required. (Bundler is a tool that automatically gets the right gems for your Jekyll project based on the Jekyll version you are using. Without Bundler, each writer just installs the [jekyll gem](https://rubygems.org/gems/jekyll/versions/3.3.1) locally and builds the Jekyll project based on that gem version.)
 
 My understanding of the build management system was limited, so I had to rely on engineers for their assessment. Ultimately, we had to scrap using Bundler and just build using `jekyll serve` because the engineers couldn't make Bundler work with the build system. So I still had the problem of distributing the same theme across multiple repos.
 
@@ -121,7 +121,7 @@ There was a lot of content and repo adjustment, but in the end, two large repos 
 
 Each repo had its own Jekyll project. If I had an update to any theme files (e.g., layouts or includes), I copied the update manually into both repos. This was easier than trying to devise an automated method. It also allowed me to test updates in one repo before rolling them out to the other repo. To reduce the slow build times, I created project-specific config files that would cascade with the default configuration file and build only one directory rather than all of them. This reduced the build time to the normal lightning-fast times of less than 5 seconds.
 
-Let me provide a little more details here on how we shortened the build times, because this is a reason many adopt Hugo instead of jekyll. To reduce the build times, we created a project-specific configuration file (e.g., acme-config.yml) that sets, through the `defaults`, all the directories to `publish: false` but lists one particular directory (the one with content you're working on) as `publish: true`. Then to build Jekyll, you cascade the config files like this:
+Let me provide a little more details here on how we shortened the build times, because this is a reason many adopt Hugo instead of Jekyll. To reduce the build times, we created a project-specific configuration file (e.g., acme-config.yml) that sets, through the `defaults`, all the directories to `publish: false` but lists one particular directory (the one with content you're working on) as `publish: true`. Then to build Jekyll, you cascade the config files like this:
 
 ```bash
 jekyll serve --config _config.yml,acme-config.yml
@@ -199,7 +199,7 @@ With JavaScript, however, we ran into namespace collisions and had to wrap our j
 
 The engineers weren't happy that we had the ability to break the display of content with our layout code in Jekyll. At the same time, we wanted the ability to push out content that relied on jQuery or other scripts. In the end, we got it to work, and the returned stability calmed down the writers.
 
-### Transitioning to a git-based workflow
+### Transitioning to a Git-based workflow
 
 While it may seem like Jekyll was the authoring tool to learn, actually the greater challenge was becoming familiar with Git-based workflows for doc content. This required some learning and familiarity with the command line and version control workflows.
 
@@ -217,17 +217,17 @@ However, even the less technical users eventually learned to clone the project a
 
 ### Building a system that scales
 
-Although we were using open source tools, our solution had to be able to scale in an enterprise way. Because the content used Markdown as the format, anyone could easily learn it. And because we used standard Git processes and tooling, engineers can more easily plug into the system.
+Although we were using open source tools, our solution scaled for the enterprise. Because the content used Markdown as the format, anyone could easily learn it. And because we used standard Git processes and tooling, engineers can more easily plug into the system.
 
 We already had some engineering teams interacting in the repo. Our goal was to empower lots of engineering teams with the ability to plug into this system and begin authoring. Ideally, we could have dozens of different engineering groups owning and contributing content, with the tech writers acting more like facilitators and editors.
 
-Also significant is that no licenses or seats were required to scale out the authoring. A writer just uses Atom editor (or another IDE). The writer would open up the project and work with the text, treating docs like code.
+No licenses or seats were required to scale out the authoring. A writer just used Atom editor (or another IDE). The writer would open up the project and work with the text, treating docs like code.
 
 Within the first few weeks of launching our system, we found that engineers liked to contribute updates using the same code review tools they used with software projects. This simplified the editing workflow. But it also created more learning on our part, because it meant we would need to learn these code review tools, how to push to the code review system, how to merge updates from the reviews, and so forth. Trying to evaluate a doc contribution by looking at a diff file in a code review tool is more annoying than helpful. I prefer to see the content in its whole context, but engineers typically just want to focus in on what has changed.
 
 Additionally, empowering these other groups to author required us to create extensive instructions, which was an entire documentation project in itself. I created around 30+ topics in our guide that explained everything from setting up a new project to publishing from the command line using Git to creating PDFs, navtabs, inserting tooltips and more. Given that this documentation was used internally only and wasn't documentation consumed externally, there wasn't a huge value or time allotment for creating it. Yet it consumed *a lot* of time. Making good documentation is hard, and given the questions and onboarding challenges, I realized just how much the content needed to be simplified and easier to follow.
 
-Unfortunately, when we began the project, we didn't secure resourcing and funding for its ongoing maintenance and support. In many ways, working on the project was like working on an open source project. Although much work still needs to be done, our priorities are always focused on creating documentation content. No one wants to acknowledge the time and energy required to support your own tooling process. While much of this hassle could have simply been eliminated through third-party hosting and deployment solutions (like CloudCannon), the company preferred to build its own tools (but not fully dedicate resourcing for their development and maintenance).
+Unfortunately, when we began the project, we didn't secure resourcing and funding for its ongoing maintenance and support. In many ways, working on the project was like working on an open-source project. Although much work still needs to be done, our priorities are always focused on creating documentation content. No one wants to acknowledge the time and energy required to support your own tooling process. While much of this hassle could have simply been eliminated through third-party hosting and deployment solutions (like CloudCannon), the company preferred to build its own tools (but not fully dedicate resourcing for their development and maintenance).
 
 ## Conclusion
 
@@ -237,7 +237,7 @@ I outlined the challenges here to reinforce the fact that implementing docs-as-c
 
 If you're implementing docs-as-code at a small company, you can simplify processes and use a system that meets your needs. For example, you could simply use [GitHub Pages](https://pages.github.com/), or use the [S3_website plugin](https://github.com/laurilehmijoki/s3_website) to publish on AWS S3, or better yet, use a continuous deployment platform like [CloudCannon](https://cloudcannon.com/) or [Netlify](https://www.netlify.com/). (I explore these tools in more depth in [Hosting and deployment options](pubapis_hosting_and_deployment.html).) I might have opted for either of these approaches if allowed and if we didn't have an engineering support team to implement the workflow I described.
 
-Also, tools implementation is somewhat of a mixed experience for me. Intimate knowledge of doc tools is extremely important *when you're implementing your solution.* After you're finished, you no longer need all that knowledge, and I find it somewhat fading from my awareness. This is probably why so many consultants specialize in tools &mdash; they swoop in, set things up, and then drive their wagons to the next town to repeat the show. But if you're a full-time employee, and you're primary job is developing content, not tools, then how do you find the time and support to develop the needed tool knowledge for the temporary period when you're implementing a system, only to abandon the knowledge later, after everything is implemented and running smoothly?
+Also, tools implementation is somewhat of a mixed experience for me. Intimate knowledge of doc tools is extremely important *when you're implementing your solution.* After you're finished, you no longer need that depth of knowledge, and I find it somewhat fading from my awareness. This is probably why so many consultants specialize in tools &mdash; they swoop in, set things up, and then drive their wagons to the next town to repeat the show. But if you're a full-time employee, and your primary job is developing content, not tools, then how do you find the time and support to develop the needed tool knowledge for the temporary period when you're implementing a system, only to abandon the knowledge later, after everything is implemented and running smoothly?
 
 I enjoy getting my hands in the code of docs-as-code tools, but I'm pretty sure both the other tech writers and engineering teams are happy to see the sense of stability and normalcy return. They don't like it when I continually experiment and develop on the platform, because it inevitably means change. It means occasionally things break. Or I discover that a particular approach wasn't optimal. In some way, it causes a bit of stress.
 
@@ -257,12 +257,7 @@ It was also republished in Anne Gentle's [Docs Like Code: Case Studies](https://
 
 <a href="https://www.docslikecode.com/articles/change-case-study/" class="noCrossRef"><img src="images/docslikecodeannegentlecasestudies.png" class="small" /></a>
 
-{: .tip}
-To Learn more about docs as code, see Anne Gentle's book [Docs Like Code](https://www.amazon.com/Docs-Like-Code-Anne-Gentle/dp/1365816079/ref=sr_1_1?ie=UTF8&qid=1508090523&sr=8-1&keywords=docs+like+code).
-
-## Video recording
-
-I recently [gave a presentation on Docs-as-code tools and workflows](https://idratherbewriting.com/2018/03/09/docs-as-code-tools-and-workflows-denver-presentation/) to the STC Rocky Mountain and WTD Denver group.
+I also [gave a presentation on Docs-as-code tools and workflows](https://idratherbewriting.com/2018/03/09/docs-as-code-tools-and-workflows-denver-presentation/) to the STC Rocky Mountain and WTD Denver group.
 
 {% if site.format == "kindle" or site.format == "pdf" %}
 
@@ -274,10 +269,10 @@ This content doesn't embed well in print, as it contains YouTube videos. Please 
 
 {% endif %}
 
-## Blog posts about docs-as-code tools
-
 To read some other docs-as-code posts on my blog, see the following:
 
 * [Discoveries and realizations while walking down the Docs-as-Code path](https://idratherbewriting.com/2017/08/23/content-architecture-and-repo-sizes/)
 * [Limits to the idea of treating docs as code](https://idratherbewriting.com/2017/06/02/when-docs-are-not-like-code/)
 * [Will the docs-as-code approach scale? Responding to comments on my Review of Modern Technical Writing](https://idratherbewriting.com/2016/08/01/responding-to-feedback-on-modern-tech-writing-review/)
+
+To Learn more about docs as code in general, see Anne Gentle's book [Docs Like Code](https://www.amazon.com/Docs-Like-Code-Anne-Gentle/dp/1365816079/ref=sr_1_1?ie=UTF8&qid=1508090523&sr=8-1&keywords=docs+like+code).
