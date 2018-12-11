@@ -301,7 +301,7 @@ folders:
   - title: Overview of native library APIs
     jurl: /nativelibraryapis_overview.html
 
-  - title: Get the Java source
+  - title: Get the sample Java project
     jurl: /nativelibraryapis_getting_the_source.html
 
   - title: Java crash course

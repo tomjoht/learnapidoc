@@ -8,23 +8,16 @@ section: nativelibraryapis
 path1: /nativelibraryapis.html
 ---
 
-Javadoc is the standard output for Java APIs, and it's really easy to build a Javadoc. The Javadoc is generated through something called a "doclet." Different doclets can parse the Java annotations in different ways and produce different outputs. But by and large, almost every Java documentation uses Javadoc. Javadoc is standard and familiar to Java developers.
+Javadoc is the standard output for Java APIs, and it's really easy to build a Javadoc. The Javadoc is generated through something called a "doclet." Different doclets can parse the Java annotations in different ways and produce different outputs. But by and large, almost every Java documentation uses the standard doclet. The Javadoc output will be familiar and welcome to Java developers.
+
+Javadoc is supported by Oracle. Developers can integrate the Javadoc output directly into their IDE, which makes the documentation convenient and easily accessible. In fact, Javadoc is often delivered this way rather than deployed and uploaded to a server. Javadoc contains reference documentation only. You can't add any non-reference help files into the output, nor really skin the output much.
 
 * TOC
 {:toc}
 
-## Characteristics of Javadoc
-
-Here are some other characteristics of Javadoc:
-
-* Javadoc is supported by Oracle.
-* Javadoc's output integrates directly into IDEs that developers use.
-* The Javadoc output is skinnable, but you can't add non-ref files to it.
-* The Javadoc comment style is highly similar to most other document generators.
-
-{% include random_ad.html %}
-
 ## <i class="fa fa-user-circle"></i> Generate a Javadoc
+
+In this activity, you'll generate a Javadoc from the [sample java project](nativelibraryapis_getting_the_source.html) you downloaded earlier. If you want to preview the Javadoc that you're going to build, you can [view the output here](https://idratherbewriting.com/learnapidoc/assets/files/javadoc/index.html).
 
 1.  In Eclipse, go to **File > Export**.
 2.  Expand **Java** and select **Javadoc.** Then click **Next**.
@@ -32,7 +25,7 @@ Here are some other characteristics of Javadoc:
 
     {% include course_image.html size="small_medium" filename="generatejavadoc" ext_print="png" ext_web="png" alt="Generating a Javadoc" caption="Generating a Javadoc" %}
 
-    Don't select the class that contains your main method because you don't need to provide Java documentation for your program; your Javadoc will provide documentation for the classes that developers might choose to use in their programs. In this sample project, the main method is included in App.java.
+    Don't select the `App.java` class that contains your `main` method because you don't need to provide Java documentation for your program; your Javadoc will provide documentation for the classes that developers might choose to use in their programs. In this sample project, the `main` method is included in `App.java`, but it could have been included in a file named otherwise.
 
 4.  Select which visibility option you want: Private, Package, Protected, or Public. Generally you select **Public**.
 
@@ -43,9 +36,10 @@ Here are some other characteristics of Javadoc:
 
     For this activity, choose a different output location (such as a folder on your desktop or in your documents) other than the default. Reason being, the project already has the generated Javadoc in a docs folder, so you might not even realize that you've generated a Javadoc file because your new output will just overwrite the existing doc files.
 
+    {: .tip}
     When developers deliver Java libaries, they often include the doc directly in a distributed zip file that contains that JAR. Users are accustomed to looking in the doc folder for documentation.
 
-7.  Click **Next**.
+7.  Click **Next** and see additional configuration options.
 
     {% include course_image.html size="small_medium" filename="javadocnext1" ext_print="png" ext_web="png" alt="Javadoc next screen" caption="Javadoc next screen" %}
 
@@ -63,7 +57,10 @@ Here are some other characteristics of Javadoc:
 
     If prompted to update the Javadoc location (which likely differs from your Eclipse workspace location), do so by clicking **Yes to all**.
 
-    Browse to the destination location and open the index.html file in your browser to view the files.
+    Browse to the destination location and open the `index.html` file in your browser to view the files.
+
+    {: .tip}
+    If you had trouble building your Javadoc, you can [view the output here](https://idratherbewriting.com/learnapidoc/assets/files/javadoc/index.html).
 
 {% include random_ad2.html %}
 
@@ -73,9 +70,11 @@ Javadoc also checks your tags against the actual code. If you have parameters, e
 
 {% include course_image.html size="medium"  filename="javadocerrorchecking" ext_print="png" ext_web="png" alt="Javadoc error checking" caption="Javadoc error checking" %}
 
+{% include random_ad.html %}
+
 ## <i class="fa fa-user-circle"></i> Play with Javadoc parameters
 
-Try removing a parameter from a method and generate the Javadoc again. Make sure the console window is open.
+Try removing a parameter from a method and generate the Javadoc again. Make sure the console window is open so you can see the error warnings.
 
 ## Auto-building the Javadoc
 

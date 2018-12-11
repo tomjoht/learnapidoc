@@ -8,9 +8,9 @@ section: nativelibraryapis
 path1: /nativelibraryapis.html
 ---
 
-To understand the different components of a Javadoc, you have to first understand a bit about Java. Just being familiar with the names of the different components of Java will allow you to enter conversations and understand code at a high level. When you describe different aspects of sample code, knowing when to call something a class, method, parameter, or enum can be critical to your documentation's credibility.
+To understand the different components of a Javadoc, you have to first understand a bit about Java. Becoming familiar with the names of the different components of Java will allow you to enter conversations and understand code at a high level. When you describe different aspects of sample code, knowing when to call something a class, method, parameter, or enum can be critical to your documentation's credibility.
 
-I'll run you through a brief crash course in the basics. Don't worry if this seems like a blur. For more detail about learning Java, I recommend consulting [lynda.com](http://lynda.com) and [safaribooksonline](http://safaribooksonline.com). Below I'll focus on some basic concepts in Java that will be important in understanding the Javadoc tags and elements.
+I'll run you through a brief crash course in the basics. Don't worry if this seems like a blur. For more detail about learning Java, I recommend consulting [lynda.com](http://lynda.com) and [safaribooksonline](http://safaribooksonline.com). Below I'll focus on some basic concepts in Java that will be important in understanding the [Javadoc tags and elements](nativelibraryapis_javadoc_tags.html).
 
 {% if site.format == "web" %}
 * TOC
@@ -19,7 +19,7 @@ I'll run you through a brief crash course in the basics. Don't worry if this see
 
 ## About Java
 
-Java is one of the most common languages used because of its flexibility. Java isn't tied to a specific language platform because Java code compiles into byte code. The platform you deploy your code on contains a Java Virtual Machine (JVM) that interprets the byte code. Hence through JVMs, different platforms can interpret and run Java code. This gives Java more flexibility with different platforms.
+Java's flexibility and widespread use make it one of the best programming languages to learn for technical writers. Java isn't tied to a specific language platform. Instead, Java code compiles into byte code. The platform you deploy your code on contains a Java Virtual Machine (JVM) that interprets the byte code. Hence through JVMs, different platforms can interpret and run Java code. This gives Java more flexibility with different platforms.
 
 ## Classes
 
@@ -49,8 +49,6 @@ public class Bicycle{
 ```
 
 You mostly need to focus on `public` classes, since these are the classes that will be used by external developers. The `public` classes are the API of the library.
-
-{% include random_ad2.html %}
 
 ## Methods
 
@@ -87,12 +85,11 @@ class Bicycle {
 }
 ```
 
-See how the `brake` method accepts two arguments &mdash; `force` and `weight`. These arguments are integers, so Java expects whole numbers here. (You must put the data type before the parameters in the method.) The arguments passed into this method get used to calculate the `torque`. The `torque` is then returned to the caller.
+See how the `brake` method accepts two arguments &mdash; `force` and `weight`. These arguments are integers, so Java expects whole numbers here. (You must specify the data type before the parameters in the method.) The arguments passed into this method are used to calculate the `torque`. The `torque` is then returned to the caller.
 
-In Javadoc outputs, you'll see methods divided into two groups:
+{% include random_ad2.html %}
 
-* **Instance methods**: Means that you can use the method in the instance of an object. If the method isn't an instance method, it's considered a static method. Static methods can be used directly from the class without instantiating an object first. Static methods can't be changed by any object or subclass.
-* **Concrete methods**: These are methods that can be used when you instantiate an object. If a method isn't concrete, it's called an "abstract method." The only way you use an abstract method is by creating a subclass for the method.
+Java has different types of methods. *Instance* methods can only be used from objects instantiated from the class. *Static* methods can be used directly from the class without instantiating an object first. *Abstract* methods can only be used through subclasses.
 
 Somewhere in your Java application, users will have something called a `main` method that looks like this:
 
@@ -101,7 +98,7 @@ public static void main(String[] args) {
 }
 ```
 
-Inside the main method is where you add your code to make your program run. This is where the Java Virtual Machine will look to execute the code.
+Inside the `main` method is where you add your code to make your program run. As a result, the code inside the `main` method references other objects (instantiated from classes). The Java Virtual Machine will look inside the `main` method to run the application code.
 
 ## Fields
 
@@ -149,7 +146,7 @@ You probably won't see many objects in the native library. Instead, the develope
 
 ## Constructors
 
-Constructors are methods used to create new instances of the class. The default constructor for the class looks like the one above, with `new Bicycle()`.
+Constructors are methods used to create new instances (objects) of the class. The default constructor for the class looks like the one above, with `new Bicycle()`.
 
 The constructor uses the same name as the class and is followed by parentheses (because constructors are methods).
 
@@ -160,15 +157,15 @@ For example, suppose we had a constructor that initialized the object with the b
 ```java
 public class Bicycle{
 
-public Bicycle(String brand, int size) {
-	this.brand = model;
-	this.size = size;
-}
+  public Bicycle(String brand, int size) {
+  	this.brand = model;
+  	this.size = size;
+  }
 
 }
 ```
 
-Now I use this constructor when creating a new Bicycle object:
+Now you can use this constructor when creating a new `Bicycle` object:
 
 ```java
 Bicycle myBicycle = new Bicycle ("Trek", 22);
@@ -186,11 +183,11 @@ When you create your class, if it's in a package called `vehicles`, you list thi
 package vehicles
 
 public class Bicycle {
-
+//
 }
 ```
 
-Classes also set boundaries on access based on the package. If the access modifier did not say `public`, the class would only be accessible to members of the same package. If the access modifier were `protected`, the class would only be accessible to the class, package, and subclasses.
+Classes also set boundaries on access based on the package. If the access modifier does not not say `public`, the class would only be accessible to members of the same package. If the access modifier is `protected`, the class is only accessible to the class, package, and subclasses.
 
 When you want to instantiate the class (and your file is outside the package), you need to import the package into your class, like this:
 
@@ -208,7 +205,7 @@ When packages are contained inside other packages, you access the inner packages
 import transportation.motorless.vehicles
 ```
 
-Here I would have a transportation package containing a package called motorless containing a package called vehicles. Package naming conventions are like URLs in reverse (com > yoursite > subdomain).
+Here you would have a transportation package containing a package called motorless containing a package called vehicles. Package naming conventions are like URLs in reverse (com > yoursite > subdomain).
 
 Maven handles package management for Java projects. Maven will automatically go out and get all the package dependencies for a project when you install a Maven project.
 
@@ -226,7 +223,7 @@ public class Bicycle throws IOException {
 }
 ```
 
-When you indicate the exception here, you list the type of exception using a specific Javadoc tag (explained later).
+When you indicate the exception here, you list the type of exception using a specific Javadoc tag.
 
 ## Inheritance
 
@@ -246,11 +243,11 @@ An interface is a class that has methods with no code inside the method. Interfa
 
 ## JAR files and WAR files
 
-The file extension for a class is .java, but when compiled by the Java Development Kit into the Java program, the file becomes .class. The .class file is binary code, which means only computers (in this case, the Java Virtual Machine, or JVM) can read it.
+The file extension for a class is `.java`, but when compiled by the Java Development Kit into the Java program, the file becomes `.class`. The `.class` file is binary code, which means only computers (in this case, the Java Virtual Machine, or JVM) can read it.
 
 Developers often package up java files into a JAR file, which is like a zip file for Java projects. When you distribute your Java files, you'll likely provide a JAR file that the developer audience will add to their Java projects.
 
-Developers will add their JAR to their class path to make the classes available to their project. To do this, you right-click your project and select **Properties**. In the dialog box, select **Java Build Path**, then click the **Libraries** tab. Then click **Add JARs** and browse to the JAR.
+Developers will add their JAR to their class path to make the classes available to their project. To do this, they right-click their project and select **Properties**. In the dialog box, they select **Java Build Path**, then they click the **Libraries** tab. They then click **Add JARs** and browse to the JAR.
 
 When you deliver a JAR file, developers can use the classes and methods available in the JAR. However, the JAR will not show them the source code, that is, the raw Java files. For this, users will consult the Javadoc.
 
@@ -264,17 +261,21 @@ That's probably enough Java to understand the different components of a Javadoc.
 
 Here's a quick summary of the concepts we talked about:
 
-* **Class**: blueprints for something
-* **Object**: an instance of a class
-* **Methods**: what the object/class can do
-* **Fields**: variables in the object/class
-* **Constructor**: a method to create an object for a class
-* **Package**: a folder that groups classes
-* **Access modifier** (e.g, public): the scope at which a thing can be accessed
-* **Interface**: a skeleton class with empty methods (used for standardizing)
-* **Enum**: a data type offering predefined constants
-* **Subclass**: a class that inherits the fields + methods of another class
-* **JAR file**: a zip-like file containing Java classes
-* **WAR file**: a compiled Java web application to be deployed on a server
+* **Class**: Blueprints for something
+* **Object**: An instance of a class
+* **Methods**: What the object/class can do
+* **Fields**: Variables in the object/class
+* **Constructor**: A method to create an object for a class
+* **Package**: A folder that groups classes
+* **Access modifier** (e.g, `public`): The scope at which a thing can be accessed
+* **Interface**: A skeleton class with empty methods (used for standardizing)
+* **Enum**: A data type offering predefined constants
+* **Subclass**: A class that inherits the fields + methods of another class
+* **JAR file**: A zip-like file containing Java classes
+* **WAR file**: A compiled Java web application to be deployed on a server
 
 The point is that now you can use these terms intelligently in documentation and have at least a sense of what's going on.
+
+## Comparing native library APIs to REST
+
+Now that you see the specific programming language and elements in Java, you can probably get a sense of how different native library APIs are from REST APIs. To document a native library API, you need to become familiar with the programming language. In contrast, REST APIs are language agnostic, so they tend to be more accessible to generalists.

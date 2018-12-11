@@ -1,5 +1,5 @@
 ---
-title: "Get the Java source"
+title: "Get the sample Java project"
 permalink: /nativelibraryapis_getting_the_source.html
 course: "Documenting REST APIs"
 sidebar: docapis
@@ -23,7 +23,7 @@ The sample Java project (available at [github.com/tomjoht/sample-java-project](h
 
 This program doesn't really do anything except print little messages to the console, but it's simple enough to be instructive in its purpose. The purpose of the app is to demonstrate different doc tags, their placement, and how they get rendered in the Javadoc.
 
-## Download the project
+## <i class="fa fa-user-circle"></i> Download the project
 
 One of your immediate challenges to editing Javadoc will be to get the source code into your IDE. The sample java project is .
 
@@ -35,7 +35,7 @@ git clone https://github.com/tomjoht/sample-java-project
 
 {% include random_ad.html %}
 
-## Open the project in Eclipse
+## <i class="fa fa-user-circle"></i> Open the project in Eclipse
 
 1.  If you haven't already [downloaded and installed Eclipse](nativelibraryapis_overview.html#eclipse), do so.
 1.  Open Eclipse and go to **File > New > Java Project**.
