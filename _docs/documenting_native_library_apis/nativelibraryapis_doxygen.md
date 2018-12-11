@@ -8,14 +8,14 @@ section: nativelibraryapis
 path1: /nativelibraryapis.html
 ---
 
-An alternative to Javadoc is Doxygen. Doxygen works highly similarly to Javadoc, except that you can process more languages (Java, C++, C#, and more) with it. Doxygen is most commonly used with C++. Additionally, there's a GUI tool called Doxywizard that makes it really easy to generate the file.
+An alternative to Javadoc is Doxygen. Doxygen works highly similarly to Javadoc, except that it can process more languages (Java, C++, C#, and more). Doxygen is most commonly used with C++. Additionally, there's a GUI tool called Doxywizard that makes it really easy to generate the file.
 
 * TOC
 {:toc}
 
 ## Download Doxywizard
 
-You can download the Doxywizard tool when you install Doxygen. See the [Doxygen](http://www.stack.nl/~dimitri/doxygen/download.html) download page for more information.
+The Doxygen download also includes Doxywizard. See the [Doxygen](http://www.doxygen.nl/download.html) Downloads page for more download links.
 
 Here's the Doxywizard front-end GUI generator:
 
@@ -43,4 +43,4 @@ You don't need to limit yourself to either Javadoc or Doxygen. There are dozens 
 
 {% include random_ad.html %}
 
-Perhaps the biggest frustration of document generators is that you can't integrate the rest of your documentation with them. You're mostly stuck with the reference doc output. You'll need to also generate your how-to guides and other tutorials, and then link to the reference doc output. As such, you won't end up with a single integrated experience of documentation. Additionally, it will be hard to create links between the two outputs. This is a topic I explored in more depth in [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).
+Perhaps the biggest frustration of document generators is that you can't integrate the rest of your documentation with them. You're mostly stuck with the reference doc output. You'll need to also generate your how-to guides and other tutorials, and then link to the reference doc output. As such, you won't end up with a single integrated experience of documentation. Additionally, it will be hard to create links inline within topics between the two outputs. This is a topic I explored in more depth in [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).

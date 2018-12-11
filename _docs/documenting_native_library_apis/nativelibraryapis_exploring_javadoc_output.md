@@ -25,11 +25,11 @@ The class summary page shows a short version of each of the classes. The descrip
 
 {% include course_image.html size="large" filename="classsummary" ext_print="png" ext_web="png" alt="Class summary" caption="Class summary" %}
 
-You click a class name (in this case, ACMESmartphone or Dynamite) to dive into the details.
+You click a class name (in this case, `ACMESmartphone` or `Dynamite`) to dive into the details.
 
 ## Class details
 
-When you view a class page, you're presented with a brief summary of the fields, constructors, and methods for the class. Again this is just an overview. When you scroll down, you can see the full details about each of these elements.
+When you view a class page, you're presented with a brief summary of the fields, constructors, and methods for the class. Again, this is just an overview. When you scroll down, you can see the full details about each of these elements.
 
 {% include course_image.html size="large" url="http://docs.oracle.com/javase/7/docs/api/" filename="fulldetails" ext_print="png" ext_web="png" alt="Full class details" caption="Full class details" %}
 

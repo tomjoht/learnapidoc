@@ -8,34 +8,13 @@ section: nativelibraryapis
 path1: /nativelibraryapis.html
 ---
 
-Javadoc is a document generator that looks through your Java source files for specific annotations. It parses out the annotations into the Javadoc output. Knowing the annotations is essential, since this is how the Javadoc gets created.
+[Javadoc](nativelibraryapis_create_javadoc.html) is a document generator that looks through your Java source files for specific annotations. It parses out the annotations into the Javadoc output. Knowing the annotations is essential, since this is how the Javadoc gets created.
 
 {% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}
 
-## Common Javadoc tags
-
-The following are the most common tags used in Javadoc. Each tag has a word that follows it. For example, `@param latitude` means the parameter is "latitude".
-
-{% include random_ad2.html %}
-
-<div markdown="span" class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> To see a lengthy Javadoc tag, see this <a href="http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#examples">example from Oracle</a>.</div>
-
-The following are some common Javadoc tags:
-
-* **`@author`**  A person who made significant contribution to the code. Applied only at the class, package, or overview level. Not included in Javadoc output. It's not recommended to include this tag since authorship changes often.
-* **`@param`** A parameter that the method or constructor accepts. Write the description like this: `@param count Sets the number of widgets you want included.`
-* **`@deprecated`** Lets users know the class or method is no longer used. This tag will be positioned in a prominent way in the Javadoc. Accompany it with a `@see` or `{@link}` tag as well.
-* **`@return`** What the method returns.
-* **`@see`** Creates a see also list. Use `{@link}` for the content to be linked.
-* **`{@link}`** Used to create links to other classes or methods. Example: `{@link Foo#bar}` links to the method `bar` that belongs to the class `Foo`. To link to the method in the same class, just include #bar.
-* **`@since 2.0`** The version since the feature was added.
-* **`@throws`** The kind of exception the method throws. Note that your code must indicate an exception thrown in order for this tag to validate. Otherwise Javadoc will produce an error. `@exception` is an alternative tag.
-* **`@Override`** Used with interfaces and abstract classes. Performs a check to see if the method is an override.
-
-{% include random_ad.html %}
 
 ## Comments versus Javadoc tags
 
@@ -101,26 +80,47 @@ public void zapRoadRunner(int voltage) throws IOException {
 }
 ```
 
-## Where the Javadoc tag goes
-
 You put the Javadoc description and tags _before_ the class or method (no need for any space between the description and class or method).
+
+## Common Javadoc tags
+
+The following are the most common tags used in Javadoc. Each tag has a word that follows it. For example, `@param latitude` means the parameter is "latitude".
+
+{% include random_ad2.html %}
+
+{: .tip}
+To view a lengthy example of Javadoc tags, see this <a href="http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#examples">example from Oracle</a>.</div>
+
+The following are some common Javadoc tags:
+
+* **`@author`**  A person who made significant contribution to the code. Applied only at the class, package, or overview level. Not included in the Javadoc output. It's not recommended to include this tag since authorship changes often.
+* **`@param`** A parameter that the method or constructor accepts.
+* **`@deprecated`** Lets users know the class or method is no longer used. This tag will be positioned in a prominent way in the Javadoc. Accompany it with a `@see` or `{@link}` tag as well.
+* **`@return`** What the method returns.
+* **`@see`** Creates a "see also" list. Use `{@link}` for the content to be linked.
+* **`{@link}`** Used to create links to other classes or methods. Example: `{@link Foo#bar}` links to the method `bar` that belongs to the class `Foo`. To link to the method in the same class, just include `#bar`.
+* **`@since 2.0`** The version since the feature was added.
+* **`@throws`** The kind of exception the method throws. Note that your code must indicate an exception thrown in order for this tag to validate. Otherwise, Javadoc will produce an error. `@exception` is an alternative tag.
+* **`@Override`** Used with interfaces and abstract classes. Performs a check to see if the method is an override.
+
+{% include random_ad.html %}
 
 ## What elements you add Javadoc tags to
 
 You add Javadoc tags to classes, methods, and fields.
 
-* For the @author and @version tags, add them only to classes and interfaces.
-* The @param tags get added only to methods and constructors.
-* The @return tag gets added only to methods.
-* The @throws tag can be added to classes or methods.
+* For the `@author` and `@version`, add these tags only to classes and interfaces.
+* The `@param` tags get added only to methods and constructors.
+* The `@return` tag gets added only to methods.
+* The `@throws` tag can be added to classes or methods.
 
 ## Public versus private modifiers and Javadoc
 
-Javadoc includes only classes, methods, etc. marked as `public`. Elements marked as `private` are not included in Javadoc unless you specifically select **private** when generating the Javadoc. If you omit `public` from your source code, the default is that the class or method is available to the package only. In this case, it is not included in Javadoc.
+Javadoc includes only classes, methods, etc., marked as `public`. Elements marked as `private` are not included in Javadoc unless you specifically select **private** when generating the Javadoc. If you omit `public` from your source code, the default is that the class or method is available to the package only. In this case, it is not included in Javadoc.
 
 ## The description
 
-There's a short and long description. Here's an example showing how the description part is formatted:
+Javadoc provides both a short and long description. Here's an example showing how the description part is formatted:
 
 ```java
 /**
@@ -142,17 +142,13 @@ public int methodName (...) {
 
 (This example comes from [Wikipedia entry](http://en.wikipedia.org/wiki/Javadoc).)
 
-The short description is the first sentence, and gets shortened as a summary for the class or method in the Javadoc. After a period, the parser moves the rest of the description into a long description. Use `<p>` to signal the start of a new paragraph. You don't need to surround the paragraphs with opening and closing `<p>` tags -- the Javadoc compiler automatically adds them.
-
-Also, you can use HTML in your descriptions, such as an unordered list, code tags, bold tags, or others.
+The short description is the first sentence and gets shortened as a summary for the class or method in the Javadoc. After a period, the parser moves the rest of the description into a long description. Use `<p>` to signal the start of a new paragraph. You don't need to surround the paragraphs with opening and closing `<p>` tags because the Javadoc compiler automatically adds them. Also, you can use HTML in your descriptions, such as an unordered list, code tags, bold tags, or others.
 
 After the descriptions, enter a blank line (for readability), and then start the tags. You can't add any more description content below the tags. Note that only methods and classes can have tags, not fields. Fields (variables) just have descriptions.
 
 Note that the first sentence is much like the `shortdesc` element in DITA. This is supposed to be a summary of the entire class or method. If one of your words has a period in it (like `Dr. Jones`), then you must remove the space following the period by adding `Dr.&nbsp;Jones` to connect it.
 
-Avoid using links in that first sentence. After the period, the next sentence shifts to the long paragraph, so you really have to load up that first sentence to be descriptive.
-
-The verb tense should be present tense, such as _gets, puts, displays, calculates..._
+Avoid using links in the first sentence. After the period, the next sentence shifts to the long paragraph, so you have to load up that first sentence to be descriptive. The verb tense should be present tense, such as _gets, puts, displays, calculates..._
 
 What if the method is so obvious (for example, printPage) that your description ("prints a page") becomes redundant and looks useless? Oracle says in these cases, you can omit saying "prints a page" and instead try to offer some other insight. Oracle suggests:
 
@@ -181,17 +177,13 @@ Oracle says the order of the tags should be as follows:
 
 ## `@param` tags
 
-@param tags only apply to methods and constructors, both of which take parameters.
-
-After the @param tag, add the parameter name, and then a description of the parameter, in lowercase, with no period, like this:
+@param tags apply only to methods and constructors, both of which take parameters. After the @param tag, add the parameter name, and then a description of the parameter, in lowercase, with no period, like this:
 
 ```java
 @param url the web address of the site
 ```
 
-The parameter description is a phrase, not a full sentence.
-
-The order of multiple @param tags should mirror their order in the method or constructor.
+The parameter description is a phrase, not a full sentence. The order of multiple @param tags should mirror their order in the method or constructor.
 
 [Stephen Colebourne recommends](http://blog.joda.org/2012/11/javadoc-coding-standards.html) adding an extra space after the parameter name to increase readability (and I agree).
 
@@ -224,19 +216,17 @@ Note that usually classes don't have parameters. There is one exception: Generic
 
 ## `@return` tags
 
-Only methods return values, so only methods would receive a `@return` tag. If a method has `void` as a modifier, then it doesn't return anything. If it doesn't say `void`, then you must include a `@return` tag to avoid an error when you compile Javadoc.
+Only methods return values, so only methods would receive a `@return` tag. If a method has `void` as a modifier, it doesn't return anything. If it doesn't say `void`, then you must include a `@return` tag to avoid an error when you compile Javadoc.
 
 ## `@throws` tags
 
-You add `@throws` tags to methods or classes only if the method or class throws a particular kind of error.
-
-Here's an example:
+You add `@throws` tags to methods or classes only if the method or class throws a particular kind of error. Here's an example:
 
 ```java
 @throws IOException if your input format is invalid
 ```
 
-Stephen Colebourne recommends starting the description of the throws tag with an "if" clause for readability.
+Stephen Colebourne recommends starting the description of the throws tag with an "if" clause for readability. He says,
 
 > The `@throws` feature should normally be followed by `if ...` and the rest of the phrase describing the condition. For example, `@throws if the file could not be found`. This aids readability in source code and when generated.
 
@@ -319,6 +309,10 @@ To change the linked text, put a word after `#baz` like this: `@see #baz Baz met
 In Eclipse, you can use the Javadoc tab at the bottom of the screen to preview the Javadoc information included for the class you're viewing.
 
 {% include course_image.html size="medium" filename="javadocpane" ext_print="png" ext_web="png" alt="Javadoc pane" caption="Javadoc pane" %}
+
+## Why all the detail about Javadoc tags?
+
+I've added a lot of specific detail and style guidelines about Javadoc tags here. Why? I wanted you to realize, if you're new to the topic, that annotations for the Javadoc follow a lot of style conventions and best practices. These conventions and best practices might not always be apparent or followed in Java files that you might be working on. You can add a lot of value just by making sure the content aligns with these style conventions.
 
 ## More information about Javadoc
 

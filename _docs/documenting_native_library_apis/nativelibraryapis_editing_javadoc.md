@@ -22,8 +22,8 @@ However, the comments that developers add might be poor, incomplete, or incompre
 When you make edits to Javadoc content, look for the following:
 
 * **Missing doc**. Lots of Javadoc is incomplete. Look for missing documentation.
-* **Consistent style**. See if the existing tags follow Java's style conventions.
-* **Clarity**. Some descriptions are unintelligible due to the curse of knowledge, but it might be hard to tell without a stronger grasp of Java.
+* **Consistent style**. See if the existing tags follow [Java's style conventions with annotations](nativelibraryapis_javadoc_tags.html).
+* **Clarity**. Some descriptions are unintelligible due to the curse of knowledge (it might be hard to tell without a stronger grasp of Java)
 
 {% include random_ad.html %}
 

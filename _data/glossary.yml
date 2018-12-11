@@ -1,7 +1,7 @@
 api:
   term: API
-  def: "Application Programming Interface. Enables different systems to interact with each other programmatically. Two types of APIs are web services and library-based APIs."
-  link: See [What is a REST API?](docapis_what_is_a_rest_api.html).
+  def: "Application Programming Interface. Enables different systems to interact with each other programmatically. Two types of APIs are REST APIs (web APIs) and native-library APIs."
+  link: See [What is a REST API?](docapis_what_is_a_rest_api.html)
 
 api_console:
   term: API Console
@@ -57,12 +57,12 @@ crud:
 
 curl:
   term: curl
-  def: "A command line utility often used to interact with REST API endpoints. Used in documentation for request code samples. curl is usually the default format used to display requests in API documentation. See [curl](https://curl.haxx.se/). Also written as curl."
+  def: "A command line utility often used to interact with REST API endpoints. Used in documentation for request code samples. curl is usually the default format used to display requests in API documentation. See [curl](https://curl.haxx.se/). Also written as cURL."
   link: See [Make a curl call](docapis_make_curl_call.html) and [Understand curl more](docapis_understand_curl.html).
 
 endpoints_and_methods:
   term: endpoints and methods
-  def: "The endpoints indicate how you access the resource, and the method used with the endpoint indicates the allowed interactions (such as GET, POST, or DELETE) with the resource. The endpoint shows the end path of a resource URL only, not the base path common to all endpoints.  <br/><br/>The same resource usually has a variety of related endpoints, each with different paths and methods but returning different information about the same resource. Endpoints usually have brief descriptions similar to the overall resource description but shorter."
+  def: "The endpoints indicate how you access the resource, and the method used with the endpoint indicates the allowed interactions (such as GET, POST, or DELETE) with the resource. The endpoint shows the end path of a resource URL only, not the base path common to all endpoints. <br/><br/>The same resource usually has a variety of related endpoints, each with different paths and methods but returning different information about the same resource. Endpoints usually have brief descriptions similar to the overall resource description but shorter."
   link: See [Endpoints and methods](docapis_resource_endpoints.html).
 
 git:
@@ -77,8 +77,7 @@ github:
 
 git_repo:
   term: Git repo
-  def: "A tool for consolidating and managing many smaller repos with one system."
-  link: See [git-repo](https://code.google.com/archive/p/git-repo/).
+  def: "In Git, a repo (short for repository) stores your project's code. Usually, you only store non-binary (human-readable) text files in a repo, because Git can run diffs on text files and show you what has changed."
 
 hat:
   term: HAT
@@ -124,8 +123,8 @@ oas:
 
 openapi:
   term: OpenAPI
-  def: "The official name for the OpenAPI specification. The OpenAPI specification provides a set of properties that can be used to describe your REST API. When valid, the specification document can be used to create interactive documentation, generate client SDKs, run unit tests, and more. See [https://github.com/OAI/OpenAPI-Specification](https://github.com/OAI/OpenAPI-Specification). Now under the Open API Initiative with the Linux Foundation, the OpenAPI specification aims to be vendor neutral (however, many companies [steer its development](https://www.openapis.org/membership/members))."
-  link: See For details in this course, see [Introduction to the OpenAPI specification and Swagger](pubapis_swagger_intro.html).
+  def: "The official name for the OpenAPI specification. The OpenAPI specification provides a set of properties that can be used to describe your REST API. When valid, the specification document can be used to create interactive documentation, generate client SDKs, run unit tests, and more. See [https://github.com/OAI/OpenAPI-Specification](https://github.com/OAI/OpenAPI-Specification). Under the Open API Initiative with the Linux Foundation, the OpenAPI specification aims to be vendor neutral (many companies [steer its development](https://www.openapis.org/membership/members))."
+  link: See [Introduction to the OpenAPI specification and Swagger](pubapis_swagger_intro.html).
 
 openapi_contract:
   term: OpenAPI contract
@@ -148,7 +147,7 @@ parameters:
 
 path_parameters:
   term: Path parameters
-  def: "Parameters that appear within the path of the endpoint, before the query string (`?`). These are usually set off within curly braces."
+  def: "Parameters that appear within the path of the endpoint, before the query string (`?`). Path parameters are usually set off within curly braces."
   link: See [Parameters](docapis_doc_parameters.html) for more details.
 
 pelican:
@@ -168,7 +167,7 @@ pull:
 
 pull_request:
   term: Pull Request
-  def: "A request from an outside contributor to merge a cloned branch back into the master branch. The pull request workflow is commonly used with open source projects, because developers outside the team will not usually have contributor rights to merge updates into the repository. GitHub has a great interface for making and processing pull requests."
+  def: "A request from an outside contributor to merge a cloned branch back into the master branch. The pull request workflow is commonly used with open source projects, because developers outside the team will not usually have contributor rights to merge updates into the repository. GitHub provides a great interface for making and processing pull requests."
   link: See [Pull Requests](https://www.atlassian.com/git/tutorials/making-a-pull-request).
 
 push:
@@ -191,8 +190,9 @@ raml_console:
   def: "In Mulesoft, the RAML Console is where you design your RAML spec. Similar to the Swagger Editor for the OpenAPI spec."
 
 repo:
-  term: repo
-  def: "In Git, a repo (short for repository) stores your project's code. Usually, you only store non-binary (human-readable) text files in a repo, because Git can run diffs on text files and show you what has changed (but not with binary files)."
+  term: Repo
+  def: "A tool for consolidating and managing many smaller repos with one system."
+  link: See [git-repo](https://code.google.com/archive/p/git-repo/). For the definition of a Git repository, see [Git repo](#git_repo).
 
 request:
   term: request
@@ -249,7 +249,7 @@ stoplight:
 
 swagger:
   term: Swagger
-  def: "Refers to API tooling that around the OpenAPI spec. Some of these tools include [Swagger Editor](https://swagger.io/swagger-editor/), [Swagger UI](https://swagger.io/swagger-ui/), [Swagger Codegen](https://swagger.io/swagger-codegen/), [SwaggerHub](https://app.swaggerhub.com/home), and [others](https://swagger.io/tools/). These tools are managed by [Smartbear](https://smartbear.com/). For more tools, see [Swagger Tools](https://swagger.io/tools/). \"Swagger\" was the original name of the OpenAPI spec, but the name was later changed to [OpenAPI](https://github.com/OAI/OpenAPI-Specification/) to reinforce the open, non-proprietary nature of the standard. People sometimes refer to both names interchangeably (especially on older web pages), but \"OpenAPI\" is how the spec should be referred to. (See [What Is the Difference Between Swagger and OpenAPI?](https://swagger.io/difference-between-swagger-and-openapi/).)"
+  def: "Refers to API tooling that around the OpenAPI spec. Some of these tools include [Swagger Editor](https://swagger.io/swagger-editor/), [Swagger UI](https://swagger.io/swagger-ui/), [Swagger Codegen](https://swagger.io/swagger-codegen/), [SwaggerHub](https://app.swaggerhub.com/home), and [others](https://swagger.io/tools/). These tools are managed by [Smartbear](https://smartbear.com/). For more tools, see [Swagger Tools](https://swagger.io/tools/). \"Swagger\" was the original name of the OpenAPI spec, but the name was later changed to [OpenAPI](https://github.com/OAI/OpenAPI-Specification/) to reinforce the open, non-proprietary nature of the standard. People sometimes refer to both names interchangeably (especially on older web pages), but \"OpenAPI\" is how the spec should be referred to. See [What Is the Difference Between Swagger and OpenAPI?](https://swagger.io/difference-between-swagger-and-openapi/)."
 
 swagger_codegen:
   term: Swagger Codegen

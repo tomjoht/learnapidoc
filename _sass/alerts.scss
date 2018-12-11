@@ -115,4 +115,8 @@ p.warning::before {
     content: "Warning: ";
     font-weight: bold;
 }
+
+.alert {
+  font-size: 1.6rem;
+}
 /* end callout styles*/

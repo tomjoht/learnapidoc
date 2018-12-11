@@ -28,7 +28,7 @@ Engineers will throw a quick description of a class in a file and generate a Jav
 Other people seem to have similar opinions. In general, document generators don't tell you a whole lot more than you would discover by browsing the source code itself. Some people even refer to auto-generated docs as a glorified source-code browser.
 
 ## Reference docs are feature-based, not task-based
-One of the main problems with reference documentation is that it's feature based rather than task based. It's the equivalent of going tab-by-tab through an interface and describing what's on each tab, what's in each menu, and so on. We know that's a really poor way to approach documentation, since users organize their mental model by the tasks they want to perform.
+One of the main problems with reference documentation is that it's feature based rather than task based. It's the equivalent of going tab-by-tab through an interface and describing what's on each tab, what's in each menu, and so on. We know that's a really poor way to approach documentation, since users often organize their mental model by the tasks they want to perform.
 
 {% include random_ad2.html %}
 
