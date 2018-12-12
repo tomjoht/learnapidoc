@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
-<body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -9,9 +8,12 @@
   var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "https://www.eventbriteapi.com/v3/events/17920884849/?token=IO6EB7MM6TSCIL2TIOHC",
+    "url": "https://www.eventbriteapi.com/v3/events/49216045517/",
     "method": "GET",
-    "headers": {}
+    "headers": {
+      "Authorization": "Bearer IO6EB7MM6TSCIL2TIOHC",
+      "Content-Type": "application/json"
+    }
   }
 
   $.ajax(settings).done(function (data) {

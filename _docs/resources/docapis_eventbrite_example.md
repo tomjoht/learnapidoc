@@ -20,128 +20,97 @@ Use the [Eventbrite API](https://www.eventbrite.com/developer/v3/) to get the ev
 
 Eventbrite is an event management tool, and you can interact with it through an API to pull out the event information you want. In this example, you'll use the Eventbrite API to print a description of an event to your page.
 
-## 1. Get an anonymous OAuth token
+## 1. Get an OAuth token
 
-To make any kind of requests, you'll need a token, which you can learn about in the [Authentication section](https://www.eventbrite.com/developer/v3/api_overview/authentication/).
+Eventbrite uses the [OAuth method for authorization](docapis_more_about_authorization.html#oauth). To make any kind of requests, you'll need an OAuth token, which you can learn about in [Eventbrite's Authentication docs](https://www.eventbrite.com/developer/v3/api_overview/authentication/).
 
-If you want to sign up for your own token, create and register your app [here](https://www.eventbrite.com/myaccount/apps/). Then click **Show Client Secret and OAuth Token** and copy the "Anonymous access OAuth token."
+If you want to sign up for your own token, first [sign in to Eventbrite](https://www.eventbrite.com), and then create and register your app [here](https://www.eventbrite.com/myaccount/apps/). After you create your app, click **Show Client Secret and OAuth Token** and copy the "Anonymous access OAuth token."
 
 ## 2. Determine the resource and endpoint you need
-The Eventbrite API documentation is here: [developer.eventbrite.com](https://www.eventbrite.com/developer/v3/). Look through the endpoints available (listed under Endpoints in the sidebar). Which endpoint should we use?
 
-To get event information, we'll use the [events](https://www.eventbrite.com/developer/v3/endpoints/events/) object.
+The Eventbrite API documentation is available at [https://www.eventbrite.com/platform/api/](https://www.eventbrite.com/platform/api/). Look through the endpoints available (listed under "Reference" in the sidebar). Which endpoint should we use?
 
-<a href="https://www.eventbrite.com/developer/v3/endpoints/events/" class="noExtIcon"><img src="images/eventsendpointeventbrite.png" alt="Eventbrite Event" /></a>
-
-{: .note}
-Instead of calling them \"resources,\" the Eventbrite API uses the term \"objects.\"
-
-The events object allows us to "retrieve a paginated response of public event objects from across Eventbrite's directory, regardless of which user owns the event."
-
-{% include random_ad2.html %}
-
-The events object has a lot of different endpoints available. However, the GET `events/:id/` URL, described [here](https://www.eventbrite.com/developer/v3/endpoints/events/#ebapi-get-events-id) seems to provide what we need.
-
-{: .note}
-The Eventbrite docs convention is to use <code>:id</code> instead of <code>{id}</code> to represent values you pass into the endpoint. I don't recommend this convention, as it seems non-standard. The convention for "path parameters," as they're called, with [OpenAPI specs](pubapis_openapi_tutorial_overview.html) would be to use <code>{id}</code>.
+To get event information, we'll use the [event](https://www.eventbrite.com/platform/api#/reference/event) object, which "represents an Eventbrite Event." (The Eventbrite API uses the term "objects" instead of resources.") Specifically, we'll use [Retrieve](https://www.eventbrite.com/platform/api#/reference/event/retrieve-an-event). The only parameter we need to pass is the event ID.
 
 ## 3. Construct the request
 
-Reading the [quick start page](https://www.eventbrite.com/developer/v3/quickstart/), the sample request format is here:
+Although Eventbrite explains how to pass the authorization in to requests, it's easier to use the prebuilt curl from the documentation code samples, and then use Postman to convert it to JavaScript jQuery AJAX.
 
-```bash
-https://www.eventbriteapi.com/v3/users/me/?token=MYTOKEN
+Eventbrite's documentation uses [Apiary](https://apiary.io/), which provides a try-it-out feature (or [API explorer](pubapis_design_patterns.html#interactive_api_explorers)) in the right pane. This pane opens up when you click **Retrieve an Event**:
+
+{% include course_image.html url="https://www.eventbrite.com/platform/api#/reference/event/retrieve-an-event" size="large" filename="eventsendpointeventbrite" ext_print="png" ext_web="png" alt="Retrieving an Eventbrite Event" caption="Retrieving an Eventbrite Event" %}
+
+In the Console pane on the right, click the **Try** button to enable the ability to call the resource (if the Call Resource button isn't already shown).
+
+Before you can call the resource successfully, do the following:
+
+* Click the **URI Parameters** tab and customize the value for the event ID to `49216045517`. This ID corresponds to a workshop I recently gave called Documenting REST APIs, which you can view [here](https://www.eventbrite.com/e/documenting-rest-apis-a-jumpstart-workshop-for-technical-writers-tickets-49216045517#). The event ID appears in the URL.
+* Click the **Headers** tab and add your own OAuth token in place of `PERSONAL_OAUTH_TOKEN`.
+
+{% include course_image.html filename="eventbritepersonaloauthtoken" ext_print="png" ext_web="png" alt="Customizing the Parameters and Authorization information the Eventbrite Console" caption="Customizing the Parameters and Authorization information the Eventbrite Console" %}
+
+Click the **Call Resource** button and then scroll down to the Response Body section to observe the response. It should contain the body text for the EventBrite page. (If there's an error with the OAuth token or event ID, you'll see an error response instead.)
+
+## 4. Get the jQuery AJAX code for the request
+
+We retrieved the response. Now for fun let's print the response to the page (as if we were promoting the event on our own site).
+
+In the Console pane, below the parameters section, click **Show Code Example**:
+
+{% include course_image.html size="medium" filename="eventbriteshowcode" ext_print="png" ext_web="png" alt="Show code example" caption="Show code example" %}
+
+In the language drop-down that appears, select the **cURL** option and copy the value. It should look something like this:
+
+```curl
+curl --include \
+     --header "Authorization: Bearer IO6EB7MM6TSCIL2TIOHC" \
+     --header "Content-Type: application/json" \
+  'https://www.eventbriteapi.com/v3/events/49216045517/'
 ```
 
-This is for a users object endpoint, though. For events, we would change it to this:
+Open up [Postman](docapis_postman.html). In Postman, go to **File > Import** and then select the **Paste Raw Text** tab. Paste in the cURL code you copied.
 
-```bash
-https://www.eventbriteapi.com/v3/events/:id/?token={your api key}
-```
+{% include course_image.html filename="postmanpasterawtext" ext_print="png" ext_web="png" alt="Pasting curl into Postman" caption="Pasting curl into Postman" %}
 
-Find an ID of an event you want to use, such as [this event](https://www.eventbrite.com/myevent?eid=17920884849):
+Then click **Import**. The information will populate in a new Postman tab. In Postman, if you expand the Headers tab, you will see the OAuth information. The GET box includes the Eventbrite retrieve endpoint with the event ID added as a [path parameter](docapis_doc_parameters.html#path_parameters).
 
-<a href="https://www.eventbrite.com/myevent?eid=17920884849" class="noExtIcon"><img src="images/eventbrite_event.png" alt="Sample event" /></a>
+In Postman, below the Send button, click **Code**. In the Generate Code Snippets dialog box, select **JavaScript > Jquery AJAX**. Copy the value shown:
 
-(You have to sign in to Eventbrite to see this event page.)
+{% include course_image.html url="" size="" border="" filename="jquery_ajax_postman" ext_print="png" ext_web="png" alt="jQuery AJAX code in Postman" caption="jQuery AJAX code in Postman" %}
 
-{% include random_ad.html %}
+In the value, remove the `cache-control` and `Postman-Token` key-value pairs, so that your code sample looks like this:
 
-The event ID appears in the URL. Now populate the request with the ID of this event:
-
-```bash
-https://www.eventbriteapi.com/v3/events/17920884849/?token={your api key}
-```
-
-(If you need some sample API keys, you can use the [API keys](https://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt) listed here.)
-
-## 4. Make a request and analyze the response
-
-Now that you have an endpoint and API token, make the request. You can actually just go to this URL in your browser to see the response.
-
-The response from the endpoint is as follows:
-
-```json
-{
-    "name": {
-        "text": "An Aggressive Approach to Concise Writing, with Joe Welinske",
-        "html": "An Aggressive Approach to Concise Writing, with Joe Welinske"
-    },
-    "description": {
-        "text": "Webinar Description\r\nWriting concisely is one of the fundamental skills central to any mobile user assistance. The minimal screen real estate can\u2019t support large amounts of text and graphics without extensive gesturing by the users. Using small font sizes just makes the information unreadable unless the user pinches and stretches the text. Even outside of the mobile space, your ability to streamline your content improves the likelihood it will be effectively consumed by your target audience. This session offers a number of examples and techniques for reducing the footprint of your prose while maintaining a quality message. The examples used are in the context of mobile UA but can be applied to any technical writing situation.\r\nAbout Joe WelinskeJoe Welinske specializes in helping your software development effort through crafted communication. The best user experience features quality words and images in the user interface. The UX of a robust product is also enhanced through comprehensive user assistance. This includes Help, wizards, FAQs, videos and much more. For over twenty-five years, Joe has been providing training, contracting, and consulting services for the software industry. Joe recently published the book, Developing User Assistance for Mobile Apps. He also teaches courses for Bellevue College, the University of California, and the University of Washington. Joe is an Associate Fellow of STC.",
-        "html": "<P><SPAN STYLE=\"font-size: medium;\"><STRONG>Webinar Description<\/STRONG><\/SPAN><\/P>\r\n<P>Writing concisely is one of the fundamental skills central to any mobile user assistance. The minimal screen real estate can\u2019t support large amounts of text and graphics without extensive gesturing by the users. Using small font sizes just makes the information unreadable unless the user pinches and stretches the text.<BR> <BR>Even outside of the mobile space, your ability to streamline your content improves the likelihood it will be effectively consumed by your target audience.<BR> <BR>This session offers a number of examples and techniques for reducing the footprint of your prose while maintaining a quality message. The examples used are in the context of mobile UA but can be applied to any technical writing situation.<\/P>\r\n<P><SPAN STYLE=\"font-size: medium;\"><STRONG>About Joe Welinske<\/STRONG><\/SPAN><BR>Joe Welinske specializes in helping your software development effort through crafted communication. The best user experience features quality words and images in the user interface. The UX of a robust product is also enhanced through comprehensive user assistance. This includes Help, wizards, FAQs, videos and much more. For over twenty-five years, Joe has been providing training, contracting, and consulting services for the software industry. Joe recently published the book, Developing User Assistance for Mobile Apps. He also teaches courses for Bellevue College, the University of California, and the University of Washington. Joe is an Associate Fellow of STC.<\/P>"
-    },
-    "id": "17920884849",
-    "url": "https://www.eventbrite.com/e/an-aggressive-approach-to-concise-writing-with-joe-welinske-tickets-17920884849",
-    "start": {
-        "timezone": "America/Los_Angeles",
-        "local": "2015-09-24T12:00:00",
-        "utc": "2015-09-24T19:00:00Z"
-    },
-    "end": {
-        "timezone": "America/Los_Angeles",
-        "local": "2015-09-24T13:00:00",
-        "utc": "2015-09-24T20:00:00Z"
-    },
-    "created": "2015-07-27T15:14:49Z",
-    "changed": "2015-09-25T03:38:00Z",
-    "capacity": 24,
-    "capacity_is_custom": false,
-    "status": "completed",
-    "currency": "USD",
-    "listed": true,
-    "shareable": true,
-    "online_event": false,
-    "tx_time_limit": 480,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_US",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": false,
-    "is_series_parent": false,
-    "is_reserved_seating": false,
-    "source": "create_2.0",
-    "is_free": true,
-    "version": "3.0.0",
-    "logo_id": null,
-    "organizer_id": "7774592843",
-    "venue_id": "11047889",
-    "category_id": "102",
-    "subcategory_id": "2004",
-    "format_id": "2",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/17920884849/",
-    "logo": null
+```js
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://www.eventbriteapi.com/v3/events/49216045517/",
+  "method": "GET",
+  "headers": {
+    "Authorization": "Bearer IO6EB7MM6TSCIL2TIOHC",
+    "Content-Type": "application/json"
+  }
 }
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
 ```
 
-## 5. Pull out the information you need
+## 5. Customize the response on the page
 
-The information has a lot more than we need. We just want to display the event's title and description on our site. To do this, we use some simple jQuery code to pull out the information and append it to a tag on our web page:
+The information returned from the event object has a lot more detail than we need. We just want to display the event's title and description on our site. We'll use the jQuery AJAX code copied from the earlier step to do this. Note that I won't go into full detail about this code. I covered this AJAX call in more detail in some earlier tutorials:
+
+* [Inspect the JSON from the response payload](docapis_json_console.html)
+* [Access and print a specific JSON value](docapis_access_json_values.html)
+* [Dive into dot notation](docapis_diving_into_dot_notation.html)
+
+To integrate the jQuery AJAX Postman code into your website and print the `title` and `description` fields in the response, use the following code:
 
 ```html
+<!DOCTYPE html>
 <html>
-<body>
+<meta charset="UTF-8">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -149,9 +118,12 @@ The information has a lot more than we need. We just want to display the event's
   var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "https://www.eventbriteapi.com/v3/events/17920884849/?token=APIKEY",
+    "url": "https://www.eventbriteapi.com/v3/events/49216045517/",
     "method": "GET",
-    "headers": {}
+    "headers": {
+      "Authorization": "Bearer IO6EB7MM6TSCIL2TIOHC",
+      "Content-Type": "application/json"
+    }
   }
 
   $.ajax(settings).done(function (data) {
@@ -167,19 +139,14 @@ The information has a lot more than we need. We just want to display the event's
 </html>
 ```
 
-We covered this approach earlier in the course, so I won't go into much detail here.
-
-{: .note}
-My API key is hidden from the above code sample to protect it from unauthorized access.
-
 Here's the <a href="https://idratherbewriting.com/learnapidoc/assets/files/eventbrite-example.html">result</a>:
 
-<a href="https://idratherbewriting.com/learnapidoc/assets/files/eventbrite-example.html" class="noExtIcon"><img src="images/eventbriteresultjoewelinske.png" alt="Eventbrite result" /></a>
+{% include course_image.html url="https://idratherbewriting.com/learnapidoc/assets/files/eventbrite-example.html" size="" filename="eventbriteresult" ext_print="png" ext_web="png" alt="Eventbrite result printed to the page" caption="Eventbrite result printed to the page" %}
 
 ## Code explanation
 
 The sample implementation is as plain as it can be in terms of style. But with API documentation code examples, you want to keep code examples simple. In fact, you most likely don't need a demo at all. Simply showing the payload returned in the browser is sufficient for a UI developer. However, for testing it's fun to make content actually appear on the page.
 
-The `ajax` method from jQuery gets a payload for an endpoint URL, and then assigns it to the `data` argument. We log `data` to the console to more easily inspect its payload. To pull out the various properties of the object, we use dot notation. `data.name.text` gets the text property from the name object that is embedded inside the data object.
+In a nutshell, here's what's going on. The `ajax` method from jQuery gets a payload for an endpoint URL, and then assigns it to the `data` argument. We optionally log `data` to the console to more easily inspect its payload. To pull out the various properties of the object, we use dot notation. `data.name.text` gets the text property from the name object, and `data.description.html` gets the body.
 
-We then rename the content we want with a variable (`var content`) and use jQuery's `append` method to assign it to a specific tag (`eventbrite`) on the page.
+We then rename the content we want with a variable (`var content`) and use jQuery's `append` method to assign the variable's contents to a specific tag (`eventbrite`) on the page.
