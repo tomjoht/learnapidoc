@@ -194,4 +194,8 @@ To add a little variety to the code samples, let's add some conditional logic in
 
 Here's the <a href="https://idratherbewriting.com/learnapidoc/assets/files/aeris-observations.html">result</a>:
 
+{% include course_image.html url="https://idratherbewriting.com/learnapidoc/assets/files/aeris-observations.html" size="large" filename="notthatwindy" ext_print="png" ext_web="png" alt="Aeris Weather example" caption="Aeris Weather example" %}
+
 <a href="https://idratherbewriting.com/learnapidoc/assets/files/aeris-observations.html" class="noExtIcon"><img src="images/notthatwindy.png" alt="Aeris Weather example" /></a>
+
+For fun, change the value from `15` to `1` in the code and refresh the page. It will probably say "Yes, it's too windy." JavaScript is fun because it's easy to adjust some parameters and see the results through your browser. With other programming languages, you would likely need to compile or run the code in an IDE to see the result. In both cases, always test out the code and make it run yourself.
