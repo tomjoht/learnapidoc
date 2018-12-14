@@ -8,7 +8,7 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-Use the Aeris Weather API to get the wind speed (MPH) for a specific place (your choice).
+In this activity, you'll use the Aeris Weather API to get the wind speed for a specific place (your choice). You'll then display the wind speed on a web page based on some conditional logic about the wind speed's value.
 
 {% if site.format == "web" %}
 * TOC
@@ -17,33 +17,34 @@ Use the Aeris Weather API to get the wind speed (MPH) for a specific place (your
 
 ## The Aeris Weather API
 
-Since you've been working with the weather API on OpenWeatherMap, it's probably a good idea to compare this simple weather API with another one. Check out the [Aeris Weather API here](http://www.aerisweather.com/support/docs/api/). This is one of the most interesting, well-documented and powerful weather APIs I've encountered.
+In earlier tutorials, you integrated information from the [OpenWeatherMap API](https://openweathermap.org/api). I's probably a good idea to compare this OpenWeatherMap API with another weather API. The [Aeris Weather API](http://www.aerisweather.com/support/docs/api/) is one of the most interesting, well-documented and powerful weather APIs I've encountered.
 
 {% include random_ad2.html %}
 
-In this example, you'll get the wind in MPH and then set an answer to display on the page based on some conditional logic.
-
 ## 1. Get the API keys
 
-See the [Getting Started](http://www.aerisweather.com/support/docs/api/getting-started/) page for information on how to register and get API keys. (Obviously, get the free version of the keys available to development projects.) You will need both the CLIENTID and CLIENTSECRET to make API calls.
+See the [Getting Started](http://www.aerisweather.com/support/docs/api/getting-started/) page for information on how to register and get API keys. (Get the free version of the keys available to development projects.) You will need both the ID and secret to make API calls. See [Get the Aeris Weather API secret and ID](docapis_get_auth_keys.html#aeris_weather_apikey) for more detail. (You can also borrow my keys [here](https://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt)
 
 ## 2. Construct the request
 
-Browse through the [available endpoints](http://www.aerisweather.com/support/docs/api/reference/endpoints/) and look for one that would give you the wind speed. The [`observations`](http://www.aerisweather.com/support/docs/api/reference/endpoints/observations/) resource provides information about wind speed, as does [`forecasts`](http://www.aerisweather.com/support/docs/api/reference/endpoints/forecasts/). The response from `observations` looks a little simpler, so let's use that endpoint.
+Browse through the [available endpoints](http://www.aerisweather.com/support/docs/api/reference/endpoints/) in the Weather API and look for one that would give you the wind speed. The [`observations`](https://www.aerisweather.com/support/docs/api/reference/endpoints/observations/) endpoint provides information about wind speed, as does [`forecasts`](http://www.aerisweather.com/support/docs/api/reference/endpoints/forecasts/). The response from `observations` looks a little simpler, so let's use that endpoint.
 
 <a href="http://www.aerisweather.com/support/docs/api/reference/endpoints/observations/" class="noExtIcon"><img src="images/aerisobservations.png" alt="Aeris Weather observations resource" /></a>
 
 {% include random_ad.html %}
 
-To get the forecast details for Santa Clara, California, add it after `/observations`, like this:
+To get the forecast details for Santa Clara, California, add `santa%20clara,ca` after `/observations`, like this:
 
 ```
 http://api.aerisapi.com/observations/santa%20clara,ca?client_id=CLIENT_ID&client_secret=CLIENT_SECRET
 ```
 
+{: .note}
+You will need to swap in your own client ID and secret in place of `CLIENT_ID` and `CLIENT_SECRET` in the code above.
+
 ## 3. Analyze the response
 
-Here's the response from the request:
+Here's the response from [the request](http://api.aerisapi.com/observations/santa%20clara,ca?client_id=ByruDorHEne2JB64BhP1k&client_secret=Jp4xullRcy6DXTPSTKBGXAvGGTaT04iiUQXPj0ob):
 
 ```json
 {
@@ -65,63 +66,71 @@ Here's the response from the request:
       "elevM": 24,
       "elevFT": 79
     },
-    "obTimestamp": 1441083180,
-    "obDateTime": "2015-08-31T21:53:00-07:00",
+    "obTimestamp": 1544806380,
+    "obDateTime": "2018-12-14T08:53:00-08:00",
     "ob": {
-      "timestamp": 1441083180,
-      "dateTimeISO": "2015-08-31T21:53:00-07:00",
-      "tempC": 18,
-      "tempF": 64,
-      "dewpointC": 14,
-      "dewpointF": 57,
-      "humidity": 78,
-      "pressureMB": 1012,
-      "pressureIN": 29.88,
-      "spressureMB": 1009,
-      "spressureIN": 29.8,
-      "altimeterMB": 1012,
-      "altimeterIN": 29.88,
-      "windKTS": 5,
-      "windKPH": 9,
-      "windMPH": 6,
-      "windSpeedKTS": 5,
-      "windSpeedKPH": 9,
-      "windSpeedMPH": 6,
-      "windDirDEG": 300,
-      "windDir": "WNW",
-      "windGustKTS": null,
-      "windGustKPH": null,
-      "windGustMPH": null,
-      "flightRule": "LIFR",
+      "timestamp": 1544806380,
+      "dateTimeISO": "2018-12-14T08:53:00-08:00",
+      "tempC": 14.4,
+      "tempF": 58,
+      "dewpointC": 6.1,
+      "dewpointF": 43,
+      "humidity": 58,
+      "pressureMB": 1016,
+      "pressureIN": 30,
+      "spressureMB": 1014,
+      "spressureIN": 29.94,
+      "altimeterMB": 1017,
+      "altimeterIN": 30.03,
+      "windKTS": 14,
+      "windKPH": 26,
+      "windMPH": 16,
+      "windSpeedKTS": 14,
+      "windSpeedKPH": 26,
+      "windSpeedMPH": 16,
+      "windDirDEG": 140,
+      "windDir": "SE",
+      "windGustKTS": 20,
+      "windGustKPH": 37,
+      "windGustMPH": 23,
+      "flightRule": "VFR",
       "visibilityKM": 16.09344,
       "visibilityMI": 10,
-      "weather": "Clear",
-      "weatherShort": "Clear",
-      "weatherCoded": "::CL",
-      "weatherPrimary": "Clear",
-      "weatherPrimaryCoded": "::CL",
-      "cloudsCoded": "CL",
-      "icon": "clearn.png",
-      "heatindexC": 18,
-      "heatindexF": 64,
-      "windchillC": 18,
-      "windchillF": 64,
-      "feelslikeC": 18,
-      "feelslikeF": 64,
-      "isDay": false,
-      "sunrise": 1441028278,
-      "sunriseISO": "2015-08-31T06:37:58-07:00",
-      "sunset": 1441075047,
-      "sunsetISO": "2015-08-31T19:37:27-07:00",
+      "weather": "Cloudy",
+      "weatherShort": "Cloudy",
+      "weatherCoded": "::OV",
+      "weatherPrimary": "Cloudy",
+      "weatherPrimaryCoded": "::OV",
+      "cloudsCoded": "OV",
+      "icon": "cloudy.png",
+      "heatindexC": 14,
+      "heatindexF": 58,
+      "windchillC": 14,
+      "windchillF": 58,
+      "feelslikeC": 14,
+      "feelslikeF": 58,
+      "isDay": true,
+      "sunrise": 1544800479,
+      "sunriseISO": "2018-12-14T07:14:39-08:00",
+      "sunset": 1544835063,
+      "sunsetISO": "2018-12-14T16:51:03-08:00",
       "snowDepthCM": null,
       "snowDepthIN": null,
       "precipMM": 0,
       "precipIN": 0,
-      "solradWM2": null,
-      "light": 0,
-      "sky": 0
+      "solradWM2": 55,
+      "solradMethod": "estimated",
+      "ceilingFT": 7000,
+      "ceilingM": 2133.6,
+      "light": 24,
+      "QC": "O",
+      "QCcode": 10,
+      "windGustSpeedKTS": 20,
+      "windGustSpeedKPH": 37,
+      "windGustSpeedMPH": 23,
+      "sky": 100
     },
-    "raw": "KSJC 010453Z 30005KT 10SM CLR 18/14 A2989 RMK AO2 SLP122 T01830139",
+    "raw": "KSJC 141653Z 14014G20KT 10SM FEW024 BKN070 OVC110 14/06 A3003 RMK AO2 SLP168 T01440061",
     "relativeTo": {
       "lat": 37.35411,
       "long": -121.95524,
@@ -140,7 +149,7 @@ Here's the response from the request:
 
 To get the `windSpeedMPH`, you would access it through dot notation like this: `data.response.ob.windSpeedMPH`.
 
-To add a little variety to the code samples, here's one that's a bit different. We get the value for the `data.response.ob.windSpeedMPH` and assign the variable based on a condition. The variable then gets appended to the page. See if you can understand this code logic by following the if-else condition:
+To add a little variety to the code samples, let's add some conditional logic in the display. The following code checks to see if `data.response.ob.windSpeedMPH` is greater than `15`. If so, it prints `Yes, it's too windy.` If not, it prints, `No, it's not that windy.`
 
 ```html
 <html>

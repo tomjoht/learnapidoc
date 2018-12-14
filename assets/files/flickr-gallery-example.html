@@ -1,0 +1,51 @@
+<html>
+<style>
+img {max-height:125px; margin:3px; border:1px solid #dedede;}
+</style>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+<script>
+
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=71542c171848da257b3caa214f7ed00f&gallery_id=66911286-72157647277042064&format=json&nojsoncallback=1",
+  "method": "GET",
+  "headers": {}
+}
+
+$.ajax(settings).done(function (data) {
+  console.log(data);
+
+
+
+$("#galleryTitle").append(data.photos.photo[0].title + " Gallery");
+    	$.each( data.photos.photo, function( i, gp ) {
+
+var farmId = gp.farm;
+var serverId = gp.server;
+var id = gp.id;
+var secret = gp.secret;
+
+console.log(farmId + ", " + serverId + ", " + id + ", " + secret);
+
+//  https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg
+
+$("#flickr").append('<img src="https://farm' + farmId + '.staticflickr.com/' + serverId + '/' + id + '_' + secret + '.jpg"/>');
+
+});
+});
+
+</script>
+
+
+<h2><div id="galleryTitle"></div></h2>
+<div style="clear:both;"/>
+<div id="flickr"/>
+
+
+</body>
+</html>
