@@ -211,7 +211,11 @@ form of choices.
             }
 ```
 
-For a tutorial on the blueprint syntax, see this [Apiary tutorial](https://apiary.io/blueprint) or [this tutorial on Github](https://github.com/apiaryio/api-blueprint/blob/master/Tutorial.md).
+For a tutorial on the blueprint syntax, see these resources:
+
+* [API Blueprint tutorial](https://apiblueprint.org/documentation/tutorial.html)
+* [Apiary tutorial](https://help.apiary.io/api_101/api_blueprint_tutorial/)
+* [Github API Blueprint tutorial](https://github.com/apiaryio/api-blueprint/blob/master/Tutorial.md)
 
 You can find [examples of different blueprints here](https://github.com/apiaryio/api-blueprint/tree/master/examples). The examples can often clarify different aspects of the spec.
 
@@ -219,7 +223,7 @@ You can find [examples of different blueprints here](https://github.com/apiaryio
 
 ## Parsing the blueprint
 
-There are many tools that can parse an API blueprint. [Drafter](https://github.com/apiaryio/drafter) is one of the main parsers of the Blueprint. Many other tools build on Drafter and generate static HTML outputs of the blueprint. For example, [aglio](https://github.com/danielgtaylor/aglio) can parse a blueprint and generate static HTML files.
+There are many tools that can parse an API blueprint. [Drafter](https://github.com/apiaryio/drafter) is one of the main parsers of the Blueprint. Many other tools build on Drafter and generate static HTML outputs of the blueprint. For example, [Aglio](https://github.com/danielgtaylor/aglio) can parse a blueprint and generate static HTML files.
 
 For a more comprehensive list of tools, see the [Tooling](https://apiblueprint.org/tools.html) section on apiblueprint.org. (Some of these tools require quite a few prerequisites, so I omitted the tutorial steps here for generating the output on your own machine.)
 
@@ -234,13 +238,13 @@ For this tutorial, we'll use a platform called Apiary to read and display the AP
 
 	  You'll be placed in the API Blueprint editor.
 
-	  <img src="images/apiaryblueprinteditor.png" alt="API Blueprint editor" />
+    {% include course_image.html size="large" filename="apiaryblueprinteditor" ext_print="png" ext_web="png" alt="API Blueprint editor on Apiary" caption="API Blueprint editor on Apiary" %}
 
 	  By default the Polls blueprint is loaded so you can see how it looks. This blueprint gives you an example of the required format for the Apiary tool to parse and display the content. You can also see the [raw file here](https://raw.githubusercontent.com/apiaryio/api-blueprint/master/examples/Polls%20API.md).
 
 3.  At this point, you would start describing your API using the blueprint syntax in the editor. When you make a mistake, error flags indicate what's wrong.
 
-	  You can [read the Apiary tutorial](https://apiary.io/blueprint) and structure your documentation in the blueprint format. The syntax seems to accommodate different methods applied to the same resources.
+	  You can [read the Apiary tutorial](https://help.apiary.io/api_101/api_blueprint_tutorial/) and structure your documentation in the blueprint format. The syntax seems to accommodate different methods applied to the same resources.
 
 	  For this tutorial, you'll integrate the OpenWeatherMap weather API information info formatted in the blueprint format.
 
@@ -460,13 +464,23 @@ For this tutorial, we'll use a platform called Apiary to read and display the AP
     {: .note}
     If the code isn't easy to copy and paste, you can [view and download the file here](https://idratherbewriting.com/learnapidoc/assets/files/apiblueprintweatherdata.md).
 
-5.  Click **Save and Publish**.
+5.  Click **Save**.
+
+Similar to Swagger Editor, the Apiary editor shows you the output in the right pane.
 
 ### b. Interact with the API on Apiary
 
-In the Apiary's top navigation, click **Documentation**. Then interact with the API on Apiary by clicking **Switch to Console**. Call the resources and view the responses.
+In the Apiary's top navigation, click **Documentation**. Then interact with the API on Apiary by clicking first selecting an endpoint and then clicking **Switch to Console**. Call the resources and view the responses.
+
+{% include course_image.html url="" size="" border="" filename="openweathermapapiapiary" ext_print="png" ext_web="png" alt="Previewing the documentation for the OpenWeatherMap API definition in Apiary" caption="reviewing the documentation for the OpenWeatherMap API definition in Apiary" %}
 
 You can switch between an Example and a Console view in the documentation. The Example view shows pre-built responses. The Console view allows you to enter your own values and generate dynamic responses based on your own API key. This dual display &mdash; both the Example and the Console views &mdash; might align better with user needs:
 
 * For users who might not have good data or might not want to make requests that would affect their data, they can view the Example.
 * For users who want to see how the API specifically returns their data, or certain parameters, they can use the Console view.
+
+To call the resource successfully, you'll need to customize the `lat` and `lon` values (e.g., `37.3565982` and `-121.9689848`) and also add an `appid` parameter whose value is your API key (such as `fd4698c940c6d1da602a70ac34f0b147`). You can then call the resource successfully.
+
+{% include course_image.html size="medium" filename="callresourceapiary" ext_print="png" ext_web="png" alt="Customizing the lat, long, and appid parameters in order to make a successful call" caption="Customizing the lat, long, and appid parameters in order to make a successful call" %}
+
+[Apiary](https://apiary.io/) offers a solid platform for both designing and publishing API reference docs. You don't have to use API Blueprint as your spec's format. You can also design your specification using OpenAPI (called "Swagger" in the Apiary UI).
