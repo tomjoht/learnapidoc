@@ -22,7 +22,7 @@ Note that unless you're publishing your docs with Mulesoft or another platform t
 
 Similar to OpenAPI, after you create a RAML file that describes your API, it can be consumed by different platforms to parse and display the information in interactive outputs. The RAML format, which uses YML syntax, is human-readable, efficient, and simple. Here's the OpenWeatherMap API specification file described in RAML file and rendered with the API Console:
 
-<figure><a class="noCrossref" href="http://idratherassets.com/raml/build/index.html" class="noExtIcon"><img src="images/ramlexample.png" alt="Sample RAML output in API Console." /></a><figcaption>This is a sample RAML output in something called API Console</figcaption></figure>
+<figure><a class="noCrossref" href="http://idratherbewriting.com/assets/files/raml/build/index.html" class="noExtIcon"><img src="images/ramlexample.png" alt="Sample RAML output in API Console." /></a><figcaption>This is a sample RAML output in something called API Console</figcaption></figure>
 
 ## Auto-generating client SDK code
 
@@ -44,7 +44,7 @@ Here's the OpenWeatherMap API (which we've been [using in this course](docapis_s
 #%RAML 1.0
 title: OpenWeatherMap API
 version: 2.5
-baseUri: https://api.openweathermap.org/data/2.5/
+baseUri: https://mocksvc.mulesoft.com/mocks/082e051b-e960-48f7-9d75-2f49af8ccd86/data/2.5/ # baseUri: http://api.openweathermap.org/data/2.5/
 baseUriParameters: {}
 documentation:
 - title: OpenWeatherMap API
@@ -334,8 +334,7 @@ types:
       zip:
         required: false
         default: 94040,us
-        example:
-          value: 94040,us
+        example: 94040,us
         displayName: zip
         description: '**Zip code**. Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default.'
         type: string
@@ -398,7 +397,7 @@ types:
         default: json
         example:
           value: json
-        displayname: mode
+        displayName: Mode
         description: '**Mode**. *Example: html*. Determines format of response. Possible values are `xml` and `html`. If mode parameter is empty the format is `json` by default.'
         type: string
         enum:
