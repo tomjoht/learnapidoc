@@ -8,6 +8,15 @@ span.calloutText {
   margin-bottom: 2.4rem;
 }
 
+/* adjust spacing below navbar items */
+.navbar p, .navbar ul, .navbar ol, .navbar li {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  margin-bottom: .3rem;
+}
+
+
+
 @media (min-width: 767px)
 {
 p, .alert, pre, ol li ul li, ol li ol li {
