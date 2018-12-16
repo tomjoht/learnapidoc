@@ -13,7 +13,7 @@ redirect_from:
 
 For API workshops, it helps to consolidate activities into a single page with brief instructions. The content for the activities below is the same content that appears in other parts of the course &mdash; it's just pulled in here (single-sourced) for convenience. Workshops require a healthy amount of hands-on activities to be engaging. If you have feedback about how to improve the activities, or places where you keep getting stuck, [let me know](https://idratherbewriting.com/learnapidoc/contact.html).
 
-Note that not all activities in this course are consolidated here (since participants can only do so much during a workshop). Only workshop activities are denoted with the <i class="fa fa-user-circle"></i> icon.
+Note that not all activities in this course are consolidated here, since participants can only do so much during a workshop. The following activities are those I've selected for workshops.
 
 {% if site.format == "kindle" or site.format == "pdf" %}
 

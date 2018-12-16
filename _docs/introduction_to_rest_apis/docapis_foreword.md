@@ -8,7 +8,7 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 ---
 
-I initially compiled this material to teach a series of workshops to a local tech writing firm in the San Francisco Bay area. They were convinced that they either needed to train their existing technical writers on how to document APIs, or they would have to let some of their writers go. I taught a series of three workshops delivered in the evenings, spread over several weeks.
+I initially compiled this material to teach a series of workshops to a local tech writing firm in the San Francisco Bay area. They felt they either needed to train their existing technical writers on how to document APIs, or they would need to let some of their writers go. I taught a series of three workshops delivered in the evenings, spread over several weeks.
 
 These workshops were fast-paced and introduced the writers to a host of new tools, technologies, and workflows. Even for writers who had been working in the tech comm field for 20 years, API documentation presented new challenges and concepts. The tech landscape is so vast, even for writers who had detailed knowledge of one technology, their tech background didn't always carry over into REST API documentation.
 
@@ -16,7 +16,7 @@ After the workshops, I put the material on my site, idratherbewriting.com, and o
 
 {% include random_ad2.html %}
 
-Second, I knew that through feedback, I could refine the information and make it better. Almost no content is finished on its first release. Instead, content needs to iterate over a period of time through user testing and feedback. This is the case with help content, and it's the same for course material as well. I've been giving both presentations and workshops on this content for several years now.
+Second, I knew that through feedback, I could refine the information and make it better. Almost no content hits the mark on its first release. Instead, content needs to iterate a while through user testing and feedback. Just as this iterative review helps refine documentation, it's the same for course material as well. I've given dozens of presentations and workshops on API documentation for several years now.
 
 Finally, the content would help [drive traffic to my site](https://idratherbewriting.com/2018/08/09/writing-no-longer-a-skill/). How would people discover the material if they couldn't find it online? If the material were only trapped in a print book or behind a firewall, it would be difficult to discover. Content is a rich information asset that draws traffic to any site. It's what people primarily search for online.
 
@@ -46,9 +46,9 @@ Of course, not all comments or emails are praiseworthy. Some people note problem
 
 One question I faced in preparing the content is whether I should stick with text, or combine the text with video. While video can be helpful at times, it's too cumbersome to update. Given the fast-paced, rapidly evolving nature of the technical content, videos get out of date quickly.
 
-Additionally, videos force the user to go at the pace of the narrator. If your skill level matches the narrator, that's great. But in my experience, videos often go too slow or too fast. In contrast, text lets you more easily skim ahead when you already know the material, or slow down when you need more time to absorb concepts.
+Additionally, videos force the user to go at the pace of the narrator. If your skill level matches the narrator, that's great. But in my experience, videos often go too slow or too fast. In contrast, text lets you more easily skip ahead when you already know the material, or slow down when you need more time to absorb concepts.
 
-One of my goals for the content is to keep this course a living, evolving document. As such, I'll continue to add and edit and refine it as needed. I want this content to become a vital learning resource for all technical writers, both now and in the years to come as technologies evolve. My hope is that it will primarily serve the following audiences:
+One of my goals for the content is to keep this course a living, evolving document. As such, I'll continue to add and edit and refine it as needed. I want this content to become a vital learning resource for all technical writers, both now and in the years to come as technologies evolve. The course primarily serves the following audiences:
 
 * Professional technical writers looking to transition from GUI documentation into more API-focused documentation for developers.
 * Students learning how to prepare themselves technically to succeed in the tech comm field, which is becoming more focused on developer documentation.

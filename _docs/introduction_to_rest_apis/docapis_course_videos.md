@@ -21,7 +21,7 @@ This content doesn't embed well in print, as it contains YouTube videos. Please 
 
 ## API Workshop in Menlo Park, California (Nov 8, 2018)
 
-I recorded this full-day API documentation in Menlo Park, California, on November 8, 2018. (For more details, see this [blog post](https://idratherbewriting.com/2018/10/31/upcoming-api-doc-workshop/).) This recording closely aligns with the latest content and activities in this course. I divided this all-day workshop into 5 separate videos.
+I recorded this full-day API documentation in Menlo Park, California, on November 8, 2018. (For more details, see this [blog post](https://idratherbewriting.com/2018/10/31/upcoming-api-doc-workshop/).) This recording closely aligns with the latest content and activities in this course. I divided this all-day workshop into five separate videos.
 
 ### Video 1
 
@@ -76,7 +76,7 @@ Video 5 of 5:
 
 ## API Workshop in Denver, Colorado (March 2018)
 
-These videos are from an API documentation workshop that I gave in Denver, Colorado, on March 10, 2018. (For more details, see this [blog post](https://idratherbewriting.com/2018/03/12/api-documentation-workshop-in-denver/)). This version of the workshop is slightly different from the latest version of the course, but the content is still good. I divided the videos into 3 parts.
+These videos are from an API documentation workshop that I gave in Denver, Colorado, on March 10, 2018. (For more details, see this [blog post](https://idratherbewriting.com/2018/03/12/api-documentation-workshop-in-denver/)). This version of the workshop is slightly different from the latest version of the course, but the content is still good. I divided the videos into three parts.
 
 ### Part I of III
 
@@ -126,17 +126,17 @@ I gave this presentation to the STC Silicon Valley chapter -- more details are [
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/__vSXJn-JQo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-This is a presentation I gave to the WTD South Bay group -- more details are  [here](https://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/). This video covers the [Publishing API docs](https://idratherbewriting.com/learnapidoc/pubapis_overview.html) section in this course.
+I gave this presentation to the WTD South Bay group -- more details are  [here](https://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/). This video covers the [Publishing API docs](https://idratherbewriting.com/learnapidoc/pubapis_overview.html) section in this course.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Z3e_38WS-2Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-This is a presentation I gave to STC/WTD Denver -- more details are [here](https://idratherbewriting.com/2018/03/09/docs-as-code-tools-and-workflows-denver-presentation/). The video covers the [Docs as code tools](pubapis_docs_as_code.html) and [Case study: Switching tools to docs-as-code](pubapis_switching_to_docs_as_code.html) topics.
+I gave this presentation to STC/WTD Denver &mdash; more details are [here](https://idratherbewriting.com/2018/03/09/docs-as-code-tools-and-workflows-denver-presentation/). The video covers the [Docs as code tools](pubapis_docs_as_code.html) and [Case study: Switching tools to docs-as-code](pubapis_switching_to_docs_as_code.html) topics.
 
 ### OpenAPI and Swagger
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/gcDSL-8pkvU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-This was a presentation I gave to the STC/WTD San Diego chapter (more details are [here](https://idratherbewriting.com/2018/02/14/openapi-and-swagger-presentation/). This video covers the [OpenAPI specification and Swagger](https://idratherbewriting.com/learnapidoc/restapispecifications.html) section.
+I gave this presentation to the STC/WTD San Diego chapter (more details are [here](https://idratherbewriting.com/2018/02/14/openapi-and-swagger-presentation/). This video covers the [OpenAPI specification and Swagger](https://idratherbewriting.com/learnapidoc/restapispecifications.html) section.
 
 ### How to Add Swagger to your API
 
