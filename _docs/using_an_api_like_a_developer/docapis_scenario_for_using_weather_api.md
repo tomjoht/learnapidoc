@@ -18,7 +18,7 @@ Let's start using an actual REST API to get more familiar with how they work. In
 
 ## Sample scenario: How windy is it?
 
-Let's say that you're a web developer and you want to add a weather conditions feature to your site, which is for cyclists. You want to allow users who come to your site to see what the wind and temperature conditions are for biking. You want something like this:
+Let's say that you're a web developer and you want to add weather information to your site (your site is for cyclists). You want to allow users who come to your site to see what the wind and temperature conditions are for biking. You want something like this:
 
 {% if site.format == "pdf" or site.format == "kindle" %}
 <img class="small" src="images/restapi_windycall.png" alt="Wind meter conditions for website" />
@@ -58,7 +58,7 @@ Before diving too far down int the OpenWeatherMap API, let's look at another wea
 2. Click **Documentation** on the top navigation bar.  
 3. Click **Weather API**.
 4. Click **Data Endpoints**.
-3. Click **Reference** (in the sidebar) and then click **Endpoints**. (Or just go [here](https://www.aerisweather.com/support/docs/api/reference/endpoints/) directly.)
+3. Click **Reference** (in the sidebar) and then click **Endpoints**. (Or go [here](https://www.aerisweather.com/support/docs/api/reference/endpoints/) directly.)
 
 	<a class="noCrossRef" href="http://www.aerisweather.com/support/docs/api/reference/endpoints/" class="noExtIcon"><img class="medium" src="images/aerisendpoints.png" alt="Aeris Endpoints" /></a>
 
@@ -79,9 +79,9 @@ APIs differ considerably in their design, presentation, responses, and other det
 * [Weather Underground API](https://www.wunderground.com/weather/api/)
 * [Weatherbit API](https://www.weatherbit.io/api)
 
-Each weather API has a totally different approach to documentation. As you'll see going through this course, the variety and uniqueness of each API doc site (even when approaching the same topic &mdash; a weather forecast) presents a lot of challenges to tech writing teams. Not only do presentations vary, terminology with APIs varies as well.
+Each weather API has an entirely different approach to documentation. As you'll see going through this course, the variety and uniqueness of each API doc site (even when approaching the same topic &mdash; a weather forecast) presents a lot of challenges to tech writing teams. Not only do presentations vary, but terminology with APIs also varies.
 
-As I mentioned in [REST is a style, not a standard](docapis_what_is_a_rest_api.html#rest-is-a-style-not-a-standard), REST APIs are an architectural style following common characteristics and principles; they don't all follow the same standard or specification. Users really have to read the documentation to understand how to use the API.
+As I mentioned in [REST is a style, not a standard](docapis_what_is_a_rest_api.html#rest-is-a-style-not-a-standard), REST APIs are an architectural style following common characteristics and principles; they don't all follow the same standard or specification. Users have to read the documentation to understand how to use the API.
 
 {% include random_ad.html %}
 

@@ -11,7 +11,7 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-When you're testing endpoints with different parameters, you can use one of the many GUI REST clients available to make the requests. (By "GUI," I just mean there's a graphical user interface with boxes and buttons for you to click.) You can also use [curl](docapis_install_curl.html) (which we'll cover soon), but GUI clients tend to simplify testing with REST APIs.
+When you're testing endpoints with different parameters, you can use one of the many GUI REST clients available to make the requests. (By "GUI," I mean there's a graphical user interface with boxes and buttons for you to click.) You can also use [curl](docapis_install_curl.html) (which we'll cover soon), but GUI clients tend to simplify testing with REST APIs.
 
 * TOC
 {:toc}
@@ -27,7 +27,7 @@ With a GUI REST client, you can:
 
 With a GUI REST client, you won't have to worry about getting curl syntax right and analyzing requests and responses from the command line.
 
-## Common GUI clients
+## Popular GUI clients
 
 Some popular GUI clients include the following:
 
@@ -39,7 +39,7 @@ Some popular GUI clients include the following:
 Of the various GUI clients available, Postman is probably the best option, since it allows you to save both calls and responses, is free, works on both Mac and PC, and is easy to configure.
 
 {: .note}
-A lot of times abstract concepts don't make sense until you can contextualize them with some kind of action. In this course, I'm following more of an "act-first-then-understand" type of methodology. After you do an activity, we'll explore the concepts in more depth. So if it seems like I'm glossing over concepts now, such as what a GET method is or a endpoint, hang in there. When we deep dive into these points in [Documenting API endpoints](docendpoints.html), these concepts will be a lot clearer.
+A lot of times abstract concepts don't make sense until you can contextualize them with an action. In this course, I'm following more of an "act-first-then-understand" type of methodology. After you do an activity, we'll explore the concepts in more depth. So if it seems like I'm glossing over concepts now, such as what a GET method is or an endpoint, hang in there. When we deep dive into these points in [Documenting API endpoints](docendpoints.html), these concepts will be a lot clearer.
 
 {% include random_ad2.html %}
 
@@ -53,13 +53,13 @@ Although Postman is a popular REST client, you can also use others, such as Paw.
 
 <img src="images/pawexample.png" alt="Paw" />
 
-Like Postman, Paw also allows you to easily see the request headers, response headers, URL parameters, and other data. I like that Paw shows the response in an expandable/collapsible way. This can make it easier to explore the response. Note that Paw is specific to Mac only, and like most products for Mac users, costs money.
+Like Postman, Paw also allows you to easily see the request headers, response headers, URL parameters, and other data. I like that Paw shows the response in an expandable/collapsible way. The expand/collapse feature can make it easier to explore the response. Note that Paw is specific to Mac only, and like most products for Mac users, costs money.
 
 ## Enter several requests for the Aeris API into Postman
 
 Now let's switch APIs a bit and see some weather information from the [Aeris Weather API](https://www.aerisweather.com/), which you explored a bit in [Scenarios for using a weather API](docapis_scenario_for_using_weather_api.html#aeris). Constructing the endpoints for the Aeris Weather API is a bit more complicated since there are many different queries, filters, and other parameters you can use to configure the endpoint.
 
-Here are a few pre-configured requests to configure for Aeris. You can just paste the requests directly into the URL request box in Postman (after customizing the `CLIENTID` AND `CLIENTSECRET` values), and the parameters will auto-populate in the parameter fields.
+Here are a few pre-configured requests to configure for Aeris. You can paste the requests directly into the URL request box in Postman (after customizing the `CLIENTID` AND `CLIENTSECRET` values), and the parameters will auto-populate in the parameter fields.
 
 As with the OpenWeather Map API, the Aeris API doesn't use a Header field to pass the API keys &mdash; the key and secret are passed directly in the request URL as part of the query string.
 

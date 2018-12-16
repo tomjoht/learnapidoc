@@ -11,7 +11,7 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-Almost every API has a method in place to authenticate requests. You usually have to provide an API key in your requests to get a response. Although we'll dive into [authentication and authorization](docapis_more_about_authorization.html) later, we need to get some API keys now in order to make requests to our weather API.
+Almost every API has a method in place to authenticate requests. You usually have to provide an API key in your requests to get a response. Although we'll dive into [authentication and authorization](docapis_more_about_authorization.html) later, we need to get some API keys now to make requests to our weather API.
 
 * TOC
 {:toc}
@@ -24,10 +24,10 @@ Requiring authorization allows API publishers to do the following:
 * Rate limit the number of requests
 * Control availability of certain features within the API, and more
 
-In order to run the code samples in this course, you will need to use your own API keys, since these keys are usually treated like passwords and not given out or published openly on a web page.
+To run the code samples in this course, you will need to use your own API keys, since these keys are usually treated like passwords and not given out or published openly on a web page.
 
 {: .tip}
-Even though you should treat API keys like passwords, if you want to borrow my API keys, you can access them [here](https://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt). I sometimes find that workshop participants get hung up in trying to acquire API keys, so I make them available here to avoid hangups and delays in the activities.
+Even though you should treat API keys like passwords, if you want to borrow my API keys, you can access them [here](https://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt). I sometimes find that workshop participants get hung up in trying to acquire API keys, so I make them available here to avoid hang-ups and delays in the activities.
 
 {% include random_ad.html %}
 
@@ -38,7 +38,7 @@ Even though you should treat API keys like passwords, if you want to borrow my A
 Now for contrast, let's get the keys for the Aeris Weather API. The Aeris Weather API requires both a secret and ID to make requests.
 
 1.  Go to [http://www.aerisweather.com](http://www.aerisweather.com) and click **Sign Up** in the upper-right corner.
-2.  Under **Developer**, click **TRY FOR FREE**. (The free version limits the number of requests per day and per minute you can make.)
+2.  Under **Developer**, click **TRY FOR FREE**. (The free version limits the number of requests you can make.)
 3.  Enter a username, email, and password, and then click **SIGN UP FOR FREE** to create an Aeris account. Then sign in.
 4.  After you sign up for an account, click **Account** in the upper-right corner.
 
@@ -51,23 +51,23 @@ Now for contrast, let's get the keys for the Aeris Weather API. The Aeris Weathe
     * **Application Namespace**: localhost
 7.  Click **Save App**.  
 
-After your app registers, you should see an ID, secret, and namespace for the app. Copy this information into a place you can easily access, since you'll need it to make requests.
+After your app registers, you should see an ID, secret, and namespace for the app. Copy this information into a place you can easily access since you'll need it to make requests.
 
 {: .tip}
-Keep in mind how users authorize calls with an API &mdash; this is something you usually cover in API documentation. Later in the course we will dive into [authorization methods](docapis_more_about_authorization.html) in more detail.
+Keep in mind how users authorize calls with an API &mdash; this is something you usually cover in API documentation. Later in the course, we will dive into [authorization methods](docapis_more_about_authorization.html) in more detail.
 
 ## Make sure you have a text editor
 
 In the upcoming activities, you'll work with code in a text file. When you're working with code, you use a text editor (to work in plain text) instead of a rich text editor (which would provide a WYSIWYG interface). Here are a few choices for text editors:
 
 * [Sublime Text](http://www.sublimetext.com/) (Mac or PC)
-* [TextWrangler](http://www.barebones.com/products/textwrangler/) or [BBedit](http://www.barebones.com/products/bbedit/) (Mac)
+* [TextWrangler](http://www.barebones.com/products/textwrangler/) or [BBEdit](http://www.barebones.com/products/bbedit/) (Mac)
 * [WebStorm](https://www.jetbrains.com/webstorm/) (Mac or PC)
 * [Notepad++](https://notepad-plus-plus.org/) (PC)
 * [Atom](https://atom.io/) (Mac or Windows)
 * [Komodo Edit](http://komodoide.com/komodo-edit/) (Mac or PC)
 * [Coda](https://panic.com/coda/) (Mac)
 
-These editors provide features that let you better manage the text. Choose the one you want. (Personally, I use Sublime Text when I'm working with code samples, and Atom when I'm working with Jekyll projects.) Avoid using TextEdit since it adds some formatting behind the scenes that can corrupt your content.
+These editors provide features that let you better manage the text. Choose the one you want. (My preference is to use Sublime Text when I'm working with code samples, and Atom when I'm working with Jekyll projects.) Avoid using TextEdit since it adds some formatting behind the scenes that can corrupt your content.
 
 {% include random_ad2.html %}

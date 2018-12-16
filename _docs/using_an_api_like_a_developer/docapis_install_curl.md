@@ -19,6 +19,9 @@ Instead of describing how to make REST calls using a GUI client like Postman, th
 
 curl is a command-line utility that lets you execute HTTP requests with different parameters and methods. Instead of going to web resources in a browser's address bar, you can use the command line to get these same resources, retrieved as text.
 
+{: .note}
+Sometimes curl is written as cURL. It stands for Client URL. "curl" is the more common convention for its spelling, but both refer to the same thing.
+
 ## Installing curl
 
 curl is usually available by default on Macs but requires some installation on Windows. Follow these instructions for installing curl:
@@ -27,7 +30,7 @@ curl is usually available by default on Macs but requires some installation on W
 
 If you have a Mac, by default, curl is probably already installed. To check:
 
-1.  Open Terminal (press **Cmd + space bar** to open Spotlight, and then type "Terminal").
+1.  Open Terminal (press **Cmd + spacebar** to open Spotlight, and then type "Terminal").
 2.  In Terminal type `curl -V`. The response should look something like this:
 
     ```
@@ -39,9 +42,9 @@ If you don't see this, you need to [download and install curl](http://curl.haxx.
 
 ### Install curl on Windows
 
-Installing curl on Windows involves a few more steps. First, determine whether you have 32-bit or 64-bit Windows by right-clicking **Computer** and selecting **Properties.** Then follow the instructions in this [Confused by Code page](http://www.confusedbycode.com/curl/#downloads). Most likely, you'll want to select the **With Administrator Privileges (free)** installer.
+Installing curl on Windows involves a few more steps. First, determine whether you have 32-bit or 64-bit Windows by right-clicking **Computer** and selecting **Properties.** Then follow the instructions in this [Confused by Code page](http://www.confusedbycode.com/curl/#downloads). Most likely, you'll want to choose the **With Administrator Privileges (free)** installer.
 
-After curl is installed, test your version of curl by doing the following:
+After you install curl, test your version of curl by doing the following:
 
 1. Open a command prompt by clicking the **Start** button and typing **cmd**.
 2. Type `curl -V`.

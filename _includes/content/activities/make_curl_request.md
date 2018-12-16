@@ -6,8 +6,6 @@
 
     <img src="images/postmancurl.png" class="medium" />
 
-    (The official name is "cURL" but most people just write it as "curl.")
-
     The Postman code for the OpenWeatherMap weather request looks like this in curl format:
 
     ```bash
@@ -17,7 +15,7 @@
       -H 'cache-control: no-cache'
     ```
 
-    Postman adds some of its own header information (designated with `-H`). You can optionally remove these extra header tags (including them won't hurt anything). You can also remove the backslashes (`\`), which are just added for readability. *Additionally, note that on Windows you must change single quotes to double quotes, since double quotes are not supported in the default Windows termial.* Here's the curl call with the `-H` and backslashes removed, and single quotes converted to double quotes:
+    Postman adds some of its own header information (designated with `-H`). You can optionally remove these extra header tags (including them won't hurt anything). You can also remove the backslashes (`\`), which are just added for readability. *Additionally, note that on Windows you must change single quotation marks to double quotation marks because single quotation marks are not supported in the default Windows terminal.* Here's the curl call with the `-H` and backslashes removed, and single quotation marks converted to double quotation marks:
 
     ```bash
     curl -X GET "https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=-121.9689848&units=imperial&appid=fd4698c940c6d1da602a70ac34f0b147"
@@ -27,9 +25,9 @@
 
 4.  Go to your terminal:
 
-    * If you're on Windows, go to **Start** and type **cmd** to open up the command line. (If you're on Windows 8, see [these instructions for accessing the commandline](http://pcsupport.about.com/od/windows-8/a/command-prompt-windows-8.htm).) Right-click and then select **Paste** to insert the call.
+    * If you're on Windows, go to **Start** and type **cmd** to open up the command line. (If you're on Windows 8, see [these instructions for accessing the command line](http://pcsupport.about.com/od/windows-8/a/command-prompt-windows-8.htm).) Right-click and then select **Paste** to insert the call.
 
-    * If you're on a Mac, either open [iTerm](https://www.iterm2.com/) or Terminal (by pressing **Cmd + space bar** and typing **Terminal**). Paste the request you have in your text editor into the command line and then press the **Enter** key.
+    * If you're on a Mac, either open [iTerm](https://www.iterm2.com/) or Terminal (by pressing **Cmd + spacebar** and typing **Terminal**). Paste the request you have in your text editor into the command line and then press the **Enter** key.
 
     The response from the OpenWeatherMap weather request should look as follows:
 

@@ -19,11 +19,11 @@ One of the advantages of REST APIs is that you can use almost any programming la
 
 Each programming language has a different way of making web calls. Rather than exhausting your energies trying to show how to make web calls in Java, Python, C++, JavaScript, Ruby, and so on, you can just show the call using curl.
 
-curl provides a generic, language agnostic way to demonstrate HTTP requests and responses. Users can see the format of the request, including any headers and other parameters. Your users can translate this into the specific format for the language they're using.
+curl provides a generic, language-agnostic way to demonstrate HTTP requests and responses. Users can see the format of the request, including any headers and other parameters. Your users can translate this into the specific format for the language they're using.
 
 ## Try using curl to GET a web page
 
-As mentioned earlier, one reason REST APIs are so familiar is because REST follows the same model as the web (see ["The web itself follows REST"](docapis_what_is_a_rest_api.html#the-web-itself-follows-rest)). When you type an `http` address into a browser address bar, you're telling the browser to make an HTTP request to a resource on a server. The server returns a response, and your browser converts the response to a more visual display. But you can also see the raw code.
+As mentioned earlier, one reason REST APIs are so familiar is that REST follows the same model as the web (see ["The web itself follows REST"](docapis_what_is_a_rest_api.html#the-web-itself-follows-rest)). When you type an `http` address into a browser address bar, you're telling the browser to make an HTTP request to a resource on a server. The server returns a response, and your browser converts the response to a more visual display. But you can also see the raw code.
 
 To see an example of how curl retrieves a web resource, open a terminal and type the following:
 
@@ -31,7 +31,7 @@ To see an example of how curl retrieves a web resource, open a terminal and type
 curl http://example.com
 ```
 
-You should see all the code behind the site [example.com](http://example.com). The browser's job is to make that code visually readable. curl shows you what you're really retrieving.
+You should see all the code behind the site [example.com](http://example.com). The browser's job is to make that code visually readable. curl shows you what you're actually retrieving.
 
 ## Requests and responses include headers too
 
@@ -67,7 +67,7 @@ When you type an address into a website, you see only the body of the response. 
     curl http://example.com -I
     ```
 
-    The header contains the metadata about the response. All of this information is transferred to the browser when you make a request to a URL in your browser (that is, when you surf to a web page online), but the browser doesn't show you this information. You can see the header information using the [Chrome Developer Tools console](https://developers.google.com/web/tools/chrome-devtools/console/) if you look on the Network tab.
+    The header contains the metadata about the response. All of this information is transferred to the browser when you make a request to a URL in your browser (for example, when you surf to a web page online), but the browser doesn't show you this information. You can see the header information using the [Chrome Developer Tools console](https://developers.google.com/web/tools/chrome-devtools/console/) if you look on the Network tab.
 
 3.  Now let's specify the method. The GET method (read) is implied by default when no other method is specified, but we'll make it explicit here with the `-X` parameter:
 
@@ -140,7 +140,7 @@ curl has shorthand names for the various options that you include with your requ
 
 Here's what the commands mean:
 
-* `-X GET`. The `-X` signifies the method used for for the request. Common options are `GET`, `POST`, `DELETE`, `PUT`. (You might also see `--get` used instead. Most curl commands have a couple of different representations. `-X GET` can also be written as `--get`.)
+* `-X GET`. The `-X` signifies the method used for the request. Common options are `GET`, `POST`, `DELETE`, `PUT`. (You might also see `--get` used instead. Most curl commands have a couple of different representations. `-X GET` can also be written as `--get`.)
 
 * `-H`. Submits a custom header. Include an additional `-H` for each header key-value pair you're submitting.
 
@@ -171,7 +171,7 @@ curl has a lot of possible commands, but the following are the most common when 
 :  *Example:* `curl -d "data-to-post" http://www.example.com`
 
 `-H` or `--header`
-:  Submits the request header to the resource. This is very common with REST API requests because the authorization is usually included in the header.
+:  Submits the request header to the resource. Headers are common with REST API requests because the authorization is usually included in the header.
 :  *Example:* `curl -H "key:12345" http://www.example.com`
 
 `-X POST`
@@ -209,7 +209,7 @@ curl has a lot of possible commands, but the following are the most common when 
       </tr>
       <tr>
          <td markdown="span">`-H` or `--header`</td>
-         <td markdown="span">Submits the request header to the resource. This is very common with REST API requests because the authorization is usually included in the header.</td>
+         <td markdown="span">Submits the request header to the resource. Headers are common with REST API requests because the authorization is usually included in the header.</td>
          <td markdown="span">`curl -H "key:12345" http://www.example.com` </td>
       </tr>
       <tr>
@@ -262,6 +262,6 @@ Quiz yourself to see how much you remember. What do the following parameters mea
 * `-d`
 
 {: .tip}
-When you use curl, the Terminal and [iTerm](https://www.iterm2.com/) on the Mac provide a much easier experience than using the command prompt in Windows. If you're going to get serious about API documentation but you're still on a PC, consider switching. There are a lot of utilities that you install through a terminal that *just work* on a Mac.
+When you use curl, the Terminal and [iTerm](https://www.iterm2.com/) on the Mac provide a much easier experience than using the command prompt in Windows. If you're going to get serious about API documentation, but you're still on a PC, consider switching. There are a lot of utilities that you install through a terminal that *just work* on a Mac.
 
 To learn more about curl with REST documentation, see [REST-esting with curl](http://blogs.plexibus.com/2009/01/15/rest-esting-with-curl/).

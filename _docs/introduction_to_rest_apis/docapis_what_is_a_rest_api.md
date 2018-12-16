@@ -11,7 +11,7 @@ redirect_from:
 - /docapis_what-is-a-rest-api/
 ---
 
-This course is all about learning by doing, but while *doing* various activities, I'll periodically pause and dive into some more abstract concepts to fill in more detail. This is one of those deep dive moments into concepts. Here we'll dive into what a REST API is, comparing it to other types of APIs like SOAP. REST APIs have common characteristics but no definitive protocols like their predecessors.
+This course is all about learning by doing, but while *doing* various activities, I'll periodically pause and dive into some more abstract concepts to fill in more detail. This topic is one of those deep-dive moments into concepts. Here we'll explore what a REST API is, comparing it to other types of APIs like SOAP. REST APIs have common characteristics but no definitive protocols like its SOAP predecessor.
 
 
 {% if site.format == "web" %}
@@ -41,11 +41,11 @@ Ultimately, developers use API calls behind the scenes to pull information into 
 
 ## APIs that use HTTP protocol are "web services"
 
-A "web service" is a web-based application that provides resources in a format consumable by other computers. Web services include various types of APIs, including both REST and SOAP APIs. Web services are basically request and response interactions between clients and servers (a computer makes the request for a resource, and the web service provides the response).
+A "web service" is a web-based application that provides resources in a format consumable by other computers. Web services include various types of APIs, including both REST and SOAP APIs. Web services are basically request-and-response interactions between clients and servers (a computer requests a resource, and the web service responds to the request).
 
-All APIs that use HTTP protocol as the transport format for requests and responses can be classified as "web services." With web services, the client making the request for the resource and the API server providing the response can use any programming language or platform &mdash; it doesn't matter because the message request and response are made through a common HTTP web protocol.
+All APIs that use HTTP protocol as the transport format for requests and responses are considered "web services." With web services, the client making the request for the resource and the API server providing the response can use any programming language or platform &mdash; it doesn't matter because the message request and response are made through a common HTTP web protocol.
 
-This is part of the beauty of web services: they are language agnostic and therefore interoperable across different platforms and systems. When documenting a REST API, it doesn't matter whether the API is built with Java, Ruby, Python, or some other language. The requests are made over HTTP, and the responses are returned through HTTP.
+The web protocol is part of the beauty of web services: they are language agnostic and therefore interoperable across different platforms and systems. When documenting a REST API, it doesn't matter whether engineers build the API with Java, Ruby, Python, or some other language. The requests are made over HTTP, and the responses are returned through HTTP.
 
 The following diagram shows the general model of a REST API:
 
@@ -69,11 +69,11 @@ SOAP is a standardized protocol that requires XML as the message format for requ
 
 The WSDL file defines the allowed elements and attributes in the message exchanges. The WSDL file is machine readable and used by the servers interacting with each other to facilitate the communication.
 
-SOAP messages are enclosed in an "envelope" that includes a header and body, using a specific XML schema and namespace. For an example of a SOAP request and response format, see [SOAP vs REST Challenges](http://www.soapui.org/testing-dojo/world-of-api-testing/soap-vs--rest-challenges.html).
+SOAP messages are enclosed in an "envelope" that includes a header and body, using a specific XML schema and namespace. For an example of a SOAP request and response format, see [SOAP vs REST 101: Understand The Differences](http://www.soapui.org/testing-dojo/world-of-api-testing/soap-vs--rest-challenges.html).
 
 The main problem with SOAP is that the XML message format is too verbose and heavy. It is particularly problematic with mobile scenarios where file size and bandwidth are critical. The verbose message format slows processing times, which makes SOAP interactions lethargic.
 
-SOAP is still used in enterprise application scenarios (especially with financial institutions) with server-to-server communication, but in the past 5 years, SOAP has largely been replaced by REST, especially for APIs on the open web.
+SOAP is still used in enterprise application scenarios (especially with financial institutions) with server-to-server communication, but in the past five years, SOAP has mostly been replaced by REST, especially for APIs on the open web.
 
 ## REST is a style, not a standard
 
@@ -83,7 +83,7 @@ A RESTful API might not follow all of the official characteristics of REST as ou
 
 As an architectural style, you aren't limited to XML as the message format. REST APIs can use any message format the API developers want to use, including XML, JSON, Atom, RSS, CSV, HTML, and more.
 
-Despite the variety of message format options, most REST APIs use JSON (JavaScript Object Notation) as the default message format. This is because JSON provides a lightweight, simple, and more flexible message format that increases the speed of communication. The lightweight nature of JSON also allows for mobile processing scenarios and is easy to parse on the web using JavaScript.
+Despite the variety of message format options, most REST APIs use JSON (JavaScript Object Notation) as the default message format. They use JSON because it provides a lightweight, simple, and more flexible message format that increases the speed of communication. The lightweight nature of JSON also allows for mobile processing scenarios and is easy to parse on the web using JavaScript.
 
 In contrast, with XML, XSLT is used more for presenting or rather "transforming" (the "T" in XSLT) the content stored in an XML language. XSLT enables the human readability (rather than processing data stored in an XML format).
 
@@ -99,7 +99,7 @@ Here's what a sample endpoint might look like:
 http://apiserver.com/homes?limit=5&format=json
 ```
 
-The endpoint shows the whole path to the resource. However, in documentation, you usually separate out this URL into more specific parts:
+The endpoint shows the whole path to the resource. However, in documentation, you usually separate this URL into more specific parts:
 
 * The **base path** (or base URL or host) refers to the common path for the API. In the example above, the base path is `http://apiserver.com`.
 * The **endpoint** refers to the end path of the endpoint. In the example above, `/homes`.
@@ -113,7 +113,7 @@ You can have multiple endpoints that refer to the same resource. Here's one vari
 http://apiserver.com/homes/{home id}
 ```
 
-This might be an endpoint that retrieves a home resource that contains a particular ID. What is transferred back from the server to the client is the "representation" of the resource. The resource may have many different representations (showing all homes, homes that match certain criteria, homes in a specific format, and so on), but here we want to see a home with a particular ID.
+The above URL might be an endpoint that retrieves a home resource that contains a particular ID. What is transferred back from the server to the client is the "representation" of the resource. The resource may have many different representations (showing all homes, homes that match certain criteria, homes in a specific format, and so on), but here we want to see a home with a particular ID.
 
 {: .tip}
 The relationship between resources and methods is often described in terms of "nouns" and "verbs." The resource is the noun because it is an object or thing. The verb is what you're doing with that noun. Combining nouns with verbs is how you form the language in REST.
@@ -138,21 +138,21 @@ Because the web itself is an example of RESTful style architecture, the way REST
 
 REST APIs are also stateless and cacheable. Stateless means that each time you access a resource through an endpoint, the API provides the same response. It doesn't remember your last request and take that into account when providing the new response. In other words, there aren't any previously remembered states that the API takes into account with each request.
 
-The responses can also be cached in order to increase the performance. If the browser's cache already contains the information asked for in the request, the browser can simply return the information from the cache instead of getting the resource from the server again.
+The responses can also be cached to increase the performance. If the browser's cache already contains the information asked for in the request, the browser can just return the information from the cache instead of getting the resource from the server again.
 
-Caching with REST APIs is similar to caching of web pages. The browser uses the last-modified-time value in the HTTP headers to determine if it needs to get the resource again. If the content hasn't been modified since the last time it was retrieved, the cached copy can be used instead. This increases the speed of the response.
+Caching with REST APIs is similar to caching of web pages. The browser uses the last-modified-time value in the HTTP headers to determine if it needs to get the resource again. If the content hasn't been modified since the last time it was retrieved, the cached copy can be used instead. Caching increases the speed of the response.
 
 REST APIs have other characteristics, which you can dive more deeply into on this [REST API Tutorial](http://www.restapitutorial.com/lessons/whatisrest.html). One of these characteristics includes links in the responses to allow users to page through to additional items. This feature is called HATEOAS, or Hypermedia As The Engine of Application State.
 
-Understanding REST at a higher, more theoretical level isn't my goal here, nor is this knowledge necessary to document a REST API. However, there are a number of more technical books, courses, and websites that explore REST API concepts, constraints, and architecture in more depth that you can consult if you want to. For example, check out [Foundations of Programming: Web Services by David Gassner](https://www.lynda.com/Software-Development-tutorials/Foundations-Programming-Web-Services/126131-2.html) on lynda.com.
+Understanding REST at a higher, more theoretical level isn't my goal here, nor is this knowledge necessary to document a REST API. However, there are many technical books, courses, and websites that explore REST API concepts, constraints, and architecture in more depth that you can consult if you want to. For example, check out [Foundations of Programming: Web Services by David Gassner](https://www.lynda.com/Software-Development-tutorials/Foundations-Programming-Web-Services/126131-2.html) on lynda.com.
 
 ### REST APIs don't use WSDL files, but some specs exist
 
-An important aspect of REST APIs, especially in terms of documentation, is that they don't use a WSDL file to describe the elements and parameters allowed in the requests and responses.
+An important aspect of REST APIs, especially in the context of documentation, is that they don't use a WSDL file to describe the elements and parameters allowed in the requests and responses.
 
-Although there is a possible WADL (Web Application Description Language) file that can be used to describe REST APIs, they're rarely used since the WADL files don't adequately describe all the resources, parameters, message formats, and other attributes of the REST API. (Remember that the REST API is an architectural style, not a standardized protocol.)
+Although there is a possible WADL (Web Application Description Language) file that can be used to describe REST APIs, WADL files are rarely used because they don't adequately describe all the resources, parameters, message formats, and other attributes of the REST API. (Remember that the REST API is an architectural style, not a standardized protocol.)
 
-In order to understand how to interact with a REST API, you have to *read the documentation* for the API. Hooray! This makes the technical writer's role extremely important with REST APIs.
+To understand how to interact with a REST API, you have to *read the documentation* for the API. Hooray! The need to read the docs makes the technical writer's role extremely important with REST APIs.
 
 Some formal specifications &mdash; for example, such [OpenAPI](pubapis_swagger_intro.html) and [RAML](pubapis_raml.html) &mdash; have been developed to describe REST APIs. When you describe your API using the OpenAPI or RAML specification, tools that can read those specifications (such as [Swagger UI](pubapis_swagger.html) or the [RAML API Console](pubapis_raml.html#apiconsole)) will generate an interactive documentation output.
 
@@ -160,7 +160,7 @@ The OpenAPI specification document can take the place of the WSDL file that was 
 
 But don't expect the Swagger UI or RAML API Console documentation outputs to include all the details users would need to work with your API. For example, these outputs won't include info about [authorization keys](docapis_more_about_authorization.html), details about workflows and interdependencies between endpoints, and so on. The Swagger or RAML output usually contains reference documentation only, which typically only accounts for a third or half of the total needed documentation (depending on the API).
 
-Overall, REST APIs are more varied and flexible than SOAP APIs, and you almost always need to read the documentation in order to understand how to interact with a REST API. As you explore REST APIs, you will find that they differ greatly from one to another (especially the format and display of their documentation sites, which we'll look at in [Survey of API doc sites](pubapis_apilist.html)), but they all share the common patterns outlined here. At the core of any REST API is a request and response transmitted over the web.
+Overall, REST APIs are more varied and flexible than SOAP APIs, and you almost always need to read the documentation to understand how to interact with a REST API. As you explore REST APIs, you will find that they differ significantly from one to another (especially the format and display of their documentation sites, which we'll look at in [Survey of API doc sites](pubapis_apilist.html)), but they all share the common patterns outlined here. At the core of any REST API is a request and response transmitted over the web.
 
 ## Additional reading
 
