@@ -211,7 +211,7 @@ request_example:
 
 resource_description:
   term: resource description
-  def: "\"Resources\" refers to the information returned by an API. Most APIs have various categories of information, or various resources, that can be returned. <br/><br/>The resource description is brief (1-3 sentences) and usually starts with a verb. Resources usually have a number of endpoints to access the resource, and multiple methods for each endpoint. Thus, on the same page, you usually have a general resource described along with a number of endpoints for accessing the resource, also described."
+  def: "\"Resources\" refers to the information returned by an API. Most APIs have various categories of information, or various resources, that can be returned. <br/><br/>The resource description is brief (1-3 sentences) and usually starts with a verb. Resources usually have a number of endpoints to access the resource and multiple methods for each endpoint. Thus, on the same page, you usually have a general resource described along with a number of endpoints for accessing the resource, also described."
   link: See [Resource description](docapis_resource_descriptions.html) for more details.
 
 response:

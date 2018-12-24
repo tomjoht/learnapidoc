@@ -8,7 +8,7 @@ section: docendpoints
 path1: /docendpoints.html
 ---
 
-To break into API documentation, you need to start thinking about API documentation samples in your portfolio. Your portfolio is key to [getting a job in API documentation](jobapis.html). Without a portfolio that contains compelling API documentation samples, it will be extremely difficult to get a job in API documentation.
+To break into API documentation, you need to start thinking about API documentation samples in your portfolio. Your portfolio is key to [getting a job in API documentation](jobapis.html). Without a portfolio that contains compelling API documentation samples, it will be tough to get a job in API documentation.
 
 * TOC
 {:toc}
@@ -16,17 +16,17 @@ To break into API documentation, you need to start thinking about API documentat
 
 ## Avoiding a catch-22
 
-Let's assume you don't have any experience in API documentation, but you're trying to get a API documentation job. Employers will be willing to overlook experience if you can demonstrate API documentation writing samples. But how will you get API doc writing samples without an API doc job? And without API doc samples, how can you get an API doc job? This can seem like an impossible situation.
+Let's assume you don't have any experience in API documentation, but you're trying to get an API documentation job. Employers will be willing to overlook experience if you can demonstrate API documentation writing samples. But how will you get API doc writing samples without an API doc job? And without API doc samples, how can you get an API doc job? This can seem like an impossible situation.
 
-Getting around this catch-22 is simple: you create these API doc samples through open source projects that you contribute to. This is where the activities in this course become important.
+Getting around this catch-22 is simple: you create these API doc samples through open source projects that you contribute to. This is where the activities in this course become essential.
 
-Rather than simply completing modules and tracking your progress toward the course's completion, I've included activities here that will actually help build up your portfolio with API documentation samples, helping you progress to the goal of either obtaining an API documentation job or hitting a home run on an API doc project in your current role.
+Rather than merely completing modules and tracking your progress toward the course's completion, the activities you do will help build up your portfolio with API documentation samples, helping you progress to the goal of either obtaining an API documentation job or hitting a home run on an API doc project in your current role.
 
 ## Finding an open-source API project
 
 If you've already got an API project through your work, or if you're an engineer working on an API project, great, just select your existing API for the course activities. However, if you're breaking into API doc or building your API doc skills from the ground up, you'll need to find an open-source API documentation project to contribute to.
 
-Finding the right project can be challenging, but it is critical to your portfolio and your success in breaking into API documentation. Fortunately, almost all open-source projects use GitHub, and GitHub provides various tags for documentation and "help wanted" in order to attract volunteers. (The task is actually so common, GitHub provides advice for [finding open source projects](https://help.github.com/articles/finding-open-source-projects-on-github/).)
+Finding the right project can be challenging, but it is critical to your portfolio and your success in breaking into API documentation. Fortunately, almost all open-source projects use GitHub, and GitHub provides various tags for documentation and "help wanted" in order to attract volunteers. (The task is so common, GitHub provides advice for [finding open source projects](https://help.github.com/articles/finding-open-source-projects-on-github/).)
 
 {% include random_ad2.html %}
 
@@ -39,9 +39,12 @@ The ideal open-source API project should meet the following criteria. The projec
 
 {% include content/activities/find_open_source_project.md %}
 
+{: .note}
+When you look for API projects, recognize that there are many different types of APIs. Many of the APIs you run across might be [native library APIs](nativelibraryapis_overview.html), which don't use web protocols to make requests and responses (as REST APIs do) but rather involve incorporating a language-specific library into the project. If the API seems to focus on a particular language, and the API documentation looks auto-generated, it's probably a native-library API.
+
 ## Contributing will require Git skills
 
-When you later contribute to the open-source project, you will need to understand the basic [Pull request Git workflow](pubapis_github_pull_requests.html). This might require you to ramp up on [some Git tutorials](https://www.atlassian.com/git/tutorials) a bit first, but there's no better way to learn Git than by actively using it in a real project scenario.
+When you later contribute to the open-source project, you will need to understand the basic [Pull request Git workflow](pubapis_github_pull_requests.html). Understanding the Git workflow might require you to ramp up on [Git tutorials](https://www.atlassian.com/git/tutorials) a bit first, but there's no better way to learn Git than by actively using it in a real project scenario.
 
 Don't worry so much about Git now. You can learn these skills later when you have content you're ready to contribute. For now, just find a project.
 
@@ -51,7 +54,7 @@ You may think that it's too early to even think about joining let alone contribu
 
 {% include random_ad.html %}
 
-However, don't undervalue your role as a contributor to documentation (regardless of the contribution). Open-source projects suffer greatly from bad documentation. In [GitHub Survey: Open Source Is Popular, Plagued by Poor Docs and Rude People](https://adtmag.com/articles/2017/06/05/open-source-survey.aspx), David Ramel summarizes findings from the [2017 GitHub Survey](http://opensourcesurvey.org/2017/):
+However, don't undervalue your role as a contributor to documentation (regardless of the contribution). Open-source projects suffer greatly from lousy documentation. In [GitHub Survey: Open Source Is Popular, Plagued by Poor Docs and Rude People](https://adtmag.com/articles/2017/06/05/open-source-survey.aspx), David Ramel summarizes findings from the [2017 GitHub Survey](http://opensourcesurvey.org/2017/):
 
 > Incomplete or outdated documentation is a pervasive problem, observed by 93 percent of respondents, yet 60 percent of contributors say they rarely or never contribute to documentation.
 
@@ -61,9 +64,9 @@ Also check out [Open source documentation is bad, but proprietary software is wo
 
 So yeah, as a technical writer, you may not be fixing bugs in the code or developing new features, but your documentation role is still highly needed and valued. You are a rare bird in the forest here.
 
-I know the value of the doc role intimately from my own experience in contributing to open source doc projects. At one point, before focusing my energy on this API doc course, I contributed a number of tutorials in the [Jekyll docs](https://jekyllrb.com/docs/home/). I added instructions that included a lot of new content, and even added a [Tutorials section](https://jekyllrb.com/tutorials/home/).
+I know the value of the doc role intimately from my own experience in contributing to open source doc projects. At one point, before focusing my energy on this API doc course, I contributed several tutorials to the [Jekyll docs](https://jekyllrb.com/docs/home/). I added instructions that included a lot of new content and even added a [Tutorials section](https://jekyllrb.com/tutorials/home/).
 
-I thought other developers would continue creating new tutorials in a steady stream, but they didn't. Developers tend to add little snippets of documentation to pages &mdash; a sentence here, a paragraph there, an update here, a correction there. You will rarely find someone who writes a substantial new article or tutorial from scratch. When there's a new release, there often aren't release notes &mdash; there are simply links to (cryptic) GitHub issue logs.
+I thought other developers would continue creating new tutorials in a steady stream, but they didn't. Developers tend to add little snippets of documentation to pages &mdash; a sentence here, a paragraph there, an update here, a correction there. You will rarely find someone who writes a substantial new article or tutorial from scratch. When there's a new release, there often aren't release notes &mdash; there are merely links to (cryptic) GitHub issue logs.
 
 As such, you should feel confident about the value you can bring to an open-source project. You're creating much-needed documentation for the project.
 

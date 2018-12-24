@@ -22,7 +22,7 @@ Now let's shift perspectives. Now suppose you're a technical writer working with
 
 ## You have a new endpoint to document
 
-The project manager calls you over and says the team has a new endpoint for you to document for the next release. (Sometimes teams will also refer to each individual endpoint as an "API" as well.)
+The project manager calls you over and says the team has a new endpoint for you to document for the next release. (Sometimes teams will also refer to each endpoint as an "API" as well.)
 
 "Here's the wiki page that contains info about the new API," the manager says. The information is scattered and random on the wiki page.
 
@@ -41,17 +41,17 @@ Here's the mock internal wiki page:
 <div class="docSample">{% raw %}
 <h2 id="surf_report_api">The wiki page: "Surf Report API"</h2>
 
-<p>The new endpoint is <code>/surfreport/{beachId}</code>. This is for surfers who want to check things like tide and wave conditions to determine whether they should head out to the beach to surf. <code>{beachId}</code> is retrieved from a list of beaches on our site.</p>
+<p>The new endpoint is <code>/surfreport/{beachId}</code>. This endpoint is for surfers who want to check things like tide and wave conditions to determine whether they should head out to the beach to surf. <code>{beachId}</code> is retrieved from a list of beaches on our site.</p>
 
 <p>Optional parameters: </p>
 
 <ul>
 <li>Number of days: Max is 7. Default is 3. Optional.</li>
 <li>Units: imperial or metric. With imperial, you get feet and knots. With metric, you get centimeters and kilometers per hour. Optional.</li>
-<li>Time: time of the day corresponding to time zone of the beach you're inquiring about. Format is unix time, aka epoch. This is the milliseconds since 1970. Time zone is GMT or UTC. Optional.</li>
+<li>Time: time of the day corresponding to time zone of the beach you're inquiring about. Format is unix time, aka epoch. Unix time is the milliseconds since 1970. Time zone is GMT or UTC. Optional.</li>
 </ul>
 
-<p>If you include the hour, then you only get back the surf condition for the hour you specified. Otherwise you get back 3 days, with conditions listed out by hour for each day. </p>
+<p>If you include the hour, then you only get back the surf condition for the hour you specified. Otherwise, you get back 3 days, with conditions listed out by hour for each day. </p>
 
 <p>The response will include the surf height, the wind, temp, the tide, and overall recommendation.</p>
 
@@ -125,4 +125,4 @@ https://api.openweathermap.org/com/surfreport/123?&days=2&units=metrics&hour=140
 
 ## Next steps
 
-Jump into the [API reference tutorial overview](docapis_api_reference_tutorial_overview.html) for an overview of the 5 steps we'll cover in creating the API reference topic for this new endpoint.
+Jump into the [API reference tutorial overview](docapis_api_reference_tutorial_overview.html) for an overview of the five steps we'll cover in creating the API reference topic for this new endpoint.

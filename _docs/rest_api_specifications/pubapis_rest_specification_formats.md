@@ -8,9 +8,9 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-When I [introduced REST APIs](docapis_what_is_a_rest_api.html), I mentioned that REST APIs follow an architectural style, not a specific standard. However, there are several REST specifications that have been developed to try to provide some standards about how REST APIs are described. The three most popular REST API specifications are as follows: [OpenAPI (formally called Swagger)](https://github.com/OAI/OpenAPI-Specification), [RAML](https://raml.org/), and [API Blueprint](https://apiblueprint.org/).
+When I [introduced REST APIs](docapis_what_is_a_rest_api.html), I mentioned that REST APIs follow an architectural style, not a specific standard. However, several REST specifications have been developed to try to provide standards in the way that REST APIs are described. The three most popular REST API specifications are as follows: [OpenAPI (formally called Swagger)](https://github.com/OAI/OpenAPI-Specification), [RAML](https://raml.org/), and [API Blueprint](https://apiblueprint.org/).
 
-In the early years of specifications, there was healthy competition between the formats. But now, without a doubt the OpenAPI specification is the most popular, with the largest community, momentum, and tooling. Because of this, I spend the most time on OpenAPI in this course. In fact, this entire section focuses on the OpenAPI specification. (I moved the [RAML](pubapis_raml.html) and [API Blueprint](pubapis_api_blueprint.html) pages into the Additional resources section at the end.)
+In the early years of specifications, there was healthy competition between the formats. But now, without a doubt, the OpenAPI specification is the most popular, with the largest community, momentum, and tooling. Because of this, I spend the most time on OpenAPI in this course. In fact, this entire section focuses on the OpenAPI specification. (I moved the [RAML](pubapis_raml.html) and [API Blueprint](pubapis_api_blueprint.html) pages into the Additional resources section at the end.)
 
 {: .note}
 "OpenAPI" refers to the specification, while "Swagger" refers to the API tooling that reads and displays the information in the specification. I'll dive into both OpenAPI and Swagger in much more depth in the pages to come.

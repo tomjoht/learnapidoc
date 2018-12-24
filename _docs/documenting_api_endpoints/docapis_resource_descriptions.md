@@ -73,7 +73,7 @@ Although the Events resource isn't described here, descriptions are added for ea
 And so on.
 
 {: .tip}
-When developers create APIs, they have a design question to consider: Use a lot of variants of endpoints (as with Eventbrite's API), or provide lots of parameters to configure the same endpoint. Often there's a balance between the two. The trend seems to be toward providing separate endpoints rather than supplying a host of potentially confusing parameters within the same endpoint.
+When developers create APIs, they have a design question to consider: Use a lot of variants of endpoints (as with Eventbrite's API) or provide lots of parameters to configure the same endpoint. Often there's a balance between the two. The trend seems to be toward providing separate endpoints rather than supplying a host of potentially confusing parameters within the same endpoint.
 
 As another example, here's the Relationships resource in the  [Instagram API](https://instagram.com/developer/endpoints/relationships/).
 
@@ -98,7 +98,7 @@ The description of the resource is likely something you'll re-use in different p
 
 The exact terminology for referring to resources varies. The "things" that you access using a URL can be referred to in a variety of ways, but "resource" is the most common term because you access them through a URL, or uniform *resource* locator. Other than "resources," you might see terms such as *API calls*, *endpoints*, *API methods*, *calls*, *objects*, *services*, and *requests*. Some docs get around the situation by not calling them anything explicitly except "Reference."
 
-Despite the variety with terminology, in general an API has various "resources" that you access through "endpoints." The endpoints give you access to the resource. (But terminology isn't standard, so expect variety.)
+Despite the variety with terminology, generally an API has various "resources" that you access through "endpoints." The endpoints give you access to the resource. (But terminology isn't standard, so expect variety.)
 
 ## Recognize the difference between reference docs versus user guides
 
@@ -107,7 +107,7 @@ Resource descriptions (as well as endpoint descriptions) are typically short, us
 * **Reference documentation**: Concise, bare-bones information that developers can quickly reference.
 * **User guides/tutorials**: More elaborate detail about how to use the API, including step-by-step instructions, code samples, concepts, and procedures. I go into much more detail about this content in [Documenting non-reference sections](docnonref.html).
 
-Although the description in an API reference topic provides a 1-3 sentence summary of the information the resource contains, you might expand on this with much greater detail in the user guide. (You could link the reference description to the places in the guide where you provide more detail.)
+Although the description in an API reference topic provides a 1-3 sentence summary of the information that the resource contains, you might expand on this with much greater detail in the user guide. (You could link the reference description to the places in the guide where you provide more detail.)
 
 ## <i class="fa fa-user-circle"></i> Resource description for the surfreport endpoint
 

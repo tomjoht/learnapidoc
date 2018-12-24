@@ -30,7 +30,7 @@ Here's an example of the endpoints for the Relationships resource in the Instagr
 
 The endpoint is usually set off in a stylized way that gives it more visual attention. Much of the documentation is built around the endpoint, so it might make sense to give each endpoint more visual weight in your documentation.
 
-The endpoint is arguably the most important aspect of API documentation, since this is what developers will implement to make their requests.
+The endpoint is arguably the most important aspect of API documentation because this is what developers will implement to make their requests.
 
 ## Represent path parameters with curly braces
 
@@ -56,7 +56,7 @@ When the parameters are described in Facebook's docs, the same green color is us
 
 Path parameters aren't always set off with a unique color (for example, some precede it with a colon), but whatever the convention, make sure the path parameter is easily identifiable.
 
-## You can list the method beside the endpoint
+## You can list the method next to the endpoint
 
 It's common to list the method (GET, POST, and so on) next to the endpoint. The method defines the operation with the resource. Briefly, each method is as follows:
 
@@ -89,11 +89,11 @@ In our sample API scenario, the endpoint is just `/surfreport/{beachId}`. You do
 
 ## How to group multiple endpoints for the same resource
 
-Another consideration is how to group and list the endpoints, particularly if you have a lot of endpoints for the same resource. In the [resource descriptions step](docapis_resource_descriptions.html#examples), we looked at a variety of APIs, and many provide different document designs for grouping or listing each endpoint for the resource. So I won't revisit all the same examples. Group the endpoints in some way that makes sense, such as by method or by the type of information returned.
+Another consideration is how to group and list the endpoints, particularly if you have a lot of endpoints for the same resource. In the [resource descriptions step](docapis_resource_descriptions.html#examples), we looked at a variety of APIs. Many doc sites provide different designs for grouping or listing each endpoint for the resource, so I won't revisit all the same examples. Group the endpoints in some way that makes sense, such as by method or by the type of information returned.
 
-For example, suppose you have three GET endpoints and one POST endpoint, all of which relate to the same resource. Some doc sites might list all the endpoints for the same resource on the same page. Others might break them out into separate pages. Others might create one group for the GET endpoints and another for the POST endpoints. It depends how much you have to say about each endpoint.
+For example, suppose you have three GET endpoints and one POST endpoint, all of which relate to the same resource. Some doc sites might list all the endpoints for the same resource on the same page. Others might break them into separate pages. Others might create one group for the GET endpoints and another for the POST endpoints. It depends how much you have to say about each endpoint.
 
-If the endpoints are mostly the same, consolidating them on a single page could make sense. But if they're substantially unique (with different responses, parameters, and error messages), separating them out onto different pages is probably better (and easier to manage). Then again, with a more sophisticated website design, you can make lengthy information navigable on the same page.
+If the endpoints are mostly the same, consolidating them on a single page could make sense. But if they're substantially unique (with different responses, parameters, and error messages), separating them onto different pages is probably better (and easier to manage). Then again, with a more sophisticated website design, you can make lengthy information navigable on the same page.
 
 {: .tip}
 In a later section on [design patterns](pubapis_design_patterns.html), I explain that [long pages](pubapis_design_patterns.html#longish_pages) are common pattern with developer docs, in part because they make content easily findable for developers using Ctrl + F.

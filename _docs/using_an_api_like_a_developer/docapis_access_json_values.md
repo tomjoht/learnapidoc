@@ -20,7 +20,7 @@ Note that this section will use a little bit of JavaScript. Depending on your ro
 
 ## Getting a specific property from a JSON response object
 
-JSON wouldn't be very useful if you had to always print out the entire response. Instead, you select the exact property you want and pull that out through dot notation. The dot (`.`) after `response` (the name of the JSON payload, as defined arbitrarily in the jQuery AJAX function) is how you access the values you want from the JSON object.
+JSON wouldn't be very useful if you always had to print out the entire response. Instead, you select the exact property you want and pull that out through dot notation. The dot (`.`) after `response` (the name of the JSON payload, as defined arbitrarily in the jQuery AJAX function) is how you access the values you want from the JSON object.
 
 Let's say you wanted to pull out the wind speed part of the JSON response. Here's the dot notation you would use:
 
@@ -53,7 +53,7 @@ wind speed: 13.87
 
 ## Printing a JSON value to the page
 
-Let's say you wanted to print part of the JSON (the wind speed data) to the page (not just the console). This involves a little bit of JavaScript (or jQuery to make it easier).
+Let's say you wanted to print part of the JSON (the wind speed data) to the page, not just the console. (By "print," I mean make the value appear on the page, not send it to a printer.) Printing the value involves a little bit of JavaScript (or jQuery to make it easier).
 
 I'm assuming you're starting with the [same code](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html) from the [previous tutorial](docapis_json_console.html). That code looks like this:
 
@@ -235,6 +235,6 @@ $.ajax(settings).done(function (response) {
 
 If you'd like to follow some more exercises that involve calling REST APIs, accessing specific values, and printing them to the page, see the following topics in the [Glossary and resources](resources.html) section:
 
-* [Get event information using the EventBrite API](docapis_eventbrite_example.html)
+* [Get event information using the Eventbrite API](docapis_eventbrite_example.html)
 * [Flickr example: Retrieve a Flickr gallery](docapis_flickr_example.html)
 * [Get wind speed using the Aeris Weather API](docapis_aerisweather_example.html)

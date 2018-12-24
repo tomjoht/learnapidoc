@@ -31,7 +31,7 @@ And the response **Schema** on another tab:
 
 <a class="noExtIcon" href="https://sendgrid.com/docs/API_Reference/api_v3.html"><img src="images/sendgridresponseexample2.png" /></a>
 
-The definition of the response is called the *schema* or *model* (the terms are used synonymously), and aligns with the [JSON schema language and descriptions](http://json-schema.org/). What works particularly well with the SendGrid example is the use of expand/collapse tags to mirror the same structure as the example, with objects at different levels.
+The definition of the response is called the *schema* or *model* (the terms are used synonymously) and aligns with the [JSON schema language and descriptions](http://json-schema.org/). What works particularly well with the SendGrid example is the use of expand/collapse tags to mirror the same structure as the example, with objects at different levels.
 
 Swagger UI also provides both an example value and a schema or model. For example, in the sample Sunset and Sunrise Times API doc that I used for the [SwaggerUI activity](https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset) (which comes later in the course), you can see a distinction between the response example and the response schema. Here's the **Example Value**:
 
@@ -59,7 +59,7 @@ However, most documentation would be better off with the response described, esp
 
 ## Use realistic values in the example response
 
-In the example response, the values should be realistic without being real. If developers give you a sample response, make sure each of the possible values are reasonable and not so fake they're distracting (such as users consisting of comic book character names).
+In the example response, the values should be realistic without being real. If developers give you a sample response, make sure the values are reasonable and not so fake they're distracting (such as users consisting of comic book character names).
 
 Also, the sample response should not contain real customer data. If you get a sample response from an engineer, and the data looks real, make sure it's not just from a cloned production database, which is commonly done. Developers may not realize that the data needs to be fictitious but representative, and scraping a production database may be the easiest approach for them.
 
@@ -71,11 +71,11 @@ If you can add syntax highlighting as well, definitely do it. If you're using a 
 
 Rouge and Pygments rely on "lexers" to indicate how the code should be highlighted. For example, some common lexers are `java`, `json`, `html`, `xml`, `cpp`, `dotnet`, and `javascript`.
 
-If you don't have any syntax highlighters to integrate directly into your tool, you can add syntax highlighting manually for each code sample by pasting it into the [syntaxhighlight.in](http://syntaxhighlight.in/) highlighter.
+If you don't have any syntax highlighters to integrate directly into your tool, you can add syntax highlighting manually for each code sample by pasting it into [syntaxhighlight.in](http://syntaxhighlight.in/).
 
 ## Strategies for documenting nested objects
 
-Many times the response contains nested objects (objects within objects), or has repeating elements. Formatting the documentation for the response schema is one of the more challenging aspects of API reference documentation.
+Many times the response contains nested objects (objects within objects) or has repeating elements. Formatting the documentation for the response schema is one of the more challenging aspects of API reference documentation.
 
 Tables are most commonly used. In [Peter Gruenbaum's API tech writing course on Udemy](https://www.udemy.com/api-documentation-1-json-and-xml/), Gruenbaum represents the nested objects using tables with various columns:
 
@@ -115,15 +115,15 @@ Some APIs put the response in a right column so you can see it while also lookin
 
 Stripe's design juxtaposes the sample response in a right side pane with the response schema in the main window. The idea is that you can see both at the same time. The description won't always line up with the response, which might be confusing. Still, separating the response example from the response schema in separate columns helps differentiate the two.
 
-A lot of APIs have modeled their design after Stripe's. For example, see <a href="https://github.com/tripit/slate">Slate</a>, <a href="https://github.com/sourcey/spectacle">Spectacle</a>, or <a href="http://readme.io">Readme.io</a>. Should you use a three-column layout with your API documentation? Maybe. However, if the response example and description doesn't line up, the viewer's focus is somewhat split, and the user must resort to more up-and-down scrolling. Additionally, if your layout uses three columns, your middle column will have some narrow constraints that don't leave much room for screenshots and code examples.
+A lot of APIs have modeled their design after Stripe's. For example, see <a href="https://github.com/tripit/slate">Slate</a>, <a href="https://github.com/sourcey/spectacle">Spectacle</a>, or <a href="http://readme.io">Readme.io</a>. Should you use a three-column layout with your API documentation? Maybe. However, if the response example and description don't line up, the viewer's focus is somewhat split, and the user must resort to more up-and-down scrolling. Additionally, if your layout uses three columns, your middle column will have some narrow constraints that don't leave much room for screenshots and code examples.
 
-The MYOB Developer Center takes an interesting approach in documenting the JSON in their APIs. They list the JSON structure in a table-like way, with different levels of indentation. You can move your mouse over a field for a tooltip description, or you can click it to have a description expand below. The use of tooltips enables the rows containing the example and the description to line up perfectly.
+The MYOB Developer Center takes an interesting approach in documenting the JSON in their APIs. They list the JSON structure in a table-like way, with different levels of indentation. You can move your mouse over a field for a tooltip description, or you can click it to have a description expand below. The use of tooltips enables the rows containing the example and the description to align perfectly.
 
 To the right of the JSON definitions is a code sample with real values. When you select a value, both the element in the table and the element in the code sample highlight at the same time.
 
 <a href="http://developer.myob.com/api/accountright/v2/generalledger/account/#GET" class="noExtIcon"><img src="images/myobjsondoc.png" alt="MYOB JSON doc approach" /></a>
 
-This approach facilitates scanning, and the popover + collapsible approach allows you to compress the table so you can jump to the part you're interested in. However, this approach requires more manual work from a documentation point of view. Still, if you have long JSON objects, it might be worth it.
+This approach facilitates scanning, and the popover + collapsible approach allows you to compress the table so you can jump to the parts that interest you. However, this approach requires more manual work from a documentation point of view. Still, if you have long JSON objects, it might be worth it.
 
 ## Embedding dynamic responses {#dynamic_responses}
 
@@ -141,11 +141,11 @@ This dynamic approach works well for GET requests that return public information
 
 ## What about status codes?
 
-The responses section sometimes briefly lists the possible status and error codes returned with the responses. However, because these codes are usually common across all endpoints in the API, status and error codes are often documented in their own section, apart from a specific endpoint's documentation. For this reason, I cover this topic in [Documenting status and error codes](docapis_doc_status_codes.html).
+The responses section sometimes briefly lists the possible status and error codes returned with the responses. However, because these codes are usually shared across all endpoints in the API, status and error codes are often documented in their own section, apart from a specific endpoint's documentation. For this reason, I cover this topic in [Documenting status and error codes](docapis_doc_status_codes.html).
 
 ## Response example and schema for the surfreport endpoint
 
-For the `surfreport/{beachId}` endpoint that we've been exploring in our [sample API scenario](docapis_new_endpoint_to_doc.html), let's create a section that shows the response example and schema. Here's my approach for these sections:
+For the `surfreport/{beachId}` endpoint that we've been exploring in our [sample API scenario](docapis_new_endpoint_to_doc.html), let's create a section that shows the response example and schema. Here's my approach to these sections:
 
 <div class="docSample">
 {% include_relative surfreport_response.html %}

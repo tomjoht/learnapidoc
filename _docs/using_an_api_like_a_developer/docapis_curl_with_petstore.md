@@ -21,7 +21,7 @@ In this example, using the Petstore API, you'll create a new pet, update the pet
 To create a pet, you have to pass a JSON message in the request body. Rather than trying to encode the JSON and pass it in the URL, you'll store the JSON in a file and reference the file.
 
 {: .tip}
-A lot of APIs require you to post requests containing JSON messages in the body. This is often how you configure a service. The list of JSON key-value pairs that the API accepts is called the "Model" in the Swagger UI display.
+A lot of APIs require you to post requests containing JSON messages in the body. Request body parameters are often how you configure a service. The list of JSON key-value pairs that the API accepts is called the "Model" in the Swagger UI display.
 
 1.  Insert the following into a next text file. This information will be passed in the `-d` parameter of the curl request:
 
@@ -52,13 +52,13 @@ A lot of APIs require you to post requests containing JSON messages in the body.
     Use a unique ID and name that others aren't likely to also use. Also, don't begin your ID with the number 0.
 
 3.  Save the file in a directory that you can conveniently access from your terminal, such as your user directory (on a Mac, `Users/YOURUSERNAME` &mdash; replace `YOURUSERNAME` with your actual user name on your computer).
-4.  In your terminal, browse to the directory where you saved the **mypet.json** file. (Usually the default directory is `Users/YOURUSERNAME` &mdash; hence the previous step.)
+4.  In your terminal, browse to the directory where you saved the **mypet.json** file. (Usually, the default directory is `Users/YOURUSERNAME` &mdash; hence the previous step.)
 
     If you've never browsed directories using the command line, here's how you do it:
 
     On a Mac, find your present working directory by typing `pwd`. Then move up by typing change directory: `cd ../`. Move down by typing `cd pets`, where `pets` is the name of the directory you want to move into. Type `ls` to list the contents of the directory.
 
-    On a PC, just look at the prompt path to see your current directory. Then move up by typing `cd ../`. Move down by typing `cd pets`, where `pets` is the name of the directory you want to move into. Type `dir` to list the contents of the current directory.
+    On a PC, look at the prompt path to see your current directory. Then move up by typing `cd ../`. Move down by typing `cd pets`, where `pets` is the name of the directory you want to move into. Type `dir` to list the contents of the current directory.
 
 3.  After your terminal or command prompt is in the same directory as your JSON file, create the new pet:
 
@@ -140,7 +140,7 @@ Unfortunately, your pet has died. It's time to delete your pet from the pet regi
     curl -X DELETE --header "Accept: application/json" "http://petstore.swagger.io/v2/pet/5123123"
     ```
 
-2.  Now check to make sure your pet is really removed. Use a GET request to look for your pet with that ID:
+2.  Now check to make sure your pet is removed. Use a GET request to look for your pet with that ID:
 
     ```bash
     curl -X GET --header "Accept: application/json" "http://petstore.swagger.io/v2/pet/5123123"
@@ -176,7 +176,7 @@ You can import curl commands into Postman by doing the following:
 
 3.  Click **Import**.
 4.  Close the dialog box.
-5.  Click **Send**. (If you deleted your pet, you'll see the same "Pet not found" error message as before.)
+5.  Click **Send**. (If you deleted your pet, you will see the same "Pet not found" error message as before.)
 
 ## Export Postman to curl
 

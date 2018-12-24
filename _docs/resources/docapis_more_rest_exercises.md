@@ -23,7 +23,7 @@ There are several examples with different APIs. A challenge is listed for each e
 
 In these examples, I usually just print the code to a web page to visualize the response. The following exercises are available:
 
-* [Get event information using the EventBrite API](docapis_eventbrite_example.html)
+* [Get event information using the Eventbrite API](docapis_eventbrite_example.html)
 * [Flickr example: Retrieve a Flickr gallery](docapis_flickr_example.html)
 * [Get wind speed using the Aeris Weather API](docapis_aerisweather_example.html)
 

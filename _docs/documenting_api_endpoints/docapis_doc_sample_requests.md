@@ -37,13 +37,13 @@ curl is a common format to show requests for several reasons:
 
 * curl is language agnostic, so it's not specific to one particular programming language.
 * curl shows the header information required in the request.
-* curl shows the method used with the request, and other parameters.
+* curl shows the method used with the request and other parameters.
 
 In general, use curl to show your sample request. Here's another example of a curl request in the Parse API:
 
 <a href="http://docs.parseplatform.org/rest/guide/#updating-objects" class="noExtIcon"><img src="images/parseapirequest.png"/></a>
 
-You can add backslashes in curl to separate out each parameter onto its own line (though, as I pointed out in the [curl tutorial](docapis_make_curl_call.html#windows_notes), Windows has trouble with backslashes).
+You can add backslashes in curl to separate each parameter onto its own line (though, as I pointed out in the [curl tutorial](docapis_make_curl_call.html#windows_notes), Windows has trouble with backslashes).
 
 Other API doc sites might use the full resource URL, such as this plain example from Twitter:
 
@@ -81,7 +81,7 @@ How many different requests and responses should you show? There's probably no e
 
 ## Requests in various languages
 
-As noted earlier, in [What is a REST API?](docapis_what_is_a_rest_api.html), REST APIs are language agnostic. This helps facilitates widespread adoption across programming languages. Developers can code their applications in any language, from Java to Ruby to JavaScript, Python, C#, Node JS, or something else. As long as developers can make an HTTP web request in that language, they can use the API. The response from the web request will contain the data in either JSON or XML.
+As noted earlier, in [What is a REST API?](docapis_what_is_a_rest_api.html), REST APIs are language agnostic. The universal protocol helps facilitate widespread adoption across programming languages. Developers can code their applications in any language, from Java to Ruby to JavaScript, Python, C#, Node JS, or something else. As long as developers can make an HTTP web request in that language, they can use the API. The response from the web request will contain the data in either JSON or XML.
 
 Because you can't entirely know which language your end users will be developing in, it's kind of fruitless to try to provide code samples in every language. Many APIs just show the format for submitting requests and a sample response, and the authors will assume that developers will know how to submit HTTP requests in their particular programming language.
 
@@ -89,7 +89,7 @@ However, some APIs do show simple requests in a variety of languages. Here's an 
 
 <a href="https://www.twilio.com/docs/api/rest/making-calls" class="noExtIcon"><img src="images/twiliocodeexamples.png" alt="Twilio code samples" /></a>
 
-You can select which language you want the sample request in: C#, curl, Java, Node.js, PHP, Python, or Ruby.
+You can select which language you want for the sample request: C#, curl, Java, Node.js, PHP, Python, or Ruby.
 
 Here's another example from the Clearbit API:
 
@@ -103,7 +103,7 @@ However, don't feel so intimidated by this smorgasbord of code samples. Some API
 
 ## Auto-generating code samples
 
-If you're not using an authoring tool that auto-generates code examples, and you want to provide these code snippets, you can auto-generate code samples from both Postman and Paw, if desired.
+If you're not using an authoring tool that auto-generates code examples, and you want to provide these code snippets, you can auto-generate code samples from both Postman and Paw if desired.
 
 [Paw](https://paw.cloud/) (for Mac) lets you export your request into nearly every conceivable language:
 
@@ -111,7 +111,7 @@ If you're not using an authoring tool that auto-generates code examples, and you
 
 After you have a request configured (a process similar to [Postman](docapis_postman.html)), you can generate a code snippet by going to **File > Export Request**.
 
-The Postman app also has the ability to generate code snippets in a similar way. I covered this process in an earlier tutorial on [using the JSON from the response payload](docapis_json_console.html). In Postman, after you configure your request, click the **Code** link (which appears below the Save button in the upper-right area).
+The Postman app can also generate code snippets in a similar way. I covered this process in an earlier tutorial on [using the JSON from the response payload](docapis_json_console.html). In Postman, after you configure your request, click the **Code** link (which appears below the Save button in the upper-right area).
 
 <img src="images/postmangeneratecodesnippet.png" class="medium" alt="Generate code snippet" />
 
@@ -130,7 +130,7 @@ A lot of times, developers will create an [SDK (software development kit)](docap
 
 For example, at one company I worked at, we had both a REST API and a JavaScript SDK. Because JavaScript was the target language developers were working in, the company developed a JavaScript SDK to make it easier to work with REST using JavaScript. You could submit REST calls through the JavaScript SDK, passing a number of parameters relevant to web designers.
 
-An SDK is any kind of tooling that makes it easier to work with your API. It's extremely common for a company to provide a language agnostic REST API, and then to develop an SDK that makes it easy to implement the API in the primary language they expect users to implement the API in. As such, peppering your sample requests with these small request snippets in other languages probably isn't that important, since the SDK provides an easier implementation. If you have an SDK, you'll want to make more detailed [code samples](docapis_codesamples_bestpractices.html) showing how to use the SDK.
+An SDK is any kind of tooling that makes it easier to work with your API. It's extremely common for a company to provide a language-agnostic REST API, and then to develop an SDK that makes it easy to implement the API in the primary language they expect users to implement the API in. As such, peppering your sample requests with these small request snippets in other languages isn't that important, since the SDK provides an easier implementation. If you have an SDK, you'll want to make more detailed [code samples](docapis_codesamples_bestpractices.html) showing how to use the SDK.
 
 ## API explorers provide interactivity with your own data
 
@@ -152,7 +152,7 @@ However, if you don't have the right data in your system, using your own API key
 
 ## API Explorers can be dangerous in the hands of users
 
-Although interactivity is powerful, API Explorers can be a dangerous addition to your site. What if a novice user trying out a DELETE method accidentally removes data? How do you later remove the test data added by POST or PUT methods?
+Although interactivity is powerful, API Explorers can be a dangerous addition to your site. What if a novice user is trying out a DELETE method accidentally removes data? How do you later remove the test data added by POST or PUT methods?
 
 It's one thing to allow GET methods, but if you include other methods, users could inadvertently corrupt their data. In Sendgrid's API, they include a warning message to users before testing out calls with their API Explorer:
 
@@ -164,7 +164,7 @@ Foursquare's API docs used to have a built-in API explorer in the previous versi
 
 As far as integrating custom API Explorer tooling, this is a task that should be relatively easy for developers. All the API Explorer does is map values from a field to an API call and return the response to the same interface. In other words, the API plumbing is all there &mdash; you just need a little JavaScript and front-end skills to make it happen.
 
-However, you don't have to build your own tooling. Existing tools such as [Swagger UI](http://swagger.io/swagger-ui/) (which parses a [OpenAPI specification document](pubapis_openapi_tutorial_overview.html)) and [Readme.io](http://readme.io) (which allows you to enter the details manually or from an OpenAPI specification) can integrate API Explorer functionality directly into your documentation.
+However, you don't have to build your own tooling. Existing tools such as [Swagger UI](http://swagger.io/swagger-ui/) (which parses an [OpenAPI specification document](pubapis_openapi_tutorial_overview.html)) and [Readme.io](http://readme.io) (which allows you to enter the details manually or from an OpenAPI specification) can integrate API Explorer functionality directly into your documentation.
 
 {: .tip}
 For a tutorial on how to create your own API explorer functionality, see the [Swagger UI tutorial](pubapis_swagger.html).

@@ -3,7 +3,7 @@
 To find an open-source project with API doc needs:
 
 1.  Go to the [GitHub Advanced Search](https://github.com/search/advanced).
-2.  Under the **Issues Options** section, in the **With the labels** row, type `help wanted`. This is a common tag teams use to attract volunteers to their project (but some teams that need help might not use it).
+2.  Under the **Issues Options** section, in the **With the labels** row, type `help wanted`. This is a standard tag that teams use to attract volunteers to their project (but some teams that need help might not use it).
 
     Scroll to the top and notice that `label: "help wanted"` automatically populates in the field.
 
@@ -26,7 +26,7 @@ To find an open-source project with API doc needs:
     * [24-hour Pull Requests](https://24pullrequests.com)
     * [Programmableweb.com API directory](https://www.programmableweb.com/category/all/apis)
 
-    {% include note.html content="You could spend a long time evaluating and deciding on open source projects. For this activity, it's okay if you focus on a project that looks sort of interesting. You don't need to commit to it. You can always change it later." %}
+    {% include note.html content="You could spend a long time evaluating and deciding on open source projects. For this activity, it's okay if you focus on a project that looks only mildly interesting. You don't need to commit to it. You can always change it later." %}
 
 6.  After selecting a project, make notes on the following:
 

@@ -1,5 +1,5 @@
 ---
-title: 'Get event information using the EventBrite API'
+title: 'Get event information using the Eventbrite API'
 permalink: /docapis_eventbrite_example.html
 sidebar: docapis
 course: "Documenting REST APIs"
@@ -49,7 +49,7 @@ Before you can call the resource successfully, do the following:
 
 {% include course_image.html filename="eventbritepersonaloauthtoken" ext_print="png" ext_web="png" alt="Customizing the Parameters and Authorization information the Eventbrite Console" caption="Customizing the Parameters and Authorization information the Eventbrite Console" %}
 
-Click the **Call Resource** button and then scroll down to the Response Body section to observe the response. It should contain the body text for the EventBrite page. (If there's an error with the OAuth token or event ID, you'll see an error response instead.)
+Click the **Call Resource** button and then scroll down to the Response Body section to observe the response. It should contain the body text for the Eventbrite page. (If there's an error with the OAuth token or event ID, you'll see an error response instead.)
 
 ## 4. Get the jQuery AJAX code for the request
 

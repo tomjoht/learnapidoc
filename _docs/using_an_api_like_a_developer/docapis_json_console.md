@@ -81,7 +81,7 @@ The piece of code that logged the response to the console was simply this:
 console.log(response);
 ```
 
-Logging responses to the console is one of the most useful ways to test whether an API response is working (it's also helpful for debugging or troubleshooting your code). The console collapses each object inside its own expandable section. This allows you to inspect the payload.
+Logging responses to the console can be a useful way to test whether an API response is working (it's also helpful for debugging or troubleshooting your code). The console collapses each object inside an expandable section. You can inspect the payload in the console to see if contains the values you expect (without printing values to the page).
 
 {% include random_ad.html %}
 
