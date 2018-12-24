@@ -21,7 +21,7 @@ glossary_keys:
 For a more detailed conceptual overview of OpenAPI and Swagger, see [Introduction to the OpenAPI specification and Swagger](pubapis_swagger_intro.html).
 
 {: .tip}
-For step-by-step tutorial on creating an OpenAPI specification document, see the [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html). In the tutorial, I showed how the OpenAPI specification gets rendered by the Swagger UI display that is built into the [Swagger Editor](https://editor.swagger.io/). Here I explain how to use Swagger UI as a standalone output.  
+For a step-by-step tutorial on creating an OpenAPI specification document, see the [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html). In the tutorial, I showed how the OpenAPI specification gets rendered by the Swagger UI display that is built into the [Swagger Editor](https://editor.swagger.io/). Here I explain how to use Swagger UI as a standalone output.  
 
 {% if site.format == "web" %}
 * TOC
@@ -87,7 +87,7 @@ Now let's make a request:
 
     <a href="http://petstore.swagger.io/" class="noExtIcon"><img src="images/swaggerui_response.png" alt="Response from Swagger Petstore get pet request" /></a>
 
-    {% include important.html content="The Petstore is a functioning API, and you have actually created a pet. You now need to take responsibility for your pet and begin feeding and caring for it! All joking aside, most users don't realize they're playing with real data when they execute responses in an API (especially when using their own API key). This test data may be something you have to wipe clean when you transition from exploring and learning about the API to actually using the API for production use." %}
+    {% include important.html content="The Petstore is a functioning API, and you have actually created a pet. You now need to take responsibility for your pet and begin feeding and caring for it! All joking aside, most users don't realize they're playing with real data when they execute responses in an API (especially when using their own API key). This test data may be something you have to wipe clean when you transition from exploring and learning about the API to eventually using the API for production use." %}
 
 ### Verify that your pet was created
 
@@ -110,13 +110,13 @@ Before we get into this Swagger tutorial with another API (other than Petstore),
 
 Some of these sites look the same, but others, such as The Movie Database API and Zomato, have been integrated seamlessly into the rest of their documentation website.
 
-Looking at the examples, you'll notice the documentation is short and sweet in a Swagger implementation. This is because the Swagger display is meant to be an interactive experience where you can try out calls and see responses &mdash; using your own API key to see your own data. It's the learn-by-doing-and-seeing-it approach. Also, Swagger UI only covers the [reference topics](docendpoints.html) of your documentation. The [non-reference topics](docnonref.html) are usually covered in a separate guide.
+Looking at the examples, you'll notice the documentation is short and sweet in a Swagger implementation. This brevity is because the Swagger display is meant to be an interactive experience where you can try out calls and see responses &mdash; using your own API key to see your own data. It's the learn-by-doing-and-seeing-it approach. Also, Swagger UI only covers the [reference topics](docendpoints.html) of your documentation. The [non-reference topics](docnonref.html) are usually covered in a separate guide.
 
 {% include content/activities/create_swaggerui_display.md %}
 
 ## Configuring Swagger UI parameters
 
-Swagger UI provides a number of [configuration parameters](https://github.com/swagger-api/swagger-ui/blob/master/docs/usage/configuration.md) (unrelated to your [OpenAPI parameters](pubapis_openapi_step4_paths_object.html#parameters)) you can use to customize the interactive display. For example, you can set whether each endpoint is expanded or collapsed, how tags and operations are sorted, whether to show request headers in the response, whether to include the Model section, and more.
+Swagger UI provides various [configuration parameters](https://github.com/swagger-api/swagger-ui/blob/master/docs/usage/configuration.md) (unrelated to your [OpenAPI parameters](pubapis_openapi_step4_paths_object.html#parameters)) you can use to customize the interactive display. For example, you can set whether each endpoint is expanded or collapsed, how tags and operations are sorted, whether to show request headers in the response, whether to include the Model section, and more.
 
 We won't get too much into the details of these configuration parameters in the tutorial. I just want to call attention to these parameters here for awareness.
 
@@ -149,8 +149,8 @@ You can also learn about the Swagger UI configuration parameters in the [Swagger
 As you explore Swagger UI, you may notice a few limitations:
 
 * There's not much room to describe in detail the workings of the endpoints in Swagger. If you have several paragraphs of details and gotchas about a parameter, it's best to link out from the description to another page in your docs. The OpenAPI spec provides a way to link to external documentation in both the [paths object](pubapis_openapi_step4_paths_object.html), the [info object](pubapis_openapi_step2_info_object.html), and the [externalDocs object](pubapis_openapi_step8_externaldocs_object.html)
-* The Swagger UI looks mostly the same for each output. You can [customize Swagger UI](https://swagger.io/docs/swagger-tools/#customization-36) with your own branding, but it will some deeper UX skills. It is, however, relatively easy to change the color and image in the top navigation bar.
-* The Swagger UI might be a separate site from your other documentation. This means in your regular docs, you'll probably need to link to Swagger as the reference for your endpoints. You don't want to duplicate your parameter descriptions and other details in two different sites. See [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html) for strategies to unify your two sites (reference docs and user guide).
+* The Swagger UI looks mostly the same for each output. You can [customize Swagger UI](https://swagger.io/docs/swagger-tools/#customization-36) with your own branding, but it will some more in-depth UX skills. It is, however, relatively easy to change the color and image in the top navigation bar.
+* The Swagger UI might be a separate site from your other documentation. This separate output means that in your regular docs, you'll probably need to link to Swagger as the reference for your endpoints. You don't want to duplicate your parameter descriptions and other details in two different sites. See [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html) for strategies to unify your two sites (reference docs and user guide).
 
 ## Troubleshooting issues with Swagger UI {#troubleshooting_swagger}
 
@@ -158,13 +158,13 @@ When you're setting up Swagger UI, you might run into some issues. The following
 
 **CORS issues:**
 
-If you have security correctly configured but the requests are being rejected, it could be due to a CORS (cross-origin resource sharing) issue. CORS is a security measure that websites implement to make sure other scripts and processes cannot take their content through requests from remote servers. See [CORS Support](https://github.com/swagger-api/swagger-ui#cors-support) in Swagger UI's documentation for details.
+If you have security correctly configured, but the requests are rejected, it could be due to a CORS (cross-origin resource sharing) issue. CORS is a security measure that websites implement to make sure other scripts and processes cannot take their content through requests from remote servers. See [CORS Support](https://github.com/swagger-api/swagger-ui#cors-support) in Swagger UI's documentation for details.
 
 If the requests aren't working, open your browser's JavaScript console (in Chrome, View > Developer > Javascript Console) when you make the request and see if the error relates to cross-origin requests. If so, ask your developers to enable CORS on the endpoints.
 
 **Host URL issues:**
 
-Another reason requests might be rejected is due to the host from your test server. Some APIs (like Aeris Weather) require you to create an App ID that's based on the host URL where you'll be executing requests. If the host URL you registered is `http://mysite.com` but you're submitting the test from `https://editor.swagger.io/`, the API server will reject the requests.
+The host for your test server might be another reason that requests are rejected. Some APIs (like Aeris Weather) require you to create an App ID that is based on the host URL where you'll be executing requests. If the host URL you registered is `http://mysite.com`, but you're submitting the test from `https://editor.swagger.io/`, the API server will reject the requests.
 
 ## Embedding Swagger UI within an existing site
 

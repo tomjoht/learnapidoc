@@ -42,7 +42,7 @@ When you do, in the Swagger UI, a link appears after the API description along w
 {% include course_image.html filename="step8swaggerprogress" ext_print="png" ext_web="png" alt="External documentation link" caption="External documentation link" %}
 
 {: .tip}
-Here you can probably start to see challenges with integrating the Swagger UI output with the rest of your documentation. The `externalDocs` object at least gives you a predictable place to link back to your other [non-reference topics](docnonref.html). See the related topic, [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html) for tips on how to integrate your Swagger UI output into your regular documentation.
+Here you can probably start to see challenges with integrating the Swagger UI output with the rest of your documentation. The `externalDocs` object at least gives you a predictable place to link back to your other [non-reference topics](docnonref.html). See the related topic, [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html), for tips on how to integrate your Swagger UI output into your regular documentation.
 
 {% include random_ad2.html %}
 
@@ -57,6 +57,6 @@ Here's the specification document rendered by Swagger UI:
 Try executing a request in the version above and look at the result. In the result, locate the `temp` value in the `main` object. Then take a break by going outside to evaluate whether the temperature outside matches the response.
 
 {: .tip}
-You can actually insert any valid path to an OpenAPI specification document into the "Explore" box in Swagger UI (assuming it's using a version that supports your version of the spec), and it will display the content. For example, you could insert `https://petstore.swagger.io/v2/swagger.json` (then click **Explore**) and it would show the Petstore API.
+You can insert any valid path to an OpenAPI specification document into the "Explore" box in Swagger UI (assuming it's using a version that supports your version of the spec), and it will display the content. For example, you could insert `https://petstore.swagger.io/v2/swagger.json` (then click **Explore**) and it would show the Petstore API.
 
 {% include random_ad.html %}

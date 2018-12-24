@@ -31,7 +31,7 @@ Before diving into the first step of the OpenAPI tutorial here, read the [OpenAP
 
 ## The root-level objects in OpenAPI spec
 
-There are 8 objects at the root level in the OpenAPI 3.0 spec. There are many nested objects within these root level objects, but at the root level, there are just these objects:
+There are eight objects at the root level in the OpenAPI 3.0 spec. There are many nested objects within these root level objects, but at the root level, there are just these objects:
 
 * [openapi](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#oasObject  )
 * [info](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#infoObject)
@@ -43,9 +43,9 @@ There are 8 objects at the root level in the OpenAPI 3.0 spec. There are many ne
 * [externalDocs](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#externalDocumentationObject)
 
 {: .note}
-By "root level," I mean the first level in the OpenAPI document. This level is also referred to as the global level, because some object properties declared here (namely `servers` and `security`) are applied to each of the operation objects unless overridden at a lower level.
+By "root level," I mean the first level in the OpenAPI document. This level is also referred to as the global level because some object properties declared here (namely `servers` and `security`) are applied to each of the operation objects unless overridden at a lower level.
 
-The whole document (the object that contains these 8 root level objects) is called an [OpenAPI document](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#oasDocument). The convention is to name the document **openapi.yml**.
+The whole document (the object that contains these eight root-level objects) is called an [OpenAPI document](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#oasDocument). The convention is to name the document **openapi.yml**.
 
 {: .note}
 "OpenAPI" refers to the specification; "Swagger" refers to the tooling (at least from Smartbear) that supports the OpenAPI specification. For more details on the terms, see [What Is the Difference Between Swagger and OpenAPI?](https://blog.smartbear.com/open-source/what-is-the-difference-between-swagger-and-openapi/)
@@ -54,7 +54,7 @@ The whole document (the object that contains these 8 root level objects) is call
 
 {% include random_ad.html %}
 
-As you work on your specification document, use the online [Swagger Editor](https://swagger.io/swagger-editor/). The Swagger Editor provides a split view: on the left where you write your spec code, and on the right you see a fully functional Swagger UI display. You can even submit requests from the Swagger UI display in this editor.
+As you work on your specification document, use the online [Swagger Editor](https://swagger.io/swagger-editor/). The Swagger Editor provides a split view: on the left where you write your spec code, and on the right, you see a fully functional Swagger UI display. You can even submit requests from the Swagger UI display in this editor.
 
 The Swagger Editor will validate your content in real-time, and you will see validation errors until you finish coding the specification document. Don't worry about the errors unless you see X marks in the code you're working on.
 
@@ -72,7 +72,7 @@ Add the first root-level property for the specification document: `openapi`. In 
 openapi: "3.0.2"
 ```
 
-Until you add more information in here, you'll see error messages and nots such as "No operations defined in spec!" That's okay &mdash; in the next step you'll start seeing more info.
+Until you add more information in here, you'll see error messages and notes such as "No operations defined in spec!" That's okay &mdash; in the next step, you'll start seeing more info.
 
 3.0 was released on 2017-07-26, and 3.0.2 was released on 10-08-2018 (see the [Version History](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#appendix-a-revision-history)). Much of the information and examples online, as well as supporting tools, often focus only on 2.0. Even if you're locked into publishing in a 2.0 tool or platform, you can code the spec in 3.0 and then use a tool such as [APIMATIC Transformer](https://apimatic.io/transformer) to convert the 3.0 spec to 2.0. You can also convert a spec from 2.0 to 3.0.
 

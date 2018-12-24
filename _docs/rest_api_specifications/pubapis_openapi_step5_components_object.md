@@ -100,41 +100,41 @@ components:
     q:
       name: q
       in: query
-      description: "**City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes."
+      description: "**City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by a comma; use ISO 3166 country codes."
       schema:
         type: string
     id:
       name: id
       in: query
-      description: "**City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls.*"
+      description: "**City ID**. *Example: `2172797`*. You can call by city ID. The API responds with the exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in this parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs, it's treated as 3 API calls.*"
       schema:
         type: string
 
     lat:
       name: lat
       in: query
-      description: "**Latitude**. *Example: 35*. The latitude cordinate of the location of your interest. Must use with `lon`."
+      description: "**Latitude**. *Example: 35*. The latitude coordinate of the location of your interest. Must use with `lon`."
       schema:
         type: string
 
     lon:
       name: lon
       in: query
-      description: "**Longitude**. *Example: 139*. Longitude cordinate of the location of your interest. Must use with `lat`."
+      description: "**Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with `lat`."
       schema:
         type: string
 
     zip:
       name: zip
       in: query
-      description: "**Zip code**. Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default."
+      description: "**Zip code**. Search by zip code. *Example: 95050,us*. Please note that if the country is not specified, the search uses USA as a default."
       schema:
         type: string
 
     units:
       name: units
       in: query
-      description: '**Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use units parameter, format is `standard` by default.'
+      description: '**Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use the `units` parameter, the format is `standard` by default.'
       schema:
         type: string
         enum: [standard, metric, imperial]
@@ -152,7 +152,7 @@ components:
     mode:
       name: mode
       in: query
-      description: "**Mode**. *Example: html*. Determines format of response. Possible values are `xml` and `html`. If mode parameter is empty the format is `json` by default."
+      description: "**Mode**. *Example: html*. Determines the format of the response. Possible values are `xml` and `html`. If the mode parameter is empty, the format is `json` by default."
       schema:
         type: string
         enum: [json, xml, html]
@@ -163,7 +163,7 @@ Replace the existing `paths` object in your code in Swagger Editor with the abov
 
 ## Re-using response objects {#reusing_objects}
 
-In the [Step 4: The paths object](pubapis_openapi_step4_paths_object.html), when we described the [`responses` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#responsesObject) object in the `paths` object, even with just a simple placeholder, we used a [`schema`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#schemaObject) object to describe the model for the request or response. The `schema` refers to the data structure (the fields, values, and hierarchy of the various objects and properties of a JSON or YAML object &mdash; see [What is a schema?](https://spacetelescope.github.io/understanding-json-schema/about.html#what-is-a-schema)).
+In [Step 4: The paths object](pubapis_openapi_step4_paths_object.html), when we described the [`responses` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#responsesObject) in the `paths` object, even with just a simple placeholder, we used a [`schema`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#schemaObject) object to describe the model for the request or response. The `schema` refers to the data structure (the fields, values, and hierarchy of the various objects and properties of a JSON or YAML object &mdash; see [What is a schema?](https://spacetelescope.github.io/understanding-json-schema/about.html#what-is-a-schema)).
 
 {% include random_ad.html %}
 
@@ -664,41 +664,41 @@ components:
     q:
       name: q
       in: query
-      description: "**City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes."
+      description: "**City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by a comma; use ISO 3166 country codes."
       schema:
         type: string
     id:
       name: id
       in: query
-      description: "**City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls.*"
+      description: "**City ID**. *Example: `2172797`*. You can call by city ID. The API responds with the exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in this parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs, it's treated as 3 API calls.*"
       schema:
         type: string
 
     lat:
       name: lat
       in: query
-      description: "**Latitude**. *Example: 35*. The latitude cordinate of the location of your interest. Must use with `lon`."
+      description: "**Latitude**. *Example: 35*. The latitude coordinate of the location of your interest. Must use with `lon`."
       schema:
         type: string
 
     lon:
       name: lon
       in: query
-      description: "**Longitude**. *Example: 139*. Longitude cordinate of the location of your interest. Must use with `lat`."
+      description: "**Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with `lat`."
       schema:
         type: string
 
     zip:
       name: zip
       in: query
-      description: "**Zip code**. Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default."
+      description: "**Zip code**. Search by zip code. *Example: 95050,us*. Please note that if the country is not specified, the search uses USA as a default."
       schema:
         type: string
 
     units:
       name: units
       in: query
-      description: '**Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use units parameter, format is `standard` by default.'
+      description: '**Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use the `units` parameter, the format is `standard` by default.'
       schema:
         type: string
         enum: [standard, metric, imperial]
@@ -716,7 +716,7 @@ components:
     mode:
       name: mode
       in: query
-      description: "**Mode**. *Example: html*. Determines format of response. Possible values are `xml` and `html`. If mode parameter is empty the format is `json` by default."
+      description: "**Mode**. *Example: html*. Determines the format of the response. Possible values are `xml` and `html`. If the mode parameter is empty, the format is `json` by default."
       schema:
         type: string
         enum: [json, xml, html]
@@ -933,7 +933,7 @@ Also, click the **Model** link to see how the descriptions of each element appea
 
 You'll also notice a "Models" section at the end. By default, Swagger UI displays each object in `components` in a section called "Models" at the end of your Swagger UI display. If you consolidate all schemas into a single object, without using the `$ref` property to point to new objects, you will see just one object in Models. If you split out the objects, then you see each object listed separately, including the object that contains all the references.
 
-Because I want to re-use objects, I'm going define each object in `components` separately. As a result, the Models section looks like this:
+Because I want to re-use objects, I'm going to define each object in `components` separately. As a result, the Models section looks like this:
 
 <a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/swaggerui_models_broken_out.png" class="medium" /></a>
 
@@ -945,4 +945,4 @@ To hide the Models section, you can add the parameter `defaultModelsExpandDepth:
 
 ## Security definitions
 
-The `components` object also contains a [`securitySchemes` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#securitySchemeObject) that defines the authorization method used with each `path`. Rather than dive into the security configuration details here, I explore security in the [step 6](pubapis_openapi_step6_security_object.html).
+The `components` object also contains a [`securitySchemes` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#securitySchemeObject) that defines the authorization method used with each `path`. Rather than dive into the security configuration details here, I explore security in [step 6](pubapis_openapi_step6_security_object.html).

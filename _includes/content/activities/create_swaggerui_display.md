@@ -18,7 +18,7 @@ In this activity, you'll create a Swagger UI display for an OpenAPI specificatio
 	  The only folder you'll be working with in the downloaded zip is the **dist** folder (short for distribution). Everything else is used only if you're recompiling the Swagger files, which is beyond the scope of this tutorial.
 
 5.  Drag the **dist** folder out of the swagger-ui-master folder so that it stands alone. (Then optionally delete the swagger-ui-master folder and zip file.)
-7.  Drag your OpenAPI specification file that you prepared earlier (in step 1) into the the **dist** folder. If you're using the pre-build OpenAPI files, it's either **openapi_openweathermap.yml** or **openapi_sunrise_sunset.yml**.) Your file structure should look as follows:
+7.  Drag your OpenAPI specification file that you prepared earlier (in step 1) into the **dist** folder. If you're using the pre-build OpenAPI files, it's either **openapi_openweathermap.yml** or **openapi_sunrise_sunset.yml**.) Your file structure should look as follows:
 
     <pre>
     ├── dist

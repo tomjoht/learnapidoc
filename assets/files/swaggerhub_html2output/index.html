@@ -969,7 +969,7 @@
             <h2 id="welcome-to-apidoc">API and SDK Documentation</h2>
               <div class="app-desc">Version: 2.5.3</div>
             <hr>
-            <div>Get current weather, daily forecast for 16 days, and 3-hourly forecast 5 days for your city. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location stations. Data is available in JSON, XML, or HTML format. <strong>Note</strong>: This sample Swagger file covers the <code>current</code> endpoint only from the OpenWeatherMap API. <br/><br/> <strong>Note</strong>: All parameters are optional, but you must select at least one parameter. Calling the API by city ID (using the <code>id</code> parameter) will provide the most precise location results.</div>
+            <div>Get the current weather, daily forecast for 16 days, and a three-hour-interval forecast for 5 days for your city. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location stations. Data is available in JSON, XML, or HTML format. <strong>Note</strong>: This sample Swagger file covers the <code>current</code> endpoint only from the OpenWeatherMap API. <br/><br/> <strong>Note</strong>: All parameters are optional, but you must select at least one parameter. Calling the API by city ID (using the <code>id</code> parameter) will provide the most precise location results.</div>
           </div>
         </div>
         <div id="sections">
@@ -1030,14 +1030,14 @@ public class CurrentWeatherDataApiExample {
         //app_id.setApiKeyPrefix("Token");
 
         CurrentWeatherDataApi apiInstance = new CurrentWeatherDataApi();
-        String q = q_example; // String | **City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes.
-        String id = id_example; // String | **City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls.*
-        String lat = lat_example; // String | **Latitude**. *Example: 35*. The latitude cordinate of the location of your interest. Must use with `lon`.
-        String lon = lon_example; // String | **Longitude**. *Example: 139*. Longitude cordinate of the location of your interest. Must use with `lat`.
-        String zip = zip_example; // String | **Zip code**. Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default.
-        String units = units_example; // String | **Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use units parameter, format is `standard` by default.
+        String q = q_example; // String | **City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by a comma; use ISO 3166 country codes.
+        String id = id_example; // String | **City ID**. *Example: `2172797`*. You can call by city ID. The API responds with the exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in this parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs, it's treated as 3 API calls.*
+        String lat = lat_example; // String | **Latitude**. *Example: 35*. The latitude coordinate of the location of your interest. Must use with `lon`.
+        String lon = lon_example; // String | **Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with `lat`.
+        String zip = zip_example; // String | **Zip code**. Search by zip code. *Example: 95050,us*. Please note that if the country is not specified, the search uses USA as a default.
+        String units = units_example; // String | **Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use the `units` parameter, the format is `standard` by default.
         String lang = lang_example; // String | **Language**. *Example: en*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - `ar`, Bulgarian - `bg`, Catalan - `ca`, Czech - `cz`, German - `de`, Greek - `el`, English - `en`, Persian (Farsi) - `fa`, Finnish - `fi`, French - `fr`, Galician - `gl`, Croatian - `hr`, Hungarian - `hu`, Italian - `it`, Japanese - `ja`, Korean - `kr`, Latvian - `la`, Lithuanian - `lt`, Macedonian - `mk`, Dutch - `nl`, Polish - `pl`, Portuguese - `pt`, Romanian - `ro`, Russian - `ru`, Swedish - `se`, Slovak - `sk`, Slovenian - `sl`, Spanish - `es`, Turkish - `tr`, Ukrainian - `ua`, Vietnamese - `vi`, Chinese Simplified - `zh_cn`, Chinese Traditional - `zh_tw`.
-        String mode = mode_example; // String | **Mode**. *Example: html*. Determines format of response. Possible values are `xml` and `html`. If mode parameter is empty the format is `json` by default.
+        String mode = mode_example; // String | **Mode**. *Example: html*. Determines the format of the response. Possible values are `xml` and `html`. If the mode parameter is empty, the format is `json` by default.
         try {
             200 result = apiInstance.currentWeatherData(q, id, lat, lon, zip, units, lang, mode);
             System.out.println(result);
@@ -1056,14 +1056,14 @@ public class CurrentWeatherDataApiExample {
 
     public static void main(String[] args) {
         CurrentWeatherDataApi apiInstance = new CurrentWeatherDataApi();
-        String q = q_example; // String | **City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes.
-        String id = id_example; // String | **City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls.*
-        String lat = lat_example; // String | **Latitude**. *Example: 35*. The latitude cordinate of the location of your interest. Must use with `lon`.
-        String lon = lon_example; // String | **Longitude**. *Example: 139*. Longitude cordinate of the location of your interest. Must use with `lat`.
-        String zip = zip_example; // String | **Zip code**. Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default.
-        String units = units_example; // String | **Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use units parameter, format is `standard` by default.
+        String q = q_example; // String | **City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by a comma; use ISO 3166 country codes.
+        String id = id_example; // String | **City ID**. *Example: `2172797`*. You can call by city ID. The API responds with the exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in this parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs, it's treated as 3 API calls.*
+        String lat = lat_example; // String | **Latitude**. *Example: 35*. The latitude coordinate of the location of your interest. Must use with `lon`.
+        String lon = lon_example; // String | **Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with `lat`.
+        String zip = zip_example; // String | **Zip code**. Search by zip code. *Example: 95050,us*. Please note that if the country is not specified, the search uses USA as a default.
+        String units = units_example; // String | **Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use the `units` parameter, the format is `standard` by default.
         String lang = lang_example; // String | **Language**. *Example: en*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - `ar`, Bulgarian - `bg`, Catalan - `ca`, Czech - `cz`, German - `de`, Greek - `el`, English - `en`, Persian (Farsi) - `fa`, Finnish - `fi`, French - `fr`, Galician - `gl`, Croatian - `hr`, Hungarian - `hu`, Italian - `it`, Japanese - `ja`, Korean - `kr`, Latvian - `la`, Lithuanian - `lt`, Macedonian - `mk`, Dutch - `nl`, Polish - `pl`, Portuguese - `pt`, Romanian - `ro`, Russian - `ru`, Swedish - `se`, Slovak - `sk`, Slovenian - `sl`, Spanish - `es`, Turkish - `tr`, Ukrainian - `ua`, Vietnamese - `vi`, Chinese Simplified - `zh_cn`, Chinese Traditional - `zh_tw`.
-        String mode = mode_example; // String | **Mode**. *Example: html*. Determines format of response. Possible values are `xml` and `html`. If mode parameter is empty the format is `json` by default.
+        String mode = mode_example; // String | **Mode**. *Example: html*. Determines the format of the response. Possible values are `xml` and `html`. If the mode parameter is empty, the format is `json` by default.
         try {
             200 result = apiInstance.currentWeatherData(q, id, lat, lon, zip, units, lang, mode);
             System.out.println(result);
@@ -1084,14 +1084,14 @@ public class CurrentWeatherDataApiExample {
 [apiConfig setApiKey:@"YOUR_API_KEY" forApiKeyIdentifier:@"appid"];
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //[apiConfig setApiKeyPrefix:@"Bearer" forApiKeyIdentifier:@"appid"];
-String *q = q_example; // **City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes. (optional)
-String *id = id_example; // **City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls.* (optional)
-String *lat = lat_example; // **Latitude**. *Example: 35*. The latitude cordinate of the location of your interest. Must use with `lon`. (optional)
-String *lon = lon_example; // **Longitude**. *Example: 139*. Longitude cordinate of the location of your interest. Must use with `lat`. (optional)
-String *zip = zip_example; // **Zip code**. Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default. (optional)
-String *units = units_example; // **Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use units parameter, format is `standard` by default. (optional)
+String *q = q_example; // **City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by a comma; use ISO 3166 country codes. (optional)
+String *id = id_example; // **City ID**. *Example: `2172797`*. You can call by city ID. The API responds with the exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in this parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs, it's treated as 3 API calls.* (optional)
+String *lat = lat_example; // **Latitude**. *Example: 35*. The latitude coordinate of the location of your interest. Must use with `lon`. (optional)
+String *lon = lon_example; // **Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with `lat`. (optional)
+String *zip = zip_example; // **Zip code**. Search by zip code. *Example: 95050,us*. Please note that if the country is not specified, the search uses USA as a default. (optional)
+String *units = units_example; // **Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use the `units` parameter, the format is `standard` by default. (optional)
 String *lang = lang_example; // **Language**. *Example: en*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - `ar`, Bulgarian - `bg`, Catalan - `ca`, Czech - `cz`, German - `de`, Greek - `el`, English - `en`, Persian (Farsi) - `fa`, Finnish - `fi`, French - `fr`, Galician - `gl`, Croatian - `hr`, Hungarian - `hu`, Italian - `it`, Japanese - `ja`, Korean - `kr`, Latvian - `la`, Lithuanian - `lt`, Macedonian - `mk`, Dutch - `nl`, Polish - `pl`, Portuguese - `pt`, Romanian - `ro`, Russian - `ru`, Swedish - `se`, Slovak - `sk`, Slovenian - `sl`, Spanish - `es`, Turkish - `tr`, Ukrainian - `ua`, Vietnamese - `vi`, Chinese Simplified - `zh_cn`, Chinese Traditional - `zh_tw`. (optional)
-String *mode = mode_example; // **Mode**. *Example: html*. Determines format of response. Possible values are `xml` and `html`. If mode parameter is empty the format is `json` by default. (optional)
+String *mode = mode_example; // **Mode**. *Example: html*. Determines the format of the response. Possible values are `xml` and `html`. If the mode parameter is empty, the format is `json` by default. (optional)
 
 CurrentWeatherDataApi *apiInstance = [[CurrentWeatherDataApi alloc] init];
 
@@ -1127,14 +1127,14 @@ app_id.apiKey = "YOUR API KEY"
 
 var api = new OpenWeatherMapApi.CurrentWeatherDataApi()
 var opts = { 
-  'q': q_example, // {{String}} **City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes.
-  'id': id_example, // {{String}} **City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls.*
-  'lat': lat_example, // {{String}} **Latitude**. *Example: 35*. The latitude cordinate of the location of your interest. Must use with `lon`.
-  'lon': lon_example, // {{String}} **Longitude**. *Example: 139*. Longitude cordinate of the location of your interest. Must use with `lat`.
-  'zip': zip_example, // {{String}} **Zip code**. Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default.
-  'units': units_example, // {{String}} **Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use units parameter, format is `standard` by default.
+  'q': q_example, // {{String}} **City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by a comma; use ISO 3166 country codes.
+  'id': id_example, // {{String}} **City ID**. *Example: `2172797`*. You can call by city ID. The API responds with the exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in this parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs, it's treated as 3 API calls.*
+  'lat': lat_example, // {{String}} **Latitude**. *Example: 35*. The latitude coordinate of the location of your interest. Must use with `lon`.
+  'lon': lon_example, // {{String}} **Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with `lat`.
+  'zip': zip_example, // {{String}} **Zip code**. Search by zip code. *Example: 95050,us*. Please note that if the country is not specified, the search uses USA as a default.
+  'units': units_example, // {{String}} **Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use the `units` parameter, the format is `standard` by default.
   'lang': lang_example, // {{String}} **Language**. *Example: en*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - `ar`, Bulgarian - `bg`, Catalan - `ca`, Czech - `cz`, German - `de`, Greek - `el`, English - `en`, Persian (Farsi) - `fa`, Finnish - `fi`, French - `fr`, Galician - `gl`, Croatian - `hr`, Hungarian - `hu`, Italian - `it`, Japanese - `ja`, Korean - `kr`, Latvian - `la`, Lithuanian - `lt`, Macedonian - `mk`, Dutch - `nl`, Polish - `pl`, Portuguese - `pt`, Romanian - `ro`, Russian - `ru`, Swedish - `se`, Slovak - `sk`, Slovenian - `sl`, Spanish - `es`, Turkish - `tr`, Ukrainian - `ua`, Vietnamese - `vi`, Chinese Simplified - `zh_cn`, Chinese Traditional - `zh_tw`.
-  'mode': mode_example // {{String}} **Mode**. *Example: html*. Determines format of response. Possible values are `xml` and `html`. If mode parameter is empty the format is `json` by default.
+  'mode': mode_example // {{String}} **Mode**. *Example: html*. Determines the format of the response. Possible values are `xml` and `html`. If the mode parameter is empty, the format is `json` by default.
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -1170,14 +1170,14 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("appid", "Bearer");
 
             var apiInstance = new CurrentWeatherDataApi();
-            var q = q_example;  // String | **City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes. (optional) 
-            var id = id_example;  // String | **City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls.* (optional) 
-            var lat = lat_example;  // String | **Latitude**. *Example: 35*. The latitude cordinate of the location of your interest. Must use with `lon`. (optional) 
-            var lon = lon_example;  // String | **Longitude**. *Example: 139*. Longitude cordinate of the location of your interest. Must use with `lat`. (optional) 
-            var zip = zip_example;  // String | **Zip code**. Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default. (optional) 
-            var units = units_example;  // String | **Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use units parameter, format is `standard` by default. (optional) 
+            var q = q_example;  // String | **City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by a comma; use ISO 3166 country codes. (optional) 
+            var id = id_example;  // String | **City ID**. *Example: `2172797`*. You can call by city ID. The API responds with the exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in this parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs, it's treated as 3 API calls.* (optional) 
+            var lat = lat_example;  // String | **Latitude**. *Example: 35*. The latitude coordinate of the location of your interest. Must use with `lon`. (optional) 
+            var lon = lon_example;  // String | **Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with `lat`. (optional) 
+            var zip = zip_example;  // String | **Zip code**. Search by zip code. *Example: 95050,us*. Please note that if the country is not specified, the search uses USA as a default. (optional) 
+            var units = units_example;  // String | **Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use the `units` parameter, the format is `standard` by default. (optional) 
             var lang = lang_example;  // String | **Language**. *Example: en*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - `ar`, Bulgarian - `bg`, Catalan - `ca`, Czech - `cz`, German - `de`, Greek - `el`, English - `en`, Persian (Farsi) - `fa`, Finnish - `fi`, French - `fr`, Galician - `gl`, Croatian - `hr`, Hungarian - `hu`, Italian - `it`, Japanese - `ja`, Korean - `kr`, Latvian - `la`, Lithuanian - `lt`, Macedonian - `mk`, Dutch - `nl`, Polish - `pl`, Portuguese - `pt`, Romanian - `ro`, Russian - `ru`, Swedish - `se`, Slovak - `sk`, Slovenian - `sl`, Spanish - `es`, Turkish - `tr`, Ukrainian - `ua`, Vietnamese - `vi`, Chinese Simplified - `zh_cn`, Chinese Traditional - `zh_tw`. (optional) 
-            var mode = mode_example;  // String | **Mode**. *Example: html*. Determines format of response. Possible values are `xml` and `html`. If mode parameter is empty the format is `json` by default. (optional) 
+            var mode = mode_example;  // String | **Mode**. *Example: html*. Determines the format of the response. Possible values are `xml` and `html`. If the mode parameter is empty, the format is `json` by default. (optional) 
 
             try
             {
@@ -1205,14 +1205,14 @@ Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('appid', 'YOU
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('appid', 'Bearer');
 
 $api_instance = new Swagger\Client\Api{{classname}}();
-$q = q_example; // String | **City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes.
-$id = id_example; // String | **City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls.*
-$lat = lat_example; // String | **Latitude**. *Example: 35*. The latitude cordinate of the location of your interest. Must use with `lon`.
-$lon = lon_example; // String | **Longitude**. *Example: 139*. Longitude cordinate of the location of your interest. Must use with `lat`.
-$zip = zip_example; // String | **Zip code**. Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default.
-$units = units_example; // String | **Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use units parameter, format is `standard` by default.
+$q = q_example; // String | **City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by a comma; use ISO 3166 country codes.
+$id = id_example; // String | **City ID**. *Example: `2172797`*. You can call by city ID. The API responds with the exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in this parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs, it's treated as 3 API calls.*
+$lat = lat_example; // String | **Latitude**. *Example: 35*. The latitude coordinate of the location of your interest. Must use with `lon`.
+$lon = lon_example; // String | **Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with `lat`.
+$zip = zip_example; // String | **Zip code**. Search by zip code. *Example: 95050,us*. Please note that if the country is not specified, the search uses USA as a default.
+$units = units_example; // String | **Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use the `units` parameter, the format is `standard` by default.
 $lang = lang_example; // String | **Language**. *Example: en*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - `ar`, Bulgarian - `bg`, Catalan - `ca`, Czech - `cz`, German - `de`, Greek - `el`, English - `en`, Persian (Farsi) - `fa`, Finnish - `fi`, French - `fr`, Galician - `gl`, Croatian - `hr`, Hungarian - `hu`, Italian - `it`, Japanese - `ja`, Korean - `kr`, Latvian - `la`, Lithuanian - `lt`, Macedonian - `mk`, Dutch - `nl`, Polish - `pl`, Portuguese - `pt`, Romanian - `ro`, Russian - `ru`, Swedish - `se`, Slovak - `sk`, Slovenian - `sl`, Spanish - `es`, Turkish - `tr`, Ukrainian - `ua`, Vietnamese - `vi`, Chinese Simplified - `zh_cn`, Chinese Traditional - `zh_tw`.
-$mode = mode_example; // String | **Mode**. *Example: html*. Determines format of response. Possible values are `xml` and `html`. If mode parameter is empty the format is `json` by default.
+$mode = mode_example; // String | **Mode**. *Example: html*. Determines the format of the response. Possible values are `xml` and `html`. If the mode parameter is empty, the format is `json` by default.
 
 try {
     $result = $api_instance->currentWeatherData($q, $id, $lat, $lon, $zip, $units, $lang, $mode);
@@ -1234,14 +1234,14 @@ $WWW::SwaggerClient::Configuration::api_key->{'appid'} = 'YOUR_API_KEY';
 #$WWW::SwaggerClient::Configuration::api_key_prefix->{'appid'} = "Bearer";
 
 my $api_instance = WWW::SwaggerClient::CurrentWeatherDataApi->new();
-my $q = q_example; # String | **City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes.
-my $id = id_example; # String | **City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls.*
-my $lat = lat_example; # String | **Latitude**. *Example: 35*. The latitude cordinate of the location of your interest. Must use with `lon`.
-my $lon = lon_example; # String | **Longitude**. *Example: 139*. Longitude cordinate of the location of your interest. Must use with `lat`.
-my $zip = zip_example; # String | **Zip code**. Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default.
-my $units = units_example; # String | **Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use units parameter, format is `standard` by default.
+my $q = q_example; # String | **City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by a comma; use ISO 3166 country codes.
+my $id = id_example; # String | **City ID**. *Example: `2172797`*. You can call by city ID. The API responds with the exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in this parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs, it's treated as 3 API calls.*
+my $lat = lat_example; # String | **Latitude**. *Example: 35*. The latitude coordinate of the location of your interest. Must use with `lon`.
+my $lon = lon_example; # String | **Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with `lat`.
+my $zip = zip_example; # String | **Zip code**. Search by zip code. *Example: 95050,us*. Please note that if the country is not specified, the search uses USA as a default.
+my $units = units_example; # String | **Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use the `units` parameter, the format is `standard` by default.
 my $lang = lang_example; # String | **Language**. *Example: en*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - `ar`, Bulgarian - `bg`, Catalan - `ca`, Czech - `cz`, German - `de`, Greek - `el`, English - `en`, Persian (Farsi) - `fa`, Finnish - `fi`, French - `fr`, Galician - `gl`, Croatian - `hr`, Hungarian - `hu`, Italian - `it`, Japanese - `ja`, Korean - `kr`, Latvian - `la`, Lithuanian - `lt`, Macedonian - `mk`, Dutch - `nl`, Polish - `pl`, Portuguese - `pt`, Romanian - `ro`, Russian - `ru`, Swedish - `se`, Slovak - `sk`, Slovenian - `sl`, Spanish - `es`, Turkish - `tr`, Ukrainian - `ua`, Vietnamese - `vi`, Chinese Simplified - `zh_cn`, Chinese Traditional - `zh_tw`.
-my $mode = mode_example; # String | **Mode**. *Example: html*. Determines format of response. Possible values are `xml` and `html`. If mode parameter is empty the format is `json` by default.
+my $mode = mode_example; # String | **Mode**. *Example: html*. Determines the format of the response. Possible values are `xml` and `html`. If the mode parameter is empty, the format is `json` by default.
 
 eval { 
     my $result = $api_instance->currentWeatherData(q => $q, id => $id, lat => $lat, lon => $lon, zip => $zip, units => $units, lang => $lang, mode => $mode);
@@ -1266,14 +1266,14 @@ swagger_client.configuration.api_key['appid'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = swagger_client.CurrentWeatherDataApi()
-q = q_example # String | **City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes. (optional)
-id = id_example # String | **City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls.* (optional)
-lat = lat_example # String | **Latitude**. *Example: 35*. The latitude cordinate of the location of your interest. Must use with `lon`. (optional)
-lon = lon_example # String | **Longitude**. *Example: 139*. Longitude cordinate of the location of your interest. Must use with `lat`. (optional)
-zip = zip_example # String | **Zip code**. Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default. (optional)
-units = units_example # String | **Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use units parameter, format is `standard` by default. (optional)
+q = q_example # String | **City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by a comma; use ISO 3166 country codes. (optional)
+id = id_example # String | **City ID**. *Example: `2172797`*. You can call by city ID. The API responds with the exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in this parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs, it's treated as 3 API calls.* (optional)
+lat = lat_example # String | **Latitude**. *Example: 35*. The latitude coordinate of the location of your interest. Must use with `lon`. (optional)
+lon = lon_example # String | **Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with `lat`. (optional)
+zip = zip_example # String | **Zip code**. Search by zip code. *Example: 95050,us*. Please note that if the country is not specified, the search uses USA as a default. (optional)
+units = units_example # String | **Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use the `units` parameter, the format is `standard` by default. (optional)
 lang = lang_example # String | **Language**. *Example: en*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - `ar`, Bulgarian - `bg`, Catalan - `ca`, Czech - `cz`, German - `de`, Greek - `el`, English - `en`, Persian (Farsi) - `fa`, Finnish - `fi`, French - `fr`, Galician - `gl`, Croatian - `hr`, Hungarian - `hu`, Italian - `it`, Japanese - `ja`, Korean - `kr`, Latvian - `la`, Lithuanian - `lt`, Macedonian - `mk`, Dutch - `nl`, Polish - `pl`, Portuguese - `pt`, Romanian - `ro`, Russian - `ru`, Swedish - `se`, Slovak - `sk`, Slovenian - `sl`, Spanish - `es`, Turkish - `tr`, Ukrainian - `ua`, Vietnamese - `vi`, Chinese Simplified - `zh_cn`, Chinese Traditional - `zh_tw`. (optional)
-mode = mode_example # String | **Mode**. *Example: html*. Determines format of response. Possible values are `xml` and `html`. If mode parameter is empty the format is `json` by default. (optional)
+mode = mode_example # String | **Mode**. *Example: html*. Determines the format of the response. Possible values are `xml` and `html`. If the mode parameter is empty, the format is `json` by default. (optional)
 
 try: 
     # Call current weather data for one location
@@ -1308,7 +1308,7 @@ except ApiException as e:
                                                 </span>
                                 
                                                     <div class="inner description">
-                                                        **City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes.
+                                                        **City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by a comma; use ISO 3166 country codes.
                                                     </div>
                                             </div>
                                         </div>
@@ -1327,7 +1327,7 @@ except ApiException as e:
                                                 </span>
                                 
                                                     <div class="inner description">
-                                                        **City ID**. *Example: &#x60;2172797&#x60;*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in parameter &amp;mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs. it&#x27;s treated as 3 API calls.*
+                                                        **City ID**. *Example: &#x60;2172797&#x60;*. You can call by city ID. The API responds with the exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in parameter &amp;mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs. it&#x27;s treated as 3 API calls.*
                                                     </div>
                                             </div>
                                         </div>
@@ -1346,7 +1346,7 @@ except ApiException as e:
                                                 </span>
                                 
                                                     <div class="inner description">
-                                                        **Latitude**. *Example: 35*. The latitude cordinate of the location of your interest. Must use with &#x60;lon&#x60;.
+                                                        **Latitude**. *Example: 35*. The latitude coordinate of the location of your interest. Must use with &#x60;lon&#x60;.
                                                     </div>
                                             </div>
                                         </div>
@@ -1365,7 +1365,7 @@ except ApiException as e:
                                                 </span>
                                 
                                                     <div class="inner description">
-                                                        **Longitude**. *Example: 139*. Longitude cordinate of the location of your interest. Must use with &#x60;lat&#x60;.
+                                                        **Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with &#x60;lat&#x60;.
                                                     </div>
                                             </div>
                                         </div>
@@ -1384,7 +1384,7 @@ except ApiException as e:
                                                 </span>
                                 
                                                     <div class="inner description">
-                                                        **Zip code**. Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default.
+                                                        **Zip code**. Search by zip code. *Example: 95050,us*. Please note that if the country is not specified, the search uses USA as a default.
                                                     </div>
                                             </div>
                                         </div>

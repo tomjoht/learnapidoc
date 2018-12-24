@@ -37,7 +37,7 @@ Note that Git is different from GitHub. GitHub provides online repositories and 
 
 ## The idea of version control
 
-When you install version control software such as Git and initialize a repository in a folder, an invisible folder gets added to the repository. This invisible folder handles the versioning of the content in that folder. (If you want to move the Git tracking to another folder, you can simply move the invisible git folder to that other folder.)
+When you install version control software such as Git and initialize a repository in a folder, an invisible folder gets added to the repository. This invisible folder handles the versioning of the content in that folder. (If you want to move the Git tracking to another folder, you can move the invisible git folder to that other folder.)
 
 {% include random_ad2.html %}
 

@@ -17,8 +17,8 @@ In this section, we'll dive deeply into the OpenAPI specification. We'll use the
 
 Learning the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification) will take some time. As an estimate, plan about two weeks of immersion, working with a specific API in the context of the specification before you become comfortable with it. As you learn the OpenAPI specification, use the following resources:
 
-* [Sample OpenAPI specification documents](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v3.0). These sample specification documents provide a good starting point as a basis for your specification document. They give you a big picture about the general shape of a specification document.
-* [Swagger user guide](https://swagger.io/docs/specification/about/). The Swagger user guide is more friendly, conceptual, and easy to follow. It doesn't have the detail and exactness of the specification documentation on GitHub, but in many ways it's clearer and contains more examples.
+* [Sample OpenAPI specification documents](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v3.0). These sample specification documents provide a good starting point as a basis for your specification document. They give you a big picture of the general shape of a specification document.
+* [Swagger user guide](https://swagger.io/docs/specification/about/). The Swagger user guide is more friendly, conceptual, and easy to follow. It doesn't have the detail and exactness of the specification documentation on GitHub, but in many ways, it's clearer and contains more examples.
 * [OpenAPI specification documentation](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md). The specification documentation is technical and takes a little getting used to, but you'll no doubt consult it frequently when describing your API. It's a long, single page document to facilitate findability through Ctrl+F.
 
 {: .note}
@@ -26,9 +26,9 @@ There are other Swagger/OpenAPI tutorials online, but make sure you follow tutor
 
 ## How my OpenAPI/Swagger tutorial is different
 
-You can find a number of Swagger tutorials online. What makes mine different? Besides the end-to-end walkthrough using the OpenAPI 3.0 (rather than 2.0) version of the spec, and using an actual API for context, I also show how OpenAPI fields map to the Swagger UI display. More specifically, I demonstrate how and where each of the OpenAPI fields gets displayed in Swagger UI.
+You can find many Swagger tutorials online. What makes mine different? Besides the end-to-end walkthrough using the OpenAPI 3.0 (rather than 2.0) version of the spec, and using an actual API for context, I also show how OpenAPI fields map to the Swagger UI display. More specifically, I demonstrate how and where each of the OpenAPI fields gets displayed in Swagger UI.
 
-Granted, there are many display frameworks that can parse and display information in an OpenAPI specification document, but [Swagger UI](https://github.com/swagger-api/swagger-ui) is one of the most popular ones. Swagger UI is sponsored by SmartBear, the same company that is heavily invested in the [OpenAPI initiative](https://www.openapis.org/) and which develops [Swaggerhub](pubapis_swaggerhub_smartbear.html). Their tooling is almost always in sync with the latest spec features. Swagger UI an actively developed and managed open-source project.
+Granted, many display frameworks can parse and display information in an OpenAPI specification document, but [Swagger UI](https://github.com/swagger-api/swagger-ui) is one of the most popular ones. Swagger UI is sponsored by SmartBear, the same company that is heavily invested in the [OpenAPI initiative](https://www.openapis.org/) and which develops [Swaggerhub](pubapis_swaggerhub_smartbear.html). Their tooling is almost always in sync with the latest spec features. Swagger UI an actively developed and managed open-source project.
 
 By showing you how the fields in the spec appear in the Swagger UI display, I hope the specification objects and properties will take on more relevance and meaning. Just keep in mind that Swagger UI's display is *just one possibility* for how the spec information might be rendered.
 
@@ -37,7 +37,7 @@ By showing you how the fields in the spec appear in the Swagger UI display, I ho
 Before continuing, I want to clarify a few terms for those who may be unfamiliar with the OpenAPI/Swagger landscape:
 
 * [Swagger](https://swagger.io/) was the original name of the OpenAPI spec, but the spec was later changed to [OpenAPI](https://github.com/OAI/OpenAPI-Specification/) to reinforce the open, non-proprietary nature of this standard. Now, "Swagger" refers to API tooling that supports the OpenAPI spec, not the spec itself. People still often refer to both names interchangeably, but "OpenAPI" is how the spec should be referred to.
-* [Smartbear](https://smartbear.com/) is the company that maintains and develops the open source Swagger tooling (Swagger Editor, Swagger UI, Swagger Codegen, and others). They do not own the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification/), as this [initiative](https://www.openapis.org/) is driven by the Linux Foundation. The OpenAPI spec's development is driven by [many companies and organizations](https://www.openapis.org/membership/members).
+* [Smartbear](https://smartbear.com/) is the company that maintains and develops the open source Swagger tooling (Swagger Editor, Swagger UI, Swagger Codegen, and others). They do not own the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification/), as the Linux Foundation drives this [initiative](https://www.openapis.org/). The OpenAPI spec's development is driven by [many companies and organizations](https://www.openapis.org/membership/members).
 * The "OpenAPI specification document" or "OpenAPI document" is the Swagger YAML file that you create to describe your API.
 
 For other terms, see the [Glossary](api-glossary.html).
@@ -107,7 +107,7 @@ Here's what that looks like in JSON:
 }
 ```
 
-Hopefully those brief examples will help align us with the terminology used in the tutorial.
+Hopefully, those brief examples will help align us with the terminology used in the tutorial.
 
 {% include random_ad2.html %}
 
@@ -117,7 +117,7 @@ If you would like to get a big picture of the specification document, take a loo
 
 ## Follow the OpenAPI tutorial
 
-The OpenAPI tutorial has 8 steps. Each step corresponds with one of the root-level objects in the OpenAPI document.
+The OpenAPI tutorial has eight steps. Each step corresponds with one of the root-level objects in the OpenAPI document.
 
 * [Step 1: The openapi object](pubapis_openapi_step1_openapi_object.html)
 * [Step 2: The info object](pubapis_openapi_step2_info_object.html)
@@ -144,7 +144,7 @@ Later, when I talk more about [publishing](publishingapis.html), I'll explain ho
 
 ## Migrating from OpenAPI 2.0 to 3.0
 
-If you have an existing specification document that validates against version OpenAPI 2.0 and you want to convert it to OpenAPI 3.0 (or vice versa), you can use [APIMATIC's Transformer](https://apimatic.io/transformer) to convert it automatically. (You can also use APIMATIC to transform your specification document into a number of other outputs, such as [RAML](pubapis_raml.html), [API Blueprint](pubapis_api_blueprint.html), or [Postman](docapis_postman.html).)
+If you have an existing specification document that validates against version OpenAPI 2.0 and you want to convert it to OpenAPI 3.0 (or vice versa), you can use [APIMATIC's Transformer](https://apimatic.io/transformer) to convert it automatically. (You can also use APIMATIC to transform your specification document into many other outputs, such as [RAML](pubapis_raml.html), [API Blueprint](pubapis_api_blueprint.html), or [Postman](docapis_postman.html).)
 
 To see the difference between the 2.0 and the 3.0 code, you can copy these code samples to separate files and then use an application like [Diffmerge](https://sourcegear.com/diffmerge/) to highlight the differences. The Readme.io blog has a nice post that provides [A Visual Guide to What's New in Swagger 3.0](https://blog.readme.io/an-example-filled-guide-to-swagger-3-2/).
 

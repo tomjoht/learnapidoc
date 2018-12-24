@@ -14,7 +14,7 @@ path1: /restapispecifications.html
 <img src="images/openapistep6.png"/>
 {% endif %}
 
-Swagger UI provides a "Try it out" feature that lets users submit actual requests. To actually submit requests that are authorized by your API server, the spec must contain security information that will authorize the request. The [`security` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#securityRequirementObject) specifies the security or authorization protocol used when submitting requests.
+Swagger UI provides a "Try it out" feature that lets users submit actual requests. To submit requests that are authorized by your API server, the spec must contain security information that will authorize the request. The [`security` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#securityRequirementObject) specifies the security or authorization protocol used when submitting requests.
 
 {% if site.format == "web" %}
 * TOC
@@ -23,14 +23,14 @@ Swagger UI provides a "Try it out" feature that lets users submit actual request
 
 ## Which security scheme?
 
-REST APIs can use a number of different security approaches to authorize requests. I explored the most common authorization methods in [Authentication and authorization requirements](docapis_more_about_authorization.html). Swagger UI supports four authorization schemes:
+REST APIs can use different security approaches to authorize requests. I explored the most common authorization methods in [Authentication and authorization requirements](docapis_more_about_authorization.html). Swagger UI supports four authorization schemes:
 
 * API key
 * HTTP
 * OAuth 2.0
 * Open ID Connect
 
-In this step of the OpenAPI tutorial, we'll use the API key approach, since this is what the OpenWeatherMap API uses. If your API uses [OAuth 2.0](docapis_more_about_authorization.html#oauth) or another method, you'll need to read the [Security Scheme information](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#security-scheme-object) for details on how to configure it. However, all the security methods largely follow the same pattern.
+In this step of the OpenAPI tutorial, we'll use the API key approach, since this is what the OpenWeatherMap API uses. If your API uses [OAuth 2.0](docapis_more_about_authorization.html#oauth) or another method, you'll need to read the [Security Scheme information](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#security-scheme-object) for details on how to configure it. However, all the security methods mostly follow the same pattern.
 
 {% include random_ad.html %}
 
@@ -124,7 +124,7 @@ When you click the Authorization button, the `description` and other security de
 
 <a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapitutorial_securityauth.png" class="medium"/></a>
 
-After users enter an API key and clicks **Authorize**, the authorization method is set for as many requests as they want to make. The authorization session expires only when users refresh the page.
+After users enter an API key and click **Authorize**, the authorization method is set for as many requests as they want to make. The authorization session expires only when users refresh the page.
 
 ## <i class="fa fa-user-circle"></i> Test out how authorization works
 

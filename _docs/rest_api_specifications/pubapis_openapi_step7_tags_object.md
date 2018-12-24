@@ -31,7 +31,7 @@ tags:
     description: "Get current weather details"
 ```
 
-We just have one tag, but you could have as many as you want (if you have a lot of endpoints, it would make sense to create multiple tags to group them). You can list both the `name` and a `description` for each tag. The `description` appears as a subtitle for the tag name in the Swagger UI display.
+We have just one tag, but you could have as many as you want (if you have a lot of endpoints, it would make sense to create multiple tags to group them). You can list both the `name` and a `description` for each tag. The `description` appears as a subtitle for the tag name in the Swagger UI display.
 
 {% include random_ad.html %}
 
@@ -49,7 +49,7 @@ paths:
       - Current Weather Data
 ```
 
-This tag is defined at the global level for `tags`, so the `/weather` path will be grouped here.
+This tag is defined at the global level, so the `/weather` path will be grouped here.
 
 ## <i class="fa fa-user-circle"></i> View the Appearance in Swagger UI
 

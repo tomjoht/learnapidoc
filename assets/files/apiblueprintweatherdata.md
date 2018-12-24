@@ -2,7 +2,7 @@ FORMAT: 1A
 HOST: https://api.openweathermap.org/data/2.5/
 
 # OpenWeatherMap API
-Get current weather, daily forecast for 16 days, and 3-hourly forecast 5 days for your city. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location stations. Data is available in JSON, XML, or HTML format. **Note**: This sample Swagger file covers the `current` endpoint only from the OpenWeatherMap API. <br/><br/> **Note**: All parameters are optional, but you must select at least one parameter. Calling the API by city ID (using the `id` parameter) will provide the most precise location results.
+Get the current weather, daily forecast for 16 days, and a three-hour-interval forecast for 5 days for your city. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location stations. Data is available in JSON, XML, or HTML format. **Note**: This sample Swagger file covers the `current` endpoint only from the OpenWeatherMap API. <br/><br/> **Note**: All parameters are optional, but you must select at least one parameter. Calling the API by city ID (using the `id` parameter) will provide the most precise location results.
 
 ## Authentication
 This API uses Custom Query Parameter for its authentication.
@@ -19,29 +19,29 @@ Access current weather data for any location on Earth including over 200,000 cit
 + Parameters
     + q (string, optional)
 
-        **City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by comma; use ISO 3166 country codes.
+        **City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by a comma; use ISO 3166 country codes.
 
     + id (string, optional)
 
-        **City ID**. *Example: `2172797`*. You can call by city ID. API responds with exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs. it's treated as 3 API calls.*
+        **City ID**. *Example: `2172797`*. You can call by city ID. The API responds with the exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in this parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs, it's treated as 3 API calls.*
 
     + lat (string, optional)
 
-        **Latitude**. *Example: 35*. The latitude cordinate of the location of your interest. Must use with `lon`.
+        **Latitude**. *Example: 35*. The latitude coordinate of the location of your interest. Must use with `lon`.
 
     + lon (string, optional)
 
-        **Longitude**. *Example: 139*. Longitude cordinate of the location of your interest. Must use with `lat`.
+        **Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with `lat`.
 
     + zip (string, optional) -
 
-        **Zip code**. Search by zip code. *Example: 95050,us*. Please note if country is not specified then the search works for USA as a default.
+        **Zip code**. Search by zip code. *Example: 95050,us*. Please note that if the country is not specified, the search uses USA as a default.
 
         + Default: 94040,us
         + Sample: 94040,us
     + units (enum[string], optional)
 
-        **Units**. *Example: imperial*. Possible values: `metric`, `imperial`. When you do not use units parameter, format is `standard` by default.
+        **Units**. *Example: imperial*. Possible values: `metric`, `imperial`. When you do not use the `units` parameter, the format is `standard` by default.
 
         + Default: standard
         + Sample: imperial
@@ -93,7 +93,7 @@ Access current weather data for any location on Earth including over 200,000 cit
 
     + Mode (enum[string], optional)
 
-        **Mode**. *Example: html*. Determines format of response. Possible values are `xml` and `html`. If mode parameter is empty the format is `json` by default.
+        **Mode**. *Example: html*. Determines the format of the response. Possible values are `xml` and `html`. If the mode parameter is empty, the format is `json` by default.
 
         + Default: json
         + Sample: json
