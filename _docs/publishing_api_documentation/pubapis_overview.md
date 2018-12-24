@@ -73,7 +73,7 @@ Even if you could get developers to use a HAT, you'd likely need to buy a licens
 
 Ideally, engineers want to add annotations in their code and then generate the doc from those annotations. They've been doing this with Java and C++ code through [Javadoc](nativelibraryapis_create_javadoc.html) and [Doxygen](nativelibraryapis_doxygen.html) for the past 25+ years (for a comprehensive list of these tools, see [Comparison of document generators in Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_documentation_generators)).
 
-Even for REST APIs, there are tools/libraries that will auto-generate documentation from source code annotations (such as from Java to a OpenAPI spec through [Swagger Codegen](https://swagger.io/swagger-codegen/)), but it's not something that HATs can do. For more on auto-generating from source, see [Auto-generating the OpenAPI file from code annotations](pubapis_swagger_intro.html#auto-generating-the-openapi-file-from-code-annotations).
+Even for REST APIs, there are tools/libraries that will auto-generate documentation from source code annotations (such as from Java to an OpenAPI spec through [Swagger Codegen](https://swagger.io/swagger-codegen/)), but it's not something that HATs can do. For more on auto-generating from source, see [Auto-generating the OpenAPI file from code annotations](pubapis_swagger_intro.html#auto-generating-the-openapi-file-from-code-annotations).
 
 ### 3. API doc follows a specific structure and pattern not modeled in any HAT
 
