@@ -7,7 +7,7 @@ section: docnonref
 path1: /docnonref.html
 ---
 
-Before users can make requests with your API, they'll usually need to register for some kind of application key, or learn other ways to authenticate the requests. APIs vary in the way they authenticate users. Some APIs require you to include an API key in the request header, while other APIs require elaborate security due to the need to protect sensitive data, prove identity, and ensure the requests aren't tampered with. In this section, you'll learn more about authentication and authorization and what you should focus on in documentation.
+Before users can make requests with your API, they'll usually need to register for an API key or learn other ways to authenticate the requests. APIs vary in the way they authenticate users. Some APIs require you to include an API key in the request header, while other APIs require elaborate security due to the need to protect sensitive data, prove identity, and ensure the requests aren't tampered with. In this section, you'll learn more about authentication and authorization and what you should focus on in documentation.
 
 {% if site.format == "web" %}
 * TOC
@@ -29,7 +29,7 @@ An API might authenticate you but not authorize you to make a certain request.
 
 {% include random_ad2.html %}
 
-Why do APIs even need authentication? For read-only APIs, sometimes users don't need keys. But most commercial APIs do require authorization in the form of API keys or other methods. If you *didn't* have any kind of security with your API, users could make unlimited amounts of API calls without any kind of registration. This would make a revenue model for your API difficult.
+Why do APIs even need authentication? For read-only APIs, sometimes users don't need keys. But most commercial APIs do require authorization in the form of API keys or other methods. If you *didn't* have any security with your API, users could make unlimited amounts of API calls without any kind of registration. Allowing unrestricted requests would make a revenue model for your API difficult.
 
 Additionally, without authentication, there wouldn't be an easy way to associate requests with specific user data. And there wouldn't be a way to protect against requests from malicious users that might delete another user's data (such as by making DELETE requests on another's account).
 
@@ -62,7 +62,7 @@ APIs might give you both a public and private key. The public key is usually inc
 
 ### Basic Auth {#basic_auth}
 
-Another type of authorization is called Basic Auth. With this method, the sender places a `username:password` into the request header. The username and password is encoded with Base64, which is an encoding technique that converts the username and password into a set of 64 characters to ensure safe transmission. Here's an example of a Basic Auth in a request header:
+Another type of authorization is called Basic Auth. With this method, the sender places a `username:password` into the request header. The username and password are encoded with Base64, which is an encoding technique that converts the username and password into a set of 64 characters to ensure safe transmission. Here's an example of a Basic Auth in a request header:
 
 ```
 Authorization: Basic bG9sOnNlY3VyZQ==
@@ -98,13 +98,13 @@ The important point is that the secret key (critical to reconstructing the hash)
 
 ### OAuth 2.0 {#oauth}
 
-One popular method for authenticating and authorizing users is OAuth 2.0. This approach relies on an authentication server to communicate with the API server in order to grant access. You often see OAuth 2.0 when you're using a site and are prompted to log in using a service like Twitter, Google, or Facebook.
+One popular method for authenticating and authorizing users is OAuth 2.0. This approach relies on an authentication server to communicate with the API server to grant access. You often see OAuth 2.0 when you're using a site and are prompted to log in using a service like Twitter, Google, or Facebook.
 
 {% include course_image.html filename="oauthwindow" ext_web="png" ext_print="png" alt="OAuth login window" caption="OAuth login window" %}
 
-There are a few varieties of OAuth &mdash; namely, "one-legged OAuth" and "three-legged OAuth." One-legged OAuth is used when you don't have sensitive data to secure. This might be the case if you're just retrieving general, read-only information (such as news articles).
+There are a few varieties of OAuth &mdash; namely, "one-legged OAuth" and "three-legged OAuth." One-legged OAuth is used when you don't have sensitive data to secure. This might be the case if you're just retrieving general, read-only information.
 
-In contrast, three-legged OAuth is used when you need to protect sensitive data. There are three groups interacting in this scenario:
+In contrast, three-legged OAuth is used when you need to protect sensitive data. Three groups are interacting in this scenario:
 
 * The authentication server
 * The resource server (API server)
@@ -120,7 +120,7 @@ The access token is packaged into a query parameter in a response redirect (302)
 
 The user then makes a request to the resource server (API server). The access token gets added to the header of the API request with the word `Bearer` followed by the token string. The API server checks the access token in the user's request and decides whether to authenticate the user.
 
-Access tokens not only provide authentication for the requester, they also define the permissions of how the user can use the API. Additionally, access tokens usually expire after a period of time and require the user to log in again. For more information about OAuth 2.0, see these resources:
+Access tokens not only provide authentication for the requester but also define the permissions of how the user can use the API. Additionally, access tokens usually expire after a period of time and require the user to log in again. For more information about OAuth 2.0, see these resources:
 
 * [Learn API Technical Writing 2: REST for Writers (Udemy)](https://www.udemy.com/learn-api-technical-writing-2-rest-for-writers/), by Peter Gruenbaum
 * [OAuth simplified](https://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified), by Aaron Parecki
@@ -129,7 +129,7 @@ Access tokens not only provide authentication for the requester, they also defin
 
 In API documentation, you don't need to explain how your authentication works in detail to outside users. In fact, *not* explaining the internal details of your authentication process is probably a best practice as it would make it harder for hackers to abuse the API.
 
-However, you do need to explain some basic information such as:
+However, you do need to explain some necessary information such as:
 
 * How to get API keys
 * How to authenticate requests
@@ -139,7 +139,7 @@ However, you do need to explain some basic information such as:
 
 If you have public and private keys, you should explain where each key should be used, and note that private keys should not be shared. If different license tiers provide different access to the API calls, these licensing tiers should be explicit in your authorization section or elsewhere.
 
-Since the API keys section is usually essential before developers can start using the API, this section needs to appear in the beginning of your help.
+Since the API keys section is usually essential before developers can start using the API, this section needs to appear at the beginning of your help.
 
 ## Samples of authorization sections
 
@@ -149,7 +149,7 @@ The following are a few samples of authorization sections in API documentation.
 
 {% include course_image.html url="https://sendgrid.com/docs/User_Guide/Settings/api_keys.html" filename="sendgrid_authorization" ext_print="png" ext_web="png" alt="SendGrid API keys" caption="SendGrid API keys" %}
 
-SendGrid offers a detailed explanation of API keys, starting out with the basics by explaining, "What are API keys?" Contextually, the topic on API keys appears with other account management topics.
+SendGrid offers a detailed explanation of API keys, starting with the basics by explaining, "What are API keys?" Contextually, the topic on API keys appears with other account management topics.
 
 ### Twitter
 
@@ -175,5 +175,5 @@ With the [open-source project you identified](docapis_find_open_source_project.h
 
 1. What kind of authorization is required to make requests to the API?
 2. Are there different access levels within the authorization (for example, free versus pro tiers) that determine how many requests you can make or the types of information you can access?
-3. Are you able to get an API key or whatever authorization method is required in order to make test calls to the API?
+3. Are you able to get an API key or whatever authorization method is required to make test calls to the API?
 4. How is the information about authorization integrated into the getting started tutorial?

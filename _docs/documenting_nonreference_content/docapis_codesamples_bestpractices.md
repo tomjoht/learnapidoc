@@ -9,7 +9,7 @@ section: docnonref
 path1: /docnonref.html
 ---
 
-Developer documentation tends to include a lot of code samples. These code samples might not be included with the endpoints you document, but as you create tasks and more sophisticated workflows about how to use the API to accomplish a variety of goals, you'll end up leveraging different endpoints and showing how to address different scenarios. Code tutorials are a key part of your user guide.
+Developer documentation tends to include a lot of code samples. These code samples might not be included with the endpoints you document, but as you create tasks and more sophisticated workflows about how to use the API to accomplish a variety of goals, you'll end up leveraging different endpoints and showing how to address different scenarios. Code tutorials are a crucial part of your user guide.
 
 {% if site.format == "web" %}
 * TOC
@@ -18,9 +18,9 @@ Developer documentation tends to include a lot of code samples. These code sampl
 
 ## Code samples are like candy for developers
 
-Code samples play an important role in helping developers use an API. Code is literally another language, and when users who speak that language see it, the code communicates with them in powerful ways that non-code text (however descriptive it is) can't achieve.
+Code samples play an essential role in helping developers use an API. Code is literally another language, and when users who speak that language see it, the code communicates with them in powerful ways that non-code text (however descriptive it is) can't achieve.
 
-{% include course_image.html size="medium" border="true" filename="nonref_codetutorials" ext_print="png" ext_web="svg" alt="Code tutorials" caption="Code is in another language, so as much as you might try to describe the communication in this other language through text, it often falls short. When developer see code, they can often read the code and understand it natively." %}
+{% include course_image.html size="medium" border="true" filename="nonref_codetutorials" ext_print="png" ext_web="svg" alt="Code tutorials" caption="Code is in another language, so as much as you might try to describe the communication in this other language through text, it often falls short. When developers see code, they can often read the code and understand it natively." %}
 
 In user testing that Twilio did with their documentation, they found that pages that started more quickly with code samples performed better with users.
 
@@ -28,7 +28,7 @@ In user testing that Twilio did with their documentation, they found that pages 
 
 Specifically, pages with less than 4 sentences before code samples performed twice as well as pages with 11 sentences before code samples. Jarod Reyes explains:
 
-> It's a mental block more than it is not being able to see code. It tells a developer that this page has a lot to say, and that they have a lot to do. They don't want to necessarily want to spend the time to read what you want to say. We saw this across section length; we saw this across page depth. Any time that there is a lot or prose on a page and not a lot of code, that page didn't perform well. ([How Twilio Writes Documentation](https://eventil.com/presentations/pOszD6))
+> It's a mental block more than it is not being able to see code. It tells a developer that this page has a lot to say, and that they have a lot to do. They don't want to necessarily want to spend the time to read what you want to say. We saw this across section length; we saw this across page depth. Any time that there is a lot of prose on a page and not a lot of code, that page didn't perform well. ([How Twilio Writes Documentation](https://eventil.com/presentations/pOszD6))
 
 In other words, when developers see code, it's the equivalent of seeing a task-based topic with a user guide &mdash; the code indicates a concrete action for the developer to take. This attracts the developer's attention.
 
@@ -38,11 +38,11 @@ Sometimes engineers want to avoid including code samples in API docs because the
 
 > While a developer’s guide should walk a developer through the basic usage of an API and its functionality, it can’t cover every possible use of that API in a coherent way. That is where articles and tutorials come in, to teach developers tangential or specialized uses of an API, like combining it with another service, framework, or API.
 
-In other words, the articles and tutorials complement the reference documentation to provide more complete instruction. Code samples that show how to use the various endpoints to achieve a goal occupy an important space in your user guide.
+In other words, the articles and tutorials complement the reference documentation to provide complete instruction. Code samples that show how to use the various endpoints to achieve a goal occupy an important space in your user guide.
 
 Additionally, even if including code samples, the level of detail and explanation is also somewhat debatable. Many developers assume that the developer audience has a skill set similar to their own, without recognizing different developer specializations. And so they will add a code sample but not give any explanation about it. Internal developers will often say, "If the user doesn't understand this code, he or she shouldn't be using our API."
 
-If you encounter this attitude, remind developers that users often have technical talent in different areas. For example, a user might be an expert in Java but only mildly familiar with JavaScript. Someone who is a database programmer will have a different skill set than someone who is a Python programmer, who will have a different skillset from a front-end web development engineer, and so on. Given these differences and the likely possibility that you will have many novice (or unfamiliar) users, more extensive code tutorials and explanations are warranted.
+If you encounter this attitude, remind developers that users often have technical talent in different areas. For example, a user might be an expert in Java but only mildly familiar with JavaScript. Someone who is a database programmer will have a different skill set than someone who is a Python programmer, who will have a different skill set from a front-end web development engineer, and so on. Given these differences and the likely possibility that you will have many novice (or unfamiliar) users, more extensive code tutorials and explanations are warranted.
 
 ## Focus on the why, not the what
 
@@ -70,7 +70,7 @@ components. On the other hand, the learning goals of opportunistic developers ar
 
 For the opportunistic developer that first starts in the code, comments in the code can provide helpful documentation to get the developer oriented quickly. But not everyone starts in the code. Some prefer to read the conceptual overviews first.
 
-For more research on how do document code, see "When Not to Comment: Questions and Tradeoffs with API Documentation for C++ Projects" by Andrew Head, Caitlin Sadowski, Emerson Murphy-Hill, and Andrea Knight (2018 *ACM/IEEE 40th International Conference on Software Engineering.* [ResearchGate](https://www.researchgate.net/publication/325732077_When_not_to_comment_questions_and_tradeoffs_with_API_documentation_for_C_projects)). The researchers explore whether developers are more apt to look in header files (where more formal descriptions of the class and methods appear) or implementation code for documentation (they focused on C++). In some cases, reading the implementation code directly provides a clearer path to understanding for developers. Additionally, some developers distrust that documentation is up to date and so prefer to look at the code directly. For more complex code, however, learning from more elaborate documentation in header files was helpful.
+For more research on how to document code, see "When Not to Comment: Questions and Tradeoffs with API Documentation for C++ Projects" by Andrew Head, Caitlin Sadowski, Emerson Murphy-Hill, and Andrea Knight (2018 *ACM/IEEE 40th International Conference on Software Engineering.* [ResearchGate](https://www.researchgate.net/publication/325732077_When_not_to_comment_questions_and_tradeoffs_with_API_documentation_for_C_projects)). The researchers explore whether developers are more apt to look in header files (where more formal descriptions of the class and methods appear) or implementation code for documentation (they focused on C++). In some cases, reading the implementation code directly provides a clearer path to understanding for developers. Additionally, some developers distrust that documentation is up to date and so prefer to look at the code directly. For more complex code, however, learning from more elaborate documentation in header files was helpful.
 
 Overall, not every programmer reads code the same way. But based on the research, it's a good idea to include comments directly in the code as well as more formal explanations outside the code. If developers give you a chunk of code that has comments peppered throughout, don't assume that the code comments are somehow separate from documentation or outside your stewardship as a technical writer. Think of comments in code as the equivalent of context-sensitive help in a user interface &mdash; in many ways, this might be the most read content of all.
 
@@ -78,9 +78,9 @@ Overall, not every programmer reads code the same way. But based on the research
 
 ## Keep code samples simple
 
-Code samples should usually be stripped down to their simplest possible form. Providing code for an entire HTML page is probably unnecessary. But including some surrounding code doesn't hurt anyone, and for newbies it can help them see the big picture. (It's also easier to copy and paste.)
+Code samples should usually be stripped down to their simplest possible form. Providing code for an entire HTML page is probably unnecessary. But including some surrounding code doesn't hurt anyone, and for newbies, it can help them see the big picture. (It's also easier to copy and paste.)
 
-Additionally, avoid including a lot of styling or other details in the code that will potentially distract the audience from the main point. The more minimalist the code sample, the better. For example, if you're showing a simple JavaScript function, you might be tempted to support it with complex CSS styling so that the demo looks sharp. However, all the extra CSS will only introduce more complexity and confusion that competes with the original principle you're trying to show with the code sample.
+Additionally, avoid including a lot of styling or other details in the code that will potentially distract the audience from the main point. The more minimalist the code sample, the better. For example, if you're showing a simple JavaScript function, you might be tempted to support it with elaborate CSS styling so that the demo looks sharp. However, all the extra CSS will only introduce more complexity and confusion that competes with the original principle you're trying to show with the code sample.
 
 When developers take the code and integrate it into a production environment, they'll probably make a lot of changes to account for scaling, threading, and efficiency, and other production-level factors. But don't start out this way just to have a polished and professional looking demo.
 
@@ -88,9 +88,9 @@ When developers take the code and integrate it into a production environment, th
 
 Many times developers will copy and paste code directly from the documentation into their application. Then they will usually tweak it a little bit for their specific parameters or methods.
 
-If you intend for users to copy and paste the code, make sure it works. When I first used used some sample `ajax` code from a code tutorial on an API site, the `dataType` parameter was actually spelled `datatype`. As a result, the code didn't work (it returned the response as text, not JSON). It took me about 30 minutes of troubleshooting before I consulted the [`ajax` method](http://api.jquery.com/jquery.ajax/) and realized that it should be `dataType` with a capital `T`.
+If you intend for users to copy and paste the code, make sure it works. When I first used some sample `ajax` code from a code tutorial on an API site, the `dataType` parameter was spelled `datatype`. As a result, the code didn't work (it returned the response as text, not JSON). It took me about 30 minutes of troubleshooting before I consulted the [`ajax` method](http://api.jquery.com/jquery.ajax/) and realized that it should be `dataType` with a capital `T`.
 
-Ideally, test out all the code samples yourself (or implement a more robust process for testing code). This allows you to spot errors, understand whether all the parameters are complete and valid, and more. In the earlier video from Twilio, the authors say they wanted to treat code samples in documentation like their other engineering code, so they stored their code in a separate container (also pushed to GitHub) so they could run regular tests on it. They pulled the code into their documentation where appropriate. For lengthy code samples, consider storing the code on GitHub. This way engineers can more easily test it as part of their test cases for each release. Sometimes when code blocks are buried in documentation, they're overlooked with new releases.
+Ideally, test out all the code samples yourself (or implement a more robust process for testing code). Testing allows you to spot errors, understand whether all the parameters are complete and valid, and more. In the earlier video from Twilio, the authors say they wanted to treat code samples in documentation like their other engineering code, so they stored their code in a separate container (also pushed to GitHub) to run regular tests on the code. They pulled the code into their documentation where appropriate. For lengthy code samples, consider storing the code on GitHub. This way engineers can more easily test it as part of their test cases for each release. Sometimes when code blocks are buried in documentation, they're overlooked with new releases.
 
 ## Provide a sample in your target language
 
@@ -120,13 +120,13 @@ Sometimes developers will tell you that code is "self-documenting," meaning it's
 
 You won't see chunks of code here, but the Eventful docs include various examples about query string parameters for the endpoints. Although these parameters are also defined in their [reference documentation for the search endpoint](http://api.eventful.com/docs/events/search), the tutorial here expands on how to use the parameters in a more friendly, detailed way.
 
-I like the Eventful tutorial because it shows how documentation that is usually contained in reference material can be pulled out and explained in a more narrative way with examples. It shows more of the difference between reference and tutorial information.
+I like the Eventful tutorial because it shows how documentation that is usually contained in reference material can be pulled out and explained more narratively with examples. It shows more of the difference between reference and tutorial information.
 
 ### Twilio
 
 {% include course_image.html url="https://www.twilio.com/docs/quickstart" filename="twiliocodesamples" ext_print="png" ext_web="png" alt="Twilio code samples" caption="Twilio code samples" %}
 
-Twilio's tutorials are probably the most impressive and fully detailed tutorials in the examples here. Not only do they walk users through a task from beginning to end, they do so in half a dozen languages. The specific code examples have been extracted out into the right-column, while the narrative of the tutorial occupies in the middle column. All steps in the tutorial aren't shown at once. When you reach the end of one step, you click a button to show the next step. This might reduce any sense of intimidation users might feel when beginning the tutorial.
+Twilio's tutorials are probably the most impressive and fully detailed tutorials in the examples here. Not only do they walk users through a task from beginning to end, they do so in half a dozen languages. The specific code examples have been extracted out into the right-column, while the narrative of the tutorial occupies in the middle column. All the steps in the tutorial aren't shown at once. When you reach the end of one step, you click a button to show the next step. This progressive disclosure of information might reduce any sense of intimidation users might feel when beginning the tutorial.
 
 Although the middle column is narrow and the right-column larger, actually this middle column just contains narrative text to annotate and explain the code. When you click a button in the tutorial, it brings the code on the right in focus and blurs the other code. Their implementation is a technical feat that I haven't seen anywhere else.
 
@@ -136,13 +136,13 @@ Although the middle column is narrow and the right-column larger, actually this 
 
 As usual, Mailchimp provides solid tutorials for their products. The "Before You Start" section lists any necessary prerequisites before starting the tutorial. Each part of the tutorial is set off with section headings.
 
-The section heading style (rather than numbered steps) is worth considering. Most technical writers have numbered steps as a habit for tech docs, so when they start writing a code tutorial, the first inclination is to begin a sequence of steps. But with a code tutorial, you might have lengthy code samples that are followed by detailed explanations, and so on. Maintaining the list numbers across steps can become onerous. The section headings provide an easier formatting, and you can still preface each section heading with "Step 1", "Step 2", and so on.
+The section heading style (rather than numbered steps) is worth considering. Most technical writers have numbered steps as a habit for tech docs, so when they start writing a code tutorial, the first inclination is to begin a sequence of steps. But with a code tutorial, you might have lengthy code samples that are followed by detailed explanations, and so on. Maintaining the list numbers across steps can become onerous. The section headings provide less problematic formatting, and you can still preface each section heading with "Step 1", "Step 2", and so on.
 
 ### IBM Watson
 
 {% include course_image.html url="https://console.bluemix.net/docs/services/conversation/tutorial.html#tutorial" filename="ibmwatsoncodesamples" ext_print="png" ext_web="png" alt="IBM Watson code samples" caption="IBM Watson code samples" %}
 
-The IBM Watson tutorial does a nice job breaking up the tutorial steps into different sections, with easy-to-follow steps in each section. Up front, it lists the learning objectives, duration, and prerequisites. There's nothing particularly difficult about the formatting or the display &mdash; the emphasis focuses on the content.
+The IBM Watson tutorial does an excellent job breaking up the tutorial steps into different sections, with easy-to-follow steps in each section. Up front, it lists the learning objectives, duration, and prerequisites. There's nothing particularly challenging about the formatting or the display &mdash; the emphasis focuses on the content.
 
 ## Code samples for sample weather API
 
@@ -152,7 +152,7 @@ Earlier in the course, we walked through [each element of reference documentatio
 
 <h2>Code tutorial for surfreport endpoint</h2>
 
-<p>The following code samples shows how to use the <code>surfreport</code> endpoint to get the surf height for a specific beach.</p>
+<p>The following code samples show how to use the <code>surfreport</code> endpoint to get the surf height for a specific beach.</p>
 
 {% if site.format == "web" or site.format == "pdf" %}
 {% highlight javascript %}
@@ -212,7 +212,7 @@ $.ajax(settings).done(function (response) {
 
 <p>In this example, the <code>ajax</code> method from jQuery is used because it allows us to load a remote resource asynchronously.</p>
 
-<p>In the request, you submit the authorization through a query string URL. The endpoint limits the days returned to 1 in order to increase the download speed.</p>
+<p>In the request, you submit the authorization through a query string URL. The endpoint limits the days returned to 1 to increase the download speed.</p>
 
 <p>For demonstration purposes, the response is assigned to the <code>response</code> argument of the <code>done</code> method, and then written out to the <code>surfheight</code> tag on the page.</p>
 
@@ -221,7 +221,7 @@ $.ajax(settings).done(function (response) {
 
 One could go into a lot more detail with the explanation, even going line by line through the code, but here the commentary is already about half the length of the code. And there are some comments interspersed in the code. The comments address more the question of "why" rather than "what."
 
-Documenting code can be one of the most challenging aspects of developer documentation. Part of the challenge is that code isn't organized such that a line by line (or block by block) description makes sense. Variables are often defined first, functions are called that are defined elsewhere, and other aspects are non-linear as well. As you explain the logic, you might find that you're jumping around to different places in the code, not necessarily moving from top to bottom.
+Documenting code can be one of the most challenging aspects of developer documentation. Part of the challenge is that code isn't organized such that a line-by-line (or block-by-block) description makes sense. Variables are often defined first, functions are called that are defined elsewhere, and other aspects are non-linear as well. As you explain the logic, you might find that you're jumping around to different places in the code, not necessarily moving from top to bottom.
 
 {: .tip}
 For a deeper dive into how to document code samples, see my presentation on [Creating code samples for API/SDK documentation](https://idratherbewriting.com/2014/05/30/creating-code-samples-webinar-recording-slides-and-audio/).

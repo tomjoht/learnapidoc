@@ -172,7 +172,7 @@ folders:
   description: "Testing your documentation is critical to providing accurate, thorough information. With API and developer docs, due to the high level of complexity and engineering requirements, technical writers might be inclined to simply take information that engineers give them and incorporate them wholesale, without personally testing them. Merely playing an editorial can reduce your role to that of an engineer's secretary."
   folderitems:
 
-  - title: Overview to testing your docs
+  - title: Overview of testing your docs
     jurl: /testingdocs_overview.html
 
   - title: Set up a test environment
@@ -337,7 +337,7 @@ folders:
   - title:  REST API exercises
     jurl: /docapis_more_rest_exercises.html
 
-  - title: "Activity: Get event information using the EventBrite API"
+  - title: "Activity: Get event information using the Eventbrite API"
     jurl: /docapis_eventbrite_example.html
 
   - title: "Activity: Retrieve a gallery using the Flickr API"

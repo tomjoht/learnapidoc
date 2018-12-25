@@ -39,7 +39,7 @@ Put a link to your Getting Started tutorial on your documentation homepage. Make
 
 ## Run in Postman button {#runinpostmanbutton}
 
-In your Getting Started tutorial, consider including a Run in Postman button. (Postman is a REST API GUI client that we explored earlier in [Submit requests through Postman](docapis_postman.html).) If you have your [API endpoints integrated in Postman](docapis_postman.html), you can export your Postman collections as a widget to embed in an HTML page.  
+In your Getting Started tutorial, consider including a Run in Postman button. (Postman is a REST API GUI client that we explored earlier in [Submit requests through Postman](docapis_postman.html).) If you have your [API endpoints integrated with Postman](docapis_postman.html), you can export your Postman collections as a widget to embed in an HTML page.  
 
 The [Run in Postman button](https://www.getpostman.com/integrations/run-button) provides a button that, when clicked, imports your API info into Postman so users can run calls using the Postman client. As such, the Run in Postman button provides a way to import the interactive, try-it-out API explorer for your endpoints into a web page.
 
@@ -75,7 +75,7 @@ When you click the button, you should be prompted to open the collection in a Po
 
 {% include course_image.html size="small" filename="postmanlaunchhandler" ext_print="png" ext_web="png" alt="Options to open the Postman collection" caption="Options to open the Postman collection" %}
 
-[Postman](docapis_postman.html) provides a powerful REST API client that many developers are familiar with. It allows users to customize the API key and parameters and save those values. Although Postman doesn't provide the in-browser experience to try out calls as with [Swagger UI](pubapis_swagger_demo.html), in many ways the Postman client is more useful, because it lets users configure and save the calls they make. This is what internal developers often use to save and store API calls as they test and explore the functionality.
+[Postman](docapis_postman.html) provides a powerful REST API client that many developers are familiar with. It allows users to customize the API key and parameters and save those values. Although Postman doesn't provide the in-browser experience to try out calls as with [Swagger UI](pubapis_swagger_demo.html), in many ways the Postman client is more useful because it lets users configure and save the calls they make. Postman is what internal developers often use to save and store API calls as they test and explore the functionality.
 
 {% include random_ad2.html %}
 
@@ -87,13 +87,13 @@ The downside is that your parameter and endpoint descriptions don't get pulled i
 
 ## Samples of API overviews
 
-Here are a few sample Getting Started topics in APIs. If you compare the various Getting Started sections, you'll see that some are detailed and some are high-level and brief. In general, the more you can hold the developer's hand, the better. However, the tutorial should still be brief and not simply redundant with the other documentation. The key is that you show the user the beginning-to-end, full process in working with the API.
+Here are a few sample Getting Started topics in APIs. If you compare the various Getting Started sections, you'll see that some are detailed and some are high-level and brief. In general, the more you can hold the developer's hand, the better. However, the tutorial should still be brief and not simply redundant with the other documentation. The key is that you show the user the beginning-to-end, full process for working with the API.
 
 ### Paypal
 
 {% include course_image.html url="https://developer.paypal.com/docs/api/overview/"   filename="paypalgetstarted" ext_print="png" ext_web="png" alt="Paypal getting started tutorial" caption="Paypal getting started tutorial" %}
 
-Paypal's getting started tutorial contains quite a bit of detail, starting out with authorization, requests, and other details before making the first call. Although not so brief, this level of details helps orient users with the information they need. The format is clean and easy to follow.
+Paypal's getting started tutorial contains quite a bit of detail, starting with authorization, requests, and other details before making the first call. Although not so brief, this level of details helps orient users with the information they need. The format is clean and easy to follow.
 
 ### Twitter
 
@@ -105,7 +105,7 @@ Twitter's getting started page has several getting started sections for differen
 
 {% include course_image.html url="http://docs.parseplatform.org/parse-server/guide/#getting-started" filename="parseservergettingstarted" ext_web="png" ext_print="png" alt="Parse Server getting started" caption="Parse Server getting started" %}
 
-The Parse Server tutorial provides a good amount of detail and handholding through the various steps. For the more detailed steps on connecting your app and running the server elsewhere, the tutorial links out to more information.
+The Parse Server tutorial provides a fair amount of detail and handholding through the various steps. For the more detailed steps on connecting your app and running the server elsewhere, the tutorial links out to more information.
 
 ### Adsense
 
@@ -123,7 +123,7 @@ The Aeris weather getting started provides information for setting up an applica
 
 {% include course_image.html url="https://console.bluemix.net/docs/services/watson/index.html#about" filename="watsongettingstarted" ext_print="png" ext_web="png" alt="Watson and IBM Cloud getting started tutorial" caption="Watson and IBM Cloud getting started tutorial" %}
 
-The Watson and IBM Cloud getting started tutorial lists 3 steps. It's not an end-to-end getting started tutorial, though. It just gets the user started in selecting a service for your project. At the end, you start to code using the Watson Dashboard. Ideally, a getting started tutorial should help a user see some tangible output, but whether that's possible or not depends on your API.
+The Watson and IBM Cloud getting started tutorial lists three steps. It's not an end-to-end getting started tutorial, though. It just gets the user started in selecting a service for your project. At the end, you start to code using the Watson Dashboard. Ideally, a getting started tutorial should help a user see some tangible output, but whether that's possible or not depends on your API.
 
 {% include random_ad.html %}
 
