@@ -22,7 +22,7 @@ The Getting Started topic is somewhat like the typical Hello World tutorial in d
 
 {% include course_image.html size="medium" filename="timetohelloworld" ext_print="png" ext_web="svg" alt="Getting started tutorials are like Hello World tutorials." caption="Think of getting started tutorials as a kind of Hello World tutorial with the API. How long would it take for a developer to get the simplest possible response using your API?" %}
 
-Both Hello World tutorials and Getting Started tutorials share the same goal: to show a user how to use a framework, API, or some other system to get the simplest and easiest result, so they get a beginning-to-end sense of how it works.
+Both Hello World tutorials and Getting Started tutorials share the same goal: to show a user how to use a framework, API, or some other system to get the simplest and easiest result, so they get a end-to-end sense of how it works.
 
 As an example, you could take a common, basic use case for your API and show how to construct a request, as well as what response returns. If a developer can make that call successfully, he or she can probably be successful with the other calls too.
 
@@ -132,7 +132,7 @@ The Watson and IBM Cloud getting started tutorial lists three steps. It's not an
 With the [open-source project you identified](docapis_find_open_source_project.html), identify the getting started tutorial. Then answer the following questions:
 
 1. Does the API have a getting started tutorial?
-2. Does the getting started tutorial walk you through a beginning-to-end scenario?
+2. Does the getting-started tutorial walk you through an end-to-end scenario?
 3. Can you follow all the steps in the getting started tutorial successfully?
 4. How long does the getting started tutorial take to complete?
 5. In an attempt to simplify the instruction and keep it brief, does the documentation make assumptions about your technical level and familiarity with the domain?

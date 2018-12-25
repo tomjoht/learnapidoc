@@ -37,19 +37,19 @@ The problem is that the very people who can fix this content are usually fully e
 
 For example, suppose you identify a high point of developer friction related to poor documentation. Fixing it might not just be a matter of converting the content into plain language or adding some details about missing parameters. The required fixes might involve explaining how the parameters interact in the code, how one value gets used by another and how they get mapped into variables that the code iterates through, etc. Maybe the only person who truly understands the crazy syntax users have to write is the lead developer.
 
-But guess what? What lead developer isn't going to have time to figure out docs. He or she is usually heads-down deep in a complex programming scenario. So the very person who has the knowledge to decompile and excogitate the needed concepts in the documentation usually isn't available to do so. But if the content is beyond the comprehension of generalists, at some point these SMEs will need to devote some time to docs. In these scenarios, Robillard and Uddin say the best help would be to reduce the overhead of the documentation process.
+But guess what? What lead developer is going to have time to figure out docs? He or she is usually heads-down deep in a complex programming scenario. So the very person who has the knowledge to decompile and excogitate the needed concepts in the documentation usually isn't available to do so. But if the content is beyond the comprehension of generalists, at some point, these SMEs will need to devote some time to docs. In these scenarios, Robillard and Uddin say the best help would be to reduce the overhead of the documentation process.
 
-As an editor/publisher, you can help the SME author by accurately identifying the point of confusion, the area of the doc that needs updating, and provide easy tools for the SME to make the updates. The engineers can't be bothered to figure out static site generators or publishing workflows, PDFs, or other doc publishing tools. By playing a role as an editor/publisher, you can be a valuable contributor to the product team. This is why being a doc tools expert is particularly relevant in API documentation contexts.
+As an editor/publisher, you can help the SME author by accurately identifying the point of confusion, the area of the doc that needs updating, and provide easy tools for the SME to make the updates. The engineers can't be bothered to figure out static site generators or publishing workflows, PDFs, or other doc publishing tools. By playing a role as an editor/publisher, you can be a valuable contributor to the product team. This publishing role is why being a doc tools expert is particularly relevant in API documentation contexts.
 
 ## Using tools your SME authors want to use to collaborate {#hats}
 
 If engineers and SMEs will be collaborating on some of the doc content, consider using engineering-centric tools rather than writing-centric tools.  When I first transitioned to API documentation, I had my mind set on using DITA, and I converted a large portion of my content over to it.
 
-However, as I started looking more at API documentation sites, primarily [those listed on Programmableweb.com](http://www.programmableweb.com/apis/directory), which maintains the largest directory of web APIs, I didn't find many DITA-based API doc sites. In fact, it turns out that almost none of the API doc sites listed on Programmable Web even use traditional tech comm authoring tools.
+However, as I started looking more at API documentation sites, primarily [those listed on Programmableweb.com](http://www.programmableweb.com/apis/directory), which maintains the largest directory of web APIs, I didn't find many DITA-based API doc sites. It turns out that almost none of the API doc sites listed on Programmable Web even use traditional tech comm authoring tools.
 
 Despite many advances with single sourcing, content re-use, conditional filtering, and other features in help authoring tools and content management systems, almost no API documentation sites (at least those listed on Programmableweb.com) use them. Why is that? Why has the development community implicitly rejected tech comm tools and their many years of evolution?
 
-Granted, there is the occasional HAT, as with [Photobucket's API](http://bit.ly/photobucketlongurl), but they're rare. And it's even more rare to find an API doc site that structures the content in DITA.
+Granted, there is the occasional HAT, as with [Photobucket's API](http://bit.ly/photobucketlongurl), but they're rare. And it's even rarer to find an API doc site that structures the content in DITA.
 
 The short answer is that in API documentation scenarios, more engineers are writing. The content is so technical, they're the only ones who understand it. And when engineers write, they'll naturally gravitate towards tools and workflows they're familiar with.
 
@@ -65,7 +65,7 @@ If devs are going to contribute to docs (or write docs entirely themselves), the
 
 Additionally, almost no HAT runs on a Mac. Many developers and designers prefer Macs because they have a much better development platform (the command line is much friendlier and functional, for example). If you're using a PC, you might struggle to install developer tools or to follow internal tutorials to get set up and test out content.
 
-Even if you could get developers to use a HAT, you'd likely need to buy a license for each contributing developer. In contrast, docs-as-code tools are often open source and can therefore scale across the company without budgetary funding and approval
+Even if you could get developers to use a HAT, you'd likely need to buy a license for each contributing developer. In contrast, docs-as-code tools are often open source and can, therefore, scale across the company without budgetary funding and approval.
 
 {% include random_ad.html %}
 
@@ -79,21 +79,21 @@ Even for REST APIs, there are tools/libraries that will auto-generate documentat
 
 Engineers often want to push the reference documentation for APIs into well-defined templates that accommodate sections such as endpoint parameters, sample requests, sample responses, and so forth. (I discuss these reference sections in [Documenting API endpoints](docendpoints.html).)
 
-If you have a lot of endpoints, you need a system for pushing the content into standard templates. Ideally, you should separate out the various sections (description, parameters, responses, etc.) and then compile the information through your template when you build your site. Or you can use a specification such as [OpenAPI](pubapis_swagger_intro.html) to populate the information into a template. You can also incorporate custom scripts. However, you don't often have these options in HATs, since you're mostly limited to what workflows and templates are supported out of the box.
+If you have a lot of endpoints, you need a system for pushing the content into standard templates. Ideally, you should separate the various sections (description, parameters, responses, etc.) and then compile the information through your template when you build your site. Or you can use a specification such as [OpenAPI](pubapis_swagger_intro.html) to populate the information into a template. You can also incorporate custom scripts. However, you don't often have these options in HATs, since you're mostly limited to what workflows and templates are supported out of the box.
 
 ### 4. Many APIs have interactive API consoles, allowing you to try out the calls
 
-You won't find an [interactive API console](pubapis_design_patterns.html#interactive_api_explorers) in a HAT. By interactive API console, I mean you enter your own API key and values, and then run the call directly from the web pages in the documentation. ([Flickr's API explorer](https://www.flickr.com/services/api/explore/?method=flickr.photos.search) provides one such example of this interactivity, as does [Swagger UI](pubapis_swagger.html).) The response you see from this explorers is from your own data in the API.
+You won't find an [interactive API console](pubapis_design_patterns.html#interactive_api_explorers) in a HAT. By interactive API console, I mean you enter your own API key and values and then run the call directly from the web pages in the documentation. ([Flickr's API explorer](https://www.flickr.com/services/api/explore/?method=flickr.photos.search) provides one such example of this interactivity, as does [Swagger UI](pubapis_swagger.html).) The response you see from this explorers is from your own data in the API.
 
 ### 5. With APIs, the doc *is* the product's interface, so it has to be attractive enough to sell the product.
 
-Most output from HATs look dated and old. They look like a relic of the pre-2000 Internet era. (For more on the dated display, see [Tripane help and PDF files: past their prime?](http://www.robertdesprez.com/2013/01/18/tripane-help-and-pdfs-time-to-move-on/) from Robert Desprez.)
+Most outputs from HATs look dated and old. They look like a relic of the pre-2000 Internet era. (For more on the dated display, see [Tripane help and PDF files: past their prime?](http://www.robertdesprez.com/2013/01/18/tripane-help-and-pdfs-time-to-move-on/) from Robert Desprez.)
 
 For example, here's a sample help output from Flare for the Photobucket API:
 
 <a href="http://bit.ly/photobucketlongurl" class="noExtIcon"><img src="images/hatphotobucket.png" alt="Publishing API docs" /></a>
 
-With API documentation, often times the documentation *is* the product's interface &mdash; there isn't a separate product GUI (graphical user interface) that clients interact with. Because the product's GUI is the documentation, it has to be sexy and attractive.
+With API documentation, often the documentation *is* the product's interface &mdash; there isn't a separate product GUI (graphical user interface) that clients interact with. Because the product's GUI is the documentation, it has to be sexy and attractive.
 
 Most tripane help doesn't make that cut. If the help looks old and frame-based, it doesn't instill much confidence with developers evaluating it.
 
@@ -103,7 +103,7 @@ In Flare's latest release, you *can* customize the display in pretty significant
 
 Based on all of these factors, I decided to put DITA authoring on pause and try a new tool with my documentation: [Jekyll](pubapis_jekyll.html). I've come to love using Jekyll, which allows you to work primarily in Markdown, leverage Liquid for conditional logic, and initiate builds directly from a repository.
 
-I realize that not everyone has the luxury of switching authoring tools, but when I made the switch, my company was a startup, and we had only 3 authors and a minimal amount of legacy content. I wasn't burdened by a ton of documentation debt or heavy processes, so I could innovate.
+I realize that not everyone has the luxury of switching authoring tools, but when I made the switch, my company was a startup, and we had only three authors and a minimal amount of legacy content. I wasn't burdened by a ton of documentation debt or cumbersome processes, so I could innovate.
 
 Jekyll is just one documentation publishing option in the API doc space. I enjoy working with Jekyll's [code-based approach](pubapis_docs_as_code.html), but there are [many different tools](pubapis_static_site_generators.html) and [publishing options](pubapis_hosting_and_deployment.html) to explore. That's what we'll dive into in this section.
 

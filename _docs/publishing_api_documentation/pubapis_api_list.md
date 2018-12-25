@@ -8,7 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-Rather than approach the topic of publishing prescriptively, lets begin with some concrete examples and move towards the formulation of general principles. The following are more than 100 openly accessible REST APIs that you can browse as a way to look at patterns and examples. You can find many more APIs by browsing [programmableweb.com](http://programmableweb.com).
+Rather than approach the topic of publishing prescriptively, let's begin with some concrete examples and move towards the formulation of general principles. The following are more than 100 openly accessible REST APIs that you can browse as a way to look at patterns and examples. You can find many more APIs by browsing [programmableweb.com](http://programmableweb.com).
 
 * TOC
 {:toc}
@@ -128,7 +128,7 @@ Browse a few of these documentation sites to get a sense of the variety, but als
 108. [Paymill API](https://developers.paymill.com/API/index)
 109. [Rundown API](https://rapidapi.com/therundown/api/therundown?endpoint=5ace93eae4b04378c0ca27ba)
 
-{% include tip.html content="I last checked these links in December 2018. Given how fast the technology landscape changes, some links may be out of date. However, if you simply type <i>{product} + api docs</i> into Google's search, you will likely find the company's developer doc site. Most commonly, the API docs are at developer.{company}.com." %}
+{% include tip.html content="I last checked these links in December 2018. Given how fast the technology landscape changes, some links may be out of date. However, if you just type <i>{product} + api docs</i> into Google's search, you will likely find the company's developer doc site. Most commonly, the API docs are at developer.{company}.com." %}
 
 ## Programmableweb<span>.</span>com: A directory of API doc sites on the open web
 
