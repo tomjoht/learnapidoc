@@ -8,7 +8,7 @@ section: nativelibraryapis
 path1: /nativelibraryapis.html
 ---
 
-An alternative to Javadoc is Doxygen. Doxygen works highly similarly to Javadoc, except that it can process more languages (Java, C++, C#, and more). Doxygen is most commonly used with C++. Additionally, there's a GUI tool called Doxywizard that makes it really easy to generate the file.
+An alternative to Javadoc is Doxygen. Doxygen works highly similarly to Javadoc, except that it can process more languages (Java, C++, C#, and more). Doxygen is most commonly used with C++. Additionally, there's a GUI tool called Doxywizard that makes it easy to generate the file.
 
 * TOC
 {:toc}
@@ -25,7 +25,7 @@ Here's the Doxygen output:
 
 {% include course_image.html filename="doxygensample" size="large" ext_print="png" ext_web="png" alt="Doxygen Sample" caption="Doxygen Sample" %}
 
-You don't need to use the wizard. You can also just generate Doxygen through a configuration file. This is how developers typically run Doxygen builds from a server.
+You don't need to use the wizard. You can also generate Doxygen through a configuration file, which is typically how developers run Doxygen builds from a server.
 
 In contrast to Javadoc, Doxygen also allows you to incorporate external files written in Markdown. And Doxygen provides a search feature. These are two features that Javadoc lacks.
 
@@ -43,4 +43,4 @@ You don't need to limit yourself to either Javadoc or Doxygen. There are dozens 
 
 {% include random_ad.html %}
 
-Perhaps the biggest frustration of document generators is that you can't integrate the rest of your documentation with them. You're mostly stuck with the reference doc output. You'll need to also generate your how-to guides and other tutorials, and then link to the reference doc output. As such, you won't end up with a single integrated experience of documentation. Additionally, it will be hard to create links inline within topics between the two outputs. This is a topic I explored in more depth in [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).
+Perhaps the biggest frustration of document generators is that you can't integrate the rest of your documentation with them. You're mostly stuck with the reference doc output. You'll also need to generate your how-to guides and other tutorials, and then link to the reference doc output. As such, you won't end up with a single integrated experience of documentation. Additionally, it will be hard to create links inline within topics between the two outputs. Fragmentation of outputs is a topic I explore with more detail in [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).

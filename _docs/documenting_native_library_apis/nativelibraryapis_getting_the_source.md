@@ -8,7 +8,7 @@ section: nativelibraryapis
 path1: /nativelibraryapis.html
 ---
 
-In order to understand documentation for Java APIs, it helps to have a context of some sort. As such, I created a simple little Java application (called [sample-java-project](https://github.com/tomjoht/sample-java-project)) to demonstrate how the various tags get rendered into the Javadoc.
+To understand the documentation for Java APIs, it helps to see the context of what the documentation describes. As such, I created a simple little Java application (called [sample-java-project](https://github.com/tomjoht/sample-java-project)) to demonstrate how the various tags get rendered into the Javadoc.
 
 {% if site.format == "web" %}
 * TOC
@@ -21,37 +21,37 @@ The sample Java project (available at [github.com/tomjoht/sample-java-project](h
 
 {% include random_ad2.html %}
 
-This program doesn't really do anything except print little messages to the console, but it's simple enough to be instructive in its purpose. The purpose of the app is to demonstrate different doc tags, their placement, and how they get rendered in the Javadoc.
-
-## <i class="fa fa-user-circle"></i> Download the project
-
-One of your immediate challenges to editing Javadoc will be to get the source code into your IDE. The sample java project is .
-
-First, go to the [sample-java-project](https://github.com/tomjoht/sample-java-project) and clone the source using version control. (We covered some version control basics earlier in <a href="pubapis_version_control.html">Version control systems (such as Git)</a>.)
-
-```bash
-git clone https://github.com/tomjoht/sample-java-project
-```
+This program only prints little messages to the console, but it's simple enough to be instructive in its purpose. The purpose of the app is to demonstrate different doc tags, their placement, and how they get rendered in the Javadoc.
 
 {% include random_ad.html %}
 
-## <i class="fa fa-user-circle"></i> Open the project in Eclipse
+## <i class="fa fa-user-circle"></i> Download and open the project in Eclipse
 
-1.  If you haven't already [downloaded and installed Eclipse](nativelibraryapis_overview.html#eclipse), do so.
-1.  Open Eclipse and go to **File > New > Java Project**.
-2.  Clear the **Use default location** check box, and then click **Browse** and select the folder where you cloned the Github project. Click **Open**.
+One of your immediate challenges to editing Javadoc will be to get the source code into your IDE and open the project.
 
-    {% include course_image.html border="true" filename="create-new-java-project" ext_print="png" ext_web="png" alt="Import existing Java project" size="small" caption="Import existing Java project" %}
+1. Go to the [sample-java-project](https://github.com/tomjoht/sample-java-project) and clone the project using version control.
 
-3.  Click **Finish** to close the New Java Project dialog box.
+    ```bash
+    git clone https://github.com/tomjoht/sample-java-project
+    ```
+
+    (If you need to review version control basics, see [Version control systems (such as Git)](pubapis_version_control.html).)
+
+2.  If you haven't already [downloaded and installed Eclipse](nativelibraryapis_overview.html#eclipse), do so.
+3.  Open Eclipse and go to **File > New > Java Project**.
+4.  Clear the **Use default location** check box, and then click **Browse** and select the folder where you cloned the Github project. Click **Open**.
+
+    {% include course_image.html border="true" filename="create-new-java-project" ext_print="png" ext_web="png" alt="Import existing Java project" size="medium" caption="Import existing Java project" %}
+
+5.  Click **Finish** to close the New Java Project dialog box.
 
 	  The Java files should be visible in the left pane (Package Explorer) within your Eclipse IDE.
 
     {% include course_image.html size="medium" border="true" filename="eclipsefileview" ext_print="png" ext_web="png" alt="png" caption="Eclipse File View" %}
 
-## <i class="fa fa-user-circle"></i> Play with the Sample Java Project
+## <i class="fa fa-user-circle"></i> Play with the sample Java project
 
-This Java app doesn't do much. It's main purpose is to create some classes that demonstrate some Javadoc annotations. But for fun, run the app.
+This Java app doesn't do much. Its only purpose is to create some classes that demonstrate some Javadoc annotations. But for fun, run the app.
 
 1.  In the Package Explorer, expand **javadoc_tags**.
 2.  Double-click the **App.java** file to open it.
@@ -59,40 +59,40 @@ This Java app doesn't do much. It's main purpose is to create some classes that 
 
     {% include course_image.html size="large" filename="eclipserunapp" ext_print="png" ext_web="png" alt="Running the app in Eclipse" caption="Running the app in Eclipse" %}
 
-The main method (`public static void main(String[] args) throws IOException`), which is contained in the **App.java** file, runs the functions defined in the other package's files (`ACMESmartphone.java` and `Dynamite.java`).
+    The main method (`public static void main(String[] args) throws IOException`), which appears in the **App.java** file, runs the functions defined in the other package's files (`ACMESmartphone.java` and `Dynamite.java`).
 
-```java
-public static void main(String[] args) throws IOException {
+    ```java
+    public static void main(String[] args) throws IOException {
 
-  // First initialize your smartphone using the model number and license key.
-  ACMESmartphone myACMESmartphone = new ACMESmartphone(2.0, "398978fdskj");
+      // First initialize your smartphone using the model number and license key.
+      ACMESmartphone myACMESmartphone = new ACMESmartphone(2.0, "398978fdskj");
 
-  // Locate the roadrunner.
-  myACMESmartphone.findRoadRunner("Santa Clara","California");
+      // Locate the roadrunner.
+      myACMESmartphone.findRoadRunner("Santa Clara","California");
 
-  // Zap the roadrunner with the amount of voltage you want.
-  myACMESmartphone.zapRoadRunner(40);
+      // Zap the roadrunner with the amount of voltage you want.
+      myACMESmartphone.zapRoadRunner(40);
 
-}
-```
+    }
+    ```
 
-You can view the details of each function by clicking the `ACMESmartphone.java` and `Dynamite.java` class files.
+    You can view the details of each function by clicking the `ACMESmartphone.java` and `Dynamite.java` class files.
 
-Then app prints this text to the console:
+    Then app prints this text to the console:
 
-```
-model2.0 now initialized for license 398978fdskj
-location: Santa Clara, California
-getting geocoordinates of roadrunner....
-roadrunner located at Longitude = 39.2334, Latitude = 41.4899
-Backfire!!! zapping coyote with 1,000,000 volts!!!!
-```
+    ```
+    model2.0 now initialized for license 398978fdskj
+    location: Santa Clara, California
+    getting geocoordinates of roadrunner....
+    roadrunner located at Longitude = 39.2334, Latitude = 41.4899
+    Backfire!!! zapping coyote with 1,000,000 volts!!!!
+    ```
 
-{% include course_image.html  size="medium"  filename="java-app-in-action" ext_print="png" ext_web="png" alt="Running the program" caption="Running the program" %}
+    {% include course_image.html  size="medium"  filename="java-app-in-action" ext_print="png" ext_web="png" alt="Running the program" caption="Running the program" %}
 
 ## Side Note about Maven projects
 
-Before leaving this intro topic on getting started with a Java project, I'd like to make a note about Maven. Java projects often have a lot of dependencies on packages that are third-party libraries or at least non-standard Java utilities. Rather than requiring users to download these additional packages and add them to their class manually, developers frequently use Maven to manage the packages. (Maven is to Java like Gradle is to Android.)
+Before leaving this intro topic on getting started with a Java project, I'd like to make a note about Maven. Java projects often have a lot of dependencies on packages that are third-party libraries or at least non-standard Java utilities. Rather than requiring users to download these additional packages and add them to their class manually, developers frequently use Maven to manage the packages. (Maven is to Java as Gradle is to Android.)
 
 Maven projects use a pom.xml file that defines the dependencies. Eclipse ships with Maven already installed, so when you import a Maven project and install it, the Eclipse Maven plugin will retrieve all of the project dependencies and add them to your project.
 

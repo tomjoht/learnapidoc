@@ -31,4 +31,4 @@ When you make edits to Javadoc content, look for the following:
 
 Make some edits to a class and method. Then regenerate the Javadoc and find your changes. See how they get rendered in the output.
 
-{% include tip.html content="If you need to review how to export to Javadoc, see [Activity: Generate a Javadoc from a sample project](nativelibraryapis_create_javadoc.html). Each time you export to Javadoc, you need to select the classes you want included." %}
+{% include tip.html content="If you need to review how to export to Javadoc, see [Activity: Generate a Javadoc from a sample project](nativelibraryapis_create_javadoc.html). Each time you export to Javadoc, you need to select the classes you want to be included." %}

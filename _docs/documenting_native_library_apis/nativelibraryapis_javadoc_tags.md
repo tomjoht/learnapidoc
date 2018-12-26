@@ -8,7 +8,7 @@ section: nativelibraryapis
 path1: /nativelibraryapis.html
 ---
 
-[Javadoc](nativelibraryapis_create_javadoc.html) is a document generator that looks through your Java source files for specific annotations. It parses out the annotations into the Javadoc output. Knowing the annotations is essential, since this is how the Javadoc gets created.
+[Javadoc](nativelibraryapis_create_javadoc.html) is a document generator that looks through your Java source files for specific annotations. It parses out the annotations into the Javadoc output. Knowing the annotations is essential because this is how the Javadoc gets created.
 
 {% if site.format == "web" %}
 * TOC
@@ -60,12 +60,12 @@ Here's a real example of Javadoc comments for a method.
 
 ```java
 /**
-* Zaps the roadrunner with the amount of volts you specify.
+* Zaps the roadrunner with the number of volts you specify.
 * <p>
 * Do not exceed more than 30 volts or the zap function will backfire.
 * For another way to kill a roadrunner, see the {@link Dynamite#blowDynamite()} method.
 *
-* @exception IOException if you don't enter an data type amount for the voltage
+* @exception IOException if you don't enter a data type amount for the voltage
 * @param voltage the number of volts you want to send into the roadrunner's body
 * @see #findRoadRunner
 * @see Dynamite#blowDynamite
@@ -84,7 +84,7 @@ You put the Javadoc description and tags _before_ the class or method (no need f
 
 ## Common Javadoc tags
 
-The following are the most common tags used in Javadoc. Each tag has a word that follows it. For example, `@param latitude` means the parameter is "latitude".
+The following are the most common tags used in Javadoc. Each tag has a word that follows it. For example, `@param latitude` means the parameter is "latitude."
 
 {% include random_ad2.html %}
 
@@ -93,9 +93,9 @@ To view a lengthy example of Javadoc tags, see this <a href="http://www.oracle.c
 
 The following are some common Javadoc tags:
 
-* **`@author`**  A person who made significant contribution to the code. Applied only at the class, package, or overview level. Not included in the Javadoc output. It's not recommended to include this tag since authorship changes often.
+* **`@author`**  A person who made significant contributions to the code. Applied only at the class, package, or overview level. Not included in the Javadoc output. It's not recommended to include this tag since authorship changes often.
 * **`@param`** A parameter that the method or constructor accepts.
-* **`@deprecated`** Lets users know the class or method is no longer used. This tag will be positioned in a prominent way in the Javadoc. Accompany it with a `@see` or `{@link}` tag as well.
+* **`@deprecated`** Lets users know the class or method is no longer used. This tag will be positioned prominently in the Javadoc. Accompany it with a `@see` or `{@link}` tag as well.
 * **`@return`** What the method returns.
 * **`@see`** Creates a "see also" list. Use `{@link}` for the content to be linked.
 * **`{@link}`** Used to create links to other classes or methods. Example: `{@link Foo#bar}` links to the method `bar` that belongs to the class `Foo`. To link to the method in the same class, just include `#bar`.
@@ -144,9 +144,9 @@ public int methodName (...) {
 
 The short description is the first sentence and gets shortened as a summary for the class or method in the Javadoc. After a period, the parser moves the rest of the description into a long description. Use `<p>` to signal the start of a new paragraph. You don't need to surround the paragraphs with opening and closing `<p>` tags because the Javadoc compiler automatically adds them. Also, you can use HTML in your descriptions, such as an unordered list, code tags, bold tags, or others.
 
-After the descriptions, enter a blank line (for readability), and then start the tags. You can't add any more description content below the tags. Note that only methods and classes can have tags, not fields. Fields (variables) just have descriptions.
+After the descriptions, enter a blank line (for readability) and then start the tags. You can't add any more description content below the tags. Note that only methods and classes can have tags, not fields. Fields (variables) have descriptions only.
 
-Note that the first sentence is much like the `shortdesc` element in DITA. This is supposed to be a summary of the entire class or method. If one of your words has a period in it (like `Dr. Jones`), then you must remove the space following the period by adding `Dr.&nbsp;Jones` to connect it.
+Note that the first sentence is much like the `shortdesc` element in DITA. This first sentence is supposed to be a summary of the entire class or method. If one of your words has a period in it (like `Dr. Jones`), then you must remove the space following the period by adding `Dr.&nbsp;Jones` to connect it.
 
 Avoid using links in the first sentence. After the period, the next sentence shifts to the long paragraph, so you have to load up that first sentence to be descriptive. The verb tense should be present tense, such as _gets, puts, displays, calculates..._
 
@@ -157,7 +157,7 @@ What if the method is so obvious (for example, printPage) that your description 
 
 ## Avoid `@author`
 
-Commenting on Javadoc best practices, some people recommend using `@author` because it easily slips out of date, and the source control provides better indication of the last author. (See [Javadoc coding standards](http://blog.joda.org/2012/11/javadoc-coding-standards.html) for more detail.)
+Commenting on Javadoc best practices, some people recommend using `@author` because the author value easily slips out of date, and the source control provides better indication of the last author. (See [Javadoc coding standards](http://blog.joda.org/2012/11/javadoc-coding-standards.html) for more detail.)
 
 ## Order of tags
 
@@ -203,7 +203,7 @@ Note that you can have multiple spaces after the parameter name so that your par
 
 `@param` tags must be provided for every parameter in a method or constructor. Failure to do so will create an error and warning when you render Javadoc.
 
-Note that usually classes don't have parameters. There is one exception: Generics. Generic classes are classes that work with different type of objects. The object is specified as a parameter in the class in diamond brackets: `<>`. Although the Javadoc guidance from Oracle doesn't mention them, you can add a `@param` tag for a generic class to note the parameters for the generic class. See this [StackOverflow post](http://stackoverflow.com/questions/2015972/is-there-a-javadoc-tag-for-documentating-generic-type-parameters) for details. Here's an example from that page:
+Note that usually, classes don't have parameters. There is one exception: Generics. Generic classes are classes that work with different type of objects. The object is specified as a parameter in the class in diamond brackets: `<>`. Although the Javadoc guidance from Oracle doesn't mention them, you can add a `@param` tag for a generic class to note the parameters for the generic class. See this [StackOverflow post](http://stackoverflow.com/questions/2015972/is-there-a-javadoc-tag-for-documentating-generic-type-parameters) for details. Here's an example from that page:
 
 ```java
 /**
@@ -312,7 +312,7 @@ In Eclipse, you can use the Javadoc tab at the bottom of the screen to preview t
 
 ## Why all the detail about Javadoc tags?
 
-I've added a lot of specific detail and style guidelines about Javadoc tags here. Why? I wanted you to realize, if you're new to the topic, that annotations for the Javadoc follow a lot of style conventions and best practices. These conventions and best practices might not always be apparent or followed in Java files that you might be working on. You can add a lot of value just by making sure the content aligns with these style conventions.
+I've added a lot of specific detail and style guidelines about Javadoc tags here. Why? I wanted you to realize that annotations for the Javadoc follow a lot of style conventions and best practices. These conventions and best practices might not always be apparent or followed in Java files that you might be working on. You can add a lot of value just by making sure the content aligns with these style conventions.
 
 ## More information about Javadoc
 

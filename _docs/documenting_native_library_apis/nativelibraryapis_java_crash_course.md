@@ -8,7 +8,7 @@ section: nativelibraryapis
 path1: /nativelibraryapis.html
 ---
 
-To understand the different components of a Javadoc, you have to first understand a bit about Java. Becoming familiar with the names of the different components of Java will allow you to enter conversations and understand code at a high level. When you describe different aspects of sample code, knowing when to call something a class, method, parameter, or enum can be critical to your documentation's credibility.
+To understand the different components of a Javadoc, first you have to understand a bit about Java. Becoming familiar with the names of the different components of Java will allow you to enter conversations and understand the code at a high level. When you describe various aspects of sample code, knowing when to call something a class, method, parameter, or enum can be critical to your documentation's credibility.
 
 I'll run you through a brief crash course in the basics. Don't worry if this seems like a blur. For more detail about learning Java, I recommend consulting [lynda.com](http://lynda.com) and [safaribooksonline](http://safaribooksonline.com). Below I'll focus on some basic concepts in Java that will be important in understanding the [Javadoc tags and elements](nativelibraryapis_javadoc_tags.html).
 
@@ -19,17 +19,17 @@ I'll run you through a brief crash course in the basics. Don't worry if this see
 
 ## About Java
 
-Java's flexibility and widespread use make it one of the best programming languages to learn for technical writers. Java isn't tied to a specific language platform. Instead, Java code compiles into byte code. The platform you deploy your code on contains a Java Virtual Machine (JVM) that interprets the byte code. Hence through JVMs, different platforms can interpret and run Java code. This gives Java more flexibility with different platforms.
+Java's flexibility and widespread use make it one of the best programming languages to learn for technical writers. Java isn't tied to a specific language platform. Instead, Java code compiles into byte code. The platform you deploy your code on contains a Java Virtual Machine (JVM) that interprets the byte code. Hence through JVMs, different platforms can interpret and run Java code &mdash; this gives Java more flexibility with different platforms.
 
 ## Classes
 
 Classes are templates or blueprints that drive pretty much everything in Java. It's easiest to understand classes through an example. Think of a class like a general blueprint of a "bicycle." There are many different types of bicycles (Trek bikes, Specialized bikes, Giant bikes, Raleigh bikes, etc.). But they're all just different instances of the general class of a bicycle.
 
-In Java, you start out by defining classes. Each class is its own file and begins with a capital letter. The file name matches the class name, which means you have just one class per file.
+In Java, you start by defining classes. Each class is its own file and begins with a capital letter. The file name matches the class name, which means you have just one class per file.
 
 {% include random_ad.html %}
 
-Each class can contain a number of fields (variables for the class) and methods (subroutines the class can do).
+Each class can contain some fields (variables for the class) and methods (subroutines the class can do).
 
 Before the class name, an access modifier indicates how the class can be accessed. Several options for access modifiers are as follows:
 
@@ -104,7 +104,7 @@ Inside the `main` method is where you add your code to make your program run. As
 
 Fields are variables available within the class. A variable is a placeholder that is populated with a different value depending on what the user wants.
 
-Fields indicate their data types because all data in Java is "statically typed" (meaning, its format/length is defined) so that the data doesn't take up more space than it needs. Some data types include `byte`, `short`, `long`, `int`, `float`, or `double`. Basically, these are numbers or decimals of different sizes. You can also specify a `char`, `string`, or `boolean`.
+Fields indicate their data types because all data in Java is "statically typed" (meaning, its format/length is defined) so that the data doesn't take up more space than it needs. Some data types include `byte`, `short`, `long`, `int`, `float`, or `double`. These are numbers or decimals of different sizes. You can also specify a `char`, `string`, or `boolean`.
 
 Here's an example of some fields in class:
 
@@ -175,7 +175,7 @@ It's a best practice to include a constructor even if it's just the default.
 
 ## Packages
 
-Classes are organized into different packages. Packages are like folders or directories where the classes are stored. Putting classes into packages helps avoid naming conflicts.
+Classes are organized into different packages in Java projects. Packages are like folders or directories where the classes are stored. Putting classes into packages helps avoid naming conflicts.
 
 When you create your class, if it's in a package called `vehicles`, you list this package at the top of the class:
 
@@ -211,7 +211,7 @@ Maven handles package management for Java projects. Maven will automatically go 
 
 ## Exceptions
 
-In order to avoid broken code, developers anticipate potential problems through exception handling. Exceptions basically say, if there's an issue here, flag the error with this exception and then continue on through the code.
+To avoid broken code, developers anticipate potential problems through exception handling. Exceptions say, if there's an issue here, flag the error with this exception and then continue through the code.
 
 Different types of errors throw different exceptions. By identifying the type of exception thrown, you can more easily troubleshoot problems when code breaks because you know the specific error that's happening.
 
@@ -227,7 +227,7 @@ When you indicate the exception here, you list the type of exception using a spe
 
 ## Inheritance
 
-Some classes can extend other classes. This means a class inherits the properties of another class. When one class extends another class, you'll see a note like this:
+Some classes can extend other classes. Extending a class means a class inherits the properties of another class. When one class extends another class, you'll see a note like this:
 
 ```java
 public class Bicycle extends Vehicle {
@@ -235,11 +235,11 @@ public class Bicycle extends Vehicle {
 }
 ```
 
-This means that `Bicycle` inherits all of the properties of `Vehicle` and then can add to them.
+This code means that `Bicycle` inherits all of the properties of `Vehicle` and then can add to them.
 
 ## Interfaces
 
-An interface is a class that has methods with no code inside the method. Interfaces are intended to be implemented by another class that will insert their own values for the methods. Interfaces are a way of formalizing a class that will have a lot of subclasses, when you want all the subclasses to standardize on common strings and methods.
+An interface is a class that has methods with no code inside the method. Interfaces are intended to be implemented by another class that will insert their own values for the methods. Interfaces are a way of formalizing a class that will have a lot of subclasses. Interfaces force the subclasses to standardize on common strings and methods.
 
 ## JAR files and WAR files
 
@@ -247,7 +247,7 @@ The file extension for a class is `.java`, but when compiled by the Java Develop
 
 Developers often package up java files into a JAR file, which is like a zip file for Java projects. When you distribute your Java files, you'll likely provide a JAR file that the developer audience will add to their Java projects.
 
-Developers will add their JAR to their class path to make the classes available to their project. To do this, they right-click their project and select **Properties**. In the dialog box, they select **Java Build Path**, then they click the **Libraries** tab. They then click **Add JARs** and browse to the JAR.
+Developers will add their JAR to their class path to make the classes available to their project. To do this, they right-click their project and select **Properties**. In the dialog box, they select **Java Build Path** and then click the **Libraries** tab. They then click **Add JARs** and browse to the JAR.
 
 When you deliver a JAR file, developers can use the classes and methods available in the JAR. However, the JAR will not show them the source code, that is, the raw Java files. For this, users will consult the Javadoc.
 
@@ -267,7 +267,7 @@ Here's a quick summary of the concepts we talked about:
 * **Fields**: Variables in the object/class
 * **Constructor**: A method to create an object for a class
 * **Package**: A folder that groups classes
-* **Access modifier** (e.g, `public`): The scope at which a thing can be accessed
+* **Access modifier** (e.g., `public`): The scope at which a thing can be accessed
 * **Interface**: A skeleton class with empty methods (used for standardizing)
 * **Enum**: A data type offering predefined constants
 * **Subclass**: A class that inherits the fields + methods of another class
