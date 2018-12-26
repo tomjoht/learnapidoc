@@ -8,7 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-Although most developers use the command line when working with version control systems, there are many GUI clients available that can potentially simplify the process. GUI clients might be especially helpful when you're trying to see what has changed in a file, since the GUI can easily highlight and indicate the changes taking place.
+Although most developers use the command line when working with version control systems, there are many GUI clients available that can potentially simplify the process. GUI clients might be especially helpful when you're trying to see what has changed in a file since the GUI can quickly highlight and indicate the changes taking place.
 
 * TOC
 {:toc}
@@ -35,7 +35,7 @@ To set up your Git repo using the GitHub Desktop client:
     {% include course_image.html filename="localpathgithubdesktop" size="large" ext_print="png" ext_web="png" alt="Selecting paths for the repo in GitHub Desktop" caption="Selecting paths for the repo in GitHub Desktop" %}
 
 5.  Click **Clone**.
-6.  Go into the repository where GitHub Desktop cloned the repo (use your Finder or browsing folders normally) and either add a simple text file with some content, or make a change to an existing file.
+6.  Go into the repository where GitHub Desktop cloned the repo (use your Finder or browse the folders with Finder or Explorer) and either add a simple text file with some content or make a change to an existing file.
 7.  Go back to GitHub Desktop. You'll see the new file you added in the list of uncommitted changes on the left.
 
     {% include course_image.html filename="github-desktop-file-uncommitted-changes" size="medium"  ext_print="png" ext_web="png" alt="Uncommitted changes shown" caption="Uncommitted changes shown" %}
@@ -44,7 +44,7 @@ To set up your Git repo using the GitHub Desktop client:
 
 8.  In the lower-left corner of the GitHub Desktop client (where it says "Summary" and "Description"), type a commit message, and then click **Commit to master**.
 
-    When you commit the changes, the left pane no longer shows the list of uncommitted changes. However, you've committed the changes only locally. You still have to push the commit to the remote (origin) repository.
+    When you commit the changes, the left pane no longer shows the list of uncommitted changes. However, you've committed the changes only locally. You still have to push the commit to the remote (origin) repository. ("origin" is the alias name that refers to the remote repository.)
 
 9.  Click **Push origin** at the top.
 
@@ -74,7 +74,7 @@ Now let's create a branch, make some changes, and see how the changes are specif
 
     {% include course_image.html  size="medium" filename="github-desktop-file-changes" ext_print="png" ext_web="png" alt="New files modified" caption="New files modified" %}
 
-	  The file changes shows deleted lines in red and new lines in green. The colors help you see what changed.
+	  The file changes show deleted lines in red and new lines in green. The colors help you see what changed.
 
 4.  Commit the changes using the options in the lower-left corner, and click **Commit to development**.
 
@@ -125,7 +125,7 @@ Now let's merge the development branch into the master using a pull request work
 
 5.  To see what changes you're merging into master, you can click the **Files changed** tab (which appears on the secondary navigation bar near the top). Then click **Merge pull request** to merge in the branch, and click **Confirm merge** to complete the merge.
 
-4.  Now let's get the updates you merged into master online into your local copy. In your GitHub Desktop GUI client, select the **master** branch, and then click the **Fetch origin** button. Fetch gets the latest updates from origin but doesn't update your local working copy with the changes.
+4.  Now let's get the updates you merged into the `master`branch online into your local copy. In your GitHub Desktop GUI client, select the **master** branch, and then click the **Fetch origin** button. Fetch gets the latest updates from origin but doesn't update your local working copy with the changes.
 
     After you click **Fetch origin**, the button changes to **Pull Origin**.
 
@@ -158,9 +158,9 @@ The GitHub Desktop client displays an exclamation mark next to files with merge 
 
 ```
 <<<<<<< HEAD
-this is an edit i made locally.
+This is an edit I made locally.
 =======
-this is an edit i made from the browser.
+This is an edit I made from the browser.
 >>>>>>> c163ead57f6793678dd41b5efeef372d9bd81035
 ```
 
@@ -169,7 +169,7 @@ this is an edit i made from the browser.
 Fix all the conflicts by adjusting the content between the content markers and then deleting the content markers. For example, update the content to this:
 
 ```
-this is an edit i made locally.
+This is an edit I made locally.
 ```
 
 Now you need to re-add the file to Git again. In the GitHub Desktop client, commit your changes to the updated files. Then click **Push origin.** The updates on your local get pushed to the remote without any more conflicts.

@@ -6,7 +6,7 @@
     open Home.md
     ```
 
-    The file will be opened in the default application associated with that file type. You can also open the file by manually browsing to it and opening it normally.
+    The file will be opened in the default application associated with that file type. You can also open the file by manually browsing to it and opening it as usual (browsing through Finder or Explorer).
 
 2.  Make a small change to the content and save it. For example, type your name at the top of the document.
 3.  In your terminal, make sure you're in the directory where you downloaded the GitHub project.
@@ -38,7 +38,7 @@
         modified:   Home.md
     ```
 
-	  The staging area lists all the files that have been added to Git that you have modified in some way. It's a good practice to always type `git status` before committing files, because you might realize that by typing `git add .`, you might have accidentally added some files you didn't intend to track (such as large binary files). If you want to remove this file from the staging area, you can type `git reset HEAD Home.md` to unstage it.
+	  The staging area lists all the files that have been added to Git that you have modified in some way. It's a good practice to always type `git status` before committing files because you might realize that by typing `git add .`, you might have accidentally added some files you didn't intend to track (such as large binary files). If you want to remove this file from the staging area, you can type `git reset HEAD Home.md` to unstage it.
 
 5.  Commit the changes:
 
@@ -50,7 +50,7 @@
 
     The `git commit -m` command is a shortcut for committing and typing a commit message in the same step. It's much easier to commit updates this way.
 
-    If you just type `git commit`, you'll be prompted with another window to describe the change. On Windows, this new window will probably be a Notepad window. Describe the change on the top line, and then save and close the Windows file.
+    If you type `git commit` only, you'll be prompted with another window to describe the change. On Windows, this new window will probably be a Notepad window. Describe the change on the top line, and then save and close the Windows file.
 
     On a Mac, a new window doesn't open. Instead, the [Vim editor](https://en.wikipedia.org/wiki/Vi) mode opens up within the terminal. ("vi" stands for visual and "m" for mode, but it's not a very visual editor.) I don't recommend using Vim. If you get stuck in this mode and need to escape, press your **Escape** key. Then type **q** to quit. (See [Vim commands](http://www.cs.rit.edu/~cslab/vi.html) here.) Normally, you want an external editor such as Sublime Text to open from your terminal. See [Associating text editors with Git](https://help.github.com/articles/associating-text-editors-with-git/) for details.
 

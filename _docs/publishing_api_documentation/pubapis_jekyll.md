@@ -8,7 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-[Static site generators](pubapis_static_site_generators.html) are a breed of website compilers that package up a group of files (usually [written in Markdown](pubapis_markdown.html)) and make them into a fully deployable website. One of the most popular static site generators (based on number of downloads, usage, and community) is [Jekyll](https://jekyllrb.com/), and it's the one I have the most experience with, so I'll be focusing on Jekyll here, particularly how you can integrate Jekyll with CloudCannon for a continuous delivery publishing solution.
+[Static site generators](pubapis_static_site_generators.html) are a breed of website compilers that package up a group of files (usually [written in Markdown](pubapis_markdown.html)) and make them into a fully deployable website. One of the most popular static site generators (based on the number of downloads, usage, and community) is [Jekyll](https://jekyllrb.com/), and it's the one I have the most experience with, so I'll be focusing on Jekyll here, particularly how you can integrate Jekyll with CloudCannon for a continuous delivery publishing solution.
 
 * TOC
 {:toc}
@@ -65,11 +65,11 @@ Configuration file: /Users/tomjoht/projects/learnapidoc/_config.yml
 {: .tip}
 If you use Atom editor, you can use a terminal built directly into Atom (I use the [PlatformIO IDE Terminal](https://atom.io/packages/platformio-ide-terminal) package).
 
-You then copy the preview server address (in this case, `http://127.0.0.1:4000/learnapidoc/`) and paste it into your browser. This preview server continuously builds your site with each file change you save. I usually view this browser preview side by side with my Atom editor to make sure the formatting and images looks right:
+You then copy the preview server address (in this case, `http://127.0.0.1:4000/learnapidoc/`) and paste it into your browser. This preview server continuously builds your site with each file change you save. I usually view this browser preview side by side with my Atom editor to make sure the formatting and images look right:
 
 {% include course_image.html size="large" filename="jekyllpreviewserver" ext_print="png" ext_web="png" alt="Jekyll preview server" caption="Jekyll preview server" %}
 
-This setup works fairly well. Granted, I do have a large monitor, so it gives me more real estate. On a small screen, you might have to switch back and forth between screens to see the output.
+This setup works reasonably well. Granted, I do have a large monitor, so it gives me more real estate. On a small screen, you might have to switch back and forth between screens to see the output.
 
 Admittedly, the Markdown format is easy to use but also susceptible to error, especially if you have complicated list formatting. But the majority of the time, writing in Markdown is a joy. You can focus on the content without getting wrapped up in tags. If you do need complex tags, anything you can write in HTML or JavaScript you can include on your page.
 
@@ -79,7 +79,7 @@ You can integrate Jekyll into platforms such as GitHub Pages or CloudCannon to c
 
 [GitHub Pages](pubapis_hosting_and_deployment.html#github_pages) is free and is what I use for my blog and this API docs site. But CloudCannon provides more features that might be needed by the enterprise. So let's follow an example in publishing in [CloudCannon](https://cloudcannon.com/), which describes itself as the "The Cloud CMS for Jekyll."
 
-In this activity, we'll publish to CloudCanon using the [Documentation Theme for Jekyll](https://idratherbewriting.com/documentation-theme-jekyll) (the theme I built). You don't need to have a Windows machine to facilitate the building and publishing &mdash; you'll do that via CloudCannon and Github. (Of course, being able to build locally is important if you're developing with Jekyll, but I want to avoid [Jekyll installation](https://jekyllrb.com/docs/installation/) issues here and simply demonstrate the continuous deployment features that a host like CloudCannon provides.) This tutorial will show you how to plug into a robust hosting platform that reads content stored and managed on GitHub.
+In this activity, we'll publish to CloudCanon using the [Documentation Theme for Jekyll](https://idratherbewriting.com/documentation-theme-jekyll) (the theme I built). You don't need to have a Windows machine to facilitate the building and publishing &mdash; you'll do that via CloudCannon and Github. (Of course, being able to build locally is important if you're developing with Jekyll, but I want to avoid [Jekyll installation](https://jekyllrb.com/docs/installation/) issues here and just demonstrate the continuous deployment features that a host like CloudCannon provides.) This tutorial will show you how to plug into a robust hosting platform that reads content stored and managed on GitHub.
 
 {% include random_ad.html %}
 
@@ -110,7 +110,7 @@ In this activity, we'll publish to CloudCanon using the [Documentation Theme for
 
 	  The preview URL will be something random, such as `https://balmy-sunglasses.cloudvent.net/`. You'll need to click **Continue to sample site** because you're on the free plan. When you visit the URL, the theme should look just like the [Documentation theme for Jekyll here](https://idratherbewriting.com/documentation-theme-jekyll).
 
-Using the CloudCannon user interface, you can make updates to files and the updates will sync back to GitHub. Likewise, if you push updates to GitHub, CloudCannon will be notified, pull the changes, and rebuild the output.
+Using the CloudCannon user interface, you can make updates to files, and the updates will sync back to GitHub. Likewise, if you push updates to GitHub, CloudCannon will be notified, pull the changes, and rebuild the output.
 
 The integration between CloudCannon and GitHub is pretty mind-blowing. Through CloudCannon, you can offload all the hassle of hosting and maintaining your website, but you aren't locked into the system in a proprietary way. Your content lives in a custom Jekyll theme on GitHub.
 
@@ -134,13 +134,13 @@ When you connect a GitHub repo with CloudCannon, the two sites sync the files. L
 
 Wait until the build finishes (the blue circling arrows change into a green check mark), and then look for the change at the preview URL. The change should be reflected.
 
-You've now got a workflow that involves Github as the storage provider syncing to a Jekyll theme hosted on CloudCannon. You're publishing on the fly, based on commits to a repo. This is the essential characteristic of a [docs-as-code publishing workflow](pubapis_docs_as_code.html).
+You've now got a workflow that involves Github as the storage provider syncing to a Jekyll theme hosted on CloudCannon. You're publishing on the fly, based on commits to a repo. This continuous publishing based on Git commits is the essential characteristic of a [docs-as-code publishing workflow](pubapis_docs_as_code.html).
 
 ## The Jekyll Aviator theme
 
-My Jekyll documentation theme is just one possibility for a Jekyll site. (Most people who use it end up heavily customizing it for their needs.) You could also use this [Aviator API documentation theme](https://github.com/CloudCannon/Aviator-Jekyll-Theme), which has some API templating built-in, or you could choose from many others Jekyll themes. I also wrote a tutorial for [creating your own Jekyll theme](https://jekyllrb.com/tutorials/convert-site-to-jekyll/), likely using your company's site as the template.
+My Jekyll documentation theme is just one possibility for a Jekyll site. (Most people who use it end up heavily customizing it for their needs.) You could also use this [Aviator API documentation theme](https://github.com/CloudCannon/Aviator-Jekyll-Theme), which has some API templating built-in, or you could choose from many other Jekyll themes. I also wrote a tutorial for [creating your own Jekyll theme](https://jekyllrb.com/tutorials/convert-site-to-jekyll/), likely using your company's site as the template.
 
-{% include course_image.html url="https://github.com/CloudCannon/Aviator-Jekyll-Theme"   filename="aviatortheme" ext_print="png" ext_web="png" alt="CloudCannon Aviator theme" caption="CloudCannon Aviator theme" %}
+{% include course_image.html url="https://github.com/CloudCannon/Aviator-Jekyll-Theme" filename="aviatortheme" ext_print="png" ext_web="png" alt="CloudCannon Aviator theme" caption="CloudCannon Aviator theme" %}
 
 For inspiration, here are some websites using Jekyll:
 

@@ -10,17 +10,17 @@ path1: /publishingapis.html
 
 In the previous step, [Activity: Use the GitHub Desktop Client](pubapis_github_desktop_client.html), you used Github Desktop to manage the workflow of committing files, branching, and merging. In this tutorial, you'll do a similar activity but using the browser-based interface that Github provides rather than using a terminal or Github Desktop.
 
-Understanding the pull request workflow is important for reviewing changes in a collaborative project, such as an open-source project with many contributors. Using GitHub's interface is also handy if you have non-technical reviewers.
+Understanding the pull request workflow is essential for reviewing changes in a collaborative project, such as an open-source project with many contributors. Using GitHub's interface is also handy if you have non-technical reviewers.
 
 * TOC
 {:toc}
 
 ## Make edits in a separate branch
 
-By default, your new repository has one branch called "Master." Usually when you're making changes or reviews/edits, you create a new branch and make all the changes in the branch. Then when finished, the repo owner merges edits from the branch into the master through a "pull request."
+By default, your new repository has one branch called "Master." Usually, when you're making changes or reviews/edits, you create a new branch and make all the changes in the branch. Then when finished, the repo owner merges edits from the branch into the master through a "pull request."
 
 {: .note}
-Although you can perform these operations using Git commands from your terminal, you can also perform the actions through the browser interface. This might be helpful if you have less technical people making edits to your content.
+Although you can perform these operations using Git commands from your terminal, you can also perform the actions through the browser interface. The browser interface might be helpful if you have less technical people making edits to your content.
 
 To make edits in a separate branch on GitHub:
 
@@ -99,5 +99,5 @@ To add collaborators to your Github project:
 
 1. While viewing your Github repository, click the **Settings** tab.
 2. Click the **Collaborators** tab on the left.
-3. Type the Github user names of those you want to have access in the Collaborator area.
+3. Type the Github usernames of those you want to have access in the Collaborator area.
 4. Click **Add collaborator**.

@@ -8,7 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-Most of the docs-as-code solutions use lightweight markup syntax, often Markdown. So let's learn a bit more about Markdown. Markdown is a shorthand syntax for HTML. Instead of using `ul` and `li` tags, for example, you just use asterisks (`*`). Instead of using `h2` tags, you use hashes (`##`). There's a Markdown tag for most of the common HTML elements, but not all of them.
+Most of the docs-as-code solutions use lightweight markup syntax, often Markdown. So let's learn a bit more about Markdown. Markdown is a shorthand syntax for HTML. Instead of using `ul` and `li` tags, for example, you use asterisks (`*`). Instead of using `h2` tags, you use hashes (`##`). There's a Markdown tag for most of the commonly used HTML elements, but not all of them.
 
 {% if site.format == "web" %}
 * TOC
@@ -51,9 +51,9 @@ In contrast, DITA is a committee-based XML architecture derived from a committee
 
 In many development tools (particularly [static site generators](https://www.staticgen.com/)) that you use for publishing documentation, many of them will use Markdown. For example, Github uses Markdown. If you upload files containing Markdown and use an md file extension, Github will automatically render the Markdown into HTML.
 
-Markdown has appeal (especially with developers) for a number of reasons:
+Markdown has appeal (especially with developers) for various reasons:
 
-* You can work in text-file format using your favorite code editor.
+* You can work in text-file formats using your favorite code editor.
 * You can treat the Markdown files with the same workflow and routing as code.
 * Markdown is easy to learn, so you can focus on the content instead of the formatting.
 
@@ -89,7 +89,7 @@ Now compare the same syntax with Markdown:
 2. Click the **Print** button.
 ```
 
-I wrote about this difference in [Why developers will never adopt DITA](https://idratherbewriting.com/2014/09/30/why-developers-will-never-adopt-dita/). Granted, the XML example has a lot more semantic information packed into it, which the Markdown version lacks. So in theory the two don't have the same content, even though the output is the same. However, unless you're taking advantage of the additional semantic information DITA includes, the result is the same.
+I wrote about this difference in [Why developers will never adopt DITA](https://idratherbewriting.com/2014/09/30/why-developers-will-never-adopt-dita/). Granted, the XML example has a lot more semantic information packed into it, which the Markdown version lacks. So, in theory, the two don't have the same content, even though the output is the same. However, unless you're taking advantage of the additional semantic information DITA includes, the result is the same.
 
 Although you can read the XML and get used to it, most people who write in XML use specialized XML editors (like OxygenXML) that make the raw text more readable. Simply by working in XML all day, you get used to working with all the tags.
 
@@ -111,7 +111,7 @@ Another benefit to Markdown (as opposed to binary tools like Word or Framemaker)
 
 Markdown does have a few drawbacks:
 
-* **Limited to HTML tags**: You're pretty much limited to HTML tags. For the times when Markdown doesn't offer shortcut for the HTML, you juse use HTML directly. XML advocates like to emphasize how XML offers semantic tagging (and avoids the div soup that HTML can become). However, HTML5 offers many semantic tags (such as `section`, `header`, `footer`, etc), and even for those times in which there aren't any unique HTML elements, all XML structures that transform into HTML become bound by the limits of HTML anyway.
+* **Limited to HTML tags**: You're pretty much limited to HTML tags. For the times when Markdown doesn't offer a shortcut for the HTML, you just use HTML directly. XML advocates like to emphasize how XML offers semantic tagging (and avoids the div soup that HTML can become). However, HTML5 offers many semantic tags (such as `section`, `header`, `footer`, etc.), and even for those times in which there aren't any unique HTML elements, all XML structures that transform into HTML become bound by the limits of HTML anyway.
 
 * **Non-standard**: Because Markdown is non-standard, it can be a bit of a guessing game as to what is supported by the Markdown processor you may be using. By and large, the Github flavor of Markdown is the most common dialect used, as it allows you to add syntax classes to code samples and use tables. Whatever system you adopt, if it uses Markdown, make sure you understand what type of Markdown it supports.
 
@@ -119,7 +119,7 @@ Markdown does have a few drawbacks:
 
 ## Markdown and complexity
 
-If you need more complexity than what Markdown or HTML offers, a lot of tools will leverage other templating languages, such as [Liquid](https://docs.shopify.com/themes/liquid-documentation/basics) or [Coffeescript](http://coffeescript.org/). Many times these other processing languages (often like a lightweight JavaScript) will fill in the gaps for Markdown and provide you with the ability to create includes, conditional attributes, conditional text, and more.
+If you need more complexity than what Markdown or HTML offers, a lot of tools will leverage other templating languages, such as [Liquid](https://docs.shopify.com/themes/liquid-documentation/basics) or [CoffeeScript](http://coffeescript.org/). Many times these other processing languages (often like a lightweight JavaScript) will fill in the gaps for Markdown and provide you with the ability to create includes, conditional attributes, conditional text, and more.
 
 For example, if you're using Jekyll, you have access to a lot of advanced scripting functionality. You can use variables, for loops, sorting, and a host of other functionality. For a detailed comparison of how to achieve the same DITA functionality within Jekyll, see my series [Jekyll versus DITA](https://idratherbewriting.com/2015/03/23/new-series-jekyll-versus-dita/). In this series, I cover the following:
 
@@ -138,7 +138,7 @@ Markdown handles most of the syntax I normally use, but for tables, I recommend 
 
 If you're using a static site generator, see the specific Markdown syntax used. With Jekyll, the default Markdown is [kramdown](https://kramdown.gettalong.org/).
 
-kramdown gives you more capabilities than the basic Markdown. For example, in kramdown, you can add a class to any element like this:
+kramdown gives you more capabilities than the basic Markdown. For example, in kramdown, you can add a class to an element like this:
 
 ```liquid
 {: .note}
@@ -170,7 +170,7 @@ The content will be processed as two paragraphs rather than one line. See [Synta
 
 ## What about reStructuredText and Asciidoc? {#rst_and_asciidoc}
 
-If you're using lightweight markup, you might also be interested in exploring [reStructured Text (rST)](http://docutils.sourceforge.net/reStructuredText.html) or [Asciidoc](http://asciidoc.org/). reStructuredText is similar to Markdown, in that it offers lightweight wiki-like syntax for more complex HTML. However, reStructuredText is more semantically rich than Markdown (for example, there's syntax for notes or warnings, and for Python classes).
+If you're using lightweight markup, you might also be interested in exploring [reStructured Text (rST)](http://docutils.sourceforge.net/reStructuredText.html) or [Asciidoc](http://asciidoc.org/). reStructuredText is similar to Markdown, in that it offers lightweight wiki-like syntax for more complex HTML. However, reStructuredText is more semantically rich than Markdown (for example, there's a syntax for notes or warnings, and Python classes).
 
 reStructuredText can be extended, follows a standard (rather than having many variants), and gives you more features specific to writing technical documentation, such as cross-references. See [reStructuredText vs Markdown for documentation](http://zverovich.net/2016/06/16/reStructuredText-vs-markdown.html) for a more detailed comparison. If you're using [Sphinx](http://www.sphinx-doc.org/en/stable/), you'll want to use reStructuredText.
 
@@ -178,7 +178,7 @@ reStructuredText can be extended, follows a standard (rather than having many va
 
 ## Objections to Markdown
 
-Some people object to Markdown due to the inconsistency across Markdown flavors. Given that there are so many varieties of Markdown ([CommonMark](http://commonmark.org/), [kramdown](https://kramdown.gettalong.org/), [Gruber's original Markdown](https://daringfireball.net/projects/markdown/syntax), [Github-flavored Markdown](https://github.github.com/gfm/), [Multimarkdown](http://fletcherpenney.net/multimarkdown/), and more), it's hard to create a tool to consistently process Markdown.
+Some people object to Markdown due to the inconsistency across Markdown flavors. Given that there are so many varieties of Markdown ([CommonMark](http://commonmark.org/), [kramdown](https://kramdown.gettalong.org/), [Gruber's original Markdown](https://daringfireball.net/projects/markdown/syntax), [Github-flavored Markdown](https://github.github.com/gfm/), [Multimarkdown](http://fletcherpenney.net/multimarkdown/), and more), it's hard to create a tool to process Markdown consistently.
 
 Eric Holscher, co-founder of [Write the Docs](http://www.writethedocs.org/) and the [Read the Docs platform](https://readthedocs.org/), argues that Markdown creates lock-in to a specific tool. He says many authors think Markdown is a good choice because many tools support it, and they think they can always migrate their Markdown content to another tool later. However, the differing Markdown flavors make this migration problematic. Eric writes:
 
@@ -194,7 +194,7 @@ Despite the variations within Markdown, I'm reluctant to switch to a more semant
 
 Additionally, developers tend to be familiar with Markdown but not reStructuredText or Asciidoc. If you want to encourage collaboration with developers, you might encounter more resistance by forcing them to write in reStructuredText or Asciidoc. Simplicity tends to win out in the end, and Markdown has clear momentum in the lightweight syntax arena. I imagine that in 10 years, reStructuredText and Asciidoc will be dwarfed in the same way that [RAML](pubapis_raml.html) and [API Blueprint](pubapis_api_blueprint) were dwarfed by the [OpenAPI spec](pubapis_swagger_intro.html).
 
-Further, the OpenAPI spec actually lets you use [CommonMark Markdown](https://commonmark.org/) in `description` elements, which might make Markdown a better choice for API documentation. As long as you use the Markdown elements that are common across most flavors, migration (should it be required at some point) might not be as painful.
+Further, the OpenAPI spec lets you use [CommonMark Markdown](https://commonmark.org/) in `description` elements, which might make Markdown a better choice for API documentation. As long as you use the Markdown elements that are common across most flavors, migration (should it be required at some point) might not be as painful.
 
 Overall, debates between Markdown, reStructuredText, and Asciidoc are pretty heated. You will find many for-and-against arguments for each lightweight syntax, as well as debates between XML and lightweight syntax.
 

@@ -17,13 +17,13 @@ One of the first considerations to make when you think about API doc tooling is 
 
 ## Integrating into engineering tools and workflows
 
-Riona Macnamara, a technical writer at Google, says that several years ago, internal documentation at Google was scattered across wikis, Google Sites, Google Docs, and other places. In internal surveys at Google, many employees said the inability to find accurate, up-to-date documentation was one of their biggest pain points. Despite Google's excellence in organizing the world's external information online, organizing it internally proved to be difficult.
+Riona Macnamara, a technical writer at Google, says that several years ago, internal documentation at Google was scattered across wikis, Google Sites, Google Docs, and other places. In internal surveys at Google, many employees said the inability to find accurate, up-to-date documentation was one of their most significant pain points. Despite Google's excellence in organizing the world's external information online, organizing it internally proved to be difficult.
 
 Riona says they helped solve the problem by integrating documentation into the engineer's workflow. Rather than trying to force-fit writer-centric tools onto engineers, they fit the documentation into developer-centric tools. Developers now write documentation in Markdown files in the same repository as their code. The developers also have script to display these Markdown files in a browser directly from the code repository.
 
 {% include random_ad2.html %}
 
-The method quickly gained traction, with hundreds of developer projects adopting the new method. Now instead of authoring documentation in a separate system (using writer-centric tools), developers simply add the doc in the same repository as the code. This ensures that anyone who is using the code can also find the documentation. Engineers can either read the documentation directly in the Markdown source, or they can read it displayed in a browser.
+The method quickly gained traction, with hundreds of developer projects adopting the new method. Now instead of authoring documentation in a separate system (using writer-centric tools), developers simply add the doc in the same repository as the code. This location ensures that anyone who is using the code can also find the documentation. Engineers can either read the documentation directly in the Markdown source, or they can read it displayed in a browser.
 
 If you plan to have developers write, definitely check out Riona Macnamara's Write the Docs 2015 presentation: [Documentation, Disrupted: How two technical writers changed Google engineering culture](https://www.youtube.com/embed/EnB8GtPuauw).
 
@@ -60,7 +60,7 @@ If you work with developer documentation, chances are you'll be working on a wid
 {: .tip}
 See my post [What technical writing trends will we see in 2018?](https://idratherbewriting.com/2018/01/02/technical-writing-trends-2018-and-2017-review/) for a description of how specialization is forcing technical writers to play more of a generalist role with content.
 
-Additionally, some developers prefer to just write the doc themselves. If a developer is the audience, and another developer is the writer, chances are they can cut through some of the guesswork about assumptions, prerequisite knowledge, and accuracy. In short, in some API documentation contexts, developers write the content. The fact alone is enough to make the case for adopting a docs-as-code approach.
+Additionally, some developers prefer just to write the doc themselves. If a developer is the audience, and another developer is the writer, chances are they can cut through some of the guesswork about assumptions, prerequisite knowledge, and accuracy. In short, in some API documentation contexts, developers write the content. This fact alone is enough to make the case for adopting a docs-as-code approach.
 
 Most developers are comfortable with Markdown, enjoy being able to work in their existing text editor or IDE (integrated development environment) to edit content, prefer to collaborate in a Git repo using branching, merging, and code review tools, and are generally comfortable with the whole code-based process and environment. By using tooling that is familiar to them, you empower them to contribute and participate more fully with the documentation authoring and publishing.
 
@@ -70,7 +70,7 @@ If tech writers are available, API documentation is usually a collaborative effo
 
 ### Continuous delivery
 
-Continuous delivery with docs means rebuilding your output by simply committing and pushing content into a Git repository, which then detects and change and triggers a build and publishing job. This greatly simplifies the act of publishing. You can make edits across a number of docs and commit your code into your doc repo. When you merge your branch into a gamma or production environment, a server process automatically starts building and deploying the content to your server. You don't have to FTP files to a server or follow some other manual deployment process.
+Continuous delivery with docs means rebuilding your output by simply committing and pushing content into a Git repository, which then detects and change and triggers a build and publishing job. Continuous delivery greatly simplifies the act of publishing. You can make edits across dozens of pages and commit your code into your doc repo. When you merge your branch into a gamma or production environment, a server process automatically starts building and deploying the content to your server. You don't have to FTP files to a server or follow some other manual deployment process.
 
 At first, learning the right Git commands might take some time. But after working this way for a few weeks, these commands become second-nature and almost built into your typing memory. Eliminating the hassle of publishing and deploying docs allows you to focus more on content, and you can push out updates quickly and easily. Publishing and deploying the output is no longer a step you have to devote time towards. Continuous delivery is the killer feature that makes docs-as-code so much more effortless (when it comes to publishing) compared to other solutions.
 
@@ -82,11 +82,11 @@ By working out of the same repository, you aren't siloed in separate projects th
 
 ### Flexibility and control
 
-Docs-as-code tools give you incredible flexibility and control to adjust to your particular environment or company's infrastructure. For example, suppose the localized version of your website requires you to output the content with a particular URL pattern, or you want to deliver the content with a certain layout in different environments, or you want to include custom metadata to process your files in a particular way with your company's authentication or whitelisting mechanisms. With docs-as-code tools, the files are open and can be customized to incorporate the logic you want. This can be especially important if you're integrating your docs into a website rather than generating a standalone output (see [Pattern 2: A single seamless website](pubapis_design_patterns.html#website_platform)).
+Docs-as-code tools give you incredible flexibility and control to adjust to your particular environment or company's infrastructure. For example, suppose the localized version of your website requires you to output the content with a particular URL pattern, or you want to deliver the content with a special layout in some environments, or you want to include custom metadata to process your files in a particular way with your company's authentication or whitelisting mechanisms. With docs-as-code tools, the files are open and can be customized to incorporate the logic you want. This openness and flexibility can be especially important if you're integrating your docs into a website rather than generating a standalone output (see [Pattern 2: A single seamless website](pubapis_design_patterns.html#website_platform)).
 
-The docs-as-code tools are as flexible and robust as your coding skills allow. At a base level, almost all docs-as-code tools use HTML, CSS, and JavaScript. So if you are a master with these web technologies, there's almost nothing you can't do.
+The docs-as-code tools are as robust as your coding skills allow. At a base level, almost all docs-as-code tools use HTML, CSS, and JavaScript. So if you are a master with these web technologies, there's almost nothing you can't do.
 
-Further, many static site generators allow you to use scripting logic such as Liquid that simplifies JavaScript and makes it easier to perform complex operations (like iterating through files and inserting certain fields into templates). The scripting logic gives you the ability to handle complex scenarios. You can use variables, re-use content, abstract away complex code through templates, and more.
+Further, many static site generators allow you to use scripting logic such as Liquid that simplifies JavaScript and makes it easier to perform complex operations (like iterating through files and inserting particular fields into templates). The scripting logic gives you the ability to handle complex scenarios. You can use variables, re-use content, abstract away complex code through templates, and more.
 
 {: .tip}
 To read details about switching to docs as code tools, see [Case study: Switching tools to docs-as-code](pubapis_switching_to_docs_as_code.html).
@@ -113,4 +113,4 @@ You can handle these more challenging factors with non-traditional tools, but it
 
 ## Conclusion
 
-In the developer documentation space, static site generators dominate the authoring and publishing landscape. HATs and other traditional technical writing tools aren't used nearly as much. This is why I've dedicated an entire section to publishing in this course on API documentation.
+In the developer documentation space, static site generators dominate the authoring and publishing landscape. HATs and other traditional technical writing tools aren't used nearly as much. This focus on unique, non-traditional publishing tools is why I've dedicated an entire section to publishing in this documentation course.

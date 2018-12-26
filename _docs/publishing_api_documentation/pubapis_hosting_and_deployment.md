@@ -21,7 +21,7 @@ Hosting and deployment platforms usually offer a number of additional features b
 
 [GitHub Pages](https://pages.github.com/) provides a free hosting and deployment option for Jekyll projects. If you upload a Jekyll project to a GitHub repository, you can indicate that it's a Jekyll project in your GitHub repo's Settings, and GitHub will automatically build it when you commit to your repo. This feature &mdash; building Jekyll projects directly from your GitHub repo &mdash; is referred to as GitHub Pages.
 
-In your GitHub repo, click **Settings** and scroll down to **GitHub Pages**. This is where you activate GitHub Pages for your project.
+In your GitHub repo, click **Settings** and scroll down to **GitHub Pages**. This section is where you activate GitHub Pages for your project.
 
 {% include course_image.html url="https://pages.github.com/" filename="githubpagesscreenshot" ext_print="png" ext_web="png" alt="GitHub Pages integration with GitHub repositories" caption="Every GitHub repository is potentially a Jekyll project that you can auto-build when you commit to it." %}
 
@@ -37,7 +37,7 @@ GitHub Pages is free but does have some limitations in scope:
 Unlike with other hosting and deployment platforms, GitHub Pages doesn't offer a commercial version that expands these limits. You can learn more about [GitHub Pages here](https://help.github.com/categories/github-pages-basics/).
 
 {: .note}
-I build this site and [my blog](https://idratherbewriting.com) using Jekyll and GitHub Pages. They are actually separate Jekyll projects and repos. My blog is in a GitHub repo called [`tomjoht.github.io`](https://github.com/tomjoht/tomjoht.github.io), named after my GitHub user name but published using a custom domain `idratherbewriting.com`. (Without the custom domain, it would be available at `http://tomjoht.github.com`.) The API doc site is in a repo called [learnapidoc](https://github.com/tomjoht/learnapidoc). It's available by default at `https://idratherbewriting.com/learnapidoc`. They seem like the same site, but they are actually separate projects in separate repos. The fact that each repo is simply available in a subdirectory like this off of my main domain is pretty cool.
+I build this site and [my blog](https://idratherbewriting.com) using Jekyll and GitHub Pages. They are actually separate Jekyll projects and repos. My blog is in a GitHub repo called [`tomjoht.github.io`](https://github.com/tomjoht/tomjoht.github.io), named after my GitHub username but published using a custom domain `idratherbewriting.com`. (Without the custom domain, it would be available at `http://tomjoht.github.com`.) The API doc site is in a repo called [learnapidoc](https://github.com/tomjoht/learnapidoc). It's available by default at `https://idratherbewriting.com/learnapidoc`. They seem like the same site, but they are really separate projects in separate repos. The fact that each repo in addition to the primary repository (`tomjoht.github.io`) appears as a subdirectory to the primary domain (`idratherbewriting.com`) is pretty cool. 
 
 ## CloudCannon {#cloudcannon}
 
@@ -63,9 +63,9 @@ The introduction on the [Read the Docs homepage](https://readthedocs.org/) descr
 
 > We will host your documentation for free forever. There are no tricks. We help 94,898 open source projects share their docs. ... Whenever you push code to your favorite version control system, whether that is Git, Mercurial, Bazaar, or Subversion, we will automatically build your docs so your code and documentation are never out of sync.
 
-Read the Docs provides both an open-source, free version ([readthedocs.org](https://readthedocs.org/)) and a commercial version ([readthedocs.com](https://readthedocs.com/)). This allows you to level-up your project when your needs mature but also doesn't lock you into a paid solution when you're not ready for it.
+Read the Docs provides both an open-source, free version ([readthedocs.org](https://readthedocs.org/)) and a commercial version ([readthedocs.com](https://readthedocs.com/)). These tiers allow you to level-up your project when your needs mature but also don't lock you into a paid solution when you're not ready for it.
 
-Read the Docs provides themes specific for documentation websites, and also lets you author in reStructuredText (or Markdown, if you prefer that instead). reStructuredText provides more documentation-specific features and semantics &mdash; see my discussion in [What about reStructuredText and Asciidoc?](pubapis_markdown.html#rst_and_asciidoc) for more details, or see [Why You Shouldn't Use "Markdown" for Documentation](http://ericholscher.com/blog/2016/mar/15/dont-use-markdown-for-technical-docs/) for a more impassioned argument for rST.
+Read the Docs provides themes specific for documentation websites, and also lets you author in reStructuredText (or Markdown, if you prefer that instead). reStructuredText provides more documentation-specific features and semantics &mdash; see my discussion in [What about reStructuredText and Asciidoc?](pubapis_markdown.html#rst_and_asciidoc) for more details, or see [Why You Shouldn't Use "Markdown" for Documentation](http://ericholscher.com/blog/2016/mar/15/dont-use-markdown-for-technical-docs/) for a more passionate argument for rST.
 
 The [Read the Docs documentation](https://docs.readthedocs.io/en/latest/getting_started.html) shows a sample output.
 
@@ -93,7 +93,7 @@ Read the Docs has an impressive number of users. The platform has thousands of p
 
 Netlify offers continuous delivery for your project. You can store your content on GitHub, GitLab, or Bitbucket, then link it to Netlify, and Netlify will build whenever you push changes.
 
-Netlify offers a free plan with features similar to GitHub Pages, but also lets you scale up to Pro, Business, or Enterprise plans for more robust needs. With Netlify, you can get deploy previews, rollbacks, form handling, distributed content delivery network (CDN), infinite scalability, SSL, a programmable API, CLI, and more.
+Netlify not only offers a free plan with features similar to GitHub Pages but also lets you scale up to Pro, Business, or Enterprise plans for more robust needs. With Netlify, you can get deploy previews, rollbacks, form handling, distributed content delivery network (CDN), infinite scalability, SSL, a programmable API, CLI, and more.
 
 The most impressive example of a Netlify-hosted site is [Smashing Magazine](https://www.smashingmagazine.com/). Previously hosted on WordPress, Smashing Magazine made the switch to Netlify, with Hugo as the static site generator engine. See [Smashing Magazine just got 10x faster](https://www.netlify.com/blog/2017/03/16/smashing-magazine-just-got-10x-faster/) for details.
 
@@ -103,7 +103,7 @@ Complementing Netlify is [Netlify CMS](pubapis_headless_cms.html#netlifycms), a 
 
 ## Aerobatic {#aerobatic}
 
-[Aerobatic](https://www.aerobatic.com/) is similar to Netlify in that it builds and publishes your static site. Aerobatic gives you a robust publishing engine that includes a CDN, SSL, continuous delivery, a deployment CLI, password protection, and more. Aerobatic can publish a number of static site generators, including Jekyll, Hugo, Hexo, and more. Aerobatic says,
+[Aerobatic](https://www.aerobatic.com/) is similar to Netlify in that it builds and publishes your static site. Aerobatic gives you a robust publishing engine that includes a CDN, SSL, continuous delivery, a deployment CLI, password protection, and more. Aerobatic can build your site using various static site generators, including Jekyll, Hugo, Hexo, and more. Aerobatic says,
 
 > Aerobatic is a specialized platform for efficient delivery of static webpages and website assets. We take care of the configuration details for you that provide the best balance of performance and maintainability. Stop fiddling with CDNs and web server configs and focus on coding great front-end experiences. &mdash; [Static website serving](https://www.aerobatic.com/docs/static-serving/)
 
