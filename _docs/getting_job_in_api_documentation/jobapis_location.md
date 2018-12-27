@@ -15,392 +15,534 @@ You're taking this course most likely because you want to break into API documen
 
 ## Where are the API jobs
 
-Undoubtedly, Silicon Valley (the San Francisco Bay area of California) is where many API documentation jobs are located. However, you will also generally find API documentation jobs for technical writers in other tech hub cities, such as Seattle, New York, Portland, Boston, Dallas, Atlanta, Austin, and more (basically West Coast, East Coast, and Texas).
+Where are the best locations for API documentation jobs? The [2017-2018 STC Salary Database](https://www.stc.org/salary-database/) (which is based on [Bureau of Labor Statistics](https://www.bls.gov/) data) provides a lot of research about technical writer employment in different parts of the U.S., but nothing that breaks down the numbers by API documentation opportunities.
 
-As far as finding statistics or percentages detailing the number of API tech writing jobs by state, or API tech writing jobs versus traditional tech writing jobs, that research hasn't been done, so we have to triangulate and speculate a bit.
-
-Let's start with what we know. According to the [2016 STC Salary Database](https://www.stc.org/salary-database/) (which is based on the [Bureau of Labor Statistics](https://www.bls.gov/) data), the "10 largest metro areas by employment of tech writers" are as follows:
-
-1.  New York-Newark-Jersey City, NY-NJ-PA
-2.  Los Angeles-Long Beach-Anaheim, CA
-3.  Chicago-Naperville-Elgin, IL-IN-WI
-4.  San Jose-Sunnyvale-Santa Clara, CA
-5.  Minneapolis-St. Paul-Bloomington, MN-WI
-6.  Houston-The Woodlands-Sugar Land, TX
-7.  Baltimore-Columbia-Towson, MD
-8.  Denver-Aurora-Lakewood, CO
-9.  Phoenix-Mesa-Scottsdale, AZ
-10. San Diego-Carlsbad, CA
-
-In other words, these areas have the most technical writers. Much of the employment data in the STC Salary Database focuses on "metropolitan statistical areas," but it hard to filter jobs based on these metro areas (rather than states) using job tools such as [Indeed.com](https://indeed.com).
-
-To gather some quick data, I did a search on Indeed.com for the term ["API"](https://www.indeed.com/jobs?q=API&l=California) filtered by state, another search for ["technical writer"](https://www.indeed.com/jobs?q=technical+writer&l=California) filtered by state, and then listed the employment of technical writers by state as indicated by the STC Salary Database (2016 is the latest version). My searches on Indeed.com were done on August 12, 2018.
-
-Whether searches for these terms yields meaningful results is not certain, which is why I also list the more reliable information (though unrelated to APIs) from the STC Salary Database. Also, I'm by no means versed in statistics. Even if California has the highest number of mentions of "API" and also the highest mentions of "technical writer," to determine job demand and opportunities this data has to be contextualized by the size of the state and the number of employed technical writers in the area. A high number of jobs doesn't necessarily mean more jobs will be available if there are just more technical writers competing for those jobs. Thus, it's hard to say for sure where the best locations are for API doc jobs.
-
-For example, suppose the state is small and has only about 500 tech writers in the area, but the number of jobs for technical writers is high as well as the mentions of "API." Is that a better area in which to find a job? Maybe. It depends on how many writers are competing for the jobs. On the other hand, living in a larger tech hub with more variation in the job opportunities and required technical skills might provide more selection and fit for your particular skills. API doc jobs usually want candidates familiar with the languages they're targeting, so with more jobs available, you might have a better shot at matching up with one of the roles.
-
-All right, here's the data from my quick search:
+At any rate, the Salary Database information gives us a starting point. Here are the "Ten Largest MSAs by Number of Technical Writers 2017":
 
 <table>
- <thead>
- <tr>
+   <colgroup>
+      <col width="50%" />
+      <col width="50%" />
+   </colgroup>
+   <thead>
+      <tr>
+         <th markdown="span">Metropolitan Statistical Area (MSA)</th>
+         <th markdown="span">Technical writers employed</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td markdown="span">New York-Newark-Jersey City, NY-NJ-PA </td>
+         <td markdown="span">3,390</td>
+      </tr>
+      <tr>
+         <td markdown="span">Los Angeles-Long Beach-Anaheim, CA </td>
+         <td markdown="span">1,730</td>
+      </tr>
+      <tr>
+         <td markdown="span">San Jose-Sunnyvale-Santa Clara, CA </td>
+         <td markdown="span">1,560</td>
+      </tr>
+      <tr>
+         <td markdown="span">Chicago-Naperville-Elgin, IL-IN-WI </td>
+         <td markdown="span">1,220</td>
+      </tr>
+      <tr>
+         <td markdown="span">Houston-The Woodlands-Sugar Land, TX </td>
+         <td markdown="span">1,040</td>
+      </tr>
+      <tr>
+         <td markdown="span">San Diego-Carlsbad, CA </td>
+         <td markdown="span">970</td>
+      </tr>
+      <tr>
+         <td markdown="span">Atlanta-Sandy Springs-Roswell, GA</td>
+         <td markdown="span">930</td>
+      </tr>
+      <tr>
+         <td markdown="span">Baltimore-Columbia-Towson, MD</td>
+         <td markdown="span">910</td>
+      </tr>
+      <tr>
+         <td markdown="span">Minneapolis-St. Paul-Bloomington, MN-WI</td>
+         <td markdown="span">810</td>
+      </tr>
+      <tr>
+         <td markdown="span">Austin-Round Rock, TX<br/>Columbus, OH</td>
+         <td markdown="span">740</td>
+      </tr>
+   </tbody>
+</table>
+
+"MSA" stands for "metropolitan statistical area." Most of the research in the STC Salary Database refers MSAs rather than states. Why look at MSAs rather than states as a whole? While California might rank highest in technical writer employment, you would have a tough time finding employment in some remote areas, such as Lone Pine or Corning. Employment measurements are more accurate when they're focused on a specific metropolitan area rather than the state as a whole.
+
+However, it's hard to filter by MSAs for API data, so I'll use states anyway. The top 10 states overall for technical writer employment (again, according to the STC Salary Database) are as follows:
+
+<table>
+   <colgroup>
+      <col width="50%" />
+      <col width="50%" />
+   </colgroup>
+   <thead>
+      <tr>
+         <th markdown="span">State</th>
+         <th markdown="span">Employed Technical Writers</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td markdown="span">California</td>
+         <td markdown="span">6,340</td>
+      </tr>
+      <tr>
+         <td markdown="span">Texas</td>
+         <td markdown="span">4,360</td>
+      </tr>
+      <tr>
+         <td markdown="span">Virginia</td>
+         <td markdown="span">2,840</td>
+      </tr>
+      <tr>
+         <td markdown="span">Massachusetts</td>
+         <td markdown="span">2,450</td>
+      </tr>
+      <tr>
+         <td markdown="span">New York</td>
+         <td markdown="span">2,390</td>
+      </tr>
+      <tr>
+         <td markdown="span">Florida</td>
+         <td markdown="span">2,360</td>
+      </tr>
+      <tr>
+         <td markdown="span">Maryland</td>
+         <td markdown="span">2,180</td>
+      </tr>
+      <tr>
+         <td markdown="span">New Jersey</td>
+         <td markdown="span">1,980</td>
+      </tr>
+      <tr>
+         <td markdown="span">Ohio</td>
+         <td markdown="span">1,770</td>
+      </tr>
+      <tr>
+         <td markdown="span">Pennsylvania</td>
+         <td markdown="span">1,540</td>
+      </tr>
+   </tbody>
+</table>
+
+They aren't too different &mdash; California, New York, Texas, New Jersey, Maryland, and Ohio still feature prominently on both lists, so focusing on states probably reflects the MSAs within that state as well.
+
+To try to determine which states has the most density for API-specific documentation jobs, I searched [Indeed.com](https://indeed.com) for the term ["API"](https://www.indeed.com/jobs?q=API&l=California), filtered by state (it wasn't possible to filter by MSA). I did one set of searches on August 12, 2018, and another on December 26, 2018. Then I averaged the two.
+
+I didn't meticulously examine each hit in the Indeed results for "API" to see if it actually related to *documentation jobs* with APIs, or even that it related to APIs (though I did spot check). I assume that the number of documentation jobs will be a relative percentage of the API-related jobs overall. For example, if a state has 1,000 hits for "API," if we were to examine each job and filter the results down to "technical writer" jobs that mention APIs, we would see some relative percentage (e.g., 5 percent) of those jobs to be related to technical writing. Error rates will probably be the same overall as well.
+
+Admittedly, I'm by no means versed in statistics, and I admit that this method has many flaws for our overall question (*to find the best locations for API documentation jobs*). For example, a high number of jobs doesn't necessarily mean more jobs will be available if there are just more technical writers competing for those jobs.
+
+To illustrate, suppose the state is small and has only about 500 technical writers in the area, but the technical writer growth rate in the area is high as well as the mentions of "API." Is that a better area in which to find a job? Maybe. It depends on how many writers are competing for the jobs &mdash; that information would be even harder to gather. On the other hand, living in a larger tech hub with more variation in the job opportunities and required technical skills might provide more selection and fit for your particular skills. API doc hiring managers usually want candidates familiar with the languages they're targeting, so with more jobs available, you might have a better shot at matching up with one of the roles.
+
+Thus, it's hard to say for sure where the best locations are for API doc jobs, especially as they fit your profile. At most, we can indicate where some promising areas appear to be, based on the technical writer employment in the area and the prevalence of "API" as a keyword in job postings in the area.
+
+## API keyword density by state
+
+Here's the data from my search for the keyword "API" in job searches on Indeed.com, contextualized with the technical writer employment for the state:
+
+<table>
+<colgroup>
+   <col width="20%" />
+   <col width="20%" />
+   <col width="20%" />
+   <col width="20%" />
+   <col width="20%" />
+</colgroup>
+<thead>
+<tr>
   <th>State</th>
-  <th>Instances of "API" <br/>on Indeed</th>
-  <th>Instances of "technical writer" on Indeed</th>
-  <th>Employed technical writers (STC Salary DB)</th>
+  <th>Employment</th>
+  <th>API average</th>
+  <th>&quot;API&quot; on Indeed<br/> (Aug 2018)</th>
+  <th>&quot;API&quot; on Indeed<br/> (Dec 2018)</th>
  </tr>
  </thead>
  <tbody>
  <tr>
   <td>California</td>
+  <td>6,340</td>
+  <td>5,262</td>
   <td>4,983</td>
-  <td>1,152</td>
-  <td>6,590</td>
+  <td>5540</td>
  </tr>
  <tr>
   <td>Texas</td>
+  <td>4,360</td>
+  <td>2,569</td>
   <td>2,450</td>
-  <td>480</td>
-  <td>3,930</td>
+  <td>2688</td>
  </tr>
  <tr>
   <td>New York</td>
-  <td>1,735</td>
-  <td>403</td>
   <td>2,390</td>
+  <td>1,864</td>
+  <td>1,735</td>
+  <td>1992</td>
  </tr>
  <tr>
   <td>District of Columbia</td>
+  <td>700</td>
+  <td>1,587</td>
   <td>1,381</td>
-  <td>951</td>
-  <td>800</td>
+  <td>1793</td>
  </tr>
  <tr>
   <td>Washington State</td>
+  <td>1,240</td>
+  <td>1,257</td>
   <td>1,283</td>
-  <td>333</td>
-  <td>1,190</td>
+  <td>1230</td>
  </tr>
  <tr>
   <td>Virginia</td>
+  <td>2,840</td>
+  <td>1,216</td>
   <td>1,092</td>
-  <td>625</td>
-  <td>2,590</td>
+  <td>1340</td>
  </tr>
  <tr>
   <td>Massachusetts</td>
+  <td>2,450</td>
+  <td>1,128</td>
   <td>1,080</td>
-  <td>310</td>
-  <td>2,700</td>
+  <td>1176</td>
  </tr>
  <tr>
   <td>Illinois</td>
+  <td>1,520</td>
+  <td>1047</td>
   <td>949</td>
-  <td>238</td>
-  <td>1,680</td>
+  <td>1145</td>
  </tr>
  <tr>
   <td>Georgia</td>
+  <td>1,180</td>
+  <td>897</td>
   <td>879</td>
-  <td>227</td>
-  <td>990</td>
+  <td>915</td>
  </tr>
  <tr>
   <td>New Jersey</td>
+  <td>1,980</td>
+  <td>846.5</td>
   <td>800</td>
-  <td>209</td>
-  <td>1,860</td>
+  <td>893</td>
  </tr>
  <tr>
   <td>Pennsylvania</td>
+  <td>1,540</td>
+  <td>842.5</td>
   <td>800</td>
-  <td>277</td>
-  <td>1,600</td>
+  <td>885</td>
  </tr>
  <tr>
   <td>Florida</td>
+  <td>2,360</td>
+  <td>750.5</td>
   <td>722</td>
-  <td>314</td>
-  <td>2,130</td>
- </tr>
- <tr>
-  <td>Colorado</td>
-  <td>635</td>
-  <td>183</td>
-  <td>1270</td>
+  <td>779</td>
  </tr>
  <tr>
   <td>North Carolina</td>
+  <td>1,480</td>
+  <td>704</td>
   <td>631</td>
-  <td>198</td>
-  <td>1,570</td>
+  <td>777</td>
  </tr>
  <tr>
-  <td>Maryland</td>
-  <td>567</td>
-  <td>453</td>
-  <td>1,980</td>
+  <td>Colorado</td>
+  <td>1,220</td>
+  <td>673</td>
+  <td>635</td>
+  <td>711</td>
  </tr>
  <tr>
   <td>Ohio</td>
+  <td>1,770</td>
+  <td>512.5</td>
   <td>466</td>
-  <td>157</td>
-  <td>1730</td>
+  <td>559</td>
+ </tr>
+ <tr>
+  <td>Maryland</td>
+  <td>2,180</td>
+  <td>491.5</td>
+  <td>567</td>
+  <td>416</td>
  </tr>
  <tr>
   <td>Arizona</td>
+  <td>820</td>
+  <td>446</td>
   <td>404</td>
-  <td>153</td>
-  <td>970</td>
+  <td>488</td>
  </tr>
  <tr>
   <td>Minnesota</td>
+  <td>1,030</td>
+  <td>407.5</td>
   <td>389</td>
-  <td>100</td>
-  <td>1,200</td>
+  <td>426</td>
  </tr>
  <tr>
   <td>Michigan</td>
+  <td>1,280</td>
+  <td>367</td>
   <td>351</td>
-  <td>146</td>
-  <td>1,000</td>
+  <td>383</td>
  </tr>
  <tr>
   <td>Missouri</td>
+  <td>1,120</td>
+  <td>313.5</td>
   <td>322</td>
-  <td>98</td>
-  <td>1,030</td>
+  <td>305</td>
  </tr>
  <tr>
   <td>Utah</td>
+  <td>740</td>
+  <td>287</td>
   <td>275</td>
-  <td>88</td>
-  <td>680</td>
+  <td>299</td>
  </tr>
  <tr>
   <td>Oregon</td>
+  <td>530</td>
+  <td>280.5</td>
   <td>271</td>
-  <td>77</td>
-  <td>600</td>
- </tr>
- <tr>
-  <td>Connecticut</td>
-  <td>229</td>
-  <td>51</td>
-  <td>690</td>
- </tr>
- <tr>
-  <td>Wisconsin</td>
-  <td>225</td>
-  <td>104</td>
-  <td>1,120</td>
- </tr>
- <tr>
-  <td>Tennessee</td>
-  <td>212</td>
-  <td>85</td>
-  <td>670</td>
- </tr>
- <tr>
-  <td>Indiana</td>
-  <td>204</td>
-  <td>73</td>
-  <td>730</td>
- </tr>
- <tr>
-  <td>Oklahoma</td>
-  <td>169</td>
-  <td>50</td>
-  <td>720</td>
- </tr>
- <tr>
-  <td>Louisiana</td>
-  <td>167</td>
-  <td>28</td>
-  <td>220</td>
- </tr>
- <tr>
-  <td>Iowa</td>
-  <td>130</td>
-  <td>47</td>
-  <td>500</td>
- </tr>
- <tr>
-  <td>Alabama</td>
-  <td>115</td>
-  <td>77</td>
-  <td>660</td>
- </tr>
- <tr>
-  <td>South Carolina</td>
-  <td>110</td>
-  <td>68</td>
-  <td>480</td>
- </tr>
- <tr>
-  <td>Nebraska</td>
-  <td>102</td>
-  <td>23</td>
-  <td>300</td>
- </tr>
- <tr>
-  <td>Kansas</td>
-  <td>101</td>
-  <td>62</td>
-  <td>540</td>
- </tr>
- <tr>
-  <td>Kentucky</td>
-  <td>95</td>
-  <td>43</td>
   <td>290</td>
  </tr>
  <tr>
-  <td>Rhode Island</td>
-  <td>73</td>
-  <td>22</td>
-  <td>170</td>
+  <td>Tennessee</td>
+  <td>480</td>
+  <td>255.5</td>
+  <td>212</td>
+  <td>299</td>
  </tr>
  <tr>
-  <td>Nevada</td>
-  <td>69</td>
-  <td>46</td>
-  <td>220</td>
+  <td>Connecticut</td>
+  <td>690</td>
+  <td>248</td>
+  <td>229</td>
+  <td>267</td>
+ </tr>
+ <tr>
+  <td>Wisconsin</td>
+  <td>850</td>
+  <td>245</td>
+  <td>225</td>
+  <td>265</td>
+ </tr>
+ <tr>
+  <td>Indiana</td>
+  <td>740</td>
+  <td>199.5</td>
+  <td>204</td>
+  <td>195</td>
+ </tr>
+ <tr>
+  <td>Louisiana</td>
+  <td>180</td>
+  <td>182.5</td>
+  <td>167</td>
+  <td>198</td>
+ </tr>
+ <tr>
+  <td>Oklahoma</td>
+  <td>790</td>
+  <td>159.5</td>
+  <td>169</td>
+  <td>150</td>
+ </tr>
+ <tr>
+  <td>Iowa</td>
+  <td>470</td>
+  <td>138</td>
+  <td>130</td>
+  <td>146</td>
+ </tr>
+ <tr>
+  <td>South Carolina</td>
+  <td>530</td>
+  <td>133.5</td>
+  <td>110</td>
+  <td>157</td>
+ </tr>
+ <tr>
+  <td>Alabama</td>
+  <td>700</td>
+  <td>109.5</td>
+  <td>115</td>
+  <td>104</td>
+ </tr>
+ <tr>
+  <td>Nebraska</td>
+  <td>300</td>
+  <td>103.5</td>
+  <td>102</td>
+  <td>105</td>
+ </tr>
+ <tr>
+  <td>Kentucky</td>
+  <td>250</td>
+  <td>100</td>
+  <td>95</td>
+  <td>105</td>
+ </tr>
+ <tr>
+  <td>Kansas</td>
+  <td>550</td>
+  <td>99.5</td>
+  <td>101</td>
+  <td>98</td>
  </tr>
  <tr>
   <td>Delaware</td>
+  <td>90</td>
+  <td>83</td>
   <td>65</td>
-  <td>27</td>
-  <td>140</td>
+  <td>101</td>
+ </tr>
+ <tr>
+  <td>Nevada</td>
+  <td>250</td>
+  <td>76.5</td>
+  <td>69</td>
+  <td>84</td>
  </tr>
  <tr>
   <td>Arkansas</td>
+  <td>180</td>
+  <td>69.5</td>
   <td>56</td>
-  <td>21</td>
-  <td>170</td>
+  <td>83</td>
  </tr>
  <tr>
   <td>New Hampshire</td>
+  <td>180</td>
+  <td>64.5</td>
   <td>51</td>
-  <td>137</td>
-  <td>220</td>
+  <td>78</td>
+ </tr>
+ <tr>
+  <td>Rhode Island</td>
+  <td>210</td>
+  <td>62.5</td>
+  <td>73</td>
+  <td>52</td>
  </tr>
  <tr>
   <td>North Dakota</td>
+  <td>100</td>
+  <td>50</td>
   <td>46</td>
-  <td>17</td>
-  <td>70</td>
- </tr>
- <tr>
-  <td>West Virginia</td>
-  <td>37</td>
-  <td>10</td>
-  <td>120</td>
- </tr>
- <tr>
-  <td>New Mexico</td>
-  <td>36</td>
-  <td>42</td>
-  <td>300</td>
+  <td>54</td>
  </tr>
  <tr>
   <td>Idaho</td>
+  <td>250</td>
+  <td>39.5</td>
   <td>35</td>
-  <td>21</td>
-  <td>210</td>
+  <td>44</td>
  </tr>
  <tr>
-  <td>Alaska</td>
-  <td>31</td>
-  <td>13</td>
-  <td>70</td>
+  <td>New Mexico</td>
+  <td>370</td>
+  <td>38</td>
+  <td>36</td>
+  <td>40</td>
  </tr>
  <tr>
-  <td>South Dakota</td>
-  <td>25</td>
-  <td>16</td>
-  <td>100</td>
+  <td>West Virginia</td>
+  <td>90</td>
+  <td>30</td>
+  <td>37</td>
+  <td>22</td>
  </tr>
  <tr>
   <td>Maine</td>
+  <td>70</td>
+  <td>29</td>
   <td>20</td>
-  <td>194</td>
+  <td>38</td>
+ </tr>
+ <tr>
+  <td>Alaska</td>
+  <td>70</td>
+  <td>27</td>
+  <td>31</td>
+  <td>23</td>
+ </tr>
+ <tr>
+  <td>South Dakota</td>
   <td>100</td>
+  <td>19</td>
+  <td>25</td>
+  <td>13</td>
  </tr>
  <tr>
   <td>Montana</td>
+  <td>60</td>
+  <td>18</td>
   <td>17</td>
-  <td>8</td>
-  <td>70</td>
- </tr>
- <tr>
-  <td>Hawaii</td>
-  <td>15</td>
-  <td>8</td>
-  <td>70</td>
- </tr>
- <tr>
-  <td>Wyoming</td>
-  <td>12</td>
-  <td>4</td>
-  <td>0</td>
- </tr>
- <tr>
-  <td>Vermont</td>
-  <td>8</td>
-  <td>8</td>
-  <td>120</td>
+  <td>19</td>
  </tr>
  <tr>
   <td>Mississippi</td>
+  <td>120</td>
+  <td>17.5</td>
   <td>7</td>
-  <td>18</td>
-  <td>90</td>
+  <td>28</td>
+ </tr>
+ <tr>
+  <td>Wyoming</td>
+  <td>30</td>
+  <td>15</td>
+  <td>12</td>
+  <td>17</td>
+ </tr>
+ <tr>
+  <td>Vermont</td>
+  <td>160</td>
+  <td>13.5</td>
+  <td>8</td>
+  <td>19</td>
+ </tr>
+ <tr>
+  <td>Hawaii</td>
+  <td>70</td>
+  <td>10.5</td>
+  <td>15</td>
+  <td>6</td>
  </tr>
  <tr>
   <td>Puerto Rico</td>
+  <td>110</td>
+  <td>7</td>
   <td>4</td>
-  <td>2</td>
-  <td>150</td>
+  <td>10</td>
  </tr>
  </tbody>
 </table>
 
-If "API" is a more common term for the area, I assume more technical writer jobs will involve working with APIs in those areas. Based on this assumption, California, Texas, New York, D.C., Washington State, Virginia, Massachusetts, Illinois, and Georgia are hot areas for API jobs for tech writers.
+If "API" is a more common term for the area, I assume more technical writer jobs will involve working with APIs in those areas. Based on this assumption, California, Texas, Virginia, Massachusetts, New York, Florida, Maryland, New Jersey, Ohio, and Pennsylvania are promising areas for API documentation jobs for technical writers.
+
+To get more granular with details, such as job losses or gains, the hottest MSAs for each state, the best industry sectors, the highest salaries, etc., consult the STC Salary Database and mine the data you want.
 
 {% include random_ad.html %}
 
-To provide more of a percentage relative to the area size, I divided the API number by the number of tech writers employed in the state. With this weighting, the top 10 states were as follows:
-
-1.  Massachusetts
-2.  DC
-3.  Washington State
-4.  Georgia
-5.  Louisiana
-6.  California
-7.  New York
-8.  North Dakota
-9.  Texas
-10. Illinois
-
-Presumably, this weighting suggests that API jobs make up a higher percentage of jobs in the area. Weighting the states like this might be meaningless. Again, maybe Maine has a real shortage to fill a dozen open positions for tech writers where applicants are mostly absent, whereas California might have 200 positions but many hundreds of more applicants competing for them.
-
-I'll leave the statistics and number-crunching to academics (who have expertise in analyzing data). Overall, I recommend locating yourself in any of these states:
-
-* California
-* Texas
-* New York
-* District of Columbia
-* Washington
-* Virginia
-* Massachusetts
-* Illinois
-* Georgia
-
 ## Should you move to California?
 
-Since I'm currently in California, I'll comment a bit on API jobs in this location. California (specifically Silicon Valley, which roughly spans from San Francisco to San Jose) continues to be a hub (if not *the* hub) for API technical writer jobs. However, California has some drawbacks, mainly with housing and traffic.
+Since I'm currently in California, and California frequently appears at the top of these employment and API lists, I'll comment a bit on API jobs in this location. California (specifically Silicon Valley, which roughly spans from San Francisco to San Jose) continues to be a hub (if not *the* hub) for API technical writer jobs. However, California has some drawbacks, mainly with housing and traffic.
 
 To live in Silicon Valley, you need the dual income of two working professionals to survive financially. Alternatively, you probably need to be single and willing to share a house with roommates. Traffic along the 101 can also crawl at a snail's pace during rush hour.
 
@@ -436,6 +578,6 @@ Indeed will send you a daily job alert whenever there are new jobs in that area.
 
 In this case, I didn't run comparisons for more cities, nor did I add "API" into the job title. I'm willing to bet that API technical writing jobs will always be a fraction of normal technical writing jobs (maybe 15%?) and always tied to companies with high densities of engineers.
 
-Much more could be written about where to live for API tech jobs. Overall, if you want to find a job in API documentation, target these popular areas &mdash; California, New York, Texas, D.C. Washington State, Massachusetts, Virginia, Georgia, and Illinois. On the other hand, if you want to start a farm or ranch, move to Wyoming.
+Much more could be written about where to live for API tech jobs. Overall, if you want to find a job in API documentation, target these popular areas &mdash;  California, Texas, Virginia, Massachusetts, New York, Florida, Maryland, New Jersey, Ohio, and Pennsylvania. On the other hand, if you want to start a farm or ranch, move to Wyoming.
 
 {% include content/activities/look_for_apidoc_jobs.md %}
