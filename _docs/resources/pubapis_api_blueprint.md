@@ -19,7 +19,7 @@ Note that unless you're using a platform that specifically requires API Blueprin
 
 ## What is API Blueprint
 
-The API Blueprint spec is written in a Markdown-flavored syntax. It's not normal Markdown, but it has a lot of the same, familiar Markdown syntax. However, the blueprint is clearly a very specific schema that is either valid or not valid based on the element names, order, spacing, and other details. In this way, it's not nearly as flexible or forgiving as pure Markdown. But it may be preferable to YAML.
+The API Blueprint spec is written in a Markdown-flavored syntax. It's not regular Markdown, but it has a lot of the same, familiar Markdown syntax. However, the blueprint is a particular schema that is either valid or not valid based on the element names, order, spacing, and other details. In this way, it's not nearly as flexible or forgiving as Markdown. But it may be preferable to YAML.
 
 {% include random_ad.html %}
 
@@ -37,11 +37,11 @@ Polls is a simple API allowing consumers to view polls and vote in them.
 
 # Polls API Root [/]
 
-This resource does not have any attributes. Instead it offers the initial
+This resource does not have any attributes. Instead, it offers the initial
 API affordances in the form of the links in the JSON body.
 
-It is recommend to follow the “url" link values,
-[Link](https://tools.ietf.org/html/rfc5988) or Location headers where
+It is recommended to follow the “url" link values,
+[Link](https://tools.ietf.org/html/rfc5988), or Location headers where
 applicable to retrieve resources. Instead of constructing your own URLs,
 to keep your client decoupled from implementation details.
 
@@ -223,7 +223,7 @@ You can find [examples of different blueprints here](https://github.com/apiaryio
 
 ## Parsing the blueprint
 
-There are many tools that can parse an API blueprint. [Drafter](https://github.com/apiaryio/drafter) is one of the main parsers of the Blueprint. Many other tools build on Drafter and generate static HTML outputs of the blueprint. For example, [Aglio](https://github.com/danielgtaylor/aglio) can parse a blueprint and generate static HTML files.
+Many tools can parse an API blueprint. [Drafter](https://github.com/apiaryio/drafter) is one of the main parsers of the Blueprint. Many other tools build on Drafter and generate static HTML outputs of the blueprint. For example, [Aglio](https://github.com/danielgtaylor/aglio) can parse a blueprint and generate static HTML files.
 
 For a more comprehensive list of tools, see the [Tooling](https://apiblueprint.org/tools.html) section on apiblueprint.org. (Some of these tools require quite a few prerequisites, so I omitted the tutorial steps here for generating the output on your own machine.)
 
@@ -240,7 +240,7 @@ For this tutorial, we'll use a platform called Apiary to read and display the AP
 
     {% include course_image.html size="large" filename="apiaryblueprinteditor" ext_print="png" ext_web="png" alt="API Blueprint editor on Apiary" caption="API Blueprint editor on Apiary" %}
 
-	  By default the Polls blueprint is loaded so you can see how it looks. This blueprint gives you an example of the required format for the Apiary tool to parse and display the content. You can also see the [raw file here](https://raw.githubusercontent.com/apiaryio/api-blueprint/master/examples/Polls%20API.md).
+	  By default, the Polls blueprint is loaded so you can see how it looks. This blueprint gives you an example of the required format for the Apiary tool to parse and display the content. You can also see the [raw file here](https://raw.githubusercontent.com/apiaryio/api-blueprint/master/examples/Polls%20API.md).
 
 3.  At this point, you would start describing your API using the blueprint syntax in the editor. When you make a mistake, error flags indicate what's wrong.
 
@@ -248,7 +248,7 @@ For this tutorial, we'll use a platform called Apiary to read and display the AP
 
 	  For this tutorial, you'll integrate the OpenWeatherMap weather API information info formatted in the blueprint format.
 
-4.  Copy the following code, which aligns with the API Blueprint spec, and paste it into the Apiary blueprint editor.
+4.  Copy the following code, which aligns with the API Blueprint spec, and paste it into the Apiary Blueprint editor.
 
     ```markdown
     FORMAT: 1A
@@ -414,8 +414,8 @@ For this tutorial, we'll use a platform called Apiary to read and display the AP
     + `temp`: `293.25` (number, optional) - Temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.
     + `pressure`: `1019` (number, optional) - Atmospheric pressure (on the sea level, if there is no sea_level or grnd_level data), hPa
     + `humidity`: `83` (number, optional) - Humidity, %
-    + `temp_min`: `289.82` (number, optional) - Minimum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopolises geographically expanded (use these parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.
-    + `temp_max`: `295.37` (number, optional) - Maximum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopolises geographically expanded (use these parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.
+    + `temp_min`: `289.82` (number, optional) - Minimum temperature at the moment. This is a deviation from current temp that is possible for large cities and megalopolises geographically expanded (use this parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.
+    + `temp_max`: `295.37` (number, optional) - Maximum temperature at the moment. This is a deviation from current temp that is possible for large cities and megalopolises geographically expanded (use this parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.
     + `sea_level`: `984` (number, optional) - Atmospheric pressure on the sea level, hPa
     + `grnd_level`: `990` (number, optional) - Atmospheric pressure on the ground level, hPa
 
@@ -477,10 +477,10 @@ In the Apiary's top navigation, click **Documentation**. Then interact with the 
 You can switch between an Example and a Console view in the documentation. The Example view shows pre-built responses. The Console view allows you to enter your own values and generate dynamic responses based on your own API key. This dual display &mdash; both the Example and the Console views &mdash; might align better with user needs:
 
 * For users who might not have good data or might not want to make requests that would affect their data, they can view the Example.
-* For users who want to see how the API specifically returns their data, or certain parameters, they can use the Console view.
+* For users who want to see how the API specifically returns either their data or specific parameters, they can use the Console view.
 
 To call the resource successfully, you'll need to customize the `lat` and `lon` values (e.g., `37.3565982` and `-121.9689848`) and also add an `appid` parameter whose value is your API key (such as `fd4698c940c6d1da602a70ac34f0b147`). You can then call the resource successfully.
 
-{% include course_image.html size="medium" filename="callresourceapiary" ext_print="png" ext_web="png" alt="Customizing the lat, long, and appid parameters in order to make a successful call" caption="Customizing the lat, long, and appid parameters in order to make a successful call" %}
+{% include course_image.html size="medium" filename="callresourceapiary" ext_print="png" ext_web="png" alt="Customizing the lat, long, and appid parameters in order to make a successful call" caption="Customizing the <code>lat</code>, <code>long</code>, and <code>appid</code> parameters in order to make a successful call" %}
 
-[Apiary](https://apiary.io/) offers a solid platform for both designing and publishing API reference docs. You don't have to use API Blueprint as your spec's format. You can also design your specification using OpenAPI (called "Swagger" in the Apiary UI).
+[Apiary](https://apiary.io/) offers an impressive platform for both designing and publishing API reference docs. You don't have to use API Blueprint as your spec's format. You can also design your specification using OpenAPI (called "Swagger" in the Apiary UI).

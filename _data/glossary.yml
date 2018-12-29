@@ -38,7 +38,7 @@ asciidoc:
 
 branch:
   term: branch
-  def: "In Git, a branch is a copy of the repository that is often used for developing new features. Usually you work in branches and then merge the branch into the master branch when you're ready to publish. If you're editing documentation in a code repository, developers will probably have you work in a branch to make your edits. The developers will then either merge your branch into the master when ready, or you might submit a pull request to merge your branch into the master."
+  def: "In Git, a branch is a copy of the repository that is often used for developing new features. Usually, you work in branches and then merge the branch into the master branch when you're ready to publish. If you're editing documentation in a code repository, developers will probably have you work in a branch to make your edits. The developers will then either merge your branch into the master when ready, or you might submit a pull request to merge your branch into the master."
   link: See [git-branch](https://git-scm.com/docs/git-branch).
 
 clone:
@@ -48,7 +48,7 @@ clone:
 
 commit:
   term: commit
-  def: "In Git, a commit is when you take a snapshot of your changes to the repo. Git saves the commit as a snapshot in time that you can revert back to later if needed. You commit your changes before pulling from origin or before merging your branch within another branch."
+  def: "In Git, a commit is when you take a snapshot of your changes to the repo. Git saves the commit as a snapshot in time that you can revert to later if needed. You commit your changes before pulling from origin or before merging your branch within another branch."
   link: See [git-commit](https://git-scm.com/docs/git-commit).
 
 crud:
@@ -81,7 +81,7 @@ git_repo:
 
 hat:
   term: HAT
-  def: "Help Authoring Tool. Refers to the traditional help authoring tools (RoboHelp, Flare, Author-it, etc.) used by technical writers for documentation. Tooling for API docs tend to use [Docs as code tools](pubapis_docs_as_code.html) more than [HATs](pubapis_overview.html#hats)."
+  def: "Help Authoring Tool. Refers to the traditional help authoring tools (RoboHelp, Flare, Author-it, etc.) used by technical writers for documentation. Tooling for API docs tends to use [docs-as-code tools](pubapis_docs_as_code.html) more than [HATs](pubapis_overview.html#hats)."
 
 hateos:
   term: HATEOS
@@ -157,17 +157,17 @@ pelican:
 
 perforce:
   term: Perforce
-  def: "Revision control system often used before Git became popular. Often configured as centralized repository instead of a distributed repository."
+  def: "Revision control system often used before Git became popular. Often configured as a centralized repository instead of a distributed repository."
   link: See [Perforce](https://en.wikipedia.org/wiki/Perforce_Helix).
 
 pull:
   term: pull
-  def: "In Git, when you pull from origin (the master location where you cloned the repo), you get the latest updates from origin onto your local system. When you run `git pull`, Git tries to automatically merge the updates from origin into your own copy. If the merge cannot happen automatically, you might see merge conflicts."
+  def: "In Git, when you pull from origin (the master location where you cloned the repo), you get the latest updates from origin onto your local system. When you run `git pull`, Git tries to automatically merge the updates from origin into your copy. If the merge cannot happen automatically, you might see merge conflicts."
   link: See [git-pull](https://git-scm.com/docs/git-pull).
 
 pull_request:
   term: Pull Request
-  def: "A request from an outside contributor to merge a cloned branch back into the master branch. The pull request workflow is commonly used with open source projects, because developers outside the team will not usually have contributor rights to merge updates into the repository. GitHub provides a great interface for making and processing pull requests."
+  def: "A request from an outside contributor to merge a cloned branch back into the master branch. The pull request workflow is commonly used with open source projects because developers outside the team will not usually have contributor rights to merge updates into the repository. GitHub provides a user-friendly interface for making and processing pull requests."
   link: See [Pull Requests](https://www.atlassian.com/git/tutorials/making-a-pull-request).
 
 push:
@@ -211,7 +211,7 @@ request_example:
 
 resource_description:
   term: resource description
-  def: "\"Resources\" refers to the information returned by an API. Most APIs have various categories of information, or various resources, that can be returned. <br/><br/>The resource description is brief (1-3 sentences) and usually starts with a verb. Resources usually have a number of endpoints to access the resource and multiple methods for each endpoint. Thus, on the same page, you usually have a general resource described along with a number of endpoints for accessing the resource, also described."
+  def: "\"Resources\" refers to the information returned by an API. Most APIs have various categories of information, or various resources, that can be returned. <br/><br/>The resource description is brief (1-3 sentences) and usually starts with a verb. Resources usually have various endpoints to access the resource and multiple methods for each endpoint. Thus, on the same page, you usually have a general resource described along with a number of endpoints for accessing the resource, also described."
   link: See [Resource description](docapis_resource_descriptions.html) for more details.
 
 response:
@@ -241,11 +241,11 @@ sphinx:
 
 static_site_generator:
   term: Static site generator
-  def: "A breed of website compilers that package up a group of files (usually written in Markdown) and make them into a website. There are more than 350 different static site generators. See [Jekyll](pubapis_jekyll.html) in this course for a deep-dive into the most popular static site generator, or [Staticgen](https://www.staticgen.com/) for a list of all static site generators. Also see [Static site generators](pubapis_static_site_generators.html) for a deep-dive into this topic."
+  def: "A breed of website compilers that package up a group of files (usually written in Markdown) and make them into a website. There are more than 350 different static site generators. See [Jekyll](pubapis_jekyll.html) in this course for a deep-dive into the most popular static site generator, or [Staticgen](https://www.staticgen.com/) for a list of all static site generators. See [Static site generators](pubapis_static_site_generators.html) for a deep-dive into this topic."
 
 stoplight:
   term: Stoplight
-  def: "Provides a platform with visual modeling tools to create an OpenAPI document for your API &mdash; without requiring you to know the OpenAPI spec details or code the spec line by line. See [http://stoplight.io/](http://stoplight.io/) for more information. Also see [Stoplight &mdash; visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html)."
+  def: "Provides a platform with visual modeling tools to create an OpenAPI document for your API &mdash; without requiring you to know the OpenAPI spec details or code the spec line by line. See [http://stoplight.io/](http://stoplight.io/) for more information. See [Stoplight &mdash; visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html) for more information."
 
 swagger:
   term: Swagger
@@ -262,7 +262,7 @@ swagger_editor:
 
 swagger_ui:
   term: Swagger UI
-  def: "An open-source web framework ([on GitHub](https://github.com/swagger-api/swagger-ui)) that parses an OpenAPI specification document and generates an interactive documentation website. This is the tool that transforms your spec into the [Petstore-like site](http://petstore.swagger.io/). See [Swagger UI tutorial](pubapis_swagger.html) for a tutorial."
+  def: "An open-source web framework ([on GitHub](https://github.com/swagger-api/swagger-ui)) that parses an OpenAPI specification document and generates an interactive documentation website. Swagger UI is the tool that transforms your spec into the [Petstore-like site](http://petstore.swagger.io/). See [Swagger UI tutorial](pubapis_swagger.html) for a tutorial."
 
 swaggerhub:
   term: SwaggerHub
@@ -274,7 +274,7 @@ vcs:
 
 version_control_system:
   term: version control system
-  def: "A system for managing code that relies on snapshots that store content at specific states. Enables you to revert to previous states, branch the code into different versions, and more. See [About Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) in Git. Also see [Version Control Systems](pubapis_version_control.html)."
+  def: "A system for managing code that relies on snapshots that store content at specific states. Enables you to revert to previous states, branch the code into different versions, and more. See [About Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) in Git. See [Version Control Systems](pubapis_version_control.html) for more information."
 
 yaml:
   term: YAML

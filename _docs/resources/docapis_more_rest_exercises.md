@@ -1,6 +1,6 @@
 ---
-title:  More REST API exercises
-permalink: /docapis_more_rest_exercises.html
+title:  More REST API activities
+permalink: /docapis_more_rest_activities.html
 course: "Documenting REST APIs"
 weight: 13.1
 sidebar: docapis
@@ -8,20 +8,20 @@ section: resources
 path1: /resources.html
 ---
 
-To get more practice working with various APIs, I provide several examples in this Resources section. Working through these exercises will give you more exposure to different REST APIs, how they're organized, the complexities and interdependency of endpoints, and more.
+To get more practice working with various APIs, I provide several examples in this Resources section. Working through these activities will give you more exposure to different REST APIs, how they're organized, the complexities and interdependency of endpoints, and more.
 
 {% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}
 
-## Available exercises
+## Available activities
 
-There are several examples with different APIs. A challenge is listed for each exercise. First, try to solve the challenge on your own. Then follow along in the sections below to see how I approached it.
+There are several activities with different APIs. A challenge is listed for each activities. First, try to solve the challenge on your own. Then follow along in the sections below to see how I approached it.
 
 {% include random_ad2.html %}
 
-In these examples, I usually just print the code to a web page to visualize the response. The following exercises are available:
+In these examples, I usually just print the code to a web page to visualize the response. The following activities are available:
 
 * [Get event information using the Eventbrite API](docapis_eventbrite_example.html)
 * [Flickr example: Retrieve a Flickr gallery](docapis_flickr_example.html)
@@ -41,4 +41,4 @@ I never insert API keys in code samples for a few reasons:
 * API keys posted online get abused
 * Customizing the code sample is a good thing
 
-When you see `APIKEY` in a code sample, remember to swap in an API key there. For example, if the API key was `123`, you would delete `APIKEY` and use `123`.
+When you see `APIKEY` in a code sample, remember to swap in an API key there. For example, if the API key were `123`, you would delete `APIKEY` and use `123`.

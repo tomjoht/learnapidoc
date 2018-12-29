@@ -334,8 +334,8 @@ folders:
   - title: Glossary for API documentation
     jurl: /api-glossary.html
 
-  - title:  REST API exercises
-    jurl: /docapis_more_rest_exercises.html
+  - title:  REST API activities
+    jurl: /docapis_more_rest_activities.html
 
   - title: "Activity: Get event information using the Eventbrite API"
     jurl: /docapis_eventbrite_example.html

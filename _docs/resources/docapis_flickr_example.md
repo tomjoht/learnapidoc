@@ -21,7 +21,7 @@ In this Flickr API example, we want to get all the photos from a specific Flickr
 
 <a href="https://www.flickr.com/photos/flickr/galleries/72157647277042064/" class="noExtIcon"><img src="images/flickrgallery.png" alt="Flickr gallery" /></a>
 
-To achieve our goal, we'll need to call several endpoints. Hopefully this activity will demonstrate the shortcomings of just having reference documentation. When one endpoint requires another endpoint response as an input, you might have to communicate these workflows through tutorials.
+To achieve our goal, we'll need to call several endpoints. Hopefully, this activity will demonstrate the shortcomings of just having reference documentation. When one endpoint requires another endpoint response as an input, you might have to communicate these workflows through tutorials.
 
 {% include random_ad2.html %}
 
@@ -35,7 +35,7 @@ From the list of [Flickr's API methods](https://www.flickr.com/services/api/), t
 
 <a href="https://www.flickr.com/services/api/flickr.galleries.getPhotos.html" class="noExtIcon"><img src="images/flickr_get_photos.png" alt="Flickr getPhotos endpoint" /></a>
 
-One of the arguments we need for the `getPhotos` endpoint is the `gallery_id`. Before we can get the `gallery_id`, however, we have to use another endpoint to retrieve it. *Rather unintuitively, the `gallery_id` is <em>not</em> the ID that appears in the URL of the gallery.*
+One of the arguments we need for the `getPhotos` endpoint is the `gallery_id`. Before we can get the `gallery_id`, however, we have to use another endpoint to retrieve it. *Somewhat unintuitively, the `gallery_id` is <em>not</em> the ID that appears in the URL of the gallery.*
 
 Instead, we use the [`flickr.urls.lookupGallery`](https://www.flickr.com/services/api/explore/flickr.urls.lookupGallery) endpoint listed in the URLs resource section to get the `gallery_id` from a gallery URL:
 
@@ -68,9 +68,9 @@ https://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=
 {: .note}
 I have removed my API key from code samples to prevent possible abuse to my API keys. If you're following along, swap in your own API key here. (Or you can borrow my keys [here](https://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt).)
 
-If you submit the request direct in your browser using the given URL, you can see the same response but in the browser rather than the API Explorer:
+If you submit the request directly in your browser using the given URL, you can see the same response but in the browser rather than the API Explorer:
 
-<img src="images/flickrresponseinbrowser.png" alt="Flickr response in browser" />
+<img src="images/flickrresponseinbrowser.png" alt="Flickr response in the browser" />
 
 {: .tip}
 I'm using the <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en">JSON Formatting extension for Chrome</a> to make the JSON response more readable. Without this plugin, the JSON response is compressed.
@@ -79,12 +79,12 @@ I'm using the <a href="https://chrome.google.com/webstore/detail/json-formatter/
 
 All the necessary information is included in this response in order to display photos on our site, but it's not entirely intuitive how we construct the image source URLs from the response.
 
-In other words, the information a user needs to actually achieve a goal isn't explicit in the API *reference* documentation. The reference docs explain only what's returned in the response, not how to actually use the response.
+In other words, the information a user needs to achieve a goal isn't explicit in the API *reference* documentation. The reference docs explain only what's returned in the response, not how to actually use the response.
 
 The [Photo Source URLs](https://www.flickr.com/services/api/misc.urls.html) page in the documentation explains it:
 
 <blockquote>
-You can construct the source URL to a photo once you know its ID, server ID, farm ID and secret, as returned by many API methods.
+You can construct the source URL to a photo once you know its ID, server ID, farm ID, and secret, as returned by many API methods.
 The URL takes the following format:
 
 <pre>
@@ -189,7 +189,7 @@ Here's what the code is doing:
 
 * In this code, the [ajax method](http://api.jquery.com/jquery.ajax/) from jQuery gets the JSON payload. The payload is assigned to the `data` argument and then logged to the console.
 * The data object contains an object called `photos`, which contains an array called `photo`. The `title` field is a property in an object in the `photo` array. The `title` is accessed through this dot notation: `data.photos.photo[0].title`.
-* To get each item in the object, jQuery's [each method](http://api.jquery.com/jquery.each/) loops through an object's properties. Note that jQuery `each` method is commonly used for looping through results to get values. For the first argument (`data.photos.photo`), you identify the object that you want to access. For the `function( i, gp )` arguments, you list an index and value. You can use any names you want here. `gp` becomes a variable that refers to the `data.photos.photo` object you're looping through. `i` refers to the starting point through the object. (You don't actually need to refer to `i` beyond the mention here unless you want to begin or end the loop at a certain point.)
+* To get each item in the object, jQuery's [each method](http://api.jquery.com/jquery.each/) loops through an object's properties. Note that jQuery `each` method is commonly used for looping through results to get values. For the first argument (`data.photos.photo`), you identify the object that you want to access. For the `function( i, gp )` arguments, you list an index and value. You can use any names you want here. `gp` becomes a variable that refers to the `data.photos.photo` object you're looping through. `i` refers to the starting point through the object. (You don't need to refer to `i` beyond the instance here unless you want to begin or end the loop at a certain point.)
 * To access the properties in the JSON object, we use `gp.farm` instead of `data.photos.photo[0].farm`, because `gp` is an object reference to `data.photos.photo[i]`.
 * After the `each` function iterates through the response, I added some variables to make it easier to work with these components (using `serverId` instead of `gp.server`, etc.). And a `console.log` message checks to ensure we're getting values for each of the elements we need.
 * This comment shows where we need to plug in each of the variables:

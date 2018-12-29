@@ -2,7 +2,7 @@
 title: 'Get wind speed using the Aeris Weather API'
 permalink: /docapis_aerisweather_example.html
 course: "Documenting REST APIs"
-weight: 13.3
+weight: 13.31
 sidebar: docapis
 section: likeadeveloper
 path1: /likeadeveloper.html
@@ -17,7 +17,7 @@ In this activity, you'll use the Aeris Weather API to get the wind speed for a s
 
 ## The Aeris Weather API
 
-In earlier tutorials, you integrated information from the [OpenWeatherMap API](https://openweathermap.org/api). I's probably a good idea to compare this OpenWeatherMap API with another weather API. The [Aeris Weather API](http://www.aerisweather.com/support/docs/api/) is one of the most interesting, well-documented and powerful weather APIs I've encountered.
+In earlier tutorials, you integrated information from the [OpenWeatherMap API](https://openweathermap.org/api). It's probably a good idea to compare this OpenWeatherMap API with another weather API. The [Aeris Weather API](http://www.aerisweather.com/support/docs/api/) is one of the most interesting, well-documented and powerful weather APIs I've encountered.
 
 {% include random_ad2.html %}
 

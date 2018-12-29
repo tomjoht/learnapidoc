@@ -34,7 +34,7 @@ To get event information, we'll use the [event](https://www.eventbrite.com/platf
 
 ## 3. Construct the request
 
-Although Eventbrite explains how to pass the authorization in to requests, it's easier to use the prebuilt curl from the documentation code samples, and then use Postman to convert it to JavaScript jQuery AJAX.
+Although Eventbrite explains how to pass the authorization into requests, it's easier to use the prebuilt curl from the documentation code samples, and then use Postman to convert it to JavaScript jQuery AJAX.
 
 Eventbrite's documentation uses [Apiary](https://apiary.io/), which provides a try-it-out feature (or [API explorer](pubapis_design_patterns.html#interactive_api_explorers)) in the right pane. This pane opens up when you click **Retrieve an Event**:
 
@@ -145,8 +145,8 @@ Here's the <a href="https://idratherbewriting.com/learnapidoc/assets/files/event
 
 ## Code explanation
 
-The sample implementation is as plain as it can be in terms of style. But with API documentation code examples, you want to keep code examples simple. In fact, you most likely don't need a demo at all. Simply showing the payload returned in the browser is sufficient for a UI developer. However, for testing it's fun to make content actually appear on the page.
+The sample implementation is as plain as it can be concerning style. But with API documentation code examples, you want to keep code examples simple. In fact, you most likely don't need a demo at all. Simply showing the payload returned in the browser is sufficient for a UI developer. However, for testing it's fun to make content actually appear on the page.
 
-In a nutshell, here's what's going on. The `ajax` method from jQuery gets a payload for an endpoint URL, and then assigns it to the `data` argument. We optionally log `data` to the console to more easily inspect its payload. To pull out the various properties of the object, we use dot notation. `data.name.text` gets the text property from the name object, and `data.description.html` gets the body.
+In a nutshell, here's what's going on. The `ajax` method from jQuery gets a payload for an endpoint URL and then assigns it to the `data` argument. We optionally log `data` to the console to more easily inspect its payload. To pull out the various properties of the object, we use dot notation. `data.name.text` gets the text property from the name object, and `data.description.html` gets the body.
 
 We then rename the content we want with a variable (`var content`) and use jQuery's `append` method to assign the variable's contents to a specific tag (`eventbrite`) on the page.
