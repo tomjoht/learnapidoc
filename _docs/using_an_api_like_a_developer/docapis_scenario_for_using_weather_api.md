@@ -18,7 +18,7 @@ Let's start using an actual REST API to get more familiar with how they work. In
 
 ## Sample scenario: How windy is it?
 
-Let's say that you're a web developer and you want to add weather information to your site (your site is for cyclists). You want to allow users who come to your site to see what the wind and temperature conditions are for biking. You want something like this:
+Let's say that you're a web developer and you want to add weather information to your site. Your site is for cyclists. You want to allow users who come to your site to see the current wind and temperature conditions. You want something like this:
 
 {% if site.format == "pdf" or site.format == "kindle" %}
 <img class="small" src="images/restapi_windycall.png" alt="Wind meter conditions for website" />
@@ -30,9 +30,9 @@ You don't have your own meteorological service, so you'll need to make some call
 
 ## Get an idea of the end goal {#endgoal}
 
-To give you an idea of the end goal, here's a sample: [idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html](https://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html). It's not necessarily styled the same as the mockup, but it answers the question, "What's the wind and temperature?"
+To give you an idea of the end goal, here's a sample: [idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html](https://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html). It's not necessarily styled the same as the mockup, but it answers the question, "What's the current wind and temperature?"
 
-Click the **Check wind conditions** button to see wind and temperature details. When you request this data, an API goes out to the [OpenWeatherMap API service](https://openweathermap.org/api), retrieves the information, and displays it to you.
+Click the **Check wind conditions** button to see wind and temperature details. When you request this data, a call is made to the [OpenWeatherMap API](https://openweathermap.org/api). The API retrieves the information and some JavaScript code prints it on the page.
 
 <a target="\_blank" href="https://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html" class="noExtIcon"><img src="images/checkwindconditions.png" class="medium" /></a>
 
@@ -44,7 +44,7 @@ The concept and general techniques are more or less the same. Behind the scenes,
 
 ## Explore the OpenWeatherMap API
 
-Although there are [many good weather API options for developers](https://superdevresources.com/weather-forecast-api-for-developing-apps/), I decided to use the [OpenWeatherMap](https://openweathermap.org) because the service is easy to use, free, and stable.
+Although there are [many good weather API options for developers](https://superdevresources.com/weather-forecast-api-for-developing-apps/), I decided to use the [OpenWeatherMap API](https://openweathermap.org) in this course because the service is easy to use, free, and stable.
 
 {% include random_ad2.html %}
 
@@ -52,7 +52,7 @@ Although there are [many good weather API options for developers](https://superd
 
 ## Explore the Aeris Weather API {#aeris}
 
-Before diving too far down int the OpenWeatherMap API, let's look at another weather API for contrast. In contrast to the OpenWeatherMap API, the [Aeris Weather API](http://www.aerisweather.com/) is a bit more robust and extensive. Explore the Aeris Weather API by doing the following:
+Before diving too far down in the OpenWeatherMap API, let's look at another weather API for contrast. In contrast to the OpenWeatherMap API, the [Aeris Weather API](http://www.aerisweather.com/) is a bit more robust and extensive. Explore the Aeris Weather API by doing the following:
 
 1. Go to [www.aerisweather.com](http://www.aerisweather.com).
 2. Click **Documentation** on the top navigation bar.  
@@ -68,9 +68,9 @@ Before diving too far down int the OpenWeatherMap API, let's look at another wea
 {: .tip}
 Here's the Aeris weather forecast API in action making mostly the same calls as I showed earlier with OpenWeatherMap: <a href="https://idratherbewriting.com/learnapidoc/assets/files/wind-aeris.html" alt="Aeris example">idratherbewriting.com/learnapidoc/assets/files/wind-aeris.html</a>.
 
-For our development scenario (showing weather on a website), there are dozens of different weather APIs we could use. As you create your API documentation, think about how your users might have to make the same decisions in choosing APIs. Are there several APIs that provide similar information? What will make your API stand out more? Although you probably can't pick and choose what information your API returns, you might at least argue that the docs for your API will be superior!
-
 ## More weather APIs
+
+For our development scenario (showing weather on a website), there are dozens of different weather APIs we could use. As you create your API documentation, think about how your users might have to make the same decisions in choosing APIs. Are there several APIs that provide similar information? What will make your API stand out more? Although you probably can't pick and choose what information your API returns, you might at least argue that the docs for your API will be superior!
 
 APIs differ considerably in their design, presentation, responses, and other detail. For more comparison, check out some of the following weather APIs:
 
@@ -79,9 +79,9 @@ APIs differ considerably in their design, presentation, responses, and other det
 * [Weather Underground API](https://www.wunderground.com/weather/api/)
 * [Weatherbit API](https://www.weatherbit.io/api)
 
-Each weather API has an entirely different approach to documentation. As you'll see going through this course, the variety and uniqueness of each API doc site (even when approaching the same topic &mdash; a weather forecast) presents a lot of challenges to tech writing teams. Not only do presentations vary, but terminology with APIs also varies.
+Each weather API has an entirely different approach to documentation. As you'll see going through this course, the variety and uniqueness of each API doc site (even when approaching the same topic &mdash; a weather forecast) presents a lot of challenges to tech writing teams. Not only do site presentations vary but also API terminology and other vocabulary to describe similar concepts.
 
-As I mentioned in [REST is a style, not a standard](docapis_what_is_a_rest_api.html#rest-is-a-style-not-a-standard), REST APIs are an architectural style following common characteristics and principles; they don't all follow the same standard or specification. Users have to read the documentation to understand how to use the API.
+As I mentioned earlier, REST APIs are an architectural style following common characteristics and principles; they don't all follow the same standard or specification. Users have to read the documentation to understand how to use the API. (See ["REST is a style, not a standard"](docapis_what_is_a_rest_api.html#rest-is-a-style-not-a-standard).)
 
 {% include random_ad.html %}
 
