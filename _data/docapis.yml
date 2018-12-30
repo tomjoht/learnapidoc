@@ -4,7 +4,7 @@ folders:
 
 - title: "I: Introduction to REST APIs"
   jurl: /docapis_introtoapis.html
-  description: "REST APIs are flourishing in the marketplace, and the web is becoming a mashup of interconnected APIs. REST APIs consist of requests to and responses from a web server. Job prospects are hot for technical writers who can write developer documentation. This course will help you break into API documentation, especially if you complete the many hands-on activities."
+  description: "REST APIs are flourishing in the marketplace, and the web is becoming a mashup of interconnected APIs. REST APIs consist of requests to and responses from a web server. Job prospects are hot for technical writers who can write developer documentation. This course will help you break into API documentation, especially if you complete the many portfolio-building activities."
   class: first
   folderitems:
 
@@ -37,7 +37,7 @@ folders:
 
 - title: "II: Using an API like a developer"
   jurl: /likeadeveloper.html
-  description: "Playing a brief role as a developer will help you understand what's essential in API documentation. Developers often use tools such as Postman to make calls. They look at the structure of the response. And they pull out the needed information to integrate them into web pages and other applications."
+  description: "Playing a brief role as a developer will help you understand what's essential in API documentation. Developers often use tools such as Postman to make calls. They look at the structure of the response, and they dynamically integrate the needed information into web pages and other applications."
   folderitems:
 
   - title: Scenario for using a weather API
@@ -169,7 +169,7 @@ folders:
 
 - title: "V: Testing API docs"
   jurl: /testingdocs.html
-  description: "Testing your documentation is critical to providing accurate, thorough information. With API and developer docs, due to the high level of complexity and engineering requirements, technical writers might be inclined to simply take information that engineers give them and incorporate them wholesale, without personally testing them. Merely playing an editorial can reduce your role to that of an engineer's secretary."
+  description: "Testing your documentation is critical to providing accurate, thorough information. With API and developer docs, due to the high level of complexity and engineering requirements, technical writers might be inclined to simply take information that engineers give them and incorporate it wholesale, without personally testing it. Merely playing an editorial/publishing function, however, can reduce your role to that of an engineer's secretary."
   folderitems:
 
   - title: Overview of testing your docs
@@ -189,7 +189,7 @@ folders:
 
 - title: "VI: Non-reference API topics"
   jurl: /docnonref.html
-  description: "While reference topics in API generally receive the most attention, the non-reference topics, such as getting started tutorials, information about authorization, rate limiting, status and error codes, quick reference guides, and more constitute about half the documentation. These topics are usually handled more by technical writers than engineers. You can evaluate documentation by looking to see whether it includes these non-reference topics."
+  description: "While reference topics in APIs generally receive the most attention, the non-reference topics, such as getting started tutorials, information about authorization, rate limiting, status and error codes, quick reference guides, and other topics constitute about half of the documentation. These topics are usually handled by technical writers more than engineers. You can evaluate the quality of API documentation in part by looking to see whether it includes these non-reference topics."
   folderitems:
 
   - title: User guide topics
@@ -230,7 +230,7 @@ folders:
 
 - title: "VII: Publishing API docs"
   jurl: /publishingapis.html
-  description: "API documentation often follows a docs-as-code workflow, where the tools to author and publish documentation align closely with the same tools developer use to write code. Docs-as-code involves using lightweight formats such as Markdown, collaborating with Git or other version control, building your doc site with a static site generator, and deploying it through a continuous build model, where the build happens on the server when you push commits to a particular branch."
+  description: "API documentation often follows a docs-as-code workflow, where the tools to author and publish documentation align closely with the same tools developers use to write, manage, build, and deploy code. Docs-as-code involves using lightweight formats such as Markdown, collaborating through Git or other version control, building your doc site with a static site generator, and deploying it through a continuous build model, where the build happens on the server when you push commits to a particular branch."
   folderitems:
 
   - title: Overview for publishing API docs
@@ -281,7 +281,7 @@ folders:
 
 - title: "VIII: Getting a job in API doc"
   jurl: /jobapis.html
-  description: "Getting a job in API documentation requires you to demonstrate your technical aptitude through a writing portfolio. The portfolio should include samples of documentation written for developers. One way to build this portfolio by working on an open-source project. Overall, thriving in the developer documentation space requires you to continually learn a healthy dose of code, which can be challenging."
+  description: "Getting a job in API documentation requires you to demonstrate your technical aptitude through a writing portfolio. The portfolio should include samples of documentation written for developers. One way to build this portfolio by working on an open-source project. You also need to live in a tech hub where API documentation jobs are available, such as California, Texas, New York, or Virginia. Overall, thriving in the developer documentation space requires you to continually learn a healthy dose of code, which can be challenging."
   folderitems:
 
   - title: The job market for API technical writers
@@ -295,7 +295,7 @@ folders:
 
 - title: "IX: Native library APIs"
   jurl: /nativelibraryapis.html
-  description: "Native library APIs refer to Java, C++, or other programming-specific APIs. In this model, rather than making requests across the web for the information, you download a library of code and integrate it into your project. The library is compiled into your application's build. Although this type of API is less common, I include it here in part to clarify what makes REST (or web) APIs so different."
+  description: "Native library APIs refer to Java, C++, or other programming-specific APIs. In this model, rather than making requests across the web for the information, you download a library of code and integrate it into your project. The library is compiled directly into your application's build (rather than accessed through web protocols as with REST APIs). Although this type of API is less common, I include it here in part to clarify what makes REST APIs so different from native library APIs."
   folderitems:
 
   - title: Overview of native library APIs
@@ -328,7 +328,7 @@ folders:
 
 - title: "X: API glossary and resources"
   jurl: /resources.html
-  description: "The API documentation landscape is full of jargon, acronyms, and many new terms. This glossary provides a list of terms and definitions. Additionally, this section contains additional exercises and information, such as more activities calling APIs, or more info about alternative specifications."
+  description: "The API documentation landscape is full of jargon, acronyms, and many new terms. This glossary provides a list of terms and definitions. Additionally, this section contains additional exercises and information, such as more activities for calling APIs, or more info about alternative specifications."
   folderitems:
 
   - title: Glossary for API documentation

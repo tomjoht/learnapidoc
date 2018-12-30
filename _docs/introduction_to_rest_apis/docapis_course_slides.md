@@ -8,7 +8,7 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 ---
 
-The slides correspond to API workshops that I give. The slide groups mirror the same sections in the course (most sections have slides, but not all).
+These slides correspond to API workshops that I give. For the most part, the slide groups mirror the same sections in the course. Most sections have slides, but not all because not all material can be covered during a one-day workshop.
 
 {% if site.format == "kindle" or site.format == "pdf" %}
 

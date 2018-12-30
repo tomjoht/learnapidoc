@@ -77,7 +77,7 @@ SOAP is still used in enterprise application scenarios (especially with financia
 
 ## REST is a style, not a standard
 
-Like SOAP, REST (REpresentational State Transfer) uses HTTP as the transport protocol for the message requests and responses. However, unlike SOAP, REST is an architectural style, not a standard protocol. This is why REST APIs are sometimes called _RESTful_ APIs &mdash; REST is a general style that the API follows.
+Like SOAP, REST (Representational State Transfer) uses HTTP as the transport protocol for the message requests and responses. However, unlike SOAP, REST is an architectural style, not a standard protocol. This is why REST APIs are sometimes called _RESTful_ APIs &mdash; REST is a general style that the API follows.
 
 A RESTful API might not follow all of the official characteristics of REST as outlined by [Dr. Roy Fielding](https://en.wikipedia.org/wiki/Roy_Fielding), who first described the model. Hence these APIs are "RESTful" or "REST-like." (Some developers insist on using the term "RESTful" when the API doesn't fulfill all the characteristics of REST, but most people just refer to them as "REST APIs" regardless.)
 
@@ -152,13 +152,13 @@ An important aspect of REST APIs, especially in the context of documentation, is
 
 Although there is a possible WADL (Web Application Description Language) file that can be used to describe REST APIs, WADL files are rarely used because they don't adequately describe all the resources, parameters, message formats, and other attributes of the REST API. (Remember that the REST API is an architectural style, not a standardized protocol.)
 
-To understand how to interact with a REST API, you have to *read the documentation* for the API. Hooray! The need to read the docs makes the technical writer's role extremely important with REST APIs.
+To understand how to interact with a REST API, you have to *read the documentation* for the API. The need to read the docs makes the technical writer's role extremely important with REST APIs.
 
-Some formal specifications &mdash; for example, such [OpenAPI](pubapis_swagger_intro.html) and [RAML](pubapis_raml.html) &mdash; have been developed to describe REST APIs. When you describe your API using the OpenAPI or RAML specification, tools that can read those specifications (such as [Swagger UI](pubapis_swagger.html) or the [RAML API Console](pubapis_raml.html#apiconsole)) will generate an interactive documentation output.
+Some formal specifications &mdash; for example, [OpenAPI](pubapis_swagger_intro.html) and [RAML](pubapis_raml.html) &mdash; have been developed to describe REST APIs. When you describe your API using the OpenAPI or RAML specification, tools that can read those specifications (such as [Swagger UI](pubapis_swagger.html) or the [RAML API Console](pubapis_raml.html#apiconsole)) will generate an interactive documentation output.
 
-The OpenAPI specification document can take the place of the WSDL file that was more common with SOAP. Tools like [Swagger UI](pubapis_swagger.html) that read the specification documents are usually interactive (featuring API Consoles or API Explorers) and allow you to try out REST calls and see responses directly in the documentation.
+The OpenAPI specification document can take the place of the WSDL file that was more common with SOAP. Tools like [Swagger UI](pubapis_swagger.html) that read the specification documents usually produce interactive documentation (featuring API Consoles or API Explorers) and allow you to try out REST calls and see responses directly in the browser.
 
-But don't expect the Swagger UI or RAML API Console documentation outputs to include all the details users would need to work with your API. For example, these outputs won't include info about [authorization keys](docapis_more_about_authorization.html), details about workflows and interdependencies between endpoints, and so on. The Swagger or RAML output usually contains reference documentation only, which typically only accounts for a third or half of the total needed documentation (depending on the API).
+But don't expect the Swagger UI or RAML API Console documentation outputs to include all the details users would need to work with your API. For example, these outputs won't include info about [authorization keys](docapis_more_about_authorization.html), details about workflows and interdependencies between endpoints, and so on. The Swagger or RAML output usually contains reference documentation only, which typically accounts for only a third or half of the total needed documentation (depending on the API).
 
 Overall, REST APIs are more varied and flexible than SOAP APIs, and you almost always need to read the documentation to understand how to interact with a REST API. As you explore REST APIs, you will find that they differ significantly from one to another (especially the format and display of their documentation sites, which we'll look at in [Survey of API doc sites](pubapis_apilist.html)), but they all share the common patterns outlined here. At the core of any REST API is a request and response transmitted over the web.
 

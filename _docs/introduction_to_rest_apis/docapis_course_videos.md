@@ -76,7 +76,7 @@ Video 5 of 5:
 
 ## API Workshop in Denver, Colorado (March 2018)
 
-These videos are from an API documentation workshop that I gave in Denver, Colorado, on March 10, 2018. (For more details, see this [blog post](https://idratherbewriting.com/2018/03/12/api-documentation-workshop-in-denver/)). This version of the workshop is slightly different from the latest version of the course, but the content is still good. I divided the videos into three parts.
+These videos are from an API documentation workshop that I gave in Denver, Colorado, on March 10, 2018. (For more details, see this [blog post](https://idratherbewriting.com/2018/03/12/api-documentation-workshop-in-denver/)). This version of the workshop is slightly different from the latest version of the course, but the content is still good. I divided the videos into three parts, since the workshop wasn't as long as the Menlo Park workshop.
 
 ### Part I of III
 
@@ -120,13 +120,13 @@ The following are other video recordings for API-related presentations.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/NawxzLB4aro" frameborder="0" allowfullscreen></iframe>
 
-I gave this presentation to the STC Silicon Valley chapter -- more details are [here](https://idratherbewriting.com/2017/11/19/upcoming-api-doc-presentation-stc-sv-chapter/). This video covers these course sections:
+I gave this presentation to the STC Silicon Valley chapter. More details are [here](https://idratherbewriting.com/2017/11/19/upcoming-api-doc-presentation-stc-sv-chapter/).
 
 ### Docs as code tools and workflows
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/__vSXJn-JQo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-I gave this presentation to the WTD South Bay group -- more details are  [here](https://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/). This video covers the [Publishing API docs](https://idratherbewriting.com/learnapidoc/pubapis_overview.html) section in this course.
+I gave this presentation to the WTD South Bay group. More details are  [here](https://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/). This video covers the [Publishing API docs](https://idratherbewriting.com/learnapidoc/pubapis_overview.html) section in this course.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Z3e_38WS-2Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -136,17 +136,17 @@ I gave this presentation to STC/WTD Denver &mdash; more details are [here](https
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/gcDSL-8pkvU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-I gave this presentation to the STC/WTD San Diego chapter (more details are [here](https://idratherbewriting.com/2018/02/14/openapi-and-swagger-presentation/). This video covers the [OpenAPI specification and Swagger](https://idratherbewriting.com/learnapidoc/restapispecifications.html) section.
+I gave this presentation to the STC/WTD San Diego chapter. More details are [here](https://idratherbewriting.com/2018/02/14/openapi-and-swagger-presentation/). This video covers the [OpenAPI specification and Swagger](https://idratherbewriting.com/learnapidoc/restapispecifications.html) section.
 
 ### How to Add Swagger to your API
 
-I gave this presentation as a TC Dojo webinar (more details are [here](https://idratherbewriting.com/2017/01/17/swagger-presentation-documenting-rest-apis/)). It covers the [OpenAPI specification and Swagger](https://idratherbewriting.com/learnapidoc/restapispecifications.html) section in this course.
+I gave this presentation as a TC Dojo webinar. More details are [here](https://idratherbewriting.com/2017/01/17/swagger-presentation-documenting-rest-apis/). It covers the [OpenAPI specification and Swagger](https://idratherbewriting.com/learnapidoc/restapispecifications.html) section in this course.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/wC5hxY0RItQ" frameborder="0" allowfullscreen></iframe>
 
 ### Sacramento API workshop
 
-For a longer (and older) video, here's a recording from a 4-hour workshop I gave to the STC Sacramento chapter (more details about the workshop are [here](https://idratherbewriting.com/2016/03/27/rest-api-workshop-recording-sacramento-stc/)).
+For a longer (and older) video, here's a recording from a 4-hour workshop I gave to the STC Sacramento chapter. More details about the workshop are [here](https://idratherbewriting.com/2016/03/27/rest-api-workshop-recording-sacramento-stc/).
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/GerbihyUpdo" frameborder="0" allowfullscreen></iframe>
 

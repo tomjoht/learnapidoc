@@ -8,6 +8,7 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 ---
 
-In this course, you'll do a variety of activities to build your skills, develop content, and gain experience. In this activity, you'll identify your goals so that you can better align your efforts. (In live workshops, this activity also helps the instructor understand why attendees are taking the course and what they hope to get out of it.)
+Ramping up on API documentation, developing a portfolio of API documentation writing samples, and completing all the activities in this course will require a lot of time and effort. In this activity, you'll identify your goals and reasons for taking this course. Reflecting on your motivation will help you develop the right mindset and stamina to devote the necessary time for the course.
+
 
 {% include content/activities/identify_goals.md %}

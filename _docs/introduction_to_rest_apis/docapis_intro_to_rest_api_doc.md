@@ -8,7 +8,7 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 ---
 
-Before we dive into the technical aspects of APIs, let's explore the market and general landscape and trends with API documentation.
+Before we dive into the technical aspects of APIs, let's explore the market, general landscape, and trends with API documentation.
 
 {% if site.format == "web" %}
 * TOC
@@ -19,8 +19,8 @@ Before we dive into the technical aspects of APIs, let's explore the market and 
 
 The API landscape is diverse. In addition to web service APIs (which include REST), there are web socket APIs, hardware APIs, and more. Despite the wide variety, there are mostly just two main types of APIs most technical writers interact with:
 
-* Native library APIs (such as APIs for Java, C++, and .NET)
-* REST APIs (which are a type of web API)
+* [Native library APIs](nativelibraryapis_overview.html) (such as APIs for Java, C++, and .NET)
+* [REST APIs](docapis_what_is_a_rest_api.html) (which are a type of web API)
 
 With native library APIs, you deliver a library of classes or functions to developers, and they incorporate this library into their projects. They can then call those classes or functions directly in their code.
 
@@ -46,9 +46,9 @@ John Musser, one of the founders of Programmableweb.com, emphasizes the importan
 
 {% include course_image.html url="http://www.slideshare.net/jmusser/ten-reasons-developershateyourapi" filename="yourdocsucks" ext_print="png" ext_web="png" alt="APIs often fail because the doc fails the developers" caption="APIs often fail because the doc fails the developers" %}
 
-If REST APIs were an uncommon software product, it wouldn't be that big of a deal. But actually, REST APIs are taking off in a huge way. Through the PEW Research Center, Programmableweb.com has charted and tracked the prevalence of web APIs.
+If REST APIs were an uncommon software product, it wouldn't be that big of a deal. But actually, REST APIs are taking off in a huge way. Programmableweb.com charts and tracks the number of web APIs added to their directory. Programmableweb says, "Since January of 2014, an average of more than 2,000 APIs have been added per year" ([Research Shows Interest in Providing APIs Still High](https://www.programmableweb.com/news/research-shows-interest-providing-apis-still-high/research/2018/02/23)).
 
-{% include course_image.html url="http://www.slideshare.net/programmableweb/web-api-growthsince2005"   filename="growthinrestapis" ext_print="png" ext_web="png" alt="The phenomenal growth in web APIs" caption="The phenomenal growth in web APIs" %}
+{% include course_image.html url="https://www.programmableweb.com/news/research-shows-interest-providing-apis-still-high/research/2018/02/23" filename="growthinrestapis" ext_print="png" ext_web="png" alt="The phenomenal growth in web APIs" caption="The phenomenal growth in web APIs" %}
 
 eBay's API in 2005 was one of the first web APIs (the API allowed sellers to manage their products in their eBay stores). Since then, there has been tremendous growth in web APIs. Given the importance of clear and accurate API documentation, this presents a perfect market opportunity for technical writers. Technical writers can apply their communication skills to fill a gap in a market that is rapidly expanding.
 
@@ -64,7 +64,7 @@ Each REST API functions a bit differently. There isn't a single way of doing thi
 
 Another reason why REST APIs are taking off is that the web itself is evolving into a conglomeration of APIs. Instead of massive, do-it-all systems, websites are pulling in the services they need through APIs.
 
-For example, rather than building your own search to power your website, you might use Swiftype instead and leverage their service through the [Swiftype API](https://swiftype.com/developers). Rather than building your own payment gateway, you might integrate [Stripe and its API](https://stripe.com/docs/api). Rather than building your own login system, you might use [UserApp and its API](https://app.userapp.io/#/docs/). Rather than building your own e-commerce system, you might use [Snipcart and its API](https://docs.snipcart.com/api-reference/introduction). And so on.
+For example, rather than building your own search to power your website, you might use Algolia instead and leverage their service through the [Algolia Search API](https://www.algolia.com/doc/rest-api/search/). Rather than building your own payment gateway, you might integrate the [Stripe API](https://stripe.com/docs/api). Rather than building your own login system, you might use the [UserApp API](https://app.userapp.io/#/docs/). Rather than building your own e-commerce system, you might use the [Snipcart API](https://docs.snipcart.com/api-reference/introduction). And so on.
 
 Practically every service provides its information and tools through an API that you use. Jekyll, a popular static site generator, doesn't have all the components you need to run a site. There's no newsletter integration, analytics, search, commenting systems, forms, chat e-commerce, surveys, or other systems. Instead, you leverage the services you need into your static Jekyll site. CloudCannon has put together a [long list of services](http://cloudcannon.com/tips/2014/12/12/the-ultimate-list-of-services-for-static-websites.html) that you can integrate into your static site.
 
@@ -72,7 +72,7 @@ Practically every service provides its information and tools through an API that
 
 This cafeteria-style model is replacing the massive, swiss-army-site model that tries to do anything and everything. It's better to rely on specialized companies to create powerful, robust tools (such as search) and leverage their service rather than trying to build all of these services yourself.
 
-The way each site leverages its service is usually through a REST API of some kind. In sum, the web is becoming an interwoven mashup of many different services from APIs interacting with each other.
+The way each site leverages its service is usually through a REST API of some kind. Overall, the web is becoming an interwoven mashup of many different services and APIs interacting with each other.
 
 ## Job market is hot for API technical writers
 
@@ -92,7 +92,7 @@ It's not a sophisticated design. But its simplicity and brevity are what make it
 
 ## API doc is a new world for most tech writers
 
-API documentation is often a new world to technical writers. Many of the components may be new. For example, all of these aspects with developer documentation differ from traditional documentation:
+API documentation is often a new world to technical writers. Many of the components may differ from traditional GUI documentation. For example, all of these aspects with developer documentation differ from traditional documentation:
 
 * Authoring tools
 * Audience
@@ -100,7 +100,7 @@ API documentation is often a new world to technical writers. Many of the compone
 * Reference topics
 * User tasks
 
-When you try to navigate the world of API documentation, you may be initially overwhelmed by the differences and intimidated by the tools. Additionally, the documentation content itself is often complex and requires familiarity with development concepts and processes.
+When you try to navigate the world of API documentation, you may be initially overwhelmed by the differences and intimidated by the tools and code. Additionally, the documentation content itself is often complex and requires familiarity with development concepts and processes.
 
 Realizing there was a need for more information, in 2014 I guest-edited a special issue of Intercom dedicated to API documentation.
 
@@ -109,6 +109,6 @@ Realizing there was a need for more information, in 2014 I guest-edited a specia
 {: .tip}
 You can read this issue for free at [http://bit.ly/stcintercomapiissue](http://bit.ly/stcintercomapiissue).
 
-This issue was a good start, but many technical writers asked for more training. The Silicon Valley STC chapter held a couple of workshops dedicated to APIs. Both workshops sold out quickly (with 60 participants in the first, and 100 participants in the second). API documentation is particularly hot in the San Francisco Bay area, where many companies have REST APIs requiring documentation.
+This issue was a good start, but many technical writers asked for more training. The Silicon Valley STC chapter held a couple of workshops dedicated to APIs. Both workshops sold out quickly (with 60 participants in the first, and 100 participants in the second). API documentation is particularly hot in the San Francisco Bay area, where many companies have REST APIs requiring documentation. From these early days, I realized that API documentation would be a hot topic, so I turned my focus toward this area for the next few years &mdash; giving more presentations, workshops, and all the while building this comprehensive course.
 
-Overall, technical writers are hungry to learn more about APIs. This course will help you build the foundation of what you need to know to get a job in API documentation and excel in this field. As a skilled API technical writer, you will be in high demand and fulfill a critical role in companies that distribute their services through APIs.
+Overall, technical writers are hungry to learn more about APIs. This course will help you build the foundation of what you need to know to get a job in API documentation and excel in this field. As a skilled API technical writer, you will be in high demand and will fulfill a critical role in companies that distribute their services through APIs.

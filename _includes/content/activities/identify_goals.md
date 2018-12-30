@@ -1,8 +1,6 @@
 ## <i class="fa fa-user-circle"></i> Activity: Identify your goals with API documentation
 
-Ramping up on API documentation, developing a portfolio of API documentation writing samples, and completing all the activities in this course will require a lot of time and effort. Identify your goals here and make sure they align with this course.
-
-Answer the following questions:
+Identify your goals here and make sure they align with this course. Think about the following questions:
 
 *  Why are you taking this course?
 *  What are your career ambitions related to API documentation?
