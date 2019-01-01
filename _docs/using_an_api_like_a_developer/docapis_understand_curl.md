@@ -23,7 +23,7 @@ curl provides a generic, language-agnostic way to demonstrate HTTP requests and 
 
 ## Try using curl to GET a web page
 
-As mentioned earlier, one reason REST APIs are so familiar is that REST follows the same model as the web (see ["The web itself follows REST"](docapis_what_is_a_rest_api.html#the-web-itself-follows-rest)). When you type an `http` address into a browser address bar, you're telling the browser to make an HTTP request to a resource on a server. The server returns a response, and your browser converts the response to a more visual display. But you can also see the raw code.
+As mentioned earlier, one reason REST APIs are so familiar is that REST follows the same model as the web (see [What is a REST API?](docapis_what_is_a_rest_api.html#the-web-itself-follows-rest)). When you type an `http` address into a browser address bar, you're telling the browser to make an HTTP request to a resource on a server. The server returns a response, and your browser converts the response to a more visual display. But you can also see the raw code.
 
 To see an example of how curl retrieves a web resource, open a terminal and type the following:
 
@@ -31,11 +31,11 @@ To see an example of how curl retrieves a web resource, open a terminal and type
 curl http://example.com
 ```
 
-You should see all the code behind the site [example.com](http://example.com). The browser's job is to make that code visually readable. curl shows you what you're actually retrieving.
+Curl will retrieve the HTML code for the site [example.com](http://example.com). The browser's job is to make that code visually readable. curl shows you what you're actually retrieving.
 
 ## Requests and responses include headers too
 
-When you type an address into a website, you see only the body of the response. But actually, there's more going on behind the scenes. When you make the request, you're sending a (request) header that contains information about the request. The response also contains a (response) header.
+When you type an address into a website, you see only the body of the response. But actually, there's more going on behind the scenes. When you make the request, you're sending a request header that contains information about the request. The response also contains a response header.
 
 1.  To see the response header in a curl request, include `-i` in the curl request:
 
@@ -67,7 +67,7 @@ When you type an address into a website, you see only the body of the response. 
     curl http://example.com -I
     ```
 
-    The header contains the metadata about the response. All of this information is transferred to the browser when you make a request to a URL in your browser (for example, when you surf to a web page online), but the browser doesn't show you this information. You can see the header information using the [Chrome Developer Tools console](https://developers.google.com/web/tools/chrome-devtools/console/) if you look on the Network tab.
+    The header contains the metadata about the response. All of this information is transferred to the browser when you make a request to a URL in your browser (for example, when you surf to a web page online), but the browser doesn't show you this information. You can see the header information using the [Chrome Developer Tools console](https://developers.google.com/web/tools/chrome-devtools/console/) by looking on the Network tab.
 
 3.  Now let's specify the method. The GET method (read) is implied by default when no other method is specified, but we'll make it explicit here with the `-X` parameter:
 
@@ -130,7 +130,7 @@ When you type an address into a website, you see only the body of the response. 
 
 ## Unpacking the weather API curl request
 
-Let's look more closely at the request you submitted for the weather in the [previous topic](docapis_make_curl_call.html):
+Let's look more closely at the request you submitted for the weather in the previous topic ([Make a curl call](docapis_make_curl_call.html)):
 
 ```bash
 curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: 930d08d6-7b2a-6ea2-0725-27324755c684" "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
@@ -146,13 +146,13 @@ Here's what the commands mean:
 
 ## Query strings and parameters
 
-The zip code (`zip`) and app ID (`appid`) and units (`units`) parameters were passed to the endpoint using "query strings." The `?` appended to the URL indicates the start of the query string. The query string parameters are the parameters that appear *after* the `?`:
+The zip code (`zip`), app ID (`appid`), and units (`units`) parameters were passed to the endpoint using "query strings." The `?` appended to the URL indicates the start of the query string. The query string parameters are the parameters that appear *after* the `?`:
 
 <pre>
 <span style="color: red">?</span>zip=95050<span style="color: red">&</span>appid=fd4698c940c6d1da602a70ac34f0b147<span style="color: red">&</span>units=imperial
 </pre>
 
-After the query string, each parameter is concatenated with other parameters through the ampersand `&` symbol. The order of the query string parameters doesn't matter. The order only matters if the parameters are part of the URL path itself (on the left of the query string). Any configurable parts of the endpoint that appear before the query string are called [path parameters](docapis_doc_parameters.html#path_parameters) (we'll dive into these later).
+After the query string, each parameter is concatenated with other parameters through the ampersand `&` symbol. The order of the query string parameters doesn't matter. The order only matters if the parameters are *on the left of the query string* (and thus part of the URL itself). Any configurable parts of the endpoint that appear before the query string are called [path parameters](docapis_doc_parameters.html#path_parameters) (we'll dive into these later).
 
 ## Common curl commands related to REST {#common}
 
@@ -175,7 +175,7 @@ curl has a lot of possible commands, but the following are the most common when 
 :  *Example:* `curl -H "key:12345" http://www.example.com`
 
 `-X POST`
-:  Specifies the HTTP method to use with the request (in this example, `POST`). If you use `-d` in the request, curl automatically specifies a POST method. With `GET` requests, including the HTTP method is optional, because GET is the default method used.
+:  Specifies the HTTP method to use with the request (in this example, `POST`). If you use `-d` in the request, curl automatically specifies a POST method. With `GET` requests, including the HTTP method is optional because GET is the default method used.
 : *Example:* `curl -X POST -d "resource-to-update" http://www.example.com`
 
 `@filename`
@@ -230,7 +230,7 @@ See the [curl documentation](http://curl.haxx.se/docs/manpage.html) for a compre
 
 ## Example curl command
 
-Here's an example that combines some of these commands:
+Here's an example curl request that combines some of these commands:
 
 ```bash
 curl -i -H "Accept: application/json" -X POST -d "{status:MIA}" http://personsreport.com/status/person123
@@ -238,7 +238,7 @@ curl -i -H "Accept: application/json" -X POST -d "{status:MIA}" http://personsre
 
 {% include random_ad2.html %}
 
-We could also format this with line breaks to make it more readable:
+The request could also be formatted with line breaks to make it more readable:
 
 ```bash
 curl -i \
@@ -262,6 +262,6 @@ Quiz yourself to see how much you remember. What do the following parameters mea
 * `-d`
 
 {: .tip}
-When you use curl, the Terminal and [iTerm](https://www.iterm2.com/) on the Mac provide a much easier experience than using the command prompt in Windows. If you're going to get serious about API documentation, but you're still on a PC, consider switching. There are a lot of utilities that you install through a terminal that *just work* on a Mac.
+When you use curl, the Terminal and [iTerm](https://www.iterm2.com/) on the Mac provide a much easier experience than using the command prompt in Windows. If you're going to get serious about API documentation, but you're still on a PC, consider switching. There are a lot of utilities that you install through a terminal that *just work* on a Mac. Also, if you're in Silicon Valley, using a PC instead of a Mac might make you look old-fashioned (see [Why do most startups purchase MacBooks for their employees?](https://www.quora.com/Why-do-most-startups-purchase-MacBooks-for-their-employees)).
 
 To learn more about curl with REST documentation, see [REST-esting with curl](http://blogs.plexibus.com/2009/01/15/rest-esting-with-curl/).

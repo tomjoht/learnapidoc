@@ -8,9 +8,9 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-While [Postman](docapis_postman.html) is convenient, it's hard to represent how to make calls with it in your documentation. Additionally, different users probably use different GUI clients, or none at all (preferring the command line instead).
+While [Postman](docapis_postman.html) is convenient, it's hard to use it to represent how to make calls with it in your documentation. Additionally, different users probably use different GUI clients, or none at all (preferring the command line instead).
 
-Instead of describing how to make REST calls using a GUI client like Postman, the most conventional method for documenting request syntax is to explain how to make the calls using curl.
+Instead of describing how to make REST calls using a GUI client like Postman, the most conventional method for documenting request syntax is to use curl.
 
 * TOC
 {:toc}
@@ -79,6 +79,8 @@ In Windows, Ctrl+ V doesn't work; instead, you right-click and then select **Pas
 If you're on Windows 8.1 and you encounter an error that says, "The program can't start because MSVCR100.dll is missing from your computer," see <a href="http://www.faqforge.com/windows/fix-the-program-cant-start-because-msvcr100-dll-is-missing-from-your-computer-error-on-windows/">this article</a> and install the suggested package.
 
 ### Notes about using curl with Windows
+
+If you're using Windows, note the following formatting requirements when using curl:
 
 * Use double quotes in the Windows command line. (Windows doesn't support single quotes.)
 * Don't use backslashes (`\`) to separate lines. (This is for readability only and doesn't affect the call on Macs.)

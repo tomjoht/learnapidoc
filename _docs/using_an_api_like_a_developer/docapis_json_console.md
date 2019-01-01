@@ -22,7 +22,7 @@ Seeing the response from curl or Postman is cool, but how do you make use of the
 
 ## The AJAX method from jQuery
 
-In this section, I'll explain a bit more about the `ajax` function you used earlier. This information probably isn't essential for documenting REST APIs, but it's good to understand. To recap, here's the `ajax` script:
+In this section, I'll explain a bit more about the `ajax` function you used earlier. This information probably isn't essential for documenting REST APIs, but it's good to understand. In the code, here's the `ajax` script:
 
 ```javascript
 <script>
@@ -75,7 +75,7 @@ Notice how difficult it is to explain code? This is one of the challenges of dev
 
 ## Logging responses to the console
 
-The piece of code that logged the response to the console was simply this:
+The line of code that logged the response to the console was simply this:
 
 ```js
 console.log(response);
@@ -93,7 +93,7 @@ console.log("Here's the response: " + response);
 
 Strings are always enclosed inside quotation marks, and you use the plus sign `+` to concatenate strings with JavaScript variables, like `response`.
 
-Customizing log messages is helpful if you're logging various things to the console and need to flag them with an identifier.
+Customizing log messages is helpful if you're logging various outputs to the console and need to flag them with an identifier.
 
 ## <i class="fa fa-user-circle"></i> Inspect the payload
 

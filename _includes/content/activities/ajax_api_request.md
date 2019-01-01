@@ -1,6 +1,6 @@
 ## <i class="fa fa-user-circle"></i> Activity: Make the request on a page with AJAX
 
-For this activity, you'll use JavaScript to display the API response on a web page. You'll use some auto-generated jQuery code from Postman to create the AJAX request.
+For this activity, you'll use JavaScript to display the API response on a web page. Specifically, you'll use some auto-generated jQuery code from Postman to create the AJAX request.
 
 1.  In a text editor (such as Sublime Text), create a new HTML file and paste in the following boilerplate template (which contains basic HTML tags and a reference to jQuery):
 
@@ -20,7 +20,7 @@ For this activity, you'll use JavaScript to display the API response on a web pa
 
 2.  Save your file (anywhere convenient) with a name such as **weather.html**.
 
-2.  Open Postman and go to the Current weather data (`weather`) endpoint that you configured in an earlier activity (see [Submit requests through Postman](docapis_postman.html).
+2.  Open Postman and go to the Current weather data (`weather`) endpoint that you configured in an earlier activity (see [Submit requests through Postman](docapis_postman.html) for more information).
 3.  Click the **Code** link (below the Save button), and then select **JavaScript > jQuery AJAX**.
 
     <img src="images/postmanjqueryajax.png" class="medium" alt="JavaScript Ajax code snippet" />
@@ -87,7 +87,7 @@ For this activity, you'll use JavaScript to display the API response on a web pa
     ```
 
     {: .tip}
-    You can view the file here: [idratherbewriting.com/learnapidoc/assets/files/weather-plain.html](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html)
+    You can view the file here: [idratherbewriting.com/learnapidoc/assets/files/weather-plain.html](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html). (I added some instructions about opening the developer console because otherwise the page's display, at this point in the tutorial, would be completely blank.)
 
 8.  Start **Chrome** and open the JavaScript Console by going to **View > Developer > JavaScript Console**.
 9.  In Chrome, go to **File > Open File** and select the **weather.html** file. (If you don't see the File menu in Chrome, press **Cmd + O** or **Ctrl + O**, or just drag your weather.html file into your browser window.)

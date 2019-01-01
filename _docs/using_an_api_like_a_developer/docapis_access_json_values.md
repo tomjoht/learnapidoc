@@ -11,7 +11,7 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-This tutorial continues from the previous topic, [Inspect the JSON from the response payload](docapis_json_console.html). In the [sample page](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html) where you logged the `weather` response to the JS Console, the REST response information didn't appear on the page. It only appeared in the JS Console. You need to use dot notation and JavaScript to access the JSON values you want. In this tutorial, you'll use a bit of JavaScript to print some of the response to the page.
+This tutorial continues from the previous topic, [Inspect the JSON from the response payload](docapis_json_console.html). In the [sample page](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html) where you logged the `weather` response to the JS Console, the REST response information didn't appear on the page. It only appeared in the JS Console. You need to use dot notation and JavaScript to access the JSON values you want. In this tutorial, you'll use JavaScript to print some of the response to the page.
 
 Note that this section will use a little bit of JavaScript. Depending on your role, you might not use this code much in your documentation, but it's important to know anyway.
 
@@ -189,7 +189,7 @@ Remember that brackets signify an array. Inside the `weather` array is an unname
 response.weather[0].main
 ```
 
-Then you would follow the same pattern as before to print it to the page. Although objects allow you to get a specific property, arrays require you to select the position in the list that you want.
+Then you would follow the same pattern as before to print it to the page. While objects allow you to get a specific property, arrays require you to select the position in the list that you want.
 
 Here's the code from the [sample page](https://idratherbewriting.com/learnapidoc/assets/files/weather-windspeed.html):
 
@@ -233,7 +233,7 @@ $.ajax(settings).done(function (response) {
 
 ## More exercises
 
-If you'd like to follow some more exercises that involve calling REST APIs, accessing specific values, and printing them to the page, see the following topics in the [Glossary and resources](resources.html) section:
+If you'd like to follow some more exercises that involve calling REST APIs, accessing specific values, and printing the values to the page, see the following topics in the [Glossary and resources](resources.html) section:
 
 * [Get event information using the Eventbrite API](docapis_eventbrite_example.html)
 * [Flickr example: Retrieve a Flickr gallery](docapis_flickr_example.html)

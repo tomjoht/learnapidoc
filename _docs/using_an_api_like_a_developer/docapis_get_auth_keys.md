@@ -27,7 +27,7 @@ Requiring authorization allows API publishers to do the following:
 To run the code samples in this course, you will need to use your own API keys, since these keys are usually treated like passwords and not given out or published openly on a web page.
 
 {: .tip}
-Even though you should treat API keys like passwords, if you want to borrow my API keys, you can access them [here](https://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt). I sometimes find that workshop participants get hung up in trying to acquire API keys, so I make them available here to avoid hang-ups and delays in the activities.
+Even though you should treat API keys like passwords, if you want to borrow my API keys, you can access them [here](https://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt). I sometimes find that workshop participants get hung up in trying to acquire API keys, so I make them available here to avoid delays in the activities.
 
 {% include random_ad.html %}
 
@@ -51,7 +51,7 @@ Now for contrast, let's get the keys for the Aeris Weather API. The Aeris Weathe
     * **Application Namespace**: localhost
 7.  Click **Save App**.  
 
-After your app registers, you should see an ID, secret, and namespace for the app. Copy this information into a place you can easily access since you'll need it to make requests.
+After registering your app, you should see an ID, secret, and namespace for the app. Copy this information into a place you can easily access since you'll need it to make requests.
 
 {: .tip}
 Keep in mind how users authorize calls with an API &mdash; this is something you usually cover in API documentation. Later in the course, we will dive into [authorization methods](docapis_more_about_authorization.html) in more detail.
@@ -68,6 +68,6 @@ In the upcoming activities, you'll work with code in a text file. When you're wo
 * [Komodo Edit](http://komodoide.com/komodo-edit/) (Mac or PC)
 * [Coda](https://panic.com/coda/) (Mac)
 
-These editors provide features that let you better manage the text. Choose the one you want. (My preference is to use Sublime Text when I'm working with code samples, and Atom when I'm working with Jekyll projects.) Avoid using TextEdit since it adds some formatting behind the scenes that can corrupt your content.
+These editors provide features that let you better manage the text. Choose the one you want. (My preference is to use Sublime Text when I'm working with independent code samples, and Atom when I'm working with Jekyll projects.) Avoid using TextEdit since it adds some formatting behind the scenes that can corrupt your content.
 
 {% include random_ad2.html %}

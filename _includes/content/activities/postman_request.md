@@ -14,7 +14,7 @@ In this exercise, you'll use Postman to make a request using OpenWeatherMap's [c
     * key: `units` / value: `imperial`
     * key: `appid`/ value: `APIKEY`
 
-    Customize the `zip` and `appid` values to your own zip code and API key.
+    Customize the `zip` and `appid` values with your own zip code and API key.
 
     Your Postman UI should look like this:
 

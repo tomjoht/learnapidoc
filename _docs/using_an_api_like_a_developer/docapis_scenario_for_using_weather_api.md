@@ -32,7 +32,7 @@ You don't have your own meteorological service, so you'll need to make some call
 
 To give you an idea of the end goal, here's a sample: [idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html](https://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html). It's not necessarily styled the same as the mockup, but it answers the question, "What's the current wind and temperature?"
 
-Click the **Check wind conditions** button to see wind and temperature details. When you request this data, a call is made to the [OpenWeatherMap API](https://openweathermap.org/api). The API retrieves the information and some JavaScript code prints it on the page.
+Click the **Check wind conditions** button to see wind and temperature details. When you request this data, a call is made to the [OpenWeatherMap API](https://openweathermap.org/api). The API retrieves the information, and some JavaScript code prints the information on the page.
 
 <a target="\_blank" href="https://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html" class="noExtIcon"><img src="images/checkwindconditions.png" class="medium" /></a>
 
@@ -68,9 +68,9 @@ Before diving too far down in the OpenWeatherMap API, let's look at another weat
 {: .tip}
 Here's the Aeris weather forecast API in action making mostly the same calls as I showed earlier with OpenWeatherMap: <a href="https://idratherbewriting.com/learnapidoc/assets/files/wind-aeris.html" alt="Aeris example">idratherbewriting.com/learnapidoc/assets/files/wind-aeris.html</a>.
 
-## More weather APIs
-
 For our development scenario (showing weather on a website), there are dozens of different weather APIs we could use. As you create your API documentation, think about how your users might have to make the same decisions in choosing APIs. Are there several APIs that provide similar information? What will make your API stand out more? Although you probably can't pick and choose what information your API returns, you might at least argue that the docs for your API will be superior!
+
+## <i class="fa fa-user-circle"></i> More weather APIs
 
 APIs differ considerably in their design, presentation, responses, and other detail. For more comparison, check out some of the following weather APIs:
 
@@ -79,13 +79,11 @@ APIs differ considerably in their design, presentation, responses, and other det
 * [Weather Underground API](https://www.wunderground.com/weather/api/)
 * [Weatherbit API](https://www.weatherbit.io/api)
 
-Each weather API has an entirely different approach to documentation. As you'll see going through this course, the variety and uniqueness of each API doc site (even when approaching the same topic &mdash; a weather forecast) presents a lot of challenges to tech writing teams. Not only do site presentations vary but also API terminology and other vocabulary to describe similar concepts.
+Each weather API has an entirely different approach to documentation. As you'll see going through this course, the variety and uniqueness of each API doc site (even when approaching the same topic &mdash; a weather forecast) presents a lot of challenges to tech writing teams. Not only do website styles vary but also API terminology and other vocabulary to describe similar concepts.
 
-As I mentioned earlier, REST APIs are an architectural style following common characteristics and principles; they don't all follow the same standard or specification. Users have to read the documentation to understand how to use the API. (See ["REST is a style, not a standard"](docapis_what_is_a_rest_api.html#rest-is-a-style-not-a-standard).)
+As I mentioned earlier, REST APIs are an architectural style that follows common characteristics and principles; they don't all follow the same standard or specification. Users have to read the documentation to understand how to use the API. (See ["REST is a style, not a standard"](docapis_what_is_a_rest_api.html#rest-is-a-style-not-a-standard).)
 
 {% include random_ad.html %}
-
-## <i class="fa fa-user-circle"></i> Answer some questions about the APIs
 
 Spend a little time exploring the features and information that these weather APIs provide. Try to answer these basic questions:
 

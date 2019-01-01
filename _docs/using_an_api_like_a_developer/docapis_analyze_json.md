@@ -11,7 +11,7 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-JSON is the most common format for responses from REST APIs. Let's look at the JSON response for the OpenWeatherMap weather endpoint in more depth, distinguishing between arrays and objects in JSON formatting.
+JSON is the most common format for responses from REST APIs. Let's look at the JSON response for the OpenWeatherMap weather endpoint in more depth, distinguishing between arrays and objects in JSON.
 
 * TOC
 {:toc}
@@ -66,6 +66,8 @@ The unminified response from the OpenWeatherMap weather endpoint looks like this
   "cod": 200
 }
 ```
+
+We'll analyze the information structures within JSON responses in the following sections.
 
 {% include random_ad2.html %}
 

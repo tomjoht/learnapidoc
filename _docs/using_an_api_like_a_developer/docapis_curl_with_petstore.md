@@ -1,5 +1,5 @@
 ---
-title: "Use methods with curl"
+title: "Activity: Use methods with curl"
 permalink: /docapis_curl_with_petstore.html
 keywords:
 course: "Documenting REST APIs"
@@ -9,7 +9,7 @@ section: likeadeveloper
 path1: /likeadeveloper.html
 ---
 
-Our [sample weather API](docapis_scenario_for_using_weather_api.html) doesn't allow you to use anything but a GET method, so for this exercise, we'll use the [petstore API from Swagger](http://petstore.swagger.io/) but without actually using the Swagger UI (which is something we'll [explore later](pubapis_swagger_intro.html)). For now, we just need an API with which we can use to create, update, and delete content.
+Our [sample weather API](docapis_scenario_for_using_weather_api.html) doesn't allow you to use anything but a GET method, so for this exercise, to use other methods with curl, we'll use the [petstore API from Swagger](http://petstore.swagger.io/). However, we won't actually use the Swagger UI (which is something we'll [explore later](pubapis_swagger_intro.html)). For now, we just need an API with which we can use to create, update, and delete content.
 
 In this example, using the Petstore API, you'll create a new pet, update the pet, get the pet's ID, delete the pet, and then try to get the deleted pet.
 
@@ -23,7 +23,7 @@ To create a pet, you have to pass a JSON message in the request body. Rather tha
 {: .tip}
 A lot of APIs require you to post requests containing JSON messages in the body. Request body parameters are often how you configure a service. The list of JSON key-value pairs that the API accepts is called the "Model" in the Swagger UI display.
 
-1.  Insert the following into a next text file. This information will be passed in the `-d` parameter of the curl request:
+1.  Insert the following into a text file. This information will be passed in the `-d` parameter of the curl request:
 
     ```json
     {
@@ -56,23 +56,25 @@ A lot of APIs require you to post requests containing JSON messages in the body.
 
     If you've never browsed directories using the command line, here's how you do it:
 
-    On a Mac, find your present working directory by typing `pwd`. Then move up by typing change directory: `cd ../`. Move down by typing `cd pets`, where `pets` is the name of the directory you want to move into. Type `ls` to list the contents of the directory.
+    * On a Mac, find your present working directory by typing `pwd`. Then move up a level by typing change directory: `cd ../`. Move down a level by typing `cd pets`, where `pets` is the name of the directory you want to move into. Type `ls` to list the contents of the directory.
 
-    On a PC, look at the prompt path to see your current directory. Then move up by typing `cd ../`. Move down by typing `cd pets`, where `pets` is the name of the directory you want to move into. Type `dir` to list the contents of the current directory.
+    * On Windows, look at the prompt path to see your current directory. Then move up a level by typing `cd ../`. Move down a level by typing `cd pets`, where `pets` is the name of the directory you want to move into. Type `dir` to list the contents of the current directory.
 
-3.  After your terminal or command prompt is in the same directory as your JSON file, create the new pet:
+3.  After your terminal or command prompt is in the same directory as your JSON file, create the new pet with the following curl request:
 
     ```bash
     curl -X POST --header "Content-Type: application/json" --header "Accept: application/json" -d @mypet.json "http://petstore.swagger.io/v2/pet"
     ```
 
-    The `Content-Type` indicates the type of content submitted in the request body. The `Accept` indicates the type of content we will accept in the response. The response should look something like this:
+    The `Content-Type` indicates the type of content submitted in the request body. The `Accept` indicates the type of content we will accept in the response.
+
+    The response should look something like this:
 
     ```json
     {"id":51231236,"category":{"id":4,"name":"testexecution"},"name":"fluffernutter","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
     ```
 
-    Check to see that your pet's name was returned.
+    In the response, check to see that your pet's name was returned.
 
     {: .tip}
     Feel free to run this same request a few times more. REST APIs are \"idempotent,\" which means that running the same request more than once won't end up duplicating the results (you just create one pet here, not multiple pets). Todd Fredrich explains idempotency by [comparing it to a pregnant cow](http://www.restapitutorial.com/lessons/idempotency.html). Let's say you bring over a bull to get a cow pregnant. Even if the bull and cow mate multiple times, the result will be just one pregnancy, not a pregnancy for each mating session.
@@ -84,7 +86,7 @@ A lot of APIs require you to post requests containing JSON messages in the body.
 Guess what, your pet hates its name! Change your pet's name to something more formal using the update pet method.
 
 1.  In the **mypet.json** file, change the pet's name.
-2.  Use the `PUT` method instead of `POST` with the same curl content to update the pet's name:
+2.  Use the `PUT` method instead of `POST` to update the pet's name (keep the same curl content otherwise):
 
     ```bash
     curl -X PUT --header "Content-Type: application/json" --header "Accept: application/json" -d @mypet.json "http://petstore.swagger.io/v2/pet"
