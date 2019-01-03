@@ -1,7 +1,7 @@
 ---
 title: "Activity: Evaluate API reference docs for core elements"
 permalink: /docapis_api_reference_activity.html
-weight: 3.72
+weight: 3.9
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html

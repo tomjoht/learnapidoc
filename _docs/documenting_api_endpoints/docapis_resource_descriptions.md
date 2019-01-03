@@ -2,7 +2,7 @@
 title: "Step 1: Resource description (API reference tutorial)"
 permalink: /docapis_resource_descriptions.html
 course: "Documenting REST APIs"
-weight: 3.1
+weight: 3.2
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
@@ -46,7 +46,7 @@ Here's a resource description for the Membership resource in the [Box API](https
 
 <a  class="noCrossRef" href="https://docs.box.com/reference#membership-object" class="noExtIcon"><img src="images/boxapi_3_17.png" alt="Example from Box" /></a>
 
-For the Membership resource (or "object," as they call it), there are 7 different endpoints or methods you can call. The Box API describes the Membership resource and each of the endpoints that let you access the resource.
+For the Membership resource (or "object," as they call it), there are 7 different endpoints or methods you can call. The Box API describes the Membership resource and each of the endpoints that lets you access the resource.
 
 Sometimes the general resource isn't described; instead, it just groups the endpoints. The bulk of the description appears in each endpoint. For example, in the Eventbrite API, here's the Events resource:
 
@@ -73,7 +73,7 @@ Although the Events resource isn't described here, descriptions are added for ea
 And so on.
 
 {: .tip}
-When developers create APIs, they have a design question to consider: Use a lot of variants of endpoints (as with Eventbrite's API) or provide lots of parameters to configure the same endpoint. Often there's a balance between the two. The trend seems to be toward providing separate endpoints rather than supplying a host of potentially confusing parameters within the same endpoint.
+When developers create APIs, they have a design question to consider: Use many variants of endpoints (as with Eventbrite's API), or provide lots of parameters to configure the same endpoint. Often there's a balance between the two. The trend seems to be toward providing separate endpoints rather than supplying a host of potentially confusing parameters within the same endpoint. On the other hand, GraphQL APIs (which I don't cover in this course) provide one endpoint with different ways to query the information the endpoint contains. See [GraphQL And REST Differences Explained With Burgers](https://apievangelist.com/2018/06/29/rest-api-and-graphql-burger-king/) for a good explanation about GraphQL versus REST.
 
 As another example, here's the Relationships resource in the  [Instagram API](https://instagram.com/developer/endpoints/relationships/).
 
@@ -96,7 +96,7 @@ The description of the resource is likely something you'll re-use in different p
 
 ## Terminology for describing the resource
 
-The exact terminology for referring to resources varies. The "things" that you access using a URL can be referred to in a variety of ways, but "resource" is the most common term because you access them through a URL, or uniform *resource* locator. Other than "resources," you might see terms such as *API calls*, *endpoints*, *API methods*, *calls*, *objects*, *services*, and *requests*. Some docs get around the situation by not calling them anything explicitly except "Reference."
+The exact terminology for referring to *resources* varies. The "things" that you access using a URL can be referred to in a variety of ways, but "resource" is the most common term because you access them through a URL, or uniform *resource* locator. Other than "resources," you might see terms such as *API calls*, *endpoints*, *API methods*, *calls*, *objects*, *services*, and *requests*. Some docs get around the situation by not calling them anything explicitly except "Reference."
 
 Despite the variety with terminology, generally an API has various "resources" that you access through "endpoints." The endpoints give you access to the resource. (But terminology isn't standard, so expect variety.)
 

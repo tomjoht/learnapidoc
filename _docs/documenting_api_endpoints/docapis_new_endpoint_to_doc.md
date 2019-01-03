@@ -5,7 +5,7 @@ categories:
 - api-doc
 keywords:
 course: "Documenting REST APIs"
-weight: 3.01
+weight: 3.0
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
@@ -13,7 +13,7 @@ path1: /docendpoints.html
 
 Until this point, you've been [acting as a developer](likeadeveloper.html) with the task of integrating the weather data into your site. The point was to help you understand the type of information developers need and how they use APIs.
 
-Now let's shift perspectives. Now suppose you're a technical writer working with the OpenWeatherMap team. The team is asking you to document a new endpoint.
+Now let's shift perspectives. Now suppose you're a technical writer working with the OpenWeatherMap team. The team is asking you to document a new endpoint. What do you cover, and how do you approach it?
 
 {% if site.format == "web" %}
 * TOC
@@ -26,9 +26,9 @@ The project manager calls you over and says the team has a new endpoint for you 
 
 "Here's the wiki page that contains info about the new API," the manager says. The information is scattered and random on the wiki page.
 
-Most technical writers don't start from scratch with documentation projects. Engineers usually dump essential information onto an internal wiki page (or they communicate the info during meetings). However, the information on the wiki page will likely be incomplete, and unnecessarily technical in places (like describing the database schema or high-level architectural workflows). The info might also include internal-only information (for example, test logins, access protocols, or code names), or have sections that are out-of-date.
+Most technical writers don't start from scratch with documentation projects. Engineers usually dump essential information onto an internal wiki page (or they communicate the info during meetings). However, the information on the wiki page will likely be incomplete and unnecessarily technical in places (like describing the database schema or high-level architectural workflows). The info might also include internal-only information (for example, test logins, access protocols, or code names) or have sections that are out-of-date.
 
-Ultimately, the information will be oriented toward other engineers on the same knowledge level as the team's engineers. Your job as a technical writer will be to take this information and turn it into complete, accurate, usable information that communicates with your audience.
+Ultimately, the information will be oriented towards other engineers on the same knowledge level as the team's engineers. Your job as a technical writer will be to take this information and turn it into complete, accurate, usable information that communicates with your audience.
 
 {% include random_ad.html %}
 
@@ -121,8 +121,10 @@ https://api.openweathermap.org/com/surfreport/123?&days=2&units=metrics&hour=140
 </div>
 {% endraw %}
 
+You can see that the information here is unstructured and hard to scan. By structuring the API reference information into five standard sections, the information will take more shape and be more readable.
+
 {% include random_ad2.html %}
 
 ## Next steps
 
-Jump into the [API reference tutorial overview](docapis_api_reference_tutorial_overview.html) for an overview of the five steps we'll cover in creating the API reference topic for this new endpoint.
+Let's jump into the [API reference tutorial overview](docapis_api_reference_tutorial_overview.html) for an overview of the five steps we'll cover in creating the API reference topic for this new endpoint.

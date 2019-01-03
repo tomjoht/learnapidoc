@@ -75,7 +75,7 @@ folders:
 
 - title: "III: API endpoints"
   jurl: /docendpoints.html
-  description: "Reference documentation for API endpoints conforms to five general sections: resource descriptions, endpoints and methods, parameters, sample requests, sample responses and schemas. When you document an API, provide detailed information for each of these reference sections."
+  description: "Reference documentation for API endpoints consists of five general sections: resource descriptions, endpoints and methods, parameters, sample requests, and sample responses and schemas. To document the reference endpoints of an API, provide detailed information for each of these sections."
   folderitems:
 
   - title: "A new endpoint to document"

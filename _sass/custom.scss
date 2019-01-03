@@ -2,7 +2,8 @@ p,
 ol,
 ul,
 li,
-span.calloutText {
+span.calloutText
+{
   font-size: 1.7rem;
   line-height: 2.6rem;
   margin-bottom: 2.4rem;
@@ -231,6 +232,8 @@ dl dd {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 30px;
+    font-size: 1.7rem;
+    line-height: 2.6rem;
 }
 dd p {
     margin-top: 12px;

@@ -3,7 +3,7 @@ title: "Step 5: Response example and schema (API reference tutorial)"
 permalink: /docapis_doc_sample_responses_and_schema.html
 keywords:
 course: "Documenting REST APIs"
-weight: 3.5
+weight: 3.6
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html

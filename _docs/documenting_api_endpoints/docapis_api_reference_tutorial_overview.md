@@ -2,13 +2,13 @@
 title: "API reference tutorial overview"
 permalink: /docapis_api_reference_tutorial_overview.html
 course: "Documenting REST APIs"
-weight: 3.01
+weight: 3.1
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
 ---
 
-In this API reference tutorial tutorial, we'll work on creating five common sections in REST API reference documentation: resource description, endpoints and methods, parameters, request example, and response example. To provide some context (and to continue with our sample documentation scenario), we'll structure the information from the [new endpoint to document](docapis_new_endpoint_to_doc.html#surf_report_api) into these five sections.
+In this API reference tutorial tutorial, we'll work on creating five common sections in REST API reference documentation: resource description, endpoints and methods, parameters, request example, and response example and schema. To provide some context (and to continue with our sample documentation scenario), we'll structure the information from the [new endpoint to document](docapis_new_endpoint_to_doc.html#surf_report_api) into these five sections.
 
 * TOC
 {:toc}
@@ -47,7 +47,7 @@ The tutorial here includes a workflow map to help guide and orient you each step
 
 {% include random_ad2.html %}
 
-When we're finished, the end result will look [like this](docapis_finished_doc_result.html). You'll then have an opportunity to [edit or create an API reference topic](docapis_api_reference_activity.html) with your own [open-source API project](docapis_find_open_source_project.html).
+When we're finished, the end result will look like a real API help topic (see the finished result in [Putting it all together](docapis_finished_doc_result.html)). In the associated activities, you'll have an opportunity to [edit or create an API reference topic](docapis_api_reference_activity.html) with your own [open-source API project](docapis_find_open_source_project.html).
 
 {: .note}
 Although there are automated ways to publish API docs, we're focusing on content rather than tools in this section. In the next section, [OpenAPI specification and Swagger](restapispecifications.html), we'll look at how to describe these same reference components using the OpenAPI specification. In the [Publishing your API documentation section](publishingapis.html), we'll look at ways to publish the information.

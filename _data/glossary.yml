@@ -62,7 +62,7 @@ curl:
 
 endpoints_and_methods:
   term: endpoints and methods
-  def: "The endpoints indicate how you access the resource, and the method used with the endpoint indicates the allowed interactions (such as GET, POST, or DELETE) with the resource. The endpoint shows the end path of a resource URL only, not the base path common to all endpoints. <br/><br/>The same resource usually has a variety of related endpoints, each with different paths and methods but returning different information about the same resource. Endpoints usually have brief descriptions similar to the overall resource description but shorter."
+  def: "The endpoints indicate how you access the resource, while the method indicates the allowed interactions (such as GET, POST, or DELETE) with the resource. <br/><br/>The same resource usually has a variety of related endpoints, each with different paths and methods but returning different information about the same resource. Endpoints usually have brief descriptions similar to the overall resource description but shorter. Also, the endpoint shows the end path of a resource URL only, not the base path common to all endpoints."
   link: See [Endpoints and methods](docapis_resource_endpoints.html).
 
 git:
@@ -211,7 +211,7 @@ request_example:
 
 resource_description:
   term: resource description
-  def: "\"Resources\" refers to the information returned by an API. Most APIs have various categories of information, or various resources, that can be returned. <br/><br/>The resource description is brief (1-3 sentences) and usually starts with a verb. Resources usually have various endpoints to access the resource and multiple methods for each endpoint. Thus, on the same page, you usually have a general resource described along with a number of endpoints for accessing the resource, also described."
+  def: "\"Resources\" refers to the information returned by an API. Most APIs have various categories of information, or various resources, that can be returned. <br/><br/>The resource description is brief (1-3 sentences) and usually starts with a verb. Resources usually have various endpoints to access the resource and multiple methods for each endpoint. On the same page, you usually have a general resource described along with a number of endpoints for accessing the resource, also described."
   link: See [Resource description](docapis_resource_descriptions.html) for more details.
 
 response:

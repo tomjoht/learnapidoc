@@ -2,7 +2,7 @@
 title: "Step 2: Endpoints and methods (API reference tutorial)"
 permalink: /docapis_resource_endpoints.html
 course: "Documenting REST APIs"
-weight: 3.11
+weight: 3.3
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
@@ -40,13 +40,13 @@ If you have [path parameters](docapis_doc_parameters.html#path_parameters) in yo
 /campaigns/{campaign_id}/actions/send
 ```
 
-Better yet, put the path parameter in another color to set it off:
+If you can, put the path parameter in another color to set it off:
 
 <pre>
 /campaigns/<span class="orange">{campaign_id}</span>/actions/send
 </pre>
 
-Curly braces are a convention that users will understand. In the above example, almost no endpoint uses curly braces in the actual path syntax, so the `{campaign_id}` is an obvious placeholder.
+Curly braces for path parameters are a convention that users will understand. In the above example, almost no endpoint uses curly braces in the actual path syntax, so the `{campaign_id}` is an obvious placeholder.
 
 Here's an example from the Facebook API that colors the path parameter in an easily identifiable way:
 
@@ -68,11 +68,11 @@ It's common to list the method (GET, POST, and so on) next to the endpoint. The 
 
 See [Request methods](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods) in Wikipedia's article on HTTP for more details. (There are some additional methods, but they're rarely used.)
 
-Since there's not much to say about the method itself, it makes sense to group the method with the endpoint. Here's an example from Box's API:
+Since there's not much to say about the method itself, it makes sense to group the method with the endpoint. Here's an example from the Box API:
 
 <a href="https://developer.box.com/reference/#add-a-comment-to-an-item" class="noExtIcon"><img src="images/methodwithendpoint.png" alt="Box API" /></a>
 
-And here's an example from Linkedin's API:
+And here's an example from the Linkedin API:
 
 <a class="noCrossRef" href="https://developer.linkedin.com/docs/rest-api" class="noExtIcon"><img src="images/linkedinexample.png" alt="Linkedin Example" /></a>
 
@@ -89,7 +89,7 @@ In our sample API scenario, the endpoint is just `/surfreport/{beachId}`. You do
 
 ## How to group multiple endpoints for the same resource
 
-Another consideration is how to group and list the endpoints, particularly if you have a lot of endpoints for the same resource. In the [resource descriptions step](docapis_resource_descriptions.html#examples), we looked at a variety of APIs. Many doc sites provide different designs for grouping or listing each endpoint for the resource, so I won't revisit all the same examples. Group the endpoints in some way that makes sense, such as by method or by the type of information returned.
+Another consideration in documenting endpoints and methods is how to group and list the endpoints, particularly if you have a lot of endpoints for the same resource. In [Examples of resource descriptions](docapis_resource_descriptions.html#examples), we looked at a variety of APIs. Many doc sites provide different designs for grouping or listing each endpoint for the resource, so I won't revisit all the same examples. Group the endpoints in some way that makes sense, such as by method or by the type of information returned.
 
 For example, suppose you have three GET endpoints and one POST endpoint, all of which relate to the same resource. Some doc sites might list all the endpoints for the same resource on the same page. Others might break them into separate pages. Others might create one group for the GET endpoints and another for the POST endpoints. It depends how much you have to say about each endpoint.
 
@@ -100,7 +100,7 @@ In a later section on [design patterns](pubapis_design_patterns.html), I explain
 
 ## How to refer to endpoints in tutorials
 
-In tutorials and other non-reference content, how do you refer to the endpoints within an API reference topic? Referring to the "`/aqi` endpoint" or to the "`/weatherdata`" endpoint doesn't make a huge difference. But with more complex APIs, using the endpoint to talk about the resource can get problematic.
+In tutorials and other non-reference content, how do you refer to the endpoints within an API reference topic? Referring to the "`/aqi` endpoint" or to the "`/weatherdata`" endpoint doesn't make a huge difference. But with more complex APIs, using the endpoint to talk about the resource can be tricky.
 
 {% include random_ad2.html %}
 
@@ -128,11 +128,11 @@ To say that you could use the rewards resource wasn't always specific enough, be
 
 It can get awkward referring to the endpoint. For example, you might have a sentence like this: "When you call `/users/{userId}/rewards/`, you get a list of all rewards. To get a specific reward for a specific mission for a specific user, the `/users/{userId}/rewards/{missionId}` endpoint takes several parameters..."
 
-The longer the endpoint, the more difficult the reference. These kinds of descriptions are more common in the [non-reference sections](docnonref.html) sections of your documentation. However, brief and clear references to the endpoints are sometimes challenging. There's not a clear solution about how to refer to cumbersome endpoints. Adopt a convention that makes the most sense for your API.
+The longer the endpoint, the more cumbersome the reference becomes. These kinds of descriptions are more common in the [non-reference sections](docnonref.html) sections of your documentation. Generally, there's not a clear convention about how to refer to cumbersome endpoints. Adopt an approach that makes the most sense for your API.
 
 ## Endpoint for surfreport API
 
-Let's create the Endpoints section for our [fictitious surfrefport API](docapis_new_endpoint_to_doc.html). Here's my approach:
+Let's create the Endpoints and methods section for our [fictitious surfrefport API](docapis_new_endpoint_to_doc.html). Here's my approach:
 
 <div class="docSample">
 {% include_relative surfreport_endpoint.html %}

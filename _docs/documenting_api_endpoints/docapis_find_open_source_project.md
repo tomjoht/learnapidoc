@@ -2,7 +2,7 @@
 title: "Activity: Find an Open Source Project"
 permalink: /docapis_find_open_source_project.html
 course: "Documenting REST APIs"
-weight: 3.71
+weight: 3.8
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
