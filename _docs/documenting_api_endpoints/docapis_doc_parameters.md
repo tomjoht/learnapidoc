@@ -26,7 +26,7 @@ The following screenshot shows a sample parameters section with the Box API:
 
 In this example, the parameters are grouped by type: path parameters, query parameters, and body parameters. The endpoint also sets off the path parameter (`collab_id`) in a recognizable way in the endpoint definition.
 
-Many times parameters are merely listed in a table or definition list like this:
+Many times parameters are simply listed in a table or definition list like this:
 
 {% if site.format == "kindle" %}
 
@@ -79,14 +79,14 @@ The terms for each of these parameter types comes from the [OpenAPI specificatio
 
 ## What to note in parameter documentation
 
-Regardless of the parameter type, consider noting the following:
+Regardless of the parameter type, define the following with each parameter:
 
-* [Data types](#data_types_parameters)
-* [Max and min values](#max_min_values)
+* [Data type](#data_types_parameters)
+* [Max and min value](#max_min_values)
 
 ### Data types for parameters {#data_types_parameters}
 
-APIs may not process the parameter correctly if it's the wrong data type or wrong format. Therefore, it's important to list the data type for each parameter. Listing the data type is usually a good idea with all parameter types but is especially true for request body parameters, since these are typically formatted in JSON.
+APIs may not process the parameter correctly if it's the wrong data type or wrong format. Listing the data type is usually a good idea with all parameter types but is especially true for request body parameters, since these are typically formatted in JSON.
 
 These data types are the most common with REST APIs:
 
@@ -97,7 +97,7 @@ These data types are the most common with REST APIs:
 * **array**: A list of values
 
 {: .note}
-There are more data types in programming, and if you have more specific data types that are important to note, be sure to document them. In Java, for example, it's important to note the data type allowed because Java allocates memory space based on the size of the data. As such, Java gets much more specific about the size of numbers. You have a byte, short, int, double, long, float, char, boolean, and so on. However, you usually don't have to specify this level of detail with a REST API."
+There are more data types in programming, and if you have more specific data types that are important to note, be sure to document them. In Java, for example, it's important to note the data type allowed because Java allocates memory space based on the size of the data. As such, Java gets much more specific about the size of the numbers. You have a byte, short, int, double, long, float, char, boolean, and so on. However, you usually don't have to specify this level of detail with a REST API.
 
 {% include random_ad.html %}
 
@@ -105,22 +105,22 @@ There are more data types in programming, and if you have more specific data typ
 
 In addition to specifying the data type, the parameters should indicate the maximum, minimum, and allowed values. For example, if the weather API allows only longitude and latitude coordinates of specific countries, these limits should be described in the parameters documentation.
 
-Omitting information about max/min values or other unallowed values is a common pitfall in docs. Developers often don't realize all the "creative" ways users might use the APIs. The quality assurance team (QA) is probably your best resource for identifying the values that aren't allowed because it's QA's job to try to break the API.
+Omitting information about max/min values or other unallowed values is a common pitfall in docs. Developers often don't realize all the "creative" ways users might use the APIs. The quality assurance team (QA) is probably your best resource for identifying the values that aren't allowed, because it's QA's job to try to break the API.
 
 {: .tip}
 When you test an API, try running an endpoint without the required parameters, or with the wrong parameters, or with values that exceed the max or min amounts. See what kind of error response comes back. Include that response in your [status and error codes section](docapis_doc_status_codes.html). I talk more about the importance of testing in [Testing your docs](testingdocs.html).
 
 ## Header parameters {#header_parameters}
 
-Header parameters are included in the request header. Usually, the header just includes authorization parameters that are common across all endpoints; as a result, the header parameters aren't usually documented with each endpoint. Instead, the authorization parameters are documented in the [authorization requirements section](docapis_more_about_authorization.html).
+Header parameters are included in the request header. Usually, the header just includes authorization parameters that are common across all endpoints; as a result, the header parameters aren't usually documented with each endpoint. Instead, the authorization details in header parameters are documented in the [authorization requirements section](docapis_more_about_authorization.html).
 
-However, if your endpoint requires unique parameters to be passed in the header, you would document them in the parameters documentation here. (For more on request and response headers, see the [curl tutorial](docapis_understand_curl.html#requests-and-responses-include-headers-too) where we explored this with some examples.)
+However, if your endpoint requires unique parameters to be passed in the header, you would document them in the parameters documentation within each endpoint.
 
 {% include random_ad2.html %}
 
 ## Path parameters {#path_parameters}
 
-Path parameters are part of the endpoint itself and are not optional. For example, `{user}` and `{bicycleId}` are the path parameters in the following endpoint:
+Path parameters are part of the endpoint itself and are not optional. For example, in the following endpoint, `{user}` and `{bicycleId}` are required path parameters:
 
 <pre>
 /service/myresource/user/<span class="orange">{user}</span>/bicycles/<span class="orange">{bicycleId}</span>
@@ -236,12 +236,12 @@ The same parameter values might be used in other requests as well, so eBay's app
 
 <a class="noExtIcon" href="http://petstore.swagger.io/#/operations/pet/addPet"><img src="images/swaggeruiexamplemodel.png"/></a>
 
-See the [Swagger Petstore](http://petstore.swagger.io/) to explore the demo here. The Example Value shows a sample of the syntax along with examples. When you click the **Model** link, you see a sample request body parameter and any descriptions of each element in the request body parameter.
+See the [Swagger Petstore](http://petstore.swagger.io/) to explore the demo here. The Example Value shows a sample of the syntax along with examples. When you click the **Model** link, you see a sample request body parameter and any descriptions of each element.
 
-The Model includes expand/collapse toggles with the values. (The [Petstore demo](http://petstore.swagger.io/) doesn't include many parameter descriptions in the Model, but if you include descriptions, they would appear here in the Model rather than the Example Value.)
+The Model includes expand/collapse toggles with the values. (The [Petstore demo](http://petstore.swagger.io/) doesn't include many parameter descriptions in the Model, but if you include descriptions, they would appear here in the Model rather than in the Example Value.)
 
 {: .tip}
-In a later section, I dive into Swagger. If you want to skip there now, go to [Introduction to Swagger](pubapis_swagger_intro.html).
+We'll get into Swagger in much more detail in [Introduction to the OpenAPI specification and Swagger](pubapis_swagger_intro.html). For now, focus on these core elements of API reference documentation. You will see these same sections appear in the OpenAPI specification.
 
 You can see that there's a lot of variety in documenting JSON and XML in request body parameters. There's no right way to document the information. As always, choose the method that depicts your API's parameters in the clearest, easiest-to-read way.
 

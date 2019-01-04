@@ -27,7 +27,7 @@ The following example shows a sample request from the [Callfire API](https://dev
 
 {% include course_image.html url="https://developers.callfire.com/docs.html#pagination" size="large" filename="callfireapirequestexample" ext_print="png" ext_web="png" alt="Sample request from Callfire" caption="Sample request from Callfire" %}
 
-The design of this API doc site arranges the sample requests and responses in the right column of a three-column layout. The request is formatted in curl, which we [explored earlier](docapis_make_curl_call.html).
+The design of this API doc site arranges the sample requests and responses in the right column of a three-column layout. The request is formatted in curl, which we explored earlier in [Make a curl call](docapis_make_curl_call.html).
 
 ```curl
 curl -u "username:password" -H "Content-Type:application/json" -X GET "https://api.callfire.com/v2/texts?limit=50&offset=200"
@@ -37,7 +37,7 @@ curl is a common format to show requests for several reasons:
 
 * curl is language agnostic, so it's not specific to one particular programming language.
 * curl shows the header information required in the request.
-* curl shows the method used with the request and other parameters.
+* curl shows the method used with the request.
 
 In general, use curl to show your sample request. Here's another example of a curl request in the Parse API:
 
@@ -61,7 +61,7 @@ If you have a lot of parameters, consider including several request examples. In
 https://api.citygridmedia.com/content/places/v2/search/where
 ```
 
-However, there are [literarily 17 possible query string parameters](http://docs.citygridmedia.com/display/citygridv2/Places+API#PlacesAPI-WhereSearchRequest) you can use with this endpoint. As a result, the documentation includes several sample requests show various parameter combinations:
+However, there are [literarily 17 possible query string parameters](http://docs.citygridmedia.com/display/citygridv2/Places+API#PlacesAPI-WhereSearchRequest) you can use with this endpoint. As a result, the documentation includes several sample requests that show various parameter combinations:
 
 <a href="http://docs.citygridmedia.com/display/citygridv2/Places+API" class="noExtIcon"><img src="images/search_usage_examples.png" alt="CityGrid Places API example" /></a>
 
@@ -73,9 +73,9 @@ This example shows how to "Find hotels in Boston, viewing results 1-5 in alphabe
 https://api.citygridmedia.com/content/places/v2/search/where?what=hotels&where=boston,ma&page=1&rpp=5&sort=alpha&publisher=test&format=json
 ```
 
-If you [click the link](https://api.citygridmedia.com/content/places/v2/search/where?what=hotels&where=boston,ma&page=1&rpp=5&sort=alpha&publisher=test&format=json), you can see the response directly. In the [responses topic](docapis_doc_sample_responses_and_schema.html#dynamic_responses), I get into more details about dynamically showing the response when users click the request.
+If you [click the link](https://api.citygridmedia.com/content/places/v2/search/where?what=hotels&where=boston,ma&page=1&rpp=5&sort=alpha&publisher=test&format=json), you can see the response directly. In the [responses topic](docapis_doc_sample_responses_and_schema.html#dynamic_responses), I get into more detail about dynamically showing the response when users click a request.
 
-How many different requests and responses should you show? There's probably no easy answer, but probably no more than a few. You decide what makes sense for your API. Users usually understand the pattern after a few examples.
+How many different requests and responses should you show? There's probably no easy answer, but probably no more than a few. You decide what makes sense for your API. Users will usually understand the pattern after a few examples.
 
 {% include random_ad.html %}
 
@@ -101,9 +101,12 @@ Providing a variety of requests like this, often displayed through [tabs](https:
 
 However, don't feel so intimidated by this smorgasbord of code samples. Some API doc tools (such as [Readme.io](pubapis_headless_cms.html#readmeio) or [SwaggerHub](pubapis_swaggerhub_smartbear.html)) can automatically generate these code samples because the patterns for making REST requests in different programming languages follow a common template.
 
+{: .tip}
+Many times, product managers know which programming languages the target users develop applications with. If you know the target audience's preferred programming language, you can focus your code samples on that language only.
+
 ## Auto-generating code samples
 
-If you're not using an authoring tool that auto-generates code examples, and you want to provide these code snippets, you can auto-generate code samples from both Postman and Paw if desired.
+If you're not using an authoring tool that auto-generates code examples, and you want to provide these code snippets, you can auto-generate code samples from both Postman and Paw, if desired.
 
 [Paw](https://paw.cloud/) (for Mac) lets you export your request into nearly every conceivable language:
 
@@ -111,7 +114,7 @@ If you're not using an authoring tool that auto-generates code examples, and you
 
 After you have a request configured (a process similar to [Postman](docapis_postman.html)), you can generate a code snippet by going to **File > Export Request**.
 
-The Postman app can also generate code snippets in a similar way. I covered this process in an earlier tutorial on [using the JSON from the response payload](docapis_json_console.html). In Postman, after you configure your request, click the **Code** link (which appears below the Save button in the upper-right area).
+The Postman app can also generate code snippets in a similar way. I covered this process in an earlier tutorial on [Inspect the JSON from the response payload](docapis_json_console.html). In Postman, after you configure your request, click the **Code** link (which appears below the Save button in the upper-right area).
 
 <img src="images/postmangeneratecodesnippet.png" class="medium" alt="Generate code snippet" />
 
@@ -130,7 +133,7 @@ A lot of times, developers will create an [SDK (software development kit)](docap
 
 For example, at one company I worked at, we had both a REST API and a JavaScript SDK. Because JavaScript was the target language developers were working in, the company developed a JavaScript SDK to make it easier to work with REST using JavaScript. You could submit REST calls through the JavaScript SDK, passing a number of parameters relevant to web designers.
 
-An SDK is any kind of tooling that makes it easier to work with your API. It's extremely common for a company to provide a language-agnostic REST API, and then to develop an SDK that makes it easy to implement the API in the primary language they expect users to implement the API in. As such, peppering your sample requests with these small request snippets in other languages isn't that important, since the SDK provides an easier implementation. If you have an SDK, you'll want to make more detailed [code samples](docapis_codesamples_bestpractices.html) showing how to use the SDK.
+An SDK is any kind of tooling that makes it easier to work with your API. It's extremely common for a company to provide a language-agnostic REST API and then to develop an SDK that makes it easy to implement the API in the primary language they expect users to implement the API in. As such, peppering your sample requests with these small request snippets in other languages isn't that important, since the SDK provides an easier implementation. If you have an SDK, you'll want to make more detailed [code samples](docapis_codesamples_bestpractices.html) showing how to use the SDK.
 
 ## API explorers provide interactivity with your own data
 
@@ -152,13 +155,13 @@ However, if you don't have the right data in your system, using your own API key
 
 ## API Explorers can be dangerous in the hands of users
 
-Although interactivity is powerful, API Explorers can be a dangerous addition to your site. What if a novice user is trying out a DELETE method accidentally removes data? How do you later remove the test data added by POST or PUT methods?
+Although interactivity is powerful, API Explorers can be a dangerous addition to your site. What if a novice user who is trying out a DELETE method accidentally removes data? How do you later remove the test data added by POST or PUT methods?
 
 It's one thing to allow GET methods, but if you include other methods, users could inadvertently corrupt their data. In Sendgrid's API, they include a warning message to users before testing out calls with their API Explorer:
 
 <a href="https://sendgrid.com/docs/API_Reference/Web_API/blocks.html" class="noExtIcon"><img src="images/sendgridwarningmessage.png" alt="SendGrid API Explorer warning message" /></a>
 
-Foursquare's API docs used to have a built-in API explorer in the previous version of their docs (shown below), but they have since removed it. I'm not sure why (maybe they ran into the dangers just described?).
+Foursquare's API docs used to have a built-in API explorer in the previous version of their docs (shown below), but they have since removed it. I'm not sure why &mdash; maybe they ran into some of these issues.
 
 <a href="https://developer.foursquare.com/docs" class="noExtIcon"><img src="images/foursquareapiexplorer.png" alt="Foursquare's API Explorer" /></a>
 

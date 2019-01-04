@@ -39,8 +39,11 @@ The ideal open-source API project should meet the following criteria. The projec
 
 {% include content/activities/find_open_source_project.md %}
 
-{: .note}
+## Recognizing the type of API used in the project
+
 When you look for API projects, recognize that there are many different types of APIs. Many of the APIs you run across might be [native library APIs](nativelibraryapis_overview.html), which don't use web protocols to make requests and responses (as REST APIs do) but rather involve incorporating a language-specific library into the project. If the API seems to focus on a particular language, and the API documentation looks auto-generated, it's probably a native-library API.
+
+On the other hand, if the project's documentation contains these core reference sections for their endpoints, it's probably a REST API.
 
 ## Contributing will require Git skills
 
@@ -66,7 +69,7 @@ So yeah, as a technical writer, you may not be fixing bugs in the code or develo
 
 I know the value of the doc role intimately from my own experience in contributing to open source doc projects. At one point, before focusing my energy on this API doc course, I contributed several tutorials to the [Jekyll docs](https://jekyllrb.com/docs/home/). I added instructions that included a lot of new content and even added a [Tutorials section](https://jekyllrb.com/tutorials/home/).
 
-I thought other developers would continue creating new tutorials in a steady stream, but they didn't. Developers tend to add little snippets of documentation to pages &mdash; a sentence here, a paragraph there, an update here, a correction there. You will rarely find someone who writes a substantial new article or tutorial from scratch. When there's a new release, there often aren't release notes &mdash; there are merely links to (cryptic) GitHub issue logs.
+I thought other developers would continue creating new tutorials in a steady stream, but they didn't. Developers tend to add little snippets of documentation to pages &mdash; a sentence here, a paragraph there, an update here, a correction there. You will rarely find someone who writes a new article or tutorial from scratch. When there's a new release, there often aren't release notes &mdash; there are merely links to (cryptic) GitHub issue logs.
 
 As such, you should feel confident about the value you can bring to an open-source project. You're creating much-needed documentation for the project.
 

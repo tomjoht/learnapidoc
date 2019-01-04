@@ -2,7 +2,7 @@
 
 In this activity, you'll review API reference documentation and identify the common elements. To evaluate the API reference docs:
 
-1.  From this [list of about 100 API doc sites here](pubapis_apilist.html#list_api_doc_sites), identify three API documentation sites.
+1.  Either from the open-source project you identified in the previous activity ([Find an Open Source Project](docapis_find_open_source_project.html)), or from this [list of about 100 API doc sites here](pubapis_apilist.html#list_api_doc_sites), identify one or more API documentation sites.
 2.  In each of the doc sites, look for the API reference documentation section (the list of endpoints).
 3.  In the reference documentation, identify each of the following sections:
 

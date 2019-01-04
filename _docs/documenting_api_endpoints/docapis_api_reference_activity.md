@@ -20,7 +20,7 @@ After completing the [API reference tutorial](docapis_api_reference_tutorial_ove
 
 This part of the activity might be challenging, but here is where you'll start building some examples for your portfolio.
 
-1.  Identify one of the API reference topics that needs help. (If the API has a new reference endpoint to document, focus on this endpoint.)
+1.  In the same project as before, identify one of the API reference topics that needs help. (If the API has a new reference endpoint to document, focus on this endpoint.)
 2.  Edit the topic to improve it. (If it's a new endpoint, write the documentation for it.)
 6.  Create a [pull request](pubapis_github_pull_requests.html) and contribute your edits to the project.
 
