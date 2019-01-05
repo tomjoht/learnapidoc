@@ -26,11 +26,11 @@ There are other Swagger/OpenAPI tutorials online, but make sure you follow tutor
 
 ## How my OpenAPI/Swagger tutorial is different
 
-You can find many Swagger tutorials online. What makes mine different? Besides the end-to-end walkthrough using the OpenAPI 3.0 (rather than 2.0) version of the spec, and using an actual API for context, I also show how OpenAPI fields map to the Swagger UI display. More specifically, I demonstrate how and where each of the OpenAPI fields gets displayed in Swagger UI.
+You can find many Swagger tutorials online. What makes mine different? Besides the end-to-end walkthrough using the OpenAPI 3.0 (rather than 2.0) version of the spec, and using an actual API for context, I also show how OpenAPI fields map to the Swagger UI display. Specifically, I demonstrate how and where each of the OpenAPI fields gets displayed in Swagger UI.
 
-Granted, many display frameworks can parse and display information in an OpenAPI specification document, but [Swagger UI](https://github.com/swagger-api/swagger-ui) is one of the most popular ones. Swagger UI is sponsored by SmartBear, the same company that is heavily invested in the [OpenAPI initiative](https://www.openapis.org/) and which develops [Swaggerhub](pubapis_swaggerhub_smartbear.html). Their tooling is almost always in sync with the latest spec features. Swagger UI an actively developed and managed open-source project.
+Granted, many other display frameworks can parse and display information in an OpenAPI specification document, but [Swagger UI](https://github.com/swagger-api/swagger-ui) is one of the most popular. Swagger UI is sponsored by SmartBear, the same company that is heavily invested in the [OpenAPI initiative](https://www.openapis.org/) and which develops [Swaggerhub](pubapis_swaggerhub_smartbear.html). Their tooling is almost always in sync with the latest spec features. Swagger UI an actively developed and managed open-source project.
 
-By showing you how the fields in the spec appear in the Swagger UI display, I hope the specification objects and properties will take on more relevance and meaning. Just keep in mind that Swagger UI's display is *just one possibility* for how the spec information might be rendered.
+By showing you how the fields in the spec appear in the Swagger UI display, I hope the specification objects and properties will take on more relevance and meaning. Just keep in mind that Swagger UI's display is *just one possibility* for how the spec information might be rendered visually.
 
 ## Terminology for Swagger and OpenAPI
 
@@ -40,15 +40,15 @@ Before continuing, I want to clarify a few terms for those who may be unfamiliar
 * [Smartbear](https://smartbear.com/) is the company that maintains and develops the open source Swagger tooling (Swagger Editor, Swagger UI, Swagger Codegen, and others). They do not own the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification/), as the Linux Foundation drives this [initiative](https://www.openapis.org/). The OpenAPI spec's development is driven by [many companies and organizations](https://www.openapis.org/membership/members).
 * The "OpenAPI specification document" or "OpenAPI document" is the Swagger YAML file that you create to describe your API.
 
-For other terms, see the [Glossary](api-glossary.html).
+For other terms, see the [API Glossary](api-glossary.html).
 
 Let's clear up some additional descriptors around JSON and YAML as well. The specification document in my OpenAPI tutorial uses YAML (which I introduced briefly [here](pubapis_yaml.html)), but it could also be expressed in JSON. JSON is a subset of YAML, so the two are practically interchangeable formats (for the data structures we're using). Ultimately, though, the OpenAPI spec is a JSON object. The specification notes:
 
 >An OpenAPI document that conforms to the OpenAPI Specification is itself a JSON object, which may be represented either in JSON or YAML format. (See [Format](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#format))
 
-In other words, the OpenAPI document you create is a JSON object, but you have the option of expressing the JSON using either JSON or YAML syntax. YAML is more readable and is a more common format (see API Handyman's take on [JSON vs YAML](https://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-1-introduction/#json-vs-yaml) for more discussion), so I've used YAML exclusively here. You will see that the specification documentation always shows both the JSON and YAML syntax when showing specification formats. (For a more detailed comparison of YAML versus JSON, see "Relation to JSON" in the [YAML spec](http://www.yaml.org/spec/1.2/spec.html).)
+In other words, the OpenAPI document you create is a JSON object, but you have the option of expressing the JSON using either JSON or YAML syntax. YAML is more readable and is a more common format (see API Handyman's take on [JSON vs YAML](https://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-1-introduction/#json-vs-yaml) for more discussion), so I've used YAML exclusively here. You will see that the OpenAPI specification documentation on GitHub always shows both the JSON and YAML syntax when showing specification formats. (For a more detailed comparison of YAML versus JSON, see "Relation to JSON" in the [YAML spec](http://www.yaml.org/spec/1.2/spec.html).)
 
-YAML refers to data structures with 3 main terms: "mappings (hashes/dictionaries), sequences (arrays/lists) and scalars (strings/numbers)" (see "Introduction" in [YAML 1.2](http://www.yaml.org/spec/1.2/spec.html)). However, because the OpenAPI spec is a JSON object, it uses JSON terminology &mdash; such as "objects," "arrays," "properties," "fields," and so forth. As such, I'll be showing YAML-formatted content but describing it using JSON terminology.
+YAML refers to data structures with three main terms: "mappings (hashes/dictionaries), sequences (arrays/lists) and scalars (strings/numbers)" (see "Introduction" in [YAML 1.2](http://www.yaml.org/spec/1.2/spec.html)). However, because the OpenAPI spec is a JSON object, it uses JSON terminology &mdash; such as "objects," "arrays," "properties," "fields," and so forth. As such, I'll be showing YAML-formatted content but describing it using JSON terminology.
 
 So that we're on the same page with terms, let's briefly review.
 
@@ -73,7 +73,7 @@ Here's what this looks like in JSON:
 }
 ```
 
-The spec often uses the term "field" in the titles and table column names when listing the properties for a specific object. (Further, it identifies two types of fields &mdash; "fixed" fields are declared, unique names while "patterned" fields are regex expressions.) *Fields* and *properties* are used synonymously in the OpenAPI spec.
+The specification often uses the term "field" in the titles and table column names when listing the properties for a specific object. (Further, it identifies two types of fields &mdash; "fixed" fields are declared, unique names while "patterned" fields are regex expressions.) *Fields* and *properties* are used synonymously in the OpenAPI spec.
 
 In the following code, `countries` contains an object called `united_states`, which contains an object called `california`, which contains several properties with string values:
 
@@ -95,7 +95,7 @@ demographics:
  - rivers
 ```
 
-Here's what that looks like in JSON:
+Here's what the above code looks like in JSON:
 
 ```json
 {
@@ -133,13 +133,13 @@ You don't have to create the specification document in this order; I've merely c
 In the following sections, we'll proceed through each of these objects one by one and document the [OpenWeatherMap current API](https://openweathermap.org/current). Tackling each root-level object individually (rather than documenting everything at once) helps reduce the complexity of the spec.
 
 {: .note}
-`components` is more of a storage object for schemas defined in other objects, but to avoid introducing too much at once, I'll wait until the [`components` tutorial](pubapis_openapi_step5_components_object.html) to fully explain how to reference a schema in one object and add a reference pointer to the full definition.
+`components` is more of a storage object for schemas defined in other objects, but to avoid introducing too much at once, I'll wait until the [`components` tutorial](pubapis_openapi_step5_components_object.html) to fully explain how to reference a schema in one object (using `$ref`) that points to the full definition in `components`.
 
-With each step, you'll paste the object you're working on into the Swagger Editor. The right pane of the Swagger Editor will show the Swagger UI display. (Remember that the specification document alone does nothing with your content. Other tools are required to read and display the spec document, or to generate client SDKs from it.)
+With each step, you'll paste the object you're working on into the Swagger Editor. The right pane of the Swagger Editor will show the Swagger UI display. (Remember that the specification document alone does nothing with your content. Other tools are required to read and display the spec document.)
 
-Later, when I talk more about [publishing](publishingapis.html), I'll explain how to configure Swagger UI with your specification document as a standalone output. For our sample OpenWeatherMap API, you can see OpenAPI spec rendered with Swagger UI in the following links:
+Later, when I talk more about publishing, I'll explain how to configure Swagger UI with your specification document as a standalone output. For our sample OpenWeatherMap API, you can see the OpenAPI spec rendered by the Swagger UI at the following links:
 
-* [Swagger UI with OpenWeatherMap API](https://idratherbewriting.com/learnapidoc/assets/files/swagger/)
+* [Standalone Swagger UI with OpenWeatherMap API](https://idratherbewriting.com/learnapidoc/assets/files/swagger/)
 * [Embedded Swagger with OpenWeatherMap API](pubapis_swagger_demo.html)
 
 ## Migrating from OpenAPI 2.0 to 3.0

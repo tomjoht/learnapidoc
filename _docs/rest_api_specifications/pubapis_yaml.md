@@ -8,7 +8,7 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-Before we dive into the steps of the [OpenAPI Tutorial](pubapis_openapi_tutorial_overview.html), it will help to have a better grounding in YAML, since this is the most common syntax for the specification document. (You can also use [JSON](docapis_analyze_json.html), but the prevailing trend with the OpenAPI document format is YAML.)
+Before we dive into the steps of the [OpenAPI Tutorial](pubapis_openapi_tutorial_overview.html), it will help to have a better grounding in YAML, since this is the most common syntax for the OpenAPI specification document. (You can also use [JSON](docapis_analyze_json.html), but the prevailing trend with the OpenAPI document format is YAML.)
 
 YAML stands for "YAML Ain't Markup Language." This means that the YAML syntax doesn't have markup tags such as `<` or `>`. Instead, it uses colons to denote an object's properties and hyphens to denote an array.
 
@@ -43,7 +43,7 @@ level1:
     level3:
 ```
 
-Each new level is an object. In this example, the level1 object contains the level2 object, which contains the level3 object.
+Each new level is an object. In this example, the `level1` object contains the `level2` object, which contains the `level3` object.
 
 {: .note}
 With YAML, you generally don't use tabs (since tab spacing is non-standard). Instead, you space twice.
@@ -66,7 +66,7 @@ The values for each key can optionally be enclosed in quotation marks. If your v
 
 ## Comparing JSON to YAML
 
-Earlier in the course, we looked at various [JSON structures involving objects and arrays](docapis_analyze_json.html). Here let's look at the equivalent YAML syntax for each of these same JSON objects.
+Earlier in the course, we looked at various [JSON structures involving objects and arrays](docapis_analyze_json.html). So let's look at the equivalent YAML syntax for each of these same JSON objects.
 
 {: .tip}
 You can use [Unserialize.me](http://www.unserialize.me/) to make the conversion from JSON to YAML or YAML to JSON.
@@ -80,7 +80,7 @@ Here are some key-value pairs in JSON:
 }
 ```
 
-Here's the same thing in YAML syntax:
+Here's the same structure expressed in YAML syntax:
 
 ```yaml
 key1: value1
@@ -131,7 +131,7 @@ Here's an array containing objects in JSON:
 [  
    {  
       "name":"Tom",
-      "age":42
+      "age":43
    },
    {  
       "name":"Shannon",
@@ -155,7 +155,7 @@ Hopefully, by seeing the syntax side by side, it will begin to make more sense. 
 
 JavaScript uses the same dot notation techniques to access the values in YAML as it does in JSON. (They're pretty much interchangeable formats.) The benefit to using YAML, however, is that it's more readable than JSON.
 
-However, YAML is more tricky sometimes because it depends on getting the spacing just right. Sometimes that spacing is hard to see (especially with a complex structure), and that's where JSON (while maybe more cumbersome) is perhaps easier to troubleshoot.
+However, YAML might be more tricky because it depends on getting the spacing just right. Sometimes that spacing is hard to see (especially with a complex structure), and that's where JSON (while maybe more cumbersome) is perhaps easier to troubleshoot.
 
 ## Some features of YAML not present in JSON {#yaml_specific_features}
 

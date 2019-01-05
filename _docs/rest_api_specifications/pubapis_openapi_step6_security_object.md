@@ -36,7 +36,7 @@ In this step of the OpenAPI tutorial, we'll use the API key approach, since this
 
 ## API key authorization
 
-The sample OpenWeatherMap API we're using in this course uses an API key passed in the URL's query string (rather than the header). If you submit a request without the API key in the query string (or without a valid API key), the server denies the request. For details on the OpenWeatherMap's authorization model, see [How to start](https://openweathermap.org/appid#use).
+The sample OpenWeatherMap API we're using in this course uses an API key passed in the URL's query string (rather than in the header). If you submit a request without the API key in the query string (or without a valid API key), the server denies the request. For details on the OpenWeatherMap's authorization model, see [How to start](https://openweathermap.org/appid#use).
 
 ## Security object
 
@@ -49,7 +49,7 @@ security:
 
 `app_id` is the arbitrary name we gave to this security scheme in our `securitySchemes` object. We could have named it anything. We'll define `app_id` in `components`.
 
-All paths will use the `app_id` security method by default unless it's overridden by a value at the [`path` object level](pubapis_openapi_step4_paths_object.html). For example, at the path level we could overwrite the global security method as follows:
+All paths will use the `app_id` security method by default unless it's overridden by a value at the [`path` object level](pubapis_openapi_step4_paths_object.html). For example, at the path level, we could overwrite the global security method as follows:
 
 ```yaml
 /current:
@@ -79,8 +79,8 @@ components:
 
 Properties you can use for each item in the `securitySchemes` object include the following:
 
-* `type`: The type of authorization &mdash; `apiKey`, `http`, `oauth2`, or `openIdConnect`.
-* `description`: A description of your security method. In Swagger UI, this description appears in the Authorization modal (see screenshot below). CommonMark Markdown is allowed.
+* `type`: The authorization protocol &mdash; `apiKey`, `http`, `oauth2`, or `openIdConnect`.
+* `description`: A description of your security method. In Swagger UI, this description appears in the Authorization modal (see the screenshot below). CommonMark Markdown is allowed.
 * `name`: The name of the header value submitted in the request. Used only for `apiKey` type security.
 * `in`: Specifies where the security key is applied. Options are `query`, `header` or `cookie`. Used only for `apiKey` type security.
 * `scheme`. Used with `http` type authorization.
@@ -120,7 +120,7 @@ Then check out the Swagger UI display. You'll see an "Authorize" button appear.
 
 {% include course_image.html filename="step6swaggeruiprogress" ext_print="png" ext_web="png" alt="Adding security information into the spec" caption="Adding security information into the spec" %}
 
-When you click the Authorization button, the `description` and other security details appear:
+When you click Authorize, the `description` and other security details appear:
 
 <a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/openapitutorial_securityauth.png" class="medium"/></a>
 
@@ -128,11 +128,11 @@ After users enter an API key and click **Authorize**, the authorization method i
 
 ## <i class="fa fa-user-circle"></i> Test out how authorization works
 
-Now that we've added authorization, let's try making an actual API request. In the Swagger Editor (the right pane), click the **Authorize** button, paste the sample API key shown in the description (or your own [OpenWeatherMap API key](docapis_get_auth_keys.html#openweathermap_apikey)) into the **Value** field and click **Authorize**. Then click **Close** to close the authorization modal.
+Now that we've added authorization, let's try making an actual API request. In the Swagger Editor (the right pane), click the **Authorize** button, paste the sample API key shown in the description into the **Value** field (or use your own [OpenWeatherMap API key](docapis_get_auth_keys.html#openweathermap_apikey)), and click **Authorize**. Then click **Close** to close the authorization modal.
 
-Then in the Current Weather Data section, expand the **GET weather** endpoint and click **Try it out**. In the **zip** field, enter your zip code and country abbreviation (such as `95050,us`), and then click **Execute**.
+In the Current Weather Data section, expand the **GET weather** endpoint and click **Try it out**. In the **zip** field, enter your zip code and country abbreviation (such as `95050,us`), and then click **Execute**.
 
-When you execute the request, Swagger UI shows you the [curl request](docapis_make_curl_call.html) that is submitted. For example, after executing a weather request, the curl is as follows:
+When you execute the request, Swagger UI shows you the [curl request](docapis_make_curl_call.html) submitted. For example, after executing a weather request, the curl is as follows:
 
 ```bash
 curl -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&units=imperial&lang=en&mode=json&appid=fd4698c940c6d1da602a70ac34f0b147" -H "accept: application/json"

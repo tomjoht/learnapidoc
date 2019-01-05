@@ -4,7 +4,7 @@ Let's get some hands-on experience with Swagger UI using the Petstore demo.
 
 1.  Go to the [Swagger Pet Store Demo](https://petstore.swagger.io/).
 
-    As with most Swagger-based outputs, Swagger UI provides a "Try it out" button. To make it work, first, you would normally authorize Swagger by clicking **Authorize** and completing the right information required in the Authorization modal. If you want, in the Authorization modal, type any number in the `api_key` field and click **Authorize**. However, the Petstore authorization modal is just for demo purposes. There isn't any real code authorizing those requests, so you can close the Authorization modal.
+    As with most Swagger-based outputs, Swagger UI provides a "Try it out" button. To make it work, first you would normally authorize Swagger by clicking **Authorize** and completing the right information required in the Authorization modal. If you want, in the Authorization modal, type any number in the `api_key` field and click **Authorize**. However, the Petstore authorization modal is just for demo purposes. There isn't any real code authorizing those requests, so you can close the Authorization modal.
 
     {% include course_image.html url="http://petstore.swagger.io/" size="medium" filename="swaggerui_authorize" ext_print="png" ext_web="png" alt="Authorization modal in Swagger UI" caption="Authorization modal in Swagger UI" %}
 

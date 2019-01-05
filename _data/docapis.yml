@@ -73,7 +73,7 @@ folders:
   - title: Dive into dot notation
     jurl: /docapis_diving_into_dot_notation.html
 
-- title: "III: API endpoints"
+- title: "III: Documenting API endpoints"
   jurl: /docendpoints.html
   description: "Reference documentation for API endpoints consists of five general sections: resource descriptions, endpoints and methods, parameters, sample requests, and sample responses and schemas. To document the reference endpoints of an API, provide detailed information for each of these sections."
   folderitems:
@@ -110,7 +110,7 @@ folders:
 
 - title: "IV: OpenAPI spec and Swagger"
   jurl: /restapispecifications.html
-  description: "The OpenAPI specification provides a formal way of describing your REST API and includes all the reference sections mentioned in Documenting API endpoints. Display frameworks such as Swagger UI can parse the OpenAPI specification and generate interactive documentation that lets users try out endpoints while learning about the API."
+  description: "The OpenAPI specification provides a formal way of describing your REST API and includes all the reference sections mentioned in the previous section, Documenting API endpoints. Display frameworks such as Swagger UI can parse the OpenAPI specification and generate interactive documentation that lets users try out endpoints while learning about the API."
   folderitems:
 
   - title: Overview of REST API specification formats

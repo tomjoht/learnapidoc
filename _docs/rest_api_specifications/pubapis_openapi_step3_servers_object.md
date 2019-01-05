@@ -20,7 +20,7 @@ In the [`servers` object](https://github.com/OAI/OpenAPI-Specification/blob/mast
 {:toc}
 {% endif %}
 
-## Sample servers object
+## Sample servers object {#sample_servers_object}
 
 The following is a sample `servers` object:
 
@@ -61,6 +61,6 @@ See ["Overriding Servers"](https://swagger.io/docs/specification/api-host-and-ba
 
 ## <i class="fa fa-user-circle"></i> View the Appearance in Swagger UI
 
-Paste the `servers` object (the first code sample above showing just one `url`) into your Swagger Editor, adding to the code you already have there. Swagger UI will look as follows.
+Paste the `servers` object (the [first code sample above](#sample_servers_object) showing just one `url`) into your Swagger Editor, adding to the code you already have there. Swagger UI will look as follows.
 
-{% include course_image.html filename="step3swaggeruiprogress" ext_print="png" ext_web="png" alt="Progress in Swagger UI with servers object" caption="Progress in Swagger UI with servers object" %}
+{% include course_image.html filename="step3swaggeruiprogress" ext_print="png" ext_web="png" alt="Swagger UI with the servers object" caption="Swagger UI with the servers object" %}

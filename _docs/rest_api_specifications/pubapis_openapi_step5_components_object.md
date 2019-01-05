@@ -159,7 +159,7 @@ components:
         default: "json"
 ```
 
-Replace the existing `paths` object in your code in Swagger Editor with the above code sample, and include the new `components` object, and observe that the rendered display still looks the same.
+Replace the existing `paths` object in the Swagger Editor with the above code sample, include the new `components` object, and observe that the rendered display still looks the same.
 
 ## Re-using response objects {#reusing_objects}
 
@@ -167,7 +167,7 @@ In [Step 4: The paths object](pubapis_openapi_step4_paths_object.html), when we 
 
 {% include random_ad.html %}
 
-Let's dive deep into how to use the schema properties to document the `responses` object. We will also store this content in `components` so that it can be re-used in other parts of the specification document. If you recall in the previous step ([OpenAPI tutorial Step 4: The paths object](pubapis_openapi_step4_paths_object.html), the `responses` object for the `weather` endpoint looked like this:
+Let's dive deeply into how to use the schema properties to document the `responses` object. We will also store this content in `components` so that it can be re-used in other parts of the specification document. If you recall in the previous step ([OpenAPI tutorial Step 4: The paths object](pubapis_openapi_step4_paths_object.html)), the `responses` object for the `weather` endpoint looked like this:
 
 ```yaml
 paths:
@@ -240,7 +240,7 @@ paths:
 
 Then in `components/schemas`, we'll define the `200` schema.
 
-Before we describe the response in the `components` object, it might be helpful to review what the `weather` response from the OpenWeatherMap API looks like. The response contains multiple nested objects at various levels.
+Before we describe the response in the `components` object, it might be helpful to review what the `weather` response from the OpenWeatherMap API looks like. The JSON response contains multiple nested objects at various levels.
 
 ```json
 {
@@ -296,7 +296,7 @@ Before we describe the response in the `components` object, it might be helpful 
 
 There are a couple of ways to go about describing this response. You could create a long description that contains all the hierarchy reflected. One challenge with this approach, however, is that it's difficult to keep all the levels straight. With so many nested objects, it's dizzying and confusing. Additionally, it's easy to make mistakes. Worst of all, you can't re-use the individual objects. This undercuts one of the main reasons for storing this object in `components` in the first place.
 
-Another approach is to make each object its own entity in the `components`. Whenever an object contains an object, add a `$ref` value that points to the new object. This way objects remain shallow and you won't get lost in a sea of confusing sublevels. (If there's no sub-object, just provide the description directly, without using `$ref`.
+Another approach is to make each object its own entity in the `components`. Whenever an object contains an object, add a `$ref` value that points to the new object. This way, the objects remain shallow (rather than having multiple levels of nesting), and you won't get lost in a sea of confusing sublevels. (If there's no sub-object, just provide the description directly, without using `$ref`.
 
 Here's the description of the `200` response for the `weather` endpoint. I included the `paths` tag to maintain some context:
 
@@ -533,14 +533,14 @@ components:
           example: 1435650870
 ```
 
-I'll explain a bit more in the next sections how to describe the response. In looking at the above code, you may have noticed that not only can you use `$ref` properties in other parts of your spec, you can use it within `components` too.
+I'll explain a bit more in the next sections how to describe the response. In looking at the above code, you may have noticed that not only can you use `$ref` properties in other parts of your spec but also within `components` too.
 
 {: .tip}
-Notice how the schema definition includes an `example` property for element? Swagger UI will take this `example` and use it to dynamically build a full code sample in the Responses section in the Swagger UI output. Thus, you don't need big chunks of code for the sample responses in your spec. Instead, these sample responses get built automatically from the schema. It's one of the neat things about Swagger UI. This way, your schema documentation and example remain consistent.
+Notice how the schema definition includes an `example` property for each element? Swagger UI will take this `example` and use it to dynamically build a full code sample in the Responses section in the Swagger UI output. Thus, you don't need big chunks of code for the sample responses in your spec. Instead, these sample responses get built automatically from the schema. It's one of the neat things about Swagger UI. This way, your schema documentation and sample response remain consistent.
 
 ## Describing a schema
 
-For most of the sections in `components`, you follow the same object descriptions as detailed in the rest of the spec. However, when describing a `schema` object, you use standard keywords and terms from the [JSON Schema](http://json-schema.org/), specifically the [JSON Schema Specification Wright Draft 00](https://tools.ietf.org/html/draft-wright-json-schema-00).
+For most of the sections in `components`, you follow the same object descriptions as detailed in the rest of the spec. However, when describing a `schema` object, you use standard keywords and terms from the [JSON Schema](http://json-schema.org/), specifically from the [JSON Schema Specification Wright Draft 00](https://tools.ietf.org/html/draft-wright-json-schema-00).
 
 In other words, you aren't merely using terms defined by the OpenAPI spec to describe the models for your JSON. As you describe your JSON models (the data structures for input and output objects), the terminology in the OpenAPI spec feeds into the larger JSON definitions and description language for modeling JSON. The OpenAPI's usage of the JSON Schema is just a subset of the full JSON Schema.
 
@@ -576,7 +576,7 @@ To describe your JSON objects, you might use the following identifiers:
 * `format`
 * `default`
 
-A number of [data types](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#data-types) are also available:
+These [data types](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#data-types) are also available:
 
 * `integer`
 * `long`
@@ -617,11 +617,11 @@ The only catch is that Stoplight uses OpenAPI 2.0, not 3.0. You might need to us
 
 ## Using GUI editors to work with the specification code
 
-At this point, you're probably thinking how impractical and error-prone it's going to be working directly in the YAML code like this. For this reason, several companies have developed GUI editors to make it easier to work with the specification code. In particular, check out [Stoplight](pubapis_stoplight.html), which provides an editor that lets you toggle between code and a GUI display. Smartbear also offers [SwaggerHub](pubapis_swaggerhub_smartbear.html), which doesn't necessarily provide a GUI but which gives you inline commenting and versioning tools. (Note that both Stoplight and Smartbear are sponsors of the site, but I would mention them here anyway.)
+At this point, you're probably thinking how impractical and error-prone it's going to be as you work directly in the YAML code like this. For this reason, several companies have developed GUI editors to make it easier to work with the specification code. In particular, check out [Stoplight](pubapis_stoplight.html), which provides an editor that lets you toggle between code and a GUI display. Smartbear also offers [SwaggerHub](pubapis_swaggerhub_smartbear.html), which doesn't necessarily provide a GUI but which gives you inline commenting and versioning tools. (Note that both Stoplight and Smartbear are sponsors of the site, but I would mention them here anyway.)
 
 ## <i class="fa fa-user-circle"></i> View the Appearance in Swagger UI
 
-Copy the following code sample and paste it into the Swagger Editor below your `openapi`, `info` and `servers` objects:
+Copy the following code and paste it into the Swagger Editor below your `openapi`, `info` and `servers` objects:
 
 ```yaml
 paths:
@@ -923,7 +923,7 @@ You should see the following populate in the Swagger UI display:
 
 {% include course_image.html filename="step5_bswaggeruiprogress" ext_print="png" ext_web="png" alt="Responses object defined in components" caption="Responses object defined in components" %}
 
-In the Response section, observe how the Example Value code has been dynamically pulled together from the `example` values in the schema to show a sample response.
+In the Response section, observe how the Example Value code has been dynamically built from the `example` values in the schema to show a sample response.
 
 Also, click the **Model** link to see how the descriptions of each element appear in an expandable/collapsible way:
 
@@ -931,13 +931,15 @@ Also, click the **Model** link to see how the descriptions of each element appea
 
 ## The Models section -- why it exists, how to hide it
 
-You'll also notice a "Models" section at the end. By default, Swagger UI displays each object in `components` in a section called "Models" at the end of your Swagger UI display. If you consolidate all schemas into a single object, without using the `$ref` property to point to new objects, you will see just one object in Models. If you split out the objects, then you see each object listed separately, including the object that contains all the references.
-
-Because I want to re-use objects, I'm going to define each object in `components` separately. As a result, the Models section looks like this:
+You'll also notice another "Models" section below all the other paths:
 
 <a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="images/swaggerui_models_broken_out.png" class="medium" /></a>
 
-The Models section is now in the latest version of Swagger UI. I'm not really sure why the Models section appears at all, actually. Apparently, it was added by popular request because the online Swagger Editor showed the display, and many users asked for it to be incorporated into Swagger UI.
+By default, Swagger UI displays each object in `components` in a section called "Models" at the end of your Swagger UI display. If you consolidate all schemas into a single object, without using the `$ref` property to point to new objects, you will see just one object in Models. If you split out the objects, then you see each object listed separately, including the object that contains all the references.
+
+Because I want to re-use objects, I'm going to define each object in `components` separately. As a result, the Models section looks like this:
+
+Why is there a Models section here? Apparently, it was added by popular request because the online Swagger Editor showed the display, and many users asked for it to be incorporated into Swagger UI.
 
 You don't need this Models section in Swagger UI because both the request and response sections of Swagger UI provide a "Model" link that lets the user toggle to this view.
 
@@ -945,4 +947,4 @@ To hide the Models section, you can add the parameter `defaultModelsExpandDepth:
 
 ## Security definitions
 
-The `components` object also contains a [`securitySchemes` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#securitySchemeObject) that defines the authorization method used with each `path`. Rather than dive into the security configuration details here, I explore security in [step 6](pubapis_openapi_step6_security_object.html).
+The `components` object also contains a [`securitySchemes` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#securitySchemeObject) that defines the authorization method used with each `path`. Rather than dive into the security configuration details here, I explore security in [Step 6: The security object](pubapis_openapi_step6_security_object.html).

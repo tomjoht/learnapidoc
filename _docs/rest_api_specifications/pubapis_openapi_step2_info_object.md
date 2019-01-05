@@ -20,7 +20,7 @@ The [info object](https://github.com/OAI/OpenAPI-Specification/blob/master/versi
 {:toc}
 {% endif %}
 
-## Sample info object
+## Sample info object {#sample_info_object}
 
 Here's an example of the `info` object and its properties:
 
@@ -51,7 +51,7 @@ As you write content in `description` properties, note that colons are problemat
 
 ## View the Appearance in Swagger UI
 
-At this point, go ahead and paste this above code along with the `openapi` object from the previous step into the [Swagger Editor](https://editor.swagger.io/). You'll see some rendering errors (because the specification document doesn't yet have any `path` objects), but the content will still appear. (Just hide the errors section at the top for now).
+At this point, go ahead and paste this [above code](#sample_info_object) along with the `openapi` object from the previous step into the [Swagger Editor](https://editor.swagger.io/). You'll see some rendering errors (because the specification document doesn't yet have any `path` objects), but the content will still appear. (Just hide the errors section at the top for now).
 
 In the Swagger UI display, the `info` object's information appears at the top:
 

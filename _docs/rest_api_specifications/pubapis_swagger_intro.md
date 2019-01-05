@@ -107,7 +107,7 @@ If you go this route, make sure you get access to the source code to make edits 
 
 ## Another approach: spec-first development
 
-Although you can generate your specification document from code annotations, many say that auto-generation is *not* the best approach. In [Undisturbed REST: A Guide to Designing the Perfect API](https://www.mulesoft.com/lp/ebook/api/restbook), [Michael Stowe](https://twitter.com/mikegstowe) recommends that teams implement the specification by hand and then treat the specification document as a contract that developers use when doing the actual coding. This approach is often referred to as "spec-first development."
+Although you can generate your specification document from code annotations, many say that auto-generation is *not* the best approach. In [*Undisturbed REST: A Guide to Designing the Perfect API*](https://www.mulesoft.com/lp/ebook/api/restbook), [Michael Stowe](https://twitter.com/mikegstowe) recommends that teams implement the specification by hand and then treat the specification document as a contract that developers use when doing the actual coding. This approach is often referred to as "spec-first development."
 
 {% include course_image.html url="https://www.amazon.com/gp/product/B0125TOLNU?keywords=undisturbed%20rest%20michael%20stowe&qid=1444665700" size="large" filename="spec_driven_development" ext_print="jpg" ext_web="jpg" alt="Spec-first development" caption="Spec-first development is a philosophy about how to develop APIs more efficiently. If you follow a spec-first philosophy, you write the spec first and use it as a contract that developers code to." %}
 
@@ -175,7 +175,7 @@ Despite Swagger's interactive power to appeal to the "let me try" desires of use
 
 ## Some consolations
 
-Despite the shortcomings of OpenAPI, I still highly recommend it for describing your API. OpenAPI is quickly becoming a way for more and more tools (from [Postman Run buttons](docapis_doc_getting_started_section.html#runinpostmanbutton) to nearly every API platform) to quickly ingest the information about your API and make it discoverable and interactive with robust, instructive tooling. Through your OpenAPI specification, you can port your API onto many platforms and systems as well as automatically set up unit testing and prototyping.
+Despite the shortcomings of the OpenAPI specification, I still highly recommend it for describing your API. OpenAPI is quickly becoming a way for more and more tools (from [Postman Run buttons](docapis_doc_getting_started_section.html#runinpostmanbutton) to nearly every API platform) to quickly ingest the information about your API and make it discoverable and interactive with robust, instructive tooling. Through your OpenAPI specification, you can port your API onto many platforms and systems as well as automatically set up unit testing and prototyping.
 
 Swagger UI definitely provides a nice visual shape for an API. You can easily see all the endpoints and their parameters (like a [quick-reference guide](docapis_doc_quick_reference.html)). Based on this framework, you can help users grasp the basics of your API.
 
