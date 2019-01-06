@@ -21,7 +21,7 @@ You can see a demo of the [sample OpenWeatherMap API on SwaggerHub here](https:/
 
 ## Advantages of SwaggerHub
 
-While the open-source Swagger Editor + UI approach works, you'll run into several problems:
+While the open-source Swagger Editor coupled with Swagger UI works, you'll run into several problems:
 
 *  It's challenging to collaborate with other project members on the spec.
 *  It's difficult to gather feedback from reviewers about specific parts of the spec.
@@ -31,7 +31,7 @@ When you're working on REST API documentation, you need tools specifically desig
 
 There's a point at which experimenting with the free Swagger UI tooling hits a wall, and you'll need to find another way to move to the next level. This next level is where [SwaggerHub](https://swaggerhub.com) from [Smartbear](https://smartbear.com/) comes in. SwaggerHub provides a complete solution for designing, managing, and publishing documentation for your API in ways that will simplify your life as an API technical writer.
 
-More than 15,000 software teams across the globe use SwaggerHub. As the OpenAPI spec becomes more of an industry standard for API documentation, SwaggerHub's swagger-specific tooling becomes essential.
+More than 15,000 software teams across the globe use SwaggerHub. As the OpenAPI spec becomes more of an industry standard for API documentation, SwaggerHub's swagger-specific tooling can be essential.
 
 ## SwaggerHub Intro and Dashboard
 
@@ -61,19 +61,17 @@ With SwaggerHub, you can save your specification document directly on SwaggerHub
 
 ## Versions
 
-Not only does SwaggerHub allow you to save your OpenAPI spec but you can also save different versions of your spec. As a result, you can experiment with new content by adding a new version. You can return to any version you want, and you can also publish or unpublish any version.
+SwaggerHub not only allows you to save your OpenAPI spec but also save different versions of your spec. As a result, you can experiment with new content by adding a new version. You can return to any version you want, and you can also publish or unpublish any version.
 
 {% include course_image.html size="large" filename="swaggerhub_versioning" ext_print="png" ext_web="png" alt="Versioning options for your OpenAPI file" caption="Versioning options for your OpenAPI file" %}
 
 When you publish a version, the published version becomes Read Only. If you want to make changes to a published version (rather than creating a new version), you can unpublish the version and make edits to it.
 
-You can link to specific versions of your documentation, or you can use a more general link path that will automatically forward to the latest version. Here's a link to the OpenWeatherMap API published on SwaggerHub that uses version 2.5.1 of the documentation: [https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/2.5.1/](https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/2.5.1/). To link to a specific version, include the version number in the URL.
+You can link to specific versions of your documentation, or you can use a more general link path that will automatically forward to the latest version. Here's a link to the OpenWeatherMap API published on SwaggerHub that uses version 2.5.1 of the documentation: [https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/2.5.1/](https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/2.5.1/). To link to a specific version, include the version number in the URL. In contrast, this more general link (which omits a version number) automatically forwards to the latest version (which is 2.5.2): [https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/](https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/).
 
-You can also send users to the latest version by excluding the version number in the path: [https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/](https://app.swaggerhub.com/apis/IdRatherBeWriting/open-weather_map_api/). When you go to this link, you are forwarded to the latest published version of the documentation automatically (2.5.2).
+Versioning is helpful when you're collaborating on the spec with other team members. For example, suppose the original version was drafted by an engineer, and you want to make major edits. Rather than directly overwriting the content (or making a backup copy of an offline file), you can create a new version and then take more ownership to overhaul that version with your own updates, without fear that the engineer will react negatively about overwritten/lost content.
 
-Versioning is helpful when you're collaborating on the spec with other team members. For example, suppose you see the original version drafted by an engineer, and you want to make major edits. Rather than directly overwriting the content (or making a backup copy of an offline file), you can create a new version and then take more ownership to overhaul that version with your own wordsmithing, without fear that the engineer will react negatively about overwritten/lost content.
-
-When you publish your Swagger documentation on SwaggerHub, Swagger's base URL (app.swaggerhub.com) remains in the URL. Although this base URL isn't customizable, you can add your company logo and visual branding as desired.   
+When you publish your Swagger documentation on SwaggerHub, Swagger's base URL (`app.swaggerhub.com`) remains in the URL. Although this base URL isn't customizable, you can add your company logo and visual branding as desired.   
 
 ## Inline commenting/review
 
@@ -93,13 +91,13 @@ In the upper-right corner, click the down-arrow and select **Client** or **Serve
 
 {% include course_image.html size="large" filename="swaggerhub_download" ext_print="png" ext_web="png" alt="Client and server SDK export capabilities" caption="Client and server SDK export capabilities" %}
 
-For example, suppose a user is implementing your REST API in a Java application. The user can choose to download the Java client SDK and will see code showing a Java implementation of your API. Other options include Ruby, Android, Go, CSharp, JavaScript, Python, Scala, PHP, Swift, and many more.
+For example, suppose a user is implementing your REST API in a Java application. The user can choose to download the Java client SDK for extensive code that shows a Java implementation of your API. Other options include Ruby, Android, Go, CSharp, JavaScript, Python, Scala, PHP, Swift, and many more.
 
 Some API documentation sites look impressive for showing implementations in various programming languages. SwaggerHub takes those programming languages and multiplies them tenfold to provide every possible output a user could want.
 
 The output includes more than a simple code sample showing how to call a REST endpoint in that language. The output includes a whole SDK that includes the various nuts and bolts of an implementation in that language. (For more information on SDKs, see [SDKs and sample apps](docapis_sdks_and_sample_apps.html).)
 
-Providing this code not only speeds implementation for developers but also helps you scale your language-agnostic REST API to a greater variety of platforms and users, reducing the friction in adoption.
+Providing this code speeds implementation for developers and helps you scale your language-agnostic REST API to a greater variety of platforms and users, reducing the friction in adoption.
 
 ## Export to HTML
 
@@ -117,7 +115,7 @@ Both outputs would need a healthy dose of custom styling to be usable.
 
 ## Mocking Servers {#mocking_servers}
 
-Another cool feature of SwaggerHub is the ability to [create mock API servers](https://app.swaggerhub.com/help/integrations/api-auto-mocking). Suppose you have an API where you don't want users to generate real requests. (Maybe it's an ordering system where users might be ordering products through the API, or you don't have test accounts/systems). At the same time, you probably want to simulate real API responses to give users a sense of how your API works.
+Another cool feature of SwaggerHub is the ability to [create mock API servers](https://app.swaggerhub.com/help/integrations/api-auto-mocking). Suppose you have an API in which you don't want users to generate real requests. (Maybe it's an ordering system where users might be ordering products through the API, or you don't have test accounts/systems). Even so, you can still simulate responses that let users get a sense of how your API works.
 
 {% include random_ad.html %}
 
@@ -131,7 +129,7 @@ Using the mock server approach, SwaggerHub not only provides documentation but a
 
 {% include random_ad.html %}
 
-To set up a mocking server in SwaggerHub, click <img class="inline" src="images/swaggerhub_integration_button.png" /> and select to add a new integration. Select the **API Auto Mocking** service and complete the configuration details. Make sure you have `examples` for each of the endpoint responses in your spec. See [API Auto Mocking](https://app.swaggerhub.com/help/integrations/api-auto-mocking) for more details.
+To set up a mocking server in SwaggerHub, click the plug icon {% if site.format == "web" %}<img class="inline" src="images/swaggerhub_integration_button.png" />{% endif %} and select to add a new integration. Select the **API Auto Mocking** service and complete the configuration details. Make sure you have `examples` for each of the endpoint responses in your spec. See [API Auto Mocking](https://app.swaggerhub.com/help/integrations/api-auto-mocking) for more details.
 
 ## Content Re-use (Domains)
 
@@ -145,7 +143,7 @@ Using the domain minimizes duplicate content and enables you to be more consiste
 
 The collaborative aspect of SwaggerHub is the most common reason people move from the open source tools to SwaggerHub. You might have a lot of different engineers working on a variety of APIs in SwaggerHub. To organize the work, you can group APIs into [organizations](https://app.swaggerhub.com/help/organizations/index), and then assign members to the appropriate organization. When that member logs in to SwaggerHub, he or she will see only the organizations to which he or she has access.
 
-Additionally, within an organization, you can further group APIs into different projects. This way teams working in the same organization but on different projects can have visibility into other APIs but still have their APIs logically grouped.
+Additionally, within an organization, you can further group APIs into different projects. This way teams working in the same organization but on different projects can have visibility into other APIs.
 
 {% include course_image.html size="large" border="true" filename="swaggerhub_organizations" ext_print="png" ext_web="png" alt="Organization of projects by team" caption="Organization of projects by team" %}
 
@@ -153,13 +151,13 @@ This aspect of organizations and projects may not seem essential if you have jus
 
 {% include random_ad2.html %}
 
-## Conclusion &mdash; expanding the tech writer's role with APIs
+## Expanding the tech writer's role with APIs
 
-Tech writers are positioned to be power players in the spec-first philosophy with OpenAPI design. By becoming adept at coding the OpenAPI spec and familiar with robust collaborative tools like SwaggerHub, tech writers can lead engineering teams not only through the creation and refinement of the API documentation but also pave the way for beta testing, review, client/server SDK generation, and more.
+Tech writers are positioned to be power players in the spec-first philosophy with OpenAPI design. By becoming adept at coding the OpenAPI spec and familiar with robust collaborative tools like SwaggerHub, tech writers can lead engineering teams not only through the creation and refinement of the API documentation but also pave the way for beta testing, spec review, client/server SDK generation, and more.
 
-Designing a fully-featured, highly functioning OpenAPI spec is at the heart of this endeavor. Few engineers are familiar with creating these specs, and technical writers who are skilled at both the spec and associating Swagger tooling can fill critical roles on API teams.
+Designing a fully-featured, highly functioning OpenAPI spec is at the heart of this endeavor. Few engineers are familiar with creating these specs, and technical writers who are skilled at both creating the spec and setting up Swagger tooling can fill critical roles on API teams.
 
-Great tools aren’t free. SwaggerHub does [cost money](https://swaggerhub.com/pricing/), but this is a good thing since free tools are frequently abandoned, poorly maintained, and lack documentation and support. By using a paid tool from a robust API company (the very company that maintains the Swagger tools and sponsors the Swagger (OpenAPI) specification), you can plug into the tools you need to scale your API documentation efforts.
+Great tools aren’t free. SwaggerHub does [cost money](https://swaggerhub.com/pricing/), but this is a good thing since free tools are frequently abandoned, poorly maintained, and lack documentation and support. By using a paid tool from a robust API company (the same company that maintains the Swagger tools and sponsors the OpenAPI specification), you can plug into the infrastructure you need to scale your API documentation efforts.
 
 {: .tip}
 To read more about SwaggerHub, check out my blog post [SwaggerHub: A collaborative platform for working on OpenAPI/Swagger specification files, and more](https://idratherbewriting.com/2017/10/05/swaggerhub-collaborative-platform-for-swagger-openapi-projects).

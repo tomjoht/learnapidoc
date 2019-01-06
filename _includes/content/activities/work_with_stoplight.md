@@ -1,10 +1,10 @@
-###  <i class="fa fa-user-circle"></i> Activity: Download and populate Stoplight with an OpenAPI specification
+###  Download and populate Stoplight with an OpenAPI specification
 
 In this activity, you'll work with an OpenAPI file in Stoplight, which provides a GUI editor for working with the OpenAPI specification information. To speed things up, you'll start with a pre-built OpenAPI file that you paste into the Stoplight editor, and then you'll make some modifications to it using Stoplight's visual modeling tools. You can use Stoplight in the browser or as a web app. For simplicity, we'll use the browser version.
 
 To work with an OpenAPI file in Stoplight:
 
-1.  Stoplight only supports OpenAPI 2.0, not 3.0. You could convert your 3.0 spec using [APIMATIC Transformer](https://apimatic.io/transformer) to 2.0, but to speed things up, download this [2.0 OpenAPI JSON file already converted](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openweathermap_swagger20.json).
+1.  Currently, Stoplight supports only OpenAPI 2.0, not 3.0. You could convert your 3.0 spec using [APIMATIC Transformer](https://apimatic.io/transformer) to 2.0, but to speed things up, download this [2.0 OpenAPI JSON file already converted](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openweathermap_swagger20.json).
 2.  Go to [next.stoplight.io/](https://next.stoplight.io/).
 3.  Click **Login** in the upper-right corner and log in using your GitHub account.
 4.  Click **New Personal Project**.
@@ -29,7 +29,7 @@ To work with an OpenAPI file in Stoplight:
 One of the coolest features in Stoplight is the ability to auto-generate the schema documentation from a sample JSON response. Try out this auto-generation feature by doing the following:
 
 1.  In the middle column of Stoplight, click **PATHS**, and then click **/weather**, and then click **Call current weather data for ...**.
-2.  In the **Responses** section, click **Raw Schema** and delete the existing response schema. (Even when you delete the info here, it will leave `{}` there when you switch tabs, which is good.)
+2.  In the **Responses** section, click **Raw Schema** and delete the existing response schema. (Even when you delete the info here, it will leave empty curly braces `{}` there when you switch tabs, which is good.)
 3.  Switch to the **Editor** tab, click **Generate from JSON**, and paste in the following JSON response from the OpenWeatherMap weather endpoint:
 
     ```json

@@ -8,7 +8,7 @@ In this activity, you'll create a Swagger UI display for an OpenAPI specificatio
 
 1.  Prepare a valid OpenAPI specification document:
     *  For instructions on creating an OpenAPI specification document from scratch, follow the [OpenAPI tutorial here](pubapis_openapi_tutorial_overview.html).
-    *  To use a pre-built OpenAPI specification document, you can use the [OpenWeatherMap spec file](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) or the [Sunrise/sunset API spec file](https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/openapi_sunrise_sunset.yml). (Right-click the link and save the YAML file to your desktop.
+    *  To use a pre-built OpenAPI specification document, you can use the [OpenWeatherMap spec file](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) or the [Sunrise/sunset API spec file](https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/openapi_sunrise_sunset.yml). (Right-click the link and save the YAML file to your desktop.)
 
 2.  Make sure your OpenAPI specification is valid. Paste your OpenAPI specification code into the [Swagger online editor](http://editor.swagger.io/#/) and make sure no warnings appear. The view on the right of the Swagger Editor shows a fully functional Swagger UI display.
 
@@ -18,7 +18,7 @@ In this activity, you'll create a Swagger UI display for an OpenAPI specificatio
 	  The only folder you'll be working with in the downloaded zip is the **dist** folder (short for distribution). Everything else is used only if you're recompiling the Swagger files, which is beyond the scope of this tutorial.
 
 5.  Drag the **dist** folder out of the swagger-ui-master folder so that it stands alone. (Then optionally delete the swagger-ui-master folder and zip file.)
-7.  Drag your OpenAPI specification file that you prepared earlier (in step 1) into the **dist** folder. If you're using the pre-build OpenAPI files, it's either **openapi_openweathermap.yml** or **openapi_sunrise_sunset.yml**.) Your file structure should look as follows:
+7.  Drag your OpenAPI specification file (from step 1) into the **dist** folder. (If you're using the pre-build OpenAPI files, the file is called either **openapi_openweathermap.yml** or **openapi_sunrise_sunset.yml**.) Your file structure should look as follows:
 
     <pre>
     ├── dist
@@ -57,15 +57,15 @@ In this activity, you'll create a Swagger UI display for an OpenAPI specificatio
     url: "openapi_sunrise_sunset.yml",
     ```
 
-7.  View the index.html file locally in your browser. Note that Chrome's security restrictions (CORS objections) prevent you from viewing the Swagger UI file locally. You have several workarounds:
+7.  View the `index.html` file locally in your browser. Note that Chrome's security restrictions (CORS objections) prevent you from viewing the Swagger UI file locally. You have several workarounds:
 
-    *  View the file locally using [Firefox](https://www.mozilla.org/en-US/firefox/new/).
-    *  Use the hosted URL for [openapi_openweathermap.yml](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) or [openapi_sunrise_sunset.yml](https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/openapi_sunrise_sunset.yml). (Right-click the link and select **Copy Link Address**.)
+    *  View the file locally using [Firefox](https://www.mozilla.org/en-US/firefox/new/) (this is the easiest way).
+    *  Use the hosted online URL for [openapi_openweathermap.yml](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) or [openapi_sunrise_sunset.yml](https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/openapi_sunrise_sunset.yml). (Right-click the link and select **Copy Link Address**.)
     *  Upload the **dist** folder to a web server and view it there.
     *  Put the YAML file onto a public [GitHub Gist](https://gist.github.com/) and then click **Raw**. Use the URL for this Gist.
     *  Use a local server such as [simple local HTTP server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server).
 
-When you're ready to publish your Swagger UI file, you simply upload the folder to a web server and go to the **index.html** file. For example, if you called your directory **dist** (leaving it unchanged), you would go to **http://myserver.com/dist**. (You can change the "dist" folder name to whatever you want.)
+When you're ready to publish your Swagger UI file, you simply upload the folder to a web server and go to the **index.html** file. For example, if you called your directory **dist** (leaving it unchanged), you would go to **http://myserver.com/dist/**. (You can change the "dist" folder name to whatever you want.)
 
 {: .tip}
 For more instructions in working with Swagger UI, see the [Swagger.io docs](https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/).
