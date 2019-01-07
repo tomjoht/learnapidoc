@@ -636,8 +636,8 @@ The number of tech writers in the area fluctuates quite a bit. Here's the data f
       </tr>
       <tr>
          <td markdown="span">2015</td>
-         <td markdown="span">(missing data)</td>
-         <td markdown="span">(missing data)</td>
+         <td markdown="span">1,360 </td>
+         <td markdown="span">No change from previous year.</td>
       </tr>
       <tr>
          <td markdown="span">2016</td>
