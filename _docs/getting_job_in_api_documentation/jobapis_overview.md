@@ -35,7 +35,7 @@ In nearly every job description for technical writers in developer documentation
 
 You may wonder what the motivation is behind these requirements, especially if the core APIs are RESTful. After all, they can't expect you to *do* a programmer's job. No, but here's the most common scenario. The company has a REST API for interacting with their services. To make it easy for developers, the company provides [SDKs and client implementations](docapis_sdks_and_sample_apps.html) in various languages for the REST API.
 
-For an example, take a look at Algolia's API. You can view the documentation for their [REST API here](https://www.algolia.com/doc/rest). However, when you implement Algolia (which provides a search feature for your site), you'll probably follow the documentation for your specific platform.
+For an example, take a look at Algolia's API. You can view the documentation for their [REST API here](https://www.algolia.com/doc/rest). However, when you implement Algolia (which provides a search feature for your site), you'll probably follow the documentation for your specific platform or language.
 
 <a href="https://www.algolia.com/doc" class="noExtIcon"><img src="images/algolia_clientsdks.png" alt="Algolia client implementations" /></a>
 
@@ -63,13 +63,13 @@ The degree to which you can provide value in your role as a technical writer is 
 
 In many highly technical shops, this editor/publisher role is becoming increasingly common. Engineers will write the technical material, especially the reference documentation, and technical writers will focus more on making sure the content checks all the boxes &mdash; that it has an overview, release notes, addresses user tasks, follows the style guide, integrates with the other docs, and so on. You can shape and organize the content, and identify areas where it's deficient or needs expansion, but the ability to add deeper value requires a deeper knowledge of the subject matter.
 
-Still, this lack of more technical knowledge will likely remove some of the value from your role. In [How API Documentation Fails](https://ieeexplore.ieee.org/document/7140676/), Martin Robillard and Gias Uddin explain:
+A lack of more technical knowledge will likely remove some of the value from your role. In [How API Documentation Fails](https://ieeexplore.ieee.org/document/7140676/), Martin Robillard and Gias Uddin explain:
 
 > Perhaps unsurprisingly, the biggest problems with API documentation were also the ones requiring the most technical expertise to solve. Completing, clarifying, and correcting documentation require deep, authoritative knowledge of the API’s implementation. This makes accomplishing these tasks difficult for non-developers or recent contributors to a project.
 
 Without in-depth, authoritative knowledge of the API, it will be challenging to complete, clarify, and correct errors in the content.
 
-The balance between generalist and specialist roles is an ongoing challenge that I'll dive into more in the next topic: [How much code do you need to know?](jobapis_learning_code.html) But in short, if you want to solve the biggest problem with API documentation, you'll need to develop more technical expertise in the subject domain.
+The balance between generalist and specialist roles is an ongoing challenge that I'll explore more in the next topic: [How much code do you need to know?](jobapis_learning_code.html) In short, if you want to solve the biggest problem with API documentation, you'll need to develop more technical expertise in the subject domain.
 
 ## Consolations for technical writers
 

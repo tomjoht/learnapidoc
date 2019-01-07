@@ -17,7 +17,7 @@ You're taking this course most likely because you want to break into API documen
 
 Where are the best locations for API documentation jobs? The [2017-2018 STC Salary Database](https://www.stc.org/salary-database/) (which is based on [Bureau of Labor Statistics](https://www.bls.gov/) data) provides a lot of research about technical writer employment in different parts of the U.S., but nothing that breaks down the numbers by API documentation opportunities.
 
-At any rate, the Salary Database information gives us a starting point. Here are the "Ten Largest MSAs [Metropolitan Statistical Areas] by Number of Technical Writers 2017":
+As such, we'll have to triangulate a bit and make some best guesses about where the API documentation jobs are. The STC Salary Database information gives us a starting point. Here are the "Ten Largest MSAs [Metropolitan Statistical Areas] by Number of Technical Writers" (based on 2017 data, which is the latest data set available):
 
 <table>
    <colgroup>
@@ -76,7 +76,7 @@ At any rate, the Salary Database information gives us a starting point. Here are
 
 "MSA" stands for "metropolitan statistical area." Most of the research in the STC Salary Database focuses on MSAs rather than states. Why look at MSAs rather than states as a whole? While California might rank high in technical writer employment, you would have a tough time finding employment in some remote areas, such as Lone Pine or Corning. Employment measurements are more accurate when they're focused on a specific metropolitan area rather than the state as a whole.
 
-However, it's hard to filter by MSAs for API data, so I'll use states anyway. The top 10 states (rather than MSAs) overall for technical writer employment (again, according to the STC Salary Database) are as follows:
+However, it's hard to filter API data by MSAs, so I'll use states anyway. The top 10 states (rather than MSAs) for technical writer employment (again, according to the STC Salary Database) are as follows:
 
 <table>
    <colgroup>
@@ -86,7 +86,7 @@ However, it's hard to filter by MSAs for API data, so I'll use states anyway. Th
    <thead>
       <tr>
          <th markdown="span">State</th>
-         <th markdown="span">Employed Technical Writers</th>
+         <th markdown="span">Number of Employed Technical Writers</th>
       </tr>
    </thead>
    <tbody>
@@ -135,39 +135,43 @@ However, it's hard to filter by MSAs for API data, so I'll use states anyway. Th
 
 They aren't too different from the list of MSAs &mdash; California, New York, Texas, New Jersey, Maryland, and Ohio still feature prominently on both lists, so focusing on states probably reflects the MSAs within that state as well.
 
-To try to determine which states have the most density for API-specific documentation jobs, I searched [Indeed.com](https://indeed.com) for the term ["API"](https://www.indeed.com/jobs?q=API&l=California) and filtered by state (it wasn't possible to filter by MSA). I did one set of searches on August 12, 2018, and another on December 26, 2018. Then I averaged the two.
+To try to determine which states have the most density for API-specific documentation jobs, I searched [Indeed.com](https://indeed.com) for the term ["API"](https://www.indeed.com/jobs?q=API&l=California) and filtered by state (it wasn't possible to filter by MSA). I performed one set of searches on August 12, 2018, and another on December 26, 2018. Then I averaged the two.
 
-I didn't meticulously examine each hit in the Indeed results for "API" to see if it actually related to *documentation jobs* with APIs, or even that it related to APIs (though I did spot check). I assume that the number of documentation jobs will be a relative percentage of the API-related jobs overall. For example, if a state has 1,000 hits for "API," if we were to examine each job and filter the results down to "technical writer" jobs that mention APIs, we would probably see that some relative percentage (e.g., 5 percent) of those jobs relate to technical writing. Error rates will probably be the same overall as well.
+I didn't meticulously examine each hit in the Indeed results for "API" to see if the hit actually related to *documentation jobs* with APIs, or even that it related to APIs (though I did spot check). I assume that the number of documentation jobs will be a relative percentage of the API-related jobs overall. For example, suppose a state has 1,000 hits for "API." If we were to examine each job and filter the results down to "technical writer" jobs that mention APIs, we would probably see a relative percentage (e.g., 5 percent) of jobs related to technical writing. Error rates will probably be the same overall as well.
 
 Admittedly, I'm by no means versed in statistics, and I admit that this method has many flaws for our overall question (*where are the best locations for API documentation jobs?*). For example, a high number of jobs doesn't necessarily mean more jobs will be available if there are just more technical writers competing for those jobs.
 
-To illustrate, suppose the state is small and has only about 500 technical writers in the area, but the technical writer growth rate in the area is high as well as the mentions of "API." Is that a better area in which to find a job? Maybe. It depends on how many writers are competing for the jobs &mdash; that information would be even harder to gather. On the other hand, living in a larger tech hub with more variation in the job opportunities and required technical skills might provide more selection and fit for your particular skills. API doc hiring managers usually want candidates familiar with the languages they're targeting, so with more jobs available, you might have a better shot at matching up with one of the roles.
+To illustrate some of these issues, suppose the state is small and has only about 500 technical writers in the area, but the technical writer growth rate in the area is high as well as the number of "API" hits on Indeed. Is that a better area in which to find a job? Maybe. It depends on how many writers are competing for the jobs &mdash; that information would be even harder to gather.
 
-Additionally, just because states have a high employment rate of technical writers doesn't mean it's where you want to be. We could have also used the list of the  "Fastest-Growing States for Technical Writers and Export and GDP Performance in 2017." With this approach, rather than looking at employment numbers, we would examine the employment percent change from the previous year, targeting areas of growth.
+On the other hand, living in a larger tech hub with more variation in the job opportunities and required technical skills might provide more selection and fit for your particular skills. API doc hiring managers usually want candidates familiar with the languages they're targeting, so with more jobs available, you might have a better shot at matching up with one of the roles.
 
-Alternatively, we could have examined the top areas based on industry sectors. The [Computer Systems Design and Related Services Industries](https://collegegrad.com/industries/computer-systems-design) employs the most technical writers, but if you're focused on another industry, different locations might be more optimal for these other industry sectors. California has a high density of computer-focused companies, while New Jersey has more pharmaceutical companies.
+Additionally, just because states have a high employment rate of technical writers doesn't mean it's the best location to find a job. Job growth rates might be a better factor to consider, as it means more new jobs will be available in the area. In the STC Salary Database, high-growth-rate areas are listed in the "Fastest-Growing States for Technical Writers and Export and GDP Performance in 2017" table.
 
-Thus, it's hard to say for sure where the best locations are for API doc jobs, especially as they fit your profile. At most, in this topic I indicate where some promising areas appear to be, based on the technical writer employment in the area and the prevalence of "API" as a keyword in job postings in the area.
+Alternatively, we could have examined the top areas based on industry sectors. The [Computer Systems Design and Related Services Industries](https://collegegrad.com/industries/computer-systems-design) employs the most technical writers, but if you're focused on another industry, such as medical, different locations might be more optimal for these other industry sectors. California has a high density of computer-focused companies, while New Jersey has more pharmaceutical companies.
+
+Thus, it's hard to say for sure where the best locations are for API doc jobs, especially as they fit your unique profile. At most, in this topic I indicate where some promising areas appear to be, based on the technical writer employment in the area and the prevalence of "API" as a keyword in job postings in the area.
 
 ## API keyword density by state
 
-Here's the data from my search for the keyword "API" in job searches on Indeed.com, contextualized with the technical writer employment for the state. I sorted by most API hits since that's what we're focusing on here.
+Here's the data from my search for the keyword "API" in job searches on Indeed.com, contextualized with the technical writer employment for the state. I sorted by most API hits (because API frequency is what we're optimizing for). In measuring hits, I took the average of two searches for "API" spread out over about six months. Also, I divided the API hits by the employment to give a percentage hinting at the density of API documentation jobs.
 
 <table>
 <colgroup>
    <col width="20%" />
-   <col width="20%" />
-   <col width="20%" />
-   <col width="20%" />
-   <col width="20%" />
+   <col width="15%" />
+   <col width="15%" />
+   <col width="15%" />
+   <col width="15%" />
+   <col width="15%" />
 </colgroup>
 <thead>
 <tr>
   <th>State (U.S. only)</th>
   <th>Technical writers employed in the state</th>
-  <th>API average (Aug hits + Dec hits / 2)</th>
+  <th>API average (Aug hits + Dec hits &divide; 2)</th>
   <th># of &quot;API&quot; hits on Indeed<br/> (Aug 2018)</th>
   <th># of &quot;API&quot; hits on Indeed<br/> (Dec 2018)</th>
+  <th>% of API hits &divide; employment</th>
  </tr>
  </thead>
  <tbody>
@@ -177,6 +181,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>5,262</td>
   <td>4,983</td>
   <td>5540</td>
+  <td>83%</td>
  </tr>
  <tr>
   <td>Texas</td>
@@ -184,6 +189,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>2,569</td>
   <td>2,450</td>
   <td>2688</td>
+  <td>59%</td>
  </tr>
  <tr>
   <td>New York</td>
@@ -191,13 +197,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>1,864</td>
   <td>1,735</td>
   <td>1992</td>
- </tr>
- <tr>
-  <td>District of Columbia</td>
-  <td>700</td>
-  <td>1,587</td>
-  <td>1,381</td>
-  <td>1793</td>
+  <td>78%</td>
  </tr>
  <tr>
   <td>Washington State</td>
@@ -205,6 +205,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>1,257</td>
   <td>1,283</td>
   <td>1230</td>
+  <td>101%</td>
  </tr>
  <tr>
   <td>Virginia</td>
@@ -212,6 +213,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>1,216</td>
   <td>1,092</td>
   <td>1340</td>
+  <td>43%</td>
  </tr>
  <tr>
   <td>Massachusetts</td>
@@ -219,6 +221,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>1,128</td>
   <td>1,080</td>
   <td>1176</td>
+  <td>46%</td>
  </tr>
  <tr>
   <td>Illinois</td>
@@ -226,6 +229,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>1047</td>
   <td>949</td>
   <td>1145</td>
+  <td>69%</td>
  </tr>
  <tr>
   <td>Georgia</td>
@@ -233,6 +237,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>897</td>
   <td>879</td>
   <td>915</td>
+  <td>76%</td>
  </tr>
  <tr>
   <td>New Jersey</td>
@@ -240,6 +245,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>846.5</td>
   <td>800</td>
   <td>893</td>
+  <td>43%</td>
  </tr>
  <tr>
   <td>Pennsylvania</td>
@@ -247,6 +253,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>842.5</td>
   <td>800</td>
   <td>885</td>
+  <td>55%</td>
  </tr>
  <tr>
   <td>Florida</td>
@@ -254,6 +261,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>750.5</td>
   <td>722</td>
   <td>779</td>
+  <td>32%</td>
  </tr>
  <tr>
   <td>North Carolina</td>
@@ -261,6 +269,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>704</td>
   <td>631</td>
   <td>777</td>
+  <td>48%</td>
  </tr>
  <tr>
   <td>Colorado</td>
@@ -268,6 +277,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>673</td>
   <td>635</td>
   <td>711</td>
+  <td>55%</td>
  </tr>
  <tr>
   <td>Ohio</td>
@@ -275,6 +285,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>512.5</td>
   <td>466</td>
   <td>559</td>
+  <td>29%</td>
  </tr>
  <tr>
   <td>Maryland</td>
@@ -282,6 +293,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>491.5</td>
   <td>567</td>
   <td>416</td>
+  <td>23%</td>
  </tr>
  <tr>
   <td>Arizona</td>
@@ -289,6 +301,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>446</td>
   <td>404</td>
   <td>488</td>
+  <td>54%</td>
  </tr>
  <tr>
   <td>Minnesota</td>
@@ -296,6 +309,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>407.5</td>
   <td>389</td>
   <td>426</td>
+  <td>40%</td>
  </tr>
  <tr>
   <td>Michigan</td>
@@ -303,6 +317,15 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>367</td>
   <td>351</td>
   <td>383</td>
+  <td>29%</td>
+ </tr>
+ <tr>
+  <td>District of Columbia</td>
+  <td>700</td>
+  <td>355</td>
+  <td>355</td>
+  <td>355</td>
+  <td>51%</td>
  </tr>
  <tr>
   <td>Missouri</td>
@@ -310,6 +333,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>313.5</td>
   <td>322</td>
   <td>305</td>
+  <td>28%</td>
  </tr>
  <tr>
   <td>Utah</td>
@@ -317,6 +341,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>287</td>
   <td>275</td>
   <td>299</td>
+  <td>39%</td>
  </tr>
  <tr>
   <td>Oregon</td>
@@ -324,6 +349,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>280.5</td>
   <td>271</td>
   <td>290</td>
+  <td>53%</td>
  </tr>
  <tr>
   <td>Tennessee</td>
@@ -331,6 +357,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>255.5</td>
   <td>212</td>
   <td>299</td>
+  <td>53%</td>
  </tr>
  <tr>
   <td>Connecticut</td>
@@ -338,6 +365,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>248</td>
   <td>229</td>
   <td>267</td>
+  <td>36%</td>
  </tr>
  <tr>
   <td>Wisconsin</td>
@@ -345,6 +373,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>245</td>
   <td>225</td>
   <td>265</td>
+  <td>29%</td>
  </tr>
  <tr>
   <td>Indiana</td>
@@ -352,6 +381,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>199.5</td>
   <td>204</td>
   <td>195</td>
+  <td>27%</td>
  </tr>
  <tr>
   <td>Louisiana</td>
@@ -359,6 +389,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>182.5</td>
   <td>167</td>
   <td>198</td>
+  <td>101%</td>
  </tr>
  <tr>
   <td>Oklahoma</td>
@@ -366,6 +397,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>159.5</td>
   <td>169</td>
   <td>150</td>
+  <td>20%</td>
  </tr>
  <tr>
   <td>Iowa</td>
@@ -373,6 +405,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>138</td>
   <td>130</td>
   <td>146</td>
+  <td>29%</td>
  </tr>
  <tr>
   <td>South Carolina</td>
@@ -380,6 +413,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>133.5</td>
   <td>110</td>
   <td>157</td>
+  <td>25%</td>
  </tr>
  <tr>
   <td>Alabama</td>
@@ -387,6 +421,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>109.5</td>
   <td>115</td>
   <td>104</td>
+  <td>16%</td>
  </tr>
  <tr>
   <td>Nebraska</td>
@@ -394,6 +429,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>103.5</td>
   <td>102</td>
   <td>105</td>
+  <td>35%</td>
  </tr>
  <tr>
   <td>Kentucky</td>
@@ -401,6 +437,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>100</td>
   <td>95</td>
   <td>105</td>
+  <td>40%</td>
  </tr>
  <tr>
   <td>Kansas</td>
@@ -408,6 +445,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>99.5</td>
   <td>101</td>
   <td>98</td>
+  <td>18%</td>
  </tr>
  <tr>
   <td>Delaware</td>
@@ -415,6 +453,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>83</td>
   <td>65</td>
   <td>101</td>
+  <td>92%</td>
  </tr>
  <tr>
   <td>Nevada</td>
@@ -422,6 +461,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>76.5</td>
   <td>69</td>
   <td>84</td>
+  <td>31%</td>
  </tr>
  <tr>
   <td>Arkansas</td>
@@ -429,6 +469,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>69.5</td>
   <td>56</td>
   <td>83</td>
+  <td>39%</td>
  </tr>
  <tr>
   <td>New Hampshire</td>
@@ -436,6 +477,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>64.5</td>
   <td>51</td>
   <td>78</td>
+  <td>36%</td>
  </tr>
  <tr>
   <td>Rhode Island</td>
@@ -443,6 +485,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>62.5</td>
   <td>73</td>
   <td>52</td>
+  <td>30%</td>
  </tr>
  <tr>
   <td>North Dakota</td>
@@ -450,6 +493,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>50</td>
   <td>46</td>
   <td>54</td>
+  <td>50%</td>
  </tr>
  <tr>
   <td>Idaho</td>
@@ -457,6 +501,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>39.5</td>
   <td>35</td>
   <td>44</td>
+  <td>16%</td>
  </tr>
  <tr>
   <td>New Mexico</td>
@@ -464,6 +509,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>38</td>
   <td>36</td>
   <td>40</td>
+  <td>10%</td>
  </tr>
  <tr>
   <td>West Virginia</td>
@@ -471,6 +517,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>30</td>
   <td>37</td>
   <td>22</td>
+  <td>33%</td>
  </tr>
  <tr>
   <td>Maine</td>
@@ -478,6 +525,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>29</td>
   <td>20</td>
   <td>38</td>
+  <td>41%</td>
  </tr>
  <tr>
   <td>Alaska</td>
@@ -485,6 +533,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>27</td>
   <td>31</td>
   <td>23</td>
+  <td>39%</td>
  </tr>
  <tr>
   <td>South Dakota</td>
@@ -492,6 +541,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>19</td>
   <td>25</td>
   <td>13</td>
+  <td>19%</td>
  </tr>
  <tr>
   <td>Montana</td>
@@ -499,6 +549,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>18</td>
   <td>17</td>
   <td>19</td>
+  <td>30%</td>
  </tr>
  <tr>
   <td>Mississippi</td>
@@ -506,6 +557,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>17.5</td>
   <td>7</td>
   <td>28</td>
+  <td>15%</td>
  </tr>
  <tr>
   <td>Wyoming</td>
@@ -513,6 +565,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>15</td>
   <td>12</td>
   <td>17</td>
+  <td>50%</td>
  </tr>
  <tr>
   <td>Vermont</td>
@@ -520,6 +573,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>13.5</td>
   <td>8</td>
   <td>19</td>
+  <td>8%</td>
  </tr>
  <tr>
   <td>Hawaii</td>
@@ -527,6 +581,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>10.5</td>
   <td>15</td>
   <td>6</td>
+  <td>15%</td>
  </tr>
  <tr>
   <td>Puerto Rico</td>
@@ -534,6 +589,7 @@ Here's the data from my search for the keyword "API" in job searches on Indeed.c
   <td>7</td>
   <td>4</td>
   <td>10</td>
+  <td>6%</td>
  </tr>
  </tbody>
 </table>
@@ -544,18 +600,23 @@ This superficial query doesn't indicate whether there are more tech comm jobs ov
 
 To get more granular with details, such as job losses or gains, the hottest MSAs for each state, the best industry sectors, the highest salaries, etc., consult the STC Salary Database and mine the data you want.
 
+I want to note some issues. In my initial searches for District of Columbia, I failed to specify "exact location" and as a result, the original hits (which allow a 25-mile radius by default) included many surrounding states such as Virginia, Maryland, and others. I revised the search in January 2019.
+
+Also, I'm not sure why Washington State, Louisiana, and Delaware are getting so many hits for APIs. I think "API" might have another meaning in some of these states (e.g., "API CNC Machinist," "Familiar with OSHA, API, NFPA and other regulations and standards," "Basic knowledge of API RP 53 and 30 CFR Part 250," etc.). Like I said, I didn't sort through hundreds of results to make sure API referred to "Application Programming Interface" in every counted hit.
+
+At any rate, the top 10 states with the highest percentages (dividing API hits by employment) are Washington State, Louisiana, Delaware, California, New York, Georgia, Illinois, Texas, Colorado, and Arizona.
+
 {% include random_ad.html %}
 
 ## Should you move to California?
 
-Since I'm currently in California (the "San Jose-Sunnyvale-Santa Clara" MSA), and California frequently appears at the top of these employment and API lists, I'll comment a bit on API jobs in this location. California (specifically Silicon Valley, which roughly spans from San Francisco to San Jose) continues to be a hub (if not *the* hub) for API technical writer jobs. However, California has some drawbacks, mainly with housing and traffic.
+Since I'm currently in California (the "San Jose-Sunnyvale-Santa Clara" MSA), and California frequently appears at the top of these employment and API lists, I'll comment a bit on API jobs in this location. California (specifically Silicon Valley, which roughly spans from San Francisco to San Jose) continues to be a hub (if not *the* hub) for API technical writer jobs.
 
-To live in Silicon Valley, you need the dual income of two working professionals to survive financially. Alternatively, you probably need to be single and willing to share a house with roommates. Traffic along the 101 can also crawl at a snail's pace during rush hour.
-
-That said, given the increased exodus of tech professionals in the Silicon Valley area (some estimate that [46% are leaving](https://www.sfgate.com/realestate/article/Google-facebook-can-t-afford-Silicon-Valley-13132157.php) because housing is so unaffordable), the need and opportunity for tech writers will be even greater in Silicon Valley. The number of tech writers in the area fluctuates quite a bit. Here's the data from the last three Salary Database for San Jose-Sunnyvale-Santa Clara, CA:
+The number of tech writers in the area fluctuates quite a bit. Here's the data from the last several Salary Database for San Jose-Sunnyvale-Santa Clara, CA:
 
 <table>
    <colgroup>
+      <col width="30%" />
       <col width="30%" />
       <col width="30%" />
       <col width="30%" />
@@ -574,6 +635,11 @@ That said, given the increased exodus of tech professionals in the Silicon Valle
          <td markdown="span">No previous data to compare.</td>
       </tr>
       <tr>
+         <td markdown="span">2015</td>
+         <td markdown="span">(missing data)</td>
+         <td markdown="span">(missing data)</td>
+      </tr>
+      <tr>
          <td markdown="span">2016</td>
          <td markdown="span">1,160</td>
          <td markdown="span">Decrease of 14.7%</td>
@@ -586,11 +652,13 @@ That said, given the increased exodus of tech professionals in the Silicon Valle
    </tbody>
 </table>
 
-(I'm not sure what happened to 2015's data.)
-
-Overall, this is a hot area for tech writer jobs. This might just be anecdotal, but I get emails from recruiters pinging me several times a week, trying to fill positions. At my own company, I've seen how difficult it is to find qualified candidates for developer doc positions. At times, it seems like the candidates just aren't here.
+Overall, San Jose-Sunnyvale-Santa Clara is a hot area for tech writer jobs. I get emails from recruiters pinging me several times a week, trying to fill positions. At my own company, I've seen how difficult it is to find qualified candidates for developer doc positions. At times, it seems like the candidates just aren't here.
 
 {% include course_image.html border="true" filename="californiasanfrancisco" ext_print="jpg" ext_web="jpg" alt="Should you move to California (or stay here if you're already in California)?" size="large" caption="Should you move to California (or stay here if you're already in California)?" %}
+
+However, California has some drawbacks, mainly with housing and traffic. To live in Silicon Valley, you likely need the dual income of two working professionals to survive financially. Alternatively, you probably need to be single and willing to share a house with roommates. Or just be willing to live in an older, smaller house in an ugly part of town. Traffic along the 101 can also crawl at a snail's pace during rush hour.
+
+That said, given the increased exodus of tech professionals in the Silicon Valley area (some estimate that [46% are leaving](https://www.sfgate.com/realestate/article/Google-facebook-can-t-afford-Silicon-Valley-13132157.php) because housing is so unaffordable), the need and opportunity for tech writers will be even greater in Silicon Valley.
 
 So if you're willing to sacrifice a few comforts related to housing &mdash; like being willing to live in a 1,000 square-foot house for $3k/month rent instead of owning a $3,000 square-foot house for $1,500/month mortgage &mdash; your future could be bright in California. California has many other perks as well &mdash; beautiful beaches, mountains with awe-inspiring Sequoias and Redwoods, free city-wide wifi, bike-friendly paths, abundant parks and good schools, year-round good weather, laid-back attitudes, and more.
 
@@ -608,9 +676,11 @@ Working in large companies like Amazon, Google, Facebook, Linkedin, Microsoft, a
 
 These companies are shaping culture and so many other details of our lives. For example, even Fire TV may seem like a simple device, but it's one of the technology products fueling the cord-cutter revolution that is disrupting the cable industry. Amazon is now taking TV to another category of experience by integrating Alexa into the experience (providing more of a hands-free interaction using natural language).
 
-Before I moved into Santa Clara, I considered two alternatives besides the Bay area: Austin and Seattle. Texas offers a much more affordable housing market and many tech jobs. For 2017, the "Austin-Round Rock, TX" employment numbers jumped up 34.5% (totaling 740 tech writers) and in "Houston-The Woodlands-Sugar Land, TX," the employment jumped up 9.5% (totaling 1,040 tech writers).
+## Alternatives to California
 
-Seattle (specifically "Seattle-Bellevue-Everett, WA") also has an abundance of jobs (an employment increase of 5.8% for a total of 910 tech writers). And the real estate market is slightly better but still expensive (food seems to cost more Seattle too).
+Before I moved to Santa Clara, I considered two alternatives besides the Bay area: Austin and Seattle. Texas offers a much more affordable housing market and many tech jobs. For 2017, the "Austin-Round Rock, TX" MSA employment numbers jumped up 34.5% (for a total of 740 tech writers) and in "Houston-The Woodlands-Sugar Land, TX," the employment jumped up 9.5% (for a total of 1,040 tech writers).
+
+Seattle (specifically "Seattle-Bellevue-Everett, WA") also has an abundance of jobs (an employment increase of 5.8%, for a total of 910 tech writers). And the real estate market is slightly better than the Bay area but still expensive (food seems to cost more Seattle too).
 
 Traffic in all of these cities is pretty horrible, but you might be able to avoid this by becoming a bicycle commuter (as I have). In the end, I chose California because it seemed like the Ivy League of technology spaces, so I wanted to experience it for myself.
 
@@ -618,17 +688,17 @@ Will I stay here forever? Probably not. I'll probably never be able to afford a 
 
 Overall, tech companies will continue to grow and expand outside of Silicon Valley. There's not enough space in Silicon Valley, and the number of engineers becomes fewer and fewer as companies grow and expand. Many say that Silicon Valley's days are over because it's no longer practical for a startup to launch in the conditions here. So if you want to come to California to work as a technical writer, great. But many other locations might be more ideal.
 
-For ideas on alternative areas, see the "Fastest-Growing States for Technical Writers and Export and GDP Performance in 2017" section of the Salary Database. Michigan had a 28.0% increase in tech writer employment. Georgia had a 19.2% increase. New Mexico had a 23.3%. Without looking at averages over several years, it's hard to know whether these boosts are temporary anomalies or indicative of a continuous upward trajectory. The Salary Database says to look at the state's overall economic growth, not just their tech comm job market. The report notes:
+For ideas on alternative areas, see the "Fastest-Growing States for Technical Writers and Export and GDP Performance in 2017" section of the Salary Database. Michigan had a 28.0% increase in tech writer employment. Georgia had a 19.2% increase. New Mexico had a 23.3% increase.
 
-> State employment gains are often correlated with the state’s economy. A growing economy will typically prompt new hires in nearly all industries.
+Without looking at averages over several years, it's hard to know whether these boosts are temporary anomalies or indicative of a continuous upward trajectory. To give better context to any growth percentages, the Salary Database says to look at the state's overall economic growth, not just their tech comm job market. The report notes, "State employment gains are often correlated with the state’s economy. A growing economy will typically prompt new hires in nearly all industries."
 
-If you're serious about choosing locations for jobs, consider these factors:
+Overall, if you're serious about choosing locations for jobs, consider these factors:
 
-* The industry
-* API doc opportunities
-* Cost of living
 * Number of tech writers employed
-* State economy
+* Abundance of API doc opportunities
+* The industry
+* Cost of living
+* Health of the state's economy
 * Companies in the area you want to work for
 
 ## <i class="fa fa-user-circle"></i> How to conduct a simple test
@@ -637,10 +707,12 @@ To spot-check the job opportunities in an area, select a few cities where you mi
 
 Indeed will send you a daily job alert whenever there are new jobs in that area. Over a period of time, you can consistently see how many new tech writing jobs are popping up in a city. I did this when I was initially considering where to live, and without question, there were about 3-4 times more technical writing jobs appearing in San Jose than Portland, and 2-3 times more than in Seattle.
 
-In this case, I didn't run comparisons for more cities, nor did I add "API" into the job title. I'm willing to bet that API technical writing jobs will always be a fraction of normal technical writing jobs (maybe 15%?) and always tied to companies with high densities of engineers.
+In these searches, I didn't run comparisons for more cities, nor did I add "API" into the job title. But you can set up multiple searches and assess the results.
 
-If you're relocating, you could let companies know when you'll be in the area. Set up as many interviews as you can during the same week. When companies see you arrive on site in person, it can allay fears about hiring someone out of state.
+If you're relocating, let companies know when you'll be in the area. Set up as many interviews as you can during the same week. When companies see you arrive on site in person, it can allay fears about hiring someone out of state.
 
-Much more could be written about where to live for API tech jobs. Overall, if you want to find a job in API documentation, target these popular areas &mdash;  California, Texas, Virginia, Massachusetts, New York, Florida, Maryland, New Jersey, Ohio, and Pennsylvania. On the other hand, if you want to start a farm or ranch, move to Wyoming.
+## Conclusion
+
+Much more could be written about where to live for API tech jobs. Overall, if you want to find a job in API documentation, target these popular areas: California, Texas, Virginia, Massachusetts, New York, Florida, Maryland, New Jersey, Ohio, and Pennsylvania. On the other hand, if you want to start a farm or ranch, move to Wyoming.
 
 {% include content/activities/look_for_apidoc_jobs.md %}
