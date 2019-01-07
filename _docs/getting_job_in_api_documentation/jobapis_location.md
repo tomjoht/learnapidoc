@@ -612,11 +612,10 @@ At any rate, the top 10 states with the highest percentages (dividing API hits b
 
 Since I'm currently in California (the "San Jose-Sunnyvale-Santa Clara" MSA), and California frequently appears at the top of these employment and API lists, I'll comment a bit on API jobs in this location. California (specifically Silicon Valley, which roughly spans from San Francisco to San Jose) continues to be a hub (if not *the* hub) for API technical writer jobs.
 
-The number of tech writers in the area fluctuates quite a bit. Here's the data from the last several Salary Database for San Jose-Sunnyvale-Santa Clara, CA:
+The number of tech writers in the area fluctuates quite a bit. Here's the data from the last several Salary Database for San Jose-Sunnyvale-Santa Clara, CA, starting in 2007 (the first year the STC started publishing the report):
 
 <table>
    <colgroup>
-      <col width="30%" />
       <col width="30%" />
       <col width="30%" />
       <col width="30%" />
@@ -625,34 +624,61 @@ The number of tech writers in the area fluctuates quite a bit. Here's the data f
       <tr>
          <th markdown="span">Year</th>
          <th markdown="span">Tech writers employed</th>
-         <th markdown="span">% change from previous year</th>
       </tr>
    </thead>
    <tbody>
       <tr>
+         <td markdown="span">2006</td>
+         <td markdown="span"> 1,370 </td>
+      </tr>
+      <tr>
+         <td markdown="span">2007</td>
+         <td markdown="span"> 1,350 </td>
+      </tr>
+      <tr>
+         <td markdown="span">2008</td>
+         <td markdown="span"> 1,350 </td>
+      </tr>
+      <tr>
+         <td markdown="span">2009</td>
+         <td markdown="span"> 1,510 </td>
+      </tr>
+      <tr>
+         <td markdown="span">2010</td>
+         <td markdown="span"> 1,340 </td>
+      </tr>
+      <tr>
+         <td markdown="span">2011</td>
+         <td markdown="span"> 1,340 </td>
+      </tr>
+      <tr>
+         <td markdown="span">2012</td>
+         <td markdown="span"> 1,200 </td>
+      </tr>
+      <tr>
+         <td markdown="span">2013</td>
+         <td markdown="span"> no data </td>
+      </tr>
+      <tr>
          <td markdown="span">2014</td>
          <td markdown="span"> 1,360 </td>
-         <td markdown="span">No previous data to compare.</td>
       </tr>
       <tr>
          <td markdown="span">2015</td>
          <td markdown="span">1,360 </td>
-         <td markdown="span">No change from previous year.</td>
       </tr>
       <tr>
          <td markdown="span">2016</td>
          <td markdown="span">1,160</td>
-         <td markdown="span">Decrease of 14.7%</td>
       </tr>
       <tr>
          <td markdown="span">2017</td>
          <td markdown="span">1,560</td>
-         <td markdown="span">Increase of 34.5%</td>
       </tr>
    </tbody>
 </table>
 
-Overall, San Jose-Sunnyvale-Santa Clara is a hot area for tech writer jobs. I get emails from recruiters pinging me several times a week, trying to fill positions. At my own company, I've seen how difficult it is to find qualified candidates for developer doc positions. At times, it seems like the candidates just aren't here.
+Overall, San Jose-Sunnyvale-Santa Clara is a hot area for tech writer jobs. The employment levels have been relatively flat for the past decade but jumped up 34% this past year. I can certainly see the effects of the job growth in this area. I get emails from recruiters pinging me several times a week, trying to fill positions. At my own company, I've seen how difficult it is to find qualified candidates for developer doc positions. At times, it seems like the candidates just aren't here.
 
 {% include course_image.html border="true" filename="californiasanfrancisco" ext_print="jpg" ext_web="jpg" alt="Should you move to California (or stay here if you're already in California)?" size="large" caption="Should you move to California (or stay here if you're already in California)?" %}
 
