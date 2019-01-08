@@ -1,5 +1,5 @@
 ---
-title: Locations for API doc writer jobs
+title: Best locations for API documentation writer jobs
 permalink: /jobapis_location.html
 sidebar: docapis
 path1: /jobapis.html
