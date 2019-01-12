@@ -64,7 +64,7 @@ uistring:
     expandall: Expand All
     collapseall: Collapse All
     title: Learn API Doc # Displays as site title on top nav bar and on site metadata
-    description: A guide for technical writers learning how to document APIs  # Displays as site description meta
+    description: A guide for technical writers and engineers learning how to document APIs  # Displays as site description meta
     github_edit_button_text: Edit on GitHub
     products: Products
     docindex_product: Product

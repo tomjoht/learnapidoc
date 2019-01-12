@@ -1,5 +1,5 @@
 ---
-title: "Documenting APIs: A guide for technical writers"
+title: "Documenting APIs: A guide for technical writers and engineers"
 permalink: /index.html
 sidebar: docapis
 type: homepage
