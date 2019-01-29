@@ -76,7 +76,6 @@ APIs differ considerably in their design, presentation, responses, and other det
 
 * [Dark Sky API](https://darksky.net/dev)
 * [Accuweather API](https://developer.accuweather.com/)
-* [Weather Underground API](https://www.wunderground.com/weather/api/)
 * [Weatherbit API](https://www.weatherbit.io/api)
 
 Each weather API has an entirely different approach to documentation. As you'll see going through this course, the variety and uniqueness of each API doc site (even when approaching the same topic &mdash; a weather forecast) presents a lot of challenges to tech writing teams. Not only do website styles vary but also API terminology and other vocabulary to describe similar concepts.
