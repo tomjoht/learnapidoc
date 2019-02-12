@@ -222,3 +222,7 @@ Finally, ask yourself, what's so bad about having two different sites? One site 
 The truth is that programmers have been operating this way for years with [Javadocs](nativelibraryapis_create_javadoc.html), [Doxygen](nativelibraryapis_doxygen.html), and other [document-generator tools](https://en.wikipedia.org/wiki/Comparison_of_documentation_generators) that generate documentation from Java, C++, C#, Python, Ruby, and other programming sources. Auto-generating the reference information from source code into a standalone output is extremely common and wouldn't be viewed as a fragmented information experience by programmers.
 
 So in the end, instead of feeling that having two outputs is fragmented or disjointed, reframe your perspective. Your Swagger output provides a clear go-to source for reference information about the endpoints, parameters, requests, and responses. The rest of your docs provide tutorials and other non-reference information. Your two outputs just became an organizational strategy for your documentation.
+
+## Next steps
+
+Now that you've had your head buried in API reference documentation, it's time to dive into testing. As you work with API endpoints and other code, you'll need to test these endpoints yourself, both to gather and verify the information in your documentation. Testing isn't always straightforward, so I devote an entire section to this topic. Continue to [Overview of testing your docs](testingdocs_overview.html).
