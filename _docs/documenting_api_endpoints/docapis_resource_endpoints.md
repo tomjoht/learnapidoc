@@ -128,7 +128,7 @@ To say that you could use the rewards resource wasn't always specific enough, be
 
 It can get awkward referring to the endpoint. For example, you might have a sentence like this: "When you call `/users/{userId}/rewards/`, you get a list of all rewards. To get a specific reward for a specific mission for a specific user, the `/users/{userId}/rewards/{missionId}` endpoint takes several parameters..."
 
-The longer the endpoint, the more cumbersome the reference becomes. These kinds of descriptions are more common in the [non-reference sections](docnonref.html) sections of your documentation. Generally, there's not a clear convention about how to refer to cumbersome endpoints. Adopt an approach that makes the most sense for your API.
+The longer the endpoint, the more cumbersome the reference becomes. These kinds of descriptions are more common in the [non-reference sections](docnonref.html) of your documentation. Generally, there's not a clear convention about how to refer to cumbersome endpoints. Adopt an approach that makes the most sense for your API.
 
 ## Endpoint for surfreport API
 

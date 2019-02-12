@@ -167,7 +167,7 @@ You could then use the same color for these parameters in later descriptions:
          <td>Here's my description of the user parameter.</td>
       </tr>
       <tr>
-         <td><b><code><span class="orange">bicycles</span></code></b></td>
+         <td><b><code><span class="orange">bicycleId</span></code></b></td>
          <td>Here's my description of the bicycles parameter.</td>
       </tr>
    </tbody>

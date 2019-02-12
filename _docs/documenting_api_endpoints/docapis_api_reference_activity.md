@@ -26,6 +26,6 @@ This part of the activity might be challenging, but here is where you'll start b
 
 ## Next steps
 
-Now that you've had your head buried in API reference documentation, it's time to dive into testing. As you work with API endpoints and other code, you'll need to test these endpoints yourself, both to gather and verify the information in your documentation. Testing isn't always straightforward, so I devote an entire section to this topic. Continue to [Overview to testing your docs](testingdocs_overview.html).
+Now that you understand the essential sections to cover in documenting API endpoints, let's look at standardized approaches for describing these sections, primarily with the [OpenAPI specification and Swagger](pubapis_rest_specification_formats.html). The OpenAPI standard will help make sure you cover all the necessary details in these sections, and it will present the information to users in a way that users have become accustomed to.
 
 {% include random_ad2.html %}
