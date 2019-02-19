@@ -16,7 +16,38 @@ span.calloutText
   margin-bottom: .3rem;
 }
 
+p.surveyBanner {
+  border-left: 0em;
+  background: lightgoldenrodyellow;
+  border-left: 0em;
+}
 
+@media (max-width: 800px) {
+  p.surveyBanner {
+    float: left;
+    clear: both;
+    padding: 1em;
+    border-left: 0em;
+    background: lightgoldenrodyellow;
+  }
+
+  .amazonBook {
+    float: left;
+  }
+}
+
+@media (max-width: 500px) {
+  p.surveyBanner {
+    clear: both;
+    border-left: 0em;
+    background: lightgoldenrodyellow;
+    display: block;
+    margin-right: 30px;
+  }
+  .amazonBook {
+    float: left;
+  }
+}
 
 @media (min-width: 767px)
 {
