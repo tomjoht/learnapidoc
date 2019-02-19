@@ -56,4 +56,4 @@ Although there are automated ways to publish API docs, we're focusing on content
 
 ## Next steps
 
-Now that you have an idea of the tutorial, let's get going with the first section: [Step 1: Resource description](docapis_resource_descriptions.html).
+Now that you have an idea of the tutorial, let's get started with the first section: [Step 1: Resource description](docapis_resource_descriptions.html).
