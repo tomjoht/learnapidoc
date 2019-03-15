@@ -8,7 +8,7 @@ highlighter: rouge
 exclude:
   - mobi
   - pdf
-  - images/ads/
+  - images/comics/
 
 markdown: kramdown
 kramdown:
@@ -46,7 +46,7 @@ defaults:
       image: true
   -
     scope:
-      path: images/ads/
+      path: images/comics/
     values:
       image: false
       published: false
