@@ -4,7 +4,7 @@ In this activity, you'll work with an OpenAPI file in Stoplight, which provides 
 
 To work with an OpenAPI file in Stoplight:
 
-1.  Currently, Stoplight's visual modeling editor supports only *OpenAPI 2.0*, not 3.0. You could convert your 3.0 spec using [APIMATIC Transformer](https://apimatic.io/transformer) to 2.0, but to speed things up, download this [2.0 OpenAPI JSON file already converted](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openweathermap_swagger20.json).
+1.  Currently, Stoplight's **visual modeling editor** (the Design tab) supports only *OpenAPI 2.0*, not 3.0. You could convert your 3.0 spec using [APIMATIC Transformer](https://apimatic.io/transformer) to 2.0, but to speed things up, download this [2.0 OpenAPI JSON file already converted](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openweathermap_swagger20.json).
 2.  Go to [next.stoplight.io/](https://next.stoplight.io/).
 3.  Click **Login** in the upper-right corner and log in using your GitHub account.
 4.  Click **New Personal Project**.
@@ -22,7 +22,8 @@ To work with an OpenAPI file in Stoplight:
 
     {% endif %}
 
-9.  Explore the different options in the Design editor (specifically, expand **Paths** and click **/weather > Call current weather data for...**) and make some arbitrary textual changes to see how to update information.
+9.  Explore the different options in the Design editor (specifically, expand endpoint under "Current weather data" and make some arbitrary textual changes to see how to update information.
+10. Scroll down to the "Send a Request" section at the bottom and see if you can make a successful request. (Hint: make sure to enter an API key for the `appid` value and add a value for a parameter such as `zip`).
 
 ### Automatically generate schema documentation
 
@@ -105,6 +106,6 @@ Stoplight does partially support OpenAPI specification (OAS) 3.0. The Designer t
 
 To experiment with the 3.0 support, download the [openapi_openweathermap.yml](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) that we built previously in the [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html). Import it using the same process as above but selecting OAS 3 instead of OAS 2.
 
-After you import it into Stoplight, notice the absence of the Design button. However, the Read view has a Send a Request section at the bottom. See if you can make a successful request (hint: make sure to enter the API key for the `appid` and add a value for a parameter such as `zip`)
+After you import it into Stoplight, notice the absence of the Design button. However, you can still edit your project in the Code view.
 
 {% if page.workshop_activities == true %}*For more information related to this activity, see [Stoplight &mdash; visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html).*{% endif %}
