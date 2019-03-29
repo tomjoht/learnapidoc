@@ -4,13 +4,13 @@ In this activity, you'll work with an OpenAPI file in Stoplight, which provides 
 
 To work with an OpenAPI file in Stoplight:
 
-1.  Currently, Stoplight supports only OpenAPI 2.0, not 3.0. You could convert your 3.0 spec using [APIMATIC Transformer](https://apimatic.io/transformer) to 2.0, but to speed things up, download this [2.0 OpenAPI JSON file already converted](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openweathermap_swagger20.json).
+1.  Currently, Stoplight's visual modeling editor supports only *OpenAPI 2.0*, not 3.0. You could convert your 3.0 spec using [APIMATIC Transformer](https://apimatic.io/transformer) to 2.0, but to speed things up, download this [2.0 OpenAPI JSON file already converted](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openweathermap_swagger20.json).
 2.  Go to [next.stoplight.io/](https://next.stoplight.io/).
 3.  Click **Login** in the upper-right corner and log in using your GitHub account.
 4.  Click **New Personal Project**.
 5.  Type a **Project name** (e.g., "OpenWeatherMap API"), choose whether you want the visibility public or private (it doesn't matter), and click **Next**.
 6.  On the next screen (Project Designer), select the **Import Existing** tab. Then the click **Upload OpenAPI (Swagger), Markdown or HTML File** button and select the **openweathermap_swagger20.json** file that you downloaded in step 1.
-7.  Click the **+openweathermap_swagger20.oas2.yml** button. The OpenAPI file gets uploaded into Stoplight, and the data populates the Stoplight interface.
+7.  Click the **+ Add openweathermap_swagger20.oas2.yml** button. The OpenAPI file gets uploaded into Stoplight, and the data populates the Stoplight interface.
 8.  At the top of the screen, switch between the **Code** and **Design** views by clicking the corresponding buttons at the top. Make some edits in the code and then switch to the Design view to see the edits reflected. (Note that Stoplight prefers JSON as the code format.) The following video shows this process:
 
     {% if site.format == "kindle" or site.format == "pdf" %}
@@ -97,5 +97,14 @@ One of the coolest features in Stoplight is the ability to auto-generate the sch
 7.  Click the **Raw Schema** tab to see the code that Stoplight automatically wrote for you based on the sample JSON you copied in.
 
     This auto-generated schema documentation will make your life easier. Even if you prefer to hand-code your OpenAPI specification files in another editor, you might find that you visit Stoplight just to auto-generate your response schema documentation.
+
+
+### Experimenting with OAS 3.0
+
+Stoplight does partially support OpenAPI specification (OAS) 3.0. The Designer tab isn't available, but you can edit the code and then view a Read-only display.
+
+To experiment with the 3.0 support, download the [openapi_openweathermap.yml](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) that we built previously in the [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html). Import it using the same process as above but selecting OAS 3 instead of OAS 2.
+
+After you import it into Stoplight, notice the absence of the Design button. However, the Read view has a Send a Request section at the bottom. See if you can make a successful request (hint: make sure to enter the API key for the `appid` and add a value for a parameter such as `zip`)
 
 {% if page.workshop_activities == true %}*For more information related to this activity, see [Stoplight &mdash; visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html).*{% endif %}
