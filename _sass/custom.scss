@@ -30,10 +30,6 @@ p.surveyBanner {
     border-left: 0em;
     background: lightgoldenrodyellow;
   }
-
-  .amazonBook {
-    float: left;
-  }
 }
 
 @media (max-width: 500px) {
@@ -44,9 +40,6 @@ p.surveyBanner {
     display: block;
     margin-right: 30px;
   }
-  .amazonBook {
-    float: left;
-  }
 }
 
 @media (min-width: 767px)
@@ -54,7 +47,6 @@ p.surveyBanner {
 p, .alert, pre, ol li ul li, ol li ol li {
   max-width: 90%;
 }
-
 }
 
 b, strong {
@@ -610,4 +602,13 @@ dl {
 
 .singlePostComics img {
     margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .amazonBook {
+    float: none !important;
+  }
+   .navbar-header {
+     display: none;
+   }
 }
