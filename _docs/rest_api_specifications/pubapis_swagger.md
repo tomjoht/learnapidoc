@@ -6,9 +6,6 @@ sidebar: docapis
 weight: 4.5
 section: restapispecifications
 path1: /restapispecifications.html
-redirect_from:
-- https://idratherbewriting.com/pubapis_swagger/
-- https://idratherbewriting.com/pubapis_swagger_intro
 glossary_keys:
 - swagger
 - openapi
