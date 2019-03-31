@@ -1,5 +1,5 @@
 ---
-title: "Activity: Evaluate API reference docs for core elements"
+title: "Activity: Evaluate API reference docs"
 permalink: /docapis_api_reference_activity.html
 weight: 3.9
 sidebar: docapis
@@ -7,10 +7,12 @@ section: docendpoints
 path1: /docendpoints.html
 ---
 
-After completing the [API reference tutorial](docapis_api_reference_tutorial_overview.html), you're ready to start an activity that gives you more experience in creating and editing API reference documentation. In this activity, you'll either critique or create your own API reference topic for the open-source API project you [identified earlier](docapis_find_open_source_project.html).
+After completing the [API reference tutorial](docapis_api_reference_tutorial_overview.html), you're ready to start an activity that gives you more experience in creating and editing API reference documentation. In this activity, you'll evaluating some API reference topics to identify issues.
 
 * TOC
 {:toc}
+
+{% include content/activities/whats_wrong_with_surfreport.md %}
 
 {% include content/activities/evaluate_elements_api_ref.md %}
 
