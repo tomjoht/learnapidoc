@@ -42,7 +42,7 @@ When you do, in the Swagger UI, a link appears after the API description along w
 {% include course_image.html filename="step8swaggerprogress" ext_print="png" ext_web="png" alt="External documentation link" caption="External documentation link" %}
 
 {: .tip}
-At this point, you can probably anticipate some challenges with integrating Swagger UI with the rest of your documentation. It seems that you will likely have two outputs and a semi-fragmented user experience. The `externalDocs` object at least gives you a predictable place to link back to your other [non-reference topics](docnonref.html). See [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html) for more information on integration strategies.
+At this point, you can probably anticipate some challenges with integrating Swagger UI with the rest of your documentation. It seems that you will likely have two outputs and a semi-fragmented user experience. The `externalDocs` object at least gives you a predictable place to link back to your other [conceptual topics](docconceptual.html). See [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html) for more information on integration strategies.
 
 {% include random_ad2.html %}
 

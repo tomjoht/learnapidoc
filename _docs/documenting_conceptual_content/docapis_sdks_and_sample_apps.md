@@ -4,8 +4,8 @@ permalink: docapis_sdks_and_sample_apps.html
 course: "Documenting REST APIs"
 weight: 6.7
 sidebar: docapis
-section: docnonref
-path1: /docnonref.html
+section: docconceptual
+path1: /docconceptual.html
 ---
 
 SDKs (software development kits) and sample apps are similar to [code samples and tutorials](docapis_codesamples_bestpractices.html) but are much more extensive and usually involve a whole collection of files that work together as a package or sample app. The SDK might include libraries that you download and incorporate into your application, and can consist of tools, sample apps, and other code.
@@ -102,3 +102,10 @@ With the [open-source project you identified](docapis_find_open_source_project.h
 3. Why did the developers choose to make the SDK available in that particular language?
 4. How extensive are the instructions for working with that SDK?
 5. Where is the code for the SDK stored and delivered? In GitHub? In a separate downloadable zip file?
+
+{% comment %}
+roll in content from here: https://blog.apimatic.io/how-to-create-sdks-for-your-apis-in-less-than-a-minute-bc90ae1ade99
+https://www.information-age.com/managing-sdks-api-platform-123467638/
+https://www.kairos.com/blog/what-s-the-difference-between-an-api-and-a-sdk
+https://www.programmableweb.com/news/why-api-providers-should-offer-sdks/analysis/2016/02/24
+{% endcomment %}

@@ -1,4 +1,4 @@
-## <i class="fa fa-user-circle"></i> Activity: Assess the non-reference content in 3 API doc sites
+## <i class="fa fa-user-circle"></i> Activity: Assess the conceptual content in 3 API doc sites
 
 1.  Go to the [list of 100 API doc sites](pubapis_apilist.html) and identify 3 API doc sites to analyze. The API doc sets could be API documentation sites from your favorite tools or companies, or just API sites you select at random.
 2.  Look through the documentation and identify whether the API documentation site contains each of the following:
@@ -17,7 +17,7 @@
        </colgroup>
        <thead>
           <tr>
-             <th markdown="span">Non-reference topic</th>
+             <th markdown="span">Conceptual topic</th>
              <th markdown="span">API doc site 1</th>
              <th markdown="span">API doc site 1</th>
              <th markdown="span">API doc site 1</th>
@@ -91,4 +91,4 @@
 
 3.  Do you have any noteworthy observations from your analysis?
 
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Activity: Identify non-reference content](docapis_nonref_activity.html).*{% endif %}
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Activity: Assess conceptual content](docapis_concept_activity.html).*{% endif %}

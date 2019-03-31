@@ -1,12 +1,12 @@
 ---
-title: Rate limiting and thresholds
+title: API rate limiting and thresholds
 permalink: docapis_rate_limiting_and_thresholds.html
 keywords:
 course: "Documenting REST APIs"
 weight: 6.5
 sidebar: docapis
-section: docnonref
-path1: /docnonref.html
+section: docconceptual
+path1: /docconceptual.html
 ---
 
 Rate limits determine how frequently you can call a particular endpoint. Usually, companies have different tiers (for example, free versus pro) and licenses (open-source, business, commercial) corresponding to different capabilities or rate limits with the API.

@@ -1,12 +1,12 @@
 ---
-title: Getting started tutorial
+title: API getting started
 permalink: /docapis_doc_getting_started_section.html
 keywords:
 course: "Documenting REST APIs"
 weight: 6.2
 sidebar: docapis
-section: docnonref
-path1: /docnonref.html
+section: docconceptual
+path1: /docconceptual.html
 ---
 
 Following the [API Overview section](docapis_doc_overview.html), you usually have a "Getting started" section that details the first steps users need to start using the API. This section often includes the whole process from beginning to end, compressed as simply as possible.

@@ -1,12 +1,12 @@
 ---
-title: Quick reference guide
+title: API quick reference
 permalink: /docapis_doc_quick_reference.html
 keywords:
 course: "Documenting REST APIs"
 weight: 6.8
 sidebar: docapis
-section: docnonref
-path1: /docnonref.html
+section: docconceptual
+path1: /docconceptual.html
 ---
 
 Quick reference guides serve a different function than [getting started tutorials](docapis_doc_getting_started_section.html). While the getting started tutorial helps beginners get oriented by providing an end-to-end instruction to make a simple API request, the quick reference guide helps users get a glimpse of the system as a whole, often by providing a list of the API's endpoints.

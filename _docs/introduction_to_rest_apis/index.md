@@ -43,7 +43,7 @@ In this course, after you practice using an API like a developer, you'll then sh
 4. [Request example](docapis_doc_sample_requests.html)
 5. [Response example](docapis_doc_sample_responses_and_schema.html)
 
-Exploring each of these sections will give you a solid understanding of how to document REST APIs. You'll also learn how to document the [non-reference sections for an API](docnonref.html), such as the [getting started tutorial](docapis_doc_getting_started_section.html), [status and error codes](docapis_doc_status_codes.html), [request authorization](docapis_more_about_authorization.html), and more.
+Exploring each of these sections will give you a solid understanding of how to document REST APIs. You'll also learn how to document the [conceptual sections for an API](docconceptual.html), such as the [getting started tutorial](docapis_doc_getting_started_section.html), [status and error codes](docapis_doc_status_codes.html), [request authorization](docapis_more_about_authorization.html), and more.
 
 {% include random_ad2.html %}
 

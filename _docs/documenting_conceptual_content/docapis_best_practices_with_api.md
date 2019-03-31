@@ -5,8 +5,8 @@ keywords:
 course: "Documenting REST APIs"
 weight: 6.91
 sidebar: docapis
-section: docnonref
-path1: /docnonref.html
+section: docconceptual
+path1: /docconceptual.html
 ---
 
 API best practices can refer to any general advice your product team wants to communicate to developers about working with the API. There aren't any set number of topics typically covered in API best practices. Instead, the best practices can be a catch-all title for content that doesn't fit anywhere else.

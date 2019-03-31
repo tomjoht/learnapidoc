@@ -109,13 +109,13 @@ In a design-first model, technical writers can also insert themselves early in o
 
 ## Documentation hosting features on Stoplight
 
-In addition to putting the OpenAPI specification at the center of the API lifecycle process, Stoplight has some other features of particular interest to technical writers. Stoplight offers a hosted docs solution, where you can integrate your non-reference content (the tutorials, guides, and other how-to's) with the reference API docs. Here's a sample page from Stoplight for a product called [Shopgate](https://developer.shopgate.com/).
+In addition to putting the OpenAPI specification at the center of the API lifecycle process, Stoplight has some other features of particular interest to technical writers. Stoplight offers a hosted docs solution, where you can integrate your conceptual content (the tutorials, guides, and other how-to's) with the reference API docs. Here's a sample page from Stoplight for a product called [Shopgate](https://developer.shopgate.com/).
 
 {% include course_image.html url="https://developer.shopgate.com/references/cart-integration/merchant-api/order/get-orders"   filename="shopgate" ext_print="png" ext_web="png" alt="Sample page from the Shopgate Developer Center, which uses Stoplight to generate their API documentation" caption="Sample page from the Shopgate Developer Center, which uses Stoplight to generate their API documentation" %}
 
-Note that you can integrate your reference and non-reference documentation in Stoplight's hosted doc solution. Integrating these two content types has been a longtime challenge for tech writers in the API doc space. (For more on integration challenges with API documentation, see [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).)
+Note that you can integrate your reference and conceptual documentation in Stoplight's hosted doc solution. Integrating these two content types has been a longtime challenge for tech writers in the API doc space. (For more on integration challenges with API documentation, see [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).)
 
-Stoplight also allows you to create variables to use in *both* your specification and your how-to docs. Stoplight plans to take re-use one step further by allowing re-use of your [spec's component definitions](pubapis_openapi_step5_components_object.html) in your [non-reference documentation](docnonref.html) as well. (But this feature is still forthcoming.)
+Stoplight also allows you to create variables to use in *both* your specification and your how-to docs. Stoplight plans to take re-use one step further by allowing re-use of your [spec's component definitions](pubapis_openapi_step5_components_object.html) in your [conceptual documentation](docconceptual.html) as well. (But this feature is still forthcoming.)
 
 {% include random_ad.html %}
 

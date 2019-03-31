@@ -19,7 +19,7 @@ Whenever discussions about Swagger and other REST API specifications take place,
 
 When you start pushing your documentation into another source file &mdash; in this case, a YAML or JSON file that is included in a Swagger UI file set, you end up splitting your single source of truth into multiple sources. You might have defined your endpoints and parameters in your regular documentation, and now the OpenAPI spec asks you to provide the same endpoints and descriptions in the spec. Do you copy and paste the same parameters and other information across both sites? Do you somehow generate the descriptions from the same source?
 
-This conundrum is usually crystal clear to technical writers. API doc consists of more than reference material about the APIs. You've got all kinds of other information about getting API keys, setup and configuration of services, or other details that don't fit into the spec. I covered much of this in [Documenting non-reference sections](docapis_create_user_guide.html) part of the guide. You have non-reference sections such as the following:
+This conundrum is usually crystal clear to technical writers. API doc consists of more than reference material about the APIs. You've got all kinds of other information about getting API keys, setup and configuration of services, or other details that don't fit into the spec. I covered much of this in [Documenting conceptual topics](docconceptual.html) part of the guide. You have conceptual sections such as the following:
 
 * [API Overview](docapis_doc_overview.html)
 * [Getting started tutorial](docapis_doc_getting_started_section.html)
@@ -217,11 +217,11 @@ Cherryleaf has an interesting post called [Example of API documentation portal u
 
 ## Option 6: Change perspectives &mdash; Having two sites isn't so bad {#option6}
 
-Finally, ask yourself, what's so bad about having two different sites? One site for your reference information, and another for your [non-reference documentation](docnonref.html). Programmers might find the Swagger-based reference information convenient because it distills and simplifies the body of information. Rather than having a massive site to navigate, the Swagger output provides the core reference information they need. When they want non-reference information, they can consult the accompanying guide. Think of the Swagger UI output as your API's [quick reference guide](docapis_doc_quick_reference.html).
+Finally, ask yourself, what's so bad about having two different sites? One site for your reference information, and another for your [conceptual documentation](docconceptual.html). Programmers might find the Swagger-based reference information convenient because it distills and simplifies the body of information. Rather than having a massive site to navigate, the Swagger output provides the core reference information they need. When they want conceptual information, they can consult the accompanying guide. Think of the Swagger UI output as your API's [quick reference guide](docapis_doc_quick_reference.html).
 
 The truth is that programmers have been operating this way for years with [Javadocs](nativelibraryapis_create_javadoc.html), [Doxygen](nativelibraryapis_doxygen.html), and other [document-generator tools](https://en.wikipedia.org/wiki/Comparison_of_documentation_generators) that generate documentation from Java, C++, C#, Python, Ruby, and other programming sources. Auto-generating the reference information from source code into a standalone output is extremely common and wouldn't be viewed as a fragmented information experience by programmers.
 
-So in the end, instead of feeling that having two outputs is fragmented or disjointed, reframe your perspective. Your Swagger output provides a clear go-to source for reference information about the endpoints, parameters, requests, and responses. The rest of your docs provide tutorials and other non-reference information. Your two outputs just became an organizational strategy for your documentation.
+So in the end, instead of feeling that having two outputs is fragmented or disjointed, reframe your perspective. Your Swagger output provides a clear go-to source for reference information about the endpoints, parameters, requests, and responses. The rest of your docs provide tutorials and other conceptual information. Your two outputs just became an organizational strategy for your documentation.
 
 ## Next steps
 

@@ -59,9 +59,11 @@ The content here merely contains the same exercises that appear embedded in othe
 
 {% include workshop_button.html title="Activity 4d: Work with the OpenAPI in Stoplight" activity="work_with_stoplight" button_type="info" %}
 
-## Part VI: Non-reference content in API docs
+## Part VI: Conceptual content in API docs
 
-{% include workshop_button.html title="Activity 6a: Assess the non-reference content in 3 API doc sites" activity="assess_nonref_content" button_type="danger" %}
+In this section, we follow an inductive approach where you look at the three examples of each conceptual topic and decide which approach is best.
+
+{% include workshop_button.html title="Activity 6a: Comparing conceptual content" activity="conceptual_comparisons" button_type="warning" %}
 
 ## Part VII: Publishing API documentation
 

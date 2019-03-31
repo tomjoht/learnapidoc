@@ -66,7 +66,7 @@ Most developers are comfortable with Markdown, enjoy being able to work in their
 
 Granted, engineers who write documentation often fall prey to the [curse of knowledge](https://idratherbewriting.com/2007/01/24/the-curse-of-knowledge-the-more-you-know-the-worse-communicator-you-become/). That is, the more they know about a topic, the more assumptions and background information they have getting in the way of clear communication. Even so, technical writers may not always have the time to write documentation for engineering topics. In many cases, a development group that has an API might not even have a technical writer available. Developers might handle everything, from coding to docs.
 
-If tech writers are available, API documentation is usually a collaborative effort between developers and technical writers. Developers tend to focus more on writing the [reference documentation](docendpoints.html), while technical writers focus more on the [non-reference documentation](docnonref.html). Regardless of the division of labor, both technical writers and developers tend to work with each other in a close way. As such, docs-as-code tools become essential.
+If tech writers are available, API documentation is usually a collaborative effort between developers and technical writers. Developers tend to focus more on writing the [reference documentation](docendpoints.html), while technical writers focus more on the [conceptual documentation](docconceptual.html). Regardless of the division of labor, both technical writers and developers tend to work with each other in a close way. As such, docs-as-code tools become essential.
 
 ### Continuous delivery
 

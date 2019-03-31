@@ -1,12 +1,12 @@
 ---
-title: "Status and error codes"
+title: "API status and error codes"
 permalink: /docapis_doc_status_codes.html
 redirect_from:
 - https://idratherbewriting.com/learnapidoc/docapis_doc_response_codes.html
 weight: 6.4
 sidebar: docapis
-section: docnonref
-path1: /docnonref.html
+section: docconceptual
+path1: /docconceptual.html
 ---
 
 Status and error codes refer to a code number in the response header that indicates the general classification of the response &mdash; for example, whether the request was successful (200), resulted in a server error (500), had authorization issues (403), and so on. Standard status codes don't usually need much documentation, but custom status and error codes specific to your API do. Error codes in particular help in troubleshooting bad requests.

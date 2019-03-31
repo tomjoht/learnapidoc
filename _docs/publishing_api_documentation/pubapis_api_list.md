@@ -128,6 +128,10 @@ Browse a few of these documentation sites to get a sense of the variety, but als
 108. [Paymill API](https://developers.paymill.com/API/index)
 109. [Rundown API](https://rapidapi.com/therundown/api/therundown?endpoint=5ace93eae4b04378c0ca27ba)
 110. [Zype API](https://docs.zype.com/reference)
+111. [Yummyly API](https://developer.yummly.com/)
+112. [Edamam Food APIs](https://developer.edamam.com/)
+113. [Veracode API](https://help.veracode.com/reader/LMv_dtSHyb7iIxAQznC~9w/HmF8Z4cz70Rb2y1p39tWDw)
+114. [SAP](https://help.sap.com/viewer/58f583a7643e48cf944cf554eb961f5b/4.2/en-US)
 
 {% include tip.html content="I last checked these links in December 2018. Given how fast the technology landscape changes, some links may be out of date. However, if you just type <i>{product} + api docs</i> into Google's search, you will likely find the company's developer doc site. Most commonly, the API docs are at developer.{company}.com." %}
 

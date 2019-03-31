@@ -105,7 +105,7 @@ Despite the variety with terminology, generally an API has various "resources" t
 Resource descriptions (as well as endpoint descriptions) are typically short, usually 1-3 sentences. What if you have a lot more detail to add? In these situations, keep in mind the difference between reference documentation and user guides/tutorials:
 
 * **Reference documentation**: Concise, bare-bones information that developers can quickly reference.
-* **User guides/tutorials**: More elaborate detail about how to use the API, including step-by-step instructions, code samples, concepts, and procedures. I go into much more detail about this content in [Documenting non-reference sections](docnonref.html).
+* **User guides/tutorials**: More elaborate detail about how to use the API, including step-by-step instructions, code samples, concepts, and procedures. I go into much more detail about this content in [Documenting concepts sections](docconceptual.html).
 
 Although the description in an API reference topic provides a 1-3 sentence summary of the information that the resource contains, you might expand on this with much greater detail in the user guide. (You could link the reference description to the places in the guide where you provide more detail.)
 

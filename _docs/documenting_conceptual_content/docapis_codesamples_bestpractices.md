@@ -1,12 +1,12 @@
 ---
-title: Code samples and tutorials
+title: API code tutorials
 permalink: /docapis_codesamples_bestpractices.html
 keywords:
 course: "Documenting REST APIs"
 weight: 6.6
 sidebar: docapis
-section: docnonref
-path1: /docnonref.html
+section: docconceptual
+path1: /docconceptual.html
 ---
 
 Developer documentation tends to include a lot of code samples. These code samples might not be included with the endpoints you document, but as you create tasks and more sophisticated workflows about how to use the API to accomplish a variety of goals, you'll end up leveraging different endpoints and showing how to address different scenarios. Code tutorials are a crucial part of your user guide.
@@ -235,3 +235,7 @@ With the [open-source project you identified](docapis_find_open_source_project.h
 3. Are there comments within the blocks of code?
 4. How do the conceptual explanations point to specific lines of code? Is the explanation given before, during, or after the blocks of code?
 5. Do the code explanations focus more on the "why" (the decisions behind the code) or the "what" (the mechanics of the code)?
+
+{% comment %}
+integrate the info from here or link to it: https://www.programmableweb.com/news/how-to-write-effective-api-sample-code/how-to/2014/12/02
+{% endcomment %}

@@ -187,46 +187,46 @@ folders:
   - title: "Activity: Test your project's documentation"
     jurl: /testingdocs_activity.html
 
-- title: "VI: Non-reference API topics"
-  jurl: /docnonref.html
-  description: "While reference topics in APIs generally receive the most attention, the non-reference topics, such as getting started tutorials, information about authorization, rate limiting, status and error codes, quick reference guides, and other topics constitute about half of the documentation. These topics are usually handled by technical writers more than engineers. You can evaluate the quality of API documentation in part by looking to see whether it includes these non-reference topics."
+- title: "VI: Conceptual API topics"
+  jurl: /docconceptual.html
+  description: "While reference topics in APIs generally receive the most attention, the conceptual topics, such as getting started tutorials, information about authorization, rate limiting, status and error codes, quick reference guides, and other topics constitute about half of the documentation. These topics are usually handled by technical writers more than engineers. You can evaluate the quality of API documentation in part by looking to see whether it includes these conceptual topics."
   folderitems:
 
-  - title: User guide topics
-    jurl: /docapis_create_user_guide.html
+  - title: API conceptual topics overview
+    jurl: /docapis_conceptual_topics_overview.html
 
   - title: API overview
     jurl: /docapis_doc_overview.html
 
-  - title: Getting started tutorial
+  - title: API getting started
     jurl: /docapis_doc_getting_started_section.html
 
-  - title: Authentication and authorization
+  - title: API authentication and authorization
     jurl: /docapis_more_about_authorization.html
 
-  - title: Status and error codes
+  - title: API status and error codes
     jurl: /docapis_doc_status_codes.html
 
-  - title: Rate limiting and thresholds
+  - title: API rate limiting and thresholds
     jurl: /docapis_rate_limiting_and_thresholds.html
 
-  - title: Code samples and tutorials
+  - title: API code tutorials
     jurl: /docapis_codesamples_bestpractices.html
 
   - title: SDKs and sample apps
     jurl: /docapis_sdks_and_sample_apps.html
 
-  - title: Quick reference guide
+  - title: API quick reference
     jurl: /docapis_doc_quick_reference.html
 
-  - title: API Glossary
+  - title: API glossary
     jurl: /docapis_glossary_section.html
 
   - title: API best practices
     jurl: /docapis_best_practices_with_api.html
 
-  - title: "Activity: Assess the non-reference content in your project"
-    jurl: /docapis_nonref_activity.html
+  - title: "Activity: Assess the conceptual content in your project"
+    jurl: /docapis_concept_activity.html
 
 - title: "VII: Publishing API docs"
   jurl: /publishingapis.html

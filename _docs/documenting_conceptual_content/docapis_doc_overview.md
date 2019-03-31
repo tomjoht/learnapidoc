@@ -5,8 +5,8 @@ keywords:
 course: "Documenting REST APIs"
 weight: 6.1
 sidebar: docapis
-section: docnonref
-path1: /docnonref.html
+section: docconceptual
+path1: /docconceptual.html
 ---
 
 The API overview explains what you can do with the API, including the high-level business goals, the market needs or pain points it solves, who the API is for, and other introductory information.
@@ -63,7 +63,7 @@ Lyft's API overview starts in a similar way, with sections titled "What is Lyft?
 
 ### IBM Watson Assistant
 
-{% include course_image.html url="https://console.bluemix.net/docs/services/conversation/index.html#about" filename="ibmcloudoverview" ext_web="png" ext_print="png" alt="IBM Watson Assistant overview" caption="IBM Watson Assistant overview" %}
+{% include course_image.html url="https://cloud.ibm.com/docs/services/assistant?topic=assistant-index#index" filename="ibmcloudoverview" ext_web="png" ext_print="png" alt="IBM Watson Assistant overview" caption="IBM Watson Assistant overview" %}
 
 IBM Watson Assistant starts off with a brief summary of the service, followed by a high-level diagram of the system and a summary about how to implement it. Including a diagram of your API gives users a good grounding about what to expect, such as the level of complexity and time it will take to incorporate the API.
 
