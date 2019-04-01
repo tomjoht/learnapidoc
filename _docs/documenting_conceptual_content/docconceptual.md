@@ -1,5 +1,5 @@
 ---
-title: Conceptual API topics
+title: Conceptual topics in API docs
 permalink: /docconceptual.html
 sidebar: docapis
 path1: /docconceptual.html

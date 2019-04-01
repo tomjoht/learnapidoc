@@ -85,6 +85,11 @@ In this section, we follow an inductive approach where you look at the three exa
 
 {% include workshop_button.html title="Activity 8a: Look at API documentation jobs and requirements" activity="look_for_apidoc_jobs" button_type="info" %}
 
+## Conclusion {#conclusion}
+
+{% include workshop_button.html title="API Jeopardy: Test your knowledge" activity="jeopardy_questions" button_type="primary" %}
+
+
 {% comment %}
 ## Survey
 

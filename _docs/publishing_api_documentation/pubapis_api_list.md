@@ -17,121 +17,126 @@ Rather than approach the topic of publishing prescriptively, let's begin with so
 
 Browse a few of these documentation sites to get a sense of the variety, but also try to identify common patterns. In this list, I include not only impressively designed docs but also docs that look like they were created by a department intern just learning HTML. The variety in the list demonstrates the many options for publishing tools and approaches, as well as terminology. It seems that almost everyone does their API docs their own way, with their own site, branding, organization, and style.
 
-0.  [Shopgate API docs](https://developer.shopgate.com/)
-1.  [Google Places API docs](https://developers.google.com/places/webservice/intro)
-2.  [Twitter API docs](https://dev.twitter.com/rest/public)
-3.  [Flickr API docs](https://www.flickr.com/services/api/)
-4.  [Facebook's Graph API docs](https://developers.facebook.com/docs/graph-api/overview)
-5.  [Youtube API docs](https://developers.google.com/youtube/v3/)
-6.  [eBay API docs](https://go.developer.ebay.com/api-documentation)
-7.  [Amazon EC2 API docs](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/Welcome.html)
-8.  [Twilio API docs](https://www.twilio.com/docs/api)
-9.  [Last.fm API docs](https://www.last.fm/api)
-10. [Bing Maps docs](https://www.microsoft.com/en-us/maps/documentation)
-11. [gpodder.net Web Service docs](http://gpoddernet.readthedocs.io/en/latest/api/)
-12. [Google Cloud API docs](https://cloud.google.com/appengine/docs)
-13. [Foursquare Places API docs](https://developer.foursquare.com/places-api)
-14. [Walmart API docs](https://developer.walmartlabs.com/)
-15. [Dropbox API docs](https://www.dropbox.com/developers/core/docs)
-16. [Splunk API docs](http://dev.splunk.com/restapi)
-17. [Revit API docs](http://www.revitapidocs.com/)
-18. [Docusign API docs](https://www.docusign.com/developer-center/documentation)
-19. [Geonames docs](http://www.geonames.org/export/web-services.html)
-20. [Adsense API docs](https://developers.google.com/adsense/management/)
-21. [Box API docs](https://developer.box.com/docs)
-22. [Amazon API docs](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/Welcome.html)
-23. [Linkedin REST API docs](https://developer.linkedin.com/docs/rest-api)
-24. [Instagram API docs](https://instagram.com/developer/)
-25. [Zomato API docs](https://developers.zomato.com/documentation)
-26. [Yahoo Social API docs](https://developer.yahoo.com/social/rest_api_guide/index.html)
-27. [Google Analytics Management API docs](https://developers.google.com/analytics/devguides/config/)
-28. [Yelp API docs](https://www.yelp.com/developers/documentation)
-29. [Lyft API docs](https://developer.lyft.com/docs/overview)
-30. [Facebook API docs](https://developers.facebook.com/docs/graph-api)
-31. [Eventful API docs](http://api.eventful.com/docs)
-32. [Concur API docs](https://developer.concur.com/docs-and-resources/documentation)
-33. [Paypal API docs](https://developer.paypal.com/docs/api/)
-34. [Bitly API docs](http://dev.bitly.com/)
-35. [Callfire API docs](https://developers.callfire.com/docs.html)
-36. [Reddit API docs](http://www.reddit.com/dev/api)
-37. [Netvibes API docs](https://uwa.netvibes.com/docs/Uwa/html/index.html)
-38. [Rhapsody API docs](https://developer.rhapsody.com/)
-39. [Donors Choose docs](http://data.donorschoose.org/docs/overview/)
-40. [Sendgrid API docs](https://sendgrid.com/docs/index.html)
-41. [Photobucket API docs](http://bit.ly/1rMDb5b)
-42. [Mailchimp docs](http://kb.mailchimp.com/api/?utm_source=apidocs&utm_medium=internal_ad&utm_campaign=api_v3)
-43. [Basecamp API docs](https://github.com/basecamp/bcx-api/)
-44. [Smugmug API docs](https://smugmug.atlassian.net/wiki/display/API/Home)
-45. [NYTimes API docs](http://developer.nytimes.com/docs/read/article_search_api_v2)
-46. [USPS API docs](https://www.usps.com/business/web-tools-apis/track-and-confirm-api.htm)
-47. [NWS API docs](http://www.nws.noaa.gov/mdl/survey/pgb_survey/dev/rest.php)
-48. [Evernote API docs](https://dev.evernote.com/doc/)
-49. [Stripe API docs](https://stripe.com/docs/api)
-50. [Parse API docs](http://docs.parseplatform.org/rest/guide/)
-51. [Opensecrets API docs](https://www.opensecrets.org/resources/create/apis.php)
-52. [CNN API docs](http://developer.cnn.com/docs/)
-53. [CTA Train Tracker API](http://www.transitchicago.com/developers/ttdocs/default.aspx)
-54. [Amazon API docs](http://docs.aws.amazon.com/AlexaWebInfoService/latest/)
-55. [Revit API docs](https://docs.synapsepay.com/)
-56. [Citygrid API docs](http://docs.citygridmedia.com/display/citygridv2/CityGrid+APIs)
-57. [Mapbox API docs](https://www.mapbox.com/developers/api/)
-58. [Groupon API docs](http://partner-api.groupon.com/help/)
-59. [AddThis Data API docs](http://www.addthis.com/academy/addthis-data-api/)
-60. [Yahoo Weather API docs](https://developer.yahoo.com/weather/)
-61. [Glassdoor Jobs API docs](https://www.glassdoor.com/developer/jobsApiActions.htm)
-62. [Crunchbase API docs](http://data.crunchbase.com/)
-63. [Zendesk API docs](https://developer.zendesk.com/rest_api/docs/core/introduction)
-64. [Validic API docs](https://docs.validic.com/)
-65. [Ninja Blocks API docs](http://docs.ninja.is/rest/user.html)
-66. [Pushover API docs](https://pushover.net/api)
-67. [Pusher Client API docs](https://pusher.com/docs/client_api_guide)
-68. [Pingdom API docs](https://www.pingdom.com/resources/api)
-69. [Daily Mile API docs](https://www.dailymile.com/api/documentation)
-70. [Jive docs](https://developers.jivesoftware.com/api/v3/cloud/rest/)
-71. [IBM Watson docs](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/apis/)
-72. [HipChat API docs](https://www.hipchat.com/docs/apiv2)
-73. [Stores API docs](https://developer.bigcommerce.com/api/)
-74. [Alchemy API docs](https://www.ibm.com/watson/alchemy-api.html)
-75. [Indivo API 2.0 docs](http://docs.indivohealth.org/en/2.0/api.html)
-76. [Socrata API docs](http://dev.socrata.com/)
-77. [Github API docs](https://developer.github.com/v3/)
-78. [Mailgun API docs](https://documentation.mailgun.com/api_reference.html)
-79. [RiotGames API docs](https://developer.riotgames.com/api-methods/)
-80. [Basecamp API docs](https://github.com/basecamp/bcx-api)
-81. [ESPN API docs](http://www.espn.com/apis/devcenter/docs/)
-82. [Snap API docs](https://github.com/mgp25/SC-API/wiki/Snap-API-Documentation)
-83. [SwiftType API docs](https://swiftype.com/documentation/)
-84. [Snipcart API docs](http://docs.snipcart.com/api-reference/introduction)
-85. [VHX API docs](http://dev.vhx.tv/docs/api/)
-86. [Polldaddy API docs](http://support.polldaddy.com/api/)
-87. [Gumroad API docs](https://gumroad.com/api)
-88. [Formstack API docs](http://developers.formstack.com/)
-89. [Livefyre API docs](http://answers.livefyre.com/developers/api-reference/)
-90. [Salesforce Chatter RESt API docs](https://developer.salesforce.com/docs/atlas.en-us.chatterapi.meta/chatterapi/)
-91.  [The Movie Database API docs](https://developers.themoviedb.org/3/getting-started)
-92.  [Free Music Archive API docs](https://freemusicarchive.org/api)
-93.  [Context.io docs](https://docs.context.io/#getting-started)
-94.  [CouchDB docs](http://docs.couchdb.org)
-95.  [Smart Home API (Amazon Alexa) docs](https://developer.amazon.com/docs/device-apis/alexa-interface.html)
-96.  [Coinbase docs](https://developers.coinbase.com/api/v2)
-97.  [Shopify API docs](https://help.shopify.com/api/reference)
-98.  [Authorize.net docs](http://developer.authorize.net/api/reference/index.html)
-99.  [Trip Advisor docs](https://developer-tripadvisor.com/content-api/documentation/)
-100. [Pinterest docs](https://developers.pinterest.com/docs/getting-started/introduction/?)
-101. [Uber docs](https://developer.uber.com/docs/)
-102. [Spotify API](https://developer.spotify.com/web-api/)
-103. [Trello API](https://developers.trello.com/)
-104. [Yext API](http://developer.yext.com/docs/)
-105. [Threat Stack API docs](https://apidocs.threatstack.com/v2/)
-106. [Strava API](https://developers.strava.com/)
-107. [Plaid API](https://plaid.com/docs/)
-108. [Paymill API](https://developers.paymill.com/API/index)
-109. [Rundown API](https://rapidapi.com/therundown/api/therundown?endpoint=5ace93eae4b04378c0ca27ba)
-110. [Zype API](https://docs.zype.com/reference)
-111. [Yummyly API](https://developer.yummly.com/)
-112. [Edamam Food APIs](https://developer.edamam.com/)
-113. [Veracode API](https://help.veracode.com/reader/LMv_dtSHyb7iIxAQznC~9w/HmF8Z4cz70Rb2y1p39tWDw)
-114. [SAP](https://help.sap.com/viewer/58f583a7643e48cf944cf554eb961f5b/4.2/en-US)
+
+<ol>
+  <li><a rel="nofollow" href="https://developer.shopgate.com/">Shopgate API docs</a></li>
+  <li><a rel="nofollow" href="https://developers.google.com/places/webservice/intro">Google Places API docs</a></li>
+  <li><a rel="nofollow" href="https://dev.twitter.com/rest/public">Twitter API docs</a></li>
+  <li><a rel="nofollow" href="https://www.flickr.com/services/api/">Flickr API docs</a></li>
+  <li><a rel="nofollow" href="https://developers.facebook.com/docs/graph-api/overview">Facebook’s Graph API docs</a></li>
+  <li><a rel="nofollow" href="https://developers.google.com/youtube/v3/">Youtube API docs</a></li>
+  <li><a rel="nofollow" href="https://go.developer.ebay.com/api-documentation">eBay API docs</a></li>
+  <li><a rel="nofollow" href="http://docs.aws.amazon.com/AWSEC2/latest/APIReference/Welcome.html">Amazon EC2 API docs</a></li>
+  <li><a rel="nofollow" href="https://www.twilio.com/docs/api">Twilio API docs</a></li>
+  <li><a rel="nofollow" href="https://www.last.fm/api">Last.fm API docs</a></li>
+  <li><a rel="nofollow" href="https://www.microsoft.com/en-us/maps/documentation">Bing Maps docs</a></li>
+  <li><a rel="nofollow" href="http://gpoddernet.readthedocs.io/en/latest/api/">gpodder.net Web Service docs</a></li>
+  <li><a rel="nofollow" href="https://cloud.google.com/appengine/docs">Google Cloud API docs</a></li>
+  <li><a rel="nofollow" href="https://developer.foursquare.com/places-api">Foursquare Places API docs</a></li>
+  <li><a rel="nofollow" href="https://developer.walmartlabs.com/">Walmart API docs</a></li>
+  <li><a rel="nofollow" href="https://www.dropbox.com/developers/core/docs">Dropbox API docs</a></li>
+  <li><a rel="nofollow" href="http://dev.splunk.com/restapi">Splunk API docs</a></li>
+  <li><a rel="nofollow" href="http://www.revitapidocs.com/">Revit API docs</a></li>
+  <li><a rel="nofollow" href="https://www.docusign.com/developer-center/documentation">Docusign API docs</a></li>
+  <li><a rel="nofollow" href="http://www.geonames.org/export/web-services.html">Geonames docs</a></li>
+  <li><a rel="nofollow" href="https://developers.google.com/adsense/management/">Adsense API docs</a></li>
+  <li><a rel="nofollow" href="https://developer.box.com/docs">Box API docs</a></li>
+  <li><a rel="nofollow" href="http://docs.aws.amazon.com/AWSEC2/latest/APIReference/Welcome.html">Amazon API docs</a></li>
+  <li><a rel="nofollow" href="https://developer.linkedin.com/docs/rest-api">Linkedin REST API docs</a></li>
+  <li><a rel="nofollow" href="https://instagram.com/developer/">Instagram API docs</a></li>
+  <li><a rel="nofollow" href="https://developers.zomato.com/documentation">Zomato API docs</a></li>
+  <li><a rel="nofollow" href="https://developer.yahoo.com/social/rest_api_guide/index.html">Yahoo Social API docs</a></li>
+  <li><a rel="nofollow" href="https://developers.google.com/analytics/devguides/config/">Google Analytics Management API docs</a></li>
+  <li><a rel="nofollow" href="https://www.yelp.com/developers/documentation">Yelp API docs</a></li>
+  <li><a rel="nofollow" href="https://developer.lyft.com/docs/overview">Lyft API docs</a></li>
+  <li><a rel="nofollow" href="https://developers.facebook.com/docs/graph-api">Facebook API docs</a></li>
+  <li><a rel="nofollow" href="http://api.eventful.com/docs">Eventful API docs</a></li>
+  <li><a rel="nofollow" href="https://developer.concur.com/docs-and-resources/documentation">Concur API docs</a></li>
+  <li><a rel="nofollow" href="https://developer.paypal.com/docs/api/">Paypal API docs</a></li>
+  <li><a rel="nofollow" href="http://dev.bitly.com/">Bitly API docs</a></li>
+  <li><a rel="nofollow" href="https://developers.callfire.com/docs.html">Callfire API docs</a></li>
+  <li><a rel="nofollow" href="http://www.reddit.com/dev/api">Reddit API docs</a></li>
+  <li><a rel="nofollow" href="https://uwa.netvibes.com/docs/Uwa/html/index.html">Netvibes API docs</a></li>
+  <li><a rel="nofollow" href="https://developer.rhapsody.com/">Rhapsody API docs</a></li>
+  <li><a rel="nofollow" href="http://data.donorschoose.org/docs/overview/">Donors Choose docs</a></li>
+  <li><a rel="nofollow" href="https://sendgrid.com/docs/index.html">Sendgrid API docs</a></li>
+  <li><a rel="nofollow" href="http://bit.ly/1rMDb5b">Photobucket API docs</a></li>
+  <li><a rel="nofollow" href="http://kb.mailchimp.com/api/?utm_source=apidocs&amp;utm_medium=internal_ad&amp;utm_campaign=api_v3">Mailchimp docs</a></li>
+  <li><a rel="nofollow" href="https://github.com/basecamp/bcx-api/">Basecamp API docs</a></li>
+  <li><a rel="nofollow" href="https://smugmug.atlassian.net/wiki/display/API/Home">Smugmug API docs</a></li>
+  <li><a rel="nofollow" href="http://developer.nytimes.com/docs/read/article_search_api_v2">NYTimes API docs</a></li>
+  <li><a rel="nofollow" href="https://www.usps.com/business/web-tools-apis/track-and-confirm-api.htm">USPS API docs</a></li>
+  <li><a rel="nofollow" href="http://www.nws.noaa.gov/mdl/survey/pgb_survey/dev/rest.php">NWS API docs</a></li>
+  <li><a rel="nofollow" href="https://dev.evernote.com/doc/">Evernote API docs</a></li>
+  <li><a rel="nofollow" href="https://stripe.com/docs/api">Stripe API docs</a></li>
+  <li><a rel="nofollow" href="http://docs.parseplatform.org/rest/guide/">Parse API docs</a></li>
+  <li><a rel="nofollow" href="https://www.opensecrets.org/resources/create/apis.php">Opensecrets API docs</a></li>
+  <li><a rel="nofollow" href="http://developer.cnn.com/docs/">CNN API docs</a></li>
+  <li><a rel="nofollow" href="http://www.transitchicago.com/developers/ttdocs/default.aspx">CTA Train Tracker API</a></li>
+  <li><a rel="nofollow" href="http://docs.aws.amazon.com/AlexaWebInfoService/latest/">Amazon API docs</a></li>
+  <li><a rel="nofollow" href="https://docs.synapsepay.com/">Revit API docs</a></li>
+  <li><a rel="nofollow" href="http://docs.citygridmedia.com/display/citygridv2/CityGrid+APIs">Citygrid API docs</a></li>
+  <li><a rel="nofollow" href="https://www.mapbox.com/developers/api/">Mapbox API docs</a></li>
+  <li><a rel="nofollow" href="http://partner-api.groupon.com/help/">Groupon API docs</a></li>
+  <li><a rel="nofollow" href="http://www.addthis.com/academy/addthis-data-api/">AddThis Data API docs</a></li>
+  <li><a rel="nofollow" href="https://developer.yahoo.com/weather/">Yahoo Weather API docs</a></li>
+  <li><a rel="nofollow" href="https://www.glassdoor.com/developer/jobsApiActions.htm">Glassdoor Jobs API docs</a></li>
+  <li><a rel="nofollow" href="http://data.crunchbase.com/">Crunchbase API docs</a></li>
+  <li><a rel="nofollow" href="https://developer.zendesk.com/rest_api/docs/core/introduction">Zendesk API docs</a></li>
+  <li><a rel="nofollow" href="https://docs.validic.com/">Validic API docs</a></li>
+  <li><a rel="nofollow" href="http://docs.ninja.is/rest/user.html">Ninja Blocks API docs</a></li>
+  <li><a rel="nofollow" href="https://pushover.net/api">Pushover API docs</a></li>
+  <li><a rel="nofollow" href="https://pusher.com/docs/client_api_guide">Pusher Client API docs</a></li>
+  <li><a rel="nofollow" href="https://www.pingdom.com/resources/api">Pingdom API docs</a></li>
+  <li><a rel="nofollow" href="https://www.dailymile.com/api/documentation">Daily Mile API docs</a></li>
+  <li><a rel="nofollow" href="https://developers.jivesoftware.com/api/v3/cloud/rest/">Jive docs</a></li>
+  <li><a rel="nofollow" href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/apis/">IBM Watson docs</a></li>
+  <li><a rel="nofollow" href="https://www.hipchat.com/docs/apiv2">HipChat API docs</a></li>
+  <li><a rel="nofollow" href="https://developer.bigcommerce.com/api/">Stores API docs</a></li>
+  <li><a rel="nofollow" href="https://www.ibm.com/watson/alchemy-api.html">Alchemy API docs</a></li>
+  <li><a rel="nofollow" href="http://docs.indivohealth.org/en/2.0/api.html">Indivo API 2.0 docs</a></li>
+  <li><a rel="nofollow" href="http://dev.socrata.com/">Socrata API docs</a></li>
+  <li><a rel="nofollow" href="https://developer.github.com/v3/">Github API docs</a></li>
+  <li><a rel="nofollow" href="https://documentation.mailgun.com/api_reference.html">Mailgun API docs</a></li>
+  <li><a rel="nofollow" href="https://developer.riotgames.com/api-methods/">RiotGames API docs</a></li>
+  <li><a rel="nofollow" href="https://github.com/basecamp/bcx-api">Basecamp API docs</a></li>
+  <li><a rel="nofollow" href="http://www.espn.com/apis/devcenter/docs/">ESPN API docs</a></li>
+  <li><a rel="nofollow" href="https://github.com/mgp25/SC-API/wiki/Snap-API-Documentation">Snap API docs</a></li>
+  <li><a rel="nofollow" href="https://swiftype.com/documentation/">SwiftType API docs</a></li>
+  <li><a rel="nofollow" href="http://docs.snipcart.com/api-reference/introduction">Snipcart API docs</a></li>
+  <li><a rel="nofollow" href="http://dev.vhx.tv/docs/api/">VHX API docs</a></li>
+  <li><a rel="nofollow" href="http://support.polldaddy.com/api/">Polldaddy API docs</a></li>
+  <li><a rel="nofollow" href="https://gumroad.com/api">Gumroad API docs</a></li>
+  <li><a rel="nofollow" href="http://developers.formstack.com/">Formstack API docs</a></li>
+  <li><a rel="nofollow" href="http://answers.livefyre.com/developers/api-reference/">Livefyre API docs</a></li>
+  <li><a rel="nofollow" href="https://developer.salesforce.com/docs/atlas.en-us.chatterapi.meta/chatterapi/">Salesforce Chatter RESt API docs</a></li>
+  <li><a rel="nofollow" href="https://developers.themoviedb.org/3/getting-started">The Movie Database API docs</a></li>
+  <li><a rel="nofollow" href="https://freemusicarchive.org/api">Free Music Archive API docs</a></li>
+  <li><a rel="nofollow" href="https://docs.context.io/#getting-started">Context.io docs</a></li>
+  <li><a rel="nofollow" href="http://docs.couchdb.org">CouchDB docs</a></li>
+  <li><a rel="nofollow" href="https://developer.amazon.com/docs/device-apis/alexa-interface.html">Smart Home API (Amazon Alexa) docs</a></li>
+  <li><a rel="nofollow" href="https://developers.coinbase.com/api/v2">Coinbase docs</a></li>
+  <li><a rel="nofollow" href="https://help.shopify.com/api/reference">Shopify API docs</a></li>
+  <li><a rel="nofollow" href="http://developer.authorize.net/api/reference/index.html">Authorize.net docs</a></li>
+  <li><a rel="nofollow" href="https://developer-tripadvisor.com/content-api/documentation/">Trip Advisor docs</a></li>
+  <li><a rel="nofollow" href="https://developers.pinterest.com/docs/getting-started/introduction/?">Pinterest docs</a></li>
+  <li><a rel="nofollow" href="https://developer.uber.com/docs/">Uber docs</a></li>
+  <li><a rel="nofollow" href="https://developer.spotify.com/web-api/">Spotify API</a></li>
+  <li><a rel="nofollow" href="https://developers.trello.com/">Trello API</a></li>
+  <li><a rel="nofollow" href="http://developer.yext.com/docs/">Yext API</a></li>
+  <li><a rel="nofollow" href="https://apidocs.threatstack.com/v2/">Threat Stack API docs</a></li>
+  <li><a rel="nofollow" href="https://developers.strava.com/">Strava API</a></li>
+  <li><a rel="nofollow" href="https://plaid.com/docs/">Plaid API</a></li>
+  <li><a rel="nofollow" href="https://developers.paymill.com/API/index">Paymill API</a></li>
+  <li><a rel="nofollow" href="https://rapidapi.com/therundown/api/therundown?endpoint=5ace93eae4b04378c0ca27ba">Rundown API</a></li>
+  <li><a rel="nofollow" href="https://docs.zype.com/reference">Zype API</a></li>
+  <li><a rel="nofollow" href="https://developer.yummly.com/">Yummyly API</a></li>
+  <li><a rel="nofollow" href="https://developer.edamam.com/">Edamam Food APIs</a></li>
+  <li><a rel="nofollow" href="https://help.veracode.com/reader/LMv_dtSHyb7iIxAQznC~9w/HmF8Z4cz70Rb2y1p39tWDw">Veracode API</a></li>
+  <li><a rel="nofollow" href="https://help.sap.com/viewer/58f583a7643e48cf944cf554eb961f5b/4.2/en-US">SAP</a></li>
+  <li><a rel="nofollow" href="https://www.sunbirddcim.com/help/dcTrack/v521/API/Default.htm#APIGuide/Introduction.htm%3FTocPath%3D_____1">Sunbird API</a></li>
+  <li><a rel="nofollow" href="https://docs.dwolla.com/#introduction">Dwolla API</a></li>
+</ol>
 
 {% include tip.html content="I last checked these links in December 2018. Given how fast the technology landscape changes, some links may be out of date. However, if you just type <i>{product} + api docs</i> into Google's search, you will likely find the company's developer doc site. Most commonly, the API docs are at developer.{company}.com." %}
 
@@ -141,7 +146,7 @@ For a directory of API documentation sites on the open web, see the [Programmabl
 
 {% include random_ad.html %}
 
-<a href="http://www.programmableweb.com/apis/directory" class="noExtIcon"><img src="images/programmableweb.png" alt="Programmable web directory" /></a>
+<a rel="nofollow" href="http://www.programmableweb.com/apis/directory" class="noExtIcon"><img src="images/programmableweb.png" alt="Programmable web directory" /></a>
 
 Note that Programmableweb lists only open web APIs, meaning APIs that you can access on the web (which also means it's usually a REST API). They don't list the countless internal, firewalled APIs that many companies provide at a cost to paying customers. There are many more thousands of private APIs out there that most of us will never know about.
 

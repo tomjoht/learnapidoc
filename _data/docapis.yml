@@ -187,7 +187,7 @@ folders:
   - title: "Activity: Test your project's documentation"
     jurl: /testingdocs_activity.html
 
-- title: "VI: Conceptual API topics"
+- title: "VI: Conceptual topics in API docs"
   jurl: /docconceptual.html
   description: "While reference topics in APIs generally receive the most attention, the conceptual topics, such as getting started tutorials, information about authorization, rate limiting, status and error codes, quick reference guides, and other topics constitute about half of the documentation. These topics are usually handled by technical writers more than engineers. You can evaluate the quality of API documentation in part by looking to see whether it includes these conceptual topics."
   folderitems:
@@ -352,7 +352,8 @@ folders:
   - title: API Blueprint tutorial
     jurl: /pubapis_api_blueprint.html
 
-
+  - title: API jeopardy answer key
+    jurl: /jeopardy_answer_key.html
 
   #
   # - title: API documentation survey

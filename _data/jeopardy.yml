@@ -1,0 +1,60 @@
+list:
+- answer: An authorization method for API requests uses a third-party identity server such as Google, GitHub, or Facebook.
+  question: What is oAuth?
+
+- answer: A tool you can use to submit API requests directly from the command line.
+  question: What is curl?
+
+- answer: A GUI tool that lets you save and organize API requests into collections.
+  question: What is Postman?
+
+- answer: A format that includes both objects and arrays, and often a mix of both.
+  question: What is JSON?
+
+- answer: A space-sensitive format that is commonly used to write the OpenAPI specification.
+  question: What is YAML?
+
+- answer: The four most common operations used with API requests.
+  question: What are GET, POST, PUT, and DELETE?
+
+- answer: The five common sections every API reference topic usually has.
+  question: What are resource description, endpoints & methods, parameters, request example, and response example & schema?
+
+- answer: The object within the OpenAPI specification that lets you store re-usable content that can be referenced in other parts of the specification document using <code>$ref</code>.
+  question: What is the <code>components</code> object?
+
+- answer: The original name of the OpenAPI specification.
+  question: What is Swagger?
+
+- answer: An authoring and validation tool used when creating OpenAPI specification files.
+  question: What is Swagger Editor?
+
+- answer: An open-source web framework that renders OpenAPI specification documents into an interactive documentation experience.
+  question: What is Swagger UI?
+
+- answer: Information about request thresholds and what happens when you exceed them.
+  question: What is rate limiting?
+
+- answer: Authoring and publishing tools/workflows that follow similar patterns as software development tools and workflows.
+  question: What are docs-as-code tools?
+
+- answer: A request to merge a branch back into the master, which is a workflow often used when merging contributions back in to GitHub projects.
+  question: What is a pull request?
+
+- answer: The tendency for docs maintained outside of code repositories to become out of sync with the code.
+  question: What is documentation drift?
+
+- answer: An essential first steps document that should usually be linked from your API overview page.
+  question: What is Getting Started?
+
+- answer: The go-to place to find open-source projects and collaborate with others on code projects.
+  question: What is GitHub?
+
+- answer: A number shown in an API response when a request either succeeds or fails.
+  question: What are status and error codes?
+
+- answer: A parameter that appears in the resource URL after a question mark.
+  question: What is a query string parameter?
+
+- answer: A string often included in a header or query string parameter that authorizes the API request.
+  question: What is an API key?
