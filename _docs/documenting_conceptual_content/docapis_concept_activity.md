@@ -1,5 +1,5 @@
 ---
-title: "Activity: Assess conceptual content"
+title: "Activity: Judge conceptual content and decide which is best"
 permalink: /docapis_concept_activity.html
 course: "Documenting REST APIs"
 weight: 6.92

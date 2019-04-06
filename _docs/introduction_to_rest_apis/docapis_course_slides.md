@@ -34,9 +34,9 @@ This content doesn't embed well in print, since it merely contains thumbnail ima
 
 <a href="/learnapidoc/slides/openapi_and_swagger.html" class="noCrossRef"><img src="images/openapiswaggertitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
-## Part VI: conceptual content in API Documentation
+## Part VI: Conceptual content in API Documentation
 
-<a href="/learnapidoc/slides/nonref_content_api_docs.html" class="noCrossRef"><img src="images/nonreftitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/conceptual_content_api_docs.html" class="noCrossRef"><img src="images/conceptualcontenttitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 ## Part VII: Publishing API Documentation
 

@@ -7,13 +7,15 @@ To find an open-source project with API doc needs:
 
     Scroll to the top and notice that `label: "help wanted"` automatically populates in the field.
 
-3.  In this Advanced Search box at the top, add some additional keywords (such as `documentation` and `api`) as well:
+3.  In this Advanced Search box at the top, add some additional keywords (such as `documentation` and `rest api`) as well:
 
     <a class="noCrossRef" href="https://github.com/search?utf8=%E2%9C%93&q=documentation+api+label%3A%22help+wanted%22&type=Issues&ref=advsearch&l=&l="><img src="images/githubopensourceprojects.png"/></a>
 
 4.  Click **Search** and browse [the results](https://github.com/search?utf8=%E2%9C%93&q=documentation+api+label%3A%22help+wanted%22&type=Issues&ref=advsearch&l=&l=).
 
-    In the results, you might want to look for a REST API project (rather than a [native-library API](nativelibraryapis_overview.html) such as a Java API). Are there any projects that look interesting or promising? If so, great. If not, adjust some of the keywords and keep looking.
+    In the results, you might want to look for a *REST API* project (rather than a [native-library API](nativelibraryapis_overview.html) such as a Java API). It might be hard to distinguish between the two, so include "REST" in your query. If you see doc requests related to Java, C++, JavaScript, or some other programming-specific framework, it's probably not a REST API.
+
+    As you browse the results, are there any projects that look interesting or promising? If so, great. If not, adjust some of the keywords and keep looking.
 
 5.  If searching GitHub doesn't yield any appropriate projects, try the following resources:
 

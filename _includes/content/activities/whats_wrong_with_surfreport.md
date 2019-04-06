@@ -1,8 +1,8 @@
-## <i class="fa fa-user-circle"></i> Activity: What's wrong with this Surfreport API reference topic
+## <i class="fa fa-user-circle"></i> Activity: What's wrong with this API reference topic
 
 The following is a sample API reference topic for an endpoint called `surfreport`. There are about 25 things wrong in the topic. A copy of this same content is available in a read-only [Google Doc here](https://docs.google.com/document/d/1LU0QJTDHHKFu9FIC24ZrF1I5HC7mzX86fH0YZ1SUHyo/edit?usp=sharing). In Google Docs, go to **File > Make a Copy** to create your own instance. Then make comments in Google docs to note as many errors as you can find.
 
-<figure><a href="https://docs.google.com/document/d/1LU0QJTDHHKFu9FIC24ZrF1I5HC7mzX86fH0YZ1SUHyo/edit?usp=sharing"><img style="max-width: 300px" src="images/google_doc_surf_report.png"/></a><figcaption>Make a copy of this Google doc and make comments on it.</figcaption></figure>
+<figure><a class="noCrossRef" href="https://docs.google.com/document/d/1LU0QJTDHHKFu9FIC24ZrF1I5HC7mzX86fH0YZ1SUHyo/edit?usp=sharing"><img style="max-width: 300px" src="images/google_doc_surf_report.png" class="noCrossRef"/></a><figcaption>Make a copy of this Google doc and make comments on it.</figcaption></figure>
 
 <div class="docSample" markdown="block">
 
@@ -56,7 +56,7 @@ Gets the surf conditions for a specific beach ID.
    </td>
    <td>The time you want the report for.
    </td>
-   <td>Integer. Unix format (ms since 1970) in UTC.
+   <td>Integer. ISO 8601 format. Example: <code>20180915T155300+0500</code>
    </td>
   </tr>
 </table>
@@ -96,7 +96,7 @@ https://api.openweathermap.org/data/2.5/surfreport/12345?zip=95050&appid=fd4698c
                     "wind": 10,
                     "watertemp": 65,
                     "surf_height": 1,
-                    "recommendation": "Scene is blown out. Bail inland and chill on the beach instead or you'll be eating beef jerky."
+                    "recommendation": "Scene is blown out. Bail inland and chill on the beach instead or you’ll the one who’ll be shredded, due."
                 }
                 ...
             }
@@ -105,7 +105,7 @@ https://api.openweathermap.org/data/2.5/surfreport/12345?zip=95050&appid=fd4698c
 }
 ```
 
-### Response definitions
+## Response definitions
 
 The following table describes each item in the response.
 
@@ -134,7 +134,7 @@ The following table describes each item in the response.
   <tr>
    <td><code>{day}</code>
    </td>
-   <td>The day of the week selected.
+   <td>The day(s) of the week requested.
    </td>
    <td>object
    </td>
@@ -194,79 +194,4 @@ The following table describes each item in the response.
 
 ## Answers
 
-After you've finished commenting on the Google Doc, expand the answers below to see how many issues you found. If you found additional issues beyond those noted here, feel free to [drop me an email](contact.html) letting me know.
-
-<button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#answerkey" aria-expanded="false" aria-controls="collapseExample">
-Answer key
-</button>
-<div class="collapse" id="answerkey">
-<div class="card card-body" markdown="block">
-
-Answer key:
-
-**Resource description:**
-
-- wordy. should be more concise and action-oriented
-- Surfreport probably shouldn’t capitalized
-
-**Endpoints and definition:**
-
-- GET/POST should just be GET
-
-- no need for colon in `{:beachId}`
-
-- consider color coding <span style="color: green">{beachId}</span>
-
-**Parameters:**
-
-- Query string parameters are mixed into same table as Path parameters. Separate into different tables.
-
-- Where you get the beach ID isn't specified
-
-- Number versus Integer is potentially inconsistent.
-
-- No default specified for `time` parameter
-
-- For `tide`, data type should be an Integer rather than a String
-
-- For `wind`, "int" should be spelled out as integer
-
-- for `time`, no details about 12h versus 24h format or time zone
-
-**Sample request:**
-
-- not in curl format
-
-- only one query string parameter shown; should include `time` too
-
-- `zip` query string parameter is included but not defined anywhere
-
-- `appID` includes long API key that should likely be shortened to a variable such as `APIKEY`
-
-**Sample response:**
-
-- includes `riptide` element that isn't defined in response definition
-
-- `riptide` missing comma after second instance
-
-- `riptide` not shown in third hour block
-
-- indentation formatting is a bit messed up with word riptide
-
-**Response definition:**
-
-- `wind` description doesn't indicate what measurement is used (knots?)
-
-- `watertemp` doesn't indicate measurement units either
-
-- `surfheight` data type is "Map" when it should be Integer
-
-- `recommendation` doesn't include more detail such as how many possible recommendation strings are available, and what they even mean.
-
-- `surfheight` should either be `surf_height` or `surfheight` -- response example conflicts with usage in response definition table
-
-- no hierarchy expressed for child elements (e.g., `tide`, `wind`, `watertemp`)
-
-
-</div>
-</div>
+You can view the answer key here: [What's wrong with this topic answer key](whats_wrong_answer_key.html).

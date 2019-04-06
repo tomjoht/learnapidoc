@@ -102,8 +102,8 @@ folders:
   - title: "Putting it all together"
     jurl: /docapis_finished_doc_result.html
 
-  - title: "Activity: Find an Open Source Project"
-    jurl: /docapis_find_open_source_project.html
+  - title: "Activity: What's wrong with this API reference topic"
+    jurl: /docapis_api_whats_wrong_activity.html
 
   - title: "Activity: Evaluate API reference docs for core elements"
     jurl: /docapis_api_reference_activity.html
@@ -293,6 +293,12 @@ folders:
   - title: Best locations for API documentation jobs
     jurl: /jobapis_location.html
 
+  - title: "Activity: Find an Open Source Project"
+    jurl: /docapis_find_open_source_project.html
+
+  - title: "Activity: Create or fix an API reference documentation topic"
+    jurl: /docapis_work_on_conceptual_topic.html
+    
 - title: "IX: Native library APIs"
   jurl: /nativelibraryapis.html
   description: "Native library APIs refer to Java, C++, or other programming-specific APIs. In this model, rather than making requests across the web for the information, you download a library of code and integrate it into your project. The library is compiled directly into your application's build (rather than accessed through web protocols as with REST APIs). Although this type of API is less common, I include it here in part to clarify what makes REST APIs so different from native library APIs."
@@ -354,6 +360,9 @@ folders:
 
   - title: API jeopardy answer key
     jurl: /jeopardy_answer_key.html
+
+  - title: What's wrong with this topic answer key
+    jurl: /whats_wrong_answer_key.html
 
   #
   # - title: API documentation survey

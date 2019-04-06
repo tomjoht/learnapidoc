@@ -1,11 +1,11 @@
 ---
-title: "Activity: Find an Open Source Project"
+title: "Activity: Find an Open-Source Project"
 permalink: /docapis_find_open_source_project.html
 course: "Documenting REST APIs"
-weight: 3.8
+weight: 10.4
 sidebar: docapis
-section: docendpoints
-path1: /docendpoints.html
+section: jobapis
+path1: /jobapis.html
 ---
 
 To break into API documentation, you need to start thinking about API documentation samples in your portfolio. Your portfolio is key to [getting a job in API documentation](jobapis.html). Without a portfolio that contains compelling API documentation samples, it will be tough to get a job in API documentation.

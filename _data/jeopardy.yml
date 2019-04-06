@@ -14,11 +14,14 @@ list:
 - answer: A space-sensitive format that is commonly used to write the OpenAPI specification.
   question: What is YAML?
 
-- answer: The four most common operations used with API requests.
+- answer: The four most common methods or operations used with API requests.
   question: What are GET, POST, PUT, and DELETE?
 
 - answer: The five common sections every API reference topic usually has.
   question: What are resource description, endpoints & methods, parameters, request example, and response example & schema?
+
+- answer: A description of all possible elements in a response, including their data types and other details.
+  question: What is a response schema?
 
 - answer: The object within the OpenAPI specification that lets you store re-usable content that can be referenced in other parts of the specification document using <code>$ref</code>.
   question: What is the <code>components</code> object?
@@ -26,25 +29,28 @@ list:
 - answer: The original name of the OpenAPI specification.
   question: What is Swagger?
 
-- answer: An authoring and validation tool used when creating OpenAPI specification files.
+- answer: An authoring and validation tool useful when creating OpenAPI specification files.
   question: What is Swagger Editor?
 
-- answer: An open-source web framework that renders OpenAPI specification documents into an interactive documentation experience.
-  question: What is Swagger UI?
+- answer: What is a spec-first philosophy?
+  question: A design model where you create the OpenAPI specification first before beginning any coding.
 
 - answer: Information about request thresholds and what happens when you exceed them.
   question: What is rate limiting?
 
+- answer: An open-source web framework that renders OpenAPI specification documents into an interactive documentation experience.
+  question: What is Swagger UI?
+
 - answer: Authoring and publishing tools/workflows that follow similar patterns as software development tools and workflows.
   question: What are docs-as-code tools?
 
-- answer: A request to merge a branch back into the master, which is a workflow often used when merging contributions back in to GitHub projects.
+- answer: A request to merge a branch back into the master; this workflow is often used when merging contributions back in to GitHub projects.
   question: What is a pull request?
 
 - answer: The tendency for docs maintained outside of code repositories to become out of sync with the code.
   question: What is documentation drift?
 
-- answer: An essential first steps document that should usually be linked from your API overview page.
+- answer: An essential first steps document for users that should usually be linked from your API overview page.
   question: What is Getting Started?
 
 - answer: The go-to place to find open-source projects and collaborate with others on code projects.
@@ -58,3 +64,30 @@ list:
 
 - answer: A string often included in a header or query string parameter that authorizes the API request.
   question: What is an API key?
+
+- answer: The way you access different levels of JSON (nested objects) in a response when using JavaScript.
+  question: What is dot notation?
+
+- answer: The premium version of Swagger Editor.
+  question: What is SwaggerHub?
+
+- answer: A GUI tool for designing OpenAPI specification files, including the ability to auto-generate the schema description for JSON.
+  question: What is Stoplight?
+
+- answer: Refers to programmatically building documentation from the server when you commit to a particular Git branch.
+  question: What is continuous deployment?
+
+- answer: A web service API format, based on XML, that was popular before REST took over the landscape.
+  question: What is SOAP?
+
+- answer: A type of API that consists of libraries or other code that you download and incorporate directly into your project.
+  question: What is a native library API?
+
+- answer: Tooling that supports the implemention of an API in a specific programming language.
+  question: What is an SDK?
+
+- answer: A parameter that appears directly in the resource URL (before any query strings).
+  question: What is a header parameter?
+
+- answer: A website that lists and describes thousands of web APIs.
+  question: What is programmableweb.com?

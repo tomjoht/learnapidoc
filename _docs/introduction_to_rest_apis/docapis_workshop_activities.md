@@ -49,9 +49,7 @@ The content here merely contains the same exercises that appear embedded in othe
 
 {% include workshop_button.html title="Activity 3a: What's wrong with this API reference topic" activity="whats_wrong_with_surfreport" button_type="success" %}
 
-{% include workshop_button.html title="Activity 3b: Find an open-source project" activity="find_open_source_project" button_type="success" %}
-
-{% include workshop_button.html title="Activity 3c: Evaluate API ref docs to identify core elements" activity="evaluate_elements_api_ref" button_type="success" %}
+{% include workshop_button.html title="Activity 3b: Evaluate API ref docs to identify core elements" activity="evaluate_elements_api_ref" button_type="success" %}
 
 ## Part IV: OpenAPI and Swagger
 
@@ -67,7 +65,7 @@ The content here merely contains the same exercises that appear embedded in othe
 
 In this section, we follow an inductive approach where you look at the three examples of each conceptual topic and decide which approach is best.
 
-{% include workshop_button.html title="Activity 6a: Comparing conceptual content" activity="conceptual_comparisons" button_type="warning" %}
+{% include workshop_button.html title="Activity 6a: Judge conceptual content and decide which is best" activity="conceptual_comparisons" button_type="warning" %}
 
 ## Part VII: Publishing API documentation
 
@@ -84,6 +82,8 @@ In this section, we follow an inductive approach where you look at the three exa
 ## VIII: Getting a job in API documentation
 
 {% include workshop_button.html title="Activity 8a: Look at API documentation jobs and requirements" activity="look_for_apidoc_jobs" button_type="info" %}
+
+{% include workshop_button.html title="Activity 8b: Find an open-source project" activity="find_open_source_project" button_type="success" %}
 
 ## Conclusion {#conclusion}
 
