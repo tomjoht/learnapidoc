@@ -65,9 +65,6 @@ list:
 - answer: A string often included in a header or query string parameter that authorizes the API request.
   question: What is an API key?
 
-- answer: The way you access different levels of JSON (nested objects) in a response when using JavaScript.
-  question: What is dot notation?
-
 - answer: The premium version of Swagger Editor.
   question: What is SwaggerHub?
 

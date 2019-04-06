@@ -98,4 +98,6 @@ For this activity, you'll use JavaScript to display the API response on a web pa
 
     This information is now available for you to integrate into your page.
 
+(Note: If you finish this activity early and want a more advanced task, continue the integration with [Access and print a specific JSON value](docapis_access_json_values.html). This will allow you to print a specific value to the page.)
+
 {% if page.workshop_activities == true %}*For more information related to this activity, see [Inspect the JSON from the response payload](docapis_json_console.html) and [Access and print a specific JSON value](docapis_access_json_values.html).*{% endif %}

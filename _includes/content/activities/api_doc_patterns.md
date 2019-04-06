@@ -3,7 +3,7 @@
 In this activity, identify common patterns in API documentation sites.
 
 1.  Go the list of [100+ API documentation sites](pubapis_apilist.html#list_api_doc_sites).
-2.  Select about five different APIs (choose any of those listed on the page).
+2.  Select about three different APIs (choose any of those listed on the page).
 3.  Look for several patterns or commonalities among the API doc sites. For example, you might look for any of the following patterns:
 
     * Structure and templates
