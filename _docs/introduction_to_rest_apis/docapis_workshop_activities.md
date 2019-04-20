@@ -11,9 +11,9 @@ redirect_from:
  - /learnapidoc/workshop-activities.html
 ---
 
-
+{% comment %}
 Thanks for taking the workshop. Please take this short, anonymous survey at [http://bit.ly/carolinaworkshop](http://bit.ly/carolinaworkshop) so that I can gather your feedback.
-
+ {% endcomment %}
 
 For API workshops, it helps to consolidate activities into a single page with brief instructions. The content for the activities below is the same content that appears in other parts of the course &mdash; it's just pulled in here (single-sourced) for convenience. Workshops require a healthy amount of hands-on activities to be engaging. If you have feedback about how to improve the activities, or places where you keep getting stuck, [let me know](https://idratherbewriting.com/learnapidoc/contact.html).
 
