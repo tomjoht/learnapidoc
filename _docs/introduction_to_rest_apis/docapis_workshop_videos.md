@@ -1,0 +1,93 @@
+---
+title: Video recordings of API doc workshops
+permalink: /docapis_course_videos.html
+course: "Documenting REST APIs"
+sidebar: docapis
+section: introtoapis
+path1: /docapis_introtoapis.html
+weight: 1.01
+---
+
+I've given numerous presentations and workshops on API documentation, and I've recorded most of them. The most recent recordings are available below.
+
+Keep in mind that my API content evolves, so some older presentations might no longer match the course content. I recorded these videos during a full-day API documentation in Raleigh, North Carolina, on April 6, 2019. (For more details, see this [blog post](https://idratherbewriting.com/2019/04/01/upcoming-api-workshops/).) This recording closely aligns with the latest content and activities in this course. I divided this all-day workshop into five separate videos.
+
+* TOC
+{:toc}
+
+{% if site.format == "kindle" or site.format == "pdf" %}
+This content doesn't embed well in print, as it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/docapis_course_videos.html](https://idratherbewriting.com/learnapidoc/docapis_course_videos.html) to view the content.
+{% endif %}
+
+{% if site.format == "web" %}
+
+## Video 1
+
+<iframe width="640" height="385" src="https://www.youtube.com/embed/FG3cDrY-6CE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Video 2
+
+<iframe width="640" height="385" src="https://www.youtube.com/embed/L4YFlSB8STI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{% include random_ad.html %}
+
+## Video 3
+
+<iframe width="640" height="385" src="https://www.youtube.com/embed/8vkt3hftD1k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Video 4
+
+<iframe width="640" height="385" src="https://www.youtube.com/embed/iLl-VpoEFrE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Video 5
+
+<iframe width="640" height="385" src="https://www.youtube.com/embed/xEzZl7L58e4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Audio only version
+
+If you prefer audio only, you can listen here:
+
+Video 1 of 5:
+<div class="audioControls">
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/raleighapidoc/apiworkshopvid1.mp3" type="audio/mpeg" /></audio></p>
+</div>
+
+Video 2 of 5:
+<div class="audioControls">
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/raleighapidoc/apiworkshopvid2.mp3" type="audio/mpeg" /></audio></p>
+</div>
+
+Video 3 of 5:
+<div class="audioControls">
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/raleighapidoc/apiworkshopvid3.mp3" type="audio/mpeg" /></audio></p>
+</div>
+
+{% include random_ad2.html %}
+
+Video 4 of 5:
+<div class="audioControls">
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/raleighapidoc/apiworkshopvid4.mp3" type="audio/mpeg" /></audio></p>
+</div>
+
+Video 5 of 5:
+<div class="audioControls">
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/raleighapidoc/apiworkshopvid5.mp3" type="audio/mpeg" /></audio></p>
+</div>
+
+Want all the audio combined into one massive file? Here it is:
+
+All audio combined:
+<div class="audioControls">
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/raleighapidoc/apiworkshopvidall.mp3" type="audio/mpeg" /></audio></p>
+</div>
+
+## More videos
+
+If you'd like to see more videos, see the following:
+
+* [Menlo Park API workshop video recording](menlo_park_workshop_recording.html) (November 8, 2018)
+* [Denver API workshop video recording](denver_workshop_recording.html) (March 10, 2018)
+* [API doc presentation video recordings](api_doc_presentations.html) (misc. dates)
+
+
+{% endif %}

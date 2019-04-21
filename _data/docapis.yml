@@ -11,7 +11,7 @@ folders:
   - title: Course Overview
     jurl: /index.html
 
-  - title: Recorded video presentations
+  - title: Workshop video recordings
     jurl: /docapis_course_videos.html
 
   - title: Course slides
@@ -298,7 +298,7 @@ folders:
 
   - title: "Activity: Create or fix an API reference documentation topic"
     jurl: /docapis_work_on_conceptual_topic.html
-    
+
 - title: "IX: Native library APIs"
   jurl: /nativelibraryapis.html
   description: "Native library APIs refer to Java, C++, or other programming-specific APIs. In this model, rather than making requests across the web for the information, you download a library of code and integrate it into your project. The library is compiled directly into your application's build (rather than accessed through web protocols as with REST APIs). Although this type of API is less common, I include it here in part to clarify what makes REST APIs so different from native library APIs."
@@ -363,6 +363,15 @@ folders:
 
   - title: What's wrong with this topic answer key
     jurl: /whats_wrong_answer_key.html
+
+  - title: Menlo Park API workshop video recording
+    jurl: /menlo_park_workshop_recording.html
+
+  - title: Denver API workshop video recording
+    jurl: /denver_workshop_recording.html
+
+  - title: API doc presentation video recordings
+    jurl: /api_doc_presentations.html
 
   #
   # - title: API documentation survey

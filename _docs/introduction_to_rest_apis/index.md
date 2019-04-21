@@ -109,7 +109,7 @@ Here are a few tools you'll need to do the activities in this course:
 
 ## Video recordings
 
-For video recordings of this course, see the [Recorded Video Presentations](docapis_course_videos.html). The most recent full-length video of the entire course is a full-day API workshop I gave in Menlo Park, California, in November 2018. The video doesn't go into the same level of detail as the written material, but it would be a good start.
+For video recordings of this course, see the [Video recordings of API doc workshops](docapis_course_videos.html). The most recent full-length video of the entire course is a full-day API workshop I gave in Menlo Park, California, in November 2018. The video doesn't go into the same level of detail as the written material, but it would be a good start.
 
 See my [Upcoming Presentations](https://idratherbewriting.com/presentations/) on my blog for details about future workshops and presentations.
 
