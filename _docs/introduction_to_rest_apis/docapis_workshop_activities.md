@@ -57,8 +57,6 @@ The content here merely contains the same exercises that appear embedded in othe
 
 {% include workshop_button.html title="Activity 4c: Create a SwaggerUI display" activity="create_swaggerui_display" button_type="info" %}
 
-{% include workshop_button.html title="Activity 4d: Work with the OpenAPI in Stoplight" activity="work_with_stoplight" button_type="info" %}
-
 ## Part VI: Conceptual content in API docs
 
 In this section, we follow an inductive approach where you look at the three examples of each conceptual topic and decide which approach is best.
@@ -67,15 +65,11 @@ In this section, we follow an inductive approach where you look at the three exa
 
 ## Part VII: Publishing API documentation
 
-{% include workshop_button.html title="Activity 7a: Look for common patterns in API doc sites" activity="api_doc_patterns" button_type="warning" %}
+{% include workshop_button.html title="Activity 7a: Set up a GitHub wiki" activity="create_github_wiki" button_type="warning" %}
 
-{% include workshop_button.html title="Activity 7b: Get practice with Markdown" activity="markdown_practice" button_type="warning" %}
+{% include workshop_button.html title="Activity 7b: Clone your GitHub repo locally" activity="clone_repo_locally" button_type="warning" %}
 
-{% include workshop_button.html title="Activity 7c: Set up a GitHub wiki" activity="create_github_wiki" button_type="warning" %}
-
-{% include workshop_button.html title="Activity 7d: Clone your GitHub repo locally" activity="clone_repo_locally" button_type="warning" %}
-
-{% include workshop_button.html title="Activity 7e: Push local changes to the remote" activity="push_local_to_remote" button_type="warning" %}
+{% include workshop_button.html title="Activity 7c: Push local changes to the remote" activity="push_local_to_remote" button_type="warning" %}
 
 ## VIII: Getting a job in API documentation
 

@@ -1,6 +1,6 @@
 ---
 layout: slides
-slide_title: Publishing API documentation"
+slide_title: Publishing API documentation
 ---
 
 	<body>
@@ -36,6 +36,13 @@ slide_title: Publishing API documentation"
           </aside>
 </section>
 
+<section>
+  <h2>Designing for opportunistic behavior</h2>
+  <blockquote>"...opportunistic developers in our test started the first task with some example code from the documentation which they then modified and extended. Once a task was completed, the piece of code that solved the task was used as starting point for the next task.... Developers in this group worked in a highly task-driven manner, but also tried things that were not related to the task, but possibly helped them to build a broader understanding of the API in passing." &mdash; <a href="https://idratherbewriting.com/2019/03/07/how-to-design-api-documentation-for-opportunistic-behavior/#study-on-how-developers-use-api-docs">Meng et al</a></blockquote>
+  </section>
+
+  </section>
+
           <section>
             <h2>The Docs as Code model</h2>
             <img src="../images/limitstodocsascode-01.svg"/>
@@ -45,40 +52,35 @@ slide_title: Publishing API documentation"
             <h2>Characteristics of docs as code</h2>
 
             <ul>
-              <li>Lightweight markup</li>
-              <li>Static site generators</li>
-              <li>IDE-like text editor</li>
-              <li>Git to manage content</li>
-              <li>Build from server</li>
+              <li>Lightweight markup (e.g., Markdown)</li>
+              <li>Static site generators (e.g., Hugo)</li>
+              <li>IDE-like text editor (e.g., Atom)</li>
+              <li>Version control to manage content (e.g., Git)</li>
+              <li><b>Build from server</b> (e.g., Github Pages)</li>
             </ul>
           </section>
 
           <section>
             <h2>Real-time demonstration</h2>
             <p>Demonstration of docs-as-code publishing...</p>
-
+</section>
           <section>
-            <h3 class="activity"><i class="fa fa-user-circle"></i> Activity 7c: Set up a GitHub wiki</h3>
+            <h3 class="activity"><i class="fa fa-user-circle"></i> Activity 7a: Set up a GitHub wiki</h3>
             <img class="activity_work" src="../images/activity_work.svg"/>
 
           </section>
 
           <section>
-            <h3 class="activity"><i class="fa fa-user-circle"></i> Activity 7d: Clone your GitHub repo locally</h3>
+            <h3 class="activity"><i class="fa fa-user-circle"></i> Activity 7b: Clone your GitHub repo locally</h3>
             <img class="activity_work" src="../images/activity_work.svg"/>
 
           </section>
 
           <section>
-            <h3 class="activity"><i class="fa fa-user-circle"></i> Activity 7e: Push local changes to the remote</h3>
+            <h3 class="activity"><i class="fa fa-user-circle"></i> Activity 7c: Push local changes to the remote</h3>
             <img class="activity_work" src="../images/activity_work.svg"/>
 
           </section>
-
-          <section>
-            <h2></h2>
-
-            </section>
 
           <section>
             <h2>Authoring and publishing tools</h2>
@@ -143,6 +145,20 @@ slide_title: Publishing API documentation"
 
             </section>
 
+            <section>
+              <h2>Custom: My current setup at work</h2>
+              <ul>
+                <li>Jekyll + custom theme with no header/footer</li>
+                <li>Use existing internal Git infrastructure</li>
+                <li>Custom-built publishing pipeline</li>
+                  <ul><li>Builds output, then ingests HTML into S3</li>
+                    <li>Server requests pull matching files from S3 store and inserts into template with header/footer</li>
+                  </ul>
+                        </ul>
+                <p><a target="_blank" href="https://developer.amazon.com/appstore/documentation">View sample</a></p>
+            </section>
+
+
 
             <section>
               <h2>Integration challenges</h2>
@@ -152,32 +168,14 @@ slide_title: Publishing API documentation"
             </section>
 
             <section>
-              <h2>Why focus on publishing API docs?</h2>
+              <h2>Tool expertise is one value we add</h2>
               <a href="https://idratherbewriting.com/learnapidoc/images/whyapidocsfail.png"><img src="../images/whyapidocsfail.png"/></a>
             </section>
 
-
-
-
-<section>
-  <h2>My current setup at work</h2>
-  <ul>
-    <li>Jekyll + custom theme with no header/footer</li>
-    <li>Use existing internal Git infrastructure</li>
-    <li>Custom-built publishing pipeline</li>
-      <ul><li>Builds output, then ingests HTML into S3</li>
-        <li>Server requests pull matching files from S3 store and inserts into template with header/footer</li>
-      </ul>
-            </ul>
-    <p><a target="_blank" href="https://developer.amazon.com/appstore/documentation">View sample</a></p>
-</section>
-
-        </section>
     <section>
       <h2>Questions?</h2>
       <img src="../images/questions-01.svg"/>
       </section>
-÷
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
