@@ -17,31 +17,10 @@ slide_title: Publishing API documentation"
              </p>
           </section>
 
-<section>
-            <h2>What I'll talk about</h2>
-          <ul style="font-size: 90%">
-            <li>What makes dev doc unique</li>
-            <li>Dev doc design patterns</li>
-            <li>Docs-as-code characteristics</li>
-            <li>Markdown and version control</li>
-            <li>REST APIs and OpenAPI spec</li>
-            <li>The jungle of publishing tools</li>
-            <li>Lessons learned</li>
-            </ul>
-          </section>
-
           <section>
-            <h2>"API docs" versus "developer" docs</h2>
-            <ul>
-              <li>All API docs are developer docs, but not vice versa</li>
-              <li>API docs include both ref and non-ref content</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>Why focus on publishing API docs?</h2>
-            <a href="https://idratherbewriting.com/learnapidoc/images/whyapidocsfail.png"><img src="../images/whyapidocsfail.png"/></a>
-          </section>
+            <h2>Pubs tools developers prefer</h2>
+            <a href="https://www.questionpro.com/t/PE5tIZduq7"><img src="../images/toolsengineersprefer.png"/></a>
+            </section>
 
             <section>
             <h2>Why not use traditional HATs?</h2>
@@ -49,35 +28,13 @@ slide_title: Publishing API documentation"
             <a href="http://bit.ly/photobucketlongurl"><img src="../images/hatphotobucket.png"/></a>
             <aside class="notes">
             <ul>
-              <li>Developers are authors</li>
+              <li>Developers collaborate with docs</li>
               <li>API structure/templates</li>
               <li>API requests demo'd on page</li>
               <li>API docs are the product interface</li>
             </ul>
           </aside>
 </section>
-
-          <section>
-            <h2>Survey of API doc sites</h2>
-            <a href="pubapis_list.html"><img class="shortened" src="../images/100apidocsites.png"/></a>
-          </section>
-
-          <section>
-            <h3 class="activity"><i class="fa fa-user-circle"></i> Activity 7a: Identify common patterns in API doc sites</h3>
-            <img class="activity_work" src="../images/activity_work.svg"/>
-
-          </section>
-
-          <section>
-            <h2>Design patterns with API doc sites</h2>
-            <ul>
-              <li>Pattern 1: Structure and templates</li>
-              <li>Pattern 2: A single seamless website</li>
-              <li>Pattern 3: Abundant code samples</li>
-              <li>Pattern 4: Lengthy pages</li>
-              <li>Pattern 5: API Interactivity</li>
-            </ul>
-          </section>
 
           <section>
             <h2>The Docs as Code model</h2>
@@ -97,57 +54,8 @@ slide_title: Publishing API documentation"
           </section>
 
           <section>
-            <h2>Markdown is most common syntax</h2>
-
-            <pre><code class="hljs" data-trim contenteditable>
-## Heading 2
-
-This is a bulleted list:
-
-* fireStructuredText item
-* second item
-* third item
-
-This is a numbered list:
-
-1. Click this **button**.
-2. Go to [this site](http://www.example.com).
-3. See this image:
-
-![My alt tag](myimagefile.png)
-            </code></pre>
-          </section>
-
-          <section>
-            <h2>Why use Markdown</h2>
-            <ul>
-              <li>Readable as code</li>
-              <li>Compatible with Git</li>
-              <li>Simple enough for devs</li>
-              <li>Flexible enough to do almost anything</li>
-              <li>Define semantics in frontmatter</li>
-              <li>For more complexity, use HTML or scripting languages</li>
-            </ul>
-          </section>
-
-<section>
-  <h3 class="activity"><i class="fa fa-user-circle"></i> Activity 7b: Practice with Markdown</h3>
-  <img class="activity_work" src="../images/activity_work.svg"/>
-
-</section>
-          <section>
-            <h2>Version control systems (Git)</h2>
-
-            <a href="https://github.com"><img src="../images/githubhomepage.png"/></a>
-            <aside class="notes">
-            <ul>
-              <li>Ingenious way to collaborate</li>
-              <li>Helps you understand engineering workflows</li>
-              <li>More of a learning curve than your SSG</li>
-              <li>The Git model scales</li>
-            </ul>
-          </aside>
-          </section>
+            <h2>Real-time demonstration</h2>
+            <p>Demonstration of docs-as-code publishing...</p>
 
           <section>
             <h3 class="activity"><i class="fa fa-user-circle"></i> Activity 7c: Set up a GitHub wiki</h3>
@@ -166,6 +74,11 @@ This is a numbered list:
             <img class="activity_work" src="../images/activity_work.svg"/>
 
           </section>
+
+          <section>
+            <h2></h2>
+
+            </section>
 
           <section>
             <h2>Authoring and publishing tools</h2>
@@ -238,15 +151,12 @@ This is a numbered list:
 
             </section>
 
-         <section>
-            <h2>Which tool to choose for API docs?</h2>
-            <ol>
-              <li>Define your requirements</li>
-              <li>Choose your priorities</li>
-              <li>Consider the time you want to spend on tools</li>
-              <li>Hope that you don't sink months into the wrong tools</li>
-            </ol>
-          </section>
+            <section>
+              <h2>Why focus on publishing API docs?</h2>
+              <a href="https://idratherbewriting.com/learnapidoc/images/whyapidocsfail.png"><img src="../images/whyapidocsfail.png"/></a>
+            </section>
+
+
 
 
 <section>
@@ -261,22 +171,6 @@ This is a numbered list:
             </ul>
     <p><a target="_blank" href="https://developer.amazon.com/appstore/documentation">View sample</a></p>
 </section>
-
-<section>
-  <h2>Lessons learned</h2>
-  <img src="../images/publishing-apis_lessonslearned.svg"/>
-</section>
-
-          <section>
-            <h2>My experience with docs-as-code</h2>
-            <ul>
-              <li>Mostly love it, would never go back</li>
-              <li>Continuous deployment with Git is the killer feature</li>
-              <li>Love the control and flexibility of open source SSG</li>
-              <li>Takes way more time than you think</li>
-              <li>No good solution for search or translation</li>
-            </ul>
-          </section>
 
         </section>
     <section>

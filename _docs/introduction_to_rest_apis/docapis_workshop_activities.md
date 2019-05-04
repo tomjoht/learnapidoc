@@ -45,8 +45,6 @@ The content here merely contains the same exercises that appear embedded in othe
 
 ## Part III: Documenting API endpoints
 
-
-
 {% include workshop_button.html title="Activity 3a: What's wrong with this API reference topic" activity="whats_wrong_with_surfreport" button_type="success" %}
 
 {% include workshop_button.html title="Activity 3b: Evaluate API ref docs to identify core elements" activity="evaluate_elements_api_ref" button_type="success" %}
