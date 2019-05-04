@@ -81,12 +81,9 @@ In this section, we follow an inductive approach where you look at the three exa
 
 {% include workshop_button.html title="API Jeopardy: Test your knowledge" activity="jeopardy_questions" button_type="primary" %}
 
-
-{% comment %}
 ## Survey
 
-Please take this survey to provide feedback about the workshop: [https://www.questionpro.com/t/AOaGwZdHog](https://www.questionpro.com/t/AOaGwZdHog).
- {% endcomment %}
+If you're taking this API workshop as part of the [2019 STC Summit](https://summit.stc.org/schedule/#1554216819227-29691f63-4c5c) in Denver, Colorado, please take this survey to provide feedback about the workshop: [http://idratherbewriting.site/stc19api](http://idratherbewriting.site/stc19api).
 
 {% include random_ad.html %}
 
