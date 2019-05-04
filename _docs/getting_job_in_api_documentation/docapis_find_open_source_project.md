@@ -8,7 +8,7 @@ section: jobapis
 path1: /jobapis.html
 ---
 
-To break into API documentation, you need to start thinking about API documentation samples in your portfolio. Your portfolio is key to [getting a job in API documentation](jobapis.html). Without a portfolio that contains compelling API documentation samples, it will be tough to get a job in API documentation.
+To break into API documentation, you need to start thinking about API documentation samples in your portfolio. Your portfolio is key to [Getting an API documenation job and thriving](jobapis.html). Without a portfolio that contains compelling API documentation samples, it will be tough to get a job in API documentation.
 
 * TOC
 {:toc}

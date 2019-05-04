@@ -11,10 +11,6 @@ redirect_from:
  - /learnapidoc/workshop-activities.html
 ---
 
-{% comment %}
-Thanks for taking the workshop. Please take this short, anonymous survey at [http://bit.ly/carolinaworkshop](http://bit.ly/carolinaworkshop) so that I can gather your feedback.
- {% endcomment %}
-
 For API workshops, it helps to consolidate activities into a single page with brief instructions. The content for the activities below is the same content that appears in other parts of the course &mdash; it's just pulled in here (single-sourced) for convenience. Workshops require a healthy amount of hands-on activities to be engaging. If you have feedback about how to improve the activities, or places where you keep getting stuck, [let me know](https://idratherbewriting.com/learnapidoc/contact.html).
 
 Note that not all activities in this course are consolidated here, since participants can only do so much during a workshop. The following activities are those I've selected for workshops.
@@ -71,7 +67,7 @@ In this section, we follow an inductive approach where you look at the three exa
 
 {% include workshop_button.html title="Activity 7c: Push local changes to the remote" activity="push_local_to_remote" button_type="warning" %}
 
-## VIII: Getting a job in API documentation
+## VIII: Getting an API documenation job and thriving
 
 {% include workshop_button.html title="Activity 8a: Look at API documentation jobs and requirements" activity="look_for_apidoc_jobs" button_type="info" %}
 

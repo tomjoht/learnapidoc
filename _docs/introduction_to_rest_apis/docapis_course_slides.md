@@ -42,7 +42,7 @@ This content doesn't embed well in print, since it merely contains thumbnail ima
 
 <a href="/learnapidoc/slides/publishing_api_docs.html" class="noCrossRef"><img src="images/publishingapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
-## Part VIII: Getting a job in API Documentation
+## Part VIII: Getting an API documenation job and thriving
 
 <a href="/learnapidoc/slides/getting_job_api_docs.html" class="noCrossRef"><img src="images/gettingajobdsdoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 

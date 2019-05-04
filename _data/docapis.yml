@@ -279,9 +279,9 @@ folders:
     jurl: /pubapis_switching_to_docs_as_code.html
 
 
-- title: "VIII: Getting a job in API doc"
+- title: "VIII: Getting an API doc job and thriving"
   jurl: /jobapis.html
-  description: "Getting a job in API documentation requires you to demonstrate your technical aptitude through a writing portfolio. The portfolio should include samples of documentation written for developers. One way to build this portfolio is by working on an open-source project. You also need to live in a tech hub where API documentation jobs are available, such as California, Texas, New York, or Virginia. Overall, thriving in the developer documentation space requires you to continually learn a healthy dose of code, which can be challenging."
+  description: "Getting an API documenation job and thriving requires you to demonstrate your technical aptitude through a writing portfolio. The portfolio should include samples of documentation written for developers. One way to build this portfolio is by working on an open-source project. You also need to live in a tech hub where API documentation jobs are available, such as California, Texas, New York, or Virginia. Overall, thriving in the developer documentation space requires you to continually learn a healthy dose of code, which can be challenging."
   folderitems:
 
   - title: The job market for API technical writers

@@ -80,7 +80,7 @@ I refer to the content here as a "course" instead of a book or a website, primar
 
 ## Will this course help you get a job in API documentation?
 
-The most common reason people take this course is to transition into API documentation. This course will help you make that transition, but you can't just passively read through the content. You need to do the activities outlined in each section, especially those topics that involve working with content from an [open-source project](docapis_find_open_source_project.html). These activities are crucial to building experience and credibility with a portfolio. I provide more details in [Getting a job in API documentation](jobapis.html).
+The most common reason people take this course is to transition into API documentation. This course will help you make that transition, but you can't just passively read through the content. You need to do the activities outlined in each section, especially those topics that involve working with content from an [open-source project](docapis_find_open_source_project.html). These activities are crucial to building experience and credibility with a portfolio. I provide more details in [Getting an API documenation job and thriving](jobapis.html).
 
 ## No programming skills required
 
