@@ -8,6 +8,6 @@ To get an API key for the OpenWeatherMap API:
 4.  After signing in, you'll see the developer dashboard. Click the **API Keys** tab.
 5.  Copy the key to a place you can easily find it.
 
-(Note: It can take an hour or so for a new OpenWeatherMap API key to activate. If you have trouble with your key, you can use this one: `fd4698c940c6d1da602a70ac34f0b147`.)
+(Note: It can take an hour or so for a new OpenWeatherMap API key to activate. If you have trouble with your key, use one of the keys [listed here](http://idratherbewriting.site/apikeys). Put your name next to the key you're using.)
 
 {% if page.workshop_activities == true %}*For more information related to this activity, see [Get authorization keys](docapis_get_auth_keys.html).*{% endif %}
