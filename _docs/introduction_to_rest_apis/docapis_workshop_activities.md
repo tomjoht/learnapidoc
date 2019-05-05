@@ -53,6 +53,10 @@ The content here merely contains the same exercises that appear embedded in othe
 
 {% include workshop_button.html title="Activity 4c: Create a SwaggerUI display" activity="create_swaggerui_display" button_type="info" %}
 
+{% comment %}
+{% include workshop_button.html title="Optional activity: Explore Stoplight" activity="work_with_stoplight" button_type="info" %}
+{% endcomment %}
+
 ## Part VI: Conceptual content in API docs
 
 In this section, we follow an inductive approach where you look at the three examples of each conceptual topic and decide which approach is best.
