@@ -39,7 +39,7 @@ slide_title: "Intro to API documentation"
 
         <section>
            <h2>REST API growth phenomenal</h2>
-           <a href="http://www.programmableweb.com/news/api-consumers-want-reliability-documentation-and-community/2013/01/07"><img class="shortened" src="../images/growthinrestapis.png"/></a>
+           <a href="https://www.programmableweb.com/news/research-shows-interest-providing-apis-still-high/research/2018/02/23"><img class="shortened" src="../images/growthinrestapis.png"/></a>
         </section>
 
         <!-- <section>
@@ -85,7 +85,7 @@ curl -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4
            <h2>III: Documenting API endpoints</h2>
          </section> -->
          <section>
-            <h2>Common sections in API endpoint docs</h2>
+            <h2>Sections in API endpoint docs</h2>
                <ol>
                  <li>Resource description</li>
                  <li>Endpoints and methods</li>
@@ -93,6 +93,8 @@ curl -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4
                  <li>Request example</li>
                  <li>Response example and schema</li>
                </ol>
+
+               <p><small><i>Note: API terminology varies drastically from site to site.</small></i<</p>
 
          </section>
 
@@ -116,8 +118,8 @@ curl -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4
             <li><a href="https://sendgrid.com/docs/api-reference/">Users can try out requests</a></li>
             <li><a href="https://sendgrid.com/docs/for-developers/sending-email/api-getting-started/">Hello-World-like getting started tutorial</a></li>
             <li>Docs must sell the product &mdash; hence custom design</li>
-            <li>Reference content structured with <a href="https://api.stoplight.io/v1/versions/E2KbzZkqZQttfyqxp/export/oas.json">OpenAPI spec</a></li>
             <li><a href="https://sendgrid.com/docs/for-developers/">Split between API ref and conceptual content</li>
+            <li>Reference content structured with <a href="https://api.stoplight.io/v1/versions/E2KbzZkqZQttfyqxp/export/oas.json">OpenAPI spec</a></li>
             <li><a href="https://sendgrid.com/docs/for-developers/sending-email/api-getting-started/">Edit on GitHub</a> buttons &mdash; pull request workflows</li>
             <li>Not many PDF or localization requirements</li>
           </ul>
@@ -155,9 +157,9 @@ curl -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4
          </section> -->
 
          <section>
-             <h2>Unique conceptual topics</h2>
+             <h2>API conceptual topics</h2>
              <ul>
-                 <li>Hello world (Get started)</li>
+                 <li>Getting started (Hello World)</li>
                  <li>Authorization</li>
                  <li>Status and error codes</li>
                  <li>Rate limiting and thresholds</li>
@@ -167,12 +169,17 @@ curl -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4
          </section>
 
          <section>
-           <h2>API authentication and authorization</h2>
+           <h2>Getting started</h2>
+           <img src="../images/nonref_gettingstarted.svg"/></a>
+         </section>
+
+         <section>
+           <h2>Authorization</h2>
            <img src="../images/nonref_authentication.svg"/>
          </section>
 
          <section>
-           <h2>API status and error codes</h2>
+           <h2>Status and error codes</h2>
            <img src="../images/nonref_statuscodes.svg"/>
          </section>
 
@@ -187,13 +194,14 @@ curl -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4
          </section> -->
 
          <section>
-           <h2>Pubs tools developers prefer</h2>
+           <h2>Auth/pub tools developers prefer</h2>
            <a href="https://www.questionpro.com/t/PE5tIZduq7"><img src="../images/toolsengineersprefer.png"/></a>
-           </section>
+         </section>
 
            <section>
              <h2>The Docs as Code model</h2>
-             <img src="../images/limitstodocsascode-01.svg"/>
+             <figure><img src="../images/limitstodocsascode-01.svg"/>
+            <figcaption><small><a href="https://github.com/sendgrid/docs#sendgrid-documentation">Example - Gatsby, Github</a></small></figcaption></figure>
            </section>
 
            <section>
@@ -235,15 +243,15 @@ curl -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4
  </section>
 
  <section>
-   <h2>Why API writers don't attend STC</h2>
+   <h2>Why few API writers attend STC</h2>
    <ul>
-     <li>Tools are different (Expo irrelevant)</li>
+     <li>Tools are different (Expo mostly irrelevant)</li>
      <li>Developer audience different</li>
      <li>Doc'ing code isn't a task-based paradigm</li>
      <li>Structure refers to OAS, not DITA</li>
      <li>Technical ramp-up is steep</li>
      <li>Culture is more unconference style</li>
-     <li>Open-source tooling model</li>
+     <li>Open-source tools are the norm</li>
      </ul>
    </section>
 
@@ -255,7 +263,7 @@ curl -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4
          <section>
            <h2>Getting an API doc job</h2>
            <ul>
-         <li>Familiarity with 1-2 programming languages or other technical foundations (<a href="https://www.indeed.com/viewjob?jk=6ffa7b7a91be9116&q=API+technical+writer&l=Santa+Clara,+CA&tk=1da7i03cf3pvk808&from=ja&alid=5a3443122e7c92060efc60d7&utm_campaign=job_alerts&utm_medium=email&utm_source=jobseeker_emails&rgtk=1da7i03cf3pvk808">sample</a>)</li>
+         <li>Familiarity with 1-2 programming languages or other technical foundations (<a href="https://www.indeed.com/viewjob?jk=6ffa7b7a91be9116&q=API+technical+writer&l=Santa+Clara,+CA&tk=1da7i03cf3pvk808&from=ja&alid=5a3443122e7c92060efc60d7&utm_campaign=job_alerts&utm_medium=email&utm_source=jobseeker_emails&rgtk=1da7i03cf3pvk808">sample job</a>)</li>
          <li>Experience writing docs for a developer audience (show portfolio)</li>
            </ul>
          </section>
