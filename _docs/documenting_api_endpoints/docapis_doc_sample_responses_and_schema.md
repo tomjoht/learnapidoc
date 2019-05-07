@@ -25,11 +25,11 @@ redirect_from:
 
 The following is a sample response from the SendGrid API. Their documentation provides a tabbed display with an **Example** on one tab:
 
-<a class="noExtIcon" href="https://sendgrid.com/docs/API_Reference/api_v3.html"><img src="images/sendgridresponseexample1.png" /></a>
+<a class="noExtIcon" href="https://sendgrid.com/docs/api-reference/"><img src="images/sendgridresponseexample1.png" /></a>
 
 And the response **Schema** on another tab:
 
-<a class="noExtIcon" href="https://sendgrid.com/docs/API_Reference/api_v3.html"><img src="images/sendgridresponseexample2.png" /></a>
+<a class="noExtIcon" href="https://sendgrid.com/docs/api-reference/"><img src="images/sendgridresponseexample2.png" /></a>
 
 The definition of the response is called the *schema* or *model* (the terms are used synonymously) and aligns with the [JSON schema language and descriptions](http://json-schema.org/). What works particularly well with the SendGrid example is the use of expand/collapse tags to mirror the same structure as the example, with objects at different levels.
 

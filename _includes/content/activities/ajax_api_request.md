@@ -12,7 +12,7 @@ For this activity, you'll use JavaScript to display the API response on a web pa
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       </head>
     <body>
-      <h1>Sample page</h2>
+      <h2>Sample page</h2>
 
     </body>
     </html>

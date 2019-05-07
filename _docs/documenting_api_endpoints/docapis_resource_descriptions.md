@@ -50,7 +50,7 @@ For the Membership resource (or "object," as they call it), there are 7 differen
 
 Sometimes the general resource isn't described; instead, it just groups the endpoints. The bulk of the description appears in each endpoint. For example, in the Eventbrite API, here's the Events resource:
 
-<a class="noExtIcon" href="https://www.eventbrite.com/developer/v3/endpoints/events/"><img src="images/eventbriteresourceexample.png"/></a>
+<a class="noExtIcon" href="https://www.eventbrite.com/platform/api#/reference/event"><img src="images/eventbriteresourceexample.png"/></a>
 
 Although the Events resource isn't described here, descriptions are added for each of the Events endpoints. The Events resource contains all of these endpoints:
 

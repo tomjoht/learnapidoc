@@ -1,1 +1,1 @@
-Contains my presentation titled "Intro to API Documentation." You can view the presentation here: [http://idratherbewriting.com/intro-to-api-documentation](http://idratherbewriting.com/intro-to-api-documentation/index.html).
+Contains my presentation titled "Intro to API Documentation." You can view the presentation here: [https://idratherbewriting.com/intro-to-api-documentation](https://idratherbewriting.com/intro-to-api-documentation/index.html).
