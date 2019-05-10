@@ -10,7 +10,7 @@ weight: 1.01
 
 I've given numerous presentations and workshops on API documentation, and I've recorded most of them. The most recent recordings are available below.
 
-Keep in mind that my API content evolves, so some older presentations might no longer match the course content. I recorded these videos during a full-day API documentation in Raleigh, North Carolina, on April 6, 2019. (For more details, see this [blog post](https://idratherbewriting.com/2019/04/01/upcoming-api-workshops/).) This recording closely aligns with the latest content and activities in this course. I divided this all-day workshop into five separate videos.
+Keep in mind that my API content evolves, so some older presentations might no longer match the course content. I recorded most of these videos during a full-day API documentation in Raleigh, North Carolina, on April 6, 2019. (For more details, see this [blog post](https://idratherbewriting.com/2019/04/01/upcoming-api-workshops/).) This recording closely aligns with the latest content and activities in this course. I divided this all-day workshop into five separate videos.
 
 * TOC
 {:toc}
@@ -20,6 +20,12 @@ This content doesn't embed well in print, as it contains YouTube videos. Please 
 {% endif %}
 
 {% if site.format == "web" %}
+
+## One-hour crash course {#crashcourse}
+
+If you want a condensed version of videos 1-5, see this one-hour version that condenses much of the information from the other videos into one. I recorded this presentation at the [STC Summit 2019](https://summit.stc.org) in Denver.
+
+<iframe width="640" height="385" src="https://www.youtube.com/embed/5pzhtrrtkXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Video 1
 
