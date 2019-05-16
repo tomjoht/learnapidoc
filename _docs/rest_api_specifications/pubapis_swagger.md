@@ -29,9 +29,7 @@ Swagger UI is one of the most popular tools for generating interactive documenta
 
 {% include random_ad2.html %}
 
-Before we dive into Swagger, it might help to clarify some key terms.
-
-{% include glossary_limited.html file="glossary" %}
+For definitions of common terms, see [Key terms](#key_terms) at the end of this article.
 
 ## <i class="fa fa-user-circle"></i> Get familiar with Swagger UI through the Petstore demo
 
@@ -162,3 +160,7 @@ In addition to publishing your Swagger UI output as a standalone site, you can a
 * [Embedded Swagger UI Demo](pubapis_swagger_demo.html)
 
 Since the Swagger UI site is responsive, it resizes well to fit into most any space. Even so, embedding Swagger into an existing site still looks like a website within a website.
+
+## Key terms {#key_terms}
+
+{% include glossary_limited.html file="glossary" %}

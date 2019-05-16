@@ -8,7 +8,7 @@ published: false
 
 1. . serve_kindle.sh
 2. new tab: . build_kindle.sh
-3. . move.sh (moves docapis.mobi file to mobi folder)
+3. . move.sh (moves docapis.mobi file from \_site to mobi folder in root directory)
 4. open Kindle Previewer and select the docapis.mobi file in the mobi_files directory.
 5. plug in kindle. find in finder. copy mobi file into documents directory. it will then appear in your home.
 
@@ -19,7 +19,7 @@ details:
 - tocstart.html is the beginning page that lists the chapters
 - docapis.ncx is used for the built-in navigation in kindle
 - not necessary to have a more robust toc b/c the ncx file provides the nav built-in
-- build_pdf.sh runs this:
+- build_kindle.sh runs this:
 
 ```
 /Users/tomjoht/projects/kindlegen/kindlegen _site/docapis.opf
