@@ -2,7 +2,7 @@
 
 The following is a sample API reference topic for an endpoint called `surfreport`. There are about 25 things wrong in the topic. A copy of this same content is available in a read-only [Google Doc here](https://docs.google.com/document/d/1LU0QJTDHHKFu9FIC24ZrF1I5HC7mzX86fH0YZ1SUHyo/edit?usp=sharing). In Google Docs, go to **File > Make a Copy** to create your own instance. Then make comments in Google docs to note as many errors as you can find.
 
-<figure><a class="noCrossRef" href="https://docs.google.com/document/d/1LU0QJTDHHKFu9FIC24ZrF1I5HC7mzX86fH0YZ1SUHyo/edit?usp=sharing"><img style="max-width: 300px" src="images/google_doc_surf_report.png" class="noCrossRef"/></a><figcaption>Make a copy of this Google doc and make comments on it.</figcaption></figure>
+<figure><a class="noCrossRef" href="https://docs.google.com/document/d/1LU0QJTDHHKFu9FIC24ZrF1I5HC7mzX86fH0YZ1SUHyo/edit?usp=sharing"><img class="medium" src="images/google_doc_surf_report.png" class="noCrossRef"/></a><figcaption>Make a copy of this Google doc and make comments on it.</figcaption></figure>
 
 <div class="docSample" markdown="block">
 

@@ -85,15 +85,17 @@ Logging responses to the console can be a useful way to test whether an API resp
 
 {% include random_ad.html %}
 
+{% comment %}
 You can add other information to the console log message. To preface the log message with a string, add something like this:
 
 ```js
-console.log("Here's the response: " + response);
+console.log(response);
 ```
 
 Strings are always enclosed inside quotation marks, and you use the plus sign `+` to concatenate strings with JavaScript variables, like `response`.
 
 Customizing log messages is helpful if you're logging various outputs to the console and need to flag them with an identifier.
+{% endcomment %}
 
 ## <i class="fa fa-user-circle"></i> Inspect the payload
 
