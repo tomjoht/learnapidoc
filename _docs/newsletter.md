@@ -17,7 +17,7 @@ published: false
 <input type="checkbox" name="gdpr" id="gdpr"/>
 <span><strong>Marketing permission</strong>:  give my consent to I'd Rather Be Writing to be in touch with me via email using the information I have provided in this form for the purpose of news, updates and marketing. </span>
 <br/><br/>
-<span><strong>What to expect</strong>: If you wish to withdraw your consent and stop hearing from me, simply click the unsubscribe link at the bottom of every email I send or contact me at tom@idratherbewriting.com. I value and respect your personal data and privacy. To view my privacy policy, please visit our website. By submitting this form, you agree that I may process your information in accordance with these terms.</span>
+<span><strong>What to expect</strong>: If you wish to withdraw your consent and stop hearing from me, simply click the unsubscribe link at the bottom of every email I send or contact me at tomjoht@gmail.com. I value and respect your personal data and privacy. To view my privacy policy, please visit our website. By submitting this form, you agree that I may process your information in accordance with these terms.</span>
 <br/><br/>
 	<div style="display:none;">
 	<label for="hp">HP</label><br/>
