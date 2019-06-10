@@ -50,7 +50,7 @@ To set up your Git repo using the GitHub Desktop client:
 
     You'll see GitHub Desktop show that it's "Pushing to origin."
 
-    <img src="images/pushingtoorigin.png" style="width:250px" alt="Pushing to origin" />
+    <img src="https://idratherbewritingmedia.com/images/api/pushingtoorigin.png" style="width:250px" alt="Pushing to origin" />
 
 If you view your repository online, you'll see that the change you made has been pushed to the master branch on origin. You can also click the **History** tab in the GitHub Desktop client (instead of the **Changes** tab), or go to **View > Show History** to see the changes you previously committed.
 

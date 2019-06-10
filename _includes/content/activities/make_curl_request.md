@@ -4,7 +4,7 @@
 2.  On any call you've configured, and below the Save button in Postman, click the **Code** link.
 3.  In the Generate Code Snippets dialog box, select **cURL** from the drop-down list, and then click **Copy to Clipboard**.
 
-    <img src="images/postmancurl.png" class="medium" />
+    <img src="https://idratherbewritingmedia.com/images/api/postmancurl.png" class="medium" />
 
     The Postman code for the OpenWeatherMap weather request in curl looks as follows:
 

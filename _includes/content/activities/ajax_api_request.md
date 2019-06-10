@@ -23,7 +23,7 @@ For this activity, you'll use JavaScript to display the API response on a web pa
 2.  Open Postman and go to the Current weather data (`weather`) endpoint that you configured in an earlier activity (see [Submit requests through Postman](docapis_postman.html) for more information).
 3.  Click the **Code** link (below the Save button), and then select **JavaScript > jQuery AJAX**.
 
-    <img src="images/postmanjqueryajax.png" class="medium" alt="JavaScript Ajax code snippet" />
+    <img src="https://idratherbewritingmedia.com/images/api/postmanjqueryajax.png" class="medium" alt="JavaScript Ajax code snippet" />
 
     The AJAX code should look as follows:
 
@@ -94,7 +94,7 @@ For this activity, you'll use JavaScript to display the API response on a web pa
 
     The page body will be blank, but the weather response should be logged to the JavaScript Console (due to the `console.log(response)` code in the request). If you expand the object returned to the console, it will look as follows:
 
-    <a class="noCrossRef" href="https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html"><img src="images/jsonpayloadweather.png" alt="JSON payload from weather API logged to console" /></a>
+    <a class="noCrossRef" href="https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html"><img src="https://idratherbewritingmedia.com/images/api/jsonpayloadweather.png" alt="JSON payload from weather API logged to console" /></a>
 
     This information is now available for you to integrate into your page.
 

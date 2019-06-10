@@ -5,9 +5,10 @@ course: "Documenting REST APIs"
 sidebar: docapis
 type: plain
 progress: false
+published: false
 ---
 
-<form action="https://idratherassets.com/sendy/subscribe" method="POST" accept-charset="utf-8">
+<form action="https://idratherbewritingmedia.com/sendy/subscribe" method="POST" accept-charset="utf-8">
 	<label for="name">Name</label><br/>
 	<input type="text" name="name" id="name"/>
 	<br/>

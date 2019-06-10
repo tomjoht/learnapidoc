@@ -12,7 +12,7 @@ This is the answer key for [Activity: What's wrong with this API reference topic
 
 After you've finished commenting on the Google Doc, go to this [annotated Google doc](https://docs.google.com/document/d/1ogj99YHhFMkXb-HMMMko-G9Hq9Rg6cztdT06-oUZm4E/edit).
 
-<figure><a target="_blank" class="noCrossRef" href="https://docs.google.com/document/d/1ogj99YHhFMkXb-HMMMko-G9Hq9Rg6cztdT06-oUZm4E/edit"><img style="max-width: 300px" src="images/annotatedgoogledoc.png" /></a><figcaption>Annotated Google doc showing answers</figcaption></figure>
+<figure><a target="_blank" class="noCrossRef" href="https://docs.google.com/document/d/1ogj99YHhFMkXb-HMMMko-G9Hq9Rg6cztdT06-oUZm4E/edit"><img style="max-width: 300px" src="https://idratherbewritingmedia.com/images/api/annotatedgoogledoc.png" /></a><figcaption>Annotated Google doc showing answers</figcaption></figure>
 
 Alternatively, expand the answers below to see how many issues you found. If you found additional issues beyond those noted here, feel free to [drop me an email](contact.html) letting me know. You can also add your own comments on the Google Doc answer key.
 

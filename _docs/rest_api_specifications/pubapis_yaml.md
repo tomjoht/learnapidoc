@@ -21,7 +21,7 @@ YAML stands for "YAML Ain't Markup Language." This means that the YAML syntax do
 
 YAML is easier to work with because it removes the brackets, curly braces, and commas that get in the way of reading content.
 
-<figure><a href="http://yaml.org/" class="noExtIcon"><img src="images/yamlscreenshot.png" alt="YAML" /></a><figcaption>The YAML site itself is written using YAML, which you can immediately see is not intended for coding web pages.</figcaption></figure>
+<figure><a href="http://yaml.org/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/yamlscreenshot.png" alt="YAML" /></a><figcaption>The YAML site itself is written using YAML, which you can immediately see is not intended for coding web pages.</figcaption></figure>
 
 YAML is an attempt to create a more human-readable data exchange format. It's similar to JSON (which is actually a subset of YAML) but uses spaces, colons, and hyphens to indicate the structure.
 

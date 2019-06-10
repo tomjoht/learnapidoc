@@ -41,19 +41,19 @@ If you prefer audio only, you can listen here:
 
 Part I:
 <div class="audioControls">
-<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/denverapiworkshop_part1.mp3" type="audio/mpeg" /></audio></p>
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherbewritingmedia.com/podcasts/denverapiworkshop_part1.mp3" type="audio/mpeg" /></audio></p>
 </div>
 
 Part II:
 <div class="audioControls">
-<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/denverapiworkshop_part2.mp3" type="audio/mpeg" /></audio></p>
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherbewritingmedia.com/podcasts/denverapiworkshop_part2.mp3" type="audio/mpeg" /></audio></p>
 </div>
 
 {% include random_ad2.html %}
 
 Part III:
 <div class="audioControls">
-<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/denverapiworkshop_part3.mp3" type="audio/mpeg" /></audio></p>
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherbewritingmedia.com/podcasts/denverapiworkshop_part3.mp3" type="audio/mpeg" /></audio></p>
 </div>
 
 {% endif %}

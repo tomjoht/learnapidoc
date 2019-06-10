@@ -449,11 +449,11 @@ One of the unique options Mulesoft offers is called [API Notebook](https://api-n
 
 ## API Console output {#apiconsole}
 
-You can download the same code that generates the output on the Anypoint Platform and create your own interactive documentation. The standalone project (on GitHub) is called [API Console](https://github.com/mulesoft/api-console). Here's a [demo](http://idratherassets.com/raml/build/index.html). Instructions for building API Console from a RAML file are available on the [api-console](https://github.com/mulesoft/api-console) project on GitHub. After you build the output, upload it to a web server and go to the index.html file.
+You can download the same code that generates the output on the Anypoint Platform and create your own interactive documentation. The standalone project (on GitHub) is called [API Console](https://github.com/mulesoft/api-console). Here's a [demo](https://idratherbewriting.com/assets/files/raml/build/index.html). Instructions for building API Console from a RAML file are available on the [api-console](https://github.com/mulesoft/api-console) project on GitHub. After you build the output, upload it to a web server and go to the index.html file.
 
-Here's the [OpenWeather API in API Console](http://idratherassets.com/raml/build/index.html):
+Here's the [OpenWeather API in API Console](https://idratherbewriting.com/assets/files/raml/build/index.html):
 
-{% include course_image.html url="http://idratherassets.com/raml/build/index.html" size="large" filename="ramlexample" ext_print="png" ext_web="png" alt="Sample RAML output in API Console." caption="Sample RAML output in API Console." %}
+{% include course_image.html url="https://idratherbewriting.com/assets/files/raml/build/index.html" size="large" filename="ramlexample" ext_print="png" ext_web="png" alt="Sample RAML output in API Console." caption="Sample RAML output in API Console." %}
 
 You can also [embed the API console as an HTML element](https://github.com/mulesoft/api-console#embed-as-an-html-element).
 

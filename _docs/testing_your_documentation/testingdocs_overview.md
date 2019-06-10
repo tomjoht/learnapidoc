@@ -33,6 +33,6 @@ Testing your API doc content is so critical, I've created an entire section devo
 * [Test all instructions yourself](testingdocs_test_your_instructions.html)
 * [Test your assumptions](testingdocs_testing_assumptions.html)
 
-<figure><a href="https://flic.kr/p/6Grete" class="noExtIcon"><img src="images/testingeverything.jpg" alt="Testing everything" /></a><figcaption>Photo from <a href='https://flic.kr/p/6Grete'>Flickr</a>, <a href='https://creativecommons.org/licenses/by/2.0/legalcode'>CC BY 2.0</a> &mdash; City water testing laboratory, 1948. When I think about testing docs, I like to think of myself as a scientist in a laboratory, carefully setting up tests to measure reactions and outcomes.</figcaption></figure>
+<figure><a href="https://flic.kr/p/6Grete" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/testingeverything.jpg" alt="Testing everything" /></a><figcaption>Photo from <a href='https://flic.kr/p/6Grete'>Flickr</a>, <a href='https://creativecommons.org/licenses/by/2.0/legalcode'>CC BY 2.0</a> &mdash; City water testing laboratory, 1948. When I think about testing docs, I like to think of myself as a scientist in a laboratory, carefully setting up tests to measure reactions and outcomes.</figcaption></figure>
 
 {% include random_ad.html %}

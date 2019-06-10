@@ -129,7 +129,7 @@ $.post("http://api.myapp.com/books/", {
 
 This code uses `for` loops in [Liquid scripting](https://help.shopify.com/themes/liquid/basics) to iterate through the items in the `docs` collection and pushes the content into the HTML styles of the template. The result looks like this:
 
-<a href="https://tangerine-lemon.cloudvent.net/" class="noExtIcon"><img src="images/aviatortheme.png" /></a>
+<a href="https://tangerine-lemon.cloudvent.net/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/aviatortheme.png" /></a>
 
 Note that this kind of structure is really only necessary if you have a lot of different endpoints. If you only have a handful, there's no need to automate the template process.
 
@@ -151,7 +151,7 @@ My point here is that you shouldn't be overwhelmed by the coding challenges arou
 
 Many API doc sites provide *one integrated website* to present all of the information. You usually aren't opening help in a new window, separate from the other content. The website is branded with the same look and feel as the product. Here's an example from Yelp:
 
-<a href="https://www.yelp.com/developers/documentation" class="noExtIcon"><img src="images/yelpapi.png" alt="Yelp API documentation" /></a>
+<a href="https://www.yelp.com/developers/documentation" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/yelpapi.png" alt="Yelp API documentation" /></a>
 
 I hinted at this earlier (in [The market for REST API documentation](docapis_intro_to_rest_api_doc.html)), but with API documentation, there usually isn't a GUI (graphical user interface) that the documentation complements. In most cases, the API documentation itself is the interface that users navigate to use your product. As such, users will expect more from it.
 
@@ -171,7 +171,7 @@ This open invitation to use the tools of the web to construct your API doc site 
 
 More than anything else, developers love [code examples](docapis_codesamples_bestpractices.html), and the abundance of syntax-highlighted, properly formatted code samples on API doc sites constitutes a design pattern. Usually, the more code you can add to your documentation, the better. Here's an example from Evernote's API:
 
-<a href="https://dev.evernote.com/doc/articles/note-sharing.php" class="noExtIcon"><img src="images/evernotecodesamples.png" alt="Evernote code examples" /></a>
+<a href="https://dev.evernote.com/doc/articles/note-sharing.php" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/evernotecodesamples.png" alt="Evernote code examples" /></a>
 
 James Yu at Parse gives the following advice:
 
@@ -215,10 +215,10 @@ James Yu at Parse also echoes similar feedback about fragmentation. He says,
 
 The Backbone.js documentation takes this length to an extreme, publishing everything on one page:
 
-<a href="http://backbonejs.org/" class="noExtIcon"><img src="images/backbonejs.png" alt="Backbone JS" /></a>
+<a href="http://backbonejs.org/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/backbonejs.png" alt="Backbone JS" /></a>
 
 For another example of a long page, see the Reddit API:
-<a href="https://www.reddit.com/dev/api" class="noExtIcon"><img src="images/redditpage.png" alt="Backbone JS" /></a>
+<a href="https://www.reddit.com/dev/api" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/redditpage.png" alt="Backbone JS" /></a>
 
 Why do API doc sites tend to have such lengthy pages? Here are a few reasons:
 
@@ -237,7 +237,7 @@ For APIs not on these platforms, wiring up an API Explorer is often done by engi
 
 Here's a sample API explorer from [Watson's AlchemyLanguage API](https://watson-api-explorer.mybluemix.net/apis/alchemy-language-v1#!/Authors/get_html_HTMLGetAuthors) that uses [Swagger or OpenAPI](pubapis_swagger_intro.html) to provide the interactivity.
 
-<a href="https://watson-api-explorer.mybluemix.net/apis/alchemy-language-v1#!/Authors/get_html_HTMLGetAuthors" class="noExtIcon" class="noExtIcon"><img src="images/watson-try-it-out.png"/></a>
+<a href="https://watson-api-explorer.mybluemix.net/apis/alchemy-language-v1#!/Authors/get_html_HTMLGetAuthors" class="noExtIcon" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/watson-try-it-out.png"/></a>
 
 Are API explorers novel, or instructive? If you're going to be making a lot of calls, there's no reason why you couldn't just use [curl](docapis_make_curl_call.html) or [Postman](docapis_postman.html) (particularly the [Postman Run Button](docapis_doc_getting_started_section.html#runinpostmanbutton)) to quickly make the request and see the response. However, the API Explorer embedded directly in your documentation provides more of a graphical user interface that makes the endpoints accessible to more people. You don't have to worry about entering the right syntax in your call &mdash; you just have to fill in the blanks.
 

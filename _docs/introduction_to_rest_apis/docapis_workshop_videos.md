@@ -55,36 +55,36 @@ If you prefer audio only, you can listen here:
 
 Video 1 of 5:
 <div class="audioControls">
-<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/raleighapidoc/apiworkshopvid1.mp3" type="audio/mpeg" /></audio></p>
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherbewritingmedia.com/podcasts/raleighapidoc/apiworkshopvid1.mp3" type="audio/mpeg" /></audio></p>
 </div>
 
 Video 2 of 5:
 <div class="audioControls">
-<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/raleighapidoc/apiworkshopvid2.mp3" type="audio/mpeg" /></audio></p>
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherbewritingmedia.com/podcasts/raleighapidoc/apiworkshopvid2.mp3" type="audio/mpeg" /></audio></p>
 </div>
 
 Video 3 of 5:
 <div class="audioControls">
-<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/raleighapidoc/apiworkshopvid3.mp3" type="audio/mpeg" /></audio></p>
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherbewritingmedia.com/podcasts/raleighapidoc/apiworkshopvid3.mp3" type="audio/mpeg" /></audio></p>
 </div>
 
 {% include random_ad2.html %}
 
 Video 4 of 5:
 <div class="audioControls">
-<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/raleighapidoc/apiworkshopvid4.mp3" type="audio/mpeg" /></audio></p>
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherbewritingmedia.com/podcasts/raleighapidoc/apiworkshopvid4.mp3" type="audio/mpeg" /></audio></p>
 </div>
 
 Video 5 of 5:
 <div class="audioControls">
-<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/raleighapidoc/apiworkshopvid5.mp3" type="audio/mpeg" /></audio></p>
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherbewritingmedia.com/podcasts/raleighapidoc/apiworkshopvid5.mp3" type="audio/mpeg" /></audio></p>
 </div>
 
 Want all the audio combined into one massive file? Here it is:
 
 All audio combined:
 <div class="audioControls">
-<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherassets.com/podcasts/raleighapidoc/apiworkshopvidall.mp3" type="audio/mpeg" /></audio></p>
+<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherbewritingmedia.com/podcasts/raleighapidoc/apiworkshopvidall.mp3" type="audio/mpeg" /></audio></p>
 </div>
 
 ## More videos
