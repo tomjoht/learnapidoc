@@ -228,7 +228,15 @@ folders:
   - title: "Activity: Assess the conceptual content in your project"
     jurl: /docapis_concept_activity.html
 
-- title: "VII: Publishing API docs"
+- title: "VII: Documenting code"
+  jurl: /docapiscode.html
+  description: "This section covers strategies for documenting code. I'm still developing out this section, so much of the content is under construction."
+  folderitems:
+
+  - title: Why documenting code is so difficult
+    jurl: /docapis_code_difficulty.html
+
+- title: "VIII: Publishing API docs"
   jurl: /publishingapis.html
   description: "API documentation often follows a docs-as-code workflow, where the tools to author and publish documentation align closely with the same tools developers use to write, manage, build, and deploy code. Docs-as-code involves using lightweight formats such as Markdown, collaborating through Git or other version control, building your doc site with a static site generator, and deploying it through a continuous build model, where the build happens on the server when you push commits to a particular branch."
   folderitems:
@@ -279,7 +287,7 @@ folders:
     jurl: /pubapis_switching_to_docs_as_code.html
 
 
-- title: "VIII: Getting an API doc job and thriving"
+- title: "IX: Getting an API doc job and thriving"
   jurl: /jobapis.html
   description: "Getting an API documenation job and thriving requires you to demonstrate your technical aptitude through a writing portfolio. The portfolio should include samples of documentation written for developers. One way to build this portfolio is by working on an open-source project. You also need to live in a tech hub where API documentation jobs are available, such as California, Texas, New York, or Virginia. Overall, thriving in the developer documentation space requires you to continually learn a healthy dose of code, which can be challenging."
   folderitems:
@@ -299,7 +307,7 @@ folders:
   - title: "Activity: Create or fix an API reference documentation topic"
     jurl: /docapis_work_on_conceptual_topic.html
 
-- title: "IX: Native library APIs"
+- title: "X: Native library APIs"
   jurl: /nativelibraryapis.html
   description: "Native library APIs refer to Java, C++, or other programming-specific APIs. In this model, rather than making requests across the web for the information, you download a library of code and integrate it into your project. The library is compiled directly into your application's build (rather than accessed through web protocols as with REST APIs). Although this type of API is less common, I include it here in part to clarify what makes REST APIs so different from native library APIs."
   folderitems:
@@ -332,7 +340,7 @@ folders:
     jurl: /nativelibraryapis_nonrefdocs.html
 
 
-- title: "X: API glossary and resources"
+- title: "XI: API glossary and resources"
   jurl: /resources.html
   description: "The API documentation landscape is full of jargon, acronyms, and many new terms. This glossary provides a list of terms and definitions. Additionally, this section contains additional exercises and information, such as more activities for calling APIs, or more info about alternative specifications."
   folderitems:
