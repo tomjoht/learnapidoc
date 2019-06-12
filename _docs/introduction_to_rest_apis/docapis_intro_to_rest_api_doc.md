@@ -104,7 +104,7 @@ When you try to navigate the world of API documentation, you may be initially ov
 
 Realizing there was a need for more information, in 2014 I guest-edited a special issue of Intercom dedicated to API documentation.
 
-{% include course_image.html url="http://bit.ly/stcintercomapiissue" size="small" filename="intercom" ext_print="png" ext_web="png" alt="STC Intercom issue (that I guest-edited) focusing on API documentation" caption="STC Intercom issue focused on API documentation" %}
+{% include course_image.html url="https://idratherbewritingmedia.com/files/intercom_vol61_issue8.pdf" size="small" filename="intercom" ext_print="png" ext_web="png" alt="STC Intercom issue (that I guest-edited) focusing on API documentation" caption="STC Intercom issue focused on API documentation" %}
 
 {: .tip}
 You can read this issue for free [here](https://idratherbewritingmedia.com/files/intercom_vol61_issue8.pdf). (The STC made this PDF available for free.)
