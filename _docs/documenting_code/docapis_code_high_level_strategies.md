@@ -10,7 +10,7 @@ path1: /doccode.html
 published: false
 ---
 
-## high level strategies for documenting code
+## High level strategies for documenting code
 
 Start simple or more complex. Do you start with the simplest implementation and work your way progressively more complicated?*
 

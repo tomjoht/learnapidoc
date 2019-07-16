@@ -23,6 +23,8 @@ Why do engineers so frequently say they want code? Code examples show how to imp
 
 Despite the importance of code samples, they're not easy to implement. For this reason, they're often neglected or missing from API docs. In fact, code samples might be the most difficult part of documentation that technical writers have to document. In this section, I'll explain why documenting code can be challenging, and then in various additional topics I'll provide concrete strategies for successfully incorporating code samples in your documentation.
 
+{% include random_ad2.html %}
+
 ## Challenges in documenting code
 
 Why is code so difficult to document? There are several reasons:
@@ -43,3 +45,5 @@ These are some of the challenges around documenting code. In the topics in this 
 
 {: .note}
 June 11, 2019. I'm currently expanding out the topics in this section. Stay tuned for more to come in this section.
+
+{% include random_ad.html %}
