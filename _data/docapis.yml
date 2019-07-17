@@ -236,6 +236,9 @@ folders:
   - title: Why documenting code is so difficult
     jurl: /docapis_code_difficulty.html
 
+  - title: Research on documenting code
+    jurl: /docapiscode_research_on_documenting_code.html
+
 - title: "VIII: Publishing API docs"
   jurl: /publishingapis.html
   description: "API documentation often follows a docs-as-code workflow, where the tools to author and publish documentation align closely with the same tools developers use to write, manage, build, and deploy code. Docs-as-code involves using lightweight formats such as Markdown, collaborating through Git or other version control, building your doc site with a static site generator, and deploying it through a continuous build model, where the build happens on the server when you push commits to a particular branch."

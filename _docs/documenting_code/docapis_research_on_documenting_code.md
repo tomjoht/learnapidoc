@@ -1,34 +1,29 @@
 ---
 title: Research on documenting code
-permalink: /docapiscode.html
+permalink: /docapiscode_research_on_documenting_code.html
 keywords:
 course: "Documenting REST APIs"
-weight: 7
+weight: 7.2
 sidebar: docapis
 section: docapiscode
 path1: /doccode.html
-published: false
 ---
 
----
-title: "Research on code documentation -- when not to comment on code"
-categories:
-- academics-and-practitioners
-- api-doc
-keywords:
-summary: "In this post, I summarize the findings of an extensive research project about how developers at Google find and use code documentation. The research found that for simple code, sometimes developers prefer to read the code directly. However, for more complex code, developers consult documentation, often by looking in the formal class declarations for information they need; other times they look at comments in the implementation code. Besides the location of docs, the researchers also identify what type of answers and guidance developers want in code documentation."
-bitlink: http://bit.ly/whennottocommentcode
----
+Before diving in to how to document code, let's first explore some research that has been done on best practices for documenting code, as this can inform our direction and approach. A couple of academic articles stand out as noteworthy for this effort:
 
-## Research on code documentation
+* "When Not to Comment: Questions and Tradeoffs with API Documentation for C++ Projects" by Head et al. This article explores how developers at Google find and use code documentation. The research found that for simple code, sometimes developers prefer to read the code directly. However, for more complex code, developers consult documentation, often by looking in the formal class declarations for information they need; other times they look at comments in the implementation code. Besides the location of docs, the researchers also identify what type of answers and guidance developers want in code documentation.
+* "How Developers Use API Documentation: An Observation Study" by Meng et al. In this article, researchers look at how developers interact with API documentation and find a mix of both *systematic* (read first, explore later) and *opportunistic* (explore first, read later) learning styles. While we often write with systematic developers in mind, focusing on opportunistic behaviors might be more beneficial, and will cause us to look more closely at improving search, navigation, interactive components, troubleshooting, error messages, and other action-oriented features.
 
-For the next topic in my [Simplifying Complexity series](/simplifying-complexity), I plan to tackle the topic of documenting code. Programming code, such as Java, C++, or any other language, remains one of the most elusive and difficult topics to document. In part, this is because most technical writers aren't already fluent in the programming language. But even for writers or developers who are fluent in the language, code is hard to document. There isn't a step-by-step process to follow. Code is often arranged in non-linear order, so you can't simply proceed line-by-line through it. There's also the question of how much to document, what to cover, and where to include the documentation. Overall, best practices for documenting code are somewhat fuzzy and undefined.
+<div></div>
 
-In the next few weeks, I'll try to tackle this topic in a piece-by-piece fashion, eventually building up the material to form a longer essay. For now, I'll present and summarize some research that has been done on documenting code.
+* TOC
+{:toc}
 
-One of the most exciting articles I've found on the topic is "When Not to Comment: Questions and Tradeoffs with API Documentation for C++ Projects," by Andrew Head, Caitlin Sadowski, Emerson Murphy-Hill, and Andrea Knight. This article was published in the *2018 ACM/IEEE 40th International Conference on Software Engineering.* (To read the article, see this [ResearchGate link](https://www.researchgate.net/publication/325732077_When_not_to_comment_questions_and_tradeoffs_with_API_documentation_for_C_projects). I also found it online [here](https://people.eecs.berkeley.edu/~andrewhead/pdf/comment.pdf).)
+## When Not to Comment: Questions and Tradeoffs with API Documentation for C++ Projects
 
-This research combines efforts among academic researchers, engineers, usability specialists, and members from Google’s Engineering Productivity Research team. Given how important documentation is for understanding code, the researchers wanted to know the best location for documentation as well as what information engineers want in docs. Specifically, they focused on C++ APIs and asked whether engineers are more inclined to consult the header files (where classes are defined) or the implementation files (where classes are implemented) for the information they need. The following screenshot (from their article) describes the difference between header and implementation files:
+First, lets explore "When Not to Comment: Questions and Tradeoffs with API Documentation for C++ Projects," by Andrew Head, Caitlin Sadowski, Emerson Murphy-Hill, and Andrea Knight. This article was published in the *2018 ACM/IEEE 40th International Conference on Software Engineering.* (To read the article, see this [ResearchGate link](https://www.researchgate.net/publication/325732077_When_not_to_comment_questions_and_tradeoffs_with_API_documentation_for_C_projects) or go [here](https://people.eecs.berkeley.edu/~andrewhead/pdf/comment.pdf).)
+
+This research combines efforts among academic researchers, engineers, usability specialists, and members from Google’s Engineering Productivity Research team. Given how important documentation is for understanding code, the researchers wanted to know the best location for documentation as well as what information engineers want in docs. Specifically, they focused on C++ APIs and asked whether engineers are more inclined to consult the header files (where classes are defined) or the implementation files (where classes are implemented) for the information they need. The following screenshot (from their article) shows the difference between header and implementation files:
 
 <img src="https://idratherbewritingmedia.com/images/header_or_implementation_files.png" style="max-width: 500px" alt="Header files versus implementation files" />
 
@@ -36,7 +31,7 @@ Basically, in C++, the header files (`.h`) contain the classes and the main docu
 
 The researchers used tracking tools to identify when developers would switch from one file to another, and they also interviewed the developers as a follow-up. Google has about a billion lines of code stored in a central code repository that can be used across the company, so thousands of developers might find and discover code to use in their projects. The team that uses an API might not know the team that developed the API, and vice versa. The researchers gathered information from more than 600 participants in their study.
 
-## Where developers look for documentation about code
+### Where developers look for documentation about code
 
 Overall, the researchers found that most developers looked in the header files for documentation:
 
@@ -55,7 +50,7 @@ However, for more complex code, especially where multiple files and generated co
 > When isn’t code enough to be self-documenting? Sometimes, developers had no problem reading code, and in fact preferred it
 for finding more accurate information. However, there are some cases where self-documentation isn’t feasible, like code with overly complex method signatures and generated code. Other details, like recommended usage, just can’t be conveyed by source code.
 
-## When to document code
+### When to document code
 
 The researchers find that there's an ideal time for writing and updating documentation:
 
@@ -63,7 +58,7 @@ The researchers find that there's an ideal time for writing and updating documen
 
 In other words, write the docs when the code development is still fresh in your mind (or in the developer's mind). If you wait too long after active development finishes, the documentation will likely be neglected and forgotten, as developers move on to other projects.
 
-## What questions to address in code documentation
+### What questions to address in code documentation
 
 The researchers also try to understand what types of answers and guidance should be in the documentation. This is a more difficult, broad question, and their answer is generally "API usage." More specifically,
 
@@ -73,7 +68,7 @@ The researchers arrange this information into a chart for readability:
 
 <img src="https://idratherbewritingmedia.com/images/api-usage-what-to-document.png" alt="What to focus on in documentation" />
 
-## Conclusion
+### Conclusion
 
 Overall, this research has many insights and conclusions. Probably the main takeaway, as expressed in the title ("When not to comment"), is to recognize when code is simple enough that it doesn't need documentation. However, making this decision must surely be difficult because it presumes that most developers have the same technical level. More advanced developers can probably extrapolate the API's usage from code, but beginning developers might need more handholding. Do comments interfere with readability for advanced developers but aid readability for new developers?
 
@@ -82,25 +77,15 @@ Skipping docs based on the assumption that code is more readable on its own also
 The article addresses many of these concerns and presents a complex view about each of these facets &mdash; where to store documentation, when to document, what questions to address, and more. There's not always a clear path to follow (it's messy), and many environmental, product, and audience details must factor into the documentation strategy. Still, this article provides solid research and probes the topic in illuminating ways.
 
 
----
-title: "How to design API documentation for opportunistic (active, experiential) learning styles"
-categories:
-- academics-and-practitioners
-- api-doc
-keywords: api documentation, learning styles, opportunistic
-bitlink: http://bit.ly/designforopportunisticbehavior
-summary: "A recent study looked at how developers interact with API documentation. It found a mix of systematic and opportunistic learning styles. While we often write with the former in mind, focusing on the latter styles (opportunistic) might be more beneficial, and will cause us to focus on improving search, navigation, interactive components, troubleshooting, error messages, and other action-oriented features."
----
+## How Developers Use API Documentation: An Observation Study
 
-## Study on how developers use API docs
-
-The latest issue of [Communication Design Quarterly](https://sigdoc.acm.org/publication/), a publication of SIGDOC (the Special Interest Group for Design of Communication), features a highly relevant article called [How Developers Use API Documentation: An Observation Study](https://sigdoc.acm.org/cdq/how-developers-use-api-documentation-an-observation-study/). Several researchers from Merseburg University in Germany &mdash; Michael Meng, Stephanie Steinhardt, and Andreas Shubert &mdash; set out to "understand how developers use documentation when starting to work with a new API."
+A recent issue of [Communication Design Quarterly](https://sigdoc.acm.org/publication/), a publication of SIGDOC (the Special Interest Group for Design of Communication), features a highly relevant article called [How Developers Use API Documentation: An Observation Study](https://sigdoc.acm.org/cdq/how-developers-use-api-documentation-an-observation-study/). Several researchers from Merseburg University in Germany &mdash; Michael Meng, Stephanie Steinhardt, and Andreas Shubert &mdash; set out to "understand how developers use documentation when starting to work with a new API."
 
 Their methodology is fairly straightforward: they "asked software developers to solve a set of pre-defined tasks using a public API unfamiliar to them on the basis of the documentation published by the API provider." Basically, these users had to figure out how to construct REST API requests with the right parameters and other configurations in order to send requests that would return the needed information. The researchers then observed how the developers used the API documentation to figure out the tasks.
 
 There are a lot of great observations and conclusions in this article. I'm just summarizing and highlighting the information here. I recommend that you [read the article](https://sigdoc.acm.org/cdq/how-developers-use-api-documentation-an-observation-study/) for the full details.
 
-## Systematic versus opportunistic behaviors
+### Systematic versus opportunistic behaviors
 
 The authors present some previous research about "systematic" and "opportunistic" learning behaviors. These terms are typically how previous researchers describe the contrasting user behaviors.
 
@@ -118,7 +103,7 @@ In contrast, the systematic developers approached tasks like this:
 
 > In our test, we note that these developers took some time to explore the API and to prepare the development environment before starting with the first task. Moreover, they took some time to get a general orientation. For example, P7 and P8 studied some sections in the documentation, then sent a GET request to the API and analyzed the response to check whether the request-response process worked as expected.
 
-## Designing for opportunistic behavior
+### Designing for opportunistic behavior
 
 When I'm writing docs and structuring my help system, I admit that I often have the more systematic developer in mind &mdash; the one that will read the material from start to end, the one who begins at step one, reads conceptual introductions, and then proceeds to the code examples and such. But it seems like that learning preference doesn't describe a huge percentage of learners. It's probably better to design for the opportunistic behavior, since this behavior pattern tends to go against our natural inclinations for linear and top-down information design. The linear/systematic behavior might be more accommodated by default, but the non-linear/opportunistic behavior tends to be more neglected.
 
@@ -132,19 +117,21 @@ The authors call out some of these design patterns in their recommendations. The
 * "Provide important information redundantly"
 * "Organize the content according to API functionality"
 
-## A note on "opportunistic" terminology
+### A note on "opportunistic" terminology
 
 Note that "opportunistic" isn't the author's own terminology choice (it's a term previous researchers used), and I admit that I dislike the adjective (though "systematic" is all right, since it doesn't cast the learning style in a negative way). No doubt opportunism was chosen to characterize someone who looks for immediate opportunities to act, but opportunism more commonly has a negative connotation of exploiting a situation for personal gain.
 
 The authors say that opportunistic behavior "bears many similarities with the exploratory and active approach described by John Carroll ..." Is "exploratory" or "active" or "bottom-up" learning a better description? I feel like I should be able to offer a better word, and I'm guessing that educators have terms for these learning styles. Personally, I like *intuitive* or *experiential* or even *impulsive* learning more than *opportunistic*. But I'm still on the hunt for the best word here...
 
-## Where users spend the most time
+### Where users spend the most time
 
 Despite the differences in learning preferences, the researchers found that "the strategy a developer follows does not seem to predict a tendency towards using information from the Concepts page in our test." In other words, just because you're an opportunistic user, it doesn't mean you always skip conceptual explanations (it's just that you might not start there).
 
+{% include random_ad2.html %}
+
 The authors measured the time users spent in various parts of the documentation:
 
-<img src="https://idratherbewritingmedia.com/images/percentageoftimespent.png" style="max-width: 500px;"/>
+<img src="https://idratherbewritingmedia.com/images/percentageoftimespent.png" style="max-width: 450px; border: 1px solid #dedede" />
 
 Regarding the different information types, the authors say users looked for topics rather than categories of information &mdash; in other words, they didn't necessarily distinguish between Concepts versus Recipes versus Reference information types as they searched for information. As a result, the researchers recommend a more topic-based organization strategy:
 
@@ -160,7 +147,7 @@ The authors also recommend that you integrate concepts with their related tasks:
 
 I love this section because it helps reinforce how poor the DITA information model really is. I don't want to bring upon the wrath of DITA enthusiasts, who will point out that DITA is a technical schema only and not an information design pattern, but c'mon, DITA's specialized topics that clearly separate out concept from task from reference and troubleshooting topics here seems like a big fail when evaluating the observations in this article. If you are using DITA, hopefully you can assemble single topics that provide a more integrated approach across these specialized information types.
 
-## Conclusion
+### Conclusion
 
 Overall, it's great to see the focus of research on API documentation, especially on REST APIs. Although many of the observations seem to echo Carroll's observations decades earlier about active, experimental learning styles, it's good info and we still have a ways to go to design appropriately for this learning style.
 
