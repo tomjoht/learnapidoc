@@ -11,7 +11,7 @@ path1: /doccode.html
 
 Before diving in to how to document code, let's first explore some research that has been done on best practices for documenting code, as this can inform our direction and approach. A couple of academic articles stand out as noteworthy for this effort:
 
-* "When Not to Comment: Questions and Tradeoffs with API Documentation for C++ Projects" by Head et al. This article explores how developers at Google find and use code documentation. The research found that for simple code, sometimes developers prefer to read the code directly. However, for more complex code, developers consult documentation, often by looking in the formal class declarations for information they need; other times they look at comments in the implementation code. Besides the location of docs, the researchers also identify what type of answers and guidance developers want in code documentation.
+* "When Not to Comment: Questions and Tradeoffs with API Documentation for C++ Projects" by Head et al. This article explores how developers at Google find and use code documentation. The research found that for simple code, sometimes developers prefer to read the code directly. However, for more complex code, developers consult documentation, often by looking in the formal class declarations for information they need; other times they look at comments in the implementation code. Besides best practices for doc locations, the researchers also identify what type of answers and guidance developers want in code documentation.
 * "How Developers Use API Documentation: An Observation Study" by Meng et al. In this article, researchers look at how developers interact with API documentation and find a mix of both *systematic* (read first, explore later) and *opportunistic* (explore first, read later) learning styles. While we often write with systematic developers in mind, focusing on opportunistic behaviors might be more beneficial, and will cause us to look more closely at improving search, navigation, interactive components, troubleshooting, error messages, and other action-oriented features.
 
 <div></div>
@@ -21,46 +21,73 @@ Before diving in to how to document code, let's first explore some research that
 
 ## When Not to Comment: Questions and Tradeoffs with API Documentation for C++ Projects
 
-First, lets explore "When Not to Comment: Questions and Tradeoffs with API Documentation for C++ Projects," by Andrew Head, Caitlin Sadowski, Emerson Murphy-Hill, and Andrea Knight. This article was published in the *2018 ACM/IEEE 40th International Conference on Software Engineering.* (To read the article, see this [ResearchGate link](https://www.researchgate.net/publication/325732077_When_not_to_comment_questions_and_tradeoffs_with_API_documentation_for_C_projects) or go [here](https://people.eecs.berkeley.edu/~andrewhead/pdf/comment.pdf).)
+First, let's explore "When Not to Comment: Questions and Tradeoffs with API Documentation for C++ Projects," by Andrew Head, Caitlin Sadowski, Emerson Murphy-Hill, and Andrea Knight. This article was published in the *2018 ACM/IEEE 40th International Conference on Software Engineering.* (To read the article, see this [ResearchGate link](https://www.researchgate.net/publication/325732077_When_not_to_comment_questions_and_tradeoffs_with_API_documentation_for_C_projects) or go [here](https://people.eecs.berkeley.edu/~andrewhead/pdf/comment.pdf).)
 
-This research combines efforts among academic researchers, engineers, usability specialists, and members from Google’s Engineering Productivity Research team. Given how important documentation is for understanding code, the researchers wanted to know the best location for documentation as well as what information engineers want in docs. Specifically, they focused on C++ APIs and asked whether engineers are more inclined to consult the header files (where classes are defined) or the implementation files (where classes are implemented) for the information they need. The following screenshot (from their article) shows the difference between header and implementation files:
+This research coordinates efforts among academic researchers, engineers, usability specialists, and members from Google’s Engineering Productivity Research team. Given how important documentation is for understanding code, the researchers want to know the best location for documentation as well as what information engineers want in docs. Specifically, they focused on C++ APIs and asked whether engineers are more inclined to consult the header files (where classes are defined) or the implementation files (where classes are implemented) for the information they need. The following screenshot (from their article) shows the difference between header and implementation files:
 
 <img src="https://idratherbewritingmedia.com/images/header_or_implementation_files.png" style="max-width: 500px" alt="Header files versus implementation files" />
 
-Basically, in C++, the header files (`.h`) contain the classes and the main documentation. The implementation files (`.cc`) instantiate and implement the classes from the header. Implementation files have comments peppered in with the code, whereas header files have more formal documentation that follows specific annotation conventions.
+Basically, in C++, the header files (`.h`) contain the classes and the main documentation. The implementation files (`.cc`) instantiate and implement the classes from the header. In short, the header files contain more formal documentation that follows specific annotation conventions, while the implementation files contain the guts of the logic of the class. Implementation files have comments peppered in with the code, without formally structured doc annotations.
 
-The researchers used tracking tools to identify when developers would switch from one file to another, and they also interviewed the developers as a follow-up. Google has about a billion lines of code stored in a central code repository that can be used across the company, so thousands of developers might find and discover code to use in their projects. The team that uses an API might not know the team that developed the API, and vice versa. The researchers gathered information from more than 600 participants in their study.
+The researchers used tracking tools to identify when developers would switch from one type of file to another, and they also interviewed the developers as a follow-up. Google has about a billion lines of code stored in a central code repository that can be used across the company, so thousands of developers might find and discover code in this monorepo to use in their projects. The team that uses an API might not know the team that developed the API, and vice versa.
 
-### Where developers look for documentation about code
+Even if you don't document C++, this study is helpful because it raises this central question: should you put the bulk of your documentation in formal descriptions about the code, or should the bulk of your documentation appear within the context of the code, peppered in as comments.
 
-Overall, the researchers found that most developers looked in the header files for documentation:
+### What type of code actually needs documentation
+
+After gathering information from more than 600 participants in their study, the researchers found that not all code is equal. Complex code needs more formal documentation, but simple code might not need documentation at all.
+
+The researchers found that most developers actually looked in the header files for documentation:
 
 > Survey respondents reported it would be most convenient to find answers to many of these questions in header files, though interviewees indicated code could be accurate and quick enough to read in many cases.
 
-The researchers also found that, for simpler APIs, many developers read the code (rather than consulting the docs) to see if they can quickly understand the API. Some developers have philosophical views about distrusting the accuracy and currency of documentation and prefer to view the code as the primary source of information. In some cases, maintaining documentation for code becomes more of a liability and a hindrance for developers. For simple code, doc just gets in the way or becomes outdated (thus misleading and harming the documentation's credibility).
+But the researchers also found that for simpler APIs, many developers read the code (rather than consulting the docs) to see if they can quickly understand the API. In other words, they see if they can figure out what's going on by looking solely at the code.
 
-Beyond skipping docs when the code is simple enough to understand on its own, the researchers also recommend avoiding docs while development is in constant flux (because it would make documentation a constantly evolving target). The researchers say you might also consider skipping code documentation when there aren't sufficient resources to keep the documentation updated. When maintainers can't keep the documentation up to date, it "rots" and becomes more of a liability.
+Some developers actually have philosophical views about distrusting the accuracy and currency of documentation and prefer to view the code as the primary source of information, like reading a primary source instead of secondary or tertiary sources of information. As many developers who distrust docs know, maintaining documentation for code gets easily outdated and neglected, so why trust it, why even bother to read it?
 
-The following chart shows when documentation might not be necessary with code:
+In fact, some developers feel that documentation for simple code becomes a liability and a hindrance for development. It gets in the way of the developer's path to simply reading the code and understanding it on its own terms.
 
-<img src="https://idratherbewritingmedia.com/images/when-not-comment-on-code.png" style="max-width: 400px" alt="When not to comment on code"/>
+Besides skipping docs when the code is simple enough to understand on its own, the researchers also recommend avoiding writing docs while development is in constant flux (because it makes documentation a constantly evolving target). The researchers say you might also consider skipping writing docs when there aren't sufficient resources to keep the documentation updated. When maintainers can't keep the documentation up to date, it "rots" and becomes more of a liability.
+
+In short, there are valid arguments for not even writing documentation, particularly for simple code. The following chart shows when documentation might not be necessary with code:
+
+<img src="https://idratherbewritingmedia.com/images/when-not-comment-on-code.png" style="max-width: 500px" alt="When not to comment on code"/>
 
 However, for more complex code, especially where multiple files and generated code might be involved, developers still relied on documentation to understand it. The researchers explain:
 
-> When isn’t code enough to be self-documenting? Sometimes, developers had no problem reading code, and in fact preferred it
-for finding more accurate information. However, there are some cases where self-documentation isn’t feasible, like code with overly complex method signatures and generated code. Other details, like recommended usage, just can’t be conveyed by source code.
+> When isn’t code enough to be self-documenting? Sometimes, developers had no problem reading code, and in fact preferred it for finding more accurate information. However, there are some cases where self-documentation isn’t feasible, like code with overly complex method signatures and generated code. Other details, like recommended usage, just can’t be conveyed by source code.
+
+In short, when the source code isn't intuitive to understand on its own, developers turned to more lengthy and formal documentation about it. This makes sense and aligns with best practices for GUI documentation as well &mdash; focus on the complicated parts of a system, not the obvious elements that no one needs help with.
+
+Granted, recognizing what code is simple versus complex is the challenge because the technical writer is likely not a developer and will only have a rudimentary idea about the complexity of the code. Just because the code is short or long does not give a clear indicator about its complexity. A short snippet out of context might be confusing, while a lengthier sample that contains a fully functioning sample might be more understandable.
+
+As an analogy, an outsider visiting a city in a faraway country wouldn't know whether some observed event is normal or out of the ordinary &mdash; you have to be more familiar with the place to gauge whether an event is strange or commonplace. Same with code.
+
+You could ask the developers about the level of complexity of the code, but this assumes that you can trust the judgment of the engineers who designed and created the code. Developers almost always overestimate the level of intuitiveness of the code they wrote and assume more capability in their audience than the audience actually has. How many times have you heard engineers say, "Users will understand this &mdash; and if they don't, they *shouldn't* be using the API." Are the risks of omitting docs greater than the risk of including them?
+
+More advanced developers can probably extrapolate the API's usage from code, while beginning developers might need more handholding. Do comments interfere with readability for advanced developers but aid readability for new developers? Are we doomed to frustrate one audience in order to help another?
 
 ### When to document code
 
-The researchers find that there's an ideal time for writing and updating documentation:
+Let's set aside questions about whether to document or not and focus instead on timing for writing docs. The researchers found that there's an ideal time for writing and updating documentation:
 
-> This study also shows the messiness of proposing updates to documentation. The ideal time to propose changes to documentation is during code authoring and review, possibly through a surrogate like a code reviewer. Documentation can get updated only infrequently after it is initially written, as future updates may raise questions of whether the information adds clutter or redundancy.
+> The ideal time to propose changes to documentation is during code authoring and review, possibly through a surrogate like a code reviewer. Documentation can get updated only infrequently after it is initially written, as future updates may raise questions of whether the information adds clutter or redundancy.
 
-In other words, write the docs when the code development is still fresh in your mind (or in the developer's mind). If you wait too long after active development finishes, the documentation will likely be neglected and forgotten, as developers move on to other projects.
+In other words, write the docs when the code development is still fresh in the developer's mind. If you wait too long after active development finishes, the documentation will likely be neglected and forgotten, as developers move on to other projects.
+
+Of course timing is not always easy to plan. Your availability might not match up with the developer's coding sprints. You're probably juggling several other projects with more pressing timelines, and so you postpone this documentation until one or two months post development. But by that time, the developer has long ago finished coding and has likely forgotten many details. The nature of complexity is that we hold many details in our heads (in short-term memory) while we're elbow-deep in the task, but once we move on, our brains dump the information from short-term memory so that we can load up our brain's RAM with another project's information.
+
+If you try to prod developers to articulate details no longer at the forefront of their minds, they might not have forgotten it, but their motivation and enthusiasm to explain it and review your docs will likely be poor.
+
+With a recent project I documented, the documentation was mostly written post-release of the product. The initial version had been written by a product manager, and later, after many complaints about the poor quality of the docs, tech writers had been called in to fix it. But months after the product had been released, the team was no longer meeting in regular sprints, engineers were focused on other matters, and it seemed no one had interest in explaining things to tech writers nor reviewing documentation.
+
+There is a right moment to jump into a documentation project &mdash; it is usually pre-release. But just as one can jump in too late and miss out on enthusiasm and availability, jumping in too early can also prove inefficient. You might find that plans are high-level; nothing has actually been coded yet, or ideas are scrapped from one sprint to the next.
+
+Regardless of whether you can actually do anything about the timing, you should have in mind that timing is a noteworthy element in documenting code, and it does matter. It seems like code might be a standalone artifact independent of time, but it is not. Time is a relevant factor that determines your ability to document code.
 
 ### What questions to address in code documentation
 
-The researchers also try to understand what types of answers and guidance should be in the documentation. This is a more difficult, broad question, and their answer is generally "API usage." More specifically,
+So far we've looked at where code documentation should appear and when code documentation should be written. Now let's look at code documentation from another angle: what types of answers and guidance should be in the documentation. This is a more difficult, broad question, and the researchers' answer is generally "API usage." They write,
 
 > Most searchers and maintainers we interviewed had opinions about what did belong in documentation, at both the level of headers and in-line comments. Maintainers and searchers mentioned the importance of describing how a file relates to other files in the project (S17), the state of the world when a method is called (S8), executable examples (M5, M8), implementation comments for future maintainers of an API (M5), explicit links to external documentation (M5), semantics of a function (M8), main concepts that someone should understand and know to use the API (M8), “what” the code is doing and “why” at a statement level (M6), and even a proof of correctness (M6). It is unsurprising that not all of this information was available for all of the APIs we saw during this study.
 
@@ -68,11 +95,24 @@ The researchers arrange this information into a chart for readability:
 
 <img src="https://idratherbewritingmedia.com/images/api-usage-what-to-document.png" alt="What to focus on in documentation" />
 
+Nothing particularly stands out here, except that "input values" are read the most. Input values refers to parameters or other arguments that developers often consult to understand data types, casing, or other details. As such, take pains to document your parameters in great detail. I describe the various categories to cover at length with parameters in [Step 3: Parameters](docapis_doc_parameters.html). With REST APIs, some details to note about parameters might include the following:
+
+* The type of parameter: header, query string, path, or request body parameter
+* Default values
+* Min or max values
+* Data types (boolean, integer, string, etc.)
+* Sample values
+
+Other callouts about content include "How do I?..." questions. Unsurprisingly, focusing on tasks rather than simply defining reference information remains an important element of code documentation. Most technical writers already orient their mindset around task-based documentation, so this focus needs no expansion here.
+
+Finally, "Recommended Use" is also an interesting element to surface. "Recommended" isn't that common in GUI documentation &mdash; users have a task, and there's a way to achieve it. But with developer docs, there are often a dozen ways to go about it, and just because code compiles does not mean it is good. Code needs to scale, be efficient, and cover a multitude of use cases. Therefore, recommendations are in order to help guide a developer down many potential paths of documentation.
+
+In fact, this might be a defining characteristic that separates GUI documentation from developer documentation. GUI documentation typically has a single path to achieve a result. Developer documentation, on the other hand, is more like providing a cabinet of baking goods to put at the developer
+s disposal &mdash; salt, flour, baking powder, eggs, vanilla, baking soda, spices, and so on. The developer might choose to use one API here, another there, some in combination with each other, all to achieve a particular end. That particular end is more open and flexible depending on what the developer is building/baking. (One difference here is that developers don't typically eat their code.)
+
 ### Conclusion
 
-Overall, this research has many insights and conclusions. Probably the main takeaway, as expressed in the title ("When not to comment"), is to recognize when code is simple enough that it doesn't need documentation. However, making this decision must surely be difficult because it presumes that most developers have the same technical level. More advanced developers can probably extrapolate the API's usage from code, but beginning developers might need more handholding. Do comments interfere with readability for advanced developers but aid readability for new developers?
-
-Skipping docs based on the assumption that code is more readable on its own also assumes that you can trust the judgment of the engineers who designed and created the code. In my experience, the development team almost always overestimates the level of intuitiveness of the code they wrote and assumes more capability in their audience than the audience actually has. How many times have you heard engineers say, "Users will understand this &mdash; and if they don't, they *shouldn't* be using the API." Are the risks of omitting docs greater than the risk of including them?
+Overall, this research has many insights and conclusions.
 
 The article addresses many of these concerns and presents a complex view about each of these facets &mdash; where to store documentation, when to document, what questions to address, and more. There's not always a clear path to follow (it's messy), and many environmental, product, and audience details must factor into the documentation strategy. Still, this article provides solid research and probes the topic in illuminating ways.
 
