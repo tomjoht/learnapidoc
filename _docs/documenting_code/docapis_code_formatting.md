@@ -10,6 +10,32 @@ path1: /doccode.html
 published: false
 ---
 
+Among the challenges in writing code documentation is figuring out how to juxtapose your explanation of what's going on in the code with the code itself. Best practices for documentation would have you locate the documentation next to the area of confusion, and here the common practice is to add inline comments peppered throughout the code. But suppose you want a longer running commentary about what's going on in the code (because the level of complexity can't be relayed in a one or two line informal comment). How do you juxtapose the conceptual/explanatory information next to the code? If your commentary dwarfs the code, you risk making the code unreadable. If you arrange the commentary in sections that come long after the code, you risk creating a chasm between the explanation and the code, such that readers won't know what parts of the code your explanation refers to. The following are some strategies for connecting your explanations with code:
+
+inline comments
+
+links within code
+
+section by section
+
+three-column designs. https://www.twilio.com/docs/authy/tutorials/account-verification-java-servlets
+
+scrolling focus
+
+pop-ups
+
+placemarkers [1]
+
+diagrams (that screenshot)
+
+layers approach. https://developer.ebay.com/DevZone/shopping/docs/HowTo/PHP_Shopping/PHP_FIA_GUP_Interm_NV_XML/PHP_FIA_GUP_Interm_NV_XML.html
+
+split out files into tabs. https://stripe.com/docs/stripe-js
+
+
+challenge is that any marker you put in the code can't be rendered as code itself. tricky from a tools perspective.
+
+
 * **Formatting the code properly, and referring to various lines, is also a challenge.** You want to apply code syntax highlighting based on the code language but also based on code formatting for that language following standard conventions in that language (e.g., where to insert line breaks, spaces, capitalization, etc.). If you have 50-100 lines of code, referring to different aspects of the code is also challenging &mdash; you could conceivably refer to line numbers, if your samples have them, but that approach also has its problems. Do you wrap code or let the user scroll horizontally? How much do you pepper code with inline comments, writing for that opportunistic, experiential programmer rather than the systematic programmer who starts from page one?
 
 *you need to use code syntax highlighting correctly to make the code readable.*
