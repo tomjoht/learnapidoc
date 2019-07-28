@@ -10,6 +10,8 @@ path1: /doccode.html
 published: false
 ---
 
+* **Formatting the code properly, and referring to various lines, is also a challenge.** You want to apply code syntax highlighting based on the code language but also based on code formatting for that language following standard conventions in that language (e.g., where to insert line breaks, spaces, capitalization, etc.). If you have 50-100 lines of code, referring to different aspects of the code is also challenging &mdash; you could conceivably refer to line numbers, if your samples have them, but that approach also has its problems. Do you wrap code or let the user scroll horizontally? How much do you pepper code with inline comments, writing for that opportunistic, experiential programmer rather than the systematic programmer who starts from page one?
+
 *you need to use code syntax highlighting correctly to make the code readable.*
  *you have to use proper style formatting with white space and such*
 *Is there any way to collapse the comments or to provide a way to expand the comments?*
