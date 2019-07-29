@@ -10,15 +10,92 @@ path1: /doccode.html
 published: false
 ---
 
-Among the challenges in writing code documentation is figuring out how to juxtapose your explanation of what's going on in the code with the code itself. Best practices for documentation would have you locate the documentation next to the area of confusion, and here the common practice is to add inline comments peppered throughout the code. But suppose you want a longer running commentary about what's going on in the code (because the level of complexity can't be relayed in a one or two line informal comment). How do you juxtapose the conceptual/explanatory information next to the code? If your commentary dwarfs the code, you risk making the code unreadable. If you arrange the commentary in sections that come long after the code, you risk creating a chasm between the explanation and the code, such that readers won't know what parts of the code your explanation refers to. The following are some strategies for connecting your explanations with code:
+In this section, we'll dive into strategies for actually documenting code. There are a number of approaches people take here, and I've covered them with examples and commentary.
 
-inline comments
+* TOC
+{:toc}
+
+## Juxtaposed commentary in a third column
+
+One huge challenge in writing code documentation is figuring out how to juxtapose your explanation of what's going on in the code with the code itself. Best practices for documentation in general involve placing helpful instruction next to the area of confusion, and here the common practice is to add inline comments peppered throughout code. But suppose you want a longer running commentary about what's going on in the code (because the level of complexity can't be relayed in a one or two line informal comment). How do you juxtapose the conceptual/explanatory information next to the code?
+
+If your commentary dwarfs the code, you risk making the code unreadable. If you arrange the commentary in sections that come long after the code, you risk creating a chasm between the explanation and the code, such that readers won't know what parts of the code your explanation refers to.
+
+One technique is to create an additional column in your layout. You devote the middle column to your conceptual explanation and your right column to the code.
+
+{% include course_image.html url="https://www.twilio.com/docs/authy/tutorials/account-verification-java-servlets?code-language=Java&code-sample=code-verify-an-authy-code-7&code-sdk-version=default#sending-a-token-on-account-creation" size="750px" filename="twiliocodedocexample1" ext_print="png" ext_web="png" alt="Twilio code documentation" caption="Twilio code documentation" %}
+
+In this example, the conceptual content and steps appears in the middle column, with the code on the right, with a dark background behind the code to create visual contrast.
+
+{% include course_image.html url="https://www.twilio.com/docs/authy/tutorials/account-verification-java-servlets?code-language=Java&code-sample=code-verify-an-authy-code-7&code-sdk-version=default#configuring-authy" size="750px" filename="twiliocodedocblurirrelevant" ext_print="png" ext_web="png" alt="Blurring out irrelevant code" caption="Blurring out irrelevant code" %}
+
+Some screens actually blur out the irrelevant code, allowing you to focus your attention on the right parts being articulated in the conceptual area.
+
+Challenges with juxtaposed narration like that are with screen space. To pull off a third-column design, you need to occupy the whole screen, without margins. I'm surprised they didn't include a switch to collapse the navigation, which would give more space for the code.
+
+The code is only partially visible. The code extends horizontally with an option to scroll right, but surely the designers must have cringed in developing a UI that involves a healthy dose of back-and-forth horizontal scrolling.
+
+Additionally, implementing blur and focus views based on the point one is at in the tutorial must be technically challenging and somewhat cumbersome.
+
+Another challenge is that code is often spread out across multiple files. The view on the design column doesn't indicate whether all the code appears in the same Java file or whether we're seeing code from multiple Java files. And what if users want to copy and paste the code to run it on their own? The way the code view transitions based on the stage in the tutorial makes it difficult to copy.
+
+## Lego approach
+
+Another approach is to build the code from the ground up level by level, which I'm calling the Lego approach. For an example of the Lego appraoch, take a look at this example from the eBay Shopping API: [Searching By Seller: Reviewing Information About A Seller](https://developer.ebay.com/DevZone/shopping/docs/HowTo/PHP_Shopping/PHP_FIA_GUP_Interm_NV_XML/PHP_FIA_GUP_Interm_NV_XML.html#step1).
+
+{% include course_image.html url="https://developer.ebay.com/DevZone/shopping/docs/HowTo/PHP_Shopping/PHP_FIA_GUP_Interm_NV_XML/PHP_FIA_GUP_Interm_NV_XML.html#step1" size="750px" filename="ebayshoppingapiexample" ext_print="png" ext_web="png" alt="Lego approach shown through eBay Shopping API" caption="Lego approach shown through eBay Shopping API" %}
+
+Their tutorial contains five steps:
+
+> * Step 1: Set up basic files and folders
+> * Step 2: Add code for making the GetUserProfile call and displaying the results
+> * Step 3: Add code for making the FindItemsAdvanced call and displaying the results
+> * Step 4: Add HTML and Javascript for the user interface
+> * Step 5: Run the code
+
+You start with a blank file. Then with each step, you add more and more code until you have a fully working example. Like with Legos: You start with a base, and then you add more and more parts on top of it until you have a fully working example.
+
+The problem with this approach is one of context. It might be difficult to grasp as a whole just where we're going, though presumably this could be solved by presenting the whole solution up front before proceeding to build it section by section from the ground up.
+
+## Experiment to learn
+
+Another approach to documenting code is to integrate built-in execution capabilities so that users can learn as they go. The most common example of interactive documentation for APIs is with Swagger UI, which I have already covered at length in [Introduction to OpenAPI and Swagger](pubapis_swagger_intro.html) and shown in the [Swagger UI Demo](pubapis_swagger_demo.html):
+
+{% include course_image.html url="pubapis_swagger_demo.html" size="750px" filename="swagger-try-it-out-example" ext_print="png" ext_web="png" alt="Try it out button in Swagger's interactive REST API interface" caption="Try it out button in Swagger's interactive REST API interface" %}
+
+Swagger provides an ingenious blending of documentation and try-it-out interactions that help users learn (by both reading and doing). But making requests with REST API endpoints tends to be somewhat simple. More extensive code tutorials will be harder to make interactive in the browser. Even so, some "Notebooks" (as they're often called) allow you to run code, specifically [Jupyter Notebooks](https://jupyter.org/). Jupyter promotes the ability to run code in the browser:
+
+> The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
+
+Google has some collaborative notebook options with TensorFlow documentation, which has operations that you can execute using Google Notebooks. In the following screenshot, you can see an option to "Run code now":
+
+{% include course_image.html url="https://www.tensorflow.org/tutorials" size="750px" filename="tensorflowruncodenow" ext_print="png" ext_web="png" alt="Interactive code examples from TensorFlow" caption="Interactive code examples from TensorFlow" %}
+
+Clicking "Run code now" takes you to Google's interactive notebooks that actually run the code in the browser:
+
+{% include course_image.html url="https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/_index.ipynb" size="750px" filename="tensorflowexperimentasyougo" ext_print="png" ext_web="png" alt="Google's interactive notebooks lets you run the code in the browser" caption="Google's interactive notebooks lets you run the code in the browser" %}
+
+
+
+
+
+
+
+## inline comments
+
+https://hackaday.com/2019/03/05/good-code-documents-itself-and-other-hilarious-jokes-you-shouldnt-tell-yourself/
+
+https://www.freecodecamp.org/news/code-comments-the-good-the-bad-and-the-ugly-be9cc65fbf83/
+
+https://hackernoon.com/write-good-documentation-6caffb9082b4
+
+https://medium.com/@andrewgoldis/how-to-document-source-code-responsibly-2b2f303aa525
+
+https://hackernoon.com/write-good-documentation-6caffb9082b4 (what versus why)
 
 links within code
 
-section by section
 
-three-column designs. https://www.twilio.com/docs/authy/tutorials/account-verification-java-servlets
 
 scrolling focus
 
