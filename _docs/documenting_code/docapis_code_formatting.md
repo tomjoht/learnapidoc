@@ -21,7 +21,7 @@ One huge challenge in writing code documentation is figuring out how to juxtapos
 
 If your commentary dwarfs the code, you risk making the code unreadable. If you arrange the commentary in sections that come long after the code, you risk creating a chasm between the explanation and the code, such that readers won't know what parts of the code your explanation refers to.
 
-One technique is to create an additional column in your layout. You devote the middle column to your conceptual explanation and your right column to the code.
+One technique is to create an additional, third column in your layout. You devote the middle column to your conceptual explanation and your right column to the code. This way the code and the narration are juxtaposed such that readers can glance at the code while reading your conceptual explanations. Here's an example from Twilio showing this juxtaposed approach:
 
 {% include course_image.html url="https://www.twilio.com/docs/authy/tutorials/account-verification-java-servlets?code-language=Java&code-sample=code-verify-an-authy-code-7&code-sdk-version=default#sending-a-token-on-account-creation" size="750px" filename="twiliocodedocexample1" ext_print="png" ext_web="png" alt="Twilio code documentation" caption="Twilio code documentation" %}
 
@@ -31,17 +31,19 @@ In this example, the conceptual content and steps appears in the middle column, 
 
 Some screens actually blur out the irrelevant code, allowing you to focus your attention on the right parts being articulated in the conceptual area.
 
-Challenges with juxtaposed narration like that are with screen space. To pull off a third-column design, you need to occupy the whole screen, without margins. I'm surprised they didn't include a switch to collapse the navigation, which would give more space for the code.
+One challenge with this juxtaposed approach is screen space. To pull off a third-column design, you need to occupy the whole screen, without margins. I'm surprised Twilio doesn't include a switch to collapse the left-side navigation, which would give more space for the code.
 
-The code is only partially visible. The code extends horizontally with an option to scroll right, but surely the designers must have cringed in developing a UI that involves a healthy dose of back-and-forth horizontal scrolling.
+As is, the code is only partially visible. The code extends horizontally with an option to scroll right, but surely the designers must have cringed in developing a UI that involves a healthy dose of back-and-forth horizontal scrolling.
 
-Additionally, implementing blur and focus views based on the point one is at in the tutorial must be technically challenging and somewhat cumbersome.
+Additionally, implementing blur and focus views based on the point the user is at in the tutorial must be technically challenging and somewhat cumbersome.
 
-Another challenge is that code is often spread out across multiple files. The view on the design column doesn't indicate whether all the code appears in the same Java file or whether we're seeing code from multiple Java files. And what if users want to copy and paste the code to run it on their own? The way the code view transitions based on the stage in the tutorial makes it difficult to copy.
+Another challenge is that the code and explanations of the code rarely line up horizontally all the way down. Suppose you have one method in the code that occupies just a single line, but explaining this method occupies 30 lines of conceptual explanation. By the time the user reaches the bottom of the conceptual explanation, the referenced code is no longer juxtaposed. Now you not only have horizontal scrolling for the user to see the code, but you have to scroll up and down the column to locate the relevant code. Designing a UI to accommodate all of these moving parts not only seems challenging, but also puts more burden on the user as well.
+
+Another challenge with this juxtaposed design is that code is often spread out across multiple files. The view on the design column doesn't indicate whether all the code appears in the same Java file or whether we're seeing code from multiple Java files.
 
 ## Lego approach
 
-Another approach is to build the code from the ground up level by level, which I'm calling the Lego approach. For an example of the Lego appraoch, take a look at this example from the eBay Shopping API: [Searching By Seller: Reviewing Information About A Seller](https://developer.ebay.com/DevZone/shopping/docs/HowTo/PHP_Shopping/PHP_FIA_GUP_Interm_NV_XML/PHP_FIA_GUP_Interm_NV_XML.html#step1).
+Another approach is to build the code from the ground up level by level, which I'm calling the Lego approach. For an example of the Lego approach, take a look at this example from the eBay Shopping API: [Searching By Seller: Reviewing Information About A Seller](https://developer.ebay.com/DevZone/shopping/docs/HowTo/PHP_Shopping/PHP_FIA_GUP_Interm_NV_XML/PHP_FIA_GUP_Interm_NV_XML.html#step1).
 
 {% include course_image.html url="https://developer.ebay.com/DevZone/shopping/docs/HowTo/PHP_Shopping/PHP_FIA_GUP_Interm_NV_XML/PHP_FIA_GUP_Interm_NV_XML.html#step1" size="750px" filename="ebayshoppingapiexample" ext_print="png" ext_web="png" alt="Lego approach shown through eBay Shopping API" caption="Lego approach shown through eBay Shopping API" %}
 
@@ -53,9 +55,88 @@ Their tutorial contains five steps:
 > * Step 4: Add HTML and Javascript for the user interface
 > * Step 5: Run the code
 
-You start with a blank file. Then with each step, you add more and more code until you have a fully working example. Like with Legos: You start with a base, and then you add more and more parts on top of it until you have a fully working example.
+You start with a blank file. Then with each step, you add more and more code until you have a fully working example. Like with Legos: You start with a base, and then you add more and more parts on top of it until you have a fully working model.
 
-The problem with this approach is one of context. It might be difficult to grasp as a whole just where we're going, though presumably this could be solved by presenting the whole solution up front before proceeding to build it section by section from the ground up.
+The Lego model seems like the most compelling model for documenting code, in my estimation, but it's not necessarily an approach that seems logical at first. In the [intro to this section](docapis_code_difficulty.html), I explained that my approach to documenting the Lambda function was to proceed section by section, more or less, through the code to explain each part. However, this is not the best approach because code is non-linear. Also, finished code often has logic that is abstracted away into variables or other referenced functions so that the final code remains cleaner and more concise, but also more opaque. Finished code is often too messy and confusing to document in any teachable way.
+
+If you want to teach someone how to understand code, you have to start simple and work your way up. The next technique explains this approach through the metaphor of the Nautilus.
+
+## The nautilus approach
+
+The nautilus approach is similar to the Lego approach, but rather than describing chunks of work that are tackled one by one, you describe the core, simple patterns that users need to know. You start with the simplest code and then let the project grow larger and larger as needed.
+
+In a blog post explaining this approach, Paul Gustafson, who runs a technical writing staffing company in the Bay area called [Expert Support](http://expertsupport.com/), says that the nautilus provides a good metaphor for technical communication. The nautilus follows a spiral pattern (Fibonacci sequence) that allows it to start small and gradually grow larger and larger as needed:
+
+{% include course_image.html url="https://commons.wikimedia.org/wiki/File:NautilusCutawayLogarithmicSpiral.jpg" border="true" filename="1920px-NautilusCutawayLogarithmicSpiral" ext_print="jpg" ext_web="jpg" alt="Nautilus" caption="Nautilus" %}
+
+Paul writes:
+
+> Fostering understanding, which is what technical communications is all about, happens most efficiently by following a similar pattern....
+>
+> When your understanding is small, you learn best when the first lesson imparts information for a small, simple task with traits importantly akin to the first nautilus chambers.
+>
+> ... The good news for the nautilus is that the small chambers follow the same basic plan as the bigger chambers. If the first tasks a learner masters are fundamentally similar to more complex tasks farther down the syllabus, the student begins to understand and apply those patterns. The sooner newbies learn to “think about things the right way,” the sooner they “get it,” which is exactly what both the instructor and the student want. ([Lessons from a cephalopod](http://expertsupport.com/2018/09/lessons-from-a-cephalopod/))
+
+Following the nautilus approach, you start with the simple, core patterns and then build up more and more code around it gradually as needed. You don't start by describing the complex finished work from the get-go. That finished work likely involves all kinds of code abstractions and rearrangements for a clean finished product. Instead, you start with the basic patterns, and then let users build from that.
+
+I like this approach. The problem is that we want to explain how the finished code works. We might have 500 lines of code that we want to articulate, while the nautilus approach would have us explain just several small pieces of that code. Hence there's an A to Z type of pattern. We describe A (the simplest core pattern) and eventually work our way to Z (the final code).
+
+To the technical writer looking at the finalized code, there's no clear sense of how the developer got there. We often can't decouple the Nautilus-like logic that the developer started with, which led him or her toward this more complex end.
+
+To illustrate this point more clearly, let me provide an example. Although I'm not an engineer, I'm handy with Jekyll and theming, and the other day I set about creating a template that would take a content export from a ticketing tool and render it as a documentation report.
+
+My template looks like this:
+
+```
+{% raw %}
+<div class="sprintDuration">{{page.duration}}</div>
+
+{% assign sprintYamlFile = page.sprint_yaml_file %}
+
+<div class="metaReportInfo" markdown="span">
+Tech writers: {% for member in page.team_members %}<a href="https://somesite.company.com/users/{{member}}">{{member}}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}<br/>
+Team: <a href="https://ourteamsite.company.com/">DevComm</a><br/>
+Sprint: <a href="{{page.sprint_link}}">Link</a>
+</div>
+
+<div id="top"></div>
+<div class="all-items">
+
+<h2 id="high-level-summary">High-level Summary</h2>
+
+{{page.high_level_summary}}
+
+{% include sprintdisplaylogic.html %}
+
+{% assign sprintYamlFileOpen = page.sprint_yaml_file_open %}
+
+<h2>Open Issues</h2>
+<p>ACME project has <b>{{page.open_items_acme}}</b> open issues. Beta project has has <b>{{page.open_items_beta}}</b> open issues.</p>
+
+{% include sprintdisplaylogic_open.html %}
+
+{% include sprintstylesandscripts.html %}
+{% endraw %}
+```
+
+This code looks kind of like gibberish, really. I have some "include" files where I've abstracted away the logic because I'll be repeating it from report to report. And of course I don't want the scripts and styles showing here, as they'll clutter up the logic and I'm also repeating that content with each new report file.
+
+Imagine trying to document this code. If your started from the top and worked your way to the bottom, it would be a real mess. The explanation would also be hard to read and understand for users. It's just confusing and kind of jumbled. It doesn't help that I put this together in haste, without much thought for a clean, elegant solution. I needed to get this report out fast, so I hacked together the template as quickly as I could. Developers building applications often implement hacks and other quick-fixes using ["duct tape and WD-40"](https://www.joelonsoftware.com/2009/09/23/the-duct-tape-programmer/), as Joel Spolsky says, to get a working solution shipped to meet a deadline.
+
+For example, in this code I couldn't get the usual table of contents tag that kramdown Markdown provides working
+
+```
+{% raw %}
+* TOC
+{:toc}
+{% endraw %}
+```
+
+So I just googled TOC generator and copied in some code I found online that worked on the first try. Unfortunately, the TOC generator only looked at a single level (such as `h2` tags), so nesting additional levels wouldn't be reflected in the TOC. Not a problem in my current template, so I just noted the limitation in a code comment and moved on. Didn't have time to investigate why the TOC tag wouldn't render on this template.
+
+This kind of finalized code, with all of its quick hacks, is not instructive to someone looking to build their own report template. Instead, it would be more useful if I started from scratch with the core pattern. That pattern involves looping through a JSON file (the ticketing export) and pulling out the key values that I want to display. Once users learn these core patterns, they can build on them to create more complex solutions, such as inserting variables into the loop so that you can repeat the looping without duplicating the loop for every report category manually.
+
+As I said, the problem with the Nautilus approach is that my documentation will teach the user the A, B, C parts of the code (the simple parts), while mostly leaving the finalized code unarticulated. The documentation won't detail how we go to the X, Y, Z (more advanced, finalized product).
 
 ## Experiment to learn
 
