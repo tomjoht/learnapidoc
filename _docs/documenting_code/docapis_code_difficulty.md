@@ -39,7 +39,7 @@ The central paradigm most technical writers follow is a task-based model where y
 
 Overall, this non-linearity is very different from the procedural approach usually followed in tech docs.
 
-## Challenge 2: Audience has a high variance in technical levels
+## Challenge 2: Audience has a high variance of technical levels
 
 Another challenge I faced was deciding what to explain and what to skip over. Would developers already be versed in handlers in Lambda and Node JS? Or would this be new to them, as it was to me?
 
@@ -71,7 +71,7 @@ An efficient technique in code (e.g., recursive loops that expand resources as n
 
 Despite the difficulties of documenting code, this area of documentation shouldn't be overlooked. Ask developers what the most important element of API docs is, and the answer you're bound to hear time and again is code samples. Include working code samples that developers can easily copy and paste into their documentation. Code samples that demonstrate how to incorporate abstracts into an actual implementation. Code samples, sample apps &mdash; whatever the form, just give us more code, code, code.
 
-Check out the following video clip from engineer Ruthie Ben Dor during a Write the Docs conference. Responding to the question, "What are the three most important elements of producing API documentation?" Ruthie says:
+Check out the following video clip from engineer Ruthie Ben Dor during a Write the Docs conference. Responding to the question, "What are the three most important elements of producing API documentation?" Ruthie emphasizes the need to include code samples.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oItYMZHJv3g?start=252" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -79,11 +79,15 @@ Around the 4:15 mark, Ruthie says,
 
 > I think that if you're going to produce API documentation, there are 3 things that should either be included in it or that you should do in the course of making it. The most important thing, I think, if you just want people to just start using it is code examples. There are many API documentation generators that will generate code samples for you. Sometimes they're not great, so having someone actually go through and vet those code samples to make sure that they actually work correctly -- that's huge. It's one thing to be given a method and how it's called, but for the developer to have to take that and figure out how to make working code, hitting that endpoint, it's just a little bit more of a barrier. As opposed to if they can just copy and paste in their browser console to prove that it works to themselves, that's a really nice way to lower the barrier to entry. Code samples are huge, and code samples in a variety of languages that people are likely to use with your API. ([Ruthie Ben Dor: API documentation and developer portals 2/3 - YouTube](https://www.youtube.com/watch?v=oItYMZHJv3g))
 
-Why do engineers so frequently say they want code? Code examples show how to implement the abstract, narrative explanation in an actual way. In that sense, code is an extremely powerful tool to help users understand the right actions to take.
+Why do engineers so frequently say they want code? Code examples show how to implement an abstract, narrative explanation in an actual way. Code shows how to use reference APIs toward some actionable and tangible end. In that sense, code is an extremely powerful tool to help users understand how to use your API.
 
-Despite the importance of code samples, they're often neglected or missing from API docs. In this section of my API course, I'll provide concrete strategies for successfully incorporating code samples into your documentation.
+Despite the importance of code samples, they're often neglected or missing from API docs. After all, it's much easier to just cover reference material and let developers figure out how to actually use it constructively. In this section of my API course, I'll provide concrete strategies for successfully incorporating code samples into your documentation.
 
 {% include random_ad2.html %}
+
+## Next topic
+
+Go on to the next topic in this series: [What research tells us about documenting code](docapiscode_research_on_documenting_code.html).
 
 {: .note}
 July 27, 2019. I'm currently expanding out the topics in this section. Stay tuned for more to come in this section.

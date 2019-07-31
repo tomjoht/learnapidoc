@@ -1,5 +1,5 @@
 ---
-title: Research on documenting code
+title: What research tells us about documenting code
 permalink: /docapiscode_research_on_documenting_code.html
 keywords:
 course: "Documenting REST APIs"
