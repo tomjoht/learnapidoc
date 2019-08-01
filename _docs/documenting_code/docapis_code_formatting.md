@@ -1,5 +1,5 @@
 ---
-title: Formatting code documentation
+title: Strategies for documenting code
 permalink: /docapis_code_formatting.html
 keywords:
 course: "Documenting REST APIs"
@@ -79,11 +79,11 @@ Paul writes:
 
 Following the nautilus approach, you start with the simple, core patterns and then build up more and more code around it gradually as needed. You don't start by describing the complex finished work from the get-go. That finished work likely involves all kinds of code abstractions and rearrangements for a clean finished product. Instead, you start with the basic patterns, and then let users build from that.
 
-I like this approach. The problem is that we want to explain how the finished code works. We might have 500 lines of code that we want to articulate, while the nautilus approach would have us explain just several small pieces of that code. Hence there's an A to Z type of pattern. We describe A (the simplest core pattern) and eventually work our way to Z (the final code).
+I like this approach. The problem is that we want to explain how the finished code works. We might have 500 lines of code that we want to articulate, while the nautilus approach would have us explain just several small pieces of that code. Hence there's an A to Z type of problem. We describe A (the simplest core pattern), but the end product is Z. How exactly do you get from A to Z?
 
-To the technical writer looking at the finalized code, there's no clear sense of how the developer got there. We often can't decouple the Nautilus-like logic that the developer started with, which led him or her toward this more complex end.
+Here's the biggest problem: To the technical writer looking at the finalized code, there's no clear sense of how the developer got there. We often can't decouple the Nautilus-like logic that the developer started with, which led him or her toward this more complex end. All we see is this complex end. How do you decompile the code to reconstruct the logic that the developer started with? How do you know what these initial nautilus patterns were that started the whole thing? If you didn't develop the code, nor are you a developer, it will be nearly impossible to reconstruct the nautilus pattern behind the code.
 
-To illustrate this point more clearly, let me provide an example. Although I'm not an engineer, I'm handy with Jekyll and theming, and the other day I set about creating a template that would take a content export from a ticketing tool and render it as a documentation report.
+To illustrate this point more clearly, let me provide an example. Although I'm not an engineer, I'm handy with Jekyll and theming, and the other day I set about creating a template that would take a content export from a ticketing tool (like JIRA) and render it as a documentation report.
 
 My template looks like this:
 
@@ -119,11 +119,11 @@ Sprint: <a href="{{page.sprint_link}}">Link</a>
 {% endraw %}
 ```
 
-This code looks kind of like gibberish, really. I have some "include" files where I've abstracted away the logic because I'll be repeating it from report to report. And of course I don't want the scripts and styles showing here, as they'll clutter up the logic and I'm also repeating that content with each new report file.
+This code looks kind of like gibberish, really. I have some "include" files where I've abstracted away the logic because I'll be repeating it from report to report. And of course I don't want the scripts and styles showing here, as they'll clutter up the logic and I'm also repeating that content with each new report file, so that logic is abstracted away in include files as well.
 
-Imagine trying to document this code. If your started from the top and worked your way to the bottom, it would be a real mess. The explanation would also be hard to read and understand for users. It's just confusing and kind of jumbled. It doesn't help that I put this together in haste, without much thought for a clean, elegant solution. I needed to get this report out fast, so I hacked together the template as quickly as I could. Developers building applications often implement hacks and other quick-fixes using ["duct tape and WD-40"](https://www.joelonsoftware.com/2009/09/23/the-duct-tape-programmer/), as Joel Spolsky says, to get a working solution shipped to meet a deadline.
+Imagine trying to document this code. If you started from the top and worked your way to the bottom, it would be a real mess. The lengthy explanation would also be hard to read and understand for users. It's just confusing and kind of jumbled. It doesn't help that I put this together in haste, without much thought for a clean, elegant solution. I needed to get this report out fast, so I hacked together the template as quickly as I could. Developers building applications often implement hacks and other quick-fixes using ["duct tape and WD-40"](https://www.joelonsoftware.com/2009/09/23/the-duct-tape-programmer/), as Joel Spolsky says, to get a working solution shipped to meet a deadline.
 
-For example, in this code I couldn't get the usual table of contents tag that kramdown Markdown provides working
+For example, in this code I couldn't get the usual table of contents tag that kramdown Markdown provides working:
 
 ```
 {% raw %}
@@ -132,9 +132,52 @@ For example, in this code I couldn't get the usual table of contents tag that kr
 {% endraw %}
 ```
 
-So I just googled TOC generator and copied in some code I found online that worked on the first try. Unfortunately, the TOC generator only looked at a single level (such as `h2` tags), so nesting additional levels wouldn't be reflected in the TOC. Not a problem in my current template, so I just noted the limitation in a code comment and moved on. Didn't have time to investigate why the TOC tag wouldn't render on this template.
+So I just googled TOC generator and copied in some code I found online that worked on the first try. Unfortunately, the TOC generator only looked at a single level (such as `h2` tags), so nesting additional levels wouldn't be reflected in the TOC. Not a problem in my current template, so I just noted the limitation in a code comment and moved on. I didn't have time to investigate why the TOC tag wouldn't render on this template.
 
-This kind of finalized code, with all of its quick hacks, is not instructive to someone looking to build their own report template. Instead, it would be more useful if I started from scratch with the core pattern. That pattern involves looping through a JSON file (the ticketing export) and pulling out the key values that I want to display. Once users learn these core patterns, they can build on them to create more complex solutions, such as inserting variables into the loop so that you can repeat the looping without duplicating the loop for every report category manually.
+This kind of finalized code, with all of its quick hacks, is not instructive to someone looking to build their own report template. Instead, it would be more useful if I started from scratch with the core pattern. That pattern involves looping through a JSON file (the ticketing export) and pulling out the key values that I want to display. This key logic is available in the `sprintdisplaylogic.html` include above.
+
+Here's the contents of that include:
+
+```liquid
+{% raw %}
+{% assign shortIdList = page.short_ids %}
+{% for item in shortIdList %}
+{% assign sprintItems = site.data.sprints[sprintYamlFile]  | where_exp:"entry",
+"entry.ShortId contains item" %}
+
+<h2 id="{{item}}">{{item}} Resolved Doc Issues</h2>
+{% for entry in sprintItems %}
+<div class="entryTitle">{{entry.Title}}</div>
+<div class="entryIssueUrl"><a href="{{entry.IssueUrl}}">{{entry.ShortId}}</a></div>
+<blockquote>{{entry.Description | markdownify }}</blockquote>
+{% endfor %}
+<small><a href="#top">↑ Back to top</a></small>
+{% endfor %}
+{% endraw %}
+```
+
+Even this is confusing, as I have some weird stuff going on here with variables inserted as brackets in YAML file references.
+
+To really pare this down into the core logic, this is what developers would start with:
+
+```
+{% raw %}
+{% assign sprintItems = site.data.sprints.someyamlfile %}
+{% for entry in sprintItems %}
+* {{entry.Title}}
+* {{entry.Description }}
+* {{entry.IssueUrl}}
+{% endfor %}
+{% endraw %}
+```
+
+This is the core logic of the report. It uses a `for` loop to look through items in a data file, and it prints them out. Once you understand that, you can start building up more and more complex logic.
+
+But if you didn't develop the code, it would be extremely difficult to pinpoint the core, simple logic that is the basic pattern of the code. Where did the developer start? What is the essential pattern to learn?
+
+To gather this information, you need to interview the developer. And when you interview the developer, you need to understand the language and explanations he or she communicates. Alternatively, you can try to steer the developer towards this documentation approach through templates or other guidance.
+
+Once users learn these core patterns, they can build on them to create more complex solutions, such as inserting variables into the loop so that you can repeat the looping without duplicating the loop for every report category manually.
 
 As I said, the problem with the Nautilus approach is that my documentation will teach the user the A, B, C parts of the code (the simple parts), while mostly leaving the finalized code unarticulated. The documentation won't detail how we go to the X, Y, Z (more advanced, finalized product).
 
