@@ -35,7 +35,7 @@ For definitions of common terms, see [Key terms](#key_terms) at the end of this 
 
 To get a better understanding of Swagger UI, let's explore the <a href="http://petstore.swagger.io/">Swagger Petstore example</a>. In the Petstore example, the site is generated using [Swagger UI](https://github.com/swagger-api/swagger-ui).
 
-<a href="http://petstore.swagger.io/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/swaggerpetstoreui.png" alt="Petstore UI" /></a>
+<a href="http://petstore.swagger.io/" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/swaggerpetstoreui.png" alt="Petstore UI" /></a>
 
 The endpoints are grouped as follows:
 
@@ -47,7 +47,7 @@ The endpoints are grouped as follows:
 
 Before making any requests, you would normally authorize your session by clicking the **Authorize** button and completing the information required in the Authorization modal pictured below:
 
-<a href="http://petstore.swagger.io/" class="noExtIcon"><img class="medium" src="https://idratherbewritingmedia.com/images/api/swaggerui_authorize.png" alt="Authorization modal in Swagger UI" /></a>
+<a href="http://petstore.swagger.io/" class="noExtIcon"><img class="medium" src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/swaggerui_authorize.png" alt="Authorization modal in Swagger UI" /></a>
 
 The Petstore example has an OAuth 2.0 security model. However, the authorization code is just for demonstration purposes. There isn't any real logic authorizing those requests, so you can simply close the Authorization modal.
 
@@ -58,7 +58,7 @@ Now let's make a request:
 1.  Expand the [**POST Pet** endpoint](http://petstore.swagger.io/#/pet/addPet).
 2.  Click **Try it out**.
 
-    <a href="http://petstore.swagger.io/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/swaggerui_petendpoint.png" alt="Try it out button in Swagger UI" /></a>
+    <a href="http://petstore.swagger.io/" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/swaggerui_petendpoint.png" alt="Try it out button in Swagger UI" /></a>
 
     After you click Try it out, the example value in the Request Body field becomes editable.
 
@@ -69,7 +69,7 @@ Now let's make a request:
 
     Swagger UI submits the request and shows the [curl](docapis_make_curl_call.html)  that was submitted. The Responses section shows the [response](docapis_doc_sample_responses_and_schema.html). (If you select JSON rather than XML in the "Response content type" drop-down box, the response's format will be shown in JSON.)
 
-    <a href="http://petstore.swagger.io/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/swaggerui_response.png" alt="Response from Swagger Petstore get pet request" /></a>
+    <a href="http://petstore.swagger.io/" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/swaggerui_response.png" alt="Response from Swagger Petstore get pet request" /></a>
 
     {% include important.html content="The Petstore is a functioning API, and you have actually created a pet. You now need to take responsibility for your pet and begin feeding and caring for it! All joking aside, most users don't realize they're playing with real data when they execute responses in an API (especially when using their own API key). This test data may be something you have to wipe clean when you transition from exploring and learning about the API to eventually using the API for production use." %}
 

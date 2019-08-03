@@ -10,7 +10,7 @@ path1: /restapispecifications.html
 
 {% include workflow_map.html step="3" map="content/openapi_tutorial_map.html"  %}
 {% if site.format == "pdf" or site.format == "kindle" %}
-<img src="https://idratherbewritingmedia.com/images/api/openapistep3.png"/>
+<img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/openapistep3.png"/>
 {% endif %}
 
 In the [`servers` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#serverObject), you specify the basepath used in your API requests. The basepath is the part of the URL that appears before the endpoint.
@@ -49,7 +49,7 @@ servers:
 
 In Swagger UI, the multiple servers appear as options users can select in a drop-down list:
 
-<a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/openapi_serversurl.png" class="medium" /></a>
+<a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/openapi_serversurl.png" class="medium" /></a>
 
 If you have just one URL, you still see a drop-down box but with just one option.
 

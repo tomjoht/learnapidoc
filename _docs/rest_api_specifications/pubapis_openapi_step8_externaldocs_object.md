@@ -11,7 +11,7 @@ path1: /restapispecifications.html
 {% include workflow_map.html step="8" map="content/openapi_tutorial_map.html"  %}
 
 {% if site.format == "pdf" or site.format == "kindle" %}
-<img src="https://idratherbewritingmedia.com/images/api/openapistep8.png"/>
+<img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/openapistep8.png"/>
 {% endif %}
 
 The [`externalDocs` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#external-documentation-object) lets you link to external documentation. You can also provide links to external docs in the `paths` object.
@@ -52,7 +52,7 @@ Now that we've completed all the steps in the tutorial, we're finished building 
 
 Here's the specification document rendered by Swagger UI:
 
-<a target="\_blank" href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/swagger_full_result.png" class="large" /></a>
+<a target="\_blank" href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/swagger_full_result.png" class="large" /></a>
 
 Try executing a request in the version above and look at the result. In the result, locate the `temp` value in the `main` object. Then take a break by going outside and evaluate whether the temperature outside matches the response.
 

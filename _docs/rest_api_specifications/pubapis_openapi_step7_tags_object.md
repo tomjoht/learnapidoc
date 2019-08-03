@@ -11,7 +11,7 @@ path1: /restapispecifications.html
 {% include workflow_map.html step="7" map="content/openapi_tutorial_map.html"  %}
 
 {% if site.format == "pdf" or site.format == "kindle" %}
-<img src="https://idratherbewritingmedia.com/images/api/openapistep7.png"/>
+<img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/openapistep7.png"/>
 {% endif %}
 
 The `tags` object allows you to arrange the `paths` (endpoints) into named groups in the Swagger UI display.
@@ -67,7 +67,7 @@ Observe how the description appears next to the collapsed Current Weather Data s
 
 All paths that have the same tag are grouped together in the display. For example, paths that have the `Current Weather Data` tag will be grouped together under the title `Current Weather Data`. Each group title is a collapsible/expandable toggle.
 
-<a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/openapitutorial_tags.png" class="medium" /></a>
+<a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/openapitutorial_tags.png" class="medium" /></a>
 
 The order of the tags in the `tags` object at the root level determines their order in Swagger UI. Additionally, the `descriptions` appear to the right of the tag name.
 

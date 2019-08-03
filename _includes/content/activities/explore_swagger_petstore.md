@@ -52,7 +52,7 @@ Let's get some hands-on experience with Swagger UI using the Petstore demo.
 
     If you select JSON rather than XML in the "Response content type" drop-down box, you can specify that JSON is returned rather than XML.
 
-    <a href="http://petstore.swagger.io/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/swaggerui_response.png" alt="Response from Swagger Petstore get pet request" /></a>
+    <a href="http://petstore.swagger.io/" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/swaggerui_response.png" alt="Response from Swagger Petstore get pet request" /></a>
 
 6.  The Petstore is a functioning API, and you have actually created a pet. For fun, expand the GET **/pet/{petId}** endpoint, click **Try it out**, enter the pet `id` you used in the previous operation, and then execute the request. You should see your pet's name returned.
 

@@ -129,7 +129,7 @@ layout: null
 {% assign image_files = site.static_files | where: "image", true %}
 {% for myimage in image_files %}
 {% unless myimage.extname contains "svg" %}
-  <item id="image{% increment imageCounter %}" media-type="image/{{myimage.extname | remove: "." }}" href="images{{ myimage.path | remove: "https://idratherbewritingmedia.com/images/api" }}"/>
+  <item id="image{% increment imageCounter %}" media-type="image/{{myimage.extname | remove: "." }}" href="images{{ myimage.path | remove: "https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api" }}"/>
 {% endunless %}
 {% endfor %}
 {% endcomment %}

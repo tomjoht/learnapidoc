@@ -104,10 +104,10 @@ When you try to navigate the world of API documentation, you may be initially ov
 
 Realizing there was a need for more information, in 2014 I guest-edited a special issue of Intercom dedicated to API documentation.
 
-{% include course_image.html url="https://idratherbewritingmedia.com/files/intercom_vol61_issue8.pdf" size="small" filename="intercom" ext_print="png" ext_web="png" alt="STC Intercom issue (that I guest-edited) focusing on API documentation" caption="STC Intercom issue focused on API documentation" %}
+{% include course_image.html url="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/files/intercom_vol61_issue8.pdf" size="small" filename="intercom" ext_print="png" ext_web="png" alt="STC Intercom issue (that I guest-edited) focusing on API documentation" caption="STC Intercom issue focused on API documentation" %}
 
 {: .tip}
-You can read this issue for free [here](https://idratherbewritingmedia.com/files/intercom_vol61_issue8.pdf). (The STC made this PDF available for free.)
+You can read this issue for free [here](https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/files/intercom_vol61_issue8.pdf). (The STC made this PDF available for free.)
 
 This issue was a good start, but many technical writers asked for more training. The Silicon Valley STC chapter held a couple of workshops dedicated to APIs. Both workshops sold out quickly (with 60 participants in the first, and 100 participants in the second). API documentation is particularly hot in the San Francisco Bay area, where many companies have REST APIs requiring documentation. From these early days, I realized that API documentation would be a hot topic, so I turned my focus toward this area for the next few years &mdash; giving more presentations, workshops, and all the while building this comprehensive course.
 

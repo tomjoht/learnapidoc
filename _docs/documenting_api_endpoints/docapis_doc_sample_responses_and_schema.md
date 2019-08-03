@@ -13,7 +13,7 @@ redirect_from:
 
 {% include workflow_map.html step="5" map="content/reference_doc_map.html"  %}
 {% if site.format == "pdf" or site.format == "kindle" %}
-<img src="https://idratherbewritingmedia.com/images/api/apiref5.png"/>
+<img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/apiref5.png"/>
 {% endif %}
 
 {{site.data.glossary.response_example_and_schema.def}}
@@ -25,23 +25,23 @@ redirect_from:
 
 The following is a sample response from the SendGrid API. Their documentation provides a tabbed display with an **Example** on one tab:
 
-<a class="noExtIcon" href="https://sendgrid.com/docs/api-reference/"><img src="https://idratherbewritingmedia.com/images/api/sendgridresponseexample1.png" /></a>
+<a class="noExtIcon" href="https://sendgrid.com/docs/api-reference/"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/sendgridresponseexample1.png" /></a>
 
 And the response **Schema** on another tab:
 
-<a class="noExtIcon" href="https://sendgrid.com/docs/api-reference/"><img src="https://idratherbewritingmedia.com/images/api/sendgridresponseexample2.png" /></a>
+<a class="noExtIcon" href="https://sendgrid.com/docs/api-reference/"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/sendgridresponseexample2.png" /></a>
 
 The definition of the response is called the *schema* or *model* (the terms are used synonymously) and aligns with the [JSON schema language and descriptions](http://json-schema.org/). What works particularly well with the SendGrid example is the use of expand/collapse tags to mirror the same structure as the example, with objects at different levels.
 
 Swagger UI also provides both an example value and a schema or model. For example, in the sample Sunrise and Sunset Times API doc that I used for the [SwaggerUI activity](https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset) (which comes later in the course), you can see a distinction between the response example and the response schema. Here's the **Example Value**:
 
-<a class="noExtIcon" href="https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset"><img src="https://idratherbewritingmedia.com/images/api/sunriseexample.png" alt="Sunrise example value" /></a>
+<a class="noExtIcon" href="https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/sunriseexample.png" alt="Sunrise example value" /></a>
 
 The example response should correspond with the example request. Just as the request example might only include a subset of all possible parameters, the response example might also be a subset of all possible returned information.
 
 However, the *response schema* is comprehensive of all possible properties returned in the response. This is why you need both a response example and a response schema. Here's the response schema for the Sunrise and Sunset Times API:
 
-<a class="noExtIcon" href="https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset"><img src="https://idratherbewritingmedia.com/images/api/sunrisemodelexample.png" alt="Sunrise model" /></a>
+<a class="noExtIcon" href="https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/sunrisemodelexample.png" alt="Sunrise model" /></a>
 
 The schema or model provides the following:
 
@@ -79,17 +79,17 @@ Many times, the response contains nested objects (objects within objects) or has
 
 Tables are most commonly used. In [Peter Gruenbaum's API tech writing course on Udemy](https://www.udemy.com/api-documentation-1-json-and-xml/), Gruenbaum represents the nested objects using tables with various columns:
 
-<a href="https://idratherbewriting.com/2015/05/22/api-technical-writing-course-on-udemy/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/gruenbaumtable.png" alt="Peter Gruenbaum course" /></a>
+<a href="https://idratherbewriting.com/2015/05/22/api-technical-writing-course-on-udemy/" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/gruenbaumtable.png" alt="Peter Gruenbaum course" /></a>
 
 Gruenbaum's use of tables is mostly to reduce the emphasis on tools and place it more on the content.
 
 The Dropbox API represents the nesting with a slash. For example, `name_details/`, `team/`, and `quota_info` indicate the multiple object levels.
 
-<a href="https://www.dropbox.com/developers/core/docs#disable-token" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/returnvaluedefinitions.png" alt="Dropbox nested example" /></a>
+<a href="https://www.dropbox.com/developers/core/docs#disable-token" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/returnvaluedefinitions.png" alt="Dropbox nested example" /></a>
 
 Other APIs will nest the response definitions to imitate the JSON structure. Here's an example from bit.ly's API:
 
-<a href="http://dev.bitly.com/user_info.html" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/bitlyresponsedoc.png" alt="Bitly response" /></a>
+<a href="http://dev.bitly.com/user_info.html" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/bitlyresponsedoc.png" alt="Bitly response" /></a>
 
 Multiple levels of bullets is usually an eyesore, but here it serves a purpose that works well without requiring sophisticated styling.
 
@@ -97,11 +97,11 @@ Multiple levels of bullets is usually an eyesore, but here it serves a purpose t
 
 eBay's approach is a little more unique. In this case, `MinimumAdvertisedPrice` is nested inside `DiscountPriceInfo`, which is nested in `Item`, which is nested in `ItemArray`. (Note also that this response is in XML instead of JSON.)
 
-<a href="http://developer.ebay.com/Devzone/shopping/docs/CallRef/FindPopularItems.html" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/ebaycode.png" alt="eBay nested example" /></a>
+<a href="http://developer.ebay.com/Devzone/shopping/docs/CallRef/FindPopularItems.html" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/ebaycode.png" alt="eBay nested example" /></a>
 
 Here's the response documentation:
 
-<a href="http://developer.ebay.com/Devzone/shopping/docs/CallRef/FindPopularItems.html" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/ebayexampleresponse.png" alt="eBay example response" /></a>
+<a href="http://developer.ebay.com/Devzone/shopping/docs/CallRef/FindPopularItems.html" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/ebayexampleresponse.png" alt="eBay example response" /></a>
 
 It's also interesting how much detail eBay includes for each item. Whereas the Twitter writers appear to omit descriptions, the eBay authors write small novels describing each item in the response.
 
@@ -109,7 +109,7 @@ It's also interesting how much detail eBay includes for each item. Whereas the T
 
 Some APIs put the response in a right column so you can see it while also looking at the resource description and parameters. Stripe's API made this three-column design popular:
 
-<a href="https://stripe.com/docs/api#charge_object" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/stripetripanedesign.png" alt="Stripe's tri-column design" /></a>
+<a href="https://stripe.com/docs/api#charge_object" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/stripetripanedesign.png" alt="Stripe's tri-column design" /></a>
 
 {% include random_ad2.html %}
 
@@ -121,7 +121,7 @@ The MYOB Developer Center takes an interesting approach in documenting the JSON 
 
 To the right of the JSON definitions is a code sample with real values. When you select a value, both the element in the table and the element in the code sample highlight at the same time.
 
-<a href="http://developer.myob.com/api/accountright/v2/generalledger/account/#GET" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/myobjsondoc.png" alt="MYOB JSON doc approach" /></a>
+<a href="http://developer.myob.com/api/accountright/v2/generalledger/account/#GET" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/myobjsondoc.png" alt="MYOB JSON doc approach" /></a>
 
 This approach facilitates scanning, and the popover + collapsible approach allows you to compress the table so you can jump to the parts that interest you. However, this approach requires more manual work from a documentation point of view. Still, if you have long JSON objects, it might be worth it.
 
@@ -131,7 +131,7 @@ Sometimes responses are generated dynamically based on API calls to a test syste
 
 Another API with dynamic responses is the [OpenWeatherMap API](https://openweathermap.org/current) (which we used in earlier activities). When you click a link in the "Examples of API calls" section, such as [http://samples.openweathermap.org/data/2.5/weather?q=London](http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1), you see the response returned in the browser.
 
-<a href="http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1" class="noExtIcon"><img class="medium" src="https://idratherbewritingmedia.com/images/api/dynamicresponseinbrowser.png"/></a>
+<a href="http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1" class="noExtIcon"><img class="medium" src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/dynamicresponseinbrowser.png"/></a>
 
 (Actually, the OpenWeatherMap response isn't generated dynamically &mdash; it just looks that way.)
 

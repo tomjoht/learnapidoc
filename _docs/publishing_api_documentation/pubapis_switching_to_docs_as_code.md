@@ -247,15 +247,15 @@ And yet, platforms and tools are rarely static for any duration of time. Even Je
 
 For a slide presentation that covers the topics listed in this article, see the following:
 
-<a class="noCrossRef" href="https://github.com/tomjoht/docs-as-code-tools-and-workflows"><img src="https://idratherbewritingmedia.com/images/api/docsascodepresotitle.png"/></a>.
+<a class="noCrossRef" href="https://github.com/tomjoht/docs-as-code-tools-and-workflows"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/docsascodepresotitle.png"/></a>.
 
 Additionally, note that this content was also republished in the [Developer Portals e-Magazine Winter 2018](https://pronovix.com/e-books/developer-portals-e-magazine-winter-2018), by Pronovix:
 
-<a href="https://pronovix.com/e-books/developer-portals-e-magazine-winter-2018" class="noCrossRef"><img src="https://idratherbewritingmedia.com/images/api/devportalswinter2018.png" class="small" /></a>
+<a href="https://pronovix.com/e-books/developer-portals-e-magazine-winter-2018" class="noCrossRef"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/devportalswinter2018.png" class="small" /></a>
 
 It was also republished in Anne Gentle's [Docs Like Code: Case Studies](https://www.docslikecode.com/articles/change-case-study/):
 
-<a href="https://www.docslikecode.com/articles/change-case-study/" class="noCrossRef"><img src="https://idratherbewritingmedia.com/images/api/docslikecodeannegentlecasestudies.png" class="small" /></a>
+<a href="https://www.docslikecode.com/articles/change-case-study/" class="noCrossRef"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/docslikecodeannegentlecasestudies.png" class="small" /></a>
 
 I also [gave a presentation on Docs-as-code tools and workflows](https://idratherbewriting.com/2018/03/09/docs-as-code-tools-and-workflows-denver-presentation/) to the STC Rocky Mountain and WTD Denver group.
 

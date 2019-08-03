@@ -18,7 +18,7 @@ In this exercise, you'll use Postman to make a request using OpenWeatherMap's [c
 
     Your Postman UI should look like this:
 
-    <img src="https://idratherbewritingmedia.com/images/api/postmanopenweatherapi.png" class="medium"/>
+    <img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/postmanopenweatherapi.png" class="medium"/>
 
 	  When you add these parameters, they appear as a query string to the endpoint URL in the GET box. For example, your endpoint will now look like this: `https://api.openweathermap.org/data/2.5/weather?zip=95050&units=imperial&appid=fd4698c940c6d1da602a70ac34f0b147` (but with different query string values). Query string parameters appear after the question mark `?` symbol and are separated ampersands `&`. The order of query string parameters doesn't matter.
 
@@ -28,7 +28,7 @@ In this exercise, you'll use Postman to make a request using OpenWeatherMap's [c
 
 	  The response appears in the lower pane. For example:
 
-    <img src="https://idratherbewritingmedia.com/images/api/postmanopenweatherapiresponse.png" class="medium"/>
+    <img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/postmanopenweatherapiresponse.png" class="medium"/>
 
 ### Save the request
 
@@ -39,7 +39,7 @@ In this exercise, you'll use Postman to make a request using OpenWeatherMap's [c
 
     After you create the collection, the Save button will be enabled. Your Postman collection should look something like this:
 
-    <img src="https://idratherbewritingmedia.com/images/api/postmancollectiondialog.png" class="small"/>
+    <img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/postmancollectiondialog.png" class="small"/>
 
 4.  Click **Save to [collection name]**
 

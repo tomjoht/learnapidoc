@@ -10,7 +10,7 @@ path1: /restapispecifications.html
 
 {% include workflow_map.html step="1" map="content/openapi_tutorial_map.html"  %}
 {% if site.format == "pdf" or site.format == "kindle" %}
-<img src="https://idratherbewritingmedia.com/images/api/openapistep1.png"/>
+<img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/openapistep1.png"/>
 {% endif %}
 
 {% if site.format == "web" %}
@@ -80,7 +80,7 @@ Until you add more information in here, you'll see error messages and notes such
 
 There's not much to the `openapi` object, and right now there's not enough content for the spec to validate. But when you later render your specification document through the Swagger UI display, you'll see that an "OAS3" tag will appear to the right of the API name.
 
-<a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/openapitutorial_version.png" class="medium" style="border: 1px solid #dedede;"/></a>
+<a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/openapitutorial_version.png" class="medium" style="border: 1px solid #dedede;"/></a>
 
 On the backend, Swagger UI uses the 3.0.2 version of the spec to validate your content.
 
