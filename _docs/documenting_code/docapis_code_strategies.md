@@ -1,5 +1,5 @@
 ---
-title: Five separate approaches for documenting code
+title: Five strategies for documenting code
 permalink: /docapis_code_strategies.html
 keywords:
 course: "Documenting REST APIs"
@@ -97,15 +97,15 @@ Following the nautilus approach, you start with the simple, core patterns and th
 
 I like this approach. The problem is that we often want to explain how the finished code works, taking a user through it all from start to end. We might have 500 lines of code that we want to articulate, but the nautilus approach would have us explain just several small pieces of that code. Hence there's an A to Z type of problem. We describe A (the simplest core pattern), but the end product is Z. How exactly do you get from A to Z? How do you get from the simple patterns that maybe occupy 20 lines of code to the monstrously complex code that spans 200 lines?
 
-Here's the conundrum: To the technical writer looking at the finalized code, there's no clear sense of how the developer got there. We often can't decouple the Nautilus-like logic that the developer started with, which led him or her toward this more complex end. All we see is this complex end. How do you decompile the code to reconstruct the logic that the developer started with? How do you know what these initial nautilus patterns were that started the whole process? If you didn't develop the code, nor are you a developer, it will be nearly impossible to reconstruct the nautilus pattern behind the code.
+Here's the conundrum: To the technical writer looking at the finalized code, there's no clear sense of how the developer got there. We often can't decouple the nautilus-like logic that the developer started with, which led him or her toward this more complex end. All we see is this complex end. How do you decompile the code to reconstruct the logic that the developer started with? How do you know what these initial nautilus patterns were that started the whole process? If you didn't develop the code, nor are you a developer, it will be nearly impossible to reconstruct the nautilus pattern behind the code.
 
 As an analogy, consider a painting. Suppose your task is to describe a painting to a would-be painter.
 
-{% include course_image.html url="https://en.wikipedia.org/wiki/Painting#/media/File:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg" size="" border="true" filename="mona_lisa_painting" ext_print="jpg" ext_web="jpg" alt="How would you document the process of producing a painting?" caption="How would you document the process of producing a painting?" %}
+{% include course_image.html max-width="500px" url="https://en.wikipedia.org/wiki/Painting#/media/File:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg" size="" border="true" filename="mona_lisa_painting" ext_print="jpg" ext_web="jpg" alt="How would you document the process of producing a painting?" caption="How would you document the process of producing a painting?" %}
 
 Would you start at the top and work your way to the bottom? No, that would be ludicrous. Most likely you would start by creating ovals for the head. Then maybe some general sketches for the eyes, and so on. Maybe you sketch our perspective lines and other basic shapes first. You wouldn't get to the colors and lighting and shadows until later, right? Same with code. You start with the foundation and then work your way towards more of the finishing detail.
 
-However, if you're not a painter, how would you know how to describing the process of creating a painting? You would need to know the painter's logic &mdash; where to start. If you instead just started at the end, the tutorial would likely seem insanely complex.
+However, if you're not a painter, how would you know how to describe the process of creating a painting? You would need to know the painter's logic &mdash; where to start. If you instead just started at the end, the tutorial would likely be insanely complex.
 
 To illustrate this point more clearly, let me provide a code example. Although I'm not an engineer, I'm handy with Jekyll and theming, and the other day I set about creating a template that would take a content export from a ticketing tool (like JIRA) and render it as a documentation report.
 
@@ -158,7 +158,7 @@ For example, in this code I couldn't get the usual table of contents tag that kr
 
 So I just googled "TOC generator" and copied in some code I found online that worked on the first try. Unfortunately, the TOC generator only looks at a single level (such as `h2` tags), so nesting additional levels wouldn't be reflected in the TOC. Not a problem in my current template for the existing needs of the report, so I just noted the limitation in a code comment and moved on.
 
-This kind of finalized code, with all of its quick hacks, is not instructive to someone looking to build their own report template. Instead, it would be more useful if I started from scratch with the core pattern. That pattern involves looping through a JSON file (the ticketing export) and pulling out the key values that I want to display. This key logic is available in the `sprintdisplaylogic.html` include above. Here's the contents of that include:
+This kind of finalized code, with all of its quick hacks and inelegant implementations, is not instructive to someone looking to build their own report template. Instead, it would be more useful if I started from scratch with the core pattern. That pattern involves looping through a JSON file (the ticketing export) and pulling out the key values that I want to display. This key logic is available in the `sprintdisplaylogic.html` include above. Here's the contents of that include:
 
 ```liquid
 {% raw %}
@@ -197,11 +197,11 @@ This is the core logic of the report. It uses a `for` loop to look through items
 
 But if you didn't develop the code, it would be extremely difficult to pinpoint the core, simple logic that is the basic pattern of the code. Where did the developer start? What is the essential pattern to learn?
 
-To gather this information, you need to interview the developer. And when you interview the developer, you need to understand the language and explanations he or she communicates. Alternatively, you can try to steer the developer towards this documentation approach through templates or other guidance.
+To gather this information, you need to interview the developer. And when you interview the developer, you need to understand the language and explanations he or she communicates. Alternatively, you can try to steer the developer towards this documentation approach through templates or other guidance. (For example, you might ask, "What's the fundamental core logic that the user needs to know here?" "What's the really important line to focus on in all this code? Can you walk me through that specific part in detail?")
 
 Once users learn these core patterns, they can build on them to create more complex solutions, such as inserting variables into the loop so that you can repeat the looping without duplicating the loop for every report category manually.
 
-As I said, the problem with the nautilus approach is that your documentation will teach the user the A, B, C parts of the code (the simple patterns), while mostly leaving the finalized code unarticulated. The documentation won't detail how we go to the X, Y, Z parts (the more advanced, finalized product). In that sense, there's more of a gap between your documentation and the code samples. But the documentation will likely be a lot more helpful and instructive.
+As I said, the problem with the nautilus approach is that your documentation will teach the user the A, B, C parts of the code (the simple patterns), while mostly leaving the finalized code unarticulated. The documentation won't detail how we go to the X, Y, Z parts (the more advanced, finalized product). In that sense, there's more of a gap between your documentation and the code samples. But the documentation will probably be a lot more helpful and instructive.
 
 You could start with these simple patterns and work your way toward the more finished code, but it will likely mean your documentation will be a lot longer and more extensive. Admittedly, this kind of documentation is more like a learning tutorial. A lot of times, your documentation will assume that the user is already familiar with these simpler core patterns.
 
@@ -215,9 +215,12 @@ But suppose there are good reasons for including lengthy advanced chunks of code
 
 I highly recommend recording interviews where you ask an engineer to explain anything. This will allow you to go back and listen to the explanations in slow motion, hitting stop and rewind as much as you want. If the engineer mentions an unfamiliar concept, you could use that as a springboard for your own study. This will give you a map of a relevant list of topics to learn (rather than some course that might never get around to addressing the specific code you actually need to learn).
 
-### What needs explanation and what doesn't
 
 As you decompile the logic of the code to the simplest pattern, you will face another challenge: where to draw the line about what you explain and assume needs no explanation. This again is nearly impossible to answer without better understanding your audience, and chances are the engineer won't have any better sense of the audience than you, so the engineer will likely make the same assumption as technical writers often do &mdash; imagining a user not too unlike ourselves.
+
+The nautilus approach is probably the best approach because you're empowering the user with the knowledge for creating his or her own code logic. In [*Think Like a Programmer: An Introduction to Creative Problem Solving*], V. Anton Spraul explains,
+
+> Books that do focus on writing are often effectively "cookbooks" in that they teach specific recipes for use in particular situations. Such books can be quite valuable as time savers, but not as a path toward learning to write original code. Think about cookbooks in the original sense. Although great cooks own cookbooks, no one who relies upon cookbooks can be a great cool. A great cool understands ingredients, preparation methods, and cooking methods and knows how they can be combined to make great meals. All a great cook needs to produce a tasty meal is a fully stocked kitchen. in the same way, a great programmer understands language syntax, application frameworks, algorithms, and software engineering principles and knolws how they can be combined to make great programs. Give a great programmer a list of specifications, turn him loose with a fully stocked programmminng environment, and great things will happen.
 
 
 ## Approach 5: Interactive browser experiences
