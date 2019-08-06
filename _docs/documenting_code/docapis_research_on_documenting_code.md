@@ -210,3 +210,15 @@ To summarize the takeaways from the research presented here, here are some key p
 These strategies provide a foundation for best practices that we will explore in more detail with more concrete, tangible techniques in the sections that follows.
 
 {% include random_ad.html %}
+
+{% comment %}
+more resources
+[Ten Extras for Great API Documentation · An A List Apart Article](https://alistapart.com/article/ten-extras-for-great-api-documentation).
+
+
+[API documentation – What software engineers can teach us](https://www.parson-europe.com/en/blog/440-api-documentation.html)
+
+
+“How Software Engineers Use Documentation: The State of the Practice”*
+
+ {% endcomment %}
