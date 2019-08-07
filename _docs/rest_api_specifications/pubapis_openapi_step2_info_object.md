@@ -10,7 +10,7 @@ path1: /restapispecifications.html
 
 {% include workflow_map.html step="2" map="content/openapi_tutorial_map.html"  %}
 {% if site.format == "pdf" or site.format == "kindle" %}
-<img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/openapistep2.png"/>
+<img src="https://idratherbewritingmedia.com/images/api/openapistep2.png"/>
 {% endif %}
 
 The [info object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#infoObject) contains basic information about your API, including the title, a description, version, link to the license, link to the terms of service, and contact information. Many of the properties are optional.
@@ -55,6 +55,6 @@ At this point, go ahead and paste this [above code](#sample_info_object) along w
 
 In the Swagger UI display, the `info` object's information appears at the top:
 
-<a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/step2swaggeruiprogress.png" class="medium" /></a>
+<a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/step2swaggeruiprogress.png" class="medium" /></a>
 
 In the `description` property, in addition to describing your overall API, you might want to provide some basic instructions to users on how to use Swagger UI. If there's a test account they should use, you can provide the information they need in this space.

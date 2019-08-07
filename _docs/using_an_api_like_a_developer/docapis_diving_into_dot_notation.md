@@ -185,7 +185,7 @@ A few things are different here, but it's essentially the same code as you creat
 
 When you load the page and click the button, the following should appear:
 
-<a href="https://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/windconditionsfinaloutput.png" class="medium" alt="Final REST API" /></a>
+<a href="https://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/windconditionsfinaloutput.png" class="medium" alt="Final REST API" /></a>
 
 You can view the file <a href="https://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html">idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html</a>.
 

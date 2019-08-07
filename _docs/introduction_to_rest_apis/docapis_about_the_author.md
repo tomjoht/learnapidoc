@@ -8,9 +8,9 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 ---
 
-{% if site.format == "web" %}<img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/tomjohnson.jpg" class="small" style="float: right; padding:1em;"/>
+{% if site.format == "web" %}<img src="https://idratherbewritingmedia.com/images/api/tomjohnson.jpg" class="small" style="float: right; padding:1em;"/>
 {% else %}
-<img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/tomjohnsonsmall.jpg" class="small" style="float: right; padding:1em;"/>
+<img src="https://idratherbewritingmedia.com/images/api/tomjohnsonsmall.jpg" class="small" style="float: right; padding:1em;"/>
 {% endif %}
 
 

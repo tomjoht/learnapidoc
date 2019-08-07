@@ -51,7 +51,7 @@ A lot of times, abstract concepts don't make sense until you can contextualize t
 
 Although Postman is a popular REST client, you can also use others, such as Paw. The following image shows the same current weather API request made in [Paw (for Mac)](https://paw.cloud/):
 
-<img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/pawexample.png" alt="Paw" />
+<img src="https://idratherbewritingmedia.com/images/api/pawexample.png" alt="Paw" />
 
 Like Postman, Paw also allows you to easily see the request headers, response headers, URL parameters, and other data. I like that Paw shows the response in an expandable/collapsible way. The expand/collapse feature can make it easier to explore the response. Note that Paw is specific to Mac only, and like most products for Mac users, costs money.
 

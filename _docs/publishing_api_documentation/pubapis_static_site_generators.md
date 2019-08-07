@@ -56,7 +56,7 @@ One could discuss many more &mdash; Hexo, Vue, Middleman, Gitbook, Pelican, and 
 
 I devote an entire topic to [Jekyll](pubapis_jekyll.html) in this course, complete with example Git workflows, so I won't go as deep in detail here. Jekyll is a Ruby-based static site generator originally built by the co-founder of GitHub. Jekyll builds your website by converting Markdown to HTML, inserting pages into layouts you define, running any Liquid scripting and logic, compressing styles, and writing the output to a site folder that you can deploy on a web server.
 
-<a href="https://jekyllrb.com/" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/jekyllsite.png"/></a>
+<a href="https://jekyllrb.com/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/jekyllsite.png"/></a>
 
 There are several compelling reasons to use Jekyll:
 
@@ -75,7 +75,7 @@ If you're looking for a documentation theme, see my [Documentation theme for Jek
 
 [Hugo](https://gohugo.io/) is a static site generator that is rapidly growing in popularity. Based on the Go language, Hugo builds your site significantly faster than most other static site generators, including Jekyll. There's an impressive number of [themes](https://themes.gohugo.io/), including some designed for [documentation](https://themes.gohugo.io/tags/documentation/). Specifically, see the [Learn theme](https://themes.gohugo.io/theme/hugo-theme-learn/en) and this [Multilingual API documentation theme](https://github.com/bep/docuapi).
 
-<a href="https://gohugo.io/" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/hugosite.png"/></a>
+<a href="https://gohugo.io/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/hugosite.png"/></a>
 
 As with Jekyll, Hugo allows you to write in Markdown, add frontmatter content in YAML (or [TOML](https://github.com/toml-lang/toml) or JSON) at the top of your Markdown pages, and more. In this sense, Hugo shares a lot of similarity with Jekyll.
 
@@ -116,7 +116,7 @@ For this reason, unless you're using themes built by others, you don't often jum
 
 [Sphinx](http://www.sphinx-doc.org/en/stable/) is a popular static site generator based on Python. It was originally developed by the Python community to document the Python programming language (and it has some direct capability to document Python classes), but Sphinx is now commonly used for many documentation projects unrelated to Python. Part of Sphinx's popularity is due to its Python foundation since Python works well for many documentation-related scripting scenarios.
 
-<a href="http://www.sphinx-doc.org/en/stable/" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/sphinxsite.png"/></a>
+<a href="http://www.sphinx-doc.org/en/stable/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/sphinxsite.png"/></a>
 
 Because Sphinx was designed from the ground up as a documentation tool, not just as a tool for building websites (like Jekyll and Hugo), Sphinx has more documentation-specific functionality that is often absent from other static site generator tools. Some of these documentation-specific features include robust search, more advanced linking (linking to sections, automating titles based on links, cross-references, and more), and use of reStructuredText (rST), which is more semantically rich, standard, and extensible than Markdown. (See [What about reStructuredText and Asciidoc?](pubapis_markdown.html#rst_and_asciidoc) for more details around rST compared to Markdown.)
 
@@ -134,7 +134,7 @@ Jekyll, Next, and Hugo are the most common static site generators. If you look a
 
 [MkDocs](http://www.mkdocs.org/) is a static site generator based on Python and designed for documentation projects. Similar to Jekyll, with MkDocs you write in Markdown and store page navigation in YAML files. You can adjust the CSS and other code (or create your own theme). Notably, the MkDocs provides some themes that are more specific to documentation, such as the [Material theme](https://squidfunk.github.io/mkdocs-material/). MkDocs also offers a theme ("ReadtheDocs") that resembles the Read the Docs platform.
 
-<a href="http://www.mkdocs.org/" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/mkdocs.png"/></a>
+<a href="http://www.mkdocs.org/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/mkdocs.png"/></a>
 
 Some [other themes](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes) are also available. MkDocs uses [Jinja templating](http://jinja.pocoo.org/), provides [template variables](http://www.mkdocs.org/user-guide/custom-themes/#template-variables) for custom theming, and more.
 

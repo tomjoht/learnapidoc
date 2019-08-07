@@ -32,7 +32,7 @@ More commonly, software shops use _distributed_ version control systems. The mos
 {: .note}
 Note that Git is different from GitHub. GitHub provides online repositories and tools for Git. GitHub is a platform for managing Git projects, with a nice GUI for performing some Git tasks such as pull requests.
 
-<figure><a href="http://github.com" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/githubhomepage.png" alt="Github" /></a><figcaption>Github is a site that built tooling around Git.</figcaption></figure>
+<figure><a href="http://github.com" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/githubhomepage.png" alt="Github" /></a><figcaption>Github is a site that built tooling around Git.</figcaption></figure>
 
 [Bitbucket](https://bitbucket.org/) is Altassian's version of GitHub. Bitbucket lets you use either Git or Mercurial, but most of the Bitbucket projects use Git. Bitbucket tends to only be used by companies already heavily using Atlassian.
 

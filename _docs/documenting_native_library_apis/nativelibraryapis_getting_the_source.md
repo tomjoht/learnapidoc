@@ -55,7 +55,7 @@ This Java app doesn't do much. Its only purpose is to create some classes that d
 
 1.  In the Package Explorer, expand **javadoc_tags**.
 2.  Double-click the **App.java** file to open it.
-3.  Click the **Run App** button <img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/javarunbutton.png" style="vertical-align:bottom" />:
+3.  Click the **Run App** button <img src="https://idratherbewritingmedia.com/images/api/javarunbutton.png" style="vertical-align:bottom" />:
 
     {% include course_image.html size="large" filename="eclipserunapp" ext_print="png" ext_web="png" alt="Running the app in Eclipse" caption="Running the app in Eclipse" %}
 

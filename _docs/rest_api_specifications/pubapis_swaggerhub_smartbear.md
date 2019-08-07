@@ -41,7 +41,7 @@ Smartbear developed SwaggerHub as a way to help teams collaborate around the Ope
 
 To get started with SwaggerHub, go to [swaggerhub.com](https://swaggerhub.com/) and create an account or sign in with your GitHub credentials. After signing in, you see the SwaggerHub dashboard.
 
-<a href="https://app.swaggerhub.com/home" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/swaggerhubhomepage.png" /></a>
+<a href="https://app.swaggerhub.com/home" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/swaggerhubhomepage.png" /></a>
 
 The dashboard shows a list of the APIs you've created. In this example, you see the [OpenWeatherMap API](docapis_scenario_for_using_weather_api.html) that I've been using throughout this course.
 
@@ -75,7 +75,7 @@ When you publish your Swagger documentation on SwaggerHub, Swagger's base URL (`
 
 ## Inline commenting/review
 
-Key to the review process is the ability for team members to comment on the spec inline, similar to Google Docs and its margin annotations. When you're working in SwaggerHub's editor, a small plus sign {% if site.format == "web" %}<img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/swaggerhub_plus.png" class="inline"/>{% endif %} appears to the left of every line. Click the plus button to add a comment inline at that point.
+Key to the review process is the ability for team members to comment on the spec inline, similar to Google Docs and its margin annotations. When you're working in SwaggerHub's editor, a small plus sign {% if site.format == "web" %}<img src="https://idratherbewritingmedia.com/images/api/swaggerhub_plus.png" class="inline"/>{% endif %} appears to the left of every line. Click the plus button to add a comment inline at that point.
 
 {% include course_image.html size="large" filename="swaggerhub_comment_feature" ext_print="png" ext_web="png" alt="Inline commenting and reply features on SwaggerHub" caption="Inline commenting and reply features on SwaggerHub" %}
 
@@ -129,7 +129,7 @@ Using the mock server approach, SwaggerHub not only provides documentation but a
 
 {% include random_ad.html %}
 
-To set up a mocking server in SwaggerHub, click the plug icon {% if site.format == "web" %}<img class="inline" src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/swaggerhub_integration_button.png" />{% endif %} and select to add a new integration. Select the **API Auto Mocking** service and complete the configuration details. Make sure you have `examples` for each of the endpoint responses in your spec. See [API Auto Mocking](https://app.swaggerhub.com/help/integrations/api-auto-mocking) for more details.
+To set up a mocking server in SwaggerHub, click the plug icon {% if site.format == "web" %}<img class="inline" src="https://idratherbewritingmedia.com/images/api/swaggerhub_integration_button.png" />{% endif %} and select to add a new integration. Select the **API Auto Mocking** service and complete the configuration details. Make sure you have `examples` for each of the endpoint responses in your spec. See [API Auto Mocking](https://app.swaggerhub.com/help/integrations/api-auto-mocking) for more details.
 
 ## Content Re-use (Domains)
 

@@ -21,9 +21,9 @@ Let's start using an actual REST API to get more familiar with how they work. In
 Let's say that you're a web developer and you want to add weather information to your site. Your site is for cyclists. You want to allow users who come to your site to see the current wind and temperature conditions. You want something like this:
 
 {% if site.format == "pdf" or site.format == "kindle" %}
-<img class="small" src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/restapi_windycall.png" alt="Wind meter conditions for website" />
+<img class="small" src="https://idratherbewritingmedia.com/images/api/restapi_windycall.png" alt="Wind meter conditions for website" />
 {% elsif site.format == "web" %}
-<img class="small" src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/restapi_windycall.svg" alt="Wind meter conditions for website" />
+<img class="small" src="https://idratherbewritingmedia.com/images/api/restapi_windycall.svg" alt="Wind meter conditions for website" />
 {% endif %}
 
 You don't have your own meteorological service, so you'll need to make some calls out to a weather service to get this information. Then you will present that information to users.
@@ -34,11 +34,11 @@ To give you an idea of the end goal, here's a sample: [idratherbewriting.com/lea
 
 Click the **Check wind conditions** button to see wind and temperature details. When you request this data, a call is made to the [OpenWeatherMap API](https://openweathermap.org/api). The API retrieves the information, and some JavaScript code prints the information on the page.
 
-<a target="\_blank" href="https://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html" class="noExtIcon"><img src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/checkwindconditions.png" class="medium" /></a>
+<a target="\_blank" href="https://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/checkwindconditions.png" class="medium" /></a>
 
 The above example is extremely simple. You could also build an attractive interface like this:
 
-<a class="noCrossRef" href="https://weather.yahoo.com/united-states/california/santa-clara-2488836/" class="noExtIcon"><img class="medium" src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/attractiveinterfaceweather.png" alt="Sample weather interface" /></a>
+<a class="noCrossRef" href="https://weather.yahoo.com/united-states/california/santa-clara-2488836/" class="noExtIcon"><img class="medium" src="https://idratherbewritingmedia.com/images/api/attractiveinterfaceweather.png" alt="Sample weather interface" /></a>
 
 The concept and general techniques are more or less the same. Behind the scenes, the code makes requests to a weather service API and then displays the returned information in a stylized user interface.
 
@@ -60,7 +60,7 @@ Before diving too far down in the OpenWeatherMap API, let's look at another weat
 4. Click **Data Endpoints**.
 3. Click **Reference** (in the sidebar) and then click **Endpoints**. (Or go [here](https://www.aerisweather.com/support/docs/api/reference/endpoints/) directly.)
 
-	<a class="noCrossRef" href="http://www.aerisweather.com/support/docs/api/reference/endpoints/" class="noExtIcon"><img class="medium" src="https://s3-us-west-1.amazonaws.com/idratherbewritingmedia.com/images/api/aerisendpoints.png" alt="Aeris Endpoints" /></a>
+	<a class="noCrossRef" href="http://www.aerisweather.com/support/docs/api/reference/endpoints/" class="noExtIcon"><img class="medium" src="https://idratherbewritingmedia.com/images/api/aerisendpoints.png" alt="Aeris Endpoints" /></a>
 
 4. In the list of endpoints, click **[observations](https://www.aerisweather.com/support/docs/api/reference/endpoints/observations/)**.
 5. Browse the type of information that is available through this endpoint. Does this endpoint provide information about wind and temperature that would work for our sample development scenario?
