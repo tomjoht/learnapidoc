@@ -229,7 +229,7 @@ rest_api:
 
 sdk:
   term: SDK
-  def: "Software development kit. Developers often create an SDK to accompany a REST API. The SDK helps developers implement the API using a specific language, such as Java or PHP. See [SDKs and sample apps](docapis_sdks_and_sample_apps.html) for more details."
+  def: "Software development kit. Developers often create an SDK to accompany a REST API. The SDK helps developers implement the API using a specific language, such as Java or PHP. See [SDKs](docapis_sdks.html) for more details."
 
 smartbear:
   term: Smartbear
@@ -253,7 +253,7 @@ swagger:
 
 swagger_codegen:
   term: Swagger Codegen
-  def: "Generates client SDK code for a lot of different platforms (such as Java, JavaScript, Scala, Python, PHP, Ruby, Scala, and more). The client SDK code helps developers integrate your API on a specific platform and provides for more robust implementations that might include more scaling, threading, and other necessary code. In general, SDKs are toolkits for implementing the requests made with an API. Swagger Codegen generates the client SDKs in nearly every programming language. See [Swagger Codegen](https://swagger.io/swagger-codegen/) for more information. See also [SDKs and sample apps](docapis_sdks_and_sample_apps.html)."
+  def: "Generates client SDK code for a lot of different platforms (such as Java, JavaScript, Scala, Python, PHP, Ruby, Scala, and more). The client SDK code helps developers integrate your API on a specific platform and provides for more robust implementations that might include more scaling, threading, and other necessary code. In general, SDKs are toolkits for implementing the requests made with an API. Swagger Codegen generates the client SDKs in nearly every programming language. See [Swagger Codegen](https://swagger.io/swagger-codegen/) for more information. See also [SDKs](docapis_sdks.html)."
 
 swagger_editor:
   term: Swagger Editor

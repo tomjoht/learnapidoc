@@ -57,7 +57,7 @@ The following diagram shows the general model of a REST API:
 
 As you can see, there's a request and a response between a client to the API server. The client and server can be based in any language, but HTTP is the protocol used to transport the message. This request-and-response pattern is fundamentally how REST APIs work.
 
-Each programming language that makes the request will have a different way of submitting a web request and parsing the response in its language. These language-specific functions for making requests and parsing responses aren't part of the REST API (though they might be provided in an [accompanying SDK](docapis_sdks_and_sample_apps.html)). The REST API is language agnostic and handles incoming and outgoing information across HTTP, just like the web.
+Each programming language that makes the request will have a different way of submitting a web request and parsing the response in its language. These language-specific functions for making requests and parsing responses aren't part of the REST API (though they might be provided in an [accompanying SDK](docapis_sdks.html)). The REST API is language agnostic and handles incoming and outgoing information across HTTP, just like the web.
 
 ## SOAP APIs are the predecessor to REST APIs
 

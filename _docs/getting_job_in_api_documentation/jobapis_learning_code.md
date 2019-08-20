@@ -196,7 +196,7 @@ However, take consolation in the fact that your job is not to code but rather to
 
 For more information about working with code, see these two topics:
 
-* [SDKs and sample apps](docapis_sdks_and_sample_apps.html)
+* [SDKs](docapis_sdks.html)
 * [Code samples and tutorials](docapis_codesamples_bestpractices.html)
 
 Let's look at one more topic in this jobs section: [Locations for API doc writer jobs](jobapis_location.html).

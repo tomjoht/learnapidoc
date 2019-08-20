@@ -19,7 +19,7 @@ The following are common conceptual topics commonly found in API documentation:
 * [Status and error codes](docapis_doc_status_codes.html)
 * [Rate limiting and thresholds](docapis_rate_limiting_and_thresholds.html)
 * [Code samples and tutorials](docapis_codesamples_bestpractices.html)
-* [SDKs and sample apps](docapis_sdks_and_sample_apps.html)
+* [SDKs](docapis_sdks.html)
 * [Quick reference guide](docapis_doc_quick_reference.html)
 * [API Glossary](docapis_glossary_section.html)
 * [API best practices](docapis_best_practices_with_api.html)

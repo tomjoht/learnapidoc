@@ -3,10 +3,10 @@ title: API code tutorials
 permalink: /docapis_codesamples_bestpractices.html
 keywords:
 course: "Documenting REST APIs"
-weight: 6.6
+weight: 7.6
 sidebar: docapis
-section: docconceptual
-path1: /docconceptual.html
+section: docapiscode
+path1: /doccode.html
 ---
 
 Developer documentation tends to include a lot of code samples. These code samples might not be included with the endpoints you document, but as you create tasks and more sophisticated workflows about how to use the API to accomplish a variety of goals, you'll end up leveraging different endpoints and showing how to address different scenarios. Code tutorials are a crucial part of your user guide.

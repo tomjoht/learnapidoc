@@ -129,7 +129,7 @@ Although these code generators are probably helpful, they may or may not work fo
 
 ## SDKs provide tooling for APIs
 
-A lot of times, developers will create an [SDK (software development kit)](docapis_sdks_and_sample_apps.html) that accompanies a REST API. The SDK helps developers implement the API using specific tooling. While APIs are language agnostic, SDKs are language specific.
+A lot of times, developers will create an [SDK (software development kit)](docapis_sdks.html) that accompanies a REST API. The SDK helps developers implement the API using specific tooling. While APIs are language agnostic, SDKs are language specific.
 
 For example, at one company I worked at, we had both a REST API and a JavaScript SDK. Because JavaScript was the target language developers were working in, the company developed a JavaScript SDK to make it easier to work with REST using JavaScript. You could submit REST calls through the JavaScript SDK, passing a number of parameters relevant to web designers.
 

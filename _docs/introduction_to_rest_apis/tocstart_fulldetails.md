@@ -4,6 +4,7 @@ permalink: /tocstart_fulldetails.html
 course: "Documenting REST APIs"
 sidebar: docapis
 progress: false
+excerpt: table of contents
 ---
 <div id="navig">
 <ul id="docnavsidebar" class="docnav">

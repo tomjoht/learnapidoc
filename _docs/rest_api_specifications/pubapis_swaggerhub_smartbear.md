@@ -87,7 +87,7 @@ Few tech comm tools support inline annotations like this, and it wouldn't be pos
 
 Another benefit to SwaggerHub is the ability to auto-generate the needed client or server code from your specification. Client SDKs provide the tooling needed to make API requests in specific programming languages (like Java or Ruby).
 
-In the upper-right corner, click the down-arrow and select **Client** or **Server**. Users have access to generate [client and server SDKs](docapis_sdks_and_sample_apps.html) in more than 30 formats.
+In the upper-right corner, click the down-arrow and select **Client** or **Server**. Users have access to generate [client and server SDKs](docapis_sdks.html) in more than 30 formats.
 
 {% include course_image.html size="large" filename="swaggerhub_download" ext_print="png" ext_web="png" alt="Client and server SDK export capabilities" caption="Client and server SDK export capabilities" %}
 
@@ -95,7 +95,7 @@ For example, suppose a user is implementing your REST API in a Java application.
 
 Some API documentation sites look impressive for showing implementations in various programming languages. SwaggerHub takes those programming languages and multiplies them tenfold to provide every possible output a user could want.
 
-The output includes more than a simple code sample showing how to call a REST endpoint in that language. The output includes a whole SDK that includes the various nuts and bolts of an implementation in that language. (For more information on SDKs, see [SDKs and sample apps](docapis_sdks_and_sample_apps.html).)
+The output includes more than a simple code sample showing how to call a REST endpoint in that language. The output includes a whole SDK that includes the various nuts and bolts of an implementation in that language. (For more information on SDKs, see [SDKs](docapis_sdks.html).)
 
 Providing this code speeds implementation for developers and helps you scale your language-agnostic REST API to a greater variety of platforms and users, reducing the friction in adoption.
 

@@ -61,7 +61,7 @@
              <td markdown="span"></td>
           </tr>
           <tr>
-             <td markdown="span">[SDKs and sample apps](docapis_sdks_and_sample_apps.html)</td>
+             <td markdown="span">[SDKs](docapis_sdks.html)</td>
              <td markdown="span"></td>
              <td markdown="span"></td>
              <td markdown="span"></td>

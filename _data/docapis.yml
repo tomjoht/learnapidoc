@@ -210,12 +210,6 @@ folders:
   - title: API rate limiting and thresholds
     jurl: /docapis_rate_limiting_and_thresholds.html
 
-  - title: API code tutorials
-    jurl: /docapis_codesamples_bestpractices.html
-
-  - title: SDKs and sample apps
-    jurl: /docapis_sdks_and_sample_apps.html
-
   - title: API quick reference
     jurl: /docapis_doc_quick_reference.html
 
@@ -242,6 +236,15 @@ folders:
   - title: Five strategies for documenting code
     jurl: /docapis_code_strategies.html
 
+  - title: API code tutorials
+    jurl: /docapis_codesamples_bestpractices.html
+
+  - title: SDKs (software development kits)
+    jurl: /docapis_sdks.html
+
+  - title: Sample apps
+    jurl: /docapiscode.html
+
 - title: "VIII: Publishing API docs"
   jurl: /publishingapis.html
   description: "API documentation often follows a docs-as-code workflow, where the tools to author and publish documentation align closely with the same tools developers use to write, manage, build, and deploy code. Docs-as-code involves using lightweight formats such as Markdown, collaborating through Git or other version control, building your doc site with a static site generator, and deploying it through a continuous build model, where the build happens on the server when you push commits to a particular branch."
@@ -262,8 +265,11 @@ folders:
   - title: More about Markdown
     jurl: /pubapis_markdown.html
 
-  - title: Version control systems (such as Git)
+  - title: Version control systems (e.g., Git)
     jurl: /pubapis_version_control.html
+
+  - title: Following agile scrum with documentation projects
+    jurl: /pubapis_agile_scrum_for_docs.html
 
   - title: "Activity: Manage content in a GitHub wiki"
     jurl: /pubapis_github_wikis.html

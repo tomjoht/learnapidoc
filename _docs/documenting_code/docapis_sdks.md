@@ -1,12 +1,20 @@
 ---
-title: SDKs and sample apps
-permalink: docapis_sdks_and_sample_apps.html
+title: Documenting SDKs
+permalink: docapis_sdks.html
 course: "Documenting REST APIs"
-weight: 6.7
+weight: 7.7
+sidebar: docapis
+section: docapiscode
+path1: /doccode.html
+redirect_from:
+- /learnapidoc/docapis_sdks_and_sample_apps.html
+---
+
+course: "Documenting REST APIs"
+weight: 6.6
 sidebar: docapis
 section: docconceptual
 path1: /docconceptual.html
----
 
 SDKs (software development kits) and sample apps are similar to [code samples and tutorials](docapis_codesamples_bestpractices.html) but are much more extensive and usually involve a whole collection of files that work together as a package or sample app. The SDK might include libraries that you download and incorporate into your application, and can consist of tools, sample apps, and other code.
 

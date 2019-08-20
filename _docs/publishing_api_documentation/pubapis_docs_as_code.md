@@ -38,6 +38,7 @@ Having developers write or contribute to documentation should inform your tool c
 *  **Collaborating with other writers using version control** such as Git to branch, merge, push, and pull updates (rather than collaborating through large content management systems or SharePoint-like check-in/check-out sites).
 *  **Automating the site build process with continuous delivery** to build the web output from the server when you update a particular branch (rather than manually publishing and transferring files from one place to another).
 *  **Running validation checks** using custom scripts to check for broken links, improper terms/styles, and formatting errors (rather than spot checking the content manually).
+*  **Managing docs using processes similar to engineers (e.g., agile scrum)**, such as chunking out doc work in an issue manager (such as JIRA), assigning the issues to bi-weekly sprints, and reporting to stakeholders on the doc work completed (showing demos). (For more on this point, see [Following agile scrum with documentation projects](pubapis_agile_scrum_for_docs.html).)
 
 In short, treating docs like code means to use the same systems, processes, and workflows with docs as you do with programming code.
 
@@ -90,6 +91,10 @@ Further, many static site generators allow you to use scripting logic such as Li
 
 {: .tip}
 To read details about switching to docs as code tools, see [Case study: Switching tools to docs-as-code](pubapis_switching_to_docs_as_code.html).
+
+## Not just tools, but processes too {#processes}
+
+Historically, discussions about docs-as-code have centered on tools rather than processes. But I think a good case can be made for expanding the definition of docs-as-code to involve implementing engineering processes for managing docs as well. By far the most common approach for software development is agile scrum. I expand on this topic at length in [Following agile scrum with documentation projects](pubapis_agile_scrum_for_docs.html).
 
 ## Dealing with more challenging factors
 

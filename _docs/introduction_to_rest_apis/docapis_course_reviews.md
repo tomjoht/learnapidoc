@@ -7,6 +7,7 @@ sidebar: docapis
 section: introtoapis
 path1: /docapis_introtoapis.html
 published: false
+excerpt: Course reviews
 ---
 
 {% if site.format == "web" %}
@@ -44,7 +45,7 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
 {% endif %}
 
 ## Reviews
-{% comment %} got approval for this already {% endcomment %} 
+{% comment %} got approval for this already {% endcomment %}
 ### Amy Constant
 
 > I cannot thank you enough for this site. I started a new job and my role is to create API documentation. While I've created docs for a RESTful API in the past, it's been a while, the industry has changed/matured, and I certainly didn't understand all of the concepts. In addition, I've always worked with a traditional HATs (Frame and then Flare), and I just recently learned about static site generators and markdown. As the new and only writer, I need to figure out my tools and deliverables. THIS SITE HAS BEEN INVALUABLE! Thank you so much.
