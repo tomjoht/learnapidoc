@@ -12,6 +12,9 @@ Just as [doc-as-code tools](pubapis_docs_as_code.html) mirror tools used by soft
 
 Although agile scrum is both loved and hated by engineers, and nearly everyone modifies their implementation of it, this methodology has resonance with engineers because almost all engineering groups loosely follow the same agile scrum process. Agile scrum is an extremely common approach within the software development industry. When tech writers adopt a similar methodology, engineers they're working with better understand the tech writer's processes and workflows.
 
+{: .note}
+At the end of the article, there's a [short survey](#short_survey) to gather your thoughts and feedback.
+
 * TOC
 {:toc}
 
@@ -87,3 +90,20 @@ See these posts on my site for more reading about agile scrum and tech docs:
 * [Tech docs and Agile: Alternatives to integrating into engineering Scrums (Part 2)](https://idratherbewriting.com/2017/08/04/part2_alternatives-to-agile-scrum-for-tech-writers/#what-about-lean)
 * [How can technical writers thrive in agile environments? Event recording and details](https://idratherbewriting.com/2016/09/20/thriving-in-agile-environments-as-technical-writers)
 * [How to apply agile processes to manage your life's projects](https://idratherbewriting.com/2016/01/21/apply-agile-principles-to-personal-projects/)
+
+## Short survey {#short_survey}
+
+I created a short survey to gather your feedback on this article. You can take the survey below and see the [ongoing results here](https://www.questionpro.com/t/PGQoTZe8zY).
+
+
+<script>
+EMBED_PARAMS = {};
+EMBED_PARAMS.surveyID =6805062;
+EMBED_PARAMS.domain ="//www.questionpro.com";
+EMBED_PARAMS.src ="//www.questionpro.com/a/TakeSurvey?tt=VpKn0UBfEIU%3D";
+EMBED_PARAMS.width ="100%";
+EMBED_PARAMS.height = "1200px";
+EMBED_PARAMS.border = "hidden";
+</script>
+<div id="div_6805062"></div>
+<script src="//www.questionpro.com/javascript/embedsurvey.js?version=1"></script>
