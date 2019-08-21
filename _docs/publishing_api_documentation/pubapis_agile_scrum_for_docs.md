@@ -12,8 +12,7 @@ Just as [doc-as-code tools](pubapis_docs_as_code.html) mirror tools used by soft
 
 Although agile scrum is both loved and hated by engineers, and nearly everyone modifies their implementation of it, this methodology has resonance with engineers because so many engineering groups loosely follow the same agile scrum process. Agile scrum is an extremely common approach within the software development industry. When tech writers adopt a similar methodology, engineers they're working with better understand the tech writer's processes and workflows.
 
-{: .note}
-At the end of the article, there's a [short survey](#short_survey) to gather your thoughts and feedback.
+*At the end of the article, there's a [short survey](#short_survey) to gather your thoughts and feedback.*
 
 {: .note}
 Agile scrum isn't the only software development methodology engineers follow. Your engineers might follow a Kanban, Waterfall, DevOps, Rapid Application, or other approach. In fact, even if they're following agile scrum, it will likely be adapted/customized/altered. The general principle here is to adopt a methodology that syncs with the way your company develops software. I've chosen to focus on agile scrum here because it's the most common approach.
