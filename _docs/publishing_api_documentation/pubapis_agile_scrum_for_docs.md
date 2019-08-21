@@ -39,6 +39,8 @@ Despite the advantages of integrating with engineering scrums, there are a few d
 * Most likely you'll have several projects going on at once. If you have to modify your approach to each with a different flavor of agile scrum, then you're own workflow and methodology can get to feel a bit disjointed. For example, if each scrum calculates points differently, has different sprint durations, and has other variations, this inconsistency with your methodology can be tiring.
 * If the engineering team wants you to attend all their scrum meetings but won't treat you as a full-fledged member of the scrum (e.g., no tasks, no points, no demos, etc.), then consider creating your own documentation scrum instead.
 
+{% include random_ad2.html %}
+
 ## Adapting scrum for documentation projects
 
 If it doesn't make sense to join an engineering scrum, you can create your own agile scrum process. My adapted process for managing docs following an agile scrum methodology involves the following steps:
@@ -80,6 +82,8 @@ If it doesn't make sense to join an engineering scrum, you can create your own a
 Without a process for managing tech docs, projects might arrive from seemingly anywhere at random times, assigned to the doc team, with little info or scope or resource allocation. As a result, tech writers can end up in crisis mode, or product owners might have unrealistic expectations about deliverables, etc. Tech writers might get exhausted or feel like they don't have the time or resources to produce the needed quality with docs.
 
 By implementing a more formal process and methodology for managing tech doc projects (specifically, an adaptation of agile scrum), you can avoid this scenario. Additionally, managing and tracking projects this way gives each team member greater visibility and accountability towards the work of documentation.
+
+{% include random_ad.html %}
 
 ## Additional resources
 
