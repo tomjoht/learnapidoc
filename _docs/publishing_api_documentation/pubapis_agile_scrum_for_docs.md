@@ -36,7 +36,7 @@ Despite the advantages of integrating with engineering scrums, there are a few d
 
 * If you're a temporary resource on the project, with a work duration of a month or so only, then it probably doesn't make sense to join the engineering scrum. There's too much onboarding, familiarization with their process, and more.
 * If the scrum is run poorly, such that daily standups last 30+ minutes, and you have multiple agile scrum teams you're integrated with, this can be a real time killer that will drain your bandwidth while giving very little in return.
-* Most likely you'll have several projects going on at once. If you have to modify your approach to each with a different flavor of agile scrum, then you're own workflow and methodology can get to feel a bit disjointed. For example, if each scrum calculates points differently, has different sprint durations, and has other variations, this inconsistency with your methodology can be tiring.
+* Most likely you'll have several projects going on at once. If you have to modify your approach to each with a different flavor of agile scrum, then your own workflow and methodology can get to feel a bit disjointed. For example, if each scrum calculates points differently, has different sprint durations, and has other variations, this inconsistency with your methodology can be tiring.
 * If the engineering team wants you to attend all their scrum meetings but won't treat you as a full-fledged member of the scrum (e.g., no tasks, no points, no demos, etc.), then consider creating your own documentation scrum instead.
 
 {% include random_ad2.html %}
