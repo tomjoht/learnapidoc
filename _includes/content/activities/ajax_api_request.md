@@ -1,4 +1,5 @@
 ## <i class="fa fa-user-circle"></i> Activity: Make the request on a page with AJAX
+{% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 For this activity, you'll use JavaScript to display the API response on a web page. Specifically, you'll use some auto-generated jQuery code from Postman to create the AJAX request.
 

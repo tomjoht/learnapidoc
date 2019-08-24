@@ -94,17 +94,18 @@ JavaScript is one of the most useful and easy languages to become familiar with,
 
 {% include random_ad.html %}
 
-## What you'll need
+## What you'll need {#what_you_need}
 
 Here are a few tools you'll need to do the activities in this course:
 
-* **Text editor**. [Atom editor](https://atom.io/) or [Sublime Text](http://www.sublimetext.com/) are good options, and they work on both Mac and Windows.
-* **Chrome browser**. [Chrome](https://www.google.com/chrome/browser/desktop/index.html) provides a Javascript Console that works well for inspecting JSON, so we'll be using Chrome. [Firefox](https://www.mozilla.org/en-US/firefox/) works well too if you prefer that.
-* **Postman**. [Postman](http://www.getpostman.com/) is an app that allows you to make requests and see responses through a GUI client.
-* **curl**. [curl](http://curl.haxx.se/) is essential for making requests to endpoints from the command line. Mac computers already have curl installed. Windows users should follow the instructions for installing curl [here](http://www.confusedbycode.com/curl/). (Note: Choose one of the "free" versions to install curl.)
-* **Git**. [Git](https://git-scm.com/) is a version control tool developers often use to collaborate on code. For Windows, see [https://gitforwindows.org/](https://gitforwindows.org/) to set up Git and the Git BASH terminal emulator. For Mac, see [Downloading Git](https://git-scm.com/download/mac) and also consider installing [iTerm2](https://iterm2.com/).
+* **Laptop with power cord.** Make sure you bring your computer and charging cord, as we'll be doing various activities.
+* **Text editor**. If you don't already have a favorite text editor, download [Sublime Text](http://www.sublimetext.com/), as works well on both Mac and Windows and is free.
+* **Chrome browser**. [Chrome](https://www.google.com/chrome/browser/desktop/index.html) provides a Javascript Console that works well for inspecting JSON, so we'll be using Chrome.
+* **Postman**. [Postman](http://www.getpostman.com/) is an app that allows you to make requests and see responses through a GUI client. Make sure you download the app and not the Chrome extension.
+* **curl**. [curl](http://curl.haxx.se/) is essential for making requests to endpoints from the command line. Mac and Windows Version 10 computers already have curl installed. If you have an older Windows machine (pre Version 10), download and install curl from [confusedbycode.com/curl](http://www.confusedbycode.com/curl/).
+* **Git**. [Git](https://git-scm.com/) is a version control tool developers often use to collaborate on code. For Windows, see [https://gitforwindows.org/](https://gitforwindows.org/) to set up Git and the Git BASH terminal emulator. For Mac, see [Downloading Git](https://git-scm.com/download/mac).
 * **GitHub account**. [GitHub](https://github.com) will be used for various activities, sometimes to demonstrate the Git workflow and other times as an authentication service for developer tools. If you don't already have a GitHub account, sign up for one.
-* **Stoplight account**. [Stoplight](https://next.stoplight.io/) provides visual modeling tools for working with the OpenAPI specification. Create a Stoplight account using your GitHub credentials. (You don't need the app.)
+* **Stoplight account**. [Stoplight Studio](https://stoplight.io/studio/) provides visual modeling tools for working with the OpenAPI specification. Create a Stoplight account using your GitHub credentials. Download the Mac or Windows app.
 * **OpenWeatherMap API key**. We'll be using the [OpenWeatherMap API](https://openweathermap.org/) for some exercises. It takes a couple of hours for the OpenWeatherMap API key to become active, so it's best if you get the API key ahead of time &mdash; then when you get to the OpenWeatherMap API activities, you'll be all set. To get your (free) OpenWeatherMap API key, go to [https://openweathermap.org/](https://openweathermap.org/). Click **Sign Up** in the top nav bar and create an account. After you sign up, sign in and find your default API key from the developer dashboard. It’s under the API Keys tab. Copy the key into a place you can easily find it.
 
 ## Video recordings
@@ -115,7 +116,7 @@ See my [Upcoming Presentations](https://idratherbewriting.com/presentations/) on
 
 ## Course slides
 
-For the live workshops, I have various slides that cover different sections of this course. If you're a teacher adapting this material for a course on API documentation in a tech comm program, you can clone and modify the slides. See [Course Slides](docapis_course_slides.html) for the links. Basically, you would clone this GitHub repo and copy over the content from the `slides` directory.
+For the live workshops, I have various slides that cover different sections of this course. If you're a teacher adapting this material for a course on API documentation in a tech comm program, you can clone and modify the slides. See [Course Slides](workshop.html) for the links. Basically, you would clone this GitHub repo and copy over the content from the `slides` directory.
 
 The slides use [RevealJS](https://github.com/hakimel/reveal.js/), which is an HTML/CSS/JS framework for slides. The images are single-sourced between the site and the slides, so they'll more likely stay in sync. You can adapt the slides as needed for your lessons.
 

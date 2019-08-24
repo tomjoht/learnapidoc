@@ -1,4 +1,5 @@
 ## <i class="fa fa-user-circle"></i> Activity: Get familiar with the OpenWeatherMap API
+{% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 Let's explore the basic sections in the [OpenWeatherMap API](https://openweathermap.org/api/):
 

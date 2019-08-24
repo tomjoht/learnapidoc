@@ -1,4 +1,5 @@
 ## <i class="fa fa-user-circle"></i> Activity: Assess the conceptual content in 3 API doc sites
+{% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 1.  Go to the [list of 100 API doc sites](pubapis_apilist.html) and identify 3 API doc sites to analyze. The API doc sets could be API documentation sites from your favorite tools or companies, or just API sites you select at random.
 2.  Look through the documentation and identify whether the API documentation site contains each of the following:

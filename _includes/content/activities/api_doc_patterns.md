@@ -1,4 +1,5 @@
 ## <i class="fa fa-user-circle"></i> Activity: Look for common patterns in API doc sites
+{% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 In this activity, identify common patterns in API documentation sites.
 

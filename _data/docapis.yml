@@ -14,11 +14,8 @@ folders:
   - title: Workshop video recordings
     jurl: /docapis_course_videos.html
 
-  - title: Course slides
-    jurl: /docapis_course_slides.html
-
-  - title: "Workshop activities"
-    jurl: /docapis_workshop_activities.html
+  - title: Workshop agenda, slides, activities
+    jurl: /workshop.html
 
   - title: Why I developed this course
     jurl: /docapis_foreword.html

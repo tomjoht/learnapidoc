@@ -1,4 +1,5 @@
 ## <i class="fa fa-user-circle"></i> Activity: Identify your goals with API documentation
+{% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 Identify your goals here and make sure they align with this course. Think about the following questions:
 

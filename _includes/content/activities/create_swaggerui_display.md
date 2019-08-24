@@ -1,4 +1,5 @@
 ## <i class="fa fa-user-circle"></i> Activity: Create a Swagger UI display with an OpenAPI spec document {#create_swaggerui}
+{% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 In this activity, you'll create a Swagger UI display for an OpenAPI specification document. If you're using one of the pre-built OpenAPI files, you can see a demo of what we'll build here: [OpenWeatherMap Swagger UI](https://idratherbewriting.com/learnapidoc/assets/files/swagger/) or [Sunrise/sunset Swagger UI](https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html).
 

@@ -1,4 +1,5 @@
 ## <i class="fa fa-user-circle"></i>  Activity: Make the OpenWeatherAPI request using curl
+{% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 1.  Assuming you completed the exercises in the [Postman tutorial](docapis_postman.html), go back into Postman.
 2.  On any call you've configured, and below the Save button in Postman, click the **Code** link.

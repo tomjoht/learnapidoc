@@ -1,4 +1,5 @@
 ## <i class="fa fa-user-circle"></i> Activity: Explore Swagger UI through the Petstore Demo
+{% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 Let's get some hands-on experience with Swagger UI using the Petstore demo.
 

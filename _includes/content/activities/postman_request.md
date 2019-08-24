@@ -1,4 +1,5 @@
 ## <i class="fa fa-user-circle"></i> Activity: Make requests with Postman
+{% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 ### Make a request
 

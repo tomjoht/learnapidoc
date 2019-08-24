@@ -1,4 +1,5 @@
 ## <i class="fa fa-user-circle"></i> Activity: What's wrong with this API reference topic
+{% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 The following is a sample API reference topic for an endpoint called `surfreport`. There are about 25 things wrong in the topic. A copy of this same content is available in a read-only [Google Doc here](https://docs.google.com/document/d/1LU0QJTDHHKFu9FIC24ZrF1I5HC7mzX86fH0YZ1SUHyo/edit?usp=sharing). In Google Docs, go to **File > Make a Copy** to create your own instance. Then make comments in Google docs to note as many errors as you can find.
 
@@ -7,16 +8,19 @@ The following is a sample API reference topic for an endpoint called `surfreport
 <div class="docSample" markdown="block">
 
 # Surfreport
+{% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 Knowing whether the conditions are optimal for surfing is a necessary detail in every surfer's life. This endpoint includes information about surfing conditions, including the surf height, water temperature, wind, and tide. Also provides an overall recommendation about whether to go surfing. As an added touch, recommendations are expressed in surfer lingo. Surf's up!
 
 ## Endpoints
+{% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 **GET/POST <code>surfreport/{:beachId}</code>**
 
 Gets the surf conditions for a specific beach ID.
 
 ## Parameters
+{% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 <table>
   <tr>
@@ -62,12 +66,14 @@ Gets the surf conditions for a specific beach ID.
 </table>
 
 ## Sample request
+{% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 ```
 https://api.openweathermap.org/data/2.5/surfreport/12345?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&days=1
 ```
 
 ## Sample response
+{% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 ```json
 {
@@ -106,6 +112,7 @@ https://api.openweathermap.org/data/2.5/surfreport/12345?zip=95050&appid=fd4698c
 ```
 
 ## Response definitions
+{% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 The following table describes each item in the response.
 
@@ -193,5 +200,6 @@ The following table describes each item in the response.
 
 
 ## Answers
+{% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 You can view the answer key here: [What's wrong with this topic answer key](whats_wrong_answer_key.html).

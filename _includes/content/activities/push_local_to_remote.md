@@ -1,4 +1,5 @@
 ## <i class="fa fa-user-circle"></i> Activity: Push local changes to the remote
+{% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 1.  In a text editor, open the Markdown file you downloaded in the GitHub repository. You can open the file directly from your terminal with the following command:
 
