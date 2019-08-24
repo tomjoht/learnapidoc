@@ -100,7 +100,7 @@ Here are a few tools you'll need to do the activities in this course:
 
 * **Laptop with power cord.** Make sure you bring your computer and charging cord, as we'll be doing various activities.
 * **Text editor**. If you don't already have a favorite text editor, download [Sublime Text](http://www.sublimetext.com/), as works well on both Mac and Windows and is free.
-* **Chrome browser**. [Chrome](https://www.google.com/chrome/browser/desktop/index.html) provides a Javascript Console that works well for inspecting JSON, so we'll be using Chrome.
+* **Chrome browser**. [Chrome](https://www.google.com/chrome/browser/desktop/index.html) provides a Javascript Console that works well for inspecting JSON, so we'll be using Chrome. Also, in order to read JSON responses more easily in the browser, install the [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en) Chrome extension.
 * **Postman**. [Postman](http://www.getpostman.com/) is an app that allows you to make requests and see responses through a GUI client. Make sure you download the app and not the Chrome extension.
 * **curl**. [curl](http://curl.haxx.se/) is essential for making requests to endpoints from the command line. Mac and Windows Version 10 computers already have curl installed. If you have an older Windows machine (pre Version 10), download and install curl from [confusedbycode.com/curl](http://www.confusedbycode.com/curl/).
 * **Git**. [Git](https://git-scm.com/) is a version control tool developers often use to collaborate on code. For Windows, see [https://gitforwindows.org/](https://gitforwindows.org/) to set up Git and the Git BASH terminal emulator. For Mac, see [Downloading Git](https://git-scm.com/download/mac).

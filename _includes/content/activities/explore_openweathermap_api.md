@@ -5,13 +5,13 @@ Let's explore the basic sections in the [OpenWeatherMap API](https://openweather
 
 1.  Go to [https://openweathermap.org](https://openweathermap.org)
 2.  Click **API** in the top navigation bar.
-2.  In the **Current weather data** section, click the **API Doc** button.
+2.  In the **Current weather data** section, click the **API doc** button.
 
     Get a sense of the information this Current Weather Data API provides. The API calls provide developers with ways to pull information into their applications. In other words, the APIs will provide the data plumbing for the applications that developers build.
 
 3.  Answer the following questions about the Current Weather Data API endpoint:
 
-    * Does the API provide the information we need about temperature, wind speed, wind direction, and current conditions? (Hint: Look at one of the sample API responses by clicking the **Example** link.)
+    * Does the API provide the information we need about temperature, wind speed, wind direction, and current conditions? (Hint: Look at some of the sample API responses by clicking links under "Examples of API calls.")
     * How many different ways can you specify the location for the weather information?
     * What does a sample request look like?
     * How many endpoints does the API have?
