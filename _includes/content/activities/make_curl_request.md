@@ -1,4 +1,5 @@
-## <i class="fa fa-user-circle"></i>  Activity: Make the OpenWeatherAPI request using curl
+{: .activity_subtitle}
+## <i class="fa fa-user-circle"></i> Activity 2d: Make the OpenWeatherAPI request using curl
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 1.  Assuming you completed the exercises in the [Postman tutorial](docapis_postman.html), go back into Postman.

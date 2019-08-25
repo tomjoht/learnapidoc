@@ -10,6 +10,9 @@
 <link rel="stylesheet" href="assets/css/pdf/theme-blue.css" />
 <link rel="stylesheet" href="assets/css/pdf/printstyles.css" />
 
+<style>
+  .activity_subtitle {display: none}
+</style>
 <script>
     Prince.addScriptFunc("datestamp", function() {
         return "PDF last generated: {{ site.time | date: '%B %d, %Y' }}";

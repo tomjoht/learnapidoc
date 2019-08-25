@@ -1,3 +1,6 @@
+{% if page.type == "pdf" %}
+{% include content/activities/{{include.activity}}.md %}
+{% else %}
 <button class="btn btn-{{include.button_type}}" type="button" data-toggle="collapse" data-target="#{{include.activity}}" aria-expanded="false" aria-controls="collapseExample">
 {{include.title}}
 </button>
@@ -7,3 +10,4 @@
 </div>
 </div>
 {% comment %} button types: default, primary, success, info, warning, danger, link. {% endcomment %}
+{% endif %}

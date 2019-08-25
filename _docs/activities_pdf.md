@@ -1,22 +1,12 @@
 ---
-title: Course Workshop -- agenda, slides, activities
-permalink: /workshop.html
-course: "Documenting REST APIs"
-weight: 1.02
-sidebar: docapis
-section: introtoapis
-path1: /docapis_introtoapis.html
-redirect_from:
-- /learnapidoc/docapis_course_slides.html
+title: Activities PDF
+permalink: /activities_pdf.html
+type: pdf
+layout: printpdf
 ---
 
 The workshop agenda, slides, and activities correspond to full-day API workshop. The slide groups mirror the same sections in the course.
 
-{% if site.format == "kindle" or site.format == "pdf" %}
-
-{: .note}
-This content doesn't embed well in print, since it merely contains thumbnail images pointing HTML slide decks. Please go to [https://idratherbewriting.com/learnapidoc/workshop.html](https://idratherbewriting.com/learnapidoc/workshop.html) to view the slide content.
-{% endif %}
 
 {% if site.format == "web" %}
 
@@ -32,13 +22,13 @@ Doors open at 8:00am. Check your name off at the registration table and get a na
 
 **Part I: Introduction to API Documentation**
 
-<a href="/learnapidoc/slides/intro_api_documentation.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/introapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/intro_api_documentation.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/introapidoctitleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 1a: Identify your goals" activity="identify_goals" button_type="info" %}
 
 **Part II: Using an API like a developer**
 
-<a href="/learnapidoc/slides/using_api_like_developer.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/using-api-developer-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/using_api_like_developer.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/using-api-developer-titleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 2a: Explore OpenWeatherMap API" activity="explore_openweathermap_api" button_type="primary" %}
 
@@ -54,11 +44,11 @@ Doors open at 8:00am. Check your name off at the registration table and get a na
 
 Break time
 
-## 10:45am - 12:00pm: Part III + IV (API endpoints and OpenAPI/Swagger)
+## 10:45am - 12:00pm: Part III + IV (API endpoints and OpenAPI/Swagger )
 
 **Part III: Documenting API endpoints**
 
-<a href="/learnapidoc/slides/documenting_api_endpoints.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/documenting-endpoints-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/documenting_api_endpoints.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/documenting-endpoints-titleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 3a: What's wrong with this API reference topic" activity="whats_wrong_with_surfreport" button_type="success" %}
 
@@ -72,7 +62,7 @@ Lunch. Provided in room.
 
 **Part IV: OpenAPI and Swagger**
 
-<a href="/learnapidoc/slides/openapi_and_swagger.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/openapiswaggertitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/openapi_and_swagger.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/openapiswaggertitleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 4a: Explore Swagger UI through the Petstore Demo" activity="explore_swagger_petstore" button_type="info" %}
 
@@ -80,7 +70,9 @@ Lunch. Provided in room.
 
 {% include workshop_button.html title="Activity 4c: Create a SwaggerUI display" activity="create_swaggerui_display" button_type="info" %}
 
+{% comment %}
 {% include workshop_button.html title="Activity 4d: Explore Stoplight" activity="work_with_stoplight" button_type="info" %}
+{% endcomment %}
 
 ## 2:00 - 2:15: Break
 
@@ -88,7 +80,7 @@ Break. Snacks and coffee provided.
 
 ## 2:15pm - 3:30pm: Parts VI and VII (Conceptual topics + Doc'ing code)
 
-<a href="/learnapidoc/slides/conceptual_content_api_docs.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/conceptualcontenttitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/conceptual_content_api_docs.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/conceptualcontenttitleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 6a: Judge conceptual content and decide which is best" activity="conceptual_comparisons" button_type="warning" %}
 
@@ -100,7 +92,7 @@ Break
 
 **Part VII: Publishing API Documentation**
 
-<a href="/learnapidoc/slides/publishing_api_docs.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/publishingapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/publishing_api_docs.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/publishingapidoctitleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 7a: Set up a GitHub wiki" activity="create_github_wiki" button_type="warning" %}
 
@@ -116,15 +108,15 @@ The general workshop ends and we transition into any individual consulting as de
 
 ## Optional section
 
-Optional section if time permits
+Optional section if time permits.
 
 **Part X: Getting an API documentation job and thriving**
 
-<a href="/learnapidoc/slides/getting_job_api_docs.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/gettingajobdsdoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/getting_job_api_docs.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/gettingajobdsdoctitleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
-{% include workshop_button.html title="Activity 8a: Look at API documentation jobs and requirements" activity="look_for_apidoc_jobs" button_type="info" %}
+{% include workshop_button.html title="Activity 10a: Look at API documentation jobs and requirements" activity="look_for_apidoc_jobs" button_type="info" %}
 
-{% include workshop_button.html title="Activity 8b: Find an open-source project" activity="find_open_source_project" button_type="success" %}
+{% include workshop_button.html title="Activity 10b: Find an open-source project" activity="find_open_source_project" button_type="success" %}
 
 
 {% include random_ad.html %}
@@ -159,23 +151,23 @@ ul#markdown-toc::before  {
   }
 
   .main img.large {
-    max-width: 700px
+    width: 700px
   }
 
   .main img.medium {
-    max-width: 600px
+    width: 600px
   }
 
   .main img.small_medium {
-    max-width: 450px;
+    width: 450px;
   }
 
   .main img.small {
-    max-width: 300px;
+    width: 300px;
   }
 
   .main img.tiny {
-    max-width: 200px;
+    width: 200px;
   }
 }
 </style>

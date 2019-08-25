@@ -1,4 +1,5 @@
-## <i class="fa fa-user-circle"></i> Activity: Make an API request on a web page
+{: .activity_subtitle}
+## <i class="fa fa-user-circle"></i> Activity 2e: Make an API request on a web page
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 For this activity, you'll use JavaScript to display the API response on a web page. Specifically, you'll use some auto-generated jQuery code from Postman to create the AJAX request. You'll get the wind speed from the response and print it to the page.
@@ -76,7 +77,7 @@ To create the web page code from scratch:
 3.  Open Postman and go to the Current weather data (`weather`) endpoint that you configured in an earlier activity (see [Submit requests through Postman](docapis_postman.html) for more information).
 4.  Click the **Code** link (below the Save button), and then select **JavaScript > jQuery AJAX**.
 
-    <img src="https://idratherbewritingmedia.com/images/api/postmanjqueryajax.png" class="medium" alt="JavaScript Ajax code snippet" />
+    {% include course_image.html size="small_medium" filename="postmanjqueryajax" ext_print="png" ext_web="png" alt="JavaScript Ajax code snippet" caption="JavaScript Ajax code snippet" %}
 
     The AJAX code looks as follows:
 

@@ -1,3 +1,4 @@
+{: .activity_subtitle}
 ## <i class="fa fa-user-circle"></i> Activity: Assess the conceptual content in 3 API doc sites
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 

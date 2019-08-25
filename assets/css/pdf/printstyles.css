@@ -1,11 +1,11 @@
 
-/*body.print .container {max-width: 650px;}*/
+/*body.print .container {width: 650px;}*/
 
 body {
     font-size:12px;
 }
 
-/*table .table {max-width:650px;}*/
+/*table .table {width:650px;}*/
 table, th, td  {border: 1px solid #dedede;}
 th, td {
     padding: 15px;
@@ -420,14 +420,14 @@ h2.userMapTitle {
   }
 
 div.arrow {
-    max-width: 50px;
+    width: 50px;
     margin-left: 15px;
     margin-right: 15px;
     font-size: 20px;
 }
 
 div.content {
-    max-width: 110px
+    width: 110px
 }
 
 .userMap div.arrow, .userMap div.content {
@@ -497,21 +497,25 @@ figcaption {
 }
 
 img.large {
-  max-width: 700px
+  width: 700px
 }
 
 img.medium {
-  max-width: 600px
+  width: 600px
 }
 
 img.small_medium {
-  max-width: 450px;
+  width: 450px;
 }
 
 img.small {
-  max-width: 300px;
+  width: 300px;
 }
 
 img.tiny {
-  max-width: 200px;
+  width: 200px;
+}
+
+ol ul {
+  margin-bottom: 10px;
 }

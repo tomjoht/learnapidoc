@@ -1,9 +1,10 @@
-## <i class="fa fa-user-circle"></i> Activity: What's wrong with this API reference topic
+{: .activity_subtitle}
+## <i class="fa fa-user-circle"></i> Activity 3a: What's wrong with this API reference topic
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 The following is a sample API reference topic for an endpoint called `surfreport`. There are about 25 things wrong in the topic. A copy of this same content is available in a read-only [Google Doc here](https://docs.google.com/document/d/1LU0QJTDHHKFu9FIC24ZrF1I5HC7mzX86fH0YZ1SUHyo/edit?usp=sharing). In Google Docs, go to **File > Make a Copy** to create your own instance. Then make comments in Google docs to note as many errors as you can find.
 
-<figure><a class="noCrossRef" href="https://docs.google.com/document/d/1LU0QJTDHHKFu9FIC24ZrF1I5HC7mzX86fH0YZ1SUHyo/edit?usp=sharing"><img class="small" src="https://idratherbewritingmedia.com/images/api/google_doc_surf_report.png" /></a><figcaption>Make a copy of this Google doc and make comments on it.</figcaption></figure>
+{% include course_image.html url="https://docs.google.com/document/d/1LU0QJTDHHKFu9FIC24ZrF1I5HC7mzX86fH0YZ1SUHyo/edit?usp=sharing" size="small" filename="google_doc_surf_report" ext_print="png" ext_web="png" alt="Make a copy of this Google doc and make comments on it." caption="Make a copy of this Google doc and make comments on it." %}
 
 Here's the same doc (with problems) displayed on the web:
 

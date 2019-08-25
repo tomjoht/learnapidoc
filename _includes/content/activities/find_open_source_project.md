@@ -1,4 +1,5 @@
-## <i class="fa fa-user-circle"></i> Activity: Find an open-source project with API doc needs
+{: .activity_subtitle}
+## <i class="fa fa-user-circle"></i> Activity 8b: Find an open-source project with API doc needs
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 To find an open-source project with API doc needs:

@@ -1,3 +1,6 @@
+{: .activity_subtitle}
+##  <i class="fa fa-user-circle"></i> Activity 6a: Judge conceptual content and decide which is best
+
 The following are 6 common conceptual topics in API documentation. For each topic, examine the three examples and decide which one is best.
 
 **API overview**

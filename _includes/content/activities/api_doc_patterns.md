@@ -1,3 +1,4 @@
+{: .activity_subtitle}
 ## <i class="fa fa-user-circle"></i> Activity: Look for common patterns in API doc sites
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 

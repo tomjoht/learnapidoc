@@ -1,5 +1,5 @@
 ---
-title: "Activity: Identify your goals"
+title: "Activity 1a: Identify your goals"
 permalink: /docapis_identify_your_goals.html
 course: "Documenting REST APIs"
 weight: 1.31

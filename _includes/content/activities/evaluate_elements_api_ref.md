@@ -1,4 +1,5 @@
-## <i class="fa fa-user-circle"></i> Activity: Evaluate API reference docs for core elements
+{: .activity_subtitle}
+## <i class="fa fa-user-circle"></i> Activity 3b: Evaluate API reference docs for core elements
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 In this activity, you'll review API reference documentation and identify the common elements. To evaluate the API reference docs:

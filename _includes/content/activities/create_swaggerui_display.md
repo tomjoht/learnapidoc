@@ -1,4 +1,5 @@
-## <i class="fa fa-user-circle"></i> Activity: Create a Swagger UI display with an OpenAPI spec document {#create_swaggerui}
+{: .activity_subtitle}
+## <i class="fa fa-user-circle"></i> Activity 4c: Create a Swagger UI display with an OpenAPI spec document {#create_swaggerui}
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 In this activity, you'll create a Swagger UI display for an OpenAPI specification document. If you're using one of the pre-built OpenAPI files, you can see a demo of what we'll build here: [OpenWeatherMap Swagger UI](https://idratherbewriting.com/learnapidoc/assets/files/swagger/) or [Sunrise/sunset Swagger UI](https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html).
@@ -12,7 +13,6 @@ In this activity, you'll create a Swagger UI display for an OpenAPI specificatio
     *  To use a pre-built OpenAPI specification document, you can use the [OpenWeatherMap spec file](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) or the [Sunrise/sunset API spec file](https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/openapi_sunrise_sunset.yml). (Right-click the link and save the YAML file to your desktop.)
 
 2.  Make sure your OpenAPI specification is valid. Paste your OpenAPI specification code into the [Swagger online editor](http://editor.swagger.io/#/) and make sure no warnings appear. The view on the right of the Swagger Editor shows a fully functional Swagger UI display.
-
 3.  Go to the [Swagger UI GitHub project](https://github.com/swagger-api/swagger-ui).
 4.  Click **Clone or download**, and then click **Download ZIP**. Download the files to a convenient location on your computer and extract the files.
 
@@ -72,7 +72,7 @@ CORS security restrictions in Chrome and Firefox prevent you from viewing the Sw
 
     When you install Python, be sure to select the check box that says "Add Python 3.7 to PATH." *This check box isn't selected by default. If you don't select it, your command prompt won't recognize the word "python".*
 
-    {% include course_image.html size="medium" filename="pythonscreenshot" ext_print="png" ext_web="png" alt="Installing Python to PATH" caption="Add Python 3.7 to PATH" %}
+    {% include course_image.html size="small" filename="pythonscreenshot" ext_print="png" ext_web="png" alt="Installing Python to PATH" caption="Add Python 3.7 to PATH" %}
 
 2.  After installing Python, close your command prompt and reopen it.
 3.  In your command prompt, browse to the Swagger UI `dist` directory.

@@ -1,20 +1,29 @@
-## <i class="fa fa-user-circle"></i> Activity: Push local changes to the remote
+{: .activity_subtitle}
+## <i class="fa fa-user-circle"></i> Activity 7c: Push local changes to the remote
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
-1.  In a text editor, open the Markdown file you downloaded in the GitHub repository. You can open the file directly from your terminal with the following command:
-
-    ```bash
-    open Home.md
-    ```
-
-    The file will be opened in the default application associated with that file type. You can also open the file by manually browsing to it and opening it as usual (browsing through Finder or Explorer).
-
-2.  Make a small change to the content and save it. For example, type your name at the top of the document.
+1.  In a text editor, open the Markdown file you downloaded in the GitHub repository.
+2.  Make a small change to the content and save it. For example, type your name below the page title.
 3.  In your terminal, make sure you're in the directory where you downloaded the GitHub project.
 
-    To look at the directories under your current path, type `ls`. Then use `cd {directory name}` to drill into the folder, or `cd ../` to move up a level.
+    To look at the directories under your current path, type `ls` (Mac) or `dir` (Windows). Then use `cd {directory name}` to drill into the folder, or `cd ../` to move up a level.
 
-4.  Add all the files to your staging area:
+4.  See what files have changed:
+
+    ```
+    git status
+    ```
+
+    Git responds:
+
+    ```bash
+    Changes not staged for commit:
+    (use "git add <file>..." to update what will be committed)
+    (use "git checkout -- <file>..." to discard changes in working directory)
+    modified:   Home.md
+    ```
+
+4.  Add all the files to your staging area. The staging area contains all files that you want added to your next commit:
 
     ```bash
 	  git add .
@@ -61,14 +70,16 @@
     git push
     ```
 
-    If you didn't [set up automatic GitHub authentication](pubapis_github_wikis.html#set-up-automatic-github-authentication), you will be prompted for your GitHub username and password. (Note that your username is your GitHub login ID, such as "jdoe," not your friendly name, such as "John Doe.")
+    Unless you [set up automatic GitHub authentication](pubapis_github_wikis.html#set-up-automatic-github-authentication), you will be prompted for your GitHub username and password. (Note that your username is your GitHub login ID, such as "jdoe," not your friendly name, such as "John Doe.")
 
-    Note that when you type `git push` or `git pull` and don't specify the branch, GitHub uses the default branch from origin. The default branch on GitHub is called `master`. Thus the command actually passed is `git push origin master` (it means this: push these changes to the remote origin repository, in the `master` branch). Some developers prefer to specify the repository and branch to ensure they are interacting with the right repositories and branches.
+    Note that when you type `git push` or `git pull` and don't specify the branch, GitHub uses the default branch from origin. The default branch on GitHub is called `master`. Thus the command actually passed is `git push origin master` (which means "push these changes to the remote origin[al] repository, in the `master` branch"). Some developers prefer to specify the repository and branch to ensure they are interacting with the right repositories and branches.
 
     Your terminal window probably looks something like this:
 
     {% include course_image.html size="medium" filename="terminalupdates" ext_print="png" ext_web="png" alt="Terminal window with git commands" caption="Terminal window with git commands" %}
 
 7.  Now verify that your changes took effect. Browse to your GitHub wiki repository and look to see the changes.
+
+Although there are many options for authoring and publishing tools with developer docs, at their core is a probably a Git workflow. The Git workflow can be more powerful and complex than any authoring tool. Interacting with Git might also be key for interacting with engineering repos to make edits to documentation that appears inside code.
 
 {% if page.workshop_activities == true %}*For more information related to this activity, see [Manage content in a GitHub wiki](pubapis_github_wikis.html).*{% endif %}

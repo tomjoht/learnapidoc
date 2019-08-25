@@ -1,4 +1,5 @@
-## <i class="fa fa-user-circle"></i> Activity: Make requests with Postman
+{: .activity_subtitle}
+## <i class="fa fa-user-circle"></i> Activity 2c: Make requests with Postman
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 ### Make a request
@@ -12,7 +13,7 @@ In this exercise, you'll use Postman to make a request using OpenWeatherMap's [c
 
     * key: `zip` / value: `95050`
     * key: `units` / value: `imperial`
-    * key: `appid`/ value: &lt;insert your own API key&rt;
+    * key: `appid`/ value: &lt;insert your own API key&gt;
 
     For the value for `appid`, use your own API key. (If you didn't [get an API key](docapis_get_auth_keys.html), use [one of the keys here](http://idratherbewriting.site/apikeys).) Your Postman UI should look like this:
 
@@ -37,7 +38,7 @@ In this exercise, you'll use Postman to make a request using OpenWeatherMap's [c
 
     After you create the collection, the Save button will be enabled. Your Postman collection should look something like this:
 
-    <img src="https://idratherbewritingmedia.com/images/api/postmancollectiondialog.png" class="small" alt="Collection dialog box"/>
+    {% include course_image.html size="small" filename="postmancollectiondialog" ext_print="png" ext_web="png" alt="Collection dialog box" caption="Collection dialog box" %}
 
 4.  Click **Save to [collection name]**
 

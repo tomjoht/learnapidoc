@@ -1,4 +1,5 @@
-## <i class="fa fa-user-circle"></i> Activity: Look at API documentation jobs and requirements
+{: .activity_subtitle}
+## <i class="fa fa-user-circle"></i> Activity 8a: Look at API documentation jobs and requirements
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 In this activity, you'll get a sense of the skills needed for the jobs in your location, and then draw up a plan.
@@ -12,6 +13,6 @@ In this activity, you'll get a sense of the skills needed for the jobs in your l
     *  Portfolio with writing samples that include developer documentation
     *  Technical knowledge related to developer domain
     *  Experience writing developer documentation
-7.  Make a plan for how you'll match up your portfolio, tech knowledge, and experience related to what these job descriptions are asking for. You might need to dedicate more time to the [open-source documentation project](docapis_find_open_source_project.html) that you identified earlier.
+7.  Make a plan for how you'll match up your portfolio, tech knowledge, and experience related to what these job descriptions are asking for. You might need to dedicate more time to an [open-source documentation project](docapis_find_open_source_project.html) to build up the needed skills.
 
 {% if page.workshop_activities == true %}*For more information related to this activity, see [Locations for API doc writer jobs](jobapis_location.html).*{% endif %}

@@ -1,3 +1,8 @@
+{: .activity_subtitle}
+## <i class="fa fa-user-circle"></i> Activity: Documenting Code
+{% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
+
+
 **API code samples and tutorials**
 * [PI API](https://www.projectinsight.net/api/rest-api-code-samples)
 * [Stripe](https://stripe.com/docs/checkout/php)

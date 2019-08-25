@@ -1,4 +1,5 @@
-## <i class="fa fa-user-circle"></i> Activity: Get an OpenWeatherMap API key {#openweathermap_apikey}
+{: .activity_subtitle}
+## <i class="fa fa-user-circle"></i> Activity 2b: Get an OpenWeatherMap API key {#openweathermap_apikey}
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 To get an API key for the OpenWeatherMap API:
