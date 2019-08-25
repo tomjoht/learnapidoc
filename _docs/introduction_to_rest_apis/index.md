@@ -106,8 +106,11 @@ Here are a few tools you'll need to do the activities in this course:
 * **Git**. [Git](https://git-scm.com/) is a version control tool developers often use to collaborate on code. For Windows, see [https://gitforwindows.org/](https://gitforwindows.org/) to set up Git and the Git BASH terminal emulator. For Mac, see [Downloading Git](https://git-scm.com/download/mac).
 * **GitHub account**. [GitHub](https://github.com) will be used for various activities, sometimes to demonstrate the Git workflow and other times as an authentication service for developer tools. If you don't already have a GitHub account, sign up for one.
 * **Python.** [Python](https://www.python.org/downloads/) will be used to create a local test server to run Swagger UI. Installation of Python is only needed on Windows (Macs have Python already.) When you install Python, be sure to select the check box that says "Add Python 3.7 to PATH."
-* **Stoplight account**. [Stoplight Studio](https://stoplight.io/studio/) provides visual modeling tools for working with the OpenAPI specification. Create a Stoplight account using your GitHub credentials. Download the Mac or Windows app.
 * **OpenWeatherMap API key**. We'll be using the [OpenWeatherMap API](https://openweathermap.org/) for some exercises. It takes a couple of hours for the OpenWeatherMap API key to become active, so it's best if you get the API key ahead of time &mdash; then when you get to the OpenWeatherMap API activities, you'll be all set. To get your (free) OpenWeatherMap API key, go to [https://openweathermap.org/](https://openweathermap.org/). Click **Sign Up** in the top nav bar and create an account. After you sign up, sign in and find your default API key from the developer dashboard. It’s under the API Keys tab. Copy the key into a place you can easily find it.
+
+{% comment %}
+* **Stoplight account**. [Stoplight Studio](https://stoplight.io/studio/) provides visual modeling tools for working with the OpenAPI specification. Create a Stoplight account using your GitHub credentials. Download the Mac or Windows app.
+{% endcomment %}
 
 ## Video recordings
 

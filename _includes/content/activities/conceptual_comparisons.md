@@ -7,7 +7,8 @@ The following are 6 common conceptual topics in API documentation. For each topi
 
 * [Box](https://developer.box.com/docs/overview)
 * [Hootsuite](https://developer.hootsuite.com/docs/the-hootsuite-platform)
-* [PB Shipping](https://shipping.pitneybowes.com/overview.html)
+* [Watson Assistant](https://cloud.ibm.com/docs/services/assistant?topic=assistant-index#index)
+{% comment %} * [PB Shipping](https://shipping.pitneybowes.com/overview.html) {% endcomment %}
 
 **API getting started**
 * [Parse](https://docs.parseplatform.org/parse-server/guide/)

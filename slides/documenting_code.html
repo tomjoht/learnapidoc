@@ -48,11 +48,6 @@ slide_title: "Conceptual content in API docs"
           <img src="https://idratherbewritingmedia.com/images/api/nonref_overview.svg"/>
         </section>
 
-        <section>
-          <h3>Addressing the "why"</h3>
-          <blockquote>"Startups fail when they are not solving a market problem. We were not solving a large enough problem that we could universally serve with a scalable solution. We had great technology, great data ..., great reputation as a thought leader, great expertise, great advisors, etc, but what we didn’t have was technology or business model that solved a pain point in a scalable way." &mdash; <small>Treehouse Logic, <a href="https://www.cbinsights.com/research/startup-failure-reasons-top/">The Top 20 Reasons Startups Fail</a></small></blockquote>
-        </section>
-
             <section>
               <h3>Example 1: Box</h3>
               <a href="https://developer.box.com/docs/overview"><img src="https://idratherbewritingmedia.com/images/api/boxoverview.png"/></a>
@@ -73,15 +68,10 @@ slide_title: "Conceptual content in API docs"
             <a href="https://shipping.pitneybowes.com/overview.html"><img src="https://idratherbewritingmedia.com/images/api/pbshipping.png"/></a>
           </section>
 {% endcomment %}
-
-<section>
-  <h3>Key principles</h3>
-  <ul>
-    <li>Don't assume everyone already knows the who, what, why, where, and how of your API</li>
-    <li>Provide high-level details re workflows, authentication, endpoints, etc. </li>
-    <li>Link to your Getting Started topic</li>
-  </ul>
-  </section>
+          <section>
+            <h3>Address the "why"</h3>
+            <blockquote>“Startups fail when they are not solving a market problem. We were not solving a large enough problem that we could universally serve with a scalable solution. We had great technology, great data ..., great reputation as a thought leader, great expertise, great advisors, etc, but what we didn’t have was technology or business model that solved a pain point in a scalable way.” &mdash; <small>Treehouse Logic, <a href="https://www.cbinsights.com/research/startup-failure-reasons-top/">The Top 20 Reasons Startups Fail</a></small></blockquote>
+          </section>
 
         </section>
 
@@ -91,9 +81,6 @@ slide_title: "Conceptual content in API docs"
           <img src="https://idratherbewritingmedia.com/images/api/nonref_gettingstarted.svg"/></a>
         </section>
 
-        <section><h3>Compare with Hello World tutorials</h3>
-        <img src="https://idratherbewritingmedia.com/images/api/timetohelloworld.svg" />
-      </section>
 
         <section>
           <h3>Example 1: Parse</h3>
@@ -107,14 +94,9 @@ slide_title: "Conceptual content in API docs"
           <h3>Example 3: Google</h3>
           <a href="https://developers.google.com/adsense/management/getting_started"><img src="https://idratherbewritingmedia.com/images/api/adsensegettingstarted.png"/></a>
         </section>
-        <section>
-          <h3>Key principles</h3>
-          <ul>
-            <li>Define the simplest possible end-to-end steps to get started &mdash; link out to more details</li>
-            <li>Simplify account setup or other required assets or configurations</li>
-          </ul>
-          </section>
-
+        <section><h3>Compare with Hello World tutorials</h3>
+        <img src="https://idratherbewritingmedia.com/images/api/timetohelloworld.svg" />
+      </section>
       <!-- <section>
         <h3>Example 3: Twitter example</h3>
         <a href="https://developer.twitter.com/en/docs/basics/getting-started"><img src="https://idratherbewritingmedia.com/images/api/twittergettingstarted.png"/></a>
@@ -135,6 +117,7 @@ slide_title: "Conceptual content in API docs"
       ));
     }(window, document, "\_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
   </script>
+
         </section>
       </section>
 
@@ -142,20 +125,6 @@ slide_title: "Conceptual content in API docs"
         <h2>API authentication and authorization</h2>
         <section>
         <img src="https://idratherbewritingmedia.com/images/api/nonref_authentication.svg"/>
-      </section>
-      <section>
-        <h3>API Key</h3>
-        <img class="shortened" src="https://idratherbewritingmedia.com/images/api/nonref-docs-preso_apikey.svg"/></a><figcaption>
-      </section>
-
-      <section>
-        <h3>HMAC</h3>
-        <img class="shortened" src="https://idratherbewritingmedia.com/images/api/restapi_hmac.svg"/>
-      </section>
-
-      <section>
-        <h3>OAuth</h3>
-        <img src="https://idratherbewritingmedia.com/images/api/restapi_oauth.svg"/>
       </section>
         <section>
           <h3>Example 1: Sendgrid</h3>
@@ -176,15 +145,20 @@ slide_title: "Conceptual content in API docs"
           <h3>Example 4: Dropbox</h3>
           <a href="https://www.dropbox.com/developers/reference/oauth-guide"><img src="https://idratherbewritingmedia.com/images/api/dropbox_authentication.png"/></a>
         </section> -->
+        <section>
+          <h3>API Key</h3>
+          <img class="shortened" src="https://idratherbewritingmedia.com/images/api/nonref-docs-preso_apikey.svg"/></a><figcaption>
+        </section>
 
         <section>
-          <h3>Key principles</h3>
-          <ul>
-            <li>Don't include unnecessary details about how the authorization works</li>
-            <li>Provide a code sample</li>
-            <li>Describe correct usage &mdash; such as public versus private tokens in client-side code</li>
-          </ul>
-          </section>
+          <h3>HMAC</h3>
+          <img class="shortened" src="https://idratherbewritingmedia.com/images/api/restapi_hmac.svg"/>
+        </section>
+
+        <section>
+          <h3>OAuth</h3>
+          <img src="https://idratherbewritingmedia.com/images/api/restapi_oauth.svg"/>
+        </section>
       </section>
 
       <section>
@@ -193,10 +167,8 @@ slide_title: "Conceptual content in API docs"
         <img src="https://idratherbewritingmedia.com/images/api/nonref_statuscodes.svg"/>
       </section>
 
-
       <section>
-        <h3>Response header in curl</h3>
-        <pre><code>curl -X GET 'https://api.openweathermap.org/data/2.5/weather?zip=95050&units=imperial&appid=fd4698c940c6d1da602a70ac34f0b147' -I</code></pre>
+        <h3>Response header</h3>
         <pre><code>
 HTTP/1.1 200 OK
 Server: openresty
@@ -212,12 +184,7 @@ Access-Control-Allow-Methods: GET, POST
       </section>
 
       <section>
-        <h3>Headers in Postman</h3>
-      <img src="https://idratherbewritingmedia.com/images/api/postmanheaders.png"/>
-    </section>
-
-      <section>
-        <h3>Example 1: Clearbit</h3>
+        <h3>Example 1: Context.io</h3>
         <a href="https://clearbit.com/docs?python#errors-error-types"><img src="https://idratherbewritingmedia.com/images/api/context_statuscodes.png"/></a>
       </section>
 
@@ -230,16 +197,6 @@ Access-Control-Allow-Methods: GET, POST
         <h3>Example 3: Mailchimp</h3>
         <a href="http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/"><img src="https://idratherbewritingmedia.com/images/api/mailchimp_statuscodes.png"/></a>
       </section>
-
-      <section>
-        <h3>Key principles</h3>
-        <ul>
-          <li>Help users recover from errors</li>
-          <li>Make error messages findable through search</li>
-        </ul>
-        </section>
-
-
   </section>
 
         <section>
@@ -262,15 +219,83 @@ Access-Control-Allow-Methods: GET, POST
           <h3>Example 3: Bitly</h3>
           <a href="http://dev.bitly.com/rate_limiting.html"><img src="https://idratherbewritingmedia.com/images/api/bitlyratelimiting.png"/></a>
         </section>
+        </section>
 
         <section>
-          <h3>Key principles</h3>
-          <ul>
-            <li>Explain how to check current/remaining counts</li>
-            <li>List information by subscription tier</li>
-          </ul>
-          </section>
+          <h2>API code samples and tutorials</h2>
+          <section>
+          <img src="https://idratherbewritingmedia.com/images/api/nonref_codetutorials.svg"/>
         </section>
+
+
+<section>
+  <h3>Example 1: PI API</h3>
+  <a href="https://www.projectinsight.net/api/rest-api-code-samples"><img src="https://idratherbewritingmedia.com/images/api/piapi_code_samples.png"/></a>
+</section>
+
+<section>
+  <h3>Example 2: Stripe</h3>
+  <a href="https://stripe.com/docs/checkout/php"><img src="https://idratherbewritingmedia.com/images/api/stripe_tutorial.png"/></a>
+</section>
+
+<section>
+  <h3>Example 3: Twilio</h3>
+  <a href="https://www.twilio.com/docs/quickstart"><img src="https://idratherbewritingmedia.com/images/api/twiliocodesamples.png"/></a>
+</section>
+        </section>
+
+        <section>
+          <h3>Cover common scenarios</h3>
+              <blockquote>While a developer’s guide should walk a developer through the basic usage of an API and its functionality, it can’t cover every possible use of that API in a coherent way. That is where articles and tutorials come in, to teach developers tangential or specialized uses of an API, like combining it with another service, framework, or API. <small>&mdash;<a href="https://www.programmableweb.com/news/six-pillars-complete-developer-documentation/2011/09/12">The Six Pillars of Complete Developer Documentation</a></small></blockquote>
+        </section>
+
+        <section>
+          <h3>What Twilio found</h3>
+          <a href="https://eventil.com/presentations/pOszD6"><img src="https://idratherbewritingmedia.com/images/api/twiliouserresearch.png"/></a>
+        </section>
+
+        <section>
+          <h3>Core principles for code samples</h3>
+          <ul>
+            <li>Focus on the why, not the what</li>
+            <li>Keep code samples simple</li>
+            <li>Make code samples copy-and-paste friendly</li>
+            <li>Provide a sample in your target language</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>SDKs and sample apps</h2>
+          <section>
+          <img src="https://idratherbewritingmedia.com/images/api/nonref_sdksampleapp.svg"/></a>
+        </section>
+
+
+        <section>
+          <h3>Example 1: SAP SDKs</h3>
+          <a href="https://developers.gigya.com/display/GD/APIs+and+SDKs"><img src="https://idratherbewritingmedia.com/images/api/sap_sdks.png"/></a>
+        </section>
+
+        <section>
+          <h3>Example 2: Paypal</h3>
+          <a href="https://developer.paypal.com/docs/api/quickstart/"><img src="https://idratherbewritingmedia.com/images/api/sdk_paypal.png"/></a>
+        </section>
+
+        <section>
+          <h3>Example 3: Facebook</h3>
+          <a href="https://developers.facebook.com/docs/apis-and-sdks"><img src="https://idratherbewritingmedia.com/images/api/facebok_sdk.png"/></a>
+        </section>
+
+        <section>
+          <h3>Typical patterns with SDK docs</h3>
+          <ul>
+            <li>Roles technical writers play with SDKs</li>
+            <li>Assumed levels of knowledge</li>
+            <li>Auto-generating from OpenAPI</li>
+          </ul>
+        </section>
+      </section>
+
 
       <section>
         <h2>API quick reference</h2>
@@ -294,16 +319,8 @@ Access-Control-Allow-Methods: GET, POST
       </section>
       <section>
         <h3>API quick reference</h3>
-      <a href="https://idratherbewritingmedia.com/images/api/sample_api_diagram.pdf"><img class="shortened" src="https://idratherbewritingmedia.com/images/api/sample_api_diagram.svg"/></a>
+      <a target="_blank" href="https://idratherbewritingmedia.com/images/api/sample_api_diagram.pdf"><img class="shortened" src="https://idratherbewritingmedia.com/images/api/sample_api_diagram2.png"/></a>
     </section>
-
-    <section>
-      <h3>Key principles</h3>
-      <ul>
-        <li>The at-a-glance experience aids comprehension</li>
-        <li>Link the quick reference to the full details</li>
-      </ul>
-      </section>
 
 </section>
 
@@ -330,7 +347,6 @@ Access-Control-Allow-Methods: GET, POST
           <a href="https://sendgrid.com/docs/glossary/"><img src="https://idratherbewritingmedia.com/images/api/sendgrid_glossary.png" /></a>
         </section>
       </section>
-
 {% endcomment %}
         <section>
             <h2>Questions?</h2>

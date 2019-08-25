@@ -12,17 +12,12 @@ redirect_from:
 
 The workshop agenda, slides, and activities correspond to full-day API workshop. The slide groups mirror the same sections in the course.
 
-{% if site.format == "kindle" or site.format == "pdf" %}
-
-{: .note}
-This content doesn't embed well in print, since it merely contains thumbnail images pointing HTML slide decks. Please go to [https://idratherbewriting.com/learnapidoc/workshop.html](https://idratherbewriting.com/learnapidoc/workshop.html) to view the slide content.
-{% endif %}
-
-{% if site.format == "web" %}
-
 * TOC
 {:toc}
 {::options toc_levels="2" /}
+
+{: .tip}
+You can print the activity content as a PDF: [api_workshop_activities.pdf](https://idratherbewritingmedia.com/print/api_workshop_activities.pdf). This might make it easier to follow along on your laptop during the workshop.
 
 ## 8:00am - 9:00am: Registration + breakfast
 
@@ -80,7 +75,9 @@ Lunch. Provided in room.
 
 {% include workshop_button.html title="Activity 4c: Create a SwaggerUI display" activity="create_swaggerui_display" button_type="info" %}
 
+{% comment %}
 {% include workshop_button.html title="Activity 4d: Explore Stoplight" activity="work_with_stoplight" button_type="info" %}
+{% endcomment %}
 
 ## 2:00 - 2:15: Break
 
@@ -130,8 +127,6 @@ Optional section if time permits
 {% include random_ad.html %}
 
 {% include random_ad2.html %}
-
-{% endif %}
 
 <style>
 ul#markdown-toc::before  {
