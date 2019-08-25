@@ -45,8 +45,3 @@ defaults:
       type: docs
     values:
       layout: printpdf
-  -
-    scope:
-      path: "_docs/activities_pdf"
-    values:
-      published: true
