@@ -1,7 +1,7 @@
 ## <i class="fa fa-user-circle"></i> Activity: Edit an existing OpenAPI specification document
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
-Use this simple [Sunrise and sunset times API](https://sunrise-sunset.org/api) to get more familiar with the process of creating an OpenAPI specification file. This Sunrise and sunset times API doesn't require authentication with requests, so it removes some of the more complicated authentication workflows (you can skip the [security object](pubapis_openapi_step6_security_object.html)). In this activity, you'll edit some of the existing values in an OpenAPI specification document that's already written.
+Use this simple [Sunrise and sunset times API](https://sunrise-sunset.org/api) to get more familiar with the process of creating an OpenAPI specification file. This Sunrise and sunset times API doesn't require authentication with requests, so it removes some of the more complicated authentication workflows (the spec file doesn't require the [security object](pubapis_openapi_step6_security_object.html)). In this activity, you'll edit some of the existing values in an OpenAPI specification document that's already written.
 
 To edit the OpenAPI specification file:
 

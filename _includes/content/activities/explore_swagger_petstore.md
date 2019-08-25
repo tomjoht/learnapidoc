@@ -1,20 +1,22 @@
 ## <i class="fa fa-user-circle"></i> Activity: Explore Swagger UI through the Petstore Demo
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
-Let's get some hands-on experience with Swagger UI using the Petstore demo.
+Let's get some hands-on experience with Swagger UI using the Petstore demo. The Petstore demo provides a good example of how the OpenAPI specification can be rendered visually.
 
 1.  Go to the [Swagger Pet Store Demo](https://petstore.swagger.io/).
 
-    As with most Swagger-based outputs, Swagger UI provides a "Try it out" button. To make it work, first you would normally authorize Swagger by clicking **Authorize** and completing the right information required in the Authorization modal. If you want, in the Authorization modal, type any number in the `api_key` field and click **Authorize**. However, the Petstore authorization modal is just for demo purposes. There isn't any real code authorizing those requests, so you can close the Authorization modal.
+    As with most Swagger-based outputs, Swagger UI provides a "Try it out" button. To make it work, you must first authorize Swagger by clicking **Authorize** and entering your API key in the Authorization modal. However, the Petstore authorization modal is just for demo purposes. There isn't any real code authorizing those requests, so you can close the Authorization modal or skip it altogether.
 
     {% include course_image.html url="http://petstore.swagger.io/" size="medium" filename="swaggerui_authorize" ext_print="png" ext_web="png" alt="Authorization modal in Swagger UI" caption="Authorization modal in Swagger UI" %}
 
 2.  Expand the **Pet** endpoint.
-3.  Click **Try it out**. After you click Try it out, the example value in the Request Body field becomes editable.
+3.  Click **Try it out**.
 
     {% include course_image.html url="http://petstore.swagger.io/" size="large" filename="swaggerui_petendpoint" ext_print="png" ext_web="png" alt="Try it out button in Swagger UI" caption="Try it out button in Swagger UI" %}
 
-4.  In the Example Value, change the first `id` value to a unique (and unlikely repeated) whole number. Change the second `name` value to something you'd recognize (your pet's name &mdash; e.g., `Bentley`).
+    After you click Try it out, the example value in the Request Body field becomes editable.
+
+4.  In the example value, change the first `id` value to a unique (and unlikely repeated) whole number. Change the name `doggie` to a pet name you can remember (e.g., `Bentley`).
 5.  Click **Execute**.
 
     {% include course_image.html url="http://petstore.swagger.io/" size="large" filename="swaggerui_execute" ext_print="png" ext_web="png" alt="Executing a sample Petstore request" caption="Executing a sample Petstore request" %}

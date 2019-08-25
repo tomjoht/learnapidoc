@@ -54,7 +54,7 @@ Doors open at 8:00am. Check your name off at the registration table and get a na
 
 Break time
 
-## 10:45am - 12:00pm: Part III (API endpoints)
+## 10:45am - 12:00pm: Part III + IV (API endpoints and OpenAPI/Swagger )
 
 **Part III: Documenting API endpoints**
 
@@ -68,7 +68,7 @@ Break time
 
 Lunch. Provided in room.  
 
-## 1:00pm - 2:00pm: Part IV (OpenAPI and Swagger)
+## 1:00pm - 2:00pm: Part IV continued (OpenAPI and Swagger)
 
 **Part IV: OpenAPI and Swagger**
 
