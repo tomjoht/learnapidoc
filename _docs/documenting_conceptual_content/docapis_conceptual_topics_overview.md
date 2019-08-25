@@ -18,10 +18,8 @@ The following are common conceptual topics commonly found in API documentation:
 * [Authentication and authorization requirements](docapis_more_about_authorization.html)
 * [Status and error codes](docapis_doc_status_codes.html)
 * [Rate limiting and thresholds](docapis_rate_limiting_and_thresholds.html)
-* [Code samples and tutorials](docapis_codesamples_bestpractices.html)
-* [SDKs](docapis_sdks.html)
 * [Quick reference guide](docapis_doc_quick_reference.html)
-* [API Glossary](docapis_glossary_section.html)
+* [API glossary](docapis_glossary_section.html)
 * [API best practices](docapis_best_practices_with_api.html)
 
 Beyond the sections outlined above, you might want to include other tasks and tutorials specific to your API, based on what you expect your users to do and the business scenarios for which they'll use your API.

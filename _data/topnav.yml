@@ -10,6 +10,8 @@ navbar_singleitems:
     url: contact.html
   - title: Presentations
     url: presentations.html
+  - title: Workshop
+    url: workshop.html
 
 # topnav_dropdowns:
 # - title: Topnav dropdowns

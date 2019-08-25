@@ -67,7 +67,6 @@ Lyft's API overview starts in a similar way, with sections titled "What is Lyft?
 
 IBM Watson Assistant starts off with a brief summary of the service, followed by a high-level diagram of the system and a summary about how to implement it. Including a diagram of your API gives users a good grounding about what to expect, such as the level of complexity and time it will take to incorporate the API.
 
-
 ## <i class="fa fa-user-circle"></i> Activity with API overviews
 
 With the [open-source project you identified](docapis_find_open_source_project.html), identify the API overview. Then answer the following questions:

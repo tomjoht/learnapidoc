@@ -80,11 +80,13 @@ Lunch. Provided in room.
 
 {% include workshop_button.html title="Activity 4c: Create a SwaggerUI display" activity="create_swaggerui_display" button_type="info" %}
 
+{% comment %}
 {% include workshop_button.html title="Activity 4d: Explore Stoplight" activity="work_with_stoplight" button_type="info" %}
+{% endcomment %}
 
 ## 2:00 - 2:15: Break
 
-Break time
+Break. Snacks and coffee provided.
 
 ## 2:15pm - 3:30pm: Parts VI and VII (Conceptual topics + Doc'ing code)
 
@@ -92,10 +94,9 @@ Break time
 
 {% include workshop_button.html title="Activity 6a: Judge conceptual content and decide which is best" activity="conceptual_comparisons" button_type="warning" %}
 
+## 3:30pm - 3:45pm
 
-## 3:30pm - 3:45pm: Break (snacks + coffee)
-
-Break. Snacks and coffee provided.
+Break
 
 ## 3:45 - 4:30pm: Part VIII and IX (Publishing API docs + Native library APIs)
 
