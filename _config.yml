@@ -92,10 +92,10 @@ algolia:
     - _docs/introduction_to_rest_apis/tocstart.html
     - _docs/introduction_to_rest_apis/tocstart_fulldetails.md
 
-defaults:
-
-  -
-    scope:
-      path: "_docs/activities_pdf"
-    values:
-      published: false
+# defaults:
+#
+#   -
+#     scope:
+#       path: "_docs/activities_pdf"
+#     values:
+#       published: false
