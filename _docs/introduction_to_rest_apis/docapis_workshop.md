@@ -83,7 +83,7 @@ Lunch. Provided in room.
 
 Break. Snacks and coffee provided.
 
-## 2:15pm - 3:00pm: Parts VI(Conceptual topics)
+## 2:15pm - 3:00pm: Parts VI (Conceptual topics)
 
 <a href="/learnapidoc/slides/conceptual_content_api_docs.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/conceptualcontenttitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
@@ -91,7 +91,7 @@ Break. Snacks and coffee provided.
 
 ## 3:00pm - 3:30pm: Parts VII (Documenting code)
 
-<a href="/learnapidoc/slides/conceptual_content_api_docs.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/documentingcodethumb.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/documenting_code.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/documentingcodethumb.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 7a: Classify code documentation into one of the five types" activity="classify_doc_code_approach" button_type="primary" %}
 

@@ -9,42 +9,48 @@ slide_title: "Documenting code"
         <section>
             <h1>{{page.slide_title}}</h1>
             <p>
-                <small>By Tom Johnson / <a target="_blank" href="http://twitter.com/tomjohnson">@tomjohnson</a><br/>
+                <small>By Tom Johnson / <a target="_blank" href="https://twitter.com/tomjohnson">@tomjohnson</a><br/>
                 <a target="_blank" href="https://idratherbewriting.com">idratherbewriting.com</a></small><br/><br/>
             <p><small>Slides available at <br/><a target="_blank" href="https://idratherbewriting.com/learnapidoc/slides/documenting_code.html">idratherbewriting.com/learnapidoc/slides/documenting_code.html</a></small></p>
             </p>
         </section>
         <section>
-            <h2>API reference is not a user guide</h2>
-            <p>You need to provide instruction on how to use the reference endpoints in the right order, configuration, and workflow to achieve some particular end.</p>
-            <p>Think of reference endpoints like ingredients in a kitchen; the user guide is the recipe book.</p>
+            <h2>Code tutorials connect the dots</h2>
+            <figure><img src="https://idratherbewritingmedia.com/images/api/nonref_codetutorials.svg"/><figcaption>The user guide connects the dots between all the reference topics </figcaption></figure>
         </section>
 
         <section>
-          <h2>Who writes the user guide?</h2>
-          <img src="https://idratherbewritingmedia.com/images/api/nonref_codetutorials.svg"/>
-          <p>Developers frequently write the reference content but almost never the user guide</p>
+          <h2>Or like baking goods in need of recipes</h2>
+          <figure><a href="https://www.flickr.com/photos/averagejane/2365585979/in/photolist-4B3fia-4hC4fd-5oEdBG-8A5uvG-95ytB6-6bddv5-vHaxv4-edwds7-7sgzC4-7fByeC-YEF8ru-RdD4u-4nVzmu-YrjQ9b-9Uhi61-24XmyhR-H1Mqhb-aB5st5-GeAjcE-cantCG-c8EDcm-4B3f84-7X6W3d-b3Bz9M-RWZnmn-9p1jHd-9GcPH-6jYHQe-oxfts-TS47xE-3Ke2jP-6a94eP-77aBub-4hy8jK-aCiZBY-a7wRsY-68kkvp-9oXdXD-DGJQFX-34zzen-9p1iCU-KiWz-dTygcL-4wQqcN-4TgA4t-astsmn-4wQpTJ-prNxYX-5PHiu5-wZmnKo"><img src="https://idratherbewritingmedia.com/images/api/cupboards.jpg" class="shortened" alt="Baking goods" /></a><figcaption><div style="margin-top:-10px; font-size:16px">(Photo from Celeste Lindell on Flickr, CC 2.0)</div></figcaption></figure>
           </section>
 
         <section>
-          <h3>Reference content alone is incomplete</h3>
+          <h2>Reference content alone is incomplete</h2>
               <blockquote>While a developer’s guide should walk a developer through the basic usage of an API and its functionality, it can’t cover every possible use of that API in a coherent way. That is where articles and tutorials come in, to teach developers tangential or specialized uses of an API, like combining it with another service, framework, or API. <small>&mdash;<a href="https://www.programmableweb.com/news/six-pillars-complete-developer-documentation/2011/09/12">The Six Pillars of Complete Developer Documentation</a></small></blockquote>
         </section>
+        <section>
+          <h2>Who writes the user guide?</h2>
+          <p>Developers frequently write the reference content but almost never write the user guide ... because the user guide is much, much harder to write.</p>
+          </section>
 
         <section>
           <h2>What research tells us about code documentation</h2>
+          <ul>
+            <li><a href="https://idratherbewriting.com/learnapidoc/docapiscode_research_on_documenting_code.html#when-not-to-comment-questions-and-tradeoffs-with-api-documentation-for-c-projects">"When Not to Comment: Questions and Tradeoffs with API Documentation for C++ Projects" by Head et al</a></li>
+            <li><a href="https://idratherbewriting.com/learnapidoc/docapiscode_research_on_documenting_code.html#how-developers-use-api-documentation-an-observation-study">"How Developers Use API Documentation: An Observation Study" by Meng et al</a></li>
+            </ul>
           </section>
 
           <section>
-            <h3>What Twilio found</h3>
+            <h2>Twilio's research with code samples</h2>
             <a href="https://eventil.com/presentations/pOszD6"><img src="https://idratherbewritingmedia.com/images/api/twiliouserresearch.png"/></a>
           </section>
 
           <section>
             <h2>Five strategies for documenting code</h2>
             <ul>
-              <li>Approach 1: Separate the “how” into inline comments, the “why” into external docs</li>
-              <li>Approach 2: Juxtaposed commentary in a third column</li>
+              <li>Approach 1: Put "how" inline, "why" external</li>
+              <li>Approach 2: Juxtapose commentary in third column</li>
               <li>Approach 3: The Lego approach</li>
               <li>Approach 4: The Nautilus approach</li>
               <li>Approach 5: Interactive browser experiences</li>
@@ -52,14 +58,18 @@ slide_title: "Documenting code"
             </section>
 
             <section>
-              <h2>Approach 2: Juxtaposed commentary</h2>
+              <h2>Approach 1: Put "how" inline, "why" external</h2>
+            <a href="https://stripe.com/docs/payments/checkout/client"><img src="https://idratherbewritingmedia.com/images/api/stripecodeexample.png" alt="Stripe code example"/></a>
+              </section>
+
+            <section>
+              <h2>Approach 2: Juxtapose commentary</h2>
             <a href="https://www.twilio.com/docs/authy/tutorials/account-verification-java-servlets?code-language=Java&code-sample=code-verify-an-authy-code-7&code-sdk-version=default#sending-a-token-on-account-creation"><img src="https://idratherbewritingmedia.com/images/api/twiliocodedocexample1.png" alt="Twilio's approach"/></a>
               </section>
 
         <section>
           <h2>Approach 3: The Lego Approach</h2>
           <a href="https://developer.ebay.com/DevZone/shopping/docs/HowTo/PHP_Shopping/PHP_FIA_GUP_Interm_NV_XML/PHP_FIA_GUP_Interm_NV_XML.html#step1"><img src="https://idratherbewritingmedia.com/images/api/ebayshoppingapiexample.png"</a>
-          <small><a href="https://stripe.com/docs/checkout/php">stripe example</a></small>
           </section>
 
           <section>
@@ -68,11 +78,11 @@ slide_title: "Documenting code"
             </section>
 
             <section>
-              <blockquote>When your understanding is small, you learn best when the first lesson imparts information for a small, simple task with traits importantly akin to the first nautilus chambers.… the small chambers follow the same basic plan as the bigger chambers. If the first tasks a learner masters are fundamentally similar to more complex tasks farther down the syllabus, the student begins to understand and apply those patterns. The sooner newbies learn to “think about things the right way,” the sooner they “get it..." &mdash; Paul Gustafson, <a href="http://expertsupport.com/2018/09/lessons-from-a-cephalopod/">Lessons from a cephalopod</a></blockquote>
+              <blockquote>When your understanding is small, you learn best when the first lesson imparts information for a small, simple task with traits importantly akin to the first nautilus chambers.… the small chambers follow the same basic plan as the bigger chambers. If the first tasks a learner masters are fundamentally similar to more complex tasks farther down the syllabus, the student begins to understand and apply those patterns. The sooner newbies learn to "think about things the right way," the sooner they "get it..." &mdash; Paul Gustafson, <a href="http://expertsupport.com/2018/09/lessons-from-a-cephalopod/">Lessons from a cephalopod</a></blockquote>
 </section>
 
         <section>
-          <h3>How would you teach painting?</h3>
+          <h3>How would you teach a new artist to paint this picture?</h3>
           <a href="https://en.wikipedia.org/wiki/Painting#/media/File:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg"><img src="https://idratherbewritingmedia.com/images/api/mona_lisa_painting.jpg" class="shortened" alt="Describing how to paint a painting" /></a>
           </section>
 
@@ -82,17 +92,12 @@ slide_title: "Documenting code"
             </section>
 
           <section>
-            <h2>Approach 5: Interactive browser experiences</h2>
+            <h2>Approach 5: Interactive browsers</h2>
             <a href="https://www.tensorflow.org/tutorials"><img src="https://idratherbewritingmedia.com/images/api/tensorflowruncodenow.png" /></a>
+            </section>
 
         <section>
-          <h2>Activity:</h2>
-          <p>Description</p>
-          <img class="activity_work" src="https://idratherbewritingmedia.com/images/api/activity_work.svg"/>
-          </section>
-
-        <section>
-          <h2>SDKs and sample apps</h2>
+          <h2>SDKs (Software Development Kits)</h2>
           <section>
           <img src="https://idratherbewritingmedia.com/images/api/nonref_sdksampleapp.svg"/></a>
         </section>
@@ -104,12 +109,12 @@ slide_title: "Documenting code"
         </section>
 
         <section>
-          <h3>Example 2: Paypal</h3>
+          <h3>Example 2: Paypal SDKs</h3>
           <a href="https://developer.paypal.com/docs/api/quickstart/"><img src="https://idratherbewritingmedia.com/images/api/sdk_paypal.png"/></a>
         </section>
 
         <section>
-          <h3>Example 3: Facebook</h3>
+          <h3>Example 3: Facebook SDKs</h3>
           <a href="https://developers.facebook.com/docs/apis-and-sdks"><img src="https://idratherbewritingmedia.com/images/api/facebok_sdk.png"/></a>
         </section>
 
