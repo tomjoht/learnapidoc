@@ -239,6 +239,8 @@ In this section, we looked at five approaches to documenting code:
 
 Overall, use the approach that helps empower users with the knowledge for creating their own code.
 
+{% include content/activities/classify_doc_code_approach.md %}
+
 {% comment %}
 ## inline comments
 

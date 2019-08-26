@@ -83,29 +83,33 @@ Lunch. Provided in room.
 
 Break. Snacks and coffee provided.
 
-## 2:15pm - 3:30pm: Parts VI and VII (Conceptual topics + Doc'ing code)
+## 2:15pm - 3:00pm: Parts VI(Conceptual topics)
 
 <a href="/learnapidoc/slides/conceptual_content_api_docs.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/conceptualcontenttitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 6a: Judge conceptual content and decide which is best" activity="conceptual_comparisons" button_type="warning" %}
 
+## 3:00pm - 3:30pm: Parts VII (Documenting code)
+
+<a href="/learnapidoc/slides/conceptual_content_api_docs.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/documentingcodethumb.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+
+{% include workshop_button.html title="Activity 7a: Classify code documentation into one of the five types" activity="classify_doc_code_approach" button_type="primary" %}
+
 ## 3:30pm - 3:45pm
 
 Break
 
-## 3:45 - 4:30pm: Part VIII and IX (Publishing API docs + Native library APIs)
+## 3:45 - 4:30pm: Part VIII (Publishing API docs)
 
-**Part VII: Publishing API Documentation**
+**Part VIII: Publishing API Documentation**
 
 <a href="/learnapidoc/slides/publishing_api_docs.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/publishingapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
-{% include workshop_button.html title="Activity 7a: Set up a GitHub wiki" activity="create_github_wiki" button_type="warning" %}
+{% include workshop_button.html title="Activity 8a: Set up a GitHub wiki" activity="create_github_wiki" button_type="warning" %}
 
-{% include workshop_button.html title="Activity 7b: Clone your GitHub repo locally" activity="clone_repo_locally" button_type="warning" %}
+{% include workshop_button.html title="Activity 8b: Clone your GitHub repo locally" activity="clone_repo_locally" button_type="warning" %}
 
-{% include workshop_button.html title="Activity 7c: Push local changes to the remote" activity="push_local_to_remote" button_type="warning" %}
-
-**Native Library APIs**
+{% include workshop_button.html title="Activity 8c: Push local changes to the remote" activity="push_local_to_remote" button_type="warning" %}
 
 ## 4:30pm - 5:15pm: Individual consulting
 
@@ -119,9 +123,9 @@ Optional section if time permits
 
 <a href="/learnapidoc/slides/getting_job_api_docs.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/gettingajobdsdoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
-{% include workshop_button.html title="Activity 8a: Look at API documentation jobs and requirements" activity="look_for_apidoc_jobs" button_type="info" %}
+{% include workshop_button.html title="Activity 9a: Look at API documentation jobs and requirements" activity="look_for_apidoc_jobs" button_type="info" %}
 
-{% include workshop_button.html title="Activity 8b: Find an open-source project" activity="find_open_source_project" button_type="success" %}
+{% include workshop_button.html title="Activity 9b: Find an open-source project" activity="find_open_source_project" button_type="success" %}
 
 
 {% include random_ad.html %}

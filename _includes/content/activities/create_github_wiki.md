@@ -1,5 +1,5 @@
 {: .activity_subtitle}
-## <i class="fa fa-user-circle"></i> Activity 7a: Create a GitHub wiki and publish content on a sample page
+## <i class="fa fa-user-circle"></i> Activity 8a: Create a GitHub wiki and publish content on a sample page
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 In this section, you will create a new GitHub repo and publish a sample file there.

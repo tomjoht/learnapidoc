@@ -1,6 +1,6 @@
 ---
 layout: slides
-slide_title: "Conceptual content in API docs"
+slide_title: "Documenting code"
 ---
     <body>
         <div class="reveal innovation">
@@ -11,258 +11,85 @@ slide_title: "Conceptual content in API docs"
             <p>
                 <small>By Tom Johnson / <a target="_blank" href="http://twitter.com/tomjohnson">@tomjohnson</a><br/>
                 <a target="_blank" href="https://idratherbewriting.com">idratherbewriting.com</a></small><br/><br/>
-            <p><small>Slides available at <br/><a target="_blank" href="https://idratherbewriting.com/learnapidoc/slides/conceptual_content_api_docs.html">idratherbewriting.com/learnapidoc/slides/conceptual_content_api_docs.html</a></small></p>
+            <p><small>Slides available at <br/><a target="_blank" href="https://idratherbewriting.com/learnapidoc/slides/documenting_code.html">idratherbewriting.com/learnapidoc/slides/documenting_code.html</a></small></p>
             </p>
-
-            <aside class="notes">
-              <ul>
-                <li>Not sure what to call this info: Conceptual information, Tutorials, How-to guides, Programming guides, Administratrive information, Developer portal, User guide, Guides </li>
-                <li>if there are divisions of responsibilities, tech writers typically handle this type of content more</li>
-                <li>there's a whole lot of other topics related to APIs that i won't cover, so see the other presentations for that.</li>
-              </ul>
-            </aside>
-
         </section>
         <section>
-            <h2>6 conceptual topics to cover</h2>
-            <ol>
-                <li>API overview</li>
-                <li>Getting started</li>
-                <li>Authentication and authorization</li>
-                <li>Status and error codes</li>
-                <li>Rate limiting and thresholds</li>
-                <li>Quick reference</li>
-              </ol>
-
+            <h2>API reference is not a user guide</h2>
+            <p>You need to provide instruction on how to use the reference endpoints in the right order, configuration, and workflow to achieve some particular end.</p>
+            <p>Think of reference endpoints like ingredients in a kitchen; the user guide is the recipe book.</p>
         </section>
 
         <section>
-          <h2>Activity 6a: Judge conceptual content and decide which is best</h2>
-          <p>Evaluate why &mdash; <i>inductive reasoning</i></p>
-          <img class="activity_work" src="https://idratherbewritingmedia.com/images/api/activity_work.svg"/>
-          </section>
-
-        <section>
-          <h2>API overview</h2>
-          <section>
-          <img src="https://idratherbewritingmedia.com/images/api/nonref_overview.svg"/>
-        </section>
-
-            <section>
-              <h3>Example 1: Box</h3>
-              <a href="https://developer.box.com/docs/overview"><img src="https://idratherbewritingmedia.com/images/api/boxoverview.png"/></a>
-            </section>
-
-          <section>
-            <h3>Example 2: Hootsuite</h3>
-            <a href="https://developer.hootsuite.com/docs/the-hootsuite-platform"><img src="https://idratherbewritingmedia.com/images/api/hootsuite.png"/></a>
-          </section>
-
-          <section>
-            <h3>Example 3: Watson Assistant</h3>
-            <a href="https://cloud.ibm.com/docs/services/assistant?topic=assistant-index#index"><img src="https://idratherbewritingmedia.com/images/api/ibmcloudoverview.png"/></a>
-          </section>
-{% comment %}
-          <section>
-            <h3>Example 4: PB Shipping</h3>
-            <a href="https://shipping.pitneybowes.com/overview.html"><img src="https://idratherbewritingmedia.com/images/api/pbshipping.png"/></a>
-          </section>
-{% endcomment %}
-          <section>
-            <h3>Address the "why"</h3>
-            <blockquote>“Startups fail when they are not solving a market problem. We were not solving a large enough problem that we could universally serve with a scalable solution. We had great technology, great data ..., great reputation as a thought leader, great expertise, great advisors, etc, but what we didn’t have was technology or business model that solved a pain point in a scalable way.” &mdash; <small>Treehouse Logic, <a href="https://www.cbinsights.com/research/startup-failure-reasons-top/">The Top 20 Reasons Startups Fail</a></small></blockquote>
-          </section>
-
-        </section>
-
-        <section>
-          <h2>API getting started</h2>
-          <section>
-          <img src="https://idratherbewritingmedia.com/images/api/nonref_gettingstarted.svg"/></a>
-        </section>
-
-
-        <section>
-          <h3>Example 1: Parse</h3>
-          <a href="https://docs.parseplatform.org/parse-server/guide/"><img src="https://idratherbewritingmedia.com/images/api/parseservergettingstarted.png"/></a>
-        </section>
-        <section>
-          <h3>Example 2: Paypal</h3>
-          <a href="https://developer.paypal.com/docs/api/overview/"><img src="https://idratherbewritingmedia.com/images/api/paypalgetstarted.png"/></a>
-        </section>
-        <section>
-          <h3>Example 3: Google</h3>
-          <a href="https://developers.google.com/adsense/management/getting_started"><img src="https://idratherbewritingmedia.com/images/api/adsensegettingstarted.png"/></a>
-        </section>
-        <section><h3>Compare with Hello World tutorials</h3>
-        <img src="https://idratherbewritingmedia.com/images/api/timetohelloworld.svg" />
-      </section>
-      <!-- <section>
-        <h3>Example 3: Twitter example</h3>
-        <a href="https://developer.twitter.com/en/docs/basics/getting-started"><img src="https://idratherbewritingmedia.com/images/api/twittergettingstarted.png"/></a>
-      </section> -->
-        <section>
-          <h3>Run in Postman</h3>
-          <a target="_blank" href="https://www.getpostman.com/api-network/"><img src="https://idratherbewritingmedia.com/images/api/postmanapinetwork.png"/></a>
-<div style="clearfix"></div>
-  <div class="postman-run-button"
-  data-postman-action="collection/import"
-  data-postman-var-1="d1b7adeb50d95d9851e7"></div>
-  <script type="text/javascript">
-    (function (p,o,s,t,m,a,n) {
-      !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
-      !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
-        (n = o.createElement("script")),
-        (n.id = s+t), (n.async = 1), (n.src = m), n
-      ));
-    }(window, document, "\_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
-  </script>
-
-        </section>
-      </section>
-
-      <section>
-        <h2>API authentication and authorization</h2>
-        <section>
-        <img src="https://idratherbewritingmedia.com/images/api/nonref_authentication.svg"/>
-      </section>
-        <section>
-          <h3>Example 1: Sendgrid</h3>
-          <a href="https://sendgrid.com/docs/User_Guide/Settings/api_keys.html"><img src="https://idratherbewritingmedia.com/images/api/sendgrid_authorization.png"/></a>
-        </section>
-
-        <section>
-          <h3>Example 2: Twitter</h3>
-          <a href="https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html"><img src="https://idratherbewritingmedia.com/images/api/twitter_authentication.png"/></a>
-        </section>
-
-        <section>
-          <h3>Example 3: AWS</h3>
-          <a href="https://docs.aws.amazon.com/AWSECommerceService/latest/DG/HMACSignatures.html"><img src="https://idratherbewritingmedia.com/images/api/amazon_authentication.png"/></a>
-        </section>
-
-        <!-- <section>
-          <h3>Example 4: Dropbox</h3>
-          <a href="https://www.dropbox.com/developers/reference/oauth-guide"><img src="https://idratherbewritingmedia.com/images/api/dropbox_authentication.png"/></a>
-        </section> -->
-        <section>
-          <h3>API Key</h3>
-          <img class="shortened" src="https://idratherbewritingmedia.com/images/api/nonref-docs-preso_apikey.svg"/></a><figcaption>
-        </section>
-
-        <section>
-          <h3>HMAC</h3>
-          <img class="shortened" src="https://idratherbewritingmedia.com/images/api/restapi_hmac.svg"/>
-        </section>
-
-        <section>
-          <h3>OAuth</h3>
-          <img src="https://idratherbewritingmedia.com/images/api/restapi_oauth.svg"/>
-        </section>
-      </section>
-
-      <section>
-        <h2>API status and error codes</h2>
-        <section>
-        <img src="https://idratherbewritingmedia.com/images/api/nonref_statuscodes.svg"/>
-      </section>
-
-      <section>
-        <h3>Response header</h3>
-        <pre><code>
-HTTP/1.1 200 OK
-Server: openresty
-Date: Mon, 02 Apr 2018 01:14:13 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 441
-Connection: keep-alive
-X-Cache-Key: /data/2.5/weather?units=imperial&zip=95050
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Credentials: true
-Access-Control-Allow-Methods: GET, POST
-</code></pre>
-      </section>
-
-      <section>
-        <h3>Example 1: Context.io</h3>
-        <a href="https://clearbit.com/docs?python#errors-error-types"><img src="https://idratherbewritingmedia.com/images/api/context_statuscodes.png"/></a>
-      </section>
-
-      <section>
-        <h3>Example 2: Twitter</h3>
-        <a href="https://developer.twitter.com/en/docs/basics/response-codes"><img src="https://idratherbewritingmedia.com/images/api/twitter_statuscodes.png"/></a>
-      </section>
-
-      <section>
-        <h3>Example 3: Mailchimp</h3>
-        <a href="http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/"><img src="https://idratherbewritingmedia.com/images/api/mailchimp_statuscodes.png"/></a>
-      </section>
-  </section>
-
-        <section>
-          <h2>API rate limiting and thresholds</h2>
-          <section>
-          <img src="https://idratherbewritingmedia.com/images/api/nonref_ratelimiting.svg"/></a>
-        </section>
-
-        <section>
-          <h3>Example 1: GitHub</h3>
-          <a href="https://developer.github.com/v3/rate_limit/"><img class="shortened" src="https://idratherbewritingmedia.com/images/api/githubratelimiting.png"/></a>
-        </section>
-
-        <section>
-          <h3>Example 2: Linkedin</h3>
-          <a href="https://docs.microsoft.com/en-us/linkedin/shared/api-guide/concepts/rate-limits?context=linkedin/consumer/context"><img src="https://idratherbewritingmedia.com/images/api/dropboxratelimiting.png"/></a>
-        </section>
-
-        <section>
-          <h3>Example 3: Bitly</h3>
-          <a href="http://dev.bitly.com/rate_limiting.html"><img src="https://idratherbewritingmedia.com/images/api/bitlyratelimiting.png"/></a>
-        </section>
-        </section>
-
-        <section>
-          <h2>API code samples and tutorials</h2>
-          <section>
+          <h2>Who writes the user guide?</h2>
           <img src="https://idratherbewritingmedia.com/images/api/nonref_codetutorials.svg"/>
-        </section>
-
-
-<section>
-  <h3>Example 1: PI API</h3>
-  <a href="https://www.projectinsight.net/api/rest-api-code-samples"><img src="https://idratherbewritingmedia.com/images/api/piapi_code_samples.png"/></a>
-</section>
-
-<section>
-  <h3>Example 2: Stripe</h3>
-  <a href="https://stripe.com/docs/checkout/php"><img src="https://idratherbewritingmedia.com/images/api/stripe_tutorial.png"/></a>
-</section>
-
-<section>
-  <h3>Example 3: Twilio</h3>
-  <a href="https://www.twilio.com/docs/quickstart"><img src="https://idratherbewritingmedia.com/images/api/twiliocodesamples.png"/></a>
-</section>
-        </section>
+          <p>Developers frequently write the reference content but almost never the user guide</p>
+          </section>
 
         <section>
-          <h3>Cover common scenarios</h3>
+          <h3>Reference content alone is incomplete</h3>
               <blockquote>While a developer’s guide should walk a developer through the basic usage of an API and its functionality, it can’t cover every possible use of that API in a coherent way. That is where articles and tutorials come in, to teach developers tangential or specialized uses of an API, like combining it with another service, framework, or API. <small>&mdash;<a href="https://www.programmableweb.com/news/six-pillars-complete-developer-documentation/2011/09/12">The Six Pillars of Complete Developer Documentation</a></small></blockquote>
         </section>
 
         <section>
-          <h3>What Twilio found</h3>
-          <a href="https://eventil.com/presentations/pOszD6"><img src="https://idratherbewritingmedia.com/images/api/twiliouserresearch.png"/></a>
-        </section>
+          <h2>What research tells us about code documentation</h2>
+          </section>
+
+          <section>
+            <h3>What Twilio found</h3>
+            <a href="https://eventil.com/presentations/pOszD6"><img src="https://idratherbewritingmedia.com/images/api/twiliouserresearch.png"/></a>
+          </section>
+
+          <section>
+            <h2>Five strategies for documenting code</h2>
+            <ul>
+              <li>Approach 1: Separate the “how” into inline comments, the “why” into external docs</li>
+              <li>Approach 2: Juxtaposed commentary in a third column</li>
+              <li>Approach 3: The Lego approach</li>
+              <li>Approach 4: The Nautilus approach</li>
+              <li>Approach 5: Interactive browser experiences</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Approach 2: Juxtaposed commentary</h2>
+            <a href="https://www.twilio.com/docs/authy/tutorials/account-verification-java-servlets?code-language=Java&code-sample=code-verify-an-authy-code-7&code-sdk-version=default#sending-a-token-on-account-creation"><img src="https://idratherbewritingmedia.com/images/api/twiliocodedocexample1.png" alt="Twilio's approach"/></a>
+              </section>
 
         <section>
-          <h3>Core principles for code samples</h3>
-          <ul>
-            <li>Focus on the why, not the what</li>
-            <li>Keep code samples simple</li>
-            <li>Make code samples copy-and-paste friendly</li>
-            <li>Provide a sample in your target language</li>
-          </ul>
-        </section>
+          <h2>Approach 3: The Lego Approach</h2>
+          <a href="https://developer.ebay.com/DevZone/shopping/docs/HowTo/PHP_Shopping/PHP_FIA_GUP_Interm_NV_XML/PHP_FIA_GUP_Interm_NV_XML.html#step1"><img src="https://idratherbewritingmedia.com/images/api/ebayshoppingapiexample.png"</a>
+          <small><a href="https://stripe.com/docs/checkout/php">stripe example</a></small>
+          </section>
+
+          <section>
+            <h2>Approach 4: The Nautilus Approach</h2>
+            <a href="https://idratherbewritingmedia.com/images/api/nautilus.jpg"><img class="shortened" src="https://idratherbewritingmedia.com/images/api/nautilus.jpg" alt="The nautilus approach" /></a>
+            </section>
+
+            <section>
+              <blockquote>When your understanding is small, you learn best when the first lesson imparts information for a small, simple task with traits importantly akin to the first nautilus chambers.… the small chambers follow the same basic plan as the bigger chambers. If the first tasks a learner masters are fundamentally similar to more complex tasks farther down the syllabus, the student begins to understand and apply those patterns. The sooner newbies learn to “think about things the right way,” the sooner they “get it..." &mdash; Paul Gustafson, <a href="http://expertsupport.com/2018/09/lessons-from-a-cephalopod/">Lessons from a cephalopod</a></blockquote>
+</section>
+
+        <section>
+          <h3>How would you teach painting?</h3>
+          <a href="https://en.wikipedia.org/wiki/Painting#/media/File:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg"><img src="https://idratherbewritingmedia.com/images/api/mona_lisa_painting.jpg" class="shortened" alt="Describing how to paint a painting" /></a>
+          </section>
+
+          <section>
+            <h3>Example of Nautilus approach</h3>
+            <a href="https://viewsourcecode.org/snaptoken/kilo/02.enteringRawMode.html"><img src="https://idratherbewritingmedia.com/images/api/nautilus_example.png" alt="Nautilus example" /></a>
+            </section>
+
+          <section>
+            <h2>Approach 5: Interactive browser experiences</h2>
+            <a href="https://www.tensorflow.org/tutorials"><img src="https://idratherbewritingmedia.com/images/api/tensorflowruncodenow.png" /></a>
+
+        <section>
+          <h2>Activity:</h2>
+          <p>Description</p>
+          <img class="activity_work" src="https://idratherbewritingmedia.com/images/api/activity_work.svg"/>
+          </section>
 
         <section>
           <h2>SDKs and sample apps</h2>
@@ -297,57 +124,6 @@ Access-Control-Allow-Methods: GET, POST
       </section>
 
 
-      <section>
-        <h2>API quick reference</h2>
-        <section>
-        <img src="https://idratherbewritingmedia.com/images/api/nonref_quickreference.svg"/></a>
-      </section>
-
-        <section>
-          <h3>Example 1: Eventful</h3>
-        <a href="http://api.eventful.com/docs"><img src="https://idratherbewritingmedia.com/images/api/eventfulquickreference.png"/></a>
-      </section>
-
-        <section>
-          <h3>Example 2: Parse</h3>
-        <a href="http://docs.parseplatform.org/rest/guide/#quick-reference"><img src="https://idratherbewritingmedia.com/images/api/parsequickreferenceguide.png"/></a>
-      </section>
-
-        <section>
-          <h3>Example 3: Veracode </h3>
-        <a href="https://help.veracode.com/reader/LMv_dtSHyb7iIxAQznC~9w/FhxRdiWf5qejrtajmjGtpw"/><img src="https://idratherbewritingmedia.com/images/api/veracode_quick_reference.png"</a>
-      </section>
-      <section>
-        <h3>API quick reference</h3>
-      <a target="_blank" href="https://idratherbewritingmedia.com/images/api/sample_api_diagram.pdf"><img class="shortened" src="https://idratherbewritingmedia.com/images/api/sample_api_diagram2.png"/></a>
-    </section>
-
-</section>
-
-{% comment %}
-        <section>
-          <h2>API glossary</h2>
-          <section>
-          <img src="https://idratherbewritingmedia.com/images/api/nonref_glossary.svg"/>
-        </section>
-
-
-        <section>
-          <h3>Example 1: Yext</h3>
-          <a href="http://developer.yext.com/docs/glossary/"><img src="https://idratherbewritingmedia.com/images/api/glossary_yext.png" /></a>
-        </section>
-
-        <section>
-          <h3>Example 2: Apigee</h3>
-          <a href="https://docs.apigee.com/api-platform/reference/glossary"><img src="https://idratherbewritingmedia.com/images/api/glossary_apigee.png" /></a>
-        </section>
-
-        <section>
-          <h3>Example 3: Sendgrid</h3>
-          <a href="https://sendgrid.com/docs/glossary/"><img src="https://idratherbewritingmedia.com/images/api/sendgrid_glossary.png" /></a>
-        </section>
-      </section>
-{% endcomment %}
         <section>
             <h2>Questions?</h2>
             <img src="https://idratherbewritingmedia.com/images/api/questions-01.svg"/>
