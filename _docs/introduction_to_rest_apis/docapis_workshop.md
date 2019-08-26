@@ -99,7 +99,7 @@ Break. Snacks and coffee provided.
 
 Break
 
-## 3:45 - 4:30pm: Part VIII (Publishing API docs)
+## 3:45pm - 4:15pm: Part VIII (Publishing API docs)
 
 **Part VIII: Publishing API Documentation**
 
@@ -111,21 +111,19 @@ Break
 
 {% include workshop_button.html title="Activity 8c: Push local changes to the remote" activity="push_local_to_remote" button_type="warning" %}
 
-## 4:30pm - 5:15pm: Individual consulting
+## 4:15pm - 4:30pm: Part X (Jobs and thriving)
 
-The general workshop ends and we transition into any individual consulting as desired. If you have specific questions not addressed during the workshop, let's chat specifically about them. For all those interested, I'll write everyone's name on a board and then just meet with you individually for about 5 minutes each until everyone's questions are answered.
-
-## Optional section
-
-Optional section if time permits
-
-**Part X: Getting an API documentation job and thriving**
+**Part IX: Getting an API documentation job and thriving**
 
 <a href="/learnapidoc/slides/getting_job_api_docs.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/gettingajobdsdoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 9a: Look at API documentation jobs and requirements" activity="look_for_apidoc_jobs" button_type="info" %}
 
 {% include workshop_button.html title="Activity 9b: Find an open-source project" activity="find_open_source_project" button_type="success" %}
+
+## 4:30pm - 5:15pm: Individual consulting
+
+The general workshop ends and we transition into any individual consulting as desired. If you have specific questions not addressed during the workshop, let's chat specifically about them. For all those interested, I'll write everyone's name on a board and then just meet with you individually for about 5 minutes each until everyone's questions are answered.
 
 
 {% include random_ad.html %}
