@@ -6,7 +6,7 @@ So far you've been working with GitHub in the browser. Now we'll take the same c
 
 To clone the GitHub repo locally:
 
-1.  If you don't already have Git installed, set it up on your computer. (You can check by typing `git --version` in your terminal window. See [Install Git](pubapis_github_wikis.html#git_install) for more information on installation.)
+1.  If you don't already have Git installed, set it up on your computer. (You can check by typing `git --version` in your terminal window. See [Install Git]({{site.rooturl}}pubapis_github_wikis.html#git_install) for more information on installation.)
 2.  While viewing your the GitHub wiki in your browser, look for the section that says **Clone this wiki locally**. Click the clipboard button. (This copies the clone URL to your clipboard.)
 
     {% include course_image.html size="medium" filename="clone-this-wiki-locally" ext_print="png" ext_web="png" alt="Clone this wiki locally" caption="Clone this wiki locally" %}
@@ -14,7 +14,7 @@ To clone the GitHub repo locally:
 	  {: .note}
     The wiki is a separate clone URL than the project's repository. Make sure you're viewing your wiki and not your project. The clone URL will include `.wiki`.
 
-	  In contrast to the "Clone this wiki locally" section, the "Clone in Desktop" button launches the [GitHub Desktop client](https://desktop.github.com/) and allows you to manage the repository and your modified files, commits, pushes, and pull through the GitHub Desktop client. If you're interested in using the GitHub Client of the command line, see this other activity: [Activity: Use the GitHub Desktop client](pubapis_github_desktop_client.html).
+	  In contrast to the "Clone this wiki locally" section, the "Clone in Desktop" button launches the [GitHub Desktop client](https://desktop.github.com/) and allows you to manage the repository and your modified files, commits, pushes, and pull through the GitHub Desktop client. If you're interested in using the GitHub Client of the command line, see this other activity: [Activity: Use the GitHub Desktop client]({{site.rooturl}}pubapis_github_desktop_client.html).
 
 4.  Open your terminal emulator:
 
@@ -51,4 +51,4 @@ To clone the GitHub repo locally:
 
     You might also want to browse to this folder via Finder (Mac) or Explorer (Windows). If you can view invisible files on your machine (for instructions on making hidden files visible, see one of the following: [Windows](https://support.microsoft.com/en-us/help/14201/windows-show-hidden-files) or [Mac](https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/)), you will also see a git folder.
 
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Manage content in a GitHub wiki](pubapis_github_wikis.html).*{% endif %}
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Manage content in a GitHub wiki]({{site.rooturl}}pubapis_github_wikis.html).*{% endif %}

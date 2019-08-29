@@ -1,6 +1,10 @@
 title: API Workshop Activities
-subtitle: PDF printout of workshop activities
+subtitle: >
+  API Documentation Workshop<br/>
+  Tom Johnson, I'd Rather Be Writing</br>
+subparagraph: "This booklet contains a PDF of the activities listed in <b>https://idratherbewriting.com/learnapidoc/workshop.html</b> in print format. As you're working through the workshop activities, you might find it easier to have the instructions printed out next to your laptop rather than toggling between screens and windows."
 
+rooturl: https://idratherbewriting.com/learnapidoc/
 cover: false
 # if cover is set to true, the title and subtitle aren't used. instead, the cover_image is used instead.
 cover_image: https://idratherbewritingmedia.com/images/api/restapi_kindletitle.png

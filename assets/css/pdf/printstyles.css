@@ -23,7 +23,6 @@ th  {color: white}
 #navig li.sectionHead {font-weight: bold; font-size: 18px; color: #595959 !important; list-style-type: none; margin-top: 18px; }
 #navig li {font-weight: normal;  list-style-type: none; font-size: 14px; }
 #navig a[href]::after { content: leader(".") target-counter(attr(href), page); }
-
 #navig li.l1 {
   font-size: 19px;
 }
@@ -48,14 +47,21 @@ th  {color: white}
   margin-left:40px;
 }
 
-
+/* cross-references to pages
 a[href]::after {
     content: " (p. " target-counter(attr(href), page) ")"
 }
+*/
+/* print href link urls after links */
+a::after{
+    content: " (" attr(href) ") ";
+  }
 
+/*
 a[href^="http:"]::after, a[href^="https:"]::after {
     content: "";
 }
+*/
 
 a[href] {
     color: #337CD6 !important;
@@ -80,6 +86,12 @@ a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::a
     font-family: sans-serif;
     line-height: 22pt;
     letter-spacing: -.5px;
+    margin-bottom:20px;
+}
+.printSubparagraph {
+    font-size: 14pt;
+    font-family: sans-serif;
+    line-height: 22pt;
     margin-bottom:20px;
 }
 .printTitleArea hr {

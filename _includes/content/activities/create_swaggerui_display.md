@@ -9,7 +9,7 @@ In this activity, you'll create a Swagger UI display for an OpenAPI specificatio
 **To integrate your OpenAPI spec into Swagger UI:**
 
 1.  Prepare a valid OpenAPI specification document:
-    *  For instructions on creating an OpenAPI specification document from scratch, follow the [OpenAPI tutorial here](pubapis_openapi_tutorial_overview.html).
+    *  For instructions on creating an OpenAPI specification document from scratch, follow the [OpenAPI tutorial here]({{site.rooturl}}pubapis_openapi_tutorial_overview.html).
     *  To use a pre-built OpenAPI specification document, you can use the [OpenWeatherMap spec file](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) or the [Sunrise/sunset API spec file](https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/openapi_sunrise_sunset.yml). (Right-click the link and save the YAML file to your desktop.)
 
 2.  Make sure your OpenAPI specification is valid. Paste your OpenAPI specification code into the [Swagger online editor](http://editor.swagger.io/#/) and make sure no warnings appear. The view on the right of the Swagger Editor shows a fully functional Swagger UI display.
@@ -135,4 +135,4 @@ When you're ready to publish your Swagger UI file, you just upload the `dist` fo
 {: .tip}
 For more instructions in working with Swagger UI, see the [Swagger.io docs](https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/).
 
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Swagger UI tutorial](pubapis_swagger.html).*{% endif %}
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Swagger UI tutorial]({{site.rooturl}}pubapis_swagger.html).*{% endif %}

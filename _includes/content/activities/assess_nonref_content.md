@@ -2,7 +2,7 @@
 ## <i class="fa fa-user-circle"></i> Activity: Assess the conceptual content in 3 API doc sites
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
-1.  Go to the [list of 100 API doc sites](pubapis_apilist.html) and identify 3 API doc sites to analyze. The API doc sets could be API documentation sites from your favorite tools or companies, or just API sites you select at random.
+1.  Go to the [list of 100 API doc sites]({{site.rooturl}}pubapis_apilist.html) and identify 3 API doc sites to analyze. The API doc sets could be API documentation sites from your favorite tools or companies, or just API sites you select at random.
 2.  Look through the documentation and identify whether the API documentation site contains each of the following:
 
     <style>
@@ -27,65 +27,42 @@
        </thead>
        <tbody>
           <tr>
-             <td markdown="span">[API overview](docapis_doc_overview.html)</td>
+             <td markdown="span">[API overview]({{site.rooturl}}docapis_doc_overview.html)</td>
              <td markdown="span"></td>
              <td markdown="span"></td>
              <td markdown="span"></td>
           </tr>
           <tr>
-             <td markdown="span">[Getting started](docapis_doc_getting_started_section.html)</td>
+             <td markdown="span">[Getting started]({{site.rooturl}}docapis_doc_getting_started_section.html)</td>
              <td markdown="span"></td>
              <td markdown="span"></td>
              <td markdown="span"></td>
           </tr>
           <tr>
-             <td markdown="span">[Authentication and authorization](docapis_more_about_authorization.html)</td>
+             <td markdown="span">[Authentication and authorization]({{site.rooturl}}docapis_more_about_authorization.html)</td>
              <td markdown="span"></td>
              <td markdown="span"></td>
              <td markdown="span"></td>
           </tr>
           <tr>
-             <td markdown="span">[Status and error codes](docapis_doc_status_codes.html)</td>
+             <td markdown="span">[Status and error codes]({{site.rooturl}}docapis_doc_status_codes.html)</td>
              <td markdown="span"></td>
              <td markdown="span"></td>
              <td markdown="span"></td>
           </tr>
           <tr>
-             <td markdown="span">[Rate limiting and thresholds](docapis_rate_limiting_and_thresholds.html)</td>
+             <td markdown="span">[Rate limiting and thresholds]({{site.rooturl}}docapis_rate_limiting_and_thresholds.html)</td>
              <td markdown="span"></td>
              <td markdown="span"></td>
              <td markdown="span"></td>
           </tr>
           <tr>
-             <td markdown="span">[Code samples and tutorials](docapis_codesamples_bestpractices.html)</td>
+             <td markdown="span">[Quick reference guides]({{site.rooturl}}docapis_doc_quick_reference.html)</td>
              <td markdown="span"></td>
              <td markdown="span"></td>
              <td markdown="span"></td>
           </tr>
           <tr>
-             <td markdown="span">[SDKs](docapis_sdks.html)</td>
-             <td markdown="span"></td>
-             <td markdown="span"></td>
-             <td markdown="span"></td>
-          </tr>
-          <tr>
-             <td markdown="span">[Quick reference guides](docapis_doc_quick_reference.html)</td>
-             <td markdown="span"></td>
-             <td markdown="span"></td>
-             <td markdown="span"></td>
-          </tr>
-          <tr>
-          <td markdown="span">[Glossary](docapis_glossary_section.html)</td>
-             <td markdown="span"></td>
-             <td markdown="span"></td>
-             <td markdown="span"></td>
-          </tr>
-          <tr>
-          <td markdown="span">[API best practices](docapis_best_practices_with_api.html)</td>
-             <td markdown="span"></td>
-             <td markdown="span"></td>
-             <td markdown="span"></td>
-          </tr>
        </tbody>
     </table>    
 
@@ -93,4 +70,4 @@
 
 3.  Do you have any noteworthy observations from your analysis?
 
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Activity: Assess conceptual content](docapis_concept_activity.html).*{% endif %}
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Activity: Assess conceptual content]({{site.rooturl}}docapis_concept_activity.html).*{% endif %}

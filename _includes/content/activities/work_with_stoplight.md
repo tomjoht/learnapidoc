@@ -105,4 +105,4 @@ One of the coolest features in Stoplight is the ability to auto-generate the sch
 
     This auto-generated schema documentation will make your life easier. Even if you prefer to hand-code your OpenAPI specification files in another editor, you might find that you visit Stoplight just to auto-generate your response schema documentation.
 
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Stoplight &mdash; visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html).*{% endif %}
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Stoplight &mdash; visual modeling tools for creating your OpenAPI spec]({{site.rooturl}}pubapis_stoplight.html).*{% endif %}

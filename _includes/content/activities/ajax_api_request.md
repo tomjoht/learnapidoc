@@ -74,7 +74,7 @@ To create the web page code from scratch:
     jQuery is necessary because we're using the `ajax` method to make the API request.
 
 2.  Save your file (anywhere convenient) with a name such as **weather.html**.
-3.  Open Postman and go to the Current weather data (`weather`) endpoint that you configured in an earlier activity (see [Submit requests through Postman](docapis_postman.html) for more information).
+3.  Open Postman and go to the Current weather data (`weather`) endpoint that you configured in an earlier activity (see [Submit requests through Postman]({{site.rooturl}}docapis_postman.html) for more information).
 4.  Click the **Code** link (below the Save button), and then select **JavaScript > jQuery AJAX**.
 
     {% include course_image.html size="small_medium" filename="postmanjqueryajax" ext_print="png" ext_web="png" alt="JavaScript Ajax code snippet" caption="JavaScript Ajax code snippet" %}
@@ -131,7 +131,7 @@ To create the web page code from scratch:
       });
       ```
 
-      When `ajax` retrieves the response from the API, it assigns it to `response`. You can access the properties in the `response` using [dot notation](docapis_diving_into_dot_notation.html). The `append` method in jQuery allows you to append content to a particular element.
+      When `ajax` retrieves the response from the API, it assigns it to `response`. You can access the properties in the `response` using [dot notation]({{site.rooturl}}docapis_diving_into_dot_notation.html). The `append` method in jQuery allows you to append content to a particular element.
 
 9.  Create an element on the page (below the `h1` tags) with the `id="windSpeed"`:
 
@@ -144,7 +144,7 @@ To create the web page code from scratch:
 10. Save the file and open it in Chrome. Open the JS Console to view the object logged.
 
     {: .tip}
-    You can view the file here: [idratherbewriting.com/learnapidoc/assets/files/weather-plain.html](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html). )
+    You can view the file here: [weather-plain.html](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html).
 
 
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Inspect the JSON from the response payload](docapis_json_console.html) and [Access and print a specific JSON value](docapis_access_json_values.html).*{% endif %}
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Inspect the JSON from the response payload]({{site.rooturl}}docapis_json_console.html) and [Access and print a specific JSON value]({{site.rooturl}}docapis_access_json_values.html).*{% endif %}

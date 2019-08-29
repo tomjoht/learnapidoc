@@ -15,7 +15,7 @@ In this exercise, you'll use Postman to make a request using OpenWeatherMap's [c
     * key: `units` / value: `imperial`
     * key: `appid`/ value: &lt;insert your own API key&gt;
 
-    For the value for `appid`, use your own API key. (If you didn't [get an API key](docapis_get_auth_keys.html), use [one of the keys here](http://idratherbewriting.site/apikeys).) Your Postman UI should look like this:
+    For the value for `appid`, use your own API key. (If you didn't [get an API key]({{site.rooturl}}docapis_get_auth_keys.html), use [one of the keys here](http://idratherbewriting.site/apikeys).) Your Postman UI should look like this:
 
     <img src="https://idratherbewritingmedia.com/images/api/postmanopenweatherapi.png" class="medium"/>
 
@@ -74,4 +74,4 @@ https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=-121.9689848&
 
 Postman has a lot of other functionality you can use. We'll revisit Postman later in the course for some other activities.
 
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Submit requests through Postman](docapis_postman.html).*{% endif %}
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Submit requests through Postman]({{site.rooturl}}docapis_postman.html).*{% endif %}

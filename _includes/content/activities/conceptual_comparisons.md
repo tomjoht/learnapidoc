@@ -35,10 +35,3 @@ The following are 6 common conceptual topics in API documentation. For each topi
 * [Eventful](http://api.eventful.com/docs)
 * [Parse](http://docs.parseplatform.org/rest/guide/#quick-reference)
 * [Veracode](https://help.veracode.com/reader/LMv_dtSHyb7iIxAQznC~9w/FhxRdiWf5qejrtajmjGtpw)
-
-{% comment %}
-**API glossary**
-* [Yext](http://developer.yext.com/docs/glossary/)
-* [Apigee](https://docs.apigee.com/api-platform/reference/glossary)
-* [Sendgrid](https://sendgrid.com/docs/glossary/)
-{% endcomment %}

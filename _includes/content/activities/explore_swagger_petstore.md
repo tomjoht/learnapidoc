@@ -22,13 +22,13 @@ Let's get some hands-on experience with Swagger UI using the Petstore demo. The 
 
     {% include course_image.html url="http://petstore.swagger.io/" size="large" filename="swaggerui_execute" ext_print="png" ext_web="png" alt="Executing a sample Petstore request" caption="Executing a sample Petstore request" %}
 
-    Swagger UI submits the request and shows the [curl](docapis_make_curl_call.html) that was submitted. For example, here's the curl Swagger UI sent:
+    Swagger UI submits the request and shows the [curl]({{site.rooturl}}docapis_make_curl_call.html) that was submitted. For example, here's the curl Swagger UI sent:
 
     ```curl
     curl -X POST "https://petstore.swagger.io/v2/pet" -H "accept: application/xml" -H "Content-Type: application/json" -d "{ \"id\": 1000, \"category\": { \"id\": 0, \"name\": \"string\" }, \"name\": \"Bentley\", \"photoUrls\": [ \"string\" ], \"tags\": [ { \"id\": 0, \"name\": \"string\" } ], \"status\": \"available\"}"
     ```
 
-    Notice that, with the `-d` (data) parameter, the request body parameter is escaped and added directly into the curl command rather than being loaded from a file (as explained in [Common curl commands related to REST](docapis_understand_curl.html#common)).
+    Notice that, with the `-d` (data) parameter, the request body parameter is escaped and added directly into the curl command rather than being loaded from a file (as explained in [Common curl commands related to REST]({{site.rooturl}}docapis_understand_curl.html#common)).
 
     The Responses section in Swagger UI shows the response from the server. By default, the response returns XML:
 
@@ -60,4 +60,4 @@ Let's get some hands-on experience with Swagger UI using the Petstore demo. The 
 
 6.  The Petstore is a functioning API, and you have actually created a pet. For fun, expand the GET **/pet/{petId}** endpoint, click **Try it out**, enter the pet `id` you used in the previous operation, and then execute the request. You should see your pet's name returned.
 
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Introduction to the OpenAPI specification and Swagger](pubapis_swagger_intro.html).*{% endif %}
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Introduction to the OpenAPI specification and Swagger]({{site.rooturl}}pubapis_swagger_intro.html).*{% endif %}

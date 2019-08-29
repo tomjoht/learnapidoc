@@ -16,8 +16,10 @@ The workshop agenda, slides, and activities correspond to full-day API workshop.
 {:toc}
 {::options toc_levels="2" /}
 
+{% comment %}
 {: .tip}
 You can print the activity content as a PDF: [api_workshop_activities.pdf](https://idratherbewritingmedia.com/print/api_workshop_activities.pdf). This might make it easier to follow along on your laptop during the workshop.
+{% endcomment %}
 
 ## 8:00am - 9:00am: Registration + breakfast
 
@@ -93,7 +95,7 @@ Break. Snacks and coffee provided.
 
 <a href="/learnapidoc/slides/documenting_code.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/documentingcodethumb.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
-{% include workshop_button.html title="Activity 7a: Classify code documentation into one of the five types" activity="classify_doc_code_approach" button_type="primary" %}
+{% include workshop_button.html title="Activity 7a: Classify code documentation into one of the five types" activity="classify_code_approach" button_type="primary" %}
 
 ## 3:30pm - 3:45pm
 

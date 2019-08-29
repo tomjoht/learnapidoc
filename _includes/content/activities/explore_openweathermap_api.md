@@ -4,7 +4,7 @@
 
 Let's explore the basic sections in the [OpenWeatherMap API](https://openweathermap.org/api/):
 
-1.  Go to [https://openweathermap.org](https://openweathermap.org)
+1.  Go to the [openweathermap.org](https://openweathermap.org)
 2.  Click **API** in the top navigation bar.
 2.  In the **Current weather data** section, click the **API doc** button.
 
@@ -18,4 +18,4 @@ Let's explore the basic sections in the [OpenWeatherMap API](https://openweather
     * How many endpoints does the API have?
     * What authorization credentials are required to get a response?
 
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Scenario for using a weather API](docapis_scenario_for_using_weather_api.html).*{% endif %}
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Scenario for using a weather API]({{site.rooturl}}docapis_scenario_for_using_weather_api.html).*{% endif %}

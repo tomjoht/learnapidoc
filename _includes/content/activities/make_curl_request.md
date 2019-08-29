@@ -2,7 +2,7 @@
 ## <i class="fa fa-user-circle"></i> Activity 2d: Make the OpenWeatherAPI request using curl
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
-1.  Assuming you completed the exercises in the [Postman tutorial](docapis_postman.html), go back into Postman.
+1.  Assuming you completed the exercises in the [Postman tutorial]({{site.rooturl}}docapis_postman.html), go back into Postman.
 2.  On any call you've configured, and below the Save button in Postman, click the **Code** link.
 3.  In the Generate Code Snippets dialog box, select **cURL** from the drop-down list, and then click **Copy to Clipboard**.
 
@@ -52,8 +52,8 @@
     {"coord":{"lon":-121.95,"lat":37.35},"weather":[{"id":802,"main":"Clouds","description":"scattered clouds","icon":"03d"}],"base":"stations","main":{"temp":68.34,"pressure":1014,"humidity":73,"temp_min":63,"temp_max":72},"visibility":16093,"wind":{"speed":3.36},"clouds":{"all":40},"dt":1566664878,"sys":{"type":1,"id":5122,"message":0.0106,"country":"US","sunrise":1566653501,"sunset":1566701346},"timezone":-25200,"id":0,"name":"Santa Clara","cod":200}
     ```
 
-    This response is minified. You can un-minify it by going to a site such as [JSON pretty print](http://jsonprettyprint.com/), or if you have [Python installed](https://www.python.org/downloads/)), you can add <code>| python -m json.tool</code> at the end of your cURL request to minify the JSON in the response (see [this Stack Overflow thread](https://stackoverflow.com/questions/352098/how-can-i-pretty-print-json-in-a-unix-shell-script) for details).
+    This response is minified. You can un-minify it by going to a site such as [JSON pretty print](http://jsonprettyprint.com/), or if you have [Python installed](https://www.python.org/downloads/), you can add <code>| python -m json.tool</code> at the end of your cURL request to minify the JSON in the response (see [this Stack Overflow thread](https://stackoverflow.com/questions/352098/how-can-i-pretty-print-json-in-a-unix-shell-script) for details).
 
 5.  If you want additional practice, make a similar curl request for the 5 day forecast request that you also have in Postman. And another curl request for the third OpenWeatherMap API request you made in Postman.
 
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Make a curl call](docapis_make_curl_call.html).*{% endif %}
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Make a curl call]({{site.rooturl}}docapis_make_curl_call.html).*{% endif %}
