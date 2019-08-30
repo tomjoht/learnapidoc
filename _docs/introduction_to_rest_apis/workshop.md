@@ -1,5 +1,5 @@
 ---
-title: Course Workshop -- agenda, slides, activities
+title: Workshop -- agenda, slides, activities
 permalink: /workshop.html
 course: "Documenting REST APIs"
 weight: 1.02
@@ -134,7 +134,7 @@ ul#markdown-toc::before  {
 }
 
 @media print {
-  header, footer, #sidebar, ul#markdown-toc, header.dpHeader a, header.dpHeader .dphTopBar .dphLeft, .dpFooter .dpfNav .dpfnCol .dpfnGroup, hr, .userMap, .githubButton, .amazonBook, p.surveyBanner, .singlePostComics, .footerTop, #disqus_thread, .donateButton, .nextButton, .previousButton, .progress, #progressBar, #yourProgress, .progress + p {
+  header, footer, #sidebar, ul#markdown-toc, header.dpHeader a, header.dpHeader .dphTopBar .dphLeft, .dpFooter .dpfNav .dpfnCol .dpfnGroup, hr, .userMap, .githubButton, .amazonBook, p.surveyBanner, .singlePostComics, .footerTop, #disqus_thread, .donateButton, .nextButton, .previousButton, .progress, #progressBar, #yourProgress, .progress + p, .subfoldersTitle, .folderTitle, ol.breadcrumb {
   	display: none !important;
   }
 

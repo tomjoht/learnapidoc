@@ -13,4 +13,4 @@ If you'd like to purchase a PDF of the activities listed in the [Workshop](works
 ## Workshop Activities PDF
 
 <script src="https://gumroad.com/js/gumroad-embed.js"></script>
-<div class="gumroad-product-embed" data-gumroad-product-id="tjmRD"><a href="https://gumroad.com/l/tjmRD">Loading...</a></div>
+<div class="gumroad-product-embed" data-gumroad-product-id="apiworkshopactivities"><a href="https://gumroad.com/l/apiworkshopactivities">Loading...</a></div>

@@ -86,13 +86,20 @@ a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::a
     font-family: sans-serif;
     line-height: 22pt;
     letter-spacing: -.5px;
-    margin-bottom:20px;
+    margin-bottom: 10px;;
 }
 .printSubparagraph {
     font-size: 14pt;
     font-family: sans-serif;
-    line-height: 22pt;
-    margin-bottom:20px;
+    margin-top: 30px;
+}
+.printAttribution {
+    font-size: 12pt;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    color: #444;
+    font-style: italic;
+    margin-bottom: 25px;
 }
 .printTitleArea hr {
     color: #999999 !important;
