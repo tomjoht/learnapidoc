@@ -10,6 +10,8 @@ redirect_from:
 - /learnapidoc/docapis_course_slides.html
 ---
 
+hello there.
+
 The workshop agenda, slides, and activities correspond to full-day API workshop. The slide groups mirror the same sections in the course.
 
 * TOC
