@@ -67,7 +67,7 @@ slide_title: "Documenting API endpoints"
              <h2>2. Endpoints and methods</h2>
              <section>
 
-               <p>The endpoints indicate how you access the resource, and the method used with the endpoint indicates the allowed interactions (such as GET, POST, or DELETE) with the resource.</p>
+               <p>The endpoints indicate how you access the resource. The method indicates the allowed interaction (such as GET, POST, or DELETE) with the resource.</p>
              </section>
 
 
@@ -93,7 +93,7 @@ slide_title: "Documenting API endpoints"
                 </section>
 
                 <section>
-                  <h3>References to endpoints ~ tricky</h3>
+                  <h3>References to endpoints</h3>
                   <p>How would you refer to these two endpoints?</p>
 <code>
   <pre style="color: whitesmoke; padding: 15px;">
@@ -155,9 +155,9 @@ slide_title: "Documenting API endpoints"
            <section>
              <h3>Query string parameter order is irrelevant</h3>
            <pre style="color: whitesmoke; padding: 15px;">
-           /surfreport/{beachId}?days=3&amp;units=metric&amp;time=1400
+           /surfreport/<span class="orange">{beachId}</span>?days=3&amp;units=metric&amp;time=1400
 
-           /surfreport/{beachId}?time=1400&amp;units=metric&amp;days=3
+           /surfreport/<span class="orange">{beachId}</span>?time=1400&amp;units=metric&amp;days=3
            </pre>
            <h3>But not path parameter order</h3>
            <pre style="color: whitesmoke; padding: 15px;">/service/myresource/user/<span class="orange">{userId}</span>/bicycles/<span class="orange">{bicycleId}</span></pre>
