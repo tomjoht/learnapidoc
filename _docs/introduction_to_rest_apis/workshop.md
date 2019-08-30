@@ -113,12 +113,17 @@ Break. Snacks and coffee provided.
 
 {% include workshop_button.html title="Activity 9a: Look at API documentation jobs and requirements" activity="look_for_apidoc_jobs" button_type="info" %}
 
-{% include workshop_button.html title="Activity 9b: Find an open-source project" activity="find_open_source_project" button_type="success" %}
+{% include workshop_button.html title="Activity 9b: Find an open-source project" activity="find_open_source_project" button_type="info" %}
+
+{% include workshop_button.html title="Jeopardy: Test your knowledge" activity="jeopardy_questions" button_type="info" %}
 
 ## 4:30 - 5:15pm: Individual consulting
 
 The general workshop ends and we transition into any individual consulting as desired. If you have specific questions not addressed during the workshop, let's chat specifically about them. For all those interested, I'll write your name on then board and then just meet with you individually for about 5 minutes each until everyone's questions are answered.
 
+## Post-workshop review
+
+At the close of the workshop, please take this [review survey](https://www.questionpro.com/t/AOaGwZfA3w). Thanks.
 
 
 {% include random_ad.html %}
