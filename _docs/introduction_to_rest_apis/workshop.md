@@ -29,13 +29,13 @@ Doors open at 8:00am. Check your name off at the registration table and get a na
 
 **Part I: Introduction to API Documentation**
 
-<a href="/learnapidoc/slides/intro_api_documentation.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/introapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/intro_api_documentation.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/introapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 1a: Identify your goals" activity="identify_goals" button_type="info" %}
 
 **Part II: Using an API like a developer**
 
-<a href="/learnapidoc/slides/using_api_like_developer.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/using-api-developer-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/using_api_like_developer.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/using-api-developer-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 2a: Explore OpenWeatherMap API" activity="explore_openweathermap_api" button_type="primary" %}
 
@@ -55,7 +55,7 @@ Break time
 
 **Part III: Documenting API endpoints**
 
-<a href="/learnapidoc/slides/documenting_api_endpoints.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/documenting-endpoints-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/documenting_api_endpoints.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/documenting-endpoints-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 3a: What's wrong with this API reference topic" activity="whats_wrong_with_surfreport" button_type="success" %}
 
@@ -63,7 +63,7 @@ Break time
 
 **Part IV: OpenAPI and Swagger**
 
-<a href="/learnapidoc/slides/openapi_and_swagger.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/openapiswaggertitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/openapi_and_swagger.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/openapiswaggertitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 4a: Explore Swagger UI through the Petstore Demo" activity="explore_swagger_petstore" button_type="info" %}
 
@@ -79,13 +79,13 @@ Lunch. Provided in room.
 
 ## 2:00 - 2:30pm: Parts VI (Conceptual topics)
 
-<a href="/learnapidoc/slides/conceptual_content_api_docs.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/conceptualcontenttitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/conceptual_content_api_docs.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/conceptualcontenttitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 6a: Judge conceptual content and decide which is best" activity="conceptual_comparisons" button_type="warning" %}
 
 ## 2:30 - 3:00pm: Parts VII (Documenting code)
 
-<a href="/learnapidoc/slides/documenting_code.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/documentingcodethumb.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/documenting_code.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/documentingcodethumb.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 7a: Classify code documentation into one of the five types" activity="classify_code_approach" button_type="primary" %}
 
@@ -97,7 +97,7 @@ Break. Snacks and coffee provided.
 
 **Part VIII: Publishing API Documentation**
 
-<a href="/learnapidoc/slides/publishing_api_docs.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/publishingapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/publishing_api_docs.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/publishingapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 8a: Set up a GitHub wiki" activity="create_github_wiki" button_type="warning" %}
 
@@ -109,7 +109,7 @@ Break. Snacks and coffee provided.
 
 **Part IX: Getting an API documentation job and thriving**
 
-<a href="/learnapidoc/slides/getting_job_api_docs.html" class="noCrossRef slideThumb"><img src="https://idratherbewritingmedia.com/images/api/gettingajobdsdoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/getting_job_api_docs.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/gettingajobdsdoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 9a: Look at API documentation jobs and requirements" activity="look_for_apidoc_jobs" button_type="info" %}
 
@@ -118,6 +118,7 @@ Break. Snacks and coffee provided.
 ## 4:30 - 5:15pm: Individual consulting
 
 The general workshop ends and we transition into any individual consulting as desired. If you have specific questions not addressed during the workshop, let's chat specifically about them. For all those interested, I'll write your name on then board and then just meet with you individually for about 5 minutes each until everyone's questions are answered.
+
 
 
 {% include random_ad.html %}
@@ -133,7 +134,7 @@ ul#markdown-toc::before  {
 }
 
 @media print {
-  header, footer, #sidebar, ul#markdown-toc, header.dpHeader a, header.dpHeader .dphTopBar .dphLeft, .dpFooter .dpfNav .dpfnCol .dpfnGroup, hr, .userMap, .githubButton, .amazonBook, p.surveyBanner {
+  header, footer, #sidebar, ul#markdown-toc, header.dpHeader a, header.dpHeader .dphTopBar .dphLeft, .dpFooter .dpfNav .dpfnCol .dpfnGroup, hr, .userMap, .githubButton, .amazonBook, p.surveyBanner, .singlePostComics, .footerTop, #disqus_thread, .donateButton, .nextButton, .previousButton, .progress, #progressBar, #yourProgress, .progress + p {
   	display: none !important;
   }
 
@@ -145,28 +146,8 @@ ul#markdown-toc::before  {
       padding-top, margin-top:20px;
       margin-bottom, padding-bottom: 10px;
   }
-  .main img.slideThumb {
-    width: 300px;
-  }
-
-  .main img.large {
-    max-width: 700px
-  }
-
-  .main img.medium {
-    max-width: 600px
-  }
-
-  .main img.small_medium {
-    max-width: 450px;
-  }
-
-  .main img.small {
-    max-width: 300px;
-  }
-
-  .main img.tiny {
-    max-width: 200px;
+  img.slideThumb {
+    width: 200px;
   }
 }
 </style>
