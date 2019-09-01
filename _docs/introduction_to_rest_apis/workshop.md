@@ -10,18 +10,15 @@ redirect_from:
 - /learnapidoc/docapis_course_slides.html
 ---
 
-hello there.
-
 The workshop agenda, slides, and activities correspond to full-day API workshop. The slide groups mirror the same sections in the course.
 
 * TOC
 {:toc}
 {::options toc_levels="2" /}
 
-{% comment %}
 {: .tip}
-You can print the activity content as a PDF: [api_workshop_activities.pdf](https://idratherbewritingmedia.com/print/api_workshop_activities.pdf). This might make it easier to follow along on your laptop during the workshop.
-{% endcomment %}
+You can print the activity content as a PDF: [api_workshop_activities.pdf](https://idratherbewritingmedia.com/print
+/api_workshop_activities.pdf). This might make it easier to follow along on your laptop during the workshop.
 
 ## 8:00 - 9:00am: Registration + breakfast
 
@@ -123,10 +120,11 @@ Break. Snacks and coffee provided.
 
 The general workshop ends and we transition into any individual consulting as desired. If you have specific questions not addressed during the workshop, let's chat specifically about them. For all those interested, I'll write your name on then board and then just meet with you individually for about 5 minutes each until everyone's questions are answered.
 
+{% comment %}
 ## Post-workshop review
 
 At the close of the workshop, please take this [review survey](https://www.questionpro.com/t/AOaGwZfA3w). Thanks.
-
+ {% endcomment %}
 
 {% include random_ad.html %}
 

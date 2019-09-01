@@ -12,8 +12,8 @@ navbar_singleitems:
     url: presentations.html
   - title: Workshop
     url: workshop.html
-  - title: PDFs
-    url: products.html
+  # - title: PDFs
+  #   url: products.html
 
 # topnav_dropdowns:
 # - title: Topnav dropdowns
