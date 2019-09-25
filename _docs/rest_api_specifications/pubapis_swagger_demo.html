@@ -13,11 +13,11 @@ no_newsletter: true
 
 <p>When you use Swagger UI, it's not necessary for the Swagger UI output to be a <a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger">standalone site</a>. You can also embed Swagger into an existing web page. The following is an embedded instance of the <a href="https://github.com/swagger-api/swagger-ui">Swagger UI</a> showing the <a href="https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml">OpenAPI file for the OpenWeatherMapAPI</a>.</p>
 
-<p>While the Swagger UI display is designed to be responsive, the collapse/expand sections in the Model views still have overflow issues in responsive views, so you might run into issues with embedding. </p>
-
 {% if site.format == "pdf" or site.format == "kindle" %}
 <p>This page can only be viewed online in your computer's web browser{% if site.format == "kindle" %} (not through Kindle's browser){% endif %}. Go to <a href="https://idratherbewriting.com/learnapidoc/pubapis_swagger_demo.html">https://idratherbewriting.com/learnapidoc/pubapis_swagger_demo.html</a> to view it.</p>
 {% else %}
+
+<p><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></p>
 
 <link rel="stylesheet" type="text/css" href="assets/css/swagger-ui.css" >
 <style>
@@ -315,8 +315,36 @@ button.btn.try-out__btn {
 
 {% endif %}
 
+<style>
+.navToggle {
+  display: none !important;
+}
+.expand {
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#tg-sb-link:hover, #tg-sb-link:active, #tg-sb-link {
+  text-decoration: none !important;
+}
+</style>
+
+
+<script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#sidebar").toggleClass('navToggle');
+                $(".container").toggleClass('expand');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+</script>
+
 {% include random_ad.html %}
 
-<p>Personally, I prefer to separate Swagger UI from the rest of my docs simply because I dislike the sense of a website within a website. Developers can keep the Swagger UI page open as a <a href="docapis_doc_quick_reference.html">quick reference</a> while they work on their projects. I view the Swagger UI reference output similar to the standalone output of <a href="nativelibraryapis_exploring_javadoc_output.html">Javadoc</a>.</p>
+<p class="note">While the Swagger UI display is designed to be responsive, the collapse/expand sections in the Model views still have overflow issues in responsive views, so you might run into issues with embedding. </p>
+
+<p>I'm still mixed about the idea of a website within a website. I explore the topic of how to integrate Swagger with the rest of your docs in more detail in <a href="pubapis_combine_swagger_and_guide.html">Integrating Swagger UI with the rest of your docs</a>.</p>
 
 {% include random_ad2.html %}

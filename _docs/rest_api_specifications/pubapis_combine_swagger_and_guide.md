@@ -19,7 +19,11 @@ Whenever discussions about Swagger and other REST API specifications take place,
 
 When you start pushing your documentation into another source file &mdash; in this case, a YAML or JSON file that is included in a Swagger UI file set, you end up splitting your single source of truth into multiple sources. You might have defined your endpoints and parameters in your regular documentation, and now the OpenAPI spec asks you to provide the same endpoints and descriptions in the spec. Do you copy and paste the same parameters and other information across both sites? Do you somehow generate the descriptions from the same source?
 
-This conundrum is usually crystal clear to technical writers. API doc consists of more than reference material about the APIs. You've got all kinds of other information about getting API keys, setup and configuration of services, or other details that don't fit into the spec. I covered much of this in [Documenting conceptual topics](docconceptual.html) part of the guide. You have conceptual sections such as the following:
+This conundrum is usually crystal clear to those who write documentation, as one of the core principles of tech writing is to generate content out from a single source rather than coying and pasting duplicate information.
+
+## Why not just put all info into the spec?
+
+I've heard many engineers ask, why not just put all information directly into the spec? This might work for simple APIs that don't have a lot of other information, but most API doc consists of more than reference material about the APIs. You've got all kinds of other information about getting API keys, setup and configuration of services, or other details that don't fit into the spec. I covered much of this in [Documenting conceptual topics](docconceptual.html) part of the guide. You have conceptual sections such as the following:
 
 * [API Overview](docapis_doc_overview.html)
 * [Getting started tutorial](docapis_doc_getting_started_section.html)
@@ -32,18 +36,7 @@ This conundrum is usually crystal clear to technical writers. API doc consists o
 * [Glossary](docapis_glossary_section.html)
 * [API best practices](docapis_best_practices_with_api.html)
 
-Other times, you have more detail that you need to communicate to the user that won't fit easily into the spec. For example, in the `weather` endpoint in the [sample OpenWeatherMap API](https://idratherbewriting.com/learnapidoc/assets/files/swagger/) that we've been using in this course, there's some detail about city IDs that needs some explanation.
-
-```json
-...
-},
-"id": 420006397,
-"name": "Santa Clara",
-"cod": 200
-}
-```
-
-What does the `cod: 200` mean? If you go to the [City ID section in the OpenWeatherMap docs](http://openweathermap.org/current#cityid), you'll see a link to download a list of file city codes.
+Other times, you have more detail that you need to communicate to the user that won't fit easily into the spec.
 
 If you have a lot of extra information and notes like this in your reference docs, it can be challenging to fit them into the parameter descriptions allotted in the OpenAPI spec. Unfortunately, there's not an easy solution for creating a single source of truth. Here are some options:
 
@@ -58,7 +51,62 @@ If you have a lot of extra information and notes like this in your reference doc
 
 One solution is to embed Swagger UI in your docs. You can see an example of this here: [Swagger UI Demo](pubapis_swagger_demo.html). It's pretty easy to embed Swagger into an HTML page. The latest version of Swagger has a more responsive, liquid design. It almost looks *designed* to be embedded into another site.
 
-The only problem with the embedding approach is that some of the Models aren't constrained within their container, so they expand beyond their limits. Try expanding the Model section in the demo &mdash; you'll see what I'm talking about.
+However, the effect is still kind of clunky and is obvious that the content is embedded from some other document generator. It's not a seamlessly branded experience. Here an example where Swagger is embedded directly in the docs: [App Submission API](https://developer.amazon.com/docs/app-submission-api/appsubapi-endpoints.html)
+
+{% include course_image.html url="https://developer.amazon.com/docs/app-submission-api/appsubapi-endpoints.html" size="large" filename="appsubmissionendpoints" ext_print="png" ext_web="png" alt="Embedding Swagger into your existing doc site" caption="Embedding Swagger into your existing doc site" %}
+
+Another example of the same embedding technique is here: [Moments Developer Guide](https://developer.amazon.com/docs/moments/rewards-api-endpoints.html)
+
+Notice that I've included a Nav toggle at the top of the embedded Swagger content. This little JS trick will collapse your sidebar, giving your embedded Swagger display full width. This Nav toggle isn't part of the Swagger UI display but is something that's easy to add.
+
+To include a Nav toggle, first make sure you're including [Font Awesome](https://fontawesome.com/) and [jQuery](https://jquery.com/) in your site. Then add the Nav icon with this class at the top of your page:
+
+```html
+<p><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></p>
+```
+
+Now add a `toggleClass` script that will toggle your sidebar. You'll need to customize this a bit with the classes used in your own site. My script looks like this:
+
+```js
+<script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#sidebar").toggleClass('navToggle');
+                $(".container").toggleClass('expand');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+</script>
+```
+
+Then embed this style:
+
+```html
+<style>
+.navToggle {
+  display: none !important;
+}
+.expand {
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#tg-sb-link:hover, #tg-sb-link:active, #tg-sb-link {
+  text-decoration: none !important;
+}
+</style>
+```
+
+Here's how this works. When users click the element ID `tg-sb-link`, it fires the anonymous function above. The `toggleClass` looks for the `sidebar` element and injects a class called `navToggle` into it. The embedded styles define `navToggle` with a `display: none` property. This makes your `sidebar` element disappear. If your sidebar has some other class, customize `sidebar` with the name of your website's sidebar element.
+
+Continuing on with the script, the `toggleClass` function looks for the `container` class and injects an element called `expand`. The embedded styles for this element expand the main container to a larger percentage. Again, you'll need to customize this to use the main container element for your website. But hopefully you get the gist of how this [`toggleClass` jQuery function](https://api.jquery.com/toggleClass/) is working. When you click the Nav button again, the same function removes the injected classes. For more details, check out the source code of the [Swagger UI Demo](pubapis_swagger_demo.html) on [GitHub here](https://github.com/tomjoht/learnapidoc/blob/master/_docs/rest_api_specifications/pubapis_swagger_demo.html).
+
+(By the way, hat tip to the user who contributed this enhancement to my [Jekyll documentation theme](https://idratherbewriting.com/documentation-theme-jekyll/).)
+
+Besides the clunkiness of the "site-within-a-site" look, an additional problem with embedding is that some of the Models aren't constrained within their container, so they expand beyond their limits. Try expanding the Model section in the [demo](pubapis_swagger_demo.html) &mdash; you'll see what I'm talking about.
+
+{% include course_image.html url="pubapis_swagger_demo.html" size="large" filename="modelsexpansionproblems" ext_print="png" ext_web="png" alt="Expanding Models -- if you have multiple levels of hierarchy, this section will not expand well when constrained within a fixed space" caption="Expanding Models -- if you have multiple levels of hierarchy, this section will not expand well when constrained within a fixed space" %}
 
 I'm not sure if some ninja styling prowess could simply overcome this uncontained behavior. Probably, but I'm not a CSS ninja, and I haven't fiddled around with this enough to say that it can actually be done. I did end up adding some custom styles to make some adjustments to Swagger UI in various places. If you view the source of [the demo page](pubapis_swagger_demo.html) and check out the second `<style>` block, you can see the styles I added.
 
