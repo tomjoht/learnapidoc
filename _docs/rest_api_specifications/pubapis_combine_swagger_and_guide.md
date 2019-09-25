@@ -15,106 +15,17 @@ Whenever discussions about Swagger and other REST API specifications take place,
 {:toc}
 {% endif %}
 
-## Single source of truth
+## Background to the single source of truth idea
 
-When you start pushing your documentation into another source file &mdash; in this case, a YAML or JSON file that is included in a Swagger UI file set, you end up splitting your single source of truth into multiple sources. You might have defined your endpoints and parameters in your regular documentation, and now the OpenAPI spec asks you to provide the same endpoints and descriptions in the spec. Do you copy and paste the same parameters and other information across both sites? Do you somehow generate the descriptions from the same source?
+One of the core principles of tech writing is to generate content from a single source rather than copying and pasting duplicate information. When you start pushing your API documentation into another source file &mdash; in this case, a YAML or JSON file that is included in a Swagger UI file set, you end up splitting your single source of truth into multiple sources.
 
-This conundrum is usually crystal clear to those who write documentation, as one of the core principles of tech writing is to generate content out from a single source rather than coying and pasting duplicate information.
+For example, you might have defined your endpoints and parameters in your regular documentation, and now the OpenAPI spec asks you to provide the same endpoints and descriptions in the spec. Do you copy and paste the same parameters and other information across both sites? Do you somehow generate the descriptions from the same source? In this topic, I tackle this conundrum.
 
-## Why not just put all info into the spec?
+## Option 1: Put all the info into your spec through expand/collapse sections {#option1}
 
-I've heard many engineers ask, why not just put all information directly into the spec? This might work for simple APIs that don't have a lot of other information, but most API doc consists of more than reference material about the APIs. You've got all kinds of other information about getting API keys, setup and configuration of services, or other details that don't fit into the spec. I covered much of this in [Documenting conceptual topics](docconceptual.html) part of the guide. You have conceptual sections such as the following:
+You can try to squeeze all your documentation into the specification document itself. This only works if you have a relatively small amount of [conceptual information to accompany your API](docconceptual.html). You may be surprised about how much information you can actually include in the spec. Any `description` element (not just the `description` property in the `info` object) allows you to use Markdown and HTML.
 
-* [API Overview](docapis_doc_overview.html)
-* [Getting started tutorial](docapis_doc_getting_started_section.html)
-* [Authentication and authorization requirements](docapis_more_about_authorization.html)
-* [Status and error codes](docapis_doc_status_codes.html)
-* [Rate limiting and thresholds](docapis_rate_limiting_and_thresholds.html)
-* [Code samples/tutorials](docapis_codesamples_bestpractices.html)
-* [SDKs](docapis_sdks.html)
-* [Quick reference guide](docapis_doc_quick_reference.html)
-* [Glossary](docapis_glossary_section.html)
-* [API best practices](docapis_best_practices_with_api.html)
-
-Other times, you have more detail that you need to communicate to the user that won't fit easily into the spec.
-
-If you have a lot of extra information and notes like this in your reference docs, it can be challenging to fit them into the parameter descriptions allotted in the OpenAPI spec. Unfortunately, there's not an easy solution for creating a single source of truth. Here are some options:
-
-* [Option 1: Embed Swagger UI in your docs](#option1)
-* [Option 2: Put all the info into your spec through expand/collapse sections](#option2)
-* [Option 3: Parse the OpenAPI specification document](#option3)
-* [Option 4: Store content in YAML files that are sourced to both outputs](#option4)
-* [Option 5: Use a tool that imports Swagger and allows additional docs](#option5)
-* [Option 6: Change perspectives &mdash; Having two sites isn't so bad](#option6)
-
-## Option 1: Embed Swagger UI in your docs {#option1}
-
-One solution is to embed Swagger UI in your docs. You can see an example of this here: [Swagger UI Demo](pubapis_swagger_demo.html). It's pretty easy to embed Swagger into an HTML page. The latest version of Swagger has a more responsive, liquid design. It almost looks *designed* to be embedded into another site.
-
-However, the effect is still kind of clunky and is obvious that the content is embedded from some other document generator. It's not a seamlessly branded experience. Here an example where Swagger is embedded directly in the docs: [App Submission API](https://developer.amazon.com/docs/app-submission-api/appsubapi-endpoints.html)
-
-{% include course_image.html url="https://developer.amazon.com/docs/app-submission-api/appsubapi-endpoints.html" size="large" filename="appsubmissionendpoints" ext_print="png" ext_web="png" alt="Embedding Swagger into your existing doc site" caption="Embedding Swagger into your existing doc site" %}
-
-Another example of the same embedding technique is here: [Moments Developer Guide](https://developer.amazon.com/docs/moments/rewards-api-endpoints.html)
-
-Notice that I've included a Nav toggle at the top of the embedded Swagger content. This little JS trick will collapse your sidebar, giving your embedded Swagger display full width. This Nav toggle isn't part of the Swagger UI display but is something that's easy to add.
-
-To include a Nav toggle, first make sure you're including [Font Awesome](https://fontawesome.com/) and [jQuery](https://jquery.com/) in your site. Then add the Nav icon with this class at the top of your page:
-
-```html
-<p><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></p>
-```
-
-Now add a `toggleClass` script that will toggle your sidebar. You'll need to customize this a bit with the classes used in your own site. My script looks like this:
-
-```js
-<script>
-        $(document).ready(function() {
-            $("#tg-sb-link").click(function() {
-                $("#sidebar").toggleClass('navToggle');
-                $(".container").toggleClass('expand');
-                $("#tg-sb-icon").toggleClass('fa-toggle-on');
-                $("#tg-sb-icon").toggleClass('fa-toggle-off');
-            });
-        });
-</script>
-```
-
-Then embed this style:
-
-```html
-<style>
-.navToggle {
-  display: none !important;
-}
-.expand {
-  width: 100%;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-#tg-sb-link:hover, #tg-sb-link:active, #tg-sb-link {
-  text-decoration: none !important;
-}
-</style>
-```
-
-Here's how this works. When users click the element ID `tg-sb-link`, it fires the anonymous function above. The `toggleClass` looks for the `sidebar` element and injects a class called `navToggle` into it. The embedded styles define `navToggle` with a `display: none` property. This makes your `sidebar` element disappear. If your sidebar has some other class, customize `sidebar` with the name of your website's sidebar element.
-
-Continuing on with the script, the `toggleClass` function looks for the `container` class and injects an element called `expand`. The embedded styles for this element expand the main container to a larger percentage. Again, you'll need to customize this to use the main container element for your website. But hopefully you get the gist of how this [`toggleClass` jQuery function](https://api.jquery.com/toggleClass/) is working. When you click the Nav button again, the same function removes the injected classes. For more details, check out the source code of the [Swagger UI Demo](pubapis_swagger_demo.html) on [GitHub here](https://github.com/tomjoht/learnapidoc/blob/master/_docs/rest_api_specifications/pubapis_swagger_demo.html).
-
-(By the way, hat tip to the user who contributed this enhancement to my [Jekyll documentation theme](https://idratherbewriting.com/documentation-theme-jekyll/).)
-
-Besides the clunkiness of the "site-within-a-site" look, an additional problem with embedding is that some of the Models aren't constrained within their container, so they expand beyond their limits. Try expanding the Model section in the [demo](pubapis_swagger_demo.html) &mdash; you'll see what I'm talking about.
-
-{% include course_image.html url="pubapis_swagger_demo.html" size="large" filename="modelsexpansionproblems" ext_print="png" ext_web="png" alt="Expanding Models -- if you have multiple levels of hierarchy, this section will not expand well when constrained within a fixed space" caption="Expanding Models -- if you have multiple levels of hierarchy, this section will not expand well when constrained within a fixed space" %}
-
-I'm not sure if some ninja styling prowess could simply overcome this uncontained behavior. Probably, but I'm not a CSS ninja, and I haven't fiddled around with this enough to say that it can actually be done. I did end up adding some custom styles to make some adjustments to Swagger UI in various places. If you view the source of [the demo page](pubapis_swagger_demo.html) and check out the second `<style>` block, you can see the styles I added.
-
-With the embedded option, you can still use the official Swagger UI tooling to read the spec, and you can include the Swagger UI output in your main documentation. Swagger UI reads the latest version of the [OpenAPI specification](pubapis_openapi_tutorial_overview.html), which is something many tools don't yet support. Additionally, Swagger UI has the familiar interface that API developers are probably already familiar with. However, if the styling overflows in ugly ways in your Model sections, you might want to avoid the embedded approach.
-
-## Option 2: Put all the info into your spec through expand/collapse sections {#option2}
-
-You can try to put all the information into the specification document itself. You may be surprised about how much information you can actually include in the spec. Any `description` element (not just the `description` property in the `info` object) allows you to use Markdown and HTML. For example, here's the `info` object in the OpenAPI spec where a description appears. (If desired, you can type a pipe `>` to break the content onto the next line and then indent two spaces. You can actually add a lot of content in `description` elements.)
+For example, here's the `info` object in the OpenAPI spec where a description appears. (If desired, you can type a pipe `>` to break the content onto the next line and then indent two spaces. You can actually add a lot of content in `description` elements.)
 
 ```yaml
 info:
@@ -156,6 +67,8 @@ info:
     ...
 ```
 
+(Unfortunately, I can't point to the output as this project was behind a firewall.)
+
 The result was to compress much of the information into a single button that, when clicked, expanded with more details. By incorporating expand/collapse sections from Bootstrap, you can add a ton of information in this `description` object. (For the JavaScript you need, add `script` references in the header or footer of the same `index.html` file where you referenced your `openapi.yaml` file.)
 
 Additionally, you can include modals that appear when clicked. Modals are dialog windows that dim the background outside the dialog window. Again, you can include all the JavaScript you want in the `index.html` file of the Swagger UI project.
@@ -165,11 +78,72 @@ If you incorporate Bootstrap, you will likely need to restrict the namespace so 
 
 Overall, if your API docs are relatively small, you can try putting all your information in the spec first. If you have a complex API or just an API that has a lot of extra information not relevant to the spec, look for alternative approaches. But try to fit it into the spec first. This keeps your information in one space.
 
-There are many benefits to using a spec that you will miss out on if you choose another approach. When you store your information in a spec, many other tools can parse the spec and generate interactive displays.
+There are many benefits to using a spec that you will miss out on if you choose another approach. When you store your information in a spec, many other tools can parse the spec and generate interactive displays. Putting your content in the OpenAPI spec format allows you to separate your content from the presentation layer, instantly taking advantage of any new API tooling or platform that can parse the spec.
 
-For example, [Spectacle](https://github.com/sourcey/spectacle) is a project that builds an output from a Swagger file &mdash; it requires almost no coding or technical expertise. More and more tools are appearing that allow you to import your OpenAPI spec. See [Lucybot](http://lucybot.com/), [Restlet Studio](https://studio.restlet.com), the [Swagger UI responsive theme](https://github.com/jensoleg/swagger-ui), [Material Swagger UI](https://github.com/legendecas/material-swagger-ui), [DynamicAPIs](https://www.dynamicapis.com), [Run in Postman](https://www.getpostman.com/docs/postman_for_publishers/run_button/creating_run_button), [SwaggerHub](pubapis_swaggerhub_smartbear.html), and more. They all read the OpenAPI spec.
+## Option 2: Embed Swagger UI in your docs {#option2}
 
-Putting your content in the OpenAPI spec format allows you to separate your content from the presentation layer, instantly taking advantage of any new API tooling or platform that can parse the spec.
+Another solution is to embed Swagger UI in your regular docs. You can see an example of this here: [Swagger UI Demo](pubapis_swagger_demo.html). It's pretty easy to embed Swagger into an HTML page &mdash; just copy the code from the `index.html` file from the `dist` folder into your doc page (more or less). The latest version of Swagger has a more responsive, liquid design. It almost looks *designed* to be embedded into another site.
+
+However, the effect is still kind of clunky and is obvious that the content is embedded from some other document generator. It's not a seamlessly branded experience. Here an example where Swagger is embedded directly in the docs: [App Submission API](https://developer.amazon.com/docs/app-submission-api/appsubapi-endpoints.html)
+
+{% include course_image.html url="https://developer.amazon.com/docs/app-submission-api/appsubapi-endpoints.html" size="large" filename="appsubmissionendpoints" ext_print="png" ext_web="png" alt="Embedding Swagger into your existing doc site" caption="Embedding Swagger into your existing doc site" %}
+
+Another example of the same embedding technique is here: [Moments Developer Guide](https://developer.amazon.com/docs/moments/rewards-api-endpoints.html)
+
+Notice that I've included a **"Nav"** toggle at the top of the embedded Swagger content. This little JS trick will collapse your sidebar, giving your embedded Swagger display full width (which is usually needed for readability). This Nav toggle isn't part of the Swagger UI display but is something that's easy to add.
+
+To include a Nav toggle, first make sure you're including [Font Awesome](https://fontawesome.com/) and [jQuery](https://jquery.com/) in your site. Then add the Nav icon with this class at the top of your page:
+
+```html
+<p><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></p>
+```
+
+Now add a `toggleClass` script that will toggle your sidebar. You'll need to customize this a bit with the classes used in your own site. My script looks like this:
+
+```js
+<script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#sidebar").toggleClass('navToggle');
+                $(".container").toggleClass('expand');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+</script>
+```
+
+Then embed this style:
+
+```html
+<style>
+.navToggle {
+  display: none !important;
+}
+.expand {
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#tg-sb-link:hover, #tg-sb-link:active, #tg-sb-link {
+  text-decoration: none !important;
+}
+</style>
+```
+
+Here's how this script works. When users click the element ID `tg-sb-link`, the  anonymous function fires above. The `toggleClass` looks for the `sidebar` element and injects a class called `navToggle` into it. The embedded styles define `navToggle` with a `display: none` property. This makes your `sidebar` element disappear. (If your sidebar has some other class, customize `sidebar` with the name of your website's sidebar element.)
+
+Continuing on with the script, the `toggleClass` function looks for the `container` class and injects an element called `expand`. The embedded styles for this element expand the main container to a larger width. (Again, you'll need to customize `container` to use the main container element for your website.) Hopefully you get the gist of how this [`toggleClass` jQuery function](https://api.jquery.com/toggleClass/) is working. When you click the Nav button again, the same function removes the injected classes. For more details, check out the source code of the [Swagger UI Demo](pubapis_swagger_demo.html) on [GitHub here](https://github.com/tomjoht/learnapidoc/blob/master/_docs/rest_api_specifications/pubapis_swagger_demo.html).
+
+(By the way, a community user contributed this Nav technique as an enhancement to my [Jekyll documentation theme](https://idratherbewriting.com/documentation-theme-jekyll/).)
+
+Besides the clunkiness of the "site-within-a-site" look, an additional problem with embedding is that some of the Models aren't constrained within their container, so they expand beyond their limits. Try expanding the Model section in the [demo](pubapis_swagger_demo.html) &mdash; you'll see what I'm talking about.
+
+{% include course_image.html url="pubapis_swagger_demo.html" size="large" filename="modelsexpansionproblems" ext_print="png" ext_web="png" alt="Expanding Models -- if you have multiple levels of hierarchy, this section will not expand well when constrained within a fixed space" caption="Expanding Models -- if you have multiple levels of hierarchy, this section will not expand well when constrained within a fixed space" %}
+
+I'm not sure if some ninja styling prowess could simply overcome this uncontained behavior. Probably, but I'm not a CSS ninja, and I haven't fiddled around with this enough to say that it can actually be done. I did end up adding some custom styles to make some adjustments to Swagger UI in various places. If you view the source of [the demo page](pubapis_swagger_demo.html) and check out the second `<style>` block, you can see the styles I added.
+
+With the embedded option, you can still use the official Swagger UI tooling to read the spec, and you can include the Swagger UI output in your main documentation. Swagger UI reads the latest version of the [OpenAPI specification](pubapis_openapi_tutorial_overview.html), which is something many tools don't yet support. Additionally, Swagger UI has the familiar interface that API developers are probably already familiar with. However, if the styling overflows in ugly ways in your Model sections, you might want to avoid the embedded approach.
 
 ## Option 3: Parse the OpenAPI specification document {#option3}
 
