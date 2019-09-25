@@ -93,9 +93,9 @@ CORS security restrictions in Chrome and Firefox prevent you from viewing the Sw
     Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
     ```
 
-5.  Copy the `http://0.0.0.0:8000/` path to your browser's address bar. This is the web server address.
+5.  Type either `localhost` in your browser's address bar (or copy the `http://0.0.0.0:8000/` path). This address lets you view the local web server.
 
-    By default, web servers default to the `index.html` file in the directory, so it will show the Swagger UI file automatically. If the browser doesn't direct to `index.html`, add it manually: `http://0.0.0.0:8000/index.html`.
+    By default, web servers default to the `index.html` file in the directory, so it will show the Swagger UI file automatically. If the browser doesn't direct to `index.html`, add it manually: `http://localhost/index.html`.
 
     To stop the server, press **Ctrl+C** in your command prompt.
 
@@ -118,7 +118,7 @@ CORS security restrictions in Chrome and Firefox prevent you from viewing the Sw
     ```bash
     Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
     ```
-3.  Copy the `http://0.0.0.0:8000/` path to your browser's address bar. This is the web server address.
+3.  Copy the `http://0.0.0.0:8000/` path to your browser's address bar. This is the web server address. You can also type `localhost`.
 
     By default, web servers default to the `index.html` file in the directory, so it will show the Swagger UI file automatically. If the browser doesn't direct to `index.html`, add it manually: `http://0.0.0.0:8000/index.html`.
 
