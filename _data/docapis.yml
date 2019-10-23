@@ -239,8 +239,8 @@ folders:
   - title: SDKs (software development kits)
     jurl: /docapis_sdks.html
 
-  - title: Sample apps
-    jurl: /docapiscode.html
+  # - title: Sample apps
+  #   jurl: /docapiscode.html
 
 - title: "VIII: Publishing API docs"
   jurl: /publishingapis.html
