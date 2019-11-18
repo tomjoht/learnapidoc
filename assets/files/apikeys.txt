@@ -15,3 +15,6 @@ token: IO6EB7MM6TSCIL2TIOHC
 ## Flickr API
 key: 71542c171848da257b3caa214f7ed00f
 secret: c9da662b86becdd4
+
+## SendGrid
+key: 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

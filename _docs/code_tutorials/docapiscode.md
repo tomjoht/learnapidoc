@@ -1,5 +1,5 @@
 ---
-title: Documenting code
+title: Code tutorials
 permalink: /docapiscode.html
 keywords:
 course: "Documenting REST APIs"

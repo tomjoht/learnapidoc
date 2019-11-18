@@ -1,5 +1,5 @@
 ---
-title: API code tutorials
+title: Code samples
 permalink: /docapis_codesamples_bestpractices.html
 keywords:
 course: "Documenting REST APIs"

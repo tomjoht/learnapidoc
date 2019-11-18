@@ -216,13 +216,19 @@ folders:
   - title: API best practices
     jurl: /docapis_best_practices_with_api.html
 
+  - title: "Activity: Complete the SendGrid Getting Started tutorial"
+    jurl: /docapis_getting_started_activity.html
+
   - title: "Activity: Assess the conceptual content in your project"
     jurl: /docapis_concept_activity.html
 
-- title: "VII: Documenting code"
+- title: "VII: Code tutorials"
   jurl: /docapiscode.html
-  description: "This section covers strategies for documenting code. I'm still developing out this section, so much of the content is under construction."
+  description: "This section covers strategies for creating code tutorials. I'm still developing out this section, so much of the content is under construction."
   folderitems:
+
+  - title: Common characteristics of code tutorials
+    jurl: /docapis_code_tutorials_common_characteristics.html
 
   - title: Why documenting code is so difficult
     jurl: /docapis_code_difficulty.html
@@ -233,7 +239,7 @@ folders:
   - title: Five strategies for documenting code
     jurl: /docapis_code_strategies.html
 
-  - title: API code tutorials
+  - title: API code samples
     jurl: /docapis_codesamples_bestpractices.html
 
   - title: SDKs (software development kits)
@@ -295,8 +301,7 @@ folders:
   - title: "Case study: Switching tools to docs-as-code"
     jurl: /pubapis_switching_to_docs_as_code.html
 
-
-- title: "IX: Getting an API doc job and thriving"
+- title: "IX: Thriving in the API doc space"
   jurl: /jobapis.html
   description: "Getting an API documenation job and thriving requires you to demonstrate your technical aptitude through a writing portfolio. The portfolio should include samples of documentation written for developers. One way to build this portfolio is by working on an open-source project. You also need to live in a tech hub where API documentation jobs are available, such as California, Texas, New York, or Virginia. Overall, thriving in the developer documentation space requires you to continually learn a healthy dose of code, which can be challenging."
   folderitems:
@@ -347,7 +352,6 @@ folders:
 
   - title: Create non-ref docs with native library APIs
     jurl: /nativelibraryapis_nonrefdocs.html
-
 
 - title: "XI: API glossary and resources"
   jurl: /resources.html

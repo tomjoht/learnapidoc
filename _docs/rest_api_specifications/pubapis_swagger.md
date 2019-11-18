@@ -98,6 +98,8 @@ Looking at the examples, you'll notice the documentation is short and sweet in a
 
 {% include content/activities/create_swaggerui_display.md %}
 
+{% include content/activities/view_local_openapi_swaggerui.md %}
+
 ## Configuring Swagger UI parameters
 
 Swagger UI provides various [configuration parameters](https://github.com/swagger-api/swagger-ui/blob/master/docs/usage/configuration.md) (unrelated to the [OpenAPI parameters](pubapis_openapi_step4_paths_object.html#parameters)) that you can use to customize the interactive display. For example, you can set whether each endpoint is expanded or collapsed, how tags and operations are sorted, whether to show request headers in the response, whether to include the Models section after the list of endpoints, and more.

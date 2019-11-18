@@ -4,9 +4,22 @@
 
 In this activity, you'll review API reference documentation and identify the common elements. To evaluate the API reference docs:
 
-1.  Either from an [open-source project]({{site.rooturl}}docapis_find_open_source_project.html) you might have identified or from this [list of about 100 API doc sites here]({{site.rooturl}}pubapis_apilist.html#list_api_doc_sites), identify an API documentation site to analyze.
-2.  In the API documentation, look for the API reference documentation section (the list of endpoints).
-3.  In the reference documentation, identify each of the following sections:
+1.  Look at the API reference sections (where endpoints are listed) in three of the following sites:
+
+    *  [Nexmo API reference](https://developer.nexmo.com/api
+    *  [Twitter API reference](https://developer.twitter.com/en/docs/api-reference-index
+    *  [Stripe API reference](https://stripe.com/docs/api
+    *  [Azure API reference](https://docs.microsoft.com/en-us/rest/api/advisor/
+    *  [Flickr API reference](https://www.flickr.com/services/api/
+    *  [YouTube API reference](https://developers.google.com/youtube/v3/docs
+    *  [Splunk API reference](https://docs.splunk.com/Documentation/Splunk/8.0.0/RESTREF/RESTlist
+    *  [Zomato API reference](https://developers.zomato.com/documentation#/
+    *  [Paypal API reference](https://developer.paypal.com/docs/api/overview/
+    *  [Basecamp API reference](https://github.com/basecamp/bcx-api/
+    *  [OpenSecrets API reference](http://www.opensecrets.org/open-data/api-documentation
+    *  [Dropbox API reference](https://www.dropbox.com/developers/documentation/http/documentation
+
+2.  In the reference documentation, identify each of the following sections (if they exist):
 
     *  [Resource description]({{site.rooturl}}docapis_resource_descriptions.html)
     *  [Endpoints and methods]({{site.rooturl}}docapis_resource_endpoints.html)
@@ -15,7 +28,7 @@ In this activity, you'll review API reference documentation and identify the com
     *  [Response example and schema]({{site.rooturl}}docapis_doc_sample_responses_and_schema.html)
 
     {: .note}
-    The section names will probably  differ in the API doc sites you find, but they're usually recognizable to some degree. If you're finding it somewhat difficult to locate them, this is part of the wild west of terminology and organization when it comes to API documentation.
+    The section names might be named differently (or be absent) in the API doc sites you browse, but they're usually recognizable to some degree. If you're finding it somewhat difficult to locate them, this is part of the wild west of terminology and organization when it comes to API documentation.
 
 3.  Assess the API reference documentation by answering the following questions for each section:
 

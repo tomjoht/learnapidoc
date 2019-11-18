@@ -1,5 +1,5 @@
 ---
-title: Getting an API documenation job and thriving
+title: Thriving in the API doc space
 permalink: /jobapis.html
 sidebar: docapis
 path1: /jobapis.html

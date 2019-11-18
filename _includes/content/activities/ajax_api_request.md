@@ -40,7 +40,7 @@ For this activity, you'll use JavaScript to display the API response on a web pa
 
 3.  Save the file as an HTML file named `weather.html`.
 4.  Start **Chrome** and open the JavaScript Console by going to **View > Developer > JavaScript Console**.
-5.  In Chrome, press **Cmd/Ctrl + O** and select your `weather.html` file.
+5.  In Chrome, press **Cmd+O** (Mac) or **Ctrl + O** (Windows) and select your `weather.html` file.
 
     The weather response should be logged to the JavaScript Console (due to the `console.log(response)` code in the request). If you expand the object returned to the console, it will look as follows:
 
