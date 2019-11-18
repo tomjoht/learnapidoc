@@ -64,7 +64,7 @@ Here are a few pre-configured requests to configure for Aeris. You can paste the
 As with the OpenWeather Map API, the Aeris API doesn't use a Header field to pass the API keys &mdash; the key and secret are passed directly in the request URL as part of the query string.
 
 {: .note}
-When you make the following requests, insert your own values for the <code>CLIENTID</code> and <code>CLIENTSECRET</code> (assuming you retrieved them in [Get the authorization keys](docapis_get_auth_keys.html#aeris_weather_apikey)). If you don't have a client ID or secret, you can use my keys [here](https://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt).
+When you make the following requests, insert your own values for the <code>CLIENTID</code> and <code>CLIENTSECRET</code> (assuming you retrieved them in [Get the authorization keys](docapis_get_auth_keys.html#aeris_weather_apikey)). 
 
 Get the weather forecast for your area using the [observations endpoint](https://www.aerisweather.com/support/docs/api/reference/endpoints/observations/):
 

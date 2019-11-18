@@ -31,7 +31,7 @@ In these examples, I usually just print the code to a web page to visualize the 
 
 {% include random_ad.html %}
 
-Each API requires you to use an API key, token, or some other form of authentication. You can register for your own API keys, or you can [use my keys here](https://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt).
+Each API requires you to use an API key, token, or some other form of authentication. Register for your own API keys.
 
 ## Swap out APIKEY in code samples
 

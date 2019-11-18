@@ -66,7 +66,7 @@ https://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=
 ```
 
 {: .note}
-I have removed my API key from code samples to prevent possible abuse to my API keys. If you're following along, swap in your own API key here. (Or you can borrow my keys [here](https://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt).)
+I have removed my API key from code samples to prevent possible abuse to my API keys. If you're following along, swap in your own API key here.
 
 If you submit the request directly in your browser using the given URL, you can see the same response but in the browser rather than the API Explorer:
 

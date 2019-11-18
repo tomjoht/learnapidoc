@@ -23,7 +23,7 @@ In earlier tutorials, you integrated information from the [OpenWeatherMap API](h
 
 ## 1. Get the API keys
 
-See the [Getting Started](http://www.aerisweather.com/support/docs/api/getting-started/) page for information on how to register and get API keys. (Get the free version of the keys available to development projects.) You will need both the ID and secret to make API calls. See [Get the Aeris Weather API secret and ID](docapis_get_auth_keys.html#aeris_weather_apikey) for more detail. (You can also borrow my keys [here](https://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt)
+See the [Getting Started](http://www.aerisweather.com/support/docs/api/getting-started/) page for information on how to register and get API keys. (Get the free version of the keys available to development projects.) You will need both the ID and secret to make API calls. See [Get the Aeris Weather API secret and ID](docapis_get_auth_keys.html#aeris_weather_apikey) for more detail.
 
 ## 2. Construct the request
 

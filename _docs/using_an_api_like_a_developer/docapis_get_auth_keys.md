@@ -26,9 +26,6 @@ Requiring authorization allows API publishers to do the following:
 
 To run the code samples in this course, you will need to use your own API keys, since these keys are usually treated like passwords and not given out or published openly on a web page.
 
-{: .tip}
-Even though you should treat API keys like passwords, if you want to borrow my API keys, you can access them [here](https://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt). I sometimes find that workshop participants get hung up in trying to acquire API keys, so I make them available here to avoid delays in the activities.
-
 {% include random_ad.html %}
 
 {% include content/activities/get_authorization_keys.md %}

@@ -128,9 +128,11 @@ See my [Upcoming Presentations](https://idratherbewriting.com/presentations/) on
 
 ## Course slides
 
-For the live workshops, I have various slides that cover different sections of this course. If you're a teacher adapting this material for a course on API documentation in a tech comm program, you can clone and modify the slides. See [Course Slides](workshop.html) for the links. Basically, you would clone this GitHub repo and copy over the content from the `slides` directory.
+For the live workshops, I have various slides that cover different sections of this course. See [Course Slides](workshop.html) for the links. The slides use [RevealJS](https://github.com/hakimel/reveal.js/), which is an HTML/CSS/JS framework for slides. The images are single-sourced between the site and the slides, so they'll more likely stay in sync.
 
-The slides use [RevealJS](https://github.com/hakimel/reveal.js/), which is an HTML/CSS/JS framework for slides. The images are single-sourced between the site and the slides, so they'll more likely stay in sync. You can adapt the slides as needed for your lessons.
+## Copyright and re-use of materials
+
+Some people have asked whether they can use materials from this course to give their own API documentation workshops. I only allow the material to be used for non-profit workshops where the workshop leader isn't charging participants for the instruction. Of course, many of the ideas and concepts in this course aren't specific or unique to me, and you're entitled to fair use. However, you can't just hijack my site's materials, activities, and other information to clone it for your own for-profit endeavor.
 
 ## Let me know if any content is out of date
 
