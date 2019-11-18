@@ -6,7 +6,7 @@ In order to view a *local* OpenAPI file (rather than an OpenAPI file hosted on a
 
 You can create a local web server running on your computer through [Python's SimpleHTTPServer module](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server). Mac has a system version of Python installed by default, but Windows computers will need to install Python.
 
-**Windows: Run the Python simple server**
+**Windows: Run the Python simple HTTP server**
 
 1.  Download and install [Python 3x](https://www.python.org/downloads/).
 
@@ -47,7 +47,7 @@ You can create a local web server running on your computer through [Python's Sim
 
     To stop the server, press **Ctrl+C** in your command prompt. If you closed your Command Prompt before stopping the service, type `ps`, find the process ID, then type `kill -9 <process ID>`.
 
-**Mac: Run the Python simple server**
+**Mac: Run the Python simple HTTP server**
 
 1.  In your terminal, browse to the Swagger UI `dist` directory.
 

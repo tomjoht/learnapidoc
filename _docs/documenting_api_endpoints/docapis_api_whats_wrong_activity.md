@@ -13,7 +13,3 @@ In this activity, you'll critique an existing API reference topic to identify wh
 {:toc}
 
 {% include content/activities/whats_wrong_with_surfreport.md %}
-
-{% include random_ad.html %}
-
-{% include random_ad2.html %}

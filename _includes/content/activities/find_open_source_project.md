@@ -13,7 +13,7 @@ To find an open-source project with API doc needs:
 
     <a class="noCrossRef" href="http://idratherbewriting.site/githubsearchopps"><img src="https://idratherbewritingmedia.com/images/api/githubadvancedsearch2.png"/></a>
 
-4.  Click **Search** and browse [the results](http://idratherbewriting.site/githubsearchopps).
+4.  Click **Search** and browse [the results](https://idratherbewriting.site/githubapidocs).
 
     In the results, you might want to look for a *REST API* project (rather than a [native-library API]({{site.rooturl}}nativelibraryapis_overview.html) such as a Java API). Developers don't often distinguish between the two with requests related to API documentation. If you see doc requests related to Java, C++, JavaScript, or some other programming-specific framework (with no identifiable endpoints), it's probably not a REST API. However, working on such a project could be equally fulfilling as a learning opportunity. It depends on what you're interested in.
 

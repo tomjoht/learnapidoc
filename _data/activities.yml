@@ -30,7 +30,7 @@ folders:
   - title: "Activity 4c: Create a SwaggerUI display"
     jurl: /create_swaggerui_display.html
   - title: "Activity 4d (optional): View local OpenAPI file in Swagger UI"
-    jurl: /create_swaggerui_display.html
+    jurl: /view_local_openapi_swaggerui.html
   - title: "Activity 6a: Complete the SendGrid Getting Started tutorial in 5 min"
     jurl: /getting_started_tutorial.html
   - title: "Activity 6b: Judge conceptual content and decide which is best"

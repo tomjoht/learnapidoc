@@ -141,10 +141,9 @@ To create the web page code from scratch:
          wind speed: <span id="windSpeed"></span>
       </body>
       ```
-10. Save the file and open it in Chrome. Open the JS Console to view the object logged.
+10. Save the file and open it in Chrome. Open the JavaScript Console to view the object logged. (To open the JavaScript Console, on Chrome on a Mac, go to **View > Developer > Javascript Console**; on Windows, click the **menu** button (vertical ellipses) and go to **More tools > Developer tools**. Then click the **Console** tab.)
 
     {: .tip}
     You can view the file here: [weather-plain.html](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html).
-
 
 {% if page.workshop_activities == true %}*For more information related to this activity, see [Inspect the JSON from the response payload]({{site.rooturl}}docapis_json_console.html) and [Access and print a specific JSON value]({{site.rooturl}}docapis_access_json_values.html).*{% endif %}

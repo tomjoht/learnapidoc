@@ -1,5 +1,5 @@
 ---
-title: "Create a Swagger UI display with an OpenAPI spec document"
+title: "Activity 4c: Create a Swagger UI display"
 permalink: /create_swaggerui_display.html
 ---
 

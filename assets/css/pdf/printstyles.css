@@ -541,5 +541,5 @@ ol ul {
 
 li ul li, li ol li {
     list-style-type: disc;
-    margin-left: -5px;
+    margin-left: -15px;
 }

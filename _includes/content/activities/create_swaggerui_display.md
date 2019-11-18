@@ -36,7 +36,7 @@ First, you'll make sure you can view Swagger locally. Then you'll switch the Pet
 
     When you're ready to publish your Swagger UI file, you just upload the `dist` folder (or whatever you want to call it) to a web server and go to the `index.html` file. For example, if you called your directory `dist` (leaving it unchanged), you would go to `http://myserver.com/dist/`.
 
-{: .tip}
-For more instructions in working with Swagger UI, see the [Swagger.io docs](https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/).
+    {: .tip}
+    For more instructions in working with Swagger UI, see the [Swagger.io docs](https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/).
 
 {% if page.workshop_activities == true %}*For more information related to this activity, see [Swagger UI tutorial]({{site.rooturl}}pubapis_swagger.html).*{% endif %}
