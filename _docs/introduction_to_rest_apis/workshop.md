@@ -16,8 +16,10 @@ The workshop agenda, slides, and activities correspond to full-day API workshop.
 {:toc}
 {::options toc_levels="2" /}
 
+{% comment %}
 {: .tip}
 You can print the activity content as a [PDF here](https://idratherbewritingmedia.com/print/api_workshop_activities.pdf). This might make it easier to follow along on your laptop during the workshop.
+{% endcomment %}
 
 ## 8:00 - 9:00am: Registration + breakfast
 

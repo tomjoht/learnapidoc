@@ -17,7 +17,7 @@ folders:
     jurl: /postman_request.html
   - title: "Activity 2d: Make requests with curl"
     jurl: /make_curl_request.html
-  - title: "Activity 2e: Make an API request on a web page"
+  - title: "Activity 2e (optional): Make an API request on a web page"
     jurl: /ajax_api_request.html
   - title: "Activity 3a: What's wrong with this API reference topic"
     jurl: /whats_wrong_with_surfreport.html
@@ -29,17 +29,19 @@ folders:
     jurl: /edit_openapi_spec_file.html
   - title: "Activity 4c: Create a SwaggerUI display"
     jurl: /create_swaggerui_display.html
-  - title: "Activity 6a: Judge conceptual content and decide which is best"
-    jurl: /conceptual_comparisons.html
-  - title: "Activity 7a: Classify code documentation into one of the five types"
-    jurl: /classify_code_approach.html
+  - title: "Activity 4d (optional): View local OpenAPI file in Swagger UI"
+    jurl: /create_swaggerui_display.html
+  - title: "Activity 6a: Complete the SendGrid Getting Started tutorial in 5 min"
+    jurl: /getting_started_tutorial.html
+  - title: "Activity 6b: Judge conceptual content and decide which is best"
+    jurl: /code_tutorials.html
+  - title: "Activity 7a: Analyze code tutorials"
+    jurl: /code_tutorial_analysis.html
   - title: "Activity 8a: Set up a GitHub wiki"
     jurl: /create_github_wiki.html
   - title: "Activity 8b: Clone your GitHub repo locally"
     jurl: /clone_repo_locally.html
   - title: "Activity 8c: Push local changes to the remote"
     jurl: /push_local_to_remote.html
-  - title: "Activity 9a: Look at API documentation jobs and requirements"
-    jurl: /look_for_apidoc_jobs.html
-  - title: "Activity 9b: Find an open-source project"
+  - title: "Activity 9a: Find an open-source project"
     jurl: /find_open_source_project.html

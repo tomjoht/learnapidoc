@@ -75,11 +75,11 @@ To create the web page code from scratch:
 
 2.  Save your file (anywhere convenient) with a name such as **weather.html**.
 3.  Open Postman and go to the Current weather data (`weather`) endpoint that you configured in an earlier activity (see [Submit requests through Postman]({{site.rooturl}}docapis_postman.html) for more information).
-4.  Click the **Code** link (below the Save button), and then select **JavaScript > jQuery AJAX**.
+4.  Click the **Code** link (below the Save button), and then select **JavaScript > Jquery AJAX**.
 
-    {% include course_image.html size="small_medium" filename="postmanjqueryajax" ext_print="png" ext_web="png" alt="JavaScript Ajax code snippet" caption="JavaScript Ajax code snippet" %}
+    {% include course_image.html size="small_medium" filename="postmanjqueryajax" ext_print="png" ext_web="png" alt="JavaScript jQuery AJAX code snippet" caption="JavaScript jQuery AJAX code snippet" %}
 
-    The AJAX code looks as follows:
+    The code looks as follows:
 
     ```js
     var settings = {
