@@ -13,7 +13,7 @@ You can create a local web server running on your computer through [Python's Sim
     {: .warning}
     When you install Python, be sure to select the check box that says "Add Python 3.7 to PATH." *This check box isn't selected by default. If you don't select it, your command prompt won't recognize the word "python".*
 
-    {% include course_image.html size="medium" filename="pythonscreenshot" ext_print="png" ext_web="png" alt="Installing Python to PATH" caption="Add Python 3.7 to PATH" %}
+    {% include course_image.html size="medium" filename="pythonscreenshot2" ext_print="png" ext_web="png" alt="Installing Python to PATH" caption="Add Python 3.7 to PATH" %}
 
 2.  After installing Python, close your command prompt and reopen it.
 3.  In your command prompt, browse to the Swagger UI `dist` directory.
@@ -41,11 +41,11 @@ You can create a local web server running on your computer through [Python's Sim
     ```
     (If your Command Prompt doesn't recognize `python`, then you probably need to add Python to your PATH. Instructions for doing that are outside the scope of this tutorial.)
 
-5.  Type either `localhost` in your browser's address bar (or copy the `http://0.0.0.0:8000/` path). This address lets you view the local web server.
+5.  Copy the `http://0.0.0.0:8000/` path and paste it into your address bar. This address lets you view the local web server.
 
-    By default, web servers default to the `index.html` file in the directory, so it will show the Swagger UI file automatically. If the browser doesn't direct to `index.html`, add it manually: `http://localhost/index.html`.
+    By default, web servers default to the `index.html` file in the directory, so it will show the Swagger UI file automatically. If the browser doesn't direct to `index.html`, add it manually: `http://0.0.0.0:8000//index.html`.
 
-    To stop the server, press **Ctrl+C** in your command prompt.
+    To stop the server, press **Ctrl+C** in your command prompt. If you closed your Command Prompt before stopping the service, type `ps`, find the process ID, then type `kill -9 <process ID>`.
 
 **Mac: Run the Python simple server**
 
@@ -73,11 +73,12 @@ You can create a local web server running on your computer through [Python's Sim
     Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
     ```
 
-3.  Copy the `http://0.0.0.0:8000/` path to your browser's address bar. This is the web server address. You can also type `localhost`.
 
-    By default, web servers default to the `index.html` file in the directory, so it will show the Swagger UI file automatically. If the browser doesn't direct to `index.html`, add it manually: `http://0.0.0.0:8000/index.html`.
+3.  Copy the `http://0.0.0.0:8000/` path and paste it into your address bar. This address lets you view the local web server.
 
-    To stop the server, press **Ctrl+C** in your terminal.
+    By default, web servers default to the `index.html` file in the directory, so it will show the Swagger UI file automatically. If the browser doesn't direct to `index.html`, add it manually: `http://0.0.0.0:8000//index.html`.
+
+    To stop the server, press **Ctrl+C** in your command prompt. If you closed your Command Prompt before stopping the service, type `ps`, find the process ID, then type `kill -9 <process ID>`.
 
 For more details on using the Python simple server, see [How do you set up a local testing server?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server) for more details.
 
@@ -120,4 +121,6 @@ By default, SwaggerUI has the Petstore OpenAPI document configured in the `url` 
     url: "openapi_openweathermap.yml",
     ```
 
-7.  View the `index.html` file locally in your browser using the Python simple server, which should already be running from the setup in the previous section.
+7.  View the `index.html` file locally in your browser using the Python simple server. For example, go to `http://0.0.0.0:8000/` or `http://0.0.0.0:8000/index.html`.
+
+    If you go to the file path, such as `file:///Users/tomjoht/Downloads/dist/index.html`, you'll see a message that says "Failed to load API definition" note in the JavaScript Console that says "URL scheme must be "http" or "https" for CORS request." The SimpleServer simulates this http or https.

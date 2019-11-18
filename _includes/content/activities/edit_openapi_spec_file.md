@@ -18,7 +18,7 @@ To edit the OpenAPI specification file:
 
 4.  In the `info` object (near the top), make some changes to the `description` property and see how the visual display in the right column gets updated.
 5.  In the `parameters` object, make some changes to one of the `description` properties and see how the visual editor gets updated.
-6.  Look for the `$ref` pointer in the `response` object. Identify what it points to in `components`.
+6.  Look for the `$ref` pointer in the `responses` object. Identify what it points to in `components`.
 7.  Change some spacing in a way that makes the spec invalid (such as inserting a space before `info`), and look at the error that appears. Then revert the invalid space.
 8.  Expand the **Get** section and click **Try it out**. Then click **Execute** and look at the response.
 

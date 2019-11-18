@@ -6,13 +6,13 @@ The following are 6 common conceptual topics in API documentation. For each topi
 
 **API overview**
 
-* [Box](https://developer.box.com/docs/overview)
+* [Spotify](https://developer.spotify.com/documentation/web-api/)
 * [Hootsuite](https://developer.hootsuite.com/docs/the-hootsuite-platform)
 * [Watson Assistant](https://cloud.ibm.com/docs/services/assistant?topic=assistant-index#index)
-{% comment %} * [PB Shipping](https://shipping.pitneybowes.com/overview.html) {% endcomment %}
+
 
 **API getting started**
-* [Parse](https://docs.parseplatform.org/parse-server/guide/)
+* [Mailchimp](https://mailchimp.com/developer/guides/get-started-with-mailchimp-api-3/)
 * [Paypal](https://developer.paypal.com/docs/api/overview/)
 * [Google](https://developers.google.com/adsense/management/getting_started)
 
