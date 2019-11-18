@@ -124,3 +124,5 @@ By default, SwaggerUI has the Petstore OpenAPI document configured in the `url` 
 7.  View the `index.html` file locally in your browser using the Python simple server. For example, go to `http://0.0.0.0:8000/` or `http://0.0.0.0:8000/index.html`.
 
     If you go to the file path, such as `file:///Users/tomjoht/Downloads/dist/index.html`, you'll see a message that says "Failed to load API definition" note in the JavaScript Console that says "URL scheme must be "http" or "https" for CORS request." The SimpleServer simulates this http or https.
+
+8.  To stop the Python simpler server, press **Ctrl+C** in your terminal or command prompt.

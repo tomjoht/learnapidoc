@@ -11,7 +11,7 @@ In this section, you will create a new GitHub repo and publish a sample file the
 
 3.  Give the repo a **Repository name**, a short **Description**, select **Public**, select **Initialize the repo with a README**, and then click **Create repository**. (Don't worry about selecting the license or gitignore settings for this activity.)
 4.  Click the **Wiki** tab on the top navigation bar of your new repository.
-5.  Click **Create the first page**. (Or if your wiki already has pages, click **New Page**.)
+5.  Click **Create the first page**. 
 6.  In the default page ("Home"), insert your own sample documentation content, preferably using Markdown syntax. Or grab the sample Markdown page of a <a href="https://idratherbewriting.com/learnapidoc/assets/files/surfreportendpointdoc.md">fake endpoint called surfreport here</a> and insert it into the page.
 6.  In the **Edit message** box, type a description of what you updated (your commit message).
 7.  Click **Save Page**.

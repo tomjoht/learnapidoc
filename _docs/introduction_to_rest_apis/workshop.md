@@ -111,7 +111,7 @@ Break. Snacks and coffee provided.
 
 {% include workshop_button.html title="Activity 8b: Clone your GitHub repo locally" activity="clone_repo_locally" button_type="warning" %}
 
-{% include workshop_button.html title="Activity 8c: Push local changes to the remote" activity="push_local_to_remote" button_type="warning" %}
+{% include workshop_button.html title="Activity 8c (optional): Push local changes to the remote" activity="push_local_to_remote" button_type="default" %}
 
 ## 4:00 - 4:30pm: Thriving in the API doc space
 

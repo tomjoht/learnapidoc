@@ -6,8 +6,8 @@ So far you've been working with GitHub in the browser. Now we'll take the same c
 
 To clone the GitHub repo locally:
 
-1.  If you don't already have Git installed, set it up on your computer. (You can check by typing `git --version` in your terminal window. See [Install Git]({{site.rooturl}}pubapis_github_wikis.html#git_install) for more information on installation.)
-2.  While viewing your the GitHub wiki in your browser, look for the section that says **Clone this wiki locally**. Click the clipboard button. (This copies the clone URL to your clipboard.)
+1.  If you don't already have Git installed, set it up on your computer. (You can check whether Git is installed by typing `git --version` in your terminal or command prompt. See [Install Git]({{site.rooturl}}pubapis_github_wikis.html#git_install) for more information on installation.)
+2.  While viewing your the GitHub wiki in your browser, look for the section that says **Clone this wiki locally** (highlighted below). Click the clipboard button. (This copies the clone URL to your clipboard.)
 
     {% include course_image.html size="medium" filename="clone-this-wiki-locally" ext_print="png" ext_web="png" alt="Clone this wiki locally" caption="Clone this wiki locally" %}
 
@@ -40,7 +40,7 @@ To clone the GitHub repo locally:
 
     The folder Git creates in the above example is called `weatherapi.wiki`.
 
-    Cloning the wiki gives you a copy of the content on your local machine. Git is distributed version control software, so everyone has his or her own copy. When you clone the repo, you create a copy on your local machine; the version in the cloud on GitHub is referred to as "origin." Thus, you have two instances of the content.
+    Cloning the wiki gives you a copy of the content on your local machine. Git is distributed version control software, so everyone has their own copy. When you clone the repo, you create a copy on your local machine; the version in the cloud on GitHub is referred to as "origin." Thus, you have two instances of the content.
 
     More than just copying the files, though, when you clone a repo, you initialize Git in the folder where you clone the repo. Initializing Git means Git will create an invisible Git folder in that directory, and Git can start tracking your edits to the files, providing version control. With Git initialized, you can run `pull` commands to get updates from the online repository (origin) pulled down to your local copy. You can also `commit` your changes and then `push` your changes back up to origin.
 
@@ -49,6 +49,6 @@ To clone the GitHub repo locally:
     {: .tip}
     You don't need to type the full directory name. Just start typing the first few letters and then press your **Tab** key to autocomplete the rest.
 
-    You might also want to browse to this folder via Finder (Mac) or Explorer (Windows). If you can view invisible files on your machine (for instructions on making hidden files visible, see one of the following: [Windows](https://support.microsoft.com/en-us/help/14201/windows-show-hidden-files) or [Mac](https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/)), you will also see a git folder.
+    You might also want to browse to this folder via Finder (Mac) or Explorer (Windows). The folder also continas an invisible folder called `.git`. For instructions on making hidden files visible, see one of the following: [Windows](https://support.microsoft.com/en-us/help/14201/windows-show-hidden-files) or [Mac](https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/)).
 
 {% if page.workshop_activities == true %}*For more information related to this activity, see [Manage content in a GitHub wiki]({{site.rooturl}}pubapis_github_wikis.html).*{% endif %}

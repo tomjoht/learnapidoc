@@ -14,7 +14,7 @@
     git status
     ```
 
-    Git responds:
+    Git shows the files it's tracking but which haven't been added to the commit's staging area:
 
     ```bash
     Changes not staged for commit:
@@ -23,7 +23,7 @@
     modified:   Home.md
     ```
 
-4.  Add all the files to your staging area. The staging area contains all files that you want added to your next commit:
+4.  Type `git add .` to add all the files to your staging area. The staging area contains all files that you want added to your next commit:
 
     ```bash
 	  git add .
@@ -31,7 +31,7 @@
 
 	  Git doesn't automatically track all files in the same folder where Git has been initialized. Git tracks modifications only for the files that have been "added" to Git. By typing `git add .` or `git add --all`, you're telling Git to start tracking modifications to all files in this directory. You could also type a specific file name here instead, such as `git add Home.md`, to just add a specific file (rather than all files changed) to Git's tracking.
 
-    After you run the `git add` command, Git adds the files into what's called the staging area. As a sports analogy, the staging area is like your on-deck circle. These files are ready to be committed when you run `git commit`.
+    After you run the `git add` command, Git adds the files into what's called the staging area. These files will be committed when you run `git commit`.
 
 4.  See the changes set in your staging area:
 
@@ -48,7 +48,7 @@
         modified:   Home.md
     ```
 
-	  The staging area lists all the files that have been added to Git that you have modified in some way. It's a good practice to always type `git status` before committing files because you might realize that by typing `git add .`, you might have accidentally added some files you didn't intend to track (such as large binary files). If you want to remove this file from the staging area, you can type `git reset HEAD Home.md` to unstage it.
+	  The staging area lists all the files that have been added to Git that you have modified in some way. It's a good practice to always type `git status` before committing files because you might realize that you accidentally added some files you didn't intend to track (such as large binary files). If you want to remove this file from the staging area, you can type `git reset HEAD Home.md` to unstage it.
 
 5.  Commit the changes:
 
@@ -72,14 +72,14 @@
 
     Unless you [set up automatic GitHub authentication]({{site.rooturl}}pubapis_github_wikis.html#set-up-automatic-github-authentication), you will be prompted for your GitHub username and password. (Note that your username is your GitHub login ID, such as "jdoe," not your friendly name, such as "John Doe.")
 
-    Note that when you type `git push` or `git pull` and don't specify the branch, GitHub uses the default branch from origin. The default branch on GitHub is called `master`. Thus the command actually passed is `git push origin master` (which means "push these changes to the remote origin[al] repository, in the `master` branch"). Some developers prefer to specify the repository and branch to ensure they are interacting with the right repositories and branches.
+    When you type `git push` or `git pull` and don't specify the branch, GitHub uses the default branch from origin. The default branch on GitHub is called `master`. Thus the command actually passed is `git push origin master` (which means "push these changes to the remote origin[al] repository, in the `master` branch"). Some developers prefer to specify the repository and branch to ensure they are interacting with the right repositories and branches.
 
     Your terminal window probably looks something like this:
 
     {% include course_image.html size="medium" filename="terminalupdates" ext_print="png" ext_web="png" alt="Terminal window with git commands" caption="Terminal window with git commands" %}
 
-7.  Now verify that your changes took effect. Browse to your GitHub wiki repository and look to see the changes.
+7.  Now verify that your changes took effect. Browse to your GitHub wiki repository, refresh the page, and look to see the changes.
 
-Although there are many options for authoring and publishing tools with developer docs, at their core is a probably a Git workflow. The Git workflow can be more powerful and complex than any authoring tool. Interacting with Git might also be key for interacting with engineering repos to make edits to documentation that appears inside code.
+Although there are many options for authoring and publishing tools with developer docs (see [staticgen.com](https://www.staticgen.com/) for common docs-as-code tools), at the core of these tools is usually a Git workflow. The Git workflow can be more powerful and complex than any authoring tool. Interacting with Git might also be key for interacting with engineering repos to make edits to documentation that appears inside code.
 
 {% if page.workshop_activities == true %}*For more information related to this activity, see [Manage content in a GitHub wiki]({{site.rooturl}}pubapis_github_wikis.html).*{% endif %}
