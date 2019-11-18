@@ -71,7 +71,7 @@ In this section, we follow an inductive approach where you look at the three exa
 
 {% include workshop_button.html title="Activity 7c: Push local changes to the remote" activity="push_local_to_remote" button_type="warning" %}
 
-## VIII: Getting an API documenation job and thriving
+## VIII: Getting an API documentation job and thriving
 
 {% include workshop_button.html title="Activity 8a: Look at API documentation jobs and requirements" activity="look_for_apidoc_jobs" button_type="info" %}
 

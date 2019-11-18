@@ -167,7 +167,7 @@ curl has a lot of possible commands, but the following are the most common when 
 :  *Example:* `curl -i http://www.example.com`
 
 `-d` or `--data`
-:  Includes data to post to the URL. The data needs to be [url encoded](http://www.w3schools.com/tags/ref_urlencode.asp). Data can also be passed in the request body.
+:  Includes data to post to the URL. This data allows you to pass in a [request body parameter](docapis_doc_parameters.html#request_body_parameters). The data needs to be [url encoded](http://www.w3schools.com/tags/ref_urlencode.asp). 
 :  *Example:* `curl -d "data-to-post" http://www.example.com`
 
 `-H` or `--header`

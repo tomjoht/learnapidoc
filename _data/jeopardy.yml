@@ -1,5 +1,5 @@
 list:
-- answer: An authorization method for API requests uses a third-party identity server such as Google, GitHub, or Facebook.
+- answer: An authorization method for API requests that uses a third-party identity server such as Google, GitHub, or Facebook.
   question: What is oAuth?
 
 - answer: A tool you can use to submit API requests directly from the command line.
@@ -32,8 +32,8 @@ list:
 - answer: An authoring and validation tool useful when creating OpenAPI specification files.
   question: What is Swagger Editor?
 
-- answer: What is a spec-first philosophy?
-  question: A design model where you create the OpenAPI specification first before beginning any coding.
+- answer: A design model where you create the OpenAPI specification first before beginning any coding.
+  question: What is a spec-first philosophy?
 
 - answer: Information about request thresholds and what happens when you exceed them.
   question: What is rate limiting?
@@ -71,7 +71,7 @@ list:
 - answer: A GUI tool for designing OpenAPI specification files, including the ability to auto-generate the schema description for JSON.
   question: What is Stoplight?
 
-- answer: Refers to programmatically building documentation from the server when you commit to a particular Git branch.
+- answer: Programmatically building documentation from the server when you commit to a particular Git branch.
   question: What is continuous deployment?
 
 - answer: A web service API format, based on XML, that was popular before REST took over the landscape.

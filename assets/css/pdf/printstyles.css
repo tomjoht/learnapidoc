@@ -538,3 +538,8 @@ img.tiny {
 ol ul {
   margin-bottom: 10px;
 }
+
+li ul li, li ol li {
+    list-style-type: disc;
+    margin-left: -5px;
+}

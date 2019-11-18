@@ -131,9 +131,11 @@ The general workshop ends and we transition into any individual consulting as de
 
 At the close of the workshop, please take this [review survey](https://www.questionpro.com/t/AOaGwZfuH0). Thanks.
 
+{% comment %}
 {% include random_ad.html %}
 
 {% include random_ad2.html %}
+{% endcomment %}
 
 <style>
 ul#markdown-toc::before  {

@@ -9,13 +9,13 @@ To find an open-source project with API doc needs:
 
     Scroll to the top and notice that `label: "help wanted"` automatically populates in the field.
 
-3.  In this Advanced Search box at the top, add some additional keywords (such as `documentation` and `rest api`) as well:
+3.  In this Advanced Search box at the top, add some additional keywords (such as `API documentation`) as well:
 
-    <a class="noCrossRef" href="http://idratherbewriting.site/githubsearchopps"><img src="https://idratherbewritingmedia.com/images/api/githubopensourceprojects.png"/></a>
+    <a class="noCrossRef" href="http://idratherbewriting.site/githubsearchopps"><img src="https://idratherbewritingmedia.com/images/api/githubadvancedsearch2.png"/></a>
 
 4.  Click **Search** and browse [the results](http://idratherbewriting.site/githubsearchopps).
 
-    In the results, you might want to look for a *REST API* project (rather than a [native-library API]({{site.rooturl}}nativelibraryapis_overview.html) such as a Java API). It might be hard to distinguish between the two, so include "REST" in your query. If you see doc requests related to Java, C++, JavaScript, or some other programming-specific framework, it's probably not a REST API.
+    In the results, you might want to look for a *REST API* project (rather than a [native-library API]({{site.rooturl}}nativelibraryapis_overview.html) such as a Java API). Developers don't often distinguish between the two with requests related to API documentation. If you see doc requests related to Java, C++, JavaScript, or some other programming-specific framework (with no identifiable endpoints), it's probably not a REST API. However, working on such a project could be equally fulfilling as a learning opportunity. It depends on what you're interested in.
 
     As you browse the results, are there any projects that look interesting or promising? If so, great. If not, adjust some of the keywords and keep looking.
 

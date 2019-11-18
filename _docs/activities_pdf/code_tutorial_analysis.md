@@ -1,6 +1,6 @@
 ---
-title: "Activity 6a: Complete the SendGrid Getting Started tutorial in 5 min"
-permalink: /getting_started_tutorial.html
+title: "Activity 7a: Analyze code tutorials"
+permalink: /code_tutorial_analysis.html
 ---
 
-{% include content/activities/getting_started_tutorial.md %}
+{% include content/activities/code_tutorial_analysis.md %}

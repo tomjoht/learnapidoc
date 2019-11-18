@@ -4,7 +4,7 @@
 
 Let's explore the basic sections in the [OpenWeatherMap API](https://openweathermap.org/api/):
 
-1.  Go to the [openweathermap.org](https://openweathermap.org)
+1.  Go to the [openweathermap.org](https://openweathermap.org).
 2.  Click **API** in the top navigation bar.
 3.  In the **Current weather data** section, click the **API doc** button.
 4.  Click some of the links in the **Examples of API calls** sections.

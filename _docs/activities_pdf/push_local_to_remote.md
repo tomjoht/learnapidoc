@@ -1,5 +1,5 @@
 ---
-title: "Activity 7c: Push local changes to the remote"
+title: "Activity 7c (optional): Push local changes to the remote"
 permalink: /push_local_to_remote.html
 ---
 

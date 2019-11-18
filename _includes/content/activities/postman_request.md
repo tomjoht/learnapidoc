@@ -64,7 +64,7 @@ https://api.openweathermap.org/data/2.5/forecast?zip=95050&appid=APIKEY&units=im
 
 Observe how the response contains a `list` that provides the forecast details for five days.
 
-### Make one more OpenWeatherMap API request
+### (Optional) Make one more OpenWeatherMap API request
 
 Make one more OpenWeatherMap API request, this time changing the way you specify the location. Instead of specifying the location by zip code, specify the location using `lat` and `lon` geocoordinates instead. For example:
 

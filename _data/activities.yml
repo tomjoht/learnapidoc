@@ -34,14 +34,14 @@ folders:
   - title: "Activity 6a: Complete the SendGrid Getting Started tutorial in 5 min"
     jurl: /getting_started_tutorial.html
   - title: "Activity 6b: Judge conceptual content and decide which is best"
-    jurl: /code_tutorials.html
+    jurl: /conceptual_comparisons.html
   - title: "Activity 7a: Analyze code tutorials"
     jurl: /code_tutorial_analysis.html
   - title: "Activity 8a: Set up a GitHub wiki"
     jurl: /create_github_wiki.html
   - title: "Activity 8b: Clone your GitHub repo locally"
     jurl: /clone_repo_locally.html
-  - title: "Activity 8c: Push local changes to the remote"
+  - title: "Activity 8c (optional): Push local changes to the remote"
     jurl: /push_local_to_remote.html
   - title: "Activity 9a: Find an open-source project"
     jurl: /find_open_source_project.html

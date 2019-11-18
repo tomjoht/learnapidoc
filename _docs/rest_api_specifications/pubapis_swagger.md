@@ -146,7 +146,7 @@ When you're setting up Swagger UI, you might run into some issues. The following
 
 If you have security correctly configured, but the requests are rejected, it could be due to a CORS (cross-origin resource sharing) issue. CORS is a security measure that websites implement to make sure other scripts and processes cannot take their content through requests from remote servers. See [CORS Support](https://github.com/swagger-api/swagger-ui#cors-support) in Swagger UI's documentation for details.
 
-If the requests aren't working, open your browser's JavaScript console (in Chrome, View > Developer > Javascript Console) when you make the request and see if the error relates to cross-origin requests. If so, ask your developers to enable CORS on the endpoints.
+If the requests aren't working, open your browser's JavaScript console when you make the request and see if the error relates to cross-origin requests. If this is the error, ask your developers to enable CORS on the endpoints. (To open the JavaScript Console, on Chrome on a Mac, go to **View > Developer > Javascript Console**; on Windows, click the **menu** button (vertical ellipses) and go to **More tools > Developer tools**. Then click the **Console** tab.)
 
 **Host URL issues:**
 
