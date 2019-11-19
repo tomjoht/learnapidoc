@@ -1,5 +1,5 @@
 ---
-title: "Headless CMS options (and Readme.io)"
+title: "Headless CMS options"
 permalink: /pubapis_headless_cms.html
 course: "Documenting REST APIs"
 sidebar: docapis
@@ -8,7 +8,10 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-Rounding out the publishing tool options, there is a class of developer doc tools that provide online GUIs for authoring and publishing, but they still store your content as flat files in repositories such as GitHub and Bitbucket. In other words, they provide a WordPress.com-like experience for your content (giving you a user interface to browse your posts, pages, layouts, and other content) but allow your content to live in plain text files in version control repositories. This type of tool is called a "headless CMS" because they are missing the head (database) as the source for your content.
+*This page is under construction. I realized the information wasn't accurate, so I'm reworking it. For a good explanation of headless CMSes, see [Headless CMS vs Decoupled CMS: The Ultimate Guide](https://www.coredna.com/blogs/headless-vs-decoupled-cms).
+{% comment %}
+
+Rounding out the publishing tool options, there is a class of developer doc tools that provide online GUIs for authoring and publishing, but they still store your content as flat files in repositories such as GitHub and Bitbucket. In other words, they provide a WordPress.com-like experience for your content (giving you a user interface to browse your posts, pages, layouts, and other content) but allow your content to live in plain text files in version control repositories.
 
 * TOC
 {:toc}
@@ -73,3 +76,4 @@ Here are a few sample API doc sites built with Readme.io:
 
 {: .tip}
 Which tool should you use? I provide some more concrete recommendations in [Which tool to choose for API docs -- my recommendations](pubapis_which_tool_to_choose.html).
+{% endcomment %}

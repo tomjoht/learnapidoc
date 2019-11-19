@@ -289,8 +289,8 @@ folders:
   - title: Hosting and deployment options
     jurl: /pubapis_hosting_and_deployment.html
 
-  - title: Headless CMS options
-    jurl: /pubapis_headless_cms.html
+  # - title: Headless CMS options
+  #   jurl: /pubapis_headless_cms.html
 
   - title: "Which tool to choose for API docs &mdash; my recommendations"
     jurl: /pubapis_which_tool_to_choose.html
