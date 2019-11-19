@@ -11,10 +11,10 @@ Code tutorials often have the following sections or characteristics:
 *  **Intended audience** - assumptions about who the tutorial is for, skill level, point in journey
 *  **Prerequisites** - expectations about required items, configurations, or utilities for the tutorial (e.g., hardware devices, services set up, API keys, software, etc.).
 *  **Steps** - the tasks involved in the solution, often formatted as sections. The steps show an assembly order working up to final solution, building the code piece by piece as needed (like Legos).
-*  **Examples to make it real** - real examples included in the steps to make the steps more meaningful and understandable.
-*  **Teaching moments** - conceptual explanations peppered in along the way asides or footnotes.
+*  **Examples to make it real** - examples or personalized info included in the steps to make the steps more meaningful and understandable.
+*  **Teaching moments** - conceptual explanations peppered in along the way as asides or footnotes.
 *  **Inline code comments** - explanations inside the code about what's going on.
-*  **Conclusion, next steps** - wrapping it up, showing fully assembled code, pointing out next logical steps, linking to related tutorials.
+*  **Conclusion, next steps** - wrap-up, showing fully assembled code, pointing out next logical steps, linking to related tutorials.
 
 The following are sample tutorials. Pick two tutorials and analyze them to see how many of the above common sections and characteristics you can find.
 

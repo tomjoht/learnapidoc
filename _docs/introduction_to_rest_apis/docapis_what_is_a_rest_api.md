@@ -124,7 +124,7 @@ We'll explore endpoints in much more depth in the sections to come (for example,
 
 The terminology of "GET requests" and "message responses" transported over "HTTP protocol" might seem unfamiliar, but this is just the official REST terminology to describe what's happening. Because you've used the web, you're already familiar with how REST APIs work &mdash; the web itself essentially follows a RESTful style.
 
-If you open a browser and go to [https://idratherbewriting.com](https://idratherbewriting.com), you're really using HTTP protocol (`http://`) to submit a GET request to the resource available on a web server. The response from the server sends the content at this resource back to you using HTTP. Your browser is just a client that makes the message response look pretty.
+If you open a browser and go to [https://idratherbewriting.com](https://idratherbewriting.com), you're really using HTTP protocol (`https://`) to submit a GET request to the resource available on a web server. The response from the server sends the content at this resource back to you using HTTP. Your browser is just a client that makes the message response look pretty.
 
 {% if site.format == "pdf" or site.format == "kindle" %}<img class="medium" src="https://idratherbewritingmedia.com/images/api/restapi_www.png" alt="Web as REST API" />
 {% elsif site.format == "web" %}<img class="medium" src="https://idratherbewritingmedia.com/images/api/restapi_www.svg" alt="Web as REST API" />
