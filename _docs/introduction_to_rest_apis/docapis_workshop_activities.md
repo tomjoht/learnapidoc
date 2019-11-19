@@ -37,7 +37,7 @@ The content here merely contains the same exercises that appear embedded in othe
 
 {% include workshop_button.html title="Activity 2d: Make requests with curl" activity="make_curl_request" button_type="primary" %}
 
-{% include workshop_button.html title="Activity 2e: Make AJAX request and inspect payload" activity="ajax_api_request" button_type="primary" %}
+{% include workshop_button.html title="Activity 2e: Make an API request on a web page" activity="ajax_api_request" button_type="primary" %}
 
 ## Part III: Documenting API endpoints
 

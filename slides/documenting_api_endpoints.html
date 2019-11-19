@@ -67,18 +67,18 @@ slide_title: "Documenting API endpoints"
              <h2>2. Endpoints and methods</h2>
              <section>
 
-               <p>The endpoints indicate how you access the resource. The method indicates the allowed interaction (such as GET, POST, or DELETE) with the resource.</p>
+               <p>The <i>endpoint</i> indicates the URI used to access the resource (e.g., <code>/rewards/items</code>). The <i>method</i> indicates the allowed interaction (such as GET, POST, PUT, or DELETE) with the resource.</p>
              </section>
 
 
              <section>
                <h3>Instagram example</h3>
-   <a href="https://www.instagram.com/developer/endpoints/relationships/"><img src="https://idratherbewritingmedia.com/images/api/instagramurlexample.png"/></a>
+   <a href="https://www.instagram.com/developer/endpoints/users/"><img src="https://idratherbewritingmedia.com/images/api/instagramexample2.png"/></a>
              </section>
 
              <section>
-               <h3>Put path parameters in curly braces</h3>
-               <a href="https://developers.facebook.com/docs/graph-api/reference/v2.11/achievement/"><img src="https://idratherbewritingmedia.com/images/api/facebookapicolor.png"/></a>
+               <h3>Stripe example</h3>
+               <a href="https://stripe.com/docs/api/charges"><img src="https://idratherbewritingmedia.com/images/api/stripechargeobject.png"/></a>
                <!--
                <pre style="color: whitesmoke; padding: 15px;">
 /campaigns/<span style="color: orange;">{campaign_id}</span>/actions/send
@@ -88,8 +88,8 @@ slide_title: "Documenting API endpoints"
                 </section>
 
                 <section>
-                  <h3>List the method beside the endpoint</h3>
-                  <a href="https://developer.box.com/reference/#add-a-comment-to-an-item"><img src="https://idratherbewritingmedia.com/images/api/methodwithendpoint.png"/></a>
+                  <h3>Box example</h3>
+                  <a href="https://developer.box.com/en/reference/get-folders-id/"><img src="https://idratherbewritingmedia.com/images/api/boxexample2.png"/></a>
                 </section>
 
                 <section>
@@ -107,7 +107,7 @@ slide_title: "Documenting API endpoints"
              <section>
              <h2>3. Parameters</h2>
             <section>
-             <p>Parameters are options you can pass with the endpoint (such as specifying the response format or the amount returned) to influence the response.
+             <p>Parameters are options you can pass with the endpoint to configure the response. For example, a parameter might specify the number of items returned or the format.
              </p>
 
              </section>
@@ -132,7 +132,7 @@ slide_title: "Documenting API endpoints"
               </section>
               <section>
                 <small>Request body parameter:</small>
-                <pre><code>
+                <pre><code data-trim contenteditable>>
 {
   "days": 2,
   "units": "imperial",
@@ -166,25 +166,13 @@ slide_title: "Documenting API endpoints"
            </section>
 
     <section>
-      <h3>Request body parameter example</h3>
-
-    <pre><code data-trim contenteditable>
-    {
-    "days": 2,
-    "units": "imperial",
-    "time": 1433524597,
-    "active": true
-    }
-    </code></pre></section>
-
-    <section>
        <h3>Box Example</h3>
-       <a href="https://developer.box.com/reference#edit-a-collaboration"><img class="shortened" src="https://idratherbewritingmedia.com/images/api/boxparameterexample.png" /></a>
+       <a href="https://developer.box.com/en/reference/put-collaborations-id/#request-example"><img class="shortened" src="https://idratherbewritingmedia.com/images/api/boxparamsscreen.png" /></a>
     </section>
 
     <section>
        <h3>Yelp Example</h3>
-       <a href="https://www.yelp.com/developers/documentation/v2/search_api"><img src="https://idratherbewritingmedia.com/images/api/yelp_3_17.png" /></a>
+       <a href="https://www.yelp.com/developers/documentation/v3/business_search"><img src="https://idratherbewritingmedia.com/images/api/yelpparamsscreen.png" /></a>
     </section>
 
           </section>
@@ -204,11 +192,11 @@ slide_title: "Documenting API endpoints"
 
            <section>
              <h3>Twitter request example</h3>
-             <a href="https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-friends-list"><img class="shortened" src="https://idratherbewritingmedia.com/images/api/twitterrequestexample.png" /></a>
+             <a href="https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-friends-list"><img class="shortened" src="https://idratherbewritingmedia.com/images/api/twittersamplerequest2.png" /></a>
            </section>
 
            <section><h3>Multiple request examples</h3>
-             <a href="http://docs.citygridmedia.com/display/citygridv2/Places+API"><img src="https://idratherbewritingmedia.com/images/api/search_usage_examples.png"/></a>
+             <a href="https://citygridmedia.atlassian.net/wiki/spaces/citygridv2/pages/4980755/Places+API"><img src="https://idratherbewritingmedia.com/images/api/citygridrequests2.png"/></a>
            </section>
 
            <section><h3>Requests in various languages</h3>
@@ -223,7 +211,12 @@ slide_title: "Documenting API endpoints"
 
 
            <section><h3>API Explorers provide interactivity</h3>
-             <a href="http://developer.nytimes.com/article_search_v2.json#/Console/GET/articlesearch.json"><img class="shortened" src="https://idratherbewritingmedia.com/images/api/nytimesrequestexample.png"/></a>
+             <a href="https://developer.nytimes.com/docs/articlesearch-product/1/routes/articlesearch.json/get"><img class="shortened" src="https://idratherbewritingmedia.com/images/api/nytimesapisearch.png"/></a>
+           </section>
+
+
+           <section><h3>Stoplight API explorer</h3>
+             <a href="https://sendgrid.com/docs/API_Reference/api_v3.html"><img class="shortened" src="https://idratherbewritingmedia.com/images/api/sendgridtryitout.png"/></a>
            </section>
 
            <section><h3>Requests can be dangerous</h3>
@@ -238,11 +231,11 @@ slide_title: "Documenting API endpoints"
              <p>The response example shows a sample response from the request example; the response schema defines all possible elements in the response.</p>
              </section>
              <section><h3>Sendgrid example</h3>
-               <a href="https://sendgrid.com/docs/api-reference/"><img class="shortened" src="https://idratherbewritingmedia.com/images/api/sendgridresponseexample1.png"/></a>
+               <a href="https://sendgrid.api-docs.io/v3.0/users-api"><img class="shortened" src="https://idratherbewritingmedia.com/images/api/sendgridresponseexample.png"/></a>
              </section>
 
              <section><h3>Sendgrid - schema</h3>
-               <a href="https://sendgrid.com/docs/api-reference/"><img class="shortened" src="https://idratherbewritingmedia.com/images/api/sendgridresponseexample2.png"/></a>
+               <a href="https://sendgrid.com/docs/api-reference/"><img class="shortened" src="https://idratherbewritingmedia.com/images/api/sendgridresponseschema.png"/></a>
              </section>
 
              <section><h3>Sunrise/sunset - example</h3>
@@ -254,7 +247,7 @@ slide_title: "Documenting API endpoints"
              </section>
 
              <section><h3>Strategies for nested objects</h3>
-               <a href="https://www.dropbox.com/developers/core/docs#disable-token"><img class="shortened" src="https://idratherbewritingmedia.com/images/api/returnvaluedefinitions.png"/></a>
+               <a href="https://www.dropbox.com/developers-v1/core/docs#disable-token"><img class="shortened" src="https://idratherbewritingmedia.com/images/api/nestedobjectsstrategies.png"/></a>
              </section>
 
              <section><h3>Side-by-side displays</h3>
@@ -262,7 +255,7 @@ slide_title: "Documenting API endpoints"
              </section>
 
              <section><h3>Tripane help design</h3>
-               <a href="https://stripe.com/docs/api#charge_object"><img src="https://idratherbewritingmedia.com/images/api/stripetripanedesign.png"/></a>
+               <a href="https://stripe.com/docs/api/charges/object"><img src="https://idratherbewritingmedia.com/images/api/stripethreecolumnsidebyside.png"/></a>
              </section>
 
           </section>

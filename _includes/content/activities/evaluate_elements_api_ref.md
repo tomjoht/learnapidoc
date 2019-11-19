@@ -4,7 +4,7 @@
 
 In this activity, you'll review API reference documentation and identify the common elements. To evaluate the API reference docs:
 
-1.  In three of the following sites, look at the API reference sections (where endpoints are listed):
+1.  Choose three of the following sites. In the three you choose, analyze the API reference sections (where the endpoints are listed):
 
     *  [Nexmo API reference](https://developer.nexmo.com/api)
     *  [Twitter API reference](https://developer.twitter.com/en/docs/api-reference-index)

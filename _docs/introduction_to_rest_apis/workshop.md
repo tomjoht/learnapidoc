@@ -51,7 +51,7 @@ Doors open at 8:00am. Check your name off at the registration table and get a na
 
 Break time
 
-## 10:45 - 12:30pm: API endpoints and OpenAPI/Swagger
+## 10:45 - 12:00pm: API endpoints
 
 [Part III: Documenting API endpoints](docendpoints.html)
 
@@ -61,17 +61,17 @@ Break time
 
 {% include workshop_button.html title="Activity 3b: Evaluate API ref docs to identify core elements" activity="evaluate_elements_api_ref" button_type="success" %}
 
+## 12:00 - 1:00pm: Lunch
+
+Lunch provided through catering.
+
+## 1:00 - 2:00pm: OpenAPI and Swagger
+
 [Part IV: OpenAPI and Swagger](restapispecifications.html)
 
 <a href="/learnapidoc/slides/openapi_and_swagger.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/openapiswaggertitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 4a: Explore Swagger UI through the Petstore Demo" activity="explore_swagger_petstore" button_type="info" %}
-
-## 12:30 - 1:30pm: Lunch
-
-Lunch. Provided in room.  
-
-## 1:30 - 2:00pm: OpenAPI and Swagger continued
 
 {% include workshop_button.html title="Activity 4b: Edit an existing OpenAPI specification document" activity="edit_openapi_spec_file" button_type="info" %}
 
@@ -89,7 +89,11 @@ Lunch. Provided in room.
 
 {% include workshop_button.html title="Activity 6b: Judge conceptual content and decide which is best" activity="conceptual_comparisons" button_type="warning" %}
 
-## 2:30 - 3:00pm: Parts VII (Code tutorials)
+## 2:00 - 2:15pm: Break
+
+Break. Snacks and coffee provided.
+
+## 2:15 - 3:00pm: Parts VII (Code tutorials)
 
 [Part VII: Code tutorials](docapiscode.html)
 
@@ -97,11 +101,7 @@ Lunch. Provided in room.
 
 {% include workshop_button.html title="Activity 7a: Analyze code tutorials" activity="code_tutorial_analysis" button_type="primary" %}
 
-## 3:15 - 3:30pm: Break
-
-Break. Snacks and coffee provided.
-
-## 3:30 - 4:00pm: Part VIII (Publishing API docs)
+## 3:00 - 4:00pm: Part VIII (Publishing API docs)
 
 [Part VIII: Publishing API Documentation](publishingapis.html)
 

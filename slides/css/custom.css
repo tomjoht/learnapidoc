@@ -90,6 +90,10 @@ background-color: #3f3f3f;
   max-height: 500px;
 }
 
+.reveal img.shortened450 {
+  max-height: 450px;
+}
+
 .reveal small {
   vertical-align: middle;
 }

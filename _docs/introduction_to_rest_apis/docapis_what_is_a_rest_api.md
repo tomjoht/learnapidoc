@@ -166,3 +166,4 @@ Overall, REST APIs are more varied and flexible than SOAP APIs, and you almost a
 
 * [REST: a FAQ](https://medium.com/@diogo.lucas/rest-a-faq-b3cd7ed62828), by Diogo Lucas
 * [Learn REST: A RESTful Tutorial](http://www.restapitutorial.com/), by Todd Fredrich
+* [Understanding RPC Vs REST For HTTP APIs](https://www.smashingmagazine.com/2016/09/understanding-rest-and-rpc-for-http-apis/), by Phil Sturgeon

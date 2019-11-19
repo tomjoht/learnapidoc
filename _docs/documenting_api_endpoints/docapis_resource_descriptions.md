@@ -100,6 +100,8 @@ The exact terminology for referring to *resources* varies. The "things" that you
 
 Despite the variety with terminology, generally an API has various "resources" that you access through "endpoints." The endpoints give you access to the resource. (But terminology isn't standard, so expect variety.)
 
+For more on how API terminology varies, see [The difference between resources, endpoints, objects, and items in the bunq API documentation](https://medium.com/bunq-developers-corner/the-difference-between-resources-endpoints-objects-and-items-in-the-bunq-api-documentation-6b774473542).
+
 ## Recognize the difference between reference docs versus user guides
 
 Resource descriptions (as well as endpoint descriptions) are typically short, usually 1-3 sentences. What if you have a lot more detail to add? In these situations, keep in mind the difference between reference documentation and user guides/tutorials:

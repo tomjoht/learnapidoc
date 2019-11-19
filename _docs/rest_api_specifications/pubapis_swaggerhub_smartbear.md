@@ -161,3 +161,7 @@ Great tools aren’t free. SwaggerHub does [cost money](https://swaggerhub.com/
 
 {: .tip}
 To read more about SwaggerHub, check out my blog post [SwaggerHub: A collaborative platform for working on OpenAPI/Swagger specification files, and more](https://idratherbewriting.com/2017/10/05/swaggerhub-collaborative-platform-for-swagger-openapi-projects).
+
+## Related resources
+
+* [Getting Started With SwaggerHub](https://app.swaggerhub.com/help/tutorials/getting-started?_ga=2.107820612.739591889.1574123176-421060100.1574123176)
