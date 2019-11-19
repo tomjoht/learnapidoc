@@ -8,7 +8,9 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-*This page is under construction. I realized the information wasn't accurate, so I'm reworking it. For a good explanation of headless CMSes, see [Headless CMS vs Decoupled CMS: The Ultimate Guide](https://www.coredna.com/blogs/headless-vs-decoupled-cms).
+This page is under construction. I realized the information wasn't accurate, so I'm reworking it. For a good explanation of headless CMSes, see [Headless CMS vs Decoupled CMS: The Ultimate Guide](https://www.coredna.com/blogs/headless-vs-decoupled-cms).
+
+
 {% comment %}
 
 Rounding out the publishing tool options, there is a class of developer doc tools that provide online GUIs for authoring and publishing, but they still store your content as flat files in repositories such as GitHub and Bitbucket. In other words, they provide a WordPress.com-like experience for your content (giving you a user interface to browse your posts, pages, layouts, and other content) but allow your content to live in plain text files in version control repositories.
