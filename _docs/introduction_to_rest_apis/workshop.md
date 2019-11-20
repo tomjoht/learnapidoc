@@ -10,8 +10,6 @@ redirect_from:
 - /learnapidoc/docapis_course_slides.html
 ---
 
-**hello**, i'm working.
-
 The workshop agenda, slides, and activities correspond to full-day API workshop. The slide groups mirror the same sections in the course.
 
 * TOC
@@ -128,12 +126,12 @@ Break. Snacks and coffee provided.
 ## 4:30 - 5:15pm: Individual consulting
 
 The general workshop ends and we transition into any individual consulting as desired. If you have specific questions not addressed during the workshop, let's chat specifically about them. For all those interested, I'll write your name on then board and then just meet with you individually for about 5 minutes each until everyone's questions are answered.
-
+{% comment %}
 ## Post-workshop review
 
 At the close of the workshop, please take this [review survey](https://www.questionpro.com/t/AOaGwZfuH0). Thanks.
 
-{% comment %}
+
 {% include random_ad.html %}
 
 {% include random_ad2.html %}
