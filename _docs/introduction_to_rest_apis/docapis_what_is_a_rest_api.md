@@ -25,19 +25,15 @@ In general, an API (or Application Programming Interface) provides an interface 
 
 <figure><a class="noCrossRef" href="http://bit.ly/1DexWM0" class="noExtIcon"><img class="medium" class="small" src="https://idratherbewritingmedia.com/images/api/spinning_gears.jpg" alt="Spinning gears. By Brent 2.0. Flickr." /></a><figcaption>An API is like a cog that allows two different systems to interact. (Image from <a href='https://www.flickr.com/photos/brentinoz/'>Brent 2.0</a>, <a href='http://bit.ly/1DexWM0'>spinning gears</a>, <a href='https://creativecommons.org/licenses/by-nd/2.0/legalcode'>CC BY-ND 2.0</a>.)</figcaption></figure>
 
-APIs are often pulling and pushing data underneath user interfaces. Jim Bisso, an experienced API technical writer in the Silicon Valley area, describes APIs by using the analogy of your computer's calculator. When you press buttons, functions underneath are interacting with other components to get information. Once the information is returned, the calculator presents the data back to the GUI.
-
-{% if site.format == "web" %}
-{% include course_image.html size="tiny" filename="calculator" ext_print="png" ext_web="png" alt="When you press buttons, functions behind the scenes perform operations and retrieve data" caption="When you press buttons, functions behind the scenes perform operations and retrieve data." %}
-{% else %}
-{% include course_image.html size="tiny" filename="calculatorsmall" ext_print="png" ext_web="png" alt="When you press buttons, functions behind the scenes perform operations and retrieve data" caption="When you press buttons, functions behind the scenes perform operations and retrieve data." %}
-{% endif %}
+APIs are often pulling and pushing data underneath user interfaces. Consider the example of a flight booking site like [kayak.com](https://kayak.com) or [orbitz.com](https://orbitz.com). When you search for flights, the site reaches out to many other airline services to retrieve information about flights matching your query. kayak.com itself doesn't have all of this information. Instead, it gathers this data through APIs.
 
 {% include random_ad2.html %}
 
-APIs often work in similar ways. When you push a button in an interface, functions underneath get triggered to go and retrieve information. But instead of retrieving information from within the same system, web APIs call remote services on the web to get their information.
+Or consider other similar services. When you see a YouTube video embedded on a site, the site itself doesn't host the video. Instead, the embed code contains API requests that get the video from YouTube's hosting centers. When you embed a Twitter widget on your site, the widget's APIs pull in tweets from a Twitter server onto your site.
 
-Ultimately, developers use API calls behind the scenes to pull information into their apps. A button on a GUI may be internally wired to make calls to an external service. For example, the embedded Twitter or Facebook buttons that interact with social networks, or embedded Youtube videos that pull a video in from youtube.com, are powered by web APIs underneath.
+Consider another example from Fire TV. Suppose you're want to view a pay-per-view event that requires payment. A pop-up dialog might appear letting you enter your credit card details. Your payment gets processed and you receive confirmation about the purchase's success. This payment processing doesn't occur within the app. Instead, the app makes API calls out to payment servers with the needed information, and all that payment processing happens in the cloud. When the processing finishes, the API returns a confirmation response.
+
+The next time you push a button in some interface, think about what's going on underneath. Most likely, the button is internally wired to make calls to an external service for the information needed. That call is made through an API that performs a request and receives a response.
 
 ## APIs that use HTTP protocol are "web services"
 

@@ -28,7 +28,7 @@ The text is Latin filler for privacy reasons, so the logic may not be entirely a
 
 Outside of API documentation, quick reference guides tend to focus more on tasks. If you have a service to set up or configure, a more narrative rather than visual format might make sense. Here's a sample layout for such a guide:
 
-{% include course_image.html url="images/sample_qrg.png" size="small" filename="quickreferenceguideformat" ext_print="png" ext_web="png" alt="Quick reference guide format focusing on tasks" caption="This quick reference guide format focuses more on tasks than API endpoints" %}
+{% include course_image.html url="https://idratherbewritingmedia.com/images/api/sample_api_diagram.pdf" size="small" filename="quickreferenceguideformat" ext_print="png" ext_web="png" alt="Quick reference guide format focusing on tasks" caption="This quick reference guide format focuses more on tasks than API endpoints" %}
 
 However, with API documentation, usually the quick reference guide focuses on some visual grouping or display of the endpoints since this is what constitutes the core functionality in an API.
 
