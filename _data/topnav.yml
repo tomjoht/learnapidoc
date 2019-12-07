@@ -12,6 +12,9 @@ navbar_singleitems:
     url: presentations.html
   - title: Workshop
     url: workshop.html
+  - title: Log an Issue
+    url: issues.html
+    github: true
   # - title: PDFs
   #   url: products.html
 
