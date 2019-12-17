@@ -178,12 +178,14 @@ If you'd like to dive deeper into API design and usability, there are plenty of 
 * **Grouping and arrangement of endpoints**. How are the endpoints tagged and sorted in the API? Do the grouping make sense?
 * **Right-sizing of endpoints**. Are the endpoints scoped appropriately to return the right information the user needs, or do the endpoints return truckloads of data that might not all be meaningful or useful to users?
 
-## Conclusion
+## Conclusion and additional resources
 
 There's a lot to say about the design and usability of a REST API. The intent here is not to be comprehensive but to touch on those aspects most relevant and accessible to technical writers. Hopefully, the sections covered here will get you started in assessing and evaluating the design of the API you document.
 
 {: .tip}
 For a podcast I recorded with Arnaud Lauret on usability, see <a href='https://idratherbewriting.com/blog/api-design-usability-arnaud-lauret-podcast/'>Podcast: API Design and Usability with Arnaud Lauret (API Handyman)</a>.
+
+For an additional resource, see Andrew Johnston's presentation [The Trials and Tribulations of the API Style Guide](https://www.youtube.com/watch?v=iBBOWNXVapI) at API the Docs London 2018.
 
 
 {% comment %}
