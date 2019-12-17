@@ -245,6 +245,9 @@ folders:
   - title: SDKs (software development kits)
     jurl: /docapis_sdks.html
 
+  - title: "Giving feedback on API design and usability"
+    jurl: /evaluating-api-design.html
+
   # - title: Sample apps
   #   jurl: /docapiscode.html
 
