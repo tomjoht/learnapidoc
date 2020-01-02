@@ -15,22 +15,45 @@ Before we dive into the technical aspects of APIs, let's explore the market, gen
 {:toc}
 {% endif %}
 
-## Diversity of APIs
+## Diversity of APIs {#diversity_of_apis}
 
-The API landscape is diverse. In addition to web service APIs (which include REST), there are web socket APIs, hardware APIs, and more. Despite the wide variety, there are mostly just two main types of APIs most technical writers interact with:
+The API landscape is diverse, with many different types of APIs:
 
-* [Native library APIs](nativelibraryapis_overview.html) (such as APIs for Java, C++, and .NET)
-* [REST APIs](docapis_what_is_a_rest_api.html) (which are a type of web API)
-
-With native library APIs, you deliver a library of classes or functions to developers, and they incorporate this library into their projects. They can then call those classes or functions directly in their code.
+* **Native library APIs**: Refers to code libraries (for example, JAR files) that developers add to their projects to provide additional functionality through classes or other functions that can be called locally. These APIs are specific to the programming language &mdash; e.g., Java, C++, Python, Ruby, .NET, and so on. With native library APIs, all the interactions take place locally within the project &mdash; there isn't any message sent across HTTP to a remote server. See [Native Library APIs](nativelibraryapis_overview.html) in this course for more information into Java APIs.
+* **SOAP APIs**: Stands for Simple Object Access Protocol. SOAP is a web service that relies on a strict XML protocol to define the message exchange for requests and responses. SOAP is common with financial APIs and regulated industries, though it has largely been replaced by REST. As a standardized protocol, SOAP's XML message format is usually defined through a WSDL (Web Services Description Language) file that specifies the allowed elements and attributes in the message exchanges. The WSDL file is machine readable and used by the servers interacting with each other to facilitate the communication. See [SOAP](https://en.wikipedia.org/wiki/SOAP) for introductory details. More detail about SOAP is also provided in [What is a REST API?](docapis_what_is_a_rest_api.html).
+* **RPC-based APIs**: Stands for Remote Procedure Call. A web service that calls a method on a remote server by delivering an encoded message through HTTP. The encoded message is in XML for [XML-RPC APIs](https://en.wikipedia.org/wiki/XML-RPC) or JSON for [JSON-RPC APIs](https://en.wikipedia.org/wiki/JSON-RPC), but in both cases the message travels to the remote server via HTTP like other web services. The methods on the remote servers can be in any language. For example, an XML-RPC API can call a Java or Python or C++ method.
+* **gRPC APIs**: A web service that is similar to RPC-based APIs in that the service calls a function or runs a procedure on a remote server; however, gRPC uses [protocol buffers](https://developers.google.com/protocol-buffers/docs/overview#what-are-protocol-buffers) (specified in .proto files) rather than XML or JSON as the message exchange format. The protocol buffer lets you define the structure for your data and the way to convert (serialize) the data to be consumed by the receiving server. Protocol buffers are lighter and more efficient than XML. gRPC APIs were developed by Google and published as an open-source platform. See [gRPC APIs](https://grpc.io/docs/guides/) for details.
+* **REST APIs**: A web service that lets you make requests for resources through endpoints (URLs). Like other web services, the requests and responses travel through HTTP across the web, and the servers receiving the requests can be in any language. Responses are typically returned in JSON. REST APIs have many different endpoints (paths) with various parameters you can configure to determine the results you want. This course mainly focuses on REST APIs. See [What is a REST API?](docapis_what_is_a_rest_api.html) for details.
+* **GraphQL APIs**: A web service developed by Facebook that lets users query for results they need through a single endpoint. GraphQL eliminates the need for multiple request URLs or other filtering on the returned results to get what you need. Your query retrieves only the needed data, allowing the request and response to be fast and specific. See [graphql.org](https://graphql.org/) for more detail. Also see [If I am learning to write developer documentation, should GraphQL be on my radar? -- guest post by Casey Armstrong](https://idratherbewriting.com/blog/graphql-relevance-and-documentation-strategies/).
+* **Voice Assistant APIs**: These APIs are used with voice assistants such as Alexa. These APIs operate in the cloud and call an endpoint based on natural language processing of voice commands spoken by users. This is a case where APIs operate behind the scenes in the cloud, and developers create code, such as in a Lambda function (cloud computing), that handles incoming requests and sends out messages.
+* **Internet of Things (IoT) APIs**: These are APIs used by physical devices (such as sensors or wearables) that transmit or receive data through APIs to connect the device to an online network. For example, a thermostat sensor in a room might transmit the temperature to a central controller (such as with Nest). For more detail, see [App nirvana: When the Internet of Things meets the API economy](https://techbeacon.com/app-dev-testing/app-nirvana-when-internet-things-meets-api-economy)
+https://apifriends.com/api-management/iot-api/).
 
 {% include random_ad.html %}
 
-With REST APIs, you don't deliver a library of files to users. Instead, the users make requests for the resources on a web server, and the server returns responses containing the information.
+Sarah Maddox also lists other types of APIs in [API types](https://ffeathers.wordpress.com/2014/02/16/api-types/). In addition to the above, there are hardware APIs, object-remoting APIs, web socket APIs, OS functions and routines, and more.
+
+Despite the variety of APIs, the defining characteristic of nearly all developer documentation is that it involves documenting some type of API. All of these APIs make life easier for developers (who are consuming the API) because the APIs perform functions or other tasks in more efficient ways.
+
+{% include callout.html title="A metaphor for APIs" type="primary" content="As a practical example, suppose you're sitting at your desk at you want a cup of coffee. Rather than go to the trouble to make it yourself, you say, \"Hey John, will you get me a cup of coffee?\" John then retrieves a cup, reloads the coffee filter with new grounds, starts the brewer, pours the brewed coffee into your cup, adds some cream and sugar, and delivers it so you at your desk. When developers implement an API, they're essentially saying \"Hey John, get me coffee\" in their applications, and behind the scenes the API performs all of the details of the requested task. This speeds up development and makes the code much more efficient." %}
+
+Most companies make their information and services available through APIs to help third-parties adopt and implement the company's the information/services. (This is the whole idea of the information economy.) Additionally, many APIs are only available internally to help developers within the same company implement various services. For example, a team handling payment controller operations might provide an API that another team developing an app can implement to handle payment transactions.
+
+## Which type of API is most common?
+
+As you browse APIs, you might be wondering which type of API is most common? Which types of APIs should you focus on? Among the web service APIs, the [2019 State of API report](https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf) from Smartbear surveyed more than 3,000 developers and found the following:
+
+{% include course_image.html url="https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf" size="medium" filename="webserviceapisurvey" ext_print="png" ext_web="png" alt="Popularity of web service APIs" caption="Popularity of web service APIs (<i>State of API 2019</i>, p.20)" %}
+
+The report even mentions some APIs not covered above &mdash; [JMS APIs](https://docs.oracle.com/javaee/6/tutorial/doc/bncdr.html), which are used with Java to send messages.
+
+As you can see, one size does fit all. Developers will implement the type of API that best aligns with their scenario and requirements, just as there are different types of cars (sportscars, trucks, semi-trucks, sedans, hurses, etc.) for different journeys on or off road.
+
+Despite the variety, "REST - OAS/Swagger" is the most common API and has emerged as the leading standard. As such, we'll be diving into REST APis in depth. Remember with REST APIs, you don't deliver a library of files to users. Instead, the users make requests for the resources on a web server, and the server returns responses containing the information.
 
 REST APIs follow the same protocol as the web. When you open a browser and type a website URL (such as `https://idratherbewriting.com`), you're actually making a GET request for a resource on a server. The server responds with the content and the browser makes the content visible.
 
-This course focuses mostly on REST APIs because REST APIs are more popular and in demand, and because they're also more accessible to technical writers. You don't need to know programming to document REST APIs. And REST is becoming the most common type of API anyway. (Even so, I also cover native library APIs briefly in a [Native Library APIs](nativelibraryapis_overview.html).)
+This course focuses mostly on REST APIs because REST APIs are more popular and in demand, and because they're also more accessible to technical writers. You don't need to know programming to document REST APIs. And REST is becoming the most common type of API anyway.
 
 ## Programmableweb API survey rates doc #1 factor in APIs
 
