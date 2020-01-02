@@ -9,12 +9,16 @@ navbar_singleitems:
   - title: Contact
     url: contact.html
   - title: Presentations
-    url: presentations.html
+    url: https://idratherbewriting.com/presentations/
   - title: Workshop
     url: workshop.html
   - title: Log an Issue
-    url: issues.html
-    github: true
+    url: https://github.com/tomjoht/learnapidoc/issues/new
+    github_icon: show
+  - title: Changelog
+    url: https://github.com/tomjoht/learnapidoc/issues?q=is%3Aissue+is%3Aclosed
+    github_icon: show
+
   # - title: PDFs
   #   url: products.html
 

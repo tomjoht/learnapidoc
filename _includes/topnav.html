@@ -103,19 +103,13 @@
                     {% assign topnav = site.data[page.topnav] %}
                     {% for entry in topnav.navbar_singleitems %}
                     {% for item in entry.items %}
-                    {% if item.url contains "http://" or item.url contains "https://" %}
-                    <li><a href="{{item.url}}" class="noCrossRef"> {{item.title}}</a></li>
-                    {% elsif page.url contains item.url %}
+                    {% if page.url contains item.url %}
                     <li class="active"><a href="{{item.url | remove: "/"}}">{{item.title}}</a></li>
+                    {% elsif item.github_icon == "show" %}
+                    <li><a data="github" href="{{item.url}}"> {{item.title}}</a></li>
                     {% else %}
-                    <li><a href="{{item.url | remove: "/"}}">{{item.title}}</a></li>
+                    <li><a href="{{item.url}}" class="noCrossRef"> {{item.title}}</a></li>
                     {% endif %}
-                    {% if page.github == true %}
-                    <li><a href="https://github.com/somerepo/issues" class="noCrossRef">{{site.uistring.log_doc_issue}}</a></li>
-                    <li><a target="_blank" href="https://github.com/somerepo/blob/github-docs/{{page.path}}" class="editButton noCrossRef"><i class="fa fa-github fa-lg"></i> {{site.uistring.github_edit_button_text}}</a></li>{% endif %}
-                    {% unless page.type == "homepage" or page.type == "404" %}
-                    <li><a target="_blank" href="{{ site.data[page.sidebar].forum.forum_link }}" class="editButton noCrossRef">{{ site.data[page.sidebar].forum.forum_name }}</a></li>
-                    {% endunless %}
                     {% endfor %}
                     {% endfor %}
 

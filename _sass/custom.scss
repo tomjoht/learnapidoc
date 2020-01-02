@@ -94,6 +94,15 @@ a[href^="https://"]:after {
   text-decoration: none;
   padding-left: 3px;
 }
+a[data="github"]:after {
+  content: "\f09b";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 5px;
+}
 
 
 a[href].noCrossRef::after, a[href].noExtIcon::after, pre a::after, pre.highlight a::after, pre.highlight code a::after, pre code a.vglnk::after,
