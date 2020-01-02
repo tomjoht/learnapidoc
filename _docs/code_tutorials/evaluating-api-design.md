@@ -190,6 +190,32 @@ For an additional resource, see Andrew Johnston's presentation [The Trials and T
 
 {% comment %}
 
+add in this quote from the State of API 2019 from smartbear:
+
+> In addition to performance, usability is also a top
+consideration for how organizations are measuring
+the success of their API program. API developer
+experience has become a major consideration for
+organizations that are starting to look at APIs as
+more than just technical assets. Now, just as a product
+team wants to provide a great user experience for
+the software they develop, API teams are also putting
+a focus on usability when developing services.
+
+
+also add the following from the same source (p.49):
+
+> The emergence of the API economy has led to growth
+in API style guidelines, which are often published for
+public view to help external stakeholders understand
+how API providers are governing their own internal
+design process. While only one-third of respondents
+say they currently have an internal style guide, 32% say
+their organization plans to introduce one. IT/Services,
+Finance/Banking, Healthcare, and Telecommunications
+are the industries with the highest adoption of
+internal API style guidelines.
+
 ## Tutorials
 
 if you create more tutorials in your doc, which show end to end workflows, you'll begin to see the

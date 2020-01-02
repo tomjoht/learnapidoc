@@ -20,6 +20,8 @@ p.surveyBanner {
   border-left: 0em;
   background: lightgoldenrodyellow;
   border-left: 0em;
+  padding: 1em;
+  border-radius: 6px;
 }
 
 @media (max-width: 800px) {
@@ -29,6 +31,7 @@ p.surveyBanner {
     padding: 1em;
     border-left: 0em;
     background: lightgoldenrodyellow;
+    border-radius: 6px;
   }
 }
 
@@ -39,6 +42,8 @@ p.surveyBanner {
     background: lightgoldenrodyellow;
     display: block;
     margin-right: 30px;
+    padding: 1em;
+    border-radius: 6px;
   }
 }
 
@@ -611,4 +616,58 @@ dl {
    .navbar-header img {
      display: none;
    }
+}
+
+
+.sgithub, .sgoogleplus, .situnes, .slinkedin, .srssfeed, .stwitter, .sstitcher, .sfacebook {
+    background: url(https://idratherbewritingmedia.com/images/sprites.png) no-repeat;
+    float: left;
+    padding: 6px;
+    margin-top:18px;
+    margin-left: 6px;
+}
+
+.srssfeed {
+    background-position: 0 0;
+    width: 26px;
+    height: 27px;
+}
+.stwitter {
+    background-position: -50px 0;
+    width: 26px;
+    height: 27px;
+}
+.sstitcher {
+    background-position: -100px 0;
+    width: 26px;
+    height: 27px;
+}
+.sfacebook {
+    background-position: -150px 0;
+    width: 26px;
+    height: 27px;
+}
+.situnes {
+    background-position: -200px 0;
+    width: 26px;
+    height: 27px;
+}
+.slinkedin {
+    background-position: -250px 0;
+    width: 26px;
+    height: 27px;
+}
+.sgithub {
+    background-position: -300px 0;
+    width: 26px;
+    height: 27px;
+}
+
+
+.socialMediaButtons {
+    padding-bottom:20px;
+}
+
+#socialMediaButtons.irbw {
+margin-bottom:15px;
 }

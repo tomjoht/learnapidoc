@@ -8,6 +8,7 @@
 
             {% include sidebar.html %}
             {% include sidebar_comics.html %}
+            {% include social_media_icons.html %}
 
             </div>
 
@@ -29,7 +30,7 @@
                 {% endunless %}
                 </div>
 <p class="workshop surveyBanner" style="width: 66%"> I'm giving an <a href="https://idratherbewriting.com/blog/upcoming-api-documentation-workshop-los-angeles-jan-23/">API documentation workshop in Los Angeles, California</a>, on January 23, 2020. You can <a href="https://www.eventbrite.com/e/api-documentation-workshop-los-angeles-jan-23-2020-tickets-84487066089">view details on EventBrite here.</a>
-<br/><br/><b>Survey:</b> I'm collecting responses for a survey about trends in developer documentation for 2020. If you write docs for developers, please <a href='https://www.questionpro.com/t/AOaGwZgCFE'>take this survey.</a>
+<br/><br/><b>Input needed:</b> I'm currently conducting a survey about trends in developer documentation for 2020. If you write docs for developers, please <a href='https://www.questionpro.com/t/AOaGwZgCFE'>take this survey.</a> (You can view the ongoing results viewed <a href="https://www.questionpro.com/t/PGhS9ZgCFE">here.</a>)
 </p>
                 {{content}}
 
@@ -41,15 +42,17 @@
                 {% endcomment %}
                 {% include next.html %}
 
+                {% comment %}
                 <div class="donateButton">
                 {% include donate_button.html %}
                 </div>
+                {% endcomment% }
 
                 {% include single_post_comics.html %}
 
 
 {% comment %}<div style="max-width: 375px">{% include tinyletter.html %}</div>{% endcomment %}
-                {% include disqus.html %}
+                {% include commento.html %}
                 {% endunless %}
 
               </div>
@@ -67,6 +70,7 @@
 <!-- Bootstrap -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0"></script>
+<script src="https://cdn.commento.io/js/count.js"></script>
 {% include google_analytics.html %}
 
 </body>

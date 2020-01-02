@@ -63,8 +63,6 @@ plugins:
 
 ########## UI text ###############
 
-disqus_shortname: idratherbewriting
-
 uistring:
     tableofcontents: Table of Contents
     log_doc_issue: Log Doc Issue
