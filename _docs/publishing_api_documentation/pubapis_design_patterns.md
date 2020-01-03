@@ -153,7 +153,7 @@ Many API doc sites provide *one integrated website* to present all of the inform
 
 <a href="https://www.yelp.com/developers/documentation" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/yelpapi.png" alt="Yelp API documentation" /></a>
 
-I hinted at this earlier (in [The market for REST API documentation](docapis_intro_to_rest_api_doc.html)), but with API documentation, there usually isn't a GUI (graphical user interface) that the documentation complements. In most cases, the API documentation itself is the interface that users navigate to use your product. As such, users will expect more from it.
+I hinted at this earlier (in [Introduction to REST API documentation](docapis_intro_to_rest_api_doc.html)), but with API documentation, there usually isn't a GUI (graphical user interface) that the documentation complements. In most cases, the API documentation itself is the interface that users navigate to use your product. As such, users will expect more from it.
 
 One of the challenges in using documentation generated from [OpenAPI and Swagger](pubapis_swagger_intro.html) or some other document generation process is figuring out how to integrate it with the rest of the site. Ideally, you want users to have a seamless experience across the entire website. If your endpoints are rendered into their own separate view, how do you integrate the endpoint reference into the rest of the documentation?
 
