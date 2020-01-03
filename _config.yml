@@ -19,6 +19,7 @@ plugins:
   - jekyll-mentions
   - jekyll-redirect-from
   - jekyll-paginate
+  - jekyll-seo
 
 markdown: kramdown
 kramdown:
@@ -90,3 +91,34 @@ algolia:
     - _docs/introduction_to_rest_apis/tocstart.html
     - _docs/introduction_to_rest_apis/tocstart_fulldetails.md
     - _docs/activities_pdf/*
+
+####### jekyll seo tag configuration #######
+title: Documenting APIs
+tagline: A guide for technical writers and engineers learning how to document APIs
+description: Online course about creating API documentation, mostly focusing on REST APIs but covering strategies for developer documentation in general. Includes sections on what an API is, API reference documentation, OpenAPI specification and Swagger, docs-as-code publishing and workflows, conceptual topics, tutorials, API documentation jobs, and more.
+url: https://idratherbewriting.com/learnapidoc
+author:
+  twitter: tomjohnson
+twitter:
+  username: tomjohnson
+  card: summary
+
+logo: https://idratherbewritingmedia.com/images/api/learnapidoclogo-01.svg
+
+social:
+  name: Tom Johnson
+  links:
+    - https://twitter.com/tomjohnson
+    - https://www.facebook.com/tomidbw
+    - https://www.linkedin.com/in/tomjoht/
+    - https://github.com/tomjoht
+
+facebook:
+  app_id: 247143161970549
+  publisher: 3968842976464
+
+webmaster_verifications:
+  google: i1qwK1LFgKEQHUtpm8o7OOOeK9i54NUQwKR4vXRqlFs
+  bing: 352636FE6BAFC693A6938983FC6A227E
+
+lang: en_US
