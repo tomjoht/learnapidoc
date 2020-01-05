@@ -155,11 +155,13 @@ folders:
   - title: Swagger UI Demo
     jurl: /pubapis_swagger_demo.html
 
+  - title: Stoplight &mdash; visual modeling tools for creating your spec
+    jurl: /pubapis_stoplight.html
+
   - title: SwaggerHub introduction and tutorial
     jurl: /pubapis_swaggerhub_smartbear.html
 
-  - title: Stoplight &mdash; visual modeling tools for creating your spec
-    jurl: /pubapis_stoplight.html
+
 
   - title: Integrating Swagger UI with the rest of your docs
     jurl: /pubapis_combine_swagger_and_guide.html
