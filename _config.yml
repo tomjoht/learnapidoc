@@ -96,14 +96,14 @@ algolia:
 title: Documenting APIs
 tagline: A guide for technical writers and engineers learning how to document APIs
 description: Online course about creating API documentation, mostly focusing on REST APIs but covering strategies for developer documentation in general. Includes sections on what an API is, API reference documentation, OpenAPI specification and Swagger, docs-as-code publishing and workflows, conceptual topics, tutorials, API documentation jobs, and more.
-url: https://idratherbewriting.com/learnapidoc
+url: https://idratherbewriting.com
 author:
   twitter: tomjohnson
 twitter:
   username: tomjohnson
   card: summary
 
-logo: https://idratherbewritingmedia.com/images/api/learnapidoclogo-01.svg
+logo: https://idratherbewritingmedia.com/images/idratherbewriting-site-logo.png
 
 social:
   name: Tom Johnson

@@ -20,12 +20,12 @@ The [info object](https://github.com/OAI/OpenAPI-Specification/blob/master/versi
 {:toc}
 {% endif %}
 
-## Sample info object {#sample_info_object}
+## Swagger
 
-Here's an example of the `info` object and its properties:
+Here's an example of the `info` object and its properties. (The `openapi` object and the empty `paths` object are commented out to maintain the focus on the `info` object.)
 
 ```yaml
-openapi: "3.0.2"
+# openapi: 3.0.2
 info:
   title: "OpenWeatherMap API"
   description: "Get the current weather, daily forecast for 16 days, and a three-hour-interval forecast for 5 days for your city. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location stations. Data is available in JSON, XML, or HTML format. **Note**: This sample Swagger file covers the `current` endpoint only from the OpenWeatherMap API. <br/><br/> **Note**: All parameters are optional, but you must select at least one parameter. Calling the API by city ID (using the `id` parameter) will provide the most precise location results."
@@ -38,6 +38,7 @@ info:
   license:
     name: "CC Attribution-ShareAlike 4.0 (CC BY-SA 4.0)"
     url: "https://openweathermap.org/price"
+# paths: {}
 ```
 
 {: .tip}
@@ -45,16 +46,34 @@ In any `description` property, you can use [CommonMark Markdown](http://spec.com
 
 {% include random_ad2.html %}
 
-As you write content in `description` properties, note that colons are problematic in YAML because they signify new levels. Either escape colons with a backslash or enclose the `description` value in quotation marks. You can use single or double quotation marks for the property values. (If you enclose the values in quotation marks, syntax highlighters in text editors can display better color coding between the properties and values.)
+As you write content in `description` properties, note that colons are problematic in YAML because they signify new levels. Either enclose the `description` value in quotation marks or escape colons with a backslash.  (If you enclose the values in quotation marks, syntax highlighters in text editors can display better color coding between the properties and values.)
 
 {% include random_ad.html %}
 
-## View the Appearance in Swagger UI
+To update the spec file in Swagger Editor:
 
-At this point, go ahead and paste this [above code](#sample_info_object) along with the `openapi` object from the previous step into the [Swagger Editor](https://editor.swagger.io/). You'll see some rendering errors (because the specification document doesn't yet have any `path` objects), but the content will still appear. (Just hide the errors section at the top for now).
+1.  Paste the [above code](#sample_info_object) containing the `info` object into the Swagger Editor.
+2.  Uncomment the `openapi` and `paths` objects (remove the "`#`"). The display looks as follows:
 
-In the Swagger UI display, the `info` object's information appears at the top:
+    {% include course_image.html size="large" border="true" filename="swagger_info_object_editor_view" ext_print="png" ext_web="png" alt="openapi, info, and empty paths object in Swagger Editor" caption="openapi, info, and empty paths object in Swagger Editor" %}
 
-<a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/step2swaggeruiprogress.png" class="medium" /></a>
+    In the Swagger UI display, the `info` object's information appears below the title.
 
+{: .tip}
 In the `description` property, in addition to describing your overall API, you might want to provide some basic instructions to users on how to use Swagger UI. If there's a test account they should use, you can provide the information they need in this space.
+
+## Stoplight Studio
+
+Now let's look at how to add this same information using Stoplight Studio.
+
+1.  Below the title, in the **description** area, paste in the description from the code sample above.
+
+    Note that Stoplight allows you to use [Stoplight flavored Markdown](https://github.com/stoplightio/studio-demo/blob/master/docs/markdown/stoplight-flavored-markdown.md). This Markdown version allows all the same tags as Commonmark but also includes some special tags for callouts, alerts, and other formatting.
+
+2.  In the **Contact** section, paste in the contact information from the code sample above.
+3.  In the **License** section, paste in the license information from the code sample above.
+4.  Preview the doc by clicking **Publish** and then sliding the **Show Preview** slider.
+
+    {% include course_image.html size="large" border="true" filename="stoplightstudio_preview_info_object3" ext_print="png" ext_web="png" alt="Previewing the docs" caption="Previewing the docs" %}
+
+5.  To exit the preview, move the **Show Preview** slider off and click the **Publish** button to hide the menu.

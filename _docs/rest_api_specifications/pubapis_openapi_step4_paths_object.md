@@ -27,7 +27,7 @@ We've been moving along at about 5 mph in the previous steps but are going to sp
 ## Paths objects
 
 {: .note}
-My preferred term is "endpoint" rather than "path," but to be consistent with the terminology of the OpenAPI spec, I refer to them as "paths" here.
+My preferred term is "endpoint" rather than "path," but to be consistent with the terminology of the OpenAPI spec, I use the term "paths" here.
 
 {% include random_ad2.html %}
 

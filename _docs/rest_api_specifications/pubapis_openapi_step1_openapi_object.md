@@ -23,9 +23,9 @@ path1: /restapispecifications.html
 Before diving into the first step of the OpenAPI tutorial here, read the [OpenAPI tutorial overview](pubapis_openapi_tutorial_overview.html) (if you haven't already) to get a sense of the scope of this tutorial. In brief, this OpenAPI tutorial is unique in the following ways:
 
 * This OpenAPI tutorial shows the spec in context of a simple weather API [introduced earlier](docapis_scenario_for_using_weather_api.html) in this course.
-* The OpenAPI tutorial shows how the spec information gets populated in [Swagger UI](https://github.com/swagger-api/swagger-ui).
-* The OpenAPI tutorial is a subset of the information in both the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification) and the [OpenAPI specification commentary](https://swagger.io/docs/specification/about/).
-* The OpenAPI tutorial covers the 3.0 version of the OpenAPI spec, which is the latest version.
+* This OpenAPI tutorial shows how the spec information gets populated in two different tools and display frameworks: [Stoplight](https://stoplight.io/studio/) and [Swagger UI](https://github.com/swagger-api/swagger-ui).
+* This OpenAPI tutorial is a subset of the information in both the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification) and the [OpenAPI specification commentary](https://swagger.io/docs/specification/about/). In other words, it's not comprehensive of all the possible information in the spec.
+* This OpenAPI tutorial covers the *3.0 version* of the OpenAPI spec, which is the latest version. (Surprisingly, many tools still support only the 2.0 version.)
 
 {% include random_ad2.html %}
 
@@ -33,14 +33,14 @@ Before diving into the first step of the OpenAPI tutorial here, read the [OpenAP
 
 There are eight objects at the root level in the OpenAPI 3.0 spec. There are many nested objects within these root level objects, but at the root level, there are just these objects:
 
-* [openapi](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#oasObject  )
-* [info](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#infoObject)
-* [servers](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#serverObject)
-* [paths](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#pathsObject)
-* [components](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#componentsObject)
-* [security](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#securityRequirementObject)
-* [tags](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#tagObject)
-* [externalDocs](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#externalDocumentationObject)
+* [`openapi`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#oasObject  )
+* [`info`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#infoObject)
+* [`servers`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#serverObject)
+* [`paths`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#pathsObject)
+* [`components`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#componentsObject)
+* [`security`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#securityRequirementObject)
+* [`tags`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#tagObject)
+* [`externalDocs`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#externalDocumentationObject)
 
 {: .note}
 By "root level," I mean the first level in the OpenAPI document. This level is also referred to as the global level because some object properties declared here (namely `servers` and `security`) are applied to each of the operation objects unless overridden at a lower level.
@@ -48,23 +48,33 @@ By "root level," I mean the first level in the OpenAPI document. This level is a
 The whole document (the object that contains these eight root-level objects) is called an [OpenAPI document](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#oasDocument). The convention is to name the document **openapi.yml**.
 
 {: .note}
-"OpenAPI" refers to the specification; "Swagger" refers to the tooling (at least from Smartbear) that supports the OpenAPI specification. For more details on the terms, see [What Is the Difference Between Swagger and OpenAPI?](https://blog.smartbear.com/open-source/what-is-the-difference-between-swagger-and-openapi/)
-
-## Swagger Editor
+"OpenAPI" refers to the specification; "Swagger" refers to the tooling (at least from SmartBear) that supports the OpenAPI specification.
 
 {% include random_ad.html %}
 
-As you work on your specification document, use the online [Swagger Editor](https://swagger.io/swagger-editor/). The Swagger Editor provides a split view: on the left where you write your spec code, and on the right, you see a fully functional Swagger UI display. You can even submit requests from the Swagger UI display in this editor.
+Although one could approach the assembly of an OpenAPI document in many ways, I've decided to structure each step in this tutorial based on each of these root-level objects. You'll see two approaches: one using Swagger working at a code-level, and another using Stoplight Studio working in a user interface.
+
+## Swagger
+
+Before we jump into coding, let's first talk about where you'll write the code and what your options are.
+
+### Where to write your spec code
+
+The easiest option is to use the online [Swagger Editor](https://swagger.io/swagger-editor/). The Swagger Editor provides a split view: on the left where you write your spec code, and on the right, you see a fully functional Swagger UI display. You can even submit requests from the Swagger UI display in this editor.
 
 The Swagger Editor will validate your content in real-time, and you will see validation errors until you finish coding the specification document. Don't worry about the errors unless you see X marks in the code you're working on.
 
-I usually keep a local text file (using [Atom editor](https://atom.io/)) where I keep the specification document offline, but I work with the document's content in the online [Swagger Editor](https://swagger.io/swagger-editor/). When I'm done working for the day, I copy and save the content back to my local file. Even so, the Swagger Editor caches the content quite well (just don't clear your browser's cache), so you probably won't need your local file as a backup.
+I usually keep a local text file (using a text editor such as Atom or Sublime Text) where I keep the specification document offline, but I work with the document's content in the online [Swagger Editor](https://swagger.io/swagger-editor/). When I'm done working for the day, I copy and save the content back to my local file. Even so, the Swagger Editor caches the content quite well (just don't clear your browser's cache), so you probably won't need your local file as a backup.
 
 If you want to purchase a subscription to [SwaggerHub](pubapis_swaggerhub_smartbear.html), you could keep your spec content in the cloud (SwaggerHub has an editor almost identical to Swagger UI) associated with your personal login. SwaggerHub is the premium tooling for the open-source and free Swagger Editor.
 
-## <i class="fa fa-user-circle"></i> Add the openapi object
+Another option to work locally is to use [Visual Studio Code](https://code.visualstudio.com/) with two extensions: [openapi-lint](https://marketplace.visualstudio.com/items?itemName=mermade.openapi-lint) and [Swagger Viewer](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer). These extensions let you work locally and preview a live version of Swagger. You can also download and run the [Swagger Editor locally](https://swagger.io/tools/swagger-editor/).
 
-Go to the [Swagger Editor](https://editor.swagger.io/) and go to **File > Clear editor**. Keep this tab open throughout the OpenAPI tutorial, as you'll be adding to your specification document with each step.
+For the sake of simplicity, for the Swagger sections in this tutorial, we'll just use the [online Swagger Editor](https://swagger.io/swagger-editor/).
+
+### Add the openapi object
+
+From the [Swagger Editor](https://editor.swagger.io/) and go to **File > Clear editor**. Keep this tab open throughout the OpenAPI tutorial, as you'll be adding to your specification document with each step.
 
 Add the first root-level property for the specification document: `openapi`. In the [openapi](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#oasObject) object, indicate the version of the OpenAPI spec to validate against. The latest version is `3.0.2`.
 
@@ -72,16 +82,58 @@ Add the first root-level property for the specification document: `openapi`. In 
 openapi: "3.0.2"
 ```
 
-Until you add more information in here, you'll see error messages and notes such as "No operations defined in spec!" That's okay &mdash; in the next step, you'll start seeing more info.
+Until you add more information in here, you'll see error messages and notes such as "No operations defined in spec!" To avoid these errors, add some placeholder info here like this:
 
-3.0 was released on 2017-07-26, and 3.0.2 was released on 10-08-2018 (see [Version History](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#appendix-a-revision-history)). Much of the information and examples online, as well as supporting tools, often focus only on 2.0. Even if you're locked into publishing in a 2.0 tool or platform, you can code the spec in 3.0 and then use a tool such as [APIMATIC Transformer](https://apimatic.io/transformer) to convert the 3.0 spec to 2.0. You can also convert a spec from 2.0 to 3.0.
+```yaml
+openapi: '3.0.2'
+info:
+  title: OpenWeatherMap
+  version: '1.0'
+paths: {}
+```
 
-## Appearance in Swagger UI
+The editor renders the display as follows.
 
-There's not much to the `openapi` object, and right now there's not enough content for the spec to validate. But when you later render your specification document through the Swagger UI display, you'll see that an "OAS3" tag will appear to the right of the API name.
+{% include course_image.html size="large" border="true" filename="openapi_object_swagger" ext_print="png" ext_web="png" alt="openapi object" caption="openapi object" %}
 
-<a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/openapitutorial_version.png" class="medium" style="border: 1px solid #dedede;"/></a>
+On the backend, Swagger UI uses the 3.0.2 version of the spec to validate your content. In the above screenshot, the gray "1.0" version refers to the version of the API here, not the version of the OpenAPI spec.
 
-On the backend, Swagger UI uses the 3.0.2 version of the spec to validate your content.
+There's not much to the `openapi` object except to elaborate on the versions. OAS 3.0 was released on 2017-07-26, and OAS 3.0.2 was released on 10-08-2018 (see [Version History](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#appendix-a-revision-history)). Much of the information and examples online, as well as supporting tools, often focus only on 2.0. Even if you're locked into publishing in a 2.0 tool or platform, you can code the spec in 3.0 and then use a tool such as [APIMATIC Transformer](https://apimatic.io/transformer) to convert the 3.0 spec to 2.0. You can also convert a spec from 2.0 to 3.0.
 
-In the above screenshot, the "2.5" version refers to the version of the API here, not the version of the OpenAPI spec.
+## Stoplight Studio
+
+Now let's take the same beginning steps in Stoplight Studio. (Note that the instructions regarding Stoplight Studio in this tutorial are abbreviated. For full documentation, see the [Stoplight Studio documentation](https://stoplight.io/p/docs/gh/stoplightio/studio), which is actually quite short anyway.)
+
+In this tutorial you will use the Web version of Stoplight Studio because only the Web version gives you the ability to publish your content (see [Studio Desktop vs. Studio Web](https://stoplight.io/p/docs/gh/stoplightio/studio/docs/Basics/web-vs-desktop-app.md)). Additionally, you will create a GitHub repo to store your content, as this is another requirement for publishing.
+
+To get started in Stoplight Studio:
+
+1.  Go to [GitHub.com](https://github.com) and create a repo, calling it something like "stoplight_openweathermap." If you've never created a Github repo before, see [Create a repo](https://help.github.com/en/github/getting-started-with-github/create-a-repo) from GitHub's docs. Copy the URL to your repo.
+2.  Go to [https://stoplight.io/studio/](https://stoplight.io/studio/) and click **On the Web**.
+3.  In the **Open Git Project** box, paste your GitHub URL, and then click **Clone**:
+
+    {% include course_image.html size="medium" border="true" filename="stoplight_git_new_project" ext_print="png" ext_web="png" alt="Opening a Git project" caption="Opening a Git project" %}
+
+4.  When the project loads, in the left pane you're prompted with the text "You do not have any APIs or models." Click the **API** button.
+
+    {% include course_image.html size="medium" border="true" filename="openweathermap_create_api3" ext_print="png" ext_web="png" alt="Creating a new API file" caption="Creating a new API file" %}
+
+5.  In the New API dialog box, name your API (e.g., "openweathermap"), and click **Create**. By default, the editor will use OAS 3.0 and YAML (you can see these options by clicking Advanced).
+
+    Stoplight creates an OAS file ("<b>O</b>pen<b>A</b>PI <b>S</b>pecification") called, in this case, openweathermap.v1.yml and loads it as follows:
+
+    {% include course_image.html border="true" filename="editor_loaded_with_oas_3" ext_print="png" ext_web="png" alt="Initial project in the Stoplight Studio editor" caption="Initial project in the Stoplight Studio editor" %}
+
+6.  Stoplight lets you toggle between a form and code view. The above screenshot shows the form view. Click the **Code** button in the upper-right to see the code automatically created:
+
+    ```yaml
+    openapi: '3.0.0'
+    info:
+      title: openweathermap
+      version: '1.0'
+    servers:
+    - url: http://localhost:3000
+    paths: {}
+    components:
+      schemas: {}
+    ```
