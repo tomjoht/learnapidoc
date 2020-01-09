@@ -42,9 +42,9 @@ Most companies make their information and services available through APIs to hel
 
 ## Which type of API is most common?
 
-As you browse APIs, you might be wondering which type of API is most common? Which types of APIs should you focus on? Among the web service APIs, the [2019 State of API report](https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf) from [Smartbear](https://smartbear.com/) surveyed more than 3,000 technology professionals and found that REST-OAS / Swagger was the most web service format used:
+As you browse APIs, you might be wondering which type of API is most common? Which types of APIs should you focus on? Among the web service APIs, [*The State of API 2019* report](https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf) from [Smartbear](https://smartbear.com/) surveyed more than 3,000 technology professionals and found that REST-OAS / Swagger was the most web service format used:
 
-{% include course_image.html url="https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf" size="medium" filename="webserviceapisurvey" ext_print="png" ext_web="png" alt="Popularity of web service APIs" caption="Popularity of web service APIs (<i>State of API 2019</i>, p.20)" %}
+{% include course_image.html url="https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf" size="medium" filename="webserviceapisurvey" ext_print="png" ext_web="png" alt="Popularity of web service APIs" caption="Popularity of web service APIs (<i>The State of API 2019</i>, p.20)" %}
 
 OAS stands for OpenAPI Specification, which is something I explore in-depth in [Introduction to the OpenAPI specification and Swagger](pubapis_swagger_intro.html). The report even mentions some APIs not covered above &mdash; [JMS APIs](https://docs.oracle.com/javaee/6/tutorial/doc/bncdr.html), which are used with Java to send messages.
 
@@ -58,7 +58,7 @@ This course not only focuses on REST APIs because they are more popular and in-d
 
 ## Many companies are new to API development
 
-According to the [State of API 2019](https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf) report, more and more companies are starting to develop APIs:
+According to [*The State of API 2019*](https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf) report, more and more companies are starting to develop APIs:
 
 > While modern APIs have been used in software development for more than two decades, the last 10 years have been marked by a growth in API adoption. Our survey found that 59% of organizations began developing APIs in the last five years. Furthermore, 28% only began developing APIs in the last two years. The 2019 State of API Report saw a higher percentage of early adopters than the 2016 State of API Report, with twice as many respondents saying that they only began developing APIs in the last year.
 
@@ -66,13 +66,13 @@ The accompanying graph is as follows:
 
 {% include course_image.html url="https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf" size="medium" border="true" filename="timedevelopingapis" ext_print="png" ext_web="png" alt="Most companies are new to API development" caption="Most companies are new to API development" %}
 
-It's astonishing that API development is so nascent in companies &mdash; "59% of organizations began developing APIs in the last five years." If you look at Smartbear's [2016 State of API report](https://static1.smartbear.co/smartbear/media/ebooks/state-of-api-report-2016.pdf), which surveyed 2,300 professionals, you find similar growth rates:
+It's astonishing that API development is so nascent in companies &mdash; "59% of organizations began developing APIs in the last five years." If you look at Smartbear's [*2016 State of API* report](https://static1.smartbear.co/smartbear/media/ebooks/state-of-api-report-2016.pdf), which surveyed 2,300 professionals, you find similar growth rates:
 
 > 42.1% of API providers have been providing/developing APIs for
 six years or more, while 51.5% began developing APIs in the last
 five years.
 
-API development is clearly an area that is somewhat new for many companies, and the directions, methods, and other paths through this new territory aren't clear. In fact, the State of API 2019 report notes that companies are resoundingly asking for more standardization in this space.
+API development is clearly an area that is somewhat new for many companies, and the directions, methods, and other paths through this new territory aren't clear. In fact, *The State of API 2019* report notes that companies are resoundingly asking for more standardization in this space.
 
 [Programmableweb.com](https://programmableweb.com) charts and tracks the number of web APIs added to their directory. Programmableweb says, "Since January of 2014, an average of more than 2,000 APIs have been added per year" ([Research Shows Interest in Providing APIs Still High](https://www.programmableweb.com/news/research-shows-interest-providing-apis-still-high/research/2018/02/23)).
 
@@ -98,11 +98,11 @@ The way each site leverages its service is usually through a REST API of some ki
 
 We've established that APIs are on the rise, following the model of the web, and that REST APIs are leading the pack as the most common type of API. But what about documentation for these APIs?
 
-When asked "What are the top three most important characteristics you need in an API?", the [State of API 2019 report](https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf) found that "Accurate and detailed documentation" ranks third in importance:
+When asked "What are the top three most important characteristics you need in an API?", [*The State of API 2019* report](https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf) found that "Accurate and detailed documentation" ranks third in importance:
 
-{% include course_image.html url="https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf" size="medium" filename="mostimportantelementsapi" ext_print="png" ext_web="png" alt="Top characteristics needed in an API (State of API, p.25)" caption="Top characteristics needed in an API (State of API, p.25)" %}
+{% include course_image.html url="https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf" size="medium" filename="mostimportantelementsapi" ext_print="png" ext_web="png" alt="Top characteristics needed in an API (The State of API 2019, p.25)" caption="Top characteristics needed in an API (The State of API 2019, p.25)" %}
 
-This rank is three higher than noted in the [State of API 2016 report](https://static1.smartbear.co/smartbear/media/ebooks/state-of-api-report-2016.pdf), which put "Accurate and detailed documentation" sixth in importance:
+This rank is three higher than noted in the [*The State of API 2016* report](https://static1.smartbear.co/smartbear/media/ebooks/state-of-api-report-2016.pdf), which put "Accurate and detailed documentation" sixth in importance:
 
 {% include course_image.html url="https://static1.smartbear.co/smartbear/media/ebooks/state-of-api-report-2016.pdf" size="" border="" filename="mostimportant2016" ext_print="png" ext_web="png" alt="Documentation ranks sixth in importance" caption="In the 2016 State of API report, documentation ranked sixth in importance, p.19" %}
 
@@ -116,17 +116,17 @@ John Musser, one of the founders of Programmableweb.com, emphasizes the importan
 
 {% include random_ad2.html %}
 
-Despite what might seem like a clear mandate for excellent API docs,  technical writers aren't always leveraged for these doc efforts. The [2019 State of API](https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf) report found the following:
+Despite what might seem like a clear mandate for excellent API docs,  technical writers aren't always leveraged for these doc efforts. [*The 2019 State of API*](https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf) report found the following:
 
 > Automation is playing a major role in how organizations document their APIs. 43% of respondents said they leverage an API standard, like the OpenAPI Specification, to generate API docs. One quarter of respondents are using a “code-first” approach, where developers are responsible for adding annotations to the API code to generate docs. Only 15% of participants are investing in technical writers to help with documenting APIs.
 
-{% include course_image.html url="https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf" size="medium" filename="howteamsarehandlingdocs" ext_print="png" ext_web="png" alt="How teams are handling docs, State of API 2019, p.42" caption="How teams are handling docs, State of API 2019, p.42" %}
+{% include course_image.html url="https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf" size="medium" filename="howteamsarehandlingdocs" ext_print="png" ext_web="png" alt="How teams are handling docs, The State of API 2019, p.42" caption="How teams are handling docs, The State of API 2019, p.42" %}
 
 Of course, the finding that "Only 15% of participants are investing in technical writers..." will upset technical writers. Fortunately, this question is poorly worded and might account for the disheartening answers. The wording suggests that employing technical writers to create docs is an *alternative* to generating docs through the OpenAPI specification (OAS). In reality, technical writers should be collaborating with engineers to generate reference documentation through OAS. Reference docs account for only part of the needed documentation (maybe half, if that). In this course, I heavily recommend that technical writers generate reference documentation through the OAS. This is covered in the [OpenAPI spec and Swagger section](pubapis_rest_specification_formats.html).
 
 Thus, the connotation with this survey question misunderstands and distorts the role that technical writers play. Technical writers aren't old-school grammarians using feather and quill to etch out documentation in a tediously manual way (rather than auto-generating it via the OAS). Instead, many technical writers promote and champion OAS as a standard for creating the reference docs.
 
-The [2016 State of API report](https://static1.smartbear.co/smartbear/media/ebooks/state-of-api-report-2016.pdf) words the question a bit differently &mdash; "Does your organization have a formal API developer documentation process?" The 2016 report found that docs are a priority for about half of the respondents:
+[The *State of API 2016* report](https://static1.smartbear.co/smartbear/media/ebooks/state-of-api-report-2016.pdf) words the question a bit differently &mdash; "Does your organization have a formal API developer documentation process?" The 2016 report found that docs are a priority for about half of the respondents:
 
 > Nearly 75% of API providers have a formal API developer
 documentation process, but only 45.6% say that it is a priority for their team.
