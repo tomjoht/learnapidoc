@@ -1,5 +1,5 @@
 ---
-title: "Activity 2d: Make the OpenWeatherAPI request using curl"
+title: "Activity: Make the OpenWeatherAPI request using curl"
 permalink: /make_curl_request.html
 ---
 

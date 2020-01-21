@@ -61,19 +61,3 @@ To update the spec file in Swagger Editor:
 
 {: .tip}
 In the `description` property, in addition to describing your overall API, you might want to provide some basic instructions to users on how to use Swagger UI. If there's a test account they should use, you can provide the information they need in this space.
-
-## Stoplight Studio
-
-Now let's look at how to add this same information using Stoplight Studio.
-
-1.  Below the title, in the **description** area, paste in the description from the code sample above.
-
-    Note that Stoplight allows you to use [Stoplight flavored Markdown](https://github.com/stoplightio/studio-demo/blob/master/docs/markdown/stoplight-flavored-markdown.md). This Markdown version allows all the same tags as Commonmark but also includes some special tags for callouts, alerts, and other formatting.
-
-2.  In the **Contact** section, paste in the contact information from the code sample above.
-3.  In the **License** section, paste in the license information from the code sample above.
-4.  Preview the doc by clicking **Publish** and then sliding the **Show Preview** slider.
-
-    {% include course_image.html size="large" border="true" filename="stoplightstudio_preview_info_object3" ext_print="png" ext_web="png" alt="Previewing the docs" caption="Previewing the docs" %}
-
-5.  To exit the preview, move the **Show Preview** slider off and click the **Publish** button to hide the menu.

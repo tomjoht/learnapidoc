@@ -1,5 +1,5 @@
 ---
-title: "Activity 2b: Get an OpenWeatherMap API key"
+title: "Activity: Get an OpenWeatherMap API key"
 permalink: /get_authorization_keys.html
 ---
 

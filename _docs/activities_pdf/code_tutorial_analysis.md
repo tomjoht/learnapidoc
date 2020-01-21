@@ -1,5 +1,5 @@
 ---
-title: "Activity 7a: Analyze code tutorials"
+title: "Activity: Analyze code tutorials"
 permalink: /code_tutorial_analysis.html
 ---
 

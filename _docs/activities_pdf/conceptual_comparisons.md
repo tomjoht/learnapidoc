@@ -1,5 +1,5 @@
 ---
-title: "Activity 6b: Judge conceptual content and decide which is best"
+title: "Activity: Judge conceptual content and decide which is best"
 permalink: /conceptual_comparisons.html
 ---
 

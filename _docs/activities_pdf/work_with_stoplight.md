@@ -1,5 +1,5 @@
 ---
-title: "Activity 4d: Download and populate Stoplight with an OpenAPI specification"
+title: "Activity: Download and populate Stoplight with an OpenAPI specification"
 permalink: /work_with_stoplight.html
 ---
 

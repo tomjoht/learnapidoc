@@ -1,5 +1,5 @@
 ---
-title: "Activity 3a: What's wrong with this API reference topic"
+title: "Activity: What's wrong with this API reference topic"
 permalink: /whats_wrong_with_surfreport.html
 ---
 

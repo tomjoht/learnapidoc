@@ -1,5 +1,5 @@
 ---
-title: "Activity 4a: Explore Swagger UI through the Petstore Demo"
+title: "Activity: Explore Swagger UI through the Petstore Demo"
 permalink: /explore_swagger_petstore.html
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Activity 3b: Evaluate API reference docs for core elements"
+title: "Activity: Evaluate API reference docs for core elements"
 permalink: /evaluate_elements_api_ref.html
 ---
 

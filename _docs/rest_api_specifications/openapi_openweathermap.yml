@@ -1,5 +1,4 @@
 openapi: "3.0.2"
-
 info:
   title: "OpenWeatherMap API"
   description: "Get the current weather, daily forecast for 16 days, and a three-hour-interval forecast for 5 days for your city. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location stations. Data is available in JSON, XML, or HTML format. **Note**: This sample Swagger file covers the `current` endpoint only from the OpenWeatherMap API. <br/><br/> **Note**: All parameters are optional, but you must select at least one parameter. Calling the API by city ID (using the `id` parameter) will provide the most precise location results."
@@ -35,13 +34,13 @@ paths:
         - $ref: '#/components/parameters/mode'
 
       responses:
-        200:
+        "200":
           description: Successful response
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/200'
-        404:
+        "404":
           description: Not found response
           content:
             text/plain:
@@ -118,14 +117,14 @@ components:
     mode:
       name: mode
       in: query
-      description: "**Mode**. *Example: html*. Determines the format of the response. Possible values are `xml` and `html`. If the mode parameter is empty, the format is `json` by default."
+      description: "**Mode**. *Example: html*. Determines the format of the response. Possible values are `json`, `xml`, and `html`. If the mode parameter is empty, the format is `json` by default."
       schema:
         type: string
         enum: [json, xml, html]
         default: "json"
 
   schemas:
-    200:
+    "200":
       title: Successful response
       type: object
       properties:

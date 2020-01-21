@@ -171,3 +171,72 @@ If you access the value, the same definition will be used for both. The `*apidef
 You won't use these unique YAML features in the OpenAPI tutorial, but they're worth noting because JSON and YAML aren't entirely equivalent. For details on other differences between JSON and YAML, see [Learn YAML in Minutes](http://learnxinyminutes.com/docs/yaml/). To learn more about YAML, see this [YAML tutorial](http://rhnh.net/2011/01/31/yaml-tutorial).
 
 YAML is also used with [Jekyll](pubapis_jekyll.html). See my [YAML tutorial in the context of Jekyll](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_yaml_tutorial) for more details.
+
+## JSON versus YAML for the spec format
+
+Let's clear up some additional descriptors around JSON and YAML as well. The specification document in my OpenAPI tutorial uses YAML (which I introduced briefly [here](pubapis_yaml.html)), but it could also be expressed in JSON. JSON is a subset of YAML, so the two are practically interchangeable formats (for the data structures we're using). Ultimately, though, the OpenAPI spec is a JSON object. The specification notes:
+
+>An OpenAPI document that conforms to the OpenAPI Specification is itself a JSON object, which may be represented either in JSON or YAML format. (See [Format](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#format))
+
+In other words, the OpenAPI document you create is a JSON object, but you have the option of expressing the JSON using either JSON or YAML syntax. YAML is more readable and is a more common format (see API Handyman's take on [JSON vs YAML](https://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-1-introduction/#json-vs-yaml) for more discussion), so I've used YAML exclusively in code samples here. You will see that the OpenAPI specification documentation on GitHub always shows both the JSON and YAML syntax when showing specification formats. (For a more detailed comparison of YAML versus JSON, see "Relation to JSON" in the [YAML spec](http://www.yaml.org/spec/1.2/spec.html).)
+
+YAML refers to data structures with three main terms: "mappings (hashes/dictionaries), sequences (arrays/lists) and scalars (strings/numbers)" (see "Introduction" in [YAML 1.2](http://www.yaml.org/spec/1.2/spec.html)). However, because the OpenAPI spec is a JSON object, it uses JSON terminology &mdash; such as "objects," "arrays," "properties," "fields," and so forth. As such, I'll be showing YAML-formatted content but describing it using JSON terminology.
+
+## Review and summary
+
+So that we're on the same page with terms in the upcoming tutorial, let's briefly review. Each level in YAML (defined by a two-space indent) is an object. In the following code, `california` is an object. `animal`, `flower`, and `bird` are properties of the `california` object.
+
+```yaml
+california:
+  animal: Grizzly Bear
+  flower: Poppy
+  bird: Quail
+```
+
+Here's what this looks like in JSON:
+
+```json
+{
+  "california": {
+    "animal": "Grizzly Bear",
+    "flower": "Poppy",
+    "bird": "Quail"
+  }
+}
+```
+
+The specification often uses the term "field" in the titles and table column names when listing the properties for a specific object. (Further, it identifies two types of fields &mdash; "fixed" fields are declared, unique names while "patterned" fields are regex expressions.) *Fields* and *properties* are used synonymously in the OpenAPI spec.
+
+In the following code, `countries` contains an object called `united_states`, which contains an object called `california`, which contains several properties with string values:
+
+```yaml
+countries:
+  united_states:
+    california:
+      animal: Grizzly Bear
+      flower: Poppy
+      bird: Quail
+```
+
+In the following code, `demographics` is an object that contains an array:
+
+```yaml
+demographics:
+ - population
+ - land
+ - rivers
+```
+
+Here's what the above code looks like in JSON:
+
+```json
+{
+  "demographics": [
+    "population",
+    "land",
+    "rivers"
+  ]
+}
+```
+
+Hopefully, those brief examples will help align us with the terminology used in the tutorial.

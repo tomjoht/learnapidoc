@@ -1,5 +1,5 @@
 ---
-title: "Activity 4c: Create a Swagger UI display"
+title: "Activity: Create a Swagger UI display"
 permalink: /create_swaggerui_display.html
 ---
 

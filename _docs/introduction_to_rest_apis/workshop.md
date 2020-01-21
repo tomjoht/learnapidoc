@@ -73,11 +73,9 @@ Lunch provided through catering.
 
 {% include workshop_button.html title="Activity 4a: Explore Swagger UI through the Petstore Demo" activity="explore_swagger_petstore" button_type="info" %}
 
-{% include workshop_button.html title="Activity 4b: Edit an existing OpenAPI specification document" activity="edit_openapi_spec_file" button_type="info" %}
+{% include workshop_button.html title="Activity 4b: Create an OpenAPI specification using Stoplight Studio" activity="stoplight_studio_tutorial" button_type="info" %}
 
 {% include workshop_button.html title="Activity 4c: Create a SwaggerUI display" activity="create_swaggerui_display" button_type="info" %}
-
-{% include workshop_button.html title="Activity 4d (optional): View a *local* OpenAPI file in Swagger UI" activity="view_local_openapi_swaggerui" button_type="default" %}
 
 ## 2:00 - 2:30pm: Conceptual topics
 

@@ -8,10 +8,7 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-In this section, we'll dive deeply into the OpenAPI specification. We'll use the same [OpenWeatherMap API](https://openweathermap.org/current) that we've been using throughout other parts of this course as the content for our OpenAPI document. Using this API, we'll create a valid OpenAPI specification document and then render it into interactive documentation using three different tools: Stoplight Studio, Redoc, and Swagger UI. This comparison of tools will provide you with a good sense of how the spec can be rendered in different ways.
-
-{: .note}
-As of Jan 4, 2020, I'm currently reworking this tutorial to include examples from Stoplight as well as Swagger UI. I hope to finish within a week or so, but I'll be publishing the updates incrementally. If you see a few sections that seem unfinished, just be patient.
+In this section, we'll dive deeply into the OpenAPI specification. We'll use the same [OpenWeatherMap API](https://openweathermap.org/current) that we've been using throughout other parts of this course as the content for our OpenAPI document. Using this API, we'll create a valid OpenAPI specification document and then render it into interactive documentation using two different tools: Stoplight Studio and Swagger UI. This comparison of tools will provide you with a good sense of how the spec can be rendered in different ways.
 
 * TOC
 {:toc}
@@ -31,7 +28,7 @@ There are other Swagger/OpenAPI tutorials online, but make sure you follow tutor
 
 ## How my OpenAPI/Swagger tutorial is different
 
-You can find many Swagger tutorials online. What makes mine different? Besides the end-to-end walkthrough using the OpenAPI 3.0 (rather than 2.0) version of the spec, and using an actual API for context, I also show how OpenAPI fields map to Stoplight, Redoc, and Swagger UI. Specifically, I demonstrate how and where each of the OpenAPI fields gets displayed in these display frameworks.
+You can find many Swagger tutorials online. What makes mine different? Besides the end-to-end walkthrough using the OpenAPI 3.0 (rather than 2.0) version of the spec, and using an actual API for context, I also show how OpenAPI fields map to Stoplight and Swagger UI. Specifically, I demonstrate how and where each of the OpenAPI fields gets displayed in these display frameworks.
 
 Many other display frameworks besides [Stoplight](https://stoplight.io/studio/) and [Swagger UI](https://github.com/swagger-api/swagger-ui) can parse and display information in an OpenAPI specification document, and you can even create your own custom parsing tools, but these two tools tend to be common. Additionally, the two approaches provide a nice contrast: a GUI approach (Stoplight) versus a more code-based approach (Swagger) for contrast. In the future, I plan to add more information about additional display frameworks. First, let me introduce the two tools a bit more:
 
@@ -52,75 +49,6 @@ By showing you how the fields in the spec appear in these two tools and display 
 Before continuing, I want to clarify the difference between "Swagger" and "OpenAPI" terms for those who may be unfamiliar with this landscape. ["Swagger"](https://swagger.io/) was the original name of the OpenAPI specification, but the specification was later changed to ["OpenAPI"](https://github.com/OAI/OpenAPI-Specification/) to reinforce the open, non-proprietary nature of this standard. Now, "Swagger" refers to API tooling that supports the OpenAPI spec, not the spec itself.
 
 People still often refer to both names interchangeably, but "OpenAPI" is how the spec should be referred to. The "OpenAPI specification document" or "OpenAPI document" is the Swagger YAML file that you create to describe your API. For other terms, see the [API Glossary](api-glossary.html). See also [What Is the Difference Between Swagger and OpenAPI?](https://blog.smartbear.com/open-source/what-is-the-difference-between-swagger-and-openapi/).
-
-## JSON versus YAML for the spec format
-
-Let's clear up some additional descriptors around JSON and YAML as well. The specification document in my OpenAPI tutorial uses YAML (which I introduced briefly [here](pubapis_yaml.html)), but it could also be expressed in JSON. JSON is a subset of YAML, so the two are practically interchangeable formats (for the data structures we're using). Ultimately, though, the OpenAPI spec is a JSON object. The specification notes:
-
->An OpenAPI document that conforms to the OpenAPI Specification is itself a JSON object, which may be represented either in JSON or YAML format. (See [Format](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#format))
-
-In other words, the OpenAPI document you create is a JSON object, but you have the option of expressing the JSON using either JSON or YAML syntax. YAML is more readable and is a more common format (see API Handyman's take on [JSON vs YAML](https://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-1-introduction/#json-vs-yaml) for more discussion), so I've used YAML exclusively in code samples here. You will see that the OpenAPI specification documentation on GitHub always shows both the JSON and YAML syntax when showing specification formats. (For a more detailed comparison of YAML versus JSON, see "Relation to JSON" in the [YAML spec](http://www.yaml.org/spec/1.2/spec.html).)
-
-YAML refers to data structures with three main terms: "mappings (hashes/dictionaries), sequences (arrays/lists) and scalars (strings/numbers)" (see "Introduction" in [YAML 1.2](http://www.yaml.org/spec/1.2/spec.html)). However, because the OpenAPI spec is a JSON object, it uses JSON terminology &mdash; such as "objects," "arrays," "properties," "fields," and so forth. As such, I'll be showing YAML-formatted content but describing it using JSON terminology.
-
-So that we're on the same page with terms, let's briefly review.
-
-Each level in YAML (defined by a two-space indent) is an object. In the following code, `california` is an object. `animal`, `flower`, and `bird` are properties of the `california` object.
-
-```yaml
-california:
-  animal: Grizzly Bear
-  flower: Poppy
-  bird: Quail
-```
-
-Here's what this looks like in JSON:
-
-```json
-{
-  "california": {
-    "animal": "Grizzly Bear",
-    "flower": "Poppy",
-    "bird": "Quail"
-  }
-}
-```
-
-The specification often uses the term "field" in the titles and table column names when listing the properties for a specific object. (Further, it identifies two types of fields &mdash; "fixed" fields are declared, unique names while "patterned" fields are regex expressions.) *Fields* and *properties* are used synonymously in the OpenAPI spec.
-
-In the following code, `countries` contains an object called `united_states`, which contains an object called `california`, which contains several properties with string values:
-
-```yaml
-countries:
-  united_states:
-    california:
-      animal: Grizzly Bear
-      flower: Poppy
-      bird: Quail
-```
-
-In the following code, `demographics` is an object that contains an array:
-
-```yaml
-demographics:
- - population
- - land
- - rivers
-```
-
-Here's what the above code looks like in JSON:
-
-```json
-{
-  "demographics": [
-    "population",
-    "land",
-    "rivers"
-  ]
-}
-```
-
-Hopefully, those brief examples will help align us with the terminology used in the tutorial.
 
 {% include random_ad2.html %}
 

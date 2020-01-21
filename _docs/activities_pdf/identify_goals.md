@@ -1,5 +1,5 @@
 ---
-title: "Activity 1a: Identify your goals with API documentation"
+title: "Activity: Identify your goals with API documentation"
 permalink: /identify_goals.html
 ---
 

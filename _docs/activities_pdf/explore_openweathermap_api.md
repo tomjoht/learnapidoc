@@ -1,5 +1,5 @@
 ---
-title: "Activity 2a: Get familiar with the OpenWeatherMap API"
+title: "Activity: Get familiar with the OpenWeatherMap API"
 permalink: /explore_openweathermap_api.html
 ---
 

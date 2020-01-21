@@ -116,6 +116,9 @@ folders:
   - title: Introduction to the OpenAPI spec and Swagger
     jurl: /pubapis_swagger_intro.html
 
+  - title: Fastest Way to Create an OpenAPI Specification Document 
+    jurl: /pubapis_openapis_quickstart_stoplight.html
+
   - title: Working in YAML
     jurl: /pubapis_yaml.html
 

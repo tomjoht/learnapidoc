@@ -1,5 +1,5 @@
 ---
-title: "Activity 7a: Classify code documentation into one of the five types"
+title: "Activity: Classify code documentation into one of the five types"
 permalink: /classify_code_approach.html
 ---
 

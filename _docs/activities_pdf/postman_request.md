@@ -1,5 +1,5 @@
 ---
-title: "Activity 2c: Make requests with Postman"
+title: "Activity: Make requests with Postman"
 permalink: /postman_request.html
 ---
 

@@ -66,15 +66,3 @@ Paste the `servers` object (the [first code sample above](#sample_servers_object
 {% include course_image.html filename="swagger_servers_object2" ext_print="png" ext_web="png" alt="Swagger UI with the servers object" caption="Swagger UI with the servers object" %}
 
 Notice the drop-down menu that appears in the lower-right. (Even if you have just one URL, it still appears in a drop-down menu.)
-
-## Stoplight Studio
-
-To add server information to Stoplight Studio:
-
-1.  In the **Servers** section, click the plus sign (**+**) and paste in the `url` property above: `https://api.openweathermap.org/data/2.5/`.
-
-    {% include course_image.html  size="large" border="true" filename="stoplight_servers_section" ext_print="png" ext_web="png" alt="Servers section" caption="Servers section" %}
-
-2.  If you preview the docs, you will see the Servers section appear:
-
-    {% include course_image.html size="large" border="true" filename="stoplightstudio_preview_info_object2" ext_print="png" ext_web="png" alt="Previewing the docs with the server URL" caption="Previewing the docs with the server URL" %}
