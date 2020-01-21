@@ -1,5 +1,5 @@
 {: .activity_subtitle}
-## <i class="fa fa-user-circle"></i> Activity 7a: Analyze two code tutorials
+## <i class="fa fa-user-circle"></i> Activity: Analyze two code tutorials
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 Code tutorials often have the following sections or characteristics:

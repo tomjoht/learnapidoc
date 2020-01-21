@@ -1,5 +1,5 @@
 {: .activity_subtitle}
-## <i class="fa fa-user-circle"></i> Activity 4d: View local OpenAPI file in Swagger UI {#view_local_openapi_swaggerui}
+## <i class="fa fa-user-circle"></i> Activity: View local OpenAPI file in Swagger UI {#view_local_openapi_swaggerui}
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 In order to view a *local* OpenAPI file (rather than an OpenAPI file hosted on a web server), you'll need to run an HTTP server on your computer. This is because CORS (cross-origin resource sharing) security restrictions in Chrome will block Swagger UI from running. Swagger UI needs to load on a web server to fulfill the security requirements.

@@ -1,5 +1,5 @@
 {: .activity_subtitle}
-## <i class="fa fa-user-circle"></i> Activity 8c: Push local changes to the remote
+## <i class="fa fa-user-circle"></i> Activity: Push local changes to the remote
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 1.  In a text editor, open the Markdown file you downloaded in the GitHub repository.

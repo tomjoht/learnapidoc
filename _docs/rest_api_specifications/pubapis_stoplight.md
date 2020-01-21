@@ -8,7 +8,7 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-Previously, I talked about [SwaggerHub](pubapis_swaggerhub_smartbear.html) as a tool to simplify your authoring and publication of the [OpenAPI specification](pubapis_openapi_tutorial_overview.html). Now let's explore another tool called [Stoplight.io](https://stoplight.io?utm_source=idratherbewriting).
+Earlier in the course, you might have followed the tutorial for  [Fastest Way to Create an OpenAPI Specification Document](pubapis_openapis_quickstart_stoplight.html), which uses Stoplight Studio. As a GUI editor for creating an OpenAPI, Stoplight Studio simplifies the authoring of a highly technical syntax that is often challenging to make valid. Now let's dive a bit deeper into the offerings and philosophy of Stoplight.
 
 Among other services, Stoplight provides visual modeling tools to create an OpenAPI document for your API &mdash; without requiring you to know the OpenAPI spec details or code the spec line by line. This API specification document can act as a single source of truth that empowers the whole API lifecycle, from UX prototyping to testing, development, documentation, sales, and more.
 
@@ -19,7 +19,7 @@ Among other services, Stoplight provides visual modeling tools to create an Open
 
 ## Limits to line-by-line spec coding
 
-Before jumping into details, let me provide some background about why I think Stoplight is a valuable tool, and why I've both listed it in this course and created an [activity for using Stoplight](pubapis_stoplight.html#workshop_activity). At the [2018 TC Camp conference](http://www.tccamp.org/) in Santa Clara, the camp organizers put on a full-day API workshop focused on OpenAPI and Swagger. I was excited to see this topic addressed in a workshop because I think coding the spec is both the most complicated and most important part of API documentation.
+Before jumping into details, let me provide some background about why I think Stoplight is a valuable tool, and why I've both listed it in this course and created an [activity for using Stoplight](pubapis_openapis_quickstart_stoplight.html). At the [2018 TC Camp conference](http://www.tccamp.org/) in Santa Clara, the camp organizers put on a full-day API workshop focused on OpenAPI and Swagger. I was excited to see this topic addressed in a workshop because I think coding the spec is both the most complicated and most important part of API documentation.
 
 {% include random_ad2.html %}
 
@@ -122,11 +122,3 @@ Stoplight also allows you to create variables to use in *both* your specificatio
 Although I generally like working directly in the code, I've found that Stoplight lets me focus more on the content and less on the details of the spec's format. Ideally, you can probably get developers and other project team members to populate reference content in Stoplight themselves since this is an activity that needs to happen much earlier in the API design process anyway.
 
 If you're documenting an API, [Stoplight](https://stoplight.io) and their [hosted doc solution](https://stoplight.io/documentation/) are worth checking out. But don't think of Stoplight as just a documentation platform or an easy way to generate the OpenAPI description. Consider Stoplight a way to design the single source of truth that will empower all other teams in a more efficient toward a successful API.
-
-{% comment %}
-## <i class="fa fa-user-circle"></i> Activity: Use Stoplight to edit your OpenAPI spec {#workshop_activity}
-
-In previous activities, you edited or created an [OpenAPI specification document](pubapis_openapi_activity.html) and also created a [Swagger UI display](pubapis_swagger.html#create_swaggerui) with that specification document. In this example, you'll make some modifications to your specification document using [Stoplight](pubapis_stoplight.html), a visual editor.
-
-{% include content/activities/work_with_stoplight.md %}
-{% endcomment %}

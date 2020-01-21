@@ -1,5 +1,5 @@
 {: .activity_subtitle}
-## <i class="fa fa-user-circle"></i> Activity 3a: What's wrong with this API reference topic
+## <i class="fa fa-user-circle"></i> Activity: What's wrong with this API reference topic
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 The following is a sample API reference topic for an endpoint called `surfreport`. There are about 25 things wrong in the topic. A copy of this same content is available in a read-only [Google Doc here](https://idratherbewriting.site/whats-wrong-api). In Google Docs, go to **File > Make a Copy** to create your own instance. Then make comments in Google docs to note as many errors as you can find.

@@ -45,7 +45,7 @@ Doors open at 8:00am. Check your name off at the registration table and get a na
 
 {% include workshop_button.html title="Activity 2d: Make requests with curl" activity="make_curl_request" button_type="primary" %}
 
-{% include workshop_button.html title="Activity 2e (optional): Make an API request on a web page" activity="ajax_api_request" button_type="default" %}
+{% include workshop_button.html title="Activity: Make an API request on a web page" activity="ajax_api_request" button_type="primary" %}
 
 ## 10:30 - 10:45am: Break
 
@@ -75,7 +75,9 @@ Lunch provided through catering.
 
 {% include workshop_button.html title="Activity 4b: Create an OpenAPI specification using Stoplight Studio" activity="stoplight_studio_tutorial" button_type="info" %}
 
-{% include workshop_button.html title="Activity 4c: Create a SwaggerUI display" activity="create_swaggerui_display" button_type="info" %}
+{% include workshop_button.html title="Activity 4c: Create a Redoc display" activity="create_redoc_display" button_type="info" %}
+
+{% include workshop_button.html title="Activity 4d: Create a SwaggerUI display" activity="create_swaggerui_display" button_type="info" %}
 
 ## 2:00 - 2:30pm: Conceptual topics
 

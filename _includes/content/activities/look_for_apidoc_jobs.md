@@ -1,5 +1,5 @@
 {: .activity_subtitle}
-## <i class="fa fa-user-circle"></i> Activity 9a: Look at API documentation jobs and requirements
+## <i class="fa fa-user-circle"></i> Activity: Look at API documentation jobs and requirements
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 In this activity, you'll get a sense of the skills needed for the jobs in your location, and then draw up a plan.

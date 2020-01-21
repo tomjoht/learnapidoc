@@ -1,5 +1,5 @@
 {: .activity_subtitle}
-## <i class="fa fa-user-circle"></i> Activity 2e: Make an API request on a web page
+## <i class="fa fa-user-circle"></i> Activity: Make an API request on a web page
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 For this activity, you'll use JavaScript to display the API response on a web page. Specifically, you'll use some auto-generated jQuery code from Postman to create the AJAX request. You'll get the wind speed from the response and print it to the page.
@@ -35,8 +35,9 @@ For this activity, you'll use JavaScript to display the API response on a web pa
        </body>
     </html>
     ```
-
-    This code is explained in more detail in a section below.
+    {% unless page.permalink == "/workshop.html" %}
+    This code is explained in more detail later on in the tutorial.
+    {% endunless %}
 
 3.  Save the file as an HTML file named `weather.html`.
 4.  Start **Chrome** and open the JavaScript Console. (To open the JavaScript Console, on Chrome on a Mac, go to **View > Developer > Javascript Console**; on Windows, click the **menu** button (vertical ellipses) and go to **More tools > Developer tools**. Then click the **Console** tab.)
@@ -48,8 +49,12 @@ For this activity, you'll use JavaScript to display the API response on a web pa
 
     One of the properties in the response is `wind.speed`. The wind speed is shown on the page as well.
 
+{% if page.permalink == "/workshop.html" %}
+For a detailed explanation of the code, see the "Step-by-step explanation" in [Inspect the JSON from the response payload](docapis_json_console.html#step-by-step-explanation).
+{% endif %}
+
+{% unless page.permalink == "/workshop.html" %}
 ### Step-by-step explanation
-{% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 The above activity simply had you paste a chunk of prewritten code onto a web page, without much explanation. In this section, we'll step through that code with details about how it was assembled. However, we won't dive too deeply into JavaScript and jQuery here, as this is somewhat beyond the scope of the instruction.
 
@@ -146,4 +151,4 @@ To create the web page code from scratch:
     {: .tip}
     You can view the file here: [weather-plain.html](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html).
 
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Inspect the JSON from the response payload]({{site.rooturl}}docapis_json_console.html) and [Access and print a specific JSON value]({{site.rooturl}}docapis_access_json_values.html).*{% endif %}
+{% endunless %}

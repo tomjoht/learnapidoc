@@ -1,5 +1,5 @@
 {: .activity_subtitle}
-##  <i class="fa fa-user-circle"></i> Activity 6b: Judge conceptual content and decide which is best
+##  <i class="fa fa-user-circle"></i> Activity: Judge conceptual content and decide which is best
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 The following are 6 common conceptual topics in API documentation. For each topic, examine the three examples and decide which one is best. This is an activity we'll do together as a group.

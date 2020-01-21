@@ -1,6 +1,5 @@
 {: .activity_subtitle}
-## <i class="fa fa-user-circle"></i> Activity 4b: Stoplight Studio tutorial for creating an OpenAPI spec
-
+## <i class="fa fa-user-circle"></i> Activity: Stoplight Studio tutorial for creating an OpenAPI spec
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 In this tutorial, you'll use Stoplight Studio to create a valid OpenAPI specification, using the OpenWeatherMap as the sample API.

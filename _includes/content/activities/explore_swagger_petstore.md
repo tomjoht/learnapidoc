@@ -1,5 +1,5 @@
 {: .activity_subtitle}
-## <i class="fa fa-user-circle"></i> Activity 4a: Explore Swagger UI through the Petstore Demo
+## <i class="fa fa-user-circle"></i> Activity: Explore Swagger UI through the Petstore Demo
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 Let's get some hands-on experience with Swagger UI using the Petstore demo. The Petstore demo provides a good example of how the OpenAPI specification can be rendered visually.
