@@ -205,4 +205,4 @@ The following table describes each item in the response.
 ## Answers
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
-You can view the answer key here: [What's wrong with this topic answer key]({{site.rooturl}}whats_wrong_answer_key.html).
+You can view the answer key here: [What's wrong with this topic answer key](https://docs.google.com/document/d/1ogj99YHhFMkXb-HMMMko-G9Hq9Rg6cztdT06-oUZm4E/edit).

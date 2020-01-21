@@ -15,9 +15,10 @@ In this activity, you'll review API reference documentation and identify the com
     *  [Splunk API reference](https://docs.splunk.com/Documentation/Splunk/8.0.0/RESTREF/RESTlist)
     *  [Zomato API reference](https://developers.zomato.com/documentation#/)
     *  [Paypal API reference](https://developer.paypal.com/docs/api/overview/)
-    *  [Basecamp API reference](https://github.com/basecamp/bcx-api/)
+    *  [Basecamp API reference](https://github.com/basecamp/bc3-api)
     *  [OpenSecrets API reference](http://www.opensecrets.org/open-data/api-documentation)
     *  [Dropbox API reference](https://www.dropbox.com/developers/documentation/http/documentation)
+    *  [DBS Developers API](https://www.dbs.com/dbsdevelopers/discover/deposit.html)
 
 2.  In the reference documentation, identify each of the following sections (if they exist):
 

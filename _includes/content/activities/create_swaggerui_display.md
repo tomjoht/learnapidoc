@@ -24,13 +24,10 @@ First, you'll make sure you can view Swagger locally. Then you'll switch the Pet
     url: "http://petstore.swagger.io/v2/swagger.json",
     ```
 
-6.  Change the `url` value to `https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml` and then save the file.
+6.  Change the `url` value to an online web URL to your Swagger file. For example: `https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml`. Then save the file.
 
-    For example:
-
-    ```js
-    url: "https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml",
-    ```
+    {: note}
+    Swagger UI will create an error (CORS) if the reference isn't to an online URL. To view Swagger UI with a local OpenAPI file, you can run a [simple Python server locally](https://docs.python.org/2/library/simplehttpserver.html) to simulate a web server.
 
 7.  Refresh the `index.html` file in your Chrome browser. The content should show the OpenWeatherMap API content instead of Swagger Petstore content.
 
