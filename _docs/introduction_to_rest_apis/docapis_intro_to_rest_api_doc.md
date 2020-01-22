@@ -100,7 +100,7 @@ We've established that APIs are on the rise, following the model of the web, and
 
 When asked "What are the top three most important characteristics you need in an API?", [*The State of API 2019* report](https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf) found that "Accurate and detailed documentation" ranks third in importance:
 
-{% include course_image.html url="https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf" size="medium" filename="mostimportantelementsapi" ext_print="png" ext_web="png" alt="Top characteristics needed in an API (The State of API 2019, p.25)" caption="Top characteristics needed in an API (The State of API 2019, p.25)" %}
+{% include course_image.html url="https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf" size="medium" filename="mostimportantelementsapi2" ext_print="png" ext_web="png" alt="Top characteristics needed in an API (The State of API 2019, p.25)" caption="Top characteristics needed in an API (The State of API 2019, p.25)" %}
 
 This rank is three higher than noted in the [*The State of API 2016* report](https://static1.smartbear.co/smartbear/media/ebooks/state-of-api-report-2016.pdf), which put "Accurate and detailed documentation" sixth in importance:
 
@@ -108,7 +108,7 @@ This rank is three higher than noted in the [*The State of API 2016* report](htt
 
 An even earlier survey conducted by Programmableweb in 2013 (which included 250 respondents) found that "Complete and accurate documentation" actually ranked as the most important factor in an API (see [API Consumers Want Reliability, Documentation and Community](http://www.programmableweb.com/news/api-consumers-want-reliability-documentation-and-community/2013/01/07)).
 
-{% include course_image.html url="http://www.programmableweb.com/news/api-consumers-want-reliability-documentation-and-community/2013/01/07" size="medium" filename="progwebsurvey" ext_print="png" ext_web="png" alt="Programmableweb survey" caption="Programmableweb survey showing that complete and accurate documentation is the most important factor for developers" %}
+{% include course_image.html url="http://www.programmableweb.com/news/api-consumers-want-reliability-documentation-and-community/2013/01/07" size="medium" filename="progwebsurvey2" ext_print="png" ext_web="png" alt="Programmableweb survey" caption="Programmableweb survey showing that complete and accurate documentation is the most important factor for developers" %}
 
 John Musser, one of the founders of Programmableweb.com, emphasizes the importance of documentation in his presentations. In [10 reasons why developers hate your API](https://www.infoq.com/presentations/API-design-mistakes), he says the number one reason developers hate your API is because "Your documentation sucks."
 
