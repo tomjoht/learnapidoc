@@ -95,7 +95,7 @@ Here's another example from the Clearbit API:
 
 <a href="https://clearbit.com/docs?javascript#enrichment-api-combined-api" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/clearbitrequestexamples.png" alt="Clearbit code samples" /></a>
 
-You can see the request in Shell (curl), Ruby, Node, or Python. Developers can easily copy the needed code into their applications, rather than figuring out how to make the translate the curl request into a particular programming language.
+You can see the request in Shell (curl), Ruby, Node, or Python. Developers can easily copy the needed code into their applications, rather than figuring out how to translate the curl request into a particular programming language.
 
 Providing a variety of requests like this, often displayed through [tabs](https://getbootstrap.com/docs/3.3/javascript/#tabs), helps make your API easier to implement. It's even better if you can automatically populate the API keys with the actual user's API keys based on their logged-in profile.
 
