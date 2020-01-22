@@ -127,8 +127,6 @@ During this time, I'd like to have participants surface specific challenges that
 
 <a href="/learnapidoc/slides/thriving_in_api_docs.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/thrivinginapidocsthumb.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
-{% include workshop_button.html title="Activity 9a: Find an open-source project" activity="find_open_source_project" button_type="info" %}
-
 {% include workshop_button.html title="Jeopardy: Test your knowledge" activity="jeopardy_questions" button_type="info" %}
 
 ## 5:00 - 5:30pm: Individual consulting

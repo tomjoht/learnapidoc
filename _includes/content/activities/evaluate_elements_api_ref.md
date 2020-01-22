@@ -19,6 +19,8 @@ In this activity, you'll review API reference documentation and identify the com
     *  [OpenSecrets API reference](http://www.opensecrets.org/open-data/api-documentation)
     *  [Dropbox API reference](https://www.dropbox.com/developers/documentation/http/documentation)
     *  [DBS Developers API](https://www.dbs.com/dbsdevelopers/discover/deposit.html)
+    *  [Adyen Docs](https://docs.adyen.com/)
+    *  [NBG Technology Hub](https://developer.nbg.gr/apiProducts)
 
 2.  In the reference documentation, identify each of the following sections (if they exist):
 
