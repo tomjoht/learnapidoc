@@ -27,7 +27,7 @@ Doors open at 8:00am. Check your name off at the registration table and get a na
 
 ## 9:00 - 9:30am: Intro to API documentation
 
-[Slides: Introduction to API documentation](docapis_introtoapis.html)
+[Section: Introduction to API documentation](docapis_introtoapis.html)
 
 <a href="/learnapidoc/slides/intro_api_documentation.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/introapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
@@ -35,7 +35,7 @@ Doors open at 8:00am. Check your name off at the registration table and get a na
 
 ## 9:30 - 10:15am: Using an API like a Developer
 
-[Slides: Using an API like a developer](likeadeveloper.html)
+[Section: Using an API like a developer](likeadeveloper.html)
 
 <a href="/learnapidoc/slides/using_api_like_developer.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/using-api-developer-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
@@ -55,7 +55,7 @@ Break time
 
 ## 10:30 - 11:30pm: API endpoints
 
-[Slides: Documenting API endpoints](docendpoints.html)
+[Section: Documenting API endpoints](docendpoints.html)
 
 <a href="/learnapidoc/slides/documenting_api_endpoints.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/documenting-endpoints-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
@@ -65,7 +65,7 @@ Break time
 
 ## 11:30 - 12:30: OpenAPI and Swagger
 
-[Slides: OpenAPI and Swagger](restapispecifications.html)
+[Section: OpenAPI and Swagger](restapispecifications.html)
 
 <a href="/learnapidoc/slides/openapi_and_swagger.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/openapiswaggertitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
@@ -85,7 +85,7 @@ Lunch provided through catering.
 
 ## 2:00 - 2:30pm: Conceptual topics
 
-[Slides: Conceptual topics](docconceptual.html)
+[Section: Conceptual topics](docconceptual.html)
 
 <a href="/learnapidoc/slides/conceptual_content_api_docs.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/conceptualcontenttitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
@@ -99,7 +99,7 @@ Break. Snacks provided.
 
 ## 2:45 - 3:30pm: Code tutorials
 
-[Slides: Code tutorials](docapiscode.html)
+[Section: Code tutorials](docapiscode.html)
 
 <a href="/learnapidoc/slides/code_tutorials.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/codetutorialsthumb.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
@@ -107,7 +107,7 @@ Break. Snacks provided.
 
 ## 3:30 - 4:15pm: Publishing API docs
 
-[Slides: Publishing API Documentation](publishingapis.html)
+[Section: Publishing API Documentation](publishingapis.html)
 
 <a href="/learnapidoc/slides/publishing_api_docs.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/publishingapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
@@ -123,7 +123,7 @@ During this time, I'd like to have participants surface specific challenges that
 
 ## 4:30 - 5:00pm: Thriving in the API doc space
 
-[Slides: Thriving in the API doc space](jobapis.html)
+[Section: Thriving in the API doc space](jobapis.html)
 
 <a href="/learnapidoc/slides/thriving_in_api_docs.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/thrivinginapidocsthumb.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
