@@ -42,15 +42,15 @@ Typically, an API will have a number of endpoints grouped under the same resourc
 * POST `/campaigns/{campaign_id}/actions/test`
 * POST `/campaigns/{campaign_id}/actions/unschedule`
 
-Here's a resource description for the Membership resource in the [Box API](https://docs.box.com/reference#membership-object):
+Here's a resource description for the Membership resource in the [Box API](https://developer.box.com/en/reference/resources/group-membership/):
 
-<a  class="noCrossRef" href="https://docs.box.com/reference#membership-object" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/boxapi_3_17.png" alt="Example from Box" /></a>
+<a  class="noCrossRef" href="https://developer.box.com/en/reference/resources/group-membership/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/boxresources.png" alt="Example from Box" /></a>
 
 For the Membership resource (or "object," as they call it), there are 7 different endpoints or methods you can call. The Box API describes the Membership resource and each of the endpoints that lets you access the resource.
 
 Sometimes the general resource isn't described; instead, it just groups the endpoints. The bulk of the description appears in each endpoint. For example, in the Eventbrite API, here's the Events resource:
 
-<a class="noExtIcon" href="https://www.eventbrite.com/platform/api#/reference/event"><img src="https://idratherbewritingmedia.com/images/api/eventbriteresourceexample.png"/></a>
+<a class="noExtIcon" href="https://www.eventbrite.com/platform/api#/reference/event"><img src="https://idratherbewritingmedia.com/images/api/eventbriteresourceexample2.png"/></a>
 
 Although the Events resource isn't described here, descriptions are added for each of the Events endpoints. The Events resource contains all of these endpoints:
 

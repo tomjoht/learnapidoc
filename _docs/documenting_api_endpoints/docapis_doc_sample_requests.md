@@ -41,7 +41,7 @@ curl is a common format to show requests for several reasons:
 
 In general, use curl to show your sample request. Here's another example of a curl request in the Parse API:
 
-<a href="http://docs.parseplatform.org/rest/guide/#updating-objects" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/parseapirequest.png"/></a>
+<a href="http://docs.parseplatform.org/rest/guide/#updating-objects" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/parseapirequest2.png"/></a>
 
 You can add backslashes in curl to separate each parameter onto its own line (though, as I pointed out in the [curl tutorial](docapis_make_curl_call.html#windows_notes), Windows has trouble with backslashes).
 
@@ -120,7 +120,7 @@ The Postman app can also generate code snippets in a similar way. I covered this
 
 Then select the language you want, such as JavaScript > Jquery AJAX:
 
-<img src="https://idratherbewritingmedia.com/images/api/postmancodesnippet.png" class="medium" alt="JavaScript Ajax code snippet" />
+<img src="https://idratherbewritingmedia.com/images/api/postman_javascript_ajax.png" class="medium" alt="JavaScript Ajax code snippet" />
 
 {: .note}
 Although these code generators are probably helpful, they may or may not work for your API. Always review code samples with developers. In most cases, developers supply the code samples for the documentation, and technical writers briefly comment on the code samples.

@@ -47,7 +47,7 @@ Doors open at 8:00am. Check your name off at the registration table and get a na
 
 {% include workshop_button.html title="Activity 2d: Make requests with curl" activity="make_curl_request" button_type="primary" %}
 
-{% include workshop_button.html title="Activity: Make an API request on a web page" activity="ajax_api_request" button_type="primary" %}
+{% include workshop_button.html title="Activity 2e: Make an API request on a web page" activity="ajax_api_request" button_type="primary" %}
 
 ## 10:15 - 10:30am: Break
 
