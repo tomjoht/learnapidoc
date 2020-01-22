@@ -2,7 +2,7 @@
 ## <i class="fa fa-user-circle"></i> Activity: Make the OpenWeatherAPI request using curl
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
-This activity assumes you have curl installed. curl is available on Mac and some Windows 10 versions (in Powershell) by default. If you're on an older Windows machine that doesn't have curl, see [installing curl here](http://www.confusedbycode.com/curl/#downloads) for details.
+This activity assumes you have curl installed. curl is available on Mac and some Windows 10 versions by default. If you're on an older Windows machine that doesn't have curl, see [installing curl here](http://www.confusedbycode.com/curl/#downloads) for details. (Most likely, choose "With Administrator Privileges (free)" 64-bit version.) Close and restart your Command Prompt after installing curl.
 
 To make a request with curl:
 
@@ -22,11 +22,10 @@ To make a request with curl:
 
     (Note that previously, Postman would its own header information, designated with `-H`. If you see these parameters, delete them since they cause issues when submitted outside of Postman.)
 
-    In general, the code snippets can be copied and pasted directly into your terminal on a Mac. For Windows, you might have to clean the code up a bit:
+    {: .warning}
+    In general, the code snippets can be copied and pasted directly into your terminal on a Mac. However, for Windows, you must change the single quotation marks to double quotation marks.
 
-    * Paste it into a text editor such as Sublime Text
-    * If you see any backslashes, (`\`) remove them and put all content onto the same line. (Backslashes are just added for readability).
-    * Change the single quotation marks to double quotation marks.
+    Also, on Windows, if your curl has any backslashes, (`\`) remove them and put all content onto the same line. (Backslashes are just added for readability). You can make these adjustments in a text editor before pasting the curl command into the Command Prompt.
 
 5.  Go to your Terminal (Mac) or Command Prompt (Windows).
 

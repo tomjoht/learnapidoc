@@ -7,7 +7,8 @@
 In this exercise, you'll use Postman to make a request using OpenWeatherMap's [current weather data API endpoint](https://openweathermap.org/current). To make the request:
 
 1.  If you haven't already done so, download and install the Postman app at [https://www.getpostman.com/downloads/](https://www.getpostman.com/downloads/). (Make sure you download the app and not the deprecated Chrome extension.)
-2.  Start the Postman app and, if prompted, sign in.
+2.  Start the Postman app and sign in when prompted.
+3.  If this is your first time launching Postman, a welcome screen appears. Click **Create a request**.
 3.  Insert the following endpoint into the box next to **GET**: `https://api.openweathermap.org/data/2.5/weather`
 4.  Click the **Params** tab (below the box where you inserted the endpoint) and then add the following three parameters in the **key** and **value** rows:
 

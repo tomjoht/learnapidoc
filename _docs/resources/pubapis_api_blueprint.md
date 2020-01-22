@@ -472,7 +472,7 @@ Similar to Swagger Editor, the Apiary editor shows you the output in the right p
 
 In the Apiary's top navigation, click **Documentation**. Then interact with the API on Apiary by clicking first selecting an endpoint and then clicking **Switch to Console**. Call the resources and view the responses.
 
-{% include course_image.html url="" size="" border="" filename="openweathermapapiapiary" ext_print="png" ext_web="png" alt="Previewing the documentation for the OpenWeatherMap API definition in Apiary" caption="reviewing the documentation for the OpenWeatherMap API definition in Apiary" %}
+{% include course_image.html size="medium" filename="openweathermapapiapiary" ext_print="png" ext_web="png" alt="Previewing the documentation for the OpenWeatherMap API definition in Apiary" caption="reviewing the documentation for the OpenWeatherMap API definition in Apiary" %}
 
 You can switch between an Example and a Console view in the documentation. The Example view shows pre-built responses. The Console view allows you to enter your own values and generate dynamic responses based on your own API key. This dual display &mdash; both the Example and the Console views &mdash; might align better with user needs:
 

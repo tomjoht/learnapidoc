@@ -2,7 +2,7 @@
 ## <i class="fa fa-user-circle"></i> Activity: Complete the SendGrid Getting Started tutorial in 5 min {#openweathermap_apikey}
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
-In this section you explored [Getting started tutorials]({{site.rooturl}}docapis_doc_getting_started_section.html). Do the following tutorial from SendGrid: [Getting Started with the SendGrid API](https://sendgrid.com/docs/for-developers/sending-email/api-getting-started/).
+In this section, you explored [Getting started tutorials]({{site.rooturl}}docapis_doc_getting_started_section.html). To get better empathy for these tutorials as a user, try to complete the following tutorial from SendGrid: [Getting Started with the SendGrid API](https://sendgrid.com/docs/for-developers/sending-email/api-getting-started/).
 
 There are no supplementary instructions or tips for working through the content, as that would be a crutch to the experience. Ideally, you should be able to complete all the steps in about 5 minutes. After you finish, answer the following questions:
 

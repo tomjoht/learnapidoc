@@ -105,7 +105,7 @@ Break. Snacks provided.
 
 {% include workshop_button.html title="Activity 7a: Analyze code tutorials" activity="code_tutorial_analysis" button_type="primary" %}
 
-## 3:30 - 4:15pm: Part VIII (Publishing API docs)
+## 3:30 - 4:15pm: Publishing API docs
 
 [Slides: Publishing API Documentation](publishingapis.html)
 
@@ -115,7 +115,7 @@ Break. Snacks provided.
 
 {% include workshop_button.html title="Activity 8b: Clone your GitHub repo locally" activity="clone_repo_locally" button_type="warning" %}
 
-{% include workshop_button.html title="Activity 8c (optional): Push local changes to the remote" activity="push_local_to_remote" button_type="default" %}
+{% include workshop_button.html title="Activity 8c: Push local changes to the remote" activity="push_local_to_remote" button_type="warning" %}
 
 ## 4:00 - 4:30: Participant's challenges surfaced and discussed
 

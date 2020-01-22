@@ -22,7 +22,7 @@ Note that unless you're publishing your docs with Mulesoft or another platform t
 
 Similar to OpenAPI, after you create a RAML file that describes your API, it can be consumed by different platforms to parse and display the information in interactive outputs. The RAML format, which uses YML syntax, is human-readable, efficient, and simple. Here's what the RAML output looks like in API Console (which is similar to Swagger UI):
 
-{% include course_image.html url="" size="large" filename="raml-new-console-header" ext_print="png" ext_web="png" alt="Sample API Console output with RAML" caption="Sample API Console output with RAML" %}
+{% include course_image.html size="large" filename="raml-new-console-header" ext_print="png" ext_web="png" alt="Sample API Console output with RAML" caption="Sample API Console output with RAML" %}
 
 You can see a demo with the [Google Drive API](https://mulesoft.github.io/api-console/#/docs/summary).
 

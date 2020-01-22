@@ -66,12 +66,12 @@ For this activity, you'll use JavaScript to display the API response on a web pa
     </html>
     ```
 
-    What is this code doing? When `ajax` (a jQuery function) retrieves the response from the API, it assigns the response to `response`. Then we create a variable called `content` and set it equal to `response.wind.speed` (this uses [dot notation]({{site.rooturl}}docapis_diving_into_dot_notation.html) to access this value). jQuery's `append` method is used to append `content` to an element called `#windSpeed`on the page.
+    What is this code doing? In a nutshell, when `ajax` (a jQuery function) retrieves the response from the API, it assigns the response to `response`. A variable called `content` is created and set it equal to `response.wind.speed` ([dot notation]({{site.rooturl}}docapis_diving_into_dot_notation.html) is used to access this value). jQuery's `append` method inserts `content` after an element called `#windSpeed`on the page. (I realize this is an extremely abbreviated explanation, but explaining JavaScript is beyond the scope of this course. In general, you can learn more by reading about the [jQuery.ajax()](https://api.jquery.com/jquery.ajax/) function.)
 
 7.  Start **Chrome** and open the JavaScript Console.
 
     To open the JavaScript Console, on Chrome on a Mac, go to **View > Developer > Javascript Console**; on Windows, click the **menu** button (vertical ellipses) and go to **More tools > Developer tools**. Then click the **Console** tab.
-    
+
 8.  In Chrome, press **Cmd+O** (Mac) or **Ctrl + O** (Windows) and select your `weather.html` file.
 
     The weather response should be logged to the JavaScript Console (due to the `console.log(response)` code in the request). If you expand the object returned to the console, it will look as follows:

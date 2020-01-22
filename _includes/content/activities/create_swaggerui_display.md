@@ -11,7 +11,7 @@ First, you'll make sure you can view Swagger locally. Then you'll switch the Pet
 1.  Go to the [Swagger UI GitHub project](https://github.com/swagger-api/swagger-ui).
 2.  Click **Clone or download**, and then click **Download ZIP**. Download the files to a convenient location on your computer and extract the files.
 
-	  The only folder you'll be working with in the downloaded zip is the `dist` folder (short for distribution). Everything else is used only if you're recompiling the Swagger files, which is beyond the scope of this tutorial. If desired, you can drag the `dist` folder out of the `swagger-ui-master` folder so that it stands alone.
+	  The only folder you'll be working with in the downloaded zip is the `dist` folder (short for distribution). Everything else is used only if you're recompiling the Swagger files, which is beyond the scope of this tutorial. (If desired, you can drag the `dist` folder out of the `swagger-ui-master` folder so that it stands alone.)
 
 3.  In your Chrome browser, press **Cmd+O** (Mac) or **Ctrl+O** (Windows), browse to the `dist` folder, and select the `index.html` file,
 
@@ -26,8 +26,8 @@ First, you'll make sure you can view Swagger locally. Then you'll switch the Pet
 
 6.  Change the `url` value to an online web URL to your Swagger file. For example: `https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml`. Then save the file.
 
-    {: note}
-    Swagger UI will create an error (CORS) if the reference isn't to an online URL. To view Swagger UI with a local OpenAPI file, you can run a [simple Python server locally](https://docs.python.org/2/library/simplehttpserver.html) to simulate a web server.
+    {: .note}
+    If the `url` reference isn't to an online URL, Swagger UI will create an CORS (cross-origin resource sharing) error. To view Swagger UI with a local OpenAPI file, you can run a [simple Python server locally](https://docs.python.org/2/library/simplehttpserver.html) to simulate a web server (this requires you to install Python).
 
 7.  Refresh the `index.html` file in your Chrome browser. The content should show the OpenWeatherMap API content instead of Swagger Petstore content.
 

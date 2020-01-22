@@ -76,7 +76,7 @@ Then click **Import**. The information will populate in a new Postman tab. In Po
 
 In Postman, below the Send button, click **Code**. In the Generate Code Snippets dialog box, select **JavaScript > Jquery AJAX**. Copy the value shown:
 
-{% include course_image.html url="" size="" border="" filename="jquery_ajax_postman" ext_print="png" ext_web="png" alt="jQuery AJAX code in Postman" caption="jQuery AJAX code in Postman" %}
+{% include course_image.html size="medium"  filename="jquery_ajax_postman" ext_print="png" ext_web="png" alt="jQuery AJAX code in Postman" caption="jQuery AJAX code in Postman" %}
 
 In the value, remove the `cache-control` and `Postman-Token` key-value pairs, so that your code sample looks like this:
 

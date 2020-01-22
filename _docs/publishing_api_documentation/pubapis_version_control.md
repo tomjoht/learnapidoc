@@ -118,7 +118,7 @@ gitk some-path/myfile.md
 
 In the gitk window that opens up, look to see who made the most recent changes to the file. Ping the author and ask them to address the conflicts and then push the updates out to the remote. Here's an example of the gitk window:
 
-{% include course_image.html url="" size="" border="true" filename="gitkexample" ext_print="png" ext_web="png" alt="Gitk example window" caption="Gitk example window. The commit history of the file is shown in the upper-left corner, along with the author for each commit. The main window shows the changes made for each commit (green is content added; red is content removed)." %}
+{% include course_image.html size="large" border="true" filename="gitkexample" ext_print="png" ext_web="png" alt="Gitk example window" caption="Gitk example window. The commit history of the file is shown in the upper-left corner, along with the author for each commit. The main window shows the changes made for each commit (green is content added; red is content removed)." %}
 
 While waiting for the author to fix the merge conflict, you can abort your attempted merge with this command:
 
