@@ -2,7 +2,7 @@
 ##  <i class="fa fa-user-circle"></i> Activity: Judge conceptual content and decide which is best
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
-The following are 6 common conceptual topics in API documentation. For each topic, examine the three examples and decide which one is best. This is an activity we'll do together as a group.
+The following are 7 common conceptual topics in API documentation. For each topic, examine the three examples and decide which one is best. This is an activity we'll do together as a group.
 
 **API overview**
 
@@ -35,3 +35,8 @@ The following are 6 common conceptual topics in API documentation. For each topi
 * [Eventful](http://api.eventful.com/docs)
 * [Parse](http://docs.parseplatform.org/rest/guide/#quick-reference)
 * [Veracode](https://help.veracode.com/reader/LMv_dtSHyb7iIxAQznC~9w/FhxRdiWf5qejrtajmjGtpw)
+
+**SDKs**
+* [SAP](https://developers.gigya.com/display/GD/APIs+and+SDKs)
+* [PayPal](https://developer.paypal.com/docs/api/quickstart/)
+* [Facebook](https://developers.facebook.com/docs/apis-and-sdks)
