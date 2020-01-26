@@ -208,23 +208,19 @@ ul#docnavsidebar li a:focus {
   padding-bottom: 50px;
 }
 
-.sidebarComics img {
-    padding: 3px;
-    width: 150px;
-}
-
 @media (min-width: 992px) {
 
 .main {
-    width: 72%;
+    width: 75%;
 }
 
 .sidebar-offcanvas {
-    width: 28%;
+    width: 25%;
 }
 
 }
 
-.mydocsidebar .sidebarComics img {
-    width: 150px !important;
+.sidebarComics img {
+    width: 130px !important;
+    padding: 3px;
 }
