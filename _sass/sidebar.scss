@@ -1,5 +1,5 @@
 .docnav {
-  max-width: 225px;
+  max-width: 300px;
 }
 .docnav {
   padding-left: 0px;
@@ -210,5 +210,21 @@ ul#docnavsidebar li a:focus {
 
 .sidebarComics img {
     padding: 3px;
-    max-width: 125px;
+    width: 150px;
+}
+
+@media (min-width: 992px) {
+
+.main {
+    width: 72%;
+}
+
+.sidebar-offcanvas {
+    width: 28%;
+}
+
+}
+
+.mydocsidebar .sidebarComics img {
+    width: 150px !important;
 }

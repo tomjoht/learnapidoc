@@ -4,8 +4,10 @@
 
 <div id="search-searchbar"></div>
 
+{% include tinyletter.html %}
+
 {% unless page.sidebar == null %}
-<div class="productTitle">{{sidebar.sidebarTitle}}</div>
+<div class="productTitle">Documenting APIs</div>
 
 <p class="external">
     <a href="#" id="collapseAll">{{site.uistring.collapseall}}</a> | <a href="#" id="expandAll">{{site.uistring.expandall}}</a>

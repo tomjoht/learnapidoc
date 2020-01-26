@@ -6,7 +6,6 @@ span.calloutText
 {
   font-size: 1.7rem;
   line-height: 2.6rem;
-  margin-bottom: 2.4rem;
 }
 
 /* adjust spacing below navbar items */
@@ -22,6 +21,7 @@ p.surveyBanner {
   border-left: 0em;
   padding: 1em;
   border-radius: 6px;
+  border: 1px solid #f0f0f0
 }
 
 @media (max-width: 800px) {
