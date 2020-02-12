@@ -75,9 +75,9 @@ And so on.
 {: .tip}
 When developers create APIs, they have a design question to consider: Use many variants of endpoints (as with Eventbrite's API), or provide lots of parameters to configure the same endpoint. Often there's a balance between the two. The trend seems to be toward providing separate endpoints rather than supplying a host of potentially confusing parameters within the same endpoint. On the other hand, GraphQL APIs (which I don't cover in this course) provide one endpoint with different ways to query the information the endpoint contains. See [GraphQL And REST Differences Explained With Burgers](https://apievangelist.com/2018/06/29/rest-api-and-graphql-burger-king/) for a good explanation about GraphQL versus REST.
 
-As another example, here's the Relationships resource in the  [Instagram API](https://instagram.com/developer/endpoints/relationships/).
+As another example, the previous version of the Instagram API depicted a a Relationships resource as follows:
 
-<a  class="noCrossRef" href="https://instagram.com/developer/endpoints/relationships/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/instagramapi_3_17.png"/></a>
+<a  class="noCrossRef" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/instagramapi_3_17.png"/></a>
 
 The Relationships resource isn't described but rather acts as a container for relationship endpoints. Descriptions are added for each of the resources grouped within the Relationships resource:
 
@@ -86,6 +86,8 @@ The Relationships resource isn't described but rather acts as a container for re
 * GET `/users/self/requested-byList`
 * GET `/users/user-id/relationshipGet`
 * POST `/users/user-id/relationshipModify`
+
+(Instagram has since shifted to a [Graph API](https://developers.facebook.com/docs/instagram-api/).)
 
 {% include random_ad.html %}
 
