@@ -17,11 +17,13 @@ span.calloutText
 
 p.surveyBanner {
   border-left: 0em;
-  background: lightgoldenrodyellow;
-  border-left: 0em;
   padding: 1em;
   border-radius: 6px;
-  border: 1px solid #f0f0f0
+  border: 1px solid #f0f0f0;
+  line-height: 1.3em !important;
+  size: 20px;
+  font-size: 18px !important;
+  background-color: lightgreen;
 }
 
 @media (max-width: 800px) {
@@ -588,7 +590,7 @@ dd ~dd {
 }
 
 dl {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 #formEmbed {

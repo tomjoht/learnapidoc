@@ -32,6 +32,9 @@ folders:
   - title: "Activity: Identify your goals"
     jurl: /docapis_identify_your_goals.html
 
+  - title: "Frequently asked questions"
+    jurl: /docapis_faq.html
+
 - title: "II: Using an API like a developer"
   jurl: /likeadeveloper.html
   description: "Playing a brief role as a developer will help you understand developer needs better, as well as what developers typically look for in API documentation. Developers often use tools such as Postman or curl to make calls. They look at the structure of the response, and they dynamically integrate the needed information into web pages and other applications."
