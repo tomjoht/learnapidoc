@@ -1,5 +1,5 @@
 ---
-title: FAQ
+title: Frequently asked questions
 permalink: /docapis_faq.html
 course: "Documenting REST APIs"
 sidebar: docapis
