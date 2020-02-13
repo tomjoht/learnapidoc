@@ -89,8 +89,6 @@ The Relationships resource isn't described but rather acts as a container for re
 
 (Instagram has since shifted to a [Graph API](https://developers.facebook.com/docs/instagram-api/).)
 
-{% comment %} small comment to trigger rebuild {% endcomment %}
-
 {% include random_ad.html %}
 
 For another example of an API with resources and endpoints, check out the [Trello API](https://developers.trello.com/v1.0/reference#introduction).
