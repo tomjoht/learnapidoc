@@ -4,165 +4,231 @@ slide_title: "Trends in Developer Documentation"
 slides:
 
 - title: "Scenario: What to say about trends"
+  level: h2
 
 - title: Existing current research??!!
-  list:
-    - Saul Carliner's TC Census
-    - Scott Abel's Benchmarking Survey
-    - Smartbear's State of API
+  image: lightningtalk_frustration.svg
+  content: >
+    <small>Saul Carliner's TC Census, Scott Abel's Benchmarking Survey, Smartbear's State of API</small>
 
 - title: I'll gather data on my own
   list:
     - Focus only on dev docs
-    - Dive into more dev doc concerns
-    - 50 questions, 10 minutes
-    - See if trends are really different
-    - Most interested in tools
+    - 50 questions
+    - Mostly multiple choice
+    - Promote on my blog
 
-- title: Participant statistics (3/9/20)
-  list:
-    - 806 started
-    - 387 completed
-    - 313 dropouts
-    - 106 terminated via branching
+- title: Participant statistics
+  image: trends-participant-statistics.png
 
-- title: Four main categories
+- title: Survey results are public
+  content: >
+    <a href="https://idratherbewriting.site/devdoctrendsreport">idratherbewriting.site/devdoctrendsreport</a>
+
+- title: Main survey categories
   list_ordered:
-    - Tools
-    - Processes
-    - API
-    - Profile
+    - <span style="color:yellowgreen">Tools</span>
+    - <span style="color:yellowgreen">Outputs</span>
+    - <span style="color:yellowgreen">Processes</span>
+    - <span style="color:yellowgreen">API</span>
+    - <span style="color:yellowgreen">Profile</span>
 
-- title: 1. Tools
+- title: <span style="color:yellowgreen">1. Tools</span>
+  level: h2
 
 - title: What is your primary authoring tool for creating documentation?
   level: h3
-  image:
+  image: trends-primary-authoring-tools.png
 
 - title: What specific tool(s) are you using to create documentation? (freeform)
   level: h3
-  paragraph: Confluence 42, Swagger 38, Flare 34, Oxygen 32, Hugo 26, Microsoft Word 25, Jekyll 23, Custom 15, Google Doc 13, ReDoc 13, Framemaker 11, MkDocs 11, Sphinx 11, Gatsby 10, DocuSaurus 7, Postman 7, Readme 7, Epic 6, Paligo 6, Robohelp 6
-
-- title: Reflections
-  list:
-    - Tools not a single package -- Separate tools for collaboration, text editing, in-code annotations, publishing, management, and deployment
-    - JAMstack solutions
-    - Among SSGs, only Hugo, Jekyll, Gatsby, Sphinx, MkDocs, Docosaurus have much traction for docs
-    - Many working in Markdown treat like DITA -- tool irrelevant b/c support comes from so many platforms
+  table:
+    - r1: Confluence 46 instances
+      r2: Oxygen XML 34 instances
+    - r1: Flare 35 instances
+      r2: MS Word 26 instances
+    - r1: Hugo 27 instances
+      r2: Jekyll 25 instances
+    - r1: Custom 16 instances
+      r2: Redoc 15 instances
+    - r1: Google Doc 15 instances
+      r2: Sphinx 12 instances
+    - r1: Framemaker 11 instances
+      r2: MkDocs 11 instances
+    - r1: Gatsby 10 instances
+      r2: DocuSaurus 8
+    - r1: Readme 8 instances
 
 - title: If you write content in a text editor, which text editor do you mainly use?
   level: h3
-  image:
+  image: trends-editor.png
+
+- title: What's the most common source format used in your documentation?
+  level: h3
+  image: trends-most-common-source-format2.png
 
 - title: In general, do you follow a "docs-as-code" approach, where you treat documentation similar to how developers treat code? (e.g., write docs in a text editor, manage with version control, compile using a static site generator, build from the server, etc.)
   level: h3
-  image:
+  image: trends-docs-as-code.png
 
 - title: What software do you use to create graphics, screenshots, or other visuals?
   level: h3
-  image:
+  image: trends-graphics.png
 
 - title: What platform do you use to host and publish documentation, especially to provide continuous integration/delivery (CI/CD)?
   level: h3
-  image:
+  image: trends-cicd.png
 
 - title: Which kind of computer do you use?
   level: h3
-  image:
-- title: Did you play a significant role in developing/evolving your company's publishing solution (e.g., maybe you helped design the site,  workflows, strategies for content re-use, stylesheets, etc.)?
-  level: h3
-  image:
+  image: trends-mac-pc.png
+
 - title: How do you manage your content?
   level: h3
-  image:
-- title: Does your doc publishing solution have continuous integration / continuous deployment (CI/CD)? For example, when you push to a certain branch, do builds kick off on a server and push the docs out to production?
-  level: h3
-  image:
+  image: trends-manage-content.png
 
-## Processes
+- title: "Reflections: Tool categories"
+  image: devdoctrends_categoriesoftools.svg
 
-- title: 2. Processes
+- title: "Reflections: JAMstack solutions"
+  list:
+    - Many working in Markdown treat it like DITA -- the tool is irrelevant because support for the format comes from so many platforms.
+    - No longer a single tool for authoring, review, and publishing. Many different tools are used in different scenarios/purposes. JAMstack solutions.
+    - Some people working in dev doc work only in code annotations and OpenAPI specs.
+
+- title: Emerging picture
+  list:
+    - Writers use Confluence/Word/Google Docs for early content development.
+    - They formalize and build docs using a static site generator (Hugo, Jekyll, Gatsby, MkDocs) working in Visual Studio Code as the editor.
+    - They publish using a docs-as-code model with Git to trigger a CI/CD model publishing on company's own infrastructure.
+    - There's also a decent amount of wikis, Oxygen XML, and MadCap Flare use.
+
+## Outputs
+
+- title: <span style="color:yellowgreen">2. Outputs</span>
+  level: h2
 
 - title: What's the primary output format for your documentation (which you distribute to your audience)?
   level: h3
-  image:
-- title: What type of deliverables do you create in your role?
-  level: h3
-  image:
+  image: trends-primary-output.png
+
 - title: Do you currently create video tutorials or screencasts?
   level: h3
-  image:
+  image: trends-video-screencasts.png
+
 - title: If you aren't creating video/screencasts, why not?
   level: h3
-  image:
+  image: trends-why-no-video2.png
+
+- title: Did you play a significant role in developing/evolving your company's publishing solution (e.g., maybe you helped design the site,  workflows, strategies for content re-use, stylesheets, etc.)?
+  level: h3
+  image: trends-significant-role.png
+
 - title: Do your docs plug into a larger developer portal? (The developer portal organizes the docs for many different products with unified search, navigation, and other features that bring all the docs together under one roof.)
   level: h3
-  image:
+  image: trends-larger-developer-portal2.png
+
 - title: Do you localize your documentation?
   level: h3
-  image:
+  image: trends-localize2.png
+
 - title: Do you usually generate out PDFs for documentation and distribute them to your audience?
   level: h3
-  image:
-- title: Do you have a style guide for your team that standardizes terminology and conventions regarding style, grammar, and syntax?
-  level: h3
-  image:
-- title: Do you outsource any documentation to an offshore authoring agency?
-  level: h3
-  image:
-- title: How do you review your docs prior to release?
-  level: h3
-  image:
+  image: trends-generate-pdfs.png
+
+- title: Emerging picture
+  list:
+   - Writer primarily create web content that fits into a larger developer portal, which the writer often helps shape and build.
+   - Localization, video tutorials, and PDF aren't overwhelmingly produced but do constitute about 1/4 of the output.
+
+
+- title: <span style="color:yellowgreen">3. Processes</span>
+  level: h2
+
 - title: How do you interact with engineering scrum teams?
   level: h3
-  image:
+  image: trends-interact-scrum-teams2.png
+
+- title: How do you review your docs prior to release?
+  level: h3
+  image: trends-how-review-docs2.png
+
+- title: Does your doc publishing solution have continuous integration / continuous deployment (CI/CD)? For example, when you push to a certain branch, do builds kick off on a server and push the docs out to production?
+  level: h3
+  image: trends-cicd-to-prod.png
+
+- title: Do you outsource any documentation to an offshore authoring agency?
+  level: h3
+  image: trends-outsourcing.png
+
+- title: Do you have a style guide for your team that standardizes terminology and conventions regarding style, grammar, and syntax?
+  level: h3
+  image: trends-style-guide.png
+
 - title: When you collaborate with engineers, how do the engineers contribute?
   level: h3
-  image:
+  image: trends-when-you-collaborate-engineers.png
+
+- title: Emerging picture
+  list:
+    - Writers participate on scrum teams, sometimes in limited capacity.
+    - They review docs using the same tools engineers use to review code.
+    - Engineers contribute through pull requests or through wikis.
+    - The publishing process is streamlined through CI/CD.
+    - Most content is generated within the company rather than outsourced.
 
 ## API
 
-- title: 3. API
+- title: <span style="color:yellowgreen">3. API</span>
 
 - title: Does the documentation you work on usually involve some kind of API?
   level: h3
-  image:
+  image: trends-involve-an-api.png
 
 - title: What is the most common type of API you work with?
   level: h3
-  image:
+  image: trends-most-common-api-type.png
 
 - title: If you're creating REST API documentation, do you use the OpenAPI specification?
   level: h3
-  image:
+  image: trends-openapi-spec.png
 
 - title: How do you render the OpenAPI spec into documentation?
   level: h3
-  image:
+  image: trends-how-render-openapi.png
 
 - title: Do you primarily create the OpenAPI spec manually or do you auto-generate it from code annotations?
   level: h3
-  image:
+  image: trends-generating-openapi.png
 
 - title: Who generates out the OpenAPI specification at your company?
   level: h3
-  image:
+  image: trends-who-generates-openapi-spec.png
 
 - title: For reference docs for native library APIs (e.g. Javadoc or Doxygen), who creates this content?
   level: h3
-  image:
+  image: trends-reference-docs.png
 
 - title: What are the most common programming languages you need to know in your role with docs?
   level: h3
-  image:
+  image: trends-common-programming-languages.png
 
 - title: Which of the following new or trending technologies are you documenting (or will likely be documenting) this year?
   level: h3
-  image:
+  image: trends-trending-technologies.png
+
+- title: Emerging Picture
+  list:
+    - Almost invariably dev docs involves an API, usually a REST API.
+    - When documenting the REST API, most use the OpenAPI spec (either creating it manually or auto-generating from code annotations) 
+    - Both writers and engineers collaborate as they generate out docs using Swagger UI or a custom parser
+    - Native library APIs (e.g. Javadoc) are created by engineer
+    - Most important languages to know: JavaScript, Java, and Python
+
 
 # Profile
 
-- title: 4. Profile
+- title: <span style="color:yellowgreen">5. Profile</span>
 
 - title: What is your age range?
   level: h3
@@ -243,13 +309,31 @@ slides:
   <section>
     {% unless item.level == "h3" %}<h2>{{item.title}}</h2>{% endunless %}
     {% if item.level == "h3" %}<h3>{{item.title}}</h3>{% endif %}
-    {% if item.image %}<img src="https://idratherbewritingmedia.com/images/{{item.image}}" />{% endif %}
-    {% if item.paragraph %}{{item.paragraph}}{% endif %}
+    {% if item.image %}<img src="https://idratherbewritingmedia.com/images/api/{{item.image}}" />{% endif %}
+    {% if item.content %}{{item.content}}{% endif %}
 
     {% if item.blockquote %}<blockquote>{{item.blockquote}}{% endif %}
 
     {% if item.list %}<ul>{% assign itemList = item.list %} {% for entry in itemList %}<li>{{entry}}</li>{% endfor %}</ul>{% endif %}
-    {% if item.list_ordered %}<ol>{% assign itemList = item.list %} {% for entry in itemList %}<li>{{entry}}</li>{% endfor %}</ol>{% endif %}
+    {% if item.list_ordered %}<ol>{% assign itemListOrdered = item.list_ordered %} {% for entry in itemListOrdered %}<li>{{entry}}</li>{% endfor %}</ol>{% endif %}
+
+{% if item.table %}
+<table>
+   <colgroup>
+      <col width="40%" />
+      <col width="60%" />
+   </colgroup>
+   <tbody>
+     {% for entry in item.table %}
+      <tr>
+         <td>{{entry.r1}}</td>
+         <td>{{entry.r2}}</td>
+      </tr>
+        {% endfor %}
+   </tbody>
+</table>
+{% endif %}
+
 <aside class="notes">
   {{item.notes}}
 </aside>
@@ -300,7 +384,13 @@ slides:
             });
         </script>
         <style>
-          .reveal section h3 {color: #645b94 !important;}
+          .reveal section h3 {
+            color: #645b94 !important;
+          }
+          .reveal table th, .reveal table td {
+            font-size: 70%;
+          }
+
           </style>
     </body>
 </html>
