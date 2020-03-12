@@ -4,14 +4,14 @@ slide_title: "Trends in Developer Documentation"
 slides:
 
 - title: "Scenario: What to say about trends"
-  level: h2
+  image: writing_scenario2.svg
 
 - title: Existing current research??!!
   image: lightningtalk_frustration.svg
   content: >
     <small>Saul Carliner's TC Census, Scott Abel's Benchmarking Survey, Smartbear's State of API</small>
 
-- title: I'll gather data on my own
+- title: A survey of my own...
   list:
     - Focus only on dev docs
     - 50 questions
@@ -26,15 +26,24 @@ slides:
     <a href="https://idratherbewriting.site/devdoctrendsreport">idratherbewriting.site/devdoctrendsreport</a>
 
 - title: Main survey categories
-  list_ordered:
-    - <span style="color:yellowgreen">Tools</span>
-    - <span style="color:yellowgreen">Outputs</span>
-    - <span style="color:yellowgreen">Processes</span>
-    - <span style="color:yellowgreen">API</span>
-    - <span style="color:yellowgreen">Profile</span>
+  content: >
+    <ol style="color: yellowgreen; font-weight: bold;">
+      <li class="greenUnderline"><a href="#/7">Tools</li>
+      <li class="greenUnderline"><a href="#/20">Outputs</a></li>
+      <li class="greenUnderline"><a href="#/29">Processes</a></li>
+      <li class="greenUnderline"><a href="#/37">API</a></li>
+      <li class="greenUnderline"><a href="#/48">Profile</a></li>
+    </ol>
+
+      <style>
+        .reveal li.greenUnderline a {
+          color: yellowgreen;
+          font-weight: bold;
+          border-bottom: 1px dashed #dedede;
+        }
+        </style>
 
 - title: <span style="color:yellowgreen">1. Tools</span>
-  level: h2
 
 - title: What is your primary authoring tool for creating documentation?
   level: h3
@@ -56,8 +65,9 @@ slides:
     - r1: Framemaker 11 instances
       r2: MkDocs 11 instances
     - r1: Gatsby 10 instances
-      r2: DocuSaurus 8
+      r2: DocuSaurus 8 instances
     - r1: Readme 8 instances
+      r2: Paligo 7 instances
 
 - title: If you write content in a text editor, which text editor do you mainly use?
   level: h3
@@ -106,7 +116,6 @@ slides:
 ## Outputs
 
 - title: <span style="color:yellowgreen">2. Outputs</span>
-  level: h2
 
 - title: What's the primary output format for your documentation (which you distribute to your audience)?
   level: h3
@@ -143,7 +152,6 @@ slides:
 
 
 - title: <span style="color:yellowgreen">3. Processes</span>
-  level: h2
 
 - title: How do you interact with engineering scrum teams?
   level: h3
@@ -179,7 +187,7 @@ slides:
 
 ## API
 
-- title: <span style="color:yellowgreen">3. API</span>
+- title: <span style="color:yellowgreen">4. API</span>
 
 - title: Does the documentation you work on usually involve some kind of API?
   level: h3
@@ -220,9 +228,8 @@ slides:
 - title: Emerging Picture
   list:
     - Almost invariably dev docs involves an API, usually a REST API.
-    - When documenting the REST API, most use the OpenAPI spec (either creating it manually or auto-generating from code annotations) 
+    - When documenting the REST API, most use the OpenAPI spec (either creating it manually or auto-generating from code annotations)
     - Both writers and engineers collaborate as they generate out docs using Swagger UI or a custom parser
-    - Native library APIs (e.g. Javadoc) are created by engineer
     - Most important languages to know: JavaScript, Java, and Python
 
 
@@ -230,65 +237,34 @@ slides:
 
 - title: <span style="color:yellowgreen">5. Profile</span>
 
-- title: What is your age range?
+- title: General demographics
   level: h3
-  image:
+  table:
+    - r1: <b>age range</b>
+      r2: evenly distributed
+    - r1: <b>gender</b>
+      r2: 52% male, 46% female
+    - r1: <b>company</b>
+      r2: 200+ different companies listed
+    - r1: <b>college degree</b>
+      r2: 31% humanities, 28% engineering, 15% tech comm
+    - r1: <b>satisfied with job</b>
+      r2: 38% agree, 37% strongly agree
+    - r1: <b>team size</b>
+      r2: 34% lone writer, 2-4 writers 31%, 5-7 12%
+    - r1: <b>employee type</b>
+      r2: 86% full-time
+    - r1: <b>most affinity towards</b>
+      r2: WTD 39%, none 31%, STC 14%
+    - r1: <b>time spent learning</b>
+      r2: 30 min 28%, 20 min 27%, 60 min 14%
 
-- title: What is your gender?
-  level: h3
-  image:
-
-- title: What type of employee are you (currently or most recently)?
-  level: h3
-  image:
-
-- title: Are you a former engineer?
-  level: h3
-  image:
-
-- title: What is your most recent college degree in?
-  level: h3
-  image:
-
-- title: How did you break into developer documentation?
-  level: h3
-  image:
-
-- title: What company do you work for?
-  level: h3
-  image:
-
-- title: How many tech writers / documentarians are on your team?
-  level: h3
-  image:
-
-- title: Organizationally, are your tech writers grouped together in a centralized way?
-  level: h3
-  image:
-
-- title: As far as tech writing groups and associations, with what group do you feel the most affinity?
-  level: h3
-  image:
-
-- title: On average, how much time do you spend learning different technologies to keep up?
-  level: h3
-  image:
-
-- title: What is your favorite site for learning new tech?
-  level: h3
-  image:
-
-- title: What professional conferences do you prefer to attend? (If you've never attended any, which would you most likely choose to attend?)
-  level: h3
-  image:
 
 - title: What are the biggest challenges you face in working with developer docs?
   level: h3
-  image:
+  image: trends-biggest-challenges.png
 
-- title: I am satisfied with my current job.
-  level: h3
-  image:
+
 ---
 
 
@@ -301,7 +277,7 @@ slides:
             <p>
                 <small>By Tom Johnson / <a target="_blank" href="http://twitter.com/tomjohnson">@tomjohnson</a><br/>
                 <a target="_blank" href="https://idratherbewriting.com">idratherbewriting.com</a></small><br/><br/>
-            <p><small>Slides available at <br/><a target="_blank" href="https://idratherbewriting.com//learnapidoc/slides/devdoctrends.html">idratherbewriting.com//learnapidoc/slides/devdoctrends.html</a></small></p>
+            <p><small>Slides available at <br/><a target="_blank" href="https://idratherbewriting.com/learnapidoc/slides/devdoctrends.html">idratherbewriting.com//learnapidoc/slides/devdoctrends.html</a></small></p>
             </p>
         </section>
 
@@ -346,7 +322,7 @@ slides:
             <h2>Questions?</h2>
             <img src="https://idratherbewritingmedia.com/images/api/questions-01.svg"/>
         </section>
-        <!-- <section>
+         <section>
             <h1>The end</h1>
             <div>
             <div style="float:left; padding: 10px;">
@@ -359,7 +335,7 @@ slides:
                     &mdash; <a target="_blank" href="mailto:tomjoht@gmail.com">tomjoht@gmail.com</a>
                 </p>
             </div>
-        </section> -->
+        </section>
         <!-- <section>
           <h2>Image Credits</h2>
           <p><small>Some graphics by: <a href="https://www.vecteezy.com">Vecteezy.com</a></a>.</small></p>
@@ -390,7 +366,9 @@ slides:
           .reveal table th, .reveal table td {
             font-size: 70%;
           }
-
+          .reveal table {
+              margin-top: 30px;
+          }
           </style>
     </body>
 </html>
