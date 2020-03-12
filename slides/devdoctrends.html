@@ -6,33 +6,35 @@ slides:
 - title: "Scenario: What to say about trends"
   image: writing_scenario2.svg
 
-- title: Existing current research??!!
+- title: Existing current research?
   image: lightningtalk_frustration.svg
   content: >
-    <small>Saul Carliner's TC Census, Scott Abel's Benchmarking Survey, Smartbear's State of API</small>
+    <small><a href="https://www.stc.org/intercom/download/2018/">Saul Carliner's TC Census</a> <span style="color: gray; font-size: small">&bull;</span> <a href="http://public2.brighttalk.com/resource/core/217857/the-state-of-technical-communication_474463.pdf">Scott Abel's Benchmarking Survey</a></small>
 
 - title: A survey of my own...
   list:
     - Focus only on dev docs
-    - 50 questions
+    - 50 questions, 10 min.
     - Mostly multiple choice
-    - Promote on my blog
+    - Promote on my <a href="https://idratherbewriting.com">blog</a>, <a href="https://twitter.com/tomjohnson">Twitter</a>, <a href="https://www.linkedin.com/in/tomjoht/">Linkedin</a>
 
 - title: Participant statistics
   image: trends-participant-statistics.png
 
 - title: Survey results are public
   content: >
-    <a href="https://idratherbewriting.site/devdoctrendsreport">idratherbewriting.site/devdoctrendsreport</a>
+    <p><a href="https://idratherbewriting.site/devdoctrendsreport">idratherbewriting.site/devdoctrendsreport</a></p>
+  blockquote: "<p style='font-size:24px; color: gray'><b>Note: </b> Processing, organizing, analyzing, and interpreting data is hard, even from multiple choice answers. I'm not an expert at this, but with 400+ responses, trending answers are hard to ignore.</p>"
+
 
 - title: Main survey categories
   content: >
     <ol style="color: yellowgreen; font-weight: bold;">
       <li class="greenUnderline"><a href="#/7">Tools</li>
-      <li class="greenUnderline"><a href="#/20">Outputs</a></li>
-      <li class="greenUnderline"><a href="#/29">Processes</a></li>
-      <li class="greenUnderline"><a href="#/37">API</a></li>
-      <li class="greenUnderline"><a href="#/48">Profile</a></li>
+      <li class="greenUnderline"><a href="#/21">Outputs</a></li>
+      <li class="greenUnderline"><a href="#/30">Processes</a></li>
+      <li class="greenUnderline"><a href="#/38">API</a></li>
+      <li class="greenUnderline"><a href="#/49">Profile</a></li>
     </ol>
 
       <style>
@@ -49,25 +51,25 @@ slides:
   level: h3
   image: trends-primary-authoring-tools.png
 
-- title: What specific tool(s) are you using to create documentation? (freeform)
+- title: "Freeform answer: What specific tool(s) are you using to create documentation?"
   level: h3
   table:
-    - r1: Confluence 46 instances
-      r2: Oxygen XML 34 instances
-    - r1: Flare 35 instances
-      r2: MS Word 26 instances
-    - r1: Hugo 27 instances
-      r2: Jekyll 25 instances
-    - r1: Custom 16 instances
-      r2: Redoc 15 instances
-    - r1: Google Doc 15 instances
-      r2: Sphinx 12 instances
-    - r1: Framemaker 11 instances
-      r2: MkDocs 11 instances
-    - r1: Gatsby 10 instances
-      r2: DocuSaurus 8 instances
-    - r1: Readme 8 instances
-      r2: Paligo 7 instances
+    - c1: Confluence 46 instances
+      c2: Oxygen XML 34 instances
+    - c1: Flare 35 instances
+      c2: MS Word 26 instances
+    - c1: Hugo 27 instances
+      c2: Jekyll 25 instances
+    - c1: Custom 16 instances
+      c2: Redoc 15 instances
+    - c1: Google Doc 15 instances
+      c2: Sphinx 12 instances
+    - c1: Framemaker 11 instances
+      c2: MkDocs 11 instances
+    - c1: Gatsby 10 instances
+      c2: DocuSaurus 8 instances
+    - c1: Readme 8 instances
+      c2: Paligo 7 instances
 
 - title: If you write content in a text editor, which text editor do you mainly use?
   level: h3
@@ -84,6 +86,8 @@ slides:
 - title: What software do you use to create graphics, screenshots, or other visuals?
   level: h3
   image: trends-graphics.png
+  content: >
+    <p class="small">Other&#58; Draw.io (29), Gimp (17), Inkscape (15), Photoshop (15), PowerPoint (11), macOS (11)</p>
 
 - title: What platform do you use to host and publish documentation, especially to provide continuous integration/delivery (CI/CD)?
   level: h3
@@ -98,19 +102,23 @@ slides:
   image: trends-manage-content.png
 
 - title: "Reflections: Tool categories"
-  image: devdoctrends_categoriesoftools.svg
+  image: trends-categories-of-tools2.svg
 
-- title: "Reflections: JAMstack solutions"
+- title: "Reflections: Tool use different"
   list:
-    - Many working in Markdown treat it like DITA -- the tool is irrelevant because support for the format comes from so many platforms.
-    - No longer a single tool for authoring, review, and publishing. Many different tools are used in different scenarios/purposes. JAMstack solutions.
-    - Some people working in dev doc work only in code annotations and OpenAPI specs.
+    - Many working in Markdown treat it like DITA &mdash; the tool is irrelevant because support for the format comes from so many platforms/tools.
+    - No longer a single tool for authoring, review, and publishing. Many different tools are used in different scenarios/purposes. See <a href="https://jamstack.org/examples/">Jamstack examples</a>.
+    - Some people working in dev doc work only in code annotations and OpenAPI specs. There is no "authoring tool" apart from their IDE (e.g., IntelliJ IDEA)
+
+- title: "Reflections: Tools influence content"
+  image: trends-history-of-tools.svg
+  content: <small>Article &#58; <a href="https://idratherbewriting.site/howinfluenceswhat">*How* you write influences *what* you write &mdash; interpreting trends through movements from PDF to web, DITA, wikis, CCMSs, and docs-as-code</a></small>
 
 - title: Emerging picture
   list:
     - Writers use Confluence/Word/Google Docs for early content development.
-    - They formalize and build docs using a static site generator (Hugo, Jekyll, Gatsby, MkDocs) working in Visual Studio Code as the editor.
-    - They publish using a docs-as-code model with Git to trigger a CI/CD model publishing on company's own infrastructure.
+    - They assemble and build docs using a static site generator (Hugo, Jekyll, Gatsby, MkDocs) working in Visual Studio Code as the editor.
+    - They publish using a docs-as-code model with Git to trigger a CI/CD model deploying on company's own infrastructure.
     - There's also a decent amount of wikis, Oxygen XML, and MadCap Flare use.
 
 ## Outputs
@@ -128,6 +136,8 @@ slides:
 - title: If you aren't creating video/screencasts, why not?
   level: h3
   image: trends-why-no-video2.png
+  content: >
+    <p class="small">Main reasons: No bandwidth, tech constantly changes, and no one has asked for video.</p>
 
 - title: Did you play a significant role in developing/evolving your company's publishing solution (e.g., maybe you helped design the site,  workflows, strategies for content re-use, stylesheets, etc.)?
   level: h3
@@ -147,7 +157,8 @@ slides:
 
 - title: Emerging picture
   list:
-   - Writer primarily create web content that fits into a larger developer portal, which the writer often helps shape and build.
+   - Writers primarily create web content that fits into a larger developer portal.
+   - The writers often help shape and build both the publishing solution and portal.
    - Localization, video tutorials, and PDF aren't overwhelmingly produced but do constitute about 1/4 of the output.
 
 
@@ -224,13 +235,15 @@ slides:
 - title: Which of the following new or trending technologies are you documenting (or will likely be documenting) this year?
   level: h3
   image: trends-trending-technologies.png
+  content: >
+    <p class="small">Main answers: Machine learning, big data, AI, data privacy, security, IoT</p>
 
 - title: Emerging Picture
   list:
     - Almost invariably dev docs involves an API, usually a REST API.
-    - When documenting the REST API, most use the OpenAPI spec (either creating it manually or auto-generating from code annotations)
-    - Both writers and engineers collaborate as they generate out docs using Swagger UI or a custom parser
-    - Most important languages to know: JavaScript, Java, and Python
+    - When documenting the REST API, most use the OpenAPI spec.
+    - Both writers and engineers collaborate as they generate out docs using Swagger UI or a custom parser.
+    - The most important languages to know are JavaScript, Java, and Python.
 
 
 # Profile
@@ -240,29 +253,31 @@ slides:
 - title: General demographics
   level: h3
   table:
-    - r1: <b>age range</b>
-      r2: evenly distributed
-    - r1: <b>gender</b>
-      r2: 52% male, 46% female
-    - r1: <b>company</b>
-      r2: 200+ different companies listed
-    - r1: <b>college degree</b>
-      r2: 31% humanities, 28% engineering, 15% tech comm
-    - r1: <b>satisfied with job</b>
-      r2: 38% agree, 37% strongly agree
-    - r1: <b>team size</b>
-      r2: 34% lone writer, 2-4 writers 31%, 5-7 12%
-    - r1: <b>employee type</b>
-      r2: 86% full-time
-    - r1: <b>most affinity towards</b>
-      r2: WTD 39%, none 31%, STC 14%
-    - r1: <b>time spent learning</b>
-      r2: 30 min 28%, 20 min 27%, 60 min 14%
+    - c1: <b>age range</b>
+      c2: evenly distributed
+    - c1: <b>gender</b>
+      c2: 52% male, 46% female
+    - c1: <b>company</b>
+      c2: 200+ different companies listed
+    - c1: <b>college degree</b>
+      c2: 31% humanities, 28% engineering, 15% tech comm
+    - c1: <b>satisfied with job</b>
+      c2: 38% agree, 37% strongly agree
+    - c1: <b>team size</b>
+      c2: 34% lone writer, 2-4 writers 31%, 5-7 writers 12%
+    - c1: <b>employee type</b>
+      c2: 86% full-time
+    - c1: <b>most affinity towards</b>
+      c2: WTD 39%, none 31%, STC 14%
+    - c1: <b>time spent learning</b>
+      c2: 30 min 28%, 20 min 27%, 60 min 14%
 
 
 - title: What are the biggest challenges you face in working with developer docs?
   level: h3
   image: trends-biggest-challenges.png
+  content: >
+    <p class="small">Main answers: Technical know-how, time/bandwidth, getting reviews, addressing both novice and advanced users</p>
 
 
 ---
@@ -302,8 +317,8 @@ slides:
    <tbody>
      {% for entry in item.table %}
       <tr>
-         <td>{{entry.r1}}</td>
-         <td>{{entry.r2}}</td>
+         <td>{{entry.c1}}</td>
+         <td>{{entry.c2}}</td>
       </tr>
         {% endfor %}
    </tbody>
@@ -368,6 +383,9 @@ slides:
           }
           .reveal table {
               margin-top: 30px;
+          }
+          .reveal p.small {
+              font-size: 22px;
           }
           </style>
     </body>
