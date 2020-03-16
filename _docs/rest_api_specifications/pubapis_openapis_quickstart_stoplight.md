@@ -1,5 +1,5 @@
 ---
-title: Fastest Way to Create an OpenAPI Specification Document (Using Stoplight Studio)
+title: Create an OpenAPI Specification through Stoplight Studio
 permalink: pubapis_openapis_quickstart_stoplight.html
 course: "Documenting REST APIs"
 sidebar: docapis

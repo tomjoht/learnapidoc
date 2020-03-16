@@ -49,7 +49,7 @@ You can store a lot of different re-usable objects in the `components` object. T
 
 The properties for each object inside `components` are the same as they are when used in other parts of the OpenAPI spec. You use a reference pointer (`$ref`) to point to more details in the `components` object. `$ref` stands for [`reference` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#referenceObject) and is part of JSON.
 
-## Re-using parameters across multiple paths
+## Re-using parameters across multiple paths {#reusing_parameters}
 
 For the parameters in the previous step, we listed all the details directly in the `parameters` object. To facilitate re-use of the same parameters in other paths, let's store the `parameters` content in `components`. The code below shows how to make these references:
 
