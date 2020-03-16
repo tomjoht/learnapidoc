@@ -56,7 +56,7 @@ Before diving too far down in the OpenWeatherMap API, let's look at another weat
 
 1. Go to [www.aerisweather.com](http://www.aerisweather.com).
 2. Click **Documentation** on the top navigation bar.  
-3. In the **Weather Data API** section, click **Data Endpoints**.
+3. Click the **Weather Data API** section, and then click **Data Endpoints**.
 3. Click **Reference** (in the sidebar) and then click **Endpoints**. (Or go [here](https://www.aerisweather.com/support/docs/api/reference/endpoints/) directly.)
 
 	<a class="noCrossRef" href="http://www.aerisweather.com/support/docs/api/reference/endpoints/" class="noExtIcon"><img class="medium" src="https://idratherbewritingmedia.com/images/api/aerisendpoints.png" alt="Aeris Endpoints" /></a>
@@ -79,7 +79,7 @@ APIs differ considerably in their design, presentation, responses, and other det
 
 Each weather API has an entirely different approach to documentation. As you'll see going through this course, the variety and uniqueness of each API doc site (even when approaching the same topic &mdash; a weather forecast) presents a lot of challenges to tech writing teams. Not only do website styles vary but also API terminology and other vocabulary to describe similar concepts.
 
-As I mentioned earlier, REST APIs are an architectural style that follows common characteristics and principles; they don't all follow the same standard or specification. Users have to read the documentation to understand how to use the API. (See ["REST is a style, not a standard"](docapis_what_is_a_rest_api.html#rest-is-a-style-not-a-standard).)
+As I mentioned earlier, REST APIs are an architectural style that follows common characteristics and principles; they don't all follow the same standard or specification. Users have to read the documentation to understand how to use the API. (See ["REST is a style, not a standard."](docapis_what_is_a_rest_api.html#rest-is-a-style-not-a-standard))
 
 {% include random_ad.html %}
 

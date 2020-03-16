@@ -31,7 +31,7 @@ APIs are often pulling and pushing data underneath user interfaces. Consider the
 
 Or consider other similar services. When you see a YouTube video embedded on a site, the site itself doesn't host the video. Instead, the embed code contains API requests that get the video from YouTube's hosting centers. When you embed a Twitter widget on your site, the widget's APIs pull in tweets from a Twitter server onto your site.
 
-Consider another example from Fire TV. Suppose you're want to view a pay-per-view event that requires payment. A pop-up dialog might appear letting you enter your credit card details. Your payment gets processed and you receive confirmation about the purchase's success. This payment processing doesn't occur within the app. Instead, the app makes API calls out to payment servers with the needed information, and all that payment processing happens in the cloud. When the processing finishes, the API returns a confirmation response.
+Consider another example from Fire TV. Suppose you want to view a pay-per-view event that requires payment. A pop-up dialog might appear letting you enter your credit card details. Your payment gets processed and you receive confirmation about the purchase's success. This payment processing doesn't occur within the app. Instead, the app makes API calls out to payment servers with the needed information, and all that payment processing happens in the cloud. When the processing finishes, the API returns a confirmation response.
 
 The next time you push a button in some interface, think about what's going on underneath. Most likely, the button is internally wired to make calls to an external service for the information needed. That call is made through an API that performs a request and receives a response.
 
