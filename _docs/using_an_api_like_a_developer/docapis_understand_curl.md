@@ -167,7 +167,7 @@ curl has a lot of possible commands, but the following are the most common when 
 :  *Example:* `curl -i http://www.example.com`
 
 `-d` or `--data`
-:  Includes data to post to the URL. This data allows you to pass in a [request body parameter](docapis_doc_parameters.html#request_body_parameters). The data needs to be [url encoded](http://www.w3schools.com/tags/ref_urlencode.asp). 
+:  Includes data to post to the URL. This data allows you to pass in a [request body parameter](docapis_doc_parameters.html#request_body_parameters). The data needs to be [url encoded](http://www.w3schools.com/tags/ref_urlencode.asp).
 :  *Example:* `curl -d "data-to-post" http://www.example.com`
 
 `-H` or `--header`
@@ -262,6 +262,9 @@ Quiz yourself to see how much you remember. What do the following parameters mea
 * `-d`
 
 {: .tip}
-When you use curl, the Terminal and [iTerm](https://www.iterm2.com/) on the Mac provide a much easier experience than using the command prompt in Windows. If you're going to get serious about API documentation, but you're still on a PC, consider switching. There are a lot of utilities that you install through a terminal that *just work* on a Mac. Also, if you're in Silicon Valley, using a PC instead of a Mac might make you look old-fashioned (see [Why do most startups purchase MacBooks for their employees?](https://www.quora.com/Why-do-most-startups-purchase-MacBooks-for-their-employees)).
+When you use curl, the Terminal and [iTerm](https://www.iterm2.com/) on the Mac provide a much easier experience than using the command prompt in Windows. If you're going to get serious about API documentation, but you're still on a PC, consider switching. There are a lot of utilities that you install through a terminal that *just work* on a Mac. Also, if you're in Silicon Valley, using a PC instead of a Mac might make you look old-fashioned (see [Why do most startups purchase MacBooks for their employees?](https://www.quora.com/Why-do-most-startups-purchase-MacBooks-for-their-employees)). Alternatively, you can run Linux on Windows, and you'll get the same terminal experience (Bash shell). See this example tutorial on how to [install Bash on Windows](https://itsfoss.com/install-bash-on-windows/)."
 
+{% comment %}
+site seems to be down or gone. check later to see if it's back up.
 To learn more about curl with REST documentation, see [REST-esting with curl](http://blogs.plexibus.com/2009/01/15/rest-esting-with-curl/).
+ {% endcomment %}
