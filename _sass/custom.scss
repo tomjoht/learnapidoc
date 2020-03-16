@@ -321,6 +321,22 @@ pre {
 img.docimage.border {
     border: 1px solid #dedede;
 }
+
+
+.sidebarComics img {
+    float: left;
+    padding: 3px;
+    /* max-width: 175px;
+    margin-left: 15%; */
+    padding-bottom: 20px;
+    max-width: 250px;
+}
+
+/* temporary style until all ads are resized */
+.sidebarComics img.shorten {
+    max-height: 200px;
+}
+
 span.red {
     color: red;
 }
