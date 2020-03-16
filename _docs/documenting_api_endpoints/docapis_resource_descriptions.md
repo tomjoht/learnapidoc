@@ -73,7 +73,7 @@ Although the Events resource isn't described here, descriptions are added for ea
 And so on.
 
 {: .tip}
-When developers create APIs, they have a design question to consider: Use many variants of endpoints (as with Eventbrite's API), or provide lots of parameters to configure the same endpoint. Often there's a balance between the two. The trend seems to be toward providing separate endpoints rather than supplying a host of potentially confusing parameters within the same endpoint. On the other hand, GraphQL APIs (which I don't cover in this course) provide one endpoint with different ways to query the information the endpoint contains. See [GraphQL And REST Differences Explained With Burgers](https://apievangelist.com/2018/06/29/rest-api-and-graphql-burger-king/) for a good explanation about GraphQL versus REST.
+When developers create APIs, they have a design question to consider: Use many variants of endpoints (as with Eventbrite's API), or provide lots of parameters to configure the same endpoint. Often there's a balance between the two. The trend seems to be toward providing separate endpoints rather than supplying a host of potentially confusing parameters within the same endpoint. On the other hand, GraphQL APIs (which I don't cover in this course) provide one endpoint with different ways to query the information the endpoint contains. See [GraphQL And REST Differences Explained With Burgers](http://apievangelist.com/2018/06/29/graphql-and-rest-differences-explained-with-burgers/) for a good explanation about GraphQL versus REST.
 
 As another example, the previous version of the Instagram API depicted a a Relationships resource as follows:
 
