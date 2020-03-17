@@ -1,0 +1,361 @@
+{
+  "html": "<p>\n                <small>By Tom Johnson / <a target=\"_blank\" href=\"http://twitter.com/tomjohnson\">@tomjohnson</a><br>\n                <a target=\"_blank\" href=\"https://idratherbewriting.com\">idratherbewriting.com</a></small><br><br>\n            </p>",
+  "content": "\n                By Tom Johnson / @tomjohnson\n                idratherbewriting.com\n            ",
+  "headings": [
+    "How Trends in <API Documentation> Differ from other Tech Comm Trends"
+  ],
+  "custom_ranking": {
+    "position": 0,
+    "heading": 80
+  },
+  "slide_title": "How Trends in &lt;API Documentation&gt; Differ from other Tech Comm Trends",
+  "slides": [
+    {
+      "title": "Scenario: What to say about trends",
+      "image": "writing_scenario2.svg"
+    },
+    {
+      "title": "Existing current research?",
+      "image": "lightningtalk_frustration.svg",
+      "content": "<small><a href=\"https://www.stc.org/intercom/download/2018/\">Saul Carliner's TC Census</a> <span style=\"color: gray; font-size: small\">&bull;</span> <a href=\"http://public2.brighttalk.com/resource/core/217857/the-state-of-technical-communication_474463.pdf\">Scott Abel's Benchmarking Survey</a></small>\n"
+    },
+    {
+      "title": "A survey of my own...",
+      "list": [
+        "Focus only on dev docs",
+        "50 questions, 10 min.",
+        "Mostly multiple choice",
+        "Promote on my <a href=\"https://idratherbewriting.com\">blog</a>, <a href=\"https://twitter.com/tomjohnson\">Twitter</a>, <a href=\"https://www.linkedin.com/in/tomjoht/\">Linkedin</a>"
+      ]
+    },
+    {
+      "title": "Participant statistics",
+      "image": "trends-participant-statistics.png"
+    },
+    {
+      "title": "Survey results are public",
+      "content": "<p><a href=\"https://idratherbewriting.site/devdoctrendsreport\">idratherbewriting.site/devdoctrendsreport</a></p>\n",
+      "blockquote": "<p style='font-size:24px; color: gray'><b>Note: </b> Processing, organizing, analyzing, and interpreting data is hard, even from multiple choice answers. I'm not an expert at this, but with 400+ responses, trending answers are hard to ignore.</p>"
+    },
+    {
+      "title": "Main survey categories",
+      "content": "<ol style=\"color: yellowgreen; font-weight: bold;\">\n  <li class=\"greenUnderline\"><a href=\"#/7\">Tools</li>\n  <li class=\"greenUnderline\"><a href=\"#/21\">Outputs</a></li>\n  <li class=\"greenUnderline\"><a href=\"#/30\">Processes</a></li>\n  <li class=\"greenUnderline\"><a href=\"#/38\">API</a></li>\n  <li class=\"greenUnderline\"><a href=\"#/49\">Profile</a></li>\n</ol>\n\n  <style>\n    .reveal li.greenUnderline a {\n      color: yellowgreen;\n      font-weight: bold;\n      border-bottom: 1px dashed #dedede;\n    }\n    </style>\n"
+    },
+    {
+      "title": "<span style=\"color:yellowgreen\">1. Tools</span>"
+    },
+    {
+      "title": "What is your primary authoring tool for creating documentation?",
+      "level": "h3",
+      "image": "trends-primary-authoring-tools.png"
+    },
+    {
+      "title": "Freeform answer: What specific tool(s) are you using to create documentation?",
+      "level": "h3",
+      "table": [
+        {
+          "c1": "Confluence 46 instances",
+          "c2": "Oxygen XML 34 instances"
+        },
+        {
+          "c1": "Flare 35 instances",
+          "c2": "MS Word 26 instances"
+        },
+        {
+          "c1": "Hugo 27 instances",
+          "c2": "Jekyll 25 instances"
+        },
+        {
+          "c1": "Custom 16 instances",
+          "c2": "Redoc 15 instances"
+        },
+        {
+          "c1": "Google Doc 15 instances",
+          "c2": "Sphinx 12 instances"
+        },
+        {
+          "c1": "Framemaker 11 instances",
+          "c2": "MkDocs 11 instances"
+        },
+        {
+          "c1": "Gatsby 10 instances",
+          "c2": "DocuSaurus 8 instances"
+        },
+        {
+          "c1": "Readme 8 instances",
+          "c2": "Paligo 7 instances"
+        }
+      ]
+    },
+    {
+      "title": "If you write content in a text editor, which text editor do you mainly use?",
+      "level": "h3",
+      "image": "trends-editor.png"
+    },
+    {
+      "title": "What's the most common source format used in your documentation?",
+      "level": "h3",
+      "image": "trends-most-common-source-format2.png"
+    },
+    {
+      "title": "In general, do you follow a \"docs-as-code\" approach, where you treat documentation similar to how developers treat code? (e.g., write docs in a text editor, manage with version control, compile using a static site generator, build from the server, etc.)",
+      "level": "h3",
+      "image": "trends-docs-as-code.png"
+    },
+    {
+      "title": "What software do you use to create graphics, screenshots, or other visuals?",
+      "level": "h3",
+      "image": "trends-graphics.png",
+      "content": "<p class=\"small\">Other&#58; Draw.io (29), Gimp (17), Inkscape (15), Photoshop (15), PowerPoint (11), macOS (11)</p>\n"
+    },
+    {
+      "title": "What platform do you use to host and publish documentation, especially to provide continuous integration/delivery (CI/CD)?",
+      "level": "h3",
+      "image": "trends-cicd.png"
+    },
+    {
+      "title": "Which kind of computer do you use?",
+      "level": "h3",
+      "image": "trends-mac-pc.png"
+    },
+    {
+      "title": "How do you manage your content?",
+      "level": "h3",
+      "image": "trends-manage-content.png"
+    },
+    {
+      "title": "Reflections: Tool categories",
+      "image": "trends-categories-of-tools2.svg"
+    },
+    {
+      "title": "Reflections: Tool use different",
+      "list": [
+        "Many working in Markdown treat it like DITA &mdash; the tool is irrelevant because support for the format comes from so many platforms/tools.",
+        "No longer a single tool for authoring, review, and publishing. Many different tools are used in different scenarios/purposes. See <a href=\"https://jamstack.org/examples/\">Jamstack examples</a>.",
+        "Some people working in dev doc work only in code annotations and OpenAPI specs. There is no \"authoring tool\" apart from their IDE (e.g., IntelliJ IDEA)"
+      ]
+    },
+    {
+      "title": "Reflections: Tools influence content",
+      "image": "trends-history-of-tools.svg",
+      "content": "<small>Article &#58; <a href=\"https://idratherbewriting.site/howinfluenceswhat\">*How* you write influences *what* you write &mdash; interpreting trends through movements from PDF to web, DITA, wikis, CCMSs, and docs-as-code</a></small>"
+    },
+    {
+      "title": "Emerging picture",
+      "list": [
+        "Writers use Confluence/Word/Google Docs for early content development.",
+        "They assemble and build docs using a static site generator (Hugo, Jekyll, Gatsby, MkDocs) working in Visual Studio Code as the editor.",
+        "They publish using a docs-as-code model with Git to trigger a CI/CD model deploying on company's own infrastructure.",
+        "There's also a decent amount of wikis, Oxygen XML, and MadCap Flare use."
+      ]
+    },
+    {
+      "title": "<span style=\"color:yellowgreen\">2. Outputs</span>"
+    },
+    {
+      "title": "What's the primary output format for your documentation (which you distribute to your audience)?",
+      "level": "h3",
+      "image": "trends-primary-output.png"
+    },
+    {
+      "title": "Do you currently create video tutorials or screencasts?",
+      "level": "h3",
+      "image": "trends-video-screencasts.png"
+    },
+    {
+      "title": "If you aren't creating video/screencasts, why not?",
+      "level": "h3",
+      "image": "trends-why-no-video2.png",
+      "content": "<p class=\"small\">Main reasons: No bandwidth, tech constantly changes, and no one has asked for video.</p>\n"
+    },
+    {
+      "title": "Did you play a significant role in developing/evolving your company's publishing solution (e.g., maybe you helped design the site,  workflows, strategies for content re-use, stylesheets, etc.)?",
+      "level": "h3",
+      "image": "trends-significant-role.png"
+    },
+    {
+      "title": "Do your docs plug into a larger developer portal? (The developer portal organizes the docs for many different products with unified search, navigation, and other features that bring all the docs together under one roof.)",
+      "level": "h3",
+      "image": "trends-larger-developer-portal2.png"
+    },
+    {
+      "title": "Do you localize your documentation?",
+      "level": "h3",
+      "image": "trends-localize2.png"
+    },
+    {
+      "title": "Do you usually generate out PDFs for documentation and distribute them to your audience?",
+      "level": "h3",
+      "image": "trends-generate-pdfs.png"
+    },
+    {
+      "title": "Emerging picture",
+      "list": [
+        "Writers primarily create web content that fits into a larger developer portal.",
+        "The writers often help shape and build both the publishing solution and portal.",
+        "Localization, video tutorials, and PDF aren't overwhelmingly produced but do constitute about 1/4 of the output."
+      ]
+    },
+    {
+      "title": "<span style=\"color:yellowgreen\">3. Processes</span>"
+    },
+    {
+      "title": "How do you interact with engineering scrum teams?",
+      "level": "h3",
+      "image": "trends-interact-scrum-teams2.png"
+    },
+    {
+      "title": "How do you review your docs prior to release?",
+      "level": "h3",
+      "image": "trends-how-review-docs2.png"
+    },
+    {
+      "title": "Does your doc publishing solution have continuous integration / continuous deployment (CI/CD)? For example, when you push to a certain branch, do builds kick off on a server and push the docs out to production?",
+      "level": "h3",
+      "image": "trends-cicd-to-prod.png"
+    },
+    {
+      "title": "Do you outsource any documentation to an offshore authoring agency?",
+      "level": "h3",
+      "image": "trends-outsourcing.png"
+    },
+    {
+      "title": "Do you have a style guide for your team that standardizes terminology and conventions regarding style, grammar, and syntax?",
+      "level": "h3",
+      "image": "trends-style-guide.png"
+    },
+    {
+      "title": "When you collaborate with engineers, how do the engineers contribute?",
+      "level": "h3",
+      "image": "trends-when-you-collaborate-engineers.png"
+    },
+    {
+      "title": "Emerging picture",
+      "list": [
+        "Writers participate on scrum teams, sometimes in limited capacity.",
+        "They review docs using the same tools engineers use to review code.",
+        "Engineers contribute through pull requests or through wikis.",
+        "The publishing process is streamlined through CI/CD.",
+        "Most content is generated within the company rather than outsourced."
+      ]
+    },
+    {
+      "title": "<span style=\"color:yellowgreen\">4. API</span>"
+    },
+    {
+      "title": "Does the documentation you work on usually involve some kind of API?",
+      "level": "h3",
+      "image": "trends-involve-an-api.png"
+    },
+    {
+      "title": "What is the most common type of API you work with?",
+      "level": "h3",
+      "image": "trends-most-common-api-type.png"
+    },
+    {
+      "title": "If you're creating REST API documentation, do you use the OpenAPI specification?",
+      "level": "h3",
+      "image": "trends-openapi-spec.png"
+    },
+    {
+      "title": "How do you render the OpenAPI spec into documentation?",
+      "level": "h3",
+      "image": "trends-how-render-openapi.png"
+    },
+    {
+      "title": "Do you primarily create the OpenAPI spec manually or do you auto-generate it from code annotations?",
+      "level": "h3",
+      "image": "trends-generating-openapi.png"
+    },
+    {
+      "title": "Who generates out the OpenAPI specification at your company?",
+      "level": "h3",
+      "image": "trends-who-generates-openapi-spec.png"
+    },
+    {
+      "title": "For reference docs for native library APIs (e.g. Javadoc or Doxygen), who creates this content?",
+      "level": "h3",
+      "image": "trends-reference-docs.png"
+    },
+    {
+      "title": "What are the most common programming languages you need to know in your role with docs?",
+      "level": "h3",
+      "image": "trends-common-programming-languages.png"
+    },
+    {
+      "title": "Which of the following new or trending technologies are you documenting (or will likely be documenting) this year?",
+      "level": "h3",
+      "image": "trends-trending-technologies.png",
+      "content": "<p class=\"small\">Main answers: Machine learning, big data, AI, data privacy, security, IoT</p>\n"
+    },
+    {
+      "title": "Emerging Picture",
+      "list": [
+        "Almost invariably dev docs involves an API, usually a REST API.",
+        "When documenting the REST API, most use the OpenAPI spec.",
+        "Both writers and engineers collaborate as they generate out docs using Swagger UI or a custom parser.",
+        "The most important languages to know are JavaScript, Java, and Python."
+      ]
+    },
+    {
+      "title": "<span style=\"color:yellowgreen\">5. Profile</span>"
+    },
+    {
+      "title": "General demographics",
+      "level": "h3",
+      "table": [
+        {
+          "c1": "<b>age range</b>",
+          "c2": "evenly distributed"
+        },
+        {
+          "c1": "<b>gender</b>",
+          "c2": "52% male, 46% female"
+        },
+        {
+          "c1": "<b>company</b>",
+          "c2": "200+ different companies listed"
+        },
+        {
+          "c1": "<b>college degree</b>",
+          "c2": "31% humanities, 28% engineering, 15% tech comm"
+        },
+        {
+          "c1": "<b>satisfied with job</b>",
+          "c2": "38% agree, 37% strongly agree"
+        },
+        {
+          "c1": "<b>team size</b>",
+          "c2": "34% lone writer, 2-4 writers 31%, 5-7 writers 12%"
+        },
+        {
+          "c1": "<b>employee type</b>",
+          "c2": "86% full-time"
+        },
+        {
+          "c1": "<b>most affinity towards</b>",
+          "c2": "WTD 39%, none 31%, STC 14%"
+        },
+        {
+          "c1": "<b>time spent learning</b>",
+          "c2": "30 min 28%, 20 min 27%, 60 min 14%"
+        }
+      ]
+    },
+    {
+      "title": "What are the biggest challenges you face in working with developer docs?",
+      "level": "h3",
+      "image": "trends-biggest-challenges.png",
+      "content": "<p class=\"small\">Main answers: Technical know-how, time/bandwidth, getting reviews, addressing both novice and advanced users</p>\n"
+    }
+  ],
+  "tags": [
+
+  ],
+  "categories": [
+
+  ],
+  "slug": "devdoctrends",
+  "type": "page",
+  "url": "/slides/devdoctrends.html"
+}

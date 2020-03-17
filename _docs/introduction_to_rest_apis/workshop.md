@@ -71,7 +71,16 @@ Break time
 
 {% include workshop_button.html title="Activity 4a: Explore Swagger UI through the Petstore Demo" activity="explore_swagger_petstore" button_type="info" %}
 
-{% include workshop_button.html title="Activity 4b: Create an OpenAPI specification using Stoplight Studio" activity="stoplight_studio_tutorial" button_type="info" %}
+
+<button class="btn btn-info" type="button" data-toggle="collapse" data-target="#stoplight_tutorial" aria-expanded="false" aria-controls="collapseExample">
+Activity 4b: Create an OpenAPI specification using Stoplight Studio
+</button>
+<div class="collapse" id="stoplight_tutorial">
+<div class="card card-body" markdown="block">
+For this this activity, see this topic: [Create an OpenAPI Specification through Stoplight Studio](pubapis_openapis_quickstart_stoplight.html). Due to the length fo the topic, I haven't embedded it here.
+</div>
+</div>
+
 
 ## 12:30 - 1:30pm: Lunch
 

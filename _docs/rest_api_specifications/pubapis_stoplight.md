@@ -8,7 +8,7 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-Earlier in the course, you might have followed the tutorial for  [Fastest Way to Create an OpenAPI Specification Document](pubapis_openapis_quickstart_stoplight.html), which uses Stoplight Studio. As a GUI editor for creating an OpenAPI, Stoplight Studio simplifies the authoring of a highly technical syntax that is often challenging to make valid. Now let's dive a bit deeper into the offerings and philosophy of Stoplight.
+Earlier in the course, you might have followed the tutorial for [Create an OpenAPI Specification through Stoplight Studio](pubapis_openapis_quickstart_stoplight.html), which uses Stoplight Studio. As a GUI editor for creating an OpenAPI, Stoplight Studio simplifies the authoring of a highly technical syntax that is often challenging to make valid. Now let's dive a bit deeper into the offerings and philosophy of Stoplight.
 
 Among other services, Stoplight provides visual modeling tools to create an OpenAPI document for your API &mdash; without requiring you to know the OpenAPI spec details or code the spec line by line. This API specification document can act as a single source of truth that empowers the whole API lifecycle, from UX prototyping to testing, development, documentation, sales, and more.
 
@@ -96,15 +96,7 @@ This practice of putting the spec last (rather than first) in the API's developm
 > Many developers still see OpenAPI (fka Swagger) about generating API documentation, not as the central contract that is used across every stop along the API life cycle. Most do not understand that you can mock instead of deploying, and even provide mock data, errors, and other scenarios, allowing you to prototype applications on top of API designs. ([Code Generation Of OpenAPI (fka Swagger) Still The Prevailing Approach](http://apievangelist.com/2018/02/14/code-generating-openapi-still-prevailing-approach))
 
 To counter poor practices with *spec-last* development, Lane says more and more platforms are pushing code development further down in the API lifecycle. In other words, design and testing are done first, code development is done later.
-{% comment %}
-removing b/c it seems to break the flow and this piece is too long and it feelsl ike i'm trying to oversell or overhype it
 
-As I was explaining the idea of spec-first development to our product manager and other leaders, they suddenly became very intrigued. I explained that we can use the OpenAPI specification to do prototype design and UX testing of the API before we even think about development.
-
-The product managers found this idea compelling no doubt because some previous attempts at creating an API weren't so successful. In fact, we were discussing plans for an API to replace the previous API that never caught on because the intended developer audience found it too clunky, cumbersome, and off-target with the information they needed. It was a failed API.
-
-The light bulb was going off in these product managers' heads. They started to recognize a way to avoid a similar failure scenario. By pushing code development later on in the API lifecycle, we could avoid scenarios where we lose months of work due to unforeseen requirements or other poor planning. Through the API definition, we could build a nearly functional prototype of the API before code development, including mock servers to simulate actual responses that users could evaluate and provide feedback about.
-{% endcomment %}
 In a design-first model, technical writers can also insert themselves early in on the API design process, providing input about the shape and model of the API at a time when their input might get traction. Once the API gets coded by developers, it's hard enough to change a parameter name, much less the parameter itself.
 
 ## Documentation hosting features on Stoplight
@@ -122,3 +114,7 @@ Stoplight also allows you to create variables to use in *both* your specificatio
 Although I generally like working directly in the code, I've found that Stoplight lets me focus more on the content and less on the details of the spec's format. Ideally, you can probably get developers and other project team members to populate reference content in Stoplight themselves since this is an activity that needs to happen much earlier in the API design process anyway.
 
 If you're documenting an API, [Stoplight](https://stoplight.io) and their [hosted doc solution](https://stoplight.io/documentation/) are worth checking out. But don't think of Stoplight as just a documentation platform or an easy way to generate the OpenAPI description. Consider Stoplight a way to design the single source of truth that will empower all other teams in a more efficient toward a successful API.
+
+## Stoplight tutorial
+
+For an in-depth tutorial for using Stoplight to create an OpenAPI specification, including sample content and values, see [Create an OpenAPI Specification through Stoplight Studio](pubapis_openapis_quickstart_stoplight.html). 
