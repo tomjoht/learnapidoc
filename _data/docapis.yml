@@ -32,11 +32,8 @@ folders:
   - title: "Activity: Identify your goals"
     jurl: /docapis_identify_your_goals.html
 
-  - title: "Frequently asked questions"
-    jurl: /docapis_faq.html
-
   - title: "Developer Documentation Trends: Survey Results"
-    jurl: /slides/devdoctrends_results.html
+    jurl: /docapis_trends.html
 
 - title: "II: Using an API like a developer"
   jurl: /likeadeveloper.html
