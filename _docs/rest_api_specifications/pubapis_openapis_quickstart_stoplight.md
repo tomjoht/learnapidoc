@@ -8,11 +8,7 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-In this tutorial, you'll use Stoplight Studio to create a valid OpenAPI specification, using the OpenWeatherMap as the sample API.
-
-## Options for creating an OpenAPI spec
-
-You can create an OpenAPI specification document in several ways: (a) auto-generating it from annotations in your source code, (b) coding it by hand in an editor such as the Swagger Editor, and (c) using a GUI editor such as Stoplight Studio. In this tutorial, I'll walk through the third approach: using Stoplight Studio, a GUI editor for modeling your API, to quickly create your specification document.
+You can create an OpenAPI specification document in several ways: (a) auto-generating it from annotations in your source code, (b) coding it by hand in an editor such as the Swagger Editor, and (c) using a GUI editor such as Stoplight Studio. In this tutorial, I'll walk through the third approach: using Stoplight Studio, a GUI editor for modeling your API. In this tutorial, you'll use Stoplight Studio to create a valid OpenAPI specification, using the OpenWeatherMap as the sample API.
 
 {: .note}
 A more detailed introduction to Stoplight Studio is provided in [Stoplight — visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html).
@@ -22,25 +18,26 @@ A more detailed introduction to Stoplight Studio is provided in [Stoplight — v
 
 ## Using a GUI editor
 
-Why use a GUI editor instead of coding every detail of the spec by hand? All approaches have their merits. If you don't work with the OpenAPI specification enough to remember all the fields and syntax for each property, or if you're learning it for the first time, trying to get the syntax valid can be a real bear. Coding it by hand leads to many errors and forces you to spend a lot of time troubleshooting why the syntax is invalid.
+When you create an OpenAPI spec, an initial consideration is how to create it, which editor to use, and which approach to follow. Why use a GUI editor, which hides the code (unless you toggle the view open) instead of coding every detail of the spec by hand?
 
-Using an editor helps you avoid these errors and focus instead on the content. For more, read this energetic post by Phil Sturgeon, who says Stoplight Studio is "an absolute game changer for API Design, and something I've been waiting for since I found out about it somewhere in 2018" ([Reinventing API Design with Stoplight Studio](https://phil.tech/2019/08/22/reinventing-api-design-stoplight-studio/)).
+All approaches have their merits. If you don't work with the OpenAPI specification enough to remember all the fields and syntax for each property, or if you're learning it for the first time, trying to get the syntax valid can be a real bear. Coding it by hand leads to many errors and forces you to spend a lot of time troubleshooting why the syntax is invalid.
+
+Using an editor helps you avoid these errors and focus instead on the content. For more on this philosophy, read this energetic post by Phil Sturgeon, who says Stoplight Studio is "an absolute game changer for API Design, and something I've been waiting for since I found out about it somewhere in 2018" ([Reinventing API Design with Stoplight Studio](https://phil.tech/2019/08/22/reinventing-api-design-stoplight-studio/)).
 
 ## Before we begin
 
 Before we begin the tutorial, note the following:
 
 * Stoplight Studio isn't the only GUI editor for creating OpenAPI specifications. You can also use [OpenAPI-GUI](https://mermade.github.io/openapi-gui/), [Apibldr](https://apibldr.com/), [SwaggerHub's visual editor](https://app.swaggerhub.com/help/ui/visual-editor), and others.
-* Although Stoplight has a commercial offering, their editor is free. In general, you can use the editor to create a valid specification and then choose the tool you want to use to render it (e.g., Stoplight, Redoc, Spectacle, Swagger UI, or some other display framework). Once you have a valid OpenAPI specification, the spec is tool agnostic and can be rendered by many different frameworks.
-* Stoplight's platform gives you a nice path toward more comprehensive documentation, including not only API reference but also [conceptual documentation](docconceptual.html) and [tutorial content](docapiscode.html). This lets you create a more seamless documentation experience for your readers.
+* Although Stoplight has a commercial offering, their editor is free. In general, you can use the editor to create a valid specification and then choose the tool you want to use to render it (e.g., Stoplight, Redoc, Spectacle, Swagger UI, or some other display framework). You can also publish your spec on Stoplight for free as well. My point is this: once you have a valid OpenAPI specification, the spec is tool agnostic and can be rendered by many different frameworks.
+* Stoplight's platform gives you a nice path toward more comprehensive documentation, including not only API reference but also [conceptual documentation](docconceptual.html) and [tutorial content](docapiscode.html). This lets you create a more seamless documentation experience for your readers across many different types of content.
 * In this tutorial, we'll use sample information from the [OpenWeatherMap API](https://openweathermap.org/api) (more specifically, the [Current weather data endpoint](https://openweathermap.org/current)), which is the same API we've been using in this course uses in other areas, such as the [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html).
-* For full documentation, see the [Stoplight Studio documentation](https://stoplight.io/p/docs/gh/stoplightio/studio).
 * Stoplight is one of the sponsors of my site. I would still recommend this approach regardless of any site sponsorship. It makes sense to use an editor when your content must conform to a highly technical syntax.
-
+* For full documentation, see the [Stoplight Studio documentation](https://stoplight.io/p/docs/gh/stoplightio/studio).
 
 ## Which version of Stoplight Studio?
 
-Stoplight offers both a [web app](https://stoplight.io/p/studio) and a [desktop app](https://stoplight.io/studio) (Mac, Windows, or Linux). In this tutorial, you will use the web app version of Stoplight Studio because only the web app gives you the ability to publish your content online and try out requests (see [Studio Desktop vs. Studio Web](https://stoplight.io/p/docs/gh/stoplightio/studio/docs/Basics/web-vs-desktop-app.md)). However, you could also use the desktop app if desired (such as for scenarios where you're working with private, unreleased data).
+Stoplight offers both a [web app](https://stoplight.io/p/studio) and a [desktop app](https://stoplight.io/studio) (Mac, Windows, or Linux). In this tutorial, you will use the web app version of Stoplight Studio because only the web app gives you the ability to publish your content online and try out requests (see [Studio Desktop vs. Studio Web](https://stoplight.io/p/docs/gh/stoplightio/studio/docs/Basics/web-vs-desktop-app.md) for more on the difference). However, you could also use the desktop app if desired (such as for scenarios where you're working with private, unreleased data).
 
 ## Set up a project in Stoplight Studio
 
@@ -56,7 +53,7 @@ To get started in Stoplight Studio, you first create a GitHub repo to serve as t
 
     {% include course_image.html size="medium" border="true" filename="openweathermap_create_api3" ext_print="png" ext_web="png" alt="Creating a new API file" caption="Creating a new API file" %}
 
-5.  In the New API dialog box, name your API (e.g., "openweathermap"), and click **Create**. By default, the editor will use OAS 3.0 and YAML. (You can see more options, such as JSON or OAS 2.0, by clicking Advanced.)
+5.  In the New API dialog box, name your API (e.g., "openweathermap"), and click **Create**. By default, the editor will use OAS 3.0 and YAML. (You can see options for using JSON or OAS 2.0 by clicking Advanced.)
 
     Stoplight Studio creates an OAS file ("<b>O</b>pen<b>A</b>PI <b>S</b>pecification") called, in this case, openweathermap.v1.yml and loads it as follows:
 
@@ -75,11 +72,11 @@ To get started in Stoplight Studio, you first create a GitHub repo to serve as t
     components:
       schemas: {}
     ```
-The empty curly braces `{}` are placeholders for content required for the spec to be valid. You will be populating the specification information here in the upcoming sections.
+The empty curly braces `{}` are placeholders for content and are required for the spec to be valid. You will be populating the specification information here in the upcoming sections.
 
 ## Enter the API name, version, description, and contact information
 
-Let's populate the API name, version, description, and contact information.
+Let's populate the API name, version, description, and contact information. Note that in this tutorial, I've prepared sample information for you to insert into the Stoplight Editor. Each of the blue buttons expands to show detailed information that you can insert.
 
 <button type="button" class="btn btn-primary" onclick="$('#general_api_info').toggle( 'fast' )">API information &raquo;</button>
 <div id="general_api_info" markdown="block" class="expandedBox" aria-expanded="false" style="display: none;">
@@ -90,7 +87,7 @@ Let's populate the API name, version, description, and contact information.
 * *version*: 2.5
 * *API description*: Get the current weather, daily forecast for 16 days, and a three-hour-interval forecast for 5 days for your city. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location stations. Data is available in JSON, XML, or HTML format. \*\*Note\*\*: This sample Swagger file covers the \`current\` endpoint only from the OpenWeatherMap API. &lt;br/&gt;&lt;br/&gt; \*\*Note\*\*: All parameters are optional, but you must select at least one parameter. Calling the API by city ID (using the \`id\` parameter) will provide the most precise location results.
 
-Note that the Markdown source formatting is intentional in all the descriptions. When you copy and paste in the source, Stoplight will convert the Markdown into HTML when displaying the published page.
+**Note**: The Markdown source formatting in the sample text is intentional. When you copy and paste in the source, Stoplight will convert the Markdown into HTML when displaying the published page. Also note that Stoplight allows you to use [Stoplight-flavored Markdown](https://github.com/stoplightio/studio-demo/blob/master/docs/markdown/stoplight-flavored-markdown.md). This Markdown version allows all the same tags as [CommonMark](https://commonmark.org/) but also includes some special tags for callouts, alerts, and other formatting.
 
 **Contact information**
 
@@ -126,9 +123,9 @@ To populate the API info into Stoplight Studio, expand the **API information** b
 4.  Insert the **Servers** information.
 5.  Insert the **Security** information.
 
-{% include course_image.html size="large"  filename="stoplight_studio_api_overview" ext_print="png" ext_web="png" alt="Creating the API overview" caption="Creating the API overview" %}
+When finished, the editor should look as follows:
 
-Note that with descriptions, Stoplight allows you to use [Stoplight flavored Markdown](https://github.com/stoplightio/studio-demo/blob/master/docs/markdown/stoplight-flavored-markdown.md). This Markdown version allows all the same tags as Commonmark but also includes some special tags for callouts, alerts, and other formatting.
+{% include course_image.html size="large"  filename="stoplight_studio_api_overview" ext_print="png" ext_web="png" alt="Creating the API overview" caption="Creating the API overview" %}
 
 ## Previewing the output
 
@@ -159,6 +156,8 @@ Now let's enter the path and parameter information.
 
 All of the following parameters should be entered in the Query Params section. Click the **+ Query Param** button to add a query parameter into this section.
 
+\-\-\-\-\-\-\-
+
 * *Query parameter name*: **zip**
 * *data type*: string
 * *description*: \*\*Zip code\*\*. Search by zip code. \*Example: 95050,us\*. Please note that if the country is not specified, the search uses USA as a default.
@@ -171,11 +170,11 @@ All of the following parameters should be entered in the Query Params section. C
 * *default*: standard
 * *validations*: enums: "standard, metric, imperial"
 
-When you enter the Validations, the dialog looks like this:
+  When you enter the Validations, the dialog looks like this:
 
-{% include course_image.html size="medium" border="true" filename="stoplight_enums" ext_print="png" ext_web="png" alt="Entering validations" caption="Entering validations" %}
+  {% include course_image.html size="medium" border="true" filename="stoplight_enums" ext_print="png" ext_web="png" alt="Entering validations" caption="Entering validations" %}
 
-If you're typing each enum manually, press your Enter key after each term.
+  If you're typing each enum manually, press your Enter key after each term.
 
 
 
@@ -242,10 +241,9 @@ To enter paths and parameters:
 
     {% include course_image.html size="medium" filename="addingtags_stoplight" ext_print="png" ext_web="png" alt="Adding tags" caption="Adding tags" %}
 
-3.  Expand the **Path and parameter information** button above and enter the operation ID and description into Stoplight.
-4.  Click the **No tags** button and enter a tag name to group the endpoint, such as "Weather endpoints."
-5.  Click **+ Security** and select **app_id**.
-3.  Click **+ Query Param** and enter some of the parameter information from the above details as well. (Note that our sample API has only query parameters, no path parameters.)
+5.  Expand the **Path and parameter information** button above and enter the operation ID and description into Stoplight.
+6.  Click **+ Security** and select **app_id**.
+7.  Click **+ Query Param** and enter some of the parameter information from the above details as well. (Note that our sample API has only query parameters, no path parameters.)
 
     {: .note}
     For this exercise, you don't need to enter all the parameters, but at least enter the `zip` parameter.
@@ -257,7 +255,7 @@ To enter paths and parameters:
 
 ## Re-using parameters
 
-Note that the OpenAPI spec allows to re-use parameters by storing the information in the [`components`](pubapis_openapi_step5_components_object.html) section. In the Stoplight Studio editor, currently you can't directly add parameters into `components` using the GUI, but if you switch to the code view and manually enter the necessary code, then you can click the link button and select that reference.
+Note that the OpenAPI spec allows to re-use parameters by storing the information in the [`components`](pubapis_openapi_step5_components_object.html) section. In the Stoplight Studio editor, currently you can't directly add parameters into [`components`](pubapis_openapi_step5_components_object.html) using the GUI, but if you switch to the code view and manually enter the necessary code, then you can click the link button and select that reference.
 
 For example, suppose you have the following inside `components`:
 
@@ -272,7 +270,7 @@ components:
         type: string
 ```
 
-Then you can click the link icon and select this reference:
+Then you can click the link icon in the Stoplight editor and select this reference:
 
 {% include course_image.html size="medium" filename="components_ref_selection_stoplight" ext_print="png" ext_web="png" alt="Selecting references from components" caption="Selecting references from components" %}
 
@@ -280,7 +278,9 @@ If you have a lot of parameter re-use but still want to use Stoplight to create 
 
 ## Save and preview your parameter work
 
-Now that you finished entering parameters, save your work by clicking the **Commit** button, typing a brief description, and then clicking **Push**. The parameters display looks like this:
+Now that you finished entering parameters, save your work: Click the **Commit** button, type a brief description, and then click **Push**.
+
+After you commit the changes, you can preview the OpenAPI documentation by clicking **Publish** and then sliding the **Show Preview** slider. The parameters display looks like this:
 
 {% include course_image.html size="large" border="true" filename="parameters_published" ext_print="png" ext_web="png" alt="Parameters display in Stoplight" caption="Parameters display in Stoplight" %}
 
@@ -463,15 +463,15 @@ To enter the response in Stoplight Studio:
 
     {% include course_image.html size="large" filename="stoplight_response_button" ext_print="png" ext_web="png" alt="Adding a response" caption="Adding a response" %}
 
-2.  Expand the **Response information** button above. This is the information you'll be adding. However, it will be easier to consult this screenshot as you enter the information:
+2.  Expand the **Response information** button above to see the sample response information you'll be adding. You'll likely need to consult this screenshot as you enter the response information:
 
     {% include course_image.html url="https://idratherbewritingmedia.com/images/api/schema_object_stoplight.png" size="large" filename="schema_object_stoplight" ext_print="png" ext_web="png" alt="Schema object editor" caption="Schema object editor" %}
 
 3.  In the schema editor, click the **+** button next to **object**. This adds a property under object. Then customize the property's key-value pairs until it looks like the example above.
 
-    {% include callout.html type="primary" title="Working with the Schema editor" content="As you enter content using the Schema editor, note the following behavior. Clicking the **+** plus button next to a property creates a new property at that level. If the property you're adding is an object, as soon as you change its data type from string (the default) to object, a plus button will appear at that level too. First get the structure right, and then go back and add descriptions, requirements, and other details." %}
+    {% include callout.html type="primary" title="Tips for working with the Schema editor" content="As you enter content using the Schema editor, note the following behavior. Clicking the **+** plus button next to a property creates a new property at that level. If the property you're adding is an object, as soon as you change its data type from string (the default) to object, a plus button will appear at that level too. First get the structure right, and then go back and add descriptions, requirements, and other details." %}
 
-4.  After you finish entering the property structure so that it looks like the preceding screenshot, go through and add a description and example for each property. Expand the **Response information** above button for this information.
+4.  After you finish entering the property structure so that it looks like the preceding screenshot, go through and add a description and example for each property. Click the **Description** button <img src="https://idratherbewritingmedia.com/images/api/stoplightbookicon.png" alt="Description" /> and the **Additional Properties** button <img src="https://idratherbewritingmedia.com/images/api/stoplightadditionalproperties.png" alt="Additional Properties" /> to add this information.
 
     {% include course_image.html size="large" filename="stoplight_entering_descriptions" ext_print="png" ext_web="png" alt="Entering descriptions in the GUI editor" caption="Entering descriptions in the GUI editor" %}
 
@@ -479,22 +479,23 @@ To enter the response in Stoplight Studio:
 
 ## Save and preview your schema work
 
-Now that you finished entering schema information, save your work by clicking the **Commit** button, typing a brief description, and then clicking **Push**. The schema display looks like this:
+Now that you finished entering schema information, save your work: Click the **Commit** button, type a brief description, and then click **Push**. The schema display should look like this:
 
-{% include course_image.html size="medium" border="true" filename="responses_published_stoplight" ext_print="png" ext_web="png" alt="Schema display" caption="Schema display" %}
+{% include course_image.html size="large" border="true" filename="responses_published_stoplight" ext_print="png" ext_web="png" alt="Schema display" caption="Schema display" %}
 
 
 ## Reusing responses through components
 
-The OpenAPI spec allows you to re-use common components. If you have a dozen different endpoints that all return the same information, you can create a "model" for that information (a model is a description of some object's properties). In the code, this model will be stored the inside the `components` section. Anytime you see a `$ref` button in Stoplight, you can choose to use those sections stored in `components` (or "Models" in the Stoplight Studio interface).
+The OpenAPI spec allows you to re-use common components, including parameters and responses. If you have a dozen different endpoints that all return the same information, you can create a "model" for that information that can be re-used. (A *model* is a description of some object's properties). You can create models directly through the Stoplight editor. In the code, this model will be stored the inside the `components` section. Anytime you see a `$ref` button in Stoplight, you can choose to use those sections stored in `components` (called "Models" in the Stoplight Studio interface).
 
-A common scenario for re-use with responses might be 401 (unauthorized responses), which could likely be returned with each endpoint. To store this 401 response as a re-usable model:
+A common scenario for re-use with responses might be 401 (unauthorized response), which could likely be returned with each endpoint. To store this 401 response as a re-usable model:
 
 1.  In the left sidebar, right-click **Models** and select **New Model**. Name the model "unauthorized_response".
-2.  You can use the JSON schema editor to create the properties of your re-usable model. Click the **+ object** link twice to create two properties for the object. Name them `cod` and `message`. Change the  data type for the first from string to integer.
+2.  You can use the JSON schema editor to create the properties of your re-usable model. Click the **+ object** link twice to create two properties for the object. Name them `cod` and `message`. Change the  data type for the first from string to integer. The model should look as follows:
 
     {% include course_image.html size="large" filename="schema_editor_401_stoplight" ext_print="png" ext_web="png" alt="Creating a re-usable model" caption="Creating a re-usable model" %}
 
+3.  Click the **Required?** button <img src="https://idratherbewritingmedia.com/images/api/stoplighteditorrequired.png" alt="Required button" /> and select required for both properties.
 3.  Return to your **weather** path and click **+ Response** to create a new response.
 4.  For the response code, select **401: Unauthorized**.
 5.  Click **+ Add Body**.
@@ -502,9 +503,9 @@ A common scenario for re-use with responses might be 401 (unauthorized responses
 
     {% include course_image.html size="large" filename="ref_selection_json_schema_stoplight" ext_print="png" ext_web="png" alt="Selecting a re-usable model" caption="Selecting a re-usable model" %}
 
-Now you're re-using the same model. As you work with larger APIs that re-use components, be sure to store your re-usable parts as models (or other subsections under `components`). As you can see from the options in the $Ref Target, you can even store these components outside the existing OpenAPI file:
+    Now you're re-using the same model. As you work with larger APIs that re-use components, be sure to store your re-usable parts as models (or other subsections under `components`). As you can see from the options in the $Ref Target, you can even store these components outside the existing OpenAPI file:
 
-{% include course_image.html size="small_medium" filename="reuse_locations_stoplight" ext_print="png" ext_web="png" alt="Reference target storage options" caption="Reference target storage options" %}
+    {% include course_image.html size="small_medium" filename="reuse_locations_stoplight" ext_print="png" ext_web="png" alt="Reference target storage options" caption="Reference target storage options" %}
 
 ## Preview, test, and publish the output
 
@@ -512,13 +513,13 @@ Now that you've finished creating your OpenAPI spec, let's preview, test, and pu
 
 1.  Click the **Commit** button, type a commit message, and then click **Push**.
 2.  Click the **Publish** button, and then slide the **Preview** toggle on.
-3.  In the left sidebar, expand **Weather Endpoints** and click the **Weather** endpoint.
+3.  In the left sidebar, expand **Weather Endpoints** and click the **Weather** endpoint. Your API should look as follows:
 
     {% include course_image.html url="https://stoplight.io/p/docs/gh/tomjoht/stoplight_studio_weathermap" size="large" border="true" filename="stoplight_output_full_display" ext_print="png" ext_web="png" alt="Full display of Stoplight output" caption="Full display of Stoplight output" %}
 
 4.  Click the **Try It** tab.
 4.  Select **zip** check box and enter a zip code. (At least one location parameter is required for the API to retrieve weather information.)
-5.  Enter an API key into the value for the **appid** parameter. If you don't have an [OpenWeatherMap API key](docapis_get_auth_keys.html#openweathermap_apikey), you can use this: `fd4698c940c6d1da602a70ac34f0b147`.
+5.  Enter an API key into the value for the **appid** parameter. If you don't have an [OpenWeatherMap API key](docapis_get_auth_keys.html#openweathermap_apikey), you can use this one: `fd4698c940c6d1da602a70ac34f0b147`.
 6.  Click the **Send** button. If you've done everything correctly, you will see a response returned.
 
     {% include course_image.html url="https://stoplight.io/p/docs/gh/tomjoht/stoplight_studio_weathermap/reference/openweathermap.v1.yaml?group=master" size="large" filename="stoplight_tryit_response2" ext_print="png" ext_web="png" alt="Successful response using Stoplight" caption="Successful response using Stoplight" %}
@@ -530,7 +531,7 @@ Now that you've finished creating your OpenAPI spec, let's preview, test, and pu
 7.  To export the OpenAPI content to publish in another tool, click **Export OpenAPI**. You can view mine [here](https://stoplight.io/api/nodes.raw?srn=gh/tomjoht/stoplight_studio_weathermap/reference/openweathermap.v1.yaml).
 
     {: .note}
-    If you don't want to publish docs through Stoplight, you could use your OpenAPI definition with [Redoc](https://github.com/Redocly/redoc), [Swagger UI](pubapis_swagger.html), [Spectacle](https://github.com/sourcey/spectacle), [Docsy](https://github.com/google/docsy), and other tools. See [Openapi.tools](https://openapi.tools/#documentation) for a list of possibilities. You can find a [Redoc tutorial here in this course here](pubapis_redoc.html).
+    If you don't want to publish docs through Stoplight, you could use your OpenAPI definition with [Redoc](https://github.com/Redocly/redoc), [Swagger UI](pubapis_swagger.html), [Spectacle](https://github.com/sourcey/spectacle), [Docsy](https://github.com/google/docsy), and other tools. See [Openapi.tools](https://openapi.tools/#documentation) for a list of possibilities. You can find a [Redoc tutorial in this course here](pubapis_redoc.html).
 
 {% if page.permalink == "/workshop.html" %}*For more information related to this activity, see [Create an OpenAPI Specification through Stoplight Studio (Using Stoplight Studio)](pubapis_openapis_quickstart_stoplight.html).*{% endif %}
 
