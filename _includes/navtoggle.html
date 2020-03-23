@@ -1,0 +1,26 @@
+<!--nav toggle-->
+<li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+
+<script>
+$(document).ready(function() {
+    $("#tg-sb-link").click(function() {
+        $("#sidebar").toggleClass('navToggle');
+        $(".container").toggleClass('expand');
+        $("#tg-sb-icon").toggleClass('fa-toggle-on');
+        $("#tg-sb-icon").toggleClass('fa-toggle-off');
+    });
+});
+</script>
+<style>
+.navToggle {
+display: none !important;
+}
+.expand {
+width: 100%;
+margin-left: 10%;
+margin-right: 10%;
+}
+#tg-sb-link:hover, #tg-sb-link:active, #tg-sb-link {
+text-decoration: none !important;
+}
+</style>
