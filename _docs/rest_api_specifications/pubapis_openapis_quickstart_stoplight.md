@@ -477,6 +477,8 @@ To enter the response in Stoplight Studio:
 
 8.  Click the **Example** tab and insert the example (from the same Response information button above). Call the example "Example."
 
+{% include random_ad.html %}
+
 ## Save and preview your schema work
 
 Now that you finished entering schema information, save your work: Click the **Commit** button, type a brief description, and then click **Push**. The schema display should look like this:
@@ -506,6 +508,8 @@ A common scenario for re-use with responses might be 401 (unauthorized response)
     Now you're re-using the same model. As you work with larger APIs that re-use components, be sure to store your re-usable parts as models (or other subsections under `components`). As you can see from the options in the $Ref Target, you can even store these components outside the existing OpenAPI file:
 
     {% include course_image.html size="small_medium" filename="reuse_locations_stoplight" ext_print="png" ext_web="png" alt="Reference target storage options" caption="Reference target storage options" %}
+
+{% include random_ad2.html %}
 
 ## Preview, test, and publish the output
 
