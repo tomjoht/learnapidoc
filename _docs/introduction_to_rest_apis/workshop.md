@@ -2,7 +2,7 @@
 title: Workshop -- agenda, slides, activities
 permalink: /workshop.html
 course: "Documenting REST APIs"
-weight: 1.02
+weight: 1.3
 sidebar: docapis
 section: introtoapis
 path1: /docapis_introtoapis.html
@@ -11,6 +11,10 @@ redirect_from:
 ---
 
 The workshop agenda, slides, and activities correspond to full-day API workshop. The slides and activities mirror similar sections in the course.
+
+Note that for API workshops, it helps to consolidate activities into a single page with brief instructions. The content for the activities below is the same content that appears in other parts of the course &mdash; it's just pulled in here (single-sourced) for convenience. Workshops require a healthy amount of hands-on activities to be engaging. If you have feedback about how to improve the activities, or places where you keep getting stuck, [let me know](https://idratherbewriting.com/learnapidoc/contact.html).
+
+Not all activities in this course are consolidated here, since participants can only do so much during a workshop. The following activities are those I've selected for workshops.
 
 * TOC
 {:toc}

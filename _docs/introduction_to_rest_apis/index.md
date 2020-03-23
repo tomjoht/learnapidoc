@@ -6,7 +6,7 @@ type: homepage
 path: Introduction to REST APIs
 section: introtoapis
 path1: /docapis_introtoapis.html
-weight: 1.0
+weight: 1.01
 redirect_from:
 - /restapicourse2-0/
 - /learnapidoc/introtoapis.html

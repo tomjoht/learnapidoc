@@ -3,7 +3,7 @@ title: What is a REST API?
 permalink: /docapis_what_is_a_rest_api.html
 keywords:
 course: "Documenting REST APIs"
-weight: 1.3
+weight: 1.7
 sidebar: docapis
 section: introtoapis
 path1: /docapis_introtoapis.html

@@ -2,7 +2,7 @@
 title: Introduction to REST API documentation
 permalink: /docapis_intro_to_rest_api_doc.html
 course: "Documenting REST APIs"
-weight: 1.2
+weight: 1.6
 sidebar: docapis
 section: introtoapis
 path1: /docapis_introtoapis.html

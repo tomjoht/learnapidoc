@@ -5,7 +5,7 @@ course: "Documenting REST APIs"
 sidebar: docapis
 section: introtoapis
 path1: /docapis_introtoapis.html
-weight: 1.01
+weight: 1.2
 ---
 
 I've given numerous presentations and workshops on API documentation, and I've recorded most of them. The most recent recordings are available below.
@@ -27,25 +27,35 @@ If you want a condensed version of videos 1-5, see this one-hour version that co
 
 <iframe width="640" height="385" src="https://www.youtube.com/embed/5pzhtrrtkXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Video 1
+## Most recent video (LA workshop)
+
+I recorded part of a more recent API workshop held in Los Angeles here:
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/UOc2g-yRFxw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+See the [event details](https://idratherbewriting.com/blog/upcoming-webinar-trends-api-docs-differ-from-other-trends/) for more info.
+
+## Raleigh workshop recording
+
+### Video 1 (Raleigh workshop)
 
 <iframe width="640" height="385" src="https://www.youtube.com/embed/FG3cDrY-6CE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Video 2
+### Video 2 (Raleigh workshop)
 
 <iframe width="640" height="385" src="https://www.youtube.com/embed/L4YFlSB8STI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {% include random_ad.html %}
 
-## Video 3
+### Video 3 (Raleigh workshop)
 
 <iframe width="640" height="385" src="https://www.youtube.com/embed/8vkt3hftD1k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Video 4
+### Video 4 (Raleigh workshop)
 
 <iframe width="640" height="385" src="https://www.youtube.com/embed/iLl-VpoEFrE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Video 5
+### Video 5 (Raleigh workshop)
 
 <iframe width="640" height="385" src="https://www.youtube.com/embed/xEzZl7L58e4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
