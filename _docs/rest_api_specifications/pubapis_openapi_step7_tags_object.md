@@ -33,11 +33,14 @@ tags:
 
 We have just one tag, but you could have as many as you want (if you have a lot of endpoints, it would make sense to create multiple tags to group them). You can list both the `name` and a `description` for each tag. The `description` appears as a subtitle for the tag name in the Swagger UI display.
 
-{% include random_ad.html %}
+{% include content/troubleshooting_spec_tip.md %}
 
 ## Tags at the path object level
 
 The `tags` object at the root level should list all tags (groups) that you want in your API. Then in each path object under `paths`, you list the tag you want that path grouped under.
+
+{: .note}
+By "root level," I mean the first level in the OpenAPI document. This level is also referred to as the global level because some object properties declared here (namely servers and security) are applied to each of the operation objects unless overridden at a lower level.
 
 For example, in the operations object for the `/current` path, we used the tag `Current Weather Data`:
 
@@ -50,6 +53,8 @@ paths:
 ```
 
 This tag is defined at the global level, so the `/weather` path will be grouped here.
+
+{% include random_ad.html %}
 
 ## <i class="fa fa-user-circle"></i> View the Appearance in Swagger UI
 

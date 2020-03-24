@@ -61,6 +61,8 @@ All paths will use the `app_id` security method by default unless it's overridde
 
 Then the `weather` path would use the `some_other_key` security method, while all other paths would use the globally declared security, `app_id`.
 
+{% include content/troubleshooting_spec_tip.md %}
+
 ## Referencing the security scheme in components
 
 In the [`components` object](pubapis_openapi_step5_components_object.html), add a [`securitySchemes` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#securitySchemeObject) that defines details about the security scheme the API uses:

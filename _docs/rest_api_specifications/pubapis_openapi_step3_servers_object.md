@@ -47,6 +47,8 @@ servers:
     description: Some other server
 ```
 
+{% include content/troubleshooting_spec_tip.md %}
+
 In Swagger UI, the multiple servers appear as options users can select in a drop-down list:
 
 <a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/openapi_serversurl.png" class="medium" /></a>

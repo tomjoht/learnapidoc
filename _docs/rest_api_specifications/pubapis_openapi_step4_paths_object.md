@@ -61,7 +61,7 @@ The operation object (`get` in the code above) contains various properties and o
 Each of the above hyperlinked properties that say "(object)" contain additional levels. Their values aren't just simple data types like strings but are rather objects that contain their own properties.
 
 {: .tip}
-You'll undoubtedly need to consult the [OpenAPI spec](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md) to see what details are required for each of the values and objects here. I can't replicate all the details you need, nor would I want to. I'm just trying to introduce you to the OpenAPI properties at a surface level. **Also, if you get stuck with errors, see the [sample OpenAPI spec here](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) for the fully working sample. This will help you spot and troubleshoot indentation or other errors.**
+You'll undoubtedly need to consult the [OpenAPI spec](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md) to see what details are required for each of the values and objects here. I can't replicate all the details you need, nor would I want to. I'm just trying to introduce you to the OpenAPI properties at a surface level.
 
 Let's add a skeleton of the operation object details to our existing code:
 
@@ -196,6 +196,8 @@ paths:
           enum: [json, xml, html]
           default: "json"
 ```
+
+{% include content/troubleshooting_spec_tip.md %}
 
 #### Responses object {#responses}
 

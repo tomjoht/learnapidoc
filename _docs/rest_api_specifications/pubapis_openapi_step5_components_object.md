@@ -161,6 +161,8 @@ components:
 
 Replace the existing `paths` object in the Swagger Editor with the above code sample, include the new `components` object, and observe that the rendered display still looks the same.
 
+{% include content/troubleshooting_spec_tip.md %}
+
 ## Re-using response objects {#reusing_objects}
 
 In [Step 4: The paths object](pubapis_openapi_step4_paths_object.html), when we described the [`responses` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#responsesObject) in the `paths` object, even with just a simple placeholder, we used a [`schema`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#schemaObject) object to describe the model for the request or response. The `schema` refers to the data structure (the fields, values, and hierarchy of the various objects and properties of a JSON or YAML object &mdash; see [What is a schema?](https://spacetelescope.github.io/understanding-json-schema/about.html#what-is-a-schema)).

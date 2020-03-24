@@ -96,6 +96,8 @@ The editor renders the display as follows.
 
 {% include course_image.html size="large" border="true" filename="openapi_object_swagger" ext_print="png" ext_web="png" alt="openapi object" caption="openapi object" %}
 
+{% include content/troubleshooting_spec_tip.md %}
+
 On the backend, Swagger UI uses the 3.0.2 version of the spec to validate your content. In the above screenshot, the gray "1.0" version refers to the version of the API here, not the version of the OpenAPI spec.
 
 There's not much to the `openapi` object except to elaborate on the versions. OAS 3.0 was released on 2017-07-26, and OAS 3.0.2 was released on 10-08-2018 (see [Version History](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#appendix-a-revision-history)). Much of the information and examples online, as well as supporting tools, often focus only on 2.0. Even if you're locked into publishing in a 2.0 tool or platform, you can code the spec in 3.0 and then use a tool such as [APIMATIC Transformer](https://apimatic.io/transformer) to convert the 3.0 spec to 2.0. You can also convert a spec from 2.0 to 3.0.

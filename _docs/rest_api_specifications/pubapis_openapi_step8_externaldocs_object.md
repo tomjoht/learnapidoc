@@ -33,6 +33,8 @@ externalDocs:
 
 Note that this documentation should relate to the API as a whole. To link a specific parameter to more documentation, you can add an `externalDocs` object to the operation object, as noted in [Operation objects](pubapis_openapi_step4_paths_object.html#operation-objects) section in Step 4: The paths object.
 
+{% include content/troubleshooting_spec_tip.md %}
+
 ## <i class="fa fa-user-circle"></i> View the Appearance in Swagger UI
 
 Add the above code to the root level of your OpenAPI document in Swagger UI.
