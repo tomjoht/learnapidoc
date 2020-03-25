@@ -61,7 +61,7 @@ If you have a lot of parameters, consider including several request examples. In
 https://api.citygridmedia.com/content/places/v2/search/where
 ```
 
-However, there are [literarily 17 possible query string parameters](http://docs.citygridmedia.com/display/citygridv2/Places+API#PlacesAPI-WhereSearchRequest) you can use with this endpoint. As a result, the documentation includes several sample requests that show various parameter combinations:
+However, there are [literally 17 possible query string parameters](http://docs.citygridmedia.com/display/citygridv2/Places+API#PlacesAPI-WhereSearchRequest) you can use with this endpoint. As a result, the documentation includes several sample requests that show various parameter combinations:
 
 <a href="http://docs.citygridmedia.com/display/citygridv2/Places+API" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/search_usage_examples.png" alt="CityGrid Places API example" /></a>
 
