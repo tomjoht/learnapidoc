@@ -119,8 +119,11 @@ folders:
   - title: Introduction to the OpenAPI spec and Swagger
     jurl: /pubapis_swagger_intro.html
 
-  - title: "Create an OpenAPI Specification through Stoplight Studio"
+  - title: "Create an OpenAPI Specification through a visual editor (Stoplight Studio)"
     jurl: /pubapis_openapis_quickstart_stoplight.html
+
+  - title: "Create an OpenAPI Specification through a code editor (Swagger Editor)"
+    jurl: /pubapis_openapi_code_editor.html
 
   - title: Working in YAML
     jurl: /pubapis_yaml.html

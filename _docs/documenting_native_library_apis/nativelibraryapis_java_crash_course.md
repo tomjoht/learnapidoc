@@ -187,7 +187,7 @@ public class Bicycle {
 }
 ```
 
-Classes also set boundaries on access based on the package. If the access modifier does not not say `public`, the class would only be accessible to members of the same package. If the access modifier is `protected`, the class is only accessible to the class, package, and subclasses.
+Classes also set boundaries on access based on the package. If the access modifier does not say `public`, the class would only be accessible to members of the same package. If the access modifier is `protected`, the class is only accessible to the class, package, and subclasses.
 
 When you want to instantiate the class (and your file is outside the package), you need to import the package into your class, like this:
 
