@@ -4,7 +4,7 @@ permalink: /pubapis_openapi_tutorial_overview.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 4.21
-section: restapispecifications
+section: openapitutorial
 path1: /restapispecifications.html
 ---
 

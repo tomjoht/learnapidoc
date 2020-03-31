@@ -1,14 +1,16 @@
 ---
-title: "Create an OpenAPI Specification through Stoplight Studio"
+title: "Create a OpenAPI specification using a visual editor (Stoplight Studio)"
 permalink: pubapis_openapis_quickstart_stoplight.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 4.3
 section: restapispecifications
 path1: /restapispecifications.html
+redirect_from:
+- /learnapidoc/stoplight_studio_tutorial.html
 ---
 
-You can create an OpenAPI specification document in several ways: (a) auto-generating it from annotations in your source code, (b) coding it by hand in an editor such as the Swagger Editor, and (c) using a GUI editor such as Stoplight Studio. In this tutorial, I'll walk through the third approach: using Stoplight Studio, a GUI editor for modeling your API. In this tutorial, you'll use Stoplight Studio to create a valid OpenAPI specification, using the OpenWeatherMap as the sample API.
+In [Introduction to the OpenAPI specification](pubapis_openapi_intro.html), I explained that you can create an OpenAPI specification document in several ways: (a) auto-generating it from annotations in your source code, (b) coding it by hand in an editor such as the Swagger Editor, and (c) using a GUI editor such as Stoplight Studio. In this tutorial, I'll walk through the third approach: using Stoplight Studio, a GUI editor for modeling your API. In this tutorial, you'll use Stoplight Studio to create a valid OpenAPI specification, using the OpenWeatherMap as the sample API.
 
 {: .note}
 A more detailed introduction to Stoplight Studio is provided in [Stoplight — visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html).
@@ -16,13 +18,13 @@ A more detailed introduction to Stoplight Studio is provided in [Stoplight — v
 * TOC
 {:toc}
 
-## Using a GUI editor
+## Using a visual editor
 
-When you create an OpenAPI spec, an initial consideration is how to create it, which editor to use, and which approach to follow. Why use a GUI editor, which hides the code (unless you toggle the view open) instead of coding every detail of the spec by hand?
+When you create an OpenAPI spec, an initial consideration is how to create it, which editor to use, and which approach to follow. Why use a visual/GUI editor, which hides the code (unless you toggle the view open) instead of coding every detail of the spec by hand?
 
-All approaches have their merits. If you don't work with the OpenAPI specification enough to remember all the fields and syntax for each property, or if you're learning it for the first time, trying to get the syntax valid can be a real bear. Coding it by hand leads to many errors and forces you to spend a lot of time troubleshooting why the syntax is invalid.
+All approaches have their merits. If you don't work with the OpenAPI specification enough to remember all the fields and syntax for each property, or if you're learning it for the first time, trying to get the syntax valid can be challenging. Coding it by hand leads to many errors and forces you to spend a lot of time troubleshooting why the syntax is invalid.
 
-Using an editor helps you avoid these errors and focus instead on the content. For more on this philosophy, read this energetic post by Phil Sturgeon, who says Stoplight Studio is "an absolute game changer for API Design, and something I've been waiting for since I found out about it somewhere in 2018" ([Reinventing API Design with Stoplight Studio](https://phil.tech/2019/08/22/reinventing-api-design-stoplight-studio/)).
+Using an editor helps you avoid these errors and focus instead on the content. For more on this philosophy, read this post by Phil Sturgeon, who says Stoplight Studio is "an absolute game changer for API Design, and something I've been waiting for since I found out about it somewhere in 2018" ([Reinventing API Design with Stoplight Studio](https://phil.tech/2019/08/22/reinventing-api-design-stoplight-studio/)).
 
 ## Before we begin
 
@@ -548,6 +550,3 @@ dl {font-size: 18px !important;}
   margin-bottom: 20px;
 }
 </style>
-
-
-{% include content/activities/stoplight_studio_tutorial.md %}

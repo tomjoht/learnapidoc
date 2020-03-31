@@ -46,7 +46,7 @@ As you browse APIs, you might be wondering which type of API is most common? Whi
 
 {% include course_image.html url="https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf" size="medium" filename="webserviceapisurvey" ext_print="png" ext_web="png" alt="Popularity of web service APIs" caption="Popularity of web service APIs (<i>The State of API 2019</i>, p.20)" %}
 
-OAS stands for OpenAPI Specification, which is something I explore in-depth in [Introduction to the OpenAPI specification and Swagger](pubapis_swagger_intro.html). The report even mentions some APIs not covered above &mdash; [JMS APIs](https://docs.oracle.com/javaee/6/tutorial/doc/bncdr.html), which are used with Java to send messages.
+OAS stands for OpenAPI Specification, which is something I explore in-depth in [Introduction to the OpenAPI specification](pubapis_openapi_intro.html). The report even mentions some APIs not covered above &mdash; [JMS APIs](https://docs.oracle.com/javaee/6/tutorial/doc/bncdr.html), which are used with Java to send messages.
 
 As you can see, when it comes to APIs, one size/type does fit all. Developers will implement the type of API that best aligns with their scenario and requirements, just as there are different types of cars (sports cars, trucks, semi-trucks, sedans, hearses, etc.) for different trips, drivers, passengers, and roads.
 

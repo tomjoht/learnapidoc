@@ -116,47 +116,54 @@ folders:
   - title: Overview of REST API specification formats
     jurl: /pubapis_rest_specification_formats.html
 
-  - title: Introduction to the OpenAPI spec and Swagger
-    jurl: /pubapis_swagger_intro.html
+  - title: Introduction to the OpenAPI specification
+    jurl: /pubapis_openapi_intro.html
 
-  - title: "Create an OpenAPI Specification through a visual editor (Stoplight Studio)"
+  - title: "Create an OpenAPI Specification using a visual editor (Stoplight Studio)"
     jurl: /pubapis_openapis_quickstart_stoplight.html
 
-  - title: "Create an OpenAPI Specification through a code editor (Swagger Editor)"
+  - title: "Create an OpenAPI Specification using a code editor (Swagger Editor)"
     jurl: /pubapis_openapi_code_editor.html
 
   - title: Working in YAML
     jurl: /pubapis_yaml.html
 
-  - title: "OpenAPI tutorial overview"
-    jurl: /pubapis_openapi_tutorial_overview.html
+    subfolders:
+    - title: Step-by-step OpenAPI tutorial
+      jurl: /openapi_tutorial.html
+      behavior: openable
 
-  - title: "Step 1: The openapi object"
-    jurl: /pubapis_openapi_step1_openapi_object.html
+      subfolderitems:
 
-  - title: "Step 2: The info object"
-    jurl: /pubapis_openapi_step2_info_object.html
+      - title: "OpenAPI tutorial overview"
+        jurl: /pubapis_openapi_tutorial_overview.html
 
-  - title: "Step 3: The servers object"
-    jurl: /pubapis_openapi_step3_servers_object.html
+      - title: "Step 1: The openapi object"
+        jurl: /pubapis_openapi_step1_openapi_object.html
 
-  - title: "Step 4: The paths object"
-    jurl: /pubapis_openapi_step4_paths_object.html
+      - title: "Step 2: The info object"
+        jurl: /pubapis_openapi_step2_info_object.html
 
-  - title: "Step 5: The components object"
-    jurl: /pubapis_openapi_step5_components_object.html
+      - title: "Step 3: The servers object"
+        jurl: /pubapis_openapi_step3_servers_object.html
 
-  - title: "Step 6: security object"
-    jurl: /pubapis_openapi_step6_security_object.html
+      - title: "Step 4: The paths object"
+        jurl: /pubapis_openapi_step4_paths_object.html
 
-  - title: "Step 7: The tags object"
-    jurl: /pubapis_openapi_step7_tags_object.html
+      - title: "Step 5: The components object"
+        jurl: /pubapis_openapi_step5_components_object.html
 
-  - title: "Step 8: The externalDocs object"
-    jurl: /pubapis_openapi_step8_externaldocs_object.html
+      - title: "Step 6: security object"
+        jurl: /pubapis_openapi_step6_security_object.html
 
-  - title: "Activity: Create an OpenAPI specification document"
-    jurl: /pubapis_openapi_activity.html
+      - title: "Step 7: The tags object"
+        jurl: /pubapis_openapi_step7_tags_object.html
+
+      - title: "Step 8: The externalDocs object"
+        jurl: /pubapis_openapi_step8_externaldocs_object.html
+
+      - title: "Activity: Create an OpenAPI specification document"
+        jurl: /pubapis_openapi_activity.html
 
   - title: Swagger UI tutorial
     jurl: /pubapis_swagger.html

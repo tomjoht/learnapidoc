@@ -124,7 +124,7 @@ oas:
 openapi:
   term: OpenAPI
   def: "The official name for the OpenAPI specification. The OpenAPI specification provides a set of properties that can be used to describe your REST API. When valid, the specification document can be used to create interactive documentation, generate client SDKs, run unit tests, and more. You can read the specification details on GitHub at [https://github.com/OAI/OpenAPI-Specification](https://github.com/OAI/OpenAPI-Specification). Under the Open API Initiative with the Linux Foundation, the OpenAPI specification aims to be vendor neutral (many companies [steer its development](https://www.openapis.org/membership/members), not just one)."
-  link: See [Introduction to the OpenAPI specification and Swagger](pubapis_swagger_intro.html).
+  link: See [Introduction to the OpenAPI specification](pubapis_openapi_intro.html).
 
 openapi_contract:
   term: OpenAPI contract

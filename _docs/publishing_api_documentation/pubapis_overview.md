@@ -73,13 +73,13 @@ Even if you could get developers to use a HAT, you'd likely need to buy a licens
 
 Ideally, engineers want to add annotations in their code and then generate the doc from those annotations. They've been doing this with Java and C++ code through [Javadoc](nativelibraryapis_create_javadoc.html) and [Doxygen](nativelibraryapis_doxygen.html) for the past 25+ years (for a comprehensive list of these tools, see [Comparison of document generators in Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_documentation_generators)).
 
-Even for REST APIs, there are tools/libraries that will auto-generate documentation from source code annotations (such as from Java to an OpenAPI spec through [Swagger Codegen](https://swagger.io/swagger-codegen/)), but it's not something that HATs can do. For more on auto-generating from source, see [Auto-generating the OpenAPI file from code annotations](pubapis_swagger_intro.html#auto-generating-the-openapi-file-from-code-annotations).
+Even for REST APIs, there are tools/libraries that will auto-generate documentation from source code annotations (such as from Java to an OpenAPI spec through [Swagger Codegen](https://swagger.io/swagger-codegen/)), but it's not something that HATs can do. For more on auto-generating from source, see [Auto-generating the OpenAPI file from code annotations](pubapis_openapi_intro.html#autogeneration).
 
 ### 3. API doc follows a specific structure and pattern not modeled in any HAT
 
 Engineers often want to push the reference documentation for APIs into well-defined templates that accommodate sections such as endpoint parameters, sample requests, sample responses, and so forth. (I discuss these reference sections in [Documenting API endpoints](docendpoints.html).)
 
-If you have a lot of endpoints, you need a system for pushing the content into standard templates. Ideally, you should separate the various sections (description, parameters, responses, etc.) and then compile the information through your template when you build your site. Or you can use a specification such as [OpenAPI](pubapis_swagger_intro.html) to populate the information into a template. You can also incorporate custom scripts. However, you don't often have these options in HATs, since you're mostly limited to what workflows and templates are supported out of the box.
+If you have a lot of endpoints, you need a system for pushing the content into standard templates. Ideally, you should separate the various sections (description, parameters, responses, etc.) and then compile the information through your template when you build your site. Or you can use a specification such as [OpenAPI](pubapis_openapi_intro.html) to populate the information into a template. You can also incorporate custom scripts. However, you don't often have these options in HATs, since you're mostly limited to what workflows and templates are supported out of the box.
 
 ### 4. Many APIs have interactive API consoles, allowing you to try out the calls
 

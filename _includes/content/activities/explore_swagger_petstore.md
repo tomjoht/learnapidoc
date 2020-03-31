@@ -56,4 +56,4 @@ Let's get some hands-on experience with Swagger UI using the Petstore demo. The 
 
 6.  The Petstore is a functioning API, and you have actually created a pet. For fun, expand the **<span style="padding: 3px; border-radius: 3px; background-color: #dedede">GET</span>/pet/{petId}** endpoint, click **Try it out**, enter the pet `id` you used in the previous operation, and then execute the request. You should see your pet's name returned.
 
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Introduction to the OpenAPI specification and Swagger]({{site.rooturl}}pubapis_swagger_intro.html).*{% endif %}
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Introduction to the OpenAPI specification]({{site.rooturl}}pubapis_openapi_intro.html).*{% endif %}

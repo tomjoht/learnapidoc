@@ -1,5 +1,5 @@
 ---
-title: Creating the spec manually in a code editor
+title: Creating the spec manually in a code editor (Swagger Editor)
 permalink: /pubapis_openapi_code_editor.html
 categories:
 - api-doc
@@ -22,8 +22,6 @@ While you're coding in the Swagger Editor, if you make an error, you can quickly
 For your specification document's format, you have the choice of working in either JSON or YAML. The previous code sample is in [YAML](http://yaml.org/). YAML refers to "YAML Ain't Markup Language," meaning YAML doesn't have any markup tags (`< >`), as would be common with other markup languages such as XML.
 
 YAML depends on spacing and colons to establish the object syntax. This space-sensitive formatting makes the code more human-readable, but it's also sometimes trickier to get the spacing right.
-
-
 
 ## Rendering Your OpenAPI specification with Swagger UI
 

@@ -155,7 +155,7 @@ Many API doc sites provide *one integrated website* to present all of the inform
 
 I hinted at this earlier (in [Introduction to REST API documentation](docapis_intro_to_rest_api_doc.html)), but with API documentation, there usually isn't a GUI (graphical user interface) that the documentation complements. In most cases, the API documentation itself is the interface that users navigate to use your product. As such, users will expect more from it.
 
-One of the challenges in using documentation generated from [OpenAPI and Swagger](pubapis_swagger_intro.html) or some other document generation process is figuring out how to integrate it with the rest of the site. Ideally, you want users to have a seamless experience across the entire website. If your endpoints are rendered into their own separate view, how do you integrate the endpoint reference into the rest of the documentation?
+One of the challenges in using documentation generated from [OpenAPI and Swagger](pubapis_openapi_intro.html) or some other document generation process is figuring out how to integrate it with the rest of the site. Ideally, you want users to have a seamless experience across the entire website. If your endpoints are rendered into their own separate view, how do you integrate the endpoint reference into the rest of the documentation?
 
 If you can integrate the branding and search, users may not care. But if it feels like users are navigating several sites that are poorly cobbled together, the UX experience will be somewhat fragmented.
 
@@ -235,7 +235,7 @@ A recurring feature in many API doc publishing sites is interactivity with API c
 
 For APIs not on these platforms, wiring up an API Explorer is often done by engineers. Since you already have the API functionality to make calls and receive responses, creating an API Explorer is not usually a difficult task for a UI developer. You're just creating a form to populate the endpoint's parameters and printing the response to the page.
 
-Here's a sample API explorer from [Watson's AlchemyLanguage API](https://watson-api-explorer.mybluemix.net/apis/alchemy-language-v1#!/Authors/get_html_HTMLGetAuthors) that uses [Swagger or OpenAPI](pubapis_swagger_intro.html) to provide the interactivity.
+Here's a sample API explorer from [Watson's AlchemyLanguage API](https://watson-api-explorer.mybluemix.net/apis/alchemy-language-v1#!/Authors/get_html_HTMLGetAuthors) that uses [Swagger or OpenAPI](pubapis_openapi_intro.html) to provide the interactivity.
 
 <a href="https://watson-api-explorer.mybluemix.net/apis/alchemy-language-v1#!/Authors/get_html_HTMLGetAuthors" class="noExtIcon" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/watson-try-it-out.png"/></a>
 

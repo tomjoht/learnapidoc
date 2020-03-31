@@ -123,7 +123,7 @@ Assuming you have example responses in your API spec, you can set your API to "a
 
 Providing an auto-mock for your API solves the problem of potentially complicating user data by having users interact with their real API keys and data. In many cases, you don't want users junking up their data with tests and other experiments. At the same time, you also want to simulate the API response.
 
-Simulating the API can be especially useful for testing your API with beta users. One reason many people code their API with the spec before writing any lines of code (following a [spec-first philosophy such as that described by Michael Stowe](pubapis_swagger_intro.html#another-approach-spec-first-development)) is to avoid coding an API with endpoints and responses that users don't want.
+Simulating the API can be especially useful for testing your API with beta users. One reason many people code their API with the spec before writing any lines of code (following a [spec-first philosophy such as that described by Michael Stowe](pubapis_openapi_intro.html#specfirst)) is to avoid coding an API with endpoints and responses that users don't want.
 
 Using the mock server approach, SwaggerHub not only provides documentation but also acts as a beta-testing tool to get the design of your API right before sinking thousands of hours of time into actual coding. You can enable auto-mocking for different versions of your API, creating variants and testing each of the variants.
 

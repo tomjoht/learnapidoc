@@ -207,7 +207,7 @@ As you decompile the logic of the code to the simplest pattern, you will face an
 
 Teaching core patterns shifts the documentation more into the domain of a tutorial. Related to this type of learning are interactive browser experiences that combine action with learning. These browser-executable interfaces have as their goal the aim to help users better understand the results of inputs and outputs so that users can see for themselves how the code works through a more hands-on, try-it-for-yourself approach.
 
-The most common example of interactive documentation for APIs is with Swagger UI, which I have already covered at length in [Introduction to OpenAPI and Swagger](pubapis_swagger_intro.html) and showed in the [Swagger UI Demo](pubapis_swagger_demo.html):
+The most common example of interactive documentation for APIs is with Swagger UI, which I have already covered at length in [Creating the spec manually in a code editor (Swagger Editor)](pubapis_openapi_intro.html) and showed in the [Swagger UI Demo](pubapis_swagger_demo.html):
 
 {% include course_image.html url="pubapis_swagger_demo.html" size="medium" filename="swagger-try-it-out-example" ext_print="png" ext_web="png" alt="Try it out button in Swagger's interactive REST API interface" caption="Try it out button in Swagger's interactive REST API interface" %}
 

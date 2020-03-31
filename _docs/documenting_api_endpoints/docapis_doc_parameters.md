@@ -241,7 +241,7 @@ See the [Swagger Petstore](http://petstore.swagger.io/) to explore the demo here
 The Model includes expand/collapse toggles with the values. (The [Petstore demo](http://petstore.swagger.io/) doesn't include many parameter descriptions in the Model, but if you include descriptions, they would appear here in the Model rather than in the Example Value.)
 
 {: .tip}
-We'll get into Swagger in much more detail in [Introduction to the OpenAPI specification and Swagger](pubapis_swagger_intro.html). For now, focus on these core elements of API reference documentation. You will see these same sections appear in the OpenAPI specification.
+We'll get into Swagger in much more detail in [Introduction to the OpenAPI specification](pubapis_openapi_intro.html). For now, focus on these core elements of API reference documentation. You will see these same sections appear in the OpenAPI specification.
 
 You can see that there's a lot of variety in documenting JSON and XML in request body parameters. There's no right way to document the information. As always, choose the method that depicts your API's parameters in the clearest, easiest-to-read way.
 

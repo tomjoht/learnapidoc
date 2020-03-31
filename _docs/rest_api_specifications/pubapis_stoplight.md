@@ -8,7 +8,7 @@ section: restapispecifications
 path1: /restapispecifications.html
 ---
 
-Earlier in the course, you might have followed the tutorial for [Create an OpenAPI Specification through Stoplight Studio](pubapis_openapis_quickstart_stoplight.html), which uses Stoplight Studio. As a GUI editor for creating an OpenAPI, Stoplight Studio simplifies the authoring of a highly technical syntax that is often challenging to make valid. Now let's dive a bit deeper into the offerings and philosophy of Stoplight.
+Earlier in the course, you might have followed the tutorial for [Create a OpenAPI specification using a visual editor (Stoplight Studio)](pubapis_openapis_quickstart_stoplight.html), which uses Stoplight Studio. As a GUI editor for creating an OpenAPI, Stoplight Studio simplifies the authoring of a highly technical syntax that is often challenging to make valid. Now let's dive a bit deeper into the offerings and philosophy of Stoplight.
 
 Among other services, Stoplight provides visual modeling tools to create an OpenAPI document for your API &mdash; without requiring you to know the OpenAPI spec details or code the spec line by line. This API specification document can act as a single source of truth that empowers the whole API lifecycle, from UX prototyping to testing, development, documentation, sales, and more.
 
@@ -117,4 +117,4 @@ If you're documenting an API, [Stoplight](https://stoplight.io) and their [hoste
 
 ## Stoplight tutorial
 
-For an in-depth tutorial for using Stoplight to create an OpenAPI specification, including sample content and values, see [Create an OpenAPI Specification through Stoplight Studio](pubapis_openapis_quickstart_stoplight.html). 
+For an in-depth tutorial for using Stoplight to create an OpenAPI specification, including sample content and values, see [Create a OpenAPI specification using a visual editor (Stoplight Studio)](pubapis_openapis_quickstart_stoplight.html).
