@@ -27,6 +27,8 @@ This sample API doesn't include many endpoints, so it might be more instructive 
 * [BigCommerce API docs](https://developer.bigcommerce.com/api-docs)
 * [Namely API docs](https://developers.namely.com/1.0/getting-started/introduction)
 
+Note that Stoplight lets you mix both the API reference documentation along with the conceptual content, so it provides a more seamless experience across all of your documentation.
+
 {% include random_ad.html %}
 
 {% include random_ad2.html %}
