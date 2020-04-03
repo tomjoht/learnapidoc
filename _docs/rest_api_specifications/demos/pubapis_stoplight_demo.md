@@ -18,7 +18,14 @@ Here I'll include a short demo of how Stoplight renders the OpenAPIWeatherMap Op
 
 {% include course_image.html url="https://stoplight.io/p/docs/gh/tomjoht/stoplight_studio_weathermap/reference/openweathermap.v1.yaml/paths/~1weather/get?srn=gh/tomjoht/stoplight_studio_weathermap/reference/openweathermap.v1.yaml/paths/~1weather/get" size="large" border="true" filename="stoplight_output_full_display" ext_print="png" ext_web="png" alt="Full display of Stoplight output" caption="Full display of Stoplight output" %}
 
-This sample API doesn't include many endpoints, so it might be more instructive to see some other samples of Stoplight listed on their [Case Studies page](https://stoplight.io/case-studies/).
+This sample API doesn't include many endpoints, so it might be more instructive to see some other samples of Stoplight listed on their [Case Studies page](https://stoplight.io/case-studies/). For more direct links to the documentation, explore the following:
+
+* [Zoom API docs](https://marketplace.zoom.us/docs/api-reference/zoom-api)
+* [Nutanix API docs](https://www.nutanix.dev/api-reference/)
+* [MediaMath API docs](https://apidocs.mediamath.com/)
+* [AppointmentPlus API docs](https://appointmentplus.api-docs.io/v1/overview)
+* [BigCommerce API docs](https://developer.bigcommerce.com/api-docs)
+* [Namely API docs](https://developers.namely.com/1.0/getting-started/introduction)
 
 {% include random_ad.html %}
 
