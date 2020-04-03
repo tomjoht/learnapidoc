@@ -3,9 +3,10 @@ title: "Step 5: The components object (OpenAPI tutorial)"
 permalink: /pubapis_openapi_step5_components_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 4.34
+weight: 4.47
 section: openapitutorial
 path1: /restapispecifications.html
+path2: /openapi_tutorial.html
 ---
 
 {% include workflow_map.html step="5" map="content/openapi_tutorial_map.html"  %}

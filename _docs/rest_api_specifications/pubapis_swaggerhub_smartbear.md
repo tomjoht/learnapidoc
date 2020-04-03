@@ -3,7 +3,7 @@ title: "SwaggerHub introduction and tutorial"
 permalink: /pubapis_swaggerhub_smartbear.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 4.8
+weight: 4.7
 section: restapispecifications
 path1: /restapispecifications.html
 ---
@@ -148,8 +148,6 @@ Additionally, within an organization, you can further group APIs into different 
 {% include course_image.html size="large" border="true" filename="swaggerhub_organizations" ext_print="png" ext_web="png" alt="Organization of projects by team" caption="Organization of projects by team" %}
 
 This aspect of organizations and projects may not seem essential if you have just one or two APIs, but consider how you'll scale and grow as you have dozens of APIs and multiple teams. In these more robust scenarios, the organization and project features become essential.
-
-{% include random_ad2.html %}
 
 ## Expanding the tech writer's role with APIs
 

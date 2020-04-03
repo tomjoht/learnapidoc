@@ -3,9 +3,10 @@ title: "Step 1: The openapi object (OpenAPI tutorial)"
 permalink: /pubapis_openapi_step1_openapi_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 4.3
+weight: 4.43
 section: openapitutorial
 path1: /restapispecifications.html
+path2: /openapi_tutorial.html
 ---
 
 {% include workflow_map.html step="1" map="content/openapi_tutorial_map.html"  %}

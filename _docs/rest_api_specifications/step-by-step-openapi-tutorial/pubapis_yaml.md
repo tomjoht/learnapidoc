@@ -1,11 +1,12 @@
 ---
-title: Working in YAML
+title: Working in YAML (OpenAPI tutorial)
 permalink: /pubapis_yaml.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 4.20
-section: restapispecifications
+weight: 4.42
+section: openapitutorial
 path1: /restapispecifications.html
+path2: /openapi_tutorial.htmlml
 ---
 
 Before we dive into the steps of the [OpenAPI Tutorial](pubapis_openapi_tutorial_overview.html), it will help to have a better grounding in YAML, since this is the most common syntax for the OpenAPI specification document. (You can also use [JSON](docapis_analyze_json.html), but the prevailing trend with the OpenAPI document format is YAML.)
@@ -240,3 +241,7 @@ Here's what the above code looks like in JSON:
 ```
 
 Hopefully, those brief examples will help align us with the terminology used in the tutorial.
+
+## Let's get started
+
+With that information about YAML, hopefully the upcoming step-by-step sections that walk through each section in the OpenAPI spec, using YAML as the primary format, will make more sense. Let's get started with [Step 1: The openapi object (OpenAPI tutorial)](pubapis_openapi_step1_openapi_object.html).

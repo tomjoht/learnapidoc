@@ -1,21 +1,45 @@
 ---
-title: "OpenAPI 3.0 tutorial overview"
+title: "OpenAPI tutorial using Swagger Editor and Swagger UI: Overview"
 permalink: /pubapis_openapi_tutorial_overview.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 4.21
+weight: 4.41
 section: openapitutorial
 path1: /restapispecifications.html
+path2: /openapi_tutorial.html
+redirect_from:
+- pubapis_openapi_code_editor.html
 ---
 
-In this section, we'll dive deeply into the OpenAPI specification. We'll use the same [OpenWeatherMap API](https://openweathermap.org/current) that we've been using throughout other parts of this course as the content for our OpenAPI document. Using this API, we'll create a valid OpenAPI specification document and then render it into interactive documentation using two different tools: Stoplight Studio and Swagger UI. This comparison of tools will provide you with a good sense of how the spec can be rendered in different ways.
+In the previous section, I explained how to create the OpenAPI spec [using a visual editor with Stoplight Studio](pubapis_openapis_quickstart_stoplight). In this tutorial, I'll explain how to work in a text editor such as [Swagger Editor](http://editor.swagger.io/) to write the OpenAPI code by hand. For a higher-level introduction to the OpenAPI spec, see [Introduction to the OpenAPI specification](pubapis_openapi_intro.html).
+
+In this tutorial, we'll dive deeply into the OpenAPI specification. We'll use the same [OpenWeatherMap API](https://openweathermap.org/current) that we've been using throughout other parts of this course as the content for our OpenAPI document. Using this API, we'll create a valid OpenAPI specification document and then render it using Swagger UI.
+
+{: .tip }
+To see a presentation that covers the same concepts in this article, see [https://goo.gl/n4Hvtq](https://goo.gl/n4Hvtq).
 
 * TOC
 {:toc}
 
+## Swagger Editor
+
+When choosing an editor to write OpenAPI code by hand, the most common is the [Swagger Editor](http://editor.swagger.io/) because it dynamically validates your content as you write. It lets you determine whether the specification document you're creating is valid. The Swagger Editor looks like this, with the left pane showing the code and the right pane showing the output:
+
+{% include course_image.html url="http://editor.swagger.io/" size="large" filename="swagger_editor_pic" ext_print="png" ext_web="png" alt="The Swagger Editor validates your specification content dynamically and shows you the display on the right" caption="The Swagger Editor validates your specification content dynamically and shows you the display on the right" %}
+
+While you're coding in the Swagger Editor, if you make an error, you can quickly fix it before continuing rather than waiting until a later time to run a build and sort out errors.
+
+## JSON or YAML format
+
+For your specification document's format, you have the choice of working in either JSON or YAML. The code sample is in the previous screenshot shows [YAML](http://yaml.org/). YAML refers to "YAML Ain't Markup Language," meaning YAML doesn't have any markup tags (`< >`), as would be common with other markup languages such as XML.
+
+YAML depends on spacing and colons to establish the object syntax. This space-sensitive formatting makes the code more human-readable, but it's also sometimes trickier to get the spacing right.
+
+You can also write in JSON, if you prefer that. There are more curly braces to deal with, but it isn't a space-sensitive format. The OpenAPI specification documentation on GitHub shows code samples in both YAML and JSON in nearly every example. I'll go into more detail about YAML in the next step, [Working with YAML](pubapis_yaml.html).
+
 ## General resources for learning the OpenAPI specification
 
-Learning the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification) will take some time. As an estimate, if you're coding it manually, plan about two weeks of immersion, working with a specific API in the context of the specification before you become comfortable with it. If you're using a GUI tool such as with Stoplight, the learning curve will be shorter. But if you want to transition from the user interface to the code, you'll need to plan for some learning time.
+Learning the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification) will take some time. As an estimate, if you're coding it manually, plan about two weeks of immersion, working with a specific API in the context of the specification before you become comfortable with it. Remember that the OpenAPI specification is general enough to describe nearly every REST API, so some parts may be more applicable to your API than others.
 
 As you learn the OpenAPI specification, use the following resources:
 
@@ -28,18 +52,15 @@ There are other Swagger/OpenAPI tutorials online, but make sure you follow tutor
 
 ## How my OpenAPI/Swagger tutorial is different
 
-You can find many Swagger tutorials online. What makes mine different? Besides the end-to-end walkthrough using the OpenAPI 3.0 (rather than 2.0) version of the spec, and using an actual API for context, I also show how OpenAPI fields map to Stoplight and Swagger UI. Specifically, I demonstrate how and where each of the OpenAPI fields gets displayed in these display frameworks.
+You can find many Swagger tutorials online. What makes mine different? Besides the end-to-end walkthrough using the OpenAPI 3.0 (rather than 2.0) version of the spec, and using an actual API for context, I also show how OpenAPI fields map to Swagger UI. Specifically, I demonstrate how and where each of the OpenAPI fields gets displayed.
 
-Many other display frameworks besides [Stoplight](https://stoplight.io/studio/) and [Swagger UI](https://github.com/swagger-api/swagger-ui) can parse and display information in an OpenAPI specification document, and you can even create your own custom parsing tools, but these two tools tend to be common. Additionally, the two approaches provide a nice contrast: a GUI approach (Stoplight) versus a more code-based approach (Swagger) for contrast. In the future, I plan to add more information about additional display frameworks. First, let me introduce the two tools a bit more:
-
-* [Stoplight](https://stoplight.io/studio/) provides visual modeling tools (i.e., GUI apps that let you toggle between a UI and code) to create an OpenAPI document for your API &mdash; without requiring you to know the OpenAPI spec details or code the spec line by line. The syntax for the OpenAPI spec ("OAS") can be tedious and error prone. Especially when you're just learning the spec, coding it directly in a text editor might be too slow. That's why I include Stoplight here.
+Many other display frameworks besides [Swagger UI](https://github.com/swagger-api/swagger-ui) can parse and display information in an OpenAPI specification document, and you can even create your own custom parsing tools.
 
 [Swagger UI](https://github.com/swagger-api/swagger-ui) is sponsored by [Smartbear](https://smartbear.com/), the same company that is heavily invested in the [OpenAPI initiative](https://www.openapis.org/) and which develops [SwaggerHub](pubapis_swaggerhub_smartbear.html) (the premium version of Swagger UI) and drives other Swagger tooling (including Swagger Editor, Swagger UI, Swagger Codegen, and others). Note that SmartBear does not own the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification/), as the Linux Foundation drives this [initiative](https://www.openapis.org/). The OpenAPI spec's development is driven by [many companies and organizations](https://www.openapis.org/membership/members).
 
-{: .note}
-Both SmartBear and Stoplight are sponsors of this site.
+By showing you how the fields in the spec appear in the Swagger UI output, I hope the specification objects and properties will take on more relevance and meaning.
 
-By showing you how the fields in the spec appear in these two tools and display frameworks, I hope the specification objects and properties will take on more relevance and meaning.
+*Note that SmartBear is one of the sponsors of this site.*
 
 ## Terminology for Swagger and OpenAPI
 
@@ -49,14 +70,25 @@ People still often refer to both names interchangeably, but "OpenAPI" is how the
 
 {% include random_ad2.html %}
 
+## Customizing Swagger UI
+
+You might be concerned that Swagger UI outputs look similar. First, note that you can render the OpenAPI spec using many different tools outside of Swagger UI (e.g., using [Stoplight](pubapis_openapis_quickstart_stoplight.html) or [Redoc](pubapis_redoc.html)). However, Swagger UI tends to be popular because it's free and was one of the first in this space.
+
+With my OpenAPI projects, I usually customize the Swagger UI's colors a bit, add a custom logo and a few other custom styles. With one project, I integrated [Bootstrap](https://getbootstrap.com/) so that I could have [modals](https://getbootstrap.com/docs/4.1/components/modal/) where users could generate their authorization codes. You can even add [collapse-and-expand features](https://getbootstrap.com/docs/4.1/components/collapse/) in the `description` element to provide more information to users.
+
+{% include random_ad.html %}
+
+Beyond these simple modifications, however, it takes a bit of web-developer prowess to significantly alter the Swagger UI display. It's possible, but you need web development skills.
+
 ## Start by looking at the big picture
 
 If you would like to get a big picture of the specification document, take a look at the [3.0 examples here](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v3.0), specifically the [Petstore OpenAPI specification document](https://github.com/OAI/OpenAPI-Specification/blob/master/examples/v3.0/petstore.yaml). It probably won't mean much at first, but try to get a sense of the whole before we dive into the details. Look at some of the other samples in the v.3.0 folder as well.
 
 ## Follow the OpenAPI tutorial
 
-The OpenAPI tutorial has eight steps. Each step corresponds with one of the root-level objects in the OpenAPI document.
+The OpenAPI tutorial has a brief into to YAML followed by eight steps. Each step corresponds with one of the root-level objects in the OpenAPI document.
 
+* [Working in YAML](pubapis_yaml.html)
 * [Step 1: The openapi object](pubapis_openapi_step1_openapi_object.html)
 * [Step 2: The info object](pubapis_openapi_step2_info_object.html)
 * [Step 3: The servers object](pubapis_openapi_step3_servers_object.html)
@@ -85,6 +117,7 @@ Later, when I talk more about publishing, I'll explain how to configure Swagger 
 If you have an existing specification document that validates against version OpenAPI 2.0 and you want to convert it to OpenAPI 3.0 (or vice versa), you can use [APIMATIC's Transformer](https://apimatic.io/transformer) to convert it automatically. (You can also use APIMATIC to transform your specification document into many other outputs, such as [RAML](pubapis_raml.html), [API Blueprint](pubapis_api_blueprint.html), or [Postman](docapis_postman.html).)
 
 To see the difference between the 2.0 and the 3.0 code, you can copy these code samples to separate files and then use an application like [Diffmerge](https://sourcegear.com/diffmerge/) to highlight the differences. The Readme.io blog has a nice post that provides [A Visual Guide to What's New in Swagger 3.0](https://blog.readme.io/an-example-filled-guide-to-swagger-3-2/).
+
 
 ## Helpful resources
 

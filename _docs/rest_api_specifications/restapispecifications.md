@@ -1,5 +1,5 @@
 ---
-title: OpenAPI specification and Swagger
+title: OpenAPI spec and generated reference docs
 permalink: /restapispecifications.html
 sidebar: docapis
 path1: /restapispecifications.html

@@ -108,7 +108,7 @@ folders:
   - title: "Activity: Evaluate API reference docs for core elements"
     jurl: /docapis_api_reference_activity.html
 
-- title: "IV: OpenAPI spec and Swagger"
+- title: "IV: OpenAPI spec and generated reference docs"
   jurl: /restapispecifications.html
   description: "The OpenAPI specification provides a formal way of describing your REST API and includes all the reference sections mentioned in the previous section, Documenting API endpoints. Display frameworks such as Swagger UI can parse the OpenAPI specification and generate interactive documentation that lets users try out endpoints while learning about the API."
   folderitems:
@@ -122,12 +122,6 @@ folders:
   - title: "Create an OpenAPI Specification using a visual editor (Stoplight Studio)"
     jurl: /pubapis_openapis_quickstart_stoplight.html
 
-  - title: "Create an OpenAPI Specification using a code editor (Swagger Editor)"
-    jurl: /pubapis_openapi_code_editor.html
-
-  - title: Working in YAML
-    jurl: /pubapis_yaml.html
-
     subfolders:
     - title: Step-by-step OpenAPI tutorial
       jurl: /openapi_tutorial.html
@@ -135,8 +129,11 @@ folders:
 
       subfolderitems:
 
-      - title: "OpenAPI tutorial overview"
+      - title: "OpenAPI tutorial using Swagger Editor and Swagger UI: Overview"
         jurl: /pubapis_openapi_tutorial_overview.html
+
+      - title: "Working in YAML"
+        jurl: /pubapis_yaml.html
 
       - title: "Step 1: The openapi object"
         jurl: /pubapis_openapi_step1_openapi_object.html
@@ -168,9 +165,6 @@ folders:
   - title: Swagger UI tutorial
     jurl: /pubapis_swagger.html
 
-  - title: Swagger UI Demo
-    jurl: /pubapis_swagger_demo.html
-
   - title: Stoplight &mdash; visual modeling tools for creating your spec
     jurl: /pubapis_stoplight.html
 
@@ -180,8 +174,21 @@ folders:
   - title: Integrating Swagger UI with the rest of your docs
     jurl: /pubapis_combine_swagger_and_guide.html
 
-  - title: "Create a display using Redoc"
-    jurl: /pubapis_redoc.html
+    subfolders:
+    - title: Demos of OpenAPI outputs using different tools
+      jurl: /openapi_output_demos.html
+      behavior: openable
+
+      subfolderitems:
+
+        - title: "Stoplight demo"
+          jurl: /pubapis_stoplight_demo.html
+
+        - title: Swagger UI Demo
+          jurl: /pubapis_swagger_demo.html
+
+        - title: "Redoc demo"
+          jurl: /pubapis_redoc.html
 
 - title: "V: Testing API docs"
   jurl: /testingdocs.html

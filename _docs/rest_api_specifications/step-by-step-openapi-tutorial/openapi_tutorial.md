@@ -1,11 +1,12 @@
 ---
 title: "Step-by-step OpenAPI tutorial"
-permalink: /openapitutorial.html
+permalink: /openapi_tutorial.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 4.3
-section: openapi_tutorial
+weight: 4.40
+section: restapispecifications
 path1: /restapispecifications.html
+path2: /openapi_tutorial.html
 ---
 
 {% include minitoc.html %}

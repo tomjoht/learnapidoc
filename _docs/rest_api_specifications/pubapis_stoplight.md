@@ -3,9 +3,9 @@ title: Stoplight &mdash; visual modeling tools for creating your OpenAPI spec
 permalink: pubapis_stoplight.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 4.9
-section: restapispecifications
-path1: /restapispecifications.html
+weight: 4.6
+section: openapi_output_demos
+path1: /openapi_output_demos.html
 ---
 
 Earlier in the course, you might have followed the tutorial for [Create a OpenAPI specification using a visual editor (Stoplight Studio)](pubapis_openapis_quickstart_stoplight.html), which uses Stoplight Studio. As a GUI editor for creating an OpenAPI, Stoplight Studio simplifies the authoring of a highly technical syntax that is often challenging to make valid. Now let's dive a bit deeper into the offerings and philosophy of Stoplight.
@@ -68,8 +68,6 @@ After playing around with Stoplight, I had the opportunity to chat with [Marc Ma
 
 Marc and his team designed Stoplight with visual modeling tools that don't require teams to know the details of the OpenAPI spec. This simplification of tooling opens up the spec's development to a broader number of team players &mdash; to product managers, developers, UX designers, technical writers, and more. The barrier to entry in the design and prototyping of the API grows beyond the scope of just engineers.
 
-{% include random_ad2.html %}
-
 Building the specification document is probably the most important activity in API development because once you have this API description, you have a **single source of truth**. This single source of truth can then inform and empower a variety of other roles: developers, testers, user experience designers, technical writers, sales, and more. Marc's core philosophy is that the OpenAPI specification document is central to API development. After you have this specification document, you can build tools around it to empower these other teams. For example:
 
 *   UX designers can prototype the API using a mock server to let users execute requests and see sample responses &mdash; before developers even write one line of code.
@@ -78,8 +76,6 @@ Building the specification document is probably the most important activity in A
 *   Technical writers can add descriptions and other examples to the specification description, and then generate interactive documentation without worrying about developing templates, styles, or other formatting and organization.
 
 If the OpenAPI specification really powers all of these other activities, doesn't it make sense to build your platform around the specification? And from a larger view, to build your business around the specification? That's what Stoplight is doing. It's what makes them fundamentally different from other API platforms. I think it's what Kin Lane meant when he said Stoplight provides "new way to look at the API life cycle &mdash; a perspective that spans multiple dimensions, including design, definition, virtualization, documentation, testing, discovery, orchestration, and client."
-
-{% include random_ad.html %}
 
 ## Not a post-design artifact to generate documentation
 

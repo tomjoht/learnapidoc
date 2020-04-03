@@ -3,9 +3,10 @@ title: "Step 3: The servers object (OpenAPI tutorial)"
 permalink: /pubapis_openapi_step3_servers_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 4.32
+weight: 4.45
 section: openapitutorial
 path1: /restapispecifications.html
+path2: /openapi_tutorial.html
 ---
 
 {% include workflow_map.html step="3" map="content/openapi_tutorial_map.html"  %}

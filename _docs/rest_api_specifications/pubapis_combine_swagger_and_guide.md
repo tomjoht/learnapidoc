@@ -3,7 +3,7 @@ title: "Integrating Swagger UI with the rest of your docs"
 permalink: /pubapis_combine_swagger_and_guide.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 4.94
+weight: 4.8
 section: restapispecifications
 path1: /restapispecifications.html
 ---

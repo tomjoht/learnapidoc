@@ -1,5 +1,5 @@
 ---
-title: "Create a OpenAPI specification using a visual editor (Stoplight Studio)"
+title: "Create the OpenAPI doc using a visual editor (Stoplight Studio)"
 permalink: pubapis_openapis_quickstart_stoplight.html
 course: "Documenting REST APIs"
 sidebar: docapis
@@ -13,7 +13,7 @@ redirect_from:
 In [Introduction to the OpenAPI specification](pubapis_openapi_intro.html), I explained that you can create an OpenAPI specification document in several ways: (a) auto-generating it from annotations in your source code, (b) coding it by hand in an editor such as the Swagger Editor, and (c) using a GUI editor such as Stoplight Studio. In this tutorial, I'll walk through the third approach: using Stoplight Studio, a GUI editor for modeling your API. In this tutorial, you'll use Stoplight Studio to create a valid OpenAPI specification, using the OpenWeatherMap as the sample API.
 
 {: .note}
-A more detailed introduction to Stoplight Studio is provided in [Stoplight — visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html).
+A more detailed, conceptual introduction to Stoplight Studio is provided in [Stoplight — visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html).
 
 * TOC
 {:toc}
@@ -521,7 +521,7 @@ Now that you've finished creating your OpenAPI spec, let's preview, test, and pu
 2.  Click the **Publish** button, and then slide the **Preview** toggle on.
 3.  In the left sidebar, expand **Weather Endpoints** and click the **Weather** endpoint. Your API should look as follows:
 
-    {% include course_image.html url="https://stoplight.io/p/docs/gh/tomjoht/stoplight_studio_weathermap" size="large" border="true" filename="stoplight_output_full_display" ext_print="png" ext_web="png" alt="Full display of Stoplight output" caption="Full display of Stoplight output" %}
+    {% include course_image.html url="https://stoplight.io/p/docs/gh/tomjoht/stoplight_studio_weathermap/reference/openweathermap.v1.yaml/paths/~1weather/get?srn=gh/tomjoht/stoplight_studio_weathermap/reference/openweathermap.v1.yaml/paths/~1weather/get" size="large" border="true" filename="stoplight_output_full_display" ext_print="png" ext_web="png" alt="Full display of Stoplight output" caption="Full display of Stoplight output" %}
 
 4.  Click the **Try It** tab.
 4.  Select **zip** check box and enter a zip code. (At least one location parameter is required for the API to retrieve weather information.)
@@ -539,7 +539,8 @@ Now that you've finished creating your OpenAPI spec, let's preview, test, and pu
     {: .note}
     If you don't want to publish docs through Stoplight, you could use your OpenAPI definition with [Redoc](https://github.com/Redocly/redoc), [Swagger UI](pubapis_swagger.html), [Spectacle](https://github.com/sourcey/spectacle), [Docsy](https://github.com/google/docsy), and other tools. See [Openapi.tools](https://openapi.tools/#documentation) for a list of possibilities. You can find a [Redoc tutorial in this course here](pubapis_redoc.html).
 
-{% if page.permalink == "/workshop.html" %}*For more information related to this activity, see [Create an OpenAPI Specification through Stoplight Studio (Using Stoplight Studio)](pubapis_openapis_quickstart_stoplight.html).*{% endif %}
+
+For more details about working with Stoplight Studio, see their documentation here: [Stoplight Studio](https://stoplight.io/p/docs/gh/stoplightio/studio/README.md?srn=gh/stoplightio/studio/README.md).
 
 <style>
 dl {font-size: 18px !important;}
