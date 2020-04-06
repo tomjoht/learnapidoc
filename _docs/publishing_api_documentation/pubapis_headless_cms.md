@@ -72,7 +72,7 @@ Even so, the output is sharp, and the talent behind this site is top-notch. The 
 Here are a few sample API doc sites built with Readme.io:
 
 * [Validic](https://docs.validic.com/docs/getting-started)
-* [Box API](https://developer.box.com/docs)
+* [Box API](https://developer.box.com/)
 * [Coinbase API](https://developers.coinbase.com/api/v2#introduction)
 * [Farmbase Software](https://farmbot-software.readme.io/docs)
 

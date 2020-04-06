@@ -40,7 +40,7 @@ Browse a few of these documentation sites to get a sense of the variety, but als
   <li><a rel="nofollow" href="https://www.docusign.com/developer-center/documentation">Docusign API docs</a></li>
   <li><a rel="nofollow" href="http://www.geonames.org/export/web-services.html">Geonames docs</a></li>
   <li><a rel="nofollow" href="https://developers.google.com/adsense/management/">Adsense API docs</a></li>
-  <li><a rel="nofollow" href="https://developer.box.com/docs">Box API docs</a></li>
+  <li><a rel="nofollow" href="https://developer.box.com/">Box API docs</a></li>
   <li><a rel="nofollow" href="http://docs.aws.amazon.com/AWSEC2/latest/APIReference/Welcome.html">Amazon API docs</a></li>
   <li><a rel="nofollow" href="https://developer.linkedin.com/docs/rest-api">Linkedin REST API docs</a></li>
   <li><a rel="nofollow" href="https://instagram.com/developer/">Instagram API docs</a></li>
