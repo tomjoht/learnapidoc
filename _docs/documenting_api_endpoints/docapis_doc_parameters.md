@@ -22,9 +22,9 @@ path1: /docendpoints.html
 
 The following screenshot shows a sample parameters section with the Box API:
 
-{% include course_image.html url="https://developer.box.com/reference#edit-a-collaboration"   filename="boxparameterexample" ext_print="png" ext_web="png" alt="Sample parameters from Box API" caption="Sample parameters from Box API" %}
+{% include course_image.html url="https://developer.box.com/reference/put-comments-id/#request"   filename="boxparameterexample" ext_print="png" ext_web="png" alt="Sample parameters from Box API" caption="Sample parameters from Box API" %}
 
-In this example, the parameters are grouped by type: path parameters, query parameters, and body parameters. The endpoint also sets off the path parameter (`collab_id`) in a recognizable way in the endpoint definition.
+In this example, the parameters are grouped by type: path parameters, query parameters, and body parameters. The endpoint also sets off the path parameter (`comment_id`) in a recognizable way in the endpoint definition.
 
 Many times parameters are simply listed in a table or definition list like this:
 

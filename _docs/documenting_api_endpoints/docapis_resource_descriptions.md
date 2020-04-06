@@ -42,9 +42,9 @@ Typically, an API will have a number of endpoints grouped under the same resourc
 * POST `/campaigns/{campaign_id}/actions/test`
 * POST `/campaigns/{campaign_id}/actions/unschedule`
 
-Here's a resource description for the Membership resource in the [Box API](https://developer.box.com/en/reference/resources/group-membership/):
+Here's a resource description for the Membership resource in the [Box API](https://developer.box.com/reference/resources/group-membership/:
 
-<a  class="noCrossRef" href="https://developer.box.com/en/reference/resources/group-membership/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/boxresources.png" alt="Example from Box" /></a>
+<a  class="noCrossRef" href="https://developer.box.com/reference/resources/group-membership/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/boxresources.png" alt="Example from Box" /></a>
 
 For the Membership resource (or "object," as they call it), there are 7 different endpoints or methods you can call. The Box API describes the Membership resource and each of the endpoints that lets you access the resource.
 
