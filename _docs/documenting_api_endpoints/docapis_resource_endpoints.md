@@ -70,7 +70,7 @@ See [Request methods](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#
 
 Since there's not much to say about the method itself, it makes sense to group the method with the endpoint. Here's an example from the Box API:
 
-<a href="https://developer.box.com/reference/post-comments/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/methodwithendpoint.png" alt="Box API" /></a>
+<a href="https://developer.box.com/reference/post-comments/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/methodwithendpointv2.png" style="border: 1px solid #dedede" alt="Box API" /></a>
 
 And here's an example from the Linkedin API:
 
