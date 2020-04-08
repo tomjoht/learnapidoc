@@ -1,5 +1,5 @@
 ---
-title: "Create the OpenAPI doc using a visual editor (Stoplight Studio)"
+title: "Create an OpenAPI specification document using a visual editor (Stoplight Studio)"
 permalink: pubapis_openapis_quickstart_stoplight.html
 course: "Documenting REST APIs"
 sidebar: docapis

@@ -119,7 +119,7 @@ folders:
   - title: Introduction to the OpenAPI specification
     jurl: /pubapis_openapi_intro.html
 
-  - title: "Create an OpenAPI Specification using a visual editor (Stoplight Studio)"
+  - title: "Create an OpenAPI specification document using a visual editor (Stoplight Studio)"
     jurl: /pubapis_openapis_quickstart_stoplight.html
 
     subfolders:
