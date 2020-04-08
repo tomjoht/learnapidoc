@@ -119,8 +119,11 @@ folders:
   - title: Introduction to the OpenAPI specification
     jurl: /pubapis_openapi_intro.html
 
-  - title: "Create an OpenAPI specification document using a visual editor (Stoplight Studio)"
+  - title: "Create an OpenAPI specification document using Stoplight Studio's visual editor"
     jurl: /pubapis_openapis_quickstart_stoplight.html
+
+  # - title: "Create an OpenAPI specification document using Readme.com"
+  #   jurl: /pubapis_readme_tutorial.html
 
     subfolders:
     - title: Step-by-step OpenAPI tutorial
@@ -189,6 +192,9 @@ folders:
 
         - title: "Redoc demo"
           jurl: /pubapis_redoc.html
+
+        # - title: "Readme.com demo"
+        #   jurl: /pubapis_readme_demo.html
 
 - title: "V: Testing API docs"
   jurl: /testingdocs.html

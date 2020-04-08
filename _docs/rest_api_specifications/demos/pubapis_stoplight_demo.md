@@ -11,7 +11,7 @@ path1: /restapispecifications.html
 
 I've provided information about Stoplight in two other places in this course:
 
-* [Create the OpenAPI doc using a visual editor (Stoplight Studio)](pubapis_openapis_quickstart_stoplight.html)
+* [Create an OpenAPI specification document using Stoplight Studio's visual editor](pubapis_openapis_quickstart_stoplight.html)
 * [Stoplight — visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html)
 
 Here I include a short demo of how Stoplight renders the OpenAPIWeatherMap OpenAPI specification document that we've been using in this course. (Click the following image to see the details.)

@@ -61,4 +61,4 @@ Other sections:
 - how do you export the OpenAPI spec
 
 ## Demo the output
-- here can you just link to the Demos topic
+- here can you just link to the Demos topic: pubapis_readme_demo.html

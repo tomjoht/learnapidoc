@@ -19,7 +19,7 @@ redirect_from:
 With OpenAPI, instead of XML elements, you have a set of JSON objects, with a specific schema that defines their naming, order, and contents. This JSON file (often expressed in YAML instead of JSON) describes each part of your API. By describing your API in a standard format, publishing tools can programmatically parse the information about your API and display each component in a stylized, interactive display.
 
 {: .tip}
-If you want to jump straight into a step-by-step tutorial for creating the OpenAPI specification document, see the [Create a OpenAPI specification using a visual editor (Stoplight Studio)](pubapis_openapis_quickstart_stoplight.html), or to code it manually, see the [OpenAPI tutorial using Swagger Editor and Swagger UI -- overview](pubapis_openapi_tutorial_overview.html).
+If you want to jump straight into a step-by-step tutorial for creating the OpenAPI specification document, see [Create an OpenAPI specification document using Stoplight Studio's visual editor](pubapis_openapis_quickstart_stoplight.html), or to code it manually, see the [OpenAPI tutorial using Swagger Editor and Swagger UI -- overview](pubapis_openapi_tutorial_overview.html).
 
 * TOC
 {:toc}
