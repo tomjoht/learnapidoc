@@ -115,19 +115,21 @@
 
                     <!-- drop-down nav items appear here -->
 
-                    {% for entry in topnav.navbar_dropdowns %}
+                    {% for entry in topnav.topnav_dropdowns %}
                     {% for folder in entry.folders %}
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ folder.title }}<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             {% for folderitem in folder.folderitems %}
-                            {% if folderitem.url contains "http://" or folderitem.url contains "https://" %}
-                            <li><a href="{{folderitem.url}}" class="noCrossRef">{{folderitem.title}}</a></li>
-                            {% elsif page.url contains folderitem.url %}
-                            <li class="dropdownActive"><a href="{{folderitem.url |  remove: "/"}}">{{folderitem.title}}</a></li>
+
+                            {% if page.url contains folderitem.url %}
+                            <li class="active"><a href="{{folderitem.url | remove: "/"}}">{{folderitem.title}}</a></li>
+                            {% elsif folderitem.github_icon == "show" %}
+                            <li><a data="github" href="{{folderitem.url}}"> {{folderitem.title}}</a></li>
                             {% else %}
-                            <li><a href="{{folderitem.url | remove: "/"}}">{{folderitem.title}}</a></li>
+                            <li><a href="{{folderitem.url}}" class="noCrossRef"> {{folderitem.title}}</a></li>
                             {% endif %}
+
                             {% endfor %}
                         </ul>
                     </li>
