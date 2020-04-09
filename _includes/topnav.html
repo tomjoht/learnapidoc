@@ -98,7 +98,9 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left">
+                  {% comment %}
                   {% include navtoggle.html %}
+                  {% endcomment %}
                   <!-- single item nav items appear here -->
                     {% assign topnav = site.data[page.topnav] %}
                     {% for entry in topnav.navbar_singleitems %}

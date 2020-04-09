@@ -2,19 +2,15 @@
  ## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
 
 navbar_singleitems:
-# topnav:
-# - items:
-#   - title: Blog
-#     url: https://idratherbewriting.com
-#   - title: Contact
-#     url: contact.html
-#   # - title: Presentations
-#   #   url: https://idratherbewriting.com/presentations/
-#   - title: Workshop
-#     url: workshop.html
-#     github_icon: show
-  # - title: Changelog
-  #   url: https://github.com/tomjoht/learnapidoc/issues?q=is%3Aissue+is%3Aclosed
+- items:
+  - title: Blog
+    url: https://idratherbewriting.com
+  - title: Contact
+    url: contact.html
+  - title: About
+    url: docapis_about_the_author.html
+  # - title: Workshop
+  #   url: workshop.html
   #   github_icon: show
 
   # - title: PDFs
@@ -34,13 +30,3 @@ topnav_dropdowns:
         - title: Closed issues
           url: https://github.com/tomjoht/learnapidoc/issues?q=is%3Aissue+is%3Aclosed
           github_icon: show
-    - title: About and contact
-      folderitems:
-        - title: I'd Rather Be Writing Blog
-          url: https://idratherbewriting.com
-        - title: Contact me
-          url: contact.html
-        - title: About me
-          url: docapis_about_the_author.html
-        - title: Workshop outline
-          url: workshop.html
