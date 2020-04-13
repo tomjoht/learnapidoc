@@ -32,7 +32,7 @@ Before diving into the first step of the OpenAPI tutorial here, read the [OpenAP
 
 ## The root-level objects in OpenAPI spec
 
-The OpenAPI 3.0 spec has eight objects at the root (or base) level. These eight objects have many nested objects inside them, but at the root level, there are just these parent objects:
+The OpenAPI 3.0 spec has eight objects at the root level. These eight objects have many nested objects inside them, but at the root level, there are just these parent objects:
 
 * [`openapi`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#oasObject  )
 * [`info`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#infoObject)
