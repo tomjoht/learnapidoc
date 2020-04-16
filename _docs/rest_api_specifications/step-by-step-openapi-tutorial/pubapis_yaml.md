@@ -126,6 +126,8 @@ hobbies:
   - horseplaying
 ```
 
+{% include random_ad3.html %}
+ß
 Here's an array containing objects in JSON:
 
 ```json

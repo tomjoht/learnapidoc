@@ -10,6 +10,8 @@ path1: /restapispecifications.html
 
 When I [introduced REST APIs](docapis_what_is_a_rest_api.html), I mentioned that REST APIs follow an architectural style, not a specific standard. Several REST specifications were initially developed to provide standards in the way that REST APIs are described. The initial three specs were  [OpenAPI (formally called Swagger)](https://github.com/OAI/OpenAPI-Specification), [RAML](https://raml.org/), and [API Blueprint](https://apiblueprint.org/).
 
+{% include random_ad.html %}
+
 In the early years of specifications, there was healthy competition between the formats. But now the OpenAPI specification is the most popular, with the largest community, momentum, and tooling. Because of this, I spend the most time on OpenAPI in this course. In fact, this entire section focuses on the OpenAPI specification. (I moved [RAML](pubapis_raml.html) and [API Blueprint](pubapis_api_blueprint.html) into the Additional resources section at the end.)
 
 {: .note}
@@ -21,4 +23,4 @@ Overall, specifications for REST APIs lead to better reference documentation for
 
 Writing to a specification introduces a new dimension to documentation that makes API documentation substantially unique. By mastering the OpenAPI specification format, you can distinguish yourself in significant ways from other technical writers.
 
-{% include random_ad.html %}
+{% include random_ad3.html %}

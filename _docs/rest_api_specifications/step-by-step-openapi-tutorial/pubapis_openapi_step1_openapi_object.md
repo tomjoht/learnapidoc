@@ -28,7 +28,7 @@ Before diving into the first step of the OpenAPI tutorial here, read the [OpenAP
 * This OpenAPI tutorial is a subset of the information in both the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification) and the [OpenAPI specification commentary](https://swagger.io/docs/specification/about/). In other words, it's not comprehensive of all the possible information in the spec.
 * This OpenAPI tutorial covers the *3.0 version* of the OpenAPI spec, which is the latest version. (Surprisingly, many tools still support only the 2.0 version.)
 
-{% include random_ad2.html %}
+{% include random_ad3.html %}
 
 ## The root-level objects in OpenAPI spec
 
@@ -82,6 +82,8 @@ Add the first root-level property for the specification document: `openapi`. In 
 ```yaml
 openapi: "3.0.2"
 ```
+
+{% include random_ad2.html %}
 
 Until you add more information in here, you'll see error messages and notes such as "No operations defined in spec!" To avoid these errors, add some placeholder info here like this:
 

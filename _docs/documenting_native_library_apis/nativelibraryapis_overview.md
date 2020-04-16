@@ -17,6 +17,8 @@ In most of this course, we focused on [REST APIs](docapis_what_is_a_rest_api.htm
 
 ## Characteristics of native library APIs
 
+{% include random_ad3.html %}
+
 Native library APIs (also called class-based APIs or just APIs) are notably different in the following ways:
 
 * **Installed locally**. Native library APIs are installed locally, compiled into the programmer's code as an additional library. The programmer can then use the classes, methods, or other functions available in the library. (The API part refers to the *public* classes the developers use to access the functions in the library. There are probably lots of helper and utility classes in the Java library that aren't public, but users will only interact with the public classes.)

@@ -57,6 +57,8 @@ Additionally, we're not documenting basics &mdash; we're documenting how to impl
 
 Another challenge is making sure the code samples work from release to release. I pasted in the full Lambda code to provide context, but within a couple of weeks, I tweaked the code sample a bit. I then had to update the Lambda code as well as my section-by-section explanations. If you have dozens of code samples spread throughout your docs, maintaining this code from release to release will be arduous. How do you ensure it works? Do you separate the code from narrative context so that it can be more regularly tested?
 
+{% include random_ad3.html %}
+
 Separating the code to enable testing sounds like a good idea, but as soon as you separate code from the conceptual explanation, you risk the possibility that someone will update the code in such a way that it no longer matches the explanation.
 
 ## Challenge 5: Engineers have a much more trained eye for good versus bad code

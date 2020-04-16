@@ -68,6 +68,8 @@ It's common to list the method (GET, POST, and so on) next to the endpoint. The 
 
 See [Request methods](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods) in Wikipedia's article on HTTP for more details. (There are some additional methods, but they're rarely used.)
 
+{% include random_ad3.html %}
+
 Since there's not much to say about the method itself, it makes sense to group the method with the endpoint. Here's an example from the Box API:
 
 <a href="https://developer.box.com/reference/post-comments/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/methodwithendpointv2.png" style="border: 1px solid #dedede" alt="Box API" /></a>

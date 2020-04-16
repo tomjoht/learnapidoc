@@ -15,6 +15,8 @@ To understand the documentation for Java APIs, it helps to see the context of wh
 {:toc}
 {% endif %}
 
+{% include random_ad3.html %}
+
 ## Sample Java Project
 
 The sample Java project (available at [github.com/tomjoht/sample-java-project](https://github.com/tomjoht/sample-java-project)) is a little Java application about different tools that a coyote will use to capture a roadrunner. There are two classes (`ACMESmartphone` and `Dynamite`) and another class file called `App` that references the classes.

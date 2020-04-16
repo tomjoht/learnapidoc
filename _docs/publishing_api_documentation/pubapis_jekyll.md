@@ -120,6 +120,8 @@ The only drawback with CloudCannon is that your company must allow you to host d
 
 If cost is an issue and you don't have any privacy restrictions around your docs, consider using [GitHub Pages](https://pages.github.com/) instead. GitHub Pages also gives you continuous integration delivery for GitHub projects, and it's free.
 
+{% include random_ad3.html %}
+
 ## Make an update to your Github repo
 
 When you connect a GitHub repo with CloudCannon, the two sites sync the files. Let's see that workflow in action.

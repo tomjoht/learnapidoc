@@ -93,6 +93,8 @@ Before we dive into ways to manually create the OpenAPI specification document, 
 
 If you want to go the code-generation route, Swagger offers a variety of libraries that you can add to your programming code to generate the specification document. These Swagger libraries then parse the annotations that developers add and generate the OpenAPI specification document. These libraries are considered part of the ["Swagger Codegen"](https://swagger.io/swagger-codegen/) project. The annotation methods vary based on the programming language. For example, here's a [tutorial on annotating code with Swagger for Scalatra](http://www.infoq.com/articles/swagger-scalatra).
 
+{% include random_ad3.html %}
+
 See [There's No Reason to Write OpenAPI By Hand](https://apisyouwonthate.com/blog/theres-no-reason-to-write-openapi-by-hand) by Phil Sturgeon for some more discussion. For example, Phil provides this sample of code annotations in Java:
 
 ```java

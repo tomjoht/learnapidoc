@@ -174,6 +174,8 @@ This is an edit I made locally.
 
 Now you need to re-add the file to Git again. In the GitHub Desktop client, commit your changes to the updated files. Then click **Push origin.** The updates on your local get pushed to the remote without any more conflicts.
 
+{% include random_ad3.html %}
+
 ## Conclusion
 
 The more you use GitHub, the more familiar you'll become with the workflows you need. Git is a robust, powerful collaboration platform, and there are many commands and workflows and features that you could adopt for a variety of scenarios. Despite Git's variety of commands and workflows, most likely the scenarios you'll actually use are somewhat limited in scope and learnable without too much effort. Pretty soon, these workflows will become automatic.

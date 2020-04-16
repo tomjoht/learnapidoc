@@ -38,7 +38,7 @@ Additionally, the interactive console can provide a way to prototype and beta te
 
 To understand the proper syntax and format for RAML, you need to read the [RAML spec](http://raml.org/spec.html) and look at some examples. See [this RAML tutorial](http://raml.org/docs.html) to get started.
 
-{% include random_ad2.html %}
+{% include random_ad3.html %}
 
 Here's the OpenWeatherMap API (which we've been [using in this course](docapis_scenario_for_using_weather_api.html)) formatted in the RAML spec. (I actually just used [API Transformer](https://apimatic.io/transformer) to convert my OpenAPI 3.0 spec to RAML.) As you can see, RAML is highly similar to the OpenAPI spec.
 
@@ -456,6 +456,8 @@ Here's the [OpenWeather API in API Console](https://idratherbewriting.com/assets
 {% include course_image.html url="https://idratherbewriting.com/assets/files/raml/build/index.html" size="large" filename="ramlexample" ext_print="png" ext_web="png" alt="Sample RAML output in API Console." caption="Sample RAML output in API Console." %}
 
 You can also [embed the API console as an HTML element](https://github.com/mulesoft/api-console#embed-as-an-html-element).
+
+{% include random_ad2.html %}
 
 ## RAML2HTML project {#raml2html}
 

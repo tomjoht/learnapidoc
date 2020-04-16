@@ -33,3 +33,5 @@ One of the main problems with reference documentation is that it is feature-base
 {% include random_ad2.html %}
 
 When you write API documentation, consider the tasks that users will want to do, and then organize your information that way. Reference the endpoints as you explain how to accomplish the tasks. Users will refer to the reference docs as they look for the right parameters, data types, and other class details. But the reference docs won't guide them through tasks alone.
+
+{% include random_ad3.html %}

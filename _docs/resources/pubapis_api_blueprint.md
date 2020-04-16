@@ -483,4 +483,6 @@ To call the resource successfully, you'll need to customize the `lat` and `lon` 
 
 {% include course_image.html size="medium" filename="callresourceapiary" ext_print="png" ext_web="png" alt="Customizing the lat, long, and appid parameters in order to make a successful call" caption="Customizing the <code>lat</code>, <code>long</code>, and <code>appid</code> parameters in order to make a successful call" %}
 
+{% include random_ad3.html %}
+
 [Apiary](https://apiary.io/) offers an impressive platform for both designing and publishing API reference docs. You don't have to use API Blueprint as your spec's format. You can also design your specification using OpenAPI (called "Swagger" in the Apiary UI).

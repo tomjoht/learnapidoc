@@ -148,6 +148,8 @@ For a directory of API documentation sites on the open web, see the [Programmabl
 
 <a rel="nofollow" href="http://www.programmableweb.com/apis/directory" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/programmableweb.png" alt="Programmable web directory" /></a>
 
+{% include random_ad3.html %}
+
 Note that Programmableweb lists only open web APIs, meaning APIs that you can access on the web (which also means it's usually a REST API). They don't list the countless internal, firewalled APIs that many companies provide at a cost to paying customers. There are many more thousands of private APIs out there that most of us will never know about.
 
 {% include content/activities/api_doc_patterns.md %}

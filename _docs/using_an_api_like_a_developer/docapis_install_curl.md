@@ -76,6 +76,8 @@ You should get minified JSON response back like this:
 {: .note}
 In Windows, Ctrl+ V doesn't work; instead, you right-click and then select **Paste**.
 
+{% include random_ad3.html %}
+
 ### Notes about using curl with Windows
 
 If you're using Windows, note the following formatting requirements when using curl:

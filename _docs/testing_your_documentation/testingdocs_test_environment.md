@@ -70,6 +70,8 @@ The sample app is among the most helpful pieces of documentation. As you set up 
 
 If you're documenting a hardware product, you'll want to secure a device that has the right build installed on it. Big companies often have prototype devices available. At some companies, there may be kiosks where you can "flash" (quickly install) a specific build number on the device. Or you may send your device's serial number to someone who manages a pool of devices that receive beta-version updates from the cloud.
 
+{% include random_ad3.html %}
+
 With some hardware products, it may be difficult to get a test instance of the product to play with. I once worked at a government facility documenting a million-dollar storage array. The only time I was allowed to see the storage array was by signing into a special data server room environment, accompanied by an engineer, who wouldn't dream of letting me actually touch the array, much less swap out a storage disk, run commands in the terminal, replace a RAID, or do some other task (for which I was writing instructions).
 
 I learned early on to steer my career towards jobs where I could actually get my hands on the product, usually software code, and play around with it. In my current role, I have a drawer full of Fire TV devices and prototypes. Through Android Studio, I often run an app on one of these physical devices to test how it works.

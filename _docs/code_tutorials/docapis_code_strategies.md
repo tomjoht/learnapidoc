@@ -116,6 +116,8 @@ To document the process of producing this painting, would you start at the top a
 
 However, if you're not a painter, how would you know how to describe the process of creating a painting? You would need to know the painter's logic &mdash; where to start, and how to proceed toward the end. If you instead just started at the end and tried to work your way backward, the tutorial would likely be insanely complex.
 
+{% include random_ad3.html %}
+
 To illustrate this point more clearly, let me provide a code example. Although I'm not an engineer, I'm handy with Jekyll and theming, and the other day I set about creating a template that would take a content export from a ticketing tool (like JIRA) and render it as a documentation report on a web page.
 
 My finished template looks like this:

@@ -56,4 +56,6 @@ Part III:
 <p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/idratherbewritingmedia.com/podcasts/denverapiworkshop_part3.mp3" type="audio/mpeg" /></audio></p>
 </div>
 
+{% include random_ad3.html %}
+
 {% endif %}

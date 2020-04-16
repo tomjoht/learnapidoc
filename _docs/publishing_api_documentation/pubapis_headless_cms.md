@@ -8,7 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 ---
 
-This page is under construction. I realized the information wasn't accurate, so I'm reworking it. For a good explanation of headless CMSes, see [Headless CMS vs Decoupled CMS: The Ultimate Guide](https://www.coredna.com/blogs/headless-vs-decoupled-cms).
+This page is under construction. In the meantime, for a good explanation of headless CMSes, see [Headless CMS vs Decoupled CMS: The Ultimate Guide](https://www.coredna.com/blogs/headless-vs-decoupled-cms).
 
 
 {% comment %}

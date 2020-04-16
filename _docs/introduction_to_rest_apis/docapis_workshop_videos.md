@@ -27,6 +27,8 @@ If you want a condensed version of videos 1-5, see this one-hour version that co
 
 <iframe width="640" height="385" src="https://www.youtube.com/embed/5pzhtrrtkXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+{% include random_ad.html %}
+
 ## Most recent video (LA workshop)
 
 I recorded part of a more recent API workshop held in Los Angeles here:
@@ -45,7 +47,7 @@ See the [event details](https://idratherbewriting.com/blog/upcoming-webinar-tren
 
 <iframe width="640" height="385" src="https://www.youtube.com/embed/L4YFlSB8STI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-{% include random_ad.html %}
+{% include random_ad3.html %}
 
 ### Video 3 (Raleigh workshop)
 

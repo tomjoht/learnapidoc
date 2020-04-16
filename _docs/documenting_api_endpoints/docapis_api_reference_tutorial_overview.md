@@ -32,6 +32,8 @@ Almost all API reference topics include these five sections:
 [5. Response example and schema](docapis_doc_sample_responses_and_schema.html)
 : {{site.data.glossary.response_example_and_schema.def | split: "." | first | append: "." }}
 
+{% include random_ad3.html %}
+
 ## Tutorial workflow map
 
 The tutorial here includes a workflow map to help guide and orient you each step of the way.

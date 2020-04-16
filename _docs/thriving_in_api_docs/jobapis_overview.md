@@ -39,7 +39,7 @@ For an example, take a look at Algolia's API. You can view the documentation for
 
 <a href="https://www.algolia.com/doc" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/algolia_clientsdks.png" alt="Algolia client implementations" /></a>
 
-{% include random_ad.html %}
+{% include random_ad3.html %}
 
 Although users could construct their own code when using the REST endpoints, most developers would rather leverage existing code and copy and paste what they need.
 
@@ -68,6 +68,8 @@ A lack of more technical knowledge will likely remove some of the value from you
 > Perhaps unsurprisingly, the biggest problems with API documentation were also the ones requiring the most technical expertise to solve. Completing, clarifying, and correcting documentation require deep, authoritative knowledge of the API’s implementation. This makes accomplishing these tasks difficult for non-developers or recent contributors to a project.
 
 Without in-depth, authoritative knowledge of the API, it will be challenging to complete, clarify, and correct errors in the content.
+
+{% include random_ad.html %}
 
 The balance between generalist and specialist roles is an ongoing challenge that I'll explore more in the next topic: [How much code do you need to know?](jobapis_learning_code.html) In short, if you want to solve the biggest problem with API documentation, you'll need to develop more technical expertise in the subject domain.
 

@@ -42,3 +42,5 @@ I never insert API keys in code samples for a few reasons:
 * Customizing the code sample is a good thing
 
 When you see `APIKEY` in a code sample, remember to swap in an API key there. For example, if the API key were `123`, you would delete `APIKEY` and use `123`.
+
+{% include random_ad3.html %}

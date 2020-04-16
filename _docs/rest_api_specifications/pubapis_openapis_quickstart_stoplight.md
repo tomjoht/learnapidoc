@@ -276,6 +276,8 @@ Then you can click the link icon in the Stoplight editor and select this referen
 
 {% include course_image.html size="medium" filename="components_ref_selection_stoplight" ext_print="png" ext_web="png" alt="Selecting references from components" caption="Selecting references from components" %}
 
+{% include random_ad3.html %}
+
 If you have a lot of parameter re-use but still want to use Stoplight to create your OpenAPI file, you could first create the parameters using Stoplight's GUI and then  copy the same code (with minor adjustments and indentations) into the `components` section under a `parameters` sublevel. For more details, see the ["Re-using parameters across multiple paths"](../pubapis_openapi_step5_components_object.html#re-using-parameters-across-multiple-paths) section in the [Step 5: The components object](../pubapis_openapi_step5_components_object.html) tutorial.
 
 ## Save and preview your parameter work

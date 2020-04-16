@@ -19,6 +19,8 @@ Before we dive into the technical aspects of APIs, let's explore the market, gen
 
 The API landscape is diverse, with many different types of APIs. Although this course focuses on REST APIs, there are many other types of APIs as well. Often when people start browsing GitHub looking for API projects to join, or when they peruse the various APIs in their own company, they are surprised that the APIs look unfamiliar from the APIs covered in this course. There are many types of APIs you will likely encounter.
 
+{% include random_ad.html %}
+
 One way to sort the different types of APIs is to categorize them into two general buckets: web service APIs versus native library APIs. Web service APIs send and receive messages across the web using HTTP to transport the request and response; web service APIs are language agnostic. Native library APIs, on the other hand, involve incorporating code directly into your project for the desired functionality; native library APIs are language-specific.
 
 The following list describes the most common types of APIs you will encounter:
@@ -32,9 +34,9 @@ The following list describes the most common types of APIs you will encounter:
 * **Voice Assistant APIs**: Voice Assistant APIs are used with voice assistants such as Alexa. These APIs originate from the cloud and call an endpoint based on natural language processing of voice commands spoken by users. This is a case where APIs operate behind the scenes in the cloud, and developers create code, such as in a Lambda function (cloud computing), that handles incoming requests sent from the voice assistant API.
 * **Internet of Things (IoT) APIs**: IoT APIs are used by physical devices (such as sensors or wearables) that transmit or receive data to connect the device to an online network. For example, a thermostat sensor in a room might transmit the temperature to a central controller (such as with Nest) via an IoT API. For more detail, see [App nirvana: When the Internet of Things meets the API economy](https://techbeacon.com/app-dev-testing/app-nirvana-when-internet-things-meets-api-economy). See also [APIs in the world of IoT](https://apifriends.com/api-management/iot-api/).
 
-{% include random_ad.html %}
-
 For more reading, see [API types](https://ffeathers.wordpress.com/2014/02/16/api-types/) by Sarah Maddox. Sarah notes that there are also hardware APIs, object-remoting APIs, web socket APIs, OS functions and routines, and more.
+
+{% include random_ad3.html %}
 
 Despite the variety of APIs, the defining characteristic of nearly all developer documentation is that it involves documenting *some type of API*. This is why "API documentation" and "developer documentation" are used somewhat synonymously. APIs make life easier for developers (who are consuming the API) because the APIs perform functions or other tasks in more efficient ways.
 

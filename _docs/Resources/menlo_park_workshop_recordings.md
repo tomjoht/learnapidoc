@@ -8,7 +8,7 @@ section: resources
 path1: /resources.html
 ---
 
-I recorded this full-day API documentation in Menlo Park, California, on November 8, 2018. (For more details, see this [blog post](https://idratherbewriting.com/2018/10/31/upcoming-api-doc-workshop/).) This recording closely aligns with the latest content and activities in this course. I divided this all-day workshop into five separate videos.
+I recorded this full-day API documentation in Menlo Park, California, on November 8, 2018. (For more details, see this [blog post](/2018/10/31/upcoming-api-doc-workshop/).) This recording closely aligns with the latest content and activities in this course. I divided this all-day workshop into five separate videos.
 
 * TOC
 {:toc}
@@ -20,6 +20,8 @@ This content doesn't embed well in print, as it contains YouTube videos. Please 
 {% if site.format == "web" %}
 
 {% include note.html content="For the most recent workshop recording, see the [Video recordings of API doc workshops](docapis_workshop_videos.html)." %}
+
+{% include random_ad3.html %}
 
 ### Video 1
 

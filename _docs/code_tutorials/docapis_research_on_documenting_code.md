@@ -195,6 +195,8 @@ While the learning styles discussed in this article might seem more applicable t
 
 More than any other type of API documentation, when you document code you find yourself with a direct opportunity to target the opportunistic learning style with experiment-and-try opportunities.
 
+{% include random_ad.html %}
+
 ## Takeaways from the Research
 
 To summarize the takeaways from the research presented here, here are some key points:
@@ -209,7 +211,7 @@ To summarize the takeaways from the research presented here, here are some key p
 
 These strategies provide a foundation for best practices that we will explore in more detail with more concrete, tangible techniques in the sections that follows.
 
-{% include random_ad.html %}
+{% include random_ad3.html %}
 
 {% comment %}
 more resources

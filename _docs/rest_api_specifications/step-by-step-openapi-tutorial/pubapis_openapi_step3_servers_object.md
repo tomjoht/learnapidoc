@@ -34,7 +34,7 @@ Each of your endpoints (called "paths" in the spec) will be appended to the serv
 
 ## Options with the server URL
 
-{% include random_ad.html %}
+{% include random_ad3.html %}
 
 You have some flexibility and configuration options for your server URL. You can specify multiple server URLs that might relate to different environments (test, beta, production). If you have multiple server URLs, users can select the environment from a servers drop-down box. For example, you can specify multiple server URLs like this:
 
@@ -69,3 +69,5 @@ Paste the `servers` object (the [first code sample above](#sample_servers_object
 {% include course_image.html filename="swagger_servers_object2" ext_print="png" ext_web="png" alt="Swagger UI with the servers object" caption="Swagger UI with the servers object" %}
 
 Notice the drop-down menu that appears in the lower-right. (Even if you have just one URL, it still appears in a drop-down menu.)
+
+{% include random_ad.html %}

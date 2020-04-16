@@ -87,9 +87,9 @@ Now pretend you are the project owner, and you see that you received a new pull 
 
 	 If you look at your list of branches, you'll see that the deleted branch no longer appears.
 
-## Add collaborators to your project
+{% include random_ad3.html %}
 
-{% include random_ad2.html %}
+## Add collaborators to your project
 
 You might need to add collaborators to your Github project so they can commit edits to a branch. If other project members aren't collaborators and they want to make edits, they will receive an error. (See [Inviting collaborators to a personal repository](https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/).)
 
@@ -101,3 +101,5 @@ To add collaborators to your Github project:
 2. Click the **Collaborators** tab on the left.
 3. Type the Github usernames of those you want to have access in the Collaborator area.
 4. Click **Add collaborator**.
+
+{% include random_ad2.html %}

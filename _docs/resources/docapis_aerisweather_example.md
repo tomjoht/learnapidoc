@@ -19,7 +19,7 @@ In this activity, you'll use the Aeris Weather API to get the wind speed for a s
 
 In earlier tutorials, you integrated information from the [OpenWeatherMap API](https://openweathermap.org/api). It's probably a good idea to compare this OpenWeatherMap API with another weather API. The [Aeris Weather API](http://www.aerisweather.com/support/docs/api/) is one of the most interesting, well-documented and powerful weather APIs I've encountered.
 
-{% include random_ad2.html %}
+{% include random_ad3.html %}
 
 ## 1. Get the API keys
 
@@ -31,7 +31,7 @@ Browse through the [available endpoints](http://www.aerisweather.com/support/doc
 
 <a href="http://www.aerisweather.com/support/docs/api/reference/endpoints/observations/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/aerisobservations.png" alt="Aeris Weather observations resource" /></a>
 
-{% include random_ad.html %}
+{% include random_ad2.html %}
 
 To get the forecast details for Santa Clara, California, add `santa%20clara,ca` after `/observations`, like this:
 
@@ -144,6 +144,8 @@ Here's the response from [the request](http://api.aerisapi.com/observations/sant
 ```
 
 `windSpeedMPH` is the value we want.
+
+{% include random_ad.html %}
 
 ## 4. Pull out the values from the response
 

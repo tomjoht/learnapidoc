@@ -11,6 +11,8 @@ path1: /docconceptual.html
 
 Up until this point, we've mostly been focusing on the [reference aspects of API documentation](docendpoints.html) (the endpoints). The reference documentation is only one aspect of API documentation. In this section, I'll cover the main conceptual topics that are commonly found in API documentation. Rather than "conceptual topics," you might consider this type of information the "user guide."
 
+{% include random_ad.html %}
+
 The following are common conceptual topics commonly found in API documentation:
 
 * [API Overview](docapis_doc_overview.html)
@@ -30,4 +32,4 @@ In each concept topic, I'll provide general descriptions and overviews of what t
 
 With each topic, there's an activity for you to go into your [open-source project](docapis_find_open_source_project.html) and evaluate the conceptual topic at hand. Although many of the conceptual topics are straightforward, when you look at the information in context, that is, when you look to see how the information is actually implemented, it gets a lot more interesting.
 
-{% include random_ad.html %}
+{% include random_ad3.html %}

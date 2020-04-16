@@ -71,6 +71,8 @@ It seems that in their switch to Git, they tried to manage all aspects of conten
 
 When working with developers on content, the developers often prefer to draft it on a wiki ("wiki" tends to be the universal name for any collaborative platform, such as Google Docs, Quip, Workdocs, or any other non-published web page platform, regardless of whether it's actually a wiki). These platforms are much faster when you want to develop content with comments and replies, and lots of other back and forth. Developers really aren't accustomed to managing documentation in Git anyway, and will find dumping and editing knowledge on a wiki the most common method.
 
+{% include random_ad3.html %}
+
 But as soon as the content is finalized (for a first draft) and ready to be published as a web page with the rest of the documentation, you can migrate it from the wiki into your doc system. At this point in the process, the writer takes full control of the content. When you want to gather input from others to make changes, you might render the page as a PDF and put it into something like [Workdocs](https://aws.amazon.com/workdocs/) for easy annotations (comments and replies and replies to comments, etc.).
 
 As the review finishes and the content is merged in with the other sea of documentation topics, you'll probably make your edits directly in the repo, without always pushing the content out for review. At this point, your doc team will need to decide on the right Git workflow for your team.

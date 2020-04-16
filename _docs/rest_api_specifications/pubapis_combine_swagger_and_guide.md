@@ -245,6 +245,8 @@ The truth is that programmers have been operating this way for years with [Javad
 
 So in the end, instead of feeling that having two outputs is fragmented or disjointed, reframe your perspective. Your Swagger output provides a clear go-to source for reference information about the endpoints, parameters, requests, and responses. The rest of your docs provide tutorials and other conceptual information. Your two outputs just became an organizational strategy for your documentation.
 
+{% include random_ad3.html %}
+
 ## Next steps
 
 Now that you've had your head buried in API reference documentation, it's time to dive into testing. As you work with API endpoints and other code, you'll need to test these endpoints yourself, both to gather and verify the information in your documentation. Testing isn't always straightforward, so I devote an entire section to this topic. Continue to [Overview of testing your docs](testingdocs_overview.html).

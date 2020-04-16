@@ -41,7 +41,7 @@ Despite the advantages of integrating with engineering scrums, there are a few d
 * Most likely you'll have several projects going on at once. If you have to modify your approach to each with a different flavor of Scrum, then your own workflow and methodology can get to feel a bit disjointed. For example, if each scrum calculates points differently, has different sprint durations, and has other variations, this inconsistency with your methodology can be tiring.
 * If the engineering team wants you to attend all their scrum meetings but won't treat you as a full-fledged member of the scrum (e.g., no tasks, no points, no demos, etc.), then consider creating your own documentation scrum instead.
 
-{% include random_ad2.html %}
+c
 
 ## Adapting scrum for documentation projects
 
@@ -84,6 +84,8 @@ If it doesn't make sense to join an engineering scrum, you can create your own s
    If documentation doesn't go through this review to some degree, avoid publishing it. Otherwise, if you skip some of these steps, you risk pushing out poorly written docs. Again, the review process aligns with agile methodology in that it provides the check-in with your customers to make sure you're on the right track. This review process is where your customers are inspecting your work and providing course corrections as needed.
 
    6.  *Collect feedback post-release*. After you publish the documentation, embed a Feedback button directly in your docs to collect additional feedback from customers in an ongoing way. This incoming feedback trickles in and might not contain significant or actionable information, but customers should have some way of relaying their feedback. As a tech writer, I want to know if there is some major issue with docs so that I can fix them.
+
+{% include random_ad3.html %}
 
 ## Conclusion
 

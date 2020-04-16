@@ -127,6 +127,8 @@ Here's what an item in the JSON response looks like:
 
 You access these fields through dot notation. It's a good idea to log the whole object to the console just to explore it better.
 
+{% include random_ad3.html %}
+
 ## 5. Pull out the information you need
 
 The following code uses jQuery to loop through each of the responses and inserts the necessary components into an image tag to display each photo.

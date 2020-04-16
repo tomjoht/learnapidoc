@@ -18,7 +18,7 @@ Seeing the response from curl or Postman is cool, but how do you make use of the
 
 {% include content/activities/ajax_api_request.md %}
 
-{% include random_ad2.html %}
+{% include random_ad3.html %}
 
 ## The AJAX method from jQuery
 
@@ -55,6 +55,8 @@ var settings = {
 Each of the allowed key-value pairs is defined in [jQuery's ajax documentation](http://api.jquery.com/jquery.ajax/#jQuery-ajax-settings).
 
 Some important values are the `url`, which is the URI or endpoint you are submitting the request to. Another value is `headers`, which allows you to include custom headers in the request.
+
+{% include random_ad2.html %}
 
 Look at the code sample you created. The `settings` variable is passed in as the argument to the `ajax` method. jQuery makes the request to the HTTP URL asynchronously, which means it won't hang up your computer while you wait for the response. You can continue using your application while the request executes.
 

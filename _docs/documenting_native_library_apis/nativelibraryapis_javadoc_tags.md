@@ -43,6 +43,8 @@ To include content in Javadoc, you add *two* asterisks at the start, before the 
 
 (In Eclipse, if you type `/**` and hit return, it autofills the rest of the syntax automatically.)
 
+{% include random_ad2.html %}
+
 The format for adding the various elements is like this:
 
 ```java
@@ -86,7 +88,7 @@ You put the Javadoc description and tags _before_ the class or method (no need f
 
 The following are the most common tags used in Javadoc. Each tag has a word that follows it. For example, `@param latitude` means the parameter is "latitude."
 
-{% include random_ad2.html %}
+{% include random_ad.html %}
 
 {: .tip}
 To view a lengthy example of Javadoc tags, see this <a href="http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#examples">example from Oracle</a>.</div>
@@ -103,7 +105,7 @@ The following are some common Javadoc tags:
 * **`@throws`** The kind of exception the method throws. Note that your code must indicate an exception thrown in order for this tag to validate. Otherwise, Javadoc will produce an error. `@exception` is an alternative tag.
 * **`@Override`** Used with interfaces and abstract classes. Performs a check to see if the method is an override.
 
-{% include random_ad.html %}
+{% include random_ad3.html %}
 
 ## What elements you add Javadoc tags to
 

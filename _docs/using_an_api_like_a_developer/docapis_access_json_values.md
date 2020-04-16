@@ -22,6 +22,8 @@ Note that this section will use a little bit of JavaScript. Depending on your ro
 
 JSON wouldn't be very useful if you always had to print out the entire response. Instead, you select the exact property you want and pull that out through dot notation. The dot (`.`) after `response` (the name of the JSON payload, as defined arbitrarily in the jQuery AJAX function) is how you access the values you want from the JSON object.
 
+{% include random_ad2.html %}
+
 As an example, this is the full response from the [request made previously](docapis_analyze_json.html):
 
 ```json
@@ -80,6 +82,8 @@ To pull out the wind speed element from the JSON response and print it to the Ja
 ```js
 console.log("wind speed: " + response.wind.speed);
 ```
+
+{% include random_ad3.html %}
 
 Your code should look like this:
 
@@ -187,8 +191,6 @@ To print a specific property from the response to the page,
     ```
 
 4.  Refresh the page and you will see the wind speed printed to the page. Here's [an example](https://idratherbewriting.com/learnapidoc/assets/files/weather-windspeed.html) with both wind speed and weather conditions.
-
-{% include random_ad2.html %}
 
 Here's what we changed:
 

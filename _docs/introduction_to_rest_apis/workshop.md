@@ -130,6 +130,8 @@ Break. Snacks provided.
 
 {% include workshop_button.html title="Activity 8c: Push local changes to the remote" activity="push_local_to_remote" button_type="warning" %}
 
+{% include random_ad3.html %}
+
 ## 4:00 - 4:30: Participant's challenges surfaced and discussed
 
 During this time, I'd like to have participants surface specific challenges that they are facing and address them as a whole.
@@ -142,6 +144,9 @@ During this time, I'd like to have participants surface specific challenges that
 
 {% include workshop_button.html title="Jeopardy: Test your knowledge" activity="jeopardy_questions" button_type="info" %}
 
+{% include random_ad.html %}
+
+
 ## 5:00 - 5:30pm: Individual consulting
 
 The general workshop ends and we transition into any individual consulting as desired. If you have specific questions not addressed during the workshop, let's chat specifically about them. For all those interested, I'll write your name on then board and then just meet with you individually for about 5 minutes each until everyone's questions are answered.
@@ -149,9 +154,6 @@ The general workshop ends and we transition into any individual consulting as de
 ## Post-workshop review
 
 At the close of the workshop, please take this [review survey](https://www.questionpro.com/t/AOaGwZgMcu). Thanks.
-
-
-{% include random_ad.html %}
 
 {% include random_ad2.html %}
 

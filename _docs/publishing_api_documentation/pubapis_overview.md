@@ -67,7 +67,7 @@ Additionally, almost no HAT runs on a Mac. Many developers and designers prefer 
 
 Even if you could get developers to use a HAT, you'd likely need to buy a license for each contributing developer. In contrast, docs-as-code tools are often open source and can, therefore, scale across the company without budgetary funding and approval.
 
-{% include random_ad.html %}
+{% include random_ad3.html %}
 
 ### 2. HATs won't generate docs from source
 
@@ -80,6 +80,8 @@ Even for REST APIs, there are tools/libraries that will auto-generate documentat
 Engineers often want to push the reference documentation for APIs into well-defined templates that accommodate sections such as endpoint parameters, sample requests, sample responses, and so forth. (I discuss these reference sections in [Documenting API endpoints](docendpoints.html).)
 
 If you have a lot of endpoints, you need a system for pushing the content into standard templates. Ideally, you should separate the various sections (description, parameters, responses, etc.) and then compile the information through your template when you build your site. Or you can use a specification such as [OpenAPI](pubapis_openapi_intro.html) to populate the information into a template. You can also incorporate custom scripts. However, you don't often have these options in HATs, since you're mostly limited to what workflows and templates are supported out of the box.
+
+{% include random_ad.html %}
 
 ### 4. Many APIs have interactive API consoles, allowing you to try out the calls
 

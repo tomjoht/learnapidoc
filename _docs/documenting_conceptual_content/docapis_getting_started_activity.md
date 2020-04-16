@@ -9,3 +9,9 @@ path1: /docendpoints.html
 ---
 
 {% include content/activities/getting_started_tutorial.md %}
+
+{% include random_ad.html %}
+
+{% include random_ad2.html %}
+
+{% include random_ad3.html %}

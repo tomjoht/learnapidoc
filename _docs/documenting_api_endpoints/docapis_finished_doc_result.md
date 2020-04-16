@@ -18,9 +18,11 @@ Let's pull together the various parts we've worked on and bring them together to
 {% include_relative surfreport_response.html %}
 </div>
 
-{% include random_ad2.html %}
+{% include random_ad3.html %}
 
 And that's it. If you have a lot of endpoints to document, you'll probably want to create templates that follow a common structure. Better yet, when you push your reference documentation into the OpenAPI specification, it makes publishing your content even easier. We'll dive more into the OpenAPI specification in the next section, [OpenAPI specification and Swagger](restapispecifications.html).
+
+{% include random_ad2.html %}
 
 ## Next steps
 

@@ -105,6 +105,8 @@ Here's the response documentation:
 
 It's also interesting how much detail eBay includes for each item. Whereas the Twitter writers appear to omit descriptions, the eBay authors write small novels describing each item in the response.
 
+{% include random_ad3.html %}
+
 ## Three-column designs
 
 Some APIs put the response in a right column so you can see it while also looking at the resource description and parameters. Stripe's API made this three-column design popular:
@@ -133,7 +135,7 @@ Sometimes responses are generated dynamically based on API calls to a test syste
 
 Actually, the OpenWeatherMap response isn't generated dynamically &mdash; it just looks that way.
 
-This dynamic approach works well for GET requests that return public information. However, it probably wouldn't scale for other methods (such as POST or DELETE) or which request authorization. 
+This dynamic approach works well for GET requests that return public information. However, it probably wouldn't scale for other methods (such as POST or DELETE) or which request authorization.
 
 ## What about status codes?
 

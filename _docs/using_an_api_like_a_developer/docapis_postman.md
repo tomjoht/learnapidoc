@@ -45,7 +45,7 @@ A lot of times, abstract concepts don't make sense until you can contextualize t
 
 {% include content/activities/postman_request.md %}
 
-{% include random_ad.html %}
+{% include random_ad3.html %}
 
 ## Same request but in Paw instead of Postman
 
@@ -58,6 +58,8 @@ Like Postman, Paw also allows you to easily see the request headers, response he
 ## <i class="fa fa-user-circle"></i> Enter several requests for the Aeris API into Postman
 
 Now let's switch APIs a bit and see some weather information from the [Aeris Weather API](https://www.aerisweather.com/), which you explored a bit in [Scenarios for using a weather API](docapis_scenario_for_using_weather_api.html#aeris). Constructing the endpoints for the Aeris Weather API is a bit more complicated since there are many different queries, filters, and other parameters you can use to configure the endpoint.
+
+{% include random_ad.html %}
 
 Here are a few pre-configured requests to configure for Aeris. You can paste the requests directly into the URL request box in Postman (after customizing the `CLIENTID` AND `CLIENTSECRET` values), and the parameters will auto-populate in the parameter fields.
 

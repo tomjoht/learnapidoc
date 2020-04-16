@@ -33,6 +33,8 @@ The design of this API doc site arranges the sample requests and responses in th
 curl -u "username:password" -H "Content-Type:application/json" -X GET "https://api.callfire.com/v2/texts?limit=50&offset=200"
 ```
 
+{% include random_ad3.html %}
+
 curl is a common format to show requests for several reasons:
 
 * curl is language agnostic, so it's not specific to one particular programming language.

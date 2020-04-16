@@ -9,7 +9,13 @@ path1: /docendpoints.html
 
 In this activity, you'll critique an existing API reference topic to identify what's wrong with it.
 
+{% include random_ad.html %}
+
 * TOC
 {:toc}
 
 {% include content/activities/whats_wrong_with_surfreport.md %}
+
+{% include random_ad3.html %}
+
+{% include random_ad2.html %}

@@ -20,6 +20,8 @@ The API overview explains what you can do with the API, including the high-level
 
 Too often with API documentation (perhaps because the content is often written by developers), the documentation gets quickly mired in technical details without ever explaining clearly what the API is used for. Don't lose sight of the overall purpose and business goals of your API by getting lost in the endpoints.
 
+{% include random_ad3.html %}
+
 The API overview grounds users with a high-level understanding of the system. This high-level understanding is critical in order to grasp the system as a whole. It allows the details to fit into a broader conceptual framework.
 
 To get an idea of what the API is about, users start at a high-level, getting a gist of what something is about from the title and description, and then work their way into more details. This overview provides this initial orientation for the user.

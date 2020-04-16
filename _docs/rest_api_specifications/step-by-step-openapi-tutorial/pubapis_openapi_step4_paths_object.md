@@ -232,6 +232,8 @@ responses:
 
 See [Describing Parameters](https://swagger.io/docs/specification/describing-parameters/) in Swagger's OpenAPI documentation for more details.
 
+{% include random_ad3.html %}
+
 ## Paths object code
 
 Now let's combine the above two code blocks (both `parameters` and `responses`) for our `paths` object. You can paste the following code into the Swagger Editor &mdash; add this `paths` object below the `openapi`, `info`, and `servers` code you added in the previous tutorials.

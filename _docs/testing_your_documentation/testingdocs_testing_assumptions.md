@@ -73,7 +73,7 @@ Other technical writers are usually both curious and helpful when you ask them t
 
 Although other technical writers don't always have time to go through your instructions, and they usually share your same level of technical expertise, having *someone* test your instructions is better than no one.
 
-{% include random_ad2.html %}
+{% include random_ad3.html %}
 
 Tech writers are good testing candidates precisely because they are writers instead of developers. As writers, they usually lack the technical assumptions that a lot of developers have (assumptions that can cripple documentation). Also, developers may feel embarrassed if they don't already understand a concept or process referenced in the docs.
 
@@ -82,6 +82,8 @@ Tech writers who test your instructions know exactly the kind of feedback you're
 In general, it's always good to have a non-expert test something rather than an expert. Experts can often compensate for shortcomings in documentation by relying on their own expertise. In fact, experts may pride themselves in being able to complete a task *despite the poor instruction*. Novices can't compensate.
 
 Also, when you have other technical writers test your docs, the activity fosters good team building and knowledge sharing. At a previous job, I worked in a large department that had, at one time, about 30 UX engineers. The UX team held periodic meetings during which they submitted a design for general feedback and discussion. The camaraderie and team-building during the design reviews was immediately apparent to me, and I wished we had something similar with our tech pubs team.
+
+{% include random_ad.html %}
 
 By giving other technical writers the opportunity to test your documentation, you create the same kind of sharing and review of content. You build a community rather than having each technical writer always work on independent projects.
 

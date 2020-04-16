@@ -25,10 +25,12 @@ When you make edits to Javadoc content, look for the following:
 * **Consistent style**. See if the existing tags follow [Java's style conventions with annotations](nativelibraryapis_javadoc_tags.html).
 * **Clarity**. Some descriptions are unintelligible due to the curse of knowledge (it might be hard to tell without a stronger grasp of Java)
 
-{% include random_ad.html %}
+{% include random_ad3.html %}
 
 ## <i class="fa fa-user-circle"></i> Make some edits to the Javadoc
 
 Make some edits to a class and method. Then regenerate the Javadoc and find your changes. See how they get rendered in the output.
 
 {% include tip.html content="If you need to review how to export to Javadoc, see [Activity: Generate a Javadoc from a sample project](nativelibraryapis_create_javadoc.html). Each time you export to Javadoc, you need to select the classes you want to be included." %}
+
+{% include random_ad.html %}

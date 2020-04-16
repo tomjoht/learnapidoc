@@ -80,7 +80,7 @@ If you don't have the budget for a third-party host and deployment option, nor d
 
 Also, note that even if you're not using Jekyll, you can use [GitHub Pages](https://pages.github.com/) as a free publishing host for any static site generator output. You simply build your files locally and then push your built files into the GitHub-Pages-enabled repository. With this approach, you wouldn't have the server perform the build process, but you can still handle the process through the command line. Free hosting for your docs on GitHub, regardless of the tool, can be especially convenient.
 
-{% include random_ad2.html %}
+{% include random_ad.html %}
 
 ## 3. Decide how you'll parse the OpenAPI specification
 
@@ -97,9 +97,11 @@ For a great article on the importance of content over tools, see [Good API Docum
 
 In some ways, tools are the basketball player's shoes. They matter, for sure. But Michael Jordan wasn't a great basketball player because he wore Nikes, nor was Kobe Bryant great due to his Adidas. You can probably write incredible documentation despite your tooling and platform. Don't let tooling derail your focus on what really matters in your role: the content.
 
+{% include random_ad2.html %}
+
 I've changed my doc platforms numerous times, and rarely does anyone seem to care or notice. As long as it looks decent, most project managers and users will focus on the content much more than the design or platform. In some ways, the design should be invisible and unobtrusive, not foregrounding the focus on the content. The user shouldn't be distracted by the tooling.
 
-{% include random_ad.html %}
+{% include random_ad3.html %}
 
 Also, users and reviewers won't notice (or appreciate) all the effort behind the tools. Even when you've managed to single source content, loop through a custom collection to generate out a special display, incorporate language switchers to jump from platform to platform, etc., the feedback you'll get is "There's a typo here." Or "What's the data type for this parameter?"
 

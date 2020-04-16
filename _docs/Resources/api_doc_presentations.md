@@ -51,6 +51,8 @@ I gave this presentation as a TC Dojo webinar. More details are [here](https://i
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/wC5hxY0RItQ" frameborder="0" allowfullscreen></iframe>
 
+{% include random_ad3.html %}
+
 ### Sacramento API workshop
 
 For a longer (and older) video, here's a recording from a 4-hour workshop I gave to the STC Sacramento chapter. More details about the workshop are [here](https://idratherbewriting.com/2016/03/27/rest-api-workshop-recording-sacramento-stc/).

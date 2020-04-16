@@ -13,6 +13,8 @@ Now that you've read about testing, it's time to get some more hands-on practice
 * TOC
 {:toc}
 
+{% include random_ad3.html %}
+
 ## Test a topic
 
 1.  With the [open-source API project you're working with](docapis_find_open_source_project.html), find the following:

@@ -94,6 +94,8 @@ Before we get into this Swagger tutorial with another API (other than the Petsto
 
 Some of these sites look the same, but others, such as The Movie Database API and Zomato, have been integrated seamlessly into the rest of their documentation website.
 
+{% include random_ad3.html %}
+
 Looking at the examples, you'll notice the documentation is short and sweet in a Swagger implementation. This brevity is because the Swagger display is meant to be an interactive experience where you can try out calls and see responses &mdash; using your own API key to see your own data. It's the learn-by-doing-and-seeing-it approach. Also, Swagger UI only covers the [reference topics](docendpoints.html) of your documentation. The [conceptual topics](docnonref.html) are usually covered in a separate guide.
 
 {% include content/activities/create_swaggerui_display.md %}

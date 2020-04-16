@@ -5,6 +5,7 @@ weight: 1
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
+published: false
 ---
 
 A developer portal is a site that not only involves a console where developers retrieve API keys and perform other configuration but where they go to consume documentation for different products. Typically, a developer portal involves a lot of different documentation contributed by many different teams.

@@ -176,6 +176,8 @@ You could then use the same color for these parameters in later descriptions:
 
 By color coding the parameters, it's easy to see the parameter being defined and how it relates to the endpoint definition.
 
+{% include random_ad3.html %}
+
 ## Query string parameters {#query_string_parameters}
 
 Query string parameters appear after a question mark (`?`) in the endpoint. The question mark followed by the parameters and their values is referred to as the "query string." In the query string,  each parameter is listed one right after the other with an ampersand (`&`) separating them. The order of the query string parameters does not matter.

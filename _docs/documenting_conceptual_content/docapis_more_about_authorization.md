@@ -90,6 +90,8 @@ The message is then encoded by the secret key and passed through a secure hashin
 
 When the receiver (the API server) receives the request, it takes the same system properties (the request timestamp plus account ID) and uses the secret key (which only the requester and API server know) and SHA to generate the same string. If the string matches the signature in the request header, it accepts the request. If the strings don't match, then the request is rejected.
 
+{% include random_ad3.html %}
+
 Here's a diagram depicting this workflow:
 
 {% include course_image.html size="medium" border="true" filename="restapi_hmac" ext_print="png" ext_web="svg" alt="HMAC workflow" caption="HMAC workflow" %}

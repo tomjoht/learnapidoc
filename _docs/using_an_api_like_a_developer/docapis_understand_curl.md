@@ -156,7 +156,7 @@ After the query string, each parameter is concatenated with other parameters thr
 
 ## Common curl commands related to REST {#common}
 
-{% include random_ad.html %}
+{% include random_ad3.html %}
 
 curl has a lot of possible commands, but the following are the most common when working with REST APIs.
 
@@ -236,7 +236,7 @@ Here's an example curl request that combines some of these commands:
 curl -i -H "Accept: application/json" -X POST -d "{status:MIA}" http://personsreport.com/status/person123
 ```
 
-{% include random_ad2.html %}
+{% include random_ad.html %}
 
 The request could also be formatted with line breaks to make it more readable:
 
@@ -263,6 +263,8 @@ Quiz yourself to see how much you remember. What do the following parameters mea
 
 {: .tip}
 When you use curl, the Terminal and [iTerm](https://www.iterm2.com/) on the Mac provide a much easier experience than using the command prompt in Windows. If you're going to get serious about API documentation, but you're still on a PC, consider switching. There are a lot of utilities that you install through a terminal that *just work* on a Mac. Also, if you're in Silicon Valley, using a PC instead of a Mac might make you look old-fashioned (see [Why do most startups purchase MacBooks for their employees?](https://www.quora.com/Why-do-most-startups-purchase-MacBooks-for-their-employees)). Alternatively, you can run Linux on Windows, and you'll get the same terminal experience (Bash shell). See this example tutorial on how to [install Bash on Windows](https://itsfoss.com/install-bash-on-windows/)."
+
+{% include random_ad2.html %}
 
 {% comment %}
 site seems to be down or gone. check later to see if it's back up.

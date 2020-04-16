@@ -13,3 +13,5 @@ progress: false
 {% include random_ad2.html %}
 
 {% include random_ad.html %}
+
+{% include random_ad3.html %}
