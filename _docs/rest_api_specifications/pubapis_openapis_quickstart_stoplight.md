@@ -527,7 +527,7 @@ Now that you've finished creating your OpenAPI spec, let's preview, test, and pu
 
 4.  Click the **Try It** tab.
 4.  Select **zip** check box and enter a zip code. (At least one location parameter is required for the API to retrieve weather information.)
-5.  Enter an API key into the value for the **appid** parameter. If you don't have an [OpenWeatherMap API key](docapis_get_auth_keys.html#openweathermap_apikey), you can use this one: `fd4698c940c6d1da602a70ac34f0b147`.
+5.  Enter an API key into the value for the **appid** parameter.
 6.  Click the **Send** button. If you've done everything correctly, you will see a response returned.
 
     {% include course_image.html url="https://stoplight.io/p/docs/gh/tomjoht/stoplight_studio_weathermap/reference/openweathermap.v1.yaml?group=master" size="large" filename="stoplight_tryit_response2" ext_print="png" ext_web="png" alt="Successful response using Stoplight" caption="Successful response using Stoplight" %}

@@ -3,7 +3,7 @@ API Keys
 In code examples, I use {api key} in place of the actual API key. This is because posting your API key is usually prohibited by the service, and it leads to abuse of the API key. When you work through the activities, you can register for your own API keys with each service, or you can use one of my API keys below.
 
 ## OpenWeatherMap
-api key: fd4698c940c6d1da602a70ac34f0b147
+api key: fc341543b020fb49164d8280a67986ab
 
 ## Aeris API
 ID: ByruDorHEne2JB64BhP1k

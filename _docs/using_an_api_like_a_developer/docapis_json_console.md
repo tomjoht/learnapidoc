@@ -29,7 +29,7 @@ In this section, I'll explain a bit more about the `ajax` function you used earl
    var settings = {
      "async": true,
      "crossDomain": true,
-     "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+     "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=APIKEY&units=imperial",
      "method": "GET"
    }
 
@@ -38,6 +38,8 @@ In this section, I'll explain a bit more about the `ajax` function you used earl
    });
 </script>
 ```
+
+(In the above code, replace `APIKEY` with your actual API key.)
 
 If you're working with JavaScript and APIs, the [`ajax` method from jQuery](http://api.jquery.com/jquery.ajax) can be helpful with code samples. This `ajax` method takes one argument: `settings`.
 

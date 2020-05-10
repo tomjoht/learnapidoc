@@ -15,8 +15,10 @@ To make a request with curl:
     The Postman code for the OpenWeatherMap weather request in curl looks as follows:
 
     ```bash
-    curl --location --request GET 'https://api.openweathermap.org/data/2.5/weather?zip=95050&units=imperial&appid=fd4698c940c6d1da602a70ac34f0b147'
+    curl --location --request GET 'https://api.openweathermap.org/data/2.5/weather?zip=95050&units=imperial&appid=APIKEY'
     ```
+
+    (In the above code, replace `APIKEY` with your actual API key.)
 
     The [`--location`](https://curl.haxx.se/docs/manpage.html#-L) parameter will prompt curl to submit a new request if the URL is a redirect. The [`--request`](https://curl.haxx.se/docs/manpage.html#-X) parameter specifies the operation for the request.
 

@@ -194,18 +194,16 @@ You can also export Postman to curl by doing the following:
 
     ```bash
     curl -X GET \
-      'https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=-121.9689848&units=imperial&appid=fd4698c940c6d1da602a70ac34f0b147' \
-      -H 'Postman-Token: de0da6b7-1dbc-44d6-acc1-9741f05a7bf1' \
-      -H 'cache-control: no-cache'
+      'https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=-121.9689848&units=imperial&appid=APIKEY'
     ```
 
-    You can see that Postman adds some extra header information (`-H 'Postman-Token: de0da6b7-1dbc-44d6-acc1-9741f05a7bf1' \ -H 'cache-control: no-cache'`) into the request. This extra header information is unnecessary and can be removed.
+    In place of `APIKEY` you should see your actual API key.
 
 4.  Remove the backslashes and line breaks. If you're on Windows, change the single quotes to double quotes.
 5.  Insert the curl command into your terminal and observe the result.
 
     ```bash
-    curl -X GET "https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=-121.9689848&units=imperial&appid=fd4698c940c6d1da602a70ac34f0b147"
+    curl -X GET "https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=-121.9689848&units=imperial&appid=APIKEY"
     ```
 
     Through Postman's Import and Code functionality, you can easily switch between Postman and curl.

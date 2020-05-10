@@ -133,8 +133,10 @@ When you type an address into a website, you see only the body of the response. 
 Let's look more closely at the request you submitted for the weather in the previous topic ([Make a curl call](docapis_make_curl_call.html)):
 
 ```bash
-curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: 930d08d6-7b2a-6ea2-0725-27324755c684" "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
+curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: 930d08d6-7b2a-6ea2-0725-27324755c684" "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=APIKEY&units=imperial"
 ```
+
+(In the above code, replace `APIKEY` with your actual API key.)
 
 curl has shorthand names for the various options that you include with your request.
 
@@ -149,8 +151,10 @@ Here's what the commands mean:
 The zip code (`zip`), app ID (`appid`), and units (`units`) parameters were passed to the endpoint using "query strings." The `?` appended to the URL indicates the start of the query string. The query string parameters are the parameters that appear *after* the `?`:
 
 <pre>
-<span style="color: red">?</span>zip=95050<span style="color: red">&</span>appid=fd4698c940c6d1da602a70ac34f0b147<span style="color: red">&</span>units=imperial
+<span style="color: red">?</span>zip=95050<span style="color: red">&</span>appid=APIKEY<span style="color: red">&</span>units=imperial
 </pre>
+
+(In the above code, replace `APIKEY` with your actual API key.)
 
 After the query string, each parameter is concatenated with other parameters through the ampersand `&` symbol. The order of the query string parameters doesn't matter. The order only matters if the parameters are *on the left of the query string* (and thus part of the URL itself). Any configurable parts of the endpoint that appear before the query string are called [path parameters](docapis_doc_parameters.html#path_parameters) (we'll dive into these later).
 

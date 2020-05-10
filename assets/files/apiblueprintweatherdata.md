@@ -8,7 +8,7 @@ Get the current weather, daily forecast for 16 days, and a three-hour-interval f
 This API uses Custom Query Parameter for its authentication.
 
 The parameters that are needed to be sent for this type of authentication are as follows:
-+ `appid` - API key to authorize requests. If you don't have an OpenWeatherMap API key, use `fd4698c940c6d1da602a70ac34f0b147`.
++ `appid` - API key to authorize requests.
 
 # Group Current Weather Data
 

@@ -75,7 +75,7 @@ components:
   securitySchemes:
     app_id:
       type: apiKey
-      description: API key to authorize requests. If you don't have an OpenWeatherMap API key, use `fd4698c940c6d1da602a70ac34f0b147`.
+      description: API key to authorize requests.
       name: appid
       in: query
 ```
@@ -114,7 +114,7 @@ components:
   securitySchemes:
     app_id:
       type: apiKey
-      description: API key to authorize requests. If you don't have an OpenWeatherMap API key, use `fd4698c940c6d1da602a70ac34f0b147`.
+      description: API key to authorize requests.
       name: appid
       in: query
 ```
@@ -138,10 +138,12 @@ In the Current Weather Data section, expand the **GET weather** endpoint and cli
 When you execute the request, Swagger UI shows you the [curl request](docapis_make_curl_call.html) submitted. For example, after executing a weather request, the curl is as follows:
 
 ```bash
-curl -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&units=imperial&lang=en&mode=json&appid=fd4698c940c6d1da602a70ac34f0b147" -H "accept: application/json"
+curl -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&units=imperial&lang=en&mode=json&appid=APIKEY" -H "accept: application/json"
 ```
 
-The `&appid=fd4698c940c6d1da602a70ac34f0b147"` indicates that the API key is being included in the query string, so the request will be authorized. If you copy the curl submitted and paste it into the command line, you'll see a successful response:
+(Replace APIKEY with your actual API key.)
+
+The `&appid=APIKEY"` indicates that the API key is being included in the query string, so the request will be authorized. If you copy the curl submitted, customize the API key, and paste it into the command line, you'll see a successful response:
 
 {% include course_image.html size="medium"  filename="curlrequestopenapiswagger" ext_print="png" ext_web="png" alt="Successful curl response" caption="Successful curl response" %}
 

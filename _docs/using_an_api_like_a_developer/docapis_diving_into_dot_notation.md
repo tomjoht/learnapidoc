@@ -152,7 +152,7 @@ Copy the following code into a basic HTML file:
              "async": true,
              "crossDomain": true,
              "dataType": "json",
-             "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050,us&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+             "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050,us&appid=APIKEY&units=imperial",
              "method": "GET"
          }
 
@@ -180,6 +180,9 @@ Copy the following code into a basic HTML file:
    </body>
 </html>
 ```
+
+(In the above code, replace `APIKEY` with your actual API key.)
+
 A few things are different here, but it's essentially the same code as you created in the [Access and print a specific JSON value](docapis_access_json_values.html). Here's what's different:
 
 * Rather than running the `ajax` method on page load, the `ajax` method is wrapped inside a function called `checkWind`. When the web page's button is clicked, the `onclick` method fires the `checkWind()` function.

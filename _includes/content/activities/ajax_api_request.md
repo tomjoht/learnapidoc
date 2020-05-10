@@ -46,7 +46,7 @@ For this activity, you'll use JavaScript to display the API response on a web pa
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
           <script>
           var settings = {
-            "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&units=imperial&appid=fd4698c940c6d1da602a70ac34f0b147",
+            "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&units=imperial&appid=APIKEY",
             "method": "GET",
             "timeout": 0,
           };
@@ -65,6 +65,8 @@ For this activity, you'll use JavaScript to display the API response on a web pa
        </body>
     </html>
     ```
+
+    (In the above code, replace `APIKEY` with your actual API key.)
 
     What is this code doing? In a nutshell, when `ajax` (a jQuery function) retrieves the response from the API, it assigns the response to `response`. A variable called `content` is created and set it equal to `response.wind.speed` ([dot notation]({{site.rooturl}}docapis_diving_into_dot_notation.html) is used to access this value). jQuery's `append` method inserts `content` after an element called `#windSpeed`on the page. (I realize this is an extremely abbreviated explanation, but explaining JavaScript is beyond the scope of this course. In general, you can learn more by reading about the [jQuery.ajax()](https://api.jquery.com/jquery.ajax/) function.)
 

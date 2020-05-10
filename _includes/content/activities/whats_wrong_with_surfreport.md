@@ -72,8 +72,9 @@ Gets the surf conditions for a specific beach ID.
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 ```
-https://api.openweathermap.org/data/2.5/surfreport/12345?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&days=1
+https://api.openweathermap.org/data/2.5/surfreport/12345?zip=95050&appid=APIKEY&days=1
 ```
+(In the above code, replace `APIKEY` with your actual API key.)
 
 ## Sample response
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}

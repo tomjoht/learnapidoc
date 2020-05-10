@@ -20,7 +20,7 @@ In this exercise, you'll use Postman to make a request using OpenWeatherMap's [c
 
     <img src="https://idratherbewritingmedia.com/images/api/postmanopenweatherapi.png" class="medium"/>
 
-	  When you add these parameters, they appear as a query string to the endpoint URL in the GET box. For example, your endpoint will now look like this: `https://api.openweathermap.org/data/2.5/weather?zip=95050&units=imperial&appid=fd4698c940c6d1da602a70ac34f0b147` (but with different query string values). Query string parameters appear after the question mark `?` symbol and are separated by ampersands `&`. The order of query string parameters doesn't matter.
+	  When you add these parameters, they appear as a query string to the endpoint URL in the GET box. For example, your endpoint will now look like this: `https://api.openweathermap.org/data/2.5/weather?zip=95050&units=imperial&appid=APIKEY` (but with different query string values and with your own API key instead of `APIKEY`). Query string parameters appear after the question mark `?` symbol and are separated by ampersands `&`. The order of query string parameters doesn't matter.
 
     Note that many APIs pass the API key in the header rather than as a query string parameter in the request URL. (If that were the case, you would click the **Headers** tab and insert the required key-value pairs in the header. But OpenWeatherMap passes the API key as a query string parameter.)
 
@@ -70,8 +70,10 @@ Observe how the response contains a `list` that provides the forecast details fo
 Make one more OpenWeatherMap API request, this time changing the way you specify the location. Instead of specifying the location by zip code, specify the location using `lat` and `lon` geocoordinates instead. For example:
 
 ```bash
-https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=-121.9689848&units=imperial&appid=fd4698c940c6d1da602a70ac34f0b147
+https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=-121.9689848&units=imperial&appid=APIKEY
 ```
+
+(In the above code, replace `APIKEY` with your actual API key.)
 
 Postman has a lot of other functionality you can use. We'll revisit Postman later in the course for some other activities.
 

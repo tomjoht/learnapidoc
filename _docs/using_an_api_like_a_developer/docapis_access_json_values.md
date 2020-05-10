@@ -119,7 +119,7 @@ I'm assuming you're starting with the [same code](https://idratherbewriting.com/
          var settings = {
            "async": true,
            "crossDomain": true,
-           "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+           "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=APIKEY&units=imperial",
            "method": "GET"
          }
 
@@ -133,6 +133,8 @@ I'm assuming you're starting with the [same code](https://idratherbewriting.com/
    </body>
 </html>
 ```
+
+(In the above code, replace `APIKEY` with your actual API key.)
 
 To print a specific property from the response to the page,
 
@@ -170,7 +172,7 @@ To print a specific property from the response to the page,
              var settings = {
                "async": true,
                "crossDomain": true,
-               "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+               "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=APIKEY&units=imperial",
                "method": "GET"
              }
 
@@ -189,6 +191,7 @@ To print a specific property from the response to the page,
        </body>
     </html>
     ```
+    (In the above code, replace `APIKEY` with your actual API key.)
 
 4.  Refresh the page and you will see the wind speed printed to the page. Here's [an example](https://idratherbewriting.com/learnapidoc/assets/files/weather-windspeed.html) with both wind speed and weather conditions.
 
@@ -254,7 +257,7 @@ Here's the code from the [sample page](https://idratherbewriting.com/learnapidoc
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+  "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=APIKEY&units=imperial",
   "method": "GET"
 }
 
@@ -279,6 +282,8 @@ $.ajax(settings).done(function (response) {
 </body>
 </html>
 ```
+
+(In the above code, replace `APIKEY` with your actual API key.)
 
 ## More exercises
 

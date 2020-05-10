@@ -23,8 +23,10 @@ Returns information about surfing conditions at a specific beach ID, including t
 
 ```
 curl -I -X GET
-"https://api.openweathermap.org/data/2.5/surfreport?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial&days=2"
+"https://api.openweathermap.org/data/2.5/surfreport?zip=95050&appid=APIKEY&units=imperial&days=2"
 ```
+
+(In the above code, replace `APIKEY` with your actual API key.)
 
 ## Sample response
 
