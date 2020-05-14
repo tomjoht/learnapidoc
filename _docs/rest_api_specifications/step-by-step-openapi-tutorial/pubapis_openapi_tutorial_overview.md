@@ -118,7 +118,7 @@ Later, when I talk more about publishing, I'll explain how to configure Swagger 
 
 If you have an existing specification document that validates against version OpenAPI 2.0 and you want to convert it to OpenAPI 3.0 (or vice versa), you can use [APIMATIC's Transformer](https://apimatic.io/transformer) to convert it automatically. (You can also use APIMATIC to transform your specification document into many other outputs, such as [RAML](pubapis_raml.html), [API Blueprint](pubapis_api_blueprint.html), or [Postman](docapis_postman.html).)
 
-To see the difference between the 2.0 and the 3.0 code, you can copy these code samples to separate files and then use an application like [Diffmerge](https://sourcegear.com/diffmerge/) to highlight the differences. The Readme.io blog has a nice post that provides [A Visual Guide to What's New in Swagger 3.0](https://blog.readme.io/an-example-filled-guide-to-swagger-3-2/).
+To see the difference between the 2.0 and the 3.0 code, you can copy these code samples to separate files and then use an application like [Diffmerge](https://sourcegear.com/diffmerge/) to highlight the differences. The Readme.com blog has a nice post that provides [A Visual Guide to What's New in Swagger 3.0](https://blog.readme.com/an-example-filled-guide-to-swagger-3-2/).
 
 
 ## Helpful resources

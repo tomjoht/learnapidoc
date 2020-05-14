@@ -101,7 +101,7 @@ You can see the request in Shell (curl), Ruby, Node, or Python. Developers can e
 
 Providing a variety of requests like this, often displayed through [tabs](https://getbootstrap.com/docs/3.3/javascript/#tabs), helps make your API easier to implement. It's even better if you can automatically populate the API keys with the actual user's API keys based on their logged-in profile.
 
-However, don't feel so intimidated by this smorgasbord of code samples. Some API doc tools (such as [Readme.io](pubapis_headless_cms.html#readmeio) or [SwaggerHub](pubapis_swaggerhub_smartbear.html)) can automatically generate these code samples because the patterns for making REST requests in different programming languages follow a common template.
+However, don't feel so intimidated by this smorgasbord of code samples. Some API doc tools (such as [Readme.com](pubapis_headless_cms.html#readmeio) or [SwaggerHub](pubapis_swaggerhub_smartbear.html)) can automatically generate these code samples because the patterns for making REST requests in different programming languages follow a common template.
 
 {: .tip}
 Many times, product managers know which programming languages the target users develop applications with. If you know the target audience's preferred programming language, you can focus your code samples on that language only.
@@ -169,7 +169,7 @@ Foursquare's API docs used to have a built-in API explorer in the previous versi
 
 As far as integrating custom API Explorer tooling, this is a task that should be relatively easy for developers. All the API Explorer does is map values from a field to an API call and return the response to the same interface. In other words, the API plumbing is all there &mdash; you just need a little JavaScript and front-end skills to make it happen.
 
-However, you don't have to build your own tooling. Existing tools such as [Swagger UI](http://swagger.io/swagger-ui/) (which parses an [OpenAPI specification document](pubapis_openapi_tutorial_overview.html)) and [Readme.io](http://readme.io) (which allows you to enter the details manually or from an OpenAPI specification) can integrate API Explorer functionality directly into your documentation.
+However, you don't have to build your own tooling. Existing tools such as [Swagger UI](http://swagger.io/swagger-ui/) (which parses an [OpenAPI specification document](pubapis_openapi_tutorial_overview.html)) and [Readme.com](http://readme.com) (which allows you to enter the details manually or from an OpenAPI specification) can integrate API Explorer functionality directly into your documentation.
 
 {: .tip}
 For a tutorial on how to create your own API explorer functionality, see the [Swagger UI tutorial](pubapis_swagger.html).

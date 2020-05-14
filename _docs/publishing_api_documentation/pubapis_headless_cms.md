@@ -49,32 +49,32 @@ Your content source can be stored in GitHub, GitLab, or BitBucket. Netlify CMS a
 {: .tip}
 For a tutorial on integrating Jekyll with Netlify CMS, see [Adding a CMS to Your Static Site With Netlify CMS](https://dzone.com/articles/adding-a-cms-to-your-static-site-with-netlify-cms). Or just start with the [Netlify CMS documentation](https://www.netlifycms.org/docs/).
 
-## Readme.io {#readmeio}
+## Readme.com {#readmeio}
 
-[Readme.io](http://readme.io) is an online CMS for docs that offers one of the most robust, full-featured interfaces for developer docs available. Readme.io isn't a headless CMS, meaning you don't just point to your GitHub repo to pull in the content. Instead, I believe Readme.io stores content in a database (though this detail isn't mentioned on their site). So  strictly speaking, I probably shouldn't include Readme.io here, but I didn't know where else to describe it, and the CMS-like GUI makes it the most similar to the headless CMS.
+[Readme.com](http://readme.com) is an online CMS for docs that offers one of the most robust, full-featured interfaces for developer docs available. Readme.com isn't a headless CMS, meaning you don't just point to your GitHub repo to pull in the content. Instead, I believe Readme.com stores content in a database (though this detail isn't mentioned on their site). So  strictly speaking, I probably shouldn't include Readme.com here, but I didn't know where else to describe it, and the CMS-like GUI makes it the most similar to the headless CMS.
 
-Readme.io's emphasis is on providing an interface that helps you more easily write documentation based on best practices and designs. Readme.io provides various wizard-like screens to move you through documentation processes, prompting you with forms to complete. For example:
+Readme.com's emphasis is on providing an interface that helps you more easily write documentation based on best practices and designs. Readme.com provides various wizard-like screens to move you through documentation processes, prompting you with forms to complete. For example:
 
-{% include course_image.html  size="medium" border="true" filename="readmeio_manual_api" ext_print="png" ext_web="png" alt="Readme.io" caption="Readme.io" %}
+{% include course_image.html  size="medium" border="true" filename="readmeio_manual_api" ext_print="png" ext_web="png" alt="Readme.com" caption="Readme.com" %}
 
-Most importantly, Readme.io includes specific features for displaying API documentation content, which puts it into a class of its own. Although you can add your API information manually, you can also import an [OpenAPI specification file](pubapis_openapi_intro.html). You can experiment by choosing one from the [OpenAPI examples](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0/yaml), such as [this one](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/petstore-expanded.json). Readme.io's integration of OpenAPI along with other doc content helps integrate outputs that are often separated. (This fragmentation is a problem I explore later in [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).)
+Most importantly, Readme.com includes specific features for displaying API documentation content, which puts it into a class of its own. Although you can add your API information manually, you can also import an [OpenAPI specification file](pubapis_openapi_intro.html). You can experiment by choosing one from the [OpenAPI examples](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0/yaml), such as [this one](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/petstore-expanded.json). Readme.com's integration of OpenAPI along with other doc content helps integrate outputs that are often separated. (This fragmentation is a problem I explore later in [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).)
 
-Overall, Readme.io provides a robust GUI for creating API documentation in a way that is more extensive and well-designed than virtually any other platform available. The output includes an interactive, try-it-out experience with endpoints:
+Overall, Readme.com provides a robust GUI for creating API documentation in a way that is more extensive and well-designed than virtually any other platform available. The output includes an interactive, try-it-out experience with endpoints:
 
 <img class="medium" src="https://idratherbewritingmedia.com/images/api/readmeiotryitout.png" style="border: 1px solid #dedede;" />
 
 The experience is similar to Swagger in that the response appears directly in the documentation. This API Explorer gives you a sense of the data returned by the API.
 
-There are some challenges with Readme.io. It isn't free, so you'll need licenses per author. Additionally, there isn't any content re-use functionality (currently), so if you have multiple outputs for your documentation that you're single sourcing, Readme.io may not be for you. Finally, if you want to customize your own design or implement a feature not supported, you can't just hack the code (though you can adjust the stylesheet). Overall, with a hosted solution like Readme.io, you're stuck within the platform's constraints.
+There are some challenges with Readme.com. It isn't free, so you'll need licenses per author. Additionally, there isn't any content re-use functionality (currently), so if you have multiple outputs for your documentation that you're single sourcing, Readme.com may not be for you. Finally, if you want to customize your own design or implement a feature not supported, you can't just hack the code (though you can adjust the stylesheet). Overall, with a hosted solution like Readme.com, you're stuck within the platform's constraints.
 
-Even so, the output is sharp, and the talent behind this site is top-notch. The platform is continuously growing with new features, and there are many high-profile companies with their docs on Readme. If you consider how much time it takes to build and deploy your own doc solution, going with a site like Readme.io will save you a lot of time. It will let you focus on your content while also adhering to best practices with site design.
+Even so, the output is sharp, and the talent behind this site is top-notch. The platform is continuously growing with new features, and there are many high-profile companies with their docs on Readme. If you consider how much time it takes to build and deploy your own doc solution, going with a site like Readme.com will save you a lot of time. It will let you focus on your content while also adhering to best practices with site design.
 
-Here are a few sample API doc sites built with Readme.io:
+Here are a few sample API doc sites built with Readme.com:
 
 * [Validic](https://docs.validic.com/docs/getting-started)
 * [Box API](https://developer.box.com/)
 * [Coinbase API](https://developers.coinbase.com/api/v2#introduction)
-* [Farmbase Software](https://farmbot-software.readme.io/docs)
+* [Farmbase Software](https://farmbot-software.readme.com/docs)
 
 {: .tip}
 Which tool should you use? I provide some more concrete recommendations in [Which tool to choose for API docs -- my recommendations](pubapis_which_tool_to_choose.html).

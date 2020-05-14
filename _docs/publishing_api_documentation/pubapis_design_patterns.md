@@ -233,7 +233,7 @@ Usually the long pages on a site are the reference pages. Personally, I'm not a 
 
 ## Pattern 5: API Interactivity {#interactive_api_explorers}
 
-A recurring feature in many API doc publishing sites is interactivity with API calls. [Swagger UI](https://swagger.io/tools/swagger-ui/), [Readme.io](https://readme.io/), [Apiary](https://apiary.io/), and many other platforms allow you to try out calls and see responses directly in the browser.
+A recurring feature in many API doc publishing sites is interactivity with API calls. [Swagger UI](https://swagger.io/tools/swagger-ui/), [Readme.com](https://readme.com/), [Apiary](https://apiary.io/), and many other platforms allow you to try out calls and see responses directly in the browser.
 
 For APIs not on these platforms, wiring up an API Explorer is often done by engineers. Since you already have the API functionality to make calls and receive responses, creating an API Explorer is not usually a difficult task for a UI developer. You're just creating a form to populate the endpoint's parameters and printing the response to the page.
 
@@ -245,7 +245,7 @@ Are API explorers novel, or instructive? If you're going to be making a lot of c
 
 However, API Explorers tend to work better with simpler APIs. If your API requires you to retrieve data before you can use a certain endpoint, or if the data you submit is a JSON object in the body of the post, or you have some other complicated interdependency with the endpoints, the API Explorer might not be as helpful. Nevertheless, it is a design pattern to provide this kind of interactivity in API documentation.
 
-If your users log in, you can store their API keys and dynamically populate the calls and code samples with API keys. The API key can most likely be a variable that stores the user's API key. This API-key feature is provided with sites like [Readme.io](pubapis_headless_cms.html#readmeio).
+If your users log in, you can store their API keys and dynamically populate the calls and code samples with API keys. The API key can most likely be a variable that stores the user's API key. This API-key feature is provided with sites like [Readme.com](pubapis_headless_cms.html#readmeio).
 
 However, if you store customer API keys on your site, this might create authentication and login requirements that make your site more complex to create. If you're creating this experience in a custom way, you'll probably need the help of a front-end designer and web developer.
 
