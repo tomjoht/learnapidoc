@@ -9,9 +9,9 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 ---
 
-I recently conducted a survey about trends for those creating documentation for developers and engineers. You can view the results [here](../learnapidoc/slides/devdoctrends_results.html):
+I recently [conducted a survey](/blog/developer-documentation-survey-2020/) about trends for those creating documentation for developers and engineers. You can view the results [here](../learnapidoc/slides/devdoctrends_results.html):
 
-<a href="../learnapidoc/slides/devdoctrends_results.html"><a href=""><img src="https://idratherbewritingmedia.com/images/api/devdoctrendssurveyresultstitle.png" alt="Developer Documentation Survey Results" style="max-width:500px; border: 1px solid #444"  /></a>
+<a href="../learnapidoc/slides/devdoctrends_results.html"><img src="https://idratherbewritingmedia.com/images/api/devdoctrendssurveyresultstitle.png" alt="Developer Documentation Survey Results" style="max-width:500px; border: 1px solid #444"  /></a>
 
 The survey results are presented in a slide format.
 
