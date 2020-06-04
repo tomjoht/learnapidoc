@@ -13,7 +13,10 @@ I recently [conducted a survey](/blog/developer-documentation-survey-2020/) abou
 
 <a href="../learnapidoc/slides/devdoctrends_results.html"><img src="https://idratherbewritingmedia.com/images/api/devdoctrendssurveyresultstitle.png" alt="Developer Documentation Survey Results" style="max-width:500px; border: 1px solid #444"  /></a>
 
-The survey results are presented in a slide format.
+The survey results are presented in a slide format. You can also view a presentation where I talk through these slides here:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/swktxdNozXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 {% comment %}
 ## Survey summary
