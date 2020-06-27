@@ -3,7 +3,7 @@ title: "Jekyll and CloudCannon continuous deployment"
 permalink: /pubapis_jekyll.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.92
+weight: 8.95
 section: publishingapis
 path1: /publishingapis.html
 ---

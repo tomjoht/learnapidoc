@@ -3,7 +3,7 @@ title: "Stoplight Demo"
 permalink: /pubapis_stoplight_demo.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 4.91
+weight: 4.92
 section: openapi_output_demos
 path2: /openapi_output_demos.html
 path1: /restapispecifications.html

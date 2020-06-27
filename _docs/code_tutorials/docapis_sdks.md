@@ -1,5 +1,5 @@
 ---
-title: Documenting SDKs
+title: SDKs (software development kits)
 permalink: docapis_sdks.html
 course: "Documenting REST APIs"
 weight: 7.7

@@ -5,7 +5,7 @@ course: "Documenting REST APIs"
 sidebar: docapis
 section: publishingapis
 path1: /publishingapis.html
-weight: 8.99
+weight: 8.97
 ---
 
 Q:  Is it possible to author API documentation using DITA/XML or an XML editor (like Oxygen)? I saw your recommended list of tools in the [Publishing API docs](publishingapis.html) section, but it would be great if we could leverage existing tools.

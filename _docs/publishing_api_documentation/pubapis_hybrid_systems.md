@@ -1,30 +1,27 @@
 ---
-title: "Headless CMS options"
-permalink: /pubapis_headless_cms.html
+title: "Hybrid documentation systems"
+permalink: /pubapis_hybrid_systems.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.62
+weight: 8.93
 section: publishingapis
 path1: /publishingapis.html
 ---
-
-This page is under construction. In the meantime, for a good explanation of headless CMSes, see [Headless CMS vs Decoupled CMS: The Ultimate Guide](https://www.coredna.com/blogs/headless-vs-decoupled-cms).
-
-
-{% comment %}
 
 Rounding out the publishing tool options, there is a class of developer doc tools that provide online GUIs for authoring and publishing, but they still store your content as flat files in repositories such as GitHub and Bitbucket. In other words, they provide a WordPress.com-like experience for your content (giving you a user interface to browse your posts, pages, layouts, and other content) but allow your content to live in plain text files in version control repositories.
 
 * TOC
 {:toc}
 
-## List of headless CMS options
+## Headless CMS solutions
 
 Just as we have [staticgen.com](https://www.staticgen.com/) that lists common static site generators, there's a similar index of [headless content management systems](https://headlesscms.org/), this one arranged in alphabetical order (rather than ranked by popularity).
 
 <a class="noCrossRef" href="https://headlesscms.org/"><img src="https://idratherbewritingmedia.com/images/api/headlesscms.png"/></a>
 
-Headless CMSs often combine both the authoring and the hosting/deployment in the same tool. Updates you make are built automatically on the platform. But unlike WordPress, the solution does not involve storing your doc content in a database and dynamically retrieving that content from the database when readers visit your page. Many times you can store your content on GitHub, and the headless CMS will read/pull it in seamlessly. (The platform probably will contain a database of some kind for your profile and other CMS features, but your content is not stored and retrieved there.)
+For an in-depth introdution to headless CMSs, see [Headless CMS vs Decoupled CMS: The Ultimate Guide](https://www.coredna.com/blogs/headless-vs-decoupled-cms). There are nuances here that I won't go into, but the basic metaphor is that the head refers to the authoring interface, and the body refers to the storage database or file system. If a CMS is headless, it means the authoring interface is connected to the data storage through an API, and the data storage can live in a completely different system, such as GitHub.
+
+Not all tools listed here are headless CMSs, so I have called them more generally "hybrid" solutions, since many of these doc tools don't fit into neat categories.
 
 ## Forestry.io {#forestry}
 
@@ -34,7 +31,7 @@ Headless CMSs often combine both the authoring and the hosting/deployment in the
 
 The idea behind the CMS interface is that most static site generators ostracize less technical users by forcing them into the code. (For example, when I write a post in Jekyll, usually others who look over my shoulder think I'm actually programming, even though I'm just writing posts in Markdown.) The CMS removes this by making the experience much more user-friendly to non-technical people while also still leveraging the openness and flexibility of the static site generator platform.
 
-[CloudCannon](pubapis_hosting_and_deployment.html#cloudcannon) could also be considered a headless CMS, but I chose to categorize it in the hosting and deployment solutions because it has less of an emphasis on authoring in its GUI. Forestry.io (unlike CloudCannon) also offers an on-premise enterprise installation so you can host and manage the entire platform behind your company's firewall.
+Forestry.io (unlike CloudCannon) also offers an on-premise enterprise installation so you can host and manage the entire platform behind your company's firewall.
 
 ## Netlify CMS {#netlifycms}
 
@@ -78,4 +75,3 @@ Here are a few sample API doc sites built with Readme.com:
 
 {: .tip}
 Which tool should you use? I provide some more concrete recommendations in [Which tool to choose for API docs -- my recommendations](pubapis_which_tool_to_choose.html).
-{% endcomment %}

@@ -3,14 +3,14 @@ title: "Which tool to choose for API docs &mdash; my recommendations"
 permalink: /pubapis_which_tool_to_choose.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.7
+weight: 8.94
 section: publishingapis
 path1: /publishingapis.html
 redirect_from:
 - /learnapidoc/pubapis_tools_vs_content.html
 ---
 
-I described a smattering of tools in [static site generators](pubapis_static_site_generators.html), [hosting and deployment options](pubapis_hosting_and_deployment.html), and [headless CMS options](pubapis_headless_cms.html). Which solution should you choose? It's a complicated decision that will invariably involve tradeoffs. The decision depends on your skill set, product, environment, and requirements. But here's my general recommendation. First, identify what authoring requirements you have. Then decide on a static site generator, and then consider a hosting and deployment platform.
+I described a smattering of tools in [static site generators](pubapis_static_site_generators.html), [hosting and deployment options](pubapis_hosting_and_deployment.html), and [hybrid solutions](pubapis_hybrid_systems.html). Which solution should you choose? It's a complicated decision that will invariably involve tradeoffs. The decision depends on your skill set, product, environment, and requirements. But here's my general recommendation. First, identify what authoring requirements you have. Then decide on a static site generator, and then consider a hosting and deployment platform.
 
 Also, note that I don't have total familiarity with all of these tools and solutions. My core experience with docs-as-code tools involves Jekyll, GitHub Pages, and internally developed publishing pipelines. I have only dabbled or experimented with a lot of these other tools and platforms, so I can't speak authoritatively about them.
 
@@ -50,7 +50,7 @@ If you want power and control to create the complex features you need (maybe you
 
 Granted, this power and control will require a more complex platform and learning curve, but you can start out easy with a ready-made theme and later work your way into custom development as desired.
 
-If you don't have web development skills and don't want to tinker with the theme or other code development, choose a solution such as [Readme.com](pubapis_headless_cms.html#readmeio) or [Netlify CMS](pubapis_headless_cms.html#netlifycms) (though, with Netlify CMS, you'd still have to select a theme). Readme provides a ready-made design for your API doc site, removing the need for both designing a theme and figuring out hosting/deployment. That can save you a lot of time and effort.
+If you don't have web development skills and don't want to tinker with the theme or other code development, choose a solution such as [Readme.com](pubapis_hybrid_systems.html#readmeio) or [Netlify CMS](pubapis_hybrid_systems.html#netlifycms) (though, with Netlify CMS, you'd still have to select a theme). Readme provides a ready-made design for your API doc site, removing the need for both designing a theme and figuring out hosting/deployment. That can save you a lot of time and effort.
 
 Realize that when implementing a solution, you might spend a quarter of your time (over a period of months between time on projects) customizing your theme and working on doc tooling. If you don't want to devote that much time to your tooling, Readme is a good option. However, I personally want more control and flexibility over the information design and theme. I like to experiment, and I want the power to code whatever feature I want, such as an [embedded navigation map](https://idratherbewriting.com/simplifying-complexity/macro-micro.html), [JS features to collapse/expand elements](https://idratherbewriting.com/simplifying-complexity/hiding-complexity.html), [custom metadata](https://idratherbewriting.com/simplifying-complexity/discoverability-through-metadata.html), or whatever. I think many tech writers and developers want similar flexibility and control. What is important to you? Are flexibility and control so crucial that you're willing to sink weeks/months of time into the solution?
 

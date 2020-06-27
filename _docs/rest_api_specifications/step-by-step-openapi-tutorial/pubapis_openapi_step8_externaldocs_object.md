@@ -3,7 +3,7 @@ title: "Step 8: The externalDocs object (OpenAPI tutorial)"
 permalink: /pubapis_openapi_step8_externaldocs_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 4.491
+weight: 4.50
 section: openapitutorial
 path1: /restapispecifications.html
 path2: /openapi_tutorial.html

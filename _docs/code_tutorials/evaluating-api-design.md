@@ -1,8 +1,8 @@
 ---
-title: "Giving feedback on API design and usability"
+title: "API design and usability"
 permalink: /evaluating-api-design.html
 course: "Documenting REST APIs"
-weight: 7.7
+weight: 7.9
 sidebar: docapis
 section: docapiscode
 path1: /doccode.html
@@ -171,7 +171,7 @@ One could say a lot about error messages beyond the general guidance here. Take 
 
 And on it goes. In other words, there's a lot to consider even with something like error messages.
 
-### Other usability matters
+## Other usability matters
 
 If you'd like to dive deeper into API design and usability, there are plenty of other aspects to cover. Arnaud's book [*The Design of Web APIs*](https://www.amazon.com/Design-Web-APIs-Arnaud-Lauret/dp/1617295108) goes into depth here. For example, he mentions some other aspects to consider:
 

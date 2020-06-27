@@ -3,7 +3,7 @@ title: "Case study: Switching tools to docs-as-code"
 permalink: /pubapis_switching_to_docs_as_code.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.93
+weight: 8.96
 section: publishingapis
 path1: /publishingapis.html
 redirect_from:

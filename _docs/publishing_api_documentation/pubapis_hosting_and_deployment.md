@@ -3,7 +3,7 @@ title: "Hosting and deployment options"
 permalink: /pubapis_hosting_and_deployment.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.61
+weight: 8.92
 section: publishingapis
 path1: /publishingapis.html
 ---
@@ -105,7 +105,7 @@ The most impressive example of a Netlify-hosted site is [Smashing Magazine](http
 
 Other notable doc sites using Netlify include [Docker](https://docs.docker.com/), [Kubernetes](https://kubernetes.io/docs/home/), [React](https://reactjs.org/docs/hello-world.html), [Yarn](https://yarnpkg.com/lang/en/docs/), [Lodash](https://lodash.com/docs/), [Gatsby](https://www.gatsbyjs.org/docs/), and [Hugo](https://gohugo.io/documentation/).
 
-Complementing Netlify is [Netlify CMS](pubapis_headless_cms.html#netlifycms), a headless CMS for your content (which I discuss in more detail in [Headless CMS options (and Readme.com)](pubapis_headless_cms.html)).
+Complementing Netlify is [Netlify CMS](pubapis_hybrid_systems.html#netlifycms), a headless CMS for your content (which I discuss in more detail in [Hybrid documentation platforms](pubapis_hybrid_systems.html)).
 
 ## Aerobatic {#aerobatic}
 
@@ -115,4 +115,4 @@ Complementing Netlify is [Netlify CMS](pubapis_headless_cms.html#netlifycms), a 
 
 Overall, there are many options for hosting and deploying your site. GitHub Pages, CloudCannon, Read the Docs, Netlify, and Aerobatic are just a few. You can also probably explore custom-built hosting and deployment options available through your company's existing infrastructure.
 
-There's one more category of tools to consider: [Headless CMS options (and Readme.com)](pubapis_headless_cms.html). The headless CMS often combines the authoring and deployment solution together, so the class of tools is closely related to the ones mentioned here, but I've separated out the category anyway.
+There's another category of tools that I'm calling [Hybrid documentation platforms](pubapis_hybrid_systems.html). Some of these solutions combine the authoring and deployment solutions together in different ways. These solutions might offer a "headless" authoring interface with a body that is stores content in another place, such as GitHub.

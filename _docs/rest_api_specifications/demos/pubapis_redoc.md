@@ -1,9 +1,9 @@
 ---
-title: "Create a display using Redoc"
+title: "Redoc Demo"
 permalink: /pubapis_redoc.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 4.93
+weight: 4.94
 section: openapi_output_demos
 path2: /openapi_output_demos.html
 path1: /restapispecifications.html

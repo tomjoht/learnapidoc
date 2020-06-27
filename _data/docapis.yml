@@ -1,5 +1,4 @@
 sidebartitle: Documenting REST APIs
-
 folders:
 
 - title: "I: Introduction to REST APIs"
@@ -40,37 +39,37 @@ folders:
   description: "Playing a brief role as a developer will help you understand developer needs better, as well as what developers typically look for in API documentation. Developers often use tools such as Postman or curl to make calls. They look at the structure of the response, and they dynamically integrate the needed information into web pages and other applications."
   folderitems:
 
-  - title: Scenario for using a weather API
+  - title: "Scenario for using a weather API"
     jurl: /docapis_scenario_for_using_weather_api.html
 
-  - title: Get authorization keys
+  - title: "Get authorization keys"
     jurl: /docapis_get_auth_keys.html
 
   - title: "Submit requests through Postman"
     jurl: /docapis_postman.html
 
-  - title: curl intro and installation
+  - title: "curl intro and installation"
     jurl: /docapis_install_curl.html
 
   - title: "Make a curl call"
     jurl: /docapis_make_curl_call.html
 
-  - title: Understand curl more
+  - title: "Understand curl more"
     jurl: /docapis_understand_curl.html
 
   - title: "Activity: Use methods with curl"
     jurl: /docapis_curl_with_petstore.html
 
-  - title: Analyze the JSON response
+  - title: "Analyze the JSON response"
     jurl: /docapis_analyze_json.html
 
-  - title: Inspect the JSON from the response payload
+  - title: "Inspect the JSON from the response payload"
     jurl: /docapis_json_console.html
 
   - title: "Access and print a specific JSON value"
     jurl: /docapis_access_json_values.html
 
-  - title: Dive into dot notation
+  - title: "Dive into dot notation"
     jurl: /docapis_diving_into_dot_notation.html
 
 - title: "III: Documenting API endpoints"
@@ -113,10 +112,10 @@ folders:
   description: "The OpenAPI specification provides a formal way of describing your REST API and includes all the reference sections mentioned in the previous section, Documenting API endpoints. Display frameworks such as Swagger UI can parse the OpenAPI specification and generate interactive documentation that lets users try out endpoints while learning about the API."
   folderitems:
 
-  - title: Overview of REST API specification formats
+  - title: "Overview of REST API specification formats"
     jurl: /pubapis_rest_specification_formats.html
 
-  - title: Introduction to the OpenAPI specification
+  - title: "Introduction to the OpenAPI specification"
     jurl: /pubapis_openapi_intro.html
 
   - title: "Create an OpenAPI specification document using Stoplight Studio's visual editor"
@@ -126,7 +125,7 @@ folders:
   #   jurl: /pubapis_readme_tutorial.html
 
     subfolders:
-    - title: Step-by-step OpenAPI tutorial
+    - title: "Step-by-step OpenAPI tutorial"
       jurl: /openapi_tutorial.html
       behavior: openable
 
@@ -165,20 +164,20 @@ folders:
       - title: "Activity: Create an OpenAPI specification document"
         jurl: /pubapis_openapi_activity.html
 
-  - title: Swagger UI tutorial
+  - title: "Swagger UI tutorial"
     jurl: /pubapis_swagger.html
 
-  - title: Stoplight &mdash; visual modeling tools for creating your spec
+  - title: "Stoplight &mdash; visual modeling tools for creating your spec"
     jurl: /pubapis_stoplight.html
 
-  - title: SwaggerHub introduction and tutorial
+  - title: "SwaggerHub introduction and tutorial"
     jurl: /pubapis_swaggerhub_smartbear.html
 
-  - title: Integrating Swagger UI with the rest of your docs
+  - title: "Integrating Swagger UI with the rest of your docs"
     jurl: /pubapis_combine_swagger_and_guide.html
 
     subfolders:
-    - title: Demos of OpenAPI outputs using different tools
+    - title: "Demos of OpenAPI outputs using different tools"
       jurl: /openapi_output_demos.html
       behavior: openable
 
@@ -187,7 +186,7 @@ folders:
         - title: "Stoplight demo"
           jurl: /pubapis_stoplight_demo.html
 
-        - title: Swagger UI Demo
+        - title: "Swagger UI Demo"
           jurl: /pubapis_swagger_demo.html
 
         - title: "Redoc demo"
@@ -201,16 +200,16 @@ folders:
   description: "Testing your documentation is critical to providing accurate, thorough information. With API and developer docs, due to the high level of complexity and engineering requirements, technical writers might be inclined to simply take information that engineers give them and incorporate it wholesale, without personally testing it. Merely playing an editorial/publishing function, however, can reduce your role to that of an engineer's secretary."
   folderitems:
 
-  - title: Overview of testing your docs
+  - title: "Overview of testing your docs"
     jurl: /testingdocs_overview.html
 
-  - title: Set up a test environment
+  - title: "Set up a test environment"
     jurl: /testingdocs_test_environment.html
 
-  - title: Test all instructions yourself
+  - title: "Test all instructions yourself"
     jurl: /testingdocs_test_your_instructions.html
 
-  - title: Test your assumptions
+  - title: "Test your assumptions"
     jurl: /testingdocs_testing_assumptions.html
 
   - title: "Activity: Test your project's documentation"
@@ -221,31 +220,31 @@ folders:
   description: "While reference topics in APIs generally receive the most attention, the conceptual topics, such as getting started tutorials, information about authorization, rate limiting, status and error codes, quick reference guides, and other topics constitute about half of the documentation. These topics are usually handled by technical writers more than engineers. You can evaluate the quality of API documentation in part by looking to see whether it includes these conceptual topics."
   folderitems:
 
-  - title: API conceptual topics overview
+  - title: "API conceptual topics overview"
     jurl: /docapis_conceptual_topics_overview.html
 
-  - title: API overview
+  - title: "API overview"
     jurl: /docapis_doc_overview.html
 
-  - title: API getting started
+  - title: "API getting started"
     jurl: /docapis_doc_getting_started_section.html
 
   - title: API authentication and authorization
     jurl: /docapis_more_about_authorization.html
 
-  - title: API status and error codes
+  - title: "API status and error codes"
     jurl: /docapis_doc_status_codes.html
 
-  - title: API rate limiting and thresholds
+  - title: "API rate limiting and thresholds"
     jurl: /docapis_rate_limiting_and_thresholds.html
 
-  - title: API quick reference
+  - title: "API quick reference"
     jurl: /docapis_doc_quick_reference.html
 
-  - title: API glossary
+  - title: "API glossary"
     jurl: /docapis_glossary_section.html
 
-  - title: API best practices
+  - title: "API best practices"
     jurl: /docapis_best_practices_with_api.html
 
   - title: "Activity: Complete the SendGrid Getting Started tutorial"
@@ -259,7 +258,7 @@ folders:
   description: "This section covers strategies for creating code tutorials. I'm still developing out this section, so much of the content is under construction."
   folderitems:
 
-  - title: Common characteristics of code tutorials
+  - title: "Common characteristics of code tutorials"
     jurl: /docapis_code_tutorials_common_characteristics.html
 
   - title: Why documenting code is so difficult
@@ -271,13 +270,13 @@ folders:
   - title: Five strategies for documenting code
     jurl: /docapis_code_strategies.html
 
-  - title: API code samples
+  - title: Code samples
     jurl: /docapis_codesamples_bestpractices.html
 
   - title: SDKs (software development kits)
     jurl: /docapis_sdks.html
 
-  - title: "Giving feedback on API design and usability"
+  - title: "API design and usability"
     jurl: /evaluating-api-design.html
 
   # - title: Sample apps
@@ -288,25 +287,25 @@ folders:
   description: "API documentation often follows a docs-as-code workflow, where the tools to author and publish documentation align closely with the same tools developers use to write, manage, build, and deploy code. Docs-as-code involves using lightweight formats such as Markdown, collaborating through Git or other version control, building your doc site with a static site generator, and deploying it through a continuous build model, where the build happens on the server when you push commits to a particular branch."
   folderitems:
 
-  - title: Overview for publishing API docs
+  - title: "Overview for publishing API docs"
     jurl: /pubapis_overview.html
 
-  - title: List of 100 API doc sites
+  - title: "Survey of API doc sites"
     jurl: /pubapis_apilist.html
 
-  - title: Design patterns with API doc sites
+  - title: "Design patterns with API doc sites"
     jurl: /pubapis_design_patterns.html
 
-  - title: Docs-as-code tools
+  - title: "Docs-as-code tools"
     jurl: /pubapis_docs_as_code.html
 
-  - title: More about Markdown
+  - title: "More about Markdown"
     jurl: /pubapis_markdown.html
 
-  - title: Version control systems (e.g., Git)
+  - title: "Version control systems (e.g., Git)"
     jurl: /pubapis_version_control.html
 
-  - title: Following agile scrum with documentation projects
+  - title: "Following agile scrum with documentation projects"
     jurl: /pubapis_agile_scrum_for_docs.html
 
   - title: "Activity: Manage content in a GitHub wiki"
@@ -318,19 +317,19 @@ folders:
   - title: "Activity: Pull request workflows through GitHub"
     jurl: /pubapis_github_pull_requests.html
 
-  - title: Static site generators
+  - title: "Static site generators"
     jurl: /pubapis_static_site_generators.html
 
-  - title: Hosting and deployment options
+  - title: "Hosting and deployment options"
     jurl: /pubapis_hosting_and_deployment.html
 
-  # - title: Headless CMS options
-  #   jurl: /pubapis_headless_cms.html
+  - title: "Hybrid documentation systems"
+    jurl: /pubapis_hybrid_systems.html
 
   - title: "Which tool to choose for API docs &mdash; my recommendations"
     jurl: /pubapis_which_tool_to_choose.html
 
-  - title: Jekyll and CloudCannon continuous deployment tutorial
+  - title: "Jekyll and CloudCannon continuous deployment tutorial"
     jurl: /pubapis_jekyll.html
 
   - title: "Case study: Switching tools to docs-as-code"
@@ -344,13 +343,13 @@ folders:
   description: "Getting an API documentation job and thriving requires you to demonstrate your technical aptitude through a writing portfolio. The portfolio should include samples of documentation written for developers. One way to build this portfolio is by working on an open-source project. You also need to live in a tech hub where API documentation jobs are available, such as California, Texas, New York, or Virginia. Overall, thriving in the developer documentation space requires you to continually learn a healthy dose of code, which can be challenging."
   folderitems:
 
-  - title: The job market for API technical writers
+  - title: "The job market for API technical writers"
     jurl: /jobapis_overview.html
 
-  - title: How much code do you need to know?
+  - title: "How much code do you need to know?"
     jurl: /jobapis_learning_code.html
 
-  - title: Best locations for API documentation jobs
+  - title: "Best locations for API documentation jobs"
     jurl: /jobapis_location.html
 
   - title: "Activity: Find an Open-Source Project"
@@ -364,31 +363,31 @@ folders:
   description: "Native library APIs refer to Java, C++, or other programming-specific APIs. In this model, rather than making requests across the web for the information, you download a library of code and integrate it into your project. The library is compiled directly into your application's build (rather than accessed through web protocols as with REST APIs). Although this type of API is less common, I include it here in part to clarify what makes REST APIs so different from native library APIs."
   folderitems:
 
-  - title: Overview of native library APIs
+  - title: "Overview of native library APIs"
     jurl: /nativelibraryapis_overview.html
 
-  - title: Get the sample Java project
+  - title: "Get the sample Java project"
     jurl: /nativelibraryapis_getting_the_source.html
 
-  - title: Java crash course
+  - title: "Java crash course"
     jurl: /nativelibraryapis_java_crash_course.html
 
   - title: "Activity: Generate a Javadoc from a sample project"
     jurl: /nativelibraryapis_create_javadoc.html
 
-  - title: Javadoc tags
+  - title: "Javadoc tags"
     jurl: /nativelibraryapis_javadoc_tags.html
 
-  - title: Explore the Javadoc output
+  - title: "Explore the Javadoc output"
     jurl: /nativelibraryapis_exploring_javadoc_output.html
 
-  - title: Make edits to Javadoc tags
+  - title: "Make edits to Javadoc tags"
     jurl: /nativelibraryapis_editing_javadoc.html
 
-  - title: Doxygen, a document generator mainly for C++
+  - title: "Doxygen, a document generator mainly for C++"
     jurl: /nativelibraryapis_doxygen.html
 
-  - title: Create non-ref docs with native library APIs
+  - title: "Create non-ref docs with native library APIs"
     jurl: /nativelibraryapis_nonrefdocs.html
 
 - title: "XI: API glossary and resources"
@@ -396,10 +395,10 @@ folders:
   description: "The API documentation landscape is full of jargon, acronyms, and many new terms. This glossary provides a list of terms and definitions. Additionally, this section contains additional exercises and information, such as more activities for calling APIs, or more info about alternative specifications."
   folderitems:
 
-  - title: Glossary for API documentation
+  - title: "Glossary for API documentation"
     jurl: /api-glossary.html
 
-  - title:  REST API activities
+  - title: "REST API activities"
     jurl: /docapis_more_rest_activities.html
 
   - title: "Activity: Get event information using the Eventbrite API"
@@ -411,25 +410,25 @@ folders:
   - title: "Activity: Get wind speed using the Aeris Weather API"
     jurl: /docapis_aerisweather_example.html
 
-  - title: RAML tutorial
+  - title: "RAML tutorial"
     jurl: /pubapis_raml.html
 
-  - title: API Blueprint tutorial
+  - title: "API Blueprint tutorial"
     jurl: /pubapis_api_blueprint.html
 
-  - title: API jeopardy answer key
+  - title: "API jeopardy answer key"
     jurl: /jeopardy_answer_key.html
 
-  - title: What's wrong with this topic answer key
+  - title: "What's wrong with this topic answer key"
     jurl: /whats_wrong_answer_key.html
 
-  - title: Menlo Park API workshop video recording
+  - title: "Menlo Park API workshop video recording"
     jurl: /menlo_park_workshop_recording.html
 
-  - title: Denver API workshop video recording
+  - title: "Denver API workshop video recording"
     jurl: /denver_workshop_recording.html
 
-  - title: API doc presentation video recordings
+  - title: "API doc presentation video recordings"
     jurl: /api_doc_presentations.html
 
   #
