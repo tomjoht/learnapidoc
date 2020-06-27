@@ -1,5 +1,5 @@
 ---
-title: "Activity: Find an Open-Source Project"
+title: "Activity: Find an open-source project"
 permalink: /docapis_find_open_source_project.html
 course: "Documenting REST APIs"
 weight: 10.4
@@ -18,7 +18,7 @@ To break into API documentation, you need to start thinking about API documentat
 
 Let's assume you don't have any experience in API documentation, but you're trying to get an API documentation job. Employers will be willing to overlook experience if you can demonstrate API documentation writing samples. But how will you get API doc writing samples without an API doc job? And without API doc samples, how can you get an API doc job? This can seem like an impossible situation.
 
-Getting around this catch-22 is simple: you create these API doc samples through open source projects that you contribute to. This is where the activities in this course become essential.
+Getting around this catch-22 is simple: you create these API doc samples through open-source projects that you contribute to. This is where the activities in this course become essential.
 
 Rather than merely completing modules and tracking your progress toward the course's completion, the activities you do will help build up your portfolio with API documentation samples, helping you progress to the goal of either obtaining an API documentation job or hitting a home run on an API doc project in your current role.
 
@@ -26,7 +26,7 @@ Rather than merely completing modules and tracking your progress toward the cour
 
 If you've already got an API project through your work, or if you're an engineer working on an API project, great, just select your existing API for the course activities. However, if you're breaking into API doc or building your API doc skills from the ground up, you'll need to find an open-source API documentation project to contribute to.
 
-Finding the right project can be challenging, but it is critical to your portfolio and your success in breaking into API documentation. Fortunately, almost all open-source projects use GitHub, and GitHub provides various tags for documentation and "help wanted" in order to attract volunteers. (The task is so common, GitHub provides advice for [finding open source projects](https://help.github.com/articles/finding-open-source-projects-on-github/).)
+Finding the right project can be challenging, but it is critical to your portfolio and your success in breaking into API documentation. Fortunately, almost all open-source projects use GitHub, and GitHub provides various tags for documentation and "help wanted" in order to attract volunteers. (The task is so common, GitHub provides advice for [finding open-source projects](https://help.github.com/articles/finding-open-source-projects-on-github/).)
 
 {% include random_ad2.html %}
 
@@ -79,7 +79,7 @@ As such, you should feel confident about the value you can bring to an open-sour
 
 See the following for more information on finding an open-source project:
 
-* [How to choose (and contribute to) your first open source project](https://github.com/collections/choosing-projects)
+* [How to choose (and contribute to) your first open-source project](https://github.com/collections/choosing-projects)
 * [Contribute to open-source projects through documentation](https://mapzen.com/blog/open-source-docs/)
 
 For a tutorial on pull requests workflows with GitHub projects, see [Pull request workflows through GitHub](pubapis_github_pull_requests.html).

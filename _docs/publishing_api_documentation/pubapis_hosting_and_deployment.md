@@ -27,7 +27,7 @@ In your GitHub repo, click **Settings** and scroll down to **GitHub Pages**. Thi
 
 {% include course_image.html url="https://pages.github.com/" filename="githubpagesscreenshot" ext_print="png" ext_web="png" alt="GitHub Pages integration with GitHub repositories" caption="Every GitHub repository is potentially a Jekyll project that you can auto-build when you commit to it." %}
 
-The tight integration of Jekyll with GitHub makes for a compelling argument to use a Jekyll-GitHub solution. For the most part, GitHub is the dominant platform for open source projects. If you're already using GitHub, it makes sense to choose a static site generator that integrates into the same platform to build your docs.
+The tight integration of Jekyll with GitHub makes for a compelling argument to use a Jekyll-GitHub solution. For the most part, GitHub is the dominant platform for open-source projects. If you're already using GitHub, it makes sense to choose a static site generator that integrates into the same platform to build your docs.
 
 GitHub Pages is free but does have some limitations in scope:
 
@@ -67,7 +67,7 @@ Read the Docs is an online hosting and deployment platform that can read Sphinx 
 
 The introduction on the [Read the Docs homepage](https://readthedocs.org/) describes the platform as follows:
 
-> We will host your documentation for free forever. There are no tricks. We help 94,898 open source projects share their docs. ... Whenever you push code to your favorite version control system, whether that is Git, Mercurial, Bazaar, or Subversion, we will automatically build your docs so your code and documentation are never out of sync.
+> We will host your documentation for free forever. There are no tricks. We help 94,898 open-source projects share their docs. ... Whenever you push code to your favorite version control system, whether that is Git, Mercurial, Bazaar, or Subversion, we will automatically build your docs so your code and documentation are never out of sync.
 
 Read the Docs provides both an open-source, free version ([readthedocs.org](https://readthedocs.org/)) and a commercial version ([readthedocs.com](https://readthedocs.com/)). These tiers allow you to level-up your project when your needs mature but also don't lock you into a paid solution when you're not ready for it.
 

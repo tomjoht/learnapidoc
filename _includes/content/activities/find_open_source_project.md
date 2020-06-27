@@ -30,7 +30,7 @@ To find an open-source project with API doc needs:
     * [24-hour Pull Requests](https://24pullrequests.com)
     * [Programmableweb.com API directory](https://www.programmableweb.com/category/all/apis)
 
-    {% include note.html content="You could spend a long time evaluating and deciding on open source projects. For this activity, it's okay if you focus on a project that looks only mildly interesting. You don't need to commit to it. You can always change it later." %}
+    {% include note.html content="You could spend a long time evaluating and deciding on open-source projects. For this activity, it's okay if you focus on a project that looks only mildly interesting. You don't need to commit to it. You can always change it later." %}
 
 6.  After selecting a project, make notes on the following:
 
@@ -43,4 +43,4 @@ To find an open-source project with API doc needs:
     {: .note}
     You don't have to actually reach out or interact with the team yet. You're just gathering information and analyzing documentation needs here.
 
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Find an Open Source Project]({{site.rooturl}}docapis_find_open_source_project.html).*{% endif %}
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Find an open-source project]({{site.rooturl}}docapis_find_open_source_project.html).*{% endif %}

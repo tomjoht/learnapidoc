@@ -46,7 +46,7 @@ A lot of APIs require you to post requests containing JSON messages in the body.
     }
     ```
 
-2.  Change the first `id` value to another integer (whole number). Also, change the pet's name of `fluffy` to something else.
+2.  Change the first `id` value to another integer (a whole number in this case). Also, change the pet's name of `fluffy` to something else.
 
     {: .note}
     Use a unique ID and name that others aren't likely to also use. Also, don't begin your ID with the number 0.
@@ -60,7 +60,7 @@ A lot of APIs require you to post requests containing JSON messages in the body.
 
     * On Windows, look at the prompt path to see your current directory. Then move up a level by typing `cd ../`. Move down a level by typing `cd pets`, where `pets` is the name of the directory you want to move into. Type `dir` to list the contents of the current directory.
 
-3.  After your terminal or command prompt is in the same directory as your JSON file, create the new pet with the following curl request:
+5.  After your terminal or command prompt is in the same directory as your JSON file, create the new pet with the following curl request:
 
     ```bash
     curl -X POST --header "Content-Type: application/json" --header "Accept: application/json" -d @mypet.json "http://petstore.swagger.io/v2/pet"
@@ -75,9 +75,6 @@ A lot of APIs require you to post requests containing JSON messages in the body.
     ```
 
     In the response, check to see that your pet's name was returned.
-
-    {: .tip}
-    Feel free to run this same request a few times more. REST APIs are \"idempotent,\" which means that running the same request more than once won't end up duplicating the results (you just create one pet here, not multiple pets). Todd Fredrich explains idempotency by [comparing it to a pregnant cow](http://www.restapitutorial.com/lessons/idempotency.html). Let's say you bring over a bull to get a cow pregnant. Even if the bull and cow mate multiple times, the result will be just one pregnancy, not a pregnancy for each mating session.
 
 {% include random_ad2.html %}
 
@@ -159,6 +156,16 @@ This example allowed you to see how you can work with curl to create, read, upda
 Although Postman is probably easier to use, curl lends itself to power-level usage. Quality assurance teams often construct advanced test scenarios that iterate through a lot of curl requests.
 
 {% include random_ad3.html %}
+
+## Understanding idempotent methods
+
+One concept important to understand with HTTP methods is "idempotency." Roy Fielding defines idempotency as follows:
+
+> "A request method is considered 'idempotent' if the intended effect on the server of multiple identical requests with that method is the same as the effect for a single such request. Of the request methods defined by this specification, PUT, DELETE, and safe request methods are idempotent" ([RFC 7231, 4.2.2](https://tools.ietf.org/html/rfc7231#section-4.2.2).
+
+In other words, with idempotent methods, you can run them multiple times without multiplying the results. Idempotent methods include GET, PUT, and DELETE, while POST is not (see [8.1.3](https://tools.ietf.org/html/rfc7231#section-8.1.3) for a more detailed list).
+
+Todd Fredrich explains idempotency by [comparing it to a pregnant cow](http://www.restapitutorial.com/lessons/idempotency.html). Let's say you bring over a bull to get a cow pregnant. Even if the bull and cow mate multiple times, the result will be just one pregnancy, not a pregnancy for each mating session.
 
 ## Import curl into Postman
 

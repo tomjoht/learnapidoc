@@ -156,7 +156,7 @@ The zip code (`zip`), app ID (`appid`), and units (`units`) parameters were pass
 
 (In the above code, replace `APIKEY` with your actual API key.)
 
-After the query string, each parameter is concatenated with other parameters through the ampersand `&` symbol. The order of the query string parameters doesn't matter. The order only matters if the parameters are *on the left of the query string* (and thus part of the URL itself). Any configurable parts of the endpoint that appear before the query string are called [path parameters](docapis_doc_parameters.html#path_parameters) (we'll dive into these later).
+After the query string, each parameter is separated from other parameters by the ampersand `&` symbol. The order of the query string parameters doesn't matter. The order only matters if the parameters are *on the left of the query string* (and thus part of the URL itself). Any configurable parts of the endpoint that appear before the query string are called [path parameters](docapis_doc_parameters.html#path_parameters) (we'll dive into these later).
 
 ## Common curl commands related to REST {#common}
 

@@ -72,7 +72,7 @@ git:
 
 github:
   term: GitHub
-  def: "A platform for managing Git repositories. Used for most open source projects. You can also publish documentation using GitHub, either by simply uploading your non-binary text files to the repo, or by auto-building your Jekyll site with GitHub Pages, or by using the built-in GitHub wiki."
+  def: "A platform for managing Git repositories. Used for most open-source projects. You can also publish documentation using GitHub, either by simply uploading your non-binary text files to the repo, or by auto-building your Jekyll site with GitHub Pages, or by using the built-in GitHub wiki."
   link: See [GitHub wikis](pubapis_github_wikis.html) in this course as well as on [pages.github.com/](https://pages.github.com/).
 
 git_repo:
@@ -167,7 +167,7 @@ pull:
 
 pull_request:
   term: Pull Request
-  def: "A request from an outside contributor to merge a cloned branch back into the master branch. The pull request workflow is commonly used with open source projects because developers outside the team will not usually have contributor rights to merge updates into the repository. GitHub provides a user-friendly interface for making and processing pull requests."
+  def: "A request from an outside contributor to merge a cloned branch back into the master branch. The pull request workflow is commonly used with open-source projects because developers outside the team will not usually have contributor rights to merge updates into the repository. GitHub provides a user-friendly interface for making and processing pull requests."
   link: See [Pull Requests](https://www.atlassian.com/git/tutorials/making-a-pull-request).
 
 push:

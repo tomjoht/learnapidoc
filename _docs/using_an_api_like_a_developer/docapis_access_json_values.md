@@ -150,15 +150,6 @@ To print a specific property from the response to the page,
     });
     </pre>
 
-2.  Then in the page body (inside the `body` tags), add the following `div` tag:
-
-    <pre>
-    &lt;body&gt;
-      &lt;h1&gt;Sample page&lt;/h2&gt;
-      <span class="red">&lt;div id=&quot;windSpeed&quot;&gt;Wind speed: &lt;/div&gt;</span>
-    &lt;/body&gt;
-    </pre>
-
     Your code should look as follows:
 
     ```html
@@ -193,11 +184,11 @@ To print a specific property from the response to the page,
     ```
     (In the above code, replace `APIKEY` with your actual API key.)
 
-4.  Refresh the page and you will see the wind speed printed to the page. Here's [an example](https://idratherbewriting.com/learnapidoc/assets/files/weather-windspeed.html) with both wind speed and weather conditions.
+2.  Refresh the page and you will see the wind speed printed to the page. Here's [an example](https://idratherbewriting.com/learnapidoc/assets/files/weather-windspeed.html) with both wind speed and weather conditions.
 
 Here's what we changed:
 
-Inside the tags of the AJAX `done` method, we pulled out the value we want into a variable, like this:
+Inside the tags of the AJAX `done` method, we pulled out the value we wanted into a variable, like this:
 
 ```js
 var content = response.wind.speed;

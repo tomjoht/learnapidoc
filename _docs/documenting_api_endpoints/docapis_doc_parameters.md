@@ -103,9 +103,16 @@ There are more data types in programming, and if you have more specific data typ
 
 ### Max and min values for parameters {#max_min_values}
 
-In addition to specifying the data type, the parameters should indicate the maximum, minimum, and allowed values. For example, if the weather API allows only longitude and latitude coordinates of specific countries, these limits should be described in the parameters documentation.
+In addition to specifying the data type, the parameters should indicate the maximum, minimum, and allowed values if appropriate. For example, if the weather API allows only longitude and latitude coordinates of specific countries, these limits should be described in the parameters documentation. Omitting information about max/min values or other unallowed values (when applicable) is a common pitfall in docs.
 
-Omitting information about max/min values or other unallowed values is a common pitfall in docs. Developers often don't realize all the "creative" ways users might use the APIs. The quality assurance team (QA) is probably your best resource for identifying the values that aren't allowed, because it's QA's job to try to break the API.
+Not every parameter needs max and min values, however. Note these exceptions:
+
+* **Booleans**: With Booleans, the only options are true or false, so there's no need for max/min values.
+* **Strings that use enums**: If a string restricts possible values to enums (an enumerated list), the max/min values wouldn't be appropriate. For example, a geo-related enum might allow only these values: north, south, east, west. There is no max/min value in this case
+
+In general, as you document parameters, if the parameters allow more freeform values (outside of Booleans and enums), consider ways that developers might break the API. For example, if the API provides an ID field, try entering an ID that is 300 characters long. If you can submit a file attachment, try submitting an 80 MB file.
+
+Your developer audience needs to know the limits applicable to fields. Many times your product team might not even know what limitations exist. (Your QA team should know, though, since it's their job to try to push the system to its limits and break it.)
 
 {: .tip}
 When you test an API, try running an endpoint without the required parameters, or with the wrong parameters, or with values that exceed the max or min amounts. See what kind of error response comes back. Include that response in your [status and error codes section](docapis_doc_status_codes.html). I talk more about the importance of testing in [Testing your docs](testingdocs.html).

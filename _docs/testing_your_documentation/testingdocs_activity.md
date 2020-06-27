@@ -1,5 +1,5 @@
 ---
-title: "Activity: Test the docs in your Open Source project"
+title: "Activity: Test the docs in your open-source project"
 course: "Documenting REST APIs"
 permalink: /testingdocs_activity.html
 weight: 5.3

@@ -91,8 +91,7 @@ algolia:
     - _docs/introduction_to_rest_apis/tocstart.html
     - _docs/introduction_to_rest_apis/tocstart_fulldetails.md
     - _docs/activities_pdf/*
-    - /slides/devdoctrends.html
-
+  nodes_to_index: 'p,.description'
 ####### jekyll seo tag configuration #######
 title: Documenting APIs
 tagline: A guide for technical writers and engineers learning how to document APIs

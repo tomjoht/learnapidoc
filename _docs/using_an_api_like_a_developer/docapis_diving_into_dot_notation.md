@@ -135,9 +135,11 @@ At the beginning of the section on [Using an API like a developer](docapis_scena
 Copy the following code into a basic HTML file:
 
 ```html
-<html>
+<!DOCTYPE html>
+ <html>
    <head>
       <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <meta charset="utf-8">
       <link rel="stylesheet"  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
       <title>OpenWeatherMap Integration</title>
       <style>
