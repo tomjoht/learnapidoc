@@ -40,12 +40,12 @@ You have some flexibility and configuration options for your server URL. You can
 
 ```yaml
 servers:
-  - url: https://api.openweathermap.org/data/2.5/
-    description: Production server
-  - url: http://beta.api.openweathermap.org/data/2.5/
-    description: Beta server
-  - url: http://some-other.api.openweathermap.org/data/2.5/
-    description: Some other server
+- url: https://api.openweathermap.org/data/2.5/
+  description: Production server
+- url: http://beta.api.openweathermap.org/data/2.5/
+  description: Beta server
+- url: http://some-other.api.openweathermap.org/data/2.5/
+  description: Some other server
 ```
 
 {% include content/troubleshooting_spec_tip.md %}
