@@ -11,7 +11,7 @@ path2: /openapi_tutorial.html
 
 {% include workflow_map.html step="1" map="content/openapi_tutorial_map.html"  %}
 {% if site.format == "pdf" or site.format == "kindle" %}
-<img src="https://idratherbewritingmedia.com/images/api/openapistep1.png"/>
+<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapistep1.png"/>
 {% endif %}
 
 {% if site.format == "web" %}

@@ -49,15 +49,15 @@ After I had the media and the feed, integrating it into Fire App Builder was eas
 
 Submitting the app into the Appstore was fun and illuminated parts of the developer's workflow that I hadn't previously understood. You can view the Write the Docs podcast app in the Amazon Appstore website [here](https://www.amazon.com/Id-Rather-Be-Writing-Podcast/dp/B06Y23TNC4/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1491708630&sr=1-1&keywords=write+the+docs).
 
-<a href="https://www.amazon.com/Id-Rather-Be-Writing-Podcast/dp/B06Y23TNC4/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1491708630&sr=1-1&keywords=write+the+docs" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/writethedocastfiretvapp.png" />
+<a href="https://www.amazon.com/Id-Rather-Be-Writing-Podcast/dp/B06Y23TNC4/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1491708630&sr=1-1&keywords=write+the+docs" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/writethedocastfiretvapp.png" />
 
 Here's what the app screens look like on your Fire TV:
 
-<img src="https://idratherbewritingmedia.com/images/api/wtdpodcastscreenshot1.png" alt="Write the Docs Podcast app" />
+<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/wtdpodcastscreenshot1.png" alt="Write the Docs Podcast app" />
 
 When you select a video, you see a video preview screen:
 
-<img src="https://idratherbewritingmedia.com/images/api/wtdpodcastscreenshot2.png" alt="Write the Docs Podcast app" />
+<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/wtdpodcastscreenshot2.png" alt="Write the Docs Podcast app" />
 
 All seemed to go well, but then I discovered some bugs that I would not have discovered had I not actually submitted the app into the Appstore. First, I found that device targeting (listing certain features in your Android manifest to identify which Fire devices your app supports) didn't work correctly for Fire TV apps. (This issue wasn't directly related to the app template, though.)
 

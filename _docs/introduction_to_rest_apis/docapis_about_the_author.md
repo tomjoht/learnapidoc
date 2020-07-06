@@ -10,9 +10,9 @@ path1: /docapis_introtoapis.html
 
 In case you'd like to know a little bit about me, I'm currently based in the San Francisco Bay area of California (the South Bay, or Silicon Valley) working at Amazon in Sunnyvale. I mainly write documentation for third-party developers creating apps for the Amazon Appstore, primarily related to Fire TV.
 
-{% if site.format == "web" %}<img src="https://idratherbewritingmedia.com/images/api/tomjohnson.jpg" class="small" style="float: right; padding:1em;"/>
+{% if site.format == "web" %}<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/tomjohnson.jpg" class="small" style="float: right; padding:1em;"/>
 {% else %}
-<img src="https://idratherbewritingmedia.com/images/api/tomjohnsonsmall.jpg" class="small" style="float: right; padding:1em;"/>
+<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/tomjohnsonsmall.jpg" class="small" style="float: right; padding:1em;"/>
 {% endif %}
 
 

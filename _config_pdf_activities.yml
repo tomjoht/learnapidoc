@@ -6,7 +6,7 @@ subparagraph: "This booklet contains a PDF of the activities listed in <b>https:
 rooturl: https://idratherbewriting.com/learnapidoc/
 cover: false
 # if cover is set to true, the title and subtitle aren't used. instead, the cover_image is used instead.
-cover_image: https://idratherbewritingmedia.com/images/api/restapi_kindletitle.png
+cover_image: https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/restapi_kindletitle.png
 
 sidebar: activities
 baseurl: /Users/tomjoht/projects/learnapidoc/_site

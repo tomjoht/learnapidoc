@@ -21,7 +21,7 @@ Jekyll is a Ruby-based [static site generator](pubapis_static_site_generators.ht
 
 Here's a [documentation theme](https://idratherbewriting.com/documentation-theme-jekyll/) that I developed for Jekyll:
 
-<a href="https://idratherbewriting.com/documentation-theme-jekyll/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/jekylldocumentationtheme.png" size="large" alt="My Jekyll Documentation theme" /></a>
+<a href="https://idratherbewriting.com/documentation-theme-jekyll/" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/jekylldocumentationtheme.png" size="large" alt="My Jekyll Documentation theme" /></a>
 
 There isn't any kind of special API reference endpoint formatting here, but the platform is so flexible, you can do anything with it as long as you know HTML, CSS, and JavaScript (the fundamental language of the web). With a static site generator, you have a tool for building a full-fledged website using pretty much any style or JavaScript framework you want. With the Jekyll website, you can include complex navigation, content re-use, variables, and more.
 

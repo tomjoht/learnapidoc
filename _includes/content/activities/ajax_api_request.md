@@ -78,7 +78,7 @@ For this activity, you'll use JavaScript to display the API response on a web pa
 
     The weather response should be logged to the JavaScript Console (due to the `console.log(response)` code in the request). If you expand the object returned to the console, it will look as follows:
 
-    <a class="noCrossRef" href="https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html"><img src="https://idratherbewritingmedia.com/images/api/jsonpayloadweather.png" alt="JSON payload from weather API logged to console" /></a>
+    <a class="noCrossRef" href="https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/jsonpayloadweather.png" alt="JSON payload from weather API logged to console" /></a>
 
     {: .tip}
     You can view the file here: [weather-plain.html](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html).

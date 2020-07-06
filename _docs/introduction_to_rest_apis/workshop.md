@@ -22,7 +22,7 @@ Not all activities in this course are consolidated here, since participants can 
 
 {% comment %}
 {: .tip}
-You can print the activity content as a [PDF here](https://idratherbewritingmedia.com/print/api_workshop_activities.pdf). This might make it easier to follow along on your laptop during the workshop.
+You can print the activity content as a [PDF here](https://s3.us-west-1.wasabisys.com/idbwmedia.com/print/api_workshop_activities.pdf). This might make it easier to follow along on your laptop during the workshop.
 {% endcomment %}
 
 ## 8:00 - 9:00am: Registration + breakfast
@@ -33,7 +33,7 @@ Doors open at 8:00am. Check your name off at the registration table and get a na
 
 [Section: Introduction to API documentation](docapis_introtoapis.html)
 
-<a href="/learnapidoc/slides/intro_api_documentation.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/introapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/intro_api_documentation.html" class="noCrossRef"><img class="slideThumb" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/introapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 1a: Identify your goals" activity="identify_goals" button_type="info" %}
 
@@ -41,7 +41,7 @@ Doors open at 8:00am. Check your name off at the registration table and get a na
 
 [Section: Using an API like a developer](likeadeveloper.html)
 
-<a href="/learnapidoc/slides/using_api_like_developer.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/using-api-developer-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/using_api_like_developer.html" class="noCrossRef"><img class="slideThumb" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/using-api-developer-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 2a: Explore OpenWeatherMap API" activity="explore_openweathermap_api" button_type="primary" %}
 
@@ -61,7 +61,7 @@ Break time
 
 [Section: Documenting API endpoints](docendpoints.html)
 
-<a href="/learnapidoc/slides/documenting_api_endpoints.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/documenting-endpoints-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/documenting_api_endpoints.html" class="noCrossRef"><img class="slideThumb" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/documenting-endpoints-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 3a: What's wrong with this API reference topic" activity="whats_wrong_with_surfreport" button_type="success" %}
 
@@ -71,7 +71,7 @@ Break time
 
 [Section: OpenAPI and Swagger](restapispecifications.html)
 
-<a href="/learnapidoc/slides/openapi_and_swagger.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/openapiswaggertitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/openapi_and_swagger.html" class="noCrossRef"><img class="slideThumb" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapiswaggertitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 4a: Explore Swagger UI through the Petstore Demo" activity="explore_swagger_petstore" button_type="info" %}
 
@@ -100,7 +100,7 @@ Lunch provided through catering.
 
 [Section: Conceptual topics](docconceptual.html)
 
-<a href="/learnapidoc/slides/conceptual_content_api_docs.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/conceptualcontenttitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/conceptual_content_api_docs.html" class="noCrossRef"><img class="slideThumb" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/conceptualcontenttitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 6a: Complete the SendGrid Getting Started tutorial in 5 min" activity="getting_started_tutorial" button_type="warning" %}
 
@@ -114,7 +114,7 @@ Break. Snacks provided.
 
 [Section: Code tutorials](docapiscode.html)
 
-<a href="/learnapidoc/slides/code_tutorials.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/codetutorialsthumb.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/code_tutorials.html" class="noCrossRef"><img class="slideThumb" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/codetutorialsthumb.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 7a: Analyze code tutorials" activity="code_tutorial_analysis" button_type="primary" %}
 
@@ -122,7 +122,7 @@ Break. Snacks provided.
 
 [Section: Publishing API Documentation](publishingapis.html)
 
-<a href="/learnapidoc/slides/publishing_api_docs.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/publishingapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/publishing_api_docs.html" class="noCrossRef"><img class="slideThumb" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/publishingapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 8a: Set up a GitHub wiki" activity="create_github_wiki" button_type="warning" %}
 
@@ -140,7 +140,7 @@ During this time, I'd like to have participants surface specific challenges that
 
 [Section: Thriving in the API doc space](jobapis.html)
 
-<a href="/learnapidoc/slides/thriving_in_api_docs.html" class="noCrossRef"><img class="slideThumb" src="https://idratherbewritingmedia.com/images/api/thrivinginapidocsthumb.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/thriving_in_api_docs.html" class="noCrossRef"><img class="slideThumb" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/thrivinginapidocsthumb.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Jeopardy: Test your knowledge" activity="jeopardy_questions" button_type="info" %}
 

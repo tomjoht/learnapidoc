@@ -11,7 +11,7 @@ path2: /openapi_tutorial.html
 
 {% include workflow_map.html step="5" map="content/openapi_tutorial_map.html"  %}
 {% if site.format == "pdf" or site.format == "kindle" %}
-<img src="https://idratherbewritingmedia.com/images/api/openapistep5.png"/>
+<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapistep5.png"/>
 {% endif %}
 
 The `components` object is unique from the other objects in the OpenAPI specification. In `components`, you store re-usable definitions that might appear in multiple places in your specification document. In our API documentation scenario, we'll store details for both the `parameters` and `responses` object in `components`.
@@ -938,7 +938,7 @@ Also, click the **Model** link to see how the descriptions of each element appea
 
 You'll also notice another "Models" section below all the other paths:
 
-<a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/swaggerui_models_broken_out.png" class="medium" /></a>
+<a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/swaggerui_models_broken_out.png" class="medium" /></a>
 
 By default, Swagger UI displays each object in `components` in a section called "Models" at the end of your Swagger UI display. If you consolidate all schemas into a single object, without using the `$ref` property to point to new objects, you will see just one object in Models. If you split out the objects, then you see each object listed separately, including the object that contains all the references.
 

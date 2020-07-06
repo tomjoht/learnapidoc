@@ -17,7 +17,7 @@ Rounding out the publishing tool options, there is a class of developer doc tool
 
 Just as we have [staticgen.com](https://www.staticgen.com/) that lists common static site generators, there's a similar index of [headless content management systems](https://headlesscms.org/), this one arranged in alphabetical order (rather than ranked by popularity).
 
-<a class="noCrossRef" href="https://headlesscms.org/"><img src="https://idratherbewritingmedia.com/images/api/headlesscms.png"/></a>
+<a class="noCrossRef" href="https://headlesscms.org/"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/headlesscms.png"/></a>
 
 For an in-depth introdution to headless CMSs, see [Headless CMS vs Decoupled CMS: The Ultimate Guide](https://www.coredna.com/blogs/headless-vs-decoupled-cms). There are nuances here that I won't go into, but the basic metaphor is that the head refers to the authoring interface, and the body refers to the storage database or file system. If a CMS is headless, it means the authoring interface is connected to the data storage through an API, and the data storage can live in a completely different system, such as GitHub.
 
@@ -27,7 +27,7 @@ Not all tools listed here are headless CMSs, so I have called them more generall
 
 [Forestry.io](https://forestry.io/) is similar to CloudCannon in that it offers online hosting for Jekyll projects, but it also provides hosting for [Hugo](https://gohugo.io/) and Git. Forestry's emphasis is on providing an online CMS interface for static site generators. The CMS interface gives you a WordPress-like GUI for seeing and managing your content.
 
-<a href="https://forestry.io/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/forestryio.png" /></a>
+<a href="https://forestry.io/" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/forestryio.png" /></a>
 
 The idea behind the CMS interface is that most static site generators ostracize less technical users by forcing them into the code. (For example, when I write a post in Jekyll, usually others who look over my shoulder think I'm actually programming, even though I'm just writing posts in Markdown.) The CMS removes this by making the experience much more user-friendly to non-technical people while also still leveraging the openness and flexibility of the static site generator platform.
 
@@ -39,7 +39,7 @@ Forestry.io (unlike CloudCannon) also offers an on-premise enterprise installati
 
 One of Netlify CMS's key advantages is in simplifying the content development experience for less technical users. But you can also standardize your authoring through the interface. Netlify CMS lets you map the custom fields in your theme to a GUI template, as shown in the image below. These custom fields reduce the chance that authors might use the wrong frontmatter tag in their pages (for example, `intro_blurb` or `IntroBlurb` or `introBlurb`). Here's a sample interface:
 
-<figure><a href="https://www.netlifycms.org/" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/netlifycms.png" style="border: 1px solid #dedede;"/></a><figcaption>Netlify lets you create a user interface for your custom fields.</figcaption></figure>
+<figure><a href="https://www.netlifycms.org/" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/netlifycms.png" style="border: 1px solid #dedede;"/></a><figcaption>Netlify lets you create a user interface for your custom fields.</figcaption></figure>
 
 Your content source can be stored in GitHub, GitLab, or BitBucket. Netlify CMS also integrates with [Netlify](pubapis_hosting_and_deployment.html#netlify), which is a popular hosting and deployment service for static site projects.
 
@@ -58,7 +58,7 @@ Most importantly, Readme.com includes specific features for displaying API docum
 
 Overall, Readme.com provides a robust GUI for creating API documentation in a way that is more extensive and well-designed than virtually any other platform available. The output includes an interactive, try-it-out experience with endpoints:
 
-<img class="medium" src="https://idratherbewritingmedia.com/images/api/readmeiotryitout.png" style="border: 1px solid #dedede;" />
+<img class="medium" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/readmeiotryitout.png" style="border: 1px solid #dedede;" />
 
 The experience is similar to Swagger in that the response appears directly in the documentation. This API Explorer gives you a sense of the data returned by the API.
 

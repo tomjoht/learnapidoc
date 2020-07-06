@@ -146,7 +146,7 @@ For a directory of API documentation sites on the open web, see the [Programmabl
 
 {% include random_ad.html %}
 
-<a rel="nofollow" href="http://www.programmableweb.com/apis/directory" class="noExtIcon"><img src="https://idratherbewritingmedia.com/images/api/programmableweb.png" alt="Programmable web directory" /></a>
+<a rel="nofollow" href="http://www.programmableweb.com/apis/directory" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/programmableweb.png" alt="Programmable web directory" /></a>
 
 {% include random_ad3.html %}
 

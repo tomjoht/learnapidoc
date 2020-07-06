@@ -1,5 +1,5 @@
 title: Documenting REST APIs
-media: https://idratherbewritingmedia.com/
+media: https://s3.us-west-1.wasabisys.com/idbwmedia.com/
 language: english
 sidebar: docapis
 
@@ -103,7 +103,7 @@ twitter:
   username: tomjohnson
   card: summary
 
-logo: https://idratherbewritingmedia.com/images/idratherbewriting-site-logo.png
+logo: https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/idratherbewriting-site-logo.png
 
 social:
   name: Tom Johnson

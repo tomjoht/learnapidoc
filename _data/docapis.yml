@@ -395,10 +395,10 @@ folders:
   description: "The API documentation landscape is full of jargon, acronyms, and many new terms. This glossary provides a list of terms and definitions. Additionally, this section contains additional exercises and information, such as more activities for calling APIs, or more info about alternative specifications."
   folderitems:
 
-  - title: "Glossary for API documentation"
+  - title: "API Glossary"
     jurl: /api-glossary.html
 
-  - title: "REST API activities"
+  - title: "More REST API activities"
     jurl: /docapis_more_rest_activities.html
 
   - title: "Activity: Get event information using the Eventbrite API"

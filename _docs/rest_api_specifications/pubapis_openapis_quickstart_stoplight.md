@@ -469,13 +469,13 @@ To enter the response in Stoplight Studio:
 
 2.  Expand the **Response information** button above to see the sample response information you'll be adding. You'll likely need to consult this screenshot as you enter the response information:
 
-    {% include course_image.html url="https://idratherbewritingmedia.com/images/api/schema_object_stoplight.png" size="large" filename="schema_object_stoplight" ext_print="png" ext_web="png" alt="Schema object editor" caption="Schema object editor" %}
+    {% include course_image.html url="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/schema_object_stoplight.png" size="large" filename="schema_object_stoplight" ext_print="png" ext_web="png" alt="Schema object editor" caption="Schema object editor" %}
 
 3.  In the schema editor, click the **+** button next to **object**. This adds a property under object. Then customize the property's key-value pairs until it looks like the example above.
 
     {% include callout.html type="primary" title="Tips for working with the Schema editor" content="As you enter content using the Schema editor, note the following behavior. Clicking the **+** plus button next to a property creates a new property at that level. If the property you're adding is an object, as soon as you change its data type from string (the default) to object, a plus button will appear at that level too. First get the structure right, and then go back and add descriptions, requirements, and other details." %}
 
-4.  After you finish entering the property structure so that it looks like the preceding screenshot, go through and add a description and example for each property. Click the **Description** button <img src="https://idratherbewritingmedia.com/images/api/stoplightbookicon.png" alt="Description" /> and the **Additional Properties** button <img src="https://idratherbewritingmedia.com/images/api/stoplightadditionalproperties.png" alt="Additional Properties" /> to add this information.
+4.  After you finish entering the property structure so that it looks like the preceding screenshot, go through and add a description and example for each property. Click the **Description** button <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplightbookicon.png" alt="Description" /> and the **Additional Properties** button <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplightadditionalproperties.png" alt="Additional Properties" /> to add this information.
 
     {% include course_image.html size="large" filename="stoplight_entering_descriptions" ext_print="png" ext_web="png" alt="Entering descriptions in the GUI editor" caption="Entering descriptions in the GUI editor" %}
 
@@ -501,7 +501,7 @@ A common scenario for re-use with responses might be 401 (unauthorized response)
 
     {% include course_image.html size="large" filename="schema_editor_401_stoplight" ext_print="png" ext_web="png" alt="Creating a re-usable model" caption="Creating a re-usable model" %}
 
-3.  Click the **Required?** button <img src="https://idratherbewritingmedia.com/images/api/stoplighteditorrequired.png" alt="Required button" /> and select required for both properties.
+3.  Click the **Required?** button <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplighteditorrequired.png" alt="Required button" /> and select required for both properties.
 3.  Return to your **weather** path and click **+ Response** to create a new response.
 4.  For the response code, select **401: Unauthorized**.
 5.  Click **+ Add Body**.
