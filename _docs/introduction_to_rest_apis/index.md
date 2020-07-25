@@ -68,9 +68,9 @@ Descriptions of each section in this course are provided below:
 * **[{{folder.title}}]({{folder.jurl | remove_first: "/" }})**: {{folder.description}}
 {% endfor %}
 
-## Sequence and activities
-
 {% include image_ad_right.html %}
+
+## Sequence and activities
 
 You don't have to read the sections in order &mdash; feel free to skip around as you prefer. But some of the earlier sections (such as the section on [Using a REST API like a developer](likeadeveloper.html) and [Documenting endpoints](docendpoints.html)) follow a somewhat sequential order with the same weather API scenario.
 

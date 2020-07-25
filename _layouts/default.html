@@ -36,6 +36,10 @@
 {% endcomment %}
                 {{content}}
 
+                <div class="donateButton">
+                {% include coffee_button.html %}
+                </div>
+                
                 {% unless page.type == 404 %}
 
                 {% include progress.html %}
@@ -43,12 +47,6 @@
                 <p class="note" style="margin-top:30px">If this information was helpful, would you consider adding a <a href="https://idratherbewriting.wufoo.com/forms/sxgxvqb1ahtv6q/">course review comment</a>?</p>
                 {% endcomment %}
                 {% include next.html %}
-
-              
-                <div class="donateButton">
-                {% include donate_button.html %}
-                </div>
-
 
                 {% include single_post_comics.html %}
 
