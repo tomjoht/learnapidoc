@@ -495,6 +495,7 @@ padding-bottom: 10px;
     font-family: arial;
     font-size:15px;
     color: gray;
+    overflow: auto !important;
 }
 .sponsorMessageTitle {
     font-weight: bold;
@@ -696,4 +697,18 @@ margin-bottom:15px;
 
 a:focus {
     color: black;
+}
+
+.videoComicFloat img {
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    float: right;
+    margin-left: 10px;
+    //max-width: 175px;
+}
+.videoComicBlock img {
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    margin: 10px 0px;
+    //max-width: 175px;
 }

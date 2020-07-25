@@ -129,6 +129,8 @@ When you click Authorize, the `description` and other security details appear:
 
 After users enter an API key and click **Authorize**, the authorization method is set for as many requests as they want to make. The authorization session expires only when users refresh the page.
 
+{% include image_ad_right.html %}
+
 ## <i class="fa fa-user-circle"></i> Test out how authorization works
 
 Now that we've added authorization, let's try making an actual API request. In the Swagger Editor (the right pane), click the **Authorize** button, paste the sample API key shown in the description into the **Value** field (or use your own [OpenWeatherMap API key](docapis_get_auth_keys.html#openweathermap_apikey)), and click **Authorize**. Then click **Close** to close the authorization modal.

@@ -44,6 +44,8 @@ Mailchimp's API best practices include tips about fault tolerance, using specifi
 
 Coinbase doesn't specifically refer to these topics as best practices; instead, the navigation shows a laundry list of topics. Pagination is one of these topics worth expanding on here. How does pagination relate to APIs? Suppose your API endpoint returns all items in a user account. There could be thousands of items, and if all items were returned in the same response, it might take a long time for the API to gather and return the large amount of data. As a result, just like with searches on Google, the response returns a limited set, such as the first ten items, and then includes a URL that you can use to go to the next set of responses. Pagination refers to advancing to the next page of responses.
 
+{% include image_ad_right.html %}
+
 Earlier, when defining the characteristics of REST, I mentioned [HATEOS](docapis_what_is_a_rest_api.html#stateless_and_cacheable), or "Hypermedia as the Engine of Application State." Links in responses that return more results is one example of HATEOS.
 
 Programmatically handling the URL to get more responses can be kind of tricky. If you want to get all items returned and then filter and sort the items, looking for specific values to pull out, how would you do this using the URL returned in the response? Your team might have some advice for developers handling these scenarios. Most likely, the endpoint would offer filters as parameters to apply to the endpoint, so that the initial response would contain the item set you wanted. This kind of advice might be appropriate in API best practices.

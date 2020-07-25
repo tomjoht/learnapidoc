@@ -196,6 +196,8 @@ When you load the page and click the button, the following should appear:
 
 You can view the file <a href="https://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html">idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html</a>.
 
+{% include image_ad_right.html %}
+
 ## Next section
 
 As you've progressed through the exercises for using an API like a developer, you've gained a high-level understanding of how REST APIs work, what information developers need, how they might use an API, how they make requests, evaluate responses, and other details.

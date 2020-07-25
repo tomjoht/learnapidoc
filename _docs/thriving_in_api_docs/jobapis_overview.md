@@ -45,6 +45,8 @@ Although users could construct their own code when using the REST endpoints, mos
 
 When I worked at Badgeville, we developed a collection of JavaScript widgets that developers could easily copy and paste into their web pages, making a few adjustments as needed. Developers could also create their own JavaScript widget code (from scratch) based on calls to the REST endpoints, but sometimes it can be tricky to know how to retrieve all the right information and then manipulate it in the right way in your chosen language. It's easier to use the pre-built JavaScript widgets.
 
+{% include image_ad_right.html %}
+
 Remember that developers are typically using a REST API as a *third-party* service. The developers' primary focus is their own company's code; they're just leveraging your REST API as an additional, extra service. As such, developers want to just get in, get the code, and get out. This get-in-and-get-out mentality is why companies need to provide multiple client SDKs in as many languages as possible &mdash; these client implementations allow developers to implement the API quickly and efficiently.
 
 If you were recruiting for a technical writer to document Algolia, how would you word the job requirements? Can you now see why even though the core work involves documenting the REST API, it would also be good to have an "ability to read code in one or more programming languages, such as Java, C++, or Python."

@@ -16,6 +16,8 @@ After completing the [API reference tutorial](docapis_api_reference_tutorial_ove
 
 {% include random_ad.html %}
 
+{% include image_ad_right.html %}
+
 ## Next steps
 
 Now that you understand the essential sections to cover in documenting API endpoints, let's look at standardized approaches for describing these sections, primarily with the [Overview of REST API specification formats](pubapis_rest_specification_formats.html).

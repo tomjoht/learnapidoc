@@ -29,6 +29,8 @@ You don't need to use the wizard. You can also generate Doxygen through a config
 
 In contrast to Javadoc, Doxygen also allows you to incorporate external files written in Markdown. And Doxygen provides a search feature. These are two features that Javadoc lacks.
 
+{% include image_ad_right.html %}
+
 Doxygen is maintained by a single developer and, like Javadoc, hasn't changed much over the years. In my opinion, the interface is highly dated and somewhat confusing. But C++ developers will be accustomed to it.
 
 {% include random_ad2.html %}

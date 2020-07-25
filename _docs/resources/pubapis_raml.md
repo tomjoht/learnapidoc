@@ -32,6 +32,8 @@ You can see a demo with the [Google Drive API](https://mulesoft.github.io/api-co
 
 It's important to note that with these REST API specifications (as with the OpenAPI spec), you're not just describing an API to generate a nifty doc output with an interactive console. There are tools that can also generate client SDKs and other code from the spec into a library that you can integrate into your project. These tools can make it easier for developers to make requests to your API and receive responses.
 
+{% include image_ad_right.html %}
+
 Additionally, the interactive console can provide a way to prototype and beta test your API before developers even start coding. Mulesoft offers a "mocking service" for your API that simulates calls and responses. The idea of the mocking service is to design your API the right way from the start, without iterating with different versions as you try to get the endpoints right.
 
 ## Sample spec for OpenWeatherMap API

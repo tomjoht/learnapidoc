@@ -65,6 +65,8 @@ Here's an example from Yelp's documentation:
 
 You can format the values in a variety of ways (aside from a table). If you're using a definition list or other non-table format, be sure to develop styles that make the values easily readable.
 
+{% include image_ad_right.html %}
+
 ## Four types of parameters
 
 REST APIs have four types of parameters:

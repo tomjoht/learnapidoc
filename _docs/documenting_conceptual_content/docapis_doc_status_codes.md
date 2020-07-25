@@ -51,6 +51,8 @@ With a GET request, it's pretty easy to tell if the request is successful becaus
 
 All too often, status codes are uninformative, poorly written, and communicate little or no helpful information to the user to overcome the error. Ultimately, status codes should assist users in recovering from errors.
 
+{% include image_ad_right.html %}
+
 You can see a list of common [REST API status codes here](http://www.restapitutorial.com/httpstatuscodes.html) and a [general list of HTTP status codes here](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes). Although it's probably good to include a few standard status codes, comprehensively documenting *all standard* status codes, especially if rarely triggered by your API, is unnecessary.
 
 ## Where to list the HTTP response and error codes

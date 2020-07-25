@@ -71,6 +71,8 @@ Instead, with the new process, the writer just merged her `development` branch i
 
 I've summarized the success and overall approach, but there were a lot of questions and hurdles in developing the process. I'll detail these main challenges in the following sections.
 
+{% include image_ad_right.html %}
+
 ### Inability to do it ourselves
 
 The biggest challenge, ironically, was probably with myself &mdash; dealing with my own perfectionist, controlling tendencies to do everything on my own, just how I wanted. (This is probably both my biggest weakness and strength as a technical writer.) It's hard for me to relinquish control and have another team do the work. We had to wait *about a year* for the overworked engineering team's schedule to clear up so they would have the bandwidth to do the project.

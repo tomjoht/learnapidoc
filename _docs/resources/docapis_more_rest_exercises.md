@@ -33,6 +33,8 @@ In these examples, I usually just print the code to a web page to visualize the 
 
 Each API requires you to use an API key, token, or some other form of authentication. Register for your own API keys.
 
+{% include image_ad_right.html %}
+
 ## Swap out APIKEY in code samples
 
 I never insert API keys in code samples for a few reasons:

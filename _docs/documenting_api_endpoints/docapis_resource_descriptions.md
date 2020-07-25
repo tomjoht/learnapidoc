@@ -96,6 +96,8 @@ For another example of an API with resources and endpoints, check out the [Trell
 {: .tip}
 The description of the resource is likely something you'll re-use in different places &mdash; product overviews, tutorials, code samples, quick references, etc. As a result, put a lot of effort into crafting it. Consider storing the description in a re-usable snippet in your authoring tool so that you can list it without resorting to copy/paste methods in your [quick start guide](docapis_doc_quick_reference.html).
 
+{% include image_ad_right.html %}
+
 ## Terminology for describing the resource
 
 The exact terminology for referring to *resources* varies. The "things" that you access using a URL can be referred to in a variety of ways, but "resource" is the most common term because you access them through a URL, or uniform *resource* locator. Other than "resources," you might see terms such as *API calls*, *endpoints*, *API methods*, *calls*, *objects*, *services*, and *requests*. Some docs get around the situation by not calling them anything explicitly except "Reference."

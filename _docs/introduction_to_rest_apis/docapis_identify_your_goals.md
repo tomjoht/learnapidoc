@@ -16,4 +16,6 @@ Ramping up on API documentation, developing a portfolio of API documentation wri
 
 {% include random_ad2.html %}
 
+{% include image_ad_left.html %}
+
 {% include random_ad3.html %}

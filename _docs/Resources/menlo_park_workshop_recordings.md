@@ -77,3 +77,5 @@ Video 5 of 5:
 </div>
 
 {% endif %}
+
+{% include image_ad_left.html %}

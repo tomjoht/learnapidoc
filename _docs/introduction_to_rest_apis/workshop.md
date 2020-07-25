@@ -151,6 +151,8 @@ During this time, I'd like to have participants surface specific challenges that
 
 The general workshop ends and we transition into any individual consulting as desired. If you have specific questions not addressed during the workshop, let's chat specifically about them. For all those interested, I'll write your name on then board and then just meet with you individually for about 5 minutes each until everyone's questions are answered.
 
+{% include image_ad_left.html %}
+
 ## Post-workshop review
 
 At the close of the workshop, please take this [review survey](https://www.questionpro.com/t/AOaGwZgMcu). Thanks.

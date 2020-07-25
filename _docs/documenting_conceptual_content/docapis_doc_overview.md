@@ -71,6 +71,8 @@ IBM Watson Assistant starts off with a brief summary of the service, followed by
 
 ## <i class="fa fa-user-circle"></i> Activity with API overviews
 
+{% include image_ad_right.html %}
+
 With the [open-source project you identified](docapis_find_open_source_project.html), identify the API overview. Then answer the following questions:
 
 1. Does the documentation have an API overview?

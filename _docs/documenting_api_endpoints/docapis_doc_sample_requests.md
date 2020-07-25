@@ -81,6 +81,8 @@ How many different requests and responses should you show? There's probably no e
 
 {% include random_ad.html %}
 
+{% include image_ad_right.html %}
+
 ## Requests in various languages
 
 As noted earlier, in [What is a REST API?](docapis_what_is_a_rest_api.html), REST APIs are language agnostic. The universal protocol helps facilitate widespread adoption across programming languages. Developers can code their applications in any language, from Java to Ruby to JavaScript, Python, C#, Node JS, or something else. As long as developers can make an HTTP web request in that language, they can use the API. The response from the web request will contain the data in either JSON or XML.

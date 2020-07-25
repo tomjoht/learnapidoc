@@ -81,6 +81,7 @@ p.note {
     background: #f1f1f1;
     padding: 1em;
     border-left: 1em solid orange;
+    overflow: auto;
 }
 
 p.survey {
@@ -93,12 +94,14 @@ p.tip {
     background: #f1f1f1;
     padding: 1em;
     border-left: 1em solid deepskyblue;
+    overflow: auto;
 }
 
 p.warning {
     background: #f1f1f1;
     padding: 1em;
     border-left: 1em solid red;
+    overflow: auto;
 }
 
 p.note::before {

@@ -161,7 +161,9 @@ Although Postman is probably easier to use, curl lends itself to power-level usa
 
 One concept important to understand with HTTP methods is "idempotency." Roy Fielding defines idempotency as follows:
 
-> "A request method is considered 'idempotent' if the intended effect on the server of multiple identical requests with that method is the same as the effect for a single such request. Of the request methods defined by this specification, PUT, DELETE, and safe request methods are idempotent" ([RFC 7231, 4.2.2](https://tools.ietf.org/html/rfc7231#section-4.2.2).
+> A request method is considered "idempotent" if the intended effect on the server of multiple identical requests with that method is the same as the effect for a single such request. Of the request methods defined by this specification, PUT, DELETE, and safe request methods are idempotent" ([RFC 7231, 4.2.2](https://tools.ietf.org/html/rfc7231#section-4.2.2).
+
+{% include image_ad_right.html %}
 
 In other words, with idempotent methods, you can run them multiple times without multiplying the results. Idempotent methods include GET, PUT, and DELETE, while POST is not (see [8.1.3](https://tools.ietf.org/html/rfc7231#section-8.1.3) for a more detailed list).
 

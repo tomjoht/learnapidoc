@@ -64,6 +64,8 @@ The experience is similar to Swagger in that the response appears directly in th
 
 There are some challenges with Readme.com. It isn't free, so you'll need licenses per author. Additionally, there isn't any content re-use functionality (currently), so if you have multiple outputs for your documentation that you're single sourcing, Readme.com may not be for you. Finally, if you want to customize your own design or implement a feature not supported, you can't just hack the code (though you can adjust the stylesheet). Overall, with a hosted solution like Readme.com, you're stuck within the platform's constraints.
 
+{% include image_ad_right.html %}
+
 Even so, the output is sharp, and the talent behind this site is top-notch. The platform is continuously growing with new features, and there are many high-profile companies with their docs on Readme. If you consider how much time it takes to build and deploy your own doc solution, going with a site like Readme.com will save you a lot of time. It will let you focus on your content while also adhering to best practices with site design.
 
 Here are a few sample API doc sites built with Readme.com:

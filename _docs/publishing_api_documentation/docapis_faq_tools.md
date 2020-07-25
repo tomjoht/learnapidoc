@@ -22,6 +22,8 @@ Q:  We use Madcap Flare but document our APIs in Swagger. We're considering drop
 
 {% include random_ad2.html %}
 
+{% include image_ad_right.html %}
+
 Q: We're considering using GitHub as our documentation CMS, but we're unsure what it can support. Does it provide a documentation portal? HTML generation? An editor to add/update content? Themes? bi-directional sync with Git? What is the process flow if it allows documentation?
 
 :  GitHub is a solid platform for storing content, especially for open-source projects. It's not a CMS, and it will require you to work out your [Git workflows](pubapis_version_control.htm) for development, branching, and collaboration. Most people use GitHub as a storage source, not for the final presentation of the docs. GitHub will render Markdown into HTML, but most don't use the default HTML rendered display from GitHub wikis, as the display isn't customizable. However, note that you can store your branded content and higly customized theme for any [static site generator](https://staticgen.com) in GitHub, as well as for any XML project. The only requirement is that your content be text files rather than binary files (e.g., Word, FrameMaker).

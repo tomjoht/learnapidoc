@@ -23,6 +23,8 @@ The API landscape is diverse, with many different types of APIs. Although this c
 
 One way to sort the different types of APIs is to categorize them into two general buckets: web service APIs versus native library APIs. Web service APIs send and receive messages across the web using HTTP to transport the request and response; web service APIs are language agnostic. Native library APIs, on the other hand, involve incorporating code directly into your project for the desired functionality; native library APIs are language-specific.
 
+{% include image_ad_right.html %}
+
 The following list describes the most common types of APIs you will encounter:
 
 * **Native library APIs**: Native library APIs, also called "library-based APIs," refer to code libraries (for example, JAR files) that developers add directly to their projects to provide additional functionality through classes or other functions that can be called locally. These APIs are specific to a programming language &mdash; e.g., Java, C++, Python, Ruby, .NET, and so on. With native library APIs, the functions are incorporated locally within the code to expand the operations you can perform within your project, usually without requiring you to access resources in the cloud. Native library APIs require you to be familiar with the programming language and tend to be the most challenging type of API to document for technical writers. See [Native Library APIs](nativelibraryapis_overview.html) in this course for more information into Java APIs.

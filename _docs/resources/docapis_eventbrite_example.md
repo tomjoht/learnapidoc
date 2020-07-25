@@ -26,6 +26,8 @@ Eventbrite is an event management tool, and you can interact with it through an 
 
 Eventbrite uses the [OAuth method for authorization](docapis_more_about_authorization.html#oauth). To make any kind of requests, you'll need an OAuth token, which you can learn about in [Eventbrite's Authentication docs](https://www.eventbrite.com/developer/v3/api_overview/authentication/).
 
+{% include image_ad_right.html %}
+
 If you want to sign up for your own token, first [sign in to Eventbrite](https://www.eventbrite.com), and then create and register your app [here](https://www.eventbrite.com/myaccount/apps/). After you create your app, click **Show Client Secret and OAuth Token** and copy the "Anonymous access OAuth token."
 
 ## 2. Determine the resource and endpoint you need

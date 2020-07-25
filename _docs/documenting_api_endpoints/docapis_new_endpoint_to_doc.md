@@ -26,6 +26,8 @@ The project manager calls you over and says the team has a new endpoint for you 
 
 {% include random_ad3.html %}
 
+{% include image_ad_right.html %}
+
 "Here's the wiki page that contains info about the new API," the manager says. The information is scattered and random on the wiki page.
 
 Most technical writers don't start from scratch with documentation projects. Engineers usually dump essential information onto an internal wiki page (or they communicate the info during meetings). However, the information on the wiki page will likely be incomplete and unnecessarily technical in places (like describing the database schema or high-level architectural workflows). The info might also include internal-only information (for example, test logins, access protocols, or code names) or have sections that are out-of-date.

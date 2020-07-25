@@ -75,6 +75,8 @@ Building the specification document is probably the most important activity in A
 *   QA can automate unit testing from the API description to speed up endpoint testing across a variety of parameters and scenarios.
 *   Technical writers can add descriptions and other examples to the specification description, and then generate interactive documentation without worrying about developing templates, styles, or other formatting and organization.
 
+{% include image_ad_right.html %}
+
 If the OpenAPI specification really powers all of these other activities, doesn't it make sense to build your platform around the specification? And from a larger view, to build your business around the specification? That's what Stoplight is doing. It's what makes them fundamentally different from other API platforms. I think it's what Kin Lane meant when he said Stoplight provides "new way to look at the API life cycle &mdash; a perspective that spans multiple dimensions, including design, definition, virtualization, documentation, testing, discovery, orchestration, and client."
 
 ## Not a post-design artifact to generate documentation

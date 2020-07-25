@@ -8,6 +8,8 @@ section: jobapis
 path1: /jobapis.html
 ---
 
+{% include image_ad_right.html %}
+
 This part of the activity might be challenging, but here is where you'll start building some examples for your portfolio.
 
 {% include random_ad.html %}

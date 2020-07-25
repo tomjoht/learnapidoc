@@ -21,6 +21,8 @@ In a previous topic, [Documenting code](docapis_codesamples_bestpractices.html),
 
 I like to start abstract topics by grounding them an actual experience. A recent documentation project I worked on involved creating video skills for Fire TV apps &mdash; developing the backend logic to make your streaming media apps voice interactive, so users could say "Play *Interstellar*," (or some other movie) and the video would play in your app.
 
+{% include image_ad_right.html %}
+
 When users say these Alexa commands, Alexa interprets the commands and packages up the info into a structured JSON request that it sends a partner's Lambda code. Lambda, an AWS service, provides serverless computing. Partners are supposed to listen for the incoming requests and then develop their own code to respond appropriately to the requests, presumably retrieving the media identifier for *Instellar* (in this example) and sending this media identifier to their Fire TV app to play.
 
 The implementation involves coding a Lambda function. To help developers, engineers provided a sample Lambda function (in Node JS), but without explanation. As I was working on the documentation for this, I felt a need to explain the logic of the Lambda code.

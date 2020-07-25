@@ -43,6 +43,8 @@ The ideal open-source API project should meet the following criteria. The projec
 
 When you look for API projects, recognize that there are many different types of APIs. Many of the APIs you run across might be [native library APIs](nativelibraryapis_overview.html), which don't use web protocols to make requests and responses (as REST APIs do) but rather involve incorporating a language-specific library into the project. If the API seems to focus on a particular language, and the API documentation looks auto-generated, it's probably a native-library API.
 
+{% include image_ad_right.html %}
+
 On the other hand, if the project's documentation contains these core reference sections for their endpoints, it's probably a REST API.
 
 ## Contributing will require Git skills

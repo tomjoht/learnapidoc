@@ -225,6 +225,8 @@ You can find [examples of different blueprints here](https://github.com/apiaryio
 
 Many tools can parse an API blueprint. [Drafter](https://github.com/apiaryio/drafter) is one of the main parsers of the Blueprint. Many other tools build on Drafter and generate static HTML outputs of the blueprint. For example, [Aglio](https://github.com/danielgtaylor/aglio) can parse a blueprint and generate static HTML files.
 
+{% include image_ad_right.html %}
+
 For a more comprehensive list of tools, see the [Tooling](https://apiblueprint.org/tools.html) section on apiblueprint.org. (Some of these tools require quite a few prerequisites, so I omitted the tutorial steps here for generating the output on your own machine.)
 
 ## Create a sample HTML output using API Blueprint and Apiary

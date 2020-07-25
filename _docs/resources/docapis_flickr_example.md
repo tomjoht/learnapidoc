@@ -72,6 +72,8 @@ If you submit the request directly in your browser using the given URL, you can 
 
 <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/flickrresponseinbrowser.png" alt="Flickr response in the browser" />
 
+{% include image_ad_right.html %}
+
 {: .tip}
 I'm using the <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en">JSON Formatting extension for Chrome</a> to make the JSON response more readable. Without this plugin, the JSON response is compressed.
 

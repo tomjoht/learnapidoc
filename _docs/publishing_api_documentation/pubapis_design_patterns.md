@@ -17,7 +17,7 @@ In the previous topic, we browsed through a long [survey of API doc sites](pubap
 
 ## Pattern 1: Structure and templates {#structure_and_templates}
 
-One overriding commonality with API documentation is that they share a common structure, particularly with the reference documentation around the endpoints. In an earlier section, we explored the common sections in [API endpoint documentation](docendpoints.html).
+{% include image_ad_right.html %} One overriding commonality with API documentation is that they share a common structure, particularly with the reference documentation around the endpoints. In an earlier section, we explored the common sections in [API endpoint documentation](docendpoints.html).
 
 From a tool perspective, if you have common sections to cover with each endpoint, it makes sense to formalize a template to accommodate the publishing of that content. The template can provide consistency, automate publishing and styles, and allow you to more easily change the design without manually reformatting each section. (Without a template, you could just remember to add the same sections on each page, but this requires more effort to be consistent.) With a template, you can insert various values (descriptions, methods, parameters, etc.) into a highly stylized output, complete with sophisticated styling.
 

@@ -78,6 +78,8 @@ If you incorporate Bootstrap, you will likely need to restrict the namespace so 
 
 Overall, if your API docs are relatively small, you can try putting all your information in the spec first. If you have a complex API or just an API that has a lot of extra information not relevant to the spec, look for alternative approaches. But try to fit it into the spec first. This keeps your information in one space.
 
+{% include image_ad_right.html %}
+
 There are many benefits to using a spec that you will miss out on if you choose another approach. When you store your information in a spec, many other tools can parse the spec and generate interactive displays. Putting your content in the OpenAPI spec format allows you to separate your content from the presentation layer, instantly taking advantage of any new API tooling or platform that can parse the spec.
 
 ## Option 2: Embed Swagger UI in your docs {#option2}

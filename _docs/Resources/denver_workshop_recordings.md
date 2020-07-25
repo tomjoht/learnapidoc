@@ -58,4 +58,6 @@ Part III:
 
 {% include random_ad3.html %}
 
+{% include image_ad_left.html %}
+
 {% endif %}

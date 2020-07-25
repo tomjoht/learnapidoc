@@ -202,6 +202,8 @@ paths:
 
 #### Responses object {#responses}
 
+{% include image_ad_right.html %}
+
 The other substantial property in the operations object is the [`responses` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#responsesObject). For the `responses` property, you typically reference a full definition in the `components` object, so I'll cover the `responses` object in the next section &mdash; [Step 5: The components object](pubapis_openapi_step5_components_object.html). (There's already too much detail in this step as is.)
 
 For now, so that the Swagger Editor will validate and show our path, let's just add some placeholder content for `responses`:

@@ -15,6 +15,8 @@ path1: /restapispecifications.html
 
 {% include content/activities/create_redoc_display.md %}
 
+{% include image_ad_right.html %}
+
 {% include random_ad2.html %}
 
 {% include random_ad3.html %}

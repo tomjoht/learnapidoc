@@ -97,6 +97,8 @@ With both the OpenWeatherMap and Aeris Weather API, you can also make these requ
 
 By looking at these two different weather APIs, you can see some differences in the way the information is called and returned. However, fundamentally both APIs have endpoints that you can configure with parameters. When you make requests with the endpoints, you get responses that contain information, often in JSON format. This is the core of how REST APIs work &mdash; you send a request and get a response.
 
+{% include image_ad_right.html %}
+
 ## Automatically import the Postman collections
 
 Postman has a nifty import feature that will automatically pull in the same requests you've been entering. You can click the Run in Postman buttons below to automatically import these two collections into your own instance of Postman.

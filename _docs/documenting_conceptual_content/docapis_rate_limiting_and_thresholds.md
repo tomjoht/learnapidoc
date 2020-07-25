@@ -60,6 +60,8 @@ Linkedin's rate limiting documentation explains that different API endpoints hav
 
 Bitly provides basic information on the page above but also links to [best practices for avoiding rate-limiting issues](http://dev.bitly.com/best_practices.html). These best practices include tips such as caching, security issues, long page loads, batch processing, high-volume requests, URL encoding, and more.
 
+{% include image_ad_right.html %}
+
 By looking at these examples, you can see that while rate limiting might seem like a straightforward topic, there are layers of depth and complexity to cover. The relevance of the topic depends on your API and the rate-limiting policies your company sets, but this information cannot be entirely offloaded to Marketing to handle. So much of the information around rate limiting directly affects development.
 
 ## <i class="fa fa-user-circle"></i> Activity with rate limits

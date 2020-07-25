@@ -24,6 +24,8 @@ And that's it. If you have a lot of endpoints to document, you'll probably want 
 
 {% include random_ad2.html %}
 
+{% include image_ad_right.html %}
+
 ## Next steps
 
 Now that you've completed the [API reference tutorial](docapis_api_reference_tutorial_overview.html), you're ready to do some activities. There are two activities in this section:

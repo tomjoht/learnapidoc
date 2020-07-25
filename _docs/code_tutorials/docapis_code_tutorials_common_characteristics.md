@@ -14,3 +14,5 @@ Code tutorials describe how developers will use your APIs and other services to 
 Code tutorials have common sections or characteristics (whether explicitly called out as such or not). Starting with a template that lists these sections can help you gather the right information when you're developing your own tutorials.
 
 {% include content/activities/code_tutorial_analysis.md %}
+
+{% include image_ad_left.html %}

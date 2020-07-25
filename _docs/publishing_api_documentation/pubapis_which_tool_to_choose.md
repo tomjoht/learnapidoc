@@ -48,6 +48,8 @@ For example, maybe it's more important to reduce the time spent with tools than 
 
 If you want power and control to create the complex features you need (maybe you want to build a custom theme or build your doc site with unique branding), then use a static site generator such as [Hugo](pubapis_static_site_generators.html#hugo), [Sphinx](pubapis_static_site_generators.html#sphinx), or [Jekyll](pubapis_static_site_generators.html#jekyll). If you have serious doc needs (maybe you migrated from the world of DITA and are used to more robust tooling), you're going to want a platform that can go as deep as you want to take it. Jekyll, Sphinx, and Hugo offer this depth in the platform.
 
+{% include image_ad_right.html %}
+
 Granted, this power and control will require a more complex platform and learning curve, but you can start out easy with a ready-made theme and later work your way into custom development as desired.
 
 If you don't have web development skills and don't want to tinker with the theme or other code development, choose a solution such as [Readme.com](pubapis_hybrid_systems.html#readmeio) or [Netlify CMS](pubapis_hybrid_systems.html#netlifycms) (though, with Netlify CMS, you'd still have to select a theme). Readme provides a ready-made design for your API doc site, removing the need for both designing a theme and figuring out hosting/deployment. That can save you a lot of time and effort.

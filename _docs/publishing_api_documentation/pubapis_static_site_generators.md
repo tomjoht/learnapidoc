@@ -130,6 +130,8 @@ As of December 2018, [Staticgen.com](https://www.staticgen.com/) shows the numbe
 
 On the Staticgen.com site, the star icon represents the number of users who have "starred" the project (basically followed its activity). The forked icon represents the number of repo forks that exist registered on their platform (GitHub, etc.). The bug icon represents the number of open issues logged against the project. The green numbers indicate trends with these numbers.
 
+{% include image_ad_right.html %}
+
 Jekyll, Next, and Hugo are the most common static site generators. If you look at [Staticgen.com](https://www.staticgen.com/), you'll see that between Hugo and Sphinx, there are about 24 other static site generators (Gatsby, Hexo, Gitbook, Nuxt, Vuepress, Docusaurus, Pelican, Metalsmith, MkDocs, Brunch, Middleman, React Static, Harp, Expose, Assemble, Wintersmith, Cactus, Phenomic, Docpad, Lektor, HubPress, *and then Sphinx*). But I called out Sphinx here because of its popularity among documentation groups and for its integration with [Read the Docs](pubapis_hosting_and_deployment.html#readthedocs).
 
 ## MkDocs {#mkdocs}

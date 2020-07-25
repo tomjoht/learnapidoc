@@ -19,6 +19,8 @@ One of the advantages of REST APIs is that you can use almost any programming la
 
 Each programming language has a different way of making web calls. Rather than exhausting your energies trying to show how to make web calls in Java, Python, C++, JavaScript, Ruby, and so on, you can just show the call using curl.
 
+{% include image_ad_right.html %}
+
 curl provides a generic, language-agnostic way to demonstrate HTTP requests and responses. Users can see the format of the request, including any headers and other parameters. Your users can translate this into the specific format for the language they're using.
 
 ## Try using curl to GET a web page

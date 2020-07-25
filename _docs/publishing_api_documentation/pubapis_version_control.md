@@ -46,7 +46,11 @@ When you add files to Git and commit them, Git takes a snapshot of the committed
 
 ## Basic workflow with version control
 
-There are many excellent tutorials on version control on the web, so I'll defer to those tutorials for more details (for example, see Peter Gruenbaum's [Git and GitHub for Writers](https://www.udemy.com/git-and-github-for-writers/?couponCode=IDRATHER) course on Udemy, with coupon code `IDRATHER` for a discount). In short, Git provides several stages for your files. Here's the general workflow:
+There are many excellent tutorials on version control on the web, so I'll defer to those tutorials for more details (for example, see Peter Gruenbaum's [Git and GitHub for Writers](https://www.udemy.com/git-and-github-for-writers/?couponCode=IDRATHER) course on Udemy, with coupon code `IDRATHER` for a discount). In short, Git provides several stages for your files.
+
+{% include image_ad_right.html %}
+
+Here's the general workflow:
 
 1. You must first add any files that you want Git to track. Just because the files are in the initialized Git repository doesn't mean that Git is actually tracking and versioning their changes. Only when you officially "add" files to your Git project does Git start tracking changes to that file.
 2. Any modified files that Git is tracking are said to be in a "staging" area.

@@ -15,3 +15,5 @@ progress: false
 {% include random_ad.html %}
 
 {% include random_ad3.html %}
+
+{% include image_ad_right.html %}

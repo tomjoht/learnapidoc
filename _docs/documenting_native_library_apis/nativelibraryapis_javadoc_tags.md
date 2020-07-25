@@ -148,6 +148,8 @@ The short description is the first sentence and gets shortened as a summary for 
 
 After the descriptions, enter a blank line (for readability) and then start the tags. You can't add any more description content below the tags. Note that only methods and classes can have tags, not fields. Fields (variables) have descriptions only.
 
+{% include image_ad_right.html %}
+
 Note that the first sentence is much like the `shortdesc` element in DITA. This first sentence is supposed to be a summary of the entire class or method. If one of your words has a period in it (like `Dr. Jones`), then you must remove the space following the period by adding `Dr.&nbsp;Jones` to connect it.
 
 Avoid using links in the first sentence. After the period, the next sentence shifts to the long paragraph, so you have to load up that first sentence to be descriptive. The verb tense should be present tense, such as _gets, puts, displays, calculates..._

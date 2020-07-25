@@ -251,6 +251,8 @@ Developers often package up java files into a JAR file, which is like a zip file
 
 Developers will add their JAR to their class path to make the classes available to their project. To do this, they right-click their project and select **Properties**. In the dialog box, they select **Java Build Path** and then click the **Libraries** tab. They then click **Add JARs** and browse to the JAR.
 
+{% include image_ad_right.html %}
+
 When you deliver a JAR file, developers can use the classes and methods available in the JAR. However, the JAR will not show them the source code, that is, the raw Java files. For this, users will consult the Javadoc.
 
 If you're distributing a reference implementation that consists of a collection of Java source files (so that developers can see how to integrate your product in Java), you'll probably just send them a zip file containing the project.

@@ -27,6 +27,8 @@ Unlike other wikis, the GitHub wiki you create is its own repository that you ca
 
 {% include random_ad2.html %}
 
+{% include image_ad_right.html %}
+
 With GitHub, you write wiki pages in Markdown syntax. There's a special flavor of Markdown syntax for GitHub wikis called [Github-flavored Markdown](https://help.github.com/articles/github-flavored-markdown/), or GFM. The GitHub Flavored Markdown allows you to create tables, add classes to code blocks (for proper syntax highlighting), and more.
 
 Because you can work with the wiki files locally, you can leverage other tools (such as static site generators, or even DITA) to generate the Markdown files if desired. Working locally, you can handle all the re-use, conditional filtering, and other logic outside of the GitHub wiki. You can then output your content as Markdown files and commit them to your GitHub repository.

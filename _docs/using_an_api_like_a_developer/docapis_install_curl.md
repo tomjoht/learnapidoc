@@ -22,6 +22,8 @@ curl is a command-line utility that lets you execute HTTP requests with differen
 {: .note}
 Sometimes curl is written as cURL. It stands for Client URL. "curl" is the more common convention for its spelling, but both refer to the same thing.
 
+{% include image_ad_right.html %}
+
 ## Installing curl
 
 curl is usually available by default on Macs but requires some installation on Windows. Follow these instructions for installing curl:

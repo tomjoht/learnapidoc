@@ -37,6 +37,8 @@ The problem is that the very people who can fix this content are usually fully e
 
 For example, suppose you identify a high point of developer friction related to poor documentation. Fixing it might not just be a matter of converting the content into plain language or adding some details about missing parameters. The required fixes might involve explaining how the parameters interact in the code, how one value gets used by another and how they get mapped into variables that the code iterates through, etc. Maybe the only person who truly understands the crazy syntax users have to write is the lead developer.
 
+{% include image_ad_right.html %}
+
 But guess what? What lead developer is going to have time to figure out docs? He or she is usually heads-down deep in a complex programming scenario. So the very person who has the knowledge to decompile and excogitate the needed concepts in the documentation usually isn't available to do so. But if the content is beyond the comprehension of generalists, at some point, these SMEs will need to devote some time to docs. In these scenarios, Robillard and Uddin say the best help would be to reduce the overhead of the documentation process.
 
 As an editor/publisher, you can help the SME author by accurately identifying the point of confusion, the area of the doc that needs updating, and provide easy tools for the SME to make the updates. The engineers can't be bothered to figure out static site generators or publishing workflows, PDFs, or other doc publishing tools. By playing a role as an editor/publisher, you can be a valuable contributor to the product team. This publishing role is why being a doc tools expert is particularly relevant in API documentation contexts.

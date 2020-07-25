@@ -81,6 +81,8 @@ Key to the review process is the ability for team members to comment on the spec
 
 When you click the plus sign, a comment pane appears on the right where you can elaborate on comments, and where others can reply. Users can edit, delete, or resolve the comments. This commenting feature helps facilitate the review process in a way that tightly integrates with your content. You can also collapse or show the comments pane as desired.
 
+{% include image_ad_right.html %}
+
 Few tech comm tools support inline annotations like this, and it wouldn't be possible without a database to store the comments, along with profiles associated with the reviewers. This feature would be tedious to implement on your own, as it would require both a database and an authentication mechanism. This is all included in SwaggerHub.
 
 ## Auto-Generate Client SDKs

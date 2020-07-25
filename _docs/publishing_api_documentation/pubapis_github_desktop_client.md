@@ -82,6 +82,8 @@ Now let's create a branch, make some changes, and see how the changes are specif
 
 6.  Switch back to your master branch (using the Branch drop-down option at the top of the GitHub Desktop client). Then look at your file (in your text editor, such as Sublime text). Note how the file changes you made while editing in the development branch don't appear in your master branch.
 
+{% include image_ad_right.html %}
+
 You usually create a new branch when you're making extensive changes to your content. For example, suppose you want to revamp a section ("Section X") in your docs. However, you might want to publish other updates before publishing the extensive changes in Section X. If you were working in the same branch, it would be difficult to selectively push updates on a few files outside of Section X without pushing updates you've made to files in Section X as well.
 
 Through branching, you can confine your changes to a specific version that you don't push live until you're ready to merge the changes into your master branch.

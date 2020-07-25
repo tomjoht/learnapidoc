@@ -60,3 +60,5 @@ For a longer (and older) video, here's a recording from a 4-hour workshop I gave
 <iframe width="640" height="360" src="https://www.youtube.com/embed/GerbihyUpdo" frameborder="0" allowfullscreen></iframe>
 
 {% endif %}
+
+{% include image_ad_left.html %}

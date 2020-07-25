@@ -94,3 +94,5 @@ glossary_keys:
 {% include random_ad2.html %}
 
 {% include random_ad.html %}
+
+{% include image_ad_left.html %}

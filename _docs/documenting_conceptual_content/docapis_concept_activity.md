@@ -12,6 +12,8 @@ With each of the conceptual topics in this section, you've been analyzing the to
 
 {% include random_ad.html %}
 
+{% include image_ad_right.html %}
+
 Remember that sometimes the best way to learn how to create API documentation is to carefully observe how it's done on sites you admire. Following standard practices in the industry helps you create more predictable, easy-to-follow patterns in your own documentation.
 
 {% include random_ad2.html %}

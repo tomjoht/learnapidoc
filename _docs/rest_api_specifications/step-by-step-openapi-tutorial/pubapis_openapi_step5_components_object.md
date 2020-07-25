@@ -32,6 +32,8 @@ Describing the details of your parameters and describing the schema of complex r
 
 Instead of listing the schema for your requests and responses in the `paths` object, for more complex schemas (or for schemas that are re-used in multiple operations or paths), you typically use a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#referenceObject) (referenced with `$ref`) that points to a specific definition in the [`components` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#componentsObject). (For more details on `$ref`, see [Using $ref](https://swagger.io/docs/specification/using-ref/).)
 
+{% include image_ad_right.html %}
+
 Think of the `components` object like a document appendix where the re-usable details are provided. If multiple parts of your spec have the same schema, you point each of these references to the same object in your `components` object, and in so doing you single source the content. The `components` object can even be [stored in a separate file](http://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-8-splitting-specification-file/) if you have a large API and want to organize the information that way. (However, with multiple files, you wouldn't be able to use the online Swagger Editor to validate the content.)
 
 ## Objects in components

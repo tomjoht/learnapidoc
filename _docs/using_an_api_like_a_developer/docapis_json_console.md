@@ -54,13 +54,15 @@ var settings = {
 }
 ```
 
+{% include image_ad_right.html %}
+
 Each of the allowed key-value pairs is defined in [jQuery's ajax documentation](http://api.jquery.com/jquery.ajax/#jQuery-ajax-settings).
 
 Some important values are the `url`, which is the URI or endpoint you are submitting the request to. Another value is `headers`, which allows you to include custom headers in the request.
 
-{% include random_ad2.html %}
-
 Look at the code sample you created. The `settings` variable is passed in as the argument to the `ajax` method. jQuery makes the request to the HTTP URL asynchronously, which means it won't hang up your computer while you wait for the response. You can continue using your application while the request executes.
+
+{% include random_ad2.html %}
 
 You get the response by calling the method `done`.
 
@@ -68,6 +70,7 @@ You get the response by calling the method `done`.
 $.ajax(settings).done(function (response) {
 })
 ```
+
 In the earlier code sample, `done` contains an anonymous function (a function without a name) that executes when `done` is called. The response object from the `ajax` call is assigned to the `done` method's argument, which in this case is `response`. (You can name the argument whatever you want.)
 
 You can then access the values from the response object using object notation. In this example, the response is just logged to the console.

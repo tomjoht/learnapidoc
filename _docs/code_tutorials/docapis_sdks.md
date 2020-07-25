@@ -37,6 +37,8 @@ Sandoval compares examples from both Facebook APIs and SDKs to clarify the diffe
 
 In the SwaggerHub tutorial, I showed how to [auto-generate client SDKs](pubapis_swaggerhub_smartbear.html#auto-generate-client-sdks) through SwaggerHub's interface. But usually rather than relying on auto-generated SDKs, if your development team offers a client SDK, it will be code that the development team prepares and tests. The development team often provides the SDK in a few target languages based on their user's main language, making it easier for users to implement the API.
 
+{% include image_ad_right.html %}
+
 As an API technical writer, documenting SDKs and sample apps presents a tough challenge because SDKs require you to be familiar with one or more programming languages. I explore the question of [how much code you need to know](jobapis_learning_code.html) in the [Jobs section](jobapis.html), so I won't get into too much detail here. Usually, engineers don't expect you to know multiple programming languages in depth, but some familiarity with them will be required in order to both write and review the documentation. When deciding whether to call a block of code a function, class, method, or another name, you need to have a basic understanding of the terms used in that language.
 
 {% include course_image.html size="medium" border="true" filename="nonref_sdksampleapp" ext_print="png" ext_web="svg" alt="SDKs and sample apps" caption="SDKs and sample apps" %}

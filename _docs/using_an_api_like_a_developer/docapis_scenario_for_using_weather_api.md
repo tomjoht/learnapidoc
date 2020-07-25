@@ -71,6 +71,8 @@ For our development scenario (showing weather on a website), there are dozens of
 
 ## <i class="fa fa-user-circle"></i> More weather APIs
 
+{% include image_ad_right.html %}
+
 APIs differ considerably in their design, presentation, responses, and other detail. For more comparison, check out some of the following weather APIs:
 
 * [Dark Sky API](https://darksky.net/dev)

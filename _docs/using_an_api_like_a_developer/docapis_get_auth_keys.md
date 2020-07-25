@@ -56,7 +56,7 @@ Keep in mind how users authorize calls with an API &mdash; this is something you
 
 ## Make sure you have a text editor
 
-In the upcoming activities, you'll work with code in a text file. When you're working with code, you use a text editor (to work in plain text) instead of a rich text editor (which would provide a WYSIWYG interface). Here are a few choices for text editors:
+{% include image_ad_right.html %} In the upcoming activities, you'll work with code in a text file. When you're working with code, you use a text editor (to work in plain text) instead of a rich text editor (which would provide a WYSIWYG interface). Here are a few choices for text editors:
 
 * [Sublime Text](http://www.sublimetext.com/) (Mac or PC)
 * [TextWrangler](http://www.barebones.com/products/textwrangler/) or [BBEdit](http://www.barebones.com/products/bbedit/) (Mac)

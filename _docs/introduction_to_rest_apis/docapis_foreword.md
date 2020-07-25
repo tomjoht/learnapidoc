@@ -10,6 +10,8 @@ path1: /docapis_introtoapis.html
 
 I initially compiled this material to teach a series of workshops to a local tech writing firm in the San Francisco Bay area. They felt they either needed to train their existing technical writers on how to document APIs, or they would need to let some of their writers go. I taught a series of three workshops delivered in the evenings, spread over several weeks.
 
+{% include image_ad_right.html %}
+
 These workshops were fast-paced and introduced the writers to a host of new tools, technologies, and workflows. Even for writers who had been working in the tech comm field for 20 years, API documentation presented new challenges and concepts. The tech landscape is so vast, even for writers who had detailed knowledge of one technology, their tech background didn't always carry over into REST API documentation.
 
 After the workshops, I put the material on my site, idratherbewriting.com, and opened it up to the broader world of technical writers. I did this for several reasons. First, I felt the information would be useful to the tech writing community. There are very few books or courses that dive into API documentation strategies for technical writers.

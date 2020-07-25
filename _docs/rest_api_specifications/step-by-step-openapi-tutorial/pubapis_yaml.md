@@ -158,6 +158,8 @@ Hopefully, by seeing the syntax side by side, it will begin to make more sense. 
 
 JavaScript uses the same dot notation techniques to access the values in YAML as it does in JSON. (They're pretty much interchangeable formats.) The benefit to using YAML, however, is that it's more readable than JSON.
 
+{% include image_ad_right.html %}
+
 However, YAML might be more tricky because it depends on getting the spacing just right. Sometimes that spacing is hard to see (especially with a complex structure), and that's where JSON (while maybe more cumbersome) is perhaps easier to troubleshoot.
 
 ## Some features of YAML not present in JSON {#yaml_specific_features}

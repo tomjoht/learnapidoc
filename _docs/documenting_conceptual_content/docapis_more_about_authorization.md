@@ -74,6 +74,8 @@ APIs that use Basic Auth will also use HTTPS, which means the message content wi
 
 When the API server receives the message, it decrypts the message and examines the header. After decoding the string and analyzing the username and password, it then decides whether to accept or reject the request.
 
+{% include image_ad_right.html %}
+
 In Postman, you can configure Basic Authorization by clicking the **Authorization** tab, selecting **Basic Auth** from the drop-down selector, and then typing the **username** and **password** on the right of the colon on each row. The Headers tab will show a key-value pair that looks like this:
 
 ```

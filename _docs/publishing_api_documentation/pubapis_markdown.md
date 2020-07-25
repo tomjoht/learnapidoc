@@ -45,6 +45,8 @@ Markdown is meant to be kept simple, so there isn't a comprehensive Markdown tag
 
 John Gruber, a blogger, created Markdown as a way to simplify HTML (see his [Markdown documentation here](http://daringfireball.net/projects/markdown/)). Others adopted it, and many made modifications to include the syntax they needed. As a result, there are various "flavors" of Markdown, such as [Github-flavored Markdown](https://help.github.com/articles/github-flavored-markdown/), [Multimarkdown](http://fletcherpenney.net/multimarkdown/), [kramdown](https://kramdown.gettalong.org/), [CommonMark](https://commonmark.org/), and more.
 
+{% include image_ad_right.html %}
+
 In contrast, DITA is a committee-based XML architecture derived from a committee. There aren't lots of different flavors and spinoffs of DITA based on how people customized the tags. There's an official DITA spec that is agreed upon by the DITA OASIS committee. Markdown doesn't have that kind of committee, so it evolves on its own as people choose to implement it.
 
 ## Why developers love Markdown

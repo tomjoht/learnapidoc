@@ -288,6 +288,8 @@ After you commit the changes, you can preview the OpenAPI documentation by click
 
 {% include course_image.html size="large" border="true" filename="parameters_published" ext_print="png" ext_web="png" alt="Parameters display in Stoplight" caption="Parameters display in Stoplight" %}
 
+{% include image_ad_right.html %}
+
 ## Enter the responses and response schema
 
 As a final step for this endpoint, you need to enter the response information. The response includes not only an example response but also the schema describing the response. The schema describes all possible values in the response, their data types, and whether the values are required.

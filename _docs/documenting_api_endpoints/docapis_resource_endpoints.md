@@ -30,6 +30,8 @@ Here's an example of the endpoints for the Relationships resource in the Instagr
 
 The endpoint is usually set off in a stylized way that gives it more visual attention. Much of the documentation is built around the endpoint, so it might make sense to give each endpoint more visual weight in your documentation.
 
+{% include image_ad_right.html %}
+
 The endpoint is arguably the most important aspect of API documentation because this is what developers will implement to make their requests.
 
 ## Represent path parameters with curly braces

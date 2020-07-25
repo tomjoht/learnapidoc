@@ -23,6 +23,8 @@ When you start setting up tests for your documentation, you typically interact w
 
 You'll want to make friends with the quality assurance team and find out best practices for testing scenarios relevant to your documentation. They can usually help you get started in an efficient way, and they'll be excited to have more eyes on the system. If you find bugs, you can either forward them to QA or log them yourself in the team's issue tracker.
 
+{% include image_ad_right.html %}
+
 If you can hook into a set of test cases that QA teams use to run tests, you can often get a jump start on the tasks you're documenting. Good test cases usually list the steps required to produce a result, and the scripts can inform the documentation you write.
 
 {% include random_ad2.html %}

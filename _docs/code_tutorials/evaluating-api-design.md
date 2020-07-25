@@ -77,7 +77,7 @@ Another common pattern with endpoints is to use nouns with the resources, and to
 
 > **Use nouns for resources** and avoid anything that looks like procedure calls. There’s no need for endpoints like `/getContacts` when we’re using HTTP methods. Instead, your resource would be named `/contacts` and you could perform the `GET` action (and any others that are relevant) against that resource. ([Basic API Design Guide & Best Practices](https://stoplight.io/api-design-guide/basics/))
 
-At the most basic level, REST API endpoints and their supported operations have a noun + verb grammar (e.g., `contacts` with a `READ` operation). If the endpoint name blends the resource with the operation, as in `getContacts`, it can both be redundant as well as misleading. Separate nouns from verbs when it comes endpoint names.
+At the most basic level, REST API endpoints and their supported operations have a noun + verb grammar (e.g., `contacts` with a `READ` operation). If the endpoint name blends the resource with the operation, as in `getContacts`, it can both be redundant as well as misleading. Separate nouns from verbs when it comes to endpoint names.
 
 Note that this same convention might not be the case with [native library APIs](nativelibraryapis_overview.html), such as a Java API. With native library APIs, the same resource might not have different operations that you can apply to it; instead, the APIs are often functions that perform specific actions, so a `getContacts` function might make sense.
 
@@ -102,6 +102,8 @@ Another area of high inconsistency is the casing of parameter names. Do all para
 Enums (a list of allowed values) are often written in full caps (`RESOURCEID`), so they might differ from the lower camel case convention, which is most commonly used. But generally, parameter names should have similar casing conventions. Identify which conventions are used in your API. Then locate any inconsistencies.
 
 For example, in the [Microsoft API Guidelines](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#710-response-formats), the guide notes that "JSON property names SHOULD be camelCased." Additionally, "Services SHOULD provide JSON as the default encoding."
+
+{% include image_ad_right.html %}
 
 Note that it might not always be feasible to implement changes you recommend if your API is already live. If developers push out endpoints with inconsistent parameter names, and developers adopt and implement these APIs, changing the parameter names can cause breaking changes for the implementations.
 

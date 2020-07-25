@@ -598,6 +598,8 @@ If "API" is a more common term for the area, I assume more technical writer jobs
 
 This superficial query doesn't indicate whether there are more tech comm jobs overall for these states. For example, Michigan might have a lot more general tech writing jobs than API doc jobs, even though it ranks far down in the above table.
 
+{% include image_ad_right.html %}
+
 To get more granular with details, such as job losses or gains, the hottest MSAs for each state, the best industry sectors, the highest salaries, etc., consult the STC Salary Database and mine the data you want.
 
 I want to note some issues. In my initial searches for District of Columbia, I failed to specify "exact location" and as a result, the original hits (which allow a 25-mile radius by default) included many surrounding states such as Virginia, Maryland, and others. I revised the search in January 2019.

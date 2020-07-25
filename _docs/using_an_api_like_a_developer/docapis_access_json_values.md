@@ -208,6 +208,8 @@ $("#windSpeed").append(content);
 
 This code says to find the element with the ID `windSpeed` and add the `content` variable after it.
 
+{% include image_ad_right.html %}
+
 ## Get the value from an array
 
 In the previous section, you retrieved a value from a JSON object. Now let's get a value from an array. Let's get the `main` property from the `weather` array in the response. Here's what the JSON array looks like:

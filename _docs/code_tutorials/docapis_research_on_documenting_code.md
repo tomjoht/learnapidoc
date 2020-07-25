@@ -29,6 +29,8 @@ This research coordinates efforts among academic researchers, engineers, usabili
 
 Basically, in C++, the header files (`.h`) contain the classes and the main documentation. The implementation files (`.cc`) instantiate and implement the classes from the header files. In short, the header files contain more formal documentation that follows specific annotation conventions, while the implementation files contain the guts of the logic about how the class has been implemented. Implementation files have comments peppered inline with the code, without formally structured doc annotations. A central question the researchers wanted to know is whether users gravitate toward the inline code comments in implementation files or the official documentation in the header files.
 
+{% include image_ad_right.html %}
+
 The researchers used tracking tools to identify when developers would switch from one type of file to another, and they also interviewed the developers as a follow-up. Google has about a billion lines of code stored in a central code repository that can be used across the company, so thousands of developers might find and discover code in this monorepo to use in their projects. The team that uses an API might not know the team that developed the API, and vice versa.
 
 Even if you don't document C++, this study is helpful because it raises this central question: should you put the bulk of your documentation in formal descriptions about the code, or should the bulk of your documentation appear within the context of the code, peppered in as inline comments.

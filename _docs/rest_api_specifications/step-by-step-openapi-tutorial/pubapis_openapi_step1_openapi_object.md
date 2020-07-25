@@ -63,6 +63,8 @@ Before we jump into coding, let's first talk about where you'll write the code a
 
 The easiest option is to use the online [Swagger Editor](https://swagger.io/swagger-editor/). The Swagger Editor provides a split view: on the left where you write your spec code, and on the right, you see a fully functional Swagger UI display. You can even submit requests from the Swagger UI display in this editor.
 
+{% include image_ad_right.html %}
+
 The Swagger Editor will validate your content in real-time, and you will see validation errors until you finish coding the specification document. Don't worry about the errors unless you see X marks in the code you're working on.
 
 I usually keep a local text file (using a text editor such as Atom or Sublime Text) where I keep the specification document offline, but I work with the document's content in the online [Swagger Editor](https://swagger.io/swagger-editor/). When I'm done working for the day, I copy and save the content back to my local file. Even so, the Swagger Editor caches the content quite well (just don't clear your browser's cache), so you probably won't need your local file as a backup.

@@ -45,6 +45,8 @@ But coding Techniques B, C, D, and E were beyond the scope of this sample app, t
 
 With the video skills project I referenced earlier, the sample app was a fork of another Android streaming media template called [Fire App Builder](https://developer.amazon.com/docs/fire-app-builder/overview.html) that had a lot of interchangeable modules. All of these modules added a lot of confusion and bulk to what should otherwise be much simpler code. But the app looked and functioned like a real TV app, with a landing page and video thumbnails. Project teams often want to demonstrate code in all its glory, but they also want to keep everything as simple as possible. It's a tradeoff. A simpler Fire TV app might not even include a landing page or thumbnail view of videos.
 
+{% include image_ad_right.html %}
+
 Sometimes the only sample app you can get your hands on is too embarrassing for engineers to feel comfortable sharing, so you might have to pitch hard for its value in the docs. Getting engineers to build beautiful, illustrative sample apps to accompany the docs can be a tall order, especially if these same engineers are struggling to complete their bi-weekly sprint tasks. In a best case scenario, you might be able to leverage a sample app from the QA team. Surely the QA team is vetting a list of features using some kind of test code, which is likely packaged into a simple sample app.
 
 Whether that sample app can be extrapolated into a companion piece for the documentation is another matter. Usually, test apps are rudimentary and not necessarily best practice showcases for code. On the other hand, showcase code probably has too much sophistication to be instructive. Simple is better when it comes to learning.

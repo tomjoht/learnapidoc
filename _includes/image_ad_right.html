@@ -1,0 +1,34 @@
+{% if site.format == "web" %}<div class="videoComicFloat">
+    <script>
+var contentsv=new Array()
+
+contentsv[0]='<div class="videoComic"><a href="https://redoc.ly/" rel="nofollow" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/redocly1.jpg" alt="Redoc.ly: Transform your API definition into interactive documentation, fast" /></a></div></div>'
+contentsv[1]='<div class="videoComic"><a href="https://redoc.ly/" rel="nofollow" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/redocly2.jpg" alt="Redoc.ly: Transform your API definition into interactive documentation, fast" /></a></div></div>'
+contentsv[2]='<div class="videoComic"><a href="https://redoc.ly/" rel="nofollow" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/redocly3.jpg" alt="Redoc.ly: Transform your API definition into interactive documentation, fast" /></a></div></div>'
+contentsv[3]='<div class="videoComic"><a href="https://redoc.ly/" rel="nofollow" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/redocly4.jpg" alt="Redoc.ly: Transform your API definition into interactive documentation, fast" /></a></div></div>'
+contentsv[4]='<div class="videoComic"><a href="https://redoc.ly/" rel="nofollow" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/redocly5.jpg" alt="Redoc.ly: Transform your API definition into interactive documentation, fast" /></a></div></div>'
+contentsv[5]='<div class="videoComic"><a href="https://redoc.ly/" rel="nofollow" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/redocly6.jpg" alt="Redoc.ly: Transform your API definition into interactive documentation, fast" /></a></div></div>'
+contentsv[6]='<div class="videoComic"><a href="https://redoc.ly/" rel="nofollow" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/redocly7.jpg" alt="Redoc.ly: Transform your API definition into interactive documentation, fast" /></a></div></div>'
+contentsv[7]='<div class="videoComic"><a href="https://redoc.ly/" rel="nofollow" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/redocly8.jpg" alt="Redoc.ly: Transform your API definition into interactive documentation, fast" /></a></div></div>'
+contentsv[8]='<div class="videoComic"><a href="https://redoc.ly/" rel="nofollow" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/redocly9.jpg" alt="Redoc.ly: Transform your API definition into interactive documentation, fast" /></a></div></div>'
+contentsv[9]='<div class="videoComic"><a href="https://redoc.ly/" rel="nofollow" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/redocly10.jpg" alt="Redoc.ly: Transform your API definition into interactive documentation, fast" /></a></div></div>'
+contentsv[10]='<div class="videoComic"><a href="https://redoc.ly/" rel="nofollow" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/redocly11.jpg" alt="Redoc.ly: Transform your API definition into interactive documentation, fast" /></a></div></div>'
+contentsv[11]='<div class="videoComic"><a href="https://redoc.ly/" rel="nofollow" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/redocly12.jpg" alt="Redoc.ly: Transform your API definition into interactive documentation, fast" /></a></div></div>'
+
+var i=0
+//variable used to contain controlled random number
+var random
+//while all of array elements haven't been cycled thru
+while (i<contentsv.length){
+//generate random num between 0 and arraylength-1
+random=Math.floor(Math.random()*contentsv.length)
+//if element hasn't been marked as "selected"
+if (contentsv[random]!="selected"){
+document.write(contentsv[random])
+//mark element as selected
+contentsv[random]="selected"
+break;
+}
+}
+</script>
+</div>{% endif %}

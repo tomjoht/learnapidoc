@@ -38,6 +38,8 @@ Also, note that inline code comments can be somewhat controversial. If you're ju
 
 Best practices for documentation in general (not just code documentation) involve placing helpful instruction next to the area of confusion, and within the context of code documentation, this might mean adding inline comments peppered throughout code. But suppose you want a longer running commentary about what's going on in the code (because the level of complexity can't be relayed in a short informal comment). How do you juxtapose your lengthy conceptual/explanatory information next to the code?
 
+{% include image_ad_right.html %}
+
 If your commentary dwarfs the code, you risk making the code unreadable. If you arrange the commentary in sections that come long before or after the code, you risk creating a chasm between the explanation and the code, such that readers won't know what parts of the code your explanation refers to.
 
 One solution to this location problem for code docs is to create an additional, third column in your layout. You devote the middle column to your conceptual explanation and your right column to the code. This way the code and the narration are juxtaposed in a way that readers can glance at the code while reading your conceptual explanations &mdash; in other words, the third column maintains the needed context between the code and explanations. Here's an example from Twilio showing this juxtaposed approach:

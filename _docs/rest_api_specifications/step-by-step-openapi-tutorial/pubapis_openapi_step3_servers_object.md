@@ -58,6 +58,8 @@ If you have just one URL, you still see a drop-down box but with just one option
 
 {% include random_ad2.html %}
 
+{% include image_ad_right.html %}
+
 You can also incorporate variables into the server URL that can be populated at runtime by your server. Additionally, if different paths (endpoints) require different server URLs, you can add the `servers` object as a property in the [`path`](pubapis_openapi_step4_paths_object.html) object's operation object. The locally declared servers URL will override the global servers URL.
 
 See ["Overriding Servers"](https://swagger.io/docs/specification/api-host-and-base-path/) in "API Server and Base URL" (Swagger's docs) for more details.

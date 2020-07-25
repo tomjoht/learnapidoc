@@ -15,3 +15,5 @@ path1: /docendpoints.html
 {% include random_ad2.html %}
 
 {% include random_ad3.html %}
+
+{% include image_ad_left.html %}

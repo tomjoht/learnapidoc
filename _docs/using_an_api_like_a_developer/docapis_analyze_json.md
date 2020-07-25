@@ -84,6 +84,8 @@ JSON has two types of basic structures: objects and arrays. An object is a colle
 
 The key-value pairs are each put into double quotation marks when both are strings. If the value is an integer (a whole number) or Boolean (true or false value), omit the quotation marks around the value. Each key-value pair is separated from the next by a comma.
 
+{% include image_ad_right.html %}
+
 ## JSON arrays are lists of items
 
 An array is a list of items, surrounded by brackets:

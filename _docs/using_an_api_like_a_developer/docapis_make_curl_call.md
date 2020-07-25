@@ -20,6 +20,8 @@ In this section, you'll use curl to make the same weather API requests you made 
 
 {% include random_ad.html %}
 
+{% include image_ad_right.html %}
+
 ## Note about single and double quotes with Windows curl requests {#windows_notes}
 
 If you're using Windows to submit a lot of curl requests, and the curl requests require you to submit JSON in the [request body](docapis_doc_parameters.html#request_body_parameters), you might run into issues with single versus double quotes. The problem is that request body content is often formatted in JSON, which requires double quotes. Since you can't use double quotes inside of other double quotes, you'll run into issues in submitting curl requests in these scenarios.
