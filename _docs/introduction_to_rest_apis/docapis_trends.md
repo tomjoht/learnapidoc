@@ -135,15 +135,15 @@ Finally, the number of writers generating PDFs surprised me. It's not so easy to
 
 Most writers participate on Scrum teams, sometimes in limited capacity; other times they have their own documentation Scrum teams. Scrum is the standard operating approach for most engineering groups (for better or worse), and technical writers plug into this rhythm for documentation as well.
 
-Writers review docs often use the same tools engineers use to review code (e.g, code review tools that show diffs between commits). They also review docs through in-person meetings or through collaborative annotation tools like Google Docs.
+Writers review docs often using the same tools engineers use to review code (e.g, code review tools that show diffs between commits). They also review docs through in-person meetings or through collaborative annotation tools like Google Docs.
 
 The review process for docs has always been multi-pathed, and what works at one company might not work with another. Engineers often prefer to review content through code tools because it fits into how they're reviewing code, so they're accustomed to this approach. However, I find  these tools exclude non-engineers, which weakens the review process &mdash; see my extended thoughts on this in [Treat code like code and prose like prose](https://idratherbewriting.com/blog/treat-code-like-code-and-prose-like-prose/).
 
 Engineers contribute content either through pull requests to the doc source or by putting the content on a wiki or equivalent (for example, Google Docs, Quip). Other times engineers have direct rights in the repo to work with the content.
 
-Note that the survey did not filter out documentation-writing engineers from dedicated technical writers. Many companies don't have the luxury of technical writers, so engineers often play roles as documentarians. In these cases, it would be natural for engineers to have rights in documentation repos, or to store documentation in the same repos as the code. (See my blog post, [Integration documentation into engineering code and workflows](https://idratherbewriting.com/2015/05/26/integrating-documentation-into-engineering-code-and-workflows/) for an engaging presentation about how Google's internal doc team transformed their documentation by moving Markdown files directly inside of code repos.)
+Note that the survey did not filter out documentation-writing engineers from dedicated technical writers. Many companies don't have the luxury of technical writers, so engineers often play roles as documentarians. In these cases, it would be natural for engineers to have rights in documentation repos, or to store documentation in the same repos as the code. (See [Integration documentation into engineering code and workflows](https://idratherbewriting.com/2015/05/26/integrating-documentation-into-engineering-code-and-workflows/) for a summary of an engaging presentation about how Google's internal doc team transformed their documentation by moving Markdown files directly inside of code repos.)
 
-Outsourcing with developer docs with an offshore authoring agency is rare. I did not ask for reasons why outsourcing isn't more common, but there might not be many outsourcing agencies that can handle highly technical developer content. Or perhaps there are IP concerns about documenting the internal workings of APIs, or maybe the doc shops are so small that no one would manage an outsourced resource.
+Outsourcing developer docs with an offshore authoring agency is rare. I did not ask for reasons why outsourcing isn't more common, but there might not be many outsourcing agencies that can handle highly technical developer content. Or perhaps there are IP concerns about documenting the internal workings of APIs, or maybe the doc shops are so small that no one would manage an outsourced resource.
 
 The publishing process for developer docs is streamlined through continuous integration and continuous deployment (CI/CD). This means writers can kick off builds and deployments with a few keystrokes on a command line. For example, if you set up a service on a specific branch, when you push changes to the branch, the service can start a build process on the server and then deploy the build onto a server. (For example, GitHub Pages offers automatic builds of Jekyll projects on any GitHub repository. You could also do this through Travis CI.) You can also run other verification scripts, such as link checkers, in an automated way.
 
@@ -174,7 +174,7 @@ Although the survey focused on developer documentation, not specifically API doc
 
 What kind of APIs are writers mostly working with? REST APIs, but only about half the time. Other times, writers work with native library APIs (such as Java or C++ APIs), GraphQL, or SOAP.
 
-When documenting REST APIs, most teams use the OpenAPI specification. This is a detailed description of the API that follows a highly structured YAML or JSON format. Usually either engineers create this spec, or engineers collaborate with tech writers on it. The same goes with reference documentation for native library APIs.
+When documenting REST APIs, most teams use the OpenAPI specification. This is a detailed description of the API that follows a highly structured YAML or JSON format. Usually, either engineers create this spec, or engineers collaborate with tech writers on it. The same goes with reference documentation for native library APIs.
 
 Reference docs have traditionally been written by engineers, so I imagine the collaboration here is usually one where writers edit the material rather than provide the annotations in source code. While engineers will often lead the charge with reference documentation, they rarely expand beyond this scope to tackle other elements of documentation, such as conceptual overviews, getting started guides, tutorials, how-to content, glossaries, troubleshooting, and FAQs.
 
@@ -182,7 +182,7 @@ In terms of processes for creating the OpenAPI spec, there's a split between man
 
 The OpenAPI spec alone isn't readable documentation, but many tools can generate out documentation from the OpenAPI spec. The most common tools for this are [Swagger UI](https://idratherbewriting.com/learnapidoc/pubapis_swagger.html), custom-built tools, or [ReDoc](https://idratherbewriting.com/learnapidoc/pubapis_redoc.html).
 
-REST APIs are language agnostic, but there are usually accompanying software development kids (SDKs) that are language-specific (companies provide them to help developers implement the API). The most important languages to know (likely because of the SDKs that accompany APIs) are JavaScript, Java, and Python. Outside of programming languages, trending technologies include machine learning, artificial intelligence, big data, and Internet of Things (IoT).
+REST APIs are language agnostic, but there are usually accompanying software development kits (SDKs) that are language-specific (companies provide them to help developers implement the API). The most important languages to know (likely because of the SDKs that accompany APIs) are JavaScript, Java, and Python. Outside of programming languages, trending technologies include machine learning, artificial intelligence, big data, and Internet of Things (IoT).
 
 ## 5. Profile information {#profile}
 
@@ -219,7 +219,7 @@ Team sizes for writers in dev docs are small. A third are lone writers, and anot
 
 As far as professional groups, more writers in this space have an affinity for Write the Docs, but many don't have an affinity for any professional group.
 
-Finally, the biggest challenges writers in dev docs face is having enough technical know-how write docs and enough time/bandwidth to write it. Getting engineers to review docs is also challenging, as is creating content that addresses both novice and advanced groups.
+Finally, the biggest challenges writers in dev docs face is having enough technical know-how to write docs and enough time/bandwidth to write it. Getting engineers to review docs is also challenging, as is creating content that addresses both novice and advanced groups.
 
 ## Conclusion
 
