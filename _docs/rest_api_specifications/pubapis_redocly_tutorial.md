@@ -1,5 +1,5 @@
 ---
-title: "Redocly tutorial: Using CLI tools to simplify the authoring experience for OpenAPI definitions"
+title: "Getting started with Redocly -- a tutorial for authoring and publishing with Redoc's tools"
 permalink: pubapis_redocly.html
 course: "Documenting REST APIs"
 sidebar: docapis
