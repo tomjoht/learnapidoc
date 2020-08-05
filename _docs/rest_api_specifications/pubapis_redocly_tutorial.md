@@ -1,5 +1,5 @@
 ---
-title: "Getting started with Redocly -- a tutorial for authoring and publishing with Redoc's tools"
+title: "Getting started with Redocly -- a tutorial for authoring and publishing API docs"
 permalink: pubapis_redocly.html
 course: "Documenting REST APIs"
 sidebar: docapis
