@@ -63,7 +63,7 @@ A lot of APIs require you to post requests containing JSON messages in the body.
 5.  After your terminal or command prompt is in the same directory as your JSON file, create the new pet with the following curl request:
 
     ```bash
-    curl -X POST --header "Content-Type: application/json" --header "Accept: application/json" -d @mypet.json "http://petstore.swagger.io/v2/pet"
+    curl -X POST --header "Content-Type: application/json" --header "Accept: application/json" -d @mypet.json "https://petstore.swagger.io/v2/pet"
     ```
 
     The `Content-Type` indicates the type of content submitted in the request body. The `Accept` indicates the type of content we will accept in the response.
@@ -86,7 +86,7 @@ Guess what, your pet hates its name! Change your pet's name to something more fo
 2.  Use the `PUT` method instead of `POST` to update the pet's name (keep the same curl content otherwise):
 
     ```bash
-    curl -X PUT --header "Content-Type: application/json" --header "Accept: application/json" -d @mypet.json "http://petstore.swagger.io/v2/pet"
+    curl -X PUT --header "Content-Type: application/json" --header "Accept: application/json" -d @mypet.json "https://petstore.swagger.io/v2/pet"
     ```
 
 ## Get your pet's name by ID
