@@ -273,6 +273,9 @@ folders:
   - title: Code samples
     jurl: /docapis_codesamples_bestpractices.html
 
+  - title: Sample apps
+    jurl: /docapis_sample_apps.html
+
   - title: SDKs (software development kits)
     jurl: /docapis_sdks.html
 
@@ -390,7 +393,15 @@ folders:
   - title: "Create non-ref docs with native library APIs"
     jurl: /nativelibraryapis_nonrefdocs.html
 
-- title: "XI: API glossary and resources"
+- title: "XI: Managing developer portals"
+  jurl: /docapis_managing_dev_portals.html
+  description: ""
+  folderitems:
+
+  - title: "Process for managing documentation projects"
+    jurl: /docapis_process_for_managing_doc_projects.html
+
+- title: "XII: API glossary and resources"
   jurl: /resources.html
   description: "The API documentation landscape is full of jargon, acronyms, and many new terms. This glossary provides a list of terms and definitions. Additionally, this section contains additional exercises and information, such as more activities for calling APIs, or more info about alternative specifications."
   folderitems:

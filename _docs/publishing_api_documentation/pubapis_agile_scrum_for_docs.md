@@ -43,8 +43,6 @@ Despite the advantages of integrating with engineering scrums, there are a few d
 * Most likely you'll have several projects going on at once. If you have to modify your approach to each with a different flavor of Scrum, then your own workflow and methodology can get to feel a bit disjointed. For example, if each scrum calculates points differently, has different sprint durations, and has other variations, this inconsistency with your methodology can be tiring.
 * If the engineering team wants you to attend all their scrum meetings but won't treat you as a full-fledged member of the scrum (e.g., no tasks, no points, no demos, etc.), then consider creating your own documentation scrum instead.
 
-c
-
 ## Adapting scrum for documentation projects
 
 If it doesn't make sense to join an engineering scrum, you can create your own scrum process. My adapted process for managing docs following an Scrum methodology involves the following steps:
