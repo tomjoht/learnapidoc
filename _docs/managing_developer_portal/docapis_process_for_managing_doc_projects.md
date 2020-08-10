@@ -10,7 +10,14 @@ path1: /docapis_managing_dev_portals.html
 
 A "documentation project" is a larger effort tied to some new feature or product launching, whereas a small documentation request might be a minor update or fix to an existing doc. In both cases, you can manage documentation work loosely following the same Scrum process used in many engineering workflows. This is because documentation processes are closely coupled with software engineering in terms of its cadence and workflow.
 
-However, because tech writers are often allocated to multiple Scrum teams, and because tech writers are often resourced under a different group (e.g., tech comm) organizationally, implementing Scrum in the strict, traditional way doesn't work. A potential process for *managing doc projects* might have the following steps:
+However, because tech writers are often allocated to multiple Scrum teams, and because tech writers are often resourced under a different group (e.g., tech comm) organizationally, implementing Scrum in the strict, traditional way doesn't usually work.
+
+* TOC
+{:toc}
+
+## Process overview
+
+A potential process for *managing doc projects* might have the following steps:
 
 1.  [Identify the documentation projects](#identify_work)
 2.  [Assess the identified work against strategic Priorities](#assess_strategic_priorities)
@@ -24,7 +31,6 @@ However, because tech writers are often allocated to multiple Scrum teams, and b
 10. [Create a code review for Your changes](#code_review_for_changes)
 11. [Close the sprint](#close_sprint)
 12. [Share monthly reports](#share_reports)
-
 
 ## 1. Identify the documentation projects {#identify_work}
 
