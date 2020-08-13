@@ -1,6 +1,6 @@
 ---
-title: Process for managing small documentation requests
-permalink: /docapis_process_for_managing_small_doc_requests.html
+title: Managing small documentation requests
+permalink: /docapis_managing_small_doc_requests.html
 course: "Documenting REST APIs"
 weight:
 sidebar: docapis
@@ -8,7 +8,7 @@ section: devportals
 path1: /docapis_managing_dev_portals.html
 ---
 
-With any developer portal, you'll receive not only incoming [documentation projects](docapis_process_for_managing_doc_projects.html) but also a healthy dose of small documentation requests too. These small requests can be managed in a similar way as documentation projects but can also be scaled down with a simpler workflow. Even so, small requests have unique challenges when it comes to prioritization, weighting, and cadence.
+With any developer portal, you'll receive not only incoming [documentation projects](docapis_managing_doc_projects.html) but also a healthy dose of small documentation requests too. These small requests can be managed in a similar way as documentation projects but can also be scaled down with a simpler workflow. Even so, small requests have unique challenges when it comes to prioritization, weighting, and cadence.
 
 * TOC
 {:toc}  
@@ -29,24 +29,24 @@ With engineering teams, there are often engineers who have available bandwidth a
 
 During the sprint planning meeting, you review all the small documentation requests that have been submitted through your intake process and assign the items into the sprint as appropriate. In general, try to include a few of these items each week in addition to the project work. The small items can help provide balance with larger projects (like a break from some longer, more in-depth task you might be working on), and should be handled with some regularity even if not a major priority. For example, fixing a broken link might not align with a strategic priority for your organization, but it doesn't mean the task should be moved last on your to-do list.
 
-Small doc requests can be prioritized and weighted similar to other projects (e.g., low, medium, or high priority). As described in [documentation projects](docapis_process_for_managing_doc_projects.html), the weighting can be as follows:
+Small doc requests can be prioritized and weighted similar to other projects (e.g., low, medium, or high priority). As described in [documentation projects](docapis_managing_doc_projects.html), the weighting can be as follows:
 
 * 1 point = 0.5 days work or less
-* 2 points = 1 days of work
+* 2 points = 1 day of work
 * 3 points = 1.5 days of work
 * 4 points = 2 days of work
 
-If there are a lot of small tickets that each take 10 minutes, and you can't logically group them together, you can choose how you weight them. This where a more exact weighting system breaks down &mdash; it probably makes sense for disparate tasks to remain in separate tickets, but since many ticketing systems require whole number weightings, how do you represent a 10-minute task? You don't want to use 0 because the task requires *some* work, but if you use 1 point, wouldn't this distort the actual effort? Ten minutes of work is hardly the same as another task that takes half a day.
+If there are a lot of small tickets that each takes 10 minutes, and you can't logically group them together, you can choose how you weight them. This where a more exact weighting system breaks down &mdash; it probably makes sense for disparate tasks to remain in separate tickets, but since many ticketing systems require whole number weightings, how do you represent a 10-minute task? You don't want to use 0 because the task requires *some* work, but if you use 1 point, wouldn't this distort the actual effort? Ten minutes of work is hardly the same as another task that takes half a day.
 
-It depends on the purpose of the weighting. If the purpose of weighting is to evaluate the team's productivity, recognize that there can be a danger in using these rough point estimates to assess the amount of work completed. The way you chunk up tasks and weight them can easily be distorted. For example, suppose a writer breaks down tasks for a project in an extremely granular way, and then weights each task as 1 point. The writer might appear to be finishing a ton of work, when in reality the writer just manipulated the tracking system to appear to be doing more work than was actually done. And if your velocity and weighting can so easily be distorted, it might not mean a whole lot to others.
+It depends on the purpose of the weighting. If the purpose of weighting is to evaluate the team's productivity, recognize that there can be a danger in using these rough point estimates to assess the amount of work completed. The way you chunk up tasks and weight them can easily be distorted. For example, suppose a writer breaks down tasks for a project in an extremely granular way, and then weights each task as 1 point. The writer might appear to be finishing a ton of work when in reality the writer just manipulated the tracking system to appear to be doing more work than was actually done. And if your velocity and weighting can so easily be distorted, it might not mean a whole lot to others.
 
-At the same time, best practices for chunking work and providing time estimates usually don't recommend granular, hourly chunks of time. Perhaps one solution might be to attach a code review to every ticket so that others can see exactly how much text was changed. However, this could also short-sell the work. Suppose the edit required tracking down a SME who had more knowledge about a particular value or setting that needed clarification. Maybe the file diff is minimal but the effort to get the information was large. Conversely, suppose a writer receives a large chunk of code or other content from an engineer that is production ready, and all the writer needs to do is paste it into an existing page.
+At the same time, best practices for chunking work and providing time estimates usually don't recommend granular, hourly chunks of time. Perhaps one solution might be to attach a code review to every ticket so that others can see exactly how much text was changed. However, this could also short-sell the work. Suppose the edit required tracking down a SME who had more knowledge about a particular value or setting that needed clarification. Maybe the file diff is minimal but the effort to get the information was large. Conversely, suppose a writer receives a large chunk of code or other content from an engineer that is production-ready, and all the writer needs to do is paste it into an existing page.
 
 I don't have a good solution for this situation. I think at the end of the day, if managers evaluate writers based on the points they tackle each week, writers will trend towards more granular chunking and points to show more work. As such, weighting and work assessments probably shouldn't be used to assess writer productivity.
 
 ## Intake template for small requests
 
-As with the required fields in the documentation project intake, the intake for small requests should include required fields that the requester must populates. Here's a sample intake form for small documentation requests:
+As with the required fields in the documentation project intake, the intake for small requests should include required fields that the requester must populate. Here's a sample intake form for small documentation requests:
 
 <div class="docSample" markdown="block">
 
@@ -94,11 +94,11 @@ Here is where the intake fields can do some work. Email threads have scattered i
 
 ## Indicating progress on the ticket
 
-As tech writers work on the ticket and make progress, they communicate the status, questions, or other information in the ticket ticket thread. This allows others who might not be part of email threads to see the ticket's history and work.
+As tech writers work on the ticket and make progress, they communicate the status, questions, or other information in the ticket thread. This allows others who might not be part of email threads to see the ticket's history and work.
 
 In contrast, if you manage communication through email threads, you're bound to lose track of key information, and those not included on the thread might not have all the context if added later. Email threads expand and contract based on the Cc list someone decides to use &mdash; sometimes adding people, or removing them, etc.
 
-Suppose a thread goes a dozen rounds and multiple Cc lists. By the time the thread settles down, it's much harder to trace back through an email thread's history than a ticket's history. In contrast, a ticket history shows details about dates for each response, profile information that let's readers quickly click names to see who's who, and status information about the ticket.
+Suppose a thread goes a dozen rounds and multiple Cc lists. By the time the thread settles down, it's much harder to trace back through an email thread's history than a ticket's history. In contrast, a ticket history shows details about dates for each response, profile information that lets readers quickly click names to see who's who, and status information about the ticket.
 
 ## Starting work
 
@@ -108,7 +108,7 @@ When you're ready to review this version with reviewers, merge your feature bran
 
 ## Closing the ticket
 
-When you're finished with the work, ask the requester to resolve the ticket. This indicates their acceptance of the work. Then push the change live into production by merging your feature branch into production. Afterwards, delete the feature branch.
+When you're finished with the work, ask the requester to resolve the ticket. This indicates their acceptance of the work. Then push the change live into production by merging your feature branch into production. Afterward, delete the feature branch.
 
 If the ticket doesn't require any review (e.g., fixing a broken link), you can just push the content to prod and let the reviewer know.
 

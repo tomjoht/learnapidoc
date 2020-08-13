@@ -395,12 +395,14 @@ folders:
 
 - title: "XI: Managing developer portals"
   jurl: /docapis_managing_dev_portals.html
-  description: ""
+  description: "The process for managing developer portal documentation includes a number of different workflows for different types of documentation. This section outlines potential workflows that you can follow for documentation projects, small documentation requests, SDK releases, and more. It also provides an in-depth look at non-content requests that you might do in a developer portal environment."
   folderitems:
 
-  - title: "Process for managing documentation projects"
-    jurl: /docapis_process_for_managing_doc_projects.html
-    description: "The process for managing developer portal documentation includes a number of different workflows for different types of documentation. This section outlines potential workflows that you can follow for documentation projects, small documentation requests, SDK releases, and more. It also provides an in-depth look at non-content requests that you might do in a developer portal environment."
+  - title: "Managing large documentation projects"
+    jurl: /docapis_managing_doc_projects.html
+
+  - title: "Managing small documentation requests"
+    jurl: / docapis_managing_small_doc_requests.html"
 
 - title: "XII: API glossary and resources"
   jurl: /resources.html

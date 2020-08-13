@@ -1,6 +1,6 @@
 ---
-title: Process for managing documentation projects
-permalink: /docapis_process_for_managing_doc_projects.html
+title: Managing large documentation projects
+permalink: /docapis_managing_doc_projects.html
 course: "Documenting REST APIs"
 weight:
 sidebar: docapis
@@ -11,14 +11,14 @@ path1: /docapis_managing_dev_portals.html
 When you're managing larger documentation projects, you need to incorporate project management skills to break the large work into smaller chunks. You can pick and choose from Scrum and agile methodologies to create a workflow that works for you. The following sections describe a process for working with large documentation projects.
 
 {: . note}
-I wrote about some of these processes in [Following Scrum with documentation projects](pubapis_agile_scrum_for_docs.html). This section expands on that initial framework with more process details and commentary.
+I also wrote about some of these processes in [Following Scrum with documentation projects](pubapis_agile_scrum_for_docs.html). This section expands on that initial framework with more process details and commentary.
 
 * TOC
 {:toc}
 
 ## Definition of a documentation project
 
-A "documentation project" is a larger effort tied to some new feature or product launching, whereas a [small documentation request](docapis_process_for_managing_small_doc_requests.html) might be a minor update or fix to an existing doc. In both cases, you can manage documentation work loosely following the same Scrum process used in many engineering workflows. This is because documentation processes are closely coupled with software engineering in terms of its cadence and workflow. In both cases, you're building something complex.
+A "documentation project" is a larger effort tied to some new feature or product launching, whereas a [small documentation request](docapis_managing_small_doc_requests.html) might be a minor update or fix to an existing doc. In both cases, you can manage documentation work loosely following the same Scrum process used in many engineering workflows. This is because documentation processes are closely coupled with software engineering in terms of its cadence and workflow. In both cases, you're building something complex.
 
 However, because tech writers are often allocated to multiple Scrum teams, and because tech writers are often resourced under a different group organizationally (e.g., tech comm), implementing Scrum in the strict, traditional way usually doesn't work without some adaptations. In the sections that follow, I'll elaborate on what I think works in a practical sense (whether or not it follows Scrum).
 
@@ -47,7 +47,7 @@ To get out of crisis mode, you have to scan the project landscape like a scout l
 
 So this first step is one of *identifying* the work &mdash; what projects are out there, what's on each team's roadmap, when are new features and products going to be released, which of these projects will require documentation, and so on. Gather up a list of these projects and put them onto a documentation planning spreadsheet.
 
-While this project identification task might seem common to any documentation team, when you have a developer portal this work is magnified. Developer portal tends to be publishing hub for many different teams, often working independently. A thriving developer portal might have documentation input from dozens of different teams, many of whom are siloed from each other in independent ways.
+While this project identification task might seem common to any documentation team, when you have a developer portal this work is magnified. A developer portal tends to be a publishing hub for many different teams, often working independently. A thriving developer portal might have documentation input from dozens of different teams, many of whom are siloed from each other in independent ways.
 
 As you're scouring for this project information, look for roadmap trackers maintained by all the teams you support. For example, you might track about half a dozen different roadmaps from teams. Some projects might be listed on multiple roadmaps because different teams might play different roles with the projects. For example, visual designers might only have UX mocks on their roadmap, while engineering teams might have engineering tasks related to the project, and so on.
 
@@ -63,7 +63,7 @@ Doc work that isn't associated with a project can be referred to as a "small doc
 
 What about extensive doc efforts that might take 1-2 weeks but which aren't part of any larger project? In these cases, you're essentially managing the project yourself, and I would recommend adding it to your project spreadsheet. If you need a more definitive separate between projects and small doc requests, maybe consider a project any effort requiring more than a week of work.
 
-The converse scenario might also apply: documentation needed as part of a project but which only takes 1-2 days. In that case, I would still list it as a project because projects have a different rhythms and workflows &mdash; there are often multiple phases (beta, general availability, fast-follows), as well as multiple iterations as teams evolve product designs based on customer feedback (the hallmark of agile). You might have to rewrite the topics three or four different times as part of development churn. As a result, what might initially begin as a small amount of work can turn into a much larger work.
+The converse scenario might also apply: documentation needed as part of a project but which only takes 1-2 days. In that case, I would still list it as a project because projects have different rhythms and workflows &mdash; there are often multiple phases (beta, general availability, fast-follows), as well as multiple iterations as teams evolve product designs based on customer feedback (the hallmark of agile). You might have to rewrite the topics three or four different times as part of the development churn. As a result, what might initially begin as a small amount of work can turn into a much larger work.
 
 When do you sit down and identify all the projects? Who reaches out and contacts the different teams and finds their roadmaps and tracks what's coming and so on? You could designate a doc lead for this. However, it might be better to designate different writers who are specialized in different areas to do the information collection work. In an example doc team, you might have 5 writers, each of whom is embedded with 2-3 teams in different areas of the org. Writer 1 might be assigned to projects in Group A, Writer 2 might be assigned to projects in Group B, and so on.
 
@@ -77,13 +77,13 @@ If you're not part of a doc team but are fully embedded with a product team as a
 
 The next step is to assess the identified work against your department's strategic priorities and decide which projects and tasks should be given more importance. This prioritization is probably only needed in situations where the tech writers have more work than they can feasibly handle. However, this is almost always the case, not an anomaly to the norm.
 
-Even in cases where each tech writer has a healthy allocation of projects, you will still likely have a lot of latitude/flexibility about which projects you devote most of your energy towards. It's worth understanding which projects are considered a strategic priority.
+Even in cases where each tech writer has a healthy allocation of projects, you will still likely have a lot of latitude/flexibility about which projects you devote most of your energy. It's worth understanding which projects are considered a strategic priority.
 
 Track down your organization's strategic goals from your C-suite execs or other senior leaders as a way to figure out these priorities. If you're so far down the org hierarchy that you've never seen such a document nor are allowed to access it, find out from your manager what the goals are. Your manager should be aware of his or her manager's goals, who should be aware of his or her manager's goals, and so on up the line. If there's a disconnect somewhere, it represents a broken line of communication and potentially an organization that isn't aligned.
 
 Decide which projects should receive your most thorough attention (based on the projects that your senior leaders are prioritizing). This alignment is key for boosting your value to the organization, as I described in [Part V: On being strategic, interpersonal, and sponsored](/blog/reflecting-seven-years-later-about-layoff-clarke-being-strategic/). After you get a sense of your organization's strategic priorities, assign each project on your doc planning spreadsheet one of the following priorities: low, medium, or high.
 
-Keep in mind that strategic priorities differ by group. What might be a strategic priority for one group might not be a strategic priority for another. This prioritization can be especially problematic if your group is cross-functional, meaning you support many organizations with different services (e.g., documentation, marketing, support, dev relations, and so on). In these cases, you'll have to figure out which priorities your own group wants to embrace.
+Keep in mind that strategic priorities differ by group. What might be a strategic priority for one group might not be a strategic priority for another group. This prioritization can be especially problematic if your group is cross-functional, meaning you support many organizations with different services (e.g., documentation, marketing, support, dev relations, and so on). In these cases, you'll have to figure out which priorities your own group wants to embrace.
 
 The review of strategic priorities and the assessment of projects should ideally take place at a regular cadence, and although filling up your calendar with meetings isn't ideal, the meeting (especially when it involves multiple people) can be a forcing function for this task. You might call this meeting "Project Prioritization" and even include field engineers in the meeting (if the field engineers have a close ear to important business partners).
 
@@ -105,7 +105,7 @@ Now that you have a list of projects and priorities, along with different specia
 
 Each tech writer should reach out to the respective product manager (PM) to find out what docs are needed for their project. PMs might reach out proactively as well, which is great when they do.
 
-After some back and forth over email or other channel, the tech writer would then ask the PM to create a project-intake ticket for the needed documentation. The project-intake ticket should require the PM to complete a comprehensive, in-depth set of fields related to the project. Here's an example of what this project-intake ticket might consist of:
+After some back and forth over email or other channels, the tech writer would then ask the PM to create a project-intake ticket for the needed documentation. The project-intake ticket should require the PM to complete a comprehensive, in-depth set of fields related to the project. Here's an example of what this project-intake ticket might consist of:
 
 <div class="docSample" markdown="block">
 
@@ -152,7 +152,7 @@ Who's who on the project team:
 
 Is this documentation a strategic priority:
 
-* Does this project roll up under strategic leadership goal? If so, which one?
+* Does this project roll up under a strategic leadership goal? If so, which one?
 
 **Target users**
 
@@ -264,7 +264,7 @@ What marketing support do you need for this project:
 
 * Marketing landing page: y/n
 * Email to general devs: y/n
-* Email to targeted subset of devs: y/n
+* Email to a targeted subset of devs: y/n
 * Paid advertising efforts: y/n
 * Have you reached out to anyone in Marketing? y/n
 
@@ -275,19 +275,19 @@ List any other details not requested above that might be important to know.
 
 (Note that you can usually populate tickets based on a template like this. For example, JIRA lets you do this.)
 
-To instill a sense of ownership and commitment, it's important that the PM complete the project-intake ticket, populating the necessary fields. This information helps tech writer more appropriately scope and assess the work, as well as get oriented on the tasks.
+To instill a sense of ownership and commitment, it's important that the PM complete the project-intake ticket, populating the necessary fields. This information helps the tech writers more appropriately scope and assess the work, as well as get oriented on the tasks.
 
 This information collection reduces email churn and the need for tech writers to figure out the answers themselves through meetings and other email threads. If the PM leaves the fields blank, consider setting up a meeting with the PM and go over the needed fields in the meeting. You would be extremely lucky to find all information completely filled out from the start. Most of the time, PMs fill out about a third of these forms because they themselves lack more details (e.g., test scripts, code repositories, etc). You might want to loop in the Engineering manager to complete the other details.
 
-Note that the time required to collect this information can either be absorbed up front through the requester, or later through the tech writer. Placing the responsibility responsibility on the requester helps tech writers be more efficient. It also gives you a filter to decide just how desperately product teams want documentation for their projects. If a PM can't be bothered to complete the intake ticket, why should tech writers spin their wheels in bandwidth-burning ways?
+Note that the time required to collect this information can either be absorbed upfront through the requester or later through the tech writer. Placing the responsibility on the requester helps tech writers be more efficient. It also gives you a filter to decide just how desperately product teams want documentation for their projects. If a PM can't be bothered to complete the intake ticket, why should tech writers spin their wheels in bandwidth-burning ways?
 
-However, just because a PM or other requester is slow to make the request, don't rush to judgement about their interest in the docs, especially if you're making the requests over email. For many people, email is just noise, especially if they don't know you well. Sometimes I've followed up with PMs about emails I've sent, and they were oblivious to the context or purpose of the email. PMs might not understand what you're asking them to do unless you explain it to them through a meeting. Unfortunately, meetings are often the only language PMs understand.
+However, just because a PM or other requester is slow to make the request, don't rush to judgment about their interest in the docs, especially if you're making the requests over email. For many people, email is just noise, especially if they don't know you well. Sometimes I've followed up with PMs about emails I've sent, and they were oblivious to the context or purpose of the email. PMs might not understand what you're asking them to do unless you explain it to them through a meeting. Unfortunately, meetings are often the only language PMs understand.
 
 ## 5. Convene a documentation kickoff meeting {#kickoff_meeting}
 
 After the project-intake ticket has been completed, the tech writer schedules a documentation kickoff meeting with the PM and other interested stakeholders. The tech writer reviews the information in the project-intake ticket and asks questions and gathers other details during the meeting.
 
-During this meeting, the tech writer should set expectations about what will be delivered, clarify timelines, push for demos or sample apps, describe the process for working together on the project, understand who the reviewers are, describe the review process, what's in scope or out of scope, and more. If the requester left fields blank, the tech writer should push on reasons why or who might have the information. It's better to collect the information up front while you're in information-collecting mode rather than later, when you're already supposed to be writing the documentation.
+During this meeting, the tech writer should set expectations about what will be delivered, clarify timelines, push for demos or sample apps, describe the process for working together on the project, understand who the reviewers are, describe the review process, what's in scope or out of scope, and more. If the requester left fields blank, the tech writer should push on reasons why or who might have the information. It's better to collect the information upfront while you're in information-collecting mode rather than later, when you're already supposed to be writing the documentation.
 
 The tech writer might decide to copy this information into a note-taking wiki and store it with other doc plans. After the kickoff, the personal wiki can become a place for the tech writer to store running notes, questions, or other details specific to the project. This wiki can become a log of important information for the project, perhaps where the tech writer organizes all the information needed for the project.
 
@@ -317,12 +317,12 @@ Each sprint has a capacity. For example, the sprint capacity might be 10 points 
 
 Suppose your project has a backlog of items totaling 1,000 points, and a stakeholder wants to know when the project will be completed. The team could say that, based on the current team's velocity (which is driven by the team's resources), the team can complete the backlog in 20 sprints, or 40 weeks.
 
-But agile teams don't usually define all the needed tasks up front in an endless backlog. The whole idea is to constantly course-correct by demo'ing the output of your sprint to the owners, and then make adjustments for the next sprint.
+But agile teams don't usually define all the needed tasks upfront in an endless backlog. The whole idea is to constantly course-correct by demonstrating the output of your sprint to the owners, and then make adjustments for the next sprint.
 
 During sprint planning, writers assign points to the tickets. Each ticket might be weighted as follows:
 
 * 1 point = 0.5 days work or less
-* 2 points = 1 days of work
+* 2 points = 1 day of work
 * 3 points = 1.5 days of work
 * 4 points = 2 days of work
 
@@ -336,7 +336,7 @@ During the bi-weekly Sprint Planning meeting, each writer weights their items an
 
 ## 8. Start creating content {#start_creating_content}
 
-As tech writers begin developing content, there are two primary ways to go about it. For new content that involves a significant amount of new material, which will require review, comments, iterations, and other discussion, I recommend starting the content in a collaborative wiki platform (e.g., Google Docs, Quip, Confluence). Use the platform that your team already uses for collaboration, as it will probably a familiar place for interaction. These platforms allow you to easily ask questions, let reviewers provide input, and collaboratively shape the material in a more interactive way.
+As tech writers begin developing content, there are two primary ways to go about it. For new content that involves a significant amount of new material, which will require review, comments, iterations, and other discussions, I recommend starting the content in a collaborative wiki platform (e.g., Google Docs, Quip, Confluence). Use the platform that your team already uses for collaboration, as it will probably a familiar place for interaction. These platforms allow you to easily ask questions, let reviewers provide input, and collaboratively shape the material in a more interactive way.
 
 There's no point in focusing on your authoring tool's syntax (e.g., Markdown, DITA, XML) or struggling with build issues at this point if you're not even sure if the pages you've written will make it into the published documentation. I wrote about this scenario extensively in [Treat code like code and prose like prose](/blog/treat-code-like-code-and-prose-like-prose/). While it might be tempting to drive everything from a docs-as-code tooling perspective here, asking engineers to review content using code review tools, this typically excludes non-engineers from the documentation review process.
 
@@ -352,7 +352,7 @@ As you're creating content, you don't need to start from a blank page. You can u
 
 Note that you should avoid just lightly editing content that someone gives you, without assessing it on a deeper level. Engineers and other product team members almost invariably have some product information on a wiki, but this information often needs to be reworked, sometimes from scratch.
 
-Your first step is to get the product or code working (to some extent) yourself. This testing will usually help you identify information gaps and other problems in existing material. See [Testing your docs](testingdocs_overview.html) for more details here. Push for [sample apps](docapis_sample_apps.html) or [sample code](docapis_codesamples_bestpractices) (often from a QA team) in order to test the code. Also, recognize that clarifying these gaps is a primary value we add as technical communicators to the information process. If you don't understand something on a wiki engineers wrote, find out whether your audience will understand it (often by asking field engineers or support teams).
+Your first step is to get the product or code working (to some extent) yourself. This testing will usually help you identify information gaps and other problems in existing material. See [Testing your docs](testingdocs_overview.html) for more details here. Push for [sample apps](docapis_sample_apps.html) or [sample code](docapis_codesamples_bestpractices) (often from a QA team) in order to test the code. Also, recognize that clarifying these gaps is a primary value we add as technical communicators to the information process. If you don't understand something on a wiki that engineers wrote, find out whether your audience will understand it (often by asking field engineers or support teams).
 
 ## 9. Follow a review process for your docs {#follow_review_process}
 
@@ -399,13 +399,13 @@ This meeting is a chance to re-evaluate the work and make any adjustments, cours
 
 Items not completed during the sprint can either be reverted to the backlog or left as uncompleted in the sprint. (A single ticket can usually have more than one sprint label.)
 
-Typically, writers embedded with product teams should also attend the Scrum meetings of that team. (And of course if you're a lone writer, that would be your only sprint closure meeting.) If you want to show off your docs as part of the list of engineering demo, great. I find that it only makes sense to showcase the docs every so often, when I've added something significant or noteworthy and want to call attention to it in a more visible way.
+Typically, writers embedded with product teams should also attend the Scrum meetings of that team. (And of course, if you're a lone writer, that would be your only sprint closure meeting.) If you want to show off your docs as part of the list of engineering demo, great. I find that it only makes sense to showcase the docs every so often when I've added something significant or noteworthy and want to call attention to it in a more visible way.
 
-In many cases, engineers are specialized and often unaware of additions to the documentation. By occasionally demo'ing the docs, you build awareness with engineers that you're writing and contributing docs, and they start to understand your role and what you do. (Yes, some engineers might not fully understand what your role as a technical writer is on the project!)
+In many cases, engineers are specialized and often unaware of additions to the documentation. By occasionally providing a demo of the docs, you build awareness with engineers that you're writing and contributing docs, and they start to understand your role and what you do. (Yes, some engineers might not fully understand what your role as a technical writer is on the project!)
 
 ## 12. Share monthly reports {#share_reports}
 
-At a monthly cadence, the doc team shares details of what they completed with all stakeholders interested in their work (outside the engineering teams). This typically involves sending updates to an email distribution list, and might include your own senior leadership, field engineers, support teams, and so on.
+At a monthly cadence, the doc team shares details of what they completed with all stakeholders interested in their work (outside the engineering teams). This typically involves sending updates to an email distribution list and might include your own senior leadership, field engineers, support teams, and so on.
 
 The monthly report contains a high-level summary of the latest doc updates as well as a list of completed tickets. For significant updates (e.g., launches), you can send info immediately to the list (or relevant stakeholders) rather than waiting for the end of the month.
 
@@ -426,7 +426,7 @@ Here's an overview of the meetings that drive the process for managing documenta
    </thead>
    <tbody>
       <tr>
-         <td markdown="span">Doc Work Identification</td>
+         <td markdown="span">Doc Project Planning</td>
          <td markdown="span">bi-weekly</td>
       </tr>
       <tr>
@@ -450,4 +450,4 @@ Here's an overview of the meetings that drive the process for managing documenta
 
 ## Related topics
 
-See the [Process for managing small documentation requests](docapis_process_for_managing_small_doc_requests).
+See the [Process for managing small documentation requests](docapis_managing_small_doc_requests).
