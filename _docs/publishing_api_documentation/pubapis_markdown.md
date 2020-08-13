@@ -59,7 +59,7 @@ Markdown has appeal (especially with developers) for various reasons:
 * You can treat the Markdown files with the same workflow and routing as code.
 * Markdown is easy to learn, so you can focus on the content instead of the formatting.
 
-### Why not use a more semantically rich markup?
+## Why not use a more semantically rich markup?
 
 Why not use a more semantically rich markup language like DITA? Although you can also work with DITA in a text editor, it's a lot harder to read the code with all the XML tag syntax. For example, look at the tags required by DITA for a simple instruction about printing a page:
 
