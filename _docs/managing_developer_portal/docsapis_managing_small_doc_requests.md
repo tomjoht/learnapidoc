@@ -117,3 +117,19 @@ If the ticket doesn't require any review (e.g., fixing a broken link), you can j
 In your monthly report listing doc work completed, consider listing all closed tickets. You might decide to put the small doc requests into a section at the end (e.g., "Small Doc Requests Resolved") so that readers can focus on the important changes. If you simply list all tickets in order of resolution, it might juxtapose trivial changes alongside more substantial efforts and dilute the main focus of your communication.
 
 In the Small Doc Requests Resolved section, you might also provide a link to your intake form for these types of requests. This helps others know your process for managing small doc requests. The next time they have a request, they'll know what the process is and what to expect.
+
+## Survey to gather your feedback and input
+
+Please share your feedback and input by answering a few questions in this short survey. You can view [ongoing responses here](https://www.questionpro.com/t/PHGxqZicRU).
+
+<script>
+EMBED_PARAMS = {};
+EMBED_PARAMS.surveyID =7591897;
+EMBED_PARAMS.domain ="//www.questionpro.com";
+EMBED_PARAMS.src ="//www.questionpro.com/a/TakeSurvey?tt=%2Bx58Pmqos34%3D";
+EMBED_PARAMS.width ="100%";
+EMBED_PARAMS.height = "1000px";
+EMBED_PARAMS.border = "hidden";
+</script>
+<div id="div_7591897"></div>
+<script src="//www.questionpro.com/javascript/embedsurvey.js?version=1"></script>

@@ -451,3 +451,19 @@ Here's an overview of the meetings that drive the process for managing documenta
 ## Related topics
 
 See the [Process for managing small documentation requests](docapis_managing_small_doc_requests).
+
+## Survey to gather your feedback and input
+
+Please share your feedback and input by answering a few questions in this short survey. You can view [ongoing responses here](https://www.questionpro.com/t/PHGxGZicOa).
+
+<script>
+EMBED_PARAMS = {};
+EMBED_PARAMS.surveyID =7591719;
+EMBED_PARAMS.domain ="//www.questionpro.com";
+EMBED_PARAMS.src ="//www.questionpro.com/a/TakeSurvey?tt=aMcTgDvLcqs%3D";
+EMBED_PARAMS.width ="100%";
+EMBED_PARAMS.height = "1000px";
+EMBED_PARAMS.border = "hidden";
+</script>
+<div id="div_7591719"></div>
+<script src="//www.questionpro.com/javascript/embedsurvey.js?version=1"></script>
