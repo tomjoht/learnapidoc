@@ -1,5 +1,5 @@
 ---
-title: Managing small documentation requests
+title: Processes for managing small documentation requests
 permalink: /docapis_managing_small_doc_requests.html
 course: "Documenting REST APIs"
 weight:

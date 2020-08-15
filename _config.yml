@@ -91,6 +91,7 @@ algolia:
     - _docs/introduction_to_rest_apis/tocstart.html
     - _docs/introduction_to_rest_apis/tocstart_fulldetails.md
     - _docs/activities_pdf/*
+    - _docs/slides/*
   nodes_to_index: 'p,.description'
 ####### jekyll seo tag configuration #######
 title: Documenting APIs
