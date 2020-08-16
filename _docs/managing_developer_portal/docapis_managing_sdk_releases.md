@@ -2,7 +2,7 @@
 title: Processes for managing SDK release processes
 permalink: /docapis_managing_sdk_releases.html
 course: "Documenting REST APIs"
-weight: 3
+weight: 12.4
 sidebar: docapis
 section: devportals
 path1: /docapis_managing_dev_portals.html
@@ -109,6 +109,8 @@ Preparing this Readme might actually be the main request from the engineering te
 
 Most developers expect the Readme to have detailed information, and it might make sense to pack your Readme with condensed versions information also available in your docs, especially so that the repository has the right keywords for searches and other visibility on whatever site/platform you're distributing your code. But to avoid duplicating information in multiple places online (between the Readme and your main documentation), as long as you provide summaries plus links of the expected information, this should satisfy developer needs. Links that point to documentation pages are also easier to update, since presumably you can update your documentation pages dynamically but might require engineering involvement to update the Readme.
 
+{% include random_ad.html %}
+
 ### Version Information
 
 The SDK should include the version number for the release. This version number lets users know whether their existing file is outdated, and lets you establish guidelines about compatibility based on different versions. The version number might be indicated both in the README file and code.
@@ -118,6 +120,8 @@ Version numbering should follow a consistent pattern for the organization (or at
 ### Release Notes
 
 The release of any SDK should include release notes indicating what has changed. Release notes can indicate whether the release is backwards compatible or the extent of support/compatibility for intended devices for each version. For example, if the latest version creates breaking changes with previous versions, this needs to be called out in the release notes. If the latest version is compatible with all previous versions (a best practice), you might note this as well.
+
+{% include image_ad_right.html %}
 
 To provide more detail here, suppose version 1 of an SDK has a class called ACME that developers have implemented in their projects. Version 2 presumably wouldn't change ACME in a way that would break version 1 implementations of that code.
 
@@ -133,6 +137,8 @@ Now that we've covered requirements about the SDK content itself, the next quest
 
 Your organization might already have a file storage and distribution in place (such as storing the files on S3 or some other web server). However, SDKs tend to have some common distribution sites that you should be aware of.
 
+{% include random_ad2.html %}
+
 For Java, commonly the SDK will include a JAR file; for Android, the SDK often includes an AAR file. C++ might include a DLL. These are binaries that developers will download and incorporate into their projects. Rather than manually downloading the files, developers can automatically pull from online distribution repositories to dynamically include the files when they build their projects.
 
 Two common distribution sites for Java-related projects are [JCenter](https://bintray.com/bintray/jcenter) and [Maven Central](https://search.maven.org/). JCenter is a central distribution point for Java and Android libraries. JCenter has everything that Maven Central has and more. Code for other libraries will have different online repositories.
@@ -146,5 +152,7 @@ When developers build their projects, they usually have a build tool that retrie
 Many SDKs have a [sample app](docapis_sample_apps.html) that demonstrates integration with the SDK and the provided functionality, even if the sample app is just bare-bones simple and only includes some basic buttons in the UI to initiate events. Many times, sample apps are included with the SDK. If the sample app is more extensive, consider distributing it through GitHub as open-source project instead.
 
 Releasing your project on GitHub doesn't require the code to be open source, but the project source must be viewable. (You can't just upload a compiled binary onto GitHub.) You probably can't just create a new GitHub repo in your organization, but you can instruct engineering teams to do so following any outlined processes.
+
+{% include random_ad3.html %}
 
 Keep in mind that distributing code on GitHub entails some support for the code. For example, if users log issues about bugs, who will respond? Will it be important to track the number of stars and follows for the repo? Who will be the one who actually pushes the code into the repo? You definitely want engineering teams to own this process not because it's technically difficult, but because you want them to feel a sense of ownership and commitment for participation there. If the tech writers handle all aspects of the GitHub repo, tech writers end up playing support roles in responding to issues or handling other administrative details.

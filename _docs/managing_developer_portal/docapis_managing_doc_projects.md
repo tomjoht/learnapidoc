@@ -2,7 +2,7 @@
 title: Processes for managing large documentation projects
 permalink: /docapis_managing_doc_projects.html
 course: "Documenting REST APIs"
-weight: 1
+weight: 12.2
 sidebar: docapis
 section: devportals
 path1: /docapis_managing_dev_portals.html
@@ -71,6 +71,8 @@ This specialization not only lets tech writers become SMEs in these areas of the
 
 To enforce these efforts on a regular basis, doc teams should gather bi-weekly for a "Documentation Planning" meeting where they specifically review the various roadmaps of the teams they support. If multiple people are invited to the meeting, you're more likely to keep it going. During the project planning, list out projects onto a documentation planning spreadsheet.
 
+{% include image_ad_right.html %}
+
 If you're not part of a doc team but are fully embedded with a product team as a solo writer, you can still perform the same function but might need to drive the whole process yourself. Solo writers often support many different disconnected teams within an organization as well.
 
 ## 2. Assess the identified work against strategic priorities {#assess_strategic_priorities}
@@ -85,6 +87,8 @@ Decide which projects should receive your most thorough attention (based on the 
 
 Keep in mind that strategic priorities differ by group. What might be a strategic priority for one group might not be a strategic priority for another group. This prioritization can be especially problematic if your group is cross-functional, meaning you support many organizations with different services (e.g., documentation, marketing, support, dev relations, and so on). In these cases, you'll have to figure out which priorities your own group wants to embrace.
 
+{% include random_ad2.html %}
+
 The review of strategic priorities and the assessment of projects should ideally take place at a regular cadence, and although filling up your calendar with meetings isn't ideal, this meeting (especially when it involves multiple people) can be a forcing function for this task. You might call this meeting "Project Prioritization" and even include field engineers in the meeting (especially if the field engineers have a close ear to important business partners).
 
 ## 3. Assign the projects to different tech writers {#specialize_the_writers}
@@ -96,6 +100,8 @@ For example, suppose you have 25 different projects, and you have about 5 differ
 These different buckets become areas of specialization for the writers. For example, "Bob" takes on all projects originating from the ACME group and which deal with Widgets. Bob becomes immersed in ACME's widgets and teams, and builds rapport with that group the more he embeds with them. Meanwhile, "Cassandra" takes on all projects originating from the Globex group or which deal with Components. Cassandra immerses herself as much as possible in Globex teams, attending their standups and other meetings and such. In this way, everyone in Globex gets to know who Cassandra is and learns the process for docs.
 
 It's important that each tech writer is assigned an area of specialization so that they can accrue the necessary knowledge and rapport with teams in those areas. Each project on your doc planning spreadsheet should be categorized into an area of specialization correlating to a tech writer's specialization.
+
+{% include random_ad.html %}
 
 What happens if the groups don't balance out evenly? Suppose Globex pushes out tons of features while ACME is much smaller and only has 1-2 releases a year? In that case, you might have to make adjustments so that the work is more balanced. These adjustments can only be decided based on the number of writers at your disposal, your org structures, and other factors. But if you have a list of strategic priorities for your org, these strategic priorities can serve as the guiding core for balancing the work. Ideally, balance writers based on strategic priorities rather than simply the number of projects.
 
@@ -292,6 +298,8 @@ During this meeting, the tech writer should set expectations about what will be 
 The tech writer might decide to copy this information into a note-taking wiki and store it with other doc plans. After the kickoff, the personal wiki can become a place for the tech writer to store running notes, questions, or other details specific to the project. This wiki can become a log of important information for the project, perhaps where the tech writer organizes all the information needed for the project.
 
 In cases where one tech writer leaves or transitions to another project, a new tech writer can review this wiki and get a sense of the project's status, contacts, and other details.
+
+{% include random_ad3.html %}
 
 ## 6. Chunk project work into tickets {#chunk_the_work}
 

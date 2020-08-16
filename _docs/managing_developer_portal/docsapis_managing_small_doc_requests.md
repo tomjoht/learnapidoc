@@ -2,7 +2,7 @@
 title: Processes for managing small documentation requests
 permalink: /docapis_managing_small_doc_requests.html
 course: "Documenting REST APIs"
-weight:
+weight: 12.3
 sidebar: docapis
 section: devportals
 path1: /docapis_managing_dev_portals.html
@@ -39,6 +39,8 @@ Small doc requests can be prioritized and weighted similar to other projects (e.
 If there are a lot of small tickets that each takes 10 minutes, and you can't logically group them together, you can choose how you weight them. This where a more exact weighting system breaks down &mdash; it probably makes sense for disparate tasks to remain in separate tickets, but since many ticketing systems usually require whole number weightings, how do you represent a 10-minute task? You don't want to use 0 because the task requires *some* work, but if you use 1 point, wouldn't this distort the actual effort? Ten minutes of work is hardly the same as another task that takes half a day.
 
 It depends on the purpose of the weighting. If the purpose of weighting is to evaluate the team's productivity, recognize that there can be a danger in using these rough point estimates to assess the amount of work completed. The way you chunk up tasks and weight them can easily be distorted. For example, suppose a writer breaks down tasks for a project in an extremely granular way, and then weights each task as 1 point. The writer might appear to be finishing a ton of work when in reality the writer just manipulated the tracking system to appear to be doing more work than was actually done. If your velocity and weighting can so easily be distorted, it might not mean a whole lot to others.
+
+{% include image_ad_right.html %}
 
 At the same time, best practices for chunking work and providing time estimates usually don't recommend such granular, hourly chunks of time. Perhaps one solution might be to attach a code review to every ticket so that others can see exactly how much text was changed. However, this could also short-sell the work. Suppose the edit required tracking down a SME who had more knowledge about a particular value or setting that needed clarification. Maybe the file diff is minimal but the effort to get the information was large. Conversely, suppose a writer receives a large chunk of code or other content from an engineer that is production-ready, and all the writer needs to do is paste it into an existing page.
 
@@ -86,6 +88,8 @@ Think about the different kinds of doc requests you receive, and then customize 
 
 Create a custom intake form that solicits the information you need for each of these different doc types. Advertise your intake process on your team wiki page and point users to it when they ask for docs.
 
+{% include random_ad.html %}
+
 It's important that small doc request tickets be completed by the requester. This ensures that the tech writer isn't stuck digging around for the information needed to complete the task. It also ensures commitment and allows the requester to receive updates on the status of the ticket.
 
 It's easy for someone to request an update via email or chat, and perhaps asking the requester to formalize the request by submitting a ticket might be extra overhead &mdash; wouldn't it be easier for you to just copy/paste the email thread into the ticket, rather than making a request to the person to locate your intake page, create a ticket, and then populate the right information in the right way?
@@ -104,6 +108,8 @@ Suppose a thread goes a dozen rounds and multiple Cc lists. By the time the thre
 
 Most small doc requests can be made directly within your authoring system rather than starting out in a collaborative platform like Google Docs or Quip. When you're creating content in your authoring system, you might choose to follow a standard branching workflow (or whatever Git workflow you've decided to implement in your group). Usually, create a branch from production and make your changes in the branch.
 
+{% include random_ad3.html %}
+
 When you're ready to review this version with reviewers, merge your feature branch into beta, push the build into a beta environment of some kind, and provide a link to reviewers. Also, create a code review so the requester can see specifically what you changed. I find that code reviews provide more granular detail if people want it, though I'm somewhat mixed about whether code reviews are useful for more extensive updates. I personally like that code reviews objectively demonstrate the changes made so that readers get a sense of the effort involved.
 
 ## Closing the ticket
@@ -115,6 +121,8 @@ If the ticket doesn't require any review (e.g., fixing a broken link), you can j
 ## Reporting on progress
 
 In your monthly report listing doc work completed, consider listing all closed tickets. You might decide to put the small doc requests into a section at the end (e.g., "Small Doc Requests Resolved") so that readers can focus on the important changes. If you simply list all tickets in order of resolution, it might juxtapose trivial changes alongside more substantial efforts and dilute your communication.
+
+{% include random_ad2.html %}
 
 In the Small Doc Requests Resolved section, you might also provide a link to your intake form for these types of requests. This helps others know your process for managing small doc requests. The next time they have a request, they'll know what the process is and what to expect.
 
