@@ -2,7 +2,7 @@
 title: Managing developer portals
 permalink: /docapis_managing_dev_portals.html
 course: "Documenting REST APIs"
-weight:
+weight: 2
 sidebar: docapis
 section: devportals
 path1: /docapis_managing_dev_portals.html
