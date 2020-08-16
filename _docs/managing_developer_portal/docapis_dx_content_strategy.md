@@ -1,5 +1,5 @@
 ---
-title: DX content strategy role with a developer portals
+title: DX content strategy with developer portals
 permalink: /docapis_dx_content_strategy.html
 course: "Documenting REST APIs"
 weight: 12.1
@@ -8,7 +8,7 @@ section: devportals
 path1: /docapis_managing_dev_portals.html
 ---
 
-As the content grows on a developer portal, there's an increasing need to expand your documentation role from an individual contributor who is creating and publishing new content to a dedicated content steward who, rather than create content as an individual contributor (IC), instead manages the processes, standards, tools, governance, and workflows for the content that is authored by contributing teams. The general common industry term for this role might be *content strategist*, but in the context of developer documentation, I'm calling this role a "DX content strategist" (DX == developer experience). Note that the DX content strategist isn't an IC but rather more of a portal site manager and strategist.
+As the content grows on a developer portal, there's an increasing need to expand your documentation role from an individual contributor who is creating and publishing new content to a dedicated content steward who, rather than create content as an individual contributor (IC), instead manages the processes, standards, tools, governance, and workflows for the content that is authored by contributing teams. The general common industry term for this role might be *content strategy*, but in the context of developer documentation, I'm calling this activity "DX content strategy." (*DX* refers developer experience, similar to how *CX* refers to customer experience.) 
 
 * TOC
 {:toc}
