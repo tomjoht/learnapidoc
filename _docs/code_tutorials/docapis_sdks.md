@@ -49,6 +49,10 @@ If you're unfamiliar with the language, you can just take what engineers write, 
 
 As I mentioned in the [Code samples and tutorials](docapis_codesamples_bestpractices.html), you don't need to document how a particular language works, just how your own company's SDK works. Presumably, if an engineer downloads the Java SDK for an API, it's because the engineer is already familiar with Java. However, if your API was implemented in a particular way in Java, you should explain *why* that approach was taken. (Granted, understanding the difference between documenting Java and documenting a particular approach in the Java implementation also requires you to [understand Java](nativelibraryapis_java_crash_course.html).)
 
+## Releasing your SDK
+
+When you release the SDK, although engineers might handle the release, they will probably look to you for input on SDK readiness, including preparation of the Readme, documentation, licensing, and other details. See [Processes for managing SDK release processes](docapis_managing_sdk_releases.html) for more information about these details.
+
 ## Sample SDKs and sample apps
 
 The following examples show documentation for some sample SDKs and sample apps.
