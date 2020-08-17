@@ -395,7 +395,7 @@ folders:
   description: "The process for managing developer portal documentation includes a number of different tasks outside of content development. The role of a DX (developer experience) content strategist plays a key role in defining workflows, standards, user flows, processes, and other aspects of the site. workflows for different types of documentation."
   folderitems:
 
-  - title: DX content strategy role with a developer portals
+  - title: DX content strategy with developer portals
     jurl: /docapis_dx_content_strategy.html
 
   - title: "Processes for managing large documentation projects"
