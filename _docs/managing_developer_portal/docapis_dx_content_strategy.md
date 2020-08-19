@@ -8,7 +8,7 @@ section: devportals
 path1: /docapis_managing_dev_portals.html
 ---
 
-As the content grows on a developer portal, there's an increasing need to expand documentation roles from individual contributors creating and publishing new content to dedicated contents steward who, rather than create content as an individual contributors (IC), instead manage the processes, standards, tools, governance, and workflows for the content that is primarily authored by contributing teams.
+As the content grows on a developer portal, there's an increasing need for some technical writers to expand their documentation roles from individual contributors creating and publishing new content to dedicated content strategists instead. These dedicated content strategists manage the processes, standards, tools, governance, and workflows for the content that is primarily authored by contributing teams.
 
 The general common industry term for this activity might be *content strategy*, but in the context of developer documentation, I'm calling this activity "DX content strategy." (*DX* refers developer experience, similar to how *CX* refers to customer experience.) Anyone who engages in DX content strategy would be considered a DX content strategist. An organization can have multiple people filling DX content strategist roles.
 
@@ -17,7 +17,7 @@ The general common industry term for this activity might be *content strategy*, 
 
 ## Risks of developer portals with no DX content strategy
 
-If organizations don't have a DX content strategist dedicated to their growing developer portals and enhancing the developer experience, the resulting trajectory of a developer portal will follow the same path more or less as an internal wiki. Internal wikis tend to be content dumping grounds that are a wild west of standards and styles, and where you never know if content is current, outdated, accurate, deprecated, or under construction.
+If organizations don't have any DX content strategists dedicated to their growing developer portals and enhancing the developer experience, the resulting trajectory of a developer portal will follow the same path more or less as an internal wiki. Internal wikis tend to be content dumping grounds that are a wild west of standards and styles, and where you never know if content is current, outdated, accurate, deprecated, or under construction.
 
 Finding the right content on an internal wiki is a constant challenge, and there's no consistency from one page to the next. In the wiki model, teams create docs during their times of need and abandon them when their teams or priorities change. The result is a mishmash of fragmented, often unowned content.
 
@@ -27,13 +27,11 @@ Because documentation for external developers is a high priority, it shouldn't b
 
 Additionally, the individual contributor model doesn't scale for the typical engineer-to-writer ratio in most organizations &mdash; a ratio where engineers and other tech roles vastly outnumber writers. You might have just a handful of tech writers to support thousands of engineers. Tech writers often work with different product teams on a continually shifting basis, covering as much ground as possible but not having capacity to meet all needs. In this "itinerant" tech writer model, you can't always play individual contributor roles to write the content that each product team needs. Instead, writers have to shift to playing more content strategy roles around content that others develop.
 
-Some organizations might have product teams be responsible for creating their own documentation, with a tech writer to assist them as needed. However, if tech writers just tell teams to make a pull request for all doc updates, the result will likely be poor content that requires heavy editing and revision, and eventually tech writers might conclude that it would have been faster to write the content themselves.
-
-To elevate contributor contributions to any standard, you have to equip contributors with easy tools, simple markup, fill-in-the-blank templates, clear standards, careful feedback, immediate tools support, and other information and tooling for their effort. You can't do this if you're an individual contributor constantly on the hook to create documentation yourself &mdash; often without enough time to finish, let alone teaching and helping other contributors.
+To elevate contributor contributions to any standard, you have to equip contributors with easy tools, simple markup, fill-in-the-blank templates, clear standards, careful feedback, immediate tools support, and other information and tooling for their effort. You can't do this if you're an individual contributor fully dedicated to three or more full-time projects &mdash; often without enough time to finish, let alone teaching and helping other contributors.
 
 {% include random_ad2.html %}
 
-Overall, the DX content strategist provides the mechanism to elevate the content in ways that improve the developer experience on the portal. As a strategist, this elevation of content doesn't come from creating better content yourself but rather from all the meta-activities you do around content development and publishing that others are doing. These meta content-development activities might include the following:
+Overall, the DX content strategist provides the mechanism to elevate the content in ways that improve the developer experience on the portal. As a strategist, this elevation of content doesn't come from creating better content yourself but rather from all the meta-activities you do around content development and publishing. At a high level, these meta content-development activities might include the following:
 
 * Onboarding and training contributors (and providing materials to facilitate self-service onboarding)
 * Providing standard templates and guidelines for content creation
@@ -45,7 +43,7 @@ These tasks don't involve creating new documentation. Instead, the DX content st
 
 ## Tasks for a developer portal content strategist
 
-The following sections expand in more granular ways on the roles, tasks, and needs that a DX content strategist plays with a developer portal. I've divided the tasks into general groupings related to tools, contributors, processes and standards, and information architecture. Depending on the size of your doc team (e.g., 5 versus 150 writers), you might have specialized teams focusing on each of these areas.
+The following sections expand in more specific ways on the roles, tasks, and needs that DX content strategists play with a developer portal. I've divided the tasks into general groupings related to tools, contributors, processes and standards, and information architecture. Depending on the size of your doc team (e.g., 5 writers versus 150 writers), you might have specialized teams focusing on each of these areas.
 
 ### Tools
 
@@ -57,11 +55,11 @@ The following sections expand in more granular ways on the roles, tasks, and nee
 
 * Reduce the risk of Git catastrophes and broken builds in the system (such as due to misunderstandings with Git or insufficient safeguards with permissions)
 
-* Develop and enhance the doc theme's design and style, as well as available components to use for different scenarios
+* Develop and enhance the doc theme's design and style as well as the available components (e.g., navtabs, accordions, or menus) to use for different scenarios
 
 * Implement style/grammar checkers (e.g., Acrolinx) either with in-tool plugins or perhaps at the platform level
 
-* Build out and verify scripts (e.g., Travis CI scripts) to perform automated checking, such as looking for broken links or style inconsistencies
+* Build out and verify scripts (e.g., Travis CI scripts, GitHub Actions) to perform automated checking, such as looking for broken links or style inconsistencies
 
 * Integrate and configure the search experience (e.g., Algolia, Swiftype, other), including SEO and discoverability of content in search engine results
 
@@ -71,11 +69,11 @@ The following sections expand in more granular ways on the roles, tasks, and nee
 
 * Configure scripts for PDF generation and output (e.g., Prince XML scripts) to distribute content to pre-release partners
 
-* Manage the assets for your developer portal and permissions through the web console related to your website's host
+* Manage the assets for your developer portal and permissions through the web console related to your website host
 
 ### Contributors
 
-* Develop training and guides for contributors to onboard with toolchain and authoring/publishing process
+* Develop training and guides for contributors to onboard with the toolchain and authoring/publishing processes
 
 * Create templates for how-to content and other format types (release notes, getting started, first-time setup, CLI docs, schemas) to help guide authors as well as maintain consistency across docs
 
@@ -83,13 +81,13 @@ The following sections expand in more granular ways on the roles, tasks, and nee
 
 * Create reports to assess each doc set to identify stale content (which hasn't been updated for a long time), missing metadata, outdated localization, and other problem areas
 
-* Create processes to automatically notify contributors when they haven't reviewed their docs for a period of time (e.g., 1 year)
+* Define a process for regularly auditing content to avoid stale, abandoned, or outdated content. Include timelines, requirements, and automated notifications to send out when content owners haven't reviewed their docs for a long period of time (e.g., one year)
 
 * Create and maintain a list of contacts for every doc set, listing current owners and roles
 
 * Review and monitor Git commits from contributors to identify problems or other issues with contributor content
 
-* Analyze trending support tickets and hot products (even when not filed against the doc team) and sync with engineering teams on resolutions
+* Analyze trending support tickets and hot topics (even when not filed against the doc team) and sync with engineering teams on resolutions
 
 * Identify support paths and escalation processes for the different products on the developer portal
 
@@ -97,7 +95,7 @@ The following sections expand in more granular ways on the roles, tasks, and nee
 
 * Define the [process for managing large doc projects](docapis_managing_doc_projects.html), including processes for releases that have impact across field engineers, marketing, and support, etc, not just docs.
 
-* Define a [process for assessing incoming small doc requests](docapis_managing_small_doc_requests.html)) and decide how to approach and prioritize them. Regularly groom the backlog so that you don't have a sea of stale tickets.
+* Define a [process for assessing incoming small doc requests](docapis_managing_small_doc_requests.html) and decide how to approach and prioritize them. Regularly groom the backlog so that you don't have a sea of stale tickets.
 
 * Define and enforce the [release process for SDKs](docapis_managing_sdk_releases.html), [sample apps](docapis_sample_apps.html), and other code artifacts on the developer portal
 
@@ -113,9 +111,7 @@ The following sections expand in more granular ways on the roles, tasks, and nee
 
 * Define strategies for versioning content, including approaches for incremental versions versus non-incremental versions, deprecated versions versus active versions, small version variants versus entire doc sets
 
-* Promote awareness of [Legal red flags and danger zones](docapis_managing_sdk_releases.html#legal) (e.g., forbidden terms or IP violations), as well as the Legal review process and resolution
-
-* Define a process for regularly auditing content to avoid stale, abandoned, or outdated content. Include timelines and consequences for owners to update their content
+* Promote awareness of [Legal red flags and danger zones](docapis_managing_sdk_releases.html#legal) (e.g., forbidden terms or IP violations), as well as the Legal review process
 
 * Define, implement, and enforce a docs style guide for the site. Also, define and contribute to an API design style guide and understand how it relates to documentation
 
@@ -137,9 +133,11 @@ The following sections expand in more granular ways on the roles, tasks, and nee
 
 * Coordinate and partner with other documentation teams, aligning or sharing similar assets, workflows, tools, or processes
 
-* Champion the doc team's correct fit in the organizational chart (e.g., Engineering, Product, Marketing) and the reporting chain
+* Champion the doc team's correct fit in the organizational chart (e.g., Engineering, Product, Marketing) and understand the reporting chain
 
 * Report upwards with weekly, monthly, and yearly metrics or other data that resonates with the priorities of the leadership chain
+
+* Identify and cultivate documentation sponsors at the executive level
 
 * Review analytics and regularly investigate trending pages, then prioritize updates based on analytics
 
@@ -149,13 +147,13 @@ The following sections expand in more granular ways on the roles, tasks, and nee
 
 * Review incoming doc feedback as well as developer satisfaction surveys and then take action on the results
 
-* Build rapport with key documentation owners by providing regular updates about the analytics and performance of their docs, etc
+* Build rapport with key documentation owners by providing regular updates about the analytics and performance of their docs, etc.
 
 * Publicize updates to stakeholder mailing lists to communicate changes to all relevant parties
 
-* Ensure the homepage and other marketing pages on the site properly match messaging in the documentation, including language, links, high-level processes, etc.
+* Ensure the homepage and other marketing pages on the site properly match messaging in the documentation, including language, links, high-level processes, terms, etc.
 
-* Contribute to regular communication to developers (e.g., a newsletter) to build their trust and awareness with the company and dev portal
+* Contribute to regular communication that is sent to developers (e.g., a newsletter) to build their trust and awareness with the company and dev portal
 
 * Guide contributing bloggers to address doc needs, and capture blog information that might be worthwhile to incorporate into documentation
 
@@ -185,7 +183,7 @@ The following sections expand in more granular ways on the roles, tasks, and nee
 
 ## Bandwidth for all of these tasks
 
-Reading through these tasks is probably overwhelming, but I wanted to demonstrate the need for these activities outside of content development. All too often, people assume that technical writers merely "write docs" and don't understand that there's a large body of work involved in managing a developing portal that doesn't include writing content. These tasks try to answer the question, "what else do technical writers do besides write docs?"
+Reading through these tasks is probably overwhelming, but my purpose is to demonstrate the need for these activities outside of content development. All too often, people assume that technical writers merely "write docs" and don't understand that there's a large body of work involved in managing a developing portal that doesn't include writing content. These tasks try to answer the question, "what else do technical writers do besides write docs?" When you allocate resources for DX content strategists, they can help build a healthy developer portal so that users can easily find and consume accurate, relevant content that addresses their needs.
 
 {% include random_ad.html %}
 
