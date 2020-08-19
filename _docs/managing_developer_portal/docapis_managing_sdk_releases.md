@@ -170,3 +170,19 @@ Releasing your project on GitHub doesn't require the code to be open source, but
 {% include random_ad3.html %}
 
 Keep in mind that distributing code on GitHub entails some support for the code. For example, if users log issues about bugs, who will respond? Will it be important to track the number of stars and follows for the repo? Who will be the one who actually pushes the code into the repo? You want engineering teams to own this process not because it's technically difficult to push code to GitHub, but because you want them to feel a sense of ownership and commitment for the code there. If the tech writers handle all aspects of the GitHub repo, tech writers end up playing support roles in responding to issues and handling other administrative details. The flip side of managing the GitHub repo, though, is that engineering teams are less likely to push out changes without going through you.
+
+## Your feedback
+
+If you have a moment, please provide some feedback and input on this article with the following survey. You can read [ongoing responses here](https://www.questionpro.com/t/AOaGwZigKk).
+
+<script>
+EMBED_PARAMS = {};
+EMBED_PARAMS.surveyID =7606369;
+EMBED_PARAMS.domain ="//www.questionpro.com";
+EMBED_PARAMS.src ="//www.questionpro.com/a/TakeSurvey?tt=JZ7QD93wt44%3D";
+EMBED_PARAMS.width ="100%";
+EMBED_PARAMS.height = "700px";
+EMBED_PARAMS.border = "hidden";
+</script>
+<div id="div_7606369"></div>
+<script src="//www.questionpro.com/javascript/embedsurvey.js?version=1"></script>

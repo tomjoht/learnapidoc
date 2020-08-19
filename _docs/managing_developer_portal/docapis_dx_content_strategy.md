@@ -188,3 +188,19 @@ Reading through these tasks is probably overwhelming, but my purpose is to demon
 {% include random_ad.html %}
 
 It's not always feasible to have a dedicated person fill the DX content strategist role. Many times different technical writers and managers will play the role in varying degrees. However, it's good to have these tasks be part of an official role rather than an add-on to individual contributor role whose primary job is creating docs. Unless these tasks fall under someone's official title, they are likely to be overlooked. This creates more burden on writers to figure out their own tools, processes, and other details.
+
+## Your feedback
+
+If you have a moment, please provide some feedback and input on this article with the following survey. You can read [ongoing responses here](https://www.questionpro.com/t/PHH6KZigLA).
+
+<script>
+EMBED_PARAMS = {};
+EMBED_PARAMS.surveyID =7606395;
+EMBED_PARAMS.domain ="//www.questionpro.com";
+EMBED_PARAMS.src ="//www.questionpro.com/a/TakeSurvey?tt=X0VXWB9p2yg%3D";
+EMBED_PARAMS.width ="100%";
+EMBED_PARAMS.height = "700px";
+EMBED_PARAMS.border = "hidden";
+</script>
+<div id="div_7606395"></div>
+<script src="//www.questionpro.com/javascript/embedsurvey.js?version=1"></script>
