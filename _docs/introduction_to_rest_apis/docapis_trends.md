@@ -1,5 +1,5 @@
 ---
-title: "Developer Documentation Trends &mdash; Survey Results"
+title: "Developer documentation trends &mdash; survey results"
 permalink: /docapis_trends.html
 keywords:
 course: "Documenting REST APIs"
@@ -9,20 +9,31 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 ---
 
-I recently [conducted a survey](/blog/developer-documentation-survey-2020/) about trends for those creating documentation for developers and engineers. You can view the results [here](../learnapidoc/slides/devdoctrends_results.html):
+I recently [conducted a survey](/blog/developer-documentation-survey-2020/) about trends for those creating documentation for developers and engineers. You can view the content in several formats: slides, webinar, or article.
+
+## Slides
+
+You can view the [slides here](../learnapidoc/slides/devdoctrends_results.html):
 
 <a href="../learnapidoc/slides/devdoctrends_results.html"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/devdoctrendssurveyresultstitle.png" alt="Developer Documentation Survey Results" style="max-width:500px; border: 1px solid #444" /></a>
 
-The survey results are presented in a slide format. You can also view a presentation where I talk through these slides here:
+## Webinar
+
+You can also view a recorded webinar where I talk through the results here:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/swktxdNozXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-{% include image_ad_left.html %}
+## Article
 
-{% comment %}
-# How developer documentation trends differ from general technical communication trends
+Additionally, I wrote an [article for the *Institute of Scientific Technical Communicators* magazine](https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/istc2020_devdoctrends.pdf) (Autumn 2020).
 
-## Introduction
+<a class="noCrossref" href="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/istc2020_devdoctrends.pdf"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/istccoverthumb2020.png" alt="ISTC article on developer documentation trends" style="border: 1px solid #dedede;"/></a>
+
+The same content from the PDF is available in HTML below:
+
+## Developer documentation trends: How developer documentation trends differ from general technical communication trends
+
+### Introduction
 
 Despite excellent research on trends in the technical communication space, so far no survey has focused exclusively on trends within developer documentation only. By developer docs, I mean documentation written primarily for developers and engineers. Two recent surveys on the general tech comm space include Saul Carliner's [Tech Comm Census results](https://www.stc.org/intercom/download/2018/) (published in Dec 2018 *STC Intercom*) and [Scott Abel's Benchmarking Survey](http://public2.brighttalk.com/resource/core/217857/the-state-of-technical-communication_474463.pdf) (summarized in the same issue).
 
@@ -36,17 +47,19 @@ Don't get me wrong. I highly value these general surveys and the information the
 
 Reading these surveys made me wonder &mdash; is it really the case that so many tech writers are still using FrameMaker and Word? That didn't match what I was seeing around me in Silicon Valley. But was I living in a bubble, an anomaly to the rest of the tech comm world? Were trends toward docs-as-code tools much more widespread and common in developer docs? The general tech comm surveys left me with more questions than answers.
 
-## A survey focusing on developer docs
+{% include image_ad_right.html %}
+
+### A survey focusing on developer docs
 
 To gather data about trends in developer docs, I decided to create my own survey. In the first developer documentation survey of its kind, I created a list of 50 questions, mostly multiple choice. I limited the audience to people writing docs for developers/engineers only. I promoted the survey on my blog, LinkedIn, and Twitter, and left the survey open for about two months, from January to March 2020.
 
 A total of 405 people completed the entire survey. Completing the survey means that after the 50th question, they clicked Submit. However, 855 started the survey, and 337 dropped out somewhere along the way. I allowed partial responses even if users dropped out along the way. So the actual number of respondents varied between 405 and 855, with some questions receiving more answers than others. About 37% of the respondents were in the US, about 15% in India, 5% in Germany, 5% in the UK, and smaller percentages from other countries.
 
-<a class="noExtIcon" style="border: 1px solid #dedede" href="https://idratherbewriting.site/devdoctrendsreport"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/trends-participant-statistics.png" alt="Survey summary" /></a>
+<a class="noExtIcon" href="https://idratherbewriting.site/devdoctrendsreport"><img style="border: 1px solid #dedede" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/trends-participant-statistics.png" alt="Survey summary" /></a>
 
 You can browse the results of the survey directly at [https://idratherbewriting.site/devdoctrendsreport](https://idratherbewriting.site/devdoctrendsreport).
 
-## Survey question categories
+### Survey question categories
 
 After the survey, to make better sense of the responses, I divided the 50 questions into five categories:
 
@@ -58,7 +71,7 @@ After the survey, to make better sense of the responses, I divided the 50 questi
 
  In the sections that follow, I'll go through each section and provide summaries, highlights, and analyses. Percentages are rounded up or down. For more granular details, feel free to browse the survey results directly.
 
-## 1. Tool responses {#tools}
+### 1. Tool responses {#tools}
 
 <div markdown="block" class="surveySummary">
 <div class="surveySummaryTitle">Survey summary:</div>
@@ -91,7 +104,7 @@ Overall, the survey results confirmed the predominance of the docs-as-code appro
 
 To read more thoughts about how source formats affect not just how we write but *what* we write, see my blog post, [*How* you write influences *what* you write — interpreting trends through movements from PDF to web, DITA, wikis, CCMSs, and docs-as-code](https://idratherbewriting.site/howinfluenceswhat).
 
-## Formats and output responses {#formats}
+### Formats and output responses {#formats}
 
 <div markdown="block" class="surveySummary">
 <div class="surveySummaryTitle">Survey summary:</div>
@@ -117,7 +130,7 @@ I asked questions about video in the survey because I had heard negative comment
 
 Finally, the number of writers generating PDFs surprised me. It's not so easy to generate PDFs from docs-as-code tools, especially for more long-form content with cross-references and other book-style formatting. However, PDF continues to be an important output, probably because there isn't a good alternative for distributing content to beta partners prior to release. With docs-as-code tools, you don't often have an authentication layer to gate the login. In these scenarios, sending partners a pre-release PDF is usually the easiest way to share content.
 
-## Process and workflow responses {#processes}
+### Process and workflow responses {#processes}
 
 <div markdown="block" class="surveySummary">
 <div class="surveySummaryTitle">Survey summary:</div>
@@ -151,7 +164,7 @@ Some hosting and deployment solutions like Netlify let you push out multiple bui
 
 Finally, most tech writers working with developer docs follow a style guide. It's worth noting here that style guides for dev docs often take into consideration many elements of API design. Enforcing API styles (such as parameter casing or endpoint names) isn't too different from doc style guides (where you enforce rules about title casing and verb forms). Arnaud Lauret's [*The Design of Web APIs*](https://www.amazon.com/Design-Web-APIs-Arnaud-Lauret/dp/1617295108) goes into this topic in detail &mdash; see [API design and usability](https://idratherbewriting.com/learnapidoc/evaluating-api-design.html) for a summary of key points.
 
-## 4. API responses {#api}
+### 4. API responses {#api}
 
 <div markdown="block" class="surveySummary">
 <div class="surveySummaryTitle">Survey summary:</div>
@@ -184,7 +197,7 @@ The OpenAPI spec alone isn't readable documentation, but many tools can generate
 
 REST APIs are language agnostic, but there are usually accompanying software development kits (SDKs) that are language-specific (companies provide them to help developers implement the API). The most important languages to know (likely because of the SDKs that accompany APIs) are JavaScript, Java, and Python. Outside of programming languages, trending technologies include machine learning, artificial intelligence, big data, and Internet of Things (IoT).
 
-## 5. Profile information {#profile}
+### 5. Profile information {#profile}
 
 <div markdown="block" class="surveySummary">
 <div class="surveySummaryTitle">Survey summary:</div>
@@ -221,7 +234,7 @@ As far as professional groups, more writers in this space have an affinity for W
 
 Finally, the biggest challenges writers in dev docs face is having enough technical know-how to write docs and enough time/bandwidth to write it. Getting engineers to review docs is also challenging, as is creating content that addresses both novice and advanced groups.
 
-## Conclusion
+### Conclusion
 
 The survey didn't present any major surprises to the trends that I've already observed in this space. However, the answers provided more definitive data that confirms how different and unique developer docs are from other types of documentation. Technical writers transitioning into this space face a whirlwind of different tools, practices, and challenges. With this data, we can identify trends and see what standard practices are emerging. These trends can serve as a guide and reference as writers make their way in this space.
 
@@ -251,8 +264,6 @@ Tom Johnson is a senior technical writer for Amazon in Sunnyvale, California. He
 * Johnson, Tom. [API design and usability](https://idratherbewriting.com/learnapidoc/evaluating-api-design.html). Idratherbewriting.com.
 * Lauret, Arnaud. [*The Design of Web APIs*](https://www.amazon.com/Design-Web-APIs-Arnaud-Lauret/dp/1617295108). Manning Publications. 2019.
 * Welinske, Joe. [2014 WritersUA Tools Survey](http://www.welinske.com/2014-writersua-tools-survey/). *WritersUA.* Aug 20, 2015.
-
- {% endcomment %}
 
 <style>
 .surveySummary {
