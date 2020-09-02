@@ -19,6 +19,8 @@ The general purpose of this documentation kickoff meeting is to review the intak
 
 After reviewing the ticket, you want to go over the product or features that you'll be documenting. If this is a large project, you might have a separate meeting for the product demo. If it's smaller, you can combine them. Obviously, adjust the advice here for the nature of the product, product teams, and company. During the demo, consider the following questions as a way to gather more information about the product or feature.
 
+{% include random_ad2.html %}
+
 ## Project overview
 
 First, get some basic information. At a high-level, what’s the project here? What's the scope? Complexity? Timelines? Is it a new product, or are you just adding a feature to an existing product? What doc set are you modifying? What team will you be working with? Is this external or internal documentation? What format will the documentation be in, and how will you deliver it?
@@ -47,6 +49,8 @@ After gathering some high-level project details, dive into more detail about the
 *   What roles do users have? Are they engineers? What type of engineers are they?
 *   What's the user's technical level?
 *   Are users familiar with certain programming languages or systems?
+
+{% include random_ad.html %}
 
 **Technical prerequisites**
 
@@ -100,6 +104,8 @@ After gathering some high-level project details, dive into more detail about the
 
 ## Reference docs
 
+{% include image_ad_right.html %}
+
 The essence of an API is inputs and outputs. Something goes in, and something comes out. Is this input and output already described in reference documentation? No matter the language, always focus on inputs and outputs to understand an API.
 
 **Overview**
@@ -132,6 +138,8 @@ The essence of an API is inputs and outputs. Something goes in, and something co
 *   What are some best practices for reducing memory? Are there best practices for making this run as efficient as possible? Do you have to release resources, destroy objects, remove heaps, or do some other memory freeing of resources?
 *   How frequently can you call the API? Are there access limits?
 *   What gotchas or quirks should developers be aware of?
+
+{% include random_ad3.html %}
 
 ## Error messages and handling
 
