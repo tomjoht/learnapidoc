@@ -390,7 +390,7 @@ folders:
   - title: "Create non-ref docs with native library APIs"
     jurl: /nativelibraryapis_nonrefdocs.html
 
-- title: "XI: Managing developer portals"
+- title: "XI: Documentation processes and developer portals"
   jurl: /docapis_managing_dev_portals.html
   description: "The process for managing developer portal documentation includes a number of different tasks outside of content development. The role of a DX (developer experience) content strategist plays a key role in defining workflows, standards, user flows, processes, and other aspects of the site. workflows for different types of documentation."
   folderitems:
@@ -407,7 +407,8 @@ folders:
   - title: Processes for managing SDK releases
     jurl: /docapis_managing_sdk_releases.html
 
-
+  - title: Documentation kickoff meeting and product demo
+    jurl: /docapis_kickoff_meeting_agenda.html
 
 - title: "XII: API glossary and resources"
   jurl: /resources.html
