@@ -27,7 +27,7 @@ You can also view a recorded webinar where I talk through the results here:
 
 I wrote an [article for the *Institute of Scientific Technical Communicators* (ISTC) magazine](https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/istc2020_devdoctrends.pdf) (Autumn 2020).
 
-<a class="noCrossref" href="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/istc2020_devdoctrends.pdf"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/istccoverthumb2020.png" alt="ISTC article on developer documentation trends" style="border: 1px solid #dedede;"/></a>
+<a class="noCrossRef" href="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/istc2020_devdoctrends.pdf"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/istccoverthumb2020.png" alt="ISTC article on developer documentation trends" style="border: 1px solid #dedede;"/></a>
 
 The same content from the PDF is available in HTML below:
 
