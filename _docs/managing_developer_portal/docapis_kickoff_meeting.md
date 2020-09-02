@@ -17,15 +17,15 @@ At some point after receiving a new documentation project, the first step in the
 
 The general purpose of this documentation kickoff meeting is to review the intake ticket, which should include a host of detail about the project. (See [Create project plans for the documentation projects](#create_project_plans) in Managing documentation projects for a list of fields.) Chances are, a product manager has completed half or fewer of the intake fields, as they just don't know all the possible information. No worries, though, as you'll be going through this information in more detail here.
 
-After reviewing the ticket, you want to go over the product or features that you'll be documenting. If this is a large project, you might have a separate meeting for the product demo. If it's smaller, you can combine them. Obviously, adjust the advice here for the nature of the product, product teams, and company.
-
-During the demo, consider the following questions as a way to gather more information about the product or feature.
+After reviewing the ticket, you want to go over the product or features that you'll be documenting. If this is a large project, you might have a separate meeting for the product demo. If it's smaller, you can combine them. Obviously, adjust the advice here for the nature of the product, product teams, and company. During the demo, consider the following questions as a way to gather more information about the product or feature.
 
 ## Project overview
 
 First, get some basic information. At a high-level, what’s the project here? What's the scope? Complexity? Timelines? Is it a new product, or are you just adding a feature to an existing product? What doc set are you modifying? What team will you be working with? Is this external or internal documentation? What format will the documentation be in, and how will you deliver it?
 
 ## Product overview
+
+After gathering some high-level project details, dive into more detail about the product.
 
 **Product overview**
 
