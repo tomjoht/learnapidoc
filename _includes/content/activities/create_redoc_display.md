@@ -2,9 +2,6 @@
 ## <i class="fa fa-user-circle"></i> Activity: Use Redoc to render OpenAPI spec
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
-{: .note}
-Redocly offers robust tools for authoring and publishing API docs using the command-line and docs-as-code workflows. For a fully tutorial, see [Redocly tutorial -- authoring and publishing API docs with Redocly's command-line tools](pubapis_redocly.html). The tutorial on that follows below is a simple way to use Redocly's free API reference documentation generator &mdash; Redoc.
-
 In this activity, you'll render your OpenAPI spec with [Redoc](https://github.com/Redocly/redoc).
 
 1.  Copy the following code into an empty text file (in a text editor such as Sublime Text) and save the file as **redoc.html**. (Note: This code comes from [Redoc's "TL;DR" readme instructions on GitHub](https://github.com/Redocly/redoc#tldr).)

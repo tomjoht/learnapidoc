@@ -27,6 +27,8 @@ The CLI tools also let you check your OpenAPI definition against a ruleset to en
 
 When you're ready to publish your OpenAPI definition, you can also use a command line tool to bundle the small files up into a single file again. You can then feed your OpenAPI definition file into any OpenAPI documentation tool, including Redoc's documentation output: [Redocly API Reference](https://redoc.ly/reference-docs) (premium version), or the community edition of [Redoc](https://redoc.ly/redoc) (free version). There's also a [Developer Portal](https://redoc.ly/developer-portal) option, or a more cloud-based [Workflows integration](https://redoc.ly/workflows). Some of these tools (especially the command-line tools) will come into focus through the tutorial below.
 
+{% include image_ad_right.html %}
+
 ## Overview of Redocly products
 
 Redocly has a variety of products, so let's first clarify these tools before diving more deeply into the the tutorial.
@@ -237,6 +239,8 @@ In this step, you'll break up an existing OpenAPI file into smaller files. We'll
     Additionally, if you had a path parameter, such as `weather/{beach_id}`, Redocly uses curly braces `{}` to denote path parameters (rather than a colon `:` which is sometimes used).
 
     See the `README.md` in the `openapi` folder for more details on these conventions. These conventions are recommendations only. You can decide how you reference the paths from `openapi.yaml`.
+
+{% include random_ad.html %}
 
 ### 3. Check your OpenAPI definition against rules {#check_rules}
 
@@ -487,6 +491,8 @@ Redocly has some unique offerings when it comes to organizing and working with c
 
 If integrating your conceptual content like this doesn't work for your doc needs, Redocly offers a more robust option: [Redocly Developer Portals](#redocly-developer-portals). The Redocly Developer Portals use Gatsby as a static site generator to give you more complete control and customization for non-reference content. Gatsby also provides many pre-built React components, which makes building out other features of a developer portal, such as marketing landing pages and other UI elements in a console, much easier.
 
+{% include random_ad2.html %}
+
 ### 7. Explore the premium version: Redocly API Reference {#explore_premium}
 
 The lack of the Try-it explorer in the Redoc community edition is a major reason to upgrade to the premium version (Redocly API Reference). As I've argued elsewhere in this course, the try-it functionality makes API documentation both interactive and interesting. In this tutorial, we've been using the community edition of Redoc. The premium version, called [Redocly API Reference](https://redoc.ly/reference-docs), provides several key benefits:
@@ -661,6 +667,8 @@ So far we've been exploring the API reference output from within the preview ser
 Redoc provides a lot of options to configure the output. Options to configure the [community edition of Redoc](https://redoc.ly/redoc) are here: [`<redoc>` options object](https://github.com/Redocly/redoc#redoc-options-object). Options to configure the [Redocly API Reference version](https://redoc.ly/reference-docs) are here: [Customization](https://redoc.ly/docs/api-reference-docs/on-premise/customization/).
 
 For sample API reference docs built with Redoc, see [Some Real-life usages](https://github.com/Redocly/redoc#some-real-life-usages) on the Redoc GitHub page.
+
+{% include random_ad3.html %}
 
 ## Conclusion
 
