@@ -23,11 +23,11 @@ When Redocly innovated on their approach to simplifying OpenAPI spec development
 
 Redocly developed command-line tools to split the OpenAPI definition into smaller files to make it easier to work with. Files are stored as separate files and referenced through JSON reference tag (`$ref`) in the main OpenAPI file. Working in smaller files reduces the likelihood of syntax issues and other formatting errors. It also makes it easier to focus on the content.
 
+{% include image_ad_right.html %}
+
 The CLI tools also let you check your OpenAPI definition against a ruleset to ensure you're following best practices. You can configure the ruleset with different levels of strictness, either including or ignoring optional best practices in the OpenAPI specification. This linting lets you identify issues in your OpenAPI definition that might not technically be errors, but would better if included.
 
 When you're ready to publish your OpenAPI definition, you can also use a command line tool to bundle the small files up into a single file again. You can then feed your OpenAPI definition file into any OpenAPI documentation tool, including Redoc's documentation output: [Redocly API Reference](https://redoc.ly/reference-docs) (premium version), or the community edition of [Redoc](https://redoc.ly/redoc) (free version). There's also a [Developer Portal](https://redoc.ly/developer-portal) option, or a more cloud-based [Workflows integration](https://redoc.ly/workflows). Some of these tools (especially the command-line tools) will come into focus through the tutorial below.
-
-{% include image_ad_right.html %}
 
 ## Overview of Redocly products
 
