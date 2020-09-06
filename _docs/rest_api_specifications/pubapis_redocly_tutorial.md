@@ -1,16 +1,14 @@
 ---
-title: "Getting started with Redocly -- a tutorial for authoring and publishing API docs"
+title: "Redocly tutorial -- authoring and publishing API docs with Redocly's command-line tools"
 permalink: pubapis_redocly.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 4.7
+weight: 4.81
 section: openapi_output_demos
 path1: /openapi_output_demos.html
 ---
 
-[Redocly](https://redoc.ly/) provides tools for both authoring and publishing your API docs, and even more, such as creating a developer portal. Redocly's tools follow a docs-as-code approach to simplify the OpenAPI definition.
-
-Using Redocly command-line tools, you can split the OpenAPI definition into many sub-files, and then later bundle up the discrete files into a single file during the publishing stage. You can generate your docs into one of the most attractive outputs available for REST API docs, including integration with conceptual topics as well. Redocly also offers more robust developer portals and SaaS offerings that cover the full authoring and publishing lifecycle.
+[Redocly](https://redoc.ly/) provides a variety of tools for working with API docs. Using Redocly's command-line tools, you can split the OpenAPI definition into many sub-files, and then later bundle up the discrete files into a single file during the publishing stage. You can generate your docs into one of the most attractive outputs available for REST API docs, including integration with conceptual topics as well. Redocly also offers more robust developer portals and SaaS offerings that cover the full authoring and publishing lifecycle.
 
 * TOC
 {:toc}
@@ -19,13 +17,15 @@ Using Redocly command-line tools, you can split the OpenAPI definition into many
 
 ## Redocly's approach to simplifying the author experience with OpenAPI
 
-Before Redocly became Redocly, the team worked on a product called [Rebilly](https://www.rebilly.com/docs/developer-docs/api/overview/) that included a 22,000 line OpenAPI definition file. Working in such a long file and authoring in YAML or JSON can be especially challenging.  Not only does maneuvering in a single massive file be difficult, one small indentation error might require you to constantly troubleshoot syntax issues. (Imagine if developers were to store all code for an application in one single file?)
+Before Redocly became Redocly, the team worked on a product called [Rebilly](https://www.rebilly.com/docs/developer-docs/api/overview/) that included a 22,000 line OpenAPI definition file. Working in such a long file and authoring in YAML or JSON was especially challenging.  Not only was maneuvering in a single massive file difficult, one small indentation error would require them to constantly troubleshoot syntax issues. (The single YAML file for all OpenAPI definition elements was analogous to software developers storing all code for an application in a single file &mdash; an unthinkable way of working with code.)
 
-Instead of putting a graphical user interface (GUI) on top of the OpenAPI code, requiring users to write the definition in forms, menus, and other widgets, Redocly takes another approach. Redocly provides command-line tools to split the OpenAPI definition into smaller files to make it easier to work with. Files are stored as separate files and referenced through JSON reference tag (`$ref`) in the main OpenAPI file. Working in smaller files reduces the likelihood of syntax issues and other formatting errors. It also makes it easier to focus on the content.
+When Redocly innovated on their approach to simplifying OpenAPI spec development, instead of putting a graphical user interface (GUI) on top of the OpenAPI code and requiring users to write the OpenAPi definition in forms, menus, and other widgets, Redocly decided on a more docs-as-code approach that aligns with the developer audience.
+
+Redocly developed command-line tools to split the OpenAPI definition into smaller files to make it easier to work with. Files are stored as separate files and referenced through JSON reference tag (`$ref`) in the main OpenAPI file. Working in smaller files reduces the likelihood of syntax issues and other formatting errors. It also makes it easier to focus on the content.
 
 The CLI tools also let you check your OpenAPI definition against a ruleset to ensure you're following best practices. You can configure the ruleset with different levels of strictness, either including or ignoring optional best practices in the OpenAPI specification. This linting lets you identify issues in your OpenAPI definition that might not technically be errors, but would better if included.
 
-When you're ready to publish your OpenAPI definition, you can also use a command line tool to bundle the small files up into a single file again. You can then feed your OpenAPI definition file into any OpenAPI documentation tool, including Redoc's documentation output: [Redocly API Reference](https://redoc.ly/reference-docs) (premium version), or the community edition of [Redoc](https://redoc.ly/redoc) (free version). There's also a [Developer Portal](https://redoc.ly/developer-portal) option, or a more cloud-based [Workflows integration](https://redoc.ly/workflows). Some of these tools will come into focus through the tutorial below.
+When you're ready to publish your OpenAPI definition, you can also use a command line tool to bundle the small files up into a single file again. You can then feed your OpenAPI definition file into any OpenAPI documentation tool, including Redoc's documentation output: [Redocly API Reference](https://redoc.ly/reference-docs) (premium version), or the community edition of [Redoc](https://redoc.ly/redoc) (free version). There's also a [Developer Portal](https://redoc.ly/developer-portal) option, or a more cloud-based [Workflows integration](https://redoc.ly/workflows). Some of these tools (especially the command-line tools) will come into focus through the tutorial below.
 
 ## Overview of Redocly products
 
@@ -46,7 +46,7 @@ Redocly has a variety of products, so let's first clarify these tools before div
    <tbody>
        <tr>
           <td markdown="span">[Redoc Community Edition](https://redoc.ly/redoc)</td>
-          <td markdown="span">The API reference documentation output from the OpenAPI definition. Compare with Swagger UI or other document generators that parse through an OpenAPI file and render documentation. The free version has limited functionality. </td>
+          <td markdown="span">The API reference documentation output from the OpenAPI definition. Compare with [Swagger UI](pubapis_swagger_demo.html) or other document generators that parse through an OpenAPI file and render documentation. The free version has limited functionality. </td>
           <td markdown="span">Free</td>
        </tr>
       <tr>
@@ -56,12 +56,12 @@ Redocly has a variety of products, so let's first clarify these tools before div
       </tr>
       <tr>
          <td markdown="span">[`create-openapi-repo`](https://github.com/Redocly/create-openapi-repo)</td>
-         <td markdown="span">CLI tool for splitting a single OpenAPI definition file into multiple files (compatible with version 3x only). You can also use this CLI tool to start a new API definition.</td>
+         <td markdown="span">CLI tool for splitting a single OpenAPI definition file into multiple files (compatible with OpenAPI version 3x only). You can also use this CLI tool to start a new API definition.</td>
          <td markdown="span">Open-source</td>
       </tr>
       <tr>
          <td markdown="span">[`openapi-cli`](https://redoc.ly/openapi-cli)</td>
-         <td markdown="span">CLI tool that provides linting against a customizable ruleset, as well as bundling of the OpenAPI files into a single file. You can also preview the output of your docs with the Redocly API References through this tool.</td>
+         <td markdown="span">CLI tool that provides linting against a customizable ruleset, as well as bundling of the OpenAPI files into a single file. You can also preview the output of your docs with the Redocly API Reference through this tool.</td>
          <td markdown="span">Open-source</td>
       </tr>
       <tr>
@@ -71,19 +71,17 @@ Redocly has a variety of products, so let's first clarify these tools before div
       </tr>
       <tr>
          <td markdown="span">[Workflows](https://redoc.ly/workflows) </td>
-         <td markdown="span">A online Redocly app that provides the full authoring and publishing toolset in the cloud, with GitHub integration and docs-as-code worflows. See [https://app.redoc.ly](https://app.redoc.ly) </td>
+         <td markdown="span">An online Redocly app that provides the full authoring and publishing toolset in the cloud, with GitHub integration and docs-as-code workflows. See [https://app.redoc.ly](https://app.redoc.ly) </td>
          <td markdown="span">Premium</td>
       </tr>
    </tbody>
 </table>
 
-This article will focus mostly on the authoring experience working with the OpenAPI definition, as well as publishing using Redoc. For more details about Redocly's Developer Portal and Workflows product, see Redocly's site.
+This article will focus mostly on the authoring experience working with the OpenAPI definition (using [`create-openapi-repo`](https://github.com/Redocly/create-openapi-repo) and [`openapi-cli`](https://redoc.ly/openapi-cli), as well as publishing using [Redoc Community Edition](https://redoc.ly/redoc). For more details about Redocly's Developer Portal and Workflows product, see the Products menu on [Redocly's site](https://redoc.ly).
 
 ## Redocly CLI Walkthrough tutorial
 
-This tutorial will give you a sense of how the Redocly CLI tools work, and how to publish the OpenAPI using Redoc. You'll break up an OpenAPI file, make some changes, bundle it back up, and then publish it with Redoc.
-
-The tutorial has the following sections:
+This tutorial will give you a sense of how the Redocly CLI tools work and how to publish the OpenAPI using Redoc. You'll break up an OpenAPI file, make some changes, bundle it back up, and then publish it with Redoc. The tutorial has the following sections:
 
 * [1. Install the Prerequisites](#prerequisites)
 * [2. Break up an OpenAPI file](#break_openapi)
@@ -92,7 +90,7 @@ The tutorial has the following sections:
 * [5. Bundle up the OpenAPI definition into a single file](#bundle)
 * [6. Combine conceptual docs with reference docs](#conceptual_content)
 * [7. Exploring the premium version: Redocly API Reference](#explore_premium)
-* [8. Build the reference output](#build)
+* [8. Publish the reference output](#build)
 
 The sections aren't necessarily sequential, but they proceed through Redocly's tools in a logical way to become familiar with different aspects of the products. Also, the tutorial uses a sample OpenAPI definition related to the OpenWeatherMap API (used elsewhere in the course). Also, the instructions were written using a Mac. There might not be any differences with Windows, but note that Windows wasn't used here.
 
@@ -101,24 +99,18 @@ This tutorial is a brief exposure to Redocly's tools only. For more comprehensiv
 
 ### 1. Install the prerequisites {#prerequisites}
 
-Before you can work with the Redocly CLI tools, you need to install them.
+Before you can work with the Redocly CLI tools, you need to install them. [node.js](https://nodejs.org/en/) is a prerequisite to installing both Redocly CLI tools.
 
-1.  Install [node.js](https://nodejs.org/). (You can check if you already have node by typing `node -v` in your terminal.)
-2.  Open a terminal and install [`create-openapi-repo`](https://github.com/Redocly/create-openapi-repo) through npm:
+1.  Install [`create-openapi-repo`](https://github.com/Redocly/create-openapi-repo) following the instructions in [How to generate your repository](https://github.com/Redocly/create-openapi-repo#how-to-generate-your-repository).
 
-    ```
-    npm install -g create-openapi-repo
-    ```
+    "npx" is the npm package runner and is the recommended way of running packages that you would run occasionally (see [Downloading and installing packages globally](https://docs.npmjs.com/downloading-and-installing-packages-globally)). Redocly recommends using npx when installing the `create-openapi-repo` because it's typically used only once.
 
-    See [Installation](https://redoc.ly/docs/cli/#installation) for more options and details.
+2.  Install [`openapi-cli`](https://github.com/Redocly/openapi-cli) following the instructions here: [Installation](https://redoc.ly/docs/cli/#installation).
+3.  After you finish installing these CLI tools, restart your terminal.
+5.  Check that your terminal recognizes the `create-openapi-repo` and `openapi-cli` commands.
 
-3.  Install [openapi-cli](https://github.com/Redocly/openapi-cli) through npm:
-
-    ```
-    npm install -g @redocly/openapi-cli
-    ```
-4.  Restart your terminal.
-5.  Check that your terminal recognizes the `create-openapi-repo` and `openapi-cli` commands. If not, you might need to either prepend the installation paths for the tools before the command, or else create an alias in your `.bash_profile` that has these paths. In my `.bash_profile` (inside the home directory at `~/`), I added aliases for the two paths:
+{% comment %}
+If not, you might need to either prepend the installation paths for the tools before the command, or else create an alias in your `.bash_profile` that has these paths. In my `.bash_profile` (inside the home directory at `~/`), I added aliases for the two paths:
 
     ```
     alias openapi='/Users/tomjoht/.nvm/versions/node/v10.11.0/bin/openapi'
@@ -126,6 +118,7 @@ Before you can work with the Redocly CLI tools, you need to install them.
     ```
 
 You might not need to create aliases like this, and you might be using another profile instead of `.bash_profile`. Do whatever is necessary to install these tools before proceeding.
+{% endcomment %}
 
 ### 2. Break up an OpenAPI file {#break_openapi}
 
@@ -133,7 +126,7 @@ In this step, you'll break up an existing OpenAPI file into smaller files. We'll
 
 1.  Download the [openapi_openweathermap.yml](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml) file.
 
-    Right-click the file and choose **Save Link As**. Save it in a folder called `redocly_project` in a convenient location. This OpenAPI definition is a small OpenAPI 3.0 file for one API in the [OpenWeatherMap API](https://openweathermap.org/api). Note that you can use another OpenAPI definition in this tutorial if you prefer. There's nothing special about this file.
+    Right-click the file and choose **Save Link As**. Save it in a folder called `redocly_project` in a convenient location. This OpenAPI definition is a small OpenAPI 3.0 file for one API in the [OpenWeatherMap API](https://openweathermap.org/api). Note that you can use another OpenAPI definition in this tutorial if you prefer. There's nothing special about this file &mdash; it just gives us an OpenAPI definition to work with.
 
 2.  Open a terminal, browse to your `redocly_project` directory, and type the following:
 
@@ -162,88 +155,94 @@ In this step, you'll break up an existing OpenAPI file into smaller files. We'll
 
 7.  In a text editor (such as VS Code, Atom, or Sublime Text), open the `redocly_project` folder and browse the contents.
 
-The folder structure looks like this:
+    The folder structure looks like this:
 
-```
-└── redocly_project
-    ├── LICENSE
-    ├── node_modules ...
-    ├── .git ...
-    ├── README.md
-    ├── docs
-    │   ├── favicon.png
-    │   └── index.html
-    ├── openapi
-    │   ├── README.md
-    │   ├── components
-    │   │   ├── README.md
-    │   │   ├── parameters
-    │   │   │   ├── id.yaml
-    │   │   │   ├── lang.yaml
-    │   │   │   ├── lat.yaml
-    │   │   │   ├── lon.yaml
-    │   │   │   ├── mode.yaml
-    │   │   │   ├── q.yaml
-    │   │   │   ├── units.yaml
-    │   │   │   └── zip.yaml
-    │   │   ├── schemas
-    │   │   │   ├── 200.yaml
-    │   │   │   ├── Clouds.yaml
-    │   │   │   ├── Coord.yaml
-    │   │   │   ├── Main.yaml
-    │   │   │   ├── Rain.yaml
-    │   │   │   ├── Snow.yaml
-    │   │   │   ├── Sys.yaml
-    │   │   │   ├── Weather.yaml
-    │   │   │   └── Wind.yaml
-    │   │   └── securitySchemes
-    │   │       └── app_id.yaml
-    │   ├── openapi.yaml
-    │   └── paths
-    │       ├── README.md
-    │       └── weather.yaml
-    ├── openapi_openweathermap.yml
-    ├── package-lock.json
-    └── package.json
-```
+    ```
+    └── redocly_project
+        ├── .git ...
+        ├── .redocly
+        ├── LICENSE
+        ├── node_modules ...
+        ├── README.md
+        ├── docs
+        │   ├── favicon.png
+        │   └── index.html
+        ├── openapi
+        │   ├── README.md
+        │   ├── components
+        │   │   ├── README.md
+        │   │   ├── parameters
+        │   │   │   ├── id.yaml
+        │   │   │   ├── lang.yaml
+        │   │   │   ├── lat.yaml
+        │   │   │   ├── lon.yaml
+        │   │   │   ├── mode.yaml
+        │   │   │   ├── q.yaml
+        │   │   │   ├── units.yaml
+        │   │   │   └── zip.yaml
+        │   │   ├── schemas
+        │   │   │   ├── 200.yaml
+        │   │   │   ├── Clouds.yaml
+        │   │   │   ├── Coord.yaml
+        │   │   │   ├── Main.yaml
+        │   │   │   ├── Rain.yaml
+        │   │   │   ├── Snow.yaml
+        │   │   │   ├── Sys.yaml
+        │   │   │   ├── Weather.yaml
+        │   │   │   └── Wind.yaml
+        │   │   └── securitySchemes
+        │   │       └── app_id.yaml
+        │   ├── openapi.yaml
+        │   └── paths
+        │       ├── README.md
+        │       └── weather.yaml
+        ├── openapi_openweathermap.yml
+        ├── package-lock.json
+        └── package.json
+    ```
 
-The original OpenAPI definition remains the same: `openapi_openweathermap.yml`. Redocly has extracted each of the paths, parameters, components, and other elements into individual files inside the `openapi` folder.
+    The original OpenAPI definition remains the same: `openapi_openweathermap.yml`. Redocly has extracted each of the paths, parameters, components, and other elements into individual files inside the `openapi` folder.
 
-Redocly has creates a new OpenAPI definition file at `openapi/openapi.yaml`. This OpenAPI definition contains references to all of the files that it extracted as external files. If you view this `openapi.yaml` file, you'll see that Redocly has separated out paths with external JSON references (`$ref`), such as the following:
+    Redocly creates a new OpenAPI definition file at `openapi/openapi.yaml`. This OpenAPI definition contains references to all of the files that it extracted as external files. If you view this `openapi.yaml` file, you'll see that Redocly has separated out paths with external JSON references (`$ref`), such as the following:
 
-```yaml
-paths:
-  /weather:
-    $ref: paths/weather.yaml
-```
+    ```yaml
+    paths:
+      /weather:
+        $ref: paths/weather.yaml
+    ```
 
-The `weather` path is now stored in `openapi/paths/weather.yaml`. When you open this `weather.yaml` file, you'll see that its parameters are also stored in external files:
+    The `weather` path is now stored in `openapi/paths/weather.yaml`. When you open this `weather.yaml` file, you'll see that its parameters are also stored in external files:
 
-```yaml
-parameters:
-  - $ref: ../components/parameters/q.yaml
-  - $ref: ../components/parameters/id.yaml
-  - $ref: ../components/parameters/lat.yaml
-  - $ref: ../components/parameters/lon.yaml
-  - $ref: ../components/parameters/zip.yaml
-  - $ref: ../components/parameters/units.yaml
-  - $ref: ../components/parameters/lang.yaml
-  - $ref: ../components/parameters/mode.yaml
-```
+    ```yaml
+    parameters:
+      - $ref: ../components/parameters/q.yaml
+      - $ref: ../components/parameters/id.yaml
+      - $ref: ../components/parameters/lat.yaml
+      - $ref: ../components/parameters/lon.yaml
+      - $ref: ../components/parameters/zip.yaml
+      - $ref: ../components/parameters/units.yaml
+      - $ref: ../components/parameters/lang.yaml
+      - $ref: ../components/parameters/mode.yaml
+    ```
 
-The OpenAPI definition allows for breaking up files like this and referencing the external files with `$ref`. Note that `../` refers to another file, whereas `#/` refers to another section on the same page (such as with references to `components`). Although the `$ref` syntax is standard, most tools don't work well with OpenAPI files separated out. Usually, when you want to generate API documentation, you'll need to feed the preferred API documentation generator a single OpenAPI YAML or JSON file, not a folder of separate files. But when your working on the API definition, it's helpful to separate files to more easily work with the content.
+    The OpenAPI definition allows for breaking up files like this and referencing the external files with `$ref`.
 
-In this OpenAPI scenario, there's just one simple path: `weather`. However, suppose you had a slash, such as `weather/surfing` or something similar. In that case, because `/` is an illegal character in file names, Redocly would store this as `weather@surfing` under the `paths` folder. Forward slashes (`/`) become `@` symbols.
+    {: .note}
+    Note that `../` refers to another file, whereas `#/` refers to another section on the same page (such as with references to `components`).
 
-Additionally, if you had a path parameter, such as `weather/{beach_id}`, Redocly uses curly braces `{}` to denote path parameters (rather than a colon `:` that is sometimes used).
+    Although the `$ref` syntax is standard, most tools don't work well with OpenAPI files separated out. Usually, when you want to generate API documentation, you'll need to feed the preferred API documentation generator a single OpenAPI YAML or JSON file, not a folder of separate files. But when your working on the API definition, it's helpful to separate files to more easily work with the content.
 
-See the `README.md` in the `openapi` folder for more details. These style conventions are recommendations only. You can decide how you reference the paths from `openapi.yaml`.
+    In this OpenAPI scenario, there's just one simple path: `weather`. However, suppose you had a slash, such as `weather/surfing` or something similar. In that case, because `/` is an illegal character in file names, Redocly would store this as `weather@surfing` under the `paths` folder. Forward slashes (`/`) become `@` symbols.
+
+    Additionally, if you had a path parameter, such as `weather/{beach_id}`, Redocly uses curly braces `{}` to denote path parameters (rather than a colon `:` which is sometimes used).
+
+    See the `README.md` in the `openapi` folder for more details on these conventions. These conventions are recommendations only. You can decide how you reference the paths from `openapi.yaml`.
 
 ### 3. Check your OpenAPI definition against rules {#check_rules}
 
 Redocly lets you run a linter against your OpenAPI definition to check for best practices. In this step, you'll break some rules, run the linter, and see the warnings displayed.
 
-1.  Open the `openapi/.redocly.yaml` file to see Redocly's configuration details, including the linting rulesets, themes, and OpenAPI file used:
+1.  Open the `.redocly.yaml` file (inside the root directory) to see Redocly's configuration details, including the linting rulesets, themes, and OpenAPI file used:
 
     ```yaml
     apiDefinitions:
@@ -263,7 +262,7 @@ Redocly lets you run a linter against your OpenAPI definition to check for best 
 
     See [Configuration file](https://redoc.ly/docs/cli/configuration/) for details about each of these fields. Notice that `main` references the OpenAPI definition file. You could list multiple OpenAPI definitions here. Under `lint`, the `recommended` ruleset is specified.
 
-    You can customize how strict the linting rules are, whether to ignore some rules, and make other configurations. You can learn more about the linting rules here: [Rules](https://redoc.ly/docs/cli/built-in-rules/). For example, the recommended rules check that you follow best practices for completing the information (even if it's optional in the spec) because this information leads to a better output when you generate the Redoc output. You will see warnings if you're missing a `contact` object under `info`, if you're missing a `description` for `tags`, if you're missing `description` properties for each `parameter`, and so on.
+    You can customize how strict the linting rules are, whether to ignore some rules, and make other configurations. For example, the recommended rules check that you follow best practices for completing the information (even if it's optional in the spec) because this information leads to a better output when you generate the Redoc output. You will see warnings if you're missing a `contact` object under `info`, if you're missing a `description` for `tags`, if you're missing `description` properties for each `parameter`, and so on. You can learn more about the linting rules here: [Rules](https://redoc.ly/docs/cli/built-in-rules/).
 
 2.  In a terminal prompt, `cd` to your `redocly_project` folder.
 
@@ -279,7 +278,7 @@ Redocly lets you run a linter against your OpenAPI definition to check for best 
     openapi lint main openapi/openapi.yaml
     ```
 
-    The response for a valid definition is as follows:
+    Here's the response when the linter finds that your OpenAPI definition is valid:
 
     ```
     validating /Users/tomjoht/projects/redocly_project/openapi/openapi.yaml...
@@ -325,9 +324,9 @@ Redocly lets you run a linter against your OpenAPI definition to check for best 
     You have 1 warning.
     ```
 
-As your OpenAPI file gets larger and more complex, having a linter to check the definitions against a ruleset might be a lifesaver.
+As your OpenAPI file gets larger and more complex, having a linter to check the definitions against a ruleset can be highly valuable.
 
-(Before continuing on, restore the removed `license` object in the `openapi.yaml` file.)
+(Before continuing on, restore the `license` object in the `openapi.yaml` file that you previously removed.)
 
 ### 4. Preview the Redoc output {#preview_output}
 
@@ -361,7 +360,7 @@ The CLI contains a Redoc documentation preview server that listens for changes a
     GET /favicon.png: 1.720ms
     ```
 
-    Redoc bundles up your individual files into a single OpenAPI definition and passes it into the Redoc documentation generator. By default, you're using the community edition of Redoc, which lacks some of the features of the pro version. (The differences are explained more later.)
+    Redoc bundles up your individual files into a single OpenAPI definition and passes it into the Redoc documentation generator. By default, you're using the community edition of Redoc, which lacks some of the features of the pro version. (The differences are explained in more detail later in this section and also in [7. Explore the premium version: Redocly API Reference](pubapis_redocly.html#explore_premium).)
 
 2.  Go to `http://127.0.0.1:8080` in your browser to see a preview of the output:
 
@@ -373,19 +372,7 @@ The CLI contains a Redoc documentation preview server that listens for changes a
 
 4.  Press **Ctrl+C** to stop the preview server.
 
-In this tutorial, we're using the community edition of Redoc. The premium version, called [Redocly API Reference](https://redoc.ly/reference-docs), provides several key benefits:
-
-* **The Try-it-out explorer**. You can execute calls in the browser. This interactivity is what makes REST API docs so powerful and instructive.
-* **Optimized loading**. The output is split into multiple files to render loading more quickly (up to 10x faster).
-* **Special tags**. You can use special tags to pull in content from your reference content (such as your security definition or a response).
-* **Right pane**. You can push code into the right pane so that it appears juxtaposed with the conceptual info in the main column.
-* **Enhanced search**. Search is more comprehensive and detailed, including results for request and response parameters, among other enhancements.
-
-Here's a short video explaining the top 3 reasons why people choose the pro version:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NcEHOlnAY6A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-If you're using the pro version, you would [generate an API key](https://redoc.ly/docs/workflows/personal-access-token.md) and then use the [`openapi login`](https://redoc.ly/docs/cli/commands/#login) command to unlock the pro features. The [`openapi logout`](https://redoc.ly/docs/cli/commands/#logout) command would clear the API key, reverting you to the community edition. Pricing for different versions of Redocly is available on their [Pricing](https://redoc.ly/pricing) page. We'll explore some of the features in the pro version in section [7. Explore the premium version: Redocly API Reference](#pubapis_redocly.html#explore_premium).
+    Note that we're currently using the Community Edition of Redoc. We'll explore more features in the Pro version in [7. Explore the premium version: Redocly API Reference](#pubapis_redocly.html#explore_premium).
 
 ### 5. Bundle up the OpenAPI definition into a single file {#bundle}
 
@@ -441,6 +428,9 @@ Redocly has some unique offerings when it comes to organizing and working with c
       description:
       $ref: description.md
     ```
+
+    Note that `$ref: description.md` is technically incorrect with the OpenAPI spec, but the Redocly bundle process places that Markdown inline to correct it.
+
     {: .tip}
     For more detail on using `$ref`, see [Using JSON references ($refs)](https://redoc.ly/docs/resources/ref-guide/).
 
@@ -485,12 +475,6 @@ Redocly has some unique offerings when it comes to organizing and working with c
     <SecurityDefinitions />
     ```
 
-    Alternatively, you can use this tag version:
-
-    ```
-    <!-- ReDoc-Inject: <security-definitions> -->
-    ```
-
 8.  Save the file and check the reload in the preview server.
 
     The security object from your OpenAPI definition appears directly in your description content.
@@ -505,7 +489,21 @@ If integrating your conceptual content like this doesn't work for your doc needs
 
 ### 7. Explore the premium version: Redocly API Reference {#explore_premium}
 
-The lack of the Try-it explorer in the Redoc community edition is a major reason to upgrade to the premium version (Redocly API Reference). As I've argued elsewhere, the try-it functionality makes API documentation both interactive and interesting. Let's enable the premium version features and see how they work. (You won't have to purchase anything to explore the features locally.)
+The lack of the Try-it explorer in the Redoc community edition is a major reason to upgrade to the premium version (Redocly API Reference). As I've argued elsewhere in this course, the try-it functionality makes API documentation both interactive and interesting. In this tutorial, we've been using the community edition of Redoc. The premium version, called [Redocly API Reference](https://redoc.ly/reference-docs), provides several key benefits:
+
+* **The Try-it-out explorer**. You can execute calls in the browser. This interactivity is what makes REST API docs so powerful and instructive.
+* **Optimized loading**. The output is split into multiple files to render loading more quickly (up to 10x faster).
+* **Special tags**. You can use special tags to pull in content from your reference content (such as your security definition or a response).
+* **Right pane**. You can push code into the right pane so that it appears juxtaposed with the conceptual info in the main column.
+* **Enhanced search**. Search is more comprehensive and detailed, including results for request and response parameters, among other enhancements.
+
+Here's a short video explaining the top 3 reasons why people choose the pro version:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NcEHOlnAY6A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+If you have a license for the pro version, you would [generate an API key](https://redoc.ly/docs/workflows/personal-access-token.md) and then use the [`openapi login`](https://redoc.ly/docs/cli/commands/#login) command to unlock the pro features. (The [`openapi logout`](https://redoc.ly/docs/cli/commands/#logout) command clears the API key, reverting you to the community edition.) Pricing for different versions of Redocly is available on their [Pricing](https://redoc.ly/pricing) page.
+
+Let's enable the premium version features and see how they work. (You won't have to purchase anything to explore the features locally.)
 
 1.  Sign in to [Redocly](https://redoc.ly/).
 2.  Go to your Redocly profile at [https://app.redoc.ly/profile](https://app.redoc.ly/profile) and create a Personal API key. Copy the key.
@@ -531,7 +529,7 @@ The lack of the Try-it explorer in the Redoc community edition is a major reason
 
 5.  View the preview server ([http://127.0.0.1:8080/](http://127.0.0.1:8080/)) and see the code populate in the right column.
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/pullrightredocly.png" alt="PullRight tags" />
+    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/pullrightredocly2.png" alt="PullRight tags" />
 
 6.  In your `description.md` file, re-use a parameter description from your reference:
 
@@ -540,7 +538,7 @@ The lack of the Try-it explorer in the Redoc community edition is a major reason
     ```
 7.  View the preview server and see the `lat` parameter appear (highlighted below).
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/redoclyembedref.png" alt="Re-used reference content" />
+    <img style="border: 1px solid #dedede;" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/redoclyembedref.png" alt="Re-used reference content" />
 
 8.  Open `.redocly.yaml` and add `showConsole: true` under `referenceDocs`:
 
@@ -607,9 +605,9 @@ The lack of the Try-it explorer in the Redoc community edition is a major reason
     ```
     You can learn more about the Try it feature here: [The try it API console](https://redoc.ly/docs/api-reference-docs/console-overview/).
 
-### 8. Build the reference output {#build}
+### 8. Publish the reference output {#build}
 
-Now let's build the reference output.
+So far we've been exploring the API reference output from within the preview server. Now let's publish the reference output outside of the preview server:
 
 1.  Bundle the OpenAPI definition.
 
@@ -617,7 +615,7 @@ Now let's build the reference output.
     openapi bundle main -o dist.json
     ```
 
-2.  Inside a folder called `redoc`, create an HTML file called `index.html` (or use another file name if desired).
+2.  Inside a folder called `redoc`, create an HTML file called `index.html`.
 3.  In your `index.html` file, insert the following  template for rendering the OpenAPI definition using Redoc JS delivered through a CDN.
 
     ```html
@@ -666,8 +664,8 @@ For sample API reference docs built with Redoc, see [Some Real-life usages](http
 
 ## Conclusion
 
-Redoc provides one of the most attractive outputs for REST API docs. In a [recent survey about trends in developer documentation](https://idratherbewriting.com/learnapidoc/docapis_trends.html), I asked developers "How do you render the OpenAPI specification into documentation?" Although [Swagger UI](https://idratherbewriting.com/learnapidoc/pubapis_swagger.html) is the most common (used 27% of the time), this is likely because it's free. The premium version of Swagger (called [SwaggerHub](https://idratherbewriting.com/learnapidoc/pubapis_swaggerhub_smartbear.html)) was only used 4% of the time. In contrast, Redoc was used 8% of the time.
+Redoc provides one of the most attractive outputs for REST API docs. In a [recent survey about trends in developer documentation](https://idratherbewriting.com/learnapidoc/docapis_trends.html), I asked developers "How do you render the OpenAPI specification into documentation?" Although [Swagger UI](https://idratherbewriting.com/learnapidoc/pubapis_swagger.html) was the most common (used 27% of the time), this is likely because it's free. The premium version of Swagger (called [SwaggerHub](https://idratherbewriting.com/learnapidoc/pubapis_swaggerhub_smartbear.html)) was used only 4% of the time. In contrast, Redoc was used 8% of the time.
 
-<a class="noCrossRef" href="https://idratherbewriting.com/learnapidoc/slides/devdoctrends_results.html#/41"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/trends-how-render-openapi.png" /></a>
+<iframe src='https://www.questionpro.com/t/ZRimssZG1r6Yg' width='100%' height='600' frameBorder='0'></iframe>
 
-Overall, the output from Redoc does seem more polished and user-friendly than other API reference doc outputs. The CLI-based toolset provides a way to work more efficiently in the code, supporting a [docs-as-code workflow](https://idratherbewriting.com/learnapidoc/pubapis_docs_as_code.html). If this toolset and output appeal to you, Redoc might be the way to go. You can start a [free trial here](https://app.redoc.ly/org/idratherbewriting/start-trial) or simply learn more here: [Redocly](https://redoc.ly/).
+Overall, the output from Redoc does seem more polished and user-friendly than other API reference doc outputs. For the interactivity feature alone I would definitely recommend using the premium version ([Redocly API Reference](https://redoc.ly/reference-docs/)) rather than the community edition. Redocly's CLI-based toolset provides a way to work more efficiently in the code, supporting a [docs-as-code workflow](https://idratherbewriting.com/learnapidoc/pubapis_docs_as_code.html). If this command-line-based toolset and three-column output appeal to you, Redoc might be the way to go. You can start a [free trial here](https://app.redoc.ly/org/idratherbewriting/start-trial) or learn more here: [Redocly](https://redoc.ly/).

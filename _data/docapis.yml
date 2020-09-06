@@ -173,6 +173,9 @@ folders:
   - title: "SwaggerHub introduction and tutorial"
     jurl: /pubapis_swaggerhub_smartbear.html
 
+  - title: "Redocly tutorial -- authoring and publishing API docs with Redocly's command-line tools"
+    jurl: /pubapis_redocly.html
+
   - title: "Integrating Swagger UI with the rest of your docs"
     jurl: /pubapis_combine_swagger_and_guide.html
 
