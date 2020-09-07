@@ -113,12 +113,14 @@ slide_title: "Documenting API endpoints"
              </section>
 
              <section>
-               <h3>4 types of parameters</h3>
+               <h3>Types of parameters</h3>
                <ul>
                  <li>Header parameters</li>
                   <li>Path parameters</li>
                   <li>Query string parameters</li>
-                  <li>Request body parameters</li>
+                  <li>[Request bodies (not technically a parameter)]</li>
+
+                  </li>
                 </ul>
               </section>
 
@@ -131,7 +133,7 @@ slide_title: "Documenting API endpoints"
                 <pre style="color: whitesmoke; padding: 15px;">/surfreport/{beachId}?<span class="orange">days=3</span>&<span class="orange">units=metric</span>&<span class="orange">time=1400</span></pre>
               </section>
               <section>
-                <small>Request body parameter:</small>
+                <small>Request body:</small>
                 <pre><code data-trim contenteditable>
 {
   "days": 2,

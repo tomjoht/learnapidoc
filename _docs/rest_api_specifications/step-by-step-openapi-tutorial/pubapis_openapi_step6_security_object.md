@@ -15,7 +15,7 @@ path2: /openapi_tutorial.html
 <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapistep6.png"/>
 {% endif %}
 
-Swagger UI provides a "Try it out" feature that lets users submit actual requests. To submit requests that are authorized by your API server, the spec must contain security information that will authorize the request. The [`security` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#securityRequirementObject) specifies the security or authorization protocol used when submitting requests.
+Swagger UI provides a "Try it out" feature that lets users submit actual requests. To submit requests that are authorized by your API server, the spec must contain security information that will authorize the request. The [`security` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#securityRequirementObject) specifies the security or authorization protocol used when submitting requests.
 
 {% if site.format == "web" %}
 * TOC
@@ -31,7 +31,7 @@ REST APIs can use different security approaches to authorize requests. I explore
 * OAuth 2.0
 * Open ID Connect
 
-In this step of the OpenAPI tutorial, we'll use the API key approach, since this is what the OpenWeatherMap API uses. If your API uses [OAuth 2.0](docapis_more_about_authorization.html#oauth) or another method, you'll need to read the [Security Scheme information](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#security-scheme-object) for details on how to configure it. However, all the security methods mostly follow the same pattern.
+In this step of the OpenAPI tutorial, we'll use the API key approach, since this is what the OpenWeatherMap API uses. If your API uses [OAuth 2.0](docapis_more_about_authorization.html#oauth) or another method, you'll need to read the [Security Scheme information](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#security-scheme-object) for details on how to configure it. However, all the security methods mostly follow the same pattern.
 
 {% include random_ad.html %}
 
@@ -66,7 +66,7 @@ Then the `weather` path would use the `some_other_key` security method, while al
 
 ## Referencing the security scheme in components
 
-In the [`components` object](pubapis_openapi_step5_components_object.html), add a [`securitySchemes` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#securitySchemeObject) that defines details about the security scheme the API uses:
+In the [`components` object](pubapis_openapi_step5_components_object.html), add a [`securitySchemes` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#securitySchemeObject) that defines details about the security scheme the API uses:
 
 ```yaml
 components:
@@ -88,7 +88,7 @@ Properties you can use for each item in the `securitySchemes` object include the
 * `in`: Specifies where the security key is applied. Options are `query`, `header` or `cookie`. Used only for `apiKey` type security.
 * `scheme`. Used with `http` type authorization.
 * `bearerFormat`. Used with `http` type authorization.
-* [`flows`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#oauthFlowsObject) (object): Used with `oauth2` type authorization.
+* [`flows`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#oauthFlowsObject) (object): Used with `oauth2` type authorization.
 * `openIdConnectUrl`: Used with `openIdConnect` type authorization.
 
 {% include random_ad2.html %}

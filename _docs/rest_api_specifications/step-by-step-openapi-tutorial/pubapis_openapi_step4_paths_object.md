@@ -15,7 +15,7 @@ path2: /openapi_tutorial.html
 <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapistep4.png"/>
 {% endif %}
 
-The [`paths` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#pathsObject) contains the meat of your API information. The `paths` object has several sub-objects: a [path items object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#pathItemObject), an [operations object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#operationObject), and more.
+The [`paths` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#pathsObject) contains the meat of your API information. The `paths` object has several sub-objects: a [path items object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#pathItemObject), an [operations object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#operationObject), and more.
 
 {: .tip}
 We've been moving along at about 5 mph in the previous steps but are going to speed up to 60 mph here quickly. It's okay if the content that follows doesn't entirely sink in. You can paste the example code that follows into Swagger UI for now and later go back to study it in more detail.
@@ -32,7 +32,7 @@ My preferred term is "endpoint" rather than "path," but to be consistent with th
 
 {% include random_ad2.html %}
 
-Each item in the `path` object contains an [operation object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#operation-object). (Operations are the GET, POST, PUT, and DELETE methods we explored in the [Endpoints section](docapis_resource_endpoints.html) of the API reference tutorial.)
+Each item in the `path` object contains an [operation object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#operation-object). (Operations are the GET, POST, PUT, and DELETE methods we explored in the [Endpoints section](docapis_resource_endpoints.html) of the API reference tutorial.)
 
 Start by listing the paths (endpoints) and their allowed operations (methods). For the `weather` endpoint in the OpenWeatherMap API, there is just one path (`/weather`) and one operation (`get`) for that path:
 
@@ -49,20 +49,20 @@ The operation object (`get` in the code above) contains various properties and o
 * `tags`: A group name to organize paths in the Swagger UI. Swagger UI will group endpoints under tag headings.
 * `summary`: A brief overview of the path. Swagger UI shows the summary next to the path name. Limit the summary to 5-10 words only. The display appears even when this section is collapsed.
 * `description`: A full description of the path. Include as much detail as you want. There's a lot of space in the Swagger UI for these details. CommonMark Markdown is allowed.
-* [`externalDocs`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#externalDocumentationObject) (object): Links to documentation for more information about the path.
+* [`externalDocs`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#externalDocumentationObject) (object): Links to documentation for more information about the path.
 * `operationId`: A unique identifier for the path.
-* [`parameters`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#parameterObject) (object): Parameters accepted by the path. Does not include request body parameters, which are instead detailed in the `requestBody` object. The `parameters` object can also include a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#referenceObject) that contains a pointer to the description in the `components` object (this is explained in [Step 5: The components object](pubapis_openapi_step5_components_object.html)).
-* [`requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#requestBodyObject) (object): The request body parameter details for this path. The `requestBody` object can also include a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#referenceObject) that contains a pointer to the description in the `components` object (explained in [step 5](pubapis_openapi_step5_components_object.html)). (You can find an example of a `requestBody` parameter in the [Swagger Petstore demo](https://petstore.swagger.io/#/pet/addPet). The `/pet` endpoint submits a request body parameter when adding a pet. Check out the `requestBody` YAML syntax in [petstore-expanded.yml](https://github.com/OAI/OpenAPI-Specification/blob/master/examples/v3.0/petstore-expanded.yaml) &mdash; look at `post` under `/pets`. Also see [Describing Request Body](https://swagger.io/docs/specification/describing-request-body/).)
-* [`responses`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#responsesObject) (object): Responses provided from requests with this path. The `responses` object can also include a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#referenceObject) that contains a pointer to the description in the `components` object. Responses use standard [status codes](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#http-status-codes).
-* [`callbacks`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#callbackObject) (object): Callback details to be initiated by the server if desired. Callbacks are operations performed after a function finishes executing. The `callbacks` object can also include a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#referenceObject) that contains a pointer to the description in the `components` object.
+* [`parameters`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#parameterObject) (object): Parameters accepted by the path. Does not include request bodies, which are instead detailed in the [`requestBody` object](). The `parameters` object can also include a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#requestBodyObject) that contains a pointer to the description in the `components` object (this is explained in [Step 5: The components object](pubapis_openapi_step5_components_object.html)).
+* [`requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#requestBodyObject) (object): The request body details for this path. The `requestBody` object can also include a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#referenceObject) that contains a pointer to the description in the `components` object (explained in [step 5](pubapis_openapi_step5_components_object.html)). (You can find an example of a `requestBody` parameter in the [Swagger Petstore demo](https://petstore.swagger.io/#/pet/addPet). The `/pet` endpoint submits a request body when adding a pet. Check out the `requestBody` YAML syntax in [petstore-expanded.yml](https://github.com/OAI/OpenAPI-Specification/blob/master/examples/v3.0/petstore-expanded.yaml) &mdash; look at `post` under `/pets`. Also see [Describing Request Body](https://swagger.io/docs/specification/describing-request-body/).)
+* [`responses`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#responsesObject) (object): Responses provided from requests with this path. The `responses` object can also include a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#referenceObject) that contains a pointer to the description in the `components` object. Responses use standard [status codes](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#http-status-codes).
+* [`callbacks`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#callbackObject) (object): Callback details to be initiated by the server if desired. Callbacks are operations performed after a function finishes executing. The `callbacks` object can also include a [reference object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#referenceObject) that contains a pointer to the description in the `components` object.
 * `deprecated`: Whether the path is deprecated. Omit unless you want to indicate a deprecated field. Boolean.
-* [`security`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#securityRequirementObject) (object): Security authorization method used with the operation. Include this object at the path level only if you want to overwrite the `security` object at the root level. The name is defined by the `securitySchemes` object in the `components` object. More details about this are provided in the [security object](pubapis_openapi_step6_security_object.html).
-* [`servers`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#serverObject) (object): A servers object that might differ from the [global `servers` object](pubapis_openapi_step3_servers_object.html) for this path.
+* [`security`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#securityRequirementObject) (object): Security authorization method used with the operation. Include this object at the path level only if you want to overwrite the `security` object at the root level. The name is defined by the `securitySchemes` object in the `components` object. More details about this are provided in the [security object](pubapis_openapi_step6_security_object.html).
+* [`servers`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#serverObject) (object): A servers object that might differ from the [global `servers` object](pubapis_openapi_step3_servers_object.html) for this path.
 
 Each of the above hyperlinked properties that say "(object)" contain additional levels. Their values aren't just simple data types like strings but are rather objects that contain their own properties.
 
 {: .tip}
-You'll undoubtedly need to consult the [OpenAPI spec](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md) to see what details are required for each of the values and objects here. I can't replicate all the details you need, nor would I want to. I'm just trying to introduce you to the OpenAPI properties at a surface level.
+You'll undoubtedly need to consult the [OpenAPI spec](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md) to see what details are required for each of the values and objects here. I can't replicate all the details you need, nor would I want to. I'm just trying to introduce you to the OpenAPI properties at a surface level.
 
 Let's add a skeleton of the operation object details to our existing code:
 
@@ -91,9 +91,9 @@ At this point, if you paste this content into the Swagger Editor, you will get e
 
 Now we can remove a few unnecessary fields that we don't need for our OpenWeatherMap API documentation:
 
-* There's no need to include [`requestBody` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#requestBodyObject) because none of the OpenWeatherMap API paths contain request body parameters.
-* There's no need to include the [`servers` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#serverObject) because the paths use the same global `servers` URL that we [defined globally](pubapis_openapi_step3_servers_object.html) at the root level.
-* There's no need to include [security](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#securityRequirementObject) because all the paths use the same `security` object, which we will define globally at the root level later (see [Step 6: The security object](pubapis_openapi_step6_security_object.html)).
+* There's no need to include [`requestBody` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#requestBodyObject) because none of the OpenWeatherMap API paths contain request bodies.
+* There's no need to include the [`servers` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#serverObject) because the paths use the same global `servers` URL that we [defined globally](pubapis_openapi_step3_servers_object.html) at the root level.
+* There's no need to include [security](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#securityRequirementObject) because all the paths use the same `security` object, which we will define globally at the root level later (see [Step 6: The security object](pubapis_openapi_step6_security_object.html)).
 * There's no need to include `deprecated` because none of the paths are deprecated.
 * There's no need to include `callbacks` because none of the paths use callbacks.
 
@@ -116,10 +116,10 @@ Most of the properties for the operation object either require simple strings or
 
 #### Parameters object {#parameters}
 
-The [`parameters` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#parameterObject) contains an array with these properties:
+The [`parameters` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#parameterObject) contains an array with these properties:
 
 * `name`: Parameter name.
-* `in`: Where the parameter appears. Possible values are `header`, `path`, `query`, or `cookie`. (Request body parameters are not described here.)
+* `in`: Where the parameter appears. Possible values are `header`, `path`, `query`, or `cookie`. (Request bodies are not described here.)
 * `description`: Description of the parameter.
 * `required`: Whether the parameter is required.
 * `deprecated`: Whether the parameter is deprecated.
@@ -127,9 +127,9 @@ The [`parameters` object](https://github.com/OAI/OpenAPI-Specification/blob/mast
 * `style`: How the parameter's data is serialized (converted to bytes during data transfer).
 * `explode`: Advanced parameter related to arrays.
 * `allowReserved`: Whether reserved characters are allowed.
-* [`schema`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#schemaObject) (object): The schema or model for the parameter. The schema defines the input or output data structure. Note that the `schema` can also contain an `example` object.
+* [`schema`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#schemaObject) (object): The schema or model for the parameter. The schema defines the input or output data structure. Note that the `schema` can also contain an `example` object.
 * `example`: An example of the media type. If your `examples` object contains examples, those examples appear in Swagger UI rather than the content in the `example` object.
-* [`examples`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#exampleObject) (object): An example of the media type, including the schema.
+* [`examples`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#exampleObject) (object): An example of the media type, including the schema.
 
 Here's the `paths` object that includes the `parameters` details:
 
@@ -204,7 +204,7 @@ paths:
 
 {% include image_ad_right.html %}
 
-The other substantial property in the operations object is the [`responses` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#responsesObject). For the `responses` property, you typically reference a full definition in the `components` object, so I'll cover the `responses` object in the next section &mdash; [Step 5: The components object](pubapis_openapi_step5_components_object.html). (There's already too much detail in this step as is.)
+The other substantial property in the operations object is the [`responses` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#responsesObject). For the `responses` property, you typically reference a full definition in the `components` object, so I'll cover the `responses` object in the next section &mdash; [Step 5: The components object](pubapis_openapi_step5_components_object.html). (There's already too much detail in this step as is.)
 
 For now, so that the Swagger Editor will validate and show our path, let's just add some placeholder content for `responses`:
 

@@ -99,7 +99,7 @@ The researchers arrange this information into a chart for readability:
 
 Nothing particularly stands out here, except that "input values" are read the most. Input values refers to parameters or other arguments that developers often consult to understand data types, casing, or other details. As such, take pains to document your parameters in great detail. I describe the various categories to cover at length with parameters in [Step 3: Parameters](docapis_doc_parameters.html). With REST APIs, some details to note about parameters might include the following:
 
-* For REST API endpoints, the type of parameter: header, query string, path, or request body parameter
+* For REST API endpoints, the type of parameter: header, query string, and path. Also consider request bodies.
 * Default values
 * Min or max values
 * Data types (boolean, integer, string, etc.)

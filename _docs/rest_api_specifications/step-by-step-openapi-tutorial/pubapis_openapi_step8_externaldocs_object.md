@@ -15,7 +15,7 @@ path2: /openapi_tutorial.html
 <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapistep8.png"/>
 {% endif %}
 
-The [`externalDocs` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#external-documentation-object) lets you link to external documentation. You can also provide links to external docs in the `paths` object.
+The [`externalDocs` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#external-documentation-object) lets you link to external documentation. You can also provide links to external docs in the `paths` object.
 
 {% if site.format == "web" %}
 * TOC

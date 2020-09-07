@@ -67,14 +67,15 @@ You can format the values in a variety of ways (aside from a table). If you're u
 
 {% include image_ad_right.html %}
 
-## Four types of parameters
+## Several types of parameters
 
-REST APIs have four types of parameters:
+REST APIs have several types of parameters:
 
 *  **[Header parameters](#header_parameters)**: Parameters included in the request header, usually related to authorization.
 *  **[Path parameters](#path_parameters)**: Parameters within the path of the endpoint, before the query string (`?`). These are usually set off within curly braces.
 *  **[Query string parameters](#query_string_parameters)**: Parameters in the query string of the endpoint, after the `?`.
-*  **[Request body parameters](#request_body_parameters)**: Parameters included in the request body. Usually submitted as JSON.
+
+Another property closely related to parameters, and which used to be [referred to as a parameter in OpenAPI v2.0](https://swagger.io/docs/specification/2-0/describing-request-body/), is the request body, or [`requestBody`](https://swagger.io/docs/specification/describing-request-body/) in OpenAPI code form. The request body is usually only used with CREATE or PUT methods and often includes a JSON object included in the body of the request. More details are provided in [Request bodies](#request_bodies).
 
 {: .tip}
 The terms for each of these parameter types comes from the [OpenAPI specification](pubapis_openapi_tutorial_overview.html), which defines a formal specification that includes descriptions of each parameter type (see the [Path object tutorial](pubapis_openapi_step4_paths_object.html)). Using industry standard terminology helps you develop a vocabulary to describe different elements of an API.
@@ -88,7 +89,7 @@ Regardless of the parameter type, define the following with each parameter:
 
 ### Data types for parameters {#data_types_parameters}
 
-APIs may not process the parameter correctly if it's the wrong data type or wrong format. Listing the data type is usually a good idea with all parameter types but is especially true for request body parameters, since these are typically formatted in JSON.
+APIs may not process the parameter correctly if it's the wrong data type or wrong format. Listing the data type is usually a good idea with all parameter types but is especially true for request bodies, since these are typically formatted in JSON.
 
 These data types are the most common with REST APIs:
 
@@ -105,7 +106,7 @@ There are more data types in programming, and if you have more specific data typ
 
 ### Max and min values for parameters {#max_min_values}
 
-In addition to specifying the data type, the parameters should indicate the maximum, minimum, and allowed values if appropriate. For example, if the weather API allows only longitude and latitude coordinates of specific countries, these limits should be described in the parameters documentation. Omitting information about max/min values or other unallowed values (when applicable) is a common pitfall in docs.
+In addition to specifying the data type, the parameters should indicate the maximum, minimum, and allowed values if appropriate. For example, if the weather API allows only longitude and latitude coordinates of specific countries, these limits should be described in the parameters documentation. Omitting information about max/min values or other prohibited values (when applicable) is a common pitfall in docs.
 
 Not every parameter needs max and min values, however. Note these exceptions:
 
@@ -207,9 +208,9 @@ would return the same result.
 
 However, with path parameters, the order *does* matter. If the parameter is part of the actual endpoint (not added after the query string), you usually describe this value in the description of the endpoint itself.
 
-## Request body parameters {#request_body_parameters}
+## Request bodies {#request_bodies}
 
-Frequently, with POST requests (where you're creating something), you submit a JSON object in the request body. This is known as a request body parameter, and the format is usually JSON. This JSON object may be a lengthy list of key-value pairs with multiple levels of nesting.
+Frequently, with POST requests (where you're creating something), you submit a JSON object in the request body. This is known as a request body, and the format is usually JSON. This JSON object may be a lengthy list of key-value pairs with multiple levels of nesting.
 
 For example, the endpoint may be something simple, such as `/surfreport/{beachId}`. But in the body of the request, you might include a JSON object with many key-value pairs, like this:
 
@@ -221,19 +222,21 @@ For example, the endpoint may be something simple, such as `/surfreport/{beachId
 }
 ```
 
-### Documenting complex request body parameters
+In OpenAPI v2.0, request bodies were classified as a type of parameter, but in v3.0, they are not considered a parameter but rather a path property. Given that the request body functions like a parameter, I've decided to leave them classified as a parameter for now. However, note that in the OpenAPI spec, request bodies are technically not a parameter.
 
-Documenting JSON data (both in request body parameters and responses) is one of the trickier parts of API documentation. Documenting a JSON object is easy if the object is simple, with just a few key-value pairs at the same level. But if you have a JSON object with multiple objects inside objects, numerous levels of nesting, and lengthy conditional data, it can be tricky. And if the JSON object spans more than 100 lines, or 1,000, you'll need to think carefully about how you present the information.
+### Documenting complex request bodies
+
+Documenting JSON data (both in request bodies and responses) is one of the trickier parts of API documentation. Documenting a JSON object is easy if the object is simple, with just a few key-value pairs at the same level. But if you have a JSON object with multiple objects inside objects, numerous levels of nesting, and lengthy conditional data, it can be tricky. And if the JSON object spans more than 100 lines, or 1,000, you'll need to think carefully about how you present the information.
 
 Tables work all right for documenting JSON, but in a table, it can be hard to distinguish between top-level and sub-level items. The object that contains an object that also contains an object, and another object, etc., can be confusing to represent.
 
 By all means, if the JSON object is relatively small, a table is probably your best option. But there are other approaches that designers have taken as well.
 
-Take a look at eBay's [findItemsByProduct](http://developer.ebay.com/DevZone/finding/CallRef/findItemsByProduct.html) resource. Here's the request body parameter (in this case, the format is XML):
+Take a look at eBay's [findItemsByProduct](http://developer.ebay.com/DevZone/finding/CallRef/findItemsByProduct.html) resource. Here's the request body (in this case, the format is XML):
 
 <a class="noCrossRef" class="noExtIcon" href="http://developer.ebay.com/DevZone/finding/CallRef/findItemsByProduct.html"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/ebaysample_3_17.png" alt="eBay parameters" /></a>
 
-Below the request body parameter is a table that describes each parameter:
+Below the request body is a table that describes each parameter:
 
 <a class="noCrossRef" class="noExtIcon" href="http://developer.ebay.com/DevZone/finding/CallRef/findItemsByProduct.html"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/ebaytable_3_17.png" alt="eBay parameters" /></a>
 
@@ -241,20 +244,20 @@ But the sample request also contains links to each of the parameters. When you c
 
 The same parameter values might be used in other requests as well, so eBay's approach likely facilitates re-use. Even so, I dislike jumping around to other pages for the information I need.
 
-### Swagger UI's approach to request body parameters
+### Swagger UI's approach to request bodies
 
-[Swagger UI](pubapis_swagger.html), which we explore later and also [demo](pubapis_swagger_demo.html), provides another approach to documenting the request body parameter. Swagger UI shows the request body parameters in the format that you see below. Swagger UI lets you toggle between an "Example Value" and a "Model" view for both responses and request body parameters.
+[Swagger UI](pubapis_swagger.html), which we explore later and also [demo](pubapis_swagger_demo.html), provides another approach to documenting the request bodies. Swagger UI shows the request bodies in the format that you see below. Swagger UI lets you toggle between an "Example Value" and a "Model" view for both responses and request bodies.
 
 <a class="noExtIcon" href="http://petstore.swagger.io/#/operations/pet/addPet"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/swaggeruiexamplemodel.png"/></a>
 
-See the [Swagger Petstore](http://petstore.swagger.io/) to explore the demo here. The Example Value shows a sample of the syntax along with examples. When you click the **Model** link, you see a sample request body parameter and any descriptions of each element.
+See the [Swagger Petstore](http://petstore.swagger.io/) to explore the demo here. The Example Value shows a sample of the syntax along with examples. When you click the **Model** link, you see a sample request body and any descriptions of each element.
 
 The Model includes expand/collapse toggles with the values. (The [Petstore demo](http://petstore.swagger.io/) doesn't include many parameter descriptions in the Model, but if you include descriptions, they would appear here in the Model rather than in the Example Value.)
 
 {: .tip}
 We'll get into Swagger in much more detail in [Introduction to the OpenAPI specification](pubapis_openapi_intro.html). For now, focus on these core elements of API reference documentation. You will see these same sections appear in the OpenAPI specification.
 
-You can see that there's a lot of variety in documenting JSON and XML in request body parameters. There's no right way to document the information. As always, choose the method that depicts your API's parameters in the clearest, easiest-to-read way.
+You can see that there's a lot of variety in documenting JSON and XML in request bodies. There's no right way to document the information. As always, choose the method that depicts your API's parameters in the clearest, easiest-to-read way.
 
 If you have relatively simple parameters, your choice won't matter that much. But if you have complex, unwieldy parameters, you may have to resort to custom styling and templates to present them more clearly. I explore this topic in more depth in the [Response example and schema section](docapis_doc_sample_responses_and_schema.html).
 

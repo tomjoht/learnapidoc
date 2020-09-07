@@ -44,7 +44,7 @@ In this activity, you'll review API reference documentation and identify the com
       *  How are the methods specified for each endpoint?
 
     **Parameters:**
-      *  How many types of parameters are there (header, path, query string, and request body parameters) for the endpoints?
+      *  How many types of parameters are there (header, path, query string) or request body for the endpoints?
       *  Are the data types (string, boolean, etc.) defined for each parameter? Are required/optional values noted?
 
     **Request example:**

@@ -63,7 +63,7 @@ glossary_keys:
   - raml_console
   - repo
   - request
-  - request_body_parameters
+  - request_body
   - response_example_and_schema
   - resource_description
   - response

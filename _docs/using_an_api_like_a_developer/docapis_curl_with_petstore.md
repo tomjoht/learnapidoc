@@ -21,7 +21,7 @@ In this example, using the Petstore API, you'll create a new pet, update the pet
 To create a pet, you have to pass a JSON message in the request body. Rather than trying to encode the JSON and pass it in the URL, you'll store the JSON in a file and reference the file.
 
 {: .tip}
-A lot of APIs require you to post requests containing JSON messages in the body. Request body parameters are often how you configure a service. The list of JSON key-value pairs that the API accepts is called the "Model" in the Swagger UI display.
+A lot of APIs require you to post requests containing JSON messages in the body. Request bodies are often how you configure a service. The list of JSON key-value pairs that the API accepts is called the "Model" in the Swagger UI display.
 
 1.  Insert the following into a text file. This information will be passed in the `-d` parameter of the curl request:
 

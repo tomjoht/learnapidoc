@@ -14,7 +14,7 @@ path2: /openapi_tutorial.html
 <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapistep3.png"/>
 {% endif %}
 
-In the [`servers` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#serverObject), you specify the basepath used in your API requests. The basepath is the part of the URL that appears before the endpoint.
+In the [`servers` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#serverObject), you specify the basepath used in your API requests. The basepath is the part of the URL that appears before the endpoint.
 
 {% if site.format == "web" %}
 * TOC

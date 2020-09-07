@@ -142,7 +142,7 @@ openapi_initiative:
 
 parameters:
   term: parameters
-  def: "Parameters are options you can pass with the endpoint (such as specifying the response format or the amount returned) to influence the response. There are four types of parameters: header parameters, path parameters, query string parameters, and request body parameters. <br/><br/>The different types of parameters are often documented in separate groups on the same page. Not all endpoints contain each type of parameter."
+  def: "Parameters are options you can pass with the endpoint (such as specifying the response format or the amount returned) to influence the response. There are several types of parameters: header parameters, path parameters, and query string parameters. Request bodies are closely similar to parameters but are not technically a parameter. <br/><br/>The different types of parameters are often documented in separate groups on the same page. Not all endpoints contain each type of parameter."
   link: See [Parameters](docapis_doc_parameters.html) for more details.
 
 path_parameters:
@@ -199,9 +199,9 @@ request:
   def: "The way information is returned from an API. In a request, the client provides a resource URL with the proper authorization to an API server. The API returns a response with the information requested."
   link: See [Request example](docapis_doc_sample_requests.html) for more details.
 
-request_body_parameters:
-  term: request body parameters
-  def: "Parameters that are included in the request body. Usually submitted as JSON."
+request_body:
+  term: request body
+  def: "A block of information, usually JSON, included in the request body, often used with CREATE and PUT methods."
   link: See [Parameters](docapis_doc_parameters.html) for more details.
 
 request_example:
