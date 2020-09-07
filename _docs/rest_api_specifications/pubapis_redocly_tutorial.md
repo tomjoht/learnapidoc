@@ -36,7 +36,8 @@ Redocly has a variety of products, so let's first clarify these tools before div
 <table>
    <colgroup>
       <col width="30%" />
-      <col width="70%" />
+      <col width="60%" />
+      <col width="20%" />
    </colgroup>
    <thead>
       <tr>
@@ -59,12 +60,12 @@ Redocly has a variety of products, so let's first clarify these tools before div
       <tr>
          <td markdown="span">[`create-openapi-repo`](https://github.com/Redocly/create-openapi-repo)</td>
          <td markdown="span">CLI tool for splitting a single OpenAPI definition file into multiple files (compatible with OpenAPI version 3x only). You can also use this CLI tool to start a new API definition.</td>
-         <td markdown="span">Open-source</td>
+         <td markdown="span">Free</td>
       </tr>
       <tr>
          <td markdown="span">[`openapi-cli`](https://redoc.ly/openapi-cli)</td>
          <td markdown="span">CLI tool that provides linting against a customizable ruleset, as well as bundling of the OpenAPI files into a single file. You can also preview the output of your docs with the Redocly API Reference through this tool.</td>
-         <td markdown="span">Open-source</td>
+         <td markdown="span">Free</td>
       </tr>
       <tr>
          <td markdown="span">[Developer Portal (beta)](https://redoc.ly/developer-portal)</td>
