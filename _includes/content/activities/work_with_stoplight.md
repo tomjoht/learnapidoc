@@ -7,13 +7,9 @@ In this activity, you'll work with an OpenAPI file in [Stoplight Studio](https:/
 To work with an OpenAPI file in Stoplight:
 
 1.  Download this pre-built 3.0 OpenAPI specification file: [`openapi_openweathermap.yml`](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml)
-2.  Go to [Stoplight Studio](https://stoplight.io/p/studio).
-3.  Click **Login** in the upper-right corner and log in using your GitHub account.
+2.  Go to [Stoplight Studio](https://stoplight.io/welcome/create) and log in.
 4.  In **New Local Project**, type a name for your project and then click **Create**.
 5.  Click the **API** button, and then click **Import**. Select the `openapi_openweathermap.yml` that you downloaded in step 1.
-
-
-
 5.  Type a **Project name** (e.g., "OpenWeatherMap API"), choose whether you want the visibility public or private (it doesn't matter), and click **Next**.
 6.  On the next screen (Project Designer), select the **Import Existing** tab. Then the click **Upload OpenAPI (Swagger), Markdown or HTML File** button and select the **openweathermap_swagger20.json** file that you downloaded in step 1.
 7.  Click the **+ Add openweathermap_swagger20.oas2.yml** button. The OpenAPI file gets uploaded into Stoplight, and the data populates the Stoplight interface.

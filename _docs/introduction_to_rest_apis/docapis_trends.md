@@ -110,7 +110,7 @@ To read more thoughts about how source formats affect not just how we write but 
 <div class="surveySummaryTitle">Survey summary:</div>
 
 * **Primary output**: 72% HTML, 23% PDF
-* **Create video tutorials**: 78% yes, 57% no, 14% plan to
+* **Create video tutorials**: 28% yes, 57% no, 14% plan to
 * **Docs plug into dev portal**: 56% yes, 41% no
 * **Localize your docs**: 73% no, 14% 1-3 languages, 10% 4+ languages
 * **Generate PDFs & distribute to audience**: 57% no, 30% yes, 9% internal review only
