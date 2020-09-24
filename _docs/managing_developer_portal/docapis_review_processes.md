@@ -15,9 +15,9 @@ Conducting a successful documentation review is challenging, especially with dev
 
 ## How to get reviewers to read long content
 
-Getting people to review short amounts of content (one topic or less) isn't so challenging. What's challenging is getting engineering types to review dozens of pages. A recent project I worked on had 75 new pages. How exactly do you get engineers, PMs, and others to read and review that many pages, especially in a short amount of time (a few weeks before release)? Long-form reading of tech docs is not usually a characteristic many people in tech. After 20 minutes, most people want to get back to work. Few people will spend all afternoon going through your docs to provide a detailed review.
+Getting people to review short amounts of content (one topic or less) isn't so challenging. What's challenging is getting engineering types to review dozens of pages. A recent project I worked on had 75 new pages. How exactly do you get engineers, PMs, and others to read and review that many pages, especially in a short amount of time (a few weeks before release)? Long-form reading of tech docs is not usually a characteristic of many people in tech. After 20 minutes, most people want to get back to work. Few will spend all afternoon going through your docs to provide a detailed review.
 
-This puts technical writers in a pickle. You end up in a situation where you're highly dependent on the review and input of others (because the content is so technical or complex), but getting this input is increasingly hard because so few have the patience to read in a careful, meticulous way.
+This puts technical writers in a bind. You end up in a situation where you're highly dependent on the review and input of others (because the content is so technical or complex), but getting this input is increasingly hard because so few have the patience to read in a careful, meticulous way.
 
 In [Processes for managing large documentation projects](docapis_managing_doc_projects.html), I already outlined five general stages of document review:
 
@@ -27,7 +27,7 @@ In [Processes for managing large documentation projects](docapis_managing_doc_pr
 4. Review with legal, support, and other stakeholders
 5. Review with beta partners
 
-Previously, I didn't go into detail about more granular processes or the tactical how-to detailing ways to approach the groups, what feedback tools to use, how to prompt action, and so on. In this topic, I'll dive into these details in a practical, tried-and-true way. Remember that these are tips from a practitioner, based on actual experiences working as a technical writer in the real world doing doc reviews. This approach has worked for me, but also note that each company has a different culture and rhythm, so decide what might work for you in your situation.
+Previously, I didn't go into detail about more granular processes or the tactical how-to detailing ways to approach these groups, what feedback tools to use, how to prompt action, and so on. In this topic, I'll dive into these details in a practical, tried-and-true way. Remember that these are tips from a practitioner, based on actual experiences working as a technical writer in the real world doing doc reviews. This approach has worked for me, but also note that each company has a different culture and rhythm, so decide what might work for you in your situation.
 
 ## Meeting 1: Outline review
 
@@ -36,7 +36,7 @@ In most writing classes, you learn to distinguish between higher-order concerns 
 For example, suppose you identify about 12 steps for implementing a product, and the bulk of the docs are related to this implementation. Get buy-in and approval from the product team for the steps. If you have mini-outlines for each step, even better. In this outline review, the product team doesn't need to actually read the content. You can talk through the steps and explain the outline at a high level. Once you've nailed down these large pieces, start drafting out the details in each topic.
 
 {: .tip}
-For tips about creating workflow maps in docs, see [Principle 1: Let users switch between macro and micro views](https://idratherbewriting.com/simplifying-complexity/macro-micro.html). In this phase of the document review, you're drawing a *map* of the instructions. You're not yet blazing the trail (writing the content).
+In this phase of the document review, you're drawing a *map* of the instructions. You're not yet blazing the trail (writing the content). For tips about creating workflow maps in docs and why they're important, see [Principle 1: Let users switch between macro and micro views](https://idratherbewriting.com/simplifying-complexity/macro-micro.html).
 
 ## Meeting 2: Questions review
 
