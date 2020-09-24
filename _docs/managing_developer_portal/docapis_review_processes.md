@@ -8,26 +8,26 @@ section: devportals
 path1: /docapis_managing_dev_portals.html
 ---
 
-Conducting a successful documentation review is challenging, especially with developer docs because the content is often highly technical and requires engineering input and review. At the same time, getting this engineering input and review doesn't come easy. In this topic, I'll outline a tactical approach to conducting doc reviews for large amounts of content.
+Conducting a successful documentation review is challenging, especially with developer docs because the content is often highly technical and requires a lot of engineering input and review. At the same time, getting this engineering input and review doesn't come easy. In this topic, I'll outline a tactical approach to conducting doc reviews for large amounts of content.
 
 * TOC
 {:toc}
 
 ## How to get reviewers to read long content
 
-Getting people to review short amounts of content (one topic or less) isn't so challenging. What's challenging is getting engineering-types to review dozens of pages. A recent project I worked on had 75 new pages. How exactly do you get engineers, PMs, and others to read and review that many pages, especially in a short amount of time (right before release)? Not to be demeaning to engineers and others, but long-form reading of tech docs is not usually a characteristic many engineers and other technical types possess. After 20 minutes, most people want to get back to work. Few people will spend all afternoon going through your docs to provide a detailed review.
+Getting people to review short amounts of content (one topic or less) isn't so challenging. What's challenging is getting engineering types to review dozens of pages. A recent project I worked on had 75 new pages. How exactly do you get engineers, PMs, and others to read and review that many pages, especially in a short amount of time (a few weeks before release)? Long-form reading of tech docs is not usually a characteristic many people in tech. After 20 minutes, most people want to get back to work. Few people will spend all afternoon going through your docs to provide a detailed review.
 
-This puts technical writers in a pickle. You end up in a situation where you're highly dependent on the review and input of others (because the content is so technical), but getting this input is increasingly hard because so few like to read.
+This puts technical writers in a pickle. You end up in a situation where you're highly dependent on the review and input of others (because the content is so technical or complex), but getting this input is increasingly hard because so few have the patience to read in a careful, meticulous way.
 
-In [Processes for managing large documentation projects](docapis_managing_doc_projects.html), I already outlined 5 general stages of document review:
+In [Processes for managing large documentation projects](docapis_managing_doc_projects.html), I already outlined five general stages of document review:
 
 1. Review with doc team
 2. Review with product team
-3. Review with field engineers and support
-4. Review with legal
+3. Review with field engineers
+4. Review with legal, support, and other stakeholders
 5. Review with beta partners
 
-But I didn't go into detail about process or the tactical how-to detailing ways to approach the groups, what feedback tools to use, how to prompt action, and so on. In this topic, I'll dive into these details in a practical, tried-and-true way. Remember that these are tips from a practitioner, based on actual experiences working as a technical writer in the real world doing doc reviews. This approach has worked for me, but each company has a different culture and rhythm, so decide what might work for you in your situation.
+Previously, I didn't go into detail about more granular processes or the tactical how-to detailing ways to approach the groups, what feedback tools to use, how to prompt action, and so on. In this topic, I'll dive into these details in a practical, tried-and-true way. Remember that these are tips from a practitioner, based on actual experiences working as a technical writer in the real world doing doc reviews. This approach has worked for me, but also note that each company has a different culture and rhythm, so decide what might work for you in your situation.
 
 ## Meeting 1: Outline review
 
@@ -36,11 +36,11 @@ In most writing classes, you learn to distinguish between higher-order concerns 
 For example, suppose you identify about 12 steps for implementing a product, and the bulk of the docs are related to this implementation. Get buy-in and approval from the product team for the steps. If you have mini-outlines for each step, even better. In this outline review, the product team doesn't need to actually read the content. You can talk through the steps and explain the outline at a high level. Once you've nailed down these large pieces, start drafting out the details in each topic.
 
 {: .tip}
-For tips about creating workflow maps in docs, see [Principle 1: Let users switch between macro and micro views](https://idratherbewriting.com/simplifying-complexity/macro-micro.html). In this phase of the document review, you're drawing a *map* of the instructions. You're not yet blazing the trail.
+For tips about creating workflow maps in docs, see [Principle 1: Let users switch between macro and micro views](https://idratherbewriting.com/simplifying-complexity/macro-micro.html). In this phase of the document review, you're drawing a *map* of the instructions. You're not yet blazing the trail (writing the content).
 
 ## Meeting 2: Questions review
 
-As you start drafting the content (blazing the trail), no doubt you'll have many questions about areas you're unsure about. Especially if you've been trying to make the product work for yourself, you should have many questions about issues, unclear points, and other details that you need clarity about. List out about 20 of these questions in a collaborative document (such as Salesforce Quip or Google Docs), and then set up a meeting to ask these questions to the product team. People love to be asked questions, and having a list focuses the meeting on a specific agenda. Again, at this point, you haven't asked the product team to review documentation. They're just answering open questions.
+As you start drafting the content, no doubt you'll have many questions about areas you're unsure about. Especially if you've been trying to make the product work for yourself, you should have many questions about issues, unclear points, and other details that you need clarity about. List out about 20 of these questions in a collaborative document (such as Salesforce Quip or Google Docs), and then set up a meeting to ask these questions to the product team. People love to be asked questions, and having a list focuses the meeting on a specific agenda. Again, at this point, you haven't asked the product team to review any documentation. They're just answering questions.
 
 {: .tip}
 See my article and video titled [A tip for doc reviews -- bring a list of questions](https://idratherbewriting.com/blog/tip-for-doc-reviews-bring-list-of-questions/) for more details here.
@@ -57,15 +57,13 @@ Also, note that Slack is trending as a way for teams to communicate. The [SmartB
 
 You can read more insights about SmartBear's 2020 trends in this post: [SmartBear's 2020 API report finds 'Accurate and detailed documentation' to be second-most important characteristic of APIs](https://idratherbewriting.com/blog/smartBear-2020-state-of-api-docs-review/). In short, if you try to interact purely through meetings and email, people will likely not respond to your questions.
 
-## Meeting 3: Doc review
+## Meeting 3: Doc review with the product team
 
-At some point during the content development process, you will have finished a first draft of the documentation. Reaching this point is a huge milestone, so pat yourself on the back. When you get to this first draft, it's time to formally review the material with the product team to make sure it's accurate at a foundational level. You're essentially walking them down the trail you blazed.
+At some point during the content development process, you will have finished a first draft of the documentation. Reaching this point is a huge milestone, so pat yourself on the back. When you finish this first draft, it's time to formally review the material with the product team to make sure it's accurate at a foundational level. You're essentially walking them down the trail you blazed.
 
 The documentation might not be entirely usable or understandable for outsiders to the team (the trail might have many rough spots), but at this point you want to ensure it's accurate and complete from the product team's perspective.
 
-It's helpful to set up a meeting to review this first draft. One technique I've learned at Amazon is to dedicate part of the meeting to actually reading through the doc. At Amazon, it's normal to start meetings by distributing a document that everyone reads for 20 minutes.
-
-In [Jeff Bezos: This is the ‘smartest thing we ever did’ at Amazon](https://www.cnbc.com/2019/10/14/jeff-bezos-this-is-the-smartest-thing-we-ever-did-at-amazon.html), the author explains:
+It's helpful to set up a meeting to review this first draft. One technique I've learned at Amazon is to dedicate part of the meeting to actually reading through the doc. At Amazon, it's normal to start meetings by distributing a document that everyone reads for 20 minutes. In [Jeff Bezos: This is the ‘smartest thing we ever did’ at Amazon](https://www.cnbc.com/2019/10/14/jeff-bezos-this-is-the-smartest-thing-we-ever-did-at-amazon.html), the author explains:
 
 > Jeff Bezos has a nontraditional management style at Amazon, and he says Amazon’s unique twist on meeting structure is the "smartest thing we ever did."
 >
@@ -77,22 +75,22 @@ In [Jeff Bezos: This is the ‘smartest thing we ever did’ at Amazon](https://
 
 Although this passage describes business documents ("six-pagers" as they're called), the same document review culture exists for technical documentation as well. People don't often feel expected to read documents outside of meetings. It's not the corporate culture. If you want someone to review something, you set up a meeting and give them time to read the document.
 
-Part of me dislikes this approach because it suggests that people are too lazy/busy to read anything on their own time, and you're limited to what people can read in 20 minutes (six pages, more or less). But if you're struggling to get people read something, this approach works (for about 6 pages). If you have 75 pages to review, you could break up the document review into a series of meetings.
+Part of me dislikes this approach because it suggests that people are too lazy/busy to read anything on their own time, and you're limited to what people can read in 20 minutes (six pages, more or less). But if you're struggling to get people to read something, this approach works (for about 6 pages). If you have 75 pages to review, you could break up the document review into a series of meetings.
 
 After people finish 20 or so minutes of reading, devote the rest of the meeting to collecting their feedback. You can start with any overall comments and then proceed page by page.
 
 {: .tip}
 The more executive the reviewer (e.g., Level 7 or higher), the more they tend to want to control the meeting and discussion. If I notice this alpha behavior, I usually let the person lead out the discussion rather than forcing them down a predefined path of review topics &mdash; assuming the discussion stays focused on documentation.
 
-If you have so many reviewers in different time zones and with different schedules that a focused meeting for the doc review isn't feasible, or if the documentation is too long to review in one sitting, and you dread setting up 5 meetings to review it, then you can try to encourage the review outside of a meeting. However, you need to set a deadline for collecting feedback. There must be a due date to kick people into action. About the worst thing you can do is send a blanket email to a group asking them to review a lengthy document, without any due dates or obligations to follow up.
+If you have so many reviewers in different time zones and with different schedules that a focused meeting for the doc review isn't feasible, or if the documentation is too long to review in one sitting, and you dread setting up 5 meetings to review it, then you can try to encourage the review outside of a meeting. However, you need to set a deadline for collecting feedback. There must be a due date to kick people into action. About the worst thing you can do is send a blanket email to a group asking them to review a lengthy document, without any due dates or commitments to follow up.
 
-## Meeting 4: Widening the circle
+## Meeting 4: Review with field engineers
 
-After the product team has reviewed and approved the documentation, incorporate the changes and kick the document up to the next level of review: the field engineers. The "field engineer" role varies from company to company, but if you're working in developer docs, you probably know which role interfaces with the partners or third-party developers. Who can represent the partner/customer? Who works with partners/customers on a regular basis to implement the company's products? Maybe it's an evangelist, a sales engineer, solutions architect, customer experience, technical integrator, etc. Find these people (you should probably already be working with them) and set up a doc review meeting.
+After the product team has reviewed and approved the documentation, incorporate the changes and widen the circle to include the next level of reviewers: the field engineers. The "field engineer" role varies from company to company, but if you're working in developer docs, you probably know which role interfaces with the partners or third-party developers. Who can represent the partner/customer? Who works with partners/customers on a regular basis to implement the company's products? Maybe it's an evangelist, a sales engineer, solutions architect, customer experience, technical integrator, etc. Find these people (you should probably already be working with them) and set up a doc review meeting.
 
 In the doc review, you can start by talking through the documentation at a high-level. Then follow the same pattern as before with dedicated meetings to read and review the documentation. Or if it's not feasible to read the documentation during the meeting, assign them the review as homework with a follow-up due date for feedback. If these field engineers will be guiding partners with this documentation, they are intrinsically motivated to make sure the docs are accurate, clear, and complete; otherwise, customers/partners will ping them with questions and issues.
 
-To collect feedback from field engineers, try putting your docs on the same collaborative platform for collecting feedback that your company has already established. For example, in many companies, teams use Salesforce Quip or Google Docs. Both are highly similar, as these tools allow you to annotate text and make comments in the margins, and then reply to the comments. Commenters get notified about replies, and so on. Collaborative tools invite more of a discussion around content, not just a static/individual reading experience. If you can put your docs in a collaborative space, this is ideal.
+To collect feedback from field engineers, try putting your docs on the same collaborative platform for collecting feedback that your company has already established. For example, in many companies, teams use Salesforce Quip or Google Docs. Both are highly similar, as these tools allow you to annotate text and make comments in the margins, and then reply to the comments. Commenters get notified about replies, and so on. Collaborative tools invite more of a discussion around content, not just a static/individual reading experience. If you can write and edit your docs in a collaborative space, this is ideal.
 
 However, suppose your docs aren't already in a collaborative space (e.g., maybe they're already in your authoring system because the project involves a high degree of integration that isn't feasible to do last minute by copying and pasting from Quip or Google Docs). In this case, you could create a blank page in Quip or Google Docs and invite people to list out questions and issues there, with their initials before their comment. This works well because many times comments apply to the documentation as a whole, or are topics not answered in the documentation.
 
@@ -102,11 +100,11 @@ When a reviewer adds a question, if you follow up with a response, the reviewer 
 If your workplace has another common practice for review, follow it. For example, maybe it's common that people use track changes in Microsoft Word documents, passing them from one team member to another in a baton-like way. Or maybe everyone uses code review tools to handle comments and doc reviews. Identify the common doc review culture and toolset at your company and try to plug into that. You'll have the most success that way. Many documentation systems might have special reviewing features, but if you require people to learn new tools, or worse, to log in to unfamiliar third-party systems, you might not get many people reviewing your docs.
 
 {: .tip}
-See my post [A simple way to write, edit, and publish documentation online using Google Docs and Markdown](https://idratherbewriting.com/2014/02/25/a-simple-way-to-write-edit-and-publish-documentation-online-using-google-docs-and-markdown/) for stories about success I had using Google Docs to review content at a former company. See also [Matching documentation review practices to company culture](https://idratherbewriting.com/blog/matching-doc-review-practices-to-company-culture/).
+See my post [A simple way to write, edit, and publish documentation online using Google Docs and Markdown](/2014/02/25/a-simple-way-to-write-edit-and-publish-documentation-online-using-google-docs-and-markdown/) for stories about the success I had using Google Docs to review content at a former company. See also [Matching documentation review practices to company culture](/blog/matching-doc-review-practices-to-company-culture/).
 
-## Meeting 5: Review with support and legal
+## Review with support and legal
 
-After incorporating the edits from the field engineering review, widen the circle even further to include your support teams, legal team, and any other stakeholders interested in the doc. At this level, the reviewers might not have substantial insights here or technical expertise with the product, but they might need to be aware of it (especially if support will be handling cases about it), and your legal team might need to be involved with any code distribution (sample apps, SDKs, client libraries, etc.).
+After incorporating the edits from the field engineering review, widen the circle even further to include your support teams, legal team, and any other stakeholders interested in the doc. At this level, the reviewers might not have substantial insights here or technical expertise with the product, but they might need to be aware of it (especially if support will be handling cases about it), and your legal team might need to be involved with any code distribution (sample apps, SDKs, client libraries, etc.). Legal mostly gets involved with your [SDK releases](docapis_managing_sdk_releases.html). You don't need to create a meeting for this review, usually. Instead, you can just send these groups the link to the docs.
 
 ## Dealing with infinite additions
 
@@ -116,13 +114,13 @@ In these cases, if the question and answer doesn't logically fit in with the cor
 
 ## Final signoff
 
-By this time, you should have amassed a significant amount reviewer feedback, and your doc should have gone through multiple iterations and edits. Hopefully, your documentation is nearly ready for release. Now you're ready for the signoff stage. Identify about five key people who you want to formally sign off on the docs. This might be the product manager, the engineering lead, the manager of field engineers, your legal representative, and the support director. Create a document (maybe a Quip or Google Doc) with their names and check boxes next to them and the word "Approve" next to it. Send them an email asking for their formal signoff prior to publishing the docs.
+By this time, you should have amassed a significant amount reviewer feedback, and your doc should have gone through multiple iterations and edits. Hopefully, your documentation is nearly ready for release. Now you're ready for the signoff stage. Identify about five key people who you want to formally sign off on the docs. This might be the product manager, the engineering lead, the manager of field engineers, your legal representative, and the support director. Create a document (maybe a Quip or Google Doc) with their names and check boxes next to them and an option to select Approve. Send them an email asking for their formal signoff prior to publishing the docs.
 
-This is important: Do not publish the docs until you get their signoff. As a technical writer, you don't have much leverage to force people to review docs (nevertheless, you'll be held responsible for any errors or inaccurate information). Your one piece of leverage is to not click the publish button. Especially if you're working on a new release, many teams are eagerly looking forward to release day. By requiring signoff before you publish the docs, you can force teams to review the content. After you click publish, if you failed to get a comprehensive review from key people, they will not likely be incentivized to review documentation post-release.
+This is important: Do not publish the docs until you get their signoff. As a technical writer, you don't have much leverage to force people to review docs (nevertheless, you'll be held responsible for any errors or inaccurate information). Your one piece of leverage is to not click the publish button. Especially if you're working on a new release, many teams are eagerly looking forward to release day. By requiring signoff before you publish the docs, you can force teams to review the content and assume some responsibility. After you click publish, if you failed to get a comprehensive review from key people, they will not likely be incentivized to review documentation post-release.
+
+Lack of documentation might not hold up a software release at many companies, but most product teams require documentation as part of their product release. Use your leverage as needed.
 
 Also note that while the product team probably already reviewed the docs at an early stage, the docs no doubt underwent multiple iterations and additions that the product team needs to look over once again.
-
-If you make the hasty decision to publish before getting their signoff, good luck ever getting the person to review anything. I've seen this happen many times. There is one pressure point you can apply as a technical writer: whether to publish or not. Lack of documentation might not hold up a software release at many companies, but most product teams require documentation as part of their product release. Use your leverage as needed.
 
 ## Post-release doc reviews
 
