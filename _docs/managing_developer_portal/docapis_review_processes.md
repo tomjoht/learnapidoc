@@ -1,5 +1,5 @@
 ---
-title: Review processes for documentation
+title: Processes for reviewing documentation
 permalink: /docapis_review_processes.html
 course: "Documenting REST APIs"
 weight: 12.7
