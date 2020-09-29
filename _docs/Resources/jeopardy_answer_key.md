@@ -8,7 +8,7 @@ section: resources
 path1: /resources.html
 ---
 
-The API Jeopardy questions are in the [Conclusion section of Workshop Activities](docapis_workshop_activities.html#conclusion).
+The API Jeopardy questions are in the [Conclusion section of Workshop Activities](workshop.html#conclusion).
 
 ### Questions (jeopardy answer key)
 

@@ -76,7 +76,7 @@ You don't have to read the sections in order &mdash; feel free to skip around as
 
 Because the purpose of the course is to help you learn, there are many activities that require hands-on coding and other exercises. Along with the learning activities, there are also conceptual deep dives, but the focus is always on *learning by doing*. {% if site.format == "web" %}Where there are hands-on activities, I typically include this icon in the section title: <i class="fa fa-user-circle"></i>.{% endif %}
 
-Other topics have the word "Activity" in the title. The activities are integrated into various sections, but you can also see a consolidated subset of activities in the [Workshop Activities](docapis_workshop_activities.html). These are the activities we do during live workshops.
+Other topics have the word "Activity" in the title. The activities are integrated into various sections, but you can also see a consolidated subset of activities in the [Workshop Activities](workshop.html). These are the activities we do during live workshops.
 
 I refer to the content here as a "course" instead of a book or a website, primarily because I include a lot of exercises throughout in each section, and I find that people who want to learn API documentation prefer a more hands-on "course" experience.
 

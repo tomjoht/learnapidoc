@@ -75,9 +75,9 @@ For our development scenario (showing weather on a website), there are dozens of
 
 APIs differ considerably in their design, presentation, responses, and other detail. For more comparison, check out some of the following weather APIs:
 
-* [Dark Sky API](https://darksky.net/dev)
 * [Accuweather API](https://developer.accuweather.com/)
 * [Weatherbit API](https://www.weatherbit.io/api)
+* [ClimaCell's Weather API](https://www.climacell.co/weather-api/)
 
 Each weather API has an entirely different approach to documentation. As you'll see going through this course, the variety and uniqueness of each API doc site (even when approaching the same topic &mdash; a weather forecast) presents a lot of challenges to tech writing teams. Not only do website styles vary but also API terminology and other vocabulary to describe similar concepts.
 

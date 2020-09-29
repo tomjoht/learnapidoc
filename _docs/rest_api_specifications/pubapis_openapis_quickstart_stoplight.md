@@ -43,14 +43,16 @@ Stoplight offers both a [web app](https://stoplight.io/p/studio) and a [desktop 
 
 ## Set up a project in Stoplight Studio
 
+{: .warning}
+Stoplight Studio's user interface and workflow have changed, making these instructions no longer accurate. At some point I plan to update the tutorial here. In the meantime, refer to [Stoplight's documentation](https://help.stoplight.io/) rather than continuing on below.
+
 To get started in Stoplight Studio, you first create a GitHub repo to serve as the content source, and then you configure a new Stoplight Studio project to point to this GitHub source:
 
 1.  Go to [GitHub.com](https://github.com) and create a repo, calling it something like "stoplight_openweathermap." If you've never created a Github repo before, see [Create a repo](https://help.github.com/en/github/getting-started-with-github/create-a-repo) from GitHub's docs. Copy the URL to your repo.
 2.  Go to [https://stoplight.io/studio/](https://stoplight.io/studio/) and click **On the Web**.
+3.  Follow the on-screen instruction to create a workspace and sign into it.
 3.  In the **Open Git Project** box, paste your GitHub URL, and then click **Clone**:
-
-    {% include course_image.html size="medium" border="true" filename="stoplight_git_new_project" ext_print="png" ext_web="png" alt="Opening a Git project" caption="Opening a Git project" %}
-
+4.  Follow the on-screen prompts to connect to GitHub and select the repo you created earlier.
 4.  When the project loads, in the left pane you're prompted with the text "You do not have any APIs or models." Click the **API** button in the sidebar.
 
     {% include course_image.html size="medium" border="true" filename="openweathermap_create_api3" ext_print="png" ext_web="png" alt="Creating a new API file" caption="Creating a new API file" %}
