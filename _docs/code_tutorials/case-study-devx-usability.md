@@ -9,41 +9,66 @@ path1: /doccode.html
 published: false
 ---
 
-different types of usability:
+In [API design and usability](evaluating-api-design.html), I covered different aspects of usability related to API design. In this topic, I'll explore usability related to developer technologies in general, independent of API design.
 
-Question 1. Can you tell us a bit about the work you do for [employer]?
-* developer docs for devices group
-* encourage development of apps on appstore -- without apps, the devices are paperweights
+* TOC
+{:toc}
 
-Question 2. How is usability connected to the work you do?
-* usability (making things more usable)
-  a. physical products
-  b. code products
-  c. documentation products
 
-### Usability with physical products
+## Three types of usability
 
-* sample of product usability. assess how user friendly something is. example: headphones. how do they fit? do they hurt your ears? how is the sound? product usability not a common task in my world. mostly experience as a volunteer. e.g., hey we have a new device, need volunteers to try it out. here's your free gift card.
+Although usability generally refers to making any product easier to use, for the tech writer working in developer docs, usability can be roughly divided into three different areas:
 
-design principles with usability teams are pretty well established. refer to design book with 125 design principles. [Universal Principles of Design, Revised and Updated: 125 Ways to Enhance Usability, Influence Perception, Increase Appeal, Make Better Design Decisions, and Teach through Design](https://www.amazon.com/Universal-Principles-Design-Revised-Updated/dp/1592535879)
+* [Usability with physical products](#physical_products)
+* [Usability with code products](#code_products)
+* [Usability with documentation](#documentation_products)
 
-TW's role: some people get tired of writing docs as a bandaid for products. Ted at the Church -- wanted to fix the problems. Jonathon Colman interview -- he wants to influence product design. By the time the doc task gets to you, product is already mostly finalized. It's too late to change the design. most you can do is change some names and microcopy here and there. when you switch into usability, you're usually no longer doing technical writing. you're designing products. involves lots of interactions with customers. early prototypes, feedback, iteration.
+### Usability with physical products {#physical_products}
 
-### Usability with code products
+Usability with physical products is what most people traditionally think of when talking about usability. When you have a physical product to use, it's easy to assess how user-friendly it is.
 
-devx code is also a "product." how easy is something to implement, understand, work with. It's a shift to thinking of code as a product. Also much harder to evaluate. with headphones, you could try them on and use them. with code, unless you're an engineer, it's much harder to try the code on and use it. but that's essentially what you're doing. would be much more familiar to a coder.
+For example, suppose you're testing the usability of headphones. A product usability researcher might bring in a dozen beta testers to try the headphones on, adjust the headphone controls, use the headphones in their daily workflows, and so on. Users might assess the headphones based on comfort, familiarity of buttons, how easy they might be to pair to bluetooth, the placement of the microphone, and so on.
 
-example: one API at former company required you to create custom authentication keys for each different endpoint, which was really cumbersome.
+Usually technical writers are too far down the line to influence product design. By the time the product arrives at your inbox, people are just asking you to provide documentation for the product. If you were writing documentation for the headphones, it would not be feasible for you to push back on the design and try to get the product to team to reconsider fundamental aspects of the design, such as the placement of the microphone or the fit over your ears. You might be able to influence button names at this point, and maybe catch glitches in the software (e.g., maybe the bluetooth pairing is wonky), but don't expect too much. Influence on product design is usually required before the specs are sent to the factory. After factory lockdown, it's hard to change a product. And documentation is usually something that begins post-factory, for sure.
 
-design principles not so well established. See Arnaud Lauret book: [The Design of Web APIs](https://www.manning.com/books/the-design-of-web-apis)
+Product design has a rich history of
+design principles with usability teams are well established. See this book for many good ideas on how to assess the usability of a product: [Universal Principles of Design, Revised and Updated: 125 Ways to Enhance Usability, Influence Perception, Increase Appeal, Make Better Design Decisions, and Teach through Design](https://www.amazon.com/Universal-Principles-Design-Revised-Updated/dp/1592535879).
 
-questions you might ask: how easily can you understand the different endpoints? can you use them together to achieve your goal? do you have to call one API, get a result, plug it into another API, get a result, concatenate the results, page through them, etc? do you have to be an expert or is most of the logic handled behind the scenes? does the API return the information that you need?
+Some technical writers get fed up with documenting poorly designed products, so they decide to move into usability and product design. But once you make this move, you're usually operating outside the standard tech writer domain. For more on playing a product design role, see [Playing a product design role as a content designer -- podcast with Jonathon Colman](/blog/podcast-colman-playing-product-design-roles-as-a-content-designer/).
 
-Keep in mind that each API is usually a request that provides a response. you use the APIs to create something -- like a recipe in the kitchen. you give people certain ingredients and let them mix/match into what they want to bake. how useful are the ingredients you're providing to people?
+### Usability with code products {#code_products}
 
-TW's role: again, you usually are pulled in too late to influence the core design. but you can check for consistency of names, casing, and other more superficial decisions. Probably what matters are things like what languages and services are used, what is the architectural model of the thing. unless you have a strong engineering background in developer design, probably won't be jumping in here to make design recommendations. However, you are usually the first user, and i make it a point to get products to work. but also, if you're interfacing with partners, usually what usability involves is gathering feedback from partners on these designs. you will likely be writing documentation about these early designs that gets floated out to partners.
+In the developer documentation domain, usability with code products is more common. Few usability researchers venture into the code domain because it's much less clear how to assess the usability of code. But rest assured, usability is just as much in play with code "products" for developers as with physical products (or products with GUIs).
 
-### Usability withy documentation products
+Code usability asks questions such as these: How easy is it for developers to use the code? Do the APIs provide the information they need? How long does it take them to figure it out and implement it? Are you using a language or framework that will be familiar to your audience? Are you following general patterns in the industry for tackling problems?
+
+Let me illustrate with an example. One product I documented was the Video Skills Kit for Fire TV (for the Amazon developer portal). The first implementation involved an approach (later called cloudside) that involved about a dozen different technologies. The implementation required devs to use several AWS services (Identity Access Management, CloudWatch, Lambda), several Appstore services (Login with Amazon and security profiles, Alexa console for video skill configuration, a client library (JAR), Amazon Device Messaging, Live App Testing), as well as configure a Fire TV device through the Alexa app. These services were on top of Android.
+
+The first problem is that users were unfamiliar with all of these services, so when they ran into problems, they were hard to troubleshoot. Additionally, troubleshooting was also difficult because when something didn't work, there were a dozen different places where something might be misconfigured. For example, after integrating everything, you could say "Alexa, watch Interstellar," and your app would play the video. But if it didn't work, you had to investigate where the problem could be. The logs could provide a clue, but if you have some invalid formatting in your Lambda function, Alexa might respond, "Something went wrong." There were many backend services as well that processed information, and when issues occurred there (e.g., Alexa not trained to parse a phrase or word), it led to even more confusion.
+
+The implementation for the Video Skills Kit took partners a long time (multiple months, usually). We had a sample app, and each time I would go through the steps to set up the services around the sample app, it would take the entire afternoon and often day. So many pieces had to be in place, and many times it felt like a house of cards &mdash; if one little piece was misconfigured, the whole thing didn't work.
+
+Fast-forward two years later. The product team released a new approach to the Video Skills Kit configuration: app-only integrations. The app-only integrations grounded most of the configuration within Android itself. Users didn't have to bother with configuring any AWS services, no Lambda functions, no authorization through ADM. Developers instead would only need to configure BroadcastReceivers in their Android app to handle incoming messages sent from an on-device routing agent built into Fire TV. Partners welcomed this approach much more wholeheartedly. Not only did the implementation stay within the technology realm they were familiar with (Android), it didn't cobble together a dozen different services that all had to be working in harmony for success. Troubleshooting was also simplified because most issues were contained within the same Android platform. Implementation time was reduced to a couple of weeks instead of months.
+
+Finally, one other aspect of the code design was the speed of communication. With the first solution (cloudside), messages had to travel from one service to another (Alexa in the cloud to a Lambda function in AWS, then to the partner's app on Fire TV). With the app-only integration, most of the communication took place on the device itself. Alexa sent a message to an on-device routing agent that communicated with the app (also installed on the device). The communication between components was much faster, with fewer latency problems.
+
+In general, when evaluating code usability, consider these questions:
+
+* Does the implementation use a technology that our target developers are familiar with?
+* Does the implementation rely on a few core services or components rather than a dozen cobbled together?
+* How easy will it be to troubleshoot errors and identify where things are going wrong?
+* How long will it take developers to finish the implementation?
+* Is there a latency for the communication across the different components?
+
+Evaluating developer usability is harder because many times, there are technology constraints that make more streamlined approaches more problematic. No one sets out to build a house of cards, with cardboard-and-glue workarounds, but as you encounter one issue after another, with fast deadlines to finish the code, you might adopt solutions that work in the short term but which require a lot of hacks. String together too many hacks and accrue too much technical debt (shortcuts that provide fixes while leaving larger problems unresolved), and you head down that path to the house-of-cards solution.
+
+In general, teams building developer tools strive to provide APIs or other tools that simplify the third-party user's implementation. You want to abstract complexity behind an API, so that the developer need only provide the specified inputs and gets the desired outputs in a response. The developer probably doesn't care (or need to know) how the sausage is made on the backend to transform the inputs into outputs. If you can abstract more of this complexity behind the scenes, it will result in a better developer experience.
+
+Assessing the architectural design of a developer solution isn't easy for most technical writers. Unless you have an engineering background and can assess the feasibility of an approach, you might not have a lot of input. A lot of factors go into a solution, including security, memory usage, required infrastructure, latency, and more. In most scenarios, tech writers struggle just to understand the entire workflow and articulate it. Going the extra mile to suggest a more efficient and streamlined architectural design is often something that would be next-level for tech writers.
+
+However, if you simply keep an eye out for the questions I mentioned earlier, this can provide you with a starting point for evaluation. You're often the first user of the code product, so teams value your feedback, even if you're not an engineer.
+
+### Usability withy documentation products {#documentation_products}
 
 documentation is also a product. how easy is the documentation to understand, follow? is the documentation something that users can easily search to find information?
 
