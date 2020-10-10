@@ -70,6 +70,8 @@ However, if you simply keep an eye out for the questions I mentioned earlier, th
 
 ### Usability withy documentation products {#documentation_products}
 
+Finally, you can also incorporate usability with documentation.
+
 documentation is also a product. how easy is the documentation to understand, follow? is the documentation something that users can easily search to find information?
 
 example: your car manual. is it easy for users to find information? are the terms used the same one's in user's heads? is the layout easy to scan? is the information understandable? does it contain information related to problems you have? does it address your level of skill of what you can/can't do? e.g., changing headlight. changing oil. changing air filters.
