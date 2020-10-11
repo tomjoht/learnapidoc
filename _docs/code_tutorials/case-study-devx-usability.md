@@ -1,5 +1,5 @@
 ---
-title: "Example of DevX Usability"
+title: "Developer Experience (DevX) Usability"
 permalink: /devx-usability-example.html
 course: "Documenting REST APIs"
 weight: 7.91
