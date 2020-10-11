@@ -38,7 +38,7 @@ Product design has a rich history of research and best practices. See this book 
 
 ## Usability with code products {#code_products}
 
-In the developer documentation domain, usability with code products is more common. Few usability researchers venture into the code domain because it's much less clear how to assess the usability of code. But rest assured, usability is just as much in play with code products for developers as with physical products or products with GUIs.
+In the developer documentation domain, usability with code products is more common. Few usability researchers venture into the code domain because it's much less clear how to assess the usability of code. But make no mistake, usability is just as much in play with code products for developers as with physical products or products with GUIs.
 
 Code usability asks questions such as, how easy is it for developers to use the code? Do the APIs provide the information they need? How long does it take them to figure it out and implement it? Are you using a language or framework that will be familiar to your audience? Are you following general patterns in the industry for tackling problems?
 
