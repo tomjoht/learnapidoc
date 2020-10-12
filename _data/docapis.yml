@@ -286,7 +286,7 @@ folders:
     jurl: /evaluating-api-design.html
 
   - title: "Developer Experience (DevX) Usability"
-    jurl: /devx-usability-example.html
+    jurl: /devx-usability-examples.html
 
 - title: "VIII: Publishing API docs"
   jurl: /publishingapis.html
