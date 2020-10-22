@@ -28,6 +28,8 @@ Usability can be roughly divided into at least three different areas:
 
 Usability with physical products or graphical user interfaces (GUIs) is what people traditionally think of with usability. When you have a physical product to use, assessing its usability is more straightforward.
 
+{% include random_ad.html %}
+
 For example, suppose you're testing the usability of a new headphone design. A usability researcher might bring in a group of beta testers to try the headphones on, ask them to adjust the headphone controls, use the headphones in their daily workflows, and so on. Users might evaluate the headphones based on comfort, familiarity of buttons, how easy they might be to pair to bluetooth, the placement of the microphone, and so on.
 
 Usually, technical writers are too far down the development line to influence product design. By the time the product arrives at your door, most product teams just ask technical writers to provide documentation for the product, not to provide input on design itself. Usually, it would not be expected for you to push back on the design and try to get the product to team to reconsider fundamental aspects such as the placement of the microphone or the fit over your ears. (Of course, you can always try, and different scenarios might be more appropriate for rethinking product design.) You might be able to influence *button names* at this point, and maybe catch glitches in the software (e.g., maybe the bluetooth pairing is wonky), but don't expect too much. Changing product design is usually required before the specs are sent to the factory. After factory lockdown, it's hard to change a product. And documentation is usually something that begins after factory lockdown.
@@ -43,6 +45,8 @@ In the developer documentation domain, usability with code products is more comm
 Code usability asks questions such as the following: How easy is it for developers to use the code? Do the APIs provide the information that developers need? How long does it take developers to figure the code out and implement it? Are you using a language or framework that will be familiar to your developers? Are you following general patterns in the industry for tackling common problems?
 
 Let me illustrate with an example. One product I recently documented was the [Video Skills Kit for Fire TV](https://developer.amazon.com/docs/video-skills-fire-tv-apps/introduction.html). The original design involved a [cloudside implementation](../video-skills-fire-tv-apps/integration-overview-cloudside.html) that had about a dozen different technologies and steps. The implementation required devs to use several AWS services (Identity Access Management, CloudWatch, Lambda), several Appstore services (Login with Amazon and security profiles, Alexa console, Amazon Device Messaging, Live App Testing), a client library (JAR), Fire TV device, Alexa app, and ADB. These services were on top of Android services that developers were expected to know. (Altogether, this is about a dozen different services or tools.)
+
+{% include random_ad3.html %}
 
 Unsurprisingly, users were unfamiliar with all of these services, so not only was there an initial learning curve, when they did run into problems, the problems were hard to troubleshoot. Additionally, troubleshooting was also complex not just due to the unfamiliar toolset, but because there were so many different places where something might be misconfigured. For example, after integrating everything, you could say, "Alexa, watch Interstellar," and your app would play a video. But if it didn't work, you had to figure out where the problem was. The logs could provide a clue, but if you had some invalid formatting in your Lambda function, Alexa might just respond, "Something went wrong," with no other logs. Alexa might respond similarly for a lot of different issues, as there were many backend services as well (invisible to the user) that processed the information. For example, one issue might be with the natural language processing logic occurring behind the scenes.
 
@@ -63,6 +67,8 @@ In general, when evaluating code usability, consider these questions:
 * How much latency exists for communication among the different components?
 
 Evaluating developer usability can be hard because many times, there are technology constraints that make more streamlined approaches problematic. No one sets out to build a house of cards, but as you encounter one issue after another, with fast deadlines to finish the code, you might adopt solutions that work in the short term but which require a lot of hacks. String together too many hacks and accrue too much technical debt (shortcuts that provide fixes while leaving larger problems unaddressed), and you head down the path to a house-of-cards solution.
+
+{% include random_ad2.html %}
 
 In general, product teams building developer tools strive to provide APIs or other tools that simplify the third-party developer's implementation. You want to abstract complexity behind an API, so that the developer need only provide the specified inputs to get the desired outputs in a response. The developer probably doesn't care (or need to know) how the sausage is made on the backend to transform the inputs into outputs. If you can abstract more of this complexity behind the scenes, it will result in a better developer experience.
 

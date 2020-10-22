@@ -17,6 +17,8 @@ Conducting a successful documentation review is challenging, especially with dev
 
 Getting people to review short amounts of content (one topic or less) isn't so challenging. What's challenging is getting engineering types to review dozens of pages. A recent project I worked on had 75 new pages. How exactly do you get engineers, PMs, and others to read and review that many pages, especially in a short amount of time (a few weeks before release)? Long-form reading of tech docs is not usually a characteristic of many people in tech. After 20 minutes, most people want to get back to work. Few will spend all afternoon going through your docs to provide a detailed review.
 
+{% include random_ad.html %}
+
 This puts technical writers in a bind. You end up in a situation where you're highly dependent on the review and input of others (because the content is so technical or complex), but getting this input is increasingly hard because so few have the patience to read in a careful, meticulous way.
 
 In [Processes for managing large documentation projects](docapis_managing_doc_projects.html), I already outlined five general stages of document review:
@@ -33,6 +35,8 @@ Previously, I didn't go into detail about more granular processes or the tactica
 
 In most writing classes, you learn to distinguish between higher-order concerns (e.g., organization, story) before lower-order concerns (e.g., grammar, word choice). The review process uses the same tiered approach. With long content, you want to first be sure that you have the big pieces in place. Draw up an outline of the steps and get the product team to agree on these large pieces and their order.
 
+{% include image_ad_right.html %}
+
 For example, suppose you identify about 12 steps for implementing a product, and the bulk of the docs are related to this implementation. Get buy-in and approval from the product team for the steps. If you have mini-outlines for each step, even better. In this outline review, the product team doesn't need to actually read the content. You can talk through the steps and explain the outline at a high level. Once you've nailed down these large pieces, start drafting out the details in each topic.
 
 {: .tip}
@@ -48,6 +52,8 @@ See my article and video titled [A tip for doc reviews -- bring a list of questi
 ## Create a Slack channel
 
 Batching up your questions for a meeting is great, but you will likely have many questions over the life of the project *after* the meeting. Also, you'll find that during the meeting, reviewers will have some of the answers, but not all. Maybe questions you asked the product manager and engineering lead during the meeting drew blanks and shrugged shoulders for responses, while they indicated that some other person (e.g., "Sam" or "Sally") might know. Any sizable project probably has 20+ people working on it, each with different perspectives and specialities. You can't round them all up each time you have a question.
+
+{% include random_ad2.html %}
 
 If your organization has Slack, use it. Create a Slack channel specific to documentation for the project (e.g., acme-tech-docs) and invite people to it. If you ask someone a question they don't have the answer to, it's easy for the person to tag another person for the answer, adding them to the channel. Having a dynamic channel like this to ask questions can be incredibly helpful and keep everyone informed about the documentation status.
 
@@ -89,6 +95,8 @@ If you have so many reviewers in different time zones and with different schedul
 After the product team has reviewed and approved the documentation, incorporate the changes and widen the circle to the next level of reviewers: the field engineers. The "field engineer" role varies from company to company, but if you're working in developer docs, you probably know which role interfaces with the partners or third-party developers. Who can represent the partner/customer? Who works with partners/customers on a regular basis to implement the company's products? Maybe it's an evangelist, a sales engineer, solutions architect, customer experience, technical integrator, etc. Find these people (you should probably already be working with them) and set up a doc review meeting.
 
 In the doc review, you can start by talking through the documentation at a high-level. Then follow the same pattern as before with dedicated meetings to read and review the documentation. Or if it's not feasible to read the documentation during the meeting, assign them the review as homework with a follow-up due date for feedback. If these field engineers will be guiding partners with this documentation, they are intrinsically motivated to make sure the docs are accurate, clear, and complete. Otherwise, customers/partners will ping them with questions and issues.
+
+{% include random_ad3.html %}
 
 To collect feedback from field engineers, try putting your docs on the same collaborative platform for collecting feedback that your company has already established. For example, in many companies, teams use Salesforce Quip or Google Docs as collaboration tools. Both are highly similar, as these tools allow you to annotate text and make comments in the margins, and then reply to the comments. Commenters get notified about replies, and so on. Collaborative tools invite more of a discussion around content, not just a static reading experience. If you can write and edit your docs in a collaborative space, this is ideal.
 

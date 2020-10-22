@@ -413,6 +413,9 @@ folders:
   - title: "Processes for managing SDK releases"
     jurl: /docapis_managing_sdk_releases.html
 
+  - title: Documentation kickoff meeting and product demo
+    jurl: /docapis_kickoff_meeting_agenda.html
+
   - title: "Processes for reviewing documentation"
     jurl: /docapis_review_processes.html
 
