@@ -419,6 +419,9 @@ folders:
   - title: "Processes for reviewing documentation"
     jurl: /docapis_review_processes.html
 
+  - title: Processes for maintaining existing documentation
+    jurl: /docapis_doc_maintenance_processes.html
+    
 - title: "XII: API glossary and resources"
   jurl: /resources.html
   description: "The API documentation landscape is full of jargon, acronyms, and many new terms. This glossary provides a list of terms and definitions. Additionally, this section contains additional exercises and information, such as more activities for calling APIs, or more info about alternative specifications."
