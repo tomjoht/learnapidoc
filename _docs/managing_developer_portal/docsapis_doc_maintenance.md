@@ -119,3 +119,19 @@ I haven't experimented yet with Markdown linters in an automated way, but they'r
 ## Conclusion
 
 The above items might seem daunting to tackle all at once, but if you can cycle in at least one maintenance ticket during each sprint, you can make maintenance a more strategic activity and make progress over a period of time.
+
+## Your feedback and input
+
+Please take a moment to respond to a few survey questions related to documentation maintenance. You can see the [ongoing responses here](https://www.questionpro.com/t/PHXMdZjeW7).
+
+<script>
+EMBED_PARAMS = {};
+EMBED_PARAMS.surveyID =7826663;
+EMBED_PARAMS.domain ="//www.questionpro.com";
+EMBED_PARAMS.src ="//www.questionpro.com/a/TakeSurvey?tt=xP6BqrPdeZo%3D";
+EMBED_PARAMS.width ="100%";
+EMBED_PARAMS.height = "1200px";
+EMBED_PARAMS.border = "hidden";
+</script>
+<div id="div_7826663"></div>
+<script src="//www.questionpro.com/javascript/embedsurvey.js?version=1"></script>
