@@ -2,15 +2,17 @@
 /* workflow maps */
 
 .box {
-    padding: 10px;
-    border: 1px solid #888;
-    box-shadow: 2px 2px 4px #dedede;
-    width: 100px;
-    height: 90px;
-    background-color: #f5f5f5;
-    font-size: 14px;
-    hyphens: auto;
-    float: left;
+  padding: 10px;
+  border: 1px solid #888;
+  box-shadow: 2px 2px 4px #dedede;
+  width: 100px;
+  height: 90px;
+  background-color: #f5f5f5;
+  font-size: 12px;
+  hyphens: auto;
+  float: left;
+  font-size: 12px;
+  border-radius: 4px;
 }
 
 @media (max-width: 700px) {
@@ -28,8 +30,10 @@
 }
 
 .userMap {
-    margin-bottom: 30px;
-    display: table-row;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 20px;
+  min-width: 550px;
 }
 
 .userMap .content {

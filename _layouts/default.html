@@ -18,28 +18,27 @@
               <div id="content">
                 {% include breadcrumb.html %}
 
-                {% comment %}{% include next_top.html %}{% endcomment %}
-
                 <h1>{{page.title}}</h1>
 
 
                 <div class="amazonBook">
-                {% comment %}{% include amazon_book.html %}{% endcomment %}
-                {% unless page.no_newsletter == true %}
-                {% comment %}{% include tinyletter.html %}{% endcomment %}
-                {% endunless %}
                 </div>
 {% comment %}<p class="workshop surveyBanner" style="width: 66%"> I'm giving an <a href="https://idratherbewriting.com/blog/upcoming-api-documentation-workshop-los-angeles-jan-23/">API documentation workshop in Los Angeles, California</a>, on January 23, 2020. You can <a href="https://www.eventbrite.com/e/api-documentation-workshop-los-angeles-jan-23-2020-tickets-84487066089">view details on EventBrite here.</a>
 <br/><br/><b>
 <p class="surveyBanner" style="font-size: 98%; line-height: 18px"><b>I need your input &mdash;</b> I'm conducting a survey about trends in developer documentation for 2020. If you write docs for developers, please <a href='https://www.questionpro.com/t/AOaGwZgCFE'>take this survey.</a> (You can view the ongoing results viewed <a href="https://www.questionpro.com/t/PGhS9ZgCFE">here.</a>)
 </p>
 {% endcomment %}
+
+{% if page.versions %}{% include versions.html %}{% endif %}
+{% if page.github_url %} {% include github_button.html %}  {% endif %}
+{% if page.map %}{% assign mapStep = page.map.step %}{% assign mapDefinition = page.map.definition %}{% include workflow_map.html step=mapStep map=mapDefinition %}{% endif %}
+
                 {{content}}
 
                 <div class="donateButton">
                 {% include coffee_button.html %}
                 </div>
-                
+
                 {% unless page.type == 404 %}
 
                 {% include progress.html %}

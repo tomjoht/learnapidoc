@@ -7,8 +7,6 @@ weight: 4.41
 section: openapitutorial
 path1: /restapispecifications.html
 path2: /openapi_tutorial.html
-redirect_from:
-- pubapis_openapi_code_editor.html
 ---
 
 In the previous section, I explained how to create the OpenAPI spec [using a visual editor with Stoplight Studio](pubapis_openapis_quickstart_stoplight). In this tutorial, I'll explain how to work in a text editor such as [Swagger Editor](http://editor.swagger.io/) to write the OpenAPI code by hand. For a higher-level introduction to the OpenAPI spec, see [Introduction to the OpenAPI specification](pubapis_openapi_intro.html).
@@ -122,11 +120,8 @@ If you have an existing specification document that validates against version Op
 
 To see the difference between the 2.0 and the 3.0 code, you can copy these code samples to separate files and then use an application like [Diffmerge](https://sourcegear.com/diffmerge/) to highlight the differences. The Readme.com blog has a nice post that provides [A Visual Guide to What's New in Swagger 3.0](https://blog.readme.com/an-example-filled-guide-to-swagger-3-2/).
 
-
 ## Helpful resources
 
 As you embark on creating an OpenAPI specification file, you might find the recording of [Peter Gruenbaum's Swagger/OpenAPI presentation](http://www.stc-psc.org/event/documenting-web-apis-with-swagger-free-webinar/) to the STC Puget Sound chapter helpful, as well as his [Udemy course](https://www.udemy.com/learn-swagger-and-the-open-api-specification/).
 
 Brace yourself &mdash; this is where you'll find out if you're cut out for API technical writing.
-
-{% include random_ad.html %}

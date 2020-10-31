@@ -7,9 +7,11 @@ weight: 4.45
 section: openapitutorial
 path1: /restapispecifications.html
 path2: /openapi_tutorial.html
+map:
+  step: 3
+  definition: content/openapi_tutorial_map.html
 ---
 
-{% include workflow_map.html step="3" map="content/openapi_tutorial_map.html"  %}
 {% if site.format == "pdf" or site.format == "kindle" %}
 <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapistep3.png"/>
 {% endif %}
