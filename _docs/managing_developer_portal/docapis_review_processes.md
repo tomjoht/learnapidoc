@@ -6,6 +6,7 @@ weight: 12.7
 sidebar: docapis
 section: devportals
 path1: /docapis_managing_dev_portals.html
+last-modified: 2020-11-02
 ---
 
 Conducting a successful documentation review is challenging, especially with developer docs because the content is often highly technical and requires a lot of engineering input and review. At the same time, getting this engineering input and review doesn't come easy. In this topic, I'll outline a tactical approach to conducting doc reviews for large amounts of content.

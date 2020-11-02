@@ -6,6 +6,7 @@ weight: 5.4
 sidebar: docapis
 section: testingdocs
 path1: /testingdocs.html
+last-modified: 2020-11-02
 ---
 
 Now that you've read about testing, it's time to get some more hands-on practice. In this activity, you'll do some doc testing with an open-source project (or another project you identified).

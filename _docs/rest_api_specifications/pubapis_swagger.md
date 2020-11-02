@@ -12,6 +12,7 @@ glossary_keys:
 - swagger_editor
 - swagger_ui
 - swagger_codegen
+last-modified: 2020-11-02
 ---
 
 [Swagger UI](https://github.com/swagger-api/swagger-ui) provides a display framework that reads an [OpenAPI specification document](https://github.com/OAI/OpenAPI-Specification) and generates an interactive documentation website. The following tutorial shows you how to integrate an OpenAPI specification document into Swagger UI.

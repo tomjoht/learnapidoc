@@ -9,6 +9,7 @@ path1: /docendpoints.html
 redirect_from:
 - https://idratherbewriting.com/learnapidoc/docapis_doc_methods.html
 - https://idratherbewriting.com/learnapidoc/docapis_doc_resource_urls_and_methods.html
+last-modified: 2020-11-02
 ---
 
 {% include workflow_map.html step="2" map="content/reference_doc_map.html"  %}

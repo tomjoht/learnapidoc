@@ -7,6 +7,7 @@ weight: 4.41
 section: openapitutorial
 path1: /restapispecifications.html
 path2: /openapi_tutorial.html
+last-modified: 2020-11-02
 ---
 
 In the previous section, I explained how to create the OpenAPI spec [using a visual editor with Stoplight Studio](pubapis_openapis_quickstart_stoplight). In this tutorial, I'll explain how to work in a text editor such as [Swagger Editor](http://editor.swagger.io/) to write the OpenAPI code by hand. For a higher-level introduction to the OpenAPI spec, see [Introduction to the OpenAPI specification](pubapis_openapi_intro.html).

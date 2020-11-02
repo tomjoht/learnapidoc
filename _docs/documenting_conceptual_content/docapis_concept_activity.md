@@ -6,6 +6,7 @@ weight: 6.93
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
+last-modified: 2020-11-02
 ---
 
 With each of the conceptual topics in this section, you've been analyzing the topic in the context of the [open-source project you identified](docapis_find_open_source_project.html). Now broaden your analysis to see how these conceptual topics appear in other API documentation sites.

@@ -7,6 +7,7 @@ weight: 4.92
 section: openapi_output_demos
 path2: /openapi_output_demos.html
 path1: /restapispecifications.html
+last-modified: 2020-11-02
 ---
 
 I've provided information about Stoplight in two other places in this course:

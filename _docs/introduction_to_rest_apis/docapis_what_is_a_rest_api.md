@@ -9,6 +9,7 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 redirect_from:
 - /docapis_what-is-a-rest-api/
+last-modified: 2020-11-02
 ---
 
 This course is all about learning by doing, but while *doing* various activities, I'll periodically pause and dive into some more abstract concepts to fill in more detail. This topic is one of those deep-dive moments into concepts. Here we'll explore what a REST API is, comparing it to other types of APIs like SOAP. REST APIs have common characteristics but no definitive protocols like its SOAP predecessor.

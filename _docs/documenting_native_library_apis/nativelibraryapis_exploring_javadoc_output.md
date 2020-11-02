@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 11.5
 section: nativelibraryapis
 path1: /nativelibraryapis.html
+last-modified: 2020-11-02
 ---
 
 The Javadoc output hasn't changed much in the past 20 years, so in some sense, it's predictable and familiar. On the other hand, the output is dated and lacks some critical features, like search, or the ability to add more pages. In this topic, we'll explore how the Javadoc is organized.

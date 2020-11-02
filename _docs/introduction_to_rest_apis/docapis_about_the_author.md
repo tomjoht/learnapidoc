@@ -6,6 +6,7 @@ weight: 1.5
 sidebar: docapis
 section: introtoapis
 path1: /docapis_introtoapis.html
+last-modified: 2020-11-02
 ---
 
 In case you'd like to know a little bit about me, I'm currently based in the San Francisco Bay area of California (the South Bay, or Silicon Valley) working at Amazon in Sunnyvale. I mainly write documentation for third-party developers creating apps for the Amazon Appstore, primarily related to Fire TV.

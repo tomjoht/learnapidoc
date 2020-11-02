@@ -6,6 +6,7 @@ weight: 3.1
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
+last-modified: 2020-11-02
 ---
 
 In this API reference tutorial tutorial, we'll work on creating five common sections in REST API reference documentation: resource description, endpoints and methods, parameters, request example, and response example and schema. To provide some context (and to continue with our sample documentation scenario), we'll structure the information from the [new endpoint to document](docapis_new_endpoint_to_doc.html#surf_report_api) into these five sections.

@@ -6,6 +6,7 @@ weight: 10.4
 sidebar: docapis
 section: jobapis
 path1: /jobapis.html
+last-modified: 2020-11-02
 ---
 
 To break into API documentation, you need to start thinking about API documentation samples in your portfolio. Your portfolio is key to [Getting an API documentation job and thriving](jobapis.html). Without a portfolio that contains compelling API documentation samples, it will be tough to get a job in API documentation.

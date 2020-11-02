@@ -12,6 +12,7 @@ path1: /restapispecifications.html
 redirect_from:
 - /pubapis_openapi_intro/
 - /learnapidoc/pubapis_openapi_intro.html
+last-modified: 2020-11-02
 ---
 
 [OpenAPI](https://www.openapis.org/) is a specification for describing REST APIs. If you're familiar with tech comm specifications, you can think of the OpenAPI specification like the [DITA specification](https://www.xml.com/articles/2017/01/19/what-dita/). With DITA, there are specific XML elements used to define help components, and a required order and hierarchy to those elements. Different tools can read DITA and build out a documentation website from the elements.

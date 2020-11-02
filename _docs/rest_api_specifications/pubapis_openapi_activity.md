@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 4.51
 section: restapispecifications
 path1: /restapispecifications.html
+last-modified: 2020-11-02
 ---
 
 The [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html) walked you through 8 steps in building the OpenAPI specification document. Now it's your turn to practice first editing and then creating an OpenAPI specification document.

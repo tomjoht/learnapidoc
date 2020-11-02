@@ -6,6 +6,7 @@ weight: 12.8
 sidebar: docapis
 section: devportals
 path1: /docapis_managing_dev_portals.html
+last-modified: 2020-11-02
 ---
 
 As soon as new docs are published, docs begin a trajectory of decay. The natural progression of technology makes documentation outdated within a matter of months or years. New versions of web browsers, operating systems, supporting utilities and tools, etc., are released, and the whole technology landscape keeps moving forward, evolving, improving, and adjusting &mdash; all while documentation remains static. The more your documentation relies on third-party components, the faster it goes out of date.

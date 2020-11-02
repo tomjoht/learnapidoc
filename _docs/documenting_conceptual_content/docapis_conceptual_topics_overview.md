@@ -7,6 +7,7 @@ weight: 6.01
 sidebar: docapis
 section: docconceptual
 path1: /docconceptual.html
+last-modified: 2020-11-02
 ---
 
 Up until this point, we've mostly been focusing on the [reference aspects of API documentation](docendpoints.html) (the endpoints). The reference documentation is only one aspect of API documentation. In this section, I'll cover the main conceptual topics that are commonly found in API documentation. Rather than "conceptual topics," you might consider this type of information the "user guide."

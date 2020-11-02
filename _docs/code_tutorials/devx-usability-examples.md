@@ -6,6 +6,7 @@ weight: 7.91
 sidebar: docapis
 section: docapiscode
 path1: /doccode.html
+last-modified: 2020-11-02
 ---
 
 In [API design and usability](evaluating-api-design.html), I covered different aspects of usability related to API design. In this topic, I'll explore usability related to developer processes and technologies in general, independent of API design.

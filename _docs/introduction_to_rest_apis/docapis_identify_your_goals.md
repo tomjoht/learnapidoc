@@ -6,6 +6,7 @@ weight: 1.8
 sidebar: docapis
 section: introtoapis
 path1: /docapis_introtoapis.html
+last-modified: 2020-11-02
 ---
 
 Ramping up on API documentation, developing a portfolio of API documentation writing samples, and completing all the activities in this course will require a lot of time and effort. In this activity, you'll identify your goals and reasons for taking this course. Reflecting on your motivation will help you develop the right mindset and stamina to devote the necessary time for the course.

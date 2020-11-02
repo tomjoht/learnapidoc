@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 4.1
 section: restapispecifications
 path1: /restapispecifications.html
+last-modified: 2020-11-02
 ---
 
 When I [introduced REST APIs](docapis_what_is_a_rest_api.html), I mentioned that REST APIs follow an architectural style, not a specific standard. Several REST specifications were initially developed to provide standards in the way that REST APIs are described. The initial three specs were  [OpenAPI (formally called Swagger)](https://github.com/OAI/OpenAPI-Specification), [RAML](https://raml.org/), and [API Blueprint](https://apiblueprint.org/).

@@ -7,6 +7,7 @@ weight: 6.4
 sidebar: docapis
 section: docconceptual
 path1: /docconceptual.html
+last-modified: 2020-11-02
 ---
 
 Status and error codes refer to a code number in the response header that indicates the general classification of the response &mdash; for example, whether the request was successful (200), resulted in a server error (500), had authorization issues (403), and so on. Standard status codes don't usually need much documentation, but custom status and error codes specific to your API do. Error codes in particular help in troubleshooting bad requests.

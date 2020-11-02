@@ -6,6 +6,7 @@ weight: 12.6
 sidebar: docapis
 section: devportals
 path1: /docapis_managing_dev_portals.html
+last-modified: 2020-11-02
 ---
 
 At some point after receiving a new documentation project, the first step in the project is to hold a documentation kickoff meeting and product demo. These meetings are mostly about gathering information so you can create the documentation. The following are some initial questions and topics for these meetings.

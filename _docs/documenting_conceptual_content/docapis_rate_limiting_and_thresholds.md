@@ -7,6 +7,7 @@ weight: 6.5
 sidebar: docapis
 section: docconceptual
 path1: /docconceptual.html
+last-modified: 2020-11-02
 ---
 
 Rate limits determine how frequently you can call a particular endpoint. Usually, companies have different tiers (for example, free versus pro) and licenses (open-source, business, commercial) corresponding to different capabilities or rate limits with the API.

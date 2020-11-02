@@ -6,6 +6,7 @@ weight: 12.4
 sidebar: docapis
 section: devportals
 path1: /docapis_managing_dev_portals.html
+last-modified: 2020-11-02
 ---
 
 So far we've talked about processes for managing [developer documentation projects](docapis_managing_doc_projects) and [small doc requests](docapis_managing_small_doc_requests). When you're working in a developer portal, you might also be responsible for managing and distributing SDKs and other sample code.

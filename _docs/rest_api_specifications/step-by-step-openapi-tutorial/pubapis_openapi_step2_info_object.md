@@ -10,6 +10,7 @@ path2: /openapi_tutorial.html
 map:
   step: 2
   definition: content/openapi_tutorial_map.html
+last-modified: 2020-11-02
 ---
 
 {% if site.format == "pdf" or site.format == "kindle" %}

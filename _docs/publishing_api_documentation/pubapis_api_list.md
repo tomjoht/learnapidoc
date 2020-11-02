@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 8.1
 section: publishingapis
 path1: /publishingapis.html
+last-modified: 2020-11-02
 ---
 
 Rather than approach the topic of publishing prescriptively, let's begin with some concrete examples and move towards the formulation of general principles. The following are more than 100 openly accessible REST APIs that you can browse as a way to look at patterns and examples. You can find many more APIs by browsing [programmableweb.com](http://programmableweb.com).

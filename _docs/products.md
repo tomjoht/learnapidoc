@@ -6,6 +6,7 @@ sidebar: docapis
 type: plain
 progress: false
 no_newsletter: true
+last-modified: 2020-11-02
 ---
 
 If you'd like to purchase a PDF of the activities listed in the [Workshop](workshop.html), you can do so below. (I'll be adding more to this page in the future.)

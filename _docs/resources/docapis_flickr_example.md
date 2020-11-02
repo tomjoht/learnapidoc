@@ -6,6 +6,7 @@ weight: 13.3
 sidebar: docapis
 section: resources
 path1: /resources.html
+last-modified: 2020-11-02
 ---
 
 Use the Flickr API to get photo images from [this Flickr gallery](https://www.flickr.com/photos/flickr/galleries/72157647277042064/).

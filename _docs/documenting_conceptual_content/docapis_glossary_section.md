@@ -8,6 +8,7 @@ sidebar: docapis
 section: docconceptual
 path1: /docconceptual.html
 no_newsletter: true
+last-modified: 2020-11-02
 ---
 
 The API glossary defines all the terms that might be unique to your company or API. Glossaries are often overlooked or skipped, but their importance should not be understated since much of the user's understanding of API documentation depends on the clarity and alignment of specific terms.

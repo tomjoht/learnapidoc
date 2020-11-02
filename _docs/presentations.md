@@ -4,6 +4,7 @@ permalink: /presentations.html
 course: "Documenting REST APIs"
 sidebar: docapis
 progress: false
+last-modified: 2020-11-02
 ---
 
 For a list of upcoming presentations and past presentations all topics, see [Presentations](https://idratherbewriting.com/presentations).

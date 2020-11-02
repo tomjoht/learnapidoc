@@ -6,6 +6,7 @@ sidebar: docapis
 section: introtoapis
 path1: /docapis_introtoapis.html
 weight: 1.2
+last-modified: 2020-11-02
 ---
 
 I've given numerous presentations and workshops on API documentation, and I've recorded most of them. The most recent recordings are available below.

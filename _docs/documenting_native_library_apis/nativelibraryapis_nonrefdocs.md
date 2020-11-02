@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 11.8
 section: nativelibraryapis
 path1: /nativelibraryapis.html
+last-modified: 2020-11-02
 ---
 
 Although much attention tends to be given to the reference documentation with APIs, the bulk of documentation that technical writers work on (as opposed to developers) is [conceptual documentation](docconceptual.html). Developers rarely write more conceptual or tutorial-based documentation.

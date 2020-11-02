@@ -6,6 +6,7 @@ weight: 12.2
 sidebar: docapis
 section: devportals
 path1: /docapis_managing_dev_portals.html
+last-modified: 2020-11-02
 ---
 
 When you're managing larger documentation projects, you need to incorporate project management skills to break the large work into smaller chunks. You can pick and choose from Scrum and other agile methodologies (like Kanban) to create a workflow that works for you. The following sections describe a process for working with large documentation projects.

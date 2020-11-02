@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 8.6
 section: publishingapis
 path1: /publishingapis.html
+last-modified: 2020-11-02
 ---
 
 Just as [doc-as-code tools](pubapis_docs_as_code.html) mirror tools used by software implementation teams, work processes that tech writers follow can also mirror processes used by software implementation teams. The most common software development methodology today is probably [Scrum](https://www.scrumguides.org/scrum-guide.html), which is a form of agile development methodology.

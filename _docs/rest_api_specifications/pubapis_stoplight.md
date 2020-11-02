@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 4.7
 section: openapi_output_demos
 path1: /openapi_output_demos.html
+last-modified: 2020-11-02
 ---
 
 Earlier in the course, you might have followed the tutorial for [Create an OpenAPI specification document using Stoplight Studio's visual editor](pubapis_openapis_quickstart_stoplight.html), which uses Stoplight Studio. As a GUI editor for creating an OpenAPI, Stoplight Studio simplifies the authoring of a highly technical syntax that is often challenging to make valid. Now let's dive a bit deeper into the offerings and philosophy of Stoplight.

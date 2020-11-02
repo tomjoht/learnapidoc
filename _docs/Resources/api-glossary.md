@@ -85,6 +85,7 @@ glossary_keys:
   - version_control_system
   y:
   - yaml
+last-modified: 2020-11-02
 ---
 
 {% include glossary_full.html letters="a,b,c,e,g,h,j,m,o,p,q,r,s,v,y" file="glossary" %}

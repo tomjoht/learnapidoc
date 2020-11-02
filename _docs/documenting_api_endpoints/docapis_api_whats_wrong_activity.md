@@ -5,6 +5,7 @@ weight: 3.9
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
+last-modified: 2020-11-02
 ---
 
 In this activity, you'll critique an existing API reference topic to identify what's wrong with it.

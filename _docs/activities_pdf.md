@@ -3,6 +3,7 @@ title: Activities PDF
 permalink: /activities_pdf.html
 type: pdf
 layout: printpdf
+last-modified: 2020-11-02
 ---
 
 The workshop agenda, slides, and activities correspond to full-day API workshop. The slide groups mirror the same sections in the course.
