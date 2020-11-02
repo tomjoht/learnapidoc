@@ -8,6 +8,8 @@ section: devportals
 path1: /docapis_managing_dev_portals.html
 ---
 
+The process for managing developer portal documentation includes a number of different tasks outside of content development. The role of a DX (developer experience) content strategist plays a key role in defining workflows, standards, user flows, processes, and other aspects of the site. workflows for different types of documentation.
+
 {% include minitoc.html %}
 
 
@@ -19,4 +21,4 @@ For example, a developer portal might contain documentation for 30 or more diffe
  {% endcomment %}
 
 {: .note}
-I'm currently building this section out and will be adding more links here as I create the content. I expect to finish this section by September 2020.
+I'm currently building this section out and will be adding more links here as I create the content. I expect to finish this section by December 2020.
