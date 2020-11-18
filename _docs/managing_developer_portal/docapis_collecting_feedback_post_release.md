@@ -98,7 +98,7 @@ Your feedback form can be as simple as asking one qualitative question:
 
 Remember, people usually give 30 seconds or less of time in providing feedback. If you try to add a lot of questions, they should be specific to the information on the page, not general task-analysis questions.
 
-I also recommend adding some placeholder text that encourages users to be descriptive, such as "Enter your feedback here. Try to be as specific and detailed as possible. At least 100 characters (several sentences) are required."
+I also recommend adding some placeholder text that encourages users to be descriptive, such as "Enter your feedback here. Try to be as specific and detailed as possible. At least 100 characters (several sentences) are required." For example, like the following screenshot:
 
 <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/feedbackformsample.png" alt="Sample feedback form" />
 
