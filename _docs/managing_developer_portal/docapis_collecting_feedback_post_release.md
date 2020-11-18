@@ -100,8 +100,7 @@ Remember, people usually give 30 seconds or less of time in providing feedback. 
 
 I also recommend adding some placeholder text that encourages users to be descriptive, such as "Enter your feedback here. Try to be as specific and detailed as possible. At least 100 characters (several sentences) are required."
 
-<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/a
-pi/feedbackformsample.png" alt="Sample feedback form" />
+<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/feedbackformsample.png" alt="Sample feedback form" />
 
 If you need metrics around feedback, you could quantify the number of comments received for each doc set, and then indicate what actions were taken. What percentage of the feedback was actionable, and how many tickets did you close related to doc feedback, etc.? How many tickets were from humans versus bots?
 
