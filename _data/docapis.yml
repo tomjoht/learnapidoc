@@ -405,6 +405,9 @@ folders:
   - title: Processes for collecting feedback post-release
     jurl: /docapis_collecting_feedback_post_release.html
 
+  - title: Processes for external contributors
+    jurl: /docapis_processes_for_external_contributors.html
+
 - title: "XII: API glossary and resources"
   jurl: /resources.html
   folderitems:
