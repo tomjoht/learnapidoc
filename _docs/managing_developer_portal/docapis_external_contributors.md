@@ -7,7 +7,6 @@ sidebar: docapis
 section: devportals
 path1: /docapis_managing_dev_portals.html
 last-modified: 2020-11-02
-published: false
 ---
 
 One of the main advantages of a version-control-based system, especially using open-source technologies, is the promise of collaboration. Not just collaboration with your immediate team, but scaling beyond your team to also include other contributors within your organization and even contributors from the community. The idea of crowdsourcing documentation like this, removing the burden from a small number of gate-keeping writers, has been appealing since the emergence of wikis and continues as a driving force behind docs-as-code implementations.
