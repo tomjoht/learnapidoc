@@ -95,13 +95,6 @@ Video 5 of 5:
 <p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/s3.us-west-1.wasabisys.com/idbwmedia.com/podcasts/raleighapidoc/apiworkshopvid5.mp3" type="audio/mpeg" /></audio></p>
 </div>
 
-Want all the audio combined into one massive file? Here it is:
-
-All audio combined:
-<div class="audioControls">
-<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/s3.us-west-1.wasabisys.com/idbwmedia.com/podcasts/raleighapidoc/apiworkshopvidall.mp3" type="audio/mpeg" /></audio></p>
-</div>
-
 ## More videos
 
 If you'd like to see more videos, see the following:
