@@ -47,13 +47,13 @@ Most companies make their information and services available through APIs to hel
 
 ## Which type of API is most common?
 
-As you browse APIs, you might be wondering which type of API is most common? Which types of APIs should you focus on? Among the web service APIs, [*The State of API 2019* report](https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf) from [Smartbear](https://smartbear.com/) surveyed more than 3,000 technology professionals and found that REST-OAS / Swagger was the most web service format used:
+As you browse APIs, you might be wondering which type of API is most common? Which types of APIs should you focus on? Among the web service APIs, [*The State of API 2019* report](https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf) from [Smartbear](https://smartbear.com/) surveyed more than 3,000 technology professionals and found that REST-OAS / Swagger was the most common web service used:
 
 {% include course_image.html url="https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf" size="medium" filename="webserviceapisurvey" ext_print="png" ext_web="png" alt="Popularity of web service APIs" caption="Popularity of web service APIs (<i>The State of API 2019</i>, p.20)" %}
 
 OAS stands for OpenAPI Specification, which is something I explore in-depth in [Introduction to the OpenAPI specification](pubapis_openapi_intro.html). The report even mentions some APIs not covered above &mdash; [JMS APIs](https://docs.oracle.com/javaee/6/tutorial/doc/bncdr.html), which are used with Java to send messages.
 
-As you can see, when it comes to APIs, one size/type does fit all. Developers will implement the type of API that best aligns with their scenario and requirements, just as there are different types of cars (sports cars, trucks, semi-trucks, sedans, hearses, etc.) for different trips, drivers, passengers, and roads.
+As you can see, when it comes to APIs, one size/type does not fit all. Developers will implement the type of API that best aligns with their scenario and requirements, just as there are different types of cars (sports cars, trucks, semi-trucks, sedans, hearses, etc.) for different trips, drivers, passengers, and roads.
 
 In this course, we'll be diving into REST APIs in depth. Remember that with REST APIs, you don't deliver a library of files to users. Instead, the users make requests for the resources on a web server, and the server returns responses containing the information. Both the system initiating the request and the system providing the response can be in any programming language, so long as they transmit the message via HTTP.
 
