@@ -408,6 +408,9 @@ folders:
   - title: Processes for external contributors
     jurl: /docapis_processes_for_external_contributors.html
 
+  - title: Processes for changing internal doc culture
+    jurl: /docapis_changing_internal_doc_culture.html
+    
 - title: "XII: API glossary and resources"
   jurl: /resources.html
   folderitems:
