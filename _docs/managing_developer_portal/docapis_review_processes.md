@@ -2,7 +2,7 @@
 title: Processes for reviewing documentation
 permalink: /docapis_review_processes.html
 course: "Documenting REST APIs"
-weight: 12.7
+weight: 12.6
 sidebar: docapis
 section: devportals
 path1: /docapis_managing_dev_portals.html

@@ -2,7 +2,7 @@
 title: Processes for collecting feedback post-release
 permalink: /docapis_collecting_feedback_post_release.html
 course: "Documenting REST APIs"
-weight: 12.9
+weight: 12.8
 sidebar: docapis
 section: devportals
 path1: /docapis_managing_dev_portals.html

@@ -2,7 +2,7 @@
 title: Documentation kickoff meeting and product demo
 permalink: /docapis_kickoff_meeting_agenda.html
 course: "Documenting REST APIs"
-weight: 12.6
+weight: 12.5
 sidebar: docapis
 section: devportals
 path1: /docapis_managing_dev_portals.html

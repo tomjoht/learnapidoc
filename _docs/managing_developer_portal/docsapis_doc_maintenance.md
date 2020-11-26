@@ -2,7 +2,7 @@
 title: Processes for maintaining existing documentation
 permalink: /docapis_doc_maintenance_processes.html
 course: "Documenting REST APIs"
-weight: 12.8
+weight: 12.7
 sidebar: docapis
 section: devportals
 path1: /docapis_managing_dev_portals.html
