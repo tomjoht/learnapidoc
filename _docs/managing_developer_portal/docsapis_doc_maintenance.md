@@ -22,6 +22,8 @@ If documentation isn't actively maintained, it rots (becomes Redundant, Outdated
 
 As more time passes, the amount of legacy documentation becomes more and more abundant. The rate of new documentation that tech writers create versus the amount of documentation the tech writers retire tends to be an uneven ratio: you create more than you retire. Most documentation requests that come in from product teams relate to new documentation, as everyone is focused on the shiny and new, the possibilities of a new feature, the excitement of a release, and so forth. Few want to take responsibility for documentation related to products or features that fizzled but are still used.
 
+{% include random_ad.html %}
+
 It's easy to get caught up in constantly creating new content. After all, this is what requests to the documentation team usually consist of &mdash; product managers say, *We're releasing a new product/feature, and we need docs!* Product teams rarely reach out to you to review two-year-old docs, or to update docs against support cases to see if better docs could have prevented the support efforts. Once you publish your docs, major content updates or overhauls are rare except with major product updates.
 
 Updating and maintaining existing content isn't sexy or exciting, but it's essential if you want to stay on top of your docs. When you look at your documentation repository and see hundreds of docs that look unfamiliar to you, that you can't vouch for (identifying owners, the last time it was reviewed, who worked on it, how accurate it is, etc.), this is unsettling.
@@ -31,6 +33,8 @@ Rather than stay heads down in always creating new content, doc teams should reg
 ## 1. Define priority docs
 
 First, identify which docs are a priority. If some products have been sunset or abandoned internally, don't waste too much time improving those docs. Just establishing which docs are a priority can help you with planning. You can identify which docs are a priority by looking at page views in your analytics. Additionally, you should have a sense of your organization's priorities that are independent of site traffic. When you know which docs are a priority, you can weight them higher in the maintenance tasks. Try to identify your top 5 documentation sets. This way, if other efforts have to be triaged, you can at least focus your attention where it matters.
+
+{% include random_ad2.html %}
 
 ## 2. Identify broken links
 
@@ -58,6 +62,8 @@ You might have some files in your repo that you can just delete. For example, su
 
 Note that I'm not recommending that you delete actively used content. Almost always, when you deprecate documentation, you add a banner announcing the deprecation and include a migration path. I'm instead encouraging you to think about the "deletion" part of the content life cycle. In Kristina Halvorson's definition of content strategy, Halvorson says, "Content strategy guides decisions about content throughout its lifecycle, from discovery to deletion." Think about that last stage in the content life cycle: *deletion*.
 
+{% include random_ad3.html %}
+
 Deleting content can be scary &mdash; *what if people complain about broken links? What if it turns out we need that content? Before removing it, shouldn't we get approval from all the product team members (who are no longer there)?*
 
 You know what? The great thing about managing content in Git is that it's nearly always retrievable. You can usually resurrect content that you've deleted. If you delete something and no one complains about its absence, you probably made a good choice.
@@ -75,6 +81,8 @@ After you add this *last reviewed* date to your docs, consider taking the bold s
 ## 9. Require content owners to periodically review docs
 
 Probably the most powerhouse technique you can do to keep docs updated is identify docs that haven't been reviewed for a long time and submit a ticket to the product team to review the content. As long as your "last reviewed" dates are accurate, you could create scripts to identify these pages at a regular cadence (e.g., yearly) and then automate notifications or tickets to content owners to complete reviews. This regular "baselining" is common with security teams and permission settings.
+
+{% include image_ad_right.html %}
 
 However, it would be easy for engineers or other reviewers, no doubt busy with other projects, to half-heartedly click through automated review notifications to confirm that the content is up-to-date. In contrast, it's much harder to ignore a human. A genuine outreach to a team to review their docs, followed by a meeting where you actually step page by page through content that the team owns, might be the only way to get attention from engineers.
 

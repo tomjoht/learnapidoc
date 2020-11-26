@@ -36,8 +36,6 @@ Previously, I didn't go into detail about more granular processes or the tactica
 
 In most writing classes, you learn to distinguish between higher-order concerns (e.g., organization, story) before lower-order concerns (e.g., grammar, word choice). The review process uses the same tiered approach. With long content, you want to first be sure that you have the big pieces in place. Draw up an outline of the steps and get the product team to agree on these large pieces and their order.
 
-{% include image_ad_right.html %}
-
 For example, suppose you identify about 12 steps for implementing a product, and the bulk of the docs are related to this implementation. Get buy-in and approval from the product team for the steps. If you have mini-outlines for each step, even better. In this outline review, the product team doesn't need to actually read the content. You can talk through the steps and explain the outline at a high level. Once you've nailed down these large pieces, start drafting out the details in each topic.
 
 {: .tip}
@@ -63,6 +61,8 @@ Also, note that Slack is trending as a way for teams to communicate. The [SmartB
 <a class="noCrossRef" href="https://smartbear.com/resources/ebooks/the-state-of-api-2020-report/"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/smartbearslack2020.png" alt="JIRA and Slack trending as preferred communication methods" /></a>
 
 You can read more insights about SmartBear's 2020 trends in this post: [SmartBear's 2020 API report finds 'Accurate and detailed documentation' to be second-most important characteristic of APIs](https://idratherbewriting.com/blog/smartBear-2020-state-of-api-docs-review/).
+
+{% include image_ad_right.html %}
 
 ## Meeting 3: Doc review with the product team
 

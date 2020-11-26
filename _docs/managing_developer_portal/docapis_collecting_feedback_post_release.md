@@ -18,6 +18,8 @@ Although you already [reviewed some of your docs](docapis_review_processes.html)
 
 When you're working on documentation prior to release, you have the full attention of the product team for reviewing and approving the docs. You have a group of product managers, engineers, and others at your present disposal. But when you receive feedback on docs post-release, that same group of people might no longer be present, or they might be hard to locate, especially if you're updating docs you didn't work on. You might have to assess feedback on products you know next to nothing about and reach out to people you've never interacted with before.
 
+{% include random_ad3.html %}
+
 When working with post-release feedback, you also have the challenge of sifting through feedback from people who might not even be your target audience. The feedback might be from customers rather than developers, for example. Or the feedback might be from people looking for a support lifeline when other channels fail them. Or it might just be spam.
 
 Finally, there's no built-in bandwidth to handle tasks like this, so you'll likely have to deal with these random requests on top of a full project load. Because of all these factors, handling feedback post-release presents many new challenges.
@@ -36,9 +38,13 @@ Although this side position is becoming more common, in tests that I've done, mo
 
 Again, follow standard web practices for placement of common elements.
 
+{% include random_ad2.html %}
+
 ## Requirements to submit text
 
 In addition to putting your feedback form in a highly visible place, if you can lower the friction required for users to enter and submit feedback, you'll get more feedback. If your feedback form requires developers to log in, or to proceed through a series of authentication screens, or do anything else requiring more than 5-10 seconds of their time, your engagement rate will go down.
+
+{% include image_ad_right.html %}
 
 The problem with reducing friction, however, is that the easier you make it to enter comments, the more spam you get. Without any spam prevention controls, you'll be overrun with spam comments in a short time. Try to find a good balance between controls that prevent spam but which don't challenge users too much. For example, you could implement reCAPTCHA or require some form of login (e.g., login with Google, GitHub, or Twitter), or require users to complete some special task to weed out bots. (Whatever you do, spam will usually find a way to slip through.)
 
@@ -85,6 +91,8 @@ Qualtrics.SurveyEngine.addOnload(function()
 This script assumes that the feedback URL has query strings added, such as `https://idratherbewriting.com/learnapidoc/docapis_collecting_feedback_post_release.html?page=docapis_collecting_feedback_post_release&location=bottom`. The script parses the query strings from the url and then sets variables `docPage` and `formLocation` for each query string. Then jQuery is used to assign those values to unique form elements on the page. You could also add CSS that hides these element where the values get assigned.
 
 (Yes, this is a hack, but if you need to workaround the http referrer restrictions, a technique like this might be necessary.)
+
+{% include random_ad.html %}
 
 ## Qualitative versus quantitative feedback
 

@@ -29,6 +29,8 @@ Poor documentation environments can be characterized by the following:
 
 * **Support for tooling is underfunded for the requirements.** You might need robust tools to provide the kind of experience people require (PDF, localization, gated docs, etc.), but the company might not want to fund any tooling resources, insisting that you use open-source tools instead, or not providing enough time to build out tooling you need.
 
+{% include random_ad.html %}
+
 Most tech writers are familiar with some of these aspects. I've written about these topics multiple times on my blog, especially in these two series:
 
 * [Reflecting seven years later about why we were laid off](https://idratherbewriting.com/blog/reflecting-seven-years-later-about-layoff-intro/)
@@ -36,9 +38,13 @@ Most tech writers are familiar with some of these aspects. I've written about th
 
 In the following sections, I'll explore processes to implement to change your documentation culture.
 
+{% include image_ad_right.html %}
+
 ## Can a company's doc culture be changed?
 
 The central question is whether a company's documentation culture be changed through efforts from the tech comm group. I believe change is possible, to an extent. You might not convert your CEO into a doc champion, but you can influence your environment and culture if you work hard at doing so. Especially if your company has a business reason that heavily depends on the customer experience, you have a shot at influencing upward.
+
+{% include random_ad2.html %}
 
 Among all processes described in this section, changing culture is the most difficult because it requires changing the attitudes and minds of others for which you have little control. It also requires a lot of marketing work that you might not have the bandwidth for. I also can't say that I've had a ton of success in this area, but I will share the strategies that have worked for me.
 
@@ -61,6 +67,8 @@ One of the most valuable assets at a company is deep customer knowledge. If you 
 ### 4. Move the needle in a noticeable way with doc quality
 
 Doc champions are converted to a pro-docs mentality through close experiences with documentation teams. I remember hearing a developer advocate petition and advocate for product teams to have us work on a specific product's documentation because of the way we turned around documentation for another product. If you can turn docs around in impressive ways, translating engineering-speak into real English, making the steps easy to follow and concrete, people will notice. You can't just fix grammar and punctuation &mdash; you have to actually move the quality needle in noticeable ways. For example, implement a [workflow map](/simplifying-complexity/macro-micro.html) to visualize a complex process.
+
+{% include random_ad3.html %}
 
 When you do improve docs in significant ways, others will start to petition for tech writers to play closer roles in creating the documentation, not just editing and publishing docs that product teams write. If you insist on high standards in docs, such as requiring teams to provide a sample app, testing out all the steps yourself and ensuring they work, adding troubleshooting topics, glossaries, search, etc., people will sense the value you're providing and start to champion the inclusion of docs as a requirement for each product release. I've had many experiences where product teams wrote some documentation, floated it to developer advocates, and the developer advocates told the product team to send it to the doc group to "polish." But by polish, they really meant fix the organization, structure, clarity, readability, and more. These developer advocates had learned what we could do with content and started insisting on it as a standard.
 
