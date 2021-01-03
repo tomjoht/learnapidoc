@@ -41,9 +41,9 @@ You can create a local web server running on your computer through [Python's Sim
     ```
     (If your Command Prompt doesn't recognize `python`, then you probably need to add Python to your PATH. Instructions for doing that are outside the scope of this tutorial.)
 
-5.  Copy the `http://0.0.0.0:8000/` path and paste it into your address bar. This address lets you view the local web server.
+5.  Go to `http://localhost:8000/` in your address bar. This address lets you view the local web server.
 
-    By default, web servers default to the `index.html` file in the directory, so it will show the Swagger UI file automatically. If the browser doesn't direct to `index.html`, add it manually: `http://0.0.0.0:8000//index.html`.
+    By default, web servers default to the `index.html` file in the directory, so it will show the Swagger UI file automatically. If the browser doesn't direct to `index.html`, add it manually: `http://localhost:8000/index.html`.
 
     To stop the server, press **Ctrl+C** in your command prompt. If you closed your Command Prompt before stopping the service, type `ps`, find the process ID, then type `kill -9 <process ID>`.
 
@@ -74,9 +74,9 @@ You can create a local web server running on your computer through [Python's Sim
     ```
 
 
-3.  Copy the `http://0.0.0.0:8000/` path and paste it into your address bar. This address lets you view the local web server.
+3.  Go to `http://localhost:8000/` in your address bar. This address lets you view the local web server.
 
-    By default, web servers default to the `index.html` file in the directory, so it will show the Swagger UI file automatically. If the browser doesn't direct to `index.html`, add it manually: `http://0.0.0.0:8000//index.html`.
+    By default, web servers default to the `index.html` file in the directory, so it will show the Swagger UI file automatically. If the browser doesn't direct to `index.html`, add it manually: `http://localhost:8000/index.html`.
 
     To stop the server, press **Ctrl+C** in your command prompt. If you closed your Command Prompt before stopping the service, type `ps`, find the process ID, then type `kill -9 <process ID>`.
 
