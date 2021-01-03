@@ -410,7 +410,10 @@ folders:
 
   - title: Processes for changing internal doc culture
     jurl: /docapis_changing_internal_doc_culture.html
-    
+
+  - title: Measuring progress against documentation quality goals
+    jurl: /docapis_measuring_impact.html
+
 - title: "XII: API glossary and resources"
   jurl: /resources.html
   folderitems:
