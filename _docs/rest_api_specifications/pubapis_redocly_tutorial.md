@@ -491,7 +491,7 @@ Redocly has some unique offerings when it comes to organizing and working with c
 
     <a class="noCrossRef" href="https://docs.checkr.com/"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/checkrdocs.png" alt="Checkr documentation" /></a>
 
-If integrating your conceptual content like this doesn't work for your doc needs, Redocly offers a more robust option: [Redocly Developer Portals](#redocly-developer-portals). The Redocly Developer Portals use Gatsby as a static site generator to give you more complete control and customization for non-reference content. Gatsby also provides many pre-built React components, which makes building out other features of a developer portal, such as marketing landing pages and other UI elements in a console, much easier.
+If integrating your conceptual content like this doesn't work for your doc needs, Redocly offers a more robust option: [Redocly Developer Portals](https://redoc.ly/developer-portal/). The Redocly Developer Portals use Gatsby as a static site generator to give you more complete control and customization for non-reference content. Gatsby also provides many pre-built React components, which makes building out other features of a developer portal, such as marketing landing pages and other UI elements in a console, much easier.
 
 {% include random_ad2.html %}
 
