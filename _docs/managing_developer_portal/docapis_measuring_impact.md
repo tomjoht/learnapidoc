@@ -118,28 +118,50 @@ Fortunately, if we take the starting categories here (discoverability, accuracy,
 
 ## Other research
 
-Looking beyond research about information quality, there are a few other sources worth mentioning. First, Pronovix holds regular [Developer Portal Awards](https://pronovix.com/blog/best-developer-portals-2020). Any time judgment is made about quality, those doing the judging must supply reasoning behind their judgements. See these articles from Pronovix describing best practices for developer portals:
+Looking beyond research about information quality, there are a few other sources worth mentioning. First, Pronovix, a company that specializes in creating developer portals for companies, holds regular [Developer Portal Awards](https://pronovix.com/blog/best-developer-portals-2020). As such, they provide general reasons why they rate some developer portals higher than others. For example, in [What is the MVP for a Developer Portal?](https://pronovix.com/blog/what-mvp-developer-portal), they write,
+
+> We compiled a first list of questions that provides users with the information they might need while working with your API product:
+>
+> * What is this API?
+> * How do I get started with this API?
+> * What do I need to understand about this API?
+> * How do I get X done with this API?
+> * Do I know all the details of this API?
+> * How do I use your API in Y?
+> * Is somebody still working on this API?
+> * Where do I go when I have a problem with this API?
+> * How do I get access to this API?
+> * Can I afford this API?
+> * Can I trust this API?
+
+While some details might apply more than others, these are all good questions that one would expect documentation (or a developer portal) to cover. See these articles from Pronovix describing more best practices for developer portals:
 
 * [What goes into an award winning developer portal?](https://pronovix.com/blog/what-goes-award-winning-developer-portal)
 * [How to Improve Developer Adoption and Onboarding](https://pronovix.com/blog/how-improve-developer-adoption-and-onboarding)
 * [The Best Developer Portals of 2020](https://pronovix.com/blog/best-developer-portals-2020)
-* [What is the MVP for a Developer Portal?](https://pronovix.com/blog/what-mvp-developer-portal)
+*
 
-Keep in mind that Pronovix's focus is on developer portals, not standalone API documentation sites (they [explain the difference here](https://pronovix.com/blog/what-difference-between-api-documentation-and-developer-portal). However, most of the topics overlap. Unlike scholarly research, Pronovix looks for best practices and common patterns that make sense, like API explorers for interactivity, the ability to scan and manipulate reference material, using a site design that inspires trust, defining clear use cases for the API, providing code samples in multiple languages, and more.
+Keep in mind that Pronovix's focus is on developer portals, not standalone API documentation sites (they [explain the difference here](https://pronovix.com/blog/what-difference-between-api-documentation-and-developer-portal)). As such, topics such as service status pages are encouraged. However, most of the topics overlap.
+
+Also, unlike scholarly research, Pronovix looks for best practices and common patterns that make sense, like API explorers for interactivity, the ability to scan and locate reference material, site designs that inspires trust, clear use cases for the API, providing code samples in multiple languages, and more. Pronovix doesn't try to justify their criteria based on research or from studies that objectively verify and rank these characteristics. Instead, they tend to embrace industry standards and best practices that are generally accepted by practitioners.
 
 ## Standards specifications
 
-Another place to look at information quality would be standards such as the ASD-STE-1000 (Aerospace and Defense Industries Association of Europe, Simplified Technical English). The STE-1000 standard was developed by the aerospace and defense industries to simplify technical documentation. STE consists of a dictionary of about 900 allowed words and a set of 65 writing rules. Together, this controlled language is formalized into a specification called ASD-STE100, which many regulatory industries must follow to ensure clear, consistent content.
+Another place to look at information quality would be standards such as the [ASD-STE100](http://www.asd-ste100.org/).  The ASD-STE100 standard was developed by the Aerospace and Defense Industries Association (ASD) to encourage simplified technical English (STE). STE consists of a dictionary of about 900 allowed words and a set of 65 writing rules. Together, this controlled language is formalized into a specification called ASD-STE100, which many regulatory industries must follow to ensure clear, consistent content.
 
 In addition to a controlled vocabulary, the writing rules require you to use certain verb choices. For example, you generally keep sentences short, prefer active tense over gerunds, limit sentences to a single topic, avoid passive voice, and more. There are more than 65 writing rules. Usually you implement a language checker such as [HyperText](https://idratherbewriting.com/2017/01/25/hyperste-simplified-technical-english-asd-ste100/) to check your content for adherence to the rules.
 
-The result of combining a controlled vocabulary with this grammar yields content that is clear and easy to follow, especially for non-native speakers.
+The result of combining a controlled vocabulary with this grammar yields content that is clear and easy to follow, especially for non-native speakers. Here's a sample from their Procedures section:
+
+<a href="http://www.asd-ste100.org/"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/asdprocedures.png" alt="ASD-STE100 procedures" /></a>
+
+Keeping instructional commands to a single command per step seems like a good practice. However, many of the guidelines seem more appropriate to a style guide because they are so granular and language-specific. But depending on your needs, you might adopt more of these principles into your criteria.
 
 ## Other sources for quality
 
 Many other sources can inform documentation quality. For example, the [Good Docs project](https://thegooddocsproject.dev/) aims to create templates that incorporate best practices. For example, by using the [Overview template](https://github.com/thegooddocsproject/templates/blob/v0.1/api-overview/about-overview.md), you'll automatically address the various questions and topics needed here. The project has templates for an overview, quickstart, reference, discussion, how-to, logging, reference, tutorial, and more.
 
-Another place to look for information quality is the DITA writing specification. This specification enforces best practices (a debatable point) through XML. For example, by following the elements for a concept or task, you'll include a `shortdesc` element that provides a high-level summary of the topic. This information can be re-used elsewhere.
+Another place to look for information quality is the DITA writing specification. This specification enforces best practices (a debatable point) through XML. For example, by following the elements for a concept or task, you'll include a [`shortdesc`](https://docs.oasis-open.org/dita/v1.2/cd03/spec/langref/shortdesc.html) element that provides a high-level summary of the topic. This information can be re-used elsewhere.
 
 Additionally, DITA has various topic types (task, concept, reference, troubleshooting, glossary) that provide elements to guide you more successfully in these information areas. The whole idea of information typing is that different kinds of information follows specific patterns or types that one should follow. DITA builds on information typing theories that share commonality with Information mapping and other approaches.
 
@@ -269,6 +291,8 @@ input[type=checkbox] {
 
 {{cb}} The [overview](docapis_doc_overview.html) provides a high-level overview of the main uses cases or business objectives of the product. {{cb-end}}
 
+{{cb}} Details about how to get access, permissions, and authorization to use the API are provided. If there are different roles and permission levels that correspond to varying capabilities, these are noted and the capabilities/roles carry through to the individual API reference. For example, if only admin roles can use a certain API, it's noted in the API reference and in any places that use the API. {{cb-end}}
+
 {{cb}} If the product has a code repository, the repo contains a Readme file that provides information similar to the overview, including information on how to contribute if applicable. {{cb-end}}
 
 {{cb}} Each task has a "Prerequisites" section that explains knowledge requirements, tool requirements, essential concepts, etc., necessary for completing the task. {{cb-end}}
@@ -288,6 +312,8 @@ input[type=checkbox] {
 {{cb}} A [getting-started tutorial](docapis_doc_getting_started_section.html) is provided for users to get started in an end-to-end way with the product, producing a sample output that builds their confidence. {{cb-end}}
 
 {{cb}} [Code samples](docapis_codesamples_bestpractices.html) (including [sample apps](docapis_sample_apps.html) if applicable) are provided as a reference implementation for the product that users can consult alongside the documentation. {{cb-end}}
+
+{{cb}} Code samples are appropriately commented, either with inline comments, comments that preface or follow the sample, or both. Long code samples with no explanation aren't just dropped in.{{cb-end}}
 
 {{cb}} For complex concepts, examples are provided to help clarify the concepts. {{cb-end}}
 
