@@ -116,11 +116,40 @@ If you're the target audience using the docs and have just finished the task, th
 
 Fortunately, if we take the starting categories here (discoverability, accuracy, relevance, clarity), and we are confident that these attributes align with user priorities, then we only need to define how these attributes can be implemented in documentation in more specific, concrete, and actionable ways.
 
+## Other research
+
+Looking beyond research about information quality, there are a few other sources worth mentioning. First, Pronovix holds regular [Developer Portal Awards](https://pronovix.com/blog/best-developer-portals-2020). Any time judgment is made about quality, those doing the judging must supply reasoning behind their judgements. See these articles from Pronovix describing best practices for developer portals:
+
+* [What goes into an award winning developer portal?](https://pronovix.com/blog/what-goes-award-winning-developer-portal)
+* [How to Improve Developer Adoption and Onboarding](https://pronovix.com/blog/how-improve-developer-adoption-and-onboarding)
+* [The Best Developer Portals of 2020](https://pronovix.com/blog/best-developer-portals-2020)
+* [What is the MVP for a Developer Portal?](https://pronovix.com/blog/what-mvp-developer-portal)
+
+Keep in mind that Pronovix's focus is on developer portals, not standalone API documentation sites (they [explain the difference here](https://pronovix.com/blog/what-difference-between-api-documentation-and-developer-portal). However, most of the topics overlap. Unlike scholarly research, Pronovix looks for best practices and common patterns that make sense, like API explorers for interactivity, the ability to scan and manipulate reference material, using a site design that inspires trust, defining clear use cases for the API, providing code samples in multiple languages, and more.
+
+## Standards specifications
+
+Another place to look at information quality would be standards such as the ASD-STE-1000 (Aerospace and Defense Industries Association of Europe, Simplified Technical English). The STE-1000 standard was developed by the aerospace and defense industries to simplify technical documentation. STE consists of a dictionary of about 900 allowed words and a set of 65 writing rules. Together, this controlled language is formalized into a specification called ASD-STE100, which many regulatory industries must follow to ensure clear, consistent content.
+
+In addition to a controlled vocabulary, the writing rules require you to use certain verb choices. For example, you generally keep sentences short, prefer active tense over gerunds, limit sentences to a single topic, avoid passive voice, and more. There are more than 65 writing rules. Usually you implement a language checker such as [HyperText](https://idratherbewriting.com/2017/01/25/hyperste-simplified-technical-english-asd-ste100/) to check your content for adherence to the rules.
+
+The result of combining a controlled vocabulary with this grammar yields content that is clear and easy to follow, especially for non-native speakers.
+
+## Other sources for quality
+
+Many other sources can inform documentation quality. For example, the [Good Docs project](https://thegooddocsproject.dev/) aims to create templates that incorporate best practices. For example, by using the [Overview template](https://github.com/thegooddocsproject/templates/blob/v0.1/api-overview/about-overview.md), you'll automatically address the various questions and topics needed here. The project has templates for an overview, quickstart, reference, discussion, how-to, logging, reference, tutorial, and more.
+
+Another place to look for information quality is the DITA writing specification. This specification enforces best practices (a debatable point) through XML. For example, by following the elements for a concept or task, you'll include a `shortdesc` element that provides a high-level summary of the topic. This information can be re-used elsewhere.
+
+Additionally, DITA has various topic types (task, concept, reference, troubleshooting, glossary) that provide elements to guide you more successfully in these information areas. The whole idea of information typing is that different kinds of information follows specific patterns or types that one should follow. DITA builds on information typing theories that share commonality with Information mapping and other approaches.
+
+In other words, understanding the right way to write different types of content (for optimal impact of that content type) has been *the* topic of tech comm since its inception.
+
 ## An extremely detailed rubric
 
-Instead of looking at docs against these general criteria, I propose that we create a series of check boxes that, if fulfilled, should lead to all the more high-level categories of the rubric. Each of these check boxes must be specific, actionable, and unambiguous tasks you can take to implement in your documentation without relying on user surveys.
+Now that I've set some of the background and context for this topic, let's move into a more practical realm. As I indicated earlier, my goal is to create a practical guide for measuring quality. Instead of looking at docs against a list of general, abstract criteria, I propose that we create a series of check boxes that, if fulfilled, should lead to all the more high-level categories of the rubric. Each of these check boxes must be specific, actionable, and unambiguous tasks you can take to implement in your documentation without relying on user surveys.
 
-To get a better sense of what I'm driving at, let's jump right into these details and continue the discussion afterwards. Here are 50 ways that the more general attributes of discoverability, accuracy, relevance, and clarity might be implemented in developer documentation. The criteria are in no particular order or weighting (more on that later).
+To get a better sense of what I'm driving at, let's jump right into these details and continue the discussion afterwards. Here are myriad ways that the more general attributes of discoverability, accuracy, relevance, and clarity might be implemented in developer documentation. The criteria are in no particular order or weighting (more on that later). Also, the list shouldn't be seen as definitive or necessarily a foolproof recipe for perfect documentation. Instead, these are criteria that will likely lead to a higher user satisfaction rating.
 
 <style>
 li.checkboxListType {
@@ -148,7 +177,9 @@ input[type=checkbox] {
 
 {{cb}} There are entry points into the documentation in popular sites where users look for answers (for example, question-and-answer sites like Stack Overflow, knowledge bases, or other resources apart from a standard Internet search). {{cb-end}}
 
-{{cb}} The sidebar navigation table of contents lets users take in a sense of the whole while also allowing users to expand more details as desired. {{cb-end}}
+{{cb}} If the product has a code repository similar to features on GitHub, this repository is actively monitored when users log issues or submit pull requests. {{cb-end}}
+
+{{cb}} The sidebar navigation table of contents lets users take in a sense of the whole while also allowing users to expand more details as desired. The sidebar isn't a massive list of seemingly endless scrolling and expansion but divides up doc sets into logical groups, like books. {{cb-end}}
 
 {{cb}} Each topic consolidates all necessary information about the topic in a standalone, modular way (rather than fragmenting the information into many small topics that require the user to bounce around, losing context). {{cb-end}}
 
@@ -164,6 +195,11 @@ input[type=checkbox] {
 
 {{cb}} Content is organized primarily by task from a user perspective rather than solely by doc type (that is, the content follows task-based or user-based documentation organization schemes rather than a product-based organization or a doc-type-based organization). The exception is that reference content often consolidated on its own in an auto-generated output. {{cb-end}}
 
+{{cb}} The content can be read on a mobile device in a usable way. {{cb-end}}
+
+{{cb}} Reference material that has a large number of endpoints, functions, commands, or other material provides mechanisms to expand, collapse, sort, or filter to allow the user to more easily go to the content. {{cb-end}}
+
+{{cb}} For dev portals with multiple documentation sets, there's a way to navigate from one doc set to another when these docs are related or make sense together. {{cb-end}}
 </ul>
 
 
@@ -195,7 +231,6 @@ input[type=checkbox] {
 
 </ul>
 
-
 ### Relevance
 
 <ul class="checkLists">
@@ -204,6 +239,8 @@ input[type=checkbox] {
 
 {{cb}} If there are pitfalls or other traps, gaps, and gotchas to avoid, these are noted in the documentation (even if relayed with a positive spin) rather than hidden from the user. A section called "Known Limitations" often contains this information. The documentation doesn't lie or mislead the user but rather is transparent, honest, and helpful even if it means exposing the product's warts. {{cb-end}}
 
+{{cb}} If there are [limitations and thresholds](/learnapidoc/docapis_rate_limiting_and_thresholds.html) (e.g., max number of API calls, max file sizes, max string lengths, max/min parameter values), these limitations are called out in the docs.
+
 {{cb}} Documentation is available at the same time the feature is released or made available to users, not after the fact. {{cb-end}}
 
 {{cb}} [Error messages](docapis_doc_status_codes.html) that users can encounter are documented and discoverable through search. {{cb-end}}
@@ -211,6 +248,14 @@ input[type=checkbox] {
 {{cb}} If a task requires certain permissions, roles, or versions, or is only available in certain locales or on specific platforms, that information is noted clearly in the topic. This is similar to the Prerequisites section in a topic but focuses on higher-level requirements rather than organizational context for the information. For example, the topic might have a label that says "Admin role only," or it might have tabs that split the content into Mac, Windows, and Linux." {{cb-end}}
 
 {{cb}} The documentation has a troubleshooting section (either standalone or included within the section/topic it relates to) that provides information on how to solve common problems and generally includes an emphasis on where things might go wrong and how to fix them. In other words, the documentation doesn't describe the happy path only. {{cb-end}}
+
+{{cb}} Code samples are available in the user's target language. This might mean providing multiple code samples organized in tabs. {{cb-end}}
+
+{{cb}} Options for support are provided, even if the support merely involves posting to a peer-monitored forum. {{cb-end}}
+
+{{cb}} A feedback option is included in the docs so that the authors can stay attuned to what information readers might want to communicate to them. {{cb-end}}
+
+{{cb}} The code in the doc site offers interactivity that allows users to interact with the functions, API calls, or other calls, often using their custom data. Typically, with REST APIs, an API Explorer allows users to try out requests using their own data. {{cb-end}}
 
 </ul>
 
@@ -221,6 +266,10 @@ input[type=checkbox] {
 {{cb}} The [overview](docapis_doc_overview.html) explains the big picture and describes the problem that the tool or service addresses. {{cb-end}}
 
 {{cb}} The [overview](docapis_doc_overview.html) has diagram of all components and how they interact. {{cb-end}}
+
+{{cb}} The [overview](docapis_doc_overview.html) provides a high-level overview of the main uses cases or business objectives of the product. {{cb-end}}
+
+{{cb}} If the product has a code repository, the repo contains a Readme file that provides information similar to the overview, including information on how to contribute if applicable. {{cb-end}}
 
 {{cb}} Each task has a "Prerequisites" section that explains knowledge requirements, tool requirements, essential concepts, etc., necessary for completing the task. {{cb-end}}
 
@@ -259,29 +308,37 @@ input[type=checkbox] {
 {{cb}} The language uses active voice (where warranted) with clear subjects and verbs positioned closely together. {{cb-end}}
 
 {{cb}} Sentences are grammatically correct and read well, without distracting the user or calling attention to the language. {{cb-end}}
+
+{{cb}} Individual sentences have one main idea. Paragraphs have one main point. {{cb-end}}
 </ul>
 
 ## Analysis and quantitative metrics
 
 It's hard to imagine that documentation that checks all of these boxes wouldn't also score highly with user satisfaction surveys. Can you honestly see any documentation that legitimately satisfies all of this criteria as falling short with users? And yet, to achieve the level of information quality, we didn't have to rely on constant user surveys to gather feedback. By identifying best practices for content design (specifically for API/developer documentation), we're able to increase the documentation quality in more self-sufficient, self-directed ways.
 
-Now that we have a set of criteria, we can start to quantitatively measure documentation. To allow for some flexibility with each criteria, you might give documentation 0, 1, or 2 points for each criteria. For example, if the overview exists and briefly describes the big picture but doesn't really describe the problem the tool solves, consider giving this a 1 instead of 2. If the overview is poor or non-existent, give it a 0.
+When designers start creating products, they don't rely solely on user feedback to design products. Instead, they start with [universal principles of design](/ucd-introduction/#universal-principles-of-design) to follow commonly established design practices and patterns. Surveys and user feedback confirm the design, but designers don't start from scratch. Same with docs &mdash; we already have a rich body of best practices and design patterns for creating content.
 
-The documentation can score a total of 100 points. You can then calculate the percentage accordingly. If you add up the score and find that the documentation scores 70/100, then this is 70%, or a C-. By assigning documentation a grade that aligns with school grades, it provides a familiar assessment of the documentation quality.
+Now that we have a set of criteria, we can start to quantitatively measure documentation. To allow for some flexibility with each criteria, you might give documentation 0, 1, or 2 points for each criteria. For example, if the documentation half-implements a principle, this is a way to give some credit without giving full credit.
+
+It doesn't matter how many criteria you use. Some points will be more applicable than others, and by no means am I suggesting a universal list of golden attributes that serve all types of information! In fact, I'm specifically focusing on developer docs (which is a category that hasn't gotten much attention among tech comm scholars). You might decide to add your own criteria, remove some of my points, or make other modifications.
+
+Based on how many criteria you have and how you decide to score things, you'll have a total number of possible points. You can then calculate the percentage accordingly. If you add up the score and find that the documentation scores 40/75, then this is 66%, or a D. By assigning documentation a grade that aligns with school grades, it provides a familiar assessment of the documentation quality.
 
 Taking the metrics one step further, you could give your documentation a grade point average by calculating the average of all the individual grades. For example, suppose you have 10 sets of documentation for 10 different products. The cumulative score would simply be the average. This could give you your documentation GPA.
 
 Granted, there are some assumptions here. Not all categories are equally important. This was one of the main goals of Strimling's research &mdash; to identify what matters most to users, not to writers. Users can probably overcome issues with readability as long as the content is accurate. Outdated content is probably next to worthless, no matter how much sample code it might contain.
 
-In my weighting, everything has a possible score of 2 points without regards to the criteria's importance (however, the four main categories align with what is important to users). I have omitted weighting within each category because it's too difficult and varies too much, but you could implement a more sophisticated weighting system as long as the weighting leads to the same total.
+In my weighting, everything has the same potential number of points without regards to the criteria's importance. I have omitted variable weighting within each category because it's too difficult and varies too much by product/domain/audience, but you could implement a more sophisticated weighting system as long as the weighting leads to the same total.
 
-It's nearly impossible to impose an objective weight across each criteria because while a readability category such as "Sentences are grammatically correct and read well, without distracting the user or calling attention to the language" might seem relatively unimportant, if the content is written by a non-native speaker and is extremely hard to follow or understand, this can be just as jarring as a non-functioning code example. There are degrees to which each of these criteria can be so poorly implemented or omitted that it takes on a larger weighting. Passive voice might not be problematic in places, but convert the entire document into passive voice and see how usable it is.
+Also, I have omitted variable weighting because I think it's nearly impossible to impose an objective weight across each criteria. While a readability category such as "Sentences are grammatically correct and read well, without distracting the user or calling attention to the language" might seem relatively unimportant, if the content is written by a non-native speaker and is extremely hard to follow or understand, this can be just as jarring as a non-functioning code example. There are degrees to which each of these criteria can be so poorly implemented or omitted that it takes on a larger weighting. Passive voice might not be problematic in places, but convert the entire document into passive voice and see how usable it is. Or write a beautiful flowing document with amazing clarity, yet get the code sample wrong, and the user experience tanks.
 
-## Conclusion
+## Measuring progress
 
-As you work on improving documentation, you could quantitatively say that you improved the documentation from a score of 42% to 75%, or something similar. Of course, nothing speaks so clearly as corresponding user satisfaction surveys that confirm the improvements, and I would definitely recommend the surveys as a way to confirm the rubric. But at least this rubric provides a more action-oriented way of addressing more fuzzy issues that users might report in a survey (e.g., docs are incomplete, confusing), and it provides a quantitative metric for measurement.
+As you work on improving documentation, you could quantitatively say that you improved the documentation from a score of 42% to 75%, or something similar. For this quantitative progress to make sense, you need to use a consistent set of criteria applied in a similar way across docs.
 
-My goal here was to find a way to assess documentation quality without relying solely on surveys, and to pin down the criteria for developer docs to a list of actionable, easy-to-understand criteria. I recognize that my list has no official research backing or data to support it &mdash; instead, these best practices come from my years in the industry and from best practices that I have observed within the realm of developer documentation.
+Also, keep in mind that adding user satisfaction surveys to corroborate the improvements would be a good idea. But even without the confirmation, at least this rubric provides a more action-oriented way of addressing more fuzzy issues that users might report in a survey (e.g., docs are incomplete, confusing), and it provides a quantitative metric for measurement. If you're an editor, this list lets you audit your documentation to assess its quality.
+
+My goal here was to find a way to assess documentation quality without relying solely on surveys, and to pin down the criteria for developer docs to a list of actionable, easy-to-understand criteria. I recognize that my list has no official research backing or data to support it &mdash; instead, these best practices come from my experience in the industry and from best practices that I have observed within the realm of developer documentation.
 
 This is likely the problem with my approach: who's to say that documentation needs each of these criteria to succeed? It's possible that documentation might still be discoverable, accurate, relevant, and clear without many of these more concrete components, which would seemingly invalidate the approach here. Some will object these criteria are just random requirements from Tom's head without any grounding in reality. I don't have any user-based research to say that docs should be this way, that they should have an overview, that reference material should follow a consistent structure, that tasks should be detailed in steps, or that error messages should be described, etc. As such, critics could dismiss a documentation's "score" as being meaningless, relying only on user feedback for their evaluation of docs.
 
