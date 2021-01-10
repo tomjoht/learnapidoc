@@ -1,5 +1,5 @@
 ---
-title: Measuring progress against documentation quality goals -- a practical set of criteria to evaluate documentation
+title: Measuring progress against documentation quality goals -- a practical checklist to evaluate documentation
 permalink: /docapis_measuring_impact.html
 course: "Documenting REST APIs"
 weight: 12.92
@@ -54,11 +54,11 @@ Let's say you do have access to users, another challenge with surveys is how to 
 
 ### Users are sometimes unreliable
 
-Finally, another problem with surveys is with audience unreliability. We base the value of our docs around the user's perspective, but what if users are unreliable? There's a lot of variation, subjectivity, and unreliability with survey responses. Sometimes people use docs as a scapegoat for other issues related to poor product design, company dissatisfaction, or other issues. Other times they might respond so hastily that their responses are cryptic and vague.
-
-Often when I'm taking a survey, I base my responses on one part of the product or docs that I've been using, not on the whole. One bad topic can taint the user's response of the whole, distorting the quality measure for the docs.
+Finally, another problem with surveys is with audience unreliability. We base the value of our docs around the user's perspective, but what if users are unreliable or unhelpful? There's a lot of variation, subjectivity, and unreliability with survey responses. Sometimes people use docs as a scapegoat for other issues related to poor product design, company dissatisfaction, or other issues. Often when I'm taking a survey, I base my responses on one part of the product or docs that I've been using, not on the whole. One bad topic can taint the user's response of the whole, distorting the quality measure for the docs.
 
 Additionally, people who respond negatively in satisfaction surveys might not be your target audience. You might have been writing for the 80% of your audience already familiar with a certain framework, but your survey might include someone new to the framework who found the docs worthless.
+
+Other times users might respond so hastily that their responses are cryptic and vague. Or a user might complain that the docs are confusing, but that doesn't tell the writer how to fix the issue. A user might provide general feedback, saying that the docs felt like they needed polish, or that they had trouble understanding/following them, or that they seemed incomplete. But without more specifics, this feedback isn't all that actionable.
 
 ### What can replace surveys?
 
@@ -68,7 +68,7 @@ Rather than sink too much time and energy into surveys as the only way to measur
 
 ## Rubrics
 
-Rubrics are a scoring matrix (or framework) you use to evaluate and score content based on various criteria. If documentation fulfills the criteria of the rubric, it's likely that the documentation is high quality and would rate well in user satisfaction surveys. If highly rated user satisfaction surveys don't follow from fulfilling the rubric's criteria, the rubric is likely misguided.
+Rubrics are a scoring matrix (or framework, or simply a quality checklist) you use to evaluate and score content based on various criteria. If documentation fulfills the criteria of the rubric, it's likely that the documentation is high quality and would rate well in user satisfaction surveys. If highly rated user satisfaction surveys don't follow from fulfilling the rubric's criteria, the rubric is likely misguided.
 
 Many teachers use rubrics when grading student essays (e.g., a category for language, organization, reasoning, etc.). Rubrics give teachers a more objective framework of established criteria to assess and score content. For students, rubrics hold the promise of simplifying and demystifying the grading process. Rubrics can give students a clearer idea of what teachers are looking for, and why they earned a B instead of an A, for example.
 
@@ -136,7 +136,7 @@ understand?
 
 Similar to Wang and Strong's user-based DQ framework, these criteria aren't priorities from the writer but rather from users. Strimling says that in the interactions with users, you can assess documentation by asking them these questions.
 
-## The problem with abstracts
+## The problem with abstract definitions
 
 These four criteria seem like a solid way to evaluate documentation if you have a way to frequently interact with your users. But even if you could regularly survey your users, these abstract categories don't provide details about *how* you might go about making the information more clear, relevant, accurate, and findable.
 
@@ -150,7 +150,7 @@ Fortunately, if we take the starting categories here (accessibility, accuracy, r
 
 ## Other research
 
-Before jumping into the criteria, let's survey the information quality landscape a bit more, as there are a few other sources worth mentioning. First, Pronovix, a company that specializes in creating developer portals, holds regular [Developer Portal Awards](https://pronovix.com/blog/best-developer-portals-2020). As such, they provide general reasons why they rate some developer portals higher than others. For example, in [What is the MVP for a Developer Portal?](https://pronovix.com/blog/what-mvp-developer-portal), they write,
+Before jumping into the criteria, let's survey the information quality landscape a bit more, as there are a few other sources worth mentioning. First, Pronovix, a company that specializes in creating developer portals, holds regular [Developer Portal Awards](https://pronovix.com/blog/best-developer-portals-2020). As such, they provide general reasons why they rate some developer portals higher than others. For example, in [What is the MVP for a Developer Portal?](https://pronovix.com/blog/what-mvp-developer-portal), they write:
 
 > We compiled a first list of questions that provides users with the information they might need while working with your API product:
 >
@@ -166,18 +166,42 @@ Before jumping into the criteria, let's survey the information quality landscape
 > * Can I afford this API?
 > * Can I trust this API?
 
-When a user says the documentation is "unclear" or lacks "relevance," it's probably because the documentation does not address some of these questions. This is what I mean by specifying tactics for how to make documentation clear without solely relying on survey feedback.
+When a user says the documentation is "unclear" or lacks "relevance," it's probably because the documentation does not address some of these questions. This is what I mean by specifying specific checklists for how to make documentation clear without solely relying on survey feedback.
 
-These bullet points are all good questions that one would expect documentation (or a developer portal) to cover. See these articles from Pronovix describing more best practices for developer portals:
+These bullet points are all good questions that one would expect documentation (or a developer portal) to cover. See these articles from Pronovix describing more best practices for documentation and developer portals:
 
 * [What goes into an award winning developer portal?](https://pronovix.com/blog/what-goes-award-winning-developer-portal)
 * [How to Improve Developer Adoption and Onboarding](https://pronovix.com/blog/how-improve-developer-adoption-and-onboarding)
 * [The Best Developer Portals of 2020](https://pronovix.com/blog/best-developer-portals-2020)
 
-
-Keep in mind that Pronovix's focus is on developer portals, not standalone API documentation sites (they [explain the difference here](https://pronovix.com/blog/what-difference-between-api-documentation-and-developer-portal)). As such, topics such as service status pages are encouraged. However, most of the topics overlap.
+Keep in mind that Pronovix's focus is on developer portals, not standalone API documentation sites (they [explain the difference here](https://pronovix.com/blog/what-difference-between-api-documentation-and-developer-portal)). As such, they place more emphasis on how users interact both inside and outside the documentation, such as getting API keys from an admin portal, checking service status pages, participating in community, and more. Since most companies have multiple documentation sites, often aggregated in a portal, I think the emphasis on developer portals is actually more relevant.
 
 Also, unlike scholarly research, Pronovix looks for best practices and successful patterns, like API explorers for interactivity, the ability to scan and locate reference material, site designs that inspires trust, clear use cases for the API, providing code samples in multiple languages, making onboarding simple and easy, fostering community, and more. Pronovix doesn't try to justify their criteria based on research or from studies that objectively verify and rank these characteristics. Instead, they tend to embrace industry standards and best practices that are generally accepted by practitioners.
+
+## Technical writing handbooks
+
+Another place to find quality checklists and guidance for implementing general characteristics like clarity, relevance, accuracy, etc., is in technical writing handbooks. In [*Developing Quality Technical Information: A Handbook for Writers and Editors*](https://learning.oreilly.com/library/view/developing-quality-technical/9780133119046/app01.html), the authors provide a mountain of detail for best practices. They divide their guidelines into these categories and subcategories:
+
+* Easy to use
+  * Task orientation
+  * Accuracy
+  * Completeness
+
+* Easy to understand
+  * Clarity
+  * Concreteness
+  * Style
+
+* Easy to find
+  * Organization
+  * Retrievability
+  * Visual effectiveness
+
+You can score docs from 1 to 5 according to how well they fulfill each characteristic. The textbook has a lot of examples and detail about how to go about each of these qualities. There's even treatment of code samples. Here's the comprehensive quality checklist provided in the Appendix:
+
+<a class="noCrossRef" href="https://learning.oreilly.com/library/view/developing-quality-technical/9780133119046/app01.html"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/qualityguidelinestextbook2.png" alt="Quality checklist" /></a>
+
+Overall, there are 60 specific characteristics within the various categories. Why not simply adopt this quality checklist? It wouldn't be a bad approach, for sure. And the principles are so widely held that few would object them. But I wanted something even more concrete, actionable, and focused on API documentation and developer portals.
 
 ## Standards specifications
 
@@ -201,7 +225,7 @@ Another place to look for information quality is the DITA writing specification.
 
 Additionally, DITA has various topic types (task, concept, reference, troubleshooting, glossary) that provide elements to guide you more successfully in these information areas. The whole idea of information typing is that different kinds of information follows specific patterns that one should follow. DITA builds on information typing theories that share commonality with Information mapping and other approaches.
 
-Many other sources, such as [tech writing handbooks](https://www.amazon.com/Developing-Quality-Technical-Information-Handbook-dp-0133118975/dp/0133118975/ref=mt_other). Developing quality technical information: A handbook for writers and editors (3rd e), provide solid guidance on best practices. My intent is not to exhaustively survey docs on information quality. As Strimling's earlier research pointed out, most people generally agree on the high-level categories. I want to instead provide specifics on execution.
+In sum, my intent is not to exhaustively survey docs on information quality. As Strimling's earlier research pointed out, most people generally agree on the high-level categories. I want to instead provide specifics on implementation.
 
 ## An extremely detailed rubric
 
@@ -212,8 +236,10 @@ To get a better sense of what I'm driving at, let's jump right into these detail
 <style>
 li.checkboxListType {
   list-style-type: none;
-  margin-left: 22px;
-  text-indent: -31px;
+  margin-left: 25px;
+  text-indent: -28px;
+  margin-bottom: 20px;
+  line-height: 24px;
 }
 input[type=checkbox] {
   margin-right: 10px;
@@ -223,53 +249,55 @@ input[type=checkbox] {
 {% assign cb = "<li class='checkboxListType' markdown='span'><input type='checkbox'>" %}
 {% assign cb-end = "</li>" %}
 
+<div style="background-color: #F0EFF8; padding: 15px; margin-top: 30px; margin-bottom: 30px;" markdown="block">
+<div style="margin-top: 20px; margin-bottom: 20px; font-size:24px; text-align: center;">Developer documentation quality checklist</div>
+
 ### Findability
 
 <ul class="checkLists">
 
-{{cb}} The content is indexed in a general search engine and findable when you create searches with the product name and some key tasks. {{cb-end}}
+{{cb}} The content is indexed in a general search engine and findable when you create searches with the product name and some key tasks. In some cases, there are entry points into the documentation on popular sites where users look for answers (for example, question-and-answer sites like Stack Overflow, knowledge bases, or other resources apart from a standard Internet search){{cb-end}}
 
 {{cb}} The doc site has a site-specific search that lets users search within the documentation site itself. {{cb-end}}
 
 {{cb}} Where possible, links are provided to connect users from the task domain to the documentation domain. For example, on a user interface, a help button might appear next to a confusing section that helps the reader locate the documentation for that section. Or in error messages, a link or code might help users get more troubleshooting information. {{cb-end}}
 
-{{cb}} There are entry points into the documentation in popular sites where users look for answers (for example, question-and-answer sites like Stack Overflow, knowledge bases, or other resources apart from a standard Internet search). {{cb-end}}
-
 {{cb}} Each topic consolidates all necessary information about the topic in a standalone, modular way (rather than fragmenting the information into many small topics that require the user to bounce around, losing context). {{cb-end}}
 
-{{cb}} The content doesn't have an endless FAQ with information that should have been integrated into other logical places in the document. {{cb-end}}
+{{cb}} The content doesn't have an endless FAQ with information that should have been integrated into more logical places in the document. {{cb-end}}
 
 {{cb}} Topics that are highly related have a related links section on the page (or cross references in appropriate sections) linking the sections together. {{cb-end}}
 
 {{cb}} If content has multiple versions, the versions are called out visibly for the topic and a selector or link allows users to navigate to the other versions. {{cb-end}}
 
-{{cb}} When new features are released or significant updates are made to the documentation, these changes are called out in release notes. Changes aren't simply made on the sly without calling them out to users. {{cb-end}}
+{{cb}} When new features are released or significant updates are made to the documentation, these changes are called out in release notes. Changes aren't simply made on the sly without letting users know. {{cb-end}}
 
-{{cb}} Content is organized primarily by task from a user perspective rather than solely by doc type (that is, the content follows task-based or user-based documentation organization schemes rather than a product-based organization or a doc-type-based organization). The exception is that reference content often consolidated on its own in an auto-generated output. {{cb-end}}
+{{cb}} Content is organized primarily by task and from a user perspective rather than solely by doc type (that is, the content follows a task-based or user-based  organization scheme rather than a product-based organization). The exception is that reference content often consolidated on its own in an auto-generated output. {{cb-end}}
 
-{{cb}} Reference material that has a large number of endpoints, functions, commands, or other material provides mechanisms to expand, collapse, sort, or filter to allow the user to more easily go to the content. {{cb-end}}
+{{cb}} Reference material that has a large number of endpoints, functions, commands, or classes provides mechanisms to expand, collapse, sort, or filter the content. {{cb-end}}
 
-{{cb}} For companies with documentation for multiple products, there's a way to navigate from one doc set to another when these docs are related or make sense together. An information hierarchy organizes content within a larger context, even if it's just a list of links under various categories. This organizational hub for your docs is often experienced as a developer portal. {{cb-end}}
+{{cb}} Related doc sites are usually listed somewhere (at the bottom of the sidebar, or in top navigation) to help users navigate similar but separate docs {{cb-end}}
 
-{{cb}} The most popular topics are listed in one of the introductory sections, allowing users to easily find the most commonly used topics. {{cb-end}}
+{{cb}} If you have lots of documentation sets relevant to users, the documentation is organized in a developer portal. The information hierarchy in the developer portal organizes content within a larger context or story, even if it's just a list of links under various categories. This organizational hub provides a space for developers to find, explore, and consume content from multiple doc sets in a way that tells the story of your company's products. {{cb-end}}
+
+{{cb}} The most popular topics are highlighted in one of the introductory sections (such as the homepage), allowing users to easily find the most commonly used topics. {{cb-end}}
 </ul>
-
 
 ### Accuracy
 
 <ul class="checkLists">
 
-{{cb}} Content has been reviewed by a subject matter expert within the past year. Ideally, each topic should include metadata such as the last-reviewed timestamp, last author, and group the owns the content. {{cb-end}}
+{{cb}} Content has been reviewed by a subject matter expert within the past year. Ideally, each topic should include metadata such as the last-reviewed timestamp, last author, and the group that owns the content. {{cb-end}}
 
-{{cb}} The documentation provides a timestamp of the last time it was edited so that users can gauge how current the documentation is. {{cb-end}}
+{{cb}} The documentation provides a visible timestamp of the last time it was edited so that users can gauge how current the documentation is. {{cb-end}}
 
-{{cb}} If the content relies on third-party tools or services, the sections detailing the third-party tools or services are checked yearly to ensure the third-party tools haven't evolved or changed, making the documentation for the primary tool or service out of date. {{cb-end}}
+{{cb}} If the content relies on third-party tools or services, the sections detailing the third-party tools or services are checked yearly to ensure the third-party tools haven't evolved or changed. {{cb-end}}
 
 {{cb}} The steps in the tasks accurately lead to the results promised by the task, without missing any details. For example, if the instructions say to click a button name, the button is named the same way in the interface. If the instructions say to use a class, the class is spelled as it appears in the code library, etc. {{cb-end}}
 
-{{cb}} Information isn't repeated in confusing, redundant, or inconsistent ways. For example, the documentation doesn't explain how to do a task one way in Topic A but then a different way in topic B. If content is re-used, the re-use is usually single sourced to reduce inconsistency. {{cb-end}}
+{{cb}} Information isn't repeated in confusing, redundant, or inconsistent ways. For example, the documentation doesn't explain how to do a task one way in Topic A but then a different way in Topic B. If content is re-used, the re-use is usually single sourced to reduce inconsistency. {{cb-end}}
 
-{{cb}} Screenshots and other visuals are up to date with the state of the interface. {{cb-end}}
+{{cb}} Screenshots and other visuals are up to date with the state of the interface (if there is one). {{cb-end}}
 
 {{cb}} Links point to correct pages or are appropriately handled by redirects to equivalent pages. {{cb-end}}
 
@@ -277,7 +305,7 @@ input[type=checkbox] {
 
 {{cb}} Code samples that can be copy and pasted actually work. {{cb-end}}
 
-{{cb}} Related doc sites are usually listed somewhere (at the bottom of the sidebar) to help users navigate similar but separate docs {{cb-end}}
+{{cb}} Code in sample apps matches the code described in the documentation. The sample app hasn't evolved in ways that no longer match the documentation. {{cb-end}}
 
 </ul>
 
@@ -287,17 +315,17 @@ input[type=checkbox] {
 
 {{cb}} The documentation doesn't just provide reference information (e.g., auto-generated API documentation) but also explains how to use the API with tutorials guiding users through common use cases and journeys. The content should address the *most common* use cases intended for the product. (Fringe use cases don't need to be documented because too much information can dilute the emphasis on the core journeys.) {{cb-end}}
 
-{{cb}} Documentation is available at the same time the feature is released and made available to users, not after the fact. {{cb-end}}
+{{cb}} Documentation is available at the same time the feature is released and made available to users, not after the fact. Versions in the release notes correspond with the actual version of the product. {{cb-end}}
 
 {{cb}} Code samples are available in the user's target language. This might mean providing multiple code samples. {{cb-end}}
 
 {{cb}} Options for support are provided, even if the support merely involves posting to a peer-monitored forum. {{cb-end}}
 
-{{cb}} The code in the doc site offers interactivity that allows users to interact with the functions, API calls, or other calls, often using their custom data. Typically, with REST APIs, an API Explorer allows users to try out requests using their own data. Seeing responses with your own data can make the API seem more relevant. {{cb-end}}
+{{cb}} The code in the doc site offers interactivity that allows users to interact with the functions, API calls, or other calls, often using their custom data. Typically, with REST APIs, an API explorer allows users to try out requests using their own data. Seeing responses with your own data can make the API seem more relevant. {{cb-end}}
 
 {{cb}} If the product has a code repository similar to features on GitHub, this repository is actively monitored when users log issues or submit pull requests. Users aren't simply ignored. {{cb-end}}
 
-{{cb}} A feedback option is included in the docs so that the writers can stay attuned to what information readers might want to communicate to them. This also helps users feel more relevant and listened to. {{cb-end}}
+{{cb}} A feedback option is included in the docs so that the writers can stay attuned to what information readers might want to communicate to them. This helps users feel more relevant and listened to. {{cb-end}}
 
 </ul>
 
@@ -307,25 +335,25 @@ input[type=checkbox] {
 
 {{cb}} The [overview](docapis_doc_overview.html) explains the big picture and describes the problem that the tool or service addresses. {{cb-end}}
 
+{{cb}} The [overview](docapis_doc_overview.html) provides a high-level description of the main uses cases or business objectives of the product. {{cb-end}}
+
 {{cb}} The [overview](docapis_doc_overview.html) has diagram of the main components and how they interact. {{cb-end}}
 
-{{cb}} The [overview](docapis_doc_overview.html) provides a high-level overview of the main uses cases or business objectives of the product. {{cb-end}}
+{{cb}} For larger systems that might have multiple subsystems (e.g., groups of APIs for different scenarios), these subsystems have their own landing pages that resemble the higher-level overview (with use cases, diagrams, getting started links) but scoped to that specific subsystem. {{cb-end}}
 
-{{cb}} For larger systems that might have various APIs or subcomponents, these APIs/subcomponents have their own landing pages that resemble the overview (with use cases, diagrams, getting started links) but scoped to that specific API/subcomponent. {{cb-end}}
+{{cb}} Details about how to get access, permissions, and authorization to use the API are provided. The overview usually links out to a getting started topic that makes it easy for the user to sign up, register, get API keys or permissions, and start using the API. {{cb-end}}
 
-{{cb}} Details about how to get access, permissions, and authorization to use the API are provided. The overview usually links out to a getting started topic that makes it easy for the user to sign up, register, get keys/permissions, and start using the API. {{cb-end}}
+{{cb}} A sandbox environment is available for users to try out the tool on their own and get a better understanding of how it works. {{cb-end}}
 
-{{cb}} A sandbox environment is available for users to try out the tool on their own and get a better undestanding of how it works. {{cb-end}}
+{{cb}} If there are different roles and permission levels that correspond to varying capabilities, these roles are noted in all places they apply, such as within the individual API reference. For example, if only admin roles can use a certain API, this is noted in the API reference and in any places that use the API. {{cb-end}}
 
-{{cb}} If there are different roles and permission levels that correspond to varying capabilities, these are noted in all places they apply, such as within the individual API reference. For example, if only admin roles can use a certain API, this is noted in the API reference and in any places that use the API. {{cb-end}}
-
-{{cb}} If the product has a code repository, the repository contains a Readme file that provides information similar to the overview, including information on how to contribute if applicable. {{cb-end}}
+{{cb}} If the product has a code repository, the repository contains a Readme file that provides information similar to the overview, including information on how to contribute if applicable. (The readme might simply link to the documentation overview but also include unique sections such as how to contribute in the repo.) {{cb-end}}
 
 {{cb}} Each task has a "Prerequisites" section that explains knowledge requirements, tool requirements, essential concepts, etc., necessary for completing the task. {{cb-end}}
 
-{{cb}} Tasks are articulated through a series of specific, usually numbered steps or sections that reduce the complexity of the effort. More complex tasks might require more granular and numerous steps or sections so as to reduce the complexity. {{cb-end}}
+{{cb}} Tasks are articulated through a series of specific, usually numbered steps or sections that reduce the complexity of the task. More complex tasks might require more granular and numerous steps or sections so as to reduce the complexity. (This is the primary way that technical writers simplify complexity.) {{cb-end}}
 
-{{cb}} Specific steps for completing tasks are described in detail rather than glossed over in general ways &mdash; unless the task is something the audience is already familiar with and does not need instructions for doing (e.g., installing an industry-standard tool). Overall, the documentation strikes a balance between providing enough detail for users to get the job done but not including too much detail that the reader is inundated with extraneous information. {{cb-end}}
+{{cb}} Specific steps for completing tasks are described in detail rather than glossed over in general ways &mdash; unless the task is something the audience is already familiar with. Overall, the documentation strikes a balance between providing enough detail for users to get the job done but not including too much detail that the reader is inundated with extraneous information. {{cb-end}}
 
 {{cb}} Larger tasks that span multiple topics have a [workflow map](/simplifying-complexity/macro-micro.html) (or similar mechanism) that connects the topics together. {{cb-end}}
 
@@ -333,19 +361,18 @@ input[type=checkbox] {
 
 {{cb}} If there are multiple paths to a solution, the documentation describes the simplest path (though other possibilities might be briefly mentioned). {{cb-end}}
 
-{{cb}} Users are able to follow the documentation by themselves without relying on peer or customer support. A large number of support cases or forum threads containing questions that could have been answered in the documentation would indicate that users aren't self-reliant on the docs. {{cb-end}}
+{{cb}} Users can follow the documentation by themselves without relying on peer or customer support. A large number of support cases or forum threads containing questions that could have been answered in the documentation would indicate that users aren't self-sufficient through the docs. {{cb-end}}
 
 {{cb}} A [getting-started tutorial](docapis_doc_getting_started_section.html) is provided for users to get started in an end-to-end way with the product, producing a sample output that builds their confidence. {{cb-end}}
 
-{{cb}} [Code samples](docapis_codesamples_bestpractices.html) showing sample ways to use the API (or tools) are provided. In more robust scenarios, a [sample app](docapis_sample_apps.html) might serve as a reference implementation for users. (Ideally, the documentation should refer to different aspects of the reference implementation.) {{cb-end}}
+{{cb}} [Code samples](docapis_codesamples_bestpractices.html) showing sample ways to use the API (or similar tools) are provided. In more robust scenarios, a [sample app](docapis_sample_apps.html) might serve as a reference implementation for users. In cases where a sample app complements the documentation, the documentation should refer to different aspects of the reference implementation.) {{cb-end}}
 
-{{cb}} Code samples are appropriately commented, either with inline comments, comments that preface or follow the sample, or both. Long code samples with no explanation aren't just dropped in.{{cb-end}}
+{{cb}} Code samples are appropriately commented, either with inline comments, comments that preface or follow the sample, or both. Long code samples with no explanation aren't just dropped in. {{cb-end}}
 
-{{cb}} If the core audience is familiar with some details, the documentation doesn't explain information already understood by that audience but might link to more resources for details, or hide more elaboration in collapsed sections. The documentation's technical level is appropriate to the *target audience* but might not serve every possible audience (e.g., total newbies to a programming language might struggle with documentation intended for developers already experienced in that language). {{cb-end}}
+{{cb}} The documentation's technical level is appropriate to the *target audience* but might not serve every possible audience (e.g., total newbies to a programming language might struggle with documentation intended for developers already experienced in that language). Usually, general concepts in a programming language that you assume the audience knows are not explained in the documentation. Instead, your company's product, configuration, and usage are covered in the context of the programming language. One exception is when the implementation requires a non-standard process or workflow that merits some explanation. {{cb-end}}
 
 {{cb}} A one-pager [quick reference](docapis_doc_quick_reference.html) is available for the documentation so that users can get up and running quickly. The one-pager also allows users to quickly get a sense of the essential information and tasks for the tool or service. {{cb-end}}
 </ul>
-
 
 ### Completeness
 
@@ -353,17 +380,17 @@ input[type=checkbox] {
 
 {{cb}} [Error messages](docapis_doc_status_codes.html) that users can encounter are documented and discoverable through search. {{cb-end}}
 
-{{cb}} Reference material such as APIs (if applicable) follow a common structure within each topic, mostly following a request-response type structure. Typical sections include the description, parameters, sample request or usage, and sample response. {{cb-end}}
+{{cb}} Reference material such as APIs (if applicable) follow a common structure within each topic, mostly following a request-response type structure. Typical sections include descriptions, parameters, sample requests or usage, and sample responses. {{cb-end}}
 
 {{cb}} Parameter documentation typically includes a description, data type, min/max values, sample values, and optional/required usage. {{cb-end}}
 
-{{cb}} If there are pitfalls or other traps, gaps, and gotchas to avoid, these are noted in the documentation (even if relayed with a positive spin) rather than hidden from the user. A section called "Known Limitations" often contains this information. The documentation doesn't lie or mislead the user but rather is transparent, honest, and helpful even if it means exposing the product's warts and revealing problems users will like encounter. {{cb-end}}
+{{cb}} If there are pitfalls or other traps, gaps, and gotchas to avoid, these are noted in the documentation rather than hidden from the user. A section called "Known Limitations" often contains this information. The documentation doesn't lie or mislead the user but rather is transparent, honest, and helpful even if it means exposing the product's warts and revealing problems users will like encounter. {{cb-end}}
 
-{{cb}} If there are [limitations and thresholds](/learnapidoc/docapis_rate_limiting_and_thresholds.html) (e.g., max number of API calls, max file sizes, max string lengths, max/min parameter values), these limitations are called out in the docs.
+{{cb}} If there are [limitations and thresholds](/learnapidoc/docapis_rate_limiting_and_thresholds.html) (e.g., max number of API calls, max file sizes, max string lengths, max/min parameter values), these limitations are called out in the docs. {{cb-end}}
 
-{{cb}} If a task requires certain permissions, roles, or versions, or is only available in certain locales or on specific platforms, that information is noted clearly in the topic. This is similar to the Prerequisites section in a topic but focuses on higher-level requirements rather than organizational context for the information. For example, the topic might have a label that says "Admin role only," or it might have tabs that split the content into Mac, Windows, and Linux steps, or tabs for Java, C++, and PHP." {{cb-end}}
+{{cb}} If a task is only available in certain contexts (locales, languages,  platforms), that information is noted clearly in the topic. For example, a tool that is globally available but with feature limitations for some areas might have a label on certain topics that say "US only," or it might have tabs that split the content into Mac, Windows, and Linux steps." {{cb-end}}
 
-{{cb}} The documentation has a troubleshooting section (either standalone or included within the section/topic it relates to) that provides information on how to solve common problems. The troubleshooting information indicates where things might go wrong and how to fix them. In other words, the documentation doesn't describe the happy path only. {{cb-end}}
+{{cb}} The documentation has a troubleshooting section (either standalone or included within the section/topic it relates to) that provides information on how to solve common problems. The troubleshooting information indicates where things might go wrong and how to fix them. In other words, the documentation doesn't just describe the happy path. {{cb-end}}
 
 </ul>
 
@@ -371,19 +398,21 @@ input[type=checkbox] {
 
 <ul class="checkLists">
 
-{{cb}} The sidebar navigation (listing the topics in the documentation) lets users take in a sense of the whole while also allowing users to expand more details as desired. The sidebar isn't a massive list of seemingly endless scrolling and expansion but divides up doc sets into logical groups, like books. {{cb-end}}
+{{cb}} The sidebar navigationlets users take in a sense of the whole while also allowing users to expand more details as desired. The sidebar isn't a massive list of seemingly endless scrolling and expansion + expansion + expansion but divides up doc sets into logical groups, like books. For systems with large numbers of topics, progressive disclose techniques might be implemented across primary, secondary, and tertiary levels of information. {{cb-end}}
 
-{{cb}} As the user navigates each topic, the sidebar navigation makes it clear where the user is in the navigation. Breadcrumbs might also help establish organizational context. {{cb-end}}
+{{cb}} As the user navigates each topic, the sidebar navigation makes it clear where the user is in the navigation (e.g., the topic highlights clearly and the navigation sticks open at that level). Breadcrumbs might also help establish site context. {{cb-end}}
 
-{{cb}} When users click topics in the navigation, the UI doesn't shift context in jarring ways, such as taking the user to another doc set or changing navigation areas like the sidebar and header (which are usually consistent for every page). This jarring navigation often happens when sidebar entries point to other doc sites. If this is the case, the links have an icon indicating the link takes them to another site. {{cb-end}}
+{{cb}} When a user click topics in the navigation, the UI doesn't shift context in jarring ways, such as taking the user to another doc set or changing stable navigation areas like the sidebar and header (which are usually consistent for every page). This jarring navigation often happens when sidebar entries point to topics in other doc sites. If this is the case, the external links have an icon indicating the link takes them to another site. {{cb-end}}
 
-{{cb}} Navigation mechanisms work consistently across all docs in your developer portal. For example, if top-level folders expand to show child items rather than opening to their own page in one set of docs, the same behavior is found in others. If one doc set {{cb-end}}
+{{cb}} Navigation mechanisms work consistently across all docs in the developer portal. For example, in one set of docs, if top-level folders expand to show child items rather than opening to their own page, the same behavior is found in others. {{cb-end}}
 
-{{cb}} Common topics are similarly named across doc sets in the developer portal. For example, the Overview, Getting Started, Troubleshooting, Glossary, Release Notes, and Reference are named in consistent ways that helps users understand how to navigate your technical information. {{cb-end}}
+{{cb}} Common topics have similar names across doc sets in the developer portal. For example, the Overview, Getting Started, Troubleshooting, Glossary, Release Notes, and Reference are named in consistent ways that help users understand how to navigate the site. One doc set shouldn't call a topic "Latest updates" and "First steps" while another uses "What's new" and "Quickstart." {{cb-end}}
 
 {{cb}} Sentences are somewhat short, paragraphs are relatively small, and subheadings are frequent. A readability score will place the content at the high-school level, not college. {{cb-end}}
 
-{{cb}} Subheadings follow a parallel structure so they can be more easily scanned and read. {{cb-end}}
+{{cb}} Subheadings follow a parallel structure so they can be more easily scanned and read. The subheadings are descriptive enough to allow users to get a gist of the page by merely reading the subheadings. {{cb-end}}
+
+{{cb}} Topics usually have a short summary below the title that encapsulates the main purpose of the topic. {{cb-end}}
 
 {{cb}} Unfamiliar words and jargon are defined in a glossary. At times, the glossary terms are linked to their glossary definitions. {{cb-end}}
 
@@ -393,14 +422,14 @@ input[type=checkbox] {
 
 {{cb}} Individual sentences have one main idea. Paragraphs have one main point. {{cb-end}}
 
-{{cb}} The formatting in code samples follows standard formatting, white spacing, and other syntax for the language, and has code syntax highlighting to increase readability. {{cb-end}}
+{{cb}} The formatting in code samples follows standard white spacing, line breaks, and other syntax for the language. Code syntax highlighting helps increase readability. {{cb-end}}
 
-{{cb}} In code samples, placeholder text that needs to be customized is clearly indicated to the user. {{cb-end}}
+{{cb}} In code samples, placeholder text that needs to be customized is clearly indicated to the user. It's not confusing what is code and what needs to be changed, like `APIKEY`. {{cb-end}}
 
-{{cb}} The content can be read on a mobile device in a usable way. {{cb-end}}
+{{cb}} The content can be read on a mobile device in a usable way. The responsive view allows users to navigate the sidebar links and view code samples. {{cb-end}}
 
 </ul>
-
+</div>
 
 Did I miss anything? I probably missed 100 more details here. Feel free to let me know (either in the comments or survey) what could/should be added, especially if it's a major omission. But there's also something to be said for a practical list of key points (there are 70 check boxes here!). The more criteria you add, the more laborious it becomes to evaluate docs. The most popular style guides (e.g., Strunk and White) are those that cover the main points you need rather than providing an exhaustive list, especially if many guidelines are already followed.
 
@@ -444,7 +473,7 @@ Overall, I am confident that few would object to most of the criteria here. Most
 
 ## Survey
 
-Please respond to a few questions so that I can understand your thoughts on this approach and whether I am headed in the right direction. There are 11 questions. These surveys help me leverage your experience and insight to check my approach and potentially course correct.
+Please respond to a few questions so that I can understand your thoughts on this approach and whether I am headed in the right direction. There are 12 questions. These surveys help me leverage your experience and insight to check my approach and potentially course correct. You can view the [ongoing results here](https://www.questionpro.com/t/PHpuiZkbgw).
 
 <script>
 EMBED_PARAMS = {};
@@ -457,3 +486,5 @@ EMBED_PARAMS.border = "hidden";
 </script>
 <div id="div_8043019"></div>
 <script src="//www.questionpro.com/javascript/embedsurvey.js?version=1"></script>
+
+*Special thanks to Yoel Strimling for his input on this article.*
