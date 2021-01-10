@@ -9,8 +9,6 @@ path1: /docapis_managing_dev_portals.html
 last-modified:
 ---
 
-**NOTE: This is a topic I am currently developing, so expect more changes over the next week. Also, the content is a bit rough. (Jan 8, 2021)**
-
 As you set goals for your role or team, you might want to measure your impact on documentation quality in some way. The main reason for measuring your impact should be to evaluate your progress against your goals. If you don't have any data to provide feedback on your efforts, it's hard to know if you're making a difference.
 
 Additionally, metrics are essential for business reasons: upper management will invariably ask you for metrics of some kind (because what you can't measure, you can't manage). Metrics will also be key if you're making the case for a promotion (upleveling) or defending your performance during annual review time. Ultimately, though, you need metrics to answer this question: Is what I'm doing making a difference?
@@ -178,6 +176,28 @@ Keep in mind that Pronovix's focus is on developer portals, not standalone API d
 
 Also, unlike scholarly research, Pronovix looks for best practices and successful patterns, like API explorers for interactivity, the ability to scan and locate reference material, site designs that inspires trust, clear use cases for the API, providing code samples in multiple languages, making onboarding simple and easy, fostering community, and more. Pronovix doesn't try to justify their criteria based on research or from studies that objectively verify and rank these characteristics. Instead, they tend to embrace industry standards and best practices that are generally accepted by practitioners.
 
+Another great resource is [Nordic APIs](https://nordicapis.com/). In [5 Examples of Excellent API Documentation (and Why We Think So)](https://nordicapis.com/5-examples-of-excellent-api-documentation/), they evaluate 5 documentation sites based on these criteria:
+
+* Authentication guide ☐
+* Quickstart guide ☐
+* Endpoint definitions ☐
+* Code snippets ☐
+* Example responses ☐
+
+They highlight reasons they like various sites, noting that the lesson with Stripe is "don't overdo it." For Twilio, it's "be beginner-friendly." For Dropbox, it's "cater to unique dev backgrounds." For GitHub, "save developer time wherever you can." And for Twitter, "be flexible with how you present information."
+
+Another Nordic article, [7 Items No API Documentation Can Live Without](https://nordicapis.com/7-items-no-api-documentation-can-live-without/) discusses 7 essential components in API docs:
+
+* 1: An Authentication Scheme
+* 2: HTTP Call Type Definitions
+* 3: Endpoint Definitions
+* 4: URI Structures, Methods, and Parameters
+* 5: Human Readable Method Descriptions
+* 6: Requests and Examples
+* 7: Expected Responses
+
+In my rubric, I've listed each of these items but only briefly and generally. Sites like these provide much more detailed guidance about how to optimize your documentation for each of these components.
+
 ## Technical writing handbooks
 
 Another place to find quality checklists and guidance for implementing general characteristics like clarity, relevance, accuracy, etc., is in technical writing handbooks. In [*Developing Quality Technical Information: A Handbook for Writers and Editors*](https://learning.oreilly.com/library/view/developing-quality-technical/9780133119046/app01.html), the authors provide a mountain of detail for best practices. They divide their guidelines into these categories and subcategories:
@@ -215,7 +235,20 @@ The result of combining a controlled vocabulary with this grammar yields content
 
 Keeping instructional commands to a single command per step seems like a good practice. However, many of the guidelines seem more appropriate to a style guide because they are so granular and language-specific. But depending on your needs, you might adopt more of these principles into your criteria.
 
-Another standard is [ISO/IEC 26514](https://www.iso.org/standard/43073.html), which is a standard that "specifies the structure, content, and format for user documentation, and also provides informative guidance for user documentation style."
+Another standard is [ISO/IEC 26514:2008 - Systems and software engineering — Requirements for designers and developers of user documentation](https://www.iso.org/standard/43073.html), which is a standard that "specifies the structure, content, and format for user documentation, and also provides informative guidance for user documentation style." Another is [IEC/IEEE 82079-1 - Preparation Of Information For Use (Instructions For Use) Of Products - Part 1: Principles And General Requirements](https://webstore.ansi.org/Standards/ISO/IECIEEE820792019?gclid=Cj0KCQiA6Or_BRC_ARIsAPzuer-sndUAjuadJ-nhVGSbZeUX-MfS_jFuZj3mSC_-eyEcRiP-LFyTuMMaAmpKEALw_wcB). Both of these standards publications require payment, but sometimes companies subscribe to these standards, and obviously referencing an ISO standard for a practice puts you in indefensible territory about the standard.
+
+A standard developed by SAP and later generalized and adopted by tekom is [Standards and Guidelines for API Documentation](https://www.technical-communication.org/tekom/publications/specialist-books/detail/standards-and-guidelines-for-api-documentation) by Anne Tarnoruder. You can read a summary of the 68-page book in a tcworld article here: [Standardizing API documentation](https://www.tcworld.info/e-magazine/technical-writing/standardizing-api-documentation-949/). Tarnoruder explains, "The S&G cover both auto-generated and manually written API reference documentation, and apply to the major API languages and technologies, such as Java, JavaScript, MS.Net, REST and OData." Tarnoruder emphasizes clear naming guidelines for APIs and says, "Names are the user interface of APIs. Meaningful, clear, and self-explanatory naming is a key factor in API's usability and adoption." Technical writers often work with developers on names to ensure best practices. I covered some of these principles in my [summary of Arnaud Lauret's book, The Design of Web APIs](https://idratherbewriting.com/learnapidoc/evaluating-api-design.html). However, this is an area where API design and documentation seem to blend together. My focus here is more on documenting an API that has already been finalized rather than providing input on best practices for API design.
+
+Tarnoruder provides templates for REST and OData APIs, if you're not already using something like OpenAPI. And she also provides detailed guidelines for documenting APIs such as Java with Javadoc.
+
+For developer guides, Tarnoruder provides guidelines such as including "conceptual, setup, quick start and how-to information" and "does not contain implementation details irrelevant to users." This advice is fairly common. However, she also includes best practices for addressing both a code-first learning style versus a concepts-first learning style:
+
+> Various usability studies show that API documentation users differ in their learning preferences:
+>
+> Those with a top-bottom approach would first read all the conceptual topics, and only then start trying the API calls.
+> Those who prefer a bottom-up approach would delve right into code samples to get a quick hands-on experience with the APIs. ([Standardizing API documentation](https://www.tcworld.info/e-magazine/technical-writing/standardizing-api-documentation-949/))
+
+This is something I covered in [How Developers Use API Documentation: An Observation Study](/learnapidoc/docapiscode_research_on_documenting_code.html#how-developers-use-api-documentation-an-observation-study) and is based on research by Michael Meng, Stephanie Steinhardt, and Andreas Schubert in [How Developers Use API Documentation: An Observation Study](https://sigdoc.acm.org/cdq/how-developers-use-api-documentation-an-observation-study/). The authors describe "opportunistic" behavior (people who learn by immediately pushing buttons and trying things out) versus "systematic" behavior (people who start by carefully reading the manual) as two common patterns of observed usage for developers using documentation. They encourage documentation to accommodate both learning styles.
 
 ## Other sources for quality
 
@@ -343,6 +376,8 @@ input[type=checkbox] {
 
 {{cb}} Details about how to get access, permissions, and authorization to use the API are provided. The overview usually links out to a getting started topic that makes it easy for the user to sign up, register, get API keys or permissions, and start using the API. {{cb-end}}
 
+{{cb}} The documentation provides opportunities for experiential/opportunistic users to start learning immediately through code and trial/error, and for more systematic users to learn by reading concepts first. {{cb-end}}
+
 {{cb}} A sandbox environment is available for users to try out the tool on their own and get a better understanding of how it works. {{cb-end}}
 
 {{cb}} If there are different roles and permission levels that correspond to varying capabilities, these roles are noted in all places they apply, such as within the individual API reference. For example, if only admin roles can use a certain API, this is noted in the API reference and in any places that use the API. {{cb-end}}
@@ -367,28 +402,31 @@ input[type=checkbox] {
 
 {{cb}} [Code samples](docapis_codesamples_bestpractices.html) showing sample ways to use the API (or similar tools) are provided. In more robust scenarios, a [sample app](docapis_sample_apps.html) might serve as a reference implementation for users. In cases where a sample app complements the documentation, the documentation should refer to different aspects of the reference implementation.) {{cb-end}}
 
-{{cb}} Code samples are appropriately commented, either with inline comments, comments that preface or follow the sample, or both. Long code samples with no explanation aren't just dropped in. {{cb-end}}
+{{cb}} [Code samples](docapis_codesamples_bestpractices.html) are appropriately commented, either with inline comments, comments that preface or follow the sample, or both. Long code samples with no explanation aren't just dropped in. {{cb-end}}
 
 {{cb}} The documentation's technical level is appropriate to the *target audience* but might not serve every possible audience (e.g., total newbies to a programming language might struggle with documentation intended for developers already experienced in that language). Usually, general concepts in a programming language that you assume the audience knows are not explained in the documentation. Instead, your company's product, configuration, and usage are covered in the context of the programming language. One exception is when the implementation requires a non-standard process or workflow that merits some explanation. {{cb-end}}
 
 {{cb}} A one-pager [quick reference](docapis_doc_quick_reference.html) is available for the documentation so that users can get up and running quickly. The one-pager also allows users to quickly get a sense of the essential information and tasks for the tool or service. {{cb-end}}
+
 </ul>
 
 ### Completeness
 
 <ul class="checkLists">
 
+{{cb}} For REST API documentation, the [OpenAPI standard](pubapis_openapi_intro.html) is used to describe the API. For [library-based APIs](nativelibraryapis_overview.html) like Java, the appropriate conventions for documentation in that language are followed (such as [Javadoc tags](nativelibraryapis_javadoc_tags.html)).{{cb-end}}
+
+{{cb}} Reference material such as APIs (if applicable) follow a [common structure within each topic](docapis_api_reference_tutorial_overview.html), mostly following a request-response type structure. Typical sections include descriptions, parameters, sample requests or usage, and sample responses. {{cb-end}}
+
 {{cb}} [Error messages](docapis_doc_status_codes.html) that users can encounter are documented and discoverable through search. {{cb-end}}
 
-{{cb}} Reference material such as APIs (if applicable) follow a common structure within each topic, mostly following a request-response type structure. Typical sections include descriptions, parameters, sample requests or usage, and sample responses. {{cb-end}}
+{{cb}} [Parameter documentation](docapis_doc_parameters.html) typically includes a description, data type, min/max values, sample values, and optional/required usage. {{cb-end}}
 
-{{cb}} Parameter documentation typically includes a description, data type, min/max values, sample values, and optional/required usage. {{cb-end}}
-
-{{cb}} If there are pitfalls or other traps, gaps, and gotchas to avoid, these are noted in the documentation rather than hidden from the user. A section called "Known Limitations" often contains this information. The documentation doesn't lie or mislead the user but rather is transparent, honest, and helpful even if it means exposing the product's warts and revealing problems users will like encounter. {{cb-end}}
+{{cb}} If there are pitfalls or other traps, gaps, and gotchas to avoid, these are noted in the documentation rather than hidden from the user. A section called ["Known Limitations"](/2010/12/16/known-limitations/) often contains this information. The documentation doesn't lie or mislead the user but rather is [transparent, honest, and helpful](/2017/07/13/transparency-in-documentation/) even if it means exposing the product's warts and revealing problems users will like encounter. {{cb-end}}
 
 {{cb}} If there are [limitations and thresholds](/learnapidoc/docapis_rate_limiting_and_thresholds.html) (e.g., max number of API calls, max file sizes, max string lengths, max/min parameter values), these limitations are called out in the docs. {{cb-end}}
 
-{{cb}} If a task is only available in certain contexts (locales, languages,  platforms), that information is noted clearly in the topic. For example, a tool that is globally available but with feature limitations for some areas might have a label on certain topics that say "US only," or it might have tabs that split the content into Mac, Windows, and Linux steps." {{cb-end}}
+{{cb}} If a task is only available in certain contexts (locales, languages,  platforms, roles, versions), that information is noted clearly in the topic. For example, a tool that is globally available but with feature limitations for some areas might have a label on certain topics that say "US only," or "Enterprise Version Only," or it might have tabs that split the content into "Mac \| Windows \| Linux" steps. {{cb-end}}
 
 {{cb}} The documentation has a troubleshooting section (either standalone or included within the section/topic it relates to) that provides information on how to solve common problems. The troubleshooting information indicates where things might go wrong and how to fix them. In other words, the documentation doesn't just describe the happy path. {{cb-end}}
 
@@ -398,7 +436,7 @@ input[type=checkbox] {
 
 <ul class="checkLists">
 
-{{cb}} The sidebar navigationlets users take in a sense of the whole while also allowing users to expand more details as desired. The sidebar isn't a massive list of seemingly endless scrolling and expansion + expansion + expansion but divides up doc sets into logical groups, like books. For systems with large numbers of topics, progressive disclose techniques might be implemented across primary, secondary, and tertiary levels of information. {{cb-end}}
+{{cb}} The sidebar navigation lets users take in a sense of the whole while also allowing users to expand more details as desired. The sidebar isn't a massive list of seemingly endless scrolling and expansion + expansion + expansion but divides up doc sets into logical groups, like books. For systems with large numbers of topics, progressive disclose techniques might be implemented across primary, secondary, and tertiary levels of information. {{cb-end}}
 
 {{cb}} As the user navigates each topic, the sidebar navigation makes it clear where the user is in the navigation (e.g., the topic highlights clearly and the navigation sticks open at that level). Breadcrumbs might also help establish site context. {{cb-end}}
 
@@ -412,9 +450,9 @@ input[type=checkbox] {
 
 {{cb}} Subheadings follow a parallel structure so they can be more easily scanned and read. The subheadings are descriptive enough to allow users to get a gist of the page by merely reading the subheadings. {{cb-end}}
 
-{{cb}} Topics usually have a short summary below the title that encapsulates the main purpose of the topic. {{cb-end}}
+{{cb}} Topics usually have a [short summary below the title](/2018/09/15/pages-at-a-glance-feature/#enforcing-best-practices-with-structure) that encapsulates the main purpose of the topic. This helps users get a sense of the topic at a glance. {{cb-end}}
 
-{{cb}} Unfamiliar words and jargon are defined in a glossary. At times, the glossary terms are linked to their glossary definitions. {{cb-end}}
+{{cb}} Unfamiliar words and jargon are defined in a [glossary](docapis_glossary_section.html). At times, the glossary terms are linked to their glossary definitions. {{cb-end}}
 
 {{cb}} The language uses active voice (where warranted) with clear subjects and verbs positioned closely together. {{cb-end}}
 
@@ -426,12 +464,12 @@ input[type=checkbox] {
 
 {{cb}} In code samples, placeholder text that needs to be customized is clearly indicated to the user. It's not confusing what is code and what needs to be changed, like `APIKEY`. {{cb-end}}
 
-{{cb}} The content can be read on a mobile device in a usable way. The responsive view allows users to navigate the sidebar links and view code samples. {{cb-end}}
+{{cb}} The content can be read on a mobile device in a usable way. For example, the responsive view allows users to navigate the sidebar links and view code samples. {{cb-end}}
 
 </ul>
 </div>
 
-Did I miss anything? I probably missed 100 more details here. Feel free to let me know (either in the comments or survey) what could/should be added, especially if it's a major omission. But there's also something to be said for a practical list of key points (there are 70 check boxes here!). The more criteria you add, the more laborious it becomes to evaluate docs. The most popular style guides (e.g., Strunk and White) are those that cover the main points you need rather than providing an exhaustive list, especially if many guidelines are already followed.
+Did I miss anything? I probably missed 100 more details here. Feel free to let me know (either in the comments or survey) what could/should be added, especially if it's a major omission. But there's also something to be said for a practical list of key points (there are 70+ check boxes here!). The more criteria you add, the more laborious it becomes to evaluate docs. The most popular style guides (e.g., Strunk and White) are those that cover the main points you need rather than providing an exhaustive list, especially if many guidelines are already followed.
 
 ## Analysis and quantitative metrics
 
