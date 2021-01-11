@@ -1,5 +1,5 @@
 ---
-title: First steps in a new content domain: inventory, audit, plan
+title: "First steps in a new content domain: inventory, audit, plan"
 permalink: /docapis_inventory_audit.html
 course: "Documenting REST APIs"
 weight: 12.3
