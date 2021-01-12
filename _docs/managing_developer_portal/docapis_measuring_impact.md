@@ -146,6 +146,8 @@ If you're the target audience using the docs and have just finished the task, th
 
 Fortunately, if we take the starting categories here (accessibility, accuracy, relevance, clarity), and we are confident that these attributes align with user priorities, then we only need to define how these attributes can be implemented in documentation in more specific, concrete, and actionable ways. This is a point Strimling starts to make in [So You Think You Know What Your Readers Want?](https://www.researchgate.net/publication/331088225). He says, "In lieu of feedback, what we need is a proven model of how readers actually define documentation quality (DQ), which we can then use to ensure that what we produce is useful to our audience." In other words, these four criteria can guide you unless you have more specific feedback. In later sections, I'll get specific about how to implement each of the more general criteria by following best practices for content design detailed in a rubric.
 
+{% include random_ad.html %}
+
 ## Other research
 
 Before jumping into the rubric, let's survey the information quality landscape a bit more, as there are a few other sources worth mentioning. First, Pronovix, a company that specializes in creating developer portals, holds regular [Developer Portal Awards](https://pronovix.com/blog/best-developer-portals-2020). As such, they provide general reasons why they rate some developer portals higher than others. For example, in [What is the MVP for a Developer Portal?](https://pronovix.com/blog/what-mvp-developer-portal) they write:
@@ -222,6 +224,8 @@ In this model, you might score docs from 1 to 5 depending on how well the docs f
 <a class="noCrossRef" href="https://learning.oreilly.com/library/view/developing-quality-technical/9780133119046/app01.html"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/qualityguidelinestextbook2.png" alt="Quality checklist" /></a>
 
 Overall, there are 60 specific characteristics within the various categories. Why not simply adopt this quality checklist? It wouldn't be a bad approach, for sure. And the principles are so widely held that few would object to them. But I wanted something even more concrete, actionable, and focused on API documentation and developer portals.
+
+{% include random_ad2.html %}
 
 ## Standards specifications
 
@@ -502,11 +506,15 @@ As you work on improving documentation, you could quantitatively say that you im
 
 Also, keep in mind that adding user satisfaction surveys to corroborate the improvements would be a good idea. But even without the corroboration, at least this rubric provides a more action-oriented way of addressing more fuzzy issues that users might report in a survey (e.g., docs are incomplete, confusing), and it provides a quantitative metric for measurement. If you're a team editor, this checklist lets you audit your documentation to assess quality.
 
+{% include random_ad3.html %}
+
 ## Objections to "Tom's criteria"
 
 My goal here was to find a way to assess documentation quality without relying solely on surveys and to pin down the criteria for developer docs to a list of actionable, easy-to-understand criteria. I recognize that my list has no official research backing or data to support it &mdash; instead, these best practices come from experience in the industry and from best practices that I and others have observed within the realm of developer documentation.
 
 This is likely the problem with my approach: who's to say that documentation needs each of these criteria to succeed? It's possible that documentation might still be findable, accurate, relevant, and clear without many of these more concrete components, which would seemingly invalidate the approach here. I don't have any user-based research to say that docs should be this way, that they should have an overview, that reference material should follow a consistent structure, that tasks should be detailed in steps, or that error messages should be documented, etc. As such, critics could dismiss a documentation's "score" as being meaningless, relying only on user feedback for their evaluation of docs.
+
+{% include image_ad_right.html %}
 
 If this is the feeling regarding reported metrics, remember that user surveys should both complement and confirm the approach here. User surveys specifically for docs that score highly should also rate higher in satisfaction surveys than surveys for docs that score more poorly. But again, to establish a kind of correlation through surveys relies on a host of factors (objective, unbiased, unambiguous survey questions from a large sample of a representative audience across domains), which is likely difficult to pull off on a regular basis.
 
