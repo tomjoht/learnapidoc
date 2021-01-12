@@ -274,7 +274,7 @@ input[type=checkbox] {
 {% assign cb = "<li class='checkboxListType' markdown='span'><input type='checkbox'>" %}
 {% assign cb-end = "</li>" %}
 
-<div style="background-color: #F0EFF8; padding: 15px; margin-top: 30px; margin-bottom: 30px;" markdown="block">
+<div style="background-color: #eef; padding: 15px; margin-top: 30px; margin-bottom: 30px;" markdown="block">
 <div style="margin-top: 20px; margin-bottom: 20px; font-size:24px; text-align: center;">Developer documentation quality checklist</div>
 
 ### Findability
