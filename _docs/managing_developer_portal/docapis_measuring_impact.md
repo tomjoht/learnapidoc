@@ -132,7 +132,7 @@ document?
 > * Was the information in the document easy to
 understand?
 
-Strimling says you can ask users these questions during various interaction points (doc surveys, training situations, support interactions, onboarding, and more.) The questions aren't simply yes/no questions but would include follow-up questions asking for more details if problems are noted. Similar to Wang and Strong's user-based DQ framework, these criteria aren't priorities from writers but rather from users. (Note: In later research, Yoel found that "completeness" might be more important than "relevance.")
+Strimling says you can ask users these questions during various interaction points (doc surveys, training situations, support interactions, onboarding, and more). The questions aren't simply yes/no questions but would include follow-up questions asking for more details if problems are noted. Similar to Wang and Strong's user-based DQ framework, these criteria aren't priorities from writers but rather from users. (Note: In later research, Yoel found that "completeness" might be more important than "relevance.")
 
 ## The problem with abstract definitions
 
