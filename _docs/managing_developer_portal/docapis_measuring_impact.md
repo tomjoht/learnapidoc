@@ -239,7 +239,7 @@ Another resource developed by SAP and later generalized and adopted by tekom is 
 
 Technical writers might work with developers on names to ensure best practices with API design, especially regarding names. I covered some of these principles in my [summary of Arnaud Lauret's book, *The Design of Web APIs*](https://idratherbewriting.com/learnapidoc/evaluating-api-design.html). However, my focus here is more on documenting an API that has already been finalized rather than providing input on best practices for API design.
 
-Tarnoruder also provides templates for REST and OData APIs, if you're not already using something like OpenAPI. And she provides detailed guidelines for documenting APIs such as Java with Javadoc.
+The book provides comprehensive guidelines for writing the descriptions of API elements in the OpenAPI definition files, illustrated by examples. Tarnoruder also provides templates for REST and OData APIs, if you're not already using something like OpenAPI. And she provides detailed guidelines for documenting APIs such as Java with Javadoc.
 
 For developer guides, Tarnoruder provides guidelines such as including "conceptual, setup, quick start and how-to information" and avoiding "implementation details irrelevant to users." This advice is fairly commonplace. However, more interesting, she also encourages writers to address both a code-first learning style and a concepts-first learning style. She writes:
 
