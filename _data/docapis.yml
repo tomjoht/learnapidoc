@@ -378,7 +378,7 @@ folders:
     jurl: /nativelibraryapis_nonrefdocs.html
 
 - title: "XI: Documentation processes and developer portals"
-  jurl: /docapis_managing_dev_portals.html
+  jurl: /docapis_managing_doc_processes_and_developer_portals.html
   folderitems:
 
   - title: DX content strategy with developer portals

@@ -1,12 +1,14 @@
 ---
-title: Managing developer portals
-permalink: /docapis_managing_dev_portals.html
+title: Documentation processes and developer portals
+permalink: /docapis_managing_doc_processes_and_developer_portals.html
 course: "Documenting REST APIs"
 weight: 12.0
 sidebar: docapis
 section: devportals
-path1: /docapis_managing_dev_portals.html
+path1: /docapis_managing_doc_processes_and_developer_portals.html
 last-modified: 2020-11-02
+redirect_from:
+- docapis_managing_doc_processes_and_developer_portals.html
 ---
 
 The process for managing developer portal documentation includes a number of different tasks outside of content development. The role of a DX (developer experience) content strategist plays a key role in defining workflows, standards, user flows, processes, and other aspects of the site. workflows for different types of documentation.
