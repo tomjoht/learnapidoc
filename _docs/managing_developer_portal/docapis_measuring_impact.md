@@ -78,7 +78,7 @@ Although rubrics are common, many teachers feel they aren't actually helpful. Th
 >
 > Problem # 2: They are designed to communicate student deficits, not student competency.
 
-For example, if a teacher marks a student low on the reasoning category (perhaps due to some logical fallacies), the student might not understand without more specific feedback, Frieden explains. For a "Below Average" essay, the teacher might check a box next to a Reasoning category that says, "The text provides data and evidence that attempts to back up the claim and unclearly addresses counterclaims or lacks counterclaims." But this doesn't clearly communicate to the student what the issue is or what needs to be done. Instead, the rubric because an easy way to justify a deficit without actually helping the student improve their writing.
+For example, if a teacher marks a student low on the reasoning category (perhaps due to some logical fallacies), the student might not understand without more specific feedback, Frieden explains. For a "Below Average" essay, the teacher might check a box next to a Reasoning category that says, "The text provides data and evidence that attempts to back up the claim and unclearly addresses counterclaims or lacks counterclaims." But this doesn't clearly communicate to the student what the issue is or what needs to be done. Instead, the rubric becomes an easy way to justify a deficit without actually helping the student improve their writing.
 
 In the tech doc world, common categories in rubrics are equally high-level and general. For example, you might assess documentation against the following criteria:
 
