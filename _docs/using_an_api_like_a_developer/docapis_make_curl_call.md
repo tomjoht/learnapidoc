@@ -9,7 +9,7 @@ weight: 2.4
 sidebar: docapis
 section: likeadeveloper
 path1: /likeadeveloper.html
-last-modified: 2020-11-02
+last-modified: 
 ---
 
 In this section, you'll use curl to make the same weather API requests you made previously with Postman. If you haven't installed curl, see [curl intro and installation](docapis_install_curl.html) first.

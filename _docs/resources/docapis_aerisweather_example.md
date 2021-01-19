@@ -6,7 +6,7 @@ weight: 13.31
 sidebar: docapis
 section: likeadeveloper
 path1: /likeadeveloper.html
-last-modified: 2020-11-02
+last-modified: 
 ---
 
 In this activity, you'll use the Aeris Weather API to get the wind speed for a specific place (your choice). You'll then display the wind speed on a web page based on some conditional logic about the wind speed's value.

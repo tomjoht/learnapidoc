@@ -6,7 +6,7 @@ weight: 12.3
 sidebar: docapis
 section: devportals
 path1: /docapis_managing_doc_processes_and_developer_portals.html
-last-modified: 2020-11-02
+last-modified: 2020-08-13
 ---
 
 With any developer portal, you'll receive not only incoming [documentation projects](docapis_managing_doc_projects.html) but also a healthy dose of small documentation requests too. These small requests can be managed in a similar way as documentation projects but can also be scaled down with a simpler workflow. Even so, small requests have unique challenges when it comes to prioritization, weighting, and cadence.

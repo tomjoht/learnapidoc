@@ -6,7 +6,7 @@ weight: 1.6
 sidebar: docapis
 section: introtoapis
 path1: /docapis_introtoapis.html
-last-modified: 2020-11-02
+last-modified: 2020-03-30
 ---
 
 Before we dive into the technical aspects of APIs, let's explore the market, general landscape, and trends with API documentation.

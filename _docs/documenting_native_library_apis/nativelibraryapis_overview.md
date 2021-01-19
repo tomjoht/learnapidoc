@@ -6,7 +6,7 @@ sidebar: docapis
 weight: 11.01
 section: nativelibraryapis
 path1: /nativelibraryapis.html
-last-modified: 2020-11-02
+last-modified: 2018-12-26
 ---
 
 In most of this course, we focused on [REST APIs](docapis_what_is_a_rest_api.html). In this section, we'll explore native library APIs, which are more common when building native apps that you install on devices (such as Android or iOS devices). Understanding native library APIs will also help clarify what makes REST APIs so different.

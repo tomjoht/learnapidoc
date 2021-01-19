@@ -6,7 +6,7 @@ weight: 13.91
 sidebar: docapis
 section: resources
 path1: /resources.html
-last-modified: 2020-11-02
+last-modified:
 ---
 
 The following are other video recordings for API-related presentations.

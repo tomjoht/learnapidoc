@@ -7,7 +7,7 @@ weight: 6.8
 sidebar: docapis
 section: docconceptual
 path1: /docconceptual.html
-last-modified: 2020-11-02
+last-modified: 2019-03-30
 ---
 
 Quick reference guides serve a different function than [getting started tutorials](docapis_doc_getting_started_section.html). While the getting started tutorial helps beginners get oriented by providing an end-to-end instruction to make a simple API request, the quick reference guide helps users get a glimpse of the system as a whole, often by providing a list of the API's endpoints.

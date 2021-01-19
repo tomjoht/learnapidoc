@@ -6,7 +6,7 @@ sidebar: docapis
 weight: 11.1
 section: nativelibraryapis
 path1: /nativelibraryapis.html
-last-modified: 2020-11-02
+last-modified: 2020-12-26
 ---
 
 To understand the documentation for Java APIs, it helps to see the context of what the documentation describes. As such, I created a simple little Java application (called [sample-java-project](https://github.com/tomjoht/sample-java-project)) to demonstrate how the various tags get rendered into the Javadoc.

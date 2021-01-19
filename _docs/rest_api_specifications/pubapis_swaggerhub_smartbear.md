@@ -6,7 +6,7 @@ sidebar: docapis
 weight: 4.8
 section: restapispecifications
 path1: /restapispecifications.html
-last-modified: 2020-11-02
+last-modified: 
 ---
 
 Previously, I explored using the open-source [Swagger UI project](pubapis_swagger.html) as a way to render your [OpenAPI specification document](pubapis_openapi_tutorial_overview.html). The same company that offers the free, open-source version of Swagger Editor and Swagger UI (Smartbear) also offers a premium version with more robust features. This premium version of Swagger Editor is called [SwaggerHub](https://app.swaggerhub.com/). You can see a comparison of features between the open source and premium versions [here](https://swaggerhub.com/swagger-open-source-comparison/).

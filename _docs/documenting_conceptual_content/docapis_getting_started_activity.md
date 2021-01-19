@@ -6,7 +6,7 @@ weight: 6.92
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
-last-modified: 2020-11-02
+last-modified: 2020-01-21
 ---
 
 {% include content/activities/getting_started_tutorial.md %}

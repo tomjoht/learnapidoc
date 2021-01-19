@@ -6,7 +6,7 @@ weight: 1.4
 sidebar: docapis
 section: introtoapis
 path1: /docapis_introtoapis.html
-last-modified: 2020-11-02
+last-modified: 2018-12-29
 ---
 
 I initially compiled this material to teach a series of workshops to a local tech writing firm in the San Francisco Bay area. They felt they either needed to train their existing technical writers on how to document APIs, or they would need to let some of their writers go. I taught a series of three workshops delivered in the evenings, spread over several weeks.

@@ -6,7 +6,7 @@ sidebar: docapis
 weight: 8.2
 section: publishingapis
 path1: /publishingapis.html
-last-modified: 2020-11-02
+last-modified:
 ---
 
 In the previous topic, we browsed through a long [survey of API doc sites](pubapis_apilist.html) and looked for similar patterns in their designs. "Design patterns" are common approaches or techniques in the way something is designed. Although one could probably identify many more patterns, the following design patterns are common with API doc sites: structure and templates, single seamless website, abundant code examples, lengthy pages, and interactive API explorers. I explore each of these elements in the following sections.

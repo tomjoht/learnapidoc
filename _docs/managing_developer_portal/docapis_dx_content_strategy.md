@@ -6,7 +6,7 @@ weight: 12.1
 sidebar: docapis
 section: devportals
 path1: /docapis_managing_doc_processes_and_developer_portals.html
-last-modified: 2020-11-02
+last-modified: 2020-8-25
 ---
 
 As the content grows on a developer portal, there's an increasing need for some technical writers to expand their documentation roles from individual contributors creating and publishing new content to dedicated content strategists. These dedicated content strategists manage the processes, standards, tools, governance, and workflows for the content that is primarily authored by contributing writer and engineering teams.

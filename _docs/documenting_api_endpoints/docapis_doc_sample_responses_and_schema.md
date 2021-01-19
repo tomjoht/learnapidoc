@@ -9,7 +9,7 @@ section: docendpoints
 path1: /docendpoints.html
 redirect_from:
 - https://idratherbewriting.com/learnapidoc/docapis_doc_sample_responses.html
-last-modified: 2020-11-02
+last-modified: 2019-05-06
 ---
 
 {% include workflow_map.html step="5" map="content/reference_doc_map.html"  %}

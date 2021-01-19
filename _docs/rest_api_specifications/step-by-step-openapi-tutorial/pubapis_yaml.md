@@ -7,7 +7,7 @@ weight: 4.42
 section: openapitutorial
 path1: /restapispecifications.html
 path2: /openapi_tutorial.html
-last-modified: 2020-11-02
+last-modified: 
 ---
 
 Before we dive into the steps of the [OpenAPI Tutorial](pubapis_openapi_tutorial_overview.html), it will help to have a better grounding in YAML, since this is the most common syntax for the OpenAPI specification document. (You can also use [JSON](docapis_analyze_json.html), but the prevailing trend with the OpenAPI document format is YAML.)

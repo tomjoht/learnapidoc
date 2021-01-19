@@ -7,7 +7,7 @@ weight: 4.40
 section: restapispecifications
 path1: /restapispecifications.html
 path2: /openapi_tutorial.html
-last-modified: 2020-11-02
+last-modified: 
 ---
 
 {% include minitoc.html %}

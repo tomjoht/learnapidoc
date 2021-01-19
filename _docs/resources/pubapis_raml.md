@@ -7,7 +7,7 @@ weight: 13.4
 sidebar: docapis
 section: resources
 path1: /resources.html
-last-modified: 2020-11-02
+last-modified: 
 ---
 
 RAML stands for REST API Modeling Language and is similar to the [OpenAPI specification](pubapis_openapi_tutorial_overview.html). RAML is backed by [Mulesoft](https://www.mulesoft.com/), a full-service, end-to-end API company.

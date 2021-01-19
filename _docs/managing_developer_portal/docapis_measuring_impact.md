@@ -6,7 +6,7 @@ weight: 12.92
 sidebar: docapis
 section: devportals
 path1: /docapis_managing_doc_processes_and_developer_portals.html
-last-modified:
+last-modified: 2021-01-12
 ---
 
 As you set goals for your role or team, you might want to measure your impact on documentation quality in some way. The main reason for measuring your impact should be to evaluate your progress against documentation improvement goals. If you don't have any data to provide feedback on your efforts, it's hard to know if you're making a difference.

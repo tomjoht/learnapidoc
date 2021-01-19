@@ -8,7 +8,7 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 redirect_from:
 - /learnapidoc/docapis_course_slides.html
-last-modified: 2020-11-02
+last-modified: 2020-03-23
 ---
 
 The workshop agenda, slides, and activities correspond to full-day API workshop. The slides and activities mirror similar sections in the course.

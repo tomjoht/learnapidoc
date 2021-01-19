@@ -6,7 +6,7 @@ weight: 11.2
 sidebar: docapis
 section: nativelibraryapis
 path1: /nativelibraryapis.html
-last-modified: 2020-11-02
+last-modified: 2018-12-26
 ---
 
 To understand the different components of a Javadoc, first you have to understand a bit about Java. Becoming familiar with the names of the different components of Java will allow you to enter conversations and understand the code at a high level. When you describe various aspects of sample code, knowing when to call something a class, method, parameter, or enum can be critical to your documentation's credibility.

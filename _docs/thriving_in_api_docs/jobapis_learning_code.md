@@ -6,7 +6,7 @@ weight: 10.2
 sidebar: docapis
 section: jobapis
 path1: /jobapis.html
-last-modified: 2020-11-02
+last-modified: 
 ---
 
 With developer documentation roles, some level of coding is required. But you don't need to know as much as developers, and acquiring that deep technical knowledge will usually cost you expertise in other areas.

@@ -9,7 +9,7 @@ weight: 3.01
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
-last-modified: 2020-11-02
+last-modified: 2019-01-03
 ---
 
 Until this point, you've been [acting as a developer](likeadeveloper.html) with the task of integrating the weather data into your site. The point was to help you understand the type of information developers need and how they use APIs.

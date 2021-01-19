@@ -6,7 +6,7 @@ weight: 13.7
 sidebar: docapis
 section: resources
 path1: /resources.html
-last-modified: 2020-11-02
+last-modified: 
 ---
 
 This is the answer key for [Activity: What's wrong with this API reference topic](docapis_api_whats_wrong_activity.html).

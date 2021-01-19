@@ -6,10 +6,10 @@ weight: 1.5
 sidebar: docapis
 section: introtoapis
 path1: /docapis_introtoapis.html
-last-modified: 2020-11-02
+last-modified: 2021-01-18
 ---
 
-In case you'd like to know a little bit about me, I'm currently based in Santa Clara, California, soon moving to Seattle, and now working for Google. (Previously, I was at Amazon and a couple of startups in the Bay area.)
+In case you'd like to know a little bit about me, I'm currently based in Seattle, Washington, working for Google. (Previously, I was at Amazon and a couple of startups in the Bay area.)
 
 {% if site.format == "web" %}<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/tomjohnson.jpg" class="small" style="float: right; padding:1em;"/>
 {% else %}

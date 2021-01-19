@@ -7,7 +7,7 @@ weight: 7.61
 sidebar: docapis
 section: docapiscode
 path1: /doccode.html
-last-modified: 2020-11-02
+last-modified: 2020-08-09
 ---
 
 Sample apps aren't just a convenience for developers, nor even an illuminating demonstration of abstract concepts in code. Sample apps are critical for technical writers to write good documentation. Without the ability to [test content](testingdocs_overview.html) through a sample app, it's nearly impossible to know if your code instructions in your docs work.

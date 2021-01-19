@@ -9,7 +9,7 @@ weight: 2.01
 sidebar: docapis
 section: likeadeveloper
 path1: /likeadeveloper.html
-last-modified: 2020-11-02
+last-modified: 
 ---
 
 Let's start using an actual REST API to get more familiar with how they work. In the upcoming sections, you'll explore some weather APIs in the context of a specific use case: retrieving a weather forecast. By first playing the role of a developer using an API, you'll gain a greater understanding of how your audience will use APIs, the type of information they'll need, and what they might do with the information.

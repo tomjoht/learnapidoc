@@ -6,7 +6,7 @@ sidebar: docapis
 weight: 8.95
 section: publishingapis
 path1: /publishingapis.html
-last-modified: 2020-11-02
+last-modified:
 ---
 
 [Static site generators](pubapis_static_site_generators.html) are a breed of website compilers that package up a group of files (usually [written in Markdown](pubapis_markdown.html)) and make them into a fully deployable website. One of the most popular static site generators (based on the number of downloads, usage, and community) is [Jekyll](https://jekyllrb.com/), and it's the one I have the most experience with, so I'll be focusing on Jekyll here, particularly how you can integrate Jekyll with CloudCannon for a continuous delivery publishing solution.

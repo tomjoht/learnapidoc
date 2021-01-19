@@ -7,7 +7,7 @@ weight: 2.6
 sidebar: docapis
 section: likeadeveloper
 path1: /likeadeveloper.html
-last-modified: 2020-11-02
+last-modified: 
 ---
 
 Our [sample weather API](docapis_scenario_for_using_weather_api.html) doesn't allow you to use anything but a GET method, so for this exercise, to use other methods with curl, we'll use the [petstore API from Swagger](http://petstore.swagger.io/). However, we won't actually use the Swagger UI (which is something we'll [explore later](pubapis_openapi_intro.html)). For now, we just need an API with which we can use to create, update, and delete content.

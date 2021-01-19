@@ -6,7 +6,7 @@ sidebar: docapis
 weight: 4.9
 section: restapispecifications
 path1: /restapispecifications.html
-last-modified: 2020-11-02
+last-modified: 
 ---
 
 Whenever discussions about Swagger and other REST API specifications take place, technical writers invariably ask how they can integrate the Swagger output with the rest of their documentation. This question dominates tech writer discussions perhaps more than any other when it comes to Swagger.

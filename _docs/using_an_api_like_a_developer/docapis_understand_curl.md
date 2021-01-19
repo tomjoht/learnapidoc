@@ -6,7 +6,7 @@ weight: 2.5
 sidebar: docapis
 section: likeadeveloper
 path1: /likeadeveloper.html
-last-modified: 2020-11-02
+last-modified: 
 ---
 
 Almost every API shows how to interact with the API using curl. So before moving on, let's pause a bit and learn more about curl.

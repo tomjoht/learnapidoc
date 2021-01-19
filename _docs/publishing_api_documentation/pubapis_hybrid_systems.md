@@ -6,7 +6,7 @@ sidebar: docapis
 weight: 8.93
 section: publishingapis
 path1: /publishingapis.html
-last-modified: 2020-11-02
+last-modified:
 ---
 
 Rounding out the publishing tool options, there is a class of developer doc tools that provide online GUIs for authoring and publishing, but they still store your content as flat files in repositories such as GitHub and Bitbucket. In other words, they provide a WordPress.com-like experience for your content (giving you a user interface to browse your posts, pages, layouts, and other content) but allow your content to live in plain text files in version control repositories.

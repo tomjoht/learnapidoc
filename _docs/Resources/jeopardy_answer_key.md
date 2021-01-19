@@ -6,7 +6,7 @@ weight: 13.6
 sidebar: docapis
 section: resources
 path1: /resources.html
-last-modified: 2020-11-02
+last-modified: 
 ---
 
 The API Jeopardy questions are in the [Conclusion section of Workshop Activities](workshop.html#conclusion).

@@ -6,7 +6,7 @@ weight: 11.7
 sidebar: docapis
 section: nativelibraryapis
 path1: /nativelibraryapis.html
-last-modified: 2020-11-02
+last-modified: 2018-12-26
 ---
 
 An alternative to Javadoc is Doxygen. Doxygen works highly similarly to Javadoc, except that it can process more languages (Java, C++, C#, and more). Doxygen is most commonly used with C++. Additionally, there's a GUI tool called Doxywizard that makes it easy to generate the file.

@@ -7,7 +7,7 @@ weight: 1.9
 sidebar: docapis
 section: introtoapis
 path1: /docapis_introtoapis.html
-last-modified: 2020-11-02
+last-modified: 2020-10-28
 ---
 
 I recently [conducted a survey](/blog/developer-documentation-survey-2020/) about trends for those creating documentation for developers and engineers. You can view the content in several formats: slides, webinar, or article.

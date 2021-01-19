@@ -8,7 +8,7 @@ section: restapispecifications
 path1: /restapispecifications.html
 # when ready to publish, i'll change the following to published: true
 published: false
-last-modified: 2020-11-02
+last-modified: 
 ---
 
 General strategy:

@@ -6,7 +6,7 @@ weight: 10.1
 sidebar: docapis
 section: jobapis
 path1: /jobapis.html
-last-modified: 2020-11-02
+last-modified: 
 ---
 
 Technical writers who can write developer documentation are in high demand, especially in the Silicon Valley area. There are plenty of technical writers who can write documentation for graphical user interfaces but not many who can navigate the developer landscape to provide highly technical documentation for developers working in code.

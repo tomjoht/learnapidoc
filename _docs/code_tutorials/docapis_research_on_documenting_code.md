@@ -7,7 +7,7 @@ weight: 7.2
 sidebar: docapis
 section: docapiscode
 path1: /doccode.html
-last-modified: 2020-11-02
+last-modified: 2019-11-17
 ---
 
 Before diving in to how to document code, let's first explore some research that has been done on best practices for documenting code, as this can inform our direction and approach. A couple of academic articles stand out as noteworthy for this effort:

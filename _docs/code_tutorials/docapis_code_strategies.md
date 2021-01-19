@@ -7,7 +7,7 @@ weight: 7.3
 sidebar: docapis
 section: docapiscode
 path1: /doccode.html
-last-modified: 2020-11-02
+last-modified: 2019-11-17
 ---
 
 In this section, we'll dive into approaches for actually documenting code. There are a number of approaches writers and engineers take here, and I've covered five of them with examples and commentary.
