@@ -8,7 +8,7 @@ section: restapispecifications
 path1: /restapispecifications.html
 redirect_from:
 - /learnapidoc/stoplight_studio_tutorial.html
-last-modified: 
+last-modified:
 ---
 
 In [Introduction to the OpenAPI specification](pubapis_openapi_intro.html), I explained that you can create an OpenAPI specification document in several ways: (a) auto-generating it from annotations in your source code, (b) coding it by hand in an editor such as the Swagger Editor, and (c) using a GUI editor such as Stoplight Studio. In this tutorial, I'll walk through the third approach: using Stoplight Studio, a GUI editor for modeling your API. In this tutorial, you'll use Stoplight Studio to create a valid OpenAPI specification, using the OpenWeatherMap as the sample API.
@@ -130,7 +130,7 @@ To populate the API info into Stoplight Studio, expand the **API information** b
 
 When finished, the editor should look as follows:
 
-{% include course_image.html size="large"  filename="stoplight_studio_api_overview" ext_print="png" ext_web="png" alt="Creating the API overview" caption="Creating the API overview" %}
+{% include course_image.html size="large"  filename="stoplight_studio_api_overview" ext_print="png" ext_web="png" alt="Creating the product overview" caption="Creating the product overview" %}
 
 ## Previewing the output
 

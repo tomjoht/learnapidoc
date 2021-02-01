@@ -10,14 +10,14 @@ path1: /docconceptual.html
 last-modified: 2019-03-30
 ---
 
-Following the [API Overview section](docapis_doc_overview.html), you usually have a "Getting started" section that details the first steps users need to start using the API. This section often includes the whole process from beginning to end, compressed as simply as possible.
+Following the [product overview section](docapis_doc_overview.html), you usually have a "Getting started" section that details the first steps users need to start using the API. This section often includes the whole process from beginning to end, compressed as simply as possible.
 
 {% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}
 
-## Purpose of the API overview
+## Purpose of the product overview
 
 The Getting Started topic is somewhat like the typical Hello World tutorial in developer documentation, but with an API. The tutorial holds a user's hand from start to finish in producing the simplest possible output with the system. For Hello World tutorials, the simplest output might just be a message that says "Hello World." For an API, it might be a successful response from the most basic request.
 
