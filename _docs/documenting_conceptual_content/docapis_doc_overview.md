@@ -7,7 +7,7 @@ weight: 6.1
 sidebar: docapis
 section: docconceptual
 path1: /docconceptual.html
-last-modified: 2021-01-31
+last-modified: 2021-02-01
 ---
 
 The product overview explains what you can do with the product, including the high-level business goals, the market needs or pain points it solves, who the product or other features are for, and other introductory information. Although a seemingly simple page, the product overview can confusingly overlap into marketing domains, present redundancies with README's, and pose challenges with a more diverse audience (both engineers and bizdev people) than the rest of your technical docs. Given the pre-sales context, the product overview is an area where documentation and marketing intersect.
@@ -172,6 +172,8 @@ Product overviews vary from product to product, but here's the general flow that
 
 At the end of the product overview, be sure to transition into the next logical step: getting started! Here's where your [getting started tutorial](docapis_doc_getting_started_section.html) gets handed off to the user. It's your call to action, so to speak.
 
+{% include image_ad_right.html %}
+
 ## Sample product overviews
 
 Here are a few sample product overviews.
@@ -205,8 +207,6 @@ This is an overview I wrote for a product called "Video Skills Kit for Fire TV."
 Both of these product overviews are like product landing pages within a larger developer portal that covers many different products. In fact, if you go to [developer portal homepage](https://developer.amazon.com/), the page just routes you to different product overview areas.
 
 ## <i class="fa fa-user-circle"></i> Activity with product overviews
-
-{% include image_ad_right.html %}
 
 With the [open-source project you identified](docapis_find_open_source_project.html), identify the API overview. Then answer the following questions:
 
