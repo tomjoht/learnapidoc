@@ -125,6 +125,18 @@ README's have the additional complication of being difficult to maintain. Unless
 
 I share this experience only to reinforce that README files shouldn't contain so many doc details that the information begins to conflict or become outdated with your main documentation. As long as you have only brief, condensed information in your README, it likely won't go out of date with each release.
 
+## Key differentiators in product overviews
+
+The product overview space is interesting because it places you into murky territory where marketing and documentation blend. If you were to put on a marketing hat for a moment, what angle would you take in your writing?
+
+Although it would be awesome to compare your product against competitor products, most likely your legal group would freak out (mentioning competitors is usually taboo). And you might not have a deep understanding of other products to make a fair comparison. Or you might feel that readers will assume you're too biased and wouldn't trust your comparison anyway.
+
+But what you can do is focus in on your product's key differentiators. These are features your product has that make it unique in the market. For example, maybe users can access your app from the browser rather than installing it locally. You don't need to create a comparison chart showing how products X, Y, and Z lack online browser access. But by emphasizing this differentiating feature, you help establish a selling point and a potential reason for market dominance.
+
+Remember that the product overview, unless other documentation, often addresses a *presales* scenario. As such, the reader is likely wondering how your product compares with other products in the same category. Why should they go with your product rather than another? What advantage does your product provide? Unless you know the competitive advantage of your product, you'll have a difficult time writing marketing-esque content.
+
+Fortunately, your marketing team should already have this information available &mdash; a competitive analysis is one of the fundamental marketing documents. Ask for it so you can follow a similar emphasis in the product overview. For more information on this topic, especially "How does this product differ from other products?" see my post [My documentation takeaways from the Boeing disaster -- two essential doc questions to ask for any project](/2019/03/20/two-doc-takeaways-from-boeing-disaster/).
+
 ## Good Docs project template
 
 If you're looking for more inspiration and guidance about overviews, see the [API overview template from the Good Docs project](https://github.com/thegooddocsproject/templates/blob/master/api-overview/about-overview.md). They recommend similar sections as those I've been recommending here &mdash; establish who the docs are for, what problems the product solves, what market/industry the product is intended for, and so on. In the body of the overview, the Good Docs team recommends covering the following questions:
