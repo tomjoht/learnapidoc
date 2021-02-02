@@ -16,7 +16,7 @@ Up until this point, we've mostly been focusing on the [reference aspects of API
 
 The following are common conceptual topics commonly found in API documentation:
 
-* [Product Overview](docapis_doc_overview.html)
+* [API product overview](docapis_doc_overview.html)
 * [Getting started](docapis_doc_getting_started_section.html)
 * [Authentication and authorization requirements](docapis_more_about_authorization.html)
 * [Status and error codes](docapis_doc_status_codes.html)
