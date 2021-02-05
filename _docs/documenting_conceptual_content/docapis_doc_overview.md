@@ -38,11 +38,11 @@ A product overview should address some basic who/what/why/how/when type question
 
 {% include course_image.html size="medium" border="true" filename="nonref_overview" ext_print="png" ext_web="svg" alt="product overview" caption="The product overview provides high-level detail about the purpose, audience, and market need for your API." %}
 
-Keep in mind that there are thousands of APIs. If people are browsing your API, their first and most pressing question is, what information does it provide? Is this information relevant and useful to my needs? How does it differ from other products in this same space? The user's first question is not "how do I configure this endpoint."
+Keep in mind that there are thousands of APIs. If people are browsing your API, their first and most pressing question is, what information does it provide? Is this information relevant and useful to my needs? How does it differ from other products in this same space? The user's first question is usually not "How do I configure this endpoint."
 
 ## Telling your product's story
 
-To tell your product's story, consider identifying a market need that your product solves. This is the basics of storytelling -- there is some conflict that a protagonist (in this case, your product) addresses and solves. In [The Top 20 Reasons Startups Fail](https://www.cbinsights.com/research/startup-failure-reasons-top/), one of the main reasons startups fail is their inability to solve a market problem. The authors explain:
+To tell your product's story, consider identifying a market need that your product solves. This is the basics of storytelling &mdash; there is some conflict that a protagonist (in this case, your product) addresses and solves. In [The Top 20 Reasons Startups Fail](https://www.cbinsights.com/research/startup-failure-reasons-top/), one of the main reasons startups fail is their inability to solve a market problem. The authors explain:
 
 > Startups fail when they are not solving a market problem. We were not solving a large enough problem that we could universally serve with a scalable solution. We had great technology, great data on shopping behavior, great reputation as a thought leader, great expertise, great advisors, etc, but what we didn’t have was technology or business model that solved a pain point in a scalable way. (*CB Insights*)
 
@@ -78,7 +78,7 @@ This marketing layer covers these topics: Overview, Features, Pricing, Getting S
 
 <a class='noCrossRef'  href="https://docs.aws.amazon.com/lambda/latest/dg/welcome.html"><img style="border: 1px solid #dedede"  src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/awslambdadochomepage.png" alt="Lambda documentation homepage" /></a>
 
-Just read the first paragraph from each screenshot and you'll see how similar yet different the two descriptions are. They repeat many of the same points but in different ways. The documentation product overview addresses these questions:
+If you read the first paragraph from each screenshot, you'll see how similar yet different the two descriptions are. They repeat many of the same points but in different ways. The documentation product overview addresses these questions:
 
 * When should I use AWS Lambda?
 * Are you a first-time user of AWS Lambda?
@@ -91,7 +91,7 @@ But even with differences, the idea is that business decision-makers read the ma
 
 Your organization might have multiple teams writing content like this, or you might be tasked with creating both the higher-level marketing layer and the documentation yourself (especially in startups). In some ways, having a single team or writer handle both types of content might lead to a more streamlined, unified content experience. When you're the sole writer, you're less likely to repeat yourself in different places in contradictory ways. You can simply devote a section of your documentation to the marketing content rather than housing it on another site.
 
-If you are stuck with the two-site model (marketing on one site, docs on another), you could try to share content between these two sites, but usually marketing has a different system for managing and publishing content than the documentation teams. Marketers don't usually adopt docs-as-code systems but rather prefer more CMS-driven systems. These systems rarely share content with each other, and even if they did, the marketing versions might be written using another style, perspective, or approach that contrasts with your docs, making it difficult to single-source the content. For example, I once tried to re-use marketing content that was written entirely in third-person point of view ("the partner does X") rather than the traditional second-person point of view in docs ("you do X").
+If you are stuck with the two-site model (marketing on one site, docs on another), you could try to share content between these two sites, but usually marketing has a different system for managing and publishing content than the documentation teams. Marketers don't usually adopt docs-as-code systems but rather prefer more CMS-driven systems. These systems rarely share content with each other, and even if they did, the marketing versions might be written using another style, perspective, or approach that contrasts with your docs, making it difficult to single-source the content. For example, I once tried to re-use marketing content that was written entirely in third-person point of view ("the partner does X") rather than the traditional second-person point of view in docs ("you do X"). It didn't work out well.
 
 {% include random_ad.html %}
 
@@ -107,7 +107,7 @@ What strategies should you implement when you're faced with writing a product ov
 
 Here it's worth diving into some differences between documentation copy and marketing copy. While both genres might appear to share similar purposes in the product overview, avoid falling into marketing style in docs. For example, suppose you find a few pages of product descriptions that the marketing team already wrote, and you want to just copy it into the docs for the documentation product overview. Should you?
 
-If you do this, strip out mention of the word "easy" or "just," as in "the implementation is so easy, you *just* have to do X...." To sell a product, marketing often gravitates toward promises about ease of implementation. This is perhaps the hallmark of marketing content. And many bizdevs or execs are trying to scope the difficulty of the implementation, so marketing's message about ease of implementation makes sense.
+If you do this, strip out mention of the word "easy" or "just," as in "the implementation is so easy, you *just* have to do X...." To sell a product, marketing often gravitates toward promises about ease of implementation. This is perhaps the hallmark of marketing content (from a tech writer's perspective anyway). And many bizdevs or execs are trying to scope the difficulty of the implementation, so marketing's message about ease of implementation makes sense.
 
 But as a technical writer, you not only have an obligation to be honest about implementation complexity, you must also recognize that what is easy for one user might be insurmountable to another. (If you've ever done DIY projects at home, you know what I'm talking about.)
 
@@ -123,7 +123,7 @@ Beyond adjectives about easiness, in the previous Lambda examples, the marketing
 
 As I've been arguing, the product overview space places you into murky territory where marketing and documentation blend. If you were to put on a marketing hat for a moment, what angle would you take in your writing (beyond language)?
 
-Although it would be awesome to compare your product against competitor products, most likely your legal group would not allow it (mentioning competitors is usually taboo). And you might not have a deep understanding of other products to make a fair comparison. Or you might feel that readers will assume you're too biased and wouldn't trust your comparison anyway.
+Although it would be awesome to compare your product against competitor products, most likely your legal group will not allow it (mentioning competitors is usually taboo). And you might not have a deep understanding of other products to make a fair comparison. Or you might feel that readers will assume you're too biased and wouldn't trust your comparison anyway.
 
 But what you can do is focus on your product's key differentiators. These are features your product has that make it unique in the market. For example, maybe users can access your app from the browser rather than installing it locally. You don't need to create a comparison chart showing how products X, Y, and Z lack online browser access. But by emphasizing this differentiating feature, you help establish a selling point and a potential reason for buying the product.
 

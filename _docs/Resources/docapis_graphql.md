@@ -2,7 +2,7 @@
 title: 'Documenting GraphQL APIs'
 permalink: /docapis_graphql_apis.html
 course: "Documenting REST APIs"
-weight: 13.02
+weight: 14.02
 sidebar: docapis
 section: resources
 path1: /resources.html

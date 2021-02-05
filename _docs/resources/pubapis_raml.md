@@ -3,7 +3,7 @@ title: RAML tutorial
 permalink: /pubapis_raml.html
 keywords: RAML
 course: "Publishing REST APIs"
-weight: 13.4
+weight: 14.4
 sidebar: docapis
 section: resources
 path1: /resources.html

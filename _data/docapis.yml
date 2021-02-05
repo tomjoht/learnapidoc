@@ -377,8 +377,8 @@ folders:
   - title: "Create non-ref docs with native library APIs"
     jurl: /nativelibraryapis_nonrefdocs.html
 
-- title: "XI: Documentation processes and developer portals"
-  jurl: /docapis_managing_doc_processes_and_developer_portals.html
+- title: "XI: Documentation processes and methodology"
+  jurl: /docapis_managing_doc_processes.html
   folderitems:
 
   - title: DX content strategy with developer portals
@@ -411,10 +411,19 @@ folders:
   - title: Processes for changing internal doc culture
     jurl: /docapis_changing_internal_doc_culture.html
 
+- title: "XIII: Metrics and measurement"
+  jurl: /docapis_metrics_and_measurement.html
+  folderitems:
   - title: Measuring progress against documentation quality goals
     jurl: /docapis_measuring_impact.html
 
-- title: "XII: API glossary and resources"
+  - title: A practical checklist to evaluate documentation
+    jurl: /docapis_metrics_checklist_for_evaluation.html
+
+  - title: Quantifying progress
+    jurl: /docapis_metrics_quantifying_progress.html
+
+- title: "XIV: API glossary and resources"
   jurl: /resources.html
   folderitems:
 

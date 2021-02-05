@@ -5,7 +5,7 @@ course: "Documenting REST APIs"
 weight: 12.3
 sidebar: docapis
 section: devportals
-path1: /docapis_managing_doc_processes_and_developer_portals.html
+path1: /docapis_managing_doc_processes.html
 last-modified: 2020-08-13
 ---
 

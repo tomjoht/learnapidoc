@@ -1,11 +1,11 @@
 ---
-title: Documentation processes and developer portals
-permalink: /docapis_managing_doc_processes_and_developer_portals.html
+title: Documentation processes and methodology
+permalink: /docapis_managing_doc_processes.html
 course: "Documenting REST APIs"
 weight: 12.0
 sidebar: docapis
 section: devportals
-path1: /docapis_managing_doc_processes_and_developer_portals.html
+path1: /docapis_managing_doc_processes.html
 last-modified: 2020-08-25
 redirect_from:
 - docapis_managing_doc_processes_and_developer_portals.html
