@@ -377,7 +377,7 @@ folders:
   - title: "Create non-ref docs with native library APIs"
     jurl: /nativelibraryapis_nonrefdocs.html
 
-- title: "XI: Documentation processes and methodology"
+- title: "XI: Processes and methodology"
   jurl: /docapis_managing_doc_processes.html
   folderitems:
 
@@ -417,10 +417,13 @@ folders:
   - title: Measuring progress against documentation quality goals
     jurl: /docapis_measuring_impact.html
 
-  - title: A practical checklist to evaluate documentation
-    jurl: /docapis_metrics_checklist_for_evaluation.html
+  - title: First-level checklist for API documentation
+    jurl: /docapis_metrics_first_level_checklist.html
 
-  - title: Quantifying progress
+  - title: Second-level checklist for API documentation
+    jurl: /docapis_metrics_second_level_checklist.html
+
+  - title: Quantifying your progress
     jurl: /docapis_metrics_quantifying_progress.html
 
 - title: "XIV: API glossary and resources"

@@ -4,9 +4,10 @@ permalink: /docapis_measuring_impact.html
 course: "Documenting REST APIs"
 weight: 13.1
 sidebar: docapis
-section: devportals
-path1: /docapis_managing_doc_processes.html
-last-modified: 2021-02-4
+section: metrics
+path1: /docapis_metrics_and_measurement.html
+last-modified: 2021-02-06
+
 ---
 
 As you set goals for your role or team, you might want to measure your impact on documentation quality in some way. The main reason for measuring your impact should be to evaluate your progress against documentation improvement goals. If you don't have any data to provide feedback on your efforts, it's hard to know if you're making a difference.
@@ -254,20 +255,8 @@ This is a pattern I described in [How Developers Use API Documentation: An Obser
 
 Many other sources can inform documentation quality. For example, the [Good Docs project](https://thegooddocsproject.dev/) aims to create templates that incorporate best practices. For example, by using the [Overview template](https://github.com/thegooddocsproject/templates/blob/v0.1/api-overview/about-overview.md), you'll automatically address the various questions and topics needed here. The project has templates for an overviews, quickstarts, reference material, discussions, how-to tasks, logging, tutorials, and more.
 
+{% include random_ad3.html %}
+
 Another place to look for information quality is perhaps with information typing models (Information Mapping, DITA, and more). But I've already surveyed the landscape sufficiently here. My intent is not to exhaustively survey research on information quality. As Strimling's earlier research pointed out, most people generally agree on the high-level categories. I want to instead provide specifics on implementation, especially for developer docs.
 
-## An extremely detailed checklist
-
-As indicated earlier, my goal is to create a practical guide for measuring quality. Instead of looking at docs against a list of general, abstract criteria, I encourage creating a series of characteristics that, if fulfilled, should lead to all the more high-level categories of the rubric automatically. Each of these characteristics must be specific, actionable, and unambiguous in how it would be implemented in your docs.
-
-{% comment %}
-## Comprehensive versus quick rubrics
-
-Although a comprehensive rubric might be more complete, it's not all that useful unless you're familiar with the documentation. For example, you can't know if the steps are accurate unless you go through the steps. You can't know if the docs aren't contradictory unless you've read all the documentation.
-
-All too often, you might find yourself situated in a new group, with many sets of documentation before you. It could take a couple of years to become familiar with it all. During that time, you will have contributed so much to the docs that you can no longer measure the impact you've made.
-
-In this section, I'll present a checklist/rubric that contains all the criteria you need to assess API documentation.
-{% endcomment %}
-
-*Continue on to the next section, [A practical checklist to evaluate documentation](docapis_metrics_checklist_for_evaluation.html).*
+*Continue on to the next section, [First-level checklist for API documentation](docapis_metrics_first_level_checklist).*
