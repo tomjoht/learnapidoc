@@ -6,7 +6,7 @@ sidebar: docapis
 weight: 8.7
 section: publishingapis
 path1: /publishingapis.html
-last-modified:
+last-modified: 2018-12-25
 ---
 
 In this tutorial, we'll walk through a publishing workflow with one of the most common developer platforms: GitHub. When you create a repository on GitHub, the repository comes with a wiki that you can add pages to. This wiki can be convenient if your source code is stored on GitHub. Although GitHub might not be a platform where you publish your docs, understanding how to interact with it can be important for understanding [version control](pubapis_version_control.html).

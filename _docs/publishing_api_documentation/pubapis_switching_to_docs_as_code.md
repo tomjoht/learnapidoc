@@ -8,7 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 redirect_from:
 - /learnapidoc/pubapis_hats.html
-last-modified:
+last-modified: 2018-12-25
 ---
 
 Changing any documentation tooling at a company can be a massive undertaking. Depending on the amount of legacy content to convert, the number of writers to train, the restrictions and processes you have to work against in your corporate environment and more, it can require an immense amount of time and effort to switch tools from the status quo to docs-as-code.

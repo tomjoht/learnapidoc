@@ -8,7 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 redirect_from:
 - /learnapidoc/pubapis_tools_vs_content.html
-last-modified:
+last-modified: 2020-06-13
 ---
 
 I described a smattering of tools in [static site generators](pubapis_static_site_generators.html), [hosting and deployment options](pubapis_hosting_and_deployment.html), and [hybrid solutions](pubapis_hybrid_systems.html). Which solution should you choose? It's a complicated decision that will invariably involve tradeoffs. The decision depends on your skill set, product, environment, and requirements. But here's my general recommendation. First, identify what authoring requirements you have. Then decide on a static site generator, and then consider a hosting and deployment platform.

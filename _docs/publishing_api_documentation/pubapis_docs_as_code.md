@@ -6,7 +6,7 @@ sidebar: docapis
 weight: 8.3
 section: publishingapis
 path1: /publishingapis.html
-last-modified:
+last-modified: 2019-08-21
 ---
 
 One of the first considerations to make when you think about API doc tooling is who will be doing the writing. If technical writers will create all the documentation, the choice of tools may not matter as much. But if developers will be contributing to the docs, it's generally advantageous to integrate your authoring and publishing tools into the developer's toolchain and workflow. Developer-centric tools for documentation are often referred to as docs-as-code tools. Docs-as-code tools are much more common than traditional help authoring tools (HATs) with API documentation.

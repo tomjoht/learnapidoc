@@ -6,7 +6,7 @@ sidebar: docapis
 weight: 8.92
 section: publishingapis
 path1: /publishingapis.html
-last-modified:
+last-modified: 2020-06-27
 ---
 
 [Static site generators](pubapis_static_site_generators.html) handle content development, but not hosting and deployment. For this, you need another category of tools. I call this category of tools "hosting and deployment options."

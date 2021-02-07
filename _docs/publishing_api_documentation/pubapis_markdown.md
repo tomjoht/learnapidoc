@@ -6,7 +6,7 @@ sidebar: docapis
 weight: 8.4
 section: publishingapis
 path1: /publishingapis.html
-last-modified:
+last-modified: 2018-12-25
 ---
 
 Most of the docs-as-code solutions use lightweight markup syntax, often Markdown. So let's learn a bit more about Markdown. Markdown is a shorthand syntax for HTML. Instead of using `ul` and `li` tags, for example, you use asterisks (`*`). Instead of using `h2` tags, you use hashes (`##`). There's a Markdown tag for most of the commonly used HTML elements, but not all of them.

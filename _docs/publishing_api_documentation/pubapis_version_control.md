@@ -6,7 +6,7 @@ weight: 8.5
 sidebar: docapis
 section: publishingapis
 path1: /publishingapis.html
-last-modified:
+last-modified: 2020-01-21
 ---
 
 Almost every IT shop uses some form of version control as they develop software code. Version control is how developers collaborate and manage their work. When you use docs-as-code tools, you'll probably also use version control such as Git. Because version control is such an essential element to learn, we'll dive more deeply into it here and in upcoming activities. In many ways, mastering Git is more challenging than learning a particular static site generator such as Jekyll or Hugo.

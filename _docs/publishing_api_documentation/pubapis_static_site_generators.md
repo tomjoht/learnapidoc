@@ -10,7 +10,7 @@ redirect_from:
 - /learnapidoc/pubapis_other_tool_options.html
 - /learnapidoc/pubapis_docs_as_code_tool_options.html
 - /learnapidoc/pubapis_other_openapi_parsers.html
-last-modified:
+last-modified: 2020-06-27
 ---
 
 Static site generators, such as Jekyll, Hugo, and Sphinx, are one of the most common authoring and publishing tools used in [docs-as-code scenarios](pubapis_docs_as_code.html). Static site generators build all the files for your website, pushing Markdown files into the layouts you define, running scripts to automate logic you need and more as they generate out HTML files. This section focuses exclusively on static site generators. In upcoming topics, I'll also explore [hosting and deployment options](pubapis_hosting_and_deployment.html) and [hybrid documentation systems](pubapis_hybrid_systems.html).

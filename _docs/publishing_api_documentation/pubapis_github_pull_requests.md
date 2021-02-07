@@ -6,7 +6,7 @@ sidebar: docapis
 weight: 8.9
 section: publishingapis
 path1: /publishingapis.html
-last-modified:
+last-modified: 2018-12-25
 ---
 
 In the previous step, [Activity: Use the GitHub Desktop Client](pubapis_github_desktop_client.html), you used Github Desktop to manage the workflow of committing files, branching, and merging. In this tutorial, you'll do a similar activity but using the browser-based interface that Github provides rather than using a terminal or Github Desktop.
