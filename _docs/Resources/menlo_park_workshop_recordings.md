@@ -6,7 +6,7 @@ weight: 14.8
 sidebar: docapis
 section: resources
 path1: /resources.html
-last-modified: 
+last-modified: 2019-06-21
 ---
 
 I recorded this full-day API documentation in Menlo Park, California, on November 8, 2018. (For more details, see this [blog post](/2018/10/31/upcoming-api-doc-workshop/).) This recording closely aligns with the latest content and activities in this course. I divided this all-day workshop into five separate videos.

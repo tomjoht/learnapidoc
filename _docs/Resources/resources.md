@@ -6,7 +6,7 @@ sidebar: docapis
 section: resources
 path1: /resources.html
 weight: 14.0
-last-modified: 
+last-modified: 2020-11-02
 ---
 
 The API documentation landscape is full of jargon, acronyms, and many new terms. This glossary provides a list of terms and definitions. Additionally, this section contains additional exercises and information, such as more activities for calling APIs, or more info about alternative specifications.

@@ -6,7 +6,7 @@ weight: 14.02
 sidebar: docapis
 section: resources
 path1: /resources.html
-last-modified: 
+last-modified: 2019-07-01
 ---
 
 {: .note}

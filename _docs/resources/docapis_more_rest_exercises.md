@@ -6,7 +6,7 @@ weight: 14.1
 sidebar: docapis
 section: resources
 path1: /resources.html
-last-modified: 
+last-modified: 2019-11-17
 ---
 
 To get more practice working with various APIs, I provide several examples in this Resources section. Working through these activities will give you more exposure to different REST APIs, how they're organized, the complexities and interdependency of endpoints, and more.

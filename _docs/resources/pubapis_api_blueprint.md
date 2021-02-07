@@ -6,7 +6,7 @@ sidebar: docapis
 weight: 14.5
 section: resources
 path1: /resources.html
-last-modified: 
+last-modified: 2019-12-29
 ---
 
 Just as Swagger defines a spec for describing a REST API, [API Blueprint](https://apiblueprint.org/) is another specification for describing REST APIs. If you describe your API with this blueprint, tools that support API Blueprint can read and display the information.

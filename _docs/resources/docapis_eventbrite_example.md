@@ -7,7 +7,7 @@ weight: 14.2
 sidebar: docapis
 section: resources
 path1: /resources.html
-last-modified: 
+last-modified: 2018-12-29
 ---
 
 Use the [Eventbrite API](https://www.eventbrite.com/developer/v3/) to get the event title and description of an event.
