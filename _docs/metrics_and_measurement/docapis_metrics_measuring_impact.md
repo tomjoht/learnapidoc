@@ -1,5 +1,5 @@
 ---
-title: Measuring progress against documentation quality goals -- a practical checklist to evaluate documentation
+title: Measuring progress against documentation quality goals
 permalink: /docapis_measuring_impact.html
 course: "Documenting REST APIs"
 weight: 13.1
@@ -17,7 +17,7 @@ Also, metrics are essential for business reasons: upper management will invariab
 Despite the importance of metrics about documentation quality, they are an elusive, holy-grail type task that almost no one in the industry has nailed down. How do you know if your docs are any good? Few can answer this question in any objective way. In this section, I'll provide a strategy for making metrics more approachable by scoring docs against a rubric of best practices.
 
 {: .note}
-This isn't a tried-and-tested methodology here but rather something I am still developing and experimenting with. As such, I value your feedback. I also have a [survey at the end](#survey) to gauge your agreement with various ideas.
+This isn't a tried-and-tested methodology here but rather something I am still developing and experimenting with. As such, I value your feedback.
 
 * TOC
 {:toc}
@@ -69,7 +69,7 @@ Rather than sink too much time and energy into surveys as the only way to measur
 
 ## Rubrics
 
-Rubrics are a scoring matrix (or framework, or simply a quality checklist) that you use to evaluate and score content based on various criteria. If documentation fulfills the criteria of the rubric, it's likely the documentation is high quality and would rate well in user satisfaction surveys. If positive user satisfaction surveys don't follow from fulfilling the rubric's criteria, the rubric is likely misguided.
+Rubrics are a scoring matrix (or checklist) that you use to evaluate and score content based on various criteria. If documentation fulfills the criteria of the rubric, it's likely the documentation is high quality and would rate well in user satisfaction surveys. If positive user satisfaction surveys don't follow from fulfilling the rubric's criteria, the rubric is likely misguided.
 
 Many teachers use rubrics when grading student essays (e.g., a category for language, organization, reasoning, etc.). Rubrics give teachers a more objective framework of established criteria to assess and score content. For students, rubrics hold the promise of simplifying and demystifying the grading process. Rubrics can give students a clearer idea of what teachers are looking for, and why they earned a B instead of an A, for example.
 

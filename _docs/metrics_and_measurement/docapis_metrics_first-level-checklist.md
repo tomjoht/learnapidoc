@@ -12,24 +12,24 @@ last-modified: 2021-02-06
 
 *This section continues from the previous page, [Measuring progress against documentation quality goals](docapis_measuring_impact.html).*
 
-As indicated earlier, my goal is to create a practical guide for measuring quality. Instead of looking at docs against a list of general, abstract criteria, I encourage creating a series of characteristics that, if fulfilled, should lead to all the more high-level categories of the rubric automatically. Each of these characteristics must be specific, actionable, and unambiguous in how it would be implemented in your docs. This section gets into the nitty-gritty details of these characteristics.
+As indicated earlier, my goal is to create a practical guide for measuring quality. Instead of looking at docs against a list of general, abstract criteria, I encourage creating a list of characteristics that, if fulfilled, should lead to all the more high-level categories of the rubric (clarity, accuracy, findability, etc.) automatically. Each of the characteristics must be specific, actionable, and unambiguous in how it would be implemented in your docs. This section gets into the nitty-gritty details of the characteristics.
 
 * TOC
 {:toc}  
 
 ## Doc scope
 
-Before jumping into the criteria, consider the scope. If you're working on a developer portal, chances are you don't own the entire portal. You might just own one little section of the portal. That's okay. You can scope your review to just the section that you own. Granted, the user journeys might extend beyond the section you own, but start with your stewardship first. The last thing you want to do is start a war with other authors by identifying all kinds of issues with their content (at least not before you address your own issues first).
+Before jumping into the criteria, consider the scope. If you're working on a developer portal, chances are you don't own the entire portal. You might just own one little section of the portal. That's okay. You can limit your review to just the scope that you own. Granted, the user journeys might extend beyond this scope, but start with your stewardship first. The last thing you want to do is start a war with other authors by identifying all kinds of issues with their content (at least not before you address your own issues first).
 
 {% include random_ad3.html %}
 
 ## Two levels of assessment
 
-Another consideration is just how much you can assess without more familiarity with docs. You can't know if the steps are accurate unless you go through the steps. You can't know if the docs aren't contradictory unless you've read all the documentation. It might take more than a year working with the docs to be able to make these kinds of assessments. You shouldn't have to spend a year working with the docs before you can provide an initial assessment of some kind.
+Another consideration is just how much you can assess without more familiarity with docs. You can't know if the steps are accurate unless you go through the steps. You can't know if the docs aren't contradictory unless you've read all the documentation. You can't know if the code works unless you can run it in a test environment. It might take more than a year working with the docs to be able to make these kinds of assessments. You shouldn't have to spend a year working with the docs before you can provide an initial assessment of some kind.
 
-All too often, you might find yourself situated in a new group, with many sets of documentation before you. What if you're trying to measure your impact on the docs from day one? If you can't complete the assessment until a year into the work, after you'll have already contributed so much to the docs, you won't have a clear benchmark with which to assess your contributions and impact.
+All too often, you might find yourself situated in a new group, with many pages of documentation before you. What if you're trying to measure your impact on the docs from day one? If you can't complete the assessment until a year into the work, after you'll have already contributed so much to the docs, you won't have a clear benchmark against which to assess your contributions and impact.
 
-Because some criteria can be assessed quickly, while other criteria requires you to be much more familiar with the documentation, I provide two levels of assessment. The criteria are distinguished between quick assessments you can make without being familiar with the docs, versus more in-depth assessments that require more familiarity.
+Because some criteria can be assessed quickly, while other criteria requires you to be much more familiar with the documentation, I provide two levels of assessment &mdash; a first-level checklist and a second-level checklist. The two lists are distinguished between quick assessments you can make without being familiar with the docs versus more in-depth assessments that require more familiarity.
 
 {% include random_ad2.html %}
 
@@ -37,7 +37,7 @@ In this section, I'll present a first-level checklist, and in the next topic, I'
 
 ## First-level documentation checklist
 
-The following checklist is a first-level checklist that doesn't require much familiarity with the deocs. The checklist's criteria are in no particular order or weighting (more on that later). Also, the list shouldn't be seen as definitive or as a foolproof recipe for perfect documentation. And some points might apply more than others, depending on your product, domain, and audience. Overall, these are criteria/characteristics that will likely lead to a better experience with developer docs.
+The following checklist is a first-level checklist that doesn't require much familiarity with the docs. The checklist's criteria are in no particular order or weighting (more on that later). Also, the list shouldn't be seen as definitive or as a foolproof recipe for perfect documentation. And some points might apply more than others, depending on your product, domain, and audience. Overall, these are criteria/characteristics that will likely lead to a better experience with developer docs.
 
 <style>
 li.checkboxListType1 {

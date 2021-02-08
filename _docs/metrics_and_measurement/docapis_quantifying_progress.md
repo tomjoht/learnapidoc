@@ -13,7 +13,7 @@ last-modified: 2021-02-06
 
 ## Analysis and quantitative metrics
 
-It's hard to imagine that documentation that checks all of these boxes wouldn't also score highly with user satisfaction surveys. Can you honestly see any documentation that legitimately satisfies all of these criteria as falling short with users? And yet, to achieve the level of information quality, we didn't have to rely on constant user surveys to gather feedback. By identifying best practices for content design (specifically for API/developer documentation), we're able to increase the documentation quality in more self-sufficient, self-directed ways.
+It's hard to imagine that documentation that checks all of the boxes in the [first-level checklist](docapis_metrics_first_level_checklist) and [second-level checklist](docapis_metrics_second_level_checklist) wouldn't also score highly with user satisfaction surveys. Can you honestly see any documentation that legitimately satisfies all of these criteria as falling short with users? And yet, to achieve the level of information quality, we didn't have to rely on constant user surveys to gather feedback. By identifying best practices for content design (specifically for API/developer documentation), we're able to increase the documentation quality in more self-sufficient, self-directed ways.
 
 {% include random_ad.html %}
 
@@ -24,7 +24,7 @@ Sometimes poor API design will make even good docs problematic. If the API has i
 
 Now that we have a set of criteria, we can start to quantitatively measure documentation. To allow for some flexibility with each checkbox, you might give documentation a score of 0 to 5 for each item. For example, if the documentation partially implements one of the criteria (e.g., some great code examples for one topic but missing in another), this is a way to give some credit without giving full credit.
 
-It doesn't matter how many criteria you use. Some points will be more applicable than others, and by no means am I suggesting a universal list of golden attributes that serve all types of information. Also remember, I'm specifically focusing on developer docs. You might decide to add your own criteria, remove some of my points, or make other modifications.
+It doesn't matter how many criteria you use, or whether you're using just one of the checklists. Some points will be more applicable than others, and by no means am I suggesting a universal list of golden attributes that serve all types of information. Also remember, I'm specifically focusing on developer docs. You might decide to add your own criteria, remove some of my points, or make other modifications.
 
 Based on how many criteria you have and how you decide to score things, you'll have a total number of possible points. You can then calculate the percentage accordingly. If you add up the score and find that the documentation scores 60/80, then this is 75%, or an C. By assigning documentation a grade that aligns with school grades, it provides a familiar assessment of the documentation quality.
 
