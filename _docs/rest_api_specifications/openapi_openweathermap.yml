@@ -315,6 +315,6 @@ components:
   securitySchemes:
     app_id:
       type: apiKey
-      description: API key to authorize requests. (If you don't have an API key, use `66bea5a2c8348fa1ff3a7c99865ed684`.)
+      description: API key to authorize requests. (If you don't have an API key, use `e9394228ff434adf76859cf70eb38c27`.)
       name: appid
       in: query
