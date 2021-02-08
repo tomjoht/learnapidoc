@@ -6,7 +6,7 @@ sidebar: docapis
 weight: 4.81
 section: openapi_output_demos
 path1: /openapi_output_demos.html
-last-modified: 
+last-modified: 2020-08-04
 ---
 
 [Redocly](https://redoc.ly/) provides a variety of tools for working with API docs. Using Redocly's command-line tools, you can split the OpenAPI definition into many sub-files, and then later bundle up the discrete files into a single file during the publishing stage. You can generate your docs into one of the most attractive outputs available for REST API docs, including integration with conceptual topics as well. Redocly also offers more robust developer portals and SaaS offerings that cover the full authoring and publishing lifecycle.
