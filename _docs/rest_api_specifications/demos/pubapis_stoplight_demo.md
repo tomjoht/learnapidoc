@@ -7,7 +7,7 @@ weight: 4.92
 section: openapi_output_demos
 path2: /openapi_output_demos.html
 path1: /restapispecifications.html
-last-modified:
+last-modified: 2021-02-07
 ---
 
 I've provided information about Stoplight in two other places in this course:
@@ -17,13 +17,13 @@ I've provided information about Stoplight in two other places in this course:
 
 Here I include a short demo of how Stoplight renders the OpenAPIWeatherMap OpenAPI specification. Following the same API we've been using in this course, here's what the /weather endpoint looks like in Stoplight:
 
-<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_demo_personal.png" alt="Stoplight API doc example" />
+<a href="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_demo_personal.png"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_demo_personal.png" alt="Stoplight API doc example" /></a>
 
 {% include random_ad.html %}
 
 {% include image_ad_right.html %}
 
-This sample API doesn't include many endpoints, so it might be more instructive to see some other samples of Stoplight listed on their [Case Studies page](https://stoplight.io/case-studies/). For more direct links to the documentation mentioned in case studies, explore the following:
+This sample API doesn't include many endpoints, so it might be more instructive to see some other samples of Stoplight listed on their [Case Studies page](https://stoplight.io/case-studies/). For direct links to the documentation mentioned in case studies, explore the following:
 
 * [Zoom API docs](https://marketplace.zoom.us/docs/api-reference/zoom-api)
 * [Nutanix API docs](https://www.nutanix.dev/api-reference/)
