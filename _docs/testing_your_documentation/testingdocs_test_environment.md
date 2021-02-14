@@ -6,7 +6,7 @@ weight: 5.1
 sidebar: docapis
 section: testingdocs
 path1: /testingdocs.html
-last-modified: 
+last-modified: 2019-08-20
 ---
 
 The first step to testing your instructions is to set up a test environment. Without this test environment, it will be difficult to make any progress in testing your instructions.

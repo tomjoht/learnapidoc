@@ -6,7 +6,7 @@ weight: 5.2
 sidebar: docapis
 section: testingdocs
 path1: /testingdocs.html
-last-modified: 
+last-modified: 2018-12-24
 ---
 
 After setting up your [test environment](testingdocs_test_environment.html), the next step is to test your instructions. This will likely involve testing API endpoints with various parameters along with other configurations. Testing all your docs can be challenging, but it's where you'll get the most useful insights when creating documentation.

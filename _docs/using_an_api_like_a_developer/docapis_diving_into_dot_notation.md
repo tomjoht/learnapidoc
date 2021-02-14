@@ -7,7 +7,7 @@ weight: 2.91
 sidebar: docapis
 section: likeadeveloper
 path1: /likeadeveloper.html
-last-modified: 
+last-modified: 2020-05-10
 ---
 
 In the previous topic, [Access and print a specific JSON value](docapis_access_json_values.html), you accessed and printed a specific JSON value to the page. Let's dive into dot notation a little more since understanding how to access the right JSON value you want is necessary to make use of the response.

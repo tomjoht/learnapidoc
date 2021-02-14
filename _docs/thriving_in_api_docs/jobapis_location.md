@@ -6,7 +6,7 @@ path1: /jobapis.html
 weight: 10.3
 course: "Documenting REST APIs"
 section: jobapis
-last-modified: 
+last-modified: 2019-11-17
 ---
 
 You're taking this course most likely because you want to break into API documentation. However, if you live in a place where there aren't many API documentation jobs, it will be difficult to find work. In this topic, I'll explain where the API documentation jobs are.

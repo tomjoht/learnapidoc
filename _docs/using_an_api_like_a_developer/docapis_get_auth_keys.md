@@ -9,7 +9,7 @@ weight: 2.1
 sidebar: docapis
 section: likeadeveloper
 path1: /likeadeveloper.html
-last-modified: 
+last-modified: 2019-01-01
 ---
 
 Almost every API has a method in place to authenticate requests. You usually have to provide an API key in your requests to get a response. Although we'll dive into [authentication and authorization](docapis_more_about_authorization.html) later, we need to get some API keys now to make requests to our weather API.
