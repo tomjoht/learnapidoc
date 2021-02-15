@@ -4,21 +4,21 @@ layout: none
 Criteria,Weight,Score (0-5),Weighted Score (W*S),Total WS Possible
 
 FINDABILITY
-{% assign findabilityList = site.data.second_level_checklist.findability %}{% for item in findabilityList %}{{item.title}},{{item.weight}},,=(B{{item.row}}*C{{item.row}}),{{item.total_possible}}
+{% assign findabilityList = site.data.second_level_checklist.findability %}{% for item in findabilityList %}{{item.title}},{{item.weight}},,=(B{{item.row}}*C{{item.row}}),=(B{{item.row}}*5)
 {% endfor %}
 ACCURACY
-{% assign accuracyList = site.data.second_level_checklist.accuracy %}{% for item in accuracyList %}{{item.title}},{{item.weight}},,=(B{{item.row}}*C{{item.row}}),{{item.total_possible}}
+{% assign accuracyList = site.data.second_level_checklist.accuracy %}{% for item in accuracyList %}{{item.title}},{{item.weight}},,=(B{{item.row}}*C{{item.row}}),=(B{{item.row}}*5)
 {% endfor %}
 RELEVANCE
-{% assign relevanceList = site.data.second_level_checklist.relevance %}{% for item in relevanceList %}{{item.title}},{{item.weight}},,=(B{{item.row}}*C{{item.row}}),{{item.total_possible}}
+{% assign relevanceList = site.data.second_level_checklist.relevance %}{% for item in relevanceList %}{{item.title}},{{item.weight}},,=(B{{item.row}}*C{{item.row}}),=(B{{item.row}}*5)
 {% endfor %}
 CLARITY
-{% assign clarityList = site.data.second_level_checklist.clarity %}{% for item in clarityList %}{{item.title}},{{item.weight}},,=(B{{item.row}}*C{{item.row}}),{{item.total_possible}}
+{% assign clarityList = site.data.second_level_checklist.clarity %}{% for item in clarityList %}{{item.title}},{{item.weight}},,=(B{{item.row}}*C{{item.row}}),=(B{{item.row}}*5)
 {% endfor %}
 COMPLETENESS
-{% assign completenessList = site.data.second_level_checklist.completeness %}{% for item in completenessList %}{{item.title}},{{item.weight}},,=(B{{item.row}}*C{{item.row}}),{{item.total_possible}}
+{% assign completenessList = site.data.second_level_checklist.completeness %}{% for item in completenessList %}{{item.title}},{{item.weight}},,=(B{{item.row}}*C{{item.row}}),=(B{{item.row}}*5)
 {% endfor %}
 READABILITY
-{% assign readabilityList = site.data.second_level_checklist.readability %}{% for item in readabilityList %}{{item.title}},{{item.weight}},,=(B{{item.row}}*C{{item.row}}),{{item.total_possible}}
+{% assign readabilityList = site.data.second_level_checklist.readability %}{% for item in readabilityList %}{{item.title}},{{item.weight}},,=(B{{item.row}}*C{{item.row}}),=(B{{item.row}}*5)
 {% endfor %}
 TOTALS,--,--,=SUM(D4:D42),=SUM(E4:E42),=ROUND(((D43)/(E43))*100)&"%"

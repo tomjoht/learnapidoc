@@ -426,6 +426,9 @@ folders:
   - title: Quantifying your progress
     jurl: /docapis_metrics_quantifying_progress.html
 
+  - title: Templates for working with metrics
+    jurl: /docapis_metrics_templates.html
+
 - title: "XIV: API glossary and resources"
   jurl: /resources.html
   folderitems:
