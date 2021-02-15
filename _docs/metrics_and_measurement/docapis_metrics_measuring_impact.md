@@ -7,7 +7,6 @@ sidebar: docapis
 section: metrics
 path1: /docapis_metrics_and_measurement.html
 last-modified: 2021-02-15
-
 ---
 
 As you set goals for your role or team, you might want to measure your impact on documentation quality in some way. The main reason for measuring your impact should be to evaluate your progress against documentation improvement goals. If you don't have any data to provide feedback on your efforts, it's hard to know if you're making a difference.

@@ -13,7 +13,9 @@ last-modified: 2021-02-15
 
 ## Analysis and quantitative metrics
 
-It's hard to imagine that documentation that checks all of the boxes in the [first-level checklist](docapis_metrics_first_level_checklist) and [second-level checklist](docapis_metrics_second_level_checklist) wouldn't also score highly with user satisfaction surveys. Can you honestly see any documentation that legitimately satisfies all of these criteria as falling short with users? And yet, to achieve the level of information quality, we didn't have to rely on constant user surveys to gather feedback. By identifying best practices for content design (specifically for API/developer documentation), we're able to increase the documentation quality in more self-sufficient, self-directed ways.
+It's hard to imagine that documentation that checks all of the boxes in the [first-level checklist](docapis_metrics_first_level_checklist) and [second-level checklist](docapis_metrics_second_level_checklist) wouldn't also score highly with user satisfaction surveys. Can you honestly see any documentation that legitimately satisfies all of these criteria as falling short with users?
+
+And yet, to achieve the level of information quality, we didn't have to rely on constant user surveys to gather feedback. By identifying best practices for content design (specifically for API/developer documentation), we're able to increase the documentation quality in more self-sufficient, self-directed ways.
 
 {% include random_ad.html %}
 
@@ -36,7 +38,7 @@ Taking the metrics one step further, you could give your documentation a grade p
 
 Granted, there are some assumptions here. Not all categories are equally important. This was one of the main goals of Strimling's research &mdash; to identify what matters most to users, not to writers. Users can probably overcome issues with readability as long as the content is accurate. Irrelevant content (e.g., the wrong user journeys) might make the content useless, no matter how well the tasks are described. Code samples in the wrong language might not be a dealbreaker if they are well commented, etc. Passive voice might not be an issue unless the entire documentation is saturated with it.
 
-I have omitted different weighting for different characteristics because it's too subjective and varies too much by product/domain/audience. But you could implement a more sophisticated weighting system as long as the weighting leads to the same total. For example, for characteristics that fall under the most valued user categories (Findability, Accuracy, Relevance, and Clarity), you might double these points. Just be consistent.
+In the [spreadsheet template for scoring criteria](docapis_metrics_templates.html), I included a weighting value from 1 to 3. This weight is multiplied by the score to give more value to the more important criteria. You can easily adjust the weighting in the templates as you see fit. Overall, in my first experiments with this approach, I initially scored docs without weighting at 46%; with weighting, it changed only to 41%. This wasn't as dramatic a difference as I anticipated.
 
 ## Measuring progress
 
@@ -76,4 +78,4 @@ EMBED_PARAMS.border = "hidden";
 <div id="div_8043019"></div>
 <script src="//www.questionpro.com/javascript/embedsurvey.js?version=1"></script>
 
-*Special thanks to Yoel Strimling for his input on this article.*
+*Continue on to the next topic, [Templates for working with metrics](docapis_metrics_templates.html).

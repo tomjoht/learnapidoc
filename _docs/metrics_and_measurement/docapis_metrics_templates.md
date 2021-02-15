@@ -9,7 +9,7 @@ path1: /docapis_metrics_and_measurement.html
 last-modified: 2021-02-15
 ---
 
-You can use two templates for the metrics described in this [Metrics and measurement section](docapis_metrics_and_measurement.html). These templates were designed to work with Google Docs / Microsoft Word and Google Spreadsheets / Microsoft Excel. The purpose of the coc template is for narrative/qualitative assessments, while the spreadsheet template is to more easily calculate the scores.
+You can use two templates for the metrics described in this [Metrics and measurement section](docapis_metrics_and_measurement.html). These templates were designed to work with Google Docs / Microsoft Word and Google Sheets / Microsoft Excel. The purpose of the coc template is for narrative/qualitative assessments, while the spreadsheet template is to more easily calculate the scores.
 
 ## Using the doc templates for narrative assessments
 
@@ -22,7 +22,7 @@ The templates strip away most formatting and just list the various criteria in a
 
 ## Using the spreadsheets for scoring
 
-The spreadsheets are meant to facilitate scoring. It's not possible to do a lot of calculations in a Google Docs or Microsoft Word, so you'll need to copy over each score from the doc template into the right cells into a spreadsheet. The CSV file imports equally into Google Spreadsheets or Microsoft Excel, but the steps are a bit different.
+The spreadsheets are meant to facilitate scoring. It's not possible to do a lot of calculations in a Google Docs or Microsoft Word, so you'll need to copy over each score from the doc template into the right cells into a spreadsheet. The CSV file imports equally into Google Sheets or Microsoft Excel, but the steps are a bit different.
 
 To use the spreadsheet to calculate a score:
 
@@ -31,9 +31,9 @@ To use the spreadsheet to calculate a score:
     * [First-level spreadsheet (csv)](/learnapidoc/docs/metrics_and_measurement/docapis_metrics_first_level_checklist_csv.csv)
     * [Second-level spreadsheet (csv)](/learnapidoc/docs/metrics_and_measurement/docapis_metrics_second_level_checklist_csv.csv)
 
-2.  If you're using Microsoft Excel (the app, not the browser version), open the CSV file in Microsoft Excel and save the file as an XSLS file. Then skip ahead to step 7.
-3.  For Google Spreadsheets:
-    1. Go to [Google Spreadsheets](https://docs.google.com/spreadsheets/) and create a new spreadsheet.
+2.  If you're using Microsoft Excel (the app, not the browser version), open the CSV file in Microsoft Excel and save the file as an XSLS file. Then skip ahead to step 4.
+3.  For Google Sheets:
+    1. Go to [Google Sheets](https://docs.google.com/spreadsheets/) and create a new spreadsheet.
     2.  In the new spreadsheet, go to **File > Import**. In the Import file window, click the **Upload** tab.
     3.  Drag the CSV file you downloaded in step 1 into the "Drag a file here" box.
     4.  In the Import File dialog box that appears, under Import Location, select **Replace current sheet**. Leave the other default options as is. (Specifically, make sure "Convert text to numbers, dates, and formulas" is set to **Yes** because the CSV file has formulas.)
@@ -42,7 +42,7 @@ To use the spreadsheet to calculate a score:
 
 4.  After importing, get familiar with the spreadsheet columns.
 
-    The spreadsheet looks like as follows in Google Spreadsheets:
+    The spreadsheet looks like as follows in Google Sheets:
 
     <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/spreadsheet_thumbnail_metrics.png" alt="Imported spreadsheet" />
 
@@ -65,9 +65,13 @@ To use the spreadsheet to calculate a score:
 
     (Of course, these formulas are just simple math. You could easily redo them -- sum the columns and then divide the score by the total possible. I'm not a spreadsheet or math wizard here.)
 
-    I would recommend adding the first-level and second-level criteria to two tabs in the same document.
+    I recommend adding the first-level and second-level criteria to two tabs in the same document.
 
-    If you have trouble importing the CSV, try making a copy of this [uploaded template](https://docs.google.com/spreadsheets/d/1eX7OlcbfV6tPyF1YAEPYyU2GpWak8rYvpEOjTS1ZjZY/edit?usp=sharing). (The reason I didn't simply recommend this approach from the beginning is because the CSV files are single-sourced from a YAML file in my Jekyll site here. Anytime I update the YAML file, it also updates the CSV content. Right now, the uploaded template will go out of date if I make updates to the YAML files. Since this is a new approach I'm still experimenting with, I expect the criteria, weighting, and other elements to fluctuate.)
+    If you have trouble importing the CSV, try making a copy of this [uploaded template](https://docs.google.com/spreadsheets/d/1eX7OlcbfV6tPyF1YAEPYyU2GpWak8rYvpEOjTS1ZjZY/edit?usp=sharing). Go to **File > Make a Copy**.A (The reason I didn't simply recommend this approach from the beginning is because the CSV files are single-sourced from a YAML file in my Jekyll site here. Anytime I update the YAML file, it also updates the CSV content. Right now, the uploaded template will go out of date if I make updates to the YAML files. Since this is a new approach I'm still experimenting with, I expect the criteria, weighting, and other elements to fluctuate.)
+
+5.  Populate the **Score** column with the scores you noted in the doc template.
+
+    {: .note} If any criteria isn't applicable from the list, put the weight as 0. This will make the Total WS Possible as 0 as well. For example, maybe "Findable in search" isn't applicable if your content isn't indexed in Google. For this line, change Weight (column B) to 0. You can also change the font for the row to light gray to indicate that it's inactive. However, don't delete the row.
 
 ## Behind the scenes
 
@@ -79,4 +83,4 @@ The checklist page retrieves this information using a [Liquid for loop](https://
 
 The CSV source file is here: [docapis_metrics_first_level_checklist_csv.csv](https://github.com/tomjoht/learnapidoc/blob/main/_docs/metrics_and_measurement/docapis_metrics_first_level_checklist_csv.csv). You can see formulas directly in the content. (This took a bit of trial-and-error with importing the file into Google Docs to get it right.)
 
-The Google Doc HTML source file is here: [docapis_metrics_first_level_checklist_html.html](https://github.com/tomjoht/learnapidoc/blob/main/_docs/metrics_and_measurement/docapis_metrics_first_level_checklist_html.html). This is just a simplified HTML page to faciliate copy/paste into other files.
+The Google Doc HTML source file is here: [docapis_metrics_first_level_checklist_html.html](https://github.com/tomjoht/learnapidoc/blob/main/_docs/metrics_and_measurement/docapis_metrics_first_level_checklist_html.html). This is just a simplified HTML page to facilitate copy/paste into other files.

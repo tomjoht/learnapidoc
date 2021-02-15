@@ -7,7 +7,6 @@ sidebar: docapis
 section: metrics
 path1: /docapis_metrics_and_measurement.html
 last-modified: 2021-02-15
-
 ---
 
 *This section continues from the previous page, [First-level checklist for API documentation](docapis_metrics_second_level_checklist.html)*.

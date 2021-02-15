@@ -36,7 +36,7 @@ In this section, I'll present a first-level checklist, and in the next topic, I'
 
 ## First-level documentation checklist
 
-The following checklist is a first-level checklist that doesn't require much familiarity with the docs. The checklist's criteria are in no particular order or weighting (more on that later). Also, the list shouldn't be seen as definitive or as a foolproof recipe for perfect documentation. And some points might apply more than others, depending on your product, domain, and audience. Overall, these are criteria/characteristics that will likely lead to a better experience with developer docs.
+The following checklist is a first-level checklist that doesn't require much familiarity with the docs. The checklist's criteria are in no particular order except those that seem more important (hence have a greater weight) appear first. Also, the list shouldn't be seen as definitive or as a foolproof recipe for perfect documentation. And some points might apply more than others, depending on your product, domain, and audience. Overall, these are criteria/characteristics that will likely lead to a better experience with developer docs.
 
 <style>
 li.checkboxListType1 {
