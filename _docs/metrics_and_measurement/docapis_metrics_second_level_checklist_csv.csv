@@ -21,4 +21,4 @@ COMPLETENESS
 READABILITY
 {% assign readabilityList = site.data.second_level_checklist.readability %}{% for item in readabilityList %}{{item.title}},{{item.weight}},,=(B{{item.row}}*C{{item.row}}),=(B{{item.row}}*5)
 {% endfor %}
-TOTALS,--,--,=SUM(D4:D42),=SUM(E4:E42),=ROUND(((D43)/(E43))*100)&"%"
+TOTALS,--,--,=SUM(D4:D42),=SUM(E4:E42),=ROUND(((D43/E43)*100),0)&"%"
