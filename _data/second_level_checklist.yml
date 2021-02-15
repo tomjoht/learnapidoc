@@ -1,0 +1,181 @@
+# second-level checklist
+
+findability:
+
+- title: Topics have article-like length
+  description: "Each topic consolidates much of the necessary information about the subject in a standalone, modular way. The topics don't fragment the subject into too many small topics that require the user to bounce around, losing context. At the same time, entire guides aren't shoved into single topics, making them eternally long. The length of topics should be about like a web article (for example, 500-3,000 words long)."
+  weight: 1
+  total_possible: 5
+  row: 4
+
+- title: Content follows task-based organization
+  description: "Content is organized primarily by task and from a user's perspective rather than solely by doc type. The exception is that reference content is often consolidated on its own in an auto-generated output."
+  weight: 1
+  total_possible: 5
+  row: 5
+
+- title: Developer portal has IA flow
+  description: "The information architecture (IA) in the developer portal organizes content within a larger context or story, even if it's just a list of links under various categories."
+  weight: 2
+  total_possible: 10
+  row: 6
+
+accuracy:
+
+- title: Steps are accurate
+  description: "The steps in the tasks accurately lead to the results promised by the task, without missing any details. For example, if the instructions say to click a button name, the button is named the same way in the interface. If the instructions say to use a class, the class is spelled as it appears in the code library, etc."
+  weight: 3
+  total_possible: 15
+  row: 9
+
+- title: Instructions are consistent
+  description: "Information isn't repeated in confusing, redundant, or inconsistent ways. For example, the documentation doesn't explain how to do a task one way in Topic A but then a different way in Topic B. If content is re-used, the re-use is usually single-sourced to reduce inconsistency."
+  weight: 2
+  total_possible: 10
+  row: 10
+
+- title: Screenshots are up to date
+  description: "Screenshots and other visuals are up to date with the state of the interface (if there is one)."
+  weight: 2
+  total_possible: 10
+  row: 11
+
+- title: Deprecated features are noted
+  description: "Features that are no longer supported (or which have been deprecated) are clearly noted as such in the documentation. Preferably, if a feature has been deprecated, a migration path to an alternative solution is provided."
+  weight: 2
+  total_possible: 10
+  row: 12
+
+- title: Functional code samples
+  description: "Code samples that can be copy and pasted actually work."
+  weight: 2
+  total_possible: 10
+  row: 13
+
+- title: App code matches doc code
+  description: "Code in sample apps matches the code described in the documentation. The sample app hasn't evolved in ways that no longer match the documentation."
+  weight: 2
+  total_possible: 10
+  row: 14
+
+relevance:
+
+- title: Docs are published when features released
+  description: "Documentation is available at the same time the feature is released and made available to users, not after the fact."
+  weight: 2
+  total_possible: 10
+  row: 17
+
+- title: GitHub is actively monitored
+  description: "If the product has a code repository on GitHub (or similar), this repository is actively monitored when users log issues or submit pull requests. Users aren't simply ignored."
+  weight: 2
+  total_possible: 10
+  row: 18
+
+clarity:
+
+- title: Any role-based permissions are noted
+  description: "If there are different roles and permission levels that correspond to varying capabilities, these roles are noted in all places they apply, such as within the individual API reference. For example, if only admin roles can use a certain endpoint, this is noted in the endpoint's reference and in any places that use the endpoint."
+  weight: 2
+  total_possible: 10
+  row: 21
+
+- title: Steps are detailed rather than general
+  description: "Specific steps for completing tasks are described in detail rather than glossed over in general ways &mdash; unless the task is something the audience is already familiar with. Overall, the documentation strikes a balance between providing enough detail for users to get the job done but not including too much detail that the reader is inundated with extraneous information."
+  weight: 2
+  total_possible: 10
+  row: 22
+
+- title: Workflow maps connects topics in larger flows
+  description: "Larger tasks that span multiple topics have a [workflow map](/simplifying-complexity/macro-micro.html) (or similar mechanism) that connects the topics together."
+  weight: 2
+  total_possible: 10
+  row: 23
+
+- title: Visuals aid in areas of confusion
+  description: "In places that are particularly confusing, appropriate visuals or additional examples have been added to reduce confusion."
+  weight: 2
+  total_possible: 10
+  row: 24
+
+- title: Support cases are minimal for the product
+  description: "Users can follow the documentation by themselves without relying on peer or customer support. A large number of support cases or forum threads containing questions that could have been answered in the documentation would indicate that the users aren't self-sufficient through the docs."
+  weight: 2
+  total_possible: 10
+  row: 25
+
+- title: Technical level is appropriate to audience
+  description: "The documentation's technical level is appropriate to the *target audience* but might not serve every possible audience (for example, total newbies to a programming language might struggle with documentation intended for developers already experienced in that language). Usually, general concepts in a programming language that you assume the audience knows are not explained in the documentation. Instead, your company's product, configuration, and usage are covered in the context of the programming language. One exception is when the implementation requires a non-standard process or workflow that merits some explanation."
+  weight: 2
+  total_possible: 10
+  row: 26
+
+- title: Experiential learning paths
+  description: "The documentation provides opportunities for experiential/opportunistic users to start learning immediately through code and trial/error, and for more systematic users to learn by reading concepts first."
+  weight: 1
+  total_possible: 5
+  row: 27
+
+- title: Docs favor simplest path
+  description: "If there are multiple paths to a solution, the documentation focuses on the simplest path (though other possibilities might be briefly mentioned)."
+  weight: 1
+  total_possible: 5
+  row: 28
+
+- title: Docs call out relevant sections in sample app
+  description: "In cases where a sample app complements the documentation as a reference implementation, the documentation should refer to different aspects of the sample app."
+  weight: 1
+  total_possible: 5
+  row: 29
+
+completeness:
+
+- title: Error messages are helpful for troubleshooting
+  description: "[Error messages](docapis_doc_status_codes.html) help users course correct by providing helpful hints for addressing the error. This supports the opportunistic/experiential user behavior."
+  weight: 2
+  total_possible: 10
+  row: 32
+
+- title: Unhappy path documented
+  description: "If there are pitfalls or other traps, gaps, and gotchas to avoid, these are noted in the documentation rather than hidden from the user. A section called [\"Known Limitations\"](/2010/12/16/known-limitations/) often contains this information. The documentation doesn't lie or mislead the user but rather is [transparent, honest, and helpful](/2017/07/13/transparency-in-documentation/) even if it means exposing the product's warts and revealing problems users will like encounter."
+  weight: 2
+  total_possible: 10
+  row: 33
+
+readability:
+
+- title: Placeholder text in code is visually apparent
+  description: "In code samples, placeholder text that needs to be customized is clearly indicated to the user. It's not confusing what is code and what needs to be changed, like `APIKEY`."
+  weight: 2
+  total_possible: 10
+  row: 36
+
+- title: Navigation mechanisms consistent across docs
+  description: "Navigation mechanisms work consistently across all docs in the developer portal. For example, in one set of docs, if top-level folders expand to show child items rather than opening to their own page, the same behavior is found in other docs."
+  weight: 1
+  total_possible: 5
+  row: 37
+
+- title: Sentences and paragraphs are somewhat short
+  description: "Sentences are somewhat short, paragraphs are relatively small, and subheadings are frequent. A readability score will place the content at the high-school level, not college."
+  weight: 1
+  total_possible: 5
+  row: 38
+
+- title: Glossary entries match terms used
+  description: "Glossary terms are used consistently across the documentation. For example, one doc set doesn't use a certain term while another uses a synonym of the term, with the admin UI using yet another term."
+  weight: 1
+  total_possible: 5
+  row: 39
+
+- title: Language uses active voice
+  description: "The language uses active voice (where warranted) with clear subjects and verbs positioned closely together."
+  weight: 1
+  total_possible: 5
+  row: 40
+
+- title: Grammar isn't distracting
+  description: "Sentences are grammatically correct and read well, without distracting the user or calling attention to the language."
+  weight: 1
+  total_possible: 5
+  row: 41
