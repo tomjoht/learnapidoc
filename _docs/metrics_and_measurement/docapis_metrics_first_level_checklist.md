@@ -26,6 +26,8 @@ Before jumping into the criteria, consider the scope. If you're working on a dev
 
 Another consideration is just how much you can assess without more familiarity with docs. You can't know if the steps are accurate unless you go through the steps. You can't know if the docs are consistent unless you've read all the documentation. You can't know if the code works unless you can run it in a test environment. It might take more than a year working with the docs to be able to make these kinds of assessments. You shouldn't have to spend a year working with the docs before you can provide an initial assessment of some kind.
 
+{% include image_ad_right.html %}
+
 All too often, you might find yourself situated in a new group, with many pages of documentation before you. What if you're trying to measure your impact on the docs from day one? If you can't complete the assessment until a year into the work, after you'll have already contributed so much to the docs, you won't have a clear benchmark against which to assess your contributions and impact.
 
 Because some criteria can be assessed quickly, while other criteria requires you to be much more familiar with the documentation, I provide two levels of assessment &mdash; a first-level checklist and a second-level checklist. The two lists are distinguished between quick assessments you can make without being familiar with the docs versus more in-depth assessments that require more familiarity.
