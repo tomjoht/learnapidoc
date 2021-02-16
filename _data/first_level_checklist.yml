@@ -69,7 +69,7 @@ relevance:
   row: 19
 
 - title: Code samples exist
-  description: "[Code samples](docapis_codesamples_bestpractices.html) showing sample ways to use the API (or similar tools) are provided. Ideally, the code samples are available in the user's target language. This might mean providing multiple code samples."
+  description: "<a href=''></a>Code samples](docapis_codesamples_bestpractices.html) showing sample ways to use the API (or similar tools) are provided. Ideally, the code samples are available in the user's target language. This might mean providing multiple code samples."
   weight: 3
   row: 20
 
@@ -91,17 +91,17 @@ relevance:
 clarity:
 
 - title: "Product overview page answers \"wh\" questions"
-  description: "The [overview](docapis_doc_overview.html) explains the big picture and describes the problem that the tool or service addresses. Common who/what/where/why questions are answered here."
+  description: "The <a href='docapis_doc_overview.html'>overview</a> explains the big picture and describes the problem that the tool or service addresses. Common who/what/where/why questions are answered here."
   weight: 3
   row: 26
 
 - title: Overview addresses use cases
-  description: "The [overview](docapis_doc_overview.html) provides a high-level description of the main use cases or business objectives of the product. This allows users to get a sense of what the API is all about."
+  description: "The <a href='docapis_doc_overview.html'>overview</a> provides a high-level description of the main use cases or business objectives of the product. This allows users to get a sense of what the API is all about."
   weight: 2
   row: 27
 
 - title: Overview has architectural diagram and explanation
-  description: "The [overview](docapis_doc_overview.html) has a diagram of the main components and how they interact. This provides users with a glimpse of the whole."
+  description: "The <a href='docapis_doc_overview.html'>overview</a> has a diagram of the main components and how they interact. This provides users with a glimpse of the whole."
   weight: 2
   row: 28
 
@@ -121,7 +121,7 @@ clarity:
   row: 31
 
 - title: Getting started tutorial exists
-  description: "A [getting-started tutorial](docapis_doc_getting_started_section.html) is provided for users to get started in an end-to-end way with the product, producing a sample output that builds their confidence. This topic might provide info on how to sign up, register, get API keys or permissions, and start using the API. (This topic might link to the authorization topic but is more comprehensive in scope. The purpose of this topic is frictionless onboarding.)"
+  description: "A <a href='docapis_doc_getting_started_section.html'>getting started tutorial</a> is provided for users to get started in an end-to-end way with the product, producing a sample output that builds their confidence. This topic might provide info on how to sign up, register, get API keys or permissions, and start using the API. (This topic might link to the authorization topic but is more comprehensive in scope. The purpose of this topic is frictionless onboarding.)"
   weight: 3
   row: 32
 
@@ -146,39 +146,39 @@ clarity:
   row: 36
 
 - title: Sample app available
-  description: "In more robust docs, a [sample app](docapis_sample_apps.html) might serve as a reference implementation for users."
+  description: "In more robust docs, a <a href='docapis_sample_apps.html'>sample app</a> might serve as a reference implementation for users."
   weight: 2
   row: 37
 
 - title: Code sample has inline comments
-  description: "[Code samples](docapis_codesamples_bestpractices.html) are appropriately commented, either with inline comments, comments that preface or follow the sample, or both. Long code samples with no explanation aren't just dropped in."
+  description: "<a href='docapis_codesamples_bestpractices.html'>Code samples</a> are appropriately commented, either with inline comments, comments that preface or follow the sample, or both. Long code samples with no explanation aren't just dropped in."
   weight: 2
   row: 38
 
 completeness:
 
 - title: Reference docs follow industry standards
-  description: "For native library APIs (or other API types), reference docs (auto-generated from source code comments) are available. This might mean [JavaDoc](nativelibraryapis_exploring_javadoc_output.html), [Doxygen](nativelibraryapis_doxygen), [OpenAPI](pubapis_openapi_intro.html) outputs like [Swagger](pubapis_swagger.html), or other reference docs specific to the library. The reference docs should be populated and generally follow tagging standards."
+  description: "For native library APIs (or other API types), reference docs (auto-generated from source code comments) are available. This might mean <a href='JavaDoc'>nativelibraryapis_exploring_javadoc_output.html</a>, <a href='nativelibraryapis_doxygen.html'>Doxygen</a>, <a href='pubapis_openapi_intro.html'>OpenAPI</a> outputs like <a href='pubapis_swagger.html'>Swagger</a> or other reference docs specific to the library. The reference docs should be populated and generally follow tagging standards."
   weight: 3
   row: 41
 
 - title: Reference content has consistent structure
-  description: "Reference material such as APIs follow a [common structure within each topic](docapis_api_reference_tutorial_overview.html), mostly following a request-response type structure. Typical sections include descriptions, parameters, sample requests or usage, and sample responses."
+  description: "Reference material such as APIs follow a <a href='docapis_api_reference_tutorial_overview.html'>common structure within each topic</a>, mostly following a request-response type structure. Typical sections include descriptions, parameters, sample requests or usage, and sample responses."
   weight: 3
   row: 42
 
 - title: Error messages documented
-  description: "[Error messages](docapis_doc_status_codes.html) that users can encounter are documented and discoverable through search."
+  description: "<a href='docapis_doc_status_codes.html'>Error messages</a> that users can encounter are documented and discoverable through search."
   weight: 2
   row: 43
 
 - title: Parameter docs have complete info
-  description: "[Parameter documentation](docapis_doc_parameters.html) typically includes a description, data type, min/max values, sample values, and optional/required usage."
+  description: "<a href='docapis_doc_parameters.html'>Parameter documentation</a> typically includes a description, data type, min/max values, sample values, and optional/required usage."
   weight: 3
   row: 44
 
 - title: Response includes both sample and schema (REST APIs)
-  description: "The [response documentation](docapis_doc_sample_responses_and_schema.html) for REST APIs provides both a sample response and schema. The response provides an example of what might be returned, while the schema defines all possible elements that might be returned and describes attributes such as data types and whether the elements are required or optional in the response."
+  description: "The <a href='docapis_doc_sample_responses_and_schema.html'>response documentation</a> for REST APIs provides both a sample response and schema. The response provides an example of what might be returned, while the schema defines all possible elements that might be returned and describes attributes such as data types and whether the elements are required or optional in the response."
   weight: 2
   row: 45
 
@@ -188,7 +188,7 @@ completeness:
   row: 46
 
 - title: Limitations/thresholds documented
-  description: "If there are [limitations and thresholds](/learnapidoc/docapis_rate_limiting_and_thresholds.html) (for example, max number of API calls, max file sizes, max string lengths, max/min parameter values, max server load), these limitations are called out in the docs."
+  description: "If there are <a href='docapis_rate_limiting_and_thresholds.html'>limitations and thresholds</a> (for example, max number of API calls, max file sizes, max string lengths, max/min parameter values, max server load), these limitations are called out in the docs."
   weight: 2
   row: 47
 
@@ -225,12 +225,12 @@ readability:
   row: 55
 
 - title: Topics start with summaries
-  description: "Each topic usually has a [short summary below the title](/2018/09/15/pages-at-a-glance-feature/#enforcing-best-practices-with-structure) that encapsulates the main purpose of the topic. This helps users get a sense of the topic at a glance."
+  description: "Each topic usually has a <a href='/2018/09/15/pages-at-a-glance-feature/#enforcing-best-practices-with-structure'>short summary below the title</a> that encapsulates the main purpose of the topic. This helps users get a sense of the topic at a glance."
   weight: 1
   row: 56
 
 - title: Glossary exists
-  description: "Unfamiliar words and jargon are defined in a [glossary](docapis_glossary_section.html). At times, the glossary terms are linked to their glossary definitions."
+  description: "Unfamiliar words and jargon are defined in a <a href='docapis_glossary_section.html'>glossary</a>. At times, the glossary terms are linked to their glossary definitions."
   weight: 1
   row: 57
 

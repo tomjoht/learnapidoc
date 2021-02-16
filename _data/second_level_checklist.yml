@@ -74,7 +74,7 @@ clarity:
   row: 22
 
 - title: Workflow maps connects topics in larger flows
-  description: "Larger tasks that span multiple topics have a [workflow map](/simplifying-complexity/macro-micro.html) (or similar mechanism) that connects the topics together."
+  description: "Larger tasks that span multiple topics have a <a href='/simplifying-complexity/macro-micro.html'>workflow map</a> (or similar mechanism) that connects the topics together."
   weight: 2
   row: 23
 
@@ -111,12 +111,12 @@ clarity:
 completeness:
 
 - title: Error messages are helpful for troubleshooting
-  description: "[Error messages](docapis_doc_status_codes.html) help users course correct by providing helpful hints for addressing the error. This supports the opportunistic/experiential user behavior."
+  description: "<a href='docapis_doc_status_codes.html'>Error messages</a> help users course correct by providing helpful hints for addressing the error. This supports the opportunistic/experiential user behavior."
   weight: 2
   row: 32
 
 - title: Unhappy path documented
-  description: "If there are pitfalls or other traps, gaps, and gotchas to avoid, these are noted in the documentation rather than hidden from the user. A section called [\"Known Limitations\"](/2010/12/16/known-limitations/) often contains this information. The documentation doesn't lie or mislead the user but rather is [transparent, honest, and helpful](/2017/07/13/transparency-in-documentation/) even if it means exposing the product's warts and revealing problems users will like encounter."
+  description: "If there are pitfalls or other traps, gaps, and gotchas to avoid, these are noted in the documentation rather than hidden from the user. A section called <a href='/2010/12/16/known-limitations/'>Known Limitations</a> often contains this information. The documentation doesn't lie or mislead the user but rather is <a href='/2017/07/13/transparency-in-documentation/'>transparent, honest, and helpful</a> even if it means exposing the product's warts and revealing problems users will like encounter."
   weight: 2
   row: 33
 

@@ -19,20 +19,20 @@ h2.criteriaCategory {
 <h1>Second-level documentation quality assessment</h1>
 
 <h2 class="criteriaCategory">FINDABILITY</h2>
-{% assign findabilityList = site.data.second_level_checklist.findability %}{% for item in findabilityList %}<h3>{{item.title}}</h3><p class="criteriaDescription">{{item.description}}</p><p>Assessment:</p><p>Score: 0-5</p>
+{% assign findabilityList = site.data.second_level_checklist.findability %}{% for item in findabilityList %}<h3>{{item.title}}</h3><p class="criteriaDescription">{{item.description | strip_html}}</p><p>Assessment:</p><p>Score: 0-5</p>
 {% endfor %}
 <h2 class="criteriaCategory">ACCURACY</h2>
-{% assign accuracyList = site.data.second_level_checklist.accuracy %}{% for item in accuracyList %}<h3>{{item.title}}</h3><p class="criteriaDescription">{{item.description}}</p><p>Assessment:</p><p>Score: 0-5</p>
+{% assign accuracyList = site.data.second_level_checklist.accuracy %}{% for item in accuracyList %}<h3>{{item.title}}</h3><p class="criteriaDescription">{{item.description | strip_html}}</p><p>Assessment:</p><p>Score: 0-5</p>
 {% endfor %}
 <h2 class="criteriaCategory">RELEVANCE</h2>
-{% assign relevanceList = site.data.second_level_checklist.relevance %}{% for item in relevanceList %}<h3>{{item.title}}</h3><p class="criteriaDescription">{{item.description}}</p><p>Assessment:</p><p>Score: 0-5</p>
+{% assign relevanceList = site.data.second_level_checklist.relevance %}{% for item in relevanceList %}<h3>{{item.title}}</h3><p class="criteriaDescription">{{item.description | strip_html}}</p><p>Assessment:</p><p>Score: 0-5</p>
 {% endfor %}
 <h2 class="criteriaCategory">CLARITY</h2>
-{% assign clarityList = site.data.second_level_checklist.clarity %}{% for item in clarityList %}<h3>{{item.title}}</h3><p class="criteriaDescription">{{item.description}}</p><p>Assessment:</p><p>Score: 0-5</p>
+{% assign clarityList = site.data.second_level_checklist.clarity %}{% for item in clarityList %}<h3>{{item.title}}</h3><p class="criteriaDescription">{{item.description | strip_html}}</p><p>Assessment:</p><p>Score: 0-5</p>
 {% endfor %}
 <h2 class="criteriaCategory">COMPLETENESS</h2>
-{% assign completenessList = site.data.second_level_checklist.completeness %}{% for item in completenessList %}<h3>{{item.title}}</h3><p class="criteriaDescription">{{item.description}}</p><p>Assessment:</p><p>Score: 0-5</p>
+{% assign completenessList = site.data.second_level_checklist.completeness %}{% for item in completenessList %}<h3>{{item.title}}</h3><p class="criteriaDescription">{{item.description | strip_html}}</p><p>Assessment:</p><p>Score: 0-5</p>
 {% endfor %}
 <h2 class="criteriaCategory">READABILITY</h2>
-{% assign readabilityList = site.data.second_level_checklist.readability %}{% for item in readabilityList %}<h3>{{item.title}}</h3><p class="criteriaDescription">{{item.description}}</p><p>Assessment:</p><p>Score: 0-5</p>
+{% assign readabilityList = site.data.second_level_checklist.readability %}{% for item in readabilityList %}<h3>{{item.title}}</h3><p class="criteriaDescription">{{item.description | strip_html}}</p><p>Assessment:</p><p>Score: 0-5</p>
 {% endfor %}
