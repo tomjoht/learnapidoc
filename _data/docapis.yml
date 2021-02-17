@@ -9,6 +9,9 @@ folders:
   - title: Course Overview
     jurl: /index.html
 
+  - title: "What's new"
+    jurl: /docapis_whats_new.html
+
   - title: Workshop video recordings
     jurl: /docapis_course_videos.html
 

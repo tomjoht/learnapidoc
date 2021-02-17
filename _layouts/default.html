@@ -22,7 +22,8 @@
 
 {% unless page.last-modified == null %}
 <div class="lastModifiedDate">
-Last modified: {{page.last-modified | date: "%b %d, %Y" }}
+Last updated: {{page.last-modified | date: "%b %d, %Y" }} <a class="noCrossRef" style="color: black" href="{{page.path | prepend: "https://github.com/tomjoht/learnapidoc/blob/main/"}}"><i class="fa fa-github fa-lg"></i></a>
+
 </div>
 {% endunless %}
 
