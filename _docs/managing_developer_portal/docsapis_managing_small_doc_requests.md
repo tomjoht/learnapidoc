@@ -97,7 +97,7 @@ It's easy for someone to request an update via email or chat, and perhaps asking
 
 Here is where the intake fields can do some work. Email threads have scattered information. As part of the formalization of the work, you usually organize the information in a more structured, logical way. Rather than doing the work of restructuring this information to specify what page needs to be updated, what updates need to be made, who should review the updates, when they should be published, etc., you can ask the requester to do this. This can reduce your own workload. When the task is made more formal and structured in a ticket, it will be easier for other writers who aren't part of the email thread to work on it. In fact, if you can specialize different intake forms for different types of requests, you can more acutely focus your questions around the information needed for that task.
 
-## Who makes the doc request matters {#requester}
+## Requests should come through product teams {#requester}
 
 In your small intake process, avoid allowing anyone to make a doc request. Instead, the ones making requests should be product managers (or those who own the products related to the docs).
 
