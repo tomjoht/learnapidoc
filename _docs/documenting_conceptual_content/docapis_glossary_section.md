@@ -8,7 +8,7 @@ sidebar: docapis
 section: docconceptual
 path1: /docconceptual.html
 no_newsletter: true
-last-modified: 2019-03-30
+last-modified: 2021-02-21
 ---
 
 The API glossary defines all the terms that might be unique to your company or API. Glossaries are often overlooked or skipped, but their importance should not be understated since much of the user's understanding of API documentation depends on the clarity and alignment of specific terms.
@@ -16,7 +16,7 @@ The API glossary defines all the terms that might be unique to your company or A
 * TOC
 {:toc}
 
-## Define any words you invest
+## Defining specialized terms
 
 Unlike most other professional writing disciplines, tech docs are notorious for the number of specialized terms in their content. Not only do we have unique terms related to our products, industry jargon and company-specific terms make their way into docs, driving up their complexity.
 
@@ -30,7 +30,7 @@ In this case, DEG must have been an acronym specific to the developer's API. In 
 
 {% include random_ad3.html %}
 
-But many times, acronyms and unfamiliar terms are part of a specialized domain. As a technical writer, using the correct terms for your knowledge domain and your product is necessary, and those terms are often appropriate for that particular knowledge domain.
+But many times, acronyms and unfamiliar terms are an unavoidable part of a specialized domain. As a technical writer, using the correct terms for your knowledge domain and your product is necessary, and those terms are often appropriate for that particular knowledge domain.
 
 To simplify the language, you can't just omit the necessary terminology for the domain and substitute in more friendly names. You have to teach the user the right language so they can participate in the conversation. One commonsense approach for teaching users how to speak this language involves defining unfamiliar words for the user by way of a glossary.
 
@@ -72,7 +72,84 @@ I explored glossaries in depth in [Reducing the complexity of technical language
 
 One question to consider is how and where to integrate the glossary definition within your technical content. For example, suppose you have the terms "near field" and "far field" in your content, referring to voice interactions with a device. You might use these terms in a number of sections and different pages. Sure, you could define these terms the first instance in your docs when you use them, but what if they appear on half a dozen pages? Users might not start on the initial page where they're defined.
 
-You could incorporate tooltips (such as these [tooltips from Bootstrap](https://getbootstrap.com/docs/4.1/components/tooltips/)) over the term the first time it's used on each page in your docs. However, on subsequent references, it's probably easiest to link to the glossary definition rather than continually incorporate tooltips. Let users make their way to the glossary when they need help with a term. If the glossary page is in a clearly visible space, you won't have to go to great lengths to link terms to their glossary definitions with each usage.
+You could incorporate tooltips (such as these [tooltips from Bootstrap](https://getbootstrap.com/docs/4.1/components/tooltips/)) over the term the first time it's used on each page in your docs. However, on subsequent references, it's probably easiest to link to the glossary definition rather than continually incorporating tooltips. Let users make their way to the glossary when they need help with a term. If the glossary page is in a clearly visible space, you won't have to go to great lengths to link terms to their glossary definitions with each usage.
+
+## Reusing glossary definitions
+
+To reuse glossary definitions, consider storing glossary terms and definitions in a structured file. For example, on my [glossary page](api-glossary.html), the data source is a YAML file here: [_data/glossary.yml](https://github.com/tomjoht/learnapidoc/blob/main/_data/glossary.yml). Each definition follows a structure like this:
+
+```yaml
+api:
+  term: API
+  def: "Application Programming Interface. Enables different systems to interact with each other programmatically. Two types of APIs are REST APIs (web APIs) and native-library APIs."
+  link: See [What is a REST API?](docapis_what_is_a_rest_api.html)
+```
+
+By storing the data in a structured way like this, I can get the data out and re-use it in different ways. For example, to show all terms in the glossary, I created some for loops here to get the info and format it in the display you see on the glossary page: [_includes/glossary_full.html](https://github.com/tomjoht/learnapidoc/blob/main/_includes/glossary_full.html). The logic here is specific to Jekyll, but other docs-as-code solutions have similar templating options available. A lot of these templating languages operate in similar ways.
+
+You could also get the same definition and insert it into a [Bootstrap tooltip](https://getbootstrap.com/docs/4.0/components/tooltips/). First, initialize the Bootstrap code:
+
+```js
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+```
+
+Then populate the tooltip like this to get info from the glossary YAML file:
+
+```html
+{% raw %}Learning how to document <a href="#" data-toggle="tooltip" title="{{site.data.glossary.api.def}}">APIs</a> is essential in a tech landscape that has shifted to an information economy, with the buying and selling of information more than physical goods.{% endraw %}
+```
+
+The result:
+
+<div style="margin: 20px 0px 20px 100px">Learning how to document <a href="#" data-toggle="tooltip" title="{{site.data.glossary.api.def}}">APIs</a> is essential in a tech landscape that has shifted to an information economy, with the buying and selling of information more than physical goods.</div>
+
+Tooltips appear when you mouse over a link and disappear when you move your mouse off the link. This means you shouldn't include any links in tooltip text. If you want to link to text, use a [Bootstrap popover](https://getbootstrap.com/docs/4.0/components/popovers/). Just like with tooltips, popovers must also be initialized:
+
+```js
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+```
+
+You can then populate the popover with info from the glossary YAML file:
+
+```html
+{% raw %}Learning how to document <a data-html="true" href="javascript://" title="{{site.data.glossary.api.term}}" data-toggle="popover" data-placement="top" data-content="{{site.data.glossary.api.def}} {{site.data.glossary.api.link}}">APIs</a> is essential in a tech landscape that has shifted to an information economy, with the buying and selling of information more than physical goods.{% endraw %}
+```
+
+The result:
+
+<div style="margin: 20px 0px 20px 100px">Learning how to document <a data-html="true" href="javascript://" title="{{site.data.glossary.api.term}}" data-toggle="popover" data-placement="top" data-content="{{site.data.glossary.api.def}} {{site.data.glossary.api.link}}">APIs</a> is essential in a tech landscape that has shifted to an information economy, with the buying and selling of information more than physical goods.</div>
+
+Notice that I separated out the link into its own property in [_data/glossary.yml](https://github.com/tomjoht/learnapidoc/blob/main/_data/glossary.yml). I did this to provide flexibility as to whether I wanted the link included. Including the link would be problematic if the link pointed to the same page where the popover appears. Also, since tooltips don't support links, I didn't want to always include the links there. If you're using popovers, note the following:
+
+* The popover code has an attribute required to enable html: `data-html="true"`
+* In YAML, it's easier to code links in HTML rather than Markdown. Converting the Markdown link to HTML using the `markdownify` filter will include `<p>` tags around the content (which are problematic in popover formatting).
+* If clicking the popover link makes the page focus jump to the top, use `javascript://` instead of `#` for the link target.
+
+Finally, to style the link in a distinct way from normal HTML links, add some CSS to links with the popover data attribute:
+
+```css
+  a[data-toggle=popover] {
+      color: cadetblue;
+      border-bottom: dashed;
+      border-bottom-color: darkgray;
+      border-bottom-width: thin;
+      font-style: italic;
+}
+
+  a[data-toggle=popover]:hover {
+    border-bottom: solid;
+    border-bottom-color: darkgray;
+    border-bottom-width: thin;
+  }
+```
 
 ## Sample glossary pages
 

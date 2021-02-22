@@ -1,40 +1,40 @@
 api:
   term: API
   def: "Application Programming Interface. Enables different systems to interact with each other programmatically. Two types of APIs are REST APIs (web APIs) and native-library APIs."
-  link: See [What is a REST API?](docapis_what_is_a_rest_api.html)
+  link: See <a href='docapis_what_is_a_rest_api.html'>What is a REST API?</a>
 
 api_console:
   term: API Console
   def: "Renders an interactive display for the RAML spec. Similar to Swagger UI, but for [RAML](pubapis_raml.html#apiconsole)."
-  link: See [github.com/mulesoft/api-console](https://github.com/mulesoft/apiconsole).
+  link: See <a href='https://github.com/mulesoft/apiconsole'>github.com/mulesoft/api-console</a>.
 
 apimatic:
   term: APIMATIC
-  def: "Supports most REST API description formats (OpenAPI, RAML, API Blueprint, etc.) and provides SDK code generation, conversions from one spec format to another, and many more services. APIMATIC \"lets you define APIs and generate SDKs for more than 10 languages.\" For example, you can automatically convert Swagger 2.0 to 3.0 using the [API Transformer](https://apimatic.io/transformer) service on this site."
-  link: See [https://apimatic.io/](https://apimatic.io/) and read their [documentation](https://docs.apimatic.io/).
+  def: "Supports most REST API description formats (OpenAPI, RAML, API Blueprint, etc.) and provides SDK code generation, conversions from one spec format to another, and many more services. APIMATIC \"lets you define APIs and generate SDKs for more than 10 languages.\" For example, you can automatically convert Swagger 2.0 to 3.0 using the <a href='https://apimatic.io/transformer'>API Transformer</a> service on this site."
+  link: See <a href='https://apimatic.io/'>https://apimatic.io/</a> and read their <a href='https://docs.apimatic.io/'>documentation</a>.
 
 api_transformer:
   term: API Transformer
   def: "A cross-platform service provided by APIMATIC that will automatically convert your specification document from one format or version to another."
-  link: See [apimatic.io/transformer](https://apimatic.io/transformer).
+  link: See <a href='https://apimatic.io/transformer'>apimatic.io/transformer</a>.
 
 apiary:
   term: Apiary
   def: "Platform that supports the full life-cycle of API design, development, and deployment. For interactive documentation, Apiary supports the API Blueprint specification, which similar to OpenAPI or RAML but includes more Markdown elements. It also supports the OpenAPI specification now too."
-  link: See [apiary.io](https://apiary.io).
+  link: See <a href='https://apiary.io'>apiary.io</a>.
 
 api_blueprint:
   term: API Blueprint
   def: "The API Blueprint spec is an alternative specification to OpenAPI or RAML. API Blueprint is written in a Markdown-flavored syntax."
-  link: See [API Blueprint](pubapis_api_blueprint.html) in this course, or go to [API Blueprint's homepage](https://apiblueprint.org/) to learn more.
+  link: See <a href='pubapis_api_blueprint.html'>API Blueprint</a> in this course, or go to <a href='https://apiblueprint.org/'>API Blueprint&#39;s homepage</a> to learn more.
 
 apigee:
   term: Apigee
-  def: "Similar to Apiary, Apigee provides services for you to manage the whole lifecycle of your API. Specifically, Apigee lets you \"manage API complexity and risk in a multi- and hybrid-cloud world by ensuring security, visibility, and performance across the entire API landscape.\" Supports the OpenAPI spec. See [apigee.com](https://apigee.com/api-management/)."
+  def: "Similar to Apiary, Apigee provides services for you to manage the whole lifecycle of your API. Specifically, Apigee lets you \"manage API complexity and risk in a multi- and hybrid-cloud world by ensuring security, visibility, and performance across the entire API landscape.\" Supports the OpenAPI spec. See <a href='https://apigee.com/api-management/'>apigee.com</a>."
 
 asciidoc:
   term: Asciidoc
-  def: "A lightweight text format that provides more semantic features than Markdown. Used in some static site generators, such as [Asciidoctor](http://asciidoctor.org/) or [Nanoc](https://nanoc.ws/). See [http://asciidoc.org/](http://asciidoc.org/)."
+  def: "A lightweight text format that provides more semantic features than Markdown. Used in some static site generators, such as <a href='http://asciidoctor.org/'>Asciidoctor</a> or <a href='https://nanoc.ws/'>Nanoc</a>. See <a href='http://asciidoc.org/'>http://asciidoc.org/</a>."
 
 branch:
   term: branch
