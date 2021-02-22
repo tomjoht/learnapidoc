@@ -82,7 +82,7 @@ To reuse glossary definitions, consider storing glossary terms and definitions i
 api:
   term: API
   def: "Application Programming Interface. Enables different systems to interact with each other programmatically. Two types of APIs are REST APIs (web APIs) and native-library APIs."
-  link: See [What is a REST API?](docapis_what_is_a_rest_api.html)
+  link: See <a href='docapis_what_is_a_rest_api.html'>What is a REST API?</a>
 ```
 
 By storing the data in a structured way like this, I can get the data out and re-use it in different ways. For example, to show all terms in the glossary, I created some for loops here to get the info and format it in the display you see on the glossary page: [_includes/glossary_full.html](https://github.com/tomjoht/learnapidoc/blob/main/_includes/glossary_full.html). The logic here is specific to Jekyll, but other docs-as-code solutions have similar templating options available. A lot of these templating languages operate in similar ways.
