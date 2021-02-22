@@ -50,6 +50,8 @@ John Gruber, a blogger, created Markdown as a way to simplify HTML (see his [Mar
 
 In contrast, DITA is a committee-based XML architecture derived from a committee. There aren't lots of different flavors and spinoffs of DITA based on how people customized the tags. There's an official DITA spec that is agreed upon by the DITA OASIS committee. Markdown doesn't have that kind of committee, so it evolves on its own as people choose to implement it.
 
+{% include random_ad4.html %}
+
 ## Why developers love Markdown
 
 In many development tools (particularly [static site generators](https://www.staticgen.com/)) that you use for publishing documentation, many of them will use Markdown. For example, Github uses Markdown. If you upload files containing Markdown and use an md file extension, Github will automatically render the Markdown into HTML.

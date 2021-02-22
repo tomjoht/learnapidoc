@@ -44,6 +44,8 @@ A process for *managing doc projects* could have the following steps:
 
 First, try to identify all documentation projects by reviewing different project lists for the teams you're working with. The whole need to identify the projects might seem unintuitive &mdash; shouldn't product managers reach out to technical writers to let them know what doc needs they have? Yes, in an ideal world that would be the case. But we all know the reality in corporate settings. About two weeks before release, the product manager suddenly starts thinking about docs, and an email winds around to your inbox with the request. If you were to start from the time you received the email heads down until the release, working on that project and only that project, you might be able to finish it &mdash; meanwhile postponing/re-prioritizing everything else you're working on as you enter crisis mode. Most people dislike working for extended periods in crisis modes.
 
+{% include random_ad4.html %}
+
 To get out of crisis mode, you have to scan the project landscape like a scout looking across a plain for emerging wildlife and identify the projects early on. Identifying projects early on also gives you more opportunity to engage more deeply in the project, such as providing input on the [API design and usability](evaluating-api-design.html).
 
 So this first step is one of *identifying* the work &mdash; what projects are out there, what's on each team's roadmap, when are new features and products going to be released, which of these projects will require documentation, and so on. Gather up a list of these projects and put them onto a documentation planning spreadsheet.

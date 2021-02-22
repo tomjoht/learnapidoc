@@ -77,6 +77,8 @@ Video 5 of 5:
 <p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/s3.us-west-1.wasabisys.com/idbwmedia.com/podcasts/menloapidoc/apidocvideo5.mp3" type="audio/mpeg" /></audio></p>
 </div>
 
+{% include random_ad4.html %}
+
 {% endif %}
 
 {% include image_ad_left.html %}

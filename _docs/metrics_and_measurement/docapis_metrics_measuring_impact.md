@@ -25,6 +25,8 @@ This isn't a tried-and-tested methodology here but rather something I am still d
 
 The first inclination many have when measuring documentation quality (how good your docs are) is to conduct surveys with users. After all, it doesn't matter what the technical writer thinks of the documentation; it's what the user thinks, and how successful the documentation was in helping the user in some task, right?
 
+{% include random_ad4.html %}
+
 To a degree, yes, you can only really evaluate the usefulness of documentation from the perspective of a user going through the documentation with some tasks in mind. However, surveys are a difficult, inefficient way to go about measuring documentation quality for several reasons:
 
 * Survey responses aren't actionable

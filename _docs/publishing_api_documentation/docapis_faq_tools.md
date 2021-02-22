@@ -14,6 +14,8 @@ Q:  Is it possible to author API documentation using DITA/XML or an XML editor (
 :  Sure, you can use OxygenXML or similar tools and write your dev docs in DITA. However, for the reference content, if you're working with REST APIs, I recommend documenting the endpoints using the [OpenAPI spec](pubapis_openapi_intro.html). If documenting [class-based libraries](nativelibraryapis.html), then use [in-code annotations](nativelibraryapis_javadoc_tags.html) for that language.
 :  In the [current survey I'm running](https://www.questionpro.com/t/PGhS9ZgCFE) about dev doc trends, about 10% of people writing docs for devs use XML-based solutions, so you wouldn't be alone. However, if you're intending to solicit contributions from engineers, and you have a lively and engaged developer community who will *actually be contributing* to docs, then I do not recommend XML solutions. Use [Markdown](pubapis_markdown.html) instead.
 
+{% include random_ad4.html %}
+
 {% include random_ad3.html %}
 
 Q:  We use Madcap Flare but document our APIs in Swagger. We're considering dropping Flare and using Readme.com instead, which can import Swagger, but should we be looking at other tools? We also don't document just APIs, but have protocols we document outside of the APIs too.

@@ -20,6 +20,8 @@ Whenever discussions about Swagger and other REST API specifications take place,
 
 One of the core principles of tech writing is to generate content from a single source rather than copying and pasting duplicate information. When you start pushing your API documentation into another source file &mdash; in this case, a YAML or JSON file that is included in a Swagger UI file set, you end up splitting your single source of truth into multiple sources.
 
+{% include random_ad4.html %}
+
 For example, you might have defined your endpoints and parameters in your regular documentation, and now the OpenAPI spec asks you to provide the same endpoints and descriptions in the spec. Do you copy and paste the same parameters and other information across both sites? Do you somehow generate the descriptions from the same source? In this topic, I tackle this conundrum.
 
 ## Option 1: Put all the info into your spec through expand/collapse sections {#option1}

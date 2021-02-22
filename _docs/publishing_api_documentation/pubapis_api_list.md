@@ -18,6 +18,7 @@ Rather than approach the topic of publishing prescriptively, let's begin with so
 
 {% include image_ad_right.html %} Browse a few of these documentation sites to get a sense of the variety, but also try to identify common patterns. In this list, I include not only impressively designed docs but also docs that look like they were created by a department intern just learning HTML. The variety in the list demonstrates the many options for publishing tools and approaches, as well as terminology. It seems that almost everyone does their API docs their own way, with their own site, branding, organization, and style.
 
+{% include random_ad4.html %}
 
 <ol>
   <li><a rel="nofollow" href="https://developer.shopgate.com/">Shopgate API docs</a></li>

@@ -450,6 +450,8 @@ Here's what the sample OpenWeatherMap API [looks like in Anypoint Exchange](http
 
 One of the unique options Mulesoft offers is called [API Notebook](https://api-notebook.anypoint.mulesoft.com). This is a unique tool designed by Mulesoft that allows you to provide interactive code examples that leverage your RAML spec.
 
+{% include random_ad4.html %}
+
 ## API Console output {#apiconsole}
 
 You can download the same code that generates the output on the Anypoint Platform and create your own interactive documentation. The standalone project (on GitHub) is called [API Console](https://github.com/mulesoft/api-console). Here's a [demo](https://idratherbewriting.com/assets/files/raml/build/index.html). Instructions for building API Console from a RAML file are available on the [api-console](https://github.com/mulesoft/api-console) project on GitHub. After you build the output, upload it to a web server and go to the index.html file.

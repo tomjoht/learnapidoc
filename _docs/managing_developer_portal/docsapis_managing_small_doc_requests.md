@@ -139,6 +139,8 @@ In your monthly report listing doc work completed, consider listing all closed t
 
 In the Small Doc Requests Resolved section, you might also provide a link to your intake form for these types of requests. This helps others know your process for managing small doc requests. The next time they have a request, they'll know what the process is and what to expect.
 
+{% include random_ad4.html %}
+
 ## Survey to gather your feedback and input
 
 Please share your feedback and input by answering a few questions in this short survey. You can view [ongoing responses here](https://www.questionpro.com/t/PHGxqZicRU).

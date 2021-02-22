@@ -146,6 +146,8 @@ If this button doesn't work for you, copy this [import link](https://www.getpost
 
 {% endif %}
 
+{% include random_ad4.html %}
+
 Clicking the Run in Postman buttons should automatically prompt you to import the collections into Postman. If it doesn't work, copy the import link address and, in Postman, click **Import** in the upper-left corner. Then click the **Import From Link** tab, paste in the address and click **Import**.
 
 {: .tip}

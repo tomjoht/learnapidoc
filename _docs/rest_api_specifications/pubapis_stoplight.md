@@ -11,6 +11,8 @@ last-modified: 2020-06-27
 
 Earlier in the course, you might have followed the tutorial for [Create an OpenAPI specification document using Stoplight Studio's visual editor](pubapis_openapis_quickstart_stoplight.html), which uses Stoplight Studio. As a GUI editor for creating an OpenAPI, Stoplight Studio simplifies the authoring of a highly technical syntax that is often challenging to make valid. Now let's dive a bit deeper into the offerings and philosophy of Stoplight.
 
+{% include random_ad4.html %}
+
 Among other services, Stoplight provides visual modeling tools to create an OpenAPI document for your API &mdash; without requiring you to know the OpenAPI spec details or code the spec line by line. This API specification document can act as a single source of truth that empowers the whole API lifecycle, from UX prototyping to testing, development, documentation, sales, and more.
 
 * TOC

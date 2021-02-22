@@ -17,4 +17,6 @@ last-modified: 2018-08-02
 
 {% include random_ad3.html %}
 
+{% include random_ad4.html %}
+
 {% include image_ad_right.html %}

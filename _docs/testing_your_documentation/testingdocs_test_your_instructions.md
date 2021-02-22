@@ -22,6 +22,8 @@ One benefit of testing your instructions is that you can start to answer your ow
 
 A lot of times, when you discover a discrepancy in what's supposed to happen, you can confront an engineer and tell him or her that something isn't working correctly. Or you can make suggestions for improving workflows, terms, responses, error messages, etc. You can't do this if you're just taking notes about what engineers say, or if you're just copying information from wiki specs or engineer-written pages.
 
+{% include random_ad4.html %}
+
 When things don't work, you can identify and log bugs in issue tracking systems such as JIRA. Logging bugs is helpful to the team overall and increases your credibility with the engineers. It's also immensely fun to log a bug against an engineer's code because it shows that you've discovered flaws and errors in what the "gods of code" have created.
 
 Other times, the bugs are within your documentation. For example, on one project, through testing API calls I realized I had one of my parameters wrong. Instead of `verboseMode`, the parameter was simply `verbose`. This subtle discrepancy is one of those details you don't discover unless you test something, find it doesn't work, and then set about figuring out what's wrong.

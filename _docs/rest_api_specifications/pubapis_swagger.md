@@ -53,6 +53,8 @@ Before making any requests, you would normally authorize your session by clickin
 
 The Petstore example has an OAuth 2.0 security model. However, the authorization code is just for demonstration purposes. There isn't any real logic authorizing those requests, so you can simply close the Authorization modal.
 
+{% include random_ad4.html %}
+
 ### Make a request
 
 Now let's make a request:

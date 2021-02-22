@@ -52,6 +52,8 @@ I'm specifically talking about the built-in wiki feature with GitHub, not [GitHu
 
 ## Install Git {#git_install}
 
+{% include random_ad4.html %}
+
 Before you start working with GitHub, you need to set up Git and install any necessary tools and credentials to work with GitHub (especially if you're on Windows).
 
 **Mac**:

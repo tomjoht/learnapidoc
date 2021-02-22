@@ -35,6 +35,8 @@ Additionally, make sure your logins correspond with the permissions users will h
 
 You may also need to construct certain files necessary to configure a server with the settings you want to test. Understanding exactly how to create the files, the directories to upload them to, the services to stop and restart, and so on, can require a lot of initial investigation.
 
+{% include random_ad4.html %}
+
 Exactly what you have to do depends on your product, the environment, the company, and security restrictions, etc. No two companies are alike. Sometimes it's a pain to set up your test system, and other times it's a breeze.
 
 {% include image_ad_right.html %}

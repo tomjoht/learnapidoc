@@ -11,6 +11,8 @@ last-modified: 2020-11-02
 
 One of the main advantages of a version-control-based system, especially using open-source technologies, is the promise of collaboration. Not just collaboration with your immediate team, but scaling beyond your team to also include other contributors within your organization and even contributors from the community. The idea of crowdsourcing documentation like this, removing the burden from a small number of gate-keeping writers, has been appealing since the emergence of wikis and continues as a driving force behind docs-as-code implementations.
 
+{% include random_ad4.html %}
+
 Many people embrace docs as code with the hope and expectation that many engineers will contribute to the docs. This is, after all, why so many embrace an engineer's tools and workflow in the first place. In this section, I cover processes to consider when external contributors (external to your team, not necessarily external to the company) write content.
 
 * TOC

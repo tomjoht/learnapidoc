@@ -216,6 +216,8 @@ Despite these shortcomings, OpenAPI is quickly becoming a way for more and more 
 
 Additionally, the generated docs from the OpenAPI provide a nice visual shape for an API. You can easily see all the endpoints and their parameters &dash; it acts like a [quick-reference guide](docapis_doc_quick_reference.html). Based on this framework, you can help users grasp the basics of your API at a glance.
 
+{% include random_ad4.html %}
+
 I've also found that learning the OpenAPI specification and describing my API with these objects and properties helped inform my own API vocabulary. For example, I realized that there were [four main types of parameters](docapis_doc_parameters.html): "path" parameters, "header" parameters, "query" parameters, and "request body" parameters. I learned that parameter data types with REST were a "Boolean," "number," "integer," or "string." I learned that [responses](docapis_doc_sample_responses_and_schema.html) provided "objects" containing "strings" or "arrays." In short, implementing the specification gave me an education about API terminology, which in turn helped me describe the various components of my API in credible ways.
 
 OpenAPI may not be the right approach for every API, but it's an industry standard and can be a powerful complement to your API documentation. You can give users the ability to try out requests and responses for themselves. With this interactive element, your documentation becomes more than just information. Through OpenAPI and the interactive docs you generate from it, you create a space for users to both read your documentation and experiment with your API at the same time. That combination tends to provide a powerful learning experience for users.

@@ -153,6 +153,8 @@ Here's the response from [the request](http://api.aerisapi.com/observations/sant
 
 To get the `windSpeedMPH`, you would access it through dot notation like this: `data.response.ob.windSpeedMPH`.
 
+{% include random_ad4.html %}
+
 To add a little variety to the code samples, let's add some conditional logic in the display. The following code checks to see if `data.response.ob.windSpeedMPH` is greater than `15`. If so, it prints `Yes, it's too windy.` If not, it prints, `No, it's not that windy.`
 
 ```html

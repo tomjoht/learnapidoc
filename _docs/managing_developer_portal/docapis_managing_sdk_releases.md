@@ -28,6 +28,8 @@ Since you're controlling the distribution mechanisms on the developer portal, th
 
 Your role with the SDK's release and distribution will differ by company, for sure, as well as how you're distributing it (S3 bucket, JCenter, Maven, GitHub, or other online repository). How do you review these code artifacts to make sure they're publish-ready?
 
+{% include random_ad4.html %}
+
 ## The intake process
 
 First, as with other requests, consider pointing developers to a specialized intake form for their SDK request. This request can require developers to provide information that will let you know if the SDK is ready to be published. The SDK intake ticket might have fields like this:

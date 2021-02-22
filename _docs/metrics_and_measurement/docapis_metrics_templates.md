@@ -11,6 +11,9 @@ last-modified: 2021-02-15
 
 You can use two templates for the metrics described in this [Metrics and measurement section](docapis_metrics_and_measurement.html). These templates were designed to work with Google Docs / Microsoft Word and Google Sheets / Microsoft Excel. The purpose of the coc template is for narrative/qualitative assessments, while the spreadsheet template is to more easily calculate the scores.
 
+* TOC
+{:toc}  
+
 ## Using the doc templates for narrative assessments
 
 The purpose is the doc templates is make it easier to do narrative assessments of the various criteria. For example, if you find that the docs lack tutorials for the key use cases of the API, make notes about what use cases are lacking, or maybe note your inability to locate certain use cases in the docs. These kinds of narrative assessments don't work well in spreadsheets. Here are the two doc templates:
@@ -25,6 +28,8 @@ The templates strip away most formatting and just list the various criteria in a
 ## Using the spreadsheets for scoring
 
 The spreadsheets are meant to facilitate scoring. It's not possible to do a lot of calculations in a Google Docs or Microsoft Word, so you'll need to copy over each score from the doc template into the right cells into a spreadsheet. The CSV file imports equally into Google Sheets or Microsoft Excel, but the steps are a bit different.
+
+{% include random_ad4.html %}
 
 To use the spreadsheet to calculate a score:
 

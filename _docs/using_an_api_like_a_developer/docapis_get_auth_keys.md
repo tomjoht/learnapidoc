@@ -33,6 +33,8 @@ To run the code samples in this course, you will need to use your own API keys, 
 
 ## Get the Aeris Weather API secret and ID {#aeris_weather_apikey}
 
+{% include random_ad4.html %}
+
 Now for contrast, let's get the keys for the Aeris Weather API. The Aeris Weather API requires both a secret and ID to make requests.
 
 1.  Go to [http://www.aerisweather.com](http://www.aerisweather.com) and click **Sign Up** in the upper-right corner.

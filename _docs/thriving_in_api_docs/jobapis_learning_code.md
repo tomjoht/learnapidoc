@@ -6,7 +6,7 @@ weight: 10.2
 sidebar: docapis
 section: jobapis
 path1: /jobapis.html
-last-modified: 2019-11-17 
+last-modified: 2019-11-17
 ---
 
 With developer documentation roles, some level of coding is required. But you don't need to know as much as developers, and acquiring that deep technical knowledge will usually cost you expertise in other areas.
@@ -23,6 +23,8 @@ When faced with these multi-language documentation challenges, hiring managers o
 But even developers will not know more than a few languages. Finding a technical writer who commands a high degree of English language fluency in addition to possessing in-depth technical knowledge of Java, Python, C++, .NET, Ruby, in addition to mastering [docs tools](pubapis_docs_as_code.html) to facilitate the authoring/publishing process from beginning to end is like finding a unicorn. (In other words, these technical writers don't really exist.)
 
 If you find one of these technical writers, the person is likely making a small fortune in contracting rates and has a near limitless choice of jobs. Companies often list knowledge of multiple programming languages as a requirement, but they realize they'll never find a candidate who is both a William Shakespeare and a Steve Wozniak.
+
+{% include random_ad4.html %}
 
 Why does this hybrid individual not exist? In part, it's because the more a person enters into the worldview of computer programming, the more they begin thinking in computer terms and processes. Computers by definition are non-human. The more you develop code, the more your brain's language starts thinking and expressing itself with these non-human, computer-driven gears. Ultimately, you begin communicating less and less to humans using natural speech and fall more into the non-human, mechanical lingo. (I explored this concept more in [Reducing the complexity of technical language](https://idratherbewriting.com/simplifying-complexity/reducing-the-complexity-of-technical-language.html).)
 

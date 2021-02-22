@@ -50,6 +50,8 @@ With most programming languages, you usually start counting at `0`, not `1`.
 
 ## <i class="fa fa-user-circle"></i> Exercise with dot notation {#exercise_dot_notation}
 
+{% include random_ad4.html %}
+
 In this activity, you'll practice accessing different values through dot notation.
 
 1. Create a new file in your text editor and insert the following into it:

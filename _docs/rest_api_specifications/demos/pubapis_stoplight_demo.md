@@ -17,6 +17,8 @@ I've provided information about Stoplight in two other places in this course:
 
 Here I include a short demo of how Stoplight renders the OpenAPIWeatherMap OpenAPI specification. Following the same API we've been using in this course, here's what the /weather endpoint looks like in Stoplight:
 
+{% include random_ad4.html %}
+
 <a href="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_demo_personal.png"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_demo_personal.png" alt="Stoplight API doc example" /></a>
 
 {% include random_ad1.html %}

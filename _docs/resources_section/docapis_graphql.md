@@ -23,6 +23,8 @@ This article was written by Casey Armstrong on July 1, 2019, and originally titl
 
 If you are like me, a budding technical writer, and you are just getting started with writing developer documentation, then you might already feel like you have a full plate in terms of learning new technologies. Alas, the evolving world of developer tools and API related technology has shown that it has absolutely no intention of slowing down for us!
 
+{% include random_ad4.html %}
+
 However, we need not fear this evolution, because behind every new popular technology, there is a crowd-of-enthusiasts behind it. Furthermore, with that crowd-of-enthusiasts comes a large pile of information, a pile that we, as technical writers, can pick-through, distill, and use to orient ourselves.
 
 This post aims to guide you through the pile I found for GraphQL, turn it into an introduction to the topic, and answer the question, "As an API writer, should this be on my radar?"

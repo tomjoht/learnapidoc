@@ -18,6 +18,8 @@ Almost every API shows how to interact with the API using curl. So before moving
 
 One of the advantages of REST APIs is that you can use almost any programming language to call the endpoint. The endpoint is simply a resource located on a web server at a specific path.
 
+{% include random_ad4.html %}
+
 Each programming language has a different way of making web calls. Rather than exhausting your energies trying to show how to make web calls in Java, Python, C++, JavaScript, Ruby, and so on, you can just show the call using curl.
 
 {% include image_ad_right.html %}

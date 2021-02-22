@@ -80,12 +80,8 @@ As such, internal engineers are usually a lot more cautious about sharing shoddy
 
 Is it better to require third-party developers to work out the implementation code on their own (probably misinterpreting and also implementing it incorrectly) rather than potentially leading them astray with bad sample code? I think most developers would say yes. If you push for sample apps as companion pieces to documentation, you might have to find a compromise here between simple, half-baked but functional code and more robust, "showcase" code that would scale in a production environment. Even if you can't release the sample app, you can probably use the sample app for your own testing and validation of the documentation.
 
-{% include random_ad2.html %}
-
 ## Who owns and maintains the sample app?
 
 If you do manage to publish the sample app, questions about ownership will need to be clarified. Who owns the sample app, especially as a companion piece for the documentation? If the apps are integrated into the documentation and intended to highlight the docs, then wouldn't it make sense for the doc team to have some stake in the code's ownership? At the same time, who will respond to the issues logged on GitHub, the pull requests, and other comments around the code there? Ownership and responsibility matter.
 
 I've seen repos abandoned by engineering teams who simply move on to other projects. Engineers transition to other teams/projects/initiatives and don't want to be supporting the same GitHub repos for the rest of their lives. Other times, projects get de-prioritized or sunset, but the GitHub repo stays in the public space, and the initial docs remain, still supported by the doc team. In these cases, you might end up with a sample app that is seemingly inactive or unsupported (with issues piling up), and docs that you still continue support in a "keep the lights on" kind of way. You might have to keep tabs on the GitHub issues logs and champion internal sources to provide support.
-
-{% include random_ad3.html %}

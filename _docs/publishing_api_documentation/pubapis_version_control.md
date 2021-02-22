@@ -62,6 +62,8 @@ Here's the general workflow:
 
 Git's default repository is the `master` branch. When collaborating with others on the same project, usually people branch the master, make edits in the branch, and then merge the branch back into the master.
 
+{% include random_ad4.html %}
+
 If you're editing doc annotations in code files, you'll probably follow this same workflow &mdash; making edits in a particular doc branch. When you're done, you'll create a pull request to have developers merge the doc branch back into the master.
 
 ## Can you collaborate on doc projects in Git with other writers? {#collaborate-in-git}

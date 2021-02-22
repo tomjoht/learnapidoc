@@ -78,6 +78,8 @@ After gathering some high-level project details, dive into more detail about the
 *   What are the relationships between each of the components?
 *   How do each of the components influence each other? What actions exist between the components?
 
+{% include random_ad4.html %}
+
 ## Tasks Overview
 
 *   What's the larger workflow of how to use the various classes in an end-to-end workflow (initialization, termination, etc.)

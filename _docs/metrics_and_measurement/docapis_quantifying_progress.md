@@ -11,6 +11,9 @@ last-modified: 2021-02-15
 
 *This section continues from the previous page, [Second-level checklist for API documentation](docapis_metrics_second_level_checklist.html).*
 
+* TOC
+{:toc}  
+
 ## Analysis and quantitative metrics
 
 It's hard to imagine that documentation that checks all of the boxes in the [first-level checklist](docapis_metrics_first_level_checklist) and [second-level checklist](docapis_metrics_second_level_checklist) wouldn't also score highly with user satisfaction surveys. Can you honestly see any documentation that legitimately satisfies all of these criteria as falling short with users?
@@ -44,9 +47,9 @@ In the [spreadsheet template for scoring criteria](docapis_metrics_templates.htm
 
 As you work on improving documentation, you could quantitatively say that you improved the documentation from a score of 75% to 90%, or something similar. For this quantitative progress to make sense, you need to use a consistent set of criteria applied in a similar way across docs.
 
-Also, keep in mind that adding user satisfaction surveys to corroborate the improvements would be a good idea. But even without the corroboration, at least this rubric provides a more action-oriented way of addressing more fuzzy issues that users might report in a survey (e.g., docs are incomplete, confusing), and it provides a quantitative metric for measurement. If you're a team editor, this checklist lets you audit your documentation to assess quality.
+{% include random_ad4.html %}
 
-{% include random_ad3.html %}
+Also, keep in mind that adding user satisfaction surveys to corroborate the improvements would be a good idea. But even without the corroboration, at least this rubric provides a more action-oriented way of addressing more fuzzy issues that users might report in a survey (e.g., docs are incomplete, confusing), and it provides a quantitative metric for measurement. If you're a team editor, this checklist lets you audit your documentation to assess quality.
 
 ## Objections to "Tom's criteria"
 

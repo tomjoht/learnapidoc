@@ -42,6 +42,8 @@ Before we begin the tutorial, note the following:
 
 Stoplight offers both a [web app](https://stoplight.io/p/studio) and a [desktop app](https://stoplight.io/studio) (Mac, Windows, or Linux). In this tutorial, you will use the web app version of Stoplight Studio because only the web app gives you the ability to publish your content online and try out requests (see [Studio Desktop vs. Studio Web](https://stoplight.io/p/docs/gh/stoplightio/studio/docs/Basics/web-vs-desktop-app.md) for more on the difference). However, you could also use the desktop app if desired (such as for scenarios where you're working with private, unreleased data).
 
+{% include random_ad4.html %}
+
 ## Set up a project in Stoplight Studio
 
 {: .warning}

@@ -26,6 +26,8 @@ When choosing an editor to write OpenAPI code by hand, the most common is the [S
 
 {% include course_image.html url="http://editor.swagger.io/" size="large" filename="swagger_editor_pic" ext_print="png" ext_web="png" alt="The Swagger Editor validates your specification content dynamically and shows you the display on the right" caption="The Swagger Editor validates your specification content dynamically and shows you the display on the right" %}
 
+{% include random_ad4.html %}
+
 While you're coding in the Swagger Editor, if you make an error, you can quickly fix it before continuing rather than waiting until a later time to run a build and sort out errors.
 
 ## JSON or YAML format

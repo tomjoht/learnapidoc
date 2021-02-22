@@ -29,6 +29,8 @@ Sometimes curl is written as cURL. It stands for Client URL. "curl" is the more 
 
 curl is usually available by default on Macs but requires some installation on Windows. Follow these instructions for installing curl:
 
+{% include random_ad4.html %}
+
 ### Install curl on Mac
 
 If you have a Mac, by default, curl is probably already installed. To check:

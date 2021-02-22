@@ -38,6 +38,8 @@ Each API requires you to use an API key, token, or some other form of authentica
 
 ## Swap out APIKEY in code samples
 
+{% include random_ad4.html %}
+
 I never insert API keys in code samples for a few reasons:
 
 * API keys expire

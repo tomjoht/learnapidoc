@@ -74,6 +74,8 @@ $.ajax(settings).done(function (response) {
 
 In the earlier code sample, `done` contains an anonymous function (a function without a name) that executes when `done` is called. The response object from the `ajax` call is assigned to the `done` method's argument, which in this case is `response`. (You can name the argument whatever you want.)
 
+{% include random_ad4.html %}
+
 You can then access the values from the response object using object notation. In this example, the response is just logged to the console.
 
 If you're new to JavaScript, this is likely a bit fuzzy right now. If so, don't worry &mdash; code becomes clearer the more you use it.

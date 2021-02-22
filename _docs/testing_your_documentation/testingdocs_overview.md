@@ -16,6 +16,8 @@ Walking through all the steps in documentation yourself is critical to producing
 * TOC
 {:toc}
 
+{% include random_ad4.html %}
+
 ## Leveraging test cases from QA
 
 When you start setting up tests for your documentation, you typically interact with the quality assurance (QA) team. Developers might be helpful too, but the quality assurance team already has, presumably, a test system in place, usually a test server, and test cases. "Test cases" are the various scenarios that the product needs to be tested against.

@@ -35,6 +35,8 @@ If you want to sign up for your own token, first [sign in to Eventbrite](https:/
 
 The Eventbrite API documentation is available at [https://www.eventbrite.com/platform/api/](https://www.eventbrite.com/platform/api/). Look through the endpoints available (listed under "Reference" in the sidebar). Which endpoint should we use?
 
+{% include random_ad4.html %}
+
 To get event information, we'll use the [event](https://www.eventbrite.com/platform/api#/reference/event) object, which "represents an Eventbrite Event." (The Eventbrite API uses the term "objects" instead of resources.") Specifically, we'll use [Retrieve](https://www.eventbrite.com/platform/api#/reference/event/retrieve-an-event). The only parameter we need to pass is the event ID.
 
 {% include random_ad3.html %}

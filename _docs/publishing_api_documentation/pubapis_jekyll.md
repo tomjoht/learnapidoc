@@ -74,6 +74,8 @@ This setup works reasonably well. Granted, I do have a large monitor, so it give
 
 Admittedly, the Markdown format is easy to use but also susceptible to error, especially if you have complicated list formatting. But the majority of the time, writing in Markdown is a joy. You can focus on the content without getting wrapped up in tags. If you do need complex tags, anything you can write in HTML or JavaScript you can include on your page.
 
+{% include random_ad4.html %}
+
 ## Automating builds from Github
 
 You can integrate Jekyll into platforms such as GitHub Pages or CloudCannon to create continuous delivery publishing. Continuous delivery means that when you commit a change to your Git repo, the server automatically rebuilds your Jekyll site.

@@ -46,6 +46,8 @@ I gave this presentation to STC/WTD Denver &mdash; more details are [here](https
 
 I gave this presentation to the STC/WTD San Diego chapter. More details are [here](https://idratherbewriting.com/2018/02/14/openapi-and-swagger-presentation/). This video covers the [OpenAPI specification and Swagger](https://idratherbewriting.com/learnapidoc/restapispecifications.html) section.
 
+{% include random_ad4.html %}
+
 ### How to Add Swagger to your API
 
 I gave this presentation as a TC Dojo webinar. More details are [here](https://idratherbewriting.com/2017/01/17/swagger-presentation-documenting-rest-apis/). It covers the [OpenAPI specification and Swagger](https://idratherbewriting.com/learnapidoc/restapispecifications.html) section in this course.

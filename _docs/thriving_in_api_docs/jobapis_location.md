@@ -721,6 +721,8 @@ Overall, tech companies will continue to grow and expand outside of Silicon Vall
 
 For ideas on alternative areas, see the "Fastest-Growing States for Technical Writers and Export and GDP Performance in 2017" section of the Salary Database. Michigan had a 28.0% increase in tech writer employment. Georgia had a 19.2% increase. New Mexico had a 23.3% increase.
 
+{% include random_ad4.html %}
+
 Without looking at averages over several years, it's hard to know whether these boosts are temporary anomalies or indicative of a continuous upward trajectory. To give better context to any growth percentages, the Salary Database says to look at the state's overall economic growth, not just their tech comm job market. The report notes, "State employment gains are often correlated with the state’s economy. A growing economy will typically prompt new hires in nearly all industries."
 
 Overall, if you're serious about choosing locations for jobs, consider these factors:

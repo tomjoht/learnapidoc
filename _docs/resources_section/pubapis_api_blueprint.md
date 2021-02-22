@@ -482,6 +482,8 @@ You can switch between an Example and a Console view in the documentation. The E
 * For users who might not have good data or might not want to make requests that would affect their data, they can view the Example.
 * For users who want to see how the API specifically returns either their data or specific parameters, they can use the Console view.
 
+{% include random_ad4.html %}
+
 To call the resource successfully, you'll need to customize the `lat` and `lon` values (e.g., `37.3565982` and `-121.9689848`) and also add an `appid` parameter whose value is your API key. You can then call the resource successfully.
 
 {% include course_image.html size="medium" filename="callresourceapiary" ext_print="png" ext_web="png" alt="Customizing the lat, long, and appid parameters in order to make a successful call" caption="Customizing the <code>lat</code>, <code>long</code>, and <code>appid</code> parameters in order to make a successful call" %}

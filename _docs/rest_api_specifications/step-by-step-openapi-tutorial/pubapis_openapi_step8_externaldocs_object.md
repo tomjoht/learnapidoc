@@ -57,6 +57,8 @@ At this point, you can probably anticipate some challenges with integrating Swag
 
 Now that we've completed all the steps in the tutorial, we're finished building our OpenAPI specification document.
 
+{% include random_ad4.html %}
+
 You can see the complete specification document here: <a href="https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml">https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml</a>.
 
 Here's the specification document rendered by Swagger UI:

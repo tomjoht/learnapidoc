@@ -43,6 +43,8 @@ To make edits in a separate branch on GitHub:
 
 Now let's suppose that the review process is complete, and it's time to merge the branch into the master. You merge the branch into the master through a pull request. Any "collaborator" on the team with write access can initiate and complete the pull request (you can add collaborators through Settings > Collaborators).
 
+{% include random_ad4.html %}
+
 To create a pull request:
 
 1. View the repository and click the **Pull requests** tab.

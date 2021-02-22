@@ -101,6 +101,8 @@ In the doc review, you can start by talking through the documentation at a high-
 
 To collect feedback from field engineers, try putting your docs on the same collaborative platform for collecting feedback that your company has already established. For example, in many companies, teams use Salesforce Quip or Google Docs as collaboration tools. Both are highly similar, as these tools allow you to annotate text and make comments in the margins, and then reply to the comments. Commenters get notified about replies, and so on. Collaborative tools invite more of a discussion around content, not just a static reading experience. If you can write and edit your docs in a collaborative space, this is ideal.
 
+{% include random_ad4.html %}
+
 However, suppose your docs aren't already in a collaborative space (e.g., maybe they're already in your authoring system because the project involves a high degree of integration that isn't feasible to do last minute by copying and pasting from Quip or Google Docs). In this case, you could create a blank page in Quip or Google Docs and invite people to list out questions and issues there, with their initials before their comment. This works well because many times comments apply to the documentation as a whole, or are topics not answered in the documentation.
 
 {: .tip}

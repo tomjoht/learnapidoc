@@ -60,6 +60,8 @@ Although I prefer to use the terminal instead of the GitHub Desktop GUI, the GUI
 
 ## Create a branch
 
+{% include random_ad4.html %}
+
 Now let's create a branch, make some changes, and see how the changes are specific to that branch.
 
 1.  In the GitHub Desktop client, go to **Branch > New Branch** and create a new branch. Call it "development" branch, and click **Create Branch**.

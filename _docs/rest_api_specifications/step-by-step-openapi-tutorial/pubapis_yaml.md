@@ -157,6 +157,8 @@ Here's the same array containing objects converted to YAML:
 
 Hopefully, by seeing the syntax side by side, it will begin to make more sense. Is the YAML syntax more readable? It might be difficult to see in these simple examples, but generally it is.
 
+{% include random_ad4.html %}
+
 JavaScript uses the same dot notation techniques to access the values in YAML as it does in JSON. (They're pretty much interchangeable formats.) The benefit to using YAML, however, is that it's more readable than JSON.
 
 {% include image_ad_right.html %}

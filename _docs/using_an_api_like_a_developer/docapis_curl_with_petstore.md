@@ -170,6 +170,8 @@ In other words, with idempotent methods, you can run them multiple times without
 
 Todd Fredrich explains idempotency by [comparing it to a pregnant cow](http://www.restapitutorial.com/lessons/idempotency.html). Let's say you bring over a bull to get a cow pregnant. Even if the bull and cow mate multiple times, the result will be just one pregnancy, not a pregnancy for each mating session.
 
+{% include random_ad4.html %}
+
 ## Import curl into Postman
 
 You can import curl commands into Postman by doing the following:

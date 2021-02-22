@@ -30,6 +30,8 @@ Another consideration is just how much you can assess without more familiarity w
 
 All too often, you might find yourself situated in a new group, with many pages of documentation before you. What if you're trying to measure your impact on the docs from day one? If you can't complete the assessment until a year into the work, after you'll have already contributed so much to the docs, you won't have a clear benchmark against which to assess your contributions and impact.
 
+{% include random_ad4.html %}
+
 Because some criteria can be assessed quickly, while other criteria requires you to be much more familiar with the documentation, I provide two levels of assessment &mdash; a first-level checklist and a second-level checklist. The two lists are distinguished between quick assessments you can make without being familiar with the docs versus more in-depth assessments that require more familiarity.
 
 {% include random_ad2.html %}

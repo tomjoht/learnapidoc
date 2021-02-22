@@ -26,6 +26,8 @@ This content doesn't embed well in print, as it contains YouTube videos. Please 
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ivum3YbOWQ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+{% include random_ad4.html %}
+
 ### Part II of III
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/zV6m-6_j56w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

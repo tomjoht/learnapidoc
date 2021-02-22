@@ -63,6 +63,8 @@ As you write content in `description` properties, note that colons are problemat
 
 ## Update your file in Swagger Editor
 
+{% include random_ad4.html %}
+
 To update the spec file in Swagger Editor:
 
 1.  Paste the [above code](#sample_info_object) containing the `info` object into the Swagger Editor.

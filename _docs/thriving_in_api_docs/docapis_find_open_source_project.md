@@ -14,12 +14,13 @@ To break into API documentation, you need to start thinking about API documentat
 * TOC
 {:toc}
 
-
 ## Avoiding a catch-22
 
 Let's assume you don't have any experience in API documentation, but you're trying to get an API documentation job. Employers will be willing to overlook experience if you can demonstrate API documentation writing samples. But how will you get API doc writing samples without an API doc job? And without API doc samples, how can you get an API doc job? This can seem like an impossible situation.
 
 Getting around this catch-22 is simple: you create these API doc samples through open-source projects that you contribute to. This is where the activities in this course become essential.
+
+{% include random_ad4.html %}
 
 Rather than merely completing modules and tracking your progress toward the course's completion, the activities you do will help build up your portfolio with API documentation samples, helping you progress to the goal of either obtaining an API documentation job or hitting a home run on an API doc project in your current role.
 

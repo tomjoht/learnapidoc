@@ -20,6 +20,8 @@ The [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html) walked you throug
 
 ## Create the OpenAPI specification document for an API of your choosing
 
+{% include random_ad4.html %}
+
 In an earlier activity, you [found an open-source API project](docapis_find_open_source_project.html) with some documentation needs. Try creating an OpenAPI specification for this API. Depending on the API you choose to work with, you could potentially use this specification document as part of your portfolio.
 
 {% include image_ad_right.html %}

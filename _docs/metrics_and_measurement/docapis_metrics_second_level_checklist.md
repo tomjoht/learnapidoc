@@ -40,7 +40,6 @@ input[type=checkbox] {
 <div style="background-color: #eef; padding: 15px; margin-top: 30px; margin-bottom: 30px;" markdown="block">
 <div style="margin-top: 20px; margin-bottom: 20px; font-size:24px; text-align: center;">Second-level API documentation quality checklist</div>
 
-
 ### Findability
 
 <ul class="checkLists">
@@ -100,7 +99,11 @@ input[type=checkbox] {
 
 ## Is this list complete? No
 
-Between the two checklists ([first-level](docapis_metrics_second_level_checklist) and second-level), there are about 75 different characteristics that I've described. Did I miss anything? Sure, you could probably expand this list with 100 more characteristics. Sometimes it's not clear what needs to be added until you see docs that are missing some key element or which violate some assumed principle. Feel free to let me know (in the comments below) what could/should be added, especially if it's a major omission.
+Between the two checklists ([first-level](docapis_metrics_second_level_checklist) and second-level), there are about 75 different characteristics that I've described. Did I miss anything? Sure, you could probably expand this list with 100 more characteristics.
+
+{% include random_ad4.html %}
+
+Sometimes it's not clear what needs to be added until you see docs that are missing some key element or which violate some assumed principle. Feel free to let me know (in the comments below) what could/should be added, especially if it's a major omission.
 
 {% include image_ad_right.html %}
 

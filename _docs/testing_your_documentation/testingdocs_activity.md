@@ -34,6 +34,8 @@ Now that you've read about testing, it's time to get some more hands-on practice
 
 ## Find out test details
 
+{% include random_ad4.html %}
+
 Identify who performs the testing on the project. Reach out and interact with the QA lead for the project to gather as much information as you can about how testing is done.
 
 {% include image_ad_right.html %}

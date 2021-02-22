@@ -89,6 +89,8 @@ The key-value pairs are each put into double quotation marks when both are strin
 
 ## JSON arrays are lists of items
 
+{% include random_ad4.html %}
+
 An array is a list of items, surrounded by brackets:
 
 ```json

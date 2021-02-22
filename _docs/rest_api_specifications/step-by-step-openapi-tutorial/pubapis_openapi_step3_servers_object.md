@@ -73,6 +73,8 @@ Paste the `servers` object (the [first code sample above](#sample_servers_object
 
 {% include course_image.html filename="swagger_servers_object2" ext_print="png" ext_web="png" alt="Swagger UI with the servers object" caption="Swagger UI with the servers object" %}
 
+{% include random_ad4.html %}
+
 Notice the drop-down menu that appears in the lower-right. (Even if you have just one URL, it still appears in a drop-down menu.)
 
 {% include random_ad1.html %}

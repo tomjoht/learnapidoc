@@ -50,6 +50,8 @@ As with broken links, identifying broken images is another task that you can tac
 
 How often have you looked at your list of branches in origin and found half a dozen or more old branches or branches you no longer recognize? Long-lived branches outside of your production environment are rarely a good thing, as the branch usually becomes more and more divergent. If you've already merged the branch, get rid of it. If the content is unpublished, consider merging it anyway (assuming it's a new page and doesn't update existing pages), and then use other techniques to enforce access control. You could even set the page as unpublished.
 
+{% include random_ad4.html %}
+
 There might be other maintenance tasks to perform on your Git repository as well, such as pruning large files to reduce the repo's size, verifying permissions, or running other maintenance tasks.
 
 ## 5. Identify unpublished files

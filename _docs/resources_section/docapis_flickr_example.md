@@ -38,6 +38,8 @@ From the list of [Flickr's API methods](https://www.flickr.com/services/api/), t
 
 One of the arguments we need for the `getPhotos` endpoint is the `gallery_id`. Before we can get the `gallery_id`, however, we have to use another endpoint to retrieve it. *Somewhat unintuitively, the `gallery_id` is <em>not</em> the ID that appears in the URL of the gallery.*
 
+{% include random_ad4.html %}
+
 Instead, we use the [`flickr.urls.lookupGallery`](https://www.flickr.com/services/api/explore/flickr.urls.lookupGallery) endpoint listed in the URLs resource section to get the `gallery_id` from a gallery URL:
 
 <a href="https://www.flickr.com/services/api/explore/flickr.urls.lookupGallery" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/flickr_gallery_id.png" alt="Flickr lookupGallery endpoint endpoint" /></a>

@@ -79,6 +79,8 @@ All paths that have the same tag are grouped together in the display. For exampl
 
 <a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapitutorial_tags.png" class="medium" /></a>
 
+{% include random_ad4.html %}
+
 The order of the tags in the `tags` object at the root level determines their order in Swagger UI. Additionally, the `descriptions` appear to the right of the tag name.
 
 {% include random_ad2.html %}
