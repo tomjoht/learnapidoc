@@ -10,9 +10,13 @@ path1: /docconceptual.html
 last-modified: 2020-09-20
 ---
 
-Up until this point, we've mostly been focusing on the [reference aspects of API documentation](docendpoints.html) (the endpoints). The reference documentation is only one aspect of API documentation. In this section, I'll cover the main conceptual topics that are commonly found in API documentation. Rather than "conceptual topics," you might consider this type of information the "user guide."
+Up until this point, we've mostly been focusing on the [reference aspects of API documentation](docendpoints.html) (the endpoints). The reference documentation is only one aspect of API documentation.
 
-{% include random_ad.html %}
+{% include random_ad4.html %}
+
+In this section, I'll cover the main conceptual topics that are commonly found in API documentation. Rather than "conceptual topics," you might consider this type of information the "user guide."
+
+{% include random_ad1.html %}
 
 The following are common conceptual topics commonly found in API documentation:
 

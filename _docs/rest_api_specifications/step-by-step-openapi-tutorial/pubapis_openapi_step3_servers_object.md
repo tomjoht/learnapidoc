@@ -75,4 +75,4 @@ Paste the `servers` object (the [first code sample above](#sample_servers_object
 
 Notice the drop-down menu that appears in the lower-right. (Even if you have just one URL, it still appears in a drop-down menu.)
 
-{% include random_ad.html %}
+{% include random_ad1.html %}

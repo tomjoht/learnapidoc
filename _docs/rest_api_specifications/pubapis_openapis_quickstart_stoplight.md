@@ -486,7 +486,7 @@ To enter the response in Stoplight Studio:
 
 8.  Click the **Example** tab and insert the example (from the same Response information button above). Call the example "Example."
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Save and preview your schema work
 

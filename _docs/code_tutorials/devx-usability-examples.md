@@ -29,11 +29,13 @@ Usability can be roughly divided into at least three different areas:
 
 Usability with physical products or graphical user interfaces (GUIs) is what people traditionally think of with usability. When you have a physical product to use, assessing its usability is more straightforward.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 For example, suppose you're testing the usability of a new headphone design. A usability researcher might bring in a group of beta testers to try the headphones on, ask them to adjust the headphone controls, use the headphones in their daily workflows, and so on. Users might evaluate the headphones based on comfort, familiarity of buttons, how easy they might be to pair to bluetooth, the placement of the microphone, and so on.
 
 Usually, technical writers are too far down the development line to influence product design. By the time the product arrives at your door, most product teams just ask technical writers to provide documentation for the product, not to provide input on design itself. Usually, it would not be expected for you to push back on the design and try to get the product to team to reconsider fundamental aspects such as the placement of the microphone or the fit over your ears. (Of course, you can always try, and different scenarios might be more appropriate for rethinking product design.) You might be able to influence *button names* at this point, and maybe catch glitches in the software (e.g., maybe the bluetooth pairing is wonky), but don't expect too much. Changing product design is usually required before the specs are sent to the factory. After factory lockdown, it's hard to change a product. And documentation is usually something that begins after factory lockdown.
+
+{% include random_ad4.html %}
 
 That's not to say that you shouldn't venture forth to comment and critique product design. Just don't get your hopes up if the timeline doesn't allow for drastic changes. By the way, some technical writers get tired of documenting poorly designed products, so they move into usability and product design instead. Once you make this move, you're usually operating outside the standard tech writer domain. For more on playing a product design role, see [Playing a product design role as a content designer -- podcast with Jonathon Colman](/blog/podcast-colman-playing-product-design-roles-as-a-content-designer/).
 

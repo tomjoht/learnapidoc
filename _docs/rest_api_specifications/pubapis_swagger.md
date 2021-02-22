@@ -82,7 +82,7 @@ Now let's make a request:
 3.  Enter the pet ID you used in the previous operation. (If you forgot it, look back in the **POST Pet** endpoint to check the value.)
 4.  Click **Execute**. You should see your pet's name returned in the Response section.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Some sample Swagger UI doc sites
 

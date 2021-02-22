@@ -28,6 +28,8 @@ Bob says, "If your API is hard to document, it could be a sign of more fundament
 
 Since technical writers are uniquely suited to provide feedback on usability, especially as we step through the user tasks in detail, it makes sense to expand here on what usability means, how to evaluate the usability of an API, and other details to look for. In presenting this information, I'll rely extensively on Arnaud Lauret's [*The Design of Web APIs*](https://www.amazon.com/Design-Web-APIs-Arnaud-Lauret/dp/1617295108) since it provides an in-depth treatment of APIs and design/usability.
 
+{% include random_ad4.html %}
+
 ## What is usability
 
 Usability has the same meaning whether you're referring to end-user applications with graphical user interfaces or developer code with an API. Usability refers to how easy it is for users to accomplish their desired tasks with the tool.
@@ -38,7 +40,7 @@ To evaluate usability, you must first understand what tasks users want to perfor
 
 Despite the seemingly perfect fit between tech comm and usability, it's a lot more challenging than it might seem for tech writers to provide usability feedback.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 The first issue is that tech writers are often too far downstream to have any actionable feedback on the design, so the motivation to influence design might not be strong. Questions about the API's design have likely been decided on long before the documentation task usually arrives in the tech writer's inbox. Unless you're extremely proactive in identifying APIs at their inception point, you probably don't even hear about the API until it's been approved by leadership and half-way coded. At this point, if you raise your hand and say, this endpoint doesn't make any sense to me, the feedback is too radical. Developers aren't going to drop everything and go back to the drawing board.
 

@@ -28,7 +28,7 @@ Classes are templates or blueprints that drive pretty much everything in Java. I
 
 In Java, you start by defining classes. Each class is its own file and begins with a capital letter. The file name matches the class name, which means you have just one class per file.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 Each class can contain some fields (variables for the class) and methods (subroutines the class can do).
 
@@ -91,6 +91,8 @@ See how the `brake` method accepts two arguments &mdash; `force` and `weight`. T
 {% include random_ad2.html %}
 
 Java has different types of methods. *Instance* methods can only be used from objects instantiated from the class. *Static* methods can be used directly from the class without instantiating an object first. *Abstract* methods can only be used through subclasses.
+
+{% include random_ad4.html %}
 
 Somewhere in your Java application, users will have something called a `main` method that looks like this:
 

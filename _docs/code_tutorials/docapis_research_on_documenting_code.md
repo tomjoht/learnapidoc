@@ -36,6 +36,8 @@ The researchers used tracking tools to identify when developers would switch fro
 
 Even if you don't document C++, this study is helpful because it raises this central question: should you put the bulk of your documentation in formal descriptions about the code, or should the bulk of your documentation appear within the context of the code, peppered in as inline comments.
 
+{% include random_ad4.html %}
+
 After gathering information from more than 600 participants in their study, the researchers found that not all code is equal. Complex code needs more formal documentation, but simple code might not need documentation at all.
 
 ### What type of code actually needs documentation
@@ -198,7 +200,7 @@ While the learning styles discussed in this article might seem more applicable t
 
 More than any other type of API documentation, when you document code you find yourself with a direct opportunity to target the opportunistic learning style with experiment-and-try opportunities.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Takeaways from the Research
 

@@ -9,9 +9,13 @@ path1: /docendpoints.html
 last-modified: 2020-01-22
 ---
 
-With each of the conceptual topics in this section, you've been analyzing the topic in the context of the [open-source project you identified](docapis_find_open_source_project.html). Now broaden your analysis to see how these conceptual topics appear in other API documentation sites.
+With each of the conceptual topics in this section, you've been analyzing the topic in the context of the [open-source project you identified](docapis_find_open_source_project.html).
 
-{% include random_ad.html %}
+{% include random_ad4.html %}
+
+Now broaden your analysis to see how these conceptual topics appear in other API documentation sites.
+
+{% include random_ad1.html %}
 
 {% include image_ad_right.html %}
 

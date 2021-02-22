@@ -115,6 +115,6 @@ input[type=checkbox] {
 
 </div>
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 *Continue on to the next section, [Second-level checklist for API documentation](docapis_metrics_second_level_checklist).*

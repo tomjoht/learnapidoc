@@ -48,6 +48,8 @@ In general, use curl to show your sample request. Here's another example of a cu
 
 You can add backslashes in curl to separate each parameter onto its own line (though, as I pointed out in the [curl tutorial](docapis_make_curl_call.html#windows_notes), Windows has trouble with backslashes).
 
+{% include random_ad4.html %}
+
 Other API doc sites might use the full resource URL, such as this plain example from Twitter:
 
 <a class="noExtIcon" href="https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-friends-list"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/twitterrequestexample.png" /></a>
@@ -80,7 +82,7 @@ If you [click the link](https://api.citygridmedia.com/content/places/v2/search/w
 
 How many different requests and responses should you show? There's probably no easy answer, but probably no more than a few. You decide what makes sense for your API. Users will usually understand the pattern after a few examples.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 {% include image_ad_right.html %}
 

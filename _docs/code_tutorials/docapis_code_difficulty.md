@@ -40,6 +40,8 @@ Code itself is non-linear. What appears at the top (e.g., variables) might not b
 
 The central paradigm most technical writers follow is a task-based model where you begin with step 1, 2, 3, and so on until you reach the end of the task. This isn't the case with code documentation. Code is non-linear by nature. You can't simply start from the top and proceed to the bottom. Although I attempted a somewhat section-by-section explanation in my code explanation, I had to skip over some lines or note that they were part of logic explained in later sections.
 
+{% include random_ad4.html %}
+
 Overall, this non-linearity is very different from the procedural approach usually followed in tech docs.
 
 ## Challenge 2: Audience has a high variance of technical levels
@@ -70,7 +72,7 @@ Finally, I should note that when I document code, I feel a bit like an outsider 
 
 An efficient technique in code (e.g., recursive loops that expand resources as needed) can be beautiful, evoking an aesthetic in the engineer's mind. In my perspective as a technical writer, it's unlikely that I'll approach code with the same reverence and awe. My more mundane approach to code might make it difficult to resonate with developer users.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## The importance of code documentation
 

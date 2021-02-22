@@ -22,7 +22,7 @@ If documentation isn't actively maintained, it rots (becomes Redundant, Outdated
 
 As more time passes, the amount of legacy documentation becomes more and more abundant. The rate of new documentation that tech writers create versus the amount of documentation the tech writers retire tends to be an uneven ratio: you create more than you retire. Most documentation requests that come in from product teams relate to new documentation, as everyone is focused on the shiny and new, the possibilities of a new feature, the excitement of a release, and so forth. Few want to take responsibility for documentation related to products or features that fizzled but are still used.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 It's easy to get caught up in constantly creating new content. After all, this is what requests to the documentation team usually consist of &mdash; product managers say, *We're releasing a new product/feature, and we need docs!* Product teams rarely reach out to you to review two-year-old docs, or to update docs against support cases to see if better docs could have prevented the support efforts. Once you publish your docs, major content updates or overhauls are rare except with major product updates.
 

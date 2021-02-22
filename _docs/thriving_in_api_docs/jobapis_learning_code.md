@@ -96,7 +96,7 @@ The level of coding knowledge required no doubt depends on the position, environ
 
 In my experience, Neiman's explanation about developers instructing tech writers to create similar code in other languages (based on a 15-minute over-the-shoulder conversation at the engineer's desk) goes too far. Although I've created simple JavaScript code samples (based on a pattern the engineers showed me), I've never been asked to create code samples across other languages. I could auto-generate code snippets for web API requests (using Postman), but to develop code across multiple languages tends to be more of the programmer's responsibility, not the tech writer's.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 Neiman goes on to say that in one company, he tested out the code from engineers and found that much of it relied on programs, utilities, or other configurations already set up on the developers' computers. As such, the engineers were blind to the initial setup requirements that users would need to run the code properly. Neiman says this is one danger of simply copying and pasting the code from engineers into documentation. While it may work on the developer's machine, it will often fail for users.
 

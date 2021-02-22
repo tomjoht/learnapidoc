@@ -44,7 +44,7 @@ Through this distillation, quick reference guides provide a unique advantage for
 {: .tip}
 For a deep dive into the importance of distilling information for users, see [Reduction, layering, and distillation as a strategy for simplicity](https://idratherbewriting.com/simplifying-complexity/reduction-layering-distillation.html) in my series on Simplifying Complexity. Reading overviews, summaries, and other high-level information to see the whole at a glance can help users understand a complex system in significant ways. Too often, users get thrown into the technical details without more grounding and orientation about the whole.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 Distilling large amounts of information into concisely worded titles, summaries, headings, mini-TOCs, and topic sentences can facilitate information consumption and comprehension. Quick reference guides take the principle of distillation to another level by compressing the whole system into a bite-sized information deliverable.
 
@@ -83,6 +83,8 @@ If you use the [OpenAPI reference docs on GitHub](https://github.com/OAI/OpenAPI
 {% include course_image.html url="http://cheat.markdunkley.com/" filename="shopifyquickreferenceguide" ext_print="png" ext_web="png" alt="Shopify quick reference guide" caption="Shopify quick reference guide" %}
 
 The Shopify quick reference guide isn't for an API, but it does show the filters, variables, and other functions available in Liquid, which is a scripting language for developers. Here Shopify takes advantage of collapse-and-expand functionality to compress the information.
+
+{% include random_ad4.html %}
 
 This quick reference guide is handy because it lets you browse all the available functionality in Liquid at once, so you can know what to dive into for more information. It's like a map of the Liquid terrain. The map lets you know all the functions that exist.
 

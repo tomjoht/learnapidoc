@@ -84,7 +84,7 @@ Here's what these objects mean:
 
 Learning the OpenAPI spec and constructing the YAML or JSON code by hand the first time, when you're also trying to sort out what the values should be, can be daunting. It might be easier to start in a visual editor like Stoplight and then, if desired, transition into more of a direct code-based approach. For this reason I have arranged the sequence of this course to start out first in the visual editor, with [Create an OpenAPI document using a visual editor (Stoplight Studio)](pubapis_stoplight.html), and then later in the course provide an [OpenAPI tutorial overview using Swagger Editor and Swagger UI](pubapis_openapi_tutorial_overview.html). However, you can probably do most everything from within the visual editor.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Auto-generation options for creating the OpenAPI spec {#autogeneration}
 

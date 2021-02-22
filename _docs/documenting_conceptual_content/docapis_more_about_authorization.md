@@ -34,6 +34,8 @@ Why do APIs even need authentication? For read-only APIs, sometimes users don't 
 
 Additionally, without authentication, there wouldn't be an easy way to associate requests with specific user data. And there wouldn't be a way to protect against requests from malicious users that might delete another user's data (such as by making DELETE requests on another's account).
 
+{% include random_ad4.html %}
+
 Finally, you couldn't track who is using your API, or what endpoints are most used. Clearly, API developers must think about ways to authenticate and authorize requests made to their API.
 
 Overall, authentication and authorization with APIs serves the following purposes:
@@ -71,7 +73,7 @@ Authorization: Basic bG9sOnNlY3VyZQ==
 
 APIs that use Basic Auth will also use HTTPS, which means the message content will be encrypted within the HTTP transport protocol. (Without HTTPS, it would be easy for people to decode the username and password.)
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 When the API server receives the message, it decrypts the message and examines the header. After decoding the string and analyzing the username and password, it then decides whether to accept or reject the request.
 

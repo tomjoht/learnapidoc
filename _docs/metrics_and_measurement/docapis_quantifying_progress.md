@@ -17,7 +17,7 @@ It's hard to imagine that documentation that checks all of the boxes in the [fir
 
 And yet, to achieve the level of information quality, we didn't have to rely on constant user surveys to gather feedback. By identifying best practices for content design (specifically for API/developer documentation), we're able to increase the documentation quality in more self-sufficient, self-directed ways.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 {: .note}
 Sometimes poor API design will make even good docs problematic. If the API has inconsistent naming, incomplete parameters, doesn't map to user journeys, and is cumbersome to use, then documentation also becomes more cumbersome to follow and implement. Good docs can't fix bad API design, though docs can try to salvage the user experience. If you have to explain the equivalent of String Theory and Lagrange Multipliers in your docs, give yourself extra points even if clarity is still debatable.

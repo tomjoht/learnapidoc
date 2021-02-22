@@ -85,4 +85,4 @@ The order of the tags in the `tags` object at the root level determines their or
 
 In our sample OpenAPI spec, tags don't seem all that necessary since we're just documenting one path/endpoint. (Additionally, I configured the [Swagger UI demo](pubapis_swagger_demo.html) to expand the section by default.) But imagine if you had a robust API with 30+ paths to describe. You would certainly want to organize the paths into logical groups for users to navigate.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}

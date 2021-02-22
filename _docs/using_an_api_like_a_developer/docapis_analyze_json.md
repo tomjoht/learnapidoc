@@ -145,7 +145,7 @@ And objects can contain arrays in the value part of the key-value pair:
 }
 ```
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 Just remember, objects are enclosed by curly braces `{ }` and contain key-value pairs. Sometimes those values are arrays. Arrays are lists and are enclosed by square brackets `[ ]`. It's common for arrays to contain lists of objects, and for objects to contain arrays.
 

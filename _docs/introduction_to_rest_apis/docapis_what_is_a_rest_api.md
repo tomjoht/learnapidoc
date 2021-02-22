@@ -14,7 +14,6 @@ last-modified: 2020-03-15
 
 This course is all about learning by doing, but while *doing* various activities, I'll periodically pause and dive into some more abstract concepts to fill in more detail. This topic is one of those deep-dive moments into concepts. Here we'll explore what a REST API is, comparing it to other types of APIs like SOAP. REST APIs have common characteristics but no definitive protocols like its SOAP predecessor.
 
-
 {% if site.format == "web" %}
 * TOC
 {:toc}
@@ -33,6 +32,8 @@ APIs are often pulling and pushing data underneath user interfaces. Consider the
 Or consider other similar services. When you see a YouTube video embedded on a site, the site itself doesn't host the video. Instead, the embed code contains API requests that get the video from YouTube's hosting centers. When you embed a Twitter widget on your site, the widget's APIs pull in tweets from a Twitter server onto your site.
 
 Consider another example from Fire TV. Suppose you want to view a pay-per-view event that requires payment. A pop-up dialog might appear letting you enter your credit card details. Your payment gets processed and you receive confirmation about the purchase's success. This payment processing doesn't occur within the app. Instead, the app makes API calls out to payment servers with the needed information, and all that payment processing happens in the cloud. When the processing finishes, the API returns a confirmation response.
+
+{% include random_ad4.html %}
 
 The next time you push a button in some interface, think about what's going on underneath. Most likely, the button is internally wired to make calls to an external service for the information needed. That call is made through an API that performs a request and receives a response.
 
@@ -80,7 +81,7 @@ Like SOAP, REST (Representational State Transfer) uses HTTP as the transport pro
 
 A RESTful API might not follow all of the official characteristics of REST as outlined by [Dr. Roy Fielding](https://en.wikipedia.org/wiki/Roy_Fielding), who first described the model. Hence these APIs are "RESTful" or "REST-like." (Some developers insist on using the term "RESTful" when the API doesn't fulfill all the characteristics of REST, but most people just refer to them as "REST APIs" regardless.)
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 As an architectural style, you aren't limited to XML as the message format. REST APIs can use any message format the API developers want to use, including XML, JSON, Atom, RSS, CSV, HTML, and more.
 

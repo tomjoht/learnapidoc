@@ -64,7 +64,7 @@ For a tutorial on setting up Jekyll on CloudCannon, see [Jekyll and CloudCannon 
 
 Read the Docs is an online hosting and deployment platform that can read Sphinx projects (from a public repository such as GitHub or Bitbucket) and automatically build the web output. In other words, it is a "continuous documentation platform for Sphinx" (see [An introduction to Sphinx and Read the Docs for Technical Writers](http://ericholscher.com/blog/2016/jul/1/sphinx-and-rtd-for-writers/)).
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 The introduction on the [Read the Docs homepage](https://readthedocs.org/) describes the platform as follows:
 

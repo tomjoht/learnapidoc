@@ -20,7 +20,7 @@ The API glossary defines all the terms that might be unique to your company or A
 
 Unlike most other professional writing disciplines, tech docs are notorious for the number of specialized terms in their content. Not only do we have unique terms related to our products, industry jargon and company-specific terms make their way into docs, driving up their complexity.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 API evangelist Kin Lane recently noted his frustration with an API's language when he encountered an undefined acronym in some API docs he was browsing. Lane explains,
 
@@ -41,7 +41,11 @@ I provide an [API glossary here](api-glossary.html) that defines many terms rela
 
 ## Should you provide a glossary?
 
-Usually, providing a glossary in your documentation seems like going above and beyond the call of duty. However, defining these terms has tremendous benefit for the writer too, not just for the users. Defining terms helps you recognize the specialized terminology that might be used with your API &mdash; terms that you may have become immune to by hearing them so frequently in project meetings. By defining the terms, you ensure that you're using these terms more precisely and accurately (rather than switching around with synonyms for variety).
+Usually, providing a glossary in your documentation seems like going above and beyond the call of duty. However, defining these terms has tremendous benefit for the writer too, not just for the users.
+
+{% include random_ad4.html %}
+
+Defining terms helps you recognize the specialized terminology that might be used with your API &mdash; terms that you may have become immune to by hearing them so frequently in project meetings. By defining the terms, you ensure that you're using these terms more precisely and accurately (rather than switching around with synonyms for variety).
 
 {% include image_ad_right.html %}
 

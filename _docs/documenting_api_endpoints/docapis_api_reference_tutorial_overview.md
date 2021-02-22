@@ -46,6 +46,8 @@ The tutorial here includes a workflow map to help guide and orient you each step
 {% endif %}
 </div>
 
+{% include random_ad4.html %}
+
 ## After the tutorial
 
 {% include random_ad2.html %}
@@ -57,7 +59,7 @@ When we're finished, the end result will look like a real API help topic (see th
 {: .note}
 Although there are automated ways to publish API docs, we're focusing on content rather than tools in this section. In the next section, [OpenAPI spec and generated reference docs](restapispecifications.html), we'll look at how to describe these same reference components using the OpenAPI specification. In the [Publishing your API documentation section](publishingapis.html), we'll look at ways to publish the information.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Next steps
 

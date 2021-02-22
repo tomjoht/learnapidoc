@@ -19,7 +19,7 @@ In this section, you'll use curl to make the same weather API requests you made 
 
 {% include content/activities/make_curl_request.md %}
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 {% include image_ad_right.html %}
 

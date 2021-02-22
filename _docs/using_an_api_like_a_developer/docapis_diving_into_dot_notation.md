@@ -205,4 +205,4 @@ As you've progressed through the exercises for using an API like a developer, yo
 
 With this background, it's time to switch gears and put on your technical writing hat. In the next section, [Documenting endpoints](docendpoints.html), you'll assume the task of [documenting a new endpoint](docapis_new_endpoint_to_doc.html) that was added to a weather API. You'll learn the essential sections in endpoint reference documentation, the terminology to use, and formatting conventions for API reference information.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}

@@ -147,7 +147,7 @@ Here's the response from [the request](http://api.aerisapi.com/observations/sant
 
 `windSpeedMPH` is the value we want.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## 4. Pull out the values from the response
 

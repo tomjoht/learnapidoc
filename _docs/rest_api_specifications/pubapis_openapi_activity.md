@@ -26,7 +26,7 @@ In an earlier activity, you [found an open-source API project](docapis_find_open
 
 If your open-source project doesn't have an API, or if it's API already has an OpenAPI specification, find another API (perhaps from this [list of 100+ APIs](pubapis_apilist.html)) and create the OpenAPI specification.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 Go through each step of the OpenAPI specification tutorial to build out the specification document:
 

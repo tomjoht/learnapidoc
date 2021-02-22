@@ -243,7 +243,7 @@ Here's an example curl request that combines some of these commands:
 curl -i -H "Accept: application/json" -X POST -d "{status:MIA}" http://personsreport.com/status/person123
 ```
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 The request could also be formatted with line breaks to make it more readable:
 

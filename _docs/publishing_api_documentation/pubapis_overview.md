@@ -84,7 +84,7 @@ Engineers often want to push the reference documentation for APIs into well-defi
 
 If you have a lot of endpoints, you need a system for pushing the content into standard templates. Ideally, you should separate the various sections (description, parameters, responses, etc.) and then compile the information through your template when you build your site. Or you can use a specification such as [OpenAPI](pubapis_openapi_intro.html) to populate the information into a template. You can also incorporate custom scripts. However, you don't often have these options in HATs, since you're mostly limited to what workflows and templates are supported out of the box.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ### 4. Many APIs have interactive API consoles, allowing you to try out the calls
 

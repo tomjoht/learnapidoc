@@ -38,7 +38,7 @@ I gave this presentation to the WTD South Bay group. More details are  [here](ht
 
 I gave this presentation to STC/WTD Denver &mdash; more details are [here](https://idratherbewriting.com/2018/03/09/docs-as-code-tools-and-workflows-denver-presentation/). The video covers the [Docs as code tools](pubapis_docs_as_code.html) and [Case study: Switching tools to docs-as-code](pubapis_switching_to_docs_as_code.html) topics.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ### OpenAPI and Swagger
 

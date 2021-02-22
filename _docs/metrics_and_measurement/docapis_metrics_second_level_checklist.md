@@ -106,6 +106,6 @@ Between the two checklists ([first-level](docapis_metrics_second_level_checklist
 
 However, there's also something to be said for a practical list of key points. The more criteria you add, the more laborious it becomes to evaluate docs. The most popular style guides (e.g., Strunk and White) are those that briefly cover the main points you need rather than providing an exhaustive list, especially if many guidelines are already followed.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 *Continue on to the next section, [Quantifying your progress](docapis_metrics_quantifying_progress.html).*

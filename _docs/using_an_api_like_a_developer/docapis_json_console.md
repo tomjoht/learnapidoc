@@ -91,7 +91,7 @@ console.log(response);
 
 Logging responses to the console can be a useful way to test whether an API response is working (it's also helpful for debugging or troubleshooting your code). The console collapses each object inside an expandable section. You can inspect the payload in the console to see if contains the values you expect (without printing values to the page).
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 {% comment %}
 You can add other information to the console log message. To preface the log message with a string, add something like this:

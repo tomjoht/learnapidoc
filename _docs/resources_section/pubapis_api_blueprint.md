@@ -22,7 +22,7 @@ Note that unless you're using a platform that specifically requires API Blueprin
 
 The API Blueprint spec is written in a Markdown-flavored syntax. It's not regular Markdown, but it has a lot of the same, familiar Markdown syntax. However, the blueprint is a particular schema that is either valid or not valid based on the element names, order, spacing, and other details. In this way, it's not nearly as flexible or forgiving as Markdown. But it may be preferable to YAML.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Sample blueprint
 

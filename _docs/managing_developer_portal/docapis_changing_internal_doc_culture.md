@@ -29,7 +29,7 @@ Poor documentation environments can be characterized by the following:
 
 * **Support for tooling is underfunded for the requirements.** You might need robust tools to provide the kind of experience people require (PDF, localization, gated docs, etc.), but the company might not want to fund any tooling resources, insisting that you use open-source tools instead, or not providing enough time to build out tooling you need.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 Most tech writers are familiar with some of these aspects. I've written about these topics multiple times on my blog, especially in these two series:
 
@@ -79,6 +79,8 @@ When you do improve docs in significant ways, others will start to ask for tech 
 ### 5. Be in the right group organizationally
 
 Okay, this last point is controversial and opinionated, but it can't be left out. Where you are in the organization matters. Are you grouped in Product, Marketing, Engineering, Support, or some other department? I've been in nearly every organizational discipline, and my best experiences are when I'm in Engineering. This is because engineers are heavily involved in the product *development* phase, and this is where you want to be as a technical writer. Marketers are too involved in the release phase, support in the post-release phase, and product in the pre-development phase. But engineers are in the development phase. As a technical writer, you're *developing* content, and you need the sprint cadence of weekly development and workflows. Engineering understands this flow, and documentation groups fit well into it. (Many of these other groups don't even follow Scrum/Kanban workflows.)
+
+{% include random_ad4.html %}
 
 If you're not in the right group now, don't worry. In my 5 years at Amazon, I had 5 different managers and experienced about the same number of re-orgs. I'm sure I could have influenced where the doc group was moved during different re-org periods, but I rarely had any foreknowledge of upcoming re-orgs; they just happened without warning.
 

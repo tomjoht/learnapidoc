@@ -52,6 +52,8 @@ Finally, you'll dive into different ways to [publish REST API documentation](pub
 
 We'll also dive into specifications such as the [OpenAPI specification](pubapis_openapi_tutorial_overview.html) and [Swagger UI](pubapis_openapi_intro.html) (which provides tooling for the OpenAPI specification). Additionally, you'll learn how to [document native library APIs](nativelibraryapis.html) and generate [Javadoc](nativelibraryapis_create_javadoc.html). Throughout this course, I put these concepts in real, applicable contexts with hands-on activities and demos.
 
+{% include random_ad3.html %}
+
 ## Who the course is for
 
 The course primarily serves the following audiences:
@@ -63,6 +65,8 @@ The course primarily serves the following audiences:
 ## Course organization
 
 Descriptions of each section in this course are provided below:
+
+{% include random_ad1.html %}
 
 {% assign sidebar = site.data.docapis %}
 {% for folder in sidebar.folders %}
@@ -95,7 +99,7 @@ Some of the code samples in this course use JavaScript. JavaScript may or may no
 
 JavaScript is one of the most useful and easy languages to become familiar with, so it works well in code samples for this introduction to REST API documentation. JavaScript allows you to test code by merely opening it in your browser (rather than compiling it in an IDE). (I have a [quick crash-course in JavaScript here](https://idratherbewriting.com/javascript/) if you need it.)
 
-{% include random_ad.html %}
+{% include random_ad4.html %}
 
 ## What you'll need {#what_you_need}
 

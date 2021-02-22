@@ -11,6 +11,8 @@ last-modified: 2020-06-27
 
 Let's pull together the various parts we've worked on and bring them together to showcase the full example.
 
+{% include random_ad4.html %}
+
 <div class="docSample">
 {% include_relative surfreport_resource_description.html %}
 {% include_relative surfreport_endpoint.html %}
@@ -34,4 +36,4 @@ Now that you've completed the [API reference tutorial](docapis_api_reference_tut
 * [Activity: Find an open-source project](docapis_find_open_source_project.html)
 * [Activity: Evaluate API reference docs](docapis_api_reference_activity.html)
 
-{% include random_ad.html %}
+{% include random_ad1.html %}

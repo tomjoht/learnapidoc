@@ -15,6 +15,8 @@ The workshop agenda, slides, and activities correspond to full-day API workshop.
 
 Note that for API workshops, it helps to consolidate activities into a single page with brief instructions. The content for the activities below is the same content that appears in other parts of the course &mdash; it's just pulled in here (single-sourced) for convenience. Workshops require a healthy amount of hands-on activities to be engaging. If you have feedback about how to improve the activities, or places where you keep getting stuck, [let me know](https://idratherbewriting.com/learnapidoc/contact.html).
 
+{% include random_ad4.html %}
+
 Not all activities in this course are consolidated here, since participants can only do so much during a workshop. The following activities are those I've selected for workshops.
 
 * TOC
@@ -145,7 +147,7 @@ During this time, I'd like to have participants surface specific challenges that
 
 {% include workshop_button.html title="Jeopardy: Test your knowledge" activity="jeopardy_questions" button_type="info" %}
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 
 ## 5:00 - 5:30pm: Individual consulting

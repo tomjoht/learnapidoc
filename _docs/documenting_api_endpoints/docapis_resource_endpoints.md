@@ -84,7 +84,7 @@ And here's an example from the Linkedin API:
 {: .tip}
 Sometimes the method is referred to as the "verb." GET, PUT, POST, PATCH, and DELETE are all verbs or actions.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## The endpoint shows the end path only
 
@@ -130,6 +130,8 @@ And rewards in context of Missions looked like this:
 </pre>
 
 To say that you could use the rewards resource wasn't always specific enough, because there were multiple rewards and missions endpoints.
+
+{% include random_ad4.html %}
 
 It can get awkward referring to the endpoint. For example, you might have a sentence like this: "When you call `/users/{userId}/rewards/`, you get a list of all rewards. To get a specific reward for a specific mission for a specific user, the `/users/{userId}/rewards/{missionId}` endpoint takes several parameters..."
 

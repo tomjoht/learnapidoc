@@ -21,7 +21,7 @@ Use the [Eventbrite API](https://www.eventbrite.com/developer/v3/) to get the ev
 
 Eventbrite is an event management tool, and you can interact with it through an API to pull out the event information you want. In this example, you'll use the Eventbrite API to print a description of an event to your page.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## 1. Get an OAuth token
 

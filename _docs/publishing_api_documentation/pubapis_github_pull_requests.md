@@ -61,7 +61,7 @@ To create a pull request:
 
    The maintainers will then see the Pull Request and can take action to merge it.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Process the pull request
 

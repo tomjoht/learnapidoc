@@ -51,7 +51,7 @@ After gathering some high-level project details, dive into more detail about the
 *   What's the user's technical level?
 *   Are users familiar with certain programming languages or systems?
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 **Technical prerequisites**
 

@@ -94,6 +94,6 @@ last-modified: 2020-09-07
 
 {% include random_ad2.html %}
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 {% include image_ad_left.html %}

@@ -89,7 +89,7 @@ You put the Javadoc description and tags _before_ the class or method (no need f
 
 The following are the most common tags used in Javadoc. Each tag has a word that follows it. For example, `@param latitude` means the parameter is "latitude."
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 {: .tip}
 To view a lengthy example of Javadoc tags, see this <a href="http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#examples">example from Oracle</a>.</div>
@@ -152,6 +152,8 @@ After the descriptions, enter a blank line (for readability) and then start the 
 {% include image_ad_right.html %}
 
 Note that the first sentence is much like the `shortdesc` element in DITA. This first sentence is supposed to be a summary of the entire class or method. If one of your words has a period in it (like `Dr. Jones`), then you must remove the space following the period by adding `Dr.&nbsp;Jones` to connect it.
+
+{% include random_ad4.html %}
 
 Avoid using links in the first sentence. After the period, the next sentence shifts to the long paragraph, so you have to load up that first sentence to be descriptive. The verb tense should be present tense, such as _gets, puts, displays, calculates..._
 

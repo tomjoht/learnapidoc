@@ -32,7 +32,7 @@ This content doesn't embed well in print, as it contains YouTube videos. Please 
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/FuZfob2eVb4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ### Video 3
 

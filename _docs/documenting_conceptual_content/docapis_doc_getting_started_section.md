@@ -25,6 +25,8 @@ The Getting Started topic is somewhat like the typical Hello World tutorial in d
 
 Both Hello World tutorials and Getting Started tutorials share the same goal: to show a user how to use a framework, API, or some other system to get the simplest and easiest result, so they get a end-to-end sense of how it works.
 
+{% include random_ad4.html %}
+
 As an example, you could take a common, basic use case for your API and show how to construct a request, as well as what response returns. If a developer can make that call successfully, he or she can probably be successful with the other calls too.
 
 The Getting Started tutorial might involve the following:
@@ -128,7 +130,7 @@ The Aeris weather getting started provides information for setting up an applica
 
 The Watson and IBM Cloud getting started tutorial lists three steps. It's not an end-to-end getting started tutorial, though. It just gets the user started in selecting a service for your project. At the end, you start to code using the Watson Dashboard. Ideally, a getting started tutorial should help a user see some tangible output, but whether that's possible or not depends on your API.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## <i class="fa fa-user-circle"></i> Activity with getting started tutorials
 

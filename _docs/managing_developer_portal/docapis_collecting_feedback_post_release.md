@@ -92,7 +92,7 @@ This script assumes that the feedback URL has query strings added, such as `http
 
 (Yes, this is a hack, but if you need to workaround the http referrer restrictions, a technique like this might be necessary.)
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Qualitative versus quantitative feedback
 

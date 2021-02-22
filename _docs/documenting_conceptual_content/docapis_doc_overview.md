@@ -52,6 +52,8 @@ To encapsulate this overarching story, the product overview focuses on the marke
 
 To make the product's market-solving characteristics more concrete, list some common use cases or business scenarios in which the product and API might be useful. These scenarios will give users the context they need to evaluate whether the API is relevant to their needs. Too often, product descriptions are general and high-level (e.g., "X product helps companies collaborate more effectively..."). These higher-level abstract descriptions fail to resonate with users.
 
+{% include random_ad4.html %}
+
 Use cases are concrete examples of how the product might be used. Continuing with the above example, a use case might be "X product allows writers to work on the same document simultaneously through a remote browser interface," or something. Usually, a product manager has already defined a list of key use cases for a product and would have these available.
 
 ## Product overview vs overviews (plural)
@@ -93,7 +95,7 @@ Your organization might have multiple teams writing content like this, or you mi
 
 If you are stuck with the two-site model (marketing on one site, docs on another), you could try to share content between these two sites, but usually marketing has a different system for managing and publishing content than the documentation teams. Marketers don't usually adopt docs-as-code systems but rather prefer more CMS-driven systems. These systems rarely share content with each other, and even if they did, the marketing versions might be written using another style, perspective, or approach that contrasts with your docs, making it difficult to single-source the content. For example, I once tried to re-use marketing content that was written entirely in third-person point of view ("the partner does X") rather than the traditional second-person point of view in docs ("you do X"). It didn't work out well.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Strategies for the documentation's product overview
 

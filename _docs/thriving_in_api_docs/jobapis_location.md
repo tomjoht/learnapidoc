@@ -609,7 +609,7 @@ Also, I'm not sure why Washington State, Louisiana, and Delaware are getting so 
 
 At any rate, the top 10 states with the highest percentages (dividing API hits by employment) are Washington State, Louisiana, Delaware, California, New York, Georgia, Illinois, Texas, Colorado, and Arizona.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Should you move to California?
 

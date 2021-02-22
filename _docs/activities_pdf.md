@@ -120,7 +120,7 @@ Optional section if time permits.
 {% include workshop_button.html title="Activity 10b: Find an open-source project" activity="find_open_source_project" button_type="success" %}
 
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 {% include random_ad2.html %}
 

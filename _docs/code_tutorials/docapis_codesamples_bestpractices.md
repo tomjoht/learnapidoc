@@ -60,6 +60,8 @@ Here's an example of the difference:
 
 Developers unfamiliar with common code not related to your company (for example, the `.ajax()` method from jQuery) should consult outside sources for tutorials about that code. Don't write your own version of documentation for another programming language or service. Instead, focus on the parts of the code unique to your company. Let the developer rely on other sources for the rest (feel free to link to other sites).
 
+{% include random_ad4.html %}
+
 ## Add both code comments and before-and-after explanations
 
 Your documentation regarding the code should mix code comments with some explanation either before or after the code sample. Different languages have different conventions for comments, but generally brief code comments are set off with forward slashes `//` in the code; longer comments are set off between slashes and asterisks, like this: `/* .... */`.
@@ -79,7 +81,7 @@ For more research on how to document code, see "When Not to Comment: Questions a
 
 Overall, not every programmer reads code the same way. But based on the research, it's a good idea to include comments directly in the code as well as more formal explanations outside the code. If developers give you a chunk of code that has comments peppered throughout, don't assume that the code comments are somehow separate from documentation or outside your stewardship as a technical writer. Think of comments in code as the equivalent of context-sensitive help in a user interface &mdash; in many ways, this might be the most read content of all.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Keep code samples simple
 

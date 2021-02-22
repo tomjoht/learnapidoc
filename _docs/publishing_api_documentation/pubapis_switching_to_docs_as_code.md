@@ -110,7 +110,7 @@ The long build times were so annoying, we decided to switch back to individual r
 
 I came up with several creative ways to push the theme files out to multiple small repos in a semi-automated way. My first solution was to distribute the theme through [RubyGems](https://rubygems.org/), which is Jekyll's official [solution for theming](https://jekyllrb.com/docs/themes/). I created a theme gem, open-sourced it and the theme (see [Jekyll Doc Project](https://github.com/amzn/jekyll-doc-project)), and practiced the workflow to push out updates to the theme gem and pull them into each repo.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 It worked well (just as designed). However, it turns out our build management system (an engineering system used to build outputs or other artifacts from code repositories) couldn't build Jekyll from the server using [Bundler](http://bundler.io/), which is what RubyGems required. (Bundler is a tool that automatically gets the right gems for your Jekyll project based on the Jekyll version you are using. Without Bundler, each writer installs the [jekyll gem](https://rubygems.org/gems/jekyll/versions/3.3.1) locally and builds the Jekyll project based on that gem version.)
 

@@ -94,7 +94,7 @@ Without a process for managing tech docs, projects might arrive from seemingly a
 
 By implementing a more formal process and methodology for managing tech doc projects (specifically, an adaptation of Scrum), you can avoid this scenario. Additionally, managing and tracking projects this way gives each team member greater visibility and accountability towards the work of documentation.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Additional resources
 
