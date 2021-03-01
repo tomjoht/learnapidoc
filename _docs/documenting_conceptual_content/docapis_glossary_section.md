@@ -11,7 +11,7 @@ no_newsletter: true
 last-modified: 2021-02-21
 ---
 
-The API glossary defines all the terms that might be unique to your company or API. Glossaries are often overlooked or skipped, but their importance should not be understated since much of the user's understanding of API documentation depends on the clarity and alignment of specific terms.
+The API glossary defines all the terms that might be helpful for users to know &mdash; and especially all terms unique to your company or product. Glossaries are often overlooked or skipped, but their importance should not be understated since much of the user's understanding of API documentation depends on the clarity and alignment of specific terms. A glossary will help you, as a writer, be more precise about terminology. Additionally, sourcing definitions from a central glossary file can make authoring more efficient and consistent.
 
 * TOC
 {:toc}
@@ -32,7 +32,7 @@ In this case, DEG must have been an acronym specific to the developer's API. In 
 
 But many times, acronyms and unfamiliar terms are an unavoidable part of a specialized domain. As a technical writer, using the correct terms for your knowledge domain and your product is necessary, and those terms are often appropriate for that particular knowledge domain.
 
-To simplify the language, you can't just omit the necessary terminology for the domain and substitute in more friendly names. You have to teach the user the right language so they can participate in the conversation. One commonsense approach for teaching users how to speak this language involves defining unfamiliar words for the user by way of a glossary.
+To simplify the language, you can't just omit the necessary terminology for the domain and substitute in more friendly names. You have to teach the user the right language so they can participate in the conversation. One approach for teaching users how to speak this language involves defining unfamiliar words for the user by way of a glossary.
 
 {% include course_image.html size="medium" border="true" filename="nonref_glossary" ext_print="png" ext_web="svg" alt="Glossary" caption="Glossaries not only provide clarity about terms for users but also help the writers think more clearly and consistently about the topic." %}
 
@@ -63,7 +63,7 @@ One challenge in coming up with a glossary is distinguishing between specialized
 
 However, if you think listing some industry terms in the glossary would be helpful for users, who might need a little more information, you can do so. Glossaries can easily accommodate dozens or even hundreds of terms. In your definitions, you can also include links to external sites where more information is available.
 
-The glossary is really where so many of the challenges around developer documentation come into focus. Separating your API's terminology from the general knowledge domain gets at the heart of why developer documentation can be so challenging for technical writers (who often aren't experts in the knowledge domain). You'll likely need to rely on engineers to help identify terms that need to be defined.
+Separating your API's terminology from the general knowledge domain gets at the heart of why developer documentation can be so challenging for technical writers (who often aren't experts in the knowledge domain). You'll likely need to rely on engineers to help identify terms that need to be defined.
 
 {: .tip}
 I explored glossaries in depth in [Reducing the complexity of technical language](https://idratherbewriting.com/simplifying-complexity/reducing-the-complexity-of-technical-language.html). As a best practice, you can get a good sense as to whether you're using the right terms in a standard way by reading your competitor's documentation.
@@ -72,7 +72,11 @@ I explored glossaries in depth in [Reducing the complexity of technical language
 
 One question to consider is how and where to integrate the glossary definition within your technical content. For example, suppose you have the terms "near field" and "far field" in your content, referring to voice interactions with a device. You might use these terms in a number of sections and different pages. Sure, you could define these terms the first instance in your docs when you use them, but what if they appear on half a dozen pages? Users might not start on the initial page where they're defined.
 
-You could incorporate tooltips (such as these [tooltips from Bootstrap](https://getbootstrap.com/docs/4.1/components/tooltips/)) over the term the first time it's used on each page in your docs. However, on subsequent references, it's probably easiest to link to the glossary definition rather than continually incorporating tooltips. Let users make their way to the glossary when they need help with a term. If the glossary page is in a clearly visible space, you won't have to go to great lengths to link terms to their glossary definitions with each usage.
+You could incorporate tooltips (such as these [tooltips from Bootstrap](https://getbootstrap.com/docs/4.1/components/tooltips/)) over the term in places where you don't define it in-context. You could also link to the glossary definition rather than continually incorporating tooltips.
+
+One principle to remember with glossaries and the user experience is Fitt's Law, which is adapted a UX-adapted principle that asserts "the distance between a user’s task/attention area and the task-related button should be kept as short as possible" ([What is Fitts' Law?](https://www.interaction-design.org/literature/topics/fitts-law)). In short, if you put too much distance between your glossary and the confusing term, it will be harder for the user to locate the term. (In UX contexts, designers like to place large buttons directly in the user's task context so that users can easily see and click them.)
+
+In the worst case of glossaries, the term might not have a tooltip or link, and the glossary page link might not be visible at all in the page's context. In the best case, the term has a style that, on mouse over, shows the definition. The tradeoff, however, of making too many words styled into tooltip links is that it might distract the user. Additionally, the link style should not be similar to hyperlinks that take users to other pages. The style should be subtle enough to be ignored but noticeable enough for users to see that the word can be moused over or clicked.
 
 ## Reusing glossary definitions
 
@@ -150,6 +154,15 @@ Finally, to style the link in a distinct way from normal HTML links, add some CS
     border-bottom-width: thin;
   }
 ```
+
+## Glossary style
+
+As you're preparing your glossary source, note a few common stylistic conventions:
+
+* **Definition length**. Definitions should be short enough to appear conveniently in a tooltip (hence should be about the length of a tweet).
+* **Definition tense**. Definitions should not repeat the word being defined at the beginning of the definition but should follow a dictionary-style definition, usually as a noun phrase.
+* **Capitalization**. Decide whether to capitalize the first letter of the word.
+* **Links**. Because links in tooltips won't be clickable by users (if users move their cursor off the word, the tooltip disappears), consider storing links in a separate property in your source. This way the links can appear in a glossary table page but not in tooltips.
 
 ## Sample glossary pages
 
