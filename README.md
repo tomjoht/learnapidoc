@@ -1,1 +1,1 @@
-Site for my book/course/ebook/pdf.
+This is the code repository for https://idratherbewriting.com/learnapidoc/. This course is an API documentation course geared towards technical writers. The course contains many tutorials, best practices, and other how-tos for writing API documentation.
