@@ -129,15 +129,15 @@ pre a:hover, pre a, pre code a.vglnk, pre code a.vglnk:hover {
   color: #c7254e;
 }
 
-a[data-toggle=popover] {
+a[data-toggle=tooltip], a[data-toggle=popover] {
     color: cadetblue;
     border-bottom: dashed;
     border-bottom-color: darkgray;
     border-bottom-width: thin;
     font-style: italic;
-  }
+}
 
-a[data-toggle=popover]:hover {
+a[data-toggle=tooltip]:hover, a[data-toggle=popover]:hover {
   border-bottom: solid;
   border-bottom-color: darkgray;
   border-bottom-width: thin;
