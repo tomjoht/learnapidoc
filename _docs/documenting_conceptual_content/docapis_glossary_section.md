@@ -109,7 +109,7 @@ Then populate the tooltip like this to get info from the glossary YAML file:
 
 The result:
 
-<div style="margin: 20px 0px 20px 100px">Learning how to document <a href="#" data-toggle="tooltip" title="{{site.data.glossary.api.def}}">APIs</a> is essential in a tech landscape that has shifted to an information economy, with the buying and selling of information more than physical goods.</div>
+<div style="margin: 20px 0px 20px 100px">Learning how to document <a href="javascript://" data-toggle="tooltip" title="{{site.data.glossary.api.def}}">APIs</a> is essential in a tech landscape that has shifted to an information economy, with the buying and selling of information more than physical goods.</div>
 
 Tooltips appear when you mouse over a link and disappear when you move your mouse off the link. Because of this behavior, don't include any links in tooltip text. If you want to link to text, use a [Bootstrap popover](https://getbootstrap.com/docs/4.0/components/popovers/). Just like with tooltips, popovers must also be initialized:
 
