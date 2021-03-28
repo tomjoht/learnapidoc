@@ -2,10 +2,11 @@
 title: Documentation kickoff meeting and product demo
 permalink: /docapis_kickoff_meeting_agenda.html
 course: "Documenting REST APIs"
-weight: 12.6
+weight: 12.5
 sidebar: docapis
 section: devportals
-path1: /docapis_managing_dev_portals.html
+path1: /docapis_managing_doc_processes.html
+last-modified: 2020-09-02
 ---
 
 At some point after receiving a new documentation project, the first step in the project is to hold a documentation kickoff meeting and product demo. These meetings are mostly about gathering information so you can create the documentation. The following are some initial questions and topics for these meetings.
@@ -50,7 +51,7 @@ After gathering some high-level project details, dive into more detail about the
 *   What's the user's technical level?
 *   Are users familiar with certain programming languages or systems?
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 **Technical prerequisites**
 
@@ -76,6 +77,8 @@ After gathering some high-level project details, dive into more detail about the
 *   What are all the components involved in this situation?
 *   What are the relationships between each of the components?
 *   How do each of the components influence each other? What actions exist between the components?
+
+{% include random_ad4.html %}
 
 ## Tasks Overview
 

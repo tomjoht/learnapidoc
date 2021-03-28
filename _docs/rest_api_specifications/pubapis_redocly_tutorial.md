@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 4.81
 section: openapi_output_demos
 path1: /openapi_output_demos.html
+last-modified: 2020-09-06
 ---
 
 [Redocly](https://redoc.ly/) provides a variety of tools for working with API docs. Using Redocly's command-line tools, you can split the OpenAPI definition into many sub-files, and then later bundle up the discrete files into a single file during the publishing stage. You can generate your docs into one of the most attractive outputs available for REST API docs, including integration with conceptual topics as well. Redocly also offers more robust developer portals and SaaS offerings that cover the full authoring and publishing lifecycle.
@@ -26,6 +27,8 @@ Redocly developed command-line tools to split the OpenAPI definition into smalle
 {% include image_ad_right.html %}
 
 The CLI tools also let you check your OpenAPI definition against a ruleset to ensure you're following best practices. You can configure the ruleset with different levels of strictness, either including or ignoring optional best practices in the OpenAPI specification. This linting lets you identify issues in your OpenAPI definition that might not technically be errors, but would better if included.
+
+{% include random_ad4.html %}
 
 When you're ready to publish your OpenAPI definition, you can also use a command line tool to bundle the small files up into a single file again. You can then feed your OpenAPI definition file into any OpenAPI documentation tool, including Redoc's documentation output: [Redocly API Reference](https://redoc.ly/reference-docs) (premium version), or the community edition of [Redoc](https://redoc.ly/redoc) (free version). There's also a [Developer Portal](https://redoc.ly/developer-portal) option, or a more cloud-based [Workflows integration](https://redoc.ly/workflows). Some of these tools (especially the command-line tools) will come into focus through the tutorial below.
 
@@ -241,7 +244,7 @@ In this step, you'll break up an existing OpenAPI file into smaller files. We'll
 
     See the `README.md` in the `openapi` folder for more details on these conventions. These conventions are recommendations only. You can decide how you reference the paths from `openapi.yaml`.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ### 3. Check your OpenAPI definition against rules {#check_rules}
 
@@ -490,7 +493,7 @@ Redocly has some unique offerings when it comes to organizing and working with c
 
     <a class="noCrossRef" href="https://docs.checkr.com/"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/checkrdocs.png" alt="Checkr documentation" /></a>
 
-If integrating your conceptual content like this doesn't work for your doc needs, Redocly offers a more robust option: [Redocly Developer Portals](#redocly-developer-portals). The Redocly Developer Portals use Gatsby as a static site generator to give you more complete control and customization for non-reference content. Gatsby also provides many pre-built React components, which makes building out other features of a developer portal, such as marketing landing pages and other UI elements in a console, much easier.
+If integrating your conceptual content like this doesn't work for your doc needs, Redocly offers a more robust option: [Redocly Developer Portals](https://redoc.ly/developer-portal/). The Redocly Developer Portals use Gatsby as a static site generator to give you more complete control and customization for non-reference content. Gatsby also provides many pre-built React components, which makes building out other features of a developer portal, such as marketing landing pages and other UI elements in a console, much easier.
 
 {% include random_ad2.html %}
 

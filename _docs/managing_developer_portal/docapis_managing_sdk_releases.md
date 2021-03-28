@@ -5,7 +5,8 @@ course: "Documenting REST APIs"
 weight: 12.4
 sidebar: docapis
 section: devportals
-path1: /docapis_managing_dev_portals.html
+path1: /docapis_managing_doc_processes.html
+last-modified: 2020-08-17
 ---
 
 So far we've talked about processes for managing [developer documentation projects](docapis_managing_doc_projects) and [small doc requests](docapis_managing_small_doc_requests). When you're working in a developer portal, you might also be responsible for managing and distributing SDKs and other sample code.
@@ -26,6 +27,8 @@ Let's assume that you've written the documentation for the SDK, and now the deve
 Since you're controlling the distribution mechanisms on the developer portal, they might send you the SDK zip file to publish along with other documentation assets you're already publishing. Or they might ask you to review or sign off on the SDK, including the release notes, readme, implementation instructions, license, and other details.
 
 Your role with the SDK's release and distribution will differ by company, for sure, as well as how you're distributing it (S3 bucket, JCenter, Maven, GitHub, or other online repository). How do you review these code artifacts to make sure they're publish-ready?
+
+{% include random_ad4.html %}
 
 ## The intake process
 
@@ -119,7 +122,7 @@ Most developers expect the Readme to have detailed information, and it might mak
 
 But to avoid duplicating information in multiple places online (between the Readme and your main documentation), as long as you provide summaries plus links of the expected information, this should satisfy developer needs. Keeping the bulk of your information in your main documentation (rather than duplicating it in the Readme) also makes it easier to update your docs (since presumably you can update your documentation pages dynamically but might require engineering involvement to update the Readme).
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ### Version Information
 

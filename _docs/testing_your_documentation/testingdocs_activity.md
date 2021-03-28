@@ -6,6 +6,7 @@ weight: 5.4
 sidebar: docapis
 section: testingdocs
 path1: /testingdocs.html
+last-modified: 2020-06-25
 ---
 
 Now that you've read about testing, it's time to get some more hands-on practice. In this activity, you'll do some doc testing with an open-source project (or another project you identified).
@@ -33,6 +34,8 @@ Now that you've read about testing, it's time to get some more hands-on practice
 
 ## Find out test details
 
+{% include random_ad4.html %}
+
 Identify who performs the testing on the project. Reach out and interact with the QA lead for the project to gather as much information as you can about how testing is done.
 
 {% include image_ad_right.html %}
@@ -45,4 +48,4 @@ Find answers to the following questions:
 * What kind of testing does the team do before a release?
 * If you encounter a bug while testing, how should you report it?
 
-{% include random_ad.html %}
+{% include random_ad1.html %}

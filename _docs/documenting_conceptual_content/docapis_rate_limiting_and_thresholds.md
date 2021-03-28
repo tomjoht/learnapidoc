@@ -7,6 +7,7 @@ weight: 6.5
 sidebar: docapis
 section: docconceptual
 path1: /docconceptual.html
+last-modified: 2019-03-30
 ---
 
 Rate limits determine how frequently you can call a particular endpoint. Usually, companies have different tiers (for example, free versus pro) and licenses (open-source, business, commercial) corresponding to different capabilities or rate limits with the API.
@@ -34,7 +35,7 @@ Also, when developers implement the code into their applications, how are they h
 
 {% include course_image.html size="medium" border="true" filename="nonref_ratelimiting" ext_print="png" ext_web="svg" alt="Rate limiting affects development" caption="Rate limiting might seem like a marketing topic, but the rate limiting policies and how they affect API calls can have a significant impact on development." %}
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Examples rate limiting sections
 
@@ -63,6 +64,8 @@ Bitly provides basic information on the page above but also links to [best pract
 {% include image_ad_right.html %}
 
 By looking at these examples, you can see that while rate limiting might seem like a straightforward topic, there are layers of depth and complexity to cover. The relevance of the topic depends on your API and the rate-limiting policies your company sets, but this information cannot be entirely offloaded to Marketing to handle. So much of the information around rate limiting directly affects development.
+
+{% include random_ad4.html %}
 
 ## <i class="fa fa-user-circle"></i> Activity with rate limits
 

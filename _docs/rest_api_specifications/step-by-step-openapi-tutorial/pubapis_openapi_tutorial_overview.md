@@ -7,8 +7,7 @@ weight: 4.41
 section: openapitutorial
 path1: /restapispecifications.html
 path2: /openapi_tutorial.html
-redirect_from:
-- pubapis_openapi_code_editor.html
+last-modified: 2020-09-07
 ---
 
 In the previous section, I explained how to create the OpenAPI spec [using a visual editor with Stoplight Studio](pubapis_openapis_quickstart_stoplight). In this tutorial, I'll explain how to work in a text editor such as [Swagger Editor](http://editor.swagger.io/) to write the OpenAPI code by hand. For a higher-level introduction to the OpenAPI spec, see [Introduction to the OpenAPI specification](pubapis_openapi_intro.html).
@@ -26,6 +25,8 @@ To see a presentation that covers the same concepts in this article, see [https:
 When choosing an editor to write OpenAPI code by hand, the most common is the [Swagger Editor](http://editor.swagger.io/) because it dynamically validates your content as you write. It lets you determine whether the specification document you're creating is valid. The Swagger Editor looks like this, with the left pane showing the code and the right pane showing the output:
 
 {% include course_image.html url="http://editor.swagger.io/" size="large" filename="swagger_editor_pic" ext_print="png" ext_web="png" alt="The Swagger Editor validates your specification content dynamically and shows you the display on the right" caption="The Swagger Editor validates your specification content dynamically and shows you the display on the right" %}
+
+{% include random_ad4.html %}
 
 While you're coding in the Swagger Editor, if you make an error, you can quickly fix it before continuing rather than waiting until a later time to run a build and sort out errors.
 
@@ -80,7 +81,7 @@ You might be concerned that Swagger UI outputs look similar. First, note that yo
 
 With my OpenAPI projects, I usually customize the Swagger UI's colors a bit, add a custom logo and a few other custom styles. With one project, I integrated [Bootstrap](https://getbootstrap.com/) so that I could have [modals](https://getbootstrap.com/docs/4.1/components/modal/) where users could generate their authorization codes. You can even add [collapse-and-expand features](https://getbootstrap.com/docs/4.1/components/collapse/) in the `description` element to provide more information to users.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 Beyond these simple modifications, however, it takes a bit of web-developer prowess to significantly alter the Swagger UI display. It's possible, but you need web development skills.
 
@@ -122,11 +123,8 @@ If you have an existing specification document that validates against version Op
 
 To see the difference between the 2.0 and the 3.0 code, you can copy these code samples to separate files and then use an application like [Diffmerge](https://sourcegear.com/diffmerge/) to highlight the differences. The Readme.com blog has a nice post that provides [A Visual Guide to What's New in Swagger 3.0](https://blog.readme.com/an-example-filled-guide-to-swagger-3-2/).
 
-
 ## Helpful resources
 
 As you embark on creating an OpenAPI specification file, you might find the recording of [Peter Gruenbaum's Swagger/OpenAPI presentation](http://www.stc-psc.org/event/documenting-web-apis-with-swagger-free-webinar/) to the STC Puget Sound chapter helpful, as well as his [Udemy course](https://www.udemy.com/learn-swagger-and-the-open-api-specification/).
 
 Brace yourself &mdash; this is where you'll find out if you're cut out for API technical writing.
-
-{% include random_ad.html %}

@@ -6,6 +6,7 @@ weight: 7.9
 sidebar: docapis
 section: docapiscode
 path1: /doccode.html
+last-modified: 2019-12-02
 ---
 
 Technical writing intersects closely with usability like no other domain on technical projects. This close connection with usability especially surfaces as you're writing tutorials on how to use the API in a step-by-step way. Because of this, in this section I've decided to add some more tips and insights about how to assess the usability and design of an API.
@@ -27,6 +28,8 @@ Bob says, "If your API is hard to document, it could be a sign of more fundament
 
 Since technical writers are uniquely suited to provide feedback on usability, especially as we step through the user tasks in detail, it makes sense to expand here on what usability means, how to evaluate the usability of an API, and other details to look for. In presenting this information, I'll rely extensively on Arnaud Lauret's [*The Design of Web APIs*](https://www.amazon.com/Design-Web-APIs-Arnaud-Lauret/dp/1617295108) since it provides an in-depth treatment of APIs and design/usability.
 
+{% include random_ad4.html %}
+
 ## What is usability
 
 Usability has the same meaning whether you're referring to end-user applications with graphical user interfaces or developer code with an API. Usability refers to how easy it is for users to accomplish their desired tasks with the tool.
@@ -37,7 +40,7 @@ To evaluate usability, you must first understand what tasks users want to perfor
 
 Despite the seemingly perfect fit between tech comm and usability, it's a lot more challenging than it might seem for tech writers to provide usability feedback.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 The first issue is that tech writers are often too far downstream to have any actionable feedback on the design, so the motivation to influence design might not be strong. Questions about the API's design have likely been decided on long before the documentation task usually arrives in the tech writer's inbox. Unless you're extremely proactive in identifying APIs at their inception point, you probably don't even hear about the API until it's been approved by leadership and half-way coded. At this point, if you raise your hand and say, this endpoint doesn't make any sense to me, the feedback is too radical. Developers aren't going to drop everything and go back to the drawing board.
 
@@ -191,81 +194,5 @@ For a podcast I recorded with Arnaud Lauret on usability, see <a href='https://i
 
 For an additional resource, see Andrew Johnston's presentation [The Trials and Tribulations of the API Style Guide](https://www.youtube.com/watch?v=iBBOWNXVapI) at API the Docs London 2018.
 
-
-{% comment %}
-
-add in this quote from the State of API 2019 from smartbear:
-
-> In addition to performance, usability is also a top
-consideration for how organizations are measuring
-the success of their API program. API developer
-experience has become a major consideration for
-organizations that are starting to look at APIs as
-more than just technical assets. Now, just as a product
-team wants to provide a great user experience for
-the software they develop, API teams are also putting
-a focus on usability when developing services.
-
-
-also add the following from the same source (p.49):
-
-> The emergence of the API economy has led to growth
-in API style guidelines, which are often published for
-public view to help external stakeholders understand
-how API providers are governing their own internal
-design process. While only one-third of respondents
-say they currently have an internal style guide, 32% say
-their organization plans to introduce one. IT/Services,
-Finance/Banking, Healthcare, and Telecommunications
-are the industries with the highest adoption of
-internal API style guidelines.
-
-## Tutorials
-
-if you create more tutorials in your doc, which show end to end workflows, you'll begin to see the
-
-> ... only supplying reference documentation is like only providing the list of ingredients for a recipe without some indication of what to do with those ingredients—an edible result might be quite hard to achieve from that. That is why an API must also come with an operating manual describing various use cases and how to achieve them.
-
-
-## Documentation usability
-
-integrate this elsewhere:
-> Existing annotation frameworks, at least the one I have been working with, do not allow the same flexibility as you get when working directly with an API description format (for example, providing examples adapted to various contexts when using generic data structures shared across the API is impossible).
-
-Arnaud Lauret. The Design of Web APIs (Kindle Locations 8545-8547).
-
-> Including documentation in the code implies that you will actually modify the code to fix the documentation. That could be a problem depending on who works on what (documentation versus code) and your organization and your confidence level when modifying the code (yes, not all organizations in the world are able to push all applications automatically into production on every single commit without fearing anything).
-
-
-other quotes from the book that i removed from the google doc:
-
-
-“Just like security, API documentation should not be an afterthought. It is not something that can be completely delegated to someone else after the design; API designers must participate in it.” why?
-
-It is also fairly common to have many API designers working on many APIs in the same organization. This requires that all of them share what they do and how they do it—by creating design guidelines and building a community—in order to ensure a certain consistency and avoid everyone losing time reinventing the wheel.
-
-Arnaud Lauret. The Design of Web APIs (Kindle Locations 5050-5053).
-
-Why decide to use redoc for the ref docs? Any particular affinity there?
-
-How many sample responses do you recommend?
-
-What do you think about the order of doc -- like stripe, showing resource first, which is the schema?
-
-“I do not recommend only relying on a pure generation based on code, as the resulting documentation will be far from complete.” how common is this idea or practice?
-
-“Existing annotation frameworks, at least the one I have been working with, do not allow the same flexibility as you get when working directly with an API description format (for example, providing examples adapted to various contexts when using generic data structures shared across the API is impossible).” → so you are not a fan of generating the spec from the code?
-
-“An API goals canvas describes use cases that can be achieved using various goals. This means that, again, the work done during the design of the API can be reused to document the API.” why do design and docs go hand in hand? Both activities address use cases.
-
-“ Look at Twilio ( https://www.twilio.com ) and Stripe ( https://stripe.com ) to discover first-class documentation.” does stripe use openapi?
-
-“A detailed reference documentation is a good thing, but it is not enough. We must also create a user’s guide.” is it important to weave them together? How do you reuse content between the two, or is that not really important?
-
-“Creating documentation helps to test the API design.” does this mean people who create doc are uniquely suited to provide feedback on API design?
-
-How do you know if a process is cumbersome? Maybe tech writers assume this is just a typical developer workflow.
-
-If you think an api design is poor, what is the way to communicate this to the team?
-
-{% endcomment %}
+{: .tip}
+For more on developer usability, be sure to see the next article in this course: [Developer Experience (DevX) Usability](devx-usability-examples.html).

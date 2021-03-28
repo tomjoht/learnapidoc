@@ -6,6 +6,7 @@ weight: 3.4
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
+last-modified: 2020-06-27
 ---
 
 {% include workflow_map.html step="3" map="content/reference_doc_map.html"  %}
@@ -82,6 +83,8 @@ The terms for each of these parameter types comes from the [OpenAPI specificatio
 
 ## What to note in parameter documentation
 
+{% include random_ad4.html %}
+
 Regardless of the parameter type, define the following with each parameter:
 
 * [Data type](#data_types_parameters)
@@ -102,7 +105,7 @@ These data types are the most common with REST APIs:
 {: .note}
 There are more data types in programming, and if you have more specific data types that are important to note, be sure to document them. In Java, for example, it's important to note the data type allowed because Java allocates memory space based on the size of the data. As such, Java gets much more specific about the size of the numbers. You have a byte, short, int, double, long, float, char, boolean, and so on. However, you usually don't have to specify this level of detail with a REST API.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ### Max and min values for parameters {#max_min_values}
 

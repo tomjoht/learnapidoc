@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 8.95
 section: publishingapis
 path1: /publishingapis.html
+last-modified: 2018-12-25
 ---
 
 [Static site generators](pubapis_static_site_generators.html) are a breed of website compilers that package up a group of files (usually [written in Markdown](pubapis_markdown.html)) and make them into a fully deployable website. One of the most popular static site generators (based on the number of downloads, usage, and community) is [Jekyll](https://jekyllrb.com/), and it's the one I have the most experience with, so I'll be focusing on Jekyll here, particularly how you can integrate Jekyll with CloudCannon for a continuous delivery publishing solution.
@@ -73,6 +74,8 @@ This setup works reasonably well. Granted, I do have a large monitor, so it give
 
 Admittedly, the Markdown format is easy to use but also susceptible to error, especially if you have complicated list formatting. But the majority of the time, writing in Markdown is a joy. You can focus on the content without getting wrapped up in tags. If you do need complex tags, anything you can write in HTML or JavaScript you can include on your page.
 
+{% include random_ad4.html %}
+
 ## Automating builds from Github
 
 You can integrate Jekyll into platforms such as GitHub Pages or CloudCannon to create continuous delivery publishing. Continuous delivery means that when you commit a change to your Git repo, the server automatically rebuilds your Jekyll site.
@@ -83,7 +86,7 @@ You can integrate Jekyll into platforms such as GitHub Pages or CloudCannon to c
 
 In this activity, we'll publish to CloudCanon using the [Documentation Theme for Jekyll](https://idratherbewriting.com/documentation-theme-jekyll) (the theme I built). You don't need to have a Windows machine to facilitate the building and publishing &mdash; you'll do that via CloudCannon and Github. (Of course, being able to build locally is important if you're developing with Jekyll, but I want to avoid [Jekyll installation](https://jekyllrb.com/docs/installation/) issues here and just demonstrate the continuous deployment features that a host like CloudCannon provides.) This tutorial will show you how to plug into a robust hosting platform that reads content stored and managed on GitHub.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Set up your doc theme on Github
 

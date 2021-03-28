@@ -7,9 +7,11 @@ weight: 4.50
 section: openapitutorial
 path1: /restapispecifications.html
 path2: /openapi_tutorial.html
+map:
+  step: 8
+  definition: content/openapi_tutorial_map.html
+last-modified: 2020-09-07
 ---
-
-{% include workflow_map.html step="8" map="content/openapi_tutorial_map.html"  %}
 
 {% if site.format == "pdf" or site.format == "kindle" %}
 <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapistep8.png"/>
@@ -55,6 +57,8 @@ At this point, you can probably anticipate some challenges with integrating Swag
 
 Now that we've completed all the steps in the tutorial, we're finished building our OpenAPI specification document.
 
+{% include random_ad4.html %}
+
 You can see the complete specification document here: <a href="https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml">https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml</a>.
 
 Here's the specification document rendered by Swagger UI:
@@ -66,6 +70,6 @@ Try executing a request in the version above and look at the result. In the resu
 {: .tip}
 You can insert any valid path to an OpenAPI specification document in the "Explore" box in Swagger UI (assuming the version of Swagger UI supports your OpenAPI version), and it will display the API documentation. For example, you could insert `https://petstore.swagger.io/v2/swagger.json` (then click **Explore**) and it would show the Petstore API.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 {% include image_ad_left.html %}

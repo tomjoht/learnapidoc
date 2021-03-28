@@ -6,6 +6,7 @@ weight: 2.5
 sidebar: docapis
 section: likeadeveloper
 path1: /likeadeveloper.html
+last-modified: 2020-09-07
 ---
 
 Almost every API shows how to interact with the API using curl. So before moving on, let's pause a bit and learn more about curl.
@@ -16,6 +17,8 @@ Almost every API shows how to interact with the API using curl. So before moving
 ## Why curl?
 
 One of the advantages of REST APIs is that you can use almost any programming language to call the endpoint. The endpoint is simply a resource located on a web server at a specific path.
+
+{% include random_ad4.html %}
 
 Each programming language has a different way of making web calls. Rather than exhausting your energies trying to show how to make web calls in Java, Python, C++, JavaScript, Ruby, and so on, you can just show the call using curl.
 
@@ -242,7 +245,7 @@ Here's an example curl request that combines some of these commands:
 curl -i -H "Accept: application/json" -X POST -d "{status:MIA}" http://personsreport.com/status/person123
 ```
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 The request could also be formatted with line breaks to make it more readable:
 

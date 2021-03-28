@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 8.1
 section: publishingapis
 path1: /publishingapis.html
+last-modified: 2020-06-06
 ---
 
 Rather than approach the topic of publishing prescriptively, let's begin with some concrete examples and move towards the formulation of general principles. The following are more than 100 openly accessible REST APIs that you can browse as a way to look at patterns and examples. You can find many more APIs by browsing [programmableweb.com](http://programmableweb.com).
@@ -17,6 +18,7 @@ Rather than approach the topic of publishing prescriptively, let's begin with so
 
 {% include image_ad_right.html %} Browse a few of these documentation sites to get a sense of the variety, but also try to identify common patterns. In this list, I include not only impressively designed docs but also docs that look like they were created by a department intern just learning HTML. The variety in the list demonstrates the many options for publishing tools and approaches, as well as terminology. It seems that almost everyone does their API docs their own way, with their own site, branding, organization, and style.
 
+{% include random_ad4.html %}
 
 <ol>
   <li><a rel="nofollow" href="https://developer.shopgate.com/">Shopgate API docs</a></li>
@@ -144,7 +146,7 @@ Rather than approach the topic of publishing prescriptively, let's begin with so
 
 For a directory of API documentation sites on the open web, see the [Programmableweb.com docs](http://www.programmableweb.com/apis/directory). You can browse thousands of web API docs in a variety of categories.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 <a rel="nofollow" href="http://www.programmableweb.com/apis/directory" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/programmableweb.png" alt="Programmable web directory" /></a>
 

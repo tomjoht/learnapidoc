@@ -9,6 +9,7 @@ weight: 2.9
 sidebar: docapis
 section: likeadeveloper
 path1: /likeadeveloper.html
+last-modified: 2020-06-27
 ---
 
 This tutorial continues from the previous topic, [Inspect the JSON from the response payload](docapis_json_console.html). In the [sample page](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html) where you logged the `weather` response to the JS Console, the REST response information didn't appear on the page. It only appeared in the JS Console. You need to use dot notation and JavaScript to access the JSON values you want. In this tutorial, you'll use JavaScript to print some of the response to the page.
@@ -100,11 +101,13 @@ Refresh your Chrome browser and see the information that appears in the console:
 wind speed: 13.87
 ```
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Printing a JSON value to the page
 
 Let's say you wanted to print part of the JSON (the wind speed data) to the page, not just the console. (By "print," I mean make the value appear on the page, not send it to a printer.) Printing the value involves a little bit of JavaScript (or jQuery to make it easier).
+
+{% include random_ad4.html %}
 
 I'm assuming you're starting with the [same code](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html) from the [previous tutorial](docapis_json_console.html). That code looks like this:
 

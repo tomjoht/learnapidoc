@@ -2,10 +2,11 @@
 title: Processes for reviewing documentation
 permalink: /docapis_review_processes.html
 course: "Documenting REST APIs"
-weight: 12.7
+weight: 12.6
 sidebar: docapis
 section: devportals
-path1: /docapis_managing_dev_portals.html
+path1: /docapis_managing_doc_processes.html
+last-modified: 2020-09-24
 ---
 
 Conducting a successful documentation review is challenging, especially with developer docs because the content is often highly technical and requires a lot of engineering input and review. At the same time, getting this engineering input and review doesn't come easy. In this topic, I'll outline a tactical approach to conducting doc reviews for large amounts of content.
@@ -16,6 +17,8 @@ Conducting a successful documentation review is challenging, especially with dev
 ## How to get reviewers to read long content
 
 Getting people to review short amounts of content (one topic or less) isn't so challenging. What's challenging is getting engineering types to review dozens of pages. A recent project I worked on had 75 new pages. How exactly do you get engineers, PMs, and others to read and review that many pages, especially in a short amount of time (a few weeks before release)? Long-form reading of tech docs is not usually a characteristic of many people in tech. After 20 minutes, most people want to get back to work. Few will spend all afternoon going through your docs to provide a detailed review.
+
+{% include random_ad1.html %}
 
 This puts technical writers in a bind. You end up in a situation where you're highly dependent on the review and input of others (because the content is so technical or complex), but getting this input is increasingly hard because so few have the patience to read in a careful, meticulous way.
 
@@ -49,6 +52,8 @@ See my article and video titled [A tip for doc reviews -- bring a list of questi
 
 Batching up your questions for a meeting is great, but you will likely have many questions over the life of the project *after* the meeting. Also, you'll find that during the meeting, reviewers will have some of the answers, but not all. Maybe questions you asked the product manager and engineering lead during the meeting drew blanks and shrugged shoulders for responses, while they indicated that some other person (e.g., "Sam" or "Sally") might know. Any sizable project probably has 20+ people working on it, each with different perspectives and specialities. You can't round them all up each time you have a question.
 
+{% include random_ad2.html %}
+
 If your organization has Slack, use it. Create a Slack channel specific to documentation for the project (e.g., acme-tech-docs) and invite people to it. If you ask someone a question they don't have the answer to, it's easy for the person to tag another person for the answer, adding them to the channel. Having a dynamic channel like this to ask questions can be incredibly helpful and keep everyone informed about the documentation status.
 
 Also, note that Slack is trending as a way for teams to communicate. The [SmartBear 2020 API survey](https://idratherbewriting.com/blog/smartBear-2020-state-of-api-docs-review/) found that JIRA and Slack (not email and meetings) are how engineering teams prefer to communicate feedback:
@@ -56,6 +61,8 @@ Also, note that Slack is trending as a way for teams to communicate. The [SmartB
 <a class="noCrossRef" href="https://smartbear.com/resources/ebooks/the-state-of-api-2020-report/"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/smartbearslack2020.png" alt="JIRA and Slack trending as preferred communication methods" /></a>
 
 You can read more insights about SmartBear's 2020 trends in this post: [SmartBear's 2020 API report finds 'Accurate and detailed documentation' to be second-most important characteristic of APIs](https://idratherbewriting.com/blog/smartBear-2020-state-of-api-docs-review/).
+
+{% include image_ad_right.html %}
 
 ## Meeting 3: Doc review with the product team
 
@@ -90,7 +97,11 @@ After the product team has reviewed and approved the documentation, incorporate 
 
 In the doc review, you can start by talking through the documentation at a high-level. Then follow the same pattern as before with dedicated meetings to read and review the documentation. Or if it's not feasible to read the documentation during the meeting, assign them the review as homework with a follow-up due date for feedback. If these field engineers will be guiding partners with this documentation, they are intrinsically motivated to make sure the docs are accurate, clear, and complete. Otherwise, customers/partners will ping them with questions and issues.
 
+{% include random_ad3.html %}
+
 To collect feedback from field engineers, try putting your docs on the same collaborative platform for collecting feedback that your company has already established. For example, in many companies, teams use Salesforce Quip or Google Docs as collaboration tools. Both are highly similar, as these tools allow you to annotate text and make comments in the margins, and then reply to the comments. Commenters get notified about replies, and so on. Collaborative tools invite more of a discussion around content, not just a static reading experience. If you can write and edit your docs in a collaborative space, this is ideal.
+
+{% include random_ad4.html %}
 
 However, suppose your docs aren't already in a collaborative space (e.g., maybe they're already in your authoring system because the project involves a high degree of integration that isn't feasible to do last minute by copying and pasting from Quip or Google Docs). In this case, you could create a blank page in Quip or Google Docs and invite people to list out questions and issues there, with their initials before their comment. This works well because many times comments apply to the documentation as a whole, or are topics not answered in the documentation.
 

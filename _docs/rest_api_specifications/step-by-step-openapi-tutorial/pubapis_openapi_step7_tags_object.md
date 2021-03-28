@@ -7,9 +7,11 @@ weight: 4.49
 section: openapitutorial
 path1: /restapispecifications.html
 path2: /openapi_tutorial.html
+map:
+  step: 7
+  definition: content/openapi_tutorial_map.html
+last-modified: 2020-09-07
 ---
-
-{% include workflow_map.html step="7" map="content/openapi_tutorial_map.html"  %}
 
 {% if site.format == "pdf" or site.format == "kindle" %}
 <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapistep7.png"/>
@@ -77,10 +79,12 @@ All paths that have the same tag are grouped together in the display. For exampl
 
 <a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapitutorial_tags.png" class="medium" /></a>
 
+{% include random_ad4.html %}
+
 The order of the tags in the `tags` object at the root level determines their order in Swagger UI. Additionally, the `descriptions` appear to the right of the tag name.
 
 {% include random_ad2.html %}
 
 In our sample OpenAPI spec, tags don't seem all that necessary since we're just documenting one path/endpoint. (Additionally, I configured the [Swagger UI demo](pubapis_swagger_demo.html) to expand the section by default.) But imagine if you had a robust API with 30+ paths to describe. You would certainly want to organize the paths into logical groups for users to navigate.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}

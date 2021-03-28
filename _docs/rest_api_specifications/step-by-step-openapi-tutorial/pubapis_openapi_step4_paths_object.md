@@ -7,9 +7,11 @@ weight: 4.46
 section: openapitutorial
 path1: /restapispecifications.html
 path2: /openapi_tutorial.html
+map:
+  step: 4
+  definition: content/openapi_tutorial_map.html
+last-modified: 2020-09-07
 ---
-
-{% include workflow_map.html step="4" map="content/openapi_tutorial_map.html"  %}
 
 {% if site.format == "pdf" or site.format == "kindle" %}
 <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapistep4.png"/>
@@ -87,7 +89,7 @@ paths:
 {: .note}
 At this point, if you paste this content into the Swagger Editor, you will get errors until some additional properties are added.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 Now we can remove a few unnecessary fields that we don't need for our OpenWeatherMap API documentation:
 
@@ -348,3 +350,5 @@ The OpenAPI specification doesn't allow you to declare dependencies with paramet
 What you can do is document the restrictions in the parameter description and define the logic in the 400 Bad Request response. ([Parameter Dependencies](https://swagger.io/docs/specification/describing-parameters/#parameter-dependencies-19))
 
 In the case of the weather endpoint with the OpenWeatherMap, most of the parameters are mutually exclusive. You can't search by City ID *and* zip code simultaneously. Although the parameters are optional, you must use at least one parameter. Also, if you use the `lat` parameter, you must also use the `lon` parameter because they're a pair. The OpenAPI spec can't programmatically reflect that structured logic, so you have to explain it in the `description` property or in other more conceptual documentation.
+
+{% include random_ad4.html %}

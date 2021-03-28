@@ -6,6 +6,7 @@ weight: 8.8
 sidebar: docapis
 section: publishingapis
 path1: /publishingapis.html
+last-modified: 2018-12-25
 ---
 
 Although most developers use the command line when working with version control systems, there are many GUI clients available that can potentially simplify the process. GUI clients might be especially helpful when you're trying to see what has changed in a file since the GUI can quickly highlight and indicate the changes taking place.
@@ -59,6 +60,8 @@ Although I prefer to use the terminal instead of the GitHub Desktop GUI, the GUI
 
 ## Create a branch
 
+{% include random_ad4.html %}
+
 Now let's create a branch, make some changes, and see how the changes are specific to that branch.
 
 1.  In the GitHub Desktop client, go to **Branch > New Branch** and create a new branch. Call it "development" branch, and click **Create Branch**.
@@ -104,7 +107,7 @@ Now let's merge the development branch into the master branch.
 
     You will now see the changes reflected on the file on GitHub.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Merge the branch through a pull request
 

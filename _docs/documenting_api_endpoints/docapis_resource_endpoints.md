@@ -9,6 +9,7 @@ path1: /docendpoints.html
 redirect_from:
 - https://idratherbewriting.com/learnapidoc/docapis_doc_methods.html
 - https://idratherbewriting.com/learnapidoc/docapis_doc_resource_urls_and_methods.html
+last-modified: 2019-06-09
 ---
 
 {% include workflow_map.html step="2" map="content/reference_doc_map.html"  %}
@@ -83,13 +84,13 @@ And here's an example from the Linkedin API:
 {: .tip}
 Sometimes the method is referred to as the "verb." GET, PUT, POST, PATCH, and DELETE are all verbs or actions.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## The endpoint shows the end path only
 
 When you describe the endpoint, you list the end path only (hence the term "*end* point"). The full path that contains both the base path and the endpoint is often called a resource URL.
 
-In our sample API scenario, the endpoint is just `/surfreport/{beachId}`. You don't have to list the full resource URL every time (which would be `https://api.openweathermap.org/surfreport{beachId}`). Including the full resource URL would distract users from focusing on the path that matters. In your user guide, you usually explain the full resource URL, along with the required [authorization](docapis_more_about_authorization.html), in an introductory section (such as the [Getting started tutorial](docapis_doc_getting_started_section.html)).
+In our sample API scenario, the endpoint is just `/surfreport/{beachId}`. You don't have to list the full resource URL every time (which would be `https://api.openweathermap.org/surfreport/{beachId}`). Including the full resource URL would distract users from focusing on the path that matters. In your user guide, you usually explain the full resource URL, along with the required [authorization](docapis_more_about_authorization.html), in an introductory section (such as the [Getting started tutorial](docapis_doc_getting_started_section.html)).
 
 ## How to group multiple endpoints for the same resource
 
@@ -129,6 +130,8 @@ And rewards in context of Missions looked like this:
 </pre>
 
 To say that you could use the rewards resource wasn't always specific enough, because there were multiple rewards and missions endpoints.
+
+{% include random_ad4.html %}
 
 It can get awkward referring to the endpoint. For example, you might have a sentence like this: "When you call `/users/{userId}/rewards/`, you get a list of all rewards. To get a specific reward for a specific mission for a specific user, the `/users/{userId}/rewards/{missionId}` endpoint takes several parameters..."
 

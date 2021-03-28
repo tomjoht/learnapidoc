@@ -6,7 +6,8 @@ sidebar: docapis
 weight: 4.42
 section: openapitutorial
 path1: /restapispecifications.html
-path2: /openapi_tutorial.htmlml
+path2: /openapi_tutorial.html
+last-modified: 2020-09-07
 ---
 
 Before we dive into the steps of the [OpenAPI Tutorial](pubapis_openapi_tutorial_overview.html), it will help to have a better grounding in YAML, since this is the most common syntax for the OpenAPI specification document. (You can also use [JSON](docapis_analyze_json.html), but the prevailing trend with the OpenAPI document format is YAML.)
@@ -28,7 +29,7 @@ YAML is an attempt to create a more human-readable data exchange format. It's si
 
 Many computers ingest data in a YAML or JSON format. It's a syntax commonly used in configuration files and an increasing number of platforms (like Jekyll), so it's a good idea to become familiar with it.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## YAML is a superset of JSON
 
@@ -155,6 +156,8 @@ Here's the same array containing objects converted to YAML:
 ```
 
 Hopefully, by seeing the syntax side by side, it will begin to make more sense. Is the YAML syntax more readable? It might be difficult to see in these simple examples, but generally it is.
+
+{% include random_ad4.html %}
 
 JavaScript uses the same dot notation techniques to access the values in YAML as it does in JSON. (They're pretty much interchangeable formats.) The benefit to using YAML, however, is that it's more readable than JSON.
 

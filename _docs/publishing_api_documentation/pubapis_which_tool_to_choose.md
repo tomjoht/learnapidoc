@@ -8,6 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 redirect_from:
 - /learnapidoc/pubapis_tools_vs_content.html
+last-modified: 2020-06-13
 ---
 
 I described a smattering of tools in [static site generators](pubapis_static_site_generators.html), [hosting and deployment options](pubapis_hosting_and_deployment.html), and [hybrid solutions](pubapis_hybrid_systems.html). Which solution should you choose? It's a complicated decision that will invariably involve tradeoffs. The decision depends on your skill set, product, environment, and requirements. But here's my general recommendation. First, identify what authoring requirements you have. Then decide on a static site generator, and then consider a hosting and deployment platform.
@@ -54,6 +55,8 @@ Granted, this power and control will require a more complex platform and learnin
 
 If you don't have web development skills and don't want to tinker with the theme or other code development, choose a solution such as [Readme.com](pubapis_hybrid_systems.html#readmeio) or [Netlify CMS](pubapis_hybrid_systems.html#netlifycms) (though, with Netlify CMS, you'd still have to select a theme). Readme provides a ready-made design for your API doc site, removing the need for both designing a theme and figuring out hosting/deployment. That can save you a lot of time and effort.
 
+{% include random_ad4.html %}
+
 Realize that when implementing a solution, you might spend a quarter of your time (over a period of months between time on projects) customizing your theme and working on doc tooling. If you don't want to devote that much time to your tooling, Readme is a good option. However, I personally want more control and flexibility over the information design and theme. I like to experiment, and I want the power to code whatever feature I want, such as an [embedded navigation map](https://idratherbewriting.com/simplifying-complexity/macro-micro.html), [JS features to collapse/expand elements](https://idratherbewriting.com/simplifying-complexity/hiding-complexity.html), [custom metadata](https://idratherbewriting.com/simplifying-complexity/discoverability-through-metadata.html), or whatever. I think many tech writers and developers want similar flexibility and control. What is important to you? Are flexibility and control so crucial that you're willing to sink weeks/months of time into the solution?
 
 Additionally, if you have a large number of contributing authors who will need direct access to the system, consider whether you have the budget for a hosted solution like Readme that charges per author.
@@ -82,7 +85,7 @@ If you don't have the budget for a third-party host and deployment option, nor d
 
 Also, note that even if you're not using Jekyll, you can use [GitHub Pages](https://pages.github.com/) as a free publishing host for any static site generator output. You simply build your files locally and then push your built files into the GitHub-Pages-enabled repository. With this approach, you wouldn't have the server perform the build process, but you can still handle the process through the command line. Free hosting for your docs on GitHub, regardless of the tool, can be especially convenient.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## 3. Decide how you'll parse the OpenAPI specification
 

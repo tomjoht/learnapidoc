@@ -6,6 +6,7 @@ sidebar: docapis
 type: plain
 progress: false
 published: false
+last-modified: 2020-11-02
 ---
 
 <form action="https://s3.us-west-1.wasabisys.com/idbwmedia.com/sendy/subscribe" method="POST" accept-charset="utf-8">

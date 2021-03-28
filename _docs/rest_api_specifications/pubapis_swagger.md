@@ -12,6 +12,7 @@ glossary_keys:
 - swagger_editor
 - swagger_ui
 - swagger_codegen
+last-modified: 2020-06-25
 ---
 
 [Swagger UI](https://github.com/swagger-api/swagger-ui) provides a display framework that reads an [OpenAPI specification document](https://github.com/OAI/OpenAPI-Specification) and generates an interactive documentation website. The following tutorial shows you how to integrate an OpenAPI specification document into Swagger UI.
@@ -52,6 +53,8 @@ Before making any requests, you would normally authorize your session by clickin
 
 The Petstore example has an OAuth 2.0 security model. However, the authorization code is just for demonstration purposes. There isn't any real logic authorizing those requests, so you can simply close the Authorization modal.
 
+{% include random_ad4.html %}
+
 ### Make a request
 
 Now let's make a request:
@@ -81,7 +84,7 @@ Now let's make a request:
 3.  Enter the pet ID you used in the previous operation. (If you forgot it, look back in the **POST Pet** endpoint to check the value.)
 4.  Click **Execute**. You should see your pet's name returned in the Response section.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Some sample Swagger UI doc sites
 

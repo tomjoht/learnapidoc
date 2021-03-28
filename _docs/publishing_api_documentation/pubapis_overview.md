@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 8.01
 section: publishingapis
 path1: /publishingapis.html
+last-modified: 2018-12-25
 ---
 
 As you look for ways to provide value as a technical writer in a highly technical organization, you might find that you do less direct authoring of technical content and more editing/publishing. You might be guiding and directing the publishing of technical content that engineers mainly develop. For this reason, I have a lengthy focus on publishing in this course about documenting APIs.
@@ -83,7 +84,7 @@ Engineers often want to push the reference documentation for APIs into well-defi
 
 If you have a lot of endpoints, you need a system for pushing the content into standard templates. Ideally, you should separate the various sections (description, parameters, responses, etc.) and then compile the information through your template when you build your site. Or you can use a specification such as [OpenAPI](pubapis_openapi_intro.html) to populate the information into a template. You can also incorporate custom scripts. However, you don't often have these options in HATs, since you're mostly limited to what workflows and templates are supported out of the box.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ### 4. Many APIs have interactive API consoles, allowing you to try out the calls
 
@@ -98,6 +99,8 @@ For example, here's a sample help output from Flare for the Photobucket API:
 <a href="http://bit.ly/photobucketlongurl" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/hatphotobucket.png" alt="Publishing API docs" /></a>
 
 With API documentation, often the documentation *is* the product's interface &mdash; there isn't a separate product GUI (graphical user interface) that clients interact with. Because the product's GUI is the documentation, it has to be sexy and attractive.
+
+{% include random_ad4.html %}
 
 Most tripane help doesn't make that cut. If the help looks old and frame-based, it doesn't instill much confidence with developers evaluating it.
 

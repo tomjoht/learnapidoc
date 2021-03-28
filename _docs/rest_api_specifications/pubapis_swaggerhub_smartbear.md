@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 4.8
 section: restapispecifications
 path1: /restapispecifications.html
+last-modified: 2020-03-30
 ---
 
 Previously, I explored using the open-source [Swagger UI project](pubapis_swagger.html) as a way to render your [OpenAPI specification document](pubapis_openapi_tutorial_overview.html). The same company that offers the free, open-source version of Swagger Editor and Swagger UI (Smartbear) also offers a premium version with more robust features. This premium version of Swagger Editor is called [SwaggerHub](https://app.swaggerhub.com/). You can see a comparison of features between the open source and premium versions [here](https://swaggerhub.com/swagger-open-source-comparison/).
@@ -119,7 +120,7 @@ Both outputs would need a healthy dose of custom styling to be usable.
 
 Another cool feature of SwaggerHub is the ability to [create mock API servers](https://app.swaggerhub.com/help/integrations/api-auto-mocking). Suppose you have an API in which you don't want users to generate real requests. (Maybe it's an ordering system where users might be ordering products through the API, or you don't have test accounts/systems). Even so, you can still simulate responses that let users get a sense of how your API works.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 Assuming you have example responses in your API spec, you can set your API to "auto-mock." When a user tries out a request, SwaggerHub will return the example response from your spec. The response won't contain the custom parameters the user entered in the UI but will instead return the example responses coded into your spec as if returned from a server.
 
@@ -150,6 +151,8 @@ Additionally, within an organization, you can further group APIs into different 
 {% include course_image.html size="large" border="true" filename="swaggerhub_organizations" ext_print="png" ext_web="png" alt="Organization of projects by team" caption="Organization of projects by team" %}
 
 This aspect of organizations and projects may not seem essential if you have just one or two APIs, but consider how you'll scale and grow as you have dozens of APIs and multiple teams. In these more robust scenarios, the organization and project features become essential.
+
+{% include random_ad4.html %}
 
 ## Expanding the tech writer's role with APIs
 

@@ -10,6 +10,7 @@ weight: 1.01
 redirect_from:
 - /restapicourse2-0/
 - /learnapidoc/introtoapis.html
+last-modified: 2020-12-29
 ---
 
 In this course on writing documentation for REST APIs, instead of just talking about abstract concepts, I contextualize REST APIs with a direct, hands-on approach. You'll first learn about API documentation by using a simple weather API to put a weather forecast on your site.
@@ -51,6 +52,8 @@ Finally, you'll dive into different ways to [publish REST API documentation](pub
 
 We'll also dive into specifications such as the [OpenAPI specification](pubapis_openapi_tutorial_overview.html) and [Swagger UI](pubapis_openapi_intro.html) (which provides tooling for the OpenAPI specification). Additionally, you'll learn how to [document native library APIs](nativelibraryapis.html) and generate [Javadoc](nativelibraryapis_create_javadoc.html). Throughout this course, I put these concepts in real, applicable contexts with hands-on activities and demos.
 
+{% include random_ad3.html %}
+
 ## Who the course is for
 
 The course primarily serves the following audiences:
@@ -62,6 +65,8 @@ The course primarily serves the following audiences:
 ## Course organization
 
 Descriptions of each section in this course are provided below:
+
+{% include random_ad1.html %}
 
 {% assign sidebar = site.data.docapis %}
 {% for folder in sidebar.folders %}
@@ -94,7 +99,7 @@ Some of the code samples in this course use JavaScript. JavaScript may or may no
 
 JavaScript is one of the most useful and easy languages to become familiar with, so it works well in code samples for this introduction to REST API documentation. JavaScript allows you to test code by merely opening it in your browser (rather than compiling it in an IDE). (I have a [quick crash-course in JavaScript here](https://idratherbewriting.com/javascript/) if you need it.)
 
-{% include random_ad.html %}
+{% include random_ad4.html %}
 
 ## What you'll need {#what_you_need}
 
@@ -131,6 +136,8 @@ For the live workshops, I have various slides that cover different sections of t
 ## Copyright and re-use of materials
 
 Some people have asked whether they can use materials from this course to give their own API documentation workshops. I only allow the material to be used for non-profit workshops where the workshop leader isn't charging participants for the instruction. Of course, many of the ideas and concepts in this course aren't specific or unique to me, and you're entitled to fair use. However, you can't just hijack my site's materials, activities, and other information to clone it for your own for-profit endeavor.
+
+If you're a teacher at a college or university (or high school) and are trying to teach APIs and developer docs to your students, feel free to use this site as part of your instructional materials. I appreciate links back to the site and attribution as needed. My larger goal for this site is to help educate and empower tech writers with developer documentation strategies, workflows, and best practices. If you'd like to share your syllabus, [contact me](contact.html) and I'll add a link here.
 
 ## Let me know if any content is out of date
 

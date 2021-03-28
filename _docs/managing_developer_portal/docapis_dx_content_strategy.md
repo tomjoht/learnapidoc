@@ -5,7 +5,8 @@ course: "Documenting REST APIs"
 weight: 12.1
 sidebar: docapis
 section: devportals
-path1: /docapis_managing_dev_portals.html
+path1: /docapis_managing_doc_processes.html
+last-modified: 2020-8-25
 ---
 
 As the content grows on a developer portal, there's an increasing need for some technical writers to expand their documentation roles from individual contributors creating and publishing new content to dedicated content strategists. These dedicated content strategists manage the processes, standards, tools, governance, and workflows for the content that is primarily authored by contributing writer and engineering teams.
@@ -24,6 +25,8 @@ Finding the right content on an internal wiki is a constant challenge, and there
 {% include random_ad3.html %}
 
 Because documentation for external developers is a high priority, it shouldn't befall the same fate as content on internal wikis. In the [State of API 2019 report](https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf), Smartbear found that "accurate and detailed documentation" ranked third in priority (just below "ease of use" and "responsiveness/performance") from 15 ranking factors in an API experience. You can't achieve a high level of content quality without playing a more strategic role with the content and expanding beyond the individual contributor model. Individual contributors are usually focused on docs for a current project only and rarely have bandwidth to expand their concerns at a broader, more encompassing level across the developer portal.
+
+{% include random_ad4.html %}
 
 Additionally, the individual contributor model doesn't scale for the typical engineer-to-writer ratio in most organizations &mdash; a ratio where engineers and other tech roles vastly outnumber writers. You might have just a handful of tech writers to support thousands of engineers. Tech writers often work with different product teams on a continually shifting basis, covering as much ground as possible but not having capacity to meet all needs. In this "itinerant" tech writer model, you can't always play individual contributor roles to write the content that each product team needs. Instead, writers have to shift to playing more content strategy roles around content that others develop.
 
@@ -185,7 +188,7 @@ The following sections expand in more specific ways on the roles, tasks, and nee
 
 Reading through these tasks is probably overwhelming, but my purpose is to demonstrate the need for these activities outside of content development. All too often, people assume that technical writers merely "write docs" and don't understand that there's a large body of work involved in managing a developing portal that doesn't include writing content. These tasks try to answer the question, "what else do technical writers do besides write docs?" When you allocate resources for DX content strategists, they can help build a healthy developer portal so that users can easily find and consume accurate, relevant content that addresses their needs.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 It's not always feasible to have a dedicated person fill the DX content strategist role. Many times different technical writers and managers will play the role in varying degrees. However, it's good to have these tasks be part of an official role rather than an add-on to individual contributor role whose primary job is creating docs. Unless these tasks fall under someone's official title, they are likely to be overlooked. This creates more burden on writers to figure out their own tools, processes, and other details.
 

@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 8.7
 section: publishingapis
 path1: /publishingapis.html
+last-modified: 2018-12-25
 ---
 
 In this tutorial, we'll walk through a publishing workflow with one of the most common developer platforms: GitHub. When you create a repository on GitHub, the repository comes with a wiki that you can add pages to. This wiki can be convenient if your source code is stored on GitHub. Although GitHub might not be a platform where you publish your docs, understanding how to interact with it can be important for understanding [version control](pubapis_version_control.html).
@@ -36,7 +37,7 @@ Because you can work with the wiki files locally, you can leverage other tools (
 {: .warning}
 Use Git only to track text files. Don't start tracking large binary files, such as audio files, video files, Microsoft Word files, or Adobe PDF files. Version control systems really can't handle that kind of format well, and your repo size will increase exponentially. If you use Git to manage your documentation, exclude these files through your [.gitignore file](https://git-scm.com/docs/gitignore). You might also consider excluding images, as they bloat your repo size as well.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Limitations with GitHub wikis
 
@@ -50,6 +51,8 @@ GitHub wikis have some limitations:
 I'm specifically talking about the built-in wiki feature with GitHub, not [GitHub Pages](https://pages.github.com/). You can use tools such as Jekyll to brand and auto-build your content with whatever look and feel you want. I explore GitHub Pages with more depth in the tutorial on [Jekyll](pubapis_jekyll.html).
 
 ## Install Git {#git_install}
+
+{% include random_ad4.html %}
 
 Before you start working with GitHub, you need to set up Git and install any necessary tools and credentials to work with GitHub (especially if you're on Windows).
 

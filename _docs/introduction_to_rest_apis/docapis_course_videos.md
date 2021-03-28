@@ -6,6 +6,7 @@ sidebar: docapis
 section: introtoapis
 path1: /docapis_introtoapis.html
 weight: 1.2
+last-modified: 2020-07-25
 ---
 
 I've given numerous presentations and workshops on API documentation, and I've recorded most of them. The most recent recordings are available below.
@@ -27,7 +28,7 @@ If you want a condensed version of videos 1-5, see this one-hour version that co
 
 <iframe width="640" height="385" src="https://www.youtube.com/embed/5pzhtrrtkXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Most recent video (LA workshop)
 
@@ -63,6 +64,8 @@ See the [event details](https://idratherbewriting.com/blog/upcoming-webinar-tren
 
 <iframe width="640" height="385" src="https://www.youtube.com/embed/xEzZl7L58e4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+{% include random_ad4.html %}
+
 ## Audio only version
 
 If you prefer audio only, you can listen here:
@@ -92,13 +95,6 @@ Video 4 of 5:
 Video 5 of 5:
 <div class="audioControls">
 <p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/s3.us-west-1.wasabisys.com/idbwmedia.com/podcasts/raleighapidoc/apiworkshopvid5.mp3" type="audio/mpeg" /></audio></p>
-</div>
-
-Want all the audio combined into one massive file? Here it is:
-
-All audio combined:
-<div class="audioControls">
-<p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/s3.us-west-1.wasabisys.com/idbwmedia.com/podcasts/raleighapidoc/apiworkshopvidall.mp3" type="audio/mpeg" /></audio></p>
 </div>
 
 ## More videos

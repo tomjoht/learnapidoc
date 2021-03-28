@@ -9,6 +9,7 @@ weight: 2.1
 sidebar: docapis
 section: likeadeveloper
 path1: /likeadeveloper.html
+last-modified: 2019-01-01
 ---
 
 Almost every API has a method in place to authenticate requests. You usually have to provide an API key in your requests to get a response. Although we'll dive into [authentication and authorization](docapis_more_about_authorization.html) later, we need to get some API keys now to make requests to our weather API.
@@ -26,11 +27,13 @@ Requiring authorization allows API publishers to do the following:
 
 To run the code samples in this course, you will need to use your own API keys, since these keys are usually treated like passwords and not given out or published openly on a web page.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 {% include content/activities/get_authorization_keys.md %}
 
 ## Get the Aeris Weather API secret and ID {#aeris_weather_apikey}
+
+{% include random_ad4.html %}
 
 Now for contrast, let's get the keys for the Aeris Weather API. The Aeris Weather API requires both a secret and ID to make requests.
 

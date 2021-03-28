@@ -6,6 +6,7 @@ weight: 2.3
 sidebar: docapis
 section: likeadeveloper
 path1: /likeadeveloper.html
+last-modified: 2019-01-01
 ---
 
 While [Postman](docapis_postman.html) is convenient, it's hard to use it to represent how to make calls with it in your documentation. Additionally, different users probably use different GUI clients, or none at all (preferring the command line instead).
@@ -27,6 +28,8 @@ Sometimes curl is written as cURL. It stands for Client URL. "curl" is the more 
 ## Installing curl
 
 curl is usually available by default on Macs but requires some installation on Windows. Follow these instructions for installing curl:
+
+{% include random_ad4.html %}
 
 ### Install curl on Mac
 
@@ -75,7 +78,7 @@ You should get minified JSON response back like this:
 {"coord":{"lon":-121.96,"lat":37.35},"weather":[{"id":701,"main":"Mist","description":"mist","icon":"50d"}],"base":"stations","main":{"temp":66.92,"pressure":1017,"humidity":50,"temp_min":53.6,"temp_max":75.2},"visibility":16093,"wind":{"speed":10.29,"deg":300},"clouds":{"all":75},"dt":1522526400,"sys":{"type":1,"id":479,"message":0.0051,"country":"US","sunrise":1522504404,"sunset":1522549829},"id":420006397,"name":"Santa Clara","cod":200}
 ```
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 {: .note}
 In Windows, Ctrl+ V doesn't work; instead, you right-click and then select **Paste**.

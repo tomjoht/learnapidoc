@@ -7,15 +7,20 @@ weight: 6.01
 sidebar: docapis
 section: docconceptual
 path1: /docconceptual.html
+last-modified: 2020-09-20
 ---
 
-Up until this point, we've mostly been focusing on the [reference aspects of API documentation](docendpoints.html) (the endpoints). The reference documentation is only one aspect of API documentation. In this section, I'll cover the main conceptual topics that are commonly found in API documentation. Rather than "conceptual topics," you might consider this type of information the "user guide."
+Up until this point, we've mostly been focusing on the [reference aspects of API documentation](docendpoints.html) (the endpoints). The reference documentation is only one aspect of API documentation.
 
-{% include random_ad.html %}
+{% include random_ad4.html %}
+
+In this section, I'll cover the main conceptual topics that are commonly found in API documentation. Rather than "conceptual topics," you might consider this type of information the "user guide."
+
+{% include random_ad1.html %}
 
 The following are common conceptual topics commonly found in API documentation:
 
-* [API Overview](docapis_doc_overview.html)
+* [API product overview](docapis_doc_overview.html)
 * [Getting started](docapis_doc_getting_started_section.html)
 * [Authentication and authorization requirements](docapis_more_about_authorization.html)
 * [Status and error codes](docapis_doc_status_codes.html)

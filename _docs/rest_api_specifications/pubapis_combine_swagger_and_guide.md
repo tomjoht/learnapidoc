@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 4.9
 section: restapispecifications
 path1: /restapispecifications.html
+last-modified: 2020-06-13
 ---
 
 Whenever discussions about Swagger and other REST API specifications take place, technical writers invariably ask how they can integrate the Swagger output with the rest of their documentation. This question dominates tech writer discussions perhaps more than any other when it comes to Swagger.
@@ -18,6 +19,8 @@ Whenever discussions about Swagger and other REST API specifications take place,
 ## Background to the single source of truth idea
 
 One of the core principles of tech writing is to generate content from a single source rather than copying and pasting duplicate information. When you start pushing your API documentation into another source file &mdash; in this case, a YAML or JSON file that is included in a Swagger UI file set, you end up splitting your single source of truth into multiple sources.
+
+{% include random_ad4.html %}
 
 For example, you might have defined your endpoints and parameters in your regular documentation, and now the OpenAPI spec asks you to provide the same endpoints and descriptions in the spec. Do you copy and paste the same parameters and other information across both sites? Do you somehow generate the descriptions from the same source? In this topic, I tackle this conundrum.
 
@@ -237,7 +240,7 @@ Sites like [Apiary](https://apiary.io/) and [Mulesoft](https://www.mulesoft.com/
 
 Cherryleaf has an interesting post called [Example of API documentation portal using MadCap Flare](https://www.cherryleaf.com/blog/2017/06/example-api-documentation-portal-using-madcap-flare/). In the post, Ellis Pratt shows a proof of concept with a Flare project that reads an OpenAPI spec and generates static HTML content from it. If you're using Flare, it might be worth exploring.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Option 6: Change perspectives &mdash; Having two sites isn't so bad {#option6}
 

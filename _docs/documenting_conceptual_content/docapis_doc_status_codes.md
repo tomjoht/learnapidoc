@@ -7,6 +7,7 @@ weight: 6.4
 sidebar: docapis
 section: docconceptual
 path1: /docconceptual.html
+last-modified: 2020-05-10
 ---
 
 Status and error codes refer to a code number in the response header that indicates the general classification of the response &mdash; for example, whether the request was successful (200), resulted in a server error (500), had authorization issues (403), and so on. Standard status codes don't usually need much documentation, but custom status and error codes specific to your API do. Error codes in particular help in troubleshooting bad requests.
@@ -58,6 +59,8 @@ You can see a list of common [REST API status codes here](http://www.restapituto
 ## Where to list the HTTP response and error codes
 
 Most APIs should have a general page listing response and error codes across the entire API. A standalone page listing the status codes (rather than including these status codes with each endpoint) allows you to expand on each code with more detail without crowding the other documentation. It also reduces redundancy and the sense of information overload.
+
+{% include random_ad4.html %}
 
 On the other hand, if some endpoints are prone to triggering certain status and error codes more than others, it makes sense to highlight those status and error codes on same API reference pages. One strategy might be to call attention to any particularly relevant status or error codes for a specific endpoint, and then link to the centralized "Response and Status Codes" page for full information.
 
@@ -134,7 +137,7 @@ The following are some sample status and error code pages in API documentation.
 
 Clearbit not only documents the standard status codes but also describes the unique parameters returned by their API. Most developers will probably be familiar with 200, 400, and 500 codes, so these codes don't need a lot of explanatory detail. But if your API has unique codes, make sure to describe these adequately.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ### Twitter
 

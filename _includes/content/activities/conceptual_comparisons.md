@@ -4,7 +4,7 @@
 
 The following are 7 common conceptual topics in API documentation. For each topic, examine the three examples and decide which one is best. This is an activity we'll do together as a group.
 
-**API overview**
+**Product overview**
 
 * [Spotify](https://developer.spotify.com/documentation/web-api/)
 * [Hootsuite](https://developer.hootsuite.com/docs/the-hootsuite-platform)

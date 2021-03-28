@@ -6,6 +6,7 @@ weight: 5.3
 sidebar: docapis
 section: testingdocs
 path1: /testingdocs.html
+last-modified: 2018-12-06
 ---
 
 The previous two sections talked about testing from the perspective of the tech writer merely running through the steps. However, remember that you, the tech writer, are not the user. Almost all documentation builds on assumptions (about capabilities, setup, previous knowledge) that may or may not be shared with your audience. While [testing your documentation](testingdocs_test_your_instructions.html), recognize that what may seem clear to you may be confusing to your users. And what might be confusing to you might be clear to users. Learn to identify assumptions that can interfere with your audience's ability to follow the instructions in your documentation.
@@ -32,6 +33,8 @@ The world of software instruction is full of similarly confusing terminology. Fo
 This is why checking over your own instructions by walking through the steps yourself becomes problematic. The first rule of usability is to know the user, and also to recognize that you aren't the user.
 
 With developer documentation, usually the audience's skill level is beyond my own, so adding little notes that clarify obvious instruction (such as saying that the `$` in code samples signals a command prompt and shouldn't be typed in the actual command, or that ellipses `...` in code blocks indicates truncated code and shouldn't be copied and pasted) isn't essential. But adding these notes can't hurt, especially when some users of the documentation are product marketers rather than developers.
+
+{% include random_ad4.html %}
 
 We must also remember that users may have deep knowledge in another technical area outside of the domain we're writing in. For example, the user may be a Java expert but a novice when it comes to JavaScript, and vice versa.
 
@@ -85,7 +88,7 @@ In general, it's always good to have a non-expert test something rather than an 
 
 Also, when you have other technical writers test your docs, the activity fosters good team building and knowledge sharing. At a previous job, I worked in a large department that had, at one time, about 30 UX engineers. The UX team held periodic meetings during which they submitted a design for general feedback and discussion. The camaraderie and team-building during the design reviews was immediately apparent to me, and I wished we had something similar with our tech pubs team.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 By giving other technical writers the opportunity to test your documentation, you create the same kind of sharing and review of content. You build a community rather than having each technical writer always work on independent projects.
 

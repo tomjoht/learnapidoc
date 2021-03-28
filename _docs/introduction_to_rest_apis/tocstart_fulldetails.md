@@ -5,6 +5,7 @@ course: "Documenting REST APIs"
 sidebar: docapis
 progress: false
 excerpt: table of contents
+last-modified: 2020-11-02
 ---
 <div id="navig">
 <ul id="docnavsidebar" class="docnav">

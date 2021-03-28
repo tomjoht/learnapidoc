@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 8.2
 section: publishingapis
 path1: /publishingapis.html
+last-modified: 2020-09-07
 ---
 
 In the previous topic, we browsed through a long [survey of API doc sites](pubapis_apilist.html) and looked for similar patterns in their designs. "Design patterns" are common approaches or techniques in the way something is designed. Although one could probably identify many more patterns, the following design patterns are common with API doc sites: structure and templates, single seamless website, abundant code examples, lengthy pages, and interactive API explorers. I explore each of these elements in the following sections.
@@ -18,6 +19,8 @@ In the previous topic, we browsed through a long [survey of API doc sites](pubap
 ## Pattern 1: Structure and templates {#structure_and_templates}
 
 {% include image_ad_right.html %} One overriding commonality with API documentation is that they share a common structure, particularly with the reference documentation around the endpoints. In an earlier section, we explored the common sections in [API endpoint documentation](docendpoints.html).
+
+{% include random_ad4.html %}
 
 From a tool perspective, if you have common sections to cover with each endpoint, it makes sense to formalize a template to accommodate the publishing of that content. The template can provide consistency, automate publishing and styles, and allow you to more easily change the design without manually reformatting each section. (Without a template, you could just remember to add the same sections on each page, but this requires more effort to be consistent.) With a template, you can insert various values (descriptions, methods, parameters, etc.) into a highly stylized output, complete with sophisticated styling.
 
@@ -179,7 +182,7 @@ James Yu at Parse gives the following advice:
 
 For code samples, you'll want to incorporate syntax highlighting. The syntax highlighter colors different elements of the code sample appropriately based on the programming language. There are many syntax highlighters that you can usually incorporate into your platform. For example, Jekyll uses [rouge](https://github.com/jneen/rouge) by default. Another common highlighter is [pygments](http://pygments.org/). These highlighters have stylesheets prepared to highlight languages based on specific syntax.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 Usually, tools that you use for authoring will incorporate highlighting utilities (based on Ruby or Python) into their HTML generation process. You don't normally implement the syntax highlighter as a standalone tool. If you don't have access to a syntax highlighter for your platform, you can [manually add a highlighting using syntax highlighter library](http://code.tutsplus.com/tutorials/quick-tip-how-to-add-syntax-highlighting-to-any-project--net-21099).
 

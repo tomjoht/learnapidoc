@@ -1,0 +1,21 @@
+{% if page.versions %}
+{% assign versionsList = page.versions %}
+<div class="versionsMenu">
+<div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+  {% for singleVersion in versionsList %}
+  {% assign linkUrl = singleVersion.link | remove_first: "../" %}
+  {% assign pageUrl = page.permalink %}
+  {% if linkUrl == pageUrl %}
+    <li class="currentPage">{{singleVersion.title}}</li>
+    {% else %}
+    <li><a href="{{singleVersion.link}}">{{singleVersion.title}}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</div>
+</div>
+{% endif %}

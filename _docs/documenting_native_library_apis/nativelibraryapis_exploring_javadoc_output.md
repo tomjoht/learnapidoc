@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 11.5
 section: nativelibraryapis
 path1: /nativelibraryapis.html
+last-modified: 2018-12-26
 ---
 
 The Javadoc output hasn't changed much in the past 20 years, so in some sense, it's predictable and familiar. On the other hand, the output is dated and lacks some critical features, like search, or the ability to add more pages. In this topic, we'll explore how the Javadoc is organized.
@@ -29,6 +30,8 @@ You click a class name (in this case, `ACMESmartphone` or `Dynamite`) to dive in
 
 ## Class details
 
+{% include random_ad4.html %}
+
 When you view a class page, you're presented with a summary of the fields, constructors, and methods for the class. Again, this is just an overview. When you scroll down, you can see the full details about each of these elements.
 
 {% include course_image.html size="large" url="http://docs.oracle.com/javase/7/docs/api/" filename="fulldetails" ext_print="png" ext_web="png" alt="Full class details" caption="Full class details" %}
@@ -41,7 +44,7 @@ If you click **Package** at the top, you can also browse the classes by package.
 
 {% include course_image.html size="large" filename="allclassesjavadoc" ext_print="png" ext_web="png" alt="All the ways to browse the classes" caption="All the ways to browse the classes" %}
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 For more information about how the Javadoc is organized, click the **Help** button in the Javadoc top navigation bar.
 

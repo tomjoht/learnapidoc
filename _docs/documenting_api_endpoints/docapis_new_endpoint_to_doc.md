@@ -9,6 +9,7 @@ weight: 3.01
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html
+last-modified: 2019-01-03
 ---
 
 Until this point, you've been [acting as a developer](likeadeveloper.html) with the task of integrating the weather data into your site. The point was to help you understand the type of information developers need and how they use APIs.
@@ -34,11 +35,13 @@ Most technical writers don't start from scratch with documentation projects. Eng
 
 Ultimately, the information will be oriented towards other engineers on the same knowledge level as the team's engineers. Your job as a technical writer will be to take this information and turn it into complete, accurate, usable information that communicates with your audience.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Wiki page with information about the new endpoint
 
 It's now your task to sort through the information on this mock wiki page and create documentation from it. You can read through the mock wiki page below to get a sense of the information. In the upcoming topics, we will proceed section by section through an API reference topic.
+
+{% include random_ad4.html %}
 
 Here's the mock internal wiki page:
 

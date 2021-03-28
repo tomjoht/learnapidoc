@@ -9,6 +9,7 @@ weight: 2.2
 sidebar: docapis
 section: likeadeveloper
 path1: /likeadeveloper.html
+last-modified: 2019-11-18
 ---
 
 When you're testing endpoints with different parameters, you can use one of the many GUI REST clients available to make the requests. (By "GUI," I mean there's a graphical user interface with boxes and buttons for you to click.) You can also use [curl](docapis_install_curl.html) (which we'll cover soon), but GUI clients tend to simplify testing with REST APIs.
@@ -59,7 +60,7 @@ Like Postman, Paw also allows you to easily see the request headers, response he
 
 Now let's switch APIs a bit and see some weather information from the [Aeris Weather API](https://www.aerisweather.com/), which you explored a bit in [Scenarios for using a weather API](docapis_scenario_for_using_weather_api.html#aeris). Constructing the endpoints for the Aeris Weather API is a bit more complicated since there are many different queries, filters, and other parameters you can use to configure the endpoint.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 Here are a few pre-configured requests to configure for Aeris. You can paste the requests directly into the URL request box in Postman (after customizing the `CLIENTID` AND `CLIENTSECRET` values), and the parameters will auto-populate in the parameter fields.
 
@@ -93,7 +94,7 @@ http://api.aerisapi.com/normals/flagstaff,az?client_id=CLIENTID&client_secret=CL
 ```
 
 {: .tip}
-With both the OpenWeatherMap and Aeris Weather API, you can also make these requests by simply going to the URL in your address bar (because the APIs are passed in the query string rather than the header). If so, use the [JSON Formatter extension for Chrome](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en) to automatically format the JSON response in the browser view.
+With both the OpenWeatherMap and Aeris Weather API, you can also make these requests by simply going to the URL in your address bar (because the API keys are passed in the query string rather than the header). If so, use the [JSON Formatter extension for Chrome](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en) to automatically format the JSON response in the browser view.
 
 By looking at these two different weather APIs, you can see some differences in the way the information is called and returned. However, fundamentally both APIs have endpoints that you can configure with parameters. When you make requests with the endpoints, you get responses that contain information, often in JSON format. This is the core of how REST APIs work &mdash; you send a request and get a response.
 
@@ -144,6 +145,8 @@ data-postman-var-1="65dcddab41ff7a773bb1"></div>
 If this button doesn't work for you, copy this [import link](https://www.getpostman.com/collections/65dcddab41ff7a773bb1).
 
 {% endif %}
+
+{% include random_ad4.html %}
 
 Clicking the Run in Postman buttons should automatically prompt you to import the collections into Postman. If it doesn't work, copy the import link address and, in Postman, click **Import** in the upper-left corner. Then click the **Import From Link** tab, paste in the address and click **Import**.
 

@@ -9,6 +9,7 @@ weight: 2.8
 sidebar: docapis
 section: likeadeveloper
 path1: /likeadeveloper.html
+last-modified: 2020-05-10
 ---
 
 Seeing the response from curl or Postman is cool, but how do you make use of the JSON data? With most API documentation, you don't need to show how to make use of JSON data. You assume that developers will use their front-end development skills to parse through the data and display it appropriately in their apps. However, to better understand how developers will access the data, we'll go through a brief tutorial to display the REST response on a web page.
@@ -73,6 +74,8 @@ $.ajax(settings).done(function (response) {
 
 In the earlier code sample, `done` contains an anonymous function (a function without a name) that executes when `done` is called. The response object from the `ajax` call is assigned to the `done` method's argument, which in this case is `response`. (You can name the argument whatever you want.)
 
+{% include random_ad4.html %}
+
 You can then access the values from the response object using object notation. In this example, the response is just logged to the console.
 
 If you're new to JavaScript, this is likely a bit fuzzy right now. If so, don't worry &mdash; code becomes clearer the more you use it.
@@ -90,7 +93,7 @@ console.log(response);
 
 Logging responses to the console can be a useful way to test whether an API response is working (it's also helpful for debugging or troubleshooting your code). The console collapses each object inside an expandable section. You can inspect the payload in the console to see if contains the values you expect (without printing values to the page).
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 {% comment %}
 You can add other information to the console log message. To preface the log message with a string, add something like this:

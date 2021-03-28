@@ -50,7 +50,7 @@ list:
 - answer: The tendency for docs maintained outside of code repositories to become out of sync with the code.
   question: What is documentation drift?
 
-- answer: An essential first steps document for users that should usually be linked from your API overview page.
+- answer: An essential first steps document for users that should usually be linked from your product overview page.
   question: What is Getting Started?
 
 - answer: The go-to place to find open-source projects and collaborate with others on code projects.

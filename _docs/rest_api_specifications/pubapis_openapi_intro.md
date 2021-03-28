@@ -12,6 +12,7 @@ path1: /restapispecifications.html
 redirect_from:
 - /pubapis_openapi_intro/
 - /learnapidoc/pubapis_openapi_intro.html
+last-modified: 2020-07-27
 ---
 
 [OpenAPI](https://www.openapis.org/) is a specification for describing REST APIs. If you're familiar with tech comm specifications, you can think of the OpenAPI specification like the [DITA specification](https://www.xml.com/articles/2017/01/19/what-dita/). With DITA, there are specific XML elements used to define help components, and a required order and hierarchy to those elements. Different tools can read DITA and build out a documentation website from the elements.
@@ -83,7 +84,7 @@ Here's what these objects mean:
 
 Learning the OpenAPI spec and constructing the YAML or JSON code by hand the first time, when you're also trying to sort out what the values should be, can be daunting. It might be easier to start in a visual editor like Stoplight and then, if desired, transition into more of a direct code-based approach. For this reason I have arranged the sequence of this course to start out first in the visual editor, with [Create an OpenAPI document using a visual editor (Stoplight Studio)](pubapis_stoplight.html), and then later in the course provide an [OpenAPI tutorial overview using Swagger Editor and Swagger UI](pubapis_openapi_tutorial_overview.html). However, you can probably do most everything from within the visual editor.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Auto-generation options for creating the OpenAPI spec {#autogeneration}
 
@@ -214,6 +215,8 @@ However, up front you should be aware that there are tradeoffs to using the Open
 Despite these shortcomings, OpenAPI is quickly becoming a way for more and more tools (from [Postman Run buttons](docapis_doc_getting_started_section.html#runinpostmanbutton) to nearly every API platform) to quickly ingest the information about your API and make it discoverable and interactive with robust, instructive tooling. Through your OpenAPI specification, you can port your API onto many platforms and systems as well as automatically set up unit testing and prototyping. Your OpenAPI spec is machine-readable and will give much more life and flexibility to your API docs.
 
 Additionally, the generated docs from the OpenAPI provide a nice visual shape for an API. You can easily see all the endpoints and their parameters &dash; it acts like a [quick-reference guide](docapis_doc_quick_reference.html). Based on this framework, you can help users grasp the basics of your API at a glance.
+
+{% include random_ad4.html %}
 
 I've also found that learning the OpenAPI specification and describing my API with these objects and properties helped inform my own API vocabulary. For example, I realized that there were [four main types of parameters](docapis_doc_parameters.html): "path" parameters, "header" parameters, "query" parameters, and "request body" parameters. I learned that parameter data types with REST were a "Boolean," "number," "integer," or "string." I learned that [responses](docapis_doc_sample_responses_and_schema.html) provided "objects" containing "strings" or "arrays." In short, implementing the specification gave me an education about API terminology, which in turn helped me describe the various components of my API in credible ways.
 

@@ -8,6 +8,7 @@ section: publishingapis
 path1: /publishingapis.html
 redirect_from:
 - /learnapidoc/pubapis_hats.html
+last-modified: 2018-12-25
 ---
 
 Changing any documentation tooling at a company can be a massive undertaking. Depending on the amount of legacy content to convert, the number of writers to train, the restrictions and processes you have to work against in your corporate environment and more, it can require an immense amount of time and effort to switch tools from the status quo to docs-as-code.
@@ -38,6 +39,8 @@ Most of the lessons learned here are about this process, specifically how we tra
 ## Advantages of integrating into a larger system
 
 Why did we want to move to docs as code in the first place? At most large companies, there are plenty of robust, internally developed tools that tech writers can take advantage of. The docs-as-code approach would allow us to integrate into this robust enterprise infrastructure that developers had already created.
+
+{% include random_ad4.html %}
 
 Documentation tools are often independent, standalone tools that offer complete functionality (such as version control, search, and deployment) within their own system. But these systems are often a black box, meaning, you can't really open them up and integrate them into another process or system. With the docs-as-code approach, we had the flexibility to adapt our process to fully integrate within the company's infrastructure and website deployment process. Some of this infrastructure we wanted to hook into included the following:
 
@@ -109,7 +112,7 @@ The long build times were so annoying, we decided to switch back to individual r
 
 I came up with several creative ways to push the theme files out to multiple small repos in a semi-automated way. My first solution was to distribute the theme through [RubyGems](https://rubygems.org/), which is Jekyll's official [solution for theming](https://jekyllrb.com/docs/themes/). I created a theme gem, open-sourced it and the theme (see [Jekyll Doc Project](https://github.com/amzn/jekyll-doc-project)), and practiced the workflow to push out updates to the theme gem and pull them into each repo.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 It worked well (just as designed). However, it turns out our build management system (an engineering system used to build outputs or other artifacts from code repositories) couldn't build Jekyll from the server using [Bundler](http://bundler.io/), which is what RubyGems required. (Bundler is a tool that automatically gets the right gems for your Jekyll project based on the Jekyll version you are using. Without Bundler, each writer installs the [jekyll gem](https://rubygems.org/gems/jekyll/versions/3.3.1) locally and builds the Jekyll project based on that gem version.)
 

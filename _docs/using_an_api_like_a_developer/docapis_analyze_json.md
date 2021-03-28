@@ -9,6 +9,7 @@ weight: 2.7
 sidebar: docapis
 section: likeadeveloper
 path1: /likeadeveloper.html
+last-modified: 2019-01-01
 ---
 
 JSON is the most common format for responses from REST APIs. Let's look at the JSON response for the OpenWeatherMap weather endpoint in more depth, distinguishing between arrays and objects in JSON.
@@ -88,6 +89,8 @@ The key-value pairs are each put into double quotation marks when both are strin
 
 ## JSON arrays are lists of items
 
+{% include random_ad4.html %}
+
 An array is a list of items, surrounded by brackets:
 
 ```json
@@ -144,7 +147,7 @@ And objects can contain arrays in the value part of the key-value pair:
 }
 ```
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 Just remember, objects are enclosed by curly braces `{ }` and contain key-value pairs. Sometimes those values are arrays. Arrays are lists and are enclosed by square brackets `[ ]`. It's common for arrays to contain lists of objects, and for objects to contain arrays.
 

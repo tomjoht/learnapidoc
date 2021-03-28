@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 8.9
 section: publishingapis
 path1: /publishingapis.html
+last-modified: 2018-12-25
 ---
 
 In the previous step, [Activity: Use the GitHub Desktop Client](pubapis_github_desktop_client.html), you used Github Desktop to manage the workflow of committing files, branching, and merging. In this tutorial, you'll do a similar activity but using the browser-based interface that Github provides rather than using a terminal or Github Desktop.
@@ -42,6 +43,8 @@ To make edits in a separate branch on GitHub:
 
 Now let's suppose that the review process is complete, and it's time to merge the branch into the master. You merge the branch into the master through a pull request. Any "collaborator" on the team with write access can initiate and complete the pull request (you can add collaborators through Settings > Collaborators).
 
+{% include random_ad4.html %}
+
 To create a pull request:
 
 1. View the repository and click the **Pull requests** tab.
@@ -60,7 +63,7 @@ To create a pull request:
 
    The maintainers will then see the Pull Request and can take action to merge it.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Process the pull request
 

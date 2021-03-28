@@ -6,9 +6,12 @@ sidebar: docapis
 weight: 4.7
 section: openapi_output_demos
 path1: /openapi_output_demos.html
+last-modified: 2020-06-27
 ---
 
 Earlier in the course, you might have followed the tutorial for [Create an OpenAPI specification document using Stoplight Studio's visual editor](pubapis_openapis_quickstart_stoplight.html), which uses Stoplight Studio. As a GUI editor for creating an OpenAPI, Stoplight Studio simplifies the authoring of a highly technical syntax that is often challenging to make valid. Now let's dive a bit deeper into the offerings and philosophy of Stoplight.
+
+{% include random_ad4.html %}
 
 Among other services, Stoplight provides visual modeling tools to create an OpenAPI document for your API &mdash; without requiring you to know the OpenAPI spec details or code the spec line by line. This API specification document can act as a single source of truth that empowers the whole API lifecycle, from UX prototyping to testing, development, documentation, sales, and more.
 
@@ -109,7 +112,7 @@ Note that you can integrate your reference and conceptual documentation in Stopl
 
 Stoplight also allows you to create variables to use in *both* your specification and your how-to docs. Stoplight plans to take re-use one step further by allowing re-use of your [spec's component definitions](pubapis_openapi_step5_components_object.html) in your [conceptual documentation](docconceptual.html) as well. (But this feature is still forthcoming.)
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 Although I generally like working directly in the code, I've found that Stoplight lets me focus more on the content and less on the details of the spec's format. Ideally, you can probably get developers and other project team members to populate reference content in Stoplight themselves since this is an activity that needs to happen much earlier in the API design process anyway.
 

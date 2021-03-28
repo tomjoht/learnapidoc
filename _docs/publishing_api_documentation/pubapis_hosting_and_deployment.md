@@ -6,11 +6,14 @@ sidebar: docapis
 weight: 8.92
 section: publishingapis
 path1: /publishingapis.html
+last-modified: 2020-06-27
 ---
 
 [Static site generators](pubapis_static_site_generators.html) handle content development, but not hosting and deployment. For this, you need another category of tools. I call this category of tools "hosting and deployment options."
 
 Theoretically, you could publish a static website on any web server (e.g., AWS S3, Bluehost, and more). But continuous delivery hosting platforms do something more: They automatically build your output when you commit a change to a repo. The whole build process takes place entirely on the server.
+
+{% include random_ad4.html %}
 
 Hosting and deployment platforms usually offer a number of additional features beyond simple web hosting, such as SSL, CDNs, minification, authentication, backup/redundancy, and more. These platforms often integrate with specific static site generators as well (which is one reason I limited my earlier discussions to Jekyll, Hugo, and Sphinx).
 
@@ -63,7 +66,7 @@ For a tutorial on setting up Jekyll on CloudCannon, see [Jekyll and CloudCannon 
 
 Read the Docs is an online hosting and deployment platform that can read Sphinx projects (from a public repository such as GitHub or Bitbucket) and automatically build the web output. In other words, it is a "continuous documentation platform for Sphinx" (see [An introduction to Sphinx and Read the Docs for Technical Writers](http://ericholscher.com/blog/2016/jul/1/sphinx-and-rtd-for-writers/)).
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 The introduction on the [Read the Docs homepage](https://readthedocs.org/) describes the platform as follows:
 

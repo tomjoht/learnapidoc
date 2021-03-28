@@ -7,9 +7,12 @@ weight: 4.47
 section: openapitutorial
 path1: /restapispecifications.html
 path2: /openapi_tutorial.html
+map:
+  step: 5
+  definition: content/openapi_tutorial_map.html
+last-modified: 2020-09-07
 ---
 
-{% include workflow_map.html step="5" map="content/openapi_tutorial_map.html"  %}
 {% if site.format == "pdf" or site.format == "kindle" %}
 <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapistep5.png"/>
 {% endif %}
@@ -52,7 +55,7 @@ You can store a lot of different re-usable objects in the `components` object. T
 
 The properties for each object inside `components` are the same as they are when used in other parts of the OpenAPI spec. You use a reference pointer (`$ref`) to point to more details in the `components` object. `$ref` stands for [`reference` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#referenceObject) and is part of JSON.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Re-using parameters across multiple paths {#reusing_parameters}
 
@@ -550,6 +553,8 @@ Notice how the schema definition includes an `example` property for each element
 For most of the sections in `components`, you follow the same object descriptions as detailed in the rest of the spec. However, when describing a `schema` object, you use standard keywords and terms from the [JSON Schema](http://json-schema.org/), specifically from the [JSON Schema Specification Wright Draft 00](https://tools.ietf.org/html/draft-wright-json-schema-00).
 
 In other words, you aren't merely using terms defined by the OpenAPI spec to describe the models for your JSON. As you describe your JSON models (the data structures for input and output objects), the terminology in the OpenAPI spec feeds into the larger JSON definitions and description language for modeling JSON. The OpenAPI's usage of the JSON Schema is just a subset of the full JSON Schema.
+
+{% include random_ad4.html %}
 
 The OpenAPI specification doesn't attempt to document how to model JSON schemas. This would be redundant with what's already documented in the [JSON Schema](http://json-schema.org/) site and outside of the scope of the OpenAPI spec. Therefore you might need to consult [JSON Schema](http://json-schema.org) for more details. (One other helpful tutorial is [Advanced Data](http://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-4-advanced-data-modeling/) from API Handyman.)
 

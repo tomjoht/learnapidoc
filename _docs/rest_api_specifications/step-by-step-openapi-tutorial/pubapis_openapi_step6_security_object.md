@@ -7,9 +7,11 @@ weight: 4.48
 section: openapitutorial
 path1: /restapispecifications.html
 path2: /openapi_tutorial.html
+map:
+  step: 6
+  definition: content/openapi_tutorial_map.html
+last-modified: 2020-09-07
 ---
-
-{% include workflow_map.html step="6" map="content/openapi_tutorial_map.html"  %}
 
 {% if site.format == "pdf" or site.format == "kindle" %}
 <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapistep6.png"/>
@@ -33,7 +35,7 @@ REST APIs can use different security approaches to authorize requests. I explore
 
 In this step of the OpenAPI tutorial, we'll use the API key approach, since this is what the OpenWeatherMap API uses. If your API uses [OAuth 2.0](docapis_more_about_authorization.html#oauth) or another method, you'll need to read the [Security Scheme information](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#security-scheme-object) for details on how to configure it. However, all the security methods mostly follow the same pattern.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## API key authorization
 
@@ -134,6 +136,8 @@ After users enter an API key and click **Authorize**, the authorization method i
 ## <i class="fa fa-user-circle"></i> Test out how authorization works
 
 Now that we've added authorization, let's try making an actual API request. In the Swagger Editor (the right pane), click the **Authorize** button, paste the sample API key shown in the description into the **Value** field (or use your own [OpenWeatherMap API key](docapis_get_auth_keys.html#openweathermap_apikey)), and click **Authorize**. Then click **Close** to close the authorization modal.
+
+{% include random_ad4.html %}
 
 In the Current Weather Data section, expand the **GET weather** endpoint and click **Try it out**. In the **zip** field, enter your zip code and country abbreviation (such as `95050,us`), and then click **Execute**.
 

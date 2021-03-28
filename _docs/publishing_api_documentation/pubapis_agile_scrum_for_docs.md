@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 8.6
 section: publishingapis
 path1: /publishingapis.html
+last-modified: 2019-08-23
 ---
 
 Just as [doc-as-code tools](pubapis_docs_as_code.html) mirror tools used by software implementation teams, work processes that tech writers follow can also mirror processes used by software implementation teams. The most common software development methodology today is probably [Scrum](https://www.scrumguides.org/scrum-guide.html), which is a form of agile development methodology.
@@ -44,6 +45,8 @@ Despite the advantages of integrating with engineering scrums, there are a few d
 * If the engineering team wants you to attend all their scrum meetings but won't treat you as a full-fledged member of the scrum (e.g., no tasks, no points, no demos, etc.), then consider creating your own documentation scrum instead.
 
 ## Adapting scrum for documentation projects
+
+{% include random_ad4.html %}
 
 If it doesn't make sense to join an engineering scrum, you can create your own scrum process. My adapted process for managing docs following an Scrum methodology involves the following steps:
 
@@ -91,9 +94,11 @@ If it doesn't make sense to join an engineering scrum, you can create your own s
 
 Without a process for managing tech docs, projects might arrive from seemingly anywhere at random times, assigned to the doc team, with little info or scope or resource allocation. As a result, tech writers can end up in crisis mode, or product owners might have unrealistic expectations about deliverables, etc. Tech writers might get exhausted or feel like they don't have the time or resources to produce the needed quality with docs.
 
+{% include random_ad2.html %}
+
 By implementing a more formal process and methodology for managing tech doc projects (specifically, an adaptation of Scrum), you can avoid this scenario. Additionally, managing and tracking projects this way gives each team member greater visibility and accountability towards the work of documentation.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Additional resources
 

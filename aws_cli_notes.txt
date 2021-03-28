@@ -1,0 +1,2 @@
+download remote bucket to local:
+aws s3 cp s3://tomjohnsonportfolio/ portfolio_download  --recursive  --profile wasabi

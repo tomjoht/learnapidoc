@@ -7,6 +7,7 @@ weight: 7.3
 sidebar: docapis
 section: docapiscode
 path1: /doccode.html
+last-modified: 2019-11-17
 ---
 
 In this section, we'll dive into approaches for actually documenting code. There are a number of approaches writers and engineers take here, and I've covered five of them with examples and commentary.
@@ -47,6 +48,8 @@ One solution to this location problem for code docs is to create an additional, 
 {% include course_image.html border="true" url="https://www.twilio.com/docs/authy/tutorials/account-verification-java-servlets?code-language=Java&code-sample=code-verify-an-authy-code-7&code-sdk-version=default#sending-a-token-on-account-creation" size="750px" filename="twiliocodedocexample1" ext_print="png" ext_web="png" alt="Twilio documentation juxtaposed with the code through a third column" caption="Twilio documentation juxtaposed with the code through a third column" %}
 
 In this example, the conceptual content and steps appear in the middle column, the code on the right, with a dark background behind the code to create visual contrast.
+
+{% include random_ad4.html %}
 
 Some of Twilio's screens actually blur out the irrelevant code, allowing you to focus your attention on the lines articulated in the conceptual area, like this:
 
@@ -108,7 +111,7 @@ I like the Nautilus approach. The problem is that we often want to explain how t
 
 To the technical writer looking at the finalized code, there's no clear sense of how the developer got there. We often can't decouple the nautilus-like logic that the developer started with, which led him or her toward this more complex end. All we see is this complex end. How do you decompile the code to reconstruct the logic that the developer started with? How do you know what these initial nautilus patterns were that started the whole process? If you didn't develop the code, nor are you a developer, it will be nearly impossible to reconstruct the nautilus pattern behind the code in your explanations.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 As another analogy, consider teaching others how to paint. Suppose your task is to describe a finished painting to a would-be painter. You need to describe how to paint the Mona Lisa:
 

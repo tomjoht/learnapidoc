@@ -8,6 +8,7 @@ section: restapispecifications
 path1: /restapispecifications.html
 redirect_from:
 - /learnapidoc/stoplight_studio_tutorial.html
+last-modified: 2020-09-29
 ---
 
 In [Introduction to the OpenAPI specification](pubapis_openapi_intro.html), I explained that you can create an OpenAPI specification document in several ways: (a) auto-generating it from annotations in your source code, (b) coding it by hand in an editor such as the Swagger Editor, and (c) using a GUI editor such as Stoplight Studio. In this tutorial, I'll walk through the third approach: using Stoplight Studio, a GUI editor for modeling your API. In this tutorial, you'll use Stoplight Studio to create a valid OpenAPI specification, using the OpenWeatherMap as the sample API.
@@ -40,6 +41,8 @@ Before we begin the tutorial, note the following:
 ## Which version of Stoplight Studio?
 
 Stoplight offers both a [web app](https://stoplight.io/p/studio) and a [desktop app](https://stoplight.io/studio) (Mac, Windows, or Linux). In this tutorial, you will use the web app version of Stoplight Studio because only the web app gives you the ability to publish your content online and try out requests (see [Studio Desktop vs. Studio Web](https://stoplight.io/p/docs/gh/stoplightio/studio/docs/Basics/web-vs-desktop-app.md) for more on the difference). However, you could also use the desktop app if desired (such as for scenarios where you're working with private, unreleased data).
+
+{% include random_ad4.html %}
 
 ## Set up a project in Stoplight Studio
 
@@ -129,7 +132,7 @@ To populate the API info into Stoplight Studio, expand the **API information** b
 
 When finished, the editor should look as follows:
 
-{% include course_image.html size="large"  filename="stoplight_studio_api_overview" ext_print="png" ext_web="png" alt="Creating the API overview" caption="Creating the API overview" %}
+{% include course_image.html size="large"  filename="stoplight_studio_api_overview" ext_print="png" ext_web="png" alt="Creating the product overview" caption="Creating the product overview" %}
 
 ## Previewing the output
 
@@ -280,7 +283,7 @@ Then you can click the link icon in the Stoplight editor and select this referen
 
 {% include random_ad3.html %}
 
-If you have a lot of parameter re-use but still want to use Stoplight to create your OpenAPI file, you could first create the parameters using Stoplight's GUI and then  copy the same code (with minor adjustments and indentations) into the `components` section under a `parameters` sublevel. For more details, see the ["Re-using parameters across multiple paths"](../pubapis_openapi_step5_components_object.html#re-using-parameters-across-multiple-paths) section in the [Step 5: The components object](../pubapis_openapi_step5_components_object.html) tutorial.
+If you have a lot of parameter re-use but still want to use Stoplight to create your OpenAPI file, you could first create the parameters using Stoplight's GUI and then  copy the same code (with minor adjustments and indentations) into the `components` section under a `parameters` sublevel. For more details, see the ["Re-using parameters across multiple paths"](pubapis_openapi_step5_components_object.html#re-using-parameters-across-multiple-paths) section in the [Step 5: The components object](pubapis_openapi_step5_components_object.html) tutorial.
 
 ## Save and preview your parameter work
 
@@ -485,7 +488,7 @@ To enter the response in Stoplight Studio:
 
 8.  Click the **Example** tab and insert the example (from the same Response information button above). Call the example "Example."
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Save and preview your schema work
 

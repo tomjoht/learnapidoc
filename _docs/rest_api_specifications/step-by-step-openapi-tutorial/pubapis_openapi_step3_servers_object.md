@@ -7,9 +7,12 @@ weight: 4.45
 section: openapitutorial
 path1: /restapispecifications.html
 path2: /openapi_tutorial.html
+map:
+  step: 3
+  definition: content/openapi_tutorial_map.html
+last-modified: 2020-09-07
 ---
 
-{% include workflow_map.html step="3" map="content/openapi_tutorial_map.html"  %}
 {% if site.format == "pdf" or site.format == "kindle" %}
 <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapistep3.png"/>
 {% endif %}
@@ -70,6 +73,8 @@ Paste the `servers` object (the [first code sample above](#sample_servers_object
 
 {% include course_image.html filename="swagger_servers_object2" ext_print="png" ext_web="png" alt="Swagger UI with the servers object" caption="Swagger UI with the servers object" %}
 
+{% include random_ad4.html %}
+
 Notice the drop-down menu that appears in the lower-right. (Even if you have just one URL, it still appears in a drop-down menu.)
 
-{% include random_ad.html %}
+{% include random_ad1.html %}

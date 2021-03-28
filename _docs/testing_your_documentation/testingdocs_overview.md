@@ -6,6 +6,7 @@ weight: 5.01
 sidebar: docapis
 section: testingdocs
 path1: /testingdocs.html
+last-modified: 2018-12-24
 ---
 
 Up until now, you've been focused intensely on API documentation. In this section, I'll talk about an aspect of API documentation that is perhaps more applicable to all types of documentation but which is especially relevant to developer docs, where testing and experimenting with the products and services is not always straightforward.
@@ -14,6 +15,8 @@ Walking through all the steps in documentation yourself is critical to producing
 
 * TOC
 {:toc}
+
+{% include random_ad4.html %}
 
 ## Leveraging test cases from QA
 
@@ -39,4 +42,4 @@ Testing your API doc content is so critical, I've created an entire section devo
 
 <figure><a href="https://flic.kr/p/6Grete" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/testingeverything.jpg" alt="Testing everything" /></a><figcaption>Photo from <a href='https://flic.kr/p/6Grete'>Flickr</a>, <a href='https://creativecommons.org/licenses/by/2.0/legalcode'>CC BY 2.0</a> &mdash; City water testing laboratory, 1948. When I think about testing docs, I like to think of myself as a scientist in a laboratory, carefully setting up tests to measure reactions and outcomes.</figcaption></figure>
 
-{% include random_ad.html %}
+{% include random_ad1.html %}

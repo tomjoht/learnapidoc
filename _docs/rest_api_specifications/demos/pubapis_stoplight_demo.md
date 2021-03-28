@@ -7,6 +7,7 @@ weight: 4.92
 section: openapi_output_demos
 path2: /openapi_output_demos.html
 path1: /restapispecifications.html
+last-modified: 2021-02-08
 ---
 
 I've provided information about Stoplight in two other places in this course:
@@ -14,15 +15,17 @@ I've provided information about Stoplight in two other places in this course:
 * [Create an OpenAPI specification document using Stoplight Studio's visual editor](pubapis_openapis_quickstart_stoplight.html)
 * [Stoplight — visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html)
 
-Here I include a short demo of how Stoplight renders the OpenAPIWeatherMap OpenAPI specification document that we've been using in this course. (Click the following image to see the details.)
+Here I include a short demo of how Stoplight renders the OpenAPIWeatherMap OpenAPI specification. Following the same API we've been using in this course, here's what the /weather endpoint looks like in Stoplight:
 
-{% include course_image.html url="https://stoplight.io/p/docs/gh/tomjoht/stoplight_studio_weathermap/reference/openweathermap.v1.yaml/paths/~1weather/get?srn=gh/tomjoht/stoplight_studio_weathermap/reference/openweathermap.v1.yaml/paths/~1weather/get" size="large" border="true" filename="stoplight_output_full_display" ext_print="png" ext_web="png" alt="Full display of Stoplight output" caption="Full display of Stoplight output" %}
+{% include random_ad4.html %}
 
-{% include random_ad.html %}
+<a href="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_demo_personal.png"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_demo_personal.png" alt="Stoplight API doc example" /></a>
+
+{% include random_ad1.html %}
 
 {% include image_ad_right.html %}
 
-This sample API doesn't include many endpoints, so it might be more instructive to see some other samples of Stoplight listed on their [Case Studies page](https://stoplight.io/case-studies/). For more direct links to the documentation mentioned in case studies, explore the following:
+This sample API doesn't include many endpoints, so it might be more instructive to see some other samples of Stoplight listed on their [Case Studies page](https://stoplight.io/case-studies/). For direct links to the documentation mentioned in case studies, explore the following:
 
 * [Zoom API docs](https://marketplace.zoom.us/docs/api-reference/zoom-api)
 * [Nutanix API docs](https://www.nutanix.dev/api-reference/)

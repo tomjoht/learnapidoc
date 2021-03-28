@@ -7,19 +7,15 @@ weight: 4.43
 section: openapitutorial
 path1: /restapispecifications.html
 path2: /openapi_tutorial.html
+map:
+  step: 1
+  definition: content/openapi_tutorial_map.html
+last-modified: 2020-09-07
 ---
 
-{% include workflow_map.html step="1" map="content/openapi_tutorial_map.html"  %}
 {% if site.format == "pdf" or site.format == "kindle" %}
 <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapistep1.png"/>
 {% endif %}
-
-{% if site.format == "web" %}
-* TOC
-{:toc}
-{% endif %}
-
-## OpenAPI tutorial overview
 
 Before diving into the first step of the OpenAPI tutorial here, read the [OpenAPI tutorial overview](pubapis_openapi_tutorial_overview.html) (if you haven't already) to get a sense of the scope of this tutorial. In brief, this OpenAPI tutorial is unique in the following ways:
 
@@ -28,7 +24,12 @@ Before diving into the first step of the OpenAPI tutorial here, read the [OpenAP
 * This OpenAPI tutorial is a subset of the information in both the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification) and the [OpenAPI specification commentary](https://swagger.io/docs/specification/about/). In other words, it's not comprehensive of all the possible information in the spec.
 * This OpenAPI tutorial covers the *3.0 version* of the OpenAPI spec, which is the latest version. (Surprisingly, many tools still support only the 2.0 version.)
 
-{% include random_ad3.html %}
+<div></div>
+
+{% if site.format == "web" %}
+* TOC
+{:toc}
+{% endif %}
 
 ## The root-level objects in OpenAPI spec
 
@@ -51,7 +52,7 @@ The whole document (the object that contains these eight root-level objects) is 
 {: .note}
 "OpenAPI" refers to the specification; "Swagger" refers to the tooling (at least from SmartBear) that supports the OpenAPI specification.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 Although one could approach the assembly of an OpenAPI document in many ways, I've decided to structure each step in this tutorial based on each of these root-level objects. You'll see two approaches: one using Swagger working at a code-level, and another using Stoplight Studio working in a user interface.
 
@@ -105,4 +106,8 @@ The editor renders the display as follows.
 
 On the backend, Swagger UI uses the 3.0.2 version of the spec to validate your content. In the above screenshot, the gray "1.0" version refers to the version of the API here, not the version of the OpenAPI spec.
 
+{% include random_ad4.html %}
+
 There's not much to the `openapi` object except to elaborate on the versions. OAS 3.0 was released on 2017-07-26, and OAS 3.0.2 was released on 10-08-2018 (see [Version History](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#appendix-a-revision-history)). Much of the information and examples online, as well as supporting tools, often focus only on 2.0. Even if you're locked into publishing in a 2.0 tool or platform, you can code the spec in 3.0 and then use a tool such as [APIMATIC Transformer](https://apimatic.io/transformer) to convert the 3.0 spec to 2.0. You can also convert a spec from 2.0 to 3.0.
+
+{% include random_ad3.html %}

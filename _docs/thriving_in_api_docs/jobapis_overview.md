@@ -6,6 +6,7 @@ weight: 10.1
 sidebar: docapis
 section: jobapis
 path1: /jobapis.html
+last-modified: 2020-01-02
 ---
 
 Technical writers who can write developer documentation are in high demand, especially in the Silicon Valley area. There are plenty of technical writers who can write documentation for graphical user interfaces but not many who can navigate the developer landscape to provide highly technical documentation for developers working in code.
@@ -49,6 +50,8 @@ When I worked at Badgeville, we developed a collection of JavaScript widgets tha
 
 Remember that developers are typically using a REST API as a *third-party* service. The developers' primary focus is their own company's code; they're just leveraging your REST API as an additional, extra service. As such, developers want to just get in, get the code, and get out. This get-in-and-get-out mentality is why companies need to provide multiple client SDKs in as many languages as possible &mdash; these client implementations allow developers to implement the API quickly and efficiently.
 
+{% include random_ad4.html %}
+
 If you were recruiting for a technical writer to document Algolia, how would you word the job requirements? Can you now see why even though the core work involves documenting the REST API, it would also be good to have an "ability to read code in one or more programming languages, such as Java, C++, or Python."
 
 The number of SDKs a company distributes can vary considerably. You might not have six SDKs in multiple languages and frameworks for your API. You might be in a C++ only shop where all you need to know is C++ and nothing more. If that's the case, you'll need to develop a deeper knowledge of C++ so you can provide more value in your writing role.
@@ -71,7 +74,7 @@ A lack of more technical knowledge will likely remove some of the value from you
 
 Without in-depth, authoritative knowledge of the API, it will be challenging to complete, clarify, and correct errors in the content.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 The balance between generalist and specialist roles is an ongoing challenge that I'll explore more in the next topic: [How much code do you need to know?](jobapis_learning_code.html) In short, if you want to solve the biggest problem with API documentation, you'll need to develop more technical expertise in the subject domain.
 

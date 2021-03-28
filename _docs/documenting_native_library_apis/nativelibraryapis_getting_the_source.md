@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 11.1
 section: nativelibraryapis
 path1: /nativelibraryapis.html
+last-modified: 2020-12-26
 ---
 
 To understand the documentation for Java APIs, it helps to see the context of what the documentation describes. As such, I created a simple little Java application (called [sample-java-project](https://github.com/tomjoht/sample-java-project)) to demonstrate how the various tags get rendered into the Javadoc.
@@ -25,7 +26,7 @@ The sample Java project (available at [github.com/tomjoht/sample-java-project](h
 
 This program only prints little messages to the console, but it's simple enough to be instructive in its purpose. The purpose of the app is to demonstrate different doc tags, their placement, and how they get rendered in the Javadoc.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## <i class="fa fa-user-circle"></i> Download and open the project in Eclipse
 
@@ -95,6 +96,8 @@ This Java app doesn't do much. Its only purpose is to create some classes that d
 ## Side Note about Maven projects
 
 Before leaving this intro topic on getting started with a Java project, I'd like to make a note about Maven. Java projects often have a lot of dependencies on packages that are third-party libraries or at least non-standard Java utilities. Rather than requiring users to download these additional packages and add them to their class manually, developers frequently use Maven to manage the packages. (Maven is to Java as Gradle is to Android.)
+
+{% include random_ad4.html %}
 
 Maven projects use a pom.xml file that defines the dependencies. Eclipse ships with Maven already installed, so when you import a Maven project and install it, the Eclipse Maven plugin will retrieve all of the project dependencies and add them to your project.
 

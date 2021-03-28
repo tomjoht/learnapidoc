@@ -7,6 +7,7 @@ weight: 2.91
 sidebar: docapis
 section: likeadeveloper
 path1: /likeadeveloper.html
+last-modified: 2020-05-10
 ---
 
 In the previous topic, [Access and print a specific JSON value](docapis_access_json_values.html), you accessed and printed a specific JSON value to the page. Let's dive into dot notation a little more since understanding how to access the right JSON value you want is necessary to make use of the response.
@@ -48,6 +49,8 @@ With most programming languages, you usually start counting at `0`, not `1`.
 {% include random_ad3.html %}
 
 ## <i class="fa fa-user-circle"></i> Exercise with dot notation {#exercise_dot_notation}
+
+{% include random_ad4.html %}
 
 In this activity, you'll practice accessing different values through dot notation.
 
@@ -204,4 +207,4 @@ As you've progressed through the exercises for using an API like a developer, yo
 
 With this background, it's time to switch gears and put on your technical writing hat. In the next section, [Documenting endpoints](docendpoints.html), you'll assume the task of [documenting a new endpoint](docapis_new_endpoint_to_doc.html) that was added to a weather API. You'll learn the essential sections in endpoint reference documentation, the terminology to use, and formatting conventions for API reference information.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}

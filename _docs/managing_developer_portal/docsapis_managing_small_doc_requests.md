@@ -5,7 +5,8 @@ course: "Documenting REST APIs"
 weight: 12.3
 sidebar: docapis
 section: devportals
-path1: /docapis_managing_dev_portals.html
+path1: /docapis_managing_doc_processes.html
+last-modified: 2021-02-17
 ---
 
 With any developer portal, you'll receive not only incoming [documentation projects](docapis_managing_doc_projects.html) but also a healthy dose of small documentation requests too. These small requests can be managed in a similar way as documentation projects but can also be scaled down with a simpler workflow. Even so, small requests have unique challenges when it comes to prioritization, weighting, and cadence.
@@ -88,13 +89,25 @@ Think about the different kinds of doc requests you receive, and then customize 
 
 Create a custom intake form that solicits the information you need for each of these different doc types. Advertise your intake process on your team wiki page and point users to it when they ask for docs.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
-It's important that small doc request tickets be completed by the requester. This ensures that the tech writer isn't stuck digging around for the information needed to complete the task. It also ensures commitment and allows the requester to receive updates on the status of the ticket.
+It's important that small doc request tickets be completed by the requester. This ensures that the tech writer isn't stuck digging around for the information needed to complete the task. It also ensures commitment and allows the requester to receive updates on the status of the ticket. The ticket provides a channel for communication not only for the requester but for anyone else following the ticket, and also provides a record of the work.
 
 It's easy for someone to request an update via email or chat, and perhaps asking the requester to formalize the request by submitting a ticket might be extra overhead &mdash; wouldn't it be easier for you to just copy/paste the email thread into the ticket, rather than making a request to the person to locate your intake page, create a ticket, and then populate the right information in the right way?
 
-Here is where the intake fields can do some work. Email threads have scattered information. As part of the formalization of the work, you usually organize the information in a more structured, logical way. Rather than doing the work of restructuring this information to specify what page needs to be updated, what updates need to be made, who should review the updates, when they should be published, etc., you can ask the requester to do this. This can reduce your own workload. When the task is made more formal and structured in a ticket, it will be easier for other writers who aren't part of the email thread to work on it.
+Here is where the intake fields can do some work. Email threads have scattered information. As part of the formalization of the work, you usually organize the information in a more structured, logical way. Rather than doing the work of restructuring this information to specify what page needs to be updated, what updates need to be made, who should review the updates, when they should be published, etc., you can ask the requester to do this. This can reduce your own workload. When the task is made more formal and structured in a ticket, it will be easier for other writers who aren't part of the email thread to work on it. In fact, if you can specialize different intake forms for different types of requests, you can more acutely focus your questions around the information needed for that task.
+
+## Requests should come through product teams {#requester}
+
+In your small intake process, avoid allowing anyone to make a doc request. Instead, the ones making requests should be product managers (or those who own the products related to the docs).
+
+To understand why, consider this scenario. Suppose your DevRel engineers (the ones who work closely with partners on implementations) make a doc request for more information about some feature. They don't have the information themselves, but they they've noticed that the lack of information is a partner friction, so they file a doc request. It sounds like a good idea, right, because you want to drive your doc priorities based on partner-facing groups? However, the problem is that DevRel groups (or others) usually don't have the information needed to make the request actionable.
+
+If anyone can make a request for information they wish would be included in the docs, this can leave technical writers trying to chase down the information, knocking on the doors of different groups without getting much traction. This puts all the burden on technical writers for information collection and SME identification, and none on the requester. This is the wrong approach.
+
+It's much better to direct DevRel groups to make documentation requests to product teams. Then product teams should formally go through your intake process. This might seem like an extra hop, but it results in a world of difference. When the product team files a request for documentation help, you've got them at your disposal. They can provide the information that you actually need to write the documentation. The PM can allocate bandwidth to the collection and sharing of this information so you can complete the request. They will also review the docs.
+
+Without this backing of the product team, the DevRel request places all the pressure on the technical writer to figure out how has the info, what the details of the info are, and more. In most organizations, the DevRel groups are much stronger than the documentation groups because DevRel groups work closely with key partners. Hence DevRel can place much greater pressure on product teams to act, while product teams might simply disregard requests from technical writers.
 
 ## Indicating progress on the ticket
 
@@ -125,6 +138,8 @@ In your monthly report listing doc work completed, consider listing all closed t
 {% include random_ad2.html %}
 
 In the Small Doc Requests Resolved section, you might also provide a link to your intake form for these types of requests. This helps others know your process for managing small doc requests. The next time they have a request, they'll know what the process is and what to expect.
+
+{% include random_ad4.html %}
 
 ## Survey to gather your feedback and input
 

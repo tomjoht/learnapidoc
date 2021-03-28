@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 8.93
 section: publishingapis
 path1: /publishingapis.html
+last-modified: 2020-06-27
 ---
 
 Rounding out the publishing tool options, there is a class of developer doc tools that provide online GUIs for authoring and publishing, but they still store your content as flat files in repositories such as GitHub and Bitbucket. In other words, they provide a WordPress.com-like experience for your content (giving you a user interface to browse your posts, pages, layouts, and other content) but allow your content to live in plain text files in version control repositories.
@@ -61,6 +62,8 @@ Overall, Readme.com provides a robust GUI for creating API documentation in a wa
 <img class="medium" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/readmeiotryitout.png" style="border: 1px solid #dedede;" />
 
 The experience is similar to Swagger in that the response appears directly in the documentation. This API Explorer gives you a sense of the data returned by the API.
+
+{% include random_ad4.html %}
 
 There are some challenges with Readme.com. It isn't free, so you'll need licenses per author. Additionally, there isn't any content re-use functionality (currently), so if you have multiple outputs for your documentation that you're single sourcing, Readme.com may not be for you. Finally, if you want to customize your own design or implement a feature not supported, you can't just hack the code (though you can adjust the stylesheet). Overall, with a hosted solution like Readme.com, you're stuck within the platform's constraints.
 

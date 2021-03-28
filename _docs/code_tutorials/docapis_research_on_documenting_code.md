@@ -7,6 +7,7 @@ weight: 7.2
 sidebar: docapis
 section: docapiscode
 path1: /doccode.html
+last-modified: 2019-11-17
 ---
 
 Before diving in to how to document code, let's first explore some research that has been done on best practices for documenting code, as this can inform our direction and approach. A couple of academic articles stand out as noteworthy for this effort:
@@ -34,6 +35,8 @@ Basically, in C++, the header files (`.h`) contain the classes and the main docu
 The researchers used tracking tools to identify when developers would switch from one type of file to another, and they also interviewed the developers as a follow-up. Google has about a billion lines of code stored in a central code repository that can be used across the company, so thousands of developers might find and discover code in this monorepo to use in their projects. The team that uses an API might not know the team that developed the API, and vice versa.
 
 Even if you don't document C++, this study is helpful because it raises this central question: should you put the bulk of your documentation in formal descriptions about the code, or should the bulk of your documentation appear within the context of the code, peppered in as inline comments.
+
+{% include random_ad4.html %}
 
 After gathering information from more than 600 participants in their study, the researchers found that not all code is equal. Complex code needs more formal documentation, but simple code might not need documentation at all.
 
@@ -197,7 +200,7 @@ While the learning styles discussed in this article might seem more applicable t
 
 More than any other type of API documentation, when you document code you find yourself with a direct opportunity to target the opportunistic learning style with experiment-and-try opportunities.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Takeaways from the Research
 

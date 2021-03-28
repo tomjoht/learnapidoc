@@ -5,7 +5,8 @@ course: "Documenting REST APIs"
 weight: 12.2
 sidebar: docapis
 section: devportals
-path1: /docapis_managing_dev_portals.html
+path1: /docapis_managing_doc_processes.html
+last-modified: 2020-08-13
 ---
 
 When you're managing larger documentation projects, you need to incorporate project management skills to break the large work into smaller chunks. You can pick and choose from Scrum and other agile methodologies (like Kanban) to create a workflow that works for you. The following sections describe a process for working with large documentation projects.
@@ -43,7 +44,9 @@ A process for *managing doc projects* could have the following steps:
 
 First, try to identify all documentation projects by reviewing different project lists for the teams you're working with. The whole need to identify the projects might seem unintuitive &mdash; shouldn't product managers reach out to technical writers to let them know what doc needs they have? Yes, in an ideal world that would be the case. But we all know the reality in corporate settings. About two weeks before release, the product manager suddenly starts thinking about docs, and an email winds around to your inbox with the request. If you were to start from the time you received the email heads down until the release, working on that project and only that project, you might be able to finish it &mdash; meanwhile postponing/re-prioritizing everything else you're working on as you enter crisis mode. Most people dislike working for extended periods in crisis modes.
 
-To get out of crisis mode, you have to scan the project landscape like a scout looking across a plain for emerging wildlife and identify the projects early on. Identifying projects early on also gives you more opportunity to engage more deeply in the project, such as providing input on the [API design and usability](evaluating-api-design.html)).
+{% include random_ad4.html %}
+
+To get out of crisis mode, you have to scan the project landscape like a scout looking across a plain for emerging wildlife and identify the projects early on. Identifying projects early on also gives you more opportunity to engage more deeply in the project, such as providing input on the [API design and usability](evaluating-api-design.html).
 
 So this first step is one of *identifying* the work &mdash; what projects are out there, what's on each team's roadmap, when are new features and products going to be released, which of these projects will require documentation, and so on. Gather up a list of these projects and put them onto a documentation planning spreadsheet.
 
@@ -101,7 +104,7 @@ These different buckets become areas of specialization for the writers. For exam
 
 It's important that each tech writer is assigned an area of specialization so that they can accrue the necessary knowledge and rapport with teams in those areas. Each project on your doc planning spreadsheet should be categorized into an area of specialization correlating to a tech writer's specialization.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 What happens if the groups don't balance out evenly? Suppose Globex pushes out tons of features while ACME is much smaller and only has 1-2 releases a year? In that case, you might have to make adjustments so that the work is more balanced. These adjustments can only be decided based on the number of writers at your disposal, your org structures, and other factors. But if you have a list of strategic priorities for your org, these strategic priorities can serve as the guiding core for balancing the work. Ideally, balance writers based on strategic priorities rather than simply the number of projects.
 
@@ -336,7 +339,7 @@ During sprint planning, writers assign points to the tickets. Each ticket might 
 
 Larger weightings are discouraged. For example, if the task would take 5 days, as a best practice, break this up into smaller chunks to feel a greater sense of progress and so that you more accurately identify the work that needs to be done. However, avoid chunking tasks too granularly. If the task takes 10 minutes, see if you can group these smaller tasks into a single ticket.
 
-Although I've used points here, many times teams will use non-point sizing, such as using T-shirt sizes or dog sizes or something. Psychologically, it's easier to identify and XL task versus a Small task rather than equate them with time. However, these non-number sizings ultimately resolve back down to points in the ticketing systems.
+Although I've used points here, many times teams will use non-point sizing, such as using T-shirt sizes or dog breeds (is it a Great Dane type task or a Chihuahua). Psychologically, it's easier to identify an XL task versus a small task rather than equate them with time. However, these non-number sizings ultimately resolve back down to points in the ticketing systems.
 
 Typically, each writer usually doesn't take on more than 10-20 points per sprint. This provides a more practical sense of timelines and forces you to decide on priorities. When you realize that you can't do everything at once, you're forced to decide what you *should* work on first, and this is where prioritization comes into play.
 
@@ -376,7 +379,7 @@ It can be tempting to prematurely consider docs done when an engineer gives you 
 
 The general pattern is to increase the circle of reviewers wider and wider with each iteration. It doesn't make sense to blast everyone with the first draft. Instead, before you invite a larger number of reviewers (field engineers, support, other stakeholders), you want the draft to have at least been vetted by you and the product team first. Also, before you push content through your legal process, make sure it's not still changing.
 
-I'll expand on the review process in more detail in another tutorial.
+For more details, see [Processes for reviewing documentation](docapis_review_processes.html).
 
 ## 10. Create a code review for your changes {#code_review_for_changes}
 
@@ -384,7 +387,7 @@ Let's say you've finished the content development in your collaborative platform
 
 When you're creating content in your authoring tool, if it's a docs-as-code system that uses Git, follow a Git workflow that makes sense for your team. For example, you might choose to align with a standard branching workflow when working with docs.
 
-Usually, you create a feature branch from your production branch and then make changes in the feature branch. Consider following the general workflow described here: [Git Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow). (I'll provide a sample Git branching workflow in another tutorial.)
+Usually, you create a feature branch from your production branch and then make changes in the feature branch. Consider following the general workflow described here: [Git Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow).
 
 When you're ready to review this version with reviewers, merge your feature branch into a beta environment, push out the build, and provide a link where reviewers can see the output.
 
@@ -437,23 +440,23 @@ Here's an overview of the meetings that drive the process for managing documenta
    <tbody>
       <tr>
          <td markdown="span">Doc Project Planning</td>
-         <td markdown="span">bi-weekly</td>
+         <td markdown="span">Biweekly</td>
       </tr>
       <tr>
          <td markdown="span">Doc Project Prioritization</td>
-         <td markdown="span">bi-weekly</td>
+         <td markdown="span">Biweekly</td>
       </tr>
       <tr>
          <td markdown="span">Doc Project Kickoff</td>
-         <td markdown="span">after a project intake ticket is completed</td>
+         <td markdown="span">After a project intake ticket is completed</td>
       </tr>
       <tr>
          <td markdown="span">Sprint Planning</td>
-         <td markdown="span">bi-weekly</td>
+         <td markdown="span">Biweekly</td>
       </tr>
       <tr>
          <td markdown="span">Sprint Closure</td>
-         <td markdown="span">bi-weekly</td>
+         <td markdown="span">Biweekly</td>
       </tr>
    </tbody>
 </table>

@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 11.01
 section: nativelibraryapis
 path1: /nativelibraryapis.html
+last-modified: 2018-12-26
 ---
 
 In most of this course, we focused on [REST APIs](docapis_what_is_a_rest_api.html). In this section, we'll explore native library APIs, which are more common when building native apps that you install on devices (such as Android or iOS devices). Understanding native library APIs will also help clarify what makes REST APIs so different.
@@ -30,7 +31,7 @@ Native library APIs (also called class-based APIs or just APIs) are notably diff
 
 We will focus this section on Java APIs because they're probably one of the most common. However, many of the concepts and code conventions mentioned here will apply to the other languages, with minor differences.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Do you have to be a programmer to document native library APIs?
 
@@ -66,6 +67,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.181-b13, mixed mode)
 ```
 
 If it's not installed, you can [download the JDK here](http://www.oracle.com/technetwork/java/javase/downloads/index.html). Click the Java button and then select the appropriate download for your machine.
+
+{% include random_ad4.html %}
 
 ### Eclipse IDE for Java Developers {#eclipse}
 

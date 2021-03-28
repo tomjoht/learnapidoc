@@ -6,6 +6,7 @@ path1: /jobapis.html
 weight: 10.3
 course: "Documenting REST APIs"
 section: jobapis
+last-modified: 2019-11-17
 ---
 
 You're taking this course most likely because you want to break into API documentation. However, if you live in a place where there aren't many API documentation jobs, it will be difficult to find work. In this topic, I'll explain where the API documentation jobs are.
@@ -608,7 +609,7 @@ Also, I'm not sure why Washington State, Louisiana, and Delaware are getting so 
 
 At any rate, the top 10 states with the highest percentages (dividing API hits by employment) are Washington State, Louisiana, Delaware, California, New York, Georgia, Illinois, Texas, Colorado, and Arizona.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Should you move to California?
 
@@ -719,6 +720,8 @@ Will I stay here forever? Probably not. I'll probably never be able to afford a 
 Overall, tech companies will continue to grow and expand outside of Silicon Valley. There's not enough space in Silicon Valley, and the number of engineers becomes fewer and fewer as companies grow and expand. Many say that Silicon Valley's days are over because it's no longer practical for a startup to launch in the conditions here. So if you want to come to California to work as a technical writer, great. But many other locations might be more ideal.
 
 For ideas on alternative areas, see the "Fastest-Growing States for Technical Writers and Export and GDP Performance in 2017" section of the Salary Database. Michigan had a 28.0% increase in tech writer employment. Georgia had a 19.2% increase. New Mexico had a 23.3% increase.
+
+{% include random_ad4.html %}
 
 Without looking at averages over several years, it's hard to know whether these boosts are temporary anomalies or indicative of a continuous upward trajectory. To give better context to any growth percentages, the Salary Database says to look at the state's overall economic growth, not just their tech comm job market. The report notes, "State employment gains are often correlated with the state’s economy. A growing economy will typically prompt new hires in nearly all industries."
 

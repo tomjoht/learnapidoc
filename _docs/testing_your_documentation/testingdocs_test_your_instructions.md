@@ -6,6 +6,7 @@ weight: 5.2
 sidebar: docapis
 section: testingdocs
 path1: /testingdocs.html
+last-modified: 2018-12-24
 ---
 
 After setting up your [test environment](testingdocs_test_environment.html), the next step is to test your instructions. This will likely involve testing API endpoints with various parameters along with other configurations. Testing all your docs can be challenging, but it's where you'll get the most useful insights when creating documentation.
@@ -20,6 +21,8 @@ After setting up your [test environment](testingdocs_test_environment.html), the
 One benefit of testing your instructions is that you can start to answer your own questions. Rather than taking the engineer's word for it, you can run a call, see the response, and learn for yourself. (This assumes the application is behaving correctly, though, which may not be the case.)
 
 A lot of times, when you discover a discrepancy in what's supposed to happen, you can confront an engineer and tell him or her that something isn't working correctly. Or you can make suggestions for improving workflows, terms, responses, error messages, etc. You can't do this if you're just taking notes about what engineers say, or if you're just copying information from wiki specs or engineer-written pages.
+
+{% include random_ad4.html %}
 
 When things don't work, you can identify and log bugs in issue tracking systems such as JIRA. Logging bugs is helpful to the team overall and increases your credibility with the engineers. It's also immensely fun to log a bug against an engineer's code because it shows that you've discovered flaws and errors in what the "gods of code" have created.
 
@@ -69,7 +72,7 @@ This in-app-purchasing tag surprised the dev team, and it would have caused a lo
 
 The developers said users could simply deregister the component from the app. So I modified the doc to indicate this. Then I tried deregistering the component from the app and submitted a new version, but the in-app-purchases tag issue persisted.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 This experience reinforced to me how vital it is to get your hands on the code you're documenting and run it through as real of a situation as you can. It blew my mind that the engineering team did not actually have an app in the Appstore that they published with this template. I was the only one.
 

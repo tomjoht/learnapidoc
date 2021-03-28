@@ -129,6 +129,20 @@ pre a:hover, pre a, pre code a.vglnk, pre code a.vglnk:hover {
   color: #c7254e;
 }
 
+a[data-toggle=tooltip], a[data-toggle=popover] {
+    color: cadetblue;
+    border-bottom: dashed;
+    border-bottom-color: darkgray;
+    border-bottom-width: thin;
+    font-style: italic;
+}
+
+a[data-toggle=tooltip]:hover, a[data-toggle=popover]:hover {
+  border-bottom: solid;
+  border-bottom-color: darkgray;
+  border-bottom-width: thin;
+}
+
 table code a.vglnk, table code a.vglnk:hover {
   color: #c7254e;
 }
@@ -630,6 +644,7 @@ dl {
 
 .singlePostComics img {
     margin-bottom: 15px;
+    max-width: 728px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -711,4 +726,9 @@ a:focus {
     border-radius: 4px;
     margin: 10px 0px;
     //max-width: 175px;
+}
+
+.lastModifiedDate {
+    margin-bottom: 15px;
+    font-style: italic;
 }

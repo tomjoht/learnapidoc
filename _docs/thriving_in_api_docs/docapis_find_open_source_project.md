@@ -6,6 +6,7 @@ weight: 10.4
 sidebar: docapis
 section: jobapis
 path1: /jobapis.html
+last-modified: 2020-06-27
 ---
 
 To break into API documentation, you need to start thinking about API documentation samples in your portfolio. Your portfolio is key to [Getting an API documentation job and thriving](jobapis.html). Without a portfolio that contains compelling API documentation samples, it will be tough to get a job in API documentation.
@@ -13,12 +14,13 @@ To break into API documentation, you need to start thinking about API documentat
 * TOC
 {:toc}
 
-
 ## Avoiding a catch-22
 
 Let's assume you don't have any experience in API documentation, but you're trying to get an API documentation job. Employers will be willing to overlook experience if you can demonstrate API documentation writing samples. But how will you get API doc writing samples without an API doc job? And without API doc samples, how can you get an API doc job? This can seem like an impossible situation.
 
 Getting around this catch-22 is simple: you create these API doc samples through open-source projects that you contribute to. This is where the activities in this course become essential.
+
+{% include random_ad4.html %}
 
 Rather than merely completing modules and tracking your progress toward the course's completion, the activities you do will help build up your portfolio with API documentation samples, helping you progress to the goal of either obtaining an API documentation job or hitting a home run on an API doc project in your current role.
 
@@ -57,7 +59,7 @@ Don't worry so much about Git now. You can learn these skills later when you hav
 
 You may think that it's too early to even think about joining let alone contributing to an API documentation project, especially when you're learning. When you interact with the open-source team, you might feel intimidated that you don't have any programming skills.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 However, don't undervalue your role as a contributor to documentation (regardless of the contribution). Open-source projects suffer greatly from lousy documentation. In [GitHub Survey: Open Source Is Popular, Plagued by Poor Docs and Rude People](https://adtmag.com/articles/2017/06/05/open-source-survey.aspx), David Ramel summarizes findings from the [2017 GitHub Survey](http://opensourcesurvey.org/2017/):
 

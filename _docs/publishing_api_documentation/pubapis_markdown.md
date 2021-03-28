@@ -6,6 +6,7 @@ sidebar: docapis
 weight: 8.4
 section: publishingapis
 path1: /publishingapis.html
+last-modified: 2018-12-25
 ---
 
 Most of the docs-as-code solutions use lightweight markup syntax, often Markdown. So let's learn a bit more about Markdown. Markdown is a shorthand syntax for HTML. Instead of using `ul` and `li` tags, for example, you use asterisks (`*`). Instead of using `h2` tags, you use hashes (`##`). There's a Markdown tag for most of the commonly used HTML elements, but not all of them.
@@ -39,7 +40,7 @@ This is a numbered list:
 
 Markdown is meant to be kept simple, so there isn't a comprehensive Markdown tag for each HTML tag. For example, if you need `figure` elements and `figcaption` elements, you'll need to use HTML. What's nice about Markdown is that if the Markdown syntax doesn't provide the tag you need, you can just use HTML.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 ## Development by popular demand versus by committee
 
@@ -48,6 +49,8 @@ John Gruber, a blogger, created Markdown as a way to simplify HTML (see his [Mar
 {% include image_ad_right.html %}
 
 In contrast, DITA is a committee-based XML architecture derived from a committee. There aren't lots of different flavors and spinoffs of DITA based on how people customized the tags. There's an official DITA spec that is agreed upon by the DITA OASIS committee. Markdown doesn't have that kind of committee, so it evolves on its own as people choose to implement it.
+
+{% include random_ad4.html %}
 
 ## Why developers love Markdown
 

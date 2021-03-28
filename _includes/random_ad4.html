@@ -1,0 +1,24 @@
+{% if site.format == "web" %}<div class="singlePostComics">
+    <script>
+var contents=new Array()
+
+contents[0]='<div class="randomAd"><div class="bs-callout bs-callout-info bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div>Paligo lets you get the latest code samples into your documentation easily by dynamically fetching code samples from GitHub, BitBucket, and more. Update in your code repository to automatically update your docs. A single source of truth. <a rel="nofollow" href="https://paligo.net/?utm_source=idratherbewriting&utm_medium=in-line-text">Learn more at paligo.net</a>.</div></div>'
+contents[1]='<div class="randomAd"><div class="bs-callout bs-callout-success bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div>Paligo takes multi-channel publishing to another level. Besides popular output formats like HTML5, PDF, and many more, Paligo has the market leading technical documentation integration with Zendesk, as well as Salesforce and other help desk platforms. <a rel="nofollow" href="https://paligo.net/?utm_source=idratherbewriting&utm_medium=in-line-text">Learn more at paligo.net</a>.</div></div>'
+contents[2]='<div class="randomAd"><div class="bs-callout bs-callout-warning bs-callout-ad"> <div class="sponsorMessageTitle"><i>Sponsored message:</i></div>Paligo is truly a tool made for software documentation, allowing you to import from multiple sources including OpenAPI/Swagger. You can also publish directly to GitHub, BitBucket, Amazon S3 and more so it fits in your Continuous Integration (CI) pipeline. <a rel="nofollow" href="https://paligo.net/?utm_source=idratherbewriting&utm_medium=in-line-text">Learn more at paligo.net</a>.</div></div>'
+var i=0
+//variable used to contain controlled random number
+var random
+//while all of array elements haven't been cycled thru
+while (i<contents.length){
+//generate random num between 0 and arraylength-1
+random=Math.floor(Math.random()*contents.length)
+//if element hasn't been marked as "selected"
+if (contents[random]!="selected"){
+document.write(contents[random])
+//mark element as selected
+contents[random]="selected"
+break;
+}
+}
+</script>
+</div>{% endif %}

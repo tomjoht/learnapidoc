@@ -9,6 +9,7 @@ section: docendpoints
 path1: /docendpoints.html
 redirect_from:
 - https://idratherbewriting.com/learnapidoc/docapis_doc_sample_responses.html
+last-modified: 2019-05-06
 ---
 
 {% include workflow_map.html step="5" map="content/reference_doc_map.html"  %}
@@ -95,7 +96,7 @@ Other APIs will nest the response definitions to imitate the JSON structure. Her
 
 Multiple levels of bullets is usually an eyesore, but here it serves a purpose that works well without requiring sophisticated styling.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 eBay's approach is a little more unique. In this case, `MinimumAdvertisedPrice` is nested inside `DiscountPriceInfo`, which is nested in `Item`, which is nested in `ItemArray`. (Note also that this response is in XML instead of JSON.)
 
@@ -150,6 +151,8 @@ For the `surfreport/{beachId}` endpoint that we've been exploring in our [sample
 <div class="docSample">
 {% include_relative surfreport_response.html %}
 </div>
+
+{% include random_ad4.html %}
 
 ## Next steps
 

@@ -3,12 +3,14 @@ folders:
 
 - title: "I: Introduction to REST APIs"
   jurl: /docapis_introtoapis.html
-  description: "REST APIs are flourishing in the marketplace, and the web is becoming a mashup of interconnected APIs. REST APIs consist of requests to and responses from a web server. Job prospects are hot for technical writers who can write developer documentation. This course will help you break into API documentation, especially if you complete the many portfolio-building activities."
   class: first
   folderitems:
 
   - title: Course Overview
     jurl: /index.html
+
+  - title: "What's new"
+    jurl: /docapis_whats_new.html
 
   - title: Workshop video recordings
     jurl: /docapis_course_videos.html
@@ -36,7 +38,6 @@ folders:
 
 - title: "II: Using an API like a developer"
   jurl: /likeadeveloper.html
-  description: "Playing a brief role as a developer will help you understand developer needs better, as well as what developers typically look for in API documentation. Developers often use tools such as Postman or curl to make calls. They look at the structure of the response, and they dynamically integrate the needed information into web pages and other applications."
   folderitems:
 
   - title: "Scenario for using a weather API"
@@ -74,7 +75,6 @@ folders:
 
 - title: "III: Documenting API endpoints"
   jurl: /docendpoints.html
-  description: "Reference documentation for API endpoints consists of five general sections: resource descriptions, endpoints and methods, parameters, sample requests, and sample responses and schemas. To document the reference endpoints of an API, provide detailed information for each of these sections."
   folderitems:
 
   - title: "A new endpoint to document"
@@ -109,7 +109,6 @@ folders:
 
 - title: "IV: OpenAPI spec and generated reference docs"
   jurl: /restapispecifications.html
-  description: "The OpenAPI specification provides a formal way of describing your REST API and includes all the reference sections mentioned in the previous section, Documenting API endpoints. Display frameworks such as Swagger UI can parse the OpenAPI specification and generate interactive documentation that lets users try out endpoints while learning about the API."
   folderitems:
 
   - title: "Overview of REST API specification formats"
@@ -121,14 +120,9 @@ folders:
   - title: "Create an OpenAPI specification document using Stoplight Studio's visual editor"
     jurl: /pubapis_openapis_quickstart_stoplight.html
 
-  # - title: "Create an OpenAPI specification document using Readme.com"
-  #   jurl: /pubapis_readme_tutorial.html
-
     subfolders:
     - title: "Step-by-step OpenAPI tutorial"
       jurl: /openapi_tutorial.html
-      behavior: openable
-
       subfolderitems:
 
       - title: "OpenAPI tutorial using Swagger Editor and Swagger UI: Overview"
@@ -183,7 +177,6 @@ folders:
     - title: "Demos of OpenAPI outputs using different tools"
       jurl: /openapi_output_demos.html
       behavior: openable
-
       subfolderitems:
 
         - title: "Stoplight demo"
@@ -195,12 +188,8 @@ folders:
         - title: "Redoc demo"
           jurl: /pubapis_redoc.html
 
-        # - title: "Readme.com demo"
-        #   jurl: /pubapis_readme_demo.html
-
 - title: "V: Testing API docs"
   jurl: /testingdocs.html
-  description: "Testing your documentation is critical to providing accurate, thorough information. With API and developer docs, due to the high level of complexity and engineering requirements, technical writers might be inclined to simply take information that engineers give them and incorporate it wholesale, without personally testing it. Merely playing an editorial/publishing function, however, can reduce your role to that of an engineer's secretary."
   folderitems:
 
   - title: "Overview of testing your docs"
@@ -220,13 +209,12 @@ folders:
 
 - title: "VI: Conceptual topics in API docs"
   jurl: /docconceptual.html
-  description: "While reference topics in APIs generally receive the most attention, the conceptual topics, such as getting started tutorials, information about authorization, rate limiting, status and error codes, quick reference guides, and other topics constitute about half of the documentation. These topics are usually handled by technical writers more than engineers. You can evaluate the quality of API documentation in part by looking to see whether it includes these conceptual topics."
   folderitems:
 
   - title: "API conceptual topics overview"
     jurl: /docapis_conceptual_topics_overview.html
 
-  - title: "API overview"
+  - title: "API product overview"
     jurl: /docapis_doc_overview.html
 
   - title: "API getting started"
@@ -258,7 +246,6 @@ folders:
 
 - title: "VII: Code tutorials"
   jurl: /docapiscode.html
-  description: "This section covers strategies for creating code tutorials. I'm still developing out this section, so much of the content is under construction."
   folderitems:
 
   - title: "Common characteristics of code tutorials"
@@ -285,12 +272,11 @@ folders:
   - title: "API design and usability"
     jurl: /evaluating-api-design.html
 
-  - title: "Example of DevX Usability"
-    jurl: /devx-usability-example.html
+  - title: "Developer experience (DevX) usability"
+    jurl: /devx-usability-examples.html
 
 - title: "VIII: Publishing API docs"
   jurl: /publishingapis.html
-  description: "API documentation often follows a docs-as-code workflow, where the tools to author and publish documentation align closely with the same tools developers use to write, manage, build, and deploy code. Docs-as-code involves using lightweight formats such as Markdown, collaborating through Git or other version control, building your doc site with a static site generator, and deploying it through a continuous build model, where the build happens on the server when you push commits to a particular branch."
   folderitems:
 
   - title: "Overview for publishing API docs"
@@ -346,7 +332,6 @@ folders:
 
 - title: "IX: Thriving in the API doc space"
   jurl: /jobapis.html
-  description: "Getting an API documentation job and thriving requires you to demonstrate your technical aptitude through a writing portfolio. The portfolio should include samples of documentation written for developers. One way to build this portfolio is by working on an open-source project. You also need to live in a tech hub where API documentation jobs are available, such as California, Texas, New York, or Virginia. Overall, thriving in the developer documentation space requires you to continually learn a healthy dose of code, which can be challenging."
   folderitems:
 
   - title: "The job market for API technical writers"
@@ -366,7 +351,6 @@ folders:
 
 - title: "X: Native library APIs"
   jurl: /nativelibraryapis.html
-  description: "Native library APIs refer to Java, C++, or other programming-specific APIs. In this model, rather than making requests across the web for the information, you download a library of code and integrate it into your project. The library is compiled directly into your application's build (rather than accessed through web protocols as with REST APIs). Although this type of API is less common, I include it here in part to clarify what makes REST APIs so different from native library APIs."
   folderitems:
 
   - title: "Overview of native library APIs"
@@ -396,9 +380,8 @@ folders:
   - title: "Create non-ref docs with native library APIs"
     jurl: /nativelibraryapis_nonrefdocs.html
 
-- title: "XI: Documentation processes and developer portals"
-  jurl: /docapis_managing_dev_portals.html
-  description: "The process for managing developer portal documentation includes a number of different tasks outside of content development. The role of a DX (developer experience) content strategist plays a key role in defining workflows, standards, user flows, processes, and other aspects of the site. workflows for different types of documentation."
+- title: "XI: Processes and methodology"
+  jurl: /docapis_managing_doc_processes.html
   folderitems:
 
   - title: DX content strategy with developer portals
@@ -413,12 +396,44 @@ folders:
   - title: "Processes for managing SDK releases"
     jurl: /docapis_managing_sdk_releases.html
 
+  - title: Documentation kickoff meeting and product demo
+    jurl: /docapis_kickoff_meeting_agenda.html
+
   - title: "Processes for reviewing documentation"
     jurl: /docapis_review_processes.html
 
-- title: "XII: API glossary and resources"
+  - title: Processes for maintaining existing documentation
+    jurl: /docapis_doc_maintenance_processes.html
+
+  - title: Processes for collecting feedback post-release
+    jurl: /docapis_collecting_feedback_post_release.html
+
+  - title: Processes for external contributors
+    jurl: /docapis_processes_for_external_contributors.html
+
+  - title: Processes for changing internal doc culture
+    jurl: /docapis_changing_internal_doc_culture.html
+
+- title: "XIII: Metrics and measurement"
+  jurl: /docapis_metrics_and_measurement.html
+  folderitems:
+  - title: Measuring progress against documentation quality goals
+    jurl: /docapis_measuring_impact.html
+
+  - title: First-level checklist for API documentation
+    jurl: /docapis_metrics_first_level_checklist.html
+
+  - title: Second-level checklist for API documentation
+    jurl: /docapis_metrics_second_level_checklist.html
+
+  - title: Quantifying your progress
+    jurl: /docapis_metrics_quantifying_progress.html
+
+  - title: Templates for working with metrics
+    jurl: /docapis_metrics_templates.html
+
+- title: "XIV: API glossary and resources"
   jurl: /resources.html
-  description: "The API documentation landscape is full of jargon, acronyms, and many new terms. This glossary provides a list of terms and definitions. Additionally, this section contains additional exercises and information, such as more activities for calling APIs, or more info about alternative specifications."
   folderitems:
 
   - title: "API Glossary"

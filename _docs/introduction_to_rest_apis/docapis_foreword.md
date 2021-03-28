@@ -6,6 +6,7 @@ weight: 1.4
 sidebar: docapis
 section: introtoapis
 path1: /docapis_introtoapis.html
+last-modified: 2018-12-29
 ---
 
 I initially compiled this material to teach a series of workshops to a local tech writing firm in the San Francisco Bay area. They felt they either needed to train their existing technical writers on how to document APIs, or they would need to let some of their writers go. I taught a series of three workshops delivered in the evenings, spread over several weeks.
@@ -19,6 +20,8 @@ After the workshops, I put the material on my site, idratherbewriting.com, and o
 {% include random_ad2.html %}
 
 Second, I knew that through feedback, I could refine the information and make it better. Almost no content hits the mark on its first release. Instead, content needs to iterate a while through user testing and feedback. Just as this iterative review helps refine user documentation, the same principle applies to course material as well. I've given dozens of presentations and workshops on API documentation for several years now, and each time I've used the feedback to improve this content.
+
+{% include random_ad4.html %}
 
 Finally, the content would help drive traffic to my site. In fact, visits to the API documentation course pages outperform visits to my blog. I reflected on this traffic source in a blog post &mdash; see [If writing is no longer a marketable skill, what is?](https://idratherbewriting.com/2018/08/09/writing-no-longer-a-skill/) How would people discover the material if they couldn't find it online? If the material were only trapped in a print book or behind a firewall, it would be difficult to discover. Content is a rich information asset that draws traffic to any site. It's what people primarily search for online.
 
@@ -48,7 +51,7 @@ Of course, not all comments or emails are praiseworthy. Some people note problem
 
 One question I faced in preparing the content is whether I should stick with text, or combine the text with video. While video can be helpful at times, it's too cumbersome to update. Given the fast-paced, rapidly evolving nature of the technical content, videos get out of date quickly.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 Additionally, videos force the user to go at the pace of the narrator. If your skill level matches the narrator, that's great. But in my experience, videos often go too slow or too fast. In contrast, text lets you more easily skip ahead when you already know the material, or slow down when you need more time to absorb concepts.
 

@@ -6,15 +6,15 @@ weight: 1.5
 sidebar: docapis
 section: introtoapis
 path1: /docapis_introtoapis.html
+last-modified: 2021-01-18
 ---
 
-In case you'd like to know a little bit about me, I'm currently based in the San Francisco Bay area of California (the South Bay, or Silicon Valley) working at Amazon in Sunnyvale. I mainly write documentation for third-party developers creating apps for the Amazon Appstore, primarily related to Fire TV.
+In case you'd like to know a little bit about me, I'm currently based in Seattle, Washington, working for Google. (Previously, I was at Amazon and a couple of startups in the Bay area.)
 
 {% if site.format == "web" %}<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/tomjohnson.jpg" class="small" style="float: right; padding:1em;"/>
 {% else %}
 <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/tomjohnsonsmall.jpg" class="small" style="float: right; padding:1em;"/>
 {% endif %}
-
 
 Most people know me through my blog, [I'd Rather Be Writing](https://idratherbewriting.com), which has been an active online blog for tech comm for the past decade.
 
@@ -30,6 +30,8 @@ I worked as a traditional technical writer for some years, mostly documenting ap
 
 I started documenting my first API at a gamification startup and then transitioned to another semi-startup to continue with more API documentation. I was no longer working with applications that had user interfaces, and the audiences for my docs were primarily developers. Developer doc was a new landscape to navigate, with different tools, expectations, goals, and deliverables.
 
+{% include random_ad4.html %}
+
 Although I didn't have a programming background, I've always been somewhat technical. As a teacher, I created my own interactive website. As a traditional technical writer, I often set up or hacked the authoring tools and outputs. I like learning and experimenting with new technologies. The developer documentation landscape suits me well, and I enjoy it.
 
 {% include random_ad2.html %}
@@ -40,4 +42,4 @@ You're probably taking this course because you want to develop your skills and k
 
 You're in the right place. By the time you finish this course, you'll have a solid understanding of how to document APIs. You'll be familiar with the right tools, approaches, and other techniques you need to be successful with developer documentation projects.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}

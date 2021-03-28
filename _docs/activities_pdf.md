@@ -3,10 +3,10 @@ title: Activities PDF
 permalink: /activities_pdf.html
 type: pdf
 layout: printpdf
+last-modified: 2020-11-02
 ---
 
 The workshop agenda, slides, and activities correspond to full-day API workshop. The slide groups mirror the same sections in the course.
-
 
 {% if site.format == "web" %}
 
@@ -102,9 +102,13 @@ Break
 
 **Native Library APIs**
 
+{% include random_ad3.html %}
+
 ## 4:30pm - 5:15pm: Individual consulting
 
 The general workshop ends and we transition into any individual consulting as desired. If you have specific questions not addressed during the workshop, let's chat specifically about them. For all those interested, I'll write everyone's name on a board and then just meet with you individually for about 5 minutes each until everyone's questions are answered.
+
+{% include random_ad4.html %}
 
 ## Optional section
 
@@ -118,8 +122,7 @@ Optional section if time permits.
 
 {% include workshop_button.html title="Activity 10b: Find an open-source project" activity="find_open_source_project" button_type="success" %}
 
-
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 {% include random_ad2.html %}
 

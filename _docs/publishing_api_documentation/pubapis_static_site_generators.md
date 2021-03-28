@@ -10,6 +10,7 @@ redirect_from:
 - /learnapidoc/pubapis_other_tool_options.html
 - /learnapidoc/pubapis_docs_as_code_tool_options.html
 - /learnapidoc/pubapis_other_openapi_parsers.html
+last-modified: 2020-06-27
 ---
 
 Static site generators, such as Jekyll, Hugo, and Sphinx, are one of the most common authoring and publishing tools used in [docs-as-code scenarios](pubapis_docs_as_code.html). Static site generators build all the files for your website, pushing Markdown files into the layouts you define, running scripts to automate logic you need and more as they generate out HTML files. This section focuses exclusively on static site generators. In upcoming topics, I'll also explore [hosting and deployment options](pubapis_hosting_and_deployment.html) and [hybrid documentation systems](pubapis_hybrid_systems.html).
@@ -31,13 +32,15 @@ Freedom from the database model makes static site generators much more portable 
 
 Before I had my blog [idratherbewriting.com](https://idratherbewriting.com) in Jekyll, I used WordPress (and was even a WordPress consultant for five years as a side job). I can't count how many times my WordPress blog went down or had other issues. I routinely had to contact Bluehost (my web host) to find out why my site was suddenly down. I religiously made backups of the database, applied security patches and hardening techniques, optimized the database through other tools, and more. And with all of this maintenance hassle, the site was extremely slow, delivering pages in 2+ seconds instead of 0.5 seconds with Jekyll. For my many WordPress clients, I often had to troubleshoot hacked databases.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 With static site generators, when you're developing content on your local machine, you usually have web server preview (such as <code class="noExtIcon">http://127.0.0.1:4000/</code>) provided through the static site generator. Many static site generators rebuild your site continuously in the preview server each time you make a change. The time to rebuild your site could take less than a second, or if you have thousands of pages, several minutes.
 
 Because everything is compiled locally from text files, you don't need to worry about security hacks into a database. Everything is a human-readable plain text file, from the content files you write to the application code. It's also incredibly easy to work with custom code, such as special JavaScript libraries, advanced HTML, or other complex code you want to use on a page. You can author your content in Markdown or HTML, add code samples inside code blocks that are processed with a code-syntax highlighter, and more. The openness and flexibility of static site generators let you do what you want with them.
 
 Most static site generators allow you to use a templating and scripting languages, such as Liquid or Go, inside your content. You can use if-else statements, run loops, insert variables, and do a lot more sophisticated processing of your content through this templating language.
+
+{% include random_ad4.html %}
 
 Because you're working with text files, you usually store your project files (but not the built site output) in a code repository such as GitHub. You treat your content files with the same workflow as programming code &mdash; committing to the repository, pushing and pulling for updates, branching and merging, and more.
 

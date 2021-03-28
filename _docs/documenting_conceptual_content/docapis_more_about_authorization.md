@@ -5,6 +5,7 @@ weight: 6.3
 sidebar: docapis
 section: docconceptual
 path1: /docconceptual.html
+last-modified: 2019-03-30
 ---
 
 Before users can make requests with your API, they'll usually need to register for an API key or learn other ways to authenticate the requests. APIs vary in the way they authenticate users. Some APIs require you to include an API key in the request header, while other APIs require elaborate security due to the need to protect sensitive data, prove identity, and ensure the requests aren't tampered with. In this section, you'll learn more about authentication and authorization and what you should focus on in documentation.
@@ -32,6 +33,8 @@ An API might authenticate you but not authorize you to make a certain request.
 Why do APIs even need authentication? For read-only APIs, sometimes users don't need keys. But most commercial APIs do require authorization in the form of API keys or other methods. If you *didn't* have any security with your API, users could make unlimited amounts of API calls without any kind of registration. Allowing unrestricted requests would make a revenue model for your API difficult.
 
 Additionally, without authentication, there wouldn't be an easy way to associate requests with specific user data. And there wouldn't be a way to protect against requests from malicious users that might delete another user's data (such as by making DELETE requests on another's account).
+
+{% include random_ad4.html %}
 
 Finally, you couldn't track who is using your API, or what endpoints are most used. Clearly, API developers must think about ways to authenticate and authorize requests made to their API.
 
@@ -70,7 +73,7 @@ Authorization: Basic bG9sOnNlY3VyZQ==
 
 APIs that use Basic Auth will also use HTTPS, which means the message content will be encrypted within the HTTP transport protocol. (Without HTTPS, it would be easy for people to decode the username and password.)
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 When the API server receives the message, it decrypts the message and examines the header. After decoding the string and analyzing the username and password, it then decides whether to accept or reject the request.
 

@@ -7,9 +7,12 @@ weight: 4.44
 section: openapitutorial
 path1: /restapispecifications.html
 path2: /openapi_tutorial.html
+map:
+  step: 2
+  definition: content/openapi_tutorial_map.html
+last-modified: 2020-06-25
 ---
 
-{% include workflow_map.html step="2" map="content/openapi_tutorial_map.html"  %}
 {% if site.format == "pdf" or site.format == "kindle" %}
 <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapistep2.png"/>
 {% endif %}
@@ -52,13 +55,15 @@ Note that in any `description` property, you can use [CommonMark Markdown](http:
 
 For example, CommonMark markdown offers some [backslash escapes](http://spec.commonmark.org/0.27/#backslash-escapes), and it specifies exactly how many spaces you need in lists and other punctuation. You can also break to new lines with `\n` and escape problematic characters like quotation marks or colons with a backslash.
 
-{% include random_ad.html %}
+{% include random_ad1.html %}
 
 As you write content in `description` properties, note that colons are problematic in YAML because they signify new levels. Either enclose the `description` value in quotation marks or escape colons with a backslash. (If you enclose the values in quotation marks, syntax highlighters in text editors can display better color coding between the properties and values.)
 
 {% include random_ad2.html %}
 
 ## Update your file in Swagger Editor
+
+{% include random_ad4.html %}
 
 To update the spec file in Swagger Editor:
 
