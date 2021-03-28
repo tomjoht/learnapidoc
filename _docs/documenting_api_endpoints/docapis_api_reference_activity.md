@@ -12,7 +12,8 @@ After completing the [API reference tutorial](docapis_api_reference_tutorial_ove
 
 {% include random_ad4.html %}
 
-In this activity, you'll evaluating some API reference topics to identify issues.
+In this activity, you'll evaluate some API reference topics to identify issues.
+
 
 * TOC
 {:toc}
