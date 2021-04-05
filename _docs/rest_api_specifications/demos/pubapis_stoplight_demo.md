@@ -19,7 +19,7 @@ Here I include a short demo of how Stoplight renders the OpenAPIWeatherMap OpenA
 
 {% include random_ad4.html %}
 
-<a href="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_demo_personal.png"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_demo_personal.png" alt="Stoplight API doc example" /></a>
+<a href="https://idratherbewriting.stoplight.io/docs/openweathermap3/reference/openweathermap.v1.yaml/paths/~1weather/get"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_tutorial_end_goal.png" alt="Final output from Stoplight tutorial" /></a>
 
 {% include random_ad1.html %}
 
