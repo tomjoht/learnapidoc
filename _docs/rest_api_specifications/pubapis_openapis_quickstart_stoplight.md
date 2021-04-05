@@ -36,21 +36,23 @@ Before we begin the tutorial, note the following:
 
 * Stoplight Studio isn't the only GUI editor for creating OpenAPI specifications. You can also use [OpenAPI-GUI](https://mermade.github.io/openapi-gui/), [Apibldr](https://apibldr.com/), [SwaggerHub's visual editor](https://app.swaggerhub.com/help/ui/visual-editor), and others.
 * Although Stoplight has a commercial offering, their editor is free. In general, you can use the editor to create a valid specification and then choose the tool you want to use to render it (e.g., Stoplight, Redoc, Spectacle, Swagger UI, or some other display framework). My point is this: once you have a valid OpenAPI specification, the spec can be rendered by many different frameworks.
-* Stoplight's platform gives you a nice path toward more comprehensive documentation, including not only API reference content but also [conceptual documentation](docconceptual.html) and [tutorial content](docapiscode.html). This lets you create a more seamless documentation experience for your readers across many different types of content.
+* Stoplight's platform gives you a nice path toward more comprehensive documentation, including not only API reference content but also [conceptual documentation](docconceptual.html) and [tutorial content](docapiscode.html). This lets you create a more seamless documentation experience for your readers across many different types of content. (This tutorial will only cover creating API reference docs, though.)
 * In this tutorial, we'll use sample information from the [OpenWeatherMap API](https://openweathermap.org/api) (more specifically, the [Current weather data endpoint](https://openweathermap.org/current)), which is the same API we've been using in this course uses in other areas, such as the [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html).
 * Stoplight is one of the sponsors of my site. I would still recommend this approach regardless of any site sponsorship. It makes sense to use an editor when your content must conform to a highly technical syntax.
 * For full Stoplight documentation, see the [Stoplight Studio documentation](https://stoplight.io/p/docs/gh/stoplightio/studio).
 
-## Which version of Stoplight Studio?
+## What you'll build
 
-Stoplight offers both a [web app](https://stoplight.io/p/studio) and a [desktop app](https://stoplight.io/studio) (Mac, Windows, or Linux). In this tutorial, you will use the web app version of Stoplight Studio because only the web app gives you the ability to publish your content online and try out requests (see [Studio Desktop vs. Studio Web](https://stoplight.io/p/docs/gh/stoplightio/studio/docs/Basics/web-vs-desktop-app.md) for more on the difference). However, you could also use the desktop app if desired (such as for scenarios where you're working with private, unreleased data).
+Here's a screenshot of what you'll build in this tutorial:
+
+<a href="https://idratherbewriting.stoplight.io/docs/openweathermap3/reference/openweathermap.v1.yaml/paths/~1weather/get"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_tutorial_end_goal.png" alt="Final output from Stoplight tutorial" /></a>
 
 {% include random_ad4.html %}
 
 ## Set up a project in Stoplight Studio
 
 {: .note}
-Stoplight provides a variety of options for working with projects -- desktop editor versus web editor, syncing from GitHub or saving directly to Stoplight. In this tutorial, I take the simplest path, but recognize that you have more options. See [Working with Projects](https://meta.stoplight.io/docs/studio/docs/Basics/01-working-with-projects.md).
+Stoplight provides a variety of options for working with projects &mdash; desktop editor versus web editor, syncing from GitHub or saving directly to Stoplight. In this tutorial, I take the simplest path using the web editor, but recognize that you have more options. See [Working with Projects](https://meta.stoplight.io/docs/studio/docs/Basics/01-working-with-projects.md).
 
 1.  Go to [https://stoplight.io/studio/](https://stoplight.io/studio/) and click **On the Web**.
 2.  Follow the on-screen instruction to create a workspace, and then sign into it, authenticating with one of the ID options.
