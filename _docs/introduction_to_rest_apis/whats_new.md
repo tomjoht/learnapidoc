@@ -23,7 +23,7 @@ Here are pages that I've recently updated. This list is auto-generated based on 
 <th>Page</th>
 </tr>
 
-{% assign timeframe = 2419200 %}
+{% assign timeframe = 12096000 %}
 {% assign count = 0 %}
 
 {% for post in site.docs %}
@@ -41,6 +41,8 @@ Here are pages that I've recently updated. This list is auto-generated based on 
 {% endif %}
 {% endfor %}
 </table>
+
+
 
 {% include random_ad1.html %}
 
