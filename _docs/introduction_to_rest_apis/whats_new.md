@@ -23,7 +23,7 @@ Here are pages that I've recently updated. This list is auto-generated based on 
 <th>Page</th>
 </tr>
 
-{% assign timeframe = 12096000 %}
+{% assign timeframe = 5184000 %}
 {% assign count = 0 %}
 
 {% for post in site.docs %}
