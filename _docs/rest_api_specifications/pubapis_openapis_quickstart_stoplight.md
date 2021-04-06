@@ -8,7 +8,7 @@ section: restapispecifications
 path1: /restapispecifications.html
 redirect_from:
 - /learnapidoc/stoplight_studio_tutorial.html
-last-modified: 2021-04-05
+last-modified: 2021-04-06
 ---
 
 You can create an OpenAPI specification document in several ways: (a) you can auto-generate it from annotations in your source code, (b) you can code it by hand in an editor such as the Swagger Editor, and (c) you can use a GUI editor such as Stoplight Studio. In this tutorial, I'll walk through the third approach: using Stoplight Studio, a GUI editor for modeling your API,  to create a valid OpenAPI specification, using the OpenWeatherMap as the sample API.
@@ -83,6 +83,10 @@ Stoplight provides a variety of options for working with projects &mdash; deskto
     (The code includes some sample content for some fictitious user endpoints called `/users/{userid}` and `/user`.)
 
     You could simply paste in a valid OpenAPI spec into the Code editor. Actually, you can work directly in the Code or the Form editor &mdash; both edits will bidirectionally sync. But presumably you don't already have an OpenAPI spec to paste into the code &mdash; this is why you're using the editor, to build out the specification document.
+
+7.  You can seamlessly switch between Form and Code views. Try adding a word in the Form view, switch to the Code view and find it, then remove it from the Code view and see how it updates in the Form view. Here's a short video clip showing this:
+
+    <iframe width="640" height="385" src="https://www.youtube.com/embed/ngTq3aGZFVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 7.  Click the **Preview** button in the upper-right corner to see what the content would look like when published:
 
@@ -370,7 +374,10 @@ To enter the response information in Stoplight Studio:
     </div>
 
 4.  Paste in the copied JSON into the gray area where it says "Paste or write a JSON example below..." (Remove the empty curly braces `{}` first, and then paste in your sample.)
-5.  Click **Generate from JSON**. Stoplight builds the schema for you!
+5.  Click **Generate from JSON**. Stoplight builds the schema for you! Here's a short video clip showing this:
+
+    <iframe width="640" height="385" src="https://www.youtube.com/embed/0d-iO9WW1l4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 6.  Add some more detail about the response elements:
 
     1. Click the **Description** button <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_description_button.png" alt="Description button" /> next to each property and add a description.

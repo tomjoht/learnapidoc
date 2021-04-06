@@ -84,7 +84,7 @@ Activity 4b: Create an OpenAPI specification using Stoplight Studio
 </button>
 <div class="collapse" id="stoplight_tutorial">
 <div class="card card-body" markdown="block">
-For this this activity, see this topic: [Create a OpenAPI specification using a visual editor (Stoplight Studio)](pubapis_openapis_quickstart_stoplight.html). Due to the length fo the topic, I haven't embedded it here.
+For this this activity, see this topic: [Create an OpenAPI specification document using Stoplight Studio's visual editor](pubapis_openapis_quickstart_stoplight.html). Due to the length fo the topic, I haven't embedded it here.
 </div>
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: Stoplight &mdash; visual modeling tools for creating your OpenAPI spec
+title: "Stoplight: visual modeling tools for creating your OpenAPI spec"
 permalink: pubapis_stoplight.html
 course: "Documenting REST APIs"
 sidebar: docapis
@@ -38,9 +38,9 @@ I also started playing around with Stoplight. I was curious to see whether the v
 
 Stoplight's visual modeling tools eliminate the need to be familiar with the format of the OpenAPI specification. You don't have to know the data type for each property, whether the property needs to be nested or defined directly and so forth. That level of complexity has been abstracted away in a GUI for designing your API.
 
-{% include course_image.html url="https://next.stoplight.io/" size="large" border="true" filename="stoplightappinterface" ext_print="png" ext_web="png" alt="Stoplight app interface" caption="Stoplight provides visual modeling tools to describe your API. The screenshot above shows the UI for documenting parameters. Stoplight's UI produces a valid OpenAPI specification document, which is then used to drive other API services and activities on their site." %}
+{% include course_image.html url="https://stoplight.io/studio/" size="large" border="true" filename="stoplight_parameter_info2" ext_print="png" ext_web="png" alt="Stoplight app interface" caption="Stoplight provides visual modeling tools to describe your API. The screenshot above shows the UI for documenting parameters. Stoplight's UI produces a valid OpenAPI specification document, which is then used to drive other API services and activities on their site." %}
 
-As part of the visual modeling tools, Stoplight's interface for describing JSON schemas (used in request bodies or responses) is especially welcome. Details about how to document JSON schemas aren't fully described in the OpenAPI spec, so they can be particularly tricky. What's especially neat about Stoplight is that you can paste in a chunk of JSON and it will automatically describe the JSON in the right syntax for you. You do this using the **Generate from JSON** button, as I've demonstrated in this short video:
+As part of the visual modeling tools, Stoplight's interface for describing JSON schemas (used in request bodies or responses) is especially welcome. Details about how to document JSON schemas aren't fully described in the OpenAPI spec, so they can be particularly tricky. What's especially neat about Stoplight is that you can paste in a chunk of JSON and it will automatically describe the JSON in the right syntax for you. You do this using the **Generate from JSON** button. For more details, see this section in the Stoplight getting started tutorial: [Step 5: Enter the responses and response schema information](pubapis_openapis_quickstart_stoplight.html#responses). Here's a short video clip showing this auto-generation:
 
 {% if site.format == "kindle" or site.format == "pdf" %}
 
@@ -48,21 +48,18 @@ As part of the visual modeling tools, Stoplight's interface for describing JSON 
 This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/pubapis_stoplight.html to view the content.
 {% elsif site.format == "web" %}
 
-<p><figure><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/0IOWY0Hj3Xc?ecver=2" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div><figcaption>Describing the JSON format in the responses can be especially tricky. Stoplight's visual modeling tools are especially helpful here because they allow you to automatically create the correct JSON schema definition from a block of JSON that you paste into the editor.</figcaption></figure></p>
+<p><figure><iframe width="640" height="385" src="https://www.youtube.com/embed/0d-iO9WW1l4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><figcaption>Describing the JSON format in the responses can be especially tricky. Stoplight's visual modeling tools are especially helpful here because they allow you to automatically create the correct JSON schema definition from a block of JSON that you paste into the editor.</figcaption></figure></p>
 {% endif %}
 
-Additionally, you can toggle between the visual tools and the specification code easily. If you want to work in the code, your changes will update the content in the UI as well. The two sync perfectly when you make updates in either mode. Here's a short video I made showing this synchronization:
+Additionally, you can toggle between the visual tools (the Form view) and the specification code (the Code view) easily. If you want to work in the code, your changes will update the content in the UI as well. The two sync perfectly when you make updates in either mode. Here's a short video I made showing this bidirectional synchronization:
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-
-{: .note}
 
 {: .note}
 This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/pubapis_stoplight.html to view the content.
 {% elsif site.format == "web" %}
 
-<p><figure>
-<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/vqDJBa-haYs" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div><figcaption>When you switch to the code view, the editor automatically goes to the part of the spec you were creating in the visual editor and highlights it. When you switch back, the visual UI updates with any changes you made in the code. Switching between modes is seamless and easy.</figcaption></figure></p>
+<p><figure><iframe width="640" height="385" src="https://www.youtube.com/embed/ngTq3aGZFVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><figcaption>When you switch to the code view, the editor automatically goes to the part of the spec you were creating in the visual editor and highlights it. When you switch back, the visual UI updates with any changes you made in the code. Switching between modes is seamless and easy.</figcaption></figure></p>
 {% endif %}
 
 ## Not just simpler tools, but a design-first philosophy
@@ -80,7 +77,7 @@ Building the specification document is probably the most important activity in A
 
 {% include image_ad_right.html %}
 
-If the OpenAPI specification really powers all of these other activities, doesn't it make sense to build your platform around the specification? And from a larger view, to build your business around the specification? That's what Stoplight is doing. It's what makes them fundamentally different from other API platforms. I think it's what Kin Lane meant when he said Stoplight provides "new way to look at the API life cycle &mdash; a perspective that spans multiple dimensions, including design, definition, virtualization, documentation, testing, discovery, orchestration, and client."
+If the OpenAPI specification really powers all of these other activities, doesn't it make sense to build your platform around the specification? And from a larger view, to build your business around the specification? That's what Stoplight is doing. It's what makes them fundamentally different from other API platforms. I think it's what Kin Lane meant when he said Stoplight provides "new way to look at the API life cycle &mdash; a perspective that spans multiple dimensions, including design, definition, virtualization, documentation, testing, discovery, orchestration, and client." From a technical writer's perspective, this puts documentation as the center of API development activities.
 
 ## Not a post-design artifact to generate documentation
 
@@ -100,17 +97,15 @@ To counter poor practices with *spec-last* development, Lane says more and more 
 
 In a design-first model, technical writers can also insert themselves early in on the API design process, providing input about the shape and model of the API at a time when their input might get traction. Once the API gets coded by developers, it's hard enough to change a parameter name, much less the parameter itself.
 
+{% include random_ad3.html %}
+
 ## Documentation hosting features on Stoplight
 
 In addition to putting the OpenAPI specification at the center of the API lifecycle process, Stoplight has some other features of particular interest to technical writers. Stoplight offers a hosted docs solution, where you can integrate your conceptual content (the tutorials, guides, and other how-to's) with the reference API docs. Here's a sample page from Stoplight for a product called [Shopgate](https://developer.shopgate.com/).
 
-{% include random_ad3.html %}
-
 {% include course_image.html url="https://developer.shopgate.com/references/cart-integration/merchant-api/order/get-orders"   filename="shopgate" ext_print="png" ext_web="png" alt="Sample page from the Shopgate Developer Center, which uses Stoplight to generate their API documentation" caption="Sample page from the Shopgate Developer Center, which uses Stoplight to generate their API documentation" %}
 
-Note that you can integrate your reference and conceptual documentation in Stoplight's hosted doc solution. Integrating these two content types has been a longtime challenge for tech writers in the API doc space. (For more on integration challenges with API documentation, see [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).)
-
-Stoplight also allows you to create variables to use in *both* your specification and your how-to docs. Stoplight plans to take re-use one step further by allowing re-use of your [spec's component definitions](pubapis_openapi_step5_components_object.html) in your [conceptual documentation](docconceptual.html) as well. (But this feature is still forthcoming.)
+Note that you can integrate your [reference documentation](docendpoints.html) and [conceptual documentation](docconceptual.html) in Stoplight's hosted doc solution. Integrating these two content types has been a longtime challenge for tech writers in the API doc space. (For more on integration challenges with API documentation, see [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).)
 
 {% include random_ad1.html %}
 
@@ -120,4 +115,4 @@ If you're documenting an API, [Stoplight](https://stoplight.io) and their [hoste
 
 ## Stoplight tutorial
 
-For an in-depth tutorial for using Stoplight to create an OpenAPI specification, including sample content and values, see [Create a OpenAPI specification using a visual editor (Stoplight Studio)](pubapis_openapis_quickstart_stoplight.html).
+For an in-depth tutorial for using Stoplight to create an OpenAPI specification, including sample content and values, see [Create an OpenAPI specification document using Stoplight Studio's visual editor](pubapis_openapis_quickstart_stoplight.html).

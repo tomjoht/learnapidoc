@@ -10,7 +10,7 @@ path2: /openapi_tutorial.html
 map:
   step: 5
   definition: content/openapi_tutorial_map.html
-last-modified: 2020-09-07
+last-modified: 2021-04-06
 ---
 
 {% if site.format == "pdf" or site.format == "kindle" %}
@@ -611,21 +611,7 @@ The `schema` object in 3.0 differs slightly from the schema object in 2.0 &mdash
 
 ## A way to cheat -- automatically generate the schema from JSON using Stoplight
 
-Describing a JSON response can be complicated and confusing. Fortunately, there's a somewhat easy workaround. To be honest, this is the approach I use when I'm documenting JSON responses. Download [Stoplight](https://next.stoplight.io/) and use the **Generate JSON** feature to have Stoplight automatically create the OpenAPI schema description. Here's a short (silent) video showing how to do this:
-
-{% if site.format == "pdf" or site.format == "kindle" %}
-
-To view this video, go to [https://idratherbewriting.com/learnapidoc/pubapis_openapi_step5_components_object.html](https://idratherbewriting.com/learnapidoc/pubapis_openapi_step5_components_object.html).
-
-{% elsif site.format == "web" %}
-
-<iframe width="640" height="385" src="https://www.youtube.com/embed/0IOWY0Hj3Xc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-{% endif %}
-
-Basically, you copy the JSON response you want to document into the Stoplight Editor. Then you click **Generate JSON**. Go into the code view and copy the JSON. Then convert the JSON to YAML using an [online converter](https://www.json2yaml.com/). For more details, see [Stoplight — visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html).
-
-The only catch is that Stoplight uses OpenAPI 2.0, not 3.0. You might need to use [API Transformer](https://apimatic.io/transformer) to convert the 2.0 schema output to 3.0. Even so, this approach can save you a lot of time.
+Describing a JSON response can be complicated and confusing. Fortunately, there's a somewhat easy workaround. To be honest, this is the approach I use when I'm documenting JSON responses. With the Stoplight Studio Editor, you can automatically generate the specification schema syntax from a sample response. See this section in the Stoplight getting started tutorial: [Step 5: Enter the responses and response schema information](pubapis_openapis_quickstart_stoplight.html#responses).
 
 ## Using GUI editors to work with the specification code
 

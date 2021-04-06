@@ -7,7 +7,7 @@ weight: 4.92
 section: openapi_output_demos
 path2: /openapi_output_demos.html
 path1: /restapispecifications.html
-last-modified: 2021-02-08
+last-modified: 2021-04-06
 ---
 
 I've provided information about Stoplight in two other places in this course:
@@ -17,9 +17,7 @@ I've provided information about Stoplight in two other places in this course:
 
 Here I include a short demo of how Stoplight renders the OpenAPIWeatherMap OpenAPI specification. Following the same API we've been using in this course, here's what the /weather endpoint looks like in Stoplight:
 
-{% include random_ad4.html %}
-
-<a href="https://idratherbewriting.stoplight.io/docs/openweathermap3/reference/openweathermap.v1.yaml/paths/~1weather/get"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_tutorial_end_goal.png" alt="Final output from Stoplight tutorial" /></a>
+<a class="NoCrossRef" href="https://idratherbewriting.stoplight.io/docs/openweathermap3/reference/openweathermap.v1.yaml/paths/~1weather/get"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_tutorial_end_goal.png" alt="Final output from Stoplight tutorial" /></a>
 
 {% include random_ad1.html %}
 
@@ -37,5 +35,7 @@ This sample API doesn't include many endpoints, so it might be more instructive 
 {% include random_ad3.html %}
 
 Note that Stoplight lets you mix both the API reference documentation along with the conceptual content, so it provides a more seamless experience across all of your documentation.
+
+{% include random_ad4.html %}
 
 {% include random_ad2.html %}
