@@ -42,7 +42,17 @@ Here are pages that I've recently updated. This list is auto-generated based on 
 {% endfor %}
 </table>
 
+To see what's been updated on the page, click the GitHub button next to the timestamp on the page:
 
+<img style="max-width: 500px" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/github_button_whats_new.png" alt="GitHub button" />
+
+This takes you to the file in GitHub. In GitHub, click the History link:
+
+<img style="max-width: 500px" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/github_history_view.png" alt="GitHub History" />
+
+Then click the commit IDs to browse file diffs for the commits that include the file:
+
+<img style="max-width: 500px" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/github_commit_ids.png" alt="GitHub commit IDs" />
 
 {% include random_ad1.html %}
 
@@ -54,7 +64,7 @@ https://stackoverflow.com/questions/46672231/in-jekyll-how-to-show-posts-from-la
 
 {% include random_ad2.html %}
 
-On my blog, I often write announcement-style posts after adding new content on my API course. You can browse these [API doc site updates here](/category-apidoc-site-updates/).
+On my blog, I often write announcement-style posts after adding new content on my API course. I tag these with "api-doc" &mdash; you can browse these [API doc site updates here](/category-apidoc-site-updates/).
 
 ## Recent commits in GitHub
 
