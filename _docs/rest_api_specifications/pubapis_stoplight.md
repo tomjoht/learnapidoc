@@ -9,7 +9,7 @@ path1: /openapi_output_demos.html
 last-modified: 2020-06-27
 ---
 
-Earlier in the course, you might have followed the tutorial for [Create an OpenAPI specification document using Stoplight Studio's visual editor](pubapis_openapis_quickstart_stoplight.html), which uses Stoplight Studio. As a GUI editor for creating an OpenAPI, Stoplight Studio simplifies the authoring of a highly technical syntax that is often challenging to make valid. Now let's dive a bit deeper into the offerings and philosophy of Stoplight.
+Earlier in the course, you might have followed the tutorial for [Getting started tutorial: Using Stoplight Studio to create an OpenAPI specification document](pubapis_openapis_quickstart_stoplight.html), which uses Stoplight Studio. As a GUI editor for creating an OpenAPI, Stoplight Studio simplifies the authoring of a highly technical syntax that is often challenging to make valid. Now let's dive a bit deeper into the offerings and philosophy of Stoplight.
 
 {% include random_ad4.html %}
 
@@ -115,4 +115,4 @@ If you're documenting an API, [Stoplight](https://stoplight.io) and their [hoste
 
 ## Stoplight tutorial
 
-For an in-depth tutorial for using Stoplight to create an OpenAPI specification, including sample content and values, see [Create an OpenAPI specification document using Stoplight Studio's visual editor](pubapis_openapis_quickstart_stoplight.html).
+For an in-depth tutorial for using Stoplight to create an OpenAPI specification, including sample content and values, see [Getting started tutorial: Using Stoplight Studio to create an OpenAPI specification document](pubapis_openapis_quickstart_stoplight.html).

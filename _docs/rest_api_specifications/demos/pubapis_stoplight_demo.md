@@ -12,7 +12,7 @@ last-modified: 2021-04-06
 
 I've provided information about Stoplight in two other places in this course:
 
-* [Create an OpenAPI specification document using Stoplight Studio's visual editor](pubapis_openapis_quickstart_stoplight.html)
+* [Getting started tutorial: Using Stoplight Studio to create an OpenAPI specification document](pubapis_openapis_quickstart_stoplight.html)
 * [Stoplight — visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html)
 
 Here I include a short demo of how Stoplight renders the OpenAPIWeatherMap OpenAPI specification. Following the same API we've been using in this course, here's what the weather endpoint looks like in Stoplight:

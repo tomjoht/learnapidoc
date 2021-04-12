@@ -117,7 +117,7 @@ folders:
   - title: "Introduction to the OpenAPI specification"
     jurl: /pubapis_openapi_intro.html
 
-  - title: "Create an OpenAPI specification document using Stoplight Studio's visual editor"
+  - title: "Getting started tutorial: Using Stoplight Studio to create an OpenAPI specification document"
     jurl: /pubapis_openapis_quickstart_stoplight.html
 
     subfolders:
@@ -161,7 +161,7 @@ folders:
   - title: "Swagger UI tutorial"
     jurl: /pubapis_swagger.html
 
-  - title: "Stoplight: visual modeling tools for creating your spec"
+  - title: "Stoplight: Visual modeling tools for creating your spec"
     jurl: /pubapis_stoplight.html
 
   - title: "SwaggerHub introduction and tutorial"
