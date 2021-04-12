@@ -8,10 +8,10 @@ section: restapispecifications
 path1: /restapispecifications.html
 redirect_from:
 - /learnapidoc/stoplight_studio_tutorial.html
-last-modified: 2021-04-06
+last-modified: 2021-04-12
 ---
 
-You can create an OpenAPI specification document in several ways: (a) you can auto-generate it from annotations in your source code, (b) you can code it by hand in an editor such as the Swagger Editor, and (c) you can use a GUI editor such as Stoplight Studio. In this tutorial, I'll walk through the third approach: using Stoplight Studio, a GUI editor for modeling your API,  to create a valid OpenAPI specification, using the OpenWeatherMap as the sample API.
+You can create an OpenAPI specification document in several ways: (a) you can auto-generate it from annotations in your source code, (b) you can code it by hand in an editor such as the Swagger Editor, and (c) you can use a GUI editor such as Stoplight Studio. In this tutorial, we will walk through the third approach: using Stoplight Studio, a GUI editor for modeling your API. We will create a valid OpenAPI specification, using the OpenWeatherMap as the sample API.
 
 For a higher-level introduction to the Open API, see [Introduction to the OpenAPI specification](pubapis_openapi_intro.html). For a more conceptual introduction to Stoplight Studio is available here: [Stoplight — visual modeling tools for creating your OpenAPI spec](pubapis_stoplight.html).
 
@@ -20,24 +20,28 @@ For a higher-level introduction to the Open API, see [Introduction to the OpenAP
 
 ## Using a visual editor
 
-When creating your OpenAPI specification document, why should you use a visual/GUI editor, which hides the code (unless you toggle the view open) instead of coding every detail of the spec by hand?
+Before we get started, let's address an initial question about the approach we're taking. When creating your OpenAPI specification document, why should you use a visual/GUI editor, which hides the code (unless you toggle the view open) instead of coding every detail of the spec by hand?
 
-All approaches have their merits. But if you don't work with the OpenAPI specification enough to remember all the fields and syntax for each property, or if you're learning it for the first time, trying to get the syntax valid in the raw code can be challenging. Coding it by hand leads to many errors and forces you to spend a lot of time troubleshooting why the syntax is invalid.
+All approaches have their merits. But if you don't work with the OpenAPI specification enough to remember all the fields and syntax for each property, or if you're learning it for the first time, trying to get the syntax valid in the raw code can be challenging. Coding by hand leads to many errors and forces you to spend a lot of time troubleshooting invalid syntax.
 
-Using an editor helps you avoid these errors and focus instead on the content. The less time you spend fiddling with syntax and more time fiddling on content, the better the documentation's outcome. For more on this philosophy (of not getting lost in the syntactical details of the spec, but instead focusing on content), read this post by Phil Sturgeon, who says Stoplight Studio is "an absolute game changer for API Design, and something I've been waiting for since I found out about it somewhere in 2018" ([Reinventing API Design with Stoplight Studio](https://phil.tech/2019/08/22/reinventing-api-design-stoplight-studio/)).
+Using an editor helps you avoid these errors and focus instead on the content. The less time you spend fiddling with syntax and more time fiddling on content, the better the outcome of the documentation. For more on the philosophy of not getting lost in the syntactical details of the spec, but instead focusing on content, read this post by Phil Sturgeon, who says Stoplight Studio is "an absolute game changer for API Design, and something I've been waiting for since I found out about it somewhere in 2018" ([Reinventing API Design with Stoplight Studio](https://phil.tech/2019/08/22/reinventing-api-design-stoplight-studio/)).
+
+As a technical writer who likes working in Markdown and other raw formats, I can see the appeal of working directly in the code. But the OpenAPI syntax is quite complex, and YAML is fussy. I'd rather be worrying more about the content than addressing syntax questions. But even so, Stoplight lets you switch into the code view to work in that mode when you want, and switch back into the visual view when you want. This gives you the best of both worlds.
 
 ## Before we begin
 
 Before we begin the tutorial, note the following:
 
-* Stoplight Studio isn't the only GUI editor for creating OpenAPI specifications. You can also use [OpenAPI-GUI](https://mermade.github.io/openapi-gui/), [Apibldr](https://apibldr.com/), [SwaggerHub's visual editor](https://app.swaggerhub.com/help/ui/visual-editor), and others. However, I think Stoplight's editor is one of the most mature and user-friendly.
-* Although Stoplight has a commercial offering, their editor is free. In general, you can use the editor to create a valid specification and then choose the tool you want to use to render it (e.g., Stoplight, Redoc, Spectacle, Swagger UI, or some other display framework). You can also publish directly on Stoplight as a host for your documentation. My point is this: Once you have a valid OpenAPI specification, you have a variety of publishing options.
-* Stoplight's platform gives you a nice path toward more comprehensive documentation, including not only API reference content but also [conceptual documentation](docconceptual.html) and [tutorial content](docapiscode.html). In short, you can create markdown files [similar to Stoplight Studio's documentation](https://meta.stoplight.io/docs/studio/README.md). Their platform lets you create a more seamless documentation experience for your readers across many different types of content. (This tutorial will only cover creating API reference content, though.)
-* Full disclaimer: Stoplight is one of the sponsors of my site. I would still recommend this approach regardless of any site sponsorship. It makes sense to use an editor when your content must conform to a highly technical syntax.
+* Stoplight Studio isn't the only GUI editor for creating OpenAPI specifications. You can also use [OpenAPI-GUI](https://mermade.github.io/openapi-gui/), [Apibldr](https://apibldr.com/), [SwaggerHub's visual editor](https://app.swaggerhub.com/help/ui/visual-editor), and others. (However, I think Stoplight's editor is one of the most mature and user-friendly.)
+* Although Stoplight has a commercial offering, their editor and documentation publishing are free (the [free tier](https://stoplight.io/pricing/) includes 2 projects and 3 authors). But in general, just because you're using the Stoplight Studio editor here, it doesn't mean you're wed to their documentation outputs. You can use the Stoplight Studio editor to create a valid specification, export it, and then choose the tool you want to use to render it (e.g., Stoplight, Redoc, Spectacle, Swagger UI, or some other display framework).
+* Stoplight's platform gives you a nice path toward more comprehensive documentation, including not only API reference content but also [conceptual documentation](docconceptual.html) and [tutorial content](docapiscode.html). In short, you can create Markdown files [similar to Stoplight Studio's documentation](https://meta.stoplight.io/docs/studio/README.md). Their platform lets you create a more seamless documentation experience for your readers across many different types of content, providing you with a complete publishing solution &mdash; not just a way to create reference content. (This tutorial will only cover creating API reference content, though.)
+* This tutorial should take about 30 minutes to an hour. No special technical knowledge is required.
+
+**Full disclaimer:** Stoplight is one of the sponsors of my site. I would still recommend this approach regardless of any site sponsorship. It makes sense to use an editor when your content must conform to a highly technical syntax.
 
 ## What you'll build
 
-In this tutorial, we'll use sample information from the [OpenWeatherMap API](https://openweathermap.org/api) (more specifically, the [Current weather data endpoint](https://openweathermap.org/current)), which is the same API we've been using in this course uses in other areas, such as the [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html).
+In this tutorial, we'll use sample information from the [OpenWeatherMap API](https://openweathermap.org/api) (more specifically, the [Current weather data endpoint](https://openweathermap.org/current)), which is the same API we've been using in other tutorials, such as the [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html).
 
 Here's the [documentation output](https://idratherbewriting.stoplight.io/docs/openweathermap3/reference/openweathermap.v1.yaml/paths/~1weather/get) that you'll build in this tutorial:
 
@@ -54,7 +58,7 @@ The tutorial has the following steps:
 
 {% include random_ad4.html %}
 
-Stoplight provides a variety of options for working with projects &mdash; desktop editor versus web editor, and syncing from GitHub or saving directly to a Stoplight workspace. In this tutorial, I take the simplest path: using the web editor and saving to the Stoplight workspace. But recognize that you have more options. See [Working with Projects](https://meta.stoplight.io/docs/studio/docs/Basics/01-working-with-projects.md) for more details.
+Stoplight provides a variety of options for working with projects &mdash; desktop editor versus web editor, and syncing from GitHub or saving directly to a Stoplight workspace. In this tutorial, I take the simplest path: using the web editor and saving to the Stoplight workspace. But recognize that you have more options for how you approach projects. See [Working with Projects](https://meta.stoplight.io/docs/studio/docs/Basics/01-working-with-projects.md) for more details.
 
 ## Step 1: Set up a project in Stoplight Studio {#setup}
 
@@ -82,7 +86,7 @@ Stoplight provides a variety of options for working with projects &mdash; deskto
 
     (The code includes some sample content for some fictitious user endpoints called `/users/{userid}` and `/user`.)
 
-    You could simply paste in a valid OpenAPI spec into the Code editor. Actually, you can work directly in the Code or the Form editor &mdash; both edits will bidirectionally sync. But presumably you don't already have an OpenAPI spec to paste into the code &mdash; this is why you're using the editor, to build out the specification document.
+    You could simply paste in a valid OpenAPI spec into the Code view, and it would populate the Form view. But presumably you don't already have an OpenAPI spec to paste into the code &mdash; this is why you're using the editor, to build out the specification document.
 
 7.  You can seamlessly switch between Form and Code views. Try adding a word in the Form view, switch to the Code view and find it, then remove it from the Code view and see how it updates in the Form view. Here's a short video clip showing this:
 
@@ -96,6 +100,9 @@ Stoplight provides a variety of options for working with projects &mdash; deskto
 
 7.  Click the **Form** button to switch back to the Form view.
 
+{: .tip}
+In Stoplight's next release (scheduled for April 19, 2021), multiple users will be able to collaborate in the same project at the same time, just like a Google Docs experience. You will see their name, cursor, and their user icon in Studio in real time, allowing for better collaboration on API design.
+
 ## Step 2: Enter the API overview information {#overview}
 
 To get started, populate the fields in the API Overview section (this includes the version, name, description, security, contact, license, and other general details). For this tutorial, I've prepared sample information for you to easily insert into the Stoplight Editor. (Note that, in the sample information in the orange expandable buttons, for fields that don't have names, I put the assumed titles of these fields in [brackets].)
@@ -103,7 +110,7 @@ To get started, populate the fields in the API Overview section (this includes t
 To populate the API overview:
 
 1.  In the Stoplight Studio sidebar, click **API Overview.**
-2.  Enter information each of the form fields using information provided in the orange button below:
+2.  Enter information in each of the form fields using information provided in the orange button below:
 
     <button type="button" class="btn btn-warning" onclick="$('#general_api_info').toggle( 'fast' )">Sample API Overview information &raquo;</button>
     <div id="general_api_info" markdown="block" class="expandedBox" aria-expanded="false" style="display: none;">
@@ -310,8 +317,6 @@ This endpoint in the OpenWeatherMap API doesn't have any path, header, or body p
 
 As a final step for this endpoint, you need to enter the response information. The response includes not only an example response but also the schema describing the response. The schema describes all possible values in the response, their data types, and whether the values are required.
 
-Here you'll experience one of the coolest features in the Stoplight Studio editor, and one reason why I like this editor so much. The editor will automatically build out the response schema from a sample JSON response.
-
 To enter the response information in Stoplight Studio:
 
 1.  Below the parameter section for the endpoint, click the **+ Response** button. Then click the **+ Add Body** button that appears within this expanded Response section.
@@ -319,6 +324,9 @@ To enter the response information in Stoplight Studio:
     <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_add_response_sectionbutton.png" alt="Responses section" />
 
 2.  On the Schema tab, click **Generate from JSON**.
+
+    Here you'll experience one of the coolest features in the Stoplight Studio editor, and one reason why I like this editor so much. The editor will automatically build out the response schema from a sample JSON response.
+
 3.  Expand the orange button below and copy the sample response.
 
     <button type="button" class="btn btn-warning" onclick="$('#response').toggle( 'fast' )">Sample response &raquo;</button>
@@ -540,9 +548,11 @@ You've finished creating your OpenAPI spec, so let's preview, test, and publish 
 
     For various demos of Stoplight with different API docs, see [Stoplight Demo](pubapis_stoplight_demo.html).
 
+    Stoplight has [several pricing tiers](https://stoplight.io/pricing/). The free version supports up to 3 users and 2 projects, while the next level up, Starter, supports up to 3 users and 50 projects. See also [](https://stoplight.io/documentation/)
+
 8.  If you don't want to publish docs through Stoplight, you can export your spec file from Stoplight. From the workspace home, click the **Export** button and choose the type of code you want:
 
-    <a href=""><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_export_option.png" alt="Stoplight export option" /></a>
+    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_export_option.png" alt="Stoplight export option" />
 
     The Bundled References will include the `$ref` code while Fully Deferenced will not; instead, the export will substitute in the references for `$ref`. The option you choose depends on what's supported in the editor you're bringing it to.
 
@@ -560,6 +570,8 @@ Here are some sample API documentation sites built with Stoplight to explore:
 * [Namely API docs](https://developers.namely.com/1.0/getting-started/introduction)
 
 For more details about working with Stoplight Studio, see their documentation here: [Stoplight Studio](https://stoplight.io/p/docs/gh/stoplightio/studio/README.md?srn=gh/stoplightio/studio/README.md).
+
+For more details about Stoplight's documentation offering, see [Create Hosted API Documentation Online With Our API Docs Generator Tool](https://stoplight.io/documentation/).
 
 <style>
 dl {font-size: 18px !important;}
