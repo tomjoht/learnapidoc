@@ -13,7 +13,7 @@ If you're looking to see what's new in the API doc site/course, you can browse n
 
 ## Recently updated pages
 
-Here are pages that I've recently updated. This list is auto-generated based on the last-modified timestamp on pages.
+Here are pages that I've recently updated. This list is auto-generated based on the last-modified timestamp on pages. Every page has a "Last updated" line below the title. This indicates the last time I updated content on the page (in a significant way). 
 
 <table>
 <col width="20%">
@@ -37,7 +37,7 @@ Here are pages that I've recently updated. This list is auto-generated based on 
 <td>{{post.last-modified | date: "%b %d, %Y" }}</td>
 <td><a href="{{ post.permalink | prepend: "/learnapidoc" }}">{{ post.title }}</a> </td>
 </tr>
-{% if count == 10 %}{% break %}{% endif %}
+{% if count == 15 %}{% break %}{% endif %}
 {% endif %}
 {% endfor %}
 </table>
@@ -62,9 +62,9 @@ https://stackoverflow.com/questions/46672231/in-jekyll-how-to-show-posts-from-la
 
 ## Recent blog posts about API doc site updates
 
-{% include random_ad2.html %}
-
 On my blog, I often write announcement-style posts after adding new content on my API course. I tag these with "api-doc" &mdash; you can browse these [API doc site updates here](/category-apidoc-site-updates/).
+
+{% include random_ad2.html %}
 
 ## Recent commits in GitHub
 
