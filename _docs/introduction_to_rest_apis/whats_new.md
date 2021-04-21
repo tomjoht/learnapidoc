@@ -23,7 +23,7 @@ The following are the most recent updates to the API documentation course.
 <th>Page</th>
 </tr>
 <tr>
-  <td>[API getting started](docapis_doc_getting_started_section.html)</td>
+  <td>[API getting started tutorial](docapis_doc_getting_started_section.html)</td>
   <td>Added section on minimalism's influence. Also updated Run in Postman button section to switch from static buttons to forked workspaces.</td>
 </tr>
 <tr>

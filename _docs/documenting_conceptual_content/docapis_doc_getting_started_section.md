@@ -1,5 +1,5 @@
 ---
-title: API getting started
+title: API getting started tutorial
 permalink: /docapis_doc_getting_started_section.html
 keywords:
 course: "Documenting REST APIs"
