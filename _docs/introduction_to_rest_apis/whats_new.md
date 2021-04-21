@@ -4,16 +4,45 @@ permalink: /docapis_whats_new.html
 sidebar: docapis
 path1: /docapis_introtoapis.html
 weight: 1.02
-last-modified: 2021-02-16
+last-modified: 2021-04-21
 ---
 
 If you're looking to see what's new in the API doc site/course, you can browse new content in several ways.
 
 {% include random_ad4.html %}
 
-## Recently updated pages
+## Most recent updates
 
-Here are pages that I've recently updated. This list is auto-generated based on the last-modified timestamp on pages. Every page has a "Last updated" line below the title. This indicates the last time I updated content on the page (in a significant way). 
+The following are the most recent updates to the API documentation course.
+
+<table>
+<col width="20%">
+<col width="80%">
+<tr>
+<th>Last updated</th>
+<th>Page</th>
+</tr>
+<tr>
+  <td>[API getting started](docapis_doc_getting_started_section.html)</td>
+  <td>Added section on minimalism's influence. Also updated Run in Postman button section to switch from static buttons to forked workspaces.</td>
+</tr>
+<tr>
+  <td>[Getting started tutorial: Using Stoplight Studio to create an OpenAPI specification document](pubapis_openapis_quickstart_stoplight.html)</td>
+  <td>Updated this tutorial to align with the many enhancements and changes to Stoplight over the past two years. (See [Updated Stoplight tutorial](/blog/updated-stoplight-tutorial/) for more details.</td>
+</tr>
+<tr>
+  <td>[API glossary](docapis_glossary_section.html)</td>
+  <td>Expanded the content with technical examples about how to single source glossary content from a single YAML file. Also added examples for integrating tooltips and popovers as well, added more discussion, analysis, additional reading, and other updates overall. (See [Updated glossary article with technical examples](/blog/updated-glossary-article/) for more details.)</td>
+</tr>
+</table>
+
+## Auto-generated list of updated pages
+
+This list is auto-generated based on the last-modified timestamp on pages. Every page has a "Last updated" line below the title. This indicates the last time I updated content on the page (in a significant way).
+
+## Auto-generated list of updated pages
+
+This list is auto-generated based on the last-modified timestamp on pages. Every page has a "Last updated" line below the title. This indicates the last time I updated content on the page (in a significant way).
 
 <table>
 <col width="20%">
