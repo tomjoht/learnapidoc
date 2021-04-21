@@ -217,7 +217,7 @@ folders:
   - title: "API product overview"
     jurl: /docapis_doc_overview.html
 
-  - title: "API getting started"
+  - title: "API getting started tutorial"
     jurl: /docapis_doc_getting_started_section.html
 
   - title: API authentication and authorization
