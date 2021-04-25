@@ -23,15 +23,15 @@ The following are the most recent updates to the API documentation course.
 <th>Page</th>
 </tr>
 <tr>
-  <td>[API getting started tutorial](docapis_doc_getting_started_section.html)</td>
+  <td markdown="span">[API getting started tutorial](docapis_doc_getting_started_section.html)</td>
   <td>Added section on minimalism's influence. Also updated Run in Postman button section to switch from static buttons to forked workspaces.</td>
 </tr>
 <tr>
-  <td>[Getting started tutorial: Using Stoplight Studio to create an OpenAPI specification document](pubapis_openapis_quickstart_stoplight.html)</td>
+  <td markdown="span">[Getting started tutorial: Using Stoplight Studio to create an OpenAPI specification document](pubapis_openapis_quickstart_stoplight.html)</td>
   <td>Updated this tutorial to align with the many enhancements and changes to Stoplight over the past two years. (See [Updated Stoplight tutorial](/blog/updated-stoplight-tutorial/) for more details.</td>
 </tr>
 <tr>
-  <td>[API glossary](docapis_glossary_section.html)</td>
+  <td markdown="span">[API glossary](docapis_glossary_section.html)</td>
   <td>Expanded the content with technical examples about how to single source glossary content from a single YAML file. Also added examples for integrating tooltips and popovers as well, added more discussion, analysis, additional reading, and other updates overall. (See [Updated glossary article with technical examples](/blog/updated-glossary-article/) for more details.)</td>
 </tr>
 </table>
