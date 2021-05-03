@@ -143,7 +143,7 @@ You can also learn about the Swagger UI configuration parameters in the [Swagger
 As you explore Swagger UI, you may notice a few limitations:
 
 * There's not much room to describe in detail the workings of the endpoints. If you have several paragraphs of details and gotchas about a parameter, it's best to link out from the description to another page in your docs. The OpenAPI spec provides a way to link to external documentation in both the [paths object](pubapis_openapi_step4_paths_object.html), the [info object](pubapis_openapi_step2_info_object.html), and the [externalDocs object](pubapis_openapi_step8_externaldocs_object.html)
-* The Swagger UI looks mostly the same for each API. You can [customize Swagger UI](https://swagger.io/docs/swagger-tools/#customization-36) with your own branding, but it will some more in-depth UX skills. It is, however, relatively easy to change the color and image in the top navigation bar.
+* The Swagger UI looks mostly the same for each API. You can [customize Swagger UI](https://swagger.io/docs/swagger-tools/#customization-36) with your own branding, but it will require some more in-depth UX skills. It is, however, relatively easy to change the color and image in the top navigation bar.
 * The Swagger UI might be a separate site from your other documentation. This separate output means that in your regular docs, you'll probably need to link to Swagger as the reference for your endpoints. You don't want to duplicate your parameter descriptions and other details in two different sites. See [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html) for strategies on unifying your reference docs and user guide.
 
 ## Troubleshooting issues with Swagger UI {#troubleshooting_swagger}
