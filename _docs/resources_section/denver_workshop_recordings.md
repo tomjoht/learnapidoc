@@ -2,7 +2,7 @@
 title: Denver API Workshop Video Recording
 permalink: /denver_workshop_recording.html
 course: "Documenting REST APIs"
-weight: 14.9
+weight: 15.9
 sidebar: docapis
 section: resources
 path1: /resources.html

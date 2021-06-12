@@ -2,7 +2,7 @@
 title: What's wrong with this topic answer key
 permalink: /whats_wrong_answer_key.html
 course: "Documenting REST APIs"
-weight: 14.7
+weight: 15.7
 sidebar: docapis
 section: resources
 path1: /resources.html

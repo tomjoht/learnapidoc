@@ -432,7 +432,23 @@ folders:
   - title: Templates for working with metrics
     jurl: /docapis_metrics_templates.html
 
-- title: "XIV: API glossary and resources"
+- title: "XIV: Telling your product's story"
+  jurl: /docapis_story.html
+  folderitems:
+
+  - title: "Telling your product's story overview"
+    permalink: /docapis_story_overview.html
+
+  - title: "How content anemia happens"
+    permalink: /docapis_how_content_anemia_happens.html
+
+  - title: "Aligning your product's story with your user's story"
+    permalink: /docapis_align_product_story_with_user_story.html
+
+  - title: "The developer's journey"
+    permalink: /docapis_the_developers_journey
+    
+- title: "XV: API glossary and resources"
   jurl: /resources.html
   folderitems:
 

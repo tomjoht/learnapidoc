@@ -2,7 +2,7 @@
 title:  More REST API activities
 permalink: /docapis_more_rest_activities.html
 course: "Documenting REST APIs"
-weight: 14.1
+weight: 15.1
 sidebar: docapis
 section: resources
 path1: /resources.html

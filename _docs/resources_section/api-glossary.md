@@ -3,7 +3,7 @@ title: API glossary
 permalink: /api-glossary.html
 keywords:
 course: "Documenting REST APIs"
-weight: 14.01
+weight: 15.01
 sidebar: docapis
 section: resources
 path1: /resources.html
