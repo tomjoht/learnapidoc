@@ -12,15 +12,13 @@ last-modified: 2021-07-03
 {: .note}
 July 3, 2021: I'm currently working on content in this section. Be patient as I refine and build this out more.
 
-In my experience with documentation at various companies, at least two topics are frequently neglected: [product overviews](docapis_doc_overview.html) and [getting started tutorials](docapis_doc_getting_started_section.html). Without generalizing too much, I acknowledge that many companies actually have great product overviews and excellent getting started tutorials. But I sometimes feel like I have the misfortune of arriving at documentation portals and feeling lost, and I don't find much help in the product overview.
+In my experience with documentation at various companies, at least two topics seem to be frequently neglected: [product overviews](docapis_doc_overview.html) and [getting started tutorials](docapis_doc_getting_started_section.html). On the flip side, I acknowledge that many companies also have great product overviews and excellent getting started tutorials. But I often feel like I have the misfortune of arriving at documentation portals and feeling lost, and I don't find much help in the product overview.
 
 If there's a getting started tutorial (not usually), I have a low percentage of success getting through it. Both a confusing product overview coupled with a failed or absent getting started tutorial can really demotivate my progress through docs, prompting me to seek help elsewhere, such as third-party sources, for more straightforward information and functional tutorials.
 
 Why are these topics often neglected? Are there valid reasons for the neglect, and how can we address some of these issues to make these topics more of a priority? That's what I explore in this section.
 
 ## General overview
-
-Before I dive into the details, let me paint some broad strokes here to provide an overview of this section.
 
 Ideas such as minimalism (as defined by John Carroll, Hans Van Der Meij, and others) and research about opportunistic learning behaviors encourage much more action-oriented approaches to tech writing. These action-oriented approaches might include getting started tutorials, interactive features like Swagger UI, code you can run directly in the browser (e.g., Jupyter Notebooks), task-focused how-to's, and more. For decades now, researchers have been reiterating the belief that users are "reading to do" and are anxious to get going with tasks and other hands-on exploration. Readers don't want lengthy explanations but rather specific steps to accomplish a task at hand.
 
@@ -29,6 +27,69 @@ At the same time, documentation often fails to tell the who/what/when/why about 
 How do you balance this tension between action (with task-based docs) and narration (with concept-based docs)? When do you focus on reading to do versus reading to understand?
 
 In general, best practices for documentation would mean accounting for both mindsets and orientations. For the reading-to-do mindset, you provide a getting started tutorial that gets the reader going in an immediate, hands-on way with the product. For the reading-to-understand mindset, you provide a product overview that tells the story of your product, answering high-level questions about the product, including the problem it solves, who the product is for, listing sample use cases, presenting architectural diagrams, development timelines, known limitations, and more. Together, the product overview and getting started tutorial can empower users with confidence and enthusiasm to dive into other areas of your docs.
+
+## Others' experiences
+
+I'm not alone in my experiences with product overviews and getting started tutorials. In a recent blog post, [Balancing action with narration: Creating product overviews and getting started tutorials to satisfy both try-first and read-first learning modes](https://idratherbewriting.com/blog/balancing-action-with-narration-create-content-to-satisfy-opportunistic-and-systematic/#commento) I floated an idea about presenting on these topics, sharing this same overview, and asked my blog readers to agree or disagree with this statement: "Product overviews and getting started tutorials are essential but often neglected topics in documentation."
+
+<a class="noCrossRef" href="https://www.questionpro.com/t/7Bl4niZmV4G"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/prod_overviews_started_survey.png" alt="Survey about product overviews and getting started tutorials" /></a>
+
+Forty people (mostly technical writers) responded. 82% of people either agreed or strongly agreed, and 12% were neutral. Only 5% either disagreed or strongly disagreed.
+
+In the survey feedback, some people said the following to elaborate:
+
+> My docs team is constantly receiving feedback that we don't cover "what/why" enough, so I'm very keen to get some ideas from your presentation. Thanks!
+
+
+> I struggle with writing overviews whether they’re for the entire product or just a feature or capability. I’d be very interested in a series on how to write overviews.
+
+
+> We often leave the "big picture story" to marketing, while tech doc focuses on the "nuts and bolts". I've heard the argument "you don't have to explain - they've already bought the product and know what they want it for" but this overlooks the new guy who wasn't involved in the purchase, the engineer who is handed the product and told to make it work by his boss etc. Also, the marketing story is almost always too superficial. Finally, with complex products, while getting started is very useful, there's still a need to understand the product to use it. The user's final configuration for a complex product will almost never be the same as the tutorials. All the best for your presentation!
+
+Others left direct comments on the [the post](https://idratherbewriting.com/blog/balancing-action-with-narration-create-content-to-satisfy-opportunistic-and-systematic/#commento).
+
+From katya:
+
+> Personal experience as a reader: I tend to skip the product overview and go straight to the hands-on section of the get started guide. However, when the product overview is not there in the first place, it triggers something in me, and I immediately need to understand more about the product. The only explanation I have is that when a product has a good written overview, readers only need to briefly scan it to understand whether this is something they are looking for and make a decision to continue reading (or not).
+
+From Yves Pierrot:
+
+> Hi Tom, "Getting Started" content is usually my first concern when I take on a documentation. I usually work on complex products and the new user is often left behind with no global meaning or methodology for the multitude of actions, and no separation between basic and advanced use. So I create one.
+>
+> I don't think a Getting Started is all "reading-to-do". We have to mind minimalism and independence between topics, all right, and it is definitely action-oriented, but for meaning and learning, nothing beats the power of a good story.
+>
+> There must be a story linking the actions within the Getting Started, a global goal that may be connected to the Product Overview, being the most basic use case for example, and an actual progression from one step to the other until the final result at the end of the Getting Started. That story should be the most meaningful basic situation for the user, which requires some knowledge of product usage. It should be complex enough to cover a wide enough range of actions.
+>
+> So that means that in the action-oriented content is mixed some situational elements that provides a why and a when, possibly as introductory description of the starting situation(the "context" of the task) and some development on the "result" part.
+>
+> I usually provide an introductory topic that lists the actions (and links) in their meaningful order with some "scenario script" info to tie all together, and that frees me from adding too much "what happens before and after" in the topics themselves.
+>
+> All in all, I think the Getting Started is one of the most fundamental part of the doc, it is hard work (heavy on the maintenance side too) but so much fun to create. As a Tech Writer, it also connects you to the meaning of your work.
+
+From Mark Baker:
+
+> Your title struck me because of how closely it mirrors a similar discussion in the fiction world between action and description. Readers prefer action, we are told, and yet without description, the reader does not know what is at stake in the action. There is something very parallel here. In tech comm, the reader is anxious to take action, yet without conceptual information they don't know what action to take when or why.
+>
+> In my old life in tech comm, I would, of course, have said, this is why you use an Every Page is Page One approach, so that readers can decide for themselves when they want concept and when they want procedure. But that does not work for a novelist, and it does not work for documentation in all cases either.
+>
+> In fiction it seems that the answer is something along the lines of suggesting the possibility of the action to come, of suggesting in the narrative sections that what you are narrating must inevitable result in action in the not too distant future. Description without the possibility, even the threat, of action, will be dull. But action without any background as to who is involved or what they stand to gain or lose, is similarly dull.
+>
+> Is there a way to translate this to tech comm? Is there a way to present concept material that is somehow pregnant with the possibility of action? I don't know. And figuring it out is no longer in my bailiwick. But I could not help commenting on the parallel.
+
+From Chuck Martin:
+
+> Hey Tom, I think you've hit on a good topic here, but I also think you're approaching it from a binary perspective, and I don't think that's the case.
+>
+> First, let me say that one reason this is a challenge is that because for most types of documentation, users want to get in just as far as necessary, find the information they need, and get out and get back to work (or play, or whatever they are doing). That's a big driver for the minimalism of which you speak.
+>
+> But the "why" is much more than product overviews. The "why" is imperative to imparting product understanding, and opportunities to add "why" content are more expansive than just overviews.
+>
+> For example, it can be very useful to add a bit of "why" content to critical steps in procedures. The "why" content can offer decision support at critical junctures that gives confidence to users that they are making the correct decisions. Another place that "why" content is often missing--and where it is usually critically useful--is reference content. Reference content is a PITA to develop, and is so often just a recitation of options, nothing more. But reference content is where users, especially experienced users, go to find specifics of decisions they need to make in the product, decisions that can often be nuanced. Here's is where "why" content is especially important, to add detail that explains the results and consequences of the choices available to users, and even why some choices may or may not be available. It's hard to do this, however, and it takes more time, and most companies barely invest in documentation development anyway, so getting this done is almost always put on the back burner by technical writers who already have overwhelming backlogs of work.
+>
+> Layering the "whys" into these types of content, however, is critical to imparting conceptual understanding at the point of need. In a task, for example, we can give not only the directive in a step, but, as Frodo said to Sam when he passed on the Red Book of Westmarch at the end of "The Return of the King," there's room for a little bit more. So add a bit more, add a bit of why, enough to add to users' conceptual understanding, but not so much to be overwhelming or to drown out the task at hand. The big bonus here is that many users will get that conceptual understanding without realizing it, and next time they are doing the same or similar things in the product, they will have gained that conceptual understanding and be able to make more decisions confidently without needing to refer to documentation. That is a big win for all involved.
+
+Not everyone's experience and perspective is the same, but it seems this topic hits close to home for many tech writers. Both the product overview and getting started tutorial are among the most challenging to write, and their presence or absence in documentation can make a huge difference. For this reason, I think it's worthwhile to explore these topics with more depth and analysis.
+
 
 
 

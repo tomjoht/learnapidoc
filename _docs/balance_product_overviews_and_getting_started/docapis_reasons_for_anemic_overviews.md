@@ -21,9 +21,9 @@ Yet, in so many cases, when I start reading through documentation for a product,
 * TOC
 {:toc}
 
-## Cause 1: You aren't the intended audience
+## Cause 1: The reader isn't the intended audience
 
-Perhaps the main reason that product overviews fail is because you, as a tech writer, aren't the intended audience for the product. As an example, take a look at some of the product overviews in [Microsoft's Azure docs](https://docs.microsoft.com/en-us/azure/?product=all), which look exemplary to me. You could use any product as an example, but let's start with the first product, the Anomaly Detector. The starting topic is [What is the Anomaly Detector API?](https://docs.microsoft.com/en-us/azure/cognitive-services/anomaly-detector/overview). The first two paragraphs start as follows:
+Perhaps the main reason that product overviews fail is because the reader (for example, a tech writer reading a product overview about some API for developers) isn't the intended audience for the product. As an example, take a look at some of the product overviews in [Microsoft's Azure docs](https://docs.microsoft.com/en-us/azure/?product=all), which look exemplary to me. You could use any product as an example, but let's start with the first product, the Anomaly Detector. The starting topic is [What is the Anomaly Detector API?](https://docs.microsoft.com/en-us/azure/cognitive-services/anomaly-detector/overview). The first two paragraphs start as follows:
 
 > The Anomaly Detector API enables you to monitor and detect abnormalities in your time series data without having to know machine learning. The Anomaly Detector API's algorithms adapt by automatically identifying and applying the best-fitting models to your data, regardless of industry, scenario, or data volume. Using your time series data, the API determines boundaries for anomaly detection, expected values, and which data points are anomalies.
 >
