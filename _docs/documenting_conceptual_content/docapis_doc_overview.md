@@ -60,7 +60,7 @@ Use cases are concrete examples of how the product might be used. Continuing wit
 
 A developer portal usually has documentation for many different products, not just one. Each product will have its own product overview page. In fact, the homepage of the developer portal rarely has a product overview. Instead, the developer portal's homepage often serves as a routing board to the product overviews and other developer journeys.
 
-Even a single product might have multiple product overviews for each of the features. The overview is just a term for the opening page of a product, the landing page or starting page. Whenever you need a high-level description of your product, you need a product overview page.
+Even a single product might have multiple overviews for each of the features. The overview is just a term for the opening page of a product, the landing page or starting page. Whenever you need a high-level description of your product, you need an overview page.
 
 ## Audience includes decision-makers
 
@@ -72,7 +72,7 @@ In the overview, the high-level executive will be less interested in the technic
 
 ## Overlap with marketing
 
-Another facet of product overview pages is their frequent overlap with marketing content. In many organizations, there is a developer marketing group that handles product overviews which also cover this more high-level overview of the product. For example, if you browse the AWS Lambda documentation, you'll find that a higher-level product overview appears before the actual documentation. Here's the [marketing layer](https://aws.amazon.com/lambda/) to the product:
+Another facet of product overview pages is their frequent overlap with marketing content. In many organizations, there is a developer marketing group that handles higher-level product content, creating some overlap with documentation-based product overviews. For example, if you browse the AWS Lambda documentation, you'll find that a higher-level product overview appears before the actual documentation. Here's the [marketing layer](https://aws.amazon.com/lambda/) to the product:
 
 <a class='noCrossRef' href="https://aws.amazon.com/lambda/"><img style="border: 1px solid #dedede" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/awslambdaproducthomepage.png" alt="AWS Lambda product homepage" /></a>
 
@@ -117,9 +117,9 @@ Never say something is "easy" &mdash; instead, you might qualify the degree of d
 
 If you can qualify the level of development effort based on different audience types, this will provide more realistic information. You can still answer the exec's question &mdash; how difficult is this product to implement &mdash; without falling prey to promises of implementation ease.
 
-By the way, it's worth noting that marketers often have a superficial technical understanding of a product, so they usually cannot make judgments about the implementation difficulty. They might be going off of an internal engineer's observation that it's "straightforward" or that it "should be easy to implement" or that "most engineers should find this familiar." What the marketer might not realize is that engineers usually make these estimations by assuming the audience has the same knowledge level and background as the engineer. Unfortunately, most marketers remain within the pre-sales context and so rarely see the post-sales realities, where many support cases and threads spring up with confused or frustrated users.
+By the way, it's worth noting that marketers often have a superficial technical understanding of a product, so they usually cannot make judgments about the implementation difficulty anyway. They might be going off of an internal engineer's observation that it's "straightforward" or that it "should be easy to implement" or that "most engineers should find this familiar." What the marketer might not realize is that engineers usually make these estimations by assuming the audience has the same knowledge level and background as the engineer. Unfortunately, most marketers remain within the pre-sales context and so rarely see the post-sales realities, where many support cases and threads spring up with confused and frustrated users.
 
-Beyond adjectives about easiness, in the previous Lambda examples, the marketing copy uses terms like "virtually any," "automatically," "precisely," and "favorite." These superlatives don't usually get used in documentation, which tends to be more factual and plain-speaking. Marketing tries to get users excited about a product by embracing these extreme adjectives, while documentation isn't overtly trying to sell or hype anything.
+Beyond adjectives about easiness, in the previous Lambda examples, the marketing copy uses terms like "virtually any," "automatically," "precisely," and "favorite." These superlatives aren't usually used in documentation, which tends to be more factual and plain-speaking. Marketing tries to get users excited about a product by embracing these extreme adjectives, while documentation isn't overtly trying to sell or hype anything.
 
 ## Key differentiators in product overviews
 

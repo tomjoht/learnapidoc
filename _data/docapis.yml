@@ -432,22 +432,16 @@ folders:
   - title: Templates for working with metrics
     jurl: /docapis_metrics_templates.html
 
-- title: "XIV: Telling your product's story"
-  jurl: /docapis_story.html
+- title: "XIV: Balancing product overviews with getting started tutorials"
+  jurl: /docapis_balance_concepts_and_tasks.html
   folderitems:
 
-  - title: "Telling your product's story overview"
-    permalink: /docapis_story_overview.html
+  - title: "Balancing product overviews with getting started tutorials"
+    jurl: /docapis_overviews_and_getting_started.html
 
-  - title: "How content anemia happens"
-    permalink: /docapis_how_content_anemia_happens.html
+  - title: "Reasons why product overviews are often minimal or nonexistent"
+    jurl: /docapis_reasons_for_anemic_overviews.html
 
-  - title: "Aligning your product's story with your user's story"
-    permalink: /docapis_align_product_story_with_user_story.html
-
-  - title: "The developer's journey"
-    permalink: /docapis_the_developers_journey
-    
 - title: "XV: API glossary and resources"
   jurl: /resources.html
   folderitems:

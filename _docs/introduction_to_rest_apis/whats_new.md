@@ -9,40 +9,58 @@ last-modified: 2021-04-21
 
 If you're looking to see what's new in the API doc site/course, you can browse new content in several ways.
 
-{% include random_ad4.html %}
+* TOC
+{:toc}
 
 ## Most recent updates
 
 The following are the most recent updates to the API documentation course.
 
 <table>
-<col width="20%">
-<col width="80%">
+  <col width="20%">
+  <col width="30%">
+  <col width="50%">
+<thead>
 <tr>
-<th>Last updated</th>
-<th>Page</th>
+  <th>Last updated</th>
+  <th>Page</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>July 2021</td>
+  <td markdown="span">[Balancing product overviews with getting started tutorials](docapis_overviews_and_getting_started.html)</td>
+  <td markdown="span">Introduces a new section that explores the balance between conceptual and task-based information, arguing that product overviews are often anemic and neglected in favor of tasks.</td>
 </tr>
 <tr>
+  <td>July 2021</td>
+  <td markdown="span">[Reasons why product overviews are often minimal or nonexistent](docapis_reasons_for_anemic_overviews.html)</td>
+  <td markdown="span">Explains four main reasons why product overviews are often anemic, including influences from agile, UX, marketing, and tech comm.</td>
+</tr>
+<tr>
+  <td>April 2021</td>
   <td markdown="span">[API getting started tutorial](docapis_doc_getting_started_section.html)</td>
   <td markdown="span">Added section on minimalism's influence. Also updated Run in Postman button section to switch from static buttons to forked workspaces.</td>
 </tr>
 <tr>
+  <td>April 2021</td>
   <td markdown="span">[Getting started tutorial: Using Stoplight Studio to create an OpenAPI specification document](pubapis_openapis_quickstart_stoplight.html)</td>
   <td markdown="span">Updated this tutorial to align with the many enhancements and changes to Stoplight over the past two years. (See [Updated Stoplight tutorial](/blog/updated-stoplight-tutorial/) for more details.</td>
 </tr>
 <tr>
+  <td>March 2021</td>
   <td markdown="span">[API glossary](docapis_glossary_section.html)</td>
   <td markdown="span">Expanded the content with technical examples about how to single source glossary content from a single YAML file. Also added examples for integrating tooltips and popovers as well, added more discussion, analysis, additional reading, and other updates overall. (See [Updated glossary article with technical examples](/blog/updated-glossary-article/) for more details.)</td>
 </tr>
+</tbody>
 </table>
 
 ## Auto-generated list of updated pages
 
-This list is auto-generated based on the last-modified timestamp on pages. Every page has a "Last updated" line below the title. This indicates the last time I updated content on the page (in a significant way).
+{% include random_ad4.html %}
 
-## Auto-generated list of updated pages
-
-This list is auto-generated based on the last-modified timestamp on pages. Every page has a "Last updated" line below the title. This indicates the last time I updated content on the page (in a significant way).
+This list is auto-generated based on the last-modified timestamp on pages, scoped to the last 60 days. How does the script work? Every page has a "Last updated" line below the title. This script looks for any pages with a timestamp that appears within the last 60 days.
 
 <table>
 <col width="20%">
@@ -71,6 +89,13 @@ This list is auto-generated based on the last-modified timestamp on pages. Every
 {% endfor %}
 </table>
 
+{% comment %}
+details about the script logic above: https://stackoverflow.com/questions/46672231/in-jekyll-how-to-show-posts-from-last-week
+{% endcomment %}
+
+
+## Seeing what content has been updated
+
 To see what's been updated on the page, click the GitHub button next to the timestamp on the page:
 
 <img style="max-width: 500px" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/github_button_whats_new.png" alt="GitHub button" />
@@ -85,18 +110,12 @@ Then click the commit IDs to browse file diffs for the commits that include the 
 
 {% include random_ad1.html %}
 
-{% comment %}
-https://stackoverflow.com/questions/46672231/in-jekyll-how-to-show-posts-from-last-week
-{% endcomment %}
+You can see the [stream of commits in GitHub here](https://github.com/tomjoht/learnapidoc/commits/main).
 
 ## Recent blog posts about API doc site updates
 
-On my blog, I often write announcement-style posts after adding new content on my API course. I tag these with "api-doc" &mdash; you can browse these [API doc site updates here](/category-apidoc-site-updates/).
+On my blog, I often write announcement-style posts after adding new content on my API course. I tag these with "api-doc" &mdash; you can browse these [API doc site updates here](https://idratherbewriting.com/category-apidoc-site-updates/).
 
 {% include random_ad2.html %}
-
-## Recent commits in GitHub
-
-You can see the [stream of commits in GitHub here](https://github.com/tomjoht/learnapidoc/commits/main). This lets you view more granular updates about the various commits. To see the commit for a specific page, click the small GitHub icon <i class="fa fa-github fa-lg"></i> after the "Last updated" tag. Then click the **History** link in GitHub.
 
 {% include random_ad3.html %}
