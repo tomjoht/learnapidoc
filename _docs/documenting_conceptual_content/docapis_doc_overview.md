@@ -180,7 +180,7 @@ This is all good information to include. Consider auditing your overview by aski
 Product overviews vary from product to product, but here's the general flow that I like to follow:
 
 - Description of the product
-- Intended audience
+- Intended audience and assumptions about knowledge
 - Sample use cases
 - Requirements to use the product
 - List of components

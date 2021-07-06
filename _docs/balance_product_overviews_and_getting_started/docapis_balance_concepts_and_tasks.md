@@ -10,6 +10,8 @@ last-modified: 2021-07-03
 ---
 
 {: .note}
-July 3, 2021: I'm currently working on content in this section. Be patient as I refine and build this out more.
+July 6, 2021: I'm currently working on content in this section. Be patient as I refine and build this out more.
+
+Product overviews and getting started tutorials are among the first topics users consult as they get started with a product. Although other sections in this course explained best practices for [product overviews](docapis_doc_overview.html) and [getting started tutorials](docapis_doc_getting_started_section.html), this section explores reasons why these topics are often neglected, whether some of those reasons are valid, and strategies for pulling off better content in these areas.
 
 {% include minitoc.html %}
