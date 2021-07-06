@@ -84,6 +84,13 @@ p.note {
     overflow: auto;
 }
 
+p.principle {
+    background: #f1f1f1;
+    padding: 1em;
+    border-left: 1em solid purple;
+    overflow: auto;
+}
+
 p.survey {
   background: #f1f1f1;
   padding: 1em;
@@ -106,6 +113,11 @@ p.warning {
 
 p.note::before {
     content: "Note: ";
+    font-weight: bold;
+}
+
+p.principle::before {
+    content: "Principle: ";
     font-weight: bold;
 }
 

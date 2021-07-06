@@ -47,6 +47,9 @@ On the flip side, most technical writers have experienced situations where engin
 
 Overall, as we read through product overviews, we have to remember that we're usually not the intended audience. It might fail to orient us, but does it fail for the intended audience? At the very least, try to be clear about the audience, as this will set expectations for knowledge levels. You can also add a "Background Knowledge and Assumptions" section. This section could link out to some preparatory documentation (perhaps on other websites) that users should consult if they get lost.
 
+{: .principle}
+If the overview doesn't make sense to you, it might not actually be poor. You must determine whether it makes sense to the intended users of the product.
+
 ## Cause 2: Overview pages are hard to write
 
 Another reason product overviews often fail for users is because, put simply, they are hard to write, and so they are often poorly executed. The product overview requires you to be thoroughly familiar with the product, comfortable enough to summarize the product at a high level, describe the overall architecture, use cases, how to get started, requirements and limitations, and more.
@@ -73,6 +76,9 @@ One approach to avoiding pulling together the overview at the last minute is to 
 
 Every product seems to elicit its own unique sections on the overview, but these sections will give you a good starting point.
 
+{: .principle}
+Recognize that you typically only acquire the full knowledge to write the overview after you've written all the other documentation. To avoid last-minute efforts, keep running notes on an overview draft that you keep adding to as you work through the other documentation.
+
 ## Cause 3: Agile's co-development influence
 
 Another cause is agile's co-development influence with products. Agile software development prescribes close interactions with users as software teams develop and build out the product. When users are so intimately involved in product development, essentially co-collaborators with each iteration, they don't need the higher level overview, story, and purpose of the product. They need only the technical details for implementing it.
@@ -84,6 +90,9 @@ But just as product team members become somewhat numb to product jargon, the rea
 Once the feature is complete, some brief technical docs get added that explain how to use the feature. But the feature itself, the reason it was created, the problem it solves, the high-level overview and description of the feature, etc., is not documented because the initial partner didn't need that high-level. Soon, the documentation follows a similar trend elsewhere, and soon you end up with lots of little building blocks and technical how-to's but no higher-level descriptions and glue between all of these tasks. New users who didn't participate in the feature's development have to try to derive back what the feature is and why/what/who, etc., it is for.
 
 Product overview anemia is a byproduct of the agile development process itself. This is where a technical writer's perspective as an outsider becomes so important. If you're an outsider to both the product and domain, you won't have this co-development history and won't have seen the product evolve from a sketch on a napkin to a fully released product. You'll see the lack of connecting glue between topics, the absence of a larger story that connects with your needs, and more. The problem is, without an audience asking for this higher-level information, you might be facing an uphill battle to generate the content, seemingly for someone such as yourself.
+
+{: .principle}
+If the users were co-developers of the product and features (or frequent sounding boards during the design phase), don't use that group as a barometer for assessing content needs. Find someone who is new to the product.
 
 ## Cause 4: Higher-level content handled by developer marketing content
 
@@ -136,3 +145,5 @@ But task-oriented docs often swing too far toward tasks, resulting in minimal or
 In [research about how developers use APIs](/learnapidoc/docapiscode_research_on_documenting_code.html#systematic-versus-opportunistic-behaviors), studies have identified "opportunistic" behaviors (try-first), "systematic" behaviors (read-first), and hybrids of the two. When observed, there's much more hybrid type behavior where people switch back and forth between reading and doing. Just because you might be an opportunistic user, it doesn’t mean you always skip conceptual explanations &mdash; it's just that you might not start with concepts. A non-linear reader might start with code, trying it out on their own, and circle back to the introductory conceptual information when the code doesn’t work as expected.
 
 Deciding to cater to one type of behavior at the expense of the other might not be practical, since the learning behaviors and approaches seem to be in constant flux.
+
+## Takeaways
