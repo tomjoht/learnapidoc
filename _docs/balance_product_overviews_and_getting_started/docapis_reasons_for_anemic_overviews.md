@@ -16,6 +16,8 @@ Have you ever found yourself reading documentation for a product and wondered, w
 
 In general, a product overview should allow users to get a good sense of what the product does, who it's for, why they might use it, the pain point the product solves, requirements and availability, how to get started, how to get help when needed, and other pointers. Ideally, the product overview should give you a solid understanding of the product and what it's used for.
 
+{% include random_ad4.html %}
+
 Yet, in so many cases, when I start reading through documentation for a product, I'm often left confused and without a clear sense of what it's for or how I might actually use it, let alone how to get started. Other writers I've talked to [share similar frustrations](docapis_overviews_and_getting_started.html) with anemic product overviews that seem to fail in their task of orienting the user. Why are some product overviews so unfulfilling, so brief, disappointing, and anemic? In this section, I'll explore several reasons for anemic product overviews.
 
 * TOC
@@ -33,6 +35,8 @@ As an example, take a look at some of the product overviews in [Microsoft's Azur
 
 Although the sentences seem clear, and there are screenshots, interactive demos, descriptions of features, getting started topics, and more, I'm still lost because I'm not the audience. What is "time series data"? What kind of data is appropriate to analyze here? Why would I want to look for abnormalities in my data? What kind of application or process would I integrate this anomaly detection service into? *I dunno...*
 
+{% include image_ad_right.html %}
+
 As good as this product overview is written, it doesn't make sense to me because I'm not the intended audience. I'm not a developer working with large data sets, nor am I involved in machine learning and algorithms. It strains my mind to even understand what scenario would make sense where I'd have "time series data" with anomalies that I need to detect as part of a machine learning model that I'm building, even though this scenario is apparently cross-industry.
 
 It's not the writer's responsibility to bring non-target users up from ground zero here, holding my hand through this knowledge domain and assuming I know nothing. But it would help to perhaps explicitly identify the audience here. Even without identifying it, though, it's pretty clear reading this overview that I'm not user envisioned for this product.
@@ -41,9 +45,13 @@ So how do you, as a technical writer, a person who is most likely an outsider to
 
 As technical writers, we usually spin our lack of domain awareness as a positive, because we don't end up assuming our audience knows so much already. We aren't hampered by the curse of knowledge, numb to the jargon and concepts our audience also isn't familiar with. So we explain the basics, we define terms, we start a few rungs lower on the knowledge ladder than people expect. And users often appreciate it.
 
+{% comment %}{% include random_ad3.html %}{% endcomment %}
+
 But without closer interaction with users, we can only guess what users might know or not know. Typically, we end up relying on feedback from those who do interact closely with users. Through them, we try to better understand the user's knowledge level, but this lack of awareness and lack of interaction with users also gets us into trouble. At the end of the day, we find ourselves staring at a product overview and, even if it fails for us, we hope it sort of works for the right audience.
 
 On the flip side, most technical writers have experienced situations where engineers tell us that users will know this or that concept, only to learn later that users don't and the assumptions confused them. (Many developers take this position a step further and assert that if the user doesn't understand a certain concept, they shouldn't be using the product.) And in some ways, there's merit to that. If I don't understand what time-series data is, I probably shouldn't be using the Anomaly Detector API. But what happens when you encounter a developer working in machine learning who has similar questions? Audience knowledge levels and technical abilities vary. In general, it's better to err on the side of assuming too little than too much, to an extent. Documentation shouldn't be too verbose for the core audience that the important details are diluted with too much backstory.
+
+{% include random_ad2.html %}
 
 Overall, as we read through product overviews, we have to remember that we're usually not the intended audience. It might fail to orient us, but does it fail for the intended audience? At the very least, try to be clear about the audience, as this will set expectations for knowledge levels. You can also add a "Background Knowledge and Assumptions" section. This section could link out to some preparatory documentation (perhaps on other websites) that users should consult if they get lost.
 
@@ -84,6 +92,8 @@ Recognize that you typically only acquire the full knowledge to write the overvi
 Another cause is agile's co-development influence with products. Agile software development prescribes close interactions with users as software teams develop and build out the product. When users are so intimately involved in product development, essentially co-collaborators with each iteration, they don't need the higher level overview, story, and purpose of the product. They need only the technical details for implementing it.
 
 In [Agile Principle 1: Active User Involvement Is Imperative](https://www.101ways.com/2007/02/24/agile-principle-1-active-user-involvement-is-imperative/), Kelly Waters lists out 10 principles of agile and says "active user involvement is the first principle of agile development." Why is active user involvement so fundamental to agile development? User involvement is essential because software teams want to build the product in a way that matches users needs, and you can't do that without closely working with users, checking in regularly with each build to see if it matches their expectations, and course correcting to fine-tune the alignment needed to build the right product.
+
+{% include random_ad1.html %}
 
 But just as product team members become somewhat numb to product jargon, the reasons behind decisions, and other details, the docs produced follow somewhat the same suit. There's no need to explain why the product is needed because, with active user involvement, these needs are communicated from the user from day one and throughout, in regular meetings and other interactions. As such, there isn't a strong need for this higher-level overview and understanding. The conceptual basis for the feature is already understood by the partner because the product team iterated with the partner to develop the feature.
 
