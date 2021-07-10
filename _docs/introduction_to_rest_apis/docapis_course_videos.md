@@ -50,7 +50,7 @@ See the [event details](https://idratherbewriting.com/blog/upcoming-webinar-tren
 
 <iframe width="640" height="385" src="https://www.youtube.com/embed/L4YFlSB8STI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 ### Video 3 (Raleigh workshop)
 

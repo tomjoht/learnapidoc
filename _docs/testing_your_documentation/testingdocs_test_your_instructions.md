@@ -112,7 +112,7 @@ In contrast, if you just stick to technical editing, formatting, publishing, and
 
 Note that it takes time to try out the instructions yourself and with users. It probably doubles or triples the documentation time. Writing thorough, accurate instructions that address users with different setups, computers, and goals is tedious. You don't always have this time before release.
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 But don't assume that once your product is released, all documentation is done. You can always go back over your existing, already-published documentation and improve it. Consider the first release a kind of "Day 1" for your documentation. It's the first iteration. Your documentation will get better with each iteration. If you couldn't get your test system up and running before the first release, that's okay. Build the test system for the upcoming release.
 

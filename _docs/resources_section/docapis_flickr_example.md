@@ -132,7 +132,7 @@ Here's what an item in the JSON response looks like:
 
 You access these fields through dot notation. It's a good idea to log the whole object to the console just to explore it better.
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 ## 5. Pull out the information you need
 

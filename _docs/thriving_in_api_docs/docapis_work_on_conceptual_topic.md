@@ -19,7 +19,7 @@ This part of the activity might be challenging, but here is where you'll start b
 2.  Edit the topic to improve it. (If it's a new endpoint, write the documentation for it.)
 6.  Create a [pull request](pubapis_github_pull_requests.html) and contribute your edits to the project.
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 {% include random_ad1.html %}
 

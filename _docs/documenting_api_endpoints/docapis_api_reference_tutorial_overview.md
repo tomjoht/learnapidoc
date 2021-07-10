@@ -33,7 +33,7 @@ Almost all API reference topics include these five sections:
 [5. Response example and schema](docapis_doc_sample_responses_and_schema.html)
 : {{site.data.glossary.response_example_and_schema.def | split: "." | first | append: "." }}
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 ## Tutorial workflow map
 

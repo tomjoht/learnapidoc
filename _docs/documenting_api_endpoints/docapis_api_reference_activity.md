@@ -32,4 +32,4 @@ Now that you understand the essential sections to cover in documenting API endpo
 
 The OpenAPI standard will help make sure you cover all the necessary details in these sections, and it will present the information to users in a way that users have become accustomed to.
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}

@@ -84,7 +84,7 @@ To pull out the wind speed element from the JSON response and print it to the Ja
 console.log("wind speed: " + response.wind.speed);
 ```
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 Your code should look like this:
 

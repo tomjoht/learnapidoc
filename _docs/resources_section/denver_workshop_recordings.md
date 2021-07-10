@@ -59,7 +59,7 @@ Part III:
 <p><audio controls="controls"><source src="http://www.podtrac.com/pts/redirect.mp3/s3.us-west-1.wasabisys.com/idbwmedia.com/podcasts/denverapiworkshop_part3.mp3" type="audio/mpeg" /></audio></p>
 </div>
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 {% include image_ad_left.html %}
 

@@ -40,7 +40,7 @@ For an example, take a look at Algolia's API. You can view the documentation for
 
 <a href="https://www.algolia.com/doc" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/algolia_clientsdks.png" alt="Algolia client implementations" /></a>
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 Although users could construct their own code when using the REST endpoints, most developers would rather leverage existing code and copy and paste what they need.
 

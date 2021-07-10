@@ -16,7 +16,7 @@ Q:  Is it possible to author API documentation using DITA/XML or an XML editor (
 
 {% include random_ad4.html %}
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 Q:  We use Madcap Flare but document our APIs in Swagger. We're considering dropping Flare and using Readme.com instead, which can import Swagger, but should we be looking at other tools? We also don't document just APIs, but have protocols we document outside of the APIs too.
 

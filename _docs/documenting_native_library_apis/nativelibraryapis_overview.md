@@ -18,7 +18,7 @@ In most of this course, we focused on [REST APIs](docapis_what_is_a_rest_api.htm
 
 ## Characteristics of native library APIs
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 Native library APIs (also called class-based APIs or just APIs) are notably different in the following ways:
 

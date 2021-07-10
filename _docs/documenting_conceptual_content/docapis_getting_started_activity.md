@@ -15,7 +15,7 @@ last-modified: 2020-01-21
 
 {% include random_ad2.html %}
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 {% include random_ad4.html %}
 

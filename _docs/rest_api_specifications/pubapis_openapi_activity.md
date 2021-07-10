@@ -16,7 +16,7 @@ The [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html) walked you throug
 
 {% include content/activities/edit_openapi_spec_file.md %}
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 ## Create the OpenAPI specification document for an API of your choosing
 

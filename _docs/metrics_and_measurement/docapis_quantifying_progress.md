@@ -63,7 +63,7 @@ If this is the feeling regarding reported metrics, remember that user surveys sh
 
 Overall, I am confident that few would object to most of the criteria here. Most of the rubric's criteria would be agreed upon by both readers and writers with enough common ground as to be a practical guide for improving documentation quality. Also, the criteria should be seen as a first draft, a starting point that can be refined and improved, checked against industry standards, confirmed against docs that are loved by users, refined through constant feedback, and more.
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 ## Survey {#survey}
 

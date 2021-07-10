@@ -64,7 +64,7 @@ You might have some files in your repo that you can just delete. For example, su
 
 Note that I'm not recommending that you delete actively used content. Almost always, when you deprecate documentation, you add a banner announcing the deprecation and include a migration path. I'm instead encouraging you to think about the "deletion" part of the content life cycle. In Kristina Halvorson's definition of content strategy, Halvorson says, "Content strategy guides decisions about content throughout its lifecycle, from discovery to deletion." Think about that last stage in the content life cycle: *deletion*.
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 Deleting content can be scary &mdash; *what if people complain about broken links? What if it turns out we need that content? Before removing it, shouldn't we get approval from all the product team members (who are no longer there)?*
 

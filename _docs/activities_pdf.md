@@ -102,7 +102,7 @@ Break
 
 **Native Library APIs**
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 ## 4:30pm - 5:15pm: Individual consulting
 

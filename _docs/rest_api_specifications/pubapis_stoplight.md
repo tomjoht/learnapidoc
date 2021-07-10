@@ -97,7 +97,7 @@ To counter poor practices with *spec-last* development, Lane says more and more 
 
 In a design-first model, technical writers can also insert themselves early in on the API design process, providing input about the shape and model of the API at a time when their input might get traction. Once the API gets coded by developers, it's hard enough to change a parameter name, much less the parameter itself.
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 ## Documentation hosting features on Stoplight
 

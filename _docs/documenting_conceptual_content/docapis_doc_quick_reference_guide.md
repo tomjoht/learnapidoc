@@ -100,4 +100,4 @@ With the [open-source project you identified](docapis_find_open_source_project.h
 4. Besides listing abbreviated descriptions of the endpoints, what else would you put in the API's quick reference guide? Common tasks?
 5. Are there several essential tasks users need to perform with the API? Are these core tasks also communicated in the getting started tutorial?
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}

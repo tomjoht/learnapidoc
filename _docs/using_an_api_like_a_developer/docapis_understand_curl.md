@@ -165,7 +165,7 @@ After the query string, each parameter is separated from other parameters by the
 
 ## Common curl commands related to REST {#common}
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 curl has a lot of possible commands, but the following are the most common when working with REST APIs.
 

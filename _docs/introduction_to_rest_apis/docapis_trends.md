@@ -34,7 +34,7 @@ I wrote an [article for the *Institute of Scientific Technical Communicators* (I
 
 The same content from the PDF is available in HTML below:
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 ## Developer documentation trends: How developer documentation trends differ from general technical communication trends
 

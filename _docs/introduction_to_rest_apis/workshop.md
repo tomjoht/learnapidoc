@@ -133,7 +133,7 @@ Break. Snacks provided.
 
 {% include workshop_button.html title="Activity 8c: Push local changes to the remote" activity="push_local_to_remote" button_type="warning" %}
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 ## 4:00 - 4:30: Participant's challenges surfaced and discussed
 

@@ -46,7 +46,7 @@ To access glove, you would use `data.items[2]`.
 {: .note}
 With most programming languages, you usually start counting at `0`, not `1`.
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 ## <i class="fa fa-user-circle"></i> Exercise with dot notation {#exercise_dot_notation}
 

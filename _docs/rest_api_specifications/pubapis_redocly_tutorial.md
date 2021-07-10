@@ -672,7 +672,7 @@ Redoc provides a lot of options to configure the output. Options to configure th
 
 For sample API reference docs built with Redoc, see [Some Real-life usages](https://github.com/Redocly/redoc#some-real-life-usages) on the Redoc GitHub page.
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 ## Conclusion
 

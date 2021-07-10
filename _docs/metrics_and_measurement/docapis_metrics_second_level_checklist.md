@@ -95,7 +95,7 @@ input[type=checkbox] {
 </ul>
 </div>
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 ## Is this list complete? No
 

@@ -127,7 +127,7 @@ hobbies:
   - horseplaying
 ```
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 Here's an array containing objects in JSON:
 

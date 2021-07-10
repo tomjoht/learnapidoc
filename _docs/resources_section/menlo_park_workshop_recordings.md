@@ -22,7 +22,7 @@ This content doesn't embed well in print, as it contains YouTube videos. Please 
 
 {% include note.html content="For the most recent workshop recording, see the [Video recordings of API doc workshops](docapis_workshop_videos.html)." %}
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 ### Video 1
 

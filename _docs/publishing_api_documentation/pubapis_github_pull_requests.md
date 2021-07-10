@@ -90,7 +90,7 @@ Now pretend you are the project owner, and you see that you received a new pull 
 
 	 If you look at your list of branches, you'll see that the deleted branch no longer appears.
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 ## Add collaborators to your project
 

@@ -135,7 +135,7 @@ On the Codeship blog, [Chris writes](https://blog.codeship.com/documenting-graph
 
 So, we see that this is an interesting point. The different perspectives he is talking about is looking at the endpoints with REST vs looking at the data itself with GraphQL (i.e., exactly what is requested).
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 Chris then explains what documentation is needed for GraphQL and why it’s needed:
 

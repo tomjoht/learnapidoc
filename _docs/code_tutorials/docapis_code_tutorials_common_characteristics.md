@@ -24,6 +24,6 @@ Starting with a template that lists these sections can help you gather the right
 
 {% include content/activities/code_tutorial_analysis.md %}
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 {% include image_ad_left.html %}

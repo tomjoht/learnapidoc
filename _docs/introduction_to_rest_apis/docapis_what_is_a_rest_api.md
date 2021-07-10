@@ -27,7 +27,7 @@ In general, an API (or Application Programming Interface) provides an interface 
 
 APIs are often pulling and pushing data underneath user interfaces. Consider the example of a flight booking site like [kayak.com](https://kayak.com) or [orbitz.com](https://orbitz.com). When you search for flights, the site reaches out to many other airline services to retrieve information about flights matching your query. kayak.com itself doesn't have all of this information. Instead, it gathers this data through APIs.
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 Or consider other similar services. When you see a YouTube video embedded on a site, the site itself doesn't host the video. Instead, the embed code contains API requests that get the video from YouTube's hosting centers. When you embed a Twitter widget on your site, the widget's APIs pull in tweets from a Twitter server onto your site.
 

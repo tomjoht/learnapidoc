@@ -19,7 +19,7 @@ Seeing the response from curl or Postman is cool, but how do you make use of the
 
 {% include content/activities/ajax_api_request.md %}
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 ## The AJAX method from jQuery
 

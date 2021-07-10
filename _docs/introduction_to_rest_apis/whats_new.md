@@ -118,4 +118,4 @@ On my blog, I often write announcement-style posts after adding new content on m
 
 {% include random_ad2.html %}
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}

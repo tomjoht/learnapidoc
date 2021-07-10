@@ -39,7 +39,7 @@ This sample API doesn't include many endpoints, so it might be more instructive 
 * [BigCommerce API docs](https://developer.bigcommerce.com/api-docs)
 * [Namely API docs](https://developers.namely.com/1.0/getting-started/introduction)
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 You can learn more about hosting your documentation with Stoplight here: [Create Hosted API Documentation Online With Our API Docs Generator Tool](https://stoplight.io/documentation/).
 

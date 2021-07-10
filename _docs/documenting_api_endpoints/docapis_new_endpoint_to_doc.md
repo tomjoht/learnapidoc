@@ -25,7 +25,7 @@ Now let's shift perspectives. Now suppose you're a technical writer working with
 
 The project manager calls you over and says the team has a new endpoint for you to document for the next release. (Sometimes teams will also refer to each endpoint as an "API" as well.)
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 {% include image_ad_right.html %}
 

@@ -25,4 +25,4 @@ Remember that sometimes the best way to learn how to create API documentation is
 
 {% include content/activities/conceptual_comparisons.md %}
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}

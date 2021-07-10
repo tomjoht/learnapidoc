@@ -156,7 +156,7 @@ This example allowed you to see how you can work with curl to create, read, upda
 
 Although Postman is probably easier to use, curl lends itself to power-level usage. Quality assurance teams often construct advanced test scenarios that iterate through a lot of curl requests.
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 ## Understanding idempotent methods
 

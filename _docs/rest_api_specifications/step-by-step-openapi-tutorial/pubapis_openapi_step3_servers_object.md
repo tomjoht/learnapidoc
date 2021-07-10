@@ -37,7 +37,7 @@ Each of your endpoints (called "paths" in the spec) will be appended to the serv
 
 ## Options with the server URL
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 You have some flexibility and configuration options for your server URL. You can specify multiple server URLs that might relate to different environments (test, beta, production). If you have multiple server URLs, users can select the environment from a servers drop-down box. For example, you can specify multiple server URLs like this:
 

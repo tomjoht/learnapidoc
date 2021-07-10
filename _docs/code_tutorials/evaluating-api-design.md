@@ -48,7 +48,7 @@ But supposing that the developers are listening intently for your feedback &mdas
 
 Much of developer docs have the same knowledge weight. As technical writers, we are often straining to keep our heads above water, learning as we go. We aren't often in a position to critique an approach taken. And even when we create an end-to-end tutorial for using the API toward some business goal, it might be hard to decide whether the workflow is easy or hard for a developer to implement &mdash; this is where lack of an engineering background can be challenging. Much of the code might seem difficult to implement. And assessing whether it's the norm for the space is hard to determine without working with other APIs across the industry.
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 Despite these challenges, with a little understanding of what to look for, you can learn how to critique an API's usability just as with any other tool. All you need is to understand what to look for. So let's jump into Arnaud's book for a more focused discussion of these points.
 

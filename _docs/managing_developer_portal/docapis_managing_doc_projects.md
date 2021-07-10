@@ -302,7 +302,7 @@ The tech writer might decide to copy this information into a note-taking wiki an
 
 In cases where one tech writer leaves or transitions to another project, a new tech writer can review this wiki and get a sense of the project's status, contacts, and other details.
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 ## 6. Chunk project work into tickets {#chunk_the_work}
 

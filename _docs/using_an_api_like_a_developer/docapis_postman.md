@@ -46,7 +46,7 @@ A lot of times, abstract concepts don't make sense until you can contextualize t
 
 {% include content/activities/postman_request.md %}
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 ## Same request but in Paw instead of Postman
 

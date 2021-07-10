@@ -216,7 +216,7 @@ Maven handles package management for Java projects. Maven will automatically go 
 
 To avoid broken code, developers anticipate potential problems through exception handling. Exceptions say, if there's an issue here, flag the error with this exception and then continue through the code.
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 Different types of errors throw different exceptions. By identifying the type of exception thrown, you can more easily troubleshoot problems when code breaks because you know the specific error that's happening.
 

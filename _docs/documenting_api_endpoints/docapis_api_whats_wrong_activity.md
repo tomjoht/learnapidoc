@@ -21,6 +21,6 @@ In this activity, you'll critique an existing API reference topic to identify wh
 
 {% include content/activities/whats_wrong_with_surfreport.md %}
 
-{% include random_ad3.html %}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 {% include random_ad2.html %}
