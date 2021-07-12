@@ -10,7 +10,7 @@ last-modified: 2021-07-03
 ---
 
 {: .note}
-July 6, 2021: I'm currently working on content in this section. Be patient as I refine and build this out more.
+July 12, 2021: I'm currently working on content in this section. Be patient as I refine and build this out more.
 
 In my experience writing documentation, at least two topics seem to be frequently neglected: [product overviews](docapis_doc_overview.html) and [getting started tutorials](docapis_doc_getting_started_section.html). Not all the time &mdash; many companies also have great product overviews and excellent getting started tutorials. But I often I have the misfortune of arriving at documentation portals and feeling lost, and I don't find much help in the product overview. If there's a getting started tutorial (not usually), I have a low percentage of success getting through it.
 
@@ -19,6 +19,9 @@ Both a confusing product overview coupled with a failed or absent getting starte
 {% include random_ad1.html %}
 
 Why are these topics &mdash; product overviews and getting started tutorials &mdash; often neglected? Or are they just harder to pull off successfully? Are there valid reasons for their absence or poor quality, and how can we address some of these issues to make these topics more of a priority? That's what I explore in this section.
+
+* TOC
+{:toc}
 
 ## General overview
 
@@ -106,7 +109,13 @@ In other words, Chuck is arguing for integrating more of the conceptual "why" co
 
 ## Conclusion
 
-Not everyone's experience and perspective is the same, but from this quick survey, it seems this topic hits close to home for many tech writers. Both the product overview and getting started tutorial are among the most challenging to write, and their presence or absence in documentation can make a huge difference. For this reason, I think it's worthwhile to explore these topics with more depth and analysis. In the next topic, [Reasons why product overviews are often minimal or nonexistent](docapis_reasons_for_anemic_overviews.html), I'll explain some reasons why product overviews often fail the user.
+Not everyone's experience and perspective is the same, but from this quick survey, it seems this topic hits close to home for many tech writers. Both the product overview and getting started tutorial are among the most challenging to write, and their presence or absence in documentation can make a huge difference. For this reason, I think it's worthwhile to explore these topics with more depth and analysis.
+
+In contrast to other sections that outline best practices, I'll approach these topics in more of an inverse angle. I devote the bulk of this content to exploring reasons why overviews and getting-started tutorials are so poor, the causes that threaten the best practices for this topic. Defeating each enemy cause one by one, we'll make our way to victory by the end.
+
+## Next steps
+
+In the next topic, [Reasons why product overviews are often minimal or nonexistent](docapis_reasons_for_anemic_overviews.html), I'll explain some reasons why product overviews often fail the user.
 
 {% include random_ad4.html %}
 

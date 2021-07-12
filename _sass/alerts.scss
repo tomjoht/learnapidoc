@@ -84,7 +84,7 @@ p.note {
     overflow: auto;
 }
 
-p.principle {
+p.takeaway {
     background: #f1f1f1;
     padding: 1em;
     border-left: 1em solid purple;
@@ -116,8 +116,8 @@ p.note::before {
     font-weight: bold;
 }
 
-p.principle::before {
-    content: "Principle: ";
+p.takeaway::before {
+    content: "Takeaway: ";
     font-weight: bold;
 }
 

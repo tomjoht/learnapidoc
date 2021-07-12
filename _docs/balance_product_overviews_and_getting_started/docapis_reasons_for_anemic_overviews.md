@@ -10,7 +10,7 @@ last-modified: 2021-07-03
 ---
 
 {: .note}
-July 6, 2021: I'm currently working on content in this section. Be patient as I refine and build this out more.
+July 12, 2021: I'm currently working on content in this section. Be patient as I refine and build this out more.
 
 Have you ever found yourself reading documentation for a product and wondered, what exactly is the product? What does it do? Who is this for? Why isn't it more clear? You look for the big picture and higher-level understanding, but every topic seems to assume that you already know more than you actually do. The nature and use of the tool remains muddy.
 
@@ -23,9 +23,29 @@ Yet, in so many cases, when I start reading through documentation for a product,
 * TOC
 {:toc}
 
-## Cause 1: The reader isn't the intended audience
+## Best practices for product overviews
 
-Perhaps the main reason that product overviews fail is because the reader (for example, a tech writer reading a product overview about some API for developers) isn't the intended audience for the product.
+Before diving into reasons why product overviews fail, let me first recap a few best practices. I already explored these topics in detail in [product overviews](docapis_doc_overview.html), but it seems right to at least cover best practices at a high-level. Consider including these general sections in a product overview:
+
+*  Description of the product
+*  Sample use cases
+*  Intended audience and technical level
+*  Requirements to use product (system requirements, geo-requirements)
+*  List of components involved
+*  High-level architectural diagram of components/workflow + explanation
+*  Development effort and scope
+*  How to get support
+*  Most popular topics
+*  Known limitations, release notes
+*  Link to getting started tutorial
+
+Every product seems to elicit its own unique sections on the overview, but these sections will give you a good starting point.
+
+Now let's explore the reasons why product overviews frequently fail.
+
+## Cause 1: The reader isn't the intended audience, so overview fails for the wrong reader
+
+Perhaps the main reason that product overviews fail is because the reader (for example, a tech writer reading a product overview about some API for developers) isn't the intended audience for the product. As such, the overview might fail for that particular reader, but actually be fine for the intended audience. This mismatch of actual reader versus intended reader makes it difficult to make judgments about product overviews.
 
 As an example, take a look at some of the product overviews in [Microsoft's Azure docs](https://docs.microsoft.com/en-us/azure/?product=all), which look exemplary to me. You could use any product as an example, but let's start with the first product, the Anomaly Detector. The starting topic is [What is the Anomaly Detector API?](https://docs.microsoft.com/en-us/azure/cognitive-services/anomaly-detector/overview). (In fact, all docs seem to start out with "What is ... [product]?" This frequent pattern creates a nice sense of predictability to the various doc sets in their portal.) The first two paragraphs start as follows:
 
@@ -55,10 +75,10 @@ On the flip side, most technical writers have experienced situations where engin
 
 Overall, as we read through product overviews, we have to remember that we're usually not the intended audience. It might fail to orient us, but does it fail for the intended audience? At the very least, try to be clear about the audience, as this will set expectations for knowledge levels. You can also add a "Background Knowledge and Assumptions" section. This section could link out to some preparatory documentation (perhaps on other websites) that users should consult if they get lost.
 
-{: .principle}
+{: .takeaway}
 If the overview doesn't make sense to you, it might not actually be poor. You must determine whether it makes sense to the intended users of the product.
 
-## Cause 2: Overview pages are hard to write
+## Cause 2: Overview pages are hard to write (so they're often neglected)
 
 Another reason product overviews often fail for users is because, put simply, they are hard to write, and so they are often poorly executed. The product overview requires you to be thoroughly familiar with the product, comfortable enough to summarize the product at a high level, describe the overall architecture, use cases, how to get started, requirements and limitations, and more.
 
@@ -70,24 +90,12 @@ And when are you writing that last page of documentation? Right near crunch-time
 
 If you're working more as an editor and publisher rather than an author, the overview might be beyond your reach. You might be reliant on general product descriptions from internal documents, without the additional context and details that you get by struggling with the product for months with hands-on exploration and experimentation.
 
-One approach to avoiding pulling together the overview at the last minute is to place section holders on the page, and then fill them in as you go. In [API product overviews](docapis_doc_overview.html), I recommend including these general sections in a product overview:
+One approach to avoiding pulling together the overview at the last minute is to place section holders on the page, and then fill them in as you go.
 
-*  Description of the product
-*  Intended audience and assumptions about knowledge
-*  Sample use cases
-*  Requirements to use the product
-*  List of components
-*  High-level architectural diagram of components + explanation
-*  Development effort/scope
-*  How to get support/help
-*  Link to getting started tutorial
+{: .takeaway}
+Recognize that you typically acquire the full knowledge to write the overview only after you've written all the other documentation. To avoid last-minute efforts, keep running notes on an overview draft that you keep adding to as you work through the other documentation.
 
-Every product seems to elicit its own unique sections on the overview, but these sections will give you a good starting point.
-
-{: .principle}
-Recognize that you typically only acquire the full knowledge to write the overview after you've written all the other documentation. To avoid last-minute efforts, keep running notes on an overview draft that you keep adding to as you work through the other documentation.
-
-## Cause 3: Agile's co-development influence
+## Cause 3: Agile's co-development influence makes it difficult to surface higher-level content needs
 
 Another cause is agile's co-development influence with products. Agile software development prescribes close interactions with users as software teams develop and build out the product. When users are so intimately involved in product development, essentially co-collaborators with each iteration, they don't need the higher level overview, story, and purpose of the product. They need only the technical details for implementing it.
 
@@ -101,14 +109,20 @@ Once the feature is complete, some brief technical docs get added that explain h
 
 Product overview anemia is a byproduct of the agile development process itself. This is where a technical writer's perspective as an outsider becomes so important. If you're an outsider to both the product and domain, you won't have this co-development history and won't have seen the product evolve from a sketch on a napkin to a fully released product. You'll see the lack of connecting glue between topics, the absence of a larger story that connects with your needs, and more. The problem is, without an audience asking for this higher-level information, you might be facing an uphill battle to generate the content, seemingly for someone such as yourself.
 
-{: .principle}
+{: .takeaway}
 If the users were co-developers of the product and features (or frequent sounding boards during the design phase), don't use that group as a barometer for assessing content needs. Find someone who is new to the product.
 
-## Cause 4: Higher-level content handled by developer marketing content
+## Cause 4: Higher-level content is already handled by developer marketing content, making it redundant in docs
 
-Another reason for anemic product overviews is because many of these higher-level questions are usually handled in the developer marketing layer, and tech writers don't usually operate in that pre-sales space. In many doc portals, there's a marketing layer that sits on top of the documentation. This marketing layer is supposed to articulate the larger story of the product &mdash; the problem the product solves, the target audience, use cases, case studies, and more &mdash; to a pre-sales audience. As an example, see the example with AWS Lambda that I explained in the [product overviews](/learnapidoc/docapis_doc_overview.html#overlap-with-marketing) topic. In fact, the product overviews in the marketing layer pose challenges for overviews in technical documentation because tech writers usually try to avoid redundancy. Since many tech writers assume the marketing layer handles this larger story and overview about the product, this sort of content is often absent or minimized in the documentation's product overview.
+Another reason for anemic product overviews is because many of these higher-level questions are usually handled in the developer marketing layer, and tech writers don't usually operate in that pre-sales space. In many doc portals, there's a marketing layer that sits on top of the documentation. This marketing layer is supposed to articulate the larger story of the product &mdash; the problem the product solves, the target audience, use cases, case studies, and more &mdash; to a pre-sales audience.
 
-Additionally, the higher-level overview often gets more into pre-sales territory than many technical writers are comfortable with. In this space, you're trying to tell the who, what, and how of the product in a way that resonates with user pain points. In [The importance of "how" in developer messaging](https://developerrelations.com/developer-marketing/the-importance-of-how-in-developer-messaging), Matthew Revell argues that developer messaging needs to cover the "what," "how," and "why" &mdash; often starting with the *what* and *how* before the *why*. He touches on the need to build confidence with your audience, to align your goals with theirs. Revell says, "The origin myth of a product provides a framework that enables people to form their own feelings and thoughts about it. Without 'why' there’s no developer community, no champions, no advocacy." Origin myths are not typical content that technical writers create.
+As an example, see the example with AWS Lambda that I explained in the [product overviews](/learnapidoc/docapis_doc_overview.html#overlap-with-marketing) topic. In fact, the product overviews in the marketing layer pose challenges for overviews in technical documentation because tech writers usually try to avoid redundancy. Since many tech writers assume the marketing layer handles this larger story and overview about the product, this sort of content is often absent or minimized in the documentation's product overview.
+
+Additionally, the higher-level overview often gets more into pre-sales territory than many technical writers are comfortable with. In this space, you're trying to tell the who, what, and how of the product in a way that resonates with user pain points. In [The importance of "how" in developer messaging](https://developerrelations.com/developer-marketing/the-importance-of-how-in-developer-messaging), Matthew Revell argues that developer messaging needs to cover the "what," "how," and "why" &mdash; often starting with the *what* and *how* before the *why*. He touches on the need to build confidence with your audience, to align your goals with theirs. Revell says:
+
+> The origin myth of a product provides a framework that enables people to form their own feelings and thoughts about it. Without 'why' there’s no developer community, no champions, no advocacy."
+
+Origin myths are not typical content that technical writers create. For example, you will not find a tutorial on origin myths in any technical writing handbook.
 
 Developer messaging focuses on building trust with users, finding an emotional connection with them, addressing the developer journey, and telling the product story. Most tech writers don't think this type of content for their product &mdash; this is the land of marketing. For example, suppose you worked as a technical writer for Red Bull. Your primary task would be to describe the product's ingredients, not to construct a story about Red Bull being the drink of extreme sports enthusiasts, for as helicopter skiers and daredevil mountain bikers.
 
@@ -118,13 +132,18 @@ However, any good content strategy should have alignment with each content touch
 
 Even if a technical writer's job is to focus on the how and what, more than the why behind the product, technical writers should have a larger sense of product story that helps structure and direct the technical content. Ideally, the shape of documentation should be constructed around this higher-level story. Task-based documentation should support tasks that align with the developer journey, and that developer journey is focused around a story.
 
-## Cause 5: UX's influence on intuitiveness
+{: .takeaway}
+Look to see if marketing content covers the higher-level content needs in the documentation overview. If so, you could simply link to the marketing content, or alternatively, put a more technical, matter-of-fact spin on the same content, perhaps in a more abbreviated way and with fewer superlatives.
+
+## Cause 5: UX's influence on intuitiveness implies that long overviews run counter to good product design
 
 Another reason why product overviews are anemic is due to UX's influence with intuitiveness. This scenario is more common with non-developer docs, but the idea is that products should be intuitive and naturally address mental models and problem scenarios that customers have, without the need for extensive explanations. Why would you need to explain a product in depth to the users who you built it for? If something needs a deep explanation, it probably isn't well-designed and intuitive for that audience. (Fabrizio Ferri mentioned this point during a thread on Write the Docs Slack.)
 
-In [What makes intuitive products intuitive?](https://uxdesign.cc/what-makes-intuitive-products-intuitive-52f52f12c3b5), Scott Kitchell argues that a product is intuitive when it matches the mental model of the user. Scott says, "Intuitiveness can be created by designing every part of a product in reference to a mental model, and then promoting the mental model through the UI and marketing."
+Achieving intuitiveness in your product is a common goal of UX design. In [What makes intuitive products intuitive?](https://uxdesign.cc/what-makes-intuitive-products-intuitive-52f52f12c3b5), Scott Kitchell argues that a product is intuitive when it matches the mental model of the user. Scott says, "Intuitiveness can be created by designing every part of a product in reference to a mental model, and then promoting the mental model through the UI and marketing."
 
-Mental models are the logic and theories in our heads that make sense of the world around us. For example, in mountain biking, a common product for seats is a "dropper post," which lets bikers dynamically raise or lower the seat post height by pressing a button on the handlebars. Why would one need such a button and the ability to quickly raise or lower the seat height without getting off your bike to adjust it? If you're into mountain biking, you know that climbing dirt/gravel hills requires you to sit back while keeping weight on the back tire for traction, so you might need to lower the seat quickly on the climb, but then revert to regular height for other scenarios. In short, if you're part of the intended audience, you already have a rationale for the feature and don't need extensive conceptual docs explaining the scenario and reason for the product. You won't see extensive conceptual docs for dropper posts product detail pages. The need is already felt by the intended audience.
+Mental models are the logic and theories in our heads that make sense of the world around us. For example, in mountain biking, a common product for seats is a "dropper post," which lets bikers dynamically raise or lower the seat post height by pressing a button on the handlebars. Why would one need such a button and the ability to quickly raise or lower the seat height without getting off your bike to adjust it? If you're into mountain biking, you know that climbing dirt/gravel hills requires you to sit back while keeping weight on the back tire for traction, so you might need to lower the seat quickly on the climb, but then revert to regular height for other scenarios.
+
+In short, if you're part of the intended audience, you already have a rationale for the feature and don't need extensive conceptual docs explaining the scenario and reason for the product. You won't see extensive conceptual docs for dropper posts product detail pages. The need is already felt by the intended audience.
 
 The problem in tech comm is that tech writers are usually outsiders to the domain, looking in at the product. We don't share the same mental model as our users. As a result, many details don't immediately make sense. Kitchell says,
 
@@ -134,11 +153,15 @@ Ideally, the product should just make sense for users, without a need for in-dep
 
 To assess whether the product fits intuitively within the user's mental model, you have to understand the users. You also have to separate out whether those same users were co-developers with the feature. It could be that you have a variety of users, and perhaps those implementing the product might also be outsiders to the domain &mdash; engineers who know how to code but who lack the domain expertise, and so on.
 
-In other cases, your product might require some new learning, even for the target user. Mark Baker says, "learning is about rearranging our own mental furniture, finding our way through the thickets of our own minds. The expert can help us enormously at certain key junctures in that process, but most of it we simply have to do for ourselves" ([Chatbots are not the future of Technical Communication](https://everypageispageone.com/2018/01/30/chatbots-are-not-the-future-of-technical-communication/)). So it's not always the case that users will intuitively understand the product. Some learning frequently needs to take place, and that learning often involves rearranging some of the mental models in the user's head &mdash; even the target audience for which the product was built.
+In other cases, your product might require some new learning, even for the target user. Mark Baker says, "... learning is about rearranging our own mental furniture, finding our way through the thickets of our own minds. The expert can help us enormously at certain key junctures in that process, but most of it we simply have to do for ourselves" ([Chatbots are not the future of Technical Communication](https://everypageispageone.com/2018/01/30/chatbots-are-not-the-future-of-technical-communication/)). It's not always the case that users will intuitively understand the product. Some learning frequently needs to take place, and that learning often involves rearranging some of the mental models in the user's head &mdash; even the target audience's head for which the product was built.
 
 For more on mental models, see the [Schemas and learning](https://idratherbewriting.com/simplifying-complexity/reducing-complexity-by-shaping-into-schemas-esp-story.html#schemas-and-learning) section in "Principle 5: Conform to the patterns and expectations of the genre and schemas." *Schemas* are a more scientific term referring to the mental models in our heads that make sense of the world. See also [Script theory](https://idratherbewriting.com/simplifying-complexity/reducing-complexity-by-shaping-into-schemas-esp-story.html#script-theory) in the same article. Script theory argues that if designers create experiences that match the schemas by which users operate, users will naturally know what to do and act in an almost scripted way. For example, Kirk St. Amant says if you design your hospital waiting room in an archetypical, expected way, then users will naturally know what to do when entering the space.
 
-## Cause 6: Tech comm buys in to the "reading to do" paradigm for docs
+{: .takeaway}
+
+Define the stories that your audience uses to think about the scenario your product addresses. What mental model or schema organizes their thinking about the problem? If your product overview already naturally fits into this mental model, then you might not need to make the details more explicit &mdash; it might already make sense for the user.
+
+## Cause 6: Tech comm buys in to the "reading to do" paradigm for docs, minimizing the need for longer conceptual docs
 
 Another reason for lack of product overviews, even when outsiders like tech writers create the product docs, is because of tech comm's strategy preference for task-oriented docs. There's a strong belief among most tech writers that users turn to docs only when they have a problem they're trying to solve. As a result, docs are usually problem-oriented, focused on what users want to do and achieve. Conceptual docs are often seen as a sideshow to the task-oriented docs. This idea is so pervasive, it hardly needs explaining. The hallmark of good technical docs, most tech writers believe, is a list of numbered steps that takes users through a complex task.
 
@@ -152,8 +175,10 @@ Don't get me wrong &mdash; I support task-oriented docs and agree that it's gene
 
 But task-oriented docs often swing too far toward tasks, resulting in minimal or anemic overview information. When that happens, you often end up confusing users with various tasks and no content that helps their decision-making about which tasks to follow and why.
 
-In [research about how developers use APIs](/learnapidoc/docapiscode_research_on_documenting_code.html#systematic-versus-opportunistic-behaviors), studies have identified "opportunistic" behaviors (try-first), "systematic" behaviors (read-first), and hybrids of the two. When observed, there's much more hybrid type behavior where people switch back and forth between reading and doing. Just because you might be an opportunistic user, it doesn’t mean you always skip conceptual explanations &mdash; it's just that you might not start with concepts. A non-linear reader might start with code, trying it out on their own, and circle back to the introductory conceptual information when the code doesn’t work as expected.
+In [research about how developers use APIs](docapiscode_research_on_documenting_code.html#systematic-versus-opportunistic-behaviors), studies have identified "opportunistic" behaviors (try-first), "systematic" behaviors (read-first), and hybrids of the two. When observed, there's much more hybrid type behavior where people switch back and forth between reading and doing. Just because you might be an opportunistic user, it doesn’t mean you always skip conceptual explanations &mdash; it's just that you might not start with concepts. A non-linear reader might start with code, trying it out on their own, and circle back to the introductory conceptual information when the code doesn’t work as expected.
 
 Deciding to cater to one type of behavior at the expense of the other might not be practical, since the learning behaviors and approaches seem to be in constant flux.
 
-## Takeaways
+{: .takeaway}
+
+Remember that user behavior isn't night and day when it comes to opportunistic versus systematic behavior. Users flip back and forth between these two modes as needed. As such, try to link between the task-based topic and concepts where relevant to accommodate this fluctuating behavior.
