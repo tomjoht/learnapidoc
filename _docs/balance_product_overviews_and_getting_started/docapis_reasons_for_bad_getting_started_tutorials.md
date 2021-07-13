@@ -36,7 +36,7 @@ One reason getting started tutorials are often absent is because they're seen as
 Without question, there's a hierarchy of needs with docs, and a getting started tutorial sits more towards the top (meaning, it isn't essential). If you're still working on the core docs, the getting started tutorial might not be achievable within the release timeframe.
 
 {: .takeaway}
-If writing a getting started tutorial isn't possible within the release timeframe, plan for it in the next iteration. You can continue improving and adding to docs after a release.
+If writing a getting started tutorial isn't possible within the release timeframe, plan for it in the next iteration. You can usually continue improving and adding to docs after a release.
 
 ## Cause 2: The product setup might be too involved or impractical for a getting started tutorial
 
@@ -51,9 +51,9 @@ If your product doesn't allow users to get started in an easy way, consider scal
 
 ## Cause 3: There's no sample app to demonstrate how to call the API
 
-Another obstacle to getting started tutorials happens with native APIs, such as Java APIs, that require users to have a Java app already set up. If you don't have a sample app for the user, it will likely be difficult to show how to make a call to the API. Most native API documentation involves various classes and other app configuration across various files. In short, you need the context of an app to run the code.
+Another obstacle to getting started tutorials occurs with native APIs, such as Java APIs, that require users to have an app already set up. If you don't have a sample app for the user, it will likely be difficult to show how to make a call to the API. Most native API documentation involves various classes and other app configuration across various files. In short, you need the context of an app to run the code in the tutorial.
 
-But getting engineers to make a [sample app](docapis_sample_apps.html) available is a tall order with many risks involved. Even though most QA teams have [half-baked] sample apps to facilitate testing, product teams don't usually like to give external developers these sample apps for fear that they'll use them for real scenarios. The sample apps are usually so simple and primitive that they are in no way production scalable.
+But getting engineers to make a [sample app](docapis_sample_apps.html) available is a tall order with many risks involved. Even though most QA teams have a simple sample app to facilitate testing, product teams don't usually like to give external developers these sample apps for fear that they'll use them for real scenarios. The sample apps are usually so primitive that they are in no way production scalable.
 
 {: .takeaway}
 In scenarios where you lack a sample app, you could still provide code snippets and instruct users to make the code configurations in their own apps. Assume that your target users will actually have apps and be familiar with the programming language; tell them to add a class and instantiate it with certain parameters in their app, etc. If you find that the instructions go beyond your audience's skill level, double down on those efforts to make a sample app available. (You can always add detailed notes to the sample app that state the app is not intended for production use and is a simplified form of an app to demonstrate API calls only.)
@@ -77,9 +77,9 @@ Another reason why getting started tutorials might be absent from docs is becaus
 
 {% include random_ad4.html %}
 
-For example, suppose the integration assumes access to a vehicle's hardware abstraction layer, as well as knowledge about the way this layer connects to the vehicle's custom infortainment head unit. In this case, the system environment might be too complex to wrangle into a simple getting started tutorial. It can be hard to walk through all of these same tasks in an end-to-end way.
+For example, suppose the integration assumes access to a vehicle's hardware abstraction layer, as well as knowledge about the way this layer connects to the vehicle's custom infortainment system in the head unit. In this case, the system environment might be too complex to wrangle into a simple getting started tutorial. It can be hard to walk through all of these same tasks in an end-to-end way.
 
-Or the tasks might be within the tech writers reach at some point but not immediately. The tech writer might need more time to set up environments and walk through all of the tasks &mdash; time that's not available.
+Or the tasks might be within the tech writers reach at some point but not immediately. The tech writer might need more time to set up environments and walk through all of the tasks &mdash; time that's not available at present.
 
 {: .takeaway}
 Consider asking an engineer to write the getting started tutorial. If you can't follow it, this could form the basis of homework or other learning that you chip away at little by little in your path of continual learning.

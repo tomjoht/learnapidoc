@@ -9,13 +9,13 @@ path1: /docapis_balance.html
 last-modified: 2021-07-06
 ---
 
-In my experience writing documentation, at least two topics seem to be frequently neglected: [product overviews](docapis_doc_overview.html) and [getting started tutorials](docapis_doc_getting_started_section.html). Not all the time &mdash; many companies also have great product overviews and excellent getting started tutorials. But I often have the misfortune of arriving at documentation portals and feeling lost, and I don't find much help in the product overview. If there's a getting started tutorial (not usually), the success rate of getting through it is low.
+In my experience writing documentation, at least two topics seem to be frequently neglected: [product overviews](docapis_doc_overview.html) and [getting started tutorials](docapis_doc_getting_started_section.html). Not all the time &mdash; many companies also have great product overviews and excellent getting started tutorials. But I often have the misfortune of arriving at documentation portals and feeling lost, and I don't find much help in the product overview. If there's a getting started tutorial (not usually), my success rate for getting through it is low.
 
-Both a confusing product overview coupled with a failed or absent getting started tutorial can really demotivate a user's progress through docs, prompting them to seek help elsewhere, such as third-party sources, for more straightforward information and functional tutorials.
+Both a confusing product overview and no getting started tutorial can demotivate a user's progress through docs, prompting them to seek help elsewhere, such as third-party sources, for more straightforward information.
 
 {% include random_ad1.html %}
 
-Why are these topics &mdash; product overviews and getting started tutorials &mdash; often neglected? Why are they so hard to pull off successfully? Are there valid reasons for their absence or poor quality, and how can we address some of these issues to make these topics more of a priority? That's what I explore in this section. Not so much best practices, as I've covered these elsewhere, but reasons why these two topics in particular often fail or get skipped. It's by addressing the reasons for failure/neglect that we can devote more attention to these valuable content types.
+Why are these topics &mdash; product overviews and getting started tutorials &mdash; often neglected? Why are they so hard to pull off successfully? Are there valid reasons for their absence or poor quality, and how can we address some of these issues to make these topics more of a priority? That's what I explore in this section. Not so much best practices, as I've covered these elsewhere, but reasons why these two topics in particular often fail or get skipped. By addressing the reasons for failure/neglect, we can perhaps be more successful with these content types.
 
 * TOC
 {:toc}
@@ -34,7 +34,7 @@ In general, best practices for documentation would mean accounting for both mind
 
 ## Others' experiences
 
-I'm not alone in my thoughts about the importance of product overviews and getting started tutorials. In a recent blog post, [Balancing action with narration: Creating product overviews and getting started tutorials to satisfy both try-first and read-first learning modes](https://idratherbewriting.com/blog/balancing-action-with-narration-create-content-to-satisfy-opportunistic-and-systematic/#commento) I floated an idea about presenting on these topics, sharing a similar overview, and asked my blog readers to agree or disagree with this statement: "Product overviews and getting started tutorials are essential but often neglected topics in documentation."
+I'm not alone in my thoughts about the importance of product overviews and getting started tutorials. In a recent blog post, [Balancing action with narration: Creating product overviews and getting started tutorials to satisfy both try-first and read-first learning modes](/blog/balancing-action-with-narration-create-content-to-satisfy-opportunistic-and-systematic/#commento) I floated an idea about presenting on these topics, sharing a similar overview I described as above, and asked my blog readers to agree or disagree with this statement: "Product overviews and getting started tutorials are essential but often neglected topics in documentation."
 
 <a class="noCrossRef" href="https://www.questionpro.com/t/7Bl4niZmV4G"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/prod_overviews_started_survey.png" alt="Survey about product overviews and getting started tutorials" /></a>
 
@@ -52,7 +52,7 @@ In the survey feedback, some people said the following to elaborate:
 
 > We often leave the "big picture story" to marketing, while tech doc focuses on the "nuts and bolts". I've heard the argument "you don't have to explain &mdash; they've already bought the product and know what they want it for" but this overlooks the new guy who wasn't involved in the purchase, the engineer who is handed the product and told to make it work by his boss etc. Also, the marketing story is almost always too superficial. Finally, with complex products, while getting started is very useful, there's still a need to understand the product to use it. The user's final configuration for a complex product will almost never be the same as the tutorials. All the best for your presentation!
 
-In other words, assumptions about overview content already being consumed in pre-sales scenarios by others doesn't account for the engineers implementing the features.
+In other words, assumptions about overview content already being consumed in pre-sales scenarios by some readers doesn't account for the engineers implementing the features.
 
 Others left direct comments on the [the post](https://idratherbewriting.com/blog/balancing-action-with-narration-create-content-to-satisfy-opportunistic-and-systematic/#commento).
 
@@ -76,7 +76,7 @@ Yves Pierrot said:
 >
 > All in all, I think the Getting Started is one of the most fundamental part of the doc, it is hard work (heavy on the maintenance side too) but so much fun to create. As a Tech Writer, it also connects you to the meaning of your work.
 
-In other words, the getting started tutorial needs to connect to a larger story that addresses a situational pain point for the user. Without this connection to the story to fill in the why and provide more context, the getting-started tutorial will lack significance.
+In other words, the getting started tutorial needs to connect to a larger story that addresses a situational pain point for the user. Without this connection to the story to fill in the why and provide more context, the getting-started tutorial lacks significance.
 
 {% comment %}{% include random_ad3.html %}{% endcomment %}
 
@@ -90,7 +90,7 @@ Mark Baker, who recently retired from tech comm and turned to writing fiction, s
 >
 > Is there a way to translate this to tech comm? Is there a way to present concept material that is somehow pregnant with the possibility of action? I don't know. And figuring it out is no longer in my bailiwick. But I could not help commenting on the parallel.
 
-In short, if fiction writers immediately engage in action, without having more narration to fill in the higher-level significance of the action, the yearning or whatever is driving the characters, this action will be hollow.
+In short, if fiction writers immediately engage in action, without having more narration to fill in the higher-level significance, the action will be hollow.
 
 Chuck Martin said:
 
@@ -110,89 +110,10 @@ In other words, Chuck is arguing for integrating more of the conceptual "why" co
 
 ## Summary
 
-Not everyone's experience and perspective is the same, but from this quick survey, it seems this topic hits close to home for many tech writers. Both the product overview and getting started tutorial are among the most challenging to write, and their presence or absence in documentation can make a huge difference. For this reason, I think it's worthwhile to explore these topics with more depth and analysis.
+Not everyone's experience and perspective is the same, but from this quick survey, it seems this topic hits close to home for many tech writers. Both the product overview and getting started tutorial are among the most challenging to write, and their presence or absence in documentation can make a huge difference. For this reason, I think it's worthwhile to explore these topics with more depth and analysis here.
 
-In contrast to other sections that outline best practices, I'll approach these topics from more of an inverse angle. I devote the bulk of this content to exploring reasons why overviews and getting-started tutorials are so poor, the causes that threaten the best practices for this topic. Defeating each enemy cause one by one, we'll make our way to victory by the end.
-
-## Next steps
+In contrast to other sections that outline best practices, I'll approach these topics from more of an inverse angle. I devote the bulk of this section to exploring reasons why overviews and getting-started tutorials are so poor, the causes that threaten the best practices for this topic.
 
 In the next topic, [Reasons why product overviews are often minimal or nonexistent](docapis_reasons_for_anemic_overviews.html), I'll explain some reasons why product overviews often fail the user.
 
 {% include random_ad4.html %}
-
-{% comment %}
-
-Solution: Debunk some of the reading to do philosophy
-Research into how people use API docs
-Systematic behaviors versus opportunistic behaviors
-
-Solution: identify audience’s information needs vs your own needs
-Classic conundrum of figuring out how much to write -- how much does the audience already know, how much info is required? The writer is not the user, especially as an outsider to the domain.
-Look through support tickets and identify tickets where customers asked for knowledge of some kind. Where are these points of friction happening?
-What slide decks are used by partner engineering, BDs, and others to fill in the blanks?
-Look at the dev mktg content and see if it answers your questions
-
-Solution: model best practices
-What is a good product overview?
-Sample sections in a product overview
-Open source project that identifies templates, good docs project
-
-
-Problem #2: Lack of getting started tutorials
-
-Cause: Information is seen as redundant with other setup tasks and instruction
-Tech writers might wonder why necessarily if other setup and so on are already described in more detail. In some ways the getting started seems redundant with the other information already written.
-
-Cause: Getting started often requires some setup/environment/account that isn’t easily available
-Might need to set up databases, environments, etc. not an easily available sandbox type of thing.
-Might need some test account, provisioning, server instance, etc.
-
-Cause: There might not be any easy way to get started with the product.
-It really might take a whole afternoon to set this up, in which case the getting started might be a joke.
-
-Cause: Getting started tutorials are hard to write because they have to run from A to Z through the setup
-Have to take a user from beginning to end in a manageable way
-Have to be able to walk through the entire product, so you have a lot of ground to cover
-
-Cause: Getting started tutorials are seen as extras, going the extra mile
-Not usually part of doc requirements or needs
-They are easy to overlook because they usually don’t come as requests from teams
-When you see a getting started tutorial in docs, it’s like sweet! But if not, it’s not like you’re being cheated out of docs.
-
-Solution: API reference docs are not task-based, so you need something like this
-Not a straightforward 1-2-3 list of steps
-More like a cupboard of ingredients. Can maybe list a few common recipes only
-Writers end up focusing on reference content only because there’s no a mandate for more task-based docs
-
-Solution: Getting started is fundamental to tech writing
-If you can’t make the product work at a basic level, then you’re really hamstrung in writing. The getting started tutorial can be really empowering.
-
-Solution: psychological benefits of getting started tutorials -- they build confidence with the user
-Feels great to get something working
-See some output, even if small, lets you move towards more complex implementations. Build on the basics.
-Fundamental way we learn is by starting simple and then increasing complexity. People don’t write super complex code. They start simple and keep adding to it to account for different scenarios.
-
-Getting started tutorials - best practices
-Should actually work. Test it out and see how many people are successful at getting through it
-Bad experience in getting started will likely not bode well for more confidence with other help material. But if users can do it, and it works, it does do wonders for their psyche
-
-
-
-
-
-Balance interplay with getting started tutorial and product overview
-Reference each other
-Springboard into each other. Getting started is first step after overview, or vice versa.
-These two topics should be staples in any doc set.
-Getting started tutorial has an opportunity for a teaching moment. Asides where you explain something in more depth.
-First steps after overview should be to get started
-
-
-https://docs.microsoft.com/en-us/azure/time-series-insights/overview-what-is-tsi
-
-https://developers.hubspot.com/docs/api/overview
-https://developers.activecampaign.com/reference#pagination
-https://developer.surveymonkey.com/api/v3/#getting-started
-https://developer.automationanywhere.com/learn/bot-developer-journey/getting-started
-
-{% endcomment %}
