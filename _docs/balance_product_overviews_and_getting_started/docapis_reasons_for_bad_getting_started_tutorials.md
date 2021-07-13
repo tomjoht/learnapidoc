@@ -1,5 +1,5 @@
 ---
-title: "Reasons why getting started tutorials fail"
+title: "Reasons why getting started tutorials fail or don't exist"
 permalink: /docapis_reasons_for_bad_getting_started_tutorials.html
 course: "Documenting REST APIs"
 weight: 15.3

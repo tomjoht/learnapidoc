@@ -162,7 +162,7 @@ This more action-oriented, experiential approach to learning has its roots in a 
 
 If people are always anxious to do tasks, not read conceptual overviews, then why spend time on these conceptual overviews? What purpose do they solve when users just want a list of steps for the task they're trying to perform? With this mindset, the product overview gets shortchanged.
 
-Don't get me wrong &mdash; I support task-oriented docs and agree that it's generally the right approach. There's merit behind experiential, action-oriented learning (which is explored more in the [Reasons why getting started tutorials  fail](docapis_reasons_for_bad_getting_started_tutorials.html)). Explanation docs without a hands-on sense of the product often fall flat. We need context and experience with a product to better understand it. If you try to learn something without first tinkering with the product, it's really hard because names don't mean much unless you have something to hang them on. I learn best by mixing the two experiences &mdash; tinkering and reading, back and forth.
+Don't get me wrong &mdash; I support task-oriented docs and agree that it's generally the right approach. There's merit behind experiential, action-oriented learning (which is explored more in the [Reasons why getting started tutorials  fail or don't exist](docapis_reasons_for_bad_getting_started_tutorials.html)). Explanation docs without a hands-on sense of the product often fall flat. We need context and experience with a product to better understand it. If you try to learn something without first tinkering with the product, it's really hard because names don't mean much unless you have something to hang them on. I learn best by mixing the two experiences &mdash; tinkering and reading, back and forth.
 
 But task-oriented docs often swing too far toward tasks, resulting in minimal or anemic overview information. When that happens, you often end up confusing users with various tasks and no content that helps their decision-making about which tasks to follow and why.
 
@@ -176,4 +176,4 @@ Remember that user behavior isn't night and day when it comes to opportunistic v
 
 ## Next topic
 
-Continue on to the next topic, [Reasons why getting started tutorials fail](docapis_reasons_for_bad_getting_started_tutorials.html).
+Continue on to the next topic, [Reasons why getting started tutorials fail or don't exist](docapis_reasons_for_bad_getting_started_tutorials.html).
