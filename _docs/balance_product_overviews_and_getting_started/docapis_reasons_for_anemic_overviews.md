@@ -173,3 +173,7 @@ Deciding to cater to one type of behavior at the expense of the other might not 
 {: .takeaway}
 
 Remember that user behavior isn't night and day when it comes to opportunistic versus systematic behavior. Users flip back and forth between these two modes as needed. As such, try to link between the task-based topic and concepts where relevant to accommodate this fluctuating behavior.
+
+## Next topic
+
+Continue on to the next topic, [Reasons why getting started tutorials fail](docapis_reasons_for_bad_getting_started_tutorials.html).
