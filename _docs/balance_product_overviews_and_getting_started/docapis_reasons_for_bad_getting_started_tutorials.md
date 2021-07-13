@@ -9,9 +9,6 @@ path1: /docapis_balance.html
 last-modified: 2021-07-12
 ---
 
-{: .note}
-July 12, 2021: I'm currently working on content in this section. Be patient as I refine and build this out more.
-
 In [Reasons why product overviews are often minimal or nonexistent](docapis_reasons_for_anemic_overviews.html), I explained a number of reasons why product overviews are poor. In this section, I'll switch the focus to [getting started tutorials](docapis_doc_getting_started_section.html) and follow the same pattern.
 
 * TOC

@@ -9,9 +9,6 @@ path1: /docapis_balance.html
 last-modified: 2021-07-03
 ---
 
-{: .note}
-July 12, 2021: I'm currently working on content in this section. Be patient as I refine and build this out more.
-
 Have you ever found yourself reading documentation for a product and wondered, what exactly is the product? What does it do? Who is this for? Why isn't it more clear? You look for the big picture and higher-level understanding, but every topic seems to assume that you already know more than you actually do. The nature and use of the tool remains muddy.
 
 In general, a product overview should allow users to get a good sense of what the product does, who it's for, why they might use it, the pain point the product solves, requirements and availability, how to get started, how to get help when needed, and other foundational concepts. Ideally, the product overview should give you a solid understanding of the product and what it's used for.
