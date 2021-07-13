@@ -1,5 +1,5 @@
 ---
-title: "Balancing product overviews with getting started tutorials"
+title: "Introduction to balancing product overviews with getting started tutorials"
 permalink: /docapis_overviews_and_getting_started.html
 course: "Documenting REST APIs"
 weight: 15.1
