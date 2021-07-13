@@ -6,7 +6,7 @@ weight: 15.1
 sidebar: docapis
 section: docstory
 path1: /docapis_balance.html
-last-modified: 2021-07-03
+last-modified: 2021-07-06
 ---
 
 In my experience writing documentation, at least two topics seem to be frequently neglected: [product overviews](docapis_doc_overview.html) and [getting started tutorials](docapis_doc_getting_started_section.html). Not all the time &mdash; many companies also have great product overviews and excellent getting started tutorials. But I often have the misfortune of arriving at documentation portals and feeling lost, and I don't find much help in the product overview. If there's a getting started tutorial (not usually), the success rate of getting through it is low.

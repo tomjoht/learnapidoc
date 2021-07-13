@@ -6,7 +6,7 @@ weight: 15.2
 sidebar: docapis
 section: docstory
 path1: /docapis_balance.html
-last-modified: 2021-07-03
+last-modified: 2021-07-12
 ---
 
 Have you ever found yourself reading documentation for a product and wondered, what exactly is the product? What does it do? Who is this for? Why isn't it more clear? You look for the big picture and higher-level understanding, but every topic seems to assume that you already know more than you actually do. The nature and use of the tool remains muddy.
