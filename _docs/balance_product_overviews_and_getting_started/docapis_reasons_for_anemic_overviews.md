@@ -38,7 +38,7 @@ Every product seems to elicit its own unique sections on the overview, but these
 
 {% include random_ad4.html %}
 
-## Cause 1: The reader isn't the intended audience, so the overview fails for this reader
+## Cause 1: The reader isn't the intended audience, so the overview fails for the reader
 
 Perhaps the main reason that product overviews fail is because the reader (for example, a tech writer reading a product overview about some API for developers) isn't the intended audience for the product. As such, the overview might fail for that particular reader but actually be fine for the intended audience. This mismatch of actual reader versus intended reader makes it difficult to make judgments about product overviews.
 
@@ -71,7 +71,7 @@ Overall, as we read through product overviews, we have to remember that we're us
 {: .takeaway}
 If the overview doesn't make sense to you, it might not actually be poor. You must determine whether it makes sense to the intended users of the product.
 
-## Cause 2: UX's influence on intuitiveness implies that long overviews run counter to good product design
+## Cause 2: UX's influence on intuitiveness implies that long overviews indicate bad design
 
 Another reason why product overviews are anemic is due to UX's influence with intuitiveness. (This cause is related to the previous point but a separate facet.) The idea is that products should be intuitive and naturally address mental models that customers have, without the need for extensive explanations. Why would you need to explain a product in depth to the users who you built it for? If something needs a deep explanation, it probably isn't well-designed and intuitive for that audience. (Fabrizio Ferri mentioned this point during a thread on Write the Docs Slack.)
 
@@ -94,7 +94,7 @@ For more on mental models, see the [Schemas and learning](https://idratherbewrit
 {: .takeaway}
 Define the stories that your audience uses to think about the scenario your product addresses. What mental model or schema organizes their thinking about the problem? If your product overview already naturally fits into this mental model, then you might not need to make the details more explicit in an overview &mdash; it might already make sense for the user.
 
-## Cause 3: Overview pages are hard to write (so they're often neglected)
+## Cause 3: Overview pages are hard to write, so they're often neglected
 
 Another reason product overviews often fail for users is because, put simply, product overviews are hard to write, and so they are often poorly executed. The product overview requires you to be thoroughly familiar with the product, comfortable enough to summarize the product at a high level, describe the overall architecture, use cases, how to get started, requirements and limitations, and more.
 

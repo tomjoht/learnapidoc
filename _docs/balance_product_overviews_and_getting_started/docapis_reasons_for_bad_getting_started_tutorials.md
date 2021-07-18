@@ -58,7 +58,7 @@ But getting engineers to make a [sample app](docapis_sample_apps.html) available
 {: .takeaway}
 In scenarios where you lack a sample app, you could still provide code snippets and instruct users to make the code configurations in their own apps. Assume that your target users will actually have apps and be familiar with the programming language; tell them to add a class and instantiate it with certain parameters in their app, etc. If you find that the instructions go beyond your audience's skill level, double down on those efforts to make a sample app available. (You can always add detailed notes to the sample app that state the app is not intended for production use and is a simplified form of an app to demonstrate API calls only.)
 
-## Cause 4: The getting started tutorial omits details for brevity that might lead to confusion
+## Cause 4: The getting started tutorial omits details for the sake of brevity that might lead to confusion
 
 Another obstacle to creating the getting started tutorial is the challenge of writing this content, as it requires more writing skill. Ideally, the getting started tutorial condenses longer, more detailed information into a succinct one-page tutorial. Yet this tutorial is supposed to take a user through registration, setup, authorization, execution, viewing results, interpretation, and more. It's like being asked to create a poem out of a novel.
 
