@@ -54,7 +54,7 @@ Although the sentences seem clear, and there are screenshots, interactive demos,
 
 As good as this product overview is written, it doesn't make sense to me because I'm not the intended audience. I'm not a developer working with large data sets, nor am I involved in machine learning algorithms. I can't even understand what scenario would make sense where I'd have "time series data" with anomalies that I need to detect as part of a machine learning model that I'm building, even though this scenario is apparently applicable across industries.
 
-It's not the writer's responsibility to bring non-target users up from ground zero here, holding my hand through this knowledge domain and assuming I know nothing. But it would help to perhaps explicitly identify the audience here. Even without identifying the audience, though, it's pretty clear reading this overview that I'm not user envisioned for this product.
+It's not the writer's responsibility to bring non-target users up from ground zero here, holding my hand through this knowledge domain and assuming I know nothing. But it would help to perhaps explicitly identify the audience here. Even without identifying the audience, though, it's pretty clear reading this overview that I'm not the user envisioned for this product.
 
 So how do you, as a technical writer, a person who is most likely an outsider to the domain you're working in, know if the overview makes sense to the intended audience? This is the whole crux of writing documentation: most of the time, you're an outsider to the knowledge domain, so it's hard to know what the audience already knows or does not know, and what you need to explain or what you can assume.
 
@@ -140,7 +140,7 @@ Origin myths are not typical content that technical writers create. For example,
 
 Developer messaging focuses on building trust with users, finding an emotional connection with them, addressing the developer journey, and telling the product story. Most tech writers don't think about this type of content in docs &mdash; this is the land of content marketing. For example, suppose you worked as a technical writer for Red Bull. Your primary task would be to describe the product's ingredients, not to construct a story about Red Bull being the drink of extreme sports enthusiasts, for as helicopter skiers and daredevil mountain bikers.
 
-As such, if there is not marketing layer for the product, tech writers are unlikely to create one because this space entails writing that tech writers might not want to dabble in. Or the marketing layer might fully address questions, so they don't need to be redundantly handled in docs.
+As such, if there is not a marketing layer for the product, tech writers are unlikely to create one because this space entails writing that tech writers might not want to dabble in. Or the marketing layer might fully address questions, so they don't need to be redundantly handled in docs.
 
 However, any good content strategy should have alignment with each content touchpoint, from pre-sales to post-sales. In [Principle 8: Align the product story with the user story](/simplifying-complexity/articulate-invisible-stories-that-influence-action.html), a series on how to simplify complexity, I argued that products often fail because the story the company tells doesn't align with the story the user tells. Developer docs have the added complexity of having three stories: a company story, an end-user story, and a developer story. If all three groups are playing off different stories, the product likely won't succeed.
 
