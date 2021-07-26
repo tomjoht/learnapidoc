@@ -56,7 +56,7 @@ As good as this product overview is written, it doesn't make sense to me because
 
 It's not the writer's responsibility to bring non-target users up from ground zero here, holding my hand through this knowledge domain and assuming I know nothing. But it would help to perhaps explicitly identify the audience here. Even without identifying the audience, though, it's pretty clear reading this overview that I'm not the user envisioned for this product.
 
-So how do you, as a technical writer, a person who is most likely an outsider to the domain you're working in, know if the overview makes sense to the intended audience? This is the whole crux of writing documentation: most of the time, you're an outsider to the knowledge domain, so it's hard to know what the audience already knows or does not know, and what you need to explain or what you can assume.
+So how do you, as a technical writer, a person who is most likely an outsider to the domain you're working in, know if the overview makes sense to the intended audience? This is the whole crux of writing documentation: most of the time, you're an outsider to the knowledge domain, so it's hard to know what the audience already knows or does not know, and what to explain or assume.
 
 As technical writers, we usually spin our lack of domain awareness as a positive, because we don't end up assuming our audience knows so much already. We aren't hampered by the curse of knowledge, numb to the jargon and concepts our audience also isn't familiar with. So we explain the basics, we define terms, we start a few rungs lower on the knowledge ladder than people expect. And users often appreciate it.
 
@@ -66,22 +66,20 @@ But without closer interaction with users, we can only guess what users might kn
 
 {% include random_ad2.html %}
 
-Overall, as we read through product overviews, we have to remember that we're usually not the intended audience. It might fail to orient us, but does it fail for the intended audience? At the very least, try to be clear about the intended audience in the overview, as this will set expectations for knowledge levels. You can also add a "Background Knowledge and Assumptions" section. This section could link out to some preparatory documentation (perhaps on other websites) that users should consult if they get lost.
-
 {: .takeaway}
-If the overview doesn't make sense to you, it might not actually be poor. You must determine whether it makes sense to the intended users of the product.
+As we read through product overviews, we have to remember that we're usually not the intended audience. It might fail to orient us, but does it fail for the intended audience? At the very least, try to be clear about the intended audience in the overview, as this will set expectations for knowledge levels. You can also add a "Background Knowledge and Assumptions" section. This section could link out to some preparatory documentation (perhaps on other websites) that users should consult if they get lost.
 
 ## Cause 2: UX's influence on intuitiveness implies that long overviews indicate bad design
 
-Another reason why product overviews are anemic is due to UX's influence with intuitiveness. (This cause is related to the previous point but a separate facet.) The idea is that products should be intuitive and naturally address mental models that customers have, without the need for extensive explanations. Why would you need to explain a product in depth to the users who you built it for? If something needs a deep explanation, it probably isn't well-designed and intuitive for that audience. (Fabrizio Ferri mentioned this point during a thread on Write the Docs Slack.)
+Another reason why product overviews are anemic is due to UX's influence with intuitiveness. (This cause is related to the previous point but a separate facet.) The idea is that products should be intuitive and naturally address mental models that customers have, without the need for extensive explanations. Why would you need to explain a product in depth to the users who you built it for? If something needs a deep explanation, it probably isn't well-designed and intuitive for that audience.
 
 Achieving intuitiveness in your product is a common goal of UX design. In [What makes intuitive products intuitive?](https://uxdesign.cc/what-makes-intuitive-products-intuitive-52f52f12c3b5), Scott Kitchell argues that a product is intuitive when it matches the mental model of the user. Scott says, "Intuitiveness can be created by designing every part of a product in reference to a mental model, and then promoting the mental model through the UI and marketing."
 
-Mental models are the logic and theories in our heads that make sense of the world around us. For example, in mountain biking, a common product for seats is a "dropper post," which lets bikers dynamically raise or lower the seat post height by pressing a button on their handlebars. Why would one need such a button and the ability to quickly raise or lower the seat height while riding? If you're into mountain biking, you know that climbing dirt/gravel hills requires you to sit back while keeping weight on the back tire for traction, so you might need to lower the seat quickly on the climb, but then revert to regular height for other scenarios.
+Mental models are the logic and theories in our heads that make sense of the world around us. For example, in mountain biking, a common product for seats is a "dropper post," which lets bikers dynamically raise or lower the seat post height by pressing a button on their handlebars. Why would one need such a button and the ability to quickly raise or lower the seat height while riding? If you're into mountain biking, you know that climbing dirt/gravel hills requires you to sit low while keeping weight on the back tire for traction, so you might need to lower the seat quickly on the climb, but then revert to regular height for other scenarios.
 
 In short, if you're part of the intended audience, you already have a rationale for the feature and don't need extensive conceptual docs explaining the scenario and reason for the product. You won't see extensive conceptual docs for dropper posts on product detail pages. The need is already felt by the intended audience.
 
-The problem in tech comm is that tech writers are usually outsiders to the domain, looking in at the product. We don't share the same mental model as our users. As a result, many details don't immediately make sense. Kitchell says,
+The problem in tech comm is that tech writers are usually outsiders to the domain, looking in at the product. We don't share the same mental model as our users. As a result, many details don't immediately make sense. Kitchell says:
 
 > Mental models are literally the logic within our heads, so if it’s in there, you’ll see the logic in it. From the outside however, others will not. Unintuitive mental models are like irregular looking blocks &mdash; They don’t fit well with other mental models which makes them harder to remember, and problem-solve with.
 
@@ -151,7 +149,9 @@ Look to see if marketing content covers the higher-level content needs in the do
 
 ## Cause 6: Tech comm buys in to the "reading to do" paradigm for docs, minimizing the need for longer conceptual docs
 
-Another reason for lack of product overviews, even when outsiders like tech writers create the product docs, is because of tech comm's strategy preference for task-oriented docs. There's a strong belief among most tech writers that users turn to docs only when they have a problem they're trying to solve. As a result, docs are usually problem-oriented, focused on what users want to do and achieve. Conceptual docs are often seen as a sideshow to the task-oriented docs. This idea is so pervasive, it hardly needs explaining. The hallmark of good technical docs, most tech writers believe, is a list of numbered steps that takes users through a complex task.
+Another reason for lack of product overviews, even when outsiders like tech writers create the product docs, is due to tech comm's strategy preference for task-oriented docs. There's a strong belief among most tech writers that users turn to docs only when they have a task-related problem they're trying to solve.
+
+As a result, docs are usually problem-oriented, focused on what users want to do and achieve. Conceptual docs are often seen as a sideshow to the task-oriented docs. This idea is so pervasive, it hardly needs explaining. The hallmark of good technical docs, most tech writers believe, is a list of numbered steps that takes users through a complex task.
 
 This more action-oriented, experiential approach to learning has its roots in a movement called "minimalism" that John Carroll, author of the [*Nurnberg Funnel*](https://www.amazon.com/The-Nurnberg-Funnel-Instruction-Communication/dp/0262031639,) identified in the 1980s. Describing John Carroll's minimalism approach, scholars David Farkas and Thomas Williams write:
 

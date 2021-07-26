@@ -34,7 +34,7 @@ In general, best practices for documentation would mean accounting for both mind
 
 ## Others' experiences
 
-I'm not alone in my thoughts about the importance of product overviews and getting started tutorials. In a recent blog post, [Balancing action with narration: Creating product overviews and getting started tutorials to satisfy both try-first and read-first learning modes](/blog/balancing-action-with-narration-create-content-to-satisfy-opportunistic-and-systematic/#commento) I floated an idea about presenting on these topics, sharing a similar overview I described as above, and asked my blog readers to agree or disagree with this statement: "Product overviews and getting started tutorials are essential but often neglected topics in documentation."
+I'm not alone in my thoughts about the importance of product overviews and getting started tutorials. In a recent blog post, [Balancing action with narration: Creating product overviews and getting started tutorials to satisfy both try-first and read-first learning modes](/blog/balancing-action-with-narration-create-content-to-satisfy-opportunistic-and-systematic/#commento), I floated an idea about presenting on these topics, sharing a similar overview I described as above, and asked my readers to agree or disagree with this statement: "Product overviews and getting started tutorials are essential but often neglected topics in documentation." Here are the results:
 
 <a class="noCrossRef" href="https://www.questionpro.com/t/7Bl4niZmV4G"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/prod_overviews_started_survey.png" alt="Survey about product overviews and getting started tutorials" /></a>
 
@@ -112,7 +112,7 @@ In other words, Chuck is arguing for integrating more of the conceptual "why" co
 
 Not everyone's experience and perspective is the same, but from this quick survey, it seems this topic hits close to home for many tech writers. Both the product overview and getting started tutorial are among the most challenging to write, and their presence or absence in documentation can make a huge difference. For this reason, I think it's worthwhile to explore these topics with more depth and analysis here.
 
-In contrast to other sections that outline best practices, I'll approach these topics from more of an inverse angle. I devote the bulk of this section to exploring reasons why overviews and getting-started tutorials are so poor, the causes that threaten the best practices for this topic.
+In contrast to other sections that outline best practices, I'll approach these topics from more of an inverse angle. I devote the bulk of this section to exploring reasons why overviews and getting-started tutorials are so poor, the causes that threaten the best practices for this topic. It's by exploring these causes that we can find ways around them and adhere to the best practices for these content types.
 
 In the next topic, [Reasons why product overviews are often minimal or nonexistent](docapis_reasons_for_anemic_overviews.html), I'll explain some reasons why product overviews often fail the user.
 
