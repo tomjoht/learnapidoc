@@ -432,6 +432,10 @@ folders:
   - title: Templates for working with metrics
     jurl: /docapis_metrics_templates.html
 
+  - title: Status reports -- a tool for visibility and relationship building
+    jurl: /docapis_status_reports.html
+
+
 - title: "XIV: Balancing product overviews with getting started tutorials"
   jurl: /docapis_balance_concepts_and_tasks.html
   folderitems:
