@@ -108,7 +108,7 @@ The following are some common Javadoc tags:
 
 {% comment %}{% include random_ad3.html %}{% endcomment %}
 
-## What elements you add Javadoc tags to
+## Which elements you add Javadoc tags to
 
 You add Javadoc tags to classes, methods, and fields.
 
