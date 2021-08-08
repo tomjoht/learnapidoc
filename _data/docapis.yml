@@ -414,6 +414,9 @@ folders:
   - title: Processes for changing internal doc culture
     jurl: /docapis_changing_internal_doc_culture.html
 
+  - title: Status reports -- a tool for visibility and relationship building
+    jurl: /docapis_status_reports.html
+    
 - title: "XIII: Metrics and measurement"
   jurl: /docapis_metrics_and_measurement.html
   folderitems:
@@ -431,10 +434,6 @@ folders:
 
   - title: Templates for working with metrics
     jurl: /docapis_metrics_templates.html
-
-  - title: Status reports -- a tool for visibility and relationship building
-    jurl: /docapis_status_reports.html
-
 
 - title: "XIV: Balancing product overviews with getting started tutorials"
   jurl: /docapis_balance_concepts_and_tasks.html
