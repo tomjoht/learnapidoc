@@ -34,7 +34,6 @@ The following are the most recent updates to the API documentation course.
   <td markdown="span">Covers best practices for creating documentation status reports that you send to your business stakeholders.</td>
 </tr>
 <tr>
-<tr>
   <td>July 2021</td>
   <td markdown="span">[Balancing product overviews with getting started tutorials](docapis_overviews_and_getting_started.html)</td>
   <td markdown="span">Introduces a new section that explores the balance between conceptual and task-based information, arguing that product overviews are often anemic and neglected in favor of tasks.</td>
