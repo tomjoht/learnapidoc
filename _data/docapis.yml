@@ -417,7 +417,7 @@ folders:
   - title: Status reports -- a tool for visibility and relationship building
     jurl: /docapis_status_reports.html
     
-- title: "XIII: Metrics and measurement"
+- title: "XII: Metrics and measurement"
   jurl: /docapis_metrics_and_measurement.html
   folderitems:
   - title: Measuring progress against documentation quality goals
@@ -434,6 +434,9 @@ folders:
 
   - title: Templates for working with metrics
     jurl: /docapis_metrics_templates.html
+
+  - title: title: Setting documentation goals around documentation coverage and quality
+    jurl: /docapis_setting_documentation_goals.html
 
 - title: "XIV: Balancing product overviews with getting started tutorials"
   jurl: /docapis_balance_concepts_and_tasks.html
