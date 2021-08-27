@@ -1,6 +1,6 @@
 ---
 title: Setting documentation goals around documentation coverage and quality
-permalink: /setting_docapis_documentation_goals.html
+permalink: /docapis_setting_documentation_goals.html
 course: "Documenting REST APIs"
 weight: 13.6
 sidebar: docapis
