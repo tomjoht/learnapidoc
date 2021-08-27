@@ -69,7 +69,7 @@ relevance:
   row: 19
 
 - title: Code samples exist
-  description: "<a href=''></a>Code samples](docapis_codesamples_bestpractices.html) showing sample ways to use the API (or similar tools) are provided. Ideally, the code samples are available in the user's target language. This might mean providing multiple code samples."
+  description: "<a href='docapis_codesamples_bestpractices'>Code samples</a> showing sample ways to use the API (or similar tools) are provided. Ideally, the code samples are available in the user's target language. This might mean providing multiple code samples."
   weight: 3
   row: 20
 
