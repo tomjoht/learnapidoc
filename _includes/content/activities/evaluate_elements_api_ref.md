@@ -13,7 +13,6 @@ In this activity, you'll review API reference documentation and identify the com
     *  [Flickr API reference](https://www.flickr.com/services/api/)
     *  [YouTube API reference](https://developers.google.com/youtube/v3/docs)
     *  [Splunk API reference](https://docs.splunk.com/Documentation/Splunk/8.0.0/RESTREF/RESTlist)
-    *  [Zomato API reference](https://developers.zomato.com/documentation#/)
     *  [Paypal API reference](https://developer.paypal.com/docs/api/overview/)
     *  [Basecamp API reference](https://github.com/basecamp/bc3-api)
     *  [OpenSecrets API reference](http://www.opensecrets.org/open-data/api-documentation)
