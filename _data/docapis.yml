@@ -396,7 +396,7 @@ folders:
   - title: "Processes for managing SDK releases"
     jurl: /docapis_managing_sdk_releases.html
 
-  - title: Documentation kickoff meeting and product demo
+  - title: Processes for documentation kickoff meetings and product demos
     jurl: /docapis_kickoff_meeting_agenda.html
 
   - title: "Processes for reviewing documentation"
@@ -414,9 +414,12 @@ folders:
   - title: Processes for changing internal doc culture
     jurl: /docapis_changing_internal_doc_culture.html
 
-  - title: Status reports -- a tool for visibility and relationship building
+  - title: Processes for reporting status to business stakeholders
     jurl: /docapis_status_reports.html
-    
+
+  - title: Processes for integrating documentation coverage with each software release
+    jurl: /docapis_release_process.html
+
 - title: "XII: Metrics and measurement"
   jurl: /docapis_metrics_and_measurement.html
   folderitems:

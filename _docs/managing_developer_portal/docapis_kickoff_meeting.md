@@ -1,5 +1,5 @@
 ---
-title: Documentation kickoff meeting and product demo
+title: Processes for documentation kickoff meetings and product demos
 permalink: /docapis_kickoff_meeting_agenda.html
 course: "Documenting REST APIs"
 weight: 12.5
