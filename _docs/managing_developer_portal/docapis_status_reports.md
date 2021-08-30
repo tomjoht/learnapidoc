@@ -21,7 +21,7 @@ In my post [Some good decisions and minor mistakes](/blog/good-decisions-and-mis
 
 A sample status report has sections such as these:
 
-* Report's purpose and intro
+* Purpose and intro
 * About your team
 * Recently published docs
 * Upcoming doc work
@@ -31,15 +31,15 @@ A sample status report has sections such as these:
 
 Here's a bit more about each of these sections.
 
-### Report's purpose/intro
+### Purpose and intro
 
-This section provides a few lines about the report and its purpose, such as "This documentation report covers such and such time period and includes information about newly published docs, metrics, support deflection efforts, a review of strategic initiatives, and more. The purpose is to keep others updated about doc efforts and strategies to ensure alignment across groups, etc."
+This section provides a few lines about the report and its purpose, and might start out like this: "This documentation report covers such and such time period and includes information about newly published docs, metrics, support deflection efforts, a review of strategic initiatives, and more. The purpose is to keep others updated about doc efforts and strategies to ensure alignment across groups, etc." Hopefully, you can make your intro more exciting than this, but you get the point.
 
 ### About your team and where you publish docs
 
 This section explains a bit about your team, such as "The documentation team consists of X number of writers supporting external documentation on X site. The team works with engineers across A, B, C product teams to provide documentation for such and such products. We also help edit and publish contributions written by engineers directly."
 
-Although these details might seem obvious to you, in any large organization, there are usually many groups that aren't aware of each other, despite working under the same organizational umbrella. In my experiences in big tech companies, only about half (or fewer) of the engineers have ever worked with technical writers, and of those, many have only a vague idea of what we do or even where the docs are published. Really. They also don't know the process for requesting doc work, so you could include a line about that workflow too.
+Although these details might seem obvious to you, in any large organization, there are usually many groups that aren't aware of each other, despite working under the same organizational umbrella. In my experiences in big tech companies, only about half of the engineers have ever worked with technical writers, and of those, many have only a vague idea of what we do or even where the docs are published. They also don't know the process for requesting doc work, so you could include a line about that workflow too.
 
 ### Recently published docs
 
@@ -69,13 +69,13 @@ Report on some aspect of your site's traffic and analytics. For example, you cou
 
 You could also list the most popular pages in your documentation and explore reasons why. Especially if the pages have unexpectedly high traffic, it could be good fodder for analysis.
 
-If you have an aptitude for metrics analysis, you could also provide insights about the metrics. For example, analyze why there are spikes or dips. Look at trends about user growth or shrinkage over time and probe why. Look at search keyword hits and analyze whether the searches connect with docs. Look at your average time on page and assess whether it's too long or short. Look at flows that users take within your site, and why users might be going to the pages they navigate to (for example, why are users going to Requirements after the Overview instead of the Getting Started tutorial?), and more. Showcase your ability to crunch and interpret data.
+If you have an aptitude for metrics analysis, you could also provide insights about these numbers. For example, analyze why there are spikes or dips. Look at trends about user growth or shrinkage over time and probe why. Look at search keyword hits and analyze whether the searches connect with docs. Look at your average time on page and assess whether it's too long or short. Look at flows that users take within your site, and why users might be going to the pages they navigate to (for example, why are users going to Requirements after the Overview instead of the Getting Started tutorial?), and more. Showcase your ability to crunch and interpret data.
 
 **Warning:** Analytics can be a rabbit hole that can consume a lot of time without leading to actionable results. For example, whether the average time on page is 3 minutes or 5 minutes, is that going to dictate your information architecture strategy? Probably not. The most valuable metrics are usually your top 10 pages, which can give you a sense of where to prioritize your content development efforts. Dive into metrics, but come up for air soon after.
 
 Even if analytics aren't always actionable, it's worth periodically reviewing the numbers to try glean as many insights as possible. Every year, I regularly review analytics on my blog. See the section [Posts analyzing site analytics](/analytics/).
 
-The biggest action item to come from these blog analytics assessments has been to see the large traffic going to my API doc site, which prompted me to focus more efforts in this direction. At Amazon, when I looked at analytics, I realized that device specifications regularly trended as the most popular pages, so I put a lot of effort in into [Fire TV device specifications](https://developer.amazon.com/docs/fire-tv/device-specifications.html). In short, your most popular pages can indicate where you should prioritize your time.
+The biggest action item to come from these blog analytics assessments has been to see the large traffic going to this API doc site, which prompted me to focus more efforts in this direction. At Amazon, when I looked at analytics, I realized that device specifications regularly trended as the most popular pages, so I put a lot of effort in into [Fire TV device specifications](https://developer.amazon.com/docs/fire-tv/device-specifications.html). In short, your most popular pages can indicate where you should prioritize your time.
 
 ### Strategic initiatives
 
@@ -83,7 +83,7 @@ Discuss a few points of your doc strategy at a high level. Remember, many people
 
 ## Other sections you could include
 
-For other ideas about doc report content, see the suggestions from Saul Carliner in [Eight Tips Healthy Contractor for with Clients Relationships](https://www.stc.org/intercom/2018/04/eight-tips-for-healthy-contractor-relationships-with-clients/). Saul addresses status reports from contractors to clients, but it isn't too different from full-time employees and stakeholders. Saul writes:
+For other ideas about doc report content, see the suggestions from Saul Carliner in [Eight Tips Healthy Contractor for with Clients Relationships](https://www.stc.org/intercom/2018/04/eight-tips-for-healthy-contractor-relationships-with-clients/). Saul addresses status reports from contractors to clients, so it's a bit different from full-time employees and stakeholders, but not so much. Saul writes:
 
 > ... provide reports anyway to address the natural concern of clients that you will complete their work on time and within budget. Take the initiative to send reports. The reports should identify:
 >
@@ -95,7 +95,7 @@ Saul says that these reports build confidence with the employer that you, as a c
 
 Saul also notes that the initial reports might take a while, but once you've created a few, you'll have an established format and routine, and the effort will be less time intensive. With each report you send, you can fine tune your structure, language, and style in these reports.
 
-Finally, as Saul notes in his last point, you could also add a section on issues and obstacles. Be careful of throwing other teams under the bus in a public way here, though. For example, if your biggest obstacle is that engineers don't review docs, or that you're understaffed for the amount of work, or that your company's culture is anti-collaborative when it comes to docs ("docs aren't my job"), you could call this out in the report, but do it tactfully, without laying blame with any particular group or person.
+Finally, as Saul notes in his last point, you could also add a section on issues and obstacles. Be careful of throwing other teams under the bus in a public way here, though. For example, if your biggest obstacle is that engineers don't review docs, or that you're understaffed for the amount of work, or that your company's culture is anti-collaborative when it comes to docs ("docs aren't my job!"), you could call this out in the report, but do it tactfully, without laying blame with any particular group or person.
 
 ## Frequency, format, audience
 
@@ -103,7 +103,7 @@ Now that you have a sense of what the status update involves, you have some othe
 
 * **Frequency**: I recommend sending out a status report on a monthly basis. Biweekly is too frequent for all the sections noted above, and quarterly is too long for people to remember anything from the previous report.
 
-* **Format**: You could package the content up into a snazzy newsletter format, but a simple email is fine. I start the doc report in Google Docs and then just paste it into an email when I'm ready to send it. I think people respond better to raw email rather than shiny newsletter templates.
+* **Format**: You could package the content up into a snazzy newsletter format, but a simple text email is fine. I start the doc report in Google Docs and then just paste it into an email when I'm ready to send it. I think people respond better to raw email rather than shiny newsletter templates.
 
 * **Audience**: Send the report to your business leadership groups, your team's alias, other adjacent writing teams working in the same general space, and more. You don't want to spam everyone, of course, but within an enterprise setting, people more or less expect to receive these reports unsolicited. Look at other reports being sent by other groups, and perhaps copy the same groups listed in their "To" list. The risk of *not informing others* is worse than inappropriately including them. A frequent complaint in most tech orgs is poor communication. People prefer to be informed.
 
@@ -111,23 +111,23 @@ Now that you have a sense of what the status update involves, you have some othe
 
 Sending these emails (which might go to hundreds of people depending on the email lists) is usually something that makes writers feel uncomfortable. You might feel like you're tooting your own horn, and most writers, often somewhat introverted, tend to prefer not to call attention to themselves. Many writers like to stay in the shadows.
 
-This attitude &mdash; staying in the shadows &mdash; is an attitude to avoid. As a blogger, I often feel uncomfortable sharing posts on Twitter, Linkedin, and in a newsletter. Every couple of weeks, I'm basically shouting "Hey, look at what I wrote here. Read my thoughts. See what *I* have to say." This isn't my nature. I'm not overtly charismatic, extroverted, social, or prone to transparency. At a party, I don't naturally introduce myself to strangers or jump into the middle of conversations. But if you fail to promote your team in reports like this, your team will suffer from invisibility, reduced status, and marginalization.
+Staying in the shadows is an approach to avoid if you want to get ahead at work. As a blogger, I often feel uncomfortable sharing posts on Twitter, Linkedin, and in a newsletter. Every couple of weeks, I'm basically saying "Hey, look at what I wrote here! Read my thoughts! See what *I* have to say." This isn't my nature. I'm not overtly charismatic, extroverted, social, or prone to transparency. At a party, I don't naturally introduce myself to strangers or jump into the middle of conversations. But if you fail to promote your team in reports like this at work, your team will suffer from invisibility, reduced status, and marginalization (to a degree, anyway).
 
-Tech writers have been complaining about being marginalized in the workplace for years. See these posts for elaboration on this topic:
+I've written previously about this topic, as these themes have characterized the tech writing profession for years. See these posts for elaboration on this topic:
 
 * [Guest post: Why are technical writers often treated as such an unimportant part of a company?](/blog/why-technical-writers-treated-as-unimportant/)
 * [Value arguments for docs and tech comm](/2017/12/28/value-of-tech-comm-in-company-part1/)
 * [Reflecting seven years later about why we were laid off](/blog/reflecting-seven-years-later-about-layoff-intro/)
 
-Can sending monthly doc reports fix the devaluation of the tech writer role? Maybe not, but this is certainly a way to help address visibility. The formula for visibility and recognition on the web is more or less the same as within an enterprise: write and promote, write and promote, write and promote, ad infinitum.
+Can sending monthly doc reports fix the devaluation of the tech writer role? Maybe not, but this is certainly a way to help address visibility. The formula for visibility and recognition on the web with blogging is more or less the same as within an enterprise: write and promote, write and promote, write and promote, and so on.
 
 Also, know that business leaders like to read these reports because they usually try to gather input and data from many different groups under their leadership to inform their decision-making. Especially if your upper leaders don't understand documentation (because they're in another business role), these reports can help educate and inform them. It's a way to influence up.
 
 ## A time for self-reflection on your docs
 
-Another important aspect of writing these reports is the time and space they give you for reflection, planning, strategizing, course correction, and more. Without the report, when do you review these things? When do you look at metrics? When do you take stock of what everyone on the team is publishing, and how your work aligns with the upcoming roadmap? When do you look to see if the doc-related tickets are increasing or decreasing? When do you assess how you're doing with your doc strategies? Creating the report benefits you as much as anyone else.
+Another important aspect of writing these reports is the time and space they give you for reflection, planning, strategizing, course correction, and more. Without the report, when do you review these things? When do you look at metrics? When do you take stock of what everyone on the team is publishing, and how your work aligns with the upcoming roadmap? When do you look to see if the doc-related tickets are increasing or decreasing? When do you assess how you're doing with your doc strategies? Creating the report benefits you as much as anyone else. (Same as with writing blog posts &mdash; these posts help me refine my thoughts and perspectives more than they might help anyone else.)
 
-Even if you create a lengthy report that few read, that's okay. The report is for you as much as anyone else.
+So even if you create a lengthy report that few read, that's okay. The report is for you as much as anyone else.
 
 ## Outcomes of regularly sending status reports
 
