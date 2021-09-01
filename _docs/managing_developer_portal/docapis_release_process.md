@@ -1,5 +1,5 @@
 ---
-title: Processes for integrating documentation coverage with each software release
+title: Processes for ensuring documentation coverage with each software release
 permalink: /docapis_release_process.html
 course: "Documenting REST APIs"
 weight: 13.7
