@@ -417,7 +417,7 @@ folders:
   - title: Processes for reporting status to business stakeholders
     jurl: /docapis_status_reports.html
 
-  - title: Processes for integrating documentation coverage with each software release
+  - title: Processes for ensuring documentation coverage with each software release
     jurl: /docapis_release_process.html
 
 - title: "XII: Metrics and measurement"
