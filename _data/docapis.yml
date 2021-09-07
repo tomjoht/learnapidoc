@@ -438,9 +438,6 @@ folders:
   - title: Templates for working with metrics
     jurl: /docapis_metrics_templates.html
 
-  - title: Setting documentation goals around documentation coverage and quality
-    jurl: /docapis_setting_documentation_goals.html
-
 - title: "XIV: Balancing product overviews with getting started tutorials"
   jurl: /docapis_balance_concepts_and_tasks.html
   folderitems:
