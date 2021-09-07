@@ -167,7 +167,7 @@ For more information on resolving merge conflicts, see [Resolving a merge confli
 
 Also, note that sometimes Git throws merge conflicts for no apparent reason. For example, change a file from title case to lower case, and you might throw Git into a bit of confusion. Other times you might see merge conflicts for reasons no one can figure out &mdash; maybe you didn't make any changes to the files that it's flagging as having conflicts. In Git scenarios, there are lots of actors making different commands in different environments. It can be hard to track down the reasons for conflicts. Just resolve them and move on.
 
-For more info learning Git overall, see [Learning Git](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud).
+For more info learning Git overall, see [Learning Git](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud). See also this online course on Udemy: [(Git Learning Journey - Guide to Learn Git (Version Control)](https://www.udemy.com/course/git-learning-journey/), created by Anna Skoulikari, who you can also find on [Write the Docs Slack](https://www.writethedocs.org/slack/).
 
 
 ## Activities
