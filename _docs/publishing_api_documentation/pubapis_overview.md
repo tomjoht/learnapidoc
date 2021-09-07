@@ -52,7 +52,7 @@ However, as I started looking more at API documentation sites, primarily [those 
 
 Despite many advances with single sourcing, content re-use, conditional filtering, and other features in help authoring tools and content management systems, almost no API documentation sites (at least those listed on Programmableweb.com) use them. Why is that? Why has the development community implicitly rejected tech comm tools and their many years of evolution?
 
-Granted, there is the occasional HAT, as with [Photobucket's API](http://bit.ly/photobucketlongurl), but they're rare. And it's even rarer to find an API doc site that structures the content in DITA.
+Granted, there is the occasional HAT, but they're rare. And it's even rarer to find an API doc site that structures the content in DITA.
 
 The short answer is that in API documentation scenarios, more engineers are writing. The content is so technical, they're the only ones who understand it. And when engineers write, they'll naturally gravitate towards tools and workflows they're familiar with.
 
