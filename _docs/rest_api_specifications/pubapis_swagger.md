@@ -91,10 +91,9 @@ Now let's make a request:
 Before we get into this Swagger tutorial with another API (other than the Petstore demo), check out a few Swagger implementations:
 
 * [Reverb](https://reverb.com/swagger#/articles)
-* [VocaDB](http://vocadb.net/swagger/ui/index)
-* [Watson Developer Cloud](https://watson-api-explorer.mybluemix.net/)
+* [VocaDB](https://vocadb.net/swagger/index.html)
+* [IBM Watson IoT Admin REST APIs](https://docs.internetofthings.ibmcloud.com/apis/swagger/v0002/org-admin.html)
 * [The Movie Database API](https://developers.themoviedb.org/3/account)
-* [Zomato API](https://developers.zomato.com/documentation)
 
 Some of these sites look the same, but others, such as The Movie Database API and Zomato, have been integrated seamlessly into the rest of their documentation website.
 
