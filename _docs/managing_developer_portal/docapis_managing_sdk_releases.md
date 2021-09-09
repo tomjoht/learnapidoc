@@ -1,5 +1,5 @@
 ---
-title: Processes for managing SDK releases
+title: Managing SDK releases
 permalink: /docapis_managing_sdk_releases.html
 course: "Documenting REST APIs"
 weight: 12.4
