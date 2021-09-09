@@ -384,40 +384,40 @@ folders:
   jurl: /docapis_managing_doc_processes.html
   folderitems:
 
-  - title: DX content strategy with developer portals
+  - title: "DX content strategy with developer portals"
     jurl: /docapis_dx_content_strategy.html
 
-  - title: "Processes for managing large documentation projects"
+  - title: "Managing large documentation projects"
     jurl: /docapis_managing_doc_projects.html
 
-  - title: "Processes for managing small documentation requests"
+  - title: "Managing small documentation requests"
     jurl: /docapis_managing_small_doc_requests.html
 
-  - title: "Processes for managing SDK releases"
+  - title: "Managing SDK releases"
     jurl: /docapis_managing_sdk_releases.html
 
-  - title: Processes for documentation kickoff meetings and product demos
+  - title: "Documentation kickoff meetings and product demos"
     jurl: /docapis_kickoff_meeting_agenda.html
 
-  - title: "Processes for reviewing documentation"
+  - title: "Reviewing documentation"
     jurl: /docapis_review_processes.html
 
-  - title: Processes for maintaining existing documentation
+  - title: "Maintaining existing documentation"
     jurl: /docapis_doc_maintenance_processes.html
 
-  - title: Processes for collecting feedback post-release
+  - title: "Collecting feedback post-release"
     jurl: /docapis_collecting_feedback_post_release.html
 
-  - title: Processes for external contributors
+  - title: "Managing content from external contributors"
     jurl: /docapis_processes_for_external_contributors.html
 
-  - title: Processes for changing internal doc culture
+  - title: "Changing internal doc culture"
     jurl: /docapis_changing_internal_doc_culture.html
 
-  - title: Processes for reporting status to business stakeholders
+  - title: "Sending doc status reports -- a tool for visibility and relationship building"
     jurl: /docapis_status_reports.html
 
-  - title: Processes for ensuring documentation coverage with each software release
+  - title: "Processes for ensuring documentation coverage with each software release"
     jurl: /docapis_release_process.html
 
 - title: "XII: Metrics and measurement"
