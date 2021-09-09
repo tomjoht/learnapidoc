@@ -1,5 +1,5 @@
 ---
-title: Processes for external contributors
+title: Managing content from external contributors
 permalink: /docapis_processes_for_external_contributors.html
 course: "Documenting REST APIs"
 weight: 12.9
