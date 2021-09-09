@@ -1,5 +1,5 @@
 ---
-title: Processes for reporting status to business stakeholders
+title: Sending doc status reports -- a tool for visibility and relationship building
 permalink: /docapis_status_reports.html
 course: "Documenting REST APIs"
 weight: 13.6
