@@ -1,5 +1,5 @@
 ---
-title: Processes for changing internal doc culture
+title: Changing internal doc culture
 permalink: /docapis_changing_internal_doc_culture.html
 course: "Documenting REST APIs"
 weight: 12.91
