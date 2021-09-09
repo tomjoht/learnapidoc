@@ -30,12 +30,12 @@ The following are the most recent updates to the API documentation course.
 <tbody>
 <tr>
   <td>August 2021</td>
-  <td markdown="span">[Processes for integrating documentation coverage with each software release](docapis_release_process.html)</td>
+  <td markdown="span">[Ensuring documentation coverage with each software release](docapis_release_process.html)</td>
   <td markdown="span">Covers best practices for ensuring that each new feature in a release has adequate documentation coverage.</td>
 </tr>
 <tr>
   <td>August 2021</td>
-  <td markdown="span">[Processes for reporting status to business stakeholders](docapis_status_reports.html)</td>
+  <td markdown="span">[Reporting status to business stakeholders](docapis_status_reports.html)</td>
   <td markdown="span">Covers best practices for creating documentation status reports that you send to your business stakeholders.</td>
 </tr>
 <tr>
