@@ -147,7 +147,7 @@ What are the outcomes of regularly sending status reports? If you send regular s
 * Your manager's manager will love it and will reply to the report with praise.
 * You'll become more visible to the people around you, especially if you're the one sending the report on behalf of your team.
 * People will reach out to ask if certain docs or projects are on your radar.
-* You be better at planning and anticipating long-term doc work and needs.
+* You get better at planning and anticipating long-term doc work and needs.
 * When it comes time to write your annual review, you'll already have a body of content to draw from.
 
 ## Feedback

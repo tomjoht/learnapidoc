@@ -417,7 +417,7 @@ folders:
   - title: "Sending doc status reports -- a tool for visibility and relationship building"
     jurl: /docapis_status_reports.html
 
-  - title: "Processes for ensuring documentation coverage with each software release"
+  - title: "Ensuring documentation coverage with each software release"
     jurl: /docapis_release_process.html
 
 - title: "XII: Metrics and measurement"
