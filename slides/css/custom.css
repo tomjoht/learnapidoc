@@ -11,6 +11,10 @@ margin-bottom:12px;
 figcaption {
 font-size:12px;
 }
+
+.reveal.innovation figcaption {
+    font-size: small;
+}
 .reveal p.miscItems, p, li {
 font-size:.9em;
 }
