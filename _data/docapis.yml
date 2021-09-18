@@ -214,10 +214,10 @@ folders:
   - title: "API conceptual topics overview"
     jurl: /docapis_conceptual_topics_overview.html
 
-  - title: "API product overview"
+  - title: "API product overviews"
     jurl: /docapis_doc_overview.html
 
-  - title: "API getting started tutorial"
+  - title: "API getting started tutorials"
     jurl: /docapis_doc_getting_started_section.html
 
   - title: API authentication and authorization
@@ -437,19 +437,6 @@ folders:
 
   - title: Templates for working with metrics
     jurl: /docapis_metrics_templates.html
-
-- title: "XIV: Balancing product overviews with getting started tutorials"
-  jurl: /docapis_balance_concepts_and_tasks.html
-  folderitems:
-
-  - title: "Introduction to balancing product overviews with getting started tutorials"
-    jurl: /docapis_overviews_and_getting_started.html
-
-  - title: "Reasons why product overviews are often minimal or nonexistent"
-    jurl: /docapis_reasons_for_anemic_overviews.html
-
-  - title: "Reasons why getting started tutorials fail or don't exist"
-    jurl: /docapis_reasons_for_bad_getting_started_tutorials.html
 
 - title: "XV: API glossary and resources"
   jurl: /resources.html

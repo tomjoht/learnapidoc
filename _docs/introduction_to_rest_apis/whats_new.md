@@ -4,7 +4,7 @@ permalink: /docapis_whats_new.html
 sidebar: docapis
 path1: /docapis_introtoapis.html
 weight: 1.02
-last-modified: 2021-04-21
+last-modified: 2021-09-17
 ---
 
 If you're looking to see what's new in the API doc site/course, you can browse new content in several ways.
@@ -40,17 +40,12 @@ The following are the most recent updates to the API documentation course.
 </tr>
 <tr>
   <td>July 2021</td>
-  <td markdown="span">[Balancing product overviews with getting started tutorials](docapis_overviews_and_getting_started.html)</td>
-  <td markdown="span">Introduces a new section that explores the balance between conceptual and task-based information, arguing that product overviews are often anemic and neglected in favor of tasks.</td>
-</tr>
-<tr>
-  <td>July 2021</td>
-  <td markdown="span">[Reasons why product overviews are often minimal or nonexistent](docapis_reasons_for_anemic_overviews.html)</td>
+  <td markdown="span">[Reasons why product overviews are often minimal or nonexistent](docapis_doc_overview.html.htmlreasons_for_failure)</td>
   <td markdown="span">Explains six main reasons why product overviews are often anemic, including influences from agile, UX, marketing, and tech comm.</td>
 </tr>
 <tr>
   <td>July 2021</td>
-  <td markdown="span">[Reasons why getting started tutorials fail or don't exist](docapis_reasons_for_bad_getting_started_tutorials.html)</td>
+  <td markdown="span">[Reasons why getting started tutorials fail or don't exist](docapis_doc_getting_started_section.html#reasons_for_failure)</td>
   <td markdown="span">Explains six main reasons why getting started tutorials often fail or don't exist, including impractical product scenarios, difficulty in distilling content, and more.</td>
 </tr>
 <tr>
