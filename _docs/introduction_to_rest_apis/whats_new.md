@@ -40,7 +40,7 @@ The following are the most recent updates to the API documentation course.
 </tr>
 <tr>
   <td>July 2021</td>
-  <td markdown="span">[Reasons why product overviews are often minimal or nonexistent](docapis_doc_overview.html.htmlreasons_for_failure)</td>
+  <td markdown="span">[Reasons why product overviews are often minimal or nonexistent](docapis_doc_overview.html#reasons_for_failure)</td>
   <td markdown="span">Explains six main reasons why product overviews are often anemic, including influences from agile, UX, marketing, and tech comm.</td>
 </tr>
 <tr>
