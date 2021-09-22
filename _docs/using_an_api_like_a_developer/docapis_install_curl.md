@@ -35,7 +35,7 @@ curl is usually available by default on Macs but requires some installation on W
 
 If you have a Mac, by default, curl is probably already installed. To check:
 
-1.  Open Terminal (press **Cmd + spacebar** to open Spotlight, and then type "Terminal").
+1.  Open Terminal (press **Cmd + spacebar** to open Stoplight, and then type "Terminal").
 2.  In Terminal type `curl -V`. The response should look something like this:
 
     ```

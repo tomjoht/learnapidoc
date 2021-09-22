@@ -64,13 +64,13 @@ The course primarily serves the following audiences:
 
 ## Course organization
 
-Descriptions of each section in this course are provided below:
+The course consists of the following sections:
 
 {% include random_ad1.html %}
 
 {% assign sidebar = site.data.docapis %}
 {% for folder in sidebar.folders %}
-* **[{{folder.title}}]({{folder.jurl | remove_first: "/" }})**: {{folder.description}}
+* **[{{folder.title}}]({{folder.jurl | remove_first: "/" }})**
 {% endfor %}
 
 {% include image_ad_right.html %}
@@ -112,7 +112,7 @@ Here are a few tools you'll need to do the activities in this course:
 * **curl**. [curl](http://curl.haxx.se/) is essential for making requests to endpoints from the command line. Mac already has curl built-in, but it might not be available by default on Windows. (Some Windows 10 builds already have it in Powershell.) On Windows, open a Command Prompt and type `curl -V`. If it's not installed, go to [confusedbycode.com/curl](http://confusedbycode.com/curl) and install a version (usually "With Administrator Privileges (free), 64-bit"). Close and re-open your Command Prompt and try typing `curl -V` again.
 * **Git**. [Git](https://git-scm.com/) is a version control tool developers often use to collaborate on code. For Windows, see [https://gitforwindows.org/](https://gitforwindows.org/) to set up Git and the Git BASH terminal emulator. For Mac, see [Downloading Git](https://git-scm.com/download/mac).
 * **GitHub account**. [GitHub](https://github.com) will be used for various activities, sometimes to demonstrate the Git workflow and other times as an authentication service for developer tools. If you don't already have a GitHub account, sign up for one.
-* **Stoplight Studio Editor**. When working with the OpenAPI specification, we'll use the Stoplight Studio Editor. Stoplight Studio provides visual modeling tools for working with the OpenAPI specification. Stoplight offers both a web browser and standalone app versions of the editor. We'll be using the web browser version because it provides more complete functionality (such as trying out requests). Go to [https://stoplight.io/p/studio](https://stoplight.io/p/studio) and log in with GitHub.
+* **Stoplight Studio Editor**. When working with the OpenAPI specification, we'll use the Stoplight Studio Editor. Stoplight Studio provides visual modeling tools for working with the OpenAPI specification. Stoplight offers both a web browser and standalone app versions of the editor. We'll be using the web browser version because it provides more complete functionality (such as trying out requests). Go to [https://stoplight.io/studio](https://stoplight.io/studio) and log in with GitHub.
 * **OpenWeatherMap API key**. We’ll be using the OpenWeatherMap API for some exercises. It takes a couple of hours for the OpenWeatherMap API key to become active, so it's best if you get the API key ahead of time &mdash; then when you get to the OpenWeatherMap API activities, you’ll be all set. To get your (free) OpenWeatherMap API key, go to [https://openweathermap.org/](https://openweathermap.org/). Click Sign Up in the top nav bar and create an account. After you sign up, OpenWeatherMap sends you an API key to your email. you can also find it when you log in and click the API Keys tab from the dashboard. Copy the key into a place you can easily find it.
 
 ## Testing Your Setup

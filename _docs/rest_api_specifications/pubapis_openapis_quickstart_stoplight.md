@@ -8,7 +8,7 @@ section: restapispecifications
 path1: /restapispecifications.html
 redirect_from:
 - /learnapidoc/stoplight_studio_tutorial.html
-last-modified: 2021-04-12
+last-modified: 2021-09-22
 ---
 
 You can create an OpenAPI specification document in several ways: (a) you can auto-generate it from annotations in your source code, (b) you can code it by hand in an editor such as the Swagger Editor, and (c) you can use a GUI editor such as Stoplight Studio. In this tutorial, we will walk through the third approach: using Stoplight Studio, a GUI editor for modeling your API. We will create a valid OpenAPI specification, using the OpenWeatherMap as the sample API.
@@ -24,9 +24,9 @@ Before we get started, let's address an initial question about the approach we'r
 
 All approaches have their merits. But if you don't work with the OpenAPI specification enough to remember all the fields and syntax for each property, or if you're learning it for the first time, trying to get the syntax valid in the raw code can be challenging. Coding by hand leads to many errors and forces you to spend a lot of time troubleshooting invalid syntax.
 
-Using an editor helps you avoid these errors and focus instead on the content. The less time you spend fiddling with syntax and more time fiddling on content, the better the outcome of the documentation. For more on the philosophy of not getting lost in the syntactical details of the spec, but instead focusing on content, read this post by Phil Sturgeon, who says Stoplight Studio is "an absolute game changer for API Design, and something I've been waiting for since I found out about it somewhere in 2018" ([Reinventing API Design with Stoplight Studio](https://phil.tech/2019/08/22/reinventing-api-design-stoplight-studio/)).
+Using an editor helps you avoid these errors and focus instead on the content. The less time you spend fiddling with syntax and more time working on content, the better the outcome of the documentation. For more on the philosophy of not getting lost in the syntactical details of the spec, but instead focusing on content, read this post by Phil Sturgeon, who says Stoplight Studio is "an absolute game changer for API Design, and something I've been waiting for since I found out about it somewhere in 2018" ([Reinventing API Design with Stoplight Studio](https://phil.tech/2019/08/22/reinventing-api-design-stoplight-studio/)).
 
-As a technical writer who likes working in Markdown and other raw formats, I can see the appeal of working directly in the code. But the OpenAPI syntax is quite complex, and YAML is fussy. I'd rather be worrying more about the content than addressing syntax questions. But even so, Stoplight lets you switch into the code view to work in that mode when you want, and switch back into the visual view when you want. This gives you the best of both worlds.
+As a technical writer who likes working in Markdown and other raw formats, I can see the appeal of working directly in the code. But the OpenAPI syntax is quite complex, and YAML is fussy. I'd rather be worrying more about the content than addressing syntax questions. But even so, Stoplight lets you switch into the code view to work in that mode when you want, and switch back into the visual view when you want. Changes you make in one mode sync to the other. This gives you the best of both worlds.
 
 ## Before we begin
 
@@ -99,9 +99,6 @@ Stoplight provides a variety of options for working with projects &mdash; deskto
     The ability to switch views between Form, Code, and Preview gives you a lot of authoring power.
 
 7.  Click the **Form** button to switch back to the Form view.
-
-{: .tip}
-In Stoplight's next release (scheduled for April 19, 2021), multiple users will be able to collaborate in the same project at the same time, just like a Google Docs experience. You will see their name, cursor, and their user icon in Studio in real time, allowing for better collaboration on API design.
 
 ## Step 2: Enter the API overview information {#overview}
 
