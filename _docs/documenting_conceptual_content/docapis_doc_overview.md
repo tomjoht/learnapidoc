@@ -10,7 +10,7 @@ path1: /docconceptual.html
 last-modified: 2021-09-17
 ---
 
-The product overview &mdash; usually the homepage of your product's documentation &mdash; describes your product a high level, including what you can do with the product, the market needs or pain points it solves, requirements to use it, who the product or other features are for, and other introductory information.
+The product overview &mdash; usually the homepage of your product's documentation &mdash; describes your product at a high level, including what you can do with the product, the market needs or pain points it solves, requirements to use it, who the product or other features are for, and other introductory information.
 
 Although a seemingly simple page, the product overview can overlap into marketing domains, create redundancies with README's, and pose challenges in connecting with a more diverse audience (both engineers and bizdev people) than the rest of your technical docs. Overall, the product overview is an area where documentation and marketing intersect in interesting ways. The product overview is one of the hardest topics to write, but it's also likely the most important.
 
