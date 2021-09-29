@@ -170,6 +170,7 @@ For other inspiration with getting started tutorials, explore the links below. M
 * [Amadeus: Self-Service APIs](https://developers.amadeus.com/get-started/get-started-with-self-service-apis-335)
 * [Tapix](https://developers.tapix.io/sandbox/findByCardTransaction/All)
 * [Thingworx: Getting Started](https://developer.thingworx.com/en/resources/getting-started)
+* [Codat: Getting Started](https://docs.codat.io/docs/get-started)
 
 ## Summary of best practices for getting started tutorials
 
