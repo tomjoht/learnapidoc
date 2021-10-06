@@ -17,7 +17,7 @@ Following the [product overview section](docapis_doc_overview.html), you usually
 {:toc}
 {% endif %}
 
-## Purpose of the product overview
+## Purpose of the getting started tutorial
 
 The Getting Started tutorial is somewhat like the typical Hello World tutorial in developer documentation, but with an API. Your goal is to hold a user's hand from start to finish in producing the simplest possible output with the system. For Hello World tutorials, the simplest output might just be a message that says "Hello World." For an API, it might be a successful response from the most basic request.
 
@@ -48,7 +48,7 @@ A getting started tutorial is more than just another type of content to include.
 
 In general, consider how people prefer to learn a new system. Do they prefer to sit passively while reading a manual? Or do they want to jump in, write some code, run it, see what it does, tweak a few buttons, and learn through some trial and error, experimentation and feedback?
 
-While user learning types can fall all along this spectrum, from "systematic" [read first] to "opportunistic" [try first], as some researchers call it, the engineering mindset tends to favor the opportunistic (hands-on, experiential) approach. For more on different learning behaviors, see [How Developers Use API Documentation: An Observation Study](/learnapidoc/docapiscode_research_on_documenting_code.html#how-developers-use-api-documentation-an-observation-study).
+While user learning types can fall all along this spectrum, from "systematic" (read first) to "opportunistic" (try first), as some researchers call it, the engineering mindset tends to favor the opportunistic (hands-on, experiential) approach. For more on different learning behaviors, see [How Developers Use API Documentation: An Observation Study](/learnapidoc/docapiscode_research_on_documenting_code.html#how-developers-use-api-documentation-an-observation-study).
 
 The more action-oriented, experiential approach to learning has its roots in a movement called "minimalism" that John Carroll identified long ago. Describing John Carroll's minimalism approach, David Farkas and Thomas Williams write:
 
@@ -106,7 +106,7 @@ You can see the many options for running this same code in other languages. This
 
 If you don't already have a "Try it out" feature in your docs, the Run in Postman button gives you this interactivity in an easy way, without requiring you to sacrifice the single source of truth for your docs.
 
-## Samples of Getting Started Topics
+## Samples of getting started topics
 
 Here are a few sample Getting Started topics in APIs. If you compare the various Getting Started sections, you'll see that some are detailed and some are high-level and brief. In general, the more you can hold the developer's hand, the better. However, the tutorial should still be brief and not simply redundant with the other documentation. The key is that you show the user the beginning-to-end, full process for working with the API.
 
@@ -197,7 +197,7 @@ With the [open-source project you identified](docapis_find_open_source_project.h
 
 ## Reasons why getting started tutorials fail or don't exist {#reasons_for_failure}
 
-So far I've covered best practices for getting started tutorials. Now let's explore some reasons why getting started tutorials are often poor or non-existent. In other words, what are some of the reasons why getting started tutorials aren't present, easy to follow, and visible?
+So far I've covered best practices for getting started tutorials. Now let's explore some reasons why getting started tutorials are often poor or non-existent. In other words, why do getting started tutorials fail? Why are they sometimes hard to follow? 
 
 ### Cause 1: Getting started tutorials are seen as an optional extra, and few writers have time for optional work at release crunch times
 
@@ -212,10 +212,10 @@ If writing a getting started tutorial isn't possible within the release timefram
 
 Your product might require more setup than is practical for a getting started tutorial. For example, the user might need to be officially authorized or credentialed, which might be possible only after signing a contract. Some requirements such as creating a database, setting up a server, or other configuring a service might be necessary before the user can call an API. And you might not have this infrastructure readily available for the user, especially not in a sandbox/temporary way.
 
-One of the products I documented at Amazon was developer docs for Fire TV. Getting things setup for Alexa integration literally took 3-4 hours, with no simple shortcuts to speed things up. Developers had to set up AWS accounts, identity access management credentials, configure permissions for buckets, set up other services, add code in various files, and more. There really wasn't any quick shortcut even with a sample app, which made the tutorial possible in an afternoon rather than a week. In short, your product might not facilitate getting started in an easy way.
+One of the products I documented at Amazon was developer docs for Fire TV. Getting things setup for Alexa integration literally took 3-4 hours, with no simple shortcuts to speed things up. Developers had to set up AWS accounts, identity access management credentials, configure permissions for buckets, set up other services, add code in various files, and more. There really wasn't any quick shortcut even with a sample app (though the sample app made the tutorial possible in an afternoon rather than a week). In short, your product might not facilitate getting started in an easy way.
 
 {: .takeaway}
-If your product doesn't allow users to get started in an easy way, consider scaling back the result. Maybe the user can't call the API easily. Maybe all you can do is teach a user how to register for API keys, or show them how to issue a termcommand in a terminal that brings up the help information. Either scale the expectations down a bit, or go the other route and lengthen the tutorial so that it actually does provide value but might require more time and effort to get through.
+If your product doesn't allow users to get started in an easy way, consider scaling back the result. Maybe the user can't call the API easily. Maybe all you can do is teach a user how to register for API keys, or show them how to issue a command in a terminal that brings up the help information. Either scale the expectations down a bit, or go the other route and lengthen the tutorial so that it actually does provide value but might require more time and effort to get through.
 
 ### Cause 3: There's no sample app to demonstrate how to call the API
 
@@ -228,9 +228,9 @@ In scenarios where you lack a sample app, you could still provide code snippets 
 
 ### Cause 4: The getting started tutorial omits details for the sake of brevity that might lead to confusion
 
-Another obstacle to creating the getting started tutorial is the challenge of writing this content, as it requires more writing skill. Ideally, the getting started tutorial condenses longer, more detailed information into a succinct one-page tutorial. Yet this tutorial is supposed to take a user through registration, setup, authorization, execution, viewing results, interpretation, and more. It's like being asked to create a poem out of a novel.
+Another obstacle to creating the getting started tutorial is the basic task of writing this content, as it requires more writing skill. Ideally, the getting started tutorial condenses longer, more detailed information into a succinct one-page tutorial. Yet this tutorial is supposed to take a user through registration, setup, authorization, execution, viewing results, interpretation, and more. It's like being asked to create a poem out of a novel, with the requirement that the same general story gets told.
 
-Being brief at the expense of creating a short tutorial might lead to a confusing user experience, and omission of detail runs counter to the traditional mode of writing documentation. Leaving out more specifics, notes, and other more explicit instructions for the sake of brevity goes against our tech-writing principles of clear, explicit documentation.
+Being brief at the expense of creating a short tutorial might lead to a confusing user experience. Leaving out more specifics, notes, and other more explicit instructions for the sake of brevity goes against our tech-writing principles of clear, explicit documentation.
 
 The ability to reduce and distill information down to short, crisp summaries for a getting started tutorial is a higher-level writing skill. It also requires more effort and subject mastery. For more information on distilling information, see [Principle 4: Reduce and distill vast information down to its essence](/simplifying-complexity/reduction-layering-distillation.html).
 
@@ -239,11 +239,11 @@ In places where you choose to be succinct and omit detail, link out to your regu
 
 ### Cause 5: The tech might be too complicated for tech writers to walk through themselves
 
-Another reason why getting started tutorials might be absent from docs is because the tech itself might be beyond the tech writer's reach. Suppose you have an advanced product that requires senior-engineering-level knowledge to use. In this scenario, the tech writer might mainly be acting as an editor, curator, and publisher &mdash; facilitating content mostly written by engineers. Since getting started tutorials are mostly hands-on, experience driven deliverables, it might be too advanced for the tech writer. This is the nature of working in developer docs, especially without an engineering background. The tools are really designed for engineers who have a lot more training, experience, and knowledge in areas that we lack.
+Another reason why getting started tutorials might be absent from docs is because the tech itself might be beyond the tech writer's reach. Suppose you have an advanced product that requires senior-engineering-level knowledge to use. In this scenario, the tech writer might mainly be acting as an editor, curator, and publisher &mdash; facilitating content mostly written by engineers. Since getting started tutorials are mostly hands-on, experience-driven deliverables, it might be too advanced for the tech writer. This is the nature of working in developer docs, especially without an engineering background. The tools are really designed for engineers who have a lot more training, experience, and knowledge in areas that we lack.
 
 For example, suppose the integration assumes access to a vehicle's hardware abstraction layer, as well as knowledge about the way this layer connects to the vehicle's custom infotainment system in the head unit. In this case, the system environment might be too complex to wrangle into a simple getting started tutorial. It can be hard to walk through all of these same tasks in an end-to-end way.
 
-Or the tasks might be within the tech writers reach at some point but not immediately. The tech writer might need more time to set up environments and walk through all of the tasks &mdash; time that's not available at present.
+Or putting it more optimistically, the tasks might be within the tech writers reach at *some* point, but not immediately. The tech writer might need more time to set up environments and walk through all of the tasks &mdash; time that's not available at present.
 
 {: .takeaway}
 Consider asking an engineer to write the getting started tutorial. If you can't follow it, this could form the basis of homework or other learning that you chip away at little by little in your path of continual learning.
