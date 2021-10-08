@@ -7,7 +7,7 @@ weight: 7.1
 sidebar: docapis
 section: docapiscode
 path1: /doccode.html
-last-modified: 2019-11-17
+last-modified: 2021-10-08
 ---
 
 Software code, often written in Java, C++, or any other language, is challenging to document in part because technical writers often aren't already fluent in the programming language. But even for writers or developers who are fluent in the language, code is hard to document. There isn't a step-by-step process to follow. Code is often arranged in non-linear order, so you can't simply proceed line-by-line through it. There's also the question of how much to document, what to cover, and where to include the documentation. Overall, best practices for documenting code are somewhat fuzzy and undefined, which makes documenting code one of the most challenging and difficult tasks technical writers face.
@@ -88,13 +88,20 @@ Around the 4:15 mark, Ruthie says,
 
 Why do engineers so frequently say they want code? Code examples show how to implement an abstract, narrative explanation in an actual way. Code shows how to use reference APIs toward some actionable and tangible end. In that sense, code is an extremely powerful tool to help users understand how to use your API.
 
+In fact, in the [2021 State of API report by SmartBear](https://smartbear.com/state-of-software-quality/api/documentation/), "examples" are the most desired form of documentation, topping all other documentation types by a wide margin.
+
 Despite the importance of code samples, they're often neglected or missing from API docs. After all, it's much easier to just cover reference material and let developers figure out how to actually use it constructively. In this section of my API course, I'll provide concrete strategies for successfully incorporating code samples into your documentation.
 
 {% include random_ad2.html %}
 
+## What to do if you don't understand the code
+
+As you're documenting code examples, you'll probably run into situations where the code is beyond your understanding. For example, the engineer might call out various classes and methods in a Java API and have some fragmented, incomplete code comments on how to use it. In these situations, one strategy is to ask the engineer to talk through the code from beginning to end. Important: Record the meeting where the engineer explains the code. After the meeting, add notes from the engineer's explanation about different aspects of the code. Pepper in your explanations both in regular copy and in code comments. 
+
+After reviewing your writeup with the engineer, present the content to other engineers or devrel-type roles, and ask them to review it. Basically, gather enough feedback from other people to get a sense of whether the code and your explanations are clear enough in places or still confusing. Act as a kind of mediator between the author and users. It doesn't take a deep understanding to play this mediator role, and as long as you record the meetings where explanations are flying around, you can go back at a snails pace and listen/re-listen to the comments and convert them into a semi-intelligible writeup. 
+
+Of course, the ideal is that you would also be comprehending what's going on in the code to a deeper extent, but this isn't always possible in the timeframes given. Consider using the project as a starting point for deepening your understanding of a programming language or framework. Start taking a course on the programming language on Udemy, for example, and highlight the various concepts in the tutorial that you want to learn more about.
+
 ## Next topic
 
 Go on to the next topic in this series: [What research tells us about documenting code](docapiscode_research_on_documenting_code.html).
-
-{: .note}
-July 27, 2019. I'm currently expanding out the topics in this section. Stay tuned for more to come in this section.
