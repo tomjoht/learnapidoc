@@ -62,7 +62,7 @@ Parameter
 
 Here's an example from Yelp's documentation:
 
-<a class="noCrossRef" href="https://www.yelp.com/developers/documentation/v2/search_api" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/yelp_3_17.png" alt="Yelp parameters" /></a>
+<a class="noCrossRef" href="https://www.yelp.com/developers/documentation/v2/search_api" class="noExtIcon"><img src="{{site.media}}/yelp_3_17.png" alt="Yelp parameters" /></a>
 
 You can format the values in a variety of ways (aside from a table). If you're using a definition list or other non-table format, be sure to develop styles that make the values easily readable.
 

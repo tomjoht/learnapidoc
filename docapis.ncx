@@ -62,7 +62,7 @@ layout: null
                     {% endunless %}
                     {% endif %}
                     {% endfor %}
-
+</navPoint>
             {% endfor %}
             </navPoint>
             {% endfor %}

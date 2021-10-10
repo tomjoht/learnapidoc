@@ -6,8 +6,8 @@ published: false
 
 ## Kindle
 
-1. . serve_kindle.sh
-2. new tab: . build_kindle.sh
+1. ./serve_kindle.sh
+2. new tab: ./build_kindle.sh
 3. . move.sh (moves docapis.mobi file from \_site to mobi folder in root directory)
 4. open Kindle Previewer and select the docapis.mobi file in the mobi_files directory.
 5. plug in kindle. find in finder. copy mobi file into documents directory. it will then appear in your home.

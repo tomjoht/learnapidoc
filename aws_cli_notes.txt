@@ -1,2 +1,5 @@
-download remote bucket to local:
+#download remote bucket to local:
 aws s3 cp s3://tomjohnsonportfolio/ portfolio_download  --recursive  --profile wasabi
+
+# download all images from the specified bucket to a local folder called wasabi
+aws s3 cp s3://idbwmedia.com/images/api/ wasabi  --recursive  --profile wasabi
