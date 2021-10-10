@@ -99,9 +99,9 @@ In the tech doc world, common categories in rubrics are equally high-level and g
 
 In Strimling's essay, he looks at previous research on the attempt to define information quality and finds a wide range of different quality definitions:
 
-<a class="noCrossRef" href="https://www.researchgate.net/publication/331088095_Beyond_Accuracy_What_Documentation_Quality_Means_to_Readers"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/documentation-quality-definitions.png" alt="Documentation Quality Definitions part 1" /></a>
+<a class="noCrossRef" href="https://www.researchgate.net/publication/331088095_Beyond_Accuracy_What_Documentation_Quality_Means_to_Readers"><img src="{{site.media}}/documentation-quality-definitions.png" alt="Documentation Quality Definitions part 1" /></a>
 
-<a class="noCrossRef" href="https://www.researchgate.net/publication/331088095_Beyond_Accuracy_What_Documentation_Quality_Means_to_Readers"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/documentation-quality-definitions-2.png" alt="Documentation Quality Definitions part 2" /></a>
+<a class="noCrossRef" href="https://www.researchgate.net/publication/331088095_Beyond_Accuracy_What_Documentation_Quality_Means_to_Readers"><img src="{{site.media}}/documentation-quality-definitions-2.png" alt="Documentation Quality Definitions part 2" /></a>
 
 As you can see, defining information quality is a constant theme in tech comm research. While the characteristics are somewhat similar, they aren't described in the same way, and they are mostly general and abstract.
 
@@ -227,7 +227,7 @@ Another place to find quality checklists and guidance for implementing general c
 
 In this model, you might score docs from 1 to 5 depending on how well the docs fulfill each characteristic. The textbook has a lot of examples and detail about how to go about each of these characteristics. There's even treatment of code samples. Here's the comprehensive quality checklist provided in the Appendix:
 
-<a class="noCrossRef" href="https://learning.oreilly.com/library/view/developing-quality-technical/9780133119046/app01.html"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/qualityguidelinestextbook2.png" alt="Quality checklist" /></a>
+<a class="noCrossRef" href="https://learning.oreilly.com/library/view/developing-quality-technical/9780133119046/app01.html"><img src="{{site.media}}/qualityguidelinestextbook2.png" alt="Quality checklist" /></a>
 
 Overall, there are 60 specific characteristics within the various categories. Why not simply adopt this quality checklist? It wouldn't be a bad approach, for sure. And the principles are so widely held that few would object to them. But I wanted something even more concrete, actionable, and focused on API documentation and developer portals.
 

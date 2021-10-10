@@ -23,13 +23,13 @@ Doors open at 8:00am. Check your name off at the registration table and get a na
 
 **Part I: Introduction to API Documentation**
 
-<a href="/learnapidoc/slides/intro_api_documentation.html" class="noCrossRef slideThumb"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/introapidoctitleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/intro_api_documentation.html" class="noCrossRef slideThumb"><img src="{{site.media}}/introapidoctitleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 1a: Identify your goals" activity="identify_goals" button_type="info" %}
 
 **Part II: Using an API like a developer**
 
-<a href="/learnapidoc/slides/using_api_like_developer.html" class="noCrossRef slideThumb"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/using-api-developer-titleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/using_api_like_developer.html" class="noCrossRef slideThumb"><img src="{{site.media}}/using-api-developer-titleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 2a: Explore OpenWeatherMap API" activity="explore_openweathermap_api" button_type="primary" %}
 
@@ -49,7 +49,7 @@ Break time
 
 **Part III: Documenting API endpoints**
 
-<a href="/learnapidoc/slides/documenting_api_endpoints.html" class="noCrossRef slideThumb"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/documenting-endpoints-titleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/documenting_api_endpoints.html" class="noCrossRef slideThumb"><img src="{{site.media}}/documenting-endpoints-titleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 3a: What's wrong with this API reference topic" activity="whats_wrong_with_surfreport" button_type="success" %}
 
@@ -63,7 +63,7 @@ Lunch. Provided in room.
 
 **Part IV: OpenAPI and Swagger**
 
-<a href="/learnapidoc/slides/openapi_and_swagger.html" class="noCrossRef slideThumb"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapiswaggertitleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/openapi_and_swagger.html" class="noCrossRef slideThumb"><img src="{{site.media}}/openapiswaggertitleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 4a: Explore Swagger UI through the Petstore Demo" activity="explore_swagger_petstore" button_type="info" %}
 
@@ -81,7 +81,7 @@ Break. Snacks and coffee provided.
 
 ## 2:15pm - 3:30pm: Parts VI and VII (Conceptual topics + Doc'ing code)
 
-<a href="/learnapidoc/slides/conceptual_content_api_docs.html" class="noCrossRef slideThumb"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/conceptualcontenttitleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/conceptual_content_api_docs.html" class="noCrossRef slideThumb"><img src="{{site.media}}/conceptualcontenttitleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 6a: Judge conceptual content and decide which is best" activity="conceptual_comparisons" button_type="warning" %}
 
@@ -93,7 +93,7 @@ Break
 
 **Part VII: Publishing API Documentation**
 
-<a href="/learnapidoc/slides/publishing_api_docs.html" class="noCrossRef slideThumb"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/publishingapidoctitleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/publishing_api_docs.html" class="noCrossRef slideThumb"><img src="{{site.media}}/publishingapidoctitleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 7a: Set up a GitHub wiki" activity="create_github_wiki" button_type="warning" %}
 
@@ -117,7 +117,7 @@ Optional section if time permits.
 
 **Part X: Getting an API documentation job and thriving**
 
-<a href="/learnapidoc/slides/getting_job_api_docs.html" class="noCrossRef slideThumb"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/gettingajobdsdoctitleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
+<a href="/learnapidoc/slides/getting_job_api_docs.html" class="noCrossRef slideThumb"><img src="{{site.media}}/gettingajobdsdoctitleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
 {% include workshop_button.html title="Activity 10a: Look at API documentation jobs and requirements" activity="look_for_apidoc_jobs" button_type="info" %}
 

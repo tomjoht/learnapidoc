@@ -78,7 +78,7 @@ Read the Docs provides themes specific for documentation websites, and also lets
 
 The [Read the Docs documentation](https://docs.readthedocs.io/en/latest/getting_started.html) shows a sample output.
 
-<a href="https://docs.readthedocs.io/en/latest/getting_started.html" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/readthedocsplatform.png" /></a>
+<a href="https://docs.readthedocs.io/en/latest/getting_started.html" class="noExtIcon"><img src="{{site.media}}/readthedocsplatform.png" /></a>
 
 Some key features include a robust sidebar with expand/collapse functionality, search, versioning, output to PDF and ePub, and more.
 

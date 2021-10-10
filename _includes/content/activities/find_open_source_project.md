@@ -11,7 +11,7 @@ To find an open-source project with API doc needs:
 
 3.  In this Advanced Search box at the top, add some additional keywords (such as `API documentation`) as well:
 
-    <a class="noCrossRef" href="http://idratherbewriting.site/githubsearchopps"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/githubadvancedsearch2.png"/></a>
+    <a class="noCrossRef" href="http://idratherbewriting.site/githubsearchopps"><img src="{{site.media}}/githubadvancedsearch2.png"/></a>
 
 4.  Click **Search** and browse [the results](https://idratherbewriting.site/githubapidocs).
 

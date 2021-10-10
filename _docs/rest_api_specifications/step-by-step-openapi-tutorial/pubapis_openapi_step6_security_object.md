@@ -14,7 +14,7 @@ last-modified: 2020-09-07
 ---
 
 {% if site.format == "pdf" or site.format == "kindle" %}
-<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapistep6.png"/>
+<img src="{{site.media}}/openapistep6.png"/>
 {% endif %}
 
 Swagger UI provides a "Try it out" feature that lets users submit actual requests. To submit requests that are authorized by your API server, the spec must contain security information that will authorize the request. The [`security` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#securityRequirementObject) specifies the security or authorization protocol used when submitting requests.
@@ -127,7 +127,7 @@ Then check out the Swagger UI display. You'll see an "Authorize" button appear.
 
 When you click Authorize, the `description` and other security details appear:
 
-<a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapitutorial_securityauth.png" class="medium"/></a>
+<a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="{{site.media}}/openapitutorial_securityauth.png" class="medium"/></a>
 
 After users enter an API key and click **Authorize**, the authorization method is set for as many requests as they want to make. The authorization session expires only when users refresh the page.
 

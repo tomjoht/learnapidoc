@@ -14,7 +14,7 @@ last-modified: 2020-09-07
 ---
 
 {% if site.format == "pdf" or site.format == "kindle" %}
-<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapistep1.png"/>
+<img src="{{site.media}}/openapistep1.png"/>
 {% endif %}
 
 Before diving into the first step of the OpenAPI tutorial here, read the [OpenAPI tutorial overview](pubapis_openapi_tutorial_overview.html) (if you haven't already) to get a sense of the scope of this tutorial. In brief, this OpenAPI tutorial is unique in the following ways:

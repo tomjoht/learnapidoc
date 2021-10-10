@@ -45,13 +45,13 @@ To use the spreadsheet to calculate a score:
     3.  Drag the CSV file you downloaded in step 1 into the "Drag a file here" box.
     4.  In the Import File dialog box that appears, under Import Location, select **Replace current sheet**. Leave the other default options as is. (Specifically, make sure "Convert text to numbers, dates, and formulas" is set to **Yes** because the CSV file has formulas.)
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/import_file_spreadsheet2.png" style="max-width: 300px" alt="Import File dialog" />
+    <img src="{{site.media}}/import_file_spreadsheet2.png" style="max-width: 300px" alt="Import File dialog" />
 
 4.  After importing, get familiar with the spreadsheet columns.
 
     The spreadsheet looks like as follows in Google Sheets:
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/spreadsheet_thumbnail_metrics.png" alt="Imported spreadsheet" />
+    <img src="{{site.media}}/spreadsheet_thumbnail_metrics.png" alt="Imported spreadsheet" />
 
     {: .warning}
     The spreadsheet looks plain, but there are some formulas that do calculations here. You can add formatting if you want (for example, bold the top row, expand column A), or change the weighting, but don't add or remove the columns or rows. If you change any of the rows or columns, the formulas will no longer work because they reference specific cells in specific columns.

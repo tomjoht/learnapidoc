@@ -45,7 +45,7 @@ In this tutorial, we'll use sample information from the [OpenWeatherMap API](htt
 
 Here's the [documentation output](https://idratherbewriting.stoplight.io/docs/openweathermap3/reference/openweathermap.v1.yaml/paths/~1weather/get) that you'll build in this tutorial:
 
-<a class="noCrossRef" href="https://idratherbewriting.stoplight.io/docs/openweathermap3/reference/openweathermap.v1.yaml/paths/~1weather/get"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_tutorial_end_goal.png" alt="Final output from Stoplight tutorial" /></a>
+<a class="noCrossRef" href="https://idratherbewriting.stoplight.io/docs/openweathermap3/reference/openweathermap.v1.yaml/paths/~1weather/get"><img src="{{site.media}}/stoplight_tutorial_end_goal.png" alt="Final output from Stoplight tutorial" /></a>
 
 The tutorial has the following steps:
 
@@ -64,13 +64,13 @@ Stoplight provides a variety of options for working with projects &mdash; deskto
 
 1.  Go to [https://stoplight.io/studio/](https://stoplight.io/studio/) and click **On the Web**.
 2.  Follow the on-screen instruction to create a workspace, and then sign into it, authenticating with one of the ID options.
-3.  Click the **+** button <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_plus_button.png" alt="Add project button" /> at the top to add a new project. Give the project a name, and then click **Create Project**.
+3.  Click the **+** button <img src="{{site.media}}/stoplight_plus_button.png" alt="Add project button" /> at the top to add a new project. Give the project a name, and then click **Create Project**.
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/add_project_stoplight.png" alt="Adding a project in Stoplight Studio" />
+    <img src="{{site.media}}/add_project_stoplight.png" alt="Adding a project in Stoplight Studio" />
 
     The Stoplight Studio editor opens. The left pane says, "You do not have any APIs or models."
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_editor_opens.png" alt=" Stoplight Studio editor " />
+    <img src="{{site.media}}/stoplight_editor_opens.png" alt=" Stoplight Studio editor " />
 
 4.  Click the **API** button in the sidebar.
 
@@ -78,11 +78,11 @@ Stoplight provides a variety of options for working with projects &mdash; deskto
 
     Stoplight Studio creates an OpenAPI (OAS) specification file called, in this case, openweathermap.v1.yml and loads it as follows:
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openweathermap_project_api_editor.png" alt="Open API editor in Stoplight" />
+    <img src="{{site.media}}/openweathermap_project_api_editor.png" alt="Open API editor in Stoplight" />
 
 6.  Stoplight lets you toggle between a form and code editor. The above screenshot shows the Form view. Click the **Code** button in the upper-right corner to see the code automatically created.
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_sample_code_editor.png" alt="Sample code from Stoplight code editor" />
+    <img src="{{site.media}}/stoplight_sample_code_editor.png" alt="Sample code from Stoplight code editor" />
 
     (The code includes some sample content for some fictitious user endpoints called `/users/{userid}` and `/user`.)
 
@@ -94,7 +94,7 @@ Stoplight provides a variety of options for working with projects &mdash; deskto
 
 7.  Click the **Preview** button in the upper-right corner to see what the content would look like when published:
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_published_view.png" alt="Stoplight's published view" />
+    <img src="{{site.media}}/stoplight_published_view.png" alt="Stoplight's published view" />
 
     The ability to switch views between Form, Code, and Preview gives you a lot of authoring power.
 
@@ -152,11 +152,11 @@ To populate the API overview:
 
     When finished, the form should look like this:
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_api_overview_screens.png" alt="Populating Stoplight info in API Overview section" />
+    <img src="{{site.media}}/stoplight_api_overview_screens.png" alt="Populating Stoplight info in API Overview section" />
 
 3.  Now that you entered information for the first section, check out how it looks. Click the **Preview** button in the upper-right corner. It should look as follows:
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_first_screen_preview.png" alt="Preview of first section of API docs" />
+    <img src="{{site.media}}/stoplight_first_screen_preview.png" alt="Preview of first section of API docs" />
 
 4.   Return to the Form view by clicking the **Form** button again.
 
@@ -166,7 +166,7 @@ Now enter the path and parameter information:
 
 1. In the sidebar, right-click the **Paths** folder and select **New Path**.
 
-   <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/new_path_stoplight_tutorial.png" alt="New path in Stoplight editor" />
+   <img src="{{site.media}}/new_path_stoplight_tutorial.png" alt="New path in Stoplight editor" />
 
    You can remove the default `/users/{userid}` and `/user` and endpoints. Right-click each endpoint and select **Delete Path**.
 
@@ -175,9 +175,9 @@ Now enter the path and parameter information:
     By default Stoplight creates a GET operation for the weather endpoint. In our case, this works out great because this endpoint has a GET endpoint. But if not, you could just click the other operations available to create details for those operations.
 
 3.  Change the path's title from "Your GET endpoint" to "weather."
-4.  Click the Tags button <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/tags_button_stoplight2.png" alt="Stoplight tags button" /> in the upper-left corner and add a tag called "Weather endpoints."
+4.  Click the Tags button <img src="{{site.media}}/tags_button_stoplight2.png" alt="Stoplight tags button" /> in the upper-left corner and add a tag called "Weather endpoints."
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/tags_button_stoplight_tutorial.png" alt="Tags button" />
+    <img src="{{site.media}}/tags_button_stoplight_tutorial.png" alt="Tags button" />
 
     This tag will group the endpoints in the sidebar by this tag into a collapsed section called "Weather endpoints." This is how you build navigation hierarchy for your endpoints.
 
@@ -213,12 +213,12 @@ Now enter the path and parameter information:
     * *Name ...*: **units**
     * *[Data type]*: string
     * *Description...*: \*\*Units\*\*. \*Example: imperial\*. Possible values: \`standard\`, \`metric\`, and \`imperial\`. When you do not use the \`units\` parameter, the format is \`standard\` by default.
-    * <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_other_properties_button2.png" alt="Other properties" /> *Other Properties*:
+    * <img src="{{site.media}}/stoplight_other_properties_button2.png" alt="Other properties" /> *Other Properties*:
       * *enum*: standard, metric, imperial
 
       When you click the Other Properties button, the dialog looks like this:
 
-      <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_other_properties.png" style="max-width: 375px" alt="Other Properties dialog box" />
+      <img src="{{site.media}}/stoplight_other_properties.png" style="max-width: 375px" alt="Other Properties dialog box" />
 
 
     \-\-\-\-\-\-\-
@@ -251,7 +251,7 @@ Now enter the path and parameter information:
     * *Name ...*: **lang**
     * *[Data type]*: string
     * *Description...*: \*\*Language\*\*. \*Example: en\*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - \`ar\`, Bulgarian - \`bg\`, Catalan - \`ca\`, Czech - \`cz\`, German - \`de\`, Greek - \`el\`, English - \`en\`, Persian (Farsi) - \`fa\`, Finnish - \`fi\`, French - \`fr\`, Galician - \`gl\`, Croatian - \`hr\`, Hungarian - \`hu\`, Italian - \`it\`, Japanese - \`ja\`, Korean - \`kr\`, Latvian - \`la\`, Lithuanian - \`lt\`, Macedonian - \`mk\`, Dutch - \`nl\`, Polish - \`pl\`, Portuguese - \`pt\`, Romanian - \`ro\`, Russian - \`ru\`, Swedish - \`se\`, Slovak - \`sk\`, Slovenian - \`sl\`, Spanish - \`es\`, Turkish - \`tr\`, Ukrainian - \`ua\`, Vietnamese - \`vi\`, Chinese Simplified - \`zh_cn\`, Chinese Traditional - \`zh_tw\`.
-    * <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_other_properties_button2.png" alt="Other properties" /> *Other Properties*:
+    * <img src="{{site.media}}/stoplight_other_properties_button2.png" alt="Other properties" /> *Other Properties*:
       * *default*: en
       * *enum*: enums: "ar, bg, ca, cz, de, el, en, fa, fi, fr, gl, hr, hu, it, ja, kr, la, lt, mk, nl, pl, pt, ro, ru, se, sk, sl, es, tr, ua, vi, zh_cn, zh_tw"
 
@@ -260,7 +260,7 @@ Now enter the path and parameter information:
     * *Name ...*: **mode**
     * *[Data type]*: string
     * *Description...*: \*\*Mode**. *Example: html*. Determines the format of the response. Possible values are \`json\`, \`xml\`, and \`html\`. If the mode parameter is empty, the format is \`json\` by default.
-    * <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_other_properties_button2.png" alt="Other properties" /> *Other Properties*:
+    * <img src="{{site.media}}/stoplight_other_properties_button2.png" alt="Other properties" /> *Other Properties*:
       * *enum*: json, xml, html
       * *default*: json
 
@@ -268,7 +268,7 @@ Now enter the path and parameter information:
 
     When you're finished entering the parameters, Stoplight should look like this:
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_parameter_info2.png" alt="Parameters populated in Stoplight Studio editor" />
+    <img src="{{site.media}}/stoplight_parameter_info2.png" alt="Parameters populated in Stoplight Studio editor" />
 
 You don't need to add security for this endpoint because you already configured global security in the previous section. However, if this endpoint had unique security method, you could override the global security here by clicking the + Security button.
 
@@ -287,12 +287,12 @@ To re-use a parameter:
     A parameter section similar to the query parameter sections you just populated appears.  
 
 2.  Populate the `lon` parameter here using the same information as before.
-3.  Return to the previous query parameters section where you entered the `lon` parameter, and click the Reference button <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_link_button.png" alt="Reference button" /> for this parameter.
+3.  Return to the previous query parameters section where you entered the `lon` parameter, and click the Reference button <img src="{{site.media}}/stoplight_link_button.png" alt="Reference button" /> for this parameter.
 4.  Search for "lon" and select it.
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_reuse_parameter_link.png" alt="Reusing parameters" />
+    <img src="{{site.media}}/stoplight_reuse_parameter_link.png" alt="Reusing parameters" />
 
-    When you link the parameter to the reference like this, the icon turns red: <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_link_button_red6.png" alt="Reference button turns red when linked" />
+    When you link the parameter to the reference like this, the icon turns red: <img src="{{site.media}}/stoplight_link_button_red6.png" alt="Reference button turns red when linked" />
 
 5.  Switch to the Code editor and search for `lon`. You'll now see a reference to a component:
 
@@ -304,7 +304,7 @@ To re-use a parameter:
 
 6.  Preview your updates. The preview should look like this:
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_api_preview_with_endpoints.png" alt="Preview with parameters section populated" />
+    <img src="{{site.media}}/stoplight_api_preview_with_endpoints.png" alt="Preview with parameters section populated" />
 
 This endpoint in the OpenWeatherMap API doesn't have any path, header, or body parameters, so you can skip those elements.
 
@@ -318,7 +318,7 @@ To enter the response information in Stoplight Studio:
 
 1.  Below the parameter section for the endpoint, click the **+ Response** button. Then click the **+ Add Body** button that appears within this expanded Response section.
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_add_response_sectionbutton.png" alt="Responses section" />
+    <img src="{{site.media}}/stoplight_add_response_sectionbutton.png" alt="Responses section" />
 
 2.  On the Schema tab, click **Generate from JSON**.
 
@@ -385,8 +385,8 @@ To enter the response information in Stoplight Studio:
 
 6.  Add some more detail about the response elements:
 
-    1. Click the **Description** button <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_description_button.png" alt="Description button" /> next to each property and add a description.
-    2.  Click the **Other Properties** <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_other_properties_button2.png" alt="Other properties" /> button and add an example in the **example** field.
+    1. Click the **Description** button <img src="{{site.media}}/stoplight_description_button.png" alt="Description button" /> next to each property and add a description.
+    2.  Click the **Other Properties** <img src="{{site.media}}/stoplight_other_properties_button2.png" alt="Other properties" /> button and add an example in the **example** field.
 
     For the description and examples, expand the orange button below and copy over the information.
 
@@ -508,7 +508,7 @@ To enter the response information in Stoplight Studio:
 
 7.  Now that you finished entering schema information, click the **Preview button**. The documentation should look like this, with a tab to toggle between Schema and Example:
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_response_info_section.png" alt="Schema section" />
+    <img src="{{site.media}}/stoplight_response_info_section.png" alt="Schema section" />
 
     Note that the examples are somewhat hidden in the Preview. If you move your mouse over the "Required" property, the example appears as a tooltip.
 
@@ -527,19 +527,19 @@ You've finished creating your OpenAPI spec, so let's preview, test, and publish 
 
     The screen should look like this:
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_demo_try_it.png" alt="Stoplight Try It screen" />
+    <img src="{{site.media}}/stoplight_demo_try_it.png" alt="Stoplight Try It screen" />
 
 7.  Click the **Send** button.
 
     If your API key is valid and the zip code is supported, you should see a response like the following:
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_response_try_it.png" alt="Sample response from Try It" />
+    <img src="{{site.media}}/stoplight_response_try_it.png" alt="Sample response from Try It" />
 
-6.  At this point, you can either publish or export your API documentation. To publish, click the **Push** button <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplightpushbutton.png" alt="Stoplight Push button" />. Then push the project to your Stoplight workspace.
+6.  At this point, you can either publish or export your API documentation. To publish, click the **Push** button <img src="{{site.media}}/stoplightpushbutton.png" alt="Stoplight Push button" />. Then push the project to your Stoplight workspace.
 
 7.  From your workspace, look at the admin sidebar on the left. Click the **Share** button and choose the visibility settings for your documentation (e.g., Public).
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_share_button.png" alt="Share button" />
+    <img src="{{site.media}}/stoplight_share_button.png" alt="Share button" />
 
     You can view my [OpenWeatherMap API documentation on Stoplight here](https://idratherbewriting.stoplight.io/docs/openweathermap3/reference/openweathermap.v1.yaml). If you got stuck in the tutorial somewhere along the way, you can click Export to download my code and paste it into your code.
 
@@ -549,7 +549,7 @@ You've finished creating your OpenAPI spec, so let's preview, test, and publish 
 
 8.  If you don't want to publish docs through Stoplight, you can export your spec file from Stoplight. From the workspace home, click the **Export** button and choose the type of code you want:
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_export_option.png" alt="Stoplight export option" />
+    <img src="{{site.media}}/stoplight_export_option.png" alt="Stoplight export option" />
 
     The Bundled References will include the `$ref` code while Fully Deferenced will not; instead, the export will substitute in the references for `$ref`. The option you choose depends on what's supported in the editor you're bringing it to.
 

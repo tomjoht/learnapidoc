@@ -185,7 +185,7 @@ You can import curl commands into Postman by doing the following:
 
     Make sure you don't have any extra spaces at the beginning.
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/postmanimport.png" class="small" alt="Importing into Postman" />
+    <img src="{{site.media}}/postmanimport.png" class="small" alt="Importing into Postman" />
 
 
 3.  Click **Import**.
@@ -199,7 +199,7 @@ You can also export Postman to curl by doing the following:
 1.  If desired, select one of your OpenWeatherMap API requests in Postman.
 1.  Click the **Code** button (it's right below Save).
 
-    <img class="medium" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/postmangeneratecodesnippet.png" alt="Generating code snippets" />
+    <img class="medium" src="{{site.media}}/postmangeneratecodesnippet.png" alt="Generating code snippets" />
 
 2.  Select **curl** from the drop-down menu.
 3.  Copy the code snippet.

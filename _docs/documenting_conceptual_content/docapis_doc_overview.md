@@ -74,11 +74,11 @@ In the overview, the high-level executive will be less interested in the technic
 
 Another facet of product overviews is their frequent overlap with marketing content. In many organizations, there is a developer marketing group that handles higher-level product content, creating some overlap with documentation-based product overviews. For example, if you browse the AWS Lambda documentation, you'll find that a higher-level product overview appears before the actual documentation. Here's the [marketing layer](https://aws.amazon.com/lambda/) to the product:
 
-<a class='noCrossRef' href="https://aws.amazon.com/lambda/"><img style="border: 1px solid #dedede" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/awslambdaproducthomepage.png" alt="AWS Lambda product homepage" /></a>
+<a class='noCrossRef' href="https://aws.amazon.com/lambda/"><img style="border: 1px solid #dedede" src="{{site.media}}/awslambdaproducthomepage.png" alt="AWS Lambda product homepage" /></a>
 
 This marketing layer covers these topics: Overview, Features, Pricing, Getting Started, Resources, FAQs, and Partners. The actual [Lambda documentation](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) is presented on another layer of the site:
 
-<a class='noCrossRef'  href="https://docs.aws.amazon.com/lambda/latest/dg/welcome.html"><img style="border: 1px solid #dedede"  src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/awslambdadochomepage.png" alt="Lambda documentation homepage" /></a>
+<a class='noCrossRef'  href="https://docs.aws.amazon.com/lambda/latest/dg/welcome.html"><img style="border: 1px solid #dedede"  src="{{site.media}}/awslambdadochomepage.png" alt="Lambda documentation homepage" /></a>
 
 If you read the first paragraph from each screenshot, you'll see how similar yet different the two descriptions are. They repeat many of the same points but in different ways. The documentation product overview addresses these questions:
 

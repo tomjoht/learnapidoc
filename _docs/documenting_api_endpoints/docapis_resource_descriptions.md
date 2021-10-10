@@ -11,7 +11,7 @@ last-modified: 2020-04-06
 
 {% include workflow_map.html step="1" map="content/reference_doc_map.html"  %}
 {% if site.format == "pdf" or site.format == "kindle" %}
-<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/apiref1.png"/>
+<img src="{{site.media}}/apiref1.png"/>
 {% endif %}
 
 {{site.data.glossary.resource_description.def}}
@@ -23,7 +23,7 @@ last-modified: 2020-04-06
 
 Here's an example of a resource description from the Mailchimp API's [Campaigns resource](http://developer.mailchimp.com/documentation/mailchimp/reference/campaigns/#):
 
-<a class="noExtIcon" href="http://developer.mailchimp.com/documentation/mailchimp/reference/campaigns/"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/mailchimpcampaigns.png"/></a>
+<a class="noExtIcon" href="http://developer.mailchimp.com/documentation/mailchimp/reference/campaigns/"><img src="{{site.media}}/mailchimpcampaigns.png"/></a>
 
 {% include random_ad2.html %}
 
@@ -45,13 +45,13 @@ Typically, an API will have a number of endpoints grouped under the same resourc
 
 Here's a resource description for the Membership resource in the [Box API](https://developer.box.com/reference/resources/group-membership/):
 
-<a class="noCrossRef" href="https://developer.box.com/reference/resources/group-membership/" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/boxresourcesv2.png" style="border: 1px solid #dedede" alt="Example from Box" /></a>
+<a class="noCrossRef" href="https://developer.box.com/reference/resources/group-membership/" class="noExtIcon"><img src="{{site.media}}/boxresourcesv2.png" style="border: 1px solid #dedede" alt="Example from Box" /></a>
 
 For the Membership resource (or "object," as they call it), there are 7 different endpoints or methods you can call. The Box API describes the Membership resource and each of the endpoints that lets you access the resource.
 
 Sometimes the general resource isn't described; instead, it just groups the endpoints. The bulk of the description appears in each endpoint. For example, in the Eventbrite API, here's the Events resource:
 
-<a class="noExtIcon" href="https://www.eventbrite.com/platform/api#/reference/event"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/eventbriteresourceexample2.png"/></a>
+<a class="noExtIcon" href="https://www.eventbrite.com/platform/api#/reference/event"><img src="{{site.media}}/eventbriteresourceexample2.png"/></a>
 
 Although the Events resource isn't described here, descriptions are added for each of the Events endpoints. The Events resource contains all of these endpoints:
 
@@ -80,7 +80,7 @@ When developers create APIs, they have a design question to consider: Use many v
 
 As another example, the previous version of the Instagram API depicted a Relationships resource as follows:
 
-<a  class="noCrossRef" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/instagramapi_3_17.png"/></a>
+<a  class="noCrossRef" class="noExtIcon"><img src="{{site.media}}/instagramapi_3_17.png"/></a>
 
 The Relationships resource isn't described but rather acts as a container for relationship endpoints. Descriptions are added for each of the resources grouped within the Relationships resource:
 

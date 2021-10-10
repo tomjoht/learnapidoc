@@ -14,7 +14,7 @@ last-modified: 2020-06-25
 ---
 
 {% if site.format == "pdf" or site.format == "kindle" %}
-<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapistep2.png"/>
+<img src="{{site.media}}/openapistep2.png"/>
 {% endif %}
 
 The [info object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#infoObject) contains basic information about your API, including the title, a description, version, link to the license, link to the terms of service, and contact information. Many of the properties are optional.

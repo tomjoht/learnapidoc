@@ -14,7 +14,7 @@ last-modified: 2020-09-07
 ---
 
 {% if site.format == "pdf" or site.format == "kindle" %}
-<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapistep4.png"/>
+<img src="{{site.media}}/openapistep4.png"/>
 {% endif %}
 
 The [`paths` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#pathsObject) contains the meat of your API information. The `paths` object has several sub-objects: a [path items object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#pathItemObject), an [operations object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#operationObject), and more.
@@ -333,7 +333,7 @@ paths:
 
 Swagger UI displays the `paths` object like this:
 
-<a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/step5_aswaggeruiprogress.png" class="large" /></a>
+<a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="{{site.media}}/step5_aswaggeruiprogress.png" class="large" /></a>
 
 Expand the Current Weather Data section to see the details. When you click **Try it out**, you'll notice that the field populates with the description. If you want the field to populate with a value, add a `default` property under `schema` (as shown with the `mode` parameter in the code above).
 

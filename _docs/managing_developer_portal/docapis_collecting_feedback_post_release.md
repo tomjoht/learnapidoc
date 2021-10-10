@@ -30,11 +30,11 @@ Let's start by talking about the feedback form's design &mdash; after all, witho
 
 You might be tempted to put your feedback form as a floating button on the side of your docs. Here's a sample with the feedback button on the side:
 
-<a class="noCrossRef" href="https://developer.amazon.com/docs/fire-tv/toolkits-for-building-fire-tv-apps.html"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/feedback_button_on_side.png" alt="Feedback on the side" /></a>
+<a class="noCrossRef" href="https://developer.amazon.com/docs/fire-tv/toolkits-for-building-fire-tv-apps.html"><img src="{{site.media}}/feedback_button_on_side.png" alt="Feedback on the side" /></a>
 
 Although this side position is becoming more common, in tests that I've done, most people don't see the feedback button on the side. The feedback form at the bottom was used much more than the feedback button on the side (a ratio of 100:1 or so).
 
-<a class="noCrossRef" href="https://developer.amazon.com/docs/fire-tv/toolkits-for-building-fire-tv-apps.html"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/feedback_button_on_bottom.png" alt="Feedback form at the bottom" /></a>
+<a class="noCrossRef" href="https://developer.amazon.com/docs/fire-tv/toolkits-for-building-fire-tv-apps.html"><img src="{{site.media}}/feedback_button_on_bottom.png" alt="Feedback form at the bottom" /></a>
 
 Again, follow standard web practices for placement of common elements.
 
@@ -108,7 +108,7 @@ Remember, people usually give 30 seconds or less of time in providing feedback. 
 
 I also recommend adding some placeholder text that encourages users to be descriptive, such as "Enter your feedback here. Try to be as specific and detailed as possible. At least 100 characters (several sentences) are required." For example, like the following screenshot:
 
-<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/feedbackformsample.png" alt="Sample feedback form" />
+<img src="{{site.media}}/feedbackformsample.png" alt="Sample feedback form" />
 
 If you need metrics around feedback, you could quantify the number of comments received for each doc set, and then indicate what actions were taken. What percentage of the feedback was actionable, and how many tickets did you close related to doc feedback, etc.? How many tickets were from humans versus bots?
 

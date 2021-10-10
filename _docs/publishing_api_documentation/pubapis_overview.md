@@ -96,7 +96,7 @@ Most outputs from HATs look dated and old. They look like a relic of the pre-200
 
 For example, here's a sample help output from Flare for the Photobucket API:
 
-<a href="http://bit.ly/photobucketlongurl" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/hatphotobucket.png" alt="Publishing API docs" /></a>
+<a href="http://bit.ly/photobucketlongurl" class="noExtIcon"><img src="{{site.media}}/hatphotobucket.png" alt="Publishing API docs" /></a>
 
 With API documentation, often the documentation *is* the product's interface &mdash; there isn't a separate product GUI (graphical user interface) that clients interact with. Because the product's GUI is the documentation, it has to be sexy and attractive.
 

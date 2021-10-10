@@ -11,7 +11,7 @@ last-modified: 2020-06-27
 
 {% include workflow_map.html step="3" map="content/reference_doc_map.html"  %}
 {% if site.format == "pdf" or site.format == "kindle" %}
-<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/apiref4.png"/>
+<img src="{{site.media}}/apiref4.png"/>
 {% endif %}
 
 {{site.data.glossary.parameters.def}}
@@ -237,11 +237,11 @@ By all means, if the JSON object is relatively small, a table is probably your b
 
 Take a look at eBay's [findItemsByProduct](http://developer.ebay.com/DevZone/finding/CallRef/findItemsByProduct.html) resource. Here's the request body (in this case, the format is XML):
 
-<a class="noCrossRef" class="noExtIcon" href="http://developer.ebay.com/DevZone/finding/CallRef/findItemsByProduct.html"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/ebaysample_3_17.png" alt="eBay parameters" /></a>
+<a class="noCrossRef" class="noExtIcon" href="http://developer.ebay.com/DevZone/finding/CallRef/findItemsByProduct.html"><img src="{{site.media}}/ebaysample_3_17.png" alt="eBay parameters" /></a>
 
 Below the request body is a table that describes each parameter:
 
-<a class="noCrossRef" class="noExtIcon" href="http://developer.ebay.com/DevZone/finding/CallRef/findItemsByProduct.html"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/ebaytable_3_17.png" alt="eBay parameters" /></a>
+<a class="noCrossRef" class="noExtIcon" href="http://developer.ebay.com/DevZone/finding/CallRef/findItemsByProduct.html"><img src="{{site.media}}/ebaytable_3_17.png" alt="eBay parameters" /></a>
 
 But the sample request also contains links to each of the parameters. When you click a parameter value in the sample request, you go to a page that provides more details about that parameter value, such as the [`ItemFilter`](http://developer.ebay.com/DevZone/finding/CallRef/types/ItemFilter.html). The separate page with more detail is likely because the parameter values are more complex and require detailed explanation.
 
@@ -251,7 +251,7 @@ The same parameter values might be used in other requests as well, so eBay's app
 
 [Swagger UI](pubapis_swagger.html), which we explore later and also [demo](pubapis_swagger_demo.html), provides another approach to documenting the request bodies. Swagger UI shows the request bodies in the format that you see below. Swagger UI lets you toggle between an "Example Value" and a "Model" view for both responses and request bodies.
 
-<a class="noExtIcon" href="http://petstore.swagger.io/#/operations/pet/addPet"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/swaggeruiexamplemodel.png"/></a>
+<a class="noExtIcon" href="http://petstore.swagger.io/#/operations/pet/addPet"><img src="{{site.media}}/swaggeruiexamplemodel.png"/></a>
 
 See the [Swagger Petstore](http://petstore.swagger.io/) to explore the demo here. The Example Value shows a sample of the syntax along with examples. When you click the **Model** link, you see a sample request body and any descriptions of each element.
 

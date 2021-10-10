@@ -11,9 +11,9 @@ last-modified: 2021-01-18
 
 In case you'd like to know a little bit about me, I'm currently based in Seattle, Washington, working for Google. (Previously, I was at Amazon and a couple of startups in the Bay area.)
 
-{% if site.format == "web" %}<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/tomjohnson.jpg" class="small" style="float: right; padding:1em;"/>
+{% if site.format == "web" %}<img src="{{site.media}}/tomjohnson.jpg" class="small" style="float: right; padding:1em;"/>
 {% else %}
-<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/tomjohnsonsmall.jpg" class="small" style="float: right; padding:1em;"/>
+<img src="{{site.media}}/tomjohnsonsmall.jpg" class="small" style="float: right; padding:1em;"/>
 {% endif %}
 
 Most people know me through my blog, [I'd Rather Be Writing](https://idratherbewriting.com), which has been an active online blog for tech comm for the past decade.

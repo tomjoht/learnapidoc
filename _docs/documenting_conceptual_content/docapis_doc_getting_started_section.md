@@ -100,7 +100,7 @@ What's especially good about Postman is that it allows users to customize the AP
 
 Postman also allows users to easily generate the needed code to make requests in practically any language. In the same Postman workspace, click the **</>** (Code) button on the right side (highlighted in yellow) to expand the Code pane.
 
-<a href="https://www.postman.com/tomjoht/workspace/openweathermap-demo/request/3578416-84eb6497-c2f8-4d83-8922-a0330dd50694?ctx=code"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/postmanhighlightedcodebutton.png" alt="Code options" /></a>
+<a href="https://www.postman.com/tomjoht/workspace/openweathermap-demo/request/3578416-84eb6497-c2f8-4d83-8922-a0330dd50694?ctx=code"><img src="{{site.media}}/postmanhighlightedcodebutton.png" alt="Code options" /></a>
 
 You can see the many options for running this same code in other languages. This gives users a jumping off point where they can build on your information to create more detailed and customized calls.
 

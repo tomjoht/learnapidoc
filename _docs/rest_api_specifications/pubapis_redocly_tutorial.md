@@ -372,7 +372,7 @@ The CLI contains a Redoc documentation preview server that listens for changes a
 
 2.  Go to `http://127.0.0.1:8080` in your browser to see a preview of the output:
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/redoclypreviewdocs.png" alt="Redocly preview" />
+    <img src="{{site.media}}/redoclypreviewdocs.png" alt="Redocly preview" />
 
 3.  To see the auto-regeneration, go into one of your files in `openapi` and make a change. For example go to `openapi/components/parameters/lat.yaml` and change a line in the description, and then save the file.
 
@@ -473,7 +473,7 @@ Redocly has some unique offerings when it comes to organizing and working with c
 
     In the preview server, notice how the heading levels are reflected in the sidebar.
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/redoclysidebarnav.png" alt="How headings are reflected in the sidebar" />
+    <img src="{{site.media}}/redoclysidebarnav.png" alt="How headings are reflected in the sidebar" />
 
     First-level headings become parent-level sidebar entries. Second-level headings become child-level sidebar entries to the parents. (Deeper levels aren't supported.)
 
@@ -491,7 +491,7 @@ Redocly has some unique offerings when it comes to organizing and working with c
 
     For an example of fairly robust API documentation that uses the sidebar for a lot of conceptual documentation, see the [Checkr documentation](https://docs.checkr.com/).
 
-    <a class="noCrossRef" href="https://docs.checkr.com/"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/checkrdocs.png" alt="Checkr documentation" /></a>
+    <a class="noCrossRef" href="https://docs.checkr.com/"><img src="{{site.media}}/checkrdocs.png" alt="Checkr documentation" /></a>
 
 If integrating your conceptual content like this doesn't work for your doc needs, Redocly offers a more robust option: [Redocly Developer Portals](https://redoc.ly/developer-portal/). The Redocly Developer Portals use Gatsby as a static site generator to give you more complete control and customization for non-reference content. Gatsby also provides many pre-built React components, which makes building out other features of a developer portal, such as marketing landing pages and other UI elements in a console, much easier.
 
@@ -539,7 +539,7 @@ Let's enable the premium version features and see how they work. (You won't have
 
 5.  View the preview server ([http://127.0.0.1:8080/](http://127.0.0.1:8080/)) and see the code populate in the right column.
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/pullrightredocly2.png" alt="PullRight tags" />
+    <img src="{{site.media}}/pullrightredocly2.png" alt="PullRight tags" />
 
 6.  In your `description.md` file, re-use a parameter description from your reference:
 
@@ -548,7 +548,7 @@ Let's enable the premium version features and see how they work. (You won't have
     ```
 7.  View the preview server and see the `lat` parameter appear (highlighted below).
 
-    <img style="border: 1px solid #dedede;" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/redoclyembedref.png" alt="Re-used reference content" />
+    <img style="border: 1px solid #dedede;" src="{{site.media}}/redoclyembedref.png" alt="Re-used reference content" />
 
 8.  Open `.redocly.yaml` and add `showConsole: true` under `referenceDocs`:
 
@@ -559,7 +559,7 @@ Let's enable the premium version features and see how they work. (You won't have
     ```
 9.  View the preview server and look for the blue "TRY IT" tab next to the weather path:
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/try-it-tab-redocly.png" alt="Try it tab" />
+    <img src="{{site.media}}/try-it-tab-redocly.png" alt="Try it tab" />
 
 10. Click the **TRY IT** tab. An API explorer replaces the right pane with options to configure a request.
 11.  For the `zip` parameter, enter `95050` (or another zip code).

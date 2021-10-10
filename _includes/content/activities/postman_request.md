@@ -18,7 +18,7 @@ In this exercise, you'll use Postman to make a request using OpenWeatherMap's [c
 
     For the value for `appid`, use your own API key. (If you didn't [get an API key]({{site.rooturl}}docapis_get_auth_keys.html), use [one of the keys here](http://idratherbewriting.site/apikeys).) Your Postman UI should look like this:
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/postmanopenweatherapi.png" class="medium"/>
+    <img src="{{site.media}}/postmanopenweatherapi.png" class="medium"/>
 
 	  When you add these parameters, they appear as a query string to the endpoint URL in the GET box. For example, your endpoint will now look like this: `https://api.openweathermap.org/data/2.5/weather?zip=95050&units=imperial&appid=APIKEY` (but with different query string values and with your own API key instead of `APIKEY`). Query string parameters appear after the question mark `?` symbol and are separated by ampersands `&`. The order of query string parameters doesn't matter.
 
@@ -28,7 +28,7 @@ In this exercise, you'll use Postman to make a request using OpenWeatherMap's [c
 
 	  The response appears in the lower pane. For example:
 
-    <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/postmanopenweatherapiresponse.png" class="medium"/>
+    <img src="{{site.media}}/postmanopenweatherapiresponse.png" class="medium"/>
 
 ### Save the request
 
@@ -43,7 +43,7 @@ In this exercise, you'll use Postman to make a request using OpenWeatherMap's [c
 
 4.  Click **Save to [collection name]**
 
-    Saved requests appear in the left side pane under Collections. (If you don't see the Collections pane, click the **Show/Hide Sidebar** button <img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/show_hide_sidebar.png" style="width: 20px"/> in the lower-left corner to expand it.
+    Saved requests appear in the left side pane under Collections. (If you don't see the Collections pane, click the **Show/Hide Sidebar** button <img src="{{site.media}}/show_hide_sidebar.png" style="width: 20px"/> in the lower-left corner to expand it.
 
 ### (Optional) Make a request for the OpenWeatherMap 5 day forecast
 

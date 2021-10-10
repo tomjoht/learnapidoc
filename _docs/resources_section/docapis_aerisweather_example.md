@@ -30,7 +30,7 @@ See the [Getting Started](http://www.aerisweather.com/support/docs/api/getting-s
 
 Browse through the [available endpoints](http://www.aerisweather.com/support/docs/api/reference/endpoints/) in the Weather API and look for one that would give you the wind speed. The [`observations`](https://www.aerisweather.com/support/docs/api/reference/endpoints/observations/) endpoint provides information about wind speed, as does [`forecasts`](http://www.aerisweather.com/support/docs/api/reference/endpoints/forecasts/). The response from `observations` looks a little simpler, so let's use that endpoint.
 
-<a href="http://www.aerisweather.com/support/docs/api/reference/endpoints/observations/" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/aerisobservations.png" alt="Aeris Weather observations resource" /></a>
+<a href="http://www.aerisweather.com/support/docs/api/reference/endpoints/observations/" class="noExtIcon"><img src="{{site.media}}/aerisobservations.png" alt="Aeris Weather observations resource" /></a>
 
 {% include random_ad2.html %}
 
@@ -202,6 +202,6 @@ Here's the <a href="https://idratherbewriting.com/learnapidoc/assets/files/aeris
 
 {% include course_image.html url="https://idratherbewriting.com/learnapidoc/assets/files/aeris-observations.html" size="large" filename="notthatwindy" ext_print="png" ext_web="png" alt="Aeris Weather example" caption="Aeris Weather example" %}
 
-<a href="https://idratherbewriting.com/learnapidoc/assets/files/aeris-observations.html" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/notthatwindy.png" alt="Aeris Weather example" /></a>
+<a href="https://idratherbewriting.com/learnapidoc/assets/files/aeris-observations.html" class="noExtIcon"><img src="{{site.media}}/notthatwindy.png" alt="Aeris Weather example" /></a>
 
 For fun, change the value from `15` to `1` in the code and refresh the page. It will probably say "Yes, it's too windy." JavaScript is fun because it's easy to adjust some parameters and see the results through your browser. With other programming languages, you would likely need to compile or run the code in an IDE to see the result. In both cases, always test out the code and make it run yourself.

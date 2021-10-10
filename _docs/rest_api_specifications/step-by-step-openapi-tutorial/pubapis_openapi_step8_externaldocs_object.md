@@ -14,7 +14,7 @@ last-modified: 2020-09-07
 ---
 
 {% if site.format == "pdf" or site.format == "kindle" %}
-<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapistep8.png"/>
+<img src="{{site.media}}/openapistep8.png"/>
 {% endif %}
 
 The [`externalDocs` object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#external-documentation-object) lets you link to external documentation. You can also provide links to external docs in the `paths` object.
@@ -63,7 +63,7 @@ You can see the complete specification document here: <a href="https://idratherb
 
 Here's the specification document rendered by Swagger UI:
 
-<a target="\_blank" href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/swagger_full_result.png" class="large" /></a>
+<a target="\_blank" href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="{{site.media}}/swagger_full_result.png" class="large" /></a>
 
 Try executing a request in the version above and look at the result. In the result, locate the `temp` value in the `main` object. Then take a break by going outside and evaluate whether the temperature outside matches the response.
 

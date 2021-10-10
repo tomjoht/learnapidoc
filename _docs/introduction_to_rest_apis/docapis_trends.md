@@ -16,7 +16,7 @@ I recently [conducted a survey](/blog/developer-documentation-survey-2020/) abou
 
 You can view the [slides here](../learnapidoc/slides/devdoctrends_results.html):
 
-<a href="../learnapidoc/slides/devdoctrends_results.html"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/devdoctrendssurveyresultstitle.png" alt="Developer Documentation Survey Results" style="max-width:500px; border: 1px solid #444" /></a>
+<a href="../learnapidoc/slides/devdoctrends_results.html"><img src="{{site.media}}/devdoctrendssurveyresultstitle.png" alt="Developer Documentation Survey Results" style="max-width:500px; border: 1px solid #444" /></a>
 
 ## Webinar
 
@@ -28,9 +28,9 @@ You can also view a recorded webinar where I talk through the results here:
 
 ## Article
 
-I wrote an [article for the *Institute of Scientific Technical Communicators* (ISTC) magazine](https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/istc2020_devdoctrends.pdf) (Autumn 2020).
+I wrote an [article for the *Institute of Scientific Technical Communicators* (ISTC) magazine]({{site.media}}/istc2020_devdoctrends.pdf) (Autumn 2020).
 
-<a class="noCrossRef" href="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/istc2020_devdoctrends.pdf"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/istccoverthumb2020.png" alt="ISTC article on developer documentation trends" style="border: 1px solid #dedede;"/></a>
+<a class="noCrossRef" href="{{site.media}}/istc2020_devdoctrends.pdf"><img src="{{site.media}}/istccoverthumb2020.png" alt="ISTC article on developer documentation trends" style="border: 1px solid #dedede;"/></a>
 
 The same content from the PDF is available in HTML below:
 
@@ -62,7 +62,7 @@ To gather data about trends in developer docs, I decided to create my own survey
 
 A total of 405 people completed the entire survey. Completing the survey means that after the 50th question, they clicked Submit. However, 855 started the survey, and 337 dropped out somewhere along the way. I allowed partial responses even if users dropped out along the way. So the actual number of respondents varied between 405 and 855, with some questions receiving more answers than others. About 37% of the respondents were in the US, about 15% in India, 5% in Germany, 5% in the UK, and smaller percentages from other countries.
 
-<a class="noExtIcon" href="https://idratherbewriting.site/devdoctrendsreport"><img style="border: 1px solid #dedede" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/trends-participant-statistics.png" alt="Survey summary" /></a>
+<a class="noExtIcon" href="https://idratherbewriting.site/devdoctrendsreport"><img style="border: 1px solid #dedede" src="{{site.media}}/trends-participant-statistics.png" alt="Survey summary" /></a>
 
 You can browse the results of the survey directly at [https://idratherbewriting.site/devdoctrendsreport](https://idratherbewriting.site/devdoctrendsreport).
 
@@ -107,7 +107,7 @@ Complicating the tool question even more are writers who don't have any tools ou
 
 For examples of how multiple tools are used together in different combinations and solutions, see [Jamstack examples](https://jamstack.org/examples/). Jamstack refers to serverless websites built with JavaScript, APIs, and Markup and reflects modern web development trends. Jamstack excludes tools such as WordPress or other web apps that would require a heavy backend component on a server to run.
 
-<a class="noExtIcon" href="https://jamstack.org/examples/"><img style="border: 1px solid #dedede" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/jamestackexamples.png" alt="Jamstack examples" /></a>
+<a class="noExtIcon" href="https://jamstack.org/examples/"><img style="border: 1px solid #dedede" src="{{site.media}}/jamestackexamples.png" alt="Jamstack examples" /></a>
 
 Overall, the survey results confirmed the predominance of the docs-as-code approach in the dev docs space. If you're working with developer docs, this approach is trending. However, there's also a decent amount of wikis, Oxygen XML, and MadCap Flare use, probably among those groups that have more robust localization and PDF requirements.
 

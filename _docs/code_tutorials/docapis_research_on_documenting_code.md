@@ -26,7 +26,7 @@ First, let's explore "When Not to Comment: Questions and Tradeoffs with API Docu
 
 This research coordinates efforts among academic researchers, engineers, usability specialists, and members from Google’s Engineering Productivity Research team. Given how important documentation is for understanding code, the researchers want to know the best location for documentation as well as what information engineers want in docs. Specifically, they focused on C++ APIs and asked whether engineers are more inclined to consult the header files (where classes are defined) or the implementation files (where classes are implemented) for the information they need. The following screenshot (from their article) shows the difference between header and implementation files:
 
-<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/header_or_implementation_files.png" style="max-width: 500px" alt="Header files versus implementation files" />
+<img src="{{site.media}}/header_or_implementation_files.png" style="max-width: 500px" alt="Header files versus implementation files" />
 
 Basically, in C++, the header files (`.h`) contain the classes and the main documentation. The implementation files (`.cc`) instantiate and implement the classes from the header files. In short, the header files contain more formal documentation that follows specific annotation conventions, while the implementation files contain the guts of the logic about how the class has been implemented. Implementation files have comments peppered inline with the code, without formally structured doc annotations. A central question the researchers wanted to know is whether users gravitate toward the inline code comments in implementation files or the official documentation in the header files.
 
@@ -56,7 +56,7 @@ Besides skipping docs when the code is simple enough to understand on its own, t
 
 In short, there are valid arguments for not even writing documentation, particularly for simple code. The following chart shows when documentation might not be necessary with code:
 
-<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/when-not-comment-on-code.png" style="max-width: 500px" alt="When not to comment on code"/>
+<img src="{{site.media}}/when-not-comment-on-code.png" style="max-width: 500px" alt="When not to comment on code"/>
 
 However, for more complex code, especially where multiple files and generated code might be involved, developers still relied on the formal documentation to understand it. The researchers explain:
 
@@ -98,7 +98,7 @@ So far we've looked at where code documentation should appear and when code docu
 
 The researchers arrange this information into a chart for readability:
 
-<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api-usage-what-to-document.png" alt="What to focus on in documentation" />
+<img src="{{site.media}}/api-usage-what-to-document.png" alt="What to focus on in documentation" />
 
 Nothing particularly stands out here, except that "input values" are read the most. Input values refers to parameters or other arguments that developers often consult to understand data types, casing, or other details. As such, take pains to document your parameters in great detail. I describe the various categories to cover at length with parameters in [Step 3: Parameters](docapis_doc_parameters.html). With REST APIs, some details to note about parameters might include the following:
 
@@ -178,7 +178,7 @@ Instead of "opportunistic" (which has a somewhat negative connotation), others h
 
 If developers jump around from code to concepts and other places, where are they spending most of their time in the docs? If we can measure the time in one type of documentation more than another, we can give more attention to that kind of documentation. The authors measured the time users spent in various parts of the documentation as follows:
 
-<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/percentageoftimespent.png" style="max-width: 450px; border: 1px solid #dedede" />
+<img src="{{site.media}}/percentageoftimespent.png" style="max-width: 450px; border: 1px solid #dedede" />
 
 Similar to the previous research from Head et al., "“When Not to Comment," developers spent most of the time looking at API reference information (e.g., parameters). But here the researchers make an interesting observation that breaks other assumptions: they say developers looked for topics rather than categories of information &mdash; in other words, they didn't necessarily distinguish between concepts versus recipes versus reference information types as they searched for information. They had a problem to solve, and they looked for information related to that problem, regardless of whether that information might be classified as a concept, task, reference, troubleshooting, recipe, or other topic type. As a result, the researchers recommend a more topic-based organization strategy:
 

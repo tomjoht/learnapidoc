@@ -38,7 +38,7 @@ You may wonder what the motivation is behind these requirements, especially if t
 
 For an example, take a look at Algolia's API. You can view the documentation for their [REST API here](https://www.algolia.com/doc/rest). However, when you implement Algolia (which provides a search feature for your site), you'll probably follow the documentation for your specific platform or language.
 
-<a href="https://www.algolia.com/doc" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/algolia_clientsdks.png" alt="Algolia client implementations" /></a>
+<a href="https://www.algolia.com/doc" class="noExtIcon"><img src="{{site.media}}/algolia_clientsdks.png" alt="Algolia client implementations" /></a>
 
 {% comment %}{% include random_ad3.html %}{% endcomment %}
 

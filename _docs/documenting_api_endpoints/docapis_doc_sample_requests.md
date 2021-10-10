@@ -14,7 +14,7 @@ last-modified: 2020-05-13
 
 {% include workflow_map.html step="4" map="content/reference_doc_map.html"  %}
 {% if site.format == "pdf" or site.format == "kindle" %}
-<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/apiref4.png"/>
+<img src="{{site.media}}/apiref4.png"/>
 {% endif %}
 
 {{site.data.glossary.request_example.def}}
@@ -44,7 +44,7 @@ curl is a common format to show requests for several reasons:
 
 In general, use curl to show your sample request. Here's another example of a curl request in the Parse API:
 
-<a href="http://docs.parseplatform.org/rest/guide/#updating-objects" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/parseapirequest2.png"/></a>
+<a href="http://docs.parseplatform.org/rest/guide/#updating-objects" class="noExtIcon"><img src="{{site.media}}/parseapirequest2.png"/></a>
 
 You can add backslashes in curl to separate each parameter onto its own line (though, as I pointed out in the [curl tutorial](docapis_make_curl_call.html#windows_notes), Windows has trouble with backslashes).
 
@@ -52,7 +52,7 @@ You can add backslashes in curl to separate each parameter onto its own line (th
 
 Other API doc sites might use the full resource URL, such as this plain example from Twitter:
 
-<a class="noExtIcon" href="https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-friends-list"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/twitterrequestexample.png" /></a>
+<a class="noExtIcon" href="https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-friends-list"><img src="{{site.media}}/twitterrequestexample.png" /></a>
 
 The resource URL includes both the base path and the endpoint. One problem with showing the full resource URL is that it doesn't indicate if any header information needs to be passed to authorize the request. (If your API consists of GET requests only and doesn't require authorization, great, but few APIs are set up this way.) curl requests can easily show any header parameters.
 
@@ -68,7 +68,7 @@ https://api.citygridmedia.com/content/places/v2/search/where
 
 However, there are [literally 17 possible query string parameters](http://docs.citygridmedia.com/display/citygridv2/Places+API#PlacesAPI-WhereSearchRequest) you can use with this endpoint. As a result, the documentation includes several sample requests that show various parameter combinations:
 
-<a href="http://docs.citygridmedia.com/display/citygridv2/Places+API" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/search_usage_examples.png" alt="CityGrid Places API example" /></a>
+<a href="http://docs.citygridmedia.com/display/citygridv2/Places+API" class="noExtIcon"><img src="{{site.media}}/search_usage_examples.png" alt="CityGrid Places API example" /></a>
 
 Adding multiple request examples makes sense when the parameters wouldn't usually be used together. For example, there are few cases where you might actually include all 17 parameters in the same request, so any sample will be limited in what it can show.
 
@@ -94,13 +94,13 @@ Because you can't entirely know which language your end users will be developing
 
 However, some APIs do show simple requests in a variety of languages. Here's an example from Twilio:
 
-<a href="https://www.twilio.com/docs/api/rest/making-calls" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/twiliocodeexamples.png" alt="Twilio code samples" /></a>
+<a href="https://www.twilio.com/docs/api/rest/making-calls" class="noExtIcon"><img src="{{site.media}}/twiliocodeexamples.png" alt="Twilio code samples" /></a>
 
 You can select which language you want for the sample request: C#, curl, Java, Node.js, PHP, Python, or Ruby.
 
 Here's another example from the Clearbit API:
 
-<a href="https://clearbit.com/docs?javascript#enrichment-api-combined-api" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/clearbitrequestexamples.png" alt="Clearbit code samples" /></a>
+<a href="https://clearbit.com/docs?javascript#enrichment-api-combined-api" class="noExtIcon"><img src="{{site.media}}/clearbitrequestexamples.png" alt="Clearbit code samples" /></a>
 
 You can see the request in Shell (curl), Ruby, Node, or Python. Developers can easily copy the needed code into their applications, rather than figuring out how to translate the curl request into a particular programming language.
 
@@ -117,17 +117,17 @@ If you're not using an authoring tool that auto-generates code examples, and you
 
 [Paw](https://paw.cloud/) (for Mac) lets you export your request into nearly every conceivable language:
 
-<a href="https://luckymarmot.com/paw/extensions/" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/pawcodegenerators.png" alt="Paw code generator" /></a>
+<a href="https://luckymarmot.com/paw/extensions/" class="noExtIcon"><img src="{{site.media}}/pawcodegenerators.png" alt="Paw code generator" /></a>
 
 After you have a request configured (a process similar to [Postman](docapis_postman.html)), you can generate a code snippet by going to **File > Export Request**.
 
 The Postman app can also generate code snippets in a similar way. I covered this process in an earlier tutorial on [Inspect the JSON from the response payload](docapis_json_console.html). In Postman, after you configure your request, click the **Code** link (which appears below the Save button in the upper-right area).
 
-<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/postmangeneratecodesnippet.png" class="medium" alt="Generate code snippet" />
+<img src="{{site.media}}/postmangeneratecodesnippet.png" class="medium" alt="Generate code snippet" />
 
 Then select the language you want, such as JavaScript > Jquery AJAX:
 
-<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/postman_javascript_ajax.png" class="medium" alt="JavaScript Ajax code snippet" />
+<img src="{{site.media}}/postman_javascript_ajax.png" class="medium" alt="JavaScript Ajax code snippet" />
 
 {: .note}
 Although these code generators are probably helpful, they may or may not work for your API. Always review code samples with developers. In most cases, developers supply the code samples for the documentation, and technical writers briefly comment on the code samples.
@@ -146,15 +146,15 @@ An SDK is any kind of tooling that makes it easier to work with your API. It's e
 
 Many APIs have an API explorer feature that lets users make actual requests directly from the documentation. For example, here's a typical reference page for Spotify's API docs:
 
-<a href="https://developer.spotify.com/web-api/console/get-album/" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/spotifyapiconsole.png"/></a>
+<a href="https://developer.spotify.com/web-api/console/get-album/" class="noExtIcon"><img src="{{site.media}}/spotifyapiconsole.png"/></a>
 
 Flickr's API docs also have a built-in API Explorer:
 
-<a href="https://www.flickr.com/services/api/explore/flickr.photos.search" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/flickrapiexplorer.png"/></a>
+<a href="https://www.flickr.com/services/api/explore/flickr.photos.search" class="noExtIcon"><img src="{{site.media}}/flickrapiexplorer.png"/></a>
 
 As does the New York Times API:
 
-<a class="noExtIcon" href="http://developer.nytimes.com/article_search_v2.json#/Console/GET/articlesearch.json"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/nytimesrequestexample.png"/></a>
+<a class="noExtIcon" href="http://developer.nytimes.com/article_search_v2.json#/Console/GET/articlesearch.json"><img src="{{site.media}}/nytimesrequestexample.png"/></a>
 
 The API Explorer lets you insert your own values, your own API key, and other parameters into a request so you can see the responses directly in the API Explorer. Being able to see your own data makes the response more real and immediate.
 
@@ -166,11 +166,11 @@ Although interactivity is powerful, API Explorers can be a dangerous addition to
 
 It's one thing to allow GET methods, but if you include other methods, users could inadvertently corrupt their data. In Sendgrid's API, they include a warning message to users before testing out calls with their API Explorer:
 
-<a href="https://sendgrid.com/docs/API_Reference/Web_API/blocks.html" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/sendgridwarningmessage.png" alt="SendGrid API Explorer warning message" /></a>
+<a href="https://sendgrid.com/docs/API_Reference/Web_API/blocks.html" class="noExtIcon"><img src="{{site.media}}/sendgridwarningmessage.png" alt="SendGrid API Explorer warning message" /></a>
 
 Foursquare's API docs used to have a built-in API explorer in the previous version of their docs (shown below), but they have since removed it. I'm not sure why &mdash; maybe they ran into some of these issues.
 
-<a href="https://developer.foursquare.com/docs" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/foursquareapiexplorer.png" alt="Foursquare's API Explorer" /></a>
+<a href="https://developer.foursquare.com/docs" class="noExtIcon"><img src="{{site.media}}/foursquareapiexplorer.png" alt="Foursquare's API Explorer" /></a>
 
 As far as integrating custom API Explorer tooling, this is a task that should be relatively easy for developers. All the API Explorer does is map values from a field to an API call and return the response to the same interface. In other words, the API plumbing is all there &mdash; you just need a little JavaScript and front-end skills to make it happen.
 

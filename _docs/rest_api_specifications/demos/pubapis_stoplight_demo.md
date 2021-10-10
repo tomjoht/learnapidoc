@@ -17,7 +17,7 @@ I've provided information about Stoplight in two other places in this course:
 
 Here I include a short demo of how Stoplight renders the OpenAPIWeatherMap OpenAPI specification. Following the same API we've been using in this course, here's what the weather endpoint looks like in Stoplight:
 
-<a class="noCrossRef" href="https://idratherbewriting.stoplight.io/docs/openweathermap3/reference/openweathermap.v1.yaml/paths/~1weather/get"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/stoplight_tutorial_end_goal.png" alt="Final output from Stoplight tutorial" /></a>
+<a class="noCrossRef" href="https://idratherbewriting.stoplight.io/docs/openweathermap3/reference/openweathermap.v1.yaml/paths/~1weather/get"><img src="{{site.media}}/stoplight_tutorial_end_goal.png" alt="Final output from Stoplight tutorial" /></a>
 
 Here are a few noteworthy callouts about the output:
 

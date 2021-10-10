@@ -14,7 +14,7 @@ last-modified: 2020-09-07
 ---
 
 {% if site.format == "pdf" or site.format == "kindle" %}
-<img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapistep7.png"/>
+<img src="{{site.media}}/openapistep7.png"/>
 {% endif %}
 
 The `tags` object allows you to arrange the `paths` (endpoints) into named groups in the Swagger UI display.
@@ -77,7 +77,7 @@ Observe how the description appears next to the collapsed Current Weather Data s
 
 All paths that have the same tag are grouped together in the display. For example, paths that have the `Current Weather Data` tag will be grouped together under the title `Current Weather Data`. Each group title is a collapsible/expandable toggle.
 
-<a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/openapitutorial_tags.png" class="medium" /></a>
+<a href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" class="noExtIcon"><img src="{{site.media}}/openapitutorial_tags.png" class="medium" /></a>
 
 {% include random_ad4.html %}
 

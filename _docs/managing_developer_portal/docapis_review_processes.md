@@ -58,7 +58,7 @@ If your organization has Slack, use it. Create a Slack channel specific to docum
 
 Also, note that Slack is trending as a way for teams to communicate. The [SmartBear 2020 API survey](https://idratherbewriting.com/blog/smartBear-2020-state-of-api-docs-review/) found that JIRA and Slack (not email and meetings) are how engineering teams prefer to communicate feedback:
 
-<a class="noCrossRef" href="https://smartbear.com/resources/ebooks/the-state-of-api-2020-report/"><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/smartbearslack2020.png" alt="JIRA and Slack trending as preferred communication methods" /></a>
+<a class="noCrossRef" href="https://smartbear.com/resources/ebooks/the-state-of-api-2020-report/"><img src="{{site.media}}/smartbearslack2020.png" alt="JIRA and Slack trending as preferred communication methods" /></a>
 
 You can read more insights about SmartBear's 2020 trends in this post: [SmartBear's 2020 API report finds 'Accurate and detailed documentation' to be second-most important characteristic of APIs](https://idratherbewriting.com/blog/smartBear-2020-state-of-api-docs-review/).
 
