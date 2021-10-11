@@ -139,6 +139,8 @@ Another challenge with product overviews is the overlap with README content. A R
 
 Hopefully not. The README might have a high-level summary and information about installation, configuration, and usage. But this information should be much more condensed/abbreviated than more detailed documentation.
 
+{% include image_ad_right.html %}
+
 Many guides about writing README content assume that the README is the only documentation for the code in the repo. As a professional technical writer, I rarely work on projects that are so small that the documentation can be handled by a single page that lives in a code repo. If that's all you need for your product, great. However, chances are the README is only a glimpse of many more pages of configuration, installation, and usage detail that live in a more robust documentation site separate from the repo. If that's the case, you might want to just link to your docs in the README.
 
 Although the README and product overview overlap a bit, the README has some elements that don't necessarily belong in regular documentation. Content elements specific to the README in the code repo might be the following:
@@ -192,8 +194,6 @@ Product overviews vary from product to product, but here's the general flow that
 These topics don't need to be standalone sections but can be interwoven into similar sections as you see fit.
 
 At the end of the product overview, be sure to transition into the next logical step: getting started! Here's where your [getting started tutorial](docapis_doc_getting_started_section.html) gets handed off to the user. It's your call to action, so to speak.
-
-{% include image_ad_right.html %}
 
 ## Sample product overviews
 
