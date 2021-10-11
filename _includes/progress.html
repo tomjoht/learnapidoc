@@ -4,7 +4,6 @@
     {% assign pages = site.docs | where: "progress", true %}
     {% assign progressPages = pages | sort: "weight" %}
     {% for pg in progressPages %}
-    {{pg.title}}<br/>
     {% if pg.permalink == page.permalink %}
     {% assign remainingPages = forloop.length | minus: forloop.index %}
     {% assign totalPages = forloop.length %}
