@@ -13,7 +13,6 @@ aws s3 cp s3://idbwmedia.com/images/api/ ~/tomjoht/wasabi  --recursive  --profil
 
 copy over images from tomjoht/wasabi to learnapidoc/wasabi. overwrite duplicates.
 
-
 2. ./serve_kindle.sh
 3. new tab: ./build_kindle.sh
 4. ./move.sh (moves docapis.mobi file from \_site to mobi folder in root directory)
@@ -43,7 +42,9 @@ the first is kindlegen, the next is the location of the docapis.opf file
 - to test manually, plug in micro usb cable, then simply drag the .mobi file into documents
 
 there's no need to convert to another ebook format b/c kindle has a reading app on every device aleady.
-but if you want to convert to ebook: https://cloudconvert.com/mobi-to-epub
+but if you want to convert to ebook:
+https://www.convertfiles.com/convert/ebook/MOBI-to-EPUB.html
+https://cloudconvert.com/mobi-to-epub
 
 - css: css/kindle.css
 - layout: kindle.html

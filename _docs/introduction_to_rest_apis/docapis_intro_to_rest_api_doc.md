@@ -111,7 +111,7 @@ When asked "What are the top three most important characteristics you need in an
 
 This rank is three higher than noted in the [*The State of API 2016* report](https://static1.smartbear.co/smartbear/media/ebooks/state-of-api-report-2016.pdf), which put "Accurate and detailed documentation" sixth in importance:
 
-{% include course_image.html url="https://static1.smartbear.co/smartbear/media/ebooks/state-of-api-report-2016.pdf" size="" border="" filename="mostimportant2016" ext_print="png" ext_web="png" alt="Documentation ranks sixth in importance" caption="In The State of API 2016 report, documentation ranked sixth in importance, p.19" %}
+{% include course_image.html url="https://static1.smartbear.co/smartbear/media/ebooks/state-of-api-report-2016.pdf" filename="mostimportant2016" ext_print="png" ext_web="png" alt="Documentation ranks sixth in importance" caption="In The State of API 2016 report, documentation ranked sixth in importance, p.19" %}
 
 An even earlier survey conducted by Programmableweb in 2013 (which included 250 respondents) found that "Complete and accurate documentation" actually ranked as the most important factor in an API (see [API Consumers Want Reliability, Documentation and Community](http://www.programmableweb.com/news/api-consumers-want-reliability-documentation-and-community/2013/01/07)).
 

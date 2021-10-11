@@ -1,8 +1,6 @@
 ---
 title: Get authorization keys
 permalink: /docapis_get_auth_keys.html
-categories:
-- api-doc
 keywords:
 course: "Documenting REST APIs"
 weight: 2.1
@@ -43,7 +41,7 @@ Now for contrast, let's get the keys for the Aeris Weather API. The Aeris Weathe
 4.  After you sign up for an account, click **Account** in the upper-right corner.
 5.  Click **Apps** (on the second navigation row, to the right of "Usage"), and then click **New Application**.
 
-    {% include course_image.html size="700px" url="https://www.aerisweather.com/account/apps" border="" filename="aerisaccount" ext_print="png" ext_web="png" alt="Aeris account" caption="Aeris account" %}
+    {% include course_image.html size="large" url="https://www.aerisweather.com/account/apps" filename="aerisaccount" ext_print="png" ext_web="png" alt="Aeris account" caption="Aeris account" %}
 
 6.  In the Add a New Application dialog box, enter the following:
     * **Application Name**: My biking app (or something)

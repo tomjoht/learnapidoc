@@ -446,7 +446,7 @@ Note that you can add additional pages to your documentation in Anypoint. (Kudos
 
 Here's what the sample OpenWeatherMap API [looks like in Anypoint Exchange](https://anypoint.mulesoft.com/exchange/18a207fd-59c5-4c64-845f-de1568e92fc5/openweathermap/1.0.0/console/types/Coord/):
 
-{% include course_image.html url="https://anypoint.mulesoft.com/exchange/18a207fd-59c5-4c64-845f-de1568e92fc5/openweathermap/1.0.0/console/types/Coord/" size="" border="" filename="anypointexchange" ext_print="png" ext_web="png" alt="OpenWeather API documentation in Mulesoft's Anypoint Exchange" caption="OpenWeather API documentation in Mulesoft's Anypoint Exchange" %}
+{% include course_image.html url="https://anypoint.mulesoft.com/exchange/18a207fd-59c5-4c64-845f-de1568e92fc5/openweathermap/1.0.0/console/types/Coord/" filename="anypointexchange" ext_print="png" ext_web="png" alt="OpenWeather API documentation in Mulesoft's Anypoint Exchange" caption="OpenWeather API documentation in Mulesoft's Anypoint Exchange" %}
 
 One of the unique options Mulesoft offers is called [API Notebook](https://api-notebook.anypoint.mulesoft.com). This is a unique tool designed by Mulesoft that allows you to provide interactive code examples that leverage your RAML spec.
 
