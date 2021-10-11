@@ -10,35 +10,32 @@ path1: /docconceptual.html
 last-modified: 2021-09-17
 ---
 
-The product overview &mdash; usually the homepage of your product's documentation &mdash; describes your product at a high level, including what you can do with the product, the market needs or pain points it solves, requirements to use it, who the product or other features are for, and other introductory information.
+The product overview tells your product's story at a high level, including what you can do with the product, the market needs or pain points it solves, requirements to use it, who the product or other features are for, and other introductory information. A company with multiple products will have distinct product overview pages for each product, with a more general umbrella overview for them all. In contrast, smaller companies with fewer products might have a single, consolidated product overview page for everything the company offers.
 
-Although a seemingly simple page, the product overview can overlap into marketing domains, create redundancies with README's, and pose challenges in connecting with a more diverse audience (both engineers and bizdev people) than the rest of your technical docs. Overall, the product overview is an area where documentation and marketing intersect in interesting ways. The product overview is one of the hardest topics to write, but it's also likely the most important.
+Although a seemingly simple page, the product overview page can overlap into marketing domains, create redundancies with README's, and pose challenges in connecting with a more diverse audience (both engineers and bizdev people) than the rest of your technical docs. Overall, the product overview is an area where documentation and marketing intersect in interesting ways. The product overview is one of the hardest topics to write, but it's also likely the most important.
 
 {% if site.format == "web" %}
 * TOC
 {:toc}
 {% endif %}
 
-## Purpose of the product overview
-
-Too often with developer documentation, the documentation gets quickly mired in technical details without ever explaining clearly what the product is used for. It's easy for writers to lose sight of the overall purpose and business goals of the API by getting lost in the endpoints.
-
-The product overview grounds users with a high-level understanding of the system, which is critical for users to grasp the system as a whole. It allows the details to fit into a broader conceptual framework. As users attempt to understand your product, they often start at this high-level, getting a gist of the shape of something as a whole before proceeding into more details.
-
-For example, when you walk into a new store, do you gaze around a bit to take in the layout and size of the store first, or do you immediately look at the products on the aisle shelves? For me, I do the former. This is how many of our brains work &mdash; we start with the big picture (the forest) before diving into the details (trees and leaves). I elaborated more on this in [Reduction, layering, and distillation as a strategy for simplicity](/simplifying-complexity/reduction-layering-distillation.html). The product overview provides this initial orientation for the user with your product, giving them the larger story before jumping into the fine-grained details of technical how-to.
-
 ## Key questions a product overview should answer
 
-A product overview should address some basic who/what/why/how/when type questions:
+Too often with developer documentation, the documentation gets quickly mired in technical details without ever explaining clearly what the product is used for. It's easy for writers to lose sight of the overall purpose and business goals of the API by getting lost in the endpoints and other technical details. Unfortunately, many documentation sites never seem to explain the story of their product, thus missing out on a foundational aspect of the documentation. The product overview should let users get a good understanding of the following:
 
-* What is this product?
-* What does it do? What problem does it solve?
-* Who is it for? Who is the intended audience?
-* Why would someone use this? What are some common use cases?
+- What does the product do?
+- what are some examples where you'd use it?
+- Who is it for?
+- What problem does the product solve?
+- How do you get started?
+
+These are essentially who/what/when/where/why/how questions &mdash; not rocket science here, just the basic fundamentals of expository writing.
 
 {% include course_image.html size="medium" border="true" filename="nonref_overview" ext_print="png" ext_web="svg" alt="product overview" caption="The product overview provides high-level detail about the purpose, audience, and market need for your API." %}
 
 Keep in mind that there are thousands of APIs. If people are browsing your API, their first and most pressing question is, what information does it provide? Is this information relevant and useful to my needs? How does it differ from other products in this same space? The user's first question is usually not "How do I configure this endpoint."
+
+Because the product overview is really one of the few places where you can tell a story, the product overview space should appeal to tech writers and be one of the content areas where we excel.
 
 ## Telling your product's story
 
@@ -46,7 +43,7 @@ To tell your product's story, consider identifying a market need that your produ
 
 > Startups fail when they are not solving a market problem. We were not solving a large enough problem that we could universally serve with a scalable solution. We had great technology, great data on shopping behavior, great reputation as a thought leader, great expertise, great advisors, etc, but what we didn’t have was technology or business model that solved a pain point in a scalable way. (*CB Insights*)
 
-To encapsulate this overarching story, the product overview focuses on the market problem that the product solves. If the product doesn't solve a market problem, that could be a red flag about the product itself. Although you're likely just writing the documentation (not doing corporate storytelling), it helps to understand this larger problem as it gives more context for your product.
+To encapsulate this overarching story, the product overview focuses on the market problem that the product solves. If the product doesn't solve a market problem, that could be a red flag about the product itself. So the first step in the product overview is to describe the pain point your product solves.
 
 ## Common use cases
 
@@ -198,20 +195,6 @@ At the end of the product overview, be sure to transition into the next logical 
 ## Sample product overviews
 
 Here are a few sample product overviews.
-
-### SendGrid
-
-{% include course_image.html url="https://sendgrid.com/docs/User_Guide/index.html" filename="sendgridoverview" ext_web="png" ext_print="png" alt="SendGrid product overview" caption="SendGrid API overview" %}
-
-The Sendgrid overview starts with two key sections: "What is SendGrid?" and "Who is SendGrid for?" I like the straightforward approach. Even in the description of what SendGrid is, the authors don't assume everyone knows what an SMTP provider is, so they link out to more information. Overall, in about 10 seconds you can get an idea of what the SendGrid API is all about.
-
-{% comment %}{% include random_ad3.html %}{% endcomment %}
-
-### Lyft
-
-{% include course_image.html url="https://developer.lyft.com/docs/overview" filename="lyftapioverview" ext_web="png" ext_print="png" alt="Lyft product overview" caption="Lyft API overview" %}
-
-Lyft's product overview starts in a similar way, with sections titled "What is Lyft?" and "Why Use Lyft as a Developer." Their homepage also provides information on access, rate limits and throttling, and testing. The Lyft authors also recognize that each tech domain has its own lingo, so they provide a [glossary](docapis_glossary_section.html) upfront.
 
 ### IBM Watson Assistant
 
@@ -388,3 +371,23 @@ Deciding to cater to one type of behavior at the expense of the other might not 
 
 {: .takeaway}
 Remember that user behavior isn't night and day when it comes to opportunistic versus systematic behavior. Users flip back and forth between these two modes as needed. As such, try to link between the task-based topic and concepts where relevant to accommodate this fluctuating behavior.
+
+{% comment %}
+https://sdk.gooddata.com/gooddata-ui/docs/why_gdui.html
+https://developer.mercedes-benz.com/products -- each product has its own overview page that follows a common template
+
+https://developer.db.com/products -- similar to mercedes site. note: if platform has lots of products, then each product will have its own overview page. 
+https://developers.tapix.io/guides/getting-started-with-tapix#introduction -- I like the sample use cases. "What can [x] help you with"
+
+https://docs.tink.com/resources/landing/introduction-to-the-tink-platform
+
+https://docs.seon.io/getting-started/intelligence-tool - example of linking to marketing overview for more info.
+
+after reading the info, can you answer these questions:
+
+- what does the product do?
+- what are some examples where you'd use it?
+- who is it for?
+- what problem does the product solve?
+- how do you get started?
+{% endcomment %}
