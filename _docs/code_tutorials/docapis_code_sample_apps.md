@@ -3,7 +3,7 @@ title: Sample apps
 permalink: /docapis_sample_apps.html
 keywords:
 course: "Documenting REST APIs"
-weight: 7.61
+weight: 7.6
 sidebar: docapis
 section: docapiscode
 path1: /doccode.html

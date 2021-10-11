@@ -6,14 +6,24 @@ published: false
 
 ## Kindle
 
-1. ./serve_kindle.sh
-2. new tab: ./build_kindle.sh
-3. . move.sh (moves docapis.mobi file from \_site to mobi folder in root directory)
-4. open Kindle Previewer and select the docapis.mobi file in the mobi_files directory.
-5. plug in kindle. find in finder. copy mobi file into documents directory. it will then appear in your home.
+1. make sure you have latest images from wasabi:
+
+myvenv
+aws s3 cp s3://idbwmedia.com/images/api/ ~/tomjoht/wasabi  --recursive  --profile wasabi
+
+copy over images from tomjoht/wasabi to learnapidoc/wasabi. overwrite duplicates.
+
+
+2. ./serve_kindle.sh
+3. new tab: ./build_kindle.sh
+4. ./move.sh (moves docapis.mobi file from \_site to mobi folder in root directory)
+5. open Kindle Previewer and select the docapis.mobi file in the mobi_files directory.
+6. plug in kindle. find in finder. copy mobi file into documents directory. it will then appear in your home.
 
 details:
 - config file is \_config_kindle.yml
+- this specifies and absolute path to the /images folder. otherwise the kindle gen will not show the images.
+- make sure you have the latest images from wasabi downloaded:
 - use format: kindle for targeting kindle
 - no tables allowed. take images of tables instead
 - tocstart.html is the beginning page that lists the chapters
@@ -33,7 +43,7 @@ the first is kindlegen, the next is the location of the docapis.opf file
 - to test manually, plug in micro usb cable, then simply drag the .mobi file into documents
 
 there's no need to convert to another ebook format b/c kindle has a reading app on every device aleady.
-but if you want to convert to ebook: http://www.online-convert.com/result/0d8a7494-041a-4e88-b71a-b646bc178660
+but if you want to convert to ebook: https://cloudconvert.com/mobi-to-epub
 
 - css: css/kindle.css
 - layout: kindle.html
@@ -55,7 +65,7 @@ to test on kindle fire:
 - the PDF frontmatter are served from the pdf_frontmatter folder in \_docs but these paths are hard-coded into the toc page.
 
 
-1. run " . build_pdf.sh"
+1. run " ./build_pdf.sh"
 
 this file uses the \_config_pdf.yml. in this file, two important properties are defined:
 baseurl: /Users/tomjoht/projects/learnapidoc/\_site

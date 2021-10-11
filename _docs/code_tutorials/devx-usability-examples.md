@@ -2,7 +2,7 @@
 title: "Developer experience (DevX) usability"
 permalink: /devx-usability-examples.html
 course: "Documenting REST APIs"
-weight: 7.91
+weight: 7.9
 sidebar: docapis
 section: docapiscode
 path1: /doccode.html

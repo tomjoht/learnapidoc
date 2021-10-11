@@ -3,7 +3,7 @@ title: Five strategies for documenting code
 permalink: /docapis_code_strategies.html
 keywords:
 course: "Documenting REST APIs"
-weight: 7.3
+weight: 7.4
 sidebar: docapis
 section: docapiscode
 path1: /doccode.html

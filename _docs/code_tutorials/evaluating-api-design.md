@@ -2,7 +2,7 @@
 title: "API design and usability"
 permalink: /evaluating-api-design.html
 course: "Documenting REST APIs"
-weight: 7.9
+weight: 7.8
 sidebar: docapis
 section: docapiscode
 path1: /doccode.html

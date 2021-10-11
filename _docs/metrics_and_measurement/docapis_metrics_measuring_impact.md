@@ -2,7 +2,7 @@
 title: Measuring progress against documentation quality goals
 permalink: /docapis_measuring_impact.html
 course: "Documenting REST APIs"
-weight: 13.1
+weight: 12.1
 sidebar: docapis
 section: metrics
 path1: /docapis_metrics_and_measurement.html

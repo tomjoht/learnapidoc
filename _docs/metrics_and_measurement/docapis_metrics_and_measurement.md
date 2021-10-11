@@ -2,7 +2,7 @@
 title: Metrics and measurement
 permalink: /docapis_metrics_and_measurement.html
 course: "Documenting REST APIs"
-weight: 13.0
+weight: 12.0
 sidebar: docapis
 section: metrics
 path1: /docapis_metrics_and_measurement.html

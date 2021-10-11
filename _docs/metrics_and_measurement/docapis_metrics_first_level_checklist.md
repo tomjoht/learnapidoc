@@ -2,7 +2,7 @@
 title: First-level checklist for API documentation
 permalink: /docapis_metrics_first_level_checklist.html
 course: "Documenting REST APIs"
-Weight: 13.2
+weight: 12.2
 sidebar: docapis
 section: metrics
 path1: /docapis_metrics_and_measurement.html

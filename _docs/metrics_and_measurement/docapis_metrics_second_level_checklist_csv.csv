@@ -1,5 +1,6 @@
 ---
 layout: none
+progress: false
 ---
 Criteria,Weight,Score (0-5),Weighted Score (W*S),Total WS Possible
 

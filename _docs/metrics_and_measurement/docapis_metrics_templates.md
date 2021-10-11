@@ -2,7 +2,7 @@
 title: Templates for working with metrics
 permalink: /docapis_metrics_templates.html
 course: "Documenting REST APIs"
-Weight: 13.5
+weight: 12.5
 sidebar: docapis
 section: metrics
 path1: /docapis_metrics_and_measurement.html

@@ -3,7 +3,7 @@ title: Why documenting code is so difficult
 permalink: /docapis_code_difficulty.html
 keywords:
 course: "Documenting REST APIs"
-weight: 7.1
+weight: 7.2
 sidebar: docapis
 section: docapiscode
 path1: /doccode.html
@@ -96,9 +96,9 @@ Despite the importance of code samples, they're often neglected or missing from 
 
 ## What to do if you don't understand the code
 
-As you're documenting code examples, you'll probably run into situations where the code is beyond your understanding. For example, the engineer might call out various classes and methods in a Java API and have some fragmented, incomplete code comments on how to use it. In these situations, one strategy is to ask the engineer to talk through the code from beginning to end. Important: Record the meeting where the engineer explains the code. After the meeting, add notes from the engineer's explanation about different aspects of the code. Pepper in your explanations both in regular copy and in code comments. 
+As you're documenting code examples, you'll probably run into situations where the code is beyond your understanding. For example, the engineer might call out various classes and methods in a Java API and have some fragmented, incomplete code comments on how to use it. In these situations, one strategy is to ask the engineer to talk through the code from beginning to end. Important: Record the meeting where the engineer explains the code. After the meeting, add notes from the engineer's explanation about different aspects of the code. Pepper in your explanations both in regular copy and in code comments.
 
-After reviewing your writeup with the engineer, present the content to other engineers or devrel-type roles, and ask them to review it. Basically, gather enough feedback from other people to get a sense of whether the code and your explanations are clear enough in places or still confusing. Act as a kind of mediator between the author and users. It doesn't take a deep understanding to play this mediator role, and as long as you record the meetings where explanations are flying around, you can go back at a snails pace and listen/re-listen to the comments and convert them into a semi-intelligible writeup. 
+After reviewing your writeup with the engineer, present the content to other engineers or devrel-type roles, and ask them to review it. Basically, gather enough feedback from other people to get a sense of whether the code and your explanations are clear enough in places or still confusing. Act as a kind of mediator between the author and users. It doesn't take a deep understanding to play this mediator role, and as long as you record the meetings where explanations are flying around, you can go back at a snails pace and listen/re-listen to the comments and convert them into a semi-intelligible writeup.
 
 Of course, the ideal is that you would also be comprehending what's going on in the code to a deeper extent, but this isn't always possible in the timeframes given. Consider using the project as a starting point for deepening your understanding of a programming language or framework. Start taking a course on the programming language on Udemy, for example, and highlight the various concepts in the tutorial that you want to learn more about.
 
