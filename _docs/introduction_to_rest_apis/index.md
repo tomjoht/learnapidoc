@@ -32,11 +32,13 @@ In a nutshell, REST APIs (which are a type of web API) involve requests and resp
 {% endif %}
 <figcaption>REST APIs involve requests and responses over HTTP protocol</figcaption></figure>
 
+{% include course_image.html filename="restapi_apidoc" ext_print="png" ext_web="svg" alt="Response and request model for REST APIs" caption="PREST APIs involve requests and responses over HTTP protocol" %}
+
 I dive more into the principles of REST in [What is a REST API?](docapis_what_is_a_rest_api.html) In your REST API documentation, you describe the various endpoints available, their methods, parameters, and other details, and you also document sample responses from the endpoints.
 
 ## From practice to documentation
 
-In this course, after you practice using an API like a developer, you'll then shift perspectives and "become a technical writer" tasked with documenting a new endpoint that engineers added to an API. As a technical writer, you'll tackle each element of a reference topic in REST API documentation:
+In this course, after you practice [using an API like a developer](likeadeveloper.html), you'll then shift perspectives and "become a technical writer" tasked with [documenting a new endpoint](docendpoints.html) that engineers added to an API. As a technical writer, you'll tackle each element of a reference topic in REST API documentation:
 
 1. [Resource descriptions](docapis_resource_descriptions.html)
 2. [Endpoints and methods](docapis_resource_endpoints.html)
@@ -44,13 +46,19 @@ In this course, after you practice using an API like a developer, you'll then sh
 4. [Request example](docapis_doc_sample_requests.html)
 5. [Response example](docapis_doc_sample_responses_and_schema.html)
 
-Exploring each of these sections will give you a solid understanding of how to document REST APIs. You'll also learn how to document the [conceptual sections for an API](docconceptual.html), such as the [getting started tutorial](docapis_doc_getting_started_section.html), [status and error codes](docapis_doc_status_codes.html), [request authorization](docapis_more_about_authorization.html), and more.
+Exploring each of these sections will give you a solid understanding of how to document REST APIs. You'll also learn how to document the [conceptual sections for an API](docconceptual.html), such as the [getting started tutorial](docapis_doc_getting_started_section.html), [product overview](docapis_doc_overview.html), [status and error codes](docapis_doc_status_codes.html), [request authorization](docapis_more_about_authorization.html), and more.
 
 {% include random_ad2.html %}
 
-Finally, you'll dive into different ways to [publish REST API documentation](publishingapis.html), exploring tools and specifications such as [GitHub](pubapis_github_wikis.html), [Jekyll](pubapis_jekyll.html), and other [docs-as-code approaches](pubapis_docs_as_code.html). You'll learn how to leverage templates, build interactive API consoles so users can try out requests and see responses, and learn how to manage your content through [version control](pubapis_version_control.html).
+You'll also dive into different ways to [publish REST API documentation](publishingapis.html), exploring tools and specifications such as [GitHub](pubapis_github_wikis.html), static site generators like [Jekyll](pubapis_jekyll.html), and other [docs-as-code approaches](pubapis_docs_as_code.html). You'll learn how to leverage templates, build interactive API consoles so users can try out requests and see responses, and learn how to manage your content through [version control](pubapis_version_control.html).
 
-We'll also dive into specifications such as the [OpenAPI specification](pubapis_openapi_tutorial_overview.html) and [Swagger UI](pubapis_openapi_intro.html) (which provides tooling for the OpenAPI specification). Additionally, you'll learn how to [document native library APIs](nativelibraryapis.html) and generate [Javadoc](nativelibraryapis_create_javadoc.html). Throughout this course, I put these concepts in real, applicable contexts with hands-on activities and demos.
+We'll also dive into specifications such as the [OpenAPI specification](pubapis_openapi_tutorial_overview.html) and [Swagger UI](pubapis_openapi_intro.html) (which provides tooling for the OpenAPI specification). Additionally, you'll learn how to [document native library APIs](nativelibraryapis.html) and generate [Javadoc](nativelibraryapis_create_javadoc.html).
+
+Tech writing is about more than tools and technology, though. As such, I even explore [processes and methodologies](docapis_managing_doc_processes.html) in depth, explaining how to manage both [large](docapis_managing_doc_projects.html) and [small](docapis_managing_small_doc_requests.html) documentation projects, how to [collect documentation feedback](docapis_collecting_feedback_post_release.html), [how to keep stakeholders happy and updated](docapis_status_reports.html), and more.
+
+I've also included a section on [metrics and measurement](docapis_measuring_impact.html), which lists a comprehensive [first-level quality checklist](docapis_metrics_first_level_checklist.html) as well as a [second-level checklist](docapis_metrics_second_level_checklist.html). The criteria described can help you evaluate your own developer portal in myriad ways against industry best practices.
+
+Throughout this course, I put these concepts in real, applicable contexts with hands-on activities and demos.
 
 {% comment %}{% include random_ad3.html %}{% endcomment %}
 
@@ -58,9 +66,10 @@ We'll also dive into specifications such as the [OpenAPI specification](pubapis_
 
 The course primarily serves the following audiences:
 
-* Professional technical writers looking to transition from GUI documentation into more API-focused documentation for developers.
+* Professional technical writers looking to transition from traditional documentation into more API-focused documentation for developers.
 * Students learning how to prepare themselves technically to succeed in the tech comm field, which is becoming more focused on developer documentation.
 * Developers who are documenting their own APIs and want to know best practices for structure, terminology, and style with tech docs.
+* Educators who are training technical writing students about API documentation practices and technologies.
 
 ## Course organization
 
@@ -77,17 +86,17 @@ The course consists of the following sections:
 
 ## Sequence and activities
 
-You don't have to read the sections in order &mdash; feel free to skip around as you prefer. But some of the earlier sections (such as the section on [Using a REST API like a developer](likeadeveloper.html) and [Documenting endpoints](docendpoints.html)) follow a somewhat sequential order with the same weather API scenario.
+You don't have to read the sections in order &mdash; feel free to skip around as you prefer. Some of the earlier sections (such as the section on [Using a REST API like a developer](likeadeveloper.html) and [Documenting endpoints](docendpoints.html)) follow a somewhat sequential order with the same [weather API scenario](docapis_scenario_for_using_weather_api.html), but by and large you can jump around as desired.
 
-Because the purpose of the course is to help you learn, there are many activities that require hands-on coding and other exercises. Along with the learning activities, there are also conceptual deep dives, but the focus is always on *learning by doing*. {% if site.format == "web" %}Where there are hands-on activities, I typically include this icon in the section title: <i class="fa fa-user-circle"></i>.{% endif %}
-
-Other topics have the word "Activity" in the title. The activities are integrated into various sections, but you can also see a consolidated subset of activities in the [Workshop Activities](workshop.html). These are the activities we do during live workshops.
+Because the purpose of the course is to help you learn, there are many activities that require hands-on coding and other exercises. Along with the learning activities, there are also conceptual deep dives, but the focus is always on *learning by doing*. Where there are hands-on activities, I typically include this icon in the section title: <i class="fa fa-user-circle"></i>. Other topics have the word "Activity" in the title. The activities are integrated into various sections, but you can also see a consolidated subset of activities in the [Workshop Activities](workshop.html). These are the activities we do during live workshops.
 
 I refer to the content here as a "course" instead of a book or a website, primarily because I include a lot of exercises throughout in each section, and I find that people who want to learn API documentation prefer a more hands-on "course" experience.
 
+Below each topic is a progress indicator that reminds you to keep moving through the course. Don't be daunted if you never make it through, though. If printed to PDF, the content is well beyond 700 pages. And I keep adding to the content, refining it, rearranging and adjusting it as I see fit and as I grow my experience and awareness.
+
 ## Will this course help you get a job in API documentation?
 
-The most common reason people take this course is to transition into API documentation. This course will help you make that transition, but you can't just passively read through the content. You need to do the activities outlined in each section, especially those topics that involve working with content from an [open-source project](docapis_find_open_source_project.html). These activities are crucial to building experience and credibility with a portfolio. I provide more details in [Getting an API documentation job and thriving](jobapis.html).
+The most common reason people take this course is to transition into API documentation. This course will help you make that transition, but you can't just passively read through the content. You need to do the activities outlined in each section, especially those topics that involve working with content from an [open-source project](docapis_find_open_source_project.html) (or something similar). These activities are crucial to building experience and credibility with a portfolio. I provide more details in [Getting an API documentation job and thriving](jobapis.html). Without a strong portfolio to demonstrate your writing expertise, almost no manager will hire you, even if you have an extensive tech background.
 
 ## No programming skills required
 
@@ -105,10 +114,10 @@ JavaScript is one of the most useful and easy languages to become familiar with,
 
 Here are a few tools you'll need to do the activities in this course:
 
-* **Laptop with power cord.** Make sure you bring your computer and charging cord, as we'll be doing various activities.
+* **Computer.** You need a computer (if attending the live workshop, a laptop and charging cord), as there are many activities to work through.
 * **Text editor**. If you don't already have a favorite text editor, download [Sublime Text](http://www.sublimetext.com/), as it works well on both Mac and Windows and is free. If you have another text editor you prefer (e.g., [Visual Studio Code](https://code.visualstudio.com/), [Atom](https://atom.io/), or even [Notepad++](https://notepad-plus-plus.org/)), that will work too. Just make sure you can write code in plain text.
 * **Chrome browser**. [Chrome](https://www.google.com/chrome/browser/desktop/index.html) provides a Javascript Console that works well for inspecting JSON, so we'll be using Chrome. Also, in order to read JSON responses more easily in the browser, install the [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en) Chrome extension.
-* **Postman**. [Postman](http://www.getpostman.com/) is an app that allows you to make requests and see responses through a GUI client. *Make sure you download the app and not the Chrome extension.*
+* **Postman**. [Postman](http://www.getpostman.com/) is an app that allows you to make requests and see responses through a visual client. *Make sure you download the app and not the Chrome extension.*
 * **curl**. [curl](http://curl.haxx.se/) is essential for making requests to endpoints from the command line. Mac already has curl built-in, but it might not be available by default on Windows. (Some Windows 10 builds already have it in Powershell.) On Windows, open a Command Prompt and type `curl -V`. If it's not installed, go to [confusedbycode.com/curl](http://confusedbycode.com/curl) and install a version (usually "With Administrator Privileges (free), 64-bit"). Close and re-open your Command Prompt and try typing `curl -V` again.
 * **Git**. [Git](https://git-scm.com/) is a version control tool developers often use to collaborate on code. For Windows, see [https://gitforwindows.org/](https://gitforwindows.org/) to set up Git and the Git BASH terminal emulator. For Mac, see [Downloading Git](https://git-scm.com/download/mac).
 * **GitHub account**. [GitHub](https://github.com) will be used for various activities, sometimes to demonstrate the Git workflow and other times as an authentication service for developer tools. If you don't already have a GitHub account, sign up for one.
@@ -125,7 +134,7 @@ In the past, people have asked for some tests to check whether their laptops are
 
 ## Video recordings
 
-For video recordings of this course, see the [Video recordings of API doc workshops](docapis_course_videos.html). The most recent full-length video of the entire course is a full-day API workshop I gave in Raleigh, North Carolina, in April 2019. The video doesn't go into the same level of detail as the written material, but it would be a good start.
+For video recordings of this course, see the [Video recordings of API doc workshops](docapis_course_videos.html). The page lists the most recent video recordings available. The video doesn't go into the same level of detail as the written material, but it would be a good start.
 
 See my [Upcoming Presentations](https://idratherbewriting.com/presentations/) on my blog for details about future workshops and presentations.
 
@@ -135,9 +144,15 @@ For the live workshops, I have various slides that cover different sections of t
 
 ## Copyright and re-use of materials
 
-Some people have asked whether they can use materials from this course to give their own API documentation workshops. I only allow the material to be used for non-profit workshops where the workshop leader isn't charging participants for the instruction. Of course, many of the ideas and concepts in this course aren't specific or unique to me, and you're entitled to fair use. However, you can't just hijack my site's materials, activities, and other information to clone it for your own for-profit endeavor.
+Some people have asked whether they can use materials from this course to give their own API documentation workshops. I only allow the material to be used for non-profit workshops where the workshop leader isn't charging participants for the instruction. Of course, many of the ideas and concepts in this course aren't specific or unique to me, and you're entitled to fair use. However, please don't just hijack my site's materials, activities, and other information for your own commercial endeavors.
 
-If you're a teacher at a college or university (or high school) and are trying to teach APIs and developer docs to your students, feel free to use this site as part of your instructional materials. I appreciate links back to the site and attribution as needed. My larger goal for this site is to help educate and empower tech writers with developer documentation strategies, workflows, and best practices. If you'd like to share your syllabus, [contact me](contact.html) and I'll add a link here.
+If you're a teacher at a college or university (or high school) and are trying to teach APIs and developer docs to your students, feel free to use this site as part of your instructional materials. I appreciate links back to the site and attribution as needed (links pointing to my site boost search engine rankings). My larger goal for this site is to help educate and empower tech writers with developer documentation strategies, workflows, and best practices. If you'd like to share your API documentation course syllabus, [contact me](contact.html) and I'll add a link here.
+
+## Is this course really free?
+
+Yes, this course is entirely free. Advertising helps make this content free, so you will see little text snippets and other ads on the course pages promoting links to API service providers. Sometimes I also include sponsored pages as well to highlight a vendor's particular offerings. Whenever content is sponsored, I note that on the page. I also wouldn't include any content in the course that didn't meet my standards or which I wouldn't recommend.
+
+If you'd like to give back, feel free to buy me coffee by clicking the [Buy me a coffee](https://www.buymeacoffee.com/learnapidoc) button on the bottom of each page. I'm grateful to see many people who find enough value in the course to contribute back. Seeing contributions helps me feel in a more immediate way how much the content helps people.
 
 ## Let me know if any content is out of date
 
@@ -145,4 +160,24 @@ One of the challenges in any technical course is ensuring the content stays up t
 
 ## Stay updated
 
-If you're following this course, you most likely want to learn more about APIs. I publish regular articles that talk about APIs and strategies for documenting them. You can stay updated about these posts by [subscribing to my free newsletter](https://tinyletter.com/tomjoht).
+If you're following this course, you most likely want to learn more about APIs. I publish regular articles that talk about APIs and strategies for documenting them. You can stay updated about these posts by [subscribing to my free newsletter](https://tinyletter.com/tomjoht). My newsletter (send 2-3 times a month) contains excerpts of new pages added to this API course as well as the latest posts I publish on my blog, [idratherbewriting.com](https://idratherbewriting.com).
+
+## Other resources
+
+If you've looking for additional resources to learn API documentation as well as tech writing best practices, check out the following:
+
+* [Docs for Developers: An Engineer’s Field Guide to Technical Writing](https://www.apress.com/gp/book/9781484272169), Authors: Bhatti, J., Corleissen, Z.S., Lambourne, J., Nunez, D., Waterhouse, H.
+
+* [Modern Technical Writing: An Introduction to Software Documentation](https://www.amazon.com/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS), by Andrew Etter
+
+* [Documentation Guide -- Write the Docs Community](https://www.writethedocs.org/guide/index.html)
+
+* [Docs Like Code](https://www.amazon.com/Docs-Like-Code-Anne-Gentle/dp/1365816079), by Anne Gentle
+
+* [Every Page Is Page One: Topic-Based Writing for Technical Communication and the Web](https://www.amazon.com/Every-Page-One-Topic-Based-Communication/dp/1937434281), by Mark Baker
+
+* [Peter Gruenbaum's API doc courses on Udemy](https://www.udemy.com/user/petergruenbaum/). (Multiple courses on API docs, Swagger, Git, and more.)
+
+* [The Design of Web APIs](https://www.amazon.com/Design-Web-APIs-Arnaud-Lauret/dp/1617295108), by Arnaud Lauret
+
+* [The Product is Docs: Writing technical documentation in a product development group](https://www.amazon.com/Product-Docs-technical-documentation-development/dp/1973589400), by Christopher Gales and Splunk Documentation Team
