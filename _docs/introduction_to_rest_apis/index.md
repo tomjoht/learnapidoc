@@ -181,3 +181,7 @@ If you've looking for additional resources to learn API documentation as well as
 * [The Design of Web APIs](https://www.amazon.com/Design-Web-APIs-Arnaud-Lauret/dp/1617295108), by Arnaud Lauret
 
 * [The Product is Docs: Writing technical documentation in a product development group](https://www.amazon.com/Product-Docs-technical-documentation-development/dp/1973589400), by Christopher Gales and Splunk Documentation Team
+
+* [The Good Docs Project: Best practice templates and writing instructions for documenting open source software](https://thegooddocsproject.dev/)
+
+* [Google's technical writing courses for engineers](https://developers.google.com/tech-writing)
