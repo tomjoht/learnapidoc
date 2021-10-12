@@ -3,7 +3,7 @@ title: Testing API documentation
 permalink: /testingdocs.html
 sidebar: docapis
 path1: /testingdocs.html
-weight: 5.0
+weight: 6.0
 section: testingdocs
 course: "Documenting REST APIs"
 last-modified: 2020-11-02

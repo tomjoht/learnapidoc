@@ -3,7 +3,7 @@ title: Native library APIs
 permalink: /nativelibraryapis.html
 sidebar: docapis
 path1: /nativelibraryapis.html
-weight: 10.0
+weight: 11.0
 course: "Documenting REST APIs"
 section: nativelibraryapis
 last-modified: 2020-11-02

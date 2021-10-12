@@ -3,7 +3,7 @@ title: API getting started tutorials
 permalink: /docapis_doc_getting_started_section.html
 keywords:
 course: "Documenting REST APIs"
-weight: 6.2
+weight: 7.2
 sidebar: docapis
 section: docconceptual
 path1: /docconceptual.html
@@ -197,7 +197,7 @@ With the [open-source project you identified](docapis_find_open_source_project.h
 
 ## Reasons why getting started tutorials fail or don't exist {#reasons_for_failure}
 
-So far I've covered best practices for getting started tutorials. Now let's explore some reasons why getting started tutorials are often poor or non-existent. In other words, why do getting started tutorials fail? Why are they sometimes hard to follow? 
+So far I've covered best practices for getting started tutorials. Now let's explore some reasons why getting started tutorials are often poor or non-existent. In other words, why do getting started tutorials fail? Why are they sometimes hard to follow?
 
 ### Cause 1: Getting started tutorials are seen as an optional extra, and few writers have time for optional work at release crunch times
 

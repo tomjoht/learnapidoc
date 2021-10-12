@@ -3,7 +3,7 @@ title: What research tells us about documenting code
 permalink: /docapiscode_research_on_documenting_code.html
 keywords:
 course: "Documenting REST APIs"
-weight: 7.3
+weight: 8.3
 sidebar: docapis
 section: docapiscode
 path1: /doccode.html

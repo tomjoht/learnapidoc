@@ -2,7 +2,7 @@
 title: Changing internal doc culture
 permalink: /docapis_changing_internal_doc_culture.html
 course: "Documenting REST APIs"
-weight: 11.91
+weight: 12.91
 sidebar: docapis
 section: devportals
 path1: /docapis_managing_doc_processes.html

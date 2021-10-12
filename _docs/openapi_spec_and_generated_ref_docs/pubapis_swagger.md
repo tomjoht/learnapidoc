@@ -3,7 +3,7 @@ title: "Swagger UI tutorial"
 permalink: /pubapis_swagger.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 4.6
+weight: 4.5
 section: restapispecifications
 path1: /restapispecifications.html
 glossary_keys:
@@ -173,3 +173,5 @@ Since the Swagger UI site is responsive, it resizes well to fit into most any sp
 ## Key terms {#key_terms}
 
 {% include glossary_limited.html file="glossary" %}
+
+For more terms, see the [Glossary](http://localhost:4000/learnapidoc/api-glossary.html).

@@ -3,7 +3,7 @@ title: "Common characteristics of code tutorials"
 permalink: /docapis_code_tutorials_common_characteristics.html
 keywords: code tutorials
 course: "Documenting REST APIs"
-weight: 7.1
+weight: 8.1
 sidebar: docapis
 section: docapiscode
 path1: /doccode.html

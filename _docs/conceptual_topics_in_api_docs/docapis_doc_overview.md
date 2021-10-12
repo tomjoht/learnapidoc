@@ -3,7 +3,7 @@ title: API product overviews
 permalink: /docapis_doc_overview.html
 keywords:
 course: "Documenting REST APIs"
-weight: 6.1
+weight: 7.1
 sidebar: docapis
 section: docconceptual
 path1: /docconceptual.html
@@ -376,7 +376,7 @@ Remember that user behavior isn't night and day when it comes to opportunistic v
 https://sdk.gooddata.com/gooddata-ui/docs/why_gdui.html
 https://developer.mercedes-benz.com/products -- each product has its own overview page that follows a common template
 
-https://developer.db.com/products -- similar to mercedes site. note: if platform has lots of products, then each product will have its own overview page. 
+https://developer.db.com/products -- similar to mercedes site. note: if platform has lots of products, then each product will have its own overview page.
 https://developers.tapix.io/guides/getting-started-with-tapix#introduction -- I like the sample use cases. "What can [x] help you with"
 
 https://docs.tink.com/resources/landing/introduction-to-the-tink-platform

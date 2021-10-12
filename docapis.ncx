@@ -3,11 +3,11 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"
-	"http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+    "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
 
 <!--
-	For a detailed description of NCX usage please refer to:
-	http://www.idpf.org/2007/opf/OPF_2.0_final_spec.html#Section2.4.1
+    For a detailed description of NCX usage please refer to:
+    http://www.idpf.org/2007/opf/OPF_2.0_final_spec.html#Section2.4.1
 -->
 
 <ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en-US">
@@ -21,54 +21,82 @@ layout: null
 <docAuthor><text>Tom Johnson</text></docAuthor>
 
 {% assign increment = 1 %}
-  <navMap>
-  {% assign sidebar = site.data[site.sidebar].folders %}
-    {% for folder in sidebar %}
-    <navPoint class="toc" id="item_{{ folder.jurl  | remove: "/" | remove: ".html" }}" playOrder="{% increment %}">
+{% assign sidebar = site.data[site.sidebar] %}
+<navMap>
+
+{% comment %} first level {% endcomment %}
+
+{% for folder in sidebar.folders %}
+<navPoint class="toc" id="item_{{ folder.jurl  | remove: "/" | remove: ".html" }}" playOrder="{% increment %}">
       <navLabel>
         <text>{{ folder.title }}</text>
       </navLabel>
       <content src="{{ folder.jurl | remove: "/" }}"/>
 
-            {% for folderitem in folder.folderitems %}
-            {% if folderitem.title %}
-            {% unless folderitem.type == "web" %}
+
+        {% comment %} second level {% endcomment %}
+
+        {% for folderitem in folder.folderitems %}
 
             <navPoint class="toc" id="item_{{ folderitem.jurl | remove: "/" | remove: ".html" }}" playOrder="{% increment %}">
               <navLabel>
                 <text>{{ folderitem.title }}</text>
               </navLabel>
               <content src="{{ folderitem.jurl | remove: "/" }}"/>
-              {% endunless %}
-            {% endif %}
 
-            {% for subfolder in folderitem.subfolders %}
-                <navPoint class="toc" id="item_{{ subfolder.jurl  | remove: "/" | remove: ".html" }}" playOrder="{% increment %}">
+        {% comment %} third level {% endcomment %}
+
+        {% for subfolder in folderitem.subfolders %}
+
+        <navPoint class="toc" id="item_{{ subfolder.jurl  | remove: "/" | remove: ".html" }}" playOrder="{% increment %}">
                   <navLabel>
                     <text> {{ subfolder.title }}</text>
                   </navLabel>
                       <content src="{{ subfolder.jurl | remove: "/" }}"/>
 
-                    {% for subfolderitem in subfolder.subfolderitems %}
-                    {% if subfolderitem.title %}
-                    {% unless subfolderitem.type == "web" %}
 
-                    <navPoint class="toc" id="item_{{ subfolderitem.jurl  | remove: "/" | remove: ".html" }}" playOrder="{% increment %}">
+                {% for subfolderitem in subfolder.subfolderitems %}
+
+                <navPoint class="toc" id="item_{{ subfolderitem.jurl  | remove: "/" | remove: ".html" }}" playOrder="{% increment %}">
                       <navLabel>
                         <text>{{ subfolderitem.title }}</text>
                       </navLabel>
                         <content src="{{ subfolderitem.jurl | remove: "/" }}"/>
-                    </navPoint>
-                    {% endunless %}
-                    {% endif %}
-                    {% endfor %}
-</navPoint>
-            {% endfor %}
-            </navPoint>
-            {% endfor %}
-            </navPoint>
 
+
+                {% for subsubfolder in subfolderitem.subsubfolders %}
+
+                <navPoint class="toc" id="item_{{ subsubfolder.jurl  | remove: "/" | remove: ".html" }}" playOrder="{% increment %}">
+                  <navLabel>
+                    <text>{{ subsubfolder.title }}</text>
+                  </navLabel>
+                  <content src="{{ subsubfolder.jurl | remove: "/" }}"/>
+
+
+                        {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
+
+                         <navPoint class="toc" id="item_{{ subsubfolderitem.jurl  | remove: "/" | remove: ".html" }}" playOrder="{% increment %}">
+                      <navLabel>
+                        <text>{{ subsubfolderitem.title }}</text>
+                      </navLabel>
+                        <content src="{{ subsubfolderitem.jurl | remove: "/" }}"/>
+
+                        {% endfor %}
+                    </navPoint>
+
+                {% endfor %}
+                </navPoint>
+
+                {% endfor %}
+            </navPoint>
 
         {% endfor %}
-        </navMap>
+        </navPoint>
+
+        {% endfor %}
+    </navPoint>
+    {% endfor %}
+
+
+</navMap>
 </ncx>

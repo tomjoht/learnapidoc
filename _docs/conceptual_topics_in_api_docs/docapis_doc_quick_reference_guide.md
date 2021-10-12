@@ -3,7 +3,7 @@ title: API quick reference
 permalink: /docapis_doc_quick_reference.html
 keywords:
 course: "Documenting REST APIs"
-weight: 6.8
+weight: 7.8
 sidebar: docapis
 section: docconceptual
 path1: /docconceptual.html
@@ -76,7 +76,7 @@ The quick reference for Parse is similar to Eventful in that it's a long list of
 
 Sometimes developers like the one-page approach because it reduces information fragmentation and lets them use Ctrl+F to find all instances of a keyword. I explored the tradeoffs in this one-page approach in [Single-page docs versus "Click Insanity."](https://idratherbewriting.com/2014/01/12/single-page-docs-versus-click-insanity/)
 
-If you use the [OpenAPI reference docs on GitHub](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md), you'll notice the docs are also contained on a single page. Developers might like to use Ctrl+F to quickly see all instances of a topic. However, I'm not a fan of single-page documentation like this because it provides a lot of visual complexity for users to sort out.
+If you use the [OpenAPI reference docs on GitHub](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md), you'll notice the docs are also contained on a single page. Developers might like to use Ctrl+F to quickly see all instances of a topic. However, I'm not a fan of single-page documentation like this because it provides a lot of visual complexity for users to sort out.
 
 ### Shopify
 

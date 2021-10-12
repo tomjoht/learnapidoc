@@ -3,7 +3,7 @@ title: Best locations for API documentation jobs
 permalink: /jobapis_location.html
 sidebar: docapis
 path1: /jobapis.html
-weight: 9.3
+weight: 10.3
 course: "Documenting REST APIs"
 section: jobapis
 last-modified: 2019-11-17

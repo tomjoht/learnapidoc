@@ -2,7 +2,7 @@
 title: DX content strategy with developer portals
 permalink: /docapis_dx_content_strategy.html
 course: "Documenting REST APIs"
-weight: 11.1
+weight: 12.1
 sidebar: docapis
 section: devportals
 path1: /docapis_managing_doc_processes.html

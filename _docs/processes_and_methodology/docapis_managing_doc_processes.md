@@ -2,7 +2,7 @@
 title: Documentation processes and methodology
 permalink: /docapis_managing_doc_processes.html
 course: "Documenting REST APIs"
-weight: 11.0
+weight: 12.0
 sidebar: docapis
 section: devportals
 path1: /docapis_managing_doc_processes.html

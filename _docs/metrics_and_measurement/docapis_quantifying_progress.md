@@ -2,7 +2,7 @@
 title: Quantifying your progress
 permalink: /docapis_metrics_quantifying_progress.html
 course: "Documenting REST APIs"
-weight: 12.4
+weight: 13.4
 sidebar: docapis
 section: metrics
 path1: /docapis_metrics_and_measurement.html

@@ -2,7 +2,7 @@
 title: Second-level checklist for API documentation
 permalink: /docapis_metrics_second_level_checklist.html
 course: "Documenting REST APIs"
-weight: 12.3
+weight: 13.3
 sidebar: docapis
 section: metrics
 path1: /docapis_metrics_and_measurement.html

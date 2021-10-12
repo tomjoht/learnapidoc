@@ -36,6 +36,9 @@ folders:
   - title: "Developer Documentation Trends: Survey Results"
     jurl: /docapis_trends.html
 
+  - title: "Glossary"
+    jurl: /api-glossary.html
+
 - title: "II: Using an API like a developer"
   jurl: /likeadeveloper.html
   folderitems:
@@ -117,78 +120,65 @@ folders:
   - title: "Introduction to the OpenAPI specification"
     jurl: /pubapis_openapi_intro.html
 
+  - title: "Stoplight: Visual modeling tools for creating your spec"
+    jurl: /pubapis_stoplight.html
+
   - title: "Getting started tutorial: Using Stoplight Studio to create an OpenAPI specification document"
     jurl: /pubapis_openapis_quickstart_stoplight.html
-
-    subfolders:
-    - title: "Step-by-step OpenAPI tutorial"
-      jurl: /openapi_tutorial.html
-      subfolderitems:
-
-      - title: "OpenAPI tutorial using Swagger Editor and Swagger UI: Overview"
-        jurl: /pubapis_openapi_tutorial_overview.html
-
-      - title: "Working in YAML"
-        jurl: /pubapis_yaml.html
-
-      - title: "Step 1: The openapi object"
-        jurl: /pubapis_openapi_step1_openapi_object.html
-
-      - title: "Step 2: The info object"
-        jurl: /pubapis_openapi_step2_info_object.html
-
-      - title: "Step 3: The servers object"
-        jurl: /pubapis_openapi_step3_servers_object.html
-
-      - title: "Step 4: The paths object"
-        jurl: /pubapis_openapi_step4_paths_object.html
-
-      - title: "Step 5: The components object"
-        jurl: /pubapis_openapi_step5_components_object.html
-
-      - title: "Step 6: security object"
-        jurl: /pubapis_openapi_step6_security_object.html
-
-      - title: "Step 7: The tags object"
-        jurl: /pubapis_openapi_step7_tags_object.html
-
-      - title: "Step 8: The externalDocs object"
-        jurl: /pubapis_openapi_step8_externaldocs_object.html
-
-      - title: "Activity: Create an OpenAPI specification document"
-        jurl: /pubapis_openapi_activity.html
 
   - title: "Swagger UI tutorial"
     jurl: /pubapis_swagger.html
 
-  - title: "Stoplight: Visual modeling tools for creating your spec"
-    jurl: /pubapis_stoplight.html
-
   - title: "SwaggerHub introduction and tutorial"
     jurl: /pubapis_swaggerhub_smartbear.html
 
-  - title: "Redocly tutorial -- authoring and publishing API docs with Redocly's command-line tools"
-    jurl: /pubapis_redocly.html
+  - title: "Swagger UI Demo"
+    jurl: /pubapis_swagger_demo.html
 
   - title: "Integrating Swagger UI with the rest of your docs"
     jurl: /pubapis_combine_swagger_and_guide.html
 
-    subfolders:
-    - title: "Demos of OpenAPI outputs using different tools"
-      jurl: /openapi_output_demos.html
-      behavior: openable
-      subfolderitems:
+  - title: "Redocly tutorial -- authoring and publishing API docs with Redocly's command-line tools"
+    jurl: /pubapis_redocly.html
+    
+- title: "V: Step-by-step OpenAPI code tutorial"
+  jurl: /openapi_tutorial.html
+  folderitems:
 
-        - title: "Stoplight demo"
-          jurl: /pubapis_stoplight_demo.html
+  - title: "OpenAPI tutorial using Swagger Editor and Swagger UI: Overview"
+    jurl: /pubapis_openapi_tutorial_overview.html
 
-        - title: "Swagger UI Demo"
-          jurl: /pubapis_swagger_demo.html
+  - title: "Working in YAML"
+    jurl: /pubapis_yaml.html
 
-        - title: "Redoc demo"
-          jurl: /pubapis_redoc.html
+  - title: "Step 1: The openapi object (OpenAPI tutorial)"
+    jurl: /pubapis_openapi_step1_openapi_object.html
 
-- title: "V: Testing API docs"
+  - title: "Step 2: The info object (OpenAPI tutorial)"
+    jurl: /pubapis_openapi_step2_info_object.html
+
+  - title: "Step 3: The servers object (OpenAPI tutorial)"
+    jurl: /pubapis_openapi_step3_servers_object.html
+
+  - title: "Step 4: The paths object (OpenAPI tutorial)"
+    jurl: /pubapis_openapi_step4_paths_object.html
+
+  - title: "Step 5: The components object (OpenAPI tutorial)"
+    jurl: /pubapis_openapi_step5_components_object.html
+
+  - title: "Step 6: security object (OpenAPI tutorial)"
+    jurl: /pubapis_openapi_step6_security_object.html
+
+  - title: "Step 7: The tags object (OpenAPI tutorial)"
+    jurl: /pubapis_openapi_step7_tags_object.html
+
+  - title: "Step 8: The externalDocs object (OpenAPI tutorial)"
+    jurl: /pubapis_openapi_step8_externaldocs_object.html
+
+  - title: "Activity: Create an OpenAPI specification document"
+    jurl: /pubapis_openapi_activity.html
+
+- title: "VI: Testing API docs"
   jurl: /testingdocs.html
   folderitems:
 
@@ -207,7 +197,7 @@ folders:
   - title: "Activity: Test your project's documentation"
     jurl: /testingdocs_activity.html
 
-- title: "VI: Conceptual topics in API docs"
+- title: "VII: Conceptual topics in API docs"
   jurl: /docconceptual.html
   folderitems:
 
@@ -244,7 +234,7 @@ folders:
   - title: "Activity: Assess the conceptual content in your project"
     jurl: /docapis_concept_activity.html
 
-- title: "VII: Code tutorials"
+- title: "VIII: Code tutorials"
   jurl: /docapiscode.html
   folderitems:
 
@@ -275,7 +265,7 @@ folders:
   - title: "Developer experience (DevX) usability"
     jurl: /devx-usability-examples.html
 
-- title: "VIII: Publishing API docs"
+- title: "IX: Publishing API docs"
   jurl: /publishingapis.html
   folderitems:
 
@@ -296,9 +286,6 @@ folders:
 
   - title: "Version control systems (e.g., Git)"
     jurl: /pubapis_version_control.html
-
-  - title: "Following agile scrum with documentation projects"
-    jurl: /pubapis_agile_scrum_for_docs.html
 
   - title: "Activity: Manage content in a GitHub wiki"
     jurl: /pubapis_github_wikis.html
@@ -330,7 +317,7 @@ folders:
   - title: "Tools FAQ"
     jurl: /docapis_faq_tools.html
 
-- title: "IX: Thriving in the API doc space"
+- title: "X: Thriving in the API doc space"
   jurl: /jobapis.html
   folderitems:
 
@@ -349,7 +336,7 @@ folders:
   - title: "Activity: Create or fix an API reference documentation topic"
     jurl: /docapis_work_on_conceptual_topic.html
 
-- title: "X: Native library APIs"
+- title: "XI: Native library APIs"
   jurl: /nativelibraryapis.html
   folderitems:
 
@@ -380,12 +367,15 @@ folders:
   - title: "Create non-ref docs with native library APIs"
     jurl: /nativelibraryapis_nonrefdocs.html
 
-- title: "XI: Processes and methodology"
+- title: "XII: Processes and methodology"
   jurl: /docapis_managing_doc_processes.html
   folderitems:
 
   - title: "DX content strategy with developer portals"
     jurl: /docapis_dx_content_strategy.html
+
+  - title: "Following agile scrum with documentation projects"
+    jurl: /pubapis_agile_scrum_for_docs.html
 
   - title: "Managing large documentation projects"
     jurl: /docapis_managing_doc_projects.html
@@ -420,7 +410,7 @@ folders:
   - title: "Ensuring documentation coverage with each software release"
     jurl: /docapis_release_process.html
 
-- title: "XII: Metrics and measurement"
+- title: "XIII: Metrics and measurement"
   jurl: /docapis_metrics_and_measurement.html
   folderitems:
   - title: Measuring progress against documentation quality goals
@@ -438,12 +428,9 @@ folders:
   - title: Templates for working with metrics
     jurl: /docapis_metrics_templates.html
 
-- title: "XIII: API glossary and resources"
+- title: "XIV: Additional resources"
   jurl: /resources.html
   folderitems:
-
-  - title: "API Glossary"
-    jurl: /api-glossary.html
 
   - title: "Documenting GraphQL APIs"
     jurl: /docapis_graphql_apis.html

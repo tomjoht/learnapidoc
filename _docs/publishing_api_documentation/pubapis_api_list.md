@@ -3,7 +3,7 @@ title: Survey of API doc sites
 permalink: /pubapis_apilist.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.1
+weight: 9.1
 section: publishingapis
 path1: /publishingapis.html
 last-modified: 2020-06-06

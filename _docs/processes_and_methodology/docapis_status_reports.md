@@ -2,7 +2,7 @@
 title: Sending doc status reports -- a tool for visibility and relationship building
 permalink: /docapis_status_reports.html
 course: "Documenting REST APIs"
-weight: 11.6
+weight: 12.6
 sidebar: docapis
 section: devportals
 path1: /docapis_managing_doc_processes.html

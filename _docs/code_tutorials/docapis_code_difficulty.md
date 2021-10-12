@@ -3,7 +3,7 @@ title: Why documenting code is so difficult
 permalink: /docapis_code_difficulty.html
 keywords:
 course: "Documenting REST APIs"
-weight: 7.2
+weight: 8.2
 sidebar: docapis
 section: docapiscode
 path1: /doccode.html

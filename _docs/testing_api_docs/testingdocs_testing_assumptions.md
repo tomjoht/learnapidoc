@@ -2,7 +2,7 @@
 title: "Test your assumptions against users"
 course: "Documenting REST APIs"
 permalink: /testingdocs_testing_assumptions.html
-weight: 5.3
+weight: 6.4
 sidebar: docapis
 section: testingdocs
 path1: /testingdocs.html

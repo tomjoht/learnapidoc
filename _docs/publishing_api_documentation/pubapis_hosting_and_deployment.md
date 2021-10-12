@@ -3,7 +3,7 @@ title: "Hosting and deployment options"
 permalink: /pubapis_hosting_and_deployment.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.92
+weight: 9.92
 section: publishingapis
 path1: /publishingapis.html
 last-modified: 2020-06-27

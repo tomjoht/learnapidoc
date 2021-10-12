@@ -2,7 +2,7 @@
 title: "Activity: Judge conceptual content and decide which is best"
 permalink: /docapis_concept_activity.html
 course: "Documenting REST APIs"
-weight: 6.93
+weight: 7.93
 sidebar: docapis
 section: docendpoints
 path1: /docendpoints.html

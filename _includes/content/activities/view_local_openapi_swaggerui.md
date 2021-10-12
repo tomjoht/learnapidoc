@@ -86,7 +86,7 @@ For more details on using the Python simple server, see [How do you set up a loc
 
 By default, SwaggerUI has the Petstore OpenAPI document configured in the `url` parameter in the `index.html` file. You need to swap in your local file instead.
 
-1.  Download the following OpenAPI document (right-click the link and save the YAML file to your desktop.): [https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml)
+1.  Download the following OpenAPI document (right-click the link and save the YAML file to your desktop.): [https://idratherbewriting.com/learnapidoc/docs/openapi_spec_and_generated_ref_docs/openapi_openweathermap.yml](https://idratherbewriting.com/learnapidoc/docs/openapi_spec_and_generated_ref_docs/openapi_openweathermap.yml)
 
 2.  Drag your OpenAPI specification file, `openapi_openweathermap.yml`, into the `dist` folder. Your file structure should look as follows:
 

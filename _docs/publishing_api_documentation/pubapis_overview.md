@@ -3,7 +3,7 @@ title: 'Overview for publishing API docs'
 permalink: /pubapis_overview.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.01
+weight: 9.01
 section: publishingapis
 path1: /publishingapis.html
 last-modified: 2018-12-25

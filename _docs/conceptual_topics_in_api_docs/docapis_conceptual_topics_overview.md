@@ -3,7 +3,7 @@ title: Conceptual topics overview
 permalink: /docapis_conceptual_topics_overview.html
 keywords:
 course: "Documenting REST APIs"
-weight: 6.01
+weight: 7.01
 sidebar: docapis
 section: docconceptual
 path1: /docconceptual.html

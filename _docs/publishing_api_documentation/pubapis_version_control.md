@@ -2,7 +2,7 @@
 title: Version control systems (such as Git)
 permalink: /pubapis_version_control.html
 course: "Documenting REST APIs"
-weight: 8.5
+weight: 9.5
 sidebar: docapis
 section: publishingapis
 path1: /publishingapis.html

@@ -4,7 +4,7 @@ permalink: /publishingapis.html
 sidebar: docapis
 path1: /publishingapis.html
 section: publishingapis
-weight: 8.0
+weight: 9.0
 course: "Documenting REST APIs"
 last-modified: 2018-01-19
 ---

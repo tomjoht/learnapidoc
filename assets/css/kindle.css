@@ -43,8 +43,8 @@ h1.kindle {
 .level1 { margin-left: 1em}
 .level1items { margin-left: 2em}
 
-div#bookToc ul#docnavsidebar li.level1items a, li.level2items, li.level3items {
-    font-size: 1em;
+div#bookToc ul#docnavsidebar li.level1items a, li.level2items a, li.level3items a{
+    /* font-size: 1em; */
 }
 
 inspector-stylesheet:1
@@ -53,7 +53,7 @@ div#bookToc ul#docnavsidebar > li {
 }
 
 div#bookToc li.level1 a, div#bookToc li.level2 a, div#bookToc li.level3 a {
-font-size: 1.2em;
+/* font-size: 1.2em; */
 }
 
 blockquote {
@@ -105,7 +105,7 @@ ul#docnavsidebar li.level1items, ul#docnavsidebar  li.level2items {
 
 ul#docnavsidebar li.level1, ul#docnavsidebar li.level2 {
     list-style: none;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
     margin-left: 1em;
 }
 
@@ -123,7 +123,7 @@ blockquote {
 
 /* toc page */
 ul#docnavsidebar li.level1 a {
-    font-size: 24px;
+    font-size: 1.2em;
     text-decoration: none;
     color: #444444;
     }
@@ -278,4 +278,10 @@ li, li a, ul li, ul li ul li {
 
 h1, h2, h3, h4, h5, h6 {
   text-align: left;
+}
+
+ul#docnavsidebar li.level2items {
+    font-size: 15px;
+    margin-top: 10px;
+		color: #666;
 }

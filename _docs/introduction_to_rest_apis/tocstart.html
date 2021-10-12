@@ -14,10 +14,12 @@ last-modified: 2020-11-02
   <ul id="docnavsidebar" class="docnav">
     {% for folder in sidebar %}
         <li class="sectionHead"><a href="{{folder.jurl | remove: "/"}}">{{ folder.title }}</a>
+          {% comment %}
             {% for folderitem in folder.folderitems %}
               {% for subfolder in folderitem.subfolders %}
                 <ul>
-                  <li class="sectionHead"><a href="{{subfolder.jurl | remove: "/"}}">{{ subfolder.title }}</a>
+                  <li class=""><a href="{{subfolder.jurl | remove: "/"}}">{{ subfolder.title }}</a>
+
                       {% for subfolderitem in subfolder.subfolderitems %}
                         {% for subsubfolder in subfolderitem.subsubfolders %}
                            <ul>
@@ -25,10 +27,12 @@ last-modified: 2020-11-02
                             </ul>
                         {% endfor %}
                       {% endfor %}
+
                   </li>
                 </ul>
               {% endfor %}
             {% endfor %}
+     {% endcomment %}
         </li>
     {% endfor %}
   </ul>

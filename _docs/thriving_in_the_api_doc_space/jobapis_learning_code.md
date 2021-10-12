@@ -2,7 +2,7 @@
 title: How much code do you need to know?
 permalink: /jobapis_learning_code.html
 course: "Documenting REST APIs"
-weight: 9.2
+weight: 10.2
 sidebar: docapis
 section: jobapis
 path1: /jobapis.html

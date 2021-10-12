@@ -3,7 +3,7 @@ title: "Activity: Manage content in a GitHub wiki"
 permalink: /pubapis_github_wikis.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.7
+weight: 9.7
 section: publishingapis
 path1: /publishingapis.html
 last-modified: 2018-12-25

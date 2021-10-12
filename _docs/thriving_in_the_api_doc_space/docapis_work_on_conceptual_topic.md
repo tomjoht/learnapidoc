@@ -2,7 +2,7 @@
 title: "Activity: Create or fix an API reference documentation topic"
 permalink: /docapis_work_on_conceptual_topic.html
 course: "Documenting REST APIs"
-weight: 9.5
+weight: 10.5
 sidebar: docapis
 section: jobapis
 path1: /jobapis.html

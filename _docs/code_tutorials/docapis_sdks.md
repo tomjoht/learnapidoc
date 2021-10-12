@@ -2,7 +2,7 @@
 title: SDKs (software development kits)
 permalink: docapis_sdks.html
 course: "Documenting REST APIs"
-weight: 7.7
+weight: 8.7
 sidebar: docapis
 section: docapiscode
 path1: /doccode.html

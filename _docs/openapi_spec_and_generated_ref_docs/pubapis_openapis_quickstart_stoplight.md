@@ -3,7 +3,7 @@ title: "Getting started tutorial: Using Stoplight Studio to create an OpenAPI sp
 permalink: /pubapis_openapis_quickstart_stoplight.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 4.3
+weight: 4.4
 section: restapispecifications
 path1: /restapispecifications.html
 redirect_from:
@@ -553,7 +553,7 @@ You've finished creating your OpenAPI spec, so let's preview, test, and publish 
 
     The Bundled References will include the `$ref` code while Fully Deferenced will not; instead, the export will substitute in the references for `$ref`. The option you choose depends on what's supported in the editor you're bringing it to.
 
-    For publishing options outside of Stoplight, you can use your OpenAPI definition with [Redoc](https://github.com/Redocly/redoc), [Swagger UI](pubapis_swagger.html), [Spectacle](https://github.com/sourcey/spectacle), [Docsy](https://github.com/google/docsy), and other tools. See [Openapi.tools](https://openapi.tools/#documentation) for a list of possibilities. You can find a [Redoc tutorial in this course here](pubapis_redoc.html).
+    For publishing options outside of Stoplight, you can use your OpenAPI definition with [Redoc](https://github.com/Redocly/redoc), [Swagger UI](pubapis_swagger.html), [Spectacle](https://github.com/sourcey/spectacle), [Docsy](https://github.com/google/docsy), and other tools. See [Openapi.tools](https://openapi.tools/#documentation) for a list of possibilities. You can find a [Redoc tutorial in this course here](pubapis_redocly.html).
 
 {% include random_ad1.html %}
 

@@ -2,7 +2,7 @@
 title: "Activity: Generate a Javadoc from a sample project"
 permalink: /nativelibraryapis_create_javadoc.html
 course: "Documenting REST APIs"
-weight: 10.3
+weight: 11.3
 sidebar: docapis
 section: nativelibraryapis
 path1: /nativelibraryapis.html

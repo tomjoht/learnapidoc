@@ -17,7 +17,7 @@ Create a tutorial similar to this one with Stoplight: https://idratherbewriting.
 
 To fit into the theme of this section, this tutorial should show how to create an OpenAPI specification document using Readme.com. The course uses the OpenWeatherMap API as a sample API, specifically this Current weather data endpoint here: https://openweathermap.org/current. I know you can create a lot of other developer content in Readme.com, but this section focuses on REST API reference only.
 
-The tutorial should show how Readme.com can be used to create an OpenAPI spec document such as this: https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml.
+The tutorial should show how Readme.com can be used to create an OpenAPI spec document such as this: https://idratherbewriting.com/learnapidoc/docs/openapi_spec_and_generated_ref_docs/openapi_openweathermap.yml.
 
 And also a demo on the UX for the experience, such as this: https://idratherbewriting.com/learnapidoc/pubapis_stoplight_demo.html
 

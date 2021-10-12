@@ -202,7 +202,7 @@ Reference docs have traditionally been written by engineers, so I imagine the co
 
 In terms of processes for creating the OpenAPI spec, there's a split between manually creating the spec and auto-generating it from annotations in the source code. The former approach embraces the spec as a blueprint or contract that engineers code against; the latter is used more by engineering documentarians who might be wary of documentation drift, or who find it more convenient to keep documentation together with code.
 
-The OpenAPI spec alone isn't readable documentation, but many tools can generate out documentation from the OpenAPI spec. The most common tools for this are [Swagger UI](https://idratherbewriting.com/learnapidoc/pubapis_swagger.html), custom-built tools, or [ReDoc](https://idratherbewriting.com/learnapidoc/pubapis_redoc.html).
+The OpenAPI spec alone isn't readable documentation, but many tools can generate out documentation from the OpenAPI spec. The most common tools for this are [Swagger UI](https://idratherbewriting.com/learnapidoc/pubapis_swagger.html), custom-built tools, or [ReDoc](https://idratherbewriting.com/learnapidoc/pubapis_redocly.html).
 
 REST APIs are language agnostic, but there are usually accompanying software development kits (SDKs) that are language-specific (companies provide them to help developers implement the API). The most important languages to know (likely because of the SDKs that accompany APIs) are JavaScript, Java, and Python. Outside of programming languages, trending technologies include machine learning, artificial intelligence, big data, and Internet of Things (IoT).
 

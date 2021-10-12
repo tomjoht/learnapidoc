@@ -3,7 +3,7 @@ title: "Pull request workflows through GitHub"
 permalink: /pubapis_github_pull_requests.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 8.9
+weight: 9.9
 section: publishingapis
 path1: /publishingapis.html
 last-modified: 2018-12-25

@@ -43,7 +43,6 @@ the first is kindlegen, the next is the location of the docapis.opf file
 
 there's no need to convert to another ebook format b/c kindle has a reading app on every device aleady.
 but if you want to convert to ebook:
-https://www.convertfiles.com/convert/ebook/MOBI-to-EPUB.html
 https://cloudconvert.com/mobi-to-epub
 
 - css: css/kindle.css

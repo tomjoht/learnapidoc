@@ -5,50 +5,88 @@
 <div id="navig">
   {% if site.format == "kindle" %}<b>Sections in this chapter:</b>{% endif %}
 <ul id="docnavsidebar" class="docnav">
-
-{% for folder in sidebar.folders %}
-  {% if folder.jurl contains page.permalink %}
-    {% for folderitem in folder.folderitems %}
-      {% unless folderitem.type == "web" %}
+  {% for folder in sidebar.folders %}
+    {% if folder.jurl contains page.permalink %}
+      {% for folderitem in folder.folderitems %}
+        {% unless folderitem.type == "print" %}
         <li><a href="{{folderitem.jurl | remove: "/" }}">{{folderitem.title}}</a></li>
-      {% endunless %}
-    {% endfor %}
-  {% endif %}
-{% endfor %}
+        {% endunless %}
 
-{% comment %}check for items at second level {% endcomment %}
-{% for folder in sidebar.folders %}
-  {% for folderitem in folder.folderitems %}
-    {% for subfolder in folderitem.subfolders %}
-      {% if subfolder.jurl contains page.permalink %}
-        {% for subfolderitem in subfolder.subfolderitems %}
-          {% unless subfolderitem.type == "web" %}
-            <li><a href="{{subfolderitem.jurl | remove: "/" }}">{{subfolderitem.title}}</a></li>
-          {% endunless %}
+            {% for subfolder in folderitem.subfolders %}
+            <ul>
+              <li><a class="subfoldersTitle" href="{{ subfolder.jurl | remove_first: "/"}}">{{ subfolder.title }}</a></li>
+                {% for subfolderitem in subfolder.subfolderitems %}
+                <ul>
+                  {% if subfolderitem.title %}
+                    {% unless subfolderitem.type == "print" %}
+                      <li><a href="{{subfolderitem.jurl | remove_first: "/" }}">{{subfolderitem.title}}</a></li>
+                      {% endunless %}
+                  {% endif %}
+                </ul>
+          {% endfor %}
+              </ul>
         {% endfor %}
-      {% endif %}
+
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+
+  {% comment %}check for items at second level {% endcomment %}
+  {% for folder in sidebar.folders %}
+    {% for folderitem in folder.folderitems %}
+      {% for subfolder in folderitem.subfolders %}
+        {% if subfolder.jurl contains page.permalink %}
+          {% for subfolderitem in subfolder.subfolderitems %}
+          {% unless subfolderitem.type == "print" %}
+            <li><a href="{{subfolderitem.jurl | remove: "/" }}">{{subfolderitem.title}}</a></li>
+            {% endunless %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
     {% endfor %}
   {% endfor %}
-{% endfor %}
 
-{% comment %}check for items at third level {% endcomment %}
-{% for folder in sidebar.folders %}
-  {% for folderitem in folder.folderitems %}
-    {% for subfolder in folderitem.subfolders %}
-      {% for subfolderitem in subfolder.subfolderitems %}
-        {% for subsubfolder in subfolderitem.subsubfolders %}
-          {% if subsubfolder.jurl contains page.permalink %}
-            {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
-              {% unless subsubfolderitem.type == "web" %}
+  {% comment %}check for items at third level {% endcomment %}
+  {% for folder in sidebar.folders %}
+    {% for folderitem in folder.folderitems %}
+      {% for subfolder in folderitem.subfolders %}
+        {% for subfolderitem in subfolder.subfolderitems %}
+          {% for subsubfolder in subfolderitem.subsubfolders %}
+            {% if subsubfolder.jurl contains page.permalink %}
+              {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
+              {% unless subsubfolderitem.type == "print" %}
                 <li><a href="{{subsubfolderitem.jurl | remove: "/" }}">{{subsubfolderitem.title}}</a></li>
-              {% endunless %}
-            {% endfor %}
-          {% endif %}
+                {% endunless %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
         {% endfor %}
       {% endfor %}
     {% endfor %}
   {% endfor %}
-{% endfor %}
 
-</ul>
+  </ul>
+
+
+  {% comment %}
+  third-level down (not coded due to complexity)
+  {% for subsubfolder in subfolderitem.subsubfolders %}
+  <ul>
+      <li><a class="subfoldersTitle" href="{{ subsubfolder.jurl | remove_first: "/"}}">{{ subsubfolder.title }}</a>
+          {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
+
+            {% if subsubfolderitem.title %}
+              {% unless subsubfolderitem.type == "print" %}
+                <li><a href="{{subsubfolderitem.jurl | remove_first: "/" }}">{{subsubfolderitem.title}}</a></li>
+              {% endunless %}
+            {% endif %}
+    {% endfor %}
+
+  </li>
+  </ul>
+
+  </li>
+  {% endfor %}
+  {% endcomment %}
+
 </div>

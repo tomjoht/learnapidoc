@@ -3,7 +3,7 @@ title: Thriving in the API doc space
 permalink: /jobapis.html
 sidebar: docapis
 path1: /jobapis.html
-weight: 9.0
+weight: 10.0
 course: "Documenting REST APIs"
 section: jobapis
 last-modified: 2020-11-02
