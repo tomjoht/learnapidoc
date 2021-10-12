@@ -94,10 +94,6 @@ You won't find an [interactive API console](pubapis_design_patterns.html#interac
 
 Most outputs from HATs look dated and old. They look like a relic of the pre-2000 Internet era. (For more on the dated display, see [Tripane help and PDF files: past their prime?](http://www.robertdesprez.com/2013/01/18/tripane-help-and-pdfs-time-to-move-on/) from Robert Desprez.)
 
-For example, here's a sample help output from Flare for the Photobucket API:
-
-<a href="http://bit.ly/photobucketlongurl" class="noExtIcon"><img src="{{site.media}}/hatphotobucket.png" alt="Publishing API docs" /></a>
-
 With API documentation, often the documentation *is* the product's interface &mdash; there isn't a separate product GUI (graphical user interface) that clients interact with. Because the product's GUI is the documentation, it has to be sexy and attractive.
 
 {% include random_ad4.html %}

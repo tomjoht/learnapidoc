@@ -81,6 +81,8 @@ li.level1.open > ul > li.level1items.open > a:before,
 li.level2.open > ul > li.level2items.open > a:before,
 li.level3.open > ul > li.level3items.open > a:before {
   color: black;
+  content: '\f0c8';
+  font-family: 'FontAwesome';
 }
 
 li.level1.open > ul > li.level1items a,
@@ -89,11 +91,13 @@ li.level3.open > ul > li.level3items a {
   font-weight: normal;
   color: #0066c0;
 }
+
 li.level1.open > ul > li.level1items > a:before,
 li.level2.open > ul > li.level2items > a:before,
 li.level3.open > ul > li.level3items > a:before {
   font-weight: normal;
   color: #0066c0;
+
 }
 
 
