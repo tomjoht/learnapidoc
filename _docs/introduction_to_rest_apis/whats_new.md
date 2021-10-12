@@ -29,6 +29,11 @@ The following are the most recent updates to the API documentation course.
 </thead>
 <tbody>
 <tr>
+  <td>October 2021</td>
+  <td markdown="span"></td>
+  <td markdown="span">Updated the [introduction](/learnapidoc#other-resources) with a list of additional resources (books, courses, etc.).</td>
+</tr>
+<tr>
   <td>August 2021</td>
   <td markdown="span">[Ensuring documentation coverage with each software release](docapis_release_process.html)</td>
   <td markdown="span">Covers best practices for ensuring that each new feature in a release has adequate documentation coverage.</td>
@@ -47,21 +52,6 @@ The following are the most recent updates to the API documentation course.
   <td>July 2021</td>
   <td markdown="span">[Reasons why getting started tutorials fail or don't exist](docapis_doc_getting_started_section.html#reasons_for_failure)</td>
   <td markdown="span">Explains six main reasons why getting started tutorials often fail or don't exist, including impractical product scenarios, difficulty in distilling content, and more.</td>
-</tr>
-<tr>
-  <td>April 2021</td>
-  <td markdown="span">[API getting started tutorial](docapis_doc_getting_started_section.html)</td>
-  <td markdown="span">Added section on minimalism's influence. Also updated Run in Postman button section to switch from static buttons to forked workspaces.</td>
-</tr>
-<tr>
-  <td>April 2021</td>
-  <td markdown="span">[Getting started tutorial: Using Stoplight Studio to create an OpenAPI specification document](pubapis_openapis_quickstart_stoplight.html)</td>
-  <td markdown="span">Updated this tutorial to align with the many enhancements and changes to Stoplight over the past two years. (See [Updated Stoplight tutorial](/blog/updated-stoplight-tutorial/) for more details.</td>
-</tr>
-<tr>
-  <td>March 2021</td>
-  <td markdown="span">[API glossary](docapis_glossary_section.html)</td>
-  <td markdown="span">Expanded the content with technical examples about how to single source glossary content from a single YAML file. Also added examples for integrating tooltips and popovers as well, added more discussion, analysis, additional reading, and other updates overall. (See [Updated glossary article with technical examples](/blog/updated-glossary-article/) for more details.)</td>
 </tr>
 </tbody>
 </table>

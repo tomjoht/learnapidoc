@@ -10,7 +10,7 @@ weight: 1.01
 redirect_from:
 - /restapicourse2-0/
 - /learnapidoc/introtoapis.html
-last-modified: 2020-12-29
+last-modified: 2021-10-12
 ---
 
 In this course on writing documentation for REST APIs, instead of just talking about abstract concepts, I contextualize REST APIs with a direct, hands-on approach. You'll first learn about API documentation by using a simple weather API to put a weather forecast on your site.

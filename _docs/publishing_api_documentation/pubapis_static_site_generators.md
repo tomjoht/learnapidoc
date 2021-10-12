@@ -6,11 +6,7 @@ sidebar: docapis
 weight: 9.91
 section: publishingapis
 path1: /publishingapis.html
-redirect_from:
-- /learnapidoc/pubapis_other_tool_options.html
-- /learnapidoc/pubapis_docs_as_code_tool_options.html
-- /learnapidoc/pubapis_other_openapi_parsers.html
-last-modified: 2020-06-27
+last-modified: 2021-10-12
 ---
 
 Static site generators, such as Jekyll, Hugo, and Sphinx, are one of the most common authoring and publishing tools used in [docs-as-code scenarios](pubapis_docs_as_code.html). Static site generators build all the files for your website, pushing Markdown files into the layouts you define, running scripts to automate logic you need and more as they generate out HTML files. This section focuses exclusively on static site generators. In upcoming topics, I'll also explore [hosting and deployment options](pubapis_hosting_and_deployment.html) and [hybrid documentation systems](pubapis_hybrid_systems.html).
@@ -52,6 +48,7 @@ Although there are hundreds of static site generators (you can view a comprehens
 * [Hugo](#hugo)
 * [Sphinx](#sphinx)
 * [MkDocs](#mkdocs)
+* [Docusaurus](#docusaurus)
 
 One could discuss many more &mdash; Hexo, Vue, Middleman, Gitbook, Pelican, and so on. But the reality is that only a handful of static site generators are commonly used for documentation projects.
 
@@ -63,7 +60,7 @@ I devote an entire topic to [Jekyll](pubapis_jekyll.html) in this course, comple
 
 There are several compelling reasons to use Jekyll:
 
-* **Large community**. The Jekyll community, arguably the largest among static site generator communities, includes web developers, not just documentation-oriented groups. This broader focus attracts more developer attention and helps propel greater usage.
+* **Large community**. The Jekyll community, arguably the largest and longest-running among static site generator communities, includes web developers, not just documentation-oriented groups. This broader focus attracts more developer attention and helps propel greater usage.
 * **Control.** Jekyll provides a lot of powerful features (often through [Liquid](http://shopify.github.io/liquid/), a scripting language) that allow you to do almost anything with the platform. This scripting capability gives you an incredible amount of control to abstract complex code from users through simple templates and layouts. Because of this, you probably won't outgrow Jekyll. Jekyll will match whatever web development skills or other JS, HTML, or CSS frameworks you want to throw at it. Even without a development background, it's fairly easy to figure out and code the scripts you need. (See my series [Jekyll versus DITA](https://idratherbewriting.com/2015/03/23/new-series-jekyll-versus-dita/) for details on how to do in Jekyll what you're probably used to doing in DITA.)
 * **Integration with GitHub and AWS S3.** Tightly coupling Jekyll with the most popular version control repository on the planet (GitHub) almost guarantees its success. The more GitHub is used, the more Jekyll is also used, and vice versa. [GitHub Pages](pubapis_hosting_and_deployment.html#github_pages) will auto-build your Jekyll site (continuous delivery), allowing you to automate the publishing workflow without effort. If GitHub isn't appropriate for your project, you can also publish to AWS S3 bucket using the [s3_website plugin](https://github.com/laurilehmijoki/s3_website), which syncs your Jekyll output with an S3 bucket by only adding or removing the files that changed.
 
@@ -71,12 +68,13 @@ There are several compelling reasons to use Jekyll:
 
 For [theming](https://jekyllrb.com/docs/themes/), Jekyll offers the ability to package your theme as a Rubygem and distribute the gem across multiple Jekyll projects. Rubygems is a package manager, which means it's a repository for plugins. You pull the latest gems (plugins) you need from Rubygems through the command line, often using Bundler. Distributing your theme as a Rubygem is one approach you could use for breaking up your project into smaller projects to ensure faster build times.
 
-{: .tip}
-If you're looking for a documentation theme, see my [Documentation theme for Jekyll](https://idratherbewriting.com/documentation-theme-jekyll/). Also, note that this site is built with Jekyll and published through GitHub Pages.
+Although Jekyll was one of the first major static site generators, its popularity has waned, in part due to the lack of leadership and contributors in the open-source project. Additionally, Jekyll's Ruby architecture gives us slow build times (compared to Hugo). Finally, even though Jekyll is supported by GitHub, GitHub is slow to roll in version updates, so even though Jekyll is up to version 4.x+, [GitHub supports only version 3.9.0](https://pages.github.com/versions/).
+
+Although I use Jekyll for all my sites, if starting out today, I probably wouldn't choose Jekyll, as I think it's on the way out. That said, GitHub could up their support game, and Jekyll could continue for many years forward. The platform, especially Liquid syntax, is one of the easier ones to learn and work with.
 
 ## Hugo {#hugo}
 
-[Hugo](https://gohugo.io/) is a static site generator that is rapidly growing in popularity. Based on the Go language, Hugo builds your site significantly faster than most other static site generators, including Jekyll. There's an impressive number of [themes](https://themes.gohugo.io/), including some designed for [documentation](https://themes.gohugo.io/tags/documentation/). Specifically, see the [Learn theme](https://themes.gohugo.io/theme/hugo-theme-learn/en) and this [Multilingual API documentation theme](https://github.com/bep/docuapi).
+[Hugo](https://gohugo.io/) is a static site generator that is rapidly growing in popularity. Based on the Go language, Hugo builds your site significantly faster than most other static site generators, including Jekyll. There's an impressive number of [themes](https://themes.gohugo.io/), including some designed for [documentation](https://themes.gohugo.io/tags/documentation/). Specifically, see the [Docsy theme](https://www.docsy.dev/), the [Learn theme](https://themes.gohugo.io/theme/hugo-theme-learn/en) and this [Multilingual API documentation theme](https://github.com/bep/docuapi).
 
 <a href="https://gohugo.io/" class="noExtIcon"><img src="{{site.media}}/hugosite.png"/></a>
 
@@ -88,7 +86,7 @@ Hugo has a robust and flexible templating language (Golang) that makes it appeal
 
 ## Comparing speed with Hugo with Jekyll
 
-Speed may not be immediately apparent when you first start evaluating static site generators. You probably won't realize how important speed is until you have thousands of pages in your site and are waiting for it to build.
+Build times may not be immediately apparent when you first start evaluating static site generators (often using small projects as tests). You probably won't realize how important speed is until you have thousands of pages in your site and are waiting for it to build.
 
 {: .note}
 Speed here refers to the time to compile your web output, not the time your site takes to load when visitors view the content in a browser. Most static site generators load the pre-built pages quickly (less than 0.5 seconds), but the time it takes for the files to compile into a website before they're deployed depends on the platform, the number of pages, and the complexity of the code on the pages.
@@ -105,15 +103,15 @@ This build time is a serious speed advantage that will allow you to scale your d
 
 The deliberation between Hugo and Jekyll will require you to think about project size &mdash; how big should your project be? Should you have one giant project, with content for all documentation/products stored in the same repo? Or should you have multiple smaller repos? These are some of the considerations I wrestled with when [implementing docs-as-code tooling](pubapis_switching_to_docs_as_code.html). I concluded that having a single, massive project is preferable because it allows easier content re-use, onboarding, validation, and error checking, deployment management, and more.
 
-Regarding build speed, there are workarounds in Jekyll to enabling faster builds. In my doc projects at work (where we have probably 1,500 pages or so across many different doc sets), we implemented build shortcuts. By cascading configuration files, you can limit the builds to one particular doc directory. I have one configuration file (e.g., \_config.yml, the default) that sets all content as `publish: true`, and another configuration file (e.g., config-acme.yml) that sets all content as `publish: false` except for a particular doc directory (the one I'm working with, e.g., acme). When I'm working with that acme doc directory, I build Jekyll like this:
+Regarding build speed, there are workarounds in Jekyll to enabling faster builds. In your build commands, you can limit the builds to one particular doc directory. For example, you can have one configuration file (e.g., \_config.yml, the default) that sets all content as `publish: true`, and another configuration file (e.g., config-acme.yml) that sets all content as `publish: false` except for a particular doc directory (the one you're working with, e.g., acme). When you're working with that acme doc directory, you can build Jekyll like this:
 
 ```bash
 jekyll serve --config _config.yml,config-acme.yml
 ```
 
-The `config-acme.yml` will overwrite the default `_config.yml` to enable one specific doc directory as `publish: true` while disabling all others. As a result, Jekyll builds lightning fast. This method tends to work quite well and is used by others with large Jekyll projects as well. I usually focus on one documentation set at a time. We have continuous delivery configured with the server, so when it's time to push out the full build (where `publish: true` is applied to all directories and no config-acme.yml file is used), the full build process takes place on the server, not the local machine. The full build takes a couple of minutes. (The server has other pipeline logic in the way it validates, ingests, and deploys files that requires about 10 minutes in total.)
+The `config-acme.yml` will overwrite the default `_config.yml` to enable one specific doc directory as `publish: true` while disabling all others. Using this method, Jekyll builds lightning fast. This method tends to work quite well and is used by others with large Jekyll projects as well. Writers usually focus on one documentation directory at a time. If you have  continuous delivery configured with the server, when it's time to push out the full build (where `publish: true` is applied to all directories and no config-acme.yml file is used), the full build process takes place on the server, not the local machine. (The server might have other pipeline logic that validates, ingests, and deploys files as well, adding to the time.)
 
-Although static site generators seem to change quickly, it's harder for one tool, like Hugo, to overtake another, like Jekyll, because of the custom coding developers usually do with the platform. If you're just using someone's theme with general Markdown pages, great, switching will be easy. But if you've built custom layouts and added custom frontmatter in your Markdown pages that gets processed in unique ways by the layouts, as well as other custom scripts or code that you created in your theme specifically for your content, changing platforms will be more challenging. You'll have to change all your custom Liquid scripting to Golang. Or if working with another platform, you might need to change your Golang scripts to Jinja templating, and so forth.
+Although static site generators seem to change quickly, it's harder for one tool, like Hugo, to overtake another, like Jekyll, because of the custom coding developers usually do with the platform. If you're just using someone's theme with general Markdown pages, great, switching will be easy. But if you've built custom layouts and frontmatter in your Markdown pages that gets processed in unique ways, as well as other custom scripts or code that you created in your theme specifically for your content, changing platforms will be more challenging. You'll have to change all your custom Liquid scripting to Go. Or if working with another platform, you might need to change your Go scripts to Jinja templating, and so forth.
 
 For this reason, unless you're using themes built by others, you don't often jump from one platform to the next as you might do with DITA projects, where all content usually conforms to the same specification.
 
@@ -121,21 +119,27 @@ For this reason, unless you're using themes built by others, you don't often jum
 
 [Sphinx](http://www.sphinx-doc.org/en/stable/) is a popular static site generator based on Python. It was originally developed by the Python community to document the Python programming language (and it has some direct capability to document Python classes), but Sphinx is now commonly used for many documentation projects unrelated to Python. Part of Sphinx's popularity is due to its Python foundation since Python works well for many documentation-related scripting scenarios.
 
-<a href="http://www.sphinx-doc.org/en/stable/" class="noExtIcon"><img src="{{site.media}}/sphinxsite.png"/></a>
+<a href="http://www.sphinx-doc.org/en/stable/" class="noExtIcon"><img src="{{site.media}}/sphinxsite.png" style="border: 1px solid #dedede"/></a>
 
 Because Sphinx was designed from the ground up as a documentation tool, not just as a tool for building websites (like Jekyll and Hugo), Sphinx has more documentation-specific functionality that is often absent from other static site generator tools. Some of these documentation-specific features include robust search, more advanced linking (linking to sections, automating titles based on links, cross-references, and more), and use of reStructuredText (rST), which is more semantically rich, standard, and extensible than Markdown. (See [What about reStructuredText and Asciidoc?](pubapis_markdown.html#rst_and_asciidoc) for more details around rST compared to Markdown.)
 
-For continuous deployment with your hosting, Sphinx can be used with the [Read the Docs](pubapis_hosting_and_deployment.html#readthedocs) platform. Overall, Sphinx has a passionate fan base among those who use it, especially among the Python community. However, because Sphinx was specifically designed as a documentation tool, the community might not be as large as some of the other static site generator communities (which use the static site generators for building general websites, not just documentation sites).
+For continuous deployment with your hosting, Sphinx can be used with the [readthedocs.com](https://readthedocs.com/) platform. Overall, Sphinx has a passionate fan base among those who use it, especially among the Python community. However, because Sphinx was specifically designed as a documentation tool, the community might not be as large as some of the other static site generator communities (which use the static site generators for building general websites, not just documentation sites).
 
-As of December 2018, [Staticgen.com](https://www.staticgen.com/) shows the number of stars, forks, and issues as follows:
+As of October 2021, [Staticgen.com](https://www.staticgen.com/) shows the number of stars, forks, and issues as follows:
 
-{% include course_image.html url="https://www.staticgen.com/" filename="staticgendisplay" ext_print="png" ext_web="png" alt="Top static site generators" caption="Top static site generators" %}
+{% include course_image.html url="https://www.staticgen.com/" filename="staticgendisplay4" ext_print="png" ext_web="png" alt="Top static site generators" caption="Top static site generators" %}
 
-On the Staticgen.com site, the star icon represents the number of users who have "starred" the project (basically followed its activity). The forked icon represents the number of repo forks that exist registered on their platform (GitHub, etc.). The bug icon represents the number of open issues logged against the project. The green numbers indicate trends with these numbers.
+On the Staticgen.com site, the star icon represents the number of users who have "starred" the project (basically followed its activity). The forked icon represents the number of repo clones that exist registered on their platform (GitHub, etc.). The bug icon represents the number of open issues logged against the project. To gauge how active the project is, browse the GitHub source and look to see how regular the commits are.
 
 {% include image_ad_right.html %}
 
-Jekyll, Next, and Hugo are the most common static site generators. If you look at [Staticgen.com](https://www.staticgen.com/), you'll see that between Hugo and Sphinx, there are about 24 other static site generators (Gatsby, Hexo, Gitbook, Nuxt, Vuepress, Docusaurus, Pelican, Metalsmith, MkDocs, Brunch, Middleman, React Static, Harp, Expose, Assemble, Wintersmith, Cactus, Phenomic, Docpad, Lektor, HubPress, *and then Sphinx*). But I called out Sphinx here because of its popularity among documentation groups and for its integration with [Read the Docs](pubapis_hosting_and_deployment.html#readthedocs).
+Next, Hugo, and Gatsby are the most common static site generators. If you look at [Staticgen.com](https://www.staticgen.com/), you'll see that between Hugo and Sphinx, there are many other more popular static site generators.  But I called out Sphinx here because of its popularity *among documentation groups* and for its integration with [Read the Docs](pubapis_hosting_and_deployment.html#readthedocs). That's what you have to keep in mind with static site generators &mdash; a particular option might be more popular, but for what purpose? Building general websites, or building documentation websites? Documentation websites tend to have unique needs and requirements (like a robust sidebar), so don't be tricked by merely choosing the most popular options listed in staticgen.com.
+
+## Gatsby
+
+[Gatsby](https://www.gatsbyjs.com/) is a popular static site generator, and even offers a [cloud-hosted version](https://www.gatsbyjs.com/products/cloud/). However, Gatsby is more of an *application static site generator* than a pure static site generator that lets you write in Markdown and publish HTML. Gatsby appeals to React developers who are building more extensive web applications; the architecture and code in Gatsby tend to be more complex and confusing than the other simpler static site generators. I've met a number of people who experimented with Gatsby and then abandoned it. Other application static site generators similar to Gatsby include Next.js and Nuxt.js.
+
+In selecting a static site generator, I don't recommend any application-based static site generator. You're writing docs, and primarily working in Markdown and HTML. You're probably not building more extensive web app logic. You mainly want a tool that will take your Markdown and publish the HTML. Your company might want to create custom pipelines that push the published HTML into some other framework or system, and having a simpler static site generator will be advantageous in these scenarios. However, leveraging React components can speed development time, and some tools such as [Redoc](pubapis_redocly.html) offer [developer portals build on Gatsby](https://redoc.ly/developer-portal/).
 
 ## MkDocs {#mkdocs}
 
@@ -151,13 +155,24 @@ While it seems like orienting the platform towards documentation would be advant
 
 This is the constant tradeoff with tools &mdash; the tools and platforms with the most community and usage aren't usually the doc tools. The doc tools have more features designed for tech writers, but they lack the momentum and depth of the more popular website building tools.
 
+## Docusaurus
+
+[Docusaurus](https://docusaurus.io/), built by Facebook, is also a popular static site generator oriented towards documentation needs. Docusaurus includes integration with Algolia for search, supports document versioning, translation, and more. The React foundation will also make it popular if you have front-end developers who prefer to work with React.
+
+With support from Facebook, Docusaurus looks like a great option for a documentation website, and although I haven't experimented with it myself, feedback from others has been positive. You can see how [Docusaurus compares with other tools](https://docusaurus.io/docs#comparison-with-other-tools) as well as look over their [showcase](https://docusaurus.io/showcase). The showcase, which includes many doc sites such as [Algolia](https://docsearch.algolia.com/), [GraphQL](https://www.graphql-code-generator.com/), [Redis](https://developer.redis.com/), can give you an idea of how your doc site will look. Most themes have an attractive left sticky sidebar with collapse/expand toggles along with a right sidebar showing a floating table of contents.
+
 ## What about this or that tool?
 
-Right now there are probably many readers who are clenching their first and lowering their eyebrows in anger at the omission of their tool. *What about ... Docpad!!??? What about Nikola??!! What about Docusaurus?!!*
+Right now there are probably many readers who are clenching their first and lowering their eyebrows in anger at the omission of their tool. *What about ... Docpad!!??? What about Nikola??!! What about Slate!! And Docsify?*
 
-Hey, there are *a lot* of tool options out there, and you might have found the perfect match between your content needs and the tool. Additionally, the tools landscape for developer docs is robust, complex, and seemingly endless.
+Hey, there are *a lot* of tool options out there, and you might have found the perfect match between your content needs and the tool. Additionally, the tools landscape for developer docs is robust, complex, and seemingly endless. Most people don't have deep exposure to that many tools. If you start with one and become familiar with it, changing course becomes harder. There often isn't a killer feature that prompts you to refactor and recode your entire website.
 
-Also, recognize that I'm only recommending what I perceive to be the most popular options. The developer tool landscape is diverse and constantly changing, and what may be relevant one day might be passé the next. Docs-as-code tooling is a difficult space to navigate, and selecting the right tool for your needs is a tough question. I offer more specific advice and recommendations in [Which tool to choose for API docs — my recommendations](pubapis_which_tool_to_choose.html). The tool you choose will affect both your productivity and capability, so it tends to be an important choice.
+And the winds seem to change from year to year. What may be relevant one day might be passé the next. Docs-as-code tooling is a difficult space to navigate, and selecting the right tool for your needs is a tough question. I offer more specific advice and recommendations in [Which tool to choose for API docs &mdash; my recommendations](pubapis_which_tool_to_choose.html). The tool you choose will affect both your productivity and capability, so it tends to be an important choice.
 
-{: .tip}
-For more doc tools, see the [Generating Docs](https://github.com/PharkMillups/beautiful-docs#generating-docs) list in [Beautiful Docs](https://github.com/PharkMillups/beautiful-docs). Additionally, [DocBuilds](http://www.docbuilds.com/) tries to index some of more popular documentation-specific static site generators. For tools specifically related to parsing the [OpenAPI specification](pubapis_openapi_intro.html), see [Ultimate Guide to 30+ API Documentation Solutions](https://nordicapis.com/ultimate-guide-to-30-api-documentation-solutions/) from Nordic APIs and [Tools and Integrations](https://swagger.io/tools/open-source/open-source-integrations/) from Smartbear.
+For more doc tools, see the [Generating Docs](https://github.com/PharkMillups/beautiful-docs#generating-docs) list in Beautiful Docs. Additionally, [DocBuilds](http://www.docbuilds.com/) tries to index some of more popular documentation-specific static site generators.
+
+## Tools for generating the OpenAPI reference
+
+In this discussion on tools, I have purposely avoided tools that auto-generate out reference documentation from the [OpenAPI specification](pubapis_openapi_intro.html). I cover these tools more in the [OpenAPI spec and generated reference docs](restapispecifications.html) section. These tools include [Stoplight](pubapis_stoplight.html), [SwaggerHub](pubapis_swaggerhub_smartbear.html), [Redoc](pubapis_redocly.html) (all site sponsors, by the way), as well as [Readme.com](https://readme.com/) and [DeveloperHub.io](https://developerhub.io/). For more of these tools, see [Ultimate Guide to 30+ API Documentation Solutions](https://nordicapis.com/ultimate-guide-to-30-api-documentation-solutions/) from Nordic APIs and [Tools and Integrations](https://swagger.io/tools/open-source/open-source-integrations/) from Smartbear.
+
+One drawback with tools that auto-generate out the OpenAPI reference is that their support for more conceptual documentation will likely be limited. Tech writers tend to spend the bulk of their time writing more conceptual docs; reference docs are often written and generated by engineering teams themselves. Even so, you will likely run into challenges with [integrating the conceptual and reference docs into a seamless experience](pubapis_combine_swagger_and_guide.html).
