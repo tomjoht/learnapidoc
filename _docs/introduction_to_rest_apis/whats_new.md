@@ -31,6 +31,12 @@ The following are the most recent updates to the API documentation course.
 <tr>
   <td>October 2021</td>
   <td markdown="span"></td>
+  <td markdown="span">Added a new article in the publishing tools section called [Using Oxygen XML with docs-as-code workflows](pubapis_oxygenxml.html).</td>
+</tr>
+<tr>
+<tr>
+  <td>October 2021</td>
+  <td markdown="span"></td>
   <td markdown="span">Updated the [introduction](/learnapidoc#other-resources) with a list of additional resources (books, courses, etc.).</td>
 </tr>
 <tr>

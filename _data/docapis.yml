@@ -140,7 +140,7 @@ folders:
 
   - title: "Redocly tutorial -- authoring and publishing API docs with Redocly's command-line tools"
     jurl: /pubapis_redocly.html
-    
+
 - title: "V: Step-by-step OpenAPI code tutorial"
   jurl: /openapi_tutorial.html
   folderitems:
@@ -304,6 +304,9 @@ folders:
 
   - title: "Hybrid documentation systems"
     jurl: /pubapis_hybrid_systems.html
+
+  - title: "Using Oxygen XML with docs-as-code workflows"
+    jurl: /pubapis_oxygenxml.html
 
   - title: "Which tool to choose for API docs &mdash; my recommendations"
     jurl: /pubapis_which_tool_to_choose.html

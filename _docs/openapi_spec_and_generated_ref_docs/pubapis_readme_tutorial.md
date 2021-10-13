@@ -3,9 +3,9 @@ title: "Create an OpenAPI specification document using (Readme.com)"
 permalink: pubapis_readme_tutorial.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 4.31
-section: restapispecifications
-path1: /restapispecifications.html
+# weight: 4.31
+# section: restapispecifications
+# path1: /restapispecifications.html
 # when ready to publish, i'll change the following to published: true
 published: false
 last-modified: 2020-04-08
