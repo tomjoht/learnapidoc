@@ -12,7 +12,7 @@ If you're looking to see what's new in the API doc site/course, you can browse n
 * TOC
 {:toc}
 
-## Most recent updates
+<h2>Most recent updates</h2>
 
 The following are the most recent updates to the API documentation course.
 
@@ -30,14 +30,13 @@ The following are the most recent updates to the API documentation course.
 <tbody>
 <tr>
   <td>October 2021</td>
-  <td markdown="span"></td>
-  <td markdown="span">Added a new article in the publishing tools section called [Using Oxygen XML with docs-as-code workflows](pubapis_oxygenxml.html).</td>
+  <td markdown="span">[Using Oxygen XML with docs-as-code workflows](pubapis_oxygenxml.html)</td>
+  <td markdown="span">Added a new article in the publishing tools section using Oxygen XML.</td>
 </tr>
 <tr>
-<tr>
   <td>October 2021</td>
-  <td markdown="span"></td>
-  <td markdown="span">Updated the [introduction](/learnapidoc#other-resources) with a list of additional resources (books, courses, etc.).</td>
+  <td markdown="span">[Other resources section](index.html#other-resources) in Course overview</td>
+  <td markdown="span">Updated the Course overview with a list of additional resources (books, courses, etc.).</td>
 </tr>
 <tr>
   <td>August 2021</td>

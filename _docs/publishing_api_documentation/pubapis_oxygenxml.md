@@ -45,7 +45,7 @@ This workflow would require tech writers to convert the Markdown files to DITA e
 
 ### Workflow #3: Convert DITA to Markdown and publish with a static site generator {#workflow3}
 
-Another workflow could be to publish DITA to Markdown using the [DITA Open Toolkit](https://www.dita-ot.org/3.6/topics/dita2markdown.html). After obtaining Markdown, you would publish the files using a [static site generator](https://jamstack.org/generators/)  (e.g., Hugo, Jekyll, Elephant, Docusaurus, Gatsby) as the publishing engine.
+Another workflow could be to publish DITA to Markdown using the [DITA Open Toolkit](https://www.dita-ot.org/3.6/topics/dita2markdown.html). After obtaining Markdown, you would publish the files using a [static site generator](https://jamstack.org/generators/) (e.g., Hugo, Jekyll, Elevanty, Docusaurus, Gatsby) as the publishing engine.
 
 This publishing engine might be preferable if you have a UX team who wants an extremely customized doc website to match other branding, or perhaps if you have customized templates and Swagger integration for your API reference documentation. Some static site generators like Gatsby offer a robust React-based framework that some UX front-end engineers might prefer to work in, rather than [customizing the Oxygen XML webhelp output](https://www.oxygenxml.com/doc/versions/23.1/ug-editor/topics/wh_webhelp_output.html). Then again, if you don't have UX and engineering support, creating your own custom doc-themed website might not be appealing to you.
 
@@ -57,7 +57,7 @@ Because Markdown is the most common format for docs-as-code tools, let's look in
 
 ### Markdown formats supported in Oxygen XML
 
-Oxygen XML provides support for CommonMark Markdown (the same Markdown standard used by the OpenAPI spec) as well MDITA files (Markdown DITA) from the [Lightweight DITA (LwDITA) spec](http://docs.oasis-open.org/dita/LwDITA/v1.0/cnprd01/LwDITA-v1.0-cnprd01.html). The [MDITA](http://docs.oasis-open.org/dita/LwDITA/v1.0/cnprd01/LwDITA-v1.0-cnprd01.html#what-is-mdita) format follows [GitHub-Flavored Markdown](https://www.oxygenxml.com/xml_editor/markdown_editor.html#integration-of-popular-markdown-rules) (for example, fenced code blocks with a language identifier) and also incorporates some re-use features from DITA (primarily keyrefs and conrefs) -- see the [supported MDITA syntax here](https://github.com/jelovirt/org.lwdita/wiki/Syntax-reference). Keyrefs allow you to use variables in your content, and conrefs allow for content re-use (also called transcludes, where you can insert the content from one file into another).
+Oxygen XML provides support for CommonMark Markdown (the same Markdown standard used by the OpenAPI spec) as well MDITA files (Markdown DITA) from the [Lightweight DITA (LwDITA) spec](http://docs.oasis-open.org/dita/LwDITA/v1.0/cnprd01/LwDITA-v1.0-cnprd01.html). The [MDITA](http://docs.oasis-open.org/dita/LwDITA/v1.0/cnprd01/LwDITA-v1.0-cnprd01.html#what-is-mdita) format follows [GitHub-Flavored Markdown](https://www.oxygenxml.com/xml_editor/markdown_editor.html#integration-of-popular-markdown-rules) (for example, fenced code blocks with a language identifier) and also incorporates some re-use features from DITA (primarily `keyrefs` and `conrefs`) &mdash; see the [supported MDITA syntax here](https://github.com/jelovirt/org.lwdita/wiki/Syntax-reference). The `keyref` element allows you to use variables in your content, and `conref` allows for content re-use (also called transcludes, where you can insert the content from one file into another).
 
 ### Markdown preview in Oxygen XML's editor
 
@@ -67,9 +67,9 @@ As you're writing Markdown in Oxygen XML, a preview pane appears to the right of
 
 If you want, you can turn off the HTML preview by right-clicking the preview pane and choosing Hide preview. (You toggle it back on by right-clicking the main window and choosing Show Preview.) You might disable the preview to give you more space to work in the editor, and also to speed up file loading times. Oxygen XML's editor has a lot of panels that you can undock and rearrange as desired.
 
-In the code view, syntax highlighting colors different parts of the Markdown text to make it more readable. Even some code samples have syntax highlighting directly in the Markdown editor. (The output has full syntax highlighting across code languages.)
+In the code view, syntax highlighting colors different parts of the Markdown text to make it more readable. Even some code languages have syntax highlighting directly in the Markdown editor. (The output has full syntax highlighting across code languages.)
 
-In the Project pane on the left, you can also switch to the DITA Map Manager to visually arrange your DITA map, which determines your sidebar navigation. The following screenshot shows how you can work directly with the DITA map using XML tags or by dragging and dropping the topics in the hierarchical arrangement using the DITA Maps Manager, which gives you a more visual tool to see how topics are nested.
+In the Project pane on the left, you can also switch to the DITA Map Manager to visually arrange your DITA map, which determines your sidebar navigation. The following screenshot shows how you can either work directly with the DITA map using XML tags or by dragging and dropping the topics in the hierarchical arrangement using the DITA Maps Manager. The Manager gives you a more visual tool to see how topics are nested.
 
 <figure><img src="{{site.media}}/oxygenxml_dita_maps_manager.png " alt="DITA Maps Manager in OxygenXML" /><figcaption><b>Figure 2.</b>The DITA Maps Manager on the left lets you more easily arrange your topics into the sidebar hierarchy you want. </figcaption></figure>
 
@@ -109,7 +109,7 @@ We've covered only a few aspects of docs-as-code tools, namely, Markdown format 
 
 <iframe width="640" height="385" src="https://www.youtube.com/embed/MWsqi4Nb0fI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-The webinar covers ways to store and manage issues with GitHub, how to automate quality checks, continuous delivery and publishing with Travis CI, collaborative editing/review, and more.
+The webinar covers ways to store and manage issues with GitHub, how to automate quality checks, how to set up continuous delivery and publishing with Travis CI, ways to collaborate with editing and reviews, and more.
 
 {: .note}
 If you've never heard the phrase "docs as code," see [Doc-as-code tools](pubapis_docs_as_code.html) for a full description of what this entails. In short, you use the same general tools and workflows to author, manage, and publish documentation as developers use to write code.
@@ -120,7 +120,7 @@ Beyond the docs-as-code features described above, there are other reasons to exp
 
 ### Responsive HTML5 webhelp
 
-One advantage in using Oxygen XML is the many readily available outputs for your content, especially the webhelp output and PDF. If you select a ditamap file in your project and then click the Apply Transformation Scenario(s) button <img src="{{site.media}}/oxygenxml-transform-button.png" alt="Apply Transformation Scenario(s) button" />, you can see the available outputs:
+One advantage in using Oxygen XML is the many readily available outputs for your content, especially the webhelp output and PDF. If you select a ditamap file in your project and then click the Apply Transformation Scenario(s) button <img src="{{site.media}}/oxygenxml-transform-button.png" alt="Apply Transformation Scenario(s) button" style="max-width:20px" />, you can see the available outputs:
 
 <figure><img src="{{site.media}}/oxygen-xml-outputs.png" alt="Available outputs from Oxygen XML" /><figcaption><b>Figure 5.</b>Outputs available from Oxygen XML include virtually every type of output you can think of, including webhelp, PDF, Kindle, Word, and more. The two most common outputs are webhelp and PDF. </figcaption></figure>
 
@@ -146,15 +146,15 @@ If you want to swap in your own search engine, you can [replace the default sear
 
 ### PDF output
 
-Although it might seem like PDF is an outdated mode for delivering docs, PDF is still highly common and needed in many documentation scenarios, especially for providing docs to early access partners. Many times when you're writing docs, you need to send the topic to an early access partner, excluding the topic from the rest of your docs until the feature is ready. Other times, PDFs are needed to send to partners who haven't signed contracts yet (and hence can't get access to your developer portal) but who want to preview the docs to gauge the level of integration complexity.
+Although it might seem like PDF is an outdated mode for delivering docs, PDF is still needed in many documentation scenarios, especially for providing docs to early access partners. Many times when you're writing docs, you need to send the topic to an early access partner, excluding the topic from the rest of your docs until the feature is ready. Other times, PDFs are needed to send to partners who haven't signed contracts yet (and hence can't get access to your developer portal) but who want to preview the docs to gauge the level of integration complexity.
 
-Integrating PDF output in other docs-as-code tools typically involves using external tools such as Prince or other open-source PDF generators (which require their own styling and configuration). This can be a huge headache and hassle to deal with. With Oxygen XML, the PDF is included already and attractively styled.
+Integrating PDF output in other docs-as-code tools typically involves using external tools such as Prince or open-source PDF generators (which require their own styling and configuration). This can be a huge headache and hassle to deal with. With Oxygen XML, the PDF is included already and attractively styled.
 
 If you want to customize the PDF, you can do so using CSS, which is more accessible and familiar, rather than XSLT. The [Oxygen Styles Basket](https://www.oxygenxml.com/doc/versions/23.1/ug-editor/topics/dcpp_oxygen_styles_basket.html) allows you to build your own CSS skin used for both PDF and webhelp output.
 
 ### Translation support
 
-Finally, one often overlooked but significant feature is translation. If you anticipate the need to translate your content, consider who you'll handle this workflow long before you decide on your authoring tool. A cumbersome translation workflow can be a huge time sink, especially if you have goals to keep your translated content in sync with your primary language. Translation is usually where static site generators hit their first major stumbling block.
+Finally, one often overlooked but significant feature is translation. If you anticipate the need to translate your content, consider how you will handle this workflow long before you decide on your authoring tool. A cumbersome translation workflow can be a huge time drain, especially if you have goals to keep your translated content in sync with your primary language. Translation is usually where static site generators hit their first major stumbling block.
 
 Translation processes and requirements vary depending on the content and vendor, but the general process for translating content involves bundling up the files you want translated (either XML, HTML, or Markdown format), sending them off to the vendor, and then getting these same files back, but with translated content. You then need to reimport the translated content back into your project. With Oxygen XML, you can [manage translation tasks](https://www.oxygenxml.com/doc/versions/23.1/ug-editor/topics/dita-translating.html?hl=translation%2Cworkflow) using the [DITA Translation Package Builder Add-on](https://www.oxygenxml.com/doc/versions/23.1/ug-editor/topics/translation-package-builder-addon.html).
 
@@ -172,13 +172,13 @@ Using custom functions in your docs might seem attractive at first, as this give
 
 In contrast, Oxygen XML is more standards-based. (This is part of the whole selling point of XML, in fact.) You write in Markdown, DITA, HTML, or some other standard. And then Oxygen XML validates your content before publishing.
 
-With Oxygen XML, you can also do some [validation on the Markdown formatting](https://www.oxygenxml.com/doc/versions/23.1/ug-editor/topics/markdown-validation.html?hl=validate%2Cmarkdown%2Ccustom) through [Schematron](https://www.oxygenxml.com/doc/versions/23.1/ug-editor/topics/editing-schematron.html). Schematron allows you to check your docs against a list of formatting patterns and rules. Oxygen XML includes some basic Schematron rules out of the box (see `/samples/markdown/schematron-validation/` in the sample project), and you can add more as well.
+With Oxygen XML, you can do some additional [validation on the Markdown formatting](https://www.oxygenxml.com/doc/versions/23.1/ug-editor/topics/markdown-validation.html?hl=validate%2Cmarkdown%2Ccustom) through [Schematron](https://www.oxygenxml.com/doc/versions/23.1/ug-editor/topics/editing-schematron.html). Schematron allows you to check your docs against a list of formatting patterns and rules. Oxygen XML includes some basic Schematron rules out of the box (see `/samples/markdown/schematron-validation/` in the sample project), and you can add more as well.
 
 But the larger point here is that your Oxygen XML projects will stick more closely to the standards of the language you're writing in. This can keep your content more consistent and structured, and if you ever decide to use another tool or theme, your standards-based content can easily migrate.
 
 ## First steps with Oxygen XML
 
-To get started with [Oxygen XML](https://www.oxygenxml.com/){: rel="nofollow"}, download a 30-day trial. When you open Oxygen XML for the first time, a sample project will load. Explore the files in the Markdown folders. Click the `.ditamap` file and then click the Apply Transformation Scenarios button <img src="{{site.media}}/oxygenxml-transform-button.png" alt="Apply Transformation Scenario(s) button" /> and build the output. Explore editing topics within the text editor and previewing the Markdown. If you need help, there are [Oxygen XML forums](https://www.oxygenxml.com/forum/) that are actively monitored.
+To get started with [Oxygen XML](https://www.oxygenxml.com/){: rel="nofollow"}, download a 30-day trial. When you open Oxygen XML for the first time, a sample project will load. Explore the files in the Markdown folders. Click the `.ditamap` file and then click the Apply Transformation Scenarios button <img src="{{site.media}}/oxygenxml-transform-button.png" alt="Apply Transformation Scenario(s) button" style="max-width:20px" /> and build the output. Explore editing topics within the text editor and previewing the Markdown. If you need help, there are [Oxygen XML forums](https://www.oxygenxml.com/forum/) that are actively monitored.
 
 ## Conclusion
 
