@@ -450,6 +450,9 @@ folders:
   - title: "Activity: Get wind speed using the Aeris Weather API"
     jurl: /docapis_aerisweather_example.html
 
+  - title: "Redoc demo/tutorial"
+    jurl: /pubapis_redoc.html
+
   - title: "RAML tutorial"
     jurl: /pubapis_raml.html
 

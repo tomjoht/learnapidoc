@@ -4,8 +4,8 @@ permalink: pubapis_redocly.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 4.9
-section: openapi_output_demos
-path1: /openapi_output_demos.html
+section: restapispecifications
+path1: /restapispecifications.html
 last-modified: 2020-09-06
 ---
 
