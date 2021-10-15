@@ -71,7 +71,7 @@ In the code view, syntax highlighting colors different parts of the Markdown tex
 
 In the Project pane on the left, you can also switch to the DITA Map Manager to visually arrange your DITA map, which determines your sidebar navigation. The following screenshot shows how you can either work directly with the DITA map using XML tags or by dragging and dropping the topics in the hierarchical arrangement using the DITA Maps Manager. The Manager gives you a more visual tool to see how topics are nested.
 
-<figure><img src="{{site.media}}/oxygenxml_dita_maps_manager.png " alt="DITA Maps Manager in OxygenXML" /><figcaption><b>Figure 2.</b>The DITA Maps Manager on the left lets you more easily arrange your topics into the sidebar hierarchy you want. </figcaption></figure>
+<figure><img src="{{site.media}}/oxygenxml_dita_maps_manager.png " alt="DITA Maps Manager in OxygenXML" /><figcaption><b>Figure 2.</b> The DITA Maps Manager on the left lets you more easily arrange your topics into the sidebar hierarchy you want. </figcaption></figure>
 
 The ability to visually arrange the topics in the DITA Maps Manager is a huge convenience because you can see at a glance how the sidebar navigation will appear, without building your output. Some other docs-as-code tools rely on YAML frontmatter tags or a YAML file itself to manage sidebar navigation, which can be prone to error and extremely fussy with syntax, especially when you have hundreds of topics in your project. (For example, one extra space in a YAML file can cause the required indentation to be malformed.)
 
@@ -85,7 +85,7 @@ Because the Oxygen XML files are all text files, you can manage the content in G
 
 When you add the Git Client Add-on, a new Git Staging panel appears in the left pane:
 
-<figure><img src="{{site.media}}/oxygenxml-git-client-integration2.png" alt="Git client integration" /><figcaption><b>Figure 3.</b>A Git client add-on directly integrates into Oxygen XML so you can more easily manage your files with Git. </figcaption></figure>
+<figure><img src="{{site.media}}/oxygenxml-git-client-integration2.png" alt="Git client integration" /><figcaption><b>Figure 3.</b> A Git client add-on directly integrates into Oxygen XML so you can more easily manage your files with Git. </figcaption></figure>
 
 The "Unstaged files" section shows changes you've made to files that haven't been added to the staging area in Git. After selecting the files to stage, click the Stage selected arrow <img style="max-width:20px" src="{{site.media}}/oxygenxml-stage-arrow.png" alt="Staging arrow" /> to move it into your staging directory. (Moving these files into the staging area is the equivalent of running `git add <filename>` in the terminal.) The file then appears under Staged files and will be pushed to your Git repository on the next commit.
 
@@ -95,7 +95,7 @@ To commit the files, type a commit message and click Commit. (This is the equiva
 
 Oxygen XML also has additional views for seeing Git history, managing Git branches, and more. For example, to look at the history of commits, go to Window > Show View > Git History. A list of commits then appears in a commit log in the bottom panel:
 
-<figure><img src="{{site.media}}/oxygenxml-git-history.png" alt="Git history" /><figcaption><b>Figure 4.</b>Git history shown in the bottom panel. Here you can see the commits that have been made to the project.  For example, if something looks unfamiliar in the content, look back through the commits to see who made the change. </figcaption></figure>
+<figure><img src="{{site.media}}/oxygenxml-git-history.png" alt="Git history" /><figcaption><b>Figure 4.</b> Git history shown in the bottom panel. Here you can see the commits that have been made to the project.  For example, if something looks unfamiliar in the content, look back through the commits to see who made the change. </figcaption></figure>
 
 ### Managing Git branches
 
@@ -122,15 +122,15 @@ Beyond the docs-as-code features described above, there are other reasons to exp
 
 One advantage in using Oxygen XML is the many readily available outputs for your content, especially the webhelp output and PDF. If you select a ditamap file in your project and then click the Apply Transformation Scenario(s) button <img src="{{site.media}}/oxygenxml-transform-button.png" alt="Apply Transformation Scenario(s) button" style="max-width:20px" />, you can see the available outputs:
 
-<figure><img src="{{site.media}}/oxygen-xml-outputs.png" alt="Available outputs from Oxygen XML" /><figcaption><b>Figure 5.</b>Outputs available from Oxygen XML include virtually every type of output you can think of, including webhelp, PDF, Kindle, Word, and more. The two most common outputs are webhelp and PDF. </figcaption></figure>
+<figure><img src="{{site.media}}/oxygen-xml-outputs.png" alt="Available outputs from Oxygen XML" /><figcaption><b> Figure 5.</b>Outputs available from Oxygen XML include virtually every type of output you can think of, including webhelp, PDF, Kindle, Word, and more. The two most common outputs are webhelp and PDF. </figcaption></figure>
 
 The default webhelp output for Oxygen looks pretty good, and you can see an example with [Oxygen XML's own documentation.](https://www.oxygenxml.com/doc/versions/23.1/ug-editor/index.html)
 
-<figure><a href="https://www.OxygenXML.com/doc/versions/23.1/ug-editor/index.html" class="noCrossRef"><img src="{{site.media}}/oxygenxml-landing-page.png" alt="Oxygen XML landing page" /></a><figcaption><b>Figure 6.</b>Oxygen's HTML5 responsive webhelp output. This view shows the landing page, which can showcase different sections of your documentation. </figcaption></figure>
+<figure><a href="https://www.OxygenXML.com/doc/versions/23.1/ug-editor/index.html" class="noCrossRef"><img src="{{site.media}}/oxygenxml-landing-page.png" alt="Oxygen XML landing page" /></a><figcaption><b> Figure 6.</b>Oxygen's HTML5 responsive webhelp output. This view shows the landing page, which can showcase different sections of your documentation. </figcaption></figure>
 
 You can click into a topic area to see its own navigation. Breadcrumbs are included, and if you resize the browser smaller, you can see the responsive elements kick in.
 
-<figure><a class="noCrossRef" href="https://www.OxygenXML.com/doc/versions/23.1/ug-editor/topics/introduction.html"><img src="{{site.media}}/oxygen-xml-topic-view.png" alt="Oxygen XML topic view" /></a><figcaption><b>Figure 7.</b>The webhelp output has a robust sidebar with expand/collapse functionality, breadcrumbs, and more.</figcaption></figure>
+<figure><a class="noCrossRef" href="https://www.OxygenXML.com/doc/versions/23.1/ug-editor/topics/introduction.html"><img src="{{site.media}}/oxygen-xml-topic-view.png" alt="Oxygen XML topic view" /></a><figcaption><b>Figure 7.</b> The webhelp output has a robust sidebar with expand/collapse functionality, breadcrumbs, and more.</figcaption></figure>
 
 In contrast, if you go with another static site generator, you'll likely have to do a lot of custom UX theming on your own to make the output more documentation-oriented rather than a general website. This customization will require you to be familiar not only with front-end technologies like JavaScript, CSS, and HTML, but the specific templating language of the static site generator. Usually, for companies that decide to create a custom theme, an engineering team and UX designer create this output. (If tech writers do it, their productivity with writing docs tends to plummet.)
 
@@ -158,7 +158,7 @@ Finally, one often overlooked but significant feature is translation. If you ant
 
 Translation processes and requirements vary depending on the content and vendor, but the general process for translating content involves bundling up the files you want translated (either XML, HTML, or Markdown format), sending them off to the vendor, and then getting these same files back, but with translated content. You then need to reimport the translated content back into your project. With Oxygen XML, you can [manage translation tasks](https://www.oxygenxml.com/doc/versions/23.1/ug-editor/topics/dita-translating.html?hl=translation%2Cworkflow) using the [DITA Translation Package Builder Add-on](https://www.oxygenxml.com/doc/versions/23.1/ug-editor/topics/translation-package-builder-addon.html).
 
-<figure><img src="{{site.media}}/dita-translation-manager.png" alt="Translation Manager contextual menu in Oxygen XML" /><figcaption><b>Figure 9.</b>Translation Manager contextual menu in Oxygen XML</figcaption></figure>
+<figure><img src="{{site.media}}/dita-translation-manager.png" alt="Translation Manager contextual menu in Oxygen XML" /><figcaption><b>Figure 9.</b> Translation Manager contextual menu in Oxygen XML</figcaption></figure>
 
 When you install the add-on in Oxygen XML, you can create "milestones" that are snapshots in time for your project that future changes are compared against. After creating a milestone, you can package up only the files changed after that milestone, or you can package up all files. Most translation vendors have translation memory in their databases that will only detect changes. (However, practices and support for translation memory vary, and you might want to just send the changed files.)
 
