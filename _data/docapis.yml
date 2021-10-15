@@ -141,6 +141,9 @@ folders:
   - title: "Redocly tutorial -- authoring and publishing API docs with Redocly's command-line tools"
     jurl: /pubapis_redocly.html
 
+  - title: "Redoc Community Edition Basic Demo"
+    jurl: /pubapis_redoc.html
+
 - title: "V: Step-by-step OpenAPI code tutorial"
   jurl: /openapi_tutorial.html
   folderitems:
@@ -449,9 +452,6 @@ folders:
 
   - title: "Activity: Get wind speed using the Aeris Weather API"
     jurl: /docapis_aerisweather_example.html
-
-  - title: "Redoc demo/tutorial"
-    jurl: /pubapis_redoc.html
 
   - title: "RAML tutorial"
     jurl: /pubapis_raml.html

@@ -1,5 +1,5 @@
 {: .activity_subtitle}
-## <i class="fa fa-user-circle"></i> Activity: Use Redoc to render OpenAPI spec
+## <i class="fa fa-user-circle"></i> Activity: Use Redoc Community Edition to render OpenAPI spec
 {% if page.permalink == "/workshop.html" %}{:.no_toc}{% endif %}
 
 In this activity, you'll render your OpenAPI spec with [Redoc](https://github.com/Redocly/redoc).
@@ -27,7 +27,7 @@ In this activity, you'll render your OpenAPI spec with [Redoc](https://github.co
         </style>
       </head>
       <body>
-        <redoc spec-url='https://stoplight.io/api/nodes.raw?srn=gh/tomjoht/stoplight_studio_weathermap/reference/openweathermap.v1.yaml'></redoc>
+        <redoc spec-url='https://idratherbewriting.com/learnapidoc/docs/openapi_spec_and_generated_ref_docs/openapi_openweathermap.yml'></redoc>
         <script src="https://cdn.jsdelivr.net/npm/redoc@next/bundles/redoc.standalone.js"> </script>
       </body>
     </html>
@@ -38,7 +38,7 @@ In this activity, you'll render your OpenAPI spec with [Redoc](https://github.co
 
 2.  Change the value for `redoc spec-url` to a valid OpenAPI spec that is available at an online URL.
 
-    If you were following the previous tutorial on creating an OpenAPI spec through Stoplight Studio ([Getting started tutorial: Using Stoplight Studio to create an OpenAPI specification document](pubapis_openapis_quickstart_stoplight.html)), you can use the OpenAPI URL that Stoplight provides. From your Stoplight Studio display, go to the Overview topic and click **Export OpenAPI**. Choose either original or dereferenced. Copy the URL. Here's an [example URL](https://stoplight.io/p/docs/gh/tomjoht/stoplight_studio_weathermap/reference/openweathermap.v1.yaml?group=master).
+    If you were following the previous tutorial on creating an OpenAPI spec through Stoplight Studio ([Getting started tutorial: Using Stoplight Studio to create an OpenAPI specification document](pubapis_openapis_quickstart_stoplight.html)), you can use the OpenAPI URL that Stoplight provides. From your Stoplight Studio display, go to the Overview topic and click **Export OpenAPI**. Choose either original or dereferenced. Copy the URL. Here's an [example URL](https://idratherbewriting.com/learnapidoc/docs/openapi_spec_and_generated_ref_docs/openapi_openweathermap.yml).
 
     {% include course_image.html size="medium" filename="export_openapi_stoplight" ext_print="png" ext_web="png" alt="Exporting an OpenAPI URL" caption="Exporting an OpenAPI URL" %}
 
