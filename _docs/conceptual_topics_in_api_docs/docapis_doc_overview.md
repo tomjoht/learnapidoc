@@ -246,9 +246,9 @@ Have you ever found yourself reading documentation for a product and wondered, w
 
 In general, a product overview should allow users to get a good sense of what the product does, who it's for, why they might use it, the pain point the product solves, requirements and availability, how to get started, how to get help when needed, and other foundational concepts. Ideally, the product overview should give you a solid understanding of the product and what it's used for.
 
-Yet in so many cases, when I start reading through documentation for a product, I'm often left confused and without a clear sense of what it's for or how I might actually use it, let alone how to get started. Other writers I surveyed about anemic product overviews that seem to fail in their task of orienting the user. Why are some product overviews so unfulfilling, so brief, disappointing, and weak? In this section, I'll explore several reasons for anemic product overviews.
+Yet in so many cases, when I start reading through documentation for a product, I'm often left confused and without a clear sense of what it's for or how I might actually use it, let alone how to get started. Why are some product overviews so unfulfilling, so brief, disappointing, and weak? In this section, I'll explore several reasons for anemic product overviews.
 
-### Cause 1: The reader isn't the intended audience, so the overview fails for the reader
+### Cause 1: The reader isn't the intended audience, so the overview fails for the reader {#cause1}
 
 Perhaps the main reason that product overviews fail is because the reader (for example, a tech writer reading a product overview about some API for developers) isn't the intended audience for the product. As such, the overview might fail for that particular reader but actually be fine for the intended audience. This mismatch of actual reader versus intended reader makes it difficult to make judgments about product overviews.
 
@@ -273,7 +273,7 @@ But without closer interaction with users, we can only guess what users might kn
 {: .takeaway}
 As we read through product overviews, we have to remember that we're usually not the intended audience. It might fail to orient us, but does it fail for the intended audience? At the very least, try to be clear about the intended audience in the overview, as this will set expectations for knowledge levels. You can also add a "Background Knowledge and Assumptions" section. This section could link out to some preparatory documentation (perhaps on other websites) that users should consult if they get lost.
 
-### Cause 2: UX's influence on intuitiveness implies that long overviews indicate bad design
+### Cause 2: UX's influence on intuitiveness implies that long overviews indicate bad design {#cause2}
 
 Another reason why product overviews are anemic is due to UX's influence with intuitiveness. (This cause is related to the previous point but a separate facet.) The idea is that products should be intuitive and naturally address mental models that customers have, without the need for extensive explanations. Why would you need to explain a product in depth to the users who you built it for? If something needs a deep explanation, it probably isn't well-designed and intuitive for that audience.
 
@@ -296,7 +296,7 @@ For more on mental models, see the [Schemas and learning](https://idratherbewrit
 {: .takeaway}
 Define the stories that your audience uses to think about the scenario your product addresses. What mental model or schema organizes their thinking about the problem? If your product overview already naturally fits into this mental model, then you might not need to make the details more explicit in an overview &mdash; it might already make sense for the user.
 
-### Cause 3: Overview pages are hard to write, so they're often neglected
+### Cause 3: Overview pages are hard to write, so they're often neglected {#cause3}
 
 Another reason product overviews often fail for users is because, put simply, product overviews are hard to write, and so they are often poorly executed. The product overview requires you to be thoroughly familiar with the product, comfortable enough to summarize the product at a high level, describe the overall architecture, use cases, how to get started, requirements and limitations, and more.
 
@@ -311,7 +311,7 @@ If you're working more as an editor and publisher rather than an author, the ove
 {: .takeaway}
 Recognize that you typically acquire the full knowledge to write the overview only after you've written all the other documentation. To avoid last-minute efforts, keep running notes on an overview draft that you add to as you work through the other documentation. Place section holders on the page, and then fill them in as you go.
 
-### Cause 4: Agile's co-development influence makes it difficult to surface higher-level content needs
+### Cause 4: Agile's co-development influence makes it difficult to surface higher-level content needs {#cause4}
 
 Another cause for poor product overviews is agile's co-development influence with products. Agile software development prescribes close interactions with users as software teams develop and build out the product. When users are so intimately involved in product development, essentially co-collaborators with each iteration, they don't need the higher level overview, story, and purpose of the product. They need only the technical details for implementing it.
 
@@ -319,14 +319,14 @@ In [Agile Principle 1: Active User Involvement Is Imperative](https://www.101way
 
 But just as product team members become somewhat numb to product jargon and the reasons behind decisions, the docs follow somewhat the same suit. There's no need to explain why the product is needed because, with active user involvement, these needs are communicated from the user from day one and throughout in regular meetings and other interactions. As such, there isn't a strong need for this higher-level overview and understanding. The conceptual basis for the feature is already understood by users because the product team iterated with users to develop the feature.
 
-Once the feature is complete, some brief technical docs get added that explain how to use the feature. But the feature itself, the reason it was created, the problem it solves, the high-level overview and description of the feature, etc., is not documented because the initial user didn't need that high-level. Soon, the documentation follows a similar trend elsewhere, and soon you end up with lots of little building blocks and technical how-to's but no higher-level descriptions and glue between all of these tasks. New users who didn't participate in the feature's development have to try to derive back what the feature is and why/what/who the product is for.
+Once the feature is complete, some brief technical docs get added that explain how to use the feature. But the feature itself, the reason it was created, the problem it solves, the high-level overview and description of the feature, etc., is not documented because the initial user didn't need that high-level. The documentation likely follows a similar trend elsewhere, and soon you end up with lots of little building blocks and technical how-to's but no higher-level descriptions and glue between all of these tasks. New users who didn't participate in the feature's development have to try to derive back what the feature is and why/what/who the product is for.
 
 Product overview anemia is a byproduct of the agile development process itself. This is where a technical writer's perspective as an outsider becomes so important. If you're an outsider to both the product and domain, you won't have this co-development history and won't have seen the product evolve from a sketch on a napkin to a fully released product. You'll see the lack of connecting glue between topics, the absence of a larger story that connects with your needs, and more. The problem is, without an audience asking for this higher-level information, you might be facing an uphill battle to generate the content. You might be writing an overview for an imagined future audience that hasn't yet materialized.
 
 {: .takeaway}
 If the users were co-developers of the product and features (or frequent sounding boards during the design phase), don't use that group as a barometer for assessing content needs. Find someone who is new to the product.
 
-### Cause 5: Higher-level content is already handled by developer marketing content, making it redundant in docs
+### Cause 5: Higher-level content is already handled by developer marketing content, making it redundant in docs {#cause5}
 
 Another reason for anemic product overviews is because many of these higher-level questions are usually handled in the developer marketing layer, and tech writers don't usually operate in that pre-sales space. In many doc portals, there's a marketing layer that sits on top of the documentation. This marketing layer is supposed to articulate the larger story of the product &mdash; the problem the product solves, the target audience, use cases, case studies, and more &mdash; to a pre-sales audience.
 
@@ -349,7 +349,7 @@ Even if a technical writer's job is to focus on the how and what, more than the 
 {: .takeaway}
 Look to see if marketing content covers the higher-level content needs in the documentation overview. If so, you could simply link to the marketing content, or alternatively, put a more technical, matter-of-fact spin on the same content. Either way, think about the developer's journey and story they tell themselves, and consider using this journey/story to shape your documentation.
 
-### Cause 6: Tech comm buys in to the "reading to do" paradigm for docs, minimizing the need for longer conceptual docs
+### Cause 6: Tech comm buys in to the "reading to do" paradigm for docs, minimizing the need for longer conceptual docs { #cause6}
 
 Another reason for lack of product overviews, even when outsiders like tech writers create the product docs, is due to tech comm's strategy preference for task-oriented docs. There's a strong belief among most tech writers that users turn to docs only when they have a task-related problem they're trying to solve.
 
