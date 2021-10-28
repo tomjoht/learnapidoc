@@ -8,32 +8,50 @@ layout: slides
       <div class="slides">
 
 <div class="slides">
-<section>
-<h2>Product overviews and getting started tutorials</h2>
-<h3>Best practices in API docs</h3>
-<p>
-<small>By Tom Johnson / <a target="_blank" href="https://twitter.com/tomjohnson">@tomjohnson</a><br>
-<a target="_blank" href="https://idratherbewriting.com">idratherbewriting.com</a></small><br><br>
-</p>
-<p><small>Slides available at <br><a target="_blank" href="https://idratherbewriting.com/learnapidoc/slides/overviews_and_tutorialsv2.html">idratherbewriting.com/learnapidoc/slides/overviews_and_tutorials.html</a></small></p>
+<section data-background-image="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/overviews_and_tutorials_title_slide2.png" data-background-size="90%"/>
 </section>
+
+<section>
+  <h2>Presentation outline</h2>
+
+  <table class="outline">
+  <tr>
+    <th>1. Product overviews</th>
+    <th>2. Get started tutorials</th>
+  </tr>
+  <tr>
+    <td>a. Best practices</td>
+    <td>a. Best practices</td>
+    </tr>
+    <tr>
+    <td>b. Examples</td>
+    <td>b. Examples</td>
+    </tr>
+    <tr>
+    <td>c. Reasons for failure</td>
+    <td>c. Reasons for failure</td>
+  </tr>
+
+</table>
+
+  </section>
 
 <section>
   <h2>Best practices for overviews</h2>
   <div class="myContainer">
-  <ul class="list1">
-    <li>Description of the product</li>
-    <li>Sample use cases</li>
-    <li>Intended audience and technical level</li>
-    <li>Requirements for use</li>
-    <li>List of components involved</li>
+  <ul class="list1 checkboxes">
+    <li><input type="checkbox" class="custom">Description of the product</li>
+    <li><input type="checkbox" class="custom">Sample use cases</li>
+    <li><input type="checkbox" class="custom">Intended audience and technical level</li>
+    <li><input type="checkbox" class="custom">Requirements for use</li>
+    <li><input type="checkbox" class="custom">List of components involved</li>
 </ul>
-  <ul class="list2">
-    <li>High-level workflow</li>
-    <li>Development effort and scope</li>
-    <li>How to get support</li>
-    <li>Known limitations, release notes</li>
-    <li>Link to getting started tutorial</li>
+  <ul class="list2 checkboxes">
+    <li><input type="checkbox" class="custom">High-level workflow</li>
+    <li><input type="checkbox" class="custom">Development effort and scope</li>
+    <li><input type="checkbox" class="custom">How to get support</li>
+    <li><input type="checkbox" class="custom">Known limitations</li>
+    <li><input type="checkbox" class="custom">Link to getting started tutorial</li>
 </ul>
 </div>
 </section>
@@ -44,9 +62,12 @@ layout: slides
     <li><a href="https://cloud.ibm.com/docs/assistant?topic=assistant-index#index">IBM Watson Assistant</a></li>
     <li><a href="https://docs.aws.amazon.com/lambda/latest/dg/welcome.html">AWS Lambda</a></li>
     <li><a href="https://developers.ringcentral.com/">RingCentral</a></li>
+    <li><a href="https://ably.com/documentation">Ably</a></li>
+    <li><a href="https://developer.amazon.com/docs/video-skills-fire-tv-apps/introduction.html">Video skills kit</a></li>
   </ol>
-  </section>
+  <p><small>Which site does the best job with product overviews? Why?</small></p>
 
+  </section>
 
 <section>
   <h2>Reasons for poor product overviews</h2>
@@ -86,19 +107,19 @@ layout: slides
 <section>
   <h2>Best practices for getting started</h2>
   <div class="myContainer">
-    <ul class="list1">
-      <li>Link from the homepage</li>
-      <li>Include sufficient product detail</li>
-      <li>Let users taste success</li>
-      <li>Remove setup burnds</li>
-      <li>Take a user from A to Z</li>
+    <ul class="list1 checkboxes">
+      <li><input type="checkbox" class="custom">Link from the homepage</li>
+      <li><input type="checkbox" class="custom">Include sufficient product detail</li>
+      <li><input type="checkbox" class="custom">Let users taste success</li>
+      <li><input type="checkbox" class="custom">Remove setup burdens</li>
+      <li><input type="checkbox" class="custom">Take a user from A to Z</li>
   </ul>
-    <ul class="list2">
-      <li>Link copiously to other topics</li>
-      <li>Welcome teaching moments</li>
-      <li>Make sure the tutorial works</li>
-      <li>Include troubleshooting tips</li>
-      <li>Also use for internal testing</li>
+    <ul class="list2 checkboxes">
+      <li><input type="checkbox" class="custom">Link copiously to other topics</li>
+      <li><input type="checkbox" class="custom">Welcome teaching moments</li>
+      <li><input type="checkbox" class="custom">Make sure the tutorial works</li>
+      <li><input type="checkbox" class="custom">Include troubleshooting tips</li>
+      <li><input type="checkbox" class="custom">Also use for internal testing</li>
   </ul>
 </div>
 </section>
@@ -109,9 +130,11 @@ layout: slides
     <li><a href="https://docs.sendgrid.com/for-developers/sending-email/api-getting-started">SendGrid</a></li>
     <li><a href="https://developer.paypal.com/docs/api/overview/">PayPal</a></li>
     <li><a href="https://documentation.platformos.com/get-started">PlatformOS</a></li>
+    <li><a href="https://developer.db.com/apidocumentation/apigettingstartedguide/introduction">Deutsche Bank</a></li>
+    <li><a href="https://developer.fedex.com/api/en-us/get-started.html">Fedex</a></li>
   </ol>
+  <p><small>Which site does the best job with getting started? Why?</small></p>
   </section>
-
 
 <section>
   <h2>Reasons for poor GS tutorials</h2>
@@ -220,6 +243,25 @@ layout: slides
            div.myContainer li {
              font-size: 28px;
            }
+
+           div.myContainer ul.checkboxes {
+             list-style-type:none;
+           }
+           input.custom {
+             margin-right: 10px;
+            /* width: 15px;
+             height: 15px;
+             */
+            }
+            .reveal table.outline td {
+              font-size: 28px;
+              }
+            .reveal table.outline th {
+              font-size: 40px;
+              }
+            .reveal table.outline td, .reveal table.outline th {
+              border-bottom: none;
+            }
         </style>
      </div>
   </section>
