@@ -179,3 +179,5 @@ If you've looking for additional resources to learn API documentation as well as
 * [The Good Docs Project: Best practice templates and writing instructions for documenting open source software](https://thegooddocsproject.dev/)
 
 * [Google's technical writing courses for engineers](https://developers.google.com/tech-writing)
+
+For even more books, see [Relevant Books](https://www.writethedocs.org/books/) from the Write the Docs site.
