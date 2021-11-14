@@ -7,8 +7,7 @@
 In this exercise, you'll use Postman to make a request using OpenWeatherMap's [current weather data API endpoint](https://openweathermap.org/current). To make the request:
 
 1.  If you haven't already done so, download and install the Postman app at [https://www.getpostman.com/downloads/](https://www.getpostman.com/downloads/). (Make sure you download the app and not the deprecated Chrome extension.)
-2.  Start the Postman app and sign in when prompted.
-3.  If this is your first time launching Postman, a welcome screen appears. Click **Create a request**.
+2.  Start the Postman app and sign in when prompted. Close any welcome screens so you can make a request.
 3.  Insert the following endpoint into the box next to **GET**: `https://api.openweathermap.org/data/2.5/weather`
 4.  Click the **Params** tab (below the box where you inserted the endpoint) and then add the following three parameters in the **key** and **value** rows:
 
@@ -18,7 +17,7 @@ In this exercise, you'll use Postman to make a request using OpenWeatherMap's [c
 
     For the value for `appid`, use your own API key. (If you didn't [get an API key]({{site.rooturl}}docapis_get_auth_keys.html), use [one of the keys here](http://idratherbewriting.site/apikeys).) Your Postman UI should look like this:
 
-    <img src="{{site.media}}/postmanopenweatherapi.png" class="medium"/>
+    <img src="{{site.media}}/postmanopenweatherapi3.png" class="medium"/>
 
 	  When you add these parameters, they appear as a query string to the endpoint URL in the GET box. For example, your endpoint will now look like this: `https://api.openweathermap.org/data/2.5/weather?zip=95050&units=imperial&appid=APIKEY` (but with different query string values and with your own API key instead of `APIKEY`). Query string parameters appear after the question mark `?` symbol and are separated by ampersands `&`. The order of query string parameters doesn't matter.
 
@@ -28,22 +27,22 @@ In this exercise, you'll use Postman to make a request using OpenWeatherMap's [c
 
 	  The response appears in the lower pane. For example:
 
-    <img src="{{site.media}}/postmanopenweatherapiresponse.png" class="medium"/>
+    <img src="{{site.media}}/postmanopenweatherapiresponse3.png" class="medium"/>
 
 ### Save the request
 
-1.  In Postman, click the **Save** button (next to Send). The Save Request dialog box appears.
+1.  In Postman, click the **Save** button (above Send). The Save Request dialog box appears.
 1.  In the **Request name** box, type a friendly name for the request, such as "OpenWeatherMap Current API."
 1.  In the **Request description (Optional)** field, type a description such as "gets the current weather for 95050 in imperial units."
-3.  Scroll down a bit and click **+ Create Collection** to create a folder to save the request in. Name your new collection (e.g., "OpenWeatherMap") and click the orange check mark. Then select the new collection you just created.
+3.  Scroll down a bit and click **New Collection** to create a folder to save the request in. Name your new collection (e.g., "OpenWeatherMap") and click the orange check mark. Then select the new collection you just created.
 
     After you create the collection, the Save button will be enabled. Your Postman collection should look something like this:
 
-    {% include course_image.html size="small" filename="postmancollectiondialog" ext_print="png" ext_web="png" alt="Collection dialog box" caption="Collection dialog box" %}
+    {% include course_image.html size="small" filename="postmancollectiondialog2" ext_print="png" ext_web="png" alt="Collection dialog box" caption="Collection dialog box" %}
 
-4.  Click **Save to [collection name]**
+4.  Click **Save**.
 
-    Saved requests appear in the left side pane under Collections. (If you don't see the Collections pane, click the **Show/Hide Sidebar** button <img src="{{site.media}}/show_hide_sidebar.png" style="width: 20px"/> in the lower-left corner to expand it.
+    Saved requests appear in the left side pane on the Collections tab. (If you don't see the Collections pane, click the **Show Sidebar** button <img src="{{site.media}}/show_hide_sidebar.png" style="width: 20px"/> in the lower-left corner to expand it.
 
 ### (Optional) Make a request for the OpenWeatherMap 5 day forecast
 
