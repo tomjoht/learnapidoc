@@ -9,7 +9,7 @@ path1: /writing_process.html
 last-modified: 2021-11-14
 ---
 
-First things first &mdash; let's figure out what the writing project involves by doing some basic planning.
+First things first &mdash; you need to figure out what the writing project involves by doing some basic planning. In this step, you'll create a doc plan, establish roles, gather source material, and view a demo.
 
 {% if site.format == "web" %}
 * TOC
@@ -32,9 +32,9 @@ There are a host of other details you could gather, but these are the basics. Al
 
 ## 1.2 Establish who's going to write the docs {#who_will_write}
 
-The next step to ask is who will do the writing. Although you might think that being a technical _writer_ means you should do the writing, this might not be the best approach. This Java API is going to be complicated. Are you really going to articulate how to use the API in a series of detailed steps, with code examples and other observations, especially if you don't really know Java beyond the one-week course you took two years ago?
+The next step to ask is who will do the writing. Although you might think that being a technical _writer_ means you should do the writing, this might not be the best approach. This Java API (part of our [fictitious writing scenario](docapis_writing_process_overview.html)) is going to be complicated. Are you really going to articulate how to use the API in a series of detailed steps, with code examples and other observations, if you don't really know Java beyond the one-week course you took two years ago?
 
-You will find that with extremely technical topics, you might not be able to write about them very easily. Technology can be complicated, and if you think you can pull your writing prowess out of your pocket and just hack it out, let me warn you, get ready for engineers to pick the hell out of each phrase and term used in your content as they explain that what you've written is wrong. Engineers aren't shy at all about telling tech writers each nitty-gritty detail of incorrectness.
+You will find that with extremely technical topics, you might not be able to write about them very easily. Technology can be a tough nut to crack, and if you think you can pull your writing prowess out of your pocket and just hack it out, let me warn you, get ready for engineers to pick the heck out of each phrase and term used in your content as they explain that what you've written is wrong. Engineers aren't shy at all about telling tech writers each nitty-gritty detail of incorrectness.
 
 {% include random_ad2.html %}
 
@@ -42,9 +42,9 @@ Depending on your workload and expectations, think about starting with this appr
 
 Some writers are spread so thin, they act more like editors, curators, and writing coaches more than actual writers developing content from scratch. It just depends on how your organization has resourced tech writers and what their expectations are. In some ways, it's kind of insane that the very people who possess all the knowledge about the product aren't the same ones writing the documentation (at least the first draft). So try your hand to push engineers toward this route first.
 
-If you do get engineers to write, you might find that they write crap (like a one-hour stream-of-consciousness style that has clearly never been edited or reviewed after typing it out). Then you have to spend more time fixing it and trying to understand whether it's even coherent for the audience, filling in the gaps, and so on. It might be uncomfortable to rework their writing, especially if you're making changes to terms and processes you're familiar with.
+If you do get engineers to write, you might find that they write crap (like a one-hour stream-of-consciousness style that has clearly never been edited or reviewed after they typed it out). Then you have to spend more time fixing the content and trying to understand whether it's even coherent for the audience, filling in the gaps, and so on. It might be uncomfortable to rework their writing, especially if you're making changes to terms and processes you're familiar with.
 
-At any rate, just because engineers have “written” content, it doesn't mean you somehow escaped having to put in a lot of work &mdash; it just gives you a different starting point. Rewriting content can take just as long as writing it from scratch. So maybe you won't want to go this route anyway. Either way, whether you have the first "draft" to begin with or need to author it yourself, you still have a lot of work to do.
+At any rate, just because engineers have "written" content, it doesn't mean you somehow escaped having to put in a lot of work &mdash; it just gives you a different starting point. Rewriting content can take just as long as writing from scratch. So maybe you won't want to go the path of having engineers write anyway. Either way, whether you have the first "draft" to begin with or need to author it yourself, you still have a lot of work to do.
 
 {% comment %}{% include random_ad3.html %}{% endcomment %}
 
@@ -54,11 +54,11 @@ I'm going to assume that, in this scenario, engineers aren't inclined to write t
 
 For any writing tasks, gathering source material is key, but for tech docs, there are a few key documents you should track down. These documents often exist, but unless you ask for them by name, product teams might never mention them or send them to you.
 
-If you're unfamiliar with how software organizations work, here are some common patterns. Before engineers started working on the feature, someone had to pitch the feature to a program management office (and executive) to green-light the effort. This means they had to write a description of the feature at a high level. There might be a two-pager somewhere that acts as the product pitch, describing the problem and the need for this API.
+Here are some basics about how software development groups work. Before engineers started working on the feature, someone had to pitch the feature to a program management office (and executive) to green-light the effort. This means they had to write a description of the feature at a high level. There might be a short document (nicknamed something like a "two-pager") somewhere that acts as the product pitch, describing the problem and the need for this API.
 
-There could also be a pitch deck used to persuade an executive to fund the project. Locate this **two-pager or pitch deck**. If you can identify the nomenclature for this company document, all the better.
+Or there could be a pitch slide deck used to persuade an executive to fund the project. Locate this **two-pager or pitch deck**. If you can identify the nomenclature for this company document, all the better.
 
-Once a product gets greenlit, the feature gets planned for a specific timeframe (for example, 2021 Quarter 4), and the team who will develop the feature gets identified. The product team then sizes up the feature and writes a **product design document** that acts as the blueprint for the API design. The engineers will debate the proposed design long before any actual code development begins.
+Once a product gets green-lit, the feature gets planned for a specific timeframe (for example, 2021 Quarter 4), and the team who will develop the feature gets identified. The product team then sizes up the feature and writes a **product design document** that acts as the blueprint for the API design. The engineers will debate the proposed design long before any actual code development begins.
 
 {% include random_ad1.html %}
 
@@ -68,11 +68,11 @@ Even so, the product design document is usually a goldmine for documentation, an
 
 The engineers usually populate the **reference documentation** themselves, building Javadoc from annotations in the source code. They may want you to review the reference content, but unless you're familiar with the technology, the comments might be mostly cosmetic grammar changes (which is what engineers are probably expecting).
 
-At any rate, the Javadoc output will give you a good sense of what classes and methods are available in the API. It will communicate the scope and the possible use cases. Ask the engineers to generate a Javadoc output for you to review (rather than just reviewing the source files and guessing what comments get included in the output).
+At any rate, the Javadoc output will give you a good sense of what classes and methods are available in the API. It will communicate the scope and the possible use cases. Ask the engineers to generate a Javadoc output for you to review. (Later, when you want to make comments on the Javadoc, you'll need to make them at the source rather than the output.)
 
 {% include random_ad4.html %}
 
-Besides the pitch materials, product design, and Javadoc, there might be other documents as well. Each company tends to call its documents by unique names. Understand what the key documents are for projects in your company, and this will usually unlock people finding and giving them to you. Gather up as many documents as you can find, list them in your doc plan, and then browse through them to (a) learn about the product, and (b) see what material you can use either directly in your docs or to inform topics that should be in your docs.
+Besides the pitch materials, product design, and Javadoc, there might be other documents as well to gather. Each company tends to call its documents by unique names. Understand what the key documents are for projects in your company, and this will usually unlock people finding and giving them to you. Gather up as many documents as you can find, list them in your doc plan, and then browse through them to (a) learn about the product, and (b) see what material you can use either directly or indirectly in your docs or to inform topics that should be in your docs.
 
 ## 1.4 Ask for a demo of the product {#demo}
 
@@ -80,11 +80,11 @@ The next step is to ask the product team for a demo of some kind. Perhaps one of
 
 If you can, try to play around with the demo yourself. Try to get the product to work in some way, even if it's just superficial. For example, you could ask this same engineer who created the sample app to share the sample app with you and how to run it. Get it working and play around with it a little bit so you get a better sense of what you're documenting. (See [Set up a test environment](testingdocs_test_environment.html) for more details.) Almost no engineer develops an API without also developing a sample app that calls the API and gets some data back, though they are often hesitant to share this sample app with others.
 
-Having some initial familiarity with the product will pay dividends later &mdash; if you can't even see the product you're documenting, your documentation you will be less informed, and the writing tasks will be harder.
+Having some initial familiarity with the product will pay dividends later &mdash; if you can't even see the product you're documenting, your documentation you will be less informed, and writing will be harder.
 
 {% include image_ad_right.html %}
 
-Most engineers, by the way, are usually happy to demo the product they've built. This is a point of pride for them, and it's what they do best. Later, you will be asking these same engineers to review the documentation you've written, and then you will see another side to these engineers. They will likely hate reading and reviewing written content. You will have to constantly pull them back on track to avoid sliding into discussions about bugs and future plans rather than continue their document review. But to show off their product and talk through what it's doing, they love it.
+Most engineers, by the way, are usually happy to demo the product they've built. This is a point of pride for them, and it's what they do best. Later, you will be asking these same engineers to review the documentation you've written, and then you will see another side to these engineers. They will likely hate reading and reviewing written content. You will have to constantly pull them back on track to avoid sliding into discussions about bugs and future plans rather than continue their document review. But to show off their product and talk through what it's doing in a demo, they love it.
 
 ## Next steps
 
