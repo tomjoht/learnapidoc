@@ -29,6 +29,18 @@ The following are the most recent updates to the API documentation course.
 </thead>
 <tbody>
 <tr>
+  <td>November 2021</td>
+  <td markdown="span">
+  [Overview of the writing process](docapis_writing_process_overview.html)<br/>
+  [1. Planning](docapis_planning.html)<br/>
+  [2. Information gathering](docapis_information_gathering.html)<br/>
+  [3. Writing](docapis_writing.html)<br/>
+  [4. Reviewing](docapis_reviewing.html)<br/>
+  [5. Publishing](docapis_publishing.html)
+  </td>
+  <td>A new section that covers the process for researching, drafting, writing, editing, and publishing documentation.</td>
+</tr>
+<tr>
   <td>October 2021</td>
   <td markdown="span">[Using Oxygen XML with docs-as-code workflows](pubapis_oxygenxml.html)</td>
   <td markdown="span">Added a new article in the publishing tools section using Oxygen XML.</td>
@@ -42,21 +54,6 @@ The following are the most recent updates to the API documentation course.
   <td>August 2021</td>
   <td markdown="span">[Ensuring documentation coverage with each software release](docapis_release_process.html)</td>
   <td markdown="span">Covers best practices for ensuring that each new feature in a release has adequate documentation coverage.</td>
-</tr>
-<tr>
-  <td>August 2021</td>
-  <td markdown="span">[Reporting status to business stakeholders](docapis_status_reports.html)</td>
-  <td markdown="span">Covers best practices for creating documentation status reports that you send to your business stakeholders.</td>
-</tr>
-<tr>
-  <td>July 2021</td>
-  <td markdown="span">[Reasons why product overviews are often minimal or nonexistent](docapis_doc_overview.html#reasons_for_failure)</td>
-  <td markdown="span">Explains six main reasons why product overviews are often anemic, including influences from agile, UX, marketing, and tech comm.</td>
-</tr>
-<tr>
-  <td>July 2021</td>
-  <td markdown="span">[Reasons why getting started tutorials fail or don't exist](docapis_doc_getting_started_section.html#reasons_for_failure)</td>
-  <td markdown="span">Explains six main reasons why getting started tutorials often fail or don't exist, including impractical product scenarios, difficulty in distilling content, and more.</td>
 </tr>
 </tbody>
 </table>

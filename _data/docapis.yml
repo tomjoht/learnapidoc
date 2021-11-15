@@ -268,7 +268,29 @@ folders:
   - title: "Developer experience (DevX) usability"
     jurl: /devx-usability-examples.html
 
-- title: "IX: Publishing API docs"
+- title: "IX: The writing process"
+  jurl: /writing_process.html
+  folderitems:
+
+  - title: "Overview of the writing process"
+    jurl: /docapis_writing_process_overview.html
+
+  - title: "1. Planning"
+    jurl: /docapis_planning.html
+
+  - title: "2. Information gathering"
+    jurl: /docapis_information_gathering.html
+
+  - title: "3. Writing"
+    jurl: /docapis_writing.html
+
+  - title: "4. Reviewing"
+    jurl: /docapis_reviewing.html
+
+  - title: "5. Publishing"
+    jurl: /docapis_publishing.html
+
+- title: "X: Publishing API docs"
   jurl: /publishingapis.html
   folderitems:
 
@@ -323,7 +345,7 @@ folders:
   - title: "Tools FAQ"
     jurl: /docapis_faq_tools.html
 
-- title: "X: Thriving in the API doc space"
+- title: "XI: Thriving in the API doc space"
   jurl: /jobapis.html
   folderitems:
 
@@ -342,7 +364,7 @@ folders:
   - title: "Activity: Create or fix an API reference documentation topic"
     jurl: /docapis_work_on_conceptual_topic.html
 
-- title: "XI: Native library APIs"
+- title: "XII: Native library APIs"
   jurl: /nativelibraryapis.html
   folderitems:
 
@@ -373,7 +395,7 @@ folders:
   - title: "Create non-ref docs with native library APIs"
     jurl: /nativelibraryapis_nonrefdocs.html
 
-- title: "XII: Processes and methodology"
+- title: "XIII: Processes and methodology"
   jurl: /docapis_managing_doc_processes.html
   folderitems:
 
@@ -416,7 +438,7 @@ folders:
   - title: "Ensuring documentation coverage with each software release"
     jurl: /docapis_release_process.html
 
-- title: "XIII: Metrics and measurement"
+- title: "XIV: Metrics and measurement"
   jurl: /docapis_metrics_and_measurement.html
   folderitems:
   - title: Measuring progress against documentation quality goals
@@ -434,7 +456,7 @@ folders:
   - title: Templates for working with metrics
     jurl: /docapis_metrics_templates.html
 
-- title: "XIV: Additional resources"
+- title: "XV: Additional resources"
   jurl: /resources.html
   folderitems:
 
