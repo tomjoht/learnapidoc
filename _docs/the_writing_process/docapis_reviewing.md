@@ -68,7 +68,8 @@ Reviewers do actually have a finite amount of time they're willing to meet with 
 
 To layer this review process, start the review at the product team and expand out from there. After you get the engineers to review the content, review it with the PM, then the partner engineers, then any other stakeholders (e.g, support groups), then business development, and finally any executives if the content requires it. You might not need to include all these groups, but include at least several as appropriate. The review process should look somewhat like this:
 
-[insert review process image]
+<figure><img src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/review_process.svg" alt="The review process" />
+<figcaption>The review process is iterative. After each review, incorporate the edits before the next review.</figcaption></figure>
 
 ### Bring a list of questions {#bring_questions}
 
