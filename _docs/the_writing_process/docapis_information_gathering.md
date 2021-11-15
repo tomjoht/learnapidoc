@@ -18,10 +18,10 @@ Now that you've created a doc plan, gathered up source material (and read it), a
 
 ## How you see yourself: writer versus journalist {#how_see_yourself}
 
-Here's where a paradigm shift about the tech writing role would serve you well. Rather than thinking of yourself as a technical _writer_, think of yourself as a technical _journalist_. As a journalist, you gather information for your story by interviewing people. There are several different groups of people to gather information from:
+As you gather information, a paradigm shift about the tech writing role would serve you well. Rather than thinking of yourself as a technical _writer_, think of yourself as a technical _journalist_. As a journalist, you gather information for your story by interviewing people. There are several different groups of people to gather information from:
 
 * **Engineering** &mdash; the group that coded the feature
-* **Product management** &mdash; the group that oversees feature planning and strategy
+* **Product management** &mdash; the group that oversees the feature's planning and strategy
 * **Partner engineers** &mdash; the group that helps users implement the feature
 * **Quality assurance** &mdash; the group that tests the feature
 
@@ -35,33 +35,35 @@ The following are several tips for interviews that apply across all groups.
 
 ### Prepare lists of questions {#prepare_questions}
 
-With each interview, it's good to give the person a list of questions ahead of time. This not only keeps you on track but also reassures the person that the meeting will have a focus and purpose. Some people despise meetings that consume time that could have otherwise been spent working. For more on this, see [A tip for doc reviews &mdash; bring a list of questions](/blog/tip-for-doc-reviews-bring-list-of-questions/).
+With each interview, it's good to give the person a list of questions ahead of time. This not only keeps you on track but also reassures the interviewees that the meeting will have a focus and purpose. Some people despise meetings that consume time that could have otherwise been spent working. For more on this, see [A tip for doc reviews &mdash; bring a list of questions](/blog/tip-for-doc-reviews-bring-list-of-questions/).
 
 {% include image_ad_right.html %}
 
 ### Be aware of your role as a product aligner {#product_aligner}
 
-There's another reason for reaching out to these four distinct groups: any group alone might present a skewed perspective, and without more variety, it's easy to mistake their perspective as gospel truth. When you write documentation, you often raise awareness about differing points of view that need to be addressed. You might find disagreements between engineering and product management, or between product management and business development, and so on.
+There's another reason for reaching out to these four distinct groups: any group alone might present a skewed perspective, and without more variety, it's easy to mistake their perspective as the Truth. When you write documentation, you often raise awareness about differing points of view that need to be addressed. You might find disagreements between engineering and product management, or between product management and business development, and so on.
 
 {% comment %}{% include random_ad3.html %}{% endcomment %}}
 
-For example, in our scenario of creating an API for coffee shops, perhaps the product management group envisions partners being able to add their own coffee shops and supplementary data, including ratings and reviews &mdash; essentially enabling partners to both read and write to the API. In contrast, Engineering might have more conservative views about what's possible with the data and might want to promote a more simplified model of updates only going one way &mdash; read-only.  Writing documentation raises awareness of these differences and will force these groups to align as they review the documentation.
+For example, in our scenario of creating an API for coffee shops, perhaps the product management group envisions partners being able to add their own coffee shops and supplementary data, including ratings and reviews &mdash; essentially enabling partners to both read and write to the API. In contrast, Engineering might have more conservative views about what's possible with the data and might want to promote a more simplified model of updates only going one way &mdash; read-only. Writing documentation raises awareness of these differences and will force these groups to align as they review the documentation.
 
-When this happens, welcome it. You will occasionally run into a product manager who freaks out about potential content almost going out to partners before it can be edited/tweaked in a certain way, which actually changes the direction provided by some other group. In these scenarios, your role pivots from tech writer to something entirely different: _product aligner,_ or something. (Pro tip: Rather than inserting yourself into disputes between groups, let PM and Engineering hold their own boxing match and duke it out.) But before we get into those scenarios and strategies, let's walk through the interviews with each of these groups.
+When these differences of opinion surface, welcome the controversy. You will occasionally run into a product manager who freaks out about potential content almost going out to partners before it can be edited/tweaked in a certain way, which actually changes the direction provided by some other group. In these scenarios, your role pivots from tech writer to something entirely different: _product aligner_. 
+
+Rather than inserting yourself into disputes between groups, let PM and Engineering hold their own boxing match and duke it out.
 
 ### Be aware of engineering myopia {#engineering_myopia}
 
-Another unique aspect of the tech writer role is your broad perspective across products. As you interview different groups, you might find that they lack awareness of other products, and some aspects of the product you're documenting might actually duplicate other products or have other overlap, redundancy, or conflict.
+A strategic advantage to the tech writer role is your broad perspective across products. As you interview different groups, you might find that they lack awareness of other products, and some aspects of the product you're documenting might actually duplicate other products or have other overlap, redundancy, or conflict.
+
+Be aware of your cross-product perspective and recognize that it's a unique advantage you bring to the table. When a PM or engineer is totally unaware of how the API they're building differs from one that a neighboring team built, don't be surprised. These groups are often so specialized, they know only their sliver of the technology. Part of the value you bring to the table is your awareness of other products, so don't be afraid to align various groups to coordinate roadmaps and feature sets.
 
 {% include random_ad2.html %}
 
-Be aware of your cross-product perspective and recognize that it's a unique advantage you bring to the table. When a PM or engineer is totally unaware of how the API they're building differs from one that a neighboring team built, don't be surprised. These groups are often so specialized, they know only their sliver of the technology.
-
 ## 2.1 Interview the engineers {#interview_engineers}
 
-Most likely the engineering team has already designated someone to be your contact point &mdash; the main engineer who coded the feature. (If you don't have a contact point, start with the tech lead or team lead for the API, and they might designate someone else down the line.)
+Now let's get into some strategies for interviews, starting with the engineers. Most likely the engineering team has already designated someone to be your contact point &mdash; the main engineer who coded the feature. (If you don't have a contact point, start with the tech lead or team lead for the API, and they might designate someone else down the line.)
 
-Set up time with this engineer and prepare a list of questions (the technique I described earlier). Now, this is extremely important: _Record this interview. _Even if you're meeting in person, create a conference session in the room and record it. The engineer is going to dive into gobbledygook and other technical speak, and you'll want to go back and re-listen to this again, even if it's just to get the terminology and phrasing correct. You won't be able to take enough notes in real-time to keep up (unless your part engineer already), and you might be too busy typing to even pay attention to what the engineer is saying.
+Set up time with this engineer and prepare a list of questions (the technique I described earlier). Now, this is extremely important: _Record your interview with the engineers. _Even if you're meeting in person, create a conference session in the room on your computer and record the meeting. The engineer is going to dive into gobbledygook and other technical speak, and you'll want to go back and re-listen to this again, even if it's just to get the terminology and phrasing correct. You won't be able to take enough notes in real-time to keep up (unless your part engineer already), and you might be too busy typing to even pay attention to what the engineer is saying.
 
 {% include random_ad1.html %}
 
@@ -74,9 +76,9 @@ Some questions to ask the engineer might be as follows:
 * How do you use this API for some common use cases?
 * Are there limitations that partners will want to know about?
 
-**Pitwall warning:** The engineer might give you a Javadoc and say that all the details are contained within the Javadoc and it's self-explanatory to a Java engineer &mdash; as such, there's not much more to say. The engineer will suggest that all a user needs is a Javadoc to understand the API and implementation details. For tech writers without Engineering backgrounds, this attitude can be difficult to counter because the Javadoc is challenging to read without a background in Java. In fact, just navigating the Javadoc output can be confusing, and you might feel yourself up against the technology barrier, unsure if your lack of understanding is going to make it impossible to write intelligently about the feature. What does the user know or not know? What is common knowledge in the programming domain and what isn't? You're at a real disadvantage here, but press the engineer to provide some details. Recognize this attitude ("All the developer needs is this Javadoc!" as a red flag to push back on.
+**Pitwall warning:** The engineer might give you a Javadoc and say that all the details are contained within the Javadoc and it's self-explanatory to any Java engineer &mdash; as such, there's not much more to say. *All a user needs is a Javadoc to understand the API and implementation details*. For tech writers without an engineering background, this attitude can be difficult to counter because the Javadoc is challenging to read without a background in Java. In fact, just navigating the Javadoc output can be confusing, and you might feel yourself up against the technology barrier, unsure if your lack of understanding will make it impossible to write intelligently about the feature. What does the user know or not know? What is common knowledge in the programming domain and what isn't? Are engineers even using industry standard terms here? You're at a real disadvantage in this situation, but press the engineer to provide some details. Recognize this attitude ("All the developer needs is this Javadoc!") as a red flag to push back on.
 
-One strategy to get the engineer to unravel more detail is to have him or her talk through the code in the sample app, which was presumably used in the demo. The demo provides an instance in which the API was implemented toward some end. The engineer might have all kinds of disclaimers and notes about how the demo doesn't represent a true implementation or how it's likely not how users will actually implement the API, but at least it's something to go on.
+One strategy to get the engineer to unravel more detail is to have him or her talk through the code in the sample app, which was presumably used in the demo. The demo provides an instance in which the API was implemented toward some end. The engineer might have all kinds of disclaimers and notes about how the demo doesn't represent a true implementation, or how it's likely not how users will actually implement the API, but at least it's something to go on. You could also loop in the partner engineers to better gauge the knowledge levels and needs that users will have.
 
 As you talk with the engineer, you'll find that a lot of times, the engineer who codes the feature doesn't know how the feature should be messaged or pitched, and doesn't have the larger picture about workflows and product implementation. Just as you might be unfamiliar with how to actually work with the API, the engineers who created it might not know how partners/developers will implement the API in their particular business domain and use cases. Your project engineers know software, but they often don't know the domain or industry where the partners will be implementing the API.
 
