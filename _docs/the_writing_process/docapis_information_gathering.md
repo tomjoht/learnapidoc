@@ -96,7 +96,7 @@ So your interview with this development engineer will only take you so far. To g
 
 The product manager (PM) might not be as technical as the engineers, but he or she will have a better handle on product messaging, use cases, audience analysis, and concepts related to the product. The product manager also likes to have input on the docs because the docs are part of the product experience.
 
-Some topics will absolutely require the PM's input: If you start listing known limitations and issues with the feature, the PM will want to have input. If you drop hints about future, related features on the roadmap, you'll need to clear this with the PM.
+Some topics will absolutely require the PM's input. If you start listing known limitations and issues with the feature, the PM will want to have input. If you drop hints about future, related features on the roadmap, you'll need to clear this with the PM.
 
 Some questions to ask the PM might be as follows:
 
@@ -105,7 +105,7 @@ Some questions to ask the PM might be as follows:
 * What are some important concepts to know when working with this API?
 * When is the release date for the feature?
 
-The PM is sometimes easier to speak with because PMs aren't as steeped in the feature's technology as the engineers, and so you might find this interview more comfortable. However, while the PM is your friend, the PM often has an agenda: to present the product in a positive light, reflecting the successes of the product team. The PM will squirm against listing any warts, limitations, and issues with the product. PMs hate transparency.
+The PM is sometimes easier to speak with because PMs aren't as steeped in the technology as the engineers, and so you might find this interview more comfortable. However, while the PM is your friend, the PM often has an agenda: to present the product in an extremely positive light, reflecting the successes of the product team. The PM will squirm against listing any warts, limitations, and issues with the product. PMs generally shy away from transparency.
 
 Whereas the engineers might note some important issues/limitations, the PM might want you to spin these issues in a positive light. Or the PM might try to persuade you that the omission of limitations is an inverted way of addressing them. For example, the PM might say, _We don't need to say that you can't do [X] with the feature; we just don't mention [X] at all. So by not saying it, we don't have this limitation about our product._
 
