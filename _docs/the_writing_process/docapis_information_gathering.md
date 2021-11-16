@@ -11,6 +11,9 @@ last-modified: 2021-11-14
 
 Now that you've created a doc plan, gathered up source material (and read it), and observed a demo, you're ready to move on to phase two of the writing process: the interviews.
 
+{: .note}
+This content is new, so it might still be a bit rough. I'm especially interested in any feedback you have. You can leave feedback in the comment section below or by [contacting me](/learnapidoc/contact).
+
 {% if site.format == "web" %}
 * TOC
 {:toc}
@@ -47,7 +50,7 @@ There's another reason for reaching out to these four distinct groups: any group
 
 For example, in our scenario of creating an API for coffee shops, perhaps the product management group envisions partners being able to add their own coffee shops and supplementary data, including ratings and reviews &mdash; essentially enabling partners to both read and write to the API. In contrast, Engineering might have more conservative views about what's possible with the data and might want to promote a more simplified model of updates only going one way &mdash; read-only. Writing documentation raises awareness of these differences and will force these groups to align as they review the documentation.
 
-When these differences of opinion surface, welcome the controversy. You will occasionally run into a product manager who freaks out about potential content almost going out to partners before it can be edited/tweaked in a certain way, which actually changes the direction provided by some other group. In these scenarios, your role pivots from tech writer to something entirely different: _product aligner_. 
+When these differences of opinion surface, welcome the controversy. You will occasionally run into a product manager who freaks out about potential content almost going out to partners before it can be edited/tweaked in a certain way, which actually changes the direction provided by some other group. In these scenarios, your role pivots from tech writer to something entirely different: _product aligner_.
 
 Rather than inserting yourself into disputes between groups, let PM and Engineering hold their own boxing match and duke it out.
 

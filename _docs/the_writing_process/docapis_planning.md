@@ -11,6 +11,9 @@ last-modified: 2021-11-15
 
 First things first &mdash; you need to figure out what the writing project involves by doing some basic planning. In this step, you'll create a doc plan, establish roles, gather source material, and view a demo.
 
+{: .note}
+This content is new, so it might still be a bit rough. I'm especially interested in any feedback you have. You can leave feedback in the comment section below or by [contacting me](/learnapidoc/contact).
+
 {% if site.format == "web" %}
 * TOC
 {:toc}

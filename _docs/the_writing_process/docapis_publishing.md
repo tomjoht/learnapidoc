@@ -11,6 +11,9 @@ last-modified: 2021-11-14
 
 After you've finished the reviews and your deadline is imminent, it's time to make plans to publish your docs. Hitting that publish button will fill you with a rush of exhilaration, but before that moment arrives, you have a few final considerations.
 
+{: .note}
+This content is new, so it might still be a bit rough. I'm especially interested in any feedback you have. You can leave feedback in the comment section below or by [contacting me](/learnapidoc/contact).
+
 {% if site.format == "web" %}
 * TOC
 {:toc}
