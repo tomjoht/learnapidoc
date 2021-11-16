@@ -9,7 +9,7 @@ path1: /writing_process.html
 last-modified: 2021-11-14
 ---
 
-Now that you have a draft and have edited the content a few times, you're ready to begin the review process. Hopefully, you've already set up some review session times with various stakeholders; otherwise, try to get time on their calendars now rather than later. How much time should each meeting be? About 45 minutes is ideal. You can review about 2,000 - 3,000 words in this amount of time. If you have more than that, consider setting up multiple meetings.
+Now that you've [written a draft](docapis_writing.html) and have edited the content a few times, you're ready to begin the review process. Hopefully, you've already set up some review session times with various stakeholders; otherwise, try to get time on their calendars now rather than later. (This section differs a bit from the previous ones in that I provide more general tips and guidance rather than step-by-step details.)
 
 {% if site.format == "web" %}
 * TOC
@@ -30,17 +30,17 @@ I've tried different processes for reviewing content, and while I'm wary of maki
 * Scheduling meetings with all the necessary reviewers together at the same time.
 * Sending a link to docs and hoping that others will review it without being forced to do so in a scheduled meeting.
 
-The process I'll suggest here works, based on years of experience. This would not be how you'd expect to review a sample chapter or essay in a creative writing workshop. In a creative writing workshop, usually you send out about 10-20 pages of material a week ahead of time to the group. They read it during the week, prepare comments, and then share their comments in a round-robin format during the workshop. When I was getting my MFA in literary nonfiction, this was the pattern for how you reviewed content.
-
-{% include random_ad4.html %}
+The process I'll suggest here works, based on years of experience. This would not be how you'd expect to review a sample chapter or essay in a creative writing workshop. In a creative writing workshop, usually you send out about 10-20 pages of material a week ahead of time to the group. They read it during the week, prepare comments, and then share their comments in a round-robin format during the workshop. When I was getting my MFA in literary nonfiction, this was the pattern for how we reviewed content.
 
 So when I began my career as a technical writer, I more or less expected the same workflow. It took years of disappointment and frustration with the review process to realize that this isn't how the corporate world works, and it's not how documentation reviews work.
 
-In some ways, you don't even need to have much technical depth or familiarity with the content you're reviewing. You're _facilitating a process_, bringing people together to collect their feedback, making changes, aligning different parties. Arbitrating, aligning, clarifying, etc. By facilitating the review among different groups, you are moving content through this editing and refinement process. Think of your role as moving content through this phase of its lifecycle.
+In some ways, you don't even need to have much technical depth or familiarity with the content you're reviewing. You're _facilitating a process_, bringing people together to collect their feedback, making changes, aligning different parties. You're arbitrating, aligning, clarifying, etc. By facilitating the review among different groups, you are moving content through this editing and refinement process. Think of your role as moving content through this phase of the lifecycle.
+
+{% include random_ad4.html %}
 
 ### Giving time during the meeting for reviewers to read the content {#give_time_to_read}
 
-What works best is to carve out time during the actual meeting for reviewers to read the content. If you have a 45-minute meeting, allow reviewers to either spend the first 20 minutes reading the content before launching into a discussion, or allow them to give feedback in real-time while they're reading. This is the basic _modus operandi_ of meetings at Amazon, and it works great elsewhere too. It's a little odd to have this quiet time during the meeting, but it's also somewhat reassuring for the reviewers to know that you've given them the necessary time to read the docs during the meeting.
+What works best is to carve out time during the actual meeting for reviewers to read the content. If you have a 45-minute meeting (an ideal length for review meetings), allow reviewers to either spend the first 20 minutes reading the content before launching into a discussion, or allow them to give feedback in real-time while they're reading. This is the [basic _modus operandi_ of meetings at Amazon](/blog/a-place-for-exploratory-writing-in-the-workplace/), and it works great elsewhere too. It's a little odd to have this quiet time during the meeting, but it's also somewhat reassuring for the reviewers to know that you've given them the necessary time to read the docs during the meeting.
 
 {% comment %}{% include random_ad3.html %}{% endcomment %}
 

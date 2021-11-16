@@ -6,7 +6,7 @@ weight: 1.5
 sidebar: docapis
 section: introtoapis
 path1: /docapis_introtoapis.html
-last-modified: 2021-01-18
+last-modified: 2021-11-15
 ---
 
 In case you'd like to know a little bit about me, I'm currently based in Seattle, Washington, working for Google. (Previously, I was at Amazon and a couple of startups in the Bay area.)
