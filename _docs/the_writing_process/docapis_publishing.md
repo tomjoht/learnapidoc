@@ -6,10 +6,10 @@ weight: 8.96
 sidebar: docapis
 section: writing_process
 path1: /writing_process.html
-last-modified: 2021-11-14
+last-modified: 2021-11-15
 ---
 
-After you've finished the reviews and your deadline is imminent, it's time to make plans to publish your docs. Hitting that publish button will fill you with a rush of exhilaration, but before that moment arrives, you have a few final considerations.
+After you've [finished the reviews](docapis_reviewing.html) and your deadline is imminent, it's time to make plans to publish your docs. Hitting that publish button will fill you with a rush of exhilaration, but before that moment arrives, you have a few final considerations.
 
 {: .note}
 This content is new, so it might still be a bit rough. I'm especially interested in any feedback you have. You can leave feedback in the comment section below or by [contacting me](/learnapidoc/contact).
@@ -21,9 +21,11 @@ This content is new, so it might still be a bit rough. I'm especially interested
 
 ## 5.1 Understand the larger context where you're publishing {#context}
 
-Hopefully, you already know exactly where the content should be published, as this is something you planned for when writing the content. But in case not, make sure you don't just throw another article over the wall onto your developer portal without seeing the larger context of where the information appears.
+Hopefully, you already know exactly where the content should be published, as this is something you planned for when writing the content. But in case not, make sure you don't just throw another article over the wall onto your developer portal without *integrating* the content into the larger context.
 
-Where is the most logical context for the content? Make sure you're well-read enough in your content landscape to see the whole and understand the big picture of your docs. One mistake many engineers make when contributing docs is focusing only on their contribution, without reading more broadly to understand if their contributing content conflicts, repeats, or otherwise clashes with what's already published.
+Notice that I used *integrate* instead of *add* &mdash; the former implies more work to make the new content fit seamlessly into existing content, whereas the latter implies that one just tacks on the new without looking closely at how it fits into the existing content.
+
+Where is the most logical context to integrate the content? Make sure you're well-read enough in your content landscape to see the whole and understand the big picture of your docs. One mistake many writers and engineers make when contributing docs is focusing only on their contribution, without reading more broadly to understand if their contributing content conflicts, repeats, or otherwise clashes with what's already published.
 
 {% include image_ad_right.html %}
 
@@ -31,7 +33,7 @@ If you have a humanities background, you're probably used to reading long, diffi
 
 ## 5.2 Cross-reference the new content {#cross_references}
 
-As you read through the larger context on your developer portal, take note of good places to insert cross-references to the new content. If there are similar topics, consider adding cross-references in places where themes overlap. Many times, users search for information and don't always land on the right topic. They might have landed close to the needed information, based on the keywords they're searching for, but not on the right page. This aligns with the whole [information scent theory](https://www.nngroup.com/articles/information-scent/) that is part of information foraging. Include links to help point them to your new content. Conversely, insert cross-references to other pages in your new content.
+As you read through the larger context on your developer portal, take note of good places to insert cross-references to the new content. If there are similar topics, consider adding cross-references in places where themes overlap. Many times, users search for information and don't always land on the right topic. They might have landed close to the needed information, based on the keywords they're searching for, but not on the right page. (This idea aligns with the whole [information scent theory](https://www.nngroup.com/articles/information-scent/) that is part of information foraging.) Include links to help point them to your new content. Conversely, insert cross-references to other pages in your new content.
 
 {% include random_ad2.html %}
 
@@ -42,33 +44,33 @@ Some systems have tags that define how related articles surface. If you have a s
 Most developer portals have two sections new content is publicized:
 
 * **Release notes.** The release notes highlight new features in the APIs and other products that have been released, often with a link to the accompanying documentation for the feature.
-* **What's new in docs.** The What's new in docs section indicates new articles or updates in the documentation. This list usually covers doc updates only, as these updates can happen independently of feature development.
+* **What's new in docs.** The What's new in docs section indicates new articles or updates in the documentation. This list usually covers doc updates only, as these updates can happen independently of feature releases.
 
 Make sure you list and describe your new content using whatever patterns make sense for your developer portal.  Many times, program managers literally copy and paste the content from release notes and what's new pages into newsletters that they send out to partners.
 
-{% include random_ad4.html %}
-
 Alternatively, you might have a developer relations group or developer marketing that actually has a newsletter. If so, reach out to the group and let them know you have content they could include in their next newsletter.
+
+{% include random_ad4.html %}
 
 ## 5.4 Add metadata to pages about authors and last-updated {#metadata}
 
-Another task before publishing your new content is to add some metadata to the pages about authors and last-updated timestamps. How you do this depends on your authoring system, but hopefully, you have some metadata that supports two essential fields: author and last-updated. These fields might be in YAML frontmatter if you're using a [static site generator](/learnapidoc/pubapis_static_site_generators.html), or they could be in more structured fields if using a [CCMS](/blog/what-is-a-dita-content-management-system-ccms/).
+Another task before publishing your new content is to add some metadata to the pages about authorship and date last updated. How you do this depends on your authoring system, but hopefully, you have some metadata that supports two essential fields: author and last-updated. These fields might be in YAML frontmatter if you're using a [static site generator](/learnapidoc/pubapis_static_site_generators.html), or they could be in more structured fields if using a [CCMS](/blog/what-is-a-dita-content-management-system-ccms/).
 
 Understand that right now, at the point of release, everyone is excited about the new content. But it will only be a matter of time before most people forget about this page, before you move on, before the teams that support the content transition to other projects and parts of the org, or before the feature itself is sunset, then deprecated.
 
 {% comment %}{% include random_ad3.html %} {% endcomment %}
 
-Others who follow you will need to know who wrote the content and when it was last updated. Sometimes this metadata is automatically tracked through version control &mdash; if so, great. But the version control metadata often supplements more explicit metadata tagging within the content itself. There's nothing worse than arriving at a new job and not having any history about the content's accuracy, freshness, or authorship.
+Others who follow you will need to know who wrote the content and when it was last updated. (There's nothing worse than arriving at a new job and not having any history about the content's accuracy, freshness, or authorship.) Sometimes the content metadata is automatically tracked through version control &mdash; if so, great. But the version control metadata often supplements more explicit metadata tagging within the content itself.
 
 ## 5.5 Coordinate the timing of the release {#coordinate_timing}
 
-One final consideration is timing. When should you hit that publish button? Usually, you want to coordinate your timing with the release. After your release goes out, then you publish the updates to the release notes and publish your content. Don't push your content out before the release. It sounds like common sense, but this might be harder to coordinate than it seems.
+One final consideration is timing. When should you hit that publish button? Usually, you want to coordinate your timing with the release. After your release goes out, then you publish the documentation. Don't push your new documentation out before the release. It sounds like common sense, but this might be harder to coordinate than it seems.
 
 {% include random_ad1.html %}
 
 When I worked at Amazon, for large releases (such as the launch of a new product), there was an elaborate release schedule and a "war room" set up. The release schedule involved a long series of steps required to release the feature, such as turning on services, dialing up the visibility of new features in the UI, launching a general press release and announcement, and more. These release meetings would often start at about 5 am and continue until 9 am. Somewhere in the list of release events was a line item for publishing the documentation. At that planned time, the release manager would say, "Go ahead and publish the docs now."
 
-Our doc publishing process took about 15 minutes to complete, so one time I anticipated my slot a bit early and jumped the gun by publishing about a half-hour early. The release manager actually wanted me to pull back the docs until some other items had been released. I explained that rolling back the doc release would create all kinds of hassle and havoc, and it wasn't worth it. But after this experience, I was careful to wait my turn to publish and to respect the timing and sequence, even if the publishing task took a long time of just waiting around.
+Our doc publishing process took about 15 minutes to complete, so one time I anticipated my slot a bit early and jumped the gun by publishing about a half-hour early. Due to some other hiccup, the release manager actually wanted me to pull back the docs until some other items had been released. I explained that rolling back the doc release would create all kinds of hassle and havoc, and it wasn't worth it. But after this experience, I was careful to wait my turn to publish and to respect the timing and sequence, even if the publishing task took a long time of just waiting around.
 
 Most doc releases aren't so formal or coordinated, but you should plug into the release process, understand the timing and the expectations about when the docs should go live, and follow it.
 
@@ -84,7 +86,9 @@ After the content is live, you have one more step: publicize what you published.
 
 A good cadence for sending this report is monthly, but you could also send it right after publishing if it's a huge release. In a monthly newsletter, I also recommend including some other sections, such as discussions of doc strategies, roadmap, and metrics. For more information on what to include, see [Sending doc status reports &mdash; a tool for visibility and relationship building](/learnapidoc/docapis_status_reports.html#frequency-format-audience).
 
-If there's one mistake most tech writers commit, it's being too quiet about the documentation they work on. If others don't know you wrote and published the new content, they might not understand your role, your contribution to the product release (which is surely being celebrated in circulating emails), or your value. This leads tech writers to feeling that they're second-class citizens, their contributions overlooked, and other negative attitudes. The fix is simple: publicize what you publish.
+If there's one mistake most tech writers commit, it's being too quiet about the documentation they work on. If others don't know you wrote and published the new content, they might not understand your role, your contribution to the product release (which is surely being celebrated in circulating emails), or your value. Being overlooked leads tech writers to feeling that they're second-class citizens, that their contributions overlooked, and other negative attitudes. The fix is simple: publicize what you publish. Really, you're a writer. Just write, only instead of docs, write the meta-docs that explain the details around what you just published.
+
+Visibility is simple &mdash; write content and share it with those around you. Repeat this process regularly, and soon everyone will know you.
 
 ## Next steps
 

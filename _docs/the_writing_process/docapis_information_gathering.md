@@ -6,7 +6,7 @@ weight: 8.93
 sidebar: docapis
 section: writing_process
 path1: /writing_process.html
-last-modified: 2021-11-14
+last-modified: 2021-11-15
 ---
 
 Now that you've created a doc plan, gathered up source material (and read it), and observed a demo, you're ready to move on to phase two of the writing process: the interviews.

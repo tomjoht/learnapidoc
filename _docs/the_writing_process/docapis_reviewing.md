@@ -6,7 +6,7 @@ weight: 8.95
 sidebar: docapis
 section: writing_process
 path1: /writing_process.html
-last-modified: 2021-11-14
+last-modified: 2021-11-15
 ---
 
 Now that you've [written a draft](docapis_writing.html) and have edited the content a few times, you're ready to begin the review process. Hopefully, you've already set up some review session times with various stakeholders; otherwise, try to get time on their calendars now rather than later.
