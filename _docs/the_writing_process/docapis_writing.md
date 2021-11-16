@@ -6,10 +6,13 @@ weight: 8.94
 sidebar: docapis
 section: writing_process
 path1: /writing_process.html
-last-modified: 2021-11-14
+last-modified: 2021-11-15
 ---
 
 In this section, I'll dive into practical tips and strategies for writing the content. Before you get to this point, I assume you've already done some [planning](docapis_planning.html) and [information gathering](docapis_information_gathering.html).
+
+{: .note}
+This content is new, so it might still be a bit rough. I'm especially interested in any feedback you have. You can leave feedback in the comment section below or by [contacting me](/learnapidoc/contact).
 
 {% if site.format == "web" %}
 * TOC

@@ -6,7 +6,7 @@ weight: 8.92
 sidebar: docapis
 section: writing_process
 path1: /writing_process.html
-last-modified: 2021-11-14
+last-modified: 2021-11-15
 ---
 
 First things first &mdash; you need to figure out what the writing project involves by doing some basic planning. In this step, you'll create a doc plan, establish roles, gather source material, and view a demo.
