@@ -21,9 +21,9 @@ So whether you're an engineer or a professional writer, writing API documentatio
 
 {% include random_ad4.html %}
 
-For example, most texts will explain that you first need to understand your audience's needs, gather your sources, write an outline, draft some content, review and edit the content, and finally publish. These *are* the phases of the writing process, but these general descriptions don't tailor the tasks specifically to the tech writer's scenario or give you insider tips on how to succeed.
+For example, most texts will explain that you first need to understand your audience's needs, gather your sources, write an outline, draft some content, review and edit the content, and finally publish. These *are* the phases of the writing process, but these general descriptions don't tailor the tasks specifically to the tech writer's scenario nor give you insider tips on how to succeed.
 
-Rather than rehash the same writing steps and phases, I'll instead paint more of an inside, hands-on guide to the documentation writing process, with the most transparency and matter-of-fact tips I can give, specifically for technical writers creating documentation.
+Rather than rehash the same writing steps and phases, I'll instead paint more of an inside, hands-on guide to the documentation writing process, with the most practical tips I can give, specifically tailored to technical writers creating documentation.
 
 The writing process involves these five general steps:
 
@@ -33,7 +33,7 @@ The writing process involves these five general steps:
 4. [Reviewing](docapis_reviewing.html)
 5. [Publishing](docapis_publishing.html)
 
-Entire books could be written about each of these phases. I tried to pick out a few salient tips and practical advice for each of these topics. But by no means is my advice comprehensive or even that detailed.
+Entire books could be written about each of these phases. I tried to pick out a few salient tips and practical advice for each section. But by no means is my advice comprehensive. If you're a seasoned pro, I invite you to add your own tips and insights in the comments for each page.
 
 ## The writing scenario {#writing_scenario}
 
@@ -41,9 +41,9 @@ Before we jump into this process, let's start by presenting a writing scenario. 
 
 {% include random_ad2.html %}
 
-The API is slated for a release next month, so even though engineers have been cracking away at this API for half a year, they're mostly done and ready for you to create the documentation and ship it. You have about three weeks to learn the product, write the docs, get the docs reviewed, and publish the docs in time for release.
+The API is slated for release next month, so even though engineers have been cracking away at this API for half a year, they're mostly done and ready for you to create the documentation. You have about three weeks to learn the product, write the docs, get the docs reviewed, and publish the docs in time for release.
 
-This is a very typical scenario and timeline, by the way &mdash; being brought in at the ninth inning, often unaware of the product's development cycles that have been going on for months previously. Product teams are long past the stage where they debated the best implementation, the feature set, how the API matches use cases, and so on. By this time, they've already entered QA testing stages and just need to put a bow on the product with some docs before shipping it.
+This is a very typical scenario and timeline, by the way &mdash; being brought in at the ninth inning, often unaware of the product's development cycles that have been going on for months previously. Product teams are long past the stage where they debated the best implementation, the feature set, how the API matches use cases, and so on. By the time you're brought in, they've already entered QA testing stages and just need to put a bow on the product with some docs before shipping it.
 
 {% include random_ad1.html %}
 
