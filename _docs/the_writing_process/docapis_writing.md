@@ -23,7 +23,7 @@ This content is new, so it might still be a bit rough. I'm especially interested
 
 Now that you've gathered information and interviewed a handful of people related to the feature, you probably have a large pile of content. For example, you might have a single doc where you've been collecting all of this information (copying and pasting nuggets of information from various docs). That doc might be 20+ pages long.
 
-You have to begin to organize the information. I think of this task like sorting laundry. Start by sorting the content into different piles &mdash; put the socks together, the shirts together, the pants together, etc. (See [Writing is like sorting laundry &mdash; practical advice for tackling documentation projects](/2015/01/29/writing-is-like-sorting-laundry-practical-advice-for-tackling-documentation-projects/) for a full elaboration of this analogy.) Just group like information together. Each pile will probably   become a separate page in your final content output (but maybe not).
+You must now begin organizing the information. I think of this task like sorting laundry. Start by sorting the content into different piles &mdash; put the socks together, the shirts together, the pants together, etc. (See [Writing is like sorting laundry &mdash; practical advice for tackling documentation projects](/2015/01/29/writing-is-like-sorting-laundry-practical-advice-for-tackling-documentation-projects/) for a full elaboration of this analogy.) Just group like information together. Each pile will probably   become a separate page in your final content output (but maybe not).
 
 ## 3.2 Create an outline for each group {#outline}
 
@@ -37,7 +37,7 @@ Now that you have different groups of content, create outlines for each group.  
 An outline is a list of section headings and bullet points to cover in each section. Creating an outline precedes the actual writing of content. A good outline can reduce the fear of the blank page.
 
 {: .tip}
-For inspiration about the right sections to include in different content types, check out the [Good Docs Project](https://thegooddocsproject.dev/) for samples.
+For inspiration about the right sections to include in different content types, check out the [Good Docs Project](https://thegooddocsproject.dev/) for templates.
 
 You can even review the outline with other groups you interviewed before you begin writing, if you want. It depends on how confident you are and how extensive the documentation is. The outline is basically your content plan.
 
@@ -47,35 +47,39 @@ It might be worth calling out some other fundamentals to tech writing here. In a
 
 Some novelists talk about how the characters dictate the shape of the story, and a kind of muse takes over and they just start describing the story that the characters themselves write. The story takes them in directions they can't anticipate or don't expect. This flow state might last hours and take them along unfamiliar paths and directions.
 
-Writing documentation is a much different experience. You're operating in an _explanatory_ mode, not a _discovery_ mode. It's unlikely that your content will deviate much from the outline. Sure, to some degree, as you begin writing, the flow of concepts and sentences might veer from the outline or list of bullet points, but not by any means similar to a creative writing flow.
+Writing documentation is a much different experience. You're operating in an _explanatory_ mode, not a _discovery_ mode. It's unlikely that your content will deviate much from the outline. Sure, to some degree, as you begin writing, the flow of concepts and sentences might veer from the outline or list of bullet points, but not like a creative writing flow.
 
-(Despite all the differences from creative writing, at the heart of most types of writing is conflict. The path taken to overcome this conflict yields the story. So at this foundational level, there is still some parallel between creative writing and technical writing, but not a ton.)
+(Despite all the differences from creative writing, at the heart of most types of writing is conflict. Story is the path taken to overcome conflict. So at this foundational level, there is still some parallel between creative writing and technical writing, but not a ton.)
 
 No matter the type of writing, an outline is your friend. In an outline, the initial bullet points don't need to be polished or have strong coherence. You're just sketching out the plan, and you can rearrange sections and bullet points as much as you want. If the documentation is extensive and you're unsure about the approach, you can set up meetings with the same people previously described to talk them through the outline.
 
 {% include random_ad2.html %}
 
-Your outline should call out major sections. Note that unlike other forms of writing, documentation uses a lot of section headings. An academic essay might not have any subheadings, but documentation uses section headings every few paragraphs. The idea is that users skim and jump around rather than reading linearly, so this section-dominant style fits that user behavior. Section headings  also reduce the need for a more formal order and flow to the content, so in some ways writing documentation is easier than other forms of writing. You can always just tack on information in another section heading.
+Your outline should call out major sections. Note that unlike other forms of writing, documentation uses a lot of section headings. An academic essay might not have any subheadings, but documentation uses section headings every few paragraphs. The idea is that users skim and jump around rather than reading linearly, so this section-dominant style fits the user behavior about how people read documentation.
+
+Section headings  also reduce the need for a more formal order and flow to the content, so in some ways writing documentation is easier than other forms of writing. You can always just tack on information in another section heading.
 
 ## 3.3 Set up meetings with reviewers far in advance {#set_up_meetings}
 
 Before you start writing, take a few minutes to set up some review meetings. Get on the calendars of your reviewers now. Most reviewers like to have a few others reviewing the document at the same time, and if you wait until you actually have a draft ready, chances are there won't be any open time slots when those reviewers are all free. But if you schedule it 2-3 weeks in advance, you can ensure their availability and a room if necessary. Scheduling a review meeting also gives you a deadline.
 
-In the review meeting details, indicate that you'll later update the event with a link to the draft. However, as I'll explain later, most reviewers won't read anything until the actual meeting anyway.
+In the review meeting details, indicate that you'll later update the event with a link to the draft. However, as I'll explain in [Reviewing](docapis_reviewing.html), most reviewers won't read anything until the actual meeting anyway.
 
 ## 3.4 Write the first draft {#first_draft}
 
-Now that you've got an outline, you're ready to start writing. This is one area that's difficult to give instruction for, but I'll do my best, sharing what works for me.
+Now that you have an outline, you're ready to start writing. This is one area that's difficult to give instruction for, but I'll do my best, sharing what works for me.
 
-Before I begin writing, I notice that I often look for anything else to do &mdash; check email, Twitter, Slack, browse Amazon, and so on. It's easy to suddenly think of all the other things I have to do and to focus my energy there because the task of *writing requires a lot of mental energy*. Writing isn't something I can sustain for long periods of time, so I have maximize the part of my day when I have the most energy for this task: mornings.
+When I have writing to do, I often find myself looking around for anything else to do &mdash; check email, Twitter, Slack, browse Amazon, and so on. It's easy to suddenly think of all the other things I have to do and to focus my energy there because the task of *writing requires a lot of mental energy*. Writing isn't something I can sustain for long periods of time, especially if I'm already fatigued. As a result, to find the time and energy for writing, I maximize the part of my day when I have the most energy for this task: mornings.
 
-After I wake up and have some coffee and breakfast, check email and news, I devote this time to writing. As the day wears on, my energy gets lower and lower, and by evening, I'm usually spent. Most people have an optimal time where their energy is at max productivity. When I was in college and didn't have kids or a full-time job, my writing energy peaked from about 8 to 11 pm. But now, during those same evening hours, I'm usually cruising in escape mode. Figure out when your mental energy is at full capacity.
+After I wake up and have some coffee and breakfast, check email and news, I devote this time to writing. As the day wears on, my energy gets lower and lower, and by evening, I'm usually spent. Most people have an optimal time where their energy is at max productivity. When I was in college and didn't have kids or a full-time job, my writing energy peaked from about 8 to 11 pm. But now, during those same evening hours, I'm usually cruising in escape mode. Figure out when your mental energy is at full capacity, and then plan to write during that time.
 
-The second strategy I use is to set a four-hour timer using a Focus app. This is just an app that keeps track of time on task, following the strategy of the [Pomodoro technique](https://francescocirillo.com/pages/pomodoro-technique). I find that four hours of writing is the most that I can squeeze out during a day. I set 4 one-hour sessions, and if I find myself getting off task during the session, I pause the timer. (For more on this technique, see [Writing productivity tip: Focus sessions](/blog/writing-productivity-through-focus-sessions/).) (The paused timer helps remind me to refocus on writing.)
+The second strategy I use is to set a four-hour timer using a [Focus app](https://apps.apple.com/us/app/focus-time-management/id777233759?mt=12). This is just an app that keeps track of time on task, following the strategy of the [Pomodoro technique](https://francescocirillo.com/pages/pomodoro-technique). I find that four hours of writing is the most that I can squeeze out during a day. I set 4 one-hour sessions, and if I find myself getting off task during the session, I pause the timer. (For more on this technique, see [Writing productivity tip: Focus sessions](/blog/writing-productivity-through-focus-sessions/).)
 
 {% include random_ad4.html %}
 
-With the timer set, I look at the outline, and then I just dive right into it. Even if the words don't flow at first, I just start typing and usually after a few paragraphs, I'm in a rhythm. I allow myself to veer from the specific outline if the flow of the content dictates it. As a best practice, I try to connect the ideas from one sentence to another in a flow-like way. The general pattern is that a sentence ends on an idea that the next one begins on. If you keep that flow, from old-to-new information, it will provide more of a coherence and readability to your sentences.
+With the timer set, I look at the outline, and then I just dive right into it. Even if the words don't flow at first, I just start typing and usually after a few paragraphs, I'm in a rhythm. (If you really struggle to start, just follow a stream-of-consciousness approach until your brain gets in gear.)
+
+I allow myself to veer from the specific outline if the flow of the content dictates it. As a best practice, I try to connect the ideas from one sentence to another in a flow-like way. The general pattern is that a sentence ends on an idea that the next one begins on. If you keep that flow, from old-to-new information, it will provide more of a coherence and readability to your sentences.
 
 I also keep my paragraphs relatively short, usually several sentences each and focusing on a single main idea. After several paragraphs, I start a new subheading that encapsulates the focus of the next paragraphs.
 
@@ -83,7 +87,7 @@ I like to listen to music while I write because it reduces my sense of hyper-cor
 
 It's good to get the first draft of content on the page. After that, I can begin shaping it and refining it in a much less demanding way.
 
-Even though I've been a professional writer for many years, I don't have a lot of writing stamina. After I get several hours of writing in, I often tap out. Writing is somewhat like exercising &mdash; after a couple of good hours max, I'm done. I can't just sit down for hours on end writing documentation. Very few can, especially given how much preparation is required to get the knowledge to write technical documentation. Instead of spending long hours writing, I try to chip away at larger content projects little bit each day over a series of weeks. This approach usually ends up being more successful.
+Even though I've been a professional writer for many years, I don't have a lot of writing stamina. After I get several hours of writing in, I often tap out. Writing is somewhat like exercising &mdash; after a couple of good hours max, I'm done. I can't just sit down for hours on end writing documentation. Very few can, especially given how much preparation is required to get the knowledge to write technical documentation. Instead of spending long hours writing, I try to chip away at larger content projects a little bit each day over a series of weeks. This approach (writing a little each day) usually ends up being more successful.
 
 {% comment %}{% include random_ad4.html %}{% endcomment %}
 
@@ -101,7 +105,7 @@ Additionally, many days I don't feel like writing, but if I rev up my brain by r
 
 Editing requires a fresh perspective, so I allow myself some space between edits &mdash; usually about a day. If I just keep editing the same content over and over all day long, especially content that I've only recently written, I become blind to so many aspects of it. I can't see all the problems. Somehow, allowing myself 24 hours focusing on other things enlivens my ability to see issues and fix errors in the content.
 
-Ideally, if I can space out edits each day over the course of a week, that gives me 5 separate editing sessions. I'm usually amazed at how much I can fix and make professional during this time period. It's really the secret to good writing. In contrast, if I crank out the content the day before and release it, the content isn't nearly as good as putting it through a cycle of edits spaced out with a day between edits. Think of it like bread that you have to let rise, followed by a session of kneading. When you make bread from scratch, you might need to let it rise a few times and punch it down to get it into the right shape.
+Ideally, if I can space out edits each day over the course of a week, that gives me 5 separate editing sessions. I'm usually amazed at how much I can fix and make professional during this time period. It's really the secret to good writing. In contrast, if I crank out the content the day before and release it, the content isn't nearly as good as putting it through a cycle of edits spaced out like this. Think of it like bread that you have to let rise, followed by a session of kneading. When you make bread from scratch, you might need to let it rise a few times and punch it down to get it into the right shape.
 
 ## 3.7 Supplement confusing concepts with visuals and code examples {#visuals_and_code_examples}
 
