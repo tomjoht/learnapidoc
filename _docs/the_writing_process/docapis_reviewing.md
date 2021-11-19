@@ -9,7 +9,7 @@ path1: /writing_process.html
 last-modified: 2021-11-15
 ---
 
-Now that you've [written a draft](docapis_writing.html) and have edited the content a few times, you're ready to begin the review process. Unlike other forms of writing, doc reviews are essential for documentation because you're usually writing about a technical domain that you're not an expert in.
+Now that you've [written a draft](docapis_writing.html) and have edited the content a few times, you're ready to begin the review process. Unlike other forms of writing, reviews are essential for documentation because you're usually writing about a technical domain that you're not an expert in.
 
 {% if site.format == "web" %}
 * TOC
@@ -18,16 +18,13 @@ Now that you've [written a draft](docapis_writing.html) and have edited the cont
 
 ## General strategies for reviewing content {#strategies}
 
-This section lists general strategies for the review process.
-
-{: .tip}
-Hopefully, you've already set up some review session times with various stakeholders. If not, try to get time on their calendars now rather than later. It doesn't matter whether you have a draft to review or not. Book the reviews to reserve a spot on the reviewers' calendars.
+This section lists general strategies for the review process. Before we jump into this, hopefully you've already set up some review session times with various stakeholders. If not, try to get time on their calendars now rather than later. It doesn't matter whether you have a draft to review or not. Book the reviews to reserve a spot on the reviewers' calendars.
 
 ### Review strategies that don't work {#strategies_that_fail}
 
 I've tried different processes for reviewing content, and I have more or less realized what works and doesn't. Here's what *doesn't work*:
 
-* Sending a general email to a group of people asking them to review content. 
+* Sending a general email to a group of people asking them to review content.
 * Asking people to review large amounts of content at once.
 * Asking people to come to a review meeting having read the content beforehand.
 * Scheduling meetings with all the necessary reviewers together at the same time.
@@ -37,7 +34,7 @@ Unfortunately, the review process isn't as easy as sending out links and getting
 
 So when I began my career as a technical writer, I more or less expected the same workflow. It took years of disappointment and frustration with the review process to realize that this isn't how the corporate world works, and it's not how documentation reviews work.
 
-In some ways, you don't even need to have much technical depth or familiarity with the content you're reviewing. You're _facilitating a process_, bringing people together to collect their feedback, making changes, and aligning different parties. You're arbitrating, aligning, clarifying, etc. By facilitating the review among different groups, you are moving content through this phase of editing and refinement. Think of your role as moving content through this part of the content lifecycle.
+In some ways, you don't even need to have much technical depth or familiarity with the content you're reviewing. You're _facilitating a process_, bringing people together to collect their feedback, making changes, and aligning different parties. You're arbitrating, aligning, clarifying, etc. By facilitating the review among different groups, you are moving content through this phase of its development.
 
 {% include random_ad4.html %}
 
@@ -47,7 +44,7 @@ What works best is to carve out time during the actual meeting for reviewers to 
 
 {% comment %}{% include random_ad3.html %}{% endcomment %}
 
-You might think, oh, we'll just ask everyone to read the doc beforehand and come to the meeting prepared with comments. When you do this, usually one person has read the content and others haven't. This frustrates the person who did read (he or she now just has to sit there waiting for others), and it makes others feel irresponsible for not having done the preparation. The others end up skimming the content quickly so they can get started with the review. Then when they share their feedback, they make suggestions about adding content that's already there.
+You might think, oh, we'll just ask everyone to read the doc beforehand and come to the meeting prepared with comments. When you do this, usually one person has read the content and others haven't. This frustrates the person who did read (he or she now just has to sit there waiting for others), and makes others feel irresponsible for not having done the preparation. The others end up skimming the content quickly so they can get started with the review. Then when they share their feedback, they make suggestions about adding content that's already there (because they didn't read it carefully enough).
 
 So in general, bake time into the review meeting to allow people to read the content during the meeting. While you'll occasionally encounter reviewers who can do the reviews outside of meetings, these types are rare. Also, I've found that the more executive the reviewer, the more they expect you to present them with content to read on the spot and then take notes as they provide feedback.
 
@@ -61,7 +58,7 @@ People don't have time to review more than this, and you'll observe that after a
 
 This means you might need to set up multiple doc review sessions if you have a lot of content to review. That's all right. You could set up several 30-minute review sessions with people, if that's what it takes. It's also a lot easier to book 30 minutes on someone's calendar rather than a full hour, especially if you're including multiple reviewers.
 
-If you have 12 pages for people to read, and only 30 minutes for the review session, consider setting up three review sessions. Give people the first 10 minutes to read about 4 pages and then provide a response. It might seem like you're filling their calendar with lots of doc reviews, but it might be the only way to get the reviews done.
+If you have 12 pages for people to read, and only 30 minutes for the review session, consider setting up three review sessions. Give people the first 10 minutes to read about 4 pages and then provide a response. It might seem like you're filling their calendar with lots of doc reviews, but it might be the only way to finish the reviews.
 
 ### Stagger the review process {#stagger_the_review}
 
@@ -92,7 +89,7 @@ If you can highlight different parts of the content and ask reviewers to specifi
 
 ### Best days and times to review content {#best_days_and_times_for_review}
 
-It might look like you have a full week to schedule people for reviews, but there are optimal days and times to review content. At all costs, avoid Monday mornings. During this time, people are still recovering from the weekend and are inundated with email from people working in other time zones. People in other time zones (India, Australia, Europe) have already been operating for a full day (sending emails, raising issues, and generally working), so if they're in the Pacific time zone, on Monday morning they're slogging through email, issues, and other tasks surfaced by these other groups. Also, people are generally grumpy on Monday mornings (still not in the rhythms of work), and if they already dislike reading and reviewing documentation, by combining the Monday morning with this doc review meeting, they might come across as cold and disinterested.
+It might look like you have a full week to schedule people for reviews, but there are optimal days and times to review content. At all costs, avoid Monday mornings. During this time, people are still recovering from the weekend and are inundated with email from people working in other time zones. People in other time zones (India, Australia, Europe) have already been operating for a full day (sending emails, raising issues, and generally working), so if you're meeting with someone in the Pacific time zone, on Monday morning they're slogging through email, issues, and other tasks surfaced by these other groups. Also, people are generally grumpy on Monday mornings (still not in the rhythms of work), and if they already dislike reading and reviewing documentation, by combining the Monday morning with this doc review meeting, they might come across as cold and disinterested.
 
 Another time to avoid is Friday afternoon. By this time, people are usually checked out mentally for the week. From about 2 pm onward on Fridays, it gets quiet at companies. Some people have already completed the week (especially people in time zones that are a day ahead). Additionally, some people leave early for weekend trips or other engagements, or they're just tired from a week of work. The absolute worst thing you can do is schedule a 4 pm Friday meeting for an hour. People will hate you for it.
 
@@ -108,7 +105,7 @@ Likewise, if someone is in another time zone, don't schedule them outside of the
 
 ### For impossibly busy schedules, ask the reviewer to indicate the time {#ask_reviewer_to_indicate_time}
 
-Another challenge is dealing with reviewers who have impossibly busy schedules (especially common for higher-level people). If the reviewers don't have any gaps in their schedule, ask them when a good time would be. A lot of people fill their schedules with recurring meetings that make them appear to be much busier than they are. They might have meetings on their schedule that they never attend. Some will carve out big chunks of time and label them DNS (for "Do Not Schedule") because they need to have some time to actually work. Politely ask someone when a good time would be to review a doc, letting them know your publishing deadlines and timeframes.
+Another challenge is dealing with reviewers who have impossibly busy schedules (especially common for higher-level people). If the reviewers don't have any gaps in their schedule, ask them when a good time would be. A lot of people fill their schedules with recurring meetings that make them appear to be much busier than they are. They might have meetings on their schedule that they never attend. Some will carve out big chunks of time and label them DNS (for "Do Not Schedule") because they need to have some time to actually work. Politely ask someone when a good time would be to review a doc, letting them know your publishing deadlines and timeframes. They might allocate time during their DNS block.
 
 ## 4.1 Schedule the reviews in a staggered timeframe {#schedule_the_reviews}
 
@@ -151,7 +148,7 @@ It's worth noting that not all feedback is worth incorporating. Sometimes review
 
 Occasionally you will find that different groups have conflicting perspectives about what the documentation should say. For example, Engineering might want to be much more hesitant about supporting a feature that Product Management wants to advertise in a more visible way. Or BD might want you to avoid including too many technical details, instead of focusing more on a decision-maker audience than an engineering integrator audience. In contrast, your partner engineers might want you to include more technical details, even including min and max values that no one knows and which BD doesn't care about.
 
-Realization of misalignment between groups is expected during the review process. Reviewing documentation serves two hidden purposes: (1) it raises awareness about conflicting perspectives on products, and (2) it forces people to come to an agreement. As a writer, because you're the one defining and describing the product, you're the driving force to create the alignment. Just don't be surprised when your doc suddenly spawns a sense of controversy and heated exchange between groups. That's what it's supposed to do. 
+Realizations about misalignment between groups is expected during the review process. Reviewing documentation serves two hidden purposes: (1) it raises awareness about conflicting perspectives on products, and (2) it forces people to come to an agreement. As a writer, because you're the one defining and describing the product, you're the driving force to create the alignment. Just don't be surprised when your doc suddenly spawns a sense of controversy and heated exchange between groups. Sometimes, that's what it's supposed to do. This disagreement has been hiding in the shadows, and now by putting ideas into writing, you've forced the disagreement into the sun &mdash; people will have to deal with it.
 
 If you're really caught in a pickle, don't try to take sides or promote your own view. Instead, bring the two parties together in a meeting to hash it out. You might have your own thoughts about the right direction, and since you control the docs, you can choose the direction you want to go. But it usually doesn't go well when tech writers face off against PMs or Engineering in battles like these. You might need to function as a broker between the two sides, trying to find a compromise that appeases both parties.
 
@@ -169,7 +166,7 @@ It can be exhilarating if they like the docs, and also exhausting. You might get
 
 ### When does the review cycle end {#when_does_it_end}
 
-The review cycle ends when you release the product, basically. If there's no release timeframe, it ends when your number of edits approach zero with each revision. With each review session, there should be fewer edits to make from subsequent reviewers. At some point, as you're reading and rereading the docs, you end up changing only minor cosmetic style and grammar details. When you hit this point, recognize that your changes are no longer moving the needle anymore. You've addressed content accuracy, information about user journeys, and other higher-level concerns. If you ever find yourself changing a period to a semicolon and then back to a period, stop. You've hit the editing wall. No one cares at this point. Also, if your readers are engineers, they probably won't appreciate the fine stylistic details you might be tweaking anyway. To move the content to the next level, you need partner feedback from the actual people using the product.
+The review cycle ends when you release the product, basically. If there's no release timeframe, it ends when your number of edits approach zero with each revision. With each review session, there should be fewer edits to make from subsequent reviewers. At some point, as you're reading and rereading the docs, you'll end up changing only minor cosmetic style and grammar details. When you hit this point (accompanied by doc nausea), recognize that your changes are no longer moving the needle anymore. You've addressed content accuracy, information about user journeys, and other higher-level concerns. If you ever find yourself changing a period to a semicolon and then back to a period, stop. You've hit the editing wall. No one cares at this point. Also, if your readers are engineers, they probably won't appreciate the fine stylistic details you might be tweaking anyway. To move the content to the next level, you need partner feedback from the actual people using the product.
 
 ## Next steps
 

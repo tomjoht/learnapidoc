@@ -23,7 +23,7 @@ This content is new, so it might still be a bit rough. I'm especially interested
 
 Hopefully, you already know exactly where the content should be published, as this is something you planned for when writing the content. But in case not, make sure you don't just throw another article over the wall onto your developer portal without *integrating* the content into the larger context.
 
-Notice that I used *integrate* instead of *add* &mdash; the former implies more work to make the new content fit seamlessly into existing content, whereas the latter implies just tacking on new without looking closely at how it fits into the existing content.
+Notice that I used *integrate* instead of *add* &mdash; the former implies more work to make the new content fit seamlessly into existing content, whereas the latter implies just tacking on the new content without looking closely at how it fits into the existing content.
 
 Where is the most logical context to integrate the content? Make sure you're well-read enough in your content landscape to see the whole and understand the big picture of your docs. One mistake many writers and engineers make when contributing docs is to focus only on their contribution, without reading more broadly to understand if their contribution conflicts, repeats, or otherwise clashes with what's already published.
 
@@ -76,7 +76,7 @@ Most doc releases aren't so formal or coordinated, but you should plug into the 
 
 ## 5.6 Celebrate the exhilaration of publishing {#celebrate}
 
-When you actually hit the publish button (or type "git push" and then press Enter), it can be exhilarating. After months of work, you execute the final step that makes it live. There's a rush in publishing. If you're an engineer and have not published before, this rush of adrenaline might be a new experience. I feel it every time I publish a new blog post or article as well. There's a high associated with sending something out into the world, contributing to a body of knowledge in a new way. Take time to appreciate this moment. Go celebrate in some way. Maybe this means getting a fancy caramel latte at a nearby coffee shop or taking a leisurely stroll around the city at lunch.
+When you actually hit the publish button (or type `git push` and then press Enter), it can be exhilarating. After months of work, you execute the final step that makes it live. There's a rush in publishing. If you're an engineer and have not published before, this rush of adrenaline might be a new experience. I feel it every time I publish a new blog post or article as well. There's a high associated with sending something out into the world, contributing to a body of knowledge in a new way. Take time to appreciate this moment. Go celebrate in some way. Maybe this means getting a fancy caramel latte at a nearby coffee shop or taking a leisurely stroll around the city at lunch.
 
 After you publish, spend the rest of the afternoon doing something you find rewarding. You'll be giddy and feel like the world is full of rainbows and ponies. It's a natural high not only to publish but to fling that albatross from your neck. No more review cycles and edits for that content &mdash; it's done and live. You can move on to other tasks now. You might have been postponing a host of smaller tasks or errands while focusing on this larger writing project. Now you can take care of those little tasks, or focus on frivolous ones. Go chat with someone in the breakroom for a while, or post a few tweets on Twitter. Celebrate the doc release. At most, this high lasts a day or two. Then you return to earth.
 
@@ -86,11 +86,9 @@ After the content is live, you have one more step: publicize what you published.
 
 A good cadence for sending this report is monthly, but you could also send it right after publishing if it's a huge release. In a monthly newsletter, I also recommend including some other sections, such as discussions of doc strategies, roadmap, and metrics. For more information on what to include, see [Sending doc status reports &mdash; a tool for visibility and relationship building](/learnapidoc/docapis_status_reports.html#frequency-format-audience).
 
-If there's one mistake most tech writers commit, it's being too quiet about the documentation they work on. If others don't know you wrote and published the new content, they might not understand your role, your contribution to the product release (which is surely being celebrated in circulating emails), or your value. Being overlooked leads tech writers to feeling that they're second-class citizens, that their contributions overlooked, and other negative attitudes.
+If there's one mistake most tech writers commit, it's being too quiet about the documentation they work on. If others don't know you wrote and published the new content, they might not understand your role, your contribution to the product release, or your value. Being overlooked leads tech writers to feeling that they're second-class citizens, that their contributions are marginal, and other negative attitudes.
 
-The fix is simple: publicize what you publish. Really, you're a writer. Just write, only instead of docs, write the meta-docs that explain the details around what you just wrote.
-
-Visibility is simple &mdash; write content and share it with those around you. Repeat this process regularly, and soon everyone will know you.
+The fix is simple: publicize what you publish. Really, you're a writer. Just write, only instead of docs, write the meta-docs that explain the details about what you just published. Share your meta-docs in the form of newsletters, doc reports, meeting notes, or other emails. Repeat this process regularly, and soon everyone will know you and your contributions.
 
 ## Next steps
 
