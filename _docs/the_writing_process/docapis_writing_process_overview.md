@@ -6,7 +6,7 @@ weight: 8.912
 sidebar: docapis
 section: writing_process
 path1: /writing_process.html
-last-modified: 2021-11-15
+last-modified: 2021-11-19
 ---
 
 If there's one topic in this course that is glossed over, it's the writing process itself. This is ironic because, more than anything else, it's the content that matters. And this content is likely your primary stewardship.

@@ -6,13 +6,10 @@ weight: 8.96
 sidebar: docapis
 section: writing_process
 path1: /writing_process.html
-last-modified: 2021-11-15
+last-modified: 2021-11-19
 ---
 
 After you've [finished the reviews](docapis_reviewing.html) and your deadline is imminent, it's time to make plans to publish your docs. Hitting that publish button will fill you with a rush of exhilaration, but before that moment arrives, you have a few final considerations.
-
-{: .note}
-This content is new, so it might still be a bit rough. I'm especially interested in any feedback you have. You can leave feedback in the comment section below or by [contacting me](/learnapidoc/contact).
 
 {% if site.format == "web" %}
 * TOC
@@ -92,4 +89,4 @@ The fix is simple: publicize what you publish. Really, you're a writer. Just wri
 
 ## Next steps
 
-This section covered the writing process, including considerations when publishing. The next section, [Publishing API Docs](publishingapis.html), will go into publishing tools and workflows, focusing less on writing and more on the publishing technology.
+This section covered the writing process, including considerations when publishing. The next section, [Publishing API Docs](publishingapis.html), will go into publishing tools and workflows, focusing less on writing and more on publishing technology.

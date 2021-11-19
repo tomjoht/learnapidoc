@@ -6,7 +6,7 @@ weight: 8.95
 sidebar: docapis
 section: writing_process
 path1: /writing_process.html
-last-modified: 2021-11-15
+last-modified: 2021-11-19
 ---
 
 Now that you've [written a draft](docapis_writing.html) and have edited the content a few times, you're ready to begin the review process. Unlike other forms of writing, reviews are essential for documentation because you're usually writing about a technical domain that you're not an expert in.
@@ -160,13 +160,15 @@ They might not have the answer either, but they might suggest where you should g
 
 ### Reviewing docs is fun and social {#fun_social}
 
-Finally, I want to point out that reviewing docs can be one of the more fun and interesting aspects of the tech writer's job. You might have been working alone on this doc for weeks, but the review period allows you to dip your toes into a more social waters. You get to meet people, interact, engage in discussions, and they get to know you and read your work.
+Finally, I want to point out that reviewing docs can be one of the more fun and interesting aspects of the tech writer's job. You might have been working alone on this doc for weeks, but the review period allows you to dip your toes into more social waters. You get to meet people, interact, engage in discussions, and they get to know you and read your work.
 
 It can be exhilarating if they like the docs, and also exhausting. You might get feedback that discourages you because you'll need to track down information, rework sections you thought were fine, or address other large gaps that will require more time and effort than you wanted to spend. Even so, it's worth it. Other times, reviewers might have very little to say except praise for a job well done.
 
 ### When does the review cycle end {#when_does_it_end}
 
-The review cycle ends when you release the product, basically. If there's no release timeframe, it ends when your number of edits approach zero with each revision. With each review session, there should be fewer edits to make from subsequent reviewers. At some point, as you're reading and rereading the docs, you'll end up changing only minor cosmetic style and grammar details. When you hit this point (accompanied by doc nausea), recognize that your changes are no longer moving the needle anymore. You've addressed content accuracy, information about user journeys, and other higher-level concerns. If you ever find yourself changing a period to a semicolon and then back to a period, stop. You've hit the editing wall. No one cares at this point. Also, if your readers are engineers, they probably won't appreciate the fine stylistic details you might be tweaking anyway. To move the content to the next level, you need partner feedback from the actual people using the product.
+The review cycle ends when you release the product, basically. If there's no release timeframe, it ends when your number of edits approach zero with each revision. With each review session, there should be fewer edits to make from subsequent reviewers. At some point, as you're reading and rereading the docs, you'll end up changing only minor cosmetic style and grammar details. When you hit this point (accompanied by doc nausea), recognize that your changes are no longer moving the needle anymore. You've addressed content accuracy, information about user journeys, and other higher-level concerns.
+
+If you ever find yourself changing a period to a semicolon and then back to a period, stop. You've hit the editing wall. No one cares at this point. Also, if your readers are engineers, they probably won't appreciate the fine stylistic details you might be tweaking anyway. To move the content to the next level, you need partner feedback from the actual people using the product.
 
 ## Next steps
 

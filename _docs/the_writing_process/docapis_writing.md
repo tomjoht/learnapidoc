@@ -6,13 +6,10 @@ weight: 8.94
 sidebar: docapis
 section: writing_process
 path1: /writing_process.html
-last-modified: 2021-11-15
+last-modified: 2021-11-19
 ---
 
 In this section, I'll dive into practical tips and strategies for writing the content. Before you get to this point, I assume you've already done some [planning](docapis_planning.html) and [information gathering](docapis_information_gathering.html).
-
-{: .note}
-This content is new, so it might still be a bit rough. I'm especially interested in any feedback you have. You can leave feedback in the comment section below or by [contacting me](/learnapidoc/contact).
 
 {% if site.format == "web" %}
 * TOC
@@ -105,7 +102,7 @@ Additionally, many days I don't feel like writing, but if I rev up my brain by r
 
 Editing requires a fresh perspective, so I allow myself some space between edits &mdash; usually about a day. If I just keep editing the same content over and over all day long, especially content that I've only recently written, I become blind to so many aspects of it. I can't see all the problems. Somehow, allowing myself 24 hours focusing on other things enlivens my ability to see issues and fix errors in the content.
 
-Ideally, if I can space out edits each day over the course of a week, that gives me 5 separate editing sessions. I'm usually amazed at how much I can fix and make professional during this time period. It's really the secret to good writing. In contrast, if I crank out the content the day before and release it, the content isn't nearly as good as putting it through a cycle of edits spaced out like this. Think of it like bread that you have to let rise, followed by a session of kneading. When you make bread from scratch, you might need to let it rise a few times and punch it down to get it into the right shape.
+Ideally, if I can space out edits each day over the course of a week, that gives me 5 separate editing sessions. I'm usually amazed at how much I can fix and polish during this time period. It's really the secret to good writing. In contrast, if I crank out the content the day before and release it, the content isn't nearly as good as putting it through a cycle of edits spaced out like this. Think of it like bread that you have to let rise, followed by a session of kneading. When you make bread from scratch, you might need to let it rise a few times and punch it down to get it into the right shape.
 
 ## 3.7 Supplement confusing concepts with visuals and code examples {#visuals_and_code_examples}
 
@@ -127,7 +124,7 @@ Overall, Roam argues that you should get rid of the idea that graphics can only 
 Here are some general techniques to follow when creating visuals:
 
 * To show a difference between two things, consider showing graphics side by side with a slight difference between them.
-* To keep the minimalist focus, try to communicate your ideas showing as few lines as possible. Check out [Jean-luc Doumont's Trees, maps, and theorems](/2009/06/25/page-layout-and-design-tips-from-jean-luc-doumonts-trees-maps-and-theorems/) for inspiration. Or read about how [Edward Tufte despises chart junk](/2010/11/01/what-is-chartjunk-visual-imagination-2/).
+* To keep the minimalist focus, try to communicate your ideas by showing as few lines as possible. Check out [Jean-luc Doumont's Trees, maps, and theorems](/2009/06/25/page-layout-and-design-tips-from-jean-luc-doumonts-trees-maps-and-theorems/) for inspiration. Or read about how [Edward Tufte despises chart junk](/2010/11/01/what-is-chartjunk-visual-imagination-2/).
 * Use a change in color to draw attention to something; one subtle color change in an element can bring the reader's focus to what you're trying to highlight. (This is a tip from Doumont's book.)
 
 Overall, creating visuals might be a welcome change from writing. You're still working but not taxing the same part of the brain.
@@ -156,9 +153,9 @@ Once you get that first draft, you can iterate endlessly afterward as you edit a
 
 At some point when the content is more or less finalized, run it through a spell checker. You might prefer to do this later, after the reviews, but using a spellchecker now can help eliminate superficial errors so that reviewers aren't distracted by the typos and misspellings but can instead focus on substance.
 
-My favorite spellchecker is [Grammarly](https://app.grammarly.com/), though this service tends to be blocked in most companies due to the way Grammarly stores data on its servers. See [Is Premium Grammarly worth it for identifying style and grammar issues in tech docs?](/2018/12/28/evaluating-grammarly-as-a-style-checker/) for more details.
+My favorite spell checker is [Grammarly](https://app.grammarly.com/), though this service tends to be blocked in most companies due to the way Grammarly stores data on its servers. See [Is Premium Grammarly worth it for identifying style and grammar issues in tech docs?](/2018/12/28/evaluating-grammarly-as-a-style-checker/) for more details.
 
-Other options could be the spellchecker in Microsoft Word, Google Docs, [HyperSTE plugin](/2017/01/25/hyperste-simplified-technical-english-asd-ste100/) (to check for simplified technical English), or Acrolinx (if your company has it).
+Other options could be the spell checker in Microsoft Word, Google Docs, [HyperSTE plugin](/2017/01/25/hyperste-simplified-technical-english-asd-ste100/) (to check for simplified technical English), or Acrolinx (if your company has it).
 
 You might be amazed by how many errors these services catch, especially in lengthy content. I personally prefer to leverage as many of these services as possible. I almost always use Grammarly to check new blog posts and articles on my site. One writing teacher explained that a small grammar or spelling error calls attention to itself and can be like having your fly down while you're wearing a tuxedo. Imagine finishing writing 2,000 words of content, sending it to your entire department, and getting feedback from a higher-up executive that you misspelled a word. That kind of superficial feedback can be deflating.
 

@@ -6,13 +6,10 @@ weight: 8.92
 sidebar: docapis
 section: writing_process
 path1: /writing_process.html
-last-modified: 2021-11-15
+last-modified: 2021-11-19
 ---
 
 First things first &mdash; you need to figure out what the writing project involves by doing some basic planning. In this step, you'll create a doc plan, establish roles, gather source material, and view a demo.
-
-{: .note}
-This content is new, so it might still be a bit rough. I'm especially interested in any feedback you have. You can leave feedback in the comment section below or by [contacting me](/learnapidoc/contact).
 
 {% if site.format == "web" %}
 * TOC
@@ -69,7 +66,7 @@ Even so, the product design document is usually a goldmine of information for do
 
 The engineers usually populate the **reference documentation** themselves, building Javadoc from annotations in the source code. They may want you to review the reference content, but most comments you'll have will come later in the writing process, after you've written some documentation and become familiar with the product/API.
 
-At any rate, the Javadoc output will give you a good sense of what classes and methods are available in the API. It will communicate the scope and the possible use cases. Ask the engineers to generate a Javadoc output for you to review. 
+At any rate, the Javadoc output will give you a good sense of what classes and methods are available in the API. It will communicate the scope and the possible use cases. Ask the engineers to generate a Javadoc output for you to review.
 
 {% include random_ad4.html %}
 
@@ -79,7 +76,7 @@ Besides the pitch materials, product design, and Javadoc, there might be other d
 
 The next step is to ask the product team for a demo of some kind. Perhaps one of the engineers has written a sample app that demonstrates how to call the API in some scenario and what to do with the response. The response might simply be to log data to the console, or to see it rendered in the terminal. That's  fine, and this simplicity is actually what you want at this point. You don't want an enterprise-scale application that has so many different dimensions and files that the API is obscured. You want a simple sample app that shows how to call the API and what data comes back.
 
-If you can, try to play around with the demo yourself. Try to get the product to work in some way, even if it's just superficial. For example, you could ask this same engineer who created the sample app to share the sample app with you and provide details on how to run it. Get it working and play around with it a little bit so you get a better sense of what you're documenting. (See [Set up a test environment](testingdocs_test_environment.html) for more details.) 
+If you can, try to play around with the demo yourself. Try to get the product to work in some way, even if it's just superficial. For example, you could ask this same engineer who created the sample app to share the sample app with you and provide details on how to run it. Get it working and play around with it a little bit so you get a better sense of what you're documenting. (See [Set up a test environment](testingdocs_test_environment.html) for more details.)
 
 Almost no engineer develops an API without also developing a sample app that calls the API and gets some data back, though frequently the sample app is just a bare-bones type of code project that logs data. Having some initial familiarity with the product will pay dividends later as you start writing about the feature.
 

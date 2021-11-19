@@ -6,13 +6,10 @@ weight: 8.93
 sidebar: docapis
 section: writing_process
 path1: /writing_process.html
-last-modified: 2021-11-15
+last-modified: 2021-11-19
 ---
 
 Now that you've [created a doc plan](docapis_planning.html), gathered up source material (and presumably read it as well), and observed a demo, you're ready to move on to phase two of the writing process: information gathering through interviews.
-
-{: .note}
-This content is new, so it might still be a bit rough. I'm especially interested in any feedback you have. You can leave feedback in the comment section below or by [contacting me](/learnapidoc/contact).
 
 {% if site.format == "web" %}
 * TOC
@@ -52,7 +49,7 @@ For example, in our scenario of creating an API for coffee shops, perhaps the pr
 
 When these differences of opinion surface, don't be surprised. You will occasionally run into a product manager who freaks out about potential content almost going out to partners before it can be edited/tweaked in a certain way, which actually changes the direction provided by some other group. In these scenarios, your role pivots from tech writer to something entirely different: _product aligner_. During these moments, your role is to help define and shape the product's story and messaging.
 
-Rather than inserting yourself any disputes between groups, let the different groups do their own sparring and other hand-to-hand combat. Your job is mostly just to bring them into the ring together and see who's left standing at the end.
+Rather than inserting yourself into any disputes between groups, let the different groups do their own sparring and other hand-to-hand combat. Your job is mostly just to bring them into the ring together and see who's left standing at the end.
 
 ### Be aware of engineering myopia {#engineering_myopia}
 
