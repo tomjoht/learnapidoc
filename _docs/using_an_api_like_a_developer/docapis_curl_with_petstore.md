@@ -98,7 +98,7 @@ Find your pet's name by passing the ID into the `/pet/{petID}` endpoint:
 2.  Use this curl command to get information about that pet ID, replacing `51231236` with your pet ID.
 
     ```bash
-    curl -X GET --header "Accept: application/json" "http://petstore.swagger.io/v2/pet/51231236"
+    curl -X GET --header "Accept: application/json" "https://petstore.swagger.io/v2/pet/51231236"
     ```
 
     The response contains your pet's name and other information:
@@ -137,13 +137,13 @@ Unfortunately, your pet has died. It's time to delete your pet from the pet regi
 1.  Use the DELETE method to remove your pet. Replace `5123123` with your pet ID:
 
     ```bash
-    curl -X DELETE --header "Accept: application/json" "http://petstore.swagger.io/v2/pet/5123123"
+    curl -X DELETE --header "Accept: application/json" "https://petstore.swagger.io/v2/pet/5123123"
     ```
 
 2.  Now check to make sure your pet is removed. Use a GET request to look for your pet with that ID:
 
     ```bash
-    curl -X GET --header "Accept: application/json" "http://petstore.swagger.io/v2/pet/5123123"
+    curl -X GET --header "Accept: application/json" "https://petstore.swagger.io/v2/pet/5123123"
     ```
 
     You should see this error message:
@@ -180,7 +180,7 @@ You can import curl commands into Postman by doing the following:
 2.  Select **Paste Raw Text** and insert your curl command:
 
     ```bash
-    curl -X GET --header "Accept: application/json" "http://petstore.swagger.io/v2/pet/5123123"
+    curl -X GET --header "Accept: application/json" "https://petstore.swagger.io/v2/pet/5123123"
     ```
 
     Make sure you don't have any extra spaces at the beginning.
