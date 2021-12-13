@@ -17,6 +17,8 @@ The basic process of sharing meeting notes hardly needs explanation. It's mostly
 
 Each meeting should have an associated meeting doc. You or someone else takes notes during the meeting. (Hopefully, in this same doc, you have an agenda to prime the meeting's focus and discussion.) Afterward, you type up the meeting notes and send them via email to all relevant groups. The relevant groups are usually broader than the meeting attendees, and that's part of the strategy. That's really all there is to it, though I've expanded on some more aspects of the process below.
 
+{% include random_ad4.html %}
+
 ## Meeting notes are often more interesting to read
 
 Meeting notes provide a natural story foundation to build around. Usually, meetings involve discussions of issues. In writers' terms, issues are really conflicts. And as all writers know, conflict drives story, and story engages readers. This is why you might find that typing up meeting notes is more fun than writing documentation reports. You can describe real issues you're running up against, strategies you took to solve the issues, outcomes, and more.
@@ -30,6 +32,8 @@ As with any real issues, the matters discussed might be sensitive. If people are
 As you get into a rhythm of sharing meeting notes after the meeting, people might begin to recognize that anything they say might be shared with others outside the meeting. This fear can be a detractor for people opening up during the meeting, so make sure you don't expose anyone in a way that would be inflammatory or embarrassing. For example, don't write, "John said he can't stand working with the ACME engineering team because they never review his docs, so he seems to have deprioritized their project." Instead, tone it down: "Some members noted challenges in getting timely doc reviews; getting ignored until the last day before release can be demotivating and create unnecessary crisis situations."
 
 On the flip side, sometimes surfacing issues is a good thing, as it forces the issues into open daylight where some action can be taken. It doesn't make sense to hold everything inside all the time, fuming in silence. One of the purposes of sharing notes is to effect change. If you have an ugly issue to deal with, sometimes writing about it with transparency and honesty is a good approach, even if it ruffles some feathers or induces pain. For example, "Writers were unable to get timely reviews from the ACME engineers, which caused us to shift priorities to groups that value our time and energy more." A sentence like that might send shock waves into the ACME group, but hey, you wanted change, right?
+
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 ## The structure of meeting notes
 
@@ -60,6 +64,8 @@ Also, recognize that the first few write-ups are the most time-consuming (as wit
 
 Overall, strike a balance between context and concision that makes sense time-wise. Expect that readers will likely glance through the notes and see if anything merits a closer read.
 
+{% include random_ad2.html %}
+
 ## How do you decide on who to include in the broadcast?
 
 Who you include in the notes broadcast is how you "manage up," as they say. This is where broadcasting meeting notes becomes strategic. For example, suppose you have a channel where many groups post their meeting notes and the business stakeholders read them to stay updated across these groups. This means you'll have some readers who are 2-3 levels above your team. What do you want them to know about your team? About documentation? Raise issues and help them get a better sense of your challenges, successes, and other matters.
@@ -67,6 +73,8 @@ Who you include in the notes broadcast is how you "manage up," as they say. This
 For example, suppose you faced challenges in figuring out the context for a new documentation topic. Maybe the documentation covers a new API that doesn't fit into any specific product's docs. This product ambiguity is causing confusion in the organization of docs. Maybe a senior leader can share some insights that would help clarify the product direction and fit with other content. And if a senior leader starts chiming in with insights, they'll suddenly become aware of the docs, what they contain, and that you've been working on components relevant to the user experience for the API.
 
 Besides influencing up, you can also include parallel teams (especially those outside your immediate organization) to influence across. Other writer groups might have more insight into processes and techniques that could help you with the issues you face. The challenges your group encounters are likely similar to issues that other writer groups have faced (and maybe solved). Others might have been around much longer and have solutions, so loop them in if appropriate.
+
+{% include random_ad1.html %}
 
 ## How can you leverage post-meeting participation from non-meeting participants?
 
@@ -83,6 +91,8 @@ However, I've learned that as a blogger, readers value transparency. We like to 
 One consequence of sharing your meeting notes is that you become visible. It takes guts to share a meeting write-up with 50 people. Do that repeatedly, and pretty soon they come to know you. This is what happened with my blog, idratherbewriting.com. I rarely go to any tech comm event without running into people who know me (even if I don't know them). Blogging has made me super visible. Is visibility a good thing? Why would you want to be visible, and what do you do with that visibility?
 
 Visibility for the sake of visibility alone is vanity. Almost no introverted writer wants to be this visible, with everyone carefully seeing your every move and thought. I never wanted to be a "famous" technical writer, if such a description is warranted. However, with visibility comes _influence_. Your visibility gives you a platform to influence others in ways that those without the platform lack. This is why NBA players often talk about issues outside of basketball &mdash; because they recognize that their visibility gives them more influence with people. Their spotlight on national television gives them a platform that many have used to highlight racial injustices.
+
+{% include image_ad_right.html %}
 
 What will you use your influence for? You've earned the influence through your hard work, writing up meeting notes and daring to share them with broad groups. At some point, you'll need to recognize that you've become an influencer and ponder what that means. With my blog, I've tried to influence the tech comm community to see API documentation as more than just generating reference material, and to move toward docs-as-code tooling. I've also tried to show the many interesting facets and angles of a "boring" tech comm career. But I admit, I don't actively sit around thinking about influence. I just write articles or record podcasts about issues that matter to me, without thinking of the wider impact. Consequences related to influence naturally follow, which is what I suspect will happen when you broadcast your meeting notes over the course of a year or more.
 

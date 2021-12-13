@@ -43,7 +43,7 @@ Before we jump into this process, let's start by presenting a writing scenario. 
 
 The API is slated for release next month, so even though engineers have been cracking away at this API for half a year, they're mostly done and ready for you to create the documentation. You have about three weeks to learn the product, write the docs, get the docs reviewed, and publish the docs in time for release.
 
-This is a very typical scenario and timeline, by the way &mdash; being brought in at the ninth inning, often unaware of the product's development cycles that have been going on for months previously. Product teams are long past the stage where they debated the best implementation, the feature set, how the API matches use cases, and so on. By the time you're brought in, they've already entered QA testing stages and just need to put a bow on the product with some docs before shipping it.
+This is a very typical scenario and timeline, by the way &mdash; being brought at the last minute, often unaware of the product's development cycles that have been going on for months previously. Product teams are long past the stage where they debated the best implementation, the feature set, how the API matches use cases, and so on. By the time you're brought in, they've already entered QA testing stages and just need to put a bow on the product with some docs before shipping it.
 
 {% include random_ad1.html %}
 
