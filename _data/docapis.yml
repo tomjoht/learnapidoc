@@ -435,6 +435,9 @@ folders:
   - title: "Sending doc status reports -- a tool for visibility and relationship building"
     jurl: /docapis_status_reports.html
 
+  - title: Broadcasting your meeting notes to influence a wider audience
+    jurl: /docapis_meeting_notes.html
+
   - title: "Ensuring documentation coverage with each software release"
     jurl: /docapis_release_process.html
 

@@ -29,6 +29,11 @@ The following are the most recent updates to the API documentation course.
 </thead>
 <tbody>
 <tr>
+  <td>December 2021</td>
+  <td markdown="span">[Broadcasting your meeting notes to influence a wider audience](docapis_meeting_notes.html)</td>
+  <td markdown="span">Added a new article about why you should broadcast your meeting notes as a tool for influencing other groups.</td>
+</tr>
+<tr>
   <td>November 2021</td>
   <td markdown="span">
   [Overview of the writing process](docapis_writing_process_overview.html)<br/>
