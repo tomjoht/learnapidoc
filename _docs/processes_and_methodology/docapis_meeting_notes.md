@@ -9,7 +9,7 @@ path1: /docapis_managing_doc_processes.html
 last-modified: 2021-12-11
 ---
 
-In a previous topic, [Sending doc status reports -- a tool for visibility and relationship building](docapis_status_reports.html), I explained how to create and distribute documentation reports. Another tool for accomplishing a similar purpose &mdash; that of making others in your company aware of documentation processes, newly published articles, how to work with your team, etc. &mdash; is to broadcast your meeting notes after each meeting. Although sharing meeting notes with meeting participants after the meeting isn't anything new, with a few small adjustments, it can be powerful.
+In a previous topic, [Sending doc status reports -- a tool for visibility and relationship building](docapis_status_reports.html), I explained how to create and distribute documentation reports. Another tool for accomplishing a similar purpose &mdash; that of making others in your company aware of documentation processes, newly published articles, how to work with your team, etc. &mdash; is to broadcast your meeting notes after each meeting. Although sharing meeting notes with meeting participants after the meeting isn't anything new, with a few small adjustments, it can be a powerful way to influence those around you.
 
 The basic process of sharing meeting notes hardly needs explanation. It's mostly just a bit time consuming and might put you out of your comfort zone. First, you need to determine which meetings you'll generate notes from. Usually you have some meetings with partner engineers, with other teams publishing in your dev portal, with your own team, or with some teams for high priority projects. Select the meetings where you focus on docs and topics others might care about.
 
