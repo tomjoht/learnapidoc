@@ -59,7 +59,7 @@ Before diving too far down in the OpenWeatherMap API, let's look at another weat
 2. Click **Documentation** on the top navigation bar. Then click **AerisWeather API**.
 3. In the left sidebar, under Reference, click **Endpoints**. Select the **All** tab to show all endpoints, and then scroll down a bit and click **[observations](https://www.aerisweather.com/support/docs/api/reference/endpoints/observations/)**.
 
-	<a class="noCrossRef" href="http://www.aerisweather.com/support/docs/api/reference/endpoints/" class="noExtIcon"><img class="medium" src="{{site.media}}/aerisweather3.png" alt="Aeris Endpoints" /></a>
+	<a class="noCrossRef" href="https://www.aerisweather.com/support/docs/api/reference/endpoints/observations/" class="noExtIcon"><img class="medium" src="{{site.media}}/aerisweather3.png" alt="Aeris Endpoints" /></a>
 
 4. Browse the type of information that is available through this endpoint. Does this endpoint provide information about wind and temperature that would work for our sample development scenario?
 
