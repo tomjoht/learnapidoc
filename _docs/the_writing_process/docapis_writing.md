@@ -27,7 +27,7 @@ You must now begin organizing the information. I think of this task like sorting
 Now that you have different groups of content, create outlines for each group.  I described the general shape of different documentation types in the [Conceptual topics section](/learnapidoc/docconceptual.html). For more documentation projects, you'll need several sections:
 
 * [Product overview](/learnapidoc/docapis_doc_overview.html) &mdash; high-level description of the feature, requirements, prerequisites, geographic availability, components involved, workflow implementation, how to get help, etc.
-* Concepts &mdash; foundational concepts related to using the feature. These topics might include diagrams or other visuals to assist with understanding.
+* [Concepts](docapis_conceptual_topics_overview.html) &mdash; foundational concepts related to using the feature. These topics might include diagrams or other visuals to assist with understanding.
 * [Reference](/learnapidoc/docendpoints.html) &mdash; the Javadoc or other reference documentation.
 * How-tos &mdash; descriptions of how to implement the API and handle various scenarios.
 

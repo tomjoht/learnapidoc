@@ -66,6 +66,8 @@ Another strategy is to layer the review process. It doesn't make sense to have a
 
 Without staggering the reviews, if you have five reviewers all look at the content at the same time, they might all point out the same issues. After you fix the issues, you won't have any more reviewers to look at the revised copy because you've already consumed all their reviewing time.
 
+{% include random_ad2.html %}
+
 Reviewers do actually have a finite amount of time they're willing to meet with you to review content, especially people in higher-level roles. For example, if you're pulling in a Level 8 or 9 person, don't expect to get more than 30 minutes of their review time total for the entire project. You basically get one shot with them and that's it. Because of this, you want to stagger your reviews so that the higher-ups review content only after the lower-levels have ironed out all of the issues.
 
 To layer this review process, start the review at the product team and expand out from there. After you get the engineers to review the content, review it with the PM, then the partner engineers, then any other stakeholders (e.g, support groups), then business development, and finally any executives if the content requires it. You might not need to include all these groups, but include at least several as appropriate. The review process should look somewhat like this:

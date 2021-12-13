@@ -58,7 +58,7 @@ To provide some background first, here's how most software development groups wo
 
 Once a product is green-lit, the feature gets planned for a specific timeframe (for example, 2021 Quarter 4), and the team who will develop the feature gets identified. The product team then sizes up the feature and writes a **product design document** that acts as the blueprint for the feature's design. The engineers will debate the proposed design long before any actual code development begins.
 
-{% include random_ad1.html %}
+{% include random_ad4.html %}
 
 During the code development phase, some names used in the product design document will probably change, and some other details as well. The first release is usually a "minimum viable product," or MVP, so it will lack some features described in the document.
 
@@ -67,8 +67,6 @@ Even so, the product design document is usually a goldmine of information for do
 The engineers usually populate the **reference documentation** themselves, building Javadoc from annotations in the source code. They may want you to review the reference content, but most comments you'll have will come later in the writing process, after you've written some documentation and become familiar with the product/API.
 
 At any rate, the Javadoc output will give you a good sense of what classes and methods are available in the API. It will communicate the scope and the possible use cases. Ask the engineers to generate a Javadoc output for you to review.
-
-{% include random_ad4.html %}
 
 Besides the pitch materials, product design, and Javadoc, there might be other documents as well to gather. Each company tends to call its documents by unique names. Understand what the key documents are for projects in your company, and this will usually unlock people finding and giving them to you. Gather up as many documents as you can find, list them in your doc plan in a resources section, and then browse through these documents to (a) learn about the product, and (b) see what material you can use either directly or indirectly in your docs.
 

@@ -43,7 +43,7 @@ With each interview, it's good to give the person a list of questions ahead of t
 
 There's another reason for reaching out to these four distinct groups: any group alone might present a skewed perspective, and without more variety, it's easy to mistake their perspective as the *Truth*. When you write documentation, you often raise awareness about differing points of view that need to be addressed. You might find disagreements between engineering and product management, or between product management and business development, and so on.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}}
+{% comment %}{% include random_ad3.html %}{% endcomment %}
 
 For example, in our scenario of creating an API for coffee shops, perhaps the product management group envisions partners being able to add their own coffee shops and supplementary data, including ratings and reviews &mdash; essentially enabling partners to both read and write to the API. In contrast, Engineering might have more conservative views about what's possible with the data and might want to promote a more simplified model of updates only going one way &mdash; read-only. Writing documentation raises awareness of these differences and will force these groups to align as they review the documentation.
 
@@ -76,7 +76,7 @@ Some questions to ask the engineer might be as follows:
 * How do you use this API for some common use cases?
 * Are there limitations that partners will want to know about?
 
-**Pitwall warning:** The engineer might give you a Javadoc and say that all the details are contained within the Javadoc, and it's self-explanatory to any Java engineer &mdash; as such, there's not much more to say. *All a user needs is a Javadoc to understand the API and implementation details*. For tech writers without an engineering background, this attitude can be difficult to counter because the Javadoc is challenging to read without a background in Java. In fact, just navigating the Javadoc output can be confusing, and you might feel up against a technology barrier, unsure if your lack of understanding will make it impossible to write intelligently about the feature. What does the user know or not know? What is common knowledge in the programming domain and what isn't? Are engineers even using industry standard terms here? You're at a real disadvantage in this situation, but press the engineer to provide some details.
+**Pitfall warning:** The engineer might give you a Javadoc and say that all the details are contained within the Javadoc, and it's self-explanatory to any Java engineer &mdash; as such, there's not much more to say. *All a user needs is a Javadoc to understand the API and implementation details*. For tech writers without an engineering background, this attitude can be difficult to counter because the Javadoc is challenging to read without a background in Java. In fact, just navigating the Javadoc output can be confusing, and you might feel up against a technology barrier, unsure if your lack of understanding will make it impossible to write intelligently about the feature. What does the user know or not know? What is common knowledge in the programming domain and what isn't? Are engineers even using industry standard terms here? You're at a real disadvantage in this situation, but press the engineer to provide some details.
 
 Recognize this attitude ("All the developer needs is this Javadoc!") as a red flag to push back on. You can later get more ammunition for a counter argument when you meet with partner engineers, but for now, press on.
 
@@ -111,7 +111,8 @@ Whereas the engineers might note some important issues/limitations, the PM might
 
 While this might be reasonable in many situations, if X is a feature most users will want or expect to do, the documentation should mention it. Tech writers are supposed to be _user_ champions, not product champions. For example, in our coffee API scenario, suppose the coffee API works only for coffee produced in the U.S., not coffee imported from Columbia, Guatemala, or elsewhere. It would be a pretty big gap not to mention this limitation explicitly in the documentation.
 
-For more on the topic of transparency, see ([Transparency in documentation: dealing with limits about what you can and cannot say](/2017/07/13/transparency-in-documentation/).)
+{: .tip}
+For more on the topic of transparency, see [Transparency in documentation: dealing with limits about what you can and cannot say](/2017/07/13/transparency-in-documentation/).
 
 Keep the PM in the loop of the doc review even if they have little input on the technical aspects of the product. The PM is aware of all the stakeholders that you might not know about, and they can easily pull people into conversations to answer questions. For example, the PM likely connects the dots up the executive chain and can include others in the doc review several levels above you, or across teams that you didn't even know existed. The PM can be your connection point to all the other teams and interested parties related to the feature.
 
