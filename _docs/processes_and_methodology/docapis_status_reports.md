@@ -150,6 +150,5 @@ What are the outcomes of regularly sending status reports? If you send regular s
 * You get better at planning and anticipating long-term doc work and needs.
 * When it comes time to write your annual review, you'll already have a body of content to draw from.
 
-## Feedback
-
-I'd like to collect feedback about your experiences with doc reports. Please take this [short survey to answer a few questions](https://www.questionpro.com/t/AOaGwZn5CW). You can see the [ongoing results here](https://www.questionpro.com/t/7BmeCkZn5CW).
+{: .tip}
+See also [Broadcasting your meeting notes to influence a wider audience](docapis_meeting_notes.html) for another approach to influencing those around you by sharing documentation topics and issues you face.
