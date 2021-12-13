@@ -9,7 +9,7 @@ path1: /docapis_metrics_and_measurement.html
 last-modified: 2021-02-15
 ---
 
-You can use two templates for the metrics described in this [Metrics and measurement section](docapis_metrics_and_measurement.html). These templates were designed to work with Google Docs / Microsoft Word and Google Sheets / Microsoft Excel. The purpose of the coc template is for narrative/qualitative assessments, while the spreadsheet template is to more easily calculate the scores.
+You can use two templates for the metrics described in this [Metrics and measurement section](docapis_metrics_and_measurement.html). These templates were designed to work with Google Docs / Microsoft Word and Google Sheets / Microsoft Excel. The purpose of the doc template is for narrative/qualitative assessments, while the spreadsheet template is to more easily calculate the scores.
 
 * TOC
 {:toc}  
