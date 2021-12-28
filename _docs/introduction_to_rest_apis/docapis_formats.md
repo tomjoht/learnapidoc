@@ -19,11 +19,11 @@ I periodically regenerate these formats, so the content should more or less be t
 
 ## PDF
 
-To read the content as PDF, it's recommended that you either read the PDF in [Adobe Acrobat Reader DC](https://get.adobe.com/reader/) (or similar) so that you can highlight and annotate the content, or that you print only specific sections at a time, defining the page ranges. Otherwise, this 900+ page PDF will consume an entire tree.
+To read the content as PDF, I recommended that you either read the PDF in [Adobe Acrobat Reader DC](https://get.adobe.com/reader/) (or similar) so that you can highlight and annotate the content, or that you print only specific sections at a time, defining the page ranges. Otherwise, this 900+ page PDF will consume an entire tree.
 
 ## Kindle
 
-You can use either MOBI or EPUB formats on Kindle. although Kindle switched to primarily preferring EPUB, it still supports MOBI, and the MOBI file has a better table of contents from the "Go to" button, so I recommend using MOBI.
+You can use either MOBI or EPUB formats on Kindle. Although Kindle switched to primarily preferring EPUB, it still supports MOBI, and the MOBI file has a better table of contents from the "Go to" button, so I recommend using MOBI for Kindle.
 
 To read the content on Kindle device:
 
@@ -36,6 +36,8 @@ To read the content on Kindle device:
     On your Kindle, click Contents button on the Kindle nav bar to browse through the sections at any time.
 
 You can also read the content on a Kindle viewer on your computer. The content added to your physical device automatically syncs with the computer app.
+
+(Note: The ebook version isn't on Amazon.com yet, so you have to download the file and transfer it manually to your device.)
 
 ## EPUB
 

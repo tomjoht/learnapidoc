@@ -55,6 +55,8 @@ to test on kindle fire:
 - put in books folder
 - restart
 
+## EPUB
+use https://cloudconvert.com/mobi-to-epub to convert mobi to epub. Register and sign in first (otherwise you exceed your free unregistered time).
 
 ## PDF
 - not really necessary to generate this except if someone wants to print out the entire book
@@ -89,3 +91,6 @@ it builds from the local, so it's not necessary to have serve_pdf running
 3. uses the default.html layout
 layout: default.html
 css: main.css (compiles from sass)
+
+## Upload to the web
+./upload_outputs.sh
