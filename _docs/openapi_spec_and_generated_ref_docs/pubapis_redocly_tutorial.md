@@ -510,7 +510,7 @@ The lack of the Try-it explorer in the Redoc community edition is a major reason
 Here's a short video explaining the top 3 reasons why people choose the pro version:
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/pubapis_redocly_tutorial.html to view the content.
+*Note: This content doesn't embed well in print, as it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/pubapis_redocly_tutorial.html] to view the content.*
 {% endif %}
 
 {% if site.format == "web" %}
@@ -687,7 +687,7 @@ For sample API reference docs built with Redoc, see [Some Real-life usages](http
 Redoc provides one of the most attractive outputs for REST API docs. In a [recent survey about trends in developer documentation](https://idratherbewriting.com/learnapidoc/docapis_trends.html), I asked developers "How do you render the OpenAPI specification into documentation?" Although [Swagger UI](https://idratherbewriting.com/learnapidoc/pubapis_swagger.html) was the most common (used 27% of the time), this is likely because it's free. The premium version of Swagger (called [SwaggerHub](https://idratherbewriting.com/learnapidoc/pubapis_swaggerhub_smartbear.html)) was used only 4% of the time. In contrast, Redoc was used 8% of the time.
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-This content doesn't embed well in print, as it contains JavaScript. Please go to https://idratherbewriting.com/learnapidoc/pubapis_redocly_tutorial.html to view the content.
+*Note: This content doesn't embed well in print, as it contains JavaScript. Please go to [https://idratherbewriting.com/learnapidoc/pubapis_redocly_tutorial.html] to view the content.*
 {% endif %}
 
 {% if site.format == "web" %}

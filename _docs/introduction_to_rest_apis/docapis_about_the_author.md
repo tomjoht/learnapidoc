@@ -47,6 +47,6 @@ You're in the right place. By the time you finish this course, you'll have a sol
 
 By the way, I keep adding to this course in a [Winchester Mystery House](https://www.winchestermysteryhouse.com/sarahs-story/) way, which means I keep adding rooms and extra hallways and doors, etc. If you were to print it out, the course would be more than 500 pages long. Few people get through the whole of it, and by the time they do, I've usually added a new section. So jump in and read through the topics you find most relevant and interesting. Don't feel compelled to get through it all.
 
-If you have a question for me, or just want to drop me a line, you can contact me through my [Contact page](https://idratherbewriting.com/learnapidoc/contact.html). However, for most questions, you'll get a much better response by asking them in the [Write the Docs Slack](https://www.writethedocs.org/slack/). I'm also on Write the Docs Slack [@tomjohnson](https://writethedocs.slack.com/team/tomjohnson), so feel free to ask me questions there.
+If you have a question for me, or just want to drop me a line, you can contact me through my [Contact page](https://idratherbewriting.com/learnapidoc/contact.html){: .noCrossRef}. However, for most questions, you'll get a much better response by asking them in the [Write the Docs Slack](https://www.writethedocs.org/slack/). I'm also on Write the Docs Slack [@tomjohnson](https://writethedocs.slack.com/team/tomjohnson), so feel free to ask me questions there.
 
 {% include random_ad1.html %}

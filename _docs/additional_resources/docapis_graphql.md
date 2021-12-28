@@ -19,7 +19,7 @@ This article was written by Casey Armstrong on July 1, 2019, and originally titl
 
 ## Introduction
 
-<figure><a class="noCrossRef" href="https://unsplash.com/photos/69BTCuFDuDA"><img alt="Photo by Marat Gilyadzinov on Unsplash" src="{{site.media}}/marat-gilyadzinov-69BTCuFDuDA-unsplash.jpg" alt="Should GraphQL be on your radar?" /></a><figcaption>Should GraphQL be on your radar?</figcaption></figure>
+<figure><a class="noCrossRef" href="https://unsplash.com/photos/69BTCuFDuDA"><img alt="Photo by Marat Gilyadzinov on Unsplash" src="{{site.media}}/graphqlradar.jpeg" alt="Should GraphQL be on your radar?" /></a><figcaption>Should GraphQL be on your radar?</figcaption></figure>
 
 If you are like me, a budding technical writer, and you are just getting started with writing developer documentation, then you might already feel like you have a full plate in terms of learning new technologies. Alas, the evolving world of developer tools and API related technology has shown that it has absolutely no intention of slowing down for us!
 
@@ -98,7 +98,7 @@ The GraphQL foundation claims that their unique approach allows developers to de
 Furthermore, [Howtographql.com](https://www.howtographql.com/basics/1-graphql-is-the-better-rest/) claims that "REST APIs have shown to be too inflexible to keep up with the rapidly changing requirements of the clients that access them (and ...) GraphQL (…) solves many of the shortcomings and inefficiencies that developers experience when interacting with REST APIs." That same tutorial site features a video showing examples of these points:
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/docapis_graphql.html to view the content.
+*Note: This content doesn't embed well in print, as it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/docapis_graphql.html] to view the content.*
 {% endif %}
 
 {% if site.format == "web" %}
@@ -156,7 +156,7 @@ This leads to Chris’s conclusion that tech writers are still needed here if on
 James Scott, another technical writer, also sees a role for technical writers in the world of GraphQL. You can see his concise and very helpful talk here:
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/docapis_graphql.html to view the content.
+*Note: This content doesn't embed well in print, as it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/docapis_graphql.html] to view the content.*
 {% endif %}
 
 {% if site.format == "web" %}
@@ -182,7 +182,7 @@ My guess is that maybe the movement is [driven by developers who decide to use i
 However, tech writers that work with it do exist! Here, for example, is a technical writer, Andrew Johnston, at Shopify talking about their process of documenting a GraphQL API at Shopify:
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/docapis_graphql.html to view the content.
+*Note: This content doesn't embed well in print, as it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/docapis_graphql.html] to view the content.*
 {% endif %}
 
 {% if site.format == "web" %}

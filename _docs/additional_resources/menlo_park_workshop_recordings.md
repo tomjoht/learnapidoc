@@ -15,7 +15,7 @@ I recorded this full-day API documentation in Menlo Park, California, on Novembe
 {:toc}
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-This content doesn't embed well in print, as it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/docapis_course_videos.html](https://idratherbewriting.com/learnapidoc/docapis_course_videos.html) to view the content.
+*Note: This content doesn't embed well in print, as it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/docapis_course_videos.html] to view the content.*
 {% endif %}
 
 {% if site.format == "web" %}

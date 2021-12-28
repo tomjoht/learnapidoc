@@ -10,7 +10,7 @@ weight: 1.01
 redirect_from:
 - /restapicourse2-0/
 - /learnapidoc/introtoapis.html
-last-modified: 2021-10-12
+last-modified: 2021-12-28
 ---
 
 In this course on writing documentation for REST APIs, instead of just talking about abstract concepts, I contextualize REST APIs with a direct, hands-on approach. You'll first learn about API documentation by using a simple weather API to put a weather forecast on your site.
@@ -82,11 +82,15 @@ The course consists of the following sections:
 
 You don't have to read the sections in order &mdash; feel free to skip around as you prefer. Some of the earlier sections (such as the section on [Using a REST API like a developer](likeadeveloper.html) and [Documenting endpoints](docendpoints.html) follow a somewhat sequential order with the same [weather API scenario](docapis_scenario_for_using_weather_api.html), but by and large you can jump around as desired.
 
-Because the purpose of the course is to help you learn, there are many activities that require hands-on coding and other exercises. Along with the learning activities, there are also conceptual deep dives, but the focus is always on *learning by doing*. Where there are hands-on activities, I typically include this icon in the section title: <i class="fa fa-user-circle"></i>. Other topics have the word "Activity" in the title. The activities are integrated into various sections, but you can also see a consolidated subset of activities in the [Workshop Activities](workshop.html). These are the activities we do during live workshops.
+Because the purpose of the course is to help you learn, there are many activities that require hands-on coding and other exercises. Along with the learning activities, there are also conceptual deep dives, but the focus is always on *learning by doing*. Where there are hands-on activities, I typically include this icon in the section title: <i class="fa fa-user-circle"></i>. Other topics have the word "Activity" in the title. The activities are integrated into various sections, but you can also see many of the activities in the [Workshop Activities](workshop.html). These are the activities we do during live workshops.
 
-I refer to the content here as a "course" instead of a book or a website, primarily because I include a lot of exercises throughout in each section, and I find that people who want to learn API documentation prefer a more hands-on "course" experience.
+I refer to the content here as a "course" instead of a book or a website, primarily because I include a lot of exercises throughout in each section, and I find that people who want to learn API documentation prefer a more hands-on "course" experience. Below each topic is a progress indicator that reminds you to keep moving through the course.
 
-Below each topic is a progress indicator that reminds you to keep moving through the course. Don't be daunted if you never make it through, though. If printed to PDF, the content is well beyond 700 pages. And I keep adding to the content, refining it, rearranging and adjusting it as I see fit and as I grow my experience and awareness.
+## How long will it take to finish the course?
+
+ Don't be daunted if you never make it entirely through the course. If printed to PDF, the content is about 900 pages. And I keep adding to the content, refining it, rearranging and adjusting it as I see fit and as I grow my experience and awareness. It's a living document. Almost no one really finishes the course from beginning to end because by the time they do, I'll have added new content.
+
+Also, you should only focus on those sections that you need to learn. See this Reddit post, [Has anyone here completed the idratherbewriting API writing course by Tom Johnson?](https://www.reddit.com/r/technicalwriting/comments/ropvtx/has_anyone_here_completed_the_idratherbewriting/). For someone already familiar with many concepts, they can breeze through the course in less than a week. For someone new to API documentation, they might spend many months making their way through the course. If you keep finding value in the content, take as long as you want. If you don't find yourself learning anything, skip forward.
 
 ## Will this course help you get a job in API documentation?
 
@@ -140,7 +144,7 @@ For the live workshops, I have various slides that cover different sections of t
 
 Some people have asked whether they can use materials from this course to give their own API documentation workshops. I only allow the material to be used for non-profit workshops where the workshop leader isn't charging participants for the instruction. Of course, many of the ideas and concepts in this course aren't specific or unique to me, and you're entitled to fair use. However, please don't just hijack my site's materials, activities, and other information for your own commercial endeavors.
 
-If you're a teacher at a college or university (or high school) and are trying to teach APIs and developer docs to your students, feel free to use this site as part of your instructional materials. I appreciate links back to the site and attribution as needed (links pointing to my site boost search engine rankings). My larger goal for this site is to help educate and empower tech writers with developer documentation strategies, workflows, and best practices. If you'd like to share your API documentation course syllabus, [contact me](https://idratherbewriting.com/contact.html) and I'll add a link here.
+If you're a teacher at a college or university (or high school) and are trying to teach APIs and developer docs to your students, feel free to use this site as part of your instructional materials. I appreciate links back to the site and attribution as needed (links pointing to my site boost search engine rankings). My larger goal for this site is to help educate and empower tech writers with developer documentation strategies, workflows, and best practices. If you'd like to share your API documentation course syllabus, [contact me](https://idratherbewriting.com/contact.html){: .noCrossRef} and I'll add a link here.
 
 ## Is this course really free?
 
@@ -150,11 +154,11 @@ If you'd like to give back, feel free to buy me coffee by clicking the [Buy me a
 
 ## PDF and Kindle/eBook formats
 
-To read the same content in PDF or Kindle/eBook formats, see [https://idratherbewriting.com/learnapidoc/formats.html]. You can print out the section you want, or load it into a PDF reader to highlight/annotate content. Or if you're into Kindle, download the content in ebook format and load it onto your device.
+To read the same content in PDF or Kindle/eBook formats, see [PDF and eBook formats][docapis_formats.html]. You can print out the section you want, or load it into a PDF reader to highlight/annotate content. Or if you prefer Kindle or another eReader, download the content in ebook format and load it onto your device.
 
 ## Let me know if any content is out of date
 
-One of the challenges in any technical course is ensuring the content stays up to date. Technology changes rapidly, and given the many hands-on activities in the course, it's easy for some steps to become out of date as time passes. I've tried to maintain a healthy balance between general and specific details in the content here. If you find something is out of date, either add a comment on that page or [let me know](https://idratherbewriting.com/learnapidoc/contact.html).
+One of the challenges in any technical course is ensuring the content stays up to date. Technology changes rapidly, and given the many hands-on activities in the course, it's easy for some steps to become out of date as time passes. I've tried to maintain a healthy balance between general and specific details in the content here. If you find something is out of date, either add a comment on that page or [let me know](https://idratherbewriting.com/learnapidoc/contact.html){: .noCrossRef}.
 
 ## Stay updated
 

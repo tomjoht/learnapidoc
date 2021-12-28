@@ -22,4 +22,4 @@ Issues can include any of the following:
 * Outdated content
 * Suggested enhancements
 
-You can also [contact me](contact.html) with issues, requests, or other feedback.
+You can also [contact me](https://idratherbewriting.com/learnapidoc/contact.html){: .noCrossRef} with issues, requests, or other feedback.

@@ -23,7 +23,7 @@ You can view the [slides here](https://idratherbewriting.com/learnapidoc/slides/
 You can also view a recorded webinar where I talk through the results here:
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-This content doesn't embed well in print, as it contains a YouTube video. Please go to [https://idratherbewriting.com/learnapidoc/docapis_course_videos.html](https://idratherbewriting.com/learnapidoc/docapis_course_videos.html) to view the content.
+*Note: This content doesn't embed well in print, as it contains a YouTube video. Please go to [https://idratherbewriting.com/learnapidoc/docapis_course_videos.html] to view the content.*
 {% endif %}
 
 {% if site.format == "web" %}
@@ -35,10 +35,10 @@ This content doesn't embed well in print, as it contains a YouTube video. Please
 {% include random_ad4.html %}
 
 ## Article
+{% comment %}Don't change the link below to site.media. The kindle generator can't resolve the link otherwise. {% endcomment %}
+I wrote an [article for the *Institute of Scientific Technical Communicators* (ISTC) magazine](https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/istc2020_devdoctrends.pdf) (Autumn 2020).
 
-I wrote an [article for the *Institute of Scientific Technical Communicators* (ISTC) magazine]({{site.media}}/istc2020_devdoctrends.pdf) (Autumn 2020).
-
-<a class="noCrossRef" href="{{site.media}}/istc2020_devdoctrends.pdf"><img src="{{site.media}}/istccoverthumb2020.png" alt="ISTC article on developer documentation trends" style="border: 1px solid #dedede;"/></a>
+<a class="noCrossRef" href="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/istc2020_devdoctrends.pdf"><img src="{{site.media}}/istccoverthumb2020.png" alt="ISTC article on developer documentation trends" style="border: 1px solid #dedede;"/></a>
 
 The same content from the PDF is available in HTML below:
 

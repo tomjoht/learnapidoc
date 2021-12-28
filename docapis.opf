@@ -21,7 +21,7 @@ layout: null
 
   <!-- Title [mandatory]: The title of the publication. This is the title that will appear on the "Home" screen. -->
 
-	<dc:title>Documenting REST APIs</dc:title>
+	<dc:title>Documenting APIs</dc:title>
 
   <!-- Language [mandatory]: the language of the publication. The language codes used are the same as in XML
   and HTML. The full list can be found here: http://www.w3.org/International/articles/language-tags/
@@ -69,7 +69,7 @@ layout: null
 	<dc:date>2021-10-31</dc:date>
 
   <!-- Description: A short description of the publication's content. -->
-  <dc:description>A guide for technical writers documenting REST APIs</dc:description>
+  <dc:description>A guide for technical writers and engineers documenting APIs</dc:description>
 
 </metadata>
 

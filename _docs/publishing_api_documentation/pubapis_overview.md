@@ -120,7 +120,7 @@ If you'd like to view a presentation I gave to the [Write the Docs South Bay cha
 {% if site.format == "kindle" or site.format == "pdf" %}
 
 {: .note}
-This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/docapis_course_videos.html to view the content.
+*Note: This content doesn't embed well in print, as it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/docapis_course_videos.html] to view the content.*
 {% elsif site.format == "web" %}
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/__vSXJn-JQo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

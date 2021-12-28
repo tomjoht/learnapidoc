@@ -45,7 +45,7 @@ As part of the visual modeling tools, Stoplight's interface for describing JSON 
 {% if site.format == "kindle" or site.format == "pdf" %}
 
 {: .note}
-This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/pubapis_stoplight.html to view the content.
+*Note: This content doesn't embed well in print, as it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/pubapis_stoplight.html] to view the content.*
 {% elsif site.format == "web" %}
 
 <p><figure><iframe width="640" height="385" src="https://www.youtube.com/embed/0d-iO9WW1l4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><figcaption>Describing the JSON format in the responses can be especially tricky. Stoplight's visual modeling tools are especially helpful here because they allow you to automatically create the correct JSON schema definition from a block of JSON that you paste into the editor.</figcaption></figure></p>
@@ -56,7 +56,7 @@ Additionally, you can toggle between the visual tools (the Form view) and the sp
 {% if site.format == "kindle" or site.format == "pdf" %}
 
 {: .note}
-This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/pubapis_stoplight.html to view the content.
+*Note: This content doesn't embed well in print, as it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/pubapis_stoplight.html] to view the content.*
 {% elsif site.format == "web" %}
 
 <p><figure><iframe width="640" height="385" src="https://www.youtube.com/embed/ngTq3aGZFVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><figcaption>When you switch to the code view, the editor automatically goes to the part of the spec you were creating in the visual editor and highlights it. When you switch back, the visual UI updates with any changes you made in the code. Switching between modes is seamless and easy.</figcaption></figure></p>

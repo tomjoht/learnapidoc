@@ -56,6 +56,6 @@ One question I faced in preparing the content is whether I should stick with tex
 Additionally, videos force the user to go at the pace of the narrator. If your skill level matches the narrator, that's great. But in my experience, videos often go too slow or too fast. In contrast, text lets you more easily skip ahead when you already know the material, or slow down when you need more time to absorb concepts.
 
 Despite the constant changes in the technology landscape, I want to keep this course current and up to date. As such, I'll continue to add and edit and refine it as needed. I want this content to become a vital learning resource for all technical writers, both now and in the years to come as technologies evolve.
-If you have general feedback about this course, feel free to [drop me a line](https://idratherbewriting.com/learnapidoc/contact.html).
+If you have general feedback about this course, feel free to [drop me a line](https://idratherbewriting.com/learnapidoc/contact.html){: .noCrossRef}.
 
 {% comment %}{% include random_ad3.html %}{% endcomment %}

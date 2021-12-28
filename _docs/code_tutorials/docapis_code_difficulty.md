@@ -81,7 +81,7 @@ Despite the difficulties of documenting code, this area of documentation shouldn
 Check out the following video clip from engineer Ruthie Ben Dor during a Write the Docs conference. Responding to the question, "What are the three most important elements of producing API documentation?" Ruthie emphasizes the need to include code samples.
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/docapis_code_difficulty.html to view the content.
+*Note: This content doesn't embed well in print, as it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/docapis_code_difficulty.html] to view the content.*
 {% endif %}
 
 {% if site.format == "web" %}

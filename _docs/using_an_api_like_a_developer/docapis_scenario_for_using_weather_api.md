@@ -31,7 +31,15 @@ To give you an idea of the end goal, here's a sample: [idratherbewriting.com/lea
 
 Click the **Check wind conditions** button to see wind and temperature details. When you request this data, a call is made to the [OpenWeatherMap API](https://openweathermap.org/api). The API retrieves the information, and some JavaScript code prints the information on the page.
 
-<a target="\_blank" href="https://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html" class="noExtIcon"><img src="{{site.media}}/checkwindconditions.png" class="medium" /></a>
+{% if site.format == "kindle" or site.format == "pdf" %}
+*Note: This content doesn't embed well in print, as it contains JavaScript. Please go to [https://idratherbewriting.com/learnapidoc/docapis_scenario_for_using_weather_api.html] to view the content.*
+{% endif %}
+
+{% if site.format == "web" %}
+
+<a target="_blank" href="https://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html" class="noExtIcon"><img src="{{site.media}}/checkwindconditions.png" class="medium" /></a>
+
+{% endif %}
 
 The above example is extremely simple. You could also build an attractive interface like this:
 

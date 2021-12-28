@@ -1,4 +1,4 @@
-sidebartitle: Documenting REST APIs
+sidebartitle: Documenting APIs
 folders:
 
 - title: "I: Introduction to REST APIs"
@@ -14,6 +14,9 @@ folders:
 
   - title: Workshop video recordings
     jurl: /docapis_course_videos.html
+
+  - title: PDF and eBook formats
+    jurl: /docapis_formats.html
 
   - title: Workshop agenda, slides, activities
     jurl: /workshop.html

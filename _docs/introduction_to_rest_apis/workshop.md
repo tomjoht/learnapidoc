@@ -134,7 +134,7 @@ During this time, I'd like to have participants surface specific challenges that
 ## Conclusion {#conclusion}
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-This content doesn't embed well in print, as it contains JavaScript. Please go to https://idratherbewriting.com/learnapidoc/workshop.html to view the content.
+*Note: This content doesn't embed well in print, as it contains JavaScript. Please go to [https://idratherbewriting.com/learnapidoc/workshop.html] to view the content.*
 {% endif %}
 
 {% if site.format == "web" %}

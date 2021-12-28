@@ -50,16 +50,13 @@ To get an API key for the OpenWeatherMap API:
 
 {% include random_ad4.html %}
 
-Now for contrast, let's get the keys for the Aeris Weather API. The Aeris Weather API requires both a secret and ID to make requests.
+Now for contrast, let's get the keys for the Aeris Weather API, using a free developer account. The Aeris Weather API requires both a secret and ID to make requests.
 
-1.  Go to [http://www.aerisweather.com](http://www.aerisweather.com) and click **Sign Up** in the upper-right corner.
-2.  Under **Developer**, click **TRY FOR FREE**. (The free version limits the number of requests you can make.)
-3.  Enter a username, email, and password, and then click **SIGN UP FOR FREE** to create an Aeris account. Then sign in.
-4.  After you sign up for an account, click **Account** in the upper-right corner.
-5.  Click **Apps** (on the second navigation row, to the right of "Usage"), and then click **New Application**.
-
-    {% include course_image.html size="large" url="https://www.aerisweather.com/account/apps" filename="aerisaccount" ext_print="png" ext_web="png" alt="Aeris account" caption="Aeris account" %}
-
+1.  Go to [https://www.aerisweather.com/develop/api/](http://www.aerisweather.com) and click **Free Trial**.
+2.  Click **Sign Up for Developer**. (The free developer version limits the number of requests you can make and expires in 30 days.)
+3.  Complete the required fields to sign in. Click the activation email as well.
+4.  After you sign up for an account, sign in and go to your [Dashboard](https://account.aerisweather.com/account/member).
+5.  Click **Apps**, and then click **New Application**.
 6.  In the Add a New Application dialog box, enter the following:
     * **Application Name**: My biking app (or something)
     * **Application Namespace**: localhost

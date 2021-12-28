@@ -5,8 +5,12 @@ navbar_singleitems:
 - items:
   - title: Blog
     url: https://idratherbewriting.com
-  - title: Other formats
-    url: formats.html
+  - title: About
+    url: docapis_about_the_author.html
+  - title: Contact
+    url: contact.html
+  - title: PDF and eBook formats
+    url: docapis_formats.html
 
   # - title: PDFs
   #   url: products.html
@@ -14,13 +18,6 @@ navbar_singleitems:
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-    - title: About
-      folderitems:
-        - title: About
-          url: docapis_about_the_author.html
-        - title: Contact
-          url: contact.html
-
     - title: GitHub
       folderitems:
         - title: GitHub repo

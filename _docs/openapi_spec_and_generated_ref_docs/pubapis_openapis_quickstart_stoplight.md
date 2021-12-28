@@ -91,7 +91,7 @@ Stoplight provides a variety of options for working with projects &mdash; deskto
 7.  You can seamlessly switch between Form and Code views. Try adding a word in the Form view, switch to the Code view and find it, then remove it from the Code view and see how it updates in the Form view. Here's a short video clip showing this:
 
     {% if site.format == "kindle" or site.format == "pdf" %}
-This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/pubapis_openapis_quickstart_stoplight.html to view the content.
+*Note: This content doesn't embed well in print, as it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/pubapis_openapis_quickstart_stoplight.html] to view the content.*
     {% endif %}
 
     {% if site.format == "web" %}
@@ -417,7 +417,7 @@ To enter the response information in Stoplight Studio:
 5.  Click **Generate from JSON**. Stoplight builds the schema for you! Here's a short video clip showing this:
 
     {% if site.format == "kindle" or site.format == "pdf" %}
-This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/pubapis_openapis_quickstart_stoplight.html to view the content.
+*Note: This content doesn't embed well in print, as it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/pubapis_openapis_quickstart_stoplight.html] to view the content.*
     {% endif %}
 
     {% if site.format == "web" %}
