@@ -21,11 +21,7 @@ Let's start using an actual REST API to get more familiar with how they work. In
 
 Let's say that you're a web developer and you want to add weather information to your site. Your site is for cyclists. You want to allow users who come to your site to see the current wind and temperature conditions. You want something like this:
 
-{% if site.format == "pdf" or site.format == "kindle" %}
-<img class="small" src="{{site.media}}/restapi_windycall.png" alt="Wind meter conditions for website" />
-{% elsif site.format == "web" %}
-<img class="small" src="{{site.media}}/restapi_windycall.svg" alt="Wind meter conditions for website" />
-{% endif %}
+{% include course_image.html size="small" filename="restapi_windycall" ext_print="png" ext_web="svg" alt="Wind meter conditions for website" caption="Wind meter conditions for website" %}
 
 You don't have your own meteorological service, so you'll need to make some calls out to a weather service to get this information. Then you will present that information to users.
 

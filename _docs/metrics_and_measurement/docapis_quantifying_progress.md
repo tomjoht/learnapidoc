@@ -65,20 +65,4 @@ Overall, I am confident that few would object to most of the criteria here. Most
 
 {% comment %}{% include random_ad3.html %}{% endcomment %}
 
-## Survey {#survey}
-
-Please respond to a few questions so that I can understand your thoughts on this approach and whether I am headed in the right direction. There are 12 questions. These surveys help me leverage your experience and insight to check my approach and potentially course correct. You can view the [ongoing results here](https://www.questionpro.com/t/PHpuiZkbgw).
-
-<script>
-EMBED_PARAMS = {};
-EMBED_PARAMS.surveyID =8043019;
-EMBED_PARAMS.domain ="//www.questionpro.com";
-EMBED_PARAMS.src ="//www.questionpro.com/a/TakeSurvey?tt=rME%2B18/h7CE%3D";
-EMBED_PARAMS.width ="100%";
-EMBED_PARAMS.height = "1200px";
-EMBED_PARAMS.border = "hidden";
-</script>
-<div id="div_8043019"></div>
-<script src="//www.questionpro.com/javascript/embedsurvey.js?version=1"></script>
-
 *Continue on to the next topic, [Templates for working with metrics](docapis_metrics_templates.html).

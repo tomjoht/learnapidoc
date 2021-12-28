@@ -73,7 +73,7 @@ The course consists of the following sections:
 
 {% assign sidebar = site.data.docapis %}
 {% for folder in sidebar.folders %}
-* **[{{folder.title}}]({{folder.jurl | remove_first: "/" }})**
+* [{{folder.title}}]({{folder.jurl | remove_first: "/" }})
 {% endfor %}
 
 {% include image_ad_right.html %}

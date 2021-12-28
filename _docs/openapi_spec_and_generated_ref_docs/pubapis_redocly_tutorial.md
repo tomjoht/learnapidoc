@@ -509,7 +509,15 @@ The lack of the Try-it explorer in the Redoc community edition is a major reason
 
 Here's a short video explaining the top 3 reasons why people choose the pro version:
 
+{% if site.format == "kindle" or site.format == "pdf" %}
+This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/pubapis_redocly_tutorial.html to view the content.
+{% endif %}
+
+{% if site.format == "web" %}
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NcEHOlnAY6A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{% endif %}
 
 If you have a license for the pro version, you would [generate an API key](https://redoc.ly/docs/workflows/personal-access-token.md) and then use the [`openapi login`](https://redoc.ly/docs/cli/commands/#login) command to unlock the pro features. (The [`openapi logout`](https://redoc.ly/docs/cli/commands/#logout) command clears the API key, reverting you to the community edition.) Pricing for different versions of Redocly is available on their [Pricing](https://redoc.ly/pricing) page.
 
@@ -678,6 +686,14 @@ For sample API reference docs built with Redoc, see [Some Real-life usages](http
 
 Redoc provides one of the most attractive outputs for REST API docs. In a [recent survey about trends in developer documentation](https://idratherbewriting.com/learnapidoc/docapis_trends.html), I asked developers "How do you render the OpenAPI specification into documentation?" Although [Swagger UI](https://idratherbewriting.com/learnapidoc/pubapis_swagger.html) was the most common (used 27% of the time), this is likely because it's free. The premium version of Swagger (called [SwaggerHub](https://idratherbewriting.com/learnapidoc/pubapis_swaggerhub_smartbear.html)) was used only 4% of the time. In contrast, Redoc was used 8% of the time.
 
+{% if site.format == "kindle" or site.format == "pdf" %}
+This content doesn't embed well in print, as it contains JavaScript. Please go to https://idratherbewriting.com/learnapidoc/pubapis_redocly_tutorial.html to view the content.
+{% endif %}
+
+{% if site.format == "web" %}
+
 <iframe src='https://www.questionpro.com/t/ZRimssZG1r6Yg' width='100%' height='600' frameBorder='0'></iframe>
+
+{% endif %}
 
 Overall, the output from Redoc does seem more polished and user-friendly than other API reference doc outputs. For the interactivity feature alone I would definitely recommend using the premium version ([Redocly API Reference](https://redoc.ly/reference-docs/)) rather than the community edition. Redocly's CLI-based toolset provides a way to work more efficiently in the code, supporting a [docs-as-code workflow](https://idratherbewriting.com/learnapidoc/pubapis_docs_as_code.html). If this command-line-based toolset and three-column output appeal to you, Redoc might be the way to go. You can start a [free trial here](https://app.redoc.ly/org/idratherbewriting/start-trial) or learn more here: [Redocly](https://redoc.ly/).

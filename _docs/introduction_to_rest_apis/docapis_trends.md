@@ -36,9 +36,9 @@ This content doesn't embed well in print, as it contains a YouTube video. Please
 
 ## Article
 
-I wrote an [article for the *Institute of Scientific Technical Communicators* (ISTC) magazine](https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/istc2020_devdoctrends.pdf) (Autumn 2020).
+I wrote an [article for the *Institute of Scientific Technical Communicators* (ISTC) magazine]({{site.media}}/istc2020_devdoctrends.pdf) (Autumn 2020).
 
-<a class="noCrossRef" href="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/istc2020_devdoctrends.pdf"><img src="{{site.media}}/istccoverthumb2020.png" alt="ISTC article on developer documentation trends" style="border: 1px solid #dedede;"/></a>
+<a class="noCrossRef" href="{{site.media}}/istc2020_devdoctrends.pdf"><img src="{{site.media}}/istccoverthumb2020.png" alt="ISTC article on developer documentation trends" style="border: 1px solid #dedede;"/></a>
 
 The same content from the PDF is available in HTML below:
 

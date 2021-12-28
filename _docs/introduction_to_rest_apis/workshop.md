@@ -31,7 +31,7 @@ Doors open at 8:00am. Check your name off at the registration table and get a na
 
 [Section: Introduction to API documentation](docapis_introtoapis.html)
 
-<a href="/learnapidoc/slides/intro_api_documentation.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/introapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="https://idratherbewriting.com/learnapidoc/slides/intro_api_documentation.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/introapidoctitleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
 [Activity 1: Identify your goals](docapis_identify_your_goals.html)
 
@@ -39,7 +39,7 @@ Doors open at 8:00am. Check your name off at the registration table and get a na
 
 [Section: Using an API like a developer](likeadeveloper.html)
 
-<a href="/learnapidoc/slides/using_api_like_developer.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/using-api-developer-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="https://idratherbewriting.com/learnapidoc/slides/using_api_like_developer.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/using-api-developer-titleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
 [Activity: Explore OpenWeatherMap API](docapis_scenario_for_using_weather_api.html#explore_openweathermap_api)
 
@@ -59,7 +59,7 @@ Break time
 
 [Section: Documenting API endpoints](docendpoints.html)
 
-<a href="/learnapidoc/slides/documenting_api_endpoints.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/documenting-endpoints-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="https://idratherbewriting.com/learnapidoc/slides/documenting_api_endpoints.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/documenting-endpoints-titleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
 [Activity: What's wrong with this API reference topic](docapis_api_whats_wrong_activity.html)
 
@@ -69,7 +69,7 @@ Break time
 
 [Section: OpenAPI and Swagger](restapispecifications.html)
 
-<a href="/learnapidoc/slides/openapi_and_swagger.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/openapiswaggertitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="https://idratherbewriting.com/learnapidoc/slides/openapi_and_swagger.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/openapiswaggertitleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
 [Activity: Explore Swagger UI through the Petstore Demo](pubapis_openapi_intro.html#explore_swagger_through_petstore_demo)
 
@@ -89,7 +89,7 @@ Lunch provided through catering.
 
 [Section: Conceptual topics](docconceptual.html)
 
-<a href="/learnapidoc/slides/conceptual_content_api_docs.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/conceptualcontenttitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="https://idratherbewriting.com/learnapidoc/slides/conceptual_content_api_docs.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/conceptualcontenttitleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
 [Activity: Complete the SendGrid Getting Started tutorial](docapis_getting_started_activity.html)
 
@@ -103,7 +103,7 @@ Break. Snacks provided.
 
 [Section: Code tutorials](docapiscode.html)
 
-<a href="/learnapidoc/slides/code_tutorials.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/codetutorialsthumb.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="https://idratherbewriting.com/learnapidoc/slides/code_tutorials.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/codetutorialsthumb.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
 [Activity: Analyze two code tutorials](docapis_code_tutorials_common_characteristics.html#analyze_code_tutorials)
 
@@ -111,7 +111,7 @@ Break. Snacks provided.
 
 [Section: Publishing API Documentation](publishingapis.html)
 
-<a href="/learnapidoc/slides/publishing_api_docs.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/publishingapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="https://idratherbewriting.com/learnapidoc/slides/publishing_api_docs.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/publishingapidoctitleslide.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
 [Activity: Create a GitHub wiki and publish content on a sample page](pubapis_github_wikis.html#create_github_wiki)
 
@@ -129,10 +129,15 @@ During this time, I'd like to have participants surface specific challenges that
 
 [Section: Thriving in the API doc space](jobapis.html)
 
-<a href="/learnapidoc/slides/thriving_in_api_docs.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/thrivinginapidocsthumb.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
+<a href="https://idratherbewriting.com/learnapidoc/slides/thriving_in_api_docs.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/thrivinginapidocsthumb.png" style="width: 300px; border: 1px solid #dedede;"></a>
 
 ## Conclusion {#conclusion}
 
+{% if site.format == "kindle" or site.format == "pdf" %}
+This content doesn't embed well in print, as it contains JavaScript. Please go to https://idratherbewriting.com/learnapidoc/workshop.html to view the content.
+{% endif %}
+
+{% if site.format == "web" %}
 <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#jeopardy_questions" aria-expanded="false" aria-controls="collapseExample">Jeopardy: Test your knowledge
 </button>
 <div class="collapse" id="jeopardy_questions">
@@ -140,7 +145,7 @@ During this time, I'd like to have participants surface specific challenges that
 {% include content/jeopardy_questions.md %}
 </div>
 </div>
-{% comment %} button types: default, primary, success, info, warning, danger, link. {% endcomment %}
+{% endif %}
 
 {% include random_ad1.html %}
 
@@ -150,36 +155,4 @@ The general workshop ends and we transition into any individual consulting as de
 
 {% include image_ad_left.html %}
 
-## Post-workshop review {#post_workshop_review}
-
-At the close of the workshop, please take this [review survey](https://www.questionpro.com/t/AOaGwZgMcu). Thanks.
-
 {% include random_ad2.html %}
-
-
-<style>
-ul#markdown-toc::before  {
-  font-size:18px;
-  padding-top:30px;
-  margin: 20px 0px 20px -30px;
-  content: "Workshop Agenda";
-}
-
-@media print {
-  header, footer, #sidebar, ul#markdown-toc, header.dpHeader a, header.dpHeader .dphTopBar .dphLeft, .dpFooter .dpfNav .dpfnCol .dpfnGroup, hr, .userMap, .githubButton, .amazonBook, p.surveyBanner, .singlePostComics, .footerTop, .donateButton, .nextButton, .previousButton, .progress, #progressBar, #yourProgress, .progress + p, .subfoldersTitle, .folderTitle, ol.breadcrumb {
-  	display: none !important;
-  }
-
-  div.main {
-    margin-left: 20px;
-    padding: 10px
-  }
-  h1, h2, h3 {
-      padding-top, margin-top:20px;
-      margin-bottom, padding-bottom: 10px;
-  }
-  img.slideThumb {
-    width: 200px;
-  }
-}
-</style>

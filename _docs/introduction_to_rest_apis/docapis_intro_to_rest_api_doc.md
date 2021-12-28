@@ -178,9 +178,6 @@ API documentation is often a new world for technical writers. Many of the compon
 * Reference topics
 * User tasks
 
-{: .note}
-I'm currently [conducting a survey](https://www.questionpro.com/a/TakeSurvey?tt=qYKAPa%2BvYY4%3D) to define the trends, practices, and other topics in the developer documentation space. You can read the [ongoing results here](https://www.questionpro.com/t/PGhS9ZgCFE). If you scan down these results, you'll see how unique this space is.
-
 When you try to navigate the world of API documentation, you may be initially overwhelmed by the differences and intimidated by the tools and code. Additionally, the documentation content itself is often complex and requires familiarity with development concepts and processes.
 
 Overall, technical writers are hungry to learn more about APIs. This course will help you build the foundation of what you need to know to get a job in API documentation and excel in this field. As a skilled API technical writer, you will be in high demand and will fulfill a critical role in companies that distribute their services through APIs.

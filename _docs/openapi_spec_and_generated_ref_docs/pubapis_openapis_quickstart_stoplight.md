@@ -90,7 +90,14 @@ Stoplight provides a variety of options for working with projects &mdash; deskto
 
 7.  You can seamlessly switch between Form and Code views. Try adding a word in the Form view, switch to the Code view and find it, then remove it from the Code view and see how it updates in the Form view. Here's a short video clip showing this:
 
+    {% if site.format == "kindle" or site.format == "pdf" %}
+This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/pubapis_openapis_quickstart_stoplight.html to view the content.
+    {% endif %}
+
+    {% if site.format == "web" %}
     <iframe width="640" height="385" src="https://www.youtube.com/embed/ngTq3aGZFVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    {% endif %}
 
 7.  Click the **Preview** button in the upper-right corner to see what the content would look like when published:
 
@@ -108,6 +115,12 @@ To populate the API overview:
 
 1.  In the Stoplight Studio sidebar, click **API Overview.**
 2.  Enter information in each of the form fields using information provided in the orange button below:
+
+    {% if site.format == "kindle" or site.format == "pdf" %}
+    This content contains JavaScript. Go to https://idratherbewriting.com/learnapidoc/pubapis_openapis_quickstart_stoplight.html to see it.
+    {% endif %}
+
+    {% if site.format == "web" %}
 
     <button type="button" class="btn btn-warning" onclick="$('#general_api_info').toggle( 'fast' )">Sample API Overview information &raquo;</button>
     <div id="general_api_info" markdown="block" class="expandedBox" aria-expanded="false" style="display: none;">
@@ -147,6 +160,7 @@ To populate the API overview:
     * *License URL*: https://creativecommons.org/licenses/by-sa/4.0/
 
     </div>
+    {% endif %}
 
     **Note**: The Markdown source formatting in the sample text is intentional. When you copy and paste in the source, Stoplight will convert the Markdown into HTML when displaying the published page. Also note that Stoplight allows you to use [Stoplight-flavored Markdown](https://github.com/stoplightio/studio-demo/blob/master/docs/markdown/stoplight-flavored-markdown.md). This Markdown version allows all the same tags as [CommonMark](https://commonmark.org/) but also includes some special tags for callouts, alerts, and other formatting.
 
@@ -183,6 +197,12 @@ Now enter the path and parameter information:
 
 5.  In the Description field, add the description for this endpoint. Expand the orange button below to get a description to paste here.
 
+    {% if site.format == "kindle" or site.format == "pdf" %}
+    This content contains JavaScript. Go to https://idratherbewriting.com/learnapidoc/pubapis_openapis_quickstart_stoplight.html to see it.
+    {% endif %}
+
+    {% if site.format == "web" %}
+
     <button type="button" class="btn btn-warning" onclick="$('#paths').toggle( 'fast' )">Sample Path information &raquo;</button>
     <div id="paths" markdown="block" class="expandedBox" aria-expanded="false" style="display: none;">
 
@@ -194,8 +214,15 @@ Now enter the path and parameter information:
     * *Description*: Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations.
 
     </div>
+    {% endif %}
 
 5.  In Stoplight Studio, click the **+ Query Param** button to expand the query parameters options. (Note that our sample API has query parameters only, no path parameters.) Expand the orange button below for sample query parameter information. Then populate all the query parameter information into the Stoplight Studio editor.
+
+    {% if site.format == "kindle" or site.format == "pdf" %}
+    This content contains JavaScript. Go to https://idratherbewriting.com/learnapidoc/pubapis_openapis_quickstart_stoplight.html to see it.
+    {% endif %}
+
+    {% if site.format == "web" %}
 
     <button type="button" class="btn btn-warning" onclick="$('#parameters').toggle( 'fast' )">Sample query parameter information &raquo;</button>
     <div id="parameters" markdown="block" class="expandedBox" aria-expanded="false" style="display: none;">
@@ -265,6 +292,7 @@ Now enter the path and parameter information:
       * *default*: json
 
     </div>
+    {% endif %}
 
     When you're finished entering the parameters, Stoplight should look like this:
 
@@ -326,6 +354,12 @@ To enter the response information in Stoplight Studio:
 
 3.  Expand the orange button below and copy the sample response.
 
+    {% if site.format == "kindle" or site.format == "pdf" %}
+    This content contains JavaScript. Go to https://idratherbewriting.com/learnapidoc/pubapis_openapis_quickstart_stoplight.html to see it.
+    {% endif %}
+
+    {% if site.format == "web" %}
+
     <button type="button" class="btn btn-warning" onclick="$('#response').toggle( 'fast' )">Sample response &raquo;</button>
     <div id="response" markdown="block" class="expandedBox" aria-expanded="false" style="display: none;">
 
@@ -377,11 +411,18 @@ To enter the response information in Stoplight Studio:
     }
     ```
     </div>
+    {% endif %}
 
 4.  Paste in the copied JSON into the gray area where it says "Paste or write a JSON example below..." (Remove the empty curly braces `{}` first, and then paste in your sample.)
 5.  Click **Generate from JSON**. Stoplight builds the schema for you! Here's a short video clip showing this:
 
+    {% if site.format == "kindle" or site.format == "pdf" %}
+This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/pubapis_openapis_quickstart_stoplight.html to view the content.
+    {% endif %}
+
+    {% if site.format == "web" %}
     <iframe width="640" height="385" src="https://www.youtube.com/embed/0d-iO9WW1l4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    {% endif %}
 
 6.  Add some more detail about the response elements:
 
@@ -389,6 +430,12 @@ To enter the response information in Stoplight Studio:
     2.  Click the **Other Properties** <img src="{{site.media}}/stoplight_other_properties_button2.png" alt="Other properties" /> button and add an example in the **example** field.
 
     For the description and examples, expand the orange button below and copy over the information.
+
+    {% if site.format == "kindle" or site.format == "pdf" %}
+    This content contains JavaScript. Go to https://idratherbewriting.com/learnapidoc/pubapis_openapis_quickstart_stoplight.html to see it.
+    {% endif %}
+
+    {% if site.format == "web" %}
 
     <button type="button" class="btn btn-warning" onclick="$('#response_descriptions').toggle( 'fast' )">Sample descriptions and examples &raquo;</button>
     <div id="response_descriptions" markdown="block" class="expandedBox" aria-expanded="false" style="display: none;">
@@ -505,6 +552,7 @@ To enter the response information in Stoplight Studio:
      * example: 200
 
      </div>
+     {% endif %}
 
 7.  Now that you finished entering schema information, click the **Preview button**. The documentation should look like this, with a tab to toggle between Schema and Example:
 

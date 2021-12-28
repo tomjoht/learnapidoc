@@ -100,7 +100,15 @@ Many of the same principles in [*Universal Principles of Design: 125 Ways to Enh
 
 I recently participated in a short interview about usability for a class on [Usability & User Experience](https://usability-ux.weebly.com/). The presentation doesn't cover all the details from above, but it does touch upon usability in different scenarios (e.g., professional writing versus a blog, academic contexts, and other). [Kirk St.Amant](https://www.linkedin.com/in/kirk-st-amant-614a272/), a distinguished professor in the tech comm field, conducted the interview with me. You can see his usability course online at [https://usability-ux.weebly.com/](https://usability-ux.weebly.com/). Here's the video:
 
+{% if site.format == "kindle" or site.format == "pdf" %}
+This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/devx-usability-examples.html to view the content.
+{% endif %}
+
+{% if site.format == "web" %}
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3r1_38mpI0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{% endif %}
 
 You can view other interviews Kirk has done with usability professionals here:
 

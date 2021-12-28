@@ -9,6 +9,7 @@ published: false
 1. make sure you have latest images from wasabi:
 
 myvenv
+# create folder called "wasabit" at ~/tomjoht
 aws s3 cp s3://idbwmedia.com/images/api/ ~/tomjoht/wasabi  --recursive  --profile wasabi
 
 copy over images from tomjoht/wasabi to learnapidoc/wasabi. overwrite duplicates.

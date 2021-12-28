@@ -67,19 +67,19 @@ Otherwise, let’s take a look at the basics with a sample query and what comes 
 
 1. Query the object "assistant" and return their name.
 
-   <img src="{{site.media}}/graphqlkcimage3.jpg" />
+   <img src="{{site.media}}/graphqlkcimage3.jpeg" />
 
 2. You would get back the name "Siri" as a string.
 
-   <img src="{{site.media}}/graphqlkcimage2.jpg" />
+   <img src="{{site.media}}/graphqlkcimage2.jpeg" />
 
 3. Next, looking at a request for related objects, we can request info about Siri’s colleagues:
 
-   <img src="{{site.media}}/graphqlkcimage1.jpg" />
+   <img src="{{site.media}}/graphqlkcimage1.jpeg" />
 
 4. We get back an array of Siri’s colleagues.
 
-   <img src="{{site.media}}/graphqlkcimage4.jpg" />
+   <img src="{{site.media}}/graphqlkcimage4.jpeg" />
 
 (Note: I modeled this after James Scott’s example in this great talk, [Is GraphQL Really "Self-documenting"?](https://www.youtube.com/watch?v=rKzHc1hozB8&feature=youtu.be&t=579).)
 
@@ -97,7 +97,15 @@ The GraphQL foundation claims that their unique approach allows developers to de
 
 Furthermore, [Howtographql.com](https://www.howtographql.com/basics/1-graphql-is-the-better-rest/) claims that "REST APIs have shown to be too inflexible to keep up with the rapidly changing requirements of the clients that access them (and ...) GraphQL (…) solves many of the shortcomings and inefficiencies that developers experience when interacting with REST APIs." That same tutorial site features a video showing examples of these points:
 
+{% if site.format == "kindle" or site.format == "pdf" %}
+This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/docapis_graphql.html to view the content.
+{% endif %}
+
+{% if site.format == "web" %}
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/T571423fC68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{% endif %}
 
 Here’s a description:
 
@@ -147,7 +155,15 @@ This leads to Chris’s conclusion that tech writers are still needed here if on
 
 James Scott, another technical writer, also sees a role for technical writers in the world of GraphQL. You can see his concise and very helpful talk here:
 
+{% if site.format == "kindle" or site.format == "pdf" %}
+This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/docapis_graphql.html to view the content.
+{% endif %}
+
+{% if site.format == "web" %}
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rKzHc1hozB8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{% endif %}
 
 Nevertheless, It might still be a good idea for technical writers to worry at least a little bit about GraphQL because several devs are predicting that it will [become more popular than REST in the future](https://dev.to/martijnwalraven/why-i-believe-graphql-will-come-to-replace-rest), and, if these predictions become true, any kind of change like that won’t come without some adjustments to workflows, roles, and how writers are viewed by the software development teams they work with, etc.
 
@@ -165,7 +181,15 @@ My guess is that maybe the movement is [driven by developers who decide to use i
 
 However, tech writers that work with it do exist! Here, for example, is a technical writer, Andrew Johnston, at Shopify talking about their process of documenting a GraphQL API at Shopify:
 
+{% if site.format == "kindle" or site.format == "pdf" %}
+This content doesn't embed well in print, as it contains YouTube videos. Please go to https://idratherbewriting.com/learnapidoc/docapis_graphql.html to view the content.
+{% endif %}
+
+{% if site.format == "web" %}
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uuzsEfLaGnU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{% endif %}
 
 So, maybe the best way to think about it as a tech writer is that learning GraphQL is a way specialize and stand out, but you might be safe only knowing the basics, for now.
 

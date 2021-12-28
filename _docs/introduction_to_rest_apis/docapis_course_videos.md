@@ -9,9 +9,7 @@ weight: 1.2
 last-modified: 2020-07-25
 ---
 
-I've given numerous presentations and workshops on API documentation, and I've recorded most of them. The most recent recordings are available below.
-
-Keep in mind that my API content evolves, so some older presentations might no longer match the course content. I recorded most of these videos during a full-day API documentation in Raleigh, North Carolina, on April 6, 2019. (For more details, see this [blog post](https://idratherbewriting.com/2019/04/01/upcoming-api-workshops/).) This recording closely aligns with the latest content and activities in this course. I divided this all-day workshop into five separate videos.
+I've given numerous presentations and workshops on API documentation, and I've recorded some of them. The most recent recordings are available below. I divided this all-day workshop into multiple separate videos. Keep in mind that my API content evolves, so some older presentations might no longer match the course content.  
 
 * TOC
 {:toc}
