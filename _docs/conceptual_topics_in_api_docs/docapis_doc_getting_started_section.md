@@ -48,7 +48,7 @@ A getting started tutorial is more than just another type of content to include.
 
 In general, consider how people prefer to learn a new system. Do they prefer to sit passively while reading a manual? Or do they want to jump in, write some code, run it, see what it does, tweak a few buttons, and learn through some trial and error, experimentation and feedback?
 
-While user learning types can fall all along this spectrum, from "systematic" (read first) to "opportunistic" (try first), as some researchers call it, the engineering mindset tends to favor the opportunistic (hands-on, experiential) approach. For more on different learning behaviors, see [How Developers Use API Documentation: An Observation Study](/learnapidoc/docapiscode_research_on_documenting_code.html#how-developers-use-api-documentation-an-observation-study).
+While user learning types can fall all along this spectrum, from "systematic" (read first) to "opportunistic" (try first), as some researchers call it, the engineering mindset tends to favor the opportunistic (hands-on, experiential) approach. For more on different learning behaviors, see [How Developers Use API Documentation: An Observation Study](docapiscode_research_on_documenting_code.html#how_devs_use_docs).
 
 The more action-oriented, experiential approach to learning has its roots in a movement called "minimalism" that John Carroll identified long ago. Describing John Carroll's minimalism approach, David Farkas and Thomas Williams write:
 
@@ -232,7 +232,7 @@ Another obstacle to creating the getting started tutorial is the basic task of w
 
 Being brief at the expense of creating a short tutorial might lead to a confusing user experience. Leaving out more specifics, notes, and other more explicit instructions for the sake of brevity goes against our tech-writing principles of clear, explicit documentation.
 
-The ability to reduce and distill information down to short, crisp summaries for a getting started tutorial is a higher-level writing skill. It also requires more effort and subject mastery. For more information on distilling information, see [Principle 4: Reduce and distill vast information down to its essence](/simplifying-complexity/reduction-layering-distillation.html).
+The ability to reduce and distill information down to short, crisp summaries for a getting started tutorial is a higher-level writing skill. It also requires more effort and subject mastery. For more information on distilling information, see [Principle 4: Reduce and distill vast information down to its essence](https://idratherbewriting.com/simplifying-complexity/reduction-layering-distillation.html).
 
 {: .takeaway}
 In places where you choose to be succinct and omit detail, link out to your regular docs for more information. In these cases, consider the approach to be a progressive information disclosure strategy. If a user needs more information, he or she can click the link and get it. But if not, the concise version suffices.

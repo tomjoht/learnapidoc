@@ -10,7 +10,7 @@ path2: /openapi_tutorial.html
 last-modified: 2020-09-07
 ---
 
-In the previous section, I explained how to create the OpenAPI spec [using a visual editor with Stoplight Studio](pubapis_openapis_quickstart_stoplight). In this tutorial, I'll explain how to work in a text editor such as [Swagger Editor](http://editor.swagger.io/) to write the OpenAPI code by hand. For a higher-level introduction to the OpenAPI spec, see [Introduction to the OpenAPI specification](pubapis_openapi_intro.html).
+In the previous section, I explained how to create the OpenAPI spec [using a visual editor with Stoplight Studio](pubapis_openapis_quickstart_stoplight.html). In this tutorial, I'll explain how to work in a text editor such as [Swagger Editor](http://editor.swagger.io/) to write the OpenAPI code by hand. For a higher-level introduction to the OpenAPI spec, see [Introduction to the OpenAPI specification](pubapis_openapi_intro.html).
 
 In this tutorial, we'll dive deeply into the OpenAPI specification. We'll use the same [OpenWeatherMap API](https://openweathermap.org/current) that we've been using throughout other parts of this course as the content for our OpenAPI document. Using this API, we'll create a valid OpenAPI specification document and then render it using Swagger UI.
 

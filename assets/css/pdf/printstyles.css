@@ -21,7 +21,7 @@ th  {color: white}
 
 #navig a[href] {color: #595959 !important;}
 #navig li.sectionHead {font-weight: bold; font-size: 18px; color: #595959 !important; list-style-type: none; margin-top: 18px; }
-#navig li {font-weight: normal;  list-style-type: none; font-size: 14px; }
+#navig li {font-weight: normal;  list-style-type: none; font-size: 12px; margin-bottom: 7px; margin-top: 7px; }
 #navig a[href]::after { content: leader(".") target-counter(attr(href), page); }
 #navig li.l1 {
   font-size: 19px;
@@ -47,21 +47,26 @@ th  {color: white}
   margin-left:40px;
 }
 
-/* cross-references to pages
+/* cross-references to pages */
 a[href]::after {
     content: " (p. " target-counter(attr(href), page) ")"
 }
-*/
-/* print href link urls after links */
+
+a[href^="http:"]::after, a[href^="https:"]::after {
+    content: " (" attr(href) ") ";
+}
+
+/* cut this i think*/
+chapter {
+prince-pdf-destination: attr(identifier,string)
+}
+/* print href link urls after links
 a::after{
     content: " (" attr(href) ") ";
   }
-
-/*
-a[href^="http:"]::after, a[href^="https:"]::after {
-    content: "";
-}
 */
+
+
 
 a[href] {
     color: #337CD6 !important;
@@ -490,6 +495,10 @@ button.btn.btn-default.btn-lg.modalButton1 {
 
 blockquote {
   font-size: 14px;
+  background: #f1f1f1;
+  padding: 1em;
+  border-left: 1em solid orange;
+  overflow: auto;
 }
 
 pre {

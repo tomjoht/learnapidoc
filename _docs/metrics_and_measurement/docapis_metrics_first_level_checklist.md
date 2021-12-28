@@ -36,7 +36,7 @@ Because some criteria can be assessed quickly, while other criteria requires you
 
 {% include random_ad2.html %}
 
-In this section, I'll present a first-level checklist, and in the next topic, I'll present a [second-level checklist](docapis_metrics_first_level_checklist).
+In this section, I'll present a first-level checklist, and in the next topic, I'll present a [second-level checklist](docapis_metrics_first_level_checklist.html).
 
 ## First-level documentation checklist
 
@@ -119,4 +119,4 @@ input[type=checkbox] {
 
 {% include random_ad1.html %}
 
-*Continue on to the next section, [Second-level checklist for API documentation](docapis_metrics_second_level_checklist).*
+*Continue on to the next section, [Second-level checklist for API documentation](docapis_metrics_second_level_checklist.html).*

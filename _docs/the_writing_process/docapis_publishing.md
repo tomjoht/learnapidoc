@@ -26,7 +26,7 @@ Where is the most logical context to integrate the content? Make sure you're wel
 
 {% include image_ad_right.html %}
 
-If you have a humanities background, you're probably used to reading long, difficult texts and performing critical analyses on the content. Don't abandon those college reading skills in your corporate job. Instead, use your reading superpower to read through the docs on your developer portal that have a similar theme to what you're publishing. For more on this, see [Principle 3: Ensure information harmony in the larger landscape](/simplifying-complexity/ensuring-information-harmony-in-the-larger-documentation-landscape.html).
+If you have a humanities background, you're probably used to reading long, difficult texts and performing critical analyses on the content. Don't abandon those college reading skills in your corporate job. Instead, use your reading superpower to read through the docs on your developer portal that have a similar theme to what you're publishing. For more on this, see [Principle 3: Ensure information harmony in the larger landscape](https://idratherbewriting.com/simplifying-complexity/ensuring-information-harmony-in-the-larger-documentation-landscape.html).
 
 ## 5.2 Cross-reference the new content {#cross_references}
 
@@ -51,7 +51,7 @@ Alternatively, you might have a developer relations group or developer marketing
 
 ## 5.4 Add metadata to pages about authors and last-updated {#metadata}
 
-Another task before publishing your new content is to add metadata to the pages about authorship and date last updated. How you do this depends on your authoring system, but hopefully your authoring/publishing system supports two essential fields: author and last-updated. These fields might be in YAML frontmatter if you're using a [static site generator](/learnapidoc/pubapis_static_site_generators.html), or they could be in more structured fields if using a [CCMS](/blog/what-is-a-dita-content-management-system-ccms/).
+Another task before publishing your new content is to add metadata to the pages about authorship and date last updated. How you do this depends on your authoring system, but hopefully your authoring/publishing system supports two essential fields: author and last-updated. These fields might be in YAML frontmatter if you're using a [static site generator](pubapis_static_site_generators.html), or they could be in more structured fields if using a [CCMS](https://idratherbewriting.com/blog/what-is-a-dita-content-management-system-ccms/).
 
 Don't skip adding metadata. Recognize that right now, at the point of release, everyone is excited about the new content. But it will only be a matter of time before most people forget about this page, before you move on, before the teams that support the content transition to other projects and parts of the org, or before the feature itself is sunset, then deprecated.
 
@@ -81,7 +81,7 @@ After you publish, spend the rest of the afternoon doing something you find rewa
 
 After the content is live, you have one more step: publicize what you published. In a documentation newsletter or report, describe what you've recently published or updated in your developer portal, and send this email to the relevant internal email lists who might be interested.
 
-A good cadence for sending this report is monthly, but you could also send it right after publishing if it's a huge release. In a monthly newsletter, I also recommend including some other sections, such as discussions of doc strategies, roadmap, and metrics. For more information on what to include, see [Sending doc status reports &mdash; a tool for visibility and relationship building](/learnapidoc/docapis_status_reports.html#frequency-format-audience).
+A good cadence for sending this report is monthly, but you could also send it right after publishing if it's a huge release. In a monthly newsletter, I also recommend including some other sections, such as discussions of doc strategies, roadmap, and metrics. For more information on what to include, see [Sending doc status reports &mdash; a tool for visibility and relationship building](docapis_status_reports.html#frequency-format-audience).
 
 If there's one mistake most tech writers commit, it's being too quiet about the documentation they work on. If others don't know you wrote and published the new content, they might not understand your role, your contribution to the product release, or your value. Being overlooked leads tech writers to feeling that they're second-class citizens, that their contributions are marginal, and other negative attitudes.
 

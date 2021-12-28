@@ -80,7 +80,7 @@ The course consists of the following sections:
 
 ## Sequence and activities
 
-You don't have to read the sections in order &mdash; feel free to skip around as you prefer. Some of the earlier sections (such as the section on [Using a REST API like a developer](likeadeveloper.html) and [Documenting endpoints](docendpoints.html)) follow a somewhat sequential order with the same [weather API scenario](docapis_scenario_for_using_weather_api.html), but by and large you can jump around as desired.
+You don't have to read the sections in order &mdash; feel free to skip around as you prefer. Some of the earlier sections (such as the section on [Using a REST API like a developer](likeadeveloper.html) and [Documenting endpoints](docendpoints.html) follow a somewhat sequential order with the same [weather API scenario](docapis_scenario_for_using_weather_api.html), but by and large you can jump around as desired.
 
 Because the purpose of the course is to help you learn, there are many activities that require hands-on coding and other exercises. Along with the learning activities, there are also conceptual deep dives, but the focus is always on *learning by doing*. Where there are hands-on activities, I typically include this icon in the section title: <i class="fa fa-user-circle"></i>. Other topics have the word "Activity" in the title. The activities are integrated into various sections, but you can also see a consolidated subset of activities in the [Workshop Activities](workshop.html). These are the activities we do during live workshops.
 
@@ -140,7 +140,7 @@ For the live workshops, I have various slides that cover different sections of t
 
 Some people have asked whether they can use materials from this course to give their own API documentation workshops. I only allow the material to be used for non-profit workshops where the workshop leader isn't charging participants for the instruction. Of course, many of the ideas and concepts in this course aren't specific or unique to me, and you're entitled to fair use. However, please don't just hijack my site's materials, activities, and other information for your own commercial endeavors.
 
-If you're a teacher at a college or university (or high school) and are trying to teach APIs and developer docs to your students, feel free to use this site as part of your instructional materials. I appreciate links back to the site and attribution as needed (links pointing to my site boost search engine rankings). My larger goal for this site is to help educate and empower tech writers with developer documentation strategies, workflows, and best practices. If you'd like to share your API documentation course syllabus, [contact me](contact.html) and I'll add a link here.
+If you're a teacher at a college or university (or high school) and are trying to teach APIs and developer docs to your students, feel free to use this site as part of your instructional materials. I appreciate links back to the site and attribution as needed (links pointing to my site boost search engine rankings). My larger goal for this site is to help educate and empower tech writers with developer documentation strategies, workflows, and best practices. If you'd like to share your API documentation course syllabus, [contact me](https://idratherbewriting.com/contact.html) and I'll add a link here.
 
 ## Is this course really free?
 

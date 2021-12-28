@@ -73,8 +73,8 @@ clarity:
   weight: 2
   row: 22
 
-- title: Workflow maps connects topics in larger flows
-  description: "Larger tasks that span multiple topics have a <a href='/simplifying-complexity/macro-micro.html'>workflow map</a> (or similar mechanism) that connects the topics together."
+- title: Workflow maps connect topics in larger flows
+  description: "Larger tasks that span multiple topics have a <a href='https://idratherbewriting.com/simplifying-complexity/macro-micro.html'>workflow map</a> (or similar mechanism) that connects the topics together."
   weight: 2
   row: 23
 
@@ -116,7 +116,7 @@ completeness:
   row: 32
 
 - title: Unhappy path documented
-  description: "If there are pitfalls or other traps, gaps, and gotchas to avoid, these are noted in the documentation rather than hidden from the user. A section called <a href='/2010/12/16/known-limitations/'>Known Limitations</a> often contains this information. The documentation doesn't lie or mislead the user but rather is <a href='/2017/07/13/transparency-in-documentation/'>transparent, honest, and helpful</a> even if it means exposing the product's warts and revealing problems users will like encounter."
+  description: "If there are pitfalls or other traps, gaps, and gotchas to avoid, these are noted in the documentation rather than hidden from the user. A section called <a href='https://idratherbewriting.com/2010/12/16/known-limitations/'>Known Limitations</a> often contains this information. The documentation doesn't lie or mislead the user but rather is <a href='https://idratherbewriting.com/2017/07/13/transparency-in-documentation/'>transparent, honest, and helpful</a> even if it means exposing the product's warts and revealing problems users will like encounter."
   weight: 2
   row: 33
 

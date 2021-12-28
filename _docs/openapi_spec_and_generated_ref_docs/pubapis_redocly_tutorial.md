@@ -380,7 +380,7 @@ The CLI contains a Redoc documentation preview server that listens for changes a
 
 4.  Press **Ctrl+C** to stop the preview server.
 
-    Note that we're currently using the Community Edition of Redoc. We'll explore more features in the Pro version in [7. Explore the premium version: Redocly API Reference](#pubapis_redocly.html#explore_premium).
+    Note that we're currently using the Community Edition of Redoc. We'll explore more features in the Pro version in [7. Explore the premium version: Redocly API Reference](#explore_premium).
 
 ### 5. Bundle up the OpenAPI definition into a single file {#bundle}
 

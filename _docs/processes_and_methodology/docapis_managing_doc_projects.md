@@ -86,7 +86,7 @@ Even in cases where each tech writer has a healthy allocation of projects, you w
 
 Track down your organization's strategic goals from your C-suite execs or other senior leaders as a way to figure out these priorities. If you're so far down the org hierarchy that you've never seen such a document nor are allowed to access it, find out from your manager what the goals are. Your manager should be aware of his or her manager's goals, who should be aware of his or her manager's goals, and so on up the line. If there's a disconnect somewhere, it represents a broken line of communication and potentially an organization that isn't aligned.
 
-Decide which projects should receive your most thorough attention (based on the projects that your senior leaders are prioritizing). This alignment is key for boosting your value to the organization, as I described in [Part V: On being strategic, interpersonal, and sponsored](/blog/reflecting-seven-years-later-about-layoff-clarke-being-strategic/). After you get a sense of your organization's strategic priorities, assign each project on your doc planning spreadsheet one of the following priorities: low, medium, or high.
+Decide which projects should receive your most thorough attention (based on the projects that your senior leaders are prioritizing). This alignment is key for boosting your value to the organization, as I described in [Part V: On being strategic, interpersonal, and sponsored](https://idratherbewriting.com/blog/reflecting-seven-years-later-about-layoff-clarke-being-strategic/). After you get a sense of your organization's strategic priorities, assign each project on your doc planning spreadsheet one of the following priorities: low, medium, or high.
 
 Keep in mind that strategic priorities differ by group. What might be a strategic priority for one group might not be a strategic priority for another group. This prioritization can be especially problematic if your group is cross-functional, meaning you support many organizations with different services (e.g., documentation, marketing, support, dev relations, and so on). In these cases, you'll have to figure out which priorities your own group wants to embrace.
 
@@ -349,7 +349,7 @@ During the bi-weekly Sprint Planning meeting, each writer weights their items an
 
 As tech writers begin developing content, there are two primary ways to go about it. For new content that involves a significant amount of new material, which will require review, comments, iterations, and other discussions, I recommend starting the content in a collaborative wiki platform (e.g., Google Docs, Quip, Confluence). Use the platform that your team already uses for collaboration, as it will probably a familiar place for interaction. These platforms allow you to easily ask questions, let reviewers provide input, and collaboratively shape the material in a more interactive way.
 
-There's no point in focusing on your authoring tool's syntax (e.g., Markdown, DITA, XML) or struggling with build issues at this point if you're not even sure if the pages you've written will make it into the published documentation. I wrote about this scenario extensively in [Treat code like code and prose like prose](/blog/treat-code-like-code-and-prose-like-prose/). While it might be tempting to drive everything from a docs-as-code tooling perspective here, asking engineers to review content using code review tools, this workflow typically excludes non-engineers from the documentation review process.
+There's no point in focusing on your authoring tool's syntax (e.g., Markdown, DITA, XML) or struggling with build issues at this point if you're not even sure if the pages you've written will make it into the published documentation. I wrote about this scenario extensively in [Treat code like code and prose like prose](https://idratherbewriting.com/blog/treat-code-like-code-and-prose-like-prose/). While it might be tempting to drive everything from a docs-as-code tooling perspective here, asking engineers to review content using code review tools, this workflow typically excludes non-engineers from the documentation review process.
 
 Although engineers might like providing comments through GitHub or other code review tools, usually product managers, field engineers, QA, or others will find these tools much less familiar and might forego participating in reviews altogether. This scenario is bad news for docs because you end up with the reviewers being the same people who created the systems you're documenting. You need more of an outside perspective to avoid problems related to the curse of knowledge.
 
@@ -365,7 +365,7 @@ Engineers and other product team members almost invariably have some product inf
 
 One of your first steps is usually to get the product or code working (to some extent) yourself. This testing will usually help you understand the product and identify information gaps in the existing material. See [Testing your docs](testingdocs_overview.html) for more details here.
 
-Push for [sample apps](docapis_sample_apps.html) or [sample code](docapis_codesamples_bestpractices) (often from a QA team) in order to test the code. Also, recognize that clarifying these information gaps is a primary value we add as technical communicators to the information process. If you don't understand something on a wiki that engineers wrote, find out whether your audience will understand it (often by asking field engineers or support teams to represent the customer's point of view).
+Push for [sample apps](docapis_sample_apps.html) or [sample code](docapis_codesamples_bestpractices.html) (often from a QA team) in order to test the code. Also, recognize that clarifying these information gaps is a primary value we add as technical communicators to the information process. If you don't understand something on a wiki that engineers wrote, find out whether your audience will understand it (often by asking field engineers or support teams to represent the customer's point of view).
 
 ## 9. Follow a review process for your docs {#follow_review_process}
 
@@ -463,7 +463,7 @@ Here's an overview of the meetings that drive the process for managing documenta
 
 ## Related topics
 
-See the [Process for managing small documentation requests](docapis_managing_small_doc_requests).
+See the [Process for managing small documentation requests](docapis_managing_small_doc_requests.html).
 
 ## Survey to gather your feedback and input
 

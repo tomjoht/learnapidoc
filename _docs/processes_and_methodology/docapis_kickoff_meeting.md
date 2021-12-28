@@ -16,7 +16,7 @@ At some point after receiving a new documentation project, the first step in the
 
 ## Meeting agendas
 
-The general purpose of this documentation kickoff meeting is to review the intake ticket, which should include a host of detail about the project. (See [Create project plans for the documentation projects](#create_project_plans) in Managing documentation projects for a list of fields.) Chances are, a product manager has completed half or fewer of the intake fields, as they just don't know all the possible information. No worries, though, as you'll be going through this information in more detail here.
+The general purpose of this documentation kickoff meeting is to review the intake ticket, which should include a host of detail about the project. (See [Create project plans for the documentation projects](docapis_managing_doc_projects.html#create_project_plans) in Managing documentation projects for a list of fields.) Chances are, a product manager has completed half or fewer of the intake fields, as they just don't know all the possible information. No worries, though, as you'll be going through this information in more detail here.
 
 After reviewing the ticket, you want to go over the product or features that you'll be documenting. If this is a large project, you might have a separate meeting for the product demo. If it's smaller, you can combine them. Obviously, adjust the advice here for the nature of the product, product teams, and company. During the demo, consider the following questions as a way to gather more information about the product or feature.
 

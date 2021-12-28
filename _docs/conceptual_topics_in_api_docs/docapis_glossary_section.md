@@ -109,7 +109,15 @@ Then populate the tooltip like this to get info from the glossary YAML file:
 
 The result:
 
+{% if site.format == "kindle" or site.format == "pdf" %}
+This content doesn't embed well in print, as it contains JavaScript. Please go to https://idratherbewriting.com/learnapidoc/docapis_glossary_section.html to view the content.
+{% endif %}
+
+{% if site.format == "web" %}
+
 <div style="margin: 20px 0px 20px 100px">Learning how to document <a href="javascript://" data-toggle="tooltip" title="{{site.data.glossary.api.def}}">APIs</a> is essential in a tech landscape that has shifted to an information economy, with the buying and selling of information more than physical goods.</div>
+
+{% endif %}
 
 Tooltips appear when you mouse over a link and disappear when you move your mouse off the link. Because of this behavior, don't include any links in tooltip text. If you want to link to text, use a [Bootstrap popover](https://getbootstrap.com/docs/4.0/components/popovers/). Just like with tooltips, popovers must also be initialized:
 
@@ -129,7 +137,15 @@ You can then populate the popover with info from the glossary YAML file:
 
 The result:
 
+{% if site.format == "kindle" or site.format == "pdf" %}
+This content doesn't embed well in print, as it contains JavaScript. Please go to https://idratherbewriting.com/learnapidoc/docapis_glossary_section.html to view the content.
+{% endif %}
+
+{% if site.format == "web" %}
+
 <div style="margin: 20px 0px 20px 100px">Learning how to document <a data-html="true" href="javascript://" title="{{site.data.glossary.api.term}}" data-toggle="popover" data-placement="top" data-content="{{site.data.glossary.api.def}} {{site.data.glossary.api.link}}">APIs</a> is essential in a tech landscape that has shifted to an information economy, with the buying and selling of information more than physical goods.</div>
+
+{% endif %}
 
 Notice that I separated out the link into its own property in [_data/glossary.yml](https://github.com/tomjoht/learnapidoc/blob/main/_data/glossary.yml). I did this to provide flexibility as to whether I wanted the link included. Including the link would be problematic if the link pointed to the same page where the popover appears. Also, since tooltips don't support links, I didn't want to always include the links there. If you're using popovers, note the following:
 
@@ -199,7 +215,7 @@ The Apigee glossary provides another good model to follow. One interesting decis
 
 Regardless of the format, I'm usually thrilled to see a glossary. All too often, glossaries are neglected in documentation (not just in API documentation). They shouldn't be. Much of the complexity of technical content is due to the high number of specialized terms &mdash; terms that product teams often assume their audiences know (but in reality do not).
 
-## <i class="fa fa-user-circle"></i> Activity with glossaries
+## <i class="fa fa-user-circle"></i> Activity with glossaries {#activity_with_glossaries}
 
 With the [open-source project you identified](docapis_find_open_source_project.html), identify the glossary (or lack of one). Then answer the following questions:
 

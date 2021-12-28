@@ -10,27 +10,35 @@ path1: /docapis_introtoapis.html
 last-modified: 2020-10-28
 ---
 
-I recently [conducted a survey](/blog/developer-documentation-survey-2020/) about trends for those creating documentation for developers and engineers. You can view the content in several formats: slides, webinar, or article.
+I recently [conducted a survey](https://idratherbewriting.com/blog/developer-documentation-survey-2020/) about trends for those creating documentation for developers and engineers. You can view the content in several formats: slides, webinar, or article.
 
 ## Slides
 
-You can view the [slides here](../learnapidoc/slides/devdoctrends_results.html):
+You can view the [slides here](https://idratherbewriting.com/learnapidoc/slides/devdoctrends_results.html):
 
-<a href="../learnapidoc/slides/devdoctrends_results.html"><img src="{{site.media}}/devdoctrendssurveyresultstitle.png" alt="Developer Documentation Survey Results" style="max-width:500px; border: 1px solid #444" /></a>
+<a href="https://idratherbewriting.com/learnapidoc/slides/devdoctrends_results.html"><img src="{{site.media}}/devdoctrendssurveyresultstitle.png" alt="Developer Documentation Survey Results" class="medium" style="border: 1px solid #444" /></a>
 
 ## Webinar
 
 You can also view a recorded webinar where I talk through the results here:
 
+{% if site.format == "kindle" or site.format == "pdf" %}
+This content doesn't embed well in print, as it contains a YouTube video. Please go to [https://idratherbewriting.com/learnapidoc/docapis_course_videos.html](https://idratherbewriting.com/learnapidoc/docapis_course_videos.html) to view the content.
+{% endif %}
+
+{% if site.format == "web" %}
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/swktxdNozXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{% endif %}
 
 {% include random_ad4.html %}
 
 ## Article
 
-I wrote an [article for the *Institute of Scientific Technical Communicators* (ISTC) magazine]({{site.media}}/istc2020_devdoctrends.pdf) (Autumn 2020).
+I wrote an [article for the *Institute of Scientific Technical Communicators* (ISTC) magazine](https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/istc2020_devdoctrends.pdf) (Autumn 2020).
 
-<a class="noCrossRef" href="{{site.media}}/istc2020_devdoctrends.pdf"><img src="{{site.media}}/istccoverthumb2020.png" alt="ISTC article on developer documentation trends" style="border: 1px solid #dedede;"/></a>
+<a class="noCrossRef" href="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/istc2020_devdoctrends.pdf"><img src="{{site.media}}/istccoverthumb2020.png" alt="ISTC article on developer documentation trends" style="border: 1px solid #dedede;"/></a>
 
 The same content from the PDF is available in HTML below:
 

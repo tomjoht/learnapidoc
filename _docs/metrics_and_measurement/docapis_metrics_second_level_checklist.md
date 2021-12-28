@@ -99,7 +99,7 @@ input[type=checkbox] {
 
 ## Is this list complete? No
 
-Between the two checklists ([first-level](docapis_metrics_second_level_checklist) and second-level), there are about 75 different characteristics that I've described. Did I miss anything? Sure, you could probably expand this list with 100 more characteristics.
+Between the two checklists ([first-level](docapis_metrics_second_level_checklist.html) and second-level), there are about 75 different characteristics that I've described. Did I miss anything? Sure, you could probably expand this list with 100 more characteristics.
 
 {% include random_ad4.html %}
 

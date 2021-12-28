@@ -43,13 +43,28 @@ The above example is extremely simple. You could also build an attractive interf
 
 The concept and general techniques are more or less the same. Behind the scenes, the code makes requests to a weather service API and then displays the returned information in a stylized user interface.
 
-## Explore the OpenWeatherMap API
+##  <i class="fa fa-user-circle"></i> Activity: Explore the OpenWeatherMap API {#explore_openweathermap_api}
 
 Although there are [many good weather API options for developers](https://superdevresources.com/weather-forecast-api-for-developing-apps/), I decided to use the [OpenWeatherMap API](https://openweathermap.org) in this course because the service is easy to use, free, and stable.
 
 {% include random_ad2.html %}
 
-{% include content/activities/explore_openweathermap_api.md %}
+Let's explore the basic sections in the [OpenWeatherMap API](https://openweathermap.org/api/):
+
+1.  Go to the [openweathermap.org](https://openweathermap.org).
+2.  Click **API** in the top navigation bar.
+3.  In the **Current weather data** section, click the **API doc** button.
+4.  Click some of the links in the **Examples of API calls** sections.
+
+    Get a sense of the information this Current Weather Data API provides. The API calls provide developers with ways to pull information into their applications. In other words, the APIs will provide the data plumbing for the applications that developers build.
+
+5.  Answer the following questions about the Current Weather Data API endpoint:
+
+    * Does the API provide the information we need about temperature, wind speed, wind direction, and current conditions?
+    * How many different ways can you specify the location for the weather information?
+    * What does a sample request look like?
+    * How many endpoints does the API have?
+    * What authorization credentials are required to get a response?
 
 ## Explore the Aeris Weather API {#aeris}
 

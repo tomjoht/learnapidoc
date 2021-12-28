@@ -118,11 +118,11 @@ https://api.openweathermap.org/com/surfreport/123?&days=2&units=metrics&hour=140
 
 <p>The report won't include any details about riptide conditions. </p>
 
-<p>Although users can enter beach names, there are only certain beaches included in the report. Users can look to see which beaches are available from our website at <code>http://example.com/surfreport/beaches_available</code>. The beach names must be url encoded when passed in the endpoint as query strings.</p>
+<p>Although users can enter beach names, there are only certain beaches included in the report. Users can look to see which beaches are available from our website at <code>https://example.com/surfreport/beaches_available</code> (not a real URL). The beach names must be url encoded when passed in the endpoint as query strings.</p>
 
 <p>To switch from feet to metrics, users can add a query string of <code>&units=metrics</code>. Default is <code>&units=imperial</code>.</p>
 
-<p>Here's an <a href="http://www.surfline.com/surf-report/south-beach-ca-northern-california_5088/">example</a> of how developers might integrate this information.</p>
+<p>Here's an <a href="https://www.surfline.com/surf-report/south-beach-ca-northern-california_5088/">example</a> of how developers might integrate this information. This site shows the height of the surf coupled with a cam.</p>
 
 <p>If the query is malformed, you get error code 400 and an indication of the error.</p>
 </div>

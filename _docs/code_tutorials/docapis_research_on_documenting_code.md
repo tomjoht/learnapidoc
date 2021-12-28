@@ -26,7 +26,7 @@ First, let's explore "When Not to Comment: Questions and Tradeoffs with API Docu
 
 This research coordinates efforts among academic researchers, engineers, usability specialists, and members from Google’s Engineering Productivity Research team. Given how important documentation is for understanding code, the researchers want to know the best location for documentation as well as what information engineers want in docs. Specifically, they focused on C++ APIs and asked whether engineers are more inclined to consult the header files (where classes are defined) or the implementation files (where classes are implemented) for the information they need. The following screenshot (from their article) shows the difference between header and implementation files:
 
-<img src="{{site.media}}/header_or_implementation_files.png" style="max-width: 500px" alt="Header files versus implementation files" />
+<img src="{{site.media}}/header_or_implementation_files.png" class="small_medium" alt="Header files versus implementation files" />
 
 Basically, in C++, the header files (`.h`) contain the classes and the main documentation. The implementation files (`.cc`) instantiate and implement the classes from the header files. In short, the header files contain more formal documentation that follows specific annotation conventions, while the implementation files contain the guts of the logic about how the class has been implemented. Implementation files have comments peppered inline with the code, without formally structured doc annotations. A central question the researchers wanted to know is whether users gravitate toward the inline code comments in implementation files or the official documentation in the header files.
 
@@ -56,13 +56,13 @@ Besides skipping docs when the code is simple enough to understand on its own, t
 
 In short, there are valid arguments for not even writing documentation, particularly for simple code. The following chart shows when documentation might not be necessary with code:
 
-<img src="{{site.media}}/when-not-comment-on-code.png" style="max-width: 500px" alt="When not to comment on code"/>
+<img src="{{site.media}}/when-not-comment-on-code.png" class="medium" alt="When not to comment on code"/>
 
 However, for more complex code, especially where multiple files and generated code might be involved, developers still relied on the formal documentation to understand it. The researchers explain:
 
 > When isn’t code enough to be self-documenting? Sometimes, developers had no problem reading code, and in fact preferred it for finding more accurate information. However, there are some cases where self-documentation isn’t feasible, like code with overly complex method signatures and generated code. Other details, like recommended usage, just can’t be conveyed by source code.
 
-In short, when the source code isn't intuitive to understand on its own, developers turned to more lengthy and formal documentation about it. This makes sense and aligns with best practices for GUI documentation as well &mdash; one should always focus on the complicated parts of a system, [not the obvious elements](/2013/09/04/sticking-with-obvious-information/) that no one needs help with.
+In short, when the source code isn't intuitive to understand on its own, developers turned to more lengthy and formal documentation about it. This makes sense and aligns with best practices for GUI documentation as well &mdash; one should always focus on the complicated parts of a system, [not the obvious elements](https://idratherbewriting.com/2013/09/04/sticking-with-obvious-information/) that no one needs help with.
 
 Granted, recognizing what code is simple versus complex is the challenge because the technical writer is likely not a developer and will likely only have a rudimentary idea about the complexity of the code. Just because the code is short or long does not give a clear indication about its complexity. A short snippet out of context might be confusing, while a lengthier sample that contains a fully functioning sample might be more understandable.
 
@@ -118,7 +118,7 @@ In fact, this might be a defining characteristic that separates GUI documentatio
 
 Overall, this research has many insights and conclusions. The article addresses many concerns around code documentation and presents a complex view about each of these facets &mdash; when/if to document code, where to put this documentation, when to write the documentation, what questions to address, and more. There's not always a clear path to follow (it's messy), and many environmental, product, and audience details must factor into the documentation strategy. Still, this article provides solid research and probes the topic in illuminating ways.
 
-## How Developers Use API Documentation: An Observation Study
+## How Developers Use API Documentation: An Observation Study {#how_devs_use_docs}
 
 Now let's move into another meaty academic article that addresses best practices for documenting code. The January 2019 issue of [*Communication Design Quarterly*](https://sigdoc.acm.org/publication/), a publication of SIGDOC (the Special Interest Group for Design of Communication), features an article called [How Developers Use API Documentation: An Observation Study](https://sigdoc.acm.org/cdq/how-developers-use-api-documentation-an-observation-study/). Several researchers from Merseburg University in Germany &mdash; Michael Meng, Stephanie Steinhardt, and Andreas Shubert &mdash; set out to "understand how developers use documentation when starting to work with a new API."
 
@@ -178,7 +178,7 @@ Instead of "opportunistic" (which has a somewhat negative connotation), others h
 
 If developers jump around from code to concepts and other places, where are they spending most of their time in the docs? If we can measure the time in one type of documentation more than another, we can give more attention to that kind of documentation. The authors measured the time users spent in various parts of the documentation as follows:
 
-<img src="{{site.media}}/percentageoftimespent.png" style="max-width: 450px; border: 1px solid #dedede" />
+<img src="{{site.media}}/percentageoftimespent.png" class="small_medium" style="border: 1px solid #dedede" />
 
 Similar to the previous research from Head et al., "“When Not to Comment," developers spent most of the time looking at API reference information (e.g., parameters). But here the researchers make an interesting observation that breaks other assumptions: they say developers looked for topics rather than categories of information &mdash; in other words, they didn't necessarily distinguish between concepts versus recipes versus reference information types as they searched for information. They had a problem to solve, and they looked for information related to that problem, regardless of whether that information might be classified as a concept, task, reference, troubleshooting, recipe, or other topic type. As a result, the researchers recommend a more topic-based organization strategy:
 

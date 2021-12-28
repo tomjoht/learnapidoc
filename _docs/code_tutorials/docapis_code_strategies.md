@@ -214,7 +214,7 @@ As you decompile the logic of the code to the simplest pattern, you will face an
 
 Teaching core patterns shifts the documentation more into the domain of a tutorial. Related to this type of learning are interactive browser experiences that combine action with learning. These browser-executable interfaces have as their goal the aim to help users better understand the results of inputs and outputs so that users can see for themselves how the code works through a more hands-on, try-it-for-yourself approach.
 
-The most common example of interactive documentation for APIs is with Swagger UI, which I have already covered at length in [OpenAPI tutorial using Swagger Editor and Swagger UI: Overview](pubapis_openapi_tutorial_overview) and showed in the [Swagger UI Demo](pubapis_swagger_demo.html):
+The most common example of interactive documentation for APIs is with Swagger UI, which I have already covered at length in [OpenAPI tutorial using Swagger Editor and Swagger UI: Overview](pubapis_openapi_tutorial_overview.html) and showed in the [Swagger UI Demo](pubapis_swagger_demo.html):
 
 {% include course_image.html url="pubapis_swagger_demo.html" size="medium" filename="swagger-try-it-out-example" ext_print="png" ext_web="png" alt="Try it out button in Swagger's interactive REST API interface" caption="Try it out button in Swagger's interactive REST API interface" %}
 
@@ -246,83 +246,8 @@ In this section, we looked at five approaches to documenting code:
 
 Overall, use the approach that helps empower users with the knowledge for creating their own code.
 
-{% include content/activities/classify_code_approach.md %}
+## <i class="fa fa-user-circle"></i> Activity: Classify code documentation into one of the five types
 
-{% comment %}
-## inline comments
+Find a code tutorial within one of the API documentation sites you've been exploring. Or look at one of the API doc sites in this post by Nordic APIs on [5 Examples of Excellent API Documentation (and Why We Think So)](https://nordicapis.com/5-examples-of-excellent-api-documentation/). This post lists five API doc sets: [Stripe](https://stripe.com/docs/api), [Twilio](https://www.twilio.com/docs/usage/api), [Dropbox](https://www.dropbox.com/developers/documentation), [GitHub](https://developer.github.com/v3/guides/getting-started/), and [Twitter](https://developer.twitter.com/en/docs/tweets/search/overview).
 
-https://hackaday.com/2019/03/05/good-code-documents-itself-and-other-hilarious-jokes-you-shouldnt-tell-yourself/
-
-https://www.freecodecamp.org/news/code-comments-the-good-the-bad-and-the-ugly-be9cc65fbf83/
-
-https://hackernoon.com/write-good-documentation-6caffb9082b4
-
-https://medium.com/@andrewgoldis/how-to-document-source-code-responsibly-2b2f303aa525
-
-https://hackernoon.com/write-good-documentation-6caffb9082b4 (what versus why)
-
-links within code
-
-
-
-scrolling focus
-
-pop-ups
-
-placemarkers [1]
-
-diagrams (that screenshot)
-
-layers approach. https://developer.ebay.com/DevZone/shopping/docs/HowTo/PHP_Shopping/PHP_FIA_GUP_Interm_NV_XML/PHP_FIA_GUP_Interm_NV_XML.html
-
-split out files into tabs. https://stripe.com/docs/stripe-js
-
-
-challenge is that any marker you put in the code can't be rendered as code itself. tricky from a tools perspective.
-
-
-* **Formatting the code properly, and referring to various lines, is also a challenge.** You want to apply code syntax highlighting based on the code language but also based on code formatting for that language following standard conventions in that language (e.g., where to insert line breaks, spaces, capitalization, etc.). If you have 50-100 lines of code, referring to different aspects of the code is also challenging &mdash; you could conceivably refer to line numbers, if your samples have them, but that approach also has its problems. Do you wrap code or let the user scroll horizontally? How much do you pepper code with inline comments, writing for that opportunistic, experiential programmer rather than the systematic programmer who starts from page one?
-
-*you need to use code syntax highlighting correctly to make the code readable.*
- *you have to use proper style formatting with white space and such*
-*Is there any way to collapse the comments or to provide a way to expand the comments?*
-With span or div comments, doesn’t this remove the ability to comment in the code. I think you’d need to give up your syntax highlighting, or maybe you … I’m not sure.*
-- What if you could somehow provide an easy way to provide documentation right next to code?* *Like twilio? The dual pane, with code in focus.* *There is this paradox that the more you document, the more you interfere with the readability of the code.*
-*there are lots of innovative things people are doing with code that wasn’t really possible before.*
-What are some innovative techniques around code?*strip sample:* [Stripe.js and Elements | Stripe Payments](https://stripe.com/docs/stripe-js)
- What if code scrolls horizontally? Should you implement horizontal scrolling?*
- What is a Jupiter notebook?*[Project Jupyter | Home](http://jupyter.org/) [The evolution of Jupyter Notebook: Jupyter Lab – Mohtadi Ben Fraj – Medium](https://medium.com/@mohtedibf/the-evolution-of-jupyter-notebook-jupyter-lab-704f3e93230c)
-
- *Can you give people real-time feedback through validators, like Swagger Editor?*
- *Are line numbers really useful? Do people reference them?*
-
-*should you highlight the code as a different color?*
-
-*Here’s an example from eBay:* [Getting Started with Search: Specifying XML Results in a Shopping API GET Request](https://developer.ebay.com/DevZone/shopping/docs/HowTo/PHP_Shopping/PHP_FIA_GUP_Interm_NV_XML/PHP_FIA_GUP_Interm_NV_XML.html)
-
-*How do you highlight or denote the parts of the code that a user needs to customize? What conventions or patterns are common with that?
-
-
-How much height do you allow for code samples before you cut it off? Seems like it’s fairly common to cut it off at like 800px or so.*
-3. *Here’s a key article:
-2. *How do you dynamically insert API keys or other stuff into sample calls to make them more copy and pastable?*
-
- *When should you show scroll bars with code? A limit on the vertical horizon, on the horizontal axis? Should you shrink code so that it becomes smaller and smaller in the responsive view? Or like stripe should you make it not shrink so small but rather be a fixed width? Should writers about any need for horizontal scrolling, or is this okay? I don’t get any scroll bars on* stripe: [IBAN Element Quickstart | Stripe Elements](https://stripe.com/docs/stripe-js/elements/iban)
-
-How do you allow users to navigate among comments in your code? Would the scrollto plugin really be a good idea?*
-11. *How do you annotate code? Here’s an example:*
-*This is from Android Programming for Beginners. Exploring the project's Java code and the main layout's XML code. This chapter provides a really interesting way to describe and document code. It walks you through more or less section by section. But the numbers allow you to expand with more depth. There are multiple layers here. Do you explain what packages are, and classes? We assume the user has this knowledge, right? But you have to understand what knowledge the user already has versus what knowledge the user needs. What does the user need to know? It is not readily apparent. There is no immediate task, or is there?*
-
- *Is the 3 column design an effort to try to provide narration of code separate from the code, to keep the two separated and easily scannable? Yes, this is a key point that you want to emphasize. How do you create a running commentary about code without interfering with the code itself. This is what has led to the 3 column display.*
-2. *Are gists something you should be using?*
-*Check out* [The Golden Rules of Code Documentation – Java, SQL and jOOQ.](https://blog.jooq.org/2013/02/26/the-golden-rules-of-code-documentation/)
-
-*How could you implement the side by side scrolling technique with more regularity? I really think this might be the way to go. Problem is width, but maybe this is all right? Also, how to do code syntax highlighting while also having markers in the code that indicate narrative points?*
-
-- it's hard to reference the code. you might want to refer to different parts of the code during conceptual explanations.  It could be useful to have some line numbers to reference this, but it might not be so wise to count on this for maintainability.
-
-Overall, the nautilus approach is probably the best approach because you're empowering the user with the knowledge for creating his or her own code logic. In [*Think Like a Programmer: An Introduction to Creative Problem Solving*], V. Anton Spraul compares coding to cooking:
-
-> Books that do focus on writing are often effectively "cookbooks" in that they teach specific recipes for use in particular situations. Such books can be quite valuable as time savers, but not as a path toward learning to write original code. Think about cookbooks in the original sense. Although great cooks own cookbooks, no one who relies upon cookbooks can be a great cool. A great cook understands ingredients, preparation methods, and cooking methods and knows how they can be combined to make great meals. All a great cook needs to produce a tasty meal is a fully stocked kitchen. in the same way, a great programmer understands language syntax, application frameworks, algorithms, and software engineering principles and knows how they can be combined to make great programs. Give a great programmer a list of specifications, turn him loose with a fully stocked programmminng environment, and great things will happen.
-
- {% endcomment %}
+Find a code tutorial in the documentation. Figure out which approach the code documentation best aligns with.

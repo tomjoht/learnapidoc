@@ -198,7 +198,7 @@ For example, here's the [Google JavaScript Style Guide](http://google.github.io/
 
 ## Pattern 4: Lengthy pages {#longish_pages}
 
-One of the starkest differences between regular end-user documentation and developer documentation is that developer doc pages tend to be much longer. Why are the pages longer? In [How API Documentation Fails](https://ieeexplore.ieee.org/document/7140676/) (published in [*IEEE Software*](https://ieeexplore.ieee.org)), Martin Robillard and Gias Uddin looked at common reasons why developers had severe problems with API documentation. In addition to incompleteness, ambiguity, and other reasons, the researchers also found that "fragmentation" was cited as a common issue (which is more related to the presentation of content than the content itself).
+One of the starkest differences between regular end-user documentation and developer documentation is that developer doc pages tend to be much longer. Why are the pages longer? In [How API Documentation Fails](https://ieeexplore.ieee.org/document/7140676/) (published in [*IEEE Software*](https://ieeexplore.ieee.org), Martin Robillard and Gias Uddin looked at common reasons why developers had severe problems with API documentation. In addition to incompleteness, ambiguity, and other reasons, the researchers also found that "fragmentation" was cited as a common issue (which is more related to the presentation of content than the content itself).
 
 Robillard and Udin explain:
 

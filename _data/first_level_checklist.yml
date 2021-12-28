@@ -69,7 +69,7 @@ relevance:
   row: 19
 
 - title: Code samples exist
-  description: "<a href='docapis_codesamples_bestpractices'>Code samples</a> showing sample ways to use the API (or similar tools) are provided. Ideally, the code samples are available in the user's target language. This might mean providing multiple code samples."
+  description: "<a href='docapis_codesamples_bestpractices.html'>Code samples</a> showing sample ways to use the API (or similar tools) are provided. Ideally, the code samples are available in the user's target language. This might mean providing multiple code samples."
   weight: 3
   row: 20
 
@@ -158,7 +158,7 @@ clarity:
 completeness:
 
 - title: Reference docs follow industry standards
-  description: "For native library APIs (or other API types), reference docs (auto-generated from source code comments) are available. This might mean <a href='JavaDoc'>nativelibraryapis_exploring_javadoc_output.html</a>, <a href='nativelibraryapis_doxygen.html'>Doxygen</a>, <a href='pubapis_openapi_intro.html'>OpenAPI</a> outputs like <a href='pubapis_swagger.html'>Swagger</a> or other reference docs specific to the library. The reference docs should be populated and generally follow tagging standards."
+  description: "For native library APIs (or other API types), reference docs (auto-generated from source code comments) are available. This might mean <a href='nativelibraryapis_exploring_javadoc_output.html'>Javadoc</a>, <a href='nativelibraryapis_doxygen.html'>Doxygen</a>, <a href='pubapis_openapi_intro.html'>OpenAPI</a> outputs like <a href='pubapis_swagger.html'>Swagger</a> or other reference docs specific to the library. The reference docs should be populated and generally follow tagging standards."
   weight: 3
   row: 41
 
@@ -225,7 +225,7 @@ readability:
   row: 55
 
 - title: Topics start with summaries
-  description: "Each topic usually has a <a href='/2018/09/15/pages-at-a-glance-feature/#enforcing-best-practices-with-structure'>short summary below the title</a> that encapsulates the main purpose of the topic. This helps users get a sense of the topic at a glance."
+  description: "Each topic usually has a <a href='https://idratherbewriting.com/2018/09/15/pages-at-a-glance-feature/#enforcing-best-practices-with-structure'>short summary below the title</a> that encapsulates the main purpose of the topic. This helps users get a sense of the topic at a glance."
   weight: 1
   row: 56
 

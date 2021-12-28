@@ -7,7 +7,7 @@ weight: 7.0
 course: "Documenting REST APIs"
 section: docconceptual
 redirect_from:
-- docnonref.html
+- docconceptual.html
 last-modified: 2020-11-02
 ---
 

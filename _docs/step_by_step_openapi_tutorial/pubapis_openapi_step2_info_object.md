@@ -24,7 +24,7 @@ The [info object](https://github.com/OAI/OpenAPI-Specification/blob/master/versi
 {:toc}
 {% endif %}
 
-## Sample info object
+## Sample info object (#sample_info_object)
 
 Here's an example of the `info` object and its properties. (The `openapi` object and the empty `paths` object are commented out to maintain the focus on the `info` object.)
 
@@ -67,7 +67,7 @@ As you write content in `description` properties, note that colons are problemat
 
 To update the spec file in Swagger Editor:
 
-1.  Paste the [above code](#sample_info_object) containing the `info` object into the Swagger Editor.
+1.  Paste the code from the preceding section ("Sample info object") containing the `info` object into the Swagger Editor.
 2.  Uncomment the `openapi` and `paths` objects (remove the "`#`"). The display looks as follows:
 
     {% include course_image.html size="large" border="true" filename="swagger_info_object_editor_view" ext_print="png" ext_web="png" alt="openapi, info, and empty paths object in Swagger Editor" caption="openapi, info, and empty paths object in Swagger Editor" %}

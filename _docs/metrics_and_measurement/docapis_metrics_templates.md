@@ -18,8 +18,8 @@ You can use two templates for the metrics described in this [Metrics and measure
 
 The purpose is the doc templates is make it easier to do narrative assessments of the various criteria. For example, if you find that the docs lack tutorials for the key use cases of the API, make notes about what use cases are lacking, or maybe note your inability to locate certain use cases in the docs. These kinds of narrative assessments don't work well in spreadsheets. Here are the two doc templates:
 
-* [First-level assessment doc (simplified html)](/learnapidoc/docs/metrics_and_measurement/docapis_metrics_first_level_checklist_html.html)
-* [Second-level assessment doc (simplified html)](/learnapidoc/docs/metrics_and_measurement/docapis_metrics_second_level_checklist_html.html)
+* [First-level assessment doc (simplified html)](https://idratherbewriting.com/learnapidoc/docs/metrics_and_measurement/docapis_metrics_first_level_checklist_html.html)
+* [Second-level assessment doc (simplified html)](https://idratherbewriting.com/learnapidoc/docs/metrics_and_measurement/docapis_metrics_second_level_checklist_html.html)
 
 The templates strip away most formatting and just list the various criteria in a basic HTML file. Copy and paste the content into Google Docs or Microsoft Word. Then as you go through the content, make your notes in the "Assessment" area. Also choose a score of 0 to 5. (Weighting for each criteria is done in the spreadsheet, not in the doc template.)
 
@@ -35,8 +35,8 @@ To use the spreadsheet to calculate a score:
 
 1.  Right-click the links below and select **Save Link As** (or similar for other browsers) to save the files to your computer:
 
-    * [First-level spreadsheet (csv)](/learnapidoc/docs/metrics_and_measurement/docapis_metrics_first_level_checklist_csv.csv)
-    * [Second-level spreadsheet (csv)](/learnapidoc/docs/metrics_and_measurement/docapis_metrics_second_level_checklist_csv.csv)
+    * [First-level spreadsheet (csv)](https://idratherbewriting.com/learnapidoc/docs/metrics_and_measurement/docapis_metrics_first_level_checklist_csv.csv)
+    * [Second-level spreadsheet (csv)](https://idratherbewriting.com/learnapidoc/docs/metrics_and_measurement/docapis_metrics_second_level_checklist_csv.csv)
 
 2.  If you're using Microsoft Excel (the app, not the browser version), open the CSV file in Microsoft Excel and save the file as an XSLS file. Then skip ahead to step 4.
 3.  For Google Sheets:
@@ -45,7 +45,7 @@ To use the spreadsheet to calculate a score:
     3.  Drag the CSV file you downloaded in step 1 into the "Drag a file here" box.
     4.  In the Import File dialog box that appears, under Import Location, select **Replace current sheet**. Leave the other default options as is. (Specifically, make sure "Convert text to numbers, dates, and formulas" is set to **Yes** because the CSV file has formulas.)
 
-    <img src="{{site.media}}/import_file_spreadsheet2.png" style="max-width: 300px" alt="Import File dialog" />
+    <img src="{{site.media}}/import_file_spreadsheet2.png" class="small" alt="Import File dialog" />
 
 4.  After importing, get familiar with the spreadsheet columns.
 

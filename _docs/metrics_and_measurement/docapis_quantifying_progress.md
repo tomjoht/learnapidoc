@@ -16,7 +16,7 @@ last-modified: 2021-02-15
 
 ## Analysis and quantitative metrics
 
-It's hard to imagine that documentation that checks all of the boxes in the [first-level checklist](docapis_metrics_first_level_checklist) and [second-level checklist](docapis_metrics_second_level_checklist) wouldn't also score highly with user satisfaction surveys. Can you honestly see any documentation that legitimately satisfies all of these criteria as falling short with users?
+It's hard to imagine that documentation that checks all of the boxes in the [first-level checklist](docapis_metrics_first_level_checklist.html) and [second-level checklist](docapis_metrics_second_level_checklist.html) wouldn't also score highly with user satisfaction surveys. Can you honestly see any documentation that legitimately satisfies all of these criteria as falling short with users?
 
 And yet, to achieve the level of information quality, we didn't have to rely on constant user surveys to gather feedback. By identifying best practices for content design (specifically for API/developer documentation), we're able to increase the documentation quality in more self-sufficient, self-directed ways.
 

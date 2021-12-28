@@ -48,7 +48,7 @@ In short, treating docs like code means to use the same systems, processes, and 
 {% if site.format == "pdf" or site.format == "kindle" %}
 <img src="{{site.media}}/limitstodocsascode.png"/>
 {% else %}
-<img style="max-width: 650px;" src="{{site.media}}/limitstodocsascode-01.svg"/>
+<img class="large" src="{{site.media}}/limitstodocsascode-01.svg"/>
 {% endif %}
 
 ## Advantages to docs-as-code approaches for docs {#docsascode_advantages}

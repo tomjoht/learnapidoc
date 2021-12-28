@@ -87,7 +87,7 @@ When you add the Git Client Add-on, a new Git Staging panel appears in the left 
 
 <figure><img src="{{site.media}}/oxygenxml-git-client-integration2.png" alt="Git client integration" /><figcaption><b>Figure 3.</b> A Git client add-on directly integrates into Oxygen XML so you can more easily manage your files with Git. </figcaption></figure>
 
-The "Unstaged files" section shows changes you've made to files that haven't been added to the staging area in Git. After selecting the files to stage, click the Stage selected arrow <img style="max-width:20px" src="{{site.media}}/oxygenxml-stage-arrow.png" alt="Staging arrow" /> to move it into your staging directory. (Moving these files into the staging area is the equivalent of running `git add <filename>` in the terminal.) The file then appears under Staged files and will be pushed to your Git repository on the next commit.
+The "Unstaged files" section shows changes you've made to files that haven't been added to the staging area in Git. After selecting the files to stage, click the Stage selected arrow <img style="width:20px" src="{{site.media}}/oxygenxml-stage-arrow.png" alt="Staging arrow" /> to move it into your staging directory. (Moving these files into the staging area is the equivalent of running `git add <filename>` in the terminal.) The file then appears under Staged files and will be pushed to your Git repository on the next commit.
 
 To commit the files, type a commit message and click Commit. (This is the equivalent of typing `git commit -m 'some message'` in the terminal.)
 
@@ -120,7 +120,7 @@ Beyond the docs-as-code features described above, there are other reasons to exp
 
 ### Responsive HTML5 webhelp
 
-One advantage in using Oxygen XML is the many readily available outputs for your content, especially the webhelp output and PDF. If you select a ditamap file in your project and then click the Apply Transformation Scenario(s) button <img src="{{site.media}}/oxygenxml-transform-button.png" alt="Apply Transformation Scenario(s) button" style="max-width:20px" />, you can see the available outputs:
+One advantage in using Oxygen XML is the many readily available outputs for your content, especially the webhelp output and PDF. If you select a ditamap file in your project and then click the Apply Transformation Scenario(s) button <img src="{{site.media}}/oxygenxml-transform-button.png" alt="Apply Transformation Scenario(s) button" style="width:20px" />, you can see the available outputs:
 
 <figure><img src="{{site.media}}/oxygen-xml-outputs.png" alt="Available outputs from Oxygen XML" /><figcaption><b> Figure 5.</b>Outputs available from Oxygen XML include virtually every type of output you can think of, including webhelp, PDF, Kindle, Word, and more. The two most common outputs are webhelp and PDF. </figcaption></figure>
 
@@ -178,7 +178,7 @@ But the larger point here is that your Oxygen XML projects will stick more close
 
 ## First steps with Oxygen XML
 
-To get started with [Oxygen XML](https://www.oxygenxml.com/){: rel="nofollow"}, download a 30-day trial. When you open Oxygen XML for the first time, a sample project will load. Explore the files in the Markdown folders. Click the `.ditamap` file and then click the Apply Transformation Scenarios button <img src="{{site.media}}/oxygenxml-transform-button.png" alt="Apply Transformation Scenario(s) button" style="max-width:20px" /> and build the output. Explore editing topics within the text editor and previewing the Markdown. If you need help, there are [Oxygen XML forums](https://www.oxygenxml.com/forum/) that are actively monitored.
+To get started with [Oxygen XML](https://www.oxygenxml.com/){: rel="nofollow"}, download a 30-day trial. When you open Oxygen XML for the first time, a sample project will load. Explore the files in the Markdown folders. Click the `.ditamap` file and then click the Apply Transformation Scenarios button <img src="{{site.media}}/oxygenxml-transform-button.png" alt="Apply Transformation Scenario(s) button" style="width:20px" /> and build the output. Explore editing topics within the text editor and previewing the Markdown. If you need help, there are [Oxygen XML forums](https://www.oxygenxml.com/forum/) that are actively monitored.
 
 ## Conclusion
 

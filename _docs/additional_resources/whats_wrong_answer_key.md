@@ -13,9 +13,9 @@ This is the answer key for [Activity: What's wrong with this API reference topic
 
 After you've finished commenting on the Google Doc, go to this [annotated Google doc](https://idratherbewriting.site/whats-wrong-api-answer-key).
 
-<figure><a target="_blank" class="noCrossRef" href="http://idratherbewriting.site/whats-wrong-api-answer-key"><img style="max-width: 300px" src="{{site.media}}/annotatedgoogledoc.png" /></a><figcaption>Annotated Google doc showing answers</figcaption></figure>
+<figure><a target="_blank" class="noCrossRef" href="http://idratherbewriting.site/whats-wrong-api-answer-key"><img class="small" src="{{site.media}}/annotatedgoogledoc.png" /></a><figcaption>Annotated Google doc showing answers</figcaption></figure>
 
-Alternatively, expand the answers below to see how many issues you found. If you found additional issues beyond those noted here, feel free to [drop me an email](contact.html) letting me know. You can also add your own comments on the Google Doc answer key.
+Alternatively, expand the answers below to see how many issues you found. If you found additional issues beyond those noted here, feel free to [drop me an email](http://idratherbewriting.com/learnapidoc/contact.html) letting me know. You can also add your own comments on the Google Doc answer key.
 
 <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#answerkey" aria-expanded="false" aria-controls="collapseExample">
 Answer key

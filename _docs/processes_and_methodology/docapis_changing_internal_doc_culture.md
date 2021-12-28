@@ -70,7 +70,7 @@ If you want to take it a step further, undertake a competitive analysis highligh
 
 ### 4. Move the needle in a noticeable way with doc quality
 
-Doc champions are converted to a pro-docs mentality through close experiences with documentation. I remember hearing a developer petition and advocate for product teams to have technical writers work on a specific product's documentation because of the way we turned around documentation for another product. If you can turn docs around in impressive ways, translating engineering-speak into real English, making the steps easy to follow and concrete, people will notice. You can't just fix grammar and punctuation &mdash; you have to actually move the quality needle in noticeable ways. For example, implement a [workflow map](/simplifying-complexity/macro-micro.html) to visualize a complex process.
+Doc champions are converted to a pro-docs mentality through close experiences with documentation. I remember hearing a developer petition and advocate for product teams to have technical writers work on a specific product's documentation because of the way we turned around documentation for another product. If you can turn docs around in impressive ways, translating engineering-speak into real English, making the steps easy to follow and concrete, people will notice. You can't just fix grammar and punctuation &mdash; you have to actually move the quality needle in noticeable ways. For example, implement a [workflow map](https://idratherbewriting.com/simplifying-complexity/macro-micro.html) to visualize a complex process.
 
 {% comment %}{% include random_ad3.html %}{% endcomment %}
 

@@ -140,7 +140,7 @@ You can see that the annotations differ by language, mostly following the allowe
 
 Although this code-generation approach "automates" the spec's generation, someone still has to know what annotations to add and how to add them (the process isn't too unlike Javadoc's comments and annotations). Then someone has to write content for each of the annotation's values (describing the endpoint, the parameters, and so on).
 
-In short, this process isn't without effort &mdash; the automated part is having the Codegen libraries generate the model definitions and the valid specification document that conforms to the OpenAPI schema. The end result is an OpenAPI specification document that you'll then need to feed into another tool such as [Swagger UI](pubapis_swagger.html),  [Redoc](pubapis_redoc), or another tool to generate out the documentation.
+In short, this process isn't without effort &mdash; the automated part is having the Codegen libraries generate the model definitions and the valid specification document that conforms to the OpenAPI schema. The end result is an OpenAPI specification document that you'll then need to feed into another tool such as [Swagger UI](pubapis_swagger.html), [Redocly](pubapis_redocly.html), or another tool to generate out the documentation.
 
 Still, many developers get excited about this approach because it offers a way to generate documentation from code annotations, which is what developers have been doing for years with other programming languages such as Java (using [Javadoc](http://www.oracle.com/technetwork/articles/java/index-137868.html)) or C++ (using [Doxygen](http://www.stack.nl/~dimitri/doxygen/)). They usually feel that generating documentation from the code results in less documentation drift. Docs are likely to remain up to date if the doc is tightly coupled with the code.
 
@@ -180,7 +180,64 @@ You can also check out the [sample Swagger UI integration with a simple weather 
 
 Some designers criticize Swagger UI's expandable/collapsible output as being dated. At the same time, developers find the one-page model attractive and like the ability to zoom out or in for details. By consolidating all endpoints on the same page in one view, users can take in the whole API at a glance. This display gives users a glimpse of the whole, which helps reduce complexity and enables them to get started. In many ways, the Swagger UI display is a [quick-reference guide](docapis_doc_quick_reference.html) for your API.
 
-{% include content/activities/explore_swagger_petstore.md %}
+## <i class="fa fa-user-circle"></i> Activity: Explore Swagger UI through the Petstore Demo {#explore_swagger_through_petstore_demo}
+
+Let's get some hands-on experience with Swagger UI using the Petstore demo. The Petstore demo provides a good example of how the OpenAPI specification can be rendered visually.
+
+1.  Go to the [Swagger Pet Store Demo](https://petstore.swagger.io/).
+
+    As with most Swagger-based outputs, Swagger UI provides a "Try it out" button. To make it work, you must first authorize Swagger by clicking **Authorize** and entering your API key in the Authorization modal. However, the Petstore authorization modal is just for demo purposes. There isn't any real code authorizing those requests, so you can close the Authorization modal or skip it altogether.
+
+    {% include course_image.html url="http://petstore.swagger.io/" size="medium" filename="swaggerui_authorize" ext_print="png" ext_web="png" alt="Authorization modal in Swagger UI" caption="Authorization modal in Swagger UI" %}
+
+2.  Expand the **<span style="padding: 3px; border-radius: 3px; background-color: #dedede">POST</span> `/pet`** endpoint.
+
+    {% include course_image.html url="http://petstore.swagger.io/" size="large" filename="swaggerui_petendpoint" ext_print="png" ext_web="png" alt="POST /pet endpoint and Try it out button in Swagger UI" caption="POST /pet endpoint and Try it out button in Swagger UI" %}
+
+3.  Click **Try it out**.
+
+    After you click Try it out, the example value in the Request Body field becomes editable.
+
+4.  In the example value, change the first `id` value to a unique (and unlikely to be repeated) whole number (such as `24329`). Change the name `doggie` to a pet name you can remember (e.g., `Bentley`).
+5.  Click **Execute**.
+
+    {% include course_image.html url="http://petstore.swagger.io/" size="large" filename="swaggerui_execute" ext_print="png" ext_web="png" alt="Executing a sample Petstore request" caption="Executing a sample Petstore request" %}
+
+    Swagger UI submits the request and shows the [curl]({{site.rooturl}}docapis_make_curl_call.html) that was submitted. For example, here's the curl Swagger UI sent:
+
+    ```curl
+    curl -X POST "https://petstore.swagger.io/v2/pet" -H "accept: application/xml" -H "Content-Type: application/json" -d "{ \"id\": 1000, \"category\": { \"id\": 0, \"name\": \"string\" }, \"name\": \"Bentley\", \"photoUrls\": [ \"string\" ], \"tags\": [ { \"id\": 0, \"name\": \"string\" } ], \"status\": \"available\"}"
+    ```
+
+    Notice that, with the `-d` (data) parameter, the request body is escaped and added directly into the curl command rather than being loaded from a file (as explained in [Common curl commands related to REST]({{site.rooturl}}docapis_understand_curl.html#common)).
+
+    The Responses section in Swagger UI shows the response from the server. By default, the response returns JSON:
+
+    ```xml
+    {
+      "id": 1000,
+      "category": {
+        "id": 0,
+        "name": "string"
+      },
+      "name": "Bentley",
+      "photoUrls": [
+        "string"
+      ],
+      "tags": [
+        {
+          "id": 0,
+          "name": "string"
+        }
+      ],
+      "status": "available"
+      }
+      ```
+
+6.  The Petstore is a functioning API, and you have actually created a pet. For fun, expand the **<span style="padding: 3px; border-radius: 3px; background-color: #dedede">GET</span>/pet/{petId}** endpoint, click **Try it out**, enter the pet `id` you used in the previous operation, and then execute the request. You should see your pet's name returned.
+
+{% if page.workshop_activities == true %}*For more information related to this activity, see [Introduction to the OpenAPI specification]({{site.rooturl}}pubapis_openapi_intro.html).*{% endif %}
+
 
 There are other tools besides Swagger UI that can parse your OpenAPI specification document. Some of these tools include [Apiary](https://apiary.io/), [Apigee](http://apigee.com/about/), [Lucybot](https://lucybot.com/), [Gelato](https://gelato.io/), [Readme.com](http://readme.com/), [swagger2postman](https://github.com/josephpconley/swagger2postman), [swagger-ui responsive theme](https://github.com/jensoleg/swagger-ui), and more.
 
@@ -198,15 +255,15 @@ In this regard, tech writers can play a key role in collaborating with the API t
 
 ## Should I even use the OpenAPI spec? What if I just created the reference content manually in my own format and tool?
 
-One of the main reasons for tech writers to use the OpenAPI spec is to auto-generate out the reference documentation in a neat display that lets users try out requests. There are a host of tools that will read an OpenAPI spec and then generate out docs. I'll go into more depth with these approaches in later sections (such as the [Stoplight tutorial](pubapis_openapis_quickstart_stoplight.html), [Swagger UI tutorial](pubapis_swagger.html), and [Redoc tutorial](pubapis_redoc)).
+One of the main reasons for tech writers to use the OpenAPI spec is to auto-generate out the reference documentation in a neat display that lets users try out requests. There are a host of tools that will read an OpenAPI spec and then generate out docs. I'll go into more depth with these approaches in later sections (such as the [Stoplight tutorial](pubapis_openapis_quickstart_stoplight.html), [Swagger UI tutorial](pubapis_swagger.html), and [Redoc tutorial](pubapis_redocly.html)).
 
 However, up front you should be aware that there are tradeoffs to using the OpenAPI approach. If you write your reference docs using the OpenAPI spec and then settle on your preferred way of generating out the interactive docs, you're probably going to run into these challenges:
 
-*   **Tutorial/how-to docs and reference docs become fragmented**: The OpenAPI specification and the rendering tool typically cover only [reference documentation](docendpoints.html). The OpenAPI provides the basics of each endpoint, including a description, the parameters, a sample request, and a response. It doesn't provide space for a [getting started tutorial](docapis_doc_getting_started_section.html), information about how to get [API keys](docapis_more_about_authorization.html), how to download and configure a [sample app](docapis_sdks.html), information about [rate limits](docapis_rate_limiting_and_thresholds.html), or the hundred other details that go into the [conceptual topics for developers](docnonref.html). So even though you have this cool, interactive tool for users to explore and learn about your API, you still have to provide a user guide. Your docs will likely have a standalone reference output that acts as a companion to the tutorial content. Some platforms let you mix the two (e.g., Stoplight, Readme.com, and others), but then you'll be paying for a hosted documentation service. I talk more about this issue in [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).
+*   **Tutorial/how-to docs and reference docs become fragmented**: The OpenAPI specification and the rendering tool typically cover only [reference documentation](docendpoints.html). The OpenAPI provides the basics of each endpoint, including a description, the parameters, a sample request, and a response. It doesn't provide space for a [getting started tutorial](docapis_doc_getting_started_section.html), information about how to get [API keys](docapis_more_about_authorization.html), how to download and configure a [sample app](docapis_sdks.html), information about [rate limits](docapis_rate_limiting_and_thresholds.html), or the hundred other details that go into the [conceptual topics for developers](docconceptual.html). So even though you have this cool, interactive tool for users to explore and learn about your API, you still have to provide a user guide. Your docs will likely have a standalone reference output that acts as a companion to the tutorial content. Some platforms let you mix the two (e.g., Stoplight, Readme.com, and others), but then you'll be paying for a hosted documentation service. I talk more about this issue in [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).
 
 *   **Redundancy/duplication of information**: With OpenAPI in the mix, you potentially have *two places* where you're describing your endpoints and parameters (both the reference output and your user guide), and you have to either keep the two in sync, embed one in the other, or otherwise link between the two. The OpenAPI lets you re-use parameter and response information through the `components` object, but you couldn't easily re-use the information outside the reference material.
 
-*   **Complexity of API workflows**: The complexity of your API can also be a factor to consider in your approach. [Peter Gruenbaum](https://www.udemy.com/user/petergruenbaum/), who has published several tutorials on writing API documentation on Udemy, says that automated tools work best when the APIs are simple. When you have endpoints that have complex interdependencies and require special setup workflows or other unintuitive treatment, the straightforward nature of a Try-it-out interface (by this I mean the generated output from tools such as [Swagger UI](pubapis_swagger.html) or  [Redoc](pubapis_redoc)) may likely leave users scratching their heads. For example, if you must first configure an API service before an endpoint returns anything, and then use one endpoint to get a certain object that you pass into the parameters of another endpoint, and so on, the Try-it-out features in the output won't make a lot of sense to users without a detailed tutorial to follow.
+*   **Complexity of API workflows**: The complexity of your API can also be a factor to consider in your approach. [Peter Gruenbaum](https://www.udemy.com/user/petergruenbaum/), who has published several tutorials on writing API documentation on Udemy, says that automated tools work best when the APIs are simple. When you have endpoints that have complex interdependencies and require special setup workflows or other unintuitive treatment, the straightforward nature of a Try-it-out interface (by this I mean the generated output from tools such as [Swagger UI](pubapis_swagger.html) or  [Redoc](pubapis_redocly.html)) may likely leave users scratching their heads. For example, if you must first configure an API service before an endpoint returns anything, and then use one endpoint to get a certain object that you pass into the parameters of another endpoint, and so on, the Try-it-out features in the output won't make a lot of sense to users without a detailed tutorial to follow.
 
 *   **Executing requests against real data**: Some users may not realize that clicking "Try it out" makes actual calls against their own accounts based on the API keys they're using. Mixing an invitation to use an exploratory sandbox with real data can create some headaches later on when users ask how they can remove all of the test data, or why their actual data is now messed up. For these scenarios, it's best to either remove the Try-it-out options or set up a sandbox or test account for users. But this is easier said than done. You might find that your company doesn't provide a sandbox for testing out the API. All API calls execute against real data.
 

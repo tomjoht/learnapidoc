@@ -35,7 +35,7 @@ The following are several tips for interviews that apply across all groups.
 
 ### Prepare lists of questions {#prepare_questions}
 
-With each interview, it's good to give the person a list of questions ahead of time. This not only keeps you on track but also reassures the interviewees that the meeting will have a focus and purpose. Some people despise meetings that consume time they could have otherwise been spent coding. A simple list of questions sends the message that the meeting will be worthwhile. For more on this technique, see [A tip for doc reviews &mdash; bring a list of questions](/blog/tip-for-doc-reviews-bring-list-of-questions/).
+With each interview, it's good to give the person a list of questions ahead of time. This not only keeps you on track but also reassures the interviewees that the meeting will have a focus and purpose. Some people despise meetings that consume time they could have otherwise been spent coding. A simple list of questions sends the message that the meeting will be worthwhile. For more on this technique, see [A tip for doc reviews &mdash; bring a list of questions](https://idratherbewriting.com/blog/tip-for-doc-reviews-bring-list-of-questions/).
 
 {% include image_ad_right.html %}
 
@@ -112,7 +112,7 @@ Whereas the engineers might note some important issues/limitations, the PM might
 While this might be reasonable in many situations, if X is a feature most users will want or expect to do, the documentation should mention it. Tech writers are supposed to be _user_ champions, not product champions. For example, in our coffee API scenario, suppose the coffee API works only for coffee produced in the U.S., not coffee imported from Columbia, Guatemala, or elsewhere. It would be a pretty big gap not to mention this limitation explicitly in the documentation.
 
 {: .tip}
-For more on the topic of transparency, see [Transparency in documentation: dealing with limits about what you can and cannot say](/2017/07/13/transparency-in-documentation/).
+For more on the topic of transparency, see [Transparency in documentation: dealing with limits about what you can and cannot say](https://idratherbewriting.com/2017/07/13/transparency-in-documentation/).
 
 Keep the PM in the loop of the doc review even if they have little input on the technical aspects of the product. The PM is aware of all the stakeholders that you might not know about, and they can easily pull people into conversations to answer questions. For example, the PM likely connects the dots up the executive chain and can include others in the doc review several levels above you, or across teams that you didn't even know existed. The PM can be your connection point to all the other teams and interested parties related to the feature.
 

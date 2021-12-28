@@ -18,7 +18,7 @@ First things first &mdash; you need to figure out what the writing project invol
 
 ## 1.1. Create a doc plan {#create_plan}
 
-Create a [documentation plan](/learnapidoc/docapis_managing_doc_projects.html#create_project_plans), even if it's brief or incomplete. The doc plan will help you get organized and set some expectations about the deliverables and timelines. Answer some basic questions, such as these:
+Create a [documentation plan](docapis_managing_doc_projects.html#create_project_plans), even if it's brief or incomplete. The doc plan will help you get organized and set some expectations about the deliverables and timelines. Answer some basic questions, such as these:
 
 * When is the release for the new API (and hence when is the documentation deadline)?
 * What content resources are already available? Any drafts? Product design documents? QA testing documents?

@@ -81,7 +81,7 @@ Otherwise, let’s take a look at the basics with a sample query and what comes 
 
    <img src="{{site.media}}/graphqlkcimage4.jpg" />
 
-(Note: I modeled this after James Scott’s example in this great talk, [Is GraphQL Really "Self-documenting"?](https://www.youtube.com/watch?v=rKzHc1hozB8&feature=youtu.be&t=579))
+(Note: I modeled this after James Scott’s example in this great talk, [Is GraphQL Really "Self-documenting"?](https://www.youtube.com/watch?v=rKzHc1hozB8&feature=youtu.be&t=579).)
 
 Two other topics that play a role in defining GraphQL are mutations and graph theory:
 

@@ -137,7 +137,26 @@ For example, if you're using Jekyll, you have access to a lot of advanced script
 * [Producing PDFs](https://idratherbewriting.com/2015/04/14/producing-pdfs-in-dita-versus-jekyll/)
 * [Creating links](https://idratherbewriting.com/2015/04/06/creating-links-in-dita-versus-jekyll/)
 
-{% include content/activities/markdown_practice.md %}
+
+## <i class="fa fa-user-circle"></i> Activity: Get practice with Markdown
+
+
+To get a sense of how Markdown works, let's practice a bit with Markdown.
+
+1.  Go to an online Markdown editor (such as [Dillinger.io](https://dillinger.io/)).
+2.  Create the following:
+
+    * Numbered list
+    * Bulleted list
+    * Word with bold formatting
+    * Code sample
+    * Level 2 heading
+    * code formatted text
+
+3.  If desired, copy over the Markdown content from this [surfreportendpoint.md file](https://idratherbewriting.com/learnapidoc/assets/files/surfreportendpointdoc.md) and look at the various Markdown tags.
+
+{% if page.workshop_activities == true %}*For more information related to this activity, see [More about Markdown]({{site.rooturl}}pubapis_markdown.html).*{% endif %}
+
 
 Markdown handles most of the syntax I normally use, but for tables, I recommend simply using HTML syntax. HTML syntax gives you more control over column widths, which can be important when customizing tables, especially if the tables have code tags.
 
@@ -199,7 +218,7 @@ Here's an example. For many years, Jekyll used [redcarpet](https://github.com/vm
 
 Despite the variations within Markdown, I'm reluctant to switch to a more semantic lightweight syntax because tool support for Markdown in general, following GitHub-flavored Markdown, is still much more widespread than support for reStructuredText or Asciidoc. kramdown is largely compatible with GitHub-flavored Markdown &mdash; it wouldn't be that difficult to migrate.
 
-Additionally, developers tend to be familiar with Markdown but not reStructuredText or Asciidoc. If you want to encourage collaboration with developers, you might encounter more resistance by forcing them to write in reStructuredText or Asciidoc. Simplicity tends to win out in the end, and Markdown has clear momentum in the lightweight syntax arena. I imagine that in 10 years, reStructuredText and Asciidoc will be dwarfed in the same way that [RAML](pubapis_raml.html) and [API Blueprint](pubapis_api_blueprint) were dwarfed by the [OpenAPI spec](pubapis_openapi_intro.html).
+Additionally, developers tend to be familiar with Markdown but not reStructuredText or Asciidoc. If you want to encourage collaboration with developers, you might encounter more resistance by forcing them to write in reStructuredText or Asciidoc. Simplicity tends to win out in the end, and Markdown has clear momentum in the lightweight syntax arena. I imagine that in 10 years, reStructuredText and Asciidoc will be dwarfed in the same way that [RAML](pubapis_raml.html) and [API Blueprint](pubapis_api_blueprint.html) were dwarfed by the [OpenAPI spec](pubapis_openapi_intro.html).
 
 Further, the OpenAPI spec lets you use [CommonMark Markdown](https://commonmark.org/) in `description` elements, which might make Markdown a better choice for API documentation. As long as you use the Markdown elements that are common across most flavors, migration (should it be required at some point) might not be as painful.
 

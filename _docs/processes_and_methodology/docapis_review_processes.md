@@ -111,7 +111,7 @@ When a reviewer adds a question, if you follow up with a response, the reviewer 
 If your workplace has another common practice for review, follow it. For example, maybe it's common that people use track changes in Microsoft Word documents, passing them from one team member to another in a baton-like way. Or maybe everyone uses code review tools to handle comments and doc reviews. Identify the common doc review culture and toolset at your company and plug into it. You'll have the most success that way. Many documentation systems might have special reviewing features, but if you require people to learn new tools, or worse, to log in to unfamiliar third-party systems, you might not get many people reviewing your docs.
 
 {: .tip}
-See my post [A simple way to write, edit, and publish documentation online using Google Docs and Markdown](/2014/02/25/a-simple-way-to-write-edit-and-publish-documentation-online-using-google-docs-and-markdown/) for stories about the success I had using Google Docs to review content at a former company. See also [Matching documentation review practices to company culture](/blog/matching-doc-review-practices-to-company-culture/).
+See my post [A simple way to write, edit, and publish documentation online using Google Docs and Markdown](https://idratherbewriting.com/2014/02/25/a-simple-way-to-write-edit-and-publish-documentation-online-using-google-docs-and-markdown/) for stories about the success I had using Google Docs to review content at a former company. See also [Matching documentation review practices to company culture](https://idratherbewriting.com/blog/matching-doc-review-practices-to-company-culture/).
 
 ## Review with support and legal
 

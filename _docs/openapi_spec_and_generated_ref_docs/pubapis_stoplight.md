@@ -113,7 +113,7 @@ Although I generally like working directly in the code, I've found that Stopligh
 
 If you're documenting an API, [Stoplight](https://stoplight.io) and their [hosted doc solution](https://stoplight.io/documentation/) are worth checking out. But don't think of Stoplight as just a documentation platform or an easy way to generate the OpenAPI description. Consider Stoplight a way to design the single source of truth that will empower all other teams in a more efficient toward a successful API.
 
-## Stoplight demo
+## Stoplight demos {#stoplight_demos}
 
 Here's a short demo of how Stoplight renders the OpenAPIWeatherMap OpenAPI specification. This Stoplight output uses the same API explored earlier in this course. Here's what the weather endpoint looks like in Stoplight:
 

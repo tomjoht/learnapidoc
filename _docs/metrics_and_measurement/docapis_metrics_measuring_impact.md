@@ -48,7 +48,7 @@ In other words, surveys alone, without actionable feedback, aren't enough. A use
 
 ### Users aren't available for surveys
 
-Another problem with surveys is that most technical writers don't have direct and continued access to users to survey them on a regular basis. I wrote about the challenge of [reconstructing the absent user](/simplifying-complexity/reconstructing-the-absent-user.html) in my series on Simplifying Complexity. It's unfortunate but the norm that technical writers have very little contact with their target users &mdash; not just access to users for surveys, but access to users through support interactions, training, presales, onboarding, or other situations.
+Another problem with surveys is that most technical writers don't have direct and continued access to users to survey them on a regular basis. I wrote about the challenge of [reconstructing the absent user](https://idratherbewriting.com/simplifying-complexity/reconstructing-the-absent-user.html) in my series on Simplifying Complexity. It's unfortunate but the norm that technical writers have very little contact with their target users &mdash; not just access to users for surveys, but access to users through support interactions, training, presales, onboarding, or other situations.
 
 ### Unbiased survey questions are difficult to formulate
 
@@ -254,7 +254,7 @@ For developer guides, Tarnoruder provides guidelines such as including "conceptu
 > Those with a top-bottom approach would first read all the conceptual topics, and only then start trying the API calls.
 > Those who prefer a bottom-up approach would delve right into code samples to get a quick hands-on experience with the APIs. ([Standardizing API documentation](https://www.tcworld.info/e-magazine/technical-writing/standardizing-api-documentation-949/))
 
-This is a pattern I described in [How Developers Use API Documentation: An Observation Study](/learnapidoc/docapiscode_research_on_documenting_code.html#how-developers-use-api-documentation-an-observation-study) and is based on research by Michael Meng, Stephanie Steinhardt, and Andreas Schubert in [How Developers Use API Documentation: An Observation Study](https://sigdoc.acm.org/cdq/how-developers-use-api-documentation-an-observation-study/). The authors describe "opportunistic" behavior (people who learn by immediately trying out code and learning by trial and error) versus "systematic" behavior (people who start by carefully reading the manual before acting) as two common patterns of observed usage for developers using documentation. They encourage documentation to accommodate both learning styles.
+This is a pattern I described in [How Developers Use API Documentation: An Observation Study](docapiscode_research_on_documenting_code.html#how_devs_use_docs) and is based on research by Michael Meng, Stephanie Steinhardt, and Andreas Schubert in [How Developers Use API Documentation: An Observation Study](https://sigdoc.acm.org/cdq/how-developers-use-api-documentation-an-observation-study/). The authors describe "opportunistic" behavior (people who learn by immediately trying out code and learning by trial and error) versus "systematic" behavior (people who start by carefully reading the manual before acting) as two common patterns of observed usage for developers using documentation. They encourage documentation to accommodate both learning styles.
 
 ## Other sources for quality
 
@@ -264,4 +264,4 @@ Many other sources can inform documentation quality. For example, the [Good Docs
 
 Another place to look for information quality is perhaps with information typing models (Information Mapping, DITA, and more). But I've already surveyed the landscape sufficiently here. My intent is not to exhaustively survey research on information quality. As Strimling's earlier research pointed out, most people generally agree on the high-level categories. I want to instead provide specifics on implementation, especially for developer docs.
 
-*Continue on to the next section, [First-level checklist for API documentation](docapis_metrics_first_level_checklist).*
+*Continue on to the next section, [First-level checklist for API documentation](docapis_metrics_first_level_checklist.html).*

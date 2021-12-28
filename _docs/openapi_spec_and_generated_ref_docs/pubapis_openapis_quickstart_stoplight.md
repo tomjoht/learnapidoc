@@ -218,7 +218,7 @@ Now enter the path and parameter information:
 
       When you click the Other Properties button, the dialog looks like this:
 
-      <img src="{{site.media}}/stoplight_other_properties.png" style="max-width: 375px" alt="Other Properties dialog box" />
+      <img src="{{site.media}}/stoplight_other_properties.png" style="width: 375px" alt="Other Properties dialog box" />
 
 
     \-\-\-\-\-\-\-
@@ -543,7 +543,7 @@ You've finished creating your OpenAPI spec, so let's preview, test, and publish 
 
     You can view my [OpenWeatherMap API documentation on Stoplight here](https://idratherbewriting.stoplight.io/docs/openweathermap3/reference/openweathermap.v1.yaml). If you got stuck in the tutorial somewhere along the way, you can click Export to download my code and paste it into your code.
 
-    For various demos of Stoplight with different API docs, see [Stoplight Demo](pubapis_stoplight_demo.html).
+    For various demos of Stoplight with different API docs, see [Stoplight demos](pubapis_stoplight.html#stoplight_demos).
 
     Stoplight has [several pricing tiers](https://stoplight.io/pricing/). The free version supports up to 3 users and 2 projects, while the next level up, Starter, supports up to 3 users and 50 projects. See also [](https://stoplight.io/documentation/)
 

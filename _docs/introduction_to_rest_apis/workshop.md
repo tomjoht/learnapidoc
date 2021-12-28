@@ -8,7 +8,7 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 redirect_from:
 - /learnapidoc/docapis_course_slides.html
-last-modified: 2020-03-23
+last-modified: 2021-12-27
 ---
 
 The workshop agenda, slides, and activities correspond to full-day API workshop. The slides and activities mirror similar sections in the course.
@@ -23,14 +23,9 @@ Not all activities in this course are consolidated here, since participants can 
 {:toc}
 {::options toc_levels="2" /}
 
-{% comment %}
-{: .tip}
-You can print the activity content as a [PDF here](https://s3.us-west-1.wasabisys.com/idbwmedia.com/print/api_workshop_activities.pdf). This might make it easier to follow along on your laptop during the workshop.
-{% endcomment %}
-
 ## 8:00 - 9:00am: Registration + breakfast
 
-Doors open at 8:00am. Check your name off at the registration table and get a name tag. Light breakfast (coffee and pastries) will be available. Find a table and get situated and acquainted with others. If you didn't finish all the pre-workshop tasks as described in [What You'll Need](index.html#what-youll-need), do that now.
+Doors open at 8:00am. Check your name off at the registration table and get a name tag. Light breakfast (coffee and pastries) will be available. Find a table and get situated and acquainted with others. If you didn't finish all the pre-workshop tasks as described in [What You'll Need](index.html#what_you_need), do that now.
 
 ## 9:00 - 9:30am: Intro to API documentation
 
@@ -38,7 +33,7 @@ Doors open at 8:00am. Check your name off at the registration table and get a na
 
 <a href="/learnapidoc/slides/intro_api_documentation.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/introapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
-{% include workshop_button.html title="Activity 1a: Identify your goals" activity="identify_goals" button_type="info" %}
+[Activity 1: Identify your goals](docapis_identify_your_goals.html)
 
 ## 9:30 - 10:15am: Using an API like a Developer
 
@@ -46,15 +41,15 @@ Doors open at 8:00am. Check your name off at the registration table and get a na
 
 <a href="/learnapidoc/slides/using_api_like_developer.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/using-api-developer-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
-{% include workshop_button.html title="Activity 2a: Explore OpenWeatherMap API" activity="explore_openweathermap_api" button_type="primary" %}
+[Activity: Explore OpenWeatherMap API](docapis_scenario_for_using_weather_api.html#explore_openweathermap_api)
 
-{% include workshop_button.html title="Activity 2b: Get OpenWeatherMap authorization keys" activity="get_authorization_keys" button_type="primary" %}
+[Activity: Get an OpenWeatherMap API key](docapis_get_auth_keys.html#openweathermap_apikey)
 
-{% include workshop_button.html title="Activity 2c: Make requests with Postman" activity="postman_request" button_type="primary" %}
+[Activity: Make requests with Postman](docapis_postman.html#make_postman_requests)
 
-{% include workshop_button.html title="Activity 2d: Make requests with curl" activity="make_curl_request" button_type="primary" %}
+[Activity: Make the OpenWeatherAPI request using curl](docapis_make_curl_call.html#make_request_curl)
 
-{% include workshop_button.html title="Activity 2e: Make an API request on a web page" activity="ajax_api_request" button_type="primary" %}
+[Activity: Make an API request on a web page](docapis_json_console.html#make_api_request_on_web_page)
 
 ## 10:15 - 10:30am: Break
 
@@ -66,9 +61,9 @@ Break time
 
 <a href="/learnapidoc/slides/documenting_api_endpoints.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/documenting-endpoints-titleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
-{% include workshop_button.html title="Activity 3a: What's wrong with this API reference topic" activity="whats_wrong_with_surfreport" button_type="success" %}
+[Activity: What's wrong with this API reference topic](docapis_api_whats_wrong_activity.html)
 
-{% include workshop_button.html title="Activity 3b: Evaluate API ref docs to identify core elements" activity="evaluate_elements_api_ref" button_type="success" %}
+[Activity: Evaluate API ref docs to identify core elements](docapis_api_reference_activity.html#eval_api_docs)
 
 ## 11:30 - 12:30: OpenAPI and Swagger
 
@@ -76,18 +71,9 @@ Break time
 
 <a href="/learnapidoc/slides/openapi_and_swagger.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/openapiswaggertitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
-{% include workshop_button.html title="Activity 4a: Explore Swagger UI through the Petstore Demo" activity="explore_swagger_petstore" button_type="info" %}
+[Activity: Explore Swagger UI through the Petstore Demo](pubapis_openapi_intro.html#explore_swagger_through_petstore_demo)
 
-
-<button class="btn btn-info" type="button" data-toggle="collapse" data-target="#stoplight_tutorial" aria-expanded="false" aria-controls="collapseExample">
-Activity 4b: Create an OpenAPI specification using Stoplight Studio
-</button>
-<div class="collapse" id="stoplight_tutorial">
-<div class="card card-body" markdown="block">
-For this this activity, see this topic: [Getting started tutorial: Using Stoplight Studio to create an OpenAPI specification document](pubapis_openapis_quickstart_stoplight.html). Due to the length fo the topic, I haven't embedded it here.
-</div>
-</div>
-
+[Activity: Create an OpenAPI specification using Stoplight Studio](pubapis_openapis_quickstart_stoplight.html)
 
 ## 12:30 - 1:30pm: Lunch
 
@@ -95,9 +81,9 @@ Lunch provided through catering.
 
 ## 1:30 - 2:00pm: OpenAPI and Swagger (continued)
 
-{% include workshop_button.html title="Activity 4c: Create a Redoc display" activity="create_redoc_display" button_type="info" %}
+[Activity: Use Redoc Community Edition to render OpenAPI spec](pubapis_redoc.html#community_edition_output)
 
-{% include workshop_button.html title="Activity 4d: Create a SwaggerUI display" activity="create_swaggerui_display" button_type="info" %}
+[Activity: Create a Swagger UI display with an OpenAPI spec document](pubapis_swagger.html#create_swaggerui)
 
 ## 2:00 - 2:30pm: Conceptual topics
 
@@ -105,9 +91,9 @@ Lunch provided through catering.
 
 <a href="/learnapidoc/slides/conceptual_content_api_docs.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/conceptualcontenttitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
-{% include workshop_button.html title="Activity 6a: Complete the SendGrid Getting Started tutorial in 5 min" activity="getting_started_tutorial" button_type="warning" %}
+[Activity: Complete the SendGrid Getting Started tutorial](docapis_getting_started_activity.html)
 
-{% include workshop_button.html title="Activity 6b: Judge conceptual content and decide which is best" activity="conceptual_comparisons" button_type="warning" %}
+[Activity: Judge conceptual content and decide which is best](docapis_concept_activity.html)
 
 ## 2:30 - 2:45pm: Break
 
@@ -119,7 +105,7 @@ Break. Snacks provided.
 
 <a href="/learnapidoc/slides/code_tutorials.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/codetutorialsthumb.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
-{% include workshop_button.html title="Activity 7a: Analyze code tutorials" activity="code_tutorial_analysis" button_type="primary" %}
+[Activity: Analyze two code tutorials](docapis_code_tutorials_common_characteristics.html#analyze_code_tutorials)
 
 ## 3:30 - 4:15pm: Publishing API docs
 
@@ -127,11 +113,11 @@ Break. Snacks provided.
 
 <a href="/learnapidoc/slides/publishing_api_docs.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/publishingapidoctitleslide.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
-{% include workshop_button.html title="Activity 8a: Set up a GitHub wiki" activity="create_github_wiki" button_type="warning" %}
+[Activity: Create a GitHub wiki and publish content on a sample page](pubapis_github_wikis.html#create_github_wiki)
 
-{% include workshop_button.html title="Activity 8b: Clone your GitHub repo locally" activity="clone_repo_locally" button_type="warning" %}
+[Activity: Clone your GitHub repo locally](pubapis_github_wikis.html#clone_repo_locally)
 
-{% include workshop_button.html title="Activity 8c: Push local changes to the remote" activity="push_local_to_remote" button_type="warning" %}
+[Activity: Push local changes to the remote](pubapis_github_wikis.html#push_local_to_remote)
 
 {% comment %}{% include random_ad3.html %}{% endcomment %}
 
@@ -145,10 +131,18 @@ During this time, I'd like to have participants surface specific challenges that
 
 <a href="/learnapidoc/slides/thriving_in_api_docs.html" class="noCrossRef"><img class="slideThumb" src="{{site.media}}/thrivinginapidocsthumb.png" style="max-width: 300px; border: 1px solid #dedede;"></a>
 
-{% include workshop_button.html title="Jeopardy: Test your knowledge" activity="jeopardy_questions" button_type="info" %}
+## Conclusion {#conclusion}
+
+<button class="btn btn-info" type="button" data-toggle="collapse" data-target="#jeopardy_questions" aria-expanded="false" aria-controls="collapseExample">Jeopardy: Test your knowledge
+</button>
+<div class="collapse" id="jeopardy_questions">
+<div class="card card-body" markdown="block">
+{% include content/jeopardy_questions.md %}
+</div>
+</div>
+{% comment %} button types: default, primary, success, info, warning, danger, link. {% endcomment %}
 
 {% include random_ad1.html %}
-
 
 ## 5:00 - 5:30pm: Individual consulting
 
@@ -156,7 +150,7 @@ The general workshop ends and we transition into any individual consulting as de
 
 {% include image_ad_left.html %}
 
-## Post-workshop review
+## Post-workshop review {#post_workshop_review}
 
 At the close of the workshop, please take this [review survey](https://www.questionpro.com/t/AOaGwZgMcu). Thanks.
 

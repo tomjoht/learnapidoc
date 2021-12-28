@@ -89,7 +89,7 @@ This list is auto-generated based on the last-modified timestamp on pages, scope
 
 <tr>
 <td>{{post.last-modified | date: "%b %d, %Y" }}</td>
-<td><a href="{{ post.permalink | prepend: "/learnapidoc" }}">{{ post.title }}</a> </td>
+<td><a href="{{ post.permalink | remove: "/" }}">{{ post.title }}</a> </td>
 </tr>
 {% if count == 15 %}{% break %}{% endif %}
 {% endif %}
@@ -105,15 +105,15 @@ details about the script logic above: https://stackoverflow.com/questions/466722
 
 To see what's been updated on the page, click the GitHub button next to the timestamp on the page:
 
-<img style="max-width: 500px" src="{{site.media}}/github_button_whats_new.png" alt="GitHub button" />
+<img class="small_medium" src="{{site.media}}/github_button_whats_new.png" alt="GitHub button" />
 
 This takes you to the file in GitHub. In GitHub, click the History link:
 
-<img style="max-width: 500px" src="{{site.media}}/github_history_view.png" alt="GitHub History" />
+<img class="small_medium" src="{{site.media}}/github_history_view.png" alt="GitHub History" />
 
 Then click the commit IDs to browse file diffs for the commits that include the file:
 
-<img style="max-width: 500px" src="{{site.media}}/github_commit_ids.png" alt="GitHub commit IDs" />
+<img class="small_medium" src="{{site.media}}/github_commit_ids.png" alt="GitHub commit IDs" />
 
 {% include random_ad1.html %}
 
