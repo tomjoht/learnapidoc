@@ -148,6 +148,10 @@ Yes, this course is entirely free. Advertising helps make this content free, so 
 
 If you'd like to give back, feel free to buy me coffee by clicking the [Buy me a coffee](https://www.buymeacoffee.com/learnapidoc) button on the bottom of each page. I'm grateful to see many people who find enough value in the course to contribute back. Seeing contributions helps me feel in a more immediate way how much the content helps people.
 
+## PDF and Kindle/eBook formats
+
+To read the same content in PDF or Kindle/eBook formats, see [https://idratherbewriting.com/learnapidoc/formats.html]. You can print out the section you want, or load it into a PDF reader to highlight/annotate content. Or if you're into Kindle, download the content in ebook format and load it onto your device.
+
 ## Let me know if any content is out of date
 
 One of the challenges in any technical course is ensuring the content stays up to date. Technology changes rapidly, and given the many hands-on activities in the course, it's easy for some steps to become out of date as time passes. I've tried to maintain a healthy balance between general and specific details in the content here. If you find something is out of date, either add a comment on that page or [let me know](https://idratherbewriting.com/learnapidoc/contact.html).
@@ -179,5 +183,7 @@ If you've looking for additional resources to learn API documentation as well as
 * [The Good Docs Project: Best practice templates and writing instructions for documenting open source software](https://thegooddocsproject.dev/)
 
 * [Google's technical writing courses for engineers](https://developers.google.com/tech-writing)
+
+* [Standards and Guidelines for API Documentation: For Technical Writers, Software Developers, Information and Software Architects](https://www.google.com/books/edition/Standards_and_Guidelines_for_API_Documen/B7LDzQEACAAJ?hl=en), by Anne Tarnoruder
 
 For even more books, see [Relevant Books](https://www.writethedocs.org/books/) from the Write the Docs site.

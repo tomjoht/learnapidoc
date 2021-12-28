@@ -5,9 +5,8 @@ navbar_singleitems:
 - items:
   - title: Blog
     url: https://idratherbewriting.com
-  # - title: Workshop
-  #   url: workshop.html
-  #   github_icon: show
+  - title: Other formats
+    url: formats.html
 
   # - title: PDFs
   #   url: products.html

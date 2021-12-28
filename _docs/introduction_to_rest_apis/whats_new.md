@@ -30,6 +30,11 @@ The following are the most recent updates to the API documentation course.
 <tbody>
 <tr>
   <td>December 2021</td>
+  <td markdown="span">[Other formats](https://idratherbewriting.com/formats.html)</td>
+  <td markdown="span">Created PDF, Kindle, and EPUB versions of the course that you can download.</td>
+</tr>
+<tr>
+  <td>December 2021</td>
   <td markdown="span">[Broadcasting your meeting notes to influence a wider audience](docapis_meeting_notes.html)</td>
   <td markdown="span">Added a new article about why you should broadcast your meeting notes as a tool for influencing other groups.</td>
 </tr>
