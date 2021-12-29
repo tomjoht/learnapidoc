@@ -23,8 +23,6 @@ To read the content as PDF, I recommended that you either read the PDF in [Adobe
 
 ## Kindle
 
-You can use either MOBI or EPUB formats on Kindle. Although Kindle switched to primarily preferring EPUB, it still supports MOBI, and the MOBI file has a better table of contents from the "Go to" button, so I recommend using MOBI for Kindle.
-
 To read the content on Kindle device:
 
 1.  Click the **Kindle (MOBI)** file above. When you do, the MOBI file downloads to your computer.

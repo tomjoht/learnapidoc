@@ -92,7 +92,7 @@ layout: null
 <manifest>
 <!-- HTML content files [mandatory] -->
 <item id="item_tocstart" media-type="application/xhtml+xml" href="tocstart.html"></item>
-
+<item id="titlepage" href="titlepage.xhtml" media-type="application/xhtml+xml"/>
 {% for folder in sidebar %}
     <item id="item_{{folder.jurl | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{folder.jurl | remove: "/" }}"></item>
 {% for folderitem in folder.folderitems %}
@@ -133,13 +133,15 @@ layout: null
 {% endunless %}
 {% endfor %}
 {% endcomment %}
-
+<!-- stylesheets -->
+    <item id="css" href="assets/css/kindle.css" media-type="text/css"/>
+    <item id="css_syntax" href="assets/css/syntax.css" media-type="text/css"/>
 
   <!-- table of contents [mandatory] -->
 	<item id="My_Table_of_Contents" media-type="application/x-dtbncx+xml" href="docapis.ncx"/>
 
   <!-- cover image [mandatory] -->
-  <item id="My_Cover" media-type="image/gif" href="images/restapi_kindletitle.png"/>
+  <item id="My_Cover" media-type="image/png" href="images/restapi_kindletitle.png"/>
 </manifest>
 
 <!--

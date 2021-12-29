@@ -56,10 +56,10 @@ a[href^="http:"]::after, a[href^="https:"]::after {
     content: " (" attr(href) ") ";
 }
 
-/* cut this i think*/
+/* cut this i think
 chapter {
 prince-pdf-destination: attr(identifier,string)
-}
+} */
 /* print href link urls after links
 a::after{
     content: " (" attr(href) ") ";
