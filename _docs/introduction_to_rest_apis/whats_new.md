@@ -30,7 +30,7 @@ The following are the most recent updates to the API documentation course.
 <tbody>
 <tr>
   <td>December 2021</td>
-  <td markdown="span">[PDF and eBook formats](https://idratherbewriting.com/learnapidoc/formats.html){: .noCrossRef}</td>
+  <td markdown="span">[PDF and eBook formats](https://idratherbewriting.com/learnapidoc/docapis_formats.html){: .noCrossRef}</td>
   <td markdown="span">Created PDF, Kindle, and EPUB versions of the course that you can download.</td>
 </tr>
 <tr>
