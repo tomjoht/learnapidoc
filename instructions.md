@@ -56,7 +56,7 @@ to test on kindle fire:
 - restart
 
 ## EPUB
-use https://cloudconvert.com/mobi-to-epub to convert mobi to epub. Register and sign in first (otherwise you exceed your free unregistered time).
+use to convert mobi to epub. Register and sign in first (otherwise you exceed your free unregistered time).
 
 ## PDF
 - not really necessary to generate this except if someone wants to print out the entire book

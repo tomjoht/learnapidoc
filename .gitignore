@@ -7,6 +7,8 @@ pdf/docapis.pdf
 *.mobi
 *.zip
 *.pdf
+*.epub
 mobi/docapis.mobi
+mobi/docapis.epub
 reindex.sh
 images

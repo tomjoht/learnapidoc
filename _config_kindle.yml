@@ -9,7 +9,19 @@ highlighter: rouge
 exclude:
   - mobi
   - pdf
+  - slides
   - images/comics/
+  - serve_kindle.sh
+  - build_kindle.sh
+  - upload.sh
+  - upload_outputs.sh
+  - move.sh
+  - reindex.sh
+  - sitemap.xml
+  - slides
+  - thank-you-for-donating.html
+  - contact.html
+  - aws_cli_notes.txt
 
 markdown: kramdown
 kramdown:
