@@ -100,7 +100,7 @@ paths: {}
 
 The editor renders the display as follows.
 
-{% include course_image.html size="large" border="true" filename="openapi_object_swagger" ext_print="png" ext_web="png" alt="openapi object" caption="openapi object" %}
+<figure><img class="docimage large border" src="{{site.media}}/openapi_object_swagger.png" alt="openapi object" /><figcaption>openapi object</figcaption></figure>
 
 {% include content/troubleshooting_spec_tip.md %}
 

@@ -11,7 +11,7 @@ last-modified: 2020-11-02
 
 To track issues and updates to the site, I'm using the [Issues log in GitHub](https://github.com/tomjoht/learnapidoc/issues).
 
-{% include course_image.html url="https://github.com/tomjoht/learnapidoc/issues" size="medium" filename="githubissueslog" ext_print="png" ext_web="png" border="true" alt="Log an issue in GitHub" caption="Log an issue in GitHub" %}
+<figure><a target="_blank" class="noExtIcon" href="https://github.com/tomjoht/learnapidoc/issues"><img class="docimage medium border" src="{{site.media}}/githubissueslog.png" alt="Log an issue in GitHub" /></a><figcaption>Log an issue in GitHub</figcaption></figure>
 
 Issues can include any of the following:
 

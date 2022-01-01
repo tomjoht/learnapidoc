@@ -28,7 +28,7 @@ As such, you may find that as a technical writer, you're in over your head in co
 
 In [How API Documentation Fails](https://ieeexplore.ieee.org/document/7140676/) (published in [*IEEE Software*](https://ieeexplore.ieee.org)), Martin Robillard and Gias Uddin surveyed developers to find out why API docs failed for them. They found that most of the shortcomings were related to content, whether it was incomplete, inaccurate, missing, ambiguous, fragmented, etc. They summarized their findings here:
 
-{% include course_image.html url="https://ieeexplore.ieee.org/document/7140676/" filename="whyapidocsfail" ext_print="png" ext_web="png" alt="Reasons why docs fail for developers" caption="Reasons why docs fail for developers" %}
+<figure><a target="_blank" class="noExtIcon" href="https://ieeexplore.ieee.org/document/7140676/"><img class="docimage" src="{{site.media}}/whyapidocsfail.png" alt="Reasons why docs fail for developers" /></a><figcaption>Reasons why docs fail for developers</figcaption></figure>
 
 The problem is that the very people who can fix this content are usually fully engaged in development work. Robillard and Uddin write,
 

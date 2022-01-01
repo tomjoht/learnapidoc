@@ -45,7 +45,7 @@ If your commentary dwarfs the code, you risk making the code unreadable. If you 
 
 One solution to this location problem for code docs is to create an additional, third column in your layout. You devote the middle column to your conceptual explanation and your right column to the code. This way the code and the narration are juxtaposed in a way that readers can glance at the code while reading your conceptual explanations &mdash; in other words, the third column maintains the needed context between the code and explanations. Here's an example from Twilio showing this juxtaposed approach:
 
-{% include course_image.html border="true" url="https://www.twilio.com/docs/authy/tutorials/account-verification-java-servlets?code-language=Java&code-sample=code-verify-an-authy-code-7&code-sdk-version=default#sending-a-token-on-account-creation" size="large" filename="twiliocodedocexample1" ext_print="png" ext_web="png" alt="Twilio documentation juxtaposed with the code through a third column" caption="Twilio documentation juxtaposed with the code through a third column" %}
+<figure><a href="https://www.twilio.com/docs/authy/tutorials/account-verification-java-servlets?code-language=Java&code-sample=code-verify-an-authy-code-7&code-sdk-version=default#sending-a-token-on-account-creation"><img src="{{site.media}}/twiliocodedocexample1.png" alt="Twilio documentation juxtaposed with the code through a third column" class="large" /></a><figcaption>Twilio documentation juxtaposed with the code through a third column</figcaption></figure>
 
 In this example, the conceptual content and steps appear in the middle column, the code on the right, with a dark background behind the code to create visual contrast.
 
@@ -53,7 +53,7 @@ In this example, the conceptual content and steps appear in the middle column, t
 
 Some of Twilio's screens actually blur out the irrelevant code, allowing you to focus your attention on the lines articulated in the conceptual area, like this:
 
-{% include course_image.html border="true" url="https://www.twilio.com/docs/authy/tutorials/account-verification-java-servlets?code-language=Java&code-sample=code-verify-an-authy-code-7&code-sdk-version=default#configuring-authy" size="large" filename="twiliocodedocblurirrelevant" ext_print="png" ext_web="png" alt="Blurring out irrelevant code" caption="Blurring out irrelevant code" %}
+<figure><a href="https://www.twilio.com/docs/authy/tutorials/account-verification-java-servlets?code-language=Java&code-sample=code-verify-an-authy-code-7&code-sdk-version=default#configuring-authy"><img src="{{site.media}}/twiliocodedocblurirrelevant.png" alt="Blurring out irrelevant code" class="large" /></a><figcaption>Blurring out irrelevant code</figcaption></figure>
 
 One challenge with this juxtaposed approach is screen space. To pull off a third-column design, you need to occupy the whole screen, without margins. (I'm surprised Twilio doesn't include a switch to collapse the left-side navigation, which would give more space for the code.)
 
@@ -71,7 +71,7 @@ Another challenge with this juxtaposed design is that code is often spread out a
 
 Another approach is to build the code from the ground up level by level, which I'm calling the Lego approach. For an example of the Lego approach, take a look at this example from the eBay Shopping API: [Searching By Seller: Reviewing Information About A Seller](https://developer.ebay.com/DevZone/shopping/docs/HowTo/PHP_Shopping/PHP_FIA_GUP_Interm_NV_XML/PHP_FIA_GUP_Interm_NV_XML.html#step1).
 
-{% include course_image.html url="https://developer.ebay.com/DevZone/shopping/docs/HowTo/PHP_Shopping/PHP_FIA_GUP_Interm_NV_XML/PHP_FIA_GUP_Interm_NV_XML.html#step1" size="large" filename="ebayshoppingapiexample" ext_print="png" ext_web="png" alt="Lego approach shown through eBay Shopping API" caption="Lego approach shown through eBay Shopping API" %}
+<figure><a href="https://developer.ebay.com/DevZone/shopping/docs/HowTo/PHP_Shopping/PHP_FIA_GUP_Interm_NV_XML/PHP_FIA_GUP_Interm_NV_XML.html#step1"><img src="{{site.media}}/ebayshoppingapiexample.png" alt="Lego approach shown through eBay Shopping API" class="large" /></a><figcaption>Lego approach shown through eBay Shopping API</figcaption></figure>
 
 Their tutorial contains five steps:
 
@@ -95,7 +95,7 @@ The Nautilus approach is similar to the Lego approach, but rather than describin
 
 Paul Gustafson, who manages a technical writing staffing company in the Bay area called [Expert Support](http://expertsupport.com/), presents us with the metaphor of the nautilus in the approach described here. Paul says that the nautilus provides a good metaphor for technical communication because the nautilus follows a spiral pattern (Fibonacci sequence) that allows it to start small and gradually grow larger and larger as needed:
 
-{% include course_image.html url="https://commons.wikimedia.org/wiki/File:NautilusCutawayLogarithmicSpiral.jpg" border="true" filename="nautilus" ext_print="jpg" ext_web="jpg" alt="Nautilus" size="medium" caption="Nautilus" %}
+<figure><a target="_blank" class="noExtIcon" href="https://commons.wikimedia.org/wiki/File:NautilusCutawayLogarithmicSpiral.jpg"><img class="docimage medium border" src="{{site.media}}/nautilus.jpg" alt="Nautilus" /></a><figcaption>Nautilus</figcaption></figure>
 
 Paul writes:
 
@@ -115,7 +115,7 @@ To the technical writer looking at the finalized code, there's no clear sense of
 
 As another analogy, consider teaching others how to paint. Suppose your task is to describe a finished painting to a would-be painter. You need to describe how to paint the Mona Lisa:
 
-{% include course_image.html size="medium" url="https://en.wikipedia.org/wiki/Painting#/media/File:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg" border="true" filename="mona_lisa_painting" ext_print="jpg" ext_web="jpg" alt="How would you document the process of producing a painting?" caption="How would you document the process of producing a painting?" %}
+<figure><a target="_blank" class="noExtIcon" href="https://en.wikipedia.org/wiki/Painting#/media/File:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg"><img class="docimage medium border" src="{{site.media}}/mona_lisa_painting.jpg" alt="How would you document the process of producing a painting?" /></a><figcaption>How would you document the process of producing a painting?</figcaption></figure>
 
 To document the process of producing this painting, would you start at the top and work your way to the bottom? No, that would be ludicrous. Most likely you would start by creating ovals for the head. Then maybe some general sketches for the eyes, and so on. Maybe you sketch our perspective lines and other basic structure lines first. You wouldn't get to the colors and lighting and shadows until later, right? Same with code. You start with the foundation and then work your way towards more of the finishing detail.
 
@@ -216,7 +216,7 @@ Teaching core patterns shifts the documentation more into the domain of a tutori
 
 The most common example of interactive documentation for APIs is with Swagger UI, which I have already covered at length in [OpenAPI tutorial using Swagger Editor and Swagger UI: Overview](pubapis_openapi_tutorial_overview.html) and showed in the [Swagger UI Demo](pubapis_swagger_demo.html):
 
-{% include course_image.html url="pubapis_swagger_demo.html" size="medium" filename="swagger-try-it-out-example" ext_print="png" ext_web="png" alt="Try it out button in Swagger's interactive REST API interface" caption="Try it out button in Swagger's interactive REST API interface" %}
+<figure><a target="_blank" class="noExtIcon" href="pubapis_swagger_demo.html"><img class="docimage medium" src="{{site.media}}/swagger-try-it-out-example.png" alt="Try it out button in Swagger's interactive REST API interface" /></a><figcaption>Try it out button in Swagger's interactive REST API interface</figcaption></figure>
 
 Swagger provides an ingenious blending of documentation and try-it-out interactions that help users learn your API (by both reading and doing). But making requests with REST API endpoints tends to be somewhat simple. More extensive code tutorials will be harder to make interactive in the browser. Even so, some "Notebooks" (as they're often called) allow you to run code, specifically [Jupyter Notebooks](https://jupyter.org/). Jupyter explains:
 
@@ -224,11 +224,11 @@ Swagger provides an ingenious blending of documentation and try-it-out interacti
 
 Google has some collaborative notebook options with TensorFlow documentation, which has operations that you can execute on web pages. In the following screenshot, you can see an option to "Run code now":
 
-{% include course_image.html url="https://www.tensorflow.org/tutorials" size="large" filename="tensorflowruncodenow" ext_print="png" ext_web="png" alt="Interactive code examples from TensorFlow" caption="Interactive code examples from TensorFlow" %}
+<figure><a target="_blank" class="noExtIcon" href="https://www.tensorflow.org/tutorials"><img class="docimage large" src="{{site.media}}/tensorflowruncodenow.png" alt="Interactive code examples from TensorFlow" /></a><figcaption>Interactive code examples from TensorFlow</figcaption></figure>
 
 Clicking "Run code now" takes you to Google's interactive notebooks that actually run the code in the browser:
 
-{% include course_image.html border="true" url="https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/_index.ipynb" size="large" filename="tensorflowexperimentasyougo" ext_print="png" ext_web="png" alt="Google's interactive notebooks let you run the code in the browser" caption="Google's interactive notebooks let you run the code in the browser" %}
+<figure><a target="_blank" class="noExtIcon" href="https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/_index.ipynb"><img class="docimage large border" src="{{site.media}}/tensorflowexperimentasyougo.png" alt="Google's interactive notebooks let you run the code in the browser" /></a><figcaption>Google's interactive notebooks let you run the code in the browser</figcaption></figure>
 
 Although interactive notebooks look cool, they seem like a lot of work for something that could more easily be accomplished with a sample app. Instead of figuring out how you can compile Python code or some other language in the browser, why not just provide a sample app that users can download and then proceed through locally, using their own compiling tools and setup?
 

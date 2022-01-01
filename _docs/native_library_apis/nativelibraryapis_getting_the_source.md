@@ -44,13 +44,13 @@ One of your immediate challenges to editing Javadoc will be to get the source co
 3.  Open Eclipse and go to **File > New > Java Project**.
 4.  Clear the **Use default location** check box, and then click **Browse** and select the folder where you cloned the Github project. Click **Open**.
 
-    {% include course_image.html border="true" filename="create-new-java-project" ext_print="png" ext_web="png" alt="Import existing Java project" size="medium" caption="Import existing Java project" %}
+    <figure><img class="docimage medium border" src="{{site.media}}/create-new-java-project.png" alt="Import existing Java project" /><figcaption>Import existing Java project</figcaption></figure>
 
 5.  Click **Finish** to close the New Java Project dialog box.
 
 	  The Java files should be visible in the left pane (Package Explorer) within your Eclipse IDE.
 
-    {% include course_image.html size="medium" border="true" filename="eclipsefileview" ext_print="png" ext_web="png" alt="png" caption="Eclipse File View" %}
+    <figure><img class="docimage medium border" src="{{site.media}}/eclipsefileview.png" alt="png" /><figcaption>Eclipse File View</figcaption></figure>
 
 ## <i class="fa fa-user-circle"></i> Play with the sample Java project
 
@@ -60,7 +60,7 @@ This Java app doesn't do much. Its only purpose is to create some classes that d
 2.  Double-click the **App.java** file to open it.
 3.  Click the **Run App** button <img src="{{site.media}}/javarunbutton.png" style="vertical-align:bottom" />:
 
-    {% include course_image.html size="large" filename="eclipserunapp" ext_print="png" ext_web="png" alt="Running the app in Eclipse" caption="Running the app in Eclipse" %}
+    <figure><img class="docimage large" src="{{site.media}}/eclipserunapp.png" alt="Running the app in Eclipse" /><figcaption>Running the app in Eclipse</figcaption></figure>
 
     The main method (`public static void main(String[] args) throws IOException`), which appears in the **App.java** file, runs the functions defined in the other package's files (`ACMESmartphone.java` and `Dynamite.java`).
 
@@ -91,7 +91,7 @@ This Java app doesn't do much. Its only purpose is to create some classes that d
     Backfire!!! zapping coyote with 1,000,000 volts!!!!
     ```
 
-    {% include course_image.html  size="medium"  filename="java-app-in-action" ext_print="png" ext_web="png" alt="Running the program" caption="Running the program" %}
+    <figure><img class="docimage medium" src="{{site.media}}/java-app-in-action.png" alt="Running the program" /><figcaption>Running the program</figcaption></figure>
 
 ## Side Note about Maven projects
 

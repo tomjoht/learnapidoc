@@ -91,7 +91,7 @@ Another solution is to embed Swagger UI in your regular docs. You can see an exa
 
 However, the effect is still kind of clunky and is obvious that the content is embedded from some other document generator. It's not a seamlessly branded experience. Here an example where Swagger is embedded directly in the docs: [App Submission API](https://developer.amazon.com/docs/app-submission-api/appsubapi-endpoints.html)
 
-{% include course_image.html url="https://developer.amazon.com/docs/app-submission-api/appsubapi-endpoints.html" size="large" filename="appsubmissionendpoints" ext_print="png" ext_web="png" alt="Embedding Swagger into your existing doc site" caption="Embedding Swagger into your existing doc site" %}
+<figure><a target="_blank" class="noExtIcon" href="https://developer.amazon.com/docs/app-submission-api/appsubapi-endpoints.html"><img class="docimage large" src="{{site.media}}/appsubmissionendpoints.png" alt="Embedding Swagger into your existing doc site" /></a><figcaption>Embedding Swagger into your existing doc site</figcaption></figure>
 
 Another example of the same embedding technique is here: [Moments Developer Guide](https://developer.amazon.com/docs/moments/rewards-api-endpoints.html)
 
@@ -144,7 +144,7 @@ Continuing on with the script, the `toggleClass` function looks for the `contain
 
 Besides the clunkiness of the "site-within-a-site" look, an additional problem with embedding is that some of the Models aren't constrained within their container, so they expand beyond their limits. Try expanding the Model section in the [demo](pubapis_swagger_demo.html) &mdash; you'll see what I'm talking about.
 
-{% include course_image.html url="pubapis_swagger_demo.html" size="large" filename="modelsexpansionproblems" ext_print="png" ext_web="png" alt="Expanding Models -- if you have multiple levels of hierarchy, this section will not expand well when constrained within a fixed space" caption="Expanding Models -- if you have multiple levels of hierarchy, this section will not expand well when constrained within a fixed space" %}
+<figure><a target="_blank" class="noExtIcon" href="pubapis_swagger_demo.html"><img class="docimage large" src="{{site.media}}/modelsexpansionproblems.png" alt="Expanding Models -- if you have multiple levels of hierarchy, this section will not expand well when constrained within a fixed space" /></a><figcaption>Expanding Models -- if you have multiple levels of hierarchy, this section will not expand well when constrained within a fixed space</figcaption></figure>
 
 I'm not sure if some ninja styling prowess could simply overcome this uncontained behavior. Probably, but I'm not a CSS ninja, and I haven't fiddled around with this enough to say that it can actually be done. I did end up adding some custom styles to make some adjustments to Swagger UI in various places. If you view the source of [the demo page](pubapis_swagger_demo.html) and check out the second `<style>` block, you can see the styles I added.
 

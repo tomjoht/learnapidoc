@@ -28,7 +28,7 @@ Hosting and deployment platforms usually offer a number of additional features b
 
 In your GitHub repo, click **Settings** and scroll down to **GitHub Pages**. This section is where you activate GitHub Pages for your project.
 
-{% include course_image.html url="https://pages.github.com/" filename="githubpagesscreenshot" ext_print="png" ext_web="png" alt="GitHub Pages integration with GitHub repositories" caption="Every GitHub repository is potentially a Jekyll project that you can auto-build when you commit to it." %}
+<figure><a target="_blank" class="noExtIcon" href="https://pages.github.com/"><img class="docimage" src="{{site.media}}/githubpagesscreenshot.png" alt="GitHub Pages integration with GitHub repositories" /></a><figcaption>Every GitHub repository is potentially a Jekyll project that you can auto-build when you commit to it.</figcaption></figure>
 
 The tight integration of Jekyll with GitHub makes for a compelling argument to use a Jekyll-GitHub solution. For the most part, GitHub is the dominant platform for open-source projects. If you're already using GitHub, it makes sense to choose a static site generator that integrates into the same platform to build your docs.
 

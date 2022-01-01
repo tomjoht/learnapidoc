@@ -37,7 +37,7 @@ To get an API key for the OpenWeatherMap API:
 
     You can also find your API key on the site's Developer Dashboard. (To find your API key on the site, return to the OpenWeatherMap homepage and click **Sign in**. After signing in, you'll see the developer dashboard. Click the **API Keys** tab (highlighted in the screenshot below).
 
-    {% include course_image.html size="large" filename="apikeysopenweathermap" ext_print="png" ext_web="png" alt="API Keys tab on OpenWeatherMap Developer Dashboard" caption="API Keys tab on OpenWeatherMap Developer Dashboard" %}
+    <figure><img class="docimage large" src="{{site.media}}/apikeysopenweathermap.png" alt="API Keys tab on OpenWeatherMap Developer Dashboard" /><figcaption>API Keys tab on OpenWeatherMap Developer Dashboard</figcaption></figure>
 
 5.  Copy the key to a place you can easily find it.
 

@@ -20,7 +20,7 @@ Learning GitHub will allow you to become familiar with the version control workf
 
 You could actually use the default GitHub wiki as your doc site. Here's an example of the Basecamp API, which is housed on GitHub.
 
-{% include course_image.html url="https://github.com/basecamp/bc3-api" size="large" filename="basecampapi" ext_print="png" ext_web="png" alt="Basecamp API" caption="Basecamp API" %}
+<figure><a target="_blank" class="noExtIcon" href="https://github.com/basecamp/bc3-api"><img class="docimage large" src="{{site.media}}/basecampapi.png" alt="Basecamp API" /></a><figcaption>Basecamp API</figcaption></figure>
 
 {% comment %}{% include random_ad3.html %}{% endcomment %}
 
@@ -97,7 +97,7 @@ In this section, you will create a new GitHub repo and publish a sample file the
 1.  Create a GitHub account at [GitHub.com](http://github.com).
 2.  Go to [GitHub](https://github.com) and sign in. After you're signed in, click the **+** button in the upper-right corner and select **New repository**.
 
-    {% include course_image.html url="https://github.com/new" size="medium" filename="newrepositorygithub" ext_print="png" ext_web="png" alt="Creating a new GitHub repository" caption="Creating a new GitHub repository" %}
+    <figure><a target="_blank" class="noExtIcon" href="https://github.com/new"><img class="docimage medium" src="{{site.media}}/newrepositorygithub.png" alt="Creating a new GitHub repository" /></a><figcaption>Creating a new GitHub repository</figcaption></figure>
 
 3.  Give the repo a **Repository name**, a short **Description**, select **Public**, select **Initialize the repo with a README**, and then click **Create repository**. (Don't worry about selecting the license or gitignore settings for this activity.)
 4.  Click the **Wiki** tab on the top navigation bar of your new repository.
@@ -119,7 +119,7 @@ To clone the GitHub repo locally:
 1.  If you don't already have Git installed, set it up on your computer. (You can check whether Git is installed by typing `git --version` in your terminal or command prompt. See [Install Git]({{site.rooturl}}pubapis_github_wikis.html#git_install) for more information on installation.)
 2.  While viewing your the GitHub wiki in your browser, look for the section that says **Clone this wiki locally** (highlighted below). Click the clipboard button. (This copies the clone URL to your clipboard.)
 
-    {% include course_image.html size="medium" filename="clone-this-wiki-locally" ext_print="png" ext_web="png" alt="Clone this wiki locally" caption="Clone this wiki locally" %}
+    <figure><img class="docimage medium" src="{{site.media}}/clone-this-wiki-locally.png" alt="Clone this wiki locally" /><figcaption>Clone this wiki locally</figcaption></figure>
 
 	  {: .note}
     The wiki is a separate clone URL than the project's repository. Make sure you're viewing your wiki and not your project. The clone URL will include `.wiki`.
@@ -239,7 +239,7 @@ To clone the GitHub repo locally:
 
     Your terminal window probably looks something like this:
 
-    {% include course_image.html size="medium" filename="terminalupdates" ext_print="png" ext_web="png" alt="Terminal window with git commands" caption="Terminal window with git commands" %}
+    <figure><img class="docimage medium" src="{{site.media}}/terminalupdates.png" alt="Terminal window with git commands" /><figcaption>Terminal window with git commands</figcaption></figure>
 
 7.  Now verify that your changes took effect. Browse to your GitHub wiki repository, refresh the page, and look to see the changes.
 

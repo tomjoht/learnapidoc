@@ -20,11 +20,11 @@ The Doxygen download also includes Doxywizard. See the [Doxygen](http://www.doxy
 
 Here's the Doxywizard front-end GUI generator:
 
-{% include course_image.html filename="doxygenfrontendgui" size="large" ext_print="png" ext_web="png" alt="Doxygen front-end GUI generator" caption="Doxygen front-end GUI generator" %}
+<figure><img class="docimage large" src="{{site.media}}/doxygenfrontendgui.png" alt="Doxygen front-end GUI generator" /><figcaption>Doxygen front-end GUI generator</figcaption></figure>
 
 Here's the Doxygen output:
 
-{% include course_image.html filename="doxygensample" size="large" ext_print="png" ext_web="png" alt="Doxygen Sample" caption="Doxygen Sample" %}
+<figure><img class="docimage large" src="{{site.media}}/doxygensample.png" alt="Doxygen Sample" /><figcaption>Doxygen Sample</figcaption></figure>
 
 You don't need to use the wizard. You can also generate Doxygen through a configuration file, which is typically how developers run Doxygen builds from a server.
 

@@ -26,7 +26,7 @@ last-modified: 2020-05-13
 
 The following example shows a sample request from the [Callfire API](https://developers.callfire.com/docs.html#pagination):
 
-{% include course_image.html url="https://developers.callfire.com/docs.html#pagination" size="large" filename="callfireapirequestexample" ext_print="png" ext_web="png" alt="Sample request from Callfire" caption="Sample request from Callfire" %}
+<figure><a target="_blank" class="noExtIcon" href="https://developers.callfire.com/docs.html#pagination"><img class="docimage large" src="{{site.media}}/callfireapirequestexample.png" alt="Sample request from Callfire" /></a><figcaption>Sample request from Callfire</figcaption></figure>
 
 The design of this API doc site arranges the sample requests and responses in the right column of a three-column layout. The request is formatted in curl, which we explored earlier in [Make a curl call](docapis_make_curl_call.html).
 

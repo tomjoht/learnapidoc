@@ -90,7 +90,7 @@ Learning the OpenAPI spec and constructing the YAML or JSON code by hand the fir
 
 Before we dive into ways to manually create the OpenAPI specification document, it's worth noting some other approaches to the task, beyond choosing whether to use a visual editor or manually write the code. You can also choose to auto-generate the OpenAPI spec from annotations in your programming code. This developer-centric approach may make sense if you have a large number of APIs or if it's not practical for technical writers to create this documentation. In my [2020 Developer Documentation Trends survey](docapis_trends.html), approaches for auto-generating the spec versus manually generating it were split:
 
-{% include course_image.html url="https://idratherbewriting.com/learnapidoc/docapis_trends.html" size="medium" border="true" filename="trends-generating-openapi" ext_print="png" ext_web="png" alt="Percentage of auto-generation versus manual creation" caption="Percentage of auto-generation versus manual creation" %}
+<figure><a target="_blank" class="noExtIcon" href="https://idratherbewriting.com/learnapidoc/docapis_trends.html"><img class="docimage medium border" src="{{site.media}}/trends-generating-openapi.png" alt="Percentage of auto-generation versus manual creation"></a><figcaption>Percentage of auto-generation versus manual creation</figcaption></figure>
 
 If you want to go the code-generation route, Swagger offers a variety of libraries that you can add to your programming code to generate the specification document. These Swagger libraries then parse the annotations that developers add and generate the OpenAPI specification document. These libraries are considered part of the ["Swagger Codegen"](https://swagger.io/swagger-codegen/) project. The annotation methods vary based on the programming language. For example, here's a [tutorial on annotating code with Swagger for Scalatra](http://www.infoq.com/articles/swagger-scalatra).
 
@@ -146,7 +146,7 @@ Still, many developers get excited about this approach because it offers a way t
 
 It's common that engineers generate the OpenAPI spec, so you wouldn't be out of place to simply ask developers to generate out this file from their code, writing and maintaining their own reference documentation. In my [2020 Developer Documentation Trends survey](docapis_trends.html), I asked respondents who typically generates the OpenAPI spec. Their answers trends towards either engineers or engineers + tech writers in collaboration:
 
-{% include course_image.html url="https://idratherbewriting.com/learnapidoc/docapis_trends.html" size="medium" border="true" filename="trends-who-generates-openapi-spec" ext_print="png" ext_web="png" alt="Who generates the OpenAPI spec" caption="Who generates the OpenAPI spec" %}
+<figure><a target="_blank" class="noExtIcon" href="https://idratherbewriting.com/learnapidoc/docapis_trends.html"><img class="docimage medium border" src="{{site.media}}/trends-who-generates-openapi-spec.png" alt="Who generates the OpenAPI spec"></a><figcaption>Who generates the OpenAPI spec</figcaption></figure>
 
 If engineers are generating the OpenAPI spec and they want to auto-generate it from annotations in their code, you might want to follow their preference. If you go the auto-generation route, make sure you get access to the source code to make edits to the annotations and ramp up on Git. Otherwise, your developers will be writing your reference docs.
 
@@ -156,7 +156,7 @@ In this course, however, I will not be covering code annotations and ways to aut
 
 Now let's talk about the spec-first approach. Many feel that auto-generation, described in the previous section, is *not* the best approach. In [*Undisturbed REST: A Guide to Designing the Perfect API*](https://www.mulesoft.com/lp/ebook/api/restbook), [Michael Stowe](https://twitter.com/mikegstowe) recommends that teams implement the OpenAPI specification by hand and then treat the specification document as a contract that developers use when doing the actual coding. This approach is often referred to as "spec-first development."
 
-{% include course_image.html url="https://www.amazon.com/gp/product/B0125TOLNU?keywords=undisturbed%20rest%20michael%20stowe&qid=1444665700" size="large" filename="spec_driven_development" ext_print="jpg" ext_web="jpg" alt="Spec-first development" caption="Spec-first development is a philosophy about how to develop APIs more efficiently. If you follow a spec-first philosophy, you write the spec first and use it as a contract that developers code to." %}
+<figure><a target="_blank" class="noExtIcon" href="https://www.amazon.com/gp/product/B0125TOLNU?keywords=undisturbed%20rest%20michael%20stowe&amp;qid=1444665700"><img class="docimage large" src="{{site.media}}/spec_driven_development.jpg" alt="Spec-first development"></a><figcaption>Spec-first development is a philosophy about how to develop APIs more efficiently. If you follow a spec-first philosophy, you write the spec first and use it as a contract that developers code to.</figcaption></figure>
 
 In other words, developers consult the OpenAPI specification document to see what the parameter names should be called, what the responses should be, and so on. After this "contract" or "blueprint" has been established, Stowe says you can then put the annotations in your code (if you want) to generate the specification document in a more automated way. But don't code without first having a spec.
 
@@ -174,7 +174,7 @@ Probably the most common tool used to parse the OpenAPI specification is [Swagge
 
 The Swagger UI code generates a display that looks like this:
 
-{% include course_image.html url="http://petstore.swagger.io/" size="large"  filename="swagger_petstore_pic" ext_print="png" ext_web="png" alt="The Swagger Petstore demo shows how Swagger UI renders the OpenAPI spec" caption="The Swagger Petstore demo shows how Swagger UI renders the OpenAPI spec" %}
+<figure><a target="_blank" class="noExtIcon" href="http://petstore.swagger.io/"><img class="docimage large" src="{{site.media}}/swagger_petstore_pic.png" alt="The Swagger Petstore demo shows how Swagger UI renders the OpenAPI spec"></a><figcaption>The Swagger Petstore demo shows how Swagger UI renders the OpenAPI spec</figcaption></figure>
 
 You can also check out the [sample Swagger UI integration with a simple weather API](https://idratherbewriting.com/learnapidoc/assets/files/swagger/) used as a course example.
 
@@ -188,11 +188,11 @@ Let's get some hands-on experience with Swagger UI using the Petstore demo. The 
 
     As with most Swagger-based outputs, Swagger UI provides a "Try it out" button. To make it work, you must first authorize Swagger by clicking **Authorize** and entering your API key in the Authorization modal. However, the Petstore authorization modal is just for demo purposes. There isn't any real code authorizing those requests, so you can close the Authorization modal or skip it altogether.
 
-    {% include course_image.html url="http://petstore.swagger.io/" size="medium" filename="swaggerui_authorize" ext_print="png" ext_web="png" alt="Authorization modal in Swagger UI" caption="Authorization modal in Swagger UI" %}
+    <figure><a target="_blank" class="noExtIcon" href="http://petstore.swagger.io/"><img class="docimage medium" src="{{site.media}}/swaggerui_authorize.png" alt="Authorization modal in Swagger UI"></a><figcaption>Authorization modal in Swagger UI</figcaption></figure>
 
 2.  Expand the **<span style="padding: 3px; border-radius: 3px; background-color: #dedede">POST</span> `/pet`** endpoint.
 
-    {% include course_image.html url="http://petstore.swagger.io/" size="large" filename="swaggerui_petendpoint" ext_print="png" ext_web="png" alt="POST /pet endpoint and Try it out button in Swagger UI" caption="POST /pet endpoint and Try it out button in Swagger UI" %}
+    <figure><a target="_blank" class="noExtIcon" href="http://petstore.swagger.io/"><img class="docimage large" src="{{site.media}}/swaggerui_petendpoint.png" alt="POST /pet endpoint and Try it out button in Swagger UI"></a><figcaption>POST /pet endpoint and Try it out button in Swagger UI</figcaption></figure>
 
 3.  Click **Try it out**.
 
@@ -201,7 +201,7 @@ Let's get some hands-on experience with Swagger UI using the Petstore demo. The 
 4.  In the example value, change the first `id` value to a unique (and unlikely to be repeated) whole number (such as `24329`). Change the name `doggie` to a pet name you can remember (e.g., `Bentley`).
 5.  Click **Execute**.
 
-    {% include course_image.html url="http://petstore.swagger.io/" size="large" filename="swaggerui_execute" ext_print="png" ext_web="png" alt="Executing a sample Petstore request" caption="Executing a sample Petstore request" %}
+    <figure><a target="_blank" class="noExtIcon" href="http://petstore.swagger.io/"><img class="docimage large" src="{{site.media}}/swaggerui_execute.png" alt="Executing a sample Petstore request"></a><figcaption>Executing a sample Petstore request</figcaption></figure>
 
     Swagger UI submits the request and shows the [curl]({{site.rooturl}}docapis_make_curl_call.html) that was submitted. For example, here's the curl Swagger UI sent:
 

@@ -70,7 +70,7 @@ To update the spec file in Swagger Editor:
 1.  Paste the code from the preceding section ("Sample info object") containing the `info` object into the Swagger Editor.
 2.  Uncomment the `openapi` and `paths` objects (remove the "`#`"). The display looks as follows:
 
-    {% include course_image.html size="large" border="true" filename="swagger_info_object_editor_view" ext_print="png" ext_web="png" alt="openapi, info, and empty paths object in Swagger Editor" caption="openapi, info, and empty paths object in Swagger Editor" %}
+    <figure><img class="docimage large border" src="{{site.media}}/swagger_info_object_editor_view.png" alt="openapi, info, and empty paths object in Swagger Editor" /><figcaption>openapi, info, and empty paths object in Swagger Editor</figcaption></figure>
 
     In the Swagger UI display, the `info` object's information appears below the title.
 

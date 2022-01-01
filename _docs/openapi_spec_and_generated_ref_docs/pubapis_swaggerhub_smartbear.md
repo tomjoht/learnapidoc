@@ -54,7 +54,7 @@ SwaggerHub contains the same [Swagger Editor](https://swagger.io/swagger-editor/
 * Hide Editor and Navigation
 * Hide UI Docs
 
-{% include course_image.html size="large" filename="swaggerhub_ui_toggle" ext_print="png" ext_web="png" alt="SwaggerHub's editor gives you more flexible viewing options" caption="SwaggerHub's editor gives you more flexible viewing options" %}
+<figure><img class="docimage large" src="{{site.media}}/swaggerhub_ui_toggle.png" alt="SwaggerHub's editor gives you more flexible viewing options" /><figcaption>SwaggerHub's editor gives you more flexible viewing options</figcaption></figure>
 
 Most importantly, as you're working in the Editor, SwaggerHub allows you to *save your work*. With the free Swagger Editor, your content is kept in the browser cache, with no ability to save the file in the cloud. When you clear your cache, your content is gone. As a result, if you use the standalone Swagger Editor, you have to regularly copy the content from the Swagger Editor into a file on your own computer each time you finish.
 
@@ -64,7 +64,7 @@ With SwaggerHub, you can save your specification document directly on SwaggerHub
 
 SwaggerHub not only allows you to save your OpenAPI spec but also save different versions of your spec. As a result, you can experiment with new content by adding a new version. You can return to any version you want, and you can also publish or unpublish any version.
 
-{% include course_image.html size="large" filename="swaggerhub_versioning" ext_print="png" ext_web="png" alt="Versioning options for your OpenAPI file" caption="Versioning options for your OpenAPI file" %}
+<figure><img class="docimage large" src="{{site.media}}/swaggerhub_versioning.png" alt="Versioning options for your OpenAPI file" /><figcaption>Versioning options for your OpenAPI file</figcaption></figure>
 
 When you publish a version, the published version becomes Read Only. If you want to make changes to a published version (rather than creating a new version), you can unpublish the version and make edits to it.
 
@@ -78,7 +78,7 @@ When you publish your Swagger documentation on SwaggerHub, Swagger's base URL (`
 
 Key to the review process is the ability for team members to comment on the spec inline, similar to Google Docs and its margin annotations. When you're working in SwaggerHub's editor, a small plus sign {% if site.format == "web" %}<img src="{{site.media}}/swaggerhub_plus.png" class="inline"/>{% endif %} appears to the left of every line. Click the plus button to add a comment inline at that point.
 
-{% include course_image.html size="large" filename="swaggerhub_comment_feature" ext_print="png" ext_web="png" alt="Inline commenting and reply features on SwaggerHub" caption="Inline commenting and reply features on SwaggerHub" %}
+<figure><img class="docimage large" src="{{site.media}}/swaggerhub_comment_feature.png" alt="Inline commenting and reply features on SwaggerHub" /><figcaption>Inline commenting and reply features on SwaggerHub</figcaption></figure>
 
 When you click the plus sign, a comment pane appears on the right where you can elaborate on comments, and where others can reply. Users can edit, delete, or resolve the comments. This commenting feature helps facilitate the review process in a way that tightly integrates with your content. You can also collapse or show the comments pane as desired.
 
@@ -92,7 +92,7 @@ Another benefit to SwaggerHub is the ability to auto-generate the needed client 
 
 In the upper-right corner, click the down-arrow and select **Client** or **Server**. Users have access to generate [client and server SDKs](docapis_sdks.html) in more than 30 formats.
 
-{% include course_image.html size="large" filename="swaggerhub_download" ext_print="png" ext_web="png" alt="Client and server SDK export capabilities" caption="Client and server SDK export capabilities" %}
+<figure><img class="docimage large" src="{{site.media}}/swaggerhub_download.png" alt="Client and server SDK export capabilities" /><figcaption>Client and server SDK export capabilities</figcaption></figure>
 
 For example, suppose a user is implementing your REST API in a Java application. The user can choose to download the Java client SDK for extensive code that shows a Java implementation of your API. Other options include Ruby, Android, Go, CSharp, JavaScript, Python, Scala, PHP, Swift, and many more.
 
@@ -112,7 +112,7 @@ The HTML export is a more basic output than HTML2. You could potentially incorpo
 
 The HTML2 export is more intended to stand on its own, as it has a fixed left sidebar to navigate the endpoints and navtabs showing six different code samples:
 
-{% include course_image.html size="medium" filename="swaggerhub_html2output" ext_print="png" ext_web="png" alt="HTML export" caption="HTML export" %}
+<p>You can see a demo export of the OpenWeatherAPI API here: <a href="https://idratherbewriting.com/learnapidoc/assets/files/swaggerhub_htmloutput/index.html">HTML</a> or <a href="https://idratherbewriting.com/learnapidoc/assets/files/swaggerhub_html2output/index.html">HTML2</a>. Both exports generate all the content into an index.html file.</p>
 
 Both outputs would need a healthy dose of custom styling to be usable.
 
@@ -148,7 +148,7 @@ The collaborative aspect of SwaggerHub is the most common reason people move fro
 
 Additionally, within an organization, you can further group APIs into different projects. This way teams working in the same organization but on different projects can have visibility into other APIs.
 
-{% include course_image.html size="large" border="true" filename="swaggerhub_organizations" ext_print="png" ext_web="png" alt="Organization of projects by team" caption="Organization of projects by team" %}
+<figure><img class="docimage large border" src="{{site.media}}/swaggerhub_organizations.png" alt="Organization of projects by team" /><figcaption>Organization of projects by team</figcaption></figure>
 
 This aspect of organizations and projects may not seem essential if you have just one or two APIs, but consider how you'll scale and grow as you have dozens of APIs and multiple teams. In these more robust scenarios, the organization and project features become essential.
 

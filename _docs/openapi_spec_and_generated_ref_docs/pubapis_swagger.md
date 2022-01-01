@@ -71,7 +71,7 @@ Now let's make a request:
 3.  In the Example Value field, change the first `id` value to a random integer, such as `193844`. Change the second `name` value to something you'd recognize (your pet's name).
 4.  Click **Execute**.
 
-    {% include course_image.html url="http://petstore.swagger.io/" size="large" filename="swaggerui_execute" ext_print="png" ext_web="png" alt="Executing a sample Petstore request" caption="Executing a sample Petstore request" %}
+    <figure><a target="_blank" class="noExtIcon" href="http://petstore.swagger.io/"><img class="docimage large" src="{{site.media}}/swaggerui_execute.png" alt="Executing a sample Petstore request" /></a><figcaption>Executing a sample Petstore request</figcaption></figure>
 
     Swagger UI submits the request and shows the [curl](docapis_make_curl_call.html)  that was submitted. The Responses section shows the [response](docapis_doc_sample_responses_and_schema.html). (If you select JSON rather than XML in the "Response content type" drop-down box, the response's format will be shown in JSON.)
 
@@ -107,7 +107,7 @@ Looking at the examples, you'll notice the documentation is short and sweet in a
 
 In this activity, you'll create a Swagger UI display for an OpenAPI specification document. If you're using one of the pre-built OpenAPI files, you can see a demo of what we'll build here: [OpenWeatherMap Swagger UI](https://idratherbewriting.com/learnapidoc/assets/files/swagger/).
 
-{% include course_image.html url="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html" filename="swagger_full_result" size="medium" ext_print="png" ext_web="png" alt="Demo of Swagger UI" caption="Demo of Swagger UI rendering an OpenWeatherMap OpenAPI specification document" %}
+<figure><a target="_blank" class="noExtIcon" href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html"><img class="docimage medium" src="{{site.media}}/swagger_full_result.png" alt="Demo of Swagger UI" /></a><figcaption>Demo of Swagger UI rendering an OpenWeatherMap OpenAPI specification document</figcaption></figure>
 
 First, you'll make sure you can view Swagger locally. Then you'll switch the Petstore OpenAPI document URL with an OpenWeatherMap OpenAPI document URL.
 
@@ -157,7 +157,7 @@ You can create a local web server running on your computer through [Python's Sim
     {: .warning}
     When you install Python, be sure to select the check box that says "Add Python 3.7 to PATH." *This check box isn't selected by default. If you don't select it, your command prompt won't recognize the word "python".*
 
-    {% include course_image.html size="medium" filename="pythonscreenshot2" ext_print="png" ext_web="png" alt="Installing Python to PATH" caption="Add Python 3.7 to PATH" %}
+    <figure><img class="docimage medium" src="{{site.media}}/pythonscreenshot2.png" alt="Installing Python to PATH" /><figcaption>Add Python 3.7 to PATH</figcaption></figure>
 
 2.  After installing Python, close your command prompt and reopen it.
 3.  In your command prompt, browse to the Swagger UI `dist` directory.

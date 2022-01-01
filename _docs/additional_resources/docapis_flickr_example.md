@@ -226,4 +226,4 @@ You can view a demo of the [Color Gallery integration here](https://idratherbewr
 
 The result looks like this:
 
-{% include course_image.html url="https://idratherbewriting.com/learnapidoc/assets/files/flickr-gallery-example.html" size="large" filename="flickrcolorgallerydemo" ext_print="png" ext_web="png" alt="Color Gallery integrated through the Flickr API" caption="Color Gallery integrated through the Flickr API" %}
+<figure><a href="https://idratherbewriting.com/learnapidoc/assets/files/flickr-gallery-example.html"><img src="{{site.media}}/flickrcolorgallerydemo.png" alt="Color Gallery integrated through the Flickr API" /></a><figcaption>Color Gallery integrated through the Flickr API</figcaption></figure>

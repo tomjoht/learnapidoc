@@ -27,13 +27,13 @@ To make edits in a separate branch on GitHub:
 
 1. Pretend you're a SME reviewer. Go to the same GitHub repo you created in an [earlier tutorial](pubapis_github_desktop_client.html) (or create a new repo). Create a new branch by selecting the branch drop-down menu and typing a new branch name, such as "sme-review." Then press your **Enter** key.
 
-   {% include course_image.html size="large" filename="github_sme_review" ext_print="png" ext_web="png" alt="Creating a new branch" caption="Creating a new branch" %}
+   <figure><img class="docimage large" src="{{site.media}}/github_sme_review.png" alt="Creating a new branch" /><figcaption>Creating a new branch</figcaption></figure>
 
 	 When you create a new branch, the content from the master (or whatever branch you're currently viewing) is copied over into the new branch. The branch is like doing a "Save as" with an existing document.
 
 2. Click a file, and then click the pencil icon ("Edit this file") to edit the file.
 
-   {% include course_image.html size="large" filename="github_making_branch_edits" ext_print="png" ext_web="png" alt="Making an edit" caption="Making an edit" %}
+   <figure><img class="docimage large" src="{{site.media}}/github_making_branch_edits.png" alt="Making an edit" /><figcaption>Making an edit</figcaption></figure>
 
 3. Make some changes to the content, and then scroll down to the Commit changes area. Explain the reason for the changes and commit the changes to your sme-review branch by clicking **Commit changes**.
 
@@ -50,11 +50,11 @@ To create a pull request:
 1. View the repository and click the **Pull requests** tab.
 2. Click the **New pull request** button.
 
-   {% include course_image.html size="large" filename="github_new_pull_request" ext_print="png" ext_web="png" alt="New Pull Request" caption="New Pull Request" %}
+   <figure><img class="docimage large" src="{{site.media}}/github_new_pull_request.png" alt="New Pull Request" /><figcaption>New Pull Request</figcaption></figure>
 
 3. Select the branch ("sme-review") that you want to compare against the master.
 
-   {% include course_image.html size="large" filename="github_compare_to" ext_print="png" ext_web="png" alt="Compare to option" caption="Compare to option looks to see if the branches can be merged" %}
+   <figure><img class="docimage large" src="{{site.media}}/github_compare_to.png" alt="Compare to option" /><figcaption>Compare to option looks to see if the branches can be merged</figcaption></figure>
 
 	 When you compare the branch against the master, you can see a list of all the changes. You can view the changes through two viewing modes: Unified or Split (these are tabs shown on the right of the content). Unified shows the edits together in the same content area, whereas split shows the two files side by side.
 
@@ -72,7 +72,7 @@ Now pretend you are the project owner, and you see that you received a new pull 
 1. Click the **Pull requests** tab to see the pending pull requests.
 2. Click the pull request and view the changes by clicking the **Files changed** tab.
 
-   {% include course_image.html size="large" filename="github_files_changed" ext_print="png" ext_web="png" alt="Github files changed" caption="Github files changed" %}
+   <figure><img class="docimage large" src="{{site.media}}/github_files_changed.png" alt="Github files changed" /><figcaption>Github files changed</figcaption></figure>
 
 	 {: .note}
    If you only want to implement some of the edits, go into the sme-review branch and make the updates before processing the pull request. The pull request doesn't give you a line-by-line option about which changes you want to accept or reject (like in Microsoft Word's Track Changes). Merging pull requests is an all-or-nothing process. You can also click **Review changes**, add some comments, and then select the **Request changes** radio button, asking the reviewer to make the changes.

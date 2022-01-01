@@ -24,7 +24,7 @@ To see a presentation that covers the same concepts in this article, see [https:
 
 When choosing an editor to write OpenAPI code by hand, the most common is the [Swagger Editor](http://editor.swagger.io/) because it dynamically validates your content as you write. It lets you determine whether the specification document you're creating is valid. The Swagger Editor looks like this, with the left pane showing the code and the right pane showing the output:
 
-{% include course_image.html url="http://editor.swagger.io/" size="large" filename="swagger_editor_pic" ext_print="png" ext_web="png" alt="The Swagger Editor validates your specification content dynamically and shows you the display on the right" caption="The Swagger Editor validates your specification content dynamically and shows you the display on the right" %}
+<figure><a target="_blank" class="noExtIcon" href="http://editor.swagger.io/"><img class="docimage large" src="{{site.media}}/swagger_editor_pic.png" alt="The Swagger Editor validates your specification content dynamically and shows you the display on the right" /></a><figcaption>The Swagger Editor validates your specification content dynamically and shows you the display on the right</figcaption></figure>
 
 {% include random_ad4.html %}
 

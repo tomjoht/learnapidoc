@@ -27,7 +27,7 @@ To make a request with curl:
 2.  On any request you've configured, below the Save button in Postman, click the **Code** link. (If you don't see the link, scroll up.)
 3.  In the Generate Code Snippets dialog box, select **cURL** from the drop-down list, and then click **Copy to Clipboard**.
 
-    {% include course_image.html size="medium" filename="postman_curl_request5" ext_print="png" ext_web="png" alt="curl request in Postman" caption="curl request in Postman" %}
+    <figure><img class="docimage medium" src="{{site.media}}/postman_curl_request5.png" alt="curl request in Postman" /><figcaption>curl request in Postman</figcaption></figure>
 
     The Postman code for the OpenWeatherMap weather request in curl looks as follows:
 

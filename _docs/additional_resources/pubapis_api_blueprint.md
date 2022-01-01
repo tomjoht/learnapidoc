@@ -241,7 +241,7 @@ For this tutorial, we'll use a platform called Apiary to read and display the AP
 
 	  You'll be placed in the API Blueprint editor.
 
-    {% include course_image.html size="large" filename="apiaryblueprinteditor" ext_print="png" ext_web="png" alt="API Blueprint editor on Apiary" caption="API Blueprint editor on Apiary" %}
+    <figure><img src="{{site.media}}/apiaryblueprinteditor.png" alt="API Blueprint editor on Apiary" class="large" /><figcaption></figcaption>API Blueprint editor on Apiary</figure>
 
 	  By default, the Polls blueprint is loaded so you can see how it looks. This blueprint gives you an example of the required format for the Apiary tool to parse and display the content. You can also see the [raw file here](https://raw.githubusercontent.com/apiaryio/api-blueprint/master/examples/Polls%20API.md).
 
@@ -475,7 +475,7 @@ Similar to Swagger Editor, the Apiary editor shows you the output in the right p
 
 In the Apiary's top navigation, click **Documentation**. Then interact with the API on Apiary by clicking first selecting an endpoint and then clicking **Switch to Console**. Call the resources and view the responses.
 
-{% include course_image.html size="medium" filename="openweathermapapiapiary" ext_print="png" ext_web="png" alt="Previewing the documentation for the OpenWeatherMap API definition in Apiary" caption="reviewing the documentation for the OpenWeatherMap API definition in Apiary" %}
+<figure><img src="{{site.media}}/openweathermapapiapiary.png" alt="Previewing the documentation for the OpenWeatherMap API definition in Apiary" class="medium" /><figcaption>Previewing the documentation for the OpenWeatherMap API definition in Apiary</figcaption></figure>
 
 You can switch between an Example and a Console view in the documentation. The Example view shows pre-built responses. The Console view allows you to enter your own values and generate dynamic responses based on your own API key. This dual display &mdash; both the Example and the Console views &mdash; might align better with user needs:
 
@@ -486,7 +486,7 @@ You can switch between an Example and a Console view in the documentation. The E
 
 To call the resource successfully, you'll need to customize the `lat` and `lon` values (e.g., `37.3565982` and `-121.9689848`) and also add an `appid` parameter whose value is your API key. You can then call the resource successfully.
 
-{% include course_image.html size="medium" filename="callresourceapiary" ext_print="png" ext_web="png" alt="Customizing the lat, long, and appid parameters in order to make a successful call" caption="Customizing the <code>lat</code>, <code>long</code>, and <code>appid</code> parameters in order to make a successful call" %}
+<figure><img src="{{site.media}}/callresourceapiary.png" alt="Customizing the lat, long, and appid parameters in order to make a successful call" class="medium" /><figcaption>Customizing the lat, long, and appid parameters in order to make a successful call</figcaption></figure>
 
 {% comment %}{% include random_ad3.html %}{% endcomment %}
 

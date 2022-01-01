@@ -26,7 +26,7 @@ In this activity, you'll generate a Javadoc from the [sample java project](nativ
 2.  Expand **Java** and select **Javadoc.** Then click **Next**.
 3.  Select your project and package. Then in the right pane, select the classes you want to be included in the Javadoc &mdash; in this case, **Dynamite.java** and **ACMESmartphone.java.**
 
-    {% include course_image.html size="small_medium" filename="generatejavadoc" ext_print="png" ext_web="png" alt="Generating a Javadoc" caption="Generating a Javadoc" %}
+    <figure><img class="docimage small_medium" src="{{site.media}}/generatejavadoc.png" alt="Generating a Javadoc"><figcaption>Generating a Javadoc</figcaption></figure>
 
     Don't select the `App.java` class that contains your `main` method because you don't need to provide Java documentation for your program; your Javadoc will provide documentation for the classes that developers might choose to use in their programs. In this sample project, the `main` method is included in `App.java`, but it could have been included in a file named otherwise.
 
@@ -44,13 +44,13 @@ In this activity, you'll generate a Javadoc from the [sample java project](nativ
 
 7.  Click **Next** and see additional configuration options.
 
-    {% include course_image.html size="small_medium" filename="javadocnext1" ext_print="png" ext_web="png" alt="Javadoc next screen" caption="Javadoc next screen" %}
+    <figure><img class="docimage small_medium" src="{{site.media}}/javadocnext1.png" alt="Javadoc next screen"><figcaption>Javadoc next screen</figcaption></figure>
 
 	  Here you can select if you want to omit some tags, such as @author and @deprecated. Generally, you don't include the @author tag, since it may only be important internally, not externally. You can also select different options in the Javadoc frame. If you have a custom stylesheet, you can select it here. Most likely you would only make superficial style changes such as with colors.
 
 8.  Click **Next**.
 
-    {% include course_image.html size="small_medium"  filename="generatejavadocnext2" ext_print="png" ext_web="png" alt="Overview page" caption="Overview page" %}
+    <figure><img class="docimage small_medium" src="{{site.media}}/generatejavadocnext2.png" alt="Overview page"><figcaption>Overview page</figcaption></figure>
 
 	  Here you can select an HTML page that you want to be your [overview page in the Javadoc](https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javadoc.html#overviewcomment). You can select any HTML page, and it will be included in the index.
 
@@ -71,7 +71,7 @@ In this activity, you'll generate a Javadoc from the [sample java project](nativ
 
 Javadoc also checks your tags against the actual code. If you have parameters, exceptions, or returns that don't match up with the parameters, exceptions, or returns in your actual code, then Javadoc will show some warnings.
 
-{% include course_image.html size="medium"  filename="javadocerrorchecking" ext_print="png" ext_web="png" alt="Javadoc error checking" caption="Javadoc error checking" %}
+<figure><img class="docimage medium" src="{{site.media}}/javadocerrorchecking.png" alt="Javadoc error checking"><figcaption>Javadoc error checking</figcaption></figure>
 
 {% include random_ad1.html %}
 

@@ -34,7 +34,7 @@ But many times, acronyms and unfamiliar terms are an unavoidable part of a speci
 
 To simplify the language, you can't just omit the necessary terminology for the domain and substitute in more friendly names. You have to teach the user the right language so they can participate in the conversation. One approach for teaching users how to speak this language involves defining unfamiliar words for the user by way of a glossary.
 
-{% include course_image.html size="medium" border="true" filename="nonref_glossary" ext_print="png" ext_web="svg" alt="Glossary" caption="Glossaries not only provide clarity about terms for users but also help the writers think more clearly and consistently about the topic." %}
+<figure><img class="docimage medium border" src="{{site.media}}/{% if site.kindle %}nonref_glossary.png{% else %}nonref_glossary.svg{% endif %}" alt="Glossary" /><figcaption>Glossaries not only provide clarity about terms for users but also help the writers think more clearly and consistently about the topic.</figcaption></figure>
 
 {: .tip}
 I provide an [API glossary here](api-glossary.html) that defines many terms related to API documentation. If you run into unfamiliar jargon that I don't define in the topic, you can always consult the glossary.
@@ -189,7 +189,7 @@ The following are sample glossary pages in various APIs.
 
 ### Lyft
 
-{% include course_image.html url="https://developer.lyft.com/docs/glossary" filename="glossary_lyft" ext_print="png" ext_web="png" alt="Lyft glossary" caption="Lyft glossary" %}
+<figure><a target="_blank" class="noExtIcon" href="https://developer.lyft.com/docs/glossary"><img class="docimage" src="{{site.media}}/glossary_lyft.png" alt="Lyft glossary" /></a><figcaption>Lyft glossary</figcaption></figure>
 
 Lyft's glossary doesn't have a ton of terms (there are about 10), but they're specific to the Lyft API world. You see terms such as "Lyft Line," "Lyft Lux," "Lyft Plus," and so on. I like that the developer documentation takes pains to define terms that might frequently be used on Marketing and Sales spaces. Whenever a company includes a glossary, it demonstrates a sensitivity the company has toward users. The company doesn't assume that their users understand all the company's specialized terms and vocabulary.
 
@@ -197,7 +197,7 @@ Lyft's glossary doesn't have a ton of terms (there are about 10), but they're sp
 
 ### Yext
 
-{% include course_image.html url="http://developer.yext.com/docs/glossary/" filename="glossary_yext"  ext_print="png" ext_web="png" alt="Yext glossary" caption="Yext glossary" %}
+<figure><a target="_blank" class="noExtIcon" href="http://developer.yext.com/docs/glossary/"><img class="docimage" src="{{site.media}}/glossary_yext.png" alt="Yext glossary" /></a><figcaption>Yext glossary</figcaption></figure>
 
 Note how in the Yext glossary, when industry standard terms such as "SSO" are defined, the definitions cover the company's specific use of SSO; the general term SSO isn't simply defined. Yext explains, "Single Sign On, which is a feature available to enterprise clients and partners...." And then goes on to explain more details around partners' versus employees of enterprise clients and how they can each use SSO.
 
@@ -209,7 +209,7 @@ Use the strategy that makes sense for your docs. For the most part, since users 
 
 ### Apigee
 
-{% include course_image.html url="https://docs.apigee.com/api-platform/reference/glossary" filename="glossary_apigee" ext_print="png" ext_web="png" alt="Apigee glossary" caption="Apigee glossary" %}
+<figure><a target="_blank" class="noExtIcon" href="https://docs.apigee.com/api-platform/reference/glossary"><img class="docimage" src="{{site.media}}/glossary_apigee.png" alt="Apigee glossary" /></a><figcaption>Apigee glossary</figcaption></figure>
 
 The Apigee glossary provides another good model to follow. One interesting decision with Apigee's glossary is to format the entries as a table. The format probably doesn't matter much, but given that there are official definition list elements in HTML, it seems a bit odd to reject definition lists and use tables instead. Definition lists usually display better on mobile devices such as phones and tablets, and definition lists are easier to work with in general.
 

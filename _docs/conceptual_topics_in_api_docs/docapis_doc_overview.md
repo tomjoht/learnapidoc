@@ -31,7 +31,7 @@ Too often with developer documentation, the documentation gets quickly mired in 
 
 These are essentially who/what/when/where/why/how questions &mdash; not rocket science here, just the basic fundamentals of expository writing.
 
-{% include course_image.html size="medium" border="true" filename="nonref_overview" ext_print="png" ext_web="svg" alt="product overview" caption="The product overview provides high-level detail about the purpose, audience, and market need for your API." %}
+<figure><img class="docimage medium border" src="{{site.media}}/{% if site.kindle %}nonref_overview.png{% else %}nonref_overview.svg{% endif %}" alt="product overview" /><figcaption>The product overview provides high-level detail about the purpose, audience, and market need for your API.</figcaption></figure>
 
 Keep in mind that there are thousands of APIs. If people are browsing your API, their first and most pressing question is, what information does it provide? Is this information relevant and useful to my needs? How does it differ from other products in this same space? The user's first question is usually not "How do I configure this endpoint."
 
@@ -198,13 +198,13 @@ Here are a few sample product overviews.
 
 ### IBM Watson Assistant
 
-{% include course_image.html url="https://cloud.ibm.com/docs/services/assistant?topic=assistant-index#index" filename="ibmcloudoverview" ext_web="png" ext_print="png" alt="IBM Watson Assistant overview" caption="IBM Watson Assistant overview" %}
+<figure><a target="_blank" class="noExtIcon" href="https://cloud.ibm.com/docs/services/assistant?topic=assistant-index#index"><img class="docimage" src="{{site.media}}/ibmcloudoverview.png" alt="IBM Watson Assistant overview" /></a><figcaption>IBM Watson Assistant overview</figcaption></figure>
 
 IBM Watson Assistant starts off with a brief summary of the service, followed by a high-level diagram of the system and a summary about how to implement it. Including a diagram of your API gives users a good grounding about what to expect, such as the level of complexity and time it will take to incorporate the API.
 
 ### Video Skills Kit for Fire TV
 
-{% include course_image.html url="https://developer.amazon.com/docs/video-skills-fire-tv-apps/introduction.html" filename="vskfiretv_productoverview" ext_web="png" ext_print="png" alt="VSK for Fire TV" caption="VSK for Video Skills Kit for Fire TV" %}
+<figure><a target="_blank" class="noExtIcon" href="https://developer.amazon.com/docs/video-skills-fire-tv-apps/introduction.html"><img class="docimage" src="{{site.media}}/vskfiretv_productoverview.png" alt="VSK for Fire TV" /></a><figcaption>VSK for Video Skills Kit for Fire TV</figcaption></figure>
 
 This is an overview I wrote for a product called "Video Skills Kit for Fire TV." The product overview stays at a high level by describing the capabilities the product provides, general implementation options, sample apps available, requirements to complete the implementation, supported countries, and next steps. There's a parallel product overview page called [Video Skills Kit for Echo Show](https://developer.amazon.com/docs/video-skills-multimodal-devices/introduction.html).
 

@@ -919,13 +919,13 @@ components:
 
 You should see the following populate in the Swagger UI display:
 
-{% include course_image.html filename="step5_bswaggeruiprogress" ext_print="png" ext_web="png" alt="Responses object defined in components" caption="Responses object defined in components" %}
+<figure><img class="docimage" src="{{site.media}}/step5_bswaggeruiprogress.png" alt="Responses object defined in components" /><figcaption>Responses object defined in components</figcaption></figure>
 
 In the Response section, observe how the Example Value code has been dynamically built from the `example` values in the schema to show a sample response.
 
 Also, click the **Model** link to see how the descriptions of each element appear in an expandable/collapsible way:
 
-{% include course_image.html size="medium" filename="models_options_in_responses" ext_print="png" ext_web="png" alt="Descriptions appear in the Model" caption="Descriptions appear in the Model" %}
+<figure><img class="docimage medium" src="{{site.media}}/models_options_in_responses.png" alt="Descriptions appear in the Model" /><figcaption>Descriptions appear in the Model</figcaption></figure>
 
 ## The Models section -- why it exists, how to hide it
 

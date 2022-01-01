@@ -43,7 +43,7 @@ For this activity, you'll use JavaScript to display the API response on a web pa
 2.  Assuming you completed the exercises in the [Postman tutorial](docapis_postman.html) to configure a request, go back into Postman.
 3.  In Postman, click the **Code** link (below the Save button) and go to **JavaScript - jQuery**:
 
-    {% include course_image.html size="medium" filename="postman_javascript_ajax" ext_print="png" ext_web="png" alt="Copying JavaScript code from Postman" caption="Copying JavaScript code from Postman" %}
+    <figure><img class="docimage medium" src="{{site.media}}/postman_javascript_ajax.png" alt="Copying JavaScript code from Postman" /><figcaption>Copying JavaScript code from Postman</figcaption></figure>
 
 4.  Copy the Postman code above and insert it into the `POSTMAN CODE GOES HERE` place in your `weather.html` file.
 5.  Directly below `console.log(response);`, add these two lines:

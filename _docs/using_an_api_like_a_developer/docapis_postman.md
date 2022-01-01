@@ -81,7 +81,7 @@ In this exercise, you'll use Postman to make a request using OpenWeatherMap's [c
 
     After you create the collection, the Save button will be enabled. Your Postman collection should look something like this:
 
-    {% include course_image.html size="small" filename="postmancollectiondialog2" ext_print="png" ext_web="png" alt="Collection dialog box" caption="Collection dialog box" %}
+    <figure><img class="docimage small" src="{{site.media}}/postmancollectiondialog2.png" alt="Collection dialog box" /><figcaption>Collection dialog box</figcaption></figure>
 
 4.  Click **Save**.
 

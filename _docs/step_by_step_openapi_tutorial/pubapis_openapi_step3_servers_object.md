@@ -71,7 +71,7 @@ See ["Overriding Servers"](https://swagger.io/docs/specification/api-host-and-ba
 
 Paste the `servers` object (the [first code sample above](#sample_servers_object) showing just one `url`) into your Swagger Editor, adding to the code you already have there. Swagger UI will look as follows.
 
-{% include course_image.html filename="swagger_servers_object2" ext_print="png" ext_web="png" alt="Swagger UI with the servers object" caption="Swagger UI with the servers object" %}
+<figure><img class="docimage" src="{{site.media}}/swagger_servers_object2.png" alt="Swagger UI with the servers object" /><figcaption>Swagger UI with the servers object</figcaption></figure>
 
 {% include random_ad4.html %}
 

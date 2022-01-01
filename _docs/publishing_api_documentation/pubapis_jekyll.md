@@ -40,7 +40,7 @@ One of the questions people ask about authoring content with static site generat
 
 Here's what the current view of my Jekyll project in [Atom editor](https://atom.io/) looks like:
 
-{% include course_image.html size="large" filename="writinginjekyll" ext_print="png" ext_web="png" alt="Atom text editor view while working in Jekyll" caption="Atom text editor view while working in Jekyll" %}
+<figure><img class="docimage large" src="{{site.media}}/writinginjekyll.png" alt="Atom text editor view while working in Jekyll" /><figcaption>Atom text editor view while working in Jekyll</figcaption></figure>
 
 When you're authoring a Jekyll site, you first generate a local preview by running this command:
 
@@ -68,7 +68,7 @@ If you use Atom editor, you can use a terminal built directly into Atom (I use t
 
 You then copy the preview server address (in this case, `http://127.0.0.1:4000/learnapidoc/`) and paste it into your browser. This preview server continuously builds your site with each file change you save. I usually view this browser preview side by side with my Atom editor to make sure the formatting and images look right:
 
-{% include course_image.html size="large" filename="jekyllpreviewserver" ext_print="png" ext_web="png" alt="Jekyll preview server" caption="Jekyll preview server" %}
+<figure><img class="docimage large" src="{{site.media}}/jekyllpreviewserver.png" alt="Jekyll preview server" /><figcaption>Jekyll preview server</figcaption></figure>
 
 This setup works reasonably well. Granted, I do have a large monitor, so it gives me more real estate. On a small screen, you might have to switch back and forth between screens to see the output.
 
@@ -100,7 +100,7 @@ In this activity, we'll publish to CloudCanon using the [Documentation Theme for
 3.  Once you sign in, click **Create Site** and then give the new site a name. Then press **Enter** to create the site.
 4.  Click the **GitHub Repository** box.
 
-    {% include course_image.html size="large" filename="cloudcannonsyncwithgithub" ext_print="png" ext_web="png" alt="Sync with GitHub" caption="Sync with GitHub" %}
+    <figure><img class="docimage large" src="{{site.media}}/cloudcannonsyncwithgithub.png" alt="Sync with GitHub" /><figcaption>Sync with GitHub</figcaption></figure>
 
 5.  Choose the GitHub repo that you forked &mdash; **documentation-theme-jekyll**. Select the **gh-pages** branch.
 
@@ -111,7 +111,7 @@ In this activity, we'll publish to CloudCanon using the [Documentation Theme for
 8.  Go to the **Dashboard.**
 9.  From the Dashboard, click the URL that appears below your site image:
 
-    {% include course_image.html size="large" filename="cloudcannonviewlivesite" ext_print="png" ext_web="png" alt="Viewing your live site" caption="Viewing your live site" %}
+    <figure><img class="docimage large" src="{{site.media}}/cloudcannonviewlivesite.png" alt="Viewing your live site" /><figcaption>Viewing your live site</figcaption></figure>
 
 	  The preview URL will be something random, such as `https://balmy-sunglasses.cloudvent.net/`. You'll need to click **Continue to sample site** because you're on the free plan. When you visit the URL, the theme should look just like the [Documentation theme for Jekyll here](https://idratherbewriting.com/documentation-theme-jekyll).
 
@@ -137,7 +137,7 @@ When you connect a GitHub repo with CloudCannon, the two sites sync the files. L
 
 2.  Return to CloudCannon and observe that your site automatically starts rebuilding.
 
-    {% include course_image.html size="large" filename="cloudcannonsitestatus" ext_print="png" ext_web="png" alt="CloudCannon detects the change and automatically rebuilds Jekyll" caption="CloudCannon detects the change and automatically rebuilds Jekyll" %}
+    <figure><img class="docimage large" src="{{site.media}}/cloudcannonsitestatus.png" alt="CloudCannon detects the change and automatically rebuilds Jekyll" /><figcaption>CloudCannon detects the change and automatically rebuilds Jekyll</figcaption></figure>
 
 Wait until the build finishes (the blue circling arrows change into a green check mark), and then look for the change at the preview URL. The change should be reflected.
 
@@ -147,7 +147,7 @@ You've now got a workflow that involves Github as the storage provider syncing t
 
 My Jekyll documentation theme is just one possibility for a Jekyll site. (Most people who use it end up heavily customizing it for their needs.) You could also use this [Aviator API documentation theme](https://github.com/CloudCannon/Aviator-Jekyll-Theme), which has some API templating built-in, or you could choose from many other Jekyll themes. I also wrote a tutorial for [creating your own Jekyll theme](https://jekyllrb.com/tutorials/convert-site-to-jekyll/), likely using your company's site as the template.
 
-{% include course_image.html url="https://github.com/CloudCannon/Aviator-Jekyll-Theme" filename="aviatortheme" ext_print="png" ext_web="png" alt="CloudCannon Aviator theme" caption="CloudCannon Aviator theme" %}
+<figure><a target="_blank" class="noExtIcon" href="https://github.com/CloudCannon/Aviator-Jekyll-Theme"><img class="docimage" src="{{site.media}}/aviatortheme.png" alt="CloudCannon Aviator theme" /></a><figcaption>CloudCannon Aviator theme</figcaption></figure>
 
 For inspiration, here are some websites using Jekyll:
 

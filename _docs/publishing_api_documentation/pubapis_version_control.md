@@ -127,7 +127,7 @@ gitk some-path/myfile.md
 
 In the gitk window that opens up, look to see who made the most recent changes to the file. Ping the author and ask them to address the conflicts and then push the updates out to the remote. Here's an example of the gitk window:
 
-{% include course_image.html size="large" border="true" filename="gitkexample" ext_print="png" ext_web="png" alt="Gitk example window" caption="Gitk example window. The commit history of the file is shown in the upper-left corner, along with the author for each commit. The main window shows the changes made for each commit (green is content added; red is content removed)." %}
+<figure><img class="docimage large border" src="{{site.media}}/gitkexample.png" alt="Gitk example window" /><figcaption>Gitk example window. The commit history of the file is shown in the upper-left corner, along with the author for each commit. The main window shows the changes made for each commit (green is content added; red is content removed).</figcaption></figure>
 
 While waiting for the author to fix the merge conflict, you can abort your attempted merge with this command:
 
@@ -141,7 +141,7 @@ This rolls back the merge. After the author fixes the merge conflict, push in yo
 
 You can also resolve the merge conflict yourself. Choose this method if you're implicated in the file's history and might be the one responsible for the conflicts. Open up the conflicted files (cmd + T in Atom) that have the conflict and look for the blue and purple highlighted blocks:
 
-{% include course_image.html border="true" filename="conflicting_commit_messages" ext_print="png" ext_web="png" alt="How Atom highlights conflicting commit messages" caption="How Atom highlights conflicting commit messages" %}
+<figure><img class="docimage border" src="{{site.media}}/conflicting_commit_messages.png" alt="How Atom highlights conflicting commit messages" /><figcaption>How Atom highlights conflicting commit messages</figcaption></figure>
 
 On the right, Atom notes the blue block that is "their changes" and the purple block that is "our changes." In this case, the text "The Pelicans play tonight" is from a commit that someone else made (it's the commit made via the GUI). It's a change we're pulling into our local version; hence, Atom flags it as "HEAD." The "HEAD" is the last commit on the branch that is currently checked out. In contrast, the purple "our changes" block is our local commit. It's the change we made in our commit.
 

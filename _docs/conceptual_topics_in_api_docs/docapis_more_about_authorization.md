@@ -24,7 +24,7 @@ First, let's define some key terms:
 
 An API might authenticate you but not authorize you to make a certain request.
 
-{% include course_image.html size="medium" border="true" filename="nonref_authentication" ext_print="png" ext_web="svg" alt="Authentication versus authorization" caption="Authentication and authorization" %}
+<figure><img class="docimage medium border" src="{{site.media}}/{% if site.kindle %}nonref_authentication.png{% else %}nonref_authentication.svg{% endif %}" alt="Authentication versus authorization" /><figcaption>Authentication and authorization</figcaption></figure>
 
 ## Consequences if an API lacks security
 
@@ -59,7 +59,7 @@ There are several methods for authorization. The following are various types of 
 
 Most APIs require you to sign up for an API key in order to use the API. The API key is a long string that you usually include either in the request URL or request header. The API key mainly functions as a way to identify the person making the API call (authenticating you to use the API). The API key might also be associated with a specific app that you register.
 
-{% include course_image.html size="large" filename="nonref-docs-preso_apikey" ext_print="png" ext_web="svg" alt="APK keys use a string in a header property to authorize requests" caption="APK keys use a string in a header property to authorize requests" %}
+<figure><img class="docimage large" src="{{site.media}}/{% if site.kindle %}nonref-docs-preso_apikey.png{% else %}nonref-docs-preso_apikey.svg{% endif %}" alt="APK keys use a string in a header property to authorize requests" /><figcaption>APK keys use a string in a header property to authorize requests</figcaption></figure>
 
 APIs might give you both a public and private key. The public key is usually included in the request, while the private key is treated more like a password and used only in server-to-server communication. For some API documentation sites, when you're logged into the site, your API key automatically gets populated into the sample code and API Explorer.
 
@@ -99,7 +99,7 @@ When the receiver (the API server) receives the request, it takes the same syste
 
 Here's a diagram depicting this workflow:
 
-{% include course_image.html size="medium" border="true" filename="restapi_hmac" ext_print="png" ext_web="svg" alt="HMAC workflow" caption="HMAC workflow" %}
+<figure><img class="docimage medium border" src="{{site.media}}/{% if site.kindle %}restapi_hmac.png{% else %}restapi_hmac.svg{% endif %}" alt="HMAC workflow" /><figcaption>HMAC workflow</figcaption></figure>
 
 The important point is that the secret key (critical to reconstructing the hash) is known only to the sender and receiver. The secret key is not included in the request. HMAC security is used when you want to ensure the request is both authentic and hasn't been tampered with.
 
@@ -107,7 +107,7 @@ The important point is that the secret key (critical to reconstructing the hash)
 
 One popular method for authenticating and authorizing users is OAuth 2.0. This approach relies on an authentication server to communicate with the API server to grant access. You often see OAuth 2.0 when you're using a site and are prompted to log in using a service like Twitter, Google, or Facebook.
 
-{% include course_image.html filename="oauthwindow" ext_web="png" ext_print="png" alt="OAuth login window" caption="OAuth login window" %}
+<figure><img class="docimage " src="{{site.media}}/oauthwindow.png" alt="OAuth login window" /><figcaption>OAuth login window</figcaption></figure>
 
 There are a few varieties of OAuth &mdash; namely, "one-legged OAuth" and "three-legged OAuth." One-legged OAuth is used when you don't have sensitive data to secure. This might be the case if you're just retrieving general, read-only information.
 
@@ -119,7 +119,7 @@ In contrast, three-legged OAuth is used when you need to protect sensitive data.
 
 Here's the basic workflow of OAuth 2.0:
 
-{% include course_image.html size="medium" border="true" filename="restapi_oauth" ext_print="png" ext_web="svg" alt="OAuth authentication" caption="OAuth authentication" %}
+<figure><img class="docimage medium border" src="{{site.media}}/{% if site.kindle %}restapi_oauth.png{% else %}restapi_oauth.svg{% endif %}" alt="OAuth authentication" /><figcaption>OAuth authentication</figcaption></figure>
 
 First, the consumer application sends over an application key and secret to a login page at the authentication server. If authenticated, the authentication server responds to the user with an access token.
 
@@ -154,25 +154,25 @@ The following are a few samples of authorization sections in API documentation.
 
 ### SendGrid
 
-{% include course_image.html url="https://sendgrid.com/docs/User_Guide/Settings/api_keys.html" filename="sendgrid_authorization" ext_print="png" ext_web="png" alt="SendGrid API keys" caption="SendGrid API keys" %}
+<figure><a target="_blank" class="noExtIcon" href="https://sendgrid.com/docs/User_Guide/Settings/api_keys.html"><img class="docimage" src="{{site.media}}/sendgrid_authorization.png" alt="SendGrid API keys" /></a><figcaption>SendGrid API keys</figcaption></figure>
 
 SendGrid offers a detailed explanation of API keys, starting with the basics by explaining, "What are API keys?" Contextually, the topic on API keys appears with other account management topics.
 
 ### Twitter
 
-{% include course_image.html url="https://developer.twitter.com/en/docs/basics/authentication/guides/authorizing-a-request" filename="twitter_authentication" ext_print="png" ext_web="png" alt="Twitter authorization" caption="Twitter authorization" %}
+<figure><a target="_blank" class="noExtIcon" href="https://developer.twitter.com/en/docs/basics/authentication/guides/authorizing-a-request"><img class="docimage" src="{{site.media}}/twitter_authentication.png" alt="Twitter authorization" /></a><figcaption>Twitter authorization</figcaption></figure>
 
 With Twitter, because the OAuth 2.0 authorization requirements are a bit more involved, a detailed example is warranted and provided.
 
 ### Amazon Web Services
 
-{% include course_image.html url="https://docs.aws.amazon.com/AWSECommerceService/latest/DG/HMACSignatures.html" filename="amazon_authentication" ext_print="png" ext_web="png" alt="Amazon authorization" caption="Amazon authorization" %}
+<figure><a target="_blank" class="noExtIcon" href="https://docs.aws.amazon.com/AWSECommerceService/latest/DG/HMACSignatures.html"><img class="docimage" src="{{site.media}}/amazon_authentication.png" alt="Amazon authorization" /></a><figcaption>Amazon authorization</figcaption></figure>
 
 The Amazon example uses HMAC. The process is complex enough that a full-fledged diagram is included to show the steps users need to perform.
 
 ### Dropbox
 
-{% include course_image.html url="https://www.dropbox.com/developers/reference/oauth-guide" filename="dropbox_authentication" ext_print="png" ext_web="png" alt="Dropbox authorization" caption="Dropbox authorization" %}
+<figure><a target="_blank" class="noExtIcon" href="https://www.dropbox.com/developers/reference/oauth-guide"><img class="docimage" src="{{site.media}}/dropbox_authentication.png" alt="Dropbox authorization" /></a><figcaption>Dropbox authorization</figcaption></figure>
 
 Like Twitter, Dropbox also uses OAuth 2.0. Their documentation includes not just one but two diagrams and an extended explanation of the process.
 

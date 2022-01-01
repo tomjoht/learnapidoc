@@ -47,7 +47,7 @@ Although Eventbrite explains how to pass the authorization into requests, it's e
 
 Eventbrite's documentation uses [Apiary](https://apiary.io/), which provides a try-it-out feature (or [API explorer](pubapis_design_patterns.html#interactive_api_explorers)) in the right pane. This pane opens up when you click **Retrieve an Event**:
 
-{% include course_image.html url="https://www.eventbrite.com/platform/api#/reference/event/retrieve-an-event" size="large" filename="eventsendpointeventbrite" ext_print="png" ext_web="png" alt="Retrieving an Eventbrite Event" caption="Retrieving an Eventbrite Event" %}
+<figure><a href="https://www.eventbrite.com/platform/api#/reference/event/retrieve-an-event" class="noCrossRef"><img src="{{site.media}}/eventsendpointeventbrite.png" alt="Retrieving an Eventbrite Event" class="large" /></a><figcaption>Retrieving an Eventbrite Event</figcaption></figure>
 
 In the Console pane on the right, click the **Try** button to enable the ability to call the resource (if the Call Resource button isn't already shown).
 
@@ -56,7 +56,7 @@ Before you can call the resource successfully, do the following:
 * Click the **URI Parameters** tab and customize the value for the event ID to `49216045517`. This ID corresponds to a workshop I recently gave called Documenting REST APIs, which you can view [here](https://www.eventbrite.com/e/documenting-rest-apis-a-jumpstart-workshop-for-technical-writers-tickets-49216045517#). The event ID appears in the URL.
 * Click the **Headers** tab and add your own OAuth token in place of `PERSONAL_OAUTH_TOKEN`.
 
-{% include course_image.html filename="eventbritepersonaloauthtoken" ext_print="png" ext_web="png" alt="Customizing the Parameters and Authorization information the Eventbrite Console" caption="Customizing the Parameters and Authorization information the Eventbrite Console" %}
+<figure><img src="{{site.media}}/eventbritepersonaloauthtoken.png" alt="Customizing the Parameters and Authorization information the Eventbrite Console" class="large" /><figcaption>Customizing the Parameters and Authorization information the Eventbrite Console</figcaption></figure>
 
 Click the **Call Resource** button and then scroll down to the Response Body section to observe the response. It should contain the body text for the Eventbrite page. (If there's an error with the OAuth token or event ID, you'll see an error response instead.)
 
@@ -66,7 +66,7 @@ We retrieved the response. Now for fun let's print the response to the page (as 
 
 In the Console pane, below the parameters section, click **Show Code Example**:
 
-{% include course_image.html size="medium" filename="eventbriteshowcode" ext_print="png" ext_web="png" alt="Show code example" caption="Show code example" %}
+<figure><img src="{{site.media}}/eventbriteshowcode.png" alt="Show code example" class="medium" /><figcaption>Show code example</figcaption></figure>
 
 In the language drop-down that appears, select the **cURL** option and copy the value. It should look something like this:
 
@@ -81,13 +81,13 @@ Open up [Postman](docapis_postman.html). In Postman, go to **File > Import** and
 
 {% include random_ad2.html %}
 
-{% include course_image.html filename="postmanpasterawtext" ext_print="png" ext_web="png" alt="Pasting curl into Postman" caption="Pasting curl into Postman" %}
+<figure><img src="{{site.media}}/postmanpasterawtext.png" alt="Pasting curl into Postman" class="medium" /><figcaption>Pasting curl into Postman</figcaption></figure>
 
 Then click **Import**. The information will populate in a new Postman tab. In Postman, if you expand the Headers tab, you will see the OAuth information. The GET box includes the Eventbrite retrieve endpoint with the event ID added as a [path parameter](docapis_doc_parameters.html#path_parameters).
 
 In Postman, below the Send button, click **Code**. In the Generate Code Snippets dialog box, select **JavaScript > Jquery AJAX**. Copy the value shown:
 
-{% include course_image.html size="medium"  filename="jquery_ajax_postman" ext_print="png" ext_web="png" alt="jQuery AJAX code in Postman" caption="jQuery AJAX code in Postman" %}
+<figure><img src="{{site.media}}/jquery_ajax_postman.png" alt="jQuery AJAX code in Postman" class="medium" /><figcaption></figcaption>jQuery AJAX code in Postman</figure>
 
 In the value, remove the `cache-control` and `Postman-Token` key-value pairs, so that your code sample looks like this:
 
@@ -152,7 +152,7 @@ To integrate the jQuery AJAX Postman code into your website and print the `title
 
 Here's the <a href="https://idratherbewriting.com/learnapidoc/assets/files/eventbrite-example.html">result</a>:
 
-{% include course_image.html url="https://idratherbewriting.com/learnapidoc/assets/files/eventbrite-example.html" filename="eventbriteresult" ext_print="png" ext_web="png" alt="Eventbrite result printed to the page" caption="Eventbrite result printed to the page" %}
+<figure><a href="https://idratherbewriting.com/learnapidoc/assets/files/eventbrite-example.html"><img src="{{site.media}}/eventbriteresult.png" alt="Eventbrite result printed to the page" /></a><figcaption>Eventbrite result printed to the page</figcaption></figure>
 
 ## Code explanation
 

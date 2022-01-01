@@ -683,7 +683,7 @@ The number of tech writers in the area fluctuates quite a bit. Here's the data f
 
 Overall, San Jose-Sunnyvale-Santa Clara is a hot area for tech writer jobs. The employment levels have been relatively flat for the past decade but jumped up 34% this past year. I can certainly see the effects of the job growth in this area. I get emails from recruiters pinging me several times a week, trying to fill positions. At my own company, I've seen how difficult it is to find qualified candidates for developer doc positions. At times, it seems like the candidates just aren't here.
 
-{% include course_image.html border="true" filename="californiasanfrancisco" ext_print="jpg" ext_web="jpg" alt="Should you move to California (or stay here if you're already in California)?" size="large" caption="Should you move to California (or stay here if you're already in California)?" %}
+<figure><img class="docimage large border" src="{{site.media}}/californiasanfrancisco.jpg" alt="Should you move to California (or stay here if you're already in California)?" /><figcaption>Should you move to California (or stay here if you're already in California)?</figcaption></figure>
 
 However, California has some drawbacks, mainly with housing and traffic. To live in Silicon Valley, you likely need the dual income of two working professionals to survive financially. Alternatively, you probably need to be single and willing to share a house with roommates. Or just be willing to live in an older, smaller house in an ugly part of town. Traffic along the 101 can also crawl at a snail's pace during rush hour.
 

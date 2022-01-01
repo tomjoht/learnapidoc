@@ -21,7 +21,7 @@ Following the [product overview section](docapis_doc_overview.html), you usually
 
 The Getting Started tutorial is somewhat like the typical Hello World tutorial in developer documentation, but with an API. Your goal is to hold a user's hand from start to finish in producing the simplest possible output with the system. For Hello World tutorials, the simplest output might just be a message that says "Hello World." For an API, it might be a successful response from the most basic request.
 
-{% include course_image.html size="medium" filename="timetohelloworld" ext_print="png" ext_web="svg" alt="Getting started tutorials are like Hello World tutorials." caption="Think of getting started tutorials as a kind of Hello World tutorial with the API. How long would it take for a developer to get the simplest possible response using your API?" %}
+<figure><img class="docimage medium" src="{{site.media}}/{% if site.kindle %}timetohelloworld.png{% else %}timetohelloworld.svg{% endif %}" alt="Getting started tutorials are like Hello World tutorials." /><figcaption>Think of getting started tutorials as a kind of Hello World tutorial with the API. How long would it take for a developer to get the simplest possible response using your API?</figcaption></figure>
 
 Both hello-world tutorials and getting-started tutorials share the same goal: to show a user how to use a framework, API, or some other system to get the simplest and easiest result, so they get a end-to-end sense of how it works.
 
@@ -36,7 +36,7 @@ The Getting Started tutorial might involve the following:
 * Making a request
 * Evaluating the response
 
-{% include course_image.html size="medium" border="true" filename="nonref_gettingstarted" ext_print="png" ext_web="svg" alt="Getting started" caption="The Getting started tutorial usually walks users through the process from beginning to end but in a compressed, simple way" %}
+<figure><img class="docimage medium border" src="{{site.media}}/{% if site.kindle %}nonref_gettingstarted.png{% else %}nonref_gettingstarted.svg{% endif %}" alt="Getting started" /><figcaption>The Getting started tutorial usually walks users through the process from beginning to end but in a compressed, simple way</figcaption></figure>
 
 Put a link to your Getting Started tutorial on your documentation homepage. Make it as easy as possible for developers to use the API to get some result. This might mean using pre-provisioned accounts or setup configurations.
 
@@ -82,7 +82,7 @@ data-postman-collection-url="entityId=3578416-16cf5af1-26e2-4c89-bb99-c6be4e510d
 
 When prompted, click **Fork Collection**. You'll then be prompted to sign into Postman first (create an account if you don't have one). Then you'll see the Postman web interface like this:
 
-{% include course_image.html size="large" filename="postmanlaunchhandler3" ext_print="png" url="https://www.postman.com/tomjoht/workspace/openweathermap-demo/request/3578416-84eb6497-c2f8-4d83-8922-a0330dd50694?ctx=code" ext_web="png" alt="Postman web interface" caption="Postman web interface" %}
+<figure><a target="_blank" class="noExtIcon" href="https://www.postman.com/tomjoht/workspace/openweathermap-demo/request/3578416-84eb6497-c2f8-4d83-8922-a0330dd50694?ctx=code"><img class="docimage large" src="{{site.media}}/postmanlaunchhandler3.png" alt="Postman web interface" /></a><figcaption>Postman web interface</figcaption></figure>
 
 Expand the collection to view the endpoints, and click **Send**. You'll see the response generated.
 
@@ -90,7 +90,7 @@ Now change the `zip` code parameter to your own zip code and click **Send** agai
 
 You can see the many [demos of Run in Postman here](https://www.getpostman.com/integrations/run-button). Many of these demos are listed in [Postman's API Network](https://www.getpostman.com/api-network/).
 
-{% include course_image.html filename="postmanapinetwork" ext_print="png" ext_web="png" url="https://www.getpostman.com/api-network/" alt="Postman API network" caption="Postman API network" %}
+<figure><a target="_blank" class="noExtIcon" href="https://www.getpostman.com/api-network/"><img class="docimage" src="{{site.media}}/postmanapinetwork.png" alt="Postman API network" /></a><figcaption>Postman API network</figcaption></figure>
 
 For details on how to share your Postman collections like this, see [Creating Run in Postman buttons](https://learning.postman.com/docs/publishing-your-api/run-in-postman/creating-run-button/) in the Postman documentation. To try out Run in Postman, you can either [import an OpenAPI spec into Postman](https://www.getpostman.com/docs/postman/collections/data_formats#importing-postman-data) or enter your API information manually.
 
@@ -112,43 +112,43 @@ Here are a few sample Getting Started topics in APIs. If you compare the various
 
 ### SendGrid
 
-{% include course_image.html url="https://docs.sendgrid.com/for-developers/sending-email/api-getting-started" filename="sendgrid_getting_started_tutorial" ext_print="png" ext_web="png" alt="SendGrid getting started tutorial" caption="SendGrid getting started tutorial" %}
+<figure><a target="_blank" class="noExtIcon" href="https://docs.sendgrid.com/for-developers/sending-email/api-getting-started"><img class="docimage" src="{{site.media}}/sendgrid_getting_started_tutorial.png" alt="SendGrid getting started tutorial" /></a><figcaption>SendGrid getting started tutorial</figcaption></figure>
 
 This getting started tutorial from SendGrid is one of my favorites and one that I've had workshop participants try to complete in about 10 minutes. Interestingly, although it seems rather simple, only few participants could successfully send the email.
 
 ### Paypal
 
-{% include course_image.html url="https://developer.paypal.com/docs/api/overview/" filename="paypalgetstarted" ext_print="png" ext_web="png" alt="Paypal getting started tutorial" caption="Paypal getting started tutorial" %}
+<figure><a target="_blank" class="noExtIcon" href="https://developer.paypal.com/docs/api/overview/"><img class="docimage" src="{{site.media}}/paypalgetstarted.png" alt="Paypal getting started tutorial" /></a><figcaption>Paypal getting started tutorial</figcaption></figure>
 
 Paypal's getting started tutorial contains quite a bit of detail, starting with authorization, requests, and other details before making the first call. Although not so brief, this level of details helps orient users with the information they need. The format is clean and easy to follow.
 
 ### Twitter
 
-{% include course_image.html url="https://developer.twitter.com/en/docs/basics/getting-started" filename="twittergettingstarted" ext_web="png" ext_print="png" alt="Paypal getting started tutorial" caption="Twitter getting started" %}
+<figure><a target="_blank" class="noExtIcon" href="https://developer.twitter.com/en/docs/basics/getting-started"><img class="docimage" src="{{site.media}}/twittergettingstarted.png" alt="Paypal getting started tutorial" /></a><figcaption>Twitter getting started</figcaption></figure>
 
 Twitter's getting started page has several getting started sections for different development goals. The text is concise and easy to follow. The tutorial links frequently to other documentation for more details. In the need for brevity, you might need to follow this same strategy &mdash; being brief and linking out to other pages that have more detail.
 
 ### Parse Server
 
-{% include course_image.html url="http://docs.parseplatform.org/parse-server/guide/#getting-started" filename="parseservergettingstarted" ext_web="png" ext_print="png" alt="Parse Server getting started" caption="Parse Server getting started" %}
+<figure><a target="_blank" class="noExtIcon" href="http://docs.parseplatform.org/parse-server/guide/#getting-started"><img class="docimage" src="{{site.media}}/parseservergettingstarted.png" alt="Parse Server getting started" /></a><figcaption>Parse Server getting started</figcaption></figure>
 
 The Parse Server tutorial provides a fair amount of detail and handholding through the various steps. For the more detailed steps on connecting your app and running the server elsewhere, the tutorial links out to more information.
 
 ### Adsense
 
-{% include course_image.html url="https://developers.google.com/adsense/management/getting_started" filename="adsensegettingstarted" ext_web="png" ext_print="png" alt="Parse Server getting started" caption="Adsense getting started" %}
+<figure><a target="_blank" class="noExtIcon" href="https://developers.google.com/adsense/management/getting_started"><img class="docimage" src="{{site.media}}/adsensegettingstarted.png" alt="Parse Server getting started" /></a><figcaption>Adsense getting started</figcaption></figure>
 
 The Adsense tutorial separates out some foundational prerequisites for getting started on the platform. After you get set up, it then provides a "quick start tutorial." The tutorial walks users through a simple scenario from end to end, helping them get a sense of the product and its capabilities.
 
 ### Aeris
 
-{% include course_image.html url="http://www.aerisweather.com/support/docs/api/getting-started/" filename="aerisgettingstarted" ext_web="png" ext_print="png" alt="Aeris getting started tutorial" caption="Aeris getting started tutorial" %}
+<figure><a target="_blank" class="noExtIcon" href="http://www.aerisweather.com/support/docs/api/getting-started/"><img class="docimage" src="{{site.media}}/aerisgettingstarted.png" alt="Aeris getting started tutorial" /></a><figcaption>Aeris getting started tutorial</figcaption></figure>
 
 The Aeris weather getting started provides information for setting up an application and then making a request in one of several popular languages. While showing code in specific languages is undoubtedly more helpful for programmers coding in those languages, the code samples might be irrelevant to other users (e.g., Java devs might find the Python code irrelevant and vice versa). Focusing in a specific language is often a tradeoff.
 
 ### Watson and IBM Cloud
 
-{% include course_image.html url="https://console.bluemix.net/docs/services/watson/index.html#about" filename="watsongettingstarted" ext_print="png" ext_web="png" alt="Watson and IBM Cloud getting started tutorial" caption="Watson and IBM Cloud getting started tutorial" %}
+<figure><a target="_blank" class="noExtIcon" href="https://console.bluemix.net/docs/services/watson/index.html#about"><img class="docimage" src="{{site.media}}/watsongettingstarted.png" alt="Watson and IBM Cloud getting started tutorial" /></a><figcaption>Watson and IBM Cloud getting started tutorial</figcaption></figure>
 
 The Watson and IBM Cloud getting started tutorial lists three steps. It's not an end-to-end getting started tutorial, though. It just gets the user started in selecting a service for your project. At the end, you start to code using the Watson Dashboard. Ideally, a getting started tutorial should help a user see some tangible output, but whether that's possible or not depends on your API.
 

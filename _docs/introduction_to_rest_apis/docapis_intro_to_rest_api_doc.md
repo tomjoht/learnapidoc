@@ -51,7 +51,7 @@ Most companies make their information and services available through APIs to hel
 
 As you browse APIs, you might be wondering which type of API is most common? Which types of APIs should you focus on? Among the web service APIs, [*The State of API 2019* report](https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf) from [Smartbear](https://smartbear.com/) surveyed more than 3,000 technology professionals and found that REST-OAS / Swagger was the most common web service used:
 
-{% include course_image.html url="https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf" size="medium" filename="webserviceapisurvey" ext_print="png" ext_web="png" alt="Popularity of web service APIs" caption="Popularity of web service APIs (<i>The State of API 2019</i>, p.20)" %}
+<figure><a target="_blank" class="noExtIcon" href="https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf"><img class="docimage medium" src="{{site.media}}/webserviceapisurvey.png" alt="Popularity of web service APIs" /></a><figcaption>Popularity of web service APIs (<i>The State of API 2019</i>, p.20)</figcaption></figure>
 
 OAS stands for OpenAPI Specification, which is something I explore in-depth in [Introduction to the OpenAPI specification](pubapis_openapi_intro.html). The report even mentions some APIs not covered above &mdash; [JMS APIs](https://docs.oracle.com/javaee/6/tutorial/doc/bncdr.html), which are used with Java to send messages.
 
@@ -71,7 +71,7 @@ According to [*The State of API 2019*](https://static1.smartbear.co/smartbearbra
 
 The accompanying graph is as follows:
 
-{% include course_image.html url="https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf" size="medium" border="true" filename="timedevelopingapis" ext_print="png" ext_web="png" alt="Most companies are new to API development" caption="Most companies are new to API development" %}
+<figure><a target="_blank" class="noExtIcon" href="https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf"><img class="docimage medium border" src="{{site.media}}/timedevelopingapis.png" alt="Most companies are new to API development" /></a><figcaption>Most companies are new to API development</figcaption></figure>
 
 It's astonishing that API development is so nascent in companies &mdash; "59% of organizations began developing APIs in the last five years." If you look at Smartbear's [*The State of API 2016* report](https://static1.smartbear.co/smartbear/media/ebooks/state-of-api-report-2016.pdf), which surveyed 2,300 professionals, you find similar growth rates:
 
@@ -83,7 +83,7 @@ API development is clearly an area that is somewhat new for many companies, and 
 
 [Programmableweb.com](https://programmableweb.com) charts and tracks the number of web APIs added to their directory. Programmableweb says, "Since January of 2014, an average of more than 2,000 APIs have been added per year" ([Research Shows Interest in Providing APIs Still High](https://www.programmableweb.com/news/research-shows-interest-providing-apis-still-high/research/2018/02/23)).
 
-{% include course_image.html url="https://www.programmableweb.com/news/research-shows-interest-providing-apis-still-high/research/2018/02/23" filename="growthinrestapis" ext_print="png" ext_web="png" alt="The phenomenal growth in web APIs" caption="The phenomenal growth in web APIs" %}
+<figure><a target="_blank" class="noExtIcon" href="https://www.programmableweb.com/news/research-shows-interest-providing-apis-still-high/research/2018/02/23"><img class="docimage" src="{{site.media}}/growthinrestapis.png" alt="The phenomenal growth in web APIs" /></a><figcaption>The phenomenal growth in web APIs</figcaption></figure>
 
 eBay's API in 2005 was one of the first web APIs &mdash; the API allowed sellers to manage their products in their eBay stores. Since then, there has been tremendous growth in web APIs. Given the importance of clear and accurate API documentation, this presents a perfect market opportunity for technical writers. Technical writers can apply their communication skills to fill a gap in a market that is rapidly expanding.
 
@@ -95,7 +95,7 @@ For example, rather than building your own search to power your website, you mig
 
 Practically every service provides its information and tools through an API that you use. Jekyll, a popular static site generator, doesn't have all the components you need to run a site. There's no newsletter integration, analytics, search, commenting systems, forms, chat e-commerce, surveys, or other systems. Instead, you leverage the services you need into your static Jekyll site. (CloudCannon has put together a [long list of services](http://cloudcannon.com/tips/2014/12/12/the-ultimate-list-of-services-for-static-websites.html) that you can integrate into your static site.)
 
-{% include course_image.html url="http://jekyll.tips/services/" filename="servicesforstaticsites" size="medium" ext_print="png" ext_web="png" alt="Many sites pull in all the services they need through external APIs" caption="Many sites pull in all the services they need through external APIs" %}
+<figure><a target="_blank" class="noExtIcon" href="http://jekyll.tips/services/"><img class="docimage medium" src="{{site.media}}/servicesforstaticsites.png" alt="Many sites pull in all the services they need through external APIs" /></a><figcaption>Many sites pull in all the services they need through external APIs</figcaption></figure>
 
 This cafeteria-style model is replacing the massive, swiss-army-site model that tries to do anything and everything. It's better to rely on specialized companies to create powerful, robust tools (such as search) and leverage their service rather than trying to build all of these services yourself.
 
@@ -107,19 +107,19 @@ We've established that APIs are on the rise, following the model of the web, and
 
 When asked "What are the top three most important characteristics you need in an API?", [*The State of API 2019* report](https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf) found that "Accurate and detailed documentation" ranks third in importance:
 
-{% include course_image.html url="https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf" size="medium" filename="mostimportantelementsapi2" ext_print="png" ext_web="png" alt="Top characteristics needed in an API (The State of API 2019, p.25)" caption="Top characteristics needed in an API (The State of API 2019, p.25)" %}
+<figure><a target="_blank" class="noExtIcon" href="https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf"><img class="docimage medium" src="{{site.media}}/mostimportantelementsapi2.png" alt="Top characteristics needed in an API (The State of API 2019, p.25)" /></a><figcaption>Top characteristics needed in an API (The State of API 2019, p.25)</figcaption></figure>
 
 This rank is three higher than noted in the [*The State of API 2016* report](https://static1.smartbear.co/smartbear/media/ebooks/state-of-api-report-2016.pdf), which put "Accurate and detailed documentation" sixth in importance:
 
-{% include course_image.html url="https://static1.smartbear.co/smartbear/media/ebooks/state-of-api-report-2016.pdf" filename="mostimportant2016" ext_print="png" ext_web="png" alt="Documentation ranks sixth in importance" caption="In The State of API 2016 report, documentation ranked sixth in importance, p.19" %}
+<figure><a target="_blank" class="noExtIcon" href="https://static1.smartbear.co/smartbear/media/ebooks/state-of-api-report-2016.pdf"><img class="docimage" src="{{site.media}}/mostimportant2016.png" alt="Documentation ranks sixth in importance" /></a><figcaption>In The State of API 2016 report, documentation ranked sixth in importance, p.19</figcaption></figure>
 
 An even earlier survey conducted by Programmableweb in 2013 (which included 250 respondents) found that "Complete and accurate documentation" actually ranked as the most important factor in an API (see [API Consumers Want Reliability, Documentation and Community](http://www.programmableweb.com/news/api-consumers-want-reliability-documentation-and-community/2013/01/07)).
 
-{% include course_image.html url="http://www.programmableweb.com/news/api-consumers-want-reliability-documentation-and-community/2013/01/07" size="medium" filename="progwebsurvey2" ext_print="png" ext_web="png" alt="Programmableweb survey" caption="Programmableweb survey showing that complete and accurate documentation is the most important factor for developers" %}
+<figure><a target="_blank" class="noExtIcon" href="http://www.programmableweb.com/news/api-consumers-want-reliability-documentation-and-community/2013/01/07"><img class="docimage medium" src="{{site.media}}/progwebsurvey2.png" alt="Programmableweb survey" /></a><figcaption>Programmableweb survey showing that complete and accurate documentation is the most important factor for developers</figcaption></figure>
 
 John Musser, one of the founders of Programmableweb.com, emphasizes the importance of documentation in his presentations. In [10 reasons why developers hate your API](https://www.infoq.com/presentations/API-design-mistakes), he says the number one reason developers hate your API is because "Your documentation sucks."
 
-{% include course_image.html url="http://www.slideshare.net/jmusser/ten-reasons-developershateyourapi" filename="yourdocsucks" size="medium" ext_print="png" ext_web="png" alt="APIs often fail because the doc fails the developers" caption="APIs often fail because the doc fails the developers" %}
+<figure><a target="_blank" class="noExtIcon" href="http://www.slideshare.net/jmusser/ten-reasons-developershateyourapi"><img class="docimage medium" src="{{site.media}}/yourdocsucks.png" alt="APIs often fail because the doc fails the developers" /></a><figcaption>APIs often fail because the doc fails the developers</figcaption></figure>
 
 {% include random_ad2.html %}
 
@@ -127,7 +127,7 @@ Despite what might seem like a clear mandate for excellent API docs,  technical 
 
 > Automation is playing a major role in how organizations document their APIs. 43% of respondents said they leverage an API standard, like the OpenAPI Specification, to generate API docs. One quarter of respondents are using a “code-first” approach, where developers are responsible for adding annotations to the API code to generate docs. Only 15% of participants are investing in technical writers to help with documenting APIs.
 
-{% include course_image.html url="https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf" size="medium" filename="howteamsarehandlingdocs" ext_print="png" ext_web="png" alt="How teams are handling docs, The State of API 2019, p.42" caption="How teams are handling docs, The State of API 2019, p.42" %}
+<figure><a target="_blank" class="noExtIcon" href="https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf"><img class="docimage medium" src="{{site.media}}/howteamsarehandlingdocs.png" alt="How teams are handling docs, The State of API 2019, p.42" /></a><figcaption>How teams are handling docs, The State of API 2019, p.42</figcaption></figure>
 
 Of course, the finding that "Only 15% of participants are investing in technical writers..." will upset technical writers. Fortunately, this question is poorly worded and might account for the disheartening answers. The wording suggests that employing technical writers to create docs is an *alternative* to generating docs through the OpenAPI specification (OAS). In reality, technical writers should be collaborating with engineers to generate reference documentation through OAS. Reference docs account for only part of the needed documentation (maybe half, if that). In this course, I heavily recommend that technical writers generate reference documentation through the OAS. This is covered in the [OpenAPI spec and Swagger section](pubapis_rest_specification_formats.html).
 
@@ -156,7 +156,7 @@ Each REST API functions a bit differently. There isn't a single way of doing thi
 
 Many employers are looking to hire technical writers who can create not only complete and accurate documentation but who can also create stylish outputs for their documentation. Here's a job posting from a recruiter looking for someone who can emulate Dropbox's documentation:
 
-{% include course_image.html  size="medium" filename="indeed_com" ext_print="png" ext_web="png" alt="Job description asking for someone with skills to create doc site like Dropbox" caption="Job description asking for someone with skills to create doc site like Dropbox" %}
+<figure><img class="docimage medium" src="{{site.media}}/indeed_com.png" alt="Job description asking for someone with skills to create doc site like Dropbox" /><figcaption>Job description asking for someone with skills to create doc site like Dropbox</figcaption></figure>
 
 As you can see, the client wants to find "someone who'll emulate Dropbox's documentation."
 
@@ -164,7 +164,7 @@ Why does the look and feel of the documentation matter so much? With API documen
 
 Here's what the Dropbox API doc site looks like:
 
-{% include course_image.html url="https://www.dropbox.com/developers" filename="dropbox_clean" ext_print="png" ext_web="png" alt="Dropbox API's developer site has a simple but clean UI" caption="Dropbox API's developer site has a simple but clean UI" %}
+<figure><a target="_blank" class="noExtIcon" href="https://www.dropbox.com/developers"><img class="docimage" src="{{site.media}}/dropbox_clean.png" alt="Dropbox API's developer site has a simple but clean UI" /></a><figcaption>Dropbox API's developer site has a simple but clean UI</figcaption></figure>
 
 It's not a sophisticated design. But its simplicity and brevity are what make it appealing. When you consider that the API documentation is more or less the product interface, building a sharp, modern-looking doc site is paramount for credibility and traction in the market. (I dive into the [job market for API documentation later](jobapis_overview.html).) Basically, if you have strong technical skills and experience writing for developers, you can have nearly any job you want in Silicon Valley and command a base salary of $100-$150k or more.
 

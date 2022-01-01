@@ -42,7 +42,7 @@ In the SwaggerHub tutorial, I showed how to [auto-generate client SDKs](pubapis_
 
 As an API technical writer, documenting SDKs and sample apps presents a tough challenge because SDKs require you to be familiar with one or more programming languages. I explore the question of [how much code you need to know](jobapis_learning_code.html) in the [Jobs section](jobapis.html), so I won't get into too much detail here. Usually, engineers don't expect you to know multiple programming languages in depth, but some familiarity with them will be required in order to both write and review the documentation. When deciding whether to call a block of code a function, class, method, or another name, you need to have a basic understanding of the terms used in that language.
 
-{% include course_image.html size="medium" border="true" filename="nonref_sdksampleapp" ext_print="png" ext_web="svg" alt="SDKs and sample apps" caption="SDKs and sample apps" %}
+<figure><img class="docimage medium border" src="{{site.media}}/{% if site.kindle %}nonref_sdksampleapp.png{% else %}nonref_sdksampleapp.svg{% endif %}" alt="SDKs and sample apps" /><figcaption>SDKs and sample apps</figcaption></figure>
 
 If you're unfamiliar with the language, you can just take what engineers write, clean it up a bit, try to walk through the steps to get any sample apps working and see what feedback you get from users. Usually, if you can get a sample app installed and working, and make sure that the basic documentation for running the app works, as well as what the app does, that might be sufficient. But of course, making any significant contributions to SDK documentation will require you to be familiar with that programming language.
 
@@ -62,7 +62,7 @@ The following examples show documentation for some sample SDKs and sample apps.
 
 ### OpenWeatherMap API
 
-{% include course_image.html url="https://openweathermap.org/examples" filename="codesamples_openweathermap" ext_print="png" ext_web="png" alt="Code samples for OpenWeatherMap API" caption="Code samples for OpenWeatherMap API" %}
+<figure><a target="_blank" class="noExtIcon" href="https://openweathermap.org/examples"><img class="docimage" src="{{site.media}}/codesamples_openweathermap.png" alt="Code samples for OpenWeatherMap API" /></a><figcaption>Code samples for OpenWeatherMap API</figcaption></figure>
 
 The example integrations for the OpenWeatherMap API aren't just short code snippets that show how to call an endpoint. Instead, they are full-fledged, sophisticated integrations across a variety of platforms. As such, many of the code samples are stored in GitHub. Each scenario has a detailed explanation.
 
@@ -70,15 +70,15 @@ If you can put your sample apps and SDKs on GitHub, it's usually a good idea to 
 
 ### Paypal REST SDK
 
-{% include course_image.html url="https://developer.paypal.com/docs/api/quickstart/" filename="sdk_paypal" ext_print="png" ext_web="png" alt="Paypal REST SDKs" caption="Paypal REST SDKs" %}
+<figure><a target="_blank" class="noExtIcon" href="https://developer.paypal.com/docs/api/quickstart/"><img class="docimage" src="{{site.media}}/sdk_paypal.png" alt="Paypal REST SDKs" /></a><figcaption>Paypal REST SDKs</figcaption></figure>
 
 The SDKs in the [Paypal's Additional information](https://developer.paypal.com/docs/api/quickstart/#additional-information) section include Node JS, PHP, Python, Ruby, Java, and .NET SDKs. Each implementation has its own GitHub site, with its own wiki, sample code, source docs, and more. If you browse some of these GitHub pages (such as the [site for PHP](https://paypal.github.io/PayPal-PHP-SDK/)), you can see the whole collection of language-specific files for this SDK. These sites show how SDKs include a variety of file types.
 
-{% include course_image.html url="https://paypal.github.io/PayPal-PHP-SDK/" filename="sdk_paypal_github" ext_print="png" ext_web="png" alt="Paypal PHP SDK" caption="Paypal PHP SDK" %}
+<figure><a target="_blank" class="noExtIcon" href="https://paypal.github.io/PayPal-PHP-SDK/"><img class="docimage" src="{{site.media}}/sdk_paypal_github.png" alt="Paypal PHP SDK" /></a><figcaption>Paypal PHP SDK</figcaption></figure>
 
 ### Heroku SDK
 
-{% include course_image.html url="https://devcenter.heroku.com/articles/pubnub" filename="sdk_heroku" ext_print="png" ext_web="png" alt="Heroku SDK" caption="Heroku SDK" %}
+<figure><a target="_blank" class="noExtIcon" href="https://devcenter.heroku.com/articles/pubnub"><img class="docimage" src="{{site.media}}/sdk_heroku.png" alt="Heroku SDK" /></a><figcaption>Heroku SDK</figcaption></figure>
 
 The Heroku SDK is actually operated by PubNub and includes a Ruby, Java, Node JS, Python, and PHP SDK. If you look at, for example, the [Python SDK documentation](https://devcenter.heroku.com/articles/pubnub#python-sdk-documentation), you see links to Getting Started, Tutorials, and API reference.
 
@@ -90,7 +90,7 @@ Without more familiarity with the language of the SDK, technical writers act mor
 
 ### Amazon SDK
 
-{% include course_image.html url="https://aws.amazon.com/tools/#sdk" filename="sdk_amazon_aws" ext_print="png" ext_web="png" alt="Amazon AWS SDKs" caption="Amazon AWS SDKs" %}
+<figure><a target="_blank" class="noExtIcon" href="https://aws.amazon.com/tools/#sdk"><img class="docimage" src="{{site.media}}/sdk_amazon_aws.png" alt="Amazon AWS SDKs" /></a><figcaption>Amazon AWS SDKs</figcaption></figure>
 
 One notable characteristic of the AWS docs is their consistency from doc set to doc set. The consistency leads to predictability and hence usability. However, in the SDK docs, you can see that different document generators are used to generate the docs for the various libraries. If you look at the API references for each of these SDK libraries, you'll see a C++ document generator for [C++ SDK docs](http://sdk.amazonaws.com/cpp/api/LATEST/index.html), a Ruby document generator for [Ruby SDK docs](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/index.html), a PHP document generator for [PHP SDK](https://docs.aws.amazon.com/aws-sdk-php/v3/api/), a .NET document generator for [.NET SDK docs](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/Index.html), a Java document generator for [Java SDK docs](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/index.html) and so on.
 
@@ -100,7 +100,7 @@ Even so, there is probably quite a bit of variability from one library to the ne
 
 ### Google Cloud SDK
 
-{% include course_image.html url="https://cloud.google.com/sdk/docs/" filename="googlecloudsdk" ext_print="png" ext_web="png" alt="Google Cloud SDK documentation" caption="Google Cloud SDK documentation" %}
+<figure><a target="_blank" class="noExtIcon" href="https://cloud.google.com/sdk/docs/"><img class="docimage" src="{{site.media}}/googlecloudsdk.png" alt="Google Cloud SDK documentation" /></a><figcaption>Google Cloud SDK documentation</figcaption></figure>
 
 The Google Cloud SDK provides quickstart guides for Linux, Debian, Ubuntu, and other operating systems. The guides explain how to install, set up, and manage the SDK commands. An API reference for the commands is also included.
 

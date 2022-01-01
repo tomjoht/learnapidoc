@@ -19,17 +19,17 @@ Quick reference guides serve a different function than [getting started tutorial
 
 Whether for end-user documentation or developer documentation, the quick reference guide provides a 1-2-page guide that provides a brief summary of the core tasks and features in the system.
 
-{% include course_image.html size="large" border="true" filename="nonref_quickreference" ext_print="png" ext_web="svg" alt="Quick reference" caption="Quick reference guides compress the key information into a brief format for easy consumption" %}
+<figure><img class="docimage large border" src="{{site.media}}/{% if site.kindle %}nonref_quickreference.png{% else %}nonref_quickreference.svg{% endif %}" alt="Quick reference" /><figcaption>Quick reference guides compress the key information into a brief format for easy consumption</figcaption></figure>
 
 The quick reference guide should provide the user with just enough information to get the gist of what the system is about, including the key endpoints and tasks. Often with APIs, the endpoints have relationships with each other that you can depict visually. Here's an API diagram I created at a previous company:
 
-{% include course_image.html size="medium" url="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/sample_api_diagram.pdf" filename="sample_api_diagram.pdf" ext_print="png" ext_web="png" alt="Sample quick reference guide format" caption="A quick reference guide format" %}
+<figure><a target="_blank" class="noExtIcon" href="{{site.media}}/sample_api_diagram.pdf"><img class="docimage medium" src="{{site.media}}/sample_api_diagram.pdf.png" alt="Sample quick reference guide format" /></a><figcaption>A quick reference guide format</figcaption></figure>
 
 The text is Latin filler for privacy reasons, so the logic may not be entirely apparent. But with this API, the endpoints could be organized into different groups. Some of the groups had multiple levels within the endpoint, and multiple include options for each endpoint. I created this diagram in Adobe Illustrator and distributed it as a PDF. Developers found it useful because it tried to make sense of the API as a whole, showing how all the endpoints fit together in logical harmony. Most commonly with API documentation, the quick reference guide lists abbreviated descriptions of the endpoints. For this reason, the [Swagger UI output](pubapis_swagger_demo.html) can often function as a quick reference guide.
 
 Outside of API documentation, quick reference guides tend to focus more on tasks. If you have a service to set up or configure, a more narrative rather than visual format might make sense. Here's a sample layout for such a guide:
 
-{% include course_image.html url="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/sample_api_diagram.pdf" size="small" filename="quickreferenceguideformat" ext_print="png" ext_web="png" alt="Quick reference guide format focusing on tasks" caption="This quick reference guide format focuses more on tasks than API endpoints" %}
+<figure><a target="_blank" class="noExtIcon" href="{{site.media}}/sample_api_diagram.pdf"><img class="docimage small" src="{{site.media}}/quickreferenceguideformat.png" alt="Quick reference guide format focusing on tasks" /></a><figcaption>This quick reference guide format focuses more on tasks than API endpoints</figcaption></figure>
 
 However, with API documentation, usually the quick reference guide focuses on some visual grouping or display of the endpoints since this is what constitutes the core functionality in an API.
 
@@ -62,7 +62,7 @@ The following are sample quick reference guides from various API documentation s
 
 ### Eventful
 
-{% include course_image.html url="http://api.eventful.com/docs" filename="eventfulquickreference" ext_print="png" ext_web="png" alt="Eventful quick reference guide" caption="Eventful quick reference guide" %}
+<figure><a target="_blank" class="noExtIcon" href="http://api.eventful.com/docs"><img class="docimage" src="{{site.media}}/eventfulquickreference.png" alt="Eventful quick reference guide" /></a><figcaption>Eventful quick reference guide</figcaption></figure>
 
 Eventful provides a one-page quick list of all the endpoints in the API, organized by resource group. Each endpoint is described in about half a line, so you can get a gist of them all quickly. For example, the description for the `/events/get` in their quick reference is "Get an event record." But if you click for more details, the more detailed definition is "Given an event ID, returns the event data associated with that event. See [http://eventful.com/events/E0-001-000278174-6](http://eventful.com/events/E0-001-000278174-6) for an example interface."
 
@@ -70,7 +70,7 @@ There's a certain understanding you get from seeing all the endpoints at a glanc
 
 ### Parse
 
-{% include course_image.html url="http://docs.parseplatform.org/rest/guide/#quick-reference" filename="parsequickreferenceguide" ext_print="png" ext_web="png" alt="Parse platform quick reference guide" caption="Parse quick reference guide" %}
+<figure><a target="_blank" class="noExtIcon" href="http://docs.parseplatform.org/rest/guide/#quick-reference"><img class="docimage" src="{{site.media}}/parsequickreferenceguide.png" alt="Parse platform quick reference guide" /></a><figcaption>Parse quick reference guide</figcaption></figure>
 
 The quick reference for Parse is similar to Eventful in that it's a long list of endpoints, this time grouped in tables. Notice that this quick reference page is just a section within one long, single page of docs. In their approach, all documentation is on the same page, but as you scroll down, different entries in the sidebar highlight.
 
@@ -80,7 +80,7 @@ If you use the [OpenAPI reference docs on GitHub](https://github.com/OAI/OpenAPI
 
 ### Shopify
 
-{% include course_image.html url="http://cheat.markdunkley.com/" filename="shopifyquickreferenceguide" ext_print="png" ext_web="png" alt="Shopify quick reference guide" caption="Shopify quick reference guide" %}
+<figure><a target="_blank" class="noExtIcon" href="http://cheat.markdunkley.com/"><img class="docimage" src="{{site.media}}/shopifyquickreferenceguide.png" alt="Shopify quick reference guide" /></a><figcaption>Shopify quick reference guide</figcaption></figure>
 
 The Shopify quick reference guide isn't for an API, but it does show the filters, variables, and other functions available in Liquid, which is a scripting language for developers. Here Shopify takes advantage of collapse-and-expand functionality to compress the information.
 

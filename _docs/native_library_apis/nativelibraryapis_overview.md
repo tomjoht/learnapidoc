@@ -74,13 +74,13 @@ If it's not installed, you can [download the JDK here](http://www.oracle.com/tec
 
 Download and install the [Eclipse IDE for Java Developers](https://www.eclipse.org/downloads/packages/).
 
-{% include course_image.html url="https://eclipse.org/downloads/" size="small" border="true" filename="eclipseforjavadevs" ext_print="png" ext_web="png" alt="Eclipse installer" caption="Eclipse installer" %}
+<figure><a target="_blank" class="noExtIcon" href="https://eclipse.org/downloads/"><img class="docimage small border" src="{{site.media}}/eclipseforjavadevs.png" alt="Eclipse installer" /></a><figcaption>Eclipse installer</figcaption></figure>
 
 Start Eclipse. When prompted to select a workspace, select the default location and click **Launch**. Close the welcome tab.
 
 To make sure Eclipse is configured to use version 1.8, go to **Eclipse > Preferences** and then **Java > Installed JREs**.
 
-{% include course_image.html size="medium" filename="installed-jre-eclipse" ext_print="png" ext_web="png" alt="Installed JRE settings" caption="Installed JRE settings" %}
+<figure><img class="docimage medium" src="{{site.media}}/installed-jre-eclipse.png" alt="Installed JRE settings" /><figcaption>Installed JRE settings</figcaption></figure>
 
 If 1.8 isn't selected, browse to your install directory (on Mac, it's `/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home`) and select it.
 

@@ -73,7 +73,7 @@ Neiman and [Andrew Davis](http://www.synergistech.com/) (a recruiter for API tec
 {% endif %}
 
 {% if site.format == "pdf" or site.format == "kindle" %}
-{% include course_image.html url="https://www.youtube.com/embed/lmNHBg20ql0?t=1314" size="large"  filename="neimanpreso" ext_print="png" ext_web="png" alt="James Neiman on the required technical baseline for API docs" caption="James Neiman on the required technical baseline for API docs" %}
+<figure><a href="https://www.youtube.com/embed/lmNHBg20ql0?t=1314"><img src="{{site.media}}/x.png" alt="James Neiman on the required technical baseline for API docs" caption="James Neiman on the required technical baseline for API docs" class="large" /></a><figcaption>James Neiman on the required technical baseline for API docs" caption="James Neiman on the required technical baseline for API docs</figcaption></figure>
 {% endif %}
 
 Here's a transcript of two questions in their exchange (cleaned up a bit for readability):
@@ -145,7 +145,7 @@ Suppose you find yourself deep in APIs that require you to know a lot more techn
 
 Keep in mind that your level of involvement with editing, publishing, and authoring depends on your level of tech knowledge. If you have a strong knowledge of the tech, you can author, edit, and publish. If you have weak tech knowledge, your role might involve publishing only. The following spectrum diagram illustrates this range of involvement:
 
-{% include course_image.html size="large" border="true" filename="techknowledge" ext_print="png" ext_web="svg" alt="The degree to which you can publish, edit, and author depends on your level of tech knowledge." caption="The degree to which you can publish, edit, and author depends on your level of tech knowledge." %}
+<figure><img class="docimage large border" src="{{site.media}}/{% if site.kindle %}techknowledge.png{% else %}techknowledge.svg{% endif %}" alt="The degree to which you can publish, edit, and author depends on your level of tech knowledge." /><figcaption>The degree to which you can publish, edit, and author depends on your level of tech knowledge.</figcaption></figure>
 
 If you're stuck in the publishing/editing area, you can interview engineers at length about what's going on in the code (record these discussions &mdash; Evernote has a nifty recording feature built-in that I've used multiple times for just this purpose), and then try your best to describe the actions in as clear speech as possible. You can always fall back on the idea that for those users who need Python, the Python code should look somewhat familiar to them. Well-written code should be, in some sense, self-descriptive in what it's doing. Unless there's something odd or non-standard in the approach, engineers fluent in code should be able to get a sense of how the code works.
 
@@ -177,7 +177,7 @@ For example, you might need to document the equivalent of Advanced Calculus conc
 
 One strategy I've found to work well is to divide the learning into "pomodoros" (a technique named after tomato kitchen timers). With the [Pomodoro Technique](https://francescocirillo.com/pages/pomodoro-technique), you set a timer for 20 minutes and focus on your learning task for that chunk of time. You can set a goal to complete as many pomodoros a day as you want. After about 1-2 months of these regular pomodoros, you'll be surprised at your progress. I use the Focus app for my pomodoro timer:
 
-{% include course_image.html  size="large" url="https://itunes.apple.com/us/app/focus-time-manager/id777233759?mt=12" filename="techpomodoro" ext_print="png" ext_web="png" alt="The Focus app lets you define and track pomodoros" caption="The Focus app lets you define and track pomodoros" %}
+<figure><a target="_blank" class="noExtIcon" href="https://itunes.apple.com/us/app/focus-time-manager/id777233759?mt=12"><img class="docimage large" src="{{site.media}}/techpomodoro.png" alt="The Focus app lets you define and track pomodoros" /></a><figcaption>The Focus app lets you define and track pomodoros</figcaption></figure>
 
 Additionally, I recommend keeping a list of notes about technical details you struggle with while you're trying to document something, and then during your pomodoros, focus on what's listed in your technical notes.
 

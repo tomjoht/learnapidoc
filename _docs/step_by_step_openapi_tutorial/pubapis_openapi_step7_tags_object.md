@@ -73,7 +73,7 @@ tags:
 
 Observe how the description appears next to the collapsed Current Weather Data section.
 
-{% include course_image.html filename="step7swaggeruiprogress" ext_print="png" ext_web="png" alt="Tags defined at the root level" caption="Tags defined at the root level" %}
+<figure><img class="docimage" src="{{site.media}}/step7swaggeruiprogress.png" alt="Tags defined at the root level" /><figcaption>Tags defined at the root level</figcaption></figure>
 
 All paths that have the same tag are grouped together in the display. For example, paths that have the `Current Weather Data` tag will be grouped together under the title `Current Weather Data`. Each group title is a collapsible/expandable toggle.
 

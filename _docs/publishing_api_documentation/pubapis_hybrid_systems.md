@@ -53,7 +53,7 @@ For a tutorial on integrating Jekyll with Netlify CMS, see [Adding a CMS to Your
 
 Readme.com's emphasis is on providing an interface that helps you more easily write documentation based on best practices and designs. Readme.com provides various wizard-like screens to move you through documentation processes, prompting you with forms to complete. For example:
 
-{% include course_image.html  size="medium" border="true" filename="readmeio_manual_api" ext_print="png" ext_web="png" alt="Readme.com" caption="Readme.com" %}
+<figure><img class="docimage medium border" src="{{site.media}}/readmeio_manual_api.png" alt="Readme.com" /><figcaption>Readme.com</figcaption></figure>
 
 Most importantly, Readme.com includes specific features for displaying API documentation content, which puts it into a class of its own. Although you can add your API information manually, you can also import an [OpenAPI specification file](pubapis_openapi_intro.html). You can experiment by choosing one from the [OpenAPI examples](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0/yaml), such as [this one](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/petstore-expanded.json). Readme.com's integration of OpenAPI along with other doc content helps integrate outputs that are often separated. (This fragmentation is a problem I explore later in [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).)
 

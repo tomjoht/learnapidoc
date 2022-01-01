@@ -23,7 +23,7 @@ Although many of the topics in API documentation are standard, there will usuall
 
 The list of topics might include topics such as the following: pagination, time ranges, fault tolerance, cache values, connectivity, timeouts, downtime, SSL, versions, testing and validation, exports, languages, number handling, expanding resources, notifications, CORS, localization, and more.
 
-{% include course_image.html size="medium" border="true" filename="nonref_bestpractices" ext_print="png" ext_web="svg" alt="Best practices" caption="Best practices cover a range of topics usually unique to your API" %}
+<figure><img class="docimage medium border" src="{{site.media}}/{% if site.kindle %}nonref_bestpractices.png{% else %}nonref_bestpractices.svg{% endif %}" alt="Best practices" /><figcaption>Best practices cover a range of topics usually unique to your API</figcaption></figure>
 
 {% include random_ad2.html %}
 
@@ -33,7 +33,7 @@ The following are API best practices from several API documentation sites.
 
 ### Mailchimp
 
-{% include course_image.html url="http://developer.mailchimp.com/documentation/mailchimp/guides/mailchimp-api-best-practices/" filename="bestpractices_mailchimp" ext_print="png" ext_web="png" alt="Mailchimp API best practices" caption="Mailchimp best practices" %}
+<figure><a target="_blank" class="noExtIcon" href="http://developer.mailchimp.com/documentation/mailchimp/guides/mailchimp-api-best-practices/"><img class="docimage" src="{{site.media}}/bestpractices_mailchimp.png" alt="Mailchimp API best practices" /></a><figcaption>Mailchimp best practices</figcaption></figure>
 
 Mailchimp's API best practices include tips about fault tolerance, using specific requests, authentication, cache values, connectivity, and registration. With fault tolerance, Mailchimp reminds developers that outages sometimes happen, so they should plan to handle scenarios accordingly if the API doesn't respond. With specific requests, Mailchimp warns users about the time it can take if the request is too general and hence returns too much information.
 
@@ -41,7 +41,7 @@ Mailchimp's API best practices include tips about fault tolerance, using specifi
 
 ### Coinbase
 
-{% include course_image.html url="https://developers.coinbase.com/api/v2#pagination" filename="bestpractices_coinbase" ext_print="png" ext_web="png" alt="Coinbase best practices" caption="Mailchimp best practices" %}
+<figure><a target="_blank" class="noExtIcon" href="https://developers.coinbase.com/api/v2#pagination"><img class="docimage" src="{{site.media}}/bestpractices_coinbase.png" alt="Coinbase best practices" /></a><figcaption>Mailchimp best practices</figcaption></figure>
 
 Coinbase doesn't specifically refer to these topics as best practices; instead, the navigation shows a laundry list of topics. Pagination is one of these topics worth expanding on here. How does pagination relate to APIs? Suppose your API endpoint returns all items in a user account. There could be thousands of items, and if all items were returned in the same response, it might take a long time for the API to gather and return the large amount of data. As a result, just like with searches on Google, the response returns a limited set, such as the first ten items, and then includes a URL that you can use to go to the next set of responses. Pagination refers to advancing to the next page of responses.
 

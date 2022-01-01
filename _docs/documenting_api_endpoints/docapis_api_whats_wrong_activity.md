@@ -19,7 +19,7 @@ In this activity, you'll critique an existing API reference topic to identify wh
 
 The following is a sample API reference topic for an endpoint called `surfreport`. There are about 25 things wrong in the topic. A copy of this same content is available in a read-only [Google Doc here](https://idratherbewriting.site/whats-wrong-api). In Google Docs, go to **File > Make a Copy** to create your own instance. Then make comments in Google docs to note as many errors as you can find.
 
-{% include course_image.html url="https://idratherbewriting.site/whats-wrong-api" size="small" filename="google_doc_surf_report" ext_print="png" ext_web="png" alt="Make a copy of this Google doc and make comments on it." caption="Make a copy of this Google doc and make comments on it." %}
+<figure><a target="_blank" class="noExtIcon" href="https://idratherbewriting.site/whats-wrong-api"><img class="docimage small" src="{{site.media}}/google_doc_surf_report.png" alt="Make a copy of this Google doc and make comments on it." /></a><figcaption>Make a copy of this Google doc and make comments on it.</figcaption></figure>
 
 Here's the same doc (with problems) displayed on the web:
 

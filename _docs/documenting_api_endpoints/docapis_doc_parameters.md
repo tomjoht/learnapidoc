@@ -23,7 +23,7 @@ last-modified: 2020-06-27
 
 The following screenshot shows a sample parameters section with the Box API:
 
-{% include course_image.html url="https://developer.box.com/reference/put-comments-id/#request" filename="boxparameterexamplev2" border="true" ext_print="png" ext_web="png" alt="Sample parameters from Box API" caption="Sample parameters from Box API" %}
+<figure><a target="_blank" class="noExtIcon" href="https://developer.box.com/reference/put-comments-id/#request"><img class="docimage border" src="{{site.media}}/boxparameterexamplev2.png" alt="Sample parameters from Box API" /></a><figcaption>Sample parameters from Box API</figcaption></figure>
 
 In this example, the parameters are grouped by type: path parameters, query parameters, and body parameters. The endpoint also sets off the path parameter (`comment_id`) in a recognizable way in the endpoint definition.
 

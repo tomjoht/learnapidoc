@@ -24,7 +24,7 @@ Open the index.html file in the Javadoc folder you generated in [Activity: Gener
 
 The class summary page shows a short version of each of the classes. The description you write for each class (up to the period) appears here. It's kind of like a quick reference guide for the API.
 
-{% include course_image.html size="large" filename="classsummary" ext_print="png" ext_web="png" alt="Class summary" caption="Class summary" %}
+<figure><img class="docimage large" src="{{site.media}}/classsummary.png" alt="Class summary" /><figcaption>Class summary</figcaption></figure>
 
 You click a class name (in this case, `ACMESmartphone` or `Dynamite`) to dive into the details.
 
@@ -34,7 +34,7 @@ You click a class name (in this case, `ACMESmartphone` or `Dynamite`) to dive in
 
 When you view a class page, you're presented with a summary of the fields, constructors, and methods for the class. Again, this is just an overview. When you scroll down, you can see the full details about each of these elements.
 
-{% include course_image.html size="large" url="http://docs.oracle.com/javase/7/docs/api/" filename="fulldetails" ext_print="png" ext_web="png" alt="Full class details" caption="Full class details" %}
+<figure><a target="_blank" class="noExtIcon" href="http://docs.oracle.com/javase/7/docs/api/"><img class="docimage large" src="{{site.media}}/fulldetails.png" alt="Full class details" /></a><figcaption>Full class details</figcaption></figure>
 
 {% include random_ad2.html %}
 
@@ -42,7 +42,7 @@ When you view a class page, you're presented with a summary of the fields, const
 
 If you click **Package** at the top, you can also browse the classes by package. Or you can go to the classes by clicking the class name in the left column. You can also browse everything by clicking the **Index** link.
 
-{% include course_image.html size="large" filename="allclassesjavadoc" ext_print="png" ext_web="png" alt="All the ways to browse the classes" caption="All the ways to browse the classes" %}
+<figure><img class="docimage large" src="{{site.media}}/allclassesjavadoc.png" alt="All the ways to browse the classes" /><figcaption>All the ways to browse the classes</figcaption></figure>
 
 {% include random_ad1.html %}
 

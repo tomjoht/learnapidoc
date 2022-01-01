@@ -26,7 +26,7 @@ We'll then transition into standards, tools, and specifications for REST APIs. Y
 
 In a nutshell, REST APIs (which are a type of web API) involve requests and responses, not too unlike visiting a web page. You make a request to a resource stored on a server, and the server responds with the requested information. The protocol used to transport the data is HTTP. "REST" stands for Representational State Transfer.
 
-{% include course_image.html filename="restapi_apidoc" ext_print="png" ext_web="svg" alt="Response and request model for REST APIs" caption="REST APIs involve requests and responses over HTTP protocol" %}
+<figure><img class="docimage" src="{{site.media}}/{% if site.kindle %}restapi_apidoc.png{% else %}restapi_apidoc.svg{% endif %}" alt="Response and request model for REST APIs" /><figcaption>REST APIs involve requests and responses over HTTP protocol</figcaption></figure>
 
 I dive more into the principles of REST in [What is a REST API?](docapis_what_is_a_rest_api.html) In your REST API documentation, you describe the various endpoints available, their methods, parameters, and other details, and you also document sample responses from the endpoints.
 

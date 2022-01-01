@@ -48,7 +48,7 @@ The first line, `HTTP/1.1 200 OK`, tells us the status of the request (`200`). M
 
 With a GET request, it's pretty easy to tell if the request is successful because you get back the expected response. But suppose you're making a POST, PUT, or DELETE call, where you're changing data contained in the resource. How do you know if the request was successfully processed and received by the API? HTTP response codes in the header of the response will indicate whether the operation was successful. The HTTP status codes are just abbreviations for longer messages.
 
-{% include course_image.html size="medium" border="true" filename="nonref_statuscodes" ext_print="png" ext_web="svg" alt="Status codes" caption="Status codes are pretty subtle, but when a developer is working with an API, these codes may be the only \"interface\" the developer has. If you can control the messages the developer sees, it can be a huge win for usability." %}
+<figure><img class="docimage medium border" src="{{site.media}}/{% if site.kindle %}nonref_statuscodes.png{% else %}nonref_statuscodes.svg{% endif %}" alt="Status codes" /><figcaption>Status codes are pretty subtle, but when a developer is working with an API, these codes may be the only "interface" the developer has. If you can control the messages the developer sees, it can be a huge win for usability.</figcaption></figure>
 
 All too often, status codes are uninformative, poorly written, and communicate little or no helpful information to the user to overcome the error. Ultimately, status codes should assist users in recovering from errors.
 
@@ -133,7 +133,7 @@ The following are some sample status and error code pages in API documentation.
 
 ### Context.io
 
-{% include course_image.html url="https://clearbit.com/docs?python#errors-error-types" filename="context_statuscodes" ext_print="png" ext_web="png" alt="Context.io's status and error codes" caption="Context.io status and error codes" %}
+<figure><a target="_blank" class="noExtIcon" href="https://clearbit.com/docs?python#errors-error-types"><img class="docimage" src="{{site.media}}/context_statuscodes.png" alt="Context.io's status and error codes" /></a><figcaption>Context.io status and error codes</figcaption></figure>
 
 Clearbit not only documents the standard status codes but also describes the unique parameters returned by their API. Most developers will probably be familiar with 200, 400, and 500 codes, so these codes don't need a lot of explanatory detail. But if your API has unique codes, make sure to describe these adequately.
 
@@ -141,7 +141,7 @@ Clearbit not only documents the standard status codes but also describes the uni
 
 ### Twitter
 
-{% include course_image.html url="https://developer.twitter.com/en/docs/basics/response-codes" filename="twitter_statuscodes" ext_print="png" ext_web="png" alt="Twitter's status and error codes" caption="Twitter status and error codes" %}
+<figure><a target="_blank" class="noExtIcon" href="https://developer.twitter.com/en/docs/basics/response-codes"><img class="docimage" src="{{site.media}}/twitter_statuscodes.png" alt="Twitter's status and error codes" /></a><figcaption>Twitter status and error codes</figcaption></figure>
 
 With Twitter's status code documentation, they not only describe the code and status but also provide helpful troubleshooting information, potentially assisting with error recovery. For example, with the `500` error, the authors don't just say the status refers to a broken service, they explain, "This is usually a temporary error, for example in a high load situation or if an endpoint is temporarily having issues. Check in the [developer forums](https://twittercommunity.com/) in case others are having similar issues, or try again later."
 
@@ -149,13 +149,13 @@ This kind of helpful message is what tech writers should aim for with status cod
 
 ### Mailchimp
 
-{% include course_image.html url="http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/" filename="mailchimp_statuscodes" ext_print="png" ext_web="png" alt="Mailchimp's status and error codes" caption="Mailchimp status and error codes" %}
+<figure><a target="_blank" class="noExtIcon" href="http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/"><img class="docimage" src="{{site.media}}/mailchimp_statuscodes.png" alt="Mailchimp's status and error codes" /></a><figcaption>Mailchimp status and error codes</figcaption></figure>
 
 Mailchimp provides readable and friendly descriptions of the error message. For example, with the `403` errors, instead of just writing "Forbidden," Mailchimp explains reasons why you might receive the Forbidden code. With Mailchimp, there are several types of 403 errors. Your request might be forbidden due to a disabled user account or request made to the wrong data center. For the "WrongDataCenter" error, Mailchimp notes that "It’s often associated with misconfigured libraries" and they link to more information on data centers. This is the type of error code documentation that is helpful to users.
 
 ### Flickr
 
-{% include course_image.html url="https://www.flickr.com/services/api/upload.api.html" filename="flickr_statuscodes" ext_print="png" ext_web="png" alt="Flickr status and error codes" caption="Flickr's status and error codes" %}
+<figure><a target="_blank" class="noExtIcon" href="https://www.flickr.com/services/api/upload.api.html"><img class="docimage" src="{{site.media}}/flickr_statuscodes.png" alt="Flickr status and error codes" /></a><figcaption>Flickr's status and error codes</figcaption></figure>
 
 With Flickr, the Response Codes section is embedded within each API reference topic. As such, the descriptions are short. While embedding the Response Codes in each topic makes the error codes more visible, in some ways it's less helpful. Because it's embedded within each API topic, the descriptions about the error codes must be brief, or the content would overwhelm the endpoint request information.
 

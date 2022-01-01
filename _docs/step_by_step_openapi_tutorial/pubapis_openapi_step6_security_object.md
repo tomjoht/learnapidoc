@@ -123,7 +123,7 @@ components:
 
 Then check out the Swagger UI display. You'll see an "Authorize" button appear.
 
-{% include course_image.html filename="step6swaggeruiprogress" ext_print="png" ext_web="png" alt="Adding security information into the spec" caption="Adding security information into the spec" %}
+<figure><img class="docimage" src="{{site.media}}/step6swaggeruiprogress.png" alt="Adding security information into the spec" /><figcaption>Adding security information into the spec</figcaption></figure>
 
 When you click Authorize, the `description` and other security details appear:
 
@@ -151,7 +151,7 @@ curl -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&unit
 
 The `&appid=APIKEY"` indicates that the API key is being included in the query string, so the request will be authorized. If you copy the curl submitted, customize the API key, and paste it into the command line, you'll see a successful response:
 
-{% include course_image.html size="medium"  filename="curlrequestopenapiswagger" ext_print="png" ext_web="png" alt="Successful curl response" caption="Successful curl response" %}
+<figure><img class="docimage medium" src="{{site.media}}/curlrequestopenapiswagger.png" alt="Successful curl response" /><figcaption>Successful curl response</figcaption></figure>
 
 The server response also appears directly in the Swagger UI display, with a link to download it:
 

@@ -21,11 +21,11 @@ Developer documentation tends to include a lot of code samples. These code sampl
 
 Code samples play an essential role in helping developers use an API. Code is literally another language, and when users who speak that language see it, the code communicates with them in powerful ways that non-code text (however descriptive it is) can't achieve.
 
-{% include course_image.html size="medium" border="true" filename="nonref_codetutorials" ext_print="png" ext_web="svg" alt="Code tutorials" caption="Code is in another language, so as much as you might try to describe the communication in this other language through text, it often falls short. When developers see code, they can often read the code and understand it natively." %}
+<figure><img class="docimage medium border" src="{{site.media}}/{% if site.kindle %}nonref_codetutorials.png{% else %}nonref_codetutorials.svg{% endif %}" alt="Code tutorials" /><figcaption>Code is in another language, so as much as you might try to describe the communication in this other language through text, it often falls short. When developers see code, they can often read the code and understand it natively.</figcaption></figure>
 
 In user testing that Twilio did with their documentation, they found that pages that started more quickly with code samples performed better with users.
 
-{% include course_image.html size="large" url="https://eventil.com/presentations/pOszD6" filename="twiliouserresearch" ext_print="png" ext_web="png" alt="Code samples with Twilio research" caption="Twilio found that when pages had fewer sentences before code samples, the pages engaged users more." %}
+<figure><a target="_blank" class="noExtIcon" href="https://eventil.com/presentations/pOszD6"><img class="docimage large" src="{{site.media}}/twiliouserresearch.png" alt="Code samples with Twilio research" /></a><figcaption>Twilio found that when pages had fewer sentences before code samples, the pages engaged users more.</figcaption></figure>
 
 Specifically, pages with less than 4 sentences before code samples performed twice as well as pages with 11 sentences before code samples. Jarod Reyes explains:
 
@@ -115,7 +115,7 @@ The following are a few samples of code tutorials in API documentation.
 
 ### Weather Underground
 
-{% include course_image.html url="http://www.wunderground.com/weather/api/d/docs?d=resources/code-samples&MR=1" filename="codesamples_weatherunderground" ext_print="png" ext_web="png" alt="Weather Underground code samples" caption="Weather Underground code samples" %}
+<figure><a target="_blank" class="noExtIcon" href="http://www.wunderground.com/weather/api/d/docs?d=resources/code-samples&amp;MR=1"><img class="docimage" src="{{site.media}}/codesamples_weatherunderground.png" alt="Weather Underground code samples" /></a><figcaption>Weather Underground code samples</figcaption></figure>
 
 In this Weather Underground example, there are various code samples across half a dozen languages, but no explanation about what the code sample returns. In this case, the code is probably simple enough that developers can look at it and understand from the code itself what's going on. Still, some explanation is usually warranted, especially if there are multiple ways to make the call.
 
@@ -123,7 +123,7 @@ Sometimes developers will tell you that code is "self-documenting," meaning it's
 
 ### Eventful
 
-{% include course_image.html url="http://api.eventful.com/tools/tutorials/search" filename="eventfulcodesample" ext_print="png" ext_web="png" alt="Eventful code samples" caption="Eventful code samples" %}
+<figure><a target="_blank" class="noExtIcon" href="http://api.eventful.com/tools/tutorials/search"><img class="docimage" src="{{site.media}}/eventfulcodesample.png" alt="Eventful code samples" /></a><figcaption>Eventful code samples</figcaption></figure>
 
 You won't see chunks of code here, but the Eventful docs include various examples about query string parameters for the endpoints. Although these parameters are also defined in their [reference documentation for the search endpoint](http://api.eventful.com/docs/events/search), the tutorial here expands on how to use the parameters in a more friendly, detailed way.
 
@@ -131,7 +131,7 @@ I like the Eventful tutorial because it shows how documentation that is usually 
 
 ### Twilio
 
-{% include course_image.html url="https://www.twilio.com/docs/quickstart" filename="twiliocodesamples" ext_print="png" ext_web="png" alt="Twilio code samples" caption="Twilio code samples" %}
+<figure><a target="_blank" class="noExtIcon" href="https://www.twilio.com/docs/quickstart"><img class="docimage" src="{{site.media}}/twiliocodesamples.png" alt="Twilio code samples" /></a><figcaption>Twilio code samples</figcaption></figure>
 
 Twilio's tutorials are probably the most impressive and fully detailed tutorials in the examples here. Not only do they walk users through a task from beginning to end, they do so in half a dozen languages. The specific code examples have been extracted out into the right-column, while the narrative of the tutorial occupies in the middle column. All the steps in the tutorial aren't shown at once. When you reach the end of one step, you click a button to show the next step. This progressive disclosure of information might reduce any sense of intimidation users might feel when beginning the tutorial.
 
@@ -139,7 +139,7 @@ Although the middle column is narrow and the right-column larger, actually this 
 
 ### Mailchimp
 
-{% include course_image.html url="http://developer.mailchimp.com/documentation/mailchimp/guides/manage-subscribers-with-the-mailchimp-api/" filename="mailchimpcodesamples" ext_print="png" ext_web="png" alt="Mailchimp code samples" caption="Mailchimp code samples" %}
+<figure><a target="_blank" class="noExtIcon" href="http://developer.mailchimp.com/documentation/mailchimp/guides/manage-subscribers-with-the-mailchimp-api/"><img class="docimage" src="{{site.media}}/mailchimpcodesamples.png" alt="Mailchimp code samples" /></a><figcaption>Mailchimp code samples</figcaption></figure>
 
 As usual, Mailchimp provides solid tutorials for their products. The "Before You Start" section lists any necessary prerequisites before starting the tutorial. Each part of the tutorial is set off with section headings.
 
@@ -147,7 +147,7 @@ The section heading style (rather than numbered steps) is worth considering. Mos
 
 ### IBM Watson
 
-{% include course_image.html url="https://console.bluemix.net/docs/services/conversation/tutorial.html#tutorial" filename="ibmwatsoncodesamples" ext_print="png" ext_web="png" alt="IBM Watson code samples" caption="IBM Watson code samples" %}
+<figure><a target="_blank" class="noExtIcon" href="https://console.bluemix.net/docs/services/conversation/tutorial.html#tutorial"><img class="docimage" src="{{site.media}}/ibmwatsoncodesamples.png" alt="IBM Watson code samples" /></a><figcaption>IBM Watson code samples</figcaption></figure>
 
 The IBM Watson tutorial does an excellent job breaking up the tutorial steps into different sections, with easy-to-follow steps in each section. Up front, it lists the learning objectives, duration, and prerequisites. There's nothing particularly challenging about the formatting or the display &mdash; the emphasis focuses on the content.
 

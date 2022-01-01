@@ -56,10 +56,10 @@ In this activity, you'll render your OpenAPI spec with [Redoc](https://github.co
 
     If you were following the previous tutorial on creating an OpenAPI spec through Stoplight Studio ([Getting started tutorial: Using Stoplight Studio to create an OpenAPI specification document](pubapis_openapis_quickstart_stoplight.html)), you can use the OpenAPI URL that Stoplight provides. From your Stoplight Studio display, go to the Overview topic and click **Export OpenAPI**. Choose either original or dereferenced. Copy the URL. Here's an [example URL](https://idratherbewriting.com/learnapidoc/docs/openapi_spec_and_generated_ref_docs/openapi_openweathermap.yml).
 
-    {% include course_image.html size="medium" filename="export_openapi_stoplight" ext_print="png" ext_web="png" alt="Exporting an OpenAPI URL" caption="Exporting an OpenAPI URL" %}
+    <figure><img src="{{site.media}}/export_openapi_stoplight.png" alt="Exporting an OpenAPI URL" class="medium" /><figcaption>Exporting an OpenAPI URL</figcaption></figure>
 
 3.  In your web browser, click **Cmd + O** (Mac) or **Ctrl + O** (Windows), locate your **redoc.html** file, and select it.
 
     The display should look as follows:
 
-    {% include course_image.html url="https://idratherbewriting.com/learnapidoc/assets/files/redoc.html" size="large" filename="redoc_display" ext_print="png" ext_web="png" alt="Sample Redoc display" caption="Sample Redoc display" %}
+    <figure><a href="https://idratherbewriting.com/learnapidoc/assets/files/redoc.html"><img src="{{site.media}}/redoc_display.png" alt="Sample Redoc display" class="large" /></a><figcaption>Sample Redoc display</figcaption></figure>

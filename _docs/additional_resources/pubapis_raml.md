@@ -23,7 +23,7 @@ Note that unless you're publishing your docs with Mulesoft or another platform t
 
 Similar to OpenAPI, after you create a RAML file that describes your API, it can be consumed by different platforms to parse and display the information in interactive outputs. The RAML format, which uses YML syntax, is human-readable, efficient, and simple. Here's what the RAML output looks like in API Console (which is similar to Swagger UI):
 
-{% include course_image.html size="large" filename="raml-new-console-header" ext_print="png" ext_web="png" alt="Sample API Console output with RAML" caption="Sample API Console output with RAML" %}
+<figure><img src="{{site.media}}/raml-new-console-header.png" alt="Sample API Console output with RAML" class="large" /><figcaption>Sample API Console output with RAML</figcaption></figure>
 
 You can see a demo with the [Google Drive API](https://mulesoft.github.io/api-console/#/docs/summary).
 
@@ -440,13 +440,13 @@ More detail about each of these options is provided in the following sections.
 
 The Anypoint console has a dashboard where you can work on your RAML definition, add other documentation pages (outside the spec), configure mocking services, and more. If your company already uses Mulesoft for other API development services, it would make sense to use their documentation and portal features as well. You can also export your RAML definition to OpenAPI through the Anypoint console.
 
-{% include course_image.html size="large" filename="anypointplatform" ext_print="png" ext_web="png" alt="The UI when working with RAML definitions in the Anypoint platform" caption="The UI when working with RAML definitions in the Anypoint platform" %}
+<figure><img src="{{site.media}}/anypointplatform.png" alt="The UI when working with RAML definitions in the Anypoint platform" class="large" /><figcaption>The UI when working with RAML definitions in the Anypoint platform</figcaption></figure>
 
 Note that you can add additional pages to your documentation in Anypoint. (Kudos to the Mulesoft team for recognizing that API documentation is more than just a set of reference endpoints.)
 
 Here's what the sample OpenWeatherMap API [looks like in Anypoint Exchange](https://anypoint.mulesoft.com/exchange/18a207fd-59c5-4c64-845f-de1568e92fc5/openweathermap/1.0.0/console/types/Coord/):
 
-{% include course_image.html url="https://anypoint.mulesoft.com/exchange/18a207fd-59c5-4c64-845f-de1568e92fc5/openweathermap/1.0.0/console/types/Coord/" filename="anypointexchange" ext_print="png" ext_web="png" alt="OpenWeather API documentation in Mulesoft's Anypoint Exchange" caption="OpenWeather API documentation in Mulesoft's Anypoint Exchange" %}
+<figure><a href="https://anypoint.mulesoft.com/exchange/18a207fd-59c5-4c64-845f-de1568e92fc5/openweathermap/1.0.0/console/types/Coord/"><img src="{{site.media}}/anypointexchange.png" alt="OpenWeather API documentation in Mulesoft's Anypoint Exchange" /></a><figcaption>OpenWeather API documentation in Mulesoft's Anypoint Exchange</figcaption></figure>
 
 One of the unique options Mulesoft offers is called [API Notebook](https://api-notebook.anypoint.mulesoft.com). This is a unique tool designed by Mulesoft that allows you to provide interactive code examples that leverage your RAML spec.
 
@@ -458,7 +458,7 @@ You can download the same code that generates the output on the Anypoint Platfor
 
 Here's the [OpenWeather API in API Console](https://idratherbewriting.com/assets/files/raml/build/index.html):
 
-{% include course_image.html url="https://idratherbewriting.com/assets/files/raml/build/index.html" size="large" filename="ramlexample" ext_print="png" ext_web="png" alt="Sample RAML output in API Console." caption="Sample RAML output in API Console." %}
+<figure><a href="https://idratherbewriting.com/assets/files/raml/build/index.html"><img src="{{site.media}}/ramlexample.png" class="large" alt="Sample RAML output in API Console" /></a><figcaption>Sample RAML output in API Console</figcaption></figure>
 
 You can also [embed the API console as an HTML element](https://github.com/mulesoft/api-console#embed-as-an-html-element).
 

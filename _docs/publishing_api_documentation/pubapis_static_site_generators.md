@@ -130,7 +130,7 @@ For continuous deployment with your hosting, Sphinx can be used with the [readth
 
 As of October 2021, [Staticgen.com](https://www.staticgen.com/) shows the number of stars, forks, and issues as follows:
 
-{% include course_image.html url="https://www.staticgen.com/" filename="staticgendisplay4" ext_print="png" ext_web="png" alt="Top static site generators" caption="Top static site generators" %}
+<figure><a target="_blank" class="noExtIcon" href="https://www.staticgen.com/"><img class="docimage" src="{{site.media}}/staticgendisplay4.png" alt="Top static site generators" /></a><figcaption>Top static site generators</figcaption></figure>
 
 On the Staticgen.com site, the star icon represents the number of users who have "starred" the project (basically followed its activity). The forked icon represents the number of repo clones that exist registered on their platform (GitHub, etc.). The bug icon represents the number of open issues logged against the project. To gauge how active the project is, browse the GitHub source and look to see how regular the commits are.
 
