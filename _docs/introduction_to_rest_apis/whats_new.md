@@ -65,7 +65,7 @@ This list is auto-generated based on the last-modified timestamp on pages, scope
   {% if post_in_seconds > recent_posts %}
   {% assign count = count | plus:1 %}
 
-* {{post.last-modified | date: "%b %d, %Y" }}: <a href="{{ post.permalink | remove: "/" }}">{{ post.title }}
+* {{post.last-modified | date: "%b %d, %Y" }}: <a href="{{ post.permalink | remove: "/" }}">{{ post.title }}</a>
 {% if count == 15 %}{% break %}{% endif %}
 {% endif %}
 {% endfor %}

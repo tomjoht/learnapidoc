@@ -1,5 +1,10 @@
-#!/bin/bash -e
 #Exit immediately if a command exits with a non-zero status.
+
+echo "Removing previous ebooks"
+rm ebooks/docapis.mobi
+rm ebooks/docapis.epub
+rm ebooks/.DS_Store
+echo "Done removing old ebooks"
 
 echo "Build kindle output"
 bundle exec jekyll build --config _config_kindle.yml

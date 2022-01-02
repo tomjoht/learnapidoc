@@ -1,12 +1,12 @@
 ########## eBook tags (for docapis.opf) ###############
 # see the docapis.opf file for more details
 title: Documenting APIs
-description: A guide for technical writers and engineers documenting APIs
+description: A guide for technical writers and engineers working with APIs
 author: Tom Johnson
 publisher: idratherbewriting.com
 isbn: 000000000000000
 subject: Technology & Engineering
-cover_image: restapi_kindletitle2.png
+cover_image: ebook_cover.png
 
 language: english
 media: images
