@@ -66,6 +66,12 @@ Postman is a REST API GUI client that we explored earlier in [Submit requests th
 
 To see how these Run in Postman buttons work, click this button:
 
+{% if site.format == "kindle" or site.format == "pdf" %}
+*Note: This content doesn't embed well in print because it contains JavaScript. Please go to [https://idratherbewriting.com/learnapidoc/docapis_doc_getting_started_section.html] to view the content.*
+{% endif %}
+
+{% if site.format == "web" %}
+
 <div class="postman-run-button" style="margin-top:15px; margin-bottom: 15px"
 data-postman-action="collection/fork"
 data-postman-var-1="3578416-16cf5af1-26e2-4c89-bb99-c6be4e510dcb"
@@ -79,6 +85,8 @@ data-postman-collection-url="entityId=3578416-16cf5af1-26e2-4c89-bb99-c6be4e510d
     ));
   }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
 </script>
+
+{% endif %}
 
 When prompted, click **Fork Collection**. You'll then be prompted to sign into Postman first (create an account if you don't have one). Then you'll see the Postman web interface like this:
 

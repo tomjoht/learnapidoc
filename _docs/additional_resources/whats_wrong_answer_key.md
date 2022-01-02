@@ -17,6 +17,14 @@ After you've finished commenting on the Google Doc, go to this [annotated Google
 
 Alternatively, expand the answers below to see how many issues you found. If you found additional issues beyond those noted here, feel free to [drop me an email](http://idratherbewriting.com/learnapidoc/contact.html){: .noCrossRef} letting me know. You can also add your own comments on the Google Doc answer key.
 
+{% include note.html content="For the most recent workshop recording, see the [Video recordings of API doc workshops](docapis_course_videos.html)." %}
+
+{% if site.format == "kindle" or site.format == "pdf" %}
+*Note: This content doesn't embed well in print because it contains JavaScript. Please go to [https://idratherbewriting.com/learnapidoc/docapis_whats_wrong_answer_key.html] to view the content.*
+{% endif %}
+
+{% if site.format == "web" %}
+
 <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#answerkey" aria-expanded="false" aria-controls="collapseExample">
 Answer key
 </button>
@@ -88,3 +96,4 @@ Answer key:
 
 </div>
 </div>
+{% endif %}

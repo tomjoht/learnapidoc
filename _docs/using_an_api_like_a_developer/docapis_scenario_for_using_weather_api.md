@@ -32,7 +32,7 @@ To give you an idea of the end goal, here's a sample: [idratherbewriting.com/lea
 Click the **Check wind conditions** button to see wind and temperature details. When you request this data, a call is made to the [OpenWeatherMap API](https://openweathermap.org/api). The API retrieves the information, and some JavaScript code prints the information on the page.
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-*Note: This content doesn't embed well in print, as it contains JavaScript. Please go to [https://idratherbewriting.com/learnapidoc/docapis_scenario_for_using_weather_api.html] to view the content.*
+*Note: This content doesn't embed well in print because it contains JavaScript. Please go to [https://idratherbewriting.com/learnapidoc/docapis_scenario_for_using_weather_api.html] to view the content.*
 {% endif %}
 
 {% if site.format == "web" %}

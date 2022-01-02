@@ -108,8 +108,6 @@ In this section, you will create a new GitHub repo and publish a sample file the
 
 Notice how GitHub automatically converts the Markdown syntax into HTML and styles it in a readable way. You could work with this GitHub wiki entirely in the browser as a way for multiple people to collaborate and edit content. However, unlike other wikis, with GitHub you can also take all the content offline and edit locally, and then commit your changes and push the changes back online.
 
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Manage content in a GitHub wiki]({{site.rooturl}}pubapis_github_wikis.html).*{% endif %}
-
 ## <i class="fa fa-user-circle"></i> Activity: Clone your GitHub repo locally {#clone_repo_locally}
 
 So far you've been working with GitHub in the browser. Now we'll take the same content and work with it locally. This is what makes the GitHub wiki unique from other wikis &mdash; it's a Git repo, so you can manipulate the content the same way as any other Git repo (working locally, pushing, pulling, merging, branching, etc.).
@@ -160,8 +158,6 @@ To clone the GitHub repo locally:
     You don't need to type the full directory name. Just start typing the first few letters and then press your **Tab** key to autocomplete the rest.
 
     You might also want to browse to this folder via Finder (Mac) or Explorer (Windows). The folder also continas an invisible folder called `.git`. For instructions on making hidden files visible, see one of the following: [Windows](https://support.microsoft.com/en-us/help/14201/windows-show-hidden-files) or [Mac](https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/)).
-
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Manage content in a GitHub wiki]({{site.rooturl}}pubapis_github_wikis.html).*{% endif %}
 
 ## <i class="fa fa-user-circle"></i> Activity: Push local changes to the remote {#push_local_to_remote}
 
@@ -244,10 +240,6 @@ To clone the GitHub repo locally:
 7.  Now verify that your changes took effect. Browse to your GitHub wiki repository, refresh the page, and look to see the changes.
 
 Although there are many options for authoring and publishing tools with developer docs (see [staticgen.com](https://www.staticgen.com/) for common docs-as-code tools), at the core of these tools is usually a Git workflow. The Git workflow can be more powerful and complex than any authoring tool. Interacting with Git might also be key for interacting with engineering repos to make edits to documentation that appears inside code.
-
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Manage content in a GitHub wiki]({{site.rooturl}}pubapis_github_wikis.html).*{% endif %}
-
-
 
 ## Avoiding merge conflicts when editing online and locally
 

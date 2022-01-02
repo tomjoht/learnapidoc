@@ -6,14 +6,14 @@ sidebar: docapis
 section: introtoapis
 path1: /docapis_introtoapis.html
 weight: 1.21
-last-modified: 2021-12-28
+last-modified: 2021-12-31
 ---
 
 You can read this content in two alternative formats:
 
 * <i class="fa fa-file-pdf-o" aria-hidden="true"></i> [PDF](https://idbwrtng.com/learnapidoc-pdf) (last-generated: {{page.last-modified}}). 919 pages
-* <i class="fa fa-book" aria-hidden="true"></i> [Kindle (MOBI)](https://idbwrtng.com/learnapidoc-mobi) (last-generated: {{page.last-modified}}) 256 MB
-* <i class="fa fa-file-text" aria-hidden="true"></i> [EPUB](https://idbwrtng.com/learnapidoc-epub) (last-generated: {{page.last-modified}}) 47 MB
+* <i class="fa fa-book" aria-hidden="true"></i> [Kindle (MOBI)](https://idbwrtng.com/learnapidoc-mobi) (last-generated: {{page.last-modified}}) 246 MB
+* <i class="fa fa-file-text" aria-hidden="true"></i> [EPUB](https://idbwrtng.com/learnapidoc-epub) (last-generated: {{page.last-modified}}) 146 MB
 
 I periodically regenerate these formats, so the content should more or less be the same across web, PDF, Kindle, and EPUB.
 

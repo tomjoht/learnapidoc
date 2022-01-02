@@ -179,7 +179,4 @@ In this activity, identify common patterns in API documentation sites.
 
 In the next section, we'll look at [Design patterns with API doc sites]({{site.rooturl}}pubapis_design_patterns.html). From your notes, look to see if the patterns I highlight match the ones you observed in the API doc sites you analyzed.
 
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Survey of API doc sites]({{site.rooturl}}pubapis_apilist.html).*{% endif %}
-
-
 {% include random_ad2.html %}

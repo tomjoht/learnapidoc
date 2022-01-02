@@ -1,3 +1,14 @@
+########## eBook tags (for docapis.opf) ###############
+# see the docapis.opf file for more details
+title: Documenting APIs
+description: A guide for technical writers and engineers documenting APIs
+author: Tom Johnson
+publisher: idratherbewriting.com
+isbn: 000000000000000
+subject: Technology & Engineering
+media: https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api
+cover_image: restapi_kindletitle2.png
+
 language: english
 media: images
 format: kindle
@@ -7,12 +18,11 @@ destination: _site
 port: 5000
 highlighter: rouge
 exclude:
-  - mobi
+  - ebooks
   - pdf
   - slides
   - images/comics/
-  - serve_kindle.sh
-  - build_kindle.sh
+  - build_ebooks.sh
   - upload.sh
   - upload_outputs.sh
   - move.sh
@@ -22,6 +32,11 @@ exclude:
   - thank-you-for-donating.html
   - contact.html
   - aws_cli_notes.txt
+  - image_purge_output.sh
+  - image_purge_source.sh
+  - instructions.md
+  - assets/files
+  - assets/js
 
 markdown: kramdown
 kramdown:

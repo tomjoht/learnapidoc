@@ -236,9 +236,6 @@ Let's get some hands-on experience with Swagger UI using the Petstore demo. The 
 
 6.  The Petstore is a functioning API, and you have actually created a pet. For fun, expand the **<span style="padding: 3px; border-radius: 3px; background-color: #dedede">GET</span>/pet/{petId}** endpoint, click **Try it out**, enter the pet `id` you used in the previous operation, and then execute the request. You should see your pet's name returned.
 
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Introduction to the OpenAPI specification]({{site.rooturl}}pubapis_openapi_intro.html).*{% endif %}
-
-
 There are other tools besides Swagger UI that can parse your OpenAPI specification document. Some of these tools include [Apiary](https://apiary.io/), [Apigee](http://apigee.com/about/), [Lucybot](https://lucybot.com/), [Gelato](https://gelato.io/), [Readme.com](http://readme.com/), [swagger2postman](https://github.com/josephpconley/swagger2postman), [swagger-ui responsive theme](https://github.com/jensoleg/swagger-ui), and more.
 
 Some web designers have created integrations of OpenAPI with static site generators such as Jekyll (see [Carte](https://github.com/Wiredcraft/carte) and [Readme](https://readme.com)). You can also embed Swagger UI into web pages as well. More tools roll out regularly for parsing and displaying content from an OpenAPI specification document.

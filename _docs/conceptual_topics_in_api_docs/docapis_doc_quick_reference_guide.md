@@ -23,13 +23,14 @@ Whether for end-user documentation or developer documentation, the quick referen
 
 The quick reference guide should provide the user with just enough information to get the gist of what the system is about, including the key endpoints and tasks. Often with APIs, the endpoints have relationships with each other that you can depict visually. Here's an API diagram I created at a previous company:
 
-<figure><a target="_blank" class="noExtIcon" href="{{site.media}}/sample_api_diagram.pdf"><img class="docimage medium" src="{{site.media}}/sample_api_diagram.pdf.png" alt="Sample quick reference guide format" /></a><figcaption>A quick reference guide format</figcaption></figure>
+{% comment %}Leave image path as is. Otherwise, when generating ebooks, the site.media property becomes blank and Kindlegen looks for this asset locally, returning error. {% endcomment %}
+<figure><a target="_blank" class="noExtIcon" href="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/sample_api_diagram.pdf"><img class="docimage medium" src="{{site.media}}/sample_api_diagram.png" alt="Sample quick reference guide format" /></a><figcaption>A quick reference guide format</figcaption></figure>
 
 The text is Latin filler for privacy reasons, so the logic may not be entirely apparent. But with this API, the endpoints could be organized into different groups. Some of the groups had multiple levels within the endpoint, and multiple include options for each endpoint. I created this diagram in Adobe Illustrator and distributed it as a PDF. Developers found it useful because it tried to make sense of the API as a whole, showing how all the endpoints fit together in logical harmony. Most commonly with API documentation, the quick reference guide lists abbreviated descriptions of the endpoints. For this reason, the [Swagger UI output](pubapis_swagger_demo.html) can often function as a quick reference guide.
 
 Outside of API documentation, quick reference guides tend to focus more on tasks. If you have a service to set up or configure, a more narrative rather than visual format might make sense. Here's a sample layout for such a guide:
 
-<figure><a target="_blank" class="noExtIcon" href="{{site.media}}/sample_api_diagram.pdf"><img class="docimage small" src="{{site.media}}/quickreferenceguideformat.png" alt="Quick reference guide format focusing on tasks" /></a><figcaption>This quick reference guide format focuses more on tasks than API endpoints</figcaption></figure>
+<figure><a target="_blank" class="noExtIcon" href="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/sample_api_diagram.pdf"><img class="docimage small" src="{{site.media}}/quickreferenceguideformat.png" alt="Quick reference guide format focusing on tasks" /></a><figcaption>This quick reference guide format focuses more on tasks than API endpoints</figcaption></figure>
 
 However, with API documentation, usually the quick reference guide focuses on some visual grouping or display of the endpoints since this is what constitutes the core functionality in an API.
 

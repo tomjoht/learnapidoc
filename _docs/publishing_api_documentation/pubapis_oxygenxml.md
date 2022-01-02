@@ -71,7 +71,7 @@ In the code view, syntax highlighting colors different parts of the Markdown tex
 
 In the Project pane on the left, you can also switch to the DITA Map Manager to visually arrange your DITA map, which determines your sidebar navigation. The following screenshot shows how you can either work directly with the DITA map using XML tags or by dragging and dropping the topics in the hierarchical arrangement using the DITA Maps Manager. The Manager gives you a more visual tool to see how topics are nested.
 
-<figure><img src="{{site.media}}/oxygenxml_dita_maps_manager.png " alt="DITA Maps Manager in OxygenXML" /><figcaption><b>Figure 2.</b> The DITA Maps Manager on the left lets you more easily arrange your topics into the sidebar hierarchy you want. </figcaption></figure>
+<figure><img src="{{site.media}}/oxygenxml_dita_maps_manager.png" alt="DITA Maps Manager in OxygenXML" /><figcaption><b>Figure 2.</b> The DITA Maps Manager on the left lets you more easily arrange your topics into the sidebar hierarchy you want. </figcaption></figure>
 
 The ability to visually arrange the topics in the DITA Maps Manager is a huge convenience because you can see at a glance how the sidebar navigation will appear, without building your output. Some other docs-as-code tools rely on YAML frontmatter tags or a YAML file itself to manage sidebar navigation, which can be prone to error and extremely fussy with syntax, especially when you have hundreds of topics in your project. (For example, one extra space in a YAML file can cause the required indentation to be malformed.)
 
@@ -107,7 +107,15 @@ Overall, the Git functionality within Oxygen XML brings the most common Git work
 
 We've covered only a few aspects of docs-as-code tools, namely, Markdown format with text files, and content management with Git. For more details about using Oxygen XML as a docs-as-code tool, see this webinar: [Docs as Code - Documentation Management Inspired by Software Development" presented by Alex Jitianu](https://www.youtube.com/watch?v=MWsqi4Nb0fI).
 
+{% if site.format == "kindle" or site.format == "pdf" %}
+*Note: This content doesn't embed well in print because it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/pubapis_oxygenxml.html] to view the content.*
+{% endif %}
+
+{% if site.format == "web" %}
+
 <iframe width="640" height="385" src="https://www.youtube.com/embed/MWsqi4Nb0fI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{% endif %}
 
 The webinar covers ways to store and manage issues with GitHub, how to automate quality checks, how to set up continuous delivery and publishing with Travis CI, ways to collaborate with editing and reviews, and more.
 

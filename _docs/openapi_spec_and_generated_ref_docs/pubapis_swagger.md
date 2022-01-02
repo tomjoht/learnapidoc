@@ -139,12 +139,7 @@ First, you'll make sure you can view Swagger locally. Then you'll switch the Pet
     {: .tip}
     For more instructions in working with Swagger UI, see the [Swagger.io docs](https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/).
 
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Swagger UI tutorial]({{site.rooturl}}pubapis_swagger.html).*{% endif %}
-
-
-
 ## <i class="fa fa-user-circle"></i> Activity: View local OpenAPI file in Swagger UI {#view_local_openapi_swaggerui}
-
 
 In order to view a *local* OpenAPI file (rather than an OpenAPI file hosted on a web server), you'll need to run an HTTP server on your computer. This is because CORS (cross-origin resource sharing) security restrictions in Chrome will block Swagger UI from running. Swagger UI needs to load on a web server to fulfill the security requirements.
 

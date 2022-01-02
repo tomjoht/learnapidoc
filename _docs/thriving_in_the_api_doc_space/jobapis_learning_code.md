@@ -73,7 +73,7 @@ Neiman and [Andrew Davis](http://www.synergistech.com/) (a recruiter for API tec
 {% endif %}
 
 {% if site.format == "pdf" or site.format == "kindle" %}
-<figure><a href="https://www.youtube.com/embed/lmNHBg20ql0?t=1314"><img src="{{site.media}}/x.png" alt="James Neiman on the required technical baseline for API docs" caption="James Neiman on the required technical baseline for API docs" class="large" /></a><figcaption>James Neiman on the required technical baseline for API docs" caption="James Neiman on the required technical baseline for API docs</figcaption></figure>
+<figure><a href="https://www.youtube.com/embed/lmNHBg20ql0?t=1314"><img src="{{site.media}}/neimanpreso.png" alt="James Neiman on the required technical baseline for API docs" caption="James Neiman on the required technical baseline for API docs" class="large" /></a><figcaption>James Neiman on the required technical baseline for API docs" caption="James Neiman on the required technical baseline for API docs</figcaption></figure>
 {% endif %}
 
 Here's a transcript of two questions in their exchange (cleaned up a bit for readability):

@@ -1,5 +1,5 @@
-title: Documenting REST APIs
-media: https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api
+title: Documenting APIs
+description: A guide for technical writers and engineers documenting APIs
 language: english
 sidebar: docapis
 
@@ -11,7 +11,7 @@ destination: _site
 port: 4000
 highlighter: rouge
 exclude:
-  - mobi
+  - ebooks
   - pdf
 format: web
 

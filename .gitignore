@@ -3,12 +3,12 @@ _site/
 .jekyll-metadata
 **/.DS_Store
 pdf/docapis.pdf
-/mobi/
+/ebooks/
 *.mobi
 *.zip
 *.pdf
 *.epub
-mobi/docapis.mobi
-mobi/docapis.epub
+ebooks/docapis.mobi
+ebooks/docapis.epub
 reindex.sh
 images

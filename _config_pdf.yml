@@ -15,7 +15,7 @@ destination: _site
 port: 4000
 highlighter: rouge
 exclude:
-  - mobi
+  - ebooks
   - pdf
 
 markdown: kramdown

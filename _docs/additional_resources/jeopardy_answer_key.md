@@ -11,6 +11,12 @@ last-modified: 2019-03-31
 
 The API Jeopardy questions are in the [Conclusion section of Workshop Activities](workshop.html#conclusion).
 
+{% if site.format == "kindle" or site.format == "pdf" %}
+*Note: This content doesn't embed well in print because it contains JavaScript. Please go to [https://idratherbewriting.com/learnapidoc/jeopardy_answer_key.html] to view the content.*
+{% endif %}
+
+{% if site.format == "web" %}
+
 ### Questions (jeopardy answer key)
 
 {% for item in site.data.jeopardy.list %}
@@ -20,3 +26,5 @@ The API Jeopardy questions are in the [Conclusion section of Workshop Activities
 <p>{{item.question}}</p>
 </div>
 {% endfor %}
+
+{% endif %}

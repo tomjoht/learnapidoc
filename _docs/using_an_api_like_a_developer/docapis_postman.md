@@ -119,9 +119,6 @@ https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=-121.9689848&
 
 Postman has a lot of other functionality you can use. We'll revisit Postman later in the course for some other activities.
 
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Submit requests through Postman]({{site.rooturl}}docapis_postman.html).*{% endif %}
-
-
 {% comment %}{% include random_ad3.html %}{% endcomment %}
 
 ## Same request but in Paw instead of Postman

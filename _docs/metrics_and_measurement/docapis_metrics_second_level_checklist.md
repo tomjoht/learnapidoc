@@ -26,15 +26,11 @@ li.checkboxListType1 {
   margin-left: 25px;
   text-indent: -28px;
   margin-bottom: 20px;
-  line-height: 24px;
-}
-
-input[type=checkbox] {
-  margin-right: 10px;
+  line-height: 150%;
 }
 </style>
 
-{% assign cb1 = "<li class='checkboxListType1' markdown='span'><input type='checkbox'>" %}
+{% assign cb1 = "<li class='checkboxListType1' markdown='span'><i class='fa fa-check-square-o' aria-hidden='true'>" %}
 {% assign cb-end = "</li>" %}
 
 <div style="background-color: #eef; padding: 15px; margin-top: 30px; margin-bottom: 30px;" markdown="block">

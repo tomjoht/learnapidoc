@@ -269,7 +269,7 @@ I also [gave a presentation on Docs-as-code tools and workflows](https://idrathe
 {% if site.format == "kindle" or site.format == "pdf" %}
 
 {: .note}
-*Note: This content doesn't embed well in print, as it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/pubapis_overview.html] to view the content.*
+*Note: This content doesn't embed well in print because it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/pubapis_overview.html] to view the content.*
 {% elsif site.format == "web" %}
 
 <iframe  width="640" height="360" src="https://www.youtube.com/embed/Z3e_38WS-2Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

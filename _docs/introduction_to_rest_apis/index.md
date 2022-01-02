@@ -8,7 +8,6 @@ section: introtoapis
 path1: /docapis_introtoapis.html
 weight: 1.01
 redirect_from:
-- /restapicourse2-0/
 - /learnapidoc/introtoapis.html
 last-modified: 2021-12-28
 ---
@@ -191,3 +190,8 @@ If you've looking for additional resources to learn API documentation as well as
 * [Standards and Guidelines for API Documentation: For Technical Writers, Software Developers, Information and Software Architects](https://www.google.com/books/edition/Standards_and_Guidelines_for_API_Documen/B7LDzQEACAAJ?hl=en), by Anne Tarnoruder
 
 For even more books, see [Relevant Books](https://www.writethedocs.org/books/) from the Write the Docs site.
+
+{% comment %}
+images outside of the _docs directory. keep this reference so the image isn't deleted by the image_purge_output.sh script, which looks for image file references in the _docs and slides directories.
+restapi_kindletitle.png
+{% endcomment %}

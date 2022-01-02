@@ -110,7 +110,7 @@ Then populate the tooltip like this to get info from the glossary YAML file:
 The result:
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-*Note: This content doesn't embed well in print, as it contains JavaScript. Please go to [https://idratherbewriting.com/learnapidoc/docapis_glossary_section.html] to view the content.*
+*Note: This content doesn't embed well in print because it contains JavaScript. Please go to [https://idratherbewriting.com/learnapidoc/docapis_glossary_section.html] to view the content.*
 {% endif %}
 
 {% if site.format == "web" %}
@@ -138,7 +138,7 @@ You can then populate the popover with info from the glossary YAML file:
 The result:
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-*Note: This content doesn't embed well in print, as it contains JavaScript. Please go to [https://idratherbewriting.com/learnapidoc/docapis_glossary_section.html] to view the content.*
+*Note: This content doesn't embed well in print because it contains JavaScript. Please go to [https://idratherbewriting.com/learnapidoc/docapis_glossary_section.html] to view the content.*
 {% endif %}
 
 {% if site.format == "web" %}

@@ -15,7 +15,7 @@ The following are other video recordings for API-related presentations.
 {:toc}
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-*Note: This content doesn't embed well in print, as it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/docapis_course_videos.html] to view the content.*
+*Note: This content doesn't embed well in print because it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/docapis_course_videos.html] to view the content.*
 {% endif %}
 
 {% if site.format == "web" %}

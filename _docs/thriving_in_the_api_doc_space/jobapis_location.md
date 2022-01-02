@@ -764,5 +764,3 @@ In this activity, you'll get a sense of the skills needed for the jobs in your l
     *  Technical knowledge related to developer domain
     *  Experience writing developer documentation
 7.  Make a plan for how you'll match up your portfolio, tech knowledge, and experience related to what these job descriptions are asking for. You might need to dedicate more time to an [open-source documentation project]({{site.rooturl}}docapis_find_open_source_project.html) to build up the needed skills.
-
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Locations for API doc writer jobs](jobapis_location.html).*{% endif %}

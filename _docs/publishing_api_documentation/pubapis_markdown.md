@@ -155,9 +155,6 @@ To get a sense of how Markdown works, let's practice a bit with Markdown.
 
 3.  If desired, copy over the Markdown content from this [surfreportendpoint.md file](https://idratherbewriting.com/learnapidoc/assets/files/surfreportendpointdoc.md) and look at the various Markdown tags.
 
-{% if page.workshop_activities == true %}*For more information related to this activity, see [More about Markdown]({{site.rooturl}}pubapis_markdown.html).*{% endif %}
-
-
 Markdown handles most of the syntax I normally use, but for tables, I recommend simply using HTML syntax. HTML syntax gives you more control over column widths, which can be important when customizing tables, especially if the tables have code tags.
 
 ## Markdown and static site generators

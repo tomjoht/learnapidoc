@@ -72,9 +72,6 @@ In this activity, you'll review API reference documentation and identify the com
       *  Is there both a sample response *and* a response schema? (And is each element in the response actually described?)
       *  How does the doc site handle nested hierarchies in the response definitions?
 
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Evaluate API reference docs for core elements]({{site.rooturl}}docapis_api_reference_activity.html).*{% endif %}
-
-
 {% include random_ad1.html %}
 
 {% include image_ad_right.html %}

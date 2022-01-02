@@ -84,9 +84,6 @@ To find an open-source project with API doc needs:
     {: .note}
     You don't have to actually reach out or interact with the team yet. You're just gathering information and analyzing documentation needs here.
 
-{% if page.workshop_activities == true %}*For more information related to this activity, see [Find an open-source project]({{site.rooturl}}docapis_find_open_source_project.html).*{% endif %}
-
-
 ## Recognizing the type of API used in the project
 
 When you look for API projects, recognize that there are many different types of APIs. Many of the APIs you run across might be [native library APIs](nativelibraryapis_overview.html), which don't use web protocols to make requests and responses (as REST APIs do) but rather involve incorporating a language-specific library into the project. If the API seems to focus on a particular language, and the API documentation looks auto-generated, it's probably a native-library API.

@@ -1,0 +1,12 @@
+---
+title: something
+layout: null
+excerpt: "none - this is actually just a shell script. get the output after building jekyll and copy/paste it into image_purge_output.sh. Then run that script."
+---
+
+{% assign image_files = site.static_files | where: "image", true %}
+{% for myimage in image_files %}
+
+grep -R "{{myimage.name}}" {_docs*,slides*} && echo "File already exists." || rm ../images/{{myimage.name}}
+
+{% endfor %}

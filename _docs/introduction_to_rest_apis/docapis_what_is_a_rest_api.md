@@ -7,8 +7,6 @@ weight: 1.7
 sidebar: docapis
 section: introtoapis
 path1: /docapis_introtoapis.html
-redirect_from:
-- /docapis_what-is-a-rest-api/
 last-modified: 2020-03-15
 ---
 

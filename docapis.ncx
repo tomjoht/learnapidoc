@@ -1,5 +1,6 @@
 ---
 layout: null
+notes: "NCX stands for navigational control for XML. I think this file generates the table of contents visible when you click the Contents button in an ereader. The logic here is the same used for constructing the table of contents in the sidebar. I find that three levels doesn't work well on ereaders, so stick with just two. If you add property type: web under any sidebar entry, it will be excluded from this output. This file is referenced from the docapis.opf file."
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"
@@ -17,8 +18,8 @@ layout: null
 <meta name="dtb:totalPageCount" content="0"/>
 <meta name="dtb:maxPageNumber" content="0"/>
 </head>
-<docTitle><text>Documenting REST APIs</text></docTitle>
-<docAuthor><text>Tom Johnson</text></docAuthor>
+<docTitle><text>{{site.title}}</text></docTitle>
+<docAuthor><text>{{site.author}}</text></docAuthor>
 
 {% assign increment = 1 %}
 {% assign sidebar = site.data[site.sidebar] %}

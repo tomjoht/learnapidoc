@@ -23,7 +23,7 @@ You can view the [slides here](https://idratherbewriting.com/learnapidoc/slides/
 You can also view a recorded webinar where I talk through the results here:
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-*Note: This content doesn't embed well in print, as it contains a YouTube video. Please go to [https://idratherbewriting.com/learnapidoc/docapis_course_videos.html] to view the content.*
+*Note: This content doesn't embed well in print because it contains a YouTube video. Please go to [https://idratherbewriting.com/learnapidoc/docapis_course_videos.html] to view the content.*
 {% endif %}
 
 {% if site.format == "web" %}

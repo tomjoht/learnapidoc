@@ -15,12 +15,12 @@ I recorded this full-day API documentation in Menlo Park, California, on Novembe
 {:toc}
 
 {% if site.format == "kindle" or site.format == "pdf" %}
-*Note: This content doesn't embed well in print, as it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/docapis_course_videos.html] to view the content.*
+*Note: This content doesn't embed well in print because it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/docapis_course_videos.html] to view the content.*
 {% endif %}
 
 {% if site.format == "web" %}
 
-{% include note.html content="For the most recent workshop recording, see the [Video recordings of API doc workshops](docapis_workshop_videos.html)." %}
+{% include note.html content="For the most recent workshop recording, see the [Video recordings of API doc workshops](docapis_course_videos.html)." %}
 
 {% comment %}{% include random_ad3.html %}{% endcomment %}
 
