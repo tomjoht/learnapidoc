@@ -139,7 +139,7 @@ The longer the endpoint, the more cumbersome the reference becomes. These kinds 
 
 ## Endpoint for surfreport API
 
-Let's create the Endpoints and methods section for our [fictitious surfrefport API](docapis_new_endpoint_to_doc.html). Here's my approach:
+Let's create the Endpoints and methods section for our [fictitious surfreport API](docapis_new_endpoint_to_doc.html). Here's my approach:
 
 <div class="docSample">
 {% include_relative surfreport_endpoint.html %}

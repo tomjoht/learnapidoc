@@ -9,12 +9,12 @@ weight: 1.21
 last-modified: 2022-01-01
 ---
 
-<figure><a class="noCrossRef" href="https://idbwrtng.com/learnapidoc-pdf"><img class="tiny" style="float: right; border: 1px solid #dedede; margin-left: 10px;" src="{{site.media}}/ebook_cover.svg" alt="Documenting APIs ebook - You can read this course content as an ebook or PDF." /></a></figure>
+<figure><a class="noCrossRef" href="https://idbwrtng.com/learnapidoc-pdf"><img class="tiny" style="float: right; border: 4px solid #dedede; margin-left: 10px;" src="{{site.media}}/ebook_cover.svg" alt="Documenting APIs ebook - You can read this course content as an ebook or PDF." /></a></figure>
 
 You can read this content in several alternative formats:
 
 {: style="margin-left: 20px"}
-&ndash; <a href="https://idbwrtng.com/learnapidoc-pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a> (last-generated: {{page.last-modified}}). 900+ pages
+&ndash; <a href="https://idbwrtng.com/learnapidoc-pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a> (last-generated: {{page.last-modified}}) ~ 900 pages
 
 {: style="margin-left: 20px"}
 &ndash; <a href="https://idbwrtng.com/learnapidoc-mobi"><i class="fa fa-book" aria-hidden="true"></i> Kindle (MOBI)</a> (last-generated: {{page.last-modified}}) ~250 MB

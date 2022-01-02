@@ -103,7 +103,7 @@ Add in the query parameters for the API key and units:
 https://api.openweathermap.org/data/2.5/forecast?zip=95050&appid=APIKEY&units=imperial
 ```
 
-(In the above code, replace out `APIKEY` with your own API key.)
+(In the above code, replace `APIKEY` with your own API key.)
 
 Observe how the response contains a `list` that provides the forecast details for five days.
 
