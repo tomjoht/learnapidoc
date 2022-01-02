@@ -21,7 +21,7 @@ Developer documentation tends to include a lot of code samples. These code sampl
 
 Code samples play an essential role in helping developers use an API. Code is literally another language, and when users who speak that language see it, the code communicates with them in powerful ways that non-code text (however descriptive it is) can't achieve.
 
-<figure><img class="docimage medium border" src="{{site.media}}/{% if site.kindle %}nonref_codetutorials.png{% else %}nonref_codetutorials.svg{% endif %}" alt="Code tutorials" /><figcaption>Code is in another language, so as much as you might try to describe the communication in this other language through text, it often falls short. When developers see code, they can often read the code and understand it natively.</figcaption></figure>
+<figure><img class="docimage medium border" src="{{site.media}}/{% if site.format == "kindle" %}nonref_codetutorials.png{% else %}nonref_codetutorials.svg{% endif %}" alt="Code tutorials" /><figcaption>Code is in another language, so as much as you might try to describe the communication in this other language through text, it often falls short. When developers see code, they can often read the code and understand it natively.</figcaption></figure>
 
 In user testing that Twilio did with their documentation, they found that pages that started more quickly with code samples performed better with users.
 

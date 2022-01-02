@@ -92,7 +92,6 @@ layout: null
 <manifest>
 <!-- HTML content files [mandatory] -->
 <item id="titlepage" href="titlepage.xhtml" media-type="application/xhtml+xml"/>
-<item id="item_tocstart" media-type="application/xhtml+xml" href="tocstart.html"></item>
 {% for folder in sidebar %}
     <item id="item_{{folder.jurl | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{folder.jurl | remove: "/" }}"></item>
 {% for folderitem in folder.folderitems %}
@@ -163,8 +162,6 @@ layout: null
 
   <!-- the spine defines the linear reading order of the course -->
 
-  <itemref idref="item_tocstart" />
-
 {% for folder in sidebar %}
   <itemref idref="item_{{folder.jurl | remove: "/" | remove: ".html" }}"/>
 {% for folderitem in folder.folderitems %}
@@ -218,8 +215,9 @@ layout: null
 -->
 
 <guide>
-	<reference type="toc" title="Table of Contents" href="toc.html"></reference>
-	<reference type="text" title="Table of Contents" href="tocstart.html"></reference>
+	<reference type="toc" title="Table of Contents" href="tocstart.html"></reference>
+  <reference type="text" title="Start Page" href="index.html"></reference>
+
 </guide>
 
 </package>

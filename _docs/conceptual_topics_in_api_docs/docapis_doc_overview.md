@@ -31,7 +31,7 @@ Too often with developer documentation, the documentation gets quickly mired in 
 
 These are essentially who/what/when/where/why/how questions &mdash; not rocket science here, just the basic fundamentals of expository writing.
 
-<figure><img class="docimage medium border" src="{{site.media}}/{% if site.kindle %}nonref_overview.png{% else %}nonref_overview.svg{% endif %}" alt="product overview" /><figcaption>The product overview provides high-level detail about the purpose, audience, and market need for your API.</figcaption></figure>
+<figure><img class="docimage medium border" src="{{site.media}}/{% if site.format == "kindle" %}nonref_overview.png{% else %}nonref_overview.svg{% endif %}" alt="product overview" /><figcaption>The product overview provides high-level detail about the purpose, audience, and market need for your API.</figcaption></figure>
 
 Keep in mind that there are thousands of APIs. If people are browsing your API, their first and most pressing question is, what information does it provide? Is this information relevant and useful to my needs? How does it differ from other products in this same space? The user's first question is usually not "How do I configure this endpoint."
 

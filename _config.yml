@@ -1,8 +1,9 @@
 title: Documenting APIs
 description: A guide for technical writers and engineers documenting APIs
+site_logo_file: learnapidoclogo-01.svg
 language: english
 sidebar: docapis
-
+media: https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api
 # Link to home
 url: https://idratherbewriting.com
 baseurl: /learnapidoc

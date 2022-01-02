@@ -34,7 +34,7 @@ But many times, acronyms and unfamiliar terms are an unavoidable part of a speci
 
 To simplify the language, you can't just omit the necessary terminology for the domain and substitute in more friendly names. You have to teach the user the right language so they can participate in the conversation. One approach for teaching users how to speak this language involves defining unfamiliar words for the user by way of a glossary.
 
-<figure><img class="docimage medium border" src="{{site.media}}/{% if site.kindle %}nonref_glossary.png{% else %}nonref_glossary.svg{% endif %}" alt="Glossary" /><figcaption>Glossaries not only provide clarity about terms for users but also help the writers think more clearly and consistently about the topic.</figcaption></figure>
+<figure><img class="docimage medium border" src="{{site.media}}/{% if site.format == "kindle" %}nonref_glossary.png{% else %}nonref_glossary.svg{% endif %}" alt="Glossary" /><figcaption>Glossaries not only provide clarity about terms for users but also help the writers think more clearly and consistently about the topic.</figcaption></figure>
 
 {: .tip}
 I provide an [API glossary here](api-glossary.html) that defines many terms related to API documentation. If you run into unfamiliar jargon that I don't define in the topic, you can always consult the glossary.

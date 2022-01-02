@@ -19,7 +19,7 @@ Quick reference guides serve a different function than [getting started tutorial
 
 Whether for end-user documentation or developer documentation, the quick reference guide provides a 1-2-page guide that provides a brief summary of the core tasks and features in the system.
 
-<figure><img class="docimage large border" src="{{site.media}}/{% if site.kindle %}nonref_quickreference.png{% else %}nonref_quickreference.svg{% endif %}" alt="Quick reference" /><figcaption>Quick reference guides compress the key information into a brief format for easy consumption</figcaption></figure>
+<figure><img class="docimage large border" src="{{site.media}}/{% if site.format == "kindle" %}nonref_quickreference.png{% else %}nonref_quickreference.svg{% endif %}" alt="Quick reference" /><figcaption>Quick reference guides compress the key information into a brief format for easy consumption</figcaption></figure>
 
 The quick reference guide should provide the user with just enough information to get the gist of what the system is about, including the key endpoints and tasks. Often with APIs, the endpoints have relationships with each other that you can depict visually. Here's an API diagram I created at a previous company:
 

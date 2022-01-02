@@ -16,57 +16,30 @@ If you're looking to see what's new in the API doc site/course, you can browse n
 
 The following are the most recent updates to the API documentation course.
 
-<table>
-  <col width="20%">
-  <col width="30%">
-  <col width="50%">
-<thead>
-<tr>
-  <th>Last updated</th>
-  <th>Page</th>
-  <th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>December 2021</td>
-  <td markdown="span">[PDF and eBook formats](https://idratherbewriting.com/learnapidoc/docapis_formats.html){: .noCrossRef}</td>
-  <td markdown="span">Created PDF, Kindle, and EPUB versions of the course that you can download.</td>
-</tr>
-<tr>
-  <td>December 2021</td>
-  <td markdown="span">[Broadcasting your meeting notes to influence a wider audience](docapis_meeting_notes.html)</td>
-  <td markdown="span">Added a new article about why you should broadcast your meeting notes as a tool for influencing other groups.</td>
-</tr>
-<tr>
-  <td>November 2021</td>
-  <td markdown="span">
-  [Overview of the writing process](docapis_writing_process_overview.html)<br/>
-  [1. Planning](docapis_planning.html)<br/>
-  [2. Information gathering](docapis_information_gathering.html)<br/>
-  [3. Writing](docapis_writing.html)<br/>
-  [4. Reviewing](docapis_reviewing.html)<br/>
-  [5. Publishing](docapis_publishing.html)
-  </td>
-  <td>A new section that covers the process for researching, drafting, writing, editing, and publishing documentation.</td>
-</tr>
-<tr>
-  <td>October 2021</td>
-  <td markdown="span">[Using Oxygen XML with docs-as-code workflows](pubapis_oxygenxml.html)</td>
-  <td markdown="span">Added a new article in the publishing tools section using Oxygen XML.</td>
-</tr>
-<tr>
-  <td>October 2021</td>
-  <td markdown="span">[Other resources section](index.html#other-resources) in Course overview</td>
-  <td markdown="span">Updated the Course overview with a list of additional resources (books, courses, etc.).</td>
-</tr>
-<tr>
-  <td>August 2021</td>
-  <td markdown="span">[Ensuring documentation coverage with each software release](docapis_release_process.html)</td>
-  <td markdown="span">Covers best practices for ensuring that each new feature in a release has adequate documentation coverage.</td>
-</tr>
-</tbody>
-</table>
+## December 2021
+* [PDF and eBook formats](docapis_formats.html). Created PDF, Kindle, and EPUB versions of the course that you can download.
+* [Broadcasting your meeting notes to influence a wider audience](docapis_meeting_notes.html). Explains how to broadcast your meeting notes as a tool for influencing other groups.
+
+## November 2021
+
+* [The writing process](writing_process.html). A new section that covers the process for researching, drafting, writing, editing, and publishing documentation. Includes these topics:
+  * [Overview of the writing process](docapis_writing_process_overview.html)
+  * [1. Planning](docapis_planning.html)
+  * [2. Information gathering](docapis_information_gathering.html)
+  * [3. Writing](docapis_writing.html)
+  * [4. Reviewing](docapis_reviewing.html)
+  * [5. Publishing](docapis_publishing.html)
+
+## October 2021
+
+[Using Oxygen XML with docs-as-code workflows](pubapis_oxygenxml.html). Added a new article in the publishing tools section using Oxygen XML.
+* [Other resources section in course overview](index.html#other-resources). Updated the Course overview with a list of additional resources (books, courses, etc.).
+
+
+## August 2021
+
+* [Ensuring documentation coverage with each software release](docapis_release_process.html). Covers best practices for ensuring that each new feature in a release has adequate documentation coverage.
+
 
 ## Auto-generated list of updated pages
 
@@ -92,14 +65,10 @@ This list is auto-generated based on the last-modified timestamp on pages, scope
   {% if post_in_seconds > recent_posts %}
   {% assign count = count | plus:1 %}
 
-<tr>
-<td>{{post.last-modified | date: "%b %d, %Y" }}</td>
-<td><a href="{{ post.permalink | remove: "/" }}">{{ post.title }}</a> </td>
-</tr>
+* {{post.last-modified | date: "%b %d, %Y" }}: <a href="{{ post.permalink | remove: "/" }}">{{ post.title }}
 {% if count == 15 %}{% break %}{% endif %}
 {% endif %}
 {% endfor %}
-</table>
 
 {% comment %}
 details about the script logic above: https://stackoverflow.com/questions/46672231/in-jekyll-how-to-show-posts-from-last-week

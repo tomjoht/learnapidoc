@@ -45,7 +45,7 @@ The web protocol is part of the beauty of web services: they are language agnost
 
 The following diagram shows the general model of a REST API:
 
-<figure><img class="docimage large" src="{{site.media}}/{% if site.kindle %}restapi_restapi.png{% else %}restapi_restapi.svg{% endif %}" alt="General model of a REST API" /><figcaption>General model of a REST API</figcaption></figure>
+<figure><img class="docimage large" src="{{site.media}}/{% if site.format == "kindle" %}restapi_restapi.png{% else %}restapi_restapi.svg{% endif %}" alt="General model of a REST API" /><figcaption>General model of a REST API</figcaption></figure>
 
 As you can see, there's a request and a response between a client to the API server. The client and server can be based in any language, but HTTP is the protocol used to transport the message. This request-and-response pattern is fundamentally how REST APIs work.
 
@@ -122,7 +122,7 @@ The terminology of "GET requests" and "message responses" transported over "HTTP
 
 If you open a browser and go to [https://idratherbewriting.com](https://idratherbewriting.com), you're really using HTTP protocol (`https://`) to submit a GET request to the resource available on a web server. The response from the server sends the content at this resource back to you using HTTP. Your browser is just a client that makes the message response look pretty.
 
-<figure><img class="docimage medium" src="{{site.media}}/{% if site.kindle %}restapi_www.png{% else %}restapi_www.svg{% endif %}" alt="Web as REST API" /><figcaption>Web as REST API</figcaption></figure>
+<figure><img class="docimage medium" src="{{site.media}}/{% if site.format == "kindle" %}restapi_www.png{% else %}restapi_www.svg{% endif %}" alt="Web as REST API" /><figcaption>Web as REST API</figcaption></figure>
 
 You can see this response in [curl](docapis_install_curl.html) if you open a terminal prompt and type `curl https://idratherbewriting.com`. (This assumes you have [curl installed](docapis_install_curl.html).)
 

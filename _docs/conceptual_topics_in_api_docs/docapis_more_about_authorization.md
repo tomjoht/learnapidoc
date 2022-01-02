@@ -24,7 +24,7 @@ First, let's define some key terms:
 
 An API might authenticate you but not authorize you to make a certain request.
 
-<figure><img class="docimage medium border" src="{{site.media}}/{% if site.kindle %}nonref_authentication.png{% else %}nonref_authentication.svg{% endif %}" alt="Authentication versus authorization" /><figcaption>Authentication and authorization</figcaption></figure>
+<figure><img class="docimage medium border" src="{{site.media}}/{% if site.format == "kindle" %}nonref_authentication.png{% else %}nonref_authentication.svg{% endif %}" alt="Authentication versus authorization" /><figcaption>Authentication and authorization</figcaption></figure>
 
 ## Consequences if an API lacks security
 
@@ -59,7 +59,7 @@ There are several methods for authorization. The following are various types of 
 
 Most APIs require you to sign up for an API key in order to use the API. The API key is a long string that you usually include either in the request URL or request header. The API key mainly functions as a way to identify the person making the API call (authenticating you to use the API). The API key might also be associated with a specific app that you register.
 
-<figure><img class="docimage large" src="{{site.media}}/{% if site.kindle %}nonref-docs-preso_apikey.png{% else %}nonref-docs-preso_apikey.svg{% endif %}" alt="APK keys use a string in a header property to authorize requests" /><figcaption>APK keys use a string in a header property to authorize requests</figcaption></figure>
+<figure><img class="docimage large" src="{{site.media}}/{% if site.format == "kindle" %}nonref-docs-preso_apikey.png{% else %}nonref-docs-preso_apikey.svg{% endif %}" alt="APK keys use a string in a header property to authorize requests" /><figcaption>APK keys use a string in a header property to authorize requests</figcaption></figure>
 
 APIs might give you both a public and private key. The public key is usually included in the request, while the private key is treated more like a password and used only in server-to-server communication. For some API documentation sites, when you're logged into the site, your API key automatically gets populated into the sample code and API Explorer.
 
@@ -99,7 +99,7 @@ When the receiver (the API server) receives the request, it takes the same syste
 
 Here's a diagram depicting this workflow:
 
-<figure><img class="docimage medium border" src="{{site.media}}/{% if site.kindle %}restapi_hmac.png{% else %}restapi_hmac.svg{% endif %}" alt="HMAC workflow" /><figcaption>HMAC workflow</figcaption></figure>
+<figure><img class="docimage medium border" src="{{site.media}}/{% if site.format == "kindle" %}restapi_hmac.png{% else %}restapi_hmac.svg{% endif %}" alt="HMAC workflow" /><figcaption>HMAC workflow</figcaption></figure>
 
 The important point is that the secret key (critical to reconstructing the hash) is known only to the sender and receiver. The secret key is not included in the request. HMAC security is used when you want to ensure the request is both authentic and hasn't been tampered with.
 
@@ -119,7 +119,7 @@ In contrast, three-legged OAuth is used when you need to protect sensitive data.
 
 Here's the basic workflow of OAuth 2.0:
 
-<figure><img class="docimage medium border" src="{{site.media}}/{% if site.kindle %}restapi_oauth.png{% else %}restapi_oauth.svg{% endif %}" alt="OAuth authentication" /><figcaption>OAuth authentication</figcaption></figure>
+<figure><img class="docimage medium border" src="{{site.media}}/{% if site.format == "kindle" %}restapi_oauth.png{% else %}restapi_oauth.svg{% endif %}" alt="OAuth authentication" /><figcaption>OAuth authentication</figcaption></figure>
 
 First, the consumer application sends over an application key and secret to a login page at the authentication server. If authenticated, the authentication server responds to the user with an access token.
 

@@ -12,7 +12,7 @@ redirect_from:
 last-modified: 2021-12-28
 ---
 
-In this course on writing documentation for REST APIs, instead of just talking about abstract concepts, I contextualize REST APIs with a direct, hands-on approach. You'll first learn about API documentation by using a simple weather API to put a weather forecast on your site.
+In this course on writing documentation for APIs, instead of just talking about abstract concepts, I contextualize APIs with a direct, hands-on approach. You'll first learn about API documentation by using a simple weather API to put a weather forecast on your site.
 
 As you use the API, you'll learn about endpoints, parameters, data types, authentication, curl, JSON, the command line, Chrome's Developer Console, JavaScript, and more. The idea is that rather than learning about these concepts independent of any context, you learn them by immersing yourself in a real scenario while using an API. Immersion in real scenarios makes these tools and technologies more meaningful.
 
@@ -25,7 +25,7 @@ We'll then transition into standards, tools, and specifications for REST APIs. Y
 
 In a nutshell, REST APIs (which are a type of web API) involve requests and responses, not too unlike visiting a web page. You make a request to a resource stored on a server, and the server responds with the requested information. The protocol used to transport the data is HTTP. "REST" stands for Representational State Transfer.
 
-<figure><img class="docimage" src="{{site.media}}/{% if site.kindle %}restapi_apidoc.png{% else %}restapi_apidoc.svg{% endif %}" alt="Response and request model for REST APIs" /><figcaption>REST APIs involve requests and responses over HTTP protocol</figcaption></figure>
+<figure><img class="docimage large" src="{{site.media}}/{% if site.format == "kindle" %}restapi_apidoc.png{% else %}restapi_apidoc.svg{% endif %}" alt="Response and request model for REST APIs" /><figcaption>REST APIs involve requests and responses over HTTP protocol</figcaption></figure>
 
 I dive more into the principles of REST in [What is a REST API?](docapis_what_is_a_rest_api.html) In your REST API documentation, you describe the various endpoints available, their methods, parameters, and other details, and you also document sample responses from the endpoints.
 

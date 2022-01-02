@@ -21,7 +21,7 @@ Following the [product overview section](docapis_doc_overview.html), you usually
 
 The Getting Started tutorial is somewhat like the typical Hello World tutorial in developer documentation, but with an API. Your goal is to hold a user's hand from start to finish in producing the simplest possible output with the system. For Hello World tutorials, the simplest output might just be a message that says "Hello World." For an API, it might be a successful response from the most basic request.
 
-<figure><img class="docimage medium" src="{{site.media}}/{% if site.kindle %}timetohelloworld.png{% else %}timetohelloworld.svg{% endif %}" alt="Getting started tutorials are like Hello World tutorials." /><figcaption>Think of getting started tutorials as a kind of Hello World tutorial with the API. How long would it take for a developer to get the simplest possible response using your API?</figcaption></figure>
+<figure><img class="docimage medium" src="{{site.media}}/{% if site.format == "kindle" %}timetohelloworld.png{% else %}timetohelloworld.svg{% endif %}" alt="Getting started tutorials are like Hello World tutorials." /><figcaption>Think of getting started tutorials as a kind of Hello World tutorial with the API. How long would it take for a developer to get the simplest possible response using your API?</figcaption></figure>
 
 Both hello-world tutorials and getting-started tutorials share the same goal: to show a user how to use a framework, API, or some other system to get the simplest and easiest result, so they get a end-to-end sense of how it works.
 
@@ -36,7 +36,7 @@ The Getting Started tutorial might involve the following:
 * Making a request
 * Evaluating the response
 
-<figure><img class="docimage medium border" src="{{site.media}}/{% if site.kindle %}nonref_gettingstarted.png{% else %}nonref_gettingstarted.svg{% endif %}" alt="Getting started" /><figcaption>The Getting started tutorial usually walks users through the process from beginning to end but in a compressed, simple way</figcaption></figure>
+<figure><img class="docimage medium border" src="{{site.media}}/{% if site.format == "kindle" %}nonref_gettingstarted.png{% else %}nonref_gettingstarted.svg{% endif %}" alt="Getting started" /><figcaption>The Getting started tutorial usually walks users through the process from beginning to end but in a compressed, simple way</figcaption></figure>
 
 Put a link to your Getting Started tutorial on your documentation homepage. Make it as easy as possible for developers to use the API to get some result. This might mean using pre-provisioned accounts or setup configurations.
 

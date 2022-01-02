@@ -23,7 +23,7 @@ Although many of the topics in API documentation are standard, there will usuall
 
 The list of topics might include topics such as the following: pagination, time ranges, fault tolerance, cache values, connectivity, timeouts, downtime, SSL, versions, testing and validation, exports, languages, number handling, expanding resources, notifications, CORS, localization, and more.
 
-<figure><img class="docimage medium border" src="{{site.media}}/{% if site.kindle %}nonref_bestpractices.png{% else %}nonref_bestpractices.svg{% endif %}" alt="Best practices" /><figcaption>Best practices cover a range of topics usually unique to your API</figcaption></figure>
+<figure><img class="docimage medium border" src="{{site.media}}/{% if site.format == "kindle" %}nonref_bestpractices.png{% else %}nonref_bestpractices.svg{% endif %}" alt="Best practices" /><figcaption>Best practices cover a range of topics usually unique to your API</figcaption></figure>
 
 {% include random_ad2.html %}
 

@@ -45,7 +45,7 @@ Having developers write or contribute to documentation should inform your tool c
 
 In short, treating docs like code means to use the same systems, processes, and workflows with docs as you do with programming code.
 
-<figure><img class="docimage large" src="{{site.media}}/{% if site.kindle %}limitstodocsascode.png{% else %}limitstodocsascode.svg{% endif %}" alt="Treating docs like code" /><figcaption>Treating docs like code</figcaption></figure>
+<figure><img class="docimage large" src="{{site.media}}/{% if site.format == "kindle" %}limitstodocsascode.png{% else %}limitstodocsascode.svg{% endif %}" alt="Treating docs like code" /><figcaption>Treating docs like code</figcaption></figure>
 
 ## Advantages to docs-as-code approaches for docs {#docsascode_advantages}
 
