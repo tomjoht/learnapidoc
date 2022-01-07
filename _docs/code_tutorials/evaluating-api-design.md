@@ -1,6 +1,6 @@
 ---
 title: "API design and usability"
-permalink: /evaluating-api-design.html
+permalink: evaluating-api-design.html
 course: "Documenting REST APIs"
 weight: 8.8
 sidebar: docapis

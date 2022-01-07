@@ -1,6 +1,6 @@
 ---
 title: Inspect the JSON from the response payload
-permalink: /docapis_json_console.html
+permalink: docapis_json_console.html
 categories:
 - api-doc
 keywords:

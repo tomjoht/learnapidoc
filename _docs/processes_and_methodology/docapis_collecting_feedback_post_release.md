@@ -1,6 +1,6 @@
 ---
 title: Collecting feedback post-release
-permalink: /docapis_collecting_feedback_post_release.html
+permalink: docapis_collecting_feedback_post_release.html
 course: "Documenting REST APIs"
 weight: 12.8
 sidebar: docapis

@@ -1,6 +1,6 @@
 ---
 title: "SwaggerHub introduction and tutorial"
-permalink: /pubapis_swaggerhub_smartbear.html
+permalink: pubapis_swaggerhub_smartbear.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 4.6

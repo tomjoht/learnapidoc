@@ -1,7 +1,7 @@
 ---
 title: "Test all instructions yourself"
 course: "Documenting REST APIs"
-permalink: /testingdocs_test_your_instructions.html
+permalink: testingdocs_test_your_instructions.html
 weight: 6.3
 sidebar: docapis
 section: testingdocs

@@ -1,6 +1,6 @@
 ---
 title: 'Overview for publishing API docs'
-permalink: /pubapis_overview.html
+permalink: pubapis_overview.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 9.01

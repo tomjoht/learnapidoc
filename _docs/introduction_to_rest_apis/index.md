@@ -1,6 +1,6 @@
 ---
 title: "Documenting APIs: A guide for technical writers and engineers"
-permalink: /index.html
+permalink: index.html
 sidebar: docapis
 type: homepage
 path: Introduction to REST APIs

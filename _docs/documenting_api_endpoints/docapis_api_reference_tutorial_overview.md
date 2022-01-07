@@ -1,6 +1,6 @@
 ---
 title: "API reference tutorial overview"
-permalink: /docapis_api_reference_tutorial_overview.html
+permalink: docapis_api_reference_tutorial_overview.html
 course: "Documenting REST APIs"
 weight: 3.1
 sidebar: docapis

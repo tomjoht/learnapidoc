@@ -1,6 +1,6 @@
 ---
 title: Get authorization keys
-permalink: /docapis_get_auth_keys.html
+permalink: docapis_get_auth_keys.html
 keywords:
 course: "Documenting REST APIs"
 weight: 2.1

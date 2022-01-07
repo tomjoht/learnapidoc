@@ -1,6 +1,6 @@
 ---
 title: "Static site generators"
-permalink: /pubapis_static_site_generators.html
+permalink: pubapis_static_site_generators.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 9.91

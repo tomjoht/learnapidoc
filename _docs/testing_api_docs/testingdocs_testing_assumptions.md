@@ -1,7 +1,7 @@
 ---
 title: "Test your assumptions against users"
 course: "Documenting REST APIs"
-permalink: /testingdocs_testing_assumptions.html
+permalink: testingdocs_testing_assumptions.html
 weight: 6.4
 sidebar: docapis
 section: testingdocs

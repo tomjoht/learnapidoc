@@ -1,6 +1,6 @@
 ---
 title: "Activity: Generate a Javadoc from a sample project"
-permalink: /nativelibraryapis_create_javadoc.html
+permalink: nativelibraryapis_create_javadoc.html
 course: "Documenting REST APIs"
 weight: 11.3
 sidebar: docapis

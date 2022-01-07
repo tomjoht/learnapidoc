@@ -1,6 +1,6 @@
 ---
 title: "Table of Contents"
-permalink: /tocstart_fulldetails.html
+permalink: tocstart_fulldetails.html
 course: "Documenting REST APIs"
 sidebar: docapis
 progress: false

@@ -1,6 +1,6 @@
 ---
 title: "Access and print a specific JSON value"
-permalink: /docapis_access_json_values.html
+permalink: docapis_access_json_values.html
 categories:
 - api-doc
 keywords:

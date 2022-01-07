@@ -1,6 +1,6 @@
 ---
 title: Why documenting code is so difficult
-permalink: /docapis_code_difficulty.html
+permalink: docapis_code_difficulty.html
 keywords:
 course: "Documenting REST APIs"
 weight: 8.2

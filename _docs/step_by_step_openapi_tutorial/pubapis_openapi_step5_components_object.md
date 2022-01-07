@@ -1,6 +1,6 @@
 ---
 title: "Step 5: The components object (OpenAPI tutorial)"
-permalink: /pubapis_openapi_step5_components_object.html
+permalink: pubapis_openapi_step5_components_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 5.7

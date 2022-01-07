@@ -95,27 +95,27 @@ layout: null
 <item id="item_tocstart" media-type="application/xhtml+xml" href="tocstart.html"></item>
 
 {% for folder in sidebar %}
-    <item id="item_{{folder.jurl | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{folder.jurl | remove: "/" }}"></item>
+    <item id="item_{{folder.jurl| remove: ".html" }}" media-type="application/xhtml+xml" href="{{folder.jurl }}"></item>
 {% for folderitem in folder.folderitems %}
   {% if folderitem.title %}
     {% unless folderitem.type == "web" %}
-      <item id="item_{{folderitem.jurl | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{folderitem.jurl | remove: "/" }}"></item>
+      <item id="item_{{folderitem.jurl| remove: ".html" }}" media-type="application/xhtml+xml" href="{{folderitem.jurl }}"></item>
     {% endunless %}
   {% endif %}
       {% for subfolder in folderitem.subfolders %}
-    <item id="item_{{subfolder.jurl | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{subfolder.jurl | remove: "/" }}"></item>
+    <item id="item_{{subfolder.jurl| remove: ".html" }}" media-type="application/xhtml+xml" href="{{subfolder.jurl }}"></item>
               {% for subfolderitem in subfolder.subfolderitems %}
                 {% if subfolderitem.title %}
                   {% unless subfolderitem.type == "web" %}
-                    <item id="item_{{subfolderitem.jurl | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{subfolderitem.jurl | remove: "/" }}"></item>
+                    <item id="item_{{subfolderitem.jurl| remove: ".html" }}" media-type="application/xhtml+xml" href="{{subfolderitem.jurl }}"></item>
                   {% endunless %}
                 {% endif %}
                       {% for subsubfolder in subfolderitem.subsubfolders %}
-                          <item id="item_{{subsubfolder.jurl | remove: "/" }}" media-type="application/xhtml+xml" href="{{subsubfolder.jurl | remove: "/" }}"></item>
+                          <item id="item_{{subsubfolder.jurl| remove: ".html" }}" media-type="application/xhtml+xml" href="{{subsubfolder.jurl }}"></item>
                             {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
                               {% if subsubfolderitem.title %}
                                 {% unless subsubfolderitem.type == "web" %}
-                                  <item id="item_{{subsubfolderitem.jurl | remove: "/" | remove: ".html" }}" media-type="application/xhtml+xml" href="{{subsubfolderitem.jurl | remove: "/" }}"></item>
+                                  <item id="item_{{subsubfolderitem.jurl| remove: ".html" }}" media-type="application/xhtml+xml" href="{{subsubfolderitem.jurl }}"></item>
                                  {% endunless %}
                               {% endif %}
                             {% endfor %}
@@ -140,7 +140,7 @@ layout: null
     <item id="css_syntax" href="assets/css/syntax.css" media-type="text/css"/>
 
   <!-- table of contents [mandatory] -->
-	<item id="My_Table_of_Contents" media-type="application/x-dtbncx+xml" href="docapis.ncx"/>
+	<item id="My_Table_of_Contents" media-type="application/x-dtbncx+xml" href="docapis_test.ncx"/>
 
   <!-- cover image [mandatory] -->
   <item id="My_Cover" media-type="image/png" href="images/{{site.cover_image}}"/>
@@ -165,27 +165,27 @@ layout: null
   <!-- the spine defines the linear reading order of the course -->
 
 {% for folder in sidebar %}
-  <itemref idref="item_{{folder.jurl | remove: "/" | remove: ".html" }}"/>
+  <itemref idref="item_{{folder.jurl| remove: ".html" }}"/>
 {% for folderitem in folder.folderitems %}
   {% if folderitem.title %}
   {% unless folderitem.type == "web" %}
-    <itemref idref="item_{{folderitem.jurl | remove: "/" | remove: ".html" }}"/>
+    <itemref idref="item_{{folderitem.jurl| remove: ".html" }}"/>
     {% endunless %}
     {% endif %}
       {% for subfolder in folderitem.subfolders %}
-          <itemref idref="item_{{subfolder.jurl | remove: "/" | remove: ".html" }}"/>
+          <itemref idref="item_{{subfolder.jurl| remove: ".html" }}"/>
               {% for subfolderitem in subfolder.subfolderitems %}
                 {% if subfolderitem.title %}
                 {% unless subfolderitem.type == "web" %}
-                  <itemref idref="item_{{subfolderitem.jurl | remove: "/" | remove: ".html" }}"/>
+                  <itemref idref="item_{{subfolderitem.jurl| remove: ".html" }}"/>
                   {% endunless %}
                     {% endif %}
                       {% for subsubfolder in subfolderitem.subsubfolders %}
-                          <itemref idref="item_{{subsubfolder.jurl | remove: "/" | remove: ".html" }}"/>
+                          <itemref idref="item_{{subsubfolder.jurl| remove: ".html" }}"/>
                             {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
                               {% if subsubfolderitem.title %}
                               {% unless subsubfolderitem.type == "web" %}
-                                  <itemref idref="item_{{doc.subsubfolderitem | remove: "/" | remove: ".html" }}"/>
+                                  <itemref idref="item_{{doc.subsubfolderitem| remove: ".html" }}"/>
                                 {% endunless %}
                               {% endif %}
                             {% endfor %}

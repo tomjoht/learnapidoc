@@ -1,6 +1,6 @@
 ---
 title: "Activity: Evaluate API reference docs"
-permalink: /docapis_api_reference_activity.html
+permalink: docapis_api_reference_activity.html
 weight: 3.9
 sidebar: docapis
 section: docendpoints

@@ -1,6 +1,6 @@
 ---
 title: 'Get event information using the Eventbrite API'
-permalink: /docapis_eventbrite_example.html
+permalink: docapis_eventbrite_example.html
 sidebar: docapis
 course: "Documenting REST APIs"
 weight: 14.2

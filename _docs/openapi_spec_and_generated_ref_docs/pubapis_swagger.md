@@ -1,6 +1,6 @@
 ---
 title: "Swagger UI tutorial"
-permalink: /pubapis_swagger.html
+permalink: pubapis_swagger.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 4.5

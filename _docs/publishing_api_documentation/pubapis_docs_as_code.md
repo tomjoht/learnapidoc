@@ -1,6 +1,6 @@
 ---
 title: "Docs-as-code tools"
-permalink: /pubapis_docs_as_code.html
+permalink: pubapis_docs_as_code.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 9.3

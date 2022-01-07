@@ -1,6 +1,6 @@
 ---
 title: Menlo Park API Workshop Video Recording
-permalink: /menlo_park_workshop_recording.html
+permalink: menlo_park_workshop_recording.html
 course: "Documenting REST APIs"
 weight: 14.8
 sidebar: docapis

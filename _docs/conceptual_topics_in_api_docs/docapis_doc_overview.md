@@ -1,6 +1,6 @@
 ---
 title: API product overviews
-permalink: /docapis_doc_overview.html
+permalink: docapis_doc_overview.html
 keywords:
 course: "Documenting REST APIs"
 weight: 7.1

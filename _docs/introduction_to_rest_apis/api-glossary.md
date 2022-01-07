@@ -1,6 +1,6 @@
 ---
 title: Glossary
-permalink: /api-glossary.html
+permalink: api-glossary.html
 keywords:
 course: "Documenting REST APIs"
 weight: 1.91

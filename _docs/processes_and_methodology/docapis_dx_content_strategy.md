@@ -1,6 +1,6 @@
 ---
 title: DX content strategy with developer portals
-permalink: /docapis_dx_content_strategy.html
+permalink: docapis_dx_content_strategy.html
 course: "Documenting REST APIs"
 weight: 12.1
 sidebar: docapis

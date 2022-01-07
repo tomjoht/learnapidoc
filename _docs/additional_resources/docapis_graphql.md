@@ -1,6 +1,6 @@
 ---
 title: 'Documenting GraphQL APIs'
-permalink: /docapis_graphql_apis.html
+permalink: docapis_graphql_apis.html
 course: "Documenting REST APIs"
 weight: 14.02
 sidebar: docapis

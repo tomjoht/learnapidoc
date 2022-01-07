@@ -1,6 +1,6 @@
 ---
 title: Introduction to REST APIs
-permalink: /docapis_introtoapis.html
+permalink: docapis_introtoapis.html
 sidebar: docapis
 path1: /docapis_introtoapis.html
 redirect_from:

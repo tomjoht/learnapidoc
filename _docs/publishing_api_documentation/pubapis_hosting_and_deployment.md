@@ -1,6 +1,6 @@
 ---
 title: "Hosting and deployment options"
-permalink: /pubapis_hosting_and_deployment.html
+permalink: pubapis_hosting_and_deployment.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 9.92

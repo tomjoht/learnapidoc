@@ -1,6 +1,6 @@
 ---
 title: "Design patterns with API doc sites"
-permalink: /pubapis_design_patterns.html
+permalink: pubapis_design_patterns.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 9.2

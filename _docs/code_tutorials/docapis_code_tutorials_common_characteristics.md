@@ -1,6 +1,6 @@
 ---
 title: "Common characteristics of code tutorials"
-permalink: /docapis_code_tutorials_common_characteristics.html
+permalink: docapis_code_tutorials_common_characteristics.html
 keywords: code tutorials
 course: "Documenting REST APIs"
 weight: 8.1

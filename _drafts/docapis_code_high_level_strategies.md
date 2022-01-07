@@ -1,6 +1,6 @@
 ---
 title: High-level strategies for documenting code
-permalink: /docapiscode.html
+permalink: docapiscode.html
 keywords:
 course: "Documenting REST APIs"
 sidebar: docapis

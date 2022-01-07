@@ -1,6 +1,6 @@
 ---
 title: Putting it all together
-permalink: /docapis_finished_doc_result.html
+permalink: docapis_finished_doc_result.html
 weight: 3.7
 sidebar: docapis
 section: docendpoints

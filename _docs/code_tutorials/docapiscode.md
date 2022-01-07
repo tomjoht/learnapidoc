@@ -1,6 +1,6 @@
 ---
 title: Code tutorials
-permalink: /docapiscode.html
+permalink: docapiscode.html
 keywords:
 course: "Documenting REST APIs"
 weight: 8.0

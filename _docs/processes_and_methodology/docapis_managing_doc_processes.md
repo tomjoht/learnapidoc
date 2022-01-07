@@ -1,6 +1,6 @@
 ---
 title: Documentation processes and methodology
-permalink: /docapis_managing_doc_processes.html
+permalink: docapis_managing_doc_processes.html
 course: "Documenting REST APIs"
 weight: 12.0
 sidebar: docapis

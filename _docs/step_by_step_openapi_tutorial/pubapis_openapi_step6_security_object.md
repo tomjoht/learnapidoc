@@ -1,6 +1,6 @@
 ---
 title: "Step 6: The security object (OpenAPI tutorial)"
-permalink: /pubapis_openapi_step6_security_object.html
+permalink: pubapis_openapi_step6_security_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 5.8

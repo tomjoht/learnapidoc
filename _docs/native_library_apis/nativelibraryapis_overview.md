@@ -1,6 +1,6 @@
 ---
 title: "Overview of native library APIs"
-permalink: /nativelibraryapis_overview.html
+permalink: nativelibraryapis_overview.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 11.01

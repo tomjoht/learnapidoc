@@ -1,6 +1,6 @@
 ---
 title: "API Course Reviews"
-permalink: /docapis_course_reviews.html
+permalink: docapis_course_reviews.html
 # course: "Documenting REST APIs"
 # weight: 1.11
 sidebar: docapis

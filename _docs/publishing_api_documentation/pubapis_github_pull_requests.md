@@ -1,6 +1,6 @@
 ---
 title: "Pull request workflows through GitHub"
-permalink: /pubapis_github_pull_requests.html
+permalink: pubapis_github_pull_requests.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 9.9

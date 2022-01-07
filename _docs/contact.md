@@ -1,6 +1,6 @@
 ---
 title: Contact me
-permalink: /contact.html
+permalink: contact.html
 course: "Documenting REST APIs"
 sidebar: docapis
 type: plain

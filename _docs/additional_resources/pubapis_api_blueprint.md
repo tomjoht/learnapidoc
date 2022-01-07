@@ -1,6 +1,6 @@
 ---
 title: "API Blueprint tutorial"
-permalink: /pubapis_api_blueprint.html
+permalink: pubapis_api_blueprint.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 14.5

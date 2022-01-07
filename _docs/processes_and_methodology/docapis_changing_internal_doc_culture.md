@@ -1,6 +1,6 @@
 ---
 title: Changing internal doc culture
-permalink: /docapis_changing_internal_doc_culture.html
+permalink: docapis_changing_internal_doc_culture.html
 course: "Documenting REST APIs"
 weight: 12.91
 sidebar: docapis

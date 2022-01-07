@@ -1,6 +1,6 @@
 ---
 title: "Redoc Community Edition Basic Demo"
-permalink: /pubapis_redoc.html
+permalink: pubapis_redoc.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 4.91

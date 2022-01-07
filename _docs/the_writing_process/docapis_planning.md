@@ -1,6 +1,6 @@
 ---
 title: "1. Planning (the writing process)"
-permalink: /docapis_planning.html
+permalink: docapis_planning.html
 course: "Documenting REST APIs"
 weight: 8.92
 sidebar: docapis

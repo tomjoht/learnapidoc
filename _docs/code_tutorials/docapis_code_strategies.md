@@ -1,6 +1,6 @@
 ---
 title: Five strategies for documenting code
-permalink: /docapis_code_strategies.html
+permalink: docapis_code_strategies.html
 keywords:
 course: "Documenting REST APIs"
 weight: 8.4

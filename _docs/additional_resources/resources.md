@@ -1,6 +1,6 @@
 ---
 title: Additional resources
-permalink: /resources.html
+permalink: resources.html
 course: "Documenting REST APIs"
 sidebar: docapis
 section: resources

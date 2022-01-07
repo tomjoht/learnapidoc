@@ -1,6 +1,6 @@
 ---
 title: Analyze the JSON response
-permalink: /docapis_analyze_json.html
+permalink: docapis_analyze_json.html
 categories:
 - api-doc
 keywords:

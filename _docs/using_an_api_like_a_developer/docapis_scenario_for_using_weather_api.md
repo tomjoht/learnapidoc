@@ -1,6 +1,6 @@
 ---
 title: Scenario for using a weather API
-permalink: /docapis_scenario_for_using_weather_api.html
+permalink: docapis_scenario_for_using_weather_api.html
 categories:
 - api-doc
 keywords:

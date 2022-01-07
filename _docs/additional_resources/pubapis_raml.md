@@ -1,6 +1,6 @@
 ---
 title: RAML tutorial
-permalink: /pubapis_raml.html
+permalink: pubapis_raml.html
 keywords: RAML
 course: "Publishing REST APIs"
 weight: 14.4

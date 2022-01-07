@@ -1,6 +1,6 @@
 ---
 title: Introduction to the OpenAPI specification
-permalink: /pubapis_openapi_intro.html
+permalink: pubapis_openapi_intro.html
 categories:
 - api-doc
 keywords:

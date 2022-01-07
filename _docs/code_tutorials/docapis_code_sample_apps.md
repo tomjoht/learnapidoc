@@ -1,6 +1,6 @@
 ---
 title: Sample apps
-permalink: /docapis_sample_apps.html
+permalink: docapis_sample_apps.html
 keywords:
 course: "Documenting REST APIs"
 weight: 8.6

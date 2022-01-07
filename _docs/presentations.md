@@ -1,6 +1,6 @@
 ---
 title: Past API doc workshops and presentations
-permalink: /presentations.html
+permalink: presentations.html
 course: "Documenting REST APIs"
 sidebar: docapis
 progress: false

@@ -1,6 +1,6 @@
 ---
 title: Working in YAML (OpenAPI tutorial)
-permalink: /pubapis_yaml.html
+permalink: pubapis_yaml.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 5.2

@@ -1,6 +1,6 @@
 ---
 title: "Step 8: The externalDocs object (OpenAPI tutorial)"
-permalink: /pubapis_openapi_step8_externaldocs_object.html
+permalink: pubapis_openapi_step8_externaldocs_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 5.91

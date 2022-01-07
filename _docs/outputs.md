@@ -1,6 +1,6 @@
 ---
 title: Download the course in other formats
-permalink: /download.html
+permalink: download.html
 course: "Documenting REST APIs"
 sidebar: docapis
 type: plain

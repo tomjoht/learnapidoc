@@ -1,6 +1,6 @@
 ---
 title: Dive into dot notation
-permalink: /docapis_diving_into_dot_notation.html
+permalink: docapis_diving_into_dot_notation.html
 keywords:
 course: "Documenting REST APIs"
 weight: 2.91

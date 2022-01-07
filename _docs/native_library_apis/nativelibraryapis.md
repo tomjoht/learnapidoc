@@ -1,6 +1,6 @@
 ---
 title: Native library APIs
-permalink: /nativelibraryapis.html
+permalink: nativelibraryapis.html
 sidebar: docapis
 path1: /nativelibraryapis.html
 weight: 11.0

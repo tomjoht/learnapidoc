@@ -1,6 +1,6 @@
 ---
 title: Code samples
-permalink: /docapis_codesamples_bestpractices.html
+permalink: docapis_codesamples_bestpractices.html
 keywords:
 course: "Documenting REST APIs"
 weight: 8.5

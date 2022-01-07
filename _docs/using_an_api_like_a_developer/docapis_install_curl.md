@@ -1,6 +1,6 @@
 ---
 title: curl intro and installation
-permalink: /docapis_install_curl.html
+permalink: docapis_install_curl.html
 course: "Documenting REST APIs"
 weight: 2.3
 sidebar: docapis

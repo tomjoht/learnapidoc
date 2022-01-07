@@ -1,6 +1,6 @@
 ---
 title: Managing small documentation requests
-permalink: /docapis_managing_small_doc_requests.html
+permalink: docapis_managing_small_doc_requests.html
 course: "Documenting REST APIs"
 weight: 12.3
 sidebar: docapis

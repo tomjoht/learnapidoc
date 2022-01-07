@@ -1,6 +1,6 @@
 ---
 title: Ensuring documentation coverage with each software release
-permalink: /docapis_release_process.html
+permalink: docapis_release_process.html
 course: "Documenting REST APIs"
 weight: 12.7
 sidebar: docapis

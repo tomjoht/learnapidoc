@@ -1,6 +1,6 @@
 ---
 title: "Step 4: Request example (API reference tutorial)"
-permalink: /docapis_doc_sample_requests.html
+permalink: docapis_doc_sample_requests.html
 categories:
 - api-doc
 keywords:

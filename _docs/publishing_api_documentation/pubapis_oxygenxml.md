@@ -1,6 +1,6 @@
 ---
 title: "Using Oxygen XML with docs-as-code workflows"
-permalink: /pubapis_oxygenxml.html
+permalink: pubapis_oxygenxml.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 9.94

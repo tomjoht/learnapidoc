@@ -1,6 +1,6 @@
 ---
 title: Understand curl more
-permalink: /docapis_understand_curl.html
+permalink: docapis_understand_curl.html
 course: "Documenting REST APIs"
 weight: 2.5
 sidebar: docapis

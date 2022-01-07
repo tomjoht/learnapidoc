@@ -1,6 +1,6 @@
 ---
 title: Survey of API doc sites
-permalink: /pubapis_apilist.html
+permalink: pubapis_apilist.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 9.1

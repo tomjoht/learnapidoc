@@ -1,6 +1,6 @@
 ---
 title: "Step 7: The tags object (OpenAPI tutorial)"
-permalink: /pubapis_openapi_step7_tags_object.html
+permalink: pubapis_openapi_step7_tags_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 5.9

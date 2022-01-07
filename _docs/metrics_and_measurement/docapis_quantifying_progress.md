@@ -1,6 +1,6 @@
 ---
 title: Quantifying your progress
-permalink: /docapis_metrics_quantifying_progress.html
+permalink: docapis_metrics_quantifying_progress.html
 course: "Documenting REST APIs"
 weight: 13.4
 sidebar: docapis

@@ -1,6 +1,6 @@
 ---
 title: Measuring progress against documentation quality goals
-permalink: /docapis_measuring_impact.html
+permalink: docapis_measuring_impact.html
 course: "Documenting REST APIs"
 weight: 13.1
 sidebar: docapis

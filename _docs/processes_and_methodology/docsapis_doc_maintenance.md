@@ -1,6 +1,6 @@
 ---
 title: Maintaining existing documentation
-permalink: /docapis_doc_maintenance_processes.html
+permalink: docapis_doc_maintenance_processes.html
 course: "Documenting REST APIs"
 weight: 12.7
 sidebar: docapis

@@ -1,6 +1,6 @@
 ---
 title: "Submit requests through Postman"
-permalink: /docapis_postman.html
+permalink: docapis_postman.html
 categories:
 - api-doc
 keywords:

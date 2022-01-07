@@ -1,6 +1,6 @@
 ---
 title: "Following Scrum with documentation projects"
-permalink: /pubapis_agile_scrum_for_docs.html
+permalink: pubapis_agile_scrum_for_docs.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 12.12

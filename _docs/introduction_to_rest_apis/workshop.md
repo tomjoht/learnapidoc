@@ -1,6 +1,6 @@
 ---
 title: Workshop -- agenda, slides, activities
-permalink: /workshop.html
+permalink: workshop.html
 course: "Documenting REST APIs"
 weight: 1.3
 sidebar: docapis

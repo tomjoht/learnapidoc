@@ -1,6 +1,6 @@
 ---
 title: Broadcasting your meeting notes to influence a wider audience
-permalink: /docapis_meeting_notes.html
+permalink: docapis_meeting_notes.html
 course: "Documenting REST APIs"
 weight: 12.61
 sidebar: docapis

@@ -1,6 +1,6 @@
 ---
 title: "Why I developed this course"
-permalink: /docapis_foreword.html
+permalink: docapis_foreword.html
 course: "Documenting REST APIs"
 weight: 1.4
 sidebar: docapis

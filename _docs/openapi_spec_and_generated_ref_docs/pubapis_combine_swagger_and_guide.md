@@ -1,6 +1,6 @@
 ---
 title: "Integrating Swagger UI with the rest of your docs"
-permalink: /pubapis_combine_swagger_and_guide.html
+permalink: pubapis_combine_swagger_and_guide.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 4.8

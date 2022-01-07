@@ -1,6 +1,6 @@
 ---
 title: "Step 2: Endpoints and methods (API reference tutorial)"
-permalink: /docapis_resource_endpoints.html
+permalink: docapis_resource_endpoints.html
 course: "Documenting REST APIs"
 weight: 3.3
 sidebar: docapis

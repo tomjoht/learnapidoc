@@ -1,6 +1,6 @@
 ---
 title: 'Get wind speed using the Aeris Weather API'
-permalink: /docapis_aerisweather_example.html
+permalink: docapis_aerisweather_example.html
 course: "Documenting REST APIs"
 weight: 14.31
 sidebar: docapis

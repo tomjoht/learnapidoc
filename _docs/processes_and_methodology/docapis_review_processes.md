@@ -1,6 +1,6 @@
 ---
 title: Processes for reviewing documentation
-permalink: /docapis_review_processes.html
+permalink: docapis_review_processes.html
 course: "Documenting REST APIs"
 weight: 12.6
 sidebar: docapis

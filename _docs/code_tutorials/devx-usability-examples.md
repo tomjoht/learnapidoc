@@ -1,6 +1,6 @@
 ---
 title: "Developer experience (DevX) usability"
-permalink: /devx-usability-examples.html
+permalink: devx-usability-examples.html
 course: "Documenting REST APIs"
 weight: 8.9
 sidebar: docapis

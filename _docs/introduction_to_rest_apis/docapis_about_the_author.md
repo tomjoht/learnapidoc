@@ -1,6 +1,6 @@
 ---
 title: About the author
-permalink: /docapis_about_the_author.html
+permalink: docapis_about_the_author.html
 course: "Documenting REST APIs"
 weight: 1.5
 sidebar: docapis

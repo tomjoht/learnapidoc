@@ -1,6 +1,6 @@
 ---
 title: API getting started tutorials
-permalink: /docapis_doc_getting_started_section.html
+permalink: docapis_doc_getting_started_section.html
 keywords:
 course: "Documenting REST APIs"
 weight: 7.2

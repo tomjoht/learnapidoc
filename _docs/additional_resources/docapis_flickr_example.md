@@ -1,6 +1,6 @@
 ---
 title: 'Retrieve a gallery using the Flickr API'
-permalink: /docapis_flickr_example.html
+permalink: docapis_flickr_example.html
 course: "Documenting REST APIs"
 weight: 14.3
 sidebar: docapis

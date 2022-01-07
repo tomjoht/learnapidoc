@@ -1,6 +1,6 @@
 ---
 title: What's new
-permalink: /docapis_whats_new.html
+permalink: docapis_whats_new.html
 sidebar: docapis
 path1: /docapis_introtoapis.html
 weight: 1.02

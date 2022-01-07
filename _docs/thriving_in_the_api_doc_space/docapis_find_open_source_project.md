@@ -1,6 +1,6 @@
 ---
 title: "Activity: Find an open-source project"
-permalink: /docapis_find_open_source_project.html
+permalink: docapis_find_open_source_project.html
 course: "Documenting REST APIs"
 weight: 10.4
 sidebar: docapis

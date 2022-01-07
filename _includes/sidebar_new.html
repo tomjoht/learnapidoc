@@ -1,0 +1,111 @@
+{% assign sidebar = site.data[page.sidebar] %}
+<div class="mydocsidebar">
+<div class="sidebar-inner">
+
+<div id="search-searchbar"></div>
+
+{% include tinyletter.html %}
+
+{% unless page.sidebar == null %}
+<div class="productTitle">{{sidebar.sidebartitle}}</div>
+
+<p class="external">
+    <a href="#" id="collapseAll">{{site.uistring.collapseall}}</a> | <a href="#" id="expandAll">{{site.uistring.expandall}}</a>
+</p>
+
+{% endunless %}
+
+<ul id="docnavsidebar" class="docnav">
+{% for folder in sidebar.folders %}
+{% if page.url == folder.jurl %}
+<li class="level1 folderTitle current open"><a  class="subfoldersTitle" href="{{ folder.jurl | remove_first: "/" }}">{{ folder.title }}</a>
+  {% else %}
+  <li class="level1 folderTitle"><a  class="subfoldersTitle" href="{{ folder.jurl | remove_first: "/" }}">{{ folder.title }}</a>
+  {% endif %}
+    <ul>
+        {% for folderitem in folder.folderitems %}
+
+        {% if folderitem.title %}
+        {% unless folderitem.type == "print" %}
+        {% if page.url == folderitem.jurl %}
+        <li class="level1items open"><a href="{{folderitem.jurl | prepend: site.baseurl | }}">{{folderitem.title}}</a></li>
+        {% elsif folderitem.jurl contains "http://" or folderitem.jurl contains "https://" %}
+        <li class="level1items"><a  href="{{folderitem.jurl }}">{{folderitem.title}}</a></li>
+        {% else %}
+        <li class="level1items"><a href="{{folderitem.jurl | prepend: site.baseurl }}">{{folderitem.title}}</a></li>
+        {% endif %}
+        {% endunless %}
+        {% endif %}
+
+        {% for subfolder in folderitem.subfolders %}
+        {% if page.url == subfolder.jurl %}
+        <li class="level2 folderTitle current open"><a class="subfoldersTitle" href="{{ subfolder.jurl | prepend: site.baseurl}}">{{ subfolder.title }}</a>
+          {% else %}
+          <li class="level2 folderTitle"><a class="subfoldersTitle" href="{{ subfolder.jurl | prepend: site.baseurl}}">{{ subfolder.title }}</a>
+        {% endif %}
+            <ul style="display:none;">
+                {% for subfolderitem in subfolder.subfolderitems %}
+
+                {% if subfolderitem.title %}
+                {% unless subfolderitem.type == "print" %}
+                {% if page.url == subfolderitem.jurl %}
+                <li class="level2items open"><a href="{{subfolderitem.jurl | prepend: site.baseurl }}">{{subfolderitem.title}}</a></li>
+                {% elsif folderitem.jurl contains "http://" or folderitem.jurl contains "https://" %}
+                <li class="level2items"><a  href="{{subfolderitem.jurl }}">{{subfolderitem.title}}</a></li>
+                {% else %}
+                <li class="level2items"><a href="{{subfolderitem.jurl | prepend: site.baseurl }}">{{subfolderitem.title}}</a></li>
+                {% endif %}
+                {% endunless %}
+                {% endif %}
+
+                {% for subsubfolder in subfolderitem.subsubfolders %}
+                {% if page.url == subsubfolder.jurl %}
+                <li class="level3 folderTitle current open"><a class="subfoldersTitle" href="{{ subsubfolder.jurl | prepend: site.baseurl}}">{{ subsubfolder.title }}</a>
+                  {% else %}
+                  <li class="level3 folderTitle"><a class="subfoldersTitle" href="{{ subsubfolder.jurl | prepend: site.baseurl}}">{{ subsubfolder.title }}</a>
+                   {% endif %}
+                    <ul style="display:none;">
+                        {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
+
+                        {% if subsubfolderitem.title %}
+                        {% unless subsubfolderitem.type == "print" %}
+                        {% if page.url == subsubfolderitem.jurl %}
+                        <li class="level3items open"><a href="{{subsubfolderitem.jurl | prepend: site.baseurl }}">{{subsubfolderitem.title}}</a></li>
+                        {% elsif folderitem.jurl contains "http://" or folderitem.jurl contains "https://" %}
+                        <li class="level3items"><a href="{{subsubfolderitem.jurl }}">{{subsubfolderitem.title}}</a></li>
+                        {% else %}
+                        <li class="level3items"><a href="{{subsubfolderitem.jurl | prepend: site.baseurl }}">{{subsubfolderitem.title}}</a></li>
+                        {% endif %}
+                        {% endunless %}
+                        {% endif %}
+
+                        {% endfor %}
+                    </ul>
+                </li>
+
+                {% endfor %}
+
+                {% endfor %}
+            </ul>
+        </li>
+
+        {% endfor %}
+
+        {% endfor %}
+    </ul>
+    {% endfor %}
+
+</li>
+</ul>
+
+<hr class="resourceSeparator"></hr>
+<div class="relatedResources">{{sidebar.related_resources_title}}</div>
+<ul id="entrypages">
+        {% for item in sidebar.related_resources_list %}
+        <li><a class="noCrossRef" href="{{item.jurl }}">{{item.title}}</a></li>
+        {% endfor %}
+    </li>
+</ul>
+</div>
+</div>
+<script>$("li.open").parents('li').toggleClass("open");</script>

@@ -1,6 +1,6 @@
 ---
 title: Conceptual topics in API docs
-permalink: /docconceptual.html
+permalink: docconceptual.html
 sidebar: docapis
 path1: /docconceptual.html
 weight: 7.0

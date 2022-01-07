@@ -1,6 +1,6 @@
 ---
 title: "Activity: Judge conceptual content and decide which is best"
-permalink: /docapis_concept_activity.html
+permalink: docapis_concept_activity.html
 course: "Documenting REST APIs"
 weight: 7.93
 sidebar: docapis

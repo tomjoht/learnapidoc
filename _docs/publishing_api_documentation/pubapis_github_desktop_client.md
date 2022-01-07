@@ -1,6 +1,6 @@
 ---
 title: "Activity: Use the GitHub Desktop client"
-permalink: /pubapis_github_desktop_client.html
+permalink: pubapis_github_desktop_client.html
 course: "Documenting REST APIs"
 weight: 9.8
 sidebar: docapis

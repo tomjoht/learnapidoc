@@ -1,6 +1,6 @@
 ---
 title: "Create non-ref docs with native library APIs"
-permalink: /nativelibraryapis_nonrefdocs.html
+permalink: nativelibraryapis_nonrefdocs.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 11.8

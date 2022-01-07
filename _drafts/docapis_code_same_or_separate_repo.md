@@ -1,6 +1,6 @@
 ---
 title: Keeping code docs in the same or separate repos
-permalink: /docapiscode.html
+permalink: docapiscode.html
 keywords:
 course: "Documenting REST APIs"
 sidebar: docapis

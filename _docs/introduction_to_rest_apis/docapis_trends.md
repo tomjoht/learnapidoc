@@ -1,6 +1,6 @@
 ---
 title: "Developer documentation trends &mdash; survey results"
-permalink: /docapis_trends.html
+permalink: docapis_trends.html
 keywords:
 course: "Documenting REST APIs"
 weight: 1.9

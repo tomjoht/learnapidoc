@@ -1,6 +1,6 @@
 ---
 title: "Activity: What's wrong with this API reference topic"
-permalink: /docapis_api_whats_wrong_activity.html
+permalink: docapis_api_whats_wrong_activity.html
 weight: 3.9
 sidebar: docapis
 section: docendpoints

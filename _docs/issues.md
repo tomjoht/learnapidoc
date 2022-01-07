@@ -1,6 +1,6 @@
 ---
 title: Log an Issue
-permalink: /issues.html
+permalink: issues.html
 course: "Documenting REST APIs"
 sidebar: docapis
 type: plain

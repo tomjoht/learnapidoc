@@ -1,6 +1,6 @@
 ---
 title: "4. Reviewing (the writing process)"
-permalink: /docapis_reviewing.html
+permalink: docapis_reviewing.html
 course: "Documenting REST APIs"
 weight: 8.95
 sidebar: docapis

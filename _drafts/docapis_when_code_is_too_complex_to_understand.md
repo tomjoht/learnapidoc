@@ -1,6 +1,6 @@
 ---
 title: When code is too complex to understand
-permalink: /docapiscode.html
+permalink: docapiscode.html
 keywords:
 course: "Documenting REST APIs"
 sidebar: docapis

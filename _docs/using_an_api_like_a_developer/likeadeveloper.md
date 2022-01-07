@@ -1,6 +1,6 @@
 ---
 title: Using an API like a developer
-permalink: /likeadeveloper.html
+permalink: likeadeveloper.html
 sidebar: docapis
 path1: /likeadeveloper.html
 weight: 2.0

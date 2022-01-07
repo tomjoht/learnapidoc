@@ -1,6 +1,6 @@
 ---
 title: Version control systems (such as Git)
-permalink: /pubapis_version_control.html
+permalink: pubapis_version_control.html
 course: "Documenting REST APIs"
 weight: 9.5
 sidebar: docapis

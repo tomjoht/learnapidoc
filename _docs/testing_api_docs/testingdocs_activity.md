@@ -1,7 +1,7 @@
 ---
 title: "Activity: Test the docs in your open-source project"
 course: "Documenting REST APIs"
-permalink: /testingdocs_activity.html
+permalink: testingdocs_activity.html
 weight: 6.5
 sidebar: docapis
 section: testingdocs

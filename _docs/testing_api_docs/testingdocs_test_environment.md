@@ -1,7 +1,7 @@
 ---
 title: "Set up a test environment"
 course: "Documenting REST APIs"
-permalink: /testingdocs_test_environment.html
+permalink: testingdocs_test_environment.html
 weight: 6.2
 sidebar: docapis
 section: testingdocs

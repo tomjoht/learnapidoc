@@ -1,6 +1,6 @@
 ---
 title: Testing API documentation
-permalink: /testingdocs.html
+permalink: testingdocs.html
 sidebar: docapis
 path1: /testingdocs.html
 weight: 6.0

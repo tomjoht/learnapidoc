@@ -1,6 +1,6 @@
 ---
 title: Conceptual topics overview
-permalink: /docapis_conceptual_topics_overview.html
+permalink: docapis_conceptual_topics_overview.html
 keywords:
 course: "Documenting REST APIs"
 weight: 7.01

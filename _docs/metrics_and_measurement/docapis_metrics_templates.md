@@ -1,6 +1,6 @@
 ---
 title: Templates for working with metrics
-permalink: /docapis_metrics_templates.html
+permalink: docapis_metrics_templates.html
 course: "Documenting REST APIs"
 weight: 13.5
 sidebar: docapis

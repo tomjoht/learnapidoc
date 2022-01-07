@@ -1,6 +1,6 @@
 ---
 title: "Step 1: Resource description (API reference tutorial)"
-permalink: /docapis_resource_descriptions.html
+permalink: docapis_resource_descriptions.html
 course: "Documenting REST APIs"
 weight: 3.2
 sidebar: docapis

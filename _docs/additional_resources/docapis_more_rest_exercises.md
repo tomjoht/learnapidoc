@@ -1,6 +1,6 @@
 ---
 title:  More REST API activities
-permalink: /docapis_more_rest_activities.html
+permalink: docapis_more_rest_activities.html
 course: "Documenting REST APIs"
 weight: 14.1
 sidebar: docapis

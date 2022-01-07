@@ -1,6 +1,6 @@
 ---
 title: How much code do you need to know?
-permalink: /jobapis_learning_code.html
+permalink: jobapis_learning_code.html
 course: "Documenting REST APIs"
 weight: 10.2
 sidebar: docapis

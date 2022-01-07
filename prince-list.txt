@@ -9,33 +9,33 @@ layout: null
 
 {% for folder in sidebar %}
 {% unless folder.type == "web" %}
-{{ folder.jurl | prepend: site.baseurl }}
+{{ folder.jurl | prepend: "/" | prepend: site.baseurl }}
 {% for folderitem in folder.folderitems %}
 {% if folderitem.title %}
 {% unless folderitem.type == "web" %}
-{{ folderitem.jurl | prepend: site.baseurl }}
+{{ folderitem.jurl | prepend: "/" | prepend: site.baseurl }}
 {% endunless %}
 {% endif %}
 {% for subfolder in folderitem.subfolders %}
 {% unless subfolder.type == "web" %}
 {% if subfolder.title %}
-{{ subfolder.jurl | prepend: site.baseurl }}
+{{ subfolder.jurl | prepend: "/" | prepend: site.baseurl }}
 {% endif %}
 {% for subfolderitem in subfolder.subfolderitems %}
 {% if subfolderitem.title %}
 {% unless subfolderitem.type == "web" %}
-{{ subfolderitem.jurl | prepend: site.baseurl }}
+{{ subfolderitem.jurl | prepend: "/" | prepend: site.baseurl }}
 {% endunless %}
 {% endif %}
 {% for subsubfolder in subfolderitem.subsubfolders %}
 {% unless subsubfolder.type == "web" %}
 {% if subsubfolder.title %}
-{{ subsubfolder.jurl | prepend: site.baseurl}}
+{{ subsubfolder.jurl | prepend: "/" | prepend: site.baseurl }}
 {% endif %}
 {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
 {% if subsubfolderitem.title %}
 {% unless subsubfolderitem.type == "web" %}
-{{ subsubfolderitem.jurl | prepend: site.baseurl }}
+{{ subsubfolderitem.jurl | prepend: "/" | prepend: site.baseurl }}
 {% endunless %}
 {% endif %}
 {% endfor %}

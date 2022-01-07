@@ -1,0 +1,105 @@
+---
+layout: null
+notes: "NCX stands for navigational control for XML. I think this file generates the table of contents visible when you click the Contents button in an ereader. The logic here is the same used for constructing the table of contents in the sidebar. I find that three levels doesn't work well on ereaders, so stick with just two. If you add property type: web under any sidebar entry, it will be excluded from this output. This file is referenced from the docapis.opf file."
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"
+    "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+
+<!--
+    For a detailed description of NCX usage please refer to:
+    http://www.idpf.org/2007/opf/OPF_2.0_final_spec.html#Section2.4.1
+-->
+
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en-US">
+<head>
+<meta name="dtb:uid" content="BookId"/>
+<meta name="dtb:depth" content="2"/>
+<meta name="dtb:totalPageCount" content="0"/>
+<meta name="dtb:maxPageNumber" content="0"/>
+</head>
+<docTitle><text>{{site.title}}</text></docTitle>
+<docAuthor><text>{{site.author}}</text></docAuthor>
+
+{% assign increment = 1 %}
+{% assign sidebar = site.data[site.sidebar] %}
+<navMap>
+
+{% comment %} first level {% endcomment %}
+
+{% for folder in sidebar.folders %}
+{% unless folder.type == "web" %}
+<navPoint class="toc" id="item_{{ folder.jurl  | remove: "/" | remove: ".html" }}" playOrder="{% increment %}">
+      <navLabel>
+        <text>{{ folder.title }}</text>
+      </navLabel>
+      <content src="{{ folder.jurl | remove: "/" }}"/>
+{% endunless %}
+
+        {% comment %} second level {% endcomment %}
+
+        {% for folderitem in folder.folderitems %}
+        {% unless folderitem.type == "web" %}
+            <navPoint class="toc" id="item_{{ folderitem.jurl | remove: "/" | remove: ".html" }}" playOrder="{% increment %}">
+              <navLabel>
+                <text>{{ folderitem.title }}</text>
+              </navLabel>
+              <content src="{{ folderitem.jurl | remove: "/" }}"/>
+          {% endunless %}
+
+        {% comment %} third level {% endcomment %}
+
+        {% for subfolder in folderitem.subfolders %}
+        {% unless subfolder.type == "web" %}
+        <navPoint class="toc" id="item_{{ subfolder.jurl  | remove: "/" | remove: ".html" }}" playOrder="{% increment %}">
+                  <navLabel>
+                    <text> {{ subfolder.title }}</text>
+                  </navLabel>
+                      <content src="{{ subfolder.jurl | remove: "/" }}"/>
+          {% endunless %}
+
+                {% for subfolderitem in subfolder.subfolderitems %}
+                {% unless subfolderitem.type == "web" %}
+                <navPoint class="toc" id="item_{{ subfolderitem.jurl  | remove: "/" | remove: ".html" }}" playOrder="{% increment %}">
+                      <navLabel>
+                        <text>{{ subfolderitem.title }}</text>
+                      </navLabel>
+                        <content src="{{ subfolderitem.jurl | remove: "/" }}"/>
+                  {% endunless %}
+
+                {% for subsubfolder in subfolderitem.subsubfolders %}
+                {% unless subsubfolder.type == "web" %}
+                <navPoint class="toc" id="item_{{ subsubfolder.jurl  | remove: "/" | remove: ".html" }}" playOrder="{% increment %}">
+                  <navLabel>
+                    <text>{{ subsubfolder.title }}</text>
+                  </navLabel>
+                  <content src="{{ subsubfolder.jurl | remove: "/" }}"/>
+                  {% endunless %}
+
+                        {% for subsubfolderitem in subsubfolder.subsubfolderitems %}
+                        {% unless subsubfolderitem.type == "web" %}
+                         <navPoint class="toc" id="item_{{ subsubfolderitem.jurl  | remove: "/" | remove: ".html" }}" playOrder="{% increment %}">
+                      <navLabel>
+                        <text>{{ subsubfolderitem.title }}</text>
+                      </navLabel>
+                        <content src="{{ subsubfolderitem.jurl | remove: "/" }}"/>
+                        {% endunless %}
+                        {% endfor %}
+                    </navPoint>
+
+                {% endfor %}
+                </navPoint>
+
+                {% endfor %}
+            </navPoint>
+
+        {% endfor %}
+        </navPoint>
+
+        {% endfor %}
+    </navPoint>
+    {% endfor %}
+
+
+</navMap>
+</ncx>

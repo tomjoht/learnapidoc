@@ -1,6 +1,6 @@
 ---
 title: Managing large documentation projects
-permalink: /docapis_managing_doc_projects.html
+permalink: docapis_managing_doc_projects.html
 course: "Documenting REST APIs"
 weight: 12.2
 sidebar: docapis

@@ -1,6 +1,6 @@
 ---
 title: Doxygen, a document generator mainly for C++
-permalink: /nativelibraryapis_doxygen.html
+permalink: nativelibraryapis_doxygen.html
 course: "Documenting REST APIs"
 weight: 11.7
 sidebar: docapis

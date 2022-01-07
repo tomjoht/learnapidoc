@@ -1,0 +1,33 @@
+sidebartitle: The Writing Process
+folders:
+
+- title: "The writing process"
+  jurl: /writing_process.html
+  folderitems:
+
+  - title: "Overview of the writing process"
+    jurl: /docapis_writing_process_overview.html
+
+  - title: "1. Planning"
+    jurl: /docapis_planning.html
+
+  - title: "2. Information gathering"
+    jurl: /docapis_information_gathering.html
+
+  - title: "3. Writing"
+    jurl: /docapis_writing.html
+
+  - title: "4. Reviewing"
+    jurl: /docapis_reviewing.html
+
+  - title: "5. Publishing"
+    jurl: /docapis_publishing.html
+
+related_resources_title: Related resources
+related_resources_list:
+  - title: "Documenting APIs"
+    jurl: /learnapidoc/
+
+  - title: "Some url"
+    jurl: https://examplesite.com
+    type: external

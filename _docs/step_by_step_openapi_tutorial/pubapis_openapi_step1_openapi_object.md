@@ -1,6 +1,6 @@
 ---
 title: "Step 1: The openapi object (OpenAPI tutorial)"
-permalink: /pubapis_openapi_step1_openapi_object.html
+permalink: pubapis_openapi_step1_openapi_object.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 5.3

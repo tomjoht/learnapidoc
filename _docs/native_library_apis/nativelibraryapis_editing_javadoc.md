@@ -1,6 +1,6 @@
 ---
 title: "Make edits to Javadoc tags"
-permalink: /nativelibraryapis_editing_javadoc.html
+permalink: nativelibraryapis_editing_javadoc.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 11.6

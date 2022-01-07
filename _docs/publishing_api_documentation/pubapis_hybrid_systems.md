@@ -1,6 +1,6 @@
 ---
 title: "Hybrid documentation systems"
-permalink: /pubapis_hybrid_systems.html
+permalink: pubapis_hybrid_systems.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 9.93

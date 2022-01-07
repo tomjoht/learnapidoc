@@ -1,6 +1,6 @@
 ---
 title: "OpenAPI tutorial using Swagger Editor and Swagger UI: Overview"
-permalink: /pubapis_openapi_tutorial_overview.html
+permalink: pubapis_openapi_tutorial_overview.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 5.1

@@ -1,6 +1,6 @@
 ---
 title: "Overview of REST API specification formats"
-permalink: /pubapis_rest_specification_formats.html
+permalink: pubapis_rest_specification_formats.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 4.1

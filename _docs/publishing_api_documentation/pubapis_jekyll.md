@@ -1,6 +1,6 @@
 ---
 title: "Jekyll and CloudCannon continuous deployment"
-permalink: /pubapis_jekyll.html
+permalink: pubapis_jekyll.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 9.96

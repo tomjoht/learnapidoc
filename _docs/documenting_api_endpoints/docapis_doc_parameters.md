@@ -1,6 +1,6 @@
 ---
 title: "Step 3: Parameters (API reference tutorial)"
-permalink: /docapis_doc_parameters.html
+permalink: docapis_doc_parameters.html
 course: "Documenting REST APIs"
 weight: 3.4
 sidebar: docapis

@@ -1,6 +1,6 @@
 ---
 title: "Thank you for donating"
-permalink: /thank-you-for-donating.html
+permalink: thank-you-for-donating.html
 course: "Documenting REST APIs"
 sidebar: docapis
 progress: false

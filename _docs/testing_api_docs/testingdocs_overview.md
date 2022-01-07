@@ -1,7 +1,7 @@
 ---
 title: "Overview of testing your docs"
 course: "Documenting REST APIs"
-permalink: /testingdocs_overview.html
+permalink: testingdocs_overview.html
 weight: 6.1
 sidebar: docapis
 section: testingdocs

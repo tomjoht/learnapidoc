@@ -1,6 +1,6 @@
 ---
 title: "Step-by-step OpenAPI code tutorial"
-permalink: /openapi_tutorial.html
+permalink: openapi_tutorial.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 5.0

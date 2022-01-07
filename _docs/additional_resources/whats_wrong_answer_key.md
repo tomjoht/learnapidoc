@@ -1,6 +1,6 @@
 ---
 title: What's wrong with this topic answer key
-permalink: /whats_wrong_answer_key.html
+permalink: whats_wrong_answer_key.html
 course: "Documenting REST APIs"
 weight: 14.7
 sidebar: docapis

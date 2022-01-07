@@ -1,6 +1,6 @@
 ---
 title: Managing SDK releases
-permalink: /docapis_managing_sdk_releases.html
+permalink: docapis_managing_sdk_releases.html
 course: "Documenting REST APIs"
 weight: 12.4
 sidebar: docapis

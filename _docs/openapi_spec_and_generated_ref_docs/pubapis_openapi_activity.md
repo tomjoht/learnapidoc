@@ -1,9 +1,9 @@
 ---
 title: "Activity: Create an OpenAPI specification document"
-permalink: /pubapis_openapi_activity.html
+permalink: pubapis_openapi_activity.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 4.51
+weight: 5.92
 section: restapispecifications
 path1: /restapispecifications.html
 last-modified: 2019-01-05

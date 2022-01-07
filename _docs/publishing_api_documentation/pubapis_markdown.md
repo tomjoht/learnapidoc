@@ -1,6 +1,6 @@
 ---
 title: "More about Markdown"
-permalink: /pubapis_markdown.html
+permalink: pubapis_markdown.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 9.4

@@ -1,6 +1,6 @@
 ---
 title: "Overview of the writing process"
-permalink: /docapis_writing_process_overview.html
+permalink: docapis_writing_process_overview.html
 course: "Documenting REST APIs"
 weight: 8.912
 sidebar: docapis

@@ -1,6 +1,6 @@
 ---
 title: Video recordings of API doc workshops
-permalink: /docapis_course_videos.html
+permalink: docapis_course_videos.html
 course: "Documenting REST APIs"
 sidebar: docapis
 section: introtoapis

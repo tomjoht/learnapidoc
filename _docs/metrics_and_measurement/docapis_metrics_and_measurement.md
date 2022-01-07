@@ -1,6 +1,6 @@
 ---
 title: Metrics and measurement
-permalink: /docapis_metrics_and_measurement.html
+permalink: docapis_metrics_and_measurement.html
 course: "Documenting REST APIs"
 weight: 13.0
 sidebar: docapis

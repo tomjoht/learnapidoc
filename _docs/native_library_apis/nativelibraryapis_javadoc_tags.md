@@ -1,6 +1,6 @@
 ---
 title: "Javadoc tags"
-permalink: /nativelibraryapis_javadoc_tags.html
+permalink: nativelibraryapis_javadoc_tags.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 11.4

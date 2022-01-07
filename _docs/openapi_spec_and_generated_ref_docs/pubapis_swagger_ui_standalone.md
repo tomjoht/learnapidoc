@@ -1,6 +1,6 @@
 ---
 title: Swagger UI demo (standalone)
-permalink: /pubapis_swagger_ui_standalone.html
+permalink: pubapis_swagger_ui_standalone.html
 course: "Documenting REST APIs"
 sidebar: docapis
 section: restapispecifications

@@ -1,6 +1,6 @@
 ---
 title: Instructions
-permalink: /instructions.html
+permalink: instructions.html
 published: false
 ---
 

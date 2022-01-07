@@ -1,6 +1,6 @@
 ---
 title: API quick reference
-permalink: /docapis_doc_quick_reference.html
+permalink: docapis_doc_quick_reference.html
 keywords:
 course: "Documenting REST APIs"
 weight: 7.8

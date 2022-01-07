@@ -1,6 +1,6 @@
 ---
 title: "2. Information gathering (the writing process)"
-permalink: /docapis_information_gathering.html
+permalink: docapis_information_gathering.html
 course: "Documenting REST APIs"
 weight: 8.93
 sidebar: docapis

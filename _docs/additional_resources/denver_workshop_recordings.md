@@ -1,6 +1,6 @@
 ---
 title: Denver API Workshop Video Recording
-permalink: /denver_workshop_recording.html
+permalink: denver_workshop_recording.html
 course: "Documenting REST APIs"
 weight: 14.9
 sidebar: docapis

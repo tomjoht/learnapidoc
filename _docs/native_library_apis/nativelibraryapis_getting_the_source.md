@@ -1,6 +1,6 @@
 ---
 title: "Get the sample Java project"
-permalink: /nativelibraryapis_getting_the_source.html
+permalink: nativelibraryapis_getting_the_source.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 11.1

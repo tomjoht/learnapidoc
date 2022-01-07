@@ -1,6 +1,6 @@
 ---
 title: PDF and eBook formats
-permalink: /docapis_formats.html
+permalink: docapis_formats.html
 course: "Documenting REST APIs"
 sidebar: docapis
 section: introtoapis
@@ -20,9 +20,12 @@ You can read this content in several alternative formats:
 &ndash; <a href="https://idbwrtng.com/learnapidoc-mobi"><i class="fa fa-book" aria-hidden="true"></i> Kindle (MOBI)</a> (last-generated: {{page.last-modified}}) ~250 MB
 
 {: style="margin-left: 20px"}
-&ndash; <a href="https://idbwrtng.com/learnapidoc-epub"><i class="fa fa-file-text" aria-hidden="true"></i> EPUB</a>(last-generated: {{page.last-modified}}) ~150 MB
+&ndash; <a href="https://idbwrtng.com/learnapidoc-epub"><i class="fa fa-file-text" aria-hidden="true"></i> EPUB</a> (last-generated: {{page.last-modified}}) ~150 MB
 
 I periodically regenerate these formats, so the content should more or less be the same across web, PDF, Kindle, and EPUB.
+
+{: .note}
+In the future, I plan to break this content up into smaller outputs. For now, though, the PDF and eBooks are massive in length.
 
 ## PDF
 

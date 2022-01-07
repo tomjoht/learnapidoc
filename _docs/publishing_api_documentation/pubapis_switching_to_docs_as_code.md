@@ -1,6 +1,6 @@
 ---
 title: "Case study: Switching tools to docs-as-code"
-permalink: /pubapis_switching_to_docs_as_code.html
+permalink: pubapis_switching_to_docs_as_code.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 9.97

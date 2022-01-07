@@ -1,6 +1,6 @@
 ---
 title: "Activity: Complete the SendGrid Getting Started tutorial"
-permalink: /docapis_getting_started_activity.html
+permalink: docapis_getting_started_activity.html
 course: "Documenting REST APIs"
 weight: 7.92
 sidebar: docapis

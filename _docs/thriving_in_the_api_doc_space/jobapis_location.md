@@ -1,6 +1,6 @@
 ---
 title: Best locations for API documentation jobs
-permalink: /jobapis_location.html
+permalink: jobapis_location.html
 sidebar: docapis
 path1: /jobapis.html
 weight: 10.3

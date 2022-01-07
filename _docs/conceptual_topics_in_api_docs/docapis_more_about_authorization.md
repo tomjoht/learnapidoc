@@ -1,6 +1,6 @@
 ---
 title: API authentication and authorization
-permalink: /docapis_more_about_authorization.html
+permalink: docapis_more_about_authorization.html
 weight: 7.3
 sidebar: docapis
 section: docconceptual

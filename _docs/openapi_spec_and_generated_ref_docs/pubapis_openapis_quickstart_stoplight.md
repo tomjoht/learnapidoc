@@ -1,6 +1,6 @@
 ---
 title: "Getting started tutorial: Using Stoplight Studio to create an OpenAPI specification document"
-permalink: /pubapis_openapis_quickstart_stoplight.html
+permalink: pubapis_openapis_quickstart_stoplight.html
 course: "Documenting REST APIs"
 sidebar: docapis
 weight: 4.4

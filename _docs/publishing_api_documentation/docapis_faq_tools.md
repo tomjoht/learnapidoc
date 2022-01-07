@@ -1,6 +1,6 @@
 ---
 title: Tools FAQ
-permalink: /docapis_faq_tools.html
+permalink: docapis_faq_tools.html
 course: "Documenting REST APIs"
 sidebar: docapis
 section: publishingapis
