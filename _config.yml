@@ -58,11 +58,6 @@ defaults:
     values:
       image: true
 
-plugins:
-  - jekyll-mentions
-  - jekyll-redirect-from
-  - jekyll-paginate
-
 ########## UI text ###############
 
 uistring:
