@@ -75,7 +75,7 @@ Let's explore the basic sections in the [OpenWeatherMap API](https://openweather
 Before diving too far down in the OpenWeatherMap API, let's look at another weather API for contrast. In contrast to the OpenWeatherMap API, the [Aeris Weather API](http://www.aerisweather.com/) is a bit more robust and extensive. Explore the Aeris Weather API by doing the following:
 
 1. Go to [www.aerisweather.com](http://www.aerisweather.com).
-2. Click **Documentation** on the top navigation bar. Then click **AerisWeather API**.
+2. Click **Documentation** on the top navigation bar. Then click **API Documentation**.
 3. In the left sidebar, under Reference, click **Endpoints**. Select the **All** tab to show all endpoints, and then scroll down a bit and click **[observations](https://www.aerisweather.com/support/docs/api/reference/endpoints/observations/)**.
 
 	<a class="noCrossRef" href="https://www.aerisweather.com/support/docs/api/reference/endpoints/observations/" class="noExtIcon"><img class="medium" src="{{site.media}}/aerisweather3.png" alt="Aeris Endpoints" /></a>
