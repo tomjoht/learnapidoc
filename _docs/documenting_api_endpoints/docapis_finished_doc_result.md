@@ -4,7 +4,7 @@ permalink: docapis_finished_doc_result.html
 weight: 3.7
 sidebar: docapis
 section: docendpoints
-path1: /docendpoints.html
+path1: docendpoints.html
 no_newsletter: true
 last-modified: 2020-06-27
 ---

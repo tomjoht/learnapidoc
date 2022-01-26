@@ -5,7 +5,7 @@ course: "Documenting REST APIs"
 weight: 8.95
 sidebar: docapis
 section: writing_process
-path1: /writing_process.html
+path1: writing_process.html
 last-modified: 2021-11-19
 ---
 

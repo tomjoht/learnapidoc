@@ -4,7 +4,7 @@ permalink: docapis_formats.html
 course: "Documenting REST APIs"
 sidebar: docapis
 section: introtoapis
-path1: /docapis_introtoapis.html
+path1: docapis_introtoapis.html
 weight: 1.21
 last-modified: 2022-01-01
 ---

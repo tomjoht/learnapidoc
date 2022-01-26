@@ -5,7 +5,7 @@ course: "Documenting REST APIs"
 weight: 13.2
 sidebar: docapis
 section: metrics
-path1: /docapis_metrics_and_measurement.html
+path1: docapis_metrics_and_measurement.html
 last-modified: 2021-02-15
 ---
 

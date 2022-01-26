@@ -2,7 +2,7 @@
 title: Testing API documentation
 permalink: testingdocs.html
 sidebar: docapis
-path1: /testingdocs.html
+path1: testingdocs.html
 weight: 6.0
 section: testingdocs
 course: "Documenting REST APIs"

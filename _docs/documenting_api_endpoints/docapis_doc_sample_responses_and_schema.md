@@ -6,7 +6,7 @@ course: "Documenting REST APIs"
 weight: 3.6
 sidebar: docapis
 section: docendpoints
-path1: /docendpoints.html
+path1: docendpoints.html
 redirect_from:
 - https://idratherbewriting.com/learnapidoc/docapis_doc_sample_responses.html
 last-modified: 2019-05-06

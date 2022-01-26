@@ -6,7 +6,7 @@ course: "Documenting REST APIs"
 weight: 14.2
 sidebar: docapis
 section: resources
-path1: /resources.html
+path1: resources.html
 last-modified: 2018-12-29
 ---
 

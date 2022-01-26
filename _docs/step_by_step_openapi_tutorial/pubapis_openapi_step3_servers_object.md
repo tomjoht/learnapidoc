@@ -5,8 +5,8 @@ course: "Documenting REST APIs"
 sidebar: docapis
 weight: 5.5
 section: openapitutorial
-path1: /restapispecifications.html
-path2: /openapi_tutorial.html
+path1: restapispecifications.html
+path2: openapi_tutorial.html
 map:
   step: 3
   definition: content/openapi_tutorial_map.html

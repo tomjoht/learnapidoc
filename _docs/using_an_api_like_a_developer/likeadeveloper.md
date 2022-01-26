@@ -2,7 +2,7 @@
 title: Using an API like a developer
 permalink: likeadeveloper.html
 sidebar: docapis
-path1: /likeadeveloper.html
+path1: likeadeveloper.html
 weight: 2.0
 section: likeadeveloper
 course: "Documenting REST APIs"

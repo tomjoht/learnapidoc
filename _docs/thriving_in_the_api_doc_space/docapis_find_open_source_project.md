@@ -5,7 +5,7 @@ course: "Documenting REST APIs"
 weight: 10.4
 sidebar: docapis
 section: jobapis
-path1: /jobapis.html
+path1: jobapis.html
 last-modified: 2020-06-27
 ---
 

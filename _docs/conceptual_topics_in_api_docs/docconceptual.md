@@ -2,7 +2,7 @@
 title: Conceptual topics in API docs
 permalink: docconceptual.html
 sidebar: docapis
-path1: /docconceptual.html
+path1: docconceptual.html
 weight: 7.0
 course: "Documenting REST APIs"
 section: docconceptual

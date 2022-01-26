@@ -5,7 +5,7 @@ permalink: jobapis_overview.html
 weight: 10.1
 sidebar: docapis
 section: jobapis
-path1: /jobapis.html
+path1: jobapis.html
 last-modified: 2020-01-02
 ---
 

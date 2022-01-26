@@ -5,7 +5,7 @@ course: "Documenting REST APIs"
 sidebar: docapis
 weight: 11.6
 section: nativelibraryapis
-path1: /nativelibraryapis.html
+path1: nativelibraryapis.html
 last-modified: 2018-12-26
 ---
 

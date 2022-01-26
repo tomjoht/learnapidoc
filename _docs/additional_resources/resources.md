@@ -4,7 +4,7 @@ permalink: resources.html
 course: "Documenting REST APIs"
 sidebar: docapis
 section: resources
-path1: /resources.html
+path1: resources.html
 weight: 14.0
 last-modified: 2021-10-11
 ---

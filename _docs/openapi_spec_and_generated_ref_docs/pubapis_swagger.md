@@ -5,7 +5,7 @@ course: "Documenting REST APIs"
 sidebar: docapis
 weight: 4.5
 section: restapispecifications
-path1: /restapispecifications.html
+path1: restapispecifications.html
 glossary_keys:
 - swagger
 - openapi

@@ -5,7 +5,7 @@ course: "Documenting REST APIs"
 sidebar: docapis
 weight: 4.4
 section: restapispecifications
-path1: /restapispecifications.html
+path1: restapispecifications.html
 redirect_from:
 - /learnapidoc/stoplight_studio_tutorial.html
 last-modified: 2021-09-22

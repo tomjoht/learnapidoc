@@ -4,7 +4,7 @@ permalink: docapis_more_about_authorization.html
 weight: 7.3
 sidebar: docapis
 section: docconceptual
-path1: /docconceptual.html
+path1: docconceptual.html
 last-modified: 2019-03-30
 ---
 

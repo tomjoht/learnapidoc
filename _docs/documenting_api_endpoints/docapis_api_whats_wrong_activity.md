@@ -4,7 +4,7 @@ permalink: docapis_api_whats_wrong_activity.html
 weight: 3.9
 sidebar: docapis
 section: docendpoints
-path1: /docendpoints.html
+path1: docendpoints.html
 last-modified: 2019-04-05
 ---
 

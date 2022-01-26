@@ -6,7 +6,7 @@ redirect_from:
 weight: 7.4
 sidebar: docapis
 section: docconceptual
-path1: /docconceptual.html
+path1: docconceptual.html
 last-modified: 2020-05-10
 ---
 

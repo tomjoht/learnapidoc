@@ -5,7 +5,7 @@ course: "Documenting REST APIs"
 weight: 8.7
 sidebar: docapis
 section: docapiscode
-path1: /doccode.html
+path1: doccode.html
 redirect_from:
 - /learnapidoc/docapis_sdks_and_sample_apps.html
 last-modified: 2019-11-17

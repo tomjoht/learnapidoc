@@ -6,7 +6,7 @@ course: "Documenting REST APIs"
 weight: 7.01
 sidebar: docapis
 section: docconceptual
-path1: /docconceptual.html
+path1: docconceptual.html
 last-modified: 2020-09-20
 ---
 

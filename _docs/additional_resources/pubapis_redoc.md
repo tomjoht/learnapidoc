@@ -5,7 +5,7 @@ course: "Documenting REST APIs"
 sidebar: docapis
 weight: 4.91
 section: restapispecifications
-path1: /restapispecifications.html
+path1: restapispecifications.html
 last-modified: 2021-10-15
 ---
 

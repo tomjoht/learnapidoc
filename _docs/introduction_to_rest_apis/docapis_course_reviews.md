@@ -5,7 +5,7 @@ permalink: docapis_course_reviews.html
 # weight: 1.11
 sidebar: docapis
 # section: introtoapis
-path1: /docapis_introtoapis.html
+path1: docapis_introtoapis.html
 published: false
 excerpt: Course reviews
 last-modified: 2017-12-26

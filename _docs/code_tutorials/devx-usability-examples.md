@@ -5,7 +5,7 @@ course: "Documenting REST APIs"
 weight: 8.9
 sidebar: docapis
 section: docapiscode
-path1: /doccode.html
+path1: doccode.html
 last-modified: 2020-10-20
 ---
 

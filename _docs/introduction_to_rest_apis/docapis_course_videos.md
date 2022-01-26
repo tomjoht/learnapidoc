@@ -4,7 +4,7 @@ permalink: docapis_course_videos.html
 course: "Documenting REST APIs"
 sidebar: docapis
 section: introtoapis
-path1: /docapis_introtoapis.html
+path1: docapis_introtoapis.html
 weight: 1.2
 last-modified: 2020-07-25
 ---

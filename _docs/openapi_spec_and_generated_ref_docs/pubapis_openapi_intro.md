@@ -8,7 +8,7 @@ course: "Documenting REST APIs"
 weight: 4.2
 sidebar: docapis
 section: restapispecifications
-path1: /restapispecifications.html
+path1: restapispecifications.html
 redirect_from:
 - /pubapis_openapi_intro/
 - /learnapidoc/pubapis_openapi_intro.html

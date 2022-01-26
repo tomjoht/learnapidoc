@@ -5,7 +5,7 @@ course: "Documenting REST APIs"
 sidebar: docapis
 weight: 9.97
 section: publishingapis
-path1: /publishingapis.html
+path1: publishingapis.html
 redirect_from:
 - /learnapidoc/pubapis_hats.html
 last-modified: 2018-12-25

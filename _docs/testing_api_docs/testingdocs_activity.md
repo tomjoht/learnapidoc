@@ -5,7 +5,7 @@ permalink: testingdocs_activity.html
 weight: 6.5
 sidebar: docapis
 section: testingdocs
-path1: /testingdocs.html
+path1: testingdocs.html
 last-modified: 2020-06-25
 ---
 

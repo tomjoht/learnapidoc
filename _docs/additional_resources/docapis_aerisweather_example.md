@@ -5,7 +5,7 @@ course: "Documenting REST APIs"
 weight: 14.31
 sidebar: docapis
 section: likeadeveloper
-path1: /likeadeveloper.html
+path1: likeadeveloper.html
 last-modified: 2019-11-17
 ---
 

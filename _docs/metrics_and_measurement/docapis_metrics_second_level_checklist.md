@@ -5,7 +5,7 @@ course: "Documenting REST APIs"
 weight: 13.3
 sidebar: docapis
 section: metrics
-path1: /docapis_metrics_and_measurement.html
+path1: docapis_metrics_and_measurement.html
 last-modified: 2021-02-15
 ---
 
@@ -30,11 +30,11 @@ li.checkboxListType1 {
 }
 </style>
 
-{% assign cb1 = "<li class='checkboxListType1' markdown='span'><i class='fa fa-check-square-o' aria-hidden='true'>" %}
+{% assign cb1 = "<li class='checkboxListType1' markdown='span'><i class='fa fa-check-square-o' aria-hidden='true'></i>" %}
 {% assign cb-end = "</li>" %}
 
 <div style="background-color: #eef; padding: 15px; margin-top: 30px; margin-bottom: 30px;" markdown="block">
-<div style="margin-top: 20px; margin-bottom: 20px; font-size:24px; text-align: center;">Second-level API documentation quality checklist</div>
+<div style="margin-top: 20px; margin-bottom: 20px; font-size:24px; text-align: center;">First-level API documentation quality checklist</div>
 
 ### Findability
 

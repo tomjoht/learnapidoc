@@ -8,7 +8,7 @@ course: "Documenting REST APIs"
 weight: 3.01
 sidebar: docapis
 section: docendpoints
-path1: /docendpoints.html
+path1: docendpoints.html
 last-modified: 2019-01-03
 ---
 

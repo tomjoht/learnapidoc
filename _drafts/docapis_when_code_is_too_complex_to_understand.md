@@ -5,7 +5,7 @@ keywords:
 course: "Documenting REST APIs"
 sidebar: docapis
 section: docapiscode
-path1: /doccode.html
+path1: doccode.html
 published: false
 last-modified: 2020-11-02
 ---
