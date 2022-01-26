@@ -34,7 +34,7 @@ li.checkboxListType1 {
 {% assign cb-end = "</li>" %}
 
 <div style="background-color: #eef; padding: 15px; margin-top: 30px; margin-bottom: 30px;" markdown="block">
-<div style="margin-top: 20px; margin-bottom: 20px; font-size:24px; text-align: center;">First-level API documentation quality checklist</div>
+<div style="margin-top: 20px; margin-bottom: 20px; font-size:24px; text-align: center;">Second-level API documentation quality checklist</div>
 
 ### Findability
 
