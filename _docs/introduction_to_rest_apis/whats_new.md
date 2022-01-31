@@ -16,6 +16,10 @@ If you're looking to see what's new in the API doc site/course, you can browse n
 
 The following are the most recent updates to the API documentation course.
 
+## January 2021
+
+* Revised the content in the [Metrics and Measurements](docapis_metrics_and_measurement.html) section as follows: Consolidated the first-level checkliist and second-level checklist into a [single checklist](docapis_quality_checklist.html). Removed the approach for quantifying each criteria into a score and weighting that score with the criteria's importance. This approach was something I experimented with but ultimately found that it didn't work in practice.
+
 ## December 2021
 * [PDF and eBook formats](docapis_formats.html). Created PDF, Kindle, and EPUB versions of the course that you can download.
 * [Broadcasting your meeting notes to influence a wider audience](docapis_meeting_notes.html). Explains how to broadcast your meeting notes as a tool for influencing other groups.

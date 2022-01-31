@@ -447,20 +447,20 @@ folders:
 - title: "XIV: Metrics and measurement"
   jurl: docapis_metrics_and_measurement.html
   folderitems:
-  - title: Measuring progress against documentation quality goals
+  - title: Measuring documentation quality through user feedback
     jurl: docapis_measuring_impact.html
 
-  - title: First-level checklist for API documentation
-    jurl: docapis_metrics_first_level_checklist.html
+  - title: Different approaches for assessing information quality
+    jurl: docapis_metrics_assessing_information_quality.html
 
-  - title: Second-level checklist for API documentation
-    jurl: docapis_metrics_second_level_checklist.html
+  - title: Quality checklist for API documentation
+    jurl: docapis_quality_checklist.html
 
   - title: Quantifying your progress
     jurl: docapis_metrics_quantifying_progress.html
 
-  - title: Templates for working with metrics
-    jurl: docapis_metrics_templates.html
+  # - title: Templates for working with metrics
+  #   jurl: docapis_metrics_templates.html
 
 - title: "XV: Additional resources"
   jurl: resources.html

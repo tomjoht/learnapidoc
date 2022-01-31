@@ -1,13 +1,16 @@
 ---
 title: Templates for working with metrics
 permalink: docapis_metrics_templates.html
-course: "Documenting REST APIs"
-weight: 13.5
-sidebar: docapis
-section: metrics
-path1: docapis_metrics_and_measurement.html
-last-modified: 2021-02-15
+# course: "Documenting REST APIs"
+# weight: 13.5
+# sidebar: docapis
+# section: metrics
+# path1: docapis_metrics_and_measurement.html
+# last-modified: 2021-02-15
+published: false
 ---
+
+<!-- note: I unpublished this page b/c this method of scoring didn't seem to work well in practice. -->
 
 You can use two templates for the metrics described in this [Metrics and measurement section](docapis_metrics_and_measurement.html). These templates were designed to work with Google Docs / Microsoft Word and Google Sheets / Microsoft Excel. The purpose of the doc template is for narrative/qualitative assessments, while the spreadsheet template is to more easily calculate the scores.
 
@@ -18,8 +21,7 @@ You can use two templates for the metrics described in this [Metrics and measure
 
 The purpose is the doc templates is make it easier to do narrative assessments of the various criteria. For example, if you find that the docs lack tutorials for the key use cases of the API, make notes about what use cases are lacking, or maybe note your inability to locate certain use cases in the docs. These kinds of narrative assessments don't work well in spreadsheets. Here are the two doc templates:
 
-* [First-level assessment doc (simplified html)](https://idratherbewriting.com/learnapidoc/docs/metrics_and_measurement/docapis_metrics_first_level_checklist_html.html)
-* [Second-level assessment doc (simplified html)](https://idratherbewriting.com/learnapidoc/docs/metrics_and_measurement/docapis_metrics_second_level_checklist_html.html)
+* [Quality checklist for API docs (simplified html)](https://idratherbewriting.com/learnapidoc/docs/metrics_and_measurement/docapis_quality_checklist_html.html)
 
 The templates strip away most formatting and just list the various criteria in a basic HTML file. Copy and paste the content into Google Docs or Microsoft Word. Then as you go through the content, make your notes in the "Assessment" area. Also choose a score of 0 to 5. (Weighting for each criteria is done in the spreadsheet, not in the doc template.)
 
@@ -33,10 +35,9 @@ The spreadsheets are meant to facilitate scoring. It's not possible to do a lot 
 
 To use the spreadsheet to calculate a score:
 
-1.  Right-click the links below and select **Save Link As** (or similar for other browsers) to save the files to your computer:
+1.  Right-click the links below and select **Save Link As** (or similar for other browsers) to save the file to your computer:
 
-    * [First-level spreadsheet (csv)](https://idratherbewriting.com/learnapidoc/docs/metrics_and_measurement/docapis_metrics_first_level_checklist_csv.csv)
-    * [Second-level spreadsheet (csv)](https://idratherbewriting.com/learnapidoc/docs/metrics_and_measurement/docapis_metrics_second_level_checklist_csv.csv)
+    * [Quality checklist spreadsheet (csv)](https://idratherbewriting.com/learnapidoc/docs/metrics_and_measurement/docapis_quality_checklist_csv.csv)
 
 2.  If you're using Microsoft Excel (the app, not the browser version), open the CSV file in Microsoft Excel and save the file as an XSLS file. Then skip ahead to step 4.
 3.  For Google Sheets:
@@ -86,14 +87,14 @@ To use the spreadsheet to calculate a score:
 
 If you're curious how to single source content stored in YAML into the checklist, Google Doc html template, and the CSV file in a Jekyll project, here are the details. The approach for the single and second-level checklist are the same. For brevity's sake, I'll only reference the single-level checklist.
 
-The YAML source is stored in the _data folder in this file: [_data/first_level_checklist](https://github.com/tomjoht/learnapidoc/blob/main/_data/first_level_checklist.yml).
+The YAML source is stored in the _data folder in this file: [_data/quality_checklist](https://github.com/tomjoht/learnapidoc/blob/main/_data/quality_checklist.yml).
 
 {% include random_ad1.html %}
 
-The checklist page retrieves this information using a [Liquid for loop](https://shopify.github.io/liquid/tags/iteration/). See the raw source here: [docapis_metrics_first_level_checklist.md](https://raw.githubusercontent.com/tomjoht/learnapidoc/main/_docs/metrics_and_measurement/docapis_metrics_first_level_checklist.md). (For some reason, you need to view the "raw" GitHub file to see the  liquid tags here.)
+The checklist page retrieves this information using a [Liquid for loop](https://shopify.github.io/liquid/tags/iteration/). See the raw source here: [docapis_metrics_quality_checklist.md](https://raw.githubusercontent.com/tomjoht/learnapidoc/main/_docs/metrics_and_measurement/docapis_metrics_quality_checklist.md). (For some reason, you need to view the "raw" GitHub file to see the  liquid tags here.)
 
-The CSV source file is here: [docapis_metrics_first_level_checklist_csv.csv](https://github.com/tomjoht/learnapidoc/blob/main/_docs/metrics_and_measurement/docapis_metrics_first_level_checklist_csv.csv). You can see formulas directly in the content. (This took a bit of trial-and-error with importing the file into Google Docs to get it right.)
+The CSV source file is here: [docapis_metrics_quality_checklist_csv.csv](https://github.com/tomjoht/learnapidoc/blob/main/_docs/metrics_and_measurement/docapis_metrics_quality_checklist_csv.csv). You can see formulas directly in the content. (This took a bit of trial-and-error with importing the file into Google Docs to get it right.)
 
-The Google Doc HTML source file is here: [docapis_metrics_first_level_checklist_html.html](https://github.com/tomjoht/learnapidoc/blob/main/_docs/metrics_and_measurement/docapis_metrics_first_level_checklist_html.html). This is just a simplified HTML page to facilitate copy/paste into other files.
+The Google Doc HTML source file is here: [docapis_metrics_quality_checklist_html.html](https://github.com/tomjoht/learnapidoc/blob/main/_docs/metrics_and_measurement/docapis_metrics_quality_checklist_html.html). This is just a simplified HTML page to facilitate copy/paste into other files.
 
 {% include image_ad_right.html %}

@@ -49,7 +49,7 @@ We'll also dive into specifications such as the [OpenAPI specification](pubapis_
 
 Tech writing is about more than tools and technology, though. As such, I even explore [processes and methodologies](docapis_managing_doc_processes.html) in depth, explaining how to manage both [large](docapis_managing_doc_projects.html) and [small](docapis_managing_small_doc_requests.html) documentation projects, how to [collect documentation feedback](docapis_collecting_feedback_post_release.html), [how to keep stakeholders happy and updated](docapis_status_reports.html), and more.
 
-I've also included a section on [metrics and measurement](docapis_measuring_impact.html), which lists a comprehensive [first-level quality checklist](docapis_metrics_first_level_checklist.html) as well as a [second-level checklist](docapis_metrics_second_level_checklist.html). The criteria described can help you evaluate your own developer portal in myriad ways against industry best practices.
+I've also included a section on [metrics and measurement](docapis_measuring_impact.html), which lists a comprehensive [quality checklist](docapis_quality_checklist.html). The criteria described can help you evaluate your own developer portal in myriad ways against industry best practices.
 
 Throughout this course, I put these concepts in real, applicable contexts with hands-on activities and demos.
 

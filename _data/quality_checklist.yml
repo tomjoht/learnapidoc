@@ -3,243 +3,232 @@
 findability:
 - title: Findable in search
   description: "The content is indexed in a general search engine and findable when you create searches with the product name and some key tasks."
-  weight: 1
-  total_possible: 5
-  row: 4
 
 - title: Site-specific search available
   description: "The doc site has a site-specific search that lets users search within the documentation site itself."
-  weight: 3
-  total_possible: 15
-  row: 5
 
 - title: Developer portal hub context
   description: "If you have lots of documentation relevant to users, the documentation is organized in a developer portal of some kind."
-  weight: 3
-  total_possible: 15
-  row: 6
 
 - title: UI pages link to docs
   description: "If there's a UI (such as with an administrative console), links within the UI connect users to the relevant documentation."
-  weight: 1
-  row: 7
 
 - title: Main organization isn't an FAQ
   description: "The content doesn't have an endless FAQ with information that should have been integrated into more logical places in the document."
-  weight: 1
-  row: 8
 
 - title: Version selection available
   description: "If content has multiple versions, the versions are called out visibly in the topic and might have a selector or link allows users to navigate to the other versions."
-  weight: 2
-  row: 9
 
 - title: Release notes present
   description: "Release notes track changes to the product and documentation."
-  weight: 3
-  row: 10
 
 - title: Easy path to top 5 pages
   description: "There’s an easy path for users to find the top 5 most-visited pages on the site. This requires you to look at metrics to determine these pages, and then assess the flow to those pages."
-  weight: 1
-  row: 11
+
+- title: Topics have article-like length
+  description: "Each topic consolidates much of the necessary information about the subject in a standalone, modular way. The topics don't fragment the subject into too many small topics that require the user to bounce around, losing context. At the same time, entire guides aren't shoved into single topics, making them eternally long. The length of topics should be about like a web article (for example, 500-3,000 words long)."
+
+- title: Content follows task-based organization
+  description: "Content is organized primarily by task and from a user's perspective rather than solely by doc type. The exception is that reference content is often consolidated on its own in an auto-generated output."
+
+- title: Developer portal has IA flow
+  description: "The information architecture (IA) in the developer portal organizes content within a larger context or story, even if it's just a list of links under various categories."
 
 accuracy:
 
 - title: Content reviewed within past year
   description: "Content has been reviewed by a subject matter expert within the past year. Ideally, each topic should include metadata such as the last-reviewed timestamp, last author, and the group that owns the content."
-  weight: 1
-  row: 14
 
 - title: Timestamps visible
   description: "The documentation provides a visible timestamp of the last time it was edited so that users can gauge how current the documentation is."
-  weight: 1
-  row: 15
 
 - title: No broken links
   description: "Links point to correct pages or are appropriately handled by redirects to equivalent pages."
-  weight: 1
-  row: 16
+
+- title: Steps are accurate
+  description: "The steps in the tasks accurately lead to the results promised by the task, without missing any details. For example, if the instructions say to click a button name, the button is named the same way in the interface. If the instructions say to use a class, the class is spelled as it appears in the code library, etc."
+
+- title: Instructions are consistent
+  description: "Information isn't repeated in confusing, redundant, or inconsistent ways. For example, the documentation doesn't explain how to do a task one way in Topic A but then a different way in Topic B. If content is re-used, the re-use is usually single-sourced to reduce inconsistency."
+
+- title: Screenshots are up to date
+  description: "Screenshots and other visuals are up to date with the state of the interface (if there is one)."
+
+- title: Deprecated features are noted
+  description: "Features that are no longer supported (or which have been deprecated) are clearly noted as such in the documentation. Preferably, if a feature has been deprecated, a migration path to an alternative solution is provided."
+
+- title: Functional code samples
+  description: "Code samples that can be copy and pasted actually work."
+
+- title: App code matches doc code
+  description: "Code in sample apps matches the code described in the documentation. The sample app hasn't evolved in ways that no longer match the documentation."
 
 relevance:
 
 - title: Key use cases are documented
   description: "The documentation doesn't just provide reference information (e.g., auto-generated API documentation) but also explains how to use the API with tutorials guiding users through common use cases and journeys. The content should address the *most common* use cases intended for the product."
-  weight: 3
-  row: 19
 
 - title: Code samples exist
   description: "<a href='docapis_codesamples_bestpractices.html'>Code samples</a> showing sample ways to use the API (or similar tools) are provided. Ideally, the code samples are available in the user's target language. This might mean providing multiple code samples."
-  weight: 3
-  row: 20
 
 - title: Support options noted
   description: "Options for contact or support are provided, even if the support merely involves posting to a peer-monitored forum."
-  weight: 1
-  row: 21
 
 - title: Reference material is interactive
   description: "The docs allow users to interact with the functions, API calls, or other commands often using their custom data. Typically, with REST APIs, an API explorer allows users to try out requests using their own data. Other sites might use Jupyter Notebooks to run code that can be customized. Seeing responses with your own data can make the API seem more relevant."
-  weight: 1
-  row: 22
 
 - title: Feedback options available
   description: "A feedback option is included in the docs so readers can relay feedback about their experience. When users provide feedback, they get the sense that someone is listening. This helps users feel more relevant."
-  weight: 1
-  row: 23
+
+- title: Docs are published when features released
+  description: "Documentation is available at the same time the feature is released and made available to users, not after the fact."
+
+- title: GitHub is actively monitored
+  description: "If the product has a code repository on GitHub (or similar), this repository is actively monitored when users log issues or submit pull requests. Users aren't simply ignored."
 
 clarity:
 
 - title: "Product overview page answers \"wh\" questions"
   description: "The <a href='docapis_doc_overview.html'>overview</a> explains the big picture and describes the problem that the tool or service addresses. Common who/what/where/why questions are answered here."
-  weight: 3
-  row: 26
 
 - title: Overview addresses use cases
   description: "The <a href='docapis_doc_overview.html'>overview</a> provides a high-level description of the main use cases or business objectives of the product. This allows users to get a sense of what the API is all about."
-  weight: 2
-  row: 27
 
 - title: Overview has architectural diagram and explanation
   description: "The <a href='docapis_doc_overview.html'>overview</a> has a diagram of the main components and how they interact. This provides users with a glimpse of the whole."
-  weight: 2
-  row: 28
 
 - title: Overview has index of assets that product offers
   description: "If there's an SDK or developer kit that users can download, the contents of this download are described. This is similar to product instructions that start by identifying all parts that should have arrived in a package."
-  weight: 1
-  row: 29
 
 - title: Subsystems have their own overview pages
   description: "For larger systems that might have multiple subsystems (e.g., groups of APIs for different scenarios), these subsystems have their own landing pages that resemble the higher-level overview (with use cases, diagrams, getting started links) but scoped to that specific subsystem."
-  weight: 1
-  row: 30
 
 - title: Access and authorization explained
   description: "Details about how to get access, permissions, and authorization to use the API are provided. For example, this topic might cover how to authorize an API call with API keys."
-  weight: 2
-  row: 31
 
 - title: Getting started tutorial exists
   description: "A <a href='docapis_doc_getting_started_section.html'>getting started tutorial</a> is provided for users to get started in an end-to-end way with the product, producing a sample output that builds their confidence. This topic might provide info on how to sign up, register, get API keys or permissions, and start using the API. (This topic might link to the authorization topic but is more comprehensive in scope. The purpose of this topic is frictionless onboarding.)"
-  weight: 3
-  row: 32
 
 - title: Sandbox environment available
   description: "A sandbox environment is available for users to try out the tool/system/API on their own and get a better understanding of how it works."
-  weight: 1
-  row: 33
 
 - title: README file exists in code repo
   description: "If the product has a code repository, the repository contains a README file that provides information similar to the overview (but abbreviated), including information on how to contribute if applicable. (The README might simply link to the documentation overview but also include unique sections such as how to contribute in the repo.)"
-  weight: 1
-  row: 34
 
 - title: Tasks have prerequisites sections
   description: "Each task has a \"Prerequisites\" section that explains knowledge requirements, tool requirements, essential concepts, etc., necessary for completing the task."
-  weight: 2
-  row: 35
 
 - title: Tasks have numbered steps or sections
   description: "Tasks are articulated through a series of specific, usually numbered steps or sections that reduce the complexity of the task. More complex tasks might require more granular and numerous steps or sections so as to reduce the complexity. (This is the primary way that technical writers simplify complexity.)"
-  weight: 2
-  row: 36
 
 - title: Sample app available
   description: "In more robust docs, a <a href='docapis_sample_apps.html'>sample app</a> might serve as a reference implementation for users."
-  weight: 2
-  row: 37
 
 - title: Code sample has inline comments
   description: "<a href='docapis_codesamples_bestpractices.html'>Code samples</a> are appropriately commented, either with inline comments, comments that preface or follow the sample, or both. Long code samples with no explanation aren't just dropped in."
-  weight: 2
-  row: 38
+
+- title: Any role-based permissions are noted
+  description: "If there are different roles and permission levels that correspond to varying capabilities, these roles are noted in all places they apply, such as within the individual API reference. For example, if only admin roles can use a certain endpoint, this is noted in the endpoint's reference and in any places that use the endpoint."
+
+- title: Steps are detailed rather than general
+  description: "Specific steps for completing tasks are described in detail rather than glossed over in general ways &mdash; unless the task is something the audience is already familiar with. Overall, the documentation strikes a balance between providing enough detail for users to get the job done but not including too much detail that the reader is inundated with extraneous information."
+
+- title: Workflow maps connect topics in larger flows
+  description: "Larger tasks that span multiple topics have a <a href='/simplifying-complexity/macro-micro.html'>workflow map</a> (or similar mechanism) that connects the topics together."
+
+- title: Visuals aid in areas of confusion
+  description: "In places that are particularly confusing, appropriate visuals or additional examples have been added to reduce confusion."
+
+- title: Support cases are minimal for the product
+  description: "Users can follow the documentation by themselves without relying on peer or customer support. A large number of support cases or forum threads containing questions that could have been answered in the documentation would indicate that the users aren't self-sufficient through the docs."
+
+- title: Technical level is appropriate to audience
+  description: "The documentation's technical level is appropriate to the *target audience* but might not serve every possible audience (for example, total newbies to a programming language might struggle with documentation intended for developers already experienced in that language). Usually, general concepts in a programming language that you assume the audience knows are not explained in the documentation. Instead, your company's product, configuration, and usage are covered in the context of the programming language. One exception is when the implementation requires a non-standard process or workflow that merits some explanation."
+
+- title: Experiential learning paths
+  description: "The documentation provides opportunities for experiential/opportunistic users to start learning immediately through code and trial/error, and for more systematic users to learn by reading concepts first."
+
+- title: Docs favor simplest path
+  description: "If there are multiple paths to a solution, the documentation focuses on the simplest path (though other possibilities might be briefly mentioned)."
+
+- title: Docs call out relevant sections in sample app
+  description: "In cases where a sample app complements the documentation as a reference implementation, the documentation should refer to different aspects of the sample app."
 
 completeness:
 
 - title: Reference docs follow industry standards
   description: "For native library APIs (or other API types), reference docs (auto-generated from source code comments) are available. This might mean <a href='nativelibraryapis_exploring_javadoc_output.html'>Javadoc</a>, <a href='nativelibraryapis_doxygen.html'>Doxygen</a>, <a href='pubapis_openapi_intro.html'>OpenAPI</a> outputs like <a href='pubapis_swagger.html'>Swagger</a> or other reference docs specific to the library. The reference docs should be populated and generally follow tagging standards."
-  weight: 3
-  row: 41
 
 - title: Reference content has consistent structure
   description: "Reference material such as APIs follow a <a href='docapis_api_reference_tutorial_overview.html'>common structure within each topic</a>, mostly following a request-response type structure. Typical sections include descriptions, parameters, sample requests or usage, and sample responses."
-  weight: 3
-  row: 42
 
 - title: Error messages documented
   description: "<a href='docapis_doc_status_codes.html'>Error messages</a> that users can encounter are documented and discoverable through search."
-  weight: 2
-  row: 43
 
 - title: Parameter docs have complete info
   description: "<a href='docapis_doc_parameters.html'>Parameter documentation</a> typically includes a description, data type, min/max values, sample values, and optional/required usage."
-  weight: 3
-  row: 44
 
 - title: Response includes both sample and schema (REST APIs)
   description: "The <a href='docapis_doc_sample_responses_and_schema.html'>response documentation</a> for REST APIs provides both a sample response and schema. The response provides an example of what might be returned, while the schema defines all possible elements that might be returned and describes attributes such as data types and whether the elements are required or optional in the response."
-  weight: 2
-  row: 45
 
 - title: Troubleshooting section exists
   description: "The documentation has a troubleshooting section (either standalone or included within the section/topic it relates to) that provides information on how to solve common problems. The troubleshooting information indicates where things might go wrong and how to fix them. In other words, the documentation doesn't just describe the happy path."
-  weight: 2
-  row: 46
 
 - title: Limitations/thresholds documented
   description: "If there are <a href='docapis_rate_limiting_and_thresholds.html'>limitations and thresholds</a> (for example, max number of API calls, max file sizes, max string lengths, max/min parameter values, max server load), these limitations are called out in the docs."
-  weight: 2
-  row: 47
 
 - title: Locale limitations noted
   description: "If a feature is available only in certain contexts (locales, languages,  platforms, roles, versions), that information is noted clearly in the feature. For example, an API that is only available for enterprise versions might have a label that says \"Enterprise Version Only,\" or if only available for a particular platform, might say \"Linux Only\" or the equivalent."
-  weight: 2
-  row: 48
+
+- title: Error messages are helpful for troubleshooting
+  description: "<a href='docapis_doc_status_codes.html'>Error messages</a> help users course correct by providing helpful hints for addressing the error. This supports the opportunistic/experiential user behavior."
+
+- title: Unhappy path documented
+  description: "If there are pitfalls or other traps, gaps, and gotchas to avoid, these are noted in the documentation rather than hidden from the user. A section called <a href='/2010/12/16/known-limitations/'>Known Limitations</a> often contains this information. The documentation doesn't lie or mislead the user but rather is <a href='/2017/07/13/transparency-in-documentation/'>transparent, honest, and helpful</a> even if it means exposing the product's warts and revealing problems users will like encounter."
 
 readability:
 
 - title: Sidebar nav has consumable organization at a glance
   description: "The sidebar navigation lets users take in a sense of the whole while also allowing users to expand more details as desired. The sidebar isn't a massive list of seemingly endless scrolling and expansion + expansion + expansion but divides up doc sets into logical groups, like chapters in a book. For systems with large numbers of topics, progressive disclose techniques might be implemented across primary, secondary, and tertiary levels of information."
-  weight: 1
-  row: 51
 
 - title: Sidebar nav highlights current topic
   description: "As the user navigates each topic, the sidebar navigation makes it clear where the user is in the navigation (for example, the topic highlights clearly and the navigation sticks open at that level). Breadcrumbs might also help establish site context."
-  weight: 2
-  row: 52
 
 - title: Context remains consistent when navigating
   description: "When a user clicks topics in the navigation, the UI doesn't shift context in jarring ways, such as unexpectedly taking the user to another doc set or changing stable navigation areas like the sidebar and header (which are usually consistent for every page). This jarring navigation often happens when sidebar entries point to topics in other doc sites. If this is the case, the external links have an icon indicating the link takes them to another site."
-  weight: 1
-  row: 53
 
 - title: Doc types have consistent names across product docs
   description: "Common topics have similar names across doc sets in the developer portal. For example, the Overview, Getting Started, Troubleshooting, Glossary, Release Notes, and Reference are named consistently to help users understand how to navigate the site. One doc set shouldn't call a topic \"Latest updates\" and \"First steps\" while another uses \"What's new\" and \"Quickstart.\""
-  weight: 1
-  row: 54
 
 - title: Subheadings are descriptive
   description: "The subheadings are descriptive enough to allow users to get a gist of the topic by merely reading the subheadings. The subheadings also follow a parallel structure so they can be more easily scanned and read."
-  weight: 1
-  row: 55
 
 - title: Topics start with summaries
   description: "Each topic usually has a <a href='https://idratherbewriting.com/2018/09/15/pages-at-a-glance-feature/#enforcing-best-practices-with-structure'>short summary below the title</a> that encapsulates the main purpose of the topic. This helps users get a sense of the topic at a glance."
-  weight: 1
-  row: 56
 
 - title: Glossary exists
   description: "Unfamiliar words and jargon are defined in a <a href='docapis_glossary_section.html'>glossary</a>. At times, the glossary terms are linked to their glossary definitions."
-  weight: 1
-  row: 57
 
 - title: Code samples have proper formatting and highlighting
   description: "The formatting in code samples follows standard white spacing, line breaks, and other syntax for the language. Code syntax highlighting appropriate to the language has been applied to increase the code's readability."
-  weight: 1
-  row: 58
 
 - title: Responsive view presents content in readable way
   description: "The content can be read on a mobile device (e.g., iPhone) in a usable way. For example, the responsive view allows users to navigate the sidebar links and view code samples."
-  weight: 1
-  row: 59
+
+- title: Placeholder text in code is visually apparent
+  description: "In code samples, placeholder text that needs to be customized is clearly indicated to the user. It's not confusing what is code and what needs to be changed, like `APIKEY`."
+
+- title: Navigation mechanisms consistent across docs
+  description: "Navigation mechanisms work consistently across all docs in the developer portal. For example, in one set of docs, if top-level folders expand to show child items rather than opening to their own page, the same behavior is found in other docs."
+
+- title: Sentences and paragraphs are somewhat short
+  description: "Sentences are somewhat short, paragraphs are relatively small, and subheadings are frequent. A readability score will place the content at the high-school level, not college."
+
+- title: Glossary entries match terms used
+  description: "Glossary terms are used consistently across the documentation. For example, one doc set doesn't use a certain term while another uses a synonym of the term, with the admin UI using yet another term."
+
+- title: Language uses active voice
+  description: "The language uses active voice (where warranted) with clear subjects and verbs positioned closely together."
+
+- title: Grammar isn't distracting
+  description: "Sentences are grammatically correct and read well, without distracting the user or calling attention to the language."
