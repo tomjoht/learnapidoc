@@ -78,7 +78,7 @@ To use the spreadsheet to calculate a score:
 
 5.  Populate the **Score** column with the scores you noted in the doc template.
 
-    {: .note} If any criteria isn't applicable from the list, put the weight as 0. This will make the Total WS Possible as 0 as well. For example, maybe "Findable in search" isn't applicable if your content isn't indexed in Google. For this line, change Weight (column B) to 0. You can also change the font for the row to light gray to indicate that it's inactive. However, don't delete the row.
+{: .note} If any criteria isn't applicable from the list, put the weight as 0. This will make the Total WS Possible as 0 as well. For example, maybe "Findable in search" isn't applicable if your content isn't indexed in Google. For this line, change Weight (column B) to 0. You can also change the font for the row to light gray to indicate that it's inactive. However, don't delete the row.
 
 {% include random_ad2.html %}
 
