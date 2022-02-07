@@ -22,15 +22,13 @@ And yet, to achieve the level of information quality, we didn't have to rely on 
 
 {% include random_ad1.html %}
 
-Note that sometimes poor API design will make even good docs problematic, no matter how good your content is. If the API has inconsistent naming, incomplete parameters, doesn't map to user journeys, and is cumbersome to use, then documentation also becomes more cumbersome to follow and implement. Good docs can't fix bad API design, though docs can try to salvage the user experience. If you have to explain the equivalent of String Theory and Lagrange Multipliers in your docs, give yourself extra points even if clarity is still debatable.
-
 ## Moving towards quantification
 
-In my initial go-around with the quality checklist, I tried to move towards quanitification by including scores and weights for each criteria, and then dividing the achieved number of points by the total points. From this scoring, you can move from qualitative to quantitative measurement.
+In my initial go-around with the quality checklist, I tried to move towards quantification by including scores and weights for each criteria, and then dividing the achieved number of points by the total points. From this scoring, I tried to move from qualitative to quantitative measurement.
 
 {% include random_ad2.html %}
 
-However, in practice, I found that assigning scores for each section felt very arbitrary and subject to personal whims. I don't think others would find the score meaningful either. Instead, just having a checklist of criteria to consider was value enough. In later revisions to the content here, I stripped out the section on quantification because I want the advice I give here to be helpful in practice, not just theory.
+However, in practice, I found that assigning scores for each section felt arbitrary and subject to personal whims. I don't think others found the scores meaningful either. Instead, just having a checklist of criteria to consider was valuable enough. That's why i stripped out the section on quantification in later revisions to the content &mdash; because I want the advice I give here to be helpful in practice, not just theory.
 
 I'm not saying that some approach to quantifying documentation wouldn't work, just that my approach did not. Also, recognize that the quality checklist has no official data to support it &mdash; instead, these best practices come from experience in the industry and from best practices that I and others have observed within the realm of developer documentation.
 

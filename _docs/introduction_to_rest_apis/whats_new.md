@@ -18,7 +18,10 @@ The following are the most recent updates to the API documentation course.
 
 ## January 2021
 
-* Revised the content in the [Metrics and Measurements](docapis_metrics_and_measurement.html) section as follows: Consolidated the first-level checkliist and second-level checklist into a [single checklist](docapis_quality_checklist.html). Removed the approach for quantifying each criteria into a score and weighting that score with the criteria's importance. This approach was something I experimented with but ultimately found that it didn't work in practice.
+* Revised the content in the [Metrics and Measurements](docapis_metrics_and_measurement.html) section as follows:
+  * Consolidated the first-level checkliist and second-level checklist into a [single checklist](docapis_quality_checklist.html).
+  * Removed the approach for quantifying each criteria into a score and weighting that score with the criteria's importance. This approach was something I experimented with but ultimately found that it didn't work in practice.
+  * Added a [lightweight version of the checklist](docapis_quality_checklist.html#short_version) that includes only two criteria from each category.
 
 ## December 2021
 * [PDF and eBook formats](docapis_formats.html). Created PDF, Kindle, and EPUB versions of the course that you can download.
