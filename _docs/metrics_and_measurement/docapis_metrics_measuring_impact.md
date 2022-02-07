@@ -13,7 +13,7 @@ As you set goals for your role or team, you might want to measure your impact on
 
 Also, metrics are essential for business reasons: upper management will invariably ask you for metrics of some kind (because what you can't measure, you can't manage). Metrics will also be key if you're making the case for a promotion (leveling up) or defending your performance during annual review time. Ultimately, though, you need metrics to answer this question: Is what I'm doing making a difference?
 
-Despite the importance of metrics about documentation quality, they are an elusive, holy-grail type task that almost no one in the industry has nailed down. How do you know if your docs are any good? The first response people usually give is that you measure documentation quality through user feedback. In this section, I'll explain why this approach is problematic.
+Despite the importance of metrics about documentation quality, they are an elusive, holy-grail type task that almost no one in the industry has nailed down. How do you know if your docs are any good? The first response people usually give is that you measure documentation quality through user feedback. In this section, I'll explain why trying to measure documentation by collecting user feedback is problematic.
 
 * TOC
 {:toc}
@@ -26,12 +26,12 @@ The first inclination many have when measuring documentation quality (how good y
 
 To a degree, yes, you can only really evaluate the usefulness of documentation from the perspective of a user going through the documentation with some tasks in mind. However, surveys are a difficult, inefficient way to go about measuring documentation quality for several reasons:
 
-* Survey responses aren't actionable
+* Survey responses aren't usually actionable
 * Users aren't regularly available for surveys
 * Survey questions are difficult to formulate
 * Users are sometimes unreliable
 
-## Survey responses aren't actionable
+## Survey responses aren't usually actionable
 
 First, feedback from users about documentation is often too general and unactionable to be helpful. If you do a satisfaction survey and find that only 30% of users would recommend the documentation to a friend, what can you do with that information? If surveys indicate that your docs are poor and need improvement, can you act on that? Which docs? Which parts need improvement? Are they "confusing and useless"? What's confusing or unhelpful about them? All of the docs, or just parts? Is the feedback a general impression overall, or focused on a specific user scenario from a single documentation topic?
 
@@ -41,7 +41,7 @@ Without more specifics, the information falls flat and doesn't lead to any actio
 
 In looking into ways to measure information quality, I found Yoel Strimling's article [Beyond Accuracy: What Documentation Quality Means to Readers](https://www.researchgate.net/publication/331088095_Beyond_Accuracy_What_Documentation_Quality_Means_to_Readers) to be spot on in identifying the issues with surveys. Strimling says that questions in all types of feedback (whether asked in surveys, focus groups, face-to-face interactions, or other) need to be specific to be actionable. Echoing the conclusions of other researchers, Yoel explains:
 
-> But it is not enough for us to collect meaningful feedback about our documentation from our readers. We also need to be able to use the information we collect to take actions that will help us directly address and prioritize the issues that are important to them.
+> ... it is not enough for us to collect meaningful feedback about our documentation from our readers. We also need to be able to use the information we collect to take actions that will help us directly address and prioritize the issues that are important to them.
 
 In other words, surveys alone, without actionable feedback, aren't enough. A user might provide general feedback, saying that the docs felt like they needed polish, or that they had trouble understanding/following them, or that they seemed incomplete. But without more specifics, this feedback isn't all that actionable.
 
@@ -49,7 +49,7 @@ In other words, surveys alone, without actionable feedback, aren't enough. A use
 
 ## Users aren't available for surveys
 
-Another problem with surveys is that most technical writers don't have direct and continued access to users to survey them on a regular basis. I wrote about the challenge of [reconstructing the absent user](https://idratherbewriting.com/simplifying-complexity/reconstructing-the-absent-user.html) in my series on Simplifying Complexity. It's unfortunate but the norm that technical writers have very little contact with their target users &mdash; not just access to users for surveys, but access to users through support interactions, training, presales, onboarding, or other situations.
+Another problem with surveys is that most technical writers don't have direct and continued access to users to survey them on a regular basis. I wrote about the challenge of [reconstructing the absent user](https://idratherbewriting.com/simplifying-complexity/reconstructing-the-absent-user.html) in my series on Simplifying Complexity. It's unfortunate but the norm that technical writers have very little contact with their target users &mdash; not just access to users for surveys, but access to users through support interactions, training, presales, onboarding, or other situations. If users aren't available to survey, collecting their feedback becomes difficult.
 
 ## Unbiased survey questions are difficult to formulate
 
@@ -61,15 +61,15 @@ If you're a regular reader of my blog, you've probably seen a lot of small surve
 
 ## Users are sometimes unreliable
 
-Finally, another problem with surveys is audience unreliability. We base the value of our docs around the user's perspective, but what if users are unreliable or unhelpful? There's a lot of variation, subjectivity, and unreliability with survey responses. Sometimes people use docs as a scapegoat for other issues related to poor product design, company dissatisfaction, or other frustrations. Often when I'm taking a survey, I base my responses on one part of the product or docs that I've been using, not on the whole. One bad topic can taint the user's response about the entire docs, distorting the quality measure.
+Another problem with surveys is audience unreliability. We base the value of our docs around the user's perspective, but what if users are unreliable or unhelpful? There's a lot of variation, subjectivity, and unreliability with survey responses. Sometimes people use docs as a scapegoat for other issues related to poor product design, company dissatisfaction, or other frustrations. Often when I'm taking a survey, I base my responses on one part of the product or docs that I've been using, not on the whole. One bad topic can taint the user's response about the entire docs, distorting the quality measure.
 
 {% include image_ad_right.html %}
 
-Additionally, people who respond negatively in satisfaction surveys might not be your target audience. You might have been writing for an audience already familiar with a certain framework, but your survey might include someone new to the framework who found the docs worthless. Other times, users might respond so hastily that their responses are cryptic and vague.
+Additionally, people who respond negatively in satisfaction surveys might not be your target audience. You might have been writing for an audience already familiar with a certain framework, but your survey might include someone new to the framework who found the docs worthless because they don't have the needed background. Other times, users might respond so hastily that their responses are cryptic and vague.
 
 ## What can replace surveys?
 
-I'm not entirely dismissive of surveys &mdash; I'm only being realistic. They have rarely worked for me. If the survey's purpose is to highlight the importance of documentation in general, how critical it is for complete and accurate documentation to help users complete tasks, great. But that's a different purpose than measuring documentation quality. A metric about the importance of docs would support resourcing for doc efforts or other goals for establishing tech comm's importance. But to make improvements with quality, you need information that is much more specific and actionable, and that's where general surveys tend to fall short.
+I'm not entirely dismissive of surveys &mdash; I'm only being realistic. They have rarely worked for me. If the survey's purpose is to highlight the importance of documentation in general, e.g., how critical it is for complete and accurate documentation to help users complete tasks, great. But that's a different purpose than measuring documentation quality. A metric about the importance of docs would support resourcing for doc efforts or other goals for establishing tech comm's importance. But to make improvements with quality, you need information that is much more specific and actionable, and that's where general surveys tend to fall short.
 
 Rather than sink too much time and energy into surveys as the only way to measure doc effectiveness, I propose a much more concrete and realistic approach to measuring doc quality: assessing the documentation against a detailed quality checklist. The checklist can take the general qualities of measurement (e.g., clarity, accuracy, relevance, findability, etc.) and make concrete what these abstract qualities mean and how they can be implemented.
 

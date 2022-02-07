@@ -126,7 +126,7 @@ For their research, they "asked software developers to solve a set of pre-define
 
 There are a lot of great observations and conclusions in this article. I'm just summarizing and highlighting the information here. I recommend that you [read the article](https://sigdoc.acm.org/cdq/how-developers-use-api-documentation-an-observation-study/) for the full details.
 
-### Systematic versus opportunistic behaviors
+### Systematic versus opportunistic behaviors {#systematic_vs_opportunistic}
 
 The authors present some previous research about *systematic* and *opportunistic* learning behaviors. These terms are typically how previous researchers describe the contrasting user behaviors.
 

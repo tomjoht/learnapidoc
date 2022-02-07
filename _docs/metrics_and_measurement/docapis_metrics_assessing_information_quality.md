@@ -33,9 +33,7 @@ In [Beyond Accuracy: What Documentation Quality Means to Readers](https://www.re
 
 <a class="noCrossRef" href="https://www.researchgate.net/publication/331088095_Beyond_Accuracy_What_Documentation_Quality_Means_to_Readers"><img src="{{site.media}}/documentation-quality-definitions-2.png" alt="Documentation Quality Definitions part 2" /></a>
 
-As you can see, defining information quality is a constant theme in tech comm research. While the characteristics are somewhat similar, they aren't described in the same way, and they are mostly general and abstract.
-
-Strimling is troubled by the lack of a unified approach to documentation quality, by the slipperiness of terms and lack of consistency. He asks, which of these qualities matter most to users?
+As you can see, defining information quality is a constant theme in tech comm research. While the characteristics are somewhat similar, they aren't described in the same way, and they are mostly general and abstract. Troubled by the lack of a unified approach to documentation quality, and by the slipperiness of terms and lack of consistency, Strimling asks, which of these qualities matter most to users?
 
 Strimling aligns with researchers Richard Wang and Diane Strong (1996) because of the way their research aligns with the "voice of the data customer" and because of the soundness of their framework and research. Wang and Strong's research is the foundation for many other articles here as well. After describing 118 information quality dimensions, Wang and Strong boil them down to four main criteria. Yoel explains:
 
@@ -74,13 +72,13 @@ Strimling says you can ask users these questions during various interaction poin
 
 These four criteria seem like a solid way to evaluate documentation if you have a way to frequently interact with your users. But even if you could regularly survey your users, these abstract categories don't provide details about *how* you might go about making the information more clear, relevant, accurate, and findable.
 
-In other words, these categories are too high-level and general to be more actionable. For example, what does it mean for something to be clear when you consider different audiences and varying technical backgrounds? Is well-written code clear, without the need for any comments? The categories fail to specify *tactics and tools* for executing clarity, relevancy, accuracy, and findability. How do you make something more clear and relevant? What specific steps do you take?
+In other words, these categories are too high-level and general to be more actionable. For example, what does it mean for something to be clear when you consider different audiences and varying technical backgrounds? Is well-written code clear even if doesn't have comments? The categories fail to specify *tactics and tools* for executing clarity, relevancy, accuracy, and findability. How do you make something more clear and relevant? What specific steps do you take? So even if you were to get feedback from a user who says that the documentation is not clear, is not relevant, and isn't easy to understand, it would be difficult to take any specific actions based on this feedback without the user unpacking the detailed reasons for which he or she felt this way.
 
-If you're not a user (but rather a technical writer) trying to assess documentation through these four questions, the questions are also not helpful. They can't be fully answered by a non-user. For example, "Could you find the information you needed in the document?" Only the reader can answer this. "Was the information in the document relevant?" Again, only the reader can answer this, not the writer. "Was the information easy to understand?" Again, only the reader can answer this.
+If you're not a user (but rather a technical writer) trying to assess documentation through these four questions, the questions are also not helpful. They can't be fully answered by a non-user. For example, "Could you find the information you needed in the document?" Only the reader can answer this. "Was the information in the document relevant?" Again, only the reader can answer this, not the writer. "Was the information easy to understand?" Again, only the reader can answer this. So while these questions seem like a good approach, I'm not sure how useful they are.
 
-If you're the target audience using the docs and have just finished the task, then yes, you could answer these questions to assess and transform the docs, but this returns us to the problem of relying on surveys to gather information to evaluate documentation. **How can we break away from the dependence on user surveys but still develop a method for quality based on the user's perspective?** This is my central question here.
+*How can we break away from the dependence on user surveys but still develop a method for quality based on the user's perspective?* This is my central question in this section.
 
-Fortunately, if we take the starting categories here (accessibility, accuracy, relevance, clarity), and we are confident that these attributes align with user priorities, then we only need to define how these attributes can be implemented in documentation in more specific, concrete, and actionable ways. This is a point Strimling starts to make in [So You Think You Know What Your Readers Want?](https://www.researchgate.net/publication/331088225). He says, "In lieu of feedback, what we need is a proven model of how readers actually define documentation quality (DQ), which we can then use to ensure that what we produce is useful to our audience." In other words, these four criteria can guide you unless you have more specific feedback. In later sections, I'll get specific about how to implement each of the more general criteria by following best practices for content design detailed in a rubric.
+Fortunately, if we take the starting categories here (accessibility, accuracy, relevance, clarity), and we are confident that these attributes align with user priorities, then we only need to define how these attributes can be implemented in documentation in specific, concrete, and actionable ways. This is a point Strimling starts to make in [So You Think You Know What Your Readers Want?](https://www.researchgate.net/publication/331088225). He says, "In lieu of feedback, what we need is a proven model of how readers actually define documentation quality (DQ), which we can then use to ensure that what we produce is useful to our audience." The checklist that I'll define in the next section is a model that identifies specifics from these general qualities.
 
 {% include random_ad1.html %}
 
@@ -116,25 +114,25 @@ Also, unlike scholarly research, Pronovix looks for best practices and successfu
 
 Another great resource is [Nordic APIs](https://nordicapis.com/). In [5 Examples of Excellent API Documentation (and Why We Think So)](https://nordicapis.com/5-examples-of-excellent-api-documentation/), Thomas Bush evaluates 5 documentation sites based on these criteria:
 
-* Authentication guide ☐
-* Quickstart guide ☐
-* Endpoint definitions ☐
-* Code snippets ☐
-* Example responses ☐
+* Authentication guide
+* Quickstart guide
+* Endpoint definitions
+* Code snippets
+* Example responses
 
-He highlights reasons for admiring certain sites, noting that the lesson with Stripe is "don't overdo it." For Twilio, it's "be beginner-friendly." For Dropbox, it's "cater to unique dev backgrounds." For GitHub, it's "save developer time wherever you can." And for Twitter, it's "be flexible with how you present information."
+Bush highlights reasons for admiring certain sites, noting that the lesson with Stripe is "don't overdo it." For Twilio, it's "be beginner-friendly." For Dropbox, it's "cater to unique dev backgrounds." For GitHub, it's "save developer time wherever you can." And for Twitter, it's "be flexible with how you present information."
 
 Another Nordic API article, [7 Items No API Documentation Can Live Without](https://nordicapis.com/7-items-no-api-documentation-can-live-without/), discusses 7 essential components in API docs:
 
-* 1: An Authentication Scheme
-* 2: HTTP Call Type Definitions
-* 3: Endpoint Definitions
-* 4: URI Structures, Methods, and Parameters
-* 5: Human Readable Method Descriptions
-* 6: Requests and Examples
-* 7: Expected Responses
+1. An Authentication Scheme
+2. HTTP Call Type Definitions
+3. Endpoint Definitions
+4. URI Structures, Methods, and Parameters
+5. Human Readable Method Descriptions
+6. Requests and Examples
+7. Expected Responses
 
-In my rubric, I've listed each of these items but only briefly and generally. Sites like [Nordic APIs](https://nordicapis.com) and [Pronovix](https://pronovix.com) provide more detailed guidance about how to optimize your documentation in each of these areas.
+In my [quality checklist](docapis_quality_checklist.html), I've listed each of these items but only briefly and generally. Sites like [Nordic APIs](https://nordicapis.com) and [Pronovix](https://pronovix.com) provide more detailed guidance about how to optimize your documentation in each of these areas.
 
 ## Technical writing handbooks
 
@@ -165,13 +163,13 @@ Overall, there are 60 specific characteristics within the various categories. Wh
 
 ## Standards specifications
 
-Another place to look at information quality would be standards such as the [ASD-STE100](http://www.asd-ste100.org/). The ASD-STE100 standard was developed by the Aerospace and Defense Industries Association (ASD) to encourage simplified technical English (STE). STE consists of a dictionary of about 900 allowed words and a set of 65 writing rules intended to encourage more simplified English.
+Another place to look at information quality would be standards such as the [ASD-STE100](http://www.asd-ste100.org/). The ASD-STE100 standard was developed by the Aerospace and Defense Industries Association (ASD) to encourage Simplified Technical English (STE). STE consists of a dictionary of about 900 allowed words and a set of 65 writing rules intended to encourage more simplified English.
 
 Another standard is [ISO/IEC 26514:2008 - Systems and software engineering — Requirements for designers and developers of user documentation](https://www.iso.org/standard/43073.html), which is a standard that "specifies the structure, content, and format for user documentation, and also provides informative guidance for user documentation style."
 
 {% include image_ad_right.html %}
 
-Another standard is [IEC/IEEE 82079-1 - Preparation Of Information For Use (Instructions For Use) Of Products - Part 1: Principles And General Requirements](https://webstore.ansi.org/Standards/ISO/IECIEEE820792019?gclid=Cj0KCQiA6Or_BRC_ARIsAPzuer-sndUAjuadJ-nhVGSbZeUX-MfS_jFuZj3mSC_-eyEcRiP-LFyTuMMaAmpKEALw_wcB). Referencing an ISO standard might make your embrace of the standard more defensible. Embracing standards defined here would allow you to benefit from principles already debated, vetted, and finalized. If only the ISO publications were more accessible (e.g., without paywalls), these information resources could be much more valuable.
+In the realm of documentation standards, there's also [IEC/IEEE 82079-1 - Preparation Of Information For Use (Instructions For Use) Of Products - Part 1: Principles And General Requirements](https://webstore.ansi.org/Standards/ISO/IECIEEE820792019?gclid=Cj0KCQiA6Or_BRC_ARIsAPzuer-sndUAjuadJ-nhVGSbZeUX-MfS_jFuZj3mSC_-eyEcRiP-LFyTuMMaAmpKEALw_wcB). Referencing an ISO standard might make your embrace of the standard more defensible. Embracing standards defined here would allow you to benefit from principles already debated, vetted, and finalized. If only the ISO publications were more accessible (e.g., without paywalls), these information resources could be much more valuable.
 
 Another resource developed by SAP and later generalized and adopted by tekom is [Standards and Guidelines for API Documentation](https://www.technical-communication.org/tekom/publications/specialist-books/detail/standards-and-guidelines-for-api-documentation), by Anne Tarnoruder. You can read a summary of the 68-page book in a tcworld article here: [Standardizing API documentation](https://www.tcworld.info/e-magazine/technical-writing/standardizing-api-documentation-949/). Tarnoruder emphasizes clear naming guidelines for APIs, noting:
 
@@ -179,7 +177,7 @@ Another resource developed by SAP and later generalized and adopted by tekom is 
 
 Technical writers might work with developers on names to ensure best practices with API design, especially regarding names. I covered some of these principles in my [summary of Arnaud Lauret's book, *The Design of Web APIs*](https://idratherbewriting.com/learnapidoc/evaluating-api-design.html). However, my focus here is more on documenting an API that has already been finalized rather than providing input on best practices for API design.
 
-The book provides comprehensive guidelines for writing the descriptions of API elements in the OpenAPI definition files, illustrated by examples. Tarnoruder also provides templates for REST and OData APIs, if you're not already using something like OpenAPI. And she provides detailed guidelines for documenting APIs such as Java with Javadoc.
+Tarnoruder's book provides comprehensive guidelines for writing the descriptions of API elements in the OpenAPI definition files, illustrated by examples. Tarnoruder also provides templates for REST and OData APIs, if you're not already using something like OpenAPI. And she provides detailed guidelines for documenting APIs such as Java with Javadoc.
 
 For developer guides, Tarnoruder provides guidelines such as including "conceptual, setup, quick start and how-to information" and avoiding "implementation details irrelevant to users." This advice is fairly commonplace. However, more interesting, she also encourages writers to address both a code-first learning style and a concepts-first learning style. She writes:
 
@@ -200,4 +198,4 @@ Many other sources can inform documentation quality. For example, the [Good Docs
 
 Another place to look for information quality is perhaps with information typing models (Information Mapping, DITA, and more). But I've already surveyed the landscape sufficiently here. My intent is not to exhaustively survey research on information quality. As Strimling's earlier research pointed out, most people generally agree on the high-level categories. I want to instead provide specifics on implementation, especially for developer docs.
 
-*Continue on to the next section, [Quality checklist for API documentation](docapis_quality_checklist.html).*
+*Continue on to the next section, [Quality checklist for API documentation](docapis_quality_checklist.html), where I'll list the details of my information quality checklist for developer docs.*

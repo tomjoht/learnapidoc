@@ -9,6 +9,6 @@ path1: docapis_metrics_and_measurement.html
 last-modified: 2021-02-06
 ---
 
-Metrics and measurement addresses ways to measure API documentation quality and how to track your progress on improvement. You can use both the quality checklist here to review essential components of documentation and decide how your API docs stack up. The checklist can be a way to investigate, analyze, and interrogate your documentation from another perspective and discover ways to improve it.
+Metrics and measurement addresses ways to measure API documentation quality and how to track your progress on improvement. You can use the quality checklist here to review essential components of documentation and decide how your API docs measure up. The checklist can be a way to investigate, analyze, and interrogate your documentation from another perspective and discover ways to improve it.
 
 {% include minitoc.html %}
