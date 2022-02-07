@@ -101,7 +101,7 @@ For this activity, you'll use JavaScript to display the API response on a web pa
     You can view the file here: [weather-plain.html](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html).
 
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## The AJAX method from jQuery
 

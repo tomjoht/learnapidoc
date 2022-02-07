@@ -179,7 +179,7 @@ This is an edit I made locally.
 
 Now you need to re-add the file to Git again. In the GitHub Desktop client, commit your changes to the updated files. Then click **Push origin.** The updates on your local get pushed to the remote without any more conflicts.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## Conclusion
 

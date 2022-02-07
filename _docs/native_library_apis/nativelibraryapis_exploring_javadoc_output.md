@@ -18,7 +18,7 @@ The Javadoc output hasn't changed much in the past 20 years, so in some sense, i
 
 ## Class summary
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 Open the index.html file in the Javadoc folder you generated in [Activity: Generate a Javadoc from a sample project](nativelibraryapis_create_javadoc.html).
 

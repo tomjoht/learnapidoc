@@ -42,7 +42,7 @@ In some ways, you don't even need to have much technical depth or familiarity wi
 
 What works best is to carve out time during the actual meeting for reviewers to read the content. If you have a 45-minute meeting (an ideal length for review meetings), allow reviewers to either spend the first 20 minutes reading the content before launching into a discussion, or allow them to give feedback in real-time while they're reading. The former technique (giving time to read for 20 minutes) is the [basic _modus operandi_ of meetings at Amazon](https://idratherbewriting.com/blog/a-place-for-exploratory-writing-in-the-workplace/), and it works great elsewhere too. It's a little odd to have this quiet time during the meeting, but it's also somewhat reassuring for the reviewers to know that you've given them the necessary time to read the docs during the meeting.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 You might think, oh, we'll just ask everyone to read the doc beforehand and come to the meeting prepared with comments. When you do this, usually one person has read the content and others haven't. This frustrates the person who did read (he or she now just has to sit there waiting for others), and makes others feel irresponsible for not having done the preparation. The others end up skimming the content quickly so they can get started with the review. Then when they share their feedback, they make suggestions about adding content that's already there (because they didn't read it carefully enough).
 

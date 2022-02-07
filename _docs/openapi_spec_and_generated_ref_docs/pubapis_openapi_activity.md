@@ -38,7 +38,7 @@ To edit the OpenAPI specification file:
 7.  Change some spacing in a way that makes the spec invalid (such as inserting a space before `info`), and look at the error that appears. Then revert the invalid space.
 8.  Expand the **Get** section and click **Try it out**. Then click **Execute** and look at the response.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## Create the OpenAPI specification document for an API of your choosing
 

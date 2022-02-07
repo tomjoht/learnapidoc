@@ -78,7 +78,7 @@ Other technical writers are usually both curious and helpful when you ask them t
 
 Although other technical writers don't always have time to go through your instructions, and they usually share your same level of technical expertise, having *someone* test your instructions is better than no one.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 Tech writers are good testing candidates precisely because they are writers instead of developers. As writers, they usually lack the technical assumptions that a lot of developers have (assumptions that can cripple documentation). Also, developers may feel embarrassed if they don't already understand a concept or process referenced in the docs.
 

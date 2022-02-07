@@ -16,7 +16,7 @@ To understand the documentation for Java APIs, it helps to see the context of wh
 {:toc}
 {% endif %}
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## Sample Java Project
 

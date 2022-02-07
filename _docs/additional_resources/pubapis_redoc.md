@@ -14,9 +14,15 @@ last-modified: 2021-10-15
 
 [Redoc](https://github.com/Redocly/redoc) is a popular display framework for the OpenAPI as well and is a favorite by many API gurus. Redoc started out as a API doc site for [Rebilly docs](http://rebilly.github.io/RebillyAPI) but with many customizations evolved into its own unique framework. Redoc provides a three-panel layout made popular by companies such as Stripe.
 
+{% include random_ad1.html %}
+
 The makers of Redoc spun off into their own company ([Redocly](https://redoc.ly/)) and developed a more robust hosted solution offering (see [From ReDoc to Redoc.ly](https://redoc.ly/blog/from-redoc-to-redocly)). As with both Stoplight and Swagger UI, Redoc offers both free and pro versions to adjust to your needs. And you can add topics beyond just reference docs.
 
+{% include image_ad_right.html %}
+
 ## <i class="fa fa-user-circle"></i> Activity: Use Redoc Community Edition to render OpenAPI spec {#community_edition_output}
+
+{% include random_ad2.html %}
 
 In this activity, you'll render your OpenAPI spec with [Redoc](https://github.com/Redocly/redoc).
 
@@ -60,6 +66,10 @@ In this activity, you'll render your OpenAPI spec with [Redoc](https://github.co
 
 3.  In your web browser, click **Cmd + O** (Mac) or **Ctrl + O** (Windows), locate your **redoc.html** file, and select it.
 
-    The display should look as follows:
+{% include random_ad3.html %}
 
-    <figure><a href="https://idratherbewriting.com/learnapidoc/assets/files/redoc.html"><img src="{{site.media}}/redoc_display.png" alt="Sample Redoc display" class="large" /></a><figcaption>Sample Redoc display</figcaption></figure>
+The display should look as follows:
+
+<figure><a href="https://idratherbewriting.com/learnapidoc/assets/files/redoc.html"><img src="{{site.media}}/redoc_display.png" alt="Sample Redoc display" class="large" /></a><figcaption>Sample Redoc display</figcaption></figure>
+
+{% include random_ad4.html %}

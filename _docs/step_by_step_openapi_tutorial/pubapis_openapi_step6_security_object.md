@@ -211,4 +211,4 @@ The server response also appears directly in the Swagger UI display, with a link
 
 Note that when you implement Swagger UI, if you find that the curl request works but the response doesn't appear in Swagger UI, there might be a CORS issue with your API blocking requests from web applications like Swagger. See [Troubleshooting issues with Swagger UI](pubapis_swagger.html#troubleshooting_swagger) for details.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}

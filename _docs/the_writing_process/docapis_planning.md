@@ -46,7 +46,7 @@ If you do get engineers to write, you might find that they write crap (like a on
 
 At any rate, just because engineers have "written" content, it doesn't mean you somehow escaped a lot of work &mdash; it just gives you a different starting point. Rewriting content can take just as long as writing from scratch. So maybe you won't want to go the path of having engineers write anyway. Either way, whether you have the first "draft" to begin with or need to author it yourself, you still have a lot of work to do.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 I'm going to assume that, in this scenario, engineers aren't inclined to write the docs. They do, however, have a lot of source material they've been holding out on.
 

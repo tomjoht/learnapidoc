@@ -142,7 +142,7 @@ The essence of an API is inputs and outputs. Something goes in, and something co
 *   How frequently can you call the API? Are there access limits?
 *   What gotchas or quirks should developers be aware of?
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## Error messages and handling
 

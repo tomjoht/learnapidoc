@@ -39,4 +39,4 @@ In each concept topic, I'll provide general descriptions and overviews of what t
 
 With each topic, there's an activity for you to go into your [open-source project](docapis_find_open_source_project.html) and evaluate the conceptual topic at hand. Although many of the conceptual topics are straightforward, when you look at the information in context, that is, when you look to see how the information is actually implemented, it gets a lot more interesting.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}

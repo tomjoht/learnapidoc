@@ -300,7 +300,7 @@ Now enter the path and parameter information:
 
 You don't need to add security for this endpoint because you already configured global security in the previous section. However, if this endpoint had unique security method, you could override the global security here by clicking the + Security button.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## Step 4: Learn how to re-use parameters {#reuse}
 

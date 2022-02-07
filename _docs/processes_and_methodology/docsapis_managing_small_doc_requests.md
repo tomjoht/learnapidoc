@@ -121,7 +121,7 @@ Suppose a thread goes a dozen rounds and multiple Cc lists. By the time the thre
 
 Most small doc requests can be made directly within your authoring system rather than starting out in a collaborative platform like Google Docs or Quip. When you're creating content in your authoring system, you might choose to follow a standard branching workflow (or whatever Git workflow you've decided to implement in your group). Usually, create a branch from production and make your changes in the branch.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 When you're ready to review this version with reviewers, merge your feature branch into beta, push the build into a beta environment of some kind, and provide a link to reviewers. Also, create a code review so the requester can see specifically what you changed. I find that code reviews provide more granular detail if people want it, though I'm somewhat mixed about whether code reviews are useful for more extensive updates. I personally like that code reviews objectively demonstrate the changes made so that readers get a sense of the effort involved.
 

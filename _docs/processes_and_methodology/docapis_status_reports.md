@@ -61,7 +61,7 @@ Through an analysis of ticket logs, explain how documentation is reducing the dr
 
 This activity forces you to regularly review the ticket log and see what frictions the users/partners/developers are having. For example, you might have an issue tracking system with hundreds of bugs logged each month. Look through the bugs and pick out bugs that could potentially have been averted had the information been available in the documentation.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 For example, suppose a partner says they are confused about some data element and its availability within an API. That ticket should likely never have been filed; the partner should have been able to find the information within the documentation directly.
 

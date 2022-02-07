@@ -55,7 +55,7 @@ Another task before publishing your new content is to add metadata to the pages 
 
 Don't skip adding metadata. Recognize that right now, at the point of release, everyone is excited about the new content. But it will only be a matter of time before most people forget about this page, before you move on, before the teams that support the content transition to other projects and parts of the org, or before the feature itself is sunset, then deprecated.
 
-{% comment %}{% include random_ad3.html %} {% endcomment %}
+{% include random_ad3.html %}
 
 Others who follow you will need to know who wrote the content and when it was last updated. (There's nothing worse than arriving at a new job and not having any history about the content's accuracy, freshness, or authorship.) Sometimes the content metadata is automatically tracked through version control &mdash; if so, great. But the version control metadata often supplements more explicit metadata tagging within the content itself.
 

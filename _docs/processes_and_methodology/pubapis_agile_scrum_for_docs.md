@@ -89,7 +89,7 @@ If it doesn't make sense to join an engineering scrum, you can create your own s
 
    6.  *Collect feedback post-release*. After you publish the documentation, embed a Feedback button directly in your docs to collect additional feedback from customers in an ongoing way. This incoming feedback trickles in and might not contain significant or actionable information, but customers should have some way of relaying their feedback. As a tech writer, I want to know if there is some major issue with docs so that I can fix them.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## Conclusion
 

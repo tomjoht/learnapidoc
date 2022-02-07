@@ -59,7 +59,7 @@ paths:
 
 This tag is defined at the global level, so the `/weather` path will be grouped here.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## <i class="fa fa-user-circle"></i> View the Appearance in Swagger UI
 

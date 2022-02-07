@@ -43,7 +43,7 @@ With each interview, it's good to give the person a list of questions ahead of t
 
 There's another reason for reaching out to these four distinct groups: any group alone might present a skewed perspective, and without more variety, it's easy to mistake their perspective as the *Truth*. When you write documentation, you often raise awareness about differing points of view that need to be addressed. You might find disagreements between engineering and product management, or between product management and business development, and so on.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 For example, in our scenario of creating an API for coffee shops, perhaps the product management group envisions partners being able to add their own coffee shops and supplementary data, including ratings and reviews &mdash; essentially enabling partners to both read and write to the API. In contrast, Engineering might have more conservative views about what's possible with the data and might want to promote a more simplified model of updates only going one way &mdash; read-only. Writing documentation raises awareness of these differences and will force these groups to align as they review the documentation.
 

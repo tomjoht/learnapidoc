@@ -24,7 +24,7 @@ Hosting and deployment platforms usually offer a number of additional features b
 
 [GitHub Pages](https://pages.github.com/) provides a free hosting and deployment option for Jekyll projects. If you upload a Jekyll project to a GitHub repository, you can indicate that it's a Jekyll project in your GitHub repo's Settings, and GitHub will automatically build it when you commit to your repo. This feature &mdash; building Jekyll projects directly from your GitHub repo &mdash; is referred to as GitHub Pages.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 In your GitHub repo, click **Settings** and scroll down to **GitHub Pages**. This section is where you activate GitHub Pages for your project.
 

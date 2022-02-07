@@ -39,7 +39,7 @@ The Eventbrite API documentation is available at [https://www.eventbrite.com/pla
 
 To get event information, we'll use the [event](https://www.eventbrite.com/platform/api#/reference/event) object, which "represents an Eventbrite Event." (The Eventbrite API uses the term "objects" instead of resources.") Specifically, we'll use [Retrieve](https://www.eventbrite.com/platform/api#/reference/event/retrieve-an-event). The only parameter we need to pass is the event ID.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## 3. Construct the request
 

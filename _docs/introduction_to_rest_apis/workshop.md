@@ -119,7 +119,7 @@ Break. Snacks provided.
 
 [Activity: Push local changes to the remote](pubapis_github_wikis.html#push_local_to_remote)
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## 4:00 - 4:30: Participant's challenges surfaced and discussed
 

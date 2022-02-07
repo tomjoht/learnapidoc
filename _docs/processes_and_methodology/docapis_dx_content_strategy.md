@@ -22,7 +22,7 @@ If organizations don't have any DX content strategists dedicated to their growin
 
 Finding the right content on an internal wiki is a constant challenge, and there's no consistency from one page to the next. In the wiki model, teams create docs during their times of need and abandon them when their teams or priorities change. The result is a mishmash of fragmented, often unowned content.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 Because documentation for external developers is a high priority, it shouldn't befall the same fate as content on internal wikis. In the [State of API 2019 report](https://static1.smartbear.co/smartbearbrand/media/pdf/smartbear_state_of_api_2019.pdf), Smartbear found that "accurate and detailed documentation" ranked third in priority (just below "ease of use" and "responsiveness/performance") from 15 ranking factors in an API experience. You can't achieve a high level of content quality without playing a more strategic role with the content and expanding beyond the individual contributor model. Individual contributors are usually focused on docs for a current project only and rarely have bandwidth to expand their concerns at a broader, more encompassing level across the developer portal.
 

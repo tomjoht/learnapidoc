@@ -83,7 +83,7 @@ You should get minified JSON response back like this:
 {: .note}
 In Windows, Ctrl+ V doesn't work; instead, you right-click and then select **Paste**.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ### Notes about using curl with Windows
 

@@ -86,7 +86,7 @@ It's good to get the first draft of content on the page. After that, I can begin
 
 Even though I've been a professional writer for many years, I don't have a lot of writing stamina. After I get several hours of writing in, I often tap out. Writing is somewhat like exercising &mdash; after a couple of good hours max, I'm done. I can't just sit down for hours on end writing documentation. Very few can, especially given how much preparation is required to get the knowledge to write technical documentation. Instead of spending long hours writing, I try to chip away at larger content projects a little bit each day over a series of weeks. This approach (writing a little each day) usually ends up being more successful.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## 3.5. Make a running list of questions you have {#questions}
 

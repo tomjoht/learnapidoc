@@ -44,4 +44,4 @@ Remember that [user surveys](docapis_measuring_impact.html), which I criticized 
 
 Overall, I am confident that few would object to most of the criteria in the [checklist](docapis_quality_checklist.html). Most of the checklist's criteria would be agreed upon by both readers and writers with enough common ground as to be a practical guide for improving documentation quality. Also, the criteria should be seen as a first draft, a starting point that can be refined and improved, checked against industry standards, confirmed against docs that are loved by users, refined through constant feedback, and more.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}

@@ -22,7 +22,7 @@ I recorded this full-day API documentation in Menlo Park, California, on Novembe
 
 {% include note.html content="For the most recent workshop recording, see the [Video recordings of API doc workshops](docapis_course_videos.html)." %}
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ### Video 1
 

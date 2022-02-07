@@ -24,6 +24,8 @@ For an in-depth introdution to headless CMSs, see [Headless CMS vs Decoupled CMS
 
 Not all tools listed here are headless CMSs, so I have called them more generally "hybrid" solutions, since many of these doc tools don't fit into neat categories.
 
+{% include random_ad3.html %}
+
 ## Forestry.io {#forestry}
 
 [Forestry.io](https://forestry.io/) is similar to CloudCannon in that it offers online hosting for Jekyll projects, but it also provides hosting for [Hugo](https://gohugo.io/) and Git. Forestry's emphasis is on providing an online CMS interface for static site generators. The CMS interface gives you a WordPress-like GUI for seeing and managing your content.
@@ -33,6 +35,8 @@ Not all tools listed here are headless CMSs, so I have called them more generall
 The idea behind the CMS interface is that most static site generators ostracize less technical users by forcing them into the code. (For example, when I write a post in Jekyll, usually others who look over my shoulder think I'm actually programming, even though I'm just writing posts in Markdown.) The CMS removes this by making the experience much more user-friendly to non-technical people while also still leveraging the openness and flexibility of the static site generator platform.
 
 Forestry.io (unlike CloudCannon) also offers an on-premise enterprise installation so you can host and manage the entire platform behind your company's firewall.
+
+{% include random_ad2.html %}
 
 ## Netlify CMS {#netlifycms}
 
@@ -56,6 +60,8 @@ Readme.com's emphasis is on providing an interface that helps you more easily wr
 <figure><img class="docimage medium border" src="{{site.media}}/readmeio_manual_api.png" alt="Readme.com" /><figcaption>Readme.com</figcaption></figure>
 
 Most importantly, Readme.com includes specific features for displaying API documentation content, which puts it into a class of its own. Although you can add your API information manually, you can also import an [OpenAPI specification file](pubapis_openapi_intro.html). You can experiment by choosing one from the [OpenAPI examples](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v2.0/yaml), such as [this one](https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/petstore-expanded.json). Readme.com's integration of OpenAPI along with other doc content helps integrate outputs that are often separated. (This fragmentation is a problem I explore later in [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).)
+
+{% include random_ad1.html %}
 
 Overall, Readme.com provides a robust GUI for creating API documentation in a way that is more extensive and well-designed than virtually any other platform available. The output includes an interactive, try-it-out experience with endpoints:
 

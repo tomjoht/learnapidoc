@@ -14,7 +14,7 @@ Now that you've read about testing, it's time to get some more hands-on practice
 * TOC
 {:toc}
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## Test a topic
 

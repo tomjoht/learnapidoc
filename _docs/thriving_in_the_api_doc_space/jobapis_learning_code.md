@@ -112,7 +112,7 @@ For example, recently I was working with an engineering team on a new voice feat
 
 I wasn't directly embedded with the team, nor was I a dedicated resource for the team. In this role, I simply acted as editor and publisher. But I had to turn around the gibberish they wrote at a rapid rate, usually in 1-2 hours. As this project was one of many I was juggling, I had to quickly restructure and rewrite the content (sometimes touching every sentence) to make it read like a native speaker had written it rather than engineers in another country. During this same time, I was working on rewriting our team website and other writing projects.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 I have a tech writing colleague who is a former engineer, and I often wonder if he has the same writing skills to edit this content with the same speed and efficiency that I do. Of course, I shouldn't make judgments, but I'm pretty good at both writing and editing. After all, look at the output on my blog. In just a couple of hours during the evening, I can write a post that is worth reading in the morning. Can engineers who lack writing backgrounds do this? If tech writers are increasingly playing publishing/editing roles instead of developing content directly (because the content is so highly technical that only specialists can create it), then shouldn't companies prioritize writing abilities over technical abilities (to an extent)?
 

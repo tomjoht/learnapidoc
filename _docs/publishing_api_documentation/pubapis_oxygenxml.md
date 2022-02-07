@@ -37,6 +37,8 @@ With Oxygen XML, you can [reference Markdown files alongside DITA files in your 
 
 Why would you want to mix and match format types within the same project? You might have engineers write in Markdown and technical writers write in DITA. Technical writers often have to handle more complex publishing challenges (for which DITA might be more suitable), while external contributors might want simpler needs that can be handled with Markdown alone.
 
+{% include random_ad4.html %}
+
 ### Workflow #2: Convert Markdown to DITA and publish {#workflow2}
 
 Another workflow would be to [convert Markdown files to DITA syntax](https://www.oxygenxml.com/doc/versions/23.1/ug-editor/topics/markdown-dita-2.html?hl=markdown#markdown-dita__converting_multiple_markdown_documents_to_dita). With this workflow, contributors could submit content in Markdown, and tech writers could convert the content into DITA as they pull the content into their projects and then use more advanced reuse features.
@@ -50,6 +52,8 @@ Another workflow could be to publish DITA to Markdown using the [DITA Open Toolk
 This publishing engine might be preferable if you have a UX team who wants an extremely customized doc website to match other branding, or perhaps if you have customized templates and Swagger integration for your API reference documentation. Some static site generators like Gatsby offer a robust React-based framework that some UX front-end engineers might prefer to work in, rather than [customizing the Oxygen XML webhelp output](https://www.oxygenxml.com/doc/versions/23.1/ug-editor/topics/wh_webhelp_output.html). Then again, if you don't have UX and engineering support, creating your own custom doc-themed website might not be appealing to you.
 
 Even within XML projects, many teams use OxygenXML as their editor only (not to also publish). They use the editor to author and edit content, but then connect with another system to handle the publishing.
+
+{% include random_ad3.html %}
 
 ## Markdown support
 
@@ -77,6 +81,8 @@ The ability to visually arrange the topics in the DITA Maps Manager is a huge co
 
 Overall, Oxygen XML lets you choose either a direct text editing experience (working in the code) or a visual editor experience, depending on your preference. You can switch back and forth between modes seamlessly, saving a file to see the updates populate into the other view.
 
+{% include random_ad2.html %}
+
 ## Git client integration
 
 Because the Oxygen XML files are all text files, you can manage the content in Git. (In contrast, binary files that are machine-readable can't be managed in Git.) Although you could manage your Oxygen XML files with Git using your external terminal, Oxygen XML also provides integration with Git directly in the Oxygen XML editor through the [Git Client Add-on](https://www.oxygenxml.com/doc/versions/23.1/ug-editor/topics/git-addon.html?hl=branch%2Cmanager).
@@ -90,6 +96,8 @@ When you add the Git Client Add-on, a new Git Staging panel appears in the left 
 The "Unstaged files" section shows changes you've made to files that haven't been added to the staging area in Git. After selecting the files to stage, click the Stage selected arrow <img style="width:20px" src="{{site.media}}/oxygenxml-stage-arrow.png" alt="Staging arrow" /> to move it into your staging directory. (Moving these files into the staging area is the equivalent of running `git add <filename>` in the terminal.) The file then appears under Staged files and will be pushed to your Git repository on the next commit.
 
 To commit the files, type a commit message and click Commit. (This is the equivalent of typing `git commit -m 'some message'` in the terminal.)
+
+{% include random_ad1.html %}
 
 ### Viewing Git history
 
@@ -125,6 +133,8 @@ If you've never heard the phrase "docs as code," see [Doc-as-code tools](pubapis
 ## Other reasons to explore Oxygen XML
 
 Beyond the docs-as-code features described above, there are other reasons to explore Oxygen XML. Some of these reasons I selected because of my experience in [implementing Jekyll while at Amazon](pubapis_switching_to_docs_as_code.html). Some features didn't seem like a big deal at the time (I told myself, _we'll figure it out later_) but they proved to be extremely challenging. These features include customizing the theme, generating PDFs, round-tripping translation workflows, and avoiding the temptation to script everything.
+
+{% include image_ad_right.html %}
 
 ### Responsive HTML5 webhelp
 

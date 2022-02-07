@@ -53,7 +53,7 @@ You can also read the content on a Kindle viewer on your computer. The content a
 
 (Note: The ebook version isn't on Amazon.com yet, so you have to download the file and transfer it manually to your device.)
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## EPUB
 

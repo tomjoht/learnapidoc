@@ -216,7 +216,7 @@ To summarize the takeaways from the research presented here, here are some key p
 
 These strategies provide a foundation for best practices that we will explore in more detail with more concrete, tangible techniques in the sections that follows.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 {% comment %}
 more resources

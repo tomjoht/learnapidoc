@@ -201,7 +201,7 @@ With the [open-source project you identified](docapis_find_open_source_project.h
 4. How long does the getting started tutorial take to complete?
 5. In an attempt to simplify the instruction and keep it brief, does the documentation make assumptions about your technical level and familiarity with the domain?
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## Reasons why getting started tutorials fail or don't exist {#reasons_for_failure}
 

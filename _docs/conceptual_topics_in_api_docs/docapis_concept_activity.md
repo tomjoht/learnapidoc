@@ -67,4 +67,4 @@ The following are 7 common conceptual topics in API documentation. For each topi
 * [Facebook](https://developers.facebook.com/docs/apis-and-sdks)
 
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}

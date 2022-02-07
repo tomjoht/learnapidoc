@@ -22,7 +22,7 @@ You could actually use the default GitHub wiki as your doc site. Here's an examp
 
 <figure><a target="_blank" class="noExtIcon" href="https://github.com/basecamp/bc3-api"><img class="docimage large" src="{{site.media}}/basecampapi.png" alt="Basecamp API" /></a><figcaption>Basecamp API</figcaption></figure>
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 Unlike other wikis, the GitHub wiki you create is its own repository that you can clone and work on locally. (If you look at the "Clone this wiki locally" link, you'll see that it's a separate repo from your main code repository.) You can work on files locally and then commit them to the wiki repository when you're ready to publish. You can also arrange the wiki pages into a sidebar.
 

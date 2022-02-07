@@ -58,4 +58,4 @@ Additionally, videos force the user to go at the pace of the narrator. If your s
 Despite the constant changes in the technology landscape, I want to keep this course current and up to date. As such, I'll continue to add and edit and refine it as needed. I want this content to become a vital learning resource for all technical writers, both now and in the years to come as technologies evolve.
 If you have general feedback about this course, feel free to [drop me a line](https://idratherbewriting.com/learnapidoc/contact.html){: .noCrossRef}.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}

@@ -50,7 +50,7 @@ The following are sample tutorials. Pick two tutorials and analyze them to see h
 11. [Introduction to Populating a Website with API Data](https://programminghistorian.org/en/lessons/introduction-to-populating-a-website-with-api-data)
 12. [Video Skills Kit for Fire TV](https://developer.amazon.com/docs/video-skills-fire-tv-apps/integration-overview.html#integration_steps)
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 {% include image_ad_left.html %}
 

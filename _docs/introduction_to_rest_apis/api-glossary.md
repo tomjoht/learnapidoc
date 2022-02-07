@@ -92,7 +92,7 @@ The API documentation landscape is full of jargon, acronyms, and many new terms.
 
 {% include glossary_full.html letters="a,b,c,e,g,h,j,m,o,p,q,r,s,v,y" file="glossary" %}
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 {% include random_ad2.html %}
 

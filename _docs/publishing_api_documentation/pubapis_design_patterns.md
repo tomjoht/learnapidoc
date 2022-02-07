@@ -162,7 +162,7 @@ One of the challenges in using documentation generated from [OpenAPI and Swagger
 
 If you can integrate the branding and search, users may not care. But if it feels like users are navigating several sites that are poorly cobbled together, the UX experience will be somewhat fragmented.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 Think about other content that users will interact with, such as marketing content, terms of service, support, and so on. How do you pull together all of this information into a single site experience without resorting to an overbloated CMS or some other web framework?
 

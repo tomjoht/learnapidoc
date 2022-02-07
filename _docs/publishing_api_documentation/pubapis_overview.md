@@ -70,7 +70,7 @@ Additionally, almost no HAT runs on a Mac. Many developers and designers prefer 
 
 Even if you could get developers to use a HAT, you'd likely need to buy a license for each contributing developer. In contrast, docs-as-code tools are often open source and can, therefore, scale across the company without budgetary funding and approval.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ### 2. HATs won't generate docs from source
 

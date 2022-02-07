@@ -106,7 +106,7 @@ The following are some common Javadoc tags:
 * **`@throws`** The kind of exception the method throws. Note that your code must indicate an exception thrown in order for this tag to validate. Otherwise, Javadoc will produce an error. `@exception` is an alternative tag.
 * **`@Override`** Used with interfaces and abstract classes. Performs a check to see if the method is an override.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## What elements you add Javadoc tags to
 

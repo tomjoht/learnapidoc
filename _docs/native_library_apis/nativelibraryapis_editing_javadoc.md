@@ -28,7 +28,7 @@ When you make edits to Javadoc content, look for the following:
 * **Consistent style**. See if the existing tags follow [Java's style conventions with annotations](nativelibraryapis_javadoc_tags.html).
 * **Clarity**. Some descriptions are unintelligible due to the curse of knowledge (it might be hard to tell without a stronger grasp of Java)
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## <i class="fa fa-user-circle"></i> Make some edits to the Javadoc
 

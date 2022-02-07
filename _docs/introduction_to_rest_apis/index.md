@@ -53,7 +53,7 @@ I've also included a section on [metrics and measurement](docapis_measuring_impa
 
 Throughout this course, I put these concepts in real, applicable contexts with hands-on activities and demos.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## Who the course is for
 

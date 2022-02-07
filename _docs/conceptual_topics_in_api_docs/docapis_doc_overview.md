@@ -59,6 +59,8 @@ A developer portal usually has documentation for many different products, not ju
 
 Even a single product might have multiple overviews for each of the features. The overview is just a term for the opening page of a product, the landing page or starting page. Whenever you need a high-level description of your product, you need an overview page.
 
+{% include random_ad3.html %}
+
 ## Audience includes decision-makers
 
 One important dimension to keep in mind with product overviews is the expanded audience. Product overviews aren't just read by your target documentation users, i.e., usually engineers. Product overviews are frequently read by product managers, executives, and other decision-makers who are trying to decide whether to purchase or move forward with the product. These decision-makers might be trying to size up the complexity of integration, how many person-hours the effort will consume, and whether the product will solve the problem they have. Only documentation can truly answer this question, not marketing material.

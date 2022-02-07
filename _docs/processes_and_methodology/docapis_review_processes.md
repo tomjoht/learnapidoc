@@ -97,7 +97,7 @@ After the product team has reviewed and approved the documentation, incorporate 
 
 In the doc review, you can start by talking through the documentation at a high-level. Then follow the same pattern as before with dedicated meetings to read and review the documentation. Or if it's not feasible to read the documentation during the meeting, assign them the review as homework with a follow-up due date for feedback. If these field engineers will be guiding partners with this documentation, they are intrinsically motivated to make sure the docs are accurate, clear, and complete. Otherwise, customers/partners will ping them with questions and issues.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 To collect feedback from field engineers, try putting your docs on the same collaborative platform for collecting feedback that your company has already established. For example, in many companies, teams use Salesforce Quip or Google Docs as collaboration tools. Both are highly similar, as these tools allow you to annotate text and make comments in the margins, and then reply to the comments. Commenters get notified about replies, and so on. Collaborative tools invite more of a discussion around content, not just a static reading experience. If you can write and edit your docs in a collaborative space, this is ideal.
 

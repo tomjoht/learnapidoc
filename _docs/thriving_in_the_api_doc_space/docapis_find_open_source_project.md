@@ -116,7 +116,7 @@ So yeah, as a technical writer, you may not be fixing bugs in the code or develo
 
 I know the value of the doc role intimately from my own experience in contributing to open source doc projects. At one point, before focusing my energy on this API doc course, I contributed several tutorials to the [Jekyll docs](https://jekyllrb.com/docs/home/). I added instructions that included a lot of new content and even added a [Tutorials section](https://jekyllrb.com/tutorials/home/).
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 I thought other developers would continue creating new tutorials in a steady stream, but they didn't. Developers tend to add little snippets of documentation to pages &mdash; a sentence here, a paragraph there, an update here, a correction there. You will rarely find someone who writes a new article or tutorial from scratch. When there's a new release, there often aren't release notes &mdash; there are merely links to (cryptic) GitHub issue logs.
 

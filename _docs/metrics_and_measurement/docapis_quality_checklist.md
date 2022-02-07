@@ -27,7 +27,7 @@ Before jumping into the criteria, consider the scope. If you're working on a dev
 
 Granted, the user journeys might extend beyond this scope, but start with your stewardship first. The last thing you want to do is start a war with other authors by identifying all kinds of issues with their content (at least not before you address your own issues first).
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## Levels of assessment
 

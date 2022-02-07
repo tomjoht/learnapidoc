@@ -33,7 +33,7 @@ As you get into a rhythm of sharing meeting notes after the meeting, people migh
 
 On the flip side, sometimes surfacing issues is a good thing, as it forces the issues into open daylight where some action can be taken. It doesn't make sense to hold everything inside all the time, fuming in silence. One of the purposes of sharing notes is to effect change. If you have an ugly issue to deal with, sometimes writing about it with transparency and honesty is a good approach, even if it ruffles some feathers or induces pain. For example, "Writers were unable to get timely reviews from the ACME engineers, which caused us to shift priorities to groups that value our time and energy more." A sentence like that might send shock waves into the ACME group, but hey, you wanted change, right?
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## The structure of meeting notes
 

@@ -64,7 +64,7 @@ If you do allow contributions from external contributors or community members, b
 
 One pitfall to watch out for with external contributors is the content abandonment problem. It's common for external contributors to get involved in adding documentation in a time of need, and then abandon the content when their product fizzles or when they switch teams. Then you're stuck with content that you don't know much about, with no clear owner, reviewer, or maintainer. Essentially, these scenarios are like adopting an orphan child that you now you have to watch and care for. This is often how teams end up with a lot of legacy content.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 To avoid this content abandonment scenario, make sure you have a clear policy around the review and ownership of the content from contributors. Track who owns the content, the contact points for questions related to the content, and expectations for regular review of the content. It takes a lot of proactivity to track and enforce this, though, because again, no one will be knocking on your door to regularly review and look over existing content. As I wrote in [Processes for maintaining existing documentation](docapis_doc_maintenance_processes.html), tech writers are mostly focused on new content, not maintaining old content. Almost every tech writer I know has more work than they can currently handle, and reviewing old docs that no one is complaining about or requesting rarely climbs up the priority list.
 

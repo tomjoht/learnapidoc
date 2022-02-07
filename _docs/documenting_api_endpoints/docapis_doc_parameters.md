@@ -189,7 +189,7 @@ You could then use the same color for these parameters in later descriptions:
 
 By color coding the parameters, it's easy to see the parameter being defined and how it relates to the endpoint definition.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## Query string parameters {#query_string_parameters}
 

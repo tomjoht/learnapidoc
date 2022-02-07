@@ -41,7 +41,7 @@ The following list describes the most common types of APIs you will encounter:
 
 For more reading, see [API types](https://ffeathers.wordpress.com/2014/02/16/api-types/) by Sarah Maddox. Sarah notes that there are also hardware APIs, object-remoting APIs, web socket APIs, OS functions and routines, and more.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 Despite the variety of APIs, the defining characteristic of nearly all developer documentation is that it involves documenting *some type of API*. This is why "API documentation" and "developer documentation" are used somewhat synonymously. APIs make life easier for developers (who are consuming the API) because the APIs perform functions or other tasks in more efficient ways.
 

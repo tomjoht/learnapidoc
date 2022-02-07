@@ -25,7 +25,7 @@ The purpose is the doc templates is make it easier to do narrative assessments o
 
 The templates strip away most formatting and just list the various criteria in a basic HTML file. Copy and paste the content into Google Docs or Microsoft Word. Then as you go through the content, make your notes in the "Assessment" area. Also choose a score of 0 to 5. (Weighting for each criteria is done in the spreadsheet, not in the doc template.)
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## Using the spreadsheets for scoring
 

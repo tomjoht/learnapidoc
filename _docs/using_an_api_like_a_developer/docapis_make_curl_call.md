@@ -84,4 +84,4 @@ curl -H "Content-Type: application/json" -H "Authorization: 123" -X POST -d @myp
 
 Here curl will look in the existing directory for the `mypostbody.json` file. (You can also reference the complete path to the JSON file on your machine.)
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}

@@ -52,7 +52,7 @@ When analyzing whether you have adequate docs for the release, another question 
 
 Here's where you have some options for a doc coverage goal. You could expand the doc coverage with an additional category of doc quality. For each feature covered by docs, you could score the documentation with a quality rating. As a tech writer, you typically know when docs are good or not. For example, did you personally test the docs, or just copy and paste content an engineer gave you? Does the documentation describe the request and response in a complete way? Are the step-by-step tasks described with enough detail for users to make their way through the docs?
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 I know that the features I personally test usually end up with much better documentation. While it might seem like a given that tech writers [test all the features they document](testingdocs.html), that's hardly the case. The setup and execution of the features often requires extensive engineering knowledge and expertise. If you're working in dev docs, testing each feature is a feat unto itself.
 

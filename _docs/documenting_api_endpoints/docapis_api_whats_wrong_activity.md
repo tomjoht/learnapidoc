@@ -226,6 +226,6 @@ The following table describes each item in the response.
 You can view the answer key here: [What's wrong with this topic answer key](https://docs.google.com/document/d/1ogj99YHhFMkXb-HMMMko-G9Hq9Rg6cztdT06-oUZm4E/edit).
 
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 {% include random_ad2.html %}

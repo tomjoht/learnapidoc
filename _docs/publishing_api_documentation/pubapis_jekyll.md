@@ -125,7 +125,7 @@ The only drawback with CloudCannon is that your company must allow you to host d
 
 If cost is an issue and you don't have any privacy restrictions around your docs, consider using [GitHub Pages](https://pages.github.com/) instead. GitHub Pages also gives you continuous integration delivery for GitHub projects, and it's free.
 
-{% comment %}{% include random_ad3.html %}{% endcomment %}
+{% include random_ad3.html %}
 
 ## Make an update to your Github repo
 
