@@ -6,8 +6,6 @@ path1: docconceptual.html
 weight: 7.0
 course: "Documenting REST APIs"
 section: docconceptual
-redirect_from:
-- docconceptual.html
 last-modified: 2020-11-02
 ---
 

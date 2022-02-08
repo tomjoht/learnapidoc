@@ -6,7 +6,7 @@ sidebar: docapis
 section: introtoapis
 path1: docapis_introtoapis.html
 weight: 1.21
-last-modified: 2022-01-01
+last-modified: 2022-02-08
 ---
 
 <figure><a class="noCrossRef" href="https://idbwrtng.com/learnapidoc-pdf"><img class="tiny" style="float: right; border: 4px solid #dedede; margin-left: 10px;" src="{{site.media}}/ebook_cover.svg" alt="Documenting APIs ebook - You can read this course content as an ebook or PDF." /></a></figure>

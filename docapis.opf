@@ -140,7 +140,7 @@ layout: null
     <item id="css_syntax" href="assets/css/syntax.css" media-type="text/css"/>
 
   <!-- table of contents [mandatory] -->
-	<item id="My_Table_of_Contents" media-type="application/x-dtbncx+xml" href="docapis_test.ncx"/>
+	<item id="My_Table_of_Contents" media-type="application/x-dtbncx+xml" href="docapis.ncx"/>
 
   <!-- cover image [mandatory] -->
   <item id="My_Cover" media-type="image/png" href="images/{{site.cover_image}}"/>
