@@ -101,3 +101,8 @@ background-color: #3f3f3f;
 .reveal small {
   vertical-align: middle;
 }
+
+.reveal p.readMore {
+  text-align: center;
+  font-size: .5em;
+}
