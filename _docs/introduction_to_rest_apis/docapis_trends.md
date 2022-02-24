@@ -51,7 +51,7 @@ The same content from the PDF is available in HTML below:
 
 ## Developer documentation trends: How developer documentation trends differ from general technical communication trends
 
-## Introduction
+### Introduction
 
 Despite excellent research on trends in the technical communication space, so far no survey has focused exclusively on trends within developer documentation only. By developer docs, I mean documentation written primarily for developers and engineers. Two recent surveys on the general tech comm space include Saul Carliner's [Tech Comm Census results](https://www.stc.org/intercom/download/2018/) (published in Dec 2018 *STC Intercom*) and [Scott Abel's Benchmarking Survey](http://public2.brighttalk.com/resource/core/217857/the-state-of-technical-communication_474463.pdf) (summarized in the same issue).
 
@@ -69,7 +69,7 @@ Reading these surveys made me wonder &mdash; is it really the case that so many 
 
 {% include image_ad_right.html %}
 
-## A survey focusing on developer docs
+### A survey focusing on developer docs
 
 To gather data about trends in developer docs, I decided to create my own survey. In the first developer documentation survey of its kind, I created a list of 50 questions, mostly multiple choice. I limited the audience to people writing docs for developers/engineers only. I promoted the survey on my blog, LinkedIn, and Twitter, and left the survey open for about two months, from January to March 2020.
 
@@ -81,7 +81,7 @@ You can browse the results of the survey directly at [https://idratherbewriting.
 
 {% include random_ad1.html %}
 
-## Survey question categories
+### Survey question categories
 
 After the survey, to make better sense of the responses, I divided the 50 questions into five categories:
 
@@ -91,9 +91,9 @@ After the survey, to make better sense of the responses, I divided the 50 questi
 4. [API responses](#api)
 5. [Profile responses](#profile)
 
- In the sections that follow, I'll go through each section and provide summaries, highlights, and analyses. Percentages are rounded up or down. For more granular details, feel free to browse the survey results directly.
+In the sections that follow, I'll go through each section and provide summaries, highlights, and analyses. Percentages are rounded up or down. For more granular details, feel free to browse the survey results directly.
 
-## 1. Tool responses {#tools}
+### 1. Tool responses {#tools}
 
 <div markdown="block" class="surveySummary">
 <div class="surveySummaryTitle">Survey summary:</div>
@@ -126,7 +126,7 @@ Overall, the survey results confirmed the predominance of the docs-as-code appro
 
 To read more thoughts about how source formats affect not just how we write but *what* we write, see my blog post, [*How* you write influences *what* you write — interpreting trends through movements from PDF to web, DITA, wikis, CCMSs, and docs-as-code](https://idratherbewriting.site/howinfluenceswhat).
 
-## Formats and output responses {#formats}
+### 2. Formats and output responses {#formats}
 
 <div markdown="block" class="surveySummary">
 <div class="surveySummaryTitle">Survey summary:</div>
@@ -152,7 +152,7 @@ I asked questions about video in the survey because I had heard negative comment
 
 Finally, the number of writers generating PDFs surprised me. It's not so easy to generate PDFs from docs-as-code tools, especially for more long-form content with cross-references and other book-style formatting. However, PDF continues to be an important output, probably because there isn't a good alternative for distributing content to beta partners prior to release. With docs-as-code tools, you don't often have an authentication layer to gate the login. In these scenarios, sending partners a pre-release PDF is usually the easiest way to share content.
 
-## Process and workflow responses {#processes}
+### 3. Process and workflow responses {#processes}
 
 <div markdown="block" class="surveySummary">
 <div class="surveySummaryTitle">Survey summary:</div>
@@ -186,7 +186,7 @@ Some hosting and deployment solutions like Netlify let you push out multiple bui
 
 Finally, most tech writers working with developer docs follow a style guide. It's worth noting here that style guides for dev docs often take into consideration many elements of API design. Enforcing API styles (such as parameter casing or endpoint names) isn't too different from doc style guides (where you enforce rules about title casing and verb forms). Arnaud Lauret's [*The Design of Web APIs*](https://www.amazon.com/Design-Web-APIs-Arnaud-Lauret/dp/1617295108) goes into this topic in detail &mdash; see [API design and usability](https://idratherbewriting.com/learnapidoc/evaluating-api-design.html) for a summary of key points.
 
-## 4. API responses {#api}
+### 4. API responses {#api}
 
 <div markdown="block" class="surveySummary">
 <div class="surveySummaryTitle">Survey summary:</div>
@@ -219,7 +219,7 @@ The OpenAPI spec alone isn't readable documentation, but many tools can generate
 
 REST APIs are language agnostic, but there are usually accompanying software development kits (SDKs) that are language-specific (companies provide them to help developers implement the API). The most important languages to know (likely because of the SDKs that accompany APIs) are JavaScript, Java, and Python. Outside of programming languages, trending technologies include machine learning, artificial intelligence, big data, and Internet of Things (IoT).
 
-## 5. Profile information {#profile}
+### 5. Profile information {#profile}
 
 <div markdown="block" class="surveySummary">
 <div class="surveySummaryTitle">Survey summary:</div>
@@ -256,17 +256,17 @@ As far as professional groups, more writers in this space have an affinity for W
 
 Finally, the biggest challenges writers in dev docs face is having enough technical know-how to write docs and enough time/bandwidth to write it. Getting engineers to review docs is also challenging, as is creating content that addresses both novice and advanced groups.
 
-## Conclusion
+### Conclusion
 
 The survey didn't present any major surprises to the trends that I've already observed in this space. However, the answers provided more definitive data that confirms how different and unique developer docs are from other types of documentation. Technical writers transitioning into this space face a whirlwind of different tools, practices, and challenges. With this data, we can identify trends and see what standard practices are emerging. These trends can serve as a guide and reference as writers make their way in this space.
 
 But also note that this space changes quickly. As JavaScript frameworks come and go, static site generators tend to follow suit, and what's trending one year might fade the next. This is a plastic space where new technologies and experimentation can lead to overnight change.
 
-## About the author
+### About the author
 
 Tom Johnson is a senior technical writer for Amazon in Sunnyvale, California. He is best known for his blog, [I'd Rather Be Writing](https://idratherbewriting.com), where he posts regularly on technical communication topics. The blog has one of the largest followings of technical communicators online. Additionally, he has created an extensive web API documentation course at [https://idratherbewriting.com/learnapidoc/] that has helped hundreds of technical writers transition into API documentation.
 
-## Sources
+### Sources
 
 * [2020 Developer Survey](https://insights.stackoverflow.com/survey/2020). *Stack Overflow.*
 * Abel, Scott. [Slides: The State of Technical Communication: 2019](http://public2.brighttalk.com/resource/core/217857/the-state-of-technical-communication_474463.pdf). *The Content Wrangler.*
