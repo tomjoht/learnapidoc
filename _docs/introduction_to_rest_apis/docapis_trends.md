@@ -12,6 +12,11 @@ last-modified: 2020-10-28
 
 I recently [conducted a survey](https://idratherbewriting.com/blog/developer-documentation-survey-2020/) about trends for those creating documentation for developers and engineers. You can view the content in several formats: slides, webinar, or article.
 
+{% if site.format == "web" %}
+* TOC
+{:toc}
+{% endif %}
+
 ## Slides
 
 You can view the [slides here](https://idratherbewriting.com/learnapidoc/slides/devdoctrends_results.html):
