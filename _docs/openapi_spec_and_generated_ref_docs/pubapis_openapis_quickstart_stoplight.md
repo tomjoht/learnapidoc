@@ -8,7 +8,7 @@ section: restapispecifications
 path1: restapispecifications.html
 redirect_from:
 - /learnapidoc/stoplight_studio_tutorial.html
-last-modified: 2021-09-22
+last-modified: 2022-03-03
 ---
 
 You can create an OpenAPI specification document in several ways: (a) you can auto-generate it from annotations in your source code, (b) you can code it by hand in an editor such as the Swagger Editor, and (c) you can use a GUI editor such as Stoplight Studio. In this tutorial, we will walk through the third approach: using Stoplight Studio, a GUI editor for modeling your API. We will create a valid OpenAPI specification, using the OpenWeatherMap as the sample API.
@@ -37,13 +37,13 @@ Before we begin the tutorial, note the following:
 * Stoplight's platform gives you a nice path toward more comprehensive documentation, including not only API reference content but also [conceptual documentation](docconceptual.html) and [tutorial content](docapiscode.html). In short, you can create Markdown files [similar to Stoplight Studio's documentation](https://meta.stoplight.io/docs/studio/README.md). Their platform lets you create a more seamless documentation experience for your readers across many different types of content, providing you with a complete publishing solution &mdash; not just a way to create reference content. (This tutorial will only cover creating API reference content, though.)
 * This tutorial should take about 30 minutes to an hour. No special technical knowledge is required.
 
-**Full disclaimer:** Stoplight is one of the sponsors of my site. I would still recommend this approach regardless of any site sponsorship. It makes sense to use an editor when your content must conform to a highly technical syntax.
+**Disclaimer:** Stoplight is one of the sponsors of my site. I would still recommend this approach regardless of any site sponsorship. It makes sense to use an editor when your content must conform to a highly technical syntax.
 
 ## What you'll build
 
 In this tutorial, we'll use sample information from the [OpenWeatherMap API](https://openweathermap.org/api) (more specifically, the [Current weather data endpoint](https://openweathermap.org/current)), which is the same API we've been using in other tutorials, such as the [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html).
 
-Here's the [documentation output](https://idratherbewriting.stoplight.io/docs/openweathermap3/reference/openweathermap.v1.yaml/paths/~1weather/get) that you'll build in this tutorial:
+Here's the [documentation output](https://idratherbewriting.stoplight.io/docs/openweathermap4/YXBpOjExMTIxODY3-open-weather-map-api) that you'll build in this tutorial:
 
 <a class="noCrossRef" href="https://idratherbewriting.stoplight.io/docs/openweathermap3/reference/openweathermap.v1.yaml/paths/~1weather/get"><img src="{{site.media}}/stoplight_tutorial_end_goal.png" alt="Final output from Stoplight tutorial" /></a>
 
@@ -59,6 +59,9 @@ The tutorial has the following steps:
 {% include random_ad4.html %}
 
 Stoplight provides a variety of options for working with projects &mdash; desktop editor versus web editor, and syncing from GitHub or saving directly to a Stoplight workspace. In this tutorial, I take the simplest path: using the web editor and saving to the Stoplight workspace. But recognize that you have more options for how you approach projects. See [Working with Projects](https://meta.stoplight.io/docs/studio/docs/Basics/01-working-with-projects.md) for more details.
+
+{: .note}
+Some aspects of the Stoplight user interface have changed since I wrote this tutorial. I'm planning to update it in the near future. Most of the changes aren't major, and you should still be able to get through it using the instructions below.
 
 ## Step 1: Set up a project in Stoplight Studio {#setup}
 
@@ -564,11 +567,14 @@ To enter the response information in Stoplight Studio:
 
 ## Step 6: Preview, test, and publish the output {#preview}
 
+{: .note}
+The OpenWeatherMap API seems to be blocking requests made from Stoplight due to CORS issues. As such, you'll get a "Network error" message when you try to send a request through the Try it out console here. (Open your JS Console to see the error.) Insstead of using the Try it feature, copy and paste the [curl call](docapis_install_curl.html) that Stoplight provides into your terminal to get a response.
+
 You've finished creating your OpenAPI spec, so let's preview, test, and publish test the documentation:
 
 1.  Click the **Preview** button in the upper-right corner.
 2.  In the sidebar, select the **/weather** endpoint.
-3.  Click the **Try It** tab near the top of the screen.
+3.  Click the **Try It** tab near the top of the screen. (See note above -- this won't work now due to CORS.)
 4.  Clear all check boxes except for `zip` and `appid`.
 5.  Enter your zip code for the `zip` parameter (for example, 98058).
 6.  Enter your API key for the API Key parameter. For details on getting the OpenWeatherMap API key, see [Get an OpenWeatherMap API Key](docapis_get_auth_keys.html#openweathermap_apikey). (You can also type out the API key pictured in the image below. It's not text because any API keys printed in text always get exploited and then disabled by the vendor.)
