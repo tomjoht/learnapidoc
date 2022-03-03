@@ -583,7 +583,7 @@ You've finished creating your OpenAPI spec, so let's preview, test, and publish 
 
     <img src="{{site.media}}/stoplight_demo_try_it.png" alt="Stoplight Try It screen" />
 
-7.  Click the **Send** button.
+7.  Click the **Send** button.ß
 
     If your API key is valid and the zip code is supported, you should see a response like the following:
 
