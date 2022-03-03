@@ -167,19 +167,25 @@ If you're following this course, you most likely want to learn more about APIs. 
 
 If you've looking for additional resources to learn API documentation as well as tech writing best practices, check out the following:
 
+* [Cherryleaf's API documentation training course](https://www.cherryleaf.com/training-courses/documenting-apis-training-course/), by Ellis Pratt. (See a [preview here](https://cherryleaf.teachable.com/courses/advanced-technical-communication/lectures/37419185).)
+
+* [Peter Gruenbaum's API doc courses on Udemy](https://www.udemy.com/user/petergruenbaum/), by Peter Gruenbaum of [SDK Bridge](https://sdkbridge.com/). (He has multiple Udemy courses on API docs, Swagger, Git, and more.)
+
+* [Docs Like Code](https://www.amazon.com/Docs-Like-Code-Anne-Gentle/dp/1365816079), by Anne Gentle
+
+* [The Design of Web APIs](https://www.amazon.com/Design-Web-APIs-Arnaud-Lauret/dp/1617295108), by Arnaud Lauret
+
 * [Docs for Developers: An Engineer’s Field Guide to Technical Writing](https://www.apress.com/gp/book/9781484272169), Authors: Bhatti, J., Corleissen, Z.S., Lambourne, J., Nunez, D., Waterhouse, H.
+
+* [Standards and Guidelines for API Documentation: For Technical Writers, Software Developers, Information and Software Architects](https://www.google.com/books/edition/Standards_and_Guidelines_for_API_Documen/B7LDzQEACAAJ?hl=en), by Anne Tarnoruder
+
+These resources aren't API-specific but are still relevant:
 
 * [Modern Technical Writing: An Introduction to Software Documentation](https://www.amazon.com/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS), by Andrew Etter
 
 * [Documentation Guide -- Write the Docs Community](https://www.writethedocs.org/guide/index.html)
 
-* [Docs Like Code](https://www.amazon.com/Docs-Like-Code-Anne-Gentle/dp/1365816079), by Anne Gentle
-
 * [Every Page Is Page One: Topic-Based Writing for Technical Communication and the Web](https://www.amazon.com/Every-Page-One-Topic-Based-Communication/dp/1937434281), by Mark Baker
-
-* [Peter Gruenbaum's API doc courses on Udemy](https://www.udemy.com/user/petergruenbaum/). (Multiple courses on API docs, Swagger, Git, and more.)
-
-* [The Design of Web APIs](https://www.amazon.com/Design-Web-APIs-Arnaud-Lauret/dp/1617295108), by Arnaud Lauret
 
 * [The Product is Docs: Writing technical documentation in a product development group](https://www.amazon.com/Product-Docs-technical-documentation-development/dp/1973589400), by Christopher Gales and Splunk Documentation Team
 
@@ -187,7 +193,7 @@ If you've looking for additional resources to learn API documentation as well as
 
 * [Google's technical writing courses for engineers](https://developers.google.com/tech-writing)
 
-* [Standards and Guidelines for API Documentation: For Technical Writers, Software Developers, Information and Software Architects](https://www.google.com/books/edition/Standards_and_Guidelines_for_API_Documen/B7LDzQEACAAJ?hl=en), by Anne Tarnoruder
+
 
 For even more books, see [Relevant Books](https://www.writethedocs.org/books/) from the Write the Docs site.
 
