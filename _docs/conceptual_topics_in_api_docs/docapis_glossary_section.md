@@ -8,7 +8,7 @@ sidebar: docapis
 section: docconceptual
 path1: docconceptual.html
 no_newsletter: true
-last-modified: 2021-03-18
+last-modified: 2022-03-20
 ---
 
 The glossary defines all the terms that might be helpful for users to know &mdash; and especially all terms unique to your company or product. Glossaries are often overlooked or skipped, but their importance should not be understated since much of the user's understanding of API documentation depends on the clarity and alignment of specific terms. A glossary will help you, as a writer, be more precise about terminology. Additionally, sourcing definitions from a central glossary file can make authoring more efficient and consistent.
@@ -195,18 +195,6 @@ Lyft's glossary doesn't have a ton of terms (there are about 10), but they're sp
 
 {% include random_ad2.html %}
 
-### Yext
-
-<figure><a target="_blank" class="noExtIcon" href="http://developer.yext.com/docs/glossary/"><img class="docimage" src="{{site.media}}/glossary_yext.png" alt="Yext glossary" /></a><figcaption>Yext glossary</figcaption></figure>
-
-Note how in the Yext glossary, when industry standard terms such as "SSO" are defined, the definitions cover the company's specific use of SSO; the general term SSO isn't simply defined. Yext explains, "Single Sign On, which is a feature available to enterprise clients and partners...." And then goes on to explain more details around partners' versus employees of enterprise clients and how they can each use SSO.
-
-When viewing the glossary, the terms also appear in the sidebar, replacing any doc pages listed there. I'm not a fan of this approach because it causes users to lose the context of their documentation sidebar. If the glossary is common to multiple sets of documentation, one would hope the glossary definitions are single-sourced through the authoring tools.
-
-One challenge this Yext example raises is how to distribute glossaries across multiple doc sets. Suppose only some of these terms are relevant to one doc set, and other terms are relevant to another doc set. Do you partition the glossary into multiple specialized glossaries by product, or just have one general glossary across all products?
-
-Use the strategy that makes sense for your docs. For the most part, since users mostly jump down to one specific glossary entry, it probably doesn't matter if other terms (that aren't specific to the doc set in context) are also included. On the other hand, filtering the definitions to a relevant subset would also encourage readers to browse through the definitions.
-
 ### Apigee
 
 <figure><a target="_blank" class="noExtIcon" href="https://docs.apigee.com/api-platform/reference/glossary"><img class="docimage" src="{{site.media}}/glossary_apigee.png" alt="Apigee glossary" /></a><figcaption>Apigee glossary</figcaption></figure>
@@ -214,6 +202,13 @@ Use the strategy that makes sense for your docs. For the most part, since users 
 The Apigee glossary provides another good model to follow. One interesting decision with Apigee's glossary is to format the entries as a table. The format probably doesn't matter much, but given that there are official definition list elements in HTML, it seems a bit odd to reject definition lists and use tables instead. Definition lists usually display better on mobile devices such as phones and tablets, and definition lists are easier to work with in general.
 
 Regardless of the format, I'm usually thrilled to see a glossary. All too often, glossaries are neglected in documentation (not just in API documentation). They shouldn't be. Much of the complexity of technical content is due to the high number of specialized terms &mdash; terms that product teams often assume their audiences know (but in reality do not).
+
+## Other glossaries
+
+* [Squiz](https://docs.squiz.net/matrix/version/latest/glossary/index.html)
+* [AWS glossary](https://docs.aws.amazon.com/general/latest/gr/glos-chap.html)
+* [RapidAPI](https://rapidapi.com/blog/api-glossary/)
+* [Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/glossary)
 
 ## <i class="fa fa-user-circle"></i> Activity with glossaries {#activity_with_glossaries}
 
