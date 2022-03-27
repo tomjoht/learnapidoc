@@ -84,7 +84,7 @@ And here's an example from the Linkedin API:
 {: .tip}
 Sometimes the method is referred to as the "verb." GET, PUT, POST, PATCH, and DELETE are all verbs or actions.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## The endpoint shows the end path only
 

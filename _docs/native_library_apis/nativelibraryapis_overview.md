@@ -31,7 +31,7 @@ Native library APIs (also called class-based APIs or just APIs) are notably diff
 
 We will focus this section on Java APIs because they're probably one of the most common. However, many of the concepts and code conventions mentioned here will apply to the other languages, with minor differences.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## Do you have to be a programmer to document native library APIs?
 

@@ -96,7 +96,7 @@ The API documentation landscape is full of jargon, acronyms, and many new terms.
 
 {% include random_ad2.html %}
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 {% include random_ad4.html %}
 

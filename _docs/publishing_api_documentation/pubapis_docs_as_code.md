@@ -49,7 +49,7 @@ In short, treating docs like code means to use the same systems, processes, and 
 
 ## Advantages to docs-as-code approaches for docs {#docsascode_advantages}
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 Just because you *can* manage docs like code, should you? What exactly are the advantages of treating docs like code? Here are a few reasons to embrace docs-as-code tools for documentation.
 

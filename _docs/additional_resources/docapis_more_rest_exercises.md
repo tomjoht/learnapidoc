@@ -30,7 +30,7 @@ In these examples, I usually just print the code to a web page to visualize the 
 
 ## Shortcuts for API keys
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 Each API requires you to use an API key, token, or some other form of authentication. Register for your own API keys.
 

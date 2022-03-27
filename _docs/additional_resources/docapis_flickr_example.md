@@ -46,7 +46,7 @@ Instead, we use the [`flickr.urls.lookupGallery`](https://www.flickr.com/service
 
 The `gallery_id` for [Color in Nature](https://www.flickr.com/photos/flickr/galleries/72157647277042064/) is `66911286-72157647277042064`. We now have the arguments we need for the [`flickr.galleries.getPhotos`](https://www.flickr.com/services/api/flickr.galleries.getPhotos.html) endpoint.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## 3. Construct the request
 

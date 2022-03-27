@@ -94,7 +94,7 @@ Your organization might have multiple teams writing content like this, or you mi
 
 If you are stuck with the two-site model (marketing on one site, documentation on another), you could try to share content between these two sites, but usually marketing has a different system for managing and publishing content than the documentation teams. Marketers don't usually adopt docs-as-code systems but rather prefer more CMS-driven systems. These systems rarely share content with each other, and even if they did, the marketing versions might be written using another style, perspective, or approach that contrasts with your docs, making it difficult to single-source the content. For example, I once tried to re-use marketing content (a product brief) that was written entirely in third-person point of view ("the partner does X") rather than the traditional second-person point of view in docs ("you do X"). It didn't work out well.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## Strategies for the documentation's product overview
 

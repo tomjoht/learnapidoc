@@ -70,6 +70,6 @@ Try executing a request in the version above and look at the result. In the resu
 {: .tip}
 You can insert any valid path to an OpenAPI specification document in the "Explore" box in Swagger UI (assuming the version of Swagger UI supports your OpenAPI version), and it will display the API documentation. For example, you could insert `https://petstore.swagger.io/v2/swagger.json` (then click **Explore**) and it would show the Petstore API.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 {% include image_ad_left.html %}

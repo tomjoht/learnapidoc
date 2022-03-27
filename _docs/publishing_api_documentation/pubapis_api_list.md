@@ -142,7 +142,7 @@ Rather than approach the topic of publishing prescriptively, let's begin with so
 
 For a directory of API documentation sites on the open web, see the [Programmableweb.com docs](http://www.programmableweb.com/apis/directory). You can browse thousands of web API docs in a variety of categories.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 <a rel="nofollow" href="http://www.programmableweb.com/apis/directory" class="noExtIcon"><img src="{{site.media}}/programmableweb.png" alt="Programmable web directory" /></a>
 

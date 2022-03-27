@@ -20,7 +20,7 @@ Before we dive into the technical aspects of APIs, let's explore the market, gen
 
 The API landscape is diverse, with many different types of APIs. Although this course focuses on REST APIs, there are many other types of APIs as well. Often when people start browsing GitHub looking for API projects to join, or when they peruse the various APIs in their own company, they are surprised that the APIs look unfamiliar from the APIs covered in this course. There are many types of APIs you will likely encounter.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 One way to sort the different types of APIs is to categorize them into two general buckets: web service APIs versus native library APIs. Web service APIs send and receive messages across the web using HTTP to transport the request and response; web service APIs are language agnostic. Native library APIs, on the other hand, involve incorporating code directly into your project for the desired functionality; native library APIs are language-specific.
 

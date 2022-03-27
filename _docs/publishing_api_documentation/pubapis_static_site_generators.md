@@ -28,7 +28,7 @@ Freedom from the database model makes static site generators much more portable 
 
 Before I had my blog [idratherbewriting.com](https://idratherbewriting.com) in Jekyll, I used WordPress (and was even a WordPress consultant for five years as a side job). I can't count how many times my WordPress blog went down or had other issues. I routinely had to contact Bluehost (my web host) to find out why my site was suddenly down. I religiously made backups of the database, applied security patches and hardening techniques, optimized the database through other tools, and more. And with all of this maintenance hassle, the site was extremely slow, delivering pages in 2+ seconds instead of 0.5 seconds with Jekyll. For my many WordPress clients, I often had to troubleshoot hacked databases.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 With static site generators, when you're developing content on your local machine, you usually have web server preview (such as <code class="noExtIcon">http://127.0.0.1:4000/</code>) provided through the static site generator. Many static site generators rebuild your site continuously in the preview server each time you make a change. The time to rebuild your site could take less than a second, or if you have thousands of pages, several minutes.
 

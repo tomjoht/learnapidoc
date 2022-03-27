@@ -31,7 +31,7 @@ In the future, I plan to break this content up into smaller outputs. For now, th
 
 To read the content as PDF, I recommended that you either read the PDF in [Adobe Acrobat Reader DC](https://get.adobe.com/reader/) (or similar) so that you can highlight and annotate the content, or that you print only specific sections at a time, defining the page ranges. Otherwise, this 900+ page PDF will consume an entire tree.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## Kindle
 

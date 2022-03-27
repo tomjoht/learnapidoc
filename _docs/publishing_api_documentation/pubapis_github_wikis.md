@@ -37,7 +37,7 @@ Because you can work with the wiki files locally, you can leverage other tools (
 {: .warning}
 Use Git only to track text files. Don't start tracking large binary files, such as audio files, video files, Microsoft Word files, or Adobe PDF files. Version control systems really can't handle that kind of format well, and your repo size will increase exponentially. If you use Git to manage your documentation, exclude these files through your [.gitignore file](https://git-scm.com/docs/gitignore). You might also consider excluding images, as they bloat your repo size as well.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## Limitations with GitHub wikis
 

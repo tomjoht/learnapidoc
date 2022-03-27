@@ -26,7 +26,7 @@ The sample Java project (available at [github.com/tomjoht/sample-java-project](h
 
 This program only prints little messages to the console, but it's simple enough to be instructive in its purpose. The purpose of the app is to demonstrate different doc tags, their placement, and how they get rendered in the Javadoc.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## <i class="fa fa-user-circle"></i> Download and open the project in Eclipse
 

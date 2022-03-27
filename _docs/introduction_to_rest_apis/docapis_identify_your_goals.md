@@ -11,7 +11,7 @@ last-modified: 2018-12-29
 
 Ramping up on API documentation, developing a portfolio of API documentation writing samples, and completing all the activities in this course will require a lot of time and effort. In this activity, you'll identify your goals and reasons for taking this course. Reflecting on your motivation will help you develop the right mindset and stamina to devote the necessary time for the course.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 
 ## <i class="fa fa-user-circle"></i> Activity: Identify your goals with API documentation

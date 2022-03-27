@@ -68,7 +68,7 @@ The course primarily serves the following audiences:
 
 The course consists of the following sections:
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 {% assign sidebar = site.data.docapis %}
 {% for folder in sidebar.folders %}

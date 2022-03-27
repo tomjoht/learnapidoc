@@ -188,6 +188,6 @@ The following sections expand in more specific ways on the roles, tasks, and nee
 
 Reading through these tasks is probably overwhelming, but my purpose is to demonstrate the need for these activities outside of content development. All too often, people assume that technical writers merely "write docs" and don't understand that there's a large body of work involved in managing a developing portal that doesn't include writing content. These tasks try to answer the question, "what else do technical writers do besides write docs?" When you allocate resources for DX content strategists, they can help build a healthy developer portal so that users can easily find and consume accurate, relevant content that addresses their needs.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 It's not always feasible to have a dedicated person fill the DX content strategist role. Many times different technical writers and managers will play the role in varying degrees. However, it's good to have these tasks be part of an official role rather than an add-on to individual contributor role whose primary job is creating docs. Unless these tasks fall under someone's official title, they are likely to be overlooked. This creates more burden on writers to figure out their own tools, processes, and other details.

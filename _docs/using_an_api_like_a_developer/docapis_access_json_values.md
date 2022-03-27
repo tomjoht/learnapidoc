@@ -101,7 +101,7 @@ Refresh your Chrome browser and see the information that appears in the console:
 wind speed: 13.87
 ```
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## Printing a JSON value to the page
 

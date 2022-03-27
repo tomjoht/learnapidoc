@@ -160,7 +160,7 @@ The Aeris weather getting started provides information for setting up an applica
 
 The Watson and IBM Cloud getting started tutorial lists three steps. It's not an end-to-end getting started tutorial, though. It just gets the user started in selecting a service for your project. At the end, you start to code using the Watson Dashboard. Ideally, a getting started tutorial should help a user see some tangible output, but whether that's possible or not depends on your API.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ### Other getting started tutorials
 

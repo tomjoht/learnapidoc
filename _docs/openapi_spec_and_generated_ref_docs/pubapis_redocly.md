@@ -243,7 +243,7 @@ In this step, you'll break up an existing OpenAPI file into smaller files. We'll
 
     See the `README.md` in the `openapi` folder for more details on these conventions. These conventions are recommendations only. You can decide how you reference the paths from `openapi.yaml`.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ### 3. Check your OpenAPI definition against rules {#check_rules}
 

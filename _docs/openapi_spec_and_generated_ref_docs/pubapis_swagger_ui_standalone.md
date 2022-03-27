@@ -13,7 +13,7 @@ last-modified: 2018-08-02
 
 {% include random_ad2.html %}
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 {% include random_ad3.html %}
 

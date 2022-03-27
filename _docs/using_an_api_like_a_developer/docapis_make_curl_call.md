@@ -62,7 +62,7 @@ To make a request with curl:
 
     This response is minified. You can un-minify it by going to a site such as [JSON pretty print](http://jsonprettyprint.com/), or if you have [Python installed](https://www.python.org/downloads/), you can add <code>| python -m json.tool</code> at the end of your cURL request to un-minify the JSON in the response (see [this Stack Overflow thread](https://stackoverflow.com/questions/352098/how-can-i-pretty-print-json-in-a-unix-shell-script) for details).
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 {% include image_ad_right.html %}
 

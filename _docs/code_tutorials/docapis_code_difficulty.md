@@ -72,7 +72,7 @@ Finally, I should note that when I document code, I feel a bit like an outsider 
 
 An efficient technique in code (e.g., recursive loops that expand resources as needed) can be beautiful, evoking an aesthetic in the engineer's mind. In my perspective as a technical writer, it's unlikely that I'll approach code with the same reverence and awe. My more mundane approach to code might make it difficult to resonate with developer users.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## The importance of code documentation
 

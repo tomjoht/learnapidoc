@@ -97,7 +97,7 @@ The "Unstaged files" section shows changes you've made to files that haven't bee
 
 To commit the files, type a commit message and click Commit. (This is the equivalent of typing `git commit -m 'some message'` in the terminal.)
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ### Viewing Git history
 

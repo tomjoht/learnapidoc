@@ -18,7 +18,7 @@ There are no supplementary instructions or tips for working through the content,
 *  Would you improve any part of this getting started tutorial?
 *  How could you implement a similar tutorial with your own product?
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 {% include random_ad2.html %}
 

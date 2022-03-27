@@ -89,7 +89,7 @@ You put the Javadoc description and tags _before_ the class or method (no need f
 
 The following are the most common tags used in Javadoc. Each tag has a word that follows it. For example, `@param latitude` means the parameter is "latitude."
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 {: .tip}
 To view a lengthy example of Javadoc tags, see this <a href="http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#examples">example from Oracle</a>.</div>

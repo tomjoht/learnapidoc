@@ -107,7 +107,7 @@ In addition to putting the OpenAPI specification at the center of the API lifecy
 
 Note that you can integrate your [reference documentation](docendpoints.html) and [conceptual documentation](docconceptual.html) in Stoplight's hosted doc solution. Integrating these two content types has been a longtime challenge for tech writers in the API doc space. (For more on integration challenges with API documentation, see [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).)
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 Although I generally like working directly in the code, I've found that Stoplight lets me focus more on the content and less on the details of the spec's format. Ideally, you can probably get developers and other project team members to populate reference content in Stoplight themselves since this is an activity that needs to happen much earlier in the API design process anyway.
 

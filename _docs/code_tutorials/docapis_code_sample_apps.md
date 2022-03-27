@@ -21,7 +21,7 @@ Whether a sample app is relevant and available depends on the nature of the prod
 
 Let me start the discussion by sharing an experience related to sample apps. At one company, I was working on documentation for a project called [Video Skills for Fire TV Apps](https://developer.amazon.com/docs/video-skills-fire-tv-apps/introduction.html). This product involves implementing Alexa video skills into Fire TV apps so that customers can say phrases like "Play Bosch" and the app will automatically play the content, without the need to use a remote control.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 The implementation process was pretty involved and required a [series of steps listed here](https://developer.amazon.com/docs/video-skills-fire-tv-apps/integration-overview.html). I inherited an initial set of docs (written by a PM + engineers) and sample app. I spent a month just getting the steps to work with the sample app. Then I spent another month fixing and updating the documentation. Using a sample app was critical for determining which steps in the initial docs were missing or incomplete. After I was confident that the steps worked well (because by following said steps, the sample app actually worked), I published the [sample app as a companion to the docs](https://developer.amazon.com/docs/video-skills-fire-tv-apps/set-up-sample-app.html).
 

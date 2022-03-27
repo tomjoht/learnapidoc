@@ -89,7 +89,7 @@ Think about the different kinds of doc requests you receive, and then customize 
 
 Create a custom intake form that solicits the information you need for each of these different doc types. Advertise your intake process on your team wiki page and point users to it when they ask for docs.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 It's important that small doc request tickets be completed by the requester. This ensures that the tech writer isn't stuck digging around for the information needed to complete the task. It also ensures commitment and allows the requester to receive updates on the status of the ticket. The ticket provides a channel for communication not only for the requester but for anyone else following the ticket, and also provides a record of the work.
 

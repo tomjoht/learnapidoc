@@ -75,7 +75,7 @@ Like SOAP, REST (Representational State Transfer) uses HTTP as the transport pro
 
 A RESTful API might not follow all of the official characteristics of REST as outlined by [Dr. Roy Fielding](https://en.wikipedia.org/wiki/Roy_Fielding), who first described the model. Hence these APIs are "RESTful" or "REST-like." (Some developers insist on using the term "RESTful" when the API doesn't fulfill all the characteristics of REST, but most people just refer to them as "REST APIs" regardless.)
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 As an architectural style, you aren't limited to XML as the message format. REST APIs can use any message format the API developers want to use, including XML, JSON, Atom, RSS, CSV, HTML, and more.
 

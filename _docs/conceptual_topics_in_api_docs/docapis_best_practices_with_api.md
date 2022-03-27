@@ -37,7 +37,7 @@ The following are API best practices from several API documentation sites.
 
 Mailchimp's API best practices include tips about fault tolerance, using specific requests, authentication, cache values, connectivity, and registration. With fault tolerance, Mailchimp reminds developers that outages sometimes happen, so they should plan to handle scenarios accordingly if the API doesn't respond. With specific requests, Mailchimp warns users about the time it can take if the request is too general and hence returns too much information.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ### Coinbase
 

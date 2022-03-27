@@ -45,7 +45,7 @@ The API is slated for release next month, so even though engineers have been cra
 
 This is a very typical scenario and timeline, by the way &mdash; being brought at the last minute, often unaware of the product's development cycles that have been going on for months previously. Product teams are long past the stage where they debated the best implementation, the feature set, how the API matches use cases, and so on. By the time you're brought in, they've already entered QA testing stages and just need to put a bow on the product with some docs before shipping it.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 
 ## Next steps

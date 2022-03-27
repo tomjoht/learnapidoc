@@ -220,4 +220,4 @@ You can also export Postman to curl by doing the following:
 
     Through Postman's Import and Code functionality, you can easily switch between Postman and curl.
 
-{% include random_ad1.html %}
+{% include ads.html %}

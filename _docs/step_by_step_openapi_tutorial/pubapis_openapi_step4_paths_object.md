@@ -89,7 +89,7 @@ paths:
 {: .note}
 At this point, if you paste this content into the Swagger Editor, you will get errors until some additional properties are added.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 Now we can remove a few unnecessary fields that we don't need for our OpenWeatherMap API documentation:
 

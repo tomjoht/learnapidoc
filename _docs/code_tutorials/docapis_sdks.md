@@ -24,7 +24,7 @@ The terms API and SDK are often used together, but they aren't synonyms. SDKs im
 
 For example, Python, C++, or Node applications make API requests in different ways. Each language has its own way of constructing requests to a web API. You can use Postman or Paw to auto-generate a simple request in a specific language (see [Auto-generating code samples](docapis_doc_sample_requests.html#auto-generating-code-samples)). However, the SDK takes the implementation to another level. SDKs might involve many more files or libraries as part of the implementation.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 In [What is the Difference Between an API and an SDK?](https://nordicapis.com/what-is-the-difference-between-an-api-and-an-sdk/), Kristopher Sandoval explains an SDK as follows:
 

@@ -26,7 +26,7 @@ If you want a condensed version of videos 1-5, see this one-hour version that co
 
 <iframe width="640" height="385" src="https://www.youtube.com/embed/5pzhtrrtkXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## Most recent video (LA workshop)
 

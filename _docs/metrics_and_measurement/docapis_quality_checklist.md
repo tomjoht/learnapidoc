@@ -97,7 +97,7 @@ li.checkboxListType1 {
 
 For a version of this checklist that is easy to copy and paste, see [Quality checklist for API docs (simplified html) -- comprehensive version](docapis_quality_checklist_html.html). This output strips away most formatting and just list the various criteria in a basic HTML file. Copy and paste the content into Google Docs or Microsoft Word. Then as you go through the content, make your notes in the "Assessment" area.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## Is this list complete? No
 

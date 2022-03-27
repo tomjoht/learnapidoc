@@ -36,7 +36,7 @@ These videos are from an API documentation workshop that I gave in Denver, Color
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/LSLg6Oy1OzM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ### Audio only version
 

@@ -74,7 +74,7 @@ For example, suppose you faced challenges in figuring out the context for a new 
 
 Besides influencing up, you can also include parallel teams (especially those outside your immediate organization) to influence across. Other writer groups might have more insight into processes and techniques that could help you with the issues you face. The challenges your group encounters are likely similar to issues that other writer groups have faced (and maybe solved). Others might have been around much longer and have solutions, so loop them in if appropriate.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## How can you leverage post-meeting participation from non-meeting participants?
 

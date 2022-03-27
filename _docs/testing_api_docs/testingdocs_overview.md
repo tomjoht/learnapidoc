@@ -42,4 +42,4 @@ Testing your API doc content is so critical, I've created an entire section devo
 
 <figure><a href="https://flic.kr/p/6Grete" class="noExtIcon"><img src="{{site.media}}/testingeverything.jpg" alt="Testing everything" /></a><figcaption>Photo from <a href='https://flic.kr/p/6Grete'>Flickr</a>, <a href='https://creativecommons.org/licenses/by/2.0/legalcode'>CC BY 2.0</a> &mdash; City water testing laboratory, 1948. When I think about testing docs, I like to think of myself as a scientist in a laboratory, carefully setting up tests to measure reactions and outcomes.</figcaption></figure>
 
-{% include random_ad1.html %}
+{% include ads.html %}

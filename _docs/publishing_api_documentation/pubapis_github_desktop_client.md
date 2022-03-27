@@ -107,7 +107,7 @@ Now let's merge the development branch into the master branch.
 
     You will now see the changes reflected on the file on GitHub.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## Merge the branch through a pull request
 

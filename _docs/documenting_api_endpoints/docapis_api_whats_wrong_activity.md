@@ -10,7 +10,7 @@ last-modified: 2019-04-05
 
 In this activity, you'll critique an existing API reference topic to identify what's wrong with it.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 * TOC
 {:toc}

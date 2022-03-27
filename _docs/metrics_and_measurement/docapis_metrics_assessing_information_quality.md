@@ -80,7 +80,7 @@ If you're not a user (but rather a technical writer) trying to assess documentat
 
 Fortunately, if we take the starting categories here (accessibility, accuracy, relevance, clarity), and we are confident that these attributes align with user priorities, then we only need to define how these attributes can be implemented in documentation in specific, concrete, and actionable ways. This is a point Strimling starts to make in [So You Think You Know What Your Readers Want?](https://www.researchgate.net/publication/331088225). He says, "In lieu of feedback, what we need is a proven model of how readers actually define documentation quality (DQ), which we can then use to ensure that what we produce is useful to our audience." The checklist that I'll define in the next section is a model that identifies specifics from these general qualities.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## Other research
 

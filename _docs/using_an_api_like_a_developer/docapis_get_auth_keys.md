@@ -25,7 +25,7 @@ Requiring authorization allows API publishers to do the following:
 
 To run the code samples in this course, you will need to use your own API keys, since these keys are usually treated like passwords and not given out or published openly on a web page.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## <i class="fa fa-user-circle"></i> Activity: Get an OpenWeatherMap API key {#openweathermap_apikey}
 

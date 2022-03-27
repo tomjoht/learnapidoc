@@ -14,7 +14,7 @@ last-modified: 2021-10-15
 
 [Redoc](https://github.com/Redocly/redoc) is a popular display framework for the OpenAPI as well and is a favorite by many API gurus. Redoc started out as a API doc site for [Rebilly docs](http://rebilly.github.io/RebillyAPI) but with many customizations evolved into its own unique framework. Redoc provides a three-panel layout made popular by companies such as Stripe.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 The makers of Redoc spun off into their own company ([Redocly](https://redoc.ly/)) and developed a more robust hosted solution offering (see [From ReDoc to Redoc.ly](https://redoc.ly/blog/from-redoc-to-redocly)). As with both Stoplight and Swagger UI, Redoc offers both free and pro versions to adjust to your needs. And you can add topics beyond just reference docs.
 

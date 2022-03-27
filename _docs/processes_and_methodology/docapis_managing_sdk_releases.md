@@ -122,7 +122,7 @@ Most developers expect the Readme to have detailed information, and it might mak
 
 But to avoid duplicating information in multiple places online (between the Readme and your main documentation), as long as you provide summaries plus links of the expected information, this should satisfy developer needs. Keeping the bulk of your information in your main documentation (rather than duplicating it in the Readme) also makes it easier to update your docs (since presumably you can update your documentation pages dynamically but might require engineering involvement to update the Readme).
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ### Version Information
 

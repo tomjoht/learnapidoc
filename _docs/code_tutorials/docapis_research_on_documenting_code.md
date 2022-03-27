@@ -200,7 +200,7 @@ While the learning styles discussed in this article might seem more applicable t
 
 More than any other type of API documentation, when you document code you find yourself with a direct opportunity to target the opportunistic learning style with experiment-and-try opportunities.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## Takeaways from the Research
 

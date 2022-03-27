@@ -38,7 +38,7 @@ For inspiration about the right sections to include in different content types, 
 
 You can even review the outline with other groups you interviewed before you begin writing, if you want. It depends on how confident you are and how extensive the documentation is. The outline is basically your content plan.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 It might be worth calling out some other fundamentals to tech writing here. In a creative writing project, you might have only a general sense of how you'll get from your starting point to the conflict to the resolution. As creative writers start writing, they get into a flow state, and sometimes the story takes them in directions they didn't intend.
 

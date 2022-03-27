@@ -49,4 +49,4 @@ By the way, I keep adding to this course in a [Winchester Mystery House](https:/
 
 If you have a question for me, or just want to drop me a line, you can contact me through my [Contact page](https://idratherbewriting.com/learnapidoc/contact.html){: .noCrossRef}. However, for most questions, you'll get a much better response by asking them in the [Write the Docs Slack](https://www.writethedocs.org/slack/). I'm also on Write the Docs Slack [@tomjohnson](https://writethedocs.slack.com/team/tomjohnson), so feel free to ask me questions there.
 
-{% include random_ad1.html %}
+{% include ads.html %}

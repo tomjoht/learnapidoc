@@ -73,7 +73,7 @@ Javadoc also checks your tags against the actual code. If you have parameters, e
 
 <figure><img class="docimage medium" src="{{site.media}}/javadocerrorchecking.png" alt="Javadoc error checking"><figcaption>Javadoc error checking</figcaption></figure>
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## <i class="fa fa-user-circle"></i> Play with Javadoc parameters
 

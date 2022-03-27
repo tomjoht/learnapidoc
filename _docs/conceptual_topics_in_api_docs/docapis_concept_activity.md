@@ -15,7 +15,7 @@ With each of the conceptual topics in this section, you've been analyzing the to
 
 Now broaden your analysis to see how these conceptual topics appear in other API documentation sites.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 {% include image_ad_right.html %}
 

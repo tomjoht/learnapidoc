@@ -38,4 +38,4 @@ There are two activities in this section:
 * [Activity: Find an open-source project](docapis_find_open_source_project.html)
 * [Activity: Evaluate API reference docs](docapis_api_reference_activity.html)
 
-{% include random_ad1.html %}
+{% include ads.html %}

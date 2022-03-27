@@ -103,7 +103,7 @@ Each weather API has an entirely different approach to documentation. As you'll 
 
 As I mentioned earlier, REST APIs are an architectural style that follows common characteristics and principles; they don't all follow the same standard or specification. Users have to read the documentation to understand how to use the API. (See ["REST is a style, not a standard."](docapis_what_is_a_rest_api.html#rest-is-a-style-not-a-standard))
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 Spend a little time exploring the features and information that these weather APIs provide. Try to answer these basic questions:
 

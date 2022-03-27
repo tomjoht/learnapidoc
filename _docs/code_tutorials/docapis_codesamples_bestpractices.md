@@ -81,7 +81,7 @@ For more research on how to document code, see "When Not to Comment: Questions a
 
 Overall, not every programmer reads code the same way. But based on the research, it's a good idea to include comments directly in the code as well as more formal explanations outside the code. If developers give you a chunk of code that has comments peppered throughout, don't assume that the code comments are somehow separate from documentation or outside your stewardship as a technical writer. Think of comments in code as the equivalent of context-sensitive help in a user interface &mdash; in many ways, this might be the most read content of all.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## Keep code samples simple
 

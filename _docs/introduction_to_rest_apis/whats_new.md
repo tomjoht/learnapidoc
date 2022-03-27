@@ -96,7 +96,7 @@ Then click the commit IDs to browse file diffs for the commits that include the 
 
 <img class="small_medium" src="{{site.media}}/github_commit_ids.png" alt="GitHub commit IDs" />
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 You can see the [stream of commits in GitHub here](https://github.com/tomjoht/learnapidoc/commits/main).
 

@@ -63,7 +63,7 @@ Others who follow you will need to know who wrote the content and when it was la
 
 One final consideration is timing. When should you hit that publish button? Usually, you want to coordinate your timing with the release. After your release goes out, then you publish the documentation. Don't push your new documentation out before the release. It sounds like common sense, but this might be harder to coordinate than it seems.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 When I worked at Amazon, for large releases (such as the launch of a new product), there was an elaborate release schedule and a "war room" set up. The release schedule involved a long series of steps required to release the feature, such as turning on services, dialing up the visibility of new features in the UI, launching a general press release and announcement, and more. These release meetings would often start at about 5 am and continue until 9 am. Somewhere in the list of release events was a line item for publishing the documentation. At that planned time, the release manager would say, "Go ahead and publish the docs now."
 

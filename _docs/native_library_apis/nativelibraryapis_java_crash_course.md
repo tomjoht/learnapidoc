@@ -28,7 +28,7 @@ Classes are templates or blueprints that drive pretty much everything in Java. I
 
 In Java, you start by defining classes. Each class is its own file and begins with a capital letter. The file name matches the class name, which means you have just one class per file.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 Each class can contain some fields (variables for the class) and methods (subroutines the class can do).
 

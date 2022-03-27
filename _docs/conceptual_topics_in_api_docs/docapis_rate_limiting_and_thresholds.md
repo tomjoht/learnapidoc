@@ -35,7 +35,7 @@ Also, when developers implement the code into their applications, how are they h
 
 <figure><img class="docimage medium border" src="{{site.media}}/{% if site.format == "kindle" %}nonref_ratelimiting.png{% else %}nonref_ratelimiting.svg{% endif %}" alt="Rate limiting affects development" /><figcaption>Rate limiting might seem like a marketing topic, but the rate limiting policies and how they affect API calls can have a significant impact on development.</figcaption></figure>
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## Examples rate limiting sections
 

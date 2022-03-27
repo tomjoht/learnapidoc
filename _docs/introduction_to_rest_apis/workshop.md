@@ -147,7 +147,7 @@ During this time, I'd like to have participants surface specific challenges that
 </div>
 {% endif %}
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## 5:00 - 5:30pm: Individual consulting
 

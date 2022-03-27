@@ -54,7 +54,7 @@ A second technique is to keep the review session somewhat short and painless. Re
 
 People don't have time to review more than this, and you'll observe that after about a half-hour, their attention span wanes. It's at this point that the reviewers try to steer the discussion into easier waters, talking about the feature roadmap or current bugs rather than the documentation. To ensure you stay on track, keep the meeting short and focused.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 This means you might need to set up multiple doc review sessions if you have a lot of content to review. That's all right. You could set up several 30-minute review sessions with people, if that's what it takes. It's also a lot easier to book 30 minutes on someone's calendar rather than a full hour, especially if you're including multiple reviewers.
 

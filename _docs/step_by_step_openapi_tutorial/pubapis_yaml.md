@@ -29,7 +29,7 @@ YAML is an attempt to create a more human-readable data exchange format. It's si
 
 Many computers ingest data in a YAML or JSON format. It's a syntax commonly used in configuration files and an increasing number of platforms (like Jekyll), so it's a good idea to become familiar with it.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## YAML is a superset of JSON
 

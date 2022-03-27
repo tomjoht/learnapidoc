@@ -28,7 +28,7 @@ Create a [documentation plan](docapis_managing_doc_projects.html#create_project_
 
 There are a host of other details you could gather, but these are the basics. All writing moves into action when you establish a deadline, so this date should set your wheels into motion.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## 1.2 Establish who's going to write the docs {#who_will_write}
 

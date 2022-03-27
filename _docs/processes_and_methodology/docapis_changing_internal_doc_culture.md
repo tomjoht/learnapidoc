@@ -29,7 +29,7 @@ Poor documentation environments can be characterized by the following:
 
 * **Support for tooling is underfunded for the requirements.** You might need robust tools to provide the kind of experience people require (PDF, localization, gated docs, etc.), but the company might not want to fund any tooling resources, insisting that you use open-source tools instead, or not providing enough time to build out tooling you need.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 Most tech writers are familiar with some of these aspects. I've written about these topics multiple times on my blog, especially in these two series:
 

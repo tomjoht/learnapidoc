@@ -85,7 +85,7 @@ If you don't have the budget for a third-party host and deployment option, nor d
 
 Also, note that even if you're not using Jekyll, you can use [GitHub Pages](https://pages.github.com/) as a free publishing host for any static site generator output. You simply build your files locally and then push your built files into the GitHub-Pages-enabled repository. With this approach, you wouldn't have the server perform the build process, but you can still handle the process through the command line. Free hosting for your docs on GitHub, regardless of the tool, can be especially convenient.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## 3. Decide how you'll parse the OpenAPI specification
 

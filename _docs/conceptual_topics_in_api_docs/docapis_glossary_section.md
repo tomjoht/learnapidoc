@@ -20,7 +20,7 @@ The glossary defines all the terms that might be helpful for users to know &mdas
 
 Unlike most other professional writing disciplines, tech docs are notorious for the number of specialized terms in their content. We have unique terms specific to our company as well as industry and business domain jargon.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 API evangelist Kin Lane noted his frustration with an API's language when he encountered an undefined acronym in some API docs he was browsing. Lane explains,
 

@@ -79,7 +79,7 @@ A total of 405 people completed the entire survey. Completing the survey means t
 
 You can browse the results of the survey directly at [https://idratherbewriting.site/devdoctrendsreport](https://idratherbewriting.site/devdoctrendsreport).
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ### Survey question categories
 

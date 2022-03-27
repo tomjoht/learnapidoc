@@ -20,7 +20,7 @@ It's hard to imagine that documentation that checks all of the boxes in the [qua
 
 And yet, to achieve the level of information quality, we didn't have to rely on constant user surveys to gather feedback. By identifying best practices for content design (specifically for API/developer documentation), we're able to increase the documentation quality in more self-sufficient, self-directed ways.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## Moving towards quantification
 

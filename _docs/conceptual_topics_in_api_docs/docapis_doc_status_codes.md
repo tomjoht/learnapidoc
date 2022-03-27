@@ -137,7 +137,7 @@ The following are some sample status and error code pages in API documentation.
 
 Clearbit not only documents the standard status codes but also describes the unique parameters returned by their API. Most developers will probably be familiar with 200, 400, and 500 codes, so these codes don't need a lot of explanatory detail. But if your API has unique codes, make sure to describe these adequately.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ### Twitter
 

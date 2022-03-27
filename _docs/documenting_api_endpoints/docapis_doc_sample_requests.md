@@ -82,7 +82,7 @@ If you [click the link](https://api.citygridmedia.com/content/places/v2/search/w
 
 How many different requests and responses should you show? There's probably no easy answer, but probably no more than a few. You decide what makes sense for your API. Users will usually understand the pattern after a few examples.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 {% include image_ad_right.html %}
 

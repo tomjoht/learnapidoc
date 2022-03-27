@@ -48,4 +48,4 @@ Find answers to the following questions:
 * What kind of testing does the team do before a release?
 * If you encounter a bug while testing, how should you report it?
 
-{% include random_ad1.html %}
+{% include ads.html %}

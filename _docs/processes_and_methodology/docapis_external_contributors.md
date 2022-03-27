@@ -44,7 +44,7 @@ With pull requests, the contributor clones the repository, makes a change, and t
 
 This pull request model is the standard contribution model for most groups (especially on GitHub). With this model, contributors don't need to understand the details of your Git workflow (beyond the pull request workflow) or other specifics about your environment's branches (except which branch to start from). They just need to interact with the code review tool to submit their pull requests. This is the model I recommend implementing.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## Community contributors
 

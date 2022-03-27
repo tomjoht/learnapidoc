@@ -240,7 +240,7 @@ Sites like [Apiary](https://apiary.io/) and [Mulesoft](https://www.mulesoft.com/
 
 Cherryleaf has an interesting post called [Example of API documentation portal using MadCap Flare](https://www.cherryleaf.com/blog/2017/06/example-api-documentation-portal-using-madcap-flare/). In the post, Ellis Pratt shows a proof of concept with a Flare project that reads an OpenAPI spec and generates static HTML content from it. If you're using Flare, it might be worth exploring.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## Option 6: Change perspectives &mdash; Having two sites isn't so bad {#option6}
 

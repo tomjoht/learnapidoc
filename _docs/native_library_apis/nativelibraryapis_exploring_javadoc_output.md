@@ -44,7 +44,7 @@ If you click **Package** at the top, you can also browse the classes by package.
 
 <figure><img class="docimage large" src="{{site.media}}/allclassesjavadoc.png" alt="All the ways to browse the classes" /><figcaption>All the ways to browse the classes</figcaption></figure>
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 For more information about how the Javadoc is organized, click the **Help** button in the Javadoc top navigation bar.
 

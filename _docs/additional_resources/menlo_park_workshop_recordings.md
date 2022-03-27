@@ -32,7 +32,7 @@ I recorded this full-day API documentation in Menlo Park, California, on Novembe
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/FuZfob2eVb4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ### Video 3
 

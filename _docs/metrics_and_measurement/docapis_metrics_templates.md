@@ -89,7 +89,7 @@ If you're curious how to single source content stored in YAML into the checklist
 
 The YAML source is stored in the _data folder in this file: [_data/quality_checklist](https://github.com/tomjoht/learnapidoc/blob/main/_data/quality_checklist.yml).
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 The checklist page retrieves this information using a [Liquid for loop](https://shopify.github.io/liquid/tags/iteration/). See the raw source here: [docapis_metrics_quality_checklist.md](https://raw.githubusercontent.com/tomjoht/learnapidoc/main/_docs/metrics_and_measurement/docapis_metrics_quality_checklist.md). (For some reason, you need to view the "raw" GitHub file to see the  liquid tags here.)
 

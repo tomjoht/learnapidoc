@@ -96,7 +96,7 @@ Other APIs will nest the response definitions to imitate the JSON structure. Her
 
 Multiple levels of bullets is usually an eyesore, but here it serves a purpose that works well without requiring sophisticated styling.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 eBay's approach is a little more unique. In this case, `MinimumAdvertisedPrice` is nested inside `DiscountPriceInfo`, which is nested in `Item`, which is nested in `ItemArray`. (Note also that this response is in XML instead of JSON.)
 

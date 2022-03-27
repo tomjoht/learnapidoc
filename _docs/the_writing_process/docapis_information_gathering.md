@@ -65,7 +65,7 @@ Now let's get into some strategies for interviews, starting with the engineers. 
 
 Set up time with this engineer and prepare a list of questions (the technique I described earlier). Now, this is extremely important: _Record your interview with the engineer._ Even if you're meeting in person, create a conference session in the room on your computer and record the meeting. The engineer is going to dive into gobbledygook and other technical speak, and you'll want to go back and re-listen to this again, even if it's just to get the terminology and phrasing correct. You won't be able to take enough notes in real-time to keep up (unless you're part-engineer already), and you might be too busy taking notes to catch all the details of the conversation.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 Some questions to ask the engineer might be as follows:
 

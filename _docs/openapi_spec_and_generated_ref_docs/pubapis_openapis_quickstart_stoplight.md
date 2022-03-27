@@ -609,7 +609,7 @@ You've finished creating your OpenAPI spec, so let's preview, test, and publish 
 
     For publishing options outside of Stoplight, you can use your OpenAPI definition with [Redoc](https://github.com/Redocly/redoc), [Swagger UI](pubapis_swagger.html), [Spectacle](https://github.com/sourcey/spectacle), [Docsy](https://github.com/google/docsy), and other tools. See [Openapi.tools](https://openapi.tools/#documentation) for a list of possibilities. You can find a [Redoc tutorial in this course here](pubapis_redocly.html).
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 Here are some sample API documentation sites built with Stoplight to explore:
 

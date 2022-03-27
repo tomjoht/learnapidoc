@@ -35,7 +35,7 @@ REST APIs can use different security approaches to authorize requests. I explore
 
 In this step of the OpenAPI tutorial, we'll use the API key approach, since this is what the OpenWeatherMap API uses. If your API uses [OAuth 2.0](docapis_more_about_authorization.html#oauth) or another method, you'll need to read the [Security Scheme information](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md#security-scheme-object) for details on how to configure it. However, all the security methods mostly follow the same pattern.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## API key authorization
 

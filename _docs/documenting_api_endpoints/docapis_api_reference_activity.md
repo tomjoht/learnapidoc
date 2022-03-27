@@ -72,7 +72,7 @@ In this activity, you'll review API reference documentation and identify the com
       *  Is there both a sample response *and* a response schema? (And is each element in the response actually described?)
       *  How does the doc site handle nested hierarchies in the response definitions?
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 {% include image_ad_right.html %}
 

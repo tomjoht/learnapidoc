@@ -1,0 +1,60 @@
+{% comment %}
+<style>
+.inpostComics img {
+  max-width: 250px;
+}
+
+.inpostComics {
+    //background-color: ghostwhite;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    max-width: 900px;
+}
+
+.inpostComics .comicLink a {
+  font-size: 14px;
+  font-family: Arial;
+}
+
+.comicLink {
+  max-width: 260px;
+}
+</style>
+<div class="container overflow-hidden">
+<div class="row inpostComics gy-5">
+<h3>Sponsored content</h3>
+    <script>
+        var contents=new Array()
+        //Archbee
+        contents[0]='<div class="border col-md-5"><a class="noCrossRef" ref="nofollow" href="https://idbwrtng.com/archbee"><img style="border: 1px solid lightgray" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/archbeesquare.jpeg" alt="Archbee: The Knowledge Base, rebuilt for software companies" /></a> <div class="comicLink"> <a href="https://idbwrtng.com/archbeeproductreview">Archbee product review -- first look at a new online doc platform</a></div></div>'
+        //MadCap
+        contents[1]='<div class="border col-md-5"><a class="noCrossRef" ref="nofollow" href="https://idbwrtng.com/madcapsoftware"><img style="border: 1px solid lightgray" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/Flare2021r3side.png" alt="MadCap Flare" /></a> <div class="comicLink"> <a href="https://idbwrtng.com/madcapmarkdownimport">An in-depth look at MadCap Flare 2021’s New Markdown Import Feature</a></div></div>'
+        //TWi
+        contents[2]='<div class="border col-md-5"><a class="noCrossRef" ref="nofollow" href="https://idbwrtng.com/twi"><img style="border: 1px solid lightgray" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/twi_techcomm5.png" alt="TWi: Leading Provider of Documentation and Technical Communication Solutions" /></a> <div class="comicLink"><a href="https://idbwrtng.com/twi">Perfect your technical documentation to boost your business</a></div></div>'
+        //Heretto
+        contents[3]='<div class="border col-md-5"><a class="noCrossRef" ref="nofollow" href="https://idbwrtng.com/heretto"><img style="border: 1px solid darkgray" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/heretto.png" alt="Heretto" /></a><div class="comicLink"> <a href="https://idbwrtng.com/heretto">Heretto is an enterprise-grade CCMS for your entire content ecosystem.</a></div></div>'
+        var i=0
+        //variable used to contain controlled random number
+        var random
+        //while all of array elements haven't been cycled thru
+        while (i<contents.length){
+            //generate random num between 0 and arraylength-1
+            random=Math.floor(Math.random()*contents.length)
+            //if element hasn't been marked as "selected"
+            if (contents[random]!="selected"){
+                document.write(contents[random])
+                //mark element as selected
+                contents[random]="selected"
+                i++
+            }
+
+        }
+
+
+    </script>
+
+</div>
+</div>
+<div style="clear:both;"></div>
+{% endcomment %}

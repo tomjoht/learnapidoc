@@ -89,7 +89,7 @@ The biggest action item to come from these blog analytics assessments has been t
 
 Discuss a few points of your doc strategy at a high level. Remember, many people might not realize that technical writers even have a strategy or what it could possibly be for docs. You can comment on a few high-level goals, such as making sure each product has a well-developed overview and getting started tutorial. Or your strategy might be to allow for more hands-on testing of content by technical writers in an effort to improve documentation quality. Or your strategy might be to fill in some content gaps according to your critical user journeys. Or maybe you're trying to align better across product areas with other teams with more consistent structure and naming. Whatever your strategic goals, comment briefly on your progress against them. This reinforces the idea that tech writers are strategic thinkers, not just content creators.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## Other sections you could include
 

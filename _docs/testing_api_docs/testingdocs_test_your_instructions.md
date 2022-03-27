@@ -72,7 +72,7 @@ This in-app-purchasing tag surprised the dev team, and it would have caused a lo
 
 The developers said users could simply deregister the component from the app. So I modified the doc to indicate this. Then I tried deregistering the component from the app and submitted a new version, but the in-app-purchases tag issue persisted.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 This experience reinforced to me how vital it is to get your hands on the code you're documenting and run it through as real of a situation as you can. It blew my mind that the engineering team did not actually have an app in the Appstore that they published with this template. I was the only one.
 

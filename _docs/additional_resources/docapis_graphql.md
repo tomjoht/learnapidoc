@@ -35,7 +35,7 @@ GraphQL was released to the public in 2015 as an open-source project by Facebook
 
 Note: The Open API specification is also [hosted by the Linux Foundation](https://www.openapis.org/about).
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## Growth
 

@@ -29,7 +29,7 @@ You can see a demo with the [Google Drive API](https://mulesoft.github.io/api-co
 
 ## Auto-generating client SDK code
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 It's important to note that with these REST API specifications (as with the OpenAPI spec), you're not just describing an API to generate a nifty doc output with an interactive console. There are tools that can also generate client SDKs and other code from the spec into a library that you can integrate into your project. These tools can make it easier for developers to make requests to your API and receive responses.
 

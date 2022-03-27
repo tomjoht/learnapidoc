@@ -26,7 +26,7 @@ To integrate into your release process, try to get a better understanding of the
 
 When you see the release items surface on the horizon, look through each item included in the release and assess whether you have doc coverage. If you have a goal for 100% doc coverage for each release, you could score the doc coverage against all items in the release. For example, suppose you have six new features being released in the next version. Can you indicate a changelist or other commit that covers each of the features being released? When you start tracking doc coverage meticulously like this, it forces you to account for each necessary update.
 
-{% include random_ad1.html %}
+{% include ads.html %}
 
 ## What needs docs?
 
