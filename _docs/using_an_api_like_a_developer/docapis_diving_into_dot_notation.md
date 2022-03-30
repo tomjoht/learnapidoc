@@ -188,6 +188,8 @@ Copy the following code into a basic HTML file:
 
 (In the above code, replace `APIKEY` with your actual API key.)
 
+{% include image_ad_right.html %}
+
 A few things are different here, but it's essentially the same code as you created in the [Access and print a specific JSON value](docapis_access_json_values.html). Here's what's different:
 
 * Rather than running the `ajax` method on page load, the `ajax` method is wrapped inside a function called `checkWind`. When the web page's button is clicked, the `onclick` method fires the `checkWind()` function.
@@ -198,8 +200,6 @@ When you load the page and click the button, the following should appear:
 <a href="https://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html" class="noExtIcon"><img src="{{site.media}}/windconditionsfinaloutput.png" class="medium" alt="Final REST API" /></a>
 
 You can view the file <a href="https://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html">idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html</a>.
-
-{% include image_ad_right.html %}
 
 ## Next section
 

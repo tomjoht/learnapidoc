@@ -18,6 +18,8 @@ In this activity, you'll use the Aeris Weather API to get the wind speed for a s
 
 ## The Aeris Weather API
 
+{% include image_ad_right.html %}
+
 In earlier tutorials, you integrated information from the [OpenWeatherMap API](https://openweathermap.org/api). It's probably a good idea to compare this OpenWeatherMap API with another weather API. The [Aeris Weather API](http://www.aerisweather.com/support/docs/api/) is one of the most interesting, well-documented and powerful weather APIs I've encountered.
 
 {% include random_ad3.html %}
@@ -143,7 +145,6 @@ Here's the response from [the request](http://api.aerisapi.com/observations/sant
   }
 }
 ```
-{% include image_ad_right.html %}
 
 `windSpeedMPH` is the value we want.
 

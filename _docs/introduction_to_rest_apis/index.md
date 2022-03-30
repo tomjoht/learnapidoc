@@ -68,14 +68,10 @@ The course primarily serves the following audiences:
 
 The course consists of the following sections:
 
-{% include ads.html %}
-
 {% assign sidebar = site.data.docapis %}
 {% for folder in sidebar.folders %}
 * [{{folder.title}}]({{folder.jurl | remove_first: "/" }})
 {% endfor %}
-
-{% include image_ad_right.html %}
 
 ## Sequence and activities
 
@@ -83,11 +79,15 @@ You don't have to read the sections in order &mdash; feel free to skip around as
 
 Because the purpose of the course is to help you learn, there are many activities that require hands-on coding and other exercises. Along with the learning activities, there are also conceptual deep dives, but the focus is always on *learning by doing*. Where there are hands-on activities, I typically include this icon in the section title: <i class="fa fa-user-circle"></i>. Other topics have the word "Activity" in the title. The activities are integrated into various sections, but you can also see many of the activities in the [Workshop Activities](workshop.html). These are the activities we do during live workshops.
 
+{% include ads.html %}
+
 I refer to the content here as a "course" instead of a book or a website, primarily because I include a lot of exercises throughout in each section, and I find that people who want to learn API documentation prefer a more hands-on "course" experience. Below each topic is a progress indicator that reminds you to keep moving through the course.
 
 ## How long will it take to finish the course?
 
- Don't be daunted if you never make it entirely through the course. If printed to PDF, the content is about 900 pages. And I keep adding to the content, refining it, rearranging and adjusting it as I see fit and as I grow my experience and awareness. It's a living document. Almost no one really finishes the course from beginning to end because by the time they do, I'll have added new content.
+Don't be daunted if you never make it entirely through the course. If printed to PDF, the content is about 900 pages. And I keep adding to the content, refining it, rearranging and adjusting it as I see fit and as I grow my experience and awareness. It's a living document. Almost no one really finishes the course from beginning to end because by the time they do, I'll have added new content.
+
+{% include image_ad_right.html %}
 
 Also, you should only focus on those sections that you need to learn. See this Reddit post, [Has anyone here completed the idratherbewriting API writing course by Tom Johnson?](https://www.reddit.com/r/technicalwriting/comments/ropvtx/has_anyone_here_completed_the_idratherbewriting/). For someone already familiar with many concepts, they can breeze through the course in less than a week. For someone new to API documentation, they might spend many months making their way through the course. If you keep finding value in the content, take as long as you want. If you don't find yourself learning anything, skip forward.
 

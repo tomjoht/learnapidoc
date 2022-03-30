@@ -10,12 +10,12 @@ last-modified: 2019-04-05
 
 In this activity, you'll critique an existing API reference topic to identify what's wrong with it.
 
-{% include ads.html %}
-
 * TOC
 {:toc}
 
 ## <i class="fa fa-user-circle"></i> Activity: What's wrong with this API reference topic {#whats_wrong}
+
+{% include image_ad_right.html %}
 
 The following is a sample API reference topic for an endpoint called `surfreport`. There are about 25 things wrong in the topic. A copy of this same content is available in a read-only [Google Doc here](https://idratherbewriting.site/whats-wrong-api). In Google Docs, go to **File > Make a Copy** to create your own instance. Then make comments in Google docs to note as many errors as you can find.
 
@@ -27,18 +27,15 @@ Here's the same doc (with problems) displayed on the web:
 
 # Surfreport
 
-
 Knowing whether the conditions are optimal for surfing is a necessary detail in every surfer's life. This endpoint includes information about surfing conditions, including the surf height, water temperature, wind, and tide. Also provides an overall recommendation about whether to go surfing. As an added touch, recommendations are expressed in surfer lingo. Surf's up!
 
 ## Endpoints
-
 
 **GET/POST <code>surfreport/{:beachId}</code>**
 
 Gets the surf conditions for a specific beach ID.
 
 ## Parameters
-
 
 <table>
   <tr>
@@ -85,14 +82,12 @@ Gets the surf conditions for a specific beach ID.
 
 ## Sample request
 
-
 ```
 https://api.openweathermap.org/data/2.5/surfreport/12345?zip=95050&appid=APIKEY&days=1
 ```
 (In the above code, replace `APIKEY` with your actual API key.)
 
 ## Sample response
-
 
 ```json
 {
@@ -131,7 +126,6 @@ https://api.openweathermap.org/data/2.5/surfreport/12345?zip=95050&appid=APIKEY&
 ```
 
 ## Response definitions
-
 
 The following table describes each item in the response.
 
@@ -217,14 +211,13 @@ The following table describes each item in the response.
 
 </div>
 
-{% include image_ad_right.html %}
-
 {% include random_ad4.html %}
 
 ## Answers
 
 You can view the answer key here: [What's wrong with this topic answer key](https://docs.google.com/document/d/1ogj99YHhFMkXb-HMMMko-G9Hq9Rg6cztdT06-oUZm4E/edit).
 
+{% include ads.html %}
 
 {% include random_ad3.html %}
 

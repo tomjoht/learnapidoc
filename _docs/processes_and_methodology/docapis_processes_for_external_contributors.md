@@ -34,13 +34,13 @@ Besides engineering contributors, consider also the non-engineering contributors
 
 Also note if you give external contributors permissions to author and publish content, you allow them to introduce new content into your document repository that hasn't been vetted and reviewed by your team. If you review the content, you might find that these contributors are much more sloppy about writing than you are, committing broken links, incorrectly cased product names, bad grammar, broken formatting, eternal paragraphs, and other embarrassing issues. Will others understand that commits from these external contributors weren't actually written by your team?
 
+{% include image_ad_right.html %}
+
 Some groups might not want to join in the same doc repo as your team's repo but instead create their own repo based on the theme and other tools setup you created. Different static site generator tools handle theming better than others, but a separate repo might end up duplicating many theme files that these contributing teams actually don't want to maintain and update. You might help set up a team with a new instance of the theme, only to find that they never update the theme files as the original theme evolves.
 
 After dealing with so many support cases, broken builds, and poor content committed by external teams, we decided to pivot to more of a GitHub-pull-request model. In this model, rather than giving contributors permissions as full-fledged authors in a repository, we required them to submit pull requests (aka "code reviews" in some build systems) for their contributions.
 
 With pull requests, the contributor clones the repository, makes a change, and then submits the change to a system that lets the repository owner evaluate the file difference that the contributor is proposing. You (as a repo owner) review the contribution, adding line-by-line comments as desired, and then either accept or reject the pull request. You can go through multiple iterations with this proposed change until the contribution meets your standard. After you approve the pull request, you then merge the changes into your repository and push it out.
-
-{% include image_ad_right.html %}
 
 This pull request model is the standard contribution model for most groups (especially on GitHub). With this model, contributors don't need to understand the details of your Git workflow (beyond the pull request workflow) or other specifics about your environment's branches (except which branch to start from). They just need to interact with the code review tool to submit their pull requests. This is the model I recommend implementing.
 

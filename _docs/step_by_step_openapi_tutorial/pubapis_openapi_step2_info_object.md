@@ -24,7 +24,9 @@ The [info object](https://github.com/OAI/OpenAPI-Specification/blob/master/versi
 {:toc}
 {% endif %}
 
-## Sample info object (#sample_info_object)
+## Sample info object {#sample_info_object}
+
+{% include image_ad_right.html %}
 
 Here's an example of the `info` object and its properties. (The `openapi` object and the empty `paths` object are commented out to maintain the focus on the `info` object.)
 
@@ -50,8 +52,6 @@ info:
 ## Description properties and Markdown
 
 Note that in any `description` property, you can use [CommonMark Markdown](http://spec.commonmark.org/0.27/), which is much more precise, unambiguous, and robust than the original Markdown.
-
-{% include image_ad_right.html %}
 
 For example, CommonMark markdown offers some [backslash escapes](http://spec.commonmark.org/0.27/#backslash-escapes), and it specifies exactly how many spaces you need in lists and other punctuation. You can also break to new lines with `\n` and escape problematic characters like quotation marks or colons with a backslash.
 

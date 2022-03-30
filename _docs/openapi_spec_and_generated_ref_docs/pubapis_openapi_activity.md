@@ -17,6 +17,7 @@ The [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html) walked you throug
 
 ## <i class="fa fa-user-circle"></i> Activity: Edit an existing OpenAPI specification document
 
+{% include image_ad_right.html %}
 
 Use this simple [Sunrise and sunset times API](https://sunrise-sunset.org/api) to get more familiar with the process of creating an OpenAPI specification file. This Sunrise and sunset times API doesn't require authentication with requests, so it removes some of the more complicated authentication workflows (the spec file doesn't require the [security object]({{site.rooturl}}pubapis_openapi_step6_security_object.html)). In this activity, you'll edit some of the existing values in an OpenAPI specification document that's already written.
 
@@ -45,8 +46,6 @@ To edit the OpenAPI specification file:
 {% include random_ad4.html %}
 
 In an earlier activity, you [found an open-source API project](docapis_find_open_source_project.html) with some documentation needs. Try creating an OpenAPI specification for this API. Depending on the API you choose to work with, you could potentially use this specification document as part of your portfolio.
-
-{% include image_ad_right.html %}
 
 If your open-source project doesn't have an API, or if it's API already has an OpenAPI specification, find another API (perhaps from this [list of 100+ APIs](pubapis_apilist.html)) and create the OpenAPI specification.
 

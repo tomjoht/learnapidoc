@@ -24,6 +24,8 @@ The [`externalDocs` object](https://github.com/OAI/OpenAPI-Specification/blob/ma
 {:toc}
 {% endif %}
 
+{% include image_ad_right.html %}
+
 ## Example externalDocs object
 
 Here's an example of an `externalDocs` object:
@@ -59,7 +61,7 @@ Now that we've completed all the steps in the tutorial, we're finished building 
 
 {% include random_ad4.html %}
 
-You can see the complete specification document here: <a href="https://idratherbewriting.com/learnapidoc/docs/openapi_spec_and_generated_ref_docs/openapi_openweathermap.yml">https://idratherbewriting.com/learnapidoc/docs/openapi_spec_and_generated_ref_docs/openapi_openweathermap.yml</a>.
+You can see the complete specification document here: <a href="https://idratherbewriting.com/learnapidoc/docs/openapi_spec_and_generated_ref_docs/openapi_openweathermap.yml">openapi_openweathermap.yml</a>.
 
 Here's the specification document rendered by Swagger UI:
 
@@ -71,5 +73,3 @@ Try executing a request in the version above and look at the result. In the resu
 You can insert any valid path to an OpenAPI specification document in the "Explore" box in Swagger UI (assuming the version of Swagger UI supports your OpenAPI version), and it will display the API documentation. For example, you could insert `https://petstore.swagger.io/v2/swagger.json` (then click **Explore**) and it would show the Petstore API.
 
 {% include ads.html %}
-
-{% include image_ad_left.html %}

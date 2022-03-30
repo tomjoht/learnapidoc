@@ -9,6 +9,8 @@ path1: resources.html
 last-modified: 2019-08-29
 ---
 
+{% include image_ad_right.html %}
+
 This is the answer key for [Activity: What's wrong with this API reference topic](docapis_api_whats_wrong_activity.html).
 
 After you've finished commenting on the Google Doc, go to this [annotated Google doc](https://idratherbewriting.site/whats-wrong-api-answer-key).
@@ -16,8 +18,6 @@ After you've finished commenting on the Google Doc, go to this [annotated Google
 <figure><a target="_blank" class="noCrossRef" href="http://idratherbewriting.site/whats-wrong-api-answer-key"><img class="small" src="{{site.media}}/annotatedgoogledoc.png" /></a><figcaption>Annotated Google doc showing answers</figcaption></figure>
 
 Alternatively, expand the answers below to see how many issues you found. If you found additional issues beyond those noted here, feel free to [drop me an email](http://idratherbewriting.com/learnapidoc/contact.html){: .noCrossRef} letting me know. You can also add your own comments on the Google Doc answer key.
-
-{% include note.html content="For the most recent workshop recording, see the [Video recordings of API doc workshops](docapis_course_videos.html)." %}
 
 {% if site.format == "kindle" or site.format == "pdf" %}
 *Note: This content doesn't embed well in print because it contains JavaScript. Please go to [https://idratherbewriting.com/learnapidoc/docapis_whats_wrong_answer_key.html] to view the content.*
@@ -97,3 +97,5 @@ Answer key:
 </div>
 </div>
 {% endif %}
+
+{% include ads.html %}

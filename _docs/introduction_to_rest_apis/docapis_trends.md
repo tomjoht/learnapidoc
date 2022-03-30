@@ -21,7 +21,7 @@ I recently [conducted a survey](https://idratherbewriting.com/blog/developer-doc
 
 You can view the [slides here](https://idratherbewriting.com/learnapidoc/slides/devdoctrends_results.html):
 
-<a href="https://idratherbewriting.com/learnapidoc/slides/devdoctrends_results.html"><img src="{{site.media}}/devdoctrendssurveyresultstitle.png" alt="Developer Documentation Survey Results" class="medium" style="border: 1px solid #444" /></a>
+<a class="noCrossRef" href="https://idratherbewriting.com/learnapidoc/slides/devdoctrends_results.html"><img src="{{site.media}}/devdoctrendssurveyresultstitle.png" alt="Developer Documentation Survey Results" class="medium" style="border: 1px solid #444" /></a>
 
 ## Webinar
 

@@ -42,7 +42,6 @@ The following are the most recent updates to the API documentation course.
 [Using Oxygen XML with docs-as-code workflows](pubapis_oxygenxml.html). Added a new article in the publishing tools section using Oxygen XML.
 * [Other resources section in course overview](index.html#other-resources). Updated the Course overview with a list of additional resources (books, courses, etc.).
 
-
 ## August 2021
 
 * [Ensuring documentation coverage with each software release](docapis_release_process.html). Covers best practices for ensuring that each new feature in a release has adequate documentation coverage.
@@ -53,14 +52,6 @@ The following are the most recent updates to the API documentation course.
 {% include random_ad4.html %}
 
 This list is auto-generated based on the last-modified timestamp on pages, scoped to the last 60 days. How does the script work? Every page has a "Last updated" line below the title. This script looks for any pages with a timestamp that appears within the last 60 days.
-
-<table>
-<col width="20%">
-<col width="80%">
-<tr>
-<th>Last updated</th>
-<th>Page</th>
-</tr>
 
 {% assign timeframe = 5184000 %}
 {% assign count = 0 %}
@@ -96,9 +87,9 @@ Then click the commit IDs to browse file diffs for the commits that include the 
 
 <img class="small_medium" src="{{site.media}}/github_commit_ids.png" alt="GitHub commit IDs" />
 
-{% include ads.html %}
-
 You can see the [stream of commits in GitHub here](https://github.com/tomjoht/learnapidoc/commits/main).
+
+{% include ads.html %}
 
 ## Recent blog posts about API doc site updates
 

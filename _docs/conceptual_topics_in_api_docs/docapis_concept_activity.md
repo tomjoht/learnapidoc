@@ -17,8 +17,6 @@ Now broaden your analysis to see how these conceptual topics appear in other API
 
 {% include ads.html %}
 
-{% include image_ad_right.html %}
-
 Remember that sometimes the best way to learn how to create API documentation is to carefully observe how it's done on sites you admire. Following standard practices in the industry helps you create more predictable, easy-to-follow patterns in your own documentation.
 
 {% include random_ad2.html %}
@@ -50,6 +48,8 @@ The following are 7 common conceptual topics in API documentation. For each topi
 * [Clearbit](https://clearbit.com/docs?python#errors-error-types)
 * [Twitter](https://developer.twitter.com/en/docs/basics/response-codes)
 * [Mailchimp](http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/)
+
+{% include image_ad_right.html %}
 
 **API rate limiting and thresholds**
 * [GitHub](https://developer.github.com/v3/rate_limit/)

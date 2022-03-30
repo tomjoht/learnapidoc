@@ -20,6 +20,8 @@ In this activity, you'll evaluate some API reference topics to identify issues.
 
 ## <i class="fa fa-user-circle"></i> Activity: Evaluate API reference docs for core elements {#eval_api_docs}
 
+{% include image_ad_right.html %}
+
 In this activity, you'll review API reference documentation and identify the common elements. To evaluate the API reference docs:
 
 1.  Choose three of the following sites. In the three you choose, analyze the API reference sections (where the endpoints are listed):
@@ -73,8 +75,6 @@ In this activity, you'll review API reference documentation and identify the com
       *  How does the doc site handle nested hierarchies in the response definitions?
 
 {% include ads.html %}
-
-{% include image_ad_right.html %}
 
 ## Next steps
 

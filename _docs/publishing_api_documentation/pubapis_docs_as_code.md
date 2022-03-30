@@ -49,11 +49,11 @@ In short, treating docs like code means to use the same systems, processes, and 
 
 ## Advantages to docs-as-code approaches for docs {#docsascode_advantages}
 
-{% include ads.html %}
-
 Just because you *can* manage docs like code, should you? What exactly are the advantages of treating docs like code? Here are a few reasons to embrace docs-as-code tools for documentation.
 
 ### Collaboration with developers {#collaboration_with_developers}
+
+{% include image_ad_right.html %}
 
 If you work with developer documentation, chances are you'll be working on a wide variety of deeply technical topics and will be reliant on engineers to contribute and review the docs. Many times developer documentation is so complex, only developers can really write and review it. Unless you have a background in engineering, understanding all the details in programming, server configuration, or other technical platforms may be beyond your ability to document (without a lot of research, interviewing, and careful note taking).
 
@@ -62,13 +62,13 @@ See my post [What technical writing trends will we see in 2018?](https://idrathe
 
 Additionally, some developers prefer just to write the doc themselves. If a developer is the audience, and another developer is the writer, chances are they can cut through some of the guesswork about assumptions, prerequisite knowledge, and accuracy. In short, in some API documentation contexts, developers write the content. This fact alone is enough to make the case for adopting a docs-as-code approach.
 
-{% include image_ad_right.html %}
-
 Most developers are comfortable with Markdown, enjoy being able to work in their existing text editor or IDE (integrated development environment) to edit content, prefer to collaborate in a Git repo using branching, merging, and code review tools, and are generally comfortable with the whole code-based process and environment. By using tooling that is familiar to them, you empower them to contribute and participate more fully with the documentation authoring and publishing.
 
 {% include random_ad4.html %}
 
 Granted, engineers who write documentation often fall prey to the [curse of knowledge](https://idratherbewriting.com/2007/01/24/the-curse-of-knowledge-the-more-you-know-the-worse-communicator-you-become/). That is, the more they know about a topic, the more assumptions and background information they have getting in the way of clear communication. Even so, technical writers may not always have the time to write documentation for engineering topics. In many cases, a development group that has an API might not even have a technical writer available. Developers might handle everything, from coding to docs.
+
+{% include ads.html %}
 
 If tech writers are available, API documentation is usually a collaborative effort between developers and technical writers. Developers tend to focus more on writing the [reference documentation](docendpoints.html), while technical writers focus more on the [conceptual documentation](docconceptual.html). Regardless of the division of labor, both technical writers and developers tend to work with each other in a close way. As such, docs-as-code tools become essential.
 

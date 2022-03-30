@@ -18,6 +18,8 @@ In most of this course, we focused on [REST APIs](docapis_what_is_a_rest_api.htm
 
 ## Characteristics of native library APIs
 
+{% include image_ad_right.html %}
+
 {% include random_ad3.html %}
 
 Native library APIs (also called class-based APIs or just APIs) are notably different in the following ways:
@@ -26,8 +28,6 @@ Native library APIs (also called class-based APIs or just APIs) are notably diff
 * **No requests and responses**. The classes in native library APIs don't use HTTP protocol, nor are there requests and responses sent across the web. Native library APIs consist of a collection of classes or functions that enhance your existing project with more capabilities. The APIs are entirely local, with no web communication.
 * **Language specific**. Native library APIs are language specific. There are as many different types of APIs as there are programming languages, more or less. You can have a Java API, Python API, C++ API, C# or .NET API, JavaScript API, and so on.
 * **Requires some programming knowledge to document**. To understand how the API works, you need to have a general understanding of the programming language of the API. You don't need to be a programmer, but you should be familiar with the nuts and bolts of the programming language, the correct terms, how the different parts fit together, and how developers will use the API.
-
-{% include image_ad_right.html %}
 
 We will focus this section on Java APIs because they're probably one of the most common. However, many of the concepts and code conventions mentioned here will apply to the other languages, with minor differences.
 

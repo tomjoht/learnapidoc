@@ -20,6 +20,8 @@ However, the comments that developers add might be poor, incomplete, or incompre
 
 ## What to look for when editing Javadoc content
 
+{% include image_ad_right.html %}
+
 {% include random_ad2.html %}
 
 When you make edits to Javadoc content, look for the following:
@@ -37,5 +39,3 @@ Make some edits to a class and method. Then regenerate the Javadoc and find your
 {% include tip.html content="If you need to review how to export to Javadoc, see [Activity: Generate a Javadoc from a sample project](nativelibraryapis_create_javadoc.html). Each time you export to Javadoc, you need to select the classes you want to be included." %}
 
 {% include ads.html %}
-
-{% include image_ad_left.html %}

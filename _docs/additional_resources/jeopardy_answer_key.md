@@ -9,6 +9,8 @@ path1: resources.html
 last-modified: 2019-03-31
 ---
 
+{% include image_ad_right.html %}
+
 The API Jeopardy questions are in the [Conclusion section of Workshop Activities](workshop.html#conclusion).
 
 {% if site.format == "kindle" or site.format == "pdf" %}
@@ -28,3 +30,5 @@ The API Jeopardy questions are in the [Conclusion section of Workshop Activities
 {% endfor %}
 
 {% endif %}
+
+{% include ads.html %}
