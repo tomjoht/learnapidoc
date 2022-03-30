@@ -37,6 +37,14 @@ Keep in mind that there are thousands of APIs. If people are browsing your API, 
 
 Because the product overview is really one of the few places where you can tell a story, the product overview space should appeal to tech writers and be one of the content areas where we excel.
 
+## Presentation on product overviews
+
+I recently gave a presentation on [getting started tutorials](docapis_doc_getting_started_section.html) and product overviews. You can watch the presentation here:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6Reo17LxaS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p></p>
+
 ## Telling your product's story
 
 To tell your product's story, consider identifying a market need that your product solves. This is the basics of storytelling &mdash; there is some conflict that a protagonist (in this case, your product) addresses and solves. In [The Top 20 Reasons Startups Fail](https://www.cbinsights.com/research/startup-failure-reasons-top/), one of the main reasons startups fail is their inability to solve a market problem. The authors explain:

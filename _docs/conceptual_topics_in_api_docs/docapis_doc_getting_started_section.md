@@ -42,6 +42,14 @@ Put a link to your Getting Started tutorial on your documentation homepage. Make
 
 {% include image_ad_right.html %}
 
+## Presentation on getting started tutorials
+
+I recently gave a presentation on [product overviews](docapis_doc_overview.html) and getting started tutorials. You can watch the presentation here:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6Reo17LxaS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p></p>
+
 ## Philosophic foundations for getting started tutorials {#philosophic_foundations}
 
 A getting started tutorial is more than just another type of content to include. Prioritizing a getting started tutorial in your documentation supports an action-oriented approach to learning that aligns with the preferences of many users, especially engineering-oriented developers.
