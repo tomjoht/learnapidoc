@@ -12,7 +12,7 @@ glossary_keys:
 - swagger_editor
 - swagger_ui
 - swagger_codegen
-last-modified: 2020-06-25
+last-modified: 2022-04-04
 ---
 
 [Swagger UI](https://github.com/swagger-api/swagger-ui) provides a display framework that reads an [OpenAPI specification document](https://github.com/OAI/OpenAPI-Specification) and generates an interactive documentation website. The following tutorial shows you how to integrate an OpenAPI specification document into Swagger UI.
@@ -247,7 +247,7 @@ By default, SwaggerUI has the Petstore OpenAPI document configured in the `url` 
     │   └── <span class="red">openapi_openweathermap.yml</span>
     </pre>
 
-4.  Inside your `dist` folder, open `index.html` in a text editor such as [Sublime Text](https://www.sublimetext.com/).
+4.  Inside your `dist` folder, open `swagger-initializer.js` in a text editor such as [Sublime Text](https://www.sublimetext.com/).
 5.  Look for the following code:
 
     ```js
@@ -262,7 +262,7 @@ By default, SwaggerUI has the Petstore OpenAPI document configured in the `url` 
 
 7.  View the `index.html` file locally in your browser using the Python simple server. For example, go to `http://0.0.0.0:8000/` or `http://0.0.0.0:8000/index.html`.
 
-    If you go to the file path, such as `file:///Users/tomjoht/Downloads/dist/index.html`, you'll see a message that says "Failed to load API definition" note in the JavaScript Console that says "URL scheme must be "http" or "https" for CORS request." The SimpleServer simulates this http or https.
+    If you go to the file path, such as `file:///Users/tomjoht/Downloads/dist/index.html`, you might see a message that says "Failed to load API definition" note in the JavaScript Console that says "URL scheme must be "http" or "https" for CORS request." The SimpleServer simulates this http or https.
 
 8.  To stop the Python simpler server, press **Ctrl+C** in your terminal or command prompt.
 
