@@ -1,5 +1,56 @@
-{% if site.format == "web" %}
 <!-- sidebar_comics.html -->
+
+<style>
+  .inpostComics img {
+    max-width: 250px;
+  }
+
+  .inpostComics {
+      padding: 25px;
+      margin-bottom: 10px;
+      border-radius: 7px;
+      max-width: 900px;
+  }
+
+  .inpostComics .textLink a {
+    font-size: 14px;
+    font-family: Arial;
+  }
+  .textLink {
+    font-size: 13px;
+    font-family: arial;
+    margin-bottom: 18px;
+}
+  .textLink {
+    max-width: 260px;
+  }
+
+  .inpostComics .textLink {
+      margin-bottom: 20px;
+  }
+  /* this part adds an icon after external links, using FontAwesome */
+
+.inpostComics a[href^="http://"]:after,
+.inpostComics a[href^="https://"]:after,
+.sidebarComics a[href^="http://"]:after,
+.sidebarComics a[href^="https://"]:after
+ {
+  content: "\f08e";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 3px;
+}
+
+.inpostComics a[href].noCrossRef::after,
+.sidebarComics a[href].noCrossRef::after
+ {
+    content: ""!important;
+    padding-left: 0;
+}
+</style>
 
 <div class="sidebarComics">
   <h3>Sponsored content</h3>
@@ -9,6 +60,12 @@
         contents[0]='<a class="noCrossRef" ref="nofollow" href="https://idbwrtng.com/twiinline"><img style="border: 1px solid lightgray" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/twi_techcomm5.png" alt="TWi: Leading Provider of Documentation and Technical Communication Solutions" /></a> <div class="textLink"><a href="https://idbwrtng.com/twiinline">Perfect your technical documentation to boost your business with TWi</a></div>'
         //Archbee
         contents[1]='<a class="noCrossRef" ref="nofollow" href="https://idbwrtng.com/archbeeinline"><img style="border: 1px solid lightgray" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/archbeesquare.jpeg" alt="Archbee: The Knowledge Base, rebuilt for software companies" /></a> <div class="textLink"> <a href="https://idbwrtng.com/archbeeinline">Archbee makes it easy to build, launch, and manage your developer portal</a></div>'
+        //Madcap
+        contents[2]='<a class="noCrossRef" ref="nofollow" href="https://idbwrtng.com/madcapinline"><img style="border: 1px solid lightgray" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/Flare2021r3side.png" alt="MadCap Flare" /></a> <div class="textLink"> <a href="https://idbwrtng.com/madcapinline">Explore new branching support for your MadCap Central git repository</a></div>'
+        //Heretto
+        contents[3]='<a class="noCrossRef" ref="nofollow" href="https://idbwrtng.com/herettoinline"><img style="border: 1px solid darkgray" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/heretto.png" alt="Heretto" /></a><div class="textLink"> <a href="https://idbwrtng.com/herettoinline">Heretto is an enterprise-grade CCMS for your entire content ecosystem</a></div>'
+        //Paligo
+        contents[4]='<a class="noCrossRef" ref="nofollow" href="https://idbwrtng.com/paligoinline"><img style="border: 1px solid darkgray" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/paligosidebar2022.png" alt="Paligo" /></a><div class="textLink"> <a href="https://idbwrtng.com/paligoinline">Paligo takes multi-channel publishing, including API docs, to another level</a></div>'
         //Your ad here
         //contents[2]='<a class="noCrossRef" ref="nofollow" href="https://idbwrtng.com/youradhereinline"><img style="border: 1px solid darkgray" src="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/youradhere2.png" alt="Advertising options for tech comm products" /></a><div class="textLink"> <a href="https://idbwrtng.com/youradhereinline">Make your tech comm products visible to tech writers worldwide</a></div>'
         var i=0
@@ -31,4 +88,3 @@
 <div style="clear:both;"></div>
 
 <!-- / end sidebar_comics.html -->
-{% endif %}
