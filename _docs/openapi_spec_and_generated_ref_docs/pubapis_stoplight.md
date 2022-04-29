@@ -103,8 +103,6 @@ In a design-first model, technical writers can also insert themselves early in o
 
 In addition to putting the OpenAPI specification at the center of the API lifecycle process, Stoplight has some other features of particular interest to technical writers. Stoplight offers a hosted docs solution, where you can integrate your conceptual content (the tutorials, guides, and other how-to's) with the reference API docs. Here's a sample page from Stoplight for a product called [Shopgate](https://developer.shopgate.com/).
 
-<p>In addition to putting the OpenAPI specification at the center of the API lifecycle process, Stoplight has some other features of particular interest to technical writers. Stoplight offers a hosted docs solution, where you can integrate your conceptual content (the tutorials, guides, and other how-to’s) with the reference API docs. Here’s a sample page from Stoplight for a product called <a href="https://developer.shopgate.com/">Shopgate</a>.</p>
-
 Note that you can integrate your [reference documentation](docendpoints.html) and [conceptual documentation](docconceptual.html) in Stoplight's hosted doc solution. Integrating these two content types has been a longtime challenge for tech writers in the API doc space. (For more on integration challenges with API documentation, see [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).)
 
 {% include ads.html %}
