@@ -336,6 +336,9 @@ folders:
   - title: "Using Oxygen XML with docs-as-code workflows"
     jurl: pubapis_oxygenxml.html
 
+  - title: "Blobr: An API portal that arranges your API's use cases as individual products"
+    jurl: pubapis_blobr.html
+
   - title: "Which tool to choose for API docs &mdash; my recommendations"
     jurl: pubapis_which_tool_to_choose.html
 

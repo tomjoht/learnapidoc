@@ -16,7 +16,11 @@ If you're looking to see what's new in the API doc site/course, you can browse n
 
 The following are the most recent updates to the API documentation course.
 
-## January 2021
+## May 2022
+
+* [Blobr: An API portal that arranges your API's use cases as individual products](pubapis_blobr.html). With Blobr, you can create an API store to launch and grow an API business with different monetization models.
+
+## January 2022
 
 * Revised the content in the [Metrics and Measurements](docapis_metrics_and_measurement.html) section as follows:
   * Consolidated the first-level checkliist and second-level checklist into a [single checklist](docapis_quality_checklist.html).
