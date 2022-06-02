@@ -101,3 +101,5 @@ The combination of all of these necessary elements, working together on the same
 Blobr is named after [the blob](https://en.wikipedia.org/wiki/Physarum_polycephalum) &mdash; a unicellular organism best described as slime mold. Neither plant, animal, or fungus, the blob has some unique properties. If you cut a blob in half, each part continues to grow as a discrete organism. Conversely, if you push two blobs together, they merge into a single blob. The blob's division or unification provides a living example of how APIs can be chunked into separate products, or how the same API endpoint can be merged into multiple products. (Blob's have other unique properties that also make them an appealing metaphor.)
 
 Blobr is in the startup phase. Based in France, Blobr received VC funding and began commercializing operations in January of 2022. As of May 2022, the company already has more than 100 paying customers. To learn more about Blobr, see [https://www.blobr.io/](https://www.blobr.io/){: rel="nofollow"}.
+
+{% include ads.html %}
