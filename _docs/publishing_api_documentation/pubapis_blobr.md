@@ -68,16 +68,6 @@ With Blobr, you can choose from different monetization models: subscription base
 
 If your API isn't monetized at all, you can use Blobr for free with all the features needed to replace your documentation solution or create your own store.
 
-## Reasons for Blobr's unique approach to API portals {#unique_aproach}
-
-What's the story behind Blobr's unique approach to API portals? Alexander Airvault, co-founder and CEO of Blobr, said that previously, when he worked with API customers, they often struggled to understand how to implement the APIs. The APIs were usually more technical than the customers could follow.
-
-Compounding the difficulty, the traditional model of API portals mostly provides a long list of endpoints for the user to figure out on their own. To reduce some of the complexity, Alexandre started creating "subscriptions" to different parts of the API for customers. That's how he got the idea of Blobr.
-
-Blobr's approach _productizes_ the use cases of your API, making it clear how to use your API to achieve various goals. There's no ambiguity about what you can do with the API or which endpoints you need to accomplish each goal. This granularity also allows API consumers to focus only on the use cases of the API they actually need.
-
-Dividing the API into distinctly packaged products not only eliminates complexity but avoids information overload for API consumers. The consumers see only the endpoints and workflows related to their product use cases.
-
 ## API changelogs and personalized release notes {#changelogs_and_release_notes}
 
 When there are changes to the API, rather than broadcasting all changes to a general release notes page, the changelogs are delivered on a product-by-product basis so that changes only go to the relevant consumers who have purchased those products. The following screens demonstrate how Blobr shows changes to users:
@@ -89,6 +79,16 @@ The following screenshot shows the changelog that API consumers see.
 <figure><img src="{{site.media}}/blobr-product-changelog.png" alt="Product changelog" style="border: 1px solid #dedede" /><figcaption><b>Figure 5.</b> Product changelog. Those who consuming the product (and who will be impacted by the API changes) can see what's new, modified, or deleted through these changelogs.</figcaption></figure>
 
 If desired, Blobr can automatically send personalized changelogs to API consumers. These personalized changelogs avoid broader communications in which only a small subset of information is actually relevant to the API consumer.
+
+## Reasons for Blobr's unique approach to API portals {#unique_aproach}
+
+What's the story behind Blobr's unique approach to API portals? Alexander Airvault, co-founder and CEO of Blobr, said that previously, when he worked with API customers, they often struggled to understand how to implement the APIs. The APIs were usually more technical than the customers could follow.
+
+Compounding the difficulty, the traditional model of API portals mostly provides a long list of endpoints for the user to figure out on their own. To reduce some of the complexity, Alexandre started creating "subscriptions" to different parts of the API for customers. That's how he got the idea of Blobr.
+
+Blobr's approach _productizes_ the use cases of your API, making it clear how to use your API to achieve various goals. There's no ambiguity about what you can do with the API or which endpoints you need to accomplish each goal. This granularity also allows API consumers to focus only on the use cases of the API they actually need.
+
+Dividing the API into distinctly packaged products not only eliminates complexity but avoids information overload for API consumers. The consumers see only the endpoints and workflows related to their product use cases.
 
 ## One platform that brings it all together {#one_platform_with_everything}
 
