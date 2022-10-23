@@ -568,7 +568,7 @@ To enter the response information in Stoplight Studio:
 ## Step 6: Preview, test, and publish the output {#preview}
 
 {: .note}
-The OpenWeatherMap API seems to be blocking requests made from Stoplight due to CORS issues. As such, you'll get a "Network error" message when you try to send a request through the Try it out console here. (Open your JS Console to see the error.) Insstead of using the Try it feature, copy and paste the [curl call](docapis_install_curl.html) that Stoplight provides into your terminal to get a response.
+The OpenWeatherMap API seems to be blocking requests made from Stoplight due to CORS issues. As such, you'll get a "Network error" message when you try to send a request through the Try it out console here. (Open your JS Console to see the error.) Instead of using the Try it feature, copy and paste the [curl call](docapis_install_curl.html) that Stoplight provides into your terminal to get a response.
 
 You've finished creating your OpenAPI spec, so let's preview, test, and publish test the documentation:
 
