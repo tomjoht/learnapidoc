@@ -153,7 +153,7 @@ If you'd like to give back, feel free to buy me coffee by clicking the [Buy me a
 
 ## PDF and Kindle/eBook formats
 
-To read the same content in PDF or Kindle/eBook formats, see [PDF and eBook formats][docapis_formats.html]. You can print out the section you want, or load it into a PDF reader to highlight/annotate content. Or if you prefer Kindle or another eReader, download the content in ebook format and load it onto your device.
+To read the same content in PDF or Kindle/eBook formats, see [PDF and eBook formats](docapis_formats.html). You can print out the section you want, or load it into a PDF reader to highlight/annotate content. Or if you prefer Kindle or another eReader, download the content in ebook format and load it onto your device.
 
 ## Let me know if any content is out of date
 
