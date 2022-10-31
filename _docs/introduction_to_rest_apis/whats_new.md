@@ -4,7 +4,7 @@ permalink: docapis_whats_new.html
 sidebar: docapis
 path1: docapis_introtoapis.html
 weight: 1.02
-last-modified: 2021-09-17
+last-modified: 2022-10-30
 ---
 
 If you're looking to see what's new in the API doc site/course, you can browse new content in several ways.
@@ -15,6 +15,10 @@ If you're looking to see what's new in the API doc site/course, you can browse n
 <h2>Most recent updates</h2>
 
 The following are the most recent updates to the API documentation course.
+
+## October 2022
+
+* Updated the Stoplight tutorial: [Getting started tutorial: Using Stoplight Studio to create an OpenAPI specification document](pubapis_openapis_quickstart_stoplight.html). With many UI and other changes, this tutorial needed a lot of updates. It should now be aligned with the latest Stoplight UI and functionality.
 
 ## May 2022
 
