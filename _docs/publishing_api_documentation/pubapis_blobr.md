@@ -34,6 +34,8 @@ In this example, the use cases for the Petstore API have been packaged into seve
 
 This is what's ingenious about Blobr &mdash; it allows you to take each use case for your API and package it as an individual product, which can then be monetized or made available for free. Each product usually involves using several different API endpoints in a specific workflow.
 
+{% include random_ad4.html %}
+
 API consumers (developers or other integrators) choose the products they want to consume, and then they become authorized to use the workflow's endpoints. For example, a typical authorization might allow developers to make a certain number of calls per month.
 
 Blobr's new approach to organizing, presenting, and monetizing APIs not only simplifies API consumption for developers, it helps API providers better communicate to consumers how to use the API.
@@ -46,6 +48,8 @@ Let's look at a product and its workflow in more detail. Suppose you want to imp
 
 In this example, the product description is brief, but a more detailed product could include screenshots and other formatting (see an [example](https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/product_description_alt_blobr.png)).
 
+{% include random_ad3.html %}
+
 In addition to a product overview page, documentation appears as workflow steps. The first step in this workflow is to "Retrieve all the pets with the status ‘available'." Clicking this workflow step reveals more detail, as shown below:
 
 <figure><a href="https://y18r6fxgtelv8ls5.developer.blobr.app/catalog/prd_7osv1snb1ehsu91m/workflow/v37tKPbAXi6FnHrQInyMO" rel="nofollow" class="noCrossRef"><img src="{{site.media}}/workflow_step_blobr.png" alt="Blobr workflow step detail page" class="noCrossRef" /></a><figcaption><b>Figure 3.</b> <i>Workflow step detail page in Blobr.</i> This view describes a workflow step, including the endpoint used, its parameters, and example response.</figcaption></figure>
@@ -53,6 +57,8 @@ In addition to a product overview page, documentation appears as workflow steps.
 The workflow steps usually reference an API endpoint. How do you get your API reference details in there? Although you can enter your API details manually, a more common approach is to upload an [OpenAPI document](pubapis_openapi_intro.html). After uploading your OpenAPI document, you can select the endpoints that apply to the workflow step. (The same endpoint might apply across multiple products in an API, and this approach allows you to single-source your reference documentation.)
 
 For each workflow step, Blobr also includes a "Try it out" explorer so that developers can execute the endpoint directly on the page and see the result.
+
+{% include random_ad2.html %}
 
 ## API tracking and monitoring {#api_tracking_monitoring}
 
@@ -62,9 +68,13 @@ This granular call tracking allows API providers and consumers to measure API us
 
 Blobr also allows you to monitor API activity through API logs. Monitoring helps both API providers and consumers to debug, access, and filter call errors, as well as troubleshoot issues in real time. API consumers can also replay their calls directly from the portal.
 
+{% include ads.html %}
+
 ## Monetization models {#monetization_models}
 
 With Blobr, you can choose from different monetization models: subscription based, tiered, or metered models. For each model, the monetization is either based on the number of API calls made or, with custom units, defined by the API provider. The custom units can include the number of users, the amount of data processed, or other options. Flexibility with custom units provides a way to bring the price and value to the user closer together.
+
+{% include random_ad1.html %}
 
 If your API isn't monetized at all, you can use Blobr for free with all the features needed to replace your documentation solution or create your own store.
 
@@ -86,7 +96,7 @@ What's the story behind Blobr's unique approach to API portals? Alexander Airvau
 
 Compounding the difficulty, the traditional model of API portals mostly provides a long list of endpoints for the user to figure out on their own. To reduce some of the complexity, Alexandre started creating "subscriptions" to different parts of the API for customers. That's how he got the idea of Blobr.
 
-Blobr's approach _productizes_ the use cases of your API, making it clear how to use your API to achieve various goals. There's no ambiguity about what you can do with the API or which endpoints you need to accomplish each goal. This granularity also allows API consumers to focus only on the use cases of the API they actually need.
+{% include image_ad_right.html %} Blobr's approach _productizes_ the use cases of your API, making it clear how to use your API to achieve various goals. There's no ambiguity about what you can do with the API or which endpoints you need to accomplish each goal. This granularity also allows API consumers to focus only on the use cases of the API they actually need.
 
 Dividing the API into distinctly packaged products not only eliminates complexity but avoids information overload for API consumers. The consumers see only the endpoints and workflows related to their product use cases.
 

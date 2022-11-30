@@ -22,3 +22,5 @@ This part of the activity might be challenging, but here is where you'll start b
 {% include random_ad3.html %}
 
 {% include random_ad4.html %}
+
+{% include random_ad2.html %}

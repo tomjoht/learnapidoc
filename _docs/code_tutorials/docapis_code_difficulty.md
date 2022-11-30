@@ -40,7 +40,8 @@ Code itself is non-linear. What appears at the top (e.g., variables) might not b
 
 The central paradigm most technical writers follow is a task-based model where you begin with step 1, 2, 3, and so on until you reach the end of the task. This isn't the case with code documentation. Code is non-linear by nature. You can't simply start from the top and proceed to the bottom. Although I attempted a somewhat section-by-section explanation in my code explanation, I had to skip over some lines or note that they were part of logic explained in later sections.
 
-{% include random_ad4.html %}
+zebra
+{% include random_ad2.html %}
 
 Overall, this non-linearity is very different from the procedural approach usually followed in tech docs.
 
@@ -78,6 +79,8 @@ An efficient technique in code (e.g., recursive loops that expand resources as n
 
 Despite the difficulties of documenting code, this area of documentation shouldn't be overlooked. Ask developers what the most important element of API docs is, and the answer you're bound to hear time and again is code samples. Include working code samples that developers can easily copy and paste into their documentation. Code samples that demonstrate how to incorporate abstracts into an actual implementation. Code samples, sample apps &mdash; whatever the form, just give us more code, code, code.
 
+{% include random_ad1.html %}
+
 Check out the following video clip from engineer Ruthie Ben Dor during a Write the Docs conference. Responding to the question, "What are the three most important elements of producing API documentation?" Ruthie emphasizes the need to include code samples.
 
 {% if site.format == "kindle" or site.format == "pdf" %}
@@ -100,7 +103,7 @@ In fact, in the [2021 State of API report by SmartBear](https://smartbear.com/st
 
 Despite the importance of code samples, they're often neglected or missing from API docs. After all, it's much easier to just cover reference material and let developers figure out how to actually use it constructively. In this section of my API course, I'll provide concrete strategies for successfully incorporating code samples into your documentation.
 
-{% include random_ad2.html %}
+{% include random_ad4.html %}
 
 ## What to do if you don't understand the code
 
