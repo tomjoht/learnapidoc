@@ -199,11 +199,11 @@ Last updated: {{page.last-modified | date: "%b %d, %Y" }} <a class="noCrossRef" 
 {% if page.map %}{% assign mapStep = page.map.step %}{% assign mapDefinition = page.map.definition %}{% include workflow_map.html step=mapStep map=mapDefinition %}{% endif %}
 
                 {{content}}
-
+                {% include mailjet_embedded.html %}
                 <div class="donateButton">
                 {% include coffee_button.html %}
                 </div>
-                {% include tinyletter2.html %}
+
 
                 {% unless page.type == 404 %}
 
