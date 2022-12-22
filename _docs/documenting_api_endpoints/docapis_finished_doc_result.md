@@ -35,7 +35,7 @@ Now that you've completed the [API reference tutorial](docapis_api_reference_tut
 
 There are two activities in this section:
 
-* [Activity: Find an open-source project](docapis_find_open_source_project.html)
+* [Activity: What's wrong with this API reference topic](docapis_api_whats_wrong_activity.html)
 * [Activity: Evaluate API reference docs](docapis_api_reference_activity.html)
 
 {% include ads.html %}
