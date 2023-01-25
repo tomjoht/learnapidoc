@@ -39,7 +39,7 @@ To make a request with curl:
 
     The [`--location`](https://curl.haxx.se/docs/manpage.html#-L) parameter will prompt curl to submit a new request if the URL is a redirect. The [`--request`](https://curl.haxx.se/docs/manpage.html#-X) parameter specifies the operation for the request.
 
-    (Note that previously, Postman would its include own header information, designated with `-H`. If you see these parameters, delete them since they cause issues when submitted outside of Postman.)
+    (Note that previously, Postman would include its own header information, designated with `-H`. If you see these parameters, delete them since they cause issues when submitted outside of Postman.)
 
     {: .warning}
     In general, the code snippets can be copied and pasted directly into your terminal on a Mac. However, for Windows, you must change the single quotation marks to double quotation marks.
