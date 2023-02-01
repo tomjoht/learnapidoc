@@ -291,7 +291,7 @@ Now enter the path and parameter information:
 
     * *Name ...*: **mode**
     * *[Data type]*: string
-    * *Description...*: \*\*Mode**. *Example: html*. Determines the format of the response. Possible values are \`json\`, \`xml\`, and \`html\`. If the mode parameter is empty, the format is \`json\` by default.
+    * *Description...*: \*\*Mode\*\*. *Example: html*. Determines the format of the response. Possible values are \`json\`, \`xml\`, and \`html\`. If the mode parameter is empty, the format is \`json\` by default.
     * <img src="{{site.media}}/stoplight_other_properties_button2.png" alt="Other properties" /> *Other Properties*:
       * *enum*: json, xml, html
       * *default*: json
