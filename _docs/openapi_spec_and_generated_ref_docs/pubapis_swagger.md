@@ -12,7 +12,7 @@ glossary_keys:
 - swagger_editor
 - swagger_ui
 - swagger_codegen
-last-modified: 2022-04-04
+last-modified: 2023-02-01
 ---
 
 [Swagger UI](https://github.com/swagger-api/swagger-ui) provides a display framework that reads an [OpenAPI specification document](https://github.com/OAI/OpenAPI-Specification) and generates an interactive documentation website. The following tutorial shows you how to integrate an OpenAPI specification document into Swagger UI.
@@ -112,25 +112,25 @@ In this activity, you'll create a Swagger UI display for an OpenAPI specificatio
 First, you'll make sure you can view Swagger locally. Then you'll switch the Petstore OpenAPI document URL with an OpenWeatherMap OpenAPI document URL.
 
 1.  Go to the [Swagger UI GitHub project](https://github.com/swagger-api/swagger-ui).
-2.  Click **Clone or download**, and then click **Download ZIP**. Download the files to a convenient location on your computer and extract the files.
+2.  Click **Code**, and then click **Download ZIP**. Download the files to a convenient location on your computer and extract the files.
 
 	  The only folder you'll be working with in the downloaded zip is the `dist` folder (short for distribution). Everything else is used only if you're recompiling the Swagger files, which is beyond the scope of this tutorial. (If desired, you can drag the `dist` folder out of the `swagger-ui-master` folder so that it stands alone.)
 
-3.  In your Chrome browser, press **Cmd+O** (Mac) or **Ctrl+O** (Windows), browse to the `dist` folder, and select the `index.html` file,
+3.  In your Chrome browser, press **Cmd+O** (Mac) or **Ctrl+O** (Windows), browse to the `dist` folder, and select the `swagger-initializer.js` file,
 
     You should see the Petstore Swagger content. Now you'll customize the OpenAPI spec file with another file.
 
-4.  Inside your `dist` folder, open `index.html` in a text editor such as [Sublime Text](https://www.sublimetext.com/).
+4.  Inside your `dist` folder, open `swagger-initializer.js` in a text editor such as [Sublime Text](https://www.sublimetext.com/).
 5.  Look for the following code:
 
     ```js
-    url: "http://petstore.swagger.io/v2/swagger.json",
+    url: "https://petstore.swagger.io/v2/swagger.json",
     ```
 
 6.  Change the `url` value to an online web URL to your Swagger file. For example: `https://idratherbewriting.com/learnapidoc/docs/openapi_spec_and_generated_ref_docs/openapi_openweathermap.yml`. Then save the file.
 
     {: .note}
-    If the `url` reference isn't to an online URL, Swagger UI will create an CORS (cross-origin resource sharing) error. To view Swagger UI with a local OpenAPI file, you can run a [simple Python server locally](https://docs.python.org/2/library/simplehttpserver.html) to simulate a web server (this requires you to install Python).
+    If the `url` reference isn't to an *online* URL (but rather to a local file), Swagger UI will create an CORS (cross-origin resource sharing) error. To view Swagger UI with a local OpenAPI file, you can run a [simple Python server locally](https://docs.python.org/2/library/simplehttpserver.html) to simulate a web server (this requires you to install Python).
 
 7.  Refresh the `index.html` file in your Chrome browser. The content should show the OpenWeatherMap API content instead of Swagger Petstore content.
 

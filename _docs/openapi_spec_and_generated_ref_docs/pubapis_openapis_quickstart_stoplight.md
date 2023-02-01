@@ -8,7 +8,7 @@ section: restapispecifications
 path1: restapispecifications.html
 redirect_from:
 - /learnapidoc/stoplight_studio_tutorial.html
-last-modified: 2022-10-30
+last-modified: 2023-02-01
 ---
 
 You can create an OpenAPI specification document in several ways: (a) you can auto-generate it from annotations in your source code, (b) you can code it by hand in an editor such as the Swagger Editor, and (c) you can use a GUI editor such as Stoplight Studio. In this tutorial, we will walk through the third approach: using Stoplight Studio, a GUI editor for modeling your API. We will create a valid OpenAPI specification, using the OpenWeatherMap as the sample API.
@@ -181,6 +181,8 @@ To populate the API overview:
 
 4.  Return to the Form view by clicking the **Form** button again.
 
+{% include random_ad3.html %}
+
 # Step 3: Enter the path and parameter information {#endpoints}
 
 Now enter the path and parameter information:
@@ -249,7 +251,7 @@ Now enter the path and parameter information:
 
     * _Name ..._: **units**
     * _[Data type]_: string
-    * _Description…_: **Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use the `units` parameter, the format is `standard` by default.
+    * _Description…_: \*\*Units\*\*. \*Example: imperial\*. Possible values: \`standard\`, \`metric\`, and \`imperial\`. When you do not use the \`units\` parameter, the format is \`standard\` by default.
     * <img src="{{site.media}}/stoplight_other_properties_button2.png" alt="Other properties" /> _Other Properties_:
       * _enum_: standard, metric, imperial
   
@@ -278,16 +280,9 @@ Now enter the path and parameter information:
 
     \-\-\-\-\-\-\-
 
-
-    * _Name …_: **lon**
-    * _[Data type]_: string
-    * _Description…_: **Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with `lat `.
-
-    \-\-\-\-\-\-\-
-
     * *Name ...*: **lang**
     * *[Data type]*: string
-    * *Description...*: \*\*Language\*\*. \*Example: en\*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - \`ar\`, Bulgarian - \`bg\`, Catalan - \`ca\`, Czech - \`cz\`, German - \`de\`, Greek - \`el\`, English - \`en\`, Persian (Farsi) - \`fa\`, Finnish - \`fi\`, French - \`fr\`, Galician - \`gl\`, Croatian - \`hr\`, Hungarian - \`hu\`, Italian - \`it\`, Japanese - \`ja\`, Korean - \`kr\`, Latvian - \`la\`, Lithuanian - \`lt\`, Macedonian - \`mk\`, Dutch - \`nl\`, Polish - \`pl\`, Portuguese - \`pt\`, Romanian - \`ro\`, Russian - \`ru\`, Swedish - \`se\`, Slovak - \`sk\`, Slovenian - \`sl\`, Spanish - \`es\`, Turkish - \`tr\`, Ukrainian - \`ua\`, Vietnamese - \`vi\`, Chinese Simplified - \`zh_cn\`, Chinese Traditional - \`zh_tw\`.
+    * *Description...*: \*\*Language\*\*. \*Example: en\*. You can use \`lang\` parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - \`ar\`, Bulgarian - \`bg\`, Catalan - \`ca\`, Czech - \`cz\`, German - \`de\`, Greek - \`el\`, English - \`en\`, Persian (Farsi) - \`fa\`, Finnish - \`fi\`, French - \`fr\`, Galician - \`gl\`, Croatian - \`hr\`, Hungarian - \`hu\`, Italian - \`it\`, Japanese - \`ja\`, Korean - \`kr\`, Latvian - \`la\`, Lithuanian - \`lt\`, Macedonian - \`mk\`, Dutch - \`nl\`, Polish - \`pl\`, Portuguese - \`pt\`, Romanian - \`ro\`, Russian - \`ru\`, Swedish - \`se\`, Slovak - \`sk\`, Slovenian - \`sl\`, Spanish - \`es\`, Turkish - \`tr\`, Ukrainian - \`ua\`, Vietnamese - \`vi\`, Chinese Simplified - \`zh_cn\`, Chinese Traditional - \`zh_tw\`.
     * <img src="{{site.media}}/stoplight_other_properties_button2.png" alt="Other properties" /> *Other Properties*:
       * *default*: en
       * *enum*: enums: "ar, bg, ca, cz, de, el, en, fa, fi, fr, gl, hr, hu, it, ja, kr, la, lt, mk, nl, pl, pt, ro, ru, se, sk, sl, es, tr, ua, vi, zh_cn, zh_tw"
@@ -310,7 +305,7 @@ Now enter the path and parameter information:
 
     You don't need to add security for this endpoint because you already configured global security in the previous section. However, if this endpoint had a unique security method, you could override the global security here by clicking the **+ Security** button.
 
-{% include random_ad3.html %}
+{% include ads.html %}
 
 # Step 4: Learn how to re-use parameters {#reuse}
 
@@ -565,7 +560,10 @@ To enter the response information in Stoplight Studio:
      </div>
      {% endif %}
 
-    <img src="{{site.media}}/17-response-preview-stoplight.png" alt="Schema section" />
+    
+To view the responses output, you'll need to click **Preview** in Stoplight and view the rendered output. See my [example here](https://idratherbewriting.stoplight.io/docs/openweathermap4/YXBpOjExMTIxODY3-open-weather-map-api).
+
+<img src="{{site.media}}/17-response-preview-stoplight.png" alt="Schema section" />
 
 {% include random_ad2.html %}
 
@@ -602,12 +600,12 @@ The screen should look like this:
 
     For publishing options outside of Stoplight, you can use your OpenAPI definition with [Redoc](https://github.com/Redocly/redoc), [Swagger UI](pubapis_swagger.html), [Spectacle](https://github.com/sourcey/spectacle), [Docsy](https://github.com/google/docsy), and other tools. See [Openapi.tools](https://openapi.tools/#documentation) for a list of possibilities. You can find a [Redoc tutorial in this course here](pubapis_redocly.html).
 
-{% include ads.html %}
-
 {: .tip}
 You can view my [OpenWeatherMap API documentation on Stoplight here](https://idratherbewriting.stoplight.io/docs/openweathermap4/YXBpOjExMTIxODY3-open-weather-map-api). If you got stuck in the tutorial somewhere along the way, you can click Export to download my code and paste it into your code. For various demos of Stoplight with different API docs, see [Stoplight demos](pubapis_stoplight.html#stoplight_demos). 
 
 Stoplight has [several pricing tiers](https://stoplight.io/pricing/). The free version supports up to 3 users and 1 project, while the next level up, Starter, supports up to 3 users and 10 projects. 
+
+
 
 <style>
 dl {font-size: 18px !important;}
