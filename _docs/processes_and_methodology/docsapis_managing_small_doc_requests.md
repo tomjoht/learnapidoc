@@ -107,7 +107,7 @@ If anyone can make a request for information they wish would be included in the 
 
 It's much better to direct DevRel groups to make documentation requests to product teams. Then product teams should formally go through your intake process. This might seem like an extra hop, but it results in a world of difference. When the product team files a request for documentation help, you've got them at your disposal. They can provide the information that you actually need to write the documentation. The PM can allocate bandwidth to the collection and sharing of this information so you can complete the request. They will also review the docs.
 
-Without this backing of the product team, the DevRel request places all the pressure on the technical writer to figure out how has the info, what the details of the info are, and more. In most organizations, the DevRel groups are much stronger than the documentation groups because DevRel groups work closely with key partners. Hence DevRel can place much greater pressure on product teams to act, while product teams might simply disregard requests from technical writers.
+Without this backing of the product team, the DevRel request places all the pressure on the technical writer to figure out who has the info, what the details of the info are, and more. In most organizations, the DevRel groups are much stronger than the documentation groups because DevRel groups work closely with key partners. Hence DevRel can place much greater pressure on product teams to act, while product teams might simply disregard requests from technical writers.
 
 ## Indicating progress on the ticket
 
@@ -127,7 +127,7 @@ When you're ready to review this version with reviewers, merge your feature bran
 
 ## Closing the ticket
 
-When you're finished with the work, ask the requester to resolve the ticket. This indicates their acceptance of the work. Then push the change live into production by merging your feature branch into production. Afterward, delete the feature branch.
+When you're finished with the work, ask the requester to resolve the ticket. This indicates their acceptance of the work. Then make the change live by merging your feature branch into production. Afterward, delete the feature branch.
 
 If the ticket doesn't require any review (e.g., fixing a broken link), you can just push the content to prod and let the reviewer know.
 
