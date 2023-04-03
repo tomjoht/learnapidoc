@@ -21,7 +21,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-paginate
 # comment out jekyll-seo in order for algolia reindex to work
-  - jekyll-seo
+#  - jekyll-seo
 
 markdown: kramdown
 kramdown:
