@@ -12,3 +12,4 @@ ebooks/docapis.mobi
 ebooks/docapis.epub
 reindex.sh
 images
+node_modules

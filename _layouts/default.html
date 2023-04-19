@@ -198,6 +198,7 @@ Last updated: {{page.last-modified | date: "%b %d, %Y" }} <a class="noCrossRef" 
 {% if page.github_url %} {% include github_button.html %}  {% endif %}
 {% if page.map %}{% assign mapStep = page.map.step %}{% assign mapDefinition = page.map.definition %}{% include workflow_map.html step=mapStep map=mapDefinition %}{% endif %}
 
+
                 {{content}}
                 
                 <div class="donateButton">
@@ -236,14 +237,6 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
   $('[data-toggle="popover"]').popover();
 });
-</script>
-
-<script>
-  $(document).ready(function() {
-    setTimeout(function() {
-      $('#newsletterModal').modal('show');
-    }, 15000);
-  });
 </script>
 
 </body>
