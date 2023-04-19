@@ -13,12 +13,7 @@ Markprompt test:
 
 <script type="module" src="https://esm.sh/@markprompt/web@0.2.3" />
 
-<markprompt-content 
-  projectKey="Ehg2YU8UGYOh4eUXuN1lqW9VQ8z3FvfM"
-  model="gpt-4"
-  iDontKnowMessage="Sorry, I don't know!"
-  placeholder="Ask me about API docs..."
-/>
+<markprompt-content projectKey="Ehg2YU8UGYOh4eUXuN1lqW9VQ8z3FvfM" model="gpt-4" iDontKnowMessage="Sorry, I don't know!" placeholder="Ask me about API docs..." />
 
 Up until now, you've been focused intensely on API documentation. In this section, I'll talk about an aspect of API documentation that is perhaps more applicable to all types of documentation but which is especially relevant to developer docs, where testing and experimenting with the products and services is not always straightforward.
 
