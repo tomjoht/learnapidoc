@@ -9,7 +9,7 @@ path1: restapispecifications.html
 last-modified: 2019-01-05
 ---
 
-{% comment %}testing {% endcomment %}
+{% comment %}testing this {% endcomment %}
 
 The [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html) walked you through 8 steps in building the OpenAPI specification document. Now it's your turn to practice first editing and then creating an OpenAPI specification document.
 
