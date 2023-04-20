@@ -1,0 +1,29 @@
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#markPromptChat">
+  Markprompt Chat
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="markPromptChat" tabindex="-1" role="dialog" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newsletterModalLabel">GPT Chat by Markprompt</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<script type="module" src="https://esm.sh/@markprompt/web@0.3.2" defer=""></script>
+<div id="myMarkprompt" style="width: 550px; height: 450px">
+<markprompt-content projectKey="Ehg2YU8UGYOh4eUXuN1lqW9VQ8z3FvfM" model="gpt-4" iDontKnowMessage="Sorry, I don't know!" placeholder="Ask me about API docs..."></markprompt-content>
+</div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
