@@ -188,9 +188,9 @@ Last updated: {{page.last-modified | date: "%b %d, %Y" }} <a class="noCrossRef" 
 
                 <div class="amazonBook">
                 </div>
-{% if page.markprompt == "show" %}
+
 <p class="surveyBanner" style="font-size: 98%; line-height: 18px"><b>Experiment:</b> Try out the GPT Chat for this site. <br/><br/>{% include markprompt.html %}<br/></p>
-{% endif %}
+
 
 {% if page.versions %}{% include versions.html %}{% endif %}
 {% if page.github_url %} {% include github_button.html %}  {% endif %}
