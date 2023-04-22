@@ -1,24 +1,81 @@
+<h3>Email Newsletter</h3>
+ <div style="margin-top:20px">
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-info" data-toggle="modal" data-target="#newsletterModal">
-  Subscribe to my newsletter
+<!-- Include custom CSS to remove padding, header/footer, and border -->
+<style>
+  .custom-modal .modal-content {
+    border: none;
+    padding: 0;
+  }
+  .custom-modal .modal-header,
+  .custom-modal .modal-footer {
+    display: none;
+  }
+  .custom-modal .modal-body {
+    position: relative;
+  }
+  .custom-modal .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+  }
+
+.btn-primary {
+    color: #fff;
+    background-color: orange;
+    border-color: #dedede
+}
+
+  .btn-primary.mynewsletter:hover,
+  .btn-primary.mynewsletter:focus,
+  .btn-primary.mynewsletter:active {
+    background-color: #f8b12e;
+    border-color: #c79310;
+  outline: none; /* Remove the default blue outline */
+  box-shadow: none; /* Remove the default shadow */
+  }
+
+
+
+ .btn-primary.mynewsletter {
+    animation: moveButton 1s;
+  }
+
+ @keyframes moveButton {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<button type="button" class="btn btn-primary mynewsletter" data-toggle="modal" data-target="#newsletterModal">
+  <i class="fa fa-envelope"></i> Subscribe to my newsletter
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="newsletterModal" tabindex="-1" role="dialog" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+<div class="modal fade custom-modal" id="newsletterModal" tabindex="-1" role="dialog" aria-labelledby="newsletterModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="newsletterModalLabel">Newsletter signup</h5>
+      </div>
+      <div class="modal-body">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
-      <div class="modal-body">
         {% include mailjet_embedded.html %}
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
+</div>
 </div>
