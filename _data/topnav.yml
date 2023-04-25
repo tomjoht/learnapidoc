@@ -9,6 +9,8 @@ navbar_singleitems:
     url: docapis_about_the_author.html
   - title: Contact
     url: contact.html
+  - title: Newsletter
+    url: newsletter.html
   - title: PDF and eBook formats
     url: docapis_formats.html
 

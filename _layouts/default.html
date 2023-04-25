@@ -197,6 +197,8 @@ Last updated: {{page.last-modified | date: "%b %d, %Y" }} <a class="noCrossRef" 
 {% if page.map %}{% assign mapStep = page.map.step %}{% assign mapDefinition = page.map.definition %}{% include workflow_map.html step=mapStep map=mapDefinition %}{% endif %}
 
                 {{content}}
+
+{% include mailjet_embedded.html %}
                 
                 <div class="donateButton">
                 {% include coffee_button.html %}
@@ -228,7 +230,7 @@ Last updated: {{page.last-modified | date: "%b %d, %Y" }} <a class="noCrossRef" 
 <!-- Bootstrap -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0"></script>
-
+<script type="text/javascript" src="/learnapidoc/assets/js/pas-nc-embedded-v1.js"></script>
 <script>
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
