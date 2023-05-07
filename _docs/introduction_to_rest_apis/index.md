@@ -162,7 +162,7 @@ One of the challenges in any technical course is ensuring the content stays up t
 
 ## Stay updated
 
-If you're following this course, you most likely want to learn more about APIs. I publish regular articles that talk about APIs and strategies for documenting them. You can stay updated about these posts by [subscribing to my free newsletter](https://tinyletter.com/tomjoht). My newsletter (send 2-3 times a month) contains excerpts of new pages added to this API course as well as the latest posts I publish on my blog, [idratherbewriting.com](https://idratherbewriting.com).
+If you're following this course, you most likely want to learn more about APIs. I publish regular articles that talk about APIs and strategies for documenting them. You can stay updated about these posts by subscribing to my free newsletter through the form below. My newsletter, branded as the I'd Rather Be Writing newsletter, helps you stay updated about everything going on in the techcomm world, with a special emphasis on API documentation, docs-as-code tools, and lately AI.
 
 ## Other resources
 
