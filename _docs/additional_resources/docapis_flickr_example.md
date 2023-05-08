@@ -68,9 +68,6 @@ The URL below the response shows the right syntax for using this method:
 https://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=APIKEY&gallery_id=66911286-72157647277042064&format=json&nojsoncallback=1
 ```
 
-{: .note}
-I have removed my API key from code samples to prevent possible abuse to my API keys. If you're following along, swap in your own API key here.
-
 If you submit the request directly in your browser using the given URL, you can see the same response but in the browser rather than the API Explorer:
 
 <img src="{{site.media}}/flickrresponseinbrowser.png" alt="Flickr response in the browser" />

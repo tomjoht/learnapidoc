@@ -41,7 +41,7 @@ To get an API key for the OpenWeatherMap API:
 
 5.  Copy the key to a place you can easily find it.
 
-(Note: It can take an hour or so for a new OpenWeatherMap API key to activate. If you have trouble with your key, use one of the keys [listed here](https://idratherbewriting.site/apikeys).)
+(Note: It can take an hour or so for a new OpenWeatherMap API key to activate.)
 
 ## Get the Aeris Weather API secret and ID {#aeris_weather_apikey}
 

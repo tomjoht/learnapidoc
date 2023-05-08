@@ -58,7 +58,7 @@ In this exercise, you'll use Postman to make a request using OpenWeatherMap's [c
     * key: `units` / value: `imperial`
     * key: `appid`/ value: &lt;insert your own API key&gt;
 
-    For the value for `appid`, use your own API key. (If you didn't [get an API key]({{site.rooturl}}docapis_get_auth_keys.html), use [one of the keys here](http://idratherbewriting.site/apikeys).) Your Postman UI should look like this:
+    For the value for `appid`, use your own API key. Your Postman UI should look like this:
 
     <img src="{{site.media}}/postmanopenweatherapi3.png" class="medium"/>
 
@@ -66,7 +66,7 @@ In this exercise, you'll use Postman to make a request using OpenWeatherMap's [c
 
     Note that many APIs pass the API key in the header rather than as a query string parameter in the request URL. (If that were the case, you would click the **Headers** tab and insert the required key-value pairs in the header. But OpenWeatherMap passes the API key as a query string parameter.)
 
-7.  Click **Send**.
+5.  Click **Send**.
 
 	  The response appears in the lower pane. For example:
 
