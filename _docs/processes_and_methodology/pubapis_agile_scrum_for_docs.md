@@ -3,7 +3,7 @@ title: "Following Scrum with documentation projects"
 permalink: pubapis_agile_scrum_for_docs.html
 course: "Documenting REST APIs"
 sidebar: docapis
-weight: 12.12
+weight: 12.2
 section: devportals
 path1: docapis_managing_doc_processes.html
 last-modified: 2019-08-23

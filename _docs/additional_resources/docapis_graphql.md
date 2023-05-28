@@ -43,7 +43,7 @@ GraphQL has a growing user-base, and it powers "hundreds of billions of API call
 
 Here are some indicators of growth I found:
 
-*   In the past 3 years, Programmable Web added [at least 46 GraphQL API](https://www.programmableweb.com/search/graphql) listings and over 100 articles mentioning the technology; some of them from large companies like Yelp, GitHub, and some from open-source products like [Rocketchat](https://rocket.chat/).
+*   In the past 3 years, Programmable Web added at least 46 GraphQL API listings and over 100 articles mentioning the technology; some of them from large companies like Yelp, GitHub, and some from open-source products like [Rocketchat](https://rocket.chat/). (Note: Programmable Web has since shut down its site.)
 *   Across the US, there are almost 70 groups on Meetup.com that have "GraphQL" in their title.
 *   Drupal has been collecting [GraphQL usage statistics](https://www.drupal.org/project/usage/graphql) for Drupal-powered sites showing an upward trend.
 

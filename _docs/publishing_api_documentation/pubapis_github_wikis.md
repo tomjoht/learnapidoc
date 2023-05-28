@@ -231,7 +231,7 @@ To clone the GitHub repo locally:
 
     Unless you [set up automatic GitHub authentication]({{site.rooturl}}pubapis_github_wikis.html#set-up-automatic-github-authentication), you will be prompted for your GitHub username and password. (Note that your username is your GitHub login ID, such as "jdoe," not your friendly name, such as "John Doe.")
 
-    When you type `git push` or `git pull` and don't specify the branch, GitHub uses the default branch from origin. The default branch on GitHub is called `master`. Thus the command actually passed is `git push origin master` (which means "push these changes to the remote origin[al] repository, in the `master` branch"). Some developers prefer to specify the repository and branch to ensure they are interacting with the right repositories and branches.
+    When you type `git push` or `git pull` and don't specify the branch, GitHub uses the default branch from origin. The default branch on GitHub is called `main`. Thus the command actually passed is `git push origin main` (which means "push these changes to the remote origin[al] repository, in the `main` branch"). Some developers prefer to specify the repository and branch to ensure they are interacting with the right repositories and branches.
 
     Your terminal window probably looks something like this:
 

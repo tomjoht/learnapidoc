@@ -48,9 +48,9 @@ As an editor/publisher, you can help the SME author by accurately identifying th
 
 If engineers and SMEs will be collaborating on some of the doc content, consider using engineering-centric tools rather than writing-centric tools.  When I first transitioned to API documentation, I had my mind set on using DITA, and I converted a large portion of my content over to it.
 
-However, as I started looking more at API documentation sites, primarily [those listed on Programmableweb.com](http://www.programmableweb.com/apis/directory), which maintains the largest directory of web APIs, I didn't find many DITA-based API doc sites. It turns out that almost none of the API doc sites listed on Programmable Web even use traditional tech comm authoring tools.
+However, as I started looking more at API documentation sites, I didn't find many DITA-based API doc sites. It turns out that almost none of the API doc sites listed on Programmable Web even use traditional tech comm authoring tools.
 
-Despite many advances with single sourcing, content re-use, conditional filtering, and other features in help authoring tools and content management systems, almost no API documentation sites (at least those listed on Programmableweb.com) use them. Why is that? Why has the development community implicitly rejected tech comm tools and their many years of evolution?
+Despite many advances with single sourcing, content re-use, conditional filtering, and other features in help authoring tools and content management systems, almost no API documentation sites use them. Why is that? Why has the development community implicitly rejected tech comm tools and their many years of evolution?
 
 Granted, there is the occasional HAT, but they're rare. And it's even rarer to find an API doc site that structures the content in DITA.
 
@@ -58,7 +58,7 @@ The short answer is that in API documentation scenarios, more engineers are writ
 
 [Andrew Davis](http://www.synergistech.com/contact_us.html), a recruiter who specializes in API documentation jobs in the Bay area, told me that specializing in docs-as-code tools is 100% more advantageous than becoming adept with DITA or some other traditionally technical-writer-oriented tooling.
 
-Davis knows the market, especially the Silicon Valley market, extremely well. Without hesitation, he urged me to pursue the static site generator route (instead of DITA). He said many small companies, especially startups, are looking for writers who can publish documentation that looks beautiful, like the many modern web outputs on Programmableweb.
+Davis knows the market, especially the Silicon Valley market, extremely well. Without hesitation, he urged me to pursue the static site generator route (instead of DITA). He said many small companies, especially startups, are looking for writers who can publish documentation that looks beautiful, like the many modern web outputs.
 
 His response, and my subsequent emphasis on static site generators, led me to understand why traditional help authoring tools aren't used often in the API doc space. To make the case even stronger, let me dive into five main reasons why tech writers use docs-as-code tools in developer documentation spaces:
 

@@ -9,7 +9,7 @@ path1: publishingapis.html
 last-modified: 2020-06-06
 ---
 
-Rather than approach the topic of publishing prescriptively, let's begin with some concrete examples and move towards the formulation of general principles. The following are more than 100 openly accessible REST APIs that you can browse as a way to look at patterns and examples. You can find many more APIs by browsing [programmableweb.com](http://programmableweb.com).
+Rather than approach the topic of publishing prescriptively, let's begin with some concrete examples and move towards the formulation of general principles. The following are more than 100 openly accessible REST APIs that you can browse as a way to look at patterns and examples.
 
 * TOC
 {:toc}
@@ -136,23 +136,13 @@ Rather than approach the topic of publishing prescriptively, let's begin with so
 114.  [Dwolla API](https://docs.dwolla.com/#introduction){: rel="nofollow"}
 
 
-{% include tip.html content="If any of the links fail, just type <i>{product} + api docs</i> into Google's search, you will likely find the company's developer doc site. Most commonly, the API docs are at developer.{company}.com." %}
-
-## Programmableweb<span>.</span>com: A directory of API doc sites on the open web
-
-For a directory of API documentation sites on the open web, see the [Programmableweb.com docs](http://www.programmableweb.com/apis/directory). You can browse thousands of web API docs in a variety of categories.
-
 {% include ads.html %}
 
-<a rel="nofollow" href="http://www.programmableweb.com/apis/directory" class="noExtIcon"><img src="{{site.media}}/programmableweb.png" alt="Programmable web directory" /></a>
+{% include tip.html content="If any of the links fail, just type <i>{product} + api docs</i> into Google's search, you will likely find the company's developer doc site. Most commonly, the API docs are at developer.{company}.com." %}
 
 {% include random_ad3.html %}
 
-Note that Programmableweb lists only open web APIs, meaning APIs that you can access on the web (which also means it's usually a REST API). They don't list the countless internal, firewalled APIs that many companies provide at a cost to paying customers. There are many more thousands of private APIs out there that most of us will never know about.
-
-
 ## <i class="fa fa-user-circle"></i> Activity: Look for common patterns in API doc sites
-
 
 In this activity, identify common patterns in API documentation sites.
 

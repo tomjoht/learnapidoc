@@ -115,10 +115,3 @@ With the [open-source project you identified](docapis_find_open_source_project.h
 3. Why did the developers choose to make the SDK available in that particular language?
 4. How extensive are the instructions for working with that SDK?
 5. Where is the code for the SDK stored and delivered? In GitHub? In a separate downloadable zip file?
-
-{% comment %}
-roll in content from here: https://blog.apimatic.io/how-to-create-sdks-for-your-apis-in-less-than-a-minute-bc90ae1ade99
-https://www.information-age.com/managing-sdks-api-platform-123467638/
-https://www.kairos.com/blog/what-s-the-difference-between-an-api-and-a-sdk
-https://www.programmableweb.com/news/why-api-providers-should-offer-sdks/analysis/2016/02/24
-{% endcomment %}

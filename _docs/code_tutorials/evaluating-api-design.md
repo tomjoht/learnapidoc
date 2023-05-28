@@ -120,7 +120,7 @@ Awareness and alignment with industry conventions is why I so frequently include
 
 > ... APIs have to be consistent with the rest of the world. There are common practices&mdash;standards, if you will&mdash;that you can use. Not only does following these make your APIs predictable for people who have never used any of your APIs before, thereby enhancing your APIs interoperability with the rest of the world, but it also makes your API designer’s job easier.
 
-Look for top APIs from the big tech companies for examples. Stripe, Twilio, Twitter, GitHub, Microsoft, Facebook, Google, and other sites (which you can browse on [programmableweb.com](https://www.programmableweb.com/)) provide good examples of how to approach and organize API docs. Compare your company's approach to that in several of these common API doc sites.
+Look for top APIs from the big tech companies for examples. Stripe, Twilio, Twitter, GitHub, Microsoft, Facebook, Google, and other sites provide good examples of how to approach and organize API docs. Compare your company's approach to that in several of these common API doc sites.
 
 ### Consult Your API style guide
 

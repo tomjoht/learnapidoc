@@ -2,7 +2,7 @@
 title: Managing SDK releases
 permalink: docapis_managing_sdk_releases.html
 course: "Documenting REST APIs"
-weight: 12.4
+weight: 12.5
 sidebar: docapis
 section: devportals
 path1: docapis_managing_doc_processes.html

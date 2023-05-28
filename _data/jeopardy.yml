@@ -85,6 +85,3 @@ list:
 
 - answer: A parameter that appears directly in the resource URL (before any query strings).
   question: What is a header parameter?
-
-- answer: A website that lists and describes thousands of web APIs.
-  question: What is programmableweb.com?

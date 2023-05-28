@@ -2,7 +2,7 @@
 title: Managing large documentation projects
 permalink: docapis_managing_doc_projects.html
 course: "Documenting REST APIs"
-weight: 12.2
+weight: 12.3
 sidebar: docapis
 section: devportals
 path1: docapis_managing_doc_processes.html

@@ -69,7 +69,6 @@ To find an open-source project with API doc needs:
     * [Code Triage](https://www.codetriage.com/)
     * [Changelog](https://changelog.com/)
     * [24-hour Pull Requests](https://24pullrequests.com)
-    * [Programmableweb.com API directory](https://www.programmableweb.com/category/all/apis)
 
     {% include note.html content="You could spend a long time evaluating and deciding on open-source projects. For this activity, it's okay if you focus on a project that looks only mildly interesting. You don't need to commit to it. You can always change it later." %}
 

@@ -2,7 +2,7 @@
 title: Managing content from external contributors
 permalink: docapis_processes_for_external_contributors.html
 course: "Documenting REST APIs"
-weight: 12.9
+weight: 12.91
 sidebar: docapis
 section: devportals
 path1: docapis_managing_doc_processes.html

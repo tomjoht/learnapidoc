@@ -81,7 +81,7 @@ five years.
 
 API development is clearly an area that is somewhat new for many companies, and the directions, methods, and other paths through this new territory aren't clear. In fact, *The State of API 2019* report notes that companies are resoundingly asking for more standardization in this space.
 
-[Programmableweb.com](https://programmableweb.com) charts and tracks the number of web APIs added to their directory. Programmableweb says, "Since January of 2014, an average of more than 2,000 APIs have been added per year" ([Research Shows Interest in Providing APIs Still High](https://www.programmableweb.com/news/research-shows-interest-providing-apis-still-high/research/2018/02/23)).
+Programmableweb.com was a site that charted and tracked the number of web APIs added to their directory. Programmableweb said, "Since January of 2014, an average of more than 2,000 APIs have been added per year" (Note: Programmableweb.com has since shut down.)
 
 <figure><a target="_blank" class="noExtIcon" href="https://www.programmableweb.com/news/research-shows-interest-providing-apis-still-high/research/2018/02/23"><img class="docimage" src="{{site.media}}/growthinrestapis.png" alt="The phenomenal growth in web APIs" /></a><figcaption>The phenomenal growth in web APIs</figcaption></figure>
 
@@ -117,7 +117,7 @@ An even earlier survey conducted by Programmableweb in 2013 (which included 250 
 
 <figure><a target="_blank" class="noExtIcon" href="http://www.programmableweb.com/news/api-consumers-want-reliability-documentation-and-community/2013/01/07"><img class="docimage medium" src="{{site.media}}/progwebsurvey2.png" alt="Programmableweb survey" /></a><figcaption>Programmableweb survey showing that complete and accurate documentation is the most important factor for developers</figcaption></figure>
 
-John Musser, one of the founders of Programmableweb.com, emphasizes the importance of documentation in his presentations. In [10 reasons why developers hate your API](https://www.infoq.com/presentations/API-design-mistakes), he says the number one reason developers hate your API is because "Your documentation sucks."
+John Musser, one of the founders of Programmableweb.com (a site that's now retired), emphasizes the importance of documentation in his presentations. In [10 reasons why developers hate your API](https://www.infoq.com/presentations/API-design-mistakes), he says the number one reason developers hate your API is because "Your documentation sucks."
 
 <figure><a target="_blank" class="noExtIcon" href="http://www.slideshare.net/jmusser/ten-reasons-developershateyourapi"><img class="docimage medium" src="{{site.media}}/yourdocsucks.png" alt="APIs often fail because the doc fails the developers" /></a><figcaption>APIs often fail because the doc fails the developers</figcaption></figure>
 

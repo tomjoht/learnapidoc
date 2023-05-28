@@ -35,11 +35,11 @@ In other words, when developers see code, it's the equivalent of seeing a task-b
 
 ## Don't just provide reference docs
 
-Sometimes engineers want to avoid including code samples in API docs because they feel the endpoint reference documentation contains all the information developers need and stands on its own. However, this view is often shortsighted. In an article on the Programmable Web called [The Six Pillars of Complete Developer Documentation](https://www.programmableweb.com/news/six-pillars-complete-developer-documentation/2011/09/12), the authors explain:
+Sometimes engineers want to avoid including code samples in API docs because they feel the endpoint reference documentation contains all the information developers need and stands on its own. However, this view is often shortsighted. In an article on the Programmable Web called "The Six Pillars of Complete Developer Documentation," the authors explain:
 
-> While a developer’s guide should walk a developer through the basic usage of an API and its functionality, it can’t cover every possible use of that API in a coherent way. That is where articles and tutorials come in, to teach developers tangential or specialized uses of an API, like combining it with another service, framework, or API.
+> While a developer’s guide should walk a developer through the basic usage of an API and its functionality, it can’t cover every possible use of that API in a coherent way. That is where articles and tutorials come in, to teach developers tangential or specialized uses of an API, like combining it with another service, framework, or API. (Note: Programmable Web has since shut down.)
 
-In other words, the articles and tutorials complement the reference documentation to provide complete instruction. Code samples that show how to use the various endpoints to achieve a goal occupy an important space in your user guide.
+In other words, the articles and tutorials complement the reference documentation to provide complete instruction. Code samples that show how to use the various endpoints to achieve a goal occupy an important space in your user guide. 
 
 Additionally, even if including code samples, the level of detail and explanation is also somewhat debatable. Many developers assume that the developer audience has a skill set similar to their own, without recognizing different developer specializations. And so they will add a code sample but not give any explanation about it. Internal developers will often say, "If the user doesn't understand this code, he or she shouldn't be using our API."
 
@@ -242,7 +242,3 @@ With the [open-source project you identified](docapis_find_open_source_project.h
 3. Are there comments within the blocks of code?
 4. How do the conceptual explanations point to specific lines of code? Is the explanation given before, during, or after the blocks of code?
 5. Do the code explanations focus more on the "why" (the decisions behind the code) or the "what" (the mechanics of the code)?
-
-{% comment %}
-integrate the info from here or link to it: https://www.programmableweb.com/news/how-to-write-effective-api-sample-code/how-to/2014/12/02
-{% endcomment %}

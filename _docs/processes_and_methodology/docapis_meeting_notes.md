@@ -2,7 +2,7 @@
 title: Broadcasting your meeting notes to influence a wider audience
 permalink: docapis_meeting_notes.html
 course: "Documenting REST APIs"
-weight: 12.61
+weight: 12.94
 sidebar: docapis
 section: devportals
 path1: docapis_managing_doc_processes.html

@@ -10,7 +10,7 @@ path1: resources.html
 last-modified: 2018-12-29
 ---
 
-Use the [Eventbrite API](https://www.eventbrite.com/developer/v3/) to get the event title and description of an event.
+Use the [Eventbrite API](https://www.eventbrite.com/platform/api) to get the event title and description of an event.
 
 {% if site.format == "web" %}
 * TOC
@@ -25,7 +25,7 @@ Eventbrite is an event management tool, and you can interact with it through an 
 
 ## 1. Get an OAuth token
 
-Eventbrite uses the [OAuth method for authorization](docapis_more_about_authorization.html#oauth). To make any kind of requests, you'll need an OAuth token, which you can learn about in [Eventbrite's Authentication docs](https://www.eventbrite.com/developer/v3/api_overview/authentication/).
+Eventbrite uses the [OAuth method for authorization](docapis_more_about_authorization.html#oauth). To make any kind of requests, you'll need an OAuth token, which you can learn about in [Eventbrite's Authentication docs](https://www.eventbrite.com/platform/api#/introduction/authentication).
 
 {% include image_ad_right.html %}
 
