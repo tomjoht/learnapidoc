@@ -225,7 +225,7 @@ For more details on using the Python simple server, see [How do you set up a loc
 
 By default, SwaggerUI has the Petstore OpenAPI document configured in the `url` parameter in the `index.html` file. You need to swap in your local file instead.
 
-1.  Download the following OpenAPI document (right-click the link and save the YAML file to your desktop.): [https://idratherbewriting.com/learnapidoc/docs/openapi_spec_and_generated_ref_docs/openapi_openweathermap.yml](https://idratherbewriting.com/learnapidoc/docs/openapi_spec_and_generated_ref_docs/openapi_openweathermap.yml)
+1.  Download the [this OpenAPI document](https://idratherbewriting.com/learnapidoc/docs/openapi_spec_and_generated_ref_docs/openapi_openweathermap.yml) (right-click the link and save the YAML file to your desktop.).
 
 2.  Drag your OpenAPI specification file, `openapi_openweathermap.yml`, into the `dist` folder. Your file structure should look as follows:
 
@@ -247,24 +247,24 @@ By default, SwaggerUI has the Petstore OpenAPI document configured in the `url` 
     │   └── <span class="red">openapi_openweathermap.yml</span>
     </pre>
 
-4.  Inside your `dist` folder, open `swagger-initializer.js` in a text editor such as [Sublime Text](https://www.sublimetext.com/).
-5.  Look for the following code:
+3.  Inside your `dist` folder, open `swagger-initializer.js` in a text editor such as [Sublime Text](https://www.sublimetext.com/).
+4.  Look for the following code:
 
     ```js
     url: "http://petstore.swagger.io/v2/swagger.json",
     ```
 
-6.  Change the `url` value from `http://petstore.swagger.io/v2/swagger.json` to a relative path to your YAML file, and then save the file. For example:
+5.  Change the `url` value from `http://petstore.swagger.io/v2/swagger.json` to a relative path to your YAML file, and then save the file. For example:
 
     ```js
     url: "openapi_openweathermap.yml",
     ```
 
-7.  View the `index.html` file locally in your browser using the Python simple server. For example, go to `http://0.0.0.0:8000/` or `http://0.0.0.0:8000/index.html`.
+6.  View the `index.html` file locally in your browser using the Python simple server. For example, go to `http://0.0.0.0:8000/` or `http://0.0.0.0:8000/index.html`.
 
     If you go to the file path, such as `file:///Users/tomjoht/Downloads/dist/index.html`, you might see a message that says "Failed to load API definition" note in the JavaScript Console that says "URL scheme must be "http" or "https" for CORS request." The SimpleServer simulates this http or https.
 
-8.  To stop the Python simpler server, press **Ctrl+C** in your terminal or command prompt.
+7.  To stop the Python simpler server, press **Ctrl+C** in your terminal or command prompt.
 
 
 {% include image_ad_right.html %}
@@ -336,4 +336,4 @@ Since the Swagger UI site is responsive, it resizes well to fit into most any sp
 
 {% include glossary_limited.html file="glossary" %}
 
-For more terms, see the [Glossary](http://localhost:4000/learnapidoc/api-glossary.html).
+For more terms, see the [Glossary](api-glossary.html).
