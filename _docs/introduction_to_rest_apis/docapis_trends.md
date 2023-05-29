@@ -75,9 +75,9 @@ To gather data about trends in developer docs, I decided to create my own survey
 
 A total of 405 people completed the entire survey. Completing the survey means that after the 50th question, they clicked Submit. However, 855 started the survey, and 337 dropped out somewhere along the way. I allowed partial responses even if users dropped out along the way. So the actual number of respondents varied between 405 and 855, with some questions receiving more answers than others. About 37% of the respondents were in the US, about 15% in India, 5% in Germany, 5% in the UK, and smaller percentages from other countries.
 
-<a class="noExtIcon" href="https://idratherbewriting.site/devdoctrendsreport"><img style="border: 1px solid #dedede" src="{{site.media}}/trends-participant-statistics.png" alt="Survey summary" /></a>
+<a class="noExtIcon" href="https://www.questionpro.com/t/PGhS9ZgCFE"><img style="border: 1px solid #dedede" src="{{site.media}}/trends-participant-statistics.png" alt="Survey summary" /></a>
 
-You can browse the results of the survey directly at [https://idratherbewriting.site/devdoctrendsreport](https://idratherbewriting.site/devdoctrendsreport).
+You can browse the results of the survey directly at [https://www.questionpro.com/t/PGhS9ZgCFE](https://www.questionpro.com/t/PGhS9ZgCFE).
 
 {% include ads.html %}
 
@@ -124,7 +124,7 @@ For examples of how multiple tools are used together in different combinations a
 
 Overall, the survey results confirmed the predominance of the docs-as-code approach in the dev docs space. If you're working with developer docs, this approach is trending. However, there's also a decent amount of wikis, Oxygen XML, and MadCap Flare use, probably among those groups that have more robust localization and PDF requirements.
 
-To read more thoughts about how source formats affect not just how we write but *what* we write, see my blog post, [*How* you write influences *what* you write — interpreting trends through movements from PDF to web, DITA, wikis, CCMSs, and docs-as-code](https://idratherbewriting.site/howinfluenceswhat).
+To read more thoughts about how source formats affect not just how we write but *what* we write, see my blog post, [*How* you write influences *what* you write — interpreting trends through movements from PDF to web, DITA, wikis, CCMSs, and docs-as-code](https://idratherbewriting.com/blog/how-you-write-influences-what-you-write/).
 
 ### 2. Formats and output responses {#formats}
 
@@ -280,7 +280,7 @@ Tom Johnson is a senior technical writer for Amazon in Sunnyvale, California. He
 * Johnson, Tom. [API the Docs recording: How Trends in API Documentation Differ from other Tech Comm Trends](https://idratherbewriting.com/blog/api-the-docs-virtual-series-fifth-edition-api-doc-trends-design/)
 * Johnson, Tom. [2020 Developer documentation survey](https://idratherbewriting.com/blog/developer-documentation-survey-2020).  Idratherbewriting.com. Dec 31, 2019.
 * Johnson, Tom. [Developer Documentation Trends — Survey Results](https://idratherbewriting.com/learnapidoc/docapis_trends.html)
-* Johnson, Tom. [*How* you write influences *what* you write — interpreting trends through movements from PDF to web, DITA, wikis, CCMSs, and docs-as-code](https://idratherbewriting.site/howinfluenceswhat). Idratherbewriting.com. Feb 20, 2020.
+* Johnson, Tom. [*How* you write influences *what* you write — interpreting trends through movements from PDF to web, DITA, wikis, CCMSs, and docs-as-code](https://idratherbewriting.com/blog/how-you-write-influences-what-you-write/). Idratherbewriting.com. Feb 20, 2020.
 * Johnson, Tom. [Integrating documentation into engineering code and workflows](https://idratherbewriting.com/2015/05/26/integrating-documentation-into-engineering-code-and-workflows/). Idratherbewriting.com. May 26, 2015.
 * Johnson, Tom. [Treat code like code and prose like prose](https://idratherbewriting.com/blog/treat-code-like-code-and-prose-like-prose/). Idratherbewriting.com. Jun 16, 2020.
 * Johnson, Tom. [API design and usability](https://idratherbewriting.com/learnapidoc/evaluating-api-design.html). Idratherbewriting.com.
