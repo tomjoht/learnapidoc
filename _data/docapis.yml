@@ -3,6 +3,7 @@ folders:
 
 - title: "I: Introduction to REST APIs"
   jurl: docapis_introtoapis.html
+  section: one
   class: first
   folderitems:
 
@@ -44,6 +45,7 @@ folders:
 
 - title: "II: Using an API like a developer"
   jurl: likeadeveloper.html
+  section: two
   folderitems:
 
   - title: "Scenario for using a weather API"
@@ -81,6 +83,7 @@ folders:
 
 - title: "III: Documenting API endpoints"
   jurl: docendpoints.html
+  section: three
   folderitems:
 
   - title: "A new endpoint to document"
@@ -115,6 +118,7 @@ folders:
 
 - title: "IV: OpenAPI spec and generated reference docs"
   jurl: restapispecifications.html
+  section: four
   folderitems:
 
   - title: "Overview of REST API specification formats"
@@ -149,6 +153,7 @@ folders:
 
 - title: "V: Step-by-step OpenAPI code tutorial"
   jurl: openapi_tutorial.html
+  section: five
   folderitems:
 
   - title: "OpenAPI tutorial using Swagger Editor and Swagger UI: Overview"
@@ -186,6 +191,7 @@ folders:
 
 - title: "VI: Testing API docs"
   jurl: testingdocs.html
+  section: six
   folderitems:
 
   - title: "Overview of testing your docs"
@@ -205,6 +211,7 @@ folders:
 
 - title: "VII: Conceptual topics in API docs"
   jurl: docconceptual.html
+  section: seven
   folderitems:
 
   - title: "API conceptual topics overview"
@@ -242,6 +249,7 @@ folders:
 
 - title: "VIII: Code tutorials"
   jurl: docapiscode.html
+  section: eight
   folderitems:
 
   - title: "Common characteristics of code tutorials"
@@ -273,6 +281,7 @@ folders:
 
 - title: "IX: The writing process"
   jurl: writing_process.html
+  section: nine
   folderitems:
 
   - title: "Overview of the writing process"
@@ -295,6 +304,7 @@ folders:
 
 - title: "X: Publishing API docs"
   jurl: publishingapis.html
+  section: ten
   folderitems:
 
   - title: "Overview for publishing API docs"
@@ -353,6 +363,7 @@ folders:
 
 - title: "XI: Thriving in the API doc space"
   jurl: jobapis.html
+  section: eleven
   folderitems:
 
   - title: "The job market for API technical writers"
@@ -372,6 +383,7 @@ folders:
 
 - title: "XII: Native library APIs"
   jurl: nativelibraryapis.html
+  section: twelve
   folderitems:
 
   - title: "Overview of native library APIs"
@@ -403,6 +415,7 @@ folders:
 
 - title: "XIII: Processes and methodology"
   jurl: docapis_managing_doc_processes.html
+  section: thirteen
   folderitems:
 
   - title: "DX content strategy with developer portals"
@@ -449,6 +462,7 @@ folders:
 
 - title: "XIV: Metrics and measurement"
   jurl: docapis_metrics_and_measurement.html
+  section: fourteen
   folderitems:
   - title: Measuring documentation quality through user feedback
     jurl: docapis_measuring_impact.html
@@ -462,11 +476,9 @@ folders:
   - title: Quantifying your progress
     jurl: docapis_metrics_quantifying_progress.html
 
-  # - title: Templates for working with metrics
-  #   jurl: docapis_metrics_templates.html
-
 - title: "XV: Additional resources"
   jurl: resources.html
+  section: fifteen
   folderitems:
 
   - title: "Documenting GraphQL APIs"
@@ -504,10 +516,3 @@ folders:
 
   - title: "API doc presentation video recordings"
     jurl: api_doc_presentations.html
-
-  #
-  # - title: API documentation survey
-  #   jurl: docapis_apidoc_survey.html
-
-  # - title: Course Reviews
-  #   jurl: docapis_course_reviews.html

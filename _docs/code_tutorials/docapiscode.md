@@ -7,9 +7,12 @@ weight: 8.0
 sidebar: docapis
 section: docapiscode
 path1: doccode.html
-last-modified: 2021-10-11
+last-modified: 2023-05-28
 ---
 
 Documenting code poses one of the most challenging tasks for technical writers, especially if the writers don't have an engineering background or familiarity with the code. Even without deeper engineering expertise, you can still document code &mdash; everything from code snippets to full-fledged sample apps. This section explores techniques and strategies for documenting code.
+
+{: .tip}
+<a href="https://s3.us-west-1.wasabisys.com/learnapidoc-outputs/docapis_seven.pdf"><i class="fas fa-file-pdf"></i> Download a PDF of this section.</a>
 
 {% include minitoc.html %}

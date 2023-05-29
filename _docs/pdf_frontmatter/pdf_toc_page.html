@@ -12,6 +12,7 @@ last-modified: 2020-11-02
 <ul id="docnavsidebar" class="docnav">
   {% assign sidebar = site.data[site.sidebar].folders %}
 {% for folder in sidebar %}
+{% if folder.section == site.section %}
 {% unless folder.type == "web" %}
 <li class="sectionHead"><a href="{{folder.jurl | remove: "/"}}">{{ folder.title }}</a>
     <ul>
@@ -52,6 +53,7 @@ last-modified: 2020-11-02
         {% endfor %}
     </ul>
     {% endunless %}
+    {% endif %}
     {% endfor %}
 
 </li>

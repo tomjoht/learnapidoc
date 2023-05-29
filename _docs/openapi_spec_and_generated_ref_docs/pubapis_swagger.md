@@ -328,7 +328,7 @@ If you need help, the [Swagger Google Group](https://groups.google.com/forum/#!f
 In addition to publishing your Swagger UI output as a standalone site, you can also embed the Swagger file within an existing site. See the following:
 
 * [Standalone Swagger UI Demo](https://idratherbewriting.com/learnapidoc/assets/files/swagger/)
-* [Embedded Swagger UI Demo](pubapis_swagger_demo.html)
+* [Embedded Swagger UI Demo](pubapis_swagger_demo.md)
 
 Since the Swagger UI site is responsive, it resizes well to fit into most any space. Even so, embedding Swagger into an existing site still looks like a website within a website.
 

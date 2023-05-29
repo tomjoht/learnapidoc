@@ -8,6 +8,7 @@ layout: null
 {{site.baseurl}}/pdf_toc_page.html
 
 {% for folder in sidebar %}
+{% if folder.section == site.section %}
 {% unless folder.type == "web" %}
 {{ folder.jurl | prepend: "/" | prepend: site.baseurl }}
 {% for folderitem in folder.folderitems %}
@@ -46,4 +47,5 @@ layout: null
 {% endfor %}
 {% endfor %}
 {% endunless %}
+{% endif %}
 {% endfor %}

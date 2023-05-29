@@ -6,66 +6,52 @@ sidebar: docapis
 section: introtoapis
 path1: docapis_introtoapis.html
 weight: 1.21
-last-modified: 2022-02-08
+last-modified: 2023-05-28
 ---
 
-<figure><a class="noCrossRef" href="https://idbwrtng.com/learnapidoc-pdf"><img class="tiny" style="float: right; border: 4px solid #dedede; margin-left: 10px;" src="{{site.media}}/ebook_cover.svg" alt="Documenting APIs ebook - You can read this course content as an ebook or PDF." /></a></figure>
 
-You can read this content in several alternative formats:
+In addition to reading on the web, you can also can read this content in PDF. 
 
-{: style="margin-left: 20px"}
-&ndash; <a href="https://idbwrtng.com/learnapidoc-pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a> (last-generated: {{page.last-modified}}) ~ 900 pages
+<ul class="pdfList">
+<li><a class="noCrossRef" href="https://s3.us-west-1.wasabisys.com/learnapidoc-outputs/docapis_one.pdf"><i class="fa fa-file-pdf-o"></i> I: Introduction to REST APIs</a></li>
 
-{: style="margin-left: 20px"}
-&ndash; <a href="https://idbwrtng.com/learnapidoc-mobi"><i class="fa fa-book" aria-hidden="true"></i> Kindle (MOBI)</a> (last-generated: {{page.last-modified}}) ~250 MB
+<li><a class="noCrossRef" href="https://s3.us-west-1.wasabisys.com/learnapidoc-outputs/docapis_two.pdf"><i class="fa fa-file-pdf-o"></i> II: Using an API like a developer</a></li>
 
-{: style="margin-left: 20px"}
-&ndash; <a href="https://idbwrtng.com/learnapidoc-epub"><i class="fa fa-file-text" aria-hidden="true"></i> EPUB</a> (last-generated: {{page.last-modified}}) ~150 MB
+<li><a class="noCrossRef" href="https://s3.us-west-1.wasabisys.com/learnapidoc-outputs/docapis_three.pdf"><i class="fa fa-file-pdf-o"></i> III: Documenting API endpoints</a></li>
 
-I periodically regenerate these formats, so the content should more or less be the same across web, PDF, Kindle, and EPUB.
+<li><a class="noCrossRef" href="https://s3.us-west-1.wasabisys.com/learnapidoc-outputs/docapis_four.pdf"><i class="fa fa-file-pdf-o"></i> IV: OpenAPI spec and generated reference docs</a></li>
 
-{: .note}
-In the future, I plan to break this content up into smaller outputs. For now, though, the PDF and eBooks are massive in length.
+<li><a class="noCrossRef" href="https://s3.us-west-1.wasabisys.com/learnapidoc-outputs/docapis_five.pdf"><i class="fa fa-file-pdf-o"></i> V: Step-by-step OpenAPI code tutorial</a></li>
 
-## PDF
+<li><a class="noCrossRef" href="https://s3.us-west-1.wasabisys.com/learnapidoc-outputs/docapis_six.pdf"><i class="fa fa-file-pdf-o"></i> VI: Testing API docs</a></li>
 
-To read the content as PDF, I recommended that you either read the PDF in [Adobe Acrobat Reader DC](https://get.adobe.com/reader/) (or similar) so that you can highlight and annotate the content, or that you print only specific sections at a time, defining the page ranges. Otherwise, this 900+ page PDF will consume an entire tree.
+<li><a class="noCrossRef" href="https://s3.us-west-1.wasabisys.com/learnapidoc-outputs/docapis_seven.pdf"><i class="fa fa-file-pdf-o"></i> VII: Conceptual topics in API docs</a></li>
 
-{% include ads.html %}
+<li><a class="noCrossRef" href="https://s3.us-west-1.wasabisys.com/learnapidoc-outputs/docapis_eight.pdf"><i class="fa fa-file-pdf-o"></i> VIII: Code tutorials</a></li>
 
-## Kindle
+<li><a class="noCrossRef" href="https://s3.us-west-1.wasabisys.com/learnapidoc-outputs/docapis_nine.pdf"><i class="fa fa-file-pdf-o"></i> IX: The writing process</a></li>
 
-To read the content on Kindle device:
+<li><a class="noCrossRef" href="https://s3.us-west-1.wasabisys.com/learnapidoc-outputs/docapis_ten.pdf"><i class="fa fa-file-pdf-o"></i> X: Publishing API docs</a></li>
 
-1.  Click the **Kindle (MOBI)** file above. When you do, the MOBI file downloads to your computer.
-2.  Connect your Kindle device to your computer with a USB cord. Your Kindle device will indicate that it's in USB Drive Mode.
-3.  In Finder (Mac) or Explorer (Windows), look for a new Kindle drive icon to appear, and open it.
-4.  Drag the `docapis.mobi` file into the `Documents` folder on the Kindle drive. Wait for the file to transfer.
-5.  Disconnect the USB cord (on a Mac, eject the Kindle drive first). Then look at the list of books in your Kindle's "Your Library." You will see "Documenting APIs" as a new title.
+<li><a class="noCrossRef" href="https://s3.us-west-1.wasabisys.com/learnapidoc-outputs/docapis_eleven.pdf"><i class="fa fa-file-pdf-o"></i> XI: Thriving in the API doc space</a></li>
 
-    On your Kindle, click Contents button on the Kindle nav bar to browse through the sections at any time.
+<li><a class="noCrossRef" href="https://s3.us-west-1.wasabisys.com/learnapidoc-outputs/docapis_twelve.pdf"><i class="fa fa-file-pdf-o"></i> XII: Native library APIs</a></li>
 
-To update an existing version of the book you already put on Kindle, plug in your USB cord, open your `Documents` folder, delete the `docapis.mobi` file and companion directory, then repeat the above steps.
+<li><a class="noCrossRef" href="https://s3.us-west-1.wasabisys.com/learnapidoc-outputs/docapis_thirteen.pdf"><i class="fa fa-file-pdf-o"></i> XIII: Processes and methodology</a></li>
 
-{% include random_ad4.html %}
+<li><a class="noCrossRef" href="https://s3.us-west-1.wasabisys.com/learnapidoc-outputs/docapis_fourteen.pdf"><i class="fa fa-file-pdf-o"></i> XIV: Metrics and measurement</a></li>
 
-You can also read the content on a Kindle viewer on your computer. The content added to your physical device automatically syncs with the computer app.
+<li><a class="noCrossRef" href="https://s3.us-west-1.wasabisys.com/learnapidoc-outputs/docapis_fifteen.pdf"><i class="fa fa-file-pdf-o"></i> XV: Additional resources</a></li>
 
-(Note: The ebook version isn't on Amazon.com yet, so you have to download the file and transfer it manually to your device.)
+</ul>
 
-{% include random_ad3.html %}
 
-## EPUB
+<style>
+ul.pdfList li {
+list-style-type: none;
+margin-left: -15px;
+}
 
-For other e-readers that require EPUB format, download the EPUB file above.
+i.fa {margin-right: 6px;}
 
-{% include image_ad_right.html %}
-
-## Other formats
-
-If you need the content in another format, download the MOBI file and then convert it to a plethora of other formats through [Calibre](https://calibre-ebook.com/).
-
-{: .note}
-If you spot formatting issues, let me know. It's hard for me to spot check 900 pages of content across multiple mediums. If a screenshot is too large or there's weird spacing or other issues, [drop me a note](https://idratherbewriting.com/learnapidoc/contact){: .noCrossRef}.
-
-{% include random_ad2.html %}
+</style>

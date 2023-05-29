@@ -11,12 +11,8 @@ navbar_singleitems:
     url: contact.html
   - title: Newsletter
     url: newsletter.html
-  - title: PDF and eBook formats
+  - title: Download PDF
     url: docapis_formats.html
-
-  # - title: PDFs
-  #   url: products.html
-
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:

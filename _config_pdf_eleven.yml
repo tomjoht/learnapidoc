@@ -1,7 +1,8 @@
+section: eleven
 title: Documenting REST APIs
-subtitle: A guide for technical writers and engineers working with APIs
+subtitle: "XI: Thriving in the API doc space"
 media: /Users/tomjoht/projects/learnapidoc/images
-cover: true
+# cover: true
 # if cover is set to true, the title and subtitle aren't used. instead, the cover_image is used instead.
 cover_image: images/ebook_cover.png
 
@@ -56,7 +57,7 @@ defaults:
       published: true
   -
     scope:
-      path: _docs/metrics_and_measurement
+      path: _docs/thriving_in_the_api_doc_space
       type: docs
     values:
       layout: printpdf
