@@ -1,6 +1,6 @@
 ---
 title: Instructions
-permalink: instructions.html
+permalink: kindle_instructions.html
 published: false
 ---
 
