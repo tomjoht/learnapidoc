@@ -21,7 +21,7 @@ Developer documentation tends to include a lot of code samples. These code sampl
 
 Code samples play an essential role in helping developers use an API. Code is literally another language, and when users who speak that language see it, the code communicates with them in powerful ways that non-code text (however descriptive it is) can't achieve.
 
-<figure><img class="docimage medium border" src="{{site.media}}/{% if site.format == "kindle" %}nonref_codetutorials.png{% else %}nonref_codetutorials.svg{% endif %}" alt="Code tutorials" /><figcaption>Code is in another language, so as much as you might try to describe the communication in this other language through text, it often falls short. When developers see code, they can often read the code and understand it natively.</figcaption></figure>
+<figure><img class="docimage medium border" src="{{site.media}}/nonref_codetutorials.svg" alt="Code tutorials" /><figcaption>Code is in another language, so as much as you might try to describe the communication in this other language through text, it often falls short. When developers see code, they can often read the code and understand it natively.</figcaption></figure>
 
 In user testing that Twilio did with their documentation, they found that pages that started more quickly with code samples performed better with users.
 
@@ -161,7 +161,6 @@ Earlier in the course, we walked through [each element of reference documentatio
 
 <p>The following code samples show how to use the <code>surfreport</code> endpoint to get the surf height for a specific beach.</p>
 
-{% if site.format == "web" or site.format == "pdf" %}
 {% highlight javascript %}
 <!DOCTYPE html>
 <head>
@@ -188,34 +187,6 @@ $.ajax(settings).done(function (response) {
 </body>
 </html>
 {% endhighlight %}
-
-{% elsif site.format == "kindle" %}
-
-<pre>
-&lt;!DOCTYPE html&gt;
-&lt;head&gt;
-&lt;script src=&quot;http://code.jquery.com/jquery-2.1.1.min.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;
-var settings = {
-  &quot;async&quot;: true,
-  &quot;crossDomain&quot;: true,
-  &quot;url&quot;: &quot;https://api.openweathermap.org/surfreport/25?days=1&amp;units=metric&quot;,
-  &quot;method&quot;: &quot;GET&quot;
-}
-
-$.ajax(settings).done(function (response) {
-  console.log(response);
-  $(&quot;#surfheight&quot;).append(response.query.results.channel.surf.height);
-});
-&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;h2&gt;Surf Height&lt;/h2&gt;
-&lt;div id=&quot;surfheight&quot;&gt;&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</pre>
-{% endif %}
 
 <p>In this example, the <code>ajax</code> method from jQuery is used because it allows us to load a remote resource asynchronously.</p>
 

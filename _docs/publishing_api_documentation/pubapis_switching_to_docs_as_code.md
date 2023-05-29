@@ -266,7 +266,7 @@ It was also republished in Anne Gentle's [Docs Like Code: Case Studies](https://
 
 I also [gave a presentation on Docs-as-code tools and workflows](https://idratherbewriting.com/2018/03/09/docs-as-code-tools-and-workflows-denver-presentation/) to the STC Rocky Mountain and WTD Denver group.
 
-{% if site.format == "kindle" or site.format == "pdf" %}
+{% if site.format == "print" %}
 
 {: .note}
 *Note: This content doesn't embed well in print because it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/pubapis_overview.html] to view the content.*

@@ -43,7 +43,7 @@ The tutorial here includes a workflow map to help guide and orient you each step
 
 <div style="margin-top:15px; margin-bottom: 15px;">
 {% include workflow_map.html step="99" map="content/reference_doc_map.html"  %}
-{% if site.format == "pdf" or site.format == "kindle" %}
+{% if site.format == "print" %}
 <a class="noExtIcon" href="docapis_resource_descriptions.html"><img src="{{site.media}}/openapistep1.png"/></a>
 {% endif %}
 </div>

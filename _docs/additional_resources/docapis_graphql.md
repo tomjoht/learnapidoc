@@ -49,7 +49,7 @@ Here are some indicators of growth I found:
 
 And, take a look at Google Trends:
 
-{% if site.format == "kindle" or site.format == "pdf" %}
+{% if site.format == "print" %}
 *Note: This content doesn't embed well in print because it contains JavaScript. Please go to [https://idratherbewriting.com/learnapidoc/docapis_graphql.html] to view the content.*
 {% endif %}
 
@@ -104,7 +104,7 @@ The GraphQL foundation claims that their unique approach allows developers to de
 
 Furthermore, [Howtographql.com](https://www.howtographql.com/basics/1-graphql-is-the-better-rest/) claims that "REST APIs have shown to be too inflexible to keep up with the rapidly changing requirements of the clients that access them (and ...) GraphQL (…) solves many of the shortcomings and inefficiencies that developers experience when interacting with REST APIs." That same tutorial site features a video showing examples of these points:
 
-{% if site.format == "kindle" or site.format == "pdf" %}
+{% if site.format == "print" %}
 *Note: This content doesn't embed well in print because it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/docapis_graphql.html] to view the content.*
 {% endif %}
 
@@ -162,7 +162,7 @@ This leads to Chris’s conclusion that tech writers are still needed here if on
 
 James Scott, another technical writer, also sees a role for technical writers in the world of GraphQL. You can see his concise and very helpful talk here:
 
-{% if site.format == "kindle" or site.format == "pdf" %}
+{% if site.format == "print" %}
 *Note: This content doesn't embed well in print because it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/docapis_graphql.html] to view the content.*
 {% endif %}
 
@@ -188,7 +188,7 @@ My guess is that maybe the movement is [driven by developers who decide to use i
 
 However, tech writers that work with it do exist! Here, for example, is a technical writer, Andrew Johnston, at Shopify talking about their process of documenting a GraphQL API at Shopify:
 
-{% if site.format == "kindle" or site.format == "pdf" %}
+{% if site.format == "print" %}
 *Note: This content doesn't embed well in print because it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/docapis_graphql.html] to view the content.*
 {% endif %}
 

@@ -16,7 +16,7 @@ last-modified: 2012-06-03
 
 {% include random_ad4.html %}
 
-{% if site.format == "pdf" or site.format == "kindle" %}
+{% if site.format == "print" %}
 <p>This page can only be viewed online through a browser on your computer. Go to https://idratherbewriting.com/learnapidoc/pubapis_swagger_demo.html to view it.</p>
 {% else %}
 

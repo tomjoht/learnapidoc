@@ -14,7 +14,7 @@ I've given numerous presentations and workshops on API documentation, and I've r
 * TOC
 {:toc}
 
-{% if site.format == "kindle" or site.format == "pdf" %}
+{% if site.format == "print" %}
 *Note: This content doesn't embed well in print because it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/docapis_course_videos.html] to view the content.*
 {% endif %}
 
@@ -22,7 +22,7 @@ I've given numerous presentations and workshops on API documentation, and I've r
 
 ## One-hour crash course {#crashcourse}
 
-If you want a condensed version of videos 1-5, see this one-hour version that condenses much of the information from the other videos into one. I recorded this presentation at the [STC Summit 2019](https://summit.stc.org) in Denver.
+If you want a condensed version of videos 1-5, see this one-hour version that condenses much of the information from the other videos into one. I recorded this presentation at the [STC Summit 2019</i>https://summit.stc.org) in Denver.
 
 <iframe width="640" height="385" src="https://www.youtube.com/embed/5pzhtrrtkXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -34,7 +34,7 @@ I recorded part of a more recent API workshop held in Los Angeles here:
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/UOc2g-yRFxw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-See the [event details](https://idratherbewriting.com/blog/upcoming-webinar-trends-api-docs-differ-from-other-trends/) for more info.
+See the [event details</i>https://idratherbewriting.com/blog/upcoming-webinar-trends-api-docs-differ-from-other-trends/) for more info.
 
 {% include image_ad_left.html %}
 
@@ -99,9 +99,9 @@ Video 5 of 5:
 
 If you'd like to see more videos, see the following:
 
-* [Menlo Park API workshop video recording](menlo_park_workshop_recording.html) (November 8, 2018)
-* [Denver API workshop video recording](denver_workshop_recording.html) (March 10, 2018)
-* [API doc presentation video recordings](api_doc_presentations.html) (misc. dates)
+* [Menlo Park API workshop video recording</i>menlo_park_workshop_recording.html) (November 8, 2018)
+* [Denver API workshop video recording</i>denver_workshop_recording.html) (March 10, 2018)
+* [API doc presentation video recordings</i>api_doc_presentations.html) (misc. dates)
 
 
 {% endif %}

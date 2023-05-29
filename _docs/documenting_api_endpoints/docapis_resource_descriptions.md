@@ -10,7 +10,7 @@ last-modified: 2020-04-06
 ---
 
 {% include workflow_map.html step="1" map="content/reference_doc_map.html"  %}
-{% if site.format == "pdf" or site.format == "kindle" %}
+{% if site.format == "print" %}
 <img src="{{site.media}}/apiref1.png"/>
 {% endif %}
 

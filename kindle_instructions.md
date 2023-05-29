@@ -24,7 +24,7 @@ details:
 - config file is \_config_kindle.yml
 - this specifies and absolute path to the /images folder. otherwise the kindle gen will not show the images.
 - make sure you have the latest images from wasabi downloaded:
-- use format: kindle for targeting kindle
+- use format: print for targeting kindle
 - no tables allowed. take images of tables instead
 - tocstart.html is the beginning page that lists the chapters
 - docapis.ncx is used for the built-in navigation in kindle
@@ -72,14 +72,14 @@ use to convert mobi to epub. Register and sign in first (otherwise you exceed yo
 
 this file uses the \_config_pdf.yml. in this file, two important properties are defined:
 baseurl: /Users/tomjoht/projects/learnapidoc/\_site
-format: pdf
+format: print
 
 it builds from the local, so it's not necessary to have serve_pdf running
 
 2. see pdf/docapis.pdf
 
 - no need to swap in images for tables
-- format: pdf
+- format: print
 - css: assets/css/pdf/printstyles.css
 - css: assets/css/pdf/theme-blue.css
 - layout: printpdf.html

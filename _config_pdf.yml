@@ -9,7 +9,7 @@ sidebar: docapis
 baseurl: /Users/tomjoht/projects/learnapidoc/_site
 
 language: english
-format: pdf
+format: print
 
 destination: _site
 port: 4000

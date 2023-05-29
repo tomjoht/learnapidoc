@@ -26,31 +26,31 @@ We'll then transition into standards, tools, and specifications for REST APIs. Y
 
 In a nutshell, REST APIs (which are a type of web API) involve requests and responses, not too unlike visiting a web page. You make a request to a resource stored on a server, and the server responds with the requested information. The protocol used to transport the data is HTTP. "REST" stands for Representational State Transfer.
 
-<figure><img class="docimage large" src="{{site.media}}/{% if site.format == "kindle" %}restapi_apidoc.png{% else %}restapi_apidoc.svg{% endif %}" alt="Response and request model for REST APIs" /><figcaption>REST APIs involve requests and responses over HTTP protocol</figcaption></figure>
+<figure><img class="docimage large" src="{{site.media}}/restapi_apidoc.svg" alt="Response and request model for REST APIs" /><figcaption>REST APIs involve requests and responses over HTTP protocol</figcaption></figure>
 
 I dive more into the principles of REST in [What is a REST API?](docapis_what_is_a_rest_api.html) In your REST API documentation, you describe the various endpoints available, their methods, parameters, and other details, and you also document sample responses from the endpoints.
 
 ## From practice to documentation
 
-In this course, after you practice [using an API like a developer](likeadeveloper.html), you'll then shift perspectives and "become a technical writer" tasked with [documenting a new endpoint](docendpoints.html) that engineers added to an API. As a technical writer, you'll tackle each element of a reference topic in REST API documentation:
+In this course, after you practice [using an API like a developer](https://idratherbewriting.com/learnapidoc/likeadeveloper.html), you'll then shift perspectives and "become a technical writer" tasked with [documenting a new endpoint](https://idratherbewriting.com/learnapidoc/docendpoints.html) that engineers added to an API. As a technical writer, you'll tackle each element of a reference topic in REST API documentation:
 
-1. [Resource descriptions](docapis_resource_descriptions.html)
-2. [Endpoints and methods](docapis_resource_endpoints.html)
-3. [Parameters](docapis_doc_parameters.html)
-4. [Request example](docapis_doc_sample_requests.html)
-5. [Response example](docapis_doc_sample_responses_and_schema.html)
+1. [Resource descriptions](https://idratherbewriting.com/learnapidoc/docapis_resource_descriptions.html)
+2. [Endpoints and methods](https://idratherbewriting.com/learnapidoc/docapis_resource_endpoints.html)
+3. [Parameters](https://idratherbewriting.com/learnapidoc/docapis_doc_parameters.html)
+4. [Request example](https://idratherbewriting.com/learnapidoc/docapis_doc_sample_requests.html)
+5. [Response example](https://idratherbewriting.com/learnapidoc/docapis_doc_sample_responses_and_schema.html)
 
-Exploring each of these sections will give you a solid understanding of how to document REST APIs. You'll also learn how to document the [conceptual sections for an API](docconceptual.html), such as the [getting started tutorial](docapis_doc_getting_started_section.html), [product overview](docapis_doc_overview.html), [status and error codes](docapis_doc_status_codes.html), [request authorization](docapis_more_about_authorization.html), and more.
+Exploring each of these sections will give you a solid understanding of how to document REST APIs. You'll also learn how to document the [conceptual sections for an API](https://idratherbewriting.com/learnapidoc/docconceptual.html), such as the [getting started tutorial](https://idratherbewriting.com/learnapidoc/docapis_doc_getting_started_section.html), [product overview](https://idratherbewriting.com/learnapidoc/docapis_doc_overview.html), [status and error codes](https://idratherbewriting.com/learnapidoc/docapis_doc_status_codes.html), [request authorization](https://idratherbewriting.com/learnapidoc/docapis_more_about_authorization.html), and more.
 
 {% include random_ad2.html %}
 
-You'll also dive into different ways to [publish REST API documentation](publishingapis.html), exploring tools and specifications such as [GitHub](pubapis_github_wikis.html), static site generators like [Jekyll](pubapis_jekyll.html), and other [docs-as-code approaches](pubapis_docs_as_code.html). You'll learn how to leverage templates, build interactive API consoles so users can try out requests and see responses, and learn how to manage your content through [version control](pubapis_version_control.html).
+You'll also dive into different ways to [publish REST API documentation](https://idratherbewriting.com/learnapidoc/publishingapis.html), exploring tools and specifications such as [GitHub](https://idratherbewriting.com/learnapidoc/pubapis_github_wikis.html), static site generators like [Jekyll](https://idratherbewriting.com/learnapidoc/pubapis_jekyll.html), and other [docs-as-code approaches](https://idratherbewriting.com/learnapidoc/pubapis_docs_as_code.html). You'll learn how to leverage templates, build interactive API consoles so users can try out requests and see responses, and learn how to manage your content through [version control](https://idratherbewriting.com/learnapidoc/pubapis_version_control.html).
 
-We'll also dive into specifications such as the [OpenAPI specification](pubapis_openapi_tutorial_overview.html) and [Swagger UI](pubapis_openapi_intro.html) (which provides tooling for the OpenAPI specification). Additionally, you'll learn how to [document native library APIs](nativelibraryapis.html) and generate [Javadoc](nativelibraryapis_create_javadoc.html).
+We'll also dive into specifications such as the [OpenAPI specification](https://idratherbewriting.com/learnapidoc/pubapis_openapi_tutorial_overview.html) and [Swagger UI](https://idratherbewriting.com/learnapidoc/pubapis_openapi_intro.html) (which provides tooling for the OpenAPI specification). Additionally, you'll learn how to [document native library APIs](https://idratherbewriting.com/learnapidoc/nativelibraryapis.html) and generate [Javadoc](https://idratherbewriting.com/learnapidoc/nativelibraryapis_create_javadoc.html).
 
-Tech writing is about more than tools and technology, though. As such, I even explore [processes and methodologies](docapis_managing_doc_processes.html) in depth, explaining how to manage both [large](docapis_managing_doc_projects.html) and [small](docapis_managing_small_doc_requests.html) documentation projects, how to [collect documentation feedback](docapis_collecting_feedback_post_release.html), [how to keep stakeholders happy and updated](docapis_status_reports.html), and more.
+Tech writing is about more than tools and technology, though. As such, I even explore [processes and methodologies](https://idratherbewriting.com/learnapidoc/docapis_managing_doc_processes.html) in depth, explaining how to manage both [large](https://idratherbewriting.com/learnapidoc/docapis_managing_doc_projects.html) and [small](https://idratherbewriting.com/learnapidoc/docapis_managing_small_doc_requests.html) documentation projects, how to [collect documentation feedback](https://idratherbewriting.com/learnapidoc/docapis_collecting_feedback_post_release.html), [how to keep stakeholders happy and updated](https://idratherbewriting.com/learnapidoc/docapis_status_reports.html), and more.
 
-I've also included a section on [metrics and measurement](docapis_measuring_impact.html), which lists a comprehensive [quality checklist](docapis_quality_checklist.html). The criteria described can help you evaluate your own developer portal in myriad ways against industry best practices.
+I've also included a section on [metrics and measurement](https://idratherbewriting.com/learnapidoc/docapis_measuring_impact.html), which lists a comprehensive [quality checklist](https://idratherbewriting.com/learnapidoc/docapis_quality_checklist.html). The criteria described can help you evaluate your own developer portal in myriad ways against industry best practices.
 
 Throughout this course, I put these concepts in real, applicable contexts with hands-on activities and demos.
 
@@ -76,9 +76,9 @@ The course consists of the following sections:
 
 ## Sequence and activities
 
-You don't have to read the sections in order &mdash; feel free to skip around as you prefer. Some of the earlier sections (such as the section on [Using a REST API like a developer](likeadeveloper.html) and [Documenting endpoints](docendpoints.html) follow a somewhat sequential order with the same [weather API scenario](docapis_scenario_for_using_weather_api.html), but by and large you can jump around as desired.
+You don't have to read the sections in order &mdash; feel free to skip around as you prefer. Some of the earlier sections (such as the section on [Using a REST API like a developer](https://idratherbewriting.com/learnapidoc/likeadeveloper.html) and [Documenting endpoints](https://idratherbewriting.com/learnapidoc/docendpoints.html) follow a somewhat sequential order with the same [weather API scenario](https://idratherbewriting.com/learnapidoc/docapis_scenario_for_using_weather_api.html), but by and large you can jump around as desired.
 
-Because the purpose of the course is to help you learn, there are many activities that require hands-on coding and other exercises. Along with the learning activities, there are also conceptual deep dives, but the focus is always on *learning by doing*. Where there are hands-on activities, I typically include this icon in the section title: <i class="fa fa-user-circle"></i>. Other topics have the word "Activity" in the title. The activities are integrated into various sections, but you can also see many of the activities in the [Workshop Activities](workshop.html). These are the activities we do during live workshops.
+Because the purpose of the course is to help you learn, there are many activities that require hands-on coding and other exercises. Along with the learning activities, there are also conceptual deep dives, but the focus is always on *learning by doing*. Where there are hands-on activities, I typically include this icon in the section title: <i class="fa fa-user-circle"></i>. Other topics have the word "Activity" in the title. The activities are integrated into various sections, but you can also see many of the activities in the [Workshop Activities](https://idratherbewriting.com/learnapidoc/workshop.html). These are the activities we do during live workshops.
 
 {% include ads.html %}
 
@@ -94,7 +94,7 @@ Also, you should only focus on those sections that you need to learn. See this R
 
 ## Will this course help you get a job in API documentation?
 
-The most common reason people take this course is to transition into API documentation. This course will help you make that transition, but you can't just passively read through the content. You need to do the activities outlined in each section, especially those topics that involve working with content from an [open-source project](docapis_find_open_source_project.html) (or something similar). These activities are crucial to building experience and credibility with a portfolio. I provide more details in [Getting an API documentation job and thriving](jobapis.html). Without a strong portfolio to demonstrate your writing expertise, almost no manager will hire you, even if you have an extensive tech background.
+The most common reason people take this course is to transition into API documentation. This course will help you make that transition, but you can't just passively read through the content. You need to do the activities outlined in each section, especially those topics that involve working with content from an [open-source project](https://idratherbewriting.com/learnapidoc/docapis_find_open_source_project.html) (or something similar). These activities are crucial to building experience and credibility with a portfolio. I provide more details in [Getting an API documentation job and thriving](https://idratherbewriting.com/learnapidoc/jobapis.html). Without a strong portfolio to demonstrate your writing expertise, almost no manager will hire you, even if you have an extensive tech background.
 
 ## No programming skills required
 
@@ -132,7 +132,7 @@ In the past, people have asked for some tests to check whether their laptops are
 
 ## Video recordings
 
-For video recordings of this course, see the [Video recordings of API doc workshops](docapis_course_videos.html). The page lists the most recent video recordings available. The video doesn't go into the same level of detail as the written material, but it would be a good start.
+For video recordings of this course, see the [Video recordings of API doc workshops](https://idratherbewriting.com/learnapidoc/docapis_course_videos.html). The page lists the most recent video recordings available. The video doesn't go into the same level of detail as the written material, but it would be a good start.
 
 See my [Upcoming Presentations](https://idratherbewriting.com/presentations/) on my blog for details about future workshops and presentations.
 
@@ -144,7 +144,7 @@ For the live workshops, I have various slides that cover different sections of t
 
 Some people have asked whether they can use materials from this course to give their own API documentation workshops. I only allow the material to be used for non-profit workshops where the workshop leader isn't charging participants for the instruction. Of course, many of the ideas and concepts in this course aren't specific or unique to me, and you're entitled to fair use. However, please don't just hijack my site's materials, activities, and other information for your own commercial endeavors.
 
-If you're a teacher at a college or university (or high school) and are trying to teach APIs and developer docs to your students, feel free to use this site as part of your instructional materials. I appreciate links back to the site and attribution as needed (links pointing to my site boost search engine rankings). My larger goal for this site is to help educate and empower tech writers with developer documentation strategies, workflows, and best practices. If you'd like to share your API documentation course syllabus, [contact me](https://idratherbewriting.com/contact.html){: .noCrossRef} and I'll add a link here.
+If you're a teacher at a college or university (or high school) and are trying to teach APIs and developer docs to your students, feel free to use this site as part of your instructional materials. I appreciate links back to the site and attribution as needed (links pointing to my site boost search engine rankings). My larger goal for this site is to help educate and empower tech writers with developer documentation strategies, workflows, and best practices. If you'd like to share your API documentation course syllabus, [contact me](https://idratherbewriting.com/contact.html) and I'll add a link here.
 
 ## Is this course really free?
 
@@ -158,7 +158,7 @@ To read the same content in PDF or Kindle/eBook formats, see [PDF and eBook form
 
 ## Let me know if any content is out of date
 
-One of the challenges in any technical course is ensuring the content stays up to date. Technology changes rapidly, and given the many hands-on activities in the course, it's easy for some steps to become out of date as time passes. I've tried to maintain a healthy balance between general and specific details in the content here. If you find something is out of date, either add a comment on that page or [let me know](https://idratherbewriting.com/learnapidoc/contact.html){: .noCrossRef}.
+One of the challenges in any technical course is ensuring the content stays up to date. Technology changes rapidly, and given the many hands-on activities in the course, it's easy for some steps to become out of date as time passes. I've tried to maintain a healthy balance between general and specific details in the content here. If you find something is out of date, either add a comment on that page or [let me know](https://idratherbewriting.com/learnapidoc/contact.html).
 
 ## Stay updated
 
@@ -193,8 +193,6 @@ These resources aren't API-specific but are still relevant:
 * [The Good Docs Project: Best practice templates and writing instructions for documenting open source software](https://thegooddocsproject.dev/)
 
 * [Google's technical writing courses for engineers](https://developers.google.com/tech-writing)
-
-
 
 For even more books, see [Relevant Books](https://www.writethedocs.org/books/) from the Write the Docs site.
 

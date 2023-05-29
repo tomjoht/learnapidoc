@@ -117,7 +117,7 @@ Now that I've hopefully established that traditional HATs aren't the go-to tools
 
 If you'd like to view a presentation I gave to the [Write the Docs South Bay chapter](https://idratherbewriting.com/2018/01/19/wtd-south-bay-publish-api-documentation-presentation/) on this topic, you can view it here:
 
-{% if site.format == "kindle" or site.format == "pdf" %}
+{% if site.format == "print" %}
 
 {: .note}
 *Note: This content doesn't embed well in print because it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/docapis_course_videos.html] to view the content.*

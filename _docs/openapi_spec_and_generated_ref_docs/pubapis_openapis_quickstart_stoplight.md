@@ -94,7 +94,7 @@ Stoplight provides a variety of options for working with projects &mdash; deskto
 
 7.  You can seamlessly switch between Form and Code views. Try adding a word in the Form view, switch to the Code view and find it, then remove it from the Code view and see how it updates in the Form view. Here's a short video clip showing this:
 
-    {% if site.format == "kindle" or site.format == "pdf" %}
+    {% if site.format == "print" %}
 *Note: This content doesn't embed well in print because it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/pubapis_openapis_quickstart_stoplight.html] to view the content.*
    
     <frame width="560" height="315" src="https://www.youtube.com/embed/ngTq3aGZFVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -118,7 +118,7 @@ To populate the API overview:
 1.  In the Stoplight Studio sidebar, click **API Overview.**
 2.  Enter information in each of the form fields using information provided in the orange button below:
 
-    {% if site.format == "kindle" or site.format == "pdf" %}
+    {% if site.format == "print" %}
     This content contains JavaScript. Go to https://idratherbewriting.com/learnapidoc/pubapis_openapis_quickstart_stoplight.html to see it.
     {% endif %}
 
@@ -209,7 +209,7 @@ Now enter the path and parameter information:
 
 5.  In the Description field, add the description for this endpoint. Expand the orange button below to get a description to paste here.
 
-    {% if site.format == "kindle" or site.format == "pdf" %}
+    {% if site.format == "print" %}
     This content contains JavaScript. Go to https://idratherbewriting.com/learnapidoc/pubapis_openapis_quickstart_stoplight.html to see it.
     {% endif %}
 
@@ -230,7 +230,7 @@ Now enter the path and parameter information:
 
 6.  In Stoplight Studio, click the **+ Query Param** button to expand the query parameters options. (Note that our sample API has query parameters only, no path parameters.) Expand the orange button below for sample query parameter information. Then populate all the query parameter information into the Stoplight Studio editor.
 
-    {% if site.format == "kindle" or site.format == "pdf" %}
+    {% if site.format == "print" %}
     This content contains JavaScript. Go to https://idratherbewriting.com/learnapidoc/pubapis_openapis_quickstart_stoplight.html to see it.
     {% endif %}
 
@@ -359,7 +359,7 @@ To enter the response information in Stoplight Studio:
     Here you'll experience one of the coolest features in the Stoplight Studio editor, and one reason why I like this editor so much. The editor will automatically build out the response schema from a sample JSON response.
 
 1. Expand the orange button below and copy the sample response.
-   {% if site.format == "kindle" or site.format == "pdf" %}
+   {% if site.format == "print" %}
     This content contains JavaScript. Go to https://idratherbewriting.com/learnapidoc/pubapis_openapis_quickstart_stoplight.html to see it.
     {% endif %}
 
@@ -422,7 +422,7 @@ To enter the response information in Stoplight Studio:
    
 5.  Click **Generate**. Stoplight builds the schema for you! Here's a short video clip showing this:
 
-    {% if site.format == "kindle" or site.format == "pdf" %}
+    {% if site.format == "print" %}
 *Note: This content doesn't embed well in print because it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/pubapis_openapis_quickstart_stoplight.html] to view the content.*
     {% endif %}
 
@@ -437,7 +437,7 @@ To enter the response information in Stoplight Studio:
 
     For the description and examples, expand the orange button below and copy over the information.
 
-    {% if site.format == "kindle" or site.format == "pdf" %}
+    {% if site.format == "print" %}
     This content contains JavaScript. Go to https://idratherbewriting.com/learnapidoc/pubapis_openapis_quickstart_stoplight.html to see it.
     {% endif %}
 

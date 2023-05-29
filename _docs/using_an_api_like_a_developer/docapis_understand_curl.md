@@ -82,21 +82,6 @@ When you type an address into a website, you see only the body of the response. 
 
     When you go to a website, you submit the request using the GET HTTP method. There are other HTTP methods you can use when interacting with REST APIs. Here are the common methods used when working with REST endpoints:
 
-    {% if site.format == "kindle" %}
-
-    POST
-    :  Ceate a resource
-
-    GET
-    :  Read a resource
-
-    PUT
-    :  Update a resource
-
-    DELETE
-    :  Delete a resource
-    {% else %}
-
     <table>
        <colgroup>
           <col width="30%" />
@@ -127,8 +112,6 @@ When you type an address into a website, you see only the body of the response. 
           </tr>
        </tbody>
     </table>
-
-    {% endif %}
 
     {: .note}
     GET is used by default with curl requests. If you use curl to make HTTP requests other than GET, you need to specify the HTTP method.
@@ -169,29 +152,6 @@ After the query string, each parameter is separated from other parameters by the
 
 curl has a lot of possible commands, but the following are the most common when working with REST APIs.
 
-{% if site.format == "kindle" %}
-
-`-i` or `--include`
-:  Includes the response headers in the response.
-:  *Example:* `curl -i http://www.example.com`
-
-`-d` or `--data`
-:  Includes data to post to the URL. This data allows you to pass in a [request body](docapis_doc_parameters.html#request_bodies). The data needs to be [url encoded](http://www.w3schools.com/tags/ref_urlencode.asp).
-:  *Example:* `curl -d "data-to-post" http://www.example.com`
-
-`-H` or `--header`
-:  Submits the request header to the resource. Headers are common with REST API requests because the authorization is usually included in the header.
-:  *Example:* `curl -H "key:12345" http://www.example.com`
-
-`-X POST`
-:  Specifies the HTTP method to use with the request (in this example, `POST`). If you use `-d` in the request, curl automatically specifies a POST method. With `GET` requests, including the HTTP method is optional because GET is the default method used.
-: *Example:* `curl -X POST -d "resource-to-update" http://www.example.com`
-
-`@filename`
-:  Loads content from a file. Used with the data parameter (`-d`).
-:  *Example:* `curl -X POST -d @mypet.json http://www.example.com`
-
-{% else %}
 <table>
    <colgroup>
       <col width="20%" />
@@ -233,7 +193,6 @@ curl has a lot of possible commands, but the following are the most common when 
       </tr>
    </tbody>
 </table>
-{% endif %}
 
 See the [curl documentation](http://curl.haxx.se/docs/manpage.html) for a comprehensive list of curl commands you can use.
 

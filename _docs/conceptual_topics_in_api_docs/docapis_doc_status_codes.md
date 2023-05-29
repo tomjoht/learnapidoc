@@ -48,7 +48,7 @@ The first line, `HTTP/1.1 200 OK`, tells us the status of the request (`200`). M
 
 With a GET request, it's pretty easy to tell if the request is successful because you get back the expected response. But suppose you're making a POST, PUT, or DELETE call, where you're changing data contained in the resource. How do you know if the request was successfully processed and received by the API? HTTP response codes in the header of the response will indicate whether the operation was successful. The HTTP status codes are just abbreviations for longer messages.
 
-<figure><img class="docimage medium border" src="{{site.media}}/{% if site.format == "kindle" %}nonref_statuscodes.png{% else %}nonref_statuscodes.svg{% endif %}" alt="Status codes" /><figcaption>Status codes are pretty subtle, but when a developer is working with an API, these codes may be the only "interface" the developer has. If you can control the messages the developer sees, it can be a huge win for usability.</figcaption></figure>
+<figure><img class="docimage medium border" src="{{site.media}}/nonref_statuscodes.svg" alt="Status codes" /><figcaption>Status codes are pretty subtle, but when a developer is working with an API, these codes may be the only "interface" the developer has. If you can control the messages the developer sees, it can be a huge win for usability.</figcaption></figure>
 
 All too often, status codes are uninformative, poorly written, and communicate little or no helpful information to the user to overcome the error. Ultimately, status codes should assist users in recovering from errors.
 
@@ -76,14 +76,6 @@ As a result, you may need to experiment a bit to ferret out all the codes. Speci
 
 You can list your status and error codes in a basic table or definition list, somewhat like this:
 
-{% if site.format == "kindle" %}
-200 status code
-:  Successful request and response.
-
-400 status code
-:  Malformed parameters or other bad request
-
-{% else %}
 <table>
    <colgroup>
       <col width="30%" />
@@ -106,7 +98,6 @@ You can list your status and error codes in a basic table or definition list, so
       </tr>
    </tbody>
 </table>
-{% endif %}
 
 ## Status/error codes can assist in troubleshooting
 

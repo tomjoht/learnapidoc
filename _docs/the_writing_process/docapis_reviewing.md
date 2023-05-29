@@ -72,7 +72,7 @@ Reviewers do actually have a finite amount of time they're willing to meet with 
 
 To layer this review process, start the review at the product team and expand out from there. After you get the engineers to review the content, review it with the PM, then the partner engineers, then any other stakeholders (e.g, support groups), then business development, and finally any executives if the content requires it. You might not need to include all these groups, but include at least several as appropriate. The review process should look somewhat like this:
 
-<figure><img class="docimage" src="{{site.media}}/{% if site.format == "kindle" %}review_process.png{% else %}review_process.svg{% endif %}" alt="The review process is iterative. After each review, incorporate the edits before the next review." /><figcaption>The review process is iterative. After each review, incorporate the edits before the next review.</figcaption></figure>
+<figure><img class="docimage" src="{{site.media}}/review_process.svg" alt="The review process is iterative. After each review, incorporate the edits before the next review." /><figcaption>The review process is iterative. After each review, incorporate the edits before the next review.</figcaption></figure>
 
 I expand more on this staggered approach in [Processes for reviewing documentation](docapis_review_processes.html).
 

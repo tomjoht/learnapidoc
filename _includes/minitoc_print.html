@@ -3,7 +3,7 @@
 {% comment %}check for items at first level {% endcomment %}
 
 <div id="navig">
-  {% if site.format == "kindle" %}<b>Sections in this chapter:</b>{% endif %}
+  {% if site.format == "print" %}<b>Sections in this chapter:</b>{% endif %}
 <ul id="docnavsidebar" class="docnav">
   {% for folder in sidebar.folders %}
     {% if folder.jurl contains page.permalink %}

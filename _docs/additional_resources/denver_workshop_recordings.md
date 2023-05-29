@@ -14,7 +14,7 @@ These videos are from an API documentation workshop that I gave in Denver, Color
 * TOC
 {:toc}
 
-{% if site.format == "kindle" or site.format == "pdf" %}
+{% if site.format == "print" %}
 *Note: This content doesn't embed well in print because it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/docapis_course_videos.html] to view the content.*
 {% endif %}
 

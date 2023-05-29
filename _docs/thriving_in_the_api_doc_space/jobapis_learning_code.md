@@ -72,7 +72,7 @@ Neiman and [Andrew Davis](http://www.synergistech.com/) (a recruiter for API tec
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lmNHBg20ql0?t=1314" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 {% endif %}
 
-{% if site.format == "pdf" or site.format == "kindle" %}
+{% if site.format == "print" %}
 <figure><a href="https://www.youtube.com/embed/lmNHBg20ql0?t=1314"><img src="{{site.media}}/neimanpreso.png" alt="James Neiman on the required technical baseline for API docs" caption="James Neiman on the required technical baseline for API docs" class="large" /></a><figcaption>James Neiman on the required technical baseline for API docs" caption="James Neiman on the required technical baseline for API docs</figcaption></figure>
 {% endif %}
 
@@ -145,7 +145,7 @@ Suppose you find yourself deep in APIs that require you to know a lot more techn
 
 Keep in mind that your level of involvement with editing, publishing, and authoring depends on your level of tech knowledge. If you have a strong knowledge of the tech, you can author, edit, and publish. If you have weak tech knowledge, your role might involve publishing only. The following spectrum diagram illustrates this range of involvement:
 
-<figure><img class="docimage large border" src="{{site.media}}/{% if site.format == "kindle" %}techknowledge.png{% else %}techknowledge.svg{% endif %}" alt="The degree to which you can publish, edit, and author depends on your level of tech knowledge." /><figcaption>The degree to which you can publish, edit, and author depends on your level of tech knowledge.</figcaption></figure>
+<figure><img class="docimage large border" src="{{site.media}}/techknowledge.svg" alt="The degree to which you can publish, edit, and author depends on your level of tech knowledge." /><figcaption>The degree to which you can publish, edit, and author depends on your level of tech knowledge.</figcaption></figure>
 
 If you're stuck in the publishing/editing area, you can interview engineers at length about what's going on in the code (record these discussions &mdash; Evernote has a nifty recording feature built-in that I've used multiple times for just this purpose), and then try your best to describe the actions in as clear speech as possible. You can always fall back on the idea that for those users who need Python, the Python code should look somewhat familiar to them. Well-written code should be, in some sense, self-descriptive in what it's doing. Unless there's something odd or non-standard in the approach, engineers fluent in code should be able to get a sense of how the code works.
 

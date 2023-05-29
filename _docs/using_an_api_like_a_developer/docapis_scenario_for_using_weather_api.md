@@ -21,7 +21,7 @@ Let's start using an actual REST API to get more familiar with how they work. In
 
 Let's say that you're a web developer and you want to add weather information to your site. Your site is for cyclists. You want to allow users who come to your site to see the current wind and temperature conditions. You want something like this:
 
-<figure><img class="docimage small" src="{{site.media}}/{% if site.format == "kindle" %}restapi_windycall.png{% else %}restapi_windycall.svg{% endif %}" alt="Wind meter conditions for website" /><figcaption>Wind meter conditions for website</figcaption></figure>
+<figure><img class="docimage small" src="{{site.media}}/restapi_windycall.svg" alt="Wind meter conditions for website" /><figcaption>Wind meter conditions for website</figcaption></figure>
 
 You don't have your own meteorological service, so you'll need to make some calls out to a weather service to get this information. Then you will present that information to users.
 
@@ -31,7 +31,7 @@ To give you an idea of the end goal, here's a sample: [idratherbewriting.com/lea
 
 Click the **Check wind conditions** button to see wind and temperature details. When you request this data, a call is made to the [OpenWeatherMap API](https://openweathermap.org/api). The API retrieves the information, and some JavaScript code prints the information on the page.
 
-{% if site.format == "kindle" or site.format == "pdf" %}
+{% if site.format == "print" %}
 *Note: This content doesn't embed well in print because it contains JavaScript. Please go to [https://idratherbewriting.com/learnapidoc/docapis_scenario_for_using_weather_api.html] to view the content.*
 {% endif %}
 

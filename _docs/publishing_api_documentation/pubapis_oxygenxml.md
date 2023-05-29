@@ -115,7 +115,7 @@ Overall, the Git functionality within Oxygen XML brings the most common Git work
 
 We've covered only a few aspects of docs-as-code tools, namely, Markdown format with text files, and content management with Git. For more details about using Oxygen XML as a docs-as-code tool, see this webinar: [Docs as Code - Documentation Management Inspired by Software Development" presented by Alex Jitianu](https://www.youtube.com/watch?v=MWsqi4Nb0fI).
 
-{% if site.format == "kindle" or site.format == "pdf" %}
+{% if site.format == "print" %}
 *Note: This content doesn't embed well in print because it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/pubapis_oxygenxml.html] to view the content.*
 {% endif %}
 

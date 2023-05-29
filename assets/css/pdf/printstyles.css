@@ -52,11 +52,16 @@ a[href]::after {
     content: " (p. " target-counter(attr(href), page) ")"
 }
 
+/* uncomment this style if you want to include the href target in 
+parentheses after each link. I think this style significantly interferes with
+readability.
+/*
 a[href^="http:"]::after, a[href^="https:"]::after {
     content: " (" attr(href) ") ";
 }
+*/
 
-/* cut this i think
+/* cut this i think -- not sure what it actually does.
 chapter {
 prince-pdf-destination: attr(identifier,string)
 } */
@@ -72,10 +77,15 @@ a[href] {
     color: #337CD6 !important;
     text-decoration: none;
 }
-a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::after {
+
+/* this style makes it so that relative URLs are expected to appear in the PDF output and so
+Prince will retain the cross reference in parentheses afterwards, but for absolute URLs, there won't 
+be a cross reference in the parentheses afterwards, and likewise there won't appear any URL in 
+parentheses after the link, as that harms readability. */
+
+a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::after, a[href^="http://"]::after, a[href^="https://"]::after {
     content: "";
 }
-
 
 .printTitle {
     line-height:30pt;

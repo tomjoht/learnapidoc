@@ -7,6 +7,10 @@ published: false
 
 These instructions explain how to build the PDF outputs.
 
+## Prerequisites
+
+* [Prince XML](https://www.princexml.com/)
+
 ## Download the images from Wasabi
 
 Switch into `myvenv`, then run:
@@ -22,7 +26,7 @@ Prince requires image references to be local, absolute paths and will look into 
 The build adds `_config_pdf_[n].yaml` in the build command to add to the configuration instructions. The PDF config file has format `pdf`, so to exclude anything from the PDF:
 
 ```
-{% if site.format == "kindle" or site.format == "pdf" %}
+{% if site.format == "print" %}
 
 {% endif %}
 ```
@@ -48,7 +52,7 @@ This script builds each of the 15 outputs and stores them in the `pdf` folder.
 
 ## Upload the PDFs to Wasabi
 
-`myvenv`, then run this script:
+Run this script:
 
 ```
 ./pdf_upload.sh
@@ -146,7 +150,7 @@ Update the `docapis_formats.md` page.
 
 2. see pdf/docapis.pdf
 
-- format: pdf
+- format: print
 - css: assets/css/pdf/printstyles.css
 - css: assets/css/pdf/theme-blue.css
 - layout: printpdf.html

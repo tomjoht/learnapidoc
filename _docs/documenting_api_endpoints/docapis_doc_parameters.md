@@ -10,7 +10,7 @@ last-modified: 2020-06-27
 ---
 
 {% include workflow_map.html step="3" map="content/reference_doc_map.html"  %}
-{% if site.format == "pdf" or site.format == "kindle" %}
+{% if site.format == "print" %}
 <img src="{{site.media}}/apiref4.png"/>
 {% endif %}
 
@@ -29,13 +29,6 @@ In this example, the parameters are grouped by type: path parameters, query para
 
 Many times parameters are simply listed in a table or definition list like this:
 
-{% if site.format == "kindle" %}
-
-Parameter
-:  Required? yes
-:  Data Type: string
-
-{% else %}
 <table>
    <colgroup>
       <col width="40%" />
@@ -57,8 +50,6 @@ Parameter
       </tr>
    </tbody>
 </table>
-
-{% endif %}
 
 Here's an example from Yelp's documentation:
 
@@ -153,16 +144,6 @@ For example, you could color code your parameters like this:
 
 You could then use the same color for these parameters in later descriptions:
 
-{% if site.format == "kindle" %}
-
-<span class="orange"><code>user</code></span>
-:  Here's my description of the user parameter.
-
-<span class="orange"><code>bicycleId</code></span>
-:  Here's my description of the bicycles parameter.
-
-{% else %}
-
 <table>
    <colgroup>
       <col width="30%" />
@@ -185,7 +166,6 @@ You could then use the same color for these parameters in later descriptions:
       </tr>
    </tbody>
 </table>
-{% endif %}
 
 By color coding the parameters, it's easy to see the parameter being defined and how it relates to the endpoint definition.
 

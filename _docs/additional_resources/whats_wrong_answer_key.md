@@ -19,7 +19,7 @@ After you've finished commenting on the Google Doc, go to this [annotated Google
 
 Alternatively, expand the answers below to see how many issues you found. If you found additional issues beyond those noted here, feel free to [drop me an email](http://idratherbewriting.com/learnapidoc/contact.html){: .noCrossRef} letting me know. You can also add your own comments on the Google Doc answer key.
 
-{% if site.format == "kindle" or site.format == "pdf" %}
+{% if site.format == "print" %}
 *Note: This content doesn't embed well in print because it contains JavaScript. Please go to [https://idratherbewriting.com/learnapidoc/docapis_whats_wrong_answer_key.html] to view the content.*
 {% endif %}
 

@@ -42,7 +42,7 @@ Stoplight's visual modeling tools eliminate the need to be familiar with the for
 
 As part of the visual modeling tools, Stoplight's interface for describing JSON schemas (used in request bodies or responses) is especially welcome. Details about how to document JSON schemas aren't fully described in the OpenAPI spec, so they can be particularly tricky. What's especially neat about Stoplight is that you can paste in a chunk of JSON and it will automatically describe the JSON in the right syntax for you. You do this using the **Generate from JSON** button. For more details, see this section in the Stoplight getting started tutorial: [Step 5: Enter the responses and response schema information](pubapis_openapis_quickstart_stoplight.html#responses). Here's a short video clip showing this auto-generation:
 
-{% if site.format == "kindle" or site.format == "pdf" %}
+{% if site.format == "print" %}
 
 {: .note}
 *Note: This content doesn't embed well in print because it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/pubapis_stoplight.html] to view the content.*
@@ -53,7 +53,7 @@ As part of the visual modeling tools, Stoplight's interface for describing JSON 
 
 Additionally, you can toggle between the visual tools (the Form view) and the specification code (the Code view) easily. If you want to work in the code, your changes will update the content in the UI as well. The two sync perfectly when you make updates in either mode. Here's a short video I made showing this bidirectional synchronization:
 
-{% if site.format == "kindle" or site.format == "pdf" %}
+{% if site.format == "print" %}
 
 {: .note}
 *Note: This content doesn't embed well in print because it contains YouTube videos. Please go to [https://idratherbewriting.com/learnapidoc/pubapis_stoplight.html] to view the content.*

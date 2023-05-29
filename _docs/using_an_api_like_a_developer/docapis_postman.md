@@ -177,7 +177,7 @@ By looking at these two different weather APIs, you can see some differences in 
 
 Postman has a nifty import feature that will automatically pull in the same requests you've been entering. You can click the Run in Postman buttons below to automatically import these two collections into your own instance of Postman.
 
-{% if site.format == "pdf" or site.format == "kindle" %}
+{% if site.format == "print" %}
 
 To view these buttons, go to the web page for this content at [https://idratherbewriting.com/learnapidoc/docapis_postman.html](https://idratherbewriting.com/learnapidoc/docapis_postman.html).
 

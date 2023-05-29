@@ -13,7 +13,7 @@ map:
 last-modified: 2020-06-25
 ---
 
-{% if site.format == "pdf" or site.format == "kindle" %}
+{% if site.format == "print" %}
 <img src="{{site.media}}/openapistep2.png"/>
 {% endif %}
 

@@ -33,7 +33,7 @@ Pricing related to rate limiting is probably information that's within the marke
 
 Also, when developers implement the code into their applications, how are they handling situations where the API doesn't respond due to rate limit violations? Are there conditions and checks to handle these throttled scenarios? Does the widget (or whatever might be implementing the API) freeze or hang, display empty or crash?
 
-<figure><img class="docimage medium border" src="{{site.media}}/{% if site.format == "kindle" %}nonref_ratelimiting.png{% else %}nonref_ratelimiting.svg{% endif %}" alt="Rate limiting affects development" /><figcaption>Rate limiting might seem like a marketing topic, but the rate limiting policies and how they affect API calls can have a significant impact on development.</figcaption></figure>
+<figure><img class="docimage medium border" src="{{site.media}}/nonref_ratelimiting.svg" alt="Rate limiting affects development" /><figcaption>Rate limiting might seem like a marketing topic, but the rate limiting policies and how they affect API calls can have a significant impact on development.</figcaption></figure>
 
 {% include ads.html %}
 

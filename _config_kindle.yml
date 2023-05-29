@@ -10,7 +10,7 @@ cover_image: ebook_cover.png
 
 language: english
 media: images
-format: kindle
+format: print
 sidebar: docapis
 
 destination: _site

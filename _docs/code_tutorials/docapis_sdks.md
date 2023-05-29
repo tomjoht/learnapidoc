@@ -42,7 +42,7 @@ In the SwaggerHub tutorial, I showed how to [auto-generate client SDKs](pubapis_
 
 As an API technical writer, documenting SDKs and sample apps presents a tough challenge because SDKs require you to be familiar with one or more programming languages. I explore the question of [how much code you need to know](jobapis_learning_code.html) in the [Jobs section](jobapis.html), so I won't get into too much detail here. Usually, engineers don't expect you to know multiple programming languages in depth, but some familiarity with them will be required in order to both write and review the documentation. When deciding whether to call a block of code a function, class, method, or another name, you need to have a basic understanding of the terms used in that language.
 
-<figure><img class="docimage medium border" src="{{site.media}}/{% if site.format == "kindle" %}nonref_sdksampleapp.png{% else %}nonref_sdksampleapp.svg{% endif %}" alt="SDKs and sample apps" /><figcaption>SDKs and sample apps</figcaption></figure>
+<figure><img class="docimage medium border" src="{{site.media}}/nonref_sdksampleapp.svg" alt="SDKs and sample apps" /><figcaption>SDKs and sample apps</figcaption></figure>
 
 If you're unfamiliar with the language, you can just take what engineers write, clean it up a bit, try to walk through the steps to get any sample apps working and see what feedback you get from users. Usually, if you can get a sample app installed and working, and make sure that the basic documentation for running the app works, as well as what the app does, that might be sufficient. But of course, making any significant contributions to SDK documentation will require you to be familiar with that programming language.
 
