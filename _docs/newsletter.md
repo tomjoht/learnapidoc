@@ -14,7 +14,6 @@ show_newsletter: never
 {% include mailjet_embedded.html %}
 {% endif %}
 
-
 <style>
 body.pas-body {
     display: none !important;

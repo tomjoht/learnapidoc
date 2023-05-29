@@ -169,7 +169,6 @@
             {% comment %}
             {% include sidebar_comics.html %}
             {% endcomment %}
-            {% include social_media_icons.html %}
 
             </div>
 
@@ -191,7 +190,7 @@ Last updated: {{page.last-modified | date: "%b %d, %Y" }} <a class="noCrossRef" 
                 <div class="amazonBook">
                 </div>
 
-<p class="surveyBanner" style="font-size: 98%; line-height: 18px"><b>Experiment:</b> Try out the GPT Chat for this site. <br/><br/>{% include markprompt.html %}<br/></p>
+<p>{% include markprompt.html %}</p>
 
 
 {% if page.versions %}{% include versions.html %}{% endif %}
