@@ -51,7 +51,7 @@ When you do, in the Swagger UI, a link appears after the API description along w
 <figure><img class="docimage" src="{{site.media}}/step8swaggerprogress.png" alt="External documentation link" /><figcaption>External documentation link</figcaption></figure>
 
 {: .tip}
-At this point, you can probably anticipate some challenges with integrating Swagger UI with the rest of your documentation. It seems that you will likely have two outputs and a semi-fragmented user experience. The `externalDocs` object at least gives you a predictable place to link back to your other [conceptual topics](docconceptual.html). See [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html) for more information on integration strategies.
+At this point, you can probably anticipate some challenges with integrating Swagger UI with the rest of your documentation. It seems that you will likely have two outputs and a semi-fragmented user experience. The `externalDocs` object at least gives you a predictable place to link back to your other [conceptual topics](https://idratherbewriting.com/learnapidoc/docconceptual.html). See [Integrating Swagger UI with the rest of your docs](https://idratherbewriting.com/learnapidoc/pubapis_combine_swagger_and_guide.html) for more information on integration strategies.
 
 {% include random_ad2.html %}
 

@@ -253,7 +253,7 @@ swagger:
 
 swagger_codegen:
   term: Swagger Codegen
-  def: "Generates client SDK code for a lot of different platforms (such as Java, JavaScript, Scala, Python, PHP, Ruby, Scala, and more). The client SDK code helps developers integrate your API on a specific platform and provides for more robust implementations that might include more scaling, threading, and other necessary code. In general, SDKs are toolkits for implementing the requests made with an API. Swagger Codegen generates the client SDKs in nearly every programming language. See [Swagger Codegen](https://swagger.io/swagger-codegen/) for more information. See also [SDKs](docapis_sdks.html)."
+  def: "Generates client SDK code for a lot of different platforms (such as Java, JavaScript, Scala, Python, PHP, Ruby, Scala, and more). The client SDK code helps developers integrate your API on a specific platform and provides for more robust implementations that might include more scaling, threading, and other necessary code. In general, SDKs are toolkits for implementing the requests made with an API. Swagger Codegen generates the client SDKs in nearly every programming language. See [Swagger Codegen](https://swagger.io/swagger-codegen/) for more information. See also [SDKs](https://idratherbewriting.com/learnapidoc/docapis_sdks.html)."
 
 swagger_editor:
   term: Swagger Editor

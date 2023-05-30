@@ -9,7 +9,7 @@ path1: docapis_metrics_and_measurement.html
 last-modified: 2022-02-07
 ---
 
-In the previous topic, [Measuring documentation quality through user feedback](permalink: docapis_measuring_impact.html), I explained the challenges of getting feedback from user surveys as a way to measure documentation quality. In this section, I'll survey the landscape on criteria and rubrics for assessing documentation quality.
+In the previous topic, [Measuring documentation quality through user feedback]( docapis_measuring_impact.html), I explained the challenges of getting feedback from user surveys as a way to measure documentation quality. In this section, I'll survey the landscape on criteria and rubrics for assessing documentation quality.
 
 * TOC
 {:toc}
@@ -186,7 +186,7 @@ For developer guides, Tarnoruder provides guidelines such as including "conceptu
 > Those with a top-bottom approach would first read all the conceptual topics, and only then start trying the API calls.
 > Those who prefer a bottom-up approach would delve right into code samples to get a quick hands-on experience with the APIs. ([Standardizing API documentation](https://www.tcworld.info/e-magazine/technical-writing/standardizing-api-documentation-949/))
 
-This is a pattern I described in [How Developers Use API Documentation: An Observation Study](docapiscode_research_on_documenting_code.html#how_devs_use_docs) and is based on research by Michael Meng, Stephanie Steinhardt, and Andreas Schubert in [How Developers Use API Documentation: An Observation Study](https://sigdoc.acm.org/cdq/how-developers-use-api-documentation-an-observation-study/). The authors describe "opportunistic" behavior (people who learn by immediately trying out code and learning by trial and error) versus "systematic" behavior (people who start by carefully reading the manual before acting) as two common patterns of observed usage for developers using documentation. They encourage documentation to accommodate both learning styles.
+This is a pattern I described in [How Developers Use API Documentation: An Observation Study](https://idratherbewriting.com/learnapidoc/docapiscode_research_on_documenting_code.html#how_devs_use_docs) and is based on research by Michael Meng, Stephanie Steinhardt, and Andreas Schubert in [How Developers Use API Documentation: An Observation Study](https://sigdoc.acm.org/cdq/how-developers-use-api-documentation-an-observation-study/). The authors describe "opportunistic" behavior (people who learn by immediately trying out code and learning by trial and error) versus "systematic" behavior (people who start by carefully reading the manual before acting) as two common patterns of observed usage for developers using documentation. They encourage documentation to accommodate both learning styles.
 
 {% include random_ad4.html %}
 

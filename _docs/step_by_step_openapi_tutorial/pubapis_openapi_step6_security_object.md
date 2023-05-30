@@ -26,14 +26,14 @@ Swagger UI provides a "Try it out" feature that lets users submit actual request
 
 ## Which security scheme?
 
-REST APIs can use different security approaches to authorize requests. I explored the most common authorization methods in [Authentication and authorization requirements](docapis_more_about_authorization.html). Swagger UI supports four authorization schemes:
+REST APIs can use different security approaches to authorize requests. I explored the most common authorization methods in [Authentication and authorization requirements](https://idratherbewriting.com/learnapidoc/docapis_more_about_authorization.html). Swagger UI supports four authorization schemes:
 
 * API key
 * HTTP
 * OAuth 2.0
 * Open ID Connect
 
-In this step of the OpenAPI tutorial, we'll use the API key approach, since this is what the OpenWeatherMap API uses. If your API uses [OAuth 2.0](docapis_more_about_authorization.html#oauth) or another method, you'll need to read the [Security Scheme information](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md#security-scheme-object) for details on how to configure it. However, all the security methods mostly follow the same pattern.
+In this step of the OpenAPI tutorial, we'll use the API key approach, since this is what the OpenWeatherMap API uses. If your API uses [OAuth 2.0](https://idratherbewriting.com/learnapidoc/docapis_more_about_authorization.html#oauth) or another method, you'll need to read the [Security Scheme information](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md#security-scheme-object) for details on how to configure it. However, all the security methods mostly follow the same pattern.
 
 {% include ads.html %}
 
@@ -135,13 +135,13 @@ After users enter an API key and click **Authorize**, the authorization method i
 
 ## <i class="fa fa-user-circle"></i> Test out how authorization works
 
-Now that we've added authorization, let's try making an actual API request. In the Swagger Editor (the right pane), click the **Authorize** button, paste the sample API key shown in the description into the **Value** field (or use your own [OpenWeatherMap API key](docapis_get_auth_keys.html#openweathermap_apikey)), and click **Authorize**. Then click **Close** to close the authorization modal.
+Now that we've added authorization, let's try making an actual API request. In the Swagger Editor (the right pane), click the **Authorize** button, paste the sample API key shown in the description into the **Value** field (or use your own [OpenWeatherMap API key](https://idratherbewriting.com/learnapidoc/docapis_get_auth_keys.html#openweathermap_apikey)), and click **Authorize**. Then click **Close** to close the authorization modal.
 
 {% include random_ad4.html %}
 
 In the Current Weather Data section, expand the **GET weather** endpoint and click **Try it out**. In the **zip** field, enter your zip code and country abbreviation (such as `95050,us`), and then click **Execute**.
 
-When you execute the request, Swagger UI shows you the [curl request](docapis_make_curl_call.html) submitted. For example, after executing a weather request, the curl is as follows:
+When you execute the request, Swagger UI shows you the [curl request](https://idratherbewriting.com/learnapidoc/docapis_make_curl_call.html) submitted. For example, after executing a weather request, the curl is as follows:
 
 ```bash
 curl -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&units=imperial&lang=en&mode=json&appid=APIKEY" -H "accept: application/json"
@@ -209,6 +209,6 @@ The server response also appears directly in the Swagger UI display, with a link
 }
 ```
 
-Note that when you implement Swagger UI, if you find that the curl request works but the response doesn't appear in Swagger UI, there might be a CORS issue with your API blocking requests from web applications like Swagger. See [Troubleshooting issues with Swagger UI](pubapis_swagger.html#troubleshooting_swagger) for details.
+Note that when you implement Swagger UI, if you find that the curl request works but the response doesn't appear in Swagger UI, there might be a CORS issue with your API blocking requests from web applications like Swagger. See [Troubleshooting issues with Swagger UI](https://idratherbewriting.com/learnapidoc/pubapis_swagger.html#troubleshooting_swagger) for details.
 
 {% include random_ad3.html %}

@@ -97,7 +97,7 @@ a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::a
 
 .printSubtitle {
     font-size: 18pt;
-    color: #cccccc !important;
+    color: gray !important;
     font-family: sans-serif;
     line-height: 22pt;
     letter-spacing: -.5px;
@@ -109,11 +109,30 @@ a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::a
     margin-top: 30px;
 }
 .printAttribution {
-    font-size: 12pt;
+    font-size: 10pt;
     font-family: sans-serif;
     margin-bottom: 20px;
     color: #444;
     font-style: italic;
+    margin-bottom: 25px;
+}
+
+.printLastGenerated{
+    font-size: 8pt;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: gray;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.printByline {
+   font-size: 12pt;
+   font-weight: bold;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    color: #444;
     margin-bottom: 25px;
 }
 .printTitleArea hr {

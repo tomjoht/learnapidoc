@@ -6,8 +6,6 @@ sidebar: docapis
 weight: 4.7
 section: restapispecifications
 path1: restapispecifications.html
-redirect_from:
-- pubapis_swagger_embedded.html
 no_newsletter: true
 last-modified: 2012-06-03
 ---
@@ -332,7 +330,7 @@ button.btn.try-out__btn {
 }
 </style>
 
-
+{% if site.format == "web" %}
 <script>
         $(document).ready(function() {
             $("#tg-sb-link").click(function() {
@@ -343,7 +341,7 @@ button.btn.try-out__btn {
             });
         });
 </script>
-
+{% endif %}
 {% include random_ad2.html %}
 
 <p class="note">While the Swagger UI display is designed to be responsive, the collapse/expand sections in the Model views still have overflow issues in responsive views, so you might run into issues with embedding. For more discussion on how to integrate Swagger with the rest of your docs, see <a href="pubapis_combine_swagger_and_guide.html">Integrating Swagger UI with the rest of your docs</a>.</p>

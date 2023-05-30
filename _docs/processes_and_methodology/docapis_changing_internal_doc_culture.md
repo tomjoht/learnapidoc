@@ -14,7 +14,6 @@ One of the most influential aspects that will determine your experience as a tec
 * TOC
 {:toc}
 
-
 ## Characteristics of a poor documentation environment
 
 Poor documentation environments can be characterized by the following:

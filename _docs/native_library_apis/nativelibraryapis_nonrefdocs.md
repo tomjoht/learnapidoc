@@ -9,7 +9,7 @@ path1: nativelibraryapis.html
 last-modified: 2018-12-26
 ---
 
-Although much attention tends to be given to the reference documentation with APIs, the bulk of documentation that technical writers work on (as opposed to developers) is [conceptual documentation](docconceptual.html). Developers rarely write more conceptual or tutorial-based documentation.
+Although much attention tends to be given to the reference documentation with APIs, the bulk of documentation that technical writers work on (as opposed to developers) is [conceptual documentation](https://idratherbewriting.com/learnapidoc/docconceptual.html). Developers rarely write more conceptual or tutorial-based documentation.
 
 Engineers will throw a quick description of a class in a file and generate a [Javadoc](nativelibraryapis_create_javadoc.html), and they'll give that Javadoc to the user as if it represents a complete set of documentation &mdash; but reference docs don't tell even half the story.
 

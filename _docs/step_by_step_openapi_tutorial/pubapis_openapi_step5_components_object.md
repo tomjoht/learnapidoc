@@ -611,11 +611,11 @@ The `schema` object in 3.0 differs slightly from the schema object in 2.0 &mdash
 
 ## A way to cheat -- automatically generate the schema from JSON using Stoplight
 
-Describing a JSON response can be complicated and confusing. Fortunately, there's a somewhat easy workaround. To be honest, this is the approach I use when I'm documenting JSON responses. With the Stoplight Studio Editor, you can automatically generate the specification schema syntax from a sample response. See this section in the Stoplight getting started tutorial: [Step 5: Enter the responses and response schema information](pubapis_openapis_quickstart_stoplight.html#responses).
+Describing a JSON response can be complicated and confusing. Fortunately, there's a somewhat easy workaround. To be honest, this is the approach I use when I'm documenting JSON responses. With the Stoplight Studio Editor, you can automatically generate the specification schema syntax from a sample response. See this section in the Stoplight getting started tutorial: [Step 5: Enter the responses and response schema information](https://idratherbewriting.com/learnapidoc/pubapis_openapis_quickstart_stoplight.html#responses).
 
 ## Using GUI editors to work with the specification code
 
-At this point, you're probably thinking how impractical and error-prone it's going to be as you work directly in the YAML code like this. For this reason, several companies have developed GUI editors to make it easier to work with the specification code. In particular, check out [Stoplight](pubapis_stoplight.html), which provides an editor that lets you toggle between code and a GUI display. Smartbear also offers [SwaggerHub](pubapis_swaggerhub_smartbear.html), which doesn't necessarily provide a GUI but which gives you inline commenting and versioning tools. (Note that both Stoplight and Smartbear are sponsors of the site, but I would mention them here anyway.)
+At this point, you're probably thinking how impractical and error-prone it's going to be as you work directly in the YAML code like this. For this reason, several companies have developed GUI editors to make it easier to work with the specification code. In particular, check out [Stoplight](https://idratherbewriting.com/learnapidoc/pubapis_stoplight.html), which provides an editor that lets you toggle between code and a GUI display. Smartbear also offers [SwaggerHub](https://idratherbewriting.com/learnapidoc/pubapis_swaggerhub_smartbear.html), which doesn't necessarily provide a GUI but which gives you inline commenting and versioning tools. (Note that both Stoplight and Smartbear are sponsors of the site, but I would mention them here anyway.)
 
 ## <i class="fa fa-user-circle"></i> View the Appearance in Swagger UI
 
@@ -941,7 +941,7 @@ Why is there a Models section here? Apparently, it was added by popular request 
 
 You don't need this Models section in Swagger UI because both the request and response sections of Swagger UI provide a "Model" link that lets the user toggle to this view.
 
-To hide the Models section, you can add the parameter `defaultModelsExpandDepth: -1` parameter in your Swagger UI project. I provide a [Swagger UI tutorial](pubapis_swagger.html#create_swaggerui) in an upcoming section in this course, with details about the [Swagger UI parameters](https://github.com/swagger-api/swagger-ui/blob/master/docs/usage/configuration.md#parameters) where you could configure this parameter.
+To hide the Models section, you can add the parameter `defaultModelsExpandDepth: -1` parameter in your Swagger UI project. I provide a [Swagger UI tutorial](https://idratherbewriting.com/learnapidoc/pubapis_swagger.html#create_swaggerui) in an upcoming section in this course, with details about the [Swagger UI parameters](https://github.com/swagger-api/swagger-ui/blob/master/docs/usage/configuration.md#parameters) where you could configure this parameter.
 
 ## Security definitions
 

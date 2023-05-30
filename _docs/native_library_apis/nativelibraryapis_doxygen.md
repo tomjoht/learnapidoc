@@ -48,6 +48,6 @@ You don't need to limit yourself to either Javadoc or Doxygen. There are dozens 
 
 {% include ads.html %}
 
-Perhaps the biggest frustration of document generators is that you can't integrate the rest of your documentation with them. You're mostly stuck with the reference doc output. You'll also need to generate your how-to guides and other tutorials, and then link to the reference doc output. As such, you won't end up with a single integrated experience of documentation. Additionally, it will be hard to create links inline within topics between the two outputs. Fragmentation of outputs is a topic I explore with more detail in [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html).
+Perhaps the biggest frustration of document generators is that you can't integrate the rest of your documentation with them. You're mostly stuck with the reference doc output. You'll also need to generate your how-to guides and other tutorials, and then link to the reference doc output. As such, you won't end up with a single integrated experience of documentation. Additionally, it will be hard to create links inline within topics between the two outputs. Fragmentation of outputs is a topic I explore with more detail in [Integrating Swagger UI with the rest of your docs](https://idratherbewriting.com/learnapidoc/pubapis_combine_swagger_and_guide.html).
 
 {% include random_ad3.html %}

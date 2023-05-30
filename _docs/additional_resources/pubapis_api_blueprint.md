@@ -11,7 +11,7 @@ last-modified: 2019-12-29
 
 Just as Swagger defines a spec for describing a REST API, [API Blueprint](https://apiblueprint.org/) is another specification for describing REST APIs. If you describe your API with this blueprint, tools that support API Blueprint can read and display the information.
 
-Note that unless you're using a platform that specifically requires API Blueprint, I recommend using the [OpenAPI specification](pubapis_openapi_tutorial_overview.html) instead.
+Note that unless you're using a platform that specifically requires API Blueprint, I recommend using the [OpenAPI specification](https://idratherbewriting.com/learnapidoc/pubapis_openapi_tutorial_overview.html) instead.
 
 {% if site.format == "web" %}
 * TOC
