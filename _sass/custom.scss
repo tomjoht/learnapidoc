@@ -107,6 +107,9 @@ a[data="github"]:after {
   padding-left: 5px;
 }
 
+a[href*="idratherbewriting.com"]:after {
+  content: "" !important;
+}
 
 a[href].noCrossRef::after, a[href].noExtIcon::after, pre a::after, pre.highlight a::after, pre.highlight code a::after, pre code a.vglnk::after,
 a.no_icon:after

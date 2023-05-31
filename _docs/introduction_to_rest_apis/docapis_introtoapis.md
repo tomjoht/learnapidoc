@@ -12,7 +12,9 @@ last-modified: 2023-05-28
 
 REST APIs are flourishing in the marketplace, and the web is becoming a mashup of interconnected APIs. REST APIs consist of requests to and responses from a web server. Job prospects are hot for technical writers who can write developer documentation. This course will help you break into API documentation, especially if you complete the many portfolio-building activities.
 
+{% if site.format == "web" %}
 {: .tip}
 <a class="noCrossRef" href="https://s3.us-west-1.wasabisys.com/learnapidoc-outputs/docapis_one.pdf"><i class="fa fa-file-pdf-o"></i> Download a PDF of this section.</a>
+{% endif %}
 
 {% include minitoc.html %}

@@ -18,7 +18,7 @@ Now that you've read about testing, it's time to get some more hands-on practice
 
 ## Test a topic
 
-1.  With the [open-source API project you're working with](docapis_find_open_source_project.html), find the following:
+1.  With the [open-source API project you're working with](https://idratherbewriting.com/learnapidoc/docapis_find_open_source_project.html), find the following:
 
     * Getting started tutorial (or similar tutorial)
     * API endpoint

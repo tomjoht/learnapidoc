@@ -24,11 +24,11 @@ You must now begin organizing the information. I think of this task like sorting
 
 ## 3.2 Create an outline for each group {#outline}
 
-Now that you have different groups of content, create outlines for each group.  I described the general shape of different documentation types in the [Conceptual topics section](docconceptual.html). For more documentation projects, you'll need several sections:
+Now that you have different groups of content, create outlines for each group.  I described the general shape of different documentation types in the [Conceptual topics section](https://idratherbewriting.com/learnapidoc/docconceptual.html). For more documentation projects, you'll need several sections:
 
-* [Product overview](docapis_doc_overview.html) &mdash; high-level description of the feature, requirements, prerequisites, geographic availability, components involved, workflow implementation, how to get help, etc.
-* [Concepts](docapis_conceptual_topics_overview.html) &mdash; foundational concepts related to using the feature. These topics might include diagrams or other visuals to assist with understanding.
-* [Reference](docendpoints.html) &mdash; the Javadoc or other reference documentation.
+* [Product overview](https://idratherbewriting.com/learnapidoc/docapis_doc_overview.html) &mdash; high-level description of the feature, requirements, prerequisites, geographic availability, components involved, workflow implementation, how to get help, etc.
+* [Concepts](https://idratherbewriting.com/learnapidoc/docapis_conceptual_topics_overview.html) &mdash; foundational concepts related to using the feature. These topics might include diagrams or other visuals to assist with understanding.
+* [Reference](https://idratherbewriting.com/learnapidoc/docendpoints.html) &mdash; the Javadoc or other reference documentation.
 * How-tos &mdash; descriptions of how to implement the API and handle various scenarios.
 
 An outline is a list of section headings and bullet points to cover in each section. Creating an outline precedes the actual writing of content. A good outline can reduce the fear of the blank page.
@@ -131,7 +131,7 @@ Overall, creating visuals might be a welcome change from writing. You're still w
 
 ### Code examples {#code_examples}
 
-Code examples are another way that confusing concepts take on more clarity. I explored code samples more fully in [Code samples](docapis_codesamples_bestpractices.html), so I won't repeat everything there except to summarize the main reasons why code helps clarify details. You can write a ton of content trying to describe technical concepts and techniques, but sometimes a simple code sample can speak for itself because it's in a language that the reader understands.
+Code examples are another way that confusing concepts take on more clarity. I explored code samples more fully in [Code samples](https://idratherbewriting.com/learnapidoc/docapis_codesamples_bestpractices.html), so I won't repeat everything there except to summarize the main reasons why code helps clarify details. You can write a ton of content trying to describe technical concepts and techniques, but sometimes a simple code sample can speak for itself because it's in a language that the reader understands.
 
 For example, suppose you're trying to explain a technique for getting certain data using a combination of APIs. You could list a few bullets explaining the overall process, but users might get a lot more out of viewing a code sample showing the technique. Code presents the idea in ways that natural language (e.g., English) simply can't do, no matter how you describe it. Code brings with it a story in itself with classes, methods, and other logic. Code examples take a lot of pressure off of you to explain concepts. It's a win-win &mdash; easier for you, and better for the reader.
 
