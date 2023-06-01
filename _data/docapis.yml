@@ -7,6 +7,9 @@ folders:
   class: first
   folderitems:
 
+  - title: "I. Introduction to REST APIs" 
+    jurl: docapis_introtoapis.html
+
   - title: Course Overview
     jurl: index.html
 
