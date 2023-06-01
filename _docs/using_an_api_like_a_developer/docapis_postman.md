@@ -179,7 +179,7 @@ Postman has a nifty import feature that will automatically pull in the same requ
 
 {% if site.format == "print" %}
 
-To view these buttons, go to the web page for this content at [https://idratherbewriting.com/learnapidoc/docapis_postman.html](docapis_postman.html).
+To view these buttons, go to the web page for this content at [https://idratherbewriting.com/learnapidoc/docapis_postman.html](https://idratherbewriting.com/learnapidoc/docapis_postman.html).
 
 {% elsif site.format == "web" %}
 

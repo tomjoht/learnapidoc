@@ -213,13 +213,13 @@ A common pattern in programming is to loop through a response. This code example
 
 For more information, see these topics:
 
-* [Inspect the JSON from the response payload[](]()docapis_json_console.html)
-* [Access and print a specific JSON value](docapis_access_json_values.html)
-* [Dive into dot notation](docapis_diving_into_dot_notation.html)
+* [Inspect the JSON from the response payload[](](https://idratherbewriting.com/learnapidoc/)docapis_json_console.html)
+* [Access and print a specific JSON value](https://idratherbewriting.com/learnapidoc/docapis_access_json_values.html)
+* [Dive into dot notation](https://idratherbewriting.com/learnapidoc/docapis_diving_into_dot_notation.html)
 
 ## Final Result
 
-You can view a demo of the [Color Gallery integration here](assets/files/flickr-gallery-example.html).
+You can view a demo of the [Color Gallery integration here](https://idratherbewriting.com/learnapidoc/assets/files/flickr-gallery-example.html).
 
 The result looks like this:
 

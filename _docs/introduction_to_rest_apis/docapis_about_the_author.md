@@ -35,7 +35,7 @@ Although I didn't have a programming background, I've always been somewhat techn
 
 {% include random_ad3.html %}
 
-Still, I'm by no means a programmer. As a technical writer, in-depth technical knowledge is helpful but not always essential, as it tends to be too specialized and comes at the expense of other skills and knowledge. What matters most is the ability to learn something new, across a lot of different domains and products, even if it's challenging at first. And then to articulate the knowledge in easy-to-consume ways. The [writing process](docapis_writing_process_overview.html) is still just as relevant when writing API docs as other forms of docs.
+Still, I'm by no means a programmer. As a technical writer, in-depth technical knowledge is helpful but not always essential, as it tends to be too specialized and comes at the expense of other skills and knowledge. What matters most is the ability to learn something new, across a lot of different domains and products, even if it's challenging at first. And then to articulate the knowledge in easy-to-consume ways. The [writing process](https://idratherbewriting.com/learnapidoc/docapis_writing_process_overview.html) is still just as relevant when writing API docs as other forms of docs.
 
 You're probably taking this course because you want to develop your skills and knowledge to increase your capabilities at work, to enhance your skillset's marketability, or maybe figure out how to document the new API your company is rolling out.
 
@@ -47,6 +47,6 @@ By the way, I keep adding to this course in a [Winchester Mystery House](https:/
 
 {% include random_ad2.html %}
 
-If you have a question for me, or just want to drop me a line, you can contact me through my [Contact page](contact.html). However, for most questions, you'll get a much better response by asking them in the [Write the Docs Slack](https://www.writethedocs.org/slack/). I'm also on Write the Docs Slack [@tomjohnson](https://writethedocs.slack.com/team/tomjohnson), so feel free to ask me questions there.
+If you have a question for me, or just want to drop me a line, you can contact me through my [Contact page](https://idratherbewriting.com/learnapidoc/contact.html). However, for most questions, you'll get a much better response by asking them in the [Write the Docs Slack](https://www.writethedocs.org/slack/). I'm also on Write the Docs Slack [@tomjohnson](https://writethedocs.slack.com/team/tomjohnson), so feel free to ask me questions there.
 
 {% include ads.html %}

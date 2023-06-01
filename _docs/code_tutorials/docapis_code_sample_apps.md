@@ -10,7 +10,7 @@ path1: doccode.html
 last-modified: 2020-08-09
 ---
 
-Sample apps aren't just a convenience for developers, nor even an illuminating demonstration of abstract concepts in code. Sample apps are critical for technical writers to write good documentation. Without the ability to [test content](testingdocs_overview.html) through a sample app, it's nearly impossible to know if your code instructions in your docs work.
+Sample apps aren't just a convenience for developers, nor even an illuminating demonstration of abstract concepts in code. Sample apps are critical for technical writers to write good documentation. Without the ability to [test content](https://idratherbewriting.com/learnapidoc/testingdocs_overview.html) through a sample app, it's nearly impossible to know if your code instructions in your docs work.
 
 Whether a sample app is relevant and available depends on the nature of the product, but in general you need sample apps or sample code to make sure the steps in the documentation work correctly. Additionally, sample apps tend to be powerful learning tools for developers because they allow them to experiment and see code in context from end to end.
 

@@ -10,7 +10,7 @@ path1: docconceptual.html
 last-modified: 2020-09-20
 ---
 
-Up until this point, we've mostly been focusing on the [reference aspects of API documentation](docendpoints.html) (the endpoints). The reference documentation is only one aspect of API documentation.
+Up until this point, we've mostly been focusing on the [reference aspects of API documentation](https://idratherbewriting.com/learnapidoc/docendpoints.html) (the endpoints). The reference documentation is only one aspect of API documentation.
 
 {% include random_ad4.html %}
 
@@ -37,6 +37,6 @@ In each concept topic, I'll provide general descriptions and overviews of what t
 
 {% include image_ad_right.html %}
 
-With each topic, there's an activity for you to go into your [open-source project](docapis_find_open_source_project.html) and evaluate the conceptual topic at hand. Although many of the conceptual topics are straightforward, when you look at the information in context, that is, when you look to see how the information is actually implemented, it gets a lot more interesting.
+With each topic, there's an activity for you to go into your [open-source project](https://idratherbewriting.com/learnapidoc/docapis_find_open_source_project.html) and evaluate the conceptual topic at hand. Although many of the conceptual topics are straightforward, when you look at the information in context, that is, when you look to see how the information is actually implemented, it gets a lot more interesting.
 
 {% include random_ad3.html %}

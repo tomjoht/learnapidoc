@@ -36,7 +36,7 @@ Before we begin the tutorial, note the following:
   
 * Although Stoplight has a commercial offering, their editor and documentation publishing are free (the [free tier](https://stoplight.io/pricing/) includes 1 project and 3 authors). But in general, just because you're using the Stoplight Studio editor here, it doesn't mean you're wed to their documentation output. You can use the Stoplight Studio editor to create a valid specification, export it, and then choose the tool you want to use to render it (for example, Stoplight, Redoc, Spectacle, Swagger UI, or some other display framework).
   
-* Stoplight's platform gives you a nice path toward more comprehensive documentation, including not only API reference content but also [conceptual documentation](docconceptual.html) and [tutorial content](docapiscode.html). In short, you can create Markdown files [similar to Stoplight Studio's documentation](https://meta.stoplight.io/docs/studio/README.md). Their platform lets you create a more seamless documentation experience for your readers across many different types of content, providing you with a complete publishing solution &mdash; not just a way to create reference content. (This tutorial will only cover creating API reference content, though.)
+* Stoplight's platform gives you a nice path toward more comprehensive documentation, including not only API reference content but also [conceptual documentation](https://idratherbewriting.com/learnapidoc/docconceptual.html) and [tutorial content](https://idratherbewriting.com/learnapidoc/docapiscode.html). In short, you can create Markdown files [similar to Stoplight Studio's documentation](https://meta.stoplight.io/docs/studio/README.md). Their platform lets you create a more seamless documentation experience for your readers across many different types of content, providing you with a complete publishing solution &mdash; not just a way to create reference content. (This tutorial will only cover creating API reference content, though.)
   
 * This tutorial should take about 30 minutes to an hour. No special technical knowledge is required.
 
@@ -44,7 +44,7 @@ Before we begin the tutorial, note the following:
 
 # What you'll build
 
-In this tutorial, we'll use sample information from the [OpenWeatherMap API](https://openweathermap.org/api) (more specifically, the [Current weather data endpoint](https://openweathermap.org/current)), which is the same API we've been using in other tutorials, such as the [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html).
+In this tutorial, we'll use sample information from the [OpenWeatherMap API](https://openweathermap.org/api) (more specifically, the [Current weather data endpoint](https://openweathermap.org/current)), which is the same API we've been using in other tutorials, such as the [OpenAPI tutorial](https://idratherbewriting.com/learnapidoc/pubapis_openapi_tutorial_overview.html).
 
 Here's the [documentation output](https://idratherbewriting.stoplight.io/docs/openweathermap4/YXBpOjExMTIxODY3-open-weather-map-api) that you'll build in this tutorial:
 
@@ -309,7 +309,7 @@ Now enter the path and parameter information:
 
 # Step 4: Learn how to re-use parameters {#reuse}
 
-The OpenAPI spec allows to re-use parameters by storing the information in the [`components`](pubapis_openapi_step5_components_object.html) property. In the Stoplight Studio editor, you reuse parameters by entering the parameter information in the Parameters section in the sidebar. (In the code behind the scenes, this information gets stored in `components`.)
+The OpenAPI spec allows to re-use parameters by storing the information in the [`components`](https://idratherbewriting.com/learnapidoc/pubapis_openapi_step5_components_object.html) property. In the Stoplight Studio editor, you reuse parameters by entering the parameter information in the Parameters section in the sidebar. (In the code behind the scenes, this information gets stored in `components`.)
 
 To understand how this works, let's re-use one of the query parameters.
 
@@ -574,7 +574,7 @@ You've finished creating your OpenAPI spec, so let's preview, test, and publish 
 1.  Click the **Preview** button in the upper-right corner.
 2.  In the sidebar, select the **/weather** endpoint.
 3.  Click the **Try It** tab near the top of the screen. (See note below &mdash; this feature won't work now due to CORS restrictions with the API.)
-4.  Enter your API key for the `appid` parameter. For details on getting the OpenWeatherMap API key, see [Get an OpenWeatherMap API Key](docapis_get_auth_keys.html#openweathermap_apikey). (You can also type out the API key pictured in the image below. It's not text because any API keys printed in text get exploited and then disabled by the vendor.)
+4.  Enter your API key for the `appid` parameter. For details on getting the OpenWeatherMap API key, see [Get an OpenWeatherMap API Key](https://idratherbewriting.com/learnapidoc/docapis_get_auth_keys.html#openweathermap_apikey). (You can also type out the API key pictured in the image below. It's not text because any API keys printed in text get exploited and then disabled by the vendor.)
 5.  Enter your zip code for the `zip` parameter (for example, 98058). You might have to scroll to find the zip parameter as they are sorted alphabetically. 
 The screen should look like this:
 

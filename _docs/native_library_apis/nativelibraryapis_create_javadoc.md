@@ -20,7 +20,7 @@ Javadoc is supported by Oracle. Developers can integrate the Javadoc output dire
 
 ## <i class="fa fa-user-circle"></i> Generate a Javadoc
 
-In this activity, you'll generate a Javadoc from the [sample java project](nativelibraryapis_getting_the_source.html) you downloaded earlier. If you want to preview the Javadoc that you're going to build, you can [view the output here](assets/files/javadoc/index.html).
+In this activity, you'll generate a Javadoc from the [sample java project](nativelibraryapis_getting_the_source.html) you downloaded earlier. If you want to preview the Javadoc that you're going to build, you can [view the output here](https://idratherbewriting.com/learnapidoc/assets/files/javadoc/index.html).
 
 1.  In Eclipse, go to **File > Export**.
 2.  Expand **Java** and select **Javadoc.** Then click **Next**.
@@ -63,7 +63,7 @@ In this activity, you'll generate a Javadoc from the [sample java project](nativ
     Browse to the destination location and open the `index.html` file in your browser to view the files.
 
     {: .tip}
-    If you had trouble building your Javadoc, you could [view the output here](assets/files/javadoc/index.html).
+    If you had trouble building your Javadoc, you could [view the output here](https://idratherbewriting.com/learnapidoc/assets/files/javadoc/index.html).
 
 {% include random_ad2.html %}
 

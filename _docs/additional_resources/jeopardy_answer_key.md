@@ -11,7 +11,7 @@ last-modified: 2019-03-31
 
 {% include image_ad_right.html %}
 
-The API Jeopardy questions are in the [Conclusion section of Workshop Activities](workshop.html#conclusion).
+The API Jeopardy questions are in the [Conclusion section of Workshop Activities](https://idratherbewriting.com/learnapidoc/workshop.html#conclusion).
 
 {% if site.format == "print" %}
 *Note: This content doesn't embed well in print because it contains JavaScript. Please go to [https://idratherbewriting.com/learnapidoc/jeopardy_answer_key.html] to view the content.*

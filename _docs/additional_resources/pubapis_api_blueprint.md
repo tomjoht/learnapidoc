@@ -11,7 +11,7 @@ last-modified: 2019-12-29
 
 Just as Swagger defines a spec for describing a REST API, [API Blueprint](https://apiblueprint.org/) is another specification for describing REST APIs. If you describe your API with this blueprint, tools that support API Blueprint can read and display the information.
 
-Note that unless you're using a platform that specifically requires API Blueprint, I recommend using the [OpenAPI specification](pubapis_openapi_tutorial_overview.html) instead.
+Note that unless you're using a platform that specifically requires API Blueprint, I recommend using the [OpenAPI specification](https://idratherbewriting.com/learnapidoc/pubapis_openapi_tutorial_overview.html) instead.
 
 {% if site.format == "web" %}
 * TOC
@@ -465,7 +465,7 @@ For this tutorial, we'll use a platform called Apiary to read and display the AP
     ```
 
     {: .note}
-    If the code isn't easy to copy and paste, you can [view and download the file here](assets/files/apiblueprintweatherdata.md).
+    If the code isn't easy to copy and paste, you can [view and download the file here](https://idratherbewriting.com/learnapidoc/assets/files/apiblueprintweatherdata.md).
 
 5.  Click **Save**.
 

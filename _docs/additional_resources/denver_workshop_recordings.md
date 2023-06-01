@@ -20,7 +20,7 @@ These videos are from an API documentation workshop that I gave in Denver, Color
 
 {% if site.format == "web" %}
 
-{% include note.html content="For the most recent workshop recording, see the [Video recordings of API doc workshops](docapis_course_videos.html)." %}
+{% include note.html content="For the most recent workshop recording, see the [Video recordings of API doc workshops](https://idratherbewriting.com/learnapidoc/docapis_course_videos.html)." %}
 
 ### Part I of III
 

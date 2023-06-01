@@ -153,7 +153,7 @@ To get a sense of how Markdown works, let's practice a bit with Markdown.
     * Level 2 heading
     * code formatted text
 
-3.  If desired, copy over the Markdown content from this [surfreportendpoint.md file](assets/files/surfreportendpointdoc.md) and look at the various Markdown tags.
+3.  If desired, copy over the Markdown content from this [surfreportendpoint.md file](https://idratherbewriting.com/learnapidoc/assets/files/surfreportendpointdoc.md) and look at the various Markdown tags.
 
 Markdown handles most of the syntax I normally use, but for tables, I recommend simply using HTML syntax. HTML syntax gives you more control over column widths, which can be important when customizing tables, especially if the tables have code tags.
 

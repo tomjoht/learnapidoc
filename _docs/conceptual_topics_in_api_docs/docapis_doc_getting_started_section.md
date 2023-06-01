@@ -56,7 +56,7 @@ A getting started tutorial is more than just another type of content to include.
 
 In general, consider how people prefer to learn a new system. Do they prefer to sit passively while reading a manual? Or do they want to jump in, write some code, run it, see what it does, tweak a few buttons, and learn through some trial and error, experimentation and feedback?
 
-While user learning types can fall all along this spectrum, from "systematic" (read first) to "opportunistic" (try first), as some researchers call it, the engineering mindset tends to favor the opportunistic (hands-on, experiential) approach. For more on different learning behaviors, see [How Developers Use API Documentation: An Observation Study](docapiscode_research_on_documenting_code.html#how_devs_use_docs).
+While user learning types can fall all along this spectrum, from "systematic" (read first) to "opportunistic" (try first), as some researchers call it, the engineering mindset tends to favor the opportunistic (hands-on, experiential) approach. For more on different learning behaviors, see [How Developers Use API Documentation: An Observation Study](https://idratherbewriting.com/learnapidoc/docapiscode_research_on_documenting_code.html#how_devs_use_docs).
 
 The more action-oriented, experiential approach to learning has its roots in a movement called "minimalism" that John Carroll identified long ago. Describing John Carroll's minimalism approach, David Farkas and Thomas Williams write:
 
@@ -70,7 +70,7 @@ When users can experiment with your system and see the result, and learn by doin
 
 The quicker you can get users started, the better. One way to jumpstart the configuration of an API is by using Run in Postman buttons. This can reduce more lengthy and tedious explanations about parameters and other configurations for an API.
 
-Postman is a REST API GUI client that we explored earlier in [Submit requests through Postman](docapis_postman.html). If you have your API endpoints integrated with Postman, you can either create a workspace that contains your API endpoints, or you can export your Postman collections as a widget to embed in an HTML page. When users click the Run in Postman button, they will fork your collection into their own workspace.  
+Postman is a REST API GUI client that we explored earlier in [Submit requests through Postman](https://idratherbewriting.com/learnapidoc/docapis_postman.html). If you have your API endpoints integrated with Postman, you can either create a workspace that contains your API endpoints, or you can export your Postman collections as a widget to embed in an HTML page. When users click the Run in Postman button, they will fork your collection into their own workspace.  
 
 To see how these Run in Postman buttons work, click this button:
 
@@ -110,7 +110,7 @@ You can see the many [demos of Run in Postman here](https://www.getpostman.com/i
 
 For details on how to share your Postman collections like this, see [Creating Run in Postman buttons](https://learning.postman.com/docs/publishing-your-api/run-in-postman/creating-run-button/) in the Postman documentation. To try out Run in Postman, you can either [import an OpenAPI spec into Postman](https://www.getpostman.com/docs/postman/collections/data_formats#importing-postman-data) or enter your API information manually.
 
-What's especially good about Postman is that it allows users to customize the API key and parameters and save those values. You can also safely share an API key. Although Postman doesn't provide same direct, in-documentation experience as [Swagger UI](pubapis_swagger_demo.html), in many ways the Postman client is more useful because it lets users configure and save the calls they make. They can easily save many different variations of the same endpoint, with different configurations. Postman is what internal developers often use to save and store API calls as they test and explore the functionality.
+What's especially good about Postman is that it allows users to customize the API key and parameters and save those values. You can also safely share an API key. Although Postman doesn't provide same direct, in-documentation experience as [Swagger UI](https://idratherbewriting.com/learnapidoc/pubapis_swagger_demo.html), in many ways the Postman client is more useful because it lets users configure and save the calls they make. They can easily save many different variations of the same endpoint, with different configurations. Postman is what internal developers often use to save and store API calls as they test and explore the functionality.
 
 {% include random_ad2.html %}
 
@@ -201,7 +201,7 @@ As a recap, include following characteristics in your getting started tutorial:
 
 ## <i class="fa fa-user-circle"></i> Activity with getting started tutorials
 
-With the [open-source project you identified](docapis_find_open_source_project.html), identify the getting started tutorial. Then answer the following questions:
+With the [open-source project you identified](https://idratherbewriting.com/learnapidoc/docapis_find_open_source_project.html), identify the getting started tutorial. Then answer the following questions:
 
 1. Does the API have a getting started tutorial?
 2. Does the getting-started tutorial walk you through an end-to-end scenario?
@@ -237,7 +237,7 @@ If your product doesn't allow users to get started in an easy way, consider scal
 
 Another obstacle to getting started tutorials occurs with native APIs, such as Java APIs, that require users to have an app already set up. If you don't have a sample app for the user, it will likely be difficult to show how to make a call to the API. Most native API documentation involves various classes and other app configuration across various files. In short, you need the context of an app to run the code in the tutorial.
 
-But getting engineers to make a [sample app](docapis_sample_apps.html) available is a tall order with many risks involved. Even though most QA teams have a simple sample app to facilitate testing, product teams don't usually like to give external developers these sample apps for fear that they'll use them for real scenarios. The sample apps are usually so primitive that they are in no way production scalable.
+But getting engineers to make a [sample app](https://idratherbewriting.com/learnapidoc/docapis_sample_apps.html) available is a tall order with many risks involved. Even though most QA teams have a simple sample app to facilitate testing, product teams don't usually like to give external developers these sample apps for fear that they'll use them for real scenarios. The sample apps are usually so primitive that they are in no way production scalable.
 
 {: .takeaway}
 In scenarios where you lack a sample app, you could still provide code snippets and instruct users to make the code configurations in their own apps. Assume that your target users will actually have apps and be familiar with the programming language; tell them to add a class and instantiate it with certain parameters in their app, etc. If you find that the instructions go beyond your audience's skill level, double down on those efforts to make a sample app available. (You can always add detailed notes to the sample app that state the app is not intended for production use and is a simplified form of an app to demonstrate API calls only.)

@@ -98,7 +98,7 @@ For this activity, you'll use JavaScript to display the API response on a web pa
     <a class="noCrossRef" href="https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html"><img src="{{site.media}}/jsonpayloadweather.png" alt="JSON payload from weather API logged to console" /></a>
 
     {: .tip}
-    You can view the file here: [weather-plain.html](assets/files/weather-plain.html).
+    You can view the file here: [weather-plain.html](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html).
 
 
 {% include random_ad3.html %}
@@ -191,7 +191,7 @@ Customizing log messages is helpful if you're logging various outputs to the con
 
 ## <i class="fa fa-user-circle"></i> Inspect the payload
 
-Inspect the payload by expanding each of the sections [returned in the JSON console object](assets/files/weather-plain.html). Based on the information here, what's the forecast for today?
+Inspect the payload by expanding each of the sections [returned in the JSON console object](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html). Based on the information here, what's the forecast for today?
 
 {: .note}
 I realize the page is blank and unexciting. In the next section, [Access and print a specific JSON value](docapis_access_json_values.html), we'll pull out some values and print them to the page.

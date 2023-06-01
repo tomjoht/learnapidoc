@@ -18,7 +18,7 @@ First things first &mdash; you need to figure out what the writing project invol
 
 ## 1.1. Create a doc plan {#create_plan}
 
-Create a [documentation plan](docapis_managing_doc_projects.html#create_project_plans), even if it's brief or incomplete. The doc plan will help you get organized and set some expectations about the deliverables and timelines. Answer some basic questions, such as these:
+Create a [documentation plan](https://idratherbewriting.com/learnapidoc/docapis_managing_doc_projects.html#create_project_plans), even if it's brief or incomplete. The doc plan will help you get organized and set some expectations about the deliverables and timelines. Answer some basic questions, such as these:
 
 * When is the release for the new API (and hence when is the documentation deadline)?
 * What content resources are already available? Any drafts? Product design documents? QA testing documents?
@@ -74,7 +74,7 @@ Besides the pitch materials, product design, and Javadoc, there might be other d
 
 The next step is to ask the product team for a demo of some kind. Perhaps one of the engineers has written a sample app that demonstrates how to call the API in some scenario and what to do with the response. The response might simply be to log data to the console, or to see it rendered in the terminal. That's  fine, and this simplicity is actually what you want at this point. You don't want an enterprise-scale application that has so many different dimensions and files that the API is obscured. You want a simple sample app that shows how to call the API and what data comes back.
 
-If you can, try to play around with the demo yourself. Try to get the product to work in some way, even if it's just superficial. For example, you could ask this same engineer who created the sample app to share the sample app with you and provide details on how to run it. Get it working and play around with it a little bit so you get a better sense of what you're documenting. (See [Set up a test environment](testingdocs_test_environment.html) for more details.)
+If you can, try to play around with the demo yourself. Try to get the product to work in some way, even if it's just superficial. For example, you could ask this same engineer who created the sample app to share the sample app with you and provide details on how to run it. Get it working and play around with it a little bit so you get a better sense of what you're documenting. (See [Set up a test environment](https://idratherbewriting.com/learnapidoc/testingdocs_test_environment.html) for more details.)
 
 Almost no engineer develops an API without also developing a sample app that calls the API and gets some data back, though frequently the sample app is just a bare-bones type of code project that logs data. Having some initial familiarity with the product will pay dividends later as you start writing about the feature.
 

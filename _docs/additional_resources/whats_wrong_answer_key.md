@@ -11,7 +11,7 @@ last-modified: 2019-08-29
 
 {% include image_ad_right.html %}
 
-This is the answer key for [Activity: What's wrong with this API reference topic](docapis_api_whats_wrong_activity.html).
+This is the answer key for [Activity: What's wrong with this API reference topic](https://idratherbewriting.com/learnapidoc/docapis_api_whats_wrong_activity.html).
 
 After you've finished commenting on the Google Doc, go to this [annotated Google doc](https://docs.google.com/document/d/1ogj99YHhFMkXb-HMMMko-G9Hq9Rg6cztdT06-oUZm4E/edit).
 

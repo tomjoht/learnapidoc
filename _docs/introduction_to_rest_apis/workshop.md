@@ -13,7 +13,7 @@ last-modified: 2021-12-27
 
 The workshop agenda, slides, and activities correspond to full-day API workshop. The slides and activities mirror similar sections in the course.
 
-Note that for API workshops, it helps to consolidate activities into a single page with brief instructions. The content for the activities below is the same content that appears in other parts of the course &mdash; it's just pulled in here (single-sourced) for convenience. Workshops require a healthy amount of hands-on activities to be engaging. If you have feedback about how to improve the activities, or places where you keep getting stuck, [let me know](contact.html).
+Note that for API workshops, it helps to consolidate activities into a single page with brief instructions. The content for the activities below is the same content that appears in other parts of the course &mdash; it's just pulled in here (single-sourced) for convenience. Workshops require a healthy amount of hands-on activities to be engaging. If you have feedback about how to improve the activities, or places where you keep getting stuck, [let me know](https://idratherbewriting.com/learnapidoc/contact.html).
 
 {% include random_ad4.html %}
 

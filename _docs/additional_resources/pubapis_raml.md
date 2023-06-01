@@ -10,9 +10,9 @@ path1: resources.html
 last-modified: 2018-12-23
 ---
 
-RAML stands for REST API Modeling Language and is similar to the [OpenAPI specification](pubapis_openapi_tutorial_overview.html). RAML is backed by [Mulesoft](https://www.mulesoft.com/), a full-service, end-to-end API company.
+RAML stands for REST API Modeling Language and is similar to the [OpenAPI specification](https://idratherbewriting.com/learnapidoc/pubapis_openapi_tutorial_overview.html). RAML is backed by [Mulesoft](https://www.mulesoft.com/), a full-service, end-to-end API company.
 
-Note that unless you're publishing your docs with Mulesoft or another platform that specifically requires RAML, I recommend using the [OpenAPI specification](pubapis_openapi_tutorial_overview.html) instead. However, Mulesoft offers enterprise-grade API design, management, and deployment capabilities. If you're using Mulesoft for your API, you probably want to use RAML for your documentation specification.
+Note that unless you're publishing your docs with Mulesoft or another platform that specifically requires RAML, I recommend using the [OpenAPI specification](https://idratherbewriting.com/learnapidoc/pubapis_openapi_tutorial_overview.html) instead. However, Mulesoft offers enterprise-grade API design, management, and deployment capabilities. If you're using Mulesoft for your API, you probably want to use RAML for your documentation specification.
 
 {% if site.format == "web" %}
 * TOC
@@ -43,7 +43,7 @@ To understand the proper syntax and format for RAML, you need to read the [RAML 
 
 {% include random_ad3.html %}
 
-Here's the OpenWeatherMap API (which we've been [using in this course](docapis_scenario_for_using_weather_api.html)) formatted in the RAML spec. (I actually just used [API Transformer](https://apimatic.io/transformer) to convert my OpenAPI 3.0 spec to RAML.) As you can see, RAML is highly similar to the OpenAPI spec.
+Here's the OpenWeatherMap API (which we've been [using in this course](https://idratherbewriting.com/learnapidoc/docapis_scenario_for_using_weather_api.html)) formatted in the RAML spec. (I actually just used [API Transformer](https://apimatic.io/transformer) to convert my OpenAPI 3.0 spec to RAML.) As you can see, RAML is highly similar to the OpenAPI spec.
 
 ```yaml
 #%RAML 1.0

@@ -127,7 +127,7 @@ In this activity, you'll practice accessing different values through dot notatio
 
 2. Change `john.children[0].child1` to display the correct values for each item. For example, the word `green` should appear at the ID tag called `green`.
 
-You can view the correct page here: [https://idratherbewriting.com/learnapidoc/assets/files/dot-notation-practice.html](assets/files/dot-notation-practice.html). This page also shows the answers printed.
+You can view the correct page here: [https://idratherbewriting.com/learnapidoc/assets/files/dot-notation-practice.html](https://idratherbewriting.com/learnapidoc/assets/files/dot-notation-practice.html). This page also shows the answers printed.
 
 ## Showing wind conditions on the page
 

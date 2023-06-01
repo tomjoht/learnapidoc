@@ -103,7 +103,7 @@ Ideally, test out all the code samples yourself (or implement a more robust proc
 
 With REST APIs, developers can use pretty much any programming language to make the request. One question will inevitably arise: Should you show code samples that span across several languages? If so, how many languages?
 
-Providing code samples is almost always a good thing, so if you have the bandwidth to show code samples in various languages, go for it. However, providing just one code example in your audience's target language is probably enough. If there isn't a standard language for most users, you could also just provide the curl examples in your docs, and then provide users with a [Postman collection](docapis_postman.html) or an [OpenAPI specification file](pubapis_openapi_intro.html) &mdash; both of these approaches will allow developers to generate code samples in many different languages.
+Providing code samples is almost always a good thing, so if you have the bandwidth to show code samples in various languages, go for it. However, providing just one code example in your audience's target language is probably enough. If there isn't a standard language for most users, you could also just provide the curl examples in your docs, and then provide users with a [Postman collection](https://idratherbewriting.com/learnapidoc/docapis_postman.html) or an [OpenAPI specification file](https://idratherbewriting.com/learnapidoc/pubapis_openapi_intro.html) &mdash; both of these approaches will allow developers to generate code samples in many different languages.
 
 Remember that each code sample you provide needs to be tested and maintained. When you make updates to your API, you'll need to update each of the code samples across all the different languages. When your API pushes out a new release, you'll need to check all the code samples to make sure the code doesn't break with the changes in the new release (this is called "regression testing" in QA lingo).
 
@@ -153,7 +153,7 @@ The IBM Watson tutorial does an excellent job breaking up the tutorial steps int
 
 ## Code samples for sample weather API
 
-Earlier in the course, we walked through [each element of reference documentation](docapis_new_endpoint_to_doc.html) for a fictitious new endpoint called `surfreport` in the weather API we were working with. Let's return briefly to that scenario and assume that we also want to add a code tutorial for showing the surfreport on a web page. What might that tutorial look like? Here's an example:
+Earlier in the course, we walked through [each element of reference documentation](https://idratherbewriting.com/learnapidoc/docapis_new_endpoint_to_doc.html) for a fictitious new endpoint called `surfreport` in the weather API we were working with. Let's return briefly to that scenario and assume that we also want to add a code tutorial for showing the surfreport on a web page. What might that tutorial look like? Here's an example:
 
 <div class="docSample">
 
@@ -206,7 +206,7 @@ For a deeper dive into how to document code samples, see my presentation on [Cre
 
 ## <i class="fa fa-user-circle"></i> Activity with code samples
 
-With the [open-source project you identified](docapis_find_open_source_project.html), identify code samples in the API documentation. Answer the following questions:
+With the [open-source project you identified](https://idratherbewriting.com/learnapidoc/docapis_find_open_source_project.html), identify code samples in the API documentation. Answer the following questions:
 
 1. Are there code samples provided? In which languages?
 2. How many code samples are there? Lots? Just a few? None?

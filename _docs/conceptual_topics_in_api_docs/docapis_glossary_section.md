@@ -37,7 +37,7 @@ To simplify the language, you can't just omit the necessary terminology for the 
 <figure><img class="docimage medium border" src="{{site.media}}/nonref_glossary.svg" alt="Glossary" /><figcaption>Glossaries not only provide clarity about terms for users but also help the writers think more clearly and consistently about the topic.</figcaption></figure>
 
 {: .tip}
-I provide an [API glossary here](api-glossary.html) that defines many terms related to API documentation. If you run into unfamiliar jargon that I don't define in the topic, you can always consult the glossary.
+I provide an [API glossary here](https://idratherbewriting.com/learnapidoc/api-glossary.html) that defines many terms related to API documentation. If you run into unfamiliar jargon that I don't define in the topic, you can always consult the glossary.
 
 ## Should you provide a glossary?
 
@@ -80,7 +80,7 @@ In the worst case scenario, the term might not have a tooltip or link, and the g
 
 ## Reusing glossary definitions
 
-To reuse glossary definitions, consider storing glossary terms and definitions in a structured file that acts like a database for glossary terms. For example, on my [glossary page](api-glossary.html), the data source is a YAML file here: [_data/glossary.yml](https://github.com/tomjoht/learnapidoc/blob/main/_data/glossary.yml). Each definition follows a structure like this:
+To reuse glossary definitions, consider storing glossary terms and definitions in a structured file that acts like a database for glossary terms. For example, on my [glossary page](https://idratherbewriting.com/learnapidoc/api-glossary.html), the data source is a YAML file here: [_data/glossary.yml](https://github.com/tomjoht/learnapidoc/blob/main/_data/glossary.yml). Each definition follows a structure like this:
 
 ```yaml
 api:
@@ -212,7 +212,7 @@ Regardless of the format, I'm usually thrilled to see a glossary. All too often,
 
 ## <i class="fa fa-user-circle"></i> Activity with glossaries {#activity_with_glossaries}
 
-With the [open-source project you identified](docapis_find_open_source_project.html), identify the glossary (or lack of one). Then answer the following questions:
+With the [open-source project you identified](https://idratherbewriting.com/learnapidoc/docapis_find_open_source_project.html), identify the glossary (or lack of one). Then answer the following questions:
 
 1. Does the API include a glossary?
 2. If the API lacks a glossary, what terms would you suggest including in a glossary?
