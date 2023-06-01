@@ -10,7 +10,7 @@ path1: likeadeveloper.html
 last-modified: 2021-12-28
 ---
 
-Almost every API has a method in place to authenticate requests. You usually have to provide an API key in your requests to get a response. Although we'll dive into [authentication and authorization](docapis_more_about_authorization.html) later, we need to get some API keys now to make requests to our weather API.
+Almost every API has a method in place to authenticate requests. You usually have to provide an API key in your requests to get a response. Although we'll dive into [authentication and authorization](https://idratherbewriting.com/learnapidoc/docapis_more_about_authorization.html) later, we need to get some API keys now to make requests to our weather API.
 
 * TOC
 {:toc}
@@ -62,7 +62,7 @@ Now for contrast, let's get the keys for the Aeris Weather API, using a free dev
 After registering your app, you should see an ID, secret, and namespace for the app. Copy this information into a place you can easily access since you'll need it to make requests.
 
 {: .tip}
-Keep in mind how users authorize calls with an API &mdash; this is something you usually cover in API documentation. Later in the course, we will dive into [authorization methods](docapis_more_about_authorization.html) in more detail.
+Keep in mind how users authorize calls with an API &mdash; this is something you usually cover in API documentation. Later in the course, we will dive into [authorization methods](https://idratherbewriting.com/learnapidoc/docapis_more_about_authorization.html) in more detail.
 
 {% include random_ad2.html %}
 

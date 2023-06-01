@@ -28,7 +28,7 @@ curl provides a generic, language-agnostic way to demonstrate HTTP requests and 
 
 ## Try using curl to GET a web page
 
-As mentioned earlier, one reason REST APIs are so familiar is that REST follows the same model as the web (see [What is a REST API?](docapis_what_is_a_rest_api.html#the-web-itself-follows-rest)). When you type an `http` address into a browser address bar, you're telling the browser to make an HTTP request to a resource on a server. The server returns a response, and your browser converts the response to a more visual display. But you can also see the raw code.
+As mentioned earlier, one reason REST APIs are so familiar is that REST follows the same model as the web (see [What is a REST API?](https://idratherbewriting.com/learnapidoc/docapis_what_is_a_rest_api.html#the-web-itself-follows-rest)). When you type an `http` address into a browser address bar, you're telling the browser to make an HTTP request to a resource on a server. The server returns a response, and your browser converts the response to a more visual display. But you can also see the raw code.
 
 To see an example of how curl retrieves a web resource, open a terminal and type the following:
 
@@ -144,7 +144,7 @@ The zip code (`zip`), app ID (`appid`), and units (`units`) parameters were pass
 
 (In the above code, replace `APIKEY` with your actual API key.)
 
-After the query string, each parameter is separated from other parameters by the ampersand `&` symbol. The order of the query string parameters doesn't matter. The order only matters if the parameters are *on the left of the query string* (and thus part of the URL itself). Any configurable parts of the endpoint that appear before the query string are called [path parameters](docapis_doc_parameters.html#path_parameters) (we'll dive into these later).
+After the query string, each parameter is separated from other parameters by the ampersand `&` symbol. The order of the query string parameters doesn't matter. The order only matters if the parameters are *on the left of the query string* (and thus part of the URL itself). Any configurable parts of the endpoint that appear before the query string are called [path parameters](https://idratherbewriting.com/learnapidoc/docapis_doc_parameters.html#path_parameters) (we'll dive into these later).
 
 ## Common curl commands related to REST {#common}
 

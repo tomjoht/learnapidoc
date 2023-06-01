@@ -283,8 +283,8 @@ $.ajax(settings).done(function (response) {
 
 ## More exercises
 
-If you'd like to follow some more exercises that involve calling REST APIs, accessing specific values, and printing the values to the page, see the following topics in the [Glossary and resources](resources.html) section:
+If you'd like to follow some more exercises that involve calling REST APIs, accessing specific values, and printing the values to the page, see the following topics in the [Glossary and resources](https://idratherbewriting.com/learnapidoc/resources.html) section:
 
-* [Get event information using the Eventbrite API](docapis_eventbrite_example.html)
-* [Flickr example: Retrieve a Flickr gallery](docapis_flickr_example.html)
-* [Get wind speed using the Aeris Weather API](docapis_aerisweather_example.html)
+* [Get event information using the Eventbrite API](https://idratherbewriting.com/learnapidoc/docapis_eventbrite_example.html)
+* [Flickr example: Retrieve a Flickr gallery](https://idratherbewriting.com/learnapidoc/docapis_flickr_example.html)
+* [Get wind speed using the Aeris Weather API](https://idratherbewriting.com/learnapidoc/docapis_aerisweather_example.html)

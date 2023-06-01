@@ -40,7 +40,7 @@ Some popular GUI clients include the following:
 Of the various GUI clients available, Postman is probably the best option, since it allows you to save both calls and responses, is free, works on both Mac and PC, and is easy to configure.
 
 {: .note}
-A lot of times, abstract concepts don't make sense until you can contextualize them with an action. In this course, I'm following more of an "experience-first" methodology. After you do an activity, we'll explore the concepts in more depth. So if it seems like I'm glossing over concepts now, such as what a GET method is or an endpoint, hang in there. When we deep dive into these points in [Documenting API endpoints](docendpoints.html), these concepts will be a lot clearer.
+A lot of times, abstract concepts don't make sense until you can contextualize them with an action. In this course, I'm following more of an "experience-first" methodology. After you do an activity, we'll explore the concepts in more depth. So if it seems like I'm glossing over concepts now, such as what a GET method is or an endpoint, hang in there. When we deep dive into these points in [Documenting API endpoints](https://idratherbewriting.com/learnapidoc/docendpoints.html), these concepts will be a lot clearer.
 
 {% include random_ad2.html %}
 
@@ -224,4 +224,4 @@ If this button doesn't work for you, copy this [import link](https://www.getpost
 Clicking the Run in Postman buttons should automatically prompt you to import the collections into Postman. If it doesn't work, copy the import link address and, in Postman, click **Import** in the upper-left corner. Then click the **Import From Link** tab, paste in the address and click **Import**.
 
 {: .tip}
-If you'd like to learn more about Postman, listen to this [interview with the Postman founder](https://idratherbewriting.com/2018/01/22/postman-for-docs-podcast/). We recorded this as part of the [Write the Docs podcast](http://podcast.writethedocs.org/) and focused on the documentation features within Postman. For more information on creating the Run in Postman buttons, see the [Run in Postman button](docapis_doc_getting_started_section.html#runinpostmanbutton) section in the [Getting started tutorial](docapis_doc_getting_started_section.html).
+If you'd like to learn more about Postman, listen to this [interview with the Postman founder](https://idratherbewriting.com/2018/01/22/postman-for-docs-podcast/). We recorded this as part of the [Write the Docs podcast](http://podcast.writethedocs.org/) and focused on the documentation features within Postman. For more information on creating the Run in Postman buttons, see the [Run in Postman button](https://idratherbewriting.com/learnapidoc/docapis_doc_getting_started_section.html#runinpostmanbutton) section in the [Getting started tutorial](https://idratherbewriting.com/learnapidoc/docapis_doc_getting_started_section.html).

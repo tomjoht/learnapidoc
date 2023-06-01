@@ -133,7 +133,7 @@ You can view the correct page here: [https://idratherbewriting.com/learnapidoc/a
 
 {% include random_ad2.html %}
 
-At the beginning of the section on [Using an API like a developer](docapis_scenario_for_using_weather_api.html#endgoal), I showed an example of [embedding the wind speed](docapis_scenario_for_using_weather_api.html#endgoal) and other details on a website. Now let's revisit this code example and see how it's put together.
+At the beginning of the section on [Using an API like a developer](docapis_scenario_for_using_weather_api.html#endgoal), I showed an example of embedding the wind speed and other details on a website. Now let's revisit this code example and see how it's put together.
 
 Copy the following code into a basic HTML file:
 
@@ -205,6 +205,6 @@ You can view the file <a href="https://idratherbewriting.com/learnapidoc/assets/
 
 As you've progressed through the exercises for using an API like a developer, you've gained a high-level understanding of how REST APIs work, what information developers need, how they might use an API, how they make requests, evaluate responses, and other details.
 
-With this background, it's time to switch gears and put on your technical writing hat. In the next section, [Documenting endpoints](docendpoints.html), you'll assume the task of [documenting a new endpoint](docapis_new_endpoint_to_doc.html) that was added to a weather API. You'll learn the essential sections in endpoint reference documentation, the terminology to use, and formatting conventions for API reference information.
+With this background, it's time to switch gears and put on your technical writing hat. In the next section, [Documenting endpoints](https://idratherbewriting.com/learnapidoc/docendpoints.html), you'll assume the task of [documenting a new endpoint](https://idratherbewriting.com/learnapidoc/docapis_new_endpoint_to_doc.html) that was added to a weather API. You'll learn the essential sections in endpoint reference documentation, the terminology to use, and formatting conventions for API reference information.
 
 {% include ads.html %}

@@ -34,7 +34,7 @@ Finding the right project can be challenging, but it is critical to your portfol
 
 The ideal open-source API project should meet the following criteria. The project should:
 
-* Involve a REST API (not a [library-based API](nativelibraryapis_overview.html) or some other developer tool that isn't an API).
+* Involve a REST API (not a [library-based API](https://idratherbewriting.com/learnapidoc/nativelibraryapis_overview.html) or some other developer tool that isn't an API).
 * Have some documentation needs.
 * Not be so technical that it's beyond your ability to learn it. (If you already have familiarity with a programming language, you might target projects that focus on that language.)
 * Be active, with a somewhat recent commit.
@@ -56,7 +56,7 @@ To find an open-source project with API doc needs:
 
 4.  Click **Search** and browse [the results](https://github.com/search?q=api+documentation+label%3A%22help+wanted%22&type=Issues).
 
-    In the results, you might want to look for a *REST API* project (rather than a [native-library API]({{site.rooturl}}nativelibraryapis_overview.html) such as a Java API). Developers don't often distinguish between the two with requests related to API documentation. If you see doc requests related to Java, C++, JavaScript, or some other programming-specific framework (with no identifiable endpoints), it's probably not a REST API. However, working on such a project could be equally fulfilling as a learning opportunity. It depends on what you're interested in.
+    In the results, you might want to look for a *REST API* project (rather than a [native-library API](https://idratherbewriting.com/learnapidoc/nativelibraryapis_overview.html) such as a Java API). Developers don't often distinguish between the two with requests related to API documentation. If you see doc requests related to Java, C++, JavaScript, or some other programming-specific framework (with no identifiable endpoints), it's probably not a REST API. However, working on such a project could be equally fulfilling as a learning opportunity. It depends on what you're interested in.
 
     As you browse the results, are there any projects that look interesting or promising? If so, great. If not, adjust some of the keywords and keep looking.
 
@@ -85,7 +85,7 @@ To find an open-source project with API doc needs:
 
 ## Recognizing the type of API used in the project
 
-When you look for API projects, recognize that there are many different types of APIs. Many of the APIs you run across might be [native library APIs](nativelibraryapis_overview.html), which don't use web protocols to make requests and responses (as REST APIs do) but rather involve incorporating a language-specific library into the project. If the API seems to focus on a particular language, and the API documentation looks auto-generated, it's probably a native-library API.
+When you look for API projects, recognize that there are many different types of APIs. Many of the APIs you run across might be [native library APIs](https://idratherbewriting.com/learnapidoc/nativelibraryapis_overview.html), which don't use web protocols to make requests and responses (as REST APIs do) but rather involve incorporating a language-specific library into the project. If the API seems to focus on a particular language, and the API documentation looks auto-generated, it's probably a native-library API.
 
 {% include image_ad_right.html %}
 
@@ -93,7 +93,7 @@ On the other hand, if the project's documentation contains these core reference 
 
 ## Contributing will require Git skills
 
-When you later contribute to the open-source project, you will need to understand the basic [Pull request Git workflow](pubapis_github_pull_requests.html). Understanding the Git workflow might require you to ramp up on [Git tutorials](https://www.atlassian.com/git/tutorials) a bit first, but there's no better way to learn Git than by actively using it in a real project scenario.
+When you later contribute to the open-source project, you will need to understand the basic [Pull request Git workflow](https://idratherbewriting.com/learnapidoc/pubapis_github_pull_requests.html). Understanding the Git workflow might require you to ramp up on [Git tutorials](https://www.atlassian.com/git/tutorials) a bit first, but there's no better way to learn Git than by actively using it in a real project scenario.
 
 Don't worry so much about Git now. You can learn these skills later when you have content you're ready to contribute. For now, just find a project.
 
@@ -132,4 +132,4 @@ For a tutorial on pull requests workflows with GitHub projects, see [Pull reques
 
 ## Next steps
 
-After you find an open-source project, go to the next activity: [Evaluate API reference docs for core elements](docapis_api_reference_activity.html).
+After you find an open-source project, go to the next activity: [Evaluate API reference docs for core elements](https://idratherbewriting.com/learnapidoc/docapis_api_reference_activity.html).

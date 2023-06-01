@@ -23,7 +23,7 @@ This activity assumes you have curl installed. curl is available on Mac and some
 
 To make a request with curl:
 
-1.  Assuming you completed the exercises in the [Postman tutorial]({{site.rooturl}}docapis_postman.html), go back into Postman.
+1.  Assuming you completed the exercises in the [Postman tutorial](https://idratherbewriting.com/learnapidoc/docapis_postman.html), go back into Postman.
 2.  On any request you've configured, below the Save button in Postman, click the **Code** link. (If you don't see the link, scroll up.)
 3.  In the Generate Code Snippets dialog box, select **cURL** from the drop-down list, and then click **Copy to Clipboard**.
 
@@ -68,7 +68,7 @@ To make a request with curl:
 
 ## Note about single and double quotes with Windows curl requests {#windows_notes}
 
-If you're using Windows to submit a lot of curl requests, and the curl requests require you to submit JSON in the [request body](docapis_doc_parameters.html#request_bodies), you might run into issues with single versus double quotes. The problem is that request body content is often formatted in JSON, which requires double quotes.
+If you're using Windows to submit a lot of curl requests, and the curl requests require you to submit JSON in the [request body](https://idratherbewriting.com/learnapidoc/docapis_doc_parameters.html#request_bodies), you might run into issues with single versus double quotes. The problem is that request body content is often formatted in JSON, which requires double quotes.
 
 {% include random_ad4.html %}
 

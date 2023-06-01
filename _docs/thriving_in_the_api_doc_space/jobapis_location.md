@@ -763,4 +763,4 @@ In this activity, you'll get a sense of the skills needed for the jobs in your l
     *  Portfolio with writing samples that include developer documentation
     *  Technical knowledge related to developer domain
     *  Experience writing developer documentation
-7.  Make a plan for how you'll match up your portfolio, tech knowledge, and experience related to what these job descriptions are asking for. You might need to dedicate more time to an [open-source documentation project]({{site.rooturl}}docapis_find_open_source_project.html) to build up the needed skills.
+7.  Make a plan for how you'll match up your portfolio, tech knowledge, and experience related to what these job descriptions are asking for. You might need to dedicate more time to an [open-source documentation project](https://idratherbewriting.com/learnapidoc/docapis_find_open_source_project.html) to build up the needed skills.

@@ -11,7 +11,7 @@ last-modified: 2020-01-02
 
 Technical writers who can write developer documentation are in high demand, especially in the Silicon Valley area. There are plenty of technical writers who can write documentation for graphical user interfaces but not many who can navigate the developer landscape to provide highly technical documentation for developers working in code.
 
-Although I briefly mentioned jobs in [Introduction to REST API documentation](docapis_intro_to_rest_api_doc.html), in this section of my API documentation course, I'll dive deeper into the job market for API documentation.
+Although I briefly mentioned jobs in [Introduction to REST API documentation](https://idratherbewriting.com/learnapidoc/docapis_intro_to_rest_api_doc.html), in this section of my API documentation course, I'll dive deeper into the job market for API documentation.
 
 {% if site.format == "web" %}
 * TOC
@@ -34,7 +34,7 @@ In nearly every job description for technical writers in developer documentation
 
 > Ability to read code in one or more programming languages, such as Java, C++, or Python.
 
-You may wonder what the motivation is behind these requirements, especially if the core APIs are RESTful. After all, they can't expect you to *do* a programmer's job. No, but here's the most common scenario. The company has a REST API for interacting with their services. To make it easy for developers, the company provides [SDKs and client implementations](docapis_sdks.html) in various languages for the REST API.
+You may wonder what the motivation is behind these requirements, especially if the core APIs are RESTful. After all, they can't expect you to *do* a programmer's job. No, but here's the most common scenario. The company has a REST API for interacting with their services. To make it easy for developers, the company provides [SDKs and client implementations](https://idratherbewriting.com/learnapidoc/docapis_sdks.html) in various languages for the REST API.
 
 For an example, take a look at Algolia's API. You can view the documentation for their [REST API here](https://www.algolia.com/doc/rest). However, when you implement Algolia (which provides a search feature for your site), you'll probably follow the documentation for your specific platform or language.
 
@@ -80,7 +80,7 @@ The balance between generalist and specialist roles is an ongoing challenge that
 
 ## Consolations for technical writers
 
-As a consolation to this stress of having to navigate multiple programming domains, you can take comfort in the fact that REST APIs (which remember are language agnostic) are becoming more common and are replacing [native-library APIs](nativelibraryapis_overview.html). The advantages of providing a universally accessible API using any language platform usually outweigh the specifics you get from a native library API.
+As a consolation to this stress of having to navigate multiple programming domains, you can take comfort in the fact that REST APIs (which remember are language agnostic) are becoming more common and are replacing [native-library APIs](https://idratherbewriting.com/learnapidoc/nativelibraryapis_overview.html). The advantages of providing a universally accessible API using any language platform usually outweigh the specifics you get from a native library API.
 
 For example, when I worked at 41st Parameter (a startup acquired by Experian), the company had a Java, .NET, and C++ API &mdash; each implementation did the same thing but in different languages. We also had an SDK for Android and iOS.
 

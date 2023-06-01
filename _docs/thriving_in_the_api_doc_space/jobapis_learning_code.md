@@ -20,7 +20,7 @@ With developer documentation roles, some level of coding is required. But you do
 
 When faced with these multi-language documentation challenges, hiring managers often search for technical writers who are former programmers to do the tasks. There are a good number of technical writers who were once programmers, and they can command more respect and competition for these developer documentation jobs.
 
-But even developers will not know more than a few languages. Finding a technical writer who commands a high degree of English language fluency in addition to possessing in-depth technical knowledge of Java, Python, C++, .NET, Ruby, in addition to mastering [docs tools](pubapis_docs_as_code.html) to facilitate the authoring/publishing process from beginning to end is like finding a unicorn. (In other words, these technical writers don't really exist.)
+But even developers will not know more than a few languages. Finding a technical writer who commands a high degree of English language fluency in addition to possessing in-depth technical knowledge of Java, Python, C++, .NET, Ruby, in addition to mastering [docs tools](https://idratherbewriting.com/learnapidoc/pubapis_docs_as_code.html) to facilitate the authoring/publishing process from beginning to end is like finding a unicorn. (In other words, these technical writers don't really exist.)
 
 If you find one of these technical writers, the person is likely making a small fortune in contracting rates and has a near limitless choice of jobs. Companies often list knowledge of multiple programming languages as a requirement, but they realize they'll never find a candidate who is both a William Shakespeare and a Steve Wozniak.
 
@@ -94,7 +94,7 @@ Here's a transcript of two questions in their exchange (cleaned up a bit for rea
 
 Keep in mind that Davis and Neiman are trying to persuade more European countries to use Synergistech as their recruiting agency to find and hire API tech writers, so they're presenting the need for engineering-savvy tech writers. These super tech-savvy writers are harder to find &mdash; hence the need for expert recruiters. Regardless of the agenda, Neiman and Davis argue for a higher level of coding proficiency than Wood or Rhea.
 
-The level of coding knowledge required no doubt depends on the position, environment, and expectations at your company. Perhaps if the tech writer doesn't have more of an engineering background, engineers will just send the tech writer [code snippets](docapis_codesamples_bestpractices.html) to paste into the docs. But without the technical acumen to fully understand, test, and integrate the code in meaningful ways, the tech writer will be at the mercy of engineers and their terse explanations or cryptic inline comments. The tech writer's role will be reduced to being an editor/publisher instead of a writer.
+The level of coding knowledge required no doubt depends on the position, environment, and expectations at your company. Perhaps if the tech writer doesn't have more of an engineering background, engineers will just send the tech writer [code snippets](https://idratherbewriting.com/learnapidoc/docapis_codesamples_bestpractices.html) to paste into the docs. But without the technical acumen to fully understand, test, and integrate the code in meaningful ways, the tech writer will be at the mercy of engineers and their terse explanations or cryptic inline comments. The tech writer's role will be reduced to being an editor/publisher instead of a writer.
 
 In my experience, Neiman's explanation about developers instructing tech writers to create similar code in other languages (based on a 15-minute over-the-shoulder conversation at the engineer's desk) goes too far. Although I've created simple JavaScript code samples (based on a pattern the engineers showed me), I've never been asked to create code samples across other languages. I could auto-generate code snippets for web API requests (using Postman), but to develop code across multiple languages tends to be more of the programmer's responsibility, not the tech writer's.
 
@@ -102,7 +102,7 @@ In my experience, Neiman's explanation about developers instructing tech writers
 
 Neiman goes on to say that in one company, he tested out the code from engineers and found that much of it relied on programs, utilities, or other configurations already set up on the developers' computers. As such, the engineers were blind to the initial setup requirements that users would need to run the code properly. Neiman says this is one danger of simply copying and pasting the code from engineers into documentation. While it may work on the developer's machine, it will often fail for users.
 
-This comment from Neiman does ring more true to me. As I argued for extensively in [Testing your API documentation](testingdocs.html), you have to be able to test the endpoints, code samples, and SDKs in order to write and evaluate the documentation. It is usually true that programmers (who set up their machines months ago) have long forgotten or can't even identify all the frameworks, configurations, and other utilities they installed to get something working. The more technical you are, the more powerful of a role you can play in shaping the information.
+This comment from Neiman does ring more true to me. As I argued for extensively in [Testing your API documentation](https://idratherbewriting.com/learnapidoc/testingdocs.html), you have to be able to test the endpoints, code samples, and SDKs in order to write and evaluate the documentation. It is usually true that programmers (who set up their machines months ago) have long forgotten or can't even identify all the frameworks, configurations, and other utilities they installed to get something working. The more technical you are, the more powerful of a role you can play in shaping the information.
 
 Neiman is a former engineer and says that during his career, he has probably worked with 20-25 different programming languages. Being able to learn a new language quickly and get up to speed is a key characteristic of his tech comm consulting success, he says.
 
@@ -149,7 +149,7 @@ Keep in mind that your level of involvement with editing, publishing, and author
 
 If you're stuck in the publishing/editing area, you can interview engineers at length about what's going on in the code (record these discussions &mdash; Evernote has a nifty recording feature built-in that I've used multiple times for just this purpose), and then try your best to describe the actions in as clear speech as possible. You can always fall back on the idea that for those users who need Python, the Python code should look somewhat familiar to them. Well-written code should be, in some sense, self-descriptive in what it's doing. Unless there's something odd or non-standard in the approach, engineers fluent in code should be able to get a sense of how the code works.
 
-In your documentation, you'll need to focus on the higher-level information, the "why" behind the approach, highlighting of any non-standard techniques, and the general strategies behind the code. You can get this *why* by asking developers for the information in informational interviews. The details of *what* will either be apparent in the code or can be minimized. (See [Code samples and tutorials](docapis_codesamples_bestpractices.html) for details.)
+In your documentation, you'll need to focus on the higher-level information, the "why" behind the approach, highlighting of any non-standard techniques, and the general strategies behind the code. You can get this *why* by asking developers for the information in informational interviews. The details of *what* will either be apparent in the code or can be minimized. (See [Code samples and tutorials](https://idratherbewriting.com/learnapidoc/docapis_codesamples_bestpractices.html) for details.)
 
 As you decide how much detail to include, remember that even though your audience consists of developers, it doesn't mean they're all experts with every language. For example, the developer may be a Java programmer who knows just enough iOS to implement something on iOS, but for more detailed knowledge, the developer may be depending on code samples in the documentation. Conversely, a developer who has real expertise in iOS might be winging it in Java-land and relying on your documentation to pull off a basic implementation.
 
@@ -186,8 +186,8 @@ Even so, this pomodoro technique for focus doesn't solve the problem. It's still
 There are a lot of questions about just how to learn code, and I don't have all the answers. But here's what I know:
 
 *  Developer documentation requires familiarity with code, though exactly how much expertise you need is debatable.
-*  You have to understand explanations from engineers, including the [terms used](docapis_glossary_section.html). The explanations in your documentation should focus on the *why* more than the *how*.
-*  You should be able to [test code](testingdocs_overview.html) from engineers so that you can identify assumptions that engineers are often blind to.
+*  You have to understand explanations from engineers, including the [terms used](https://idratherbewriting.com/learnapidoc/docapis_glossary_section.html). The explanations in your documentation should focus on the *why* more than the *how*.
+*  You should be able to [test code](https://idratherbewriting.com/learnapidoc/testingdocs_overview.html) from engineers so that you can identify assumptions that engineers are often blind to.
 *  To thrive in an API documentation career, you have to incorporate a regiment of continual learning.
 *  Completing several pomodoros a day over the course of weeks and months can result in significant progress in building your technical understanding.
 
@@ -203,7 +203,7 @@ However, take consolation in the fact that your job is not to code but rather to
 
 For more information about working with code, see these two topics:
 
-* [SDKs](docapis_sdks.html)
-* [Code samples and tutorials](docapis_codesamples_bestpractices.html)
+* [SDKs](https://idratherbewriting.com/learnapidoc/docapis_sdks.html)
+* [Code samples and tutorials](https://idratherbewriting.com/learnapidoc/docapis_codesamples_bestpractices.html)
 
 Let's look at one more topic in this jobs section: [Locations for API doc writer jobs](jobapis_location.html).

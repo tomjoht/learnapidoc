@@ -47,32 +47,33 @@ th  {color: white}
   margin-left:40px;
 }
 
-/* uncomment this style if you want page number cross refs to appear in parentheses
-after internal links. i commented this out because some internal links appear in 
-the chapter outputs, others don't.
-/*
-/* cross-references to pages 
+
+/* cross-references to pages */
 a[href]::after {
     content: " (p. " target-counter(attr(href), page) ")"
 }
-*/
 
-/*
-a[href]::after {
-    content: ""
-}
-*/
-
-/* uncomment this style if you want to include the href target in 
-parentheses after each link. I think this style significantly interferes with
-readability.
-/*
 a[href^="http:"]::after, a[href^="https:"]::after {
     content: " (" attr(href) ") ";
 }
-*/
 
-/* cut this i think -- not sure what it actually does.
+a[href^="https://"]::after,a[href^="http://"]::after {
+  content: "";
+  display: inline-block;
+  width: 14px; 
+  height: 12px;
+  margin-left: 1px; 
+  background: url('/Users/tomjoht/projects/learnapidoc/images/externalIcon.svg') no-repeat center center; 
+  background-size: contain;
+}
+
+p > a[href] {
+    color: black !important;
+    text-decoration: underline;
+    text-decoration-color: lightgray;
+}
+
+/* cut this i think
 chapter {
 prince-pdf-destination: attr(identifier,string)
 } */
@@ -82,32 +83,16 @@ a::after{
   }
 */
 
-a[href^="http://"]:not([href*="idratherbewriting.com/learnapidoc"]),
-a[href^="https://"]:not([href*="idratherbewriting.com/learnapidoc"])::after {
-  content: "";
-  display: inline-block;
-  width: 14px; /* Your icon width */
-  height: 12px; /* Your icon height */
-  margin-left: 1px; /* Space between the link and the icon */
-  background: url('/Users/tomjoht/projects/learnapidoc/images/externalIcon.svg') no-repeat center center; /* URL of your icon */
-  background-size: contain;
+
+
+a[href] {
+    color: #337CD6 !important;
+    text-decoration: none;
 }
-
-
-p > a[href] {
-    color: black !important;
-    text-decoration: underline;
-    text-decoration-color: lightgray;
-}
-
-/* this style makes it so that relative URLs are expected to appear in the PDF output and so
-Prince will retain the cross reference in parentheses afterwards, but for absolute URLs, there won't 
-be a cross reference in the parentheses afterwards, and likewise there won't appear any URL in 
-parentheses after the link, as that harms readability. */
-
 a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::after {
     content: "";
 }
+
 
 .printTitle {
     line-height:30pt;

@@ -101,7 +101,7 @@ Each weather API has an entirely different approach to documentation. As you'll 
 
 {% include random_ad4.html %}
 
-As I mentioned earlier, REST APIs are an architectural style that follows common characteristics and principles; they don't all follow the same standard or specification. Users have to read the documentation to understand how to use the API. (See ["REST is a style, not a standard."](docapis_what_is_a_rest_api.html#rest-is-a-style-not-a-standard))
+As I mentioned earlier, REST APIs are an architectural style that follows common characteristics and principles; they don't all follow the same standard or specification. Users have to read the documentation to understand how to use the API. (See ["REST is a style, not a standard."](https://idratherbewriting.com/learnapidoc/docapis_what_is_a_rest_api.html#rest-is-a-style-not-a-standard))
 
 {% include ads.html %}
 

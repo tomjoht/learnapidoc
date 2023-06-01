@@ -85,7 +85,7 @@ For this activity, you'll use JavaScript to display the API response on a web pa
 
     (In the above code, replace `APIKEY` with your actual API key.)
 
-    What is this code doing? In a nutshell, when `ajax` (a jQuery function) retrieves the response from the API, it assigns the response to `response`. A variable called `content` is created and set it equal to `response.wind.speed` ([dot notation]({{site.rooturl}}docapis_diving_into_dot_notation.html) is used to access this value). jQuery's `append` method inserts `content` after an element called `#windSpeed`on the page. (I realize this is an extremely abbreviated explanation, but explaining JavaScript is beyond the scope of this course. In general, you can learn more by reading about the [jQuery.ajax()](https://api.jquery.com/jquery.ajax/) function.)
+    What is this code doing? In a nutshell, when `ajax` (a jQuery function) retrieves the response from the API, it assigns the response to `response`. A variable called `content` is created and set it equal to `response.wind.speed` ([dot notation](docapis_diving_into_dot_notation.html) is used to access this value). jQuery's `append` method inserts `content` after an element called `#windSpeed`on the page. (I realize this is an extremely abbreviated explanation, but explaining JavaScript is beyond the scope of this course. In general, you can learn more by reading about the [jQuery.ajax()](https://api.jquery.com/jquery.ajax/) function.)
 
 7.  Start **Chrome** and open the JavaScript Console.
 
@@ -163,7 +163,7 @@ You can then access the values from the response object using object notation. I
 If you're new to JavaScript, this is likely a bit fuzzy right now. If so, don't worry &mdash; code becomes clearer the more you use it.
 
 {: .tip}
-Notice how difficult it is to explain code? This is one of the challenges of developer documentation. Fortunately, you wouldn't need to explain much from standard programming languages like JavaScript. But you might need to explain how to work with your API in different languages. I cover this topic in more depth in [Code samples and tutorials](docapis_codesamples_bestpractices.html).
+Notice how difficult it is to explain code? This is one of the challenges of developer documentation. Fortunately, you wouldn't need to explain much from standard programming languages like JavaScript. But you might need to explain how to work with your API in different languages. I cover this topic in more depth in [Code samples and tutorials](https://idratherbewriting.com/learnapidoc/docapis_codesamples_bestpractices.html).
 
 ## Logging responses to the console
 
