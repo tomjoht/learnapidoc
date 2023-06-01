@@ -69,10 +69,21 @@ The course primarily serves the following audiences:
 
 The course consists of the following sections:
 
-{% assign sidebar = site.data.docapis %}
-{% for folder in sidebar.folders %}
-* [{{folder.title}}]({{folder.jurl | remove_first: "/" }})
-{% endfor %}
+- [I: Introduction to REST APIs](docapis_introtoapis.html)
+- [II: Using an API like a developer](https://idratherbewriting.com/learnapidoc/likeadeveloper.html)
+- [III: Documenting API endpoints](https://idratherbewriting.com/learnapidoc/docendpoints.html)
+- [IV: OpenAPI spec and generated reference docs](https://idratherbewriting.com/learnapidoc/restapispecifications.html)
+- [V: Step-by-step OpenAPI code tutorial](https://idratherbewriting.com/learnapidoc/openapi_tutorial.html)
+- [VI: Testing API docs](https://idratherbewriting.com/learnapidoc/testingdocs.html)
+- [VII: Conceptual topics in API docs](https://idratherbewriting.com/learnapidoc/docconceptual.html)
+- [VIII: Code tutorials](https://idratherbewriting.com/learnapidoc/docapiscode.html)
+- [IX: The writing process](https://idratherbewriting.com/learnapidoc/writing_process.html)
+- [X: Publishing API docs](https://idratherbewriting.com/learnapidoc/publishingapis.html)
+- [XI: Thriving in the API doc space](https://idratherbewriting.com/learnapidoc/jobapis.html)
+- [XII: Native library APIs](https://idratherbewriting.com/learnapidoc/nativelibraryapis.html)
+- [XIII: Processes and methodology](https://idratherbewriting.com/learnapidoc/docapis_managing_doc_processes.html)
+- [XIV: Metrics and measurement](https://idratherbewriting.com/learnapidoc/docapis_metrics_and_measurement.html)
+- [XV: Additional resources](https://idratherbewriting.com/learnapidoc/resources.html)
 
 ## Sequence and activities
 
