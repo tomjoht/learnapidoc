@@ -82,7 +82,7 @@ Another common pattern with endpoints is to use nouns with the resources, and to
 
 At the most basic level, REST API endpoints and their supported operations have a noun + verb grammar (e.g., `contacts` with a `READ` operation). If the endpoint name blends the resource with the operation, as in `getContacts`, it can both be redundant as well as misleading. Separate nouns from verbs when it comes to endpoint names.
 
-Note that this same convention might not be the case with [native library APIs](https://idratherbewriting.com/learnapidoc/nativelibraryapis_overview.html), such as a Java API. With native library APIs, the same resource might not have different operations that you can apply to it; instead, the APIs are often functions that perform specific actions, so a `getContacts` function might make sense.
+Note that this same convention might not be the case with [native library APIs](nativelibraryapis_overview.html), such as a Java API. With native library APIs, the same resource might not have different operations that you can apply to it; instead, the APIs are often functions that perform specific actions, so a `getContacts` function might make sense.
 
 ### Data formats in responses
 
@@ -96,7 +96,7 @@ Arnaud explains,
 
 > People seek global uniformity in design. Once consumers have seen one date and time property represented by an ISO 8601 string, they expect all date and time properties to be ISO 8601 strings. Once a data format has been chosen for a type of data, it should be used for all representations of the same data type.
 
-As you [define the parameters](https://idratherbewriting.com/learnapidoc/docapis_doc_parameters.html) in your requests, as well as the [responses in your models or schemas](https://idratherbewriting.com/learnapidoc/docapis_doc_sample_responses_and_schema.html), you will be describing the data types for each element. As such, you'll be pretty familiar with common patterns for data types. Sometimes developers will mistakenly identify numbers as strings, or specify much more specific numbers (e.g., floats, doubles) than is usually done in REST API docs, or they might have other inconsistencies. Look closely at these data types and see if they conform to consistent patterns across all endpoints. Again, inconsistency is easy to spot and hard to argue against when providing usability feedback.
+As you [define the parameters](docapis_doc_parameters.html) in your requests, as well as the [responses in your models or schemas](docapis_doc_sample_responses_and_schema.html), you will be describing the data types for each element. As such, you'll be pretty familiar with common patterns for data types. Sometimes developers will mistakenly identify numbers as strings, or specify much more specific numbers (e.g., floats, doubles) than is usually done in REST API docs, or they might have other inconsistencies. Look closely at these data types and see if they conform to consistent patterns across all endpoints. Again, inconsistency is easy to spot and hard to argue against when providing usability feedback.
 
 ### Casing with parameter names
 
@@ -136,7 +136,7 @@ Style guides for APIs are just as helpful with API design as they are with docum
 
 Now let's look at another aspect of API usability: workflows. Presumably, this is where the technical writer's moment shines. Developers might write the reference documentation, but the use cases and other tutorials in the user guide are usually handled by technical writers.
 
-As you describe the workflows required to use the API, you are uniquely suited to critique the usability. Start by assessing how many APIs you have to chain together to arrive at your result. For example, in my [Flickr API gallery activity](https://idratherbewriting.com/learnapidoc/docapis_flickr_example.html), I walk through a use case of getting photos from a specific gallery. Presumably, one would use the `getPhotos` endpoint for this, but this task requires you to chain endpoints together. In the activity I explain:
+As you describe the workflows required to use the API, you are uniquely suited to critique the usability. Start by assessing how many APIs you have to chain together to arrive at your result. For example, in my [Flickr API gallery activity](docapis_flickr_example.html), I walk through a use case of getting photos from a specific gallery. Presumably, one would use the `getPhotos` endpoint for this, but this task requires you to chain endpoints together. In the activity I explain:
 
 > One of the arguments we need for the `getPhotos` endpoint is the `gallery_id`. Before we can get the `gallery_id`, however, we have to use another endpoint to retrieve it. Somewhat unintuitively, the `gallery_id` is not the ID that appears in the URL of the gallery. Instead, we use the `flickr.urls.lookupGallery` endpoint listed in the URLs resource section to get the `gallery_id` from a gallery URL
 
@@ -156,7 +156,7 @@ This is why writing the tutorial is one of the best ways to assess the usability
 
 ## Error Messages
 
-As you're writing tutorials, testing the API as you go, you will no doubt run into [error messages](https://idratherbewriting.com/learnapidoc/docapis_doc_status_codes.html). These little messages pop up here and there in often subtle, hard-to-catch ways. Always note error messages that you see, as error messages are a key factor in usability.
+As you're writing tutorials, testing the API as you go, you will no doubt run into [error messages](docapis_doc_status_codes.html). These little messages pop up here and there in often subtle, hard-to-catch ways. Always note error messages that you see, as error messages are a key factor in usability.
 
 Ideally, error messages should be descriptive enough to let users know what's wrong and to help them correct the issue. Arnaud explains,
 

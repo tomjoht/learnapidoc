@@ -100,7 +100,7 @@ The following sections expand in more specific ways on the roles, tasks, and nee
 
 * Define a [process for assessing incoming small doc requests](docapis_managing_small_doc_requests.html) and decide how to approach and prioritize them. Regularly groom the backlog so that you don't have a sea of stale tickets.
 
-* Define and enforce the [release process for SDKs](docapis_managing_sdk_releases.html), [sample apps](https://idratherbewriting.com/learnapidoc/docapis_sample_apps.html), and other code artifacts on the developer portal
+* Define and enforce the [release process for SDKs](docapis_managing_sdk_releases.html), [sample apps](docapis_sample_apps.html), and other code artifacts on the developer portal
 
 * Set up and define localization processes, priorities, and workflows with regards to doc tools
 
@@ -124,7 +124,7 @@ The following sections expand in more specific ways on the roles, tasks, and nee
 
 * Define and promote standards for API reference content, such as using OpenAPI with REST APIs
 
-* Define and review standards for [tagging in auto-generated reference docs](https://idratherbewriting.com/learnapidoc/nativelibraryapis_javadoc_tags.html) from library-based APIs (e.g., Javadoc, Doxygen)
+* Define and review standards for [tagging in auto-generated reference docs](nativelibraryapis_javadoc_tags.html) from library-based APIs (e.g., Javadoc, Doxygen)
 
 * Define process and standards for developer product naming and branding, and then enforce this against individual teams that might launch new feature names in unapproved ways
 

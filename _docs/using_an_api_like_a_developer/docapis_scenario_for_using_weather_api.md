@@ -27,7 +27,7 @@ You don't have your own meteorological service, so you'll need to make some call
 
 ## Get an idea of the end goal {#endgoal}
 
-To give you an idea of the end goal, here's a sample: [idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html](https://idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html). It's not necessarily styled the same as the mockup, but it answers the question, "What's the current wind and temperature?"
+To give you an idea of the end goal, here's a sample: [idratherbewriting.com/learnapidoc/assets/files/wind-openweathermap.html](assets/files/wind-openweathermap.html). It's not necessarily styled the same as the mockup, but it answers the question, "What's the current wind and temperature?"
 
 Click the **Check wind conditions** button to see wind and temperature details. When you request this data, a call is made to the [OpenWeatherMap API](https://openweathermap.org/api). The API retrieves the information, and some JavaScript code prints the information on the page.
 

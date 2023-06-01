@@ -63,7 +63,7 @@ With local builds, setting up a functional system is much more challenging than 
 
 ## Testing sample apps {#sample_apps}
 
-Depending on the product, you might also have a [sample app](https://idratherbewriting.com/learnapidoc/docapis_codesamples_bestpractices.html) or [SDK](https://idratherbewriting.com/learnapidoc/docapis_sdks.html) in your code deliverables. You often include a sample app or SDK (or multiple apps and SDKs in various programming languages) with a product to demonstrate how to integrate and call the API. If you have a test app that integrates the API, you'll probably need to install some programs or frameworks on your own machine to get the sample app working.
+Depending on the product, you might also have a [sample app](docapis_codesamples_bestpractices.html) or [SDK](docapis_sdks.html) in your code deliverables. You often include a sample app or SDK (or multiple apps and SDKs in various programming languages) with a product to demonstrate how to integrate and call the API. If you have a test app that integrates the API, you'll probably need to install some programs or frameworks on your own machine to get the sample app working.
 
 For example, you might have to build a sample Java app to interact with the system &mdash; so you'd likely need to have the Java Development Kit and a Java IDE installed on your computer to make it work. If the app is in PHP, you probably need to install PHP. Or if it's an Android app, you will probably need to download Android Studio and connect it to virtual (or actual) device.
 

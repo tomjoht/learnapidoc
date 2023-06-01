@@ -222,7 +222,7 @@ Both of these product overviews are like product landing pages within a larger d
 
 ## <i class="fa fa-user-circle"></i> Activity with product overviews
 
-With the [open-source project you identified](https://idratherbewriting.com/learnapidoc/docapis_find_open_source_project.html), identify the API overview. Then answer the following questions:
+With the [open-source project you identified](docapis_find_open_source_project.html), identify the API overview. Then answer the following questions:
 
 1. Does the documentation have a product overview?
 2. Does the overview clarify who the API is for?
@@ -375,7 +375,7 @@ Don't get me wrong &mdash; I support task-oriented docs and agree that it's gene
 
 But task-oriented docs often swing too far toward tasks, resulting in minimal or anemic overview information. When that happens, you often end up confusing users with various tasks and no higher-level content that helps their decision-making about which tasks to follow and why.
 
-In [research about how developers use APIs](https://idratherbewriting.com/learnapidoc/docapiscode_research_on_documenting_code.html#systematic-versus-opportunistic-behaviors), researchers have identified "opportunistic behaviors" (try-first), "systematic behaviors" (read-first), and hybrids of the two. When users are observed, there's much hybrid behavior than solely opportunistic or systematic. Just because you might be an opportunistic user, it doesn’t mean you always skip conceptual explanations &mdash; it's just that you might not start with concepts. A hybrid reader might start with code, trying it out on their own, and circle back to the introductory conceptual information when the code doesn’t work as expected.
+In [research about how developers use APIs](docapiscode_research_on_documenting_code.html#systematic-versus-opportunistic-behaviors), researchers have identified "opportunistic behaviors" (try-first), "systematic behaviors" (read-first), and hybrids of the two. When users are observed, there's much hybrid behavior than solely opportunistic or systematic. Just because you might be an opportunistic user, it doesn’t mean you always skip conceptual explanations &mdash; it's just that you might not start with concepts. A hybrid reader might start with code, trying it out on their own, and circle back to the introductory conceptual information when the code doesn’t work as expected.
 
 Deciding to cater to one type of behavior at the expense of the other might not be practical, since the learning behaviors and approaches seem to be in constant flux.
 

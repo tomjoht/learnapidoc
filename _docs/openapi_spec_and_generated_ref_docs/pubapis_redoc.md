@@ -60,7 +60,7 @@ In this activity, you'll render your OpenAPI spec with [Redoc](https://github.co
 
 2.  Change the value for `redoc spec-url` to a valid OpenAPI spec that is available at an online URL.
 
-    If you were following the previous tutorial on creating an OpenAPI spec through Stoplight Studio ([Getting started tutorial: Using Stoplight Studio to create an OpenAPI specification document](pubapis_openapis_quickstart_stoplight.html)), you can use the OpenAPI URL that Stoplight provides. From your Stoplight Studio display, go to the Overview topic and click **Export OpenAPI**. Choose either original or dereferenced. Copy the URL. Here's an [example URL](https://idratherbewriting.com/learnapidoc/docs/openapi_spec_and_generated_ref_docs/openapi_openweathermap.yml).
+    If you were following the previous tutorial on creating an OpenAPI spec through Stoplight Studio ([Getting started tutorial: Using Stoplight Studio to create an OpenAPI specification document](pubapis_openapis_quickstart_stoplight.html)), you can use the OpenAPI URL that Stoplight provides. From your Stoplight Studio display, go to the Overview topic and click **Export OpenAPI**. Choose either original or dereferenced. Copy the URL. Here's an [example URL](docs/openapi_spec_and_generated_ref_docs/openapi_openweathermap.yml).
 
     <figure><img src="{{site.media}}/export_openapi_stoplight.png" alt="Exporting an OpenAPI URL" class="medium" /><figcaption>Exporting an OpenAPI URL</figcaption></figure>
 

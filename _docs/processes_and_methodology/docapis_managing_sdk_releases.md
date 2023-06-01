@@ -18,7 +18,7 @@ Even if someone else distributes the SDKs, they might look to you for guidance a
 
 ## Definition of an SDK
 
-A software developer kit might include a language-specific library for your API (for example, a Java JAR library file or an Android AAR file that developers would integrate into their projects) along with a sample app, debugging tools, and other tools necessary for building software. I explored SDKs (software developer kits) in depth earlier in [SDKs (software development kits)](https://idratherbewriting.com/learnapidoc/docapis_sdks.html) but covered the topic from a documentation perspective &mdash; what do you need to document when it comes to SDKs, what level of instruction is required, etc. The section here covers details about distributing and publishing the SDK.
+A software developer kit might include a language-specific library for your API (for example, a Java JAR library file or an Android AAR file that developers would integrate into their projects) along with a sample app, debugging tools, and other tools necessary for building software. I explored SDKs (software developer kits) in depth earlier in [SDKs (software development kits)](docapis_sdks.html) but covered the topic from a documentation perspective &mdash; what do you need to document when it comes to SDKs, what level of instruction is required, etc. The section here covers details about distributing and publishing the SDK.
 
 ## Sample scenario with tech writers and SDK distribution
 
@@ -87,9 +87,9 @@ If you want to take an extra step here, you can ask the QA team for a list of th
 
 ### Javadoc or Doxygen Reference Docs
 
-SDKs should include reference documentation in the form of a [Javadoc](https://idratherbewriting.com/learnapidoc/nativelibraryapis_create_javadoc.html), [Doxygen](https://idratherbewriting.com/learnapidoc/nativelibraryapis_doxygen.html), or other auto-generated reference documentation appropriate to the library. The reference documentation can be included in the download and can also be made available online as a link in the documentation. Delivering this is a standard and is usually added inside of a folder called "docs." Check to make sure that the reference documentation is correctly generated.
+SDKs should include reference documentation in the form of a [Javadoc](nativelibraryapis_create_javadoc.html), [Doxygen](nativelibraryapis_doxygen.html), or other auto-generated reference documentation appropriate to the library. The reference documentation can be included in the download and can also be made available online as a link in the documentation. Delivering this is a standard and is usually added inside of a folder called "docs." Check to make sure that the reference documentation is correctly generated.
 
-If you want to go a step further, you could verify that the annotations and tags in the source are correct. I covered [Javadoc tags](https://idratherbewriting.com/learnapidoc/nativelibraryapis_javadoc_tags.html) in the Java section of the course. You might look over the Javadoc and Doxygen files to evaluate whether all the elements have descriptions and other details.
+If you want to go a step further, you could verify that the annotations and tags in the source are correct. I covered [Javadoc tags](nativelibraryapis_javadoc_tags.html) in the Java section of the course. You might look over the Javadoc and Doxygen files to evaluate whether all the elements have descriptions and other details.
 
 ### How-to Documentation
 
@@ -166,7 +166,7 @@ Jekyll projects use [Bundler](https://bundler.io/) (a package and dependency man
 
 ## GitHub
 
-Many SDKs have a [sample app](https://idratherbewriting.com/learnapidoc/docapis_sample_apps.html) that demonstrates integration with the SDK and the provided functionality, even if the sample app is just bare-bones simple and only includes some basic buttons in the UI to initiate events. Many times, sample apps are included with the SDK. If the sample app is more extensive and stands alone, consider distributing the sample app through GitHub as open-source project instead.
+Many SDKs have a [sample app](docapis_sample_apps.html) that demonstrates integration with the SDK and the provided functionality, even if the sample app is just bare-bones simple and only includes some basic buttons in the UI to initiate events. Many times, sample apps are included with the SDK. If the sample app is more extensive and stands alone, consider distributing the sample app through GitHub as open-source project instead.
 
 Releasing your project on GitHub doesn't require the code to be open source, but the project source must be viewable. (You can't just upload a compiled binary onto GitHub.) You probably can't freely create a new GitHub repo on your own in your organization, but you can instruct engineering teams to do so following any outlined corporate processes. Many times engineering groups have organizations and teams already set up in GitHub and standard processes for pushing out code.
 

@@ -37,7 +37,7 @@ Entire books could be written about each of these phases. I tried to pick out a 
 
 ## The writing scenario {#writing_scenario}
 
-Before we jump into this process, let's start by presenting a writing scenario. A product team (consisting of a handful of engineers plus a product manager and QA) is creating a new API. In contrast to the more language-agnostic territory of REST APIs, this happens to be a [Java API](https://idratherbewriting.com/learnapidoc/nativelibraryapis.html). Your target audience involves engineers who know Java and, for the sake of having a concrete use case, they are implementing the API to pull location data about coffee shops. They're using the API to allow coffee vendors to build map-based Android apps that identify which coffee shops in the city sell their brand of coffee.
+Before we jump into this process, let's start by presenting a writing scenario. A product team (consisting of a handful of engineers plus a product manager and QA) is creating a new API. In contrast to the more language-agnostic territory of REST APIs, this happens to be a [Java API](nativelibraryapis.html). Your target audience involves engineers who know Java and, for the sake of having a concrete use case, they are implementing the API to pull location data about coffee shops. They're using the API to allow coffee vendors to build map-based Android apps that identify which coffee shops in the city sell their brand of coffee.
 
 {% include random_ad2.html %}
 

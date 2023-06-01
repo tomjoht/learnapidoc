@@ -130,7 +130,7 @@ You might not need to create aliases like this, and you might be using another p
 
 In this step, you'll break up an existing OpenAPI file into smaller files. We'll use a sample OpenAPI file that we've been using in other places in this course.
 
-1.  Download the [openapi_openweathermap.yml](https://idratherbewriting.com/learnapidoc/docs/openapi_spec_and_generated_ref_docs/openapi_openweathermap.yml) file.
+1.  Download the [openapi_openweathermap.yml](docs/openapi_spec_and_generated_ref_docs/openapi_openweathermap.yml) file.
 
     Right-click the file and choose **Save Link As**. Save it in a folder called `redocly_project` in a convenient location. This OpenAPI definition is a small OpenAPI 3.0 file for one API in the [OpenWeatherMap API](https://openweathermap.org/api). Note that you can use another OpenAPI definition in this tutorial if you prefer. There's nothing special about this file &mdash; it just gives us an OpenAPI definition to work with.
 
@@ -672,7 +672,7 @@ So far we've been exploring the API reference output from within the preview ser
     ```
 
 4.  Drag the `dist.json` file generated in step 1 into your `redoc` folder so that the reference is valid.
-5.  To view the output, you can either upload the files onto a web server, or you can simulate an HTTP server locally. To simulate an HTTP server locally, you can use Python Simple HTTP Server. You can view detailed steps for running this server here: [ Activity: View local OpenAPI file in Swagger UI](https://idratherbewriting.com/learnapidoc/pubapis_swagger.html#view_local_openapi_swaggerui). In short, if you already have [Python3](https://www.python.org/downloads/) installed, `cd` to your `redoc` folder and run this command: `python3 -m http.server`. Then browse to port `http://localhost:8000/` and view the Redoc output.
+5.  To view the output, you can either upload the files onto a web server, or you can simulate an HTTP server locally. To simulate an HTTP server locally, you can use Python Simple HTTP Server. You can view detailed steps for running this server here: [ Activity: View local OpenAPI file in Swagger UI](pubapis_swagger.html#view_local_openapi_swaggerui). In short, if you already have [Python3](https://www.python.org/downloads/) installed, `cd` to your `redoc` folder and run this command: `python3 -m http.server`. Then browse to port `http://localhost:8000/` and view the Redoc output.
 
 {: .tip}
 Redoc provides a lot of options to configure the output. Options to configure the [community edition of Redoc](https://redoc.ly/redoc) are here: [`<redoc>` options object](https://github.com/Redocly/redoc#redoc-options-object). Options to configure the [Redocly API Reference version](https://redoc.ly/reference-docs) are here: [Customization](https://redoc.ly/docs/api-reference-docs/on-premise/customization/).
@@ -683,7 +683,7 @@ For sample API reference docs built with Redoc, see [Some Real-life usages](http
 
 ## Conclusion
 
-Redoc provides one of the most attractive outputs for REST API docs. In a [recent survey about trends in developer documentation](https://idratherbewriting.com/learnapidoc/docapis_trends.html), I asked developers "How do you render the OpenAPI specification into documentation?" Although [Swagger UI](https://idratherbewriting.com/learnapidoc/pubapis_swagger.html) was the most common (used 27% of the time), this is likely because it's free. The premium version of Swagger (called [SwaggerHub](https://idratherbewriting.com/learnapidoc/pubapis_swaggerhub_smartbear.html)) was used only 4% of the time. In contrast, Redoc was used 8% of the time.
+Redoc provides one of the most attractive outputs for REST API docs. In a [recent survey about trends in developer documentation](docapis_trends.html), I asked developers "How do you render the OpenAPI specification into documentation?" Although [Swagger UI](pubapis_swagger.html) was the most common (used 27% of the time), this is likely because it's free. The premium version of Swagger (called [SwaggerHub](pubapis_swaggerhub_smartbear.html)) was used only 4% of the time. In contrast, Redoc was used 8% of the time.
 
 {% if site.format == "print" %}
 *Note: This content doesn't embed well in print because it contains JavaScript. Please go to [https://idratherbewriting.com/learnapidoc/pubapis_redocly_tutorial.html] to view the content.*
@@ -695,4 +695,4 @@ Redoc provides one of the most attractive outputs for REST API docs. In a [recen
 
 {% endif %}
 
-Overall, the output from Redoc does seem more polished and user-friendly than other API reference doc outputs. For the interactivity feature alone I would definitely recommend using the premium version ([Redocly API Reference](https://redoc.ly/reference-docs/)) rather than the community edition. Redocly's CLI-based toolset provides a way to work more efficiently in the code, supporting a [docs-as-code workflow](https://idratherbewriting.com/learnapidoc/pubapis_docs_as_code.html). If this command-line-based toolset and three-column output appeal to you, Redoc might be the way to go. You can start a [free trial here](https://app.redoc.ly/org/idratherbewriting/start-trial) or learn more here: [Redocly](https://redoc.ly/).
+Overall, the output from Redoc does seem more polished and user-friendly than other API reference doc outputs. For the interactivity feature alone I would definitely recommend using the premium version ([Redocly API Reference](https://redoc.ly/reference-docs/)) rather than the community edition. Redocly's CLI-based toolset provides a way to work more efficiently in the code, supporting a [docs-as-code workflow](pubapis_docs_as_code.html). If this command-line-based toolset and three-column output appeal to you, Redoc might be the way to go. You can start a [free trial here](https://app.redoc.ly/org/idratherbewriting/start-trial) or learn more here: [Redocly](https://redoc.ly/).

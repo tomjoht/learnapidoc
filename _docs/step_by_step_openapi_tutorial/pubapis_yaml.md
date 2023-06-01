@@ -10,7 +10,7 @@ path2: openapi_tutorial.html
 last-modified: 2020-09-07
 ---
 
-Before we dive into the steps of the [OpenAPI Tutorial](pubapis_openapi_tutorial_overview.html), it will help to have a better grounding in YAML, since this is the most common syntax for the OpenAPI specification document. (You can also use [JSON](https://idratherbewriting.com/learnapidoc/docapis_analyze_json.html), but the prevailing trend with the OpenAPI document format is YAML.)
+Before we dive into the steps of the [OpenAPI Tutorial](pubapis_openapi_tutorial_overview.html), it will help to have a better grounding in YAML, since this is the most common syntax for the OpenAPI specification document. (You can also use [JSON](docapis_analyze_json.html), but the prevailing trend with the OpenAPI document format is YAML.)
 
 YAML stands for "YAML Ain't Markup Language." This means that the YAML syntax doesn't have markup tags such as `<` or `>`. Instead, it uses colons to denote an object's properties and hyphens to denote an array.
 
@@ -68,7 +68,7 @@ The values for each key can optionally be enclosed in quotation marks. If your v
 
 ## Comparing JSON to YAML
 
-Earlier in the course, we looked at various [JSON structures involving objects and arrays](https://idratherbewriting.com/learnapidoc/docapis_analyze_json.html). So let's look at the equivalent YAML syntax for each of these same JSON objects.
+Earlier in the course, we looked at various [JSON structures involving objects and arrays](docapis_analyze_json.html). So let's look at the equivalent YAML syntax for each of these same JSON objects.
 
 {: .tip}
 You can use [Unserialize.me](http://www.unserialize.me/) to make the conversion from JSON to YAML or YAML to JSON.
@@ -178,7 +178,7 @@ If you access the value, the same definition will be used for both. The `*apidef
 
 You won't use these unique YAML features in the OpenAPI tutorial, but they're worth noting because JSON and YAML aren't entirely equivalent. For details on other differences between JSON and YAML, see [Learn YAML in Minutes](http://learnxinyminutes.com/docs/yaml/). To learn more about YAML, see this [YAML tutorial](http://rhnh.net/2011/01/31/yaml-tutorial).
 
-YAML is also used with [Jekyll](https://idratherbewriting.com/learnapidoc/pubapis_jekyll.html). See my [YAML tutorial in the context of Jekyll](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_yaml_tutorial) for more details.
+YAML is also used with [Jekyll](pubapis_jekyll.html). See my [YAML tutorial in the context of Jekyll](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_yaml_tutorial) for more details.
 
 ## JSON versus YAML for the spec format
 

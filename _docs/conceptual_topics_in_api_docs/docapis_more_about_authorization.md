@@ -178,7 +178,7 @@ Like Twitter, Dropbox also uses OAuth 2.0. Their documentation includes not just
 
 ## <i class="fa fa-user-circle"></i> Activity with authorization
 
-With the [open-source project you identified](https://idratherbewriting.com/learnapidoc/docapis_find_open_source_project.html), identify the information about authorization for requests to the API. Answer the following questions:
+With the [open-source project you identified](docapis_find_open_source_project.html), identify the information about authorization for requests to the API. Answer the following questions:
 
 1. What kind of authorization is required to make requests to the API?
 2. Are there different access levels within the authorization (for example, free versus pro tiers) that determine how many requests you can make or the types of information you can access?

@@ -34,7 +34,7 @@ And the response **Schema** on another tab:
 
 The definition of the response is called the *schema* or *model* (the terms are used synonymously) and aligns with the [JSON schema language and descriptions](http://json-schema.org/). What works particularly well with the SendGrid example is the use of expand/collapse tags to mirror the same structure as the example, with objects at different levels.
 
-Swagger UI also provides both an example value and a schema or model. For example, in the sample Sunrise and Sunset Times API doc that I used for the [SwaggerUI activity](https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset) (which comes later in the course), you can see a distinction between the response example and the response schema. Here's the **Example Value**:
+Swagger UI also provides both an example value and a schema or model. For example, in the sample Sunrise and Sunset Times API doc that I used for the [SwaggerUI activity](assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset) (which comes later in the course), you can see a distinction between the response example and the response schema. Here's the **Example Value**:
 
 <a class="noExtIcon" href="https://idratherbewriting.com/learnapidoc/assets/files/swagger-sunrise-sunset/index.html#/default/getSunriseSunset"><img src="{{site.media}}/sunriseexample.png" alt="Sunrise example value" /></a>
 

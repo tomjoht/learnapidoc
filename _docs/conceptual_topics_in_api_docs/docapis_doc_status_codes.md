@@ -19,7 +19,7 @@ Status and error codes refer to a code number in the response header that indica
 
 Status codes don't appear in the response body. They appear in the response header, which you might not see by default.
 
-Remember when you submitted the curl call back in [Make a curl call](https://idratherbewriting.com/learnapidoc/docapis_make_curl_call.html)? To get the response header, you add `--include` or `-i` to the curl request. If you want *only the response header returned* in the response (and nothing else), capitalize the `-I`, like this:
+Remember when you submitted the curl call back in [Make a curl call](docapis_make_curl_call.html)? To get the response header, you add `--include` or `-i` to the curl request. If you want *only the response header returned* in the response (and nothing else), capitalize the `-I`, like this:
 
 ```
 curl -I -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=APIKEY&units=imperial"
@@ -68,7 +68,7 @@ On the other hand, if some endpoints are prone to triggering certain status and 
 
 Status and error codes may not be readily apparent when you're documenting your API. You'll probably need to ask developers for a list of all the status and error codes that are unique to your API. Sometimes developers hard-code these status and error codes directly in the programming code and don't have easy ways to hand you a comprehensive list (this makes localization problematic as well).
 
-As a result, you may need to experiment a bit to ferret out all the codes. Specifically, you might need to [try to break the API](https://idratherbewriting.com/learnapidoc/testingdocs_test_your_instructions.html) to see all the potential error codes. For example, if you exceed the [rate limit](docapis_rate_limiting_and_thresholds.html) for a specific call, the API might return a special error or status code. You would especially need to document this custom code. A troubleshooting section in your API might make special use of the error codes.
+As a result, you may need to experiment a bit to ferret out all the codes. Specifically, you might need to [try to break the API](testingdocs_test_your_instructions.html) to see all the potential error codes. For example, if you exceed the [rate limit](docapis_rate_limiting_and_thresholds.html) for a specific call, the API might return a special error or status code. You would especially need to document this custom code. A troubleshooting section in your API might make special use of the error codes.
 
 {% include random_ad2.html %}
 
@@ -156,7 +156,7 @@ If some endpoints are prone to triggering certain status and error codes more th
 
 ## <i class="fa fa-user-circle"></i> Activity with status and error codes
 
-With the [open-source project you identified](https://idratherbewriting.com/learnapidoc/docapis_find_open_source_project.html), identify the status and error code information. Answer the following questions:
+With the [open-source project you identified](docapis_find_open_source_project.html), identify the status and error code information. Answer the following questions:
 
 * Does the project describe status and error codes?
 * Where is the status and error code information located within the context of the documentation? As a standalone topic? Below each endpoint? Somewhere else?

@@ -25,7 +25,7 @@ Eventbrite is an event management tool, and you can interact with it through an 
 
 ## 1. Get an OAuth token
 
-Eventbrite uses the [OAuth method for authorization](https://idratherbewriting.com/learnapidoc/docapis_more_about_authorization.html#oauth). To make any kind of requests, you'll need an OAuth token, which you can learn about in [Eventbrite's Authentication docs](https://www.eventbrite.com/platform/api#/introduction/authentication).
+Eventbrite uses the [OAuth method for authorization](docapis_more_about_authorization.html#oauth). To make any kind of requests, you'll need an OAuth token, which you can learn about in [Eventbrite's Authentication docs](https://www.eventbrite.com/platform/api#/introduction/authentication).
 
 {% include image_ad_right.html %}
 
@@ -45,7 +45,7 @@ To get event information, we'll use the [event](https://www.eventbrite.com/platf
 
 Although Eventbrite explains how to pass the authorization into requests, it's easier to use the prebuilt curl from the documentation code samples, and then use Postman to convert it to JavaScript jQuery AJAX.
 
-Eventbrite's documentation uses [Apiary](https://apiary.io/), which provides a try-it-out feature (or [API explorer](https://idratherbewriting.com/learnapidoc/pubapis_design_patterns.html#interactive_api_explorers)) in the right pane. This pane opens up when you click **Retrieve an Event**:
+Eventbrite's documentation uses [Apiary](https://apiary.io/), which provides a try-it-out feature (or [API explorer](pubapis_design_patterns.html#interactive_api_explorers)) in the right pane. This pane opens up when you click **Retrieve an Event**:
 
 <figure><a href="https://www.eventbrite.com/platform/api#/reference/event/retrieve-an-event" class="noCrossRef"><img src="{{site.media}}/eventsendpointeventbrite.png" alt="Retrieving an Eventbrite Event" class="large" /></a><figcaption>Retrieving an Eventbrite Event</figcaption></figure>
 
@@ -77,13 +77,13 @@ curl --include \
   'https://www.eventbriteapi.com/v3/events/49216045517/'
 ```
 
-Open up [Postman](https://idratherbewriting.com/learnapidoc/docapis_postman.html). In Postman, go to **File > Import** and then select the **Paste Raw Text** tab. Paste in the cURL code you copied.
+Open up [Postman](docapis_postman.html). In Postman, go to **File > Import** and then select the **Paste Raw Text** tab. Paste in the cURL code you copied.
 
 {% include random_ad2.html %}
 
 <figure><img src="{{site.media}}/postmanpasterawtext.png" alt="Pasting curl into Postman" class="medium" /><figcaption>Pasting curl into Postman</figcaption></figure>
 
-Then click **Import**. The information will populate in a new Postman tab. In Postman, if you expand the Headers tab, you will see the OAuth information. The GET box includes the Eventbrite retrieve endpoint with the event ID added as a [path parameter](https://idratherbewriting.com/learnapidoc/docapis_doc_parameters.html#path_parameters).
+Then click **Import**. The information will populate in a new Postman tab. In Postman, if you expand the Headers tab, you will see the OAuth information. The GET box includes the Eventbrite retrieve endpoint with the event ID added as a [path parameter](docapis_doc_parameters.html#path_parameters).
 
 In Postman, below the Send button, click **Code**. In the Generate Code Snippets dialog box, select **JavaScript > Jquery AJAX**. Copy the value shown:
 
@@ -112,9 +112,9 @@ $.ajax(settings).done(function (response) {
 
 The information returned from the event object has a lot more detail than we need. We just want to display the event's title and description on our site. We'll use the jQuery AJAX code copied from the earlier step to do this. Note that I won't go into full detail about this code. I covered this AJAX call in more detail in some earlier tutorials:
 
-* [Inspect the JSON from the response payload](https://idratherbewriting.com/learnapidoc/docapis_json_console.html)
-* [Access and print a specific JSON value](https://idratherbewriting.com/learnapidoc/docapis_access_json_values.html)
-* [Dive into dot notation](https://idratherbewriting.com/learnapidoc/docapis_diving_into_dot_notation.html)
+* [Inspect the JSON from the response payload](docapis_json_console.html)
+* [Access and print a specific JSON value](docapis_access_json_values.html)
+* [Dive into dot notation](docapis_diving_into_dot_notation.html)
 
 To integrate the jQuery AJAX Postman code into your website and print the `title` and `description` fields in the response, use the following code:
 

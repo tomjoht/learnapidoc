@@ -18,7 +18,7 @@ last-modified: 2023-02-01
 [Swagger UI](https://github.com/swagger-api/swagger-ui) provides a display framework that reads an [OpenAPI specification document](https://github.com/OAI/OpenAPI-Specification) and generates an interactive documentation website. The following tutorial shows you how to integrate an OpenAPI specification document into Swagger UI.
 
 {: .tip}
-For a more conceptual overview of OpenAPI and Swagger, see [Introduction to the OpenAPI specification](pubapis_openapi_intro.html), or see this article I wrote for ISTC a few years ago: [Implementing Swagger with API docs](https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/ISTC_Comm1609Web_TJ.pdf) (PDF). For a step-by-step tutorial on creating an OpenAPI specification document, see the [OpenAPI tutorial](https://idratherbewriting.com/learnapidoc/pubapis_openapi_tutorial_overview.html). Or for an easier approach using a visual editor to create the OpenAPI spec, see [Getting started tutorial: Using Stoplight Studio to create an OpenAPI specification document](pubapis_openapis_quickstart_stoplight.html).
+For a more conceptual overview of OpenAPI and Swagger, see [Introduction to the OpenAPI specification](pubapis_openapi_intro.html), or see this article I wrote for ISTC a few years ago: [Implementing Swagger with API docs](https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/ISTC_Comm1609Web_TJ.pdf) (PDF). For a step-by-step tutorial on creating an OpenAPI specification document, see the [OpenAPI tutorial](pubapis_openapi_tutorial_overview.html). Or for an easier approach using a visual editor to create the OpenAPI spec, see [Getting started tutorial: Using Stoplight Studio to create an OpenAPI specification document](pubapis_openapis_quickstart_stoplight.html).
 
 {% comment %}Don't change the link above to site.media. The kindle generator can't resolve the link otherwise. {% endcomment %}
 
@@ -73,7 +73,7 @@ Now let's make a request:
 
     <figure><a target="_blank" class="noExtIcon" href="http://petstore.swagger.io/"><img class="docimage large" src="{{site.media}}/swaggerui_execute.png" alt="Executing a sample Petstore request" /></a><figcaption>Executing a sample Petstore request</figcaption></figure>
 
-    Swagger UI submits the request and shows the [curl](https://idratherbewriting.com/learnapidoc/docapis_make_curl_call.html)  that was submitted. The Responses section shows the [response](https://idratherbewriting.com/learnapidoc/docapis_doc_sample_responses_and_schema.html). (If you select JSON rather than XML in the "Response content type" drop-down box, the response's format will be shown in JSON.)
+    Swagger UI submits the request and shows the [curl](docapis_make_curl_call.html)  that was submitted. The Responses section shows the [response](docapis_doc_sample_responses_and_schema.html). (If you select JSON rather than XML in the "Response content type" drop-down box, the response's format will be shown in JSON.)
 
     <a href="http://petstore.swagger.io/" class="noExtIcon"><img src="{{site.media}}/swaggerui_response.png" alt="Response from Swagger Petstore get pet request" /></a>
 
@@ -101,11 +101,11 @@ Some of these sites look the same, but others, such as The Movie Database API an
 
 {% include random_ad3.html %}
 
-Looking at the examples, you'll notice the documentation is short and sweet in a Swagger implementation. This brevity is because the Swagger display is meant to be an interactive experience where you can try out calls and see responses &mdash; using your own API key to see your own data. It's the learn-by-doing-and-seeing-it approach. Also, Swagger UI only covers the [reference topics](https://idratherbewriting.com/learnapidoc/docendpoints.html) of your documentation. The [conceptual topics](https://idratherbewriting.com/learnapidoc/docconceptual.html) are usually covered in a separate guide.
+Looking at the examples, you'll notice the documentation is short and sweet in a Swagger implementation. This brevity is because the Swagger display is meant to be an interactive experience where you can try out calls and see responses &mdash; using your own API key to see your own data. It's the learn-by-doing-and-seeing-it approach. Also, Swagger UI only covers the [reference topics](docendpoints.html) of your documentation. The [conceptual topics](docconceptual.html) are usually covered in a separate guide.
 
 ## <i class="fa fa-user-circle"></i> Activity: Create a Swagger UI display with an OpenAPI spec document {#create_swaggerui}
 
-In this activity, you'll create a Swagger UI display for an OpenAPI specification document. If you're using one of the pre-built OpenAPI files, you can see a demo of what we'll build here: [OpenWeatherMap Swagger UI](https://idratherbewriting.com/learnapidoc/assets/files/swagger/).
+In this activity, you'll create a Swagger UI display for an OpenAPI specification document. If you're using one of the pre-built OpenAPI files, you can see a demo of what we'll build here: [OpenWeatherMap Swagger UI](assets/files/swagger/).
 
 <figure><a target="_blank" class="noExtIcon" href="https://idratherbewriting.com/learnapidoc/assets/files/swagger/index.html"><img class="docimage medium" src="{{site.media}}/swagger_full_result.png" alt="Demo of Swagger UI" /></a><figcaption>Demo of Swagger UI rendering an OpenWeatherMap OpenAPI specification document</figcaption></figure>
 
@@ -225,7 +225,7 @@ For more details on using the Python simple server, see [How do you set up a loc
 
 By default, SwaggerUI has the Petstore OpenAPI document configured in the `url` parameter in the `index.html` file. You need to swap in your local file instead.
 
-1.  Download the [this OpenAPI document](https://idratherbewriting.com/learnapidoc/docs/openapi_spec_and_generated_ref_docs/openapi_openweathermap.yml) (right-click the link and save the YAML file to your desktop.).
+1.  Download the [this OpenAPI document](docs/openapi_spec_and_generated_ref_docs/openapi_openweathermap.yml) (right-click the link and save the YAML file to your desktop.).
 
 2.  Drag your OpenAPI specification file, `openapi_openweathermap.yml`, into the `dist` folder. Your file structure should look as follows:
 
@@ -271,11 +271,11 @@ By default, SwaggerUI has the Petstore OpenAPI document configured in the `url` 
 
 ## Configuring Swagger UI parameters
 
-Swagger UI provides various [configuration parameters](https://github.com/swagger-api/swagger-ui/blob/master/docs/usage/configuration.md) (unrelated to the [OpenAPI parameters](https://idratherbewriting.com/learnapidoc/pubapis_openapi_step4_paths_object.html#parameters)) that you can use to customize the interactive display. For example, you can set whether each endpoint is expanded or collapsed, how tags and operations are sorted, whether to show request headers in the response, whether to include the Models section after the list of endpoints, and more.
+Swagger UI provides various [configuration parameters](https://github.com/swagger-api/swagger-ui/blob/master/docs/usage/configuration.md) (unrelated to the [OpenAPI parameters](pubapis_openapi_step4_paths_object.html#parameters)) that you can use to customize the interactive display. For example, you can set whether each endpoint is expanded or collapsed, how tags and operations are sorted, whether to show request headers in the response, whether to include the Models section after the list of endpoints, and more.
 
 We won't get too much into the details of these configuration parameters in the tutorial. I just want to call attention to these parameters here for awareness.
 
-If you look at the [source of my Swagger UI demo](https://idratherbewriting.com/learnapidoc/assets/files/swagger/) (go to View > Source), you'll see the parameters listed in the `// Build a system` section:
+If you look at the [source of my Swagger UI demo](assets/files/swagger/) (go to View > Source), you'll see the parameters listed in the `// Build a system` section:
 
 ```js
   // Build a system
@@ -303,7 +303,7 @@ You can also learn about the Swagger UI configuration parameters in the [Swagger
 
 As you explore Swagger UI, you may notice a few limitations:
 
-* There's not much room to describe in detail the workings of the endpoints. If you have several paragraphs of details and gotchas about a parameter, it's best to link out from the description to another page in your docs. The OpenAPI spec provides a way to link to external documentation in both the [paths object](https://idratherbewriting.com/learnapidoc/pubapis_openapi_step4_paths_object.html), the [info object](https://idratherbewriting.com/learnapidoc/pubapis_openapi_step2_info_object.html), and the [externalDocs object](https://idratherbewriting.com/learnapidoc/pubapis_openapi_step8_externaldocs_object.html)
+* There's not much room to describe in detail the workings of the endpoints. If you have several paragraphs of details and gotchas about a parameter, it's best to link out from the description to another page in your docs. The OpenAPI spec provides a way to link to external documentation in both the [paths object](pubapis_openapi_step4_paths_object.html), the [info object](pubapis_openapi_step2_info_object.html), and the [externalDocs object](pubapis_openapi_step8_externaldocs_object.html)
 * The Swagger UI looks mostly the same for each API. You can [customize Swagger UI](https://swagger.io/docs/swagger-tools/#customization-36) with your own branding, but it will require some more in-depth UX skills. It is, however, relatively easy to change the color and image in the top navigation bar.
 * The Swagger UI might be a separate site from your other documentation. This separate output means that in your regular docs, you'll probably need to link to Swagger as the reference for your endpoints. You don't want to duplicate your parameter descriptions and other details in two different sites. See [Integrating Swagger UI with the rest of your docs](pubapis_combine_swagger_and_guide.html) for strategies on unifying your reference docs and user guide.
 
@@ -327,8 +327,8 @@ If you need help, the [Swagger Google Group](https://groups.google.com/forum/#!f
 
 In addition to publishing your Swagger UI output as a standalone site, you can also embed the Swagger file within an existing site. See the following:
 
-* [Standalone Swagger UI Demo](https://idratherbewriting.com/learnapidoc/assets/files/swagger/)
-* [Embedded Swagger UI Demo](https://idratherbewriting.com/learnapidoc/pubapis_swagger_demo.md)
+* [Standalone Swagger UI Demo](assets/files/swagger/)
+* [Embedded Swagger UI Demo](pubapis_swagger_demo.md)
 
 Since the Swagger UI site is responsive, it resizes well to fit into most any space. Even so, embedding Swagger into an existing site still looks like a website within a website.
 
@@ -336,4 +336,4 @@ Since the Swagger UI site is responsive, it resizes well to fit into most any sp
 
 {% include glossary_limited.html file="glossary" %}
 
-For more terms, see the [Glossary](https://idratherbewriting.com/learnapidoc/api-glossary.html).
+For more terms, see the [Glossary](api-glossary.html).

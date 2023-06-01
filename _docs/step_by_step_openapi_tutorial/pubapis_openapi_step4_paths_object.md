@@ -34,7 +34,7 @@ My preferred term is "endpoint" rather than "path," but to be consistent with th
 
 {% include random_ad2.html %}
 
-Each item in the `path` object contains an [operation object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md#operation-object). (Operations are the GET, POST, PUT, and DELETE methods we explored in the [Endpoints section](https://idratherbewriting.com/learnapidoc/docapis_resource_endpoints.html) of the API reference tutorial.)
+Each item in the `path` object contains an [operation object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md#operation-object). (Operations are the GET, POST, PUT, and DELETE methods we explored in the [Endpoints section](docapis_resource_endpoints.html) of the API reference tutorial.)
 
 Start by listing the paths (endpoints) and their allowed operations (methods). For the `weather` endpoint in the OpenWeatherMap API, there is just one path (`/weather`) and one operation (`get`) for that path:
 

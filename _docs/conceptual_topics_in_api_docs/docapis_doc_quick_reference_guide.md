@@ -26,7 +26,7 @@ The quick reference guide should provide the user with just enough information t
 {% comment %}Leave image path as is. Otherwise, when generating ebooks, the site.media property becomes blank and Kindlegen looks for this asset locally, returning error. {% endcomment %}
 <figure><a target="_blank" class="noExtIcon" href="https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/sample_api_diagram.pdf"><img class="docimage medium" src="{{site.media}}/sample_api_diagram.png" alt="Sample quick reference guide format" /></a><figcaption>A quick reference guide format</figcaption></figure>
 
-The text is Latin filler for privacy reasons, so the logic may not be entirely apparent. But with this API, the endpoints could be organized into different groups. Some of the groups had multiple levels within the endpoint, and multiple include options for each endpoint. I created this diagram in Adobe Illustrator and distributed it as a PDF. Developers found it useful because it tried to make sense of the API as a whole, showing how all the endpoints fit together in logical harmony. Most commonly with API documentation, the quick reference guide lists abbreviated descriptions of the endpoints. For this reason, the [Swagger UI output](https://idratherbewriting.com/learnapidoc/pubapis_swagger_demo.html) can often function as a quick reference guide.
+The text is Latin filler for privacy reasons, so the logic may not be entirely apparent. But with this API, the endpoints could be organized into different groups. Some of the groups had multiple levels within the endpoint, and multiple include options for each endpoint. I created this diagram in Adobe Illustrator and distributed it as a PDF. Developers found it useful because it tried to make sense of the API as a whole, showing how all the endpoints fit together in logical harmony. Most commonly with API documentation, the quick reference guide lists abbreviated descriptions of the endpoints. For this reason, the [Swagger UI output](pubapis_swagger_demo.html) can often function as a quick reference guide.
 
 Outside of API documentation, quick reference guides tend to focus more on tasks. If you have a service to set up or configure, a more narrative rather than visual format might make sense. Here's a sample layout for such a guide:
 
@@ -93,7 +93,7 @@ This quick reference guide is handy because it lets you browse all the available
 
 ## <i class="fa fa-user-circle"></i> Activity with quick reference guides
 
-With the [open-source project you identified](https://idratherbewriting.com/learnapidoc/docapis_find_open_source_project.html), identify the information about quick reference guides for the API. Answer the following questions:
+With the [open-source project you identified](docapis_find_open_source_project.html), identify the information about quick reference guides for the API. Answer the following questions:
 
 1. Is there a quick reference guide for the API? Perhaps a quick list of the API endpoints?
 2. Is there a Swagger UI output that acts as a quick reference for the API?

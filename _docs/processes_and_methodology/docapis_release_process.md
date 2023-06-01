@@ -54,7 +54,7 @@ Here's where you have some options for a doc coverage goal. You could expand the
 
 {% include random_ad3.html %}
 
-I know that the features I personally test usually end up with much better documentation. While it might seem like a given that tech writers [test all the features they document](https://idratherbewriting.com/learnapidoc/testingdocs.html), that's hardly the case. The setup and execution of the features often requires extensive engineering knowledge and expertise. If you're working in dev docs, testing each feature is a feat unto itself.
+I know that the features I personally test usually end up with much better documentation. While it might seem like a given that tech writers [test all the features they document](testingdocs.html), that's hardly the case. The setup and execution of the features often requires extensive engineering knowledge and expertise. If you're working in dev docs, testing each feature is a feat unto itself.
 
 ## Conclusion
 

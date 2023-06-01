@@ -19,7 +19,7 @@ last-modified: 2020-09-07
 
 Before diving into the first step of the OpenAPI tutorial here, read the [OpenAPI tutorial overview](pubapis_openapi_tutorial_overview.html) (if you haven't already) to get a sense of the scope of this tutorial. In brief, this OpenAPI tutorial is unique in the following ways:
 
-* This OpenAPI tutorial shows the spec in context of a simple weather API [introduced earlier](https://idratherbewriting.com/learnapidoc/docapis_scenario_for_using_weather_api.html) in this course.
+* This OpenAPI tutorial shows the spec in context of a simple weather API [introduced earlier](docapis_scenario_for_using_weather_api.html) in this course.
 * This OpenAPI tutorial shows how the spec information gets populated in two different tools and display frameworks: [Stoplight](https://stoplight.io/studio/) and [Swagger UI](https://github.com/swagger-api/swagger-ui).
 * This OpenAPI tutorial is a subset of the information in both the [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification) and the [OpenAPI specification commentary](https://swagger.io/docs/specification/about/). In other words, it's not comprehensive of all the possible information in the spec.
 * This OpenAPI tutorial covers the *3.0 version* of the OpenAPI spec, which is the latest version. (Surprisingly, many tools still support only the 2.0 version.)
@@ -70,7 +70,7 @@ The Swagger Editor will validate your content in real-time, and you will see val
 
 I usually keep a local text file (using a text editor such as Atom or Sublime Text) where I keep the specification document offline, but I work with the document's content in the online [Swagger Editor](https://swagger.io/swagger-editor/). When I'm done working for the day, I copy and save the content back to my local file. Even so, the Swagger Editor caches the content quite well (just don't clear your browser's cache), so you probably won't need your local file as a backup.
 
-If you want to purchase a subscription to [SwaggerHub](https://idratherbewriting.com/learnapidoc/pubapis_swaggerhub_smartbear.html), you could keep your spec content in the cloud (SwaggerHub has an editor almost identical to Swagger UI) associated with your personal login. SwaggerHub is the premium tooling for the open-source and free Swagger Editor.
+If you want to purchase a subscription to [SwaggerHub](pubapis_swaggerhub_smartbear.html), you could keep your spec content in the cloud (SwaggerHub has an editor almost identical to Swagger UI) associated with your personal login. SwaggerHub is the premium tooling for the open-source and free Swagger Editor.
 
 Another option to work locally is to use [Visual Studio Code](https://code.visualstudio.com/) with two extensions: [openapi-lint](https://marketplace.visualstudio.com/items?itemName=mermade.openapi-lint) and [Swagger Viewer](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer). These extensions let you work locally and preview a live version of Swagger. You can also download and run the [Swagger Editor locally](https://swagger.io/tools/swagger-editor/).
 

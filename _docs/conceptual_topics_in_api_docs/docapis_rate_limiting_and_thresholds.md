@@ -69,7 +69,7 @@ By looking at these examples, you can see that while rate limiting might seem li
 
 ## <i class="fa fa-user-circle"></i> Activity with rate limits
 
-With the [open-source project you identified](https://idratherbewriting.com/learnapidoc/docapis_find_open_source_project.html), identify the information about rate limits with the API. Answer the following questions:
+With the [open-source project you identified](docapis_find_open_source_project.html), identify the information about rate limits with the API. Answer the following questions:
 
 1. Does the API have rate limits?
 2. What happens if users exceed the rate limits?

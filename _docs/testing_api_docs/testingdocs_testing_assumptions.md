@@ -18,7 +18,7 @@ The previous two sections talked about testing from the perspective of the tech 
 
 ## Assumptions about terminology
 
-You might assume that your audience already knows how to SSH onto a server, create [authorizations in REST headers](https://idratherbewriting.com/learnapidoc/docapis_more_about_authorization.html), [use curl to submit calls](https://idratherbewriting.com/learnapidoc/docapis_make_curl_call.html), and so on. Usually documentation doesn't hold a user's hand from beginning to end, but rather jumps into a specific task that depends on concepts and techniques that you assume the user already knows. However, making assumptions about concepts and techniques your audience knows can be dangerous. These assumptions are exactly why so many people get frustrated by instructions.
+You might assume that your audience already knows how to SSH onto a server, create [authorizations in REST headers](docapis_more_about_authorization.html), [use curl to submit calls](docapis_make_curl_call.html), and so on. Usually documentation doesn't hold a user's hand from beginning to end, but rather jumps into a specific task that depends on concepts and techniques that you assume the user already knows. However, making assumptions about concepts and techniques your audience knows can be dangerous. These assumptions are exactly why so many people get frustrated by instructions.
 
 For example, my 10-year-old daughter is starting to cook. She feels confident that if the cookbook's instructions are clear, she can follow almost anything (assuming we have the ingredients to make it). However, she says sometimes the instructions tell her to do something that she doesn't know how to do &mdash; such as *sauté* something.
 
@@ -42,7 +42,7 @@ To read more about how specialized language makes technical documentation diffic
 
 ## Solutions for addressing different audiences
 
-The solution to addressing different audiences doesn't involve writing entirely different sets of documentation (although conceptually, that might be a good strategy in some situations). You can link potentially unfamiliar terms to a [glossary](https://idratherbewriting.com/learnapidoc/docapis_glossary_section.html) or [getting started tutorial](https://idratherbewriting.com/learnapidoc/docapis_doc_getting_started_section.html) where beginners can ramp up on the basics.
+The solution to addressing different audiences doesn't involve writing entirely different sets of documentation (although conceptually, that might be a good strategy in some situations). You can link potentially unfamiliar terms to a [glossary](docapis_glossary_section.html) or [getting started tutorial](docapis_doc_getting_started_section.html) where beginners can ramp up on the basics.
 
 You can likewise provide links to separate, advanced topics for those scenarios when you want to give some power-level instruction but don't want to hold a user's hand through the whole process. You don't have to offer just one path through the doc set.
 
@@ -114,4 +114,4 @@ Additionally, the later that errors are identified in the software development p
 
 ## Conclusion
 
-No matter how extensively or minimally you do it, look for opportunities to test your instructions against an actual audience. You don't need to do a lot of tests (even the usability pros say 4-5 test subjects is usually enough to identify 80% of the problems), but try to do *some user testing*. When you treat [docs like code](https://idratherbewriting.com/learnapidoc/pubapis_docs_as_code.html), it naturally follows that just as we should test code, we should also test docs.
+No matter how extensively or minimally you do it, look for opportunities to test your instructions against an actual audience. You don't need to do a lot of tests (even the usability pros say 4-5 test subjects is usually enough to identify 80% of the problems), but try to do *some user testing*. When you treat [docs like code](pubapis_docs_as_code.html), it naturally follows that just as we should test code, we should also test docs.
