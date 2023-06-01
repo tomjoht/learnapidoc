@@ -7,8 +7,9 @@ folders:
   class: first
   folderitems:
 
-  - title: "I. Introduction to REST APIs" 
+  - title: "Section Overview" 
     jurl: docapis_introtoapis.html
+    type: web
 
   - title: Course Overview
     jurl: index.html
@@ -51,6 +52,10 @@ folders:
   section: two
   folderitems:
 
+  - title: "Section Overview" 
+    jurl: likeadeveloper.html
+    type: web
+
   - title: "Scenario for using a weather API"
     jurl: docapis_scenario_for_using_weather_api.html
 
@@ -89,6 +94,10 @@ folders:
   section: three
   folderitems:
 
+  - title: "Section overview"
+    jurl: docendpoints.html
+    type: web
+
   - title: "A new endpoint to document"
     jurl: docapis_new_endpoint_to_doc.html
 
@@ -124,6 +133,10 @@ folders:
   section: four
   folderitems:
 
+  - title: "Section overview"
+    jurl: restapispecifications.html
+    type: web
+
   - title: "Overview of REST API specification formats"
     jurl: pubapis_rest_specification_formats.html
 
@@ -158,6 +171,10 @@ folders:
   jurl: openapi_tutorial.html
   section: five
   folderitems:
+
+  - title: "Section overview"
+    jurl: openapi_tutorial.html
+    type: web
 
   - title: "OpenAPI tutorial using Swagger Editor and Swagger UI: Overview"
     jurl: pubapis_openapi_tutorial_overview.html
@@ -197,6 +214,10 @@ folders:
   section: six
   folderitems:
 
+  - title: "Section overview"
+    jurl: testingdocs.html
+    type: web
+
   - title: "Overview of testing your docs"
     jurl: testingdocs_overview.html
 
@@ -216,6 +237,10 @@ folders:
   jurl: docconceptual.html
   section: seven
   folderitems:
+
+  - title: "Section overview"
+    jurl: docconceptual.html
+    type: web
 
   - title: "API conceptual topics overview"
     jurl: docapis_conceptual_topics_overview.html
@@ -255,6 +280,10 @@ folders:
   section: eight
   folderitems:
 
+  - title: "Section overview"
+    jurl: docapiscode.html
+    type: web
+
   - title: "Common characteristics of code tutorials"
     jurl: docapis_code_tutorials_common_characteristics.html
 
@@ -287,6 +316,10 @@ folders:
   section: nine
   folderitems:
 
+  - title: "Section overview"
+    jurl: writing_process.html
+    type: web
+
   - title: "Overview of the writing process"
     jurl: docapis_writing_process_overview.html
 
@@ -309,6 +342,10 @@ folders:
   jurl: publishingapis.html
   section: ten
   folderitems:
+
+  - title: "Section overview"
+    jurl: publishingapis.html
+    type: web
 
   - title: "Overview for publishing API docs"
     jurl: pubapis_overview.html
@@ -369,6 +406,10 @@ folders:
   section: eleven
   folderitems:
 
+  - title: "Section overview"
+    jurl: jobapis.html
+    type: web
+
   - title: "The job market for API technical writers"
     jurl: jobapis_overview.html
 
@@ -388,6 +429,10 @@ folders:
   jurl: nativelibraryapis.html
   section: twelve
   folderitems:
+
+  - title: "Section overview"
+    jurl: nativelibraryapis.html
+    type: web
 
   - title: "Overview of native library APIs"
     jurl: nativelibraryapis_overview.html
@@ -420,6 +465,10 @@ folders:
   jurl: docapis_managing_doc_processes.html
   section: thirteen
   folderitems:
+
+  - title: "Section overview"
+    jurl: docapis_managing_doc_processes.html
+    type: web
 
   - title: "DX content strategy with developer portals"
     jurl: docapis_dx_content_strategy.html
@@ -467,6 +516,11 @@ folders:
   jurl: docapis_metrics_and_measurement.html
   section: fourteen
   folderitems:
+
+  - title: "Section overview"
+    jurl: docapis_metrics_and_measurement.html
+    type: web
+
   - title: Measuring documentation quality through user feedback
     jurl: docapis_measuring_impact.html
 
@@ -483,6 +537,10 @@ folders:
   jurl: resources.html
   section: fifteen
   folderitems:
+
+  - title: "Section overview"
+    jurl: resources.html
+    type: web
 
   - title: "Documenting GraphQL APIs"
     jurl: docapis_graphql_apis.html
