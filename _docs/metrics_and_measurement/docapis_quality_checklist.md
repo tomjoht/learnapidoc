@@ -14,7 +14,7 @@ redirect_from:
 
 *This section continues from the previous page, [Different approaches for assessing information quality](docapis_metrics_assessing_information_quality.html).*
 
-As indicated earlier, my goal is to create a practical guide for measuring quality. Instead of looking at docs against a list of general, abstract criteria, I recommend another approach: assessing docs against a list of characteristics that, if fulfilled, should lead to a hiqh-quality user experience automatically. Each of the characteristics must be specific, actionable, and unambiguous in how it would be implemented in your docs. In this section, I'll present a comprehensive quality checklist for API docs and developer portals.
+As indicated earlier, my goal is to create a practical guide for measuring quality. Instead of looking at docs against a list of general, abstract criteria, I recommend another approach: assessing docs against a list of characteristics that, if fulfilled, should lead to a high-quality user experience automatically. Each of the characteristics must be specific, actionable, and unambiguous in how it would be implemented in your docs. In this section, I'll present a comprehensive quality checklist for API docs and developer portals.
 
 * TOC
 {:toc}  

@@ -9,7 +9,7 @@ path1: docapis_metrics_and_measurement.html
 last-modified: 2022-02-07
 ---
 
-In the previous topic, [Measuring documentation quality through user feedback]( docapis_measuring_impact.html), I explained the challenges of getting feedback from user surveys as a way to measure documentation quality. In this section, I'll survey the landscape on criteria and rubrics for assessing documentation quality.
+In the previous topic, [Measuring documentation quality through user feedback](docapis_measuring_impact.html), I explained the challenges of getting feedback from user surveys as a way to measure documentation quality. In this section, I'll survey the landscape on criteria and rubrics for assessing documentation quality.
 
 * TOC
 {:toc}

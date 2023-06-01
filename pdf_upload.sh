@@ -1,4 +1,9 @@
+# Equivalent function
+myvenv() {
+    source /Users/tomjoht/myvenv/bin/activate
+}
 myvenv
+
 aws s3 cp ~/projects/learnapidoc/pdf/docapis_one.pdf s3://learnapidoc-outputs --profile wasabi
 aws s3 cp ~/projects/learnapidoc/pdf/docapis_two.pdf s3://learnapidoc-outputs --profile wasabi
 aws s3 cp ~/projects/learnapidoc/pdf/docapis_three.pdf s3://learnapidoc-outputs --profile wasabi
