@@ -32,7 +32,7 @@ kramdown:
 
 collections:
   docs:
-    output: false
+    output: true
 
 sass:
     style: compressed
